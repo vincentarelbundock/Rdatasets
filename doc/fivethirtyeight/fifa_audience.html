@@ -1,0 +1,77 @@
+<!DOCTYPE html><html><head><title>R: How To Break FIFA</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>fifa_audience</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>How To Break FIFA</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;How To Break FIFA&quot;
+<a href="https://fivethirtyeight.com/features/how-to-break-fifa/">https://fivethirtyeight.com/features/how-to-break-fifa/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>fifa_audience
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 3652 rows representing guests and 6 variables:
+</p>
+
+<dl>
+<dt>country</dt><dd><p>FIFA member country</p>
+</dd>
+<dt>confederation</dt><dd><p>Confederation to which country belongs</p>
+</dd>
+<dt>population_share</dt><dd><p>Country's share of global population (percentage)</p>
+</dd>
+<dt>tv_audience_share</dt><dd><p>Country's share of global world cup TV Audience (percentage)</p>
+</dd>
+<dt>gdp_weighted_share</dt><dd><p>Country's GDP-weighted audience share (percentage)</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>See <a href="https://github.com/fivethirtyeight/data/tree/master/fifa">https://github.com/fivethirtyeight/data/tree/master/fifa</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'># To convert data frame to tidy data (long) format, run:
+library(dplyr)
+library(tidyr)
+library(stringr)
+fifa_audience_tidy &lt;- fifa_audience %&gt;%
+  pivot_longer(-c(country, confederation), 
+     names_to = "type", values_to = "share") %&gt;%
+  mutate(type = str_sub(type, start=1, end=-7)) %&gt;%
+  arrange(country)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

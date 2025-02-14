@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><title>R: Why Classic Rock Isn't What It Used To Be</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>classic_rock_song_list</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Why Classic Rock Isn't What It Used To Be</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;Why Classic Rock Isn't What It Used To Be&quot;
+<a href="https://fivethirtyeight.com/features/why-classic-rock-isnt-what-it-used-to-be/">https://fivethirtyeight.com/features/why-classic-rock-isnt-what-it-used-to-be/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>classic_rock_song_list
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 2230 rows representing unique songs and 7 variables:
+</p>
+
+<dl>
+<dt>song</dt><dd><p>Song name</p>
+</dd>
+<dt>artist</dt><dd><p>Artist name</p>
+</dd>
+<dt>release_year</dt><dd><p>Release year as listed in SongFacts</p>
+</dd>
+<dt>combined</dt><dd><p>Song and artist name combined</p>
+</dd>
+<dt>has_year</dt><dd><p>Logical variable of whether release year is included</p>
+</dd>
+<dt>playcount</dt><dd><p>Number of plays across all stations</p>
+</dd>
+<dt>playcount_has_year</dt><dd><p>Number of plays across all stations if a year was found</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>SongFacts and <a href="https://github.com/fivethirtyeight/data/tree/master/classic-rock">https://github.com/fivethirtyeight/data/tree/master/classic-rock</a>
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>classic_rock_raw_data</code>
+</p>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html><html><head><title>R: Puffin nesting data set. It contains data regarding nesting...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>puffin</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Puffin nesting data set. It contains data regarding 
+nesting habits of common puffin</h2>
+
+<h3>Description</h3>
+
+<p>Puffin nesting data set. It contains data regarding 
+nesting habits of common puffin
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>puffin
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 38 rows and 5 columns:
+</p>
+
+<dl>
+<dt>Nesting_Frequency</dt><dd><p>Number of nests</p>
+</dd>
+<dt>Grass_Cover</dt><dd><p>Percentage of area covered by grass</p>
+</dd>
+<dt>Mean_Soil_Depth</dt><dd><p>Mean soil depth in centimeter</p>
+</dd>
+<dt>Slope_Angle</dt><dd><p>Slope angle in degrees</p>
+</dd>
+<dt>Distance_from_Edge</dt><dd><p>Distance of the plot from the cliff edge in meter</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Nettleship (1972).
+</p>
+
+
+<h3>References</h3>
+
+<p>Nettleship DN (1972).
+&ldquo;Breeding Success of the Common Puffin (Fratercula arctica L.)  on Different Habitats at Great Island, Newfoundland.&rdquo;
+<em>Ecological Monographs</em>, <b>42</b>, 239-268.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>head(puffin)
+dim(puffin)
+summary(puffin)
+pairs(puffin)
+puffin$sqrtfreq &lt;- sqrt(puffin$Nesting_Frequency)
+puff.sqlm &lt;- lm(sqrtfreq~ Grass_Cover + Mean_Soil_Depth + Slope_Angle 
++Distance_from_Edge, data=puffin) 
+old.par &lt;- par(no.readonly = TRUE)
+par(mfrow=c(2,1))
+qqnorm(puff.sqlm$res,main="Normal probability plot", col=2)
+qqline(puff.sqlm$res, col="blue")
+plot(puff.sqlm$fit, puff.sqlm$res,xlab="Fitted values",ylab="Residuals", 
+main="Anscombe plot")
+abline(h=0)
+summary(puff.sqlm)
+par(old.par)
+#####################################
+# F test for two betas at the  same time: 
+######################################
+puff.sqlm2 &lt;- lm(sqrtfreq~ Mean_Soil_Depth + Distance_from_Edge, data=puffin) 
+anova(puff.sqlm)
+anova(puff.sqlm2)
+fval &lt;-  1/2*(14.245-12.756)/0.387 # 1.924 
+qf(0.95, 2, 33) # 3.28
+1-pf(fval, 2, 33) # 0.162
+anova(puff.sqlm2, puff.sqlm)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

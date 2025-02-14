@@ -1,0 +1,109 @@
+rownames,event,division,avg_tix_price
+1,Baltimore Ravens at Pittsburgh Steelers Tickets on 02-Nov-2014 (9037819),AFC North,202
+2,Pittsburgh Steelers at Baltimore Ravens Tickets on 11-Sep-2014 (9037835),AFC North,199
+3,Cleveland Browns at Pittsburgh Steelers Tickets on 07-Sep-2014 (9037806),AFC North,196
+4,Cincinnati Bengals at Pittsburgh Steelers Tickets on 28-Dec-2014 (9037828),AFC North,164
+5,Pittsburgh Steelers at Cleveland Browns Tickets on 12-Oct-2014 (9037890),AFC North,148
+6,Cleveland Browns at Baltimore Ravens Tickets on 28-Dec-2014 (9037845),AFC North,137
+7,Cincinnati Bengals at Baltimore Ravens Tickets on 07-Sep-2014 (9037833),AFC North,135
+8,Cleveland Browns at Cincinnati Bengals Tickets on 06-Nov-2014 (9037858),AFC North,102
+9,Pittsburgh Steelers at Cincinnati Bengals Tickets on 07-Dec-2014 (9037859),AFC North,89
+10,Baltimore Ravens at Cleveland Browns Tickets on 21-Sep-2014 (9037889),AFC North,83
+11,Baltimore Ravens at Cincinnati Bengals Tickets on 26-Oct-2014 (9037854),AFC North,83
+12,Cincinnati Bengals at Cleveland Browns Tickets on 14-Dec-2014 (9037903),AFC North,81
+13,Miami Dolphins at New England Patriots Tickets on 14-Dec-2014 (9037705),AFC East,209
+14,Buffalo Bills at New England Patriots Tickets on 28-Dec-2014 (9037709),AFC East,208
+15,New York Jets at New England Patriots Tickets on 16-Oct-2014 (9037693),AFC East,201
+16,New England Patriots at Buffalo Bills Tickets on 12-Oct-2014 (9037803),AFC East,127
+17,Miami Dolphins at Buffalo Bills Tickets on 14-Sep-2014 (9037796),AFC East,123
+18,New England Patriots at Miami Dolphins Tickets on 07-Sep-2014 (9037759),AFC East,122
+19,New York Jets at Miami Dolphins Tickets on 28-Dec-2014 (9037779),AFC East,108
+20,New England Patriots at New York Jets Tickets on 21-Dec-2014 (9037745),AFC East,106
+21,Buffalo Bills at Miami Dolphins Tickets on 13-Nov-2014 (9037769),AFC East,103
+22,Buffalo Bills at New York Jets Tickets on 26-Oct-2014 (9037732),AFC East,91
+23,New York Jets at Buffalo Bills Tickets on 23-Nov-2014 (9037809) *,AFC East,67
+24,Miami Dolphins at New York Jets Tickets on 01-Dec-2014 (9037741),AFC East,55
+25,San Diego Chargers at Denver Broncos Tickets on 23-Oct-2014 (9037694),AFC West,241
+26,Kansas City Chiefs at Denver Broncos Tickets on 14-Sep-2014 (9037677),AFC West,218
+27,Oakland Raiders at Denver Broncos Tickets on 28-Dec-2014 (9037710),AFC West,213
+28,Denver Broncos at San Diego Chargers Tickets on 14-Dec-2014 (9037791),AFC West,202
+29,Oakland Raiders at San Diego Chargers Tickets on 16-Nov-2014 (9037788),AFC West,118
+30,Denver Broncos at Kansas City Chiefs Tickets on 30-Nov-2014 (9037752),AFC West,117
+31,Kansas City Chiefs at San Diego Chargers Tickets on 19-Oct-2014 (9037787),AFC West,94
+32,Denver Broncos at Oakland Raiders Tickets on 09-Nov-2014 (9037876),AFC West,85
+33,San Diego Chargers at Oakland Raiders Tickets on 12-Oct-2014 (9037869),AFC West,71
+34,San Diego Chargers at Kansas City Chiefs Tickets on 28-Dec-2014 (9037757),AFC West,58
+35,Oakland Raiders at Kansas City Chiefs Tickets on 14-Dec-2014 (9037754),AFC West,41
+36,Kansas City Chiefs at Oakland Raiders Tickets on 20-Nov-2014 (9037880),AFC West,40
+37,Indianapolis Colts at Houston Texans Tickets on 09-Oct-2014 (9037891),AFC South,168
+38,Jacksonville Jaguars at Houston Texans Tickets on 28-Dec-2014 (9037907),AFC South,130
+39,Tennessee Titans at Houston Texans Tickets on 30-Nov-2014 (9037900),AFC South,126
+40,Houston Texans at Indianapolis Colts Tickets on 14-Dec-2014 (9037871),AFC South,104
+41,Jacksonville Jaguars at Indianapolis Colts Tickets on 23-Nov-2014 (9037866),AFC South,81
+42,Tennessee Titans at Indianapolis Colts Tickets on 28-Sep-2014 (9037848),AFC South,71
+43,Indianapolis Colts at Jacksonville Jaguars Tickets on 21-Sep-2014 (9037917),AFC South,69
+44,Indianapolis Colts at Tennessee Titans Tickets on 28-Dec-2014 (9037946),AFC South,64
+45,Houston Texans at Tennessee Titans Tickets on 26-Oct-2014 (9037931),AFC South,55
+46,Houston Texans at Jacksonville Jaguars Tickets on 07-Dec-2014 (9037933),AFC South,47
+47,Jacksonville Jaguars at Tennessee Titans Tickets on 12-Oct-2014 (9037926),AFC South,45
+48,Tennessee Titans at Jacksonville Jaguars Tickets on 18-Dec-2014 (9037937),AFC South,40
+49,Green Bay Packers at Chicago Bears Tickets on 28-Sep-2014 (9037834),NFC North,423
+50,Chicago Bears at Green Bay Packers Tickets on 09-Nov-2014 (9037875),NFC North,265
+51,Minnesota Vikings at Chicago Bears Tickets on 16-Nov-2014 (9037840),NFC North,218
+52,Detroit Lions at Green Bay Packers Tickets on 28-Dec-2014 (9037885),NFC North,211
+53,Chicago Bears at Detroit Lions Tickets on 27-Nov-2014 (9037912),NFC North,176
+54,Detroit Lions at Chicago Bears Tickets on 21-Dec-2014 (9037852),NFC North,153
+55,Green Bay Packers at Minnesota Vikings Tickets on 23-Nov-2014 (9037942),NFC North,138
+56,Green Bay Packers at Detroit Lions Tickets on 21-Sep-2014 (9037902),NFC North,106
+57,Detroit Lions at Minnesota Vikings Tickets on 12-Oct-2014 (9037938),NFC North,86
+58,Chicago Bears at Minnesota Vikings Tickets on 28-Dec-2014 (9037947),NFC North,67
+59,Minnesota Vikings at Green Bay Packers Tickets on 02-Oct-2014 (9037870),NFC North,206
+60,Minnesota Vikings at Detroit Lions Tickets on 14-Dec-2014 (9037915),NFC North,94
+61,Dallas Cowboys at Philadelphia Eagles Tickets on 14-Dec-2014 (9037728),NFC East,236
+62,Dallas Cowboys at New York Giants Tickets on 23-Nov-2014 (9037751),NFC East,228
+63,Philadelphia Eagles at Dallas Cowboys Tickets on 27-Nov-2014 (9037692),NFC East,219
+64,New York Giants at Philadelphia Eagles Tickets on 12-Oct-2014 (9037718),NFC East,213
+65,Washington Redskins at Philadelphia Eagles Tickets on 21-Sep-2014 (9037713),NFC East,205
+66,Philadelphia Eagles at New York Giants Tickets on 28-Dec-2014 (9037755),NFC East,178
+67,New York Giants at Dallas Cowboys Tickets on 19-Oct-2014 (9037683),NFC East,167
+68,Dallas Cowboys at Washington Redskins Tickets on 28-Dec-2014 (9037786),NFC East,165
+69,Washington Redskins at Dallas Cowboys Tickets on 27-Oct-2014 (9037686),NFC East,153
+70,Washington Redskins at New York Giants Tickets on 14-Dec-2014 (9037753),NFC East,121
+71,Philadelphia Eagles at Washington Redskins Tickets on 20-Dec-2014 (9037783),NFC East,100
+72,New York Giants at Washington Redskins Tickets on 25-Sep-2014 (9037768),NFC East,90
+73,San Francisco 49ers at Seattle Seahawks Tickets on 14-Dec-2014 (9037740),NFC West,373
+74,Seattle Seahawks at San Francisco 49ers Tickets on 27-Nov-2014 (9037701),NFC West,264
+75,St Louis Rams at Seattle Seahawks Tickets on 28-Dec-2014 (9037742),NFC West,220
+76,Arizona Cardinals at Seattle Seahawks Tickets on 23-Nov-2014 (9037736),NFC West,210
+77,Arizona Cardinals at San Francisco 49ers Tickets on 28-Dec-2014 (9037708),NFC West,202
+78,St Louis Rams at San Francisco 49ers Tickets on 02-Nov-2014 (9037691),NFC West,187
+79,Seattle Seahawks at Arizona Cardinals Tickets on 21-Dec-2014 (9037792),NFC West,184
+80,San Francisco 49ers at Arizona Cardinals Tickets on 21-Sep-2014 (9037763),NFC West,139
+81,St Louis Rams at Arizona Cardinals Tickets on 09-Nov-2014 (9037777),NFC West,76
+82,San Francisco 49ers at St Louis Rams Tickets on 13-Oct-2014 (9037804),NFC West,51
+83,Seattle Seahawks at St Louis Rams Tickets on 19-Oct-2014 (9037808),NFC West,47
+84,Arizona Cardinals at St Louis Rams Tickets on 11-Dec-2014 (9037816),NFC West,29
+85,Atlanta Falcons at New Orleans Saints Tickets on 21-Dec-2014 (9037941),NFC South,205
+86,New Orleans Saints at Atlanta Falcons Tickets on 07-Sep-2014 (9037955),NFC South,158
+87,Tampa Bay Buccaneers at New Orleans Saints Tickets on 05-Oct-2014 (9037914),NFC South,135
+88,New Orleans Saints at Carolina Panthers Tickets on 30-Oct-2014 (9037827),NFC South,108
+89,Atlanta Falcons at Carolina Panthers Tickets on 16-Nov-2014 (9037829),NFC South,99
+90,Carolina Panthers at Atlanta Falcons Tickets on 28-Dec-2014 (9037967),NFC South,80
+91,New Orleans Saints at Tampa Bay Buccaneers Tickets on 28-Dec-2014 (9037964),NFC South,77
+92,Atlanta Falcons at Tampa Bay Buccaneers Tickets on 09-Nov-2014 (9037960),NFC South,70
+93,Carolina Panthers at Tampa Bay Buccaneers Tickets on 07-Sep-2014 (9037952),NFC South,70
+94,Tampa Bay Buccaneers at Atlanta Falcons Tickets on 18-Sep-2014 (9037957),NFC South,51
+95,Tampa Bay Buccaneers at Carolina Panthers Tickets on 14-Dec-2014 (9037831),NFC South,48
+96,Arizona Cardinals at Atlanta Falcons Tickets on 30-Nov-2014 (9037965),NFC South,44
+97,,,
+98,,,
+99,*This game was moved to Detroit due to a snow storm in Buffalo. All sales were returned from this game and we did not allow resale of the new game in Detroit as the tickets were given away for free and we generally don't allow the resale of free tickets. The price listed here is the average price sold before we returned all sales.,,
+100,,,
+101,,,
+102,,,
+103,,,
+104,,,
+105,,,
+106,,,
+107,,,
+108,,,

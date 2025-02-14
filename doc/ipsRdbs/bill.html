@@ -1,0 +1,102 @@
+<!DOCTYPE html><html><head><title>R: Wealth, age and region of 225 billionaires in 1992 as...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>bill</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Wealth, age and region of 225 billionaires in 1992 as reported in the 
+Fortune magazine</h2>
+
+<h3>Description</h3>
+
+<p>Wealth, age and region of 225 billionaires in 1992 as reported in the 
+Fortune magazine
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>bill
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 225 rows and three columns:
+</p>
+
+<dl>
+<dt>wealth</dt><dd><p>Wealth in billions of US dollars</p>
+</dd>
+<dt>age</dt><dd><p>Age of the billionaire</p>
+</dd>
+<dt>region</dt><dd><p>five regions:Asia, Europe, Middle East, United States, and Other</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Fortune magazine 1992.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>head(bill)
+summary(bill)
+table(bill$region)
+levels(bill$region)  
+levels(bill$region) &lt;- c("Asia", "Europe", "Mid-East", "Other", "USA")
+bill.wealth.ge5 &lt;- bill[bill$wealth&gt;5, ]
+bill.wealth.ge5 
+bill.region.A &lt;-  bill[ bill$region == "A", ]
+bill.region.A
+a &lt;-  seq(1, 10, by =2) 
+oddrows &lt;- bill[a, ]
+barplot(table(bill$region), col=2:6)
+hist(bill$wealth) # produces a dull looking plot
+hist(bill$wealth, nclass=20)  # produces a more detailed plot.
+hist(bill$wealth, nclass=20, xlab="Wealth", 
+main="Histogram of wealth of billionaires")  
+# produces a more informative plot.
+plot(bill$age, bill$wealth)  # A very dull plot.
+plot(bill$age, bill$wealth, xlab="Age", ylab="Wealth", pch="*")  # better
+plot(bill$age, bill$wealth, xlab="Age", ylab="Wealth", type="n")
+# Lays the plot area but does not plot.
+text(bill$age, bill$wealth, labels=bill$region, cex=0.7, col=2:6)
+# Adds the points to the empty plot.
+# Provides a better looking plot with more information.
+boxplot(data=bill, wealth ~ region, col=2:6)
+tapply(X=bill$wealth, INDEX=bill$region, FUN=mean)
+tapply(X=bill$wealth, INDEX=bill$region, FUN=sd)
+round(tapply(X=bill$wealth, INDEX=bill$region, FUN=mean), 2)
+library(ggplot2)
+gg &lt;- ggplot2::ggplot(data=bill, aes(x=age, y=wealth)) +
+geom_point(aes(col=region, size=wealth)) + 
+geom_smooth(method="loess", se=FALSE) + 
+xlim(c(7, 102)) + 
+ylim(c(1, 37)) + 
+labs(subtitle="Wealth vs Age of Billionaires", 
+y="Wealth (Billion US $)", x="Age", 
+title="Scatterplot", caption = "Source: Fortune Magazine, 1992.")
+plot(gg)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

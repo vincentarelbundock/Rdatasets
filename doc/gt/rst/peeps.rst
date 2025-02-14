@@ -90,7 +90,7 @@
       .. rubric:: Dataset Introduced
          :name: dataset-introduced
 
-      ``v0.11.0``
+      ``v0.11.0`` (July 9, 2024)
 
       .. rubric:: See Also
          :name: see-also
@@ -99,5 +99,12 @@
       ``films``, ``gibraltar``, ``gtcars``, ``illness``, ``metro``,
       ``nuclides``, ``photolysis``, ``pizzaplace``, ``reactions``,
       ``rx_addv``, ``rx_adsl``, ``sp500``, ``sza``, ``towny``
+
+      .. rubric:: Examples
+         :name: examples
+
+      .. code:: R
+
+         dplyr::glimpse(peeps)
 
 .. |This image of that of a dataset badge.| image:: https://raw.githubusercontent.com/rstudio/gt/master/images/dataset_peeps.png

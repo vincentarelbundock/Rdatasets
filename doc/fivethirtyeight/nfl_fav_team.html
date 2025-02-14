@@ -1,0 +1,87 @@
+<!DOCTYPE html><html><head><title>R: The Rams Are Dead To Me, So I Answered 3,352 Questions To...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>nfl_fav_team</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The Rams Are Dead To Me, So I Answered 3,352 Questions To Find A New NFL Team</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;The Rams Are Dead To Me, So I Answered 3,352 Questions To Find A New NFL Team&quot;
+<a href="https://fivethirtyeight.com/features/the-rams-are-dead-to-me-so-i-answered-3352-questions-to-find-a-new-team/">https://fivethirtyeight.com/features/the-rams-are-dead-to-me-so-i-answered-3352-questions-to-find-a-new-team/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>nfl_fav_team
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 32 rows representing National Football League teams and 17 variables:
+</p>
+
+<dl>
+<dt>team</dt><dd><p>Name of NFL team</p>
+</dd>
+<dt>fan_relations</dt><dd><p>Fan relations - Courtesy by players, coaches and front offices toward fans, and how well a team uses technology to reach them</p>
+</dd>
+<dt>ownership</dt><dd><p>Ownership - Honesty; loyalty to core players and the community</p>
+</dd>
+<dt>players</dt><dd><p>Players - Effort on the field, likability off it</p>
+</dd>
+<dt>future_wins</dt><dd><p>Future wins - Projected wins over next 5 seasons</p>
+</dd>
+<dt>bandwagon</dt><dd><p>Bandwagon Factor - Are the team's next 5 years likely to be better than their previous 5?</p>
+</dd>
+<dt>tradition</dt><dd><p>Tradition - Championships/division titles/wins in team's entire history</p>
+</dd>
+<dt>bang_buck</dt><dd><p>Bang for the buck - Wins per fan dollars spent</p>
+</dd>
+<dt>behavior</dt><dd><p>Behavior - Suspensions by players on team since 2007, with extra weight to transgressions vs. women</p>
+</dd>
+<dt>nyc_prox</dt><dd><p>Proximity to New York City</p>
+</dd>
+<dt>stlouis_prox</dt><dd><p>Proximity to St. Louis</p>
+</dd>
+<dt>afford</dt><dd><p>Affordability - Price of tickets, parking and concessions</p>
+</dd>
+<dt>small_market</dt><dd><p>Small Market - Size of market in terms of population, where smaller is better</p>
+</dd>
+<dt>stadium_exp</dt><dd><p>Stadium experience - Quality of venue; fan-friendliness of environment; frequency of game-day promotions</p>
+</dd>
+<dt>coaching</dt><dd><p>Coaching - Strength of on-field leadership</p>
+</dd>
+<dt>uniform</dt><dd><p>Uniform - Stylishness of uniform design, according to Uni Watch's Paul Lukas</p>
+</dd>
+<dt>big_market</dt><dd><p>Big Market - Size of market in terms of population, where bigger is better</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.allourideas.org/nflteampickingsample">https://www.allourideas.org/nflteampickingsample</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

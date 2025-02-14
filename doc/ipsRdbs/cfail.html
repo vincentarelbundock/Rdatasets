@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><title>R: Weekly number of failures of a university computer system...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>cfail</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Weekly number of failures of a university computer system over a period of 
+two years. This is a data vector containing 104 values.</h2>
+
+<h3>Description</h3>
+
+<p>Weekly number of failures of a university computer system over a period of 
+two years. This is a data vector containing 104 values.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>cfail
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>An object of class <code>numeric</code> of length 104.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> summary(cfail)
+ # 95% Confidence interval 
+ c(3.75-1.96 * 3.381/sqrt(104), 3.75+1.96*3.381/sqrt(104)) # =(3.10,4.40).
+ x &lt;- cfail 
+ n &lt;- length(x)
+ h &lt;- qnorm(0.975) 
+ # 95% Confidence interval Using quadratic inversion 
+ mean(x) + (h*h)/(2*n) + c(-1, 1) * h/sqrt(n) * sqrt(h*h/(4*n) + mean(x))
+ # Modelling 
+ # Observed frequencies 
+ obs_freq &lt;- as.vector(table(x))
+ # Obtain unique x values 
+ xuniques &lt;- sort(unique(x))
+ lam_hat &lt;- mean(x)
+ fit_freq &lt;- n * dpois(xuniques, lambda=lam_hat)
+ fit_freq &lt;- round(fit_freq, 1)
+ # Create a data frame for plotting 
+ a &lt;- data.frame(xuniques=xuniques, obs_freq = obs_freq, fit_freq=fit_freq)
+ barplot(rbind(obs_freq, fit_freq), args.legend = list(x = "topright"), 
+ xlab="No of weekly computer failures",  
+ names.arg = xuniques,  beside=TRUE, col=c("darkblue","red"), 
+ legend =c("Observed", "Fitted"), 
+ main="Observed and Poisson distribution fitted frequencies 
+ for the computer failure data: cfail")
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,254 @@
+rownames,year,round,favorite,underdog,favorite_prob,favorite_win
+1,2014,2,Texas,Arizona State,0.501,TRUE
+2,2013,2,Illinois,Colorado,0.504,TRUE
+3,2013,1,James Madison,Long Island,0.506,TRUE
+4,2011,2,Cincinnati,Missouri,0.509,TRUE
+5,2012,3,Cincinnati,Florida State,0.509,TRUE
+6,2011,5,Arizona,Connecticut,0.514,FALSE
+7,2013,1,La Salle,Boise State,0.515,TRUE
+8,2014,1,Tennessee,Iowa,0.517,TRUE
+9,2011,2,Xavier,Marquette,0.518,FALSE
+10,2013,6,Michigan,Syracuse,0.519,TRUE
+11,2014,2,Oklahoma State,Gonzaga,0.52,FALSE
+12,2012,2,Xavier,Notre Dame,0.521,TRUE
+13,2014,1,Albany,Mount St. Mary's,0.523,TRUE
+14,2012,1,Iona,Brigham Young,0.525,FALSE
+15,2012,4,Florida,Marquette,0.525,TRUE
+16,2011,5,North Carolina,Kentucky,0.525,FALSE
+17,2012,5,North Carolina,Kansas,0.525,FALSE
+18,2011,1,USC,Virginia Commonwealth,0.526,FALSE
+19,2012,2,Alabama,Creighton,0.526,FALSE
+20,2013,1,North Carolina A&T,Liberty,0.527,TRUE
+21,2012,1,Lamar,Vermont,0.527,FALSE
+22,2011,2,Florida State,Texas A&M,0.531,TRUE
+23,2013,3,Marquette,Butler,0.534,TRUE
+24,2011,6,Butler,Virginia Commonwealth,0.534,TRUE
+25,2012,3,New Mexico,Louisville,0.537,FALSE
+26,2012,4,Syracuse,Wisconsin,0.537,TRUE
+27,2011,6,Kentucky,Connecticut,0.538,FALSE
+28,2013,4,Duke,Michigan State,0.543,TRUE
+29,2014,3,Creighton,Baylor,0.544,FALSE
+30,2013,4,Kansas,Michigan,0.548,FALSE
+31,2011,2,West Virginia,Clemson,0.55,TRUE
+32,2014,2,Memphis,George Washington,0.55,TRUE
+33,2012,5,Florida,Louisville,0.552,FALSE
+34,2011,2,Temple,Penn State,0.553,TRUE
+35,2012,2,Georgetown,Belmont,0.553,TRUE
+36,2014,1,Cal Poly,Texas Southern,0.556,TRUE
+37,2014,3,Iowa State,North Carolina,0.557,TRUE
+38,2013,4,Ohio State,Arizona,0.558,TRUE
+39,2013,1,Saint Mary's,Middle Tennessee,0.559,FALSE
+40,2011,3,Brigham Young,Gonzaga,0.559,TRUE
+41,2013,2,San Diego State,Oklahoma,0.561,TRUE
+42,2011,2,Butler,Old Dominion,0.562,TRUE
+43,2011,2,Washington,Georgia,0.562,TRUE
+44,2011,3,Wisconsin,Kansas State,0.563,TRUE
+45,2012,3,South Florida,Ohio,0.567,FALSE
+46,2011,2,Tennessee,Michigan,0.569,FALSE
+47,2011,2,Kansas State,Utah State,0.571,TRUE
+48,2013,4,Indiana,Syracuse,0.571,FALSE
+49,2012,1,California,South Florida,0.577,FALSE
+50,2012,2,Connecticut,Iowa State,0.578,FALSE
+51,2014,3,Wichita State,Kentucky,0.579,FALSE
+52,2014,2,Cincinnati,Harvard,0.58,FALSE
+53,2014,2,Saint Louis,North Carolina State,0.58,TRUE
+54,2012,2,West Virginia,Gonzaga,0.582,FALSE
+55,2013,2,Creighton,Cincinnati,0.585,TRUE
+56,2013,3,Michigan,Virginia Commonwealth,0.586,TRUE
+57,2011,2,Vanderbilt,Richmond,0.586,FALSE
+58,2011,2,Illinois,UNLV,0.586,TRUE
+59,2013,2,Memphis,Saint Mary's,0.588,TRUE
+60,2011,4,Florida,Brigham Young,0.596,TRUE
+61,2012,2,North Carolina State,San Diego State,0.598,TRUE
+62,2013,4,Miami (FL),Marquette,0.598,FALSE
+63,2012,3,Wisconsin,Vanderbilt,0.599,TRUE
+64,2013,2,Notre Dame,Iowa State,0.6,FALSE
+65,2011,1,UTSA,Alabama State,0.602,TRUE
+66,2012,6,Ohio State,Kansas,0.603,FALSE
+67,2012,2,Cincinnati,Texas,0.604,TRUE
+68,2013,2,Oklahoma State,Oregon,0.605,FALSE
+69,2011,1,Clemson,UAB,0.605,TRUE
+70,2011,3,Kentucky,West Virginia,0.606,TRUE
+71,2011,2,Villanova,George Mason,0.607,FALSE
+72,2012,4,Michigan State,Louisville,0.607,TRUE
+73,2012,2,Purdue,St. Mary's,0.61,TRUE
+74,2012,2,Temple,South Florida,0.614,FALSE
+75,2011,4,Florida State,Virginia Commonwealth,0.619,FALSE
+76,2013,2,Minnesota,UCLA,0.619,TRUE
+77,2013,2,Pittsburgh,Wichita State,0.621,FALSE
+78,2012,1,Western Kentucky,Mississippi Valley State,0.622,TRUE
+79,2013,3,Saint Louis,Oregon,0.626,FALSE
+80,2013,3,Mississippi,La Salle,0.627,FALSE
+81,2013,2,Butler,Bucknell,0.627,TRUE
+82,2011,1,North Carolina Asheville,Arkansas-Little Rock,0.627,TRUE
+83,2011,7,Connecticut,Butler,0.628,TRUE
+84,2013,7,Louisville,Michigan,0.629,TRUE
+85,2013,2,Missouri,Colorado State,0.634,FALSE
+86,2012,3,Georgetown,North Carolina State,0.636,FALSE
+87,2013,5,Florida,Michigan,0.637,FALSE
+88,2014,1,Xavier,North Carolina State,0.637,FALSE
+89,2014,2,New Mexico,Stanford,0.638,FALSE
+90,2014,2,Oklahoma,North Dakota State,0.638,FALSE
+91,2011,3,Connecticut,Cincinnati,0.638,TRUE
+92,2012,7,Kentucky,Kansas,0.641,TRUE
+93,2012,2,Florida,Virgina,0.641,TRUE
+94,2012,5,Ohio State,Syracuse,0.642,TRUE
+95,2014,3,San Diego State,North Dakota State,0.646,TRUE
+96,2012,3,Xavier,Lehigh,0.647,TRUE
+97,2014,2,Oregon,Brigham Young,0.647,TRUE
+98,2014,3,Villanova,Connecticut,0.649,FALSE
+99,2013,2,Marquette,Davidson,0.655,TRUE
+100,2011,4,Wisconsin,Butler,0.657,FALSE
+101,2011,2,Wisconsin,Belmont,0.658,TRUE
+102,2012,2,Kansas State,Southern Miss,0.658,TRUE
+103,2012,2,Memphis,Saint Louis,0.659,FALSE
+104,2013,5,Ohio State,Wichita State,0.659,FALSE
+105,2011,2,Gonzaga,St. John's,0.664,TRUE
+106,2011,2,Michigan State,UCLA,0.667,FALSE
+107,2011,2,Arizona,Memphis,0.668,TRUE
+108,2012,4,Baylor,Xavier,0.669,TRUE
+109,2013,2,North Carolina,Villanova,0.67,TRUE
+110,2013,5,Louisville,Duke,0.67,TRUE
+111,2013,2,UNLV,California,0.672,FALSE
+112,2012,2,Murray State,Colorado State,0.673,TRUE
+113,2014,2,Connecticut,St. Joseph's,0.673,TRUE
+114,2012,2,New Mexico,Long Beach State,0.679,TRUE
+115,2014,2,North Carolina,Providence,0.68,TRUE
+116,2012,3,Marquette,Murray State,0.68,TRUE
+117,2011,5,Florida,Butler,0.68,FALSE
+118,2011,3,Texas,Arizona,0.682,FALSE
+119,2011,3,Richmond,Morehead State,0.682,TRUE
+120,2012,2,UNLV,Colorado,0.684,FALSE
+121,2013,3,Michigan State,Memphis,0.692,TRUE
+122,2011,4,San Diego State,Connecticut,0.696,FALSE
+123,2011,3,North Carolina,Washington,0.699,TRUE
+124,2013,2,North Carolina State,Temple,0.701,FALSE
+125,2014,2,Baylor,Nebraska,0.703,TRUE
+126,2011,3,Notre Dame,Florida State,0.704,FALSE
+127,2011,4,North Carolina,Marquette,0.704,TRUE
+128,2014,2,Tennessee,Massachusetts,0.705,TRUE
+129,2011,2,Georgetown,Virginia Commonwealth,0.706,FALSE
+130,2013,3,San Diego State,Florida Gulf Coast,0.707,FALSE
+131,2012,3,Indiana,Virginia Commonwealth,0.709,TRUE
+132,2014,3,Virginia,Memphis,0.71,TRUE
+133,2013,2,Virginia Commonwealth,Akron,0.711,TRUE
+134,2013,3,Duke,Creighton,0.711,TRUE
+135,2012,2,Indiana,New Mexico State,0.713,TRUE
+136,2013,4,Wichita State,La Salle,0.714,TRUE
+137,2012,2,Michigan,Ohio,0.715,FALSE
+138,2012,3,Syracuse,Kansas State,0.716,TRUE
+139,2013,2,Arizona,Belmont,0.717,TRUE
+140,2011,3,Syracuse,Marquette,0.717,FALSE
+141,2012,3,Michigan State,Saint Louis,0.717,TRUE
+142,2014,2,Pittsburgh,Colorado,0.724,TRUE
+143,2013,3,Miami (FL),Illinois,0.726,TRUE
+144,2014,3,Arizona,Gonzaga,0.727,TRUE
+145,2014,2,Kentucky,Kansas State,0.739,TRUE
+146,2012,2,Wichita State,Virginia Commonwealth,0.742,FALSE
+147,2012,6,Kentucky,Louisville,0.744,TRUE
+148,2014,2,San Diego State,New Mexico State,0.745,TRUE
+149,2013,3,Gonzaga,Wichita State,0.747,FALSE
+150,2013,5,Syracuse,Marquette,0.75,TRUE
+151,2013,3,Syracuse,California,0.75,TRUE
+152,2012,2,Marquette,Brigham Young,0.751,TRUE
+153,2012,2,Vanderbilt,Harvard,0.752,TRUE
+154,2014,2,Ohio State,Dayton,0.753,FALSE
+155,2013,2,Wisconsin,Mississippi,0.756,FALSE
+156,2013,2,Saint Louis,New Mexico State,0.762,TRUE
+157,2014,3,Florida,Pittsburgh,0.762,TRUE
+158,2014,2,Virginia Commonwealth,Stephen F. Austin,0.764,FALSE
+159,2011,3,Kansas,Illinois,0.765,TRUE
+160,2012,2,Louisville,Davidson,0.767,TRUE
+161,2012,5,Kentucky,Baylor,0.769,TRUE
+162,2012,3,Baylor,Colorado,0.771,FALSE
+163,2014,3,Wisconsin,Oregon,0.772,TRUE
+164,2014,3,Michigan State,Harvard,0.772,TRUE
+165,2014,3,Syracuse,Dayton,0.773,FALSE
+166,2013,3,Kansas,North Carolina,0.778,TRUE
+167,2013,2,Kansas State,La Salle,0.782,FALSE
+168,2011,3,Pittsburgh,Butler,0.786,FALSE
+169,2012,3,Kansas,Purdue,0.786,TRUE
+170,2014,3,Michigan,Texas,0.787,TRUE
+171,2014,3,Kansas,Stanford,0.787,FALSE
+172,2011,4,Ohio State,Kentucky,0.788,FALSE
+173,2012,2,Baylor,South Dakota State,0.792,TRUE
+174,2012,4,Ohio State,Cincinnati,0.793,TRUE
+175,2012,4,Kentucky,Indiana,0.795,TRUE
+176,2011,4,Duke,Arizona,0.8,FALSE
+177,2011,2,Louisville,Morehead State,0.805,FALSE
+178,2014,3,Tennessee,Mercer,0.811,TRUE
+179,2014,2,Iowa State,North Carolina Central,0.812,TRUE
+180,2013,3,Florida,Minnesota,0.813,TRUE
+181,2011,3,San Diego State,Temple,0.813,TRUE
+182,2011,2,Connecticut,Bucknell,0.814,TRUE
+183,2013,3,Ohio State,Iowa State,0.816,TRUE
+184,2012,4,Kansas,North Carolina State,0.819,TRUE
+185,2011,3,Florida,UCLA,0.822,TRUE
+186,2014,3,Louisville,Saint Louis,0.822,TRUE
+187,2013,2,Michigan State,Valparaiso,0.83,TRUE
+188,2011,3,Purdue,Virginia Commonwealth,0.835,FALSE
+189,2011,2,Texas,Oakland,0.845,TRUE
+190,2013,6,Louisville,Wichita State,0.846,TRUE
+191,2012,3,Ohio State,Gonzaga,0.848,TRUE
+192,2011,4,Kansas,Richmond,0.852,TRUE
+193,2013,3,Arizona,Harvard,0.853,TRUE
+194,2012,2,Wisconsin,Montana,0.854,TRUE
+195,2012,3,North Carolina,Creighton,0.855,TRUE
+196,2011,2,Brigham Young,Wofford,0.856,TRUE
+197,2012,4,North Carolina,Ohio,0.862,TRUE
+198,2014,2,UCLA,Tulsa,0.871,TRUE
+199,2011,5,Kansas,Virginia Commonwealth,0.873,FALSE
+200,2013,2,Syracuse,Montana,0.874,TRUE
+201,2013,2,New Mexico,Harvard,0.874,FALSE
+202,2014,3,UCLA,Stephen F. Austin,0.878,TRUE
+203,2011,2,Kentucky,Princeton,0.882,TRUE
+204,2012,2,Florida State,St. Bonaventure,0.882,TRUE
+205,2014,2,Syracuse,Western Michigan,0.883,TRUE
+206,2014,2,Creighton,Louisiana-Lafayette,0.883,TRUE
+207,2012,2,Syracuse,North Carolina Asheville,0.893,TRUE
+208,2012,3,Kentucky,Iowa State,0.895,TRUE
+209,2012,2,Duke,Lehigh,0.896,FALSE
+210,2011,2,Syracuse,Indiana State,0.896,TRUE
+211,2011,3,Ohio State,George Mason,0.896,TRUE
+212,2013,2,Georgetown,Florida Gulf Coast,0.897,FALSE
+213,2013,2,Miami (FL),Pacific,0.899,TRUE
+214,2013,3,Louisville,Colorado State,0.901,TRUE
+215,2013,2,Michigan,South Dakota State,0.902,TRUE
+216,2011,2,Notre Dame,Akron,0.906,TRUE
+217,2014,2,Michigan State,Delaware,0.912,TRUE
+218,2013,3,Indiana,Temple,0.919,TRUE
+219,2012,3,Florida,Norfolk State,0.921,TRUE
+220,2011,2,Purdue,St. Peter's,0.922,TRUE
+221,2014,2,Kansas,Eastern Kentucky,0.924,TRUE
+222,2011,3,Duke,Michigan,0.925,TRUE
+223,2014,2,Wisconsin,American University,0.928,TRUE
+224,2014,2,Duke,Mercer,0.929,FALSE
+225,2014,2,Louisville,Manhattan,0.931,TRUE
+226,2011,2,North Carolina,Long Island,0.933,TRUE
+227,2011,2,San Diego State,Northern Colorado,0.935,TRUE
+228,2012,2,North Carolina,Vermont,0.936,TRUE
+229,2013,2,Ohio State,Iona,0.938,TRUE
+230,2013,4,Florida,Florida Gulf Coast,0.942,TRUE
+231,2013,2,Duke,Albany,0.946,TRUE
+232,2012,2,Kansas,Detroit,0.946,TRUE
+233,2014,2,Villanova,Milwaukee,0.947,TRUE
+234,2013,4,Louisville,Oregon,0.947,TRUE
+235,2013,2,Florida,Northwestern State,0.948,TRUE
+236,2012,2,Michigan State,Long Island,0.949,TRUE
+237,2011,2,Florida,UC-Santa Barbara,0.95,TRUE
+238,2014,2,Michigan,Wofford,0.954,TRUE
+239,2014,2,Virginia,Coastal Carolina,0.964,TRUE
+240,2012,2,Ohio State,Loyola (MD),0.964,TRUE
+241,2011,2,Pittsburgh,North Carolina Asheville,0.967,TRUE
+242,2012,2,Missouri,Norfolk State,0.972,FALSE
+243,2014,2,Wichita State,Cal Poly,0.975,TRUE
+244,2014,2,Arizona,Weber State,0.978,TRUE
+245,2013,2,Gonzaga,Southern University,0.982,TRUE
+246,2013,2,Kansas,Western Kentucky,0.982,TRUE
+247,2013,2,Indiana,James Madison,0.983,TRUE
+248,2014,2,Florida,Albany,0.988,TRUE
+249,2011,2,Kansas,Boston University,0.99,TRUE
+250,2012,2,Kentucky,Western Kentucky,0.991,TRUE
+251,2013,2,Louisville,North Carolina A&T,0.995,TRUE
+252,2011,2,Duke,Hampton,0.995,TRUE
+253,2011,2,Ohio State,UTSA,0.997,TRUE

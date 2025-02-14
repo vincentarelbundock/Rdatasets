@@ -1,0 +1,95 @@
+<!DOCTYPE html><html><head><title>R: Joining The Avengers Is As Deadly As Jumping Off A Four-Story...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>avengers</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Joining The Avengers Is As Deadly As Jumping Off A Four-Story Building</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;Joining The Avengers Is As Deadly As Jumping Off A Four-Story Building&quot;
+<a href="https://fivethirtyeight.com/features/avengers-death-comics-age-of-ultron/">https://fivethirtyeight.com/features/avengers-death-comics-age-of-ultron/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>avengers
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 173 rows representing characters and 21 variables:
+</p>
+
+<dl>
+<dt>url</dt><dd><p>The URL of the comic character on the Marvel Wikia</p>
+</dd>
+<dt>name_alias</dt><dd><p>The full name or alias of the character</p>
+</dd>
+<dt>appearances</dt><dd><p>The number of comic books that character appeared in as of April 30 </p>
+</dd>
+<dt>current</dt><dd><p>Is the member currently active on an avengers affiliated team?</p>
+</dd>
+<dt>gender</dt><dd><p>The recorded gender of the character</p>
+</dd>
+<dt>probationary_intro</dt><dd><p>Sometimes the character was given probationary status as an Avenger, this is the date that happened</p>
+</dd>
+<dt>full_reserve_avengers_intro</dt><dd><p>The month and year the character was introduced as a full or reserve member of the Avengers</p>
+</dd>
+<dt>year</dt><dd><p>The year the character was introduced as a full or reserve member of the Avengers</p>
+</dd>
+<dt>years_since_joining</dt><dd><p>2015 minus the year</p>
+</dd>
+<dt>honorary</dt><dd><p>The status of the avenger, if they were given &quot;Honorary&quot; Avenger status, if they are simply in the &quot;Academy,&quot; or &quot;Full&quot; otherwise</p>
+</dd>
+<dt>death1</dt><dd><p>TRUE if the Avenger died, FALSE if not.</p>
+</dd>
+<dt>return1</dt><dd><p>TRUE if the Avenger returned from their first death, FALSE if they did not, blank if not applicable</p>
+</dd>
+<dt>death2</dt><dd><p>TRUE if the Avenger died a second time after their revival, FALSE if they did not, blank if not applicable</p>
+</dd>
+<dt>return2</dt><dd><p>TRUE if the Avenger returned from their second death, FALSE if they did not, blank if not applicable</p>
+</dd>
+<dt>death3</dt><dd><p>TRUE if the Avenger died a third time after their second revival, FALSE if they did not, blank if not applicable</p>
+</dd>
+<dt>return3</dt><dd><p>TRUE if the Avenger returned from their third death, FALSE if they did not, blank if not applicable</p>
+</dd>
+<dt>death4</dt><dd><p>TRUE if the Avenger died a fourth time after their third revival, FALSE if they did not, blank if not applicable</p>
+</dd>
+<dt>return4</dt><dd><p>TRUE if the Avenger returned from their fourth death, FALSE if they did not, blank if not applicable</p>
+</dd>
+<dt>death5</dt><dd><p>TRUE if the Avenger died a fifth time after their fourth revival, FALSE if they did not, blank if not applicable</p>
+</dd>
+<dt>return5</dt><dd><p>TRUE if the Avenger returned from their fifth death, FALSE if they did not, blank if not applicable</p>
+</dd>
+<dt>notes</dt><dd><p>Descriptions of deaths and resurrections.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Deaths of Marvel comic book characters between the time they joined the Avengers and April 30, 2015, the week before Secret Wars #1.
+</p>
+
+</main>
+
+</div>
+</body></html>

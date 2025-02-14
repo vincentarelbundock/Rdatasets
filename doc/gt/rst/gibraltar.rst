@@ -55,29 +55,6 @@
       condition
          The weather condition.
 
-      .. rubric:: Examples
-         :name: examples
-
-      Here is a glimpse at the data available in ``gibraltar``.
-
-      .. container:: sourceCode r
-
-         ::
-
-            dplyr::glimpse(gibraltar)
-            #> Rows: 1,431
-            #> Columns: 10
-            #> $ date       <date> 2023-05-01, 2023-05-01, 2023-05-01, 2023-05-01, 2023-05-01~
-            #> $ time       <chr> "00:20", "00:50", "01:20", "01:50", "02:20", "02:50", "03:2~
-            #> $ temp       <dbl> 18.9, 18.9, 17.8, 18.9, 18.9, 17.8, 17.8, 17.8, 18.9, 18.9,~
-            #> $ dew_point  <dbl> 12.8, 13.9, 13.9, 13.9, 12.8, 12.8, 12.8, 12.8, 12.2, 12.2,~
-            #> $ humidity   <dbl> 0.68, 0.73, 0.77, 0.73, 0.68, 0.73, 0.73, 0.73, 0.64, 0.64,~
-            #> $ wind_dir   <chr> "W", "WSW", "W", "W", "WSW", "WSW", "W", "SW", "SW", "WSW",~
-            #> $ wind_speed <dbl> 6.7, 7.2, 6.7, 6.7, 6.7, 6.7, 7.2, 6.3, 4.0, 3.1, 3.6, 2.2,~
-            #> $ wind_gust  <dbl> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,~
-            #> $ pressure   <dbl> 1015.2, 1015.2, 1014.6, 1014.6, 1014.6, 1014.6, 1014.6, 101~
-            #> $ condition  <chr> "Fair", "Fair", "Fair", "Fair", "Fair", "Fair", "Fair", "Fa~
-
       .. rubric:: Dataset ID and Badge
          :name: dataset-id-and-badge
 
@@ -90,7 +67,7 @@
       .. rubric:: Dataset Introduced
          :name: dataset-introduced
 
-      ``v0.11.0``
+      ``v0.11.0`` (July 9, 2024)
 
       .. rubric:: See Also
          :name: see-also
@@ -99,5 +76,12 @@
       ``films``, ``gtcars``, ``illness``, ``metro``, ``nuclides``,
       ``peeps``, ``photolysis``, ``pizzaplace``, ``reactions``,
       ``rx_addv``, ``rx_adsl``, ``sp500``, ``sza``, ``towny``
+
+      .. rubric:: Examples
+         :name: examples
+
+      .. code:: R
+
+         dplyr::glimpse(gibraltar)
 
 .. |This image of that of a dataset badge.| image:: https://raw.githubusercontent.com/rstudio/gt/master/images/dataset_gibraltar.png

@@ -1,0 +1,71 @@
+<!DOCTYPE html><html><head><title>R: Trump Might Be The First President To Scrap A National...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>antiquities_act</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Trump Might Be The First President To Scrap A National Monument</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;Trump Might Be The First President To Scrap A National Monument&quot;
+<a href="https://fivethirtyeight.com/features/trump-might-be-the-first-president-to-scrap-a-national-monument/">https://fivethirtyeight.com/features/trump-might-be-the-first-president-to-scrap-a-national-monument/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>antiquities_act
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 344 rows representing acts and 9 variables (Note that 7 of the original rows failed to parse and are omitted here):
+</p>
+
+<dl>
+<dt>current_name</dt><dd><p>Current name of piece of land designated under the Antiquities Act</p>
+</dd>
+<dt>states</dt><dd><p>State(s) or territory where land is located</p>
+</dd>
+<dt>original_name</dt><dd><p>If included, original name of piece of land designated under the Antiquities Act</p>
+</dd>
+<dt>current_agency</dt><dd><p>Current land management agency. NPS = National Parks Service, BLM = Bureau of Land Management, USFS = US Forest Service, FWS = US Fish and Wildlife Service, NOAA = National Oceanic and National Oceanic and Atmospheric Administration</p>
+</dd>
+<dt>action</dt><dd><p>Type of action taken on land</p>
+</dd>
+<dt>date</dt><dd><p>Date of action</p>
+</dd>
+<dt>year</dt><dd><p>Year of action</p>
+</dd>
+<dt>pres_or_congress</dt><dd><p>President or congress that issued action</p>
+</dd>
+<dt>acres_affected</dt><dd><p>Acres affected by action. Note that total current acreage is not included. National monuments that cover ocean are listed in square miles.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>National Parks Conservation Association <a href="https://www.npca.org/">https://www.npca.org/</a> and National Parks Service Archeology Program https://www.nps.gov/history/archeology/sites/antiquities/MonumentsList.htm
+</p>
+
+</main>
+
+</div>
+</body></html>

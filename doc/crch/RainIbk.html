@@ -28,7 +28,7 @@ Airport (11120) from 2000-01-01 to 2013-09-17.
 
 <h3>Usage</h3>
 
-<pre><code class='language-R'>data("RainIbk")</code></pre>
+<pre><code class='language-R'>data("RainIbk", package = "crch")</code></pre>
 
 
 <h3>Format</h3>
@@ -42,9 +42,9 @@ ensemble members.
 
 <h3>Source</h3>
 
-<p>Observations: http://www.ogimet.com/synops.phtml.en
+<p>Observations: <a href="https://www.ogimet.com/synops.phtml.en">https://www.ogimet.com/synops.phtml.en</a>
 </p>
-<p>Reforecasts: http://www.esrl.noaa.gov/psd/forecasts/reforecast2/
+<p>Reforecasts: <a href="https://psl.noaa.gov/forecasts/reforecast2/">https://psl.noaa.gov/forecasts/reforecast2/</a>
 </p>
 
 
@@ -53,7 +53,7 @@ ensemble members.
 <p>Hamill TM, Bates GT, Whitaker JS, Murray DR, Fiorino M, Galarneau Jr TJ,
 Zhu Y, Lapenta W (2013). NOAA's Second-Generation Global Medium-Range
 Ensemble Reforecast Data Set. <em>Bulletin of the American Meteorological
-Society</em>, 94(10), 1553-1565.
+Society</em>, <b>94</b>(10), 1553-1565.
 </p>
 
 
@@ -62,7 +62,7 @@ Society</em>, 94(10), 1553-1565.
 <pre><code class='language-R'>## Spread skill relationship ##
 
 ## load and prepare data
-data(RainIbk)
+data("RainIbk", package = "crch")
 
 ## mean and standard deviation of square root transformed ensemble forecasts
 RainIbk$sqrtensmean &lt;- 

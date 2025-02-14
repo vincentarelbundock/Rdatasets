@@ -1,0 +1,71 @@
+<!DOCTYPE html><html><head><title>R: Where People Go To Check The Weather</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>weather_check</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Where People Go To Check The Weather</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;Where People Go To Check The Weather&quot;
+<a href="https://fivethirtyeight.com/features/weather-forecast-news-app-habits/">https://fivethirtyeight.com/features/weather-forecast-news-app-habits/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>weather_check
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 928 rows representing respondents and 9 variables:
+</p>
+
+<dl>
+<dt>respondent_id</dt><dd><p>Respondent ID</p>
+</dd>
+<dt>ck_weather</dt><dd><p>Do you typically check a daily weather report?</p>
+</dd>
+<dt>weather_source</dt><dd><p>How do you typically check the weather?</p>
+</dd>
+<dt>weather_source_site</dt><dd><p>If they responded &quot;A specific website or app&quot; when asked how they typically check the weather, they were asked to write-in the app or website they used.</p>
+</dd>
+<dt>ck_weather_watch</dt><dd><p>If you had a smartwatch (like the soon to be released Apple Watch), how likely or unlikely would you be to check the weather on that device?</p>
+</dd>
+<dt>age</dt><dd><p>Age</p>
+</dd>
+<dt>female</dt><dd><p>Gender</p>
+</dd>
+<dt>hhold_income</dt><dd><p>How much total combined money did all members of your HOUSEHOLD earn last year?</p>
+</dd>
+<dt>region</dt><dd><p>US Region</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>The source of the data is a Survey Monkey Audience poll commissioned by FiveThirtyEight and conducted from April 6 to April 10, 2015.  See <a href="https://github.com/fivethirtyeight/data/tree/master/weather-check">https://github.com/fivethirtyeight/data/tree/master/weather-check</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

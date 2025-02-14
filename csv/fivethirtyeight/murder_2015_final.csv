@@ -1,0 +1,84 @@
+rownames,city,state,murders_2014,murders_2015,change
+1,Baltimore,Maryland,211,344,133
+2,Chicago,Illinois,411,478,67
+3,Houston,Texas,242,303,61
+4,Cleveland,Ohio,63,120,57
+5,Washington,D.C.,105,162,57
+6,Milwaukee,Wisconsin,90,145,55
+7,Philadelphia,Pennsylvania,248,280,32
+8,Kansas City,Missouri,78,109,31
+9,Nashville,Tennessee,41,72,31
+10,St. Louis,Missouri,159,188,29
+11,Oklahoma City,Oklahoma,45,73,28
+12,Louisville,Kentucky,56,81,25
+13,Denver,Colorado,31,53,22
+14,Los Angeles,California,260,282,22
+15,Dallas,Texas,116,136,20
+16,New York,New York,333,352,19
+17,Orlando,Florida,15,32,17
+18,Minneapolis,Minnesota,31,47,16
+19,Omaha,Nebraska,32,48,16
+20,Sacramento,California,28,43,15
+21,Anchorage,Alaska,12,26,14
+22,Charlotte-Mecklenburg,North Carolina,47,61,14
+23,New Orleans,Louisiana,150,164,14
+24,Albuquerque,New Mexico,30,43,13
+25,Aurora,Colorado,11,24,13
+26,Fort Wayne,Indiana,12,25,13
+27,Long Beach,California,23,36,13
+28,Durham,North Carolina,21,34,13
+29,Indianapolis,Indiana,136,148,12
+30,Newark,New Jersey,93,104,11
+31,Tulsa,Oklahoma,46,55,9
+32,Portland,Oregon,26,34,8
+33,San Francisco,California,45,53,8
+34,Cincinnati,Ohio,60,66,6
+35,Tampa,Florida,28,34,6
+36,Bakersfield,California,17,22,5
+37,Colorado Springs,Colorado,20,25,5
+38,Las Vegas,Nevada,122,127,5
+39,Oakland,California,80,85,5
+40,San Diego,California,32,37,5
+41,St. Paul,Minnesota,11,16,5
+42,Anaheim,California,14,18,4
+43,Greensboro,North Carolina,23,26,3
+44,Jersey City,New Jersey,24,27,3
+45,Mesa,Arizona,13,16,3
+46,Fort Worth,Texas,54,56,2
+47,Virginia Beach,Virginia,17,19,2
+48,Irvine,California,0,2,2
+49,Atlanta,Georgia,93,94,1
+50,Henderson,Nevada,3,4,1
+51,Jacksonville,Florida,96,97,1
+52,Raleigh,North Carolina,16,17,1
+53,Wichita,Kansas,26,27,1
+54,Chandler,Arizona,1,1,0
+55,Plano,Texas,4,4,0
+56,Stockton,California,49,49,0
+57,Toledo,Ohio,24,24,0
+58,Chula Vista,California,7,6,-1
+59,Phoenix,Arizona,114,112,-2
+60,Riverside,California,12,10,-2
+61,San Jose,California,32,30,-2
+62,Detroit,Michigan,298,295,-3
+63,Seattle,Washington,26,23,-3
+64,El Paso,Texas,21,17,-4
+65,Tucson,Arizona,35,31,-4
+66,Arlington,Texas,13,8,-5
+67,Lexington,Kentucky,20,15,-5
+68,Memphis,Tennessee,140,135,-5
+69,St. Petersburg,Florida,19,14,-5
+70,Columbus,Ohio,83,77,-6
+71,Honolulu,Hawaii,21,15,-6
+72,Laredo,Texas,14,8,-6
+73,Lincoln,Nebraska,7,1,-6
+74,Miami,Florida,81,75,-6
+75,Santa Ana,California,18,12,-6
+76,Mobile,Alabama,31,24,-7
+77,Fresno,California,47,39,-8
+78,Austin,Texas,32,23,-9
+79,San Antonio,Texas,103,94,-9
+80,Corpus Christi,Texas,27,17,-10
+81,Pittsburgh,Pennsylvania,69,57,-12
+82,Boston,Massachusetts,53,38,-15
+83,Buffalo,New York,60,41,-19

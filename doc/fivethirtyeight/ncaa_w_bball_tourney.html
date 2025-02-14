@@ -1,0 +1,89 @@
+<!DOCTYPE html><html><head><title>R: The Rise And Fall Of Women's NCAA Tournament Dynasties</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>ncaa_w_bball_tourney</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The Rise And Fall Of Women's NCAA Tournament Dynasties</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+'The Rise And Fall Of Women's NCAA Tournament Dynasties'
+<a href="https://fivethirtyeight.com/features/louisiana-tech-was-the-uconn-of-the-80s/">https://fivethirtyeight.com/features/louisiana-tech-was-the-uconn-of-the-80s/</a>
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>ncaa_w_bball_tourney
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A dataset with 2092 rows representing every team that has participated in the NCAA Division I Women's Basketball Tournament since it began in 1982 and 19 variables
+</p>
+
+<dl>
+<dt>year</dt><dd><p>the year of the game which the team participated in</p>
+</dd>
+<dt>school</dt><dd><p>the school of the participating team</p>
+</dd>
+<dt>seed</dt><dd><p>The '(OR)' seeding designation in 1983 notes the eight teams that played an opening-round game to become the No. 8 seed in each region.</p>
+</dd>
+<dt>conference</dt><dd><p>the conference record of the team (if available)</p>
+</dd>
+<dt>conf_w</dt><dd><p>number of winning in conference record</p>
+</dd>
+<dt>conf_l</dt><dd><p>number of losses in conference record</p>
+</dd>
+<dt>conf_percent</dt><dd><p>percent of winning in conference record</p>
+</dd>
+<dt>reg_w</dt><dd><p>number of winning in regular-season record</p>
+</dd>
+<dt>reg_l</dt><dd><p>number of losses in regular-season record</p>
+</dd>
+<dt>reg_percent</dt><dd><p>percent of winning in regular-season record</p>
+</dd>
+<dt>how_qual</dt><dd><p>Whether the school qualified with an automatic bid (by winning its conference or conference tournament) or an at-large bid.</p>
+</dd>
+<dt>first_home_game</dt><dd><p>Whether the school played its first-round tournament games on its home court.</p>
+</dd>
+<dt>tourney_w</dt><dd><p>number of winning in tournament record</p>
+</dd>
+<dt>tourney_l</dt><dd><p>number of losses in tournament record</p>
+</dd>
+<dt>tourney_finish</dt><dd><p>The round of the final game for each team. OR=opening-round loss (1983 only); 1st=first-round loss; 2nd=second-round loss; RSF=loss in the Sweet 16; RF=loss in the Elite Eight; NSF=loss in the national semifinals; N2nd=national runner-up; Champ=national champions</p>
+</dd>
+<dt>full_w</dt><dd><p>number of winning in full record</p>
+</dd>
+<dt>full_l</dt><dd><p>number of losses in full record</p>
+</dd>
+<dt>full_percent</dt><dd><p>percent of winning in full record</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>NCAA
+</p>
+
+</main>
+
+</div>
+</body></html>

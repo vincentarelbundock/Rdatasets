@@ -1,0 +1,69 @@
+<!DOCTYPE html><html><head><title>R: Hip-Hop Is Turning On Donald Trump</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>hiphop_cand_lyrics</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Hip-Hop Is Turning On Donald Trump</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;Hip-Hop Is Turning On Donald Trump&quot;
+<a href="https://projects.fivethirtyeight.com/clinton-trump-hip-hop-lyrics/">https://projects.fivethirtyeight.com/clinton-trump-hip-hop-lyrics/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>hiphop_cand_lyrics
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 377 rows representing hip-hop songs referencing POTUS candidates in 2016 and 8 variables:
+</p>
+
+<dl>
+<dt>candidate</dt><dd><p>Candidate referenced</p>
+</dd>
+<dt>song</dt><dd><p>Song name</p>
+</dd>
+<dt>artist</dt><dd><p>Artist name</p>
+</dd>
+<dt>sentiment</dt><dd><p>Positive, negative or neutral</p>
+</dd>
+<dt>theme</dt><dd><p>Theme of lyric</p>
+</dd>
+<dt>album_release_date</dt><dd><p>Date of album release</p>
+</dd>
+<dt>line</dt><dd><p>Lyrics</p>
+</dd>
+<dt>url</dt><dd><p>Genius link</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Genius https://genius.com/
+</p>
+
+</main>
+
+</div>
+</body></html>

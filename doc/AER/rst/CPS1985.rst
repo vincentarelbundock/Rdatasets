@@ -72,7 +72,7 @@
 
       StatLib.
 
-      http://lib.stat.cmu.edu/datasets/CPS_85_Wages
+      https://lib.stat.cmu.edu/datasets/CPS_85_Wages
 
       .. rubric:: References
          :name: references

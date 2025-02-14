@@ -1,0 +1,89 @@
+<!DOCTYPE html><html><head><title>R: 2018 Governors Forecast</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>governor_national_forecast</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>2018 Governors Forecast</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+'Forecasting the races for governor'
+<a href="https://projects.fivethirtyeight.com/2018-midterm-election-forecast/governor/">https://projects.fivethirtyeight.com/2018-midterm-election-forecast/governor/</a>
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>governor_national_forecast
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A dataframe with 150 rows representing national-level results of the classic, lite, and deluxe gubernatorial forecasts since Oct. 11, 2018. and 11 variables
+</p>
+
+<dl>
+<dt>forecastdate</dt><dd><p>date of the forecast</p>
+</dd>
+<dt>party</dt><dd><p>the party of the forecast</p>
+</dd>
+<dt>model</dt><dd><p>the model of the forecast</p>
+</dd>
+<dt>win_probability</dt><dd><p>the probability of the corresponding party winning</p>
+</dd>
+<dt>mean_seats</dt><dd><p>the mean of the number of seats</p>
+</dd>
+<dt>median_seats</dt><dd><p>the median number of seats</p>
+</dd>
+<dt>p10_seats</dt><dd><p>the top 10 percentile of number of seats</p>
+</dd>
+<dt>p90_seats</dt><dd><p>the top 90 percentile of number of seats</p>
+</dd>
+<dt>margin</dt><dd><p>unknown</p>
+</dd>
+<dt>p10_margin</dt><dd><p>the margin of p10_seats</p>
+</dd>
+<dt>p90_margin</dt><dd><p>the margin of p90_seats</p>
+</dd>
+</dl>
+
+
+
+<h3>Note</h3>
+
+<p>The original dataset included a meaningless column called &quot;state&quot;, and all variables under this column was &quot;US&quot;. So this column was removed.
+</p>
+
+
+<h3>Source</h3>
+
+<p>FiveThirtyEight’s House, Senate And Governor Models
+Methodology:
+<a href="https://fivethirtyeight.com/methodology/how-fivethirtyeights-house-and-senate-models-work/">https://fivethirtyeight.com/methodology/how-fivethirtyeights-house-and-senate-models-work/</a>
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>governor_state_forecast</code>
+</p>
+
+</main>
+
+</div>
+</body></html>

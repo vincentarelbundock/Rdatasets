@@ -1,0 +1,85 @@
+<!DOCTYPE html><html><head><title>R: For A Trump Nominee, Neil Gorsuch’s Record Is Surprisingly...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>tenth_circuit</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>For A Trump Nominee, Neil Gorsuch’s Record Is Surprisingly Moderate On Immigration</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;For A Trump Nominee, Neil Gorsuch’s Record Is Surprisingly Moderate On Immigration&quot;
+<a href="https://fivethirtyeight.com/features/for-a-trump-nominee-neil-gorsuchs-record-is-surprisingly-moderate-on-immigration/">https://fivethirtyeight.com/features/for-a-trump-nominee-neil-gorsuchs-record-is-surprisingly-moderate-on-immigration/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>tenth_circuit
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 954 rows representing cases and 13 variables:
+</p>
+
+<dl>
+<dt>title</dt><dd><p>Name of the case</p>
+</dd>
+<dt>date</dt><dd><p>Date of decision</p>
+</dd>
+<dt>federalreporter_cit</dt><dd><p>Case citation, as listed in the Federal Reporter Series</p>
+</dd>
+<dt>westlaw_cit</dt><dd><p>Case citation, Westlaw format</p>
+</dd>
+<dt>issue</dt><dd><p>Issue number, in cases divided into multiple issues</p>
+</dd>
+<dt>weight</dt><dd><p>Weight per issue (total weight per case equals one)</p>
+</dd>
+<dt>judge1</dt><dd><p>Name of first judge</p>
+</dd>
+<dt>judge2</dt><dd><p>Name of second judge</p>
+</dd>
+<dt>judge3</dt><dd><p>Name of third judge</p>
+</dd>
+<dt>vote1_liberal</dt><dd><p>Vote of first judge. 1 = liberal, 0 = conservative.</p>
+</dd>
+<dt>vote2_liberal</dt><dd><p>Vote of second judge. 1 = liberal, 0 = conservative.</p>
+</dd>
+<dt>vote3_liberal</dt><dd><p>Vote of third judge. 1 = liberal, 0 = conservative.</p>
+</dd>
+<dt>category</dt><dd><p>Category of case, immigration or discrimination</p>
+</dd>
+</dl>
+
+
+
+<h3>Note</h3>
+
+<p>In immigration cases, partial relief to immigration petitioner is coded as liberal because the petitioner typically seeks just one core remedy (e.g., withholding of removal, adjustment of status, or asylum); in discrimination cases, partial relief is coded as multiple issues because the plaintiff often seeks separate remedies under multiple claims (e.g., disparate treatment, retaliation, etc.) and different sources of law.
+</p>
+
+
+<h3>Source</h3>
+
+<p>See <a href="https://github.com/fivethirtyeight/data/tree/master/tenth-circuit">https://github.com/fivethirtyeight/data/tree/master/tenth-circuit</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

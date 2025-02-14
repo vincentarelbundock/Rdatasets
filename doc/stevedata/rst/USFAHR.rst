@@ -119,7 +119,8 @@
       (2011) by way of peacesciencer's ``add_fpsim()`` function. Please
       read peacesciencer documentation for more information about these
       measures, along with what you should cite for any serious use of
-      these data.
+      these data. Higher values for these measures = more foreign policy
+      similarity.
 
       Minimum distance is calculated using the Vincenty method ("as the
       crow flies"). Measurement is in kilometers and data come from

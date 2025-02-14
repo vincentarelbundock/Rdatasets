@@ -1,0 +1,149 @@
+<!DOCTYPE html><html><head><title>R: Gas mileage of four models of car</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gasmileage</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Gas mileage of four models of car</h2>
+
+<h3>Description</h3>
+
+<p>Gas mileage of four models of car
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>gasmileage
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with two columns and eleven rows:
+</p>
+
+<dl>
+<dt>mileage</dt><dd><p>Mileage obtained</p>
+</dd>
+<dt>model</dt><dd><p>Four types of car models</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>summary(gasmileage)
+y &lt;- c(22, 26,  28, 24, 29,   29, 32, 28,  23, 24)
+xx &lt;- c(1,1,2,2,2,3,3,3,4,4)
+# Plot the observations 
+plot(xx, y, col="red", pch="*", xlab="Model", ylab="Mileage")
+# Method1: Hand calculation 
+ni &lt;- c(2, 3, 3, 2)
+means &lt;- tapply(y, xx, mean)
+vars &lt;- tapply(y, xx, var)
+round(rbind(means, vars), 2)
+sum(y^2) # gives 7115
+totalSS &lt;- sum(y^2) - 10 * (mean(y))^2 # gives 92.5 
+RSSf &lt;- sum(vars*(ni-1)) # gives 31.17 
+groupSS &lt;- totalSS - RSSf # gives 61.3331.17/6
+meangroupSS &lt;- groupSS/3 # gives 20.44
+meanErrorSS &lt;- RSSf/6 # gives 5.194
+Fvalue &lt;- meangroupSS/meanErrorSS # gives 3.936 
+pvalue &lt;- 1-pf(Fvalue, df1=3, df2=6)
+
+#### Method 2: Illustrate using dummy variables
+#################################
+#Create the design matrix X for the full regression model
+g &lt;- 4
+n1 &lt;- 2 
+n2 &lt;- 3
+n3 &lt;- 3
+n4 &lt;- 2
+n &lt;- n1+n2+n3+n4
+X &lt;- matrix(0, ncol=g, nrow=n)       #Set X as a zero matrix initially
+X[1:n1,1] &lt;- 1    #Determine the first column of X
+X[(n1+1):(n1+n2),2] &lt;- 1   #the 2nd column
+X[(n1+n2+1):(n1+n2+n3),3] &lt;- 1    #the 3rd
+X[(n1+n2+n3+1):(n1+n2+n3+n4),4] &lt;- 1    #the 4th 
+#################################
+####Fitting the  full model####
+#################################
+#Estimation
+XtXinv &lt;- solve(t(X)%*%X)
+betahat &lt;- XtXinv %*%t(X)%*%y   #Estimation of the coefficients
+Yhat &lt;- X%*%betahat   #Fitted Y values
+Resids &lt;- y - Yhat   #Residuals
+SSE &lt;- sum(Resids^2)   #Error sum of squares
+S2hat &lt;- SSE/(n-g)   #Estimation of sigma-square; mean square for error
+Sigmahat &lt;- sqrt(S2hat)
+
+##############################################################
+####Fitting the reduced model -- the 4 means are equal #####
+##############################################################
+Xr &lt;- matrix(1, ncol=1, nrow=n)
+kr &lt;- dim(Xr)[2]
+#Estimation
+Varr &lt;- solve(t(Xr)%*%Xr)
+hbetar &lt;- solve(t(Xr)%*%Xr)%*%t(Xr)%*% y   #Estimation of the coefficients
+hYr = Xr%*%hbetar   #Fitted Y values
+Resir &lt;- y - hYr   #Residuals
+SSEr &lt;- sum(Resir^2)   #Total sum of squares
+###################################################################
+####F-test for comparing the reduced model with the full model ####
+###################################################################
+FStat &lt;- ((SSEr-SSE)/(g-kr))/(SSE/(n-g))  #The test statistic of the F-test
+alpha &lt;- 0.05
+Critical_value_F &lt;- qf(1-alpha, g-kr,n-g)  #The critical constant of F-test
+pvalue_F &lt;- 1-pf(FStat,g-kr, n-g)   #p-value of F-test
+
+modelA &lt;- c(22, 26)
+modelB &lt;- c(28, 24, 29)
+modelC &lt;- c(29, 32, 28)
+modelD &lt;- c(23, 24)
+
+SSerror = sum( (modelA-mean(modelA))^2 ) + sum( (modelB-mean(modelB))^2 ) 
++ sum( (modelC-mean(modelC))^2 ) + sum( (modelD-mean(modelD))^2 )
+SStotal &lt;-  sum( (y-mean(y))^2 ) 
+SSgroup &lt;- SStotal-SSerror
+
+####
+#### Method 3: Use the  built-in function lm directly
+
+#####################################
+aa &lt;- "modelA"
+bb &lt;- "modelB"
+cc &lt;- "modelC"
+dd &lt;- "modelD"
+Expl &lt;- c(aa,aa,bb,bb,bb,cc,cc,cc,dd,dd)
+is.factor(Expl)
+Expl &lt;- factor(Expl)
+model1 &lt;- lm(y~Expl)
+summary(model1)      
+anova(model1)
+###Alternatively ###
+
+xxf &lt;- factor(xx)
+is.factor(xxf)
+model2 &lt;- lm(y~xxf)
+summary(model2)
+anova(model2)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

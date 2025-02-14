@@ -1,0 +1,1895 @@
+rownames,movie,profane,word,minutes_in
+1,Reservoir Dogs,TRUE,dick,0.4
+2,Reservoir Dogs,TRUE,dicks,0.43
+3,Reservoir Dogs,TRUE,fucked,0.55
+4,Reservoir Dogs,TRUE,fucking,0.61
+5,Reservoir Dogs,TRUE,bullshit,0.61
+6,Reservoir Dogs,TRUE,fuck,0.66
+7,Reservoir Dogs,TRUE,shit,0.9
+8,Reservoir Dogs,TRUE,fuck,1.43
+9,Reservoir Dogs,TRUE,dicks,1.56
+10,Reservoir Dogs,TRUE,fuck,1.66
+11,Reservoir Dogs,TRUE,dick,1.75
+12,Reservoir Dogs,TRUE,dick,1.75
+13,Reservoir Dogs,TRUE,dick,1.75
+14,Reservoir Dogs,TRUE,dick,1.75
+15,Reservoir Dogs,TRUE,dick,1.75
+16,Reservoir Dogs,TRUE,dick,1.75
+17,Reservoir Dogs,TRUE,dick,1.75
+18,Reservoir Dogs,TRUE,dicks,1.75
+19,Reservoir Dogs,TRUE,motherfucker,1.83
+20,Reservoir Dogs,TRUE,dick,1.96
+21,Reservoir Dogs,TRUE,pussy,2.15
+22,Reservoir Dogs,TRUE,fucks,2.18
+23,Reservoir Dogs,TRUE,fuck,2.3
+24,Reservoir Dogs,TRUE,fucking,2.45
+25,Reservoir Dogs,TRUE,hell,2.48
+26,Reservoir Dogs,TRUE,fucking,2.51
+27,Reservoir Dogs,TRUE,fucking,2.81
+28,Reservoir Dogs,TRUE,dick,2.86
+29,Reservoir Dogs,TRUE,jap,2.93
+30,Reservoir Dogs,TRUE,fuck,3.05
+31,Reservoir Dogs,TRUE,shit,3.2
+32,Reservoir Dogs,TRUE,fucking,3.4
+33,Reservoir Dogs,TRUE,fucking,3.55
+34,Reservoir Dogs,TRUE,fucking,3.7
+35,Reservoir Dogs,TRUE,motherfucker,3.93
+36,Reservoir Dogs,TRUE,motherfucker,3.98
+37,Reservoir Dogs,TRUE,shit,4.35
+38,Reservoir Dogs,TRUE,shit,4.76
+39,Reservoir Dogs,TRUE,fucking,4.86
+40,Reservoir Dogs,TRUE,dick,5.25
+41,Reservoir Dogs,TRUE,fucking,5.41
+42,Reservoir Dogs,TRUE,fucking,5.51
+43,Reservoir Dogs,TRUE,fucking,5.55
+44,Reservoir Dogs,TRUE,fucking,5.61
+45,Reservoir Dogs,TRUE,bullshit,6.23
+46,Reservoir Dogs,TRUE,fuck,6.46
+47,Reservoir Dogs,TRUE,fucked,6.58
+48,Reservoir Dogs,TRUE,fucks,6.66
+49,Reservoir Dogs,TRUE,bullshit,6.81
+50,Reservoir Dogs,TRUE,fucking,6.86
+51,Reservoir Dogs,TRUE,fucking,6.73
+52,Reservoir Dogs,TRUE,bastard,7.38
+53,Reservoir Dogs,TRUE,goddamn,7.41
+54,Reservoir Dogs,TRUE,goddamn,7.58
+55,Reservoir Dogs,TRUE,shit,9.63
+56,Reservoir Dogs,TRUE,fucking,9.96
+57,Reservoir Dogs,TRUE,shit,10.01
+58,Reservoir Dogs,TRUE,fucking,10.08
+59,Reservoir Dogs,TRUE,shit,10.26
+60,Reservoir Dogs,TRUE,goddamn,11.13
+61,Reservoir Dogs,TRUE,fucking,11.13
+62,Reservoir Dogs,TRUE,fucking,11.85
+63,Reservoir Dogs,TRUE,fucking,12.06
+64,Reservoir Dogs,TRUE,fucking,12.08
+65,Reservoir Dogs,TRUE,fucking,12.43
+66,Reservoir Dogs,TRUE,fucking,12.45
+67,Reservoir Dogs,TRUE,fucking,12.9
+68,Reservoir Dogs,TRUE,fucking,13.73
+69,Reservoir Dogs,TRUE,fuck,14.38
+70,Reservoir Dogs,TRUE,fucking,14.66
+71,Reservoir Dogs,TRUE,fucking,14.95
+72,Reservoir Dogs,TRUE,fucking,15.38
+73,Reservoir Dogs,TRUE,fucking,15.41
+74,Reservoir Dogs,TRUE,shit,15.45
+75,Reservoir Dogs,TRUE,fuck,15.51
+76,Reservoir Dogs,TRUE,fuck,15.65
+77,Reservoir Dogs,TRUE,fucking,15.75
+78,Reservoir Dogs,TRUE,fucked,15.86
+79,Reservoir Dogs,TRUE,fucked,15.88
+80,Reservoir Dogs,TRUE,fucked,15.93
+81,Reservoir Dogs,TRUE,fuck,16.45
+82,Reservoir Dogs,TRUE,motherfuckers,16.6
+83,Reservoir Dogs,TRUE,fucking,16.65
+84,Reservoir Dogs,TRUE,fuck,16.75
+85,Reservoir Dogs,TRUE,fucking,16.86
+86,Reservoir Dogs,TRUE,fucking,17.56
+87,Reservoir Dogs,TRUE,fuck,17.63
+88,Reservoir Dogs,TRUE,fucking,17.75
+89,Reservoir Dogs,TRUE,fucking,17.95
+90,Reservoir Dogs,TRUE,fucking,18
+91,Reservoir Dogs,TRUE,shit,20.13
+92,Reservoir Dogs,TRUE,fucking,20.16
+93,Reservoir Dogs,TRUE,fuck,20.68
+94,Reservoir Dogs,TRUE,fuck,20.73
+95,Reservoir Dogs,TRUE,fuck,20.93
+96,Reservoir Dogs,TRUE,fucking,20.96
+97,Reservoir Dogs,TRUE,asshole,20.98
+98,Reservoir Dogs,TRUE,fuck,21
+99,Reservoir Dogs,TRUE,fucking,21.01
+100,Reservoir Dogs,TRUE,fuck,21.2
+101,Reservoir Dogs,TRUE,fucking,22.18
+102,Reservoir Dogs,TRUE,fuck,22.21
+103,Reservoir Dogs,TRUE,motherfucker,22.46
+104,Reservoir Dogs,TRUE,fuck,22.6
+105,Reservoir Dogs,TRUE,goddamn,22.71
+106,Reservoir Dogs,TRUE,ass,22.8
+107,Reservoir Dogs,TRUE,fuck,23
+108,Reservoir Dogs,TRUE,fucking,23.2
+109,Reservoir Dogs,TRUE,assholes,23.35
+110,Reservoir Dogs,TRUE,fucking,24.01
+111,Reservoir Dogs,TRUE,fuck,24.05
+112,Reservoir Dogs,TRUE,fucking,24.6
+113,Reservoir Dogs,TRUE,fuck,24.66
+114,Reservoir Dogs,TRUE,fucking,24.76
+115,Reservoir Dogs,TRUE,fucking,25.13
+116,Reservoir Dogs,TRUE,shit,25.35
+117,Reservoir Dogs,TRUE,fuck,25.45
+118,Reservoir Dogs,TRUE,fucking,25.75
+119,Reservoir Dogs,TRUE,bullshit,25.76
+120,Reservoir Dogs,TRUE,fucking,26.01
+121,Reservoir Dogs,TRUE,fucking,26.06
+122,Reservoir Dogs,TRUE,fucking,26.16
+123,Reservoir Dogs,TRUE,fucking,26.26
+124,Reservoir Dogs,TRUE,hell,27.21
+125,Reservoir Dogs,TRUE,shit,28.6
+126,Reservoir Dogs,TRUE,fucking,28.6
+127,Reservoir Dogs,TRUE,fucking,28.83
+128,Reservoir Dogs,TRUE,shit,28.83
+129,Reservoir Dogs,TRUE,shit,29.16
+130,Reservoir Dogs,TRUE,hell,29.18
+131,Reservoir Dogs,TRUE,fucking,31.13
+132,Reservoir Dogs,TRUE,fuck,31.5
+133,Reservoir Dogs,TRUE,fucking,31.6
+134,Reservoir Dogs,TRUE,fuck,31.8
+135,Reservoir Dogs,TRUE,fuck,31.81
+136,Reservoir Dogs,TRUE,fucking,31.88
+137,Reservoir Dogs,TRUE,hell,32.11
+138,Reservoir Dogs,TRUE,fucking,32.43
+139,Reservoir Dogs,TRUE,fuck,32.55
+140,Reservoir Dogs,TRUE,fucking,32.58
+141,Reservoir Dogs,TRUE,shit,32.6
+142,Reservoir Dogs,TRUE,fuck,32.63
+143,Reservoir Dogs,TRUE,fucking,32.7
+144,Reservoir Dogs,TRUE,shit,32.91
+145,Reservoir Dogs,TRUE,asshole,33.76
+146,Reservoir Dogs,TRUE,shit,33.81
+147,Reservoir Dogs,TRUE,fucking,33.9
+148,Reservoir Dogs,TRUE,fucking,34.3
+149,Reservoir Dogs,TRUE,fuck,34.38
+150,Reservoir Dogs,TRUE,fucking,34.46
+151,Reservoir Dogs,TRUE,fucking,34.56
+152,Reservoir Dogs,TRUE,fucking,34.6
+153,Reservoir Dogs,TRUE,fuck,34.71
+154,Reservoir Dogs,TRUE,fucking,34.75
+155,Reservoir Dogs,TRUE,fuck,34.85
+156,Reservoir Dogs,TRUE,asshole,34.98
+157,Reservoir Dogs,TRUE,assholes,35.48
+158,Reservoir Dogs,TRUE,fuck,35.5
+159,Reservoir Dogs,TRUE,fucking,35.6
+160,Reservoir Dogs,TRUE,fucking,35.61
+161,Reservoir Dogs,TRUE,n-word,35.61
+162,Reservoir Dogs,TRUE,n-word,35.63
+163,Reservoir Dogs,TRUE,fucking,35.71
+164,Reservoir Dogs,TRUE,fucking,35.83
+165,Reservoir Dogs,TRUE,fuck,35.88
+166,Reservoir Dogs,TRUE,asses,35.95
+167,Reservoir Dogs,TRUE,fuck,36.01
+168,Reservoir Dogs,TRUE,shit,36.06
+169,Reservoir Dogs,TRUE,fucking,36.11
+170,Reservoir Dogs,TRUE,fuck,37.41
+171,Reservoir Dogs,TRUE,fucking,37.48
+172,Reservoir Dogs,TRUE,fuck,37.91
+173,Reservoir Dogs,TRUE,fucking,39.06
+174,Reservoir Dogs,TRUE,asshole,39.06
+175,Reservoir Dogs,TRUE,fucking,39.18
+176,Reservoir Dogs,TRUE,hell,39.46
+177,Reservoir Dogs,TRUE,hell,39.6
+178,Reservoir Dogs,TRUE,bitch,39.88
+179,Reservoir Dogs,TRUE,fucking,40.13
+180,Reservoir Dogs,TRUE,ass,40.15
+181,Reservoir Dogs,TRUE,ass,40.3
+182,Reservoir Dogs,TRUE,fuckup,40.48
+183,Reservoir Dogs,TRUE,shit,40.96
+184,Reservoir Dogs,TRUE,fuck,41.25
+185,Reservoir Dogs,TRUE,bastard,41.3
+186,Reservoir Dogs,TRUE,fuck,41.31
+187,Reservoir Dogs,TRUE,fuck,41.43
+188,Reservoir Dogs,TRUE,fucking,41.75
+189,Reservoir Dogs,TRUE,ass,41.76
+190,Reservoir Dogs,TRUE,bitch,41.85
+191,Reservoir Dogs,TRUE,fucking,41.93
+192,Reservoir Dogs,TRUE,n-word,41.93
+193,Reservoir Dogs,TRUE,ass,42
+194,Reservoir Dogs,TRUE,fucking,42.03
+195,Reservoir Dogs,TRUE,bitch,42.11
+196,Reservoir Dogs,TRUE,bitch,42.13
+197,Reservoir Dogs,TRUE,shit,42.16
+198,Reservoir Dogs,TRUE,fuck,42.55
+199,Reservoir Dogs,TRUE,motherfucker,42.56
+200,Reservoir Dogs,TRUE,fucker,42.6
+201,Reservoir Dogs,TRUE,shitty,42.66
+202,Reservoir Dogs,TRUE,asshead,42.86
+203,Reservoir Dogs,TRUE,fucking,43.06
+204,Reservoir Dogs,TRUE,fucking,43.31
+205,Reservoir Dogs,TRUE,shit,43.35
+206,Reservoir Dogs,TRUE,fuck,42.7
+207,Reservoir Dogs,TRUE,fuck,42.71
+208,Reservoir Dogs,TRUE,shit,43.86
+209,Reservoir Dogs,TRUE,fucking,44
+210,Reservoir Dogs,TRUE,shit,44.03
+211,Reservoir Dogs,TRUE,fucked,44.65
+212,Reservoir Dogs,TRUE,fuck,44.9
+213,Reservoir Dogs,TRUE,fucking,45.26
+214,Reservoir Dogs,TRUE,damn,45.4
+215,Reservoir Dogs,TRUE,fucking,46.48
+216,Reservoir Dogs,TRUE,fuck,46.53
+217,Reservoir Dogs,TRUE,fucking,46.65
+218,Reservoir Dogs,TRUE,fucking,46.66
+219,Reservoir Dogs,TRUE,fuck,47.5
+220,Reservoir Dogs,TRUE,fucking,47.51
+221,Reservoir Dogs,TRUE,fucking,47.55
+222,Reservoir Dogs,TRUE,fucking,47.7
+223,Reservoir Dogs,TRUE,fucking,47.71
+224,Reservoir Dogs,TRUE,fucking,47.73
+225,Reservoir Dogs,TRUE,fucking,47.75
+226,Reservoir Dogs,TRUE,fucking,47.8
+227,Reservoir Dogs,TRUE,fucking,47.88
+228,Reservoir Dogs,TRUE,shit,47.98
+229,Reservoir Dogs,TRUE,fucking,48.08
+230,Reservoir Dogs,TRUE,bullshit,48.15
+231,Reservoir Dogs,TRUE,fuck,48.16
+232,Reservoir Dogs,TRUE,fucking,48.25
+233,Reservoir Dogs,TRUE,fucking,48.26
+234,Reservoir Dogs,TRUE,hell,48.31
+235,Reservoir Dogs,TRUE,fucking,48.38
+236,Reservoir Dogs,TRUE,fucking,48.48
+237,Reservoir Dogs,TRUE,assholes,48.48
+238,Reservoir Dogs,TRUE,asshole,48.51
+239,Reservoir Dogs,TRUE,fucking,48.55
+240,Reservoir Dogs,TRUE,fucking,48.56
+241,Reservoir Dogs,TRUE,fucking,48.58
+242,Reservoir Dogs,TRUE,fucking,48.61
+243,Reservoir Dogs,TRUE,fucking,48.78
+244,Reservoir Dogs,TRUE,fucking,48.98
+245,Reservoir Dogs,TRUE,fucking,49.06
+246,Reservoir Dogs,TRUE,fucking,49.15
+247,Reservoir Dogs,TRUE,bastard,49.61
+248,Reservoir Dogs,TRUE,fuck,49.68
+249,Reservoir Dogs,TRUE,fucking,49.7
+250,Reservoir Dogs,TRUE,goddamn,49.75
+251,Reservoir Dogs,TRUE,fucking,49.8
+252,Reservoir Dogs,TRUE,fucking,49.9
+253,Reservoir Dogs,TRUE,fucking,49.98
+254,Reservoir Dogs,TRUE,fucking,50.51
+255,Reservoir Dogs,TRUE,bastard,50.68
+256,Reservoir Dogs,TRUE,fucking,50.76
+257,Reservoir Dogs,TRUE,motherfucker,50.91
+258,Reservoir Dogs,TRUE,fucking,51.08
+259,Reservoir Dogs,TRUE,fucking,51.36
+260,Reservoir Dogs,TRUE,fucking,51.51
+261,Reservoir Dogs,TRUE,fuck,51.88
+262,Reservoir Dogs,TRUE,fucking,51.98
+263,Reservoir Dogs,TRUE,fucking,53.28
+264,Reservoir Dogs,TRUE,shit,53.43
+265,Reservoir Dogs,TRUE,bitch,53.93
+266,Reservoir Dogs,TRUE,bullshit,54.25
+267,Reservoir Dogs,TRUE,fuck,54.3
+268,Reservoir Dogs,TRUE,fuck,56.73
+269,Reservoir Dogs,FALSE,,59.93
+270,Reservoir Dogs,TRUE,shit,61
+271,Reservoir Dogs,TRUE,shit,62.15
+272,Reservoir Dogs,TRUE,fuck,62.28
+273,Reservoir Dogs,TRUE,fuck,62.83
+274,Reservoir Dogs,TRUE,fuck,62.91
+275,Reservoir Dogs,TRUE,fucking,62.95
+276,Reservoir Dogs,TRUE,bastard,62.95
+277,Reservoir Dogs,TRUE,fuck,63.15
+278,Reservoir Dogs,TRUE,fucking,63.21
+279,Reservoir Dogs,TRUE,fucking,63.26
+280,Reservoir Dogs,TRUE,fucking,63.3
+281,Reservoir Dogs,TRUE,fuck,63.33
+282,Reservoir Dogs,TRUE,fuck,63.35
+283,Reservoir Dogs,TRUE,fucking,63.38
+284,Reservoir Dogs,TRUE,fucking,62.41
+285,Reservoir Dogs,TRUE,pussy,63.81
+286,Reservoir Dogs,TRUE,fucking,63.91
+287,Reservoir Dogs,TRUE,motherfucker,64.31
+288,Reservoir Dogs,TRUE,ass,64.46
+289,Reservoir Dogs,TRUE,goddamn,64.75
+290,Reservoir Dogs,TRUE,fucking,64.76
+291,Reservoir Dogs,TRUE,motherfucker,65.15
+292,Reservoir Dogs,TRUE,ass,65.65
+293,Reservoir Dogs,TRUE,damned,65.73
+294,Reservoir Dogs,TRUE,motherfucker,65.76
+295,Reservoir Dogs,TRUE,ass,65.76
+296,Reservoir Dogs,TRUE,fucking,66.05
+297,Reservoir Dogs,TRUE,fucking,66.35
+298,Reservoir Dogs,TRUE,fucking,66.36
+299,Reservoir Dogs,TRUE,fucking,66.46
+300,Reservoir Dogs,TRUE,fucking,66.5
+301,Reservoir Dogs,TRUE,ass,66.5
+302,Reservoir Dogs,TRUE,hell,66.96
+303,Reservoir Dogs,TRUE,bullshit,67.03
+304,Reservoir Dogs,TRUE,fucking,67.21
+305,Reservoir Dogs,TRUE,fucking,67.28
+306,Reservoir Dogs,TRUE,shit,67.3
+307,Reservoir Dogs,TRUE,fucking,67.48
+308,Reservoir Dogs,TRUE,shit,67.88
+309,Reservoir Dogs,TRUE,motherfucker,68.01
+310,Reservoir Dogs,TRUE,fucking,68.66
+311,Reservoir Dogs,TRUE,fucking,69.25
+312,Reservoir Dogs,TRUE,fuck,69.28
+313,Reservoir Dogs,TRUE,shit,69.3
+314,Reservoir Dogs,TRUE,bitch,69.31
+315,Reservoir Dogs,TRUE,shit,69.35
+316,Reservoir Dogs,TRUE,ass,69.46
+317,Reservoir Dogs,TRUE,fucking,69.48
+318,Reservoir Dogs,TRUE,fucking,69.51
+319,Reservoir Dogs,TRUE,fucking,69.53
+320,Reservoir Dogs,TRUE,motherfucker,69.61
+321,Reservoir Dogs,TRUE,shit,69.78
+322,Reservoir Dogs,TRUE,fucking,69.86
+323,Reservoir Dogs,TRUE,ass,69.88
+324,Reservoir Dogs,TRUE,fucking,70.06
+325,Reservoir Dogs,TRUE,fucking,71.63
+326,Reservoir Dogs,TRUE,fuck,71.95
+327,Reservoir Dogs,TRUE,fucking,72.16
+328,Reservoir Dogs,TRUE,fucking,72.4
+329,Reservoir Dogs,TRUE,asshole,72.58
+330,Reservoir Dogs,TRUE,fucking,72.61
+331,Reservoir Dogs,TRUE,fucking,72.95
+332,Reservoir Dogs,TRUE,bitch,73.05
+333,Reservoir Dogs,TRUE,fucking,73.28
+334,Reservoir Dogs,TRUE,fucking,73.36
+335,Reservoir Dogs,TRUE,shit,74.01
+336,Reservoir Dogs,TRUE,shit,74.05
+337,Reservoir Dogs,TRUE,bitch,74.4
+338,Reservoir Dogs,TRUE,shit,74.43
+339,Reservoir Dogs,TRUE,motherfucker,74.5
+340,Reservoir Dogs,TRUE,pussy,76.13
+341,Reservoir Dogs,TRUE,shit,76.2
+342,Reservoir Dogs,TRUE,fucking,76.28
+343,Reservoir Dogs,TRUE,fucking,76.3
+344,Reservoir Dogs,TRUE,bitch,77.05
+345,Reservoir Dogs,TRUE,bitch,77.06
+346,Reservoir Dogs,TRUE,fuck,77.13
+347,Reservoir Dogs,TRUE,n-word,77.25
+348,Reservoir Dogs,TRUE,shit,77.28
+349,Reservoir Dogs,TRUE,n-word,77.33
+350,Reservoir Dogs,TRUE,ass,77.35
+351,Reservoir Dogs,TRUE,bitches,77.36
+352,Reservoir Dogs,TRUE,fuck,77.4
+353,Reservoir Dogs,TRUE,fucking,78.01
+354,Reservoir Dogs,TRUE,fuck,78.55
+355,Reservoir Dogs,TRUE,fucking,78.6
+356,Reservoir Dogs,TRUE,wetback,78.95
+357,Reservoir Dogs,TRUE,shit,79.1
+358,Reservoir Dogs,TRUE,fucking,79.11
+359,Reservoir Dogs,TRUE,shit,79.36
+360,Reservoir Dogs,TRUE,fucking,79.4
+361,Reservoir Dogs,TRUE,dick,79.48
+362,Reservoir Dogs,TRUE,dick,79.51
+363,Reservoir Dogs,TRUE,fucking,79.83
+364,Reservoir Dogs,TRUE,fuck,80.18
+365,Reservoir Dogs,TRUE,bullshit,80.31
+366,Reservoir Dogs,TRUE,fucking,80.46
+367,Reservoir Dogs,TRUE,hell,80.65
+368,Reservoir Dogs,TRUE,faggot,81.65
+369,Reservoir Dogs,TRUE,shit,82.05
+370,Reservoir Dogs,TRUE,pussy,82.08
+371,Reservoir Dogs,TRUE,goddamn,82.48
+372,Reservoir Dogs,TRUE,fucking,82.5
+373,Reservoir Dogs,TRUE,fucking,82.73
+374,Reservoir Dogs,TRUE,goddamn,82.9
+375,Reservoir Dogs,TRUE,goddamn,82.96
+376,Reservoir Dogs,TRUE,ass,83.86
+377,Reservoir Dogs,TRUE,fucking,84.16
+378,Reservoir Dogs,TRUE,shit,84.16
+379,Reservoir Dogs,TRUE,bitch,84.21
+380,Reservoir Dogs,TRUE,fuck,84.3
+381,Reservoir Dogs,TRUE,fuck,84.4
+382,Reservoir Dogs,TRUE,bitch,84.5
+383,Reservoir Dogs,TRUE,fuck,85.08
+384,Reservoir Dogs,TRUE,fuck,85.28
+385,Reservoir Dogs,TRUE,fucking,85.45
+386,Reservoir Dogs,FALSE,,85.58
+387,Reservoir Dogs,FALSE,,85.58
+388,Reservoir Dogs,FALSE,,85.81
+389,Reservoir Dogs,TRUE,fucking,86.48
+390,Reservoir Dogs,FALSE,,86.55
+391,Reservoir Dogs,TRUE,fucking,86.86
+392,Reservoir Dogs,TRUE,shit,86.91
+393,Reservoir Dogs,TRUE,fucking,86.96
+394,Reservoir Dogs,TRUE,shit,87.06
+395,Reservoir Dogs,TRUE,fuck,87.73
+396,Reservoir Dogs,FALSE,,88.06
+397,Reservoir Dogs,TRUE,hell,88.38
+398,Reservoir Dogs,TRUE,shit,88.45
+399,Reservoir Dogs,TRUE,fucking,88.76
+400,Reservoir Dogs,TRUE,fucking,89.38
+401,Reservoir Dogs,TRUE,fucking,89.45
+402,Reservoir Dogs,TRUE,fucking,89.48
+403,Reservoir Dogs,TRUE,fucking,89.95
+404,Reservoir Dogs,TRUE,hell,90.1
+405,Reservoir Dogs,TRUE,bullshit,90.15
+406,Reservoir Dogs,TRUE,hell,90.3
+407,Reservoir Dogs,TRUE,fuck,90.36
+408,Reservoir Dogs,TRUE,shit,90.4
+409,Reservoir Dogs,TRUE,fucking,90.5
+410,Reservoir Dogs,TRUE,fucking,90.75
+411,Reservoir Dogs,TRUE,shit,90.88
+412,Reservoir Dogs,TRUE,cocksucker,90.91
+413,Reservoir Dogs,TRUE,fucking,91.15
+414,Reservoir Dogs,TRUE,fucking,91.35
+415,Reservoir Dogs,TRUE,fucking,91.48
+416,Reservoir Dogs,TRUE,fucking,91.75
+417,Reservoir Dogs,TRUE,fucking,91.96
+418,Reservoir Dogs,TRUE,fucking,92.01
+419,Reservoir Dogs,TRUE,goddamn,92.05
+420,Reservoir Dogs,TRUE,fucking,92.13
+421,Reservoir Dogs,FALSE,,92.15
+422,Reservoir Dogs,FALSE,,92.15
+423,Reservoir Dogs,TRUE,fucking,94.73
+424,Reservoir Dogs,TRUE,fucking,94.75
+425,Reservoir Dogs,TRUE,fucking,94.83
+426,Reservoir Dogs,TRUE,fucking,94.9
+427,Reservoir Dogs,TRUE,fucking,95.21
+428,Reservoir Dogs,TRUE,fucking,95.33
+429,Reservoir Dogs,TRUE,fucking,95.33
+430,Reservoir Dogs,FALSE,,95.4
+431,Reservoir Dogs,FALSE,,95.4
+432,Pulp Fiction,TRUE,shit,0.52
+433,Pulp Fiction,TRUE,fucking,0.82
+434,Pulp Fiction,TRUE,fuck,1.37
+435,Pulp Fiction,TRUE,fucking,1.62
+436,Pulp Fiction,TRUE,fucking,1.73
+437,Pulp Fiction,TRUE,fucking,1.77
+438,Pulp Fiction,TRUE,fucking,2.18
+439,Pulp Fiction,TRUE,fuck,2.22
+440,Pulp Fiction,TRUE,gook,2.28
+441,Pulp Fiction,TRUE,fuckers,2.28
+442,Pulp Fiction,TRUE,gooks,2.42
+443,Pulp Fiction,TRUE,fucking,2.45
+444,Pulp Fiction,TRUE,fucking,2.47
+445,Pulp Fiction,TRUE,fucking,2.53
+446,Pulp Fiction,TRUE,fuck,2.6
+447,Pulp Fiction,TRUE,fuck,3.52
+448,Pulp Fiction,TRUE,fucking,3.58
+449,Pulp Fiction,TRUE,wetback,3.67
+450,Pulp Fiction,TRUE,fuck,3.7
+451,Pulp Fiction,TRUE,fucking,4.68
+452,Pulp Fiction,TRUE,motherfucking,4.75
+453,Pulp Fiction,TRUE,fucking,7.7
+454,Pulp Fiction,TRUE,shit,7.87
+455,Pulp Fiction,TRUE,fuck,8.25
+456,Pulp Fiction,TRUE,goddamn,8.67
+457,Pulp Fiction,TRUE,fucking,8.72
+458,Pulp Fiction,TRUE,shit,8.72
+459,Pulp Fiction,TRUE,fucking,9.1
+460,Pulp Fiction,TRUE,n-word,10.08
+461,Pulp Fiction,TRUE,fucked,10.17
+462,Pulp Fiction,TRUE,fuck,10.4
+463,Pulp Fiction,TRUE,ass,10.73
+464,Pulp Fiction,TRUE,n-word,10.75
+465,Pulp Fiction,TRUE,n-word,10.85
+466,Pulp Fiction,TRUE,damn,10.98
+467,Pulp Fiction,TRUE,pussy,11.52
+468,Pulp Fiction,TRUE,fucking,11.55
+469,Pulp Fiction,TRUE,bitch,11.6
+470,Pulp Fiction,TRUE,bitch,11.6
+471,Pulp Fiction,TRUE,fucking,11.63
+472,Pulp Fiction,TRUE,fucking,11.68
+473,Pulp Fiction,TRUE,fucking,11.83
+474,Pulp Fiction,TRUE,fucking,11.88
+475,Pulp Fiction,TRUE,shit,11.92
+476,Pulp Fiction,TRUE,fucking,12.03
+477,Pulp Fiction,TRUE,shit,12.07
+478,Pulp Fiction,TRUE,fuck,12.2
+479,Pulp Fiction,TRUE,fuck,12.27
+480,Pulp Fiction,TRUE,motherfucking,12.88
+481,Pulp Fiction,TRUE,fucking,12.9
+482,Pulp Fiction,TRUE,n-word,12.92
+483,Pulp Fiction,TRUE,shit,12.93
+484,Pulp Fiction,TRUE,motherfucker,12.95
+485,Pulp Fiction,TRUE,shit,12.97
+486,Pulp Fiction,TRUE,ass,12.98
+487,Pulp Fiction,TRUE,motherfucker,13
+488,Pulp Fiction,TRUE,fucking,13.23
+489,Pulp Fiction,TRUE,fucking,13.33
+490,Pulp Fiction,TRUE,fucking,13.38
+491,Pulp Fiction,TRUE,fucking,13.43
+492,Pulp Fiction,TRUE,shit,13.47
+493,Pulp Fiction,TRUE,motherfucker,16.78
+494,Pulp Fiction,TRUE,shit,17.4
+495,Pulp Fiction,TRUE,goddamn,17.45
+496,Pulp Fiction,TRUE,ass,18.38
+497,Pulp Fiction,TRUE,shit,18.4
+498,Pulp Fiction,TRUE,fucked,18.62
+499,Pulp Fiction,FALSE,,18.7
+500,Pulp Fiction,TRUE,motherfucker,19.33
+501,Pulp Fiction,TRUE,motherfucker,19.57
+502,Pulp Fiction,TRUE,goddamn,19.58
+503,Pulp Fiction,TRUE,bitch,19.7
+504,Pulp Fiction,TRUE,bitch,19.82
+505,Pulp Fiction,TRUE,fuck,19.85
+506,Pulp Fiction,TRUE,bitch,19.85
+507,Pulp Fiction,TRUE,fuck,19.95
+508,Pulp Fiction,TRUE,fucked,20
+509,Pulp Fiction,FALSE,,20.95
+510,Pulp Fiction,TRUE,shit,21.32
+511,Pulp Fiction,TRUE,motherfucker,21.42
+512,Pulp Fiction,TRUE,motherfucking,21.82
+513,Pulp Fiction,TRUE,ass,21.88
+514,Pulp Fiction,TRUE,motherfuckers,22.03
+515,Pulp Fiction,TRUE,motherfuckers,22.08
+516,Pulp Fiction,TRUE,ass,22.1
+517,Pulp Fiction,TRUE,n-word,23.07
+518,Pulp Fiction,TRUE,fucking,23.47
+519,Pulp Fiction,TRUE,fuck,23.52
+520,Pulp Fiction,TRUE,shit,23.7
+521,Pulp Fiction,TRUE,ass,24.07
+522,Pulp Fiction,TRUE,ass,24.23
+523,Pulp Fiction,TRUE,asses,24.4
+524,Pulp Fiction,TRUE,goddamn,24.45
+525,Pulp Fiction,TRUE,n-word,24.45
+526,Pulp Fiction,TRUE,fucking,25.08
+527,Pulp Fiction,TRUE,goddamn,25.12
+528,Pulp Fiction,TRUE,fucking,25.17
+529,Pulp Fiction,TRUE,fucking,25.28
+530,Pulp Fiction,TRUE,shit,25.33
+531,Pulp Fiction,TRUE,fucking,25.37
+532,Pulp Fiction,TRUE,asshole,25.42
+533,Pulp Fiction,TRUE,n-word,25.88
+534,Pulp Fiction,TRUE,ass,25.92
+535,Pulp Fiction,TRUE,shit,27.75
+536,Pulp Fiction,TRUE,fucking,27.78
+537,Pulp Fiction,TRUE,n-word,27.88
+538,Pulp Fiction,TRUE,shit,27.98
+539,Pulp Fiction,TRUE,shit,27.98
+540,Pulp Fiction,TRUE,shit,28.03
+541,Pulp Fiction,TRUE,shit,28.08
+542,Pulp Fiction,TRUE,fucking,28.1
+543,Pulp Fiction,TRUE,fucking,28.22
+544,Pulp Fiction,TRUE,fucking,28.3
+545,Pulp Fiction,TRUE,shit,28.98
+546,Pulp Fiction,TRUE,fucker,29.43
+547,Pulp Fiction,TRUE,fucking,29.47
+548,Pulp Fiction,TRUE,fucked,29.52
+549,Pulp Fiction,TRUE,dickless,29.63
+550,Pulp Fiction,TRUE,shit,29.65
+551,Pulp Fiction,TRUE,fucked,29.67
+552,Pulp Fiction,TRUE,fucking,29.68
+553,Pulp Fiction,TRUE,asshole,29.82
+554,Pulp Fiction,TRUE,fucker,29.88
+555,Pulp Fiction,TRUE,chickenshit,29.92
+556,Pulp Fiction,TRUE,fucking,29.92
+557,Pulp Fiction,TRUE,fuck,29.97
+558,Pulp Fiction,TRUE,fuck,34.25
+559,Pulp Fiction,TRUE,hell,37.02
+560,Pulp Fiction,TRUE,hell,37.03
+561,Pulp Fiction,TRUE,goddamn,41.05
+562,Pulp Fiction,TRUE,fucking,41.05
+563,Pulp Fiction,TRUE,fucking,41.12
+564,Pulp Fiction,TRUE,bullshit,41.9
+565,Pulp Fiction,TRUE,fuck,42.1
+566,Pulp Fiction,TRUE,goddamn,42.98
+567,Pulp Fiction,TRUE,goddamn,43
+568,Pulp Fiction,TRUE,goddamn,43.03
+569,Pulp Fiction,TRUE,fucking,54.58
+570,Pulp Fiction,TRUE,fuck,54.63
+571,Pulp Fiction,TRUE,fuck,54.67
+572,Pulp Fiction,TRUE,fuck,54.68
+573,Pulp Fiction,TRUE,fucking,54.97
+574,Pulp Fiction,TRUE,fuck,55
+575,Pulp Fiction,TRUE,fuck,55.48
+576,Pulp Fiction,TRUE,goddamn,55.75
+577,Pulp Fiction,TRUE,fucking,55.83
+578,Pulp Fiction,TRUE,assholes,55.83
+579,Pulp Fiction,TRUE,fucking,55.93
+580,Pulp Fiction,TRUE,asshole,55.93
+581,Pulp Fiction,TRUE,fucking,56.1
+582,Pulp Fiction,TRUE,fucking,56.22
+583,Pulp Fiction,TRUE,fucking,56.28
+584,Pulp Fiction,TRUE,fucked,56.32
+585,Pulp Fiction,TRUE,fucking,56.38
+586,Pulp Fiction,TRUE,fucking,56.45
+587,Pulp Fiction,TRUE,fucking,56.53
+588,Pulp Fiction,TRUE,fucked,56.55
+589,Pulp Fiction,TRUE,fucking,56.55
+590,Pulp Fiction,TRUE,hell,56.92
+591,Pulp Fiction,TRUE,fucking,56.98
+592,Pulp Fiction,TRUE,shit,57.02
+593,Pulp Fiction,TRUE,fuck,57.03
+594,Pulp Fiction,TRUE,fucking,57.05
+595,Pulp Fiction,TRUE,fucked,57.12
+596,Pulp Fiction,TRUE,bitch,57.12
+597,Pulp Fiction,TRUE,fucked,57.17
+598,Pulp Fiction,TRUE,bitch,57.18
+599,Pulp Fiction,TRUE,fucking,57.25
+600,Pulp Fiction,TRUE,fucking,57.38
+601,Pulp Fiction,TRUE,shit,57.45
+602,Pulp Fiction,TRUE,shit,57.57
+603,Pulp Fiction,TRUE,goddamn,57.62
+604,Pulp Fiction,TRUE,fuck,57.63
+605,Pulp Fiction,TRUE,hell,57.82
+606,Pulp Fiction,TRUE,fucking,57.85
+607,Pulp Fiction,TRUE,fuck,57.85
+608,Pulp Fiction,TRUE,fuck,57.87
+609,Pulp Fiction,TRUE,fucking,57.88
+610,Pulp Fiction,TRUE,bitch,57.9
+611,Pulp Fiction,TRUE,fuck,57.98
+612,Pulp Fiction,TRUE,fucking,58.15
+613,Pulp Fiction,TRUE,fucking,58.48
+614,Pulp Fiction,TRUE,fuck,58.87
+615,Pulp Fiction,TRUE,fucking,58.88
+616,Pulp Fiction,TRUE,fucking,59.05
+617,Pulp Fiction,TRUE,fucking,59.27
+618,Pulp Fiction,TRUE,fuck,59.32
+619,Pulp Fiction,TRUE,bitch,59.65
+620,Pulp Fiction,TRUE,fucking,59.97
+621,Pulp Fiction,TRUE,fucking,60.15
+622,Pulp Fiction,TRUE,fucking,60.93
+623,Pulp Fiction,TRUE,hell,64.47
+624,Pulp Fiction,TRUE,gooks,67.33
+625,Pulp Fiction,TRUE,damned,67.5
+626,Pulp Fiction,TRUE,slope,67.5
+627,Pulp Fiction,TRUE,ass,67.6
+628,Pulp Fiction,TRUE,ass,67.67
+629,Pulp Fiction,TRUE,ass,67.78
+630,Pulp Fiction,TRUE,ass,70.3
+631,Pulp Fiction,TRUE,ass,70.38
+632,Pulp Fiction,TRUE,goddamn,70.4
+633,Pulp Fiction,TRUE,motherfucker,70.5
+634,Pulp Fiction,TRUE,n-word,70.55
+635,Pulp Fiction,TRUE,ass,70.6
+636,Pulp Fiction,TRUE,shit,72.98
+637,Pulp Fiction,TRUE,fuck,73.78
+638,Pulp Fiction,TRUE,fuck,73.92
+639,Pulp Fiction,TRUE,fucking,74.02
+640,Pulp Fiction,TRUE,fuck,74.12
+641,Pulp Fiction,TRUE,fuck,74.45
+642,Pulp Fiction,TRUE,goddamn,74.72
+643,Pulp Fiction,TRUE,damn,77.47
+644,Pulp Fiction,TRUE,fuckhead,80.7
+645,Pulp Fiction,TRUE,merde,82.75
+646,Pulp Fiction,TRUE,fucking,84.95
+647,Pulp Fiction,TRUE,fuck,84.95
+648,Pulp Fiction,TRUE,fuck,85.28
+649,Pulp Fiction,TRUE,fucking,85.42
+650,Pulp Fiction,TRUE,shit,85.58
+651,Pulp Fiction,TRUE,fucking,85.65
+652,Pulp Fiction,TRUE,fuck,85.78
+653,Pulp Fiction,TRUE,fuck,86.03
+654,Pulp Fiction,TRUE,fuck,86.03
+655,Pulp Fiction,TRUE,fuck,86.05
+656,Pulp Fiction,TRUE,motherfucker,86.07
+657,Pulp Fiction,TRUE,fuck,86.1
+658,Pulp Fiction,TRUE,fucking,86.15
+659,Pulp Fiction,TRUE,fucking,86.15
+660,Pulp Fiction,TRUE,fuck,86.8
+661,Pulp Fiction,TRUE,shit,88.03
+662,Pulp Fiction,TRUE,fucking,88.05
+663,Pulp Fiction,TRUE,fucking,88.07
+664,Pulp Fiction,FALSE,,91.75
+665,Pulp Fiction,TRUE,motherfucker,94.7
+666,Pulp Fiction,TRUE,damned,95.35
+667,Pulp Fiction,TRUE,fuck,96.08
+668,Pulp Fiction,TRUE,motherfucker,96.2
+669,Pulp Fiction,TRUE,fucking,96.32
+670,Pulp Fiction,TRUE,shit,96.33
+671,Pulp Fiction,TRUE,motherfucking,96.45
+672,Pulp Fiction,TRUE,goddamn,96.5
+673,Pulp Fiction,TRUE,n-word,96.78
+674,Pulp Fiction,TRUE,n-word,100.53
+675,Pulp Fiction,TRUE,goddamn,102.35
+676,Pulp Fiction,TRUE,goddamn,102.38
+677,Pulp Fiction,TRUE,fucker,102.63
+678,Pulp Fiction,TRUE,motherfucker,102.67
+679,Pulp Fiction,TRUE,motherfucker,103.35
+680,Pulp Fiction,TRUE,fuck,103.93
+681,Pulp Fiction,TRUE,fuck,104.88
+682,Pulp Fiction,TRUE,fuck,104.95
+683,Pulp Fiction,FALSE,,105.45
+684,Pulp Fiction,TRUE,fuck,106.4
+685,Pulp Fiction,TRUE,fucking,106.62
+686,Pulp Fiction,TRUE,n-word,107.08
+687,Pulp Fiction,TRUE,damn,107.33
+688,Pulp Fiction,TRUE,ass,107.37
+689,Pulp Fiction,TRUE,ass,108.22
+690,Pulp Fiction,TRUE,ass,108.73
+691,Pulp Fiction,TRUE,shit,109.97
+692,Pulp Fiction,TRUE,fuck,110
+693,Pulp Fiction,TRUE,fucking,110.7
+694,Pulp Fiction,TRUE,fucking,111.15
+695,Pulp Fiction,TRUE,fuck,111.73
+696,Pulp Fiction,TRUE,fucked,111.78
+697,Pulp Fiction,FALSE,,112.73
+698,Pulp Fiction,TRUE,fucked,112.87
+699,Pulp Fiction,TRUE,fucked,112.87
+700,Pulp Fiction,TRUE,fuck,112.88
+701,Pulp Fiction,TRUE,goddamn,112.95
+702,Pulp Fiction,TRUE,damn,112.97
+703,Pulp Fiction,TRUE,fuck,112.98
+704,Pulp Fiction,TRUE,shit,113.08
+705,Pulp Fiction,TRUE,motherfuckers,113.13
+706,Pulp Fiction,FALSE,,113.37
+707,Pulp Fiction,TRUE,fuck,113.65
+708,Pulp Fiction,TRUE,goddamn,113.75
+709,Pulp Fiction,TRUE,fucking,113.93
+710,Pulp Fiction,TRUE,shit,114.03
+711,Pulp Fiction,TRUE,motherfucking,114.43
+712,Pulp Fiction,TRUE,fucking,114.52
+713,Pulp Fiction,TRUE,shit,114.53
+714,Pulp Fiction,TRUE,fucking,114.57
+715,Pulp Fiction,TRUE,shit,114.6
+716,Pulp Fiction,TRUE,shit,114.63
+717,Pulp Fiction,TRUE,fucking,114.75
+718,Pulp Fiction,TRUE,fucking,114.85
+719,Pulp Fiction,TRUE,n-word,115.08
+720,Pulp Fiction,TRUE,shit,115.12
+721,Pulp Fiction,TRUE,fucking,115.53
+722,Pulp Fiction,TRUE,fuck,115.55
+723,Pulp Fiction,TRUE,ass,115.63
+724,Pulp Fiction,TRUE,goddamn,115.68
+725,Pulp Fiction,TRUE,fucking,115.72
+726,Pulp Fiction,TRUE,ass,115.87
+727,Pulp Fiction,TRUE,damn,115.88
+728,Pulp Fiction,FALSE,,116.08
+729,Pulp Fiction,TRUE,fuck,116.1
+730,Pulp Fiction,TRUE,shit,116.12
+731,Pulp Fiction,TRUE,fuck,116.17
+732,Pulp Fiction,TRUE,ass,116.23
+733,Pulp Fiction,TRUE,shit,116.23
+734,Pulp Fiction,TRUE,motherfucking,116.33
+735,Pulp Fiction,TRUE,bitch,116.38
+736,Pulp Fiction,TRUE,fucking,116.42
+737,Pulp Fiction,TRUE,motherfucker,116.5
+738,Pulp Fiction,TRUE,shit,116.55
+739,Pulp Fiction,TRUE,fucking,116.57
+740,Pulp Fiction,TRUE,fucking,116.67
+741,Pulp Fiction,TRUE,shit,116.7
+742,Pulp Fiction,TRUE,ass,116.83
+743,Pulp Fiction,TRUE,fuck,116.85
+744,Pulp Fiction,TRUE,fucking,117.02
+745,Pulp Fiction,TRUE,shit,117.02
+746,Pulp Fiction,TRUE,fucking,117.13
+747,Pulp Fiction,TRUE,asses,117.18
+748,Pulp Fiction,TRUE,shit,117.52
+749,Pulp Fiction,TRUE,shit,117.53
+750,Pulp Fiction,TRUE,shit,117.6
+751,Pulp Fiction,TRUE,ass,117.63
+752,Pulp Fiction,TRUE,fuck,117.65
+753,Pulp Fiction,TRUE,n-word,117.65
+754,Pulp Fiction,TRUE,fuck,117.67
+755,Pulp Fiction,TRUE,shit,117.78
+756,Pulp Fiction,TRUE,fucking,117.87
+757,Pulp Fiction,TRUE,goddamn,117.9
+758,Pulp Fiction,TRUE,shit,117.98
+759,Pulp Fiction,TRUE,goddamn,118.4
+760,Pulp Fiction,TRUE,shit,118.45
+761,Pulp Fiction,TRUE,shit,118.58
+762,Pulp Fiction,TRUE,fucking,118.68
+763,Pulp Fiction,TRUE,shit,118.77
+764,Pulp Fiction,TRUE,n-word,118.92
+765,Pulp Fiction,TRUE,n-word,119.07
+766,Pulp Fiction,TRUE,shit,119.12
+767,Pulp Fiction,TRUE,n-word,119.17
+768,Pulp Fiction,TRUE,n-word,119.3
+769,Pulp Fiction,TRUE,fucking,119.32
+770,Pulp Fiction,TRUE,motherfucker,119.37
+771,Pulp Fiction,TRUE,fucking,119.4
+772,Pulp Fiction,TRUE,fucking,119.52
+773,Pulp Fiction,TRUE,fucking,119.57
+774,Pulp Fiction,TRUE,fucking,119.72
+775,Pulp Fiction,TRUE,fucking,119.77
+776,Pulp Fiction,TRUE,fuck,120.12
+777,Pulp Fiction,TRUE,fuck,120.18
+778,Pulp Fiction,TRUE,shit,120.18
+779,Pulp Fiction,TRUE,fuck,120.25
+780,Pulp Fiction,TRUE,shit,120.25
+781,Pulp Fiction,TRUE,fucking,120.27
+782,Pulp Fiction,TRUE,shit,120.27
+783,Pulp Fiction,TRUE,fuck,120.3
+784,Pulp Fiction,TRUE,shit,120.3
+785,Pulp Fiction,TRUE,fucking,120.55
+786,Pulp Fiction,TRUE,shit,120.55
+787,Pulp Fiction,TRUE,shit,120.83
+788,Pulp Fiction,TRUE,motherfucking,121.03
+789,Pulp Fiction,TRUE,ass,121.07
+790,Pulp Fiction,TRUE,motherfucker,121.12
+791,Pulp Fiction,TRUE,n-word,121.13
+792,Pulp Fiction,TRUE,motherfucker,121.27
+793,Pulp Fiction,TRUE,n-word,121.32
+794,Pulp Fiction,TRUE,motherfucker,121.45
+795,Pulp Fiction,TRUE,shit,121.47
+796,Pulp Fiction,TRUE,motherfucker,123.85
+797,Pulp Fiction,TRUE,fucking,125.57
+798,Pulp Fiction,TRUE,fucking,126
+799,Pulp Fiction,TRUE,ass,128
+800,Pulp Fiction,TRUE,shit,128
+801,Pulp Fiction,TRUE,fucked,128.03
+802,Pulp Fiction,TRUE,shit,128.03
+803,Pulp Fiction,TRUE,fuck,128.17
+804,Pulp Fiction,TRUE,shit,128.18
+805,Pulp Fiction,TRUE,motherfucker,128.2
+806,Pulp Fiction,TRUE,shit,128.22
+807,Pulp Fiction,TRUE,ass,128.27
+808,Pulp Fiction,TRUE,fucking,128.35
+809,Pulp Fiction,TRUE,fucking,128.4
+810,Pulp Fiction,TRUE,fucking,128.43
+811,Pulp Fiction,TRUE,motherfucker,128.53
+812,Pulp Fiction,TRUE,motherfucker,128.53
+813,Pulp Fiction,TRUE,fuck,128.67
+814,Pulp Fiction,TRUE,motherfucker,128.68
+815,Pulp Fiction,TRUE,fucking,128.73
+816,Pulp Fiction,TRUE,n-word,128.78
+817,Pulp Fiction,TRUE,dicks,129.12
+818,Pulp Fiction,TRUE,shit,129.52
+819,Pulp Fiction,TRUE,ass,129.33
+820,Pulp Fiction,TRUE,goddamn,129.5
+821,Pulp Fiction,TRUE,shit,129.83
+822,Pulp Fiction,TRUE,goddamn,130.08
+823,Pulp Fiction,TRUE,fucking,130.1
+824,Pulp Fiction,TRUE,fuck,130.22
+825,Pulp Fiction,TRUE,fuck,130.22
+826,Pulp Fiction,TRUE,damn,130.25
+827,Pulp Fiction,TRUE,goddamn,130.3
+828,Pulp Fiction,TRUE,motherfucker,130.9
+829,Pulp Fiction,TRUE,fucking,131.5
+830,Pulp Fiction,TRUE,shit,131.57
+831,Pulp Fiction,TRUE,fucking,131.85
+832,Pulp Fiction,TRUE,fucking,133.48
+833,Pulp Fiction,TRUE,fucking,133.55
+834,Pulp Fiction,TRUE,fucking,133.63
+835,Pulp Fiction,TRUE,motherfuckers,134
+836,Pulp Fiction,TRUE,shit,134.05
+837,Pulp Fiction,TRUE,motherfucking,134.55
+838,Pulp Fiction,TRUE,shit,134.85
+839,Pulp Fiction,TRUE,shit,135.35
+840,Pulp Fiction,TRUE,shit,135.38
+841,Pulp Fiction,TRUE,fucking,135.47
+842,Pulp Fiction,TRUE,shit,135.48
+843,Pulp Fiction,TRUE,fucking,135.77
+844,Pulp Fiction,TRUE,fuck,135.93
+845,Pulp Fiction,TRUE,shit,136.6
+846,Pulp Fiction,TRUE,fucking,136.8
+847,Pulp Fiction,TRUE,fucking,137.05
+848,Pulp Fiction,TRUE,shit,137.22
+849,Pulp Fiction,TRUE,fuck,137.57
+850,Pulp Fiction,TRUE,fucking,137.93
+851,Pulp Fiction,TRUE,motherfuckers,138
+852,Pulp Fiction,TRUE,fuck,138.1
+853,Pulp Fiction,TRUE,fucking,138.22
+854,Pulp Fiction,TRUE,fuck,138.23
+855,Pulp Fiction,TRUE,fuck,138.28
+856,Pulp Fiction,TRUE,fucking,138.3
+857,Pulp Fiction,TRUE,fucking,138.33
+858,Pulp Fiction,TRUE,fucking,138.37
+859,Pulp Fiction,TRUE,fuck,138.43
+860,Pulp Fiction,TRUE,fucking,138.48
+861,Pulp Fiction,TRUE,fucking,138.65
+862,Pulp Fiction,TRUE,fucking,138.68
+863,Pulp Fiction,TRUE,fuck,138.87
+864,Pulp Fiction,TRUE,fucking,139
+865,Pulp Fiction,TRUE,fuck,139.23
+866,Pulp Fiction,TRUE,fucking,139.53
+867,Pulp Fiction,TRUE,fucking,139.6
+868,Pulp Fiction,TRUE,fucking,139.75
+869,Pulp Fiction,TRUE,fucking,139.85
+870,Pulp Fiction,TRUE,fucking,139.97
+871,Pulp Fiction,TRUE,fuck,140.05
+872,Pulp Fiction,TRUE,shit,140.72
+873,Pulp Fiction,TRUE,fucking,141.05
+874,Pulp Fiction,TRUE,fuck,141.15
+875,Pulp Fiction,TRUE,goddamn,141.18
+876,Pulp Fiction,TRUE,fucking,141.43
+877,Pulp Fiction,TRUE,goddamn,142.23
+878,Pulp Fiction,TRUE,bitch,142.37
+879,Pulp Fiction,TRUE,bitch,142.4
+880,Pulp Fiction,TRUE,bitch,142.42
+881,Pulp Fiction,TRUE,fucking,142.45
+882,Pulp Fiction,TRUE,bitch,142.45
+883,Pulp Fiction,TRUE,fucking,142.5
+884,Pulp Fiction,TRUE,bitch,142.5
+885,Pulp Fiction,TRUE,motherfuckers,143.77
+886,Pulp Fiction,TRUE,motherfuckers,143.8
+887,Pulp Fiction,TRUE,asses,144.25
+888,Pulp Fiction,TRUE,fucking,144.27
+889,Pulp Fiction,TRUE,shit,144.3
+890,Pulp Fiction,TRUE,shit,144.48
+891,Pulp Fiction,TRUE,ass,144.53
+892,Pulp Fiction,TRUE,goddamn,144.82
+893,Pulp Fiction,TRUE,motherfucker,145.38
+894,Pulp Fiction,TRUE,motherfucker,145.68
+895,Pulp Fiction,TRUE,fucking,146.23
+896,Pulp Fiction,TRUE,goddamn,146.3
+897,Pulp Fiction,TRUE,motherfucking,146.32
+898,Pulp Fiction,TRUE,fuck,146.35
+899,Pulp Fiction,TRUE,ass,146.67
+900,Pulp Fiction,TRUE,shit,147.43
+901,Pulp Fiction,TRUE,ass,147.48
+902,Pulp Fiction,TRUE,shit,147.58
+903,Pulp Fiction,TRUE,motherfucker,147.6
+904,Pulp Fiction,TRUE,ass,147.62
+905,Pulp Fiction,TRUE,shit,147.65
+906,Pulp Fiction,TRUE,ass,147.9
+907,Pulp Fiction,TRUE,shit,148.15
+908,Kill Bill: Vol. 1,TRUE,bitch,7.12
+909,Kill Bill: Vol. 1,TRUE,ass,8.1
+910,Kill Bill: Vol. 1,TRUE,damn,8.12
+911,Kill Bill: Vol. 1,TRUE,bitch,10.45
+912,Kill Bill: Vol. 1,TRUE,shit,10.5
+913,Kill Bill: Vol. 1,TRUE,fucked,10.95
+914,Kill Bill: Vol. 1,TRUE,fucked,10.98
+915,Kill Bill: Vol. 1,TRUE,bitch,11.87
+916,Kill Bill: Vol. 1,TRUE,goddamn,12.17
+917,Kill Bill: Vol. 1,TRUE,fucking,12.17
+918,Kill Bill: Vol. 1,TRUE,bitch,12.48
+919,Kill Bill: Vol. 1,TRUE,fuck,13.07
+920,Kill Bill: Vol. 1,TRUE,bitch,13.08
+921,Kill Bill: Vol. 1,TRUE,shit,13.13
+922,Kill Bill: Vol. 1,TRUE,motherfucking,13.18
+923,Kill Bill: Vol. 1,TRUE,ass,13.18
+924,Kill Bill: Vol. 1,TRUE,motherfucking,13.28
+925,Kill Bill: Vol. 1,TRUE,bitch,13.42
+926,Kill Bill: Vol. 1,FALSE,,13.53
+927,Kill Bill: Vol. 1,TRUE,goddamn,17.2
+928,Kill Bill: Vol. 1,TRUE,hell,17.58
+929,Kill Bill: Vol. 1,TRUE,goddamn,18.02
+930,Kill Bill: Vol. 1,TRUE,shit,18.07
+931,Kill Bill: Vol. 1,TRUE,goddamn,19.32
+932,Kill Bill: Vol. 1,TRUE,cocksucker,19.73
+933,Kill Bill: Vol. 1,TRUE,fuck,22.93
+934,Kill Bill: Vol. 1,TRUE,shit,23.4
+935,Kill Bill: Vol. 1,TRUE,shit,23.45
+936,Kill Bill: Vol. 1,TRUE,fucking,25.02
+937,Kill Bill: Vol. 1,TRUE,shithead,25.12
+938,Kill Bill: Vol. 1,TRUE,fuck,28.03
+939,Kill Bill: Vol. 1,TRUE,cunt,28.43
+940,Kill Bill: Vol. 1,TRUE,shit,28.88
+941,Kill Bill: Vol. 1,TRUE,goddamn,29.37
+942,Kill Bill: Vol. 1,FALSE,,29.75
+943,Kill Bill: Vol. 1,TRUE,bullshit,31.07
+944,Kill Bill: Vol. 1,TRUE,shit,31.32
+945,Kill Bill: Vol. 1,TRUE,fuck,31.42
+946,Kill Bill: Vol. 1,TRUE,fuck,31.6
+947,Kill Bill: Vol. 1,FALSE,,31.68
+948,Kill Bill: Vol. 1,TRUE,pussy,32.12
+949,Kill Bill: Vol. 1,TRUE,fucker,32.15
+950,Kill Bill: Vol. 1,TRUE,cunts,35.15
+951,Kill Bill: Vol. 1,TRUE,dicks,35.22
+952,Kill Bill: Vol. 1,FALSE,,37.65
+953,Kill Bill: Vol. 1,FALSE,,39.57
+954,Kill Bill: Vol. 1,FALSE,,41.03
+955,Kill Bill: Vol. 1,FALSE,,42.57
+956,Kill Bill: Vol. 1,FALSE,,42.77
+957,Kill Bill: Vol. 1,FALSE,,43.48
+958,Kill Bill: Vol. 1,TRUE,shit,46.45
+959,Kill Bill: Vol. 1,TRUE,bastard,46.47
+960,Kill Bill: Vol. 1,TRUE,ass,46.63
+961,Kill Bill: Vol. 1,TRUE,goddamn,47.97
+962,Kill Bill: Vol. 1,TRUE,hell,48.03
+963,Kill Bill: Vol. 1,TRUE,damn,48.6
+964,Kill Bill: Vol. 1,FALSE,,60.57
+965,Kill Bill: Vol. 1,TRUE,bastard,62.33
+966,Kill Bill: Vol. 1,TRUE,fuckface,62.35
+967,Kill Bill: Vol. 1,TRUE,bitch,62.87
+968,Kill Bill: Vol. 1,FALSE,,62.97
+969,Kill Bill: Vol. 1,TRUE,fucking,64.2
+970,Kill Bill: Vol. 1,TRUE,fucker,64.23
+971,Kill Bill: Vol. 1,TRUE,bitches,64.32
+972,Kill Bill: Vol. 1,TRUE,fucking,64.38
+973,Kill Bill: Vol. 1,TRUE,goddamn,73.48
+974,Kill Bill: Vol. 1,FALSE,,75.77
+975,Kill Bill: Vol. 1,FALSE,,76.02
+976,Kill Bill: Vol. 1,FALSE,,76.02
+977,Kill Bill: Vol. 1,FALSE,,76.02
+978,Kill Bill: Vol. 1,FALSE,,76.48
+979,Kill Bill: Vol. 1,FALSE,,77.02
+980,Kill Bill: Vol. 1,FALSE,,80.32
+981,Kill Bill: Vol. 1,FALSE,,82.95
+982,Kill Bill: Vol. 1,FALSE,,82.98
+983,Kill Bill: Vol. 1,FALSE,,83
+984,Kill Bill: Vol. 1,FALSE,,83.03
+985,Kill Bill: Vol. 1,FALSE,,83.05
+986,Kill Bill: Vol. 1,FALSE,,83.05
+987,Kill Bill: Vol. 1,FALSE,,83.05
+988,Kill Bill: Vol. 1,FALSE,,83.08
+989,Kill Bill: Vol. 1,FALSE,,83.12
+990,Kill Bill: Vol. 1,FALSE,,83.18
+991,Kill Bill: Vol. 1,FALSE,,83.38
+992,Kill Bill: Vol. 1,FALSE,,83.42
+993,Kill Bill: Vol. 1,FALSE,,83.48
+994,Kill Bill: Vol. 1,FALSE,,83.65
+995,Kill Bill: Vol. 1,FALSE,,83.72
+996,Kill Bill: Vol. 1,FALSE,,83.83
+997,Kill Bill: Vol. 1,FALSE,,83.88
+998,Kill Bill: Vol. 1,FALSE,,83.93
+999,Kill Bill: Vol. 1,FALSE,,84.05
+1000,Kill Bill: Vol. 1,FALSE,,84.18
+1001,Kill Bill: Vol. 1,FALSE,,84.23
+1002,Kill Bill: Vol. 1,FALSE,,84.27
+1003,Kill Bill: Vol. 1,FALSE,,84.58
+1004,Kill Bill: Vol. 1,FALSE,,84.92
+1005,Kill Bill: Vol. 1,FALSE,,84.92
+1006,Kill Bill: Vol. 1,FALSE,,85
+1007,Kill Bill: Vol. 1,FALSE,,85.08
+1008,Kill Bill: Vol. 1,FALSE,,85.1
+1009,Kill Bill: Vol. 1,FALSE,,85.2
+1010,Kill Bill: Vol. 1,FALSE,,85.25
+1011,Kill Bill: Vol. 1,FALSE,,85.25
+1012,Kill Bill: Vol. 1,FALSE,,85.28
+1013,Kill Bill: Vol. 1,FALSE,,85.38
+1014,Kill Bill: Vol. 1,FALSE,,85.47
+1015,Kill Bill: Vol. 1,FALSE,,85.98
+1016,Kill Bill: Vol. 1,FALSE,,86.05
+1017,Kill Bill: Vol. 1,FALSE,,86.15
+1018,Kill Bill: Vol. 1,FALSE,,86.2
+1019,Kill Bill: Vol. 1,FALSE,,86.27
+1020,Kill Bill: Vol. 1,FALSE,,86.35
+1021,Kill Bill: Vol. 1,FALSE,,86.4
+1022,Kill Bill: Vol. 1,FALSE,,87.52
+1023,Kill Bill: Vol. 1,FALSE,,87.63
+1024,Kill Bill: Vol. 1,TRUE,fucking,88.18
+1025,Kill Bill: Vol. 1,FALSE,,88.95
+1026,Kill Bill: Vol. 1,FALSE,,97.6
+1027,Kill Bill: Vol. 1,TRUE,hell,100.1
+1028,Kill Bill: Vol. 2,TRUE,hell,1.18
+1029,Kill Bill: Vol. 2,TRUE,bitch,4.83
+1030,Kill Bill: Vol. 2,TRUE,ass,9.02
+1031,Kill Bill: Vol. 2,TRUE,cockblockery,9.62
+1032,Kill Bill: Vol. 2,TRUE,goddamn,11.38
+1033,Kill Bill: Vol. 2,TRUE,damn,12.82
+1034,Kill Bill: Vol. 2,FALSE,,14.38
+1035,Kill Bill: Vol. 2,FALSE,,14.38
+1036,Kill Bill: Vol. 2,FALSE,,14.38
+1037,Kill Bill: Vol. 2,FALSE,,14.38
+1038,Kill Bill: Vol. 2,FALSE,,14.38
+1039,Kill Bill: Vol. 2,FALSE,,14.38
+1040,Kill Bill: Vol. 2,FALSE,,14.38
+1041,Kill Bill: Vol. 2,FALSE,,14.38
+1042,Kill Bill: Vol. 2,FALSE,,14.38
+1043,Kill Bill: Vol. 2,TRUE,japs,15.53
+1044,Kill Bill: Vol. 2,TRUE,jew (verb),17.33
+1045,Kill Bill: Vol. 2,TRUE,fucking,18.7
+1046,Kill Bill: Vol. 2,TRUE,ass,18.72
+1047,Kill Bill: Vol. 2,TRUE,fucking,19.37
+1048,Kill Bill: Vol. 2,TRUE,asshole,20.17
+1049,Kill Bill: Vol. 2,TRUE,fucking,20.3
+1050,Kill Bill: Vol. 2,TRUE,fucking,20.57
+1051,Kill Bill: Vol. 2,TRUE,fucking,20.98
+1052,Kill Bill: Vol. 2,TRUE,fucking,21.37
+1053,Kill Bill: Vol. 2,TRUE,fucking,21.42
+1054,Kill Bill: Vol. 2,TRUE,fucking,21.52
+1055,Kill Bill: Vol. 2,TRUE,shit,21.8
+1056,Kill Bill: Vol. 2,TRUE,shitty,22.5
+1057,Kill Bill: Vol. 2,TRUE,ass,26.62
+1058,Kill Bill: Vol. 2,TRUE,shit,27.03
+1059,Kill Bill: Vol. 2,TRUE,bitch,28.93
+1060,Kill Bill: Vol. 2,TRUE,ass,29.92
+1061,Kill Bill: Vol. 2,TRUE,damn,30.47
+1062,Kill Bill: Vol. 2,TRUE,bitch,33.02
+1063,Kill Bill: Vol. 2,TRUE,pussy,33.15
+1064,Kill Bill: Vol. 2,TRUE,pussy,33.23
+1065,Kill Bill: Vol. 2,TRUE,ass,34.6
+1066,Kill Bill: Vol. 2,TRUE,goddamn,34.7
+1067,Kill Bill: Vol. 2,TRUE,fucking,34.77
+1068,Kill Bill: Vol. 2,TRUE,bastards,44.12
+1069,Kill Bill: Vol. 2,TRUE,fucker,44.65
+1070,Kill Bill: Vol. 2,TRUE,ass,47.13
+1071,Kill Bill: Vol. 2,TRUE,goddamn,49.2
+1072,Kill Bill: Vol. 2,TRUE,japs,49.2
+1073,Kill Bill: Vol. 2,TRUE,goddamn,50.93
+1074,Kill Bill: Vol. 2,TRUE,fucked,65.67
+1075,Kill Bill: Vol. 2,TRUE,horeshit,68.4
+1076,Kill Bill: Vol. 2,TRUE,shit,72.45
+1077,Kill Bill: Vol. 2,FALSE,,72.67
+1078,Kill Bill: Vol. 2,TRUE,bitch,78.9
+1079,Kill Bill: Vol. 2,TRUE,fucking,79.88
+1080,Kill Bill: Vol. 2,TRUE,bitch,79.88
+1081,Kill Bill: Vol. 2,TRUE,fucking,79.93
+1082,Kill Bill: Vol. 2,TRUE,fuck,79.93
+1083,Kill Bill: Vol. 2,TRUE,fucking,80.28
+1084,Kill Bill: Vol. 2,TRUE,fucking,80.63
+1085,Kill Bill: Vol. 2,TRUE,shit,80.75
+1086,Kill Bill: Vol. 2,TRUE,pussy,85.35
+1087,Kill Bill: Vol. 2,TRUE,pussy,85.4
+1088,Kill Bill: Vol. 2,TRUE,fucking,102.12
+1089,Kill Bill: Vol. 2,TRUE,goddamn,103.23
+1090,Kill Bill: Vol. 2,TRUE,fuck,103.28
+1091,Kill Bill: Vol. 2,TRUE,shit,104.63
+1092,Kill Bill: Vol. 2,TRUE,ass,107.43
+1093,Kill Bill: Vol. 2,TRUE,fuck,110.23
+1094,Kill Bill: Vol. 2,TRUE,fucking,110.93
+1095,Kill Bill: Vol. 2,TRUE,bitch,110.97
+1096,Kill Bill: Vol. 2,TRUE,fucking,111.05
+1097,Kill Bill: Vol. 2,TRUE,bullshit,111.58
+1098,Kill Bill: Vol. 2,TRUE,shitless,111.92
+1099,Kill Bill: Vol. 2,TRUE,fucking,112.52
+1100,Kill Bill: Vol. 2,TRUE,shit,112.52
+1101,Kill Bill: Vol. 2,TRUE,fucking,116.28
+1102,Kill Bill: Vol. 2,TRUE,assholes,116.28
+1103,Kill Bill: Vol. 2,TRUE,fucking,116.57
+1104,Kill Bill: Vol. 2,TRUE,bastard,117.25
+1105,Kill Bill: Vol. 2,TRUE,bastard,117.35
+1106,Kill Bill: Vol. 2,TRUE,cunt,119.58
+1107,Kill Bill: Vol. 2,FALSE,,121.12
+1108,Inglorious Basterds,FALSE,,20.35
+1109,Inglorious Basterds,FALSE,,20.35
+1110,Inglorious Basterds,FALSE,,20.35
+1111,Inglorious Basterds,FALSE,,20.35
+1112,Inglorious Basterds,TRUE,hell,22.2
+1113,Inglorious Basterds,TRUE,goddamn,22.22
+1114,Inglorious Basterds,TRUE,fucking,22.32
+1115,Inglorious Basterds,TRUE,bitch,22.55
+1116,Inglorious Basterds,FALSE,,28.57
+1117,Inglorious Basterds,FALSE,,28.63
+1118,Inglorious Basterds,FALSE,,28.8
+1119,Inglorious Basterds,FALSE,,29.07
+1120,Inglorious Basterds,FALSE,,29.22
+1121,Inglorious Basterds,FALSE,,29.23
+1122,Inglorious Basterds,FALSE,,29.25
+1123,Inglorious Basterds,FALSE,,29.93
+1124,Inglorious Basterds,TRUE,fucking,30.93
+1125,Inglorious Basterds,TRUE,goddamn,31.05
+1126,Inglorious Basterds,TRUE,goddamn,32.52
+1127,Inglorious Basterds,TRUE,ass,32.65
+1128,Inglorious Basterds,TRUE,fuck,32.97
+1129,Inglorious Basterds,FALSE,,34.77
+1130,Inglorious Basterds,TRUE,shitting,34.9
+1131,Inglorious Basterds,TRUE,fucking,34.97
+1132,Inglorious Basterds,TRUE,fucking,35.05
+1133,Inglorious Basterds,TRUE,fucking,35.1
+1134,Inglorious Basterds,FALSE,,35.17
+1135,Inglorious Basterds,TRUE,damn,35.2
+1136,Inglorious Basterds,TRUE,fuck,35.3
+1137,Inglorious Basterds,TRUE,ass,48.17
+1138,Inglorious Basterds,TRUE,negro,48.68
+1139,Inglorious Basterds,TRUE,shit,51.48
+1140,Inglorious Basterds,TRUE,hell,52.55
+1141,Inglorious Basterds,TRUE,negro,58.43
+1142,Inglorious Basterds,TRUE,negro,59.38
+1143,Inglorious Basterds,TRUE,negro,59.57
+1144,Inglorious Basterds,TRUE,fuck,61.83
+1145,Inglorious Basterds,TRUE,goddamn,69.48
+1146,Inglorious Basterds,TRUE,fucking,69.5
+1147,Inglorious Basterds,TRUE,squaw,73
+1148,Inglorious Basterds,TRUE,ass,75.83
+1149,Inglorious Basterds,TRUE,negro,86.97
+1150,Inglorious Basterds,TRUE,slut,90.53
+1151,Inglorious Basterds,TRUE,hell,92.03
+1152,Inglorious Basterds,TRUE,damn,92.27
+1153,Inglorious Basterds,FALSE,,92.68
+1154,Inglorious Basterds,FALSE,,92.68
+1155,Inglorious Basterds,FALSE,,92.7
+1156,Inglorious Basterds,FALSE,,92.72
+1157,Inglorious Basterds,FALSE,,92.73
+1158,Inglorious Basterds,FALSE,,92.75
+1159,Inglorious Basterds,FALSE,,92.77
+1160,Inglorious Basterds,FALSE,,92.83
+1161,Inglorious Basterds,FALSE,,92.87
+1162,Inglorious Basterds,FALSE,,92.87
+1163,Inglorious Basterds,TRUE,fucking,96.87
+1164,Inglorious Basterds,FALSE,,96.95
+1165,Inglorious Basterds,TRUE,goddamn,97.12
+1166,Inglorious Basterds,TRUE,fuck,97.53
+1167,Inglorious Basterds,TRUE,hell,100.97
+1168,Inglorious Basterds,TRUE,damn,101
+1169,Inglorious Basterds,TRUE,fuck,101.82
+1170,Inglorious Basterds,TRUE,ass,102.68
+1171,Inglorious Basterds,TRUE,shit,103.4
+1172,Inglorious Basterds,TRUE,fucking,103.82
+1173,Inglorious Basterds,FALSE,,104.6
+1174,Inglorious Basterds,FALSE,,104.6
+1175,Inglorious Basterds,FALSE,,104.6
+1176,Inglorious Basterds,FALSE,,104.6
+1177,Inglorious Basterds,TRUE,fucker,107.77
+1178,Inglorious Basterds,TRUE,fuck,107.82
+1179,Inglorious Basterds,TRUE,ass,111.43
+1180,Inglorious Basterds,FALSE,,121.13
+1181,Inglorious Basterds,TRUE,fucking,121.53
+1182,Inglorious Basterds,TRUE,shithead,121.53
+1183,Inglorious Basterds,TRUE,fuck,121.55
+1184,Inglorious Basterds,TRUE,fuck,121.57
+1185,Inglorious Basterds,TRUE,shithead,121.62
+1186,Inglorious Basterds,TRUE,fuck,121.63
+1187,Inglorious Basterds,TRUE,fuck,121.68
+1188,Inglorious Basterds,TRUE,goddamn,121.77
+1189,Inglorious Basterds,TRUE,bitches,121.78
+1190,Inglorious Basterds,TRUE,goddamn,121.87
+1191,Inglorious Basterds,TRUE,damn,124.72
+1192,Inglorious Basterds,TRUE,shit,137.82
+1193,Inglorious Basterds,TRUE,ass,138.93
+1194,Inglorious Basterds,FALSE,,141.47
+1195,Inglorious Basterds,FALSE,,141.53
+1196,Inglorious Basterds,FALSE,,142.42
+1197,Inglorious Basterds,FALSE,,142.52
+1198,Inglorious Basterds,FALSE,,144.17
+1199,Inglorious Basterds,FALSE,,144.17
+1200,Inglorious Basterds,FALSE,,144.2
+1201,Inglorious Basterds,FALSE,,144.63
+1202,Inglorious Basterds,FALSE,,144.63
+1203,Inglorious Basterds,FALSE,,144.65
+1204,Inglorious Basterds,FALSE,,144.67
+1205,Inglorious Basterds,FALSE,,144.68
+1206,Inglorious Basterds,FALSE,,144.85
+1207,Inglorious Basterds,FALSE,,144.85
+1208,Inglorious Basterds,FALSE,,144.85
+1209,Inglorious Basterds,FALSE,,145.1
+1210,Inglorious Basterds,FALSE,,145.6
+1211,Inglorious Basterds,FALSE,,147.37
+1212,Inglorious Basterds,TRUE,fuck,147.62
+1213,Inglorious Basterds,TRUE,goddamn,148.73
+1214,Django Unchained,TRUE,goddamn,7.23
+1215,Django Unchained,FALSE,,7.75
+1216,Django Unchained,TRUE,goddamn,8.37
+1217,Django Unchained,TRUE,bitch,8.38
+1218,Django Unchained,TRUE,damn,8.65
+1219,Django Unchained,TRUE,fucking,8.87
+1220,Django Unchained,TRUE,damn,8.88
+1221,Django Unchained,TRUE,n-word,9.8
+1222,Django Unchained,TRUE,goddamn,10.07
+1223,Django Unchained,TRUE,hell,10.53
+1224,Django Unchained,FALSE,,12.63
+1225,Django Unchained,TRUE,n-word,13.57
+1226,Django Unchained,TRUE,n-word,14.07
+1227,Django Unchained,TRUE,hell,14.75
+1228,Django Unchained,TRUE,n-word,14.78
+1229,Django Unchained,TRUE,ass,19.37
+1230,Django Unchained,FALSE,,19.62
+1231,Django Unchained,TRUE,goddamn,20.25
+1232,Django Unchained,TRUE,n-word,20.47
+1233,Django Unchained,TRUE,hell,22.67
+1234,Django Unchained,TRUE,n-word,24.98
+1235,Django Unchained,TRUE,n-word,28.55
+1236,Django Unchained,TRUE,n-word,28.65
+1237,Django Unchained,TRUE,n-word,28.8
+1238,Django Unchained,TRUE,n-word,29.38
+1239,Django Unchained,TRUE,n-word,29.5
+1240,Django Unchained,TRUE,n-word,29.65
+1241,Django Unchained,TRUE,n-word,31.07
+1242,Django Unchained,TRUE,n-word,31.1
+1243,Django Unchained,TRUE,damn,33.12
+1244,Django Unchained,FALSE,,36.47
+1245,Django Unchained,TRUE,goddamn,36.55
+1246,Django Unchained,TRUE,bitch,36.57
+1247,Django Unchained,FALSE,,37.45
+1248,Django Unchained,FALSE,,38.03
+1249,Django Unchained,TRUE,bitches,40.92
+1250,Django Unchained,TRUE,n-word,41.68
+1251,Django Unchained,TRUE,n-word,42.02
+1252,Django Unchained,TRUE,fucking,42.23
+1253,Django Unchained,TRUE,shit,42.23
+1254,Django Unchained,TRUE,fucking,42.33
+1255,Django Unchained,TRUE,shit,42.38
+1256,Django Unchained,TRUE,goddamn,42.45
+1257,Django Unchained,TRUE,shit,42.47
+1258,Django Unchained,TRUE,goddamn,42.5
+1259,Django Unchained,TRUE,shit,43.12
+1260,Django Unchained,TRUE,fucking,43.22
+1261,Django Unchained,TRUE,fucking,43.25
+1262,Django Unchained,TRUE,fucking,43.27
+1263,Django Unchained,TRUE,fuck,43.28
+1264,Django Unchained,TRUE,bitches,43.42
+1265,Django Unchained,TRUE,n-word,43.65
+1266,Django Unchained,TRUE,goddamn,44.3
+1267,Django Unchained,TRUE,fucking,44.42
+1268,Django Unchained,TRUE,shit,44.55
+1269,Django Unchained,TRUE,n-word,44.58
+1270,Django Unchained,TRUE,n-word,44.63
+1271,Django Unchained,TRUE,n-word,44.67
+1272,Django Unchained,TRUE,shit,45.5
+1273,Django Unchained,FALSE,,45.78
+1274,Django Unchained,TRUE,hell,47.65
+1275,Django Unchained,TRUE,hell,48.3
+1276,Django Unchained,TRUE,damn,53.08
+1277,Django Unchained,FALSE,,55.07
+1278,Django Unchained,FALSE,,56.58
+1279,Django Unchained,FALSE,,56.62
+1280,Django Unchained,FALSE,,56.63
+1281,Django Unchained,FALSE,,56.65
+1282,Django Unchained,TRUE,n-word,59.42
+1283,Django Unchained,TRUE,goddamned,59.65
+1284,Django Unchained,TRUE,n-word,59.75
+1285,Django Unchained,TRUE,fuck,60.5
+1286,Django Unchained,TRUE,fucking,62.22
+1287,Django Unchained,TRUE,n-word,63.2
+1288,Django Unchained,TRUE,n-word,64.78
+1289,Django Unchained,FALSE,,66.9
+1290,Django Unchained,TRUE,n-word,70.1
+1291,Django Unchained,TRUE,n-word,71.17
+1292,Django Unchained,TRUE,n-word,71.2
+1293,Django Unchained,TRUE,n-word,71.23
+1294,Django Unchained,TRUE,n-word,71.28
+1295,Django Unchained,TRUE,n-word,71.35
+1296,Django Unchained,TRUE,n-word,71.87
+1297,Django Unchained,TRUE,n-word,73.17
+1298,Django Unchained,TRUE,n-word,73.23
+1299,Django Unchained,TRUE,n-word,73.32
+1300,Django Unchained,TRUE,n-word,73.73
+1301,Django Unchained,TRUE,n-word,74
+1302,Django Unchained,TRUE,n-word,74.4
+1303,Django Unchained,TRUE,goddamn,74.77
+1304,Django Unchained,TRUE,n-word,74.83
+1305,Django Unchained,TRUE,hell,75.67
+1306,Django Unchained,TRUE,goddamn,76.2
+1307,Django Unchained,TRUE,n-word,76.3
+1308,Django Unchained,TRUE,n-word,76.37
+1309,Django Unchained,TRUE,ass,76.45
+1310,Django Unchained,TRUE,goddamn,76.45
+1311,Django Unchained,TRUE,hell,76.92
+1312,Django Unchained,TRUE,n-word,78.48
+1313,Django Unchained,TRUE,ass,79.57
+1314,Django Unchained,TRUE,goddamn,79.63
+1315,Django Unchained,TRUE,goddamn,79.77
+1316,Django Unchained,TRUE,n-word,79.8
+1317,Django Unchained,TRUE,n-word,81.32
+1318,Django Unchained,TRUE,goddamn,81.68
+1319,Django Unchained,TRUE,n-word,82.98
+1320,Django Unchained,TRUE,n-word,83.47
+1321,Django Unchained,TRUE,n-word,83.52
+1322,Django Unchained,TRUE,n-word,83.68
+1323,Django Unchained,FALSE,,84.38
+1324,Django Unchained,TRUE,n-word,84.47
+1325,Django Unchained,TRUE,ass,88.32
+1326,Django Unchained,TRUE,n-word,88.35
+1327,Django Unchained,TRUE,n-word,88.75
+1328,Django Unchained,TRUE,ass,88.97
+1329,Django Unchained,TRUE,n-word,89.13
+1330,Django Unchained,TRUE,n-word,89.13
+1331,Django Unchained,TRUE,n-word,89.35
+1332,Django Unchained,TRUE,bastard,89.52
+1333,Django Unchained,TRUE,n-word,89.62
+1334,Django Unchained,TRUE,ass,90.03
+1335,Django Unchained,TRUE,motherfucker,90.03
+1336,Django Unchained,TRUE,goddamn,90.17
+1337,Django Unchained,TRUE,n-word,90.32
+1338,Django Unchained,TRUE,goddamn,90.37
+1339,Django Unchained,TRUE,n-word,90.42
+1340,Django Unchained,TRUE,shit,90.43
+1341,Django Unchained,TRUE,ass,90.88
+1342,Django Unchained,TRUE,n-word,91
+1343,Django Unchained,TRUE,n-word,91.02
+1344,Django Unchained,TRUE,n-word,91.17
+1345,Django Unchained,TRUE,n-word,91.18
+1346,Django Unchained,TRUE,ass,92.12
+1347,Django Unchained,TRUE,damn,92.23
+1348,Django Unchained,TRUE,damn,92.25
+1349,Django Unchained,TRUE,shit,92.27
+1350,Django Unchained,TRUE,damn,92.33
+1351,Django Unchained,TRUE,bitch,92.37
+1352,Django Unchained,TRUE,n-word,92.53
+1353,Django Unchained,TRUE,n-word,92.67
+1354,Django Unchained,TRUE,ass,92.78
+1355,Django Unchained,TRUE,ass,93.22
+1356,Django Unchained,TRUE,n-word,96.73
+1357,Django Unchained,TRUE,ass,101.02
+1358,Django Unchained,TRUE,n-word,101.48
+1359,Django Unchained,TRUE,n-word,101.97
+1360,Django Unchained,TRUE,n-word,102.07
+1361,Django Unchained,TRUE,n-word,102.32
+1362,Django Unchained,TRUE,n-word,102.6
+1363,Django Unchained,TRUE,n-word,102.78
+1364,Django Unchained,TRUE,n-word,102.83
+1365,Django Unchained,TRUE,n-word,103.02
+1366,Django Unchained,TRUE,n-word,103.15
+1367,Django Unchained,TRUE,n-word,103.2
+1368,Django Unchained,TRUE,hell,103.83
+1369,Django Unchained,TRUE,n-word,104.23
+1370,Django Unchained,TRUE,n-word,104.27
+1371,Django Unchained,TRUE,ass,104.35
+1372,Django Unchained,TRUE,n-word,104.9
+1373,Django Unchained,TRUE,bitch,104.97
+1374,Django Unchained,TRUE,n-word,105.62
+1375,Django Unchained,TRUE,n-word,106.12
+1376,Django Unchained,TRUE,ass,108.38
+1377,Django Unchained,TRUE,n-word,108.48
+1378,Django Unchained,TRUE,n-word,108.65
+1379,Django Unchained,TRUE,n-word,109.12
+1380,Django Unchained,TRUE,n-word,109.18
+1381,Django Unchained,TRUE,n-word,109.2
+1382,Django Unchained,TRUE,goddamn,109.33
+1383,Django Unchained,TRUE,goddamn,111.33
+1384,Django Unchained,TRUE,damn,111.53
+1385,Django Unchained,TRUE,n-word,112.08
+1386,Django Unchained,TRUE,shit,112.08
+1387,Django Unchained,TRUE,fucked,112.08
+1388,Django Unchained,TRUE,motherfuckers,113.05
+1389,Django Unchained,TRUE,hell,113.22
+1390,Django Unchained,TRUE,ass,113.25
+1391,Django Unchained,TRUE,n-word,113.5
+1392,Django Unchained,TRUE,n-word,113.97
+1393,Django Unchained,TRUE,n-word,114.05
+1394,Django Unchained,TRUE,fuck,114.15
+1395,Django Unchained,TRUE,bitch,114.18
+1396,Django Unchained,TRUE,goddamn,114.93
+1397,Django Unchained,TRUE,bitches,115.02
+1398,Django Unchained,TRUE,bitches,115.07
+1399,Django Unchained,TRUE,damn,116.65
+1400,Django Unchained,TRUE,goddamn,117.85
+1401,Django Unchained,TRUE,jackass,120.65
+1402,Django Unchained,TRUE,ass,121.12
+1403,Django Unchained,TRUE,goddamn,121.12
+1404,Django Unchained,TRUE,n-word,121.37
+1405,Django Unchained,TRUE,n-word,121.67
+1406,Django Unchained,TRUE,n-word,122.45
+1407,Django Unchained,TRUE,goddamn,122.6
+1408,Django Unchained,TRUE,ass,122.63
+1409,Django Unchained,TRUE,n-word,123.42
+1410,Django Unchained,TRUE,shit,130.07
+1411,Django Unchained,TRUE,n-word,130.38
+1412,Django Unchained,TRUE,ass,130.45
+1413,Django Unchained,FALSE,,131.27
+1414,Django Unchained,FALSE,,131.53
+1415,Django Unchained,FALSE,,131.72
+1416,Django Unchained,FALSE,,131.8
+1417,Django Unchained,FALSE,,131.83
+1418,Django Unchained,FALSE,,131.92
+1419,Django Unchained,FALSE,,132.05
+1420,Django Unchained,FALSE,,132.13
+1421,Django Unchained,FALSE,,132.13
+1422,Django Unchained,FALSE,,132.13
+1423,Django Unchained,TRUE,fucking,132.22
+1424,Django Unchained,TRUE,n-word,131.73
+1425,Django Unchained,TRUE,shit,132.1
+1426,Django Unchained,TRUE,bitch,132.12
+1427,Django Unchained,TRUE,fucking,132.22
+1428,Django Unchained,TRUE,damn,132.3
+1429,Django Unchained,TRUE,bitch,132.32
+1430,Django Unchained,TRUE,fucking,132.35
+1431,Django Unchained,TRUE,damn,132.37
+1432,Django Unchained,TRUE,fuck,132.42
+1433,Django Unchained,TRUE,fuck,132.53
+1434,Django Unchained,TRUE,n-word,132.55
+1435,Django Unchained,FALSE,,133.08
+1436,Django Unchained,TRUE,n-word,133.17
+1437,Django Unchained,TRUE,motherfucker,133.27
+1438,Django Unchained,FALSE,,133.38
+1439,Django Unchained,FALSE,,133.38
+1440,Django Unchained,TRUE,shit,133.42
+1441,Django Unchained,FALSE,,133.47
+1442,Django Unchained,FALSE,,133.5
+1443,Django Unchained,FALSE,,133.52
+1444,Django Unchained,FALSE,,133.65
+1445,Django Unchained,FALSE,,133.83
+1446,Django Unchained,FALSE,,133.87
+1447,Django Unchained,TRUE,shit,134.4
+1448,Django Unchained,TRUE,goddamn,134.77
+1449,Django Unchained,TRUE,goddamn,135.18
+1450,Django Unchained,TRUE,horseshit,135.43
+1451,Django Unchained,TRUE,ass,135.65
+1452,Django Unchained,TRUE,goddamn,135.7
+1453,Django Unchained,TRUE,bitch,135.78
+1454,Django Unchained,TRUE,n-word,136.2
+1455,Django Unchained,TRUE,n-word,138.3
+1456,Django Unchained,TRUE,ass,140.23
+1457,Django Unchained,TRUE,motherfuckers,140.25
+1458,Django Unchained,TRUE,ass,140.43
+1459,Django Unchained,TRUE,fucking,140.5
+1460,Django Unchained,TRUE,n-word,140.68
+1461,Django Unchained,TRUE,shit,140.93
+1462,Django Unchained,TRUE,n-word,140.97
+1463,Django Unchained,TRUE,shit,141.22
+1464,Django Unchained,TRUE,hell,141.25
+1465,Django Unchained,TRUE,n-word,141.27
+1466,Django Unchained,TRUE,ass,141.52
+1467,Django Unchained,TRUE,ass,142.42
+1468,Django Unchained,TRUE,n-word,142.43
+1469,Django Unchained,TRUE,fuck,143.68
+1470,Django Unchained,TRUE,fuck,144.2
+1471,Django Unchained,TRUE,ass,144.58
+1472,Django Unchained,TRUE,bitches,144.77
+1473,Django Unchained,TRUE,goddamn,145.12
+1474,Django Unchained,TRUE,fucking,145.17
+1475,Django Unchained,TRUE,shit,145.22
+1476,Django Unchained,TRUE,ass,145.53
+1477,Django Unchained,TRUE,fucking,147.2
+1478,Django Unchained,TRUE,damn,147.23
+1479,Django Unchained,TRUE,n-word,147.48
+1480,Django Unchained,TRUE,fuck,147.62
+1481,Django Unchained,TRUE,goddamn,148.43
+1482,Django Unchained,TRUE,n-word,148.57
+1483,Django Unchained,TRUE,fucking,149.02
+1484,Django Unchained,FALSE,,149.1
+1485,Django Unchained,FALSE,,149.1
+1486,Django Unchained,FALSE,,149.13
+1487,Django Unchained,TRUE,goddamn,152.23
+1488,Django Unchained,TRUE,motherfucker,152.35
+1489,Django Unchained,FALSE,,152.37
+1490,Django Unchained,FALSE,,152.38
+1491,Django Unchained,FALSE,,152.4
+1492,Django Unchained,FALSE,,152.4
+1493,Django Unchained,FALSE,,152.47
+1494,Django Unchained,FALSE,,152.47
+1495,Django Unchained,FALSE,,152.5
+1496,Django Unchained,FALSE,,156.77
+1497,Django Unchained,TRUE,bitch,157.3
+1498,Django Unchained,FALSE,,157.37
+1499,Django Unchained,FALSE,,157.85
+1500,Django Unchained,TRUE,n-word,158.62
+1501,Django Unchained,TRUE,n-word,158.65
+1502,Django Unchained,TRUE,shit,158.78
+1503,Django Unchained,TRUE,n-word,158.78
+1504,Django Unchained,TRUE,motherfucker,158.9
+1505,Django Unchained,TRUE,damn,158.92
+1506,Django Unchained,TRUE,n-word,158.98
+1507,Django Unchained,TRUE,horseshit,159.18
+1508,Django Unchained,TRUE,n-word,159.25
+1509,Django Unchained,TRUE,bitch,159.33
+1510,Django Unchained,TRUE,motherfucker,159.37
+1511,Django Unchained,TRUE,n-word,159.42
+1512,Django Unchained,TRUE,ass,159.53
+1513,Django Unchained,TRUE,n-word,159.58
+1514,Django Unchained,TRUE,n-word,159.65
+1515,Django Unchained,TRUE,ass,159.7
+1516,Django Unchained,TRUE,ass,159.77
+1517,Django Unchained,TRUE,n-word,159.8
+1518,Django Unchained,TRUE,fucked,159.83
+1519,Django Unchained,TRUE,n-word,159.88
+1520,Django Unchained,TRUE,n-word,160.2
+1521,Django Unchained,TRUE,ass,160.28
+1522,Django Unchained,FALSE,,160.45
+1523,Jackie Brown,TRUE,ass,4.38
+1524,Jackie Brown,TRUE,shit,4.53
+1525,Jackie Brown,TRUE,shit,4.63
+1526,Jackie Brown,TRUE,motherfucker,4.85
+1527,Jackie Brown,TRUE,shit,4.95
+1528,Jackie Brown,TRUE,shit,5
+1529,Jackie Brown,TRUE,motherfucker,5.28
+1530,Jackie Brown,TRUE,n-word,5.37
+1531,Jackie Brown,TRUE,n-word,5.45
+1532,Jackie Brown,TRUE,fucking,5.53
+1533,Jackie Brown,TRUE,damn,5.6
+1534,Jackie Brown,TRUE,n-word,5.67
+1535,Jackie Brown,TRUE,shit,5.7
+1536,Jackie Brown,TRUE,n-word,6.02
+1537,Jackie Brown,TRUE,motherfucker,6.08
+1538,Jackie Brown,TRUE,shit,6.18
+1539,Jackie Brown,TRUE,motherfucker,6.37
+1540,Jackie Brown,TRUE,ass,6.7
+1541,Jackie Brown,TRUE,shit,7.45
+1542,Jackie Brown,TRUE,shit,8.35
+1543,Jackie Brown,TRUE,n-word,8.58
+1544,Jackie Brown,TRUE,n-word,8.62
+1545,Jackie Brown,TRUE,n-word,8.65
+1546,Jackie Brown,TRUE,motherfucking,8.82
+1547,Jackie Brown,TRUE,motherfuckers,9.23
+1548,Jackie Brown,TRUE,bitch,9.97
+1549,Jackie Brown,TRUE,fuck,10.08
+1550,Jackie Brown,TRUE,fuck,10.12
+1551,Jackie Brown,TRUE,goddamn,10.2
+1552,Jackie Brown,TRUE,n-word,10.2
+1553,Jackie Brown,TRUE,goddamn,10.25
+1554,Jackie Brown,TRUE,motherfuckers,10.5
+1555,Jackie Brown,TRUE,shit,10.52
+1556,Jackie Brown,TRUE,motherfucking,10.53
+1557,Jackie Brown,TRUE,fuck,10.58
+1558,Jackie Brown,TRUE,n-word,12.12
+1559,Jackie Brown,TRUE,shit,12.82
+1560,Jackie Brown,TRUE,fuck,12.82
+1561,Jackie Brown,TRUE,ass,13.1
+1562,Jackie Brown,TRUE,fuck,15.63
+1563,Jackie Brown,TRUE,n-word,15.68
+1564,Jackie Brown,TRUE,n-word,15.72
+1565,Jackie Brown,TRUE,ass,15.98
+1566,Jackie Brown,TRUE,motherfucking,16.03
+1567,Jackie Brown,TRUE,n-word,16.1
+1568,Jackie Brown,TRUE,ass,16.2
+1569,Jackie Brown,TRUE,n-word,16.23
+1570,Jackie Brown,TRUE,goddamn,16.25
+1571,Jackie Brown,TRUE,shit,16.28
+1572,Jackie Brown,TRUE,ass,16.3
+1573,Jackie Brown,TRUE,ass,16.33
+1574,Jackie Brown,TRUE,motherfucking,16.35
+1575,Jackie Brown,TRUE,n-word,16.38
+1576,Jackie Brown,TRUE,motherfucker,16.47
+1577,Jackie Brown,TRUE,hell,16.52
+1578,Jackie Brown,TRUE,shit,16.55
+1579,Jackie Brown,TRUE,ass,16.58
+1580,Jackie Brown,TRUE,shit,16.65
+1581,Jackie Brown,TRUE,n-word,16.77
+1582,Jackie Brown,TRUE,fucking,16.87
+1583,Jackie Brown,TRUE,n-word,17.12
+1584,Jackie Brown,TRUE,ass,17.22
+1585,Jackie Brown,TRUE,n-word,17.25
+1586,Jackie Brown,TRUE,fuck,17.3
+1587,Jackie Brown,TRUE,shit,17.4
+1588,Jackie Brown,TRUE,fucking,17.42
+1589,Jackie Brown,TRUE,ass,17.48
+1590,Jackie Brown,TRUE,fucking,17.52
+1591,Jackie Brown,TRUE,n-word,17.82
+1592,Jackie Brown,TRUE,n-word,17.82
+1593,Jackie Brown,TRUE,n-word,17.85
+1594,Jackie Brown,TRUE,n-word,17.9
+1595,Jackie Brown,TRUE,n-word,17.95
+1596,Jackie Brown,TRUE,ass,18.23
+1597,Jackie Brown,TRUE,shit,18.38
+1598,Jackie Brown,TRUE,n-word,18.8
+1599,Jackie Brown,TRUE,shit,19.07
+1600,Jackie Brown,TRUE,motherfucker,19.35
+1601,Jackie Brown,TRUE,motherfucker,19.45
+1602,Jackie Brown,TRUE,fuck,19.47
+1603,Jackie Brown,TRUE,shit,19.47
+1604,Jackie Brown,TRUE,fucking,19.58
+1605,Jackie Brown,TRUE,ass,19.62
+1606,Jackie Brown,TRUE,goddamn,19.72
+1607,Jackie Brown,TRUE,goddamn,19.83
+1608,Jackie Brown,TRUE,goddamn,19.93
+1609,Jackie Brown,TRUE,ass,19.95
+1610,Jackie Brown,TRUE,n-word,20.05
+1611,Jackie Brown,TRUE,motherfucker,20.12
+1612,Jackie Brown,TRUE,ass,20.17
+1613,Jackie Brown,TRUE,goddamn,20.22
+1614,Jackie Brown,TRUE,ass,20.28
+1615,Jackie Brown,TRUE,ass,20.35
+1616,Jackie Brown,TRUE,n-word,20.38
+1617,Jackie Brown,TRUE,fucking,20.52
+1618,Jackie Brown,TRUE,n-word,20.57
+1619,Jackie Brown,TRUE,shit,20.58
+1620,Jackie Brown,TRUE,fucking,20.65
+1621,Jackie Brown,TRUE,motherfucker,21.05
+1622,Jackie Brown,TRUE,motherfucker,21.12
+1623,Jackie Brown,TRUE,goddamn,21.13
+1624,Jackie Brown,TRUE,motherfucker,21.18
+1625,Jackie Brown,TRUE,hell,21.22
+1626,Jackie Brown,FALSE,,23.08
+1627,Jackie Brown,TRUE,n-word,23.07
+1628,Jackie Brown,TRUE,shit,25.53
+1629,Jackie Brown,TRUE,goddamn,26.13
+1630,Jackie Brown,TRUE,motherfucking,26.37
+1631,Jackie Brown,TRUE,ass,26.38
+1632,Jackie Brown,TRUE,n-word,27.07
+1633,Jackie Brown,TRUE,fuck,27.08
+1634,Jackie Brown,TRUE,n-word,27.2
+1635,Jackie Brown,TRUE,n-word,27.22
+1636,Jackie Brown,TRUE,n-word,27.48
+1637,Jackie Brown,TRUE,shitty,28.67
+1638,Jackie Brown,TRUE,fucking,28.72
+1639,Jackie Brown,TRUE,goddamn,29.05
+1640,Jackie Brown,TRUE,fucking,29.72
+1641,Jackie Brown,TRUE,fucks,30.63
+1642,Jackie Brown,TRUE,shit,30.63
+1643,Jackie Brown,TRUE,shittiest,30.77
+1644,Jackie Brown,TRUE,fucking,30.78
+1645,Jackie Brown,TRUE,shit,30.8
+1646,Jackie Brown,TRUE,fuck,31.97
+1647,Jackie Brown,TRUE,shit,32.13
+1648,Jackie Brown,TRUE,shitty,32.4
+1649,Jackie Brown,TRUE,goddamn,32.65
+1650,Jackie Brown,TRUE,shit,33.47
+1651,Jackie Brown,TRUE,shit,33.67
+1652,Jackie Brown,TRUE,fucking,36.4
+1653,Jackie Brown,TRUE,shit,36.42
+1654,Jackie Brown,TRUE,shit,36.52
+1655,Jackie Brown,TRUE,shit,36.97
+1656,Jackie Brown,TRUE,shit,37
+1657,Jackie Brown,TRUE,hell,37.13
+1658,Jackie Brown,TRUE,motherfucking,37.15
+1659,Jackie Brown,TRUE,ass,37.28
+1660,Jackie Brown,TRUE,shit,37.33
+1661,Jackie Brown,TRUE,ass,37.37
+1662,Jackie Brown,TRUE,shit,37.88
+1663,Jackie Brown,TRUE,shit,38.58
+1664,Jackie Brown,TRUE,fuck,38.95
+1665,Jackie Brown,TRUE,fucking,38.98
+1666,Jackie Brown,TRUE,shit,39.3
+1667,Jackie Brown,TRUE,shit,39.35
+1668,Jackie Brown,TRUE,bitch,44.32
+1669,Jackie Brown,TRUE,ass,45.38
+1670,Jackie Brown,TRUE,hell,48.1
+1671,Jackie Brown,TRUE,ass,48.1
+1672,Jackie Brown,TRUE,ass,48.17
+1673,Jackie Brown,TRUE,shit,48.35
+1674,Jackie Brown,TRUE,damn,48.52
+1675,Jackie Brown,TRUE,shit,48.53
+1676,Jackie Brown,TRUE,shitload,48.6
+1677,Jackie Brown,TRUE,shitload,50.45
+1678,Jackie Brown,TRUE,dick,50.88
+1679,Jackie Brown,TRUE,n-word,50.97
+1680,Jackie Brown,TRUE,hell,51.03
+1681,Jackie Brown,TRUE,fuck,51.05
+1682,Jackie Brown,TRUE,fuck,51.1
+1683,Jackie Brown,TRUE,ass,51.22
+1684,Jackie Brown,TRUE,motherfuckers,51.32
+1685,Jackie Brown,TRUE,fuck,51.4
+1686,Jackie Brown,TRUE,damn,51.42
+1687,Jackie Brown,TRUE,ass,51.45
+1688,Jackie Brown,TRUE,fucking,51.5
+1689,Jackie Brown,TRUE,ass,51.62
+1690,Jackie Brown,TRUE,fuck,51.65
+1691,Jackie Brown,TRUE,motherfucking,51.8
+1692,Jackie Brown,TRUE,motherfucking,51.97
+1693,Jackie Brown,TRUE,motherfucking,53.17
+1694,Jackie Brown,TRUE,ass,57.42
+1695,Jackie Brown,TRUE,fuck,57.93
+1696,Jackie Brown,TRUE,ass,59.12
+1697,Jackie Brown,TRUE,shit,60.2
+1698,Jackie Brown,TRUE,shit,61.53
+1699,Jackie Brown,TRUE,ass,61.93
+1700,Jackie Brown,TRUE,goddamn,62.97
+1701,Jackie Brown,TRUE,shit,63.07
+1702,Jackie Brown,TRUE,shit,63.07
+1703,Jackie Brown,TRUE,shit,66.05
+1704,Jackie Brown,TRUE,fucking,67.82
+1705,Jackie Brown,TRUE,fuck,67.95
+1706,Jackie Brown,TRUE,damn,69.7
+1707,Jackie Brown,TRUE,n-word,70.02
+1708,Jackie Brown,TRUE,motherfuckers,70.03
+1709,Jackie Brown,TRUE,ass,70.05
+1710,Jackie Brown,TRUE,bullshit,70.1
+1711,Jackie Brown,TRUE,motherfucker,70.12
+1712,Jackie Brown,TRUE,damn,70.15
+1713,Jackie Brown,TRUE,fuck,70.3
+1714,Jackie Brown,TRUE,goddamn,70.45
+1715,Jackie Brown,TRUE,fuck,70.8
+1716,Jackie Brown,TRUE,fuck,70.9
+1717,Jackie Brown,TRUE,ass,70.93
+1718,Jackie Brown,TRUE,shit,71.2
+1719,Jackie Brown,TRUE,fuck,71.23
+1720,Jackie Brown,TRUE,damn,71.67
+1721,Jackie Brown,TRUE,fucking,72.6
+1722,Jackie Brown,TRUE,fuck,73.2
+1723,Jackie Brown,TRUE,shit,73.27
+1724,Jackie Brown,TRUE,fuck,73.85
+1725,Jackie Brown,TRUE,shit,75.37
+1726,Jackie Brown,TRUE,pussy,75.38
+1727,Jackie Brown,TRUE,shit,75.6
+1728,Jackie Brown,TRUE,bitch,75.63
+1729,Jackie Brown,TRUE,fucking,75.63
+1730,Jackie Brown,TRUE,fuck,75.7
+1731,Jackie Brown,TRUE,n-word,75.7
+1732,Jackie Brown,TRUE,damn,75.73
+1733,Jackie Brown,TRUE,fuck,75.77
+1734,Jackie Brown,TRUE,fucked,75.87
+1735,Jackie Brown,TRUE,shit,76.18
+1736,Jackie Brown,TRUE,bitches,76.32
+1737,Jackie Brown,TRUE,ass,76.72
+1738,Jackie Brown,TRUE,ass,76.92
+1739,Jackie Brown,TRUE,bitch,77.05
+1740,Jackie Brown,TRUE,fuck,77.35
+1741,Jackie Brown,TRUE,bitch,77.47
+1742,Jackie Brown,TRUE,ass,79.37
+1743,Jackie Brown,TRUE,shit,80.33
+1744,Jackie Brown,TRUE,fuck,81
+1745,Jackie Brown,TRUE,shit,81.02
+1746,Jackie Brown,TRUE,shit,83.92
+1747,Jackie Brown,TRUE,shit,88.68
+1748,Jackie Brown,TRUE,shit,88.83
+1749,Jackie Brown,TRUE,hell,92.38
+1750,Jackie Brown,TRUE,hell,92.38
+1751,Jackie Brown,TRUE,hell,92.43
+1752,Jackie Brown,TRUE,shit,92.52
+1753,Jackie Brown,TRUE,shit,92.55
+1754,Jackie Brown,TRUE,goddamn,92.57
+1755,Jackie Brown,TRUE,fuck,92.58
+1756,Jackie Brown,TRUE,ass,92.62
+1757,Jackie Brown,TRUE,fucking,92.63
+1758,Jackie Brown,TRUE,fuck,92.65
+1759,Jackie Brown,TRUE,ass,92.7
+1760,Jackie Brown,TRUE,shit,92.82
+1761,Jackie Brown,TRUE,ass,92.97
+1762,Jackie Brown,TRUE,damn,93.03
+1763,Jackie Brown,TRUE,shit,94.13
+1764,Jackie Brown,TRUE,ass,94.27
+1765,Jackie Brown,TRUE,ass,94.77
+1766,Jackie Brown,TRUE,damn,94.98
+1767,Jackie Brown,TRUE,shit,95.07
+1768,Jackie Brown,TRUE,motherfucker,95.08
+1769,Jackie Brown,TRUE,motherfucker,95.13
+1770,Jackie Brown,TRUE,shit,96.7
+1771,Jackie Brown,TRUE,fucking,96.9
+1772,Jackie Brown,TRUE,hell,97.37
+1773,Jackie Brown,TRUE,bitch,98.02
+1774,Jackie Brown,TRUE,ass,98.07
+1775,Jackie Brown,TRUE,shit,98.15
+1776,Jackie Brown,TRUE,motherfucking,98.17
+1777,Jackie Brown,TRUE,goddamn,98.23
+1778,Jackie Brown,TRUE,goddamn,98.45
+1779,Jackie Brown,TRUE,bitch,98.45
+1780,Jackie Brown,TRUE,fucking,98.47
+1781,Jackie Brown,TRUE,ass,101.37
+1782,Jackie Brown,TRUE,fuck,101.92
+1783,Jackie Brown,TRUE,motherfucking,101.98
+1784,Jackie Brown,TRUE,bitch,102.07
+1785,Jackie Brown,TRUE,fucking,102.08
+1786,Jackie Brown,TRUE,ass,102.08
+1787,Jackie Brown,TRUE,goddamn,102.1
+1788,Jackie Brown,TRUE,ass,102.32
+1789,Jackie Brown,TRUE,fuck,102.33
+1790,Jackie Brown,TRUE,ass,105.27
+1791,Jackie Brown,TRUE,fuck,106.32
+1792,Jackie Brown,TRUE,goddamn,109.7
+1793,Jackie Brown,TRUE,fuck,109.77
+1794,Jackie Brown,TRUE,fucking,109.82
+1795,Jackie Brown,TRUE,shit,109.97
+1796,Jackie Brown,TRUE,bitch,110.13
+1797,Jackie Brown,TRUE,fucking,110.15
+1798,Jackie Brown,TRUE,fucking,110.52
+1799,Jackie Brown,TRUE,fuck,111.27
+1800,Jackie Brown,TRUE,fuck,111.83
+1801,Jackie Brown,TRUE,goddamn,111.85
+1802,Jackie Brown,TRUE,fucking,111.9
+1803,Jackie Brown,TRUE,fuck,111.97
+1804,Jackie Brown,TRUE,fucking,111.98
+1805,Jackie Brown,TRUE,fuck,112.07
+1806,Jackie Brown,TRUE,fuck,112.35
+1807,Jackie Brown,TRUE,fucking,113.18
+1808,Jackie Brown,FALSE,,113.28
+1809,Jackie Brown,TRUE,bitch,114.98
+1810,Jackie Brown,TRUE,fucking,115
+1811,Jackie Brown,TRUE,fuck,116.07
+1812,Jackie Brown,TRUE,fucking,120.22
+1813,Jackie Brown,TRUE,fucking,120.35
+1814,Jackie Brown,TRUE,fucking,120.85
+1815,Jackie Brown,TRUE,bitch,121.1
+1816,Jackie Brown,TRUE,fucking,121.87
+1817,Jackie Brown,TRUE,fucking,121.92
+1818,Jackie Brown,TRUE,ass,122.08
+1819,Jackie Brown,TRUE,fuck,122.12
+1820,Jackie Brown,TRUE,fuck,122.15
+1821,Jackie Brown,TRUE,fuck,122.17
+1822,Jackie Brown,TRUE,fucking,121.2
+1823,Jackie Brown,TRUE,shit,122.28
+1824,Jackie Brown,TRUE,bitch,123.32
+1825,Jackie Brown,TRUE,shit,123.63
+1826,Jackie Brown,TRUE,motherfucker,124.57
+1827,Jackie Brown,TRUE,hell,124.65
+1828,Jackie Brown,TRUE,ass,124.68
+1829,Jackie Brown,TRUE,motherfuckers,124.75
+1830,Jackie Brown,TRUE,fucking,124.83
+1831,Jackie Brown,TRUE,fucking,124.85
+1832,Jackie Brown,TRUE,fucking,124.88
+1833,Jackie Brown,TRUE,fucking,124.9
+1834,Jackie Brown,TRUE,goddamn,124.97
+1835,Jackie Brown,TRUE,motherfucker,125.07
+1836,Jackie Brown,TRUE,ass,125.1
+1837,Jackie Brown,TRUE,shit,125.12
+1838,Jackie Brown,TRUE,fucking,125.15
+1839,Jackie Brown,TRUE,fuck,125.33
+1840,Jackie Brown,TRUE,ass,125.37
+1841,Jackie Brown,FALSE,,125.43
+1842,Jackie Brown,TRUE,shit,126.42
+1843,Jackie Brown,TRUE,fucking,126.62
+1844,Jackie Brown,TRUE,fucking,127.07
+1845,Jackie Brown,TRUE,fucking,127.42
+1846,Jackie Brown,TRUE,fucking,128.38
+1847,Jackie Brown,TRUE,motherfucking,128.42
+1848,Jackie Brown,TRUE,motherfucker,128.47
+1849,Jackie Brown,TRUE,fuck,129.17
+1850,Jackie Brown,TRUE,fucking,129.57
+1851,Jackie Brown,TRUE,goddamn,130.9
+1852,Jackie Brown,TRUE,motherfucking,130.92
+1853,Jackie Brown,TRUE,motherfucking,131
+1854,Jackie Brown,TRUE,motherfucker,131.08
+1855,Jackie Brown,TRUE,motherfucker,131.18
+1856,Jackie Brown,TRUE,shit,131.22
+1857,Jackie Brown,TRUE,n-word,131.25
+1858,Jackie Brown,TRUE,motherfucker,131.28
+1859,Jackie Brown,TRUE,goddamn,131.35
+1860,Jackie Brown,TRUE,motherfucker,131.38
+1861,Jackie Brown,TRUE,shit,131.4
+1862,Jackie Brown,TRUE,goddamn,131.45
+1863,Jackie Brown,TRUE,shit,131.57
+1864,Jackie Brown,TRUE,n-word,131.8
+1865,Jackie Brown,TRUE,motherfucking,132.78
+1866,Jackie Brown,TRUE,ass,133.05
+1867,Jackie Brown,TRUE,motherfucking,133.13
+1868,Jackie Brown,TRUE,fuck,134
+1869,Jackie Brown,TRUE,goddamn,134.02
+1870,Jackie Brown,TRUE,fucking,134.07
+1871,Jackie Brown,TRUE,ass,134.18
+1872,Jackie Brown,TRUE,motherfucker,134.33
+1873,Jackie Brown,TRUE,motherfucker,134.5
+1874,Jackie Brown,TRUE,n-word,134.78
+1875,Jackie Brown,TRUE,shit,135
+1876,Jackie Brown,TRUE,ass,135.67
+1877,Jackie Brown,TRUE,dumbass,135.72
+1878,Jackie Brown,TRUE,bullshit,136.72
+1879,Jackie Brown,TRUE,fucking,136.9
+1880,Jackie Brown,TRUE,ass,137.13
+1881,Jackie Brown,TRUE,n-word,137.13
+1882,Jackie Brown,TRUE,goddamn,138.2
+1883,Jackie Brown,TRUE,bullshit,141.03
+1884,Jackie Brown,TRUE,bitch,141.2
+1885,Jackie Brown,TRUE,goddamn,141.23
+1886,Jackie Brown,TRUE,motherfucker,141.35
+1887,Jackie Brown,TRUE,n-word,141.5
+1888,Jackie Brown,TRUE,motherfucker,141.55
+1889,Jackie Brown,TRUE,motherfucker,141.8
+1890,Jackie Brown,TRUE,motherfucker,141.93
+1891,Jackie Brown,TRUE,ass,142.43
+1892,Jackie Brown,TRUE,fucking,142.47
+1893,Jackie Brown,TRUE,goddamn,142.97
+1894,Jackie Brown,FALSE,,143.13

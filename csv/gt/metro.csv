@@ -152,7 +152,7 @@ rownames,name,caption,lines,connect_rer,connect_tramway,connect_transilien,conne
 151,Les Gobelins,,7,,,,,2365942,48.8364,2.35225,"Paris 5th, Paris 13th"
 152,Louis Blanc,,7,,,,,1548029,48.881137,2.364839,Paris 10th
 153,Mairie d'Ivry,,7,,,,,2042071,48.81112,2.38339,Ivry-sur-Seine
-154,Maison Blanche,,7,,,,,1203631,48.822155,2.358531,Paris 13th
+154,Maison Blanche,,"7, 14",,,,,1203631,48.822155,2.358531,Paris 13th
 155,Pierre et Marie Curie,,7,,,,,1100552,48.81592,2.37789,Ivry-sur-Seine
 156,Place Monge,Jardin des Plantes—Arènes de Lutèce,7,,,,,1837996,48.84359,2.352279,Paris 5th
 157,Poissonnière,,7,,,,,2306725,48.87708,2.34845,"Paris 9th, Paris 10th"
@@ -308,8 +308,14 @@ rownames,name,caption,lines,connect_rer,connect_tramway,connect_transilien,conne
 307,Saint-Denis—Université,,13,,T5,,,3569990,48.94583,2.36361,Saint-Denis
 308,Saint-François-Xavier,,13,,,,,1213378,48.851951,2.314475,Paris 7th
 309,Varenne,,13,,,,,782697,48.856238,2.314921,Paris 7th
-310,Bibliothèque François Mitterrand,,14,C,T3a,,,11104474,48.829822,2.376781,Paris 13th
-311,Cour Saint-Émilion,,14,,,,,2985122,48.834,2.386,Paris 12th
-312,Olympiades,,14,,,,,5214595,48.827222,2.368333,Paris 13th
-313,Pont Cardinet,,14,,,L,,4168538,48.889481,2.315206,Paris 17th
-314,Saint-Ouen,,14,C,,,,3420852,48.904497,2.321806,"Clichy, Saint-Ouen-sur-Seine"
+310,Aéroport d'Orly,Paray-Vieille-Poste,14,,T7,,,,48.728081,2.362364,Paray-Vieille-Poste
+311,Bibliothèque François Mitterrand,,14,C,T3a,,,11104474,48.829822,2.376781,Paris 13th
+312,Chevilly-Larue,Marché International,14,,T7,,,,48.75836,2.366663,Chevilly-Larue
+313,Cour Saint-Émilion,,14,,,,,2985122,48.834,2.386,Paris 12th
+314,Hôpital Bicêtre,Kremlin-Bicêtre–Gentilly,14,,,,,,48.809722,2.349722,Le Kremlin-Bicêtre
+315,L'Haÿ-les-Roses,,14,,,,,,48.775278,2.354167,L'Haÿ-les-Roses
+316,Olympiades,,14,,,,,5214595,48.827222,2.368333,Paris 13th
+317,Pont Cardinet,,14,,,L,,4168538,48.889481,2.315206,Paris 17th
+318,Saint-Denis–Pleyel,,14,,,,,,48.917709,2.344116,Saint-Denis
+319,Saint-Ouen,,14,C,,,,3420852,48.904497,2.321806,"Clichy, Saint-Ouen-sur-Seine"
+320,Thiais–Orly,Pont de Rungis,14,,,,,,48.747367,2.372931,Thiais

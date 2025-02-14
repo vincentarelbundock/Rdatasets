@@ -1,0 +1,122 @@
+<!DOCTYPE html><html><head><title>R: How Every NFL Team’s Fans Lean Politically</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>nfl_fandom_surveymonkey</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>How Every NFL Team’s Fans Lean Politically</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;How Every NFL Team’s Fans Lean Politically&quot;
+<a href="https://fivethirtyeight.com/features/how-every-nfl-teams-fans-lean-politically/">https://fivethirtyeight.com/features/how-every-nfl-teams-fans-lean-politically/</a>: SurveyMonkey Data.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>nfl_fandom_surveymonkey
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>a data frame with 33 rows representing teams and 25 variables:
+</p>
+
+<dl>
+<dt>team</dt><dd><p>NFL team</p>
+</dd>
+<dt>total_respondents</dt><dd><p>Total number of poll respondents who ranked the given team in their top 3 favorites</p>
+</dd>
+<dt>asian_dem</dt><dd><p>Number of Asian, democrat poll respondents who ranked the given team in their top 3 favorites</p>
+</dd>
+<dt>black_dem</dt><dd><p>Number of Black, democrat poll respondents who ranked the given team in their top 3 favorites</p>
+</dd>
+<dt>hispanic_dem</dt><dd><p>Number of Hispanic, democrat poll respondents who ranked the given team in their top 3 favorites</p>
+</dd>
+<dt>other_dem</dt><dd><p>Number of democrat poll respondents who identified their race as &quot;other&quot; (not Asian, Black, Hispanic, or White) and ranked the given team in their top 3 favorites</p>
+</dd>
+<dt>white_dem</dt><dd><p>Number of White, democrat poll respondents who ranked the given team in their top 3 favorites</p>
+</dd>
+<dt>total_dem</dt><dd><p>Total number of democrat poll respondents who ranked the given team in their top 3 favorites</p>
+</dd>
+<dt>asian_ind</dt><dd><p>Number of Asian, independent poll respondents who ranked the given team in their top 3 favorites</p>
+</dd>
+<dt>black_ind</dt><dd><p>Number of Black, independent poll respondents who ranked the given team in their top 3 favorites</p>
+</dd>
+<dt>hispanic_ind</dt><dd><p>Number of Hispanic, independent poll respondents who ranked the given team in their top 3 favorites</p>
+</dd>
+<dt>other_ind</dt><dd><p>Number of independent poll respondents who identified their race as &quot;other&quot; (not Asian, Black, Hispanic, or White) and ranked the given team in their top 3 favorites</p>
+</dd>
+<dt>white_ind</dt><dd><p>Number of White, independent poll respondents who ranked the given team in their top 3 favorites</p>
+</dd>
+<dt>total_ind</dt><dd><p>Total number of independent poll respondents who ranked the given team in their top 3 favorites</p>
+</dd>
+<dt>asian_gop</dt><dd><p>Number of Asian, republican poll respondents who ranked the given team in their top 3 favorites</p>
+</dd>
+<dt>black_gop</dt><dd><p>Number of Black, republican poll respondents who ranked the given team in their top 3 favorites</p>
+</dd>
+<dt>hispanic_gop</dt><dd><p>Number of Hispanic, republican poll respondents who ranked the given team in their top 3 favorites</p>
+</dd>
+<dt>other_gop</dt><dd><p>Number of republican poll respondents who identified their race as &quot;other&quot; (not Asian, Black, Hispanic, or White) and ranked the given team in their top 3 favorites</p>
+</dd>
+<dt>white_gop</dt><dd><p>Number of White, republican poll respondents who ranked the given team in their top 3 favorites</p>
+</dd>
+<dt>total_gop</dt><dd><p>Total number of republican poll respondents who ranked the given team in their top 3 favorites</p>
+</dd>
+<dt>gop_percent</dt><dd><p>Percent of fans (who ranked the team in their top 3 favorite NFL teams) who are republicans</p>
+</dd>
+<dt>dem_percent</dt><dd><p>Percent of fans who are democrats</p>
+</dd>
+<dt>ind_percent</dt><dd><p>Percent of fans who are independent</p>
+</dd>
+<dt>white_percent</dt><dd><p>Percent of fans who are White</p>
+</dd>
+<dt>nonwhite_percent</dt><dd><p>Percent of fans who are not White</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>See <a href="https://github.com/fivethirtyeight/data/blob/master/nfl-fandom/NFL_fandom_data-surveymonkey.csv">https://github.com/fivethirtyeight/data/blob/master/nfl-fandom/NFL_fandom_data-surveymonkey.csv</a>
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>nfl_fandom_google</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'># To convert data frame to tidy data (long) format, run:
+library(dplyr)
+library(tidyr)
+nfl_fandom_surveymonkey_tidy &lt;- nfl_fandom_surveymonkey %&gt;%
+  pivot_longer(-c("team", "total_respondents", "gop_percent", "dem_percent",
+            "ind_percent", "white_percent", "nonwhite_percent"),
+            names_to = "race_party", values_to = "percent") %&gt;%
+  arrange(team)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

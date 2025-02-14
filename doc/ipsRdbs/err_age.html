@@ -1,0 +1,71 @@
+<!DOCTYPE html><html><head><title>R: Errors in guessing ages of Southampton mathematicians</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>err_age</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Errors in guessing ages of Southampton mathematicians</h2>
+
+<h3>Description</h3>
+
+<p>Errors in guessing ages of Southampton mathematicians
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>err_age
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 550 rows and 10 columns
+</p>
+
+<dl>
+<dt>group</dt><dd><p>Group number of the students guessing the ages</p>
+</dd>
+<dt>size</dt><dd><p>Number of students in the group</p>
+</dd>
+<dt>females</dt><dd><p>How many female guessers were in the group</p>
+</dd>
+<dt>photo</dt><dd><p>Photograph number guessed, can take value 1 to 10.</p>
+</dd>
+<dt>sex</dt><dd><p>Gender of the photographed person.</p>
+</dd>
+<dt>race</dt><dd><p>Race of the photographed person.</p>
+</dd>
+<dt>est_age</dt><dd><p>Estimated age of the photographed person.</p>
+</dd>
+<dt>tru_age</dt><dd><p>True age of the photographed person.</p>
+</dd>
+<dt>error</dt><dd><p>The value of error, estimated age minus true age</p>
+</dd>
+<dt>abs_error</dt><dd><p>Absolute value of the error</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> summary(err_age)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

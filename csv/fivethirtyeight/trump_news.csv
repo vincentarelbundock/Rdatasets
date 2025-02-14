@@ -1,0 +1,287 @@
+rownames,date,major_cat,detail
+1,2015-06-16,Noncampaign,
+2,2015-06-17,Trump - other,Entry into race
+3,2015-06-18,Noncampaign,
+4,2015-06-19,Noncampaign,
+5,2015-06-20,Noncampaign,
+6,2015-06-21,Noncampaign,
+7,2015-06-22,Noncampaign,
+8,2015-06-23,Noncampaign,
+9,2015-06-24,Noncampaign,
+10,2015-06-25,Noncampaign,
+11,2015-06-26,Noncampaign,
+12,2015-06-27,Noncampaign,
+13,2015-06-28,Noncampaign,
+14,2015-06-29,Noncampaign,
+15,2015-06-30,Noncampaign,
+16,2015-07-01,Trump - polls,Polls - neutral or ambiguous results for Trump
+17,2015-07-02,Trump - polls,Polls - neutral or ambiguous results for Trump
+18,2015-07-03,Noncampaign,
+19,2015-07-04,Noncampaign,
+20,2015-07-05,Trump - comments,Trump's comments on Mexican immigrants
+21,2015-07-06,Noncampaign,
+22,2015-07-07,Noncampaign,
+23,2015-07-08,Dem. campaign,Clinton
+24,2015-07-09,Trump - vs. GOP,Trump vs. GOP establishment
+25,2015-07-10,GOP campaign,Cruz
+26,2015-07-11,Noncampaign,
+27,2015-07-12,Trump - other,Trump Las Vegas speech
+28,2015-07-13,GOP campaign,Walker
+29,2015-07-14,Noncampaign,
+30,2015-07-15,Trump - polls,Polls - good results for Trump
+31,2015-07-16,Trump - vs. GOP,John McCain criticism of Trump
+32,2015-07-17,Noncampaign,
+33,2015-07-18,Noncampaign,
+34,2015-07-19,Trump - comments,Trump comments on McCain's time as POW
+35,2015-07-20,Trump - comments,Trump comments on McCain's time as POW
+36,2015-07-21,Trump - comments,Trump comments on McCain's time as POW
+37,2015-07-22,Noncampaign,
+38,2015-07-23,Trump - vs. GOP,Trump threatens third-party run
+39,2015-07-24,Dem. campaign,Clinton
+40,2015-07-25,Dem. campaign,Clinton
+41,2015-07-26,Trump - polls,Polls - good results for Trump
+42,2015-07-27,GOP campaign,Rubio
+43,2015-07-28,Trump - other,"Michael Cohen (Trump advisor) ""rape"" comments"
+44,2015-07-29,Trump - other,Ivana Trump comments about Trump
+45,2015-07-30,Trump - polls,Polls - good results for Trump
+46,2015-07-31,Dem. campaign,Clinton
+47,2015-08-01,Dem. campaign,Clinton
+48,2015-08-02,Trump - polls,Polls - good results for Trump
+49,2015-08-03,Trump - other,Trump vs. Bush
+50,2015-08-04,Trump - polls,Polls - good results for Trump
+51,2015-08-05,Dem. campaign,Clinton
+52,2015-08-06,Dem. campaign,Clinton
+53,2015-08-07,Trump - comments,Trump comments on Megyn Kelly
+54,2015-08-08,Trump - comments,Trump comments on Megyn Kelly
+55,2015-08-09,Trump - comments,Trump comments on Megyn Kelly
+56,2015-08-10,Trump - other,Trump-Brietbart News relationship
+57,2015-08-11,Trump - other,Trump CNN interview
+58,2015-08-12,Dem. campaign,general
+59,2015-08-13,Dem. campaign,Clinton
+60,2015-08-14,Dem. campaign,general
+61,2015-08-15,Noncampaign,
+62,2015-08-16,Noncampaign,
+63,2015-08-17,Noncampaign,
+64,2015-08-18,Trump - polls,Polls - good results for Trump
+65,2015-08-19,Trump - polls,Polls - good results for Trump
+66,2015-08-20,GOP campaign,general
+67,2015-08-21,Dem. campaign,Clinton
+68,2015-08-22,Noncampaign,
+69,2015-08-23,Dem. campaign,Biden
+70,2015-08-24,Noncampaign,
+71,2015-08-25,Dem. campaign,Biden
+72,2015-08-26,Noncampaign,
+73,2015-08-27,Noncampaign,
+74,2015-08-28,Dem. campaign,Clinton
+75,2015-08-29,Dem. campaign,Sanders
+76,2015-08-30,Trump - polls,Polls - neutral or ambiguous results for Trump
+77,2015-08-31,Trump - other,Trump vs. Bush
+78,2015-09-01,Trump - other,Trump reaction to Mt. McKinley renaming
+79,2015-09-02,Dem. campaign,Clinton
+80,2015-09-03,Trump - vs. GOP,Trump signs GOP loyalty pledge
+81,2015-09-04,Trump - other,Trump Hugh Hewitt interview
+82,2015-09-05,Trump - polls,Polls - good results for Trump
+83,2015-09-06,Noncampaign,
+84,2015-09-07,Trump - other,Trump economic policy
+85,2015-09-08,Noncampaign,
+86,2015-09-09,Dem. campaign,Clinton
+87,2015-09-10,Trump - comments,Trump comments on Fiorina's appearance
+88,2015-09-11,Trump - comments,Trump comments on Fiorina's appearance
+89,2015-09-12,Noncampaign,
+90,2015-09-13,Dem. campaign,Clinton
+91,2015-09-14,Noncampaign,
+92,2015-09-15,Trump - polls,Polls - good results for Trump
+93,2015-09-16,Noncampaign,
+94,2015-09-17,Trump - other,Trump vs. Fiorina
+95,2015-09-18,GOP campaign,general
+96,2015-09-19,Trump - other,"""Birther"" controversy"
+97,2015-09-20,Trump - polls,Polls - bad results for Trump
+98,2015-09-21,GOP campaign,Carson
+99,2015-09-22,GOP campaign,Walker
+100,2015-09-23,Dem. campaign,Biden
+101,2015-09-24,Noncampaign,
+102,2015-09-25,Noncampaign,
+103,2015-09-26,Noncampaign,
+104,2015-09-27,GOP campaign,general
+105,2015-09-28,Noncampaign,
+106,2015-09-29,Noncampaign,
+107,2015-09-30,Noncampaign,
+108,2015-10-01,Noncampaign,
+109,2015-10-02,Noncampaign,
+110,2015-10-03,GOP campaign,Bush
+111,2015-10-04,Noncampaign,
+112,2015-10-05,Noncampaign,
+113,2015-10-06,Noncampaign,
+114,2015-10-07,Dem. campaign,Biden
+115,2015-10-08,GOP campaign,Carson
+116,2015-10-09,Noncampaign,
+117,2015-10-10,Noncampaign,
+118,2015-10-11,GOP campaign,Bush
+119,2015-10-12,Dem. campaign,Clinton
+120,2015-10-13,Dem. campaign,Sanders
+121,2015-10-14,Dem. campaign,general
+122,2015-10-15,Dem. campaign,Clinton
+123,2015-10-16,Dem. campaign,Clinton
+124,2015-10-17,GOP campaign,Bush
+125,2015-10-18,Noncampaign,
+126,2015-10-19,Noncampaign,
+127,2015-10-20,GOP campaign,Cruz
+128,2015-10-21,Trump - polls,Polls - good results for Trump
+129,2015-10-22,Noncampaign,
+130,2015-10-23,Noncampaign,
+131,2015-10-24,Trump - other,Trump vs. Carson
+132,2015-10-25,GOP campaign,Carson
+133,2015-10-26,GOP campaign,general
+134,2015-10-27,Trump - polls,Polls - bad results for Trump
+135,2015-10-28,GOP campaign,general
+136,2015-10-29,GOP campaign,general
+137,2015-10-30,GOP campaign,general
+138,2015-10-31,GOP campaign,Rubio
+139,2015-11-01,GOP campaign,Cruz
+140,2015-11-02,GOP campaign,general
+141,2015-11-03,GOP campaign,general
+142,2015-11-04,GOP campaign,general
+143,2015-11-05,GOP campaign,Carson
+144,2015-11-06,GOP campaign,Carson
+145,2015-11-07,GOP campaign,Carson
+146,2015-11-08,GOP campaign,Carson
+147,2015-11-09,Dem. campaign,Sanders
+148,2015-11-10,GOP campaign,general
+149,2015-11-11,GOP campaign,general
+150,2015-11-12,GOP campaign,general
+151,2015-11-13,Trump - comments,"Trump comments on Carson resembling ""child molester"""
+152,2015-11-14,Noncampaign,
+153,2015-11-15,Dem. campaign,Sanders
+154,2015-11-16,Noncampaign,
+155,2015-11-17,Noncampaign,
+156,2015-11-18,Noncampaign,
+157,2015-11-19,Trump - other,Trump reactions to Paris attacks
+158,2015-11-20,Noncampaign,
+159,2015-11-21,Trump - other,Trump proposes to register Muslims
+160,2015-11-22,Trump - vs. GOP,Trump threatens third-party run
+161,2015-11-23,Trump - comments,"Trump says thousads of Muslims ""celebrated"" 9-11"
+162,2015-11-24,Noncampaign,
+163,2015-11-25,Noncampaign,
+164,2015-11-26,Noncampaign,
+165,2015-11-27,Noncampaign,
+166,2015-11-28,Noncampaign,
+167,2015-11-29,Noncampaign,
+168,2015-11-30,GOP campaign,Rubio
+169,2015-12-01,GOP campaign,Cruz
+170,2015-12-02,GOP campaign,Carson
+171,2015-12-03,Noncampaign,
+172,2015-12-04,Noncampaign,
+173,2015-12-05,Noncampaign,
+174,2015-12-06,Noncampaign,
+175,2015-12-07,Noncampaign,
+176,2015-12-08,Trump - other,Trump proposes Muslim immigration ban
+177,2015-12-09,Trump - vs. GOP,Trump vs. GOP establishment
+178,2015-12-10,Trump - other,White supremicist support for Trump
+179,2015-12-11,Trump - vs. GOP,Possible contested convention
+180,2015-12-12,Trump - vs. GOP,Trump vs. GOP establishment
+181,2015-12-13,Trump - polls,Polls - neutral or ambiguous results for Trump
+182,2015-12-14,GOP campaign,Cruz
+183,2015-12-15,Noncampaign,
+184,2015-12-16,GOP campaign,Cruz
+185,2015-12-17,Noncampaign,
+186,2015-12-18,Dem. campaign,Sanders
+187,2015-12-19,Dem. campaign,Sanders
+188,2015-12-20,Dem. campaign,general
+189,2015-12-21,GOP campaign,Graham
+190,2015-12-22,Trump - comments,"""Schlonged"" comments"
+191,2015-12-23,GOP campaign,Cruz
+192,2015-12-24,Noncampaign,
+193,2015-12-25,Noncampaign,
+194,2015-12-26,Noncampaign,
+195,2015-12-27,Trump - vs. GOP,Trump vs. GOP establishment
+196,2015-12-28,Trump - polls,Polls - good results for Trump
+197,2015-12-29,Trump - comments,Trump remarks on Clinton marriage
+198,2015-12-30,Noncampaign,
+199,2015-12-31,Trump - polls,Polls - neutral or ambiguous results for Trump
+200,2016-01-01,Noncampaign,
+201,2016-01-02,Trump - other,Anti-Trump Rose Parade skywriting
+202,2016-01-03,Noncampaign,
+203,2016-01-04,Trump - other,Trump first TV ad
+204,2016-01-05,Noncampaign,
+205,2016-01-06,Noncampaign,
+206,2016-01-07,GOP campaign,Cruz
+207,2016-01-08,GOP campaign,Bush
+208,2016-01-09,GOP campaign,Cruz
+209,2016-01-10,Noncampaign,
+210,2016-01-11,Dem. campaign,Clinton
+211,2016-01-12,Dem. campaign,general
+212,2016-01-13,Trump - polls,Polls - neutral or ambiguous results for Trump
+213,2016-01-14,Noncampaign,
+214,2016-01-15,Trump - other,Post-debate reaction
+215,2016-01-16,Trump - vs. GOP,Trump vs. GOP establishment
+216,2016-01-17,Trump - other,Trump remarks on Iran prisoners
+217,2016-01-18,Dem. campaign,Sanders
+218,2016-01-19,Trump - other,Liberty University speech
+219,2016-01-20,Dem. campaign,Clinton
+220,2016-01-21,Trump - vs. GOP,Trump vs. GOP establishment
+221,2016-01-22,Trump - vs. GOP,Trump vs. GOP establishment
+222,2016-01-23,Dem. campaign,general
+223,2016-01-24,Dem. campaign,general
+224,2016-01-25,Dem. campaign,general
+225,2016-01-26,Trump - vs. GOP,Trump vs. GOP establishment
+226,2016-01-27,Noncampaign,
+227,2016-01-28,Trump - other,Trump skips debate
+228,2016-01-29,Trump - other,Trump skips debate
+229,2016-01-30,Dem. campaign,Clinton
+230,2016-01-31,Trump - polls,Polls - good results for Trump
+231,2016-02-01,Trump - polls,Polls - neutral or ambiguous results for Trump
+232,2016-02-02,Dem. campaign,general
+233,2016-02-03,Dem. campaign,general
+234,2016-02-04,Dem. campaign,general
+235,2016-02-05,Dem. campaign,general
+236,2016-02-06,Trump - comments,"""Go f---"" themselves"" comments"
+237,2016-02-07,GOP campaign,Rubio
+238,2016-02-08,GOP campaign,general
+239,2016-02-09,Dem. campaign,Clinton
+240,2016-02-10,Trump - vs. GOP,Trump vs. GOP establishment
+241,2016-02-11,GOP campaign,Rubio
+242,2016-02-12,Trump - other,Trump vs. Cruz
+243,2016-02-13,GOP campaign,general
+244,2016-02-14,Noncampaign,
+245,2016-02-15,Noncampaign,
+246,2016-02-16,Noncampaign,
+247,2016-02-17,Dem. campaign,general
+248,2016-02-18,Trump - polls,Polls - good results for Trump
+249,2016-02-19,Trump - polls,Polls - bad results for Trump
+250,2016-02-20,Trump - comments,"""Pigs blood"" comments"
+251,2016-02-21,Trump - other,South Carolina results
+252,2016-02-22,Noncampaign,
+253,2016-02-23,GOP campaign,Cruz
+254,2016-02-24,Trump - other,Nevada results
+255,2016-02-25,Trump - vs. GOP,Trump vs. GOP establishment
+256,2016-02-26,Trump - other,Trump vs. Rubio
+257,2016-02-27,Trump - vs. GOP,Trump vs. GOP establishment
+258,2016-02-28,Dem. campaign,Clinton
+259,2016-02-29,Trump - vs. GOP,Trump vs. GOP establishment
+260,2016-03-01,Trump - polls,Polls - bad results for Trump
+261,2016-03-02,GOP campaign,Kasich
+262,2016-03-03,Trump - vs. GOP,Mitt Romney criticism of Trump
+263,2016-03-04,Trump - comments,Hand size comments
+264,2016-03-05,Trump - vs. GOP,Trump vs. GOP establishment
+265,2016-03-06,Trump - polls,Polls - good results for Trump
+266,2016-03-07,Trump - vs. GOP,Trump vs. GOP establishment
+267,2016-03-08,Trump - polls,Polls - neutral or ambiguous results for Trump
+268,2016-03-09,Trump - polls,Polls - good results for Trump
+269,2016-03-10,Trump - other,Trump - vs. GOP
+270,2016-03-11,Trump - other,Post-debate reaction
+271,2016-03-12,Trump - other,Chicago rally protests and cancellation
+272,2016-03-13,Trump - polls,Polls - good results for Trump
+273,2016-03-14,Trump - other,Michelle Fields / Corey Lewandowski incident
+274,2016-03-15,Trump - polls,Polls - good results for Trump
+275,2016-03-16,Trump - other,March 15 primaries results
+276,2016-03-17,Trump - other,Trump vs. Rubio
+277,2016-03-18,Noncampaign,
+278,2016-03-19,Trump - other,Trump and Supreme Court
+279,2016-03-20,Trump - other,Tucson rally / Corey Lewandowski incident
+280,2016-03-21,Trump - vs. GOP,Trump vs. GOP establishment
+281,2016-03-22,Noncampaign,
+282,2016-03-23,GOP campaign,Cruz
+283,2016-03-24,Dem. campaign,general
+284,2016-03-25,Trump - vs. GOP,Possible contested convention
+285,2016-03-26,GOP campaign,Cruz
+286,2016-03-27,Dem. campaign,Sanders

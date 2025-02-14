@@ -51,7 +51,7 @@
       .. rubric:: References
          :name: references
 
-      Smithson, M., and Verkuilen, J. (2006). A Better Lemon Squeezer?
+      Smithson M, Verkuilen J (2006). A Better Lemon Squeezer?
       Maximum-Likelihood Regression with Beta-Distributed Dependent
       Variables. *Psychological Methods*, **11**\ (7), 54–71.
 

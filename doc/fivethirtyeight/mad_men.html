@@ -1,0 +1,83 @@
+<!DOCTYPE html><html><head><title>R: &quot;Mad Men&quot; Is Ending. What's Next For The Cast?</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>mad_men</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>&quot;Mad Men&quot; Is Ending. What's Next For The Cast?</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;&quot;Mad Men&quot; Is Ending. What's Next For The Cast?&quot;
+<a href="https://fivethirtyeight.com/features/mad-men-is-ending-whats-next-for-the-cast/">https://fivethirtyeight.com/features/mad-men-is-ending-whats-next-for-the-cast/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>mad_men
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 248 rows representing performers on TV shows and 15 variables:
+</p>
+
+<dl>
+<dt>performer</dt><dd><p>The name of the actor, according to IMDb. This is not a unique identifier - two performers appeared in more than one program</p>
+</dd>
+<dt>show</dt><dd><p>The television show where this actor appeared in more than half the episodes</p>
+</dd>
+<dt>show_start</dt><dd><p>The year the television show began</p>
+</dd>
+<dt>show_end</dt><dd><p>The year the television show ended, &quot;PRESENT&quot; if the show remains on the air as of May 10.</p>
+</dd>
+<dt>status</dt><dd><p>Why the actor is no longer on the program: &quot;END&quot; if the show has concluded, &quot;LEFT&quot; if the show remains on the air.</p>
+</dd>
+<dt>charend</dt><dd><p>The year the character left the show. Equal to &quot;Show End&quot; if the performer stayed on until the final season.</p>
+</dd>
+<dt>years_since</dt><dd><p>2015 minus CharEnd</p>
+</dd>
+<dt>num_lead</dt><dd><p>The number of leading roles in films the performer has appeared in since and including &quot;CharEnd&quot;, according to OpusData</p>
+</dd>
+<dt>num_support</dt><dd><p>The number of leading roles in films the performer has appeared in since and including &quot;CharEnd&quot;, according to OpusData</p>
+</dd>
+<dt>num_shows</dt><dd><p>The number of seasons of television of which the performer appeared in at least half the episodes since and including &quot;CharEnd&quot;, according to OpusData</p>
+</dd>
+<dt>score</dt><dd><p>#LEAD + #Shows + 0.25*(#SUPPORT)</p>
+</dd>
+<dt>score_div_y</dt><dd><p>&quot;Score&quot; divided by &quot;Years Since&quot;</p>
+</dd>
+<dt>lead_notes</dt><dd><p>The list of films counted in #LEAD</p>
+</dd>
+<dt>support_notes</dt><dd><p>The list of films counted in #SUPPORT</p>
+</dd>
+<dt>show_notes</dt><dd><p>The seasons of shows counted in #Shows</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>IMDB <a href="https://imdb.com">https://imdb.com</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html><html><head><title>R: 2020 Presidential Candidates Media Mentions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>media_mentions_2020</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>2020 Presidential Candidates Media Mentions</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;Beto O'Rourke Ignored Cable News - And It Ignored Him&quot;
+<a href="https://fivethirtyeight.com/features/beto-orourke-ignored-cable-news-and-it-ignored-him/">https://fivethirtyeight.com/features/beto-orourke-ignored-cable-news-and-it-ignored-him/</a>
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>media_mentions_cable
+
+media_mentions_online
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>2 dataframes about 2020 presidential candidate media mentions
+</p>
+<p>An object of class <code>spec_tbl_df</code> (inherits from <code>tbl_df</code>, <code>tbl</code>, <code>data.frame</code>) with 954 rows and 6 columns.
+</p>
+
+
+<h3>media_mentions_cable</h3>
+
+<p>A data frame with 972 rows representing weeks of cable coverage and 7 variables:
+</p>
+
+<dl>
+<dt>date</dt><dd><p>start date for the week of coverage</p>
+</dd>
+<dt>name</dt><dd><p>candidate's name</p>
+</dd>
+<dt>matched_clips</dt><dd><p>number of 15-second clips in that week that mention the specified candidate</p>
+</dd>
+<dt>all_candidate_clips</dt><dd><p>number of 15-second clips in that week that mention any candidates</p>
+</dd>
+<dt>total_clips</dt><dd><p>total number of 15-second clips that week across the three networks</p>
+</dd>
+<dt>pct_of_all_candidate_clips</dt><dd><p>percentage of clips in which that specific candidate is mentioned out of all clips mentioning any candidate for that week (matched_clips / all_candidate_clips)</p>
+</dd>
+<dt>query</dt><dd><p>query used for the GDELT Television API</p>
+</dd>
+</dl>
+
+
+
+<h3>media_mentions_online</h3>
+
+<p>A data frame with 954 rows representing weeks and 6 variables:
+</p>
+
+<dl>
+<dt>date</dt><dd><p>start date for the week of coverage</p>
+</dd>
+<dt>name</dt><dd><p>candidate's name</p>
+</dd>
+<dt>matched_stories</dt><dd><p>number of stories in that week that mention the specified candidate</p>
+</dd>
+<dt>all_candidate_stories</dt><dd><p>number of stories in that week that mention any candidate</p>
+</dd>
+<dt>pct_of_all_candidate_stories</dt><dd><p>percentage of stories in which that specific candidate is mentioned out of all stories mentioning any candidate for that week (matched_stories / all_candidate_stories)</p>
+</dd>
+<dt>query</dt><dd><p>query for Media Cloud</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>The GDELT Television API https://blog.gdeltproject.org/gdelt-2-0-television-api-debuts/, which processes the data from the TV News Archive <a href="https://archive.org/details/tv">https://archive.org/details/tv</a>.
+</p>
+<p>Two collections in the Media Cloud <a href="https://mediacloud.org/">https://mediacloud.org/</a> database U.S. Top Online News <a href="https://sources.mediacloud.org/#/collections/58722749">https://sources.mediacloud.org/#/collections/58722749</a> and U.S. Top Digital Native News <a href="https://sources.mediacloud.org/#/collections/57078150">https://sources.mediacloud.org/#/collections/57078150</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

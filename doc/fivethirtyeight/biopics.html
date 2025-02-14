@@ -1,0 +1,83 @@
+<!DOCTYPE html><html><head><title>R: 'Straight Outta Compton' Is The Rare Biopic Not About White...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>biopics</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>'Straight Outta Compton' Is The Rare Biopic Not About White Dudes</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;'Straight Outta Compton' Is The Rare Biopic Not About White Dudes&quot;
+<a href="https://fivethirtyeight.com/features/straight-outta-compton-is-the-rare-biopic-not-about-white-dudes/">https://fivethirtyeight.com/features/straight-outta-compton-is-the-rare-biopic-not-about-white-dudes/</a>.
+An analysis using this data was contributed by Pradeep Adhokshaja as a package vignette at
+<a href="https://fivethirtyeightdata.github.io/fivethirtyeightdata/articles/biopics.html">https://fivethirtyeightdata.github.io/fivethirtyeightdata/articles/biopics.html</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>biopics
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 761 rows representing movies and 14 variables:
+</p>
+
+<dl>
+<dt>title</dt><dd><p>Title of the film.</p>
+</dd>
+<dt>site</dt><dd><p>Text to construct IMDB url. Ex: https://www.imdb.com/title/tt1711425</p>
+</dd>
+<dt>country</dt><dd><p>Country of origin.</p>
+</dd>
+<dt>year_release</dt><dd><p>Year of release.</p>
+</dd>
+<dt>box_office</dt><dd><p>Gross earnings at U.S. box office.</p>
+</dd>
+<dt>director</dt><dd><p>Director of film.</p>
+</dd>
+<dt>number_of_subjects</dt><dd><p>The number of subjects featured in the film.</p>
+</dd>
+<dt>subject</dt><dd><p>The actual name of the featured subject.</p>
+</dd>
+<dt>type_of_subject</dt><dd><p>The occupation of subject or reason for recognition.</p>
+</dd>
+<dt>race_known</dt><dd><p>Indicates whether the subject's race was discernible based on background of self, parent, or grandparent.</p>
+</dd>
+<dt>subject_race</dt><dd><p>Race of the subject.</p>
+</dd>
+<dt>person_of_color</dt><dd><p>Dummy variable that indicates person of color.</p>
+</dd>
+<dt>subject_sex</dt><dd><p>Sex of subject.</p>
+</dd>
+<dt>lead_actor_actress</dt><dd><p>The actor or actress who played the subject.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>IMDB <a href="https://www.imdb.com/">https://www.imdb.com/</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

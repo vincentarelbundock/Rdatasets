@@ -1,0 +1,211 @@
+<!DOCTYPE html><html><head><title>R: A Statistical Analysis of the Work of Bob Ross</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>bob_ross</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>A Statistical Analysis of the Work of Bob Ross</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;A Statistical Analysis of the Work of Bob Ross&quot;
+<a href="https://fivethirtyeight.com/features/a-statistical-analysis-of-the-work-of-bob-ross/">https://fivethirtyeight.com/features/a-statistical-analysis-of-the-work-of-bob-ross/</a>.
+An analysis using this data was contributed by Jonathan Bouchet as a package vignette at
+<a href="https://fivethirtyeightdata.github.io/fivethirtyeightdata/articles/bob_ross.html">https://fivethirtyeightdata.github.io/fivethirtyeightdata/articles/bob_ross.html</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>bob_ross
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 403 rows representing episodes and 71 variables:
+</p>
+
+<dl>
+<dt>episode</dt><dd><p>Episode code</p>
+</dd>
+<dt>season</dt><dd><p>Season number</p>
+</dd>
+<dt>episode_num</dt><dd><p>Episode number</p>
+</dd>
+<dt>title</dt><dd><p>Title of episode</p>
+</dd>
+<dt>apple_frame</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>aurora_borealis</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>barn</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>beach</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>boat</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>bridge</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>building</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>bushes</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>cabin</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>cactus</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>circle_frame</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>cirrus</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>cliff</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>clouds</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>conifer</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>cumulus</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>deciduous</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>diane_andre</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>dock</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>double_oval_frame</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>farm</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>fence</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>fire</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>florida_frame</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>flowers</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>fog</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>framed</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>grass</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>guest</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>half_circle_frame</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>half_oval_frame</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>hills</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>lake</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>lakes</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>lighthouse</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>mill</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>moon</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>mountain</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>mountains</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>night</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>ocean</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>oval_frame</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>palm_trees</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>path</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>person</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>portrait</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>rectangle_3d_frame</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>rectangular_frame</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>river</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>rocks</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>seashell_frame</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>snow</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>snowy_mountain</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>split_frame</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>steve_ross</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>structure</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>sun</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>tomb_frame</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>tree</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>trees</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>triple_frame</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>waterfall</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>waves</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>windmill</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>window_frame</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>winter</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+<dt>wood_framed</dt><dd><p>Present (1) or not (0)</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>See <a href="https://github.com/fivethirtyeight/data/tree/master/bob-ross">https://github.com/fivethirtyeight/data/tree/master/bob-ross</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'># To convert data frame to tidy data (long) format, run:
+library(dplyr)
+library(tidyr)
+library(stringr)
+bob_ross_tidy &lt;- bob_ross %&gt;%
+  pivot_longer(-c(episode, season, episode_num, title), 
+     names_to = "object", values_to = "present") %&gt;%
+  mutate(present = as.logical(present)) %&gt;%
+  arrange(episode, object)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

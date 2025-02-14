@@ -1,0 +1,83 @@
+<!DOCTYPE html><html><head><title>R: The Best MLB All-Star Teams Ever</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>mlb_as_play_talent</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The Best MLB All-Star Teams Ever</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;The Best MLB All-Star Teams Ever&quot;
+<a href="https://fivethirtyeight.com/features/the-best-mlb-all-star-teams-ever/">https://fivethirtyeight.com/features/the-best-mlb-all-star-teams-ever/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>mlb_as_play_talent
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 3930 rows representing Major League Baseball players in given seasons and 15 variables:
+</p>
+
+<dl>
+<dt>bbref_id</dt><dd><p>Player's ID at Baseball-Reference.com</p>
+</dd>
+<dt>yearid</dt><dd><p>The season in question</p>
+</dd>
+<dt>gamenum</dt><dd><p>Order of All-Star Game for the season (in years w/ multiple ASGs; set to 0 when only 1 per year)</p>
+</dd>
+<dt>gameid</dt><dd><p>Game ID at Baseball-Reference.com</p>
+</dd>
+<dt>lgid</dt><dd><p>League of All-Star team</p>
+</dd>
+<dt>startingpos</dt><dd><p>Position (according to baseball convention; 1=pitcher, 2=catcher, etc.) if starter</p>
+</dd>
+<dt>off600</dt><dd><p>Estimate of offensive talent, in runs above league average per 600 plate appearances</p>
+</dd>
+<dt>def600</dt><dd><p>Estimate of fielding talent, in runs above league average per 600 plate appearances</p>
+</dd>
+<dt>pitch200</dt><dd><p>Estimate of pitching talent, in runs above league average per 200 innings pitched</p>
+</dd>
+<dt>asg_pa</dt><dd><p>Number of plate appearances in the All-Star Game itself</p>
+</dd>
+<dt>asg_ip</dt><dd><p>Number of innings pitched in the All-Star Game itself</p>
+</dd>
+<dt>offper9innasg</dt><dd><p>Expected offensive runs added above average (from talent) based on PA in ASG, scaled to a 9-inning game</p>
+</dd>
+<dt>defper9innasg</dt><dd><p>Expected defensive runs added above average (from talent) based on PA in ASG, scaled to a 9-inning game</p>
+</dd>
+<dt>pitper9innasg</dt><dd><p>Expected pitching runs added above average (from talent) based on IP in ASG, scaled to a 9-inning game</p>
+</dd>
+<dt>totper9innasg</dt><dd><p>Expected runs added above average (from talent) based on PA/IP in ASG, scaled to a 9-inning game</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.baseball-reference.com/">https://www.baseball-reference.com/</a> , <a href="http://chadwick-bureau.com">http://chadwick-bureau.com</a>, Fangraphs
+</p>
+
+</main>
+
+</div>
+</body></html>

@@ -54,10 +54,6 @@
       .. rubric:: References
          :name: references
 
-      Cairo, Alberto. 2016. “Download the Datasaurus: Never trust
-      summary statistics alone; always visualize your data”. *URL:*
-      http://www.thefunctionalart.com/2016/08/download-datasaurus-never-trust-summary.html
-
       Matejka, Justin and George Fitzmaurice. 2017. “Same Stats,
       Different Graphs: Generating Datasets with Varied Appearance and
       Identical Statistics through Simulated Annealing.” *ACM SIGCHI

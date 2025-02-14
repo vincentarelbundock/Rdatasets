@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><title>R: A Roll Call Vote on Extending Temporary Trade Liberalization...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>eu_ua_fta24</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>A Roll Call Vote on Extending Temporary Trade Liberalization Measures
+Applicable to Ukrainian products under the EU/Euratom/Ukraine Association
+Agreement</h2>
+
+<h3>Description</h3>
+
+<p>A data set on an April 2024 roll call vote to extend an emergency free trade
+agreement with Ukraine.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>eu_ua_fta24
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 705 observations on the following 9 variables.
+</p>
+
+<dl>
+<dt><code>member_id</code></dt><dd><p>a numeric identifier for a member of the European Parliament</p>
+</dd>
+<dt><code>first_name</code></dt><dd><p>a first name of the member of the European Parliament</p>
+</dd>
+<dt><code>last_name</code></dt><dd><p>a last name of the member of the European Parliament</p>
+</dd>
+<dt><code>position</code></dt><dd><p>a character vector indicating the member's position on the measure (&quot;For&quot;, &quot;Against&quot;, &quot;Did Not Vote&quot;, or &quot;Abstain&quot;)</p>
+</dd>
+<dt><code>iso2c</code></dt><dd><p>a two-character ISO code for the country the member represents</p>
+</dd>
+<dt><code>country</code></dt><dd><p>an English country name for the country the member represents</p>
+</dd>
+<dt><code>group_code</code></dt><dd><p>an acronym/code for the coalition of the member</p>
+</dd>
+<dt><code>group_label</code></dt><dd><p>a character vector for the full name of the coalition of the member</p>
+</dd>
+<dt><code>group_short_label</code></dt><dd><p>a short label for the coalition of the member</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Information about the exact measures are available from the European
+Union. Search: <code>A9-0077/2024</code>. Data in question are the raw data
+made available by <code>HowTheyVote.eu</code>
+</p>
+
+</main>
+
+</div>
+</body></html>

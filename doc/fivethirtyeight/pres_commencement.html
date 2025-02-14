@@ -1,0 +1,69 @@
+<!DOCTYPE html><html><head><title>R: Sitting Presidents Give Way More Commencement Speeches Than...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>pres_commencement</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Sitting Presidents Give Way More Commencement Speeches Than They Used To</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;Sitting Presidents Give Way More Commencement Speeches Than They Used To&quot;
+<a href="https://fivethirtyeight.com/features/sitting-presidents-give-way-more-commencement-speeches-than-they-used-to/">https://fivethirtyeight.com/features/sitting-presidents-give-way-more-commencement-speeches-than-they-used-to/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>pres_commencement
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 154 rows representing speeches and 8 variables:
+</p>
+
+<dl>
+<dt>pres</dt><dd><p>Number of president (33 is Harry Truman, the 33rd president; 44 is Barack Obama, the 44th president)</p>
+</dd>
+<dt>pres_name</dt><dd><p>Name of president</p>
+</dd>
+<dt>title</dt><dd><p>Description of commencement speech</p>
+</dd>
+<dt>date</dt><dd><p>Date speech was delivered</p>
+</dd>
+<dt>city</dt><dd><p>City where speech was delivered</p>
+</dd>
+<dt>state</dt><dd><p>State where speech was delivered</p>
+</dd>
+<dt>building</dt><dd><p>Name of building in which speech was delivered</p>
+</dd>
+<dt>room</dt><dd><p>Room in which speech was delivered</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>American Presidency Project, Gerhard Peters and John T. Woolley <a href="https://www.presidency.ucsb.edu">https://www.presidency.ucsb.edu</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

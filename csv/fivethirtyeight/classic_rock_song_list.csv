@@ -1,0 +1,2230 @@
+rownames,song,artist,release_year,combined,has_year,playcount,playcount_has_year
+1,Caught Up in You,.38 Special,1982,Caught Up in You by .38 Special,TRUE,82,82
+2,Fantasy Girl,.38 Special,,Fantasy Girl by .38 Special,FALSE,3,0
+3,Hold On Loosely,.38 Special,1981,Hold On Loosely by .38 Special,TRUE,85,85
+4,Rockin' Into the Night,.38 Special,1980,Rockin' Into the Night by .38 Special,TRUE,18,18
+5,Art For Arts Sake,10cc,1975,Art For Arts Sake by 10cc,TRUE,1,1
+6,Kryptonite,3 Doors Down,2000,Kryptonite by 3 Doors Down,TRUE,13,13
+7,Loser,3 Doors Down,2000,Loser by 3 Doors Down,TRUE,1,1
+8,When I'm Gone,3 Doors Down,2002,When I'm Gone by 3 Doors Down,TRUE,6,6
+9,What's Up?,4 Non Blondes,1992,What's Up? by 4 Non Blondes,TRUE,3,3
+10,Take On Me,a-ha,1985,Take On Me by a-ha,TRUE,1,1
+11,"Baby, Please Don't Go",AC/DC,,"Baby, Please Don't Go by AC/DC",FALSE,1,0
+12,Back In Black,AC/DC,1980,Back In Black by AC/DC,TRUE,97,97
+13,Big Gun,AC/DC,1993,Big Gun by AC/DC,TRUE,6,6
+14,CAN'T STOP ROCK'N'ROLL,AC/DC,,CAN'T STOP ROCK'N'ROLL by AC/DC,FALSE,5,0
+15,Dirty Deeds Done Dirt Cheap,AC/DC,1976,Dirty Deeds Done Dirt Cheap by AC/DC,TRUE,85,85
+16,For Those About To Rock,AC/DC,1981,For Those About To Rock by AC/DC,TRUE,46,46
+17,Girls Got Rhythm,AC/DC,,Girls Got Rhythm by AC/DC,FALSE,24,0
+18,Hard As A Rock,AC/DC,1995,Hard As A Rock by AC/DC,TRUE,1,1
+19,Have a Drink On Me,AC/DC,1980,Have a Drink On Me by AC/DC,TRUE,39,39
+20,Hells Bells,AC/DC,1980,Hells Bells by AC/DC,TRUE,74,74
+21,Highway To Hell,AC/DC,1979,Highway To Hell by AC/DC,TRUE,92,92
+22,It's A Long Way To The Top,AC/DC,1975,It's A Long Way To The Top by AC/DC,TRUE,39,39
+23,Jailbreak,AC/DC,1984,Jailbreak by AC/DC,TRUE,1,1
+24,Let There Be Rock,AC/DC,1977,Let There Be Rock by AC/DC,TRUE,3,3
+25,Let's Get It Up,AC/DC,,Let's Get It Up by AC/DC,FALSE,4,0
+26,Live Wire,AC/DC,,Live Wire by AC/DC,FALSE,2,0
+27,Moneytalks,AC/DC,,Moneytalks by AC/DC,FALSE,20,0
+28,Night Prowler,AC/DC,1979,Night Prowler by AC/DC,TRUE,1,1
+29,Rock and Roll Ain't Noise Pollution,AC/DC,1980,Rock and Roll Ain't Noise Pollution by AC/DC,TRUE,21,21
+30,Shoot To Thrill,AC/DC,,Shoot To Thrill by AC/DC,FALSE,45,0
+31,Shot Down In Flames,AC/DC,1979,Shot Down In Flames by AC/DC,TRUE,2,2
+32,Sin City,AC/DC,,Sin City by AC/DC,FALSE,1,0
+33,T.N.T.,AC/DC,1975,T.N.T. by AC/DC,TRUE,66,66
+34,Thunderstruck,AC/DC,1990,Thunderstruck by AC/DC,TRUE,34,34
+35,Touch Too Much,AC/DC,1979,Touch Too Much by AC/DC,TRUE,2,2
+36,What Do You Do For Money Honey,AC/DC,,What Do You Do For Money Honey by AC/DC,FALSE,2,0
+37,Who Made Who,AC/DC,1986,Who Made Who by AC/DC,TRUE,12,12
+38,Whole Lotta Rosie,AC/DC,1977,Whole Lotta Rosie by AC/DC,TRUE,3,3
+39,You Shook Me All Night Long,AC/DC,1980,You Shook Me All Night Long by AC/DC,TRUE,138,138
+40,How Long,Ace,1974,How Long by Ace,TRUE,1,1
+41,Dog On A Leash,Adelitas Way,2014,Dog On A Leash by Adelitas Way,TRUE,4,4
+42,Angel,Aerosmith,1987,Angel by Aerosmith,TRUE,12,12
+43,"Baby, Please Don't Go",Aerosmith,,"Baby, Please Don't Go by Aerosmith",FALSE,1,0
+44,Back in the Saddle,Aerosmith,1976,Back in the Saddle by Aerosmith,TRUE,39,39
+45,Big Ten Inch,Aerosmith,1975,Big Ten Inch by Aerosmith,TRUE,3,3
+46,Come Together,Aerosmith,,Come Together by Aerosmith,FALSE,65,0
+47,Crazy,Aerosmith,1993,Crazy by Aerosmith,TRUE,7,7
+48,Cryin',Aerosmith,1993,Cryin' by Aerosmith,TRUE,15,15
+49,Draw The Line,Aerosmith,1977,Draw The Line by Aerosmith,TRUE,1,1
+50,Dream On,Aerosmith,1973,Dream On by Aerosmith,TRUE,142,142
+51,Dude (Looks Like a Lady),Aerosmith,1987,Dude (Looks Like a Lady) by Aerosmith,TRUE,42,42
+52,Jaded,Aerosmith,2001,Jaded by Aerosmith,TRUE,1,1
+53,Janie's Got A Gun,Aerosmith,1989,Janie's Got A Gun by Aerosmith,TRUE,34,34
+54,Kings and Queens,Aerosmith,,Kings and Queens by Aerosmith,FALSE,1,0
+55,Last Child,Aerosmith,1976,Last Child by Aerosmith,TRUE,4,4
+56,Let the Music Do the Talking,Aerosmith,1985,Let the Music Do the Talking by Aerosmith,TRUE,1,1
+57,Livin' On The Edge,Aerosmith,1993,Livin' On The Edge by Aerosmith,TRUE,27,27
+58,Love In An Elevator,Aerosmith,1989,Love In An Elevator by Aerosmith,TRUE,35,35
+59,Mama Kin,Aerosmith,1973,Mama Kin by Aerosmith,TRUE,5,5
+60,No More No More,Aerosmith,1975,No More No More by Aerosmith,TRUE,2,2
+61,One Way Street,Aerosmith,,One Way Street by Aerosmith,FALSE,1,0
+62,Pink,Aerosmith,1997,Pink by Aerosmith,TRUE,1,1
+63,Rag Doll,Aerosmith,1987,Rag Doll by Aerosmith,TRUE,47,47
+64,Same Old Song and Dance,Aerosmith,1974,Same Old Song and Dance by Aerosmith,TRUE,18,18
+65,Seasons of Wither,Aerosmith,1974,Seasons of Wither by Aerosmith,TRUE,2,2
+66,Sweet Emotion,Aerosmith,1975,Sweet Emotion by Aerosmith,TRUE,141,141
+67,The Other Side,Aerosmith,,The Other Side by Aerosmith,FALSE,11,0
+68,Toys in the Attic,Aerosmith,1975,Toys in the Attic by Aerosmith,TRUE,2,2
+69,Train Kept A-Rollin',Aerosmith,1974,Train Kept A-Rollin' by Aerosmith,TRUE,15,15
+70,Walk This Way,Aerosmith,1975,Walk This Way by Aerosmith,TRUE,106,106
+71,What It Takes,Aerosmith,1989,What It Takes by Aerosmith,TRUE,31,31
+72,You See Me Crying,Aerosmith,,You See Me Crying by Aerosmith,FALSE,1,0
+73,Hand In My Pocket,Alanis Morissette,1995,Hand In My Pocket by Alanis Morissette,TRUE,1,1
+74,You Oughta Know,Alanis Morissette,1995,You Oughta Know by Alanis Morissette,TRUE,6,6
+75,Black Velvet,Alannah Myles,1989,Black Velvet by Alannah Myles,TRUE,1,1
+76,Fantasy,Aldo Nova,,Fantasy by Aldo Nova,FALSE,4,0
+77,BE MY LOVER,Alice Cooper,,BE MY LOVER by Alice Cooper,FALSE,1,0
+78,Billion Dollar Babies,Alice Cooper,1973,Billion Dollar Babies by Alice Cooper,TRUE,2,2
+79,Eighteen,Alice Cooper,1971,Eighteen by Alice Cooper,TRUE,4,4
+80,Elected,Alice Cooper,1973,Elected by Alice Cooper,TRUE,1,1
+81,House Of Fire,Alice Cooper,,House Of Fire by Alice Cooper,FALSE,1,0
+82,I'm Eighteen,Alice Cooper,1971,I'm Eighteen by Alice Cooper,TRUE,24,24
+83,No More Mr. Nice Guy,Alice Cooper,1973,No More Mr. Nice Guy by Alice Cooper,TRUE,39,39
+84,School's Out,Alice Cooper,1972,School's Out by Alice Cooper,TRUE,44,44
+85,Under My Wheels,Alice Cooper,1971,Under My Wheels by Alice Cooper,TRUE,18,18
+86,Welcome To My Nightmare,Alice Cooper,1975,Welcome To My Nightmare by Alice Cooper,TRUE,10,10
+87,Down in a Hole,Alice In Chains,1992,Down in a Hole by Alice In Chains,TRUE,1,1
+88,Man In The Box,Alice In Chains,1990,Man In The Box by Alice In Chains,TRUE,13,13
+89,No Excuses,Alice In Chains,1994,No Excuses by Alice In Chains,TRUE,2,2
+90,Rooster,Alice In Chains,1992,Rooster by Alice In Chains,TRUE,2,2
+91,Them Bones,Alice In Chains,1992,Them Bones by Alice In Chains,TRUE,2,2
+92,Would?,Alice In Chains,1992,Would? by Alice In Chains,TRUE,2,2
+93,Ain't Wastin' Time No More,Allman Brothers Band,1972,Ain't Wastin' Time No More by Allman Brothers Band,TRUE,1,1
+94,Blue Sky,Allman Brothers Band,1972,Blue Sky by Allman Brothers Band,TRUE,1,1
+95,Good Clean Fun,Allman Brothers Band,1990,Good Clean Fun by Allman Brothers Band,TRUE,2,2
+96,In Memory Of Elizabeth Reed,Allman Brothers Band,1970,In Memory Of Elizabeth Reed by Allman Brothers Band,TRUE,1,1
+97,Jessica,Allman Brothers Band,1973,Jessica by Allman Brothers Band,TRUE,12,12
+98,Melissa,Allman Brothers Band,1972,Melissa by Allman Brothers Band,TRUE,6,6
+99,Midnight Rider,Allman Brothers Band,1970,Midnight Rider by Allman Brothers Band,TRUE,21,21
+100,No One to Run With,Allman Brothers Band,1994,No One to Run With by Allman Brothers Band,TRUE,3,3
+101,One Way Out,Allman Brothers Band,,One Way Out by Allman Brothers Band,FALSE,3,0
+102,Ramblin' Man,Allman Brothers Band,1973,Ramblin' Man by Allman Brothers Band,TRUE,34,34
+103,Southbound,Allman Brothers Band,,Southbound by Allman Brothers Band,FALSE,2,0
+104,Statesboro Blues,Allman Brothers Band,1971,Statesboro Blues by Allman Brothers Band,TRUE,4,4
+105,Whippin' Post,Allman Brothers Band,,Whippin' Post by Allman Brothers Band,FALSE,6,0
+106,A Horse With No Name,America,1972,A Horse With No Name by America,TRUE,26,26
+107,Sister Golden Hair,America,1975,Sister Golden Hair by America,TRUE,19,19
+108,Ventura Highway,America,1972,Ventura Highway by America,TRUE,1,1
+109,Don't Bring Me Down,Animals II,1966,Don't Bring Me Down by Animals II,TRUE,1,1
+110,Don't Let Me Be Misunderstood,Animals II,1965,Don't Let Me Be Misunderstood by Animals II,TRUE,1,1
+111,Immigrant Song,Ann Wilson,,Immigrant Song by Ann Wilson,FALSE,2,0
+112,Roller,April Wine,,Roller by April Wine,FALSE,1,0
+113,Hold Your Head Up,Argent,1972,Hold Your Head Up by Argent,TRUE,11,11
+114,Coming into Los Angeles,Arlo Guthrie,,Coming into Los Angeles by Arlo Guthrie,FALSE,1,0
+115,Wayside,Artful Dodger,,Wayside by Artful Dodger,FALSE,1,0
+116,Heat of the Moment,Asia,1982,Heat of the Moment by Asia,TRUE,37,37
+117,Only Time Will Tell,Asia,1982,Only Time Will Tell by Asia,TRUE,3,3
+118,So Into You,Atlanta Rhythm Section,1976,So Into You by Atlanta Rhythm Section,TRUE,1,1
+119,Spooky,Atlanta Rhythm Section,,Spooky by Atlanta Rhythm Section,FALSE,1,0
+120,Like a Stone,Audioslave,2002,Like a Stone by Audioslave,TRUE,1,1
+121,Blondes In Black Cars,Autograph,,Blondes In Black Cars by Autograph,FALSE,1,0
+122,Turn Up the Radio,Autograph,1984,Turn Up the Radio by Autograph,TRUE,21,21
+123,Rock And Roll Party In The Streets,Axe,,Rock And Roll Party In The Streets by Axe,FALSE,1,0
+124,Let It Ride,Bachman-Turner Overdrive,1973,Let It Ride by Bachman-Turner Overdrive,TRUE,13,13
+125,Roll On Down The Highway,Bachman-Turner Overdrive,,Roll On Down The Highway by Bachman-Turner Overdrive,FALSE,5,0
+126,Takin' Care Of Business,Bachman-Turner Overdrive,1973,Takin' Care Of Business by Bachman-Turner Overdrive,TRUE,39,39
+127,You Ain't Seen Nothin' Yet,Bachman-Turner Overdrive,1974,You Ain't Seen Nothin' Yet by Bachman-Turner Overdrive,TRUE,69,69
+128,Bad Company,Bad Company,1974,Bad Company by Bad Company,TRUE,96,96
+129,Burnin' Sky,Bad Company,1977,Burnin' Sky by Bad Company,TRUE,41,41
+130,Can't Get Enough,Bad Company,1974,Can't Get Enough by Bad Company,TRUE,41,41
+131,Feel Like Makin' Love,Bad Company,,Feel Like Makin' Love by Bad Company,FALSE,113,0
+132,Gone Gone Gone,Bad Company,,Gone Gone Gone by Bad Company,FALSE,25,0
+133,Good Lovin' Gone Bad,Bad Company,,Good Lovin' Gone Bad by Bad Company,FALSE,10,0
+134,Movin' On,Bad Company,,Movin' On by Bad Company,FALSE,17,0
+135,Ready For Love,Bad Company,,Ready For Love by Bad Company,FALSE,45,0
+136,Rock 'n' Roll Fantasy,Bad Company,,Rock 'n' Roll Fantasy by Bad Company,FALSE,91,0
+137,Rock Steady,Bad Company,,Rock Steady by Bad Company,FALSE,3,0
+138,Run With The Pack,Bad Company,,Run With The Pack by Bad Company,FALSE,11,0
+139,Seagull,Bad Company,1974,Seagull by Bad Company,TRUE,1,1
+140,Shooting Star,Bad Company,1975,Shooting Star by Bad Company,TRUE,62,62
+141,"Silver, Blue And Gold",Bad Company,,"Silver, Blue And Gold by Bad Company",FALSE,11,0
+142,When I See You Smile,Bad English,1989,When I See You Smile by Bad English,TRUE,1,1
+143,No Matter What,Badfinger,1970,No Matter What by Badfinger,TRUE,2,2
+144,Walks Like A Woman,Baton Rouge,,Walks Like A Woman by Baton Rouge,FALSE,1,0
+145,(You Gotta) Fight for Your Right (To Party),Beastie Boys,1986,(You Gotta) Fight for Your Right (To Party) by Beastie Boys,TRUE,4,4
+146,No Sleep Till Brooklyn,Beastie Boys,1986,No Sleep Till Brooklyn by Beastie Boys,TRUE,3,3
+147,Loser,Beck,1994,Loser by Beck,TRUE,1,1
+148,In a Big Country,Big Country,1983,In a Big Country by Big Country,TRUE,2,2
+149,Rock Around the Clock,Bill Haley,1955,Rock Around the Clock by Bill Haley,TRUE,1,1
+150,AIN'T NO SUNSHINE,Bill Withers,1971,AIN'T NO SUNSHINE by Bill Withers,TRUE,1,1
+151,Cradle of Love,Billy Idol,1990,Cradle of Love by Billy Idol,TRUE,6,6
+152,Dancing With Myself,Billy Idol,1980,Dancing With Myself by Billy Idol,TRUE,20,20
+153,Eyes Without a Face,Billy Idol,1984,Eyes Without a Face by Billy Idol,TRUE,2,2
+154,Mony Mony,Billy Idol,,Mony Mony by Billy Idol,FALSE,21,0
+155,Rebel Yell,Billy Idol,1984,Rebel Yell by Billy Idol,TRUE,89,89
+156,White Wedding,Billy Idol,1982,White Wedding by Billy Idol,TRUE,84,84
+157,Allentown,Billy Joel,1982,Allentown by Billy Joel,TRUE,1,1
+158,Big Shot,Billy Joel,1978,Big Shot by Billy Joel,TRUE,27,27
+159,Captain Jack,Billy Joel,1973,Captain Jack by Billy Joel,TRUE,7,7
+160,Don't Ask Me Why,Billy Joel,,Don't Ask Me Why by Billy Joel,FALSE,2,0
+161,Goodnight Saigon,Billy Joel,1983,Goodnight Saigon by Billy Joel,TRUE,1,1
+162,It's Still Rock And Roll To Me,Billy Joel,1980,It's Still Rock And Roll To Me by Billy Joel,TRUE,22,22
+163,Miami 2017 {seen The Lights Go Out On Broadway} (live 1,Billy Joel,1976,Miami 2017 {seen The Lights Go Out On Broadway} (live 1 by Billy Joel,TRUE,5,5
+164,Movin' Out (Anthony's Song),Billy Joel,1977,Movin' Out (Anthony's Song) by Billy Joel,TRUE,26,26
+165,My Life,Billy Joel,1978,My Life by Billy Joel,TRUE,11,11
+166,New York State Of Mind,Billy Joel,1976,New York State Of Mind by Billy Joel,TRUE,2,2
+167,Only The Good Die Young,Billy Joel,1977,Only The Good Die Young by Billy Joel,TRUE,21,21
+168,Piano Man,Billy Joel,1973,Piano Man by Billy Joel,TRUE,37,37
+169,Prelude/angry Young Man,Billy Joel,,Prelude/angry Young Man by Billy Joel,FALSE,1,0
+170,Scenes From An Italian Restaurant,Billy Joel,1977,Scenes From An Italian Restaurant by Billy Joel,TRUE,3,3
+171,SHE'S ALWAYS A WOMAN,Billy Joel,1977,SHE'S ALWAYS A WOMAN by Billy Joel,TRUE,1,1
+172,Sometimes A Fantasy,Billy Joel,1980,Sometimes A Fantasy by Billy Joel,TRUE,3,3
+173,The Ballad Of Billy The Kid,Billy Joel,1973,The Ballad Of Billy The Kid by Billy Joel,TRUE,2,2
+174,The Stranger,Billy Joel,1977,The Stranger by Billy Joel,TRUE,5,5
+175,You May Be Right,Billy Joel,1980,You May Be Right by Billy Joel,TRUE,30,30
+176,Baby Come Back,Billy Rankin,,Baby Come Back by Billy Rankin,FALSE,1,0
+177,Everybody Wants You,Billy Squier,,Everybody Wants You by Billy Squier,FALSE,59,0
+178,In the Dark,Billy Squier,,In the Dark by Billy Squier,FALSE,24,0
+179,Lonely Is the Night,Billy Squier,1981,Lonely Is the Night by Billy Squier,TRUE,80,80
+180,My Kinda Lover,Billy Squier,,My Kinda Lover by Billy Squier,FALSE,22,0
+181,Rock Me Tonight,Billy Squier,1984,Rock Me Tonight by Billy Squier,TRUE,1,1
+182,She's a Runner,Billy Squier,,She's a Runner by Billy Squier,FALSE,1,0
+183,The Stroke,Billy Squier,1981,The Stroke by Billy Squier,TRUE,83,83
+184,Children Of The Sun,Billy Thorpe,,Children Of The Sun by Billy Thorpe,FALSE,2,0
+185,Fairies Wear Boots,Black Sabbath,1970,Fairies Wear Boots by Black Sabbath,TRUE,1,1
+186,Heaven and Hell,Black Sabbath,1980,Heaven and Hell by Black Sabbath,TRUE,1,1
+187,Iron Man,Black Sabbath,1972,Iron Man by Black Sabbath,TRUE,40,40
+188,N.i.b.,Black Sabbath,1970,N.i.b. by Black Sabbath,TRUE,8,8
+189,Neon Knights,Black Sabbath,1980,Neon Knights by Black Sabbath,TRUE,1,1
+190,Paranoid,Black Sabbath,1970,Paranoid by Black Sabbath,TRUE,105,105
+191,Sweet Leaf,Black Sabbath,1971,Sweet Leaf by Black Sabbath,TRUE,34,34
+192,The Wizard,Black Sabbath,1970,The Wizard by Black Sabbath,TRUE,1,1
+193,War Pigs,Black Sabbath,1970,War Pigs by Black Sabbath,TRUE,38,38
+194,Highway Song,Blackfoot,,Highway Song by Blackfoot,FALSE,17,0
+195,"Train, Train",Blackfoot,1979,"Train, Train by Blackfoot",TRUE,25,25
+196,Can't Find My Way Home,Blind Faith,1969,Can't Find My Way Home by Blind Faith,TRUE,4,4
+197,Presence of the Lord,Blind Faith,1969,Presence of the Lord by Blind Faith,TRUE,1,1
+198,No Rain,Blind Melon,1992,No Rain by Blind Melon,TRUE,2,2
+199,Presence of the Lord,Blind Melon,,Presence of the Lord by Blind Melon,FALSE,2,0
+200,All the Small Things,Blink-182,1999,All the Small Things by Blink-182,TRUE,1,1
+201,Call Me,Blondie,1980,Call Me by Blondie,TRUE,26,26
+202,Heart of Glass,Blondie,1978,Heart of Glass by Blondie,TRUE,11,11
+203,One Way Or Another,Blondie,1978,One Way Or Another by Blondie,TRUE,21,21
+204,(Don't Fear) The Reaper,Blue Oyster Cult,1976,(Don't Fear) The Reaper by Blue Oyster Cult,TRUE,99,99
+205,Bucks Boogie,Blue Oyster Cult,,Bucks Boogie by Blue Oyster Cult,FALSE,1,0
+206,Burnin' for You,Blue Oyster Cult,1981,Burnin' for You by Blue Oyster Cult,TRUE,107,107
+207,Godzilla,Blue Oyster Cult,1977,Godzilla by Blue Oyster Cult,TRUE,9,9
+208,I Love the Night,Blue Oyster Cult,1977,I Love the Night by Blue Oyster Cult,TRUE,2,2
+209,Summertime Blues,Blue Oyster Cult,,Summertime Blues by Blue Oyster Cult,FALSE,1,0
+210,Song 2,Blur,1997,Song 2 by Blur,TRUE,3,3
+211,Just Like A Woman,Bob Dylan,1966,Just Like A Woman by Bob Dylan,TRUE,1,1
+212,Knockin' On Heaven's Door,Bob Dylan,1973,Knockin' On Heaven's Door by Bob Dylan,TRUE,22,22
+213,Like a Rolling Stone,Bob Dylan,1965,Like a Rolling Stone by Bob Dylan,TRUE,3,3
+214,Positively 4th Street,Bob Dylan,1965,Positively 4th Street by Bob Dylan,TRUE,3,3
+215,Subterranean Homesick Blues,Bob Dylan,1965,Subterranean Homesick Blues by Bob Dylan,TRUE,1,1
+216,Tangled Up In Blue,Bob Dylan,1975,Tangled Up In Blue by Bob Dylan,TRUE,5,5
+217,Exodus,Bob Marley,,Exodus by Bob Marley,FALSE,1,0
+218,Jamming,Bob Marley,,Jamming by Bob Marley,FALSE,5,0
+219,"No Woman, No Cry",Bob Marley,1975,"No Woman, No Cry by Bob Marley",TRUE,1,1
+220,One Love,Bob Marley,1977,One Love by Bob Marley,TRUE,2,2
+221,Stir It Up,Bob Marley,,Stir It Up by Bob Marley,FALSE,2,0
+222,Three Little Birds,Bob Marley,,Three Little Birds by Bob Marley,FALSE,1,0
+223,Against The Wind,Bob Seger,1980,Against The Wind by Bob Seger,TRUE,39,39
+224,Betty Lou's Gettin' Out Tonigh,Bob Seger,,Betty Lou's Gettin' Out Tonigh by Bob Seger,FALSE,1,0
+225,Come to Poppa,Bob Seger,,Come to Poppa by Bob Seger,FALSE,4,0
+226,Feel Like a Number,Bob Seger,,Feel Like a Number by Bob Seger,FALSE,6,0
+227,Fire Down Below,Bob Seger,1977,Fire Down Below by Bob Seger,TRUE,1,1
+228,Get Out of Denver,Bob Seger,,Get Out of Denver by Bob Seger,FALSE,1,0
+229,Her Strut,Bob Seger,1980,Her Strut by Bob Seger,TRUE,29,29
+230,Hollywood Nights,Bob Seger,1978,Hollywood Nights by Bob Seger,TRUE,43,43
+231,Horizontal Bop,Bob Seger,,Horizontal Bop by Bob Seger,FALSE,2,0
+232,Katmandu,Bob Seger,1975,Katmandu by Bob Seger,TRUE,7,7
+233,Mainstreet,Bob Seger,1977,Mainstreet by Bob Seger,TRUE,7,7
+234,Night Moves,Bob Seger,1976,Night Moves by Bob Seger,TRUE,47,47
+235,Old Time Rock & Roll,Bob Seger,1978,Old Time Rock & Roll by Bob Seger,TRUE,42,42
+236,Ramblin' Gamblin' Man,Bob Seger,1968,Ramblin' Gamblin' Man by Bob Seger,TRUE,12,12
+237,Rock And Roll Never Forgets,Bob Seger,1977,Rock And Roll Never Forgets by Bob Seger,TRUE,24,24
+238,Roll Me Away,Bob Seger,,Roll Me Away by Bob Seger,FALSE,5,0
+239,Still the Same,Bob Seger,1978,Still the Same by Bob Seger,TRUE,15,15
+240,Sunspot Baby,Bob Seger,,Sunspot Baby by Bob Seger,FALSE,5,0
+241,The Fire Down Below,Bob Seger,,The Fire Down Below by Bob Seger,FALSE,18,0
+242,Travelin' Man,Bob Seger,,Travelin' Man by Bob Seger,FALSE,4,0
+243,Turn On Your Love Light,Bob Seger,,Turn On Your Love Light by Bob Seger,FALSE,1,0
+244,Turn The Page,Bob Seger,1973,Turn The Page by Bob Seger,TRUE,91,91
+245,We've Got Tonite,Bob Seger,1978,We've Got Tonite by Bob Seger,TRUE,1,1
+246,You'll Accompany Me,Bob Seger,,You'll Accompany Me by Bob Seger,FALSE,1,0
+247,Hypnotized,Bob Welch,,Hypnotized by Bob Welch,FALSE,2,0
+248,Bad Medicine,Bon Jovi,1988,Bad Medicine by Bon Jovi,TRUE,7,7
+249,Blaze of Glory,Bon Jovi,1990,Blaze of Glory by Bon Jovi,TRUE,8,8
+250,Born To Be My Baby,Bon Jovi,1989,Born To Be My Baby by Bon Jovi,TRUE,1,1
+251,Lay Your Hands On Me,Bon Jovi,1988,Lay Your Hands On Me by Bon Jovi,TRUE,2,2
+252,Livin' On A Prayer,Bon Jovi,1986,Livin' On A Prayer by Bon Jovi,TRUE,74,74
+253,Raise Your Hands,Bon Jovi,,Raise Your Hands by Bon Jovi,FALSE,1,0
+254,Runaway,Bon Jovi,1984,Runaway by Bon Jovi,TRUE,41,41
+255,She Don't Know Me,Bon Jovi,,She Don't Know Me by Bon Jovi,FALSE,2,0
+256,Wanted Dead or Alive,Bon Jovi,1986,Wanted Dead or Alive by Bon Jovi,TRUE,87,87
+257,You Give Love A Bad Name,Bon Jovi,1986,You Give Love A Bad Name by Bon Jovi,TRUE,63,63
+258,Wait For You,Bonham,,Wait For You by Bonham,FALSE,1,0
+259,Green Onions,Booker T. and the MG's,1962,Green Onions by Booker T. and the MG's,TRUE,4,4
+260,A Man I'll Never Be,Boston,,A Man I'll Never Be by Boston,FALSE,1,0
+261,Amanda,Boston,1986,Amanda by Boston,TRUE,4,4
+262,Cool The Engines,Boston,,Cool The Engines by Boston,FALSE,4,0
+263,Don't Look Back,Boston,1978,Don't Look Back by Boston,TRUE,86,86
+264,Feelin' Satisfied,Boston,,Feelin' Satisfied by Boston,FALSE,44,0
+265,Foreplay (Long Time),Boston,1976,Foreplay (Long Time) by Boston,TRUE,94,94
+266,Hitch A Ride,Boston,1976,Hitch A Ride by Boston,TRUE,11,11
+267,Let Me Take You Home Tonight,Boston,1976,Let Me Take You Home Tonight by Boston,TRUE,22,22
+268,More Than a Feeling,Boston,1976,More Than a Feeling by Boston,TRUE,134,134
+269,Party,Boston,,Party by Boston,FALSE,7,0
+270,Peace of Mind,Boston,1976,Peace of Mind by Boston,TRUE,132,132
+271,Rock & Roll Band,Boston,1976,Rock & Roll Band by Boston,TRUE,59,59
+272,Smokin',Boston,1976,Smokin' by Boston,TRUE,33,33
+273,Something About You,Boston,,Something About You by Boston,FALSE,26,0
+274,The Journey/It's Easy,Boston,,The Journey/It's Easy by Boston,FALSE,1,0
+275,Used To Bad News,Boston,,Used To Bad News by Boston,FALSE,1,0
+276,We're Ready,Boston,,We're Ready by Boston,FALSE,1,0
+277,Lido Shuffle,Boz Scaggs,1976,Lido Shuffle by Boz Scaggs,TRUE,11,11
+278,Lowdown,Boz Scaggs,1976,Lowdown by Boz Scaggs,TRUE,1,1
+279,Tarkio Road,Brewer & Shipley,,Tarkio Road by Brewer & Shipley,FALSE,1,0
+280,The Way It Is,Bruce Hornsby & The Range,1986,The Way It Is by Bruce Hornsby & The Range,TRUE,7,7
+281,Atlantic City,Bruce Springsteen,1982,Atlantic City by Bruce Springsteen,TRUE,1,1
+282,Backstreets,Bruce Springsteen,1975,Backstreets by Bruce Springsteen,TRUE,1,1
+283,Badlands,Bruce Springsteen,1978,Badlands by Bruce Springsteen,TRUE,2,2
+284,Blinded By the Light,Bruce Springsteen,1973,Blinded By the Light by Bruce Springsteen,TRUE,1,1
+285,Born In the U.S.A.,Bruce Springsteen,1984,Born In the U.S.A. by Bruce Springsteen,TRUE,14,14
+286,Born To Run,Bruce Springsteen,1975,Born To Run by Bruce Springsteen,TRUE,31,31
+287,Cover Me,Bruce Springsteen,1984,Cover Me by Bruce Springsteen,TRUE,1,1
+288,Dancing In the Dark,Bruce Springsteen,1984,Dancing In the Dark by Bruce Springsteen,TRUE,10,10
+289,Glory Days,Bruce Springsteen,1984,Glory Days by Bruce Springsteen,TRUE,21,21
+290,Growin' Up,Bruce Springsteen,1973,Growin' Up by Bruce Springsteen,TRUE,1,1
+291,Hungry Heart,Bruce Springsteen,1980,Hungry Heart by Bruce Springsteen,TRUE,7,7
+292,I'm On Fire,Bruce Springsteen,1984,I'm On Fire by Bruce Springsteen,TRUE,14,14
+293,It's Hard to Be a Saint in the City,Bruce Springsteen,1973,It's Hard to Be a Saint in the City by Bruce Springsteen,TRUE,1,1
+294,Jersey Girl,Bruce Springsteen,,Jersey Girl by Bruce Springsteen,FALSE,1,0
+295,Jungleland,Bruce Springsteen,1975,Jungleland by Bruce Springsteen,TRUE,2,2
+296,Pink Cadillac,Bruce Springsteen,1984,Pink Cadillac by Bruce Springsteen,TRUE,9,9
+297,Prove It All Night,Bruce Springsteen,1978,Prove It All Night by Bruce Springsteen,TRUE,2,2
+298,Racing in the Streets,Bruce Springsteen,1978,Racing in the Streets by Bruce Springsteen,TRUE,1,1
+299,Rosalita (Come Out Tonight),Bruce Springsteen,1973,Rosalita (Come Out Tonight) by Bruce Springsteen,TRUE,5,5
+300,She's The One,Bruce Springsteen,1975,She's The One by Bruce Springsteen,TRUE,1,1
+301,Spirit In The Night,Bruce Springsteen,1973,Spirit In The Night by Bruce Springsteen,TRUE,5,5
+302,Tenth Avenue Freeze-Out,Bruce Springsteen,1975,Tenth Avenue Freeze-Out by Bruce Springsteen,TRUE,4,4
+303,Thunder Road,Bruce Springsteen,1975,Thunder Road by Bruce Springsteen,TRUE,7,7
+304,Cuts Like a Knife,Bryan Adams,1983,Cuts Like a Knife by Bryan Adams,TRUE,17,17
+305,Heaven,Bryan Adams,1984,Heaven by Bryan Adams,TRUE,4,4
+306,Run to You,Bryan Adams,1984,Run to You by Bryan Adams,TRUE,42,42
+307,Somebody,Bryan Adams,1984,Somebody by Bryan Adams,TRUE,1,1
+308,Summer Of '69,Bryan Adams,1984,Summer Of '69 by Bryan Adams,TRUE,52,52
+309,Sorry,Buckcherry,2007,Sorry by Buckcherry,TRUE,1,1
+310,For What It's Worth,Buffalo Springfield,1966,For What It's Worth by Buffalo Springfield,TRUE,40,40
+311,Mr. Soul,Buffalo Springfield,1967,Mr. Soul by Buffalo Springfield,TRUE,1,1
+312,Rock & Roll Woman,Buffalo Springfield,,Rock & Roll Woman by Buffalo Springfield,FALSE,21,0
+313,Comedown,Bush,1994,Comedown by Bush,TRUE,5,5
+314,Machinehead,Bush,1994,Machinehead by Bush,TRUE,3,3
+315,Far Behind,Candlebox,1993,Far Behind by Candlebox,TRUE,3,3
+316,Goin' up the Country,Canned Heat,1968,Goin' up the Country by Canned Heat,TRUE,2,2
+317,On the Road Again,Canned Heat,1968,On the Road Again by Canned Heat,TRUE,1,1
+318,IT'S TOO LATE,Carole King,1971,IT'S TOO LATE by Carole King,TRUE,1,1
+319,Oh Very Young,Cat Stevens,,Oh Very Young by Cat Stevens,FALSE,1,0
+320,WILD WORLD,Cat Stevens,1971,WILD WORLD by Cat Stevens,TRUE,2,2
+321,In America,Charlie Daniels Band,1980,In America by Charlie Daniels Band,TRUE,1,1
+322,Long Haired Country Boy,Charlie Daniels Band,1975,Long Haired Country Boy by Charlie Daniels Band,TRUE,5,5
+323,The Devil Went Down To Georgia,Charlie Daniels Band,1979,The Devil Went Down To Georgia by Charlie Daniels Band,TRUE,25,25
+324,The Legend Of Wooley Swamp,Charlie Daniels Band,,The Legend Of Wooley Swamp by Charlie Daniels Band,FALSE,1,0
+325,The South's Gonna Do It Again,Charlie Daniels Band,1975,The South's Gonna Do It Again by Charlie Daniels Band,TRUE,1,1
+326,Uneasy Rider,Charlie Daniels Band,1973,Uneasy Rider by Charlie Daniels Band,TRUE,2,2
+327,Ain't That a Shame,Cheap Trick,,Ain't That a Shame by Cheap Trick,FALSE,8,0
+328,Dream Police,Cheap Trick,,Dream Police by Cheap Trick,FALSE,5,0
+329,I Want You to Want Me,Cheap Trick,1977,I Want You to Want Me by Cheap Trick,TRUE,110,110
+330,She's Tight,Cheap Trick,,She's Tight by Cheap Trick,FALSE,1,0
+331,Surrender,Cheap Trick,1978,Surrender by Cheap Trick,TRUE,57,57
+332,Take Out The Gunman,Chevelle,2014,Take Out The Gunman by Chevelle,TRUE,4,4
+333,25 Or 6 To 4,Chicago,1970,25 Or 6 To 4 by Chicago,TRUE,14,14
+334,Beginnings,Chicago,,Beginnings by Chicago,FALSE,1,0
+335,Feeling Stronger Every,Chicago,1973,Feeling Stronger Every by Chicago,TRUE,2,2
+336,I'm a Man,Chicago,,I'm a Man by Chicago,FALSE,1,0
+337,JUST YOU AND ME,Chicago,,JUST YOU AND ME by Chicago,FALSE,1,0
+338,Make Me Smile,Chicago,1970,Make Me Smile by Chicago,TRUE,1,1
+339,Questions 67 and 68,Chicago,1969,Questions 67 and 68 by Chicago,TRUE,1,1
+340,Saturday In the Park,Chicago,1972,Saturday In the Park by Chicago,TRUE,2,2
+341,South California Purples,Chicago,,South California Purples by Chicago,FALSE,1,0
+342,JOHNNY B. GOODE,Chuck Berry,1958,JOHNNY B. GOODE by Chuck Berry,TRUE,2,2
+343,Coming Home,Cinderella,1988,Coming Home by Cinderella,TRUE,1,1
+344,Don't Know What You Got,Cinderella,1988,Don't Know What You Got by Cinderella,TRUE,3,3
+345,Gypsy Road,Cinderella,1988,Gypsy Road by Cinderella,TRUE,1,1
+346,Nobody's Fool,Cinderella,1986,Nobody's Fool by Cinderella,TRUE,9,9
+347,Somebody Save Me,Cinderella,1986,Somebody Save Me by Cinderella,TRUE,1,1
+348,Better Off Without You,Clarks,,Better Off Without You by Clarks,FALSE,2,0
+349,Born Too Late,Clarks,,Born Too Late by Clarks,FALSE,2,0
+350,Cigarette,Clarks,,Cigarette by Clarks,FALSE,4,0
+351,Hey You,Clarks,,Hey You by Clarks,FALSE,1,0
+352,Maybe,Clarks,,Maybe by Clarks,FALSE,2,0
+353,Penny On The Floor,Clarks,,Penny On The Floor by Clarks,FALSE,1,0
+354,The River,Clarks,,The River by Clarks,FALSE,5,0
+355,December,Collective Soul,,December by Collective Soul,FALSE,8,0
+356,Shine,Collective Soul,1993,Shine by Collective Soul,TRUE,20,20
+357,The World I Know,Collective Soul,1995,The World I Know by Collective Soul,TRUE,1,1
+358,Hot Rod Lincoln,Commander Cody,1971,Hot Rod Lincoln by Commander Cody,TRUE,2,2
+359,Monkey Bars,Coney Hatch,,Monkey Bars by Coney Hatch,FALSE,1,0
+360,Mr. Jones,Counting Crows,1993,Mr. Jones by Counting Crows,TRUE,2,2
+361,Low,Cracker,1993,Low by Cracker,TRUE,2,2
+362,Badge,Cream,1969,Badge by Cream,TRUE,13,13
+363,Born Under A Bad Sign,Cream,,Born Under A Bad Sign by Cream,FALSE,9,0
+364,Crossroads,Cream,1968,Crossroads by Cream,TRUE,22,22
+365,I'm So Glad,Cream,1966,I'm So Glad by Cream,TRUE,1,1
+366,Sunshine of Your Love,Cream,1967,Sunshine of Your Love by Cream,TRUE,11,11
+367,Tales Of Brave Ulysses,Cream,1967,Tales Of Brave Ulysses by Cream,TRUE,1,1
+368,White Room,Cream,1968,White Room by Cream,TRUE,68,68
+369,Higher,Creed,1999,Higher by Creed,TRUE,4,4
+370,My Sacrifice,Creed,,My Sacrifice by Creed,FALSE,2,0
+371,With Arms Wide Open,Creed,1999,With Arms Wide Open by Creed,TRUE,1,1
+372,Bad Moon Rising,Creedence Clearwater Revival,1969,Bad Moon Rising by Creedence Clearwater Revival,TRUE,32,32
+373,Born On the Bayou,Creedence Clearwater Revival,1969,Born On the Bayou by Creedence Clearwater Revival,TRUE,25,25
+374,Commotion,Creedence Clearwater Revival,,Commotion by Creedence Clearwater Revival,FALSE,1,0
+375,Down On the Corner,Creedence Clearwater Revival,1969,Down On the Corner by Creedence Clearwater Revival,TRUE,30,30
+376,Fortunate Son,Creedence Clearwater Revival,1970,Fortunate Son by Creedence Clearwater Revival,TRUE,33,33
+377,Green River,Creedence Clearwater Revival,1969,Green River by Creedence Clearwater Revival,TRUE,3,3
+378,Have You Ever Seen the Rain?,Creedence Clearwater Revival,1971,Have You Ever Seen the Rain? by Creedence Clearwater Revival,TRUE,57,57
+379,I Heard It Through the Grapevine,Creedence Clearwater Revival,,I Heard It Through the Grapevine by Creedence Clearwater Revival,FALSE,8,0
+380,Lodi,Creedence Clearwater Revival,1969,Lodi by Creedence Clearwater Revival,TRUE,5,5
+381,Lookin' Out My Back Door,Creedence Clearwater Revival,1970,Lookin' Out My Back Door by Creedence Clearwater Revival,TRUE,20,20
+382,Proud Mary,Creedence Clearwater Revival,1969,Proud Mary by Creedence Clearwater Revival,TRUE,48,48
+383,Run Through the Jungle,Creedence Clearwater Revival,1970,Run Through the Jungle by Creedence Clearwater Revival,TRUE,14,14
+384,Suzie Q,Creedence Clearwater Revival,1968,Suzie Q by Creedence Clearwater Revival,TRUE,8,8
+385,Sweet Hitch Hiker,Creedence Clearwater Revival,1971,Sweet Hitch Hiker by Creedence Clearwater Revival,TRUE,1,1
+386,The Midnight Special,Creedence Clearwater Revival,,The Midnight Special by Creedence Clearwater Revival,FALSE,1,0
+387,Travelin' Band,Creedence Clearwater Revival,1970,Travelin' Band by Creedence Clearwater Revival,TRUE,12,12
+388,Up Around the Bend,Creedence Clearwater Revival,1970,Up Around the Bend by Creedence Clearwater Revival,TRUE,10,10
+389,Who'll Stop the Rain,Creedence Clearwater Revival,1970,Who'll Stop the Rain by Creedence Clearwater Revival,TRUE,24,24
+390,Fire Woman,"Crosby, Stills & Nash",,"Fire Woman by Crosby, Stills & Nash",FALSE,1,0
+391,Helplessly Hoping,"Crosby, Stills & Nash",1969,"Helplessly Hoping by Crosby, Stills & Nash",TRUE,1,1
+392,Long Time Gone,"Crosby, Stills & Nash",1969,"Long Time Gone by Crosby, Stills & Nash",TRUE,1,1
+393,Southern Cross,"Crosby, Stills & Nash",1982,"Southern Cross by Crosby, Stills & Nash",TRUE,9,9
+394,Suite: Judy Blue Eyes,"Crosby, Stills & Nash",1969,"Suite: Judy Blue Eyes by Crosby, Stills & Nash",TRUE,10,10
+395,Carry On,"Crosby, Stills, Nash & Young",1970,"Carry On by Crosby, Stills, Nash & Young",TRUE,6,6
+396,Ohio,"Crosby, Stills, Nash & Young",1970,"Ohio by Crosby, Stills, Nash & Young",TRUE,6,6
+397,Woodstock,"Crosby, Stills, Nash & Young",1970,"Woodstock by Crosby, Stills, Nash & Young",TRUE,37,37
+398,(I Just) Died in Your Arms,Cutting Crew,1986,(I Just) Died in Your Arms by Cutting Crew,TRUE,3,3
+399,High Enough,Damn Yankees,1990,High Enough by Damn Yankees,TRUE,1,1
+400,I HEAR YOU KNOCKING,Dave Edmunds,1970,I HEAR YOU KNOCKING by Dave Edmunds,TRUE,1,1
+401,Headkeeper,Dave Mason,,Headkeeper by Dave Mason,FALSE,1,0
+402,Only You Know And I Know,Dave Mason,,Only You Know And I Know by Dave Mason,FALSE,1,0
+403,We Just Disagree,Dave Mason,1977,We Just Disagree by Dave Mason,TRUE,1,1
+404,Welcome To The Boomtown,David & David,1986,Welcome To The Boomtown by David & David,TRUE,1,1
+405,Changes,David Bowie,1971,Changes by David Bowie,TRUE,33,33
+406,China Girl,David Bowie,1983,China Girl by David Bowie,TRUE,5,5
+407,Diamond Dogs,David Bowie,1974,Diamond Dogs by David Bowie,TRUE,1,1
+408,Fame,David Bowie,1975,Fame by David Bowie,TRUE,59,59
+409,Fashion,David Bowie,1980,Fashion by David Bowie,TRUE,17,17
+410,Friday on My Mind,David Bowie,,Friday on My Mind by David Bowie,FALSE,1,0
+411,Golden Years,David Bowie,1975,Golden Years by David Bowie,TRUE,10,10
+412,Heroes,David Bowie,1977,Heroes by David Bowie,TRUE,3,3
+413,Jean Genie,David Bowie,,Jean Genie by David Bowie,FALSE,5,0
+414,Let's Dance,David Bowie,1983,Let's Dance by David Bowie,TRUE,20,20
+415,Modern Love,David Bowie,1983,Modern Love by David Bowie,TRUE,10,10
+416,Panic in Detroit,David Bowie,,Panic in Detroit by David Bowie,FALSE,1,0
+417,Rebel Rebel,David Bowie,1974,Rebel Rebel by David Bowie,TRUE,43,43
+418,Space Oddity,David Bowie,1969,Space Oddity by David Bowie,TRUE,47,47
+419,Starman,David Bowie,1972,Starman by David Bowie,TRUE,1,1
+420,Stay,David Bowie,,Stay by David Bowie,FALSE,1,0
+421,Suffragette City,David Bowie,1972,Suffragette City by David Bowie,TRUE,18,18
+422,Young Americans,David Bowie,1975,Young Americans by David Bowie,TRUE,26,26
+423,Ziggy Stardust,David Bowie,1972,Ziggy Stardust by David Bowie,TRUE,7,7
+424,Rock On,David Essex,1974,Rock On by David Essex,TRUE,33,33
+425,There's No Way Out Of Here,David Essex,,There's No Way Out Of Here by David Essex,FALSE,1,0
+426,There's No Way Out Of Here,David Gilmour,,There's No Way Out Of Here by David Gilmour,FALSE,3,0
+427,Frenchette,David Johansen,,Frenchette by David Johansen,FALSE,1,0
+428,California Girls,David Lee Roth,,California Girls by David Lee Roth,FALSE,2,0
+429,Just A Gigolo / I Ain't Got Nobody,David Lee Roth,1985,Just A Gigolo / I Ain't Got Nobody by David Lee Roth,TRUE,8,8
+430,Yankee Rose,David Lee Roth,1986,Yankee Rose by David Lee Roth,TRUE,8,8
+431,Burn,Deep Purple,1974,Burn by Deep Purple,TRUE,1,1
+432,Child In Time,Deep Purple,1970,Child In Time by Deep Purple,TRUE,1,1
+433,Highway Star,Deep Purple,1972,Highway Star by Deep Purple,TRUE,22,22
+434,Hush,Deep Purple,1968,Hush by Deep Purple,TRUE,14,14
+435,Kentucky Woman,Deep Purple,1968,Kentucky Woman by Deep Purple,TRUE,2,2
+436,Knocking At Your Backdoo,Deep Purple,1984,Knocking At Your Backdoo by Deep Purple,TRUE,1,1
+437,Lazy,Deep Purple,1972,Lazy by Deep Purple,TRUE,1,1
+438,Perfect Strangers,Deep Purple,,Perfect Strangers by Deep Purple,FALSE,2,0
+439,Smoke On The Water,Deep Purple,1972,Smoke On The Water by Deep Purple,TRUE,43,43
+440,Space Truckin',Deep Purple,,Space Truckin' by Deep Purple,FALSE,22,0
+441,Woman From Tokyo,Deep Purple,,Woman From Tokyo by Deep Purple,FALSE,42,0
+442,Animal,Def Leppard,1987,Animal by Def Leppard,TRUE,35,35
+443,Armageddon It,Def Leppard,1987,Armageddon It by Def Leppard,TRUE,23,23
+444,Bringin' On The Heartbreak,Def Leppard,,Bringin' On The Heartbreak by Def Leppard,FALSE,35,0
+445,Foolin',Def Leppard,,Foolin' by Def Leppard,FALSE,71,0
+446,Hysteria,Def Leppard,1987,Hysteria by Def Leppard,TRUE,24,24
+447,Love Bites,Def Leppard,1987,Love Bites by Def Leppard,TRUE,25,25
+448,On Through The Night,Def Leppard,,On Through The Night by Def Leppard,FALSE,1,0
+449,Photograph,Def Leppard,1983,Photograph by Def Leppard,TRUE,88,88
+450,Pour Some Sugar On Me,Def Leppard,1987,Pour Some Sugar On Me by Def Leppard,TRUE,70,70
+451,Rock of Ages,Def Leppard,1983,Rock of Ages by Def Leppard,TRUE,65,65
+452,Rock Rock,Def Leppard,,Rock Rock by Def Leppard,FALSE,1,0
+453,Rocket,Def Leppard,1987,Rocket by Def Leppard,TRUE,15,15
+454,Too Late for Love,Def Leppard,,Too Late for Love by Def Leppard,FALSE,27,0
+455,Enjoy the Silence,Depeche Mode,1990,Enjoy the Silence by Depeche Mode,TRUE,2,2
+456,Bell Bottom Blues,Derek & The Dominos,1970,Bell Bottom Blues by Derek & The Dominos,TRUE,4,4
+457,Have You Ever Loved a Woman,Derek & The Dominos,,Have You Ever Loved a Woman by Derek & The Dominos,FALSE,1,0
+458,Layla,Derek & The Dominos,1970,Layla by Derek & The Dominos,TRUE,99,99
+459,Recognition,Detective,,Recognition by Detective,FALSE,1,0
+460,ANGELOS,Dick Siegel,,ANGELOS by Dick Siegel,FALSE,1,0
+461,Holy Diver,Dio,,Holy Diver by Dio,FALSE,7,0
+462,Rainbow In the Dark,Dio,,Rainbow In the Dark by Dio,FALSE,22,0
+463,The Last In Line,Dio,,The Last In Line by Dio,FALSE,18,0
+464,Brothers In Arms,Dire Straits,1985,Brothers In Arms by Dire Straits,TRUE,14,14
+465,Down To The Waterline,Dire Straits,1978,Down To The Waterline by Dire Straits,TRUE,12,12
+466,Expresso Love,Dire Straits,1980,Expresso Love by Dire Straits,TRUE,10,10
+467,Industrial Disease,Dire Straits,1982,Industrial Disease by Dire Straits,TRUE,21,21
+468,Lady Writer,Dire Straits,1979,Lady Writer by Dire Straits,TRUE,2,2
+469,Money for Nothing,Dire Straits,1985,Money for Nothing by Dire Straits,TRUE,56,56
+470,Romeo And Juliet,Dire Straits,1980,Romeo And Juliet by Dire Straits,TRUE,8,8
+471,So Far Away,Dire Straits,1985,So Far Away by Dire Straits,TRUE,25,25
+472,Solid Rock,Dire Straits,,Solid Rock by Dire Straits,FALSE,4,0
+473,Sultans of Swing,Dire Straits,1978,Sultans of Swing by Dire Straits,TRUE,79,79
+474,Walk of Life,Dire Straits,1985,Walk of Life by Dire Straits,TRUE,15,15
+475,Counting Blue Cars,Dishwalla,1995,Counting Blue Cars by Dishwalla,TRUE,3,3
+476,Drift Away,Dobie Gray,1973,Drift Away by Dobie Gray,TRUE,22,22
+477,Alone Again,Dokken,,Alone Again by Dokken,FALSE,1,0
+478,In My Dreams,Dokken,,In My Dreams by Dokken,FALSE,4,0
+479,Into The Fire,Dokken,,Into The Fire by Dokken,FALSE,1,0
+480,Heavy Metal,Don Felder,1981,Heavy Metal by Don Felder,TRUE,12,12
+481,All She Wants to Do Is Dance,Don Henley,1985,All She Wants to Do Is Dance by Don Henley,TRUE,10,10
+482,Dirty Laundry,Don Henley,1982,Dirty Laundry by Don Henley,TRUE,37,37
+483,Sunset Grill,Don Henley,1985,Sunset Grill by Don Henley,TRUE,6,6
+484,The Boys Of Summer,Don Henley,1985,The Boys Of Summer by Don Henley,TRUE,73,73
+485,The Heart of the Matter,Don Henley,1989,The Heart of the Matter by Don Henley,TRUE,11,11
+486,The Last Worthless Evening,Don Henley,,The Last Worthless Evening by Don Henley,FALSE,1,0
+487,American Pie,Don McLean,1971,American Pie by Don McLean,TRUE,21,21
+488,Ah! Leah!,Donnie Iris,1980,Ah! Leah! by Donnie Iris,TRUE,13,13
+489,Love Is Like A Rock,Donnie Iris,1981,Love Is Like A Rock by Donnie Iris,TRUE,1,1
+490,Season of the Witch,Donovan,1966,Season of the Witch by Donovan,TRUE,1,1
+491,Sunshine Superman,Donovan,1966,Sunshine Superman by Donovan,TRUE,1,1
+492,COVER OF THE ROLLING STONE,Dr. Hook & the Medicine Show,,COVER OF THE ROLLING STONE by Dr. Hook & the Medicine Show,FALSE,2,0
+493,Right Place Wrong Time,Dr. John,1973,Right Place Wrong Time by Dr. John,TRUE,2,2
+494,"Anything, Anything",Dramarama,,"Anything, Anything by Dramarama",FALSE,2,0
+495,"Hey, Hey (What Can I Do?)",Led Zeppelin,1970,"Hey, Hey (What Can I Do?) by Led Zeppelin",TRUE,0,0
+496,Rio,Duran Duran,1982,Rio by Duran Duran,TRUE,1,1
+497,Already Gone,Eagles,1974,Already Gone by Eagles,TRUE,71,71
+498,Desperado,Eagles,1973,Desperado by Eagles,TRUE,5,5
+499,Heartache Tonight,Eagles,1979,Heartache Tonight by Eagles,TRUE,30,30
+500,Hotel California,Eagles,1976,Hotel California by Eagles,TRUE,109,109
+501,I Can't Tell You Why,Eagles,1979,I Can't Tell You Why by Eagles,TRUE,2,2
+502,In The City,Eagles,1979,In The City by Eagles,TRUE,44,44
+503,Life in the Fast Lane,Eagles,1976,Life in the Fast Lane by Eagles,TRUE,86,86
+504,Lyin' Eyes,Eagles,1975,Lyin' Eyes by Eagles,TRUE,27,27
+505,New Kid In Town,Eagles,1976,New Kid In Town by Eagles,TRUE,2,2
+506,One of These Nights,Eagles,1975,One of These Nights by Eagles,TRUE,48,48
+507,Peaceful Easy Feeling,Eagles,1972,Peaceful Easy Feeling by Eagles,TRUE,16,16
+508,Seven Bridges Road,Eagles,1980,Seven Bridges Road by Eagles,TRUE,14,14
+509,Take It Easy,Eagles,1972,Take It Easy by Eagles,TRUE,75,75
+510,Take It to the Limit,Eagles,1975,Take It to the Limit by Eagles,TRUE,39,39
+511,Tequila Sunrise,Eagles,1973,Tequila Sunrise by Eagles,TRUE,4,4
+512,The Best of My Love,Eagles,1974,The Best of My Love by Eagles,TRUE,4,4
+513,The Long Run,Eagles,1979,The Long Run by Eagles,TRUE,50,50
+514,Those Shoes,Eagles,1979,Those Shoes by Eagles,TRUE,14,14
+515,Victim of Love,Eagles,1976,Victim of Love by Eagles,TRUE,5,5
+516,Witchy Woman,Eagles,1972,Witchy Woman by Eagles,TRUE,14,14
+517,Baby Hold On,Eddie Money,1977,Baby Hold On by Eddie Money,TRUE,26,26
+518,Gimme Some Water,Eddie Money,,Gimme Some Water by Eddie Money,FALSE,8,0
+519,Shakin',Eddie Money,,Shakin' by Eddie Money,FALSE,56,0
+520,Take Me Home Tonight,Eddie Money,1986,Take Me Home Tonight by Eddie Money,TRUE,35,35
+521,Think I'm In Love,Eddie Money,,Think I'm In Love by Eddie Money,FALSE,22,0
+522,Two Tickets To Paradise,Eddie Money,,Two Tickets To Paradise by Eddie Money,FALSE,59,0
+523,Frankenstein,Edgar Winter Group,,Frankenstein by Edgar Winter Group,FALSE,58,0
+524,Free Ride,Edgar Winter Group,1973,Free Ride by Edgar Winter Group,TRUE,26,26
+525,WAR,Edwin Starr,1970,WAR by Edwin Starr,TRUE,2,2
+526,CAN'T GET IT OUT OF MY HEAD,Electric Light Orchestra,1974,CAN'T GET IT OUT OF MY HEAD by Electric Light Orchestra,TRUE,1,1
+527,Do Ya,Electric Light Orchestra,,Do Ya by Electric Light Orchestra,FALSE,27,0
+528,Don't Bring Me Down,Electric Light Orchestra,1979,Don't Bring Me Down by Electric Light Orchestra,TRUE,85,85
+529,Evil Woman,Electric Light Orchestra,1975,Evil Woman by Electric Light Orchestra,TRUE,42,42
+530,Fire On High,Electric Light Orchestra,1975,Fire On High by Electric Light Orchestra,TRUE,18,18
+531,Livin' Thing,Electric Light Orchestra,1976,Livin' Thing by Electric Light Orchestra,TRUE,12,12
+532,Roll Over Beethoven,Electric Light Orchestra,,Roll Over Beethoven by Electric Light Orchestra,FALSE,3,0
+533,Strange Magic,Electric Light Orchestra,1985,Strange Magic by Electric Light Orchestra,TRUE,5,5
+534,Sweet Talkin' Woman,Electric Light Orchestra,1978,Sweet Talkin' Woman by Electric Light Orchestra,TRUE,3,3
+535,Telephone Line,Electric Light Orchestra,,Telephone Line by Electric Light Orchestra,FALSE,1,0
+536,Turn To Stone,Electric Light Orchestra,1978,Turn To Stone by Electric Light Orchestra,TRUE,5,5
+537,All The Girls Love Alice,Elton John,1973,All The Girls Love Alice by Elton John,TRUE,1,1
+538,Bennie And The Jets,Elton John,1973,Bennie And The Jets by Elton John,TRUE,62,62
+539,Candle in the Wind,Elton John,1973,Candle in the Wind by Elton John,TRUE,14,14
+540,Captain Fantastic,Elton John,1975,Captain Fantastic by Elton John,TRUE,1,1
+541,Crocodile Rock,Elton John,1972,Crocodile Rock by Elton John,TRUE,7,7
+542,DANIEL,Elton John,1973,DANIEL by Elton John,TRUE,4,4
+543,Don't Let The Sun Go Down On Me,Elton John,1974,Don't Let The Sun Go Down On Me by Elton John,TRUE,1,1
+544,Funeral for a Friend (Love Lies Bleeding),Elton John,1973,Funeral for a Friend (Love Lies Bleeding) by Elton John,TRUE,5,5
+545,Goodbye Yellow Brick Road,Elton John,1973,Goodbye Yellow Brick Road by Elton John,TRUE,27,27
+546,Harmony,Elton John,1973,Harmony by Elton John,TRUE,1,1
+547,Honky Cat,Elton John,1972,Honky Cat by Elton John,TRUE,2,2
+548,Levon,Elton John,1071,Levon by Elton John,TRUE,8,8
+549,Madman Across The Water,Elton John,1971,Madman Across The Water by Elton John,TRUE,1,1
+550,Rocket Man,Elton John,1972,Rocket Man by Elton John,TRUE,68,68
+551,Saturday Night's Alright for Fighting,Elton John,1973,Saturday Night's Alright for Fighting by Elton John,TRUE,34,34
+552,Someone Saved My Life Tonight,Elton John,1975,Someone Saved My Life Tonight by Elton John,TRUE,4,4
+553,Take Me to the Pilot,Elton John,,Take Me to the Pilot by Elton John,FALSE,1,0
+554,Teacher I Need You,Elton John,,Teacher I Need You by Elton John,FALSE,1,0
+555,THE BITCH IS BACK,Elton John,1974,THE BITCH IS BACK by Elton John,TRUE,1,1
+556,Tiny Dancer,Elton John,1971,Tiny Dancer by Elton John,TRUE,51,51
+557,Where To Now St. Peter,Elton John,1970,Where To Now St. Peter by Elton John,TRUE,1,1
+558,Your Song,Elton John,1970,Your Song by Elton John,TRUE,17,17
+559,Fooled around and Fell in Love,Elvin Bishop,1975,Fooled around and Fell in Love by Elvin Bishop,TRUE,1,1
+560,Alison,Elvis Costello,1977,Alison by Elvis Costello,TRUE,13,13
+561,Pump It Up,Elvis Costello,1978,Pump It Up by Elvis Costello,TRUE,3,3
+562,Veronica,Elvis Costello,1989,Veronica by Elvis Costello,TRUE,8,8
+563,From the Beginning,"Emerson, Lake & Palmer",1972,"From the Beginning by Emerson, Lake & Palmer",TRUE,1,1
+564,Hoedown,"Emerson, Lake & Palmer",,"Hoedown by Emerson, Lake & Palmer",FALSE,1,0
+565,Karn Evil 9,"Emerson, Lake & Palmer",1973,"Karn Evil 9 by Emerson, Lake & Palmer",TRUE,11,11
+566,Lucky Man,"Emerson, Lake & Palmer",1970,"Lucky Man by Emerson, Lake & Palmer",TRUE,8,8
+567,Still You Turn Me On,"Emerson, Lake & Palmer",1973,"Still You Turn Me On by Emerson, Lake & Palmer",TRUE,1,1
+568,After Midnight,Eric Clapton,1970,After Midnight by Eric Clapton,TRUE,16,16
+569,Bad Love,Eric Clapton,1989,Bad Love by Eric Clapton,TRUE,14,14
+570,Call Me the Breeze,Eric Clapton,,Call Me the Breeze by Eric Clapton,FALSE,3,0
+571,Cocaine,Eric Clapton,1977,Cocaine by Eric Clapton,TRUE,84,84
+572,"Don't Think Twice, It's Alright",Eric Clapton,,"Don't Think Twice, It's Alright by Eric Clapton",FALSE,1,0
+573,Forever Man,Eric Clapton,1985,Forever Man by Eric Clapton,TRUE,9,9
+574,I Can't Stand It,Eric Clapton,1981,I Can't Stand It by Eric Clapton,TRUE,9,9
+575,I Shot The Sheriff,Eric Clapton,1974,I Shot The Sheriff by Eric Clapton,TRUE,39,39
+576,I've Got a Rock 'N' Roll Heart,Eric Clapton,,I've Got a Rock 'N' Roll Heart by Eric Clapton,FALSE,3,0
+577,It's In The Way That You Use It,Eric Clapton,1986,It's In The Way That You Use It by Eric Clapton,TRUE,10,10
+578,Knockin' On Heaven's Door,Eric Clapton,,Knockin' On Heaven's Door by Eric Clapton,FALSE,16,0
+579,Lay Down Sally,Eric Clapton,1977,Lay Down Sally by Eric Clapton,TRUE,10,10
+580,Layla,Eric Clapton,,Layla by Eric Clapton,FALSE,0,0
+581,Let It Grow,Eric Clapton,1974,Let It Grow by Eric Clapton,TRUE,4,4
+582,Let It Rain,Eric Clapton,1970,Let It Rain by Eric Clapton,TRUE,24,24
+583,Pretending,Eric Clapton,1989,Pretending by Eric Clapton,TRUE,6,6
+584,She's Waiting,Eric Clapton,1985,She's Waiting by Eric Clapton,TRUE,3,3
+585,Tears In Heaven,Eric Clapton,,Tears In Heaven by Eric Clapton,FALSE,1,0
+586,The Core,Eric Clapton,1977,The Core by Eric Clapton,TRUE,1,1
+587,Willie and the Hand Jive,Eric Clapton,,Willie and the Hand Jive by Eric Clapton,FALSE,1,0
+588,Wonderful Tonight,Eric Clapton,1977,Wonderful Tonight by Eric Clapton,TRUE,15,15
+589,Cliffs Of Dover,Eric Johnson,1990,Cliffs Of Dover by Eric Johnson,TRUE,2,2
+590,The Final Countdown,Europe,1986,The Final Countdown by Europe,TRUE,5,5
+591,Sweet Dreams (Are Made of This),Eurythmics,1982,Sweet Dreams (Are Made of This) by Eurythmics,TRUE,2,2
+592,Inside Out,Eve 6,,Inside Out by Eve 6,FALSE,1,0
+593,Santa Monica,Everclear,1996,Santa Monica by Everclear,TRUE,2,2
+594,The Boys Are Back In Town,Everclear,,The Boys Are Back In Town by Everclear,FALSE,1,0
+595,What It's Like,Everlast,1999,What It's Like by Everlast,TRUE,4,4
+596,More Than Words,Extreme,1991,More Than Words by Extreme,TRUE,1,1
+597,Mutha (Don't Wanna Go To School Today),Extreme,,Mutha (Don't Wanna Go To School Today) by Extreme,FALSE,1,0
+598,Ooh La La,Faces,1973,Ooh La La by Faces,TRUE,1,1
+599,Stay With Me,Faces,1971,Stay With Me by Faces,TRUE,19,19
+600,Epic,Faith No More,1989,Epic by Faith No More,TRUE,3,3
+601,House Of Pain,Faster Pussycat,1990,House Of Pain by Faster Pussycat,TRUE,1,1
+602,All The Kings Horses,Firm,,All The Kings Horses by Firm,FALSE,1,0
+603,Signs,Five Man Electrical Band,1970,Signs by Five Man Electrical Band,TRUE,10,10
+604,Blue Letter,Fleetwood Mac,,Blue Letter by Fleetwood Mac,FALSE,1,0
+605,Don't Stop,Fleetwood Mac,1977,Don't Stop by Fleetwood Mac,TRUE,50,50
+606,Dreams,Fleetwood Mac,1977,Dreams by Fleetwood Mac,TRUE,53,53
+607,Go Your Own Way,Fleetwood Mac,1977,Go Your Own Way by Fleetwood Mac,TRUE,77,77
+608,Gold Dust Woman,Fleetwood Mac,1977,Gold Dust Woman by Fleetwood Mac,TRUE,37,37
+609,Gypsy,Fleetwood Mac,1982,Gypsy by Fleetwood Mac,TRUE,67,67
+610,Hold Me,Fleetwood Mac,1982,Hold Me by Fleetwood Mac,TRUE,1,1
+611,Hypnotized,Fleetwood Mac,1973,Hypnotized by Fleetwood Mac,TRUE,2,2
+612,I Don't Want To Know,Fleetwood Mac,1977,I Don't Want To Know by Fleetwood Mac,TRUE,3,3
+613,I'm So Afraid,Fleetwood Mac,,I'm So Afraid by Fleetwood Mac,FALSE,1,0
+614,Landslide,Fleetwood Mac,1975,Landslide by Fleetwood Mac,TRUE,29,29
+615,Little Lies,Fleetwood Mac,1987,Little Lies by Fleetwood Mac,TRUE,1,1
+616,Monday Morning,Fleetwood Mac,1975,Monday Morning by Fleetwood Mac,TRUE,30,30
+617,Never Going Back Again,Fleetwood Mac,1977,Never Going Back Again by Fleetwood Mac,TRUE,1,1
+618,Oh Well,Fleetwood Mac,1969,Oh Well by Fleetwood Mac,TRUE,10,10
+619,Rhiannon,Fleetwood Mac,1975,Rhiannon by Fleetwood Mac,TRUE,48,48
+620,Sara,Fleetwood Mac,1980,Sara by Fleetwood Mac,TRUE,1,1
+621,Say You Love Me,Fleetwood Mac,,Say You Love Me by Fleetwood Mac,FALSE,9,0
+622,Second Hand News,Fleetwood Mac,1977,Second Hand News by Fleetwood Mac,TRUE,4,4
+623,Sentimental Lady,Fleetwood Mac,,Sentimental Lady by Fleetwood Mac,FALSE,1,0
+624,The Chain,Fleetwood Mac,1977,The Chain by Fleetwood Mac,TRUE,65,65
+625,Tusk,Fleetwood Mac,1979,Tusk by Fleetwood Mac,TRUE,6,6
+626,World Turning,Fleetwood Mac,,World Turning by Fleetwood Mac,FALSE,6,0
+627,You Make Loving Fun,Fleetwood Mac,1977,You Make Loving Fun by Fleetwood Mac,TRUE,31,31
+628,Hocus Pocus,Focus,1971,Hocus Pocus by Focus,TRUE,6,6
+629,Dreamer,Foghat,,Dreamer by Foghat,FALSE,2,0
+630,Fool For The City,Foghat,1975,Fool For The City by Foghat,TRUE,26,26
+631,I Just Want To Make Love To You,Foghat,,I Just Want To Make Love To You by Foghat,FALSE,25,0
+632,Slow Ride,Foghat,1975,Slow Ride by Foghat,TRUE,77,77
+633,All My Life,Foo Fighters,2002,All My Life by Foo Fighters,TRUE,2,2
+634,Baker Street,Foo Fighters,,Baker Street by Foo Fighters,FALSE,1,0
+635,Best of You,Foo Fighters,2005,Best of You by Foo Fighters,TRUE,1,1
+636,Everlong,Foo Fighters,1997,Everlong by Foo Fighters,TRUE,6,6
+637,Learn To Fly,Foo Fighters,1999,Learn To Fly by Foo Fighters,TRUE,10,10
+638,Monkey Wrench,Foo Fighters,1997,Monkey Wrench by Foo Fighters,TRUE,3,3
+639,My Hero,Foo Fighters,1997,My Hero by Foo Fighters,TRUE,7,7
+640,The Pretender,Foo Fighters,2007,The Pretender by Foo Fighters,TRUE,1,1
+641,These Days,Foo Fighters,2011,These Days by Foo Fighters,TRUE,2,2
+642,Times Like These,Foo Fighters,2002,Times Like These by Foo Fighters,TRUE,1,1
+643,"Blue Morning, Blue Day",Foreigner,,"Blue Morning, Blue Day by Foreigner",FALSE,52,0
+644,Cold As Ice,Foreigner,1977,Cold As Ice by Foreigner,TRUE,102,102
+645,Dirty White Boy,Foreigner,1979,Dirty White Boy by Foreigner,TRUE,17,17
+646,Double Vision,Foreigner,1978,Double Vision by Foreigner,TRUE,83,83
+647,Feels Like the First Time,Foreigner,1977,Feels Like the First Time by Foreigner,TRUE,75,75
+648,Head Games,Foreigner,,Head Games by Foreigner,FALSE,43,0
+649,Hot Blooded,Foreigner,1978,Hot Blooded by Foreigner,TRUE,82,82
+650,I Want to Know What Love Is,Foreigner,1984,I Want to Know What Love Is by Foreigner,TRUE,4,4
+651,Juke Box Hero,Foreigner,1981,Juke Box Hero by Foreigner,TRUE,75,75
+652,"Long, Long Way From Home",Foreigner,,"Long, Long Way From Home by Foreigner",FALSE,34,0
+653,Love Has Taken Its Toll,Foreigner,,Love Has Taken Its Toll by Foreigner,FALSE,1,0
+654,Starrider,Foreigner,,Starrider by Foreigner,FALSE,1,0
+655,That Was Yesterday,Foreigner,1984,That Was Yesterday by Foreigner,TRUE,4,4
+656,Urgent,Foreigner,1981,Urgent by Foreigner,TRUE,61,61
+657,Waiting for a Girl Like You,Foreigner,1981,Waiting for a Girl Like You by Foreigner,TRUE,5,5
+658,Women,Foreigner,,Women by Foreigner,FALSE,1,0
+659,Joe's Garage,Frank Zappa,1979,Joe's Garage by Frank Zappa,TRUE,1,1
+660,Peaches En Regalia,Frank Zappa,,Peaches En Regalia by Frank Zappa,FALSE,1,0
+661,All Right Now,Free,1970,All Right Now by Free,TRUE,97,97
+662,Hemorrhage,Free,,Hemorrhage by Free,FALSE,1,0
+663,Wishing Well,Free,1973,Wishing Well by Free,TRUE,1,1
+664,Maggot Brain,Funkadelic,1971,Maggot Brain by Funkadelic,TRUE,1,1
+665,CARS,Gary Numan,1979,CARS by Gary Numan,TRUE,1,1
+666,Dream Weaver,Gary Wright,1975,Dream Weaver by Gary Wright,TRUE,9,9
+667,Love Is Alive,Gary Wright,,Love Is Alive by Gary Wright,FALSE,2,0
+668,A Trick of the Tail,Genesis,1976,A Trick of the Tail by Genesis,TRUE,1,1
+669,Abacab,Genesis,1981,Abacab by Genesis,TRUE,35,35
+670,Behind The Lines,Genesis,,Behind The Lines by Genesis,FALSE,2,0
+671,Carpet Crawlers,Genesis,,Carpet Crawlers by Genesis,FALSE,1,0
+672,Follow You Follow Me,Genesis,1978,Follow You Follow Me by Genesis,TRUE,18,18
+673,Home by the Sea/Second Home by the Sea,Genesis,1983,Home by the Sea/Second Home by the Sea by Genesis,TRUE,1,1
+674,Just A Job To Do,Genesis,,Just A Job To Do by Genesis,FALSE,29,0
+675,Land Of Confusion,Genesis,1986,Land Of Confusion by Genesis,TRUE,17,17
+676,Mama,Genesis,1983,Mama by Genesis,TRUE,17,17
+677,Man On The Corner,Genesis,1981,Man On The Corner by Genesis,TRUE,12,12
+678,Misunderstanding,Genesis,1980,Misunderstanding by Genesis,TRUE,23,23
+679,No Reply At All,Genesis,1981,No Reply At All by Genesis,TRUE,18,18
+680,That's All,Genesis,1983,That's All by Genesis,TRUE,35,35
+681,The Lamb Lies Down On Broadway,Genesis,1974,The Lamb Lies Down On Broadway by Genesis,TRUE,23,23
+682,Tonight Tonight (live),Genesis,1986,Tonight Tonight (live) by Genesis,TRUE,1,1
+683,Turn It On Again,Genesis,1980,Turn It On Again by Genesis,TRUE,23,23
+684,Give Me Love,George Harrison,1973,Give Me Love by George Harrison,TRUE,3,3
+685,GOT MY MIND SET ON YOU,George Harrison,1987,GOT MY MIND SET ON YOU by George Harrison,TRUE,1,1
+686,My Sweet Lord,George Harrison,1970,My Sweet Lord by George Harrison,TRUE,6,6
+687,Bad to the Bone,George Thorogood,1982,Bad to the Bone by George Thorogood,TRUE,63,63
+688,Delaware Slide,George Thorogood,,Delaware Slide by George Thorogood,FALSE,1,0
+689,Get A Haircut,George Thorogood,,Get A Haircut by George Thorogood,FALSE,1,0
+690,I Drink Alone,George Thorogood,1985,I Drink Alone by George Thorogood,TRUE,33,33
+691,It Wasn't Me,George Thorogood,,It Wasn't Me by George Thorogood,FALSE,6,0
+692,Move It On Over,George Thorogood,,Move It On Over by George Thorogood,FALSE,14,0
+693,"One Bourbon, One Scotch, One Beer",George Thorogood,,"One Bourbon, One Scotch, One Beer by George Thorogood",FALSE,23,0
+694,Who Do You Love,George Thorogood,,Who Do You Love by George Thorogood,FALSE,37,0
+695,Keep Your Hands To Yourself,Georgia Satellites,1986,Keep Your Hands To Yourself by Georgia Satellites,TRUE,17,17
+696,Baker Street,Gerry Rafferty,1978,Baker Street by Gerry Rafferty,TRUE,16,16
+697,Right Down the Line,Gerry Rafferty,1978,Right Down the Line by Gerry Rafferty,TRUE,8,8
+698,Found Out About You,Gin Blossoms,1993,Found Out About You by Gin Blossoms,TRUE,1,1
+699,Hey Jealousy,Gin Blossoms,1992,Hey Jealousy by Gin Blossoms,TRUE,3,3
+700,Smuggler's Blues,Glenn Frey,1984,Smuggler's Blues by Glenn Frey,TRUE,3,3
+701,You Belong to the City,Glenn Frey,1985,You Belong to the City by Glenn Frey,TRUE,2,2
+702,Marakesh Express,Gold Star Ballroom Orchestra,,Marakesh Express by Gold Star Ballroom Orchestra,FALSE,2,0
+703,Are You Receiving Me,Golden Earring,1973,Are You Receiving Me by Golden Earring,TRUE,1,1
+704,Radar Love,Golden Earring,1973,Radar Love by Golden Earring,TRUE,66,66
+705,Twilight Zone,Golden Earring,1983,Twilight Zone by Golden Earring,TRUE,75,75
+706,Sundown,Gordon Lightfoot,1974,Sundown by Gordon Lightfoot,TRUE,7,7
+707,Soulshine,Gov't Mule,,Soulshine by Gov't Mule,FALSE,3,0
+708,Bad Time,Grand Funk Railroad,1974,Bad Time by Grand Funk Railroad,TRUE,1,1
+709,Closer To Home (I'm Your Captain),Grand Funk Railroad,1970,Closer To Home (I'm Your Captain) by Grand Funk Railroad,TRUE,8,8
+710,Loco-Motion,Grand Funk Railroad,1974,Loco-Motion by Grand Funk Railroad,TRUE,9,9
+711,Shinin' On,Grand Funk Railroad,1974,Shinin' On by Grand Funk Railroad,TRUE,1,1
+712,Some Kind of Wonderful,Grand Funk Railroad,1975,Some Kind of Wonderful by Grand Funk Railroad,TRUE,14,14
+713,We're an American Band,Grand Funk Railroad,1973,We're an American Band by Grand Funk Railroad,TRUE,25,25
+714,Alabama Getaway,Grateful Dead,,Alabama Getaway by Grateful Dead,FALSE,1,0
+715,Black-Throated Wind,Grateful Dead,,Black-Throated Wind by Grateful Dead,FALSE,1,0
+716,Casey Jones,Grateful Dead,1970,Casey Jones by Grateful Dead,TRUE,3,3
+717,CHINA TOWN SHUFFLE,Grateful Dead,,CHINA TOWN SHUFFLE  by Grateful Dead,FALSE,1,0
+718,Friend Of The Devil,Grateful Dead,1970,Friend Of The Devil by Grateful Dead,TRUE,2,2
+719,Hell in a Bucket,Grateful Dead,,Hell in a Bucket by Grateful Dead,FALSE,1,0
+720,Loser,Grateful Dead,,Loser by Grateful Dead,FALSE,1,0
+721,Me and Bobby McGee,Grateful Dead,,Me and Bobby McGee by Grateful Dead,FALSE,1,0
+722,NOT FADEAWAY/GOING /AWAY,Grateful Dead,,NOT FADEAWAY/GOING /AWAY by Grateful Dead,FALSE,1,0
+723,Scarlet Begonias,Grateful Dead,,Scarlet Begonias by Grateful Dead,FALSE,2,0
+724,Shakedown Street,Grateful Dead,,Shakedown Street by Grateful Dead,FALSE,2,0
+725,Sugar Magnolia,Grateful Dead,1970,Sugar Magnolia by Grateful Dead,TRUE,3,3
+726,Touch of Grey,Grateful Dead,1987,Touch of Grey by Grateful Dead,TRUE,26,26
+727,Truckin',Grateful Dead,1970,Truckin' by Grateful Dead,TRUE,19,19
+728,Turn On Your Lovelight,Grateful Dead,,Turn On Your Lovelight by Grateful Dead,FALSE,1,0
+729,U.S. Blues,Grateful Dead,,U.S. Blues by Grateful Dead,FALSE,2,0
+730,Uncle John's Band,Grateful Dead,1969,Uncle John's Band by Grateful Dead,TRUE,9,9
+731,Mista Bone,Great White,,Mista Bone by Great White,FALSE,1,0
+732,"Once Bitten, Twice Shy",Great White,1989,"Once Bitten, Twice Shy by Great White",TRUE,12,12
+733,Rock Me,Great White,,Rock Me by Great White,FALSE,4,0
+734,Rollin' Stoned,Great White,,Rollin' Stoned by Great White,FALSE,1,0
+735,Save Your Love,Great White,,Save Your Love by Great White,FALSE,1,0
+736,Basket Case,Green Day,1994,Basket Case by Green Day,TRUE,5,5
+737,Boulevard Of Broken Dreams,Green Day,2004,Boulevard Of Broken Dreams by Green Day,TRUE,6,6
+738,Brain Stew/Jaded,Green Day,1995,Brain Stew/Jaded by Green Day,TRUE,1,1
+739,Good Riddance (Time Of Your Life),Green Day,1997,Good Riddance (Time Of Your Life) by Green Day,TRUE,10,10
+740,Holiday (Live),Green Day,2004,Holiday (Live) by Green Day,TRUE,4,4
+741,Holiday / Boulevard of Broken Dreams,Green Day,2004,Holiday / Boulevard of Broken Dreams by Green Day,TRUE,5,5
+742,Longview,Green Day,1994,Longview by Green Day,TRUE,2,2
+743,When I Come Around,Green Day,1994,When I Come Around by Green Day,TRUE,14,14
+744,The Break Up Song,Greg Kihn Band,1981,The Break Up Song by Greg Kihn Band,TRUE,49,49
+745,I'm No Angel,Gregg Allman,1987,I'm No Angel by Gregg Allman,TRUE,17,17
+746,Midnight Rider,Gregg Allman,1970,Midnight Rider by Gregg Allman,TRUE,6,6
+747,American Woman,Guess Who,1970,American Woman by Guess Who,TRUE,80,80
+748,Friends Of Mine,Guess Who,,Friends Of Mine by Guess Who,FALSE,1,0
+749,No Sugar Tonight / New Mother Nature,Guess Who,1970,No Sugar Tonight / New Mother Nature by Guess Who,TRUE,11,11
+750,No Time,Guess Who,,No Time by Guess Who,FALSE,4,0
+751,THESE EYES,Guess Who,1969,THESE EYES by Guess Who,TRUE,1,1
+752,Civil War,Guns N' Roses,1991,Civil War by Guns N' Roses,TRUE,1,1
+753,Don't Cry,Guns N' Roses,,Don't Cry by Guns N' Roses,FALSE,3,0
+754,Knockin' On Heaven's Door,Guns N' Roses,,Knockin' On Heaven's Door by Guns N' Roses,FALSE,31,0
+755,Live and Let Die,Guns N' Roses,,Live and Let Die by Guns N' Roses,FALSE,29,0
+756,Mr. Brownstone,Guns N' Roses,1987,Mr. Brownstone by Guns N' Roses,TRUE,1,1
+757,My Michelle,Guns N' Roses,1987,My Michelle by Guns N' Roses,TRUE,1,1
+758,November Rain,Guns N' Roses,1991,November Rain by Guns N' Roses,TRUE,13,13
+759,Paradise City,Guns N' Roses,1987,Paradise City by Guns N' Roses,TRUE,75,75
+760,Patience,Guns N' Roses,1988,Patience by Guns N' Roses,TRUE,21,21
+761,Sweet Child O' Mine,Guns N' Roses,1987,Sweet Child O' Mine by Guns N' Roses,TRUE,85,85
+762,Used To Love Her,Guns N' Roses,1988,Used To Love Her by Guns N' Roses,TRUE,1,1
+763,Welcome to the Jungle,Guns N' Roses,1987,Welcome to the Jungle by Guns N' Roses,TRUE,74,74
+764,You Could Be Mine,Guns N' Roses,,You Could Be Mine by Guns N' Roses,FALSE,4,0
+765,AS FAR AS YOU CAN SEE (AS MU,Gypsy,,AS FAR AS YOU CAN SEE (AS MU by Gypsy,FALSE,1,0
+766,Axel F Theme,Harold Faltermeyer,1984,Axel F Theme by Harold Faltermeyer,TRUE,1,1
+767,Cat's In The Cradle,Harry Chapin,1974,Cat's In The Cradle by Harry Chapin,TRUE,4,4
+768,W*O*L*D*,Harry Chapin,1974,W*O*L*D* by Harry Chapin,TRUE,1,1
+769,Jump into the Fire,Harry Nilsson,,Jump into the Fire by Harry Nilsson,FALSE,3,0
+770,Never Been Any Reason,Head East,1975,Never Been Any Reason by Head East,TRUE,16,16
+771,All I Wanna Do Is Make Love to You,Heart,,All I Wanna Do Is Make Love to You by Heart,FALSE,2,0
+772,Alone,Heart,1987,Alone by Heart,TRUE,4,4
+773,Barracuda,Heart,1977,Barracuda by Heart,TRUE,113,113
+774,Bebe le Strange,Heart,,Bebe le Strange by Heart,FALSE,1,0
+775,Crazy On You,Heart,1976,Crazy On You by Heart,TRUE,125,125
+776,Dog & Butterfly,Heart,,Dog & Butterfly by Heart,FALSE,3,0
+777,Dreamboat Annie,Heart,1976,Dreamboat Annie by Heart,TRUE,3,3
+778,Even It Up,Heart,,Even It Up by Heart,FALSE,8,0
+779,Heartless,Heart,,Heartless by Heart,FALSE,3,0
+780,How Can I Refuse,Heart,1983,How Can I Refuse by Heart,TRUE,2,2
+781,If Looks Could Kill,Heart,,If Looks Could Kill by Heart,FALSE,2,0
+782,Kick It Out,Heart,,Kick It Out by Heart,FALSE,7,0
+783,Little Queen,Heart,,Little Queen by Heart,FALSE,1,0
+784,Love Alive,Heart,,Love Alive by Heart,FALSE,1,0
+785,Magic Man,Heart,1976,Magic Man by Heart,TRUE,115,115
+786,Mistral Wind,Heart,,Mistral Wind by Heart,FALSE,1,0
+787,Never,Heart,,Never by Heart,FALSE,3,0
+788,Nothin' at All,Heart,,Nothin' at All by Heart,FALSE,4,0
+789,Rock And Roll,Heart,,Rock And Roll by Heart,FALSE,1,0
+790,Stairway To Heaven,Heart,,Stairway To Heaven by Heart,FALSE,4,0
+791,Straight On,Heart,1978,Straight On by Heart,TRUE,36,36
+792,Tell It Like It Is,Heart,,Tell It Like It Is by Heart,FALSE,2,0
+793,What About Love?,Heart,,What About Love? by Heart,FALSE,3,0
+794,Who Will You Run To,Heart,,Who Will You Run To by Heart,FALSE,2,0
+795,House Of Living,Heartsfield,,House Of Living by Heartsfield,FALSE,1,0
+796,Sangre Por Sangre,HellYeah,,Sangre Por Sangre by HellYeah,FALSE,4,0
+797,Grey Ghost,Henry Paul Band,1979,Grey Ghost by Henry Paul Band,TRUE,1,1
+798,Long Cool Woman,Hollies,1971,Long Cool Woman by Hollies,TRUE,39,39
+799,New Girl Now,Honeymoon Suite,,New Girl Now by Honeymoon Suite,FALSE,2,0
+800,ALL YOU ZOMBIES,Hooters,1985,ALL YOU ZOMBIES by Hooters,TRUE,4,4
+801,AND WE DANCED,Hooters,1985,AND WE DANCED by Hooters,TRUE,4,4
+802,I Want A New Drug,Huey Lewis & The News,1983,I Want A New Drug by Huey Lewis & The News,TRUE,4,4
+803,30 Days In the Hole,Humble Pie,1972,30 Days In the Hole by Humble Pie,TRUE,2,2
+804,Lust for Life,Iggy Pop,1977,Lust for Life by Iggy Pop,TRUE,4,4
+805,The Passenger,Iggy Pop,1977,The Passenger by Iggy Pop,TRUE,1,1
+806,Radioactive,Imagine Dragons,2012,Radioactive by Imagine Dragons,TRUE,3,3
+807,Devil Inside,INXS,1988,Devil Inside by INXS,TRUE,5,5
+808,Need You Tonight,INXS,1987,Need You Tonight by INXS,TRUE,12,12
+809,New Sensation,INXS,,New Sensation by INXS,FALSE,2,0
+810,What You Need,INXS,1985,What You Need by INXS,TRUE,28,28
+811,In A Gadda Da Vida,Iron Butterfly,1968,In A Gadda Da Vida by Iron Butterfly,TRUE,1,1
+812,Flight Of Icarus,Iron Maiden,1983,Flight Of Icarus by Iron Maiden,TRUE,1,1
+813,Run To The Hills,Iron Maiden,1982,Run To The Hills by Iron Maiden,TRUE,27,27
+814,The Number Of The Beast,Iron Maiden,1982,The Number Of The Beast by Iron Maiden,TRUE,18,18
+815,The Trooper,Iron Maiden,1983,The Trooper by Iron Maiden,TRUE,3,3
+816,Wasted Years,Iron Maiden,1986,Wasted Years by Iron Maiden,TRUE,8,8
+817,Centerfold,J. Geils Band,1981,Centerfold by J. Geils Band,TRUE,78,78
+818,Freeze-frame,J. Geils Band,1981,Freeze-frame by J. Geils Band,TRUE,17,17
+819,Give It To Me,J. Geils Band,1973,Give It To Me by J. Geils Band,TRUE,28,28
+820,Houseparty,J. Geils Band,,Houseparty by J. Geils Band,FALSE,1,0
+821,Looking For A Love,J. Geils Band,,Looking For A Love by J. Geils Band,FALSE,1,0
+822,Love Stinks,J. Geils Band,,Love Stinks by J. Geils Band,FALSE,10,0
+823,Must of Got Lost,J. Geils Band,,Must of Got Lost by J. Geils Band,FALSE,10,0
+824,Night Time,J. Geils Band,,Night Time by J. Geils Band,FALSE,1,0
+825,Whammer Jammer,J. Geils Band,,Whammer Jammer by J. Geils Band,FALSE,2,0
+826,Boulevard,Jackson Browne,,Boulevard by Jackson Browne,FALSE,5,0
+827,Doctor My Eyes,Jackson Browne,1972,Doctor My Eyes by Jackson Browne,TRUE,9,9
+828,Load Out/Stay,Jackson Browne,1977,Load Out/Stay by Jackson Browne,TRUE,2,2
+829,Redneck Friend,Jackson Browne,1973,Redneck Friend by Jackson Browne,TRUE,1,1
+830,Running On Empty,Jackson Browne,1977,Running On Empty by Jackson Browne,TRUE,39,39
+831,Somebody's Baby,Jackson Browne,1982,Somebody's Baby by Jackson Browne,TRUE,7,7
+832,Take It Easy,Jackson Browne,,Take It Easy by Jackson Browne,FALSE,5,0
+833,The Load-out/stay,Jackson Browne,1977,The Load-out/stay by Jackson Browne,TRUE,21,21
+834,The Road and the Sky,Jackson Browne,1977,The Road and the Sky by Jackson Browne,TRUE,1,1
+835,Funk #49,James Gang,1970,Funk #49 by James Gang,TRUE,18,18
+836,Walk Away,James Gang,,Walk Away by James Gang,FALSE,10,0
+837,YOU'VE GOT A FRIEND,JAMES TAYLOR,1971,YOU'VE GOT A FRIEND by JAMES TAYLOR,TRUE,1,1
+838,Been Caught Stealing,Jane's Addiction,1990,Been Caught Stealing by Jane's Addiction,TRUE,3,3
+839,Jane Says,Jane's Addiction,1988,Jane Says by Jane's Addiction,TRUE,1,1
+840,Get It While You Can,Janis Joplin,1971,Get It While You Can by Janis Joplin,TRUE,1,1
+841,Me and Bobby McGee,Janis Joplin,1971,Me and Bobby McGee by Janis Joplin,TRUE,23,23
+842,Move Over,Janis Joplin,1971,Move Over by Janis Joplin,TRUE,2,2
+843,Piece of My Heart,Janis Joplin,1968,Piece of My Heart by Janis Joplin,TRUE,28,28
+844,Summertime,Janis Joplin,,Summertime by Janis Joplin,FALSE,3,0
+845,Shakedown Cruise,Jay Ferguson,,Shakedown Cruise by Jay Ferguson,FALSE,1,0
+846,Thunder Island,Jay Ferguson,1978,Thunder Island by Jay Ferguson,TRUE,3,3
+847,Freeway Jam,Jeff Beck,1975,Freeway Jam by Jeff Beck,TRUE,1,1
+848,Rice Pudding,Jeff Beck,,Rice Pudding by Jeff Beck,FALSE,1,0
+849,Somebody to Love,Jefferson Airplane,1967,Somebody to Love by Jefferson Airplane,TRUE,13,13
+850,White Rabbit,Jefferson Airplane,1967,White Rabbit by Jefferson Airplane,TRUE,23,23
+851,Find Your Way Back,Jefferson Starship,,Find Your Way Back by Jefferson Starship,FALSE,20,0
+852,Jane,Jefferson Starship,1979,Jane by Jefferson Starship,TRUE,32,32
+853,Ride the Tiger,Jefferson Starship,,Ride the Tiger by Jefferson Starship,FALSE,1,0
+854,We Built This City,Jefferson Starship,1985,We Built This City by Jefferson Starship,TRUE,3,3
+855,Right Here Right Now,Jesus Jones,1991,Right Here Right Now by Jesus Jones,TRUE,3,3
+856,Are You Gonna Be My Girl,Jet,2003,Are You Gonna Be My Girl by Jet,TRUE,1,1
+857,Cold Hard Bitch,Jet,2004,Cold Hard Bitch by Jet,TRUE,2,2
+858,Aqualung,Jethro Tull,1971,Aqualung by Jethro Tull,TRUE,21,21
+859,Bungle In The Jungle,Jethro Tull,1974,Bungle In The Jungle by Jethro Tull,TRUE,19,19
+860,Cross-eyed Mary,Jethro Tull,1971,Cross-eyed Mary by Jethro Tull,TRUE,12,12
+861,Hymn 43,Jethro Tull,,Hymn 43 by Jethro Tull,FALSE,1,0
+862,Living In The Past,Jethro Tull,1969,Living In The Past by Jethro Tull,TRUE,13,13
+863,Locomotive Breath,Jethro Tull,1971,Locomotive Breath by Jethro Tull,TRUE,53,53
+864,Nothing Is Easy,Jethro Tull,,Nothing Is Easy by Jethro Tull,FALSE,2,0
+865,Teacher,Jethro Tull,1972,Teacher by Jethro Tull,TRUE,17,17
+866,Thick As A Brick,Jethro Tull,,Thick As A Brick by Jethro Tull,FALSE,15,0
+867,Too Old To Rock 'n' Roll,Jethro Tull,,Too Old To Rock 'n' Roll by Jethro Tull,FALSE,10,0
+868,TIME IN A BOTTLE,Jim Croce,1972,TIME IN A BOTTLE by Jim Croce,TRUE,1,1
+869,All Along the Watchtower,Jimi Hendrix,1968,All Along the Watchtower by Jimi Hendrix,TRUE,141,141
+870,Angel,Jimi Hendrix,1971,Angel by Jimi Hendrix,TRUE,1,1
+871,Are You Experienced?,Jimi Hendrix,1967,Are You Experienced? by Jimi Hendrix,TRUE,4,4
+872,Crosstown Traffic,Jimi Hendrix,1968,Crosstown Traffic by Jimi Hendrix,TRUE,8,8
+873,Dolly Dagger,Jimi Hendrix,1970,Dolly Dagger by Jimi Hendrix,TRUE,3,3
+874,Fire,Jimi Hendrix,1967,Fire by Jimi Hendrix,TRUE,63,63
+875,Foxey Lady,Jimi Hendrix,1967,Foxey Lady by Jimi Hendrix,TRUE,50,50
+876,Hey Joe,Jimi Hendrix,1966,Hey Joe by Jimi Hendrix,TRUE,51,51
+877,If 6 Was 9,Jimi Hendrix,,If 6 Was 9 by Jimi Hendrix,FALSE,1,0
+878,Like a Rolling Stone,Jimi Hendrix,,Like a Rolling Stone by Jimi Hendrix,FALSE,1,0
+879,Little Wing,Jimi Hendrix,1967,Little Wing by Jimi Hendrix,TRUE,6,6
+880,Manic Depression,Jimi Hendrix,1967,Manic Depression by Jimi Hendrix,TRUE,7,7
+881,Purple Haze,Jimi Hendrix,1967,Purple Haze by Jimi Hendrix,TRUE,67,67
+882,Red House,Jimi Hendrix,1967,Red House by Jimi Hendrix,TRUE,4,4
+883,Stone Free,Jimi Hendrix,1966,Stone Free by Jimi Hendrix,TRUE,4,4
+884,The Wind Cries Mary,Jimi Hendrix,1967,The Wind Cries Mary by Jimi Hendrix,TRUE,21,21
+885,Third Stone From The Sun,Jimi Hendrix,1967,Third Stone From The Sun by Jimi Hendrix,TRUE,2,2
+886,Voodoo Child (Slight Return),Jimi Hendrix,1968,Voodoo Child (Slight Return) by Jimi Hendrix,TRUE,2,2
+887,Margaritaville,Jimmy Buffett,1977,Margaritaville by Jimmy Buffett,TRUE,17,17
+888,Son of a Son of a Sailor,Jimmy Buffett,1978,Son of a Son of a Sailor by Jimmy Buffett,TRUE,1,1
+889,Why Don't We Get Drunk,Jimmy Buffett,1973,Why Don't We Get Drunk by Jimmy Buffett,TRUE,2,2
+890,Bad Reputation,Joan Jett,1981,Bad Reputation by Joan Jett,TRUE,1,1
+891,Crimson And Clover,Joan Jett,,Crimson And Clover by Joan Jett,FALSE,6,0
+892,I Hate Myself For Loving You,Joan Jett,1988,I Hate Myself For Loving You by Joan Jett,TRUE,16,16
+893,I Love Rock 'n Roll,Joan Jett,1981,I Love Rock 'n Roll by Joan Jett,TRUE,82,82
+894,Cry Me a River,Joe Cocker,,Cry Me a River by Joe Cocker,FALSE,1,0
+895,Feelin' Alright,Joe Cocker,,Feelin' Alright by Joe Cocker,FALSE,33,0
+896,The Letter,Joe Cocker,,The Letter by Joe Cocker,FALSE,1,0
+897,With A Little Help From My Friends,Joe Cocker,1968,With A Little Help From My Friends by Joe Cocker,TRUE,9,9
+898,You Can Leave Your Hat On (Live),Joe Cocker,,You Can Leave Your Hat On (Live) by Joe Cocker,FALSE,1,0
+899,Is She Really Going Out With Him?,Joe Jackson,1979,Is She Really Going Out With Him? by Joe Jackson,TRUE,6,6
+900,"Always With Me, Always With You",Joe Satriani,,"Always With Me, Always With You by Joe Satriani",FALSE,5,0
+901,Summer Song,Joe Satriani,,Summer Song by Joe Satriani,FALSE,4,0
+902,A Life Of Illusion,Joe Walsh,1981,A Life Of Illusion by Joe Walsh,TRUE,5,5
+903,All Night Long,Joe Walsh,1980,All Night Long by Joe Walsh,TRUE,41,41
+904,Analog Man,Joe Walsh,2012,Analog Man by Joe Walsh,TRUE,1,1
+905,Funk #49,Joe Walsh,2012,Funk #49 by Joe Walsh,TRUE,4,4
+906,In the City,Joe Walsh,1979,In the City by Joe Walsh,TRUE,6,6
+907,Life's Been Good,Joe Walsh,,Life's Been Good by Joe Walsh,FALSE,91,0
+908,Ordinary Average Guy,Joe Walsh,1991,Ordinary Average Guy by Joe Walsh,TRUE,2,2
+909,Rocky Mountain Way,Joe Walsh,1973,Rocky Mountain Way by Joe Walsh,TRUE,70,70
+910,The Confessor,Joe Walsh,,The Confessor by Joe Walsh,FALSE,7,0
+911,Turn To Stone,Joe Walsh,,Turn To Stone by Joe Walsh,FALSE,2,0
+912,On the Dark Side,John Cafferty,1983,On the Dark Side by John Cafferty,TRUE,19,19
+913,Centerfield,John Fogerty,1985,Centerfield by John Fogerty,TRUE,11,11
+914,The Old Man Down The Road,John Fogerty,1985,The Old Man Down The Road by John Fogerty,TRUE,12,12
+915,#9 Dream,John Lennon,1974,#9 Dream by John Lennon,TRUE,2,2
+916,Imagine,John Lennon,1971,Imagine by John Lennon,TRUE,31,31
+917,Instant Karma,John Lennon,1970,Instant Karma by John Lennon,TRUE,21,21
+918,Mind Games,John Lennon,,Mind Games by John Lennon,FALSE,1,0
+919,Watching the Wheels,John Lennon,1980,Watching the Wheels by John Lennon,TRUE,14,14
+920,Woman,John Lennon,1980,Woman by John Lennon,TRUE,1,1
+921,Again Tonight,John Mellencamp,,Again Tonight by John Mellencamp,FALSE,1,0
+922,Ain't Even Done With the Night,John Mellencamp,,Ain't Even Done With the Night by John Mellencamp,FALSE,2,0
+923,Authority Song,John Mellencamp,1983,Authority Song by John Mellencamp,TRUE,20,20
+924,Check It Out,John Mellencamp,,Check It Out by John Mellencamp,FALSE,1,0
+925,Cherry Bomb,John Mellencamp,,Cherry Bomb by John Mellencamp,FALSE,1,0
+926,Crumblin' Down,John Mellencamp,1983,Crumblin' Down by John Mellencamp,TRUE,17,17
+927,Hurts So Good,John Mellencamp,1982,Hurts So Good by John Mellencamp,TRUE,40,40
+928,I Need A Lover,John Mellencamp,1978,I Need A Lover by John Mellencamp,TRUE,24,24
+929,Jack & Diane,John Mellencamp,1982,Jack & Diane by John Mellencamp,TRUE,73,73
+930,Lonely Ol' Night,John Mellencamp,1985,Lonely Ol' Night by John Mellencamp,TRUE,7,7
+931,Paper in Fire,John Mellencamp,1987,Paper in Fire by John Mellencamp,TRUE,1,1
+932,Pink Houses,John Mellencamp,1984,Pink Houses by John Mellencamp,TRUE,34,34
+933,R.O.C.K. In the U.S.A.,John Mellencamp,1985,R.O.C.K. In the U.S.A. by John Mellencamp,TRUE,4,4
+934,Rain On The Scarecrow,John Mellencamp,1985,Rain On The Scarecrow by John Mellencamp,TRUE,1,1
+935,Small Town,John Mellencamp,1985,Small Town by John Mellencamp,TRUE,55,55
+936,What If I Came Knocking,John Mellencamp,,What If I Came Knocking by John Mellencamp,FALSE,1,0
+937,Illegal Smile,John Prine,,Illegal Smile by John Prine,FALSE,1,0
+938,I CAN SEE CLEARLY NOW,Johnny Nash,1972,I CAN SEE CLEARLY NOW by Johnny Nash,TRUE,2,2
+939,Brickyard Road,Johnny Van Zant,1990,Brickyard Road by Johnny Van Zant,TRUE,1,1
+940,Shanty,Jonathan Edwards,,Shanty by Jonathan Edwards,FALSE,2,0
+941,Roadrunner,Jonathan Richman,1977,Roadrunner by Jonathan Richman,TRUE,1,1
+942,Any Way You Want It,Journey,1980,Any Way You Want It by Journey,TRUE,105,105
+943,City of the Angels,Journey,,City of the Angels by Journey,FALSE,4,0
+944,Don't Stop Believin',Journey,1981,Don't Stop Believin' by Journey,TRUE,105,105
+945,Escape,Journey,,Escape by Journey,FALSE,1,0
+946,Faithfully,Journey,1983,Faithfully by Journey,TRUE,14,14
+947,Feeling That Way,Journey,1978,Feeling That Way by Journey,TRUE,13,13
+948,Just the Same Way,Journey,,Just the Same Way by Journey,FALSE,4,0
+949,Lights,Journey,1978,Lights by Journey,TRUE,93,93
+950,Look Into The Future,Journey,,Look Into The Future by Journey,FALSE,1,0
+951,"Lovin', Touchin' Squeezin'",Journey,1979,"Lovin', Touchin' Squeezin' by Journey",TRUE,60,60
+952,Only the Young,Journey,1985,Only the Young by Journey,TRUE,3,3
+953,Open Arms,Journey,1982,Open Arms by Journey,TRUE,10,10
+954,Send Her My Love,Journey,1983,Send Her My Love by Journey,TRUE,1,1
+955,Separate Ways (Worlds Apart),Journey,1983,Separate Ways (Worlds Apart) by Journey,TRUE,100,100
+956,Stone In Love,Journey,,Stone In Love by Journey,FALSE,32,0
+957,Wheel in the Sky,Journey,1978,Wheel in the Sky by Journey,TRUE,114,114
+958,Who's Crying Now,Journey,1981,Who's Crying Now by Journey,TRUE,29,29
+959,Breaking The Law,Judas Priest,1980,Breaking The Law by Judas Priest,TRUE,7,7
+960,Diamonds And Rust,Judas Priest,,Diamonds And Rust by Judas Priest,FALSE,1,0
+961,Electric Eye,Judas Priest,1982,Electric Eye by Judas Priest,TRUE,1,1
+962,Heading Out To The Highway,Judas Priest,,Heading Out To The Highway by Judas Priest,FALSE,10,0
+963,Hot Rockin',Judas Priest,,Hot Rockin' by Judas Priest,FALSE,1,0
+964,Living After Midnight,Judas Priest,1980,Living After Midnight by Judas Priest,TRUE,32,32
+965,The Ripper,Judas Priest,1976,The Ripper by Judas Priest,TRUE,1,1
+966,Turbo Lover,Judas Priest,,Turbo Lover by Judas Priest,FALSE,1,0
+967,You've Got Another Thing Comin',Judas Priest,,You've Got Another Thing Comin' by Judas Priest,FALSE,26,0
+968,Simple Man,Junkyard,,Simple Man by Junkyard,FALSE,1,0
+969,Carry On Wayward Son,Kansas,1976,Carry On Wayward Son by Kansas,TRUE,134,134
+970,Dust In The Wind,Kansas,1977,Dust In The Wind by Kansas,TRUE,62,62
+971,Play the Game Tonight,Kansas,1982,Play the Game Tonight by Kansas,TRUE,1,1
+972,Point of Know Return,Kansas,1977,Point of Know Return by Kansas,TRUE,30,30
+973,I'm Alright,Kenny Loggins,1980,I'm Alright by Kenny Loggins,TRUE,5,5
+974,Just Dropped In,Kenny Loggins,,Just Dropped In by Kenny Loggins,FALSE,1,0
+975,Blue On Black,Kenny Wayne Shepherd,,Blue On Black by Kenny Wayne Shepherd,FALSE,15,0
+976,"Somehow, Somewhere, Someway",Kenny Wayne Shepherd,,"Somehow, Somewhere, Someway by Kenny Wayne Shepherd",FALSE,1,0
+977,All Summer Long,Kid Rock,2007,All Summer Long by Kid Rock,TRUE,8,8
+978,Cowboy,Kid Rock,1998,Cowboy by Kid Rock,TRUE,3,3
+979,Let's Ride,Kid Rock,2012,Let's Ride by Kid Rock,TRUE,1,1
+980,If I Say,Kingofthehill,,If I Say by Kingofthehill,FALSE,1,0
+981,Sex On Fire,Kings of Leon,2008,Sex On Fire by Kings of Leon,TRUE,1,1
+982,Use Somebody,Kings of Leon,2008,Use Somebody by Kings of Leon,TRUE,2,2
+983,Beth,Kiss,1976,Beth by Kiss,TRUE,2,2
+984,Calling Dr. Love,Kiss,1976,Calling Dr. Love by Kiss,TRUE,4,4
+985,Christeen Sixteen,Kiss,,Christeen Sixteen by Kiss,FALSE,1,0
+986,Cold Gin,Kiss,1973,Cold Gin by Kiss,TRUE,2,2
+987,Detroit Rock City,Kiss,1976,Detroit Rock City by Kiss,TRUE,27,27
+988,Heaven's On Fire,Kiss,,Heaven's On Fire by Kiss,FALSE,2,0
+989,Lick It Up,Kiss,1983,Lick It Up by Kiss,TRUE,4,4
+990,Rock And Roll All Nite,Kiss,1975,Rock And Roll All Nite by Kiss,TRUE,119,119
+991,Shout It out Loud,Kiss,,Shout It out Loud by Kiss,FALSE,5,0
+992,Strutter,Kiss,1974,Strutter by Kiss,TRUE,1,1
+993,Tears Are Falling,Kiss,,Tears Are Falling by Kiss,FALSE,1,0
+994,Long Stick Goes Boom,Krokus,,Long Stick Goes Boom by Krokus,FALSE,1,0
+995,Screaming In The Night,Krokus,,Screaming In The Night by Krokus,FALSE,3,0
+996,Stayed Awake All Night,Krokus,,Stayed Awake All Night by Krokus,FALSE,1,0
+997,Sex Action,L.A. Guns,,Sex Action by L.A. Guns,FALSE,1,0
+998,Key To The Rhyme,Lake,,Key To The Rhyme by Lake,FALSE,1,0
+999,All My Love,Led Zeppelin,1979,All My Love by Led Zeppelin,TRUE,83,83
+1000,Babe I'm Gonna Leave You,Led Zeppelin,1969,Babe I'm Gonna Leave You by Led Zeppelin,TRUE,24,24
+1001,Black Dog,Led Zeppelin,1971,Black Dog by Led Zeppelin,TRUE,105,105
+1002,Black Mountain Side,Led Zeppelin,1969,Black Mountain Side by Led Zeppelin,TRUE,1,1
+1003,Bonzo's Montreaux,Led Zeppelin,1982,Bonzo's Montreaux by Led Zeppelin,TRUE,3,3
+1004,Boogie With Stu,Led Zeppelin,1975,Boogie With Stu by Led Zeppelin,TRUE,4,4
+1005,Bring It On Home,Led Zeppelin,1969,Bring It On Home by Led Zeppelin,TRUE,1,1
+1006,Bron-y-aur Stomp,Led Zeppelin,1970,Bron-y-aur Stomp by Led Zeppelin,TRUE,2,2
+1007,Celebration Day,Led Zeppelin,1970,Celebration Day by Led Zeppelin,TRUE,4,4
+1008,Communication Breakdown,Led Zeppelin,1969,Communication Breakdown by Led Zeppelin,TRUE,18,18
+1009,Custard Pie,Led Zeppelin,1975,Custard Pie by Led Zeppelin,TRUE,6,6
+1010,D'Yer Mak'er,Led Zeppelin,1973,D'Yer Mak'er by Led Zeppelin,TRUE,88,88
+1011,Dancing Days,Led Zeppelin,1973,Dancing Days by Led Zeppelin,TRUE,28,28
+1012,Darlene,Led Zeppelin,1982,Darlene by Led Zeppelin,TRUE,2,2
+1013,Dazed and Confused,Led Zeppelin,1969,Dazed and Confused by Led Zeppelin,TRUE,15,15
+1014,Down By The Seaside,Led Zeppelin,1975,Down By The Seaside by Led Zeppelin,TRUE,1,1
+1015,Fool In the Rain,Led Zeppelin,1979,Fool In the Rain by Led Zeppelin,TRUE,69,69
+1016,For Your Life,Led Zeppelin,1976,For Your Life by Led Zeppelin,TRUE,1,1
+1017,Four Sticks,Led Zeppelin,1971,Four Sticks by Led Zeppelin,TRUE,5,5
+1018,Friends,Led Zeppelin,1970,Friends by Led Zeppelin,TRUE,2,2
+1019,Gallows Pole,Led Zeppelin,1970,Gallows Pole by Led Zeppelin,TRUE,4,4
+1020,Going to California,Led Zeppelin,1971,Going to California by Led Zeppelin,TRUE,42,42
+1021,Good Times Bad Times,Led Zeppelin,1969,Good Times Bad Times by Led Zeppelin,TRUE,43,43
+1022,Hats Off To {roy} Harper,Led Zeppelin,1970,Hats Off To {roy} Harper by Led Zeppelin,TRUE,8,8
+1023,Heartbreaker/living Loving Maid {she's Just A Woman},Led Zeppelin,1969,Heartbreaker/living Loving Maid {she's Just A Woman} by Led Zeppelin,TRUE,35,35
+1024,Hey Hey What Can I Do,Led Zeppelin,1970,Hey Hey What Can I Do by Led Zeppelin,TRUE,32,32
+1025,Hot Dog,Led Zeppelin,1979,Hot Dog by Led Zeppelin,TRUE,4,4
+1026,Houses of the Holy,Led Zeppelin,1975,Houses of the Holy by Led Zeppelin,TRUE,45,45
+1027,How Many More Times,Led Zeppelin,1969,How Many More Times by Led Zeppelin,TRUE,2,2
+1028,I Can't Quit You Baby,Led Zeppelin,1969,I Can't Quit You Baby by Led Zeppelin,TRUE,1,1
+1029,Immigrant Song,Led Zeppelin,1970,Immigrant Song by Led Zeppelin,TRUE,87,87
+1030,In My Time of Dying,Led Zeppelin,1975,In My Time of Dying by Led Zeppelin,TRUE,2,2
+1031,In the Evening,Led Zeppelin,1979,In the Evening by Led Zeppelin,TRUE,11,11
+1032,In the Light,Led Zeppelin,1975,In the Light by Led Zeppelin,TRUE,4,4
+1033,Kashmir,Led Zeppelin,1975,Kashmir by Led Zeppelin,TRUE,64,64
+1034,Living Loving Maid (She's Just a Woman),Led Zeppelin,1969,Living Loving Maid (She's Just a Woman) by Led Zeppelin,TRUE,7,7
+1035,Misty Mountain Hop,Led Zeppelin,1971,Misty Mountain Hop by Led Zeppelin,TRUE,31,31
+1036,Moby Dick,Led Zeppelin,1969,Moby Dick by Led Zeppelin,TRUE,5,5
+1037,NIGHT FLIGHT,Led Zeppelin,1975,NIGHT FLIGHT by Led Zeppelin,TRUE,1,1
+1038,No Quarter,Led Zeppelin,1973,No Quarter by Led Zeppelin,TRUE,3,3
+1039,Nobody's Fault But Mine,Led Zeppelin,,Nobody's Fault But Mine by Led Zeppelin,FALSE,10,0
+1040,Out On The Tiles,Led Zeppelin,1970,Out On The Tiles by Led Zeppelin,TRUE,6,6
+1041,Over the Hills and Far Away,Led Zeppelin,1973,Over the Hills and Far Away by Led Zeppelin,TRUE,94,94
+1042,Ramble On,Led Zeppelin,1969,Ramble On by Led Zeppelin,TRUE,90,90
+1043,Rock and Roll,Led Zeppelin,1971,Rock and Roll by Led Zeppelin,TRUE,92,92
+1044,Royal Orleans,Led Zeppelin,1976,Royal Orleans by Led Zeppelin,TRUE,2,2
+1045,Since I've Been Loving You,Led Zeppelin,1970,Since I've Been Loving You by Led Zeppelin,TRUE,11,11
+1046,South Bound Saurez,Led Zeppelin,1979,South Bound Saurez by Led Zeppelin,TRUE,1,1
+1047,Stairway to Heaven,Led Zeppelin,1971,Stairway to Heaven by Led Zeppelin,TRUE,79,79
+1048,TANGERINE,Led Zeppelin,1970,TANGERINE by Led Zeppelin,TRUE,1,1
+1049,Ten Years Gone,Led Zeppelin,1975,Ten Years Gone by Led Zeppelin,TRUE,5,5
+1050,Thank You,Led Zeppelin,1969,Thank You by Led Zeppelin,TRUE,8,8
+1051,That's the Way,Led Zeppelin,1970,That's the Way by Led Zeppelin,TRUE,1,1
+1052,The Battle Of Evermore,Led Zeppelin,1971,The Battle Of Evermore by Led Zeppelin,TRUE,11,11
+1053,The Crunge,Led Zeppelin,1973,The Crunge by Led Zeppelin,TRUE,1,1
+1054,The Lemon Song,Led Zeppelin,1969,The Lemon Song by Led Zeppelin,TRUE,3,3
+1055,The Ocean,Led Zeppelin,1973,The Ocean by Led Zeppelin,TRUE,54,54
+1056,The Rain Song,Led Zeppelin,1973,The Rain Song by Led Zeppelin,TRUE,3,3
+1057,The Rover,Led Zeppelin,1975,The Rover by Led Zeppelin,TRUE,2,2
+1058,The Song Remains the Same,Led Zeppelin,1973,The Song Remains the Same by Led Zeppelin,TRUE,2,2
+1059,THE WANTON SONG,Led Zeppelin,1975,THE WANTON SONG by Led Zeppelin,TRUE,1,1
+1060,Trampled Under Foot,Led Zeppelin,1975,Trampled Under Foot by Led Zeppelin,TRUE,35,35
+1061,Traveling Riverside Blues,Led Zeppelin,1982,Traveling Riverside Blues by Led Zeppelin,TRUE,9,9
+1062,What Is and What Should Never Be,Led Zeppelin,1969,What Is and What Should Never Be by Led Zeppelin,TRUE,40,40
+1063,When The Levee Breaks,Led Zeppelin,1971,When The Levee Breaks by Led Zeppelin,TRUE,17,17
+1064,Whole Lotta Love,Led Zeppelin,1969,Whole Lotta Love by Led Zeppelin,TRUE,72,72
+1065,You Shook Me,Led Zeppelin,1969,You Shook Me by Led Zeppelin,TRUE,3,3
+1066,Your Time Is Gonna Come,Led Zeppelin,1969,Your Time Is Gonna Come by Led Zeppelin,TRUE,10,10
+1067,Do You Know What I Mean,Lee Michaels,,Do You Know What I Mean by Lee Michaels,FALSE,3,0
+1068,Woman,Legs Diamond,,Woman by Legs Diamond,FALSE,2,0
+1069,American Woman,Lenny Kravitz,1998,American Woman by Lenny Kravitz,TRUE,4,4
+1070,Are You Gonna Go My Way,Lenny Kravitz,1993,Are You Gonna Go My Way by Lenny Kravitz,TRUE,11,11
+1071,Fly Away,Lenny Kravitz,1998,Fly Away by Lenny Kravitz,TRUE,10,10
+1072,Stranger In A Strange Land,Leon Russell,,Stranger In A Strange Land by Leon Russell,FALSE,1,0
+1073,My Own Worst Enemy,Lit,1999,My Own Worst Enemy by Lit,TRUE,2,2
+1074,Close My Eyes Forever,Lita Ford,1988,Close My Eyes Forever by Lita Ford,TRUE,5,5
+1075,Kiss Me Deadly,Lita Ford,1988,Kiss Me Deadly by Lita Ford,TRUE,1,1
+1076,All That You Dream,Little Feat,,All That You Dream by Little Feat,FALSE,1,0
+1077,Dixie Chicken,Little Feat,1973,Dixie Chicken by Little Feat,TRUE,20,20
+1078,I Alone,Live,,I Alone by Live,FALSE,3,0
+1079,Lightning Crashes,Live,1994,Lightning Crashes by Live,TRUE,4,4
+1080,Cult Of Personality,Living Colour,1988,Cult Of Personality by Living Colour,TRUE,12,12
+1081,Bound for the Floor,Local H,1996,Bound for the Floor by Local H,TRUE,2,2
+1082,Conquistador,London Symphony Orchestra,1967,Conquistador by London Symphony Orchestra,TRUE,2,2
+1083,Midnight Blue,Lou Gramm,,Midnight Blue by Lou Gramm,FALSE,1,0
+1084,Sweet Jane (Live),Lou Reed,1970,Sweet Jane (Live) by Lou Reed,TRUE,1,1
+1085,Walk On The Wild Side,Lou Reed,1972,Walk On The Wild Side by Lou Reed,TRUE,31,31
+1086,Lovin' Every Minute of It,Loverboy,,Lovin' Every Minute of It by Loverboy,FALSE,8,0
+1087,The Kid Is Hot Tonite,Loverboy,1980,The Kid Is Hot Tonite by Loverboy,TRUE,2,2
+1088,Turn Me Loose,Loverboy,1980,Turn Me Loose by Loverboy,TRUE,16,16
+1089,Working for the Weekend,Loverboy,1981,Working for the Weekend by Loverboy,TRUE,27,27
+1090,Wicked Sensation,Lynch Mob,,Wicked Sensation by Lynch Mob,FALSE,1,0
+1091,Call Me the Breeze,Lynyrd Skynyrd,1974,Call Me the Breeze by Lynyrd Skynyrd,TRUE,25,25
+1092,Dixie/Sweet Home Alabama,Lynyrd Skynyrd,1974,Dixie/Sweet Home Alabama by Lynyrd Skynyrd,TRUE,33,33
+1093,Don't Ask Me No Questions,Lynyrd Skynyrd,1974,Don't Ask Me No Questions by Lynyrd Skynyrd,TRUE,14,14
+1094,Free Bird,Lynyrd Skynyrd,1973,Free Bird by Lynyrd Skynyrd,TRUE,75,75
+1095,Gimme Back My Bullets,Lynyrd Skynyrd,1976,Gimme Back My Bullets by Lynyrd Skynyrd,TRUE,4,4
+1096,Gimme Three Steps,Lynyrd Skynyrd,1973,Gimme Three Steps by Lynyrd Skynyrd,TRUE,47,47
+1097,I Know a Little,Lynyrd Skynyrd,1977,I Know a Little by Lynyrd Skynyrd,TRUE,4,4
+1098,Saturday Night Special,Lynyrd Skynyrd,1975,Saturday Night Special by Lynyrd Skynyrd,TRUE,21,21
+1099,Simple Man,Lynyrd Skynyrd,1973,Simple Man by Lynyrd Skynyrd,TRUE,47,47
+1100,Sweet Home Alabama,Lynyrd Skynyrd,1974,Sweet Home Alabama by Lynyrd Skynyrd,TRUE,95,95
+1101,That Smell,Lynyrd Skynyrd,1977,That Smell by Lynyrd Skynyrd,TRUE,24,24
+1102,The Ballad Of Curtis Loew,Lynyrd Skynyrd,1974,The Ballad Of Curtis Loew by Lynyrd Skynyrd,TRUE,8,8
+1103,Tuesday's Gone,Lynyrd Skynyrd,1973,Tuesday's Gone by Lynyrd Skynyrd,TRUE,31,31
+1104,What's Your Name,Lynyrd Skynyrd,1977,What's Your Name by Lynyrd Skynyrd,TRUE,64,64
+1105,You Got That Right,Lynyrd Skynyrd,,You Got That Right by Lynyrd Skynyrd,FALSE,13,0
+1106,Merry-Go-Round,Mama's Pride,,Merry-Go-Round by Mama's Pride,FALSE,1,0
+1107,Blinded by the Light,Manfred Mann,1976,Blinded by the Light by Manfred Mann,TRUE,114,114
+1108,Do Wah Diddy Diddy,Manfred Mann,1964,Do Wah Diddy Diddy by Manfred Mann,TRUE,2,2
+1109,Sex and Candy,Marcy Playground,,Sex and Candy by Marcy Playground,FALSE,2,0
+1110,Paradise By The Dashboard Light,Meat Loaf,1977,Paradise By The Dashboard Light by Meat Loaf,TRUE,10,10
+1111,TWO OUT OF THREE AIN'T BAD,Meat Loaf,1977,TWO OUT OF THREE AIN'T BAD by Meat Loaf,TRUE,1,1
+1112,You Took The Words Right Out Of My Mouth,Meat Loaf,1977,You Took The Words Right Out Of My Mouth by Meat Loaf,TRUE,9,9
+1113,I'm the Only One,Melissa Etheridge,1993,I'm the Only One by Melissa Etheridge,TRUE,1,1
+1114,Down Under,Men At Work,1982,Down Under by Men At Work,TRUE,5,5
+1115,Who Can It Be Now?,Men At Work,1982,Who Can It Be Now? by Men At Work,TRUE,6,6
+1116,Breadfan,Metallica,1998,Breadfan by Metallica,TRUE,2,2
+1117,Enter Sandman,Metallica,1991,Enter Sandman by Metallica,TRUE,34,34
+1118,Fade To Black,Metallica,1984,Fade To Black by Metallica,TRUE,4,4
+1119,For Whom The Bell Tolls,Metallica,1984,For Whom The Bell Tolls by Metallica,TRUE,1,1
+1120,Fuel,Metallica,1997,Fuel by Metallica,TRUE,2,2
+1121,Harvester Of Sorrow,Metallica,1988,Harvester Of Sorrow by Metallica,TRUE,1,1
+1122,Hero of the Day,Metallica,1996,Hero of the Day by Metallica,TRUE,1,1
+1123,Lords of Summer (First Pass Version),Metallica,,Lords of Summer (First Pass Version) by Metallica,FALSE,1,0
+1124,Master of Puppets,Metallica,1986,Master of Puppets by Metallica,TRUE,2,2
+1125,No Leaf Clover,Metallica,1999,No Leaf Clover by Metallica,TRUE,1,1
+1126,Nothing Else Matters,Metallica,1991,Nothing Else Matters by Metallica,TRUE,10,10
+1127,One,Metallica,1988,One by Metallica,TRUE,1,1
+1128,Sad But True,Metallica,1991,Sad But True by Metallica,TRUE,4,4
+1129,Seek & Destroy,Metallica,1983,Seek & Destroy by Metallica,TRUE,1,1
+1130,The Memory Remains,Metallica,1997,The Memory Remains by Metallica,TRUE,3,3
+1131,The Unforgiven,Metallica,1991,The Unforgiven by Metallica,TRUE,19,19
+1132,Turn The Page,Metallica,,Turn The Page by Metallica,FALSE,13,0
+1133,Until It Sleeps,Metallica,1996,Until It Sleeps by Metallica,TRUE,2,2
+1134,Wherever I May Roam,Metallica,1991,Wherever I May Roam by Metallica,TRUE,3,3
+1135,Whiskey In The Jar,Metallica,,Whiskey In The Jar by Metallica,FALSE,1,0
+1136,Cruisin',Michael Nesmith,,Cruisin' by Michael Nesmith,FALSE,1,0
+1137,Drinkin' in the Driveway,Michael Stanley,,Drinkin' in the Driveway by Michael Stanley,FALSE,1,0
+1138,He Can't Love You,Michael Stanley,,He Can't Love You by Michael Stanley,FALSE,1,0
+1139,Let's Get the Show on the Road,Michael Stanley,,Let's Get the Show on the Road by Michael Stanley,FALSE,1,0
+1140,My Town,Michael Stanley,,My Town by Michael Stanley,FALSE,1,0
+1141,Rosewood Bitters,Michael Stanley,,Rosewood Bitters by Michael Stanley,FALSE,1,0
+1142,Strike up the Band,Michael Stanley,,Strike up the Band by Michael Stanley,FALSE,1,0
+1143,Beds Are Burning,Midnight Oil,1988,Beds Are Burning by Midnight Oil,TRUE,6,6
+1144,Devil With the Blue Dress On,Mitch Ryder,1966,Devil With the Blue Dress On by Mitch Ryder,TRUE,1,1
+1145,I Melt With You,Modern English,1982,I Melt With You by Modern English,TRUE,15,15
+1146,Sugar Boogie,Molkie Cole,,Sugar Boogie by Molkie Cole,FALSE,1,0
+1147,Dreams I'll Never See,Molly Hatchet,,Dreams I'll Never See by Molly Hatchet,FALSE,3,0
+1148,Flirtin' With Disaster,Molly Hatchet,,Flirtin' With Disaster by Molly Hatchet,FALSE,35,0
+1149,What Do All The People Know,Monroes,,What Do All The People Know by Monroes,FALSE,2,0
+1150,Bad Motor Scooter,Montrose,1973,Bad Motor Scooter by Montrose,TRUE,30,30
+1151,Rock Candy,Montrose,1973,Rock Candy by Montrose,TRUE,19,19
+1152,Space Station #5,Montrose,1973,Space Station #5 by Montrose,TRUE,1,1
+1153,Don't Go Away Mad (Just Go Away),Motley Crue,1989,Don't Go Away Mad (Just Go Away) by Motley Crue,TRUE,4,4
+1154,Dr. Feelgood,Motley Crue,1989,Dr. Feelgood by Motley Crue,TRUE,17,17
+1155,"Girls, Girls, Girls",Motley Crue,1987,"Girls, Girls, Girls by Motley Crue",TRUE,25,25
+1156,Home Sweet Home,Motley Crue,1985,Home Sweet Home by Motley Crue,TRUE,29,29
+1157,Kickstart My Heart,Motley Crue,1989,Kickstart My Heart by Motley Crue,TRUE,25,25
+1158,Looks That Kill,Motley Crue,,Looks That Kill by Motley Crue,FALSE,8,0
+1159,Piece of Your Action,Motley Crue,,Piece of Your Action by Motley Crue,FALSE,1,0
+1160,Same Ol' Situation,Motley Crue,1989,Same Ol' Situation by Motley Crue,TRUE,4,4
+1161,Shout at the Devil,Motley Crue,1983,Shout at the Devil by Motley Crue,TRUE,4,4
+1162,Smokin' in the Boys Room,Motley Crue,,Smokin' in the Boys Room by Motley Crue,FALSE,28,0
+1163,Wild Side,Motley Crue,1987,Wild Side by Motley Crue,TRUE,11,11
+1164,All the Young Dudes,Mott the Hoople,1972,All the Young Dudes by Mott the Hoople,TRUE,12,12
+1165,Mississippi Queen,Mountain,1970,Mississippi Queen by Mountain,TRUE,25,25
+1166,Moon Rider,Moxy,,Moon Rider by Moxy,FALSE,1,0
+1167,Addicted To That Rush,Mr. Big,,Addicted To That Rush by Mr. Big,FALSE,1,0
+1168,In the Summertime,Mungo Jerry,1970,In the Summertime by Mungo Jerry,TRUE,2,2
+1169,Hair Of The Dog,Nazareth,1975,Hair Of The Dog by Nazareth,TRUE,53,53
+1170,Love Hurts,Nazareth,1976,Love Hurts by Nazareth,TRUE,26,26
+1171,Cinnamon Girl,Neil Young,1969,Cinnamon Girl by Neil Young,TRUE,29,29
+1172,Down by the River,Neil Young,1969,Down by the River by Neil Young,TRUE,2,2
+1173,Everybody Knows This Is Nowhere,Neil Young,,Everybody Knows This Is Nowhere by Neil Young,FALSE,1,0
+1174,Heart of Gold,Neil Young,1972,Heart of Gold by Neil Young,TRUE,17,17
+1175,"Hey Hey, My My",Neil Young,1978,"Hey Hey, My My by Neil Young",TRUE,14,14
+1176,Like a Hurricane,Neil Young,1977,Like a Hurricane by Neil Young,TRUE,2,2
+1177,"My My, Hey Hey",Neil Young,1979,"My My, Hey Hey by Neil Young",TRUE,3,3
+1178,Old Man,Neil Young,1972,Old Man by Neil Young,TRUE,13,13
+1179,Powderfinger,Neil Young,1978,Powderfinger by Neil Young,TRUE,2,2
+1180,Rockin' In the Free World,Neil Young,1989,Rockin' In the Free World by Neil Young,TRUE,38,38
+1181,Southern Man,Neil Young,1970,Southern Man by Neil Young,TRUE,16,16
+1182,Sugar Mountain,Neil Young,1969,Sugar Mountain by Neil Young,TRUE,2,2
+1183,The Needle and the Damage Done,Neil Young,1972,The Needle and the Damage Done by Neil Young,TRUE,4,4
+1184,When You Dance I Can Really Love,Neil Young,,When You Dance I Can Really Love by Neil Young,FALSE,1,0
+1185,Show Me The Way,Nektar,,Show Me The Way by Nektar,FALSE,1,0
+1186,How You Remind Me,Nickelback,2001,How You Remind Me by Nickelback,TRUE,4,4
+1187,Photograph,Nickelback,2005,Photograph by Nickelback,TRUE,1,1
+1188,Rockstar,Nickelback,2005,Rockstar by Nickelback,TRUE,10,10
+1189,Someday (Single Mix),Nickelback,,Someday (Single Mix) by Nickelback,FALSE,1,0
+1190,(You Can Still) Rock in America,Night Ranger,1983,(You Can Still) Rock in America by Night Ranger,TRUE,3,3
+1191,Don't Tell Me You Love Me,Night Ranger,1982,Don't Tell Me You Love Me by Night Ranger,TRUE,2,2
+1192,Rumors In The Air,Night Ranger,,Rumors In The Air by Night Ranger,FALSE,1,0
+1193,Sister Christian,Night Ranger,1983,Sister Christian by Night Ranger,TRUE,32,32
+1194,When You Close Your Eyes,Night Ranger,1983,When You Close Your Eyes by Night Ranger,TRUE,1,1
+1195,About a Girl,Nirvana,1989,About a Girl by Nirvana,TRUE,2,2
+1196,All Apologies,Nirvana,1993,All Apologies by Nirvana,TRUE,15,15
+1197,Come As You Are,Nirvana,1991,Come As You Are by Nirvana,TRUE,39,39
+1198,Dumb,Nirvana,1993,Dumb by Nirvana,TRUE,1,1
+1199,In Bloom,Nirvana,1991,In Bloom by Nirvana,TRUE,11,11
+1200,Lithium,Nirvana,1991,Lithium by Nirvana,TRUE,10,10
+1201,On a Plain,Nirvana,1991,On a Plain by Nirvana,TRUE,2,2
+1202,Polly,Nirvana,1991,Polly by Nirvana,TRUE,2,2
+1203,Smells Like Teen Spirit,Nirvana,1991,Smells Like Teen Spirit by Nirvana,TRUE,24,24
+1204,The Man Who Sold the World,Nirvana,,The Man Who Sold the World by Nirvana,FALSE,4,0
+1205,Spirit In The Sky,Norman Greenbaum,1969,Spirit In The Sky by Norman Greenbaum,TRUE,31,31
+1206,This Is The Time,Nothing More,,This Is The Time by Nothing More,FALSE,3,0
+1207,Wonderwall,Oasis,1995,Wonderwall by Oasis,TRUE,3,3
+1208,STILL THE ONE,Orleans,1976,STILL THE ONE by Orleans,TRUE,1,1
+1209,(Sittin' On) The Dock of the Bay,Otis Redding,1968,(Sittin' On) The Dock of the Bay by Otis Redding,TRUE,5,5
+1210,If You Wanna Get to Heaven,Ozark Mountain Daredevils,1973,If You Wanna Get to Heaven by Ozark Mountain Daredevils,TRUE,2,2
+1211,Jackie Blue,Ozark Mountain Daredevils,1975,Jackie Blue by Ozark Mountain Daredevils,TRUE,2,2
+1212,Bark At The Moon,Ozzy Osbourne,1983,Bark At The Moon by Ozzy Osbourne,TRUE,6,6
+1213,Changes,Ozzy Osbourne,,Changes by Ozzy Osbourne,FALSE,1,0
+1214,Crazy Train,Ozzy Osbourne,1980,Crazy Train by Ozzy Osbourne,TRUE,79,79
+1215,Diary Of A Madman,Ozzy Osbourne,1981,Diary Of A Madman by Ozzy Osbourne,TRUE,1,1
+1216,Flying High Again,Ozzy Osbourne,1981,Flying High Again by Ozzy Osbourne,TRUE,44,44
+1217,Goodbye To Romance,Ozzy Osbourne,1980,Goodbye To Romance by Ozzy Osbourne,TRUE,2,2
+1218,I Don't Know,Ozzy Osbourne,1980,I Don't Know by Ozzy Osbourne,TRUE,8,8
+1219,"Mama, I'm Coming Home",Ozzy Osbourne,1991,"Mama, I'm Coming Home by Ozzy Osbourne",TRUE,31,31
+1220,Mr. Crowley,Ozzy Osbourne,1980,Mr. Crowley by Ozzy Osbourne,TRUE,5,5
+1221,Mr. Tinkertrain,Ozzy Osbourne,1992,Mr. Tinkertrain by Ozzy Osbourne,TRUE,1,1
+1222,No More Tears,Ozzy Osbourne,1991,No More Tears by Ozzy Osbourne,TRUE,8,8
+1223,Over the Mountain,Ozzy Osbourne,1981,Over the Mountain by Ozzy Osbourne,TRUE,16,16
+1224,Perry Mason,Ozzy Osbourne,1995,Perry Mason by Ozzy Osbourne,TRUE,2,2
+1225,Purple Haze,Ozzy Osbourne,,Purple Haze by Ozzy Osbourne,FALSE,1,0
+1226,Road To Nowhere,Ozzy Osbourne,1991,Road To Nowhere by Ozzy Osbourne,TRUE,1,1
+1227,Rocky Mountain Way,Ozzy Osbourne,,Rocky Mountain Way by Ozzy Osbourne,FALSE,1,0
+1228,See You on the Other Side,Ozzy Osbourne,,See You on the Other Side by Ozzy Osbourne,FALSE,3,0
+1229,Shot in the Dark,Ozzy Osbourne,1986,Shot in the Dark by Ozzy Osbourne,TRUE,10,10
+1230,Time After Time,Ozzy Osbourne,,Time After Time by Ozzy Osbourne,FALSE,2,0
+1231,Fire and Ice,Pat Benatar,,Fire and Ice by Pat Benatar,FALSE,1,0
+1232,Heartbreaker,Pat Benatar,1979,Heartbreaker by Pat Benatar,TRUE,80,80
+1233,Hell Is for Children,Pat Benatar,1980,Hell Is for Children by Pat Benatar,TRUE,1,1
+1234,Hit Me With Your Best Shot,Pat Benatar,1980,Hit Me With Your Best Shot by Pat Benatar,TRUE,62,62
+1235,Invincible,Pat Benatar,1985,Invincible by Pat Benatar,TRUE,1,1
+1236,Love Is A Battlefield,Pat Benatar,1983,Love Is A Battlefield by Pat Benatar,TRUE,28,28
+1237,Shadows Of The Night,Pat Benatar,1982,Shadows Of The Night by Pat Benatar,TRUE,8,8
+1238,Treat Me Right,Pat Benatar,,Treat Me Right by Pat Benatar,FALSE,1,0
+1239,We Belong,Pat Benatar,1984,We Belong by Pat Benatar,TRUE,14,14
+1240,You Better Run,Pat Benatar,1980,You Better Run by Pat Benatar,TRUE,1,1
+1241,Boom Boom/,Pat Travers,,Boom Boom/ by Pat Travers,FALSE,1,0
+1242,Snortin Whiskey,Pat Travers,,Snortin Whiskey by Pat Travers,FALSE,1,0
+1243,The Back Seat Of My Car,Paul McCartney & Linda McCartney,1971,The Back Seat Of My Car by Paul McCartney & Linda McCartney,TRUE,1,1
+1244,Too Many People,Paul McCartney & Linda McCartney,1971,Too Many People by Paul McCartney & Linda McCartney,TRUE,1,1
+1245,Uncle Albert/Admiral Halsey,Paul McCartney & Linda McCartney,1971,Uncle Albert/Admiral Halsey by Paul McCartney & Linda McCartney,TRUE,2,2
+1246,Another Day,Paul McCartney & Wings,,Another Day by Paul McCartney & Wings,FALSE,2,0
+1247,Band on the Run,Paul McCartney & Wings,1973,Band on the Run by Paul McCartney & Wings,TRUE,50,50
+1248,Birthday (Live),Paul McCartney & Wings,,Birthday (Live) by Paul McCartney & Wings,FALSE,1,0
+1249,Coming Up,Paul McCartney & Wings,1980,Coming Up by Paul McCartney & Wings,TRUE,3,3
+1250,Day Tripper,Paul McCartney & Wings,,Day Tripper by Paul McCartney & Wings,FALSE,1,0
+1251,Helen Wheels,Paul McCartney & Wings,1973,Helen Wheels by Paul McCartney & Wings,TRUE,4,4
+1252,Hello Goodbye,Paul McCartney & Wings,,Hello Goodbye by Paul McCartney & Wings,FALSE,1,0
+1253,Helter Skelter,Paul McCartney & Wings,,Helter Skelter by Paul McCartney & Wings,FALSE,1,0
+1254,Hey Jude (Live),Paul McCartney & Wings,,Hey Jude (Live) by Paul McCartney & Wings,FALSE,1,0
+1255,Hi Hi Hi,Paul McCartney & Wings,,Hi Hi Hi by Paul McCartney & Wings,FALSE,6,0
+1256,Jet,Paul McCartney & Wings,1973,Jet by Paul McCartney & Wings,TRUE,12,12
+1257,Junior's Farm,Paul McCartney & Wings,1974,Junior's Farm by Paul McCartney & Wings,TRUE,3,3
+1258,Let 'Em In,Paul McCartney & Wings,,Let 'Em In by Paul McCartney & Wings,FALSE,1,0
+1259,Let Me Roll It,Paul McCartney & Wings,1973,Let Me Roll It by Paul McCartney & Wings,TRUE,1,1
+1260,Listen To What The Man Says,Paul McCartney & Wings,,Listen To What The Man Says by Paul McCartney & Wings,FALSE,3,0
+1261,Live and Let Die,Paul McCartney & Wings,1973,Live and Let Die by Paul McCartney & Wings,TRUE,85,85
+1262,Maybe I'm Amazed,Paul McCartney & Wings,1970,Maybe I'm Amazed by Paul McCartney & Wings,TRUE,53,53
+1263,My Love,Paul McCartney & Wings,1973,My Love by Paul McCartney & Wings,TRUE,1,1
+1264,Nineteen Hundred and Eighty Five,Paul McCartney & Wings,,Nineteen Hundred and Eighty Five by Paul McCartney & Wings,FALSE,4,0
+1265,Silly Love Songs,Paul McCartney & Wings,1976,Silly Love Songs by Paul McCartney & Wings,TRUE,3,3
+1266,Uncle Albert/Admiral Halsey,Paul McCartney & Wings,1971,Uncle Albert/Admiral Halsey by Paul McCartney & Wings,TRUE,4,4
+1267,Venus and Mars/Rock Show,Paul McCartney & Wings,1975,Venus and Mars/Rock Show by Paul McCartney & Wings,TRUE,2,2
+1268,With a Little Luck,Paul McCartney & Wings,,With a Little Luck by Paul McCartney & Wings,FALSE,2,0
+1269,50 Ways to Leave Your Lover,Paul Simon,1975,50 Ways to Leave Your Lover by Paul Simon,TRUE,1,1
+1270,Kodachrome,Paul Simon,1973,Kodachrome by Paul Simon,TRUE,2,2
+1271,Loves Me Like a Rock,Paul Simon,1973,Loves Me Like a Rock by Paul Simon,TRUE,1,1
+1272,Me And Julio Down By The Schoolyard,Paul Simon,1972,Me And Julio Down By The Schoolyard by Paul Simon,TRUE,6,6
+1273,You Can Call Me Al,Paul Simon,1986,You Can Call Me Al by Paul Simon,TRUE,1,1
+1274,Alive,Pearl Jam,1991,Alive by Pearl Jam,TRUE,16,16
+1275,Better Man,Pearl Jam,1994,Better Man by Pearl Jam,TRUE,17,17
+1276,Black,Pearl Jam,1991,Black by Pearl Jam,TRUE,11,11
+1277,Daughter,Pearl Jam,1993,Daughter by Pearl Jam,TRUE,10,10
+1278,Dissident,Pearl Jam,1994,Dissident by Pearl Jam,TRUE,2,2
+1279,Elderly Woman Behind the Counter in a Small Town,Pearl Jam,1993,Elderly Woman Behind the Counter in a Small Town by Pearl Jam,TRUE,2,2
+1280,Even Flow,Pearl Jam,1991,Even Flow by Pearl Jam,TRUE,16,16
+1281,Jeremy,Pearl Jam,1991,Jeremy by Pearl Jam,TRUE,16,16
+1282,Last Kiss,Pearl Jam,1999,Last Kiss by Pearl Jam,TRUE,3,3
+1283,Lightning Bolt,Pearl Jam,2013,Lightning Bolt by Pearl Jam,TRUE,4,4
+1284,Not for You,Pearl Jam,1994,Not for You by Pearl Jam,TRUE,1,1
+1285,Sirens,Pearl Jam,2013,Sirens by Pearl Jam,TRUE,3,3
+1286,Yellow Ledbetter,Pearl Jam,1992,Yellow Ledbetter by Pearl Jam,TRUE,2,2
+1287,GONNA GET YA,Pete Townshend,,GONNA GET YA by Pete Townshend,FALSE,1,0
+1288,Let My Love Open the Door,Pete Townshend,1980,Let My Love Open the Door by Pete Townshend,TRUE,38,38
+1289,Rough Boys,Pete Townshend,1980,Rough Boys by Pete Townshend,TRUE,2,2
+1290,"Baby, I Love Your Way",Peter Frampton,1975,"Baby, I Love Your Way by Peter Frampton",TRUE,41,41
+1291,Do You Feel Like We Do,Peter Frampton,1973,Do You Feel Like We Do by Peter Frampton,TRUE,37,37
+1292,Show Me the Way,Peter Frampton,1975,Show Me the Way by Peter Frampton,TRUE,30,30
+1293,Something's Happening/,Peter Frampton,,Something's Happening/ by Peter Frampton,FALSE,1,0
+1294,Big Time,Peter Gabriel,1986,Big Time by Peter Gabriel,TRUE,24,24
+1295,Games Without Frontiers,Peter Gabriel,1980,Games Without Frontiers by Peter Gabriel,TRUE,3,3
+1296,In Your Eyes,Peter Gabriel,1986,In Your Eyes by Peter Gabriel,TRUE,28,28
+1297,Red Rain,Peter Gabriel,1986,Red Rain by Peter Gabriel,TRUE,8,8
+1298,SHOCK THE MONKEY,Peter Gabriel,1982,SHOCK THE MONKEY by Peter Gabriel,TRUE,2,2
+1299,Sledgehammer,Peter Gabriel,1986,Sledgehammer by Peter Gabriel,TRUE,36,36
+1300,Solsbury Hill,Peter Gabriel,1977,Solsbury Hill by Peter Gabriel,TRUE,31,31
+1301,Don't Lose My Number,Phil Collins,,Don't Lose My Number by Phil Collins,FALSE,1,0
+1302,I Don't Care Anymore,Phil Collins,,I Don't Care Anymore by Phil Collins,FALSE,38,0
+1303,In the Air Tonight,Phil Collins,1981,In the Air Tonight by Phil Collins,TRUE,93,93
+1304,Another Brick In The Wall,Pink Floyd,1979,Another Brick In The Wall by Pink Floyd,TRUE,29,29
+1305,"Another Brick in the Wall, Pt. 2",Pink Floyd,1979,"Another Brick in the Wall, Pt. 2 by Pink Floyd",TRUE,58,58
+1306,Any Colour You Like,Pink Floyd,1973,Any Colour You Like by Pink Floyd,TRUE,2,2
+1307,Arnold Layne,Pink Floyd,1967,Arnold Layne by Pink Floyd,TRUE,1,1
+1308,Astronomy Domine,Pink Floyd,1967,Astronomy Domine by Pink Floyd,TRUE,3,3
+1309,Brain Damage,Pink Floyd,1973,Brain Damage by Pink Floyd,TRUE,21,21
+1310,Brain Damage /Eclipse,Pink Floyd,1973,Brain Damage /Eclipse by Pink Floyd,TRUE,41,41
+1311,Breathe,Pink Floyd,1973,Breathe by Pink Floyd,TRUE,9,9
+1312,"Careful With That Axe, Eugene",Pink Floyd,1969,"Careful With That Axe, Eugene by Pink Floyd",TRUE,23,23
+1313,Comfortably Numb,Pink Floyd,1979,Comfortably Numb by Pink Floyd,TRUE,92,92
+1314,Dogs,Pink Floyd,1977,Dogs by Pink Floyd,TRUE,1,1
+1315,Empty Spaces,Pink Floyd,1979,Empty Spaces by Pink Floyd,TRUE,8,8
+1316,Empty Spaces/young Lust,Pink Floyd,1979,Empty Spaces/young Lust by Pink Floyd,TRUE,12,12
+1317,Fearless,Pink Floyd,1971,Fearless by Pink Floyd,TRUE,17,17
+1318,Goodbye Blue Sky,Pink Floyd,1979,Goodbye Blue Sky by Pink Floyd,TRUE,11,11
+1319,Have a Cigar,Pink Floyd,1975,Have a Cigar by Pink Floyd,TRUE,41,41
+1320,Hey You,Pink Floyd,1979,Hey You by Pink Floyd,TRUE,65,65
+1321,Keep Talking,Pink Floyd,1994,Keep Talking by Pink Floyd,TRUE,4,4
+1322,Learning to Fly,Pink Floyd,1987,Learning to Fly by Pink Floyd,TRUE,44,44
+1323,Money,Pink Floyd,1973,Money by Pink Floyd,TRUE,84,84
+1324,Mother,Pink Floyd,1979,Mother by Pink Floyd,TRUE,19,19
+1325,On The Turning Away,Pink Floyd,1987,On The Turning Away by Pink Floyd,TRUE,15,15
+1326,One Of These Days,Pink Floyd,1971,One Of These Days by Pink Floyd,TRUE,12,12
+1327,One Slip,Pink Floyd,1987,One Slip by Pink Floyd,TRUE,1,1
+1328,Run Like Hell,Pink Floyd,1979,Run Like Hell by Pink Floyd,TRUE,59,59
+1329,See Emily Play,Pink Floyd,1967,See Emily Play by Pink Floyd,TRUE,1,1
+1330,Set The Controls For The Heart Of The Sun,Pink Floyd,1968,Set The Controls For The Heart Of The Sun by Pink Floyd,TRUE,1,1
+1331,Shine On You Crazy Diamond,Pink Floyd,1975,Shine On You Crazy Diamond by Pink Floyd,TRUE,2,2
+1332,Speak to Me/Breathe,Pink Floyd,1973,Speak to Me/Breathe by Pink Floyd,TRUE,30,30
+1333,Take It Back,Pink Floyd,1994,Take It Back by Pink Floyd,TRUE,1,1
+1334,The Dogs Of War,Pink Floyd,1987,The Dogs Of War by Pink Floyd,TRUE,2,2
+1335,The Great Gig In the Sky,Pink Floyd,1973,The Great Gig In the Sky by Pink Floyd,TRUE,4,4
+1336,The Happiest Days Of Our Lives/another Brick In The Wall,Pink Floyd,1979,The Happiest Days Of Our Lives/another Brick In The Wall by Pink Floyd,TRUE,44,44
+1337,Time,Pink Floyd,1973,Time by Pink Floyd,TRUE,74,74
+1338,Time/Gig in The Sky,Pink Floyd,1973,Time/Gig in The Sky by Pink Floyd,TRUE,1,1
+1339,Us and Them,Pink Floyd,1973,Us and Them by Pink Floyd,TRUE,25,25
+1340,Welcome To The Machine,Pink Floyd,1975,Welcome To The Machine by Pink Floyd,TRUE,41,41
+1341,Wish You Were Here,Pink Floyd,1975,Wish You Were Here by Pink Floyd,TRUE,87,87
+1342,Young Lust,Pink Floyd,1979,Young Lust by Pink Floyd,TRUE,59,59
+1343,Every Rose Has Its Thorn,Poison,1988,Every Rose Has Its Thorn by Poison,TRUE,22,22
+1344,Look What The Cat Dragged In,Poison,,Look What The Cat Dragged In by Poison,FALSE,1,0
+1345,Nothin' But A Good Time,Poison,1988,Nothin' But A Good Time by Poison,TRUE,21,21
+1346,Something To Believe In,Poison,1990,Something To Believe In by Poison,TRUE,1,1
+1347,Talk Dirty To Me,Poison,1987,Talk Dirty To Me by Poison,TRUE,1,1
+1348,A Salty Dog,Procol Harum,1969,A Salty Dog by Procol Harum,TRUE,1,1
+1349,A Whiter Shade of Pale,Procol Harum,1967,A Whiter Shade of Pale by Procol Harum,TRUE,3,3
+1350,Blurry,Puddle of Mudd,2001,Blurry by Puddle of Mudd,TRUE,1,1
+1351,Amie,Pure Prairie League,,Amie by Pure Prairie League,FALSE,4,0
+1352,Another One Bites the Dust,Queen,1980,Another One Bites the Dust by Queen,TRUE,102,102
+1353,Bicycle Race,Queen,1978,Bicycle Race by Queen,TRUE,3,3
+1354,Bicycle Race/fat Bottomed Girls,Queen,1978,Bicycle Race/fat Bottomed Girls by Queen,TRUE,5,5
+1355,Bohemian Rhapsody,Queen,1975,Bohemian Rhapsody by Queen,TRUE,119,119
+1356,Crazy Little Thing Called Love,Queen,1979,Crazy Little Thing Called Love by Queen,TRUE,57,57
+1357,Don't Stop Me Now,Queen,1977,Don't Stop Me Now by Queen,TRUE,2,2
+1358,Fat Bottomed Girls,Queen,1978,Fat Bottomed Girls by Queen,TRUE,70,70
+1359,It's Late,Queen,,It's Late by Queen,FALSE,1,0
+1360,Keep Yourself Alive,Queen,1973,Keep Yourself Alive by Queen,TRUE,4,4
+1361,Killer Queen,Queen,1974,Killer Queen by Queen,TRUE,69,69
+1362,One Vision,Queen,1985,One Vision by Queen,TRUE,1,1
+1363,Somebody To Love,Queen,1976,Somebody To Love by Queen,TRUE,69,69
+1364,THESE ARE THE DAYS OF OUR LI,Queen,1991,THESE ARE THE DAYS OF OUR LI by Queen,TRUE,1,1
+1365,Tie Your Mother Down,Queen,1976,Tie Your Mother Down by Queen,TRUE,4,4
+1366,Under Pressure,Queen,1981,Under Pressure by Queen,TRUE,12,12
+1367,We Are the Champions,Queen,1977,We Are the Champions by Queen,TRUE,15,15
+1368,We Will Rock You,Queen,1977,We Will Rock You by Queen,TRUE,14,14
+1369,We Will Rock You/We Are The Champions,Queen,1977,We Will Rock You/We Are The Champions by Queen,TRUE,89,89
+1370,You're My Best Friend,Queen,1976,You're My Best Friend by Queen,TRUE,57,57
+1371,Under Pressure,Queen / David Bowie,1981,Under Pressure by Queen / David Bowie,TRUE,73,73
+1372,No One Knows,Queens of the Stone Age,2002,No One Knows by Queens of the Stone Age,TRUE,1,1
+1373,Another Rainy Night,Queensryche,1990,Another Rainy Night by Queensryche,TRUE,2,2
+1374,Eyes Of A Stranger,Queensryche,,Eyes Of A Stranger by Queensryche,FALSE,18,0
+1375,I Don't Believe In Love,Queensryche,,I Don't Believe In Love by Queensryche,FALSE,23,0
+1376,Jet City Woman,Queensryche,1990,Jet City Woman by Queensryche,TRUE,6,6
+1377,Silent Lucidity,Queensryche,1990,Silent Lucidity by Queensryche,TRUE,10,10
+1378,Fresh Air,Quicksilver Messenger Service,,Fresh Air by Quicksilver Messenger Service,FALSE,1,0
+1379,Pride of Man,Quicksilver Messenger Service,,Pride of Man by Quicksilver Messenger Service,FALSE,1,0
+1380,Bang Your Head,Quiet Riot,,Bang Your Head by Quiet Riot,FALSE,6,0
+1381,Cum On Feel the Noize,Quiet Riot,,Cum On Feel the Noize by Quiet Riot,FALSE,29,0
+1382,Metal Health,Quiet Riot,1983,Metal Health by Quiet Riot,TRUE,4,4
+1383,It's the End of the World As We Know It (And I Feel Fine),R.E.M.,1987,It's the End of the World As We Know It (And I Feel Fine) by R.E.M.,TRUE,30,30
+1384,Losing My Religion,R.E.M.,1991,Losing My Religion by R.E.M.,TRUE,27,27
+1385,Man On the Moon,R.E.M.,1992,Man On the Moon by R.E.M.,TRUE,23,23
+1386,Orange Crush,R.E.M.,1988,Orange Crush by R.E.M.,TRUE,10,10
+1387,Stand,R.E.M.,1988,Stand by R.E.M.,TRUE,18,18
+1388,The One I Love,R.E.M.,1987,The One I Love by R.E.M.,TRUE,35,35
+1389,Man On The Silver Mountain,Rainbow,1975,Man On The Silver Mountain by Rainbow,TRUE,5,5
+1390,Since You Been Gone,Rainbow,1979,Since You Been Gone by Rainbow,TRUE,14,14
+1391,Stone Cold,Rainbow,1982,Stone Cold by Rainbow,TRUE,3,3
+1392,Street Of Dreams,Rainbow,,Street Of Dreams by Rainbow,FALSE,5,0
+1393,Black Betty,Ram Jam,1977,Black Betty by Ram Jam,TRUE,57,57
+1394,Back for More,Ratt,,Back for More by Ratt,FALSE,3,0
+1395,Round and Round,Ratt,1984,Round and Round by Ratt,TRUE,48,48
+1396,Way Cool Jr.,Ratt,,Way Cool Jr. by Ratt,FALSE,9,0
+1397,Breaking the Girl,Red Hot Chili Peppers,1992,Breaking the Girl by Red Hot Chili Peppers,TRUE,1,1
+1398,By the Way,Red Hot Chili Peppers,2002,By the Way by Red Hot Chili Peppers,TRUE,1,1
+1399,Californication,Red Hot Chili Peppers,1999,Californication by Red Hot Chili Peppers,TRUE,4,4
+1400,Dani California,Red Hot Chili Peppers,2006,Dani California by Red Hot Chili Peppers,TRUE,3,3
+1401,Give It Away,Red Hot Chili Peppers,1991,Give It Away by Red Hot Chili Peppers,TRUE,7,7
+1402,Scar Tissue,Red Hot Chili Peppers,1999,Scar Tissue by Red Hot Chili Peppers,TRUE,8,8
+1403,Soul to Squeeze,Red Hot Chili Peppers,1993,Soul to Squeeze by Red Hot Chili Peppers,TRUE,8,8
+1404,Under the Bridge,Red Hot Chili Peppers,1991,Under the Bridge by Red Hot Chili Peppers,TRUE,28,28
+1405,Lunatic Fringe,Red Rider,1981,Lunatic Fringe by Red Rider,TRUE,52,52
+1406,Back On The Road Again,REO Speedwagon,,Back On The Road Again by REO Speedwagon,FALSE,1,0
+1407,Don't Let Him Go,REO Speedwagon,,Don't Let Him Go by REO Speedwagon,FALSE,1,0
+1408,Golden Country,REO Speedwagon,,Golden Country by REO Speedwagon,FALSE,4,0
+1409,I Can't Fight This Feeling,REO Speedwagon,1984,I Can't Fight This Feeling by REO Speedwagon,TRUE,2,2
+1410,Keep On Loving You,REO Speedwagon,1980,Keep On Loving You by REO Speedwagon,TRUE,23,23
+1411,Keep Pushin'  1977,REO Speedwagon,,Keep Pushin'  1977 by REO Speedwagon,FALSE,1,0
+1412,Like You Do,REO Speedwagon,,Like You Do by REO Speedwagon,FALSE,3,0
+1413,Ridin' the Storm Out,REO Speedwagon,,Ridin' the Storm Out by REO Speedwagon,FALSE,20,0
+1414,Roll With the Changes,REO Speedwagon,,Roll With the Changes by REO Speedwagon,FALSE,43,0
+1415,Take It on the Run,REO Speedwagon,1981,Take It on the Run by REO Speedwagon,TRUE,46,46
+1416,Time For Me To Fly,REO Speedwagon,,Time For Me To Fly by REO Speedwagon,FALSE,16,0
+1417,"Rock And Roll, Hoochie Koo",Rick Derringer,1974,"Rock And Roll, Hoochie Koo by Rick Derringer",TRUE,55,55
+1418,Jessie's Girl,Rick Springfield,1981,Jessie's Girl by Rick Springfield,TRUE,2,2
+1419,Back Off Boogaloo,Ringo Starr,1972,Back Off Boogaloo by Ringo Starr,TRUE,2,2
+1420,Early 1970 [*],Ringo Starr,1971,Early 1970 [*] by Ringo Starr,TRUE,1,1
+1421,It Don't Come Easy,Ringo Starr,1971,It Don't Come Easy by Ringo Starr,TRUE,5,5
+1422,No No Song,Ringo Starr,1974,No No Song by Ringo Starr,TRUE,3,3
+1423,Photograph,Ringo Starr,1973,Photograph by Ringo Starr,TRUE,4,4
+1424,Your're Sixteen,Ringo Starr,1974,Your're Sixteen by Ringo Starr,TRUE,2,2
+1425,Addicted to Love,Robert Palmer,1985,Addicted to Love by Robert Palmer,TRUE,11,11
+1426,Bad Case Of Lovin' You,Robert Palmer,1979,Bad Case Of Lovin' You by Robert Palmer,TRUE,42,42
+1427,Simply Irresistible,Robert Palmer,1988,Simply Irresistible by Robert Palmer,TRUE,1,1
+1428,Big Log,Robert Plant,1983,Big Log by Robert Plant,TRUE,11,11
+1429,In The Mood,Robert Plant,1983,In The Mood by Robert Plant,TRUE,26,26
+1430,Little By Little,Robert Plant,,Little By Little by Robert Plant,FALSE,8,0
+1431,No Easy Way Out,Robert Tepper,,No Easy Way Out by Robert Tepper,FALSE,1,0
+1432,Bridge of Sighs,Robin Trower,1974,Bridge of Sighs by Robin Trower,TRUE,3,3
+1433,Little Bit of Sympathy,Robin Trower,,Little Bit of Sympathy by Robin Trower,FALSE,1,0
+1434,Too Rolling Stoned,Robin Trower,,Too Rolling Stoned by Robin Trower,FALSE,5,0
+1435,"Oh, Well",Rockets,,"Oh, Well by Rockets",FALSE,1,0
+1436,Tired Of Toein' The Line,Rocky Burnette,,Tired Of Toein' The Line by Rocky Burnette,FALSE,1,0
+1437,Every Picture Tells A Story,Rod Stewart,1971,Every Picture Tells A Story by Rod Stewart,TRUE,15,15
+1438,Hot Legs,Rod Stewart,,Hot Legs by Rod Stewart,FALSE,33,0
+1439,I Know I'm Losing You,Rod Stewart,,I Know I'm Losing You by Rod Stewart,FALSE,2,0
+1440,Maggie May,Rod Stewart,1971,Maggie May by Rod Stewart,TRUE,49,49
+1441,Reason to Believe,Rod Stewart,1971,Reason to Believe by Rod Stewart,TRUE,5,5
+1442,Stay with Me,Rod Stewart,,Stay with Me by Rod Stewart,FALSE,2,0
+1443,The First Cut Is The Deepest,Rod Stewart,1976,The First Cut Is The Deepest by Rod Stewart,TRUE,24,24
+1444,Tonight's the Night (Gonna Be Alright),Rod Stewart,1976,Tonight's the Night (Gonna Be Alright) by Rod Stewart,TRUE,2,2
+1445,You Wear It Well,Rod Stewart,1972,You Wear It Well by Rod Stewart,TRUE,7,7
+1446,You're In My Heart (The Final Acclaim),Rod Stewart,1977,You're In My Heart (The Final Acclaim) by Rod Stewart,TRUE,1,1
+1447,Free Me,Roger Daltry,,Free Me by Roger Daltry,FALSE,1,0
+1448,Had a Dream (Sleeping With the Enemy),Roger Hodgson,,Had a Dream (Sleeping With the Enemy) by Roger Hodgson,FALSE,1,0
+1449,The Logical Song,Roger Hodgson,1979,The Logical Song by Roger Hodgson,TRUE,1,1
+1450,(I Can't Get No) Satisfaction,Rolling Stones,1965,(I Can't Get No) Satisfaction by Rolling Stones,TRUE,60,60
+1451,19th Nervous Breakdown,Rolling Stones,1966,19th Nervous Breakdown by Rolling Stones,TRUE,1,1
+1452,Ain't Too Proud to Beg,Rolling Stones,1974,Ain't Too Proud to Beg by Rolling Stones,TRUE,14,14
+1453,Almost Hear You Sigh,Rolling Stones,1989,Almost Hear You Sigh by Rolling Stones,TRUE,1,1
+1454,Angie,Rolling Stones,1973,Angie by Rolling Stones,TRUE,32,32
+1455,Beast Of Burden,Rolling Stones,1978,Beast Of Burden by Rolling Stones,TRUE,86,86
+1456,Bitch,Rolling Stones,1971,Bitch by Rolling Stones,TRUE,5,5
+1457,Brown Sugar,Rolling Stones,1971,Brown Sugar by Rolling Stones,TRUE,37,37
+1458,Can't You Hear Me Knocking,Rolling Stones,1971,Can't You Hear Me Knocking by Rolling Stones,TRUE,5,5
+1459,CAROL,Rolling Stones,,CAROL by Rolling Stones,FALSE,1,0
+1460,Da Da Doo Ron Ron,Rolling Stones,,Da Da Doo Ron Ron by Rolling Stones,FALSE,3,0
+1461,Dance Little Sister,Rolling Stones,1980,Dance Little Sister by Rolling Stones,TRUE,1,1
+1462,Doo Doo Doo Doo Doo (Heartbreaker),Rolling Stones,1973,Doo Doo Doo Doo Doo (Heartbreaker) by Rolling Stones,TRUE,21,21
+1463,Doom And Gloom,Rolling Stones,2012,Doom And Gloom by Rolling Stones,TRUE,1,1
+1464,Emotional Rescue,Rolling Stones,1980,Emotional Rescue by Rolling Stones,TRUE,1,1
+1465,Fortune Teller,Rolling Stones,,Fortune Teller by Rolling Stones,FALSE,1,0
+1466,Get Off My Cloud,Rolling Stones,1965,Get Off My Cloud by Rolling Stones,TRUE,1,1
+1467,Get Off Of My Cloud,Rolling Stones,1965,Get Off Of My Cloud by Rolling Stones,TRUE,17,17
+1468,Gimme Shelter,Rolling Stones,1969,Gimme Shelter by Rolling Stones,TRUE,96,96
+1469,Hand of Fate,Rolling Stones,1976,Hand of Fate by Rolling Stones,TRUE,2,2
+1470,Hang Fire,Rolling Stones,1981,Hang Fire by Rolling Stones,TRUE,2,2
+1471,Happy,Rolling Stones,1972,Happy by Rolling Stones,TRUE,4,4
+1472,Heartbreaker,Rolling Stones,1973,Heartbreaker by Rolling Stones,TRUE,3,3
+1473,Honky Tonk Women,Rolling Stones,1969,Honky Tonk Women by Rolling Stones,TRUE,87,87
+1474,IT'S ALL OVER NOW,Rolling Stones,1964,IT'S ALL OVER NOW by Rolling Stones,TRUE,1,1
+1475,It's Only Rock 'n Roll,Rolling Stones,1974,It's Only Rock 'n Roll by Rolling Stones,TRUE,57,57
+1476,Jumpin' Jack Flash,Rolling Stones,1968,Jumpin' Jack Flash by Rolling Stones,TRUE,72,72
+1477,Just My Imagination,Rolling Stones,,Just My Imagination by Rolling Stones,FALSE,1,0
+1478,Let It Bleed,Rolling Stones,1969,Let It Bleed by Rolling Stones,TRUE,1,1
+1479,Let's Spend the Night Together,Rolling Stones,1967,Let's Spend the Night Together by Rolling Stones,TRUE,6,6
+1480,Like A Rolling Stone,Rolling Stones,,Like A Rolling Stone by Rolling Stones,FALSE,1,0
+1481,Little Queenie,Rolling Stones,,Little Queenie by Rolling Stones,FALSE,1,0
+1482,Midnight Rambler,Rolling Stones,1969,Midnight Rambler by Rolling Stones,TRUE,2,2
+1483,Miss You,Rolling Stones,1978,Miss You by Rolling Stones,TRUE,89,89
+1484,Monkey Man,Rolling Stones,1969,Monkey Man by Rolling Stones,TRUE,4,4
+1485,Mother's Little Helper,Rolling Stones,1966,Mother's Little Helper by Rolling Stones,TRUE,6,6
+1486,Paint It Black,Rolling Stones,1966,Paint It Black by Rolling Stones,TRUE,58,58
+1487,Shattered,Rolling Stones,1978,Shattered by Rolling Stones,TRUE,36,36
+1488,She's a Rainbow,Rolling Stones,1967,She's a Rainbow by Rolling Stones,TRUE,1,1
+1489,She's So Cold,Rolling Stones,,She's So Cold by Rolling Stones,FALSE,21,0
+1490,Start Me Up,Rolling Stones,1981,Start Me Up by Rolling Stones,TRUE,83,83
+1491,Street Fighting Man,Rolling Stones,1968,Street Fighting Man by Rolling Stones,TRUE,8,8
+1492,Sympathy For The Devil,Rolling Stones,1968,Sympathy For The Devil by Rolling Stones,TRUE,81,81
+1493,THE LAST TIME,Rolling Stones,1965,THE LAST TIME by Rolling Stones,TRUE,2,2
+1494,THE SPIDER AND THE FLY,Rolling Stones,1965,THE SPIDER AND THE FLY by Rolling Stones,TRUE,1,1
+1495,TIME IS ON MY SIDE,Rolling Stones,,TIME IS ON MY SIDE by Rolling Stones,FALSE,2,0
+1496,Time Waits for No One,Rolling Stones,1975,Time Waits for No One by Rolling Stones,TRUE,1,1
+1497,Tumbling Dice,Rolling Stones,1972,Tumbling Dice by Rolling Stones,TRUE,11,11
+1498,Under My Thumb,Rolling Stones,1966,Under My Thumb by Rolling Stones,TRUE,42,42
+1499,UNDERCOVER OF THE NIGHT,Rolling Stones,1983,UNDERCOVER OF THE NIGHT by Rolling Stones,TRUE,1,1
+1500,Waiting on a Friend,Rolling Stones,1981,Waiting on a Friend by Rolling Stones,TRUE,3,3
+1501,Wild Horses,Rolling Stones,1971,Wild Horses by Rolling Stones,TRUE,5,5
+1502,You Can't Always Get What You Want,Rolling Stones,1969,You Can't Always Get What You Want by Rolling Stones,TRUE,62,62
+1503,YOU GOT THE SILVER,Rolling Stones,1969,YOU GOT THE SILVER by Rolling Stones,TRUE,1,1
+1504,YOU GOTTA MOVE,Rolling Stones,1971,YOU GOTTA MOVE by Rolling Stones,TRUE,1,1
+1505,Bullfrog Blues,Rory Gallagher,,Bullfrog Blues by Rory Gallagher,TRUE,1,1
+1506,Cry Sister,Royal Bliss,,Cry Sister by Royal Bliss,FALSE,6,0
+1507,2112: Overture / The Temples of Syrinx (Chronicles Version),Rush,1976,2112: Overture / The Temples of Syrinx (Chronicles Version) by Rush,TRUE,2,2
+1508,Closer to the Heart,Rush,1977,Closer to the Heart by Rush,TRUE,31,31
+1509,Entre Nous,Rush,1980,Entre Nous by Rush,TRUE,2,2
+1510,Finding My Way,Rush,,Finding My Way by Rush,FALSE,1,0
+1511,Fly By Night,Rush,1975,Fly By Night by Rush,TRUE,32,32
+1512,Freewill,Rush,1980,Freewill by Rush,TRUE,60,60
+1513,In The Mood,Rush,1974,In The Mood by Rush,TRUE,3,3
+1514,Limelight,Rush,1981,Limelight by Rush,TRUE,90,90
+1515,New World Man,Rush,1982,New World Man by Rush,TRUE,7,7
+1516,Red Barchetta,Rush,1981,Red Barchetta by Rush,TRUE,11,11
+1517,Show Don't Tell,Rush,1989,Show Don't Tell by Rush,TRUE,2,2
+1518,Subdivisions,Rush,1982,Subdivisions by Rush,TRUE,26,26
+1519,Summertime Blues,Rush,,Summertime Blues by Rush,FALSE,1,0
+1520,Test For Echo,Rush,1996,Test For Echo by Rush,TRUE,23,23
+1521,The Spirit of Radio,Rush,1980,The Spirit of Radio by Rush,TRUE,77,77
+1522,The Trees,Rush,1978,The Trees by Rush,TRUE,1,1
+1523,Time Stand Still (live),Rush,1987,Time Stand Still (live) by Rush,TRUE,1,1
+1524,Tom Sawyer,Rush,1981,Tom Sawyer by Rush,TRUE,114,114
+1525,Working Man,Rush,1975,Working Man by Rush,TRUE,24,24
+1526,YYZ,Rush,1981,YYZ by Rush,TRUE,2,2
+1527,Voices,Russ Ballard,1975,Voices by Russ Ballard,TRUE,2,2
+1528,On The Loose,Saga,,On The Loose by Saga,FALSE,1,0
+1529,SOUL MAN,Sam & Dave,1967,SOUL MAN by Sam & Dave,TRUE,3,3
+1530,Can't Get Loose,Sammy Hagar,,Can't Get Loose by Sammy Hagar,FALSE,1,0
+1531,Heavy Metal,Sammy Hagar,1982,Heavy Metal by Sammy Hagar,TRUE,10,10
+1532,I Can't Drive 55,Sammy Hagar,1984,I Can't Drive 55 by Sammy Hagar,TRUE,40,40
+1533,I'll Fall In Love Again,Sammy Hagar,,I'll Fall In Love Again by Sammy Hagar,FALSE,3,0
+1534,Plain Jane,Sammy Hagar,,Plain Jane by Sammy Hagar,FALSE,2,0
+1535,Red,Sammy Hagar,1978,Red by Sammy Hagar,TRUE,3,3
+1536,There's Only One Way to Rock,Sammy Hagar,1981,There's Only One Way to Rock by Sammy Hagar,TRUE,15,15
+1537,Three Lock Box,Sammy Hagar,,Three Lock Box by Sammy Hagar,FALSE,1,0
+1538,Trans Am (Highway Wonderland),Sammy Hagar,1979,Trans Am (Highway Wonderland) by Sammy Hagar,TRUE,2,2
+1539,Turn Up The Music  1977,Sammy Hagar,,Turn Up The Music  1977 by Sammy Hagar,FALSE,3,0
+1540,Black Magic Woman,Santana,1970,Black Magic Woman by Santana,TRUE,61,61
+1541,Europa,Santana,1977,Europa by Santana,TRUE,4,4
+1542,Evil Ways,Santana,1969,Evil Ways by Santana,TRUE,37,37
+1543,Jingo,Santana,1969,Jingo by Santana,TRUE,1,1
+1544,No One to Depend On,Santana,1971,No One to Depend On by Santana,TRUE,7,7
+1545,Oye Como Va,Santana,1970,Oye Como Va by Santana,TRUE,37,37
+1546,Put Your Lights On (feat. Everlast),Santana,1999,Put Your Lights On (feat. Everlast) by Santana,TRUE,2,2
+1547,Smooth,Santana,1999,Smooth by Santana,TRUE,2,2
+1548,Soul Sacrifice,Santana,1969,Soul Sacrifice by Santana,TRUE,2,2
+1549,Well All Right,Santana,,Well All Right by Santana,FALSE,1,0
+1550,Winning,Santana,,Winning by Santana,FALSE,4,0
+1551,The Warrior,Scandal,1984,The Warrior by Scandal,TRUE,5,5
+1552,3 Strange Days,School Of Fish,,3 Strange Days by School Of Fish,FALSE,1,0
+1553,Big City Nights,Scorpions,1984,Big City Nights by Scorpions,TRUE,10,10
+1554,Blackout,Scorpions,1982,Blackout by Scorpions,TRUE,4,4
+1555,Don't Believe Her,Scorpions,,Don't Believe Her by Scorpions,FALSE,1,0
+1556,Holiday,Scorpions,,Holiday by Scorpions,FALSE,4,0
+1557,Loving You Sunday Morning,Scorpions,,Loving You Sunday Morning by Scorpions,FALSE,1,0
+1558,No One Like You,Scorpions,1982,No One Like You by Scorpions,TRUE,76,76
+1559,Rock You Like a Hurricane,Scorpions,1984,Rock You Like a Hurricane by Scorpions,TRUE,69,69
+1560,Still Loving You,Scorpions,1984,Still Loving You by Scorpions,TRUE,9,9
+1561,The Zoo,Scorpions,1980,The Zoo by Scorpions,TRUE,16,16
+1562,Wind Of Change,Scorpions,1990,Wind Of Change by Scorpions,TRUE,10,10
+1563,Remedy,Seether,2005,Remedy by Seether,TRUE,1,1
+1564,Words As Weapons,Seether,,Words As Weapons by Seether,FALSE,11,0
+1565,God Save The Queen,Sex Pistols,1977,God Save The Queen by Sex Pistols,TRUE,26,26
+1566,No Turning Back,Sherbs,,No Turning Back by Sherbs,FALSE,1,0
+1567,45,Shinedown,2003,45 by Shinedown,TRUE,2,2
+1568,America,Simon & Garfunkel,1968,America by Simon & Garfunkel,TRUE,1,1
+1569,Cecilia,Simon & Garfunkel,1970,Cecilia by Simon & Garfunkel,TRUE,6,6
+1570,Mrs. Robinson,Simon & Garfunkel,1968,Mrs. Robinson by Simon & Garfunkel,TRUE,13,13
+1571,The Sounds Of Silence,Simon & Garfunkel,1966,The Sounds Of Silence by Simon & Garfunkel,TRUE,4,4
+1572,Don't You,Simple Minds,1985,Don't You by Simple Minds,TRUE,44,44
+1573,18 And Life,Skid Row,1989,18 And Life by Skid Row,TRUE,17,17
+1574,I Remember You,Skid Row,1989,I Remember You by Skid Row,TRUE,30,30
+1575,Youth Gone Wild,Skid Row,1989,Youth Gone Wild by Skid Row,TRUE,22,22
+1576,Fly To The Angels,Slaughter,1990,Fly To The Angels by Slaughter,TRUE,1,1
+1577,All Star,Smash Mouth,1999,All Star by Smash Mouth,TRUE,2,2
+1578,1979,Smashing Pumpkins,1995,1979 by Smashing Pumpkins,TRUE,3,3
+1579,Bullet With Butterfly Wings,Smashing Pumpkins,1995,Bullet With Butterfly Wings by Smashing Pumpkins,TRUE,1,1
+1580,Landslide,Smashing Pumpkins,,Landslide by Smashing Pumpkins,FALSE,4,0
+1581,Today,Smashing Pumpkins,1993,Today by Smashing Pumpkins,TRUE,2,2
+1582,Driver's Seat,Sniff 'n' the Tears,1978,Driver's Seat by Sniff 'n' the Tears,TRUE,7,7
+1583,Tainted Love,Soft Cell,1981,Tainted Love by Soft Cell,TRUE,1,1
+1584,Black Hole Sun,Soundgarden,1994,Black Hole Sun by Soundgarden,TRUE,16,16
+1585,Burden in My Hand,Soundgarden,1996,Burden in My Hand by Soundgarden,TRUE,1,1
+1586,Fell On Black Days,Soundgarden,1994,Fell On Black Days by Soundgarden,TRUE,4,4
+1587,Spoonman,Soundgarden,1994,Spoonman by Soundgarden,TRUE,6,6
+1588,Havin' A Party,Southside Johnny,,Havin' A Party by Southside Johnny,FALSE,1,0
+1589,The Fever,Southside Johnny,,The Fever by Southside Johnny,FALSE,1,0
+1590,GIMME SOME LOVIN',Spencer Davis Group,1966,GIMME SOME LOVIN' by Spencer Davis Group,TRUE,4,4
+1591,Two Princes,Spin Doctors,1991,Two Princes by Spin Doctors,TRUE,1,1
+1592,Black Coffee In Bed,Squeeze,1982,Black Coffee In Bed by Squeeze,TRUE,1,1
+1593,Pulling Mussels,Squeeze,1980,Pulling Mussels by Squeeze,TRUE,2,2
+1594,Tempted,Squeeze,1981,Tempted by Squeeze,TRUE,22,22
+1595,It's Been Awhile,Staind,2001,It's Been Awhile by Staind,TRUE,4,4
+1596,My Demons,Starset,,My Demons by Starset,FALSE,3,0
+1597,Stuck In the Middle With You,Stealers Wheel,1972,Stuck In the Middle With You by Stealers Wheel,TRUE,37,37
+1598,Black Cow,Steely Dan,1977,Black Cow by Steely Dan,TRUE,2,2
+1599,Deacon Blues,Steely Dan,1977,Deacon Blues by Steely Dan,TRUE,1,1
+1600,Dirty Work,Steely Dan,1977,Dirty Work by Steely Dan,TRUE,1,1
+1601,Do It Again,Steely Dan,1972,Do It Again by Steely Dan,TRUE,46,46
+1602,Fm {no Static At All},Steely Dan,1978,Fm {no Static At All} by Steely Dan,TRUE,1,1
+1603,Hey Nineteen,Steely Dan,1980,Hey Nineteen by Steely Dan,TRUE,8,8
+1604,Peg,Steely Dan,1977,Peg by Steely Dan,TRUE,3,3
+1605,Reelin' in the Years,Steely Dan,1972,Reelin' in the Years by Steely Dan,TRUE,40,40
+1606,Rikki Don't Lose That Number,Steely Dan,1974,Rikki Don't Lose That Number by Steely Dan,TRUE,5,5
+1607,Love the One You're With,Stephen Stills,1971,Love the One You're With by Stephen Stills,TRUE,14,14
+1608,Treetop Flyer,Stephen Stills,,Treetop Flyer by Stephen Stills,FALSE,3,0
+1609,Born to Be Wild,Steppenwolf,1968,Born to Be Wild by Steppenwolf,TRUE,53,53
+1610,Magic Carpet Ride,Steppenwolf,1968,Magic Carpet Ride by Steppenwolf,TRUE,65,65
+1611,Copperhead Road,Steve Earle,1988,Copperhead Road by Steve Earle,TRUE,3,3
+1612,Abracadabra,Steve Miller Band,1982,Abracadabra by Steve Miller Band,TRUE,18,18
+1613,Fly Like an Eagle,Steve Miller Band,1976,Fly Like an Eagle by Steve Miller Band,TRUE,85,85
+1614,Jet Airliner,Steve Miller Band,1977,Jet Airliner by Steve Miller Band,TRUE,42,42
+1615,Jungle Love,Steve Miller Band,1977,Jungle Love by Steve Miller Band,TRUE,43,43
+1616,Living in the U.S.A.,Steve Miller Band,,Living in the U.S.A. by Steve Miller Band,FALSE,1,0
+1617,Mercury Blues,Steve Miller Band,,Mercury Blues by Steve Miller Band,FALSE,1,0
+1618,Rock 'N Me,Steve Miller Band,1976,Rock 'N Me by Steve Miller Band,TRUE,102,102
+1619,Space Cowboy,Steve Miller Band,,Space Cowboy by Steve Miller Band,FALSE,2,0
+1620,Swingtown,Steve Miller Band,,Swingtown by Steve Miller Band,FALSE,58,0
+1621,Take the Money and Run,Steve Miller Band,1976,Take the Money and Run by Steve Miller Band,TRUE,71,71
+1622,The Joker,Steve Miller Band,1973,The Joker by Steve Miller Band,TRUE,114,114
+1623,The Stake,Steve Miller Band,,The Stake by Steve Miller Band,FALSE,2,0
+1624,Threshold/Jet Airliner,Steve Miller Band,,Threshold/Jet Airliner by Steve Miller Band,FALSE,23,0
+1625,True Fine Love,Steve Miller Band,,True Fine Love by Steve Miller Band,FALSE,1,0
+1626,Your Cash Ain't Nothin But Trash,Steve Miller Band,,Your Cash Ain't Nothin But Trash by Steve Miller Band,FALSE,1,0
+1627,Oh Sherrie,Steve Perry,1984,Oh Sherrie by Steve Perry,TRUE,12,12
+1628,Back In the High Life Again,Steve Winwood,1986,Back In the High Life Again by Steve Winwood,TRUE,1,1
+1629,Higher Love,Steve Winwood,1986,Higher Love by Steve Winwood,TRUE,6,6
+1630,Roll With It,Steve Winwood,1988,Roll With It by Steve Winwood,TRUE,1,1
+1631,While You See a Chance,Steve Winwood,1980,While You See a Chance by Steve Winwood,TRUE,4,4
+1632,Love The One You'Re With,Steven Stills,1971,Love The One You'Re With by Steven Stills,TRUE,1,1
+1633,Edge of Seventeen,Stevie Nicks,1981,Edge of Seventeen by Stevie Nicks,TRUE,78,78
+1634,Leather and Lace,Stevie Nicks,1981,Leather and Lace by Stevie Nicks,TRUE,3,3
+1635,Stand Back,Stevie Nicks,1983,Stand Back by Stevie Nicks,TRUE,40,40
+1636,Stop Draggin' My Heart Around,Stevie Nicks,1981,Stop Draggin' My Heart Around by Stevie Nicks,TRUE,7,7
+1637,Stop Draggin' My Heart Around,Stevie Nicks w/ Tom Petty and the Heartbreakers,1981,Stop Draggin' My Heart Around by Stevie Nicks w/ Tom Petty and the Heartbreakers,TRUE,9,9
+1638,Cold Shot,Stevie Ray Vaughan,,Cold Shot by Stevie Ray Vaughan,FALSE,14,0
+1639,Couldn't Stand the Weather,Stevie Ray Vaughan,,Couldn't Stand the Weather by Stevie Ray Vaughan,FALSE,5,0
+1640,Crossfire,Stevie Ray Vaughan,1989,Crossfire by Stevie Ray Vaughan,TRUE,17,17
+1641,Life by the Drop,Stevie Ray Vaughan,,Life by the Drop by Stevie Ray Vaughan,FALSE,1,0
+1642,Little Wing,Stevie Ray Vaughan,,Little Wing by Stevie Ray Vaughan,FALSE,9,0
+1643,Look At Little Sister,Stevie Ray Vaughan,,Look At Little Sister by Stevie Ray Vaughan,FALSE,8,0
+1644,Pride And Joy,Stevie Ray Vaughan,1983,Pride And Joy by Stevie Ray Vaughan,TRUE,48,48
+1645,Scuttle Buttin',Stevie Ray Vaughan,1984,Scuttle Buttin' by Stevie Ray Vaughan,TRUE,3,3
+1646,Superstition [Live],Stevie Ray Vaughan,,Superstition [Live] by Stevie Ray Vaughan,FALSE,1,0
+1647,Taxman,Stevie Ray Vaughan,,Taxman by Stevie Ray Vaughan,FALSE,1,0
+1648,Texas Flood,Stevie Ray Vaughan,1983,Texas Flood by Stevie Ray Vaughan,TRUE,4,4
+1649,The House Is Rockin',Stevie Ray Vaughan,1989,The House Is Rockin' by Stevie Ray Vaughan,TRUE,17,17
+1650,The Sky Is Crying,Stevie Ray Vaughan,,The Sky Is Crying by Stevie Ray Vaughan,FALSE,8,0
+1651,Tightrope,Stevie Ray Vaughan,,Tightrope by Stevie Ray Vaughan,FALSE,6,0
+1652,Voodoo Chile {slight Return},Stevie Ray Vaughan,,Voodoo Chile {slight Return} by Stevie Ray Vaughan,FALSE,3,0
+1653,Superstition,Stevie Wonder,1973,Superstition by Stevie Wonder,TRUE,12,12
+1654,Fortress Around Your Heart,Sting,1985,Fortress Around Your Heart by Sting,TRUE,1,1
+1655,If You Love Somebody Set Them Free,Sting,,If You Love Somebody Set Them Free by Sting,FALSE,1,0
+1656,Big Empty,Stone Temple Pilots,1994,Big Empty by Stone Temple Pilots,TRUE,7,7
+1657,Creep,Stone Temple Pilots,1993,Creep by Stone Temple Pilots,TRUE,7,7
+1658,Interstate Love Song,Stone Temple Pilots,1994,Interstate Love Song by Stone Temple Pilots,TRUE,23,23
+1659,Lady Picture Show,Stone Temple Pilots,,Lady Picture Show by Stone Temple Pilots,FALSE,1,0
+1660,Plush,Stone Temple Pilots,1992,Plush by Stone Temple Pilots,TRUE,33,33
+1661,Sex Type Thing,Stone Temple Pilots,,Sex Type Thing by Stone Temple Pilots,FALSE,1,0
+1662,Trippin' on a Hole in a Paper Heart,Stone Temple Pilots,,Trippin' on a Hole in a Paper Heart by Stone Temple Pilots,FALSE,1,0
+1663,Vasoline,Stone Temple Pilots,1994,Vasoline by Stone Temple Pilots,TRUE,3,3
+1664,Rock This Town,Stray Cats,,Rock This Town by Stray Cats,FALSE,15,0
+1665,Stray Cat Strut,Stray Cats,,Stray Cat Strut by Stray Cats,FALSE,6,0
+1666,To Hell With the Devil,Stryper,1986,To Hell With the Devil by Stryper,TRUE,1,1
+1667,The Isle Of Debris,Stu Nunnery,,The Isle Of Debris by Stu Nunnery,FALSE,1,0
+1668,Blue Collar Man,Styx,1978,Blue Collar Man by Styx,TRUE,61,61
+1669,Come Sail Away,Styx,1977,Come Sail Away by Styx,TRUE,93,93
+1670,Crystal Ball,Styx,,Crystal Ball by Styx,FALSE,4,0
+1671,Fooling Yourself,Styx,1977,Fooling Yourself by Styx,TRUE,24,24
+1672,Lady,Styx,1973,Lady by Styx,TRUE,19,19
+1673,Light Up,Styx,1975,Light Up by Styx,TRUE,3,3
+1674,Lorelei,Styx,1975,Lorelei by Styx,TRUE,4,4
+1675,Renegade,Styx,1978,Renegade by Styx,TRUE,116,116
+1676,Suite Madame Blue,Styx,1975,Suite Madame Blue by Styx,TRUE,2,2
+1677,The Grand Illusion,Styx,1977,The Grand Illusion by Styx,TRUE,14,14
+1678,Too Much Time On My Hands,Styx,1981,Too Much Time On My Hands by Styx,TRUE,46,46
+1679,What I Got,Sublime,1996,What I Got by Sublime,TRUE,4,4
+1680,Wrong Way,Sublime,1996,Wrong Way by Sublime,TRUE,2,2
+1681,Fly,Sugar Ray,,Fly by Sugar Ray,FALSE,2,0
+1682,Green Eyed Lady,Sugarloaf,1970,Green Eyed Lady by Sugarloaf,TRUE,5,5
+1683,Bloody Well Right,Supertramp,1974,Bloody Well Right by Supertramp,TRUE,3,3
+1684,Breakfast in America,Supertramp,1979,Breakfast in America by Supertramp,TRUE,56,56
+1685,Dreamer,Supertramp,1974,Dreamer by Supertramp,TRUE,2,2
+1686,Give a Little Bit,Supertramp,1977,Give a Little Bit by Supertramp,TRUE,73,73
+1687,Goodbye Stranger,Supertramp,1979,Goodbye Stranger by Supertramp,TRUE,60,60
+1688,Take the Long Way Home,Supertramp,1979,Take the Long Way Home by Supertramp,TRUE,46,46
+1689,The Logical Song,Supertramp,1979,The Logical Song by Supertramp,TRUE,76,76
+1690,Eye of the Tiger,Survivor,1982,Eye of the Tiger by Survivor,TRUE,8,8
+1691,I Can't Hold Back,Survivor,,I Can't Hold Back by Survivor,FALSE,4,0
+1692,Ballroom Blitz,Sweet,1973,Ballroom Blitz by Sweet,TRUE,25,25
+1693,Fox On The Run,Sweet,,Fox On The Run by Sweet,FALSE,16,0
+1694,Love Is Like Oxygen,Sweet,1978,Love Is Like Oxygen by Sweet,TRUE,1,1
+1695,Bang a Gong (Get It On),T. Rex,1971,Bang a Gong (Get It On) by T. Rex,TRUE,82,82
+1696,Jeepster,T. Rex,1971,Jeepster by T. Rex,TRUE,1,1
+1697,And She Was,Talking Heads,1985,And She Was by Talking Heads,TRUE,19,19
+1698,Burning Down the House,Talking Heads,1983,Burning Down the House by Talking Heads,TRUE,72,72
+1699,Life During Wartime,Talking Heads,1979,Life During Wartime by Talking Heads,TRUE,23,23
+1700,Once In A Lifetime,Talking Heads,1980,Once In A Lifetime by Talking Heads,TRUE,46,46
+1701,Psycho Killer,Talking Heads,1977,Psycho Killer by Talking Heads,TRUE,8,8
+1702,Road To Nowhere,Talking Heads,,Road To Nowhere by Talking Heads,FALSE,18,0
+1703,Stay Up Late,Talking Heads,,Stay Up Late by Talking Heads,FALSE,33,0
+1704,Take Me To The River,Talking Heads,,Take Me To The River by Talking Heads,FALSE,23,0
+1705,Wild Wild Life,Talking Heads,1986,Wild Wild Life by Talking Heads,TRUE,7,7
+1706,I'm Leaving,Taxxi,,I'm Leaving by Taxxi,FALSE,1,0
+1707,Everybody Wants to Rule the World,Tears for Fears,1985,Everybody Wants to Rule the World by Tears for Fears,TRUE,6,6
+1708,Head Over Heels,Tears for Fears,1985,Head Over Heels by Tears for Fears,TRUE,1,1
+1709,Shout,Tears for Fears,1984,Shout by Tears for Fears,TRUE,1,1
+1710,Cat Scratch Fever,Ted Nugent,1977,Cat Scratch Fever by Ted Nugent,TRUE,20,20
+1711,Dog Eat Dog,Ted Nugent,,Dog Eat Dog by Ted Nugent,FALSE,3,0
+1712,Free for All,Ted Nugent,1977,Free for All by Ted Nugent,TRUE,10,10
+1713,Great White Buffalo,Ted Nugent,,Great White Buffalo by Ted Nugent,FALSE,1,0
+1714,Stranglehold,Ted Nugent,1975,Stranglehold by Ted Nugent,TRUE,33,33
+1715,Wango Tango,Ted Nugent,,Wango Tango by Ted Nugent,FALSE,1,0
+1716,Hunger Strike,Temple of the Dog,1990,Hunger Strike by Temple of the Dog,TRUE,4,4
+1717,I'd Love To Change The World,Ten Years After,1971,I'd Love To Change The World by Ten Years After,TRUE,18,18
+1718,I'm Goin' Home,Ten Years After,,I'm Goin' Home by Ten Years After,FALSE,1,0
+1719,Little Suzi,Tesla,,Little Suzi by Tesla,FALSE,1,0
+1720,Love Song,Tesla,1989,Love Song by Tesla,TRUE,4,4
+1721,Modern Day Cowboy,Tesla,,Modern Day Cowboy by Tesla,FALSE,3,0
+1722,Signs,Tesla,,Signs by Tesla,FALSE,15,0
+1723,Breakdown,The Alan Parsons Project,1977,Breakdown by The Alan Parsons Project,TRUE,5,5
+1724,Eye In the Sky,The Alan Parsons Project,1982,Eye In the Sky by The Alan Parsons Project,TRUE,2,2
+1725,Games People Play,The Alan Parsons Project,1981,Games People Play by The Alan Parsons Project,TRUE,3,3
+1726,I Wouldn't Want to Be Like You,The Alan Parsons Project,,I Wouldn't Want to Be Like You by The Alan Parsons Project,FALSE,1,0
+1727,Rain In the Summertime,The Alarm (IRS),,Rain In the Summertime by The Alarm (IRS),FALSE,2,0
+1728,Journey to the Center of the Mind,The Amboy Dukes,1968,Journey to the Center of the Mind by The Amboy Dukes,TRUE,1,1
+1729,Don't Bring Me Down,The Animals,1966,Don't Bring Me Down by The Animals,TRUE,1,1
+1730,House Of The Rising Sun,The Animals,1964,House Of The Rising Sun by The Animals,TRUE,18,18
+1731,Monterey,The Animals,1968,Monterey by The Animals,TRUE,3,3
+1732,San Franciscan Nights,The Animals,1967,San Franciscan Nights by The Animals,TRUE,1,1
+1733,Spill the Wine,The Animals,,Spill the Wine by The Animals,FALSE,3,0
+1734,Love Shack,The B-52's,1989,Love Shack by The B-52's,TRUE,5,5
+1735,Roam,The B-52's,,Roam by The B-52's,FALSE,1,0
+1736,Back On My Feet Again,The Babys,,Back On My Feet Again by The Babys,FALSE,3,0
+1737,Isn't It Time,The Babys,1977,Isn't It Time by The Babys,TRUE,1,1
+1738,Chest Fever,The Band,1968,Chest Fever by The Band,TRUE,1,1
+1739,The Night They Drove Old Dixie Down,The Band,1969,The Night They Drove Old Dixie Down by The Band,TRUE,3,3
+1740,The Weight,The Band,1968,The Weight by The Band,TRUE,24,24
+1741,Up On Cripple Creek,The Band,1969,Up On Cripple Creek by The Band,TRUE,1,1
+1742,Good Vibrations,The Beach Boys,1966,Good Vibrations by The Beach Boys,TRUE,1,1
+1743,A Day In The Life,The Beatles,1967,A Day In The Life by The Beatles,TRUE,31,31
+1744,A Hard Day's Night,The Beatles,1964,A Hard Day's Night by The Beatles,TRUE,5,5
+1745,A Saturday Club Xmas/Crimble Medley,The Beatles,,A Saturday Club Xmas/Crimble Medley by The Beatles,FALSE,1,0
+1746,Across The Universe,The Beatles,1970,Across The Universe by The Beatles,TRUE,1,1
+1747,All My Loving,The Beatles,1963,All My Loving by The Beatles,TRUE,4,4
+1748,All You Need Is Love,The Beatles,1967,All You Need Is Love by The Beatles,TRUE,3,3
+1749,And Your Bird Can Sing,The Beatles,1966,And Your Bird Can Sing by The Beatles,TRUE,1,1
+1750,ANYTIME AT ALL,The Beatles,1964,ANYTIME AT ALL by The Beatles,TRUE,1,1
+1751,Baby You're A Rich Man,The Beatles,1967,Baby You're A Rich Man by The Beatles,TRUE,1,1
+1752,Back In the U.S.S.R.,The Beatles,1968,Back In the U.S.S.R. by The Beatles,TRUE,28,28
+1753,BAD BOY,The Beatles,1965,BAD BOY by The Beatles,TRUE,1,1
+1754,BALLAD OF JOHN AND YOKO,The Beatles,,BALLAD OF JOHN AND YOKO by The Beatles,FALSE,1,0
+1755,Birthday,The Beatles,1969,Birthday by The Beatles,TRUE,12,12
+1756,Blackbird,The Beatles,1968,Blackbird by The Beatles,TRUE,3,3
+1757,Can't Buy Me Love,The Beatles,1964,Can't Buy Me Love by The Beatles,TRUE,5,5
+1758,Come Together,The Beatles,1969,Come Together by The Beatles,TRUE,69,69
+1759,Cry For A Shadow,The Beatles,1961,Cry For A Shadow by The Beatles,TRUE,1,1
+1760,Day Tripper,The Beatles,1965,Day Tripper by The Beatles,TRUE,2,2
+1761,Dear Prudence,The Beatles,1968,Dear Prudence by The Beatles,TRUE,1,1
+1762,Don't Let Me Down,The Beatles,1969,Don't Let Me Down by The Beatles,TRUE,1,1
+1763,Drive My Car,The Beatles,1965,Drive My Car by The Beatles,TRUE,4,4
+1764,Eight Days A Week,The Beatles,1964,Eight Days A Week by The Beatles,TRUE,6,6
+1765,Eleanor Rigby,The Beatles,1966,Eleanor Rigby by The Beatles,TRUE,20,20
+1766,Everybody's Got Something To Hide Except Me And My Monk,The Beatles,1968,Everybody's Got Something To Hide Except Me And My Monk by The Beatles,TRUE,1,1
+1767,Fixing A Hole,The Beatles,1967,Fixing A Hole by The Beatles,TRUE,2,2
+1768,From Me To You,The Beatles,1963,From Me To You by The Beatles,TRUE,1,1
+1769,Get Back,The Beatles,1969,Get Back by The Beatles,TRUE,52,52
+1770,Getting Better,The Beatles,1967,Getting Better by The Beatles,TRUE,1,1
+1771,GIRL,The Beatles,1965,GIRL by The Beatles,TRUE,1,1
+1772,Golden Slumbers,The Beatles,1969,Golden Slumbers by The Beatles,TRUE,5,5
+1773,Good Day Sunshine,The Beatles,1966,Good Day Sunshine by The Beatles,TRUE,1,1
+1774,Got To Get You Into My Life,The Beatles,1966,Got To Get You Into My Life by The Beatles,TRUE,5,5
+1775,Hello Goodbye,The Beatles,1967,Hello Goodbye by The Beatles,TRUE,26,26
+1776,Help!,The Beatles,1965,Help! by The Beatles,TRUE,4,4
+1777,Helter Skelter,The Beatles,1968,Helter Skelter by The Beatles,TRUE,5,5
+1778,Here Comes The Sun,The Beatles,1969,Here Comes The Sun by The Beatles,TRUE,24,24
+1779,Hey Jude,The Beatles,1968,Hey Jude by The Beatles,TRUE,22,22
+1780,I Am the Walrus,The Beatles,1967,I Am the Walrus by The Beatles,TRUE,5,5
+1781,I Feel Fine,The Beatles,1964,I Feel Fine by The Beatles,TRUE,5,5
+1782,I Saw Her Standing There,The Beatles,1963,I Saw Her Standing There by The Beatles,TRUE,3,3
+1783,I Want To Hold Your Hand,The Beatles,1963,I Want To Hold Your Hand by The Beatles,TRUE,2,2
+1784,I Want You (She's So Heavy),The Beatles,1969,I Want You (She's So Heavy) by The Beatles,TRUE,2,2
+1785,I'll Follow The Sun,The Beatles,1964,I'll Follow The Sun by The Beatles,TRUE,1,1
+1786,I'm A Loser,The Beatles,1964,I'm A Loser by The Beatles,TRUE,2,2
+1787,I'm Down,The Beatles,1965,I'm Down by The Beatles,TRUE,1,1
+1788,I've Got A Feeling,The Beatles,1970,I've Got A Feeling by The Beatles,TRUE,3,3
+1789,I've Just Seen A Face,The Beatles,1965,I've Just Seen A Face by The Beatles,TRUE,3,3
+1790,IN MY LIFE,The Beatles,1965,IN MY LIFE by The Beatles,TRUE,5,5
+1791,IT WON'T BE LONG,The Beatles,1963,IT WON'T BE LONG by The Beatles,TRUE,1,1
+1792,Lady Madonna,The Beatles,1968,Lady Madonna by The Beatles,TRUE,7,7
+1793,Let It Be,The Beatles,1970,Let It Be by The Beatles,TRUE,31,31
+1794,LITTLE CHILD,The Beatles,1963,LITTLE CHILD by The Beatles,TRUE,1,1
+1795,Love Me Do,The Beatles,1962,Love Me Do by The Beatles,TRUE,1,1
+1796,Lovely Rita,The Beatles,1967,Lovely Rita by The Beatles,TRUE,2,2
+1797,Lucy In The Sky With Diamonds,The Beatles,1967,Lucy In The Sky With Diamonds by The Beatles,TRUE,20,20
+1798,Magical Mystery Tour,The Beatles,1967,Magical Mystery Tour by The Beatles,TRUE,6,6
+1799,Maxwell's Silver Hammer,The Beatles,1969,Maxwell's Silver Hammer by The Beatles,TRUE,2,2
+1800,Norwegian Wood,The Beatles,1965,Norwegian Wood by The Beatles,TRUE,1,1
+1801,NOWHERE MAN,The Beatles,1965,NOWHERE MAN by The Beatles,TRUE,1,1
+1802,"Ob-la-di, Ob-la-da",The Beatles,1968,"Ob-la-di, Ob-la-da by The Beatles",TRUE,13,13
+1803,OH DARLING,The Beatles,1969,OH DARLING by The Beatles,TRUE,6,6
+1804,P.s. I Love You,The Beatles,1962,P.s. I Love You by The Beatles,TRUE,1,1
+1805,Paperback Writer,The Beatles,1966,Paperback Writer by The Beatles,TRUE,5,5
+1806,Penny Lane,The Beatles,1967,Penny Lane by The Beatles,TRUE,3,3
+1807,Please Please Me,The Beatles,1963,Please Please Me by The Beatles,TRUE,2,2
+1808,Reprise / Day in the Life,The Beatles,1967,Reprise / Day in the Life by The Beatles,TRUE,12,12
+1809,Revolution,The Beatles,1968,Revolution by The Beatles,TRUE,55,55
+1810,ROCK AND ROLL MUSIC,The Beatles,,ROCK AND ROLL MUSIC by The Beatles,FALSE,1,0
+1811,Rocky Raccoon,The Beatles,1968,Rocky Raccoon by The Beatles,TRUE,3,3
+1812,Roll Over Beethoven,The Beatles,,Roll Over Beethoven by The Beatles,FALSE,1,0
+1813,Sgt. Pepper Inner Groove,The Beatles,1967,Sgt. Pepper Inner Groove by The Beatles,TRUE,2,2
+1814,Sgt. Pepper's Lonely Hearts Club Band,The Beatles,1967,Sgt. Pepper's Lonely Hearts Club Band by The Beatles,TRUE,1,1
+1815,Sgt. Pepper's Lonely Hearts Club Band (Reprise),The Beatles,1967,Sgt. Pepper's Lonely Hearts Club Band (Reprise) by The Beatles,TRUE,3,3
+1816,Sgt. Pepper/a Day In The Life,The Beatles,1967,Sgt. Pepper/a Day In The Life by The Beatles,TRUE,3,3
+1817,Sgt. Pepper/with A Little Help From My Friends,The Beatles,1967,Sgt. Pepper/with A Little Help From My Friends by The Beatles,TRUE,11,11
+1818,She Loves You,The Beatles,1963,She Loves You by The Beatles,TRUE,3,3
+1819,SHE'S A WOMAN,The Beatles,1964,SHE'S A WOMAN by The Beatles,TRUE,1,1
+1820,She's Leaving Home,The Beatles,1967,She's Leaving Home by The Beatles,TRUE,1,1
+1821,Something,The Beatles,1969,Something by The Beatles,TRUE,11,11
+1822,Strawberry Fields Forever,The Beatles,1967,Strawberry Fields Forever by The Beatles,TRUE,7,7
+1823,Sun King,The Beatles,1969,Sun King by The Beatles,TRUE,1,1
+1824,The Ballad Of John And Yoko,The Beatles,1969,The Ballad Of John And Yoko by The Beatles,TRUE,8,8
+1825,THE CONTINUING STORY OF BUNG,The Beatles,1968,THE CONTINUING STORY OF BUNG by The Beatles,TRUE,1,1
+1826,The Fool On The Hill,The Beatles,1967,The Fool On The Hill by The Beatles,TRUE,2,2
+1827,The Long And Winding Road,The Beatles,1970,The Long And Winding Road by The Beatles,TRUE,2,2
+1828,The Word,The Beatles,1965,The Word by The Beatles,TRUE,1,1
+1829,Things We Said Today,The Beatles,1964,Things We Said Today by The Beatles,TRUE,2,2
+1830,Ticket to Ride,The Beatles,1965,Ticket to Ride by The Beatles,TRUE,4,4
+1831,Twist and Shout,The Beatles,1963,Twist and Shout by The Beatles,TRUE,5,5
+1832,Two Of Us,The Beatles,1970,Two Of Us by The Beatles,TRUE,2,2
+1833,We Can Work It Out,The Beatles,1965,We Can Work It Out by The Beatles,TRUE,18,18
+1834,When I'm 64,The Beatles,1967,When I'm 64 by The Beatles,TRUE,1,1
+1835,While My Guitar Gently Weeps,The Beatles,1968,While My Guitar Gently Weeps by The Beatles,TRUE,29,29
+1836,Wild Honey Pie,The Beatles,1968,Wild Honey Pie by The Beatles,TRUE,1,1
+1837,With a Little Help From My Friends,The Beatles,1967,With a Little Help From My Friends by The Beatles,TRUE,7,7
+1838,Yellow Submarine,The Beatles,1966,Yellow Submarine by The Beatles,TRUE,4,4
+1839,Yesterday,The Beatles,1965,Yesterday by The Beatles,TRUE,10,10
+1840,You Never Give Me Your Money,The Beatles,1969,You Never Give Me Your Money by The Beatles,TRUE,2,2
+1841,You're Going To Lose That Girl,The Beatles,1965,You're Going To Lose That Girl by The Beatles,TRUE,1,1
+1842,YOUR MOTHER SHOULD KNOW,The Beatles,1967,YOUR MOTHER SHOULD KNOW by The Beatles,TRUE,1,1
+1843,A Conspiracy,The Black Crowes,,A Conspiracy by The Black Crowes,FALSE,1,0
+1844,Gone,The Black Crowes,,Gone by The Black Crowes,FALSE,1,0
+1845,Good Friday,The Black Crowes,,Good Friday by The Black Crowes,FALSE,1,0
+1846,Goodbye Daughters of the Revolution,The Black Crowes,2008,Goodbye Daughters of the Revolution by The Black Crowes,TRUE,1,1
+1847,Hard To Handle,The Black Crowes,1990,Hard To Handle by The Black Crowes,TRUE,83,83
+1848,Hotel Illness,The Black Crowes,,Hotel Illness by The Black Crowes,FALSE,1,0
+1849,Jealous Again,The Black Crowes,,Jealous Again by The Black Crowes,FALSE,24,0
+1850,Kickin' My Heart Around,The Black Crowes,,Kickin' My Heart Around by The Black Crowes,FALSE,1,0
+1851,Remedy,The Black Crowes,1992,Remedy by The Black Crowes,TRUE,7,7
+1852,She Talks To Angels,The Black Crowes,1990,She Talks To Angels by The Black Crowes,TRUE,44,44
+1853,Thorn In My Pride,The Black Crowes,,Thorn In My Pride by The Black Crowes,FALSE,3,0
+1854,Twice As Hard,The Black Crowes,1990,Twice As Hard by The Black Crowes,TRUE,10,10
+1855,Gold On The Ceiling,The Black Keys,2011,Gold On The Ceiling by The Black Keys,TRUE,3,3
+1856,Lonely Boy,The Black Keys,2011,Lonely Boy by The Black Keys,TRUE,6,6
+1857,Soul Man,The Blues Brothers,,Soul Man by The Blues Brothers,FALSE,3,0
+1858,Eight Miles High,The Byrds,1966,Eight Miles High by The Byrds,TRUE,2,2
+1859,Bye Bye Love,The Cars,1978,Bye Bye Love by The Cars,TRUE,48,48
+1860,Candy-o,The Cars,,Candy-o by The Cars,FALSE,8,0
+1861,Dangerious Type,The Cars,,Dangerious Type by The Cars,FALSE,10,0
+1862,Drive,The Cars,1984,Drive by The Cars,TRUE,3,3
+1863,Good Times Roll,The Cars,,Good Times Roll by The Cars,FALSE,88,0
+1864,Hello Again,The Cars,1984,Hello Again by The Cars,TRUE,6,6
+1865,It's All I Can Do,The Cars,,It's All I Can Do by The Cars,FALSE,3,0
+1866,Just What I Needed,The Cars,1978,Just What I Needed by The Cars,TRUE,113,113
+1867,Let's Go,The Cars,1979,Let's Go by The Cars,TRUE,73,73
+1868,Magic,The Cars,1984,Magic by The Cars,TRUE,11,11
+1869,Moving In Stereo,The Cars,1978,Moving In Stereo by The Cars,TRUE,53,53
+1870,My Best Friend's Girl,The Cars,,My Best Friend's Girl by The Cars,FALSE,65,0
+1871,Shake It Up,The Cars,1981,Shake It Up by The Cars,TRUE,27,27
+1872,Since You're Gone,The Cars,,Since You're Gone by The Cars,FALSE,3,0
+1873,Stereo/All Mixed Up,The Cars,,Stereo/All Mixed Up by The Cars,FALSE,3,0
+1874,Tonight She Comes,The Cars,,Tonight She Comes by The Cars,FALSE,18,0
+1875,You Might Think,The Cars,1984,You Might Think by The Cars,TRUE,19,19
+1876,You're All I've Got Tonight,The Cars,,You're All I've Got Tonight by The Cars,FALSE,38,0
+1877,Clampdown,The Clash,1979,Clampdown by The Clash,TRUE,2,2
+1878,I Fought The Law,The Clash,,I Fought The Law by The Clash,FALSE,2,0
+1879,London Calling,The Clash,1979,London Calling by The Clash,TRUE,8,8
+1880,Rock The Casbah,The Clash,1982,Rock The Casbah by The Clash,TRUE,61,61
+1881,Should I Stay Or Should,The Clash,1982,Should I Stay Or Should by The Clash,TRUE,58,58
+1882,Train In Vain,The Clash,1979,Train In Vain by The Clash,TRUE,12,12
+1883,Fire Woman,The Cult,1989,Fire Woman by The Cult,TRUE,3,3
+1884,"Another Park, Another Sunday",The Doobie Brothers,1974,"Another Park, Another Sunday by The Doobie Brothers",TRUE,1,1
+1885,Black Water,The Doobie Brothers,1974,Black Water by The Doobie Brothers,TRUE,57,57
+1886,China Grove,The Doobie Brothers,1973,China Grove by The Doobie Brothers,TRUE,40,40
+1887,It Keeps You Runnin',The Doobie Brothers,,It Keeps You Runnin' by The Doobie Brothers,FALSE,1,0
+1888,Jesus Is Just Alright,The Doobie Brothers,1972,Jesus Is Just Alright by The Doobie Brothers,TRUE,10,10
+1889,Listen To The Music,The Doobie Brothers,1972,Listen To The Music by The Doobie Brothers,TRUE,48,48
+1890,Livin' On the Fault Line,The Doobie Brothers,,Livin' On the Fault Line by The Doobie Brothers,FALSE,1,0
+1891,Long Train Runnin',The Doobie Brothers,1973,Long Train Runnin' by The Doobie Brothers,TRUE,55,55
+1892,Natural Thing,The Doobie Brothers,,Natural Thing by The Doobie Brothers,FALSE,1,0
+1893,Rockin' Down The Highway,The Doobie Brothers,1972,Rockin' Down The Highway by The Doobie Brothers,TRUE,13,13
+1894,South City Midnight Lady,The Doobie Brothers,,South City Midnight Lady by The Doobie Brothers,FALSE,1,0
+1895,Take Me In Your Arms,The Doobie Brothers,1975,Take Me In Your Arms by The Doobie Brothers,TRUE,13,13
+1896,Takin' It To The Streets,The Doobie Brothers,1976,Takin' It To The Streets by The Doobie Brothers,TRUE,1,1
+1897,UKIAH/THE CAPTAIN AND ME,The Doobie Brothers,,UKIAH/THE CAPTAIN AND ME by The Doobie Brothers,FALSE,1,0
+1898,What a Fool Believes,The Doobie Brothers,1978,What a Fool Believes by The Doobie Brothers,TRUE,5,5
+1899,Wheels Of Fortune,The Doobie Brothers,,Wheels Of Fortune by The Doobie Brothers,FALSE,1,0
+1900,Back Door Man,The Doors,1967,Back Door Man by The Doors,TRUE,4,4
+1901,Break On Through,The Doors,1967,Break On Through by The Doors,TRUE,52,52
+1902,Five To One,The Doors,1968,Five To One by The Doors,TRUE,5,5
+1903,Gloria,The Doors,,Gloria by The Doors,FALSE,5,0
+1904,"Hello, I Love You",The Doors,1968,"Hello, I Love You by The Doors",TRUE,35,35
+1905,L.A. Woman,The Doors,1971,L.A. Woman by The Doors,TRUE,31,31
+1906,Light My Fire,The Doors,1967,Light My Fire by The Doors,TRUE,49,49
+1907,Love Her Madly,The Doors,1971,Love Her Madly by The Doors,TRUE,56,56
+1908,Love Me Two Times,The Doors,1967,Love Me Two Times by The Doors,TRUE,51,51
+1909,Moonlight Drive,The Doors,1967,Moonlight Drive by The Doors,TRUE,17,17
+1910,Peace Frog,The Doors,1970,Peace Frog by The Doors,TRUE,9,9
+1911,People Are Strange,The Doors,1967,People Are Strange by The Doors,TRUE,53,53
+1912,Riders On The Storm,The Doors,1971,Riders On The Storm by The Doors,TRUE,43,43
+1913,Roadhouse Blues,The Doors,1967,Roadhouse Blues by The Doors,TRUE,49,49
+1914,Soul Kitchen,The Doors,,Soul Kitchen by The Doors,FALSE,15,0
+1915,The Changeling,The Doors,1971,The Changeling by The Doors,TRUE,1,1
+1916,The Crystal Ship,The Doors,1967,The Crystal Ship by The Doors,TRUE,11,11
+1917,Touch Me,The Doors,1969,Touch Me by The Doors,TRUE,45,45
+1918,Twentieth Century Fox,The Doors,1967,Twentieth Century Fox by The Doors,TRUE,2,2
+1919,Waiting For The Sun,The Doors,1970,Waiting For The Sun by The Doors,TRUE,17,17
+1920,When the Music's Over,The Doors,1967,When the Music's Over by The Doors,TRUE,1,1
+1921,Tuff Enuff,The Fabulous Thunderbirds,,Tuff Enuff by The Fabulous Thunderbirds,FALSE,15,0
+1922,Radioactive,The Firm,1985,Radioactive by The Firm,TRUE,3,3
+1923,One Thing Leads To Another,The Fixx,1983,One Thing Leads To Another by The Fixx,TRUE,22,22
+1924,Saved By Zero,The Fixx,1983,Saved By Zero by The Fixx,TRUE,2,2
+1925,Iris,The Goo Goo Dolls,1998,Iris by The Goo Goo Dolls,TRUE,2,2
+1926,Funk #49,The James Gang,1970,Funk #49 by The James Gang,TRUE,4,4
+1927,This Beat Goes on/Switching to Glide,The Kings,,This Beat Goes on/Switching to Glide by The Kings,FALSE,1,0
+1928,A Well Respected Man,The Kinks,,A Well Respected Man by The Kinks,FALSE,16,0
+1929,All Day And All Of The Night,The Kinks,1964,All Day And All Of The Night by The Kinks,TRUE,7,7
+1930,Apeman,The Kinks,1971,Apeman by The Kinks,TRUE,2,2
+1931,Come Dancing,The Kinks,1983,Come Dancing by The Kinks,TRUE,1,1
+1932,Destroyer,The Kinks,1981,Destroyer by The Kinks,TRUE,3,3
+1933,Lola,The Kinks,1970,Lola by The Kinks,TRUE,40,40
+1934,Sunny Afternoon,The Kinks,1966,Sunny Afternoon by The Kinks,TRUE,1,1
+1935,Superman,The Kinks,,Superman by The Kinks,FALSE,1,0
+1936,Tired of Waiting,The Kinks,1965,Tired of Waiting by The Kinks,TRUE,1,1
+1937,Victoria,The Kinks,,Victoria by The Kinks,FALSE,16,0
+1938,Waterloo Sunset,The Kinks,1967,Waterloo Sunset by The Kinks,TRUE,9,9
+1939,You Really Got Me,The Kinks,1964,You Really Got Me by The Kinks,TRUE,20,20
+1940,My Sharona,The Knack,1979,My Sharona by The Knack,TRUE,13,13
+1941,Mrs. Robinson,The Lemonheads,,Mrs. Robinson by The Lemonheads,FALSE,2,0
+1942,Summer In the City,The Lovin' Spoonful,1966,Summer In the City by The Lovin' Spoonful,TRUE,2,2
+1943,CALIFORNIA DREAMIN',The Mamas,1966,CALIFORNIA DREAMIN' by The Mamas,TRUE,1,1
+1944,Can't You See,The Marshall Tucker Band,1973,Can't You See by The Marshall Tucker Band,TRUE,52,52
+1945,HEARD IT IN A LOVE SONG,The Marshall Tucker Band,1977,HEARD IT IN A LOVE SONG by The Marshall Tucker Band,TRUE,1,1
+1946,Take The Highway,The Marshall Tucker Band,,Take The Highway by The Marshall Tucker Band,FALSE,1,0
+1947,Gypsy,The Moody Blues,,Gypsy by The Moody Blues,FALSE,1,0
+1948,Question,The Moody Blues,1970,Question by The Moody Blues,TRUE,2,2
+1949,Ride My See Saw,The Moody Blues,1968,Ride My See Saw by The Moody Blues,TRUE,1,1
+1950,The Story In Your Eyes,The Moody Blues,1971,The Story In Your Eyes by The Moody Blues,TRUE,1,1
+1951,Your Wildest Dreams,The Moody Blues,1986,Your Wildest Dreams by The Moody Blues,TRUE,1,1
+1952,Life in the Fast Lane,The New Eagles,1976,Life in the Fast Lane by The New Eagles,TRUE,3,3
+1953,Come Out and Play,The Offspring,1994,Come Out and Play by The Offspring,TRUE,4,4
+1954,Self Esteem,The Offspring,1994,Self Esteem by The Offspring,TRUE,4,4
+1955,The Kids Aren't Alright,The Offspring,1998,The Kids Aren't Alright by The Offspring,TRUE,1,1
+1956,Your Love,The Outfield,1985,Your Love by The Outfield,TRUE,21,21
+1957,Green Grass & High Tides,The Outlaws,1975,Green Grass & High Tides by The Outlaws,TRUE,1,1
+1958,Can't Stand Losing You,The Police,1978,Can't Stand Losing You by The Police,TRUE,6,6
+1959,"De Do Do Do, De Da Da Da",The Police,1980,"De Do Do Do, De Da Da Da by The Police",TRUE,19,19
+1960,Don't Stand So Close To Me,The Police,1980,Don't Stand So Close To Me by The Police,TRUE,64,64
+1961,Driven to Tears,The Police,1980,Driven to Tears by The Police,TRUE,4,4
+1962,Every Breath You Take,The Police,1983,Every Breath You Take by The Police,TRUE,32,32
+1963,Every Little Thing She Does Is Magic,The Police,1981,Every Little Thing She Does Is Magic by The Police,TRUE,60,60
+1964,Invisible Sun,The Police,1981,Invisible Sun by The Police,TRUE,2,2
+1965,King Of Pain,The Police,1983,King Of Pain by The Police,TRUE,10,10
+1966,Message In A Bottle,The Police,1979,Message In A Bottle by The Police,TRUE,86,86
+1967,Roxanne,The Police,1978,Roxanne by The Police,TRUE,75,75
+1968,So Lonely,The Police,1978,So Lonely by The Police,TRUE,3,3
+1969,Spirits In The Material World,The Police,1981,Spirits In The Material World by The Police,TRUE,19,19
+1970,Synchronicity II,The Police,1983,Synchronicity II by The Police,TRUE,35,35
+1971,Walking On The Moon,The Police,1979,Walking On The Moon by The Police,TRUE,13,13
+1972,Wrapped Around Your Finger,The Police,1983,Wrapped Around Your Finger by The Police,TRUE,17,17
+1973,Some Like It Hot,The Power Station,1985,Some Like It Hot by The Power Station,TRUE,1,1
+1974,Back On The Chain Gang,The Pretenders,1982,Back On The Chain Gang by The Pretenders,TRUE,40,40
+1975,Brass In Pocket,The Pretenders,1980,Brass In Pocket by The Pretenders,TRUE,51,51
+1976,Don't Get Me Wrong,The Pretenders,1986,Don't Get Me Wrong by The Pretenders,TRUE,10,10
+1977,Message of Love,The Pretenders,,Message of Love by The Pretenders,FALSE,1,0
+1978,Middle Of The Road,The Pretenders,1984,Middle Of The Road by The Pretenders,TRUE,33,33
+1979,My City Was Gone,The Pretenders,1984,My City Was Gone by The Pretenders,TRUE,18,18
+1980,Mystery Achievement,The Pretenders,,Mystery Achievement by The Pretenders,FALSE,18,0
+1981,TALK OF THE TOWN,The Pretenders,1980,TALK OF THE TOWN by The Pretenders,TRUE,1,1
+1982,Blitzkrieg Bop,The Ramones,1976,Blitzkrieg Bop by The Ramones,TRUE,17,17
+1983,Do You Remember Rock 'n' Roll Radio,The Ramones,1980,Do You Remember Rock 'n' Roll Radio by The Ramones,TRUE,16,16
+1984,I Wanna Be Sedated,The Ramones,1978,I Wanna Be Sedated by The Ramones,TRUE,23,23
+1985,Rock 'n' Roll High School,The Ramones,,Rock 'n' Roll High School by The Ramones,FALSE,3,0
+1986,Rockaway Beach,The Ramones,,Rockaway Beach by The Ramones,FALSE,1,0
+1987,Teenage Lobotomy,The Ramones,,Teenage Lobotomy by The Ramones,FALSE,1,0
+1988,TALKING IN YOUR SLEEP,The Romantics,1983,TALKING IN YOUR SLEEP by The Romantics,TRUE,5,5
+1989,What I Like About You,The Romantics,1980,What I Like About You by The Romantics,TRUE,29,29
+1990,Itchycoo Park,The Small Faces,1967,Itchycoo Park by The Small Faces,TRUE,1,1
+1991,A Girl Like You,The Smithereens,1989,A Girl Like You by The Smithereens,TRUE,1,1
+1992,I'm A Man,The Spencer Davis Group,1967,I'm A Man by The Spencer Davis Group,TRUE,1,1
+1993,Dirty Water,The Standells,1966,Dirty Water by The Standells,TRUE,3,3
+1994,End of the Line,The Traveling Wilburys,1988,End of the Line by The Traveling Wilburys,TRUE,2,2
+1995,Handle with Care,The Traveling Wilburys,1988,Handle with Care by The Traveling Wilburys,TRUE,5,5
+1996,Tweeter and the Monkey Man,The Traveling Wilburys,,Tweeter and the Monkey Man by The Traveling Wilburys,FALSE,1,0
+1997,She's a Beauty,The Tubes,1983,She's a Beauty by The Tubes,TRUE,25,25
+1998,Talk To Ya Later,The Tubes,1981,Talk To Ya Later by The Tubes,TRUE,2,2
+1999,One Headlight,The Wallflowers,1996,One Headlight by The Wallflowers,TRUE,2,2
+2000,Seven Nation Army,The White Stripes,2003,Seven Nation Army by The White Stripes,TRUE,1,1
+2001,5:15,The Who,1973,0.21875 by The Who,TRUE,3,3
+2002,ANOTHER TRICKY DAY,The Who,,ANOTHER TRICKY DAY by The Who,FALSE,1,0
+2003,Athena,The Who,1982,Athena by The Who,TRUE,5,5
+2004,Baba O'Reilly,The Who,1971,Baba O'Reilly by The Who,TRUE,85,85
+2005,Bargain,The Who,1971,Bargain by The Who,TRUE,35,35
+2006,Behind Blue Eyes,The Who,1971,Behind Blue Eyes by The Who,TRUE,75,75
+2007,Eminence Front,The Who,1982,Eminence Front by The Who,TRUE,19,19
+2008,Getting In Tune,The Who,,Getting In Tune by The Who,FALSE,2,0
+2009,Going Mobile,The Who,1971,Going Mobile by The Who,TRUE,12,12
+2010,Happy Jack,The Who,1966,Happy Jack by The Who,TRUE,2,2
+2011,I Can See For Miles,The Who,1968,I Can See For Miles by The Who,TRUE,10,10
+2012,I CAN'T EXPLAIN,The Who,1965,I CAN'T EXPLAIN by The Who,TRUE,1,1
+2013,I'm Free,The Who,1969,I'm Free by The Who,TRUE,1,1
+2014,Join Together,The Who,1972,Join Together by The Who,TRUE,4,4
+2015,Long Live Rock,The Who,1972,Long Live Rock by The Who,TRUE,13,13
+2016,Love Reign O'er Me,The Who,1973,Love Reign O'er Me by The Who,TRUE,18,18
+2017,Magic Bus,The Who,1968,Magic Bus by The Who,TRUE,12,12
+2018,My Generation,The Who,1965,My Generation by The Who,TRUE,50,50
+2019,Pinball Wizard,The Who,1969,Pinball Wizard by The Who,TRUE,54,54
+2020,Shakin' All Over,The Who,,Shakin' All Over by The Who,FALSE,1,0
+2021,Squeeze Box,The Who,1975,Squeeze Box by The Who,TRUE,15,15
+2022,Substitute,The Who,1966,Substitute by The Who,TRUE,8,8
+2023,Summertime Blues,The Who,,Summertime Blues by The Who,FALSE,9,0
+2024,The Kids Are Alright,The Who,1965,The Kids Are Alright by The Who,TRUE,2,2
+2025,The Real Me,The Who,1973,The Real Me by The Who,TRUE,12,12
+2026,THE SEEKER,The Who,1970,THE SEEKER by The Who,TRUE,1,1
+2027,THE SONG IS OVER,The Who,1971,THE SONG IS OVER by The Who,TRUE,1,1
+2028,We're Not Gonna Take It,The Who,1969,We're Not Gonna Take It by The Who,TRUE,3,3
+2029,Who Are You,The Who,1978,Who Are You by The Who,TRUE,94,94
+2030,Won't Get Fooled Again,The Who,1971,Won't Get Fooled Again by The Who,TRUE,56,56
+2031,You Better You Bet,The Who,1981,You Better You Bet by The Who,TRUE,26,26
+2032,Get Together,The Youngbloods,2005,Get Together by The Youngbloods,TRUE,2,2
+2033,Jailbreak,Thin Lizzy,1976,Jailbreak by Thin Lizzy,TRUE,16,16
+2034,The Boys Are Back In Town,Thin Lizzy,1976,The Boys Are Back In Town by Thin Lizzy,TRUE,106,106
+2035,The Cowboy Song,Thin Lizzy,,The Cowboy Song by Thin Lizzy,FALSE,1,0
+2036,Semi-Charmed Life,Third Eye Blind,1997,Semi-Charmed Life by Third Eye Blind,TRUE,1,1
+2037,Something In the Air,Thunderclap Newman,1969,Something In the Air by Thunderclap Newman,TRUE,1,1
+2038,Bang the Drum All Day,Todd Rundgren,1983,Bang the Drum All Day by Todd Rundgren,TRUE,9,9
+2039,Hello It's Me,Todd Rundgren,1972,Hello It's Me by Todd Rundgren,TRUE,1,1
+2040,I Saw the Light,Todd Rundgren,1972,I Saw the Light by Todd Rundgren,TRUE,2,2
+2041,We Gotta Get You a Woman,Todd Rundgren,1970,We Gotta Get You a Woman by Todd Rundgren,TRUE,1,1
+2042,Life Is a Highway,Tom Cochrane,1992,Life Is a Highway by Tom Cochrane,TRUE,10,10
+2043,A Face In The Crowd,Tom Petty & The Heartbreakers,,A Face In The Crowd by Tom Petty & The Heartbreakers,FALSE,1,0
+2044,A Woman In Love,Tom Petty & The Heartbreakers,1981,A Woman In Love by Tom Petty & The Heartbreakers,TRUE,2,2
+2045,American Dream Plan B,Tom Petty & The Heartbreakers,,American Dream Plan B by Tom Petty & The Heartbreakers,FALSE,2,0
+2046,American Girl,Tom Petty & The Heartbreakers,1977,American Girl by Tom Petty & The Heartbreakers,TRUE,74,74
+2047,Breakdown,Tom Petty & The Heartbreakers,1977,Breakdown by Tom Petty & The Heartbreakers,TRUE,88,88
+2048,Change of Heart,Tom Petty & The Heartbreakers,,Change of Heart by Tom Petty & The Heartbreakers,FALSE,1,0
+2049,Don't Come Around Here No More,Tom Petty & The Heartbreakers,1985,Don't Come Around Here No More by Tom Petty & The Heartbreakers,TRUE,49,49
+2050,Don't Do Me Like That,Tom Petty & The Heartbreakers,1979,Don't Do Me Like That by Tom Petty & The Heartbreakers,TRUE,69,69
+2051,Even the Losers,Tom Petty & The Heartbreakers,,Even the Losers by Tom Petty & The Heartbreakers,FALSE,10,0
+2052,Fooled Again (I Don't Like It),Tom Petty & The Heartbreakers,,Fooled Again (I Don't Like It) by Tom Petty & The Heartbreakers,FALSE,1,0
+2053,Free Fallin',Tom Petty & The Heartbreakers,1989,Free Fallin' by Tom Petty & The Heartbreakers,TRUE,90,90
+2054,Here Comes My Girl,Tom Petty & The Heartbreakers,1979,Here Comes My Girl by Tom Petty & The Heartbreakers,TRUE,17,17
+2055,I Need to Know,Tom Petty & The Heartbreakers,,I Need to Know by Tom Petty & The Heartbreakers,FALSE,14,0
+2056,I Won't Back Down,Tom Petty & The Heartbreakers,1989,I Won't Back Down by Tom Petty & The Heartbreakers,TRUE,76,76
+2057,Into the Great Wide Open,Tom Petty & The Heartbreakers,,Into the Great Wide Open by Tom Petty & The Heartbreakers,FALSE,8,0
+2058,Jammin' Me,Tom Petty & The Heartbreakers,1987,Jammin' Me by Tom Petty & The Heartbreakers,TRUE,2,2
+2059,Learning To Fly,Tom Petty & The Heartbreakers,1991,Learning To Fly by Tom Petty & The Heartbreakers,TRUE,23,23
+2060,Listen To Your Heart,Tom Petty & The Heartbreakers,,Listen To Your Heart by Tom Petty & The Heartbreakers,FALSE,1,0
+2061,Mary Jane's Last Dance,Tom Petty & The Heartbreakers,1993,Mary Jane's Last Dance by Tom Petty & The Heartbreakers,TRUE,51,51
+2062,Refugee,Tom Petty & The Heartbreakers,1979,Refugee by Tom Petty & The Heartbreakers,TRUE,97,97
+2063,Runnin' Down a Dream,Tom Petty & The Heartbreakers,1989,Runnin' Down a Dream by Tom Petty & The Heartbreakers,TRUE,96,96
+2064,Stop Draggin' My Heart Around,Tom Petty & The Heartbreakers,1981,Stop Draggin' My Heart Around by Tom Petty & The Heartbreakers,TRUE,2,2
+2065,The Waiting,Tom Petty & The Heartbreakers,1981,The Waiting by Tom Petty & The Heartbreakers,TRUE,37,37
+2066,U Get Me High,Tom Petty & The Heartbreakers,,U Get Me High by Tom Petty & The Heartbreakers,FALSE,2,0
+2067,Yer So Bad,Tom Petty & The Heartbreakers,,Yer So Bad by Tom Petty & The Heartbreakers,FALSE,1,0
+2068,You Don't Know How It Feels,Tom Petty & The Heartbreakers,1994,You Don't Know How It Feels by Tom Petty & The Heartbreakers,TRUE,31,31
+2069,You Get Me High,Tom Petty & The Heartbreakers,,You Get Me High by Tom Petty & The Heartbreakers,FALSE,8,0
+2070,You Got Lucky,Tom Petty & The Heartbreakers,1982,You Got Lucky by Tom Petty & The Heartbreakers,TRUE,71,71
+2071,You Wreck Me,Tom Petty & The Heartbreakers,1994,You Wreck Me by Tom Petty & The Heartbreakers,TRUE,41,41
+2072,867-5309 / Jenny,Tommy Tutone,1982,867-5309 / Jenny by Tommy Tutone,TRUE,11,11
+2073,If You Could Only See,Tonic,,If You Could Only See by Tonic,FALSE,1,0
+2074,AFRICA,Toto,1982,AFRICA by Toto,TRUE,2,2
+2075,Hold The Line,Toto,1978,Hold The Line by Toto,TRUE,72,72
+2076,Dear Mr. Fantasy,Traffic,,Dear Mr. Fantasy by Traffic,FALSE,4,0
+2077,Empty Pages,Traffic,,Empty Pages by Traffic,FALSE,2,0
+2078,Medicated Goo,Traffic,,Medicated Goo by Traffic,FALSE,1,0
+2079,Medusa,Trapeze,,Medusa by Trapeze,FALSE,1,0
+2080,Fight The Good Fight,Triumph,,Fight The Good Fight by Triumph,FALSE,7,0
+2081,Hold On,Triumph,1979,Hold On by Triumph,TRUE,1,1
+2082,I Can Survive,Triumph,,I Can Survive by Triumph,FALSE,1,0
+2083,Lay It On the Line,Triumph,,Lay It On the Line by Triumph,FALSE,52,0
+2084,Magic Power,Triumph,,Magic Power by Triumph,FALSE,27,0
+2085,Happy Together,Turtles,1967,Happy Together by Turtles,TRUE,1,1
+2086,I Wanna Rock,Twisted Sister,1984,I Wanna Rock by Twisted Sister,TRUE,7,7
+2087,We're Not Gonna Take It,Twisted Sister,1984,We're Not Gonna Take It by Twisted Sister,TRUE,39,39
+2088,Angel Of Harlem,U2,1988,Angel Of Harlem by U2,TRUE,1,1
+2089,Bad,U2,1984,Bad by U2,TRUE,5,5
+2090,Beautiful Day,U2,2000,Beautiful Day by U2,TRUE,7,7
+2091,Bullet the Blue Sky,U2,1987,Bullet the Blue Sky by U2,TRUE,5,5
+2092,Desire,U2,1988,Desire by U2,TRUE,13,13
+2093,Even Better Than the Real Thing,U2,1991,Even Better Than the Real Thing by U2,TRUE,3,3
+2094,I Still Haven't Found What I'm Looking For,U2,1987,I Still Haven't Found What I'm Looking For by U2,TRUE,53,53
+2095,I Will Follow,U2,1980,I Will Follow by U2,TRUE,4,4
+2096,MLK/Pride,U2,1984,MLK/Pride by U2,TRUE,5,5
+2097,Mysterious Ways,U2,1991,Mysterious Ways by U2,TRUE,38,38
+2098,New Year's Day,U2,1983,New Year's Day by U2,TRUE,88,88
+2099,One,U2,1991,One by U2,TRUE,18,18
+2100,Pride (In the Name of Love),U2,1984,Pride (In the Name of Love) by U2,TRUE,60,60
+2101,Sunday Bloody Sunday,U2,1983,Sunday Bloody Sunday by U2,TRUE,54,54
+2102,Sweetest Thing,U2,1987,Sweetest Thing by U2,TRUE,1,1
+2103,Vertigo,U2,2004,Vertigo by U2,TRUE,3,3
+2104,When Love Comes to Town,U2,1988,When Love Comes to Town by U2,TRUE,1,1
+2105,Where the Streets Have No Name,U2,1987,Where the Streets Have No Name by U2,TRUE,36,36
+2106,With Or Without You,U2,1987,With Or Without You by U2,TRUE,49,49
+2107,Red Red Wine,UB40,1983,Red Red Wine by UB40,TRUE,2,2
+2108,Lights Out (Live),UFO,1976,Lights Out (Live) by UFO,TRUE,1,1
+2109,Too Hot To Handle,UFO,,Too Hot To Handle by UFO,FALSE,19,0
+2110,Easy Livin',Uriah Heep,,Easy Livin' by Uriah Heep,FALSE,4,0
+2111,Stealin',Uriah Heep,1973,Stealin' by Uriah Heep,TRUE,2,2
+2112,The Wizard,Uriah Heep,1972,The Wizard by Uriah Heep,TRUE,1,1
+2113,(Oh) Pretty Woman,Van Halen,1982,(Oh) Pretty Woman by Van Halen,TRUE,34,34
+2114,1984/jump,Van Halen,1984,1984/jump by Van Halen,TRUE,3,3
+2115,Ain't Talkin' 'bout Love,Van Halen,1978,Ain't Talkin' 'bout Love by Van Halen,TRUE,69,69
+2116,And the Cradle Will Rock...,Van Halen,1980,And the Cradle Will Rock... by Van Halen,TRUE,43,43
+2117,Atomic Punk,Van Halen,,Atomic Punk by Van Halen,FALSE,1,0
+2118,Beautiful Girls,Van Halen,1979,Beautiful Girls by Van Halen,TRUE,44,44
+2119,Best Of Both Worlds,Van Halen,,Best Of Both Worlds by Van Halen,FALSE,6,0
+2120,Black And Blue,Van Halen,,Black And Blue by Van Halen,FALSE,9,0
+2121,Dance the Night Away,Van Halen,1979,Dance the Night Away by Van Halen,TRUE,106,106
+2122,Dancing In the Street,Van Halen,1982,Dancing In the Street by Van Halen,TRUE,57,57
+2123,Dreams,Van Halen,1986,Dreams by Van Halen,TRUE,25,25
+2124,Drop Dead Legs,Van Halen,,Drop Dead Legs by Van Halen,FALSE,4,0
+2125,Eruption - You Really Got Me,Van Halen,1978,Eruption - You Really Got Me by Van Halen,TRUE,25,25
+2126,Everybody Wants Some!!,Van Halen,1980,Everybody Wants Some!! by Van Halen,TRUE,16,16
+2127,Feel Your Love Tonight,Van Halen,,Feel Your Love Tonight by Van Halen,FALSE,20,0
+2128,Feels So Good,Van Halen,,Feels So Good by Van Halen,FALSE,1,0
+2129,Finish What Ya Started,Van Halen,,Finish What Ya Started by Van Halen,FALSE,27,0
+2130,Hot for Teacher,Van Halen,1984,Hot for Teacher by Van Halen,TRUE,52,52
+2131,I'll Wait,Van Halen,,I'll Wait by Van Halen,FALSE,53,0
+2132,I'm the One,Van Halen,1978,I'm the One by Van Halen,TRUE,4,4
+2133,Ice Cream Man,Van Halen,1978,Ice Cream Man by Van Halen,TRUE,13,13
+2134,Intruder/ Pretty Woman,Van Halen,,Intruder/ Pretty Woman by Van Halen,FALSE,10,0
+2135,Jamie's Cryin',Van Halen,1978,Jamie's Cryin' by Van Halen,TRUE,96,96
+2136,Jump,Van Halen,1984,Jump by Van Halen,TRUE,72,72
+2137,Little Dreamer,Van Halen,,Little Dreamer by Van Halen,FALSE,11,0
+2138,Little Guitars,Van Halen,1982,Little Guitars by Van Halen,TRUE,6,6
+2139,Love Walks In,Van Halen,1986,Love Walks In by Van Halen,TRUE,4,4
+2140,Mean Street,Van Halen,,Mean Street by Van Halen,FALSE,1,0
+2141,Panama,Van Halen,1984,Panama by Van Halen,TRUE,89,89
+2142,Poundcake,Van Halen,1991,Poundcake by Van Halen,TRUE,1,1
+2143,PRETTY WOMAN,Van Halen,,PRETTY WOMAN by Van Halen,FALSE,5,0
+2144,Right Now,Van Halen,1991,Right Now by Van Halen,TRUE,25,25
+2145,Runaround,Van Halen,,Runaround by Van Halen,FALSE,1,0
+2146,Runnin' with the Devil,Van Halen,1978,Runnin' with the Devil by Van Halen,TRUE,81,81
+2147,Somebody Get Me A Doctor,Van Halen,,Somebody Get Me A Doctor by Van Halen,FALSE,3,0
+2148,Summer Nights,Van Halen,1986,Summer Nights by Van Halen,TRUE,4,4
+2149,Take Your Whiskey Home,Van Halen,,Take Your Whiskey Home by Van Halen,FALSE,8,0
+2150,Top Jimmy,Van Halen,,Top Jimmy by Van Halen,FALSE,23,0
+2151,Top of the World,Van Halen,,Top of the World by Van Halen,FALSE,5,0
+2152,Unchained,Van Halen,1981,Unchained by Van Halen,TRUE,49,49
+2153,When It's Love,Van Halen,1988,When It's Love by Van Halen,TRUE,22,22
+2154,Where Have All the Good Times Gone!,Van Halen,1982,Where Have All the Good Times Gone! by Van Halen,TRUE,1,1
+2155,Why Can't This Be Love,Van Halen,1986,Why Can't This Be Love by Van Halen,TRUE,44,44
+2156,You Really Got Me,Van Halen,1978,You Really Got Me by Van Halen,TRUE,70,70
+2157,And It Stoned Me,Van Morrison,,And It Stoned Me by Van Morrison,FALSE,1,0
+2158,BLUE MONEY,Van Morrison,,BLUE MONEY by Van Morrison,FALSE,1,0
+2159,Brown Eyed Girl,Van Morrison,1967,Brown Eyed Girl by Van Morrison,TRUE,55,55
+2160,CRAZY LOVE,Van Morrison,1970,CRAZY LOVE by Van Morrison,TRUE,1,1
+2161,Domino,Van Morrison,1970,Domino by Van Morrison,TRUE,1,1
+2162,Gloria,Van Morrison,,Gloria by Van Morrison,FALSE,1,0
+2163,Into The Mystic,Van Morrison,1970,Into The Mystic by Van Morrison,TRUE,1,1
+2164,Jackie Wilson Said,Van Morrison,,Jackie Wilson Said by Van Morrison,FALSE,1,0
+2165,Moondance,Van Morrison,1970,Moondance by Van Morrison,TRUE,14,14
+2166,Wild Night,Van Morrison,1971,Wild Night by Van Morrison,TRUE,5,5
+2167,Blister In the Sun,Violent Femmes,1982,Blister In the Sun by Violent Femmes,TRUE,1,1
+2168,Edge of a Broken Heart,Vixen,,Edge of a Broken Heart by Vixen,FALSE,2,0
+2169,Low Rider,War,1975,Low Rider by War,TRUE,81,81
+2170,Spill the Wine,War,1970,Spill the Wine by War,TRUE,2,2
+2171,The Cisco Kid,War,1972,The Cisco Kid by War,TRUE,3,3
+2172,Why Can't We Be Friends,War,1975,Why Can't We Be Friends by War,TRUE,1,1
+2173,Cherry Pie,Warrant,1990,Cherry Pie by Warrant,TRUE,6,6
+2174,Uncle Tom's Cabin,Warrant,,Uncle Tom's Cabin by Warrant,FALSE,1,0
+2175,"Lawyers, Guns and Money",Warren Zevon,1978,"Lawyers, Guns and Money by Warren Zevon",TRUE,3,3
+2176,Werewolves of London,Warren Zevon,1978,Werewolves of London by Warren Zevon,TRUE,52,52
+2177,Buddy Holly,Weezer,1994,Buddy Holly by Weezer,TRUE,2,2
+2178,Street Corner Serenade,Wet Willie,,Street Corner Serenade by Wet Willie,FALSE,2,0
+2179,Wait,White Lion,,Wait by White Lion,FALSE,1,0
+2180,Fool for Your Loving,Whitesnake,1980,Fool for Your Loving by Whitesnake,TRUE,3,3
+2181,Here I Go Again,Whitesnake,1987,Here I Go Again by Whitesnake,TRUE,84,84
+2182,Is This Love,Whitesnake,1987,Is This Love by Whitesnake,TRUE,7,7
+2183,Slide It In,Whitesnake,1984,Slide It In by Whitesnake,TRUE,1,1
+2184,Slow An' Easy,Whitesnake,,Slow An' Easy by Whitesnake,FALSE,6,0
+2185,Still of the Night,Whitesnake,,Still of the Night by Whitesnake,FALSE,14,0
+2186,Who Are You?,Why Not,,Who Are You? by Why Not,FALSE,5,0
+2187,PLAY THAT FUNKY MUSIC,Wild Cherry,1976,PLAY THAT FUNKY MUSIC by Wild Cherry,TRUE,4,4
+2188,Night Moves,Wildlife,,Night Moves by Wildlife,FALSE,23,0
+2189,We've Got Tonight,Wildlife,,We've Got Tonight by Wildlife,FALSE,4,0
+2190,Can't Get Enough,Winger,,Can't Get Enough by Winger,FALSE,1,0
+2191,Headed For A Heartbreak,Winger,,Headed For A Heartbreak by Winger,FALSE,1,0
+2192,Seventeen,Winger,,Seventeen by Winger,FALSE,2,0
+2193,Persephone,Wishbone Ash,1980,Persephone by Wishbone Ash,TRUE,1,1
+2194,Summertime Girls,Y&T,,Summertime Girls by Y&T,FALSE,4,0
+2195,Changes,Yes,1983,Changes by Yes,TRUE,13,13
+2196,I've Seen All Good People,Yes,1971,I've Seen All Good People by Yes,TRUE,34,34
+2197,It Can Happen,Yes,1983,It Can Happen by Yes,TRUE,3,3
+2198,Leave It,Yes,1983,Leave It by Yes,TRUE,20,20
+2199,Long Distance Runaround,Yes,1972,Long Distance Runaround by Yes,TRUE,35,35
+2200,Owner of a Lonely Heart,Yes,1983,Owner of a Lonely Heart by Yes,TRUE,81,81
+2201,Roundabout,Yes,1971,Roundabout by Yes,TRUE,44,44
+2202,Starship Trooper,Yes,1971,Starship Trooper by Yes,TRUE,1,1
+2203,Wonderous Stories,Yes,,Wonderous Stories by Yes,FALSE,5,0
+2204,Yours Is No Disgrace,Yes,1971,Yours Is No Disgrace by Yes,TRUE,1,1
+2205,Tell Me What You Want,Zebra,,Tell Me What You Want by Zebra,FALSE,2,0
+2206,Who's Behind The Door,Zebra,,Who's Behind The Door by Zebra,FALSE,1,0
+2207,Time of the Season,Zombies,1968,Time of the Season by Zombies,TRUE,14,14
+2208,A Fool for Your Stockings,ZZ Top,,A Fool for Your Stockings by ZZ Top,FALSE,1,0
+2209,Arrested For Driving While Blind,ZZ Top,1976,Arrested For Driving While Blind by ZZ Top,TRUE,1,1
+2210,Beer Drinkers & Hell Raisers,ZZ Top,1973,Beer Drinkers & Hell Raisers by ZZ Top,TRUE,8,8
+2211,Cheap Sunglasses,ZZ Top,1980,Cheap Sunglasses by ZZ Top,TRUE,34,34
+2212,Gimme All Your Lovin,ZZ Top,1983,Gimme All Your Lovin by ZZ Top,TRUE,86,86
+2213,Got Me Under Pressure,ZZ Top,1983,Got Me Under Pressure by ZZ Top,TRUE,29,29
+2214,Heard It On the X,ZZ Top,1975,Heard It On the X by ZZ Top,TRUE,2,2
+2215,I Thank You,ZZ Top,,I Thank You by ZZ Top,FALSE,16,0
+2216,"I'm Bad, I'm Nationwide",ZZ Top,,"I'm Bad, I'm Nationwide by ZZ Top",FALSE,10,0
+2217,Jesus Just Left Chicago,ZZ Top,1973,Jesus Just Left Chicago by ZZ Top,TRUE,6,6
+2218,Just Got Paid,ZZ Top,,Just Got Paid by ZZ Top,FALSE,2,0
+2219,La Grange,ZZ Top,1973,La Grange by ZZ Top,TRUE,111,111
+2220,Legs,ZZ Top,1983,Legs by ZZ Top,TRUE,121,121
+2221,My Head's In Mississippi,ZZ Top,,My Head's In Mississippi by ZZ Top,FALSE,1,0
+2222,Party On The Patio,ZZ Top,,Party On The Patio by ZZ Top,FALSE,14,0
+2223,Pearl Necklace,ZZ Top,1981,Pearl Necklace by ZZ Top,TRUE,5,5
+2224,Sharp Dressed Man,ZZ Top,1983,Sharp Dressed Man by ZZ Top,TRUE,120,120
+2225,She Loves My Automobile,ZZ Top,,She Loves My Automobile by ZZ Top,FALSE,1,0
+2226,Tube Snake Boogie,ZZ Top,1981,Tube Snake Boogie by ZZ Top,TRUE,32,32
+2227,Tush,ZZ Top,1975,Tush by ZZ Top,TRUE,109,109
+2228,TV Dinners,ZZ Top,1983,TV Dinners by ZZ Top,TRUE,1,1
+2229,WAITIN' FOR THE BUS/JESUS JUST LEFT CHICAGO,ZZ Top,1973,WAITIN' FOR THE BUS/JESUS JUST LEFT CHICAGO by ZZ Top,TRUE,2,2

@@ -1,0 +1,77 @@
+<!DOCTYPE html><html><head><title>R: Both Parties Think The Mueller Report Was Fair. They Just...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>mueller_approval_polls</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Both Parties Think The Mueller Report Was Fair. They Just Completely Disagree On What It Says.</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+'Both Parties Think The Mueller Report Was Fair. They Just Completely Disagree On What It Says.'
+<a href="https://fivethirtyeight.com/features/both-parties-think-the-mueller-report-was-fair-they-just-disagree-on-what-it-says/">https://fivethirtyeight.com/features/both-parties-think-the-mueller-report-was-fair-they-just-disagree-on-what-it-says/</a>
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>mueller_approval_polls
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A dataset with 65 rows representing every job approval poll of Robert Mueller that we could find from when Mueller was appointed as special council on May 17, 2017 through May 3, 2019 and 12 variables
+</p>
+
+<dl>
+<dt>start</dt><dd><p>the start date of the poll</p>
+</dd>
+<dt>end</dt><dd><p>the end date of the poll</p>
+</dd>
+<dt>pollster</dt><dd><p>the name of the pollster</p>
+</dd>
+<dt>sample_size</dt><dd><p>the size of the poll sample</p>
+</dd>
+<dt>population</dt><dd><p>unknown</p>
+</dd>
+<dt>text</dt><dd><p>the text of the poll question</p>
+</dd>
+<dt>approve</dt><dd><p>the number of approval in the poll</p>
+</dd>
+<dt>disapprove</dt><dd><p>the number of disapproval in the poll</p>
+</dd>
+<dt>unsure</dt><dd><p>the number of unsure in the poll</p>
+</dd>
+<dt>approve_(republican)</dt><dd><p>the number of approval from Republican</p>
+</dd>
+<dt>approve_(democrat)</dt><dd><p>the number of approval from Democrat</p>
+</dd>
+<dt>url</dt><dd><p>the url of the poll</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Polls, Washington Post / ABC and Washington Post / Schar School Polls
+</p>
+
+</main>
+
+</div>
+</body></html>

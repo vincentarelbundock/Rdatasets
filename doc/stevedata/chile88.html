@@ -1,0 +1,97 @@
+<!DOCTYPE html><html><head><title>R: Voting Intentions in the 1988 Chilean Plebiscite</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>chile88</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Voting Intentions in the 1988 Chilean Plebiscite</h2>
+
+<h3>Description</h3>
+
+<p>A data set on voting intentions in the 1988 Chilean plebiscite, which
+ultimately ended the military junta rule of Augusto Pinochet.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>chile88
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 2700 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt><code>region</code></dt><dd><p>a character vector for the region of Chile in which the respondent lives</p>
+</dd>
+<dt><code>pop</code></dt><dd><p>the population size of the respondent's community</p>
+</dd>
+<dt><code>sex</code></dt><dd><p>a numeric vector that equals 1 if the respondent is a woman</p>
+</dd>
+<dt><code>age</code></dt><dd><p>a numeric vector for the age of the respondent</p>
+</dd>
+<dt><code>educ</code></dt><dd><p>a character vector indicating whether the respondent has a primary (P), secondary (S), or post-secondary (PS) education</p>
+</dd>
+<dt><code>income</code></dt><dd><p>a numeric vector for respondent's monthly income (in pesos)</p>
+</dd>
+<dt><code>sq</code></dt><dd><p>a numeric vector for the scale of support for the status quo in Chile</p>
+</dd>
+<dt><code>vote</code></dt><dd><p>a character vector for the vote intention of the respondent (see details)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data were manually downloaded from John Fox's website. You will see
+his version of these data as <code>Chile</code> in the <span class="pkg">carData</span> package. I
+changed a few things that are ultimately cosmetic. It's basically this data
+set.
+</p>
+<p>The vote variable communicates vote intentions, whether to vote &quot;Yes&quot; (Y) to
+continue the Pinochet regime, to vote &quot;No&quot; (N) to end the Pinochet regime, to
+abstain (A) from a vote, or whether the respondent is undecided (U). 168
+respondents did not answer the question.
+</p>
+<p>Fox (2008, 336) does not say much about the status quo variable, and on what
+scale it is. It can only be easily inferred that higher values = more support
+for the status quo.
+</p>
+<p>You may find it in your interest to relabel the &quot;region&quot; variable. In these
+data, the regions are Central (&quot;C&quot;), Metropolitan Santiago area (&quot;M&quot;), North
+(&quot;N&quot;), South (&quot;S&quot;), and the city of Santiago (&quot;SA&quot;).
+</p>
+<p>More information about the underlying source of the data would be more than
+welcome. Any information about these data, beyond the kind of R documentation
+files about its pedagogical use, is hard to find. This is a roundabout way of
+saying be cautious about any &quot;real-world&quot; use of these data beyond
+learning statistical methods. That is ultimately its intended use.
+</p>
+
+
+<h3>References</h3>
+
+<p>Fox, John. 2008. <em>Applied Regression Analysis and Generalized Linear Models</em>
+(2nd ed.). Los Angeles, CA: Sage.
+</p>
+
+</main>
+
+</div>
+</body></html>

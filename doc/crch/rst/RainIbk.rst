@@ -22,7 +22,7 @@
 
       .. code:: R
 
-         data("RainIbk")
+         data("RainIbk", package = "crch")
 
       .. rubric:: Format
          :name: format
@@ -35,9 +35,9 @@
       .. rubric:: Source
          :name: source
 
-      Observations: http://www.ogimet.com/synops.phtml.en
+      Observations: https://www.ogimet.com/synops.phtml.en
 
-      Reforecasts: http://www.esrl.noaa.gov/psd/forecasts/reforecast2/
+      Reforecasts: https://psl.noaa.gov/forecasts/reforecast2/
 
       .. rubric:: References
          :name: references
@@ -45,7 +45,7 @@
       Hamill TM, Bates GT, Whitaker JS, Murray DR, Fiorino M, Galarneau
       Jr TJ, Zhu Y, Lapenta W (2013). NOAA's Second-Generation Global
       Medium-Range Ensemble Reforecast Data Set. *Bulletin of the
-      American Meteorological Society*, 94(10), 1553-1565.
+      American Meteorological Society*, **94**\ (10), 1553-1565.
 
       .. rubric:: Examples
          :name: examples
@@ -55,7 +55,7 @@
          ## Spread skill relationship ##
 
          ## load and prepare data
-         data(RainIbk)
+         data("RainIbk", package = "crch")
 
          ## mean and standard deviation of square root transformed ensemble forecasts
          RainIbk$sqrtensmean <- 

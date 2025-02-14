@@ -1,0 +1,94 @@
+<!DOCTYPE html><html><head><title>R: The Battle For Riddler Nation, Round 2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>riddler_castles2</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The Battle For Riddler Nation, Round 2</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;The Battle For Riddler Nation, Round 2&quot;
+<a href="https://fivethirtyeight.com/features/the-battle-for-riddler-nation-round-2/">https://fivethirtyeight.com/features/the-battle-for-riddler-nation-round-2/</a>.
+Analysis of the submitted solutions can be found at: <a href="https://fivethirtyeight.com/features/how-much-should-you-bid-for-that-painting/">https://fivethirtyeight.com/features/how-much-should-you-bid-for-that-painting/</a>
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>riddler_castles2
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 932 rows representing submissions and 11 variables:
+</p>
+
+<dl>
+<dt>castle1</dt><dd><p>Number of troops out of 100 send to castle 1</p>
+</dd>
+<dt>castle2</dt><dd><p>Number of troops out of 100 send to castle 2</p>
+</dd>
+<dt>castle3</dt><dd><p>Number of troops out of 100 send to castle 3</p>
+</dd>
+<dt>castle4</dt><dd><p>Number of troops out of 100 send to castle 4</p>
+</dd>
+<dt>castle5</dt><dd><p>Number of troops out of 100 send to castle 5</p>
+</dd>
+<dt>castle6</dt><dd><p>Number of troops out of 100 send to castle 6</p>
+</dd>
+<dt>castle7</dt><dd><p>Number of troops out of 100 send to castle 7</p>
+</dd>
+<dt>castle8</dt><dd><p>Number of troops out of 100 send to castle 8</p>
+</dd>
+<dt>castle9</dt><dd><p>Number of troops out of 100 send to castle 9</p>
+</dd>
+<dt>castle10</dt><dd><p>Number of troops out of 100 send to castle 10</p>
+</dd>
+<dt>reason</dt><dd><p>Why did you choose your troop deployment?</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>See <a href="https://github.com/fivethirtyeight/data/tree/master/riddler-castles">https://github.com/fivethirtyeight/data/tree/master/riddler-castles</a>
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>riddler_castles</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'># To convert data frame to tidy data (long) format, run
+library(dplyr)
+library(tidyr)
+library(stringr)
+riddler_castles_tidy&lt;-riddler_castles2 %&gt;%
+   pivot_longer(castle1:castle10, names_to = "castle" , values_to = "soldiers") %&gt;%
+   mutate(castle = as.numeric(str_replace(castle, "castle","")))
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><title>R: Yearly populations of countries from 1960 to 2022</title>
+<!DOCTYPE html><html><head><title>R: Yearly populations of countries from 1960 to 2023</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
@@ -16,7 +16,7 @@ function processMathHTML() {
 
 <table style="width: 100%;"><tr><td>countrypops</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>Yearly populations of countries from 1960 to 2022</h2>
+<h2>Yearly populations of countries from 1960 to 2023</h2>
 
 <h3>Description</h3>
 
@@ -24,8 +24,9 @@ function processMathHTML() {
 population is based on counts of all residents regardless of legal status or
 citizenship. Country identifiers include the English-language country names,
 and the 2- and 3-letter ISO 3166-1 country codes. Each row contains a
-<code>population</code> value for a given <code>year</code> (from 1960 to 2022). Any <code>NA</code> values
-for <code>populations</code> indicate the non-existence of the entity during that year.
+<code>population</code> value for a given <code>year</code> (from 1960 to 2023). Any <code>NA</code> values
+within <code>population</code> indicate the non-existence of the entity during that
+year.
 </p>
 
 
@@ -37,7 +38,7 @@ for <code>populations</code> indicate the non-existence of the entity during tha
 
 <h3>Format</h3>
 
-<p>A tibble with 13,545 rows and 5 variables:
+<p>A tibble with 13,760 rows and 5 variables:
 </p>
 
 <dl>
@@ -52,21 +53,6 @@ codes.</p>
 </dd>
 </dl>
 
-
-
-<h3>Examples</h3>
-
-<p>Here is a glimpse at the data available in <code>countrypops</code>.
-</p>
-<div class="sourceCode r"><pre>dplyr::glimpse(countrypops)
-#&gt; Rows: 13,545
-#&gt; Columns: 5
-#&gt; $ country_name   &lt;chr&gt; "Aruba", "Aruba", "Aruba", "Aruba", "Aruba", "Aruba", "~
-#&gt; $ country_code_2 &lt;chr&gt; "AW", "AW", "AW", "AW", "AW", "AW", "AW", "AW", "AW", "~
-#&gt; $ country_code_3 &lt;chr&gt; "ABW", "ABW", "ABW", "ABW", "ABW", "ABW", "ABW", "ABW",~
-#&gt; $ year           &lt;int&gt; 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1~
-#&gt; $ population     &lt;int&gt; 54608, 55811, 56682, 57475, 58178, 58782, 59291, 59522,~
-</pre></div>
 
 
 <h3>Dataset ID and Badge</h3>

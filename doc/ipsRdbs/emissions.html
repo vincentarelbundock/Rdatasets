@@ -1,0 +1,160 @@
+<!DOCTYPE html><html><head><title>R: Nitrous oxide emission data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>emissions</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Nitrous oxide emission data</h2>
+
+<h3>Description</h3>
+
+<p>Nitrous oxide emission data
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>emissions
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>An object of class <code>data.frame</code> with 54 rows and 13 columns.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Australian Traffic Accident Research Bureau 
+@format A data frame with thirteen columns and 54 rows. 
+</p>
+
+<dl>
+<dt>Make</dt><dd><p>Make of the car</p>
+</dd>
+<dt>Odometer</dt><dd><p>Odometer reading of the car</p>
+</dd>
+<dt>Capacity</dt><dd><p>Engine capacity of the car</p>
+</dd>
+<dt>CS505</dt><dd><p>A measurement taken while running the engine from a cold 
+start for 505 seconds</p>
+</dd> 
+<dt>T867</dt><dd><p>A measurement taken while running the engine in transition 
+from cold to hot for 867 seconds</p>
+</dd>
+<dt>H505</dt><dd><p>A measurement taken while running the hot engine for 
+505 seconds</p>
+</dd>
+<dt>ADR27</dt><dd><p>A previously used measurement standard</p>
+</dd>
+<dt>ADR37</dt><dd><p>Result of the Australian standard ADR37test</p>
+</dd>
+<dt>logCS505</dt><dd><p>Logarithm of CS505</p>
+</dd>
+<dt>logT867</dt><dd><p>Logarithm of T867</p>
+</dd>
+<dt>logH505</dt><dd><p>Logarithm of H505</p>
+</dd>
+<dt>logADR27</dt><dd><p>Logarithm of ADR27</p>
+</dd>
+<dt>logADR37</dt><dd><p>Logarithm of ADR37</p>
+</dd> 
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> summary(emissions)
+ 
+ rawdata &lt;- emissions[, c(8, 4:7)]
+ pairs(rawdata)
+# Fit the model on the raw scale 
+raw.lm &lt;- lm(ADR37 ~ ADR27 + CS505  + T867 + H505, data=rawdata) 
+old.par &lt;- par(no.readonly = TRUE)
+par(mfrow=c(2,1))
+plot(raw.lm$fit, raw.lm$res,xlab="Fitted values",ylab="Residuals", main="Anscombe plot") 
+abline(h=0)
+qqnorm(raw.lm$res,main="Normal probability plot", col=2)
+qqline(raw.lm$res, col="blue")
+# summary(raw.lm)
+logdata &lt;- log(rawdata)
+# This only logs the values but not the column names!
+# We can use the following command to change the column names or you can use
+# fix(logdata) to do it. 
+dimnames(logdata)[[2]] &lt;- c("logADR37", "logCS505", "logT867", "logH505", "logADR27")
+pairs(logdata)
+log.lm &lt;- lm(logADR37 ~ logADR27 + logCS505  + logT867 + logH505, data=logdata) 
+plot(log.lm$fit, log.lm$res,xlab="Fitted values",ylab="Residuals", main="Anscombe plot") 
+abline(h=0)
+qqnorm(log.lm$res,main="Normal probability plot", col=2)
+qqline(log.lm$res, col="blue")
+summary(log.lm)
+log.lm2 &lt;- lm(logADR37 ~ logADR27 + logT867 + logH505, data=logdata) 
+summary(log.lm2)
+plot(log.lm2$fit, log.lm2$res,xlab="Fitted values",ylab="Residuals", main="Anscombe plot") 
+abline(h=0)
+qqnorm(log.lm2$res,main="Normal probability plot", col=2)
+qqline(log.lm2$res, col="blue")
+par(old.par)
+#####################################
+# Multicollinearity Analysis 
+######################################
+mod.adr27 &lt;-  lm(logADR27 ~ logT867 + logCS505 + logH505, data=logdata) 
+summary(mod.adr27) # Multiple R^2 = 0.9936,
+mod.t867 &lt;-  lm(logT867 ~ logADR27 + logH505 + logCS505, data=logdata)  
+summary(mod.t867) # Multiple R^2 = 0.977,
+mod.cs505 &lt;-  lm(logCS505 ~ logADR27 + logH505 + logT867, data=logdata)  
+summary(mod.cs505) # Multiple R^2 = 0.9837,
+mod.h505 &lt;-  lm(logH505 ~ logADR27 + logCS505 + logT867, data=logdata)  
+summary(mod.h505) # Multiple R^2 = 0.5784,
+# Variance inflation factors 
+vifs &lt;- c(0.9936, 0.977, 0.9837, 0.5784)
+vifs &lt;- 1/(1-vifs) 
+#Condition numbers 
+X &lt;- logdata 
+# X is a copy of logdata 
+X[,1] &lt;- 1
+# the first column of X is 1
+# this is for the intercept 
+X &lt;- as.matrix(X) 
+# Coerces X to be a matrix
+xtx &lt;- t(X) %*% X # Gives X^T X
+eigenvalues &lt;- eigen(xtx)$values
+kappa &lt;- max(eigenvalues)/min(eigenvalues)
+kappa &lt;- sqrt(kappa)
+# kappa = 244 is much LARGER than 30!
+
+### Validation statistic
+# Fit the log.lm2 model with the first 45 observations  
+# use the fitted model to predict the remaining 9 observations 
+# Calculate the mean square error validation statistic 
+log.lmsub &lt;- lm(logADR37 ~ logADR27 + logT867 + logH505, data=logdata, subset=1:45) 
+# Now predict all 54 observations using the fitted model
+mod.pred &lt;- predict(log.lmsub, logdata, se.fit=TRUE) 
+mod.pred$fit # provides all the 54 predicted values 
+logdata$pred &lt;- mod.pred$fit
+# Get only last 9 
+a &lt;- logdata[46:54, ]
+validation.residuals &lt;- a$logADR37 - a$pred  
+validation.stat &lt;- mean(validation.residuals^2)
+validation.stat
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

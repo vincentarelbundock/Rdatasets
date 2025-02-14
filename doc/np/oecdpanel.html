@@ -1,0 +1,99 @@
+<!DOCTYPE html><html><head><title>R: Cross Country Growth Panel</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>oecdpanel</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2> Cross Country Growth Panel </h2>
+
+<h3>Description</h3>
+
+<p>Cross country GDP growth panel covering the period 1960-1995 used by
+Liu and Stengos (2000) and Maasoumi, Racine, and Stengos (2007). There
+are 616 observations in total. <code>data("oecdpanel")</code> makes available
+the dataset <code>"oecdpanel"</code> plus an additional object <code>"bw"</code>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("oecdpanel")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 7 columns, and 616 rows.  This panel covers 7
+5-year periods: 1960-1964, 1965-1969, 1970-1974, 1975-1979, 1980-1984,
+1985-1989 and 1990-1994.
+</p>
+<p>A separate local-linear <code>rbandwidth</code> object (<code>bw</code>) has
+been computed for the user's convenience which can be used to
+visualize this dataset using <code>plot(bw)</code>.
+</p>
+
+<dl>
+<dt>growth</dt><dd><p> the first column, of type <code>numeric</code>: growth rate
+of real GDP per capita for each 5-year period</p>
+</dd>
+<dt>oecd</dt><dd><p> the second column, of type <code>factor</code>: equal to
+1 for OECD members, 0 otherwise</p>
+</dd>
+<dt>year</dt><dd><p> the third column, of type <code>integer</code></p>
+</dd>
+<dt>initgdp</dt><dd><p> the fourth column, of type <code>numeric</code>: per capita
+real GDP at the beginning of each 5-year period</p>
+</dd>
+<dt>popgro</dt><dd><p> the fifth column, of type <code>numeric</code>: average
+annual population growth rate for each 5-year period</p>
+</dd>
+<dt>inv</dt><dd><p> the sixth column, of type <code>numeric</code>: average
+investment/GDP ratio for each 5-year period</p>
+</dd>
+<dt>humancap</dt><dd><p> the seventh column, of type <code>numeric</code>:
+average secondary school enrolment rate for each 5-year period</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p> Thanasis Stengos </p>
+
+
+<h3>References</h3>
+
+<p>Liu, Z. and T. Stengos (1999), &ldquo;Non-linearities in cross
+country growth regressions: a semiparametric approach,&rdquo;
+Journal of Applied Econometrics, 14, 527-538.
+</p>
+<p>Maasoumi, E. and J.S. Racine and T. Stengos (2007),
+&ldquo;Growth and convergence: a profile of distribution dynamics and
+mobility,&rdquo; Journal of Econometrics, 136, 483-508 
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data("oecdpanel")
+attach(oecdpanel)
+summary(oecdpanel)
+detach(oecdpanel)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html><html><head><title>R: Do Americans Support Impeaching Trump?</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>impeachment_polls</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Do Americans Support Impeaching Trump?</h2>
+
+<h3>Description</h3>
+
+<p>Raw data behind this story
+&quot;Do Americans Support Impeaching Trump?&quot;
+<a href="https://projects.fivethirtyeight.com/impeachment-polls/">https://projects.fivethirtyeight.com/impeachment-polls/</a>
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>impeachment_polls
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 388 rows of polling data and 24 variables:
+</p>
+
+<dl>
+<dt>start</dt><dd><p>Poll start date, the first date responses were collected</p>
+</dd>
+<dt>end</dt><dd><p>Poll end date, the last date responses were collected</p>
+</dd>
+<dt>pollster</dt><dd><p>entity/organization that created poll, collected and published data</p>
+</dd>
+<dt>sponsor</dt><dd><p>sponsor of pollster</p>
+</dd>
+<dt>sample_size</dt><dd><p>number of respondents for each</p>
+</dd>
+<dt>pop</dt><dd><p>categorical variable with 3 categories: a, rv, lv &ndash; value unknown</p>
+</dd>
+<dt>tracking</dt><dd><p>true/false logical &ndash; value unknown</p>
+</dd>
+<dt>text</dt><dd><p>poll question</p>
+</dd>
+<dt>category</dt><dd><p>category of poll question with 5 categories: impeach and remove, begin proceedings, begin inquiry, reasons, impeach</p>
+</dd>
+<dt>include</dt><dd><p>yes/no logical &ndash; value unknown</p>
+</dd>
+<dt>yes</dt><dd><p>Percent of respondents in sample who answered &quot;Yes&quot; to the poll question</p>
+</dd>
+<dt>no</dt><dd><p>Percent of respondents in sample  who answered &quot;No&quot; to the poll question</p>
+</dd>
+<dt>unsure</dt><dd><p>Percent of respondents in sample who did not answer &quot;Yes&quot; or &quot;No&quot; to the poll question</p>
+</dd>
+<dt>rep_sample</dt><dd><p>number of Republican respondents in sample</p>
+</dd>
+<dt>rep_yes</dt><dd><p>Percent of Republican respondents who answered &quot;yes&quot;</p>
+</dd>
+<dt>rep_no</dt><dd><p>Percent of Republican respondents who answered &quot;no&quot;</p>
+</dd>
+<dt>dem_sample</dt><dd><p>number of Democrat respondents in sample</p>
+</dd>
+<dt>dem_yes</dt><dd><p>Percent of Democrat respondents who answered &quot;yes&quot;</p>
+</dd>
+<dt>dem_no</dt><dd><p>Percent of Democrat respondents who answered &quot;no&quot;</p>
+</dd>
+<dt>ind_sample</dt><dd><p>number of Independent respondents in sample</p>
+</dd>
+<dt>ind_yes</dt><dd><p>Percent of Independent respondents who answered &quot;yes&quot;</p>
+</dd>
+<dt>ind_no</dt><dd><p>Percent of Independent respondents who answered &quot;no&quot;</p>
+</dd>
+<dt>url</dt><dd><p>URL links to poll websites</p>
+</dd>
+<dt>notes</dt><dd><p>any notes relating to polls in sample</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>data from <a href="https://github.com/fivethirtyeight/data/tree/master/impeachment-polls">https://github.com/fivethirtyeight/data/tree/master/impeachment-polls</a>.
+</p>
+
+</main>
+
+</div>
+</body></html>

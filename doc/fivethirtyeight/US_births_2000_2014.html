@@ -1,0 +1,71 @@
+<!DOCTYPE html><html><head><title>R: Some People Are Too Superstitious To Have A Baby On Friday...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>US_births_2000_2014</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Some People Are Too Superstitious To Have A Baby On Friday The 13th</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;Some People Are Too Superstitious To Have A Baby On Friday The 13th&quot;
+<a href="https://fivethirtyeight.com/features/some-people-are-too-superstitious-to-have-a-baby-on-friday-the-13th/">https://fivethirtyeight.com/features/some-people-are-too-superstitious-to-have-a-baby-on-friday-the-13th/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>US_births_2000_2014
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 5479 rows representing dates and 6 variables:
+</p>
+
+<dl>
+<dt>year</dt><dd><p>Year</p>
+</dd>
+<dt>month</dt><dd><p>Month</p>
+</dd>
+<dt>date_of_month</dt><dd><p>Day</p>
+</dd>
+<dt>date</dt><dd><p>POSIX date</p>
+</dd>
+<dt>day_of_week</dt><dd><p>Abbreviation of day of week</p>
+</dd>
+<dt>births</dt><dd><p>Number of births</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Social Security Administration
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>US_births_1994_2003</code>.
+</p>
+
+</main>
+
+</div>
+</body></html>

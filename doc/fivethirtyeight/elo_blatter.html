@@ -1,0 +1,69 @@
+<!DOCTYPE html><html><head><title>R: Blatter's Reign At FIFA Hasn't Helped Soccer's Poor</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>elo_blatter</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Blatter's Reign At FIFA Hasn't Helped Soccer's Poor</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;Blatter's Reign At FIFA Hasn't Helped Soccer's Poor&quot;
+<a href="https://fivethirtyeight.com/features/blatters-reign-at-fifa-hasnt-helped-soccers-poor/">https://fivethirtyeight.com/features/blatters-reign-at-fifa-hasnt-helped-soccers-poor/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>elo_blatter
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 191 rows representing countries and 5 variables:
+</p>
+
+<dl>
+<dt>country</dt><dd><p>FIFA member country</p>
+</dd>
+<dt>elo98</dt><dd><p>The team's Elo in 1998</p>
+</dd>
+<dt>elo15</dt><dd><p>The team's Elo in 2015</p>
+</dd>
+<dt>confederation</dt><dd><p>Confederation to which country belongs</p>
+</dd>
+<dt>gdp06</dt><dd><p>The country's purchasing power parity GDP as of 2006</p>
+</dd>
+<dt>popu06</dt><dd><p>The country's 2006 population</p>
+</dd>
+<dt>gdp_source</dt><dd><p>Source for gdp06</p>
+</dd>
+<dt>popu_source</dt><dd><p>Source for popu06</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>See <a href="https://github.com/fivethirtyeight/data/tree/master/elo-blatter">https://github.com/fivethirtyeight/data/tree/master/elo-blatter</a>.
+</p>
+
+</main>
+
+</div>
+</body></html>

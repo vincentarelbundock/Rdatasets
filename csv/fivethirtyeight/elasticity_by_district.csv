@@ -1,0 +1,436 @@
+rownames,state,district_number,elasticity
+1,Michigan,5,1.24
+2,Illinois,8,1.22
+3,Nevada,4,1.22
+4,Massachusetts,1,1.22
+5,Massachusetts,6,1.21
+6,Massachusetts,2,1.21
+7,New York,21,1.21
+8,Florida,26,1.2
+9,Massachusetts,9,1.2
+10,Florida,25,1.2
+11,Minnesota,7,1.19
+12,New Hampshire,1,1.19
+13,Massachusetts,4,1.18
+14,California,26,1.18
+15,Massachusetts,3,1.18
+16,Rhode Island,1,1.17
+17,Illinois,12,1.17
+18,Texas,33,1.17
+19,Iowa,2,1.17
+20,Washington,5,1.17
+21,Utah,2,1.16
+22,Alaska,1,1.16
+23,Texas,29,1.15
+24,Maine,1,1.15
+25,Oregon,2,1.15
+26,New Mexico,2,1.14
+27,Colorado,3,1.14
+28,Massachusetts,8,1.13
+29,Rhode Island,2,1.13
+30,Texas,35,1.13
+31,Arizona,7,1.13
+32,Wisconsin,2,1.13
+33,Indiana,2,1.13
+34,Arizona,4,1.12
+35,Michigan,4,1.12
+36,Nevada,1,1.12
+37,Michigan,7,1.12
+38,Idaho,1,1.12
+39,New York,11,1.12
+40,Vermont,1,1.12
+41,Kansas,4,1.12
+42,Michigan,8,1.12
+43,Idaho,2,1.11
+44,California,4,1.11
+45,Texas,20,1.11
+46,Texas,27,1.11
+47,Colorado,5,1.11
+48,Maryland,1,1.11
+49,California,51,1.11
+50,Michigan,1,1.11
+51,Texas,23,1.11
+52,Ohio,4,1.11
+53,Illinois,11,1.11
+54,Illinois,16,1.11
+55,Michigan,10,1.11
+56,California,1,1.11
+57,Texas,7,1.11
+58,Texas,34,1.11
+59,Wisconsin,5,1.11
+60,Illinois,15,1.1
+61,New Hampshire,2,1.1
+62,Arizona,5,1.1
+63,Florida,17,1.1
+64,Texas,14,1.1
+65,Minnesota,8,1.1
+66,Pennsylvania,9,1.1
+67,New York,27,1.1
+68,Wisconsin,6,1.1
+69,Ohio,8,1.1
+70,Maine,2,1.1
+71,Ohio,16,1.1
+72,North Carolina,6,1.09
+73,Arizona,6,1.09
+74,Hawaii,2,1.09
+75,Ohio,7,1.09
+76,Minnesota,4,1.09
+77,Colorado,7,1.09
+78,Wisconsin,8,1.09
+79,Florida,27,1.09
+80,Texas,28,1.09
+81,Florida,8,1.09
+82,New Jersey,5,1.09
+83,New York,22,1.09
+84,Florida,3,1.08
+85,Ohio,2,1.08
+86,Pennsylvania,14,1.08
+87,New York,23,1.08
+88,North Carolina,5,1.08
+89,New York,18,1.08
+90,Wyoming,1,1.08
+91,California,10,1.08
+92,Illinois,10,1.08
+93,Louisiana,6,1.08
+94,South Carolina,2,1.08
+95,Arizona,3,1.08
+96,Texas,16,1.07
+97,Michigan,9,1.07
+98,New Jersey,11,1.07
+99,Indiana,1,1.07
+100,Colorado,2,1.07
+101,California,29,1.07
+102,Ohio,6,1.07
+103,Kentucky,5,1.07
+104,Texas,30,1.07
+105,West Virginia,3,1.07
+106,Texas,9,1.07
+107,Montana,1,1.06
+108,Pennsylvania,15,1.06
+109,Wisconsin,3,1.06
+110,Iowa,4,1.06
+111,Utah,3,1.06
+112,Tennessee,9,1.06
+113,Florida,7,1.06
+114,Texas,15,1.06
+115,Florida,21,1.06
+116,Texas,31,1.06
+117,Michigan,6,1.06
+118,Tennessee,7,1.06
+119,Missouri,5,1.06
+120,Illinois,13,1.06
+121,Arkansas,1,1.06
+122,New York,20,1.06
+123,Iowa,1,1.06
+124,Nebraska,2,1.05
+125,Texas,18,1.05
+126,Arizona,1,1.05
+127,Washington,8,1.05
+128,Indiana,6,1.05
+129,Hawaii,1,1.05
+130,Florida,16,1.05
+131,Pennsylvania,8,1.05
+132,California,40,1.05
+133,Washington,6,1.05
+134,Washington,4,1.05
+135,Illinois,5,1.05
+136,Georgia,6,1.05
+137,Kansas,3,1.05
+138,New Jersey,2,1.05
+139,California,22,1.04
+140,Georgia,12,1.04
+141,Florida,20,1.04
+142,Michigan,2,1.04
+143,Maryland,2,1.04
+144,New York,4,1.04
+145,New Jersey,1,1.04
+146,Colorado,4,1.04
+147,Tennessee,4,1.04
+148,West Virginia,2,1.04
+149,New Jersey,9,1.04
+150,New York,25,1.04
+151,New York,26,1.04
+152,Texas,12,1.04
+153,Texas,8,1.04
+154,Pennsylvania,6,1.04
+155,California,42,1.04
+156,Florida,13,1.03
+157,Virginia,4,1.03
+158,California,23,1.03
+159,Texas,26,1.03
+160,New Jersey,7,1.03
+161,Texas,11,1.03
+162,Missouri,8,1.03
+163,Michigan,3,1.03
+164,Virginia,10,1.03
+165,Colorado,6,1.03
+166,California,36,1.03
+167,Connecticut,5,1.03
+168,Ohio,13,1.03
+169,Wisconsin,1,1.03
+170,Texas,1,1.03
+171,Minnesota,1,1.03
+172,New York,1,1.02
+173,Wisconsin,7,1.02
+174,Texas,32,1.02
+175,Florida,22,1.02
+176,Illinois,6,1.02
+177,Minnesota,2,1.02
+178,Ohio,5,1.02
+179,Florida,9,1.02
+180,Florida,4,1.02
+181,Texas,19,1.02
+182,Maryland,3,1.02
+183,Michigan,12,1.02
+184,Louisiana,4,1.02
+185,Florida,2,1.02
+186,Pennsylvania,1,1.02
+187,California,33,1.01
+188,Indiana,8,1.01
+189,Oklahoma,3,1.01
+190,Pennsylvania,5,1.01
+191,New York,6,1.01
+192,Ohio,9,1.01
+193,South Dakota,1,1.01
+194,Nebraska,1,1.01
+195,California,34,1.01
+196,Wisconsin,4,1.01
+197,Illinois,4,1.01
+198,Pennsylvania,10,1.01
+199,Texas,13,1.01
+200,Oregon,5,1.01
+201,South Carolina,4,1.01
+202,Tennessee,8,1.01
+203,Arizona,8,1.01
+204,North Carolina,2,1.01
+205,New Mexico,1,1.01
+206,North Carolina,11,1.01
+207,West Virginia,1,1.01
+208,Florida,10,1.01
+209,Pennsylvania,17,1.01
+210,Massachusetts,7,1.01
+211,New York,2,1.01
+212,New Jersey,4,1.01
+213,Pennsylvania,12,1.01
+214,Tennessee,3,1.01
+215,New York,19,1.01
+216,Florida,6,1.01
+217,Washington,3,1
+218,Florida,12,1
+219,Texas,36,1
+220,Iowa,3,1
+221,Alabama,5,1
+222,Pennsylvania,11,1
+223,New York,12,1
+224,Missouri,6,1
+225,California,11,1
+226,Florida,23,1
+227,Washington,2,1
+228,Utah,1,1
+229,Arkansas,3,1
+230,Illinois,3,1
+231,Ohio,1,1
+232,California,16,1
+233,California,3,1
+234,Florida,11,0.99
+235,Georgia,11,0.99
+236,Michigan,11,0.99
+237,Connecticut,3,0.99
+238,Ohio,3,0.99
+239,California,48,0.99
+240,Indiana,4,0.99
+241,North Carolina,3,0.99
+242,Mississippi,4,0.99
+243,New Jersey,6,0.99
+244,Pennsylvania,18,0.98
+245,California,18,0.98
+246,North Carolina,13,0.98
+247,Texas,3,0.98
+248,Massachusetts,5,0.98
+249,Pennsylvania,4,0.98
+250,Florida,24,0.98
+251,Missouri,1,0.98
+252,Virginia,6,0.98
+253,Tennessee,6,0.98
+254,Connecticut,4,0.98
+255,North Dakota,1,0.98
+256,Minnesota,3,0.98
+257,Texas,4,0.98
+258,Oklahoma,4,0.98
+259,Louisiana,2,0.98
+260,Oregon,1,0.98
+261,Ohio,12,0.97
+262,Pennsylvania,16,0.97
+263,Washington,10,0.97
+264,California,25,0.97
+265,Florida,15,0.97
+266,Maryland,6,0.97
+267,Illinois,17,0.97
+268,Alabama,2,0.97
+269,Pennsylvania,7,0.97
+270,Colorado,1,0.97
+271,Utah,4,0.97
+272,Arkansas,2,0.97
+273,California,24,0.97
+274,Ohio,11,0.97
+275,Illinois,14,0.97
+276,Florida,19,0.97
+277,California,43,0.97
+278,California,8,0.97
+279,Florida,14,0.97
+280,Nevada,3,0.97
+281,California,52,0.97
+282,Connecticut,1,0.97
+283,South Carolina,1,0.97
+284,Arkansas,4,0.97
+285,North Carolina,8,0.97
+286,Texas,17,0.97
+287,Washington,1,0.96
+288,Florida,18,0.96
+289,Nevada,2,0.96
+290,Pennsylvania,13,0.96
+291,South Carolina,3,0.96
+292,Illinois,2,0.96
+293,Texas,6,0.96
+294,Kansas,2,0.96
+295,New Jersey,3,0.96
+296,North Carolina,1,0.96
+297,Ohio,10,0.96
+298,Indiana,7,0.96
+299,Texas,2,0.95
+300,Mississippi,2,0.95
+301,Texas,10,0.95
+302,Nebraska,3,0.95
+303,New York,3,0.95
+304,Virginia,5,0.95
+305,Florida,1,0.95
+306,Oregon,3,0.95
+307,Missouri,2,0.95
+308,Illinois,18,0.95
+309,Connecticut,2,0.95
+310,California,9,0.95
+311,North Carolina,10,0.95
+312,Illinois,9,0.95
+313,Arizona,9,0.95
+314,California,45,0.95
+315,Tennessee,1,0.95
+316,California,39,0.95
+317,New Jersey,8,0.94
+318,Arizona,2,0.94
+319,Indiana,9,0.94
+320,Virginia,9,0.94
+321,Missouri,3,0.94
+322,Ohio,15,0.94
+323,Oregon,4,0.94
+324,Minnesota,6,0.94
+325,Texas,25,0.94
+326,Virginia,3,0.94
+327,Louisiana,1,0.94
+328,Michigan,13,0.94
+329,South Carolina,6,0.94
+330,Georgia,5,0.94
+331,California,47,0.94
+332,North Carolina,4,0.94
+333,New Jersey,10,0.93
+334,Mississippi,1,0.93
+335,California,50,0.93
+336,Virginia,2,0.93
+337,New York,10,0.93
+338,Delaware,1,0.93
+339,California,31,0.93
+340,Virginia,1,0.93
+341,California,41,0.93
+342,California,21,0.93
+343,New Mexico,3,0.93
+344,Ohio,14,0.93
+345,Michigan,14,0.93
+346,Texas,22,0.93
+347,Kentucky,6,0.92
+348,New Jersey,12,0.92
+349,Kentucky,1,0.92
+350,South Carolina,7,0.92
+351,North Carolina,12,0.92
+352,California,19,0.92
+353,Oklahoma,2,0.92
+354,Texas,5,0.91
+355,Minnesota,5,0.91
+356,Oklahoma,1,0.91
+357,Tennessee,2,0.91
+358,Kentucky,2,0.91
+359,Louisiana,5,0.91
+360,California,49,0.91
+361,Florida,5,0.91
+362,Georgia,14,0.9
+363,New York,24,0.9
+364,Alabama,1,0.9
+365,Louisiana,3,0.9
+366,California,7,0.9
+367,Oklahoma,5,0.9
+368,North Carolina,9,0.9
+369,Georgia,9,0.9
+370,South Carolina,5,0.9
+371,Maryland,7,0.9
+372,Virginia,11,0.9
+373,Kentucky,3,0.89
+374,Georgia,8,0.89
+375,California,17,0.89
+376,Maryland,4,0.89
+377,Georgia,2,0.89
+378,Texas,21,0.89
+379,North Carolina,7,0.88
+380,Kentucky,4,0.88
+381,Maryland,5,0.88
+382,Indiana,3,0.88
+383,New York,16,0.88
+384,Pennsylvania,2,0.88
+385,Tennessee,5,0.88
+386,Kansas,1,0.88
+387,California,30,0.88
+388,Virginia,7,0.88
+389,California,20,0.88
+390,Indiana,5,0.88
+391,Washington,9,0.87
+392,Georgia,1,0.87
+393,Georgia,3,0.87
+394,Maryland,8,0.87
+395,California,27,0.87
+396,Texas,24,0.86
+397,Alabama,4,0.86
+398,California,6,0.86
+399,California,53,0.85
+400,California,38,0.85
+401,Alabama,7,0.85
+402,Georgia,4,0.85
+403,Missouri,7,0.85
+404,California,46,0.85
+405,California,32,0.85
+406,Georgia,7,0.85
+407,California,35,0.85
+408,New York,17,0.83
+409,California,14,0.83
+410,California,12,0.83
+411,California,5,0.83
+412,Illinois,1,0.83
+413,New York,7,0.82
+414,Virginia,8,0.82
+415,California,15,0.82
+416,California,28,0.82
+417,Georgia,10,0.81
+418,Georgia,13,0.81
+419,Washington,7,0.81
+420,California,37,0.81
+421,Mississippi,3,0.8
+422,New York,9,0.8
+423,New York,5,0.79
+424,California,44,0.79
+425,California,13,0.79
+426,Alabama,3,0.79
+427,Alabama,6,0.78
+428,New York,13,0.77
+429,Missouri,4,0.77
+430,New York,15,0.77
+431,California,2,0.76
+432,New York,8,0.74
+433,New York,14,0.73
+434,Illinois,7,0.72
+435,Pennsylvania,3,0.72

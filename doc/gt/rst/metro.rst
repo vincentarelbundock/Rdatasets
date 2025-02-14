@@ -12,7 +12,7 @@
       .. rubric:: Description
          :name: description
 
-      A dataset with information on all 314 Paris Metro stations as of
+      A dataset with information on all 320 Paris Metro stations as of
       June 2024. Each record represents a station, describing which
       Metro lines are serviced by the station, which other connections
       are available, and annual passenger volumes. Basic location
@@ -46,7 +46,7 @@
       .. rubric:: Format
          :name: format
 
-      A tibble with 314 rows and 11 variables:
+      A tibble with 320 rows and 11 variables:
 
       name
          The name of the station.
@@ -115,5 +115,12 @@
       ``films``, ``gibraltar``, ``gtcars``, ``illness``, ``nuclides``,
       ``peeps``, ``photolysis``, ``pizzaplace``, ``reactions``,
       ``rx_addv``, ``rx_adsl``, ``sp500``, ``sza``, ``towny``
+
+      .. rubric:: Examples
+         :name: examples
+
+      .. code:: R
+
+         dplyr::glimpse(metro)
 
 .. |This image of that of a dataset badge.| image:: https://raw.githubusercontent.com/rstudio/gt/master/images/dataset_metro.png

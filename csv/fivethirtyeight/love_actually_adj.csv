@@ -1,0 +1,15 @@
+rownames,actors,bill_nighy,keira_knightley,andrew_lincoln,hugh_grant,colin_firth,alan_rickman,heike_makatsch,laura_linney,emma_thompson,liam_neeson,kris_marshall,abdul_salis,martin_freeman,rowan_atkinson
+1,bill_nighy,9,2,2,2,1,1,0,1,1,3,1,1,1,1
+2,keira_knightley,2,7,7,1,2,1,0,3,1,1,2,2,1,0
+3,andrew_lincoln,2,7,8,1,2,2,1,4,2,1,2,2,1,0
+4,hugh_grant,2,1,1,13,1,3,1,1,3,2,1,1,2,0
+5,colin_firth,1,2,2,1,13,1,0,2,1,1,1,1,1,0
+6,alan_rickman,1,1,2,3,1,13,7,4,9,2,1,1,2,1
+7,heike_makatsch,0,0,1,1,0,7,9,3,3,0,1,0,0,0
+8,laura_linney,1,3,4,1,2,4,3,11,2,1,1,1,1,0
+9,emma_thompson,1,1,2,3,1,9,3,2,12,5,1,1,2,1
+10,liam_neeson,3,1,1,2,1,2,0,1,5,13,1,1,2,1
+11,kris_marshall,1,2,2,1,1,1,1,1,1,1,7,5,1,0
+12,abdul_salis,1,2,2,1,1,1,0,1,1,1,5,7,3,0
+13,martin_freeman,1,1,1,2,1,2,0,1,2,2,1,3,7,0
+14,rowan_atkinson,1,0,0,0,0,1,0,0,1,1,0,0,0,2

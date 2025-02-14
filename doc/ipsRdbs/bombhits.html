@@ -1,0 +1,83 @@
+<!DOCTYPE html><html><head><title>R: Number of bomb hits in London during World War II</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>bombhits</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Number of bomb hits in London during World War II</h2>
+
+<h3>Description</h3>
+
+<p>Number of bomb hits in London during World War II
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>bombhits
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with two columns and six rows:
+</p>
+
+<dl>
+<dt>numberhit</dt><dd><p>The number of  bomb hits during World War II 
+in each of the 576 areas in London.</p>
+</dd>
+<dt>freq</dt><dd><p>Frequency of the number of hits</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Shaw and Shaw (2019).
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> summary(bombhits)
+ # Create a vector of data 
+ x &lt;- c(rep(0, 229), rep(1, 211), rep(2, 93), rep(3, 35), rep(4, 7), 5)
+ y &lt;- c(229, 211, 93, 35, 7, 1) # Frequencies 
+ rel_freq &lt;- y/576
+ xbar &lt;- mean(x)
+ pois_prob &lt;- dpois(x=0:5, lambda=xbar)
+ fit_freq &lt;- pois_prob * 576
+  #Check 
+  cbind(x=0:5, obs_freq=y, rel_freq =round(rel_freq, 4),  
+  Poisson_prob=round(pois_prob, 4), fit_freq=round(fit_freq, 1))
+  obs_freq &lt;- y
+  xuniques &lt;- 0:5
+  a &lt;- data.frame(xuniques=0:5, obs_freq =y, fit_freq=fit_freq)
+  barplot(rbind(obs_freq, fit_freq), 
+  args.legend = list(x = "topright"), 
+  xlab="No of bomb hits",  
+  names.arg = xuniques,  beside=TRUE, 
+  col=c("darkblue","red"), 
+  legend =c("Observed", "Fitted"), 
+  main="Observed and Poisson distribution fitted frequencies 
+  for the number of bomb hits in London")
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

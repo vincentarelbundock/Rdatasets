@@ -1,0 +1,77 @@
+<!DOCTYPE html><html><head><title>R: FiveThirtyEight's Partisan Lean</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>partisan_lean_state</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>FiveThirtyEight's Partisan Lean</h2>
+
+<h3>Description</h3>
+
+<p>This directory contains the data for FiveThirtyEight's partisan lean, which is used in our
+[House]
+<a href="https://projects.fivethirtyeight.com/2018-midterm-election-forecast/house">https://projects.fivethirtyeight.com/2018-midterm-election-forecast/house</a>
+[Senate]
+<a href="https://projects.fivethirtyeight.com/2018-midterm-election-forecast/senate">https://projects.fivethirtyeight.com/2018-midterm-election-forecast/senate</a>
+and [Governor]
+<a href="https://projects.fivethirtyeight.com/2018-midterm-election-forecast/governor/">https://projects.fivethirtyeight.com/2018-midterm-election-forecast/governor/</a>
+forecasts.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>partisan_lean_state
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A dataset with 50 rows representing states and 3 variables
+</p>
+
+<dl>
+<dt>state</dt><dd><p>the state</p>
+</dd>
+<dt>pvi_party</dt><dd><p>the party of the vote</p>
+</dd>
+<dt>pvi_amount</dt><dd><p>the Cook Partisan Voting Index of the vote</p>
+</dd>
+</dl>
+
+
+
+<h3>Note</h3>
+
+<p>The original dataset only has 2 columns: &quot;state&quot; and &quot;pvi_538&quot;. I separated the &quot;pvi_538&quot; columns into two.
+For example, in row 1 of the dataset, the original &quot;pvi_538&quot; = &quot;R+27&quot;, and I separated it into “pvi_party&quot; = &quot;R&quot; and &quot;pvi_amount&quot; = &quot;27&quot;.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Partisan lean is the average difference between how a state or district votes and how the country votes overall, with 2016 presidential election results weighted 50 percent, 2012 presidential election results weighted 25 percent and results from elections for the state legislature weighted 25 percent.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>partisan_lean_district</code>
+</p>
+
+</main>
+
+</div>
+</body></html>

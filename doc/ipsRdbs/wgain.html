@@ -1,0 +1,71 @@
+<!DOCTYPE html><html><head><title>R: Weight gain data from 68 first year students during their...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>wgain</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Weight gain data from 68 first year students during their first 12 
+weeks in college</h2>
+
+<h3>Description</h3>
+
+<p>Weight gain data from 68 first year students during their first 12 
+weeks in college
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>wgain
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with three columns and 68 rows:
+</p>
+
+<dl>
+<dt>student</dt><dd><p>Student number, 1 to 68.</p>
+</dd>
+<dt>initial</dt><dd><p>Initial weight in kilogram</p>
+</dd>
+<dt>final</dt><dd><p>Final weight in kilogram</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> summary(wgain)
+ plot(wgain$initial, wgain$final)
+ abline(0, 1, col="red")
+ plot(wgain$initial, wgain$final, xlab="Wt in Week 1", 
+ ylab="Wt in Week 12", pch="*", las=1)
+ abline(0, 1, col="red")
+ title("A scatter plot of the weights in Week 12 against 
+ the  weights in Week 1")
+ # 95% Confidence interval for mean weight gain 
+ x &lt;- wgain$final - wgain$initial
+ mean(x) + c(-1, 1) * qt(0.975, df=67) * sqrt(var(x)/68)
+ # t-test to test the mean difference equals 0
+ t.test(x)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

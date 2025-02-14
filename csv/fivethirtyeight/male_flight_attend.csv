@@ -1,0 +1,321 @@
+rownames,job_category,percentage_male
+1,Kindergarten and earlier school teachers,2.3
+2,Dental hygenists,2.6
+3,Secretaries,4.7
+4,Speech therapists,5.3
+5,Dental assistants,5.4
+6,Child care workers,7.5
+7,Registered nurses,9.4
+8,Licensed practical nurses,9.6
+9,Receptionists,9.7
+10,Dietitians and nutritionists,10.3
+11,Hairdressers and cosmetologists,10.3
+12,Payroll and timekeeping clerks,11
+13,Health record tech specialists,11.2
+14,Billing clerks and related financial records processing,11.5
+15,"Housekeepers, maids, butlers, stewards, and lodging quarters cleaners",11.7
+16,Occupational therapists,11.9
+17,"Health aides, except nursing",12.4
+18,Bookkeepers and accounting and auditing clerks,12.8
+19,Typists,14.1
+20,"Nursing aides, orderlies, and attendants",14.5
+21,Special education teachers,16
+22,"Human resources clerks, except payroll and timekeeping",16.2
+23,Records clerks,16.2
+24,General office clerks,17.3
+25,Librarians,18.1
+26,Social workers,19.1
+27,"Legal assistants, paralegals, legal support, etc",19.2
+28,Bank tellers,19.6
+29,Dancers,20.4
+30,Therapists,20.9
+31,Primary school teachers,20.9
+32,Eligibility clerks for government programs; social welfare,21
+33,Library assistants,21.1
+34,Data entry keyers,21.3
+35,File clerks,22.9
+36,Telephone operators,23
+37,Administrative support jobs,23.4
+38,Teachers,23.9
+39,"Interviewers, enumerators, and surveyors",24.1
+40,Dressmakers and seamstresses,24.6
+41,Dental laboratory and medical appliance technicians,25
+42,Personal service occupations,25.6
+43,Textile sewing machine operators,26
+44,Clinical laboratory technologies and technicians,26.2
+45,Proofreaders,26.5
+46,Cashiers,26.8
+47,Sales demonstrators / promoters / models,27
+48,"Insurance adjusters, examiners, and investigators",27.4
+49,Waiter/waitress,28.6
+50,Psychologists,29.4
+51,Radiologic tech specialists,29.5
+52,Vocational and educational counselors,29.6
+53,Animal caretakers except on farms,29.9
+54,"Personnel, HR, training, and labor relations specialists",30.1
+55,Managers of medicine and health occupations,30.2
+56,Bill and account collectors,30.2
+57,Optical goods workers,30.6
+58,Graders and sorters of agricultural products,31
+59,Physical therapists,31.1
+60,Physicians' assistants,32
+61,Managers of service organizations,32.3
+62,Winding and twisting textile/apparel operatives,32.6
+63,Insurance underwriters,32.9
+64,Welfare service aides,33.4
+65,"Customer service reps, investigators and adjusters, except insurance",33.5
+66,Transportation ticket and reservation agents,33.7
+67,Hotel clerks,34
+68,Respiratory therapists,34.6
+69,Managers in education and related fields,35.2
+70,Pressing machine operators (clothing),35.8
+71,Archivists and curators,36.9
+72,Recreation workers,37.2
+73,Kitchen workers,37.2
+74,Office supervisors,38.6
+75,Art/entertainment performers and related,38.9
+76,Office machine operators,39.7
+77,Bartenders,39.7
+78,Statistical clerks,39.9
+79,Batch food makers,40.1
+80,Accountants and auditors,40.4
+81,"Knitters, loopers, and toppers textile operatives",40.5
+82,Human resources and labor relations managers,40.6
+83,Technical writers,40.6
+84,Public transportation attendants and inspectors,40.6
+85,Correspondence and order clerks,40.9
+86,Crossing guards and bridge tenders,40.9
+87,Writers and authors,41
+88,Supervisors of personal service jobs,41.5
+89,Laundry workers,42.1
+90,Secondary school teachers,42.5
+91,Social scientists,43.4
+92,Management support occupations,43.9
+93,Veterinarians,44
+94,"Packers, fillers, and wrappers",44.2
+95,Packers and packagers by hand,44.3
+96,Dispatchers,44.6
+97,Bakers,45.1
+98,Other telecom operators,45.2
+99,"Economists, market researchers, and survey researchers",46
+100,Waiter's assistant,46.3
+101,Real estate sales occupations,46.4
+102,"Door-to-door sales, street sales, and news vendors",46.5
+103,Designers,46.6
+104,"Buyers, wholesale and retail trade",46.7
+105,Pharmacists,46.7
+106,Financial managers,47.4
+107,Protective services,47.5
+108,"Postal clerks, excluding mail carriers",47.6
+109,Advertising and related sales jobs,48.4
+110,Retail sales clerks,49.1
+111,Photographic process workers,49.2
+112,Managers of properties and real estate,49.7
+113,Computer and peripheral equipment operators,50.2
+114,Guides,50.3
+115,"Purchasing managers, agents and buyers",50.5
+116,Subject instructors (high school/college),50.8
+117,Mathematicians and mathematical scientists,51.1
+118,Misc food prep workers,51.1
+119,Ushers,51.1
+120,"Weighers, measurers, and checkers",51.9
+121,Medical scientists,52
+122,"Managers and specialists in marketing, advertising, public relations",52.1
+123,Photographers,52.1
+124,Cementing and gluing maching operators,52.2
+125,"Mail clerks, outside of post office",52.3
+126,"Inspectors and compliance officers, outside construction",52.4
+127,Insurance sales occupations,53.7
+128,Misc textile machine operators,53.8
+129,Bus drivers,54.1
+130,Mail and paper handlers,54.4
+131,Other financial specialists,54.6
+132,Managers of food-serving and lodging establishments,54.7
+133,Machine feeders and offbearers,54.8
+134,Recreation facility attendants,55.1
+135,Editors and reporters,55.2
+136,Urban and regional planners,55.8
+137,Health technologists and technicians,56.3
+138,Biological technicians,56.3
+139,Business and promotion agents,56.4
+140,Biological scientists,56.6
+141,Operations and systems researchers and analysts,57.8
+142,Art makers,58
+143,Engravers,58
+144,"Material recording, scheduling, production, planning, expediting clerks",58.5
+145,Management analysts,58.7
+146,Physical scientists,58.7
+147,Optometrists,58.7
+148,Bookbinders,58.8
+149,Other health and therapy,58.9
+150,"Cooks, variously defined",58.9
+151,Supervisors and proprietors of sales jobs,59.7
+152,Chemists,60.6
+153,"Athletes, sports instructors, and officials",61
+154,Assemblers of electrical equipment,61.2
+155,"Actors, directors, producers",61.6
+156,Mail carriers for postal service,61.9
+157,Actuaries,62.6
+158,Graders and sorters in manufacturing,63.3
+159,Roasting and baking machine operators (food),64.2
+160,Lawyers,64.5
+161,Stock and inventory clerks,64.5
+162,Inspectors of agricultural products,64.5
+163,Shoe repairers,64.9
+164,Physicians,65
+165,Supervisors of cleaning and building service,65.8
+166,Musician or composer,66.3
+167,Salespersons,66.3
+168,Paper folding machine operators,67.3
+169,Janitors,68.4
+170,Geologists,68.8
+171,"Purchasing agents and buyers, of farm products",68.9
+172,Chemical technicians,68.9
+173,Textile cutting machine operators,69.4
+174,Financial services sales occupations,69.9
+175,Agricultural and food scientists,70.3
+176,Shipping and receiving clerks,70.5
+177,Managers and administrators,70.9
+178,Clergy and religious workers,71.7
+179,Machine operators,71.7
+180,Computer systems analysts and computer scientists,72.2
+181,Engineering technicians,72.3
+182,Other law enforcement,73.1
+183,Dentists,73.6
+184,Atmospheric and space scientists,75.4
+185,Furniture and wood finishers,75.5
+186,Slicing and cutting machine operators,75.7
+187,Supervisors of guards,75.8
+188,Motion picture projectionists,76
+189,Chief executives and public administrators,76.1
+190,Butchers and meat cutters,76.1
+191,Typesetters and compositors,76.2
+192,Air traffic controllers,76.9
+193,Other science technicians,77.1
+194,Architects,77.8
+195,"Precision makers, repairers, and smiths",77.8
+196,Upholsterers,78.1
+197,"Rollers, roll hands, and finishers of metal",78.3
+198,Funeral directors,78.4
+199,Computer software developers,78.5
+200,Barbers,78.8
+201,"Wood lathe, routing, and planing machine operators",78.8
+202,Physicists and astronomers,79.1
+203,Farm workers,79.1
+204,Industrial engineers,79.2
+205,"Guards, watchmen, doorkeepers",79.2
+206,Production helpers,79.5
+207,Announcers,79.9
+208,Supervisors of motor vehicle transportation,80.9
+209,Foresters and conservation scientists,81
+210,Podiatrists,81.8
+211,Messengers,81.8
+212,"Police, detectives, and private investigators",82.2
+213,Drafters,82.3
+214,Production supervisors or foremen,82.3
+215,Laborers outside construction,82.3
+216,Garage and service station related occupations,82.4
+217,"Molders, and casting machine operators",82.6
+218,"Petroleum, mining, and geological engineers",83.2
+219,Baggage porters,83.2
+220,Punching and stamping press operatives,83.3
+221,"Freight, stock, and materials handlers",83.4
+222,"Metallurgical and materials engineers, variously phrased",84.6
+223,Extruding and forming machine operators,84.7
+224,"Surveyors, cartographers, mapping scientists and technicians",85.1
+225,Vehicle washers and equipment cleaners,85.2
+226,Taxi cab drivers and chauffeurs,85.3
+227,Chemical engineers,86
+228,Farmers (owners and tenants),86.4
+229,Military,86.9
+230,Not-elsewhere-classified engineers,87.2
+231,Mixing and blending machine operatives,87.2
+232,Elevator operators,87.7
+233,Nail and tacking machine operators (woodworking),87.8
+234,Civil engineers,87.9
+235,Broadcast equipment operators,88
+236,Aerospace engineer,88.1
+237,Construction inspectors,88.5
+238,Repairers of data processing equipment,88.6
+239,Painting machine operators,89.1
+240,Meter readers,89.3
+241,"Hand molders and shapers, except jewelers",89.6
+242,Parking lot attendants,89.8
+243,Insulation workers,90.2
+244,Garbage and recyclable material collectors,90.2
+245,"Separating, filtering, and clarifying machine operators",90.3
+246,Electrical engineer,90.7
+247,"Timber, logging, and forestry workers",90.8
+248,Sawing machine operators and sawyers,90.8
+249,Telecom and line installers and repairers,91.6
+250,Other woodworking machine operators,91.6
+251,Supervisors of mechanics and repairers,92
+252,Mechanical engineers,92.2
+253,"Furnace, kiln, and oven operators, apart from food",92.3
+254,Airplane pilots and navigators,92.5
+255,Explosives workers,92.5
+256,"Helpers, constructions",93.1
+257,Repairers of electrical equipment,93.2
+258,Repairers of mechanical controls and valves,93.2
+259,Programmers of numerically controlled machine tools,93.5
+260,Other plant and system operators,93.5
+261,"Painters, construction and maintenance",93.6
+262,Welders and metal cutters,94
+263,Railroad conductors and yardmasters,94
+264,"Truck, delivery, and tractor drivers",94.2
+265,Locomotive operators (engineers and firemen),94.3
+266,Ship crews and marine engineers,94.3
+267,Gardeners and groundskeepers,94.4
+268,"Fishers, hunters, and kindred",94.6
+269,Cabinetmakers and bench carpenters,94.8
+270,Sales engineers,94.9
+271,Supervisors of agricultural occupations,94.9
+272,Misc material moving occupations,95.1
+273,"Fire fighting, prevention, and inspection",95.2
+274,Locksmiths and safe repairers,95.2
+275,Pest control occupations,95.4
+276,Power plant operators,95.4
+277,Machinists,95.6
+278,Aircraft mechanics,95.8
+279,Mechanics and repairers,96
+280,Water and sewage treatment plant operators,96
+281,"Crane, derrick, winch, and hoist operators",96.5
+282,"Plant and system operators, stationary engineers",96.6
+283,"Helpers, surveyors",96.6
+284,Industrial machinery repairers,96.7
+285,Tool and die makers and die setters,96.7
+286,Miners,96.8
+287,Supervisors of construction work,96.9
+288,Auto body repairers,97.1
+289,Repairers of industrial electrical equipment,97.1
+290,Sheet metal duct installers,97.1
+291,Construction trades,97.1
+292,Machinery maintenance occupations,97.2
+293,"Paving, surfacing, and tamping equipment operators",97.2
+294,Construction laborers,97.2
+295,Drywall installers,97.6
+296,Glaziers,97.7
+297,Repairers of household appliances and power tools,97.9
+298,Small engine repairers,98.1
+299,Millwrights,98.2
+300,Electricians,98.2
+301,Electric power installers and repairers,98.2
+302,Structural metal workers,98.2
+303,Other mining occupations,98.2
+304,Forge and hammer operators,98.2
+305,Excavating and loading machine operators,98.2
+306,Carpenters,98.3
+307,Automobile mechanics,98.4
+308,Operating engineers of construction equipment,98.4
+309,"Masons, tilers, and carpet installers",98.5
+310,Elevator installers and repairers,98.6
+311,Plasterers,98.7
+312,"Plumbers, pipe fitters, and steamfitters",98.7
+313,Heavy equipment and farm equipment mechanics,98.8
+314,"Heating, air conditioning, and refigeration mechanics",98.9
+315,"Bus, truck, and stationary engine mechanics",99
+316,Roofers and slaters,99
+317,Drillers of oil wells,99.2
+318,Concrete and cement workers,99.3
+319,Drillers of earth,99.6
+320,Boilermakers,99.8

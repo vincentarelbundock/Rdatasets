@@ -1,0 +1,91 @@
+<!DOCTYPE html><html><head><title>R: Higher Rates Of Hate Crimes Are Tied To Income Inequality</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>hate_crimes</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Higher Rates Of Hate Crimes Are Tied To Income Inequality</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;Higher Rates Of Hate Crimes Are Tied To Income Inequality&quot;
+<a href="https://fivethirtyeight.com/features/higher-rates-of-hate-crimes-are-tied-to-income-inequality/">https://fivethirtyeight.com/features/higher-rates-of-hate-crimes-are-tied-to-income-inequality/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>hate_crimes
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 51 rows representing US states and DC and 13 variables:
+</p>
+
+<dl>
+<dt>state</dt><dd><p>State name</p>
+</dd>
+<dt>state_abbrev</dt><dd><p>State abbreviation</p>
+</dd>
+<dt>median_house_inc</dt><dd><p>Median household income, 2016</p>
+</dd>
+<dt>share_unemp_seas</dt><dd><p>Share of the population that is unemployed (seasonally adjusted), Sept. 2016</p>
+</dd>
+<dt>share_pop_metro</dt><dd><p>Share of the population that lives in metropolitan areas, 2015</p>
+</dd>
+<dt>share_pop_hs</dt><dd><p>Share of adults 25 and older with a high-school degree, 2009</p>
+</dd>
+<dt>share_non_citizen</dt><dd><p>Share of the population that are not U.S. citizens, 2015</p>
+</dd>
+<dt>share_white_poverty</dt><dd><p>Share of white residents who are living in poverty, 2015</p>
+</dd>
+<dt>gini_index</dt><dd><p>Gini Index, 2015</p>
+</dd>
+<dt>share_non_white</dt><dd><p>Share of the population that is not white, 2015</p>
+</dd>
+<dt>share_vote_trump</dt><dd><p>Share of 2016 U.S. presidential voters who voted for Donald Trump</p>
+</dd>
+<dt>hate_crimes_per_100k_splc</dt><dd><p>Hate crimes per 100,000 population, Southern Poverty Law Center, Nov. 9-18, 2016</p>
+</dd>
+<dt>avg_hatecrimes_per_100k_fbi</dt><dd><p>Average annual hate crimes per 100,000 population, FBI, 2010-2015</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>See <a href="https://github.com/fivethirtyeight/data/tree/master/hate-crimes">https://github.com/fivethirtyeight/data/tree/master/hate-crimes</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library(ggplot2)
+ggplot(hate_crimes, aes(x = share_vote_trump, y = hate_crimes_per_100k_splc)) +
+  geom_text(aes(label = state_abbrev)) +
+  geom_smooth(se = FALSE, method = "lm") +
+  labs(x = "Proportion of votes for Donald Trump",
+       y = "Hate crimes per 100k during Nov 9-18, 2016 (SPLC)",
+       title = "Relationship between Trump support &amp; hate crimes")
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

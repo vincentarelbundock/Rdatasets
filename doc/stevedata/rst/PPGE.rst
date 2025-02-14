@@ -14,10 +14,11 @@
 
       A data set on government spending in select rich countries as a
       function of trade/GDP, financial openness, and the
-      state-year-level engagement in trade unions. The data offer a
-      means to quasi-replicate Garrett's (1998) argument about left-wing
-      governments' ability to stem the tide of globalization's effect on
-      decreased government spending.
+      state-year-level engagement in trade unions (among other things).
+      The data offer a means to assess Garrett's (1998) argument about
+      left-wing governments' ability to stem the tide of globalization's
+      effect on decreased government spending. Data also draw
+      inspiration from Rodrik (1998) and Garrett (2001).
 
       .. rubric:: Usage
          :name: usage
@@ -29,7 +30,7 @@
       .. rubric:: Format
          :name: format
 
-      A data frame with the following 9 variables.
+      A data frame with the following variables.
 
       ``country``
          a character vector for the country
@@ -62,31 +63,56 @@
          an estimate of a country's engagement in independent trade
          unions, on ordinal scale. See details.
 
+      ``ud``
+         union density, as a percentage (i.e. union members/working
+         employees)
+
+      ``urbanperc``
+         the percentage of the population living in urban areas)
+
+      ``gdppc``
+         GDP per capita, in constant 2015 USD
+
+      ``tpop``
+         total population size, in units of individual humans
+
+      ``depratio``
+         dependency ratio (see details)
+
       .. rubric:: Details
          :name: details
 
-      The data are an unbalanced panel because of data missingness
-      primarily affecting Switzerland (which would only appear in the
-      panel in earnest starting in the mid-1990s). The Netherlands has
-      some missing data in the mid-1970s. Spain and Portugal appear at
-      the start of the panel, though the transition to democracy for
-      both wouldn't start until 1974/1975. The data also have some
-      obvious COVID weirdness for 2020. Perhaps an honest re-assessment
-      of Garrett (1998) may want to drop Switzerland altogether, ignore
-      2020, and lop a few years off the Spanish and Portuguese panel.
-      What you do with the Netherlands is up to you.
+      The data are an unbalanced panel with assorted quirks during its
+      construction. Data missingness affecting Switzerland means it
+      would only appear in the panel starting in the mid-1990s. The
+      Netherlands has some missing data in the mid-1970s. Spain and
+      Portugal appear at the start of the panel, though the transition
+      to democracy for both wouldn't start until 1974/1975. Union
+      density coverage is spotty for states like Greece and Portugal.
+      The data also have some obvious COVID weirdness for 2020. Use that
+      to inform whatever case or variable selection you would like to
+      do. It may make sense to employ a temporal domain of something
+      like 1980 to 2005, or whatever. I don't know. There's also the
+      issue of what to do about the recession.
+
+      The dependency ratio is defined as the population aged 0-14, or 65
+      and above, divided over the "working-age" population of 15-64 (x
+      100).
 
       Briefly: the government spending/GDP data come from the
       International Monetary Fund. The trade/GDP data come from the
-      World Bank's API. The financial openness indicators come by way of
-      the Chinn-Ito index. The engagement in trade unions data are from
-      the Varieties of Democracy project. The ordinal measure of the
-      trade union estimates communicate what percentage of the
-      population is active in independent trade unions. Values include
-      0) virtually no one 1) a small share of the population (less than
-      5%), 2) A moderate share of the population (about 5 to 15%). 3) A
-      large share of the population (about 16 % to 25%). 4) A very large
-      share of the population (about 26% or more).
+      World Bank's API, as do the population, GDP per capita, and
+      urbanization data (see their details). The more conventional union
+      density data come from OECD/ICWSS. The financial openness
+      indicators come by way of the Chinn-Ito index. The engagement in
+      trade unions data are from the Varieties of Democracy project. The
+      ordinal measure of the trade union estimates communicate what
+      percentage of the population is active in independent trade
+      unions. Values include 0) virtually no one 1) a small share of the
+      population (less than 5%), 2) A moderate share of the population
+      (about 5 to 15%). 3) A large share of the population (about 16 %
+      to 25%). 4) A very large share of the population (about 26% or
+      more).
 
       .. rubric:: References
          :name: references
@@ -111,3 +137,10 @@
 
       Garrett, Geoffrey. 1998. *Partisan Politics in the Global Economy*
       New York, NY: Cambridge University Press.
+
+      Garrett, Geoffrey. 2001. "Globalization and Government Spending
+      around the World." *Studies in Comparative International
+      Development* 35(4): 3-29.
+
+      Rodrik, Dani. 1998. "Why Do More Open Economies Have Bigger
+      Government?" *Journal of Political Economy* 106: 997-1032.

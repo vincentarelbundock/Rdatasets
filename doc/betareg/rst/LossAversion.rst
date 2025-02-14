@@ -12,8 +12,8 @@
       .. rubric:: Description
          :name: description
 
-      Data for assessing the extent of myopic loss aversion among
-      adolescents (mostly aged 11 to 19).
+      Data from a behavioral economics experiment assessing the extent
+      of myopic loss aversion among adolescents (mostly aged 11 to 19).
 
       .. rubric:: Usage
          :name: usage
@@ -28,7 +28,7 @@
       A data frame containing 570 observations on 7 variables.
 
       invest
-         numeric. Average proportion of points invested across all 9
+         numeric. Average proportion of tokens invested across all 9
          rounds.
 
       gender
@@ -63,16 +63,16 @@
       The data in ``LossAversion`` were collected by Matthias Sutter and
       Daniela Glätzle-Rützler (Universität Innsbruck) in an experiment
       with high-school students in Tyrol, Austria (Schwaz and
-      Innsbruck). The students could invest X points (0-100) in each of
-      9 rounds in a lottery. The payouts were 100 + 2.5 \* X points with
-      probability 1/3 and 100 - X points with probability 2/3. Thus, the
-      expected payouts were 100 + 1/6 \* X points. Depending on the
+      Innsbruck). The students could invest X tokens (0-100) in each of
+      9 rounds in a lottery. The payouts were 100 + 2.5 \* X tokens with
+      probability 1/3 and 100 - X tokens with probability 2/3. Thus, the
+      expected payouts were 100 + 1/6 \* X tokens. Depending on the
       treatment in the experiment, the investments could either be
       modified in each round (treatment: "short") or only in round 1, 4,
       7 (treatment "long"). Decisions were either made alone or in teams
-      of two. The points were converted to monetary payouts using a
-      conversion of EUR 0.5 per 100 points for lower grades (Unterstufe,
-      6-8) or EUR 1.0 per 100 points for upper grades (Oberstufe,
+      of two. The tokens were converted to monetary payouts using a
+      conversion of EUR 0.5 per 100 tokens for lower grades (Unterstufe,
+      6-8) or EUR 1.0 per 100 tokens for upper grades (Oberstufe,
       10-12).
 
       From the myopic loss aversion literature (on adults) one would
@@ -96,6 +96,11 @@
       along with replication materials are available in the Harvard
       Dataverse.
 
+      Kosmidis and Zeileis (2024) revisit the data using
+      extended-support beta mixture (XBX) regression, which can
+      simultaneously capture both the probability of rational behavior
+      and the mean amount of loss aversion.
+
       .. rubric:: Source
          :name: source
 
@@ -108,9 +113,13 @@
          :name: references
 
       Glätzle-Rützler D, Sutter M, Zeileis A (2015). No Myopic Loss
-      Aversion in Adolescents? - An Experimental Note. *Journal of
-      Economic Behavior & Organization*, **111**, 169-176.
+      Aversion in Adolescents? – An Experimental Note. *Journal of
+      Economic Behavior & Organization*, **111**, 169–176.
       `doi:10.1016/j.jebo.2014.12.021 <https://doi.org/10.1016/j.jebo.2014.12.021>`__
+
+      Kosmidis I, Zeileis A (2024). Extended-Support Beta Regression for
+      [0, 1] Responses. 2409.07233, *arXiv.org E-Print Archive*.
+      `doi:10.48550/arXiv.2409.07233 <https://doi.org/10.48550/arXiv.2409.07233>`__
 
       .. rubric:: See Also
          :name: see-also

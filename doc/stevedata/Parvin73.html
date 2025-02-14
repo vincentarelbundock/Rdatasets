@@ -1,0 +1,96 @@
+<!DOCTYPE html><html><head><title>R: Economic Determinants of Political Unrest (Parvin, 1973)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Parvin73</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Economic Determinants of Political Unrest (Parvin, 1973)</h2>
+
+<h3>Description</h3>
+
+<p>A data set on the economic determinants of political unrest, for replicating
+a publication from 1973.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>Parvin73
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 26 observations on the following 9 variables.
+</p>
+
+<dl>
+<dt><code>country</code></dt><dd><p>a character vector for a country name</p>
+</dd>
+<dt><code>levviol</code></dt><dd><p>a numeric vector for the level of violence</p>
+</dd>
+<dt><code>pci</code></dt><dd><p>a numeric vector for per capita income</p>
+</dd>
+<dt><code>incdist</code></dt><dd><p>a numeric vector for income distribution</p>
+</dd>
+<dt><code>d_pci</code></dt><dd><p>a numeric vector for per capita income growth</p>
+</dd>
+<dt><code>sem</code></dt><dd><p>a numeric vector for socioeconomic mobility</p>
+</dd>
+<dt><code>comint</code></dt><dd><p>a numeric vector for communication intensity</p>
+</dd>
+<dt><code>concfac</code></dt><dd><p>a numeric vector for concentration factor</p>
+</dd>
+<dt><code>pop</code></dt><dd><p>a numeric vector for population size</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The bulk of these data come from Russett's (1964) <em>World Handbook
+of Political and Social Indicators</em>. The data themselves are transcribed from
+the appendix of the article, which allows a replication of the results that
+Parvin (1973) reports. You should read that article for more information as
+to what's happening and for what purpose.
+</p>
+<p>I did not catch Parvin (1973) mentioning this in the article, but there must
+be some kind of additive constant in the level of  violence variable because
+the logarithmic transformations he reports would be undefined for the
+observations (like Denmark) where the level of violence is zero. The easiest
+way to approximate whatever Parvin (1973) did is to add .001 to the level of
+violence variable before taking its logarithmic transformation. That would
+allow a near perfect replication of Table 1.
+</p>
+<p>It should go without saying that the population reported for Belgium, in the
+appendix, is likely a transcription error. Belgium's population is reported
+here as 9184, not &quot;91.84.00&quot;.
+</p>
+<p>The United Arab Republic was the short-lived union of Egypt and Syria, if you
+were curious what that is in the data.
+</p>
+
+
+<h3>References</h3>
+
+<p>Parvin, Manoucher. 1973. &quot;Economic Determinants of Political Unrest: An
+Econometric Approach&quot;. <em>Journal of Conflict Resolution</em> 17(2): 271&ndash;96.
+</p>
+
+</main>
+
+</div>
+</body></html>

@@ -65,27 +65,6 @@
          The URL of the film's information page in the Internet Movie
          Database (IMDB).
 
-      .. rubric:: Examples
-         :name: examples
-
-      Here is a glimpse at the data available in ``films``.
-
-      .. container:: sourceCode r
-
-         ::
-
-            dplyr::glimpse(films)
-            #> Rows: 1,851
-            #> Columns: 8
-            #> $ year                <int> 1946, 1946, 1946, 1946, 1946, 1946, 1946, 1946, 19~
-            #> $ title               <chr> "The Lovers", "Anna and the King of Siam", "Blood ~
-            #> $ original_title      <chr> "Amanti in fuga", NA, "Blod och eld", "Brevet fra ~
-            #> $ director            <chr> "Giacomo Gentilomo", "John Cromwell", "Anders Henr~
-            #> $ languages           <chr> "it", "en", "sv", "da", "en,fr", "en", "pt", "ru",~
-            #> $ countries_of_origin <chr> "IT", "US", "SE", "DK", "GB", "GB", "PT", "SU", "D~
-            #> $ run_time            <chr> "1h 30m", "2h 8m", "1h 40m", "1h 18m", "1h 26m", "~
-            #> $ imdb_url            <chr> "https://www.imdb.com/title/tt0038297/", "https://~
-
       .. rubric:: Dataset ID and Badge
          :name: dataset-id-and-badge
 
@@ -98,7 +77,7 @@
       .. rubric:: Dataset Introduced
          :name: dataset-introduced
 
-      ``v0.11.0``
+      ``v0.11.0`` (July 9, 2024)
 
       .. rubric:: See Also
          :name: see-also
@@ -107,5 +86,12 @@
       ``gibraltar``, ``gtcars``, ``illness``, ``metro``, ``nuclides``,
       ``peeps``, ``photolysis``, ``pizzaplace``, ``reactions``,
       ``rx_addv``, ``rx_adsl``, ``sp500``, ``sza``, ``towny``
+
+      .. rubric:: Examples
+         :name: examples
+
+      .. code:: R
+
+         dplyr::glimpse(films)
 
 .. |This image of that of a dataset badge.| image:: https://raw.githubusercontent.com/rstudio/gt/master/images/dataset_films.png

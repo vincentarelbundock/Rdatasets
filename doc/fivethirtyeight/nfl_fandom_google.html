@@ -1,0 +1,87 @@
+<!DOCTYPE html><html><head><title>R: How Every NFL Team’s Fans Lean Politically</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>nfl_fandom_google</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>How Every NFL Team’s Fans Lean Politically</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;How Every NFL Team’s Fans Lean Politically&quot;
+<a href="https://fivethirtyeight.com/features/how-every-nfl-teams-fans-lean-politically/">https://fivethirtyeight.com/features/how-every-nfl-teams-fans-lean-politically/</a>: Google Trends Data.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>nfl_fandom_google
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>a data frame with 207 rows representing designated market areas and 9 variables:
+</p>
+
+<dl>
+<dt>dma</dt><dd><p>Designated Market Area</p>
+</dd>
+<dt>nfl</dt><dd><p>The percentage of search traffic in the media market region related to the NFL over the past 5 years</p>
+</dd>
+<dt>nba</dt><dd><p>The percentage of search traffic in the region related to the NBA over the past 5 years</p>
+</dd>
+<dt>mlb</dt><dd><p>The percentage of search traffic in the region related to the MLB over the past 5 years</p>
+</dd>
+<dt>nascar</dt><dd><p>The percentage of search traffic in the region related to NASCAR over the past 5 years</p>
+</dd>
+<dt>cbb</dt><dd><p>The percentage of search traffic in the region related to the CBB over the past 5 years</p>
+</dd>
+<dt>cfb</dt><dd><p>The percentage of search traffic in the region related to the CFB over the past 5 years</p>
+</dd>
+<dt>trump_2016_vote</dt><dd><p>The percentage of voters in the region who voted for Trump in the 2016 Presidential Election</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Google Trends <a href="https://trends.google.com/trends/">https://trends.google.com/trends/</a>.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>nfl_fandom_surveymonkey</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'># To convert data frame to tidy data (long) format, run:
+library(dplyr)
+library(tidyr)
+nfl_fandom_google_tidy &lt;- nfl_fandom_google %&gt;%
+  pivot_longer(-c("dma", "trump_2016_vote"), 
+    names_to = "sport", values_to = "search_traffic") %&gt;%
+  arrange(dma)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

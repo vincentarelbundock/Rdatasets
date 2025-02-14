@@ -1,0 +1,151 @@
+<!DOCTYPE html><html><head><title>R: Inequality and Insurgency: A Statistical Study of South...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Mitchell68</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Inequality and Insurgency: A Statistical Study of South Vietnam (Mitchell, 1968)</h2>
+
+<h3>Description</h3>
+
+<p>A data set on the correlates of government control in 26 provinces in South
+Vietnam, to replicate a study by Mitchell (1968).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>Mitchell68
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 26 observations on the following 9 variables.
+</p>
+
+<dl>
+<dt><code>id</code></dt><dd><p>a numeric vector (a simple identifier)</p>
+</dd>
+<dt><code>province</code></dt><dd><p>a character vector for the name of the province</p>
+</dd>
+<dt><code>gc</code></dt><dd><p>a numeric vector for government control in the province (as a percent)</p>
+</dd>
+<dt><code>ool</code></dt><dd><p>a numeric vector for owner-operated land (as a percent)</p>
+</dd>
+<dt><code>cvlhs</code></dt><dd><p>a numeric vector for the coefficient of variation of the distribution of land-holdings, by size</p>
+</dd>
+<dt><code>vl</code></dt><dd><p>a numeric vector for Vietnamese land, subject to transfer (as a percent of all land)</p>
+</dd>
+<dt><code>fl</code></dt><dd><p>a numeric vector for French land, subject to transfer (as a percent of all land)</p>
+</dd>
+<dt><code>m</code></dt><dd><p>a numeric vector for area of mobility</p>
+</dd>
+<dt><code>pd</code></dt><dd><p>a numeric vector for population density (per square kilometer)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data are gathered from Table 1 in the document. You should also
+read the article for more information as to what's happening and for what
+purpose.  Mitchell (1968) is quite clear about where else he's getting these
+data. Much of what follows can be discerned in the first few pages of Mitchell
+(1968), which jumps right into a conversation about research design after
+a brief introduction.
+</p>
+<p>Province names are taken &quot;as is&quot; from Mitchell (1968). Since South Vietnam
+no longer exists, and these observations are about 60 years old, some of
+these province names may no longer exist. You may have to search for some
+old provincial maps of the former Republic of Vietnam in order to understand
+where some of these provinces are/were (especially if you're interested in
+the regional variation noted by Paige (1970)).
+</p>
+<p><em>Los Angeles Times</em> maps inform the government control variable, and there
+are assumptions that Mitchell makes about the nature of control by the
+government (South Vietnam), the Vietcong, or the areas that are contested.
+The &quot;control&quot; here ultimately refers to South Vietnam.
+</p>
+<p>The observations for government control variable are from 1965. Mitchell's
+footnote in his Table 1 says all other variables (except for population
+density) correspond with information from 1960. The population density
+estimate comes from 1964.
+</p>
+<p>The coefficient of variation variable is defined as the standard deviation
+of land-holding size divided over the mean. If every landholding is of equal
+size, the observation is 0. Larger values suggest more variability in
+size of land-holdings with the implication being larger land-holdings are
+conspicuous in the province. It's a crude, but interesting, measure of
+inequality with that in mind.
+</p>
+<p>The owner-operated land variable is another crude, but interesting/novel
+measure. An obvious percentage, 100 implies complete land ownership. 0 implies
+universal tenancy where peasants work on land they do not own. Some
+familiarity with the peculiarities of South Vietnamese society at the time is
+strongly suggested.
+</p>
+<p>The &quot;French land&quot; and &quot;Vietnamese land&quot; variables refer to a specific agrarian
+reform measure (&quot;Ordinance 57&quot;). The Vietnam version includes both expropriated
+and redistributed land. The French version includes just expropriated land,
+per Mitchell. The logic is the Vietnamese version suggests higher values =
+lower inequality since the measure (partly) includes redistributed land. The
+French land, being just expropriation, has a single owner (the South
+Vietnamese government). That suggests higher inequality for higher values.
+This logic is interesting but questionable, and we'll just have to roll with
+the premise for the nature of the intended use of these data (i.e.
+replication). Paige's (1970) objection is more about regional variation in
+South Vietnam and its varied patterns of land use, and not about the
+particulars of these two measure (per se).
+</p>
+<p>The mobility measure is a percentage, referring to the percentage of the
+province that is composed of plains and hills without dense forest.
+</p>
+<p>The data are faithfully (to my level best!) scraped from Table 1 of his
+article. However, the results that come from a linear model do not perfectly
+reproduce his results (Equation 2, p. 432). I don't know why this is the case,
+nor is it that important. It is worth noting that this kind of &quot;step-wise&quot;
+procedure he employs for selecting a linear model is 100% not how you should
+do it, and that 33rd footnote he includes on p. 432 would be an automatic
+rejection at any quantitatively-oriented journal today.
+</p>
+<p>It may interest the user to see re-analyses of Mitchell (1968) from around
+this time. I include those in the references for your consideration. Briefly,
+Paige's (1970) objection is that Mitchell (1968) includes radically different
+land-holding types into assorted measures of inequality and that Mitchell is
+selecting on 1965 (a watershed moment of insurgency during the war).
+Paranzino's (1972) critique is primarily statistical, though incorporates
+some of the issues raised by Paige (1970). Importantly, he correctly notes
+what the results of the linear model should be (p. 567).
+</p>
+
+
+<h3>References</h3>
+
+<p>Mitchell, Edward J. 1968. &quot;Inequality and Insurgency: A Statistical Study of
+South Vietnam.&quot; <em>World Politics</em> 20(3): 421&ndash;38.
+</p>
+<p>Paige, Jeffery M. 1970. &quot;Inequality and Insurgency in Vietnam: A
+Re-Analysis.&quot; <em>World Politics</em> 23(1): 24&ndash;37.
+</p>
+<p>Paranzino, Dennis. 1972. &quot;Inequality and Insurgency in Vietnam: A Further
+Re-Analysis.&quot; <em>World Politics</em> 24(2): 565&ndash;78.
+</p>
+
+</main>
+
+</div>
+</body></html>

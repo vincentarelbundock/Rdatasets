@@ -1,0 +1,166 @@
+<!DOCTYPE html><html><head><title>R: Body weight and length of possums (tree living furry animals...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>possum</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Body weight and length of possums (tree living furry animals who are mostly 
+nocturnal (marsupial) caught in 7 different regions of Australia.</h2>
+
+<h3>Description</h3>
+
+<p>Body weight and length of possums (tree living furry animals who are mostly 
+nocturnal (marsupial) caught in 7 different regions of Australia.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>possum
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 101 rows and 3 columns:
+</p>
+
+<dl>
+<dt>Body_Weight</dt><dd><p>Body weight in kilogram</p>
+</dd>
+<dt>Length</dt><dd><p>Body length of the possum</p>
+</dd>
+<dt>Location</dt><dd><p>7 different regions of Australia: (1) Western  
+Austrailia (W.A), (2) South Australia (S.A), (3) Northern Territory 
+(N.T), (4) Queensland (QuL), (5) New South Wales (NSW),   
+(6) Victoria (Vic) and (7) Tasmania (Tas). </p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Lindenmayer and Donnelly (1995).
+</p>
+
+
+<h3>References</h3>
+
+<p>Lindenmayer DBVKLCRB, Donnelly CF (1995).
+&ldquo;Morphological variation among columns of the mountain brushtail possum, Trichosurus caninus Ogilby (Phalangeridae: Marsupiala).&rdquo;
+<em>Australian Journal of Zoology</em>, <b>43</b>, 449-458.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>head(possum)
+ dim(possum)
+ summary(possum)
+ ## Code lines used in the book
+ ## Create a new data set   
+ poss &lt;- possum 
+ poss$region &lt;- factor(poss$Location)
+ levels(poss$region) &lt;- c("W.A", "S.A", "N.T", "QuL", "NSW", "Vic", "Tas")
+ colnames(poss)&lt;-c("y","z","Location", "x")
+ head(poss)
+ # Draw side by side boxplots 
+ boxplot(y~x, data=poss, col=2:8, xlab="region", ylab="Weight")
+ # Obtain scatter plot 
+ # Start with a skeleton plot 
+ plot(poss$z, poss$y, type="n", xlab="Length", ylab="Weight")
+ # Add points for the seven regions
+ for (i in 1:7) {
+    points(poss$z[poss$Location==i],poss$y[poss$Location==i],type="p", pch=as.character(i), col=i)
+    }
+## Add legends 
+ legend(x=76, y=4.2, legend=paste(as.character(1:7), levels(poss$x)),  lty=1:7, col=1:7)
+ # Start  modelling 
+ #Fit the model with interaction. 
+ poss.lm1&lt;-lm(y~z+x+z:x,data=poss)
+ summary(poss.lm1)
+ plot(poss$z, poss$y,type="n", xlab="Length", ylab="Weight")
+ for (i in 1:7) {
+ lines(poss$z[poss$Location==i],poss.lm1$fit[poss$Location==i],type="l",
+ lty=i, col=i, lwd=1.8)
+ points(poss$z[poss$Location==i],poss$y[poss$Location==i],type="p",
+ pch=as.character(i), col=i)
+ }
+ poss.lm0 &lt;- lm(y~z,data=poss)
+ abline(poss.lm0, lwd=3, col=9)
+ # Has drawn the seven parallel regression lines
+ legend(x=76, y=4.2, legend=paste(as.character(1:7), levels(poss$x)), 
+ lty=1:7, col=1:7)
+ 
+ n &lt;- length(possum$Body_Weight)
+ # Wrong model since Location is not a numeric covariate 
+ wrong.lm &lt;- lm(Body_Weight~Location, data=possum)
+ summary(wrong.lm)
+ 
+ nis &lt;- table(possum$Location)
+ meanwts &lt;- tapply(possum$Body_Weight, possum$Location, mean)
+ varwts &lt;- tapply(possum$Body_Weight, possum$Location, var)
+ datasums &lt;- data.frame(nis=nis, mean=meanwts, var=varwts)
+ datasums &lt;- data.frame(nis=nis, mean=meanwts, var=varwts)
+ modelss &lt;- sum(datasums[,2] * (meanwts - mean(meanwts))^2)
+ residss &lt;- sum( (datasums[,2] - 1) * varwts)
+ 
+ fvalue &lt;- (modelss/6) / (residss/94)
+ fcritical &lt;- qf(0.95, df1= 6, df2=94)
+ x &lt;- seq(from=0, to=12, length=200)
+ y &lt;- df(x, df1=6, df2=94)
+ plot(x, y, type="l", xlab="", ylab="Density of F(6, 94)", col=4)
+ abline(v=fcritical, lty=3, col=3)
+ abline(v=fvalue, lty=2, col=2)
+ pvalue &lt;- 1-pf(fvalue, df1=6, df2=94)
+ 
+ ### Doing the above in R
+ # Convert  the Location column to a factor
+ possum$Location &lt;- as.factor(possum$Location)
+ summary(possum)  # Now Location is a factor 
+  
+ # Put the identifiability constraint:
+ options(contrasts=c("contr.treatment", "contr.poly"))
+ colnames(possum) &lt;- c("y", "z", "x")
+ # Fit model M1
+ possum.lm1 &lt;- lm(y~x, data=possum)
+ summary(possum.lm1)
+ anova(possum.lm1)
+ possum.lm2 &lt;- lm(y~z, data=poss)
+ summary(possum.lm2)
+ anova(possum.lm2)
+ # Include both location and length but no interaction 
+ possum.lm3 &lt;-  lm(y~x+z, data=poss)
+ summary(possum.lm3)
+ anova(possum.lm3)
+ # Include interaction effect 
+ possum.lm4 &lt;-  lm(y~x+z+x:z, data=poss)
+ summary(possum.lm4)
+ anova(possum.lm4)
+ anova(possum.lm2, possum.lm3)
+ #Check the diagnostics for M3
+ plot(possum.lm3$fit, possum.lm3$res,xlab="Fitted values",ylab="Residuals", 
+ main="Anscombe plot")
+ abline(h=0)
+ qqnorm(possum.lm3$res,main="Normal probability plot", col=2)
+ qqline(possum.lm3$res, col="blue")
+ 
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

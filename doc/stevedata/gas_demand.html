@@ -1,0 +1,86 @@
+<!DOCTYPE html><html><head><title>R: Gasoline Demand in the OECD, 1960-1978</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gas_demand</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Gasoline Demand in the OECD, 1960-1978</h2>
+
+<h3>Description</h3>
+
+<p>A data set on gasoline demand in the OECD countries from 1960 to 1978
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>gas_demand
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 342 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>country</code></dt><dd><p>a character vector for an English country name</p>
+</dd>
+<dt><code>year</code></dt><dd><p>a numeric vector for the year of observation</p>
+</dd>
+<dt><code>gas</code></dt><dd><p>gasoline consumption per car, log-transformed</p>
+</dd>
+<dt><code>income</code></dt><dd><p>real per capita income, log-transformed</p>
+</dd>
+<dt><code>price</code></dt><dd><p>real gasoline price, log-transformed</p>
+</dd>
+<dt><code>cars</code></dt><dd><p>the stock of cars per capita, log-transformed</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data are a simple port from the <span class="pkg">AER</span> package. Users should
+read Baltagi and Griffin (1983) for more information. The data are purely for
+illustration about panel models.
+</p>
+<p>Generally, per capita income should not be negative when log-transformed,
+especially for this set of countries. While it is clear that such negative
+values arise from the logarithmic transformation of values less than 1, but
+more than 0, it is not clear why per capita income would be on that particular
+scale.
+</p>
+<p>The same curiosities emerge for the stock of cars per capita and real
+gasoline price, though proportional values between 0 and 1 are seemingly
+plausible (absent my willingness to look further into these details).
+</p>
+<p>No matter, the data are sufficient for replication of Baltagi and Griffin
+(1983) without any further effort from the user. That's always nice.
+</p>
+
+
+<h3>References</h3>
+
+<p>Baltagi, Badi H. and James M. Griffin. 1983. &quot;Gasoline Demand in the OECD: An
+Application of Pooling and Testing Procedures&quot; <em>European Economic Review</em>
+22: 117-137.
+</p>
+
+</main>
+
+</div>
+</body></html>

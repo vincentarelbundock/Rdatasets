@@ -1,0 +1,80 @@
+<!DOCTYPE html><html><head><title>R: Both Republicans And Democrats Have an Age Problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>congress_age</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Both Republicans And Democrats Have an Age Problem</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;Both Republicans And Democrats Have an Age Problem&quot;
+<a href="https://fivethirtyeight.com/features/both-republicans-and-democrats-have-an-age-problem/">https://fivethirtyeight.com/features/both-republicans-and-democrats-have-an-age-problem/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>congress_age
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 18,635 rows representing members of Congress
+(House and Senate) and 13 variables:
+</p>
+
+<dl>
+<dt>congress</dt><dd><p>Congress number.</p>
+</dd>
+<dt>chamber</dt><dd><p>Chamber of congress: House of Representatives or Senate.</p>
+</dd>
+<dt>bioguide</dt><dd><p>bioguide</p>
+</dd>
+<dt>firstname</dt><dd><p>First name</p>
+</dd>
+<dt>middlename</dt><dd><p>Middle name</p>
+</dd>
+<dt>lastname</dt><dd><p>Last name</p>
+</dd>
+<dt>suffix</dt><dd><p>Suffix</p>
+</dd>
+<dt>birthday</dt><dd><p>Birthday</p>
+</dd>
+<dt>state</dt><dd><p>State abbreviation</p>
+</dd>
+<dt>party</dt><dd><p>Party abbreviation</p>
+</dd>
+<dt>incumbent</dt><dd><p>Boolean variable of whether member was an incumbent.</p>
+</dd>
+<dt>termstart</dt><dd><p>Start date of session.</p>
+</dd>
+<dt>age</dt><dd><p>Age at start of session.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>See <a href="https://github.com/fivethirtyeight/data/tree/master/congress-age">https://github.com/fivethirtyeight/data/tree/master/congress-age</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

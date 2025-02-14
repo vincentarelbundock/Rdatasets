@@ -1,0 +1,118 @@
+<!DOCTYPE html><html><head><title>R: The (Very) Long Tail Of Hurricane Recovery</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>sandy_311</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The (Very) Long Tail Of Hurricane Recovery</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;The (Very) Long Tail Of Hurricane Recovery&quot;
+<a href="https://projects.fivethirtyeight.com/sandy-311/">https://projects.fivethirtyeight.com/sandy-311/</a>
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>sandy_311
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1783 rows representing dates and 25 variables:
+</p>
+
+<dl>
+<dt>date</dt><dd><p>Date</p>
+</dd>
+<dt>nyc_311</dt><dd><p>No description provided.</p>
+</dd>
+<dt>acs</dt><dd><p>The number of emergency hotline (311) calls made to the Administration for Children's Services related to Hurricane Sandy on the given date</p>
+</dd>
+<dt>bpsi</dt><dd><p>The number of emergency hotline (311) calls made to Building Protection Systems, Inc related to Hurricane Sandy</p>
+</dd>
+<dt>cau</dt><dd><p>The number of emergency hotline (311) calls made to the Community Affairs Unit related to Hurricane Sandy</p>
+</dd>
+<dt>chall</dt><dd><p>The number of emergency hotline (311) calls made to the City Hall related to Hurricane Sandy</p>
+</dd>
+<dt>dep</dt><dd><p>The number of emergency hotline (311) calls made to the Department of Environmental Protection related to Hurricane Sandy</p>
+</dd>
+<dt>dob</dt><dd><p>The number of emergency hotline (311) calls made to the Department of Buildings related to Hurricane Sandy</p>
+</dd>
+<dt>doe</dt><dd><p>The number of emergency hotline (311) calls made to the Department of Education related to Hurricane Sandy</p>
+</dd>
+<dt>dof</dt><dd><p>The number of emergency hotline (311) calls made to the Department of Finance related to Hurricane Sandy</p>
+</dd>
+<dt>dohmh</dt><dd><p>The number of emergency hotline (311) calls made to the Department of Health and Mental Hygiene related to Hurricane Sandy</p>
+</dd>
+<dt>dpr</dt><dd><p>The number of emergency hotline (311) calls made to the Department of Parks and Recreation related to Hurricane Sandy</p>
+</dd>
+<dt>fema</dt><dd><p>The number of emergency hotline (311) calls made to the Federal Emergency Management Agency related to Hurricane Sandy</p>
+</dd>
+<dt>hpd</dt><dd><p>The number of emergency hotline (311) calls made to the Department of Housing Preservation and Development related to Hurricane Sandy</p>
+</dd>
+<dt>hra</dt><dd><p>The number of emergency hotline (311) calls made to the Human Resources Administration related to Hurricane Sandy</p>
+</dd>
+<dt>mfanyc</dt><dd><p>The number of emergency hotline (311) calls made to the Mayor's Fund to Advance NYC related to Hurricane Sandy</p>
+</dd>
+<dt>mose</dt><dd><p>The number of emergency hotline (311) calls made to the Mayor's Office of Special Enforcement related to Hurricane Sandy</p>
+</dd>
+<dt>nycem</dt><dd><p>The number of emergency hotline (311) calls made to Emergency Management related to Hurricane Sandy</p>
+</dd>
+<dt>nycha</dt><dd><p>The number of emergency hotline (311) calls made to the New York City Housing Authority related to Hurricane Sandy</p>
+</dd>
+<dt>nyc_service</dt><dd><p>The number of emergency hotline (311) calls made to NYC Service related to Hurricane Sandy</p>
+</dd>
+<dt>nypd</dt><dd><p>The number of emergency hotline (311) calls made to the New York Police Department related to Hurricane Sandy</p>
+</dd>
+<dt>nysdol</dt><dd><p>The number of emergency hotline (311) calls made to the NYC Department of Labor related to Hurricane Sandy</p>
+</dd>
+<dt>sbs</dt><dd><p>The number of emergency hotline (311) calls made to Small Business Services related to Hurricane Sandy</p>
+</dd>
+<dt>nys_emergency_mg</dt><dd><p>The number of emergency hotline (311) calls made to NYS Emergency Management related to Hurricane Sandy</p>
+</dd>
+<dt>total</dt><dd><p>The total number of emergency hotline (311) calls made related to Hurricane Sandy</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Data from NYC Open Data <a href="https://data.cityofnewyork.us/City-Government/311-Call-Center-Inquiry/tdd6-3ysr">https://data.cityofnewyork.us/City-Government/311-Call-Center-Inquiry/tdd6-3ysr</a>,
+Agency acronyms from the Data Dictionary. See also <a href="https://github.com/fivethirtyeight/data/tree/master/sandy-311-calls">https://github.com/fivethirtyeight/data/tree/master/sandy-311-calls</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'># To convert data frame to tidy data (long) format, run:
+library(dplyr)
+library(tidyr)
+sandy_311_tidy &lt;- sandy_311 %&gt;%
+  pivot_longer(-c("date", "total"), names_to = "agency", values_to = "num_calls") %&gt;%
+  arrange(date) %&gt;%
+  select(date, agency, num_calls, total) %&gt;%
+  rename(total_calls = total) %&gt;%
+  mutate(agency = as.factor(agency))
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

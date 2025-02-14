@@ -1,0 +1,61 @@
+<!DOCTYPE html><html><head><title>R: Mayweather Is Defined By The Zero Next To His Name</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>undefeated</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Mayweather Is Defined By The Zero Next To His Name</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind:
+&quot;Mayweather Is Defined By The Zero Next To His Name&quot;
+<a href="https://fivethirtyeight.com/features/mayweather-is-defined-by-the-zero-next-to-his-name/">https://fivethirtyeight.com/features/mayweather-is-defined-by-the-zero-next-to-his-name/</a>
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>undefeated
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 2125 rows representing boxing matches and 4 variables:
+</p>
+
+<dl>
+<dt>name</dt><dd><p>Name of boxer</p>
+</dd>
+<dt>url</dt><dd><p>URL with the boxer's record</p>
+</dd>
+<dt>date</dt><dd><p>Date of the match</p>
+</dd>
+<dt>wins</dt><dd><p>Number of cumulative wins for the boxer including the match at the specified date</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Box Rec
+</p>
+
+</main>
+
+</div>
+</body></html>

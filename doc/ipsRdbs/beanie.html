@@ -1,0 +1,65 @@
+<!DOCTYPE html><html><head><title>R: Age and value of 50 beanie baby toys</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>beanie</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Age and value of 50 beanie baby toys</h2>
+
+<h3>Description</h3>
+
+<p>Age and value of 50 beanie baby toys
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>beanie
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 50 rows and 3 columns:
+</p>
+
+<dl>
+<dt>name</dt><dd><p>Name of the toy</p>
+</dd>
+<dt>age</dt><dd><p>Age of the toy in months</p>
+</dd>
+<dt>value</dt><dd><p>Market value of the toy in US dollars</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Beanie world magazine
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> head(beanie)
+ summary(beanie)
+ plot(beanie$age, beanie$value, xlab="Age", ylab="Value", pch="*", col="red")
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

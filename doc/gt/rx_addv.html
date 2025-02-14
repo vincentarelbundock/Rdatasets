@@ -98,36 +98,6 @@ indicating whether PD is related to COVID-19 or not.</p>
 
 
 
-<h3>Examples</h3>
-
-<p>Here is a glimpse at the data available in <code>rx_addv</code>.
-</p>
-<div class="sourceCode r"><pre>dplyr::glimpse(rx_addv)
-#&gt; Rows: 291
-#&gt; Columns: 20
-#&gt; $ STUDYID  &lt;chr&gt; "GT01", "GT01", "GT01", "GT01", "GT01", "GT01", "GT01", "GT01~
-#&gt; $ STUDYIDN &lt;chr&gt; "4001", "4001", "4001", "4001", "4001", "4001", "4001", "4001~
-#&gt; $ USUBJID  &lt;chr&gt; "GT1001", "GT1002", "GT1002", "GT1003", "GT1003", "GT1003", "~
-#&gt; $ TRTA     &lt;fct&gt; Placebo, Placebo, Placebo, Placebo, Placebo, Placebo, Placebo~
-#&gt; $ TRTAN    &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1~
-#&gt; $ ITTFL    &lt;chr&gt; "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "~
-#&gt; $ AGE      &lt;int&gt; 41, 39, 39, 38, 38, 38, 45, 45, 35, 35, 35, 35, 35, 42, 35, 3~
-#&gt; $ AAGEGR1  &lt;fct&gt; &gt;=40, &lt;40, &lt;40, &lt;40, &lt;40, &lt;40, &gt;=40, &gt;=40, &lt;40, &lt;40, &lt;40, &lt;40~
-#&gt; $ SEX      &lt;fct&gt; Male, Female, Female, Male, Male, Male, Male, Male, Female, F~
-#&gt; $ ETHNIC   &lt;fct&gt; Not Hispanic or Latino, Not Hispanic or Latino, Not Hispanic ~
-#&gt; $ BLBMI    &lt;dbl&gt; 33.35073, 30.45862, 30.45862, 22.85986, 22.85986, 22.85986, 2~
-#&gt; $ DVTERM   &lt;chr&gt; "", "", "Lab values not taken at month 3", "", "{gt} Question~
-#&gt; $ PARAMCD  &lt;fct&gt; PDANYM, PDANYM, PDEV02, PDANYM, PDEV01, PDEV02, PDANYM, PDEV0~
-#&gt; $ PARAM    &lt;fct&gt; At least one major Protocol Deviation, At least one major Pro~
-#&gt; $ PARCAT1  &lt;chr&gt; "OVERALL", "OVERALL", "PROTOCOL DEVIATION", "OVERALL", "PROTO~
-#&gt; $ DVCAT    &lt;chr&gt; "", "", "Major", "", "Major", "Major", "", "Major", "", "", "~
-#&gt; $ ACAT1    &lt;chr&gt; "", "", "Study Procedures Criteria Deviations", "", "Study Pr~
-#&gt; $ AVAL     &lt;dbl&gt; 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1~
-#&gt; $ CRIT1    &lt;chr&gt; "COVID-19 Related", "COVID-19 Related", "COVID-19 Related", "~
-#&gt; $ CRIT1FL  &lt;chr&gt; "N", "N", "N", "N", "N", "N", "N", "N", "N", "Y", "N", "N", "~
-</pre></div>
-
-
 <h3>Dataset ID and Badge</h3>
 
 <p>DATA-18
@@ -164,6 +134,12 @@ indicating whether PD is related to COVID-19 or not.</p>
 <code>sza</code>,
 <code>towny</code>
 </p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>dplyr::glimpse(rx_addv)
+</code></pre>
 
 </main>
 

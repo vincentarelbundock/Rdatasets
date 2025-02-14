@@ -1,0 +1,706 @@
+rownames,member_id,first_name,last_name,position,iso2c,country,group_code,group_label,group_short_label
+1,197490,Magdalena,ADAMOWICZ,For,PL,Poland,EPP,European People’s Party,EPP
+2,189525,Asim,ADEMOV,For,BG,Bulgaria,EPP,European People’s Party,EPP
+3,124831,Isabella,ADINOLFI,Did Not Vote,IT,Italy,EPP,European People’s Party,EPP
+4,197826,Matteo,ADINOLFI,Did Not Vote,IT,Italy,ID,Identity and Democracy,ID
+5,197403,Alex,AGIUS SALIBA,Did Not Vote,MT,Malta,SD,Progressive Alliance of Socialists and Democrats,S&D
+6,198096,Mazaly,AGUILAR,For,ES,Spain,ECR,European Conservatives and Reformists,ECR
+7,125045,Clara,AGUILERA,For,ES,Spain,SD,Progressive Alliance of Socialists and Democrats,S&D
+8,197400,Abir,AL-SAHLANI,For,SE,Sweden,RENEW,Renew Europe,Renew
+9,204335,Alviina,ALAMETSÄ,For,FI,Finland,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+10,237224,João,ALBUQUERQUE,For,PT,Portugal,SD,Progressive Alliance of Socialists and Democrats,S&D
+11,197836,Alexander,ALEXANDROV YORDANOV,For,BG,Bulgaria,EPP,European People’s Party,EPP
+12,96750,François,ALFONSI,For,FR,France,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+13,197848,Atidzhe,ALIEVA-VELI,For,BG,Bulgaria,RENEW,Renew Europe,Renew
+14,247122,Catherine,AMALRIC,For,FR,France,RENEW,Renew Europe,Renew
+15,197783,Andris,AMERIKS,For,LV,Latvia,SD,Progressive Alliance of Socialists and Democrats,S&D
+16,197475,Christine,ANDERSON,Against,DE,Germany,ID,Identity and Democracy,ID
+17,197448,Rasmus,ANDRESEN,For,DE,Germany,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+18,204332,Barry,ANDREWS,For,IE,Ireland,RENEW,Renew Europe,Renew
+19,197691,Mathilde,ANDROUËT,Against,FR,France,ID,Identity and Democracy,ID
+20,202073,Marc,ANGEL,For,LU,Luxembourg,SD,Progressive Alliance of Socialists and Democrats,S&D
+21,124973,Gerolf,ANNEMANS,Against,BE,Belgium,ID,Identity and Democracy,ID
+22,124696,Andrus,ANSIP,For,EE,Estonia,RENEW,Renew Europe,Renew
+23,197587,Attila,ARA-KOVÁCS,For,HU,Hungary,SD,Progressive Alliance of Socialists and Democrats,S&D
+24,124936,Maria,ARENA,For,BE,Belgium,SD,Progressive Alliance of Socialists and Democrats,S&D
+25,96808,Pablo,ARIAS ECHEVERRÍA,For,ES,Spain,EPP,European People’s Party,EPP
+26,24922,Pascal,ARIMONT,For,BE,Belgium,EPP,European People’s Party,EPP
+27,197701,Konstantinos,ARVANITIS,Did Not Vote,GR,Greece,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+28,197695,Anna-Michelle,ASIMAKOPOULOU,For,GR,Greece,EPP,European People’s Party,EPP
+29,197533,Manon,AUBRY,Against,FR,France,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+30,28161,Margrete,AUKEN,For,DK,Denmark,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+31,124766,Petras,AUŠTREVIČIUS,For,LT,Lithuania,RENEW,Renew Europe,Renew
+32,197651,Carmen,AVRAM,Did Not Vote,RO,Romania,SD,Progressive Alliance of Socialists and Democrats,S&D
+33,197781,Malik,AZMANI,For,NL,Netherlands,RENEW,Renew Europe,Renew
+34,247735,Laura,BALLARÍN CEREZA,For,ES,Spain,SD,Progressive Alliance of Socialists and Democrats,S&D
+35,197495,Marek Paweł,BALT,For,PL,Poland,SD,Progressive Alliance of Socialists and Democrats,S&D
+36,131580,Jordan,BARDELLA,Did Not Vote,FR,France,ID,Identity and Democracy,ID
+37,197433,Katarina,BARLEY,For,DE,Germany,SD,Progressive Alliance of Socialists and Democrats,S&D
+38,197808,Pietro,BARTOLO,Did Not Vote,IT,Italy,SD,Progressive Alliance of Socialists and Democrats,S&D
+39,197610,Alessandra,BASSO,Against,IT,Italy,ID,Identity and Democracy,ID
+40,197779,José Ramón,BAUZÁ DÍAZ,For,ES,Spain,RENEW,Renew Europe,Renew
+41,124760,Nicolas,BAY,Against,FR,France,ECR,European Conservatives and Reformists,ECR
+42,132191,Gunnar,BECK,Against,DE,Germany,ID,Identity and Democracy,ID
+43,254719,Vasco,BECKER-WEINBERG,For,PT,Portugal,EPP,European People’s Party,EPP
+44,124777,Tiziana,BEGHIN,For,IT,Italy,NI,Non-attached Members,Non-attached
+45,197680,Aurélia,BEIGNEUX,Against,FR,France,ID,Identity and Democracy,ID
+46,197496,Marek,BELKA,For,PL,Poland,SD,Progressive Alliance of Socialists and Democrats,S&D
+47,197534,François-Xavier,BELLAMY,Abstain,FR,France,EPP,European People’s Party,EPP
+48,197658,Adrian-Dragoş,BENEA,Did Not Vote,RO,Romania,SD,Progressive Alliance of Socialists and Democrats,S&D
+49,124867,Brando,BENIFEI,For,IT,Italy,SD,Progressive Alliance of Socialists and Democrats,S&D
+50,197679,Isabel,BENJUMEA BENJUMEA,Abstain,ES,Spain,EPP,European People’s Party,EPP
+51,197408,Hildegard,BENTELE,For,DE,Germany,EPP,European People’s Party,EPP
+52,197778,Tom,BERENDSEN,For,NL,Netherlands,EPP,European People’s Party,EPP
+53,197478,Lars Patrick,BERG,For,DE,Germany,ECR,European Conservatives and Reformists,ECR
+54,197410,Stefan,BERGER,Did Not Vote,DE,Germany,EPP,European People’s Party,EPP
+55,4746,Sergio,BERLATO,Abstain,IT,Italy,ECR,European Conservatives and Reformists,ECR
+56,197648,Alexander,BERNHUBER,Did Not Vote,AT,Austria,EPP,European People’s Party,EPP
+57,23868,Monika,BEŇOVÁ,Against,SK,Slovakia,NI,Non-attached Members,Non-attached
+58,197498,Robert,BIEDROŃ,For,PL,Poland,SD,Progressive Alliance of Socialists and Democrats,S&D
+59,23788,Adam,BIELAN,Against,PL,Poland,ECR,European Conservatives and Reformists,ECR
+60,238674,Theresa,BIELOWSKI,For,AT,Austria,SD,Progressive Alliance of Socialists and Democrats,S&D
+61,197551,Stéphane,BIJOUX,For,FR,France,RENEW,Renew Europe,Renew
+62,96922,Izaskun,BILBAO BARANDICA,For,ES,Spain,RENEW,Renew Europe,Renew
+63,124771,Dominique,BILDE,Against,FR,France,ID,Identity and Democracy,ID
+64,197771,Vladimír,BILČÍK,For,SK,Slovakia,EPP,European People’s Party,EPP
+65,197435,Gabriele,BISCHOFF,For,DE,Germany,SD,Progressive Alliance of Socialists and Democrats,S&D
+66,197512,Benoît,BITEAU,For,FR,France,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+67,124992,Malin,BJÖRK,For,SE,Sweden,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+68,197637,Vasile,BLAGA,For,RO,Romania,EPP,European People’s Party,EPP
+69,197564,Hynek,BLAŠKO,Against,CZ,Czechia,NI,Non-attached Members,Non-attached
+70,96681,Vilija,BLINKEVIČIŪTĖ,For,LT,Lithuania,SD,Progressive Alliance of Socialists and Democrats,S&D
+71,197449,Michael,BLOSS,For,DE,Germany,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+72,124712,Andrea,BOCSKOR,Against,HU,Hungary,NI,Non-attached Members,Non-attached
+73,197439,Damian,BOESELAGER,For,DE,Germany,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+74,197636,Ioan-Rareş,BOGDAN,Did Not Vote,RO,Romania,EPP,European People’s Party,EPP
+75,125004,Franc,BOGOVIČ,For,SI,Slovenia,EPP,European People’s Party,EPP
+76,197788,Anna,BONFRISCO,Did Not Vote,IT,Italy,ID,Identity and Democracy,ID
+77,101039,Paolo,BORCHIA,Against,IT,Italy,ID,Identity and Democracy,ID
+78,112748,Biljana,BORZAN,For,HR,Croatia,SD,Progressive Alliance of Socialists and Democrats,S&D
+79,187917,Marc,BOTENGA,Abstain,BE,Belgium,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+80,197668,Vlad-Marius,BOTOŞ,For,RO,Romania,RENEW,Renew Europe,Renew
+81,197467,Geert,BOURGEOIS,For,BE,Belgium,ECR,European Conservatives and Reformists,ECR
+82,197577,Gilles,BOYER,For,FR,France,RENEW,Renew Europe,Renew
+83,226260,Karolin,BRAUNSBERGER-REINHOLD,For,DE,Germany,EPP,European People’s Party,EPP
+84,251324,Krzysztof,BREJZA,Against,PL,Poland,EPP,European People’s Party,EPP
+85,28346,Mercedes,BRESSO,For,IT,Italy,SD,Progressive Alliance of Socialists and Democrats,S&D
+86,197431,Patrick,BREYER,For,DE,Germany,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+87,197446,Milan,BRGLEZ,For,SI,Slovenia,SD,Progressive Alliance of Socialists and Democrats,S&D
+88,197470,Saskia,BRICMONT,For,BE,Belgium,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+89,197501,Joachim Stanisław,BRUDZIŃSKI,Did Not Vote,PL,Poland,ECR,European Conservatives and Reformists,ECR
+90,182995,Annika,BRUNA,Against,FR,France,ID,Identity and Democracy,ID
+91,197576,Sylvie,BRUNET,For,FR,France,RENEW,Renew Europe,Renew
+92,128483,Markus,BUCHHEIT,Against,DE,Germany,ID,Identity and Democracy,ID
+93,125012,Daniel,BUDA,For,RO,Romania,EPP,European People’s Party,EPP
+94,4267,Udo,BULLMANN,For,DE,Germany,SD,Progressive Alliance of Socialists and Democrats,S&D
+95,197440,Delara,BURKHARDT,For,DE,Germany,SD,Progressive Alliance of Socialists and Democrats,S&D
+96,197434,Martin,BUSCHMANN,For,DE,Germany,NI,Non-attached Members,Non-attached
+97,197829,Jorge,BUXADÉ VILLALBA,For,ES,Spain,ECR,European Conservatives and Reformists,ECR
+98,28269,Jerzy,BUZEK,For,PL,Poland,EPP,European People’s Party,EPP
+99,38420,Cristian-Silviu,BUŞOI,For,RO,Romania,EPP,European People’s Party,EPP
+100,96739,Reinhard,BÜTIKOFER,For,DE,Germany,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+101,197671,Traian,BĂSESCU,Did Not Vote,RO,Romania,EPP,European People’s Party,EPP
+102,35016,Marco,CAMPOMENOSI,Against,IT,Italy,ID,Identity and Democracy,ID
+103,96711,Pascal,CANFIN,For,FR,France,RENEW,Renew Europe,Renew
+104,250572,Patricia,CARO MAYA,Against,ES,Spain,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+105,199996,Isabel,CARVALHAIS,For,PT,Portugal,SD,Progressive Alliance of Socialists and Democrats,S&D
+106,197574,Damien,CARÊME,Did Not Vote,FR,France,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+107,28122,David,CASA,For,MT,Malta,EPP,European People’s Party,EPP
+108,197796,Massimo,CASANOVA,Did Not Vote,IT,Italy,ID,Identity and Democracy,ID
+109,28219,Daniel,CASPARY,For,DE,Germany,EPP,European People’s Party,EPP
+110,124812,Fabio Massimo,CASTALDO,For,IT,Italy,RENEW,Renew Europe,Renew
+111,86793,Anna,CAVAZZINI,For,DE,Germany,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+112,126644,Jordi,CAÑAS,For,ES,Spain,RENEW,Renew Europe,Renew
+113,197786,Susanna,CECCARDI,Did Not Vote,IT,Italy,ID,Identity and Democracy,ID
+114,197641,Sara,CERDAS,For,PT,Portugal,SD,Progressive Alliance of Socialists and Democrats,S&D
+115,197505,Catherine,CHABAUD,For,FR,France,RENEW,Renew Europe,Renew
+116,236052,Patricia,CHAGNON,Against,FR,France,ID,Identity and Democracy,ID
+117,197782,Mohammed,CHAHIM,For,NL,Netherlands,SD,Progressive Alliance of Socialists and Democrats,S&D
+118,197529,Leila,CHAIBI,Against,FR,France,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+119,124708,Dita,CHARANZOVÁ,For,CZ,Czechia,RENEW,Renew Europe,Renew
+120,197463,Olivier,CHASTEL,For,BE,Belgium,RENEW,Renew Europe,Renew
+121,124861,Caterina,CHINNICI,For,IT,Italy,EPP,European People’s Party,EPP
+122,197558,Asger,CHRISTENSEN,For,DK,Denmark,RENEW,Renew Europe,Renew
+123,204416,Ilana,CICUREL,For,FR,France,RENEW,Renew Europe,Renew
+124,197507,Włodzimierz,CIMOSZEWICZ,For,PL,Poland,SD,Progressive Alliance of Socialists and Democrats,S&D
+125,183793,Angelo,CIOCCA,Against,IT,Italy,ID,Identity and Democracy,ID
+126,197631,Dacian,CIOLOŞ,Did Not Vote,RO,Romania,RENEW,Renew Europe,Renew
+127,197657,Tudor,CIUHODARU,Abstain,RO,Romania,NI,Non-attached Members,Non-attached
+128,245018,Christophe,CLERGEAU,For,FR,France,SD,Progressive Alliance of Socialists and Democrats,S&D
+129,124988,Deirdre,CLUNE,For,IE,Ireland,EPP,European People’s Party,EPP
+130,1892,Carlos,COELHO,For,PT,Portugal,EPP,European People’s Party,EPP
+131,197536,Nathalie,COLIN-OESTERLÉ,Abstain,FR,France,EPP,European People’s Party,EPP
+132,247737,Ana,COLLADO JIMÉNEZ,Abstain,ES,Spain,EPP,European People’s Party,EPP
+133,197683,Gilbert,COLLARD,Did Not Vote,FR,France,NI,Non-attached Members,Non-attached
+134,96775,Lara,COMI,For,IT,Italy,EPP,European People’s Party,EPP
+135,202352,Antoni,COMÍN I OLIVERES,Did Not Vote,ES,Spain,NI,Non-attached Members,Non-attached
+136,197616,Rosanna,CONTE,Against,IT,Italy,ID,Identity and Democracy,ID
+137,197503,David,CORMAND,For,FR,France,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+138,124856,Ignazio,CORRAO,For,IT,Italy,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+139,240478,Beatrice,COVASSI,For,IT,Italy,SD,Progressive Alliance of Socialists and Democrats,S&D
+140,96880,Andrea,COZZOLINO,For,IT,Italy,NI,Non-attached Members,Non-attached
+141,33997,Corina,CREȚU,Did Not Vote,RO,Romania,SD,Progressive Alliance of Socialists and Democrats,S&D
+142,197588,Katalin,CSEH,For,HU,Hungary,RENEW,Renew Europe,Renew
+143,197654,Ciarán,CUFFE,For,IE,Ireland,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+144,197394,Josianne,CUTAJAR,For,MT,Malta,SD,Progressive Alliance of Socialists and Democrats,S&D
+145,28372,Ryszard,CZARNECKI,Against,PL,Poland,ECR,European Conservatives and Reformists,ECR
+146,124835,Rosa,D'AMATO,Did Not Vote,IT,Italy,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+147,197608,Gianantonio,DA RE,Against,IT,Italy,ID,Identity and Democracy,ID
+148,183338,Jakop G.,DALUNDE,For,SE,Sweden,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+149,197731,Clare,DALY,Against,IE,Ireland,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+150,96747,Arnaud,DANJEAN,Did Not Vote,FR,France,EPP,European People’s Party,EPP
+151,124821,Nicola,DANTI,For,IT,Italy,RENEW,Renew Europe,Renew
+152,239258,Maria Angela,DANZÌ,For,IT,Italy,NI,Non-attached Members,Non-attached
+153,236050,Marie,DAUCHY,Against,FR,France,ID,Identity and Democracy,ID
+154,197556,Ivan,DAVID,Against,CZ,Czechia,ID,Identity and Democracy,ID
+155,228604,Ilan,DE BASSO,For,SE,Sweden,SD,Progressive Alliance of Socialists and Democrats,S&D
+156,239262,Elisabetta,DE BLASIS,Did Not Vote,IT,Italy,ECR,European Conservatives and Reformists,ECR
+157,96891,Paolo,DE CASTRO,For,IT,Italy,SD,Progressive Alliance of Socialists and Democrats,S&D
+158,204414,Margarita,DE LA PISA CARRIÓN,For,ES,Spain,ECR,European Conservatives and Reformists,ECR
+159,197472,Filip,DE MAN,Against,BE,Belgium,ID,Identity and Democracy,ID
+160,204333,Salvatore,DE MEO,For,IT,Italy,EPP,European People’s Party,EPP
+161,197504,Jérémy,DECERLE,For,FR,France,RENEW,Renew Europe,Renew
+162,28390,Pilar,DEL CASTILLO VERA,Did Not Vote,ES,Spain,EPP,European People’s Party,EPP
+163,197531,Gwendoline,DELBOS-CORFIELD,For,FR,France,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+164,124714,Andor,DELI,Against,HU,Hungary,NI,Non-attached Members,Non-attached
+165,96868,Karima,DELLI,For,FR,France,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+166,197468,Özlem,DEMIREL,Against,DE,Germany,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+167,197453,Anna,DEPARNAY-GRUNENBERG,For,DE,Germany,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+168,96826,Tamás,DEUTSCH,Against,HU,Hungary,NI,Non-attached Members,Non-attached
+169,190774,Geoffroy,DIDIER,Abstain,FR,France,EPP,European People’s Party,EPP
+170,124709,Martina,DLABAJOVÁ,For,CZ,Czechia,RENEW,Renew Europe,Renew
+171,197579,Klára,DOBREV,Against,HU,Hungary,SD,Progressive Alliance of Socialists and Democrats,S&D
+172,197473,Christian,DOLESCHAL,For,DE,Germany,EPP,European People’s Party,EPP
+173,197822,Francesca,DONATO,Did Not Vote,IT,Italy,NI,Non-attached Members,Non-attached
+174,197595,Anna Júlia,DONÁTH,Did Not Vote,HU,Hungary,RENEW,Renew Europe,Renew
+175,96787,Herbert,DORFMANN,For,IT,Italy,EPP,European People’s Party,EPP
+176,254720,Ana Miguel,DOS SANTOS,For,PT,Portugal,EPP,European People’s Party,EPP
+177,197510,Jarosław,DUDA,Against,PL,Poland,EPP,European People’s Party,EPP
+178,124693,Pascal,DURAND,For,FR,France,SD,Progressive Alliance of Socialists and Democrats,S&D
+179,198329,Estrella,DURÁ FERRANDIS,For,ES,Spain,SD,Progressive Alliance of Socialists and Democrats,S&D
+180,124873,Angel,DZHAMBAZKI,Against,BG,Bulgaria,ECR,European Conservatives and Reformists,ECR
+181,99945,Lena,DÜPONT,For,DE,Germany,EPP,European People’s Party,EPP
+182,237465,Matthias,ECKE,For,DE,Germany,SD,Progressive Alliance of Socialists and Democrats,S&D
+183,28226,Christian,EHLER,For,DE,Germany,EPP,European People’s Party,EPP
+184,96725,Bas,EICKHOUT,For,NL,Netherlands,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+185,209091,Cyrus,ENGERER,For,MT,Malta,SD,Progressive Alliance of Socialists and Democrats,S&D
+186,96852,Cornelia,ERNST,For,DE,Germany,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+187,197430,Engin,EROGLU,Against,DE,Germany,RENEW,Renew Europe,Renew
+188,96811,Rosa,ESTARÀS FERRAGUT,For,ES,Spain,EPP,European People’s Party,EPP
+189,197649,Gheorghe,FALCĂ,Did Not Vote,RO,Romania,EPP,European People’s Party,EPP
+190,197589,Laurence,FARRENG,For,FR,France,RENEW,Renew Europe,Renew
+191,1917,Markus,FERBER,For,DE,Germany,EPP,European People’s Party,EPP
+192,125046,Jonás,FERNÁNDEZ,For,ES,Spain,SD,Progressive Alliance of Socialists and Democrats,S&D
+193,192634,Giuseppe,FERRANDINO,Did Not Vote,IT,Italy,RENEW,Renew Europe,Renew
+194,124833,Laura,FERRARA,For,IT,Italy,NI,Non-attached Members,Non-attached
+195,197480,Nicolaus,FEST,Against,DE,Germany,ID,Identity and Democracy,ID
+196,96810,Carlo,FIDANZA,Abstain,IT,Italy,ECR,European Conservatives and Reformists,ECR
+197,197607,Pietro,FIOCCHI,Did Not Vote,IT,Italy,ECR,European Conservatives and Reformists,ECR
+198,197720,Frances,FITZGERALD,For,IE,Ireland,EPP,European People’s Party,EPP
+199,124985,Luke Ming,FLANAGAN,Against,IE,Ireland,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+200,197419,Valter,FLEGO,Did Not Vote,HR,Croatia,RENEW,Renew Europe,Renew
+201,28353,Anna,FOTYGA,Against,PL,Poland,ECR,European Conservatives and Reformists,ECR
+202,197414,Loucas,FOURLAS,Did Not Vote,CY,Cyprus,EPP,European People’s Party,EPP
+203,198490,Emmanouil,FRAGKOS,Against,GR,Greece,ECR,European Conservatives and Reformists,ECR
+204,197513,Tomasz,FRANKOWSKI,Against,PL,Poland,EPP,European People’s Party,EPP
+205,197455,Cindy,FRANSSEN,For,BE,Belgium,EPP,European People’s Party,EPP
+206,193273,Romeo,FRANZ,Did Not Vote,DE,Germany,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+207,106936,Daniel,FREUND,For,DE,Germany,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+208,197391,Heléne,FRITZON,For,SE,Sweden,SD,Progressive Alliance of Socialists and Democrats,S&D
+209,101585,Niels,FUGLSANG,For,DK,Denmark,SD,Progressive Alliance of Socialists and Democrats,S&D
+210,197795,Mario,FURORE,For,IT,Italy,NI,Non-attached Members,Non-attached
+211,2341,Michael,GAHLER,For,DE,Germany,EPP,European People’s Party,EPP
+212,197632,Claudia,GAMON,For,AT,Austria,RENEW,Renew Europe,Renew
+213,197582,Gianna,GANCIA,Against,IT,Italy,ID,Identity and Democracy,ID
+214,197717,Ibán,GARCÍA DEL BLANCO,For,ES,Spain,SD,Progressive Alliance of Socialists and Democrats,S&D
+215,197742,Isabel,GARCÍA MUÑOZ,For,ES,Spain,SD,Progressive Alliance of Socialists and Democrats,S&D
+216,28298,Iratxe,GARCÍA PÉREZ,For,ES,Spain,SD,Progressive Alliance of Socialists and Democrats,S&D
+217,1992,José Manuel,GARCÍA-MARGALLO Y MARFIL,For,ES,Spain,EPP,European People’s Party,EPP
+218,96991,Eider,GARDIAZABAL RUBIAL,For,ES,Spain,SD,Progressive Alliance of Socialists and Democrats,S&D
+219,197628,Jean-Paul,GARRAUD,Against,FR,France,ID,Identity and Democracy,ID
+220,239255,Matteo,GAZZINI,For,IT,Italy,EPP,European People’s Party,EPP
+221,183916,Alexandra,GEESE,For,DE,Germany,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+222,96833,Jens,GEIER,For,DE,Germany,SD,Progressive Alliance of Socialists and Democrats,S&D
+223,197794,Chiara,GEMMA,Abstain,IT,Italy,ECR,European Conservatives and Reformists,ECR
+224,197416,Giorgos,GEORGIOU,Did Not Vote,CY,Cyprus,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+225,197819,Alexis,GEORGOULIS,Did Not Vote,GR,Greece,NI,Non-attached Members,Non-attached
+226,251874,Niels,GEUKING,For,DE,Germany,EPP,European People’s Party,EPP
+227,209140,Vlad,GHEORGHE,For,RO,Romania,RENEW,Renew Europe,Renew
+228,239256,Paola,GHIDONI,Against,IT,Italy,ID,Identity and Democracy,ID
+229,197804,Dino,GIARRUSSO,For,IT,Italy,NI,Non-attached Members,Non-attached
+230,124807,Jens,GIESEKE,For,DE,Germany,EPP,European People’s Party,EPP
+231,253008,Linus,GLANZELIUS,For,SE,Sweden,SD,Progressive Alliance of Socialists and Democrats,S&D
+232,202036,Sunčana,GLAVAK,Did Not Vote,HR,Croatia,EPP,European People’s Party,EPP
+233,197694,Raphaël,GLUCKSMANN,For,FR,France,SD,Progressive Alliance of Socialists and Democrats,S&D
+234,197443,Andreas,GLÜCK,For,DE,Germany,RENEW,Renew Europe,Renew
+235,840,Charles,GOERENS,For,LU,Luxembourg,RENEW,Renew Europe,Renew
+236,197728,Mónica Silvana,GONZÁLEZ,For,ES,Spain,SD,Progressive Alliance of Socialists and Democrats,S&D
+237,197718,Nicolás,GONZÁLEZ CASARES,For,ES,Spain,SD,Progressive Alliance of Socialists and Democrats,S&D
+238,204419,Sandro,GOZI,For,FR,France,RENEW,Renew Europe,Renew
+239,197799,Valentino,GRANT,Did Not Vote,IT,Italy,ID,Identity and Democracy,ID
+240,124785,Maria,GRAPINI,For,RO,Romania,SD,Progressive Alliance of Socialists and Democrats,S&D
+241,197549,Markéta,GREGOROVÁ,For,CZ,Czechia,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+242,94649,Catherine,GRISET,Against,FR,France,ID,Identity and Democracy,ID
+243,197780,Bart,GROOTHUIS,For,NL,Netherlands,RENEW,Renew Europe,Renew
+244,197452,Klemen,GROŠELJ,For,SI,Slovenia,RENEW,Renew Europe,Renew
+245,197557,Christophe,GRUDLER,For,FR,France,RENEW,Renew Europe,Renew
+246,204420,Claude,GRUFFAT,For,FR,France,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+247,197618,Elisabetta,GUALMINI,For,IT,Italy,SD,Progressive Alliance of Socialists and Democrats,S&D
+248,197645,Francisco,GUERREIRO,For,PT,Portugal,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+249,197543,Bernard,GUETTA,For,FR,France,RENEW,Renew Europe,Renew
+250,96952,Sylvie,GUILLAUME,For,FR,France,SD,Progressive Alliance of Socialists and Democrats,S&D
+251,88715,José,GUSMÃO,For,PT,Portugal,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+252,198063,Márton,GYÖNGYÖSI,Did Not Vote,HU,Hungary,NI,Non-attached Members,Non-attached
+253,23816,András,GYÜRK,Did Not Vote,HU,Hungary,NI,Non-attached Members,Non-attached
+254,96830,Enikő,GYŐRI,Against,HU,Hungary,NI,Non-attached Members,Non-attached
+255,28150,Kinga,GÁL,Against,HU,Hungary,NI,Non-attached Members,Non-attached
+256,197702,Lina,GÁLVEZ,For,ES,Spain,SD,Progressive Alliance of Socialists and Democrats,S&D
+257,247709,Anja,HAGA,For,NL,Netherlands,EPP,European People’s Party,EPP
+258,197444,Svenja,HAHN,For,DE,Germany,RENEW,Renew Europe,Renew
+259,197457,Henrike,HAHN,For,DE,Germany,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+260,198176,Roman,HAIDER,Against,AT,Austria,ID,Identity and Democracy,ID
+261,34578,Robert,HAJŠEL,Did Not Vote,SK,Slovakia,SD,Progressive Alliance of Socialists and Democrats,S&D
+262,197596,Teuvo,HAKKARAINEN,For,FI,Finland,ECR,European Conservatives and Reformists,ECR
+263,197514,Andrzej,HALICKI,Did Not Vote,PL,Poland,EPP,European People’s Party,EPP
+264,2054,Heidi,HAUTALA,For,FI,Finland,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+265,197646,Mircea-Gheorghe,HAVA,For,RO,Romania,EPP,European People’s Party,EPP
+266,135511,Valérie,HAYER,Did Not Vote,FR,France,RENEW,Renew Europe,Renew
+267,125023,Anja,HAZEKAMP,Did Not Vote,NL,Netherlands,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+268,197682,Hannes,HEIDE,For,AT,Austria,SD,Progressive Alliance of Socialists and Democrats,S&D
+269,197800,Eero,HEINÄLUOMA,For,FI,Finland,SD,Progressive Alliance of Socialists and Democrats,S&D
+270,197412,Niclas,HERBST,For,DE,Germany,EPP,European People’s Party,EPP
+271,197459,Pierrette,HERZBERGER-FOFANA,For,DE,Germany,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+272,124586,Balázs,HIDVÉGHI,Against,HU,Hungary,NI,Non-attached Members,Non-attached
+273,197526,Martin,HLAVÁČEK,Against,CZ,Czechia,RENEW,Renew Europe,Renew
+274,96780,Monika,HOHLMEIER,Did Not Vote,DE,Germany,EPP,European People’s Party,EPP
+275,197770,Martin,HOJSÍK,Abstain,SK,Slovakia,RENEW,Renew Europe,Renew
+276,197398,Pär,HOLMGREN,For,SE,Sweden,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+277,122978,Alicia,HOMS GINEL,For,ES,Spain,SD,Progressive Alliance of Socialists and Democrats,S&D
+278,218349,Michiel,HOOGEVEEN,For,NL,Netherlands,ECR,European Conservatives and Reformists,ECR
+279,5565,Brice,HORTEFEUX,Abstain,FR,France,EPP,European People’s Party,EPP
+280,197846,Ivo,HRISTOV,For,BG,Bulgaria,SD,Progressive Alliance of Socialists and Democrats,S&D
+281,58789,Jan,HUITEMA,For,NL,Netherlands,RENEW,Renew Europe,Renew
+282,96752,Martin,HÄUSLING,For,DE,Germany,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+283,124715,György,HÖLVÉNYI,Abstain,HU,Hungary,EPP,European People’s Party,EPP
+284,96779,Danuta Maria,HÜBNER,Against,PL,Poland,EPP,European People’s Party,EPP
+285,197624,Ivars,IJABS,For,LV,Latvia,RENEW,Renew Europe,Renew
+286,221463,Ladislav,ILČIĆ,Did Not Vote,HR,Croatia,ECR,European Conservatives and Reformists,ECR
+287,28266,Sophia,IN 'T VELD,For,NL,Netherlands,RENEW,Renew Europe,Renew
+288,197392,Evin,INCIR,For,SE,Sweden,SD,Progressive Alliance of Socialists and Democrats,S&D
+289,96772,Peter,JAHR,For,DE,Germany,EPP,European People’s Party,EPP
+290,197837,Stasys,JAKELIŪNAS,Abstain,LT,Lithuania,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+291,197516,Patryk,JAKI,Against,PL,Poland,ECR,European Conservatives and Reformists,ECR
+292,124770,Jean-François,JALKH,Did Not Vote,FR,France,ID,Identity and Democracy,ID
+293,189065,France,JAMET,Against,FR,France,ID,Identity and Democracy,ID
+294,197517,Adam,JARUBAS,Against,PL,Poland,EPP,European People’s Party,EPP
+295,112747,Romana,JERKOVIĆ,For,HR,Croatia,SD,Progressive Alliance of Socialists and Democrats,S&D
+296,125021,Agnes,JONGERIUS,For,NL,Netherlands,SD,Progressive Alliance of Socialists and Democrats,S&D
+297,197627,Virginie,JORON,Against,FR,France,ID,Identity and Democracy,ID
+298,197447,Irena,JOVEVA,For,SI,Slovenia,RENEW,Renew Europe,Renew
+299,197840,Rasa,JUKNEVIČIENĖ,For,LT,Lithuania,EPP,European People’s Party,EPP
+300,197518,Krzysztof,JURGIEL,Against,PL,Poland,ECR,European Conservatives and Reformists,ECR
+301,197767,Eugen,JURZYCA,For,SK,Slovakia,ECR,European Conservatives and Reformists,ECR
+302,197626,Hervé,JUVIN,Against,FR,France,NI,Non-attached Members,Non-attached
+303,28141,Lívia,JÁRÓKA,Did Not Vote,HU,Hungary,NI,Non-attached Members,Non-attached
+304,125109,Eva,KAILI,For,GR,Greece,NI,Non-attached Members,Non-attached
+305,96771,Jarosław,KALINOWSKI,Against,PL,Poland,EPP,European People’s Party,EPP
+306,197491,Marina,KALJURAND,For,EE,Estonia,SD,Progressive Alliance of Socialists and Democrats,S&D
+307,96934,Sandra,KALNIETE,For,LV,Latvia,EPP,European People’s Party,EPP
+308,96837,Petra,KAMMEREVERT,Did Not Vote,DE,Germany,SD,Progressive Alliance of Socialists and Democrats,S&D
+309,197839,Radan,KANEV,For,BG,Bulgaria,EPP,European People’s Party,EPP
+310,197469,Assita,KANKO,For,BE,Belgium,ECR,European Conservatives and Reformists,ECR
+311,4246,Othmar,KARAS,Did Not Vote,AT,Austria,EPP,European People’s Party,EPP
+312,197585,Pierre,KARLESKIND,For,FR,France,RENEW,Renew Europe,Renew
+313,197401,Karin,KARLSBRO,For,SE,Sweden,RENEW,Renew Europe,Renew
+314,250237,Włodzimierz,KARPIŃSKI,Against,PL,Poland,EPP,European People’s Party,EPP
+315,124887,Karol,KARSKI,Did Not Vote,PL,Poland,ECR,European Conservatives and Reformists,ECR
+316,191693,Elsi,KATAINEN,For,FI,Finland,RENEW,Renew Europe,Renew
+317,251268,Michael,KAUCH,For,DE,Germany,RENEW,Renew Europe,Renew
+318,125068,Emmanouil,KEFALOGIANNIS,For,GR,Greece,EPP,European People’s Party,EPP
+319,197818,Billy,KELLEHER,For,IE,Ireland,RENEW,Renew Europe,Renew
+320,22858,Fabienne,KELLER,For,FR,France,RENEW,Renew Europe,Renew
+321,96734,Ska,KELLER,For,DE,Germany,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+322,96668,Seán,KELLY,For,IE,Ireland,EPP,European People’s Party,EPP
+323,249603,Martine,KEMP,For,LU,Luxembourg,EPP,European People’s Party,EPP
+324,197519,Beata,KEMPA,Against,PL,Poland,ECR,European Conservatives and Reformists,ECR
+325,197415,Niyazi,KIZILYÜREK,Did Not Vote,CY,Cyprus,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+326,197520,Izabela-Helena,KLOC,Against,PL,Poland,ECR,European Conservatives and Reformists,ECR
+327,197528,Ondřej,KNOTEK,Against,CZ,Czechia,RENEW,Renew Europe,Renew
+328,197523,Łukasz,KOHUT,Abstain,PL,Poland,SD,Progressive Alliance of Socialists and Democrats,S&D
+329,197406,Arba,KOKALARI,For,SE,Sweden,EPP,European People’s Party,EPP
+330,197743,Petros,KOKKALIS,For,GR,Greece,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+331,197546,Marcel,KOLAJA,For,CZ,Czechia,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+332,197438,Mislav,KOLAKUŠIĆ,Did Not Vote,HR,Croatia,NI,Non-attached Members,Non-attached
+333,23699,Kateřina,KONEČNÁ,Against,CZ,Czechia,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+334,197740,Athanasios,KONSTANTINOU,Did Not Vote,GR,Greece,NI,Non-attached Members,Non-attached
+335,197525,Ewa,KOPACZ,Did Not Vote,PL,Poland,EPP,European People’s Party,EPP
+336,197530,Joanna,KOPCIŃSKA,Against,PL,Poland,ECR,European Conservatives and Reformists,ECR
+337,130833,Stelios,KOULOGLOU,Did Not Vote,GR,Greece,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+338,197699,Elena,KOUNTOURA,For,GR,Greece,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+339,97968,Andrey,KOVATCHEV,For,BG,Bulgaria,EPP,European People’s Party,EPP
+340,118949,Ondřej,KOVAŘÍK,Did Not Vote,CZ,Czechia,RENEW,Renew Europe,Renew
+341,197481,Maximilian,KRAH,Against,DE,Germany,ID,Identity and Democracy,ID
+342,124891,Zdzisław,KRASNODĘBSKI,Against,PL,Poland,ECR,European Conservatives and Reformists,ECR
+343,197532,Elżbieta,KRUK,Against,PL,Poland,ECR,European Conservatives and Reformists,ECR
+344,197843,Andrius,KUBILIUS,For,LT,Lithuania,EPP,European People’s Party,EPP
+345,197395,Alice,KUHNKE,For,SE,Sweden,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+346,197482,Joachim,KUHS,Against,DE,Germany,ID,Identity and Democracy,ID
+347,124735,Miapetra,KUMPULA-NATRI,For,FI,Finland,SD,Progressive Alliance of Socialists and Democrats,S&D
+348,197692,Stelios,KYMPOUROPOULOS,Did Not Vote,GR,Greece,EPP,European People’s Party,EPP
+349,125063,Georgios,KYRTSOS,For,GR,Greece,RENEW,Renew Europe,Renew
+350,124866,Ilhan,KYUCHYUK,For,BG,Bulgaria,RENEW,Renew Europe,Renew
+351,96829,Ádám,KÓSA,Against,HU,Hungary,NI,Non-attached Members,Non-attached
+352,197445,Moritz,KÖRNER,For,DE,Germany,RENEW,Renew Europe,Renew
+353,124822,Dietmar,KÖSTER,For,DE,Germany,SD,Progressive Alliance of Socialists and Democrats,S&D
+354,204421,Jean-Lin,LACAPELLE,Against,FR,France,ID,Identity and Democracy,ID
+355,197460,Sergey,LAGODINSKY,For,DE,Germany,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+356,197737,Ioannis,LAGOS,Did Not Vote,GR,Greece,NI,Non-attached Members,Non-attached
+357,197697,Aurore,LALUCQ,For,FR,France,SD,Progressive Alliance of Socialists and Democrats,S&D
+358,96648,Philippe,LAMBERTS,For,BE,Belgium,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+359,192635,Danilo Oscar,LANCINI,Against,IT,Italy,ID,Identity and Democracy,ID
+360,1909,Bernd,LANGE,For,DE,Germany,SD,Progressive Alliance of Socialists and Democrats,S&D
+361,197461,Katrin,LANGENSIEPEN,For,DE,Germany,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+362,197698,Pierre,LARROUTUROU,For,FR,France,SD,Progressive Alliance of Socialists and Democrats,S&D
+363,230085,Camilla,LAURETI,For,IT,Italy,SD,Progressive Alliance of Socialists and Democrats,S&D
+364,251859,Guy,LAVOCAT,For,FR,France,RENEW,Renew Europe,Renew
+365,124738,Gilles,LEBRETON,Against,FR,France,ID,Identity and Democracy,ID
+366,197393,David,LEGA,For,SE,Sweden,EPP,European People’s Party,EPP
+367,96796,Ryszard Antoni,LEGUTKO,Against,PL,Poland,ECR,European Conservatives and Reformists,ECR
+368,197635,Maria-Manuel,LEITÃO-MARQUES,For,PT,Portugal,SD,Progressive Alliance of Socialists and Democrats,S&D
+369,95074,Jeroen,LENAERS,For,NL,Netherlands,EPP,European People’s Party,EPP
+370,23781,Janusz,LEWANDOWSKI,For,PL,Poland,EPP,European People’s Party,EPP
+371,204336,Miriam,LEXMANN,Abstain,SK,Slovakia,EPP,European People’s Party,EPP
+372,23768,Bogusław,LIBERADZKI,For,PL,Poland,SD,Progressive Alliance of Socialists and Democrats,S&D
+373,1927,Peter,LIESE,For,DE,Germany,EPP,European People’s Party,EPP
+374,197483,Sylvia,LIMMER,Against,DE,Germany,ID,Identity and Democracy,ID
+375,124808,Norbert,LINS,For,DE,Germany,EPP,European People’s Party,EPP
+376,197611,Elena,LIZZI,Against,IT,Italy,ID,Identity and Democracy,ID
+377,197494,Nathalie,LOISEAU,Did Not Vote,FR,France,RENEW,Renew Europe,Renew
+378,228286,Karsten,LUCKE,For,DE,Germany,SD,Progressive Alliance of Socialists and Democrats,S&D
+379,197721,César,LUENA,For,ES,Spain,SD,Progressive Alliance of Socialists and Democrats,S&D
+380,124996,Peter,LUNDGREN,For,SE,Sweden,ECR,European Conservatives and Reformists,ECR
+381,197458,Benoît,LUTGEN,Abstain,BE,Belgium,EPP,European People’s Party,EPP
+382,125042,Javi,LÓPEZ,For,ES,Spain,SD,Progressive Alliance of Socialists and Democrats,S&D
+383,96812,Juan Fernando,LÓPEZ AGUILAR,For,ES,Spain,SD,Progressive Alliance of Socialists and Democrats,S&D
+384,197777,Leopoldo,LÓPEZ GIL,Abstain,ES,Spain,EPP,European People’s Party,EPP
+385,28399,Antonio,LÓPEZ-ISTÚRIZ WHITE,Abstain,ES,Spain,EPP,European People’s Party,EPP
+386,96709,Morten,LØKKEGAARD,For,DK,Denmark,RENEW,Renew Europe,Renew
+387,205452,Chris,MACMANUS,For,IE,Ireland,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+388,197493,Jaak,MADISON,Against,EE,Estonia,ID,Identity and Democracy,ID
+389,197719,Cristina,MAESTRE,For,ES,Spain,SD,Progressive Alliance of Socialists and Democrats,S&D
+390,197653,Claudiu,MANDA,Did Not Vote,RO,Romania,SD,Progressive Alliance of Socialists and Democrats,S&D
+391,4560,Antonius,MANDERS,For,NL,Netherlands,EPP,European People’s Party,EPP
+392,190713,Lukas,MANDL,For,AT,Austria,EPP,European People’s Party,EPP
+393,197623,Thierry,MARIANI,Against,FR,France,ID,Identity and Democracy,ID
+394,33982,Marian-Jean,MARINESCU,For,RO,Romania,EPP,European People’s Party,EPP
+395,209896,Colm,MARKEY,For,IE,Ireland,EPP,European People’s Party,EPP
+396,197462,Erik,MARQUARDT,For,DE,Germany,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+397,197634,Pedro,MARQUES,Did Not Vote,PT,Portugal,SD,Progressive Alliance of Socialists and Democrats,S&D
+398,197638,Margarida,MARQUES,For,PT,Portugal,SD,Progressive Alliance of Socialists and Democrats,S&D
+399,124828,Fulvio,MARTUSCIELLO,Did Not Vote,IT,Italy,EPP,European People’s Party,EPP
+400,249285,Lydie,MASSARD,For,FR,France,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+401,197441,Predrag Fred,MATIĆ,For,HR,Croatia,SD,Progressive Alliance of Socialists and Democrats,S&D
+402,96936,Gabriel,MATO,For,ES,Spain,EPP,European People’s Party,EPP
+403,208722,Sara,MATTHIEU,For,BE,Belgium,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+404,24505,Emmanuel,MAUREL,Against,FR,France,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+405,124691,Costas,MAVRIDES,Did Not Vote,CY,Cyprus,SD,Progressive Alliance of Socialists and Democrats,S&D
+406,197522,Radka,MAXOVÁ,For,CZ,Czechia,SD,Progressive Alliance of Socialists and Democrats,S&D
+407,98341,Eva,MAYDELL,For,BG,Bulgaria,EPP,European People’s Party,EPP
+408,38511,Georg,MAYER,Against,AT,Austria,ID,Identity and Democracy,ID
+409,197538,Beata,MAZUREK,Against,PL,Poland,ECR,European Conservatives and Reformists,ECR
+410,197841,Liudas,MAŽYLIS,For,LT,Lithuania,EPP,European People’s Party,EPP
+411,124806,David,MCALLISTER,For,DE,Germany,EPP,European People’s Party,EPP
+412,204418,Nora,MEBAREK,For,FR,France,SD,Progressive Alliance of Socialists and Democrats,S&D
+413,197662,Vangelis,MEIMARAKIS,For,GR,Greece,EPP,European People’s Party,EPP
+414,130256,Dace,MELBĀRDE,For,LV,Latvia,EPP,European People’s Party,EPP
+415,197567,Karen,MELCHIOR,For,DK,Denmark,RENEW,Renew Europe,Renew
+416,236053,Marina,MESURE,Against,FR,France,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+417,118859,Roberta,METSOLA,Did Not Vote,MT,Malta,EPP,European People’s Party,EPP
+418,193292,Tilly,METZ,For,LU,Luxembourg,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+419,190518,Jörg,MEUTHEN,Against,DE,Germany,NI,Non-attached Members,Non-attached
+420,120478,Martina,MICHELS,For,DE,Germany,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+421,125128,Iskra,MIHAYLOVA,Did Not Vote,BG,Bulgaria,RENEW,Renew Europe,Renew
+422,249826,Jozef,MIHÁL,For,SK,Slovakia,RENEW,Renew Europe,Renew
+423,197497,Sven,MIKSER,For,EE,Estonia,SD,Progressive Alliance of Socialists and Democrats,S&D
+424,197824,Giuseppe,MILAZZO,Abstain,IT,Italy,ECR,European Conservatives and Reformists,ECR
+425,197540,Leszek,MILLER,Abstain,PL,Poland,SD,Progressive Alliance of Socialists and Democrats,S&D
+426,28400,Francisco José,MILLÁN MON,Abstain,ES,Spain,EPP,European People’s Party,EPP
+427,236051,Eric,MINARDI,Did Not Vote,FR,France,ID,Identity and Democracy,ID
+428,24942,Ana,MIRANDA PAZ,Did Not Vote,ES,Spain,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+429,212855,Alin,MITUȚA,For,RO,Romania,RENEW,Renew Europe,Renew
+430,197805,Silvia,MODIG,Abstain,FI,Finland,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+431,124722,Csaba,MOLNÁR,For,HU,Hungary,SD,Progressive Alliance of Socialists and Democrats,S&D
+432,197711,Dolors,MONTSERRAT,Did Not Vote,ES,Spain,EPP,European People’s Party,EPP
+433,72779,Nadine,MORANO,Abstain,FR,France,EPP,European People’s Party,EPP
+434,28347,Javier,MORENO SÁNCHEZ,For,ES,Spain,SD,Progressive Alliance of Socialists and Democrats,S&D
+435,124799,Alessandra,MORETTI,For,IT,Italy,SD,Progressive Alliance of Socialists and Democrats,S&D
+436,254876,Ricardo,MORGADO,For,PT,Portugal,EPP,European People’s Party,EPP
+437,197427,Marlene,MORTLER,For,DE,Germany,EPP,European People’s Party,EPP
+438,197647,Dan-Ştefan,MOTREANU,For,RO,Romania,EPP,European People’s Party,EPP
+439,197541,Andżelika Anna,MOŻDŻANOWSKA,Against,PL,Poland,ECR,European Conservatives and Reformists,ECR
+440,124802,Siegfried,MUREŞAN,For,RO,Romania,EPP,European People’s Party,EPP
+441,28429,Alessandra,MUSSOLINI,For,IT,Italy,EPP,European People’s Party,EPP
+442,124862,Ulrike,MÜLLER,Did Not Vote,DE,Germany,RENEW,Renew Europe,Renew
+443,190519,Caroline,NAGTEGAAL,For,NL,Netherlands,RENEW,Renew Europe,Renew
+444,125005,Javier,NART,For,ES,Spain,RENEW,Renew Europe,Renew
+445,88882,Victor,NEGRESCU,For,RO,Romania,SD,Progressive Alliance of Socialists and Democrats,S&D
+446,233862,Matjaž,NEMEC,For,SI,Slovenia,SD,Progressive Alliance of Socialists and Democrats,S&D
+447,239260,Denis,NESCI,Abstain,IT,Italy,ECR,European Conservatives and Reformists,ECR
+448,254721,Vânia,NETO,For,PT,Portugal,EPP,European People’s Party,EPP
+449,197464,Hannah,NEUMANN,For,DE,Germany,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+450,124784,Dan,NICA,For,RO,Romania,SD,Progressive Alliance of Socialists and Democrats,S&D
+451,4289,Angelika,NIEBLER,For,DE,Germany,EPP,European People’s Party,EPP
+452,124701,Luděk,NIEDERMAYER,For,CZ,Czechia,EPP,European People’s Party,EPP
+453,197465,Niklas,NIENASS,For,DE,Germany,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+454,197802,Ville,NIINISTÖ,For,FI,Finland,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+455,197734,Lefteris,NIKOLAOU-ALAVANOS,Did Not Vote,GR,Greece,NI,Non-attached Members,Non-attached
+456,238639,Johan,NISSINEN,For,SE,Sweden,ECR,European Conservatives and Reformists,ECR
+457,202112,Gheorghe-Vlad,NISTOR,Did Not Vote,RO,Romania,EPP,European People’s Party,EPP
+458,124836,Maria,NOICHL,For,DE,Germany,SD,Progressive Alliance of Socialists and Democrats,S&D
+459,28294,Ljudmila,NOVAK,For,SI,Slovenia,EPP,European People’s Party,EPP
+460,107212,Andrey,NOVAKOV,For,BG,Bulgaria,EPP,European People’s Party,EPP
+461,197889,Grace,O'SULLIVAN,For,IE,Ireland,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+462,197542,Janina,OCHOJSKA,Did Not Vote,PL,Poland,EPP,European People’s Party,EPP
+463,197432,Jan-Christoph,OETJEN,For,DE,Germany,RENEW,Renew Europe,Renew
+464,237779,Carina,OHLSSON,For,SE,Sweden,SD,Progressive Alliance of Socialists and Democrats,S&D
+465,28288,Jan,OLBRYCHT,Against,PL,Poland,EPP,European People’s Party,EPP
+466,197838,Juozas,OLEKAS,For,LT,Lithuania,SD,Progressive Alliance of Socialists and Democrats,S&D
+467,197687,Philippe,OLIVIER,Against,FR,France,ID,Identity and Democracy,ID
+468,30482,Younous,OMARJEE,Against,FR,France,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+469,253043,Henk Jan,ORMEL,For,NL,Netherlands,EPP,European People’s Party,EPP
+470,234344,Max,ORVILLE,For,FR,France,RENEW,Renew Europe,Renew
+471,232843,Jan,OVELGONNE,For,DE,Germany,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+472,129073,Urmas,PAET,For,EE,Estonia,RENEW,Renew Europe,Renew
+473,125038,Maite,PAGAZAURTUNDÚA,For,ES,Spain,RENEW,Renew Europe,Renew
+474,250235,Witold,PAHL,Against,PL,Poland,EPP,European People’s Party,EPP
+475,99283,Alessandro,PANZA,Against,IT,Italy,ID,Identity and Democracy,ID
+476,124692,Demetris,PAPADAKIS,For,CY,Cyprus,SD,Progressive Alliance of Socialists and Democrats,S&D
+477,125093,Kostas,PAPADAKIS,Against,GR,Greece,NI,Non-attached Members,Non-attached
+478,28586,Dimitrios,PAPADIMOULIS,For,GR,Greece,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+479,244571,Nikos,PAPANDREOU,For,GR,Greece,SD,Progressive Alliance of Socialists and Democrats,S&D
+480,36392,Aldo,PATRICIELLO,Did Not Vote,IT,Italy,ID,Identity and Democracy,ID
+481,197466,Jutta,PAULUS,For,DE,Germany,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+482,124844,Piernicola,PEDICINI,Did Not Vote,IT,Italy,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+483,197563,Mauri,PEKKARINEN,For,FI,Finland,RENEW,Renew Europe,Renew
+484,197539,Mikuláš,PEKSA,For,CZ,Czechia,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+485,197527,Anne-Sophie,PELLETIER,For,FR,France,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+486,197845,Tsvetelina,PENKOVA,Did Not Vote,BG,Bulgaria,SD,Progressive Alliance of Socialists and Democrats,S&D
+487,243979,Francesca,PEPPUCCI,For,IT,Italy,EPP,European People’s Party,EPP
+488,197738,Lídia,PEREIRA,For,PT,Portugal,EPP,European People’s Party,EPP
+489,197754,Sandra,PEREIRA,Abstain,PT,Portugal,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+490,197573,Kira Marie,PETER-HANSEN,For,DK,Denmark,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+491,124872,Morten,PETERSEN,For,DK,Denmark,RENEW,Renew Europe,Renew
+492,124846,Pina,PICIERNO,For,IT,Italy,SD,Progressive Alliance of Socialists and Democrats,S&D
+493,112744,Tonino,PICULA,For,HR,Croatia,SD,Progressive Alliance of Socialists and Democrats,S&D
+494,28224,Markus,PIEPER,For,DE,Germany,EPP,European People’s Party,EPP
+495,40599,Sirpa,PIETIKÄINEN,For,FI,Finland,EPP,European People’s Party,EPP
+496,197619,Sabrina,PIGNEDOLI,For,IT,Italy,NI,Non-attached Members,Non-attached
+497,136236,João,PIMENTA LOPES,Abstain,PT,Portugal,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+498,197828,Manu,PINEDA,Abstain,ES,Spain,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+499,197629,Maxette,PIRBAKAS,For,FR,France,NI,Non-attached Members,Non-attached
+500,249443,Wolfram,PIRCHNER,For,AT,Austria,EPP,European People’s Party,EPP
+501,197590,Giuliano,PISAPIA,For,IT,Italy,SD,Progressive Alliance of Socialists and Democrats,S&D
+502,38595,Rovana,PLUMB,For,RO,Romania,SD,Progressive Alliance of Socialists and Democrats,S&D
+503,197404,Jessica,POLFJÄRD,For,SE,Sweden,EPP,European People’s Party,EPP
+504,197765,Peter,POLLÁK,Abstain,SK,Slovakia,EPP,European People’s Party,EPP
+505,124704,Stanislav,POLČÁK,For,CZ,Czechia,EPP,European People’s Party,EPP
+506,204443,Clara,PONSATÍ OBIOLS,Did Not Vote,ES,Spain,NI,Non-attached Members,Non-attached
+507,237320,Eva Maria,POPTCHEVA,For,ES,Spain,RENEW,Renew Europe,Renew
+508,96801,Tomasz Piotr,PORĘBA,Against,PL,Poland,ECR,European Conservatives and Reformists,ECR
+509,125706,Jiří,POSPÍŠIL,Abstain,CZ,Czechia,EPP,European People’s Party,EPP
+510,239972,Erik,POULSEN,For,DK,Denmark,RENEW,Renew Europe,Renew
+511,197820,Nicola,PROCACCINI,Abstain,IT,Italy,ECR,European Conservatives and Reformists,ECR
+512,202351,Carles,PUIGDEMONT I CASAMAJÓ,For,ES,Spain,NI,Non-attached Members,Non-attached
+513,197663,Dragoş,PÎSLARU,For,RO,Romania,RENEW,Renew Europe,Renew
+514,197764,Miroslav,RADAČOVSKÝ,Did Not Vote,SK,Slovakia,NI,Non-attached Members,Non-attached
+515,124850,Emil,RADEV,For,BG,Bulgaria,EPP,European People’s Party,EPP
+516,188945,Dennis,RADTKE,For,DE,Germany,EPP,European People’s Party,EPP
+517,197868,Samira,RAFAELA,For,NL,Netherlands,RENEW,Renew Europe,Renew
+518,197544,Elżbieta,RAFALSKA,Against,PL,Poland,ECR,European Conservatives and Reformists,ECR
+519,239973,Bergur Løkke,RASMUSSEN,For,DK,Denmark,RENEW,Renew Europe,Renew
+520,96998,Evelyn,REGNER,For,AT,Austria,SD,Progressive Alliance of Socialists and Democrats,S&D
+521,197488,Guido,REIL,Against,DE,Germany,ID,Identity and Democracy,ID
+522,103381,Terry,REINTKE,For,DE,Germany,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+523,229839,René,REPASI,For,DE,Germany,SD,Progressive Alliance of Socialists and Democrats,S&D
+524,197413,Karlo,RESSLER,Did Not Vote,HR,Croatia,EPP,European People’s Party,EPP
+525,218347,Thijs,REUTEN,For,NL,Netherlands,SD,Progressive Alliance of Socialists and Democrats,S&D
+526,197832,Diana,RIBA I GINER,For,ES,Spain,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+527,4253,Frédérique,RIES,For,BE,Belgium,RENEW,Renew Europe,Renew
+528,197787,Antonio Maria,RINALDI,Against,IT,Italy,ID,Identity and Democracy,ID
+529,229519,Catharina,RINZEMA,For,NL,Netherlands,RENEW,Renew Europe,Renew
+530,206158,Manuela,RIPA,For,DE,Germany,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+531,96885,Dominique,RIQUET,For,FR,France,RENEW,Renew Europe,Renew
+532,197615,Jérôme,RIVIÈRE,Against,FR,France,NI,Non-attached Members,Non-attached
+533,197801,Franco,ROBERTI,For,IT,Italy,SD,Progressive Alliance of Socialists and Democrats,S&D
+534,254718,Anabela,RODRIGUES,For,PT,Portugal,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+535,197785,Eugenia,RODRÍGUEZ PALOP,Against,ES,Spain,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+536,4344,María Soraya,RODRÍGUEZ RAMOS,For,ES,Spain,RENEW,Renew Europe,Renew
+537,125043,Inma,RODRÍGUEZ-PIÑERO,For,ES,Spain,SD,Progressive Alliance of Socialists and Democrats,S&D
+538,250538,Rafał,ROMANOWSKI,Did Not Vote,PL,Poland,ECR,European Conservatives and Reformists,ECR
+539,197792,Daniela,RONDINELLI,For,IT,Italy,SD,Progressive Alliance of Socialists and Democrats,S&D
+540,197776,Rob,ROOKEN,Against,NL,Netherlands,ECR,European Conservatives and Reformists,ECR
+541,204733,Dorien,ROOKMAKER,For,NL,Netherlands,ECR,European Conservatives and Reformists,ECR
+542,197709,Robert,ROOS,Against,NL,Netherlands,ECR,European Conservatives and Reformists,ECR
+543,197506,Caroline,ROOSE,For,FR,France,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+544,125214,Bronis,ROPĖ,For,LT,Lithuania,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+545,204413,Marcos,ROS SEMPERE,For,ES,Spain,SD,Progressive Alliance of Socialists and Democrats,S&D
+546,243912,Maria Veronica,ROSSI,Against,IT,Italy,ID,Identity and Democracy,ID
+547,96653,Katarína,ROTH NEVEĎALOVÁ,Against,SK,Slovakia,NI,Non-attached Members,Non-attached
+548,197690,André,ROUGÉ,Against,FR,France,ID,Identity and Democracy,ID
+549,245858,Thomas,RUDNER,For,DE,Germany,SD,Progressive Alliance of Socialists and Democrats,S&D
+550,197773,Bert-Jan,RUISSEN,Abstain,NL,Netherlands,ECR,European Conservatives and Reformists,ECR
+551,127096,Domènec,RUIZ DEVESA,For,ES,Spain,SD,Progressive Alliance of Socialists and Democrats,S&D
+552,132366,Pirkko,RUOHONEN-LERNER,For,FI,Finland,ECR,European Conservatives and Reformists,ECR
+553,197545,Bogdan,RZOŃCA,Against,PL,Poland,ECR,European Conservatives and Reformists,ECR
+554,197584,Sándor,RÓNAI,Against,HU,Hungary,SD,Progressive Alliance of Socialists and Democrats,S&D
+555,204368,Christian,SAGARTZ,For,AT,Austria,EPP,European People’s Party,EPP
+556,249284,Laurence,SAILLIET,Abstain,FR,France,EPP,European People’s Party,EPP
+557,125670,Massimiliano,SALINI,For,IT,Italy,EPP,European People’s Party,EPP
+558,24594,Anne,SANDER,Abstain,FR,France,EPP,European People’s Party,EPP
+559,124781,Alfred,SANT,For,MT,Malta,SD,Progressive Alliance of Socialists and Democrats,S&D
+560,197650,Isabel,SANTOS,For,PT,Portugal,SD,Progressive Alliance of Socialists and Democrats,S&D
+561,254722,Teófilo,SANTOS,For,PT,Portugal,EPP,European People’s Party,EPP
+562,251249,Esther,SANZ SELVA,Against,ES,Spain,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+563,197578,Silvia,SARDONE,Against,IT,Italy,ID,Identity and Democracy,ID
+564,112611,Petri,SARVAMAA,For,FI,Finland,EPP,European People’s Party,EPP
+565,28297,Jacek,SARYUSZ-WOLSKI,Against,PL,Poland,ECR,European Conservatives and Reformists,ECR
+566,197500,Mounir,SATOURI,For,FR,France,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+567,37312,Christel,SCHALDEMOSE,For,DK,Denmark,SD,Progressive Alliance of Socialists and Democrats,S&D
+568,213330,Ernő,SCHALLER-BAROSS,Against,HU,Hungary,NI,Non-attached Members,Non-attached
+569,197670,Andreas,SCHIEDER,For,AT,Austria,SD,Progressive Alliance of Socialists and Democrats,S&D
+570,190517,Martin,SCHIRDEWAN,Did Not Vote,DE,Germany,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+571,197422,Christine,SCHNEIDER,For,DE,Germany,EPP,European People’s Party,EPP
+572,96646,Helmut,SCHOLZ,For,DE,Germany,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+573,125030,Annie,SCHREIJER-PIERIK,Did Not Vote,NL,Netherlands,EPP,European People’s Party,EPP
+574,124837,Joachim,SCHUSTER,For,DE,Germany,SD,Progressive Alliance of Socialists and Democrats,S&D
+575,28223,Andreas,SCHWAB,For,DE,Germany,EPP,European People’s Party,EPP
+576,197425,Ralf,SEEKATZ,For,DE,Germany,EPP,European People’s Party,EPP
+577,197835,Aušra,SEIBUTYTĖ,For,LT,Lithuania,EPP,European People’s Party,EPP
+578,197418,Monica,SEMEDO,For,LU,Luxembourg,RENEW,Renew Europe,Renew
+579,197423,Nico,SEMSROTT,Did Not Vote,DE,Germany,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+580,197677,Günther,SIDL,For,AT,Austria,SD,Progressive Alliance of Socialists and Democrats,S&D
+581,124747,Pedro,SILVA PEREIRA,For,PT,Portugal,SD,Progressive Alliance of Socialists and Democrats,S&D
+582,197426,Sven,SIMON,For,DE,Germany,EPP,European People’s Party,EPP
+583,197935,Ivan Vilibor,SINČIĆ,Abstain,HR,Croatia,NI,Non-attached Members,Non-attached
+584,96932,Birgit,SIPPEL,Did Not Vote,DE,Germany,SD,Progressive Alliance of Socialists and Democrats,S&D
+585,197390,Sara,SKYTTEDAL,Abstain,SE,Sweden,EPP,European People’s Party,EPP
+586,197849,Andrey,SLABAKOV,Against,BG,Bulgaria,ECR,European Conservatives and Reformists,ECR
+587,197791,Massimiliano,SMERIGLIO,Did Not Vote,IT,Italy,NI,Non-attached Members,Non-attached
+588,204334,Vincenzo,SOFO,Abstain,IT,Italy,ECR,European Conservatives and Reformists,ECR
+589,197417,Tomislav,SOKOL,Did Not Vote,HR,Croatia,EPP,European People’s Party,EPP
+590,185974,Jordi,SOLÉ,For,ES,Spain,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+591,197784,Susana,SOLÍS PÉREZ,For,ES,Spain,RENEW,Renew Europe,Renew
+592,124834,Martin,SONNEBORN,Against,DE,Germany,NI,Non-attached Members,Non-attached
+593,197550,Sylwia,SPUREK,For,PL,Poland,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+594,125064,Maria,SPYRAKI,For,GR,Greece,EPP,European People’s Party,EPP
+595,197825,Raffaele,STANCANELLI,Did Not Vote,IT,Italy,ECR,European Conservatives and Reformists,ECR
+596,124852,Sergei,STANISHEV,For,BG,Bulgaria,SD,Progressive Alliance of Socialists and Democrats,S&D
+597,239271,Eleni,STAVROU,Did Not Vote,CY,Cyprus,EPP,European People’s Party,EPP
+598,197772,Tineke,STRIK,For,NL,Netherlands,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+599,134605,Ramona,STRUGARIU,For,RO,Romania,RENEW,Renew Europe,Renew
+600,197553,Beata,SZYDŁO,Did Not Vote,PL,Poland,ECR,European Conservatives and Reformists,ECR
+601,197722,Nacho,SÁNCHEZ AMOR,For,ES,Spain,SD,Progressive Alliance of Socialists and Democrats,S&D
+602,125020,Paul,TANG,Did Not Vote,NL,Netherlands,SD,Progressive Alliance of Socialists and Democrats,S&D
+603,29579,Marc,TARABELLA,For,BE,Belgium,NI,Non-attached Members,Non-attached
+604,204346,Dominik,TARCZYŃSKI,Against,PL,Poland,ECR,European Conservatives and Reformists,ECR
+605,197806,Annalisa,TARDINO,Against,IT,Italy,ID,Identity and Democracy,ID
+606,197756,Vera,TAX,For,NL,Netherlands,SD,Progressive Alliance of Socialists and Democrats,S&D
+607,197655,Cristian,TERHEŞ,Against,RO,Romania,ECR,European Conservatives and Reformists,ECR
+608,204449,Riho,TERRAS,Did Not Vote,EE,Estonia,EPP,European People’s Party,EPP
+609,197831,Hermann,TERTSCH,For,ES,Spain,ECR,European Conservatives and Reformists,ECR
+610,197667,Barbara,THALER,For,AT,Austria,EPP,European People’s Party,EPP
+611,250918,François,THIOLLET,For,FR,France,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+612,96776,Róża,THUN UND HOHENSTEIN,For,PL,Poland,RENEW,Renew Europe,Renew
+613,197591,Irene,TINAGLI,For,IT,Italy,SD,Progressive Alliance of Socialists and Democrats,S&D
+614,197559,Grzegorz,TOBISZOWSKI,Against,PL,Poland,ECR,European Conservatives and Reformists,ECR
+615,197402,Tomas,TOBÉ,For,SE,Sweden,EPP,European People’s Party,EPP
+616,28340,Patrizia,TOIA,For,IT,Italy,SD,Progressive Alliance of Socialists and Democrats,S&D
+617,197547,Irène,TOLLERET,For,FR,France,RENEW,Renew Europe,Renew
+618,197672,Eugen,TOMAC,For,RO,Romania,EPP,European People’s Party,EPP
+619,96697,Waldemar,TOMASZEWSKI,Against,LT,Lithuania,ECR,European Conservatives and Reformists,ECR
+620,125104,Romana,TOMC,For,SI,Slovenia,EPP,European People’s Party,EPP
+621,124700,Jana,TOOM,For,EE,Estonia,RENEW,Renew Europe,Renew
+622,114268,Nils,TORVALDS,For,FI,Finland,RENEW,Renew Europe,Renew
+623,97236,Marie,TOUSSAINT,For,FR,France,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+624,197580,Isabella,TOVAGLIERI,Did Not Vote,IT,Italy,ID,Identity and Democracy,ID
+625,96713,Evžen,TOŠENOVSKÝ,For,CZ,Czechia,ECR,European Conservatives and Reformists,ECR
+626,197894,László,TRÓCSÁNYI,Against,HU,Hungary,NI,Non-attached Members,Non-attached
+627,197665,Dragoş,TUDORACHE,For,RO,Romania,RENEW,Renew Europe,Renew
+628,198183,Mihai,TUDOSE,Did Not Vote,RO,Romania,SD,Progressive Alliance of Socialists and Democrats,S&D
+629,27714,Edina,TÓTH,Against,HU,Hungary,NI,Non-attached Members,Non-attached
+630,197763,Milan,UHRÍK,Against,SK,Slovakia,NI,Non-attached Members,Non-attached
+631,124705,István,UJHELYI,For,HU,Hungary,SD,Progressive Alliance of Socialists and Democrats,S&D
+632,131507,Miguel,URBÁN CRESPO,Did Not Vote,ES,Spain,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+633,96698,Viktor,USPASKICH,Did Not Vote,LT,Lithuania,NI,Non-attached Members,Non-attached
+634,197810,Nils,UŠAKOVS,For,LV,Latvia,SD,Progressive Alliance of Socialists and Democrats,S&D
+635,28617,Inese,VAIDERE,For,LV,Latvia,EPP,European People’s Party,EPP
+636,5729,Kathleen,VAN BREMPT,For,BE,Belgium,SD,Progressive Alliance of Socialists and Democrats,S&D
+637,125106,Johan,VAN OVERTVELDT,For,BE,Belgium,ECR,European Conservatives and Reformists,ECR
+638,197870,Kim,VAN SPARRENTAK,For,NL,Netherlands,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+639,124934,Monika,VANA,For,AT,Austria,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+640,185771,Tom,VANDENDRIESSCHE,Against,BE,Belgium,ID,Identity and Democracy,ID
+641,129164,Tom,VANDENKENDELAERE,For,BE,Belgium,EPP,European People’s Party,EPP
+642,239257,Achille,VARIATI,For,IT,Italy,SD,Progressive Alliance of Socialists and Democrats,S&D
+643,130100,Hilde,VAUTMANS,For,BE,Belgium,RENEW,Renew Europe,Renew
+644,197502,Marie-Pierre,VEDRENNE,For,FR,France,RENEW,Renew Europe,Renew
+645,96756,Sabine,VERHEYEN,For,DE,Germany,EPP,European People’s Party,EPP
+646,97058,Guy,VERHOFSTADT,For,BE,Belgium,RENEW,Renew Europe,Renew
+647,125001,Harald,VILIMSKY,Against,AT,Austria,ID,Identity and Democracy,ID
+648,197827,Idoia,VILLANUEVA RUIZ,Against,ES,Spain,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+649,197571,Nikolaj,VILLUMSEN,For,DK,Denmark,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+650,98582,Loránt,VINCZE,Abstain,RO,Romania,EPP,European People’s Party,EPP
+651,199941,Marianne,VIND,For,DK,Denmark,SD,Progressive Alliance of Socialists and Democrats,S&D
+652,124726,Henna,VIRKKUNEN,For,FI,Finland,EPP,European People’s Party,EPP
+653,124875,Anders,VISTISEN,Against,DK,Denmark,ID,Identity and Democracy,ID
+654,197844,Petar,VITANOV,For,BG,Bulgaria,SD,Progressive Alliance of Socialists and Democrats,S&D
+655,197451,Viola,VON CRAMON-TAUBADEL,For,DE,Germany,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+656,197537,Alexandr,VONDRA,For,CZ,Czechia,ECR,European Conservatives and Reformists,ECR
+657,96761,Axel,VOSS,For,DE,Germany,EPP,European People’s Party,EPP
+658,125065,Elissavet,VOZEMBERG-VRIONIDI,Did Not Vote,GR,Greece,EPP,European People’s Party,EPP
+659,197552,Veronika,VRECIONOVÁ,For,CZ,Czechia,ECR,European Conservatives and Reformists,ECR
+660,197798,Lucia,VUOLO,For,IT,Italy,EPP,European People’s Party,EPP
+661,204400,Adrián,VÁZQUEZ LÁZARA,For,ES,Spain,RENEW,Renew Europe,Renew
+662,190464,Thomas,WAITZ,For,AT,Austria,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+663,197817,Mick,WALLACE,Against,IE,Ireland,GUE_NGL,The Left in the European Parliament – GUE/NGL,GUE/NGL
+664,197863,Maria,WALSH,Did Not Vote,IE,Ireland,EPP,European People’s Party,EPP
+665,197429,Marion,WALSMANN,For,DE,Germany,EPP,European People’s Party,EPP
+666,197405,Jörgen,WARBORN,For,SE,Sweden,EPP,European People’s Party,EPP
+667,197566,Witold Jan,WASZCZYKOWSKI,Against,PL,Poland,ECR,European Conservatives and Reformists,ECR
+668,28229,Manfred,WEBER,For,DE,Germany,EPP,European People’s Party,EPP
+669,123562,Charlie,WEIMERS,Did Not Vote,SE,Sweden,ECR,European Conservatives and Reformists,ECR
+670,197515,Pernille,WEISS,For,DK,Denmark,EPP,European People’s Party,EPP
+671,2323,Rainer,WIELAND,For,DE,Germany,EPP,European People’s Party,EPP
+672,197675,Sarah,WIENER,For,AT,Austria,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+673,214839,Emma,WIESNER,For,SE,Sweden,RENEW,Renew Europe,Renew
+674,197769,Michal,WIEZIK,Abstain,SK,Slovakia,RENEW,Renew Europe,Renew
+675,39725,Iuliu,WINKLER,For,RO,Romania,EPP,European People’s Party,EPP
+676,197652,Angelika,WINZIG,For,AT,Austria,EPP,European People’s Party,EPP
+677,197421,Isabel,WISELER-LIMA,For,LU,Luxembourg,EPP,European People’s Party,EPP
+678,124877,Jadwiga,WIŚNIEWSKA,Against,PL,Poland,ECR,European Conservatives and Reformists,ECR
+679,5392,Lara,WOLTERS,For,NL,Netherlands,SD,Progressive Alliance of Socialists and Democrats,S&D
+680,185619,Tiemo,WÖLKEN,For,DE,Germany,SD,Progressive Alliance of Socialists and Democrats,S&D
+681,197511,Salima,YENBOU,For,FR,France,RENEW,Renew Europe,Renew
+682,197581,Stéphanie,YON-COURTIN,For,FR,France,RENEW,Renew Europe,Renew
+683,197842,Elena,YONCHEVA,Did Not Vote,BG,Bulgaria,SD,Progressive Alliance of Socialists and Democrats,S&D
+684,125067,Theodoros,ZAGORAKIS,Did Not Vote,GR,Greece,SD,Progressive Alliance of Socialists and Democrats,S&D
+685,23712,Jan,ZAHRADIL,Against,CZ,Czechia,ECR,European Conservatives and Reformists,ECR
+686,197572,Anna,ZALEWSKA,Against,PL,Poland,ECR,European Conservatives and Reformists,ECR
+687,197586,Stefania,ZAMBELLI,For,IT,Italy,EPP,European People’s Party,EPP
+688,124780,Marco,ZANNI,Against,IT,Italy,ID,Identity and Democracy,ID
+689,197606,Javier,ZARZALEJOS,Abstain,ES,Spain,EPP,European People’s Party,EPP
+690,124713,Tomáš,ZDECHOVSKÝ,Abstain,CZ,Czechia,EPP,European People’s Party,EPP
+691,197489,Bernhard,ZIMNIOK,Against,DE,Germany,ID,Identity and Democracy,ID
+692,197621,Juan Ignacio,ZOIDO ÁLVAREZ,Abstain,ES,Spain,EPP,European People’s Party,EPP
+693,124739,Carlos,ZORRINHO,For,PT,Portugal,SD,Progressive Alliance of Socialists and Democrats,S&D
+694,185341,Željana,ZOVKO,Did Not Vote,HR,Croatia,EPP,European People’s Party,EPP
+695,125237,Marco,ZULLO,For,IT,Italy,RENEW,Renew Europe,Renew
+696,96933,Milan,ZVER,For,SI,Slovenia,EPP,European People’s Party,EPP
+697,28615,Roberts,ZĪLE,Did Not Vote,LV,Latvia,ECR,European Conservatives and Reformists,ECR
+698,124884,Kosma,ZŁOTOWSKI,Against,PL,Poland,ECR,European Conservatives and Reformists,ECR
+699,125025,Marcel,de GRAAFF,Against,NL,Netherlands,NI,Non-attached Members,Non-attached
+700,197766,Lucia,ĎURIŠ NICHOLSONOVÁ,For,SK,Slovakia,RENEW,Renew Europe,Renew
+701,96791,Elżbieta Katarzyna,ŁUKACIJEWSKA,Against,PL,Poland,EPP,European People’s Party,EPP
+702,58766,Nicolae,ŞTEFĂNUȚĂ,Did Not Vote,RO,Romania,GREEN_EFA,Greens/European Free Alliance,Greens/EFA
+703,124710,Michaela,ŠOJDROVÁ,Abstain,CZ,Czechia,EPP,European People’s Party,EPP
+704,124929,Ivan,ŠTEFANEC,Abstain,SK,Slovakia,EPP,European People’s Party,EPP
+705,28619,Tatjana,ŽDANOKA,Against,LV,Latvia,NI,Non-attached Members,Non-attached

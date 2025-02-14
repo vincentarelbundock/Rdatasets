@@ -1,0 +1,77 @@
+<!DOCTYPE html><html><head><title>R: What the World Thinks of Trump</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>trumpworld_issues</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>What the World Thinks of Trump</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;What the World Thinks of Trump&quot;
+<a href="https://fivethirtyeight.com/features/what-the-world-thinks-of-trump/">https://fivethirtyeight.com/features/what-the-world-thinks-of-trump/</a>:
+Trump World Issues Dataset
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>trumpworld_issues
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 185 rows representing countries and 6 variables:
+</p>
+
+<dl>
+<dt>country</dt><dd><p>The country whose population is being polled</p>
+</dd>
+<dt>net_approval</dt><dd><p>The difference in the number of respondents from the given country who approve and who disapprove of the issue (Trump proposal) in question (approve-disapprove)</p>
+</dd>
+<dt>approve</dt><dd><p>The number of respondents from the given country who approve of the issue (Trump proposal)</p>
+</dd>
+<dt>disapprove</dt><dd><p>The number of respondents who disapprove of the issue</p>
+</dd>
+<dt>dk_refused</dt><dd><p>undefined</p>
+</dd>
+<dt>issue</dt><dd><p>The specific trump policy proposal being posed. Specifically:
+1: Withdraw support for international climate change agreements
+2: Build a wall on the border between the U. S. and Mexico
+3: Withdraw U.S. support from the Iran nuclear weapons agreement
+4: Withdraw U.S. support for major trade agreements
+5: Introduce tighter restrictions on those entering the U.S. from some majority-Muslim countries</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Pew Research Center <a href="https://www.pewresearch.org/fact-tank/2017/07/17/9-charts-on-how-the-world-sees-trump/">https://www.pewresearch.org/fact-tank/2017/07/17/9-charts-on-how-the-world-sees-trump/</a>
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>trumpworld_polls</code>
+</p>
+
+</main>
+
+</div>
+</body></html>
