@@ -9,6 +9,7 @@ git push
 git checkout gh-pages;
 git checkout master -- csv;
 git checkout master -- doc;
+git checkout master -- parquet;
 git checkout master -- datasets.csv;
 git checkout master -- datasets.html;
 git add .
