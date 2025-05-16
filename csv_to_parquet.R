@@ -16,6 +16,12 @@ for (csv_path in csv_files) {
     parquet_path <- sub('^csv/', 'parquet/', csv_path)
     parquet_path <- sub('\\.[cC][sS][vV]$', '.parquet', parquet_path)
 
+    # Skip if the parquet file already exists
+    if (file_exists(parquet_path)) {
+        cat(sprintf('Skipping %s (already exists)\n', parquet_path))
+        next
+    }
+
     # Create output directory if it doesn't exist
     dir_create(dirname(parquet_path))
 
