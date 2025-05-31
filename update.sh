@@ -1,10 +1,11 @@
+Rscript -e "devtools::install(dependencies = TRUE)"
 Rscript scrape.R
 cd doc
 ../documentation.sh
 cd ..
 Rscript -e "rmarkdown::render('README.Rmd')"
 git add .
-git commit -m "fpp3 update"
+git commit -m "timeSeriesDataSets educationR crimedatasets MedDataSets OncoDataSets"
 git push
 git checkout gh-pages;
 git checkout master -- csv;
