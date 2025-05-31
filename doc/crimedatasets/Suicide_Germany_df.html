@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><title>R: Suicide Rates in Germany</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Suicide_Germany_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Suicide Rates in Germany</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains information on suicide rates in West Germany, classified by age, sex, and method of suicide.
+The data was collected from Heuer (1979) and provides detailed insight into suicide rates across different demographic groups.
+It includes the frequency of suicides, categorized by sex, method of suicide, and age group.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Suicide_Germany_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 306 observations and 6 variables:
+</p>
+
+<dl>
+<dt>Freq</dt><dd><p>Numeric variable representing the frequency of suicides.</p>
+</dd>
+<dt>sex</dt><dd><p>Factor indicating the sex of the individual (2 levels: 'Male', 'Female').</p>
+</dd>
+<dt>method</dt><dd><p>Factor indicating the method of suicide (9 levels).</p>
+</dd>
+<dt>age</dt><dd><p>Numeric variable representing the age of the individual.</p>
+</dd>
+<dt>age.group</dt><dd><p>Factor indicating the age group (5 levels).</p>
+</dd>
+<dt>method2</dt><dd><p>Factor indicating a secondary categorization of the suicide method (8 levels).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been changed to 'Suicide_Germany_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+crimedatasets package and assists users in identifying its specific characteristics. The suffix 'df'
+indicates that the dataset is a data frame. The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Heuer, 1979. Suicide Rates in West Germany.
+</p>
+
+</main>
+
+</div>
+</body></html>

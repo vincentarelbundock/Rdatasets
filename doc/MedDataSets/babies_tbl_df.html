@@ -1,0 +1,78 @@
+<!DOCTYPE html><html><head><title>R: The Child Health and Development Studies</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>babies_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The Child Health and Development Studies</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'babies_tbl_df' to avoid confusion with other datasets from
+packages in the R ecosystem and to follow the naming conventions of the 'MedDataSets' package.
+The suffix '_tbl_df' indicates that this dataset is a tibble, helping to distinguish it from
+other datasets within the package and from those in the broader R ecosystem. The original content
+of the dataset has not been modified in any way.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(babies_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 1,236 observations and 8 variables:
+</p>
+
+<dl>
+<dt>case</dt><dd><p>An integer indicating the case number.</p>
+</dd>
+<dt>bwt</dt><dd><p>An integer representing the birth weight of the infant (in grams).</p>
+</dd>
+<dt>gestation</dt><dd><p>An integer indicating the gestation period (in weeks).</p>
+</dd>
+<dt>parity</dt><dd><p>An integer representing the number of previous births.</p>
+</dd>
+<dt>age</dt><dd><p>An integer indicating the age of the mother (in years).</p>
+</dd>
+<dt>height</dt><dd><p>An integer indicating the height of the mother (in cm).</p>
+</dd>
+<dt>weight</dt><dd><p>An integer indicating the weight of the mother (in kg).</p>
+</dd>
+<dt>smoke</dt><dd><p>An integer indicating whether the mother smoked during pregnancy (1 = yes, 0 = no).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This dataset contains information from the Child Health and Development Studies, focusing on various
+factors associated with infant health outcomes.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data collected from the Child Health and Development Studies.
+</p>
+
+</main>
+
+</div>
+</body></html>

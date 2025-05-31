@@ -1,0 +1,82 @@
+<!DOCTYPE html><html><head><title>R: Drunk Driving Laws and Traffic Deaths</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Fatality_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Drunk Driving Laws and Traffic Deaths</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains data on traffic fatalities and laws related to drunk driving across U.S. states.
+It includes information on beer taxes, minimum legal drinking age (MLDA), and other socioeconomic factors
+observed between 1982 and 1988.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Fatality_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 336 observations and 10 variables:
+</p>
+
+<dl>
+<dt>state</dt><dd><p>State identifier (integer).</p>
+</dd>
+<dt>year</dt><dd><p>Year of the observation (integer).</p>
+</dd>
+<dt>mrall</dt><dd><p>Motor vehicle fatality rate per 100,000 population (numeric).</p>
+</dd>
+<dt>beertax</dt><dd><p>Beer tax in dollars per gallon (numeric).</p>
+</dd>
+<dt>mlda</dt><dd><p>Minimum legal drinking age (MLDA) (numeric).</p>
+</dd>
+<dt>jaild</dt><dd><p>Indicator for mandatory jail sentence for drunk-driving (Factor: Yes/No).</p>
+</dd>
+<dt>comserd</dt><dd><p>Indicator for mandatory community service for drunk-driving (Factor: Yes/No).</p>
+</dd>
+<dt>vmiles</dt><dd><p>Vehicle miles traveled in billions (numeric).</p>
+</dd>
+<dt>unrate</dt><dd><p>Unemployment rate (numeric).</p>
+</dd>
+<dt>perinc</dt><dd><p>Per capita income in dollars (numeric).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been changed to 'Fatality_df' to avoid confusion with other datasets in the R ecosystem.
+This naming convention helps distinguish this dataset as part of the crimedatasets package and assists users
+in identifying its specific characteristics. The suffix 'df' indicates that the dataset is stored as a traditional
+data frame in R. The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Panel data on drunk driving laws and traffic deaths in the U.S. for 48 states, 1982–1988.
+</p>
+
+</main>
+
+</div>
+</body></html>

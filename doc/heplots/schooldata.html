@@ -20,7 +20,10 @@ function processMathHTML() {
 
 <h3>Description</h3>
 
-<p>School Data, from Charnes et al. (1981). The aim is to explain scores on 3
+<p>School Data, from Charnes et al. (1981), a large scale social experiment in public school education.
+It was conceived in the late 1960's as a federally sponsored program charged with providing remedial
+assistance to educationally disadvantaged early primary school students.
+One aim is to explain scores on 3
 different tests, <code>reading</code>, <code>mathematics</code> and <code>selfesteem</code>
 from 70 school sites by means of 5 explanatory variables related to parents
 and teachers.
@@ -33,19 +36,18 @@ and teachers.
 </p>
  
 <dl>
-<dt><code>education</code></dt><dd><p>Education level of mother as measured in
-terms of percentage of high school graduates among female parents</p>
+<dt><code>education</code></dt><dd><p>Education level of mother as measured by the percentage of high school graduates among female parents</p>
 </dd>
-<dt><code>occupation</code></dt><dd><p> Highest occupation of a family member according
+<dt><code>occupation</code></dt><dd><p>Highest occupation of a family member according
 to a pre-arranged rating scale</p>
 </dd> 
-<dt><code>visit</code></dt><dd><p> Parental visits index
+<dt><code>visit</code></dt><dd><p> Parental visits index,
 representing the number of visits to the school site</p>
 </dd>
-<dt><code>counseling</code></dt><dd><p> Parent counseling index calculated from data on
+<dt><code>counseling</code></dt><dd><p>Parent counseling index, calculated from data on
 time spent with child on school-related topics such as reading together, etc.</p>
 </dd> 
-<dt><code>teacher</code></dt><dd><p> Number of teachers at a given site</p>
+<dt><code>teacher</code></dt><dd><p>Number of teachers at the given site</p>
 </dd>
 <dt><code>reading</code></dt><dd><p> Reading score as measured by the Metropolitan Achievement Test</p>
 </dd> 
@@ -59,18 +61,34 @@ time spent with child on school-related topics such as reading together, etc.</p
 
 <h3>Details</h3>
 
-<p>This dataset was shamelessly borrowed from the <code>FRB</code> package.
-</p>
-<p>The relationships among these variables are unusual, a fact only revealed by
+<p>A number of observations are unusual, a fact only revealed by
 plotting.
+</p>
+<p>The study was designed to compare schools using Program Follow Through (PFT)
+management methods of taking actions to achieve goals with those of
+Non Follow Through (NFT). Observations <code>1:49</code> came from PFT sites
+and <code>50:70</code> from NFT sites.
+This and other descriptors are contained in the dataset <code>schoolsites</code>.
 </p>
 
 
 <h3>Source</h3>
 
+<p>This dataset was came originally from the (now-defunct) <code>FRB</code> package.
+</p>
+
+
+<h3>References</h3>
+
 <p>A. Charnes, W.W. Cooper and E. Rhodes (1981). Evaluating Program and
 Managerial Efficiency: An Application of Data Envelopment Analysis to
 Program Follow Through. <em>Management Science</em>, <b>27</b>, 668-697.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>schoolsites</code>
 </p>
 
 
@@ -86,6 +104,10 @@ library(corrgram)
 corrgram(schooldata, 
          lower.panel=panel.ellipse, 
          upper.panel=panel.pts)
+
+# check for multivariate outliers
+res &lt;- cqplot(schooldata, id.n = 5)
+res
 
 #fit the MMreg model
 school.mod &lt;- lm(cbind(reading, mathematics, selfesteem) ~ 
@@ -108,7 +130,7 @@ car::Anova(school.rmod)
 wts &lt;- school.rmod$weights
 notable &lt;- which(wts &lt; 0.8)
 plot(wts, type = "h", col="gray", ylab = "Observation weight")
-points(1:length(wts), wts, 
+points(seq_along(wts), wts, 
        pch=16,
        col = ifelse(wts &lt; 0.8, "red", "black"))
 

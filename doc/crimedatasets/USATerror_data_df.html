@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head><title>R: Terrorism Incidents in the USA (1968-1974)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>USATerror_data_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Terrorism Incidents in the USA (1968-1974)</h2>
+
+<h3>Description</h3>
+
+<p>This dataset provides a summary of terrorism incidents recorded in the United States during the period
+from January 1968 to April 1974. It is part of a larger chronology of international terrorism incidents
+compiled by Jenkins and Johnson (1975).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(USATerror_data_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 6 observations and 2 variables:
+</p>
+
+<dl>
+<dt>Incidents</dt><dd><p>Number of recorded terrorism incidents (integer).</p>
+</dd>
+<dt>fre</dt><dd><p>Frequency of incidents (numeric).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been changed to 'USATerror_data_df' to align with the naming conventions of the
+crimedatasets package. The suffix 'df' indicates that the dataset is a data frame in R.
+The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Jenkins, B. M., &amp; Johnson, W. (1975). Chronology of International Terrorism (1968-1974).
+Extracted from: Li, X. H., Huang, Y. Y., &amp; Zhao, X. Y. (2011). *The Kumaraswamy Binomial Distribution*.
+Chinese Journal of Applied Probability and Statistics, 27(5), 511-521.
+</p>
+
+</main>
+
+</div>
+</body></html>

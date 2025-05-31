@@ -20,8 +20,12 @@ function processMathHTML() {
 
 <h3>Description</h3>
 
-<p>The dataset come from a small random sample of the U.S. National
-Longitudinal Survey of Youth.
+<p>The dataset 'NLSY' comes from a small part of the National Longitudinal Survey of
+Youth, which is a series of annual surveys conducted by the 
+U.S. Department of Labor to examine the transition of young people into the labor force.
+This particular subset gives measures of 243 children on mathematics and reading achievement and also
+measures of behavioral problems (antisocial, hyperactivity). Also available are the yearly income
+and education of the child's father.
 </p>
 
 
@@ -49,11 +53,16 @@ hyperactive behavior, <code>0:5</code></p>
 
 <h3>Details</h3>
 
-<p>In this dataset, <code>math</code> and <code>read</code> scores are taken at the outcome
+<p>For the examples using this dataset, <code>math</code> and <code>read</code> scores are taken at the outcome
 variables. Among the remaining predictors, <code>income</code> and <code>educ</code>
 might be considered as background variables necessary to control for.
-Interest might then be focused on whether the behavioural variables
+Interest might then be focused on whether the behavioral variables
 <code>antisoc</code> and <code>hyperact</code> contribute beyond that.
+</p>
+<p>The distribution of father's income is very highly skewed in the positive direction.
+Linear model analysis should probably use <code>log(income)</code>, but this is omitted for simplicity.
+</p>
+<p>The dataset also contains a few unusual observations for you to discover.
 </p>
 
 
@@ -80,28 +89,37 @@ scatterplotMatrix(NLSY, smooth=FALSE)
 
 # test control variables by themselves
 # -------------------------------------
-mod1 &lt;- lm(cbind(read,math) ~ income+educ, data=NLSY)
-Anova(mod1)
-heplot(mod1, fill=TRUE)
+NLSY.mod1 &lt;- lm(cbind(read, math) ~ income + educ, data=NLSY)
+Anova(NLSY.mod1)
+heplot(NLSY.mod1, fill=TRUE)
 
 # test of overall regression
-coefs &lt;- rownames(coef(mod1))[-1]
-linearHypothesis(mod1, coefs)
-heplot(mod1, fill=TRUE, hypotheses=list("Overall"=coefs))
+coefs &lt;- rownames(coef(NLSY.mod1))[-1]
+linearHypothesis(NLSY.mod1, coefs)
+heplot(NLSY.mod1, fill=TRUE, hypotheses=list("Overall"=coefs))
+
+# coefficient plot
+coefplot(NLSY.mod1, fill = TRUE,
+         col = c("darkgreen", "brown"),
+         lwd = 2,
+         ylim = c(-0.5, 3),
+         main = "Bivariate coefficient plot for reading and math\nwith 95% confidence ellipses")
 
  
 # additional contribution of antisoc + hyperact over income + educ
 # ----------------------------------------------------------------
-mod2 &lt;- lm(cbind(read,math) ~ antisoc + hyperact + income + educ, data=NLSY)
-Anova(mod2)
+NLSY.mod2 &lt;- lm(cbind(read,math) ~ antisoc + hyperact + income + educ, data=NLSY)
+Anova(NLSY.mod2)
 
-coefs &lt;- rownames(coef(mod2))[-1]
-heplot(mod2, fill=TRUE, hypotheses=list("Overall"=coefs, "mod2|mod1"=coefs[1:2]))
-linearHypothesis(mod2, coefs[1:2])
+coefs &lt;- rownames(coef(NLSY.mod2))[-1]
+heplot(NLSY.mod2, fill=TRUE, hypotheses=list("Overall"=coefs, "mod2|mod1"=coefs[1:2]))
+linearHypothesis(NLSY.mod2, coefs[1:2])
 
-heplot(mod2, fill=TRUE, hypotheses=list("mod2|mod1"=coefs[1:2]))
+heplot(NLSY.mod2, fill=TRUE, hypotheses=list("mod2|mod1"=coefs[1:2]))
 
-
+# check for outliers
+idx &lt;- cqplot(NLSY.mod2, id.n = 5)
+idx
 </code></pre>
 
 </main>

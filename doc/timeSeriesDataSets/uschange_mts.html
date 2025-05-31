@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><title>R: Growth Rates of Personal Consumption and Personal Income in...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>uschange_mts</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Growth Rates of Personal Consumption and Personal Income in the USA</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'uschange_mts' to avoid confusion with other datasets
+in the R ecosystem from which data have been sourced. The suffix 'mts' indicates that this dataset
+is a multivariate time series object. This naming convention helps distinguish this dataset
+as part of the 'timeseriesdatasets' package and assists users in identifying its specific characteristics.
+The original content of the dataset has not been modified in any way.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(uschange_mts)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A 'ts' object with 187 observations and 5 variables:
+</p>
+
+<dl>
+<dt>Consumption</dt><dd><p>Growth rate of personal consumption.</p>
+</dd>
+<dt>Income</dt><dd><p>Growth rate of personal income.</p>
+</dd>
+<dt>Production</dt><dd><p>Growth rate of industrial production.</p>
+</dd>
+<dt>Savings</dt><dd><p>Growth rate of personal savings.</p>
+</dd>
+<dt>Unemployment</dt><dd><p>Growth rate of unemployment.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This dataset contains quarterly growth rates of various economic indicators in the USA from 1970 to 2016.
+The variables include rates of personal consumption, personal income, industrial production, personal savings,
+and unemployment.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Federal Reserve Economic Data (FRED).
+</p>
+
+</main>
+
+</div>
+</body></html>

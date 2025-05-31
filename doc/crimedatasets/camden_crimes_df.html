@@ -1,0 +1,71 @@
+<!DOCTYPE html><html><head><title>R: Crime Records of Camden Borough, UK</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>camden_crimes_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Crime Records of Camden Borough, UK</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains information on reported crimes in Camden, including spatial coordinates,
+dates of the incidents, and crime types. It provides a detailed view of crime patterns
+within the region.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(camden_crimes_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 4,578 observations and 4 variables:
+</p>
+
+<dl>
+<dt>x</dt><dd><p>X-coordinate (numeric).</p>
+</dd>
+<dt>y</dt><dd><p>Y-coordinate (numeric).</p>
+</dd>
+<dt>date</dt><dd><p>Date of the reported crime (Date).</p>
+</dd>
+<dt>type</dt><dd><p>Type of crime (character).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been changed to 'camden_crimes_df' to avoid confusion with other data sets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+crimedatasets package and assists users in identifying its specific characteristics. The suffix 'df'
+indicates that the dataset is a traditional data frame in R. The original content has not been modified in any way
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data comprising 'Theft' and 'Criminal Damage' records of Camden Borough of London, UK, 2021.
+(Source: <a href="https://data.police.uk/data/">https://data.police.uk/data/</a>)
+</p>
+
+</main>
+
+</div>
+</body></html>

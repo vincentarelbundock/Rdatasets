@@ -1,0 +1,57 @@
+<!DOCTYPE html><html><head><title>R: Global Mean Land and Open Ocean Temperature Deviations...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gtemp_both_ts</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Global Mean Land and Open Ocean Temperature Deviations (1850-2023).</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'gtemp_both_ts' to avoid confusion with other packages
+in the R ecosystem from which datasets have been sourced. The suffix 'ts' indicates that this dataset
+is a time series object. This naming convention helps distinguish this dataset as part of the
+'timeseriesdatasets' package and assists users in identifying its specific characteristics. The original content
+of the dataset has not been modified in any way.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(gtemp_both_ts)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A time series object with 174 observations:
+</p>
+
+<dl>
+<dt>gtemp_both</dt><dd><p>A numeric vector representing the global mean temperature deviations from the long-term average, measured in degrees Celsius.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Data provided by the National Oceanic and Atmospheric Administration (NOAA) and the Hadley Centre.
+</p>
+
+</main>
+
+</div>
+</body></html>

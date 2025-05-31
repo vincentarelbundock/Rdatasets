@@ -1,0 +1,69 @@
+<!DOCTYPE html><html><head><title>R: Before and after German copying errors post-course</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>German_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Before and after German copying errors post-course</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, German_tbl_df, is a tibble containing data on the number of errors made by 20 students
+when copying a German passage, both before and after participating in an experimental German course.
+The dataset provides insights into language learning and the effectiveness of the course.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(German_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 20 observations and 3 variables:
+</p>
+
+<dl>
+<dt>student</dt><dd><p>Identifier for the student (character).</p>
+</dd>
+<dt>when</dt><dd><p>Indicates whether the errors were recorded &quot;before&quot; or &quot;after&quot; the experimental course (character).</p>
+</dd>
+<dt>errors</dt><dd><p>Number of errors made by the student when copying the German passage (integer).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'German_tbl_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+educationR package and assists users in identifying its specific characteristics.
+The suffix 'tbl_df' indicates that the dataset is a tibble. The original content has not been modified
+in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>The dataset was taken from the BSDA package.
+</p>
+
+</main>
+
+</div>
+</body></html>

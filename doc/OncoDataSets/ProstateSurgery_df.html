@@ -1,0 +1,77 @@
+<!DOCTYPE html><html><head><title>R: Prostate Cancer Surgery Study</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>ProstateSurgery_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Prostate Cancer Surgery Study</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, ProstateSurgery_df, is a data frame containing data from a study on 97 men with prostate cancer who were scheduled to undergo radical prostatectomy. The dataset includes clinical and pathological variables associated with prostate cancer.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(ProstateSurgery_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 97 observations and 9 variables:
+</p>
+
+<dl>
+<dt>lcavol</dt><dd><p>Logarithm of cancer volume (numeric).</p>
+</dd>
+<dt>lweight</dt><dd><p>Logarithm of prostate weight (numeric).</p>
+</dd>
+<dt>age</dt><dd><p>Patient's age in years (integer).</p>
+</dd>
+<dt>lbph</dt><dd><p>Logarithm of the amount of benign prostatic hyperplasia (numeric).</p>
+</dd>
+<dt>svi</dt><dd><p>Seminal vesicle invasion (binary: 0 = No, 1 = Yes; integer).</p>
+</dd>
+<dt>lcp</dt><dd><p>Logarithm of capsular penetration (numeric).</p>
+</dd>
+<dt>gleason</dt><dd><p>Gleason score (integer).</p>
+</dd>
+<dt>pgg45</dt><dd><p>Percentage of Gleason scores 4 or 5 (integer).</p>
+</dd>
+<dt>lpsa</dt><dd><p>Logarithm of prostate-specific antigen (PSA) level (numeric).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'ProstateSurgery_df' to avoid confusion with other datasets in the R ecosystem.
+This naming convention helps distinguish this dataset as part of the OncoDataSets package and assists users in identifying
+its specific characteristics. The suffix '_df' indicates that the dataset is a data frame. The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the faraway package.
+</p>
+
+</main>
+
+</div>
+</body></html>

@@ -81,11 +81,9 @@
          contrasts(bacteria$trt) <- structure(contr.sdif(3),
               dimnames = list(NULL, c("drug", "encourage")))
          ## fixed effects analyses
-         ## IGNORE_RDIFF_BEGIN
          summary(glm(y ~ trt * week, binomial, data = bacteria))
          summary(glm(y ~ trt + week, binomial, data = bacteria))
          summary(glm(y ~ trt + I(week > 2), binomial, data = bacteria))
-         ## IGNORE_RDIFF_END
 
          # conditional random-effects analysis
          library(survival)

@@ -1,0 +1,64 @@
+<!DOCTYPE html><html><head><title>R: Cumulative Risk of Women Breast Cancer BRCA2 Mutation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>BRCA2BreastCancer_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Cumulative Risk of Women Breast Cancer BRCA2 Mutation</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, BRCA2BreastCancer_df, is a data frame containing data on the cumulative risk of breast cancer in women with the BRCA2 mutation as a function of their age.
+The dataset includes 11 observations, with each entry representing the cumulative risk at a specific age (in years).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(BRCA2BreastCancer_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 11 observations and 2 variables:
+</p>
+
+<dl>
+<dt>x</dt><dd><p>Age of the individual in years (numeric).</p>
+</dd>
+<dt>y</dt><dd><p>Cumulative risk of breast cancer at that age (numeric).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'BRCA2BreastCancer_df' to avoid confusion with other datasets in the R ecosystem.
+This naming convention helps distinguish this dataset as part of the OncoDataSets package and assists users in identifying
+its specific characteristics. The suffix '_df' indicates that the dataset is a data frame. The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the riskyr package.
+</p>
+
+</main>
+
+</div>
+</body></html>

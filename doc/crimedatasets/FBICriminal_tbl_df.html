@@ -1,0 +1,132 @@
+<!DOCTYPE html><html><head><title>R: FBI Criminal Background Check System</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>FBICriminal_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>FBI Criminal Background Check System</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains detailed data from the FBI's National Instant Criminal Background Check System (NICS)
+on firearm background checks across U.S. states. It includes monthly data on gun sales, population statistics,
+and various firearm-related activities from multiple categories.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(FBICriminal_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 11,648 observations and 35 variables:
+</p>
+
+<dl>
+<dt>state</dt><dd><p>State where the data was recorded (character).</p>
+</dd>
+<dt>year</dt><dd><p>Year of the observation (integer).</p>
+</dd>
+<dt>month</dt><dd><p>Month of the observation (character).</p>
+</dd>
+<dt>month.num</dt><dd><p>Numeric representation of the month (integer).</p>
+</dd>
+<dt>population</dt><dd><p>Population of the state (integer).</p>
+</dd>
+<dt>guns_per_thousand</dt><dd><p>Number of guns per 1,000 people (numeric).</p>
+</dd>
+<dt>guns_sold</dt><dd><p>Total guns sold (integer).</p>
+</dd>
+<dt>multiplier</dt><dd><p>Adjustments for sales data (numeric).</p>
+</dd>
+<dt>instore_purchases</dt><dd><p>Number of in-store purchases (integer).</p>
+</dd>
+<dt>permit</dt><dd><p>Number of gun permits issued (integer).</p>
+</dd>
+<dt>permit_recheck</dt><dd><p>Flag for permit recheck status (character).</p>
+</dd>
+<dt>handgun</dt><dd><p>Number of handguns sold (integer).</p>
+</dd>
+<dt>longgun</dt><dd><p>Number of long guns sold (integer).</p>
+</dd>
+<dt>other</dt><dd><p>Number of other types of firearms sold (integer).</p>
+</dd>
+<dt>multiple</dt><dd><p>Number of multiple gun purchases (integer).</p>
+</dd>
+<dt>multiple_corrected</dt><dd><p>Corrected count of multiple purchases (integer).</p>
+</dd>
+<dt>admin</dt><dd><p>Administrative checks conducted (integer).</p>
+</dd>
+<dt>prepawn_handgun</dt><dd><p>Number of prepawned handguns (integer).</p>
+</dd>
+<dt>prepawn_longgun</dt><dd><p>Number of prepawned long guns (integer).</p>
+</dd>
+<dt>prepawn_other</dt><dd><p>Number of prepawned other firearms (integer).</p>
+</dd>
+<dt>redemption_handgun</dt><dd><p>Number of redeemed handguns (integer).</p>
+</dd>
+<dt>redemption_longgun</dt><dd><p>Number of redeemed long guns (integer).</p>
+</dd>
+<dt>redemption_other</dt><dd><p>Number of redeemed other firearms (integer).</p>
+</dd>
+<dt>returned_handgun</dt><dd><p>Number of returned handguns (integer).</p>
+</dd>
+<dt>returned_longgun</dt><dd><p>Number of returned long guns (integer).</p>
+</dd>
+<dt>returned_other</dt><dd><p>Number of returned other firearms (integer).</p>
+</dd>
+<dt>rental_handgun</dt><dd><p>Number of handguns rented (integer).</p>
+</dd>
+<dt>rental_longgun</dt><dd><p>Number of long guns rented (integer).</p>
+</dd>
+<dt>private_handgun</dt><dd><p>Number of privately sold handguns (integer).</p>
+</dd>
+<dt>private_longgun</dt><dd><p>Number of privately sold long guns (integer).</p>
+</dd>
+<dt>private_other</dt><dd><p>Number of privately sold other firearms (integer).</p>
+</dd>
+<dt>privatereturn_handgun</dt><dd><p>Number of privately returned handguns (integer).</p>
+</dd>
+<dt>privatereturn_longgun</dt><dd><p>Number of privately returned long guns (integer).</p>
+</dd>
+<dt>privatereturn_other</dt><dd><p>Number of privately returned other firearms (integer).</p>
+</dd>
+<dt>totals</dt><dd><p>Total checks conducted (integer).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been changed to 'FBICriminal_tbl_df' to avoid confusion with other datasets in the R ecosystem.
+This naming convention helps distinguish this dataset as part of the crimedatasets package and assists users
+in identifying its specific characteristics. The suffix 'tbl_df' indicates that the dataset is stored as a tibble,
+which is a modern form of a data frame in R. The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>FBI's National Instant Criminal Background Check System (NICS).
+</p>
+
+</main>
+
+</div>
+</body></html>

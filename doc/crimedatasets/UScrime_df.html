@@ -1,0 +1,93 @@
+<!DOCTYPE html><html><head><title>R: The Effect of Punishment Regimes on Crime Rates</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>UScrime_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The Effect of Punishment Regimes on Crime Rates</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains aggregate data on crime rates and socioeconomic indicators for 47 states in the USA for 1960.
+It explores the effect of punishment regimes on crime rates, with variables scaled to convenient numbers.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(UScrime_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 47 observations and 16 variables:
+</p>
+
+<dl>
+<dt>M</dt><dd><p>Number of males aged 14–24 per 100,000 (integer).</p>
+</dd>
+<dt>So</dt><dd><p>Indicator for Southern states (1 = South, 0 = non-South) (integer).</p>
+</dd>
+<dt>Ed</dt><dd><p>Mean years of schooling (integer).</p>
+</dd>
+<dt>Po1</dt><dd><p>Police expenditure in 1960 per capita (integer).</p>
+</dd>
+<dt>Po2</dt><dd><p>Police expenditure in 1959 per capita (integer).</p>
+</dd>
+<dt>LF</dt><dd><p>Labor force participation rate per 100,000 (integer).</p>
+</dd>
+<dt>M.F</dt><dd><p>Ratio of males to females (integer).</p>
+</dd>
+<dt>Pop</dt><dd><p>Population size per 100,000 (integer).</p>
+</dd>
+<dt>NW</dt><dd><p>Percent non-white population (integer).</p>
+</dd>
+<dt>U1</dt><dd><p>Unemployment rate of urban males aged 14–24 (integer).</p>
+</dd>
+<dt>U2</dt><dd><p>Unemployment rate of urban males aged 35–39 (integer).</p>
+</dd>
+<dt>GDP</dt><dd><p>Gross domestic product per capita (integer).</p>
+</dd>
+<dt>Ineq</dt><dd><p>Income inequality indicator (integer).</p>
+</dd>
+<dt>Prob</dt><dd><p>Probability of imprisonment (numeric).</p>
+</dd>
+<dt>Time</dt><dd><p>Average time served in state prisons (in months) (numeric).</p>
+</dd>
+<dt>y</dt><dd><p>Crime rate: number of offenses per 100,000 population (integer).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been changed to 'UScrime_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+crimedatasets package and assists users in identifying its specific characteristics. The suffix 'df'
+indicates that the dataset is a traditional data frame in R. The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Aggregate data on crime and punishment regimes in the USA, 1960.
+</p>
+
+</main>
+
+</div>
+</body></html>

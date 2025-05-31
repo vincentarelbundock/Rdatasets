@@ -41,9 +41,8 @@
          1=history of CABG; 0=no history of CABG
 
       ``killip``
-         Killip level of cardiac event severity (1-4)age75
-
-      1= Age>75; 0=Age<=75
+         Killip level of cardiac event severity (1-4)age75 - 1= Age>75;
+         0=Age<=75
 
       ``kk1``
          (1/0) angina; not MI

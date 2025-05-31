@@ -30,6 +30,7 @@
       .. code:: R
 
          kidney
+         # or
          data(cancer, package="survival")
 
       .. rubric:: Format

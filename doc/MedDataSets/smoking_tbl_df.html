@@ -1,0 +1,87 @@
+<!DOCTYPE html><html><head><title>R: UK Smoking Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>smoking_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>UK Smoking Data</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'smoking_tbl_df' to avoid confusion with other datasets from
+packages in the R ecosystem and to follow the naming conventions of the 'MedDataSets' package.
+The suffix '_tbl_df' indicates that this dataset is a tibble, helping to distinguish it from
+other datasets within the package and from those in the broader R ecosystem. The original content
+of the dataset has not been modified in any way.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(smoking_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 1,691 observations and 12 variables:
+</p>
+
+<dl>
+<dt>gender</dt><dd><p>A factor indicating the gender of the respondent (e.g., male, female).</p>
+</dd>
+<dt>age</dt><dd><p>An integer representing the age of the respondent.</p>
+</dd>
+<dt>marital_status</dt><dd><p>A factor indicating the marital status of the respondent (e.g., single, married).</p>
+</dd>
+<dt>highest_qualification</dt><dd><p>A factor indicating the highest qualification attained by the respondent.</p>
+</dd>
+<dt>nationality</dt><dd><p>A factor indicating the nationality of the respondent.</p>
+</dd>
+<dt>ethnicity</dt><dd><p>A factor indicating the ethnicity of the respondent.</p>
+</dd>
+<dt>gross_income</dt><dd><p>A factor indicating the gross income level of the respondent.</p>
+</dd>
+<dt>region</dt><dd><p>A factor indicating the geographical region of the respondent.</p>
+</dd>
+<dt>smoke</dt><dd><p>A factor indicating whether the respondent is a smoker (e.g., yes, no).</p>
+</dd>
+<dt>amt_weekends</dt><dd><p>An integer representing the amount smoked on weekends.</p>
+</dd>
+<dt>amt_weekdays</dt><dd><p>An integer representing the amount smoked on weekdays.</p>
+</dd>
+<dt>type</dt><dd><p>A factor indicating the type of smoking behavior (e.g., occasional, regular).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This dataset contains information on smoking habits in the UK, focusing on various demographic
+factors and smoking behaviors. It provides insights into smoking patterns among different groups
+of people, helping to inform public health strategies.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data collected from UK health surveys focusing on smoking behavior.
+</p>
+
+</main>
+
+</div>
+</body></html>

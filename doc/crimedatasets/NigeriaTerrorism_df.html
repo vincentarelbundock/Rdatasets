@@ -1,0 +1,76 @@
+<!DOCTYPE html><html><head><title>R: Nigeria Terrorism Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>NigeriaTerrorism_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Nigeria Terrorism Data</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains information on terrorist attacks by Fulani Extremists and Boko Haram in Nigeria,
+starting from the year 2014. The attack data is sourced from the Global Terrorism Database, while other
+variables are derived from the UCDP PRIO-Grid data. The dataset includes geographic coordinates,
+population data, and information about mountainous areas relevant to the attacks.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(NigeriaTerrorism_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 312 observations and 6 variables:
+</p>
+
+<dl>
+<dt>att.ful</dt><dd><p>Number of attacks by Fulani Extremists (numeric).</p>
+</dd>
+<dt>att.bok</dt><dd><p>Number of attacks by Boko Haram (numeric).</p>
+</dd>
+<dt>xcoord</dt><dd><p>X-coordinate of the attack location (numeric).</p>
+</dd>
+<dt>ycoord</dt><dd><p>Y-coordinate of the attack location (numeric).</p>
+</dd>
+<dt>pop</dt><dd><p>Population of the area (numeric).</p>
+</dd>
+<dt>mtns</dt><dd><p>Indicator of whether the location is mountainous (numeric).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been changed to 'NigeriaTerrorism_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+crimedatasets package and assists users in identifying its specific characteristics. The suffix
+'df' indicates that the dataset is a traditional data frame in R. The original content has not been modified
+in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Global Terrorism Database and UCDP PRIO-Grid data.
+</p>
+
+</main>
+
+</div>
+</body></html>

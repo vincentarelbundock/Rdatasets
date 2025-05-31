@@ -1,0 +1,78 @@
+<!DOCTYPE html><html><head><title>R: Veteran's Administration Lung Cancer Trial</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>VA_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Veteran's Administration Lung Cancer Trial</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'VA_df' to avoid confusion with other datasets from
+packages in the R ecosystem and to follow the naming conventions of the 'MedDataSets' package.
+The suffix '_df' indicates that this dataset is a data frame, helping to distinguish it from
+other datasets within the package and from those in the broader R ecosystem. The original content
+of the dataset has not been modified in any way.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(VA_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 137 observations and 8 variables:
+</p>
+
+<dl>
+<dt>stime</dt><dd><p>A numeric value representing the survival time (in days).</p>
+</dd>
+<dt>status</dt><dd><p>A numeric value indicating the status of the patient (1 if the patient died, 0 otherwise).</p>
+</dd>
+<dt>treat</dt><dd><p>A factor indicating the treatment group (e.g., treatment A or B).</p>
+</dd>
+<dt>age</dt><dd><p>A numeric value representing the age of the patient (in years).</p>
+</dd>
+<dt>Karn</dt><dd><p>A numeric value representing the Karnofsky performance status score.</p>
+</dd>
+<dt>diag.time</dt><dd><p>A numeric value indicating the time since diagnosis (in days).</p>
+</dd>
+<dt>cell</dt><dd><p>A factor indicating the cell type of the lung cancer (with 4 possible levels).</p>
+</dd>
+<dt>prior</dt><dd><p>A factor indicating prior treatment (yes/no).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This dataset contains data from the Veteran's Administration Lung Cancer Trial, which includes
+information on patients diagnosed with lung cancer, their treatment, and other relevant variables.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data collected from the Veteran's Administration Lung Cancer Trial.
+</p>
+
+</main>
+
+</div>
+</body></html>

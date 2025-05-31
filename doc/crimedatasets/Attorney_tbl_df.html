@@ -1,0 +1,68 @@
+<!DOCTYPE html><html><head><title>R: Convictions Reported by U.S. Attorney's Offices</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Attorney_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Convictions Reported by U.S. Attorney's Offices</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains information on the number of convictions reported by U.S. attorney's offices,
+along with the number of staff members, normalized per 1 million population. The dataset also includes
+the district names for each observation.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Attorney_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 88 observations and 3 variables:
+</p>
+
+<dl>
+<dt>staff</dt><dd><p>Number of U.S. attorneys' office staff per 1 million population (integer).</p>
+</dd>
+<dt>convict</dt><dd><p>Number of convictions reported by U.S. attorneys' offices per 1 million population (integer).</p>
+</dd>
+<dt>district</dt><dd><p>Name of the district (character). Possible values include major U.S. cities such as Albuquerque, Atlanta, Boston, Chicago, Houston, Miami, San Francisco, and others.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been changed to 'Attorney_tbl_df' to avoid confusion with other data sets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+crimedatasets package and assists users in identifying its specific characteristics. The suffix 'tbl_df'
+indicates that the dataset is a tibble in R. The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data from U.S. Attorney's Office Reports.
+</p>
+
+</main>
+
+</div>
+</body></html>

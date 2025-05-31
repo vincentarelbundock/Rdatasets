@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><title>R: US Casualties: Drunk Driving, Suicide, Terrorism</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>DrunkDST_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>US Casualties: Drunk Driving, Suicide, Terrorism</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains data on fatalities and casualties in the U.S. for drunk-driving incidents,
+suicides, and acts of terrorism. The dataset spans the years 1970 to 2018 and provides insights
+into the impact of these causes of death and injury over time.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(DrunkDST_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 49 observations and 5 variables:
+</p>
+
+<dl>
+<dt>year</dt><dd><p>Year of the observation (numeric).</p>
+</dd>
+<dt>nkill</dt><dd><p>Number of people killed in acts of terrorism (numeric).</p>
+</dd>
+<dt>terrtotal</dt><dd><p>Total number of casualties (injuries and fatalities) caused by terrorism (numeric).</p>
+</dd>
+<dt>suicides</dt><dd><p>Number of suicides (numeric).</p>
+</dd>
+<dt>ddfat</dt><dd><p>Number of fatalities caused by drunk-driving incidents (numeric).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been changed to 'DrunkDST_tbl_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+crimedatasets package and assists users in identifying its specific characteristics. The suffix
+'tbl_df' indicates that the dataset is stored as a tibble. The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data on casualties and fatalities from drunk-driving, suicide, and terrorism in the U.S., 1970–2018.
+</p>
+
+</main>
+
+</div>
+</body></html>

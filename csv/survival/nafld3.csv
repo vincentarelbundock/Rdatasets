@@ -1177,7 +1177,6 @@ rownames,id,days,event
 1324,603,-677,htn
 1325,603,-301,ang/isc
 1326,603,-281,dyslipidemia
-1331,603,352,nafld
 1332,604,-2568,dyslipidemia
 1333,605,-2395,dyslipidemia
 1334,606,-486,diabetes
@@ -7802,7 +7801,6 @@ rownames,id,days,event
 8758,3916,1641,htn
 8759,3916,1983,afib
 8760,3916,2264,heart failure
-8763,3916,3385,nafld
 8764,3917,-2775,diabetes
 8765,3917,895,htn
 8767,3919,-1816,htn
@@ -8571,7 +8569,6 @@ rownames,id,days,event
 9634,4336,-3544,dyslipidemia
 9637,4336,420,htn
 9638,4336,477,heart failure
-9640,4336,920,nafld
 9642,4338,-889,htn
 9643,4339,-6166,ang/isc
 9644,4339,-6166,MI
@@ -9185,7 +9182,6 @@ rownames,id,days,event
 10359,4672,0,nafld
 10360,4673,-637,dyslipidemia
 10361,4675,-613,dyslipidemia
-10362,4676,585,nafld
 10363,4677,-7389,stroke
 10364,4677,-6078,ang/isc
 10365,4677,-5748,dyslipidemia
@@ -10410,7 +10406,6 @@ rownames,id,days,event
 11713,5286,-1240,ang/isc
 11714,5286,-332,afib
 11715,5286,26,heart failure
-11716,5286,364,nafld
 11717,5289,0,nafld
 11718,5290,-4873,dyslipidemia
 11719,5290,-2416,htn
@@ -13197,7 +13192,6 @@ rownames,id,days,event
 14837,6696,2625,ang/isc
 14838,6696,2628,MI
 14839,6698,-960,dyslipidemia
-14840,6698,2259,nafld
 14841,6699,-2626,diabetes
 14842,6699,-2626,dyslipidemia
 14843,6699,-1632,htn
@@ -15661,7 +15655,6 @@ rownames,id,days,event
 17559,7957,384,afib
 17560,7957,384,MI
 17561,7957,417,ang/isc
-17563,7957,1428,nafld
 17564,7959,-2910,dyslipidemia
 17565,7959,910,htn
 17566,7959,3700,diabetes
@@ -17266,7 +17259,6 @@ rownames,id,days,event
 19385,8792,0,nafld
 19386,8793,-646,htn
 19387,8793,301,afib
-19389,8793,696,nafld
 19390,8796,-1739,dyslipidemia
 19391,8797,-4997,dyslipidemia
 19392,8797,-2730,htn
@@ -28765,7 +28757,6 @@ rownames,id,days,event
 32325,14687,-1856,dyslipidemia
 32326,14687,-392,htn
 32327,14687,1931,diabetes
-32329,14687,3171,nafld
 32330,14688,-1527,htn
 32331,14689,0,nafld
 32332,14691,-2616,dyslipidemia
@@ -31387,7 +31378,6 @@ rownames,id,days,event
 35263,16009,-67,htn
 35264,16009,-67,dyslipidemia
 35265,16009,-15,ang/isc
-35266,16009,309,nafld
 35267,16010,0,nafld
 35268,16010,1238,htn
 35269,16011,-392,dyslipidemia
@@ -31957,7 +31947,6 @@ rownames,id,days,event
 35921,16323,-88,ang/isc
 35922,16323,1502,ang/isc
 35923,16323,1517,cardiac arrest
-35925,16323,1768,nafld
 35926,16326,-2813,stroke
 35927,16326,-1302,dyslipidemia
 35928,16327,-4116,diabetes
@@ -32914,7 +32903,6 @@ rownames,id,days,event
 37006,16838,0,nafld
 37007,16839,-1290,htn
 37008,16842,1577,heart failure
-37011,16842,1942,nafld
 37012,16843,-2471,dyslipidemia
 37014,16843,0,nafld
 37015,16843,1839,htn
@@ -33313,7 +33301,6 @@ rownames,id,days,event
 37448,17039,-2271,htn
 37449,17039,-457,dyslipidemia
 37450,17039,-255,diabetes
-37452,17039,279,nafld
 37453,17041,496,dyslipidemia
 37454,17042,-6867,MI
 37455,17042,-5404,diabetes

@@ -1,0 +1,92 @@
+<!DOCTYPE html><html><head><title>R: Criminal Offenders Screened in Florida</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>crimOffenders_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Criminal Offenders Screened in Florida</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains information on criminal offenders who were screened in Florida during 2013-2014.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(crimOffenders_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 5,855 observations and 16 variables:
+</p>
+
+<dl>
+<dt>age</dt><dd><p>Age of the offender (numeric).</p>
+</dd>
+<dt>juv_fel_count</dt><dd><p>Number of juvenile felonies committed (numeric).</p>
+</dd>
+<dt>decile_score</dt><dd><p>COMPAS score decile (numeric).</p>
+</dd>
+<dt>juv_misd_count</dt><dd><p>Number of juvenile misdemeanors committed (numeric).</p>
+</dd>
+<dt>juv_other_count</dt><dd><p>Number of other juvenile convictions (numeric).</p>
+</dd>
+<dt>v_decile_score</dt><dd><p>Predicted decile score of the offender (numeric).</p>
+</dd>
+<dt>priors_count</dt><dd><p>Number of prior crimes committed (numeric).</p>
+</dd>
+<dt>sex</dt><dd><p>Gender of the offender (factor with levels 'Female' and 'Male').</p>
+</dd>
+<dt>two_year_recid</dt><dd><p>Recidivism within two years (factor with levels 'Yes' and 'No').</p>
+</dd>
+<dt>race</dt><dd><p>Race of the offender (factor with levels 'White', 'Black', 'Hispanic', 'Asian', 'Other', 'Native').</p>
+</dd>
+<dt>c_jail_in</dt><dd><p>Date of entry into jail (normalized between 0 and 1, numeric).</p>
+</dd>
+<dt>c_jail_out</dt><dd><p>Date of release from jail (normalized between 0 and 1, numeric).</p>
+</dd>
+<dt>c_offense_date</dt><dd><p>Date the offense was committed (numeric).</p>
+</dd>
+<dt>screening_date</dt><dd><p>Date the offender was screened (numeric).</p>
+</dd>
+<dt>in_custody</dt><dd><p>Date the offender was placed in custody (numeric, normalized between 0 and 1).</p>
+</dd>
+<dt>out_custody</dt><dd><p>Date the offender was released from custody (numeric, normalized between 0 and 1).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been changed to 'crimOffenders_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+crimedatasets package and assists users in identifying its specific characteristics. The suffix 'df'
+indicates that the dataset is a traditional data frame in R. The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data collected from criminal offenders screened in Florida during 2013-2014.
+</p>
+
+</main>
+
+</div>
+</body></html>

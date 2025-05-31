@@ -91,7 +91,8 @@
       .. rubric:: Source
          :name: source
 
-      https://www.cs.uic.edu/~wilkinson/TheGrammarOfGraphics/minard.txt
+      Originally given by Lee Wilkinson, in a text file associated with
+      *The Grammar of Graphics* (1990). Springer.
 
       .. rubric:: References
          :name: references
@@ -112,7 +113,6 @@
          data(Minard.cities)
          data(Minard.temp)
 
-         ## Not run: 
          #' ## Load required packages
          require(ggplot2)
          require(scales)
@@ -120,7 +120,7 @@
 
          #' ## plot path of troops, and another layer for city names
           plot_troops <- ggplot(Minard.troops, aes(long, lat)) +
-                 geom_path(aes(size = survivors, colour = direction, group = group),
+                 geom_path(aes(linewidth = survivors, colour = direction, group = group),
                           lineend = "round", linejoin = "round")
           plot_cities <- geom_text(aes(label = city), size = 4, data = Minard.cities)
           
@@ -139,7 +139,9 @@
            ylab("Latitude") + 
            ggtitle("Napoleon's March on Moscow") +
            theme_bw() +
-           theme(legend.position=c(.8, .2), legend.box="horizontal")
+           theme(legend.position = "inside", 
+                 legend.position.inside=c(.8, .2), 
+                 legend.box="horizontal")
           
          #' ## plot temperature vs. longitude, with labels for dates
          plot_temp <- ggplot(Minard.temp, aes(long, temp)) +
@@ -156,6 +158,3 @@
 
          #' Combine the two plots into one
          grid.arrange(plot_minard, plot_temp, nrow=2, heights=c(3,1))
-
-
-         ## End(Not run)

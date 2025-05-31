@@ -1,0 +1,85 @@
+<!DOCTYPE html><html><head><title>R: Mutant p53 Gene and Squamous Cell Carcinoma</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Carcinoma_p53_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Mutant p53 Gene and Squamous Cell Carcinoma</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, Carcinoma_p53_df, is a data frame containing data related to the presence of the mutant p53 tumor suppressor gene
+and its potential role as a prognostic factor in patients with squamous cell carcinoma arising from the oropharynx cavity.
+The dataset includes unadjusted estimates of log hazard ratios for mutant p53 compared to normal p53 for disease-free and overall survival,
+along with their associated variances, collected from 6 observational studies.
+The dataset consists of 6 observations with 5 variables.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Carcinoma_p53_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 6 observations and 5 variables:
+</p>
+
+<dl>
+<dt>study</dt><dd><p>Study identifier (integer).</p>
+</dd>
+<dt>y1</dt><dd><p>Unadjusted log hazard ratio for disease-free survival (numeric).</p>
+</dd>
+<dt>y2</dt><dd><p>Unadjusted log hazard ratio for overall survival (numeric).</p>
+</dd>
+<dt>V1</dt><dd><p>Variance of the log hazard ratio for disease-free survival (numeric).</p>
+</dd>
+<dt>V2</dt><dd><p>Variance of the log hazard ratio for overall survival (numeric).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'Carcinoma_p53_df' to avoid confusion with other datasets in the R ecosystem.
+This naming convention helps distinguish this dataset as part of the OncoDataSets package and assists users in identifying
+its specific characteristics. The suffix '_df' indicates that the dataset is a data frame. The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the mixmeta package. References:
+</p>
+
+<ul>
+<li><p> Jackson D, Riley R, White IR (2011). Multivariate meta-analysis: Potential and promise. Statistics in Medicine. 30 (20);2481–2498.
+</p>
+</li>
+<li><p> Tandon S, Tudur-Smith C, Riley RD, et al. (2010). A systematic review of p53 as a prognostic factor of survival in squamous cell carcinoma of the four main anatomical subsites of the head and neck. Cancer Epidemiology, Biomarkers and Prevention. 19 (2):574–587.
+</p>
+</li>
+<li><p> Sera F, Armstrong B, Blangiardo M, Gasparrini A (2019). An extended mixed-effects framework for meta-analysis. Statistics in Medicine. 2019;38(29):5429–5444.
+</p>
+</li></ul>
+
+
+</main>
+
+</div>
+</body></html>

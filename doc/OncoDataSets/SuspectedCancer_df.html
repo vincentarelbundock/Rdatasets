@@ -1,0 +1,77 @@
+<!DOCTYPE html><html><head><title>R: Suspected Cancer (SCAN) Pathway</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>SuspectedCancer_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Suspected Cancer (SCAN) Pathway</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, SuspectedCancer_df, is a data frame containing blood test results from individuals presenting with non-specific symptoms of cancer.
+The data was collected as part of the Suspected CANcer (SCAN) pathway, which evaluates a new standard of care for patients in primary care settings.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(SuspectedCancer_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 750 observations and 8 variables:
+</p>
+
+<dl>
+<dt>age</dt><dd><p>Age of the individual (numeric).</p>
+</dd>
+<dt>comorbidity</dt><dd><p>Comorbidity index (numeric).</p>
+</dd>
+<dt>haemoglobin</dt><dd><p>Haemoglobin level (numeric).</p>
+</dd>
+<dt>albumin</dt><dd><p>Albumin level (numeric).</p>
+</dd>
+<dt>alaninetrans</dt><dd><p>Alanine aminotransferase level (numeric).</p>
+</dd>
+<dt>whitebloodcell</dt><dd><p>White blood cell count (numeric).</p>
+</dd>
+<dt>bilirubin</dt><dd><p>Bilirubin level (numeric).</p>
+</dd>
+<dt>calcium</dt><dd><p>Calcium level (numeric).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'SuspectedCancer_df' to avoid confusion with other datasets in the R ecosystem.
+This naming convention helps distinguish this dataset as part of the OncoDataSets package and assists users in identifying
+its specific characteristics. The suffix '_df' indicates that the dataset is a data frame. The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the R4HCR package.
+Nicholson BD, Oke JL, Friedemann Smith C, et al. The Suspected CANcer (SCAN) pathway: protocol for evaluating a new standard of care for patients with non-specific symptoms of cancer. BMJ Open 2018;8:e018168.
+</p>
+
+</main>
+
+</div>
+</body></html>

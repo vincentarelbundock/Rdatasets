@@ -21,7 +21,7 @@
 
       .. code:: R
 
-         data(bdf)
+         bdf
 
       .. rubric:: Format
          :name: format

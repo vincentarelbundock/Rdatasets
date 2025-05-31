@@ -1,0 +1,86 @@
+<!DOCTYPE html><html><head><title>R: Fatal Police Shootings data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>police_shootings_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Fatal Police Shootings data</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains records of every fatal police shooting by an on-duty officer since January 1, 2015.
+It includes information about the shooting incidents, the characteristics of the individuals involved, and details such as mental illness signs,
+body camera usage, and more. This dataset is valuable for analyzing trends and patterns in fatal police shootings in the United States.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(police_shootings_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 6,421 observations and 12 variables:
+</p>
+
+<dl>
+<dt>date</dt><dd><p>Date of the shooting (Date).</p>
+</dd>
+<dt>manner_of_death</dt><dd><p>How the individual died (character).</p>
+</dd>
+<dt>armed</dt><dd><p>Indicates if the individual was armed (character).</p>
+</dd>
+<dt>age</dt><dd><p>Age of the individual (numeric).</p>
+</dd>
+<dt>gender</dt><dd><p>Gender of the individual (character).</p>
+</dd>
+<dt>race</dt><dd><p>Race of the individual (character).</p>
+</dd>
+<dt>city</dt><dd><p>City where the shooting occurred (character).</p>
+</dd>
+<dt>state</dt><dd><p>State where the shooting occurred (character).</p>
+</dd>
+<dt>signs_of_mental_illness</dt><dd><p>Whether the individual showed signs of mental illness (logical).</p>
+</dd>
+<dt>threat_level</dt><dd><p>Perceived threat level of the individual (character).</p>
+</dd>
+<dt>flee</dt><dd><p>Whether the individual was fleeing (character).</p>
+</dd>
+<dt>body_camera</dt><dd><p>Whether the officer was wearing a body camera (logical).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been changed to 'police_shootings_tbl_df' to avoid confusion with other datasets in the R ecosystem.
+This naming convention helps distinguish this dataset as part of the crimedatasets package and assists users in identifying its specific characteristics.
+The suffix 'tbl_df' indicates that the dataset is a tibble, which is a modern version of a data frame in R.
+The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Washington Post Fatal Police Shootings database.
+</p>
+
+</main>
+
+</div>
+</body></html>

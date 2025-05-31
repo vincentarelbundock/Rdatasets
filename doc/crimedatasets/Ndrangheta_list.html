@@ -1,0 +1,79 @@
+<!DOCTYPE html><html><head><title>R: Ndrangheta Mafia Covert Network Dataset</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Ndrangheta_list</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Ndrangheta Mafia Covert Network Dataset</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains a network of co-attendance occurrences of suspected members of the Ndrangheta
+criminal organization at summits held between 2007 and 2009. These summits were meetings aimed at
+making important decisions, resolving internal issues, and establishing roles and powers.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Ndrangheta_list)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A list with 2 elements:
+</p>
+
+<dl>
+<dt>X</dt><dd><p>A numeric matrix of dimensions 146 x 146 representing the co-attendance occurrences
+between members of the Ndrangheta organization at summits. The matrix includes member pairs
+and their respective co-attendance frequency.</p>
+</dd>
+<dt>node_meta</dt><dd><p>A data frame with 146 observations and 3 variables:</p>
+</dd>
+</dl>
+
+<dl>
+<dt>Role</dt><dd><p>Character vector indicating the role of each member in the organization.</p>
+</dd>
+<dt>Locale</dt><dd><p>Character vector indicating the geographic locale of each member.</p>
+</dd>
+<dt>Id</dt><dd><p>Integer vector representing a unique identifier for each member.</p>
+</dd>
+</dl>
+
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been changed to 'Ndrangheta_list' to avoid confusion with other data sets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+crimedatasets package and assists users in identifying its specific characteristics. The suffix
+'list' indicates that the dataset is a list object in R. The original content has not been modified
+in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Ndrangheta mafia covert network dataset, containing data from summits between 2007 and 2009.
+</p>
+
+</main>
+
+</div>
+</body></html>

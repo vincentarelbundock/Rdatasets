@@ -1,0 +1,5 @@
+rownames,study,bc.ins.ins,bc.ins.del,bc.del.del,ct.ins.ins,ct.ins.del,ct.del.del
+1,GFBCS,298,535,221,270,506,263
+2,SBCS,235,541,251,245,608,321
+3,GENICA,280,509,222,285,492,229
+4,SEARCH,1133,2115,1050,1149,2263,1062

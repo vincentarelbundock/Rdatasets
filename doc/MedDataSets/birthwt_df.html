@@ -1,0 +1,82 @@
+<!DOCTYPE html><html><head><title>R: Risk Factors Associated with Low Infant Birth Weight</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>birthwt_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Risk Factors Associated with Low Infant Birth Weight</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'birthwt_df' to avoid confusion with other datasets from
+packages in the R ecosystem and to follow the naming conventions of the 'MedDataSets' package.
+The suffix '_df' indicates that this dataset is a data frame, helping to distinguish it from
+other datasets within the package and from those in the broader R ecosystem. The original content
+of the dataset has not been modified in any way.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(birthwt_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 189 observations and 10 variables:
+</p>
+
+<dl>
+<dt>low</dt><dd><p>An integer indicating whether the infant's birth weight is low (1) or not (0).</p>
+</dd>
+<dt>age</dt><dd><p>An integer representing the age of the mother (in years).</p>
+</dd>
+<dt>lwt</dt><dd><p>An integer indicating the mother's weight at last menstrual period (in pounds).</p>
+</dd>
+<dt>race</dt><dd><p>An integer indicating the race of the mother (coded as 1, 2, or 3).</p>
+</dd>
+<dt>smoke</dt><dd><p>An integer indicating whether the mother smoked during pregnancy (1 for yes, 0 for no).</p>
+</dd>
+<dt>ptl</dt><dd><p>An integer indicating the number of premature labors.</p>
+</dd>
+<dt>ht</dt><dd><p>An integer indicating whether the mother had a history of hypertension (1 for yes, 0 for no).</p>
+</dd>
+<dt>ui</dt><dd><p>An integer indicating whether the mother had a history of uterine irritability (1 for yes, 0 for no).</p>
+</dd>
+<dt>ftv</dt><dd><p>An integer indicating the number of physician visits during the first trimester.</p>
+</dd>
+<dt>bwt</dt><dd><p>An integer representing the infant's birth weight (in grams).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This dataset contains information on risk factors associated with low infant birth weight,
+including maternal characteristics and behaviors during pregnancy.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data collected from maternal health studies related to infant birth weight.
+</p>
+
+</main>
+
+</div>
+</body></html>

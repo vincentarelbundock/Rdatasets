@@ -1,0 +1,182 @@
+rownames,trt,days,outcome,id
+1,Control,159,thymic lymphoma,1
+2,Control,189,thymic lymphoma,2
+3,Control,191,thymic lymphoma,3
+4,Control,198,thymic lymphoma,4
+5,Control,200,thymic lymphoma,5
+6,Control,207,thymic lymphoma,6
+7,Control,220,thymic lymphoma,7
+8,Control,235,thymic lymphoma,8
+9,Control,245,thymic lymphoma,9
+10,Control,250,thymic lymphoma,10
+11,Control,256,thymic lymphoma,11
+12,Control,261,thymic lymphoma,12
+13,Control,265,thymic lymphoma,13
+14,Control,266,thymic lymphoma,14
+15,Control,280,thymic lymphoma,15
+16,Control,343,thymic lymphoma,16
+17,Control,356,thymic lymphoma,17
+18,Control,383,thymic lymphoma,18
+19,Control,403,thymic lymphoma,19
+20,Control,414,thymic lymphoma,20
+21,Control,428,thymic lymphoma,21
+22,Control,432,thymic lymphoma,22
+23,Control,317,reticulum cell sarcoma,23
+24,Control,318,reticulum cell sarcoma,24
+25,Control,399,reticulum cell sarcoma,25
+26,Control,495,reticulum cell sarcoma,26
+27,Control,525,reticulum cell sarcoma,27
+28,Control,536,reticulum cell sarcoma,28
+29,Control,549,reticulum cell sarcoma,29
+30,Control,552,reticulum cell sarcoma,30
+31,Control,554,reticulum cell sarcoma,31
+32,Control,337,reticulum cell sarcoma,32
+33,Control,558,reticulum cell sarcoma,33
+34,Control,571,reticulum cell sarcoma,34
+35,Control,586,reticulum cell sarcoma,35
+36,Control,594,reticulum cell sarcoma,36
+37,Control,596,reticulum cell sarcoma,37
+38,Control,605,reticulum cell sarcoma,38
+39,Control,612,reticulum cell sarcoma,39
+40,Control,621,reticulum cell sarcoma,40
+41,Control,628,reticulum cell sarcoma,41
+42,Control,631,reticulum cell sarcoma,42
+43,Control,636,reticulum cell sarcoma,43
+44,Control,643,reticulum cell sarcoma,44
+45,Control,647,reticulum cell sarcoma,45
+46,Control,648,reticulum cell sarcoma,46
+47,Control,649,reticulum cell sarcoma,47
+48,Control,661,reticulum cell sarcoma,48
+49,Control,663,reticulum cell sarcoma,49
+50,Control,666,reticulum cell sarcoma,50
+51,Control,670,reticulum cell sarcoma,51
+52,Control,695,reticulum cell sarcoma,52
+53,Control,697,reticulum cell sarcoma,53
+54,Control,700,reticulum cell sarcoma,54
+55,Control,705,reticulum cell sarcoma,55
+56,Control,712,reticulum cell sarcoma,56
+57,Control,713,reticulum cell sarcoma,57
+58,Control,738,reticulum cell sarcoma,58
+59,Control,748,reticulum cell sarcoma,59
+60,Control,753,reticulum cell sarcoma,60
+61,Control,40,other,61
+62,Control,42,other,62
+63,Control,51,other,63
+64,Control,62,other,64
+65,Control,163,other,65
+66,Control,179,other,66
+67,Control,206,other,67
+68,Control,222,other,68
+69,Control,228,other,69
+70,Control,252,other,70
+71,Control,249,other,71
+72,Control,282,other,72
+73,Control,324,other,73
+74,Control,333,other,74
+75,Control,341,other,75
+76,Control,366,other,76
+77,Control,385,other,77
+78,Control,407,other,78
+79,Control,420,other,79
+80,Control,431,other,80
+81,Control,441,other,81
+82,Control,461,other,82
+83,Control,462,other,83
+84,Control,482,other,84
+85,Control,517,other,85
+86,Control,517,other,86
+87,Control,524,other,87
+88,Control,564,other,88
+89,Control,567,other,89
+90,Control,586,other,90
+91,Control,619,other,91
+92,Control,620,other,92
+93,Control,621,other,93
+94,Control,622,other,94
+95,Control,647,other,95
+96,Control,651,other,96
+97,Control,686,other,97
+98,Control,761,other,98
+99,Control,763,other,99
+100,Germ-free,158,thymic lymphoma,100
+101,Germ-free,192,thymic lymphoma,101
+102,Germ-free,193,thymic lymphoma,102
+103,Germ-free,194,thymic lymphoma,103
+104,Germ-free,195,thymic lymphoma,104
+105,Germ-free,202,thymic lymphoma,105
+106,Germ-free,212,thymic lymphoma,106
+107,Germ-free,215,thymic lymphoma,107
+108,Germ-free,229,thymic lymphoma,108
+109,Germ-free,230,thymic lymphoma,109
+110,Germ-free,237,thymic lymphoma,110
+111,Germ-free,240,thymic lymphoma,111
+112,Germ-free,244,thymic lymphoma,112
+113,Germ-free,247,thymic lymphoma,113
+114,Germ-free,259,thymic lymphoma,114
+115,Germ-free,300,thymic lymphoma,115
+116,Germ-free,301,thymic lymphoma,116
+117,Germ-free,321,thymic lymphoma,117
+118,Germ-free,337,thymic lymphoma,118
+119,Germ-free,415,thymic lymphoma,119
+120,Germ-free,434,thymic lymphoma,120
+121,Germ-free,444,thymic lymphoma,121
+122,Germ-free,485,thymic lymphoma,122
+123,Germ-free,496,thymic lymphoma,123
+124,Germ-free,529,thymic lymphoma,124
+125,Germ-free,537,thymic lymphoma,125
+126,Germ-free,624,thymic lymphoma,126
+127,Germ-free,707,thymic lymphoma,127
+128,Germ-free,800,thymic lymphoma,128
+129,Germ-free,430,reticulum cell sarcoma,129
+130,Germ-free,590,reticulum cell sarcoma,130
+131,Germ-free,606,reticulum cell sarcoma,131
+132,Germ-free,638,reticulum cell sarcoma,132
+133,Germ-free,655,reticulum cell sarcoma,133
+134,Germ-free,679,reticulum cell sarcoma,134
+135,Germ-free,691,reticulum cell sarcoma,135
+136,Germ-free,693,reticulum cell sarcoma,136
+137,Germ-free,696,reticulum cell sarcoma,137
+138,Germ-free,747,reticulum cell sarcoma,138
+139,Germ-free,752,reticulum cell sarcoma,139
+140,Germ-free,760,reticulum cell sarcoma,140
+141,Germ-free,778,reticulum cell sarcoma,141
+142,Germ-free,821,reticulum cell sarcoma,142
+143,Germ-free,986,reticulum cell sarcoma,143
+144,Germ-free,136,other,144
+145,Germ-free,246,other,145
+146,Germ-free,255,other,146
+147,Germ-free,376,other,147
+148,Germ-free,421,other,148
+149,Germ-free,565,other,149
+150,Germ-free,616,other,150
+151,Germ-free,617,other,151
+152,Germ-free,652,other,152
+153,Germ-free,655,other,153
+154,Germ-free,658,other,154
+155,Germ-free,660,other,155
+156,Germ-free,662,other,156
+157,Germ-free,675,other,157
+158,Germ-free,681,other,158
+159,Germ-free,734,other,159
+160,Germ-free,736,other,160
+161,Germ-free,737,other,161
+162,Germ-free,757,other,162
+163,Germ-free,769,other,163
+164,Germ-free,777,other,164
+165,Germ-free,800,other,165
+166,Germ-free,807,other,166
+167,Germ-free,825,other,167
+168,Germ-free,855,other,168
+169,Germ-free,857,other,169
+170,Germ-free,864,other,170
+171,Germ-free,868,other,171
+172,Germ-free,870,other,172
+173,Germ-free,870,other,173
+174,Germ-free,873,other,174
+175,Germ-free,882,other,175
+176,Germ-free,895,other,176
+177,Germ-free,910,other,177
+178,Germ-free,934,other,178
+179,Germ-free,942,other,179
+180,Germ-free,1015,other,180
+181,Germ-free,1019,other,181

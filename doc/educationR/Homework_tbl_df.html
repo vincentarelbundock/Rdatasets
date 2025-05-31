@@ -1,0 +1,68 @@
+<!DOCTYPE html><html><head><title>R: Homework Hours: Private vs. Public High Schools</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Homework_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Homework Hours: Private vs. Public High Schools</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, Homework_tbl_df, is a tibble containing data on the number of hours
+per week high school students spend on homework. The dataset compares students
+from private and public schools, providing insights into the study habits and
+academic workload of students in these two types of schools.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Homework_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 30 observations and 2 variables:
+</p>
+
+<dl>
+<dt>school</dt><dd><p>Type of school the student attends, either private or public (character).</p>
+</dd>
+<dt>time</dt><dd><p>Number of hours per week the student spends on homework (numeric).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'Homework_tbl_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+educationR package and assists users in identifying its specific characteristics.
+The suffix 'tbl_df' indicates that the dataset is a tibble. The original content has not been modified
+in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>The dataset was taken from the BSDA package.
+</p>
+
+</main>
+
+</div>
+</body></html>

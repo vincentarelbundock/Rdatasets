@@ -1,0 +1,68 @@
+<!DOCTYPE html><html><head><title>R: Radiation Dose Effects on Chromosomal Abnormality</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>RadiationEffects_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Radiation Dose Effects on Chromosomal Abnormality</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, RadiationEffects_df, is a data frame containing data from an experiment conducted to examine the effects of gamma radiation on the number of chromosomal abnormalities observed. The data explores the relationships between radiation dose, dose rate, and chromosomal changes.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(RadiationEffects_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 27 observations and 4 variables:
+</p>
+
+<dl>
+<dt>cells</dt><dd><p>Number of cells observed (integer).</p>
+</dd>
+<dt>ca</dt><dd><p>Number of chromosomal abnormalities (integer).</p>
+</dd>
+<dt>doseamt</dt><dd><p>Amount of gamma radiation dose (numeric).</p>
+</dd>
+<dt>doserate</dt><dd><p>Rate of gamma radiation dose (numeric).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'RadiationEffects_df' to avoid confusion with other datasets in the R ecosystem.
+This naming convention helps distinguish this dataset as part of the OncoDataSets package and assists users in identifying
+its specific characteristics. The suffix '_df' indicates that the dataset is a data frame. The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the faraway package.
+Based on the study by Purott R. and Reeder E. (1976): *The effect of changes in dose rate on the yield of chromosome aberrations in human lymphocytes exposed to gamma radiation*. Mutation Research, 35, 437–444.
+</p>
+
+</main>
+
+</div>
+</body></html>

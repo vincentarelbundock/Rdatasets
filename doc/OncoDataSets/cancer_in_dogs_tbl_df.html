@@ -1,0 +1,75 @@
+<!DOCTYPE html><html><head><title>R: Cancer in Dogs and Exposure to 2,4-D Herbicide</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>cancer_in_dogs_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Cancer in Dogs and Exposure to 2,4-D Herbicide</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, cancer_in_dogs_tbl_df, is a tibble containing information from a study
+conducted in 1994. The study aimed to determine whether there is an increased risk
+of cancer in dogs exposed to the herbicide 2,4-Dichlorophenoxyacetic acid (2,4-D).
+It includes data from 491 dogs diagnosed with cancer (case group) and 945 dogs without cancer
+(control group).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(cancer_in_dogs_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 1,436 observations and 2 variables:
+</p>
+
+<dl>
+<dt>order</dt><dd><p>Indicates whether the dog belongs to the &quot;case&quot; group (with cancer) or the
+&quot;control&quot; group (without cancer) (factor with 2 levels).</p>
+</dd>
+<dt>response</dt><dd><p>Indicates the dog's exposure to the herbicide 2,4-D, with levels such as
+&quot;exposed&quot; or &quot;not exposed&quot; (factor with 2 levels).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'cancer_in_dogs_tbl_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+OncoDataSets package and assists users in identifying its specific characteristics.
+The suffix 'tbl_df' indicates that the dataset is a tibble. The original content has not been modified
+in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the openintro package. Original study:
+Hayes HM, Tarone RE, Cantor KP, Jessen CR, McCurnin DM, and Richardson RC. 1991.
+Case-Control Study of Canine Malignant Lymphoma: Positive Association With Dog Owner's Use
+of 2,4-Dichlorophenoxyacetic Acid Herbicides. *Journal of the National Cancer Institute*,
+83(17):1226-1231.
+</p>
+
+</main>
+
+</div>
+</body></html>

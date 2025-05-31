@@ -1,0 +1,86 @@
+<!DOCTYPE html><html><head><title>R: Weekly Notified Dengue Cases in Sri Lanka</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>colmozzie_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Weekly Notified Dengue Cases in Sri Lanka</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'colmozzie_tbl_df' to avoid confusion with other datasets
+from packages in the R ecosystem and to follow the naming conventions of the 'MedDataSets' package.
+The suffix '_tbl_df' indicates that this dataset is a tibble, helping to distinguish it from other
+datasets within the package and from those in the broader R ecosystem. The original content of the
+dataset has not been modified in any way.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(colmozzie_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 279 observations and 12 variables:
+</p>
+
+<dl>
+<dt>Cases</dt><dd><p>Number of dengue cases reported during the week (integer).</p>
+</dd>
+<dt>Year</dt><dd><p>Year of the reported cases (integer).</p>
+</dd>
+<dt>Week</dt><dd><p>Week of the year (integer).</p>
+</dd>
+<dt>TEM</dt><dd><p>Average temperature (numeric).</p>
+</dd>
+<dt>TMAX</dt><dd><p>Maximum temperature recorded (numeric).</p>
+</dd>
+<dt>Tm</dt><dd><p>Minimum temperature recorded (numeric).</p>
+</dd>
+<dt>SLP</dt><dd><p>Sea level pressure (character).</p>
+</dd>
+<dt>H</dt><dd><p>Humidity levels (numeric).</p>
+</dd>
+<dt>PP</dt><dd><p>Precipitation levels (numeric).</p>
+</dd>
+<dt>VV</dt><dd><p>Wind velocity (numeric).</p>
+</dd>
+<dt>V</dt><dd><p>Another wind variable (numeric).</p>
+</dd>
+<dt>VM</dt><dd><p>Yet another wind variable (numeric).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This dataset contains weekly reported cases of dengue fever in Sri Lanka, along with various
+meteorological variables that may be associated with the incidence of the disease.
+</p>
+
+
+<h3>Source</h3>
+
+<p>The dataset is based on public health records and meteorological data from Sri Lanka.
+</p>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html><html><head><title>R: Type 2 Diabetes Clinical Trial for Patients Aged 10-17</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>diabetes2_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Type 2 Diabetes Clinical Trial for Patients Aged 10-17</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'diabetes2_tbl_df' to avoid confusion with other datasets from
+packages in the R ecosystem and to follow the naming conventions of the 'MedDataSets' package.
+The suffix '_tbl_df' indicates that this dataset is a tibble, helping to distinguish it from
+other datasets within the package and from those in the broader R ecosystem. The original content
+of the dataset has not been modified in any way.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(diabetes2_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 699 observations and 2 variables:
+</p>
+
+<dl>
+<dt>treatment</dt><dd><p>A factor indicating the type of treatment administered (e.g., different medication types).</p>
+</dd>
+<dt>outcome</dt><dd><p>A factor indicating the outcome of the treatment (e.g., improvement or no improvement).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This dataset contains information from a clinical trial focusing on Type 2 diabetes in patients aged 10 to 17 years,
+detailing the treatment approaches and their outcomes.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data collected from clinical trials assessing treatment efficacy for Type 2 diabetes in adolescents.
+</p>
+
+</main>
+
+</div>
+</body></html>

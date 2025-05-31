@@ -1,0 +1,70 @@
+<!DOCTYPE html><html><head><title>R: Reading skills of 24 matched low ability students</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Lowabil_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Reading skills of 24 matched low ability students</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, Lowabil_tbl_df, is a tibble containing data on the reading skills of 24
+students with low abilities, who were matched based on certain characteristics. The dataset
+compares the performance of the students in two different groups: the experimental group and the control group.
+This can be used to evaluate the effectiveness of an intervention or treatment in improving reading skills.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Lowabil_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 12 observations and 3 variables:
+</p>
+
+<dl>
+<dt>pair</dt><dd><p>Pair identifier for the matched students (integer).</p>
+</dd>
+<dt>experiment</dt><dd><p>Reading score for students in the experimental group (integer).</p>
+</dd>
+<dt>control</dt><dd><p>Reading score for students in the control group (integer).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'Lowabil_tbl_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+educationR package and assists users in identifying its specific characteristics.
+The suffix 'tbl_df' indicates that the dataset is a tibble. The original content has not been modified
+in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>The dataset was taken from the BSDA package.
+</p>
+
+</main>
+
+</div>
+</body></html>

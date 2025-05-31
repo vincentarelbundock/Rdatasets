@@ -1,0 +1,101 @@
+<!DOCTYPE html><html><head><title>R: Effects of Blood Storage on Prostate Cancer Study</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>BloodStorageProstate_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Effects of Blood Storage on Prostate Cancer Study</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, BloodStorageProstate_df, is a data frame containing data on 316 men who underwent radical prostatectomy and received a transfusion during or within 30 days of the surgery. The dataset includes demographic, baseline, and prognostic factors, as well as data on the time to biochemical recurrence of prostate cancer, as indicated by prostate serum antigen (PSA) levels.
+The main exposure of interest was the red blood cell (RBC) storage duration group, and the outcome of interest was time to PSA cancer recurrence.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(BloodStorageProstate_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 316 observations and 20 variables:
+</p>
+
+<dl>
+<dt>RBC.Age.Group</dt><dd><p>Age group of red blood cells (numeric).</p>
+</dd>
+<dt>Median.RBC.Age</dt><dd><p>Median age of red blood cells (numeric).</p>
+</dd>
+<dt>Age</dt><dd><p>Patient's age (numeric).</p>
+</dd>
+<dt>AA</dt><dd><p>African American status (numeric).</p>
+</dd>
+<dt>FamHx</dt><dd><p>Family history of prostate cancer (numeric).</p>
+</dd>
+<dt>PVol</dt><dd><p>Prostate volume (numeric).</p>
+</dd>
+<dt>TVol</dt><dd><p>Tumor volume (numeric).</p>
+</dd>
+<dt>T.Stage</dt><dd><p>Tumor stage (numeric).</p>
+</dd>
+<dt>bGS</dt><dd><p>Biopsy grade score (numeric).</p>
+</dd>
+<dt>BN+</dt><dd><p>Bone metastasis status (numeric).</p>
+</dd>
+<dt>OrganConfined</dt><dd><p>Organ confinement status (numeric).</p>
+</dd>
+<dt>PreopPSA</dt><dd><p>Preoperative prostate serum antigen level (numeric).</p>
+</dd>
+<dt>PreopTherapy</dt><dd><p>Preoperative therapy received (numeric).</p>
+</dd>
+<dt>Units</dt><dd><p>Number of blood transfusion units (numeric).</p>
+</dd>
+<dt>sGS</dt><dd><p>Surgical Gleason score (numeric).</p>
+</dd>
+<dt>AnyAdjTherapy</dt><dd><p>Any adjuvant therapy received (numeric).</p>
+</dd>
+<dt>AdjRadTherapy</dt><dd><p>Adjuvant radiation therapy received (numeric).</p>
+</dd>
+<dt>Recurrence</dt><dd><p>Cancer recurrence status (numeric).</p>
+</dd>
+<dt>Censor</dt><dd><p>Censoring status (numeric).</p>
+</dd>
+<dt>TimeToRecurrence</dt><dd><p>Time to biochemical recurrence in months (numeric).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'BloodStorageProstate_df' to avoid confusion with other datasets in the R ecosystem.
+This naming convention helps distinguish this dataset as part of the OncoDataSets package and assists users in identifying
+its specific characteristics. The suffix '_df' indicates that the dataset is a data frame. The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the medicaldata package.
+Cata et al. (2011). *Blood Storage Duration and Biochemical Recurrence of Cancer after Radical Prostatectomy*. Mayo Clinic Proceedings, 86(2), 120–127.
+</p>
+
+</main>
+
+</div>
+</body></html>

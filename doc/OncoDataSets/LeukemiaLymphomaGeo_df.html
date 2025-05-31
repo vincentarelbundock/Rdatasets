@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head><title>R: North Humberside Leukemia and Lymphoma Geographic Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>LeukemiaLymphomaGeo_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>North Humberside Leukemia and Lymphoma Geographic Data</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, LeukemiaLymphomaGeo_df, is a data frame containing the geographical coordinates (x and y)
+for locations in North Humberside related to leukemia and lymphoma cases. It includes the location ID and the coordinates
+for each of the 191 locations.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(LeukemiaLymphomaGeo_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 191 observations and 3 variables:
+</p>
+
+<dl>
+<dt>locationid</dt><dd><p>Location ID (integer).</p>
+</dd>
+<dt>x-coordinate</dt><dd><p>X-coordinate (integer).</p>
+</dd>
+<dt>y-coordinate</dt><dd><p>Y-coordinate (integer).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'LeukemiaLymphomaGeo_df' to avoid confusion with other datasets in the R ecosystem.
+This naming convention helps distinguish this dataset as part of the OncoDataSets package and assists users in identifying
+its specific characteristics. The suffix '_df' indicates that the dataset is a data frame. The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the rsatscan package, distributed with SaTScan software: https://www.satscan.org
+</p>
+
+</main>
+
+</div>
+</body></html>

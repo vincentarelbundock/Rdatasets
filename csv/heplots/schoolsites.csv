@@ -1,0 +1,71 @@
+rownames,site,type,model,site_name,region,city_size,student_pop
+1,1,PFT,Responsive Education,"Berkeley, CA",W,Medium,99
+2,2,PFT,Responsive Education,"Buffalo, NY",NE,Large,77
+3,3,PFT,Responsive Education,"Duluth, MN",NC,Medium,77
+4,4,PFT,Responsive Education,"Fresno, CA",W,Medium,48
+5,5,PFT,Responsive Education,"Lebanon, NH",NE,Rural,14
+6,6,PFT,Responsive Education,"Salt Lake, UT",W,Medium,36
+7,7,PFT,Responsive Education,"Tacoma, WA",W,Medium,51
+8,8,PFT,TEEM,"Baltimore, MD",S,Large,99
+9,9,PFT,TEEM,"Lakewood, NJ",NE,Small,80
+10,10,PFT,TEEM,"Lincoln, NB",NC,Medium,96
+11,11,PFT,TEEM,"Wichita, KS",NC,Large,84
+12,12,PFT,Bank Street,"New York, NY",NE,Large,72
+13,13,PFT,Bank Street,"Philadelphia, PA",NE,Large,80
+14,14,PFT,Bank Street,"Brattleboro, VT",NE,Small,20
+15,15,PFT,Bank Street,"Fall River, MA",NE,Medium,39
+16,16,PFT,Bank Street,"Wilmington, DE",S,Medium,109
+17,17,PFT,DIM,"New York, NY",NE,Large,31
+18,18,PFT,DIM,"E.St. Louis, IL",NC,Large,56
+19,19,PFT,DIM,"Grand Rapids, MI",NC,Medium,103
+20,20,PFT,DIM,"Racine, WI",NC,Medium,62
+21,21,PFT,DIM,"Flint, MI",NC,Medium,77
+22,22,PFT,BA,"New York, NY",NE,Large,43
+23,23,PFT,BA,"Philadelphia, PA",NE,Large,108
+24,24,PFT,BA,"Portageville, MO",NC,Rural,47
+25,25,PFT,BA,"Kansas City, MO",NC,Large,61
+26,26,PFT,BA,"Louisville, KY",S,Large,90
+27,27,PFT,BA,"Meridian, IL",NC,Rural,68
+28,28,PFT,Cognitive Curriculum,"New York, NY",NE,Large,52
+29,29,PFT,Cognitive Curriculum,"Chicago, IL",NC,Large,18
+30,30,PFT,Cognitive Curriculum,"Okaloosa Co., FL",S,Small,48
+31,31,PFT,Parent Education ,"Philadelphia, PA",NE,Large,46
+32,32,PFT,Parent Education ,"Jacksonville, FL",S,Large,15
+33,33,PFT,Parent Education ,"Richmond, VA",S,Large,111
+34,34,PFT,Parent Education ,"Houston, TX",S,Large,95
+35,35,PFT,EDC,"Philadelphia, PA",NE,Large,112
+36,36,PFT,EDC,"Paterson, NJ",NE,Medium,42
+37,37,PFT,EDC,"Detroit, MI",NC,Large,43
+38,38,PFT,EDC,"New York, NY",NE,Large,20
+39,39,PFT,EDC,"Philadelphia, PA",NE,Large,86
+40,40,PFT,EDC,"Portland, OR",W,Large,45
+41,41,PFT,EDC,"San Diego, CA",W,Large,71
+42,42,PFT,ILM,"New York, NY",NE,Large,53
+43,43,PFT,SEDL,"Philadelphia, PA",NE,Large,86
+44,44,PFT,SEDL,"Tulare, CA",W,Small,173
+45,45,PFT,Home-School,"New York, NY",NE,Large,26
+46,46,PFT,California Process,"Los Angeles, CA",W,Large,98
+47,47,PFT,California Process,"Ravenswood, CA",W,Small,74
+48,48,PFT,California Process,"Lamont, CA",W,Rural,27
+49,49,PFT,California Process,"San Jose, CA",W,Large,42
+50,50,NFT,Responsive Education,"Berkeley, CA",W,Medium,71
+51,51,NFT,Responsive Education,"Buffalo, NY",NE,Large,27
+52,52,NFT,Responsive Education,"Duluth, MN",NC,Medium,79
+53,53,NFT,Responsive Education,"Fresno, CA",W,Medium,54
+54,54,NFT,Responsive Education,"Lebanon, NH",NE,Rural,97
+55,55,NFT,Responsive Education,"Salt Lake, UT",W,Medium,51
+56,56,NFT,Responsive Education,"Tacoma, WA",W,Medium,42
+57,57,NFT,Responsive Education,"Lincoln, NB",NC,Medium,55
+58,58,NFT,Responsive Education,"Wichita, KS",NC,Large,36
+59,59,NFT,Bank Street,"New York, NY",NE,Large,245
+60,60,NFT,Bank Street,"Philadelphia, PA",NE,Large,37
+61,61,NFT,Bank Street,"Fall River, MA",NE,Medium,18
+62,62,NFT,DIM,"E.St. Louis, IL",NC,Large,21
+63,63,NFT,DIM,"Racine, WI",NC,Medium,27
+64,64,NFT,DIM,"Flint, MI",NC,Medium,66
+65,65,NFT,BA,"Philadelphia, PA",NE,Large,27
+66,66,NFT,Parent Education ,"Jacksonville, FL",S,Large,53
+67,67,NFT,Parent Education ,"Richmond, VA",S,Large,69
+68,68,NFT,Parent Education ,"Houston, TX",S,Large,78
+69,69,NFT,EDC,"New York, NY",NE,Large,13
+70,70,NFT,SEDL,"Philadelphia, PA",NE,Large,36

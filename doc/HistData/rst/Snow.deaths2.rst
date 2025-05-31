@@ -170,8 +170,8 @@
       Science & Medicine* 69, 1246-1251.
 
       Snow, J. (1885). *On the Mode of Communication of Cholera*.
-      London: John Churchill.
-      https://www.ph.ucla.edu/epi/snow/snowbook.html.
+      London: John Churchill. Possibly at
+      https://resource.nlm.nih.gov/0050707.
 
       Tufte, E. (1997). *Visual Explanations*. Cheshire, CT: Graphics
       Press.
@@ -179,7 +179,9 @@
       .. rubric:: See Also
          :name: see-also
 
-      ``SnowMap``
+      ``SnowMap`` for code to draw Snow's map; ``Cholera`` for William
+      Farr's cholera data. The cholera package contains more analytical
+      methods for understanding Snow's cholera data.
 
       .. rubric:: Examples
          :name: examples
@@ -195,8 +197,10 @@
          ## Plot deaths over time
          require(lubridate)
          clr <- ifelse(Snow.dates$date < mdy("09/08/1854"), "red", "darkgreen")
-         plot(deaths ~ date, data=Snow.dates, type="h", lwd=2, col=clr)
-         points(deaths ~ date, data=Snow.dates, cex=0.5, pch=16, col=clr)
+         plot(deaths ~ date, data=Snow.dates, 
+              type="h", lwd=2, col=clr)
+         points(deaths ~ date, data=Snow.dates, 
+                cex=0.5, pch=16, col=clr)
          text( mdy("09/08/1854"), 40, "Pump handle\nremoved Sept. 8", pos=4)
 
 

@@ -39,16 +39,17 @@
 
       A data frame with 10 observations on the following 11 variables.
 
-      ``Armada``
-         designation of the fleet, a factor with levels ``Andalucia``
-         ``Castilla`` ``Galeras`` ``Guipuscua`` ``Napoles`` ``Pataches``
-         ``Portugal`` ``Uantiscas`` ``Vizca`` ``Vrcas``
+      ``Fleet``
+         designation of the origin of the fleet, a factor with levels
+         ``Andalucia``, ``Castilla``, ``Galeras``, ``Guipuscua``,
+         ``Napoles``, ``Pataches``, ``Portugal``, ``Uantiscas``,
+         ``Vizca``, ``Vrcas``
 
       ``ships``
          number of ships, a numeric vector
 
       ``tons``
-         total tons, a numeric vector
+         total tons of the ships, a numeric vector
 
       ``soldiers``
          number of soldiers, a numeric vector
@@ -60,13 +61,13 @@
          total of soldiers plus sailors, a numeric vector
 
       ``artillery``
-         a numeric vector
+         number of canons, a numeric vector
 
       ``balls``
-         a numeric vector
+         number of canonballs, a numeric vector
 
       ``gunpowder``
-         a numeric vector
+         amount of gunpowder loaded, a numeric vector
 
       ``lead``
          a numeric vector
@@ -77,15 +78,26 @@
       .. rubric:: Details
          :name: details
 
-      Note that ``men = soldiers + sailors``
+      Note that ``men = soldiers + sailors``, so this variable is
+      redundant in a multivariate analysis.
+
+      A complete list of the ships of the Spanish Armada, their types,
+      armaments and fate can be found at
+      https://en.wikipedia.org/wiki/List_of_ships_of_the_Spanish_Armada.
+      An enterprising data historian might attempt to square the data
+      given there with this table.
+
+      The fleet of Portugal, under the command of Alonso Pérez de
+      Guzmán, 7th Duke of Medina Sidonia was largely in control of the
+      attempted invasion of England.
 
       .. rubric:: Source
          :name: source
 
-      de Falguerolles, A. (2008) L'analyse des donnees; before and
+      de Falguerolles, A. (2008). L'analyse des donnees; before and
       around. *Journal Electronique d'Histoire des Probabilites et de la
-      Statistique*, 4 (2),
-      http://www.jehps.net/Decembre2008/Falguerolles.pdf
+      Statistique*, **4** (2), Link:
+      https://www.jehps.net/Decembre2008/Falguerolles.pdf
 
       .. rubric:: References
          :name: references
@@ -102,9 +114,16 @@
          data(Armada)
          # delete character and redundant variable
          armada <- Armada[,-c(1,6)]
+         # use fleet as labels
+         fleet <- Armada[, 1]
 
+         # do a PCA of the standardized data
          armada.pca <- prcomp(armada, scale.=TRUE)
          summary(armada.pca)
 
+         # screeplot
          plot(armada.pca, type="lines", pch=16, cex=2)
-         biplot(armada.pca)
+
+         biplot(armada.pca, xlabs = fleet,
+           xlab = "PC1 (Fleet size)",
+           ylab = "PC2 (Fleet configuration)")

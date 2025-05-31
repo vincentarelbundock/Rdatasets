@@ -71,9 +71,9 @@
       Royal Society of London*, 60 , 273-283.
 
       Pearson, K. and Lee, A. (1903). On the laws of inheritance in man:
-      I. Inheritance of physical characters. *Biometika*, 2(4), 357-462.
-      (Tables XXII, p. 415; XXV, p. 417; XXVIII, p. 419 and XXXI, p.
-      421.)
+      I. Inheritance of physical characters. *Biometrika*, 2(4),
+      357-462. (Tables XXII, p. 415; XXV, p. 417; XXVIII, p. 419 and
+      XXXI, p. 421.)
 
       .. rubric:: References
          :name: references
@@ -81,7 +81,7 @@
       Wachsmuth, A.W., Wilkinson L., Dallal G.E. (2003). Galton's bend:
       A previously undiscovered nonlinearity in Galton's family stature
       regression data. *The American Statistician*, 57, 190-192.
-      https://www.cs.uic.edu/~wilkinson/Publications/galton.pdf
+      `doi:10.1198/0003130031874 <https://doi.org/10.1198/0003130031874>`__
 
       .. rubric:: See Also
          :name: see-also

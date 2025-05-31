@@ -1,0 +1,83 @@
+<!DOCTYPE html><html><head><title>R: Cybersecurity Breaches Reported to US Health Department</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>CyberSecurityBreaches_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Cybersecurity Breaches Reported to US Health Department</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains records of cybersecurity breaches reported to the US Department of Health
+and Human Services (HHS). Since October 2009, organizations in the United States that store data
+on human health are required to report incidents compromising the confidentiality of 500 or more
+patients or human subjects (45 C.F.R. 164.408). These reports are publicly available and provide
+detailed information about the affected entities, breach types, and impacted individuals.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(CyberSecurityBreaches_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1,151 observations and 9 variables:
+</p>
+
+<dl>
+<dt>Name.of.Covered.Entity</dt><dd><p>Name of the covered entity involved in the breach (character).</p>
+</dd>
+<dt>State</dt><dd><p>US state where the entity is located (factor with 52 levels).</p>
+</dd>
+<dt>Covered.Entity.Type</dt><dd><p>Type of the covered entity (factor with 4 levels).</p>
+</dd>
+<dt>Individuals.Affected</dt><dd><p>Number of individuals affected by the breach (integer).</p>
+</dd>
+<dt>Breach.Submission.Date</dt><dd><p>Date the breach was reported (Date).</p>
+</dd>
+<dt>Type.of.Breach</dt><dd><p>Type of breach (factor with 29 levels).</p>
+</dd>
+<dt>Location.of.Breached.Information</dt><dd><p>Location of the breached information (factor with 47 levels).</p>
+</dd>
+<dt>Business.Associate.Present</dt><dd><p>Indicates whether a business associate was involved (logical).</p>
+</dd>
+<dt>Web.Description</dt><dd><p>Description of the breach provided online (character).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been changed to 'CyberSecurityBreaches_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+crimedatasets package and assists users in identifying its specific characteristics. The suffix
+'df' indicates that the dataset is a traditional data frame in R. The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Cybersecurity breach data downloaded from the Office for Civil Rights of the
+US Department of Health and Human Services (HHS) on 2015-02-26.
+</p>
+
+</main>
+
+</div>
+</body></html>

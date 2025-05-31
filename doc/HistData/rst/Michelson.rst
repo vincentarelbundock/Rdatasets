@@ -59,7 +59,7 @@
          :name: source
 
       Kyle Siegrist, "Virtual Laboratories in Probability and
-      Statistics", http://www.math.uah.edu/stat/data/Michelson.html
+      Statistics", https://www.math.uah.edu/stat/data/Michelson.html
 
       Stephen M. Stigler (1977), "Do robust estimators work with *real*
       data?", *Annals of Statistics*, 5, 1055-1098

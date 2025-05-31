@@ -1,0 +1,80 @@
+<!DOCTYPE html><html><head><title>R: Survival from Malignant Melanoma</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Melanoma_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Survival from Malignant Melanoma</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, Melanoma_df, is a data frame containing information about 205 patients
+with malignant melanoma (a type of skin cancer) who underwent a radical operation at
+Odense University Hospital, Denmark, between 1962 and 1977. Patients were followed up
+until the end of 1977. By that time, 134 patients were still alive, and 71 had died
+(57 due to cancer and 14 from other causes). This dataset provides detailed clinical
+and demographic information for studying malignant melanoma outcomes.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Melanoma_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 205 observations and 7 variables:
+</p>
+
+<dl>
+<dt>time</dt><dd><p>Follow-up time in days (integer).</p>
+</dd>
+<dt>status</dt><dd><p>Patient's status at the end of the study: 1 = alive, 2 = dead from cancer, 3 = dead from other causes (integer).</p>
+</dd>
+<dt>sex</dt><dd><p>Sex of the patient: 1 = male, 2 = female (integer).</p>
+</dd>
+<dt>age</dt><dd><p>Age of the patient at the time of surgery (integer).</p>
+</dd>
+<dt>year</dt><dd><p>Year of surgery (integer).</p>
+</dd>
+<dt>thickness</dt><dd><p>Tumor thickness in millimeters (numeric).</p>
+</dd>
+<dt>ulcer</dt><dd><p>Presence of ulceration: 1 = no, 2 = yes (integer).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'Melanoma_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+OncoDataSets package and assists users in identifying its specific characteristics.
+The suffix '_df' indicates that the dataset is a data frame. The original content
+has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the MASS package. Original study conducted at Odense University Hospital, Denmark.
+</p>
+
+</main>
+
+</div>
+</body></html>

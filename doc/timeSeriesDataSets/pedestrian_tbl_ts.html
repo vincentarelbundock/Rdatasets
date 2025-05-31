@@ -1,0 +1,71 @@
+<!DOCTYPE html><html><head><title>R: Pedestrian Counts in the City of Melbourne</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>pedestrian_tbl_ts</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Pedestrian Counts in the City of Melbourne</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'pedestrian_tbl_ts' to avoid confusion with other packages
+in the R ecosystem from which datasets have been sourced. The suffix 'tbl_ts' indicates that this dataset
+is a tibble-based time series object. This naming convention helps distinguish this dataset as part of the
+'timeseriesdatasets' package and assists users in identifying its specific characteristics. The original content
+of the dataset has not been modified in any way.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(pedestrian_tbl_ts)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A 'tbl_ts' object with 66,037 rows and 5 columns:
+</p>
+
+<dl>
+<dt>Sensor</dt><dd><p>Identifier for the sensor used to count pedestrians.</p>
+</dd>
+<dt>Date_Time</dt><dd><p>Date and time of the pedestrian count (POSIXct format).</p>
+</dd>
+<dt>Date</dt><dd><p>Date of the pedestrian count (Date format).</p>
+</dd>
+<dt>Time</dt><dd><p>Time of the pedestrian count (Time format).</p>
+</dd>
+<dt>Count</dt><dd><p>Number of pedestrians counted.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This dataset contains pedestrian count data collected from various sensors located throughout the city of Melbourne. The data includes information on the date and time of each count as well as the number of pedestrians detected.
+</p>
+
+
+<h3>Source</h3>
+
+<p>City of Melbourne, Australia.
+</p>
+
+</main>
+
+</div>
+</body></html>

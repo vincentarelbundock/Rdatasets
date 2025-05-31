@@ -1,0 +1,1201 @@
+rownames,demographics,opinion
+1,National,Criminal
+2,National,Criminal
+3,National,Criminal
+4,National,Criminal
+5,National,Criminal
+6,National,Criminal
+7,National,Criminal
+8,National,Criminal
+9,National,Criminal
+10,National,Criminal
+11,National,Criminal
+12,National,Criminal
+13,National,Criminal
+14,National,Criminal
+15,National,Criminal
+16,National,Criminal
+17,National,Criminal
+18,National,Criminal
+19,National,Criminal
+20,National,Criminal
+21,National,Criminal
+22,National,Criminal
+23,National,Criminal
+24,National,Criminal
+25,National,Criminal
+26,National,Criminal
+27,National,Criminal
+28,National,Criminal
+29,National,Criminal
+30,National,Criminal
+31,National,Criminal
+32,National,Criminal
+33,National,Criminal
+34,National,Criminal
+35,National,Criminal
+36,National,Criminal
+37,National,Criminal
+38,National,Criminal
+39,National,Criminal
+40,National,Criminal
+41,National,Criminal
+42,National,Criminal
+43,National,Criminal
+44,Gender: Male,Criminal
+45,Gender: Male,Criminal
+46,Gender: Male,Criminal
+47,Gender: Male,Criminal
+48,Gender: Male,Criminal
+49,Gender: Male,Criminal
+50,Gender: Male,Criminal
+51,Gender: Male,Criminal
+52,Gender: Male,Criminal
+53,Gender: Male,Criminal
+54,Gender: Male,Criminal
+55,Gender: Male,Criminal
+56,Gender: Male,Criminal
+57,Gender: Male,Criminal
+58,Gender: Male,Criminal
+59,Gender: Male,Criminal
+60,Gender: Male,Criminal
+61,Gender: Male,Criminal
+62,Gender: Male,Criminal
+63,Gender: Male,Criminal
+64,Gender: Male,Criminal
+65,Gender: Male,Criminal
+66,Gender: Male,Criminal
+67,Gender: Male,Criminal
+68,Gender: Male,Criminal
+69,Gender: Male,Criminal
+70,Gender: Male,Criminal
+71,Gender: Male,Criminal
+72,Gender: Male,Criminal
+73,Gender: Male,Criminal
+74,Gender: Male,Criminal
+75,Gender: Male,Criminal
+76,Gender: Male,Criminal
+77,Gender: Male,Criminal
+78,Gender: Male,Criminal
+79,Gender: Male,Criminal
+80,Gender: Male,Criminal
+81,Gender: Male,Criminal
+82,Gender: Male,Criminal
+83,Gender: Male,Criminal
+84,Gender: Male,Criminal
+85,Gender: Male,Criminal
+86,Gender: Female,Criminal
+87,Gender: Female,Criminal
+88,Gender: Female,Criminal
+89,Gender: Female,Criminal
+90,Gender: Female,Criminal
+91,Gender: Female,Criminal
+92,Gender: Female,Criminal
+93,Gender: Female,Criminal
+94,Gender: Female,Criminal
+95,Gender: Female,Criminal
+96,Gender: Female,Criminal
+97,Gender: Female,Criminal
+98,Gender: Female,Criminal
+99,Gender: Female,Criminal
+100,Gender: Female,Criminal
+101,Gender: Female,Criminal
+102,Gender: Female,Criminal
+103,Gender: Female,Criminal
+104,Gender: Female,Criminal
+105,Gender: Female,Criminal
+106,Gender: Female,Criminal
+107,Gender: Female,Criminal
+108,Gender: Female,Criminal
+109,Gender: Female,Criminal
+110,Gender: Female,Criminal
+111,Gender: Female,Criminal
+112,Gender: Female,Criminal
+113,Gender: Female,Criminal
+114,Gender: Female,Criminal
+115,Gender: Female,Criminal
+116,Gender: Female,Criminal
+117,Gender: Female,Criminal
+118,Gender: Female,Criminal
+119,Gender: Female,Criminal
+120,Gender: Female,Criminal
+121,Gender: Female,Criminal
+122,Gender: Female,Criminal
+123,Gender: Female,Criminal
+124,Gender: Female,Criminal
+125,Gender: Female,Criminal
+126,Gender: Female,Criminal
+127,Gender: Female,Criminal
+128,Gender: Female,Criminal
+129,Gender: Female,Criminal
+130,Education: College,Criminal
+131,Education: College,Criminal
+132,Education: College,Criminal
+133,Education: College,Criminal
+134,Education: College,Criminal
+135,Education: College,Criminal
+136,Education: College,Criminal
+137,Education: College,Criminal
+138,Education: College,Criminal
+139,Education: College,Criminal
+140,Education: College,Criminal
+141,Education: College,Criminal
+142,Education: College,Criminal
+143,Education: College,Criminal
+144,Education: College,Criminal
+145,Education: College,Criminal
+146,Education: College,Criminal
+147,Education: College,Criminal
+148,Education: College,Criminal
+149,Education: College,Criminal
+150,Education: College,Criminal
+151,Education: College,Criminal
+152,Education: College,Criminal
+153,Education: College,Criminal
+154,Education: College,Criminal
+155,Education: College,Criminal
+156,Education: College,Criminal
+157,Education: College,Criminal
+158,Education: College,Criminal
+159,Education: College,Criminal
+160,Education: High School,Criminal
+161,Education: High School,Criminal
+162,Education: High School,Criminal
+163,Education: High School,Criminal
+164,Education: High School,Criminal
+165,Education: High School,Criminal
+166,Education: High School,Criminal
+167,Education: High School,Criminal
+168,Education: High School,Criminal
+169,Education: High School,Criminal
+170,Education: High School,Criminal
+171,Education: High School,Criminal
+172,Education: High School,Criminal
+173,Education: High School,Criminal
+174,Education: High School,Criminal
+175,Education: High School,Criminal
+176,Education: High School,Criminal
+177,Education: High School,Criminal
+178,Education: High School,Criminal
+179,Education: High School,Criminal
+180,Education: High School,Criminal
+181,Education: High School,Criminal
+182,Education: High School,Criminal
+183,Education: High School,Criminal
+184,Education: High School,Criminal
+185,Education: High School,Criminal
+186,Education: High School,Criminal
+187,Education: High School,Criminal
+188,Education: High School,Criminal
+189,Education: High School,Criminal
+190,Education: High School,Criminal
+191,Education: High School,Criminal
+192,Education: High School,Criminal
+193,Education: High School,Criminal
+194,Education: High School,Criminal
+195,Education: High School,Criminal
+196,Education: High School,Criminal
+197,Education: High School,Criminal
+198,Education: High School,Criminal
+199,Education: High School,Criminal
+200,Education: High School,Criminal
+201,Education: High School,Criminal
+202,Education: High School,Criminal
+203,Education: High School,Criminal
+204,Education: High School,Criminal
+205,Education: Grade School,Criminal
+206,Education: Grade School,Criminal
+207,Education: Grade School,Criminal
+208,Education: Grade School,Criminal
+209,Education: Grade School,Criminal
+210,Education: Grade School,Criminal
+211,Education: Grade School,Criminal
+212,Education: Grade School,Criminal
+213,Education: Grade School,Criminal
+214,Education: Grade School,Criminal
+215,Education: Grade School,Criminal
+216,Education: Grade School,Criminal
+217,Education: Grade School,Criminal
+218,Education: Grade School,Criminal
+219,Education: Grade School,Criminal
+220,Education: Grade School,Criminal
+221,Education: Grade School,Criminal
+222,Education: Grade School,Criminal
+223,Education: Grade School,Criminal
+224,Education: Grade School,Criminal
+225,Education: Grade School,Criminal
+226,Education: Grade School,Criminal
+227,Education: Grade School,Criminal
+228,Education: Grade School,Criminal
+229,Education: Grade School,Criminal
+230,Education: Grade School,Criminal
+231,Education: Grade School,Criminal
+232,Education: Grade School,Criminal
+233,Education: Grade School,Criminal
+234,Education: Grade School,Criminal
+235,Education: Grade School,Criminal
+236,Education: Grade School,Criminal
+237,Education: Grade School,Criminal
+238,Education: Grade School,Criminal
+239,Education: Grade School,Criminal
+240,Education: Grade School,Criminal
+241,Education: Grade School,Criminal
+242,Education: Grade School,Criminal
+243,Education: Grade School,Criminal
+244,Education: Grade School,Criminal
+245,Education: Grade School,Criminal
+246,Education: Grade School,Criminal
+247,Education: Grade School,Criminal
+248,Education: Grade School,Criminal
+249,Education: Grade School,Criminal
+250,Education: Grade School,Criminal
+251,Education: Grade School,Criminal
+252,Education: Grade School,Criminal
+253,Education: Grade School,Criminal
+254,Education: Grade School,Criminal
+255,Education: Grade School,Criminal
+256,Education: Grade School,Criminal
+257,Education: Grade School,Criminal
+258,Education: Grade School,Criminal
+259,Education: Grade School,Criminal
+260,Education: Grade School,Criminal
+261,Education: Grade School,Criminal
+262,Education: Grade School,Criminal
+263,Age: 18-24,Criminal
+264,Age: 18-24,Criminal
+265,Age: 18-24,Criminal
+266,Age: 18-24,Criminal
+267,Age: 18-24,Criminal
+268,Age: 18-24,Criminal
+269,Age: 18-24,Criminal
+270,Age: 18-24,Criminal
+271,Age: 18-24,Criminal
+272,Age: 18-24,Criminal
+273,Age: 18-24,Criminal
+274,Age: 18-24,Criminal
+275,Age: 18-24,Criminal
+276,Age: 18-24,Criminal
+277,Age: 18-24,Criminal
+278,Age: 18-24,Criminal
+279,Age: 18-24,Criminal
+280,Age: 18-24,Criminal
+281,Age: 18-24,Criminal
+282,Age: 18-24,Criminal
+283,Age: 18-24,Criminal
+284,Age: 18-24,Criminal
+285,Age: 18-24,Criminal
+286,Age: 18-24,Criminal
+287,Age: 18-24,Criminal
+288,Age: 18-24,Criminal
+289,Age: 18-24,Criminal
+290,Age: 25-29,Criminal
+291,Age: 25-29,Criminal
+292,Age: 25-29,Criminal
+293,Age: 25-29,Criminal
+294,Age: 25-29,Criminal
+295,Age: 25-29,Criminal
+296,Age: 25-29,Criminal
+297,Age: 25-29,Criminal
+298,Age: 25-29,Criminal
+299,Age: 25-29,Criminal
+300,Age: 25-29,Criminal
+301,Age: 25-29,Criminal
+302,Age: 25-29,Criminal
+303,Age: 25-29,Criminal
+304,Age: 25-29,Criminal
+305,Age: 25-29,Criminal
+306,Age: 25-29,Criminal
+307,Age: 25-29,Criminal
+308,Age: 25-29,Criminal
+309,Age: 25-29,Criminal
+310,Age: 25-29,Criminal
+311,Age: 25-29,Criminal
+312,Age: 25-29,Criminal
+313,Age: 25-29,Criminal
+314,Age: 25-29,Criminal
+315,Age: 25-29,Criminal
+316,Age: 30-49,Criminal
+317,Age: 30-49,Criminal
+318,Age: 30-49,Criminal
+319,Age: 30-49,Criminal
+320,Age: 30-49,Criminal
+321,Age: 30-49,Criminal
+322,Age: 30-49,Criminal
+323,Age: 30-49,Criminal
+324,Age: 30-49,Criminal
+325,Age: 30-49,Criminal
+326,Age: 30-49,Criminal
+327,Age: 30-49,Criminal
+328,Age: 30-49,Criminal
+329,Age: 30-49,Criminal
+330,Age: 30-49,Criminal
+331,Age: 30-49,Criminal
+332,Age: 30-49,Criminal
+333,Age: 30-49,Criminal
+334,Age: 30-49,Criminal
+335,Age: 30-49,Criminal
+336,Age: 30-49,Criminal
+337,Age: 30-49,Criminal
+338,Age: 30-49,Criminal
+339,Age: 30-49,Criminal
+340,Age: 30-49,Criminal
+341,Age: 30-49,Criminal
+342,Age: 30-49,Criminal
+343,Age: 30-49,Criminal
+344,Age: 30-49,Criminal
+345,Age: 30-49,Criminal
+346,Age: 30-49,Criminal
+347,Age: 30-49,Criminal
+348,Age: 30-49,Criminal
+349,Age: 30-49,Criminal
+350,Age: 30-49,Criminal
+351,Age: 30-49,Criminal
+352,Age: 30-49,Criminal
+353,Age: 30-49,Criminal
+354,Age: 30-49,Criminal
+355,Age: 30-49,Criminal
+356,Age: 30-49,Criminal
+357,Age: 30-49,Criminal
+358,Age: 30-49,Criminal
+359,Age: 30-49,Criminal
+360,Age: 30-49,Criminal
+361,Age: 50-older,Criminal
+362,Age: 50-older,Criminal
+363,Age: 50-older,Criminal
+364,Age: 50-older,Criminal
+365,Age: 50-older,Criminal
+366,Age: 50-older,Criminal
+367,Age: 50-older,Criminal
+368,Age: 50-older,Criminal
+369,Age: 50-older,Criminal
+370,Age: 50-older,Criminal
+371,Age: 50-older,Criminal
+372,Age: 50-older,Criminal
+373,Age: 50-older,Criminal
+374,Age: 50-older,Criminal
+375,Age: 50-older,Criminal
+376,Age: 50-older,Criminal
+377,Age: 50-older,Criminal
+378,Age: 50-older,Criminal
+379,Age: 50-older,Criminal
+380,Age: 50-older,Criminal
+381,Age: 50-older,Criminal
+382,Age: 50-older,Criminal
+383,Age: 50-older,Criminal
+384,Age: 50-older,Criminal
+385,Age: 50-older,Criminal
+386,Age: 50-older,Criminal
+387,Age: 50-older,Criminal
+388,Age: 50-older,Criminal
+389,Age: 50-older,Criminal
+390,Age: 50-older,Criminal
+391,Age: 50-older,Criminal
+392,Age: 50-older,Criminal
+393,Age: 50-older,Criminal
+394,Age: 50-older,Criminal
+395,Age: 50-older,Criminal
+396,Age: 50-older,Criminal
+397,Age: 50-older,Criminal
+398,Age: 50-older,Criminal
+399,Age: 50-older,Criminal
+400,Age: 50-older,Criminal
+401,Age: 50-older,Criminal
+402,Age: 50-older,Criminal
+403,Age: 50-older,Criminal
+404,Age: 50-older,Criminal
+405,Age: 50-older,Criminal
+406,Age: 50-older,Criminal
+407,Age: 50-older,Criminal
+408,Age: 50-older,Criminal
+409,Age: 50-older,Criminal
+410,Age: 50-older,Criminal
+411,Age: 50-older,Criminal
+412,Age: 50-older,Criminal
+413,Age: 50-older,Criminal
+414,Age: 50-older,Criminal
+415,Religion: Protestant,Criminal
+416,Religion: Protestant,Criminal
+417,Religion: Protestant,Criminal
+418,Religion: Protestant,Criminal
+419,Religion: Protestant,Criminal
+420,Religion: Protestant,Criminal
+421,Religion: Protestant,Criminal
+422,Religion: Protestant,Criminal
+423,Religion: Protestant,Criminal
+424,Religion: Protestant,Criminal
+425,Religion: Protestant,Criminal
+426,Religion: Protestant,Criminal
+427,Religion: Protestant,Criminal
+428,Religion: Protestant,Criminal
+429,Religion: Protestant,Criminal
+430,Religion: Protestant,Criminal
+431,Religion: Protestant,Criminal
+432,Religion: Protestant,Criminal
+433,Religion: Protestant,Criminal
+434,Religion: Protestant,Criminal
+435,Religion: Protestant,Criminal
+436,Religion: Protestant,Criminal
+437,Religion: Protestant,Criminal
+438,Religion: Protestant,Criminal
+439,Religion: Protestant,Criminal
+440,Religion: Protestant,Criminal
+441,Religion: Protestant,Criminal
+442,Religion: Protestant,Criminal
+443,Religion: Protestant,Criminal
+444,Religion: Protestant,Criminal
+445,Religion: Protestant,Criminal
+446,Religion: Protestant,Criminal
+447,Religion: Protestant,Criminal
+448,Religion: Protestant,Criminal
+449,Religion: Protestant,Criminal
+450,Religion: Protestant,Criminal
+451,Religion: Protestant,Criminal
+452,Religion: Protestant,Criminal
+453,Religion: Protestant,Criminal
+454,Religion: Protestant,Criminal
+455,Religion: Protestant,Criminal
+456,Religion: Protestant,Criminal
+457,Religion: Protestant,Criminal
+458,Religion: Protestant,Criminal
+459,Religion: Protestant,Criminal
+460,Religion: Protestant,Criminal
+461,Religion: Protestant,Criminal
+462,Religion: Protestant,Criminal
+463,Religion: Protestant,Criminal
+464,Religion: Catholic,Criminal
+465,Religion: Catholic,Criminal
+466,Religion: Catholic,Criminal
+467,Religion: Catholic,Criminal
+468,Religion: Catholic,Criminal
+469,Religion: Catholic,Criminal
+470,Religion: Catholic,Criminal
+471,Religion: Catholic,Criminal
+472,Religion: Catholic,Criminal
+473,Religion: Catholic,Criminal
+474,Religion: Catholic,Criminal
+475,Religion: Catholic,Criminal
+476,Religion: Catholic,Criminal
+477,Religion: Catholic,Criminal
+478,Religion: Catholic,Criminal
+479,Religion: Catholic,Criminal
+480,Religion: Catholic,Criminal
+481,Religion: Catholic,Criminal
+482,Religion: Catholic,Criminal
+483,Religion: Catholic,Criminal
+484,Religion: Catholic,Criminal
+485,Religion: Catholic,Criminal
+486,Religion: Catholic,Criminal
+487,Religion: Catholic,Criminal
+488,Religion: Catholic,Criminal
+489,Religion: Catholic,Criminal
+490,Religion: Catholic,Criminal
+491,Religion: Catholic,Criminal
+492,Religion: Catholic,Criminal
+493,Religion: Catholic,Criminal
+494,Religion: Catholic,Criminal
+495,Religion: Catholic,Criminal
+496,Religion: Catholic,Criminal
+497,Religion: Catholic,Criminal
+498,Religion: Catholic,Criminal
+499,Religion: Catholic,Criminal
+500,Religion: Catholic,Criminal
+501,Religion: Catholic,Criminal
+502,Religion: Catholic,Criminal
+503,National,Not Criminal
+504,National,Not Criminal
+505,National,Not Criminal
+506,National,Not Criminal
+507,National,Not Criminal
+508,National,Not Criminal
+509,National,Not Criminal
+510,National,Not Criminal
+511,National,Not Criminal
+512,National,Not Criminal
+513,National,Not Criminal
+514,National,Not Criminal
+515,National,Not Criminal
+516,National,Not Criminal
+517,National,Not Criminal
+518,National,Not Criminal
+519,National,Not Criminal
+520,National,Not Criminal
+521,National,Not Criminal
+522,National,Not Criminal
+523,National,Not Criminal
+524,National,Not Criminal
+525,National,Not Criminal
+526,National,Not Criminal
+527,National,Not Criminal
+528,National,Not Criminal
+529,National,Not Criminal
+530,National,Not Criminal
+531,National,Not Criminal
+532,National,Not Criminal
+533,National,Not Criminal
+534,National,Not Criminal
+535,National,Not Criminal
+536,National,Not Criminal
+537,National,Not Criminal
+538,National,Not Criminal
+539,National,Not Criminal
+540,National,Not Criminal
+541,National,Not Criminal
+542,National,Not Criminal
+543,National,Not Criminal
+544,National,Not Criminal
+545,National,Not Criminal
+546,National,Not Criminal
+547,National,Not Criminal
+548,National,Not Criminal
+549,National,Not Criminal
+550,National,Not Criminal
+551,National,Not Criminal
+552,National,Not Criminal
+553,National,Not Criminal
+554,National,Not Criminal
+555,Gender: Male,Not Criminal
+556,Gender: Male,Not Criminal
+557,Gender: Male,Not Criminal
+558,Gender: Male,Not Criminal
+559,Gender: Male,Not Criminal
+560,Gender: Male,Not Criminal
+561,Gender: Male,Not Criminal
+562,Gender: Male,Not Criminal
+563,Gender: Male,Not Criminal
+564,Gender: Male,Not Criminal
+565,Gender: Male,Not Criminal
+566,Gender: Male,Not Criminal
+567,Gender: Male,Not Criminal
+568,Gender: Male,Not Criminal
+569,Gender: Male,Not Criminal
+570,Gender: Male,Not Criminal
+571,Gender: Male,Not Criminal
+572,Gender: Male,Not Criminal
+573,Gender: Male,Not Criminal
+574,Gender: Male,Not Criminal
+575,Gender: Male,Not Criminal
+576,Gender: Male,Not Criminal
+577,Gender: Male,Not Criminal
+578,Gender: Male,Not Criminal
+579,Gender: Male,Not Criminal
+580,Gender: Male,Not Criminal
+581,Gender: Male,Not Criminal
+582,Gender: Male,Not Criminal
+583,Gender: Male,Not Criminal
+584,Gender: Male,Not Criminal
+585,Gender: Male,Not Criminal
+586,Gender: Male,Not Criminal
+587,Gender: Male,Not Criminal
+588,Gender: Male,Not Criminal
+589,Gender: Male,Not Criminal
+590,Gender: Male,Not Criminal
+591,Gender: Male,Not Criminal
+592,Gender: Male,Not Criminal
+593,Gender: Male,Not Criminal
+594,Gender: Male,Not Criminal
+595,Gender: Male,Not Criminal
+596,Gender: Male,Not Criminal
+597,Gender: Male,Not Criminal
+598,Gender: Male,Not Criminal
+599,Gender: Male,Not Criminal
+600,Gender: Male,Not Criminal
+601,Gender: Male,Not Criminal
+602,Gender: Male,Not Criminal
+603,Gender: Male,Not Criminal
+604,Gender: Male,Not Criminal
+605,Gender: Male,Not Criminal
+606,Gender: Male,Not Criminal
+607,Gender: Male,Not Criminal
+608,Gender: Female,Not Criminal
+609,Gender: Female,Not Criminal
+610,Gender: Female,Not Criminal
+611,Gender: Female,Not Criminal
+612,Gender: Female,Not Criminal
+613,Gender: Female,Not Criminal
+614,Gender: Female,Not Criminal
+615,Gender: Female,Not Criminal
+616,Gender: Female,Not Criminal
+617,Gender: Female,Not Criminal
+618,Gender: Female,Not Criminal
+619,Gender: Female,Not Criminal
+620,Gender: Female,Not Criminal
+621,Gender: Female,Not Criminal
+622,Gender: Female,Not Criminal
+623,Gender: Female,Not Criminal
+624,Gender: Female,Not Criminal
+625,Gender: Female,Not Criminal
+626,Gender: Female,Not Criminal
+627,Gender: Female,Not Criminal
+628,Gender: Female,Not Criminal
+629,Gender: Female,Not Criminal
+630,Gender: Female,Not Criminal
+631,Gender: Female,Not Criminal
+632,Gender: Female,Not Criminal
+633,Gender: Female,Not Criminal
+634,Gender: Female,Not Criminal
+635,Gender: Female,Not Criminal
+636,Gender: Female,Not Criminal
+637,Gender: Female,Not Criminal
+638,Gender: Female,Not Criminal
+639,Gender: Female,Not Criminal
+640,Gender: Female,Not Criminal
+641,Gender: Female,Not Criminal
+642,Gender: Female,Not Criminal
+643,Gender: Female,Not Criminal
+644,Gender: Female,Not Criminal
+645,Gender: Female,Not Criminal
+646,Gender: Female,Not Criminal
+647,Gender: Female,Not Criminal
+648,Gender: Female,Not Criminal
+649,Gender: Female,Not Criminal
+650,Gender: Female,Not Criminal
+651,Gender: Female,Not Criminal
+652,Gender: Female,Not Criminal
+653,Gender: Female,Not Criminal
+654,Gender: Female,Not Criminal
+655,Gender: Female,Not Criminal
+656,Gender: Female,Not Criminal
+657,Gender: Female,Not Criminal
+658,Gender: Female,Not Criminal
+659,Education: College,Not Criminal
+660,Education: College,Not Criminal
+661,Education: College,Not Criminal
+662,Education: College,Not Criminal
+663,Education: College,Not Criminal
+664,Education: College,Not Criminal
+665,Education: College,Not Criminal
+666,Education: College,Not Criminal
+667,Education: College,Not Criminal
+668,Education: College,Not Criminal
+669,Education: College,Not Criminal
+670,Education: College,Not Criminal
+671,Education: College,Not Criminal
+672,Education: College,Not Criminal
+673,Education: College,Not Criminal
+674,Education: College,Not Criminal
+675,Education: College,Not Criminal
+676,Education: College,Not Criminal
+677,Education: College,Not Criminal
+678,Education: College,Not Criminal
+679,Education: College,Not Criminal
+680,Education: College,Not Criminal
+681,Education: College,Not Criminal
+682,Education: College,Not Criminal
+683,Education: College,Not Criminal
+684,Education: College,Not Criminal
+685,Education: College,Not Criminal
+686,Education: College,Not Criminal
+687,Education: College,Not Criminal
+688,Education: College,Not Criminal
+689,Education: College,Not Criminal
+690,Education: College,Not Criminal
+691,Education: College,Not Criminal
+692,Education: College,Not Criminal
+693,Education: College,Not Criminal
+694,Education: College,Not Criminal
+695,Education: College,Not Criminal
+696,Education: College,Not Criminal
+697,Education: College,Not Criminal
+698,Education: College,Not Criminal
+699,Education: College,Not Criminal
+700,Education: College,Not Criminal
+701,Education: College,Not Criminal
+702,Education: College,Not Criminal
+703,Education: College,Not Criminal
+704,Education: College,Not Criminal
+705,Education: College,Not Criminal
+706,Education: College,Not Criminal
+707,Education: College,Not Criminal
+708,Education: College,Not Criminal
+709,Education: College,Not Criminal
+710,Education: College,Not Criminal
+711,Education: College,Not Criminal
+712,Education: College,Not Criminal
+713,Education: College,Not Criminal
+714,Education: College,Not Criminal
+715,Education: College,Not Criminal
+716,Education: College,Not Criminal
+717,Education: College,Not Criminal
+718,Education: College,Not Criminal
+719,Education: College,Not Criminal
+720,Education: College,Not Criminal
+721,Education: College,Not Criminal
+722,Education: College,Not Criminal
+723,Education: College,Not Criminal
+724,Education: College,Not Criminal
+725,Education: College,Not Criminal
+726,Education: High School,Not Criminal
+727,Education: High School,Not Criminal
+728,Education: High School,Not Criminal
+729,Education: High School,Not Criminal
+730,Education: High School,Not Criminal
+731,Education: High School,Not Criminal
+732,Education: High School,Not Criminal
+733,Education: High School,Not Criminal
+734,Education: High School,Not Criminal
+735,Education: High School,Not Criminal
+736,Education: High School,Not Criminal
+737,Education: High School,Not Criminal
+738,Education: High School,Not Criminal
+739,Education: High School,Not Criminal
+740,Education: High School,Not Criminal
+741,Education: High School,Not Criminal
+742,Education: High School,Not Criminal
+743,Education: High School,Not Criminal
+744,Education: High School,Not Criminal
+745,Education: High School,Not Criminal
+746,Education: High School,Not Criminal
+747,Education: High School,Not Criminal
+748,Education: High School,Not Criminal
+749,Education: High School,Not Criminal
+750,Education: High School,Not Criminal
+751,Education: High School,Not Criminal
+752,Education: High School,Not Criminal
+753,Education: High School,Not Criminal
+754,Education: High School,Not Criminal
+755,Education: High School,Not Criminal
+756,Education: High School,Not Criminal
+757,Education: High School,Not Criminal
+758,Education: High School,Not Criminal
+759,Education: High School,Not Criminal
+760,Education: High School,Not Criminal
+761,Education: High School,Not Criminal
+762,Education: High School,Not Criminal
+763,Education: High School,Not Criminal
+764,Education: High School,Not Criminal
+765,Education: High School,Not Criminal
+766,Education: High School,Not Criminal
+767,Education: High School,Not Criminal
+768,Education: High School,Not Criminal
+769,Education: High School,Not Criminal
+770,Education: High School,Not Criminal
+771,Education: High School,Not Criminal
+772,Education: High School,Not Criminal
+773,Education: High School,Not Criminal
+774,Education: High School,Not Criminal
+775,Education: High School,Not Criminal
+776,Education: Grade School,Not Criminal
+777,Education: Grade School,Not Criminal
+778,Education: Grade School,Not Criminal
+779,Education: Grade School,Not Criminal
+780,Education: Grade School,Not Criminal
+781,Education: Grade School,Not Criminal
+782,Education: Grade School,Not Criminal
+783,Education: Grade School,Not Criminal
+784,Education: Grade School,Not Criminal
+785,Education: Grade School,Not Criminal
+786,Education: Grade School,Not Criminal
+787,Education: Grade School,Not Criminal
+788,Education: Grade School,Not Criminal
+789,Education: Grade School,Not Criminal
+790,Education: Grade School,Not Criminal
+791,Education: Grade School,Not Criminal
+792,Education: Grade School,Not Criminal
+793,Education: Grade School,Not Criminal
+794,Education: Grade School,Not Criminal
+795,Education: Grade School,Not Criminal
+796,Education: Grade School,Not Criminal
+797,Education: Grade School,Not Criminal
+798,Education: Grade School,Not Criminal
+799,Education: Grade School,Not Criminal
+800,Education: Grade School,Not Criminal
+801,Education: Grade School,Not Criminal
+802,Education: Grade School,Not Criminal
+803,Education: Grade School,Not Criminal
+804,Education: Grade School,Not Criminal
+805,Education: Grade School,Not Criminal
+806,Education: Grade School,Not Criminal
+807,Education: Grade School,Not Criminal
+808,Education: Grade School,Not Criminal
+809,Age: 18-24,Not Criminal
+810,Age: 18-24,Not Criminal
+811,Age: 18-24,Not Criminal
+812,Age: 18-24,Not Criminal
+813,Age: 18-24,Not Criminal
+814,Age: 18-24,Not Criminal
+815,Age: 18-24,Not Criminal
+816,Age: 18-24,Not Criminal
+817,Age: 18-24,Not Criminal
+818,Age: 18-24,Not Criminal
+819,Age: 18-24,Not Criminal
+820,Age: 18-24,Not Criminal
+821,Age: 18-24,Not Criminal
+822,Age: 18-24,Not Criminal
+823,Age: 18-24,Not Criminal
+824,Age: 18-24,Not Criminal
+825,Age: 18-24,Not Criminal
+826,Age: 18-24,Not Criminal
+827,Age: 18-24,Not Criminal
+828,Age: 18-24,Not Criminal
+829,Age: 18-24,Not Criminal
+830,Age: 18-24,Not Criminal
+831,Age: 18-24,Not Criminal
+832,Age: 18-24,Not Criminal
+833,Age: 18-24,Not Criminal
+834,Age: 18-24,Not Criminal
+835,Age: 18-24,Not Criminal
+836,Age: 18-24,Not Criminal
+837,Age: 18-24,Not Criminal
+838,Age: 18-24,Not Criminal
+839,Age: 18-24,Not Criminal
+840,Age: 18-24,Not Criminal
+841,Age: 18-24,Not Criminal
+842,Age: 18-24,Not Criminal
+843,Age: 18-24,Not Criminal
+844,Age: 18-24,Not Criminal
+845,Age: 18-24,Not Criminal
+846,Age: 18-24,Not Criminal
+847,Age: 18-24,Not Criminal
+848,Age: 18-24,Not Criminal
+849,Age: 18-24,Not Criminal
+850,Age: 18-24,Not Criminal
+851,Age: 18-24,Not Criminal
+852,Age: 18-24,Not Criminal
+853,Age: 18-24,Not Criminal
+854,Age: 18-24,Not Criminal
+855,Age: 18-24,Not Criminal
+856,Age: 18-24,Not Criminal
+857,Age: 18-24,Not Criminal
+858,Age: 18-24,Not Criminal
+859,Age: 18-24,Not Criminal
+860,Age: 18-24,Not Criminal
+861,Age: 18-24,Not Criminal
+862,Age: 18-24,Not Criminal
+863,Age: 18-24,Not Criminal
+864,Age: 18-24,Not Criminal
+865,Age: 18-24,Not Criminal
+866,Age: 18-24,Not Criminal
+867,Age: 18-24,Not Criminal
+868,Age: 18-24,Not Criminal
+869,Age: 18-24,Not Criminal
+870,Age: 18-24,Not Criminal
+871,Age: 18-24,Not Criminal
+872,Age: 18-24,Not Criminal
+873,Age: 18-24,Not Criminal
+874,Age: 18-24,Not Criminal
+875,Age: 18-24,Not Criminal
+876,Age: 25-29,Not Criminal
+877,Age: 25-29,Not Criminal
+878,Age: 25-29,Not Criminal
+879,Age: 25-29,Not Criminal
+880,Age: 25-29,Not Criminal
+881,Age: 25-29,Not Criminal
+882,Age: 25-29,Not Criminal
+883,Age: 25-29,Not Criminal
+884,Age: 25-29,Not Criminal
+885,Age: 25-29,Not Criminal
+886,Age: 25-29,Not Criminal
+887,Age: 25-29,Not Criminal
+888,Age: 25-29,Not Criminal
+889,Age: 25-29,Not Criminal
+890,Age: 25-29,Not Criminal
+891,Age: 25-29,Not Criminal
+892,Age: 25-29,Not Criminal
+893,Age: 25-29,Not Criminal
+894,Age: 25-29,Not Criminal
+895,Age: 25-29,Not Criminal
+896,Age: 25-29,Not Criminal
+897,Age: 25-29,Not Criminal
+898,Age: 25-29,Not Criminal
+899,Age: 25-29,Not Criminal
+900,Age: 25-29,Not Criminal
+901,Age: 25-29,Not Criminal
+902,Age: 25-29,Not Criminal
+903,Age: 25-29,Not Criminal
+904,Age: 25-29,Not Criminal
+905,Age: 25-29,Not Criminal
+906,Age: 25-29,Not Criminal
+907,Age: 25-29,Not Criminal
+908,Age: 25-29,Not Criminal
+909,Age: 25-29,Not Criminal
+910,Age: 25-29,Not Criminal
+911,Age: 25-29,Not Criminal
+912,Age: 25-29,Not Criminal
+913,Age: 25-29,Not Criminal
+914,Age: 25-29,Not Criminal
+915,Age: 25-29,Not Criminal
+916,Age: 25-29,Not Criminal
+917,Age: 25-29,Not Criminal
+918,Age: 25-29,Not Criminal
+919,Age: 25-29,Not Criminal
+920,Age: 25-29,Not Criminal
+921,Age: 25-29,Not Criminal
+922,Age: 25-29,Not Criminal
+923,Age: 25-29,Not Criminal
+924,Age: 25-29,Not Criminal
+925,Age: 25-29,Not Criminal
+926,Age: 25-29,Not Criminal
+927,Age: 25-29,Not Criminal
+928,Age: 25-29,Not Criminal
+929,Age: 25-29,Not Criminal
+930,Age: 25-29,Not Criminal
+931,Age: 25-29,Not Criminal
+932,Age: 25-29,Not Criminal
+933,Age: 25-29,Not Criminal
+934,Age: 25-29,Not Criminal
+935,Age: 25-29,Not Criminal
+936,Age: 25-29,Not Criminal
+937,Age: 25-29,Not Criminal
+938,Age: 25-29,Not Criminal
+939,Age: 25-29,Not Criminal
+940,Age: 25-29,Not Criminal
+941,Age: 25-29,Not Criminal
+942,Age: 25-29,Not Criminal
+943,Age: 25-29,Not Criminal
+944,Age: 25-29,Not Criminal
+945,Age: 25-29,Not Criminal
+946,Age: 30-49,Not Criminal
+947,Age: 30-49,Not Criminal
+948,Age: 30-49,Not Criminal
+949,Age: 30-49,Not Criminal
+950,Age: 30-49,Not Criminal
+951,Age: 30-49,Not Criminal
+952,Age: 30-49,Not Criminal
+953,Age: 30-49,Not Criminal
+954,Age: 30-49,Not Criminal
+955,Age: 30-49,Not Criminal
+956,Age: 30-49,Not Criminal
+957,Age: 30-49,Not Criminal
+958,Age: 30-49,Not Criminal
+959,Age: 30-49,Not Criminal
+960,Age: 30-49,Not Criminal
+961,Age: 30-49,Not Criminal
+962,Age: 30-49,Not Criminal
+963,Age: 30-49,Not Criminal
+964,Age: 30-49,Not Criminal
+965,Age: 30-49,Not Criminal
+966,Age: 30-49,Not Criminal
+967,Age: 30-49,Not Criminal
+968,Age: 30-49,Not Criminal
+969,Age: 30-49,Not Criminal
+970,Age: 30-49,Not Criminal
+971,Age: 30-49,Not Criminal
+972,Age: 30-49,Not Criminal
+973,Age: 30-49,Not Criminal
+974,Age: 30-49,Not Criminal
+975,Age: 30-49,Not Criminal
+976,Age: 30-49,Not Criminal
+977,Age: 30-49,Not Criminal
+978,Age: 30-49,Not Criminal
+979,Age: 30-49,Not Criminal
+980,Age: 30-49,Not Criminal
+981,Age: 30-49,Not Criminal
+982,Age: 30-49,Not Criminal
+983,Age: 30-49,Not Criminal
+984,Age: 30-49,Not Criminal
+985,Age: 30-49,Not Criminal
+986,Age: 30-49,Not Criminal
+987,Age: 30-49,Not Criminal
+988,Age: 30-49,Not Criminal
+989,Age: 30-49,Not Criminal
+990,Age: 30-49,Not Criminal
+991,Age: 30-49,Not Criminal
+992,Age: 30-49,Not Criminal
+993,Age: 30-49,Not Criminal
+994,Age: 30-49,Not Criminal
+995,Age: 30-49,Not Criminal
+996,Age: 30-49,Not Criminal
+997,Age: 30-49,Not Criminal
+998,Age: 50-older,Not Criminal
+999,Age: 50-older,Not Criminal
+1000,Age: 50-older,Not Criminal
+1001,Age: 50-older,Not Criminal
+1002,Age: 50-older,Not Criminal
+1003,Age: 50-older,Not Criminal
+1004,Age: 50-older,Not Criminal
+1005,Age: 50-older,Not Criminal
+1006,Age: 50-older,Not Criminal
+1007,Age: 50-older,Not Criminal
+1008,Age: 50-older,Not Criminal
+1009,Age: 50-older,Not Criminal
+1010,Age: 50-older,Not Criminal
+1011,Age: 50-older,Not Criminal
+1012,Age: 50-older,Not Criminal
+1013,Age: 50-older,Not Criminal
+1014,Age: 50-older,Not Criminal
+1015,Age: 50-older,Not Criminal
+1016,Age: 50-older,Not Criminal
+1017,Age: 50-older,Not Criminal
+1018,Age: 50-older,Not Criminal
+1019,Age: 50-older,Not Criminal
+1020,Age: 50-older,Not Criminal
+1021,Age: 50-older,Not Criminal
+1022,Age: 50-older,Not Criminal
+1023,Age: 50-older,Not Criminal
+1024,Age: 50-older,Not Criminal
+1025,Age: 50-older,Not Criminal
+1026,Age: 50-older,Not Criminal
+1027,Age: 50-older,Not Criminal
+1028,Age: 50-older,Not Criminal
+1029,Age: 50-older,Not Criminal
+1030,Age: 50-older,Not Criminal
+1031,Age: 50-older,Not Criminal
+1032,Age: 50-older,Not Criminal
+1033,Age: 50-older,Not Criminal
+1034,Age: 50-older,Not Criminal
+1035,Age: 50-older,Not Criminal
+1036,Age: 50-older,Not Criminal
+1037,Religion: Protestant,Not Criminal
+1038,Religion: Protestant,Not Criminal
+1039,Religion: Protestant,Not Criminal
+1040,Religion: Protestant,Not Criminal
+1041,Religion: Protestant,Not Criminal
+1042,Religion: Protestant,Not Criminal
+1043,Religion: Protestant,Not Criminal
+1044,Religion: Protestant,Not Criminal
+1045,Religion: Protestant,Not Criminal
+1046,Religion: Protestant,Not Criminal
+1047,Religion: Protestant,Not Criminal
+1048,Religion: Protestant,Not Criminal
+1049,Religion: Protestant,Not Criminal
+1050,Religion: Protestant,Not Criminal
+1051,Religion: Protestant,Not Criminal
+1052,Religion: Protestant,Not Criminal
+1053,Religion: Protestant,Not Criminal
+1054,Religion: Protestant,Not Criminal
+1055,Religion: Protestant,Not Criminal
+1056,Religion: Protestant,Not Criminal
+1057,Religion: Protestant,Not Criminal
+1058,Religion: Protestant,Not Criminal
+1059,Religion: Protestant,Not Criminal
+1060,Religion: Protestant,Not Criminal
+1061,Religion: Protestant,Not Criminal
+1062,Religion: Protestant,Not Criminal
+1063,Religion: Protestant,Not Criminal
+1064,Religion: Protestant,Not Criminal
+1065,Religion: Protestant,Not Criminal
+1066,Religion: Protestant,Not Criminal
+1067,Religion: Protestant,Not Criminal
+1068,Religion: Protestant,Not Criminal
+1069,Religion: Protestant,Not Criminal
+1070,Religion: Protestant,Not Criminal
+1071,Religion: Protestant,Not Criminal
+1072,Religion: Protestant,Not Criminal
+1073,Religion: Protestant,Not Criminal
+1074,Religion: Protestant,Not Criminal
+1075,Religion: Protestant,Not Criminal
+1076,Religion: Protestant,Not Criminal
+1077,Religion: Protestant,Not Criminal
+1078,Religion: Protestant,Not Criminal
+1079,Religion: Protestant,Not Criminal
+1080,Religion: Protestant,Not Criminal
+1081,Religion: Protestant,Not Criminal
+1082,Religion: Protestant,Not Criminal
+1083,Religion: Protestant,Not Criminal
+1084,Religion: Catholic,Not Criminal
+1085,Religion: Catholic,Not Criminal
+1086,Religion: Catholic,Not Criminal
+1087,Religion: Catholic,Not Criminal
+1088,Religion: Catholic,Not Criminal
+1089,Religion: Catholic,Not Criminal
+1090,Religion: Catholic,Not Criminal
+1091,Religion: Catholic,Not Criminal
+1092,Religion: Catholic,Not Criminal
+1093,Religion: Catholic,Not Criminal
+1094,Religion: Catholic,Not Criminal
+1095,Religion: Catholic,Not Criminal
+1096,Religion: Catholic,Not Criminal
+1097,Religion: Catholic,Not Criminal
+1098,Religion: Catholic,Not Criminal
+1099,Religion: Catholic,Not Criminal
+1100,Religion: Catholic,Not Criminal
+1101,Religion: Catholic,Not Criminal
+1102,Religion: Catholic,Not Criminal
+1103,Religion: Catholic,Not Criminal
+1104,Religion: Catholic,Not Criminal
+1105,Religion: Catholic,Not Criminal
+1106,Religion: Catholic,Not Criminal
+1107,Religion: Catholic,Not Criminal
+1108,Religion: Catholic,Not Criminal
+1109,Religion: Catholic,Not Criminal
+1110,Religion: Catholic,Not Criminal
+1111,Religion: Catholic,Not Criminal
+1112,Religion: Catholic,Not Criminal
+1113,Religion: Catholic,Not Criminal
+1114,Religion: Catholic,Not Criminal
+1115,Religion: Catholic,Not Criminal
+1116,Religion: Catholic,Not Criminal
+1117,Religion: Catholic,Not Criminal
+1118,Religion: Catholic,Not Criminal
+1119,Religion: Catholic,Not Criminal
+1120,Religion: Catholic,Not Criminal
+1121,Religion: Catholic,Not Criminal
+1122,Religion: Catholic,Not Criminal
+1123,Religion: Catholic,Not Criminal
+1124,Religion: Catholic,Not Criminal
+1125,Religion: Catholic,Not Criminal
+1126,Religion: Catholic,Not Criminal
+1127,Religion: Catholic,Not Criminal
+1128,Religion: Catholic,Not Criminal
+1129,Religion: Catholic,Not Criminal
+1130,Religion: Catholic,Not Criminal
+1131,Religion: Catholic,Not Criminal
+1132,Religion: Catholic,Not Criminal
+1133,Religion: Catholic,Not Criminal
+1134,Religion: Catholic,Not Criminal
+1135,Religion: Catholic,Not Criminal
+1136,Religion: Catholic,Not Criminal
+1137,Religion: Catholic,Not Criminal
+1138,Religion: Catholic,Not Criminal
+1139,National,No Opinion
+1140,National,No Opinion
+1141,National,No Opinion
+1142,National,No Opinion
+1143,National,No Opinion
+1144,Gender: Male,No Opinion
+1145,Gender: Male,No Opinion
+1146,Gender: Male,No Opinion
+1147,Gender: Male,No Opinion
+1148,Gender: Male,No Opinion
+1149,Gender: Female,No Opinion
+1150,Gender: Female,No Opinion
+1151,Gender: Female,No Opinion
+1152,Gender: Female,No Opinion
+1153,Gender: Female,No Opinion
+1154,Education: College,No Opinion
+1155,Education: College,No Opinion
+1156,Education: College,No Opinion
+1157,Education: High School,No Opinion
+1158,Education: High School,No Opinion
+1159,Education: High School,No Opinion
+1160,Education: High School,No Opinion
+1161,Education: High School,No Opinion
+1162,Education: Grade School,No Opinion
+1163,Education: Grade School,No Opinion
+1164,Education: Grade School,No Opinion
+1165,Education: Grade School,No Opinion
+1166,Education: Grade School,No Opinion
+1167,Education: Grade School,No Opinion
+1168,Education: Grade School,No Opinion
+1169,Education: Grade School,No Opinion
+1170,Education: Grade School,No Opinion
+1171,Age: 18-24,No Opinion
+1172,Age: 18-24,No Opinion
+1173,Age: 18-24,No Opinion
+1174,Age: 18-24,No Opinion
+1175,Age: 18-24,No Opinion
+1176,Age: 18-24,No Opinion
+1177,Age: 25-29,No Opinion
+1178,Age: 25-29,No Opinion
+1179,Age: 25-29,No Opinion
+1180,Age: 25-29,No Opinion
+1181,Age: 30-49,No Opinion
+1182,Age: 30-49,No Opinion
+1183,Age: 30-49,No Opinion
+1184,Age: 50-older,No Opinion
+1185,Age: 50-older,No Opinion
+1186,Age: 50-older,No Opinion
+1187,Age: 50-older,No Opinion
+1188,Age: 50-older,No Opinion
+1189,Age: 50-older,No Opinion
+1190,Age: 50-older,No Opinion
+1191,Religion: Protestant,No Opinion
+1192,Religion: Protestant,No Opinion
+1193,Religion: Protestant,No Opinion
+1194,Religion: Protestant,No Opinion
+1195,Religion: Catholic,No Opinion
+1196,Religion: Catholic,No Opinion
+1197,Religion: Catholic,No Opinion
+1198,Religion: Catholic,No Opinion
+1199,Religion: Catholic,No Opinion
+1200,Religion: Catholic,No Opinion

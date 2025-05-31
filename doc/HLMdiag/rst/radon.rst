@@ -43,11 +43,6 @@
       county.name
          County name - a factor.
 
-      .. rubric:: Source
-         :name: source
-
-      http://www.stat.columbia.edu/~gelman/arm/software/
-
       .. rubric:: References
          :name: references
 

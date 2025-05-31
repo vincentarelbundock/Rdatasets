@@ -12,10 +12,14 @@
       .. rubric:: Description
          :name: description
 
-      School Data, from Charnes et al. (1981). The aim is to explain
-      scores on 3 different tests, ``reading``, ``mathematics`` and
-      ``selfesteem`` from 70 school sites by means of 5 explanatory
-      variables related to parents and teachers.
+      School Data, from Charnes et al. (1981), a large scale social
+      experiment in public school education. It was conceived in the
+      late 1960's as a federally sponsored program charged with
+      providing remedial assistance to educationally disadvantaged early
+      primary school students. One aim is to explain scores on 3
+      different tests, ``reading``, ``mathematics`` and ``selfesteem``
+      from 70 school sites by means of 5 explanatory variables related
+      to parents and teachers.
 
       .. rubric:: Format
          :name: format
@@ -23,23 +27,24 @@
       A data frame with 70 observations on the following 8 variables.
 
       ``education``
-         Education level of mother as measured in terms of percentage of
-         high school graduates among female parents
+         Education level of mother as measured by the percentage of high
+         school graduates among female parents
 
       ``occupation``
          Highest occupation of a family member according to a
          pre-arranged rating scale
 
       ``visit``
-         Parental visits index representing the number of visits to the
+         Parental visits index, representing the number of visits to the
          school site
 
       ``counseling``
-         Parent counseling index calculated from data on time spent with
-         child on school-related topics such as reading together, etc.
+         Parent counseling index, calculated from data on time spent
+         with child on school-related topics such as reading together,
+         etc.
 
       ``teacher``
-         Number of teachers at a given site
+         Number of teachers at the given site
 
       ``reading``
          Reading score as measured by the Metropolitan Achievement Test
@@ -55,18 +60,34 @@
       .. rubric:: Details
          :name: details
 
-      This dataset was shamelessly borrowed from the ``FRB`` package.
+      A number of observations are unusual, a fact only revealed by
+      plotting.
 
-      The relationships among these variables are unusual, a fact only
-      revealed by plotting.
+      The study was designed to compare schools using Program Follow
+      Through (PFT) management methods of taking actions to achieve
+      goals with those of Non Follow Through (NFT). Observations
+      ``1:49`` came from PFT sites and ``50:70`` from NFT sites. This
+      and other descriptors are contained in the dataset
+      ``schoolsites``.
 
       .. rubric:: Source
          :name: source
+
+      This dataset was came originally from the (now-defunct) ``FRB``
+      package.
+
+      .. rubric:: References
+         :name: references
 
       A. Charnes, W.W. Cooper and E. Rhodes (1981). Evaluating Program
       and Managerial Efficiency: An Application of Data Envelopment
       Analysis to Program Follow Through. *Management Science*, **27**,
       668-697.
+
+      .. rubric:: See Also
+         :name: see-also
+
+      ``schoolsites``
 
       .. rubric:: Examples
          :name: examples
@@ -82,6 +103,10 @@
          corrgram(schooldata, 
                   lower.panel=panel.ellipse, 
                   upper.panel=panel.pts)
+
+         # check for multivariate outliers
+         res <- cqplot(schooldata, id.n = 5)
+         res
 
          #fit the MMreg model
          school.mod <- lm(cbind(reading, mathematics, selfesteem) ~ 
@@ -104,7 +129,7 @@
          wts <- school.rmod$weights
          notable <- which(wts < 0.8)
          plot(wts, type = "h", col="gray", ylab = "Observation weight")
-         points(1:length(wts), wts, 
+         points(seq_along(wts), wts, 
                 pch=16,
                 col = ifelse(wts < 0.8, "red", "black"))
 

@@ -1,0 +1,68 @@
+<!DOCTYPE html><html><head><title>R: Effect of Calcium Chloride on Muscle Contraction in Rat...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>muscle_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Effect of Calcium Chloride on Muscle Contraction in Rat Hearts</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'muscle_df' to avoid confusion with other datasets from
+packages in the R ecosystem and to follow the naming conventions of the 'MedDataSets' package.
+The suffix '_df' indicates that this dataset is a data frame, helping to distinguish it from
+other datasets within the package and from those in the broader R ecosystem. The original content
+of the dataset has not been modified in any way.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(muscle_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 60 observations and 3 variables:
+</p>
+
+<dl>
+<dt>Strip</dt><dd><p>A factor indicating the specific muscle strip (with 21 possible levels).</p>
+</dd>
+<dt>Conc</dt><dd><p>A numeric value representing the concentration of calcium chloride (in mM).</p>
+</dd>
+<dt>Length</dt><dd><p>A numeric value indicating the length of the muscle strip (in millimeters).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This dataset contains experimental data on the effect of calcium chloride on muscle contraction
+in rat hearts, including measurements of muscle strip length and calcium concentration.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data collected from experiments assessing the impact of calcium chloride on muscle contraction.
+</p>
+
+</main>
+
+</div>
+</body></html>

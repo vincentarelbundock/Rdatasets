@@ -74,7 +74,7 @@
          :name: source
 
       The canonical source for this data is the StatLib – Datasets
-      Archive http://lib.stat.cmu.edu/datasets/pollen.data in the
+      Archive https://lib.stat.cmu.edu/datasets/pollen.data in the
       inconvenient form of .sh archive.
 
       It is also available as ``data(pollen, package="animate")``.

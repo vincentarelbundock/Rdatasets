@@ -1,0 +1,71 @@
+<!DOCTYPE html><html><head><title>R: New Mexico Brain Cancer Cases Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>BrainCancerCases_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>New Mexico Brain Cancer Cases Data</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, BrainCancerCases_df, is a data frame containing data on brain cancer cases in New Mexico.
+It includes information about the county, number of cases, year of diagnosis, age group, and sex of the patients.
+The dataset consists of 1175 observations with 5 variables.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(BrainCancerCases_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1175 observations and 5 variables:
+</p>
+
+<dl>
+<dt>county</dt><dd><p>County of diagnosis (Factor with 31 levels).</p>
+</dd>
+<dt>cases</dt><dd><p>Number of cases (integer).</p>
+</dd>
+<dt>year</dt><dd><p>Year of diagnosis (integer).</p>
+</dd>
+<dt>agegroup</dt><dd><p>Age group of patients (integer).</p>
+</dd>
+<dt>sex</dt><dd><p>Sex of the patient (integer).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'BrainCancerCases_df' to avoid confusion with other datasets in the R ecosystem.
+This naming convention helps distinguish this dataset as part of the OncoDataSets package and assists users in identifying
+its specific characteristics. The suffix '_df' indicates that the dataset is a data frame. The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the rsatscan package, distributed with SaTScan software: https://www.satscan.org
+</p>
+
+</main>
+
+</div>
+</body></html>

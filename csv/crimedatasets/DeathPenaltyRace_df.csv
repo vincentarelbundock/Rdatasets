@@ -1,0 +1,13 @@
+rownames,Aggravation,Victim,Death,NoDeath
+1,1,White,2,60
+2,1,Black,1,181
+3,2,White,2,15
+4,2,Black,1,21
+5,3,White,6,7
+6,3,Black,2,9
+7,4,White,9,3
+8,4,Black,2,4
+9,5,White,9,0
+10,5,Black,4,3
+11,6,White,17,0
+12,6,Black,4,0
