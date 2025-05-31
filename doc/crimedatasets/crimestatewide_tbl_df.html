@@ -1,0 +1,81 @@
+<!DOCTYPE html><html><head><title>R: Annual Crime Dataset of US Counties</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>crimestatewide_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Annual Crime Dataset of US Counties</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains annual crime-related statistics for US counties, including violent crime rates,
+murder rates, and socio-economic indicators such as poverty, education, and unemployment. It provides
+a comprehensive overview of crime and its potential correlates across the United States.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(crimestatewide_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 51 observations and 9 variables:
+</p>
+
+<dl>
+<dt>State</dt><dd><p>State name (character).</p>
+</dd>
+<dt>violent crime rate</dt><dd><p>Violent crime rate per 100,000 people (numeric).</p>
+</dd>
+<dt>murder rate</dt><dd><p>Murder rate per 100,000 people (numeric).</p>
+</dd>
+<dt>poverty</dt><dd><p>Poverty rate as a percentage (numeric).</p>
+</dd>
+<dt>high school</dt><dd><p>Percentage of high school graduates (numeric).</p>
+</dd>
+<dt>college</dt><dd><p>Percentage of college graduates (numeric).</p>
+</dd>
+<dt>single parent</dt><dd><p>Percentage of single-parent households (numeric).</p>
+</dd>
+<dt>unemployed</dt><dd><p>Unemployment rate as a percentage (numeric).</p>
+</dd>
+<dt>metropolitan</dt><dd><p>Percentage of the population living in metropolitan areas (numeric).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been changed to 'crimestatewide_tbl_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+crimedatasets package and assists users in identifying its specific characteristics. The suffix
+'tbl_df' indicates that the dataset is stored as a tibble, a modern and more readable alternative
+to traditional data frames in R. The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Annual crime data of US counties.
+</p>
+
+</main>
+
+</div>
+</body></html>

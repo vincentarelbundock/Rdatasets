@@ -1,0 +1,76 @@
+<!DOCTYPE html><html><head><title>R: Incidental or Screen-Detected Lung Nodules</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>LungNodulesDetected_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Incidental or Screen-Detected Lung Nodules</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, LungNodulesDetected_df, is a data frame containing data on incidental or screen-detected lung nodules. The data includes information such as patient demographics, smoking status, nodule characteristics, and whether the nodule is malignant. The dataset was collected from patients with pulmonary nodules of up to 15mm detected on routine CT chest scans, aged 18 years or older, from 3 academic centers in the UK.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(LungNodulesDetected_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 999 observations and 8 variables:
+</p>
+
+<dl>
+<dt>sex</dt><dd><p>Gender of the patient, represented as a factor with 2 levels (Male, Female).</p>
+</dd>
+<dt>age</dt><dd><p>Age of the patient (numeric).</p>
+</dd>
+<dt>num.annotated</dt><dd><p>Number of annotated nodules (numeric).</p>
+</dd>
+<dt>location</dt><dd><p>Location of the nodule, represented as a factor with 6 levels.</p>
+</dd>
+<dt>spiculate</dt><dd><p>Whether the nodule is spiculated, represented as a factor with 2 levels (Yes, No).</p>
+</dd>
+<dt>smoke.status</dt><dd><p>Smoking status of the patient, represented as a factor with 5 levels.</p>
+</dd>
+<dt>diameter</dt><dd><p>Diameter of the nodule (numeric).</p>
+</dd>
+<dt>malignant</dt><dd><p>Malignancy status of the nodule (numeric).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'LungNodulesDetected_df' to avoid confusion with other datasets in the R ecosystem.
+This naming convention helps distinguish this dataset as part of the OncoDataSets package and assists users in identifying
+its specific characteristics. The suffix '_df' indicates that the dataset is a data frame. The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the R4HCR package.
+The dataset was collected from patients with pulmonary nodules detected on CT chest scans, aged 18 years or older, from 3 academic centers in the UK.
+</p>
+
+</main>
+
+</div>
+</body></html>

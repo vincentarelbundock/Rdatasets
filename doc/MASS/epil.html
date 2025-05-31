@@ -100,10 +100,8 @@ Some covariance models for longitudinal count data with over-dispersion.
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>## IGNORE_RDIFF_BEGIN
-summary(glm(y ~ lbase*trt + lage + V4, family = poisson,
+<pre><code class='language-R'>summary(glm(y ~ lbase*trt + lage + V4, family = poisson,
             data = epil), correlation = FALSE)
-## IGNORE_RDIFF_END
 epil2 &lt;- epil[epil$period == 1, ]
 epil2["period"] &lt;- rep(0, 59); epil2["y"] &lt;- epil2["base"]
 epil["time"] &lt;- 1; epil2["time"] &lt;- 4

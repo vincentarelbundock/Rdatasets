@@ -48,11 +48,11 @@ as an early example of data to which multivariate methods might be applied.
 </p>
 
 <dl>
-<dt><code>Armada</code></dt><dd><p>designation of the fleet, a factor with levels <code>Andalucia</code> <code>Castilla</code> <code>Galeras</code> <code>Guipuscua</code> <code>Napoles</code> <code>Pataches</code> <code>Portugal</code> <code>Uantiscas</code> <code>Vizca</code> <code>Vrcas</code></p>
+<dt><code>Fleet</code></dt><dd><p>designation of the origin of the fleet, a factor with levels <code>Andalucia</code>, <code>Castilla</code>, <code>Galeras</code>, <code>Guipuscua</code>, <code>Napoles</code>, <code>Pataches</code>, <code>Portugal</code>, <code>Uantiscas</code>, <code>Vizca</code>, <code>Vrcas</code></p>
 </dd>
 <dt><code>ships</code></dt><dd><p>number of ships, a numeric vector</p>
 </dd>
-<dt><code>tons</code></dt><dd><p>total tons, a numeric vector</p>
+<dt><code>tons</code></dt><dd><p>total tons of the ships, a numeric vector</p>
 </dd>
 <dt><code>soldiers</code></dt><dd><p>number of soldiers, a numeric vector</p>
 </dd>
@@ -60,11 +60,11 @@ as an early example of data to which multivariate methods might be applied.
 </dd>
 <dt><code>men</code></dt><dd><p>total of soldiers plus sailors, a numeric vector</p>
 </dd>
-<dt><code>artillery</code></dt><dd><p>a numeric vector</p>
+<dt><code>artillery</code></dt><dd><p>number of canons, a numeric vector</p>
 </dd>
-<dt><code>balls</code></dt><dd><p>a numeric vector</p>
+<dt><code>balls</code></dt><dd><p>number of canonballs, a numeric vector</p>
 </dd>
-<dt><code>gunpowder</code></dt><dd><p>a numeric vector</p>
+<dt><code>gunpowder</code></dt><dd><p>amount of gunpowder loaded, a numeric vector</p>
 </dd>
 <dt><code>lead</code></dt><dd><p>a numeric vector</p>
 </dd>
@@ -76,18 +76,22 @@ as an early example of data to which multivariate methods might be applied.
 
 <h3>Details</h3>
 
-<p>Note that <code>men = soldiers + sailors</code>
+<p>Note that <code>men = soldiers + sailors</code>, so this variable is redundant in a multivariate analysis.
+</p>
+<p>A complete list of the ships of the Spanish Armada, their types, armaments and fate can be found at
+<a href="https://en.wikipedia.org/wiki/List_of_ships_of_the_Spanish_Armada">https://en.wikipedia.org/wiki/List_of_ships_of_the_Spanish_Armada</a>. An enterprising
+data historian might attempt to square the data given there with this table.
+</p>
+<p>The fleet of Portugal, under the command of Alonso Pérez de Guzmán, 7th Duke of Medina Sidonia
+was largely in control of the attempted invasion of England.
 </p>
 
 
 <h3>Source</h3>
 
-<p>de Falguerolles, A. (2008)
-L'analyse des donnees; before and around.
-<em>Journal Electronique  d'Histoire des
-Probabilites et de la Statistique</em>,
-4 (2),
-http://www.jehps.net/Decembre2008/Falguerolles.pdf
+<p>de Falguerolles, A. (2008). L'analyse des donnees; before and around.
+<em>Journal Electronique  d'Histoire des Probabilites et de la Statistique</em>,
+<b>4</b> (2), Link: https://www.jehps.net/Decembre2008/Falguerolles.pdf
 </p>
 
 
@@ -104,12 +108,19 @@ de Portugal. Lisbon, 1588.
 <pre><code class='language-R'>data(Armada)
 # delete character and redundant variable
 armada &lt;- Armada[,-c(1,6)]
+# use fleet as labels
+fleet &lt;- Armada[, 1]
 
+# do a PCA of the standardized data
 armada.pca &lt;- prcomp(armada, scale.=TRUE)
 summary(armada.pca)
 
+# screeplot
 plot(armada.pca, type="lines", pch=16, cex=2)
-biplot(armada.pca)
+
+biplot(armada.pca, xlabs = fleet,
+  xlab = "PC1 (Fleet size)",
+  ylab = "PC2 (Fleet configuration)")
 </code></pre>
 
 </main>

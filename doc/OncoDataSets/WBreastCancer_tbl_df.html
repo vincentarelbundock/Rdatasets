@@ -1,0 +1,80 @@
+<!DOCTYPE html><html><head><title>R: Women with Breast Cancer Study</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>WBreastCancer_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Women with Breast Cancer Study</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, WBreastCancer_tbl_df, is a tibble containing data from a study among
+women with breast cancer. The dataset includes clinical and demographic variables
+for 1207 patients, providing valuable insights for breast cancer research and analysis.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(WBreastCancer_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 1207 observations and 9 variables:
+</p>
+
+<dl>
+<dt>id</dt><dd><p>Unique identifier for each patient (numeric).</p>
+</dd>
+<dt>time</dt><dd><p>Time to the event or censoring (numeric).</p>
+</dd>
+<dt>status</dt><dd><p>Event status: 1 if the event occurred, 0 if censored (numeric).</p>
+</dd>
+<dt>er</dt><dd><p>Estrogen receptor status (numeric).</p>
+</dd>
+<dt>age</dt><dd><p>Age of the patient at the time of diagnosis (numeric).</p>
+</dd>
+<dt>histgrad</dt><dd><p>Histological grade of the tumor (numeric).</p>
+</dd>
+<dt>ln_yesno</dt><dd><p>Presence of lymph nodes: 1 if positive, 0 if negative (numeric).</p>
+</dd>
+<dt>pathsd</dt><dd><p>Pathological stage of the disease (numeric).</p>
+</dd>
+<dt>pr</dt><dd><p>Progesterone receptor status (numeric).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'WBreastCancer_tbl_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+OncoDataSets package and assists users in identifying its specific characteristics.
+The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the psfmi package.
+</p>
+
+</main>
+
+</div>
+</body></html>

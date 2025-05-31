@@ -1,0 +1,93 @@
+<!DOCTYPE html><html><head><title>R: Schooldata Sites</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>schoolsites</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Schooldata Sites</h2>
+
+<h3>Description</h3>
+
+<p>Descriptors for the sites of the <code>schooldata</code> dataset, from Charnes et al. (1981).
+The study was designed to compare schools using Program Follow Through (PFT)
+management methods of taking actions to achieve goals with those of
+Non Follow Through (NFT). Observations <code>1:49</code> came from PFT sites
+and <code>50:70</code> from NFT sites.
+This dataset gives other descriptors for the sites, from their Exhibit C.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("schoolsites")
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 70 observations on the following 7 variables.
+</p>
+
+<dl>
+<dt><code>site</code></dt><dd><p>site number, a numeric vector</p>
+</dd>
+<dt><code>type</code></dt><dd><p>program type, a factor with levels <code>PFT</code> (&quot;Program Follow Through&quot;) and <code>NFT</code> (&quot;Non Follow Through&quot;)</p>
+</dd>
+<dt><code>model</code></dt><dd><p>education style model, a factor with levels <code>BA</code>, <code>Bank Street</code>, 
+<code>California Process</code>, <code>Cognitive Curriculum</code>, <code>DIM</code>, <code>EDC</code>, <code>Home-School</code>,
+<code>ILM</code>, <code>Parent Education</code>, <code>Responsive Education</code>, <code>SEDL</code>, <code>TEEM</code></p>
+</dd>
+<dt><code>site_name</code></dt><dd><p>location of site, a character vector</p>
+</dd>
+<dt><code>region</code></dt><dd><p>US region, a factor with levels <code>NC</code>, <code>NE</code>, <code>S</code>, <code>W</code></p>
+</dd>
+<dt><code>city_size</code></dt><dd><p>city size, an ordered factor with levels <code>Rural</code> &lt; <code>Small</code> &lt; <code>Medium</code> &lt; <code>Large</code></p>
+</dd>
+<dt><code>student_pop</code></dt><dd><p>size of the student population, a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>A. Charnes, W.W. Cooper and E. Rhodes (1981). Evaluating Program and
+Managerial Efficiency: An Application of Data Envelopment Analysis to
+Program Follow Through. <em>Management Science</em>, <b>27</b>, 668-697, Exhibit C.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>schooldata</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(schoolsites)
+str(schoolsites)
+schools &lt;- cbind(schooldata, schoolsites)
+schools.mod &lt;- lm(cbind(reading, mathematics, selfesteem) ~
+                    education + occupation + visit + counseling + teacher +
+                    type + region, data = schools)
+car::Anova(schools.mod)
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html><html><head><title>R: Racial Prejudice Scores of High School Students</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Prejudic_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Racial Prejudice Scores of High School Students</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, Prejudic_tbl_df, is a tibble containing scores measuring racial prejudice
+among a sample of 25 high school students. The dataset provides insights into attitudes
+related to racial prejudice within this demographic.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Prejudic_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 25 observations and 1 variable:
+</p>
+
+<dl>
+<dt>prejud</dt><dd><p>Racial prejudice score (integer).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'Prejudic_tbl_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+educationR package and assists users in identifying its specific characteristics.
+The suffix 'tbl_df' indicates that the dataset is a tibble. The original content has not been modified
+in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>The dataset was taken from the BSDA package.
+</p>
+
+</main>
+
+</div>
+</body></html>

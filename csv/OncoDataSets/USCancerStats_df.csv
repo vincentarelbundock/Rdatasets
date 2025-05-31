@@ -1,0 +1,21 @@
+rownames,site,survival,mortality,incidence
+1,Prostate,50,10,190
+2,Melanoma,39,161,453
+3,Testis,39,-73,106
+4,Bladder,29,-35,51
+5,Kidney,27,37,126
+6,Breast,26,-8,55
+7,Colon,21,-21,12
+8,Rectum,20,-67,-27
+9,Ovary,20,-2,3
+10,Thyroid,15,-48,142
+11,Larynx,14,-14,38
+12,Uterus,14,-67,0
+13,Cervix,12,-76,-79
+14,Oral Cavity,10,-37,-38
+15,Esophagus,9,22,-8
+16,Brain,9,45,68
+17,Lung,8,259,249
+18,Stomach,7,-80,-78
+19,Liver,5,34,140
+20,Pancreas,3,16,9

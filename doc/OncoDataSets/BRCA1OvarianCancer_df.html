@@ -1,0 +1,65 @@
+<!DOCTYPE html><html><head><title>R: Cumulative Risk of Women Ovarian Cancer BRCA1 Mutation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>BRCA1OvarianCancer_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Cumulative Risk of  Women Ovarian Cancer BRCA1 Mutation</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, BRCA1OvarianCancer_df, is a data frame containing data on the cumulative risk of ovarian cancer in women with the BRCA1 mutation as a function of their age.
+The dataset includes 63 observations, with each entry representing the cumulative risk at a specific age (in years).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(BRCA1OvarianCancer_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 63 observations and 2 variables:
+</p>
+
+<dl>
+<dt>age</dt><dd><p>Age of the individual in years (numeric).</p>
+</dd>
+<dt>cumRisk</dt><dd><p>Cumulative risk of ovarian cancer at that age (numeric).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'BRCA1OvarianCancer_df' to avoid confusion with other datasets in the R ecosystem.
+This naming convention helps distinguish this dataset as part of the OncoDataSets package and assists users in identifying
+its specific characteristics. The suffix '_df' indicates that the dataset is a data frame. The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the riskyr package.
+Based on Figure 2 (p. 2408) of Kuchenbaecker, K. B., Hopper, J. L., Barnes, D. R., Phillips, K. A., Mooij, T. M., Roos-Blom, M. J., ... &amp; BRCA1 and BRCA2 Cohort Consortium (2017). Risks of breast, ovarian, and contralateral breast cancer for BRCA1 and BRCA2 mutation carriers. JAMA, 317 (23), 2402-2416. doi: 10.1001/jama.2017.7112
+</p>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html><html><head><title>R: Student's 3000 Criminals Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>crimtab_table</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Student's 3000 Criminals Data</h2>
+
+<h3>Description</h3>
+
+<p>Data of 3000 male criminals over 20 years old undergoing their sentences
+in the chief prisons of England and Wales.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(crimtab_table)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A table with 42 rows and 22 columns:
+</p>
+
+<dl>
+<dt>Var1</dt><dd><p>Factor or categorical variable representing different crime categories.</p>
+</dd>
+<dt>Var2</dt><dd><p>A second factor or categorical variable, potentially representing different
+classifications such as location, time, or crime severity.</p>
+</dd>
+<dt>Freq</dt><dd><p>Frequency of occurrences within each combination of categories, representing
+the number of reported incidents for each combination.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been changed to 'crimtab_table' to avoid confusion with other data sets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+crimedatasets package and assists users in identifying its specific characteristics.
+The suffix 'table' indicates that the dataset is stored as a contingency table, rather than
+a traditional data frame. The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Public crime data.
+</p>
+
+</main>
+
+</div>
+</body></html>

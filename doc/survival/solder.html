@@ -61,12 +61,14 @@ solder mask (A1.5, A3, A6, B3, B6)</p>
 
 <h3>Details</h3>
 
+<p>After the first 1/2 of the experiment the A6 mask, which was doing the
+worst, was abandoned and the freed up space used for further replicates
+of A3. This leads to an unbalanced experiment with some missing A6 combinations.
+</p>
 <p>This data set is used as a detailed example in chapter 1 of Chambers and
-Hastie.
-Observations 1-360 and 541-900 form a balanced design of 3*2*10*3= 180
-observations for four of the pad types (A1.5, A3, B3, B6),
-while rows 361-540 match 3 of the 6 Solder*Opening combinations with
-pad type A6 and the other 3 with pad type A3.
+Hastie.  However, they chose to use only a subset of the data, i.e., 
+observations 1-360 and 541-900 form a balanced design of 3*2*10*3= 180
+observations for each of four mask types (A1.5, A3, B3, B6).
 </p>
 
 
@@ -78,7 +80,16 @@ pad type A6 and the other 3 with pad type A3.
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'># The balanced subset used by Chambers and Hastie
+<pre><code class='language-R'>fit1 &lt;- glm(skips ~ Opening * Solder, poisson, solder,
+            subset= (Mask != "A6"))
+anova(fit1)  # The interaction is important
+dummy &lt;- expand.grid(Opening= c("S", "M", "L"), Solder=c("Thin", "Thick"))
+yhat &lt;- matrix(predict(fit1, newdata=dummy), ncol=2,
+            dimnames=list(Opening= c("S", "M", "L"), Solder=c("Thin", "Thick")))
+yhat &lt;- cbind(yhat, difference= yhat[,1]- yhat[,2])
+round(yhat, 1) # thin and thick have  different patterns
+
+# The balanced subset used by Chambers and Hastie
 #   contains the first 180 of each mask and deletes mask A6. 
 index &lt;- 1 + (1:nrow(solder)) - match(solder$Mask, solder$Mask)
 solder.balance &lt;- droplevels(subset(solder, Mask != "A6" &amp; index &lt;= 180))

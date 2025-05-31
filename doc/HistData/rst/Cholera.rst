@@ -114,7 +114,7 @@
       Registrar-General (1852). *Report on the Mortality of Cholera in
       England 1848-49*, W. Clowes and Sons, for Her Majesty's Stationary
       Office. Written by William Farr.
-      https://ia800309.us.archive.org/22/items/b24751297/b24751297.pdf
+      https://ia600208.us.archive.org/11/items/b24751297/b24751297.pdf
       The relevant tables are at pages clii – clvii.
 
       .. rubric:: See Also

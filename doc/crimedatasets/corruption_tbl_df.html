@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><title>R: China's Corruption Investigations</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>corruption_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>China's Corruption Investigations</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains information on nearly 20,000 officials who were investigated during Xi Jinping's
+anti-corruption campaign. It provides data on the province, prefecture, and county where the investigations
+occurred, as well as unique identifiers for each administrative level.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(corruption_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 10 observations and 6 variables:
+</p>
+
+<dl>
+<dt>province</dt><dd><p>2-digit province number (numeric).</p>
+</dd>
+<dt>prefecture</dt><dd><p>Prefecture name in Chinese (character).</p>
+</dd>
+<dt>county</dt><dd><p>County name in Chinese (character).</p>
+</dd>
+<dt>province_id</dt><dd><p>6-digit province identifier (numeric).</p>
+</dd>
+<dt>prefecture_id</dt><dd><p>6-digit prefecture identifier (numeric).</p>
+</dd>
+<dt>county_id</dt><dd><p>6-digit county identifier (numeric).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been changed to 'corruption_tbl_df' to avoid confusion with other data sets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the crimedatasets package
+and assists users in identifying its specific characteristics. The suffix 'tbl_df' indicates that the dataset
+is a tibble in R. The original content has not been modified in any way
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data from China's anti-corruption campaign investigations.
+</p>
+
+</main>
+
+</div>
+</body></html>

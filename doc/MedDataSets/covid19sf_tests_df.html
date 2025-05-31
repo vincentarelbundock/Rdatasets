@@ -1,0 +1,75 @@
+<!DOCTYPE html><html><head><title>R: San Francisco COVID-19 Tests</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>covid19sf_tests_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>San Francisco COVID-19 Tests</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'covid19sf_tests_df' to avoid confusion with other datasets from
+packages in the R ecosystem and to follow the naming conventions of the 'MedDataSets' package.
+The suffix '_df' indicates that this dataset is a data frame, helping to distinguish it from
+other datasets within the package and from those in the broader R ecosystem. The original content
+of the dataset has not been modified in any way.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(covid19sf_tests_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 652 observations and 6 variables:
+</p>
+
+<dl>
+<dt>specimen_collection_date</dt><dd><p>The date when the specimen was collected (Date).</p>
+</dd>
+<dt>tests</dt><dd><p>The total number of tests conducted (integer).</p>
+</dd>
+<dt>pos</dt><dd><p>The number of positive test results (integer).</p>
+</dd>
+<dt>pct</dt><dd><p>The percentage of positive tests (numeric).</p>
+</dd>
+<dt>neg</dt><dd><p>The number of negative test results (integer).</p>
+</dd>
+<dt>indeterminate</dt><dd><p>The number of indeterminate test results (integer).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This dataset contains information on COVID-19 tests conducted in San Francisco, detailing the number
+of tests performed, the number of positive and negative results, as well as other related metrics.
+It provides insights into the testing patterns and results during the COVID-19 pandemic.
+</p>
+
+
+<h3>Source</h3>
+
+<p>San Francisco Department of Public Health COVID-19 testing data.
+</p>
+
+</main>
+
+</div>
+</body></html>

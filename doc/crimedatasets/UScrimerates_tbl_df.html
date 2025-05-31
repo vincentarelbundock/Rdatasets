@@ -1,0 +1,85 @@
+<!DOCTYPE html><html><head><title>R: US Crime Rates (1960–2019)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>UScrimerates_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>US Crime Rates (1960–2019)</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains national data on the number of crimes committed in the United States between 1960 and 2019.
+It provides annual statistics on total crimes, violent crimes, property crimes, and their subcategories.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(UScrimerates_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 60 rows and 12 variables:
+</p>
+
+<dl>
+<dt>year</dt><dd><p>Year of the recorded data (numeric).</p>
+</dd>
+<dt>population</dt><dd><p>Total US population (numeric).</p>
+</dd>
+<dt>total</dt><dd><p>Total number of crimes (numeric).</p>
+</dd>
+<dt>violent</dt><dd><p>Total number of violent crimes (numeric).</p>
+</dd>
+<dt>property</dt><dd><p>Total number of property crimes (numeric).</p>
+</dd>
+<dt>murder</dt><dd><p>Number of murders (numeric).</p>
+</dd>
+<dt>forcible_rape</dt><dd><p>Number of reported cases of forcible rape (numeric).</p>
+</dd>
+<dt>robbery</dt><dd><p>Number of robberies (numeric).</p>
+</dd>
+<dt>aggravated_assault</dt><dd><p>Number of aggravated assaults (numeric).</p>
+</dd>
+<dt>burglary</dt><dd><p>Number of burglaries (numeric).</p>
+</dd>
+<dt>larceny_theft</dt><dd><p>Number of larceny-theft crimes (numeric).</p>
+</dd>
+<dt>vehicle_theft</dt><dd><p>Number of motor vehicle thefts (numeric).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been changed to 'UScrimerates_tbl_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+crimedatasets package and assists users in identifying its specific characteristics. The suffix 'tbl_df'
+indicates that the dataset is stored as a tibble. The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>National crime data for the United States (1960–2019).
+</p>
+
+</main>
+
+</div>
+</body></html>

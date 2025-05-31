@@ -97,7 +97,7 @@
 
       -  ``"CKMB"``: the MB fraction of creatine kinase.
 
-      -  ``"BNP"``: B-type natriuetic peptide.
+      -  ``"BNP"``: B-type natriuretic peptide.
 
       -  ``"MYO"``: myohemoglobin.
 

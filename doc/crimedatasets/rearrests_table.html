@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head><title>R: Rearrests of Juvenile Felons</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>rearrests_table</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Rearrests of Juvenile Felons</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains information on rearrests of juvenile felons based on the type of court in which they were tried.
+The data originates from a sample of juveniles convicted of felony in Florida in 1987, with matched pairs formed using
+criteria such as age and the number of previous offenses. The dataset provides counts of rearrests for juveniles, categorized by
+adult and juvenile courts. This data is useful for analyzing rearrest rates and judicial outcomes for juveniles convicted of felonies.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(rearrests_table)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A table with 2 rows and 2 columns:
+</p>
+
+<dl>
+<dt>Adult court</dt><dd><p>Number of rearrests (numeric) and no rearrests (numeric) in adult court.</p>
+</dd>
+<dt>Juvenile court</dt><dd><p>Number of rearrests (numeric) and no rearrests (numeric) in juvenile court.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been changed to 'rearrests_table' to avoid confusion with other datasets in the R ecosystem.
+This naming convention helps distinguish this dataset as part of the crimedatasets package and assists users in identifying its specific characteristics.
+The suffix 'table' indicates that the dataset is a contingency table in R, representing the counts of rearrests by court type.
+The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Agresti, 1996. Data on rearrests of juvenile felons in Florida, 1987.
+</p>
+
+</main>
+
+</div>
+</body></html>

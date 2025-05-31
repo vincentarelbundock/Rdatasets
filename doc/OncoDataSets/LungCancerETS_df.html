@@ -1,0 +1,87 @@
+<!DOCTYPE html><html><head><title>R: Passive Smoking's Lung Cancer Threat in Women</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>LungCancerETS_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Passive Smoking's Lung Cancer Threat in Women</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, LungCancerETS_df, is a data frame containing results from 37 studies on the risk of lung cancer in women
+exposed to environmental tobacco smoke (ETS) from their smoking spouse. The dataset includes data from both cohort and
+case-control studies, focusing on women who are lifelong nonsmokers but have been exposed to ETS.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(LungCancerETS_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 37 observations and 11 variables:
+</p>
+
+<dl>
+<dt>study</dt><dd><p>Study identifier (integer).</p>
+</dd>
+<dt>author</dt><dd><p>Author(s) of the study (character).</p>
+</dd>
+<dt>year</dt><dd><p>Year of publication (integer).</p>
+</dd>
+<dt>country</dt><dd><p>Country where the study was conducted (character).</p>
+</dd>
+<dt>design</dt><dd><p>Design of the study (e.g., cohort or case-control) (character).</p>
+</dd>
+<dt>cases</dt><dd><p>Number of cases in the study (integer).</p>
+</dd>
+<dt>or</dt><dd><p>Odds ratio estimate (numeric).</p>
+</dd>
+<dt>or.lb</dt><dd><p>Lower bound of the odds ratio confidence interval (numeric).</p>
+</dd>
+<dt>or.ub</dt><dd><p>Upper bound of the odds ratio confidence interval (numeric).</p>
+</dd>
+<dt>yi</dt><dd><p>Effect size estimate (numeric).</p>
+</dd>
+<dt>vi</dt><dd><p>Variance of the effect size estimate (numeric).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'LungCancerETS_df' to avoid confusion with other datasets in the R ecosystem.
+This naming convention helps distinguish this dataset as part of the OncoDataSets package and assists users in identifying
+its specific characteristics. The suffix '_df' indicates that the dataset is a data frame. The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the metadat package.
+Hackshaw, A. K., Law, M. R., &amp; Wald, N. J. (1997). The accumulated evidence on lung cancer and environmental tobacco smoke.
+British Medical Journal, 315(7114), 980-988. https://doi.org/10.1136/bmj.315.7114.980
+Hackshaw, A. K. (1998). Lung cancer and passive smoking. Statistical Methods in Medical Research, 7(2), 119-136.
+https://doi.org/10.1177/096228029800700203
+</p>
+
+</main>
+
+</div>
+</body></html>

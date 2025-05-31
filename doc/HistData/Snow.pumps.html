@@ -174,7 +174,7 @@ cholera, 1854.
 </p>
 <p>Snow, J. (1885). <em>On the Mode of Communication of Cholera</em>.
 London: John Churchill.
-<a href="https://www.ph.ucla.edu/epi/snow/snowbook.html">https://www.ph.ucla.edu/epi/snow/snowbook.html</a>.
+Possibly at https://resource.nlm.nih.gov/0050707.
 </p>
 <p>Tufte, E. (1997). <em>Visual Explanations</em>. Cheshire, CT: Graphics Press.
 </p>
@@ -182,7 +182,9 @@ London: John Churchill.
 
 <h3>See Also</h3>
 
-<p><code>SnowMap</code>
+<p><code>SnowMap</code> for code to draw Snow's map;
+<code>Cholera</code> for William Farr's cholera data. 
+The <span class="pkg">cholera</span> package contains more analytical methods for understanding Snow's cholera data.
 </p>
 
 
@@ -197,8 +199,10 @@ data(Snow.deaths)
 ## Plot deaths over time
 require(lubridate)
 clr &lt;- ifelse(Snow.dates$date &lt; mdy("09/08/1854"), "red", "darkgreen")
-plot(deaths ~ date, data=Snow.dates, type="h", lwd=2, col=clr)
-points(deaths ~ date, data=Snow.dates, cex=0.5, pch=16, col=clr)
+plot(deaths ~ date, data=Snow.dates, 
+     type="h", lwd=2, col=clr)
+points(deaths ~ date, data=Snow.dates, 
+       cex=0.5, pch=16, col=clr)
 text( mdy("09/08/1854"), 40, "Pump handle\nremoved Sept. 8", pos=4)
 
 

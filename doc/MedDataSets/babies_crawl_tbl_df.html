@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><title>R: Crawling Age</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>babies_crawl_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Crawling Age</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'babies_crawl_tbl_df' to avoid confusion with other datasets from
+packages in the R ecosystem and to follow the naming conventions of the 'MedDataSets' package.
+The suffix '_tbl_df' indicates that this dataset is a tibble, helping to distinguish it from
+other datasets within the package and from those in the broader R ecosystem. The original content
+of the dataset has not been modified in any way.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(babies_crawl_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 12 observations and 5 variables:
+</p>
+
+<dl>
+<dt>birth_month</dt><dd><p>A factor indicating the month of birth (January to December).</p>
+</dd>
+<dt>avg_crawling_age</dt><dd><p>A numeric value representing the average crawling age (in months).</p>
+</dd>
+<dt>sd</dt><dd><p>A numeric value indicating the standard deviation of crawling age.</p>
+</dd>
+<dt>n</dt><dd><p>An integer representing the number of infants included in the calculation.</p>
+</dd>
+<dt>temperature</dt><dd><p>An integer indicating the average temperature (in degrees Celsius) during the month.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This dataset contains information on the average crawling age of infants based on the month of birth,
+as well as associated factors such as temperature.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data collected on the crawling age of infants based on birth month and temperature.
+</p>
+
+</main>
+
+</div>
+</body></html>

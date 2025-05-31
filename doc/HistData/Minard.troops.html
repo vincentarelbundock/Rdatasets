@@ -96,7 +96,8 @@ at various places along the march of retreat from Moscow.
 
 <h3>Source</h3>
 
-<p><a href="https://www.cs.uic.edu/~wilkinson/TheGrammarOfGraphics/minard.txt">https://www.cs.uic.edu/~wilkinson/TheGrammarOfGraphics/minard.txt</a>
+<p>Originally given by Lee Wilkinson, in a text file associated with 
+<em>The Grammar of Graphics</em> (1990). Springer.
 </p>
 
 
@@ -117,7 +118,6 @@ Visions and Re-visions of Charles Joseph Minard,
 data(Minard.cities)
 data(Minard.temp)
 
-## Not run: 
 #' ## Load required packages
 require(ggplot2)
 require(scales)
@@ -125,7 +125,7 @@ require(gridExtra)
 
 #' ## plot path of troops, and another layer for city names
  plot_troops &lt;- ggplot(Minard.troops, aes(long, lat)) +
-		geom_path(aes(size = survivors, colour = direction, group = group),
+		geom_path(aes(linewidth = survivors, colour = direction, group = group),
                  lineend = "round", linejoin = "round")
  plot_cities &lt;- geom_text(aes(label = city), size = 4, data = Minard.cities)
  
@@ -144,7 +144,9 @@ plot_minard &lt;- plot_troops + plot_cities +
   ylab("Latitude") + 
   ggtitle("Napoleon's March on Moscow") +
   theme_bw() +
-  theme(legend.position=c(.8, .2), legend.box="horizontal")
+  theme(legend.position = "inside", 
+        legend.position.inside=c(.8, .2), 
+        legend.box="horizontal")
  
 #' ## plot temperature vs. longitude, with labels for dates
 plot_temp &lt;- ggplot(Minard.temp, aes(long, temp)) +
@@ -162,8 +164,6 @@ plot_temp &lt;- ggplot(Minard.temp, aes(long, temp)) +
 #' Combine the two plots into one
 grid.arrange(plot_minard, plot_temp, nrow=2, heights=c(3,1))
 
-
-## End(Not run)
 </code></pre>
 
 </main>

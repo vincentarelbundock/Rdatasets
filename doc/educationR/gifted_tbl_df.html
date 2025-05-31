@@ -1,0 +1,80 @@
+<!DOCTYPE html><html><head><title>R: Analytical Skills of Young Gifted Children</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gifted_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Analytical Skills of Young Gifted Children</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, gifted_tbl_df, is a tibble containing data on the analytical skills of 36 young gifted children,
+along with several factors that may influence these skills. The dataset includes measures such as parental IQ,
+early developmental milestones, and television habits.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(gifted_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 36 observations and 8 variables:
+</p>
+
+<dl>
+<dt>score</dt><dd><p>Analytical skills score of the child (integer).</p>
+</dd>
+<dt>fatheriq</dt><dd><p>IQ of the father (integer).</p>
+</dd>
+<dt>motheriq</dt><dd><p>IQ of the mother (integer).</p>
+</dd>
+<dt>speak</dt><dd><p>Age in months when the child first said &quot;mummy&quot; or &quot;daddy&quot; (integer).</p>
+</dd>
+<dt>count</dt><dd><p>Age in months when the child first counted to 10 successfully (integer).</p>
+</dd>
+<dt>read</dt><dd><p>Average number of hours per week the child's parents read to the child (numeric).</p>
+</dd>
+<dt>edutv</dt><dd><p>Average number of hours per week the child watched educational TV programs in the past three months (numeric).</p>
+</dd>
+<dt>cartoons</dt><dd><p>Average number of hours per week the child watched cartoons on TV in the past three months (numeric).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'gifted_tbl_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+educationR package and assists users in identifying its specific characteristics.
+The suffix 'tbl_df' indicates that the dataset is a tibble. The original content has not been modified
+in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>The dataset was taken from the openintro package.
+Graybill, F.A. &amp; Iyer, H.K., (1994) *Regression Analysis: Concepts and Applications*, Duxbury, p. 511-6.
+</p>
+
+</main>
+
+</div>
+</body></html>

@@ -60,8 +60,26 @@ tasks can predict performance on some measures of aptitude and achievement.
 
 <p>The variables <code>SAT</code>, <code>PPVT</code> and <code>Raven</code> are responses to be
 potentially explained by performance on the paired-associate (PA) learning
-task<code>n</code>, <code>s</code>, <code>ns</code>, <code>na</code>, and <code>ss</code>.
+tasks, <code>n</code>, <code>s</code>, <code>ns</code>, <code>na</code>, and <code>ss</code>,
+which differed in the syntactic and semantic relationship between the stimulus and response words in each pair.
 </p>
+<p>Timm (1975) does not give a source, but the most relevant studies are Rowher &amp; Ammons (1968) and Rohwer &amp; Levin (1971).
+The paired-associate tasks are described as:
+</p>
+
+<dl>
+<dt><code>n</code></dt><dd><p>(named): Simple paired-associate task where participants learn pairs of nouns with no additional context</p>
+</dd>
+<dt><code>s</code></dt><dd><p>(sentence): Participants learn pairs embedded within a sentence</p>
+</dd>
+<dt><code>ns</code></dt><dd><p>(named sentence): A combination where participants learn noun pairs with sentence context</p>
+</dd>
+<dt><code>na</code></dt><dd><p>(named action): Pairs are learned with an action relationship between them</p>
+</dd>
+<dt><code>ss</code></dt><dd><p>(sentence still): Similar to the sentence condition but with static presentation</p>
+</dd>
+</dl>
+
 
 
 <h3>Source</h3>
@@ -78,12 +96,39 @@ Education and Psychology</em>.  Wadsworth (Brooks/Cole), Examples 4.3 (p. 281),
 Models.  <em>Journal of Computational and Graphical Statistics</em>,
 <b>16</b>(2) 421&ndash;444.  <a href="http://datavis.ca/papers/jcgs-heplots.pdf">http://datavis.ca/papers/jcgs-heplots.pdf</a>
 </p>
+<p>Rohwer, W.D., Jr., &amp; Levin, J.R. (1968). Action, meaning and stimulus selection
+in paired-associate learning. <em>Journal of Verbal Learning and Verbal Behavior</em>, <b>7</b>: 137-141.
+</p>
+<p>Rohwer, W. D., Jr., &amp; Ammons, M. S. (1971). Elaboration training and paired-associate learning efficiency in children. 
+<em>Journal of Educational Psychology</em>, <b>62</b>(5), 376-383.
+</p>
 
 
 <h3>Examples</h3>
 
 <pre><code class='language-R'>
 str(Rohwer)
+
+# Plot responses against each predictor
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+
+yvars &lt;- c("SAT", "PPVT", "Raven" )
+xvars &lt;- c("n", "s", "ns", "na", "ss")
+Rohwer_long &lt;- Rohwer %&gt;%
+  pivot_longer(cols = all_of(xvars), names_to = "xvar", values_to = "x") |&gt;
+  pivot_longer(cols = all_of(yvars), names_to = "yvar", values_to = "y") |&gt;
+  mutate(xvar = factor(xvar, xvars), yvar = factor(yvar, yvars))
+
+ggplot(Rohwer_long, aes(x, y, color = SES, shape = SES, fill = SES)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, formula = y ~ x) +
+  stat_ellipse(geom = "polygon", level = 0.68, alpha = 0.1) +
+  facet_grid(yvar ~ xvar, scales = "free") +
+  labs(x = "predictor", y = "response") +
+  theme_bw(base_size = 14)
+
 
 ## ANCOVA, assuming equal slopes
 rohwer.mod &lt;- lm(cbind(SAT, PPVT, Raven) ~ SES + n + s + ns + na + ss, data=Rohwer)

@@ -1,0 +1,45 @@
+rownames,school,year,rate,status
+1,Illinois,1984-85,78,student
+2,Indiana,1984-85,53,student
+3,Iowa,1984-85,62,student
+4,Michigan,1984-85,81,student
+5,Michigan State,1984-85,66,student
+6,Minnesota,1984-85,34,student
+7,Northwestern,1984-85,87,student
+8,Ohio State,1984-85,51,student
+9,Penn State,1984-85,73,student
+10,Purdue,1984-85,68,student
+11,Wisconsin,1984-85,66,student
+12,Illinois,1993-94,75,student
+13,Indiana,1993-94,68,student
+14,Iowa,1993-94,62,student
+15,Michigan,1993-94,82,student
+16,Michigan State,1993-94,64,student
+17,Minnesota,1993-94,51,student
+18,Northwestern,1993-94,92,student
+19,Ohio State,1993-94,56,student
+20,Penn State,1993-94,80,student
+21,Purdue,1993-94,64,student
+22,Wisconsin,1993-94,74,student
+23,Illinois,1984-85,67,athlete
+24,Indiana,1984-85,58,athlete
+25,Iowa,1984-85,64,athlete
+26,Michigan,1984-85,66,athlete
+27,Michigan State,1984-85,64,athlete
+28,Minnesota,1984-85,44,athlete
+29,Northwestern,1984-85,81,athlete
+30,Ohio State,1984-85,55,athlete
+31,Penn State,1984-85,63,athlete
+32,Purdue,1984-85,60,athlete
+33,Wisconsin,1984-85,62,athlete
+34,Illinois,1993-94,65,athlete
+35,Indiana,1993-94,66,athlete
+36,Iowa,1993-94,71,athlete
+37,Michigan,1993-94,68,athlete
+38,Michigan State,1993-94,56,athlete
+39,Minnesota,1993-94,65,athlete
+40,Northwestern,1993-94,93,athlete
+41,Ohio State,1993-94,50,athlete
+42,Penn State,1993-94,78,athlete
+43,Purdue,1993-94,72,athlete
+44,Wisconsin,1993-94,55,athlete

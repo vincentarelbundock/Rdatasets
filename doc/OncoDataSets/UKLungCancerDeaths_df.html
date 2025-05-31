@@ -1,0 +1,68 @@
+<!DOCTYPE html><html><head><title>R: Lung Cancer Deaths among UK Physicians</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>UKLungCancerDeaths_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Lung Cancer Deaths among UK Physicians</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, UKLungCancerDeaths_df, is a data frame containing the number of deaths due to lung cancer among British male physicians. The data is categorized by years of smoking and cigarette consumption and was originally used in Frome (1983) to analyze rates using Poisson regression models.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(UKLungCancerDeaths_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 63 observations and 4 variables:
+</p>
+
+<dl>
+<dt>years.smok</dt><dd><p>Years of smoking categorized into 9 levels (factor).</p>
+</dd>
+<dt>cigarettes</dt><dd><p>Cigarette consumption categorized into 7 levels (factor).</p>
+</dd>
+<dt>Time</dt><dd><p>Exposure time in person-years (numeric).</p>
+</dd>
+<dt>y</dt><dd><p>Number of lung cancer deaths (numeric).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'UKLungCancerDeaths_df' to avoid confusion with other datasets in the R ecosystem.
+This naming convention helps distinguish this dataset as part of the OncoDataSets package and assists users in identifying
+its specific characteristics. The suffix '_df' indicates that the dataset is a data frame. The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the SMPracticals package.
+Based on the study by Frome, E. L. (1983): *The analysis of rates using Poisson regression models*. Biometrics, 39, 665–674.
+</p>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html><html><head><title>R: IBM Sales and Profit Data.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>ibm_mts</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>IBM Sales and Profit Data.</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'ibm_mts' to avoid confusion with other packages
+in the R ecosystem from which datasets have been sourced. The suffix 'mts' indicates that this dataset
+is a multivariate time series object. This naming convention helps distinguish this dataset as part of the
+'timeseriesdatasets' package and assists users in identifying its specific characteristics. The original content
+of the dataset has not been modified in any way.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(ibm_mts)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A time series object with 42 observations and 4 variables:
+</p>
+
+<dl>
+<dt>Sales</dt><dd><p>A numeric vector representing the monthly sales of IBM, measured in millions of dollars.</p>
+</dd>
+<dt>Profit</dt><dd><p>A numeric vector representing the monthly profit of IBM, measured in millions of dollars.</p>
+</dd>
+<dt>FSales</dt><dd><p>A numeric vector representing the forecasted sales of IBM.</p>
+</dd>
+<dt>FProfit</dt><dd><p>A numeric vector representing the forecasted profit of IBM.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Data provided by the IBM Company.
+</p>
+
+</main>
+
+</div>
+</body></html>

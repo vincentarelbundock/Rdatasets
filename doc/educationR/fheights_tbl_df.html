@@ -1,0 +1,65 @@
+<!DOCTYPE html><html><head><title>R: Female College Student Heights</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>fheights_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Female College Student Heights</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, fheights_tbl_df, is a tibble containing the heights of 24 female college students,
+measured in inches. The dataset provides insight into the physical characteristics of a specific
+demographic group.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(fheights_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 24 observations and 1 variable:
+</p>
+
+<dl>
+<dt>heights</dt><dd><p>Heights of female college students, measured in inches (integer).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'fheights_tbl_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+educationR package and assists users in identifying its specific characteristics.
+The suffix 'tbl_df' indicates that the dataset is a tibble. The original content has not been modified
+in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>The dataset was taken from the openintro package.
+</p>
+
+</main>
+
+</div>
+</body></html>

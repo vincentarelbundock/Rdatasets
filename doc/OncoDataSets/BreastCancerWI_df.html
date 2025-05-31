@@ -1,0 +1,126 @@
+<!DOCTYPE html><html><head><title>R: Breast Cancer Wisconsin (Diagnostic)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>BreastCancerWI_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Breast Cancer Wisconsin (Diagnostic)</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, BreastCancerWI_df, is a data frame containing diagnostic information
+for 569 patients with breast cancer. The data includes features computed from
+digitized images of fine needle aspirates (FNA) of breast masses, as well as
+a diagnosis label indicating whether the mass is malignant or benign.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(BreastCancerWI_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 569 observations and 31 variables:
+</p>
+
+<dl>
+<dt>diagnosis</dt><dd><p>Diagnosis of the breast mass: malignant or benign (factor with 2 levels).</p>
+</dd>
+<dt>radius_mean</dt><dd><p>Mean radius of the mass (numeric).</p>
+</dd>
+<dt>texture_mean</dt><dd><p>Mean texture of the mass (numeric).</p>
+</dd>
+<dt>perimeter_mean</dt><dd><p>Mean perimeter of the mass (numeric).</p>
+</dd>
+<dt>area_mean</dt><dd><p>Mean area of the mass (numeric).</p>
+</dd>
+<dt>smoothness_mean</dt><dd><p>Mean smoothness of the mass (numeric).</p>
+</dd>
+<dt>compactness_mean</dt><dd><p>Mean compactness of the mass (numeric).</p>
+</dd>
+<dt>concavity_mean</dt><dd><p>Mean concavity of the mass (numeric).</p>
+</dd>
+<dt>concave_points_mean</dt><dd><p>Mean number of concave points on the mass contour (numeric).</p>
+</dd>
+<dt>symmetry_mean</dt><dd><p>Mean symmetry of the mass (numeric).</p>
+</dd>
+<dt>fractal_dimension_mean</dt><dd><p>Mean fractal dimension of the mass (numeric).</p>
+</dd>
+<dt>radius_sd</dt><dd><p>Standard deviation of the radius (numeric).</p>
+</dd>
+<dt>texture_sd</dt><dd><p>Standard deviation of the texture (numeric).</p>
+</dd>
+<dt>perimeter_sd</dt><dd><p>Standard deviation of the perimeter (numeric).</p>
+</dd>
+<dt>area_sd</dt><dd><p>Standard deviation of the area (numeric).</p>
+</dd>
+<dt>smoothness_sd</dt><dd><p>Standard deviation of the smoothness (numeric).</p>
+</dd>
+<dt>compactness_sd</dt><dd><p>Standard deviation of the compactness (numeric).</p>
+</dd>
+<dt>concavity_sd</dt><dd><p>Standard deviation of the concavity (numeric).</p>
+</dd>
+<dt>concave_points_sd</dt><dd><p>Standard deviation of the number of concave points (numeric).</p>
+</dd>
+<dt>symmetry_sd</dt><dd><p>Standard deviation of the symmetry (numeric).</p>
+</dd>
+<dt>fractal_dimension_sd</dt><dd><p>Standard deviation of the fractal dimension (numeric).</p>
+</dd>
+<dt>radius_peak</dt><dd><p>Worst (peak) value of the radius (numeric).</p>
+</dd>
+<dt>texture_peak</dt><dd><p>Worst (peak) value of the texture (numeric).</p>
+</dd>
+<dt>perimeter_peak</dt><dd><p>Worst (peak) value of the perimeter (numeric).</p>
+</dd>
+<dt>area_peak</dt><dd><p>Worst (peak) value of the area (numeric).</p>
+</dd>
+<dt>smoothness_peak</dt><dd><p>Worst (peak) value of the smoothness (numeric).</p>
+</dd>
+<dt>compactness_peak</dt><dd><p>Worst (peak) value of the compactness (numeric).</p>
+</dd>
+<dt>concavity_peak</dt><dd><p>Worst (peak) value of the concavity (numeric).</p>
+</dd>
+<dt>concave_points_peak</dt><dd><p>Worst (peak) number of concave points (numeric).</p>
+</dd>
+<dt>symmetry_peak</dt><dd><p>Worst (peak) value of the symmetry (numeric).</p>
+</dd>
+<dt>fractal_dimension_peak</dt><dd><p>Worst (peak) value of the fractal dimension (numeric).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'BreastCancerWI_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+OncoDataSets package and assists users in identifying its specific characteristics.
+The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the cases package. Original documentation available at:
+https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(diagnostic).
+</p>
+
+</main>
+
+</div>
+</body></html>

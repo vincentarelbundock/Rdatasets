@@ -1,0 +1,81 @@
+<!DOCTYPE html><html><head><title>R: NCCTG Lung Cancer Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>NCCTGLungCancer_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>NCCTG Lung Cancer Data</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, NCCTGLungCancer_df, is a data frame containing data on survival in patients with advanced lung cancer from the North Central Cancer Treatment Group (NCCTG). The data includes 228 observations and 10 variables related to clinical and performance score data for lung cancer patients.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(NCCTGLungCancer_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 228 observations and 10 variables:
+</p>
+
+<dl>
+<dt>inst</dt><dd><p>Institution code (numeric).</p>
+</dd>
+<dt>time</dt><dd><p>Survival time in days (numeric).</p>
+</dd>
+<dt>status</dt><dd><p>Survival status: 1 = dead, 2 = alive (numeric).</p>
+</dd>
+<dt>age</dt><dd><p>Age of the patient (numeric).</p>
+</dd>
+<dt>sex</dt><dd><p>Sex of the patient: 1 = male, 2 = female (numeric).</p>
+</dd>
+<dt>ph.ecog</dt><dd><p>ECOG performance score (numeric).</p>
+</dd>
+<dt>ph.karno</dt><dd><p>Karnofsky performance score (numeric).</p>
+</dd>
+<dt>pat.karno</dt><dd><p>Patient's Karnofsky performance score (numeric).</p>
+</dd>
+<dt>meal.cal</dt><dd><p>Daily calorie intake (numeric).</p>
+</dd>
+<dt>wt.loss</dt><dd><p>Weight loss in kilograms (numeric).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'NCCTGLungCancer_df' to avoid confusion with other datasets in the R ecosystem.
+This naming convention helps distinguish this dataset as part of the OncoDataSets package and assists users in identifying
+its specific characteristics. The suffix '_df' indicates that the dataset is a data frame. The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the nftbart package.
+Based on survival data from patients with advanced lung cancer from the North Central Cancer Treatment Group (NCCTG).
+Performance scores rate how well the patient can perform usual daily activities.
+</p>
+
+</main>
+
+</div>
+</body></html>

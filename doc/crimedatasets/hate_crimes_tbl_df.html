@@ -1,0 +1,88 @@
+<!DOCTYPE html><html><head><title>R: US Hate Crimes &amp; Socioeconomic Factors</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>hate_crimes_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>US Hate Crimes &amp; Socioeconomic Factors</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains data on hate crimes across the United States and associated socioeconomic factors.
+It provides insights into potential relationships between income inequality, socioeconomic characteristics,
+and the frequency of hate crimes.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(hate_crimes_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 51 observations and 13 variables:
+</p>
+
+<dl>
+<dt>state</dt><dd><p>Full name of the state (character).</p>
+</dd>
+<dt>state_abbrev</dt><dd><p>Abbreviation of the state (character).</p>
+</dd>
+<dt>median_house_inc</dt><dd><p>Median household income (integer).</p>
+</dd>
+<dt>share_unemp_seas</dt><dd><p>Share of unemployed people (seasonally adjusted) (numeric).</p>
+</dd>
+<dt>share_pop_metro</dt><dd><p>Share of the population living in metropolitan areas (numeric).</p>
+</dd>
+<dt>share_pop_hs</dt><dd><p>Share of the population with at least a high school education (numeric).</p>
+</dd>
+<dt>share_non_citizen</dt><dd><p>Share of the population who are non-citizens (numeric).</p>
+</dd>
+<dt>share_white_poverty</dt><dd><p>Share of the white population living in poverty (numeric).</p>
+</dd>
+<dt>gini_index</dt><dd><p>Gini index of income inequality (numeric).</p>
+</dd>
+<dt>share_non_white</dt><dd><p>Share of the population who are non-white (numeric).</p>
+</dd>
+<dt>share_vote_trump</dt><dd><p>Share of votes for Donald Trump in the 2016 presidential election (numeric).</p>
+</dd>
+<dt>hate_crimes_per_100k_splc</dt><dd><p>Hate crimes per 100,000 people as reported by the SPLC (numeric).</p>
+</dd>
+<dt>avg_hatecrimes_per_100k_fbi</dt><dd><p>Average hate crimes per 100,000 people as reported by the FBI (numeric).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been changed to 'hate_crimes_tbl_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+crimedatasets package and assists users in identifying its specific characteristics. The suffix 'tbl_df'
+indicates that the dataset is a tibble, a modern version of data frames in R. The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>The raw data behind the story &quot;Higher Rates Of Hate Crimes Are Tied To Income Inequality&quot; by FiveThirtyEight.
+</p>
+
+</main>
+
+</div>
+</body></html>

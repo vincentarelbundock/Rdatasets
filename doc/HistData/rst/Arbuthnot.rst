@@ -6,9 +6,8 @@
       Arbuthnot R Documentation
       ========= ===============
 
-      .. rubric:: Arbuthnot's data on male and female birth ratios in
-         London from 1629-1710.
-         :name: arbuthnots-data-on-male-and-female-birth-ratios-in-london-from-1629-1710.
+      .. rubric:: Arbuthnot's data on male and female birth ratios
+         :name: arbuthnots-data-on-male-and-female-birth-ratios
 
       .. rubric:: Description
          :name: description

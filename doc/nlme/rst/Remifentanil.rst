@@ -23,7 +23,7 @@
 
       .. code:: R
 
-         data("Remifentanil", package = "nlme")
+         Remifentanil
 
       .. rubric:: Format
          :name: format

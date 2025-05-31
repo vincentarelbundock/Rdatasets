@@ -1,0 +1,95 @@
+<!DOCTYPE html><html><head><title>R: Homicides in Nine US Cities (2015)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>homicides15_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Homicides in Nine US Cities (2015)</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains detailed records of homicides that occurred in nine large US cities during the year 2015.
+The data includes geographic locations, offense codes, and additional metadata, making it valuable for
+analyzing patterns and trends in urban crime.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(homicides15_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 1,922 observations and 15 variables:
+</p>
+
+<dl>
+<dt>uid</dt><dd><p>Unique identifier for the record (integer).</p>
+</dd>
+<dt>city_name</dt><dd><p>Name of the city where the homicide occurred (character).</p>
+</dd>
+<dt>offense_code</dt><dd><p>Offense code for the homicide (character).</p>
+</dd>
+<dt>offense_type</dt><dd><p>Type of offense (character).</p>
+</dd>
+<dt>date_single</dt><dd><p>Date and time of the homicide (POSIXct).</p>
+</dd>
+<dt>address</dt><dd><p>Address where the homicide occurred (character).</p>
+</dd>
+<dt>longitude</dt><dd><p>Longitude of the location (numeric).</p>
+</dd>
+<dt>latitude</dt><dd><p>Latitude of the location (numeric).</p>
+</dd>
+<dt>location_type</dt><dd><p>Type of location (character).</p>
+</dd>
+<dt>location_category</dt><dd><p>Category of location (character).</p>
+</dd>
+<dt>fips_state</dt><dd><p>FIPS code for the state (integer).</p>
+</dd>
+<dt>fips_county</dt><dd><p>FIPS code for the county (character).</p>
+</dd>
+<dt>tract</dt><dd><p>Census tract identifier (character).</p>
+</dd>
+<dt>block_group</dt><dd><p>Census block group identifier (integer).</p>
+</dd>
+<dt>block</dt><dd><p>Census block identifier (integer).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been changed to 'homicides15_tbl_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+crimedatasets package and assists users in identifying its specific characteristics. The suffix 'tbl_df'
+indicates that the dataset is stored as a tibble, offering better printing and subsetting capabilities in R.
+The original content has not been modified in any way.
+</p>
+<p>This dataset provides insights into homicides in urban areas, offering geographic and temporal information for each case.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Crime Open Database, 2015.
+</p>
+
+</main>
+
+</div>
+</body></html>

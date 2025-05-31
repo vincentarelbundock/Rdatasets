@@ -1,0 +1,820 @@
+rownames,name,ingredients,parent_key
+1,Mvasi,Bevacizumab,DB00112
+2,Zirabev,Bevacizumab,DB00112
+3,Avastin,Bevacizumab,DB00112
+4,Azithromycin,Azithromycin,DB00207
+5,Zmax,Azithromycin,DB00207
+6,Zithromax,Azithromycin,DB00207
+7,Azithromycin Monohydrate,Azithromycin,DB00207
+8,AzaSite,Azithromycin,DB00207
+9,Azithromycin Dihydrate,Azithromycin,DB00207
+10,AzaSITE,Azithromycin,DB00207
+11,Azithromycin monohydrate,Azithromycin,DB00207
+12,Azithromycin dihydrate,Azithromycin,DB00207
+13,Zithromax - Pws Orl 100mg/5ml,Azithromycin,DB00207
+14,Zithromax for Intravenous Injection,Azithromycin,DB00207
+15,Act Azithromycin,Azithromycin,DB00207
+16,PMS-azithromycin,Azithromycin,DB00207
+17,Gd-azithromycin,Azithromycin,DB00207
+18,Dom-azithromycin,Azithromycin,DB00207
+19,Pro-azithromycine,Azithromycin,DB00207
+20,Sandoz Azithromycin,Azithromycin,DB00207
+21,Azithromycin for Injection,Azithromycin,DB00207
+22,Apo-azithromycin Z,Azithromycin,DB00207
+23,Zithromax Cap 250mg,Azithromycin,DB00207
+24,Ratio Azithromycin,Azithromycin,DB00207
+25,Riva Azithromycin,Azithromycin,DB00207
+26,Zmax SR,Azithromycin,DB00207
+27,Ava-azithromycin,Azithromycin,DB00207
+28,Mylan-azithromycin for Injection,Azithromycin,DB00207
+29,Jamp-azithromycin,Azithromycin,DB00207
+30,Ipg-azithromycin,Azithromycin,DB00207
+31,Novo-azithromycin Pediatric,Azithromycin,DB00207
+32,Riva-azithromycin,Azithromycin,DB00207
+33,Mar-azithromycin,Azithromycin,DB00207
+34,Teva-azithromycin,Azithromycin,DB00207
+35,"Azithromycin for Injection, USP",Azithromycin,DB00207
+36,Zithromax 600mg,Azithromycin,DB00207
+37,Apo-azithromycin,Azithromycin,DB00207
+38,PHL-azithromycin,Azithromycin,DB00207
+39,Mylan-azithromycin,Azithromycin,DB00207
+40,Ag-azithromycin,Azithromycin,DB00207
+41,Nra-azithromycin,Azithromycin,DB00207
+42,Auro-azithromycin,Azithromycin,DB00207
+43,Azithromycin for Injection USP,Azithromycin,DB00207
+44,Kaletra,Lopinavir + Ritonavir,DB00503
+45,Norvir,Ritonavir,DB00503
+46,Ritonavir,Ritonavir,DB00503
+47,Lopinavir and Ritonavir,Lopinavir + Ritonavir,DB00503
+48,Viekira Pak,Dasabuvir + Ombitasvir + Paritaprevir + Ritonavir,DB00503
+49,Lopinavir-Ritonavir,Lopinavir + Ritonavir,DB00503
+50,Viekira XR,Dasabuvir + Ombitasvir + Paritaprevir + Ritonavir,DB00503
+51,Technivie,Ombitasvir + Paritaprevir + Ritonavir,DB00503
+52,Norvir Sec,Ritonavir,DB00503
+53,Holkira Pak,Dasabuvir + Ombitasvir + Paritaprevir + Ritonavir,DB00503
+54,Chloroquine,Chloroquine,DB00608
+55,Aralen,Chloroquine,DB00608
+56,Chloroquine Phosphate,Chloroquine,DB00608
+57,Chloroquine phosphate,Chloroquine,DB00608
+58,Teva-chloroquine,Chloroquine,DB00608
+59,Methylprednisolone,Methylprednisolone,DB00959
+60,Methylprednisolone Acetate,Methylprednisolone,DB00959
+61,Hybrisil,Methylprednisolone,DB00959
+62,MethylPREDNISolone,Methylprednisolone,DB00959
+63,Depo-Medrol,Methylprednisolone,DB00959
+64,Medrol,Methylprednisolone,DB00959
+65,Physicians EZ Use M-pred,Bupivacaine + Methylprednisolone + Povidone-iodine,DB00959
+66,Multi-Specialty Kit,Lidocaine + Methylprednisolone,DB00959
+67,Lido-mp40,Lidocaine + Methylprednisolone,DB00959
+68,ReadySharp Anesthetics plus MethylPrednisolone 80,Bupivacaine + Lidocaine + Methylprednisolone,DB00959
+69,ReadySharp-P40,Bupivacaine + Lidocaine + Methylprednisolone,DB00959
+70,ReadySharp-P80,Bupivacaine + Lidocaine + Methylprednisolone,DB00959
+71,MethylpredniSOLONE,Methylprednisolone,DB00959
+72,medPREDkit,Methylprednisolone + Omeprazole + Sodium bicarbonate,DB00959
+73,medPREDkit Plus,Methylprednisolone,DB00959
+74,Point Of Care L2,Lidocaine + Methylprednisolone,DB00959
+75,Point Of Care L5,Lidocaine + Methylprednisolone,DB00959
+76,Point Of Care LM DEP 2,Lidocaine + Methylprednisolone + Povidone-iodine,DB00959
+77,Methylpred DP,Methylprednisolone,DB00959
+78,P-Care D80,Methylprednisolone + Povidone-iodine,DB00959
+79,P-Care D80MX,Bupivacaine + Lidocaine + Methylprednisolone + Povidone-iodine,DB00959
+80,P-Care D40,Methylprednisolone + Povidone-iodine,DB00959
+81,P-Care D40G,Methylprednisolone + Povidone-iodine,DB00959
+82,P-Care D80G,Methylprednisolone + Povidone-iodine,DB00959
+83,P-Care D40MX,Bupivacaine + Lidocaine + Methylprednisolone + Povidone-iodine,DB00959
+84,Dyural L Kit,Lidocaine + Methylprednisolone + Povidone-iodine,DB00959
+85,Dyural LM Kit,Bupivacaine + Lidocaine + Methylprednisolone + Povidone-iodine,DB00959
+86,Dyural 80 Kit,Bupivacaine + Lidocaine + Methylprednisolone + Povidone-iodine,DB00959
+87,Dyural 40 Kit,Bupivacaine + Lidocaine + Methylprednisolone + Povidone-iodine,DB00959
+88,Medroloan SUIK,Methylprednisolone,DB00959
+89,Medroloan II SUIK,Methylprednisolone,DB00959
+90,Methylprednisolone acetate,Methylprednisolone,DB00959
+91,ReadySharp MethylPrednisolone 80,Methylprednisolone,DB00959
+92,Solu-medrol,Methylprednisolone,DB00959
+93,Depo-medrol 40 mg/ml,Methylprednisolone,DB00959
+94,Neo-medrol Acne Lotion,Aluminum chlorohydrate + Methylprednisolone + Neomycin + Octasulfur,DB00959
+95,Medrol 16 mg,Methylprednisolone,DB00959
+96,Medrol 4 mg,Methylprednisolone,DB00959
+97,Depo-medrol With Lidocaine,Lidocaine + Methylprednisolone,DB00959
+98,Depo-medrol (with Preservative) 40 mg/ml,Methylprednisolone,DB00959
+99,Depo-medrol (with Preservative) 80 mg/ml,Methylprednisolone,DB00959
+100,Depo-medrol (with Preservative) 20 mg/ml,Methylprednisolone,DB00959
+101,Methylprednisolone Sodium Succinate for Injection,Methylprednisolone,DB00959
+102,Depo-medrol 80 mg/ml,Methylprednisolone,DB00959
+103,Neo-medrol,Methylprednisolone + Neomycin,DB00959
+104,Medrol Topical 0.25%,Methylprednisolone,DB00959
+105,Medrol Acne Lotion,Aluminum chlorohydrate + Methylprednisolone + Octasulfur,DB00959
+106,"Methylprednisolone Sodium Succinate for Injection, USP",Methylprednisolone + Water,DB00959
+107,Methylprednisolone Acetate Injectable Suspension USP,Methylprednisolone,DB00959
+108,Methylprednisolone Acetate Injectable Suspension USP -(40mg/ml With Preservative),Methylprednisolone,DB00959
+109,Methylprednisolone Acetate Injectable Suspension USP -(80mg/ml With Preservative),Methylprednisolone,DB00959
+110,Pedea,Ibuprofen,DB01050
+111,Ibuprofen,Ibuprofen,DB01050
+112,Health Sense Infants Ibuprofen Oral Suspension,Ibuprofen,DB01050
+113,CVS Pharmacy Ibuprofen,Ibuprofen,DB01050
+114,Hydrocodone Bitartrate and Ibuprofen,Hydrocodone + Ibuprofen,DB01050
+115,Adventure Medical Kits 1-4 Person First Aid,Acetaminophen + Acetylsalicylic acid + Bacitracin + Benzalkonium + Benzocaine + Diphenhydramine + Ethanol + Ibuprofen + Neomycin + Polymyxin B,DB01050
+116,Reprexain,Hydrocodone + Ibuprofen,DB01050
+117,Adventure Medical Kits 1-2 Person National Ski Patrol First Aid,Acetaminophen + Acetylsalicylic acid + Bacitracin + Benzalkonium + Benzocaine + Ethanol + Ibuprofen + Neomycin + Polymyxin B,DB01050
+118,50 Person ANSI,Acetaminophen + Acetylsalicylic acid + Bacitracin + Benzalkonium + Benzalkonium + Benzocaine + Ethanol + Ethanol + Ibuprofen + Isopropyl alcohol + Lidocaine + Neomycin + Polymyxin B + Water,DB01050
+119,25 Person ANSI,Acetaminophen + Acetylsalicylic acid + Bacitracin + Benzalkonium + Benzalkonium + Benzocaine + Ethanol + Ethanol + Ibuprofen + Isopropyl alcohol + Lidocaine + Neomycin + Polymyxin B + Water,DB01050
+120,Auto 157,Acetaminophen + Acetylsalicylic acid + Benzalkonium + Benzalkonium + Benzocaine + Ethanol + Ibuprofen + Lidocaine,DB01050
+121,10 Person ANSI,Acetaminophen + Acetylsalicylic acid + Bacitracin + Benzalkonium + Benzalkonium + Benzocaine + Ethanol + Ibuprofen + Lidocaine + Neomycin + Polymyxin B + Water,DB01050
+122,Theraprofen-90,gamma-Aminobutyric acid + Ibuprofen,DB01050
+123,Theraprofen-800,gamma-Aminobutyric acid + Ibuprofen,DB01050
+124,Theraprofen-60,gamma-Aminobutyric acid + Ibuprofen,DB01050
+125,Genuine First Aid - Home First Aid,Acetaminophen + Bacitracin + Benzalkonium + Ibuprofen + Isopropyl alcohol + Neomycin + Polymyxin B,DB01050
+126,Genuine First Aid - Auto First Aid,Acetaminophen + Bacitracin + Benzalkonium + Ibuprofen + Isopropyl alcohol + Neomycin + Polymyxin B,DB01050
+127,Vicoprofen,Hydrocodone + Ibuprofen,DB01050
+128,Easy Care First Aid Kit - Outdoor and Travel,Acetaminophen + Bacitracin + Benzalkonium + Benzocaine + Ethanol + Ibuprofen + Neomycin + Polymyxin B,DB01050
+129,Ibudone,Hydrocodone + Ibuprofen,DB01050
+130,GFA First Aid Kit Essentials - 33 Pieces,Acetaminophen + Acetylsalicylic acid + Bacitracin + Benzalkonium + Ibuprofen + Isopropyl alcohol + Neomycin + Polymyxin B,DB01050
+131,Mountain Series Weekender Medical,Acetaminophen + Acetylsalicylic acid + Bacitracin + Benzalkonium + Diphenhydramine + Ibuprofen + Neomycin + Polymyxin B + Povidone-iodine,DB01050
+132,CounterAct IB,Ibuprofen,DB01050
+133,Motrin,Ibuprofen,DB01050
+134,Easy Care First Aid - All Purpose,Acetaminophen + Bacitracin + Benzalkonium + Benzalkonium + Benzocaine + Ethanol + Ibuprofen + Lidocaine + Neomycin + Polymyxin B,DB01050
+135,GFA First Aid 75 Person Metal Case,Acetaminophen + Acetylsalicylic acid + Bacitracin + Benzalkonium + Benzalkonium + Benzocaine + Ethanol + Ethanol + Ibuprofen + Isopropyl alcohol + Lidocaine + Neomycin + Polymyxin B + Povidone-iodine + Water,DB01050
+136,Easy Care First Aid Kit - Sports and Travel,Acetaminophen + Bacitracin + Benzalkonium + Benzocaine + Ethanol + Ibuprofen + Neomycin + Polymyxin B,DB01050
+137,Ibuprofen (NSAID) Pain Releiver/ Fever Reducer,Ibuprofen,DB01050
+138,Adventure Medical Kits 1-2 Person First Aid,Acetaminophen + Acetylsalicylic acid + Bacitracin + Benzalkonium + Benzocaine + Diphenhydramine + Ethanol + Ibuprofen + Neomycin + Polymyxin B,DB01050
+139,Probufen,Ibuprofen,DB01050
+140,Proprinal,Ibuprofen,DB01050
+141,Ibuprofen and Pseudoephedrine Hydrochloride,Ibuprofen + Pseudoephedrine,DB01050
+142,Ibuprofen Junior,Ibuprofen,DB01050
+143,Pain Relief Anti inflammatory,Ibuprofen,DB01050
+144,Pain Relief,Ibuprofen,DB01050
+145,Good Sense Ibuprofen Childrens,Ibuprofen,DB01050
+146,Ibuprofen PM,Diphenhydramine + Ibuprofen,DB01050
+147,Genuine First Aid Industrial First Aid,Acetaminophen + Acetylsalicylic acid + Bacitracin + Benzalkonium + Benzalkonium + Ibuprofen + Lidocaine + Neomycin + Polymyxin B,DB01050
+148,Motrin Junior Strength,Ibuprofen,DB01050
+149,Ibuprofen Pain Reliever/ Fever Reducer,Ibuprofen,DB01050
+150,Childrens ADVIL,Ibuprofen,DB01050
+151,Leader Childrens Ibuprofen,Ibuprofen,DB01050
+152,Help I Have an Aching Body,Ibuprofen,DB01050
+153,Childrens Motrin Cold,Ibuprofen + Pseudoephedrine,DB01050
+154,Ibuprofen Cold and Sinus A P J,Ibuprofen + Pseudoephedrine,DB01050
+155,Conney Ibuprofen,Ibuprofen,DB01050
+156,Good Sense ibuprofen,Ibuprofen,DB01050
+157,Childrens Motrin,Ibuprofen,DB01050
+158,Ready America First Aid Pocket - 33 Pieces,Acetaminophen + Acetylsalicylic acid + Bacitracin + Benzalkonium + Ibuprofen + Isopropyl alcohol + Neomycin + Polymyxin B,DB01050
+159,Ready America First Aid Outdoor- 107 Pieces,Acetaminophen + Acetylsalicylic acid + Bacitracin + Benzalkonium + Benzalkonium + Benzocaine + Ethanol + Ibuprofen + Isopropyl alcohol + Lidocaine + Neomycin + Polymyxin B,DB01050
+160,Aprofen Regular Strength,Ibuprofen,DB01050
+161,Preferred Plus Ibuprofen 200,Ibuprofen,DB01050
+162,Preferred Plus Ibuprofen,Ibuprofen,DB01050
+163,Good Neighbor Pharmacy Ibuprofen Cold and Sinus,Ibuprofen + Pseudoephedrine,DB01050
+164,Ibuprofen Liqui-gels,Ibuprofen,DB01050
+165,Ibuprofen Pain reliever/fever reducer,Ibuprofen,DB01050
+166,Ibuprofen and Pseudoephedrine hydrochloride,Ibuprofen + Pseudoephedrine,DB01050
+167,Ibuprofen Immediate Release,Ibuprofen,DB01050
+168,Equate Ibuprofen,Ibuprofen,DB01050
+169,Hydrocodone Bitartrate and Acetaminophen,Hydrocodone + Ibuprofen,DB01050
+170,NeoProfen,Ibuprofen,DB01050
+171,Moore Medical Ibuprofen,Ibuprofen,DB01050
+172,MooreBrand Ibuprofen,Ibuprofen,DB01050
+173,Green Guard Ibupro Relief,Ibuprofen,DB01050
+174,Medique I-prin,Ibuprofen,DB01050
+175,MEDI-FIRST Ibuprofen,Ibuprofen,DB01050
+176,MEDI-FIRST PLUS Ibuprofen,Ibuprofen,DB01050
+177,Dover Addaprin,Ibuprofen,DB01050
+178,Otis Clapp Ultraprin,Ibuprofen,DB01050
+179,Physicians Care Ibuprofen,Ibuprofen,DB01050
+180,Lab Safety Supply Ibuprofen,Ibuprofen,DB01050
+181,Ibuprofen Pain reliever/ Fever Reducer,Ibuprofen,DB01050
+182,Motrin IB,Ibuprofen,DB01050
+183,Fast Pain Relief,Ibuprofen,DB01050
+184,Oxycodone Hydrochloride and Ibuprofen,Ibuprofen + Oxycodone,DB01050
+185,Alivio,Ibuprofen,DB01050
+186,Toxicology Saliva Collection Kit,Ibuprofen,DB01050
+187,Prastera,Ibuprofen + Prasterone,DB01050
+188,Rapid Comfort Ibuprofen,Ibuprofen,DB01050
+189,Dragon Tabs,Ibuprofen,DB01050
+190,Flex-Prin,Ibuprofen,DB01050
+191,Combunox,Ibuprofen + Oxycodone,DB01050
+192,Ibuprofen (NSAID) Pain Reliever/Fever Reducer,Ibuprofen,DB01050
+193,Ibu,Ibuprofen,DB01050
+194,Quality Choice Ibuprofen 200,Ibuprofen,DB01050
+195,Nuprin Immediate Release,Ibuprofen,DB01050
+196,Clear Choice Ibuprofen,Ibuprofen,DB01050
+197,Advil Cold and Sinus,Ibuprofen + Pseudoephedrine,DB01050
+198,Hydrocodone Bitartrate,Hydrocodone + Ibuprofen,DB01050
+199,Concentrated Ibuprofen,Ibuprofen,DB01050
+200,ShopRite Ibuprofen,Ibuprofen,DB01050
+201,Childrens Advil Cold,Ibuprofen + Pseudoephedrine,DB01050
+202,Advil Menstrual Pain,Ibuprofen,DB01050
+203,Ibuprofen Cold Relief Childrens,Ibuprofen + Pseudoephedrine,DB01050
+204,Leader Ibuprofen Cold Childrens,Ibuprofen + Pseudoephedrine,DB01050
+205,Henry Schein Ibuprofen,Ibuprofen,DB01050
+206,Good Sense ibuprofen infants,Ibuprofen,DB01050
+207,Harris Teeter Ibuprofen Infants,Ibuprofen,DB01050
+208,Equaline Ibuprofen,Ibuprofen,DB01050
+209,Childrens Ibuprofen,Ibuprofen,DB01050
+210,Dg Health Ibuprofen,Ibuprofen,DB01050
+211,Joint Maintenance Compliance Kit,Capsaicin + Ibuprofen + Levomenthol + Methyl salicylate,DB01050
+212,Welby Infants Ibuprofen,Ibuprofen,DB01050
+213,Good Sense Ibuprofen,Ibuprofen,DB01050
+214,Ibuprofen Infants,Ibuprofen,DB01050
+215,Ibuprofen Childrens,Ibuprofen,DB01050
+216,Anodyne Ile,Esomeprazole + Ibuprofen + Levomenthol + Lidocaine,DB01050
+217,Signature Care Ibuprofen Childrens,Ibuprofen,DB01050
+218,Good Neighbor Pharmacy Ibuprofen,Ibuprofen,DB01050
+219,Good Neighbor Pharmacy Childrens Ibuprofen,Ibuprofen,DB01050
+220,7-Select Advil PM,Diphenhydramine + Ibuprofen,DB01050
+221,Advil Congestion Relief,Ibuprofen + Phenylephrine,DB01050
+222,Dye Free Childrens Ibuprofen,Ibuprofen,DB01050
+223,Up and Up Ibuprofen PM,Diphenhydramine + Ibuprofen,DB01050
+224,Up and Up Childrens Ibuprofen Oral Suspension,Ibuprofen,DB01050
+225,Up and Up Childrens Ibuprofen,Ibuprofen,DB01050
+226,Up and Up Cold and Sinus,Ibuprofen + Pseudoephedrine,DB01050
+227,Major Childrens Ibuprofen,Ibuprofen,DB01050
+228,Good Sense Ibuprofen Cold and Sinus,Ibuprofen + Pseudoephedrine,DB01050
+229,Parents Choice Infants Ibuprofen,Ibuprofen,DB01050
+230,Equate Ibuprofen Cold and Sinus,Ibuprofen + Pseudoephedrine,DB01050
+231,Babies R Us Ibuprofen,Ibuprofen,DB01050
+232,Babies R Us Infants Ibuprofen,Ibuprofen,DB01050
+233,Smart Sense Ibuprofen,Ibuprofen,DB01050
+234,PediaCare Childrens,Ibuprofen,DB01050
+235,Fulton Street Market Ibuprofen,Ibuprofen,DB01050
+236,Formu Care Ibuprofen Childrens,Ibuprofen,DB01050
+237,Formu Care Ibuprofen,Ibuprofen,DB01050
+238,Preferred Plus Congestion Relief,Ibuprofen + Phenylephrine,DB01050
+239,Sound Body Ibuprofen,Ibuprofen,DB01050
+240,Health Mart Ibuprofen,Ibuprofen,DB01050
+241,Wal Profen Cold and Sinus,Ibuprofen + Pseudoephedrine,DB01050
+242,Moore Medical LLC Ibuprofen,Ibuprofen,DB01050
+243,Rexall Ibuprofen,Ibuprofen,DB01050
+244,CAREALL Ibuprofen,Ibuprofen,DB01050
+245,good neighbor pharmacy Ibuprofen,Ibuprofen,DB01050
+246,Equaline Ibuprofen childrens,Ibuprofen,DB01050
+247,Equaline Childrens Ibuprofen,Ibuprofen,DB01050
+248,Ibuprofen childrens,Ibuprofen,DB01050
+249,CVS First Aid Kit,Acetaminophen + Ammonia + Bacitracin + Benzalkonium + Benzalkonium + Ibuprofen + Lidocaine + Neomycin + Polymyxin B,DB01050
+250,Congestion Relief,Ibuprofen + Phenylephrine,DB01050
+251,Care One ibuprofen,Ibuprofen,DB01050
+252,Ibuprofen Cold and Sinus,Ibuprofen + Pseudoephedrine,DB01050
+253,Signature Care Infants Ibuprofen,Ibuprofen,DB01050
+254,Leader Infants Ibuprofen,Ibuprofen,DB01050
+255,Up and Up childrens ibuprofen,Ibuprofen,DB01050
+256,Good Neighbor Pharmacy ibuprofen childrens,Ibuprofen,DB01050
+257,Dye Free Ibuprofen,Ibuprofen,DB01050
+258,Smart Sense ibuprofen,Ibuprofen,DB01050
+259,Midol,Ibuprofen,DB01050
+260,Infants Ibuprofen,Ibuprofen,DB01050
+261,Sunmark ibuprofen cold and sinus,Ibuprofen + Pseudoephedrine,DB01050
+262,Sunmark ibuprofen childrens,Ibuprofen,DB01050
+263,Care One Ibuprofen Cold and Sinus,Ibuprofen + Pseudoephedrine,DB01050
+264,Advil PM,Diphenhydramine + Ibuprofen,DB01050
+265,Equaline ibuprofen,Ibuprofen,DB01050
+266,CVS All Purpose First Aid Kit,Acetaminophen + Acetylsalicylic acid + Ammonia + Bacitracin + Benzalkonium + Ibuprofen + Isopropyl alcohol + Lidocaine + Neomycin + Polymyxin B,DB01050
+267,Oxycodone hydrochloride and Ibuprofen,Ibuprofen + Oxycodone,DB01050
+268,leader Ibuprofen,Ibuprofen,DB01050
+269,Equaline Ibuprofen Childrens,Ibuprofen,DB01050
+270,Harris Teeter Childrens Ibuprofen,Ibuprofen,DB01050
+271,Sound Body Childrens Ibuprofen,Ibuprofen,DB01050
+272,Equaline ibuprofen childrens,Ibuprofen,DB01050
+273,Signature Care Childrens Ibuprofen,Ibuprofen,DB01050
+274,Up and Up Ibuprofen,Ibuprofen,DB01050
+275,DG Health childrens ibuprofen,Ibuprofen,DB01050
+276,Ibu Profen Cold and Sinus,Ibuprofen + Pseudoephedrine,DB01050
+277,Humana Pharmacy Childrens Ibuprofen,Ibuprofen,DB01050
+278,DG Health Ibuprofen,Ibuprofen,DB01050
+279,Equaline Ibuprofen Cold and Sinus,Ibuprofen + Pseudoephedrine,DB01050
+280,Good Neighbor Pharmacy Childrens Ibuprofen Cold,Ibuprofen + Pseudoephedrine,DB01050
+281,Cold and Sinus Pain Relief,Ibuprofen + Pseudoephedrine,DB01050
+282,Perrigo Ibuprofen,Ibuprofen,DB01050
+283,Junior Strength Advil,Ibuprofen,DB01050
+284,PhysiciansCare Ibuprofen,Ibuprofen,DB01050
+285,Direct Safety Ibuprofen,Ibuprofen,DB01050
+286,Leader Ibuprofen Cold and Sinus,Ibuprofen + Pseudoephedrine,DB01050
+287,Cold and Sinus Relief,Ibuprofen + Pseudoephedrine,DB01050
+288,Leader Ibuprofen Infants,Ibuprofen,DB01050
+289,Ibuprofen Cold Childrens,Ibuprofen + Pseudoephedrine,DB01050
+290,topcare Ibuprofen Cold and Sinus,Ibuprofen + Pseudoephedrine,DB01050
+291,Junior Strength Ibuprofen,Ibuprofen,DB01050
+292,Rx Act Ibuprofen,Ibuprofen,DB01050
+293,Rx Act Ibuprofen Childrens,Ibuprofen,DB01050
+294,Healthy Accents Congestion Relief,Ibuprofen + Phenylephrine,DB01050
+295,Smart Sense Ibuprofen Infants,Ibuprofen,DB01050
+296,Core Values Childrens Ibuprofen,Ibuprofen,DB01050
+297,Easy Care First Aid Kit - Comprehensive,Acetaminophen + Acetylsalicylic acid + Ammonia + Benzalkonium + Diphenhydramine + Ibuprofen + Lidocaine + Lidocaine,DB01050
+298,Leader Ibuprofen,Ibuprofen,DB01050
+299,Welby Health Ibuprofen,Ibuprofen,DB01050
+300,Advil Liqui-Gels,Ibuprofen,DB01050
+301,Berkley and Jensen Childrens Ibuprofen,Ibuprofen,DB01050
+302,Ibuprofen and Diphenhydramine HCl,Diphenhydramine + Ibuprofen,DB01050
+303,Equate Ibuprofen Childrens,Ibuprofen,DB01050
+304,Ibuprofen Junior Strength,Ibuprofen,DB01050
+305,Up and Up Ibuprofen Junior,Ibuprofen,DB01050
+306,NuDroxiPAK I-800,Capsaicin + Ibuprofen + Levomenthol + Methyl salicylate,DB01050
+307,Childrens Ibuprofen 100,Ibuprofen,DB01050
+308,Dg Health Childrens Ibuprofen,Ibuprofen,DB01050
+309,Topcare Congestion Relief,Ibuprofen + Phenylephrine,DB01050
+310,Simply Right Ibuprofen,Ibuprofen,DB01050
+311,Advil Allergy Sinus,Chlorpheniramine + Ibuprofen + Pseudoephedrine,DB01050
+312,Zee Ibutab,Ibuprofen,DB01050
+313,Ibuprofen Dye Free,Ibuprofen,DB01050
+314,Xylon 10,Hydrocodone + Ibuprofen,DB01050
+315,Harris Teeter Ibuprofen,Ibuprofen,DB01050
+316,Signature Care Ibuprofen,Ibuprofen,DB01050
+317,Up and Up Junior Strength Ibuprofen,Ibuprofen,DB01050
+318,Topcare Ibuprofen,Ibuprofen,DB01050
+319,Topcare Infants Ibuprofen,Ibuprofen,DB01050
+320,Topcare Ibuprofen Junior Strength,Ibuprofen,DB01050
+321,Infants Advil Concentrated Drops,Ibuprofen,DB01050
+322,Film Coated Ibuprofen,Ibuprofen,DB01050
+323,Up and Up Dye Free Infants Concentrated Ibuprofen,Ibuprofen,DB01050
+324,Ibuprofen Softgels,Ibuprofen,DB01050
+325,Concentrated ibuprofen infants,Ibuprofen,DB01050
+326,Profen Ib,Ibuprofen,DB01050
+327,profen IB childrens,Ibuprofen,DB01050
+328,Profen Ib Infants,Ibuprofen,DB01050
+329,"Ibuprofen, Diphenhydramine HCl",Diphenhydramine + Ibuprofen,DB01050
+330,Ibuprofen Ib,Ibuprofen,DB01050
+331,Care One Ibuprofen,Ibuprofen,DB01050
+332,Care One ibuprofen childrens,Ibuprofen,DB01050
+333,Ibuprofen Oral,Ibuprofen,DB01050
+334,Lil Drug Store Ibuprofen,Ibuprofen,DB01050
+335,Circle K Ibuprofen,Ibuprofen,DB01050
+336,Leader ibuprofen,Ibuprofen,DB01050
+337,Good Neighbor Pharmacy Ibuprofen PM,Diphenhydramine + Ibuprofen,DB01050
+338,Leader ibuprofen pm,Diphenhydramine + Ibuprofen,DB01050
+339,Childrens Ibuprofen Oral Suspension,Ibuprofen,DB01050
+340,Healthy Accents ibuprofen,Ibuprofen,DB01050
+341,Healthy Accents Ibuprofen,Ibuprofen,DB01050
+342,Ibuprofen 200mg,Ibuprofen,DB01050
+343,Caldolor,Ibuprofen,DB01050
+344,365 Everyday Value Ibuprofen,Ibuprofen,DB01050
+345,Careone ibuprofen junior strength,Ibuprofen,DB01050
+346,Childrens Advil,Ibuprofen,DB01050
+347,CareOne Ibuprofen,Ibuprofen,DB01050
+348,Care One Ibuprofen Childrens,Ibuprofen,DB01050
+349,Care One Ibuprofen Infants,Ibuprofen,DB01050
+350,Careone Ibuprofen,Ibuprofen,DB01050
+351,Infants Motrin,Ibuprofen,DB01050
+352,Motrin Infants,Ibuprofen,DB01050
+353,Careone Ibuprofen PM,Diphenhydramine + Ibuprofen,DB01050
+354,Basic Care childrens ibuprofen,Ibuprofen,DB01050
+355,Basic Care Ibuprofen,Ibuprofen,DB01050
+356,Advil,Ibuprofen,DB01050
+357,Ibuprofen Fast relief medicine for pain,Ibuprofen,DB01050
+358,Basic Care ibuprofen,Ibuprofen,DB01050
+359,Ibuprofen and Diphenhydramine Citrate,Diphenhydramine + Ibuprofen,DB01050
+360,Ibuprofen minis,Ibuprofen,DB01050
+361,Motrin Ib,Ibuprofen,DB01050
+362,Migraine Relief,Ibuprofen,DB01050
+363,Basic Care Childrens Ibuprofen,Ibuprofen,DB01050
+364,Ibuprofen Minis,Ibuprofen,DB01050
+365,Equate Ibuprofen PM,Diphenhydramine + Ibuprofen,DB01050
+366,Doc in the Box All Day Supply,Acetaminophen + Acetaminophen + Calcium carbonate + Dextromethorphan + Guaifenesin + Ibuprofen + Loperamide + Phenylephrine,DB01050
+367,Meds on the Go,Acetaminophen + Acetaminophen + Calcium carbonate + Dextromethorphan + Guaifenesin + Ibuprofen + Loperamide + Phenylephrine,DB01050
+368,Topcare ibuprofen childrens,Ibuprofen,DB01050
+369,Ibuprofen IB,Ibuprofen,DB01050
+370,Pain Relief PM,Diphenhydramine + Ibuprofen,DB01050
+371,Fluconazole 4% / Ibuprofen 2% / Itraconazole 1% / Terbinafine HCl 4%,Fluconazole + Ibuprofen + Itraconazole + Terbinafine,DB01050
+372,Ibuprofen mini,Ibuprofen,DB01050
+373,Ibuprofen Pain Releiver/ Fever Reducer,Ibuprofen,DB01050
+374,Cimetidine 5% / Ibuprofen 2% / Salicylic Acid 17%,Cimetidine + Ibuprofen + Salicylic acid,DB01050
+375,Infants Advil,Ibuprofen,DB01050
+376,Advil Migraine,Ibuprofen,DB01050
+377,PharmapureRx INU 600-EZS,Ibuprofen,DB01050
+378,Sudafed PE Head Congestion Plus Pain,Ibuprofen + Phenylephrine,DB01050
+379,Topcare Childrens Ibuprofen,Ibuprofen,DB01050
+380,Childrens MOTRIN,Ibuprofen,DB01050
+381,Careone Childrens Ibuprofen,Ibuprofen,DB01050
+382,Cedaprin,Ibuprofen,DB01050
+383,4389 First Aid Kit,Acetaminophen + Acetylsalicylic acid + Ammonia + Bacitracin + Benzalkonium + Ibuprofen + Lidocaine + Neomycin + Polymyxin B + Water,DB01050
+384,4395 First Aid Kit,Acetaminophen + Acetylsalicylic acid + Benzalkonium + Benzalkonium + Ibuprofen + Isopropyl alcohol + Lidocaine + Neomycin,DB01050
+385,4390 First Aid Kit,Acetaminophen + Ammonia + Benzalkonium + Calcium carbonate + Ethanol + Ibuprofen + Isopropyl alcohol + Lidocaine + Neomycin + Phenylephrine + Water,DB01050
+386,4392 First Aid Kit,Acetaminophen + Ammonia + Benzalkonium + Calcium carbonate + Ethanol + Ibuprofen + Isopropyl alcohol + Lidocaine + Neomycin + Phenylephrine + Water,DB01050
+387,Welby Ibuprofen,Ibuprofen,DB01050
+388,Ibuprofen 200,Ibuprofen,DB01050
+389,Sunmark Ibuprofen PM,Diphenhydramine + Ibuprofen,DB01050
+390,Sunmark Ibuprofen Infants,Ibuprofen,DB01050
+391,Sunmark Childrens Ibuprofen Ib,Ibuprofen,DB01050
+392,Sunmark ibuprofen ib,Ibuprofen,DB01050
+393,Health Mart childrens ibuprofen ib,Ibuprofen,DB01050
+394,Sunmark Ibuprofen IB,Ibuprofen,DB01050
+395,Health Mart Childrens Ibuprofen,Ibuprofen,DB01050
+396,7 Select Ibuprofen PM,Diphenhydramine + Ibuprofen,DB01050
+397,7 Select Ibuprofen,Ibuprofen,DB01050
+398,7 Select Childrens Ibuprofen,Ibuprofen,DB01050
+399,Valumeds Ibuprofen,Ibuprofen,DB01050
+400,Family Wellness Childrens Ibuprofen,Ibuprofen,DB01050
+401,Ibutab,Ibuprofen,DB01050
+402,Diphenhydramine HCl and Ibuprofen,Diphenhydramine + Ibuprofen,DB01050
+403,Easy Care First Aid Ibuprofen,Ibuprofen,DB01050
+404,Health Mart Ibuprofen IB,Ibuprofen,DB01050
+405,Advil Sinus Congestion and Pain,Ibuprofen + Phenylephrine,DB01050
+406,Advil Allergy and Congestion Relief,Chlorpheniramine + Ibuprofen + Phenylephrine,DB01050
+407,Sunmark Ibuprofen,Ibuprofen,DB01050
+408,Cabinet Pain Reliever and Fever Reducer,Ibuprofen,DB01050
+409,Ibuprofen and Pseudoephedrine HCl,Ibuprofen + Pseudoephedrine,DB01050
+410,First Aid Only Ibuprofen,Ibuprofen,DB01050
+411,Members Mark Ibuprofen,Ibuprofen,DB01050
+412,Infants Dye Free Ibuprofen,Ibuprofen,DB01050
+413,Ibuprofen softgels,Ibuprofen,DB01050
+414,Health Mart ibuprofen PM,Diphenhydramine + Ibuprofen,DB01050
+415,Kirkland Signature Ibuprofen Ib,Ibuprofen,DB01050
+416,Kirkland Signature Ibuprofen,Ibuprofen,DB01050
+417,ShopRite Childrens Ibuprofen,Ibuprofen,DB01050
+418,CVS Ibuprofen Sodium,Ibuprofen,DB01050
+419,Shoprite Ibuprofen,Ibuprofen,DB01050
+420,Shoprite Ibuprofen PM,Diphenhydramine + Ibuprofen,DB01050
+421,Good Neighbor Pharmacy ibuprofen,Ibuprofen,DB01050
+422,Good Neighbor Pharmacy Congestion Relief,Ibuprofen + Phenylephrine,DB01050
+423,Good neighbor pharmacy ibuprofen,Ibuprofen,DB01050
+424,TopCare Ibuprofen,Ibuprofen,DB01050
+425,Ibuprofen Sodium,Ibuprofen,DB01050
+426,Walprofen Congestion Relief and Pain,Ibuprofen + Phenylephrine,DB01050
+427,Good Sense Ibuprofen PM,Diphenhydramine + Ibuprofen,DB01050
+428,Handy Solutions Ibuprofen,Ibuprofen,DB01050
+429,DG Health Ibuprofen PM,Diphenhydramine + Ibuprofen,DB01050
+430,Advil Liquigels,Ibuprofen,DB01050
+431,Topcare Ibuprofen PM,Diphenhydramine + Ibuprofen,DB01050
+432,Topcare ibuprofen,Ibuprofen,DB01050
+433,Advil Sinus Congestion and Pain Relief,Ibuprofen + Phenylephrine,DB01050
+434,ShopRite Infants Ibuprofen,Ibuprofen,DB01050
+435,Smart Sense Ibuprofen PM,Diphenhydramine + Ibuprofen,DB01050
+436,Smart Sense Ibuprofen Gluten Free,Ibuprofen,DB01050
+437,Exchange Select Ibuprofen PM,Diphenhydramine + Ibuprofen,DB01050
+438,Ibuprofen Lysine,Ibuprofen,DB01050
+439,Leader Ibuprofen PM,Diphenhydramine + Ibuprofen,DB01050
+440,Care One Ibuprofen PM,Diphenhydramine + Ibuprofen,DB01050
+441,Equaline Ibuprofen PM,Diphenhydramine + Ibuprofen,DB01050
+442,Berkley and Jensen Ibuprofen,Ibuprofen,DB01050
+443,Motrin PM,Diphenhydramine + Ibuprofen,DB01050
+444,Berkley and Jensen Ibuprofen PM,Diphenhydramine + Ibuprofen,DB01050
+445,Equaline congestion relief,Ibuprofen + Phenylephrine,DB01050
+446,Rx Act Ibuprofen PM,Diphenhydramine + Ibuprofen,DB01050
+447,Up and Up Ibuprofen Sodium,Ibuprofen,DB01050
+448,Harmon Face Values Ibuprofen,Ibuprofen,DB01050
+449,Humana Pharmacy Ibuprofen,Ibuprofen,DB01050
+450,Harris Teeter Ibuprofen PM,Diphenhydramine + Ibuprofen,DB01050
+451,Signature Care Ibuprofen PM,Diphenhydramine + Ibuprofen,DB01050
+452,Advil Multi-Symptom Cold and Flu,Chlorpheniramine + Ibuprofen + Phenylephrine,DB01050
+453,Assured Ibuprofen,Ibuprofen,DB01050
+454,Ibuprofen Pain Reliever/Fever Reducer,Ibuprofen,DB01050
+455,Health Sense Provil,Ibuprofen,DB01050
+456,Theraflex Advance,Chondroitin sulfate + Glucosamine + Ibuprofen,DB01050
+457,Childrens Ibuprofen 100 Dye Free,Ibuprofen,DB01050
+458,Redicare Ibuprofen,Ibuprofen,DB01050
+459,Ibuprofen,Ibuprofen + Ibuprofen,DB01050
+460,Dolex Flex,Ibuprofen,DB01050
+461,Sunmark Ibuprofen Ib,Ibuprofen,DB01050
+462,Pain Relief Ibuprofen,Ibuprofen,DB01050
+463,Medique Iprin,Ibuprofen,DB01050
+464,Medi-First Ibuprofen,Ibuprofen,DB01050
+465,Medi-First Plus Ibuprofen,Ibuprofen,DB01050
+466,Ibuprofen Dye-Free,Ibuprofen,DB01050
+467,Childrens Novex Ibuprofen,Ibuprofen,DB01050
+468,dg health Ibuprofen pm,Diphenhydramine + Ibuprofen,DB01050
+469,Being Well Ibuprofen,Ibuprofen,DB01050
+470,"Glucosamine Sulfate, Chondroitin Sulfate, Ibuprofen",Chondroitin sulfate + Glucosamine + Ibuprofen,DB01050
+471,Duexis,Famotidine + Ibuprofen,DB01050
+472,Good Sense Childrens Ibuprofen,Ibuprofen,DB01050
+473,Family Wellness Ibuprofen,Ibuprofen,DB01050
+474,Welly Travel Medicine Kit,Dimethicone + Doxylamine + Ibuprofen + Loperamide + Meclizine,DB01050
+475,Ibuprofen Ca,Ibuprofen,DB01050
+476,Welly Adventure First Aid Kit,Bacitracin + Hydrocortisone + Ibuprofen + Neomycin + Polymyxin B,DB01050
+477,Green Guard Ibupro relief,Ibuprofen,DB01050
+478,Green Guard Ibuprofen Relief,Ibuprofen,DB01050
+479,Crane Safety Ibuprofen,Ibuprofen,DB01050
+480,moorebrand Ibuprofen,Ibuprofen,DB01050
+481,MoreBrand Ibuprofen,Ibuprofen,DB01050
+482,Healthy Accents ibuprofen childrens,Ibuprofen,DB01050
+483,Good Sense Childrens Ibuprofen Oral Suspension,Ibuprofen,DB01050
+484,Berkley and Jensen ibuprofen childrens dye free,Ibuprofen,DB01050
+485,Leader Congestion Relief,Ibuprofen + Phenylephrine,DB01050
+486,ShopRite Ibuprofen IB,Ibuprofen,DB01050
+487,Ibuprofen Immediate release,Ibuprofen,DB01050
+488,PharmapureRx IBU 600-EZS,Ibuprofen,DB01050
+489,Care One Ibuprofen Ib,Ibuprofen,DB01050
+490,Ybuphen,Acetaminophen + Ibuprofen,DB01050
+491,Good Sense Infants Ibuprofen,Ibuprofen,DB01050
+492,Leader Ibuprofen Childrens,Ibuprofen,DB01050
+493,PediaCare Infants,Ibuprofen,DB01050
+494,Hydrocodone bitartrate and ibuprofen,Hydrocodone + Ibuprofen,DB01050
+495,Topical Pain,Diazepam + Hydrocodone + Ibuprofen + Tramadol,DB01050
+496,Ibuprofen Caplet,Ibuprofen,DB01050
+497,Rugby Congestion Relief,Ibuprofen + Phenylephrine,DB01050
+498,Dolex,Ibuprofen,DB01050
+499,Comfort Pac with Ibuprofen,Ibuprofen,DB01050
+500,Leader Ibuprofen 200,Ibuprofen,DB01050
+501,Healthy Accents Ibuprofen Infants,Ibuprofen,DB01050
+502,Healthy Accents Ibuprofen PM,Diphenhydramine + Ibuprofen,DB01050
+503,Family Wellness Ibuprofen PM,Diphenhydramine + Ibuprofen,DB01050
+504,Kidgets Infants,Ibuprofen,DB01050
+505,Apo-ibuprofen Tab 200mg,Ibuprofen,DB01050
+506,Advil Caplets,Ibuprofen,DB01050
+507,Advil Tablets,Ibuprofen,DB01050
+508,Motrin 200mg,Ibuprofen,DB01050
+509,PMS-ibuprofen,Ibuprofen,DB01050
+510,Advil Gel Caplets,Ibuprofen,DB01050
+511,Children's Advil,Ibuprofen,DB01050
+512,Apo Ibuprofen Tab 400mg,Ibuprofen,DB01050
+513,Apo Ibuprofen Tab 300mg,Ibuprofen,DB01050
+514,Apo Ibuprofen Tab 600mg,Ibuprofen,DB01050
+515,Infants' Motrin,Ibuprofen,DB01050
+516,Novo-profen,Ibuprofen,DB01050
+517,Sudafed Sinus Advance,Ibuprofen + Pseudoephedrine,DB01050
+518,Children's Motrin,Ibuprofen,DB01050
+519,Advil Pediatric Drops,Ibuprofen,DB01050
+520,Motrin 300mg,Ibuprofen,DB01050
+521,Motrin 400mg,Ibuprofen,DB01050
+522,Advil Extra Strength Caplets,Ibuprofen,DB01050
+523,Robax Platinum,Ibuprofen + Methocarbamol,DB01050
+524,Advil Extra Strength Liqui-gels,Ibuprofen,DB01050
+525,Children's Advil Cold,Ibuprofen + Pseudoephedrine,DB01050
+526,Advil Cold & Sinus Plus,Chlorpheniramine + Ibuprofen + Pseudoephedrine,DB01050
+527,Advil Cold & Sinus Liqui-gels,Ibuprofen + Pseudoephedrine,DB01050
+528,Advil Cold and Sinus Daytime,Ibuprofen + Pseudoephedrine,DB01050
+529,Advil Cold and Sinus Nighttime,Chlorpheniramine + Ibuprofen + Pseudoephedrine,DB01050
+530,Children's Advil Cold & Flu Multi-symptom,Chlorpheniramine + Ibuprofen + Pseudoephedrine,DB01050
+531,Ibuprofen Tablets 200 mg,Ibuprofen,DB01050
+532,Ibuprofen Caplets 200 mg,Ibuprofen,DB01050
+533,Children's Ibuprofen Suspension,Ibuprofen,DB01050
+534,Ibuprofen Liquid Filled Capsules,Ibuprofen,DB01050
+535,Extra Strength Ibuprofen,Ibuprofen,DB01050
+536,Junior Strength Advil Fever From Colds Or Flu,Ibuprofen,DB01050
+537,Children's Advil Fever From Colds Or Flu,Ibuprofen,DB01050
+538,Advil Pediatric Drops Fever From Colds Or Flu,Ibuprofen,DB01050
+539,Analgesic and Muscle Relaxant Caplets,Ibuprofen + Methocarbamol,DB01050
+540,Axum,Ibuprofen + Methocarbamol,DB01050
+541,Muscle & Back Pain Relief With Ibuprofen,Ibuprofen + Methocarbamol,DB01050
+542,Children's Europrofen,Ibuprofen,DB01050
+543,Advil Muscle and Joint,Ibuprofen,DB01050
+544,Advil Nighttime,Diphenhydramine + Ibuprofen,DB01050
+545,Cold + Sinus Plus,Chlorpheniramine + Ibuprofen + Pseudoephedrine,DB01050
+546,Summit Ultra,Ibuprofen + Methocarbamol,DB01050
+547,Advil Cold & Flu,Diphenhydramine + Ibuprofen,DB01050
+548,Ibuprofen Muscle and Joint,Ibuprofen,DB01050
+549,Motrin Liquid Gels 400 mg,Ibuprofen,DB01050
+550,Cold + Sinus Daytime Cold + Sinus Nighttime,Chlorpheniramine + Ibuprofen + Ibuprofen + Pseudoephedrine + Pseudoephedrine,DB01050
+551,"Advil Cold, Cough & Flu Nighttime",Diphenhydramine + Ibuprofen,DB01050
+552,Advil Day/night Convenience Pack,Diphenhydramine + Ibuprofen + Ibuprofen,DB01050
+553,Advil Arthritis Pain,Ibuprofen,DB01050
+554,Motrin Platinum Muscle & Body,Ibuprofen + Methocarbamol,DB01050
+555,Ibuprofen Nighttime,Diphenhydramine + Ibuprofen,DB01050
+556,Nu-ibuprofen Tab 300mg,Ibuprofen,DB01050
+557,Nu-ibuprofen Tab 400mg,Ibuprofen,DB01050
+558,Nu-ibuprofen Tab 600mg,Ibuprofen,DB01050
+559,Motrin Ib Caplets 200mg,Ibuprofen,DB01050
+560,Actiprofen - Caplet 200mg,Ibuprofen,DB01050
+561,Motrin Tablets 300mg,Ibuprofen,DB01050
+562,Motrin Tablets 400mg,Ibuprofen,DB01050
+563,Motrin Tablets 600mg,Ibuprofen,DB01050
+564,Ibuprofen - Tab 200mg,Ibuprofen,DB01050
+565,Dimetapp Cold and Sinus Caplets,Ibuprofen + Pseudoephedrine,DB01050
+566,Dristan Sinus Caplets,Ibuprofen + Pseudoephedrine,DB01050
+567,Alti-ibuprofen Tab 300mg,Ibuprofen,DB01050
+568,Alti-ibuprofen Tab 400mg,Ibuprofen,DB01050
+569,Alti-ibuprofen Tab 600mg,Ibuprofen,DB01050
+570,Ibuprofen Tab 200mg,Ibuprofen,DB01050
+571,Ibuprofen Tab 300mg,Ibuprofen,DB01050
+572,Children's Motrin Chewable Tablet 50mg,Ibuprofen,DB01050
+573,Junior Strength Motrin Chewable Tablet 100mg,Ibuprofen,DB01050
+574,Ibuprofen-600 Tab 600mg,Ibuprofen,DB01050
+575,Ibuprofen 200 mg,Ibuprofen,DB01050
+576,Medipren Tab 200mg,Ibuprofen,DB01050
+577,Motrin Ib Caplet/tab 200mg,Ibuprofen,DB01050
+578,Ibucodone,Hydrocodone + Ibuprofen,DB01050
+579,Motrin Cold & Sinus Caplets,Ibuprofen + Pseudoephedrine,DB01050
+580,Children's Advil Chewable Tablets,Ibuprofen,DB01050
+581,Children's Motrin Cold,Ibuprofen + Pseudoephedrine,DB01050
+582,Ibuprofen Oral Suspension USP,Ibuprofen,DB01050
+583,PMS-ibuprofen (caplets),Ibuprofen,DB01050
+584,Codofen,Hydrocodone + Ibuprofen,DB01050
+585,Pendo-ibuprofen,Ibuprofen,DB01050
+586,Pendo-ibuprofen (200mg Caplet),Ibuprofen,DB01050
+587,Pendo-ibuprofen Es,Ibuprofen,DB01050
+588,Advil Back Pain,Ibuprofen + Methocarbamol,DB01050
+589,Cold + Sinus Daytime,Ibuprofen + Pseudoephedrine,DB01050
+590,Advil Cold & Sinus PE,Ibuprofen + Phenylephrine,DB01050
+591,Advil Pain & Head Cold Night,Diphenhydramine + Ibuprofen,DB01050
+592,Ibuprofen Daytime,Ibuprofen,DB01050
+593,"Ibuprofen Daytime, Ibuprofen Nighttime",Diphenhydramine + Ibuprofen + Ibuprofen,DB01050
+594,Regular Strength Analgesic & Muscle Relaxant Caplets,Ibuprofen + Methocarbamol,DB01050
+595,Regular Ibuprofen,Ibuprofen,DB01050
+596,Jamp-ibuprofen,Ibuprofen,DB01050
+597,Motrin Caplet,Ibuprofen,DB01050
+598,Junior Strength Motrin Caplets,Ibuprofen,DB01050
+599,Ibuprofen and Pseudoephedrine,Ibuprofen + Pseudoephedrine,DB01050
+600,Motrin Ib Menstrual Pain,Ibuprofen,DB01050
+601,Super Strength Motrin Ib Menstrual Pain,Ibuprofen,DB01050
+602,Advil Cold & Sinus Convenience Pack,Chlorpheniramine + Ibuprofen + Ibuprofen + Pseudoephedrine + Pseudoephedrine,DB01050
+603,Ibuprofen Caplets,Ibuprofen,DB01050
+604,Cold + Sinus,Ibuprofen + Pseudoephedrine,DB01050
+605,Motrin Liquid Gels 200mg,Ibuprofen,DB01050
+606,Cold + Sinus Nighttime,Chlorpheniramine + Ibuprofen + Pseudoephedrine,DB01050
+607,Ibuprofen Liquid Capsules,Ibuprofen,DB01050
+608,Motrin Cold & Sinus Pain,Ibuprofen + Pseudoephedrine,DB01050
+609,Ibuprofen + Pseudoephedrine Caplets,Ibuprofen + Pseudoephedrine,DB01050
+610,Cold and Sinus Plus,Chlorpheniramine + Ibuprofen + Pseudoephedrine,DB01050
+611,Nighttime Pain Reliever,Diphenhydramine + Ibuprofen,DB01050
+612,Ibuprofen Extra Strength Caplets,Ibuprofen,DB01050
+613,Advil 12 Hour,Ibuprofen,DB01050
+614,Advil Headache & Migraine Pain Caplets,Ibuprofen,DB01050
+615,Advil Headache & Migraine Pain Tablets,Ibuprofen,DB01050
+616,Advil Headache & Migraine Pain Extra Strength Caplets,Ibuprofen,DB01050
+617,Muscle & Joint,Ibuprofen,DB01050
+618,"Ibuprofen Capsules, 200mg",Ibuprofen,DB01050
+619,Ibuprofen Liquid Gel Capsules,Ibuprofen,DB01050
+620,Cold & Sinus Relief Capsules,Ibuprofen + Pseudoephedrine,DB01050
+621,Ibuprofen+methocarbamol Caplets,Ibuprofen + Methocarbamol,DB01050
+622,"Nighttime Cold, Cough & Flu",Diphenhydramine + Ibuprofen,DB01050
+623,Muscle Relaxant and Analgesic Caplets,Ibuprofen + Methocarbamol,DB01050
+624,Cold + Sinus Caplets,Ibuprofen + Pseudoephedrine,DB01050
+625,"Ibuprofen Capsules, 400mg",Ibuprofen,DB01050
+626,Platinum Muscle and Back Pain Relief,Ibuprofen + Methocarbamol,DB01050
+627,Children's Motrin Chewable Tablets,Ibuprofen,DB01050
+628,Junior Strength Motrin Chewable Tablets,Ibuprofen,DB01050
+629,Advil Migraine Caplets,Ibuprofen,DB01050
+630,Advil Migraine Tablets,Ibuprofen,DB01050
+631,Advil Migraine Extra Strength,Ibuprofen,DB01050
+632,Advil Headache & Migraine Caplets,Ibuprofen,DB01050
+633,Advil Headache & Migraine Tablets,Ibuprofen,DB01050
+634,Advil Headache & Migraine Extra Strength,Ibuprofen,DB01050
+635,Advil Headache Caplets,Ibuprofen,DB01050
+636,Advil Headache Tablets,Ibuprofen,DB01050
+637,Advil Headache Extra Strength,Ibuprofen,DB01050
+638,Vicks Dayquil Sinus Pr.and Pain ReL.W.ibupr.,Ibuprofen + Pseudoephedrine,DB01050
+639,Motrin Gelcaps,Ibuprofen,DB01050
+640,Pamprin Ibuprofen Formula,Ibuprofen,DB01050
+641,Extra Strength Ibuprofen Liquid Filled Capsules,Ibuprofen,DB01050
+642,Super Strength Motrin Ib Liquid Gels,Ibuprofen,DB01050
+643,Ibuprofen Menstrual Pain Relief,Ibuprofen,DB01050
+644,Ibuprofen Tablets,Ibuprofen,DB01050
+645,Teva-profen,Ibuprofen,DB01050
+646,Extra Strength Ibuprofen Liquid Capsules,Ibuprofen,DB01050
+647,Analgesic and Muscle Relaxant,Ibuprofen + Methocarbamol,DB01050
+648,Ibuprofen Tab 400mg,Ibuprofen,DB01050
+649,"Advil Cold, Sinus & Flu Extra Strength",Chlorpheniramine + Ibuprofen + Pseudoephedrine,DB01050
+650,Nighttime Pain Relief,Diphenhydramine + Ibuprofen,DB01050
+651,Extra Strength Ibuprofen Liquid Gel Capsules,Ibuprofen,DB01050
+652,Muscle and Back Pain Platinum Relief,Ibuprofen + Methocarbamol,DB01050
+653,Advil Mini-gels,Ibuprofen,DB01050
+654,Combogesic,Acetaminophen + Ibuprofen,DB01050
+655,"Ibuprofen Capsules, 200 mg",Ibuprofen,DB01050
+656,"Ibuprofen Capsules, 400 mg",Ibuprofen,DB01050
+657,Apo-ibuprofen Caplet,Ibuprofen,DB01050
+658,Ibuprofen and Diphenhydramine Hydrochloride Capsules,Diphenhydramine + Ibuprofen,DB01050
+659,Ibuprofen Liquid Gels,Ibuprofen,DB01050
+660,Ibuprofen and Pseudoephedrine Hydrochloride Capsules,Ibuprofen + Pseudoephedrine,DB01050
+661,Neofordex,Dexamethasone,DB01234
+662,Ozurdex,Dexamethasone,DB01234
+663,Baycadron,Dexamethasone,DB01234
+664,DEXAMETHASONE Sodium Phosphate,Dexamethasone,DB01234
+665,Neo-poly-dex,Dexamethasone + Neomycin + Polymyxin B,DB01234
+666,Npd,Dexamethasone + Neomycin + Polymyxin B,DB01234
+667,Neomycin Polymyxin B Sulfates and Dexamethasone,Dexamethasone + Neomycin + Polymyxin B,DB01234
+668,Dexamethasone Sodium Phosphate,Dexamethasone,DB01234
+669,Ciprodex,Ciprofloxacin + Dexamethasone,DB01234
+670,Neomycin and Polymyxin B Sulfates and Dexamethasone,Dexamethasone + Neomycin + Polymyxin B,DB01234
+671,"Neomycin Sulfate, Polymyxin B Sulfate and Dexamethasone",Dexamethasone + Neomycin + Polymyxin B,DB01234
+672,Dexamethasone,Dexamethasone,DB01234
+673,Tobramycin and Dexamethasone,Dexamethasone + Tobramycin,DB01234
+674,TobraDex,Dexamethasone + Tobramycin,DB01234
+675,Tobradex,Dexamethasone + Tobramycin,DB01234
+676,AK-Trol,Dexamethasone + Neomycin + Polymyxin B,DB01234
+677,999 Itch Relief,Dexamethasone + Levomenthol + Synthetic camphor,DB01234
+678,Hexadrol Phosphate,Dexamethasone,DB01234
+679,Dexamethsone,Dexamethasone,DB01234
+680,Dexlido-M Kit,Bupivacaine + Dexamethasone + Lidocaine + Povidone-iodine,DB01234
+681,Zema Pak,Dexamethasone,DB01234
+682,Dexamethasone Intensol,Dexamethasone,DB01234
+683,LoCort 7-Day,Dexamethasone,DB01234
+684,LoCort 11-Day,Dexamethasone,DB01234
+685,ZonaCort 7-Day,Dexamethasone,DB01234
+686,ZonaCort 11-Day,Dexamethasone,DB01234
+687,DoubleDex Kit,Dexamethasone + Povidone-iodine,DB01234
+688,Decadron DP,Dexamethasone,DB01234
+689,Decadron,Dexamethasone,DB01234
+690,Cushings Syndrome Diagnostic,Benzalkonium + Dexamethasone,DB01234
+691,Methedex,Dexamethasone + Neomycin + Polymyxin B,DB01234
+692,Mas Care-pak Dexamethasone,Dexamethasone + Povidone-iodine,DB01234
+693,ReadySharp Anesthetics plus Dexamethasone,Bupivacaine + Dexamethasone + Lidocaine,DB01234
+694,Dexamethasone Sodium Phosphates,Dexamethasone,DB01234
+695,Dexamethasone sodium phosphate,Dexamethasone,DB01234
+696,TopiDex,Dexamethasone + Povidone-iodine,DB01234
+697,Dex-Moxi PF,Dexamethasone + Moxifloxacin,DB01234
+698,DexMoxiKetor PF,Dexamethasone + Ketorolac + Moxifloxacin,DB01234
+699,Dexamethasone Tablets,Dexamethasone,DB01234
+700,Dexlido Kit,Dexamethasone + Lidocaine + Povidone-iodine,DB01234
+701,Mardex 25 Kit,Bupivacaine + Dexamethasone + Povidone-iodine,DB01234
+702,Maxidex,Dexamethasone,DB01234
+703,HiDex 6-day,Dexamethasone,DB01234
+704,Dxevo,Dexamethasone,DB01234
+705,Dexamethasone Sodium Phosphate 0.1% / Finasteride 0.1% / Minoxidil 5% / Tretinoin 0.025%,Dexamethasone + Finasteride + Minoxidil + Tretinoin,DB01234
+706,Dexamethasone Sodium Phosphate 0.1% / Finasteride 0.1% / Minoxidil 5%,Dexamethasone + Finasteride + Minoxidil,DB01234
+707,Dexopin,Dexamethasone + Povidone-iodine + Ropivacaine,DB01234
+708,Ropidex,Dexamethasone + Povidone-iodine + Ropivacaine,DB01234
+709,Maxitrol,Dexamethasone + Neomycin + Polymyxin B,DB01234
+710,Tobradex ST,Dexamethasone + Tobramycin,DB01234
+711,Dextenza,Dexamethasone,DB01234
+712,TaperDex 12-day,Dexamethasone,DB01234
+713,Dexamethasone 1.5 mg,Dexamethasone,DB01234
+714,ReadySharp Dexamethasone,Dexamethasone,DB01234
+715,Ludaxine,Bupivacaine + Dexamethasone,DB01234
+716,Viadox,Dexamethasone,DB01234
+717,Neuromaquel Neuroma/Anti-Inflammatory System,Bupivacaine + Dexamethasone,DB01234
+718,Cortaren Corticosteroid/Anti-Inflammatory System,Bupivacaine + Dexamethasone + Triamcinolone,DB01234
+719,Dex-Moxi,Dexamethasone + Moxifloxacin,DB01234
+720,Dex-Moxi-Ketor,Dexamethasone + Ketorolac + Moxifloxacin,DB01234
+721,TaperDex 6-day,Dexamethasone,DB01234
+722,TaperDex 7-day,Dexamethasone,DB01234
+723,Dexabliss,Dexamethasone,DB01234
+724,DEXAMETHASONE 6-Day,Dexamethasone,DB01234
+725,Hemady,Dexamethasone,DB01234
+726,Gati-Dex,Dexamethasone + Gatifloxacin,DB01234
+727,Dexycu,Dexamethasone,DB01234
+728,ZoDex,Dexamethasone,DB01234
+729,Dmt Suik,Dexamethasone,DB01234
+730,PMS-dexamethasone Sod Phosphate Inj 10mg/ml,Dexamethasone,DB01234
+731,PMS Dexamethasone Tab 4mg,Dexamethasone,DB01234
+732,PMS Dexamethasone Tab 0.75mg USP,Dexamethasone,DB01234
+733,PMS Dexamethasone Tab 0.5mg USP,Dexamethasone,DB01234
+734,Dexamethasone-omega,Dexamethasone,DB01234
+735,Ratio-dexamethasone,Dexamethasone,DB01234
+736,Dexamethasone Sodium Phosphate Inj USP 4mg/ml,Dexamethasone,DB01234
+737,Apo-dexamethasone,Dexamethasone,DB01234
+738,PMS-dexamethasone,Dexamethasone,DB01234
+739,Pro-dexamethasone - 4,Dexamethasone,DB01234
+740,Hexadrol Phosphate Inj 4mg/ml,Dexamethasone,DB01234
+741,Dexamethasone Sod Phos Inj 4mg/ml,Dexamethasone,DB01234
+742,R.O.-dexsone,Dexamethasone,DB01234
+743,Decadron Phosphate Inj 4mg/ml,Dexamethasone,DB01234
+744,Ocudex Liq 0.1%,Dexamethasone,DB01234
+745,Encor Dec Model 033-443 Imp 0.5mg/imp,Dexamethasone,DB01234
+746,Encor Dec Model 033-159 Imp 0.5mg/imp,Dexamethasone,DB01234
+747,Encor Dec Model 033-448 Imp 0.5mg/imp,Dexamethasone,DB01234
+748,Accufix II Dec Model 033-212,Dexamethasone,DB01234
+749,Encor Dec Model 033-856 Imp 0.5mg/imp,Dexamethasone,DB01234
+750,Encor Dec Model 033-757 Imp 0.5mg/imp,Dexamethasone,DB01234
+751,Hexadrol Phosphate Inj 10mg/ml,Dexamethasone,DB01234
+752,Dexasone 0.5mg,Dexamethasone,DB01234
+753,Dexasone 0.75mg,Dexamethasone,DB01234
+754,Neodecadron Eye Ear Soln 0.1%,Dexamethasone + Neomycin,DB01234
+755,Decadron Tab 4mg,Dexamethasone,DB01234
+756,Decadron Phosphate Eye Ear Sol 0.1%,Dexamethasone,DB01234
+757,Decadron Tab 0.5mg,Dexamethasone,DB01234
+758,Dexamethasone Sodium Phosphate 0.1%,Dexamethasone,DB01234
+759,Sofracort Sterile Ear/eye Ointment,Dexamethasone + Framycetin + Gramicidin D,DB01234
+760,"Ratio-dexamethasone Tablets, USP",Dexamethasone,DB01234
+761,Dexamethasone Sodium Phosphate Injection Sdz,Dexamethasone,DB01234
+762,"Dexamethasone Sodium Phosphate Injection, USP",Dexamethasone,DB01234
+763,Dexasone 4mg,Dexamethasone,DB01234
+764,Odan-trol,Dexamethasone + Neomycin + Polymyxin B,DB01234
+765,Odan-dexamethasone,Dexamethasone,DB01234
+766,PMS-dexamethasone Elixir,Dexamethasone,DB01234
+767,Dioptrol Suspension,Dexamethasone + Neomycin + Polymyxin B,DB01234
+768,Dioptrol Ointment,Dexamethasone + Neomycin + Polymyxin B,DB01234
+769,Dexamethasone Sod Phosph Inj 10mg/ml USP,Dexamethasone,DB01234
+770,Dexamethasone Omega Unidose,Dexamethasone,DB01234
+771,Cresophene Liq,Camphor + Dexamethasone + Parachlorophenol + Thymol,DB01234
+772,Dom-dexamethasone Tablet 4mg,Dexamethasone,DB01234
+773,Sandoz Opticort,Dexamethasone + Framycetin + Gramicidin D,DB01234
+774,PMS-dexamethasone Sod Phosphate Inj 4mg/ml,Dexamethasone,DB01234
+775,PHL-dexamethasone,Dexamethasone,DB01234
+776,Sandoz Dexamethasone,Dexamethasone,DB01234
+777,PMS-dexamethasone Sod Phosphate Dps 1mg/ml,Dexamethasone,DB01234
+778,Sofracort,Dexamethasone + Framycetin + Gramicidin D,DB01234
+779,Sofracort Sterile Ear/eye Drops,Dexamethasone + Framycetin + Gramicidin D,DB01234
+780,Sofracort Ear/eye Ointment,Dexamethasone + Framycetin + Gramicidin D,DB01234
+781,Netildex,Dexamethasone + Netilmicin,DB01234
+782,Prezista,Darunavir,DB01264
+783,Rezolsta,Cobicistat + Darunavir,DB01264
+784,Prezcobix,Cobicistat + Darunavir,DB01264
+785,Darunavir,Darunavir,DB01264
+786,Symtuza,Cobicistat + Darunavir + Emtricitabine + Tenofovir alafenamide,DB01264
+787,Pat-darunavir,Darunavir,DB01264
+788,Mylan-darunavir,Darunavir,DB01264
+789,Auro-darunavir,Darunavir,DB01264
+790,Apo-darunavir,Darunavir,DB01264
+791,Colchicine,Colchicine,DB01394
+792,Colcrys,Colchicine,DB01394
+793,Probenecid and Colchicine,Colchicine + Probenecid,DB01394
+794,Gloperba,Colchicine,DB01394
+795,Mitigare,Colchicine,DB01394
+796,Colchicine Tab 0.6mg,Colchicine,DB01394
+797,Jamp-colchicine,Colchicine,DB01394
+798,PMS-colchicine,Colchicine,DB01394
+799,Verban Ont,Colchicine + Podophyllin,DB01394
+800,Colchicine Tab 1mg,Colchicine,DB01394
+801,Euro-colchicine,Colchicine,DB01394
+802,Sandoz Colchicine,Colchicine,DB01394
+803,Kaletra,Lopinavir + Ritonavir,DB01601
+804,Lopinavir and Ritonavir,Lopinavir + Ritonavir,DB01601
+805,Lopinavir-Ritonavir,Lopinavir + Ritonavir,DB01601
+806,Actemra,Tocilizumab,DB06273
+807,Actemra ACTPen,Tocilizumab,DB06273
+808,Gilenya,Fingolimod,DB08868
+809,Fingolimod,Fingolimod,DB08868
+810,Teva-fingolimod,Fingolimod,DB08868
+811,Taro-fingolimod,Fingolimod,DB08868
+812,Mylan-fingolimod,Fingolimod,DB08868
+813,PMS-fingolimod,Fingolimod,DB08868
+814,Apo-fingolimod,Fingolimod,DB08868
+815,Mar-fingolimod,Fingolimod,DB08868
+816,Ach-fingolimod,Fingolimod,DB08868
+817,Sandoz Fingolimod,Fingolimod,DB08868
+818,Jamp Fingolimod,Fingolimod,DB08868
+819,Zepatier,Elbasvir + Grazoprevir,DB11574

@@ -1,0 +1,82 @@
+<!DOCTYPE html><html><head><title>R: Mauna Loa Atmospheric CO2 Concentration</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>co2</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Mauna Loa Atmospheric CO2 Concentration</h2>
+
+<h3>Description</h3>
+
+<p>Atmospheric concentrations of CO<code class="reqn">_2</code> are expressed in parts per
+million (ppm) and reported in the preliminary 1997 <abbr>SIO</abbr> manometric mole
+fraction scale.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>co2</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A time series of 468 observations; monthly from 1959 to 1997.
+</p>
+
+
+<h3>Details</h3>
+
+<p>The values for February, March and April of 1964 were missing and have
+been obtained by interpolating linearly between the values for January
+and May of 1964.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Keeling, C. D. and  Whorf, T. P.,
+Scripps Institution of Oceanography (<abbr>SIO</abbr>),
+University of California,
+La Jolla, California USA 92093-0220.
+</p>
+<p><a href="https://scrippsco2.ucsd.edu/data/atmospheric_co2/">https://scrippsco2.ucsd.edu/data/atmospheric_co2/</a>.
+</p>
+<p>Note that the data are subject to revision (based on recalibration of
+standard gases) by the Scripps institute, and hence may not agree
+exactly with the data provided by <span class="rlang"><b>R</b></span>.
+</p>
+
+
+<h3>References</h3>
+
+<p>Cleveland, W. S. (1993)
+<em>Visualizing Data</em>.
+New Jersey: Summit Press.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>require(graphics)
+plot(co2, ylab = expression("Atmospheric concentration of CO"[2]),
+     las = 1)
+title(main = "co2 data set")
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

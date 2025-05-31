@@ -1,0 +1,68 @@
+<!DOCTYPE html><html><head><title>R: Type of Drug Offense by Race</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Inmate_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Type of Drug Offense by Race</h2>
+
+<h3>Description</h3>
+
+<p>This dataset provides information on the type of drug offenses categorized by race. It contains
+records that can be used to analyze racial patterns in drug-related offenses. The data is sourced
+from a comparative study of federal and state prison inmates.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Inmate_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 28,047 observations and 2 variables:
+</p>
+
+<dl>
+<dt>race</dt><dd><p>Race of the individual (factor with 3 levels).</p>
+</dd>
+<dt>drug</dt><dd><p>Type of drug offense (factor with 4 levels).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been changed to 'Inmate_tbl_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+crimedatasets package and assists users in identifying its specific characteristics. The suffix 'tbl_df'
+indicates that the dataset is stored as a tibble. The original content has not been modified in any way.
+</p>
+<p>This dataset provides insights into racial disparities and trends in drug offenses.
+</p>
+
+
+<h3>Source</h3>
+
+<p>C. Wolf Harlow (1994), *Comparing Federal and State Prison Inmates*, NCJ-145864, U.S. Department of Justice, Bureau of Justice Statistics.
+</p>
+
+</main>
+
+</div>
+</body></html>

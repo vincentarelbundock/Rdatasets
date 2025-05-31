@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><title>R: Presence of Bacteria after Drug Treatments</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>bacteria_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Presence of Bacteria after Drug Treatments</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'bacteria_df' to avoid confusion with other datasets from
+packages in the R ecosystem and to follow the naming conventions of the 'MedDataSets' package.
+The suffix '_df' indicates that this dataset is a data frame, helping to distinguish it from
+other datasets within the package and from those in the broader R ecosystem. The original content
+of the dataset has not been modified in any way.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(bacteria_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 220 observations and 6 variables:
+</p>
+
+<dl>
+<dt>y</dt><dd><p>A factor indicating the presence (1) or absence (0) of bacteria.</p>
+</dd>
+<dt>ap</dt><dd><p>A factor indicating the result of an antibiotic susceptibility test (yes/no).</p>
+</dd>
+<dt>hilo</dt><dd><p>A factor indicating a high or low bacterial load (high/low).</p>
+</dd>
+<dt>week</dt><dd><p>An integer representing the week of treatment.</p>
+</dd>
+<dt>ID</dt><dd><p>A factor representing the unique identifier for each patient (with 50 possible levels).</p>
+</dd>
+<dt>trt</dt><dd><p>A factor indicating the treatment group (with 3 possible levels).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This dataset contains information on the presence of bacteria in patients after receiving
+various drug treatments, including the treatment group and duration of treatment.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data collected from clinical trials on antibiotic treatments and their effects on bacterial presence.
+</p>
+
+</main>
+
+</div>
+</body></html>

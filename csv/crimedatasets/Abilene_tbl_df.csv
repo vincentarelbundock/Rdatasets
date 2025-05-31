@@ -1,0 +1,17 @@
+rownames,crimetype,year,number
+1,Murder,1992,4
+2,Forcible rape,1992,89
+3,Robbery,1992,136
+4,Aggravated assault,1992,630
+5,Burglary,1992,1439
+6,Larceny theft,1992,2946
+7,Vehicle theft,1992,166
+8,Arson,1992,30
+9,Murder,1999,12
+10,Forcible rape,1999,36
+11,Robbery,1999,123
+12,Aggravated assault,1999,324
+13,Burglary,1999,1023
+14,Larceny theft,1999,3207
+15,Vehicle theft,1999,255
+16,Arson,1999,17

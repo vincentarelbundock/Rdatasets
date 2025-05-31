@@ -91,8 +91,7 @@
       source materials.
 
       Keen, K. J. (2010). *Graphics for Statistics and Data Analysis
-      with R*, Boca Raton: CRC Press,
-      https://www.unbc.ca/keen/graphics-for-statistics-and-data-analysis-with-r.
+      with R*, Boca Raton: CRC Press, https://www.unbc.ca/keen/textbook.
 
       .. rubric:: See Also
          :name: see-also

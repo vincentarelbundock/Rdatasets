@@ -1,0 +1,84 @@
+<!DOCTYPE html><html><head><title>R: Fraudulent Automobile Insurance Claims</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>fraudulent_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Fraudulent Automobile Insurance Claims</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains information on 127 automobile insurance claims arising from accidents in Massachusetts, USA, in 1989.
+Each claim was classified as either fraudulent or legitimate by consensus among four independent claims adjusters who thoroughly examined each case file.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(fraudulent_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 42 observations and 12 variables:
+</p>
+
+<dl>
+<dt>r1</dt><dd><p>Numeric score or rating 1 (numeric).</p>
+</dd>
+<dt>r2</dt><dd><p>Numeric score or rating 2 (numeric).</p>
+</dd>
+<dt>AC1</dt><dd><p>Indicator for a specific automobile claim condition (factor with 2 levels).</p>
+</dd>
+<dt>AC9</dt><dd><p>Indicator for a second specific automobile claim condition (factor with 2 levels).</p>
+</dd>
+<dt>AC16</dt><dd><p>Indicator for a third specific automobile claim condition (factor with 2 levels).</p>
+</dd>
+<dt>CL7</dt><dd><p>Claim-level indicator for condition 7 (factor with 2 levels).</p>
+</dd>
+<dt>CL11</dt><dd><p>Claim-level indicator for condition 11 (factor with 2 levels).</p>
+</dd>
+<dt>IJ2</dt><dd><p>Insurance adjuster’s information indicator for condition 2 (factor with 2 levels).</p>
+</dd>
+<dt>IJ3</dt><dd><p>Insurance adjuster’s information indicator for condition 3 (factor with 2 levels).</p>
+</dd>
+<dt>IJ4</dt><dd><p>Insurance adjuster’s information indicator for condition 4 (factor with 2 levels).</p>
+</dd>
+<dt>IJ6</dt><dd><p>Insurance adjuster’s information indicator for condition 6 (factor with 2 levels).</p>
+</dd>
+<dt>IJ12</dt><dd><p>Insurance adjuster’s information indicator for condition 12 (factor with 2 levels).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been changed to 'fraudulent_df' to avoid confusion with other datasets in the R ecosystem.
+This naming convention helps distinguish this dataset as part of the crimedatasets package and assists users in identifying its specific characteristics.
+The suffix 'df' indicates that the dataset is a traditional data frame in R. The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Fraudulent automobile insurance claims data from Massachusetts, 1989.
+</p>
+
+</main>
+
+</div>
+</body></html>
