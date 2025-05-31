@@ -1,5 +1,6 @@
 Rscript -e "devtools::install(dependencies = TRUE)"
 Rscript scrape.R
+Rscript csv_to_parquet.R
 cd doc
 ../documentation.sh
 cd ..
@@ -13,6 +14,8 @@ git checkout master -- doc;
 git checkout master -- parquet;
 git checkout master -- datasets.csv;
 git checkout master -- datasets.html;
+git checkout master -- README.md;
+git checkout master -- README.Rmd;
 git add .
 git commit -m "NA to empty"
 git push
