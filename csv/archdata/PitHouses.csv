@@ -1,0 +1,46 @@
+rownames,Hearths,Depth,Size,Form,Orient,Entrance
+1,Two,Deep,Medium,Rectangular,Parallel Coast,None
+2,One,Deep,Small,Rectangular,Parallel Coast,None
+3,Two,Deep,Small,Rectangular,Parallel Coast,None
+4,None,Shallow,Small,Rectangular,Parallel Coast,One Side
+5,Two,Shallow,Medium,Rectangular,Parallel Coast,Front and One Side
+6,None,Shallow,Medium,Rectangular,Parallel Coast,Front and One Side
+7,Charcoal Conc,Shallow,Medium,Rectangular,Parallel Coast,One Side
+8,One,Deep,Medium,Rectangular,Parallel Coast,None
+9,One,Deep,Small,Rectangular,Parallel Coast,None
+10,One,Shallow,Small,Rectangular,Gabel Toward Coast,One Side
+11,One,Deep,Small,Rectangular,Parallel Coast,None
+12,Charcoal Conc,Shallow,Medium,Rectangular,Parallel Coast,None
+13,Charcoal Conc,Shallow,Large,Rectangular,Parallel Coast,None
+14,Two,Deep,Large,Rectangular,Parallel Coast,None
+15,None,Deep,Small,Oval,Parallel Coast,One Side
+16,One,Deep,Medium,Oval,Parallel Coast,None
+17,Charcoal Conc,Deep,Small,Rectangular,Parallel Coast,One Side
+18,Two,Deep,Medium,Rectangular,Parallel Coast,None
+19,One,Shallow,Medium,Oval,Parallel Coast,One Side
+20,None,Shallow,Large,Rectangular,Parallel Coast,None
+21,Two,Shallow,Medium,Rectangular,Parallel Coast,None
+22,Two,Deep,Medium,Rectangular,Parallel Coast,None
+23,Charcoal Conc,Shallow,Medium,Oval,Gabel Toward Coast,None
+24,None,Deep,Medium,Oval,Parallel Coast,None
+25,Two,Shallow,Medium,Rectangular,Parallel Coast,None
+26,Two,Shallow,Medium,Rectangular,Parallel Coast,None
+27,None,Shallow,Medium,Rectangular,Gabel Toward Coast,None
+28,Charcoal Conc,Shallow,Medium,Oval,Parallel Coast,None
+29,Two,Deep,Medium,Rectangular,Parallel Coast,None
+30,Two,Deep,Medium,Oval,Parallel Coast,None
+31,Two,Deep,Small,Rectangular,Parallel Coast,None
+32,Two,Deep,Small,Rectangular,Parallel Coast,One Side
+33,None,Deep,Small,Rectangular,Parallel Coast,None
+34,Charcoal Conc,Deep,Small,Rectangular,Gabel Toward Coast,None
+35,Charcoal Conc,Shallow,Medium,Rectangular,Parallel Coast,None
+36,One,Deep,Small,Rectangular,Parallel Coast,None
+37,Two,Shallow,Medium,Rectangular,Parallel Coast,None
+38,Charcoal Conc,Deep,Small,Rectangular,Parallel Coast,None
+39,Charcoal Conc,Deep,Small,Rectangular,Parallel Coast,None
+40,Two,Deep,Small,Rectangular,Parallel Coast,None
+41,One,Deep,Small,Rectangular,Parallel Coast,None
+42,Charcoal Conc,Deep,Small,Rectangular,Gabel Toward Coast,None
+43,Charcoal Conc,Deep,Small,Rectangular,Parallel Coast,None
+44,Charcoal Conc,Shallow,Small,Rectangular,Parallel Coast,None
+45,Charcoal Conc,Deep,Small,Rectangular,Gabel Toward Coast,None

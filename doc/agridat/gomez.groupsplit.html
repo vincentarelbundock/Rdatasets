@@ -1,0 +1,93 @@
+<!DOCTYPE html><html><head><title>R: Group balanced split-plot design in rice</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gomez.groupsplit</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Group balanced split-plot design in rice
+</h2>
+
+<h3>Description</h3>
+
+<p>Group balanced split-plot design in rice
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 270 observations on the following 7 variables.
+</p>
+
+<dl>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>replicate factor, 3 levels</p>
+</dd>
+<dt><code>fert</code></dt><dd><p>fertilizer factor, 2 levels</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype factor, 45 levels</p>
+</dd>
+<dt><code>group</code></dt><dd><p>grouping (genotype) factor, 3 levels</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield of rice</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Genotype group S1 is less than 105 days growth duration, S2 is
+105-115 days growth duration, S3 is more than 115 days.
+</p>
+<p>Used with permission of Kwanchai Gomez.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Gomez, K.A. and Gomez, A.A.. 1984,
+Statistical Procedures for Agricultural Research.
+Wiley-Interscience.
+Page 120.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(agridat)
+data(gomez.groupsplit)
+dat &lt;- gomez.groupsplit
+
+# Gomez figure 3.10.  Obvious fert and group effects
+libs(desplot)
+desplot(dat, group ~ col*row,
+        out1=rep, col=fert, text=gen, # aspect unknown
+        main="gomez.groupsplit")
+
+# Gomez table 3.19 (not partitioned by group)
+m1 &lt;- aov(yield ~ fert*group + gen:group + fert:gen:group +
+            Error(rep/fert/group), data=dat)
+summary(m1)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

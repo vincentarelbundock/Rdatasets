@@ -1,0 +1,81 @@
+<!DOCTYPE html><html><head><title>R: British Mesolithic assemblages</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Mesolithic</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+British Mesolithic assemblages
+</h2>
+
+<h3>Description</h3>
+
+<p>Counts of 5 different stone artifact types from 33 Mesolithic sites in Britain.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("Mesolithic")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 33 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>Microliths</code></dt><dd><p>Number of microliths</p>
+</dd>
+<dt><code>Scrapers</code></dt><dd><p>Number of scrapers</p>
+</dd>
+<dt><code>Burins</code></dt><dd><p>Number of burins</p>
+</dd>
+<dt><code>Axes</code></dt><dd><p>Number of axes</p>
+</dd>
+<dt><code>Saws</code></dt><dd><p>Number of saws</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data on 33 Mesolithic (9000 - 4000 BCE) assemblages are a subset Pitts (1979) extracted from a set published by Mellars (1976). The data were scanned from Table A3 (Appendix A) in Baxter (1994).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Baxter, M. J. 1994. <em>Exploratory Multivariate Analysis in Archaeology</em>. Edinburgh University Press. Edinburgh.
+</p>
+<p>Mellars, P. 1976. Settlement Patterns and Industrial Variability in the British Mesolithic. In <em>Problems in Economic and Social Archaeology</em>, edited by Sieveking, G de G., I. H. Longworth, and K. E. Wilson, pp 375-99. Duckworth, London.
+</p>
+<p>Pitts,  M. W. 1979. Hides and Antlers: A New Look at the Gatherer-Hunter Site at Star Carr, North Yorkshire, England.  <em>World Archaeology</em> 11: 32-44.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Mesolithic)
+Mesolithic.pct &lt;- prop.table(as.matrix(Mesolithic), 1)*100
+apply(Mesolithic.pct, 2, quantile)
+cor(Mesolithic.pct)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

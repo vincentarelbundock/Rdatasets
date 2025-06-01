@@ -1,0 +1,107 @@
+<!DOCTYPE html><html><head><title>R: Seven African Acheulean Sites</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Acheulean</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Seven African Acheulean Sites</h2>
+
+<h3>Description</h3>
+
+<p>Stone tool assemblage data from a paper by Lewis Binford (1972). The sites include Olorgesailie, Isimila, Kalambo Falls, Lochard, Kariandusi, Broken Hill, and Nsongezi. Data include approximate latitude and longitude for each site as well as the frequency for each of 12 stone tool types.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Acheulean)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 7 observations showing the site location and the number of specimens for each of 12 stone artifact types. The localities are identified by <code>rownames</code>.
+</p>
+
+<dl>
+<dt><code>Lat</code></dt><dd><p>Latitude (approximate)</p>
+</dd>
+<dt><code>Long</code></dt><dd><p>Longitude (approximate)</p>
+</dd>
+<dt><code>HA</code></dt><dd><p>Number of handaxes</p>
+</dd>
+<dt><code>CL</code></dt><dd><p>Number of cleavers</p>
+</dd>
+<dt><code>KN</code></dt><dd><p>Number of knives</p>
+</dd>
+<dt><code>FS</code></dt><dd><p>Number of flake scrapers</p>
+</dd>
+<dt><code>D</code></dt><dd><p>Number of discoids</p>
+</dd>
+<dt><code>CS</code></dt><dd><p>Number of core scrapers</p>
+</dd>
+<dt><code>P</code></dt><dd><p>Number of picks</p>
+</dd>
+<dt><code>CH</code></dt><dd><p>Number of choppers</p>
+</dd>
+<dt><code>SP</code></dt><dd><p>Number of spheroids</p>
+</dd>
+<dt><code>OLT</code></dt><dd><p>Number of other large tools</p>
+</dd>
+<dt><code>SS</code></dt><dd><p>Number of small scrapers</p>
+</dd>
+<dt><code>OST</code></dt><dd><p>Number of other small tools</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Binford (1972) presents the percentages for 12 tool types at 32 assemblages from 7 sites (including Olorgesailie) which was based on Maxine Kleindienst's analysis of Lower Paleolithic Acheulean sites in Africa (1961 and 1962). The data were also analyzed by Glynn Isaac (1977). To create the Acheulean data set, the percentages in the original publication have been converted back to counts by dividing by 100 and multiplying by the number of tools. The assemblages from each site are summed. The largest assemblage is Kalambo Falls with 1349 artifacts and the smallest is Broken Hill (Kabwe) with 94. The <code>rownames</code> identify each site and an attribute named <code>Variables</code> provides variable labels for each column.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Binford, L. R. 1972. Contemporary Model Building: Paradigms and the Current State of Paleolithic Research. In <em>Models in Archaeology</em>, edited by D. L. Clarke, pp 109&ndash;166. Methuen.
+</p>
+
+
+<h3>References</h3>
+
+<p>Carlson, David L. 2017. <em>Quantitative Methods in Archaeology Using R</em>. Cambridge University Press, pp 304-314.
+</p>
+<p>Isaac, Glynn Ll. 1977. <em>Olorgesailie: Archeological Studies of a Middle Pleistocene Lake Basin in Kenya</em>. University of Chicago.
+</p>
+<p>Kleindienst, Maxine R. 1961. Variability within the Late Acheulian assemblage in East Africa. <em>South African Archaeological Bulletin</em> 16: 35&ndash;52.
+</p>
+<p>Kleindienst, Maxine R. 1962. Components of the East African Acheulian assemblage: an analytic approach. In <em>Actes du IVe Congrès Panafricain de Préhistoire et de l’Étude du Quaternaire</em>, ed. C. Mortelmans and J. Nenquin, pp 81-105.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Acheulean)
+# Compute percentages for each assemblage
+Acheulean.pct &lt;- prop.table(as.matrix(Acheulean[,3:14]), 1)*100
+round(Acheulean.pct, 2)
+plot(OST~HA, Acheulean.pct)
+boxplot(Acheulean.pct)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

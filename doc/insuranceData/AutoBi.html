@@ -1,0 +1,100 @@
+<!DOCTYPE html><html><head><title>R: Automobile Bodily Injury Claims</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>AutoBi</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Automobile Bodily Injury Claims
+</h2>
+
+<h3>Description</h3>
+
+<p>Data from the Insurance Research Council
+(IRC), a division of the American Institute for Chartered Property Casualty Underwriters
+and the Insurance Institute of America. The data, collected in 2002, contains information
+on demographic information about the claimant, attorney involvement and the economic
+loss (LOSS, in thousands), among other variables. We consider here a sample of n = 1; 340
+losses from a single state. The full 2002 study contains over 70,000 closed claims based on
+data from thirty-two insurers. The IRC conducted similar studies in 1977, 1987, 1992 and
+1997.</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(AutoBi)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1340 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt><code>CASENUM</code></dt><dd><p>Case number to identify the claim, a numeric vector</p>
+</dd>
+<dt><code>ATTORNEY</code></dt><dd><p>Whether the claimant is represented by an attorney
+(=1 if yes and =2 if no), a numeric vector</p>
+</dd>
+<dt><code>CLMSEX</code></dt><dd><p>Claimant's gender (=1 if male and =2 if female), a numeric vector</p>
+</dd>
+<dt><code>MARITAL</code></dt><dd><p>claimant's marital status (=1 if married, =2 if single,
+=3 if widowed, and =4 if divorced/separated), a numeric vector</p>
+</dd>
+<dt><code>CLMINSUR</code></dt><dd><p>Whether or not the driver of the claimant's vehicle was
+uninsured (=1 if yes, =2 if no, and =3 if not applicable), a numeric vector</p>
+</dd>
+<dt><code>SEATBELT</code></dt><dd><p>Whether or not the claimant was wearing a seatbelt/child
+restraint (=1 if yes, =2 if no, and =3 if not applicable), a numeric vector</p>
+</dd>
+<dt><code>CLMAGE</code></dt><dd><p>Claimant's age, a numeric vector</p>
+</dd>
+<dt><code>LOSS</code></dt><dd><p>The claimant's total economic loss (in thousands), a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>http://instruction.bus.wisc.edu/jfrees/jfreesbooks/Regression%20Modeling/BookWebDec2010/
+</p>
+<p>DataDescriptions.pdf
+</p>
+
+
+<h3>Source</h3>
+
+<p>http://instruction.bus.wisc.edu/jfrees/jfreesbooks/Regression%20Modeling/BookWebDec2010/data.html
+</p>
+
+
+<h3>References</h3>
+
+<p>Frees E.W. (2010), Regression Modeling with Actuarial and Financial Applications,
+Cambridge University Press.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(AutoBi)
+## maybe str(AutoBi) ; plot(AutoBi) ...
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

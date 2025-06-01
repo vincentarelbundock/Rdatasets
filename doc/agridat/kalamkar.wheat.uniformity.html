@@ -1,0 +1,143 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of wheat</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>kalamkar.wheat.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of wheat
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of wheat at Rothamsted, UK in 1931.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("kalamkar.wheat.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1280 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, grams/half-meter</p>
+</dd>
+<dt><code>ears</code></dt><dd><p>ears per half-meter</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Kalamkar's paper published in 1932. Estimated crop year 1931.
+</p>
+<p>Plot 18 of the Four Course Rotation Experiment, Great Hoos, at
+Rothamsted, UK was used.  Sown with Yeoman II wheat.
+</p>
+<p>Field width = 16 segments * 0.5 meters = 8 meters.
+</p>
+<p>Field length: 80 rows * 6 inches apart = 40 feet.
+</p>
+<p>The grain yield and number of ears for each half-meter length were
+recorded. This is quite a small field, only 1/40 acre in size.
+</p>
+<p>Edge rows have higher yields. Row-end units have higher yields than
+interior units.  These border effects are significant. Variation
+between rows is greater than variation within rows. Negative
+correlation between rows may indicate competition effects.
+</p>
+<p>For ears, Kalamkar discarded 4 rows from each side and 3 half-meter lengths at each end.
+</p>
+<p>Kalamkar suggested using four parallel half-meter rows as a sampling unit.
+</p>
+<p>Note, the Rothamsted report for 1931, page 57, says:
+During the year three workers (F. R. Immer, S. H. Justensen and
+R. J. Kalamkar) have taken up the question of the most efficient use
+of land in experiments in which an edge row must be discarded... 
+</p>
+
+
+<h3>Source</h3>
+
+<p>Kalamkar, R. J (1932).
+A Study in Sampling Technique with Wheat.
+The Journal of Agricultural Science, Vol.22(4), pp.783-796.
+https://doi.org/10.1017/S0021859600054599
+</p>
+
+
+<h3>References</h3>
+
+<p>None.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(kalamkar.wheat.uniformity)
+  dat &lt;- kalamkar.wheat.uniformity
+  
+  plot(yield ~ ears, dat, main="kalamkar.wheat.uniformity")
+  
+  # totals match Kalamkar
+  # sum(dat$yield) # 24112.5
+  # sum(dat$ears) # 25850
+  
+  libs(desplot)
+  desplot(dat, ears ~ col*row,
+          flip=TRUE, aspect=(80*0.5)/(16*1.64042), # true aspect
+          main="kalamkar.wheat.uniformity - ears")
+  desplot(dat, yield ~ col*row,
+          flip=TRUE, aspect=(80*0.5)/(16*1.64042), # true aspect
+          main="kalamkar.wheat.uniformity - yield")
+  
+  # ----------
+  
+  if(require("asreml", quietly=TRUE)){
+    libs(asreml,lucid)
+    
+    # Show the negative correlation between rows
+    dat &lt;- transform(dat,
+                     rowf=factor(row), colf=factor(col))
+    dat &lt;- dat[order(dat$rowf, dat$colf),]
+    m1 = asreml(yield ~ 1, data=dat, resid= ~ ar1(rowf):ar1(colf))
+    lucid::vc(m1)
+    ##             effect component std.error z.ratio bound pctch
+    ##        rowf:colf!R  81.53      3.525      23       P 0  
+    ## rowf:colf!rowf!cor  -0.09464   0.0277     -3.4     U 0.1
+    ## rowf:colf!colf!cor   0.2976    0.02629    11       U 0.1
+  }
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

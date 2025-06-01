@@ -1,0 +1,95 @@
+<!DOCTYPE html><html><head><title>R: NGRIP 50-year Average</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>ngrip2004</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>NGRIP 50-year Average</h2>
+
+<h3>Description</h3>
+
+<p>50-year averaged oxygen isotope data from the North Greenland Ice Core
+Project (ss09sea time scale).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>ngrip2004
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A <code>data.frame</code> with 4918 observations and 2 variables:
+</p>
+
+<dl>
+<dt>age</dt><dd><p><code>integer</code>: calendar age (years before 2000 AD), ss09sea time scale.</p>
+</dd>
+<dt>delta</dt><dd><p><code>numeric</code>: <code class="reqn">\delta^{18}O</code> (per mil).</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.ncei.noaa.gov/access/paleo-search/study/2481">https://www.ncei.noaa.gov/access/paleo-search/study/2481</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>North Greenland Ice Core Project members (2004). High-resolution record of
+Northern Hemisphere climate extending into the last interglacial period.
+<em>Nature</em>, 431(7005), 147-151. <a href="https://doi.org/10.1038/nature02805">doi:10.1038/nature02805</a>
+</p>
+
+
+<h3>See Also</h3>
+
+<p>Other palaeoenvironment data: 
+<code>epica2008</code>,
+<code>law2006</code>,
+<code>lisiecki2005</code>,
+<code>ngrip2010</code>,
+<code>spratt2016</code>
+</p>
+<p>Other isotopic data: 
+<code>lisiecki2005</code>,
+<code>ngrip2010</code>,
+<code>nydal1996</code>,
+<code>spratt2016</code>,
+<code>vegetation</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>plot(
+  x = ngrip2004$age / 1000,
+  y = ngrip2004$delta,
+  type = "l",
+  xlim = c(120, 0),
+  xlab = "ss09sea (ka b2k)",
+  ylab = expression(delta^{18}*"O")
+)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

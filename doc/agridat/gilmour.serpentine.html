@@ -1,0 +1,160 @@
+<!DOCTYPE html><html><head><title>R: Wheat yield in South Australia with serpentine row/col...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gilmour.serpentine</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Wheat yield in South Australia with serpentine row/col effects
+</h2>
+
+<h3>Description</h3>
+
+<p>An RCB experiment of wheat in South Australia, with strong spatial
+variation and serpentine row/column effects.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 330 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>replicate factor, 3 levels</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>wheat variety, 108 levels</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>A randomized complete block experiment.  There are 108 varieties in 3
+reps.  Plots are 6 meters long, 0.75 meters wide, trimmed to 4.2
+meters lengths before harvest. Trimming was done by spraying the wheat
+with herbicide.  The sprayer travelled in a serpentine pattern up and
+down columns.  The trial was sown in a serpentine manner with a
+planter that seeds three rows at a time (Left, Middle, Right).
+</p>
+<p>Field width 15 columns * 6 m = 90 m
+</p>
+<p>Field length 22 plots * .75 m = 16.5 m
+</p>
+<p>Used with permission of Arthur Gilmour, in turn with permission from
+Gil Hollamby.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Arthur R Gilmour and Brian R Cullis and Arunas P Verbyla, 1997.
+Accounting for natural and extraneous variation in the analysis of
+field experiments.
+Journal of Agric Biol Env Statistics, 2, 269-293.
+</p>
+
+
+<h3>References</h3>
+
+<p>N. W. Galwey. 2014.
+Introduction to Mixed Modelling: Beyond Regression and Analysis
+of Variance.
+Table 10.9 
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(gilmour.serpentine)
+  dat &lt;- gilmour.serpentine
+
+  libs(desplot)
+  desplot(dat, yield~ col*row,
+          num=gen, show.key=FALSE, out1=rep,
+          aspect = 16.5/90, # true aspect
+          main="gilmour.serpentine")
+
+
+  # Extreme field trend.  Blocking insufficient--needs a spline/smoother
+  # xyplot(yield~col, data=dat, main="gilmour.serpentine")
+
+  if(require("asreml", quietly=TRUE)) {
+  
+    libs(asreml,lucid)
+    
+    dat &lt;- transform(dat, rowf=factor(row), colf=factor(10*(col-8)))
+    dat &lt;- dat[order(dat$rowf, dat$colf), ] # Sort order needed by asreml
+    
+    # RCB
+    m0 &lt;- asreml(yield ~ gen, data=dat, random=~rep)
+    
+    # Add AR1 x AR1
+    m1 &lt;- asreml(yield ~ gen, data=dat,
+                 resid = ~ar1(rowf):ar1(colf))
+    
+    # Add spline
+    m2 &lt;- asreml(yield ~ gen + col, data=dat,
+                 random= ~ spl(col) + colf,
+                 resid = ~ar1(rowf):ar1(colf))
+  
+    # Figure 4 shows serpentine spraying
+    p2 &lt;- predict(m2, data=dat, classify="colf")$pvals
+    plot(p2$predicted, type='b', xlab="column number", ylab="BLUP")
+  
+    # Define column code (due to serpentine spraying)
+    # Rhelp doesn't like double-percent modulus symbol, so compute by hand
+    dat &lt;- transform(dat, colcode = factor(dat$col-floor((dat$col-1)/4)*4 -1))
+    
+    m3 &lt;- asreml(yield ~ gen + lin(colf) + colcode, data=dat,
+                 random= ~ colf + rowf + spl(colf),
+                 resid = ~ar1(rowf):ar1(colf))
+  
+    # Figure 6 shows serpentine row effects
+    p3 &lt;- predict(m3, data=dat, classify="rowf")$pvals
+    plot(p3$predicted, type='l', xlab="row number", ylab="BLUP")
+    text(1:22, p3$predicted, c('L','L','M','R','R','M','L','L',
+                               'M','R','R','M','L','L','M','R','R','M','L','L','M','R'))
+    
+    # Define row code (due to serpentine planting). 1=middle, 2=left/right
+    dat &lt;- transform(dat, rowcode = factor(row))
+    levels(dat$rowcode) &lt;- c('2','2','1','2','2','1','2','2','1',
+                             '2','2','1','2','2','1','2','2','1','2','2','1','2')
+    
+    m6 &lt;- asreml(yield ~ gen + lin(colf) + colcode +rowcode, data=dat,
+                 random= ~ colf + rowf + spl(col),
+                 resid = ~ar1(rowf):ar1(colf))
+    plot(varioGram(m6), xlim=c(0:17), ylim=c(0,11), zlim=c(0,4000),
+         main="gilmour.serpentine")
+  }
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

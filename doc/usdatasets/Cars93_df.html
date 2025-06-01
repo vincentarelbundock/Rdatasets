@@ -1,0 +1,66 @@
+<!DOCTYPE html><html><head><title>R: Data from 93 Cars on Sale in the USA in 1993</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Cars93_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Data from 93 Cars on Sale in the USA in 1993</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'Cars93_df' to avoid confusion with other packages
+in the R ecosystem from which datasets have been sourced. This naming convention helps
+distinguish this dataset as part of the 'usdatasets' package and assists users in identifying
+its specific characteristics. The suffix '_df' identifies the dataset as a data frame. The original content of the dataset has not been modified in any way.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Cars93_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 54 observations and 6 variables:
+</p>
+
+<dl>
+<dt>type</dt><dd><p>Type of the car (factor with 3 levels).</p>
+</dd>
+<dt>price</dt><dd><p>Price of the car (in US dollars).</p>
+</dd>
+<dt>mpg_city</dt><dd><p>Miles per gallon in the city.</p>
+</dd>
+<dt>drive_train</dt><dd><p>Drive train type (factor with 3 levels).</p>
+</dd>
+<dt>passengers</dt><dd><p>Number of passengers the car can accommodate.</p>
+</dd>
+<dt>weight</dt><dd><p>Weight of the car (in pounds).</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>1993 Cars Data
+</p>
+
+</main>
+
+</div>
+</body></html>

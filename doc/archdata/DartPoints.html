@@ -1,0 +1,111 @@
+<!DOCTYPE html><html><head><title>R: Five dart point types from Fort Hood, Texas, U.S.A.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>DartPoints</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Five dart point types from Fort Hood, Texas, U.S.A.
+</h2>
+
+<h3>Description</h3>
+
+<p>Metric and categorical measurements on 91 Archaic dart points recovered during surface surveys at Fort Hood, Texas representing five types.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(DartPoints)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 91 observations on the following 17 variables.
+</p>
+
+<dl>
+<dt><code>Name</code></dt><dd><p>Dart point type: <code>Darl</code>, <code>Ensor</code>, <code>Pedernales</code>, <code>Travis</code>, <code>Wells</code></p>
+</dd>
+<dt><code>Catalog</code></dt><dd><p>Fort Hood catalog number</p>
+</dd>
+<dt><code>TARL</code></dt><dd><p>Texas Archeological Research Laboratory site number</p>
+</dd>
+<dt><code>Quad</code></dt><dd><p>Fort Hood Quad</p>
+</dd>
+<dt><code>Length</code></dt><dd><p>Maximum Length (mm)</p>
+</dd>
+<dt><code>Width</code></dt><dd><p>Maximum Width (mm)</p>
+</dd>
+<dt><code>Thickness</code></dt><dd><p>Maxmimum Thickness (mm)</p>
+</dd>
+<dt><code>B.Width</code></dt><dd><p>Basal width (mm)</p>
+</dd>
+<dt><code>J.Width</code></dt><dd><p>Juncture width (mm)</p>
+</dd>
+<dt><code>H.Length</code></dt><dd><p>Haft element length (mm)</p>
+</dd>
+<dt><code>Weight</code></dt><dd><p>Weight (gm)</p>
+</dd>
+<dt><code>Blade.Sh</code></dt><dd><p>Blade shape: <code>E - Excurvate</code>, <code>I - Incurvate</code>, <code>R - Recurvate</code>, <code>S - Straight</code></p>
+</dd>
+<dt><code>Base.Sh</code></dt><dd><p>Base shape: <code>E - Excurvate</code>, <code>I - Incurvate</code>, <code>R - Recurvate</code>, <code>S - Straight</code></p>
+</dd>
+<dt><code>Should.Sh</code></dt><dd><p>Shoulder shape: <code>E - Excurvate</code>, <code>I - Incurvate</code>, <code>S - Straight</code>, <code>X - None</code></p>
+</dd>
+<dt><code>Should.Or</code></dt><dd><p>Shoulder orientation: <code>B - Barbed</code>, <code>H - Horizontal</code>, <code>T - Tapered</code>, <code>X - None</code></p>
+</dd>
+<dt><code>Haft.Sh</code></dt><dd><p>Shape lateral haft element <code>A - Angular</code>, <code>E - Excurvate</code>, <code>I - Incurvate</code>, <code>R - Recurvate</code>, <code>S - Straight</code></p>
+</dd>
+<dt><code>Haft.Or</code></dt><dd><p>Orientation lateral haft element: <code>C - Concave</code>, <code>E - Expanding</code>, <code>P - Parallel</code>, <code>T - Contracting</code>, <code>V - Convex</code></p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Measurements on five types of dart points from Fort Hood in central Texas (Darl, Ensor, Pedernales, Travis, and Wells). The points were recovered during 10 different pedestrian survey projects during the 1980's and were classified and measured by H. Blaine Ensor using the system created by Futato (1983) as described in Carlson, S., et al 1987, pp 51-70 and Appendices 4 and 7.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Fort Hood Projectile Points. Electronic database compiling the results of multiple surface surveys at Fort Hood in the possession of David L. Carlson, Department of Anthropology, Texas A&amp;M University, College Station, TX. The artifacts are curated at Fort Hood, TX by the Cultural Resources Branch of the Directorate of Public Works.
+</p>
+
+
+<h3>References</h3>
+
+<p>Carlson, David L. 2017. <em>Quantitative Methods in Archaeology Using R</em>. Cambridge University Press, pp 52-60, 99-103, 106-107, 109-115, 148-157, 182-185, 198-211.
+</p>
+<p>Carlson, S. B., H. B. Ensor, D. L. Carlson, E. A. Miller, and D E. Young. 1987. Archaeological Survey at Fort Hood, Texas Fiscal Year 1984. <em>United States Army Fort Hood. Archaeological Resource Management Series, Research Report Number 14</em>.
+</p>
+<p>Futato, E. M. 1983. Projectile Point Morphology: Steps Toward a Formal Account. in Proceedings of the Thirty-fourth Southeastern Archaeological Conference, Lafayette, Louisiana, October 27-19, 1977. <em>Southeastern Archaeological Conference. Bulletin</em> 21: 38&ndash;81.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(DartPoints)
+boxplot(Length~Name, DartPoints)
+plot(Width~Length, DartPoints, pch=as.numeric(Name), main="FOrt Hood Dart Points")
+legend("topleft", levels(DartPoints$Name), pch=1:5)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

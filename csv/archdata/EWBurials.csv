@@ -1,0 +1,50 @@
+rownames,Group,North,West,Age,Sex,Direction,Looking,Goods
+011,2,96.96,90.32,Young Adult,Male,42,283,Present
+014,2,100.2,90.61,Young Adult,Male,28,272,Present
+015,2,101.74,91.62,Old Adult,Male,350,219,Present
+016a,2,101,90.47,Young Adult,Male,335,60,Absent
+018,2,101.65,90.46,Old Adult,Male,3,86,Present
+020,1,95.17,90.53,Young Adult,Male,142,21,Absent
+027,2,101.5,93.34,Old Adult,Male,328,244,Absent
+034,2,104.42,107.83,Young Adult,Male,351,214,Present
+041,2,104.12,109.34,Young Adult,Male,357,91,Absent
+043a,1,102.4,107.4,Middle Adult,Female,144,53,Absent
+052,2,94.23,102.65,Young Adult,Female,54,252,Present
+061,2,84.99,102.47,Middle Adult,Female,27,215,Absent
+069,2,91.68,102.9,Old Adult,Female,54,319,Present
+071,2,91.65,106.07,Adolescent,Male,64,335,Present
+076,2,97.24,88.54,Child,Male,17,275,Absent
+078,2,91.58,104.88,Young Adult,Female,83,8,Absent
+079,2,83.44,104.7,Middle Adult,Female,58,180,Absent
+089,2,103.44,88.6,Middle Adult,Male,41,271,Present
+090,2,103.02,89.11,Young Adult,Male,355,71,Absent
+099a,2,102.51,95.78,Middle Adult,Male,20,126,Present
+100,2,103.49,92.5,Old Adult,Female,46,139,Present
+104,2,103.26,100,Adult,Female,44,150,Present
+105,2,100.64,87.97,Old Adult,Female,48,292,Absent
+112,2,103.55,95.96,Adult,Female,2,245,Present
+115,2,103.83,94.25,Middle Adult,Female,9,116,Absent
+124,2,102.09,96.87,Young Adult,Female,45,140,Present
+127,1,100.39,89.2,Young Adult,Female,144,21,Absent
+131,1,103.1,91.42,Middle Adult,Female,121,20,Present
+143,1,103.37,93.88,Adolescent,Female,138,245,Absent
+144,1,100.28,93.59,Young Adult,Female,121,26,Absent
+151,1,102.83,86.35,Old Adult,Male,36,176,Absent
+155,1,100.03,97.37,Young Adult,Female,183,290,Present
+156,2,94.31,93.75,Old Adult,Male,35,135,Present
+164,2,94.35,89.16,Young Adult,Male,14,193,Present
+165,2,107.49,94.58,Child,Male,10,148,Present
+166,2,104.72,92.99,Young Adult,Male,28,264,Present
+174,2,107.38,90.96,Adult,Female,97,356,Absent
+175,2,105.86,92.57,Old Adult,Male,58,110,Present
+178,2,110.29,95.35,Middle Adult,Male,23,234,Absent
+185,2,106.85,101.38,Young Adult,Female,288,163,Present
+188,2,104.92,90.89,Old Adult,Male,26,246,Present
+195,2,106.16,90.84,Young Adult,Female,331,76,Present
+197,2,106.28,89.09,Adolescent,Female,28,313,Absent
+206,1,105.2,93.9,Middle Adult,Male,151,49,Present
+207,2,110.16,92.28,Young Adult,Female,1,238,Absent
+215,1,98.14,97.8,Old Adult,Male,142,35,Absent
+216,1,105.18,90.16,Middle Adult,Male,140,226,Absent
+217,2,106.52,91.07,Young Adult,Female,13,282,Present
+222a,1,115.8,97.22,Old Adult,Female,161,73,Absent

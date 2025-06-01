@@ -1,0 +1,119 @@
+<!DOCTYPE html><html><head><title>R: Split-plot experiment of rice, with subsamples</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gomez.splitplot.subsample</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Split-plot experiment of rice, with subsamples
+</h2>
+
+<h3>Description</h3>
+
+<p>Split-plot experiment of rice, with subsamples
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 186 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>time</code></dt><dd><p>time factor, T1-T4</p>
+</dd>
+<dt><code>manage</code></dt><dd><p>management, M1-M6</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>rep/block, R1-R3</p>
+</dd>
+<dt><code>sample</code></dt><dd><p>subsample, S1-S2</p>
+</dd>
+<dt><code>height</code></dt><dd><p>plant height (cm)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>A split-plot experiment in three blocks.  Whole-plot is 'management',
+sub-plot is 'time' of application, with two subsamples.  The data are
+the heights, measured on two single-hill sampling units in each plot.
+</p>
+<p>Used with permission of Kwanchai Gomez.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Gomez, K.A. and Gomez, A.A.. 1984,
+Statistical Procedures for Agricultural Research.
+Wiley-Interscience.
+Page 481.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(gomez.splitplot.subsample)
+dat &lt;- gomez.splitplot.subsample
+
+libs(HH)
+interaction2wt(height ~ rep + time + manage, data=dat,
+               x.between=0, y.between=0,
+               main="gomez.splitplot.subsample - plant height")
+
+
+# Management totals, Gomez table 6.8
+# tapply(dat$height, dat$manage, sum)
+
+# Gomez table 6.11 analysis of variance
+m1 &lt;- aov(height ~ rep + manage + time + manage:time +
+          Error(rep/manage/time), data=dat)
+summary(m1)
+## Error: rep
+##     Df Sum Sq Mean Sq
+## rep  2   2632    1316
+
+## Error: rep:manage
+##           Df Sum Sq Mean Sq F value Pr(&gt;F)
+## manage     7   1482  211.77   2.239 0.0944 .
+## Residuals 14   1324   94.59
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+## Error: rep:manage:time
+##             Df Sum Sq Mean Sq F value   Pr(&gt;F)
+## time         3  820.8  273.61   7.945 0.000211 ***
+## manage:time 21  475.3   22.63   0.657 0.851793
+## Residuals   48 1653.1   34.44
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+## Error: Within
+##           Df Sum Sq Mean Sq F value Pr(&gt;F)
+## Residuals 96  167.4   1.744
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

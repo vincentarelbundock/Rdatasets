@@ -1,0 +1,104 @@
+<!DOCTYPE html><html><head><title>R: Heart disease dataset</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>heartdisease</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Heart disease dataset</h2>
+
+<h3>Description</h3>
+
+<p>The dataset is to be used with a supervised classification ML model to classify heart disease.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>heartdisease
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 918 rows and 10 variables:
+</p>
+
+<dl>
+<dt>Age</dt><dd><p>age of the patient presenting with heart disease</p>
+</dd>
+<dt>Sex</dt><dd><p>gender of the patient</p>
+</dd>
+<dt>RestingBP</dt><dd><p>blood pressure for resting heart beat</p>
+</dd>
+<dt>Cholesterol</dt><dd><p>Cholesterol reading</p>
+</dd>
+<dt>FastingBS</dt><dd><p>blood sample of glucose after a patient fasts <a href="https://www.diabetes.co.uk/diabetes_care/fasting-blood-sugar-levels.html">https://www.diabetes.co.uk/diabetes_care/fasting-blood-sugar-levels.html</a></p>
+</dd>
+<dt>RestingECG</dt><dd><p>Resting echocardiography is an indicator of previous myocardial infarction e.g. heart attack</p>
+</dd>
+<dt>MaxHR</dt><dd><p>Maximum heart rate</p>
+</dd>
+<dt>Angina</dt><dd><p>chest pain caused by decreased flood flow <a href="https://www.nhs.uk/conditions/angina/">https://www.nhs.uk/conditions/angina/</a></p>
+</dd>
+<dt>HeartPeakReading</dt><dd><p>reading at the peak of the heart rate</p>
+</dd>
+<dt>HeartDisease</dt><dd><p>the classification label of whether patient has heart disease or not</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Collected by Gary Hutson <a href="mailto:hutsons-hacks@outlook.com">hutsons-hacks@outlook.com</a>, Dec-2021
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library(dplyr)
+library(ConfusionTableR)
+data(heartdisease)
+
+# Convert diabetes data to factor'
+hd &lt;- heartdisease %&gt;%
+ glimpse() %&gt;%
+ mutate(HeartDisease = as.factor(HeartDisease))
+# Check that the label is now a factor
+ is.factor(hd$HeartDisease)
+ # Dummy encoding
+# Get categorical columns
+hd_cat &lt;- hd  %&gt;%
+ dplyr::select_if(is.character)
+ # Dummy encode the categorical variables
+ # Specify the columns to encode
+ cols &lt;- c("RestingECG", "Angina", "Sex")
+ # Dummy encode using dummy_encoder in ConfusionTableR package
+ coded &lt;- ConfusionTableR::dummy_encoder(hd_cat, cols, remove_original = TRUE)
+coded &lt;- coded %&gt;%
+    select(RestingECG_ST, RestingECG_LVH, Angina=Angina_Y,
+    Sex=Sex_F)
+# Remove column names we have encoded from original data frame
+hd_one &lt;- hd[,!names(hd) %in% cols]
+# Bind the numerical data on to the categorical data
+hd_final &lt;- bind_cols(coded, hd_one)
+# Output the final encoded data frame for the ML task
+glimpse(hd_final)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

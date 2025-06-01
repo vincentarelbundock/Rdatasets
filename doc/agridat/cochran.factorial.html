@@ -1,0 +1,113 @@
+<!DOCTYPE html><html><head><title>R: Factorial experiment of beans, 2x2x2x2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>cochran.factorial</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Factorial experiment of beans, 2x2x2x2
+</h2>
+
+<h3>Description</h3>
+
+<p>Factorial experiment of beans, 2x2x2x2.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("cochran.factorial")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 32 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>rep</code></dt><dd><p>rep factor</p>
+</dd>
+<dt><code>block</code></dt><dd><p>block factor</p>
+</dd>
+<dt><code>trt</code></dt><dd><p>treatment factor, 16 levels</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield (pounds)</p>
+</dd>
+<dt><code>d</code></dt><dd><p>dung treatment, 2 levels</p>
+</dd>
+<dt><code>n</code></dt><dd><p>nitrogen treatment, 2 levels</p>
+</dd>
+<dt><code>p</code></dt><dd><p>phosphorous treatment, 2 levels</p>
+</dd>
+<dt><code>k</code></dt><dd><p>potassium treatment, 2 levels</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Conducted by Rothamsted Experiment Station in 1936.
+</p>
+<p>There were 4 treatment factors:
+</p>
+<p>2 d dung levels: None, 10 tons/acre.
+</p>
+<p>2 n nitrochalk levels: None, 0.4 hundredweight nitrogen per acre.
+</p>
+<p>2 p superphosphate levels: None, 0.6 hundredweight per acre
+</p>
+<p>2 k muriate of potash levels: None, 1 hundredweight K20 per acres.
+</p>
+<p>The response variable is the yield of beans.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Cochran, W.G. and Cox, G.M. (1957),
+Experimental Designs, 2nd ed., Wiley and Sons, New York, p. 160.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(cochran.factorial)
+dat &lt;- cochran.factorial
+
+# Ensure factors
+dat &lt;- transform(dat, d=factor(d), n=factor(n), p=factor(p), k=factor(k))
+
+# Cochran table 6.5.
+m1 &lt;- lm(yield ~ rep * block + (d+n+p+k)^3, data=dat)
+anova(m1)
+
+
+libs(FrF2)
+aliases(m1)
+MEPlot(m1, select=3:6,
+       main="cochran.factorial - main effects plot")
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

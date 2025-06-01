@@ -1,0 +1,147 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of wheat</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>smith.wheat.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of wheat
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of wheat in Australia.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("smith.wheat.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1080 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row ordinate</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column ordinate</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>grain yield per plot, grams</p>
+</dd>
+<dt><code>ears</code></dt><dd><p>number of ears per plot</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Experiment was grown in Canberra, Australia, 1934.
+</p>
+<p>The data are the yield of grain per plot and the number of &quot;ears&quot;.
+Each plot was 1 foot long by 0.5 foot.
+</p>
+<p>Field width: 36 columns x 1 foot = 36 feet.
+</p>
+<p>Field length: 30 rows x 0.5 foot = 15 feet.
+</p>
+<p>Notes:
+</p>
+<p>There are 2 copies of the yield data at Rothamsted library.
+Let Copy A be the one with dark, hand-drawn grid lines, and Copy B be
+the one without hand-drawn grid lines. Both copies are hand-written,
+likely copied from the original data.
+</p>
+<p>For row 4 (from top) column 34: Copy A has yield 164 while Copy B has
+yield 154. The value of 154 appears to be correct, since it leads to
+the same row and column totals as shown on both Copy A and Copy B.
+</p>
+<p>For row 20, column 28, both Copy A and Copy B show yield 283. This
+appears to be a copy error. We replaced the value 283 by 203, so that
+the row and column totals match the values on both Copy A and Copy B,
+and also the variance of the data matches the value in Smith (1938),
+which is 2201 on page 7.
+</p>
+<p>The documents at Rothamsted claim that the grain yield is shown as
+&quot;Yields of grain in decigrams per foot length&quot;.  However, we believe
+that that actual unit of weight is grams. Note that the yield values
+in the high-yielding parts of the field are close to 200 g per plot,
+and a plot is 0.5 sq feet.  Multiply by 8 to get 1600 g per 4 sq
+feet. In Smith's paper, the fertility contour map in figure 1 shows
+the high-yielding part of the field having a yield close to
+&quot;16 d.kg per 4 sq ft&quot;, and 16 d.kg = 16 kg = 1600 g.
+</p>
+<p>This data was made available with special help from the staff at
+Rothamsted Research Library.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Rothamsted Research Library, Box STATS17  WG Cochran, Folder 7.
+</p>
+
+
+<h3>References</h3>
+
+<p>H. Fairfield Smith (1938).
+An empirical law describing heterogeneity in the yields of
+agricultural crops.
+The Journal of Agricultural Science, volume 28, Issue 1, January
+1938, pp. 1 - 23. 
+https://doi.org/10.1017/S0021859600050516
+</p>
+<p>Peter McCullagh &amp; David Clifford. (2006).
+Evidence for conformal invariance of crop yields.
+Proc. R. Soc. A (2006) 462, 2119–2143
+http://www.stat.uchicago.edu/~pmcc/reml/
+https://doi.org/:10.1098/rspa.2006.1667
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+  library(agridat)
+  data(smith.wheat.uniformity)
+  dat &lt;- smith.wheat.uniformity
+
+  libs(desplot)
+  desplot(dat, yield ~ col*row,
+          main="smith.wheat.uniformity",
+          flip=TRUE, aspect=15/30)
+
+  xyplot(yield ~ ears, data=dat)
+
+  libs(agricolae,reshape2)
+
+  # Compare to Smith Fig. 2
+  m1 &lt;- index.smith(acast(dat, row~col, value.var='yield'),
+                    main="smith.wheat.uniformity",
+                    col="red")$uni
+  m1 # Compare to Smith table I
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

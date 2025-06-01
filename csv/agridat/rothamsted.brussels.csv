@@ -1,0 +1,49 @@
+rownames,row,col,yield,trt,block
+1,1,1,235,low dust,B1
+2,1,2,213,none,B1
+3,1,3,216,none,B1
+4,1,4,273,lo manu,B1
+5,1,5,268,hi manu,B3
+6,1,6,243,low dust,B3
+7,1,7,240,hi dust,B3
+8,1,8,243,lo sulph,B3
+9,2,1,214,none,B1
+10,2,2,238,lo soot,B1
+11,2,3,237,lo sulph,B1
+12,2,4,243,hi manu,B1
+13,2,5,240,hi soot,B3
+14,2,6,255,lo manu,B3
+15,2,7,204,none,B3
+16,2,8,220,none,B3
+17,3,1,237,hi dust,B1
+18,3,2,245,hi soot,B1
+19,3,3,237,none,B1
+20,3,4,251,hi sulph,B1
+21,3,5,255,none,B3
+22,3,6,250,none,B3
+23,3,7,260,hi sulph,B3
+24,3,8,246,lo soot,B3
+25,4,1,257,hi dust,B2
+26,4,2,258,none,B2
+27,4,3,254,lo manu,B2
+28,4,4,266,lo soot,B2
+29,4,5,263,hi dust,B4
+30,4,6,234,none,B4
+31,4,7,240,low dust,B4
+32,4,8,253,lo manu,B4
+33,5,1,266,hi sulph,B2
+34,5,2,266,none,B2
+35,5,3,256,hi manu,B2
+36,5,4,254,hi soot,B2
+37,5,5,259,hi manu,B4
+38,5,6,249,none,B4
+39,5,7,265,lo sulph,B4
+40,5,8,227,none,B4
+41,6,1,260,low dust,B2
+42,6,2,248,none,B2
+43,6,3,228,none,B2
+44,6,4,235,lo sulph,B2
+45,6,5,248,hi soot,B4
+46,6,6,270,hi sulph,B4
+47,6,7,250,lo soot,B4
+48,6,8,236,none,B4

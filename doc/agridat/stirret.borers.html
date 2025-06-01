@@ -1,0 +1,97 @@
+<!DOCTYPE html><html><head><title>R: Corn borer control by application of fungal spores.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>stirret.borers</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Corn borer control by application of fungal spores.
+</h2>
+
+<h3>Description</h3>
+
+<p>Corn borer control by application of fungal spores.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 60 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>block</code></dt><dd><p>block, 15 levels</p>
+</dd>
+<dt><code>trt</code></dt><dd><p>treatment, 4 levels</p>
+</dd>
+<dt><code>count1</code></dt><dd><p>count of borers on August 18</p>
+</dd>
+<dt><code>count2</code></dt><dd><p>count of borers on October 19</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Experiment conducted in 1935, Ottawa.  European corn borer infestation
+was established by application of egg masses to plants.
+Treatments were applied on July 8 and July 19 at two levels, 0 and 40
+grams per acre.  The number of borers per plot were counted on
+Aug 18 and Oct 19.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Stirrett, George M and Beall, Geoffrey and Timonin, M. (1937).
+A field experiment on the control of the European corn borer, Pyrausta
+nubilalis Hubn, by Beauveria bassiana Vuill.
+<em>Sci. Agric.</em>, 17, 587&ndash;591.  Table 2.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+  library(agridat)
+  data(stirret.borers)
+  dat &lt;- stirret.borers
+
+  libs(lattice)
+  xyplot(count2~count1|trt,dat,
+         main="stirret.borers - by treatment",
+         xlab="Early count of borers", ylab="Late count")
+  
+  # Even though the data are counts, Normal distribution seems okay
+  # qqmath(~count1|trt, dat, main="stirret.borers")
+  
+  m1 &lt;- lm(count1 ~ -1 + trt + block, dat)
+  anova(m1)
+  # predicted means = main effect + average of 15 block effects
+  # note block 1 effect is 0
+  # coef(m1)[1:4] + sum(coef(m1)[-c(1:4)])/15
+  ##  trtBoth trtEarly  trtLate  trtNone 
+  ## 47.86667 62.93333 40.93333 61.13333 
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

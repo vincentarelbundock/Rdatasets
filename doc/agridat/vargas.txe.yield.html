@@ -1,0 +1,217 @@
+<!DOCTYPE html><html><head><title>R: Treatment x environment interaction in agronomy trials</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>vargas.txe</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Treatment x environment interaction in agronomy trials
+</h2>
+
+<h3>Description</h3>
+
+<p>Treatment x environment interaction in agronomy trials
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("vargas.txe.covs")
+data("vargas.txe.yield")
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>The 'vargas.txe.covs' data has 10 years of measurements on 28
+environmental covariates:
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+<dt><code>MTD</code></dt><dd><p>mean maximum temperature in December</p>
+</dd>
+<dt><code>MTJ</code></dt><dd><p>mean maximum temperature in January</p>
+</dd>
+<dt><code>MTF</code></dt><dd><p>mean maximum temperature in February</p>
+</dd>
+<dt><code>MTM</code></dt><dd><p>mean maximum temperature in March</p>
+</dd>
+<dt><code>MTA</code></dt><dd><p>mean maximum temperature in April</p>
+</dd>    
+<dt><code>mTD</code></dt><dd><p>mean minimum temperature in December</p>
+</dd>
+<dt><code>mTJ</code></dt><dd><p>mean minimum temperature in January</p>
+</dd>
+<dt><code>mTF</code></dt><dd><p>mean minimum temperature in February</p>
+</dd>
+<dt><code>mTM</code></dt><dd><p>mean minimum temperature in March</p>
+</dd>
+<dt><code>mTA</code></dt><dd><p>mean minimum temperature in April</p>
+</dd>
+<dt><code>mTUD</code></dt><dd><p>mean minimum temperature in December</p>
+</dd>
+<dt><code>mTUJ</code></dt><dd><p>mean minimum temperature in January</p>
+</dd>
+<dt><code>mTUF</code></dt><dd><p>mean minimum temperature in February</p>
+</dd>
+<dt><code>mTUM</code></dt><dd><p>mean minimum temperature in March</p>
+</dd>
+<dt><code>mTUA</code></dt><dd><p>mean minimum temperature in April</p>
+</dd>
+<dt><code>PRD</code></dt><dd><p>total monthly precipitation in December</p>
+</dd>
+<dt><code>PRJ</code></dt><dd><p>total monthly precipitation in Jan</p>
+</dd>
+<dt><code>PRF</code></dt><dd><p>total monthly precipitation in Feb</p>
+</dd>
+<dt><code>PRM</code></dt><dd><p>total monthly precipitation in Mar</p>
+</dd>
+<dt><code>SHD</code></dt><dd><p>sun hours per day in Dec</p>
+</dd>
+<dt><code>SHJ</code></dt><dd><p>sun hours per day in Jan</p>
+</dd>
+<dt><code>SHF</code></dt><dd><p>sun hours per day in Feb</p>
+</dd>
+<dt><code>EVD</code></dt><dd><p>total monthly evaporation in Dec</p>
+</dd>
+<dt><code>EVJ</code></dt><dd><p>total monthly evaporation in Jan</p>
+</dd>
+<dt><code>EVF</code></dt><dd><p>total monthly evaporation in Feb</p>
+</dd>
+<dt><code>EVM</code></dt><dd><p>total monthly evaporation in Mar</p>
+</dd>
+<dt><code>EVA</code></dt><dd><p>total monthly evaporation in Apr</p>
+</dd>
+</dl>
+
+<p>The 'vargas.txe.yield' dataframe contains 240 observations on
+three variables
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>Year</p>
+</dd>
+<dt><code>trt</code></dt><dd><p>Treatment. See details section</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>Grain yield, kg/ha</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The treatment names indicate:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+    T </td><td style="text-align: left;"> deep knife </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    t </td><td style="text-align: left;"> no deep knife </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    S </td><td style="text-align: left;"> sesbania </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    s </td><td style="text-align: left;"> soybean </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    M </td><td style="text-align: left;"> chicken manure </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    m </td><td style="text-align: left;"> no chicken manure </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    0 </td><td style="text-align: left;"> no nitrogen </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    n </td><td style="text-align: left;"> 100 kg/ha nitrogen </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    N </td><td style="text-align: left;"> 200 kg/ha nitrogen </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+  </td>
+</tr>
+
+</table>
+
+<p>Used with permission of Jose Crossa.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Vargas, Mateo and Crossa, Jose and van Eeuwijk, Fred and Sayre,
+Kenneth D. and Reynolds, Matthew P. (2001).
+Interpreting Treatment x Environment Interaction in Agronomy Trials.
+Agron. J., 93, 949-960.  Table A1, A3.
+https://doi.org/10.2134/agronj2001.934949x
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+  library(agridat)
+  data(vargas.txe.covs)
+  data(vargas.txe.yield)
+  
+  libs(reshape2)
+  libs(lattice)
+  redblue &lt;- colorRampPalette(c("firebrick", "lightgray", "#375997"))
+  Z &lt;- vargas.txe.yield
+  Z &lt;- acast(Z, year ~ trt, value.var='yield')
+  levelplot(Z, col.regions=redblue,
+            main="vargas.txe.yield", xlab="year", ylab="treatment",
+            scales=list(x=list(rot=90)))
+  
+  # Double-centered like AMMI
+  Z &lt;- sweep(Z, 1, rowMeans(Z))
+  Z &lt;- sweep(Z, 2, colMeans(Z))
+  # Vargas figure 1
+  biplot(prcomp(Z, scale.=FALSE), main="vargas.txe.yield")
+
+  # Now, PLS relating the two matrices
+  U &lt;- vargas.txe.covs
+  U &lt;- scale(U) # Standardized covariates
+  libs(pls)
+  m1 &lt;- plsr(Z~U)
+  # Vargas Fig 2, flipped vertical/horizontal
+  biplot(m1, which="x", var.axes=TRUE)
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

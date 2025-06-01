@@ -1,0 +1,187 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of wheat susceptibile to powdery...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>lillemo.wheat</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of wheat susceptibile to powdery mildew
+</h2>
+
+<h3>Description</h3>
+
+<p>Resistance of wheat to powdery mildew
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("lillemo.wheat")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 408 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype, 24 levels</p>
+</dd>
+<dt><code>env</code></dt><dd><p>environrment, 13 levels</p>
+</dd>
+<dt><code>score</code></dt><dd><p>score</p>
+</dd>
+<dt><code>scale</code></dt><dd><p>scale used for score</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data are means across reps of the original scores.  Lower scores
+indicate better resistance to mildew.
+</p>
+<p>Each location used one of four different measurement scales for
+scoring resistance to powdery mildew: 0-5 scale, 1-9 scale, 0-9 scale,
+percent.
+</p>
+<p>Environment codes consist of two letters for the location name and two
+digits for the year of testing.  Location names: CA=Cruz Alta,
+Brazil. Ba= Bawburgh, UK. Aa=As, Norway. Ha=Hamar, Norway. Ch=Choryn,
+Poland. Ce=Cerekwica, Poland. Ma=Martonvasar, Hungary. Kh=Kharkiv,
+Ukraine. BT=Bila Tserkva, Ukraine. Gl=Glevakha, Ukraine. Bj=Beijing,
+China.
+</p>
+<p>Note, Lillemo et al. did not remove genotype effects as is customary
+when calculating Huehn's non-parametric stability statistics.
+</p>
+<p>In the examples below, the results do not quite match the
+results of Lillemo.  This could easily be the result of the original
+data table being rounded to 1 decimal place.  For example, environment
+'Aa03' had 3 reps and so the mean for genotype 1 was probably 16.333,
+not 16.3. 
+</p>
+<p>Used with permission of Morten Lillemo.
+</p>
+<p>Electronic data supplied by Miroslav Zoric.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Morten Lillemo, Ravi Sing, Maarten van Ginkel. (2011).
+Identification of Stable Resistance to Powdery Mildew in Wheat Based
+on Parametric and Nonparametric Methods
+Crop Sci. 50:478-485.
+https://doi.org/10.2135/cropsci2009.03.0116
+</p>
+
+
+<h3>References</h3>
+
+<p>None.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(lillemo.wheat)
+dat &lt;- lillemo.wheat
+
+# Change factor levels to match Lillemo
+dat$env &lt;- as.character(dat$env)
+dat$env &lt;- factor(dat$env,
+                  levels=c("Bj03","Bj05","CA03","Ba04","Ma04",
+                           "Kh06","Gl05","BT06","Ch04","Ce04",
+                           "Ha03","Ha04","Ha05","Ha07","Aa03","Aa04","Aa05"))
+# Interesting look at different measurement scales by environment
+libs(lattice)
+qqmath(~score|env, dat, group=scale,
+       as.table=TRUE, scales=list(y=list(relation="free")),
+       auto.key=list(columns=4),
+       main="lillemo.wheat - QQ plots by environment")
+
+
+  # Change data to matrix format
+  libs(reshape2)
+  datm &lt;- acast(dat, gen~env, value.var='score')
+  
+  # Environment means. Matches Lillemo Table 3
+  apply(datm, 2, mean)
+  
+  # Two different transforms within envts to approximate 0-9 scale
+  datt &lt;- datm
+  datt[,"CA03"] &lt;- 1.8 * datt[,"CA03"]
+  ix &lt;- c("Ba04","Kh06","Gl05","BT06","Ha03","Ha04","Ha05","Ha07","Aa03","Aa04","Aa05")
+  datt[,ix] &lt;- apply(datt[,ix],2,sqrt)
+
+  # Genotype means of transformed data. Matches Lillemo table 3.
+  round(rowMeans(datt),2)
+
+  # Biplot of transformed data like Lillemo Fig 2
+  libs(gge)
+  biplot(gge(datt, scale=FALSE), main="lillemo.wheat")
+  
+  # Median polish of transformed table
+  m1 &lt;- medpolish(datt)
+  # Half-normal prob plot like Fig 1
+  # libs(faraway)
+  # halfnorm(abs(as.vector(m1$resid)))
+
+  # Nonparametric stability statistics. Lillemo Table 4.
+  huehn &lt;- function(mat){
+    # Gen in rows, Env in cols  
+    nenv &lt;- ncol(mat)
+    # Corrected yield. Remove genotype effects
+    # Remove the following line to match Table 4 of Lillemo
+    mat &lt;- sweep(mat, 1, rowMeans(mat)) + mean(mat)
+    # Ranks in each environment
+    rmat &lt;- apply(mat, 2, rank)
+    
+    # Mean genotype rank across envts
+    MeanRank &lt;- apply(rmat, 1, mean)
+    
+    # Huehn S1
+    gfun &lt;- function(x){
+      oo &lt;- outer(x,x,"-")
+      sum(abs(oo)) # sum of all absolute pairwise differences
+    }
+    S1 &lt;- apply(rmat, 1, gfun)/(nenv*(nenv-1))
+    
+    # Huehn S2
+    S2 &lt;- apply((rmat-MeanRank)^2,1,sum)/(nenv-1)
+    
+    out &lt;- data.frame(MeanRank,S1,S2)
+    rownames(out) &lt;- rownames(mat)
+    return(out)
+  }
+  round(huehn(datm),2) # Matches table 4
+  
+  # I do not think phenability package gives correct values for S1
+  # libs(phenability)
+  # nahu(datm)
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

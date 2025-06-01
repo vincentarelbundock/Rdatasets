@@ -1,0 +1,177 @@
+rownames,type,name,age,error,parent
+1,,Precambrian,4600,,Precambrian
+2,,Hadean,4600,,Precambrian
+3,eon,Archean,4000,,Precambrian
+4,era,Eoarchean,4000,,Archean
+5,era,Paleoarchean,3600,,Archean
+6,era,Mesoarchean,3200,,Archean
+7,era,Neoarchean,2800,,Archean
+8,eon,Proterozoic,2500,,Precambrian
+9,era,Paleoproterozoic,2500,,Proterozoic
+10,period,Siderian,2500,,Paleoproterozoic
+11,period,Rhyacian,2300,,Paleoproterozoic
+12,period,Orosirian,2050,,Paleoproterozoic
+13,period,Statherian,1800,,Paleoproterozoic
+14,era,Mesoproterozoic,1600,,Proterozoic
+15,period,Calymmian,1600,,Mesoproterozoic
+16,period,Ectasian,1400,,Mesoproterozoic
+17,period,Stenian,1200,,Mesoproterozoic
+18,era,Neoproterozoic,1000,,Proterozoic
+19,period,Tonian,1000,,Neoproterozoic
+20,period,Cryogenian,720,,Neoproterozoic
+21,period,Ediacarian,635,,Neoproterozoic
+22,eon,Phanerozoic,541,1,Phanerozoic
+23,era,Paleozoic,541,1,Phanerozoic
+24,period,Cambrian,541,1,Paleozoic
+25,series,Terreneuvian,541,1,Cambrian
+26,stage,Fortunian,541,1,Terreneuvian
+27,stage,Stage 2,529,,Terreneuvian
+28,series,Series 2,521,,Cambrian
+29,stage,Stage 3,521,,Series 2
+30,stage,Stage 4,514,,Series 2
+31,series,Miaolingian,509,,Cambrian
+32,stage,Wuliuan,509,,Miaolingian
+33,stage,Drumian,504.5,,Miaolingian
+34,stage,Guzhangian,500.5,,Miaolingian
+35,series,Furongian,497,,Cambrian
+36,stage,Paibian,497,,Furongian
+37,stage,Jiangshanian,494,,Furongian
+38,stage,Stage 10,489.5,,Furongian
+39,period,Ordovician,485.4,1.9,Paleozoic
+40,series,Lower Ordovician,485.4,1.9,Ordovician
+41,stage,Tremadocian,485.4,1.9,Lower Ordovician
+42,stage,Floian,477.7,1.4,Lower Ordovician
+43,series,Middle Ordovician,470,1.4,Ordovician
+44,stage,Dapingian,470,1.4,Middle Ordovician
+45,stage,Darriwilian,467.3,1.1,Middle Ordovician
+46,series,Upper Ordovician,458.4,0.9,Ordovician
+47,stage,Sandbian,458.4,0.9,Upper Ordovician
+48,stage,Katian,453,0.7,Upper Ordovician
+49,stage,Hirnantian,445.2,1.4,Upper Ordovician
+50,period,Silurian,443.8,1.5,Paleozoic
+51,series,Llandovery,443.8,1.5,Silurian
+52,stage,Rhuddanian,443.8,1.5,Llandovery
+53,stage,Aeronian,440.8,1.2,Llandovery
+54,stage,Telychian,438.5,1.1,Llandovery
+55,series,Wenlock,433.4,0.8,Silurian
+56,stage,Sheinwoodian,433.4,0.8,Wenlock
+57,stage,Homerian,430.5,0.7,Wenlock
+58,series,Ludlow,427.4,0.5,Silurian
+59,stage,Gorstian,427.4,0.5,Ludlow
+60,stage,Ludfordian,425.6,0.9,Ludlow
+61,series,Pridoli,423,2.3,Silurian
+62,period,Devonian,419.2,3.2,Paleozoic
+63,series,Lower Devonian,419.2,3.2,Devonian
+64,stage,Lochkovian,419.2,3.2,Lower Devonian
+65,stage,Pragian,410.8,2.8,Lower Devonian
+66,stage,Emsian,407.6,2.6,Lower Devonian
+67,series,Middle Devonian,393.3,1.2,Devonian
+68,stage,Eifelian,393.3,1.2,Middle Devonian
+69,stage,Givetian,387.7,0.8,Middle Devonian
+70,series,Upper Devonian,382.7,1.6,Devonian
+71,stage,Frasnian,382.7,1.6,Upper Devonian
+72,stage,Famennian,372.2,1.6,Upper Devonian
+73,period,Carboniferous,358.9,0.4,Paleozoic
+74,series,Lower Mississippian,358.9,0.4,Carboniferous
+75,stage,Tournaisian,358.9,0.4,Lower Mississippian
+76,series,Middle Mississippian,346.7,0.4,Carboniferous
+77,stage,Visean,346.7,0.4,Middle Mississippian
+78,series,Upper Mississippian,330.9,0.2,Carboniferous
+79,stage,Serpukhovian,330.9,0.2,Upper Mississippian
+80,series,Lower Pennsylvanian,323.2,0.4,Carboniferous
+81,stage,Bashkirian,323.2,0.4,Lower Pennsylvanian
+82,series,Middle Pennsylvanian,315.2,0.2,Carboniferous
+83,stage,Moscovian,315.2,0.2,Middle Pennsylvanian
+84,series,Upper Pennsylvanian,307,0.1,Carboniferous
+85,stage,Kasimovian,307,0.1,Upper Pennsylvanian
+86,stage,Gzhelian,303.7,0.1,Upper Pennsylvanian
+87,period,Permian,298.9,0.15,Paleozoic
+88,series,Cisuralian,298.9,0.15,Permian
+89,stage,Asselian,298.9,0.15,Cisuralian
+90,stage,Sakmarian,293.52,0.17,Cisuralian
+91,stage,Artinskian,290.1,0.26,Cisuralian
+92,stage,Kungurian,283.5,0.6,Cisuralian
+93,series,Guadalupian,272.95,0.11,Permian
+94,stage,Roadiea,272.95,0.11,Guadalupian
+95,stage,Wordian,268.8,0.5,Guadalupian
+96,stage,Capitanian,265.1,0.4,Guadalupian
+97,series,Lopingian,259.1,0.5,Permian
+98,stage,Wuchiapingian,259.1,0.5,Lopingian
+99,stage,Changhsingian,254.14,0.07,Lopingian
+100,era,Mesozoic,251.9,0.02,Phanerozoic
+101,period,Triassic,251.9,0.02,Mesozoic
+102,series,Lower Triassic,251.9,0.02,Triassic
+103,stage,Induan,251.9,0.02,Lower Triassic
+104,stage,Olenekian,251.2,,Lower Triassic
+105,series,Middle Triassic,247.2,,Triassic
+106,stage,Anisian,247.2,,Middle Triassic
+107,stage,Ladinian,242,,Middle Triassic
+108,series,Upper Triassic,237,,Triassic
+109,stage,Carnian,237,,Upper Triassic
+110,stage,Norian,227,,Upper Triassic
+111,stage,Rhaetian,208.5,,Upper Triassic
+112,period,Jurassic,201.3,0.2,Mesozoic
+113,series,Lower Jurassic,201.3,0.2,Jurassic
+114,stage,Hettangian,201.3,0.2,Lower Jurassic
+115,stage,Sinemurian,199.3,0.3,Lower Jurassic
+116,stage,Pliensbachian,190.8,1,Lower Jurassic
+117,stage,Toartian,182.7,0.7,Lower Jurassic
+118,series,Middle Jurassic,174.1,1,Jurassic
+119,stage,Aalenian,174.1,1,Middle Jurassic
+120,stage,Bajocian,170.3,1.4,Middle Jurassic
+121,stage,Bathonian,168.3,1.3,Middle Jurassic
+122,stage,Callovian,166.1,1.2,Middle Jurassic
+123,series,Upper Jurassic,163.5,1,Jurassic
+124,stage,Oxfordian,163.5,1,Upper Jurassic
+125,stage,Kimmeridgian,157.3,1,Upper Jurassic
+126,stage,Tithonian,152.1,0.9,Upper Jurassic
+127,period,Cretaceous,145,,Mesozoic
+128,series,Lower Cretaceous,145,,Cretaceous
+129,stage,Berriasian,145,,Lower Cretaceous
+130,stage,Valanginian,139.8,,Lower Cretaceous
+131,stage,Hauterivian,132.6,,Lower Cretaceous
+132,stage,Barremian,129.4,,Lower Cretaceous
+133,stage,Aptian,125,,Lower Cretaceous
+134,stage,Albian,113,,Lower Cretaceous
+135,series,Upper Cretaceous,100.5,,Cretaceous
+136,stage,Cenomanian,100.5,,Upper Cretaceous
+137,stage,Turonian,93.9,,Upper Cretaceous
+138,stage,Coniacian,89.8,0.3,Upper Cretaceous
+139,stage,Santonian,86.3,0.5,Upper Cretaceous
+140,stage,Campanian,83.6,0.2,Upper Cretaceous
+141,stage,Maastrichtian,72.1,0.2,Upper Cretaceous
+142,era,Cenozoic,66,,Phanerozoic
+143,period,Paleogene,66,,Cenozoic
+144,series,Paleocene,66,,Paleogene
+145,stage,Danian,66,,Paleocene
+146,stage,Selandian,61.6,,Paleocene
+147,stage,Thanetian,59.2,,Paleocene
+148,series,Eocene,56,,Paleogene
+149,stage,Ypresian,56,,Eocene
+150,stage,Lutetian,47.8,,Eocene
+151,stage,Bartonian,41.2,,Eocene
+152,stage,Priabonian,37.71,,Eocene
+153,series,Oligocene,33.9,,Paleogene
+154,stage,Rupelian,33.9,,Oligocene
+155,stage,Chattian,27.82,,Oligocene
+156,period,Neogene,23.03,,Cenozoic
+157,series,Miocene,23.03,,Neogene
+158,stage,Aquitanian,23.03,,Miocene
+159,stage,Burdigalian,20.44,,Miocene
+160,stage,Langhian,15.97,,Miocene
+161,stage,Serravallian,13.82,,Miocene
+162,stage,Tortonian,11.63,,Miocene
+163,stage,Messinian,7.246,,Miocene
+164,series,Pliocene,5.333,,Neogene
+165,stage,Zanclean,5.333,,Pliocene
+166,stage,Piacenzian,3.6,,Pliocene
+167,period,Quaternary,2.58,,Cenozoic
+168,series,Pleistocene,2.58,,Quaternary
+169,stage,Gelasian,2.58,,Pleistocene
+170,stage,Calabrian,1.8,,Pleistocene
+171,stage,Chibanian,0.774,,Pleistocene
+172,stage,Upper Pleistocene,0.129,,Pleistocene
+173,series,Holocene,0.0117,,Quaternary
+174,stage,Greenlandian,0.0117,,Holocene
+175,stage,Northgrippian,0.0082,,Holocene
+176,stage,Meghalayan,0.0042,,Holocene

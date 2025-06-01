@@ -1,0 +1,120 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of canning peas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>nonnecke.peas.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of canning peas
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of canning peas in southern Alberta, 1957.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("nonnecke.peas.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 540 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>block</code></dt><dd><p>block factor</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>vines</code></dt><dd><p>vines weight, pounds</p>
+</dd>
+<dt><code>peas</code></dt><dd><p>shelled peas weight, pounds</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Width of basic plot was 10 feet, length was 5 feet, as limited by the
+viner. At each of two blocks/locations, planting consisted of 18 rows
+(only 15 rows were harvested) that were 10 feet wide and 90 feet
+long. Rows were separated by 7 foot bare ground to facilitate
+harvesting. Nonnecke 1960 shows a map of one block.
+</p>
+<p>Plots were harvested with a five foot mower. Vines from
+each plot were weighed, then shelled.  The two blocks/locations were
+side by side and combined by Nonnecke. The optimum plot size was found
+to be 5 feet long and 10 feet wide.
+</p>
+<p>Field width: 15 rows * 10 ft/row + 14 gaps * 7 ft/gap = 248 feet
+</p>
+<p>Field length: 18 plots * 5 ft/plot = 90 feet
+</p>
+
+
+<h3>Source</h3>
+
+<p>Ib Libner Nonnecke. 1958.
+Yield variability of sweet corn and canning peas as affected by plot size and shape.
+Thesis at Oregon State College.
+https://hdl.handle.net/1957/23367
+</p>
+
+
+<h3>References</h3>
+
+<p>I. L. Nonnecke, 1960.
+The precision of field experiments with vegetable crops as influenced by plot and block size and shape: II. Canning peas.
+Canadian Journal of Plant Science, 40(2): 396-404.
+https://doi.org/10.4141/cjps60-053
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  
+  data(nonnecke.peas.uniformity)
+  dat &lt;- nonnecke.peas.uniformity
+  
+  libs(desplot)
+  desplot(dat, vines~col*row|block,
+          tick=TRUE, flip=TRUE, aspect=248/90, # true aspect
+          main="nonnecke.peas.uniformity - vines")
+  desplot(dat, peas~col*row|block,
+          tick=TRUE, flip=TRUE, aspect=248/90, # true aspect
+          main="nonnecke.peas.uniformity - peas")
+
+  libs(lattice)
+  xyplot(peas~vines|block,dat,
+         xlab="vine weight", ylab="shelled pea weight",
+         main="nonnecke.peas.uniformity")
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

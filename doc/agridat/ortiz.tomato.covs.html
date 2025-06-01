@@ -1,0 +1,232 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of tomato in Latin America,...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>ortiz.tomato</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of tomato in Latin America, weight/yield and environmental covariates
+</h2>
+
+<h3>Description</h3>
+
+<p>Multi-environment trial of tomato in Latin America, weight/yield and environmental covariates
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>  data("ortiz.tomato.covs")
+  data("ortiz.tomato.yield")
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>The <code>ortiz.tomato.covs</code> data frame has 18 observations on the following 18 variables.
+</p>
+
+<dl>
+<dt><code>env</code></dt><dd><p>environment</p>
+</dd>
+<dt><code>Day</code></dt><dd><p>degree days (base 10)</p>
+</dd>
+<dt><code>Dha</code></dt><dd><p>days to harvest</p>
+</dd>
+<dt><code>Driv</code></dt><dd><p>drivings (0/1)</p>
+</dd>
+<dt><code>ExK</code></dt><dd><p>extra potassium (kg / ha)</p>
+</dd>
+<dt><code>ExN</code></dt><dd><p>extra nitrogen (kg / ha)</p>
+</dd>
+<dt><code>ExP</code></dt><dd><p>extra phosphorous (kg / ha)</p>
+</dd>
+<dt><code>Irr</code></dt><dd><p>irrigation (0/1)</p>
+</dd>
+<dt><code>K  </code></dt><dd><p>potassium (me/100 g)</p>
+</dd>
+<dt><code>Lat</code></dt><dd><p>latitude</p>
+</dd>
+<dt><code>Long</code></dt><dd><p>longitude</p>
+</dd>
+<dt><code>MeT</code></dt><dd><p>mean temperature (C)</p>
+</dd>
+<dt><code>MnT</code></dt><dd><p>min temperature (C)</p>
+</dd>
+<dt><code>MxT</code></dt><dd><p>max temperature (C)</p>
+</dd>
+<dt><code>OM </code></dt><dd><p>organic matter (percent)</p>
+</dd>
+<dt><code>P  </code></dt><dd><p>phosphorous (ppm)</p>
+</dd>
+<dt><code>pH </code></dt><dd><p>soil pH</p>
+</dd>
+<dt><code>Prec</code></dt><dd><p>precipitation (mm)</p>
+</dd>
+<dt><code>Tri</code></dt><dd><p>trimming (0/1)</p>
+</dd>
+</dl>
+
+<p>The <code>ortiz.tomato.yield</code> data frame has 270 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>env</code></dt><dd><p>environment</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>marketable fruit yield t/ha</p>
+</dd>
+<dt><code>weight</code></dt><dd><p>fruit weight, g</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The environment locations are:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+    E04 </td><td style="text-align: left;"> Estanzuela, Guatemala </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    E05 </td><td style="text-align: left;"> Baja Verapaz, Guatemala </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    E06 </td><td style="text-align: left;"> Cogutepeque, El Salvador </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    E07 </td><td style="text-align: left;"> San Andres, El Salvador </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    E11 </td><td style="text-align: left;"> Comayagua, Honduras </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    E14 </td><td style="text-align: left;"> Valle de Sabaco, Nicaragua </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    E15 </td><td style="text-align: left;"> San Antonio de Belen, Costa Rica </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    E20 </td><td style="text-align: left;"> San Cristobal, Dominican Republic </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    E21 </td><td style="text-align: left;"> Constanza, Dominican Republic </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    E27 </td><td style="text-align: left;"> Palmira, Colombia </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    E40 </td><td style="text-align: left;"> La Molina, Peru </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    E41 </td><td style="text-align: left;"> Santiago, Chile </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    E42 </td><td style="text-align: left;"> Chillan, Chile </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    E43 </td><td style="text-align: left;"> Curacavi, Chile </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    E44 </td><td style="text-align: left;"> Colina, Chile </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    E50 </td><td style="text-align: left;"> Belem, Brazil </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    E51 </td><td style="text-align: left;"> Caacupe, Paraguay </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    E53 </td><td style="text-align: left;"> Centeno, Trinidad Tobago</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+  </td>
+</tr>
+
+</table>
+
+<p>Used with permission of Rodomiro Ortiz.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Rodomiro Ortiz and Jose Crossa and Mateo Vargas and Juan Izquierdo, 2007.
+Studying the Effect of Environmental Variables On the Genotype x
+Environment Interaction of Tomato.
+Euphytica, 153, 119&ndash;134.
+https://doi.org/10.1007/s10681-006-9248-7
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(ortiz.tomato.covs)
+data(ortiz.tomato.yield)
+
+libs(pls, reshape2)
+# Double-centered yield matrix
+Y &lt;- acast(ortiz.tomato.yield, env ~ gen, value.var='yield')
+Y &lt;- sweep(Y, 1, rowMeans(Y, na.rm=TRUE))
+Y &lt;- sweep(Y, 2, colMeans(Y, na.rm=TRUE))
+
+# Standardized covariates
+X &lt;- ortiz.tomato.covs
+rownames(X) &lt;- X$env
+X &lt;- X[,c("MxT", "MnT", "MeT", "Prec", "Day", "pH", "OM", "P", "K",
+          "ExN", "ExP", "ExK", "Trim", "Driv", "Irr", "Dha")]
+X &lt;- scale(X)
+
+# Now, PLS relating the two matrices.
+# Note: plsr deletes observations with missing values
+
+m1 &lt;- plsr(Y~X)
+# Inner-product relationships similar to Ortiz figure 1.
+biplot(m1, which="x", var.axes=TRUE, main="ortiz.tomato - env*cov biplot")
+#biplot(m1, which="y", var.axes=TRUE)
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

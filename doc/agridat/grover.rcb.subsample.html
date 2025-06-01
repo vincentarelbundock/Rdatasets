@@ -1,0 +1,95 @@
+<!DOCTYPE html><html><head><title>R: Rice RCB with subsamples</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>grover.rcb.subsample</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Rice RCB with subsamples
+</h2>
+
+<h3>Description</h3>
+
+<p>An experiment on rice with 9 fertilizer treatments in 4 blocks,
+4 hills per plot.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("grover.rcb.subsample")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 144 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>tiller</code></dt><dd><p>number of tillers</p>
+</dd>
+<dt><code>trt</code></dt><dd><p>treatment factor</p>
+</dd>
+<dt><code>block</code></dt><dd><p>block factor</p>
+</dd>
+<dt><code>unit</code></dt><dd><p>subsample unit</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>An experiment on rice with 9 fertilizer treatments in 4 blocks,
+4 hills per plot. The response variable is tiller count (per hill).
+The hills are sampling units.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Grover, Deepak &amp; Lajpat Rai (2010).
+Experimental Designing And Data Analysis In Agriculture And Biology.
+Agrotech Publishing Academy. Page 85.
+https://archive.org/details/expldesnanddatanalinagblg00023
+</p>
+
+
+<h3>References</h3>
+
+<p>None.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  data(grover.rcb.subsample)
+  # Fixed-effects ANOVA. Matches Grover page 86.
+  anova(aov(tiller ~ block + trt + block:trt, data=grover.rcb.subsample))
+  ## Response: tiller
+  ##            Df Sum Sq Mean Sq F value  Pr(&gt;F)    
+  ## block       3    930  310.01  3.6918 0.01415 *  
+  ## trt         8  11816 1477.00 17.5891 &lt; 2e-16 ***
+  ## block:trt  24   4721  196.71  2.3425 0.00158 ** 
+  ## Residuals 108   9069   83.97                    
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

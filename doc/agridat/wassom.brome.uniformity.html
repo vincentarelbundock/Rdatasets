@@ -1,0 +1,113 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trials of bromegrass</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>wassom.brome.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trials of bromegrass
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trials of bromegrass at Ames, Iowa, 1950-1951.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("wassom.brome.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1296 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>expt</code></dt><dd><p>experiment</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>forage yield, pounds</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Experiments were conducted at Ames, Iowa.  The response variable is
+forage yield in pounds of green weight.
+</p>
+<p>Optimum plot size was estimated to be about 3.5 x 7.5 feet.
+</p>
+<p>Wassom and Kalton used two different methods to estimate optimum plot
+size.
+1. Relative efficiency of different plot sizes.
+2. Regression of the log variance of yield vs log plot size.
+</p>
+<p>There are three Experiments:
+</p>
+<p>Experiment E1 was broadcast seeded, harvested in 1950. 
+</p>
+<p>Experiment E2 was row planted, harvested in 1950.
+</p>
+<p>Experiment E3 was broadcast seeded, harvested in 1951.  This field contained
+a mixture of alfalfa and brome in about equal proportions.
+</p>
+<p>Each plot was 3.5 ft x 4 ft, but the orientation of the plot is not
+clear.
+</p>
+<p>Field width: 36 plots
+</p>
+<p>Field length: 36 plots
+</p>
+
+
+<h3>Source</h3>
+
+<p>Wassom and R.R. Kalton. (1953).
+Estimations of Optimum Plot Size Using Data from Bromegrass Uniformity
+Trials. Agricultural Experiment Station, Iowa State College, Bulletin
+396, page 314-319.
+https://dr.lib.iastate.edu/handle/20.500.12876/62735
+https://babel.hathitrust.org/cgi/pt?id=uiug.30112019570701&amp;view=1up&amp;seq=26&amp;skin=2021
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(wassom.brome.uniformity)
+  dat &lt;- wassom.brome.uniformity
+
+  libs(desplot)
+  desplot(dat, yield~col*row|expt,
+          flip=TRUE, aspect=1, # approximate aspect
+          main="wassom.brome.uniformity")
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

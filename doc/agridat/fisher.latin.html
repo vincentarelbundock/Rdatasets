@@ -1,0 +1,92 @@
+<!DOCTYPE html><html><head><title>R: Latin square experiment on mangolds</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>fisher.latin</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Latin square experiment on mangolds
+</h2>
+
+<h3>Description</h3>
+
+<p>Latin square experiment on mangolds.  Used by R. A. Fisher.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("fisher.latin")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 25 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>trt</code></dt><dd><p>treatment factor, 5 levels</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Yields are root weights.  Data originally collected by Mercer and
+Hall as part of a uniformity trial.
+</p>
+<p>This data is the same as the data from columns 1-5, rows 16-20, of the
+mercer.mangold.uniformity data in this package.
+</p>
+<p>Unsurprisingly, there are no significant treatment differences.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Mercer, WB and Hall, AD, 1911.
+The experimental error of field trials
+The Journal of Agricultural Science, 4, 107-132. Table 1.
+http::/doi.org/10.1017/S002185960000160X
+</p>
+<p>R. A. Fisher. <em>Statistical Methods for Research Workers</em>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(agridat)
+
+data(fisher.latin)
+dat &lt;- fisher.latin
+
+# Standard latin-square analysis
+m1 &lt;- lm(yield ~ trt + factor(row) + factor(col), data=dat)
+anova(m1)
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

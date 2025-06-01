@@ -1,0 +1,120 @@
+<!DOCTYPE html><html><head><title>R: Diallel cross of winter beans</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>bond.diallel</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Diallel cross of winter beans
+</h2>
+
+<h3>Description</h3>
+
+<p>Diallel cross of winter beans
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 36 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>female</code></dt><dd><p>female parent</p>
+</dd>
+<dt><code>male</code></dt><dd><p>male parent</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, grams/plot</p>
+</dd>
+<dt><code>stems</code></dt><dd><p>stems per plot</p>
+</dd>
+<dt><code>nodes</code></dt><dd><p>podded nodes per stem</p>
+</dd>
+<dt><code>pods</code></dt><dd><p>pods per podded node</p>
+</dd>
+<dt><code>seeds</code></dt><dd><p>seeds per pod</p>
+</dd>
+<dt><code>weight</code></dt><dd><p>weight (g) per 100 seeds</p>
+</dd>
+<dt><code>height</code></dt><dd><p>height (cm) in April</p>
+</dd>
+<dt><code>width</code></dt><dd><p>width (cm) in April</p>
+</dd>
+<dt><code>flower</code></dt><dd><p>mean flowering date in May</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Yield in grams/plot for full diallel cross between 6 inbred lines
+of winter beans.  Values are means over two years.
+</p>
+
+
+<h3>Source</h3>
+
+<p>D. A. Bond (1966). Yield and components of yield in diallel crosses
+between inbred lines of winter beans (Viciafaba).
+<em>The Journal of Agricultural Science</em>, 67, 325&ndash;336.
+https://doi.org/10.1017/S0021859600017329
+</p>
+
+
+<h3>References</h3>
+
+<p>Peter John, <em>Statistical Design and Analysis of Experiments</em>, p. 85.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+  library(agridat)
+  data(bond.diallel)
+  dat &lt;- bond.diallel
+  
+  # Because these data are means, we will not be able to reproduce
+  # the anova table in Bond. More useful as a multivariate example.
+
+  libs(corrgram)
+  corrgram(dat[ , 3:11], main="bond.diallel",
+           lower=panel.pts)
+
+  # Multivariate example from sommer package
+  corrgram(dat[,c("stems","pods","seeds")],
+           lower=panel.pts, upper=panel.conf, main="bond.diallel")
+  
+  libs(sommer)           
+  m1 &lt;- mmer(cbind(stems,pods,seeds) ~ 1,
+             random= ~ vs(female)+vs(male),
+             rcov= ~ vs(units),
+             dat)
+
+  #### genetic variance covariance
+  cov2cor(m1$sigma$`u:female`)
+  cov2cor(m1$sigma$`u:male`)
+  cov2cor(m1$sigma$`u:units`)
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

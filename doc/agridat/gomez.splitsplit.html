@@ -1,0 +1,118 @@
+<!DOCTYPE html><html><head><title>R: Split-split-plot experiment of rice</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gomez.splitsplit</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Split-split-plot experiment of rice
+</h2>
+
+<h3>Description</h3>
+
+<p>Grain yield of three varieties of rice grown in a split-split plot
+arrangement with 3 reps, nitrogen level as the main plot, management
+practice as the sub-plot, and rice variety as the sub-sub plot.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 135 observations on the following 7 variables.
+</p>
+
+<dl>
+<dt><code>rep</code></dt><dd><p>block, 3 levels</p>
+</dd>
+<dt><code>nitro</code></dt><dd><p>nitrogen fertilizer, in kilograms/hectare</p>
+</dd>
+<dt><code>management</code></dt><dd><p>plot management</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype/variety of rice</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column position in the field</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row position in the field</p>
+</dd>
+</dl>
+
+<p>Used with permission of Kwanchai Gomez.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Gomez, K.A. and Gomez, A.A.. 1984,
+Statistical Procedures for Agricultural Research.
+Wiley-Interscience.
+Page 143.
+</p>
+
+
+<h3>References</h3>
+
+<p>H. P. Piepho, R. N. Edmondson. (2018).
+A tutorial on the statistical analysis of factorial experiments
+with qualitative and quantitative treatment factor levels.
+Jour Agronomy and Crop Science, 8, 1-27.
+https://doi.org/10.1111/jac.12267
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+data(gomez.splitsplit)
+dat &lt;- gomez.splitsplit
+dat$nf &lt;- factor(dat$nitro)
+
+libs(desplot)
+desplot(dat, nf ~ col*row,
+        # aspect unknown
+        out1=rep, col=management, num=gen, cex=1,
+        main="gomez.splitsplit")
+desplot(dat, yield ~ col*row,
+        # aspect unknown
+        out1=rep, main="gomez.splitsplit")
+
+
+libs(HH)
+position(dat$nf) &lt;- c(0,50,80,110,140)
+interaction2wt(yield~rep+nf+management+gen, data=dat,
+               main="gomez.splitsplit",
+               x.between=0, y.between=0,
+               relation=list(x="free", y="same"),
+               rot=c(90,0), xlab="",
+               par.strip.text.input=list(cex=.7))
+
+
+# AOV.  Gomez page 144-153
+m0 &lt;- aov(yield~ nf * management * gen + Error(rep/nf/management),
+         data=dat)
+summary(m0) # Similar to Gomez, p. 153.
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

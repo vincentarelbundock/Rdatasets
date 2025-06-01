@@ -1,0 +1,63 @@
+<!DOCTYPE html><html><head><title>R: Bald Eagle Count Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>bald_eagles</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Bald Eagle Count Data</h2>
+
+<h3>Description</h3>
+
+<p>Bald Eagle count data collected from the year 1981 to 2017, in late December, by birdwatchers in the Ontario, Canada area.
+The data was made available by the Bird Studies Canada website and distributed through the R for Data Science TidyTuesday project. 
+A more complete data set with a larger selection of birds can be found in the bird_counts data in the bayesrules package.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>bald_eagles
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 37 rows and 5 variables. Each row represents Bald Eagle observations in the given year.
+</p>
+
+<dl>
+<dt>year</dt><dd><p>year of data collection</p>
+</dd>
+<dt>count</dt><dd><p>number of birds observed</p>
+</dd>
+<dt>hours</dt><dd><p>total person-hours of observation period</p>
+</dd>
+<dt>count_per_hour</dt><dd><p>count divided by hours</p>
+</dd>
+<dt>count_per_week</dt><dd><p>count_per_hour multiplied by 168 hours per week</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-06-18/bird_counts.csv">https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-06-18/bird_counts.csv</a>.
+</p>
+
+</main>
+
+</div>
+</body></html>

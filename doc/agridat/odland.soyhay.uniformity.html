@@ -1,0 +1,114 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trials of soy hay and soybeans</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>odland.soybean.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trials of soy hay and soybeans
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trials of soy hay and soybeans at Virginia Experiment
+Station, 1925-1926.
+</p>
+
+
+<h3>Format</h3>
+
+<p>Data frames with 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield: hay in tons/acre, beans in bushels/acre</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Grown at West Virginia Experiment Station in 1925 &amp; 1926.
+</p>
+<p>Soy forage hay:
+</p>
+<p>In 1925 the crop was harvested for forage, 42 rows, each 200 feet long.
+Yields of 8-foot plats recorded to the nearest 0.1 tons.
+</p>
+<p>Field width: 42 plots * 30 in / 12in/ft = 105 ft
+</p>
+<p>Field length: 24 plots * 8 feet = 192 feet + border = total 200 feet.
+</p>
+<p>Note, the hay data in Odland &amp; Garber is measured in 0.1 tons, but has
+been converted to tons here.
+</p>
+<p>Soy beans:
+</p>
+<p>Soybeans were planted in rows 30 inches apart.
+In 1926 the crop was harvested for seed, 55 rows, each 232 feet long.
+Yields of 8-foot plats were recorded.
+In 1926, data for the last row on page 96 seems to be missing.
+</p>
+<p>Field width: 55 plots * 30 in / 12in/ft = 137.5 feet
+</p>
+<p>Field length: 28 plots * 8 feet = 224 feet + border = total 232 feet.
+</p>
+<p>Odland and Garber provide no agronomic context for the yield variation.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Odland, T.E. and Garber, R.J. (1928).
+Size of Plat and Number of Replications in Field Experiments with
+Soybeans.
+Agronomy Journal, 20, 93&ndash;108.
+https://doi.org/10.2134/agronj1928.00021962002000020002x
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+  
+  libs(desplot)
+
+  data(odland.soyhay.uniformity)
+  dat1 &lt;- odland.soyhay.uniformity
+  desplot(dat1, yield ~ col*row,
+          flip=TRUE, aspect=200/105, # true aspect
+          main="odland.soyhay.uniformity")
+
+  data(odland.soybean.uniformity)
+  dat2 &lt;- odland.soybean.uniformity
+  desplot(dat2, yield ~ col*row,
+          flip=TRUE, aspect = 232/137, 
+          main="odland.soybean.uniformity")
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

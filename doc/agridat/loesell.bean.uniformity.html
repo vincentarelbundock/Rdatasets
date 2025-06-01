@@ -1,0 +1,103 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of white pea beans</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>loesell.bean.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of white pea beans
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of white pea beans
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("loesell.bean.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1890 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row ordinate</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column ordinate</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, grams per plot</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Trial conducted at Michigan Agricultural Experiment Station, 1.75
+acres. Beans were planted in rows 28 inches apart on 15 Jun
+1932. Plants spaced 1 to 2 inches apart. After planting, an area 210
+ft x 210 feet. This area was divided into 21 columns, each 10 foot
+wide, and each containing90 rows.
+</p>
+<p>Field length: 90 rows * 28 inches = 210 feet.
+</p>
+<p>Field width: 21 series * 10 feet = 210 feet.
+</p>
+<p>Author's conclusion: Increasing the size of the plot by increasing its
+length was more efficient than increasing its width.
+</p>
+<p>Note, the missing values in this dataset are a result of the PDF scan
+omitting corners of the table.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Loesell, Clarence (1936). 
+Size of plot &amp; number of replications necessary for varietal trials
+with white pea beans.
+PhD Thesis, Michigan State. Table 3, p. 9-10.
+https://d.lib.msu.edu/etd/5271
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  require(agridat)
+  data(loesell.bean.uniformity)
+  dat &lt;- loesell.bean.uniformity
+  require(desplot)
+  desplot(dat, yield ~ col*row,
+          flip=TRUE, aspect=1, tick=TRUE,
+          main="loesell.bean.uniformity")
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

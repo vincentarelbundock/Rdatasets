@@ -1,0 +1,136 @@
+<!DOCTYPE html><html><head><title>R: Yields of four grasses for a wide range of nitrogen...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>reid.grasses</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Yields of four grasses for a wide range of nitrogen fertilizer
+</h2>
+
+<h3>Description</h3>
+
+<p>Yields of four grasses for a wide range of nitrogen fertilizer,
+conducted over 3 years.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("reid.grasses")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 210 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>nitro</code></dt><dd><p>nitrogen, 21 numeric levels</p>
+</dd>
+<dt><code>year</code></dt><dd><p>Y1, Y2, or Y3</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype</p>
+</dd>
+<dt><code>drymatter</code></dt><dd><p>dry matter content</p>
+</dd>
+<dt><code>protein</code></dt><dd><p>protein content</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Experiment at the Hannah Research Institute, Ayr.
+</p>
+<p>Single plots were planted to 4 different kinds of grasses.  Within
+each plot, 21 nitrogen treatments were randomized.
+</p>
+<p>Reid modeled the dry matter yield with four-parameter logistic curves
+of the form y = a - b exp(-cx^d).
+</p>
+
+
+<h3>Source</h3>
+
+<p>D. Reid (1985).
+A comparison of the yield responses of four grasses to a wide range of nitrogen application rates.
+<em>J. Agric. Sci.</em>, 105, 381-387. Table 1 &amp; 3.  
+https://doi.org/10.1017/S0021859600056434
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+  library(agridat)
+  data(reid.grasses)
+  dat &lt;- reid.grasses
+
+  libs(latticeExtra)
+  foo &lt;- xyplot(drymatter + protein ~ nitro|year, dat, group=gen,
+                auto.key=list(columns=4),
+                as.table=TRUE, type=c('p','l'),
+                main="reid.grasses",ylab="drymatter/protein trait value",
+                scales=list(y=list(relation="free")))
+  combineLimits(foo)
+
+  # devtools::run_examples does NOT like groupedData
+  if (0){
+    libs(nlme)
+    dat2 &lt;- dat
+    dat2$indiv &lt;- paste(dat$year, dat$gen) # individual year+genotype curves
+    
+    # use all data to get initial values
+    inits &lt;- getInitial(drymatter ~ SSfpl(nitro, A, B, xmid, scal), data = dat2)
+    inits
+    ##         A          B       xmid       scal 
+    ## -4.167902  12.139796  68.764796 128.313106 
+    xvals &lt;- 0:800
+    y1 &lt;- with(as.list(inits), SSfpl(xvals, A, B, xmid, scal))
+    plot(drymatter ~ nitro, dat2)
+    lines(xvals,y1)
+    
+    # must have groupedData object to use augPred
+    dat2 &lt;- groupedData(drymatter ~ nitro|indiv, data=dat2)
+    plot(dat2)
+    
+    # without 'random', all effects are included in 'random'
+    m1 &lt;- nlme(drymatter ~ SSfpl(nitro, A, B, xmid,scale),
+               data= dat2,
+               fixed= A + B + xmid + scale ~ 1,
+               random = A + B + xmid + scale ~ 1|indiv,
+               start=inits)
+    fixef(m1)
+    summary(m1)
+    plot(augPred(m1, level=0:1),
+         main="reid.grasses - observed/predicted data") # only works with groupedData object
+  } # if(0)  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

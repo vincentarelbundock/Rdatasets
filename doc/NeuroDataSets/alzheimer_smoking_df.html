@@ -1,0 +1,71 @@
+<!DOCTYPE html><html><head><title>R: Smoking and Alzheimer's Disease</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>alzheimer_smoking_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Smoking and Alzheimer's Disease</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, alzheimer_smoking_df, is a data frame containing case-control data
+from a study examining the association between smoking and Alzheimer's disease.
+The study included 538 participants with information on smoking status,
+disease classification, and gender.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(alzheimer_smoking_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 538 observations and 3 variables:
+</p>
+
+<dl>
+<dt>smoking</dt><dd><p>Factor: Smoking status of participants (4 levels)</p>
+</dd>
+<dt>disease</dt><dd><p>Factor: Disease classification including Alzheimer's diagnosis (3 levels)</p>
+</dd>
+<dt>gender</dt><dd><p>Factor: Participant's gender (2 levels)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'alzheimer_smoking_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps distinguish
+this dataset as part of the NeuroDataSets package. The suffix 'df' indicates
+that the dataset is a data frame. The original content has not been modified.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the coin package version 1.4-3. Original study:
+Salib, E. and Hillier, V. (1997). A case-control study of smoking and Alzheimer's disease.
+International Journal of Geriatric Psychiatry 12: 295-300.
+</p>
+
+</main>
+
+</div>
+</body></html>

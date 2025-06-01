@@ -1,0 +1,149 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of cotton in Egypt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>bailey.cotton.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of cotton in Egypt
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of cotton in Egypt 1921-1923.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("bailey.cotton.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 794 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row ordinate</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column ordinate</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, in rotls</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+<dt><code>loc</code></dt><dd><p>location</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Two pickings were taken. The weights of seeds cotton for first and
+second pickings were totaled. Yields were measured in &quot;rotl&quot;, which
+&quot;are on the order of a pound&quot;.
+</p>
+<p>Layout at Sakha and Gemmeiza (page 9): 
+Total area 4.86 feddans.
+Each bed was 20 ridges of 7 m each, total dimension 15 m x 7 m.
+Add 1.5m for irrigation channel.
+Center-to-center distances 15m x 8.5m.
+</p>
+<p>Charts 3 &amp; 5 show yield of &quot;Selected Average Plants&quot;. These data are
+not used here.
+</p>
+<p>Chart 1: Sakha 1921, 8 x 20. Bed yield in rotls. Length 20 ridges * .75 m = 15m. Width = 7m.
+</p>
+<p>Chart 2: Gemmeiza 1921, 8 x 20.
+</p>
+<p>Chart 3: Total S.A.P. yield in grams. (not used here)
+</p>
+<p>Chart 4: Gemmeiza 1922, 8 x 20.
+</p>
+<p>Chart 5: Total S.A.P. yield in grams. (not used here)
+</p>
+<p>Layout at Giza (page 10)
+</p>
+<p>Beds were 8 ridges of 7 m each, total dimension 6m x 7m.
+Add 1.5m for irrigation channel.
+Center-to-center distance 6m x 8.5m
+</p>
+<p>Chart 6 - Giza 1921, 14 x 11 = 154 plots
+</p>
+<p>Chart 7 - Giza 1923, 20 x 8 = 160 plots
+</p>
+<p>Bailey said the results at Giza 1921 were not suitable for reliability
+experiments.
+</p>
+<p>Data were typed and proofread by KW 2023.01.11
+</p>
+
+
+<h3>Source</h3>
+
+<p>Bailey, M. A., and Trought, T. (1926).
+An account of experiments carried out to determine the experimental error of field trials with cotton in Egypt.
+Egypt Ministry of Agriculture, Technical and Science Service Bulletin 63, Min. Agriculture Egypt Technical and Science Bulletin 63.
+https://www.google.com/books/edition/Bulletin/xBQlAQAAIAAJ?pg=PA46-IA205
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  library(agridat)
+  data(bailey.cotton.uniformity)
+  dat &lt;- bailey.cotton.uniformity
+  dat &lt;- transform(dat, env=paste(year,loc))
+
+  # Data check. Matches Bailey 1926 Table 1. 28.13, , 46.02, 31.74, 13.52
+  libs(dplyr)
+  # dat 
+
+  libs(desplot)
+  desplot(dat, yield ~ col*row|env, main="bailey.cotton.uniformity")
+
+  # The yield scales are quite different at each loc, and the dimensions
+  # are different, so plot each location separately.
+  # Note: Bailey does not say if plots are 7x15 meters, or 15x7 meters.
+  # The choices here seem most likely in our opinion.
+  desplot(dat, yield ~ col*row, subset= env=="1921 Sakha",
+    main="1921 Sakha", aspect=(20*8.5)/(8*15))
+  desplot(dat, yield ~ col*row, subset= env=="1921 Gemmeiza",
+    main="1921 Gemmeiza", aspect=(20*8.5)/(8*15))
+  desplot(dat, yield ~ col*row, subset= env=="1922 Gemmeiza",
+    main="1922 Gemmeiza", aspect=(20*8.5)/(8*15))
+  desplot(dat, yield ~ col*row, subset= env=="1921 Giza",
+    main="1921 Giza", aspect=(11*6)/(14*8.5))
+  # 1923 Giza has alternately hi/lo yield rows. Not noticed by Bailey.
+  desplot(dat, yield ~ col*row, subset= env=="1923 Giza",
+    main="1923 Giza", aspect=(20*6)/(8*8.5))
+  
+
+## End(Not run)  
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

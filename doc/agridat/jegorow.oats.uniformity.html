@@ -1,0 +1,108 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of oats in Russia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>jegorow.oats.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of oats in Russia
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of oats in Russia
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("jegorow.oats.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 240 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row ordinate</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column ordinate</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield per plot, kg</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>At the Sumskaya (Ssumy?) agricultural experimental station (Kharkov
+Governorate), a field was planted in April 1908 and harvested that
+summer as plots 1 sazhen sqauare.  A 'sazhen' is 7 feet.
+</p>
+<p>Field width: 8 plots * 1 sazhen
+</p>
+<p>Field length: 30 plots * 1 sazhen
+</p>
+<p>Data typed by K.Wright from Roemer (1920), table 10.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Jegorow, M. (1909).
+Zur Methodik des feldversuches.
+Russian Journ Expt Agric, 10, 502-520.
+Has a uniformity trial of oats. 
+https://www.google.com/books/edition/Journal_de_l_agriculture_experimentale/510jAQAAIAAJ?hl=en
+</p>
+
+
+<h3>References</h3>
+
+<p>Neyman, J., &amp; Iwaszkiewicz, K. (1935).
+Statistical problems in agricultural experimentation.
+Supplement to the Journal of the Royal Statistical Society, 2(2), 107-180.
+</p>
+<p>Roemer, T. (1920).
+Der Feldversuch.
+Arbeiten der Deutschen Landwirtschafts-Gesellschaft, 302.
+https://www.google.com/books/edition/Arbeiten_der_Deutschen_Landwirtschafts_G/7zBSAQAAMAAJ
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  library(agridat)
+  
+  data(jegorow.oats.uniformity)
+  dat &lt;- jegorow.oats.uniformity
+  
+  mean(dat$yield) # Jegorow reports 2.03
+
+  libs(desplot)
+  desplot(dat, yield~col*row, 
+          aspect=10/24, flip=TRUE, tick=TRUE,
+          main="jegorow.oats.uniformity")
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

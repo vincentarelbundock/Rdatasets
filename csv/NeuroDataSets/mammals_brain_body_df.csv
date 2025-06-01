@@ -1,0 +1,97 @@
+rownames,Species,Brain,Body,Gestation,Litter
+1,Aardvark,9.6,2.2,31,5
+2,Acouchis,9.9,0.78,98,1.2
+3,African elephant,4480,2800,655,1
+4,Agoutis,20.3,2.8,104,1.3
+5,Axis deer,219,89,218,1
+6,Badger,53,6,60,2.2
+7,Barbary sheep,210,66,158,1.2
+8,Barking deer,124,16,183,1.1
+9,Bat-eared fox,28.5,3.2,65,4
+10,Beaked whale,500,250,240,1.8
+11,Beaver,45,25,128,4
+12,Black buck antelope,200,39,180,1
+13,Bush baby,9.9,0.7,135,1
+14,Canadian beaver,40,20,128,2.9
+15,Capybara,76,30,123,3
+16,Caribou,288,110,225,1
+17,Cattle,456,520,280,1
+18,Chimpanzee,360,45,230,1
+19,Chinchilla,5.25,0.43,110,2
+20,Deer mouse I,0.68,0.027,23,3.7
+21,Deer mouse II,0.63,0.026,23,5
+22,Deer mouse III,0.52,0.017,24,5
+23,Deer mouse IV,0.69,0.024,24,5
+24,Dog,70.2,8.5,63,4
+25,Dolphin,1600,160,360,1
+26,Domestic cat,28.4,2.5,63,4
+27,Domestic goat,106,30,151,2
+28,Domestic pig,180,190,115,8
+29,Domestic sheep,125,49,150,2.4
+30,Duikers,93,13,120,1
+31,Eland,480,560,255,1
+32,Elephant shrew I,1.14,0.049,51,1.5
+33,Elephant shrew II,1.37,0.064,46,1.5
+34,Elk,365,120,235,1
+35,Fallow deer,223,80,240,1
+36,Flying squirrel,1.89,0.052,40,3.1
+37,Fur seal,355,250,254,1
+38,Gentle lemur,7.8,0.22,145,2
+39,Gorilla,406,140,265,1
+40,Gray fox,37.3,3.8,63,3.7
+41,Grizzly bear,400,250,219,2.3
+42,Guinea pig,4.28,0.97,67,2.6
+43,Hamadryas baboon,183,21,180,1
+44,Hamster I,0.67,0.036,21,4.6
+45,Hamster II,1.12,0.13,16,6.3
+46,Harp seal,442,110,240,1
+47,Hedgehog,3.5,0.93,34,4.6
+48,Hippopotamus,590,1400,240,1
+49,Hopping mouse,1.18,0.15,27,5.6
+50,Horse,712,480,330,1
+51,House mouse,0.45,0.024,19,5
+52,Howler monkey,54,7.7,139,1
+53,Human being,1300,65,270,1
+54,Hyrax,20.5,3.8,225,2.4
+55,Jack rabbit,13.3,2.9,41,2.5
+56,Kinkajou,31.2,2,77,1.1
+57,Leaf monkey,65.5,5.8,168,1
+58,Lemur,22,2.1,135,1
+59,Leopard,157,46,92,2.5
+60,Lion,260,180,108,3
+61,Llama,225,93,330,1
+62,Long-nose armadillo,12,3.7,120,4
+63,Lynx,75,12,60,2.5
+64,Nutria,23,5,132,5.5
+65,Orangutan,343,37,270,1
+66,Porcupine I,37,11,112,1.2
+67,Porcupine II,37,14,112,1.2
+68,Porcupine III,24,6.6,113,1
+69,Porpoise,537,56,270,1
+70,Pygmy gerbil,1.04,0.065,21,4
+71,Pygmy hippopotamus,260,150,205,1
+72,Quokka,17.5,3.5,26,1
+73,Raccoon,41.6,5.3,63,3.5
+74,Rat I,0.72,0.05,23,7.3
+75,Rat II,2.38,0.34,21,8
+76,Red deer,435,200,255,1
+77,Red fox,48,6,52,4
+78,Rhesus monkey I,84.6,6,175,1
+79,Rhesus monkey II,107,8.7,165,1.1
+80,Ring-tail monkey,73,3.7,180,1
+81,Sambar,383,120,246,1.1
+82,Sea lion,363,100,343,1
+83,Slow loris,12.8,1.2,90,1.2
+84,Spider monkey I,114,9.1,140,1
+85,Spider monkey II,109,7.7,140,1
+86,Tapir,250,230,390,1
+87,Tiger,302,210,104,3
+88,Tree shrew,3.15,0.15,46,3
+89,Tree squirrel,6.23,0.33,38,3
+90,Vervet guenon,67,4.6,195,1
+91,Vicuna,198,45,300,1.1
+92,Weddell seal,550,400,310,1
+93,Western baboon,179,32,180,1
+94,White-handed gibbon,102,5.5,210,1
+95,Wild boar,185,150,120,4
+96,Yak,334,250,255,1

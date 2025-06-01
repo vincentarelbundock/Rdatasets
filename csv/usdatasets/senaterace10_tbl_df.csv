@@ -1,0 +1,39 @@
+rownames,id,state,abbr,name1,perc1,party1,votes1,name2,perc2,party2,votes2,name3,perc3,party3,votes3,name4,perc4,party4,votes4,name5,perc5,party5,votes5
+1,2,Alabama,AL,Richard Shelby,65,Republican,964329,William Barnes,35,Democrat,513540,,0,,0,,0,,0,,0,,0
+2,11,Alaska,AK,Total Write-In,41,Other: No Party Designation,83201,Joe Miller,34,Republican,69762,Scott McAdams,24,Democrat,48034,,0,,0,,0,,0
+3,14,Arizona,AZ,John McCain,59,Republican,926372,Rodney Glassman,35,Democrat,540904,,0,,0,,0,,0,,0,,0
+4,24,Arkansas,AR,John Boozman,58,Republican,447562,Blanche Lincoln,37,Democrat,284362,,0,,0,,0,,0,,0,,0
+5,30,California,CA,Barbara Boxer,52,Democrat,4286722,Carly Fiorina,43,Republican,3534879,,0,,0,,0,,0,,0,,0
+6,85,Colorado,CO,Michael Bennet,48,Democrat,799072,Ken Buck,47,Republican,783426,,0,,0,,0,,0,,0,,0
+7,94,Connecticut,CT,Richard Blumenthal,55,Democrat,627085,Linda McMahon,43,Republican,493158,,0,,0,,0,,0,,0,,0
+8,100,Delaware,DE,Christopher Coons,57,Democrat,173900,Christine O'Donnell,40,Republican,123025,,0,,0,,0,,0,,0,,0
+9,103,Florida,FL,Marco Rubio,49,Republican,2615262,Charlie Crist,30,Independent,1588821,Kendrick Meek,20,Democrat,1076028,,0,,0,,0,,0
+10,130,Georgia,GA,Johnny Isakson,58,Republican,1462823,Michael Thurmond,39,Democrat,986338,Chuck Donovan,3,Other: Libertarian,67739,,0,,0,,0,,0
+11,145,Hawaii,HI,Daniel Inouye,75,Democrat,276928,Cam Cavasso,22,Republican,79830,,0,,0,,0,,0,,0,,0
+12,149,Idaho,ID,Mike Crapo,71,Republican,318704,Tom Sullivan,25,Democrat,111924,,0,,0,,0,,0,,0,,0
+13,153,Illinois,IL,Mark Kirk,48,Republican,1765594,Alexi Giannoulias,46,Democrat,1694093,LeAlan Jones,3,Other: Green,116685,,0,,0,,0,,0
+14,154,Illinois,IL,Mark Kirk,47,Republican,1663098,Alexi Giannoulias,46,Democrat,1617000,LeAlan Jones,4,Other: Green,128486,,0,,0,,0,,0
+15,174,Indiana,IN,Dan Coats,55,Republican,950244,Brad Ellsworth,40,Democrat,695859,,0,,0,,0,,0,,0,,0
+16,185,Iowa,IA,Chuck Grassley,65,Republican,714667,Roxanne Conlin,33,Democrat,368202,,0,,0,,0,,0,,0,,0
+17,192,Kansas,KS,Jerry Moran,70,Republican,578768,Lisa Johnston,26,Democrat,215270,,0,,0,,0,,0,,0,,0
+18,197,Kentucky,KY,Rand Paul,56,Republican,755061,Jack Conway,44,Democrat,598885,,0,,0,,0,,0,,0,,0
+19,204,Louisiana,LA,David Vitter,57,Republican,715304,Charlie Melancon,38,Democrat,476423,,0,,0,,0,,0,,0,,0
+20,216,Maryland,MD,Barbara Mikulski,62,Democrat,1055387,Eric Wargotz,36,Republican,619204,,0,,0,,0,,0,,0,,0
+21,265,Missouri,MO,Roy Blunt,54,Republican,1051495,Robin Carnahan,41,Democrat,785719,,0,,0,,0,,0,,0,,0
+22,281,Nevada,NV,Harry Reid,50,Democrat,361655,Sharron Angle,45,Republican,320996,None of these candidates,2,Other: No Party Designation,16174,Scott Ashjian,1,Other: Tea Party,5805,,0,,0
+23,286,New Hampshire,NH,Kelly Ayotte,60,Republican,272703,Paul Hodes,37,Democrat,166538,,0,,0,,0,,0,,0,,0
+24,307,New York,NY,Charles Schumer,65,Democrat,2710735,Jay Townsend,33,Republican,1365439,,0,,0,,0,,0,,0,,0
+25,308,New York,NY,Kirsten Gillibrand,62,Democrat,2519806,Joseph DioGuardi,36,Republican,1455183,,0,,0,,0,,0,,0,,0
+26,338,North Carolina,NC,Richard Burr,55,Republican,1448003,Elaine Marshall,43,Democrat,1131305,,0,,0,,0,,0,,0,,0
+27,352,North Dakota,ND,John Hoeven,76,Republican,181409,Tracy Potter,22,Democrat,52854,,0,,0,,0,,0,,0,,0
+28,355,Ohio,OH,Rob Portman,57,Republican,2125555,Lee Fisher,39,Democrat,1447848,,0,,0,,0,,0,,0,,0
+29,375,Oklahoma,OK,Tom Coburn,71,Republican,716347,Jim Rogers,26,Democrat,265519,Stephen Wallace,2,Independent,25047,,0,,0,,0,,0
+30,382,Oregon,OR,Ron Wyden,57,Democrat,775569,Jim Huffman,39,Republican,534362,,0,,0,,0,,0,,0,,0
+31,389,Pennsylvania,PA,Pat Toomey,51,Republican,1995026,Joe Sestak,49,Democrat,1916703,,0,,0,,0,,0,,0,,0
+32,413,South Carolina,SC,Jim DeMint,62,Republican,792133,Alvin Greene,28,Democrat,358276,Tom Clements,9,Other: Green,118952,,0,,0,,0,,0
+33,421,South Dakota,SD,John Thune,,Republican,0,,0,,0,,0,,0,,0,,0,,0,,0
+34,467,Utah,UT,Mike Lee,62,Republican,360130,Sam Granato,33,Democrat,191657,Scott Bradley,6,Other: Constitution,33062,,0,,0,,0,,0
+35,472,Vermont,VT,Patrick Leahy,64,Democrat,148444,Len Britton,31,Republican,71273,,0,,0,,0,,0,,0,,0
+36,485,Washington,WA,Patty Murray,52,Democrat,1172924,Dino Rossi,48,Republican,1088828,,0,,0,,0,,0,,0,,0
+37,495,West Virginia,WV,Joe Manchin,53,Democrat,280771,John Raese,43,Republican,227960,Jesse Johnson,2,Other: Mountain Party,10048,,0,,0,,0,,0
+38,500,Wisconsin,WI,Ron Johnson,52,Republican,1125637,Russ Feingold,47,Democrat,1020860,,0,,0,,0,,0,,0,,0

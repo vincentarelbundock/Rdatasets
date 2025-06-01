@@ -1,0 +1,104 @@
+<!DOCTYPE html><html><head><title>R: Global Benthic delta18O Stack</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>lisiecki2005</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Global Benthic <code class="reqn">\delta^{18}O</code> Stack</h2>
+
+<h3>Description</h3>
+
+<p>A global Pliocene-Pleistocene benthic <code class="reqn">\delta^{18}O</code> stack.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>lisiecki2005
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A <code>data.frame</code> with 2115 observations and 3 variables:
+</p>
+
+<dl>
+<dt>age</dt><dd><p><code>numeric</code>: calendar age (kilo year cal BP).</p>
+</dd>
+<dt>delta</dt><dd><p><code>numeric</code>: benthic <code class="reqn">\delta^{18}O</code> (per mil).</p>
+</dd>
+<dt>error</dt><dd><p><code>numeric</code>: standard error (per mil).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The LR04 stack spans 5.3 Myr and is an average of 57 globally distributed
+benthic <code class="reqn">\delta^{18}O</code> records (which measure global ice
+volume and deep ocean temperature) collected from the scientific literature.
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.ncei.noaa.gov/access/paleo-search/study/5847">https://www.ncei.noaa.gov/access/paleo-search/study/5847</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Lisiecki, L. E. and Raymo, M. E. (2005). A Pliocene-Pleistocene stack of 57
+globally distributed benthic d18O records. <em>Paleoceanography</em>, 20,
+PA1003. <a href="https://doi.org/10.1029/2004PA001071">doi:10.1029/2004PA001071</a>
+</p>
+
+
+<h3>See Also</h3>
+
+<p>Other palaeoenvironment data: 
+<code>epica2008</code>,
+<code>law2006</code>,
+<code>ngrip2004</code>,
+<code>ngrip2010</code>,
+<code>spratt2016</code>
+</p>
+<p>Other isotopic data: 
+<code>ngrip2004</code>,
+<code>ngrip2010</code>,
+<code>nydal1996</code>,
+<code>spratt2016</code>,
+<code>vegetation</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>plot(
+  x = lisiecki2005$age,
+  y = lisiecki2005$delta,
+  type = "l",
+  xlim = c(500, 0),
+  xlab = "kilo year BP",
+  ylab = expression(delta^{18}*"O")
+)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

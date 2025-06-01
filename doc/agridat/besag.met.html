@@ -1,0 +1,209 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of corn, incomplete-block design</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>besag.met</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of corn, incomplete-block design
+</h2>
+
+<h3>Description</h3>
+
+<p>Multi-environment trial of corn, incomplete-block designlocation.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1152 observations on the following 7 variables.
+</p>
+
+<dl>
+<dt><code>county</code></dt><dd><p>county</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>rep</p>
+</dd>
+<dt><code>block</code></dt><dd><p>incomplete block</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype, 1-64</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Multi-environment trial of 64 corn hybrids in six counties in North
+Carolina.  Each location had 3 replicates in in incomplete-block
+design with an 18x11 lattice of plots whose length-to-width ratio was
+about 2:1.
+</p>
+<p>Note: In the original data, each county had 6 missing plots.  This
+data has rows for each missing plot that uses the same
+county/block/rep to fill-out the row, sets the genotype to G01, and
+sets the yield to missing.  These missing values were added to the
+data so that asreml could more easily do AR1xAR1 analysis using
+rectangular regions.
+</p>
+<p>Each location/panel is:
+</p>
+<p>Field length: 18 rows * 2 units = 36 units.
+</p>
+<p>Field width: 11 plots * 1 unit = 11 units.
+</p>
+<p>Retrieved from
+https://web.archive.org/web/19990505223413/www.stat.duke.edu/~higdon/trials/nc.dat
+</p>
+<p>Used with permission of David Higdon.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Julian Besag and D Higdon, 1999.
+Bayesian Analysis of Agricultural Field Experiments,
+Journal of the Royal Statistical Society: Series B, 61, 691&ndash;746.
+Table 1.
+https://doi.org/10.1111/1467-9868.00201
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(besag.met)
+  dat &lt;- besag.met
+
+  libs(desplot)
+  desplot(dat, yield ~ col*row|county,
+          aspect=36/11, # true aspect
+          out1=rep, out2=block,
+          main="besag.met")
+
+
+  # Average reps
+  datm &lt;- aggregate(yield ~ county + gen, data=dat, FUN=mean)
+  
+  # Sections below fit heteroskedastic variance models (variance for each variety)
+  # asreml takes 1 second, lme 73 seconds, SAS PROC MIXED 30 minutes
+
+
+
+  # lme
+  # libs(nlme)
+  # m1l &lt;- lme(yield ~ -1 + gen, data=datm, random=~1|county,
+  #            weights = varIdent(form=~ 1|gen))
+  # m1l$sigma^2 * c(1, coef(m1l$modelStruct$varStruct, unc = FALSE))^2
+  ##           G02    G03    G04    G05    G06    G07    G08
+  ##  91.90 210.75  63.03 112.05  28.39 237.36  72.72  42.97
+  ## ... etc ...
+  
+  if(require("asreml", quietly=TRUE)) {
+   libs(asreml, lucid)
+
+   # Average reps
+   datm &lt;- aggregate(yield ~ county + gen, data=dat, FUN=mean)
+   #  asreml Using 'rcov' ALWAYS requires sorting the data
+   datm &lt;- datm[order(datm$gen),]
+   
+   m1 &lt;- asreml(yield ~ gen, data=datm,
+                random = ~ county,
+                residual = ~ dsum( ~ units|gen))
+   vc(m1)[1:7,]
+   ##      effect component std.error z.ratio bound 
+   ##    county   1324       836.1      1.6     P 0.2
+   ## gen_G01!R     91.98     58.91     1.6     P 0.1
+   ## gen_G02!R    210.6     133.6      1.6     P 0.1
+   ## gen_G03!R     63.06     40.58     1.6     P 0.1
+   ## gen_G04!R    112.1      71.59     1.6     P 0.1
+   ## gen_G05!R     28.35     18.57     1.5     P 0.2
+   ## gen_G06!R    237.4     150.8      1.6     P 0  
+  
+   # We get the same results from asreml &amp; lme
+   # plot(m1$vparameters[-1],
+   #      m1l$sigma^2 * c(1, coef(m1l$modelStruct$varStruct, unc = FALSE))^2)
+   
+   # The following example shows how to construct a GxE biplot
+   # from the FA2 model.
+   
+   
+   dat &lt;- besag.met
+   dat &lt;- transform(dat, xf=factor(col), yf=factor(row))
+   dat &lt;- dat[order(dat$county, dat$xf, dat$yf), ]
+   
+   # First, AR1xAR1
+   m1 &lt;- asreml(yield ~ county, data=dat,
+                random = ~ gen:county,
+                residual = ~ dsum( ~ ar1(xf):ar1(yf)|county))
+   # Add FA1
+   m2 &lt;- update(m1, random=~gen:fa(county,1)) # rotate.FA=FALSE
+   # FA2
+   m3 &lt;- update(m2, random=~gen:fa(county,2))
+   asreml.options(extra=50)
+   m3 &lt;- update(m3, maxit=50)
+   asreml.options(extra=0)
+   
+   # Use the loadings to make a biplot
+   vars &lt;- vc(m3)
+   psi &lt;- vars[grepl("!var$", vars$effect), "component"]
+   la1 &lt;- vars[grepl("!fa1$", vars$effect), "component"]
+   la2 &lt;- vars[grepl("!fa2$", vars$effect), "component"]
+   mat &lt;- as.matrix(data.frame(psi, la1, la2))
+   # I tried using rotate.fa=FALSE, but it did not seem to
+   # give orthogonal vectors.  Rotate by hand.
+   rot &lt;- svd(mat[,-1])$v # rotation matrix
+   lam &lt;- mat[,-1] 
+   colnames(lam) &lt;- c("load1", "load2")
+   
+   co3 &lt;- coef(m3)$random # Scores are the GxE coefficients
+   ix1 &lt;- grepl("_Comp1$", rownames(co3))
+   ix2 &lt;- grepl("_Comp2$", rownames(co3))
+   sco &lt;- matrix(c(co3[ix1], co3[ix2]), ncol=2, byrow=FALSE)
+   sco &lt;- sco 
+   dimnames(sco) &lt;- list(levels(dat$gen) , c('load1','load2'))
+   rownames(lam) &lt;- levels(dat$county)
+   sco[,1:2] &lt;- -1 * sco[,1:2]
+   lam[,1:2] &lt;- -1 * lam[,1:2]
+   biplot(sco, lam, cex=.5, main="FA2 coefficient biplot (asreml)")
+   # G variance matrix
+   gvar &lt;- lam 
+  
+   # Now get predictions and make an ordinary biplot
+   p3 &lt;- predict(m3, data=dat, classify="county:gen")
+   p3 &lt;- p3$pvals
+   libs("gge")  
+   bi3 &lt;- gge(p3, predicted.value ~ gen*county, scale=FALSE)
+   if(interactive()) dev.new()
+   # Very similar to the coefficient biplot
+   biplot(bi3, stand=FALSE, main="SVD biplot of FA2 predictions")
+  }
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

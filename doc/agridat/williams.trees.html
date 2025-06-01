@@ -1,0 +1,96 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of trees, height / survival of 37...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>williams.trees</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of trees, height / survival of 37 species at 6 sites in Thailand
+</h2>
+
+<h3>Description</h3>
+
+<p>Multi-environment trial of trees, height / survival of 37 species at 6 sites in Thailand
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 222 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>env</code></dt><dd><p>Environment factor, 6 levels</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>Genetic factor, 37 levels</p>
+</dd>
+<dt><code>height</code></dt><dd><p>Height (cm)</p>
+</dd>
+<dt><code>survival</code></dt><dd><p>Survival percentage</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Planted in 1985 at six sites in Thailand.  RCB with 3 reps.  The data
+here is the mean of the three reps.  Plots were 5 meters square with
+spacing 2m x 2m.  Measurements collected at 24 months.  The <code>gen</code>
+column in the data is actually <em>seedlot</em>, as some tree species
+have multiple seed lots.  The trees are mostly acacia and eucalyptus.
+</p>
+<p>Used with permission of Emlyn Williams.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Williams, ER and Luangviriyasaeng, V. 1989.
+Statistical analysis of tree species trial and seedlot:site
+interaction in Thailand.  Chapter 14 of <em>Trees for the
+Tropics: Growing Australian Multipurpose Trees and Shrubs in
+Developing Countries</em>. Pages 145&ndash;152.
+https://aciar.gov.au/publication/MN010
+</p>
+
+
+<h3>References</h3>
+
+<p>E. R. Williams and A. C. Matheson and C. E Harwood,
+Experimental Design and Analysis for Tree Improvement.
+CSIRO Publishing, 2002.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(williams.trees)
+dat &lt;- williams.trees
+
+libs(lattice)
+xyplot(survival~height|env,dat, main="williams.trees", xlab="Height",
+ylab="Percent surviving")
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

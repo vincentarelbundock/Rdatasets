@@ -1,0 +1,91 @@
+<!DOCTYPE html><html><head><title>R: Episodes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>episodes</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Episodes</h2>
+
+<h3>Description</h3>
+
+<p>Contains details of each episode including the title, number of viewers, beginning quote
+and IMDb rating
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>episodes
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt><code>version</code></dt><dd><p>Country code for the version of the show</p>
+</dd>
+<dt><code>season</code></dt><dd><p>The season number</p>
+</dd>
+<dt><code>episode_number_overall</code></dt><dd><p>Episode number across seasons</p>
+</dd>
+<dt><code>episode</code></dt><dd><p>Episode number</p>
+</dd>
+<dt><code>title</code></dt><dd><p>Episode title</p>
+</dd>
+<dt><code>day_start</code></dt><dd><p>The day the episode started on</p>
+</dd>
+<dt><code>n_remaining</code></dt><dd><p>How are remaining at the start of the episode</p>
+</dd>
+<dt><code>air_date</code></dt><dd><p>Date the episode originally aired</p>
+</dd>
+<dt><code>viewers</code></dt><dd><p>Number of viewers in the US (millions)</p>
+</dd>
+<dt><code>quote</code></dt><dd><p>The beginning quote</p>
+</dd>
+<dt><code>author</code></dt><dd><p>Author of the beginning quote</p>
+</dd>
+<dt><code>imdb_rating</code></dt><dd><p>IMDb rating of the episode</p>
+</dd>
+<dt><code>n_ratings</code></dt><dd><p>Number of ratings given for the episode</p>
+</dd>
+<dt><code>description</code></dt><dd><p>Description of the episode from IMDb</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://en.wikipedia.org/wiki/List_of_Alone_episodes#Season_1_(2015)_-_Vancouver_Island">https://en.wikipedia.org/wiki/List_of_Alone_episodes#Season_1_(2015)_-_Vancouver_Island</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library(dplyr)
+library(ggplot2)
+
+episodes |&gt;
+  ggplot(aes(episode_number_overall, viewers, colour = as.factor(season))) +
+  geom_line()
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

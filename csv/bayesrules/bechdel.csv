@@ -1,0 +1,1795 @@
+rownames,year,title,binary
+1,2013,21 &amp; Over,FAIL
+2,2012,Dredd 3D,PASS
+3,2013,12 Years a Slave,FAIL
+4,2013,2 Guns,FAIL
+5,2013,42,FAIL
+6,2013,47 Ronin,FAIL
+7,2013,A Good Day to Die Hard,FAIL
+8,2013,About Time,PASS
+9,2013,Admission,PASS
+10,2013,After Earth,FAIL
+11,2013,American Hustle,PASS
+12,2013,August: Osage County,PASS
+13,2013,Beautiful Creatures,PASS
+14,2013,Blue Jasmine,PASS
+15,2013,Captain Phillips,FAIL
+16,2013,Carrie,PASS
+17,2013,Cloudy with a Chance of Meatballs 2,FAIL
+18,2013,Despicable Me 2,PASS
+19,2013,Don Jon,FAIL
+20,2013,Elysium,PASS
+21,2013,Ender&#39;s Game,FAIL
+22,2013,Epic,PASS
+23,2013,Escape from Planet Earth,PASS
+24,2013,Escape Plan,FAIL
+25,2013,Evil Dead,PASS
+26,2013,Fast and Furious 6,PASS
+27,2013,Frozen,PASS
+28,2013,G.I. Joe: Retaliation,PASS
+29,2013,Gangster Squad,FAIL
+30,2013,Gloria,PASS
+31,2013,Gravity,FAIL
+32,2013,Grown Ups 2,FAIL
+33,2013,Hansel &amp; Gretel: Witch Hunters,PASS
+34,2013,Her,FAIL
+35,2013,Identity Thief,FAIL
+36,2013,Insidious: Chapter 2,FAIL
+37,2013,Iron Man 3,FAIL
+38,2013,Jack the Giant Slayer,FAIL
+39,2013,Kick-Ass 2,PASS
+40,2013,Last Vegas,FAIL
+41,2013,Lee Daniels&#39; The Butler,PASS
+42,2013,Machete Kills,PASS
+43,2013,Mama,PASS
+44,2013,Man of Steel,PASS
+45,2013,Nebraska,PASS
+46,2013,Now You See Me,FAIL
+47,2013,Oblivion,FAIL
+48,2013,Olympus Has Fallen,FAIL
+49,2013,Oz the Great and Powerful,PASS
+50,2013,Pacific Rim,FAIL
+51,2013,Pain &amp; Gain,FAIL
+52,2013,Parker,PASS
+53,2013,Peeples,FAIL
+54,2013,Percy Jackson: Sea of Monsters,PASS
+55,2013,Prisoners,PASS
+56,2013,R.I.P.D.,FAIL
+57,2013,Red 2,PASS
+58,2013,Riddick,FAIL
+59,2013,Runner Runner,FAIL
+60,2013,Rush,FAIL
+61,2013,Safe Haven,PASS
+62,2013,Saving Mr. Banks,PASS
+63,2013,Side Effects,PASS
+64,2013,Star Trek Into Darkness,FAIL
+65,2013,Texas Chainsaw 3D,PASS
+66,2013,The Big Wedding,PASS
+67,2013,The Book Thief,PASS
+68,2013,The Call,PASS
+69,2013,The Conjuring,PASS
+70,2013,The Counselor,PASS
+71,2013,The Croods,FAIL
+72,2013,The Family,FAIL
+73,2013,The Fifth Estate,FAIL
+74,2013,The Frozen Ground,FAIL
+75,2013,The Great Gatsby,FAIL
+76,2013,The Hangover part 3,FAIL
+77,2013,The Heat,PASS
+78,2013,The Hobbit: The Desolation of Smaug,FAIL
+79,2013,The Host,FAIL
+80,2013,The Hunger Games: Catching Fire,PASS
+81,2013,The Incredible Burt Wonderstone,FAIL
+82,2013,The Internship,FAIL
+83,2013,The Last Exorcism Part II,PASS
+84,2013,The Lone Ranger,FAIL
+85,2013,The Mortal Instruments: City of Bones,PASS
+86,2013,The Purge,FAIL
+87,2013,The Smurfs 2,PASS
+88,2013,The To Do List,PASS
+89,2013,The Way Way Back,PASS
+90,2013,The Wolf of Wall Street,FAIL
+91,2013,The Wolverine,PASS
+92,2013,The World&#39;s End,FAIL
+93,2013,This Is the End,FAIL
+94,2013,Thor: The Dark World,FAIL
+95,2013,Trance,FAIL
+96,2013,Turbo,FAIL
+97,2013,Warm Bodies,FAIL
+98,2013,We&#39;re the Millers,PASS
+99,2013,White House Down,FAIL
+100,2013,World War Z,FAIL
+101,2012,Abraham Lincoln: Vampire Hunter,FAIL
+102,2012,Act of Valor,FAIL
+103,2012,Amour,FAIL
+104,2012,Anna Karenina,FAIL
+105,2012,Argo,PASS
+106,2012,Battleship,FAIL
+107,2012,Beasts of the Southern Wild,FAIL
+108,2012,Blue Like Jazz,PASS
+109,2012,Brave,PASS
+110,2012,Bullet to the Head,FAIL
+111,2012,Chernobyl Diaries,FAIL
+112,2012,Chronicle,FAIL
+113,2012,Cloud Atlas,PASS
+114,2012,Contraband,PASS
+115,2012,Django Unchained,FAIL
+116,2012,Flight,FAIL
+117,2012,Frankenweenie,FAIL
+118,2012,Hannibal,PASS
+119,2012,Hotel Transylvania,PASS
+120,2012,Jack Reacher,FAIL
+121,2012,Jagten,FAIL
+122,2012,John Carter,PASS
+123,2012,Killing Them Softly,FAIL
+124,2012,Les Miserables,PASS
+125,2012,Life of Pi,FAIL
+126,2012,Lincoln,PASS
+127,2012,Madagascar 3: Europe&#39;s Most Wanted,FAIL
+128,2012,Men in Black III,FAIL
+129,2012,Mirror Mirror,FAIL
+130,2012,Moonrise Kingdom,PASS
+131,2012,Much Ado About Nothing,FAIL
+132,2012,One for the Money,PASS
+133,2012,Paranormal Activity 4,PASS
+134,2012,ParaNorman,FAIL
+135,2012,Parental Guidance,PASS
+136,2012,People Like Us,PASS
+137,2012,Pitch Perfect,PASS
+138,2012,Premium Rush,PASS
+139,2012,Red Dawn,FAIL
+140,2012,Red Tails,FAIL
+141,2012,Rise of the Guardians,FAIL
+142,2012,Rock of Ages,PASS
+143,2012,Safe,FAIL
+144,2012,Safety Not Guaranteed,PASS
+145,2012,Seven Psychopaths,FAIL
+146,2012,Silent Hill: Revelation 3D,PASS
+147,2012,Silver Linings Playbook,PASS
+148,2012,Sinister,FAIL
+149,2012,Skyfall,FAIL
+150,2012,Snow White and the Huntsman,PASS
+151,2012,Sparkle,PASS
+152,2012,Spring Breakers,PASS
+153,2012,Step Up Revolution,PASS
+154,2012,Supporting Characters,FAIL
+155,2012,Ted,FAIL
+156,2012,That&#39;s My Boy,FAIL
+157,2012,The Amazing Spider-Man,FAIL
+158,2012,The Avengers,FAIL
+159,2012,The Dark Knight Rises,FAIL
+160,2012,The Devil Inside,PASS
+161,2012,The Dictator,FAIL
+162,2012,The Expendables 2,PASS
+163,2012,The Grey,FAIL
+164,2012,The Hobbit: An Unexpected Journey,FAIL
+165,2012,The Hunger Games,PASS
+166,2012,The Impossible,FAIL
+167,2012,The Man with the Iron Fists,FAIL
+168,2012,The Master,FAIL
+169,2012,The Pirates! Band of Misfits,FAIL
+170,2012,The Place Beyond the Pines,FAIL
+171,2012,The Twilight Saga: Breaking Dawn - Part 2,FAIL
+172,2012,The Vow,PASS
+173,2012,The Watch,FAIL
+174,2012,The Woman in Black,FAIL
+175,2012,The Words,FAIL
+176,2012,Think Like a Man,PASS
+177,2012,To Rome With Love,FAIL
+178,2012,Total Recall,FAIL
+179,2012,Underworld: Awakening,PASS
+180,2012,Wanderlust,PASS
+181,2012,What to Expect When You&#39;re Expecting,PASS
+182,2012,Won&#39;t Back Down,PASS
+183,2012,Wrath of the Titans,FAIL
+184,2012,Wreck-It Ralph,PASS
+185,2012,Zero Dark Thirty,PASS
+186,2011,30 Minutes or Less,FAIL
+187,2011,50/50,FAIL
+188,2011,A Dangerous Method,FAIL
+189,2011,A Lonely Place to Die,PASS
+190,2011,A Very Harold &amp; Kumar 3D Christmas,FAIL
+191,2011,Another Earth,PASS
+192,2011,Apollo 18,FAIL
+193,2011,Arthur Christmas,FAIL
+194,2011,Attack the Block,PASS
+195,2011,Bad Teacher,PASS
+196,2011,Battle: Los Angeles,FAIL
+197,2011,Beastly,FAIL
+198,2011,Blackthorn,FAIL
+199,2011,Bridesmaids,PASS
+200,2011,Captain America: The First Avenger,FAIL
+201,2011,Cars 2,FAIL
+202,2011,Circumstance,PASS
+203,2011,Colombiana,FAIL
+204,2011,Conan the Barbarian,FAIL
+205,2011,Contagion,PASS
+206,2011,Coriolanus,FAIL
+207,2011,Cowboys &amp; Aliens,FAIL
+208,2011,Detention,PASS
+209,2011,Diary of a Wimpy Kid: Rodrick Rules,FAIL
+210,2011,Dolphin Tale,FAIL
+211,2011,Dream House,PASS
+212,2011,Drive,FAIL
+213,2011,Fast Five,PASS
+214,2011,Final Destination 5,FAIL
+215,2011,Footloose,PASS
+216,2011,Fright Night,FAIL
+217,2011,Green Lantern,FAIL
+218,2011,Hall Pass,FAIL
+219,2011,Hanna,PASS
+220,2011,Harry Potter and the Deathly Hallows: Part 2,FAIL
+221,2011,Haywire,FAIL
+222,2011,Hesher,FAIL
+223,2011,Higher Ground,PASS
+224,2011,Hobo with a Shotgun,FAIL
+225,2011,Hop,FAIL
+226,2011,Horrible Bosses,PASS
+227,2011,Hugo,FAIL
+228,2011,I Am Number Four,FAIL
+229,2011,Immortals,FAIL
+230,2011,In Time,FAIL
+231,2011,Iris,PASS
+232,2011,Jin ling shi san chai,PASS
+233,2011,Johnny English Reborn,FAIL
+234,2011,Jumping the Broom,PASS
+235,2011,Just Go with It,FAIL
+236,2011,Kill List,FAIL
+237,2011,Killer Elite,FAIL
+238,2011,Kung Fu Panda 2,PASS
+239,2011,Le Havre,FAIL
+240,2011,Like Crazy,PASS
+241,2011,Limitless,FAIL
+242,2011,Margaret,PASS
+243,2011,Margin Call,FAIL
+244,2011,Mars Needs Moms,FAIL
+245,2011,Martha Marcy May Marlene,PASS
+246,2011,Melancholia,PASS
+247,2011,Midnight in Paris,PASS
+248,2011,Mission: Impossible - Ghost Protocol,FAIL
+249,2011,Moneyball,FAIL
+250,2011,Mr. Popper&#39;s Penguins,FAIL
+251,2011,New Year&#39;s Eve,PASS
+252,2011,No Strings Attached,PASS
+253,2011,October Baby,PASS
+254,2011,Our Idiot Brother,PASS
+255,2011,Paranormal Activity 3,PASS
+256,2011,Paul,PASS
+257,2011,Pirates of the Caribbean: On Stranger Tides,FAIL
+258,2011,Priest,FAIL
+259,2011,Puss in Boots,FAIL
+260,2011,Rango,FAIL
+261,2011,Real Steel,FAIL
+262,2011,Red Riding Hood,PASS
+263,2011,Red State,PASS
+264,2011,Restless,PASS
+265,2011,Rio,FAIL
+266,2011,Rise of the Planet of the Apes,FAIL
+267,2011,Shame,FAIL
+268,2011,Snow Flower and the Secret Fan,PASS
+269,2011,Soul Surfer,PASS
+270,2011,Source Code,FAIL
+271,2011,Straw Dogs,PASS
+272,2011,Sucker Punch,PASS
+273,2011,Super 8,PASS
+274,2011,Take Shelter,PASS
+275,2011,The Adjustment Bureau,FAIL
+276,2011,The Adventures of Tintin,FAIL
+277,2011,The Artist,FAIL
+278,2011,The Best Exotic Marigold Hotel,PASS
+279,2011,The Cabin in the Woods,FAIL
+280,2011,The Darkest Hour,PASS
+281,2011,The Divide,PASS
+282,2011,The Future,PASS
+283,2011,The Girl with the Dragon Tattoo,FAIL
+284,2011,The Green Hornet,FAIL
+285,2011,The Guard,FAIL
+286,2011,The Help,PASS
+287,2011,The Iron Lady,PASS
+288,2011,The Lincoln Lawyer,FAIL
+289,2011,The Mechanic,FAIL
+290,2011,The Muppets,FAIL
+291,2011,The Rite,FAIL
+292,2011,The Roommate,PASS
+293,2011,The Smurfs,PASS
+294,2011,The Three Musketeers,FAIL
+295,2011,The Tree of Life,FAIL
+296,2011,The Twilight Saga: Breaking Dawn - Part 1,PASS
+297,2011,Thor,PASS
+298,2011,Tinker Tailor Soldier Spy,FAIL
+299,2011,Tower Heist,FAIL
+300,2011,Transformers: Dark of the Moon,PASS
+301,2011,War Horse,FAIL
+302,2011,Warrior,FAIL
+303,2011,We Bought a Zoo,FAIL
+304,2011,Weekend,FAIL
+305,2011,What&#39;s Your Number,PASS
+306,2011,Winnie the Pooh,FAIL
+307,2011,X-Men: First Class,PASS
+308,2011,Young Adult,PASS
+309,2011,Your Sister&#39;s Sister,PASS
+310,2010,127 Hours,FAIL
+311,2010,Alice in Wonderland,PASS
+312,2010,Animal Kingdom,FAIL
+313,2010,Another Year,PASS
+314,2010,Barney&#39;s Version,PASS
+315,2010,Beginners,FAIL
+316,2010,Biutiful,FAIL
+317,2010,Black Swan,PASS
+318,2010,Blue Valentine,FAIL
+319,2010,Burlesque,PASS
+320,2010,Casino Jack,FAIL
+321,2010,Centurion,FAIL
+322,2010,Charlie St. Cloud,FAIL
+323,2010,Clash of the Titans,FAIL
+324,2010,Conviction,PASS
+325,2010,Cop Out,FAIL
+326,2010,Country Strong,PASS
+327,2010,Cyrus,FAIL
+328,2010,Date Night,PASS
+329,2010,Dear John,FAIL
+330,2010,Despicable Me,PASS
+331,2010,Devil,PASS
+332,2010,Diary of a Wimpy Kid,PASS
+333,2010,Dinner for Schmucks,FAIL
+334,2010,Don&#39;t Be Afraid of the Dark,PASS
+335,2010,Due Date,FAIL
+336,2010,Dylan Dog: Dead of Night,FAIL
+337,2010,Easy A,PASS
+338,2010,"Eat, Pray, Love",PASS
+339,2010,Edge of Darkness,FAIL
+340,2010,Everything Must Go,FAIL
+341,2010,Fair Game,PASS
+342,2010,Faster,FAIL
+343,2010,For Colored Girls,PASS
+344,2010,Frozen,FAIL
+345,2010,Get Him To The Greek,FAIL
+346,2010,Going the Distance,PASS
+347,2010,Green Zone,FAIL
+348,2010,Grown Ups,PASS
+349,2010,Gunless,FAIL
+350,2010,Harry Potter and the Deathly Hallows: Part 1,PASS
+351,2010,Hot Tub Time Machine,FAIL
+352,2010,How to Train Your Dragon,PASS
+353,2010,I Am Love,PASS
+354,2010,Inception,FAIL
+355,2010,Insidious,PASS
+356,2010,Iron Man 2,PASS
+357,2010,It&#39;s Kind of a Funny Story,FAIL
+358,2010,Kick-Ass,FAIL
+359,2010,Knight and Day,FAIL
+360,2010,Legion,PASS
+361,2010,Let Me In,FAIL
+362,2010,Letters to Juliet,FAIL
+363,2010,Love and Other Drugs,FAIL
+364,2010,Machete,PASS
+365,2010,Made In Dagenham,PASS
+366,2010,Meek&#39;s Cutoff,FAIL
+367,2010,Megamind,FAIL
+368,2010,Monsters,FAIL
+369,2010,Morning Glory,PASS
+370,2010,Nanny McPhee and the Big Bang,PASS
+371,2010,Never Let Me Go,PASS
+372,2010,Paranormal Activity 2,PASS
+373,2010,Percy Jackson &amp; the Olympians: The Lightning Thief,FAIL
+374,2010,Please Give,PASS
+375,2010,Predators,FAIL
+376,2010,Prince of Persia: The Sands of Time,FAIL
+377,2010,Rabbit Hole,PASS
+378,2010,Ramona and Beezus,PASS
+379,2010,Red,FAIL
+380,2010,Remember Me,PASS
+381,2010,Repo Men,PASS
+382,2010,Robin Hood,FAIL
+383,2010,Salt,PASS
+384,2010,Scott Pilgrim vs. the World,PASS
+385,2010,Secretariat,PASS
+386,2010,Sex and the city 2,PASS
+387,2010,Shrek Forever After,FAIL
+388,2010,Shutter Island,FAIL
+389,2010,Skyline,FAIL
+390,2010,Somewhere,FAIL
+391,2010,Submarine,FAIL
+392,2010,Super,FAIL
+393,2010,Takers,FAIL
+394,2010,Tangled,PASS
+395,2010,The A-Team,FAIL
+396,2010,The Back-up Plan,PASS
+397,2010,The Chronicles of Narnia: The Voyage of the Dawn Treader,PASS
+398,2010,The Conspirator,FAIL
+399,2010,The Crazies,PASS
+400,2010,The Debt,PASS
+401,2010,The Expendables,FAIL
+402,2010,The Fighter,FAIL
+403,2010,The Ghost Writer,FAIL
+404,2010,The Illusionist,FAIL
+405,2010,The Karate Kid,FAIL
+406,2010,The Kids Are All Right,PASS
+407,2010,The Killer Inside Me,FAIL
+408,2010,The King&#39;s Speech,PASS
+409,2010,The Last Airbender,FAIL
+410,2010,The Last Exorcism,PASS
+411,2010,The Losers,FAIL
+412,2010,The Next Three Days,PASS
+413,2010,The Other Guys,FAIL
+414,2010,The Runaways,PASS
+415,2010,The Social Network,FAIL
+416,2010,The Sorcerer&#39;s Apprentice,FAIL
+417,2010,The Spy Next Door,PASS
+418,2010,The Switch,FAIL
+419,2010,The Tempest,PASS
+420,2010,The Tourist,FAIL
+421,2010,The Town,FAIL
+422,2010,The Twilight Saga: Eclipse,PASS
+423,2010,The Wolfman,FAIL
+424,2010,Tiny Furniture,PASS
+425,2010,Toy Story 3,FAIL
+426,2010,Tron Legacy,FAIL
+427,2010,True Grit,PASS
+428,2010,Tucker and Dale vs Evil,PASS
+429,2010,Unstoppable,FAIL
+430,2010,Valentine&#39;s Day,PASS
+431,2010,Wall Street: Money Never Sleeps,FAIL
+432,2010,Welcome to the Rileys,PASS
+433,2010,Wild Target,FAIL
+434,2010,Winter&#39;s Bone,PASS
+435,2010,Womb,PASS
+436,2010,Yogi Bear,FAIL
+437,2010,You Again,PASS
+438,2010,You Will Meet a Tall Dark Stranger,PASS
+439,2009,(500) Days of Summer,FAIL
+440,2009,17 Again,PASS
+441,2009,2012,FAIL
+442,2009,9,FAIL
+443,2009,A Perfect Getaway,FAIL
+444,2009,A Serious Man,FAIL
+445,2009,A Single Man,FAIL
+446,2009,Adam,FAIL
+447,2009,Adventureland,FAIL
+448,2009,Agora,FAIL
+449,2009,Ajami,FAIL
+450,2009,All About Steve,PASS
+451,2009,An Education,PASS
+452,2009,Angels &amp; Demons,FAIL
+453,2009,Armored,FAIL
+454,2009,Astro Boy,FAIL
+455,2009,Avatar,FAIL
+456,2009,Away We Go,PASS
+457,2009,Br&uuml;no,FAIL
+458,2009,Bride Wars,PASS
+459,2009,Bright Star,PASS
+460,2009,Brooklyn&#39;s Finest,FAIL
+461,2009,Brothers,PASS
+462,2009,Capitalism: A Love Story,FAIL
+463,2009,Case 39,PASS
+464,2009,Chloe,FAIL
+465,2009,Cloudy with a Chance of Meatballs,FAIL
+466,2009,Coco avant Chanel,PASS
+467,2009,Coraline,PASS
+468,2009,Daybreakers,FAIL
+469,2009,Dead Snow,FAIL
+470,2009,District 9,FAIL
+471,2009,Drag Me to Hell,PASS
+472,2009,Enter the Void,FAIL
+473,2009,Everybody&#39;s Fine,FAIL
+474,2009,Fantastic Mr. Fox,FAIL
+475,2009,Fast &amp; Furious,FAIL
+476,2009,Fired Up!,FAIL
+477,2009,Fish Tank,PASS
+478,2009,Friday the 13th,FAIL
+479,2009,Funny People,FAIL
+480,2009,G-Force,FAIL
+481,2009,G.I. Joe: The Rise of Cobra,FAIL
+482,2009,Gamer,FAIL
+483,2009,Get Low,FAIL
+484,2009,Harry Brown,FAIL
+485,2009,Harry Potter and the Half-Blood Prince,PASS
+486,2009,He&#39;s Just Not That Into You,PASS
+487,2009,I Come with the Rain,FAIL
+488,2009,I Love You Phillip Morris,FAIL
+489,2009,"I Love You, Man",FAIL
+490,2009,Ice Age: Dawn of the Dinosaurs,FAIL
+491,2009,Inglourious Basterds,FAIL
+492,2009,Invictus,FAIL
+493,2009,It&#39;s Complicated,PASS
+494,2009,Jennifer&#39;s Body,PASS
+495,2009,Julie &amp; Julia,PASS
+496,2009,Knowing,FAIL
+497,2009,Law Abiding Citizen,FAIL
+498,2009,Life During Wartime,PASS
+499,2009,Micmacs (Micmacs &agrave; tire-larigot),FAIL
+500,2009,Monsters vs Aliens,FAIL
+501,2009,Moon,FAIL
+502,2009,Mother and Child,PASS
+503,2009,My Bloody Valentine 3D,FAIL
+504,2009,My Sister&#39;s Keeper,PASS
+505,2009,Nine,FAIL
+506,2009,Ninja Assassin,FAIL
+507,2009,Nowhere Boy,FAIL
+508,2009,Ondine,PASS
+509,2009,Paa,FAIL
+510,2009,Pandorum,FAIL
+511,2009,Perrier&#39;s Bounty,FAIL
+512,2009,Planet 51,FAIL
+513,2009,Precious: Based on the Novel Push by Sapphire,PASS
+514,2009,Public Enemies,FAIL
+515,2009,Push,PASS
+516,2009,Sherlock Holmes,FAIL
+517,2009,Splice,PASS
+518,2009,Star Trek,PASS
+519,2009,State of Play,PASS
+520,2009,Surrogates,FAIL
+521,2009,Terminator Salvation,FAIL
+522,2009,The Blind Side,FAIL
+523,2009,The Boat That Rocked,FAIL
+524,2009,The Boondock Saints II: All Saints Day,FAIL
+525,2009,The Box,PASS
+526,2009,The City of Your Final Destination,PASS
+527,2009,The Final Destination,PASS
+528,2009,The Fourth Kind,PASS
+529,2009,The Girl with the Dragon Tattoo,FAIL
+530,2009,The Girlfriend Experience,FAIL
+531,2009,The Good Guy,PASS
+532,2009,The Hangover,FAIL
+533,2009,The Imaginarium of Doctor Parnassus,FAIL
+534,2009,The Informant!,FAIL
+535,2009,The Invention of Lying,FAIL
+536,2009,The Last Station,PASS
+537,2009,The Lovely Bones,PASS
+538,2009,The Men Who Stare at Goats,FAIL
+539,2009,The Messenger,FAIL
+540,2009,The Princess and the Frog,PASS
+541,2009,The Proposal,FAIL
+542,2009,The Road,FAIL
+543,2009,The Secret of Kells,FAIL
+544,2009,The Soloist,FAIL
+545,2009,The Taking of Pelham 123,FAIL
+546,2009,The Time Traveler&#39;s Wife,FAIL
+547,2009,The Ugly Truth,FAIL
+548,2009,The Unborn,PASS
+549,2009,The Young Victoria,PASS
+550,2009,Transformers: Revenge of the Fallen,PASS
+551,2009,Up,FAIL
+552,2009,Up in the Air,FAIL
+553,2009,Veronika Decides to Die,PASS
+554,2009,Watchmen,FAIL
+555,2009,Whatever Works,FAIL
+556,2009,Where the Wild Things Are,FAIL
+557,2009,Whip It,PASS
+558,2009,Whiteout,PASS
+559,2009,X-Men Origins: Wolverine,FAIL
+560,2009,Yesterday Was a Lie,PASS
+561,2009,Youth in Revolt,FAIL
+562,2009,Zombieland,PASS
+563,2008,21,PASS
+564,2008,Appaloosa,FAIL
+565,2008,Australia,FAIL
+566,2008,Baby Mama,PASS
+567,2008,Be Kind Rewind,FAIL
+568,2008,Bedtime Stories,PASS
+569,2008,Blindness,PASS
+570,2008,Bolt,PASS
+571,2008,Burn After Reading,FAIL
+572,2008,Changeling,PASS
+573,2008,Che: Part One,FAIL
+574,2008,City of Ember,PASS
+575,2008,Cloverfield,PASS
+576,2008,Day of the Dead,PASS
+577,2008,Death Race,FAIL
+578,2008,Defiance,PASS
+579,2008,"Definitely, Maybe",PASS
+580,2008,Doomsday,PASS
+581,2008,Doubt,PASS
+582,2008,Eagle Eye,FAIL
+583,2008,Easy Virtue,PASS
+584,2008,Fireproof,FAIL
+585,2008,Fly Me to the Moon,FAIL
+586,2008,Forgetting Sarah Marshall,PASS
+587,2008,Four Christmases,PASS
+588,2008,Frost/Nixon,FAIL
+589,2008,Frozen River,PASS
+590,2008,Gake no ue no Ponyo,PASS
+591,2008,Ghost Town,FAIL
+592,2008,Gran Torino,FAIL
+593,2008,Hamlet 2,PASS
+594,2008,Hancock,FAIL
+595,2008,Herb &amp; Dorothy,PASS
+596,2008,High School Musical 3: Senior Year,PASS
+597,2008,Igor,FAIL
+598,2008,In Bruges,FAIL
+599,2008,Indiana Jones and the Kingdom of the Crystal Skull,FAIL
+600,2008,Inkheart,PASS
+601,2008,Iron Man,FAIL
+602,2008,Journey to the Center of the Earth,FAIL
+603,2008,Jumper,FAIL
+604,2008,Kung Fu Panda,FAIL
+605,2008,L&aring;t den r&auml;tte komma in (Let the Right One In),FAIL
+606,2008,Made of Honor,FAIL
+607,2008,Max Payne,PASS
+608,2008,Meet Dave,FAIL
+609,2008,Milk,FAIL
+610,2008,Miracle at St. Anna,FAIL
+611,2008,Nick and Norah&#39;s Infinite Playlist,PASS
+612,2008,Nim&#39;s Island,PASS
+613,2008,Pineapple Express,FAIL
+614,2008,Pontypool,FAIL
+615,2008,Possession,PASS
+616,2008,Prom Night,PASS
+617,2008,Quantum of Solace,FAIL
+618,2008,Quarantine,PASS
+619,2008,Rachel Getting Married,PASS
+620,2008,Revolutionary Road,PASS
+621,2008,RocknRolla,FAIL
+622,2008,Seven Pounds,PASS
+623,2008,Sex and the City,PASS
+624,2008,Slumdog Millionaire,FAIL
+625,2008,Speed Racer,PASS
+626,2008,Stargate: The Ark of Truth,FAIL
+627,2008,Step Brothers,FAIL
+628,2008,Sunshine Cleaning,PASS
+629,2008,"Synecdoche, New York",FAIL
+630,2008,Taken,PASS
+631,2008,The Bank Job,PASS
+632,2008,The Brothers Bloom,FAIL
+633,2008,The Chronicles of Narnia: Prince Caspian,PASS
+634,2008,The Curious Case of Benjamin Button,FAIL
+635,2008,The Dark Knight,FAIL
+636,2008,The Day the Earth Stood Still,PASS
+637,2008,The Eye,PASS
+638,2008,The Forbidden Kingdom,FAIL
+639,2008,The House Bunny,PASS
+640,2008,The Hurt Locker,FAIL
+641,2008,The Incredible Hulk,FAIL
+642,2008,The Lucky Ones,PASS
+643,2008,The Other Boleyn Girl,PASS
+644,2008,The Reader,FAIL
+645,2008,The Secret Life of Bees,PASS
+646,2008,The Sisterhood of the Traveling Pants 2,PASS
+647,2008,The Strangers,FAIL
+648,2008,The Tale of Despereaux,PASS
+649,2008,The Women,PASS
+650,2008,The Wrestler,FAIL
+651,2008,Three Kingdoms: Resurrection of the Dragon,FAIL
+652,2008,Transsiberian,PASS
+653,2008,Tropic Thunder,FAIL
+654,2008,Twilight,PASS
+655,2008,Valkyrie,FAIL
+656,2008,Vicky Cristina Barcelona,PASS
+657,2008,WALL-E,FAIL
+658,2008,Waltz with Bashir,FAIL
+659,2008,Wanted,FAIL
+660,2008,"Welcome Home, Roscoe Jenkins",FAIL
+661,2008,Wendy and Lucy,PASS
+662,2008,What Happens In Vegas,PASS
+663,2008,Yes Man,FAIL
+664,2007,[Rec],PASS
+665,2007,1408,PASS
+666,2007,28 Weeks Later,PASS
+667,2007,3:10 to Yuma,FAIL
+668,2007,30 Days of Night,FAIL
+669,2007,88 Minutes,FAIL
+670,2007,Across the Universe,PASS
+671,2007,Atonement,PASS
+672,2007,Becoming Jane,PASS
+673,2007,Beowulf,PASS
+674,2007,Blades of Glory,PASS
+675,2007,Bridge to Terabithia,PASS
+676,2007,Brooklyn Rules,PASS
+677,2007,Charlie Bartlett,FAIL
+678,2007,Charlie Wilson&#39;s War,PASS
+679,2007,Death at a Funeral,PASS
+680,2007,Diary of the Dead,PASS
+681,2007,Disturbia,PASS
+682,2007,Eastern Promises,PASS
+683,2007,Enchanted,PASS
+684,2007,Fantastic Four: Rise of the Silver Surfer,FAIL
+685,2007,Gone Baby Gone,PASS
+686,2007,Hairspray,PASS
+687,2007,Halloween,PASS
+688,2007,Hannibal Rising,FAIL
+689,2007,Harry Potter and the Order of the Phoenix,PASS
+690,2007,Hitman,FAIL
+691,2007,Hostel: Part II,PASS
+692,2007,Hot Fuzz,FAIL
+693,2007,Hot Rod,FAIL
+694,2007,I Am Legend,PASS
+695,2007,Into the Wild,FAIL
+696,2007,Juno,PASS
+697,2007,Knocked Up,PASS
+698,2007,Lars and the real Girl,PASS
+699,2007,Live Free or Die Hard,FAIL
+700,2007,Michael Clayton,FAIL
+701,2007,Music and Lyrics,FAIL
+702,2007,No Country for Old Men,FAIL
+703,2007,No Reservations,PASS
+704,2007,Paranormal Activity,FAIL
+705,2007,Persepolis,PASS
+706,2007,Pirates of the Caribbean: At World&#39;s End,PASS
+707,2007,Premonition,PASS
+708,2007,Ratatouille,FAIL
+709,2007,Resident Evil: Extinction,PASS
+710,2007,Rush Hour 3,FAIL
+711,2007,Shooter,FAIL
+712,2007,Shrek the Third,PASS
+713,2007,St. Trinian&#39;s,PASS
+714,2007,Stardust,PASS
+715,2007,Sunshine,FAIL
+716,2007,Superbad,FAIL
+717,2007,Sydney White,PASS
+718,2007,Teeth,FAIL
+719,2007,The Bucket List,FAIL
+720,2007,The Golden Compass,PASS
+721,2007,The Kite Runner,FAIL
+722,2007,The Man from Earth,FAIL
+723,2007,The Messengers,PASS
+724,2007,The Mist,PASS
+725,2007,The Number 23,FAIL
+726,2007,The Savages,PASS
+727,2007,The Signal,FAIL
+728,2007,The Simpsons Movie,PASS
+729,2007,The Visitor,FAIL
+730,2007,There Will Be Blood,FAIL
+731,2007,TMNT,FAIL
+732,2007,Transformers,FAIL
+733,2007,Tropa de Elite,PASS
+734,2007,Waitress,PASS
+735,2007,We Own the Night,FAIL
+736,2007,White Noise 2: The Light,FAIL
+737,2006,300,FAIL
+738,2006,A Scanner Darkly,FAIL
+739,2006,Akeelah and the Bee,PASS
+740,2006,Aquamarine,PASS
+741,2006,Bandidas,PASS
+742,2006,Black Christmas,PASS
+743,2006,Blood Diamond,FAIL
+744,2006,"Bon Cop, Bad Cop",FAIL
+745,2006,Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan,FAIL
+746,2006,Bug,PASS
+747,2006,Cars,FAIL
+748,2006,Casino Royale,FAIL
+749,2006,Children of Men,PASS
+750,2006,Clerks II,FAIL
+751,2006,Crank,FAIL
+752,2006,Das Leben Der Anderen,FAIL
+753,2006,DOA: Dead or Alive,PASS
+754,2006,El laberinto del fauno (Pan's Labyrinth),PASS
+755,2006,Eragon,FAIL
+756,2006,Fido,FAIL
+757,2006,Final Destination 3,PASS
+758,2006,Flushed Away,FAIL
+759,2006,For Your Consideration,PASS
+760,2006,Friends with Money,PASS
+761,2006,Ice Age: The Meltdown,FAIL
+762,2006,Idlewild,PASS
+763,2006,Inside Man,FAIL
+764,2006,Jackass Number Two,FAIL
+765,2006,Lady in the Water,FAIL
+766,2006,Last Holiday,PASS
+767,2006,Letters from Iwo Jima,FAIL
+768,2006,Little Children,PASS
+769,2006,Little Miss Sunshine,PASS
+770,2006,London To Brighton,PASS
+771,2006,Lucky Number Slevin,FAIL
+772,2006,Man of the Year,FAIL
+773,2006,Marie Antoinette,PASS
+774,2006,Miss Potter,PASS
+775,2006,Monster House,PASS
+776,2006,Nacho Libre,FAIL
+777,2006,Night at the Museum,PASS
+778,2006,Notes on a Scandal,PASS
+779,2006,Once,FAIL
+780,2006,Open Season,FAIL
+781,2006,Paris je t&#39;aime,FAIL
+782,2006,Perfume: The Story of a Murderer,PASS
+783,2006,Pirates of the Caribbean: Dead Man&#39;s Chest,FAIL
+784,2006,Poseidon,FAIL
+785,2006,Quinceanera,PASS
+786,2006,Rang De Basanti,PASS
+787,2006,Running with Scissors,PASS
+788,2006,She&#39;s the Man,FAIL
+789,2006,Sherrybaby,FAIL
+790,2006,Shortbus,PASS
+791,2006,Silent Hill,PASS
+792,2006,Slither,PASS
+793,2006,Smokin&#39; Aces,FAIL
+794,2006,Snakes on a Plane,PASS
+795,2006,Southland Tales,PASS
+796,2006,Stick It,PASS
+797,2006,Stranger Than Fiction,PASS
+798,2006,Superman Returns,FAIL
+799,2006,Take the Lead,PASS
+800,2006,The Ant Bully,FAIL
+801,2006,The Break Up,FAIL
+802,2006,The Da Vinci Code,FAIL
+803,2006,The Dead Girl,PASS
+804,2006,The Departed,FAIL
+805,2006,The Devil Wears Prada,PASS
+806,2006,The Fountain,FAIL
+807,2006,The Grudge 2,PASS
+808,2006,The History Boys,FAIL
+809,2006,The Holiday,PASS
+810,2006,The Host,PASS
+811,2006,The Illusionist,FAIL
+812,2006,The Lake House,FAIL
+813,2006,The Painted Veil,FAIL
+814,2006,The Prestige,FAIL
+815,2006,The Pursuit of Happyness,FAIL
+816,2006,The Queen,FAIL
+817,2006,The Wind That Shakes the Barley,FAIL
+818,2006,Ultraviolet,FAIL
+819,2006,Volver,PASS
+820,2006,We Are Marshall,FAIL
+821,2006,When a Stranger Calls,PASS
+822,2006,Wristcutters: A Love Story,FAIL
+823,2006,X-Men: The Last Stand,PASS
+824,2006,"You, Me and Dupree",FAIL
+825,2006,Zoom,PASS
+826,2006,Zwartboek,PASS
+827,2005,AEon Flux,PASS
+828,2005,Assault on Precinct 13,PASS
+829,2005,Batman Begins,FAIL
+830,2005,Beauty Shop,PASS
+831,2005,Bewitched,PASS
+832,2005,BloodRayne,FAIL
+833,2005,Boogeyman,FAIL
+834,2005,Boynton Beach Club,PASS
+835,2005,Brick,FAIL
+836,2005,Brokeback Mountain,FAIL
+837,2005,Capote,FAIL
+838,2005,Charlie and the Chocolate Factory,PASS
+839,2005,Chinjeolhan geumjassi,PASS
+840,2005,Cinderella Man,FAIL
+841,2005,Coach Carter,PASS
+842,2005,Constantine,FAIL
+843,2005,Conversations with Other Women,FAIL
+844,2005,Corpse Bride,FAIL
+845,2005,Cursed,PASS
+846,2005,Danny the dog,FAIL
+847,2005,Dark Water,PASS
+848,2005,Dear Wendy,FAIL
+849,2005,Domino,PASS
+850,2005,Doom,FAIL
+851,2005,Fantastic Four,FAIL
+852,2005,Flightplan,PASS
+853,2005,Fun with Dick and Jane,PASS
+854,2005,"Good Night, and Good Luck.",FAIL
+855,2005,Hard Candy,PASS
+856,2005,Harry Potter and the Goblet of Fire,FAIL
+857,2005,Herbie Fully Loaded,PASS
+858,2005,Hide and Seek,PASS
+859,2005,Hitch,FAIL
+860,2005,Hoodwinked!,PASS
+861,2005,Hostel,FAIL
+862,2005,Hustle &amp; Flow,FAIL
+863,2005,Ice Princess,PASS
+864,2005,Jarhead,FAIL
+865,2005,Junebug,PASS
+866,2005,Just Like Heaven,PASS
+867,2005,King Kong,FAIL
+868,2005,Kingdom of Heaven,FAIL
+869,2005,Kiss Kiss Bang Bang,FAIL
+870,2005,Lord of War,FAIL
+871,2005,Madagascar,FAIL
+872,2005,Man of the House,PASS
+873,2005,Match Point,PASS
+874,2005,Me and You and Everyone We Know,PASS
+875,2005,Memoirs of a Geisha,PASS
+876,2005,MirrorMask,PASS
+877,2005,Miss Congeniality 2: Armed &amp; Fabulous,PASS
+878,2005,Mr. &amp; Mrs. Smith,FAIL
+879,2005,Munich,FAIL
+880,2005,North Country,PASS
+881,2005,Oliver Twist,FAIL
+882,2005,Pride and Prejudice,PASS
+883,2005,Proof,PASS
+884,2005,Red Eye,PASS
+885,2005,Rent,PASS
+886,2005,Robots,FAIL
+887,2005,Saw II,FAIL
+888,2005,Serenity,PASS
+889,2005,Shopgirl,FAIL
+890,2005,Sin City,PASS
+891,2005,Sisters in Law,PASS
+892,2005,Sky High,PASS
+893,2005,Son of the Mask,FAIL
+894,2005,Star Wars: Episode III - Revenge of the Sith,FAIL
+895,2005,Stealth,FAIL
+896,2005,Strangers with Candy,PASS
+897,2005,Thank You for Smoking,FAIL
+898,2005,The 40 Year Old Virgin,FAIL
+899,2005,The Adventures of Sharkboy and Lavagirl 3-D,FAIL
+900,2005,The Amityville Horror,PASS
+901,2005,The Ballad of Jack and Rose,PASS
+902,2005,"The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",PASS
+903,2005,The Constant Gardener,PASS
+904,2005,The Descent,PASS
+905,2005,The Devil&#39;s Rejects,PASS
+906,2005,The Exorcism of Emily Rose,PASS
+907,2005,The Fog,PASS
+908,2005,The Hitchhiker&#39;s Guide to the Galaxy,FAIL
+909,2005,The Island,PASS
+910,2005,The Jacket,FAIL
+911,2005,The Legend of Zorro,FAIL
+912,2005,The New World,FAIL
+913,2005,The Ring Two,PASS
+914,2005,The Skeleton Key,PASS
+915,2005,The Squid and the Whale,FAIL
+916,2005,The Wedding Date,PASS
+917,2005,Transamerica,PASS
+918,2005,Tristram Shandy: A Cock and Bull Story,FAIL
+919,2005,V for Vendetta,PASS
+920,2005,Waiting...,PASS
+921,2005,Walk the Line,PASS
+922,2005,War of the Worlds,FAIL
+923,2005,Water,PASS
+924,2005,White Noise,FAIL
+925,2005,"Yours, Mine and Ours",PASS
+926,2005,Zathura: A Space Adventure,FAIL
+927,2004,13 Going on 30,PASS
+928,2004,2046,PASS
+929,2004,50 First Dates,FAIL
+930,2004,A Cinderella Story,PASS
+931,2004,A Home at the End of The World,FAIL
+932,2004,A Very Long Engagement,PASS
+933,2004,Anchorman: The Legend of Ron Burgundy,FAIL
+934,2004,Around the World in 80 Days,FAIL
+935,2004,AVP: Alien vs. Predator,FAIL
+936,2004,Banlieue 13,FAIL
+937,2004,Before Sunset,FAIL
+938,2004,Bridget Jones: The Edge of Reason,PASS
+939,2004,Catwoman,PASS
+940,2004,Cellular,PASS
+941,2004,Closer,PASS
+942,2004,Collateral,FAIL
+943,2004,Connie and Carla,PASS
+944,2004,Crash,PASS
+945,2004,D.E.B.S.,PASS
+946,2004,Dawn of the Dead,PASS
+947,2004,Dodgeball: A True Underdog Story,PASS
+948,2004,Ella Enchanted,PASS
+949,2004,Eternal Sunshine of the Spotless Mind,FAIL
+950,2004,Eulogy,PASS
+951,2004,Finding Neverland,PASS
+952,2004,Flight of the Phoenix,FAIL
+953,2004,Garden State,PASS
+954,2004,Harold and Kumar Go to White Castle,PASS
+955,2004,Harry Potter and the Prisoner of  Azkaban,PASS
+956,2004,Hellboy,FAIL
+957,2004,Home on the Range,PASS
+958,2004,I Heart Huckabees,PASS
+959,2004,"I, Robot",FAIL
+960,2004,In Good Company,FAIL
+961,2004,Kinsey,PASS
+962,2004,Kung Fu Hustle,FAIL
+963,2004,Layer Cake,FAIL
+964,2004,Lemony Snicket&#39;s A Series of Unfortunate Events,PASS
+965,2004,Maria Full of Grace,PASS
+966,2004,Mean Girls,PASS
+967,2004,Million Dollar Baby,PASS
+968,2004,Miracle,FAIL
+969,2004,My Summer of Love,PASS
+970,2004,Napoleon Dynamite,FAIL
+971,2004,New York Minute,FAIL
+972,2004,Primer,FAIL
+973,2004,Raising Helen,PASS
+974,2004,Ray,FAIL
+975,2004,Resident Evil: Apocalypse,PASS
+976,2004,Saved!,PASS
+977,2004,Saw,FAIL
+978,2004,Secret Window,FAIL
+979,2004,Shark Tale,FAIL
+980,2004,Shaun of the Dead,PASS
+981,2004,Shrek 2,PASS
+982,2004,Sideways,PASS
+983,2004,Sky Captain and the World of Tomorrow,PASS
+984,2004,Spanglish,PASS
+985,2004,Spider-Man 2,FAIL
+986,2004,Team America: World Police,FAIL
+987,2004,The Aviator,FAIL
+988,2004,The Bourne Supremacy,FAIL
+989,2004,The Butterfly Effect,FAIL
+990,2004,The Chronicles of Riddick,FAIL
+991,2004,The Day After Tomorrow,PASS
+992,2004,The Grudge,PASS
+993,2004,The Incredibles,PASS
+994,2004,The Life Aquatic with Steve Zissou,FAIL
+995,2004,The Notebook,FAIL
+996,2004,The Phantom of the Opera,FAIL
+997,2004,The Polar Express,FAIL
+998,2004,The Princess Diaries 2: Royal Engagement,PASS
+999,2004,The Stepford Wives,PASS
+1000,2004,The Terminal,FAIL
+1001,2004,The Village,PASS
+1002,2004,The Whole Ten Yards,FAIL
+1003,2004,Troy,FAIL
+1004,2004,Van Helsing,PASS
+1005,2004,Vera Drake,PASS
+1006,2004,White Chicks,PASS
+1007,2004,Wimbledon,PASS
+1008,2003,2 Fast 2 Furious,FAIL
+1009,2003,21 grams,FAIL
+1010,2003,Big Fish,FAIL
+1011,2003,Bon voyage,PASS
+1012,2003,Bruce Almighty,PASS
+1013,2003,Charlie&#39;s Angels: Full Throttle,PASS
+1014,2003,Cold Mountain,PASS
+1015,2003,Cradle 2 the Grave,FAIL
+1016,2003,Daddy Day Care,PASS
+1017,2003,Daredevil,FAIL
+1018,2003,Darkness Falls,FAIL
+1019,2003,Dreamcatcher,FAIL
+1020,2003,Final Destination 2,PASS
+1021,2003,Finding Nemo,FAIL
+1022,2003,Freaky Friday,PASS
+1023,2003,Girl with a Pearl Earring,PASS
+1024,2003,Goodbye Lenin!,PASS
+1025,2003,Holes,FAIL
+1026,2003,Hollywood Homicide,FAIL
+1027,2003,House of Sand and Fog,PASS
+1028,2003,How to Lose a Guy in 10 Days,FAIL
+1029,2003,Hulk,FAIL
+1030,2003,Identity,FAIL
+1031,2003,In the Cut,PASS
+1032,2003,Jeepers Creepers II,PASS
+1033,2003,Kill Bill: Vol. 1,PASS
+1034,2003,Lara Croft Tomb Raider: The Cradle of Life,FAIL
+1035,2003,"Legally Blonde 2: Red, White &amp; Blonde",PASS
+1036,2003,Les triplettes de Belleville,PASS
+1037,2003,Lost In Translation,FAIL
+1038,2003,Love Actually,PASS
+1039,2003,Master and Commander: The Far Side of the World,FAIL
+1040,2003,Mona Lisa Smile,PASS
+1041,2003,Monster,PASS
+1042,2003,Mystic River,PASS
+1043,2003,Peter Pan,PASS
+1044,2003,Pirates of the Caribbean: The Curse of the Black Pearl,FAIL
+1045,2003,Pride and Prejudice,PASS
+1046,2003,S.W.A.T.,PASS
+1047,2003,Scary Movie 3,PASS
+1048,2003,Secondhand Lions,FAIL
+1049,2003,Shanghai Knights,FAIL
+1050,2003,Shattered Glass,FAIL
+1051,2003,Sinbad: Legend of the Seven Seas,FAIL
+1052,2003,Something&#39;s Gotta Give,FAIL
+1053,2003,Spy Kids 3-D: Game Over,PASS
+1054,2003,Swimming Pool,PASS
+1055,2003,Terminator 3: Rise of the Machines,PASS
+1056,2003,The Core,PASS
+1057,2003,The Italian Job,FAIL
+1058,2003,The Jungle Book 2,FAIL
+1059,2003,The Last Samurai,FAIL
+1060,2003,The League of Extraordinary Gentlemen,FAIL
+1061,2003,The Lord of the Rings: The Return of the King,FAIL
+1062,2003,The Matrix Reloaded,PASS
+1063,2003,The Matrix Revolutions,PASS
+1064,2003,The Missing,PASS
+1065,2003,The School of Rock,FAIL
+1066,2003,Thirteen,PASS
+1067,2003,Timeline,FAIL
+1068,2003,Undead,PASS
+1069,2003,Underworld,FAIL
+1070,2003,Wrong Turn,PASS
+1071,2003,X2 (X-Men 2),PASS
+1072,2002,25th Hour,FAIL
+1073,2002,28 Days Later...,PASS
+1074,2002,8 femmes,PASS
+1075,2002,8 Mile,FAIL
+1076,2002,About Schmidt,FAIL
+1077,2002,Adaptation,FAIL
+1078,2002,All or Nothing,PASS
+1079,2002,Antwone Fisher,FAIL
+1080,2002,Austin Powers in Goldmember,FAIL
+1081,2002,Bend It Like Beckham,PASS
+1082,2002,Blade II,FAIL
+1083,2002,Blue Crush,PASS
+1084,2002,Cabin Fever,PASS
+1085,2002,Carrie,PASS
+1086,2002,Catch Me If You Can,FAIL
+1087,2002,Chicago,PASS
+1088,2002,Crossroads,PASS
+1089,2002,Death to Smoochy,FAIL
+1090,2002,Die Another Day,FAIL
+1091,2002,Drumline,FAIL
+1092,2002,Equilibrium,FAIL
+1093,2002,Far from Heaven,PASS
+1094,2002,Frida,FAIL
+1095,2002,Funny Ha Ha,PASS
+1096,2002,Gangs of New York,FAIL
+1097,2002,Gerry,FAIL
+1098,2002,Harry Potter and the Chamber of Secrets,PASS
+1099,2002,High Crimes,PASS
+1100,2002,I Spy,FAIL
+1101,2002,Ice Age,FAIL
+1102,2002,Igby Goes Down,FAIL
+1103,2002,Insomnia,FAIL
+1104,2002,Lilo and Stitch,PASS
+1105,2002,Maid in Manhattan,PASS
+1106,2002,May,PASS
+1107,2002,Men in Black II,FAIL
+1108,2002,Minority Report,FAIL
+1109,2002,Mr Deeds,FAIL
+1110,2002,My Big Fat Greek Wedding,PASS
+1111,2002,Panic Room,PASS
+1112,2002,Phone Booth,FAIL
+1113,2002,Queen of the Damned,PASS
+1114,2002,Rabbit-Proof Fence,PASS
+1115,2002,Real Women Have Curves,PASS
+1116,2002,Red Dragon,FAIL
+1117,2002,Reign of Fire,FAIL
+1118,2002,Resident Evil,PASS
+1119,2002,Scooby-Doo,PASS
+1120,2002,Signs,FAIL
+1121,2002,Snow Dogs,FAIL
+1122,2002,Solaris,FAIL
+1123,2002,Spider-Man,FAIL
+1124,2002,Spirit: Stallion of the Cimarron,FAIL
+1125,2002,Spun,PASS
+1126,2002,Spy Kids 2: Island of Lost Dreams,PASS
+1127,2002,Star Trek: Nemesis,FAIL
+1128,2002,Star Wars: Episode II - Attack of the Clones,FAIL
+1129,2002,The Adventures of Pluto Nash,FAIL
+1130,2002,The Banger Sisters,PASS
+1131,2002,The Bourne Identity,FAIL
+1132,2002,The Dangerous Lives of Altar Boys,FAIL
+1133,2002,The Good Girl,PASS
+1134,2002,The Hours,PASS
+1135,2002,The Importance of Being Earnest,PASS
+1136,2002,The Lord of the Rings: The Two Towers,FAIL
+1137,2002,The Powerpuff Girls,PASS
+1138,2002,The Quiet American,FAIL
+1139,2002,The Ring,PASS
+1140,2002,The Rules of Attraction,FAIL
+1141,2002,The Santa Clause 2,FAIL
+1142,2002,The Sweetest Thing,PASS
+1143,2002,The Transporter,FAIL
+1144,2002,The Tuxedo,FAIL
+1145,2002,Treasure Planet,FAIL
+1146,2002,Tuck Everlasting,PASS
+1147,2002,Two Weeks Notice,PASS
+1148,2002,We Were Soldiers,PASS
+1149,2002,Whale Rider,PASS
+1150,2002,White Oleander,PASS
+1151,2002,xXx,FAIL
+1152,2001,A Beautiful Mind,FAIL
+1153,2001,A Knight&#39;s Tale,FAIL
+1154,2001,Along Came A Spider,PASS
+1155,2001,American Outlaws,FAIL
+1156,2001,Antitrust,FAIL
+1157,2001,Artificial Intelligence: AI,FAIL
+1158,2001,Atlantis: The Lost Empire,FAIL
+1159,2001,Black Hawk Down,FAIL
+1160,2001,Blow,FAIL
+1161,2001,Bridget Jones&#39;s Diary,PASS
+1162,2001,Don&#39;t Say A Word,PASS
+1163,2001,Donnie Darko,FAIL
+1164,2001,Dr. Dolittle 2,PASS
+1165,2001,Evolution,PASS
+1166,2001,From Hell,FAIL
+1167,2001,Ghost World,PASS
+1168,2001,Gosford Park,PASS
+1169,2001,Hannibal,PASS
+1170,2001,Harry Potter and the Sorcerer&#39;s Stone,PASS
+1171,2001,Hedwig and the Angry Inch,PASS
+1172,2001,High Heels and Low Lifes,PASS
+1173,2001,Impostor,FAIL
+1174,2001,Jason X,PASS
+1175,2001,Jay and Silent Bob Strike Back,PASS
+1176,2001,Jeepers Creepers,PASS
+1177,2001,Josie and the Pussycats,PASS
+1178,2001,Kate &amp; Leopold,FAIL
+1179,2001,Kiss of the Dragon,FAIL
+1180,2001,Kissing Jessica Stein,PASS
+1181,2001,L.I.E.,FAIL
+1182,2001,Lara Croft: Tomb Raider,FAIL
+1183,2001,Legally Blonde,PASS
+1184,2001,Lovely and Amazing,PASS
+1185,2001,Monkeybone,FAIL
+1186,2001,Monsoon Wedding,PASS
+1187,2001,"Monsters, Inc.",FAIL
+1188,2001,Moulin Rouge!,PASS
+1189,2001,Mulholland Dr.,PASS
+1190,2001,Nowhere in Africa,PASS
+1191,2001,Ocean&#39;s Eleven,FAIL
+1192,2001,Osmosis Jones,FAIL
+1193,2001,Pearl Harbor,FAIL
+1194,2001,Save the Last Dance,PASS
+1195,2001,Shallow Hal,PASS
+1196,2001,Shaolin Soccer,FAIL
+1197,2001,Shrek,FAIL
+1198,2001,Someone Like You...,PASS
+1199,2001,Spy Kids,PASS
+1200,2001,Super Troopers,FAIL
+1201,2001,The Fast and the Furious,FAIL
+1202,2001,The Glass House,PASS
+1203,2001,The Legend of Suriyothai,PASS
+1204,2001,The Lord of the Rings: The Fellowship of the Ring,FAIL
+1205,2001,The Majestic,FAIL
+1206,2001,The One,FAIL
+1207,2001,The Others,PASS
+1208,2001,The Princess Diaries,PASS
+1209,2001,The Royal Tenenbaums,PASS
+1210,2001,The Wedding Planner,PASS
+1211,2001,Thir13en Ghosts,FAIL
+1212,2001,Training Day,FAIL
+1213,2001,Valentine,FAIL
+1214,2001,Vanilla Sky,FAIL
+1215,2001,Zoolander,PASS
+1216,2000,28 Days,PASS
+1217,2000,Almost Famous,PASS
+1218,2000,American Psycho,FAIL
+1219,2000,Beautiful Creatures,PASS
+1220,2000,Best in Show,PASS
+1221,2000,Billy Elliot,PASS
+1222,2000,Boiler Room,FAIL
+1223,2000,Bring It On,PASS
+1224,2000,Cast Away,FAIL
+1225,2000,Cecil B. Demented,PASS
+1226,2000,Center Stage,PASS
+1227,2000,Charlie&#39;s Angels,PASS
+1228,2000,Chicken Run,PASS
+1229,2000,Chocolat,PASS
+1230,2000,Coyote Ugly,FAIL
+1231,2000,Dancer in the Dark,PASS
+1232,2000,"Dude, Where&#39;s My Car",FAIL
+1233,2000,Dune,PASS
+1234,2000,Erin Brockovich,PASS
+1235,2000,Final Destination,FAIL
+1236,2000,Gladiator,FAIL
+1237,2000,Gone in Sixty Seconds,FAIL
+1238,2000,High Fidelity,FAIL
+1239,2000,Hollow Man,PASS
+1240,2000,Little Nicky,FAIL
+1241,2000,Love &amp; Basketball,PASS
+1242,2000,Meet the Parents,FAIL
+1243,2000,Memento,FAIL
+1244,2000,Miss Congeniality,PASS
+1245,2000,Mission to Mars,FAIL
+1246,2000,"O Brother, Where Art Thou?",FAIL
+1247,2000,Pitch Black,PASS
+1248,2000,Pokemon: The Movie 2000,FAIL
+1249,2000,Red Planet,FAIL
+1250,2000,Remember the Titans,FAIL
+1251,2000,Requiem for a Dream,PASS
+1252,2000,Return to Me,FAIL
+1253,2000,Romeo Must Die,FAIL
+1254,2000,Rugrats in Paris:,PASS
+1255,2000,Saving Grace,PASS
+1256,2000,Scream 3,PASS
+1257,2000,Sexy Beast,FAIL
+1258,2000,Shanghai Noon,FAIL
+1259,2000,Snatch.,FAIL
+1260,2000,Songcatcher,PASS
+1261,2000,The Beach,FAIL
+1262,2000,The Cell,FAIL
+1263,2000,The Emperor&#39;s New Groove,PASS
+1264,2000,The Gift,FAIL
+1265,2000,The Patriot,FAIL
+1266,2000,The Road to El Dorado,FAIL
+1267,2000,The Way of the Gun,FAIL
+1268,2000,The Whole Nine Yards,PASS
+1269,2000,Thirteen days,FAIL
+1270,2000,Titan A.E.,PASS
+1271,2000,Unbreakable,FAIL
+1272,2000,Urbania,FAIL
+1273,2000,Vertical Limit,FAIL
+1274,2000,What Lies Beneath,PASS
+1275,2000,What Women Want,FAIL
+1276,2000,Where the Heart Is,PASS
+1277,2000,"Wo hu cang long (Crouching Tiger, Hidden Dragon)",PASS
+1278,2000,X-Men,FAIL
+1279,1999,10 Things I Hate About You,PASS
+1280,1999,8MM,FAIL
+1281,1999,American Beauty,PASS
+1282,1999,American Pie,FAIL
+1283,1999,Analyze This,FAIL
+1284,1999,Anna and the King,FAIL
+1285,1999,Anywhere But Here,FAIL
+1286,1999,Austin Powers: The Spy Who Shagged Me,FAIL
+1287,1999,Being John Malkovich,PASS
+1288,1999,Black and White,PASS
+1289,1999,Blue Streak,FAIL
+1290,1999,Boys Don&#39;t Cry,PASS
+1291,1999,But I&#39;m a Cheerleader,PASS
+1292,1999,Carrie 2: The Rage,PASS
+1293,1999,Cruel Intentions,PASS
+1294,1999,Dick,PASS
+1295,1999,Dogma,FAIL
+1296,1999,Drop Dead Gorgeous,PASS
+1297,1999,Election,PASS
+1298,1999,Eyes Wide Shut,PASS
+1299,1999,Fight Club,FAIL
+1300,1999,Flawless,FAIL
+1301,1999,For Love of the Game,FAIL
+1302,1999,Galaxy Quest,FAIL
+1303,1999,"Girl, Interrupted",PASS
+1304,1999,Go!,PASS
+1305,1999,Jawbreaker,PASS
+1306,1999,Magnolia,FAIL
+1307,1999,Muppets From Space,PASS
+1308,1999,Mystery Men,FAIL
+1309,1999,Notting Hill,PASS
+1310,1999,Office Space,FAIL
+1311,1999,Payback,FAIL
+1312,1999,Pocket Monsters: Mewtwo Strikes Back!,FAIL
+1313,1999,Ravenous,FAIL
+1314,1999,Sleepy Hollow,PASS
+1315,1999,South Park: Bigger Longer &amp; Uncut,FAIL
+1316,1999,Star Wars: Episode I - The Phantom Menace,PASS
+1317,1999,Stuart Little,FAIL
+1318,1999,Tarzan,FAIL
+1319,1999,The 13th Warrior,FAIL
+1320,1999,The Blair Witch Project,PASS
+1321,1999,The Boondock Saints,FAIL
+1322,1999,The Green Mile,FAIL
+1323,1999,The Haunting,PASS
+1324,1999,The Iron Giant,FAIL
+1325,1999,The Matrix,PASS
+1326,1999,The Mummy,FAIL
+1327,1999,The Sixth Sense,FAIL
+1328,1999,The Talented Mr. Ripley,FAIL
+1329,1999,Three to Tango,FAIL
+1330,1999,Topsy-Turvy,PASS
+1331,1999,Toy Story 2,FAIL
+1332,1999,Virus,FAIL
+1333,1999,Wild Wild West,FAIL
+1334,1999,Wing Commander,FAIL
+1335,1998,54,FAIL
+1336,1998,A Bug&#39;s Life,PASS
+1337,1998,American History X,FAIL
+1338,1998,Armageddon,FAIL
+1339,1998,Beloved,PASS
+1340,1998,Blade,FAIL
+1341,1998,Bride of Chucky,FAIL
+1342,1998,Buffalo &#39;66,FAIL
+1343,1998,Dark City,FAIL
+1344,1998,Deep Impact,PASS
+1345,1998,Disturbing Behavior,FAIL
+1346,1998,Elizabeth,PASS
+1347,1998,Enemy of the State,FAIL
+1348,1998,Ever After,PASS
+1349,1998,Fear and Loathing in Las Vegas,FAIL
+1350,1998,Festen (The Celebration),FAIL
+1351,1998,Get Real,FAIL
+1352,1998,Godzilla,FAIL
+1353,1998,Halloween H20: 20 Years Later,PASS
+1354,1998,Happiness,PASS
+1355,1998,Hope Floats,PASS
+1356,1998,Little Voice,PASS
+1357,1998,"Lock, Stock and Two Smoking Barrels",FAIL
+1358,1998,Lost in Space,PASS
+1359,1998,Mercury Rising,FAIL
+1360,1998,Mulan,FAIL
+1361,1998,Out of Sight,FAIL
+1362,1998,Pi,FAIL
+1363,1998,Practical Magic,PASS
+1364,1998,Primary Colors,PASS
+1365,1998,Quest for Camelot,PASS
+1366,1998,Rounders,FAIL
+1367,1998,Run Lola Run,FAIL
+1368,1998,Rush Hour,PASS
+1369,1998,Rushmore,FAIL
+1370,1998,Safe Men,FAIL
+1371,1998,Saving Private Ryan,FAIL
+1372,1998,Shakespeare in Love,PASS
+1373,1998,Six Days Seven Nights,FAIL
+1374,1998,Sliding Doors,PASS
+1375,1998,Slums of Beverly Hills,PASS
+1376,1998,Small Soldiers,FAIL
+1377,1998,Smoke Signals,PASS
+1378,1998,Sphere,FAIL
+1379,1998,Star Trek: Insurrection,PASS
+1380,1998,Stepmom,PASS
+1381,1998,The Avengers,PASS
+1382,1998,The Big Lebowski,FAIL
+1383,1998,The Faculty,FAIL
+1384,1998,The Man in the Iron Mask,FAIL
+1385,1998,The Mask of Zorro,FAIL
+1386,1998,The Negotiator,FAIL
+1387,1998,The Prince of Egypt,FAIL
+1388,1998,The Proposition,FAIL
+1389,1998,The Thin Red Line,FAIL
+1390,1998,The Truman Show,FAIL
+1391,1998,There&#39;s Something About Mary,PASS
+1392,1998,Urban Legend,PASS
+1393,1998,Vampires (John Carpenter&#39;s),FAIL
+1394,1998,Velvet Goldmine,FAIL
+1395,1998,Wild Things,FAIL
+1396,1998,You&#39;ve Got Mail,PASS
+1397,1997,A Simple Wish,PASS
+1398,1997,Air Bud,FAIL
+1399,1997,Air Force One,FAIL
+1400,1997,Alien: Resurrection,PASS
+1401,1997,Anastasia,PASS
+1402,1997,As Good as It Gets,PASS
+1403,1997,Austin Powers: International Man of Mystery,FAIL
+1404,1997,Batman &amp; Robin,FAIL
+1405,1997,Boogie Nights,FAIL
+1406,1997,Cats Don&#39;t Dance,PASS
+1407,1997,Chasing Amy,PASS
+1408,1997,Cinderella,PASS
+1409,1997,Clockwatchers,PASS
+1410,1997,Con Air,FAIL
+1411,1997,Conspiracy Theory,FAIL
+1412,1997,Contact,PASS
+1413,1997,Eve&#39;s Bayou,PASS
+1414,1997,Event Horizon,PASS
+1415,1997,Fever Pitch,PASS
+1416,1997,Flubber,FAIL
+1417,1997,G.I. Jane,PASS
+1418,1997,Gattaca,FAIL
+1419,1997,George of the Jungle,PASS
+1420,1997,Good Will Hunting,FAIL
+1421,1997,Grosse Pointe Blank,PASS
+1422,1997,Hercules,PASS
+1423,1997,I Know What You Did Last Summer,PASS
+1424,1997,In the Company of Men,FAIL
+1425,1997,Jackie Brown,PASS
+1426,1997,Kiss the Girls,FAIL
+1427,1997,L.A. Confidential,FAIL
+1428,1997,Liar Liar,FAIL
+1429,1997,Men in Black,FAIL
+1430,1997,Mononoke-hime,PASS
+1431,1997,Mortal Kombat: Annihilation,PASS
+1432,1997,Must love Dogs,FAIL
+1433,1997,My Best Friend&#39;s Wedding,FAIL
+1434,1997,Orgazmo,FAIL
+1435,1997,Scream 2,PASS
+1436,1997,Selena,PASS
+1437,1997,Smilla&#39;s Sense of Snow,PASS
+1438,1997,Spawn,PASS
+1439,1997,Starship Troopers,PASS
+1440,1997,The Devil&#39;s Advocate,PASS
+1441,1997,The Fifth Element,FAIL
+1442,1997,The Game,FAIL
+1443,1997,The Lost World: Jurassic Park,FAIL
+1444,1997,The Peacemaker,FAIL
+1445,1997,The Postman,FAIL
+1446,1997,Titanic,PASS
+1447,1997,Volcano,PASS
+1448,1996,August,FAIL
+1449,1996,Bound,PASS
+1450,1996,Broken Arrow,FAIL
+1451,1996,Chain Reaction,FAIL
+1452,1996,DragonHeart,FAIL
+1453,1996,Emma,PASS
+1454,1996,Escape from L.A.,FAIL
+1455,1996,Eye for an Eye,PASS
+1456,1996,Fargo,PASS
+1457,1996,Freeway,PASS
+1458,1996,From Dusk Till Dawn,FAIL
+1459,1996,Hamlet,FAIL
+1460,1996,Harriet the Spy,PASS
+1461,1996,Independence Day,PASS
+1462,1996,Jingle All the Way,FAIL
+1463,1996,Kingpin,FAIL
+1464,1996,Love and Other Catastrophes,PASS
+1465,1996,Mars Attacks!,PASS
+1466,1996,Mission: Impossible,FAIL
+1467,1996,Romeo + Juliet,FAIL
+1468,1996,Scream,PASS
+1469,1996,Secrets &amp; Lies,PASS
+1470,1996,Set It Off,PASS
+1471,1996,Space Jam,FAIL
+1472,1996,Spy Hard,FAIL
+1473,1996,Star Trek: First Contact,PASS
+1474,1996,Striptease,FAIL
+1475,1996,That Thing You Do!,PASS
+1476,1996,The Cable Guy,FAIL
+1477,1996,The Craft,PASS
+1478,1996,The English Patient,PASS
+1479,1996,The Fan,FAIL
+1480,1996,The First Wives Club,PASS
+1481,1996,The Glimmer Man,FAIL
+1482,1996,The Hunchback of Notre Dame,FAIL
+1483,1996,The Long Kiss Goodnight,FAIL
+1484,1996,The Mirror Has Two Faces,PASS
+1485,1996,The Rock,FAIL
+1486,1996,Trainspotting,FAIL
+1487,1996,Twister,PASS
+1488,1996,Walking and Talking,PASS
+1489,1996,When the Cat&#39;s Away,PASS
+1490,1995,Apollo 13,PASS
+1491,1995,Assassins,FAIL
+1492,1995,Batman Forever,FAIL
+1493,1995,Before Sunrise,FAIL
+1494,1995,Braveheart,FAIL
+1495,1995,Casino,FAIL
+1496,1995,Casper,PASS
+1497,1995,Clueless,PASS
+1498,1995,Congo,FAIL
+1499,1995,Copycat,FAIL
+1500,1995,Die Hard: With a Vengeance,FAIL
+1501,1995,Four rooms,FAIL
+1502,1995,Home for the holidays,PASS
+1503,1995,Jumanji,PASS
+1504,1995,Mallrats,FAIL
+1505,1995,Mortal Kombat,FAIL
+1506,1995,Outbreak,PASS
+1507,1995,Pocahontas,PASS
+1508,1995,Pride and Prejudice,PASS
+1509,1995,Sabrina,PASS
+1510,1995,Safe,PASS
+1511,1995,Se7en,FAIL
+1512,1995,Sense and Sensibility,PASS
+1513,1995,Showgirls,PASS
+1514,1995,Species,FAIL
+1515,1995,Tank Girl,PASS
+1516,1995,The American President,PASS
+1517,1995,The Bridges of Madison County,PASS
+1518,1995,The Incredibly True Adventures of Two Girls in Love,PASS
+1519,1995,The Net,PASS
+1520,1995,The Quick and the Dead,FAIL
+1521,1995,The Usual Suspects,FAIL
+1522,1995,Toy Story,FAIL
+1523,1995,Twelve Monkeys,FAIL
+1524,1995,Waterworld,FAIL
+1525,1995,Welcome to the Dollhouse,PASS
+1526,1994,Ace Ventura: Pet Detective,FAIL
+1527,1994,Beverly Hills Cop III,FAIL
+1528,1994,Clerks.,FAIL
+1529,1994,Crooklyn,PASS
+1530,1994,Dumb &amp; Dumber,FAIL
+1531,1994,Ed Wood,PASS
+1532,1994,Forrest Gump,FAIL
+1533,1994,Legends of the Fall,PASS
+1534,1994,Little Women,PASS
+1535,1994,Naked Gun 33 1/3: The Final Insult,FAIL
+1536,1994,Police Academy: Mission to Moscow,FAIL
+1537,1994,Priest,PASS
+1538,1994,Pulp Fiction,PASS
+1539,1994,Speed,PASS
+1540,1994,Stargate,FAIL
+1541,1994,Street Fighter,PASS
+1542,1994,The Client,PASS
+1543,1994,The Hudsucker Proxy,FAIL
+1544,1994,The Lion King,FAIL
+1545,1994,The Mask,FAIL
+1546,1994,The Santa Clause,FAIL
+1547,1994,The Shadow,FAIL
+1548,1994,The Shawshank Redemption,FAIL
+1549,1994,The Specialist,FAIL
+1550,1994,Timecop,FAIL
+1551,1994,True Lies,FAIL
+1552,1993,Cliffhanger,FAIL
+1553,1993,Cool Runnings,FAIL
+1554,1993,Dazed and Confused,PASS
+1555,1993,Gettysburg,FAIL
+1556,1993,Groundhog Day,FAIL
+1557,1993,Hocus Pocus,PASS
+1558,1993,Jurassic Park,PASS
+1559,1993,Mrs. Doubtfire,PASS
+1560,1993,Pieces of April,PASS
+1561,1993,Schindler&#39;s List,PASS
+1562,1993,Super Mario Bros.,FAIL
+1563,1993,The Age of Innocence,PASS
+1564,1993,The Fugitive,FAIL
+1565,1993,The Princess and the Cobbler,FAIL
+1566,1993,The Remains of the Day,FAIL
+1567,1993,Tombstone,PASS
+1568,1992,A Few Good Men,FAIL
+1569,1992,A League of Their Own,PASS
+1570,1992,Aladdin,FAIL
+1571,1992,Alien 3,FAIL
+1572,1992,Army of Darkness,FAIL
+1573,1992,Batman Returns,FAIL
+1574,1992,Buffy the Vampire Slayer,PASS
+1575,1992,Death Becomes Her,PASS
+1576,1992,El Mariachi,FAIL
+1577,1992,Glengarry Glen Ross,FAIL
+1578,1992,Hero,FAIL
+1579,1992,Home Alone 2: Lost in New York,FAIL
+1580,1992,Malcolm X,FAIL
+1581,1992,My Cousin Vinny,FAIL
+1582,1992,Reservoir Dogs,FAIL
+1583,1992,The Crying Game,FAIL
+1584,1992,The Mighty Ducks,FAIL
+1585,1992,The Muppet Christmas Carol,FAIL
+1586,1992,The Player,PASS
+1587,1992,Wayne&#39;s World,FAIL
+1588,1991,Beauty and the Beast,PASS
+1589,1991,Bill &amp; Ted&#39;s Bogus Journey,FAIL
+1590,1991,Hook,FAIL
+1591,1991,Hudson Hawk,PASS
+1592,1991,Robin Hood: Prince of Thieves,FAIL
+1593,1991,Slacker,PASS
+1594,1991,Star Trek VI: The Undiscovered Country,FAIL
+1595,1991,Teenage Mutant Ninja Turtles II: The Secret of the Ooze,PASS
+1596,1991,Terminator 2: Judgement Day,FAIL
+1597,1991,The Addams Family,PASS
+1598,1991,The Naked Gun 2 1/2: The Smell of Fear,FAIL
+1599,1991,The Silence of the Lambs,PASS
+1600,1991,White Fang,FAIL
+1601,1990,Back to the Future Part III,FAIL
+1602,1990,Child&#39;s Play 2,PASS
+1603,1990,Dark Angel (I Come in Peace),FAIL
+1604,1990,Die Hard 2,FAIL
+1605,1990,Edward Scissorhands,PASS
+1606,1990,Flatliners,PASS
+1607,1990,Ghost,FAIL
+1608,1990,Goodfellas,FAIL
+1609,1990,Home Alone,FAIL
+1610,1990,Nikita,PASS
+1611,1990,Predator 2,FAIL
+1612,1990,Pretty Woman,PASS
+1613,1990,The Hunt for Red October,FAIL
+1614,1990,Total Recall,FAIL
+1615,1990,Tremors,PASS
+1616,1989,Back to the Future Part II,PASS
+1617,1989,Batman,FAIL
+1618,1989,Bill &amp; Ted&#39;s Excellent Adventure,FAIL
+1619,1989,Dead Poets Society,FAIL
+1620,1989,Henry V,PASS
+1621,1989,Indiana Jones and the Last Crusade,FAIL
+1622,1989,Licence to Kill,FAIL
+1623,1989,Major League,FAIL
+1624,1989,Road House,FAIL
+1625,1989,"Sex, Lies, and Videotape",FAIL
+1626,1989,Star Trek V: The Final Frontier,FAIL
+1627,1989,The Abyss,PASS
+1628,1989,Troop Beverly Hills,PASS
+1629,1989,UHF,FAIL
+1630,1988,Action Jackson,FAIL
+1631,1988,Akira,FAIL
+1632,1988,Beetle Juice,PASS
+1633,1988,Bloodsport,FAIL
+1634,1988,Child&#39;s Play,PASS
+1635,1988,Dangerous Liaisons,PASS
+1636,1988,Die Hard,PASS
+1637,1988,Midnight Run,FAIL
+1638,1988,My Stepmother Is an Alien,PASS
+1639,1988,Mystic Pizza,PASS
+1640,1988,Poltergeist III,PASS
+1641,1988,Rain Man,FAIL
+1642,1988,Scrooged,PASS
+1643,1988,The Land Before Time,PASS
+1644,1988,The Last Temptation of Christ,FAIL
+1645,1988,They Live,FAIL
+1646,1988,Twins,FAIL
+1647,1988,Who Framed Roger Rabbit,FAIL
+1648,1988,Young Guns,FAIL
+1649,1987,Beverly Hills Cop II,FAIL
+1650,1987,Evil Dead II,FAIL
+1651,1987,Fatal Attraction,FAIL
+1652,1987,"Good Morning, Vietnam",FAIL
+1653,1987,Hellraiser,PASS
+1654,1987,Lethal Weapon,FAIL
+1655,1987,Predator,FAIL
+1656,1987,Radio Days,FAIL
+1657,1987,RoboCop,FAIL
+1658,1987,Spaceballs,FAIL
+1659,1987,Superman IV: The Quest for Peace,PASS
+1660,1987,The Last Emperor,FAIL
+1661,1987,The Lost Boys,FAIL
+1662,1987,The Princess Bride,FAIL
+1663,1986,Aliens,PASS
+1664,1986,Crocodile Dundee,FAIL
+1665,1986,Highlander,PASS
+1666,1986,Howard The Duck,FAIL
+1667,1986,Little Shop of Horrors,FAIL
+1668,1986,Peggy Sue Got Married,PASS
+1669,1986,Platoon,FAIL
+1670,1986,Stand By Me,FAIL
+1671,1986,The Clan of the Cave Bear,PASS
+1672,1986,Top Gun,FAIL
+1673,1985,Back to the Future,FAIL
+1674,1985,Brazil,PASS
+1675,1985,Commando,FAIL
+1676,1985,Day of the Dead,FAIL
+1677,1985,Ladyhawke,FAIL
+1678,1985,Legend,FAIL
+1679,1985,My Beautiful Laundrette,FAIL
+1680,1985,Red Sonja,PASS
+1681,1985,Return to Oz,PASS
+1682,1985,The Color Purple,PASS
+1683,1984,A nightmare on Elm Street,FAIL
+1684,1984,Amadeus,PASS
+1685,1984,Beverly Hills Cop,FAIL
+1686,1984,Body Double,FAIL
+1687,1984,Conan the Destroyer,FAIL
+1688,1984,Dune,FAIL
+1689,1984,Friday the 13th Part IV: The Final Chapter,PASS
+1690,1984,Ghostbusters,FAIL
+1691,1984,Gremlins,FAIL
+1692,1984,Indiana Jones and the Temple of Doom,FAIL
+1693,1984,Police Academy,FAIL
+1694,1984,Repo Man,FAIL
+1695,1984,Splash,FAIL
+1696,1984,Star Trek III: The Search for Spock,FAIL
+1697,1984,The Karate Kid,PASS
+1698,1984,The Terminator,FAIL
+1699,1983,Flashdance,PASS
+1700,1983,Star Wars: Episode VI - Return of the Jedi,FAIL
+1701,1983,Superman III,PASS
+1702,1983,Videodrome,FAIL
+1703,1983,WarGames,FAIL
+1704,1982,Blade Runner,FAIL
+1705,1982,Cat People,PASS
+1706,1982,Conan the Barbarian,FAIL
+1707,1982,Diner,FAIL
+1708,1982,E.T.: The Extra-Terrestrial,FAIL
+1709,1982,Fast Times at Ridgemont High,FAIL
+1710,1982,First Blood,FAIL
+1711,1982,Friday the 13th Part III,FAIL
+1712,1982,Poltergeist,PASS
+1713,1982,Porky&#39;s,FAIL
+1714,1982,Star Trek: The Wrath of Khan,FAIL
+1715,1982,The Best Little Whorehouse in Texas,PASS
+1716,1982,Tootsie,FAIL
+1717,1982,TRON,FAIL
+1718,1981,Das Boot,FAIL
+1719,1981,Escape from New York,FAIL
+1720,1981,Friday the 13th Part 2,FAIL
+1721,1981,Halloween II,PASS
+1722,1981,Heavy Metal,FAIL
+1723,1981,History of the World: Part I,FAIL
+1724,1981,Raiders of the Lost Ark,FAIL
+1725,1981,The Evil Dead,FAIL
+1726,1981,Time Bandits,FAIL
+1727,1980,Airplane!,FAIL
+1728,1980,Can&#39;t Stop the Music,PASS
+1729,1980,Fame,PASS
+1730,1980,Flash Gordon,FAIL
+1731,1980,Friday the 13th,FAIL
+1732,1980,Heaven&#39;s Gate,FAIL
+1733,1980,Private Benjamin,PASS
+1734,1980,Raging Bull,FAIL
+1735,1980,Somewhere in Time,FAIL
+1736,1980,Star Wars: Episode V - The Empire Strikes Back,FAIL
+1737,1980,Superman II,FAIL
+1738,1980,The Blues Brothers,FAIL
+1739,1980,The Fog,PASS
+1740,1980,The Shining,FAIL
+1741,1979,Alien,PASS
+1742,1979,Apocalypse Now,FAIL
+1743,1979,Moonraker,FAIL
+1744,1979,Star Trek: The Motion Picture,FAIL
+1745,1979,The Amityville Horror,PASS
+1746,1978,Animal House,FAIL
+1747,1978,Dawn of the Dead,FAIL
+1748,1978,Days of Heaven,PASS
+1749,1978,Grease,PASS
+1750,1978,Halloween,FAIL
+1751,1978,I Spit on Your Grave,FAIL
+1752,1978,Superman,FAIL
+1753,1978,The Deer Hunter,FAIL
+1754,1977,A Bridge Too Far,FAIL
+1755,1977,Annie Hall,PASS
+1756,1977,Close Encounters of the Third Kind,FAIL
+1757,1977,Eraserhead,FAIL
+1758,1977,High Anxiety,FAIL
+1759,1977,Julia,PASS
+1760,1977,Star Wars,FAIL
+1761,1976,Assault on Precinct 13,FAIL
+1762,1976,Family Plot,PASS
+1763,1976,Logan&#39;s Run,FAIL
+1764,1976,Network,PASS
+1765,1976,Rocky,FAIL
+1766,1976,Silent Movie,FAIL
+1767,1976,Sparkle,PASS
+1768,1976,Taxi Driver,FAIL
+1769,1975,Barry Lyndon,FAIL
+1770,1975,Jaws,FAIL
+1771,1975,Monty Python and the Holy Grail,FAIL
+1772,1975,One Flew Over the Cuckoo&#39;s Nest,FAIL
+1773,1975,The Rocky Horror Picture Show,FAIL
+1774,1974,Black Christmas,PASS
+1775,1974,Blazing Saddles,FAIL
+1776,1974,The Conversation,FAIL
+1777,1974,The Godfather: Part II,PASS
+1778,1974,The Texas Chain Saw Massacre,FAIL
+1779,1974,The Towering Inferno,FAIL
+1780,1974,Young Frankenstein,FAIL
+1781,1973,American Graffiti,FAIL
+1782,1973,High Plains Drifter,FAIL
+1783,1973,Sleeper,FAIL
+1784,1973,The Exorcist,PASS
+1785,1973,The Sting,FAIL
+1786,1972,1776,FAIL
+1787,1972,Pink Flamingos,PASS
+1788,1972,The Godfather,FAIL
+1789,1971,Escape from the Planet of the Apes,FAIL
+1790,1971,Shaft,FAIL
+1791,1971,Straw Dogs,FAIL
+1792,1971,The French Connection,FAIL
+1793,1971,Willy Wonka &amp; the Chocolate Factory,FAIL
+1794,1970,Beyond the Valley of the Dolls,PASS

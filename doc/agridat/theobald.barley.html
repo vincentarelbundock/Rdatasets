@@ -1,0 +1,100 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of barley, multiple years &amp;...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>theobald.barley</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of barley, multiple years &amp; fertilizer levels
+</h2>
+
+<h3>Description</h3>
+
+<p>Barley yields at multiple locs, years, fertilizer levels
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("theobald.barley")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 105 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>yield</code></dt><dd><p>yield, tonnes/ha</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype</p>
+</dd>
+<dt><code>loc</code></dt><dd><p>location, 5 levels</p>
+</dd>
+<dt><code>nitro</code></dt><dd><p>nitrogen kg/ha</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year, 2 levels</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Theobald and Talbot used BUGS to fit a fully Bayesian model
+for yield response curves.
+</p>
+<p>Locations of the experiment were in north-east Scotland.
+</p>
+<p>Assumed nitrogen cost 400 pounds per tonne.
+Grain prices used were 100, 110, and 107.50 pounds per tonne for
+Georgie, Midas and Sundance.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Chris M. Theobald and Mike Talbot, (2002).
+The Bayesian choice of crop variety and fertilizer dose.
+<em>Appl Statistics</em>, 51, 23-36.
+https://doi.org/10.1111/1467-9876.04863
+</p>
+<p>Data provided by Chris Theobald and Mike Talbot.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+data(theobald.barley)
+dat &lt;- theobald.barley
+dat &lt;- transform(dat,  env=paste(loc,year,sep="-"))
+dat &lt;- transform(dat, income=100*yield - 400*nitro/1000)
+
+libs(lattice)
+xyplot(income~nitro|env, dat, groups=gen, type='b',
+       auto.key=list(columns=3), main="theobald.barley")
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

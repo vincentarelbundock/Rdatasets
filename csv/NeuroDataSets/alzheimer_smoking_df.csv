@@ -1,0 +1,539 @@
+rownames,smoking,disease,gender
+1,None,Alzheimer,Female
+2,None,Alzheimer,Female
+3,None,Alzheimer,Female
+4,None,Alzheimer,Female
+5,None,Alzheimer,Female
+6,None,Alzheimer,Female
+7,None,Alzheimer,Female
+8,None,Alzheimer,Female
+9,None,Alzheimer,Female
+10,None,Alzheimer,Female
+11,None,Alzheimer,Female
+12,None,Alzheimer,Female
+13,None,Alzheimer,Female
+14,None,Alzheimer,Female
+15,None,Alzheimer,Female
+16,None,Alzheimer,Female
+17,None,Alzheimer,Female
+18,None,Alzheimer,Female
+19,None,Alzheimer,Female
+20,None,Alzheimer,Female
+21,None,Alzheimer,Female
+22,None,Alzheimer,Female
+23,None,Alzheimer,Female
+24,None,Alzheimer,Female
+25,None,Alzheimer,Female
+26,None,Alzheimer,Female
+27,None,Alzheimer,Female
+28,None,Alzheimer,Female
+29,None,Alzheimer,Female
+30,None,Alzheimer,Female
+31,None,Alzheimer,Female
+32,None,Alzheimer,Female
+33,None,Alzheimer,Female
+34,None,Alzheimer,Female
+35,None,Alzheimer,Female
+36,None,Alzheimer,Female
+37,None,Alzheimer,Female
+38,None,Alzheimer,Female
+39,None,Alzheimer,Female
+40,None,Alzheimer,Female
+41,None,Alzheimer,Female
+42,None,Alzheimer,Female
+43,None,Alzheimer,Female
+44,None,Alzheimer,Female
+45,None,Alzheimer,Female
+46,None,Alzheimer,Female
+47,None,Alzheimer,Female
+48,None,Alzheimer,Female
+49,None,Alzheimer,Female
+50,None,Alzheimer,Female
+51,None,Alzheimer,Female
+52,None,Alzheimer,Female
+53,None,Alzheimer,Female
+54,None,Alzheimer,Female
+55,None,Alzheimer,Female
+56,None,Alzheimer,Female
+57,None,Alzheimer,Female
+58,None,Alzheimer,Female
+59,None,Alzheimer,Female
+60,None,Alzheimer,Female
+61,None,Alzheimer,Female
+62,None,Alzheimer,Female
+63,None,Alzheimer,Female
+64,None,Alzheimer,Female
+65,None,Alzheimer,Female
+66,None,Alzheimer,Female
+67,None,Alzheimer,Female
+68,None,Alzheimer,Female
+69,None,Alzheimer,Female
+70,None,Alzheimer,Female
+71,None,Alzheimer,Female
+72,None,Alzheimer,Female
+73,None,Alzheimer,Female
+74,None,Alzheimer,Female
+75,None,Alzheimer,Female
+76,None,Alzheimer,Female
+77,None,Alzheimer,Female
+78,None,Alzheimer,Female
+79,None,Alzheimer,Female
+80,None,Alzheimer,Female
+81,None,Alzheimer,Female
+82,None,Alzheimer,Female
+83,None,Alzheimer,Female
+84,None,Alzheimer,Female
+85,None,Alzheimer,Female
+86,None,Alzheimer,Female
+87,None,Alzheimer,Female
+88,None,Alzheimer,Female
+89,None,Alzheimer,Female
+90,None,Alzheimer,Female
+91,None,Alzheimer,Female
+92,<10,Alzheimer,Female
+93,<10,Alzheimer,Female
+94,<10,Alzheimer,Female
+95,<10,Alzheimer,Female
+96,<10,Alzheimer,Female
+97,<10,Alzheimer,Female
+98,<10,Alzheimer,Female
+99,10-20,Alzheimer,Female
+100,10-20,Alzheimer,Female
+101,10-20,Alzheimer,Female
+102,10-20,Alzheimer,Female
+103,10-20,Alzheimer,Female
+104,10-20,Alzheimer,Female
+105,10-20,Alzheimer,Female
+106,10-20,Alzheimer,Female
+107,10-20,Alzheimer,Female
+108,10-20,Alzheimer,Female
+109,10-20,Alzheimer,Female
+110,10-20,Alzheimer,Female
+111,10-20,Alzheimer,Female
+112,10-20,Alzheimer,Female
+113,10-20,Alzheimer,Female
+114,>20,Alzheimer,Female
+115,>20,Alzheimer,Female
+116,>20,Alzheimer,Female
+117,>20,Alzheimer,Female
+118,>20,Alzheimer,Female
+119,>20,Alzheimer,Female
+120,>20,Alzheimer,Female
+121,>20,Alzheimer,Female
+122,>20,Alzheimer,Female
+123,>20,Alzheimer,Female
+124,>20,Alzheimer,Female
+125,>20,Alzheimer,Female
+126,>20,Alzheimer,Female
+127,>20,Alzheimer,Female
+128,>20,Alzheimer,Female
+129,>20,Alzheimer,Female
+130,>20,Alzheimer,Female
+131,>20,Alzheimer,Female
+132,>20,Alzheimer,Female
+133,>20,Alzheimer,Female
+134,>20,Alzheimer,Female
+135,None,Other dementias,Female
+136,None,Other dementias,Female
+137,None,Other dementias,Female
+138,None,Other dementias,Female
+139,None,Other dementias,Female
+140,None,Other dementias,Female
+141,None,Other dementias,Female
+142,None,Other dementias,Female
+143,None,Other dementias,Female
+144,None,Other dementias,Female
+145,None,Other dementias,Female
+146,None,Other dementias,Female
+147,None,Other dementias,Female
+148,None,Other dementias,Female
+149,None,Other dementias,Female
+150,None,Other dementias,Female
+151,None,Other dementias,Female
+152,None,Other dementias,Female
+153,None,Other dementias,Female
+154,None,Other dementias,Female
+155,None,Other dementias,Female
+156,None,Other dementias,Female
+157,None,Other dementias,Female
+158,None,Other dementias,Female
+159,None,Other dementias,Female
+160,None,Other dementias,Female
+161,None,Other dementias,Female
+162,None,Other dementias,Female
+163,None,Other dementias,Female
+164,None,Other dementias,Female
+165,None,Other dementias,Female
+166,None,Other dementias,Female
+167,None,Other dementias,Female
+168,None,Other dementias,Female
+169,None,Other dementias,Female
+170,None,Other dementias,Female
+171,None,Other dementias,Female
+172,None,Other dementias,Female
+173,None,Other dementias,Female
+174,None,Other dementias,Female
+175,None,Other dementias,Female
+176,None,Other dementias,Female
+177,None,Other dementias,Female
+178,None,Other dementias,Female
+179,None,Other dementias,Female
+180,None,Other dementias,Female
+181,None,Other dementias,Female
+182,None,Other dementias,Female
+183,None,Other dementias,Female
+184,None,Other dementias,Female
+185,None,Other dementias,Female
+186,None,Other dementias,Female
+187,None,Other dementias,Female
+188,None,Other dementias,Female
+189,None,Other dementias,Female
+190,<10,Other dementias,Female
+191,<10,Other dementias,Female
+192,<10,Other dementias,Female
+193,<10,Other dementias,Female
+194,<10,Other dementias,Female
+195,<10,Other dementias,Female
+196,<10,Other dementias,Female
+197,10-20,Other dementias,Female
+198,10-20,Other dementias,Female
+199,10-20,Other dementias,Female
+200,10-20,Other dementias,Female
+201,10-20,Other dementias,Female
+202,10-20,Other dementias,Female
+203,10-20,Other dementias,Female
+204,10-20,Other dementias,Female
+205,10-20,Other dementias,Female
+206,10-20,Other dementias,Female
+207,10-20,Other dementias,Female
+208,10-20,Other dementias,Female
+209,10-20,Other dementias,Female
+210,10-20,Other dementias,Female
+211,10-20,Other dementias,Female
+212,10-20,Other dementias,Female
+213,>20,Other dementias,Female
+214,>20,Other dementias,Female
+215,>20,Other dementias,Female
+216,>20,Other dementias,Female
+217,>20,Other dementias,Female
+218,>20,Other dementias,Female
+219,>20,Other dementias,Female
+220,>20,Other dementias,Female
+221,>20,Other dementias,Female
+222,None,Other diagnoses,Female
+223,None,Other diagnoses,Female
+224,None,Other diagnoses,Female
+225,None,Other diagnoses,Female
+226,None,Other diagnoses,Female
+227,None,Other diagnoses,Female
+228,None,Other diagnoses,Female
+229,None,Other diagnoses,Female
+230,None,Other diagnoses,Female
+231,None,Other diagnoses,Female
+232,None,Other diagnoses,Female
+233,None,Other diagnoses,Female
+234,None,Other diagnoses,Female
+235,None,Other diagnoses,Female
+236,None,Other diagnoses,Female
+237,None,Other diagnoses,Female
+238,None,Other diagnoses,Female
+239,None,Other diagnoses,Female
+240,None,Other diagnoses,Female
+241,None,Other diagnoses,Female
+242,None,Other diagnoses,Female
+243,None,Other diagnoses,Female
+244,None,Other diagnoses,Female
+245,None,Other diagnoses,Female
+246,None,Other diagnoses,Female
+247,None,Other diagnoses,Female
+248,None,Other diagnoses,Female
+249,None,Other diagnoses,Female
+250,None,Other diagnoses,Female
+251,None,Other diagnoses,Female
+252,None,Other diagnoses,Female
+253,None,Other diagnoses,Female
+254,None,Other diagnoses,Female
+255,None,Other diagnoses,Female
+256,None,Other diagnoses,Female
+257,None,Other diagnoses,Female
+258,None,Other diagnoses,Female
+259,None,Other diagnoses,Female
+260,None,Other diagnoses,Female
+261,None,Other diagnoses,Female
+262,None,Other diagnoses,Female
+263,None,Other diagnoses,Female
+264,None,Other diagnoses,Female
+265,None,Other diagnoses,Female
+266,None,Other diagnoses,Female
+267,None,Other diagnoses,Female
+268,None,Other diagnoses,Female
+269,None,Other diagnoses,Female
+270,None,Other diagnoses,Female
+271,None,Other diagnoses,Female
+272,None,Other diagnoses,Female
+273,None,Other diagnoses,Female
+274,None,Other diagnoses,Female
+275,None,Other diagnoses,Female
+276,None,Other diagnoses,Female
+277,None,Other diagnoses,Female
+278,None,Other diagnoses,Female
+279,None,Other diagnoses,Female
+280,None,Other diagnoses,Female
+281,None,Other diagnoses,Female
+282,None,Other diagnoses,Female
+283,None,Other diagnoses,Female
+284,None,Other diagnoses,Female
+285,None,Other diagnoses,Female
+286,None,Other diagnoses,Female
+287,None,Other diagnoses,Female
+288,None,Other diagnoses,Female
+289,None,Other diagnoses,Female
+290,None,Other diagnoses,Female
+291,None,Other diagnoses,Female
+292,None,Other diagnoses,Female
+293,None,Other diagnoses,Female
+294,None,Other diagnoses,Female
+295,None,Other diagnoses,Female
+296,None,Other diagnoses,Female
+297,None,Other diagnoses,Female
+298,None,Other diagnoses,Female
+299,None,Other diagnoses,Female
+300,None,Other diagnoses,Female
+301,None,Other diagnoses,Female
+302,<10,Other diagnoses,Female
+303,<10,Other diagnoses,Female
+304,<10,Other diagnoses,Female
+305,10-20,Other diagnoses,Female
+306,10-20,Other diagnoses,Female
+307,10-20,Other diagnoses,Female
+308,10-20,Other diagnoses,Female
+309,10-20,Other diagnoses,Female
+310,10-20,Other diagnoses,Female
+311,10-20,Other diagnoses,Female
+312,10-20,Other diagnoses,Female
+313,10-20,Other diagnoses,Female
+314,10-20,Other diagnoses,Female
+315,10-20,Other diagnoses,Female
+316,10-20,Other diagnoses,Female
+317,10-20,Other diagnoses,Female
+318,10-20,Other diagnoses,Female
+319,10-20,Other diagnoses,Female
+320,10-20,Other diagnoses,Female
+321,10-20,Other diagnoses,Female
+322,10-20,Other diagnoses,Female
+323,10-20,Other diagnoses,Female
+324,10-20,Other diagnoses,Female
+325,10-20,Other diagnoses,Female
+326,10-20,Other diagnoses,Female
+327,10-20,Other diagnoses,Female
+328,10-20,Other diagnoses,Female
+329,10-20,Other diagnoses,Female
+330,>20,Other diagnoses,Female
+331,>20,Other diagnoses,Female
+332,>20,Other diagnoses,Female
+333,>20,Other diagnoses,Female
+334,>20,Other diagnoses,Female
+335,>20,Other diagnoses,Female
+336,>20,Other diagnoses,Female
+337,>20,Other diagnoses,Female
+338,>20,Other diagnoses,Female
+339,None,Alzheimer,Male
+340,None,Alzheimer,Male
+341,None,Alzheimer,Male
+342,None,Alzheimer,Male
+343,None,Alzheimer,Male
+344,None,Alzheimer,Male
+345,None,Alzheimer,Male
+346,None,Alzheimer,Male
+347,None,Alzheimer,Male
+348,None,Alzheimer,Male
+349,None,Alzheimer,Male
+350,None,Alzheimer,Male
+351,None,Alzheimer,Male
+352,None,Alzheimer,Male
+353,None,Alzheimer,Male
+354,None,Alzheimer,Male
+355,None,Alzheimer,Male
+356,None,Alzheimer,Male
+357,None,Alzheimer,Male
+358,None,Alzheimer,Male
+359,None,Alzheimer,Male
+360,None,Alzheimer,Male
+361,None,Alzheimer,Male
+362,None,Alzheimer,Male
+363,None,Alzheimer,Male
+364,None,Alzheimer,Male
+365,None,Alzheimer,Male
+366,None,Alzheimer,Male
+367,None,Alzheimer,Male
+368,None,Alzheimer,Male
+369,None,Alzheimer,Male
+370,None,Alzheimer,Male
+371,None,Alzheimer,Male
+372,None,Alzheimer,Male
+373,None,Alzheimer,Male
+374,<10,Alzheimer,Male
+375,<10,Alzheimer,Male
+376,<10,Alzheimer,Male
+377,<10,Alzheimer,Male
+378,<10,Alzheimer,Male
+379,<10,Alzheimer,Male
+380,<10,Alzheimer,Male
+381,<10,Alzheimer,Male
+382,10-20,Alzheimer,Male
+383,10-20,Alzheimer,Male
+384,10-20,Alzheimer,Male
+385,10-20,Alzheimer,Male
+386,10-20,Alzheimer,Male
+387,10-20,Alzheimer,Male
+388,10-20,Alzheimer,Male
+389,10-20,Alzheimer,Male
+390,10-20,Alzheimer,Male
+391,10-20,Alzheimer,Male
+392,10-20,Alzheimer,Male
+393,10-20,Alzheimer,Male
+394,10-20,Alzheimer,Male
+395,10-20,Alzheimer,Male
+396,10-20,Alzheimer,Male
+397,>20,Alzheimer,Male
+398,>20,Alzheimer,Male
+399,>20,Alzheimer,Male
+400,>20,Alzheimer,Male
+401,>20,Alzheimer,Male
+402,>20,Alzheimer,Male
+403,None,Other dementias,Male
+404,None,Other dementias,Male
+405,None,Other dementias,Male
+406,None,Other dementias,Male
+407,None,Other dementias,Male
+408,None,Other dementias,Male
+409,None,Other dementias,Male
+410,None,Other dementias,Male
+411,None,Other dementias,Male
+412,None,Other dementias,Male
+413,None,Other dementias,Male
+414,None,Other dementias,Male
+415,None,Other dementias,Male
+416,None,Other dementias,Male
+417,None,Other dementias,Male
+418,None,Other dementias,Male
+419,None,Other dementias,Male
+420,None,Other dementias,Male
+421,None,Other dementias,Male
+422,None,Other dementias,Male
+423,None,Other dementias,Male
+424,None,Other dementias,Male
+425,None,Other dementias,Male
+426,None,Other dementias,Male
+427,<10,Other dementias,Male
+428,10-20,Other dementias,Male
+429,10-20,Other dementias,Male
+430,10-20,Other dementias,Male
+431,10-20,Other dementias,Male
+432,10-20,Other dementias,Male
+433,10-20,Other dementias,Male
+434,10-20,Other dementias,Male
+435,10-20,Other dementias,Male
+436,10-20,Other dementias,Male
+437,10-20,Other dementias,Male
+438,10-20,Other dementias,Male
+439,10-20,Other dementias,Male
+440,10-20,Other dementias,Male
+441,10-20,Other dementias,Male
+442,10-20,Other dementias,Male
+443,10-20,Other dementias,Male
+444,10-20,Other dementias,Male
+445,>20,Other dementias,Male
+446,>20,Other dementias,Male
+447,>20,Other dementias,Male
+448,>20,Other dementias,Male
+449,>20,Other dementias,Male
+450,>20,Other dementias,Male
+451,>20,Other dementias,Male
+452,>20,Other dementias,Male
+453,>20,Other dementias,Male
+454,>20,Other dementias,Male
+455,>20,Other dementias,Male
+456,>20,Other dementias,Male
+457,>20,Other dementias,Male
+458,>20,Other dementias,Male
+459,>20,Other dementias,Male
+460,>20,Other dementias,Male
+461,>20,Other dementias,Male
+462,>20,Other dementias,Male
+463,>20,Other dementias,Male
+464,>20,Other dementias,Male
+465,>20,Other dementias,Male
+466,>20,Other dementias,Male
+467,>20,Other dementias,Male
+468,>20,Other dementias,Male
+469,>20,Other dementias,Male
+470,>20,Other dementias,Male
+471,>20,Other dementias,Male
+472,>20,Other dementias,Male
+473,>20,Other dementias,Male
+474,>20,Other dementias,Male
+475,>20,Other dementias,Male
+476,>20,Other dementias,Male
+477,>20,Other dementias,Male
+478,>20,Other dementias,Male
+479,>20,Other dementias,Male
+480,None,Other diagnoses,Male
+481,None,Other diagnoses,Male
+482,None,Other diagnoses,Male
+483,None,Other diagnoses,Male
+484,None,Other diagnoses,Male
+485,None,Other diagnoses,Male
+486,None,Other diagnoses,Male
+487,None,Other diagnoses,Male
+488,None,Other diagnoses,Male
+489,None,Other diagnoses,Male
+490,None,Other diagnoses,Male
+491,None,Other diagnoses,Male
+492,None,Other diagnoses,Male
+493,None,Other diagnoses,Male
+494,None,Other diagnoses,Male
+495,None,Other diagnoses,Male
+496,None,Other diagnoses,Male
+497,None,Other diagnoses,Male
+498,None,Other diagnoses,Male
+499,None,Other diagnoses,Male
+500,None,Other diagnoses,Male
+501,None,Other diagnoses,Male
+502,None,Other diagnoses,Male
+503,None,Other diagnoses,Male
+504,<10,Other diagnoses,Male
+505,<10,Other diagnoses,Male
+506,10-20,Other diagnoses,Male
+507,10-20,Other diagnoses,Male
+508,10-20,Other diagnoses,Male
+509,10-20,Other diagnoses,Male
+510,10-20,Other diagnoses,Male
+511,10-20,Other diagnoses,Male
+512,10-20,Other diagnoses,Male
+513,10-20,Other diagnoses,Male
+514,10-20,Other diagnoses,Male
+515,10-20,Other diagnoses,Male
+516,10-20,Other diagnoses,Male
+517,10-20,Other diagnoses,Male
+518,10-20,Other diagnoses,Male
+519,10-20,Other diagnoses,Male
+520,10-20,Other diagnoses,Male
+521,10-20,Other diagnoses,Male
+522,10-20,Other diagnoses,Male
+523,10-20,Other diagnoses,Male
+524,10-20,Other diagnoses,Male
+525,10-20,Other diagnoses,Male
+526,10-20,Other diagnoses,Male
+527,10-20,Other diagnoses,Male
+528,>20,Other diagnoses,Male
+529,>20,Other diagnoses,Male
+530,>20,Other diagnoses,Male
+531,>20,Other diagnoses,Male
+532,>20,Other diagnoses,Male
+533,>20,Other diagnoses,Male
+534,>20,Other diagnoses,Male
+535,>20,Other diagnoses,Male
+536,>20,Other diagnoses,Male
+537,>20,Other diagnoses,Male
+538,>20,Other diagnoses,Male

@@ -1,0 +1,114 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trials of sugarcane, 4 fields</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>kerr.sugarcane.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trials of sugarcane, 4 fields
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trials of sugarcane, 4 fields
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("kerr.sugarcane.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 564 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, pounds per plot</p>
+</dd>
+<dt><code>trial</code></dt><dd><p>trial number</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Experiment conducted at the Sugar Experiment Station, Brisbane, Queensland, Australia in 1937.
+</p>
+<p>Four trials were harvested, each 12 plots by 12 plots, each plot 19 feet by 19 feet (one field used 18-foot plots).
+</p>
+<p>Trial 1 is plant cane.
+</p>
+<p>Trial 2 is ratoon cane.
+</p>
+<p>Trial 3 plant cane, irrigated.
+</p>
+<p>Trial 4 is ratoon cane, irrigated.
+</p>
+<p>Field length: 12 plots * 19 feet = 228 feet.
+</p>
+<p>Field width: 12 plots * 19 feet = 228 feet.
+</p>
+
+
+<h3>Source</h3>
+
+<p>H. W. Kerr (1939). Notes on plot technique.
+Proc. Internat. Soc. Sugarcane Technol. 6, 764&ndash;778.
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(kerr.sugarcane.uniformity)
+dat &lt;- kerr.sugarcane.uniformity
+
+# match Kerr figure 4
+libs(desplot)
+desplot(dat, yield ~ col*row|trial,
+        flip=TRUE, aspect=1, # true aspect
+        main="kerr.sugarcane.uniformity")
+
+# CV matches Kerr table 2, page 768
+# aggregate(yield ~ trial, dat, FUN= function(x) round(100*sd(x)/mean(x),2))
+##   trial yield
+## 1    T1  7.95
+## 2    T2  9.30
+## 3    T3 10.37
+## 4    T4 13.76
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

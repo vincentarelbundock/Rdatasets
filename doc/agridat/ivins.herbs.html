@@ -1,0 +1,187 @@
+<!DOCTYPE html><html><head><title>R: Percent ground cover of herbage species and nettles.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>ivins.herbs</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Percent ground cover of herbage species and nettles.
+</h2>
+
+<h3>Description</h3>
+
+<p>Percent ground cover of herbage species and nettles.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 78 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>block</code></dt><dd><p>block, 6 levels</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype, 13 levels</p>
+</dd>
+<dt><code>nettle</code></dt><dd><p>percent ground cover of nettles</p>
+</dd>
+<dt><code>herb</code></dt><dd><p>percent ground cover of herbage species</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>On the University of Nottingham farm, 13 different strains and species
+of herbage plants were sown on about 4 acres in an RCB design.  Each
+grass species was sown together with white clover seed.
+</p>
+<p>During establishment of the herbage plants, it became apparent that
+<em>Urtica dioica</em> (nettle) became established according to the
+particular herbage plant in each plot.  In particular, nettle became
+established in plots sown with leguminous species and the two grass
+species.  The graminaceous plots had less nettles.
+</p>
+<p>The data here are the percentage ground cover of nettle and herbage
+plants in September 1951.
+</p>
+<p>Note, some of the percent ground cover amounts were originally
+reported as 'trace'. These have been arbitrarily set to 0.1 in this
+data.
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+    gen </td><td style="text-align: left;"> species </td><td style="text-align: left;"> strain </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    G01 </td><td style="text-align: left;"> Lolium perenne      </td><td style="text-align: left;"> Irish perennial ryegrass </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    G02 </td><td style="text-align: left;"> Lolium perenne      </td><td style="text-align: left;"> S. 23 perennial ryegrass </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    G03 </td><td style="text-align: left;"> Dactylis glomerata  </td><td style="text-align: left;"> Danish cocksfoot </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    G04 </td><td style="text-align: left;"> Dactylis glomerata  </td><td style="text-align: left;"> S. 143 cocksfoot </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    G05 </td><td style="text-align: left;"> Phleum pratense     </td><td style="text-align: left;"> American timothy </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    G06 </td><td style="text-align: left;"> Phleum pratense     </td><td style="text-align: left;"> S. 48 timothy </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    G07 </td><td style="text-align: left;"> Festuca pratensis   </td><td style="text-align: left;"> S. 215 meadow fescue </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    G08 </td><td style="text-align: left;"> Poa trivialis       </td><td style="text-align: left;"> Danish rough stalked meadow grass </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    G09 </td><td style="text-align: left;"> Cynosurus cristatus </td><td style="text-align: left;"> New Zealand crested dogstail </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    G10 </td><td style="text-align: left;"> Trifolium pratense  </td><td style="text-align: left;"> Montgomery late red clover </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    G11 </td><td style="text-align: left;"> Medicago lupulina   </td><td style="text-align: left;"> Commercial black medick </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    G12 </td><td style="text-align: left;"> Trifolium repens    </td><td style="text-align: left;"> S. 100 white clover </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    G13 </td><td style="text-align: left;"> Plantago lanceolata </td><td style="text-align: left;"> Commercial ribwort plantain
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>Ivins, JD. (1952).
+Concerning the Ecology of Urtica Dioica L.,
+<em>Journal of Ecology</em>, 40, 380-382.
+https://doi.org/10.2307/2256806
+</p>
+
+
+<h3>References</h3>
+
+<p>Ivins, JD (1950). Weeds in relation to the establishment of the Ley.
+<em>Grass and Forage Science</em>, 5, 237&ndash;242.
+https://doi.org/10.1111/j.1365-2494.1950.tb01287.x
+</p>
+<p>O'Gorman, T.W. (2001). A comparison of the F-test, Friedman's test,
+and several aligned rank tests for the analysis of randomized complete
+blocks.
+<em>Journal of agricultural, biological, and environmental
+statistics</em>, 6, 367&ndash;378.
+https://doi.org/10.1198/108571101317096578
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(ivins.herbs)
+dat &lt;- ivins.herbs
+
+# Nettle is primarily established in legumes.
+libs(lattice)
+xyplot(herb~nettle|gen, dat, main="ivins.herbs - herb yield vs weeds",
+       xlab="Percent groundcover in nettles",
+       ylab="Percent groundcover in herbs")
+
+# O'Brien used first 7 species to test gen differences
+dat7 &lt;- droplevels(subset(dat, is.element(gen, c('G01','G02','G03','G04','G05','G06','G07'))))
+m1 &lt;- lm(herb ~ gen + block, data=dat7)
+anova(m1) # gen p-value is .041
+## Response: herb
+##           Df  Sum Sq Mean Sq F value  Pr(&gt;F)
+## gen        6 1083.24 180.540  2.5518 0.04072 *
+## block      5  590.69 118.138  1.6698 0.17236
+## Residuals 30 2122.48  70.749
+
+friedman.test(herb ~ gen|block, dat7) # gen p-value .056
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

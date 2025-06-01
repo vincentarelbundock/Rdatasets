@@ -1,0 +1,126 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of sorghum</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>lessman.sorghum.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of sorghum
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of sorghum at Ames, Iowa, 1959.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("lessman.sorghum.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 2640 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, ounces</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The uniformity trial was conducted at the Agronomy Farm at Ames, Iowa,
+in 1959.  The field was planted to grain sorghum in rows spaces 40
+inches apart, thinned to a stand of three inches between plants.  The
+entire field was 48 rows (40 inches apart), each 300 feet long and
+harvested in 5-foot lengths.  Threshed grain was dried to 8-10 percent
+moisture before weighing. Weights are ounces.  Average yield for the
+field was 95.3 bu/ac.
+</p>
+<p>Field width: 48 rows * 40 inches / 12in/ft = 160 feet
+</p>
+<p>Field length: 60 plots * 5 feet = 300 feet
+</p>
+<p>Plot yields from the two outer rows on each side of the field were
+omitted from the analysis.
+</p>
+<p>CV values from this data do not quite match Lessman's value.  The
+first page of Table 17 was manually checked for correctness and there
+were no problems with the optical character recognition (other than
+obvious errors like 0/o).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Lessman, Koert James (1962).
+Comparisons of methods for testing grain yield of sorghum.
+Iowa State University.
+Retrospective Theses and Dissertations. Paper 2063. Appendix Table 17.
+https://lib.dr.iastate.edu/rtd/2063
+</p>
+
+
+<h3>References</h3>
+
+<p>None.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+  
+  data(lessman.sorghum.uniformity)
+  dat &lt;- lessman.sorghum.uniformity
+  
+  libs(desplot)
+  desplot(dat, yield ~ col*row,
+          aspect=300/160, tick=TRUE, flip=TRUE, # true aspect
+          main="lessman.sorghum.uniformity")
+
+  # Omit outer two columns (called 'rows' by Lessman)
+  dat &lt;- subset(dat, col &gt; 2 &amp; col &lt; 47)
+  nrow(dat)
+  var(dat$yield) # 9.09
+  sd(dat$yield)/mean(dat$yield) # CV 9.2
+
+  libs(reshape2)
+  libs(agricolae)
+  dmat &lt;- acast(dat, row~col, value.var='yield')
+  index.smith(dmat,
+              main="lessman.sorghum.uniformity",
+              col="red") # Similar to Lessman Table 1
+  # Lessman said that varying the width of plots did not have an appreciable
+  # effect on CV, and optimal row length was 3.2 basic plots, about 15-20
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

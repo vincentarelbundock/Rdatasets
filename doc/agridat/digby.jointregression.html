@@ -1,0 +1,168 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of wheat</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>digby.jointregression</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of wheat
+</h2>
+
+<h3>Description</h3>
+
+<p>Yield of 10 spring wheat varieties for 17 locations in 1976.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 134 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype, 10 levels</p>
+</dd>
+<dt><code>env</code></dt><dd><p>environment, 17 levels</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield (t/ha)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Yield of 10 spring wheat varieties for 17 locations in 1976.
+</p>
+<p>Used to illustrate modified joint regression.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Digby, P.G.N. (1979). Modified joint regression analysis for
+incomplete variety x environment data.
+<em>Journal of Agricultural Science</em>, 93, 81-86.
+https://doi.org/10.1017/S0021859600086159
+</p>
+
+
+<h3>References</h3>
+
+<p>Hans-Pieter Piepho, 1997.
+Analyzing Genotype-Environment Data by Mixed-Models with
+Multiplicative Terms. <em>Biometrics</em>, 53, 761-766.
+https://doi.org/10.2307/2533976
+</p>
+<p>RJOINT procedure in GenStat.
+https://www.vsni.co.uk/software/genstat/htmlhelp/server/RJOINT.htm
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+  library(agridat)
+  data(digby.jointregression)
+  dat &lt;- digby.jointregression
+  
+  # Simple gen means, ignoring unbalanced data.
+  # Matches Digby table 2, Unadjusted Mean
+  round(tapply(dat$yield, dat$gen, mean),3)
+  
+  # Two-way model. Matches Digby table 2, Fitting Constants
+  m00 &lt;- lm(yield ~ 0 + gen + env, dat)
+  round(coef(m00)[1:10]-2.756078+3.272,3) # Adjust intercept
+  # genG01 genG02 genG03 genG04 genG05 genG06 genG07 genG08 genG09 genG10 
+  #  3.272  3.268  4.051  3.724  3.641  3.195  3.232  3.268  3.749  3.179 
+  
+  n.gen &lt;- nlevels(dat$gen)
+  n.env &lt;- nlevels(dat$env)
+  
+  # Estimate theta (env eff)
+  m0 &lt;- lm(yield ~ -1 + env + gen, dat)
+  thetas &lt;- coef(m0)[1:n.env]
+  thetas &lt;- thetas-mean(thetas) # center env effects
+  # Add env effects to the data
+  dat$theta &lt;- thetas[match(paste("env",dat$env,sep=""), names(thetas))]
+  
+  # Initialize beta (gen slopes) at 1
+  betas &lt;- rep(1, n.gen)
+  
+  done &lt;- FALSE
+  while(!done){
+    
+    betas0 &lt;- betas
+    
+    # M1: Fix thetas (env effects), estimate beta (gen slope)
+    m1 &lt;- lm(yield ~ -1 + gen + gen:theta, data=dat)
+    betas &lt;- coef(m1)[-c(1:n.gen)]
+    dat$beta &lt;- betas[match(paste("gen",dat$gen,":theta",sep=""), names(betas))]
+    # print(betas)
+
+    # M2: Fix betas (gen slopes), estimate theta (env slope)
+    m2 &lt;- lm(yield ~ env:beta + gen -1, data=dat)
+    thetas &lt;- coef(m2)[-c(1:n.gen)]
+    thetas[is.na(thetas)] &lt;- 0  # Change last coefficient from NA to 0
+    dat$theta &lt;- thetas[match(paste("env",dat$env,":beta",sep=""), names(thetas))]
+    # print(thetas)
+
+    # Check convergence
+    chg &lt;- sum(((betas-betas0)/betas0)^2)
+    cat("Relative change in betas",chg,"\n")
+    if(chg &lt; .0001) done &lt;- TRUE
+    
+  }
+
+  libs(lattice)
+  xyplot(yield ~ theta|gen, data=dat, xlab="theta (environment effect)",
+         main="digby.jointregression - stability plot")
+
+  # Dibgy Table 2, modified joint regression
+  
+  # Genotype sensitivities (slopes)
+  round(betas,3) # Match Digby table 2, Modified joint regression sensitivity
+  # genG01 genG02 genG03 genG04 genG05 genG06 genG07 genG08 genG09 genG10
+  #  0.953  0.739  1.082  1.024  1.142  0.877 1.089  0.914  1.196  0.947
+
+  # Env effects. Match Digby table 3, Modified joint reg
+  round(thetas,3)+1.164-.515 # Adjust intercept to match
+  # envE01 envE02 envE03 envE04 envE05 envE06 envE07 envE08 envE09 envE10
+  # -0.515 -0.578 -0.990 -1.186  1.811  1.696 -1.096  0.046  0.057  0.825
+  # envE11 envE12 envE13 envE14 envE15 envE16 envE17
+  # -0.576  1.568 -0.779 -0.692  0.836 -1.080  0.649
+
+  # Using 'gnm' gives similar results.
+  # libs(gnm)
+  # m3 &lt;- gnm(yield ~ gen + Mult(gen,env), data=dat) # slopes negated
+  # round(coef(m3)[11:20],3)
+
+  # Using 'mumm' gives similar results, though gen is random and the
+  # coeffecients are shrunk toward 0 a bit.
+  if(require("mumm", quietly=TRUE)) {
+    libs(mumm)
+    m1 &lt;- mumm(yield ~ -1 + env + mp(gen, env), dat)
+    round(1 + ranef(m1)$`mp gen:env`,2)
+  }
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

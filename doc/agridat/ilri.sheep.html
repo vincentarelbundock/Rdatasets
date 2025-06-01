@@ -1,0 +1,194 @@
+<!DOCTYPE html><html><head><title>R: Birth weight and weaning weight of Dorper x Red Maasi lambs</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>ilri.sheep</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Birth weight and weaning weight of Dorper x Red Maasi lambs
+</h2>
+
+<h3>Description</h3>
+
+<p>Birth weight and weaning weight of 882 lambs from a partial diallel
+cross of Dorper and Red Maasi breeds.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 882 observations on the following 12 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year of lamb birth, 1991-1996</p>
+</dd>
+<dt><code>lamb</code></dt><dd><p>lamb id</p>
+</dd>
+<dt><code>sex</code></dt><dd><p>sex of lamb, M=Male/F=Female</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype, DD, DR, RD, RR</p>
+</dd>
+<dt><code>birthwt</code></dt><dd><p>weight of lamb at birth, kg</p>
+</dd>
+<dt><code>weanwt</code></dt><dd><p>weight of lamb at weaning, kg</p>
+</dd>
+<dt><code>weanage</code></dt><dd><p>age of lamb at weaning, days</p>
+</dd>
+<dt><code>ewe</code></dt><dd><p>ewe id</p>
+</dd>
+<dt><code>ewegen</code></dt><dd><p>ewe genotype: D, R</p>
+</dd>
+<dt><code>damage</code></dt><dd><p>ewe (dam) age in years</p>
+</dd>
+<dt><code>ram</code></dt><dd><p>ram id</p>
+</dd>
+<dt><code>ramgen</code></dt><dd><p>ram genotype: D, R</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Red Maasai sheep in East Africa are perceived to be resistant to
+certain parasites.  ILRI decided in 1990 to investigate the degree of
+resistance exhibited by this Red Maasai breed and initiated a study in
+Kenya. A susceptible breed, the Dorper,
+was chosen to provide a direct comparison with the Red Maasai. The
+Dorper is well-adapted to this area and is also larger than the Red
+Maasai, and this makes these sheep attractive to farmers.
+</p>
+<p>Throughout six years from 1991 to 1996 Dorper (D), Red Maasai (R) and
+Red Maasai x Dorper crossed ewes were mated to Red Maasai and Dorper
+rams to produce a number of different lamb genotypes. For the purposes
+of this example, only the following four offspring genotypes are
+considered (Sire x Dam): D x D, D x R, R x D and R x R.
+</p>
+<p>Records are missing in 182 of the lambs, mostly because of earlier death.
+</p>
+
+
+<h3>Source</h3>
+
+ 
+<p>Mixed model analysis for the estimation of components of genetic
+variation in lamb weaning weight. International Livestock Research Institute.
+Permanent link: https://hdl.handle.net/10568/10364
+https://biometrics.ilri.org/CS/case
+Retrieved Dec 2011.
+</p>
+<p>Used via license: Creative Commons BY-NC-SA 3.0.
+</p>
+
+
+<h3>References</h3>
+
+<p>Baker, RL and Nagda, S. and Rodriguez-Zas, SL and Southey, BR and
+Audho, JO and Aduda, EO and Thorpe, W. (2003).
+Resistance and resilience to gastro-intestinal nematode parasites and
+relationships with productivity of Red Maasai, Dorper and Red Maasai x
+Dorper crossbred lambs in the sub-humid tropics.
+Animal Science, 76, 119-136.
+https://doi.org/10.1017/S1357729800053388
+</p>
+<p>Gota Morota, Hao Cheng, Dianne Cook, Emi Tanaka (2021).
+ASAS-NANP SYMPOSIUM: prospects for interactive and dynamic graphics in
+the era of data-rich animal science.
+Journal of Animal Science, Volume 99, Issue 2, February 2021, skaa402.
+https://doi.org/10.1093/jas/skaa402
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+  library(agridat)
+  data(ilri.sheep)
+  dat &lt;- ilri.sheep
+  dat &lt;- transform(dat, lamb=factor(lamb), ewe=factor(ewe), ram=factor(ram),
+                   year=factor(year))
+  # dl is linear covariate, same as damage, but truncated to [2,8]
+  dat &lt;- within(dat, {
+    dl &lt;- damage
+    dl &lt;- ifelse(dl &lt; 3, 2, dl)
+    dl &lt;- ifelse(dl &gt; 7, 8, dl)
+    dq &lt;- dl^2
+  })
+
+  dat &lt;- subset(dat, !is.na(weanage))
+
+  # EDA
+  libs(lattice)
+  ## bwplot(weanwt ~ year, dat, main="ilri.sheep", xlab="year", ylab="Wean weight",
+  ##        panel=panel.violin) # Year effect
+  bwplot(weanwt ~ factor(dl), dat,
+         main="ilri.sheep", xlab="Dam age", ylab="Wean weight") # Dam age effect
+  # bwplot(weanwt ~ gen, dat,
+  #        main="ilri.sheep", xlab="Genotype", ylab="Wean weight") # Genotype differences
+  xyplot(weanwt ~ weanage, dat, type=c('p','smooth'),
+         main="ilri.sheep", xlab="Wean age", ylab="Wean weight") # Age covariate
+
+  # case study page 4.18
+  lm1 &lt;- lm(weanwt ~ year + sex + weanage + dl + dq + ewegen + ramgen, data=dat)
+  summary(lm1)
+  anova(lm1)
+
+  # ----------
+
+  libs(lme4)
+  lme1 &lt;- lmer(weanwt ~ year + sex + weanage + dl + dq + ewegen + ramgen +
+                 (1|ewe) + (1|ram), data=dat)
+  print(lme1, corr=FALSE)
+  lme2 &lt;- lmer(weanwt ~ year + sex + weanage + dl + dq + ewegen + ramgen +
+                 (1|ewe), data=dat)
+  lme3 &lt;- lmer(weanwt ~ year + sex + weanage + dl + dq + ewegen + ramgen +
+                 (1|ram), data=dat)
+  anova(lme1, lme2,  lme3)
+
+  # ----------
+
+  if(require("asreml", quietly=TRUE)){
+    libs(asreml,lucid)
+    # case study page 4.20
+    m1 &lt;- asreml(weanwt ~ year + sex + weanage + dl + dq + ramgen + ewegen,
+                 data=dat)
+    # wald(m1)
+  
+    # case study page 4.26
+    m2 &lt;- asreml(weanwt ~ year + sex + weanage + dl + dq + ramgen + ewegen,
+                 random = ~ ram + ewe, data=dat)
+    # wald(m2)
+    
+    # case study page 4.37, year means
+    # predict(m2, data=dat, classify="year")
+    ##   year predicted.value standard.error est.status
+    ## 1   91       12.638564      0.2363652  Estimable
+    ## 2   92       11.067659      0.2285252  Estimable
+    ## 3   93       11.561932      0.1809891  Estimable
+    ## 4   94        9.636058      0.2505478  Estimable
+    ## 5   95        9.350247      0.2346849  Estimable
+    ## 6   96       10.188482      0.2755387  Estimable
+  }
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

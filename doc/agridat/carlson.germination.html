@@ -1,0 +1,113 @@
+<!DOCTYPE html><html><head><title>R: Germination of alfalfa seeds at various salt concentrations</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>carlson.germination</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Germination of alfalfa seeds at various salt concentrations
+</h2>
+
+<h3>Description</h3>
+
+<p>Germination of alfalfa seeds at various salt concentrations
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("carlson.germination")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 120 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype factor, 15 levels</p>
+</dd>
+<dt><code>germ</code></dt><dd><p>germination percent, 0-100</p>
+</dd>
+<dt><code>nacl</code></dt><dd><p>salt concentration percent, 0-2</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data are means averaged over 5, 10, 15, and 20 day counts.
+Germination is expressed as a percent of the no-salt control to
+account for differences in germination among the cultivars.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Carlson, JR and Ditterline, RL and Martin, JM and Sands, DC and Lund,
+RE. (1983).
+Alfalfa Seed Germination in Antibiotic Agar Containing NaCl.
+<em>Crop science</em>, 23, 882-885.
+https://doi.org/10.2135/cropsci1983.0011183X002300050016x
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(carlson.germination)
+dat &lt;- carlson.germination
+dat$germ &lt;- dat$germ/100 # Convert to percent
+
+# Separate response curve for each genotype.
+# Really, we should use a glmm with random int/slope for each genotype
+m1 &lt;- glm(germ~ 0 + gen*nacl, data=dat, family=quasibinomial)
+
+# Plot data and fitted model
+libs(latticeExtra)
+newd &lt;- data.frame(expand.grid(gen=levels(dat$gen), nacl=seq(0,2,length=100)))
+newd$pred &lt;- predict(m1, newd, type="response")
+xyplot(germ~nacl|gen, dat, as.table=TRUE, main="carlson.germination",
+       xlab="Percent NaCl", ylab="Fraction germinated") +
+xyplot(pred~nacl|gen, newd, type='l', grid=list(h=1,v=0))
+
+
+# Calculate LD50 values.  Note, Carlson et al used quadratics, not glm.
+# MASS::dose.p cannot handle multiple slopes, so do a separate fit for
+# each genotype.  Results are vaguely similar to Carlson table 5.
+## libs(MASS)
+## for(ii in unique(dat$gen)){
+##   cat("\n", ii, "\n")
+##   mm &lt;- glm(germ ~ 1 + nacl, data=dat, subset=gen==ii, family=quasibinomial(link="probit"))
+##   print(dose.p(mm))
+## }
+##              Dose         SE
+## Anchor    1.445728  0.05750418
+## Apollo    1.305804  0.04951644
+## Baker     1.444153  0.07653989
+## Drylander 1.351201  0.03111795
+## Grimm     1.395735  0.04206377
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

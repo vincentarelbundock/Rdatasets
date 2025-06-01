@@ -1,0 +1,1562 @@
+rownames,price,rating,reviews,room_type,accommodates,bedrooms,minimum_stay,neighborhood,district,walk_score,transit_score,bike_score
+1,85,5,6,Private room,2,1,1,Albany Park,Far North,87,62,68
+2,35,5,8,Private room,1,1,1,Albany Park,Far North,87,62,68
+3,175,4.5,7,Entire home/apt,4,2,2,Albany Park,Far North,87,62,68
+4,75,5,52,Private room,2,1,1,Albany Park,Far North,87,62,68
+5,160,5,3,Entire home/apt,6,2,1,Albany Park,Far North,87,62,68
+6,60,5,5,Private room,1,1,1,Albany Park,Far North,87,62,68
+7,39,5,8,Private room,2,1,3,Albany Park,Far North,87,62,68
+8,65,5,25,Private room,2,1,2,Albany Park,Far North,87,62,68
+9,47,4.5,7,Private room,2,1,1,Albany Park,Far North,87,62,68
+10,100,4.5,24,Entire home/apt,6,2,,Albany Park,Far North,87,62,68
+11,150,4.5,8,Entire home/apt,6,2,5,Albany Park,Far North,87,62,68
+12,38,5,3,Private room,1,1,10,Albany Park,Far North,87,62,68
+13,87,5,10,Private room,4,1,2,Albany Park,Far North,87,62,68
+14,39,5,15,Private room,3,1,1,Albany Park,Far North,87,62,68
+15,73,5,3,Entire home/apt,4,2,2,Albany Park,Far North,87,62,68
+16,150,5,6,Entire home/apt,6,3,2,Albany Park,Far North,87,62,68
+17,48,5,5,Private room,2,1,1,Albany Park,Far North,87,62,68
+18,84,5,18,Entire home/apt,4,0,,Albany Park,Far North,87,62,68
+19,97,5,3,Entire home/apt,4,1,3,Albany Park,Far North,87,62,68
+20,65,5,4,Private room,2,1,1,Albany Park,Far North,87,62,68
+21,180,5,9,Entire home/apt,4,2,1,Albany Park,Far North,87,62,68
+22,149,5,13,Entire home/apt,6,2,5,Albany Park,Far North,87,62,68
+23,89,5,22,Private room,2,1,1,Albany Park,Far North,87,62,68
+24,150,4.5,20,Entire home/apt,8,3,,Albany Park,Far North,87,62,68
+25,106,4,40,Entire home/apt,4,1,2,Albany Park,Far North,87,62,68
+26,50,5,4,Private room,2,1,,Albany Park,Far North,87,62,68
+27,75,4.5,45,Private room,2,1,1,Albany Park,Far North,87,62,68
+28,79,4.5,47,Entire home/apt,4,2,1,Albany Park,Far North,87,62,68
+29,45,5,13,Private room,1,1,1,Albany Park,Far North,87,62,68
+30,66,5,5,Private room,2,1,1,Albany Park,Far North,87,62,68
+31,35,5,8,Private room,2,1,1,Albany Park,Far North,87,62,68
+32,40,5,15,Private room,2,1,2,Albany Park,Far North,87,62,68
+33,85,5,37,Entire home/apt,2,1,3,Albany Park,Far North,87,62,68
+34,50,5,16,Private room,2,1,1,Albany Park,Far North,87,62,68
+35,37,4.5,14,Private room,2,1,3,Albany Park,Far North,87,62,68
+36,75,4.5,80,Private room,2,1,1,Albany Park,Far North,87,62,68
+37,60,5,10,Private room,2,1,2,Albany Park,Far North,87,62,68
+38,100,4.5,10,Entire home/apt,5,2,3,Albany Park,Far North,87,62,68
+39,150,4.5,19,Entire home/apt,6,3,1,Albany Park,Far North,87,62,68
+40,39,5,21,Private room,4,1,1,Albany Park,Far North,87,62,68
+41,94,5,52,Entire home/apt,4,2,1,Albany Park,Far North,87,62,68
+42,89,5,9,Entire home/apt,4,1,,Albany Park,Far North,87,62,68
+43,49,4.5,4,Private room,8,1,1,Albany Park,Far North,87,62,68
+44,114,4.5,45,Entire home/apt,4,2,1,Albany Park,Far North,87,62,68
+45,40,4.5,9,Private room,2,1,1,Albany Park,Far North,87,62,68
+46,80,4.5,14,Private room,4,1,1,Albany Park,Far North,87,62,68
+47,95,5,5,Entire home/apt,5,2,2,Albany Park,Far North,87,62,68
+48,87,5,16,Entire home/apt,2,0,1,Albany Park,Far North,87,62,68
+49,100,5,33,Entire home/apt,2,1,3,Albany Park,Far North,87,62,68
+50,250,5,4,Entire home/apt,7,4,1,Albany Park,Far North,87,62,68
+51,70,4,4,Private room,2,1,1,Albany Park,Far North,87,62,68
+52,50,5,30,Private room,2,1,1,Archer Heights,Southwest,74,57,61
+53,50,4.5,29,Private room,2,1,1,Archer Heights,Southwest,74,57,61
+54,100,4.5,43,Entire home/apt,6,3,1,Archer Heights,Southwest,74,57,61
+55,40,5,5,Shared room,1,1,1,Archer Heights,Southwest,74,57,61
+56,45,4.5,36,Private room,2,1,1,Archer Heights,Southwest,74,57,61
+57,106,3.5,3,Entire home/apt,6,2,1,Avondale,North,84,68,77
+58,275,5,9,Entire home/apt,6,3,,Avondale,North,84,68,77
+59,85,5,51,Private room,2,1,,Avondale,North,84,68,77
+60,70,5,3,Private room,4,1,1,Avondale,North,84,68,77
+61,89,5,23,Entire home/apt,2,1,1,Avondale,North,84,68,77
+62,100,5,6,Entire home/apt,5,2,2,Avondale,North,84,68,77
+63,69,4.5,46,Entire home/apt,4,1,1,Avondale,North,84,68,77
+64,105,5,59,Entire home/apt,4,1,3,Avondale,North,84,68,77
+65,399,4.5,27,Entire home/apt,8,3,2,Avondale,North,84,68,77
+66,35,4.5,31,Shared room,2,1,1,Avondale,North,84,68,77
+67,110,5,46,Private room,2,1,1,Avondale,North,84,68,77
+68,79,5,58,Entire home/apt,2,0,1,Avondale,North,84,68,77
+69,177,5,44,Entire home/apt,8,2,,Avondale,North,84,68,77
+70,78,5,4,Entire home/apt,3,1,1,Avondale,North,84,68,77
+71,150,5,4,Entire home/apt,4,2,1,Avondale,North,84,68,77
+72,110,4.5,22,Entire home/apt,2,1,7,Avondale,North,84,68,77
+73,70,5,4,Private room,2,1,1,Avondale,North,84,68,77
+74,75,4.5,59,Entire home/apt,4,2,2,Avondale,North,84,68,77
+75,35,4.5,10,Private room,2,1,1,Avondale,North,84,68,77
+76,500,5,3,Entire home/apt,6,3,1,Avondale,North,84,68,77
+77,90,4.5,15,Private room,2,1,1,Avondale,North,84,68,77
+78,145,5,18,Entire home/apt,6,2,3,Avondale,North,84,68,77
+79,80,5,43,Private room,2,1,,Avondale,North,84,68,77
+80,44,4.5,3,Private room,2,1,1,Avondale,North,84,68,77
+81,115,5,29,Entire home/apt,8,2,2,Avondale,North,84,68,77
+82,75,5,3,Entire home/apt,2,1,1,Avondale,North,84,68,77
+83,115,5,79,Entire home/apt,8,2,2,Avondale,North,84,68,77
+84,40,5,3,Private room,2,1,1,Avondale,North,84,68,77
+85,72,5,4,Entire home/apt,3,1,5,Avondale,North,84,68,77
+86,69,4.5,27,Private room,2,1,,Avondale,North,84,68,77
+87,55,4.5,52,Private room,2,1,1,Avondale,North,84,68,77
+88,85,5,7,Entire home/apt,2,1,2,Avondale,North,84,68,77
+89,75,5,12,Entire home/apt,4,2,,Avondale,North,84,68,77
+90,499,5,6,Entire home/apt,16,9,2,Avondale,North,84,68,77
+91,55,5,66,Private room,4,1,1,Avondale,North,84,68,77
+92,75,5,26,Private room,3,1,1,Avondale,North,84,68,77
+93,139,5,4,Entire home/apt,8,3,2,Avondale,North,84,68,77
+94,65,5,22,Private room,3,1,,Avondale,North,84,68,77
+95,150,5,8,Entire home/apt,6,3,1,Avondale,North,84,68,77
+96,35,5,7,Shared room,1,1,1,Avondale,North,84,68,77
+97,29,5,4,Shared room,3,1,1,Avondale,North,84,68,77
+98,159,5,9,Entire home/apt,8,3,2,Avondale,North,84,68,77
+99,135,4.5,4,Entire home/apt,6,3,2,Avondale,North,84,68,77
+100,110,5,40,Private room,2,1,1,Avondale,North,84,68,77
+101,119,5,21,Entire home/apt,6,2,,Avondale,North,84,68,77
+102,152,5,33,Entire home/apt,8,2,,Avondale,North,84,68,77
+103,20,5,34,Shared room,1,1,1,Avondale,North,84,68,77
+104,143,4.5,6,Entire home/apt,8,3,2,Avondale,North,84,68,77
+105,70,4.5,48,Private room,4,1,2,Avondale,North,84,68,77
+106,29,4.5,10,Private room,2,1,1,Avondale,North,84,68,77
+107,30,4.5,3,Private room,1,1,1,Avondale,North,84,68,77
+108,46,4.5,12,Shared room,7,1,1,Avondale,North,84,68,77
+109,85,4.5,127,Entire home/apt,3,2,2,Avondale,North,84,68,77
+110,70,5,31,Private room,2,1,1,Avondale,North,84,68,77
+111,130,4.5,20,Entire home/apt,8,2,1,Avondale,North,84,68,77
+112,95,4.5,38,Entire home/apt,2,1,4,Avondale,North,84,68,77
+113,299,5,13,Entire home/apt,5,2,2,Avondale,North,84,68,77
+114,45,4.5,75,Private room,2,1,1,Avondale,North,84,68,77
+115,130,5,49,Entire home/apt,3,1,2,Avondale,North,84,68,77
+116,99,5,25,Entire home/apt,4,2,1,Avondale,North,84,68,77
+117,90,5,61,Private room,2,1,1,Beverly,Far Southwest,64,50,68
+118,60,5,8,Private room,4,1,1,Beverly,Far Southwest,64,50,68
+119,115,4.5,58,Entire home/apt,5,1,2,Bridgeport,South,81,61,82
+120,95,3.5,11,Entire home/apt,4,3,1,Bridgeport,South,81,61,82
+121,55,5,10,Private room,2,1,1,Bridgeport,South,81,61,82
+122,65,4.5,14,Entire home/apt,7,3,3,Bridgeport,South,81,61,82
+123,29,4.5,39,Private room,2,1,2,Bridgeport,South,81,61,82
+124,42,5,3,Private room,2,1,1,Bridgeport,South,81,61,82
+125,190,4,5,Entire home/apt,6,2,,Bridgeport,South,81,61,82
+126,70,3.5,8,Entire home/apt,4,2,2,Bridgeport,South,81,61,82
+127,49,4.5,24,Private room,2,1,1,Bridgeport,South,81,61,82
+128,58,4.5,145,Private room,2,1,2,Bridgeport,South,81,61,82
+129,48,4.5,41,Private room,4,1,1,Bridgeport,South,81,61,82
+130,75,5,27,Private room,2,1,1,Bridgeport,South,81,61,82
+131,159,5,20,Entire home/apt,5,2,1,Bridgeport,South,81,61,82
+132,29,5,37,Private room,2,1,2,Bridgeport,South,81,61,82
+133,91,4.5,68,Entire home/apt,5,2,,Bridgeport,South,81,61,82
+134,78,5,23,Private room,4,1,1,Bridgeport,South,81,61,82
+135,62,5,5,Private room,2,1,1,Bridgeport,South,81,61,82
+136,100,4.5,4,Entire home/apt,4,1,1,Bridgeport,South,81,61,82
+137,110,4.5,18,Entire home/apt,8,2,1,Bridgeport,South,81,61,82
+138,95,4,9,Entire home/apt,7,3,3,Bridgeport,South,81,61,82
+139,100,5,75,Entire home/apt,6,1,3,Bridgeport,South,81,61,82
+140,65,5,24,Private room,2,1,1,Bridgeport,South,81,61,82
+141,55,5,4,Private room,2,1,1,Bridgeport,South,81,61,82
+142,45,4.5,16,Shared room,2,1,1,Bridgeport,South,81,61,82
+143,37,4.5,34,Private room,1,1,3,Bridgeport,South,81,61,82
+144,20,4,10,Private room,3,1,1,Bridgeport,South,81,61,82
+145,190,5,5,Entire home/apt,6,3,,Bridgeport,South,81,61,82
+146,145,4.5,4,Entire home/apt,3,2,2,Bridgeport,South,81,61,82
+147,76,5,13,Private room,3,1,2,Bridgeport,South,81,61,82
+148,50,5,4,Private room,2,1,1,Bridgeport,South,81,61,82
+149,110,5,59,Entire home/apt,6,2,3,Bridgeport,South,81,61,82
+150,35,4.5,17,Private room,2,1,1,Bridgeport,South,81,61,82
+151,80,4.5,26,Private room,3,1,1,Bridgeport,South,81,61,82
+152,42,3.5,6,Private room,2,1,1,Bridgeport,South,81,61,82
+153,55,5,20,Private room,6,1,2,Bridgeport,South,81,61,82
+154,275,4.5,11,Entire home/apt,10,4,2,Bridgeport,South,81,61,82
+155,36,5,33,Private room,1,1,1,Bridgeport,South,81,61,82
+156,34,4.5,31,Private room,1,1,2,Bridgeport,South,81,61,82
+157,114,5,31,Entire home/apt,3,1,,Bridgeport,South,81,61,82
+158,75,4.5,30,Entire home/apt,7,3,3,Bridgeport,South,81,61,82
+159,115,4.5,25,Entire home/apt,5,2,2,Bridgeport,South,81,61,82
+160,84,4,11,Entire home/apt,2,2,3,Bridgeport,South,81,61,82
+161,58,5,98,Private room,2,1,1,Bridgeport,South,81,61,82
+162,136,4.5,10,Entire home/apt,6,2,2,Bridgeport,South,81,61,82
+163,62,5,4,Private room,2,1,1,Bridgeport,South,81,61,82
+164,42,4.5,24,Private room,3,1,1,Bridgeport,South,81,61,82
+165,55,5,21,Entire home/apt,2,1,1,Bridgeport,South,81,61,82
+166,65,5,17,Private room,3,1,3,Bridgeport,South,81,61,82
+167,90,4.5,47,Entire home/apt,6,2,,Bridgeport,South,81,61,82
+168,35,5,4,Private room,1,1,1,Bridgeport,South,81,61,82
+169,210,5,7,Entire home/apt,8,3,3,Brighton Park,Southwest,72,60,65
+170,56,5,26,Entire home/apt,5,1,1,Brighton Park,Southwest,72,60,65
+171,50,5,3,Shared room,5,1,1,Brighton Park,Southwest,72,60,65
+172,35,4.5,52,Private room,4,1,2,Burnside,Far Southeast,63,66,49
+173,30,4.5,152,Private room,2,1,2,Burnside,Far Southeast,63,66,49
+174,16,3.5,14,Private room,1,1,1,Calumet Heights,Far Southeast,63,58,54
+175,16,4,13,Private room,1,1,1,Calumet Heights,Far Southeast,63,58,54
+176,100,4.5,65,Entire home/apt,4,1,4,East Garfield Park,West,78,73,74
+177,169,4.5,22,Entire home/apt,12,4,2,East Garfield Park,West,78,73,74
+178,69,5,31,Private room,2,1,1,East Garfield Park,West,78,73,74
+179,109,4.5,8,Entire home/apt,8,2,1,East Garfield Park,West,78,73,74
+180,175,5,3,Private room,1,1,1,East Garfield Park,West,78,73,74
+181,95,3.5,29,Entire home/apt,8,2,2,East Garfield Park,West,78,73,74
+182,109,4.5,15,Entire home/apt,8,2,1,East Garfield Park,West,78,73,74
+183,79,4.5,56,Entire home/apt,6,2,1,East Garfield Park,West,78,73,74
+184,79,4.5,36,Private room,6,1,1,East Garfield Park,West,78,73,74
+185,54,4.5,22,Private room,4,1,1,East Garfield Park,West,78,73,74
+186,52,4.5,63,Private room,4,1,1,East Garfield Park,West,78,73,74
+187,48,4.5,48,Private room,2,1,1,East Garfield Park,West,78,73,74
+188,133,4.5,14,Entire home/apt,6,2,1,East Garfield Park,West,78,73,74
+189,88,4,11,Entire home/apt,4,1,1,East Garfield Park,West,78,73,74
+190,35,4.5,11,Private room,5,1,1,East Garfield Park,West,78,73,74
+191,36,4.5,39,Private room,2,1,1,East Garfield Park,West,78,73,74
+192,49,4.5,64,Private room,2,1,1,East Garfield Park,West,78,73,74
+193,165,5,32,Private room,8,1,1,East Garfield Park,West,78,73,74
+194,85,4.5,30,Entire home/apt,6,3,1,East Garfield Park,West,78,73,74
+195,89,5,4,Private room,2,1,2,East Garfield Park,West,78,73,74
+196,95,4.5,76,Entire home/apt,7,3,2,East Garfield Park,West,78,73,74
+197,42,4.5,12,Private room,2,1,1,East Garfield Park,West,78,73,74
+198,140,5,22,Entire home/apt,2,2,1,East Garfield Park,West,78,73,74
+199,55,5,73,Private room,2,1,1,East Garfield Park,West,78,73,74
+200,55,5,41,Private room,2,1,1,East Garfield Park,West,78,73,74
+201,55,4.5,141,Entire home/apt,4,0,2,East Garfield Park,West,78,73,74
+202,50,3.5,3,Private room,2,1,,East Garfield Park,West,78,73,74
+203,98,4.5,24,Entire home/apt,6,1,1,East Garfield Park,West,78,73,74
+204,55,5,86,Private room,2,1,1,East Garfield Park,West,78,73,74
+205,79,4.5,205,Entire home/apt,5,1,1,East Garfield Park,West,78,73,74
+206,96,4.5,22,Entire home/apt,6,0,1,East Garfield Park,West,78,73,74
+207,50,5,21,Private room,2,1,2,East Garfield Park,West,78,73,74
+208,100,5,17,Private room,2,1,1,East Garfield Park,West,78,73,74
+209,49,5,7,Private room,2,1,2,East Garfield Park,West,78,73,74
+210,59,5,29,Private room,2,1,2,East Garfield Park,West,78,73,74
+211,120,4,4,Entire home/apt,6,2,2,East Garfield Park,West,78,73,74
+212,88,4.5,26,Entire home/apt,6,2,1,East Garfield Park,West,78,73,74
+213,125,5,41,Entire home/apt,4,2,2,Edgewater,Far North,89,72,85
+214,95,5,54,Entire home/apt,4,1,2,Edgewater,Far North,89,72,85
+215,194,5,20,Entire home/apt,6,3,3,Edgewater,Far North,89,72,85
+216,250,5,5,Entire home/apt,8,2,2,Edgewater,Far North,89,72,85
+217,100,4.5,4,Entire home/apt,4,2,4,Edgewater,Far North,89,72,85
+218,44,5,5,Private room,3,1,2,Edgewater,Far North,89,72,85
+219,50,4,8,Entire home/apt,6,1,1,Edgewater,Far North,89,72,85
+220,64,5,24,Private room,2,1,3,Edgewater,Far North,89,72,85
+221,100,5,18,Private room,2,1,1,Edgewater,Far North,89,72,85
+222,60,5,284,Private room,2,1,1,Edgewater,Far North,89,72,85
+223,95,5,13,Entire home/apt,4,1,1,Edgewater,Far North,89,72,85
+224,125,4.5,3,Entire home/apt,5,2,1,Edgewater,Far North,89,72,85
+225,51,5,14,Entire home/apt,2,0,3,Edgewater,Far North,89,72,85
+226,120,5,11,Private room,2,1,1,Edgewater,Far North,89,72,85
+227,105,4.5,27,Entire home/apt,4,1,2,Edgewater,Far North,89,72,85
+228,125,5,18,Entire home/apt,2,1,1,Edgewater,Far North,89,72,85
+229,65,5,44,Entire home/apt,2,0,2,Edgewater,Far North,89,72,85
+230,70,5,47,Private room,2,1,2,Edgewater,Far North,89,72,85
+231,75,4.5,35,Entire home/apt,2,1,1,Edgewater,Far North,89,72,85
+232,44,5,21,Private room,1,1,3,Edgewater,Far North,89,72,85
+233,65,5,16,Private room,1,1,2,Edgewater,Far North,89,72,85
+234,120,4.5,173,Entire home/apt,4,2,,Edgewater,Far North,89,72,85
+235,70,5,6,Entire home/apt,2,0,2,Edgewater,Far North,89,72,85
+236,70,4.5,16,Private room,2,1,1,Edgewater,Far North,89,72,85
+237,90,5,27,Entire home/apt,2,1,2,Edgewater,Far North,89,72,85
+238,199,5,9,Entire home/apt,8,2,2,Edgewater,Far North,89,72,85
+239,42,5,83,Private room,2,1,1,Edgewater,Far North,89,72,85
+240,38,5,8,Private room,2,1,1,Edgewater,Far North,89,72,85
+241,125,5,8,Entire home/apt,3,1,1,Edgewater,Far North,89,72,85
+242,85,4.5,33,Entire home/apt,4,1,1,Edgewater,Far North,89,72,85
+243,60,5,14,Private room,2,1,1,Edgewater,Far North,89,72,85
+244,96,5,52,Entire home/apt,2,1,2,Edgewater,Far North,89,72,85
+245,124,5,7,Entire home/apt,2,1,1,Edgewater,Far North,89,72,85
+246,170,5,117,Entire home/apt,7,3,2,Edgewater,Far North,89,72,85
+247,85,5,13,Private room,2,1,1,Edgewater,Far North,89,72,85
+248,150,4.5,67,Entire home/apt,6,3,1,Edison Park,Far North,66,46,56
+249,35,3.5,3,Private room,2,1,1,Englewood,Southwest,70,65,64
+250,20,4.5,85,Shared room,1,1,1,Gage Park,Southwest,73,60,63
+251,20,4.5,62,Shared room,1,1,1,Gage Park,Southwest,73,60,63
+252,25,4.5,42,Private room,2,1,1,Gage Park,Southwest,73,60,63
+253,30,4.5,31,Private room,2,1,1,Gage Park,Southwest,73,60,63
+254,35,5,51,Private room,2,1,1,Gage Park,Southwest,73,60,63
+255,25,4.5,29,Private room,2,1,1,Gage Park,Southwest,73,60,63
+256,33,5,3,Private room,3,1,1,Hegewisch,Far Southeast,52,34,65
+257,79,4.5,12,Entire home/apt,3,2,1,Hegewisch,Far Southeast,52,34,65
+258,125,4.5,43,Entire home/apt,4,2,3,Hermosa,Northwest,79,60,67
+259,55,5,14,Private room,4,1,1,Hermosa,Northwest,79,60,67
+260,195,5,3,Entire home/apt,6,2,1,Humboldt Park,West,84,67,82
+261,80,4.5,55,Entire home/apt,6,3,1,Humboldt Park,West,84,67,82
+262,39,3.5,3,Entire home/apt,12,3,,Humboldt Park,West,84,67,82
+263,130,5,33,Entire home/apt,5,2,1,Humboldt Park,West,84,67,82
+264,175,5,34,Entire home/apt,4,2,3,Humboldt Park,West,84,67,82
+265,65,4.5,27,Private room,2,1,1,Humboldt Park,West,84,67,82
+266,70,4.5,11,Entire home/apt,4,2,1,Humboldt Park,West,84,67,82
+267,50,4.5,138,Private room,2,1,1,Humboldt Park,West,84,67,82
+268,77,4.5,9,Entire home/apt,2,1,1,Humboldt Park,West,84,67,82
+269,85,4.5,23,Entire home/apt,6,1,1,Humboldt Park,West,84,67,82
+270,90,5,3,Entire home/apt,4,2,1,Humboldt Park,West,84,67,82
+271,115,5,137,Entire home/apt,5,3,3,Humboldt Park,West,84,67,82
+272,50,4.5,7,Private room,1,1,1,Humboldt Park,West,84,67,82
+273,75,3,6,Entire home/apt,10,3,1,Humboldt Park,West,84,67,82
+274,39,3.5,10,Entire home/apt,10,3,,Humboldt Park,West,84,67,82
+275,80,4.5,17,Private room,2,1,1,Humboldt Park,West,84,67,82
+276,115,5,4,Entire home/apt,2,1,1,Humboldt Park,West,84,67,82
+277,90,5,33,Entire home/apt,5,2,1,Humboldt Park,West,84,67,82
+278,335,4.5,3,Entire home/apt,10,3,2,Humboldt Park,West,84,67,82
+279,126,4.5,199,Entire home/apt,10,3,,Humboldt Park,West,84,67,82
+280,37,5,4,Private room,4,1,2,Humboldt Park,West,84,67,82
+281,70,5,5,Entire home/apt,2,1,1,Humboldt Park,West,84,67,82
+282,65,5,6,Private room,3,1,2,Humboldt Park,West,84,67,82
+283,70,5,6,Private room,2,1,3,Humboldt Park,West,84,67,82
+284,40,5,9,Shared room,2,1,1,Humboldt Park,West,84,67,82
+285,65,5,7,Private room,2,1,1,Humboldt Park,West,84,67,82
+286,100,5,4,Private room,2,1,1,Humboldt Park,West,84,67,82
+287,130,5,44,Entire home/apt,5,2,1,Humboldt Park,West,84,67,82
+288,85,4.5,5,Private room,2,1,1,Humboldt Park,West,84,67,82
+289,69,5,29,Entire home/apt,2,1,1,Humboldt Park,West,84,67,82
+290,110,4,7,Entire home/apt,4,2,1,Humboldt Park,West,84,67,82
+291,70,5,11,Private room,2,1,3,Humboldt Park,West,84,67,82
+292,129,4.5,149,Entire home/apt,10,3,1,Humboldt Park,West,84,67,82
+293,45,5,4,Private room,2,1,1,Humboldt Park,West,84,67,82
+294,85,5,80,Private room,5,1,1,Humboldt Park,West,84,67,82
+295,120,5,25,Entire home/apt,4,1,2,Humboldt Park,West,84,67,82
+296,60,5,3,Private room,2,1,1,Humboldt Park,West,84,67,82
+297,39,4,9,Entire home/apt,9,3,2,Humboldt Park,West,84,67,82
+298,99,4,47,Entire home/apt,6,2,1,Humboldt Park,West,84,67,82
+299,99,5,3,Entire home/apt,7,3,2,Humboldt Park,West,84,67,82
+300,99,4.5,33,Entire home/apt,6,3,,Humboldt Park,West,84,67,82
+301,55,5,8,Private room,1,1,1,Humboldt Park,West,84,67,82
+302,60,5,5,Private room,2,1,2,Humboldt Park,West,84,67,82
+303,52,5,11,Private room,1,1,1,Humboldt Park,West,84,67,82
+304,42,5,8,Private room,2,1,1,Humboldt Park,West,84,67,82
+305,58,5,61,Private room,4,1,2,Humboldt Park,West,84,67,82
+306,55,5,59,Private room,2,1,1,Humboldt Park,West,84,67,82
+307,159,4.5,20,Entire home/apt,6,3,,Humboldt Park,West,84,67,82
+308,50,5,7,Private room,2,1,1,Humboldt Park,West,84,67,82
+309,45,5,80,Private room,2,1,3,Humboldt Park,West,84,67,82
+310,40,4.5,3,Shared room,1,1,1,Humboldt Park,West,84,67,82
+311,50,4.5,49,Private room,12,1,1,Humboldt Park,West,84,67,82
+312,53,4.5,44,Private room,2,1,1,Humboldt Park,West,84,67,82
+313,59,4.5,20,Private room,2,1,1,Humboldt Park,West,84,67,82
+314,149,5,3,Entire home/apt,4,1,1,Humboldt Park,West,84,67,82
+315,169,4.5,4,Entire home/apt,5,2,1,Humboldt Park,West,84,67,82
+316,62,5,42,Private room,2,1,1,Humboldt Park,West,84,67,82
+317,60,5,26,Private room,2,1,1,Humboldt Park,West,84,67,82
+318,80,5,15,Entire home/apt,2,0,2,Humboldt Park,West,84,67,82
+319,60,4.5,11,Private room,4,1,2,Humboldt Park,West,84,67,82
+320,50,5,9,Private room,2,1,1,Humboldt Park,West,84,67,82
+321,50,5,4,Private room,2,1,1,Humboldt Park,West,84,67,82
+322,500,5,38,Entire home/apt,7,3,2,Humboldt Park,West,84,67,82
+323,70,5,26,Private room,2,1,1,Humboldt Park,West,84,67,82
+324,45,5,7,Private room,2,1,1,Humboldt Park,West,84,67,82
+325,120,5,5,Private room,4,1,1,Humboldt Park,West,84,67,82
+326,82,5,3,Entire home/apt,6,1,1,Humboldt Park,West,84,67,82
+327,85,5,40,Entire home/apt,4,2,2,Humboldt Park,West,84,67,82
+328,60,4.5,32,Private room,1,1,1,Humboldt Park,West,84,67,82
+329,120,4.5,53,Entire home/apt,3,1,1,Humboldt Park,West,84,67,82
+330,55,5,22,Private room,2,1,2,Humboldt Park,West,84,67,82
+331,70,4.5,4,Private room,2,1,1,Humboldt Park,West,84,67,82
+332,50,5,24,Private room,2,1,2,Humboldt Park,West,84,67,82
+333,115,5,13,Entire home/apt,2,1,2,Humboldt Park,West,84,67,82
+334,70,5,18,Private room,2,1,1,Humboldt Park,West,84,67,82
+335,59,4.5,104,Private room,2,1,2,Humboldt Park,West,84,67,82
+336,66,4,26,Private room,1,1,1,Humboldt Park,West,84,67,82
+337,125,5,32,Entire home/apt,6,2,2,Humboldt Park,West,84,67,82
+338,119,5,22,Entire home/apt,6,2,1,Humboldt Park,West,84,67,82
+339,199,5,4,Entire home/apt,2,1,3,Humboldt Park,West,84,67,82
+340,40,5,13,Private room,1,1,1,Humboldt Park,West,84,67,82
+341,75,4.5,14,Private room,3,1,1,Humboldt Park,West,84,67,82
+342,52,5,14,Private room,2,1,6,Humboldt Park,West,84,67,82
+343,30,5,9,Private room,2,1,1,Humboldt Park,West,84,67,82
+344,39,5,25,Private room,2,1,1,Humboldt Park,West,84,67,82
+345,75,5,48,Private room,2,1,1,Humboldt Park,West,84,67,82
+346,60,5,10,Private room,1,1,1,Humboldt Park,West,84,67,82
+347,45,4.5,7,Private room,4,1,1,Humboldt Park,West,84,67,82
+348,50,4.5,19,Private room,2,1,2,Humboldt Park,West,84,67,82
+349,45,5,12,Private room,2,1,1,Humboldt Park,West,84,67,82
+350,79,5,20,Private room,2,1,1,Humboldt Park,West,84,67,82
+351,140,4.5,5,Entire home/apt,5,2,2,Humboldt Park,West,84,67,82
+352,59,5,3,Private room,2,1,1,Humboldt Park,West,84,67,82
+353,99,4,63,Entire home/apt,8,3,3,Humboldt Park,West,84,67,82
+354,150,5,43,Entire home/apt,6,2,3,Humboldt Park,West,84,67,82
+355,275,4.5,7,Entire home/apt,7,1,1,Humboldt Park,West,84,67,82
+356,70,5,14,Private room,2,1,2,Humboldt Park,West,84,67,82
+357,150,5,15,Entire home/apt,4,2,2,Humboldt Park,West,84,67,82
+358,65,5,175,Entire home/apt,4,0,1,Humboldt Park,West,84,67,82
+359,600,5,36,Entire home/apt,10,3,1,Humboldt Park,West,84,67,82
+360,32,4.5,5,Private room,2,1,1,Humboldt Park,West,84,67,82
+361,90,5,15,Private room,3,1,2,Humboldt Park,West,84,67,82
+362,53,4.5,30,Private room,2,1,1,Humboldt Park,West,84,67,82
+363,41,5,18,Private room,3,1,1,Humboldt Park,West,84,67,82
+364,175,5,73,Entire home/apt,4,2,3,Humboldt Park,West,84,67,82
+365,65,5,4,Private room,2,1,1,Humboldt Park,West,84,67,82
+366,55,5,15,Private room,2,1,2,Humboldt Park,West,84,67,82
+367,140,5,35,Entire home/apt,4,2,1,Humboldt Park,West,84,67,82
+368,149,5,18,Entire home/apt,4,2,1,Humboldt Park,West,84,67,82
+369,65,5,11,Private room,2,1,1,Humboldt Park,West,84,67,82
+370,50,4.5,25,Private room,2,1,1,Humboldt Park,West,84,67,82
+371,97,4.5,13,Entire home/apt,5,2,2,Humboldt Park,West,84,67,82
+372,40,3.5,3,Private room,4,1,1,Humboldt Park,West,84,67,82
+373,59,4.5,12,Private room,2,1,1,Humboldt Park,West,84,67,82
+374,75,5,10,Private room,2,1,1,Humboldt Park,West,84,67,82
+375,39,3.5,13,Entire home/apt,10,3,,Humboldt Park,West,84,67,82
+376,219,5,4,Entire home/apt,5,3,2,Humboldt Park,West,84,67,82
+377,80,5,95,Entire home/apt,6,2,2,Humboldt Park,West,84,67,82
+378,125,5,6,Entire home/apt,4,1,1,Humboldt Park,West,84,67,82
+379,50,4.5,19,Private room,2,1,1,Humboldt Park,West,84,67,82
+380,110,5,72,Entire home/apt,4,2,2,Humboldt Park,West,84,67,82
+381,30,5,4,Private room,2,1,1,Humboldt Park,West,84,67,82
+382,159,5,8,Entire home/apt,4,2,1,Humboldt Park,West,84,67,82
+383,30,4.5,3,Private room,1,1,1,Humboldt Park,West,84,67,82
+384,145,4.5,6,Entire home/apt,6,2,1,Humboldt Park,West,84,67,82
+385,74,5,14,Private room,2,1,1,Humboldt Park,West,84,67,82
+386,90,5,9,Entire home/apt,2,1,2,Humboldt Park,West,84,67,82
+387,34,4.5,4,Private room,2,1,4,Hyde Park,South,86,66,95
+388,34,5,4,Private room,1,1,1,Hyde Park,South,86,66,95
+389,115,4.5,135,Entire home/apt,2,1,2,Hyde Park,South,86,66,95
+390,45,4.5,37,Private room,2,1,2,Hyde Park,South,86,66,95
+391,30,3,8,Private room,1,1,1,Hyde Park,South,86,66,95
+392,53,4.5,46,Private room,2,1,1,Hyde Park,South,86,66,95
+393,98,5,102,Private room,2,1,1,Hyde Park,South,86,66,95
+394,70,5,11,Private room,2,1,1,Hyde Park,South,86,66,95
+395,189,4.5,5,Entire home/apt,4,2,3,Hyde Park,South,86,66,95
+396,70,5,5,Private room,1,1,1,Hyde Park,South,86,66,95
+397,40,5,10,Private room,3,1,1,Hyde Park,South,86,66,95
+398,85,5,5,Entire home/apt,4,1,5,Hyde Park,South,86,66,95
+399,147,3.5,5,Entire home/apt,10,4,2,Hyde Park,South,86,66,95
+400,25,4.5,10,Private room,2,1,1,Hyde Park,South,86,66,95
+401,30,5,3,Private room,2,1,6,Hyde Park,South,86,66,95
+402,250,4.5,6,Entire home/apt,6,3,2,Hyde Park,South,86,66,95
+403,75,5,96,Private room,2,1,1,Hyde Park,South,86,66,95
+404,40,5,6,Private room,1,1,1,Hyde Park,South,86,66,95
+405,95,4,23,Entire home/apt,2,1,3,Hyde Park,South,86,66,95
+406,165,4.5,53,Entire home/apt,6,2,3,Hyde Park,South,86,66,95
+407,40,4.5,3,Private room,2,1,1,Hyde Park,South,86,66,95
+408,77,5,14,Entire home/apt,2,0,1,Hyde Park,South,86,66,95
+409,70,5,5,Shared room,2,1,1,Hyde Park,South,86,66,95
+410,140,5,4,Entire home/apt,2,1,1,Hyde Park,South,86,66,95
+411,125,4,18,Entire home/apt,2,1,7,Hyde Park,South,86,66,95
+412,75,5,6,Private room,3,1,1,Hyde Park,South,86,66,95
+413,94,5,39,Private room,2,1,1,Hyde Park,South,86,66,95
+414,70,5,5,Private room,2,1,1,Hyde Park,South,86,66,95
+415,150,4.5,5,Entire home/apt,3,2,3,Hyde Park,South,86,66,95
+416,84,5,3,Private room,2,1,1,Hyde Park,South,86,66,95
+417,75,5,85,Private room,2,1,2,Hyde Park,South,86,66,95
+418,194,5,53,Entire home/apt,6,3,1,Hyde Park,South,86,66,95
+419,45,4.5,32,Private room,2,1,2,Hyde Park,South,86,66,95
+420,71,4.5,3,Private room,2,1,1,Hyde Park,South,86,66,95
+421,90,5,6,Private room,2,1,2,Hyde Park,South,86,66,95
+422,100,4.5,7,Entire home/apt,4,1,1,Hyde Park,South,86,66,95
+423,37,4,14,Private room,2,1,1,Hyde Park,South,86,66,95
+424,145,4.5,58,Entire home/apt,4,1,2,Hyde Park,South,86,66,95
+425,70,5,31,Private room,2,1,2,Hyde Park,South,86,66,95
+426,60,5,3,Entire home/apt,1,1,2,Hyde Park,South,86,66,95
+427,99,5,28,Entire home/apt,2,1,3,Hyde Park,South,86,66,95
+428,75,4,5,Entire home/apt,4,1,3,Hyde Park,South,86,66,95
+429,88,4.5,7,Entire home/apt,5,2,2,Hyde Park,South,86,66,95
+430,120,4,16,Private room,6,1,1,Hyde Park,South,86,66,95
+431,65,4.5,9,Entire home/apt,3,2,3,Hyde Park,South,86,66,95
+432,95,4.5,25,Entire home/apt,3,1,1,Hyde Park,South,86,66,95
+433,105,4,3,Entire home/apt,4,1,1,Hyde Park,South,86,66,95
+434,68,4.5,3,Private room,2,1,1,Hyde Park,South,86,66,95
+435,90,5,16,Entire home/apt,4,2,1,Hyde Park,South,86,66,95
+436,189,4.5,4,Entire home/apt,5,3,3,Hyde Park,South,86,66,95
+437,29,4.5,10,Private room,2,1,1,Hyde Park,South,86,66,95
+438,95,5,3,Private room,3,1,,Hyde Park,South,86,66,95
+439,125,4.5,4,Entire home/apt,4,2,1,Hyde Park,South,86,66,95
+440,70,5,119,Private room,2,1,1,Hyde Park,South,86,66,95
+441,105,4.5,33,Private room,3,1,1,Hyde Park,South,86,66,95
+442,50,4.5,6,Private room,5,1,1,Hyde Park,South,86,66,95
+443,70,5,56,Private room,2,1,1,Hyde Park,South,86,66,95
+444,55,5,9,Private room,2,1,2,Hyde Park,South,86,66,95
+445,45,4.5,37,Private room,2,1,2,Hyde Park,South,86,66,95
+446,50,4,3,Private room,1,1,2,Hyde Park,South,86,66,95
+447,270,5,12,Entire home/apt,4,2,2,Hyde Park,South,86,66,95
+448,70,5,7,Private room,2,1,1,Hyde Park,South,86,66,95
+449,85,4,6,Entire home/apt,2,1,1,Hyde Park,South,86,66,95
+450,45,4.5,58,Private room,2,1,,Hyde Park,South,86,66,95
+451,50,4.5,9,Private room,2,1,2,Hyde Park,South,86,66,95
+452,65,4.5,14,Entire home/apt,3,0,2,Hyde Park,South,86,66,95
+453,85,5,7,Entire home/apt,6,3,2,Hyde Park,South,86,66,95
+454,100,5,67,Private room,3,1,1,Hyde Park,South,86,66,95
+455,70,5,123,Private room,2,1,1,Hyde Park,South,86,66,95
+456,74,4,4,Private room,1,1,1,Hyde Park,South,86,66,95
+457,40,5,32,Private room,2,1,1,Hyde Park,South,86,66,95
+458,70,5,19,Private room,2,1,2,Hyde Park,South,86,66,95
+459,37,4,24,Private room,2,1,1,Hyde Park,South,86,66,95
+460,75,5,22,Private room,2,1,2,Irving Park,Northwest,85,66,69
+461,350,5,8,Entire home/apt,6,4,1,Irving Park,Northwest,85,66,69
+462,55,5,30,Private room,1,1,1,Irving Park,Northwest,85,66,69
+463,159,4.5,3,Entire home/apt,8,3,,Irving Park,Northwest,85,66,69
+464,500,5,11,Entire home/apt,8,3,1,Irving Park,Northwest,85,66,69
+465,99,5,89,Entire home/apt,4,2,2,Irving Park,Northwest,85,66,69
+466,100,5,6,Private room,3,1,,Irving Park,Northwest,85,66,69
+467,120,5,61,Entire home/apt,6,2,3,Irving Park,Northwest,85,66,69
+468,50,5,4,Private room,2,1,1,Irving Park,Northwest,85,66,69
+469,50,5,8,Private room,1,1,1,Irving Park,Northwest,85,66,69
+470,74,4.5,17,Private room,4,1,1,Irving Park,Northwest,85,66,69
+471,1000,5,4,Entire home/apt,16,0,1,Irving Park,Northwest,85,66,69
+472,99,4.5,4,Entire home/apt,4,2,3,Irving Park,Northwest,85,66,69
+473,100,4.5,7,Entire home/apt,2,1,2,Irving Park,Northwest,85,66,69
+474,60,5,59,Private room,2,1,1,Irving Park,Northwest,85,66,69
+475,49,5,8,Private room,3,1,1,Irving Park,Northwest,85,66,69
+476,85,5,10,Entire home/apt,6,2,3,Irving Park,Northwest,85,66,69
+477,43,5,21,Private room,2,1,,Irving Park,Northwest,85,66,69
+478,89,5,5,Private room,2,1,1,Irving Park,Northwest,85,66,69
+479,40,5,11,Private room,1,1,2,Irving Park,Northwest,85,66,69
+480,200,4.5,6,Entire home/apt,5,1,2,Irving Park,Northwest,85,66,69
+481,75,5,28,Entire home/apt,3,1,2,Irving Park,Northwest,85,66,69
+482,95,5,59,Private room,8,1,2,Jefferson Park,Far North,72,64,70
+483,47,5,12,Private room,2,1,2,Jefferson Park,Far North,72,64,70
+484,159,5,28,Entire home/apt,8,3,,Jefferson Park,Far North,72,64,70
+485,75,5,11,Private room,2,1,1,Jefferson Park,Far North,72,64,70
+486,85,4.5,10,Entire home/apt,11,3,1,Jefferson Park,Far North,72,64,70
+487,80,4.5,15,Private room,2,1,1,Jefferson Park,Far North,72,64,70
+488,83,5,35,Entire home/apt,3,1,1,Jefferson Park,Far North,72,64,70
+489,65,5,6,Private room,1,1,2,Jefferson Park,Far North,72,64,70
+490,60,5,28,Private room,2,1,3,Jefferson Park,Far North,72,64,70
+491,100,5,74,Private room,6,1,,Jefferson Park,Far North,72,64,70
+492,140,4.5,8,Entire home/apt,6,3,3,Jefferson Park,Far North,72,64,70
+493,200,3.5,3,Entire home/apt,5,2,7,Jefferson Park,Far North,72,64,70
+494,73,5,15,Entire home/apt,2,1,1,Jefferson Park,Far North,72,64,70
+495,85,5,15,Private room,2,1,2,Jefferson Park,Far North,72,64,70
+496,80,4.5,19,Private room,2,1,1,Jefferson Park,Far North,72,64,70
+497,42,5,18,Private room,1,1,,Jefferson Park,Far North,72,64,70
+498,40,4.5,17,Private room,2,1,1,Jefferson Park,Far North,72,64,70
+499,45,5,6,Private room,2,1,1,Jefferson Park,Far North,72,64,70
+500,45,5,22,Private room,2,1,,Jefferson Park,Far North,72,64,70
+501,110,5,18,Entire home/apt,8,3,2,Jefferson Park,Far North,72,64,70
+502,125,5,16,Entire home/apt,2,1,2,Kenwood,South,79,66,91
+503,75,5,3,Entire home/apt,4,1,2,Kenwood,South,79,66,91
+504,75,5,3,Private room,4,1,1,Kenwood,South,79,66,91
+505,69,4.5,6,Private room,2,1,3,Kenwood,South,79,66,91
+506,85,5,151,Private room,2,1,2,Kenwood,South,79,66,91
+507,26,4.5,7,Private room,2,1,1,Kenwood,South,79,66,91
+508,150,5,10,Entire home/apt,2,1,2,Kenwood,South,79,66,91
+509,49,4.5,13,Private room,1,1,1,Kenwood,South,79,66,91
+510,80,5,3,Private room,2,1,1,Kenwood,South,79,66,91
+511,220,5,7,Entire home/apt,2,1,2,Lincoln Park,North,94,79,88
+512,110,5,4,Entire home/apt,2,0,1,Lincoln Park,North,94,79,88
+513,125,4.5,13,Entire home/apt,1,1,14,Lincoln Park,North,94,79,88
+514,200,4,15,Entire home/apt,6,2,,Lincoln Park,North,94,79,88
+515,100,4,3,Entire home/apt,2,0,1,Lincoln Park,North,94,79,88
+516,135,5,80,Entire home/apt,2,1,1,Lincoln Park,North,94,79,88
+517,100,4.5,24,Entire home/apt,2,1,1,Lincoln Park,North,94,79,88
+518,135,5,24,Entire home/apt,2,1,1,Lincoln Park,North,94,79,88
+519,160,4.5,8,Entire home/apt,4,2,2,Lincoln Park,North,94,79,88
+520,165,5,17,Entire home/apt,3,1,2,Lincoln Park,North,94,79,88
+521,145,5,8,Entire home/apt,4,1,1,Lincoln Park,North,94,79,88
+522,95,5,12,Entire home/apt,2,0,1,Lincoln Park,North,94,79,88
+523,109,5,49,Entire home/apt,2,1,3,Lincoln Park,North,94,79,88
+524,159,5,22,Entire home/apt,4,1,2,Lincoln Park,North,94,79,88
+525,150,5,29,Entire home/apt,4,1,5,Lincoln Park,North,94,79,88
+526,90,5,9,Entire home/apt,2,1,2,Lincoln Park,North,94,79,88
+527,110,5,206,Private room,2,1,2,Lincoln Park,North,94,79,88
+528,99,5,40,Private room,2,1,1,Lincoln Park,North,94,79,88
+529,79,4.5,9,Private room,2,1,2,Lincoln Park,North,94,79,88
+530,110,4.5,16,Entire home/apt,3,1,2,Lincoln Park,North,94,79,88
+531,125,5,4,Entire home/apt,4,1,2,Lincoln Park,North,94,79,88
+532,100,4.5,61,Private room,2,1,4,Lincoln Park,North,94,79,88
+533,290,4.5,37,Entire home/apt,6,3,2,Lincoln Park,North,94,79,88
+534,150,5,6,Entire home/apt,4,2,2,Lincoln Park,North,94,79,88
+535,225,5,5,Entire home/apt,4,2,4,Lincoln Park,North,94,79,88
+536,350,5,4,Entire home/apt,7,2,3,Lincoln Park,North,94,79,88
+537,130,5,80,Private room,2,1,2,Lincoln Park,North,94,79,88
+538,250,5,13,Private room,2,1,1,Lincoln Park,North,94,79,88
+539,275,5,11,Entire home/apt,10,4,,Lincoln Park,North,94,79,88
+540,125,4.5,13,Entire home/apt,4,1,7,Lincoln Park,North,94,79,88
+541,99,5,6,Entire home/apt,1,1,2,Lincoln Park,North,94,79,88
+542,350,5,27,Entire home/apt,6,3,4,Lincoln Park,North,94,79,88
+543,275,5,16,Entire home/apt,4,2,2,Lincoln Park,North,94,79,88
+544,172,5,13,Entire home/apt,6,2,2,Lincoln Park,North,94,79,88
+545,95,4,82,Entire home/apt,3,0,1,Lincoln Park,North,94,79,88
+546,168,5,86,Entire home/apt,2,1,2,Lincoln Park,North,94,79,88
+547,275,5,4,Entire home/apt,8,3,2,Lincoln Park,North,94,79,88
+548,144,5,4,Entire home/apt,2,1,1,Lincoln Park,North,94,79,88
+549,295,5,13,Entire home/apt,6,3,5,Lincoln Park,North,94,79,88
+550,290,5,9,Entire home/apt,6,3,3,Lincoln Park,North,94,79,88
+551,135,5,6,Entire home/apt,2,1,3,Lincoln Park,North,94,79,88
+552,125,4.5,18,Entire home/apt,2,0,2,Lincoln Park,North,94,79,88
+553,200,5,16,Entire home/apt,4,1,1,Lincoln Park,North,94,79,88
+554,150,5,7,Entire home/apt,4,1,2,Lincoln Park,North,94,79,88
+555,145,4.5,56,Entire home/apt,3,1,2,Lincoln Park,North,94,79,88
+556,100,5,15,Entire home/apt,2,1,1,Lincoln Park,North,94,79,88
+557,120,4.5,37,Entire home/apt,4,1,3,Lincoln Park,North,94,79,88
+558,119,5,10,Entire home/apt,4,1,2,Lincoln Park,North,94,79,88
+559,99,4.5,9,Entire home/apt,5,0,1,Lincoln Park,North,94,79,88
+560,125,5,199,Entire home/apt,3,1,2,Lincoln Park,North,94,79,88
+561,85,5,3,Private room,2,1,2,Lincoln Park,North,94,79,88
+562,119,5,3,Entire home/apt,2,1,,Lincoln Park,North,94,79,88
+563,250,4.5,6,Entire home/apt,9,2,,Lincoln Park,North,94,79,88
+564,200,4.5,3,Entire home/apt,3,1,2,Lincoln Park,North,94,79,88
+565,125,5,4,Entire home/apt,2,1,1,Lincoln Park,North,94,79,88
+566,250,4.5,9,Entire home/apt,10,1,1,Lincoln Park,North,94,79,88
+567,165,4.5,8,Entire home/apt,3,1,3,Lincoln Park,North,94,79,88
+568,60,5,7,Private room,2,1,2,Lincoln Square,Far North,82,60,87
+569,73,5,13,Private room,2,1,1,Lincoln Square,Far North,82,60,87
+570,320,5,8,Entire home/apt,8,3,1,Lincoln Square,Far North,82,60,87
+571,60,5,6,Private room,2,1,2,Lincoln Square,Far North,82,60,87
+572,45,4.5,36,Private room,2,1,1,Lincoln Square,Far North,82,60,87
+573,65,5,3,Private room,2,1,1,Lincoln Square,Far North,82,60,87
+574,125,5,17,Entire home/apt,5,2,2,Lincoln Square,Far North,82,60,87
+575,180,4.5,3,Entire home/apt,4,2,2,Lincoln Square,Far North,82,60,87
+576,75,5,6,Private room,2,1,2,Lincoln Square,Far North,82,60,87
+577,150,5,15,Entire home/apt,4,2,2,Lincoln Square,Far North,82,60,87
+578,120,4.5,13,Entire home/apt,2,1,2,Lincoln Square,Far North,82,60,87
+579,150,4.5,8,Entire home/apt,4,2,3,Lincoln Square,Far North,82,60,87
+580,80,4.5,38,Entire home/apt,5,2,3,Lincoln Square,Far North,82,60,87
+581,48,5,14,Private room,1,1,1,Lincoln Square,Far North,82,60,87
+582,105,4.5,6,Private room,4,1,2,Lincoln Square,Far North,82,60,87
+583,30,4.5,15,Shared room,2,1,1,Logan Square,North,88,68,81
+584,44,4.5,103,Private room,2,1,4,Logan Square,North,88,68,81
+585,80,4.5,9,Private room,2,1,1,Logan Square,North,88,68,81
+586,169,5,36,Entire home/apt,6,2,,Logan Square,North,88,68,81
+587,75,5,11,Entire home/apt,2,1,1,Logan Square,North,88,68,81
+588,235,5,39,Entire home/apt,6,3,3,Logan Square,North,88,68,81
+589,140,5,13,Entire home/apt,2,1,1,Logan Square,North,88,68,81
+590,60,5,27,Private room,1,1,1,Logan Square,North,88,68,81
+591,60,4.5,52,Private room,2,1,2,Logan Square,North,88,68,81
+592,95,4.5,5,Entire home/apt,3,1,2,Logan Square,North,88,68,81
+593,90,5,3,Entire home/apt,2,1,2,Logan Square,North,88,68,81
+594,79,5,160,Private room,2,1,1,Logan Square,North,88,68,81
+595,132,4.5,10,Entire home/apt,6,2,2,Logan Square,North,88,68,81
+596,65,4.5,5,Entire home/apt,4,1,,Logan Square,North,88,68,81
+597,84,5,4,Private room,4,1,1,Logan Square,North,88,68,81
+598,90,5,8,Entire home/apt,4,2,2,Logan Square,North,88,68,81
+599,400,5,4,Entire home/apt,4,2,1,Logan Square,North,88,68,81
+600,100,5,25,Private room,2,1,2,Logan Square,North,88,68,81
+601,115,5,41,Entire home/apt,4,2,,Logan Square,North,88,68,81
+602,35,5,15,Private room,2,1,1,Logan Square,North,88,68,81
+603,75,5,14,Entire home/apt,4,1,3,Logan Square,North,88,68,81
+604,250,5,4,Entire home/apt,5,3,2,Logan Square,North,88,68,81
+605,45,5,4,Private room,2,1,1,Logan Square,North,88,68,81
+606,89,4.5,17,Entire home/apt,2,1,2,Logan Square,North,88,68,81
+607,68,5,8,Private room,2,1,1,Logan Square,North,88,68,81
+608,150,5,6,Entire home/apt,2,1,2,Logan Square,North,88,68,81
+609,100,5,87,Private room,3,1,2,Logan Square,North,88,68,81
+610,130,5,63,Entire home/apt,2,2,2,Logan Square,North,88,68,81
+611,50,5,4,Private room,3,1,1,Logan Square,North,88,68,81
+612,100,4.5,5,Entire home/apt,2,1,1,Logan Square,North,88,68,81
+613,65,5,28,Private room,2,1,2,Logan Square,North,88,68,81
+614,105,5,11,Entire home/apt,4,3,2,Logan Square,North,88,68,81
+615,140,5,4,Entire home/apt,3,2,3,Logan Square,North,88,68,81
+616,80,4.5,100,Entire home/apt,4,1,2,Logan Square,North,88,68,81
+617,100,4.5,162,Entire home/apt,3,1,1,Logan Square,North,88,68,81
+618,150,5,3,Entire home/apt,3,1,1,Logan Square,North,88,68,81
+619,75,5,87,Private room,2,1,1,Logan Square,North,88,68,81
+620,45,5,12,Private room,2,1,2,Logan Square,North,88,68,81
+621,35,5,30,Private room,2,1,2,Logan Square,North,88,68,81
+622,55,5,37,Private room,4,1,1,Logan Square,North,88,68,81
+623,70,5,4,Private room,2,1,1,Logan Square,North,88,68,81
+624,60,5,4,Private room,2,1,1,Logan Square,North,88,68,81
+625,139,5,32,Entire home/apt,5,2,,Logan Square,North,88,68,81
+626,55,5,83,Private room,2,1,3,Logan Square,North,88,68,81
+627,48,5,9,Private room,2,1,1,Logan Square,North,88,68,81
+628,40,4.5,22,Private room,1,1,1,Logan Square,North,88,68,81
+629,110,5,26,Private room,3,1,1,Logan Square,North,88,68,81
+630,155,5,27,Entire home/apt,6,2,,Logan Square,North,88,68,81
+631,139,4.5,3,Entire home/apt,8,2,2,Logan Square,North,88,68,81
+632,30,5,4,Private room,2,1,2,Logan Square,North,88,68,81
+633,120,4.5,3,Entire home/apt,5,2,1,Logan Square,North,88,68,81
+634,89,4.5,7,Entire home/apt,5,2,1,Logan Square,North,88,68,81
+635,75,5,12,Private room,2,1,1,Logan Square,North,88,68,81
+636,70,4.5,4,Private room,2,1,1,Logan Square,North,88,68,81
+637,50,5,6,Private room,2,1,1,Logan Square,North,88,68,81
+638,325,5,31,Entire home/apt,12,4,,Logan Square,North,88,68,81
+639,70,5,35,Entire home/apt,3,1,1,Logan Square,North,88,68,81
+640,42,4.5,83,Private room,1,1,1,Logan Square,North,88,68,81
+641,90,4.5,8,Entire home/apt,2,2,2,Logan Square,North,88,68,81
+642,43,5,6,Private room,2,1,1,Logan Square,North,88,68,81
+643,46,4.5,11,Private room,2,1,2,Logan Square,North,88,68,81
+644,85,4.5,27,Entire home/apt,5,2,2,Logan Square,North,88,68,81
+645,150,4,4,Entire home/apt,6,2,2,Logan Square,North,88,68,81
+646,90,5,43,Entire home/apt,4,2,2,Logan Square,North,88,68,81
+647,35,5,5,Private room,2,1,10,Logan Square,North,88,68,81
+648,65,5,27,Private room,2,1,1,Logan Square,North,88,68,81
+649,68,4.5,7,Private room,2,1,1,Logan Square,North,88,68,81
+650,90,5,10,Entire home/apt,4,2,3,Logan Square,North,88,68,81
+651,70,5,5,Entire home/apt,4,0,2,Logan Square,North,88,68,81
+652,49,5,74,Private room,2,1,1,Logan Square,North,88,68,81
+653,35,4.5,82,Private room,2,1,1,Logan Square,North,88,68,81
+654,60,4.5,6,Private room,3,1,,Logan Square,North,88,68,81
+655,249,4.5,13,Entire home/apt,5,3,1,Logan Square,North,88,68,81
+656,109,5,23,Private room,2,1,1,Logan Square,North,88,68,81
+657,195,4.5,21,Entire home/apt,7,2,2,Logan Square,North,88,68,81
+658,140,5,40,Entire home/apt,5,2,2,Logan Square,North,88,68,81
+659,35,4.5,47,Private room,2,1,1,Logan Square,North,88,68,81
+660,42,5,41,Private room,2,1,1,Logan Square,North,88,68,81
+661,88,5,101,Private room,2,1,2,Logan Square,North,88,68,81
+662,75,4.5,5,Private room,6,1,1,Logan Square,North,88,68,81
+663,85,5,54,Entire home/apt,2,0,2,Logan Square,North,88,68,81
+664,125,5,24,Entire home/apt,4,2,1,Logan Square,North,88,68,81
+665,99,5,4,Entire home/apt,4,2,5,Logan Square,North,88,68,81
+666,56,5,22,Private room,1,1,1,Logan Square,North,88,68,81
+667,129,5,82,Entire home/apt,4,1,2,Logan Square,North,88,68,81
+668,200,4.5,3,Entire home/apt,3,2,1,Logan Square,North,88,68,81
+669,60,4.5,18,Private room,2,1,1,Logan Square,North,88,68,81
+670,75,5,17,Private room,1,1,1,Logan Square,North,88,68,81
+671,55,5,10,Private room,2,1,1,Logan Square,North,88,68,81
+672,110,5,5,Entire home/apt,4,2,2,Logan Square,North,88,68,81
+673,130,5,30,Private room,3,1,1,Logan Square,North,88,68,81
+674,125,4.5,4,Entire home/apt,8,3,5,Logan Square,North,88,68,81
+675,120,4.5,16,Entire home/apt,6,3,4,Logan Square,North,88,68,81
+676,90,5,16,Private room,2,1,1,Logan Square,North,88,68,81
+677,105,5,76,Entire home/apt,4,2,2,Logan Square,North,88,68,81
+678,90,5,17,Entire home/apt,2,1,2,Logan Square,North,88,68,81
+679,75,4.5,93,Entire home/apt,3,1,3,Logan Square,North,88,68,81
+680,195,5,3,Entire home/apt,3,2,1,Logan Square,North,88,68,81
+681,69,5,9,Private room,1,1,3,Logan Square,North,88,68,81
+682,215,5,3,Entire home/apt,3,1,2,Logan Square,North,88,68,81
+683,90,4,21,Entire home/apt,6,2,2,Logan Square,North,88,68,81
+684,38,4.5,25,Private room,1,1,1,Logan Square,North,88,68,81
+685,130,5,67,Entire home/apt,3,2,1,Logan Square,North,88,68,81
+686,195,4.5,9,Entire home/apt,16,2,1,Logan Square,North,88,68,81
+687,43,5,6,Private room,2,1,1,Logan Square,North,88,68,81
+688,70,5,53,Private room,2,1,1,Logan Square,North,88,68,81
+689,150,4,11,Entire home/apt,6,2,2,Logan Square,North,88,68,81
+690,80,5,28,Private room,2,1,2,Logan Square,North,88,68,81
+691,80,4.5,3,Entire home/apt,6,3,3,Logan Square,North,88,68,81
+692,75,5,6,Private room,2,1,,Logan Square,North,88,68,81
+693,45,5,16,Private room,3,1,1,Logan Square,North,88,68,81
+694,145,4.5,27,Entire home/apt,8,3,,Logan Square,North,88,68,81
+695,89,5,8,Entire home/apt,4,1,1,Logan Square,North,88,68,81
+696,39,4.5,78,Private room,2,1,2,Logan Square,North,88,68,81
+697,90,4.5,14,Entire home/apt,2,1,1,Logan Square,North,88,68,81
+698,140,5,17,Entire home/apt,4,2,1,Logan Square,North,88,68,81
+699,80,4.5,29,Private room,2,1,2,Logan Square,North,88,68,81
+700,100,4.5,6,Entire home/apt,4,2,3,Logan Square,North,88,68,81
+701,70,5,29,Private room,2,1,1,Logan Square,North,88,68,81
+702,125,5,3,Entire home/apt,4,2,2,Logan Square,North,88,68,81
+703,140,4.5,13,Entire home/apt,3,1,2,Logan Square,North,88,68,81
+704,125,4,3,Entire home/apt,2,1,2,Logan Square,North,88,68,81
+705,40,5,5,Private room,6,1,1,Logan Square,North,88,68,81
+706,250,4.5,16,Entire home/apt,7,3,1,Logan Square,North,88,68,81
+707,40,5,5,Shared room,2,1,1,Logan Square,North,88,68,81
+708,30,5,9,Private room,1,1,1,Logan Square,North,88,68,81
+709,95,5,97,Entire home/apt,3,1,2,Logan Square,North,88,68,81
+710,60,5,4,Private room,2,1,1,Logan Square,North,88,68,81
+711,105,5,40,Entire home/apt,4,2,2,Logan Square,North,88,68,81
+712,49,4.5,57,Private room,3,1,4,Logan Square,North,88,68,81
+713,75,5,19,Private room,2,1,1,Logan Square,North,88,68,81
+714,150,5,66,Entire home/apt,6,3,2,Logan Square,North,88,68,81
+715,145,5,5,Entire home/apt,7,1,2,Logan Square,North,88,68,81
+716,90,5,20,Entire home/apt,4,1,1,Logan Square,North,88,68,81
+717,110,5,26,Entire home/apt,2,1,,Logan Square,North,88,68,81
+718,35,4.5,33,Private room,2,1,2,Logan Square,North,88,68,81
+719,108,4.5,11,Entire home/apt,2,1,1,Logan Square,North,88,68,81
+720,75,4.5,7,Private room,2,1,1,Logan Square,North,88,68,81
+721,69,5,10,Private room,2,1,2,Logan Square,North,88,68,81
+722,25,5,53,Shared room,10,1,1,Logan Square,North,88,68,81
+723,125,5,28,Entire home/apt,4,2,2,Logan Square,North,88,68,81
+724,69,5,50,Private room,2,1,2,Logan Square,North,88,68,81
+725,110,5,22,Entire home/apt,4,2,2,Logan Square,North,88,68,81
+726,45,4.5,33,Private room,2,1,1,Logan Square,North,88,68,81
+727,129,4.5,8,Entire home/apt,8,3,5,Logan Square,North,88,68,81
+728,40,5,21,Private room,2,1,2,Logan Square,North,88,68,81
+729,50,5,24,Private room,2,1,1,Logan Square,North,88,68,81
+730,65,4.5,51,Private room,2,1,2,Logan Square,North,88,68,81
+731,40,4.5,42,Private room,1,1,2,Logan Square,North,88,68,81
+732,31,5,22,Private room,2,1,1,Logan Square,North,88,68,81
+733,100,5,6,Entire home/apt,6,2,1,Logan Square,North,88,68,81
+734,80,5,101,Private room,2,1,2,Logan Square,North,88,68,81
+735,150,5,45,Entire home/apt,7,3,2,Logan Square,North,88,68,81
+736,56,5,5,Entire home/apt,2,1,3,Logan Square,North,88,68,81
+737,125,5,16,Entire home/apt,4,2,2,Logan Square,North,88,68,81
+738,44,5,28,Private room,1,1,1,Logan Square,North,88,68,81
+739,179,4.5,77,Entire home/apt,6,3,3,Logan Square,North,88,68,81
+740,95,4.5,7,Entire home/apt,2,1,3,Logan Square,North,88,68,81
+741,40,5,4,Private room,2,1,,Logan Square,North,88,68,81
+742,149,4.5,61,Entire home/apt,6,2,,Logan Square,North,88,68,81
+743,88,4.5,41,Entire home/apt,4,2,2,Logan Square,North,88,68,81
+744,70,5,111,Entire home/apt,3,0,1,Logan Square,North,88,68,81
+745,69,4.5,60,Private room,2,1,2,Logan Square,North,88,68,81
+746,109,4.5,3,Entire home/apt,4,2,2,Logan Square,North,88,68,81
+747,90,5,3,Entire home/apt,4,2,2,Logan Square,North,88,68,81
+748,45,4.5,54,Private room,2,1,1,Logan Square,North,88,68,81
+749,60,5,37,Private room,2,1,1,Logan Square,North,88,68,81
+750,35,4.5,74,Private room,6,1,1,Logan Square,North,88,68,81
+751,100,4.5,32,Entire home/apt,2,1,2,Logan Square,North,88,68,81
+752,160,5,55,Entire home/apt,2,1,2,Logan Square,North,88,68,81
+753,50,5,46,Private room,2,1,2,Logan Square,North,88,68,81
+754,40,4.5,60,Private room,1,1,4,Logan Square,North,88,68,81
+755,100,5,16,Private room,2,1,1,Logan Square,North,88,68,81
+756,135,4.5,40,Entire home/apt,12,3,,Logan Square,North,88,68,81
+757,295,5,3,Entire home/apt,4,2,2,Logan Square,North,88,68,81
+758,80,5,12,Entire home/apt,4,1,1,Logan Square,North,88,68,81
+759,1000,5,30,Entire home/apt,16,7,1,Logan Square,North,88,68,81
+760,40,5,89,Private room,2,1,,Logan Square,North,88,68,81
+761,35,4.5,11,Private room,4,1,1,Logan Square,North,88,68,81
+762,25,5,3,Private room,2,1,1,Logan Square,North,88,68,81
+763,55,4.5,16,Private room,2,1,1,Logan Square,North,88,68,81
+764,81,5,9,Entire home/apt,5,2,2,Logan Square,North,88,68,81
+765,90,5,27,Entire home/apt,6,1,3,Logan Square,North,88,68,81
+766,180,4.5,3,Entire home/apt,6,2,2,Logan Square,North,88,68,81
+767,200,5,4,Entire home/apt,5,2,2,Logan Square,North,88,68,81
+768,87,5,10,Private room,2,1,2,Logan Square,North,88,68,81
+769,99,5,20,Entire home/apt,5,1,2,Logan Square,North,88,68,81
+770,55,5,41,Private room,2,1,2,Logan Square,North,88,68,81
+771,59,4.5,13,Entire home/apt,3,1,1,Logan Square,North,88,68,81
+772,75,5,8,Entire home/apt,4,2,3,Logan Square,North,88,68,81
+773,100,5,6,Entire home/apt,4,1,1,Logan Square,North,88,68,81
+774,90,5,5,Entire home/apt,3,1,3,Logan Square,North,88,68,81
+775,65,4,5,Private room,2,1,1,Logan Square,North,88,68,81
+776,38,4,3,Private room,2,1,5,Logan Square,North,88,68,81
+777,60,5,22,Entire home/apt,3,2,1,Logan Square,North,88,68,81
+778,58,4.5,24,Private room,2,1,1,Logan Square,North,88,68,81
+779,100,4,18,Private room,2,1,1,Logan Square,North,88,68,81
+780,55,4.5,4,Private room,2,1,1,Logan Square,North,88,68,81
+781,57,4.5,18,Private room,2,1,3,Logan Square,North,88,68,81
+782,95,5,99,Private room,2,1,1,Logan Square,North,88,68,81
+783,145,5,11,Entire home/apt,4,2,1,Logan Square,North,88,68,81
+784,75,5,11,Private room,2,1,2,Logan Square,North,88,68,81
+785,56,5,52,Private room,2,1,1,Logan Square,North,88,68,81
+786,37,5,17,Private room,1,1,1,Logan Square,North,88,68,81
+787,80,5,10,Entire home/apt,2,1,1,Logan Square,North,88,68,81
+788,165,5,4,Entire home/apt,6,2,,Logan Square,North,88,68,81
+789,48,5,16,Private room,2,1,1,Logan Square,North,88,68,81
+790,65,4.5,13,Private room,2,1,1,Logan Square,North,88,68,81
+791,269,4.5,3,Entire home/apt,5,3,2,Logan Square,North,88,68,81
+792,135,5,8,Entire home/apt,3,1,2,Logan Square,North,88,68,81
+793,99,5,37,Entire home/apt,2,2,2,Logan Square,North,88,68,81
+794,70,4.5,10,Private room,2,1,1,Logan Square,North,88,68,81
+795,99,4,9,Entire home/apt,3,1,1,Logan Square,North,88,68,81
+796,100,5,17,Private room,2,1,1,Logan Square,North,88,68,81
+797,29,4.5,37,Private room,1,1,1,Logan Square,North,88,68,81
+798,75,5,17,Private room,2,1,1,Logan Square,North,88,68,81
+799,125,4.5,92,Entire home/apt,4,2,1,Logan Square,North,88,68,81
+800,98,4.5,3,Entire home/apt,4,1,2,Logan Square,North,88,68,81
+801,45,5,5,Entire home/apt,2,0,3,Logan Square,North,88,68,81
+802,100,5,78,Entire home/apt,3,1,1,Logan Square,North,88,68,81
+803,185,5,103,Entire home/apt,4,2,2,Logan Square,North,88,68,81
+804,75,4.5,3,Private room,3,1,1,Logan Square,North,88,68,81
+805,106,5,20,Private room,2,1,2,Logan Square,North,88,68,81
+806,78,5,6,Private room,3,1,2,Logan Square,North,88,68,81
+807,175,4.5,3,Entire home/apt,9,2,1,Logan Square,North,88,68,81
+808,100,5,12,Entire home/apt,6,3,1,Logan Square,North,88,68,81
+809,80,5,18,Private room,2,1,1,Logan Square,North,88,68,81
+810,75,4.5,45,Entire home/apt,7,3,3,Logan Square,North,88,68,81
+811,50,5,8,Private room,2,1,1,Logan Square,North,88,68,81
+812,119,5,13,Entire home/apt,4,2,2,Logan Square,North,88,68,81
+813,50,5,3,Private room,1,1,1,Logan Square,North,88,68,81
+814,79,5,4,Entire home/apt,2,1,3,Logan Square,North,88,68,81
+815,150,5,136,Entire home/apt,9,3,,Logan Square,North,88,68,81
+816,94,4.5,7,Entire home/apt,2,1,4,Logan Square,North,88,68,81
+817,200,5,50,Entire home/apt,4,1,4,Logan Square,North,88,68,81
+818,95,5,8,Entire home/apt,4,2,2,Logan Square,North,88,68,81
+819,20,4.5,26,Shared room,12,1,1,Logan Square,North,88,68,81
+820,140,5,31,Entire home/apt,4,2,2,Logan Square,North,88,68,81
+821,15,4.5,100,Shared room,10,1,1,Logan Square,North,88,68,81
+822,215,5,150,Entire home/apt,10,3,,Logan Square,North,88,68,81
+823,129,5,23,Entire home/apt,4,1,1,Logan Square,North,88,68,81
+824,99,5,3,Entire home/apt,2,1,3,Logan Square,North,88,68,81
+825,30,4.5,35,Shared room,2,1,2,Logan Square,North,88,68,81
+826,40,4.5,169,Private room,2,1,1,Logan Square,North,88,68,81
+827,95,4.5,9,Entire home/apt,4,2,1,Logan Square,North,88,68,81
+828,44,5,4,Private room,1,1,1,Logan Square,North,88,68,81
+829,100,5,17,Private room,2,1,1,Logan Square,North,88,68,81
+830,90,5,6,Entire home/apt,4,1,2,Logan Square,North,88,68,81
+831,75,5,60,Private room,2,1,2,Logan Square,North,88,68,81
+832,35,5,7,Private room,2,1,1,Logan Square,North,88,68,81
+833,36,5,8,Private room,2,1,4,Logan Square,North,88,68,81
+834,95,4.5,44,Entire home/apt,2,0,1,Logan Square,North,88,68,81
+835,65,5,39,Private room,2,1,3,Logan Square,North,88,68,81
+836,179,4.5,34,Entire home/apt,5,1,4,Logan Square,North,88,68,81
+837,105,5,92,Entire home/apt,4,2,2,Logan Square,North,88,68,81
+838,145,4.5,34,Entire home/apt,7,3,,Logan Square,North,88,68,81
+839,108,5,8,Entire home/apt,4,2,2,Logan Square,North,88,68,81
+840,123,4.5,41,Entire home/apt,6,2,,Logan Square,North,88,68,81
+841,50,5,59,Private room,2,1,2,Logan Square,North,88,68,81
+842,45,5,4,Private room,2,1,2,Logan Square,North,88,68,81
+843,45,4.5,31,Private room,2,1,1,Logan Square,North,88,68,81
+844,135,5,68,Entire home/apt,6,3,2,Logan Square,North,88,68,81
+845,75,4.5,53,Entire home/apt,4,1,2,Logan Square,North,88,68,81
+846,45,5,22,Private room,4,1,2,Logan Square,North,88,68,81
+847,100,5,19,Entire home/apt,6,3,,Logan Square,North,88,68,81
+848,275,5,41,Entire home/apt,8,2,2,Logan Square,North,88,68,81
+849,395,5,18,Entire home/apt,14,3,1,Logan Square,North,88,68,81
+850,180,5,13,Entire home/apt,6,3,2,Logan Square,North,88,68,81
+851,89,5,17,Private room,2,1,2,Logan Square,North,88,68,81
+852,60,5,4,Private room,2,1,1,Logan Square,North,88,68,81
+853,95,5,23,Entire home/apt,4,2,2,Logan Square,North,88,68,81
+854,80,5,22,Private room,2,1,1,Logan Square,North,88,68,81
+855,75,5,347,Entire home/apt,4,0,,Logan Square,North,88,68,81
+856,65,4.5,20,Entire home/apt,5,1,1,Logan Square,North,88,68,81
+857,59,4.5,21,Entire home/apt,2,1,1,Logan Square,North,88,68,81
+858,100,5,5,Entire home/apt,4,2,5,Logan Square,North,88,68,81
+859,92,5,8,Entire home/apt,2,0,1,Logan Square,North,88,68,81
+860,100,5,17,Entire home/apt,4,1,2,Logan Square,North,88,68,81
+861,125,5,6,Private room,2,1,1,Logan Square,North,88,68,81
+862,125,5,20,Entire home/apt,6,2,1,Logan Square,North,88,68,81
+863,58,4.5,23,Private room,2,1,1,Logan Square,North,88,68,81
+864,50,4.5,45,Private room,2,1,2,Logan Square,North,88,68,81
+865,110,4.5,12,Entire home/apt,3,2,,Logan Square,North,88,68,81
+866,39,4.5,16,Private room,2,1,1,Logan Square,North,88,68,81
+867,129,4.5,7,Entire home/apt,8,3,5,Logan Square,North,88,68,81
+868,90,5,75,Entire home/apt,6,2,2,Logan Square,North,88,68,81
+869,115,5,5,Entire home/apt,2,1,1,Logan Square,North,88,68,81
+870,125,5,8,Entire home/apt,6,3,,Logan Square,North,88,68,81
+871,49,5,3,Shared room,4,1,1,Logan Square,North,88,68,81
+872,64,5,38,Entire home/apt,2,1,3,Logan Square,North,88,68,81
+873,110,5,11,Entire home/apt,4,2,1,Logan Square,North,88,68,81
+874,150,5,263,Entire home/apt,5,2,2,Logan Square,North,88,68,81
+875,110,5,65,Private room,2,1,1,Logan Square,North,88,68,81
+876,55,5,6,Private room,2,1,1,Logan Square,North,88,68,81
+877,100,4.5,22,Entire home/apt,2,1,7,Logan Square,North,88,68,81
+878,46,4.5,4,Private room,2,1,1,Logan Square,North,88,68,81
+879,135,5,8,Entire home/apt,4,1,2,Logan Square,North,88,68,81
+880,120,4,18,Entire home/apt,6,3,1,Logan Square,North,88,68,81
+881,49,5,10,Private room,1,1,1,Logan Square,North,88,68,81
+882,100,4.5,31,Entire home/apt,4,2,3,Logan Square,North,88,68,81
+883,75,5,54,Entire home/apt,2,1,3,Logan Square,North,88,68,81
+884,70,5,26,Private room,2,1,1,Logan Square,North,88,68,81
+885,55,5,22,Private room,1,1,3,Logan Square,North,88,68,81
+886,105,5,36,Entire home/apt,5,2,,Logan Square,North,88,68,81
+887,72,5,8,Private room,2,1,1,Logan Square,North,88,68,81
+888,49,5,37,Private room,2,1,2,Logan Square,North,88,68,81
+889,540,5,43,Entire home/apt,6,3,1,Logan Square,North,88,68,81
+890,75,4.5,3,Private room,2,1,1,Logan Square,North,88,68,81
+891,60,5,40,Private room,2,1,1,Logan Square,North,88,68,81
+892,60,5,14,Private room,4,1,1,Logan Square,North,88,68,81
+893,170,5,137,Entire home/apt,7,2,1,Logan Square,North,88,68,81
+894,99,4.5,17,Entire home/apt,4,1,1,Logan Square,North,88,68,81
+895,100,5,12,Entire home/apt,2,1,2,Logan Square,North,88,68,81
+896,80,5,57,Private room,2,1,1,Logan Square,North,88,68,81
+897,29,4.5,42,Private room,2,1,,Logan Square,North,88,68,81
+898,55,5,8,Private room,2,1,2,Logan Square,North,88,68,81
+899,129,5,59,Entire home/apt,8,3,2,Logan Square,North,88,68,81
+900,75,5,23,Private room,2,1,1,Logan Square,North,88,68,81
+901,125,5,9,Private room,2,1,1,Logan Square,North,88,68,81
+902,140,5,166,Entire home/apt,3,2,,Logan Square,North,88,68,81
+903,59,5,119,Private room,2,1,1,Logan Square,North,88,68,81
+904,42,5,100,Private room,2,1,1,Logan Square,North,88,68,81
+905,45,4.5,25,Private room,2,1,1,Logan Square,North,88,68,81
+906,70,5,13,Private room,2,1,3,Logan Square,North,88,68,81
+907,135,5,9,Entire home/apt,6,3,2,Logan Square,North,88,68,81
+908,329,4.5,75,Entire home/apt,12,5,,Logan Square,North,88,68,81
+909,200,5,9,Entire home/apt,5,3,2,Logan Square,North,88,68,81
+910,60,4.5,29,Private room,1,1,1,Logan Square,North,88,68,81
+911,40,4.5,54,Private room,2,1,1,Logan Square,North,88,68,81
+912,36,5,37,Private room,2,1,,Logan Square,North,88,68,81
+913,150,5,8,Entire home/apt,4,1,2,McKinley Park,Southwest,75,64,66
+914,80,4.5,5,Private room,2,1,1,McKinley Park,Southwest,75,64,66
+915,55,4.5,31,Private room,2,1,2,McKinley Park,Southwest,75,64,66
+916,49,4.5,6,Private room,2,1,1,McKinley Park,Southwest,75,64,66
+917,95,4.5,10,Entire home/apt,4,2,1,McKinley Park,Southwest,75,64,66
+918,45,5,5,Private room,1,1,1,McKinley Park,Southwest,75,64,66
+919,50,5,3,Private room,2,1,1,McKinley Park,Southwest,75,64,66
+920,65,4.5,6,Entire home/apt,2,1,1,McKinley Park,Southwest,75,64,66
+921,88,4.5,124,Entire home/apt,5,2,1,McKinley Park,Southwest,75,64,66
+922,50,5,5,Private room,2,1,1,McKinley Park,Southwest,75,64,66
+923,80,5,8,Entire home/apt,3,1,3,McKinley Park,Southwest,75,64,66
+924,49,5,9,Private room,2,1,1,McKinley Park,Southwest,75,64,66
+925,29,5,10,Private room,2,1,15,McKinley Park,Southwest,75,64,66
+926,131,4.5,74,Entire home/apt,6,1,2,McKinley Park,Southwest,75,64,66
+927,89,4,35,Entire home/apt,5,2,3,McKinley Park,Southwest,75,64,66
+928,120,5,26,Entire home/apt,4,2,2,Montclare,Northwest,74,58,63
+929,110,4.5,27,Entire home/apt,4,2,2,Montclare,Northwest,74,58,63
+930,120,5,4,Entire home/apt,5,2,2,Montclare,Northwest,74,58,63
+931,240,5,4,Entire home/apt,10,4,2,Montclare,Northwest,74,58,63
+932,105,5,3,Entire home/apt,4,2,1,Montclare,Northwest,74,58,63
+933,25,4.5,36,Private room,2,1,1,Morgan Park,Far Southwest,66,50,71
+934,96,5,61,Entire home/apt,3,1,2,Morgan Park,Far Southwest,66,50,71
+935,96,5,38,Entire home/apt,4,2,2,Morgan Park,Far Southwest,66,50,71
+936,25,4.5,29,Private room,2,1,1,Morgan Park,Far Southwest,66,50,71
+937,150,5,18,Entire home/apt,2,1,2,Near West Side,West,86,82,89
+938,165,5,17,Entire home/apt,4,1,1,Near West Side,West,86,82,89
+939,225,4.5,33,Entire home/apt,10,3,2,Near West Side,West,86,82,89
+940,50,3,16,Private room,2,1,1,Near West Side,West,86,82,89
+941,45,5,3,Private room,2,1,5,Near West Side,West,86,82,89
+942,135,5,32,Entire home/apt,6,2,,Near West Side,West,86,82,89
+943,49,5,9,Private room,2,1,3,Near West Side,West,86,82,89
+944,129,5,11,Private room,2,1,1,Near West Side,West,86,82,89
+945,350,5,16,Entire home/apt,12,4,1,Near West Side,West,86,82,89
+946,90,5,88,Private room,4,1,2,Near West Side,West,86,82,89
+947,49,5,12,Private room,1,1,1,Near West Side,West,86,82,89
+948,180,4.5,38,Entire home/apt,8,3,2,Near West Side,West,86,82,89
+949,150,5,35,Entire home/apt,4,2,1,Near West Side,West,86,82,89
+950,140,4.5,3,Entire home/apt,3,1,,Near West Side,West,86,82,89
+951,180,5,6,Private room,1,1,2,Near West Side,West,86,82,89
+952,87,5,3,Private room,2,1,1,Near West Side,West,86,82,89
+953,35,5,17,Private room,2,1,1,Near West Side,West,86,82,89
+954,210,5,35,Entire home/apt,4,2,2,Near West Side,West,86,82,89
+955,375,4.5,80,Entire home/apt,6,1,2,Near West Side,West,86,82,89
+956,195,5,3,Entire home/apt,2,1,2,Near West Side,West,86,82,89
+957,250,5,25,Entire home/apt,6,3,1,Near West Side,West,86,82,89
+958,44,5,14,Private room,2,1,3,Near West Side,West,86,82,89
+959,33,5,3,Private room,2,1,1,Near West Side,West,86,82,89
+960,225,4.5,12,Entire home/apt,6,2,2,Near West Side,West,86,82,89
+961,44,5,54,Private room,1,1,1,Near West Side,West,86,82,89
+962,200,5,40,Entire home/apt,8,4,3,Near West Side,West,86,82,89
+963,175,5,16,Private room,2,1,2,Near West Side,West,86,82,89
+964,150,5,11,Entire home/apt,6,3,4,Near West Side,West,86,82,89
+965,164,4.5,27,Entire home/apt,6,2,1,Near West Side,West,86,82,89
+966,125,5,61,Private room,2,1,2,Near West Side,West,86,82,89
+967,215,5,16,Entire home/apt,4,1,3,Near West Side,West,86,82,89
+968,49,3.5,18,Private room,2,1,1,Near West Side,West,86,82,89
+969,66,5,6,Private room,2,1,2,Near West Side,West,86,82,89
+970,30,5,23,Private room,2,1,2,Near West Side,West,86,82,89
+971,200,5,37,Entire home/apt,4,1,2,Near West Side,West,86,82,89
+972,750,5,9,Entire home/apt,6,3,1,Near West Side,West,86,82,89
+973,140,5,5,Private room,2,1,1,Near West Side,West,86,82,89
+974,49,4.5,3,Private room,2,1,4,Near West Side,West,86,82,89
+975,325,4.5,3,Entire home/apt,2,1,2,Near West Side,West,86,82,89
+976,150,5,7,Entire home/apt,2,1,2,Near West Side,West,86,82,89
+977,85,5,37,Private room,2,1,1,Near West Side,West,86,82,89
+978,202,4,28,Entire home/apt,16,4,2,Near West Side,West,86,82,89
+979,100,5,4,Private room,4,1,2,North Center,North,88,66,71
+980,139,5,29,Entire home/apt,5,2,,North Center,North,88,66,71
+981,42,5,89,Private room,2,1,4,North Center,North,88,66,71
+982,109,4.5,28,Entire home/apt,3,1,,North Center,North,88,66,71
+983,165,5,136,Entire home/apt,2,1,1,North Center,North,88,66,71
+984,172,5,69,Entire home/apt,6,2,,North Center,North,88,66,71
+985,65,5,10,Private room,2,1,1,North Center,North,88,66,71
+986,250,3.5,7,Entire home/apt,6,2,3,North Center,North,88,66,71
+987,140,4.5,17,Entire home/apt,8,2,2,North Center,North,88,66,71
+988,140,4.5,30,Entire home/apt,3,1,3,North Center,North,88,66,71
+989,145,5,31,Entire home/apt,3,2,2,North Center,North,88,66,71
+990,100,5,8,Private room,4,1,2,North Center,North,88,66,71
+991,84,5,111,Private room,2,1,2,North Center,North,88,66,71
+992,78,5,20,Private room,2,1,2,North Center,North,88,66,71
+993,95,5,55,Entire home/apt,3,1,3,North Center,North,88,66,71
+994,126,5,17,Entire home/apt,6,2,,North Center,North,88,66,71
+995,65,4.5,14,Private room,2,1,1,North Center,North,88,66,71
+996,125,5,3,Entire home/apt,2,1,2,North Center,North,88,66,71
+997,35,4.5,53,Private room,2,1,1,North Center,North,88,66,71
+998,130,5,30,Entire home/apt,3,1,2,North Center,North,88,66,71
+999,128,5,89,Entire home/apt,9,2,2,North Center,North,88,66,71
+1000,69,5,102,Private room,4,1,2,North Center,North,88,66,71
+1001,150,5,8,Entire home/apt,5,2,3,North Center,North,88,66,71
+1002,109,4.5,14,Entire home/apt,5,2,3,North Center,North,88,66,71
+1003,239,5,27,Entire home/apt,6,3,2,North Center,North,88,66,71
+1004,150,5,37,Entire home/apt,6,2,1,North Center,North,88,66,71
+1005,99,5,13,Entire home/apt,6,3,1,North Center,North,88,66,71
+1006,49,4,7,Entire home/apt,2,1,,North Center,North,88,66,71
+1007,120,5,9,Entire home/apt,3,2,2,North Center,North,88,66,71
+1008,135,5,5,Entire home/apt,4,2,2,North Center,North,88,66,71
+1009,116,4.5,24,Entire home/apt,4,2,3,North Center,North,88,66,71
+1010,90,4.5,8,Private room,1,1,1,North Center,North,88,66,71
+1011,54,5,7,Entire home/apt,4,2,3,North Center,North,88,66,71
+1012,95,4.5,5,Entire home/apt,2,0,1,North Center,North,88,66,71
+1013,42,5,3,Private room,2,1,1,North Center,North,88,66,71
+1014,100,5,4,Entire home/apt,2,1,2,North Center,North,88,66,71
+1015,65,4.5,3,Private room,2,1,1,North Center,North,88,66,71
+1016,200,4.5,3,Entire home/apt,7,3,3,North Park,Far North,73,54,72
+1017,130,5,35,Entire home/apt,6,3,2,North Park,Far North,73,54,72
+1018,51,5,3,Private room,2,1,2,North Park,Far North,73,54,72
+1019,75,5,15,Entire home/apt,2,1,3,North Park,Far North,73,54,72
+1020,135,4.5,6,Entire home/apt,2,1,1,North Park,Far North,73,54,72
+1021,100,5,19,Private room,2,1,2,North Park,Far North,73,54,72
+1022,49,4.5,7,Private room,2,1,1,North Park,Far North,73,54,72
+1023,95,5,75,Entire home/apt,4,1,1,O'Hare,Far North,57,51,44
+1024,80,5,9,Private room,2,1,1,O'Hare,Far North,57,51,44
+1025,100,5,6,Entire home/apt,2,2,3,O'Hare,Far North,57,51,44
+1026,60,5,15,Private room,2,1,2,O'Hare,Far North,57,51,44
+1027,51,5,44,Private room,2,1,1,O'Hare,Far North,57,51,44
+1028,99,3.5,4,Entire home/apt,3,2,1,Portage Park,Northwest,74,59,64
+1029,24,5,4,Shared room,4,1,2,Portage Park,Northwest,74,59,64
+1030,39,4.5,6,Private room,2,1,1,Portage Park,Northwest,74,59,64
+1031,250,4,43,Entire home/apt,10,4,1,Portage Park,Northwest,74,59,64
+1032,22,4.5,6,Shared room,4,1,2,Portage Park,Northwest,74,59,64
+1033,54,5,21,Private room,2,1,1,Portage Park,Northwest,74,59,64
+1034,39,5,8,Private room,3,1,2,Portage Park,Northwest,74,59,64
+1035,45,5,14,Private room,1,1,2,Portage Park,Northwest,74,59,64
+1036,25,5,4,Shared room,3,1,,Portage Park,Northwest,74,59,64
+1037,55,5,13,Private room,2,1,2,Portage Park,Northwest,74,59,64
+1038,79,4,3,Entire home/apt,2,2,1,Portage Park,Northwest,74,59,64
+1039,29,4.5,22,Shared room,4,1,1,Portage Park,Northwest,74,59,64
+1040,29,5,9,Shared room,4,1,,Portage Park,Northwest,74,59,64
+1041,74,5,7,Entire home/apt,4,1,1,Portage Park,Northwest,74,59,64
+1042,86,4.5,106,Entire home/apt,5,2,1,Portage Park,Northwest,74,59,64
+1043,29,4.5,6,Shared room,3,1,2,Portage Park,Northwest,74,59,64
+1044,52,4.5,16,Private room,2,1,2,Portage Park,Northwest,74,59,64
+1045,225,5,133,Entire home/apt,8,3,3,Portage Park,Northwest,74,59,64
+1046,20,4.5,6,Shared room,8,1,,Portage Park,Northwest,74,59,64
+1047,55,4.5,22,Private room,2,1,1,Portage Park,Northwest,74,59,64
+1048,75,5,5,Private room,2,1,1,Pullman,Far Southeast,49,62,51
+1049,94,4.5,28,Entire home/apt,5,2,3,Pullman,Far Southeast,49,62,51
+1050,95,5,3,Private room,2,1,2,Pullman,Far Southeast,49,62,51
+1051,75,5,27,Entire home/apt,1,1,1,Pullman,Far Southeast,49,62,51
+1052,102,5,170,Entire home/apt,3,1,1,Pullman,Far Southeast,49,62,51
+1053,55,4.5,7,Entire home/apt,2,0,4,Rogers Park,Far North,86,74,73
+1054,30,4.5,35,Private room,1,1,1,Rogers Park,Far North,86,74,73
+1055,40,4.5,20,Private room,2,1,1,Rogers Park,Far North,86,74,73
+1056,35,4,5,Entire home/apt,3,0,1,Rogers Park,Far North,86,74,73
+1057,45,5,24,Private room,2,1,1,Rogers Park,Far North,86,74,73
+1058,35,5,14,Private room,1,1,1,Rogers Park,Far North,86,74,73
+1059,40,4.5,14,Private room,2,1,1,Rogers Park,Far North,86,74,73
+1060,149,5,4,Entire home/apt,4,2,2,Rogers Park,Far North,86,74,73
+1061,39,5,10,Private room,1,1,2,Rogers Park,Far North,86,74,73
+1062,103,5,8,Entire home/apt,2,1,2,Rogers Park,Far North,86,74,73
+1063,45,4.5,77,Private room,4,1,1,Rogers Park,Far North,86,74,73
+1064,159,4.5,9,Entire home/apt,4,2,1,Rogers Park,Far North,86,74,73
+1065,169,5,8,Entire home/apt,6,3,2,Rogers Park,Far North,86,74,73
+1066,105,5,43,Entire home/apt,6,2,2,Rogers Park,Far North,86,74,73
+1067,48,4.5,6,Private room,2,1,1,Rogers Park,Far North,86,74,73
+1068,85,4.5,12,Private room,2,1,1,Rogers Park,Far North,86,74,73
+1069,95,4.5,25,Entire home/apt,2,1,3,Rogers Park,Far North,86,74,73
+1070,45,5,7,Shared room,1,1,2,Rogers Park,Far North,86,74,73
+1071,350,5,6,Entire home/apt,10,4,4,Rogers Park,Far North,86,74,73
+1072,45,5,6,Private room,2,1,1,Rogers Park,Far North,86,74,73
+1073,52,5,19,Private room,2,1,2,Rogers Park,Far North,86,74,73
+1074,65,4.5,11,Private room,2,1,2,Rogers Park,Far North,86,74,73
+1075,150,5,4,Entire home/apt,5,2,2,Rogers Park,Far North,86,74,73
+1076,59,5,126,Private room,2,1,2,Rogers Park,Far North,86,74,73
+1077,50,5,40,Private room,2,1,1,Rogers Park,Far North,86,74,73
+1078,40,5,3,Private room,1,1,2,Rogers Park,Far North,86,74,73
+1079,120,4,54,Entire home/apt,8,3,,Rogers Park,Far North,86,74,73
+1080,80,5,13,Entire home/apt,4,0,1,Rogers Park,Far North,86,74,73
+1081,85,4.5,40,Entire home/apt,4,1,2,Rogers Park,Far North,86,74,73
+1082,60,4.5,22,Private room,2,1,1,Rogers Park,Far North,86,74,73
+1083,57,4.5,15,Entire home/apt,3,1,2,Rogers Park,Far North,86,74,73
+1084,75,5,4,Entire home/apt,3,2,2,Rogers Park,Far North,86,74,73
+1085,67,5,16,Private room,2,1,2,Rogers Park,Far North,86,74,73
+1086,65,5,30,Private room,2,1,1,Rogers Park,Far North,86,74,73
+1087,19,4.5,17,Shared room,1,1,2,Rogers Park,Far North,86,74,73
+1088,100,4.5,22,Entire home/apt,4,0,1,Rogers Park,Far North,86,74,73
+1089,50,5,6,Private room,2,1,1,Rogers Park,Far North,86,74,73
+1090,32,5,3,Private room,2,1,2,Rogers Park,Far North,86,74,73
+1091,75,5,67,Private room,2,1,1,Rogers Park,Far North,86,74,73
+1092,90,4,3,Entire home/apt,2,1,2,Rogers Park,Far North,86,74,73
+1093,59,5,109,Private room,2,1,2,Rogers Park,Far North,86,74,73
+1094,96,5,62,Entire home/apt,2,1,2,Rogers Park,Far North,86,74,73
+1095,63,4.5,29,Private room,2,1,5,Rogers Park,Far North,86,74,73
+1096,45,5,34,Private room,2,1,2,Rogers Park,Far North,86,74,73
+1097,63,5,18,Private room,1,1,2,Rogers Park,Far North,86,74,73
+1098,50,5,226,Private room,2,1,1,Rogers Park,Far North,86,74,73
+1099,88,5,18,Private room,6,1,2,Rogers Park,Far North,86,74,73
+1100,86,4.5,17,Entire home/apt,6,2,1,Rogers Park,Far North,86,74,73
+1101,44,4.5,4,Shared room,2,1,1,Rogers Park,Far North,86,74,73
+1102,69,5,96,Private room,2,1,2,Rogers Park,Far North,86,74,73
+1103,25,4.5,3,Shared room,1,1,1,Rogers Park,Far North,86,74,73
+1104,42,4.5,3,Private room,2,1,7,Rogers Park,Far North,86,74,73
+1105,120,4.5,11,Entire home/apt,4,2,,Rogers Park,Far North,86,74,73
+1106,40,4.5,70,Private room,2,1,1,Rogers Park,Far North,86,74,73
+1107,95,4.5,14,Entire home/apt,3,1,2,Rogers Park,Far North,86,74,73
+1108,45,5,54,Private room,2,1,2,Rogers Park,Far North,86,74,73
+1109,100,4.5,11,Entire home/apt,2,1,2,Rogers Park,Far North,86,74,73
+1110,120,5,100,Entire home/apt,5,2,2,Rogers Park,Far North,86,74,73
+1111,50,5,24,Private room,2,1,2,Rogers Park,Far North,86,74,73
+1112,51,5,10,Private room,2,1,1,Rogers Park,Far North,86,74,73
+1113,75,4.5,22,Private room,3,1,1,Rogers Park,Far North,86,74,73
+1114,50,5,6,Private room,2,1,2,Rogers Park,Far North,86,74,73
+1115,240,5,19,Entire home/apt,6,3,2,Rogers Park,Far North,86,74,73
+1116,195,5,5,Entire home/apt,6,2,2,Rogers Park,Far North,86,74,73
+1117,59,4,9,Entire home/apt,2,1,7,Rogers Park,Far North,86,74,73
+1118,75,5,10,Entire home/apt,5,2,2,Rogers Park,Far North,86,74,73
+1119,50,4.5,4,Private room,2,1,1,Rogers Park,Far North,86,74,73
+1120,100,4.5,14,Entire home/apt,4,0,,Rogers Park,Far North,86,74,73
+1121,75,5,7,Private room,2,1,2,Rogers Park,Far North,86,74,73
+1122,58,5,5,Entire home/apt,3,1,1,Rogers Park,Far North,86,74,73
+1123,109,4.5,105,Entire home/apt,7,2,3,Rogers Park,Far North,86,74,73
+1124,124,5,37,Entire home/apt,6,2,1,Rogers Park,Far North,86,74,73
+1125,50,5,20,Private room,2,1,1,Rogers Park,Far North,86,74,73
+1126,55,4.5,48,Private room,2,1,1,Rogers Park,Far North,86,74,73
+1127,45,5,47,Private room,2,1,2,Rogers Park,Far North,86,74,73
+1128,100,4,63,Entire home/apt,6,2,,Rogers Park,Far North,86,74,73
+1129,30,4.5,10,Shared room,3,1,1,Rogers Park,Far North,86,74,73
+1130,65,4.5,123,Entire home/apt,5,2,1,Rogers Park,Far North,86,74,73
+1131,75,5,64,Private room,2,1,2,Rogers Park,Far North,86,74,73
+1132,45,5,9,Private room,2,1,1,Rogers Park,Far North,86,74,73
+1133,55,5,10,Entire home/apt,3,2,3,Rogers Park,Far North,86,74,73
+1134,34,5,12,Private room,2,1,2,Rogers Park,Far North,86,74,73
+1135,100,4.5,3,Shared room,4,1,1,Rogers Park,Far North,86,74,73
+1136,55,4,61,Private room,4,1,1,Rogers Park,Far North,86,74,73
+1137,41,4.5,22,Private room,2,1,2,Rogers Park,Far North,86,74,73
+1138,33,4.5,38,Shared room,2,1,5,Rogers Park,Far North,86,74,73
+1139,100,4.5,17,Entire home/apt,4,1,2,Rogers Park,Far North,86,74,73
+1140,63,5,11,Private room,1,1,2,Rogers Park,Far North,86,74,73
+1141,120,4.5,26,Entire home/apt,5,1,2,Rogers Park,Far North,86,74,73
+1142,37,5,195,Private room,2,1,1,Rogers Park,Far North,86,74,73
+1143,120,4.5,3,Entire home/apt,4,1,7,Rogers Park,Far North,86,74,73
+1144,103,4.5,15,Entire home/apt,5,2,2,Rogers Park,Far North,86,74,73
+1145,50,3.5,34,Entire home/apt,4,1,1,Rogers Park,Far North,86,74,73
+1146,200,5,15,Entire home/apt,6,2,2,Rogers Park,Far North,86,74,73
+1147,50,4.5,17,Private room,2,1,1,Rogers Park,Far North,86,74,73
+1148,75,5,19,Private room,2,1,2,Rogers Park,Far North,86,74,73
+1149,200,5,6,Entire home/apt,6,2,2,Rogers Park,Far North,86,74,73
+1150,45,4,3,Shared room,3,1,2,Rogers Park,Far North,86,74,73
+1151,85,4.5,3,Entire home/apt,4,1,1,Rogers Park,Far North,86,74,73
+1152,40,5,5,Entire home/apt,2,1,1,Rogers Park,Far North,86,74,73
+1153,100,4.5,8,Entire home/apt,3,1,2,Rogers Park,Far North,86,74,73
+1154,85,5,5,Private room,2,1,1,Rogers Park,Far North,86,74,73
+1155,35,2.5,4,Private room,2,1,2,Rogers Park,Far North,86,74,73
+1156,55,5,9,Private room,2,1,1,Rogers Park,Far North,86,74,73
+1157,110,5,20,Entire home/apt,2,1,2,Rogers Park,Far North,86,74,73
+1158,48,5,6,Private room,2,1,1,Rogers Park,Far North,86,74,73
+1159,127,4.5,39,Entire home/apt,5,2,2,Rogers Park,Far North,86,74,73
+1160,75,5,15,Entire home/apt,2,1,1,Rogers Park,Far North,86,74,73
+1161,400,5,7,Entire home/apt,6,2,1,Rogers Park,Far North,86,74,73
+1162,120,5,21,Entire home/apt,4,2,3,Rogers Park,Far North,86,74,73
+1163,149,5,10,Entire home/apt,5,2,4,Rogers Park,Far North,86,74,73
+1164,85,4.5,13,Private room,2,1,2,Rogers Park,Far North,86,74,73
+1165,30,4.5,7,Private room,2,1,1,Rogers Park,Far North,86,74,73
+1166,10,5,4,Shared room,1,1,1,Rogers Park,Far North,86,74,73
+1167,65,5,50,Private room,2,1,2,Rogers Park,Far North,86,74,73
+1168,60,5,26,Private room,2,1,2,Rogers Park,Far North,86,74,73
+1169,145,5,56,Entire home/apt,8,2,2,Rogers Park,Far North,86,74,73
+1170,120,4.5,31,Entire home/apt,6,2,,Rogers Park,Far North,86,74,73
+1171,71,5,26,Private room,2,1,2,Rogers Park,Far North,86,74,73
+1172,159,5,93,Entire home/apt,4,2,2,Rogers Park,Far North,86,74,73
+1173,55,5,12,Entire home/apt,4,1,2,Rogers Park,Far North,86,74,73
+1174,56,5,5,Entire home/apt,4,0,1,Rogers Park,Far North,86,74,73
+1175,45,4.5,4,Entire home/apt,2,1,1,Rogers Park,Far North,86,74,73
+1176,20,4,9,Shared room,3,1,1,South Chicago,Far Southeast,70,63,61
+1177,60,4,8,Private room,2,1,1,South Chicago,Far Southeast,70,63,61
+1178,20,5,9,Shared room,6,1,2,South Chicago,Far Southeast,70,63,61
+1179,20,5,5,Shared room,1,1,2,South Chicago,Far Southeast,70,63,61
+1180,20,4.5,3,Shared room,1,1,1,South Chicago,Far Southeast,70,63,61
+1181,30,4,3,Private room,3,1,1,South Chicago,Far Southeast,70,63,61
+1182,20,4.5,13,Shared room,3,1,1,South Chicago,Far Southeast,70,63,61
+1183,20,4.5,13,Shared room,2,1,1,South Chicago,Far Southeast,70,63,61
+1184,20,4,14,Private room,3,1,1,South Chicago,Far Southeast,70,63,61
+1185,45,4.5,4,Private room,1,1,1,South Chicago,Far Southeast,70,63,61
+1186,65,4.5,5,Private room,4,1,1,South Shore,South,75,68,70
+1187,55,5,4,Private room,1,1,2,South Shore,South,75,68,70
+1188,29,4,8,Private room,2,1,2,South Shore,South,75,68,70
+1189,30,4.5,28,Private room,2,1,1,South Shore,South,75,68,70
+1190,80,5,21,Entire home/apt,2,1,1,South Shore,South,75,68,70
+1191,109,4.5,10,Private room,2,1,1,South Shore,South,75,68,70
+1192,40,4,6,Private room,2,1,1,South Shore,South,75,68,70
+1193,40,4.5,73,Entire home/apt,8,2,1,South Shore,South,75,68,70
+1194,100,4.5,22,Entire home/apt,4,2,2,South Shore,South,75,68,70
+1195,98,5,122,Entire home/apt,2,2,1,South Shore,South,75,68,70
+1196,150,5,9,Entire home/apt,5,2,,The Loop,Central,93,99,84
+1197,199,5,6,Entire home/apt,2,1,4,The Loop,Central,93,99,84
+1198,119,4.5,8,Entire home/apt,2,1,3,The Loop,Central,93,99,84
+1199,499,5,12,Entire home/apt,5,1,5,The Loop,Central,93,99,84
+1200,329,4.5,8,Entire home/apt,10,3,1,The Loop,Central,93,99,84
+1201,200,5,8,Entire home/apt,3,1,,The Loop,Central,93,99,84
+1202,160,5,23,Entire home/apt,4,1,1,The Loop,Central,93,99,84
+1203,185,5,20,Entire home/apt,3,1,2,The Loop,Central,93,99,84
+1204,124,5,7,Private room,2,1,,The Loop,Central,93,99,84
+1205,95,5,34,Private room,1,1,1,The Loop,Central,93,99,84
+1206,195,4.5,103,Entire home/apt,4,1,1,The Loop,Central,93,99,84
+1207,200,5,7,Entire home/apt,2,1,2,The Loop,Central,93,99,84
+1208,249,4.5,10,Entire home/apt,8,2,1,The Loop,Central,93,99,84
+1209,166,5,3,Entire home/apt,4,1,14,The Loop,Central,93,99,84
+1210,195,4.5,6,Entire home/apt,3,1,2,The Loop,Central,93,99,84
+1211,175,5,154,Entire home/apt,3,1,1,The Loop,Central,93,99,84
+1212,135,4,4,Entire home/apt,2,0,1,The Loop,Central,93,99,84
+1213,149,5,5,Entire home/apt,3,1,,The Loop,Central,93,99,84
+1214,275,5,9,Entire home/apt,2,1,6,The Loop,Central,93,99,84
+1215,65,4.5,107,Private room,3,1,3,The Loop,Central,93,99,84
+1216,299,4,6,Entire home/apt,3,1,1,The Loop,Central,93,99,84
+1217,220,4.5,4,Entire home/apt,6,2,9,The Loop,Central,93,99,84
+1218,76,5,4,Private room,2,1,1,The Loop,Central,93,99,84
+1219,225,5,4,Entire home/apt,5,2,1,The Loop,Central,93,99,84
+1220,120,4.5,15,Private room,3,1,,The Loop,Central,93,99,84
+1221,90,5,16,Entire home/apt,5,0,1,The Loop,Central,93,99,84
+1222,250,5,62,Entire home/apt,5,2,1,The Loop,Central,93,99,84
+1223,299,4.5,9,Entire home/apt,10,2,,The Loop,Central,93,99,84
+1224,150,5,28,Entire home/apt,3,0,1,The Loop,Central,93,99,84
+1225,499,5,35,Entire home/apt,6,3,,The Loop,Central,93,99,84
+1226,260,5,4,Entire home/apt,6,2,1,The Loop,Central,93,99,84
+1227,199,5,9,Entire home/apt,8,2,1,The Loop,Central,93,99,84
+1228,89,4,4,Private room,2,1,1,The Loop,Central,93,99,84
+1229,120,3.5,3,Private room,1,1,1,The Loop,Central,93,99,84
+1230,25,4.5,11,Private room,2,1,1,The Loop,Central,93,99,84
+1231,91,4.5,18,Entire home/apt,2,1,7,The Loop,Central,93,99,84
+1232,275,4.5,12,Entire home/apt,5,2,2,The Loop,Central,93,99,84
+1233,189,4,17,Entire home/apt,4,0,2,The Loop,Central,93,99,84
+1234,235,3.5,5,Entire home/apt,5,2,1,The Loop,Central,93,99,84
+1235,225,4.5,3,Entire home/apt,2,1,1,The Loop,Central,93,99,84
+1236,345,4.5,5,Entire home/apt,6,2,3,The Loop,Central,93,99,84
+1237,175,4,3,Entire home/apt,4,1,3,The Loop,Central,93,99,84
+1238,150,4.5,83,Entire home/apt,3,1,,The Loop,Central,93,99,84
+1239,250,4.5,157,Entire home/apt,5,2,1,The Loop,Central,93,99,84
+1240,249,4.5,6,Entire home/apt,8,2,,The Loop,Central,93,99,84
+1241,76,4,6,Private room,2,1,1,The Loop,Central,93,99,84
+1242,209,4.5,6,Entire home/apt,4,1,7,The Loop,Central,93,99,84
+1243,200,4.5,3,Entire home/apt,4,1,2,The Loop,Central,93,99,84
+1244,299,5,35,Entire home/apt,4,2,,The Loop,Central,93,99,84
+1245,155,4.5,23,Entire home/apt,4,1,1,The Loop,Central,93,99,84
+1246,195,5,63,Entire home/apt,5,1,1,The Loop,Central,93,99,84
+1247,215,5,34,Entire home/apt,3,1,2,The Loop,Central,93,99,84
+1248,388,5,40,Entire home/apt,5,2,,The Loop,Central,93,99,84
+1249,80,5,13,Private room,2,1,3,The Loop,Central,93,99,84
+1250,149,4.5,7,Entire home/apt,3,0,,The Loop,Central,93,99,84
+1251,155,5,4,Entire home/apt,6,1,2,The Loop,Central,93,99,84
+1252,120,4.5,4,Entire home/apt,4,2,3,The Loop,Central,93,99,84
+1253,25,5,5,Entire home/apt,1,0,1,The Loop,Central,93,99,84
+1254,145,4.5,6,Entire home/apt,3,1,3,The Loop,Central,93,99,84
+1255,299,5,10,Entire home/apt,8,2,1,The Loop,Central,93,99,84
+1256,299,5,8,Entire home/apt,10,2,,The Loop,Central,93,99,84
+1257,299,5,6,Entire home/apt,10,2,1,The Loop,Central,93,99,84
+1258,195,4.5,11,Entire home/apt,4,1,1,The Loop,Central,93,99,84
+1259,199,5,8,Entire home/apt,8,2,,The Loop,Central,93,99,84
+1260,129,5,15,Entire home/apt,2,0,3,The Loop,Central,93,99,84
+1261,200,5,33,Entire home/apt,4,1,1,The Loop,Central,93,99,84
+1262,46,5,261,Private room,2,1,3,The Loop,Central,93,99,84
+1263,259,4.5,4,Entire home/apt,5,2,2,The Loop,Central,93,99,84
+1264,149,5,5,Entire home/apt,4,2,3,The Loop,Central,93,99,84
+1265,145,5,5,Entire home/apt,4,1,3,The Loop,Central,93,99,84
+1266,199,4.5,11,Entire home/apt,8,2,,The Loop,Central,93,99,84
+1267,125,5,3,Entire home/apt,3,1,1,The Loop,Central,93,99,84
+1268,68,4.5,99,Private room,4,1,1,The Loop,Central,93,99,84
+1269,78,5,3,Private room,2,1,,The Loop,Central,93,99,84
+1270,100,5,15,Entire home/apt,3,1,1,The Loop,Central,93,99,84
+1271,195,4.5,23,Entire home/apt,5,2,3,The Loop,Central,93,99,84
+1272,275,5,60,Entire home/apt,5,2,1,The Loop,Central,93,99,84
+1273,108,5,108,Private room,2,1,1,The Loop,Central,93,99,84
+1274,250,5,15,Entire home/apt,5,2,1,The Loop,Central,93,99,84
+1275,160,5,3,Entire home/apt,4,1,5,The Loop,Central,93,99,84
+1276,200,4,8,Entire home/apt,4,0,3,The Loop,Central,93,99,84
+1277,140,4.5,4,Private room,2,1,1,The Loop,Central,93,99,84
+1278,99,4.5,25,Entire home/apt,3,1,3,The Loop,Central,93,99,84
+1279,500,4.5,45,Entire home/apt,8,2,,The Loop,Central,93,99,84
+1280,125,5,7,Private room,2,1,2,The Loop,Central,93,99,84
+1281,375,5,23,Entire home/apt,8,3,,The Loop,Central,93,99,84
+1282,89,4.5,17,Entire home/apt,2,0,2,The Loop,Central,93,99,84
+1283,140,5,36,Entire home/apt,2,0,1,The Loop,Central,93,99,84
+1284,47,4.5,120,Private room,2,1,4,The Loop,Central,93,99,84
+1285,329,5,10,Entire home/apt,10,3,1,The Loop,Central,93,99,84
+1286,250,4.5,11,Entire home/apt,5,2,1,The Loop,Central,93,99,84
+1287,298,5,4,Entire home/apt,10,2,,The Loop,Central,93,99,84
+1288,100,4.5,5,Private room,4,1,2,The Loop,Central,93,99,84
+1289,199,5,11,Entire home/apt,6,2,1,The Loop,Central,93,99,84
+1290,50,4,13,Private room,2,1,1,The Loop,Central,93,99,84
+1291,195,4.5,4,Entire home/apt,3,1,2,The Loop,Central,93,99,84
+1292,250,5,8,Entire home/apt,4,1,,The Loop,Central,93,99,84
+1293,275,5,47,Entire home/apt,5,2,1,The Loop,Central,93,99,84
+1294,250,4.5,149,Entire home/apt,6,2,1,The Loop,Central,93,99,84
+1295,220,4.5,10,Entire home/apt,4,1,5,The Loop,Central,93,99,84
+1296,175,4.5,99,Entire home/apt,3,1,1,The Loop,Central,93,99,84
+1297,100,4.5,28,Entire home/apt,2,2,1,Uptown,Far North,91,79,82
+1298,975,5,50,Entire home/apt,16,5,2,Uptown,Far North,91,79,82
+1299,199,5,10,Entire home/apt,2,1,,Uptown,Far North,91,79,82
+1300,60,5,4,Private room,4,1,1,Uptown,Far North,91,79,82
+1301,69,5,33,Private room,3,1,1,Uptown,Far North,91,79,82
+1302,85,5,8,Shared room,4,1,1,Uptown,Far North,91,79,82
+1303,27,5,10,Shared room,1,1,3,Uptown,Far North,91,79,82
+1304,48,5,88,Private room,1,1,3,Uptown,Far North,91,79,82
+1305,131,5,4,Entire home/apt,5,3,3,Uptown,Far North,91,79,82
+1306,200,5,12,Entire home/apt,3,2,3,Uptown,Far North,91,79,82
+1307,99,4.5,21,Entire home/apt,2,1,7,Uptown,Far North,91,79,82
+1308,160,5,4,Entire home/apt,7,2,3,Uptown,Far North,91,79,82
+1309,75,5,23,Private room,3,1,1,Uptown,Far North,91,79,82
+1310,105,5,5,Private room,3,1,1,Uptown,Far North,91,79,82
+1311,90,5,6,Entire home/apt,4,1,1,Uptown,Far North,91,79,82
+1312,85,4.5,3,Entire home/apt,2,1,2,Uptown,Far North,91,79,82
+1313,110,5,34,Entire home/apt,3,1,,Uptown,Far North,91,79,82
+1314,95,5,3,Entire home/apt,2,0,2,Uptown,Far North,91,79,82
+1315,17,5,17,Shared room,1,1,1,Uptown,Far North,91,79,82
+1316,75,5,3,Private room,2,1,1,Uptown,Far North,91,79,82
+1317,80,4.5,7,Entire home/apt,4,2,3,Uptown,Far North,91,79,82
+1318,95,4.5,17,Entire home/apt,2,0,2,Uptown,Far North,91,79,82
+1319,111,4.5,21,Entire home/apt,2,1,2,Uptown,Far North,91,79,82
+1320,188,5,26,Entire home/apt,4,2,,Uptown,Far North,91,79,82
+1321,65,5,7,Private room,2,1,2,Uptown,Far North,91,79,82
+1322,50,5,8,Entire home/apt,2,0,1,Uptown,Far North,91,79,82
+1323,90,4.5,31,Entire home/apt,3,0,1,Uptown,Far North,91,79,82
+1324,58,5,60,Private room,2,1,1,Uptown,Far North,91,79,82
+1325,55,4.5,12,Private room,2,1,2,Uptown,Far North,91,79,82
+1326,65,5,15,Private room,2,1,2,Uptown,Far North,91,79,82
+1327,81,5,43,Private room,2,1,3,Uptown,Far North,91,79,82
+1328,26,4.5,4,Shared room,1,1,1,Uptown,Far North,91,79,82
+1329,55,5,3,Private room,1,1,2,Uptown,Far North,91,79,82
+1330,250,5,15,Entire home/apt,8,3,2,Uptown,Far North,91,79,82
+1331,109,5,3,Private room,2,1,1,Uptown,Far North,91,79,82
+1332,65,4.5,20,Private room,3,1,,Uptown,Far North,91,79,82
+1333,70,5,13,Private room,2,1,3,Uptown,Far North,91,79,82
+1334,199,5,28,Entire home/apt,6,2,,Uptown,Far North,91,79,82
+1335,190,4.5,20,Entire home/apt,8,3,3,Uptown,Far North,91,79,82
+1336,220,4.5,38,Entire home/apt,9,2,2,Uptown,Far North,91,79,82
+1337,70,4.5,27,Private room,2,1,3,Uptown,Far North,91,79,82
+1338,148,5,23,Entire home/apt,5,3,,Uptown,Far North,91,79,82
+1339,45,5,4,Entire home/apt,6,4,1,Uptown,Far North,91,79,82
+1340,67,4,12,Private room,2,1,1,Uptown,Far North,91,79,82
+1341,650,4.5,6,Entire home/apt,9,4,2,Uptown,Far North,91,79,82
+1342,85,5,49,Private room,2,1,2,Uptown,Far North,91,79,82
+1343,72,4.5,33,Private room,2,1,1,Uptown,Far North,91,79,82
+1344,145,5,24,Entire home/apt,6,2,2,Uptown,Far North,91,79,82
+1345,190,4.5,20,Entire home/apt,8,3,3,Uptown,Far North,91,79,82
+1346,46,5,19,Private room,2,1,1,Uptown,Far North,91,79,82
+1347,50,5,5,Private room,2,1,1,Uptown,Far North,91,79,82
+1348,95,4.5,3,Entire home/apt,2,1,1,Uptown,Far North,91,79,82
+1349,159,5,7,Entire home/apt,5,2,2,Uptown,Far North,91,79,82
+1350,399,5,13,Entire home/apt,6,2,,Uptown,Far North,91,79,82
+1351,119,5,29,Entire home/apt,6,2,2,Uptown,Far North,91,79,82
+1352,55,4.5,35,Private room,2,1,1,Uptown,Far North,91,79,82
+1353,60,4.5,13,Private room,2,1,1,Uptown,Far North,91,79,82
+1354,180,5,126,Private room,6,1,1,Uptown,Far North,91,79,82
+1355,150,5,24,Entire home/apt,4,1,2,Uptown,Far North,91,79,82
+1356,90,5,77,Private room,2,1,2,Uptown,Far North,91,79,82
+1357,150,4.5,17,Entire home/apt,8,3,3,Uptown,Far North,91,79,82
+1358,68,5,72,Private room,2,1,,Uptown,Far North,91,79,82
+1359,85,5,3,Entire home/apt,4,1,1,Uptown,Far North,91,79,82
+1360,150,5,14,Entire home/apt,4,2,3,Uptown,Far North,91,79,82
+1361,86,4.5,61,Entire home/apt,2,0,1,Uptown,Far North,91,79,82
+1362,85,5,5,Private room,2,1,2,Uptown,Far North,91,79,82
+1363,38,5,8,Private room,1,1,3,Uptown,Far North,91,79,82
+1364,100,5,40,Private room,2,1,1,Uptown,Far North,91,79,82
+1365,75,5,7,Private room,2,1,1,Uptown,Far North,91,79,82
+1366,499,5,11,Entire home/apt,8,3,,Uptown,Far North,91,79,82
+1367,90,5,5,Entire home/apt,3,1,1,Uptown,Far North,91,79,82
+1368,75,5,39,Private room,2,1,2,Uptown,Far North,91,79,82
+1369,466,5,15,Entire home/apt,8,3,,Uptown,Far North,91,79,82
+1370,74,5,189,Private room,2,1,3,Uptown,Far North,91,79,82
+1371,55,4.5,6,Private room,2,1,2,Uptown,Far North,91,79,82
+1372,90,5,27,Entire home/apt,2,1,2,Uptown,Far North,91,79,82
+1373,80,5,7,Private room,2,1,2,Uptown,Far North,91,79,82
+1374,130,4.5,12,Entire home/apt,8,2,3,Uptown,Far North,91,79,82
+1375,100,5,101,Private room,2,1,2,Uptown,Far North,91,79,82
+1376,80,4.5,38,Private room,2,1,2,Washington Park,South,68,73,67
+1377,80,5,38,Private room,2,1,2,Washington Park,South,68,73,67
+1378,35,5,8,Shared room,1,1,1,Washington Park,South,68,73,67
+1379,49,4.5,39,Private room,2,1,1,Washington Park,South,68,73,67
+1380,75,5,25,Private room,2,1,1,West Elsdon,Southwest,70,62,60
+1381,120,5,10,Entire home/apt,2,1,1,West Elsdon,Southwest,70,62,60
+1382,29,5,23,Private room,2,1,1,West Elsdon,Southwest,70,62,60
+1383,110,4.5,3,Entire home/apt,6,3,,West Elsdon,Southwest,70,62,60
+1384,85,5,7,Entire home/apt,6,3,2,West Englewood,Southwest,68,63,63
+1385,34,5,153,Private room,2,1,1,West Lawn,Southwest,70,57,58
+1386,34,5,153,Private room,2,1,1,West Lawn,Southwest,70,57,58
+1387,12,5,5,Entire home/apt,6,2,1,West Lawn,Southwest,70,57,58
+1388,175,5,33,Entire home/apt,2,1,1,West Town,West,91,75,89
+1389,199,4,10,Entire home/apt,4,2,,West Town,West,91,75,89
+1390,110,5,9,Entire home/apt,4,1,2,West Town,West,91,75,89
+1391,65,4.5,14,Private room,2,1,1,West Town,West,91,75,89
+1392,105,5,61,Entire home/apt,4,2,2,West Town,West,91,75,89
+1393,132,4,44,Entire home/apt,7,2,2,West Town,West,91,75,89
+1394,76,4.5,4,Private room,2,1,1,West Town,West,91,75,89
+1395,250,4,28,Entire home/apt,11,4,2,West Town,West,91,75,89
+1396,130,4.5,125,Entire home/apt,3,2,2,West Town,West,91,75,89
+1397,175,4.5,7,Entire home/apt,2,1,1,West Town,West,91,75,89
+1398,70,5,8,Private room,2,1,1,West Town,West,91,75,89
+1399,137,5,36,Entire home/apt,6,3,,West Town,West,91,75,89
+1400,145,5,12,Entire home/apt,3,2,1,West Town,West,91,75,89
+1401,150,4.5,5,Entire home/apt,4,1,3,West Town,West,91,75,89
+1402,200,5,15,Entire home/apt,2,1,2,West Town,West,91,75,89
+1403,129,5,79,Entire home/apt,3,1,,West Town,West,91,75,89
+1404,114,4.5,28,Entire home/apt,2,1,,West Town,West,91,75,89
+1405,79,5,70,Private room,2,1,1,West Town,West,91,75,89
+1406,200,4.5,10,Entire home/apt,7,2,1,West Town,West,91,75,89
+1407,199,5,3,Entire home/apt,6,2,,West Town,West,91,75,89
+1408,169,5,136,Entire home/apt,5,2,2,West Town,West,91,75,89
+1409,165,5,17,Entire home/apt,6,2,2,West Town,West,91,75,89
+1410,65,4.5,45,Entire home/apt,5,2,,West Town,West,91,75,89
+1411,300,4.5,10,Entire home/apt,4,2,,West Town,West,91,75,89
+1412,199,5,3,Entire home/apt,2,2,2,West Town,West,91,75,89
+1413,98,5,9,Entire home/apt,3,0,1,West Town,West,91,75,89
+1414,110,5,61,Private room,2,1,3,West Town,West,91,75,89
+1415,75,5,32,Private room,2,1,1,West Town,West,91,75,89
+1416,209,5,35,Entire home/apt,6,2,3,West Town,West,91,75,89
+1417,65,4.5,11,Private room,2,1,1,West Town,West,91,75,89
+1418,209,5,13,Entire home/apt,8,3,2,West Town,West,91,75,89
+1419,175,5,4,Entire home/apt,5,1,2,West Town,West,91,75,89
+1420,90,4.5,16,Entire home/apt,6,2,3,West Town,West,91,75,89
+1421,65,5,130,Private room,2,1,2,West Town,West,91,75,89
+1422,110,5,31,Private room,2,1,,West Town,West,91,75,89
+1423,189,4.5,18,Entire home/apt,6,2,1,West Town,West,91,75,89
+1424,140,5,13,Entire home/apt,4,2,2,West Town,West,91,75,89
+1425,124,5,4,Entire home/apt,4,1,1,West Town,West,91,75,89
+1426,133,4.5,3,Entire home/apt,4,2,3,West Town,West,91,75,89
+1427,98,5,59,Entire home/apt,4,2,2,West Town,West,91,75,89
+1428,150,5,4,Entire home/apt,4,1,2,West Town,West,91,75,89
+1429,178,4.5,7,Entire home/apt,3,1,2,West Town,West,91,75,89
+1430,85,5,11,Private room,2,1,1,West Town,West,91,75,89
+1431,265,4.5,22,Entire home/apt,6,3,1,West Town,West,91,75,89
+1432,135,4.5,52,Entire home/apt,5,2,2,West Town,West,91,75,89
+1433,80,5,28,Private room,2,1,,West Town,West,91,75,89
+1434,45,4.5,143,Private room,1,1,2,West Town,West,91,75,89
+1435,140,5,6,Entire home/apt,4,1,2,West Town,West,91,75,89
+1436,175,5,48,Entire home/apt,4,2,3,West Town,West,91,75,89
+1437,215,5,40,Entire home/apt,12,4,1,West Town,West,91,75,89
+1438,75,4.5,15,Entire home/apt,3,2,10,West Town,West,91,75,89
+1439,85,5,15,Entire home/apt,3,1,1,West Town,West,91,75,89
+1440,200,4,6,Entire home/apt,6,2,1,West Town,West,91,75,89
+1441,150,5,5,Entire home/apt,4,2,1,West Town,West,91,75,89
+1442,65,4.5,22,Shared room,4,1,1,West Town,West,91,75,89
+1443,175,5,5,Entire home/apt,4,2,2,West Town,West,91,75,89
+1444,210,5,24,Entire home/apt,8,3,3,West Town,West,91,75,89
+1445,149,4.5,3,Entire home/apt,5,2,1,West Town,West,91,75,89
+1446,49,5,38,Private room,2,1,1,West Town,West,91,75,89
+1447,295,5,15,Entire home/apt,9,3,1,West Town,West,91,75,89
+1448,80,5,25,Private room,2,1,2,West Town,West,91,75,89
+1449,65,5,4,Private room,2,1,,West Town,West,91,75,89
+1450,160,5,3,Entire home/apt,2,1,1,West Town,West,91,75,89
+1451,225,5,7,Entire home/apt,5,2,2,West Town,West,91,75,89
+1452,75,4.5,43,Private room,2,1,1,West Town,West,91,75,89
+1453,121,5,125,Entire home/apt,4,2,,West Town,West,91,75,89
+1454,60,5,18,Private room,1,1,1,West Town,West,91,75,89
+1455,415,5,3,Entire home/apt,11,4,2,West Town,West,91,75,89
+1456,110,5,11,Private room,2,1,2,West Town,West,91,75,89
+1457,75,5,29,Private room,2,1,,West Town,West,91,75,89
+1458,100,5,5,Private room,3,1,,West Town,West,91,75,89
+1459,55,5,5,Shared room,1,1,1,West Town,West,91,75,89
+1460,225,5,3,Entire home/apt,4,2,5,West Town,West,91,75,89
+1461,70,5,71,Private room,2,1,1,West Town,West,91,75,89
+1462,137,5,30,Entire home/apt,5,3,,West Town,West,91,75,89
+1463,85,5,26,Private room,2,1,1,West Town,West,91,75,89
+1464,195,5,46,Entire home/apt,2,1,2,West Town,West,91,75,89
+1465,200,4.5,7,Entire home/apt,8,3,3,West Town,West,91,75,89
+1466,45,4.5,24,Private room,2,1,3,West Town,West,91,75,89
+1467,85,5,7,Private room,2,1,,West Town,West,91,75,89
+1468,75,5,20,Entire home/apt,2,2,10,West Town,West,91,75,89
+1469,200,5,12,Entire home/apt,4,1,2,West Town,West,91,75,89
+1470,70,5,15,Private room,1,1,1,West Town,West,91,75,89
+1471,100,5,4,Entire home/apt,2,1,1,West Town,West,91,75,89
+1472,90,4,23,Private room,2,1,1,West Town,West,91,75,89
+1473,119,4.5,22,Private room,2,1,1,West Town,West,91,75,89
+1474,90,5,36,Entire home/apt,2,2,3,West Town,West,91,75,89
+1475,130,5,31,Private room,2,1,3,West Town,West,91,75,89
+1476,45,5,6,Private room,1,1,1,West Town,West,91,75,89
+1477,160,4.5,9,Entire home/apt,3,2,1,West Town,West,91,75,89
+1478,349,4.5,14,Entire home/apt,8,3,1,West Town,West,91,75,89
+1479,149,4.5,15,Entire home/apt,4,2,,West Town,West,91,75,89
+1480,60,5,44,Private room,2,1,1,West Town,West,91,75,89
+1481,123,5,14,Entire home/apt,6,1,2,West Town,West,91,75,89
+1482,94,5,11,Entire home/apt,4,1,2,West Town,West,91,75,89
+1483,80,5,13,Private room,2,1,1,West Town,West,91,75,89
+1484,125,5,8,Entire home/apt,4,1,3,West Town,West,91,75,89
+1485,250,5,11,Entire home/apt,10,2,2,West Town,West,91,75,89
+1486,150,5,4,Private room,5,1,2,West Town,West,91,75,89
+1487,129,5,17,Private room,2,1,1,West Town,West,91,75,89
+1488,114,4,41,Entire home/apt,10,1,2,West Town,West,91,75,89
+1489,80,4.5,36,Private room,4,1,1,West Town,West,91,75,89
+1490,90,4.5,7,Private room,2,1,1,West Town,West,91,75,89
+1491,99,5,9,Private room,2,1,1,West Town,West,91,75,89
+1492,80,5,16,Private room,2,1,2,West Town,West,91,75,89
+1493,80,4.5,14,Entire home/apt,6,2,2,West Town,West,91,75,89
+1494,120,5,13,Entire home/apt,5,1,2,West Town,West,91,75,89
+1495,95,5,15,Private room,4,1,1,West Town,West,91,75,89
+1496,100,5,19,Private room,2,1,1,West Town,West,91,75,89
+1497,119,4.5,20,Entire home/apt,3,1,2,West Town,West,91,75,89
+1498,135,5,30,Entire home/apt,4,1,2,West Town,West,91,75,89
+1499,130,5,11,Entire home/apt,3,1,2,West Town,West,91,75,89
+1500,100,5,10,Entire home/apt,2,1,3,West Town,West,91,75,89
+1501,55,4.5,96,Private room,2,1,2,West Town,West,91,75,89
+1502,45,5,137,Private room,1,1,2,West Town,West,91,75,89
+1503,85,4.5,37,Private room,4,1,1,West Town,West,91,75,89
+1504,144,5,18,Entire home/apt,3,1,1,West Town,West,91,75,89
+1505,189,4.5,34,Entire home/apt,7,3,,West Town,West,91,75,89
+1506,150,5,10,Private room,2,1,1,West Town,West,91,75,89
+1507,300,5,14,Entire home/apt,10,2,1,West Town,West,91,75,89
+1508,185,5,19,Entire home/apt,5,2,5,West Town,West,91,75,89
+1509,199,4.5,67,Entire home/apt,6,2,1,West Town,West,91,75,89
+1510,555,5,35,Entire home/apt,10,3,,West Town,West,91,75,89
+1511,50,5,25,Private room,2,1,1,West Town,West,91,75,89
+1512,90,5,13,Private room,2,1,1,West Town,West,91,75,89
+1513,80,4.5,15,Entire home/apt,3,2,2,West Town,West,91,75,89
+1514,121,5,68,Entire home/apt,3,1,,West Town,West,91,75,89
+1515,99,4.5,19,Entire home/apt,2,1,2,West Town,West,91,75,89
+1516,500,5,3,Entire home/apt,6,4,1,West Town,West,91,75,89
+1517,77,4.5,32,Shared room,4,1,1,West Town,West,91,75,89
+1518,110,4,7,Private room,2,1,1,West Town,West,91,75,89
+1519,700,4.5,18,Entire home/apt,12,4,1,West Town,West,91,75,89
+1520,90,5,23,Entire home/apt,4,1,2,West Town,West,91,75,89
+1521,124,4.5,44,Entire home/apt,6,2,2,West Town,West,91,75,89
+1522,175,5,15,Entire home/apt,4,2,2,West Town,West,91,75,89
+1523,99,5,22,Private room,2,1,1,West Town,West,91,75,89
+1524,75,5,17,Private room,2,1,3,West Town,West,91,75,89
+1525,100,5,7,Private room,2,1,1,West Town,West,91,75,89
+1526,300,5,24,Entire home/apt,13,3,,West Town,West,91,75,89
+1527,96,5,24,Private room,2,1,1,West Town,West,91,75,89
+1528,50,5,17,Private room,2,1,1,West Town,West,91,75,89
+1529,145,4.5,17,Entire home/apt,4,0,1,West Town,West,91,75,89
+1530,100,4.5,145,Entire home/apt,4,2,1,West Town,West,91,75,89
+1531,225,4.5,46,Entire home/apt,6,3,2,West Town,West,91,75,89
+1532,50,4.5,4,Private room,3,1,2,West Town,West,91,75,89
+1533,179,5,30,Entire home/apt,5,2,,West Town,West,91,75,89
+1534,95,4.5,3,Private room,2,1,,West Town,West,91,75,89
+1535,99,4.5,29,Entire home/apt,4,2,,West Town,West,91,75,89
+1536,80,4.5,32,Private room,2,1,1,West Town,West,91,75,89
+1537,195,5,9,Entire home/apt,10,3,2,West Town,West,91,75,89
+1538,135,5,8,Private room,2,1,3,West Town,West,91,75,89
+1539,260,5,19,Entire home/apt,4,2,1,West Town,West,91,75,89
+1540,35,5,39,Private room,2,1,2,West Town,West,91,75,89
+1541,119,5,74,Entire home/apt,4,1,,West Town,West,91,75,89
+1542,35,4.5,3,Private room,2,1,1,Woodlawn,South,69,73,72
+1543,41,5,11,Private room,3,1,1,Woodlawn,South,69,73,72
+1544,55,4.5,12,Private room,2,1,1,Woodlawn,South,69,73,72
+1545,55,5,45,Private room,3,1,1,Woodlawn,South,69,73,72
+1546,125,5,7,Entire home/apt,6,2,3,Woodlawn,South,69,73,72
+1547,51,3.5,3,Private room,4,1,1,Woodlawn,South,69,73,72
+1548,99,5,10,Entire home/apt,4,1,2,Woodlawn,South,69,73,72
+1549,99,4.5,16,Entire home/apt,2,1,1,Woodlawn,South,69,73,72
+1550,50,5,80,Private room,2,1,1,Woodlawn,South,69,73,72
+1551,125,5,9,Entire home/apt,6,2,2,Woodlawn,South,69,73,72
+1552,40,5,239,Private room,3,1,2,Woodlawn,South,69,73,72
+1553,85,5,5,Private room,4,1,1,Woodlawn,South,69,73,72
+1554,59,5,123,Private room,2,1,1,Woodlawn,South,69,73,72
+1555,80,4.5,5,Entire home/apt,2,0,1,Woodlawn,South,69,73,72
+1556,100,4,3,Entire home/apt,4,1,1,Woodlawn,South,69,73,72
+1557,85,5,4,Private room,3,1,3,Woodlawn,South,69,73,72
+1558,100,5,5,Entire home/apt,4,2,1,Woodlawn,South,69,73,72
+1559,55,4,5,Private room,3,1,3,Woodlawn,South,69,73,72
+1560,90,4.5,25,Entire home/apt,4,2,2,Woodlawn,South,69,73,72
+1561,115,4.5,37,Entire home/apt,6,3,1,Woodlawn,South,69,73,72

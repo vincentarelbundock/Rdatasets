@@ -1,0 +1,124 @@
+<!DOCTYPE html><html><head><title>R: Wireworms controlled by fumigants in a latin square</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>cochran.wireworms</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Wireworms controlled by fumigants in a latin square
+</h2>
+
+<h3>Description</h3>
+
+<p>Wireworms controlled by fumigants in a latin square
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 25 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>trt</code></dt><dd><p>fumigant treatment, 5 levels</p>
+</dd>
+<dt><code>worms</code></dt><dd><p>count of wireworms per plot</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Plots were approximately 22 cm by 13 cm.  Layout of the experiment was a
+latin square.  The number of wireworms in each plot was counted,
+following soil fumigation the previous year.
+</p>
+
+
+<h3>Source</h3>
+
+<p>W. G. Cochran (1938).
+Some difficulties in the statistical analysis of replicated experiments.
+<em>Empire Journal of Experimental Agriculture</em>, 6, 157&ndash;175.
+</p>
+
+
+<h3>References</h3>
+
+<p>Ron Snee (1980). Graphical Display of Means.
+<em>The American Statistician</em>, 34, 195-199.
+https://www.jstor.org/stable/2684060 
+https://doi.org/10.1080/00031305.1980.10483028
+</p>
+<p>W. Cochran (1940). The analysis of variance when experimental errors
+follow the Poisson or binomial laws.
+<em>The Annals of Mathematical Statistics</em>, 11, 335-347.
+https://www.jstor.org/stable/2235680 
+</p>
+<p>G W Snedecor and W G Cochran, 1980. <em>Statistical Methods</em>,
+Iowa State University Press.  Page 288.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(cochran.wireworms)
+dat &lt;- cochran.wireworms
+
+libs(desplot)
+desplot(dat, worms ~ col*row,
+        text=trt, cex=1, # aspect unknown
+        main="cochran.wireworms")
+
+# Trt K is effective, but not the others.  Really, this says it all.
+libs(lattice)
+bwplot(worms ~ trt, dat, main="cochran.wireworms", xlab="Treatment")
+
+# Snedecor and Cochran do ANOVA on sqrt(x+1).
+dat &lt;- transform(dat, rowf=factor(row), colf=factor(col))
+m1 &lt;- aov(sqrt(worms+1) ~ rowf + colf + trt, data=dat)
+anova(m1)
+
+# Instead of transforming, use glm
+m2 &lt;- glm(worms ~ trt + rowf + colf, data=dat, family="poisson")
+anova(m2)
+
+# GLM with random blocking.
+libs(lme4)
+m3 &lt;- glmer(worms ~ -1 +trt +(1|rowf) +(1|colf), data=dat, family="poisson")
+summary(m3)
+## Fixed effects:
+##      Estimate Std. Error z value Pr(&gt;|z|)    
+## trtK   0.1393     0.4275   0.326    0.745    
+## trtM   1.7814     0.2226   8.002 1.22e-15 ***
+## trtN   1.9028     0.2142   8.881  &lt; 2e-16 ***
+## trtO   1.7147     0.2275   7.537 4.80e-14 ***
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

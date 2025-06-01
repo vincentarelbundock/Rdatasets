@@ -1,0 +1,178 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of potato in UK, yields and trait...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>talbot.potato</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of potato in UK, yields and trait scores at 12 locations
+</h2>
+
+<h3>Description</h3>
+
+<p>Yield and 14 trait scores for each of 9 potato varieties at 12
+locations in UK.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("talbot.potato.traits")
+data("talbot.potato.yield")
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>The <code>talbot.potato.yield</code> dataframe has 126 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype/variety</p>
+</dd>
+<dt><code>trait</code></dt><dd><p>trait</p>
+</dd>
+<dt><code>score</code></dt><dd><p>trait score, 1-9</p>
+</dd>
+</dl>
+
+<p>The <code>talbot.potato.yield</code> dataframe has 108 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype/variety</p>
+</dd>
+<dt><code>loc</code></dt><dd><p>location/center</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, t/ha</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The <code>talbot.potato.yield</code> dataframe contains mean tuber yields
+(t/ha) of 9 varieties of potato at 12 centers in the United Kingdom
+over five years 1983-1987.  The following abbreviations are used for
+the centers.
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+    BU </td><td style="text-align: left;"> Bush </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    CA </td><td style="text-align: left;"> Cambridge </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    CB </td><td style="text-align: left;"> Conon Bridge </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    CC </td><td style="text-align: left;"> Crossacreevy </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    CP </td><td style="text-align: left;"> Cockle Park </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    CR </td><td style="text-align: left;"> Craibstone </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    GR </td><td style="text-align: left;"> Greenmount </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    HA </td><td style="text-align: left;"> Harper Adams </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    MO </td><td style="text-align: left;"> Morley </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    RO </td><td style="text-align: left;"> Rosemaund </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    SB </td><td style="text-align: left;"> Sutton Bonnington </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    TE </td><td style="text-align: left;"> Terrington </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+  </td>
+</tr>
+
+</table>
+
+<p>Used with permission of Mike Talbot.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Mike Talbot and A V Wheelwright, 1989,
+The analysis of genotype x analysis interactions by partial
+least squares regression.
+Biuletyn Oceny Odmian, 21/22, 19&ndash;25.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+libs(pls, reshape2)
+
+data(talbot.potato.traits)
+datt &lt;- talbot.potato.traits
+data(talbot.potato.yield)
+daty &lt;- talbot.potato.yield
+
+datt &lt;- acast(datt, gen ~ trait, value.var='score')
+daty &lt;- acast(daty, gen ~ loc, value.var='yield')  
+
+# Transform columns to zero mean and unit variance
+datt &lt;- scale(datt)
+daty &lt;- scale(daty)
+
+m1 &lt;- plsr(daty ~ datt, ncomp=3)
+summary(m1)
+
+# Loadings factor 1
+lo &lt;- loadings(m1)[,1,drop=FALSE]
+round(-1*lo[order(-1*lo),1,drop=FALSE],2)
+
+biplot(m1, main="talbot.potato - biplot")
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

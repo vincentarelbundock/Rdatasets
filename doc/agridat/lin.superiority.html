@@ -1,0 +1,135 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of 33 barley genotypes in 12...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>lin.superiority</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of 33 barley genotypes in 12 locations
+</h2>
+
+<h3>Description</h3>
+
+<p>Multi-environment trial of 33 barley genotypes in 12 locations
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("lin.superiority")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 396 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype/cultivar</p>
+</dd>
+<dt><code>region</code></dt><dd><p>region</p>
+</dd>
+<dt><code>loc</code></dt><dd><p>location</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield (kg/ha)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Yield of six-row barley from the 1983 annual report of Eastern
+Cooperative Test in Canada.
+</p>
+<p>The named cultivars Bruce, Conquest, Laurier, Leger are checks, while
+the other cultivars were tests.
+</p>
+
+
+<h3>Source</h3>
+
+<p>C. S. Lin, M. R. Binns (1985).
+Procedural approach for assessing cultivar-location data: Pairwise genotype-environment interactions of test cultivars with checks
+<em>Canadian Journal of Plant Science</em>, 1985, 65(4): 1065-1071. Table 1.
+https://doi.org/10.4141/cjps85-136
+</p>
+
+
+<h3>References</h3>
+
+<p>C. S. Lin, M. R. Binns (1988).
+A Superiority Measure Of Cultivar Performance For Cultivar x Location Data.
+<em>Canadian Journal of Plant Science</em>, 68, 193-198.
+https://doi.org/10.4141/cjps88-018
+</p>
+<p>Mohammed Ali Hussein, Asmund Bjornstad, and A. H. Aastveit (2000).
+SASG x ESTAB: A SAS Program for Computing Genotype x Environment
+Stability Statistics.
+<em>Agronomy Journal</em>, 92; 454-459.
+https://doi.org/10.2134/agronj2000.923454x
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(lin.superiority)
+dat &lt;- lin.superiority
+
+libs(latticeExtra)
+libs(reshape2)
+# calculate the superiority measure of Lin &amp; Binns 1988
+
+dat2 &lt;- acast(dat, gen ~ loc, value.var="yield")
+locmean &lt;- apply(dat2, 2, mean)
+locmax &lt;- apply(dat2, 2, max)
+P &lt;- apply(dat2, 1, function(x) {
+  sum((x-locmax)^2)/(2*length(x))
+})/1000
+P &lt;- sort(P)
+round(P) # match Lin &amp; Binns 1988 table 2, column Pi
+
+# atlantic &amp; quebec regions overlap
+# libs(gge)
+# m1 &lt;- gge(dat, yield ~ gen*loc, env.group=region,
+#           main="lin.superiority")
+# biplot(m1)
+
+# create a figure similar to Lin &amp; Binns 1988
+
+# add P, locmean, locmax back into the data
+dat$locmean &lt;- locmean[match(dat$loc, names(locmean))]
+dat$locmax &lt;- locmax[match(dat$loc, names(locmax))]
+dat$P &lt;- P[match(dat$gen, names(P))]
+dat$gen &lt;- reorder(dat$gen, dat$P)
+xyplot(locmax ~ locmean|gen, data=dat,
+       type=c('p','r'), as.table=TRUE, col="gray",
+       main="lin.superiority - Superiority index",
+       xlab="Location Mean",
+       ylab="Yield of single cultivars (blue) &amp; Maximum (gray)") +
+  xyplot(yield ~ locmean|gen, data=dat,
+         type=c('p','r'), as.table=TRUE, pch=19)
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html><html><head><title>R: Automobile UK Collision Claims</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>AutoCollision</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Automobile UK Collision Claims</h2>
+
+<h3>Description</h3>
+
+<p>This data is due to Mildenhall (1999). Mildenhall (1999) considered 8,942 collision losses from private passenger United Kingdom (UK) automobile insurance policies. The data were derived from Nelder and McCullagh (1989, Section 8.4.1) but originated from Baxter et al. (1980). We consider here a sample of n = 32 of Mildenhall data for eight driver types (age groups) and four vehicle classes (vehicle use). The average severity is in pounds sterling adjusted for inflation.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(AutoCollision)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 32 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>Age</code></dt><dd><p>Age of driver, a factor with levels <code>A</code> <code>B</code> <code>C</code> <code>D</code> <code>E</code> <code>F</code> <code>G</code> <code>H</code></p>
+</dd>
+<dt><code>Vehicle_Use</code></dt><dd><p>Purpose of the vehicle use: DriveShort means drive to work but less than 10 miles, DriveLong means drive to work but more than 10 miles, a factor with levels <code>Business</code> <code>DriveLong</code> <code>DriveShort</code> <code>Pleasure</code></p>
+</dd>
+<dt><code>Severity</code></dt><dd><p>Average amount of claims (in pounds sterling), a numeric vector</p>
+</dd>
+<dt><code>Claim_Count</code></dt><dd><p>Number of claims, a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>http://instruction.bus.wisc.edu/jfrees/jfreesbooks/Regression%20Modeling/BookWebDec2010/
+</p>
+<p>DataDescriptions.pdf
+</p>
+
+
+<h3>Source</h3>
+
+<p>http://instruction.bus.wisc.edu/jfrees/jfreesbooks/Regression%20Modeling/BookWebDec2010/data.html
+</p>
+
+
+<h3>References</h3>
+
+<p>Frees E.W. (2010), Regression Modeling with Actuarial and Financial Applications, Cambridge University Press. 
+</p>
+<p>Mildenhall S.J. (1999), A systematic relationship between minimum bias and generalized linear models, in: Proceedings of the Casualty Actuarial Society, 86, p. 393-487.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(AutoCollision)
+## maybe str(AutoCollision) ; plot(AutoCollision) ...
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of wheat, 2 years on the same land</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>montgomery.wheat.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of wheat, 2 years on the same land
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of wheat at Nebraska Experiment Station, 1909 &amp; 1911.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("montgomery.wheat.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 448 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>    
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, grams</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Experiments were conducted by the Nebraska Experiment Station.
+</p>
+<p>A field was sown to Turkey winter wheat in the fall of 1908 and
+harvested in 1909.  The drill, 5.5 feet wide, was driven across the
+first series of 14 blocks, the boundaries of the blocks being later
+established.  Each series was sown the same way, no space was allowed
+between the blocks.  Each block was 5.5 ft square.
+</p>
+<p>The experiment was done 3 times with harvests in 1909, 1910, 1911.
+A simple heatmap of the 3 years' yields are shown in Montgomery
+(1912), figure 3, p. 178.
+</p>
+<p>The 1909 data are given by Montgomery (1913), figure 10, page 37.
+NOTE: North is at the right side of this diagram (as determined by
+comparing yield values with the fertility map in Montgomery 1912, p. 178).
+</p>
+<p>The 1910 data are not available.
+</p>
+<p>The 1911 data are given by Montgomery (1912), figure 1, page
+165. NOTE: North is at the top of this diagram.
+</p>
+<p>Field width: 14 plots * 5.5 feet
+</p>
+<p>Field length: 16 blocks * 5.5 feet
+</p>
+<p>Surface &amp; Pearl (1916) give a simple method for adjusting yield due to
+fertility effects using the 1909 data.
+</p>
+
+
+<h3>Source</h3>
+
+<p>E. G. Montgomery (1912).
+Variation in Yield and Methods of Arranging Plats To Secure
+Comparative Results.
+Twenty-Fifth Annual Report of the Agricultural Experiment Station of Nebraska, 164-180.
+https://books.google.com/books?id=M-5BAQAAMAAJ&amp;pg=RA4-PA164
+</p>
+<p>E. G. Montgomery (1913).
+Experiments in Wheat Breeding: Experimental Error In The Nursery and
+Variation in Nitrogen and Yield.
+U.S. Dept of Agriculture, Bureau of Plant Industry, Bulletin 269.
+Figure 10, page 37.
+https://doi.org/10.5962/bhl.title.43602
+</p>
+
+
+<h3>References</h3>
+
+<p>Surface &amp; Pearl, (1916).
+A method of correcting for soil heterogeneity in variety tests.
+Journal of Agricultural Research, 5, 22, 1039-1050.
+Figure 2.
+https://books.google.com/books?id=BVNyoZXFVSkC&amp;pg=PA1039
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+  
+  data(montgomery.wheat.uniformity)
+  dat &lt;- montgomery.wheat.uniformity
+  dat09 &lt;- subset(dat, year==1909)
+  dat11 &lt;- subset(dat, year==1911)
+
+  # Match the figures of Montgomery 1912 Fig 3, p. 178
+  libs(desplot)
+  desplot(dat09, yield ~ col*row,
+          aspect=1, # true aspect
+          main="montgomery.wheat.uniformity - 1909 yield")
+  desplot(dat, yield ~ col*row, subset= year==1911,
+          aspect=1, # true aspect
+          main="montgomery.wheat.uniformity - 1911 yield")
+
+  # Surface &amp; Pearl adjust 1909 yield for fertility effects.
+  # They calculate smoothed yield as (row sum)*(column sum)/(total)
+  # and subtract this from the overall mean to get 'deviation'.
+  # We can do something similar with a linear model with rows and columns
+  # as factors, then predict yield to get the smooth trend.
+  # Corrected yield = observed - deviation = observed - (smooth-mean)
+  
+  m1 &lt;- lm(yield ~ factor(col) + factor(row), data=dat09)
+  dev1 &lt;- predict(m1) - mean(dat09$yield)
+  # Corrected.  Similar (but not exact) to Surface, fig 2.
+  dat09$correct &lt;- round(dat09$yield - dev1,0)
+
+  libs(desplot)
+  desplot(dat09, yield ~ col*row,
+          shorten="none", text=yield,
+          main="montgomery.wheat.uniformity 1909 observed")
+  desplot(dat09, correct ~ col*row, text=correct,
+          cex=0.8, shorten="none",
+          main="montgomery.wheat.uniformity 1909 corrected")
+  # Corrected yields are slightly shrunk toward overall mean
+  plot(correct~yield,dat09, xlim=c(350,1000), ylim=c(350,1000))
+  abline(0,1)
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

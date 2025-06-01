@@ -1,0 +1,121 @@
+<!DOCTYPE html><html><head><title>R: Graeco-Latin Square experiment in pine</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>devries.pine</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Graeco-Latin Square experiment in pine
+</h2>
+
+<h3>Description</h3>
+
+<p>Graeco-Latin Square experiment in pine
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("devries.pine")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 36 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>block</code></dt><dd><p>block</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>spacing</code></dt><dd><p>spacing treatment</p>
+</dd>
+<dt><code>thinning</code></dt><dd><p>thinning treatment</p>
+</dd>
+<dt><code>volume</code></dt><dd><p>stem volume in m^3/ha</p>
+</dd>
+<dt><code>growth</code></dt><dd><p>annual stem volume increment m^3/ha at age 11</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Experiment conducted on Caribbean Pine at Coebiti in Surinam (Long 55
+28 30 W, Lat 5 18 5 N). Land was cleared in Jan 1965 and planted May
+1965. Each experimental plot was 60m x 60m. Roads 10 m wide run
+between the rows. Each block is thus 180m wide and 200m deep. Data
+were collected only on 40m x 40m plots in the center of each
+experimental unit. Plots were thinned in 1972 and 1975.  
+The two treatment factors (spacing, thinning) were assigned in a
+Graeco-Latin Square design.
+</p>
+<p>Spacing: A=2.5, B=3, C=3.5. Thinning: Z=low, M=medium, S=heavy.
+</p>
+<p>Field width: 4 blocks x 180 m = 720 m
+</p>
+<p>Field length: 1 block x 200 m = 200 m.
+</p>
+
+
+<h3>Source</h3>
+
+<p>P.G. De Vries, J.W. Hildebrand, N.R. De Graaf. (1978).
+Analysis of 11 years growth of carribbean pine in a replicated
+Graeco-Latin square spacing-thinning experiment in Surinam. Page 46, 51.
+https://edepot.wur.nl/287590
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(devries.pine)
+  dat &lt;- devries.pine
+
+  libs(desplot)
+  desplot(dat, volume ~ col*row,
+          main="devries.pine - expt design and tree volume",
+          col=spacing, num=thinning, cex=1, out1=block, aspect=200/720)
+  
+  libs(HH)
+  HH::interaction2wt(volume ~ spacing+thinning, dat,
+                     main="devries.pine")
+
+  # ANOVA matches appendix 5 of DeVries
+  m1 &lt;- aov(volume ~ block + spacing + thinning + block:factor(row) +
+              block:factor(col), data=dat)
+  anova(m1)
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

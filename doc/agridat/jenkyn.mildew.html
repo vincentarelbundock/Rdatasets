@@ -1,0 +1,104 @@
+<!DOCTYPE html><html><head><title>R: Yields from treatment for mildew control</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>jenkyn.mildew</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Yields from treatment for mildew control
+</h2>
+
+<h3>Description</h3>
+
+<p>Yields from treatment for mildew control
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 38 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>plot</code></dt><dd><p>plot number</p>
+</dd>
+<dt><code>trt</code></dt><dd><p>treatment factor, 4 levels</p>
+</dd>
+<dt><code>block</code></dt><dd><p>block factor, 9 levels</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>grain yield, tons/ha</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>There were four spray treatments: 0 (none), 1 (early), 2 (late), R
+(repeated).
+</p>
+<p>Each treatment occurs once between each of the 9 ordered pairs of the
+other treatments.
+</p>
+<p>The first and last plot are not assigned to a block.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Norman Draper and Irwin Guttman (1980).
+Incorporating Overlap Effects from Neighboring Units into Response
+Surface Models.
+<em>Appl Statist</em>, 29, 128&ndash;134.
+https://doi.org/10.2307/2986297
+</p>
+
+
+<h3>References</h3>
+
+<p>Maria Durban, Christine Hackett, Iain Currie.
+Blocks, Trend and Interference in Field Trials.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(jenkyn.mildew)
+dat &lt;- jenkyn.mildew
+
+libs(lattice)
+bwplot(yield ~ trt, dat, main="jenkyn.mildew", xlab="Treatment")
+
+# Residuals from treatment model show obvious spatial trends
+m0 &lt;- lm(yield ~ trt, dat)
+xyplot(resid(m0)~plot, dat, ylab="Residual",
+       main="jenkyn.mildew - treatment model")
+
+# The blocks explain most of the variation
+m1 &lt;- lm(yield ~ trt + block, dat)
+xyplot(resid(m1)~plot, dat, ylab="Residual",
+       main="jenkyn.mildew - block model")
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

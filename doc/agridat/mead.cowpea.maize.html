@@ -1,0 +1,135 @@
+<!DOCTYPE html><html><head><title>R: Intercropping experiment of maize/cowpea</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>mead.cowpea.maize</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Intercropping experiment of maize/cowpea
+</h2>
+
+<h3>Description</h3>
+
+<p>Intercropping experiment of maize/cowpea, multiple nitrogen treatments.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 72 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>block</code></dt><dd><p>block, 3 levels</p>
+</dd>
+<dt><code>nitro</code></dt><dd><p>nitrogen, 4 levels</p>
+</dd>
+<dt><code>cowpea</code></dt><dd><p>cowpea variety, 2 levels</p>
+</dd>
+<dt><code>maize</code></dt><dd><p>maize variety, 3 levels</p>
+</dd>
+<dt><code>cyield</code></dt><dd><p>cowpea yield, kg/ha</p>
+</dd>
+<dt><code>myield</code></dt><dd><p>maize yield, kg/ha</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>An intercropping experiment conducted in Nigeria.  The four nitrogen
+treatments were 0, 40, 80, 120 kg/ha.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Roger Mead. 1990. A Review of Methodology For The Analysis of Intercropping
+Experiments.   Training Working Document No. 6.  CIMMYT.
+https://repository.cimmyt.org/xmlui/handle/10883/868
+</p>
+
+
+<h3>References</h3>
+
+<p>Roger Mead, Robert N Curnow, Anne M Hasted. 2002.
+Statistical Methods in Agriculture and Experimental Biology, 3rd ed.
+Chapman and Hall.  Page 390.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(mead.cowpea.maize)
+dat &lt;- mead.cowpea.maize
+
+# Cowpea and maize yields are clearly in competition
+libs("latticeExtra")
+useOuterStrips(xyplot(myield ~ cyield|maize*cowpea, dat, group=nitro,
+                      main="mead.cowpea.maize - intercropping",
+                      xlab="cowpea yield",
+                      ylab="maize yield", auto.key=list(columns=4)))
+
+
+# Mead Table 2 Cowpea yield anova...strongly affected by maize variety.
+anova(aov(cyield ~ block + maize + cowpea + nitro +
+          maize:cowpea + maize:nitro + cowpea:nitro +
+          maize:cowpea:nitro, dat))
+# Cowpea mean yields for nitro*cowpea
+aggregate(cyield ~ nitro+cowpea, dat, FUN=mean)
+# Cowpea mean yields for each maize variety
+aggregate(cyield ~ maize, dat, FUN=mean)
+
+# Bivariate analysis
+aov.c &lt;- anova(aov(cyield/1000 ~ block + maize + cowpea + nitro +
+          maize:cowpea + maize:nitro + cowpea:nitro +
+          maize:cowpea:nitro, dat))
+
+aov.m &lt;- anova(aov(myield/1000 ~ block + maize + cowpea + nitro +
+          maize:cowpea + maize:nitro + cowpea:nitro +
+          maize:cowpea:nitro, dat))
+
+aov.cm &lt;- anova(aov(cyield/1000 + myield/1000 ~ block + maize + cowpea + nitro +
+          maize:cowpea + maize:nitro + cowpea:nitro +
+          maize:cowpea:nitro, dat))
+
+biv &lt;- cbind(aov.m[,1:2], aov.c[,2], aov.cm[,2])
+names(biv) &lt;- c('df','maize ss','cowpea ss','ss for sum')
+biv$'sum of prod' &lt;- (biv[,4] - biv[,2] - biv[,3] ) /2
+biv$cor &lt;- biv[,5]/(sqrt(biv[,2] * biv[,3]))
+signif(biv,2)
+##                    df maize ss cowpea ss ss for sum sum of prod    cor
+## block               2    0.290    0.0730      0.250      -0.058 -0.400
+## maize               2   18.000    0.4100     13.000      -2.600 -0.980
+## cowpea              1    0.027    0.0060      0.058       0.013  1.000
+## nitro               3   29.000    0.1100     25.000      -1.800 -0.980
+## maize:cowpea        2    1.100    0.0099      0.920      -0.099 -0.950
+## maize:nitro         6    1.300    0.0680      0.920      -0.200 -0.680
+## cowpea:nitro        3    0.240    0.1700      0.150      -0.130 -0.640
+## maize:cowpea:nitro  6    1.300    0.1400      1.300      -0.033 -0.079
+## Residuals          46   16.000    0.6000     14.000      -1.400 -0.460
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

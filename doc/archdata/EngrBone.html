@@ -1,0 +1,92 @@
+<!DOCTYPE html><html><head><title>R: Upper Paleolithic Engraved Bone Design Elements - Spain</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>EngrBone</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Upper Paleolithic Engraved Bone Design Elements - Spain
+</h2>
+
+<h3>Description</h3>
+
+<p>Counts of 44 engraved bone design elements at five Upper Paleolithic hunter-gatherer sites in Cantabrian, Spain.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("EngrBone")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 44 types of engraved bone found at 5 sites.
+</p>
+
+<dl>
+<dt><code>A</code></dt><dd><p>Altamira</p>
+</dd>
+<dt><code>CM</code></dt><dd><p>Cueto de la Mina</p>
+</dd>
+<dt><code>EJ</code></dt><dd><p>El Juyo</p>
+</dd>
+<dt><code>EC</code></dt><dd><p>El Cierro</p>
+</dd>
+<dt><code>LP</code></dt><dd><p>La Paloma</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Counts of 44 engraved bone design elements at five prehistoric hunter-gatherer sites in Cantabrian, Spain. The data were originally analyzed by Conkey (1980) and appear in this format in Kaufman (1998). Kintigh (1984) used these data to illustrate a method for comparing the diversity between samples. The data were scanned from Table 2.4 in Baxter (2003, p. 24).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Baxter, M. J. 2003. <em>Statistics in Archaeology</em>. Arnold, London.
+</p>
+
+
+<h3>References</h3>
+
+<p>Conkey, M. W. 1980. The Identification of Prehistoric Hunter-Gatherer Aggregation Sites: The Case of Altamira. <em>Current Anthropology</em> 21: 609-30.
+</p>
+<p>Kaufman, D. 1998. Measuring Archaeological Diversity: An Application of the Jackknife Technique. <em>American Antiquity</em> 63: 73-85.
+</p>
+<p>Kintigh, K. 1984. Measuring Archaeological Diversity by Comparison with Simulated Assemblages. <em>American Antiquity</em> 49: 44-54.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(EngrBone)
+# Number of engraved bone specimens at each site
+NS &lt;- colSums(EngrBone)
+# Number of kinds of engraved bone at each site
+NT &lt;- colSums(EngrBone&gt;0)
+plot(NS, NT, xlab="Number of Specimens", ylab="Number of Types", main="Engraved Bone", las=1)
+text(NS, NT, names(EngrBone), pos=c(1, 3, 3, 3, 3))
+Key &lt;- apply(attr(EngrBone, "Variables"), 1, paste, collapse=" - ")
+legend("topleft", legend=Key)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

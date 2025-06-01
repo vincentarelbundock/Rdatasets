@@ -1,0 +1,148 @@
+<!DOCTYPE html><html><head><title>R: Counts of webworms in a beet field, with insecticide...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>beall.webworms</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Counts of webworms in a beet field, with insecticide treatments.
+</h2>
+
+<h3>Description</h3>
+
+<p>Counts of webworms in a beet field, with insecticide treatments.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("beall.webworms")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1300 observations on the following 7 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>y</code></dt><dd><p>count of webworms</p>
+</dd>
+<dt><code>block</code></dt><dd><p>block</p>
+</dd>
+<dt><code>trt</code></dt><dd><p>treatment</p>
+</dd>
+<dt><code>spray</code></dt><dd><p>spray treatment yes/no</p>
+</dd>
+<dt><code>lead</code></dt><dd><p>lead treatment yes/no</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The beet webworm lays egg masses as small as 1 egg, seldom exceeding 5
+eggs. The larvae can move freely, but usually mature on the plant on
+which they hatch.
+</p>
+<p>Each plot contained 25 unit areas, each 1 row by 3 feet long.  The row
+width is 22 inches.  The arrangement of plots within the blocks seems
+certain, but the arrangement of the blocks/treatments is not certain,
+since the authors say &quot;since the plots were 5 units long and 5 wide
+it is only practicable to combine them into groups of 5 in one
+direction or the other&quot;.
+</p>
+<p>Treatment 1 = None.  Treatment 2 = Contact spray. Treatment 3 = Lead
+arsenate. Treatment 4 = Both spray, lead arsenate.
+</p>
+
+
+<h3>Source</h3>
+
+ 
+<p>Beall, Geoffrey (1940).
+The fit and significance of contagious distributions when applied to
+observations on larval insects.
+<em>Ecology</em>, 21, 460-474. Table 6.
+https://doi.org/10.2307/1930285
+</p>
+
+
+<h3>References</h3>
+
+<p>Michal Kosma et al. (2019).
+Over-dispersed count data in crop and agronomy research.
+<em>Journal of Agronomy and Crop Science</em>.
+https://doi.org/10.1111/jac.12333
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(beall.webworms)
+dat &lt;- beall.webworms
+
+# Match Beall table 1
+# with(dat, table(y,trt))
+
+libs(lattice)
+histogram(~y|trt, data=dat, layout=c(1,4), as.table=TRUE,
+          main="beall.webworms")
+
+# Visualize Beall table 6.  Block effects may exist, but barely.
+libs(desplot)
+grays &lt;- colorRampPalette(c("white","#252525"))
+desplot(dat, y ~ col*row,
+        col.regions=grays(10),
+        at=0:10-0.5,
+        out1=block, out2=trt, num=trt, flip=TRUE, # aspect unknown
+        main="beall.webworms (count of worms)")
+
+# Following plot suggests interaction is needed
+# with(dat, interaction.plot(spray, lead, y))
+
+# Try the models of Kosma et al, Table 1.
+
+# Poisson model
+m1 &lt;- glm(y ~ block + spray*lead, data=dat, family="poisson")
+logLik(m1) # -1497.719 (df=16)
+
+# Negative binomial model
+# libs(MASS)
+# m2 &lt;- glm.nb(y ~ block + spray*lead, data=dat)
+# logLik(m2) # -1478.341 (df=17)
+
+# # Conway=Maxwell-Poisson model (takes several minutes)
+# libs(spaMM)
+# # estimate nu parameter
+# m3 &lt;- fitme(y ~ block + spray*lead, data=dat, family = COMPoisson())
+# logLik(m3) # -1475.999 
+# # Kosma logLik(m3)=-1717 seems too big. Typo? Different model?
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

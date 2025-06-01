@@ -1,0 +1,93 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of millet</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>li.millet.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of millet
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of millet at China in 1934.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 600 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield (grams)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Crop date estimated to be 1934.
+</p>
+<p>Field was 100 ft x 100 ft.  Plots were 15 feet long by 1 foot wide.
+</p>
+<p>Field width: 100 plots * 1 foot = 100 feet
+</p>
+<p>Field length: 6 plots * 15 feet = 100 feet
+</p>
+<p>Li found the most efficient use of land was obtained with plats 15
+feet long and two rowss wide.  Also satisfactory would be one row 30
+feet long.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Li, HW and Meng, CJ and Liu, TN. 1936.
+Field Results in a Millet Breeding Experiment.
+Agronomy Journal, 28, 1-15.  Table 1.
+https://doi.org/10.2134/agronj1936.00021962002800010001x
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+  
+  data(li.millet.uniformity)
+  dat &lt;- li.millet.uniformity
+
+  mean(dat$yield) # matches Li et al.
+  
+  libs(desplot)
+  desplot(dat, yield~col*row,
+          aspect=100/100, # true aspect
+          main="li.millet.uniformity")
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

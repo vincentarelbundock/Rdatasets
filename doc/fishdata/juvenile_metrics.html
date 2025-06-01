@@ -1,0 +1,68 @@
+<!DOCTYPE html><html><head><title>R: Juvenile fish metrics data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>juvenile_metrics</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Juvenile fish metrics data</h2>
+
+<h3>Description</h3>
+
+<p>A dataset containing metrics data for juvenile Galaxis maculatus.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>juvenile_metrics
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A dataset containing 496 rows and 8 variables
+</p>
+
+<dl>
+<dt>fish_code</dt><dd><p>Foreign key (matches with 'juveniles')</p>
+</dd>
+<dt>standard_length</dt><dd><p>standard length of the fish (distance from
+posterior to caudal peduncle), cm</p>
+</dd>
+<dt>body_depth</dt><dd><p>body depth of the fish at its maximum point, cm</p>
+</dd>
+<dt>age</dt><dd><p>Age of fish when caught (days)</p>
+</dd>
+<dt>birthdate</dt><dd><p>Day fish hatched</p>
+</dd>
+<dt>growth_rate</dt><dd><p>Average daily growth of fish (mm/day)</p>
+</dd>
+<dt>growth_rate</dt><dd><p>Average daily growth of fish over first 10 days of life (mm/day)</p>
+</dd>
+<dt>growth_rate</dt><dd><p>Average daily growth of fish over last 10 days of life (mm/day)</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(juvenile_metrics)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

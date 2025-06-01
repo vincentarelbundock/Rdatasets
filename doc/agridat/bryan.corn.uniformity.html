@@ -1,0 +1,116 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of corn at 3 locations in Iowa.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>bryan.corn.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of corn at 3 locations in Iowa.
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of corn at 3 locations in Iowa.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("bryan.corn.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1728 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>expt</code></dt><dd><p>experiment (variety/orientation)</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, pounds per plot</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Three varieties of corn were planted.
+Each experiment was 48 rows, each row 48 hills long, .65 acres.
+A &quot;hill&quot; is a single hole with possibly multiple seeds.
+Spacing between the hills would be sqrt(43560 sq ft * .64) / 48 = 3.5 feet.
+</p>
+<p>In the experiment code, K=Krug, I=Iodent, M=McCulloch (varieties of
+corn), 23=1923, 25=1925, E=East/West, N=North/South.
+</p>
+<p>Each experiment was aggregated into experimental units by combining 8
+hills, both in East/West direction and also in North/South direction.
+Thus, each field is represented twice in the data, once with &quot;E&quot; in
+the field name and once with &quot;N&quot;.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Arthur Bryan (1933).
+Factors Affecting Experimental Error in Field Plot Tests With Corn.
+Agricultural Experiment Station, Iowa State College. Tables 22-27.
+https://hdl.handle.net/2027/uiug.30112019568168
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  library(agridat)
+  data(bryan.corn.uniformity)
+  dat &lt;- bryan.corn.uniformity
+  
+  libs(desplot)
+  desplot(dat, yield ~ col*row|expt,
+          main="bryan.corn.uniformity",
+          aspect=(48*3.5/(6*8*3.5)), # true aspect
+          flip=TRUE, tick=TRUE)
+
+  # CVs in Table 5, column 8 hills
+  # libs(dplyr)
+  # dat 
+  #   summarize(cv=sd(yield)/mean(yield)*100)
+  ##   expt    cv
+  ## 1 K23E  10.9
+  ## 2 K23N  10.9
+  ## 3 I25E  16.3
+  ## 4 I25N  17.0
+  ## 5 M25E  16.2
+  ## 6 M25N  17.2
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

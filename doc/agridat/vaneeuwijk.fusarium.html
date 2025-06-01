@@ -1,0 +1,130 @@
+<!DOCTYPE html><html><head><title>R: Infection of wheat varieties by Fusarium strains from 1990 to...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>vaneeuwijk.fusarium</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Infection of wheat varieties by Fusarium strains from 1990 to 1993
+</h2>
+
+<h3>Description</h3>
+
+<p>Infection of wheat varieties by Fusarium strains from 1990 to 1993
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("vaneeuwijk.fusarium")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 560 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year, 1990-1993</p>
+</dd>
+<dt><code>strain</code></dt><dd><p>strain of fusarium</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype/variety</p>
+</dd>
+<dt><code>y</code></dt><dd></dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data come from Hungary. There were 20 wheat varieties infected with 7
+strains of Fusarium in the years 1990-1993.  The measured value is a
+rating of the severity of disease due to Fusarium head blight,
+expressed as a number 1-100.
+</p>
+<p>Three-way interactions for varieties 21 and 23 were the only ones in
+1992 suffering from strain infections.  This was due to incorrect
+storage of the innoculum (strain) which rendered it incapable of
+infecting most other varieties.
+</p>
+<p>The data is a subset of the data analyzed by VanEeuwijk et al. 1995.
+</p>
+<p>Used with permission of Fred van Eeuwijk.
+</p>
+
+
+<h3>Source</h3>
+
+<p>van Eeuwijk, Fred A. and Pieter M. Kroonenberg (1998).
+Multiplicative Models for Interaction in Three-Way ANOVA, with Applications to Plant Breeding
+Biometrics, 54, 1315-1333.
+https://doi.org/10.2307/2533660
+</p>
+
+
+<h3>References</h3>
+
+<p>F. A. van Eeuwijk, A. Mesterhazy, Ch. I. Kling, P. Ruckenbauer,
+L. Saur, H. Burstmayr, M. Lemmens, L. C. P. Keizer, N. Maurin,
+C. H. A. Snijders. (1995).
+Assessing non-specificity of resistance in wheat to head blight caused
+by inoculation with European strains of Fusarium culmorum,
+F. graminearum and F. nivale using a multiplicative model for
+interaction.
+Theor Appl Genet. 90(2), 221-8. 
+https://doi.org/10.1007/BF00222205
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+  library(agridat)
+  data(vaneeuwijk.fusarium)
+  dat &lt;- vaneeuwijk.fusarium
+  dat &lt;- transform(dat, year=factor(year))
+  dat &lt;- transform(dat, logity=log((y/100)/(1-y/100)))
+
+  libs(HH)
+  position(dat$year) &lt;- c(3,9,14,19)
+  position(dat$strain) &lt;- c(2,5,8,11,14,17,20)
+  HH::interaction2wt(logity ~ gen+year+strain,dat,rot=c(90,0),
+                     x.between=0, y.between=0,
+                     main="vaneeuwijk.fusarium")
+
+
+  # anova on logit scale. Near match to VanEeuwijk table 6
+  m1 &lt;- aov(logity ~ gen*strain*year, data=dat)
+  anova(m1)
+  ## Response: logity
+  ##                  Df Sum Sq Mean Sq F value Pr(&gt;F)
+  ## gen              19 157.55   8.292               
+  ## strain            6  91.54  15.256               
+  ## year              3 321.99 107.331               
+  ## gen:strain      114  34.03   0.299               
+  ## gen:year         57 140.94   2.473               
+  ## strain:year      18 236.95  13.164               
+  ## gen:strain:year 342  93.15   0.272
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

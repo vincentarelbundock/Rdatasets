@@ -1,0 +1,116 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of peanuts for 10 genotypes in 15...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>kang.peanut</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of peanuts for 10 genotypes in 15 environments
+</h2>
+
+<h3>Description</h3>
+
+<p>Peanut yields for 10 genotypes in 15 environments
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("kang.peanut")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 590 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype factor, 10 levels</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>replicate factor, 4 levels</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield</p>
+</dd>
+<dt><code>env</code></dt><dd><p>environment factor, 15 levels</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Florman, Tegua, mf484, mf485, mf487, mf489 have a long crop cycle.
+The others have a short crop cycle.
+</p>
+<p>This data is also likely used in Casanoves et al 2005,
+&quot;Evaluation of Multienvironment Trials of Peanut Cultivars&quot;, but this
+appears to be a slightly smaller subset (only 10 genotypes, and
+perhaps only the years 96,97,98,99).  Based on the d.f. in their
+table 5, it appears that environment E13 was grown in 1998.
+(5 loc * (4-1) = 15, but the table has 14, and 98-99 had only 3 reps
+instead of 4 reps.)
+</p>
+<p>Data from National Institute of Agricultural Technology, Argentina.
+</p>
+
+
+<h3>Source</h3>
+
+<p>M. S. Kang, M. Balzarini, and J. L. L. Guerra
+(2004). Genotype-by-environment
+interaction&quot;. In: A. Saxton (2004). &quot;Genetic Analysis of Complex
+Traits Using SAS&quot;.
+</p>
+
+
+<h3>References</h3>
+
+<p>Johannes Forkman, Julie Josse, Hans-Peter Piepho (2019).
+Hypothesis Tests for Principal Component Analysis When Variables are Standardized.
+<em>JABES</em> https://doi.org/10.1007/s13253-019-00355-5
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(kang.peanut)
+dat &lt;- kang.peanut
+
+# Table 5.1 of Kang et al. (Chapter 5 of Saxton)
+libs(reshape2)
+Y0 &lt;- acast(dat, env~gen, value.var='yield', fun=mean)
+round(Y0,2)
+
+# GGE biplot of Kang, p. 82.
+libs(gge)
+m1 &lt;- gge(dat, yield~gen*env, scale=FALSE)
+biplot(m1, flip=c(1,1), main="kang.peanut - GGE biplot")
+
+# Forkman 2019, fig 2
+# m2 &lt;- gge(dat, yield~gen*env, scale=TRUE)
+# biplot(m2, main="kang.peanut - GGE biplot")
+# biplot(m2, comps=3:4, main="kang.peanut - GGE biplot")
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

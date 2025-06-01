@@ -1,0 +1,118 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of 33 barley genotypes in 18...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>lin.unbalanced</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of 33 barley genotypes in 18 locations
+</h2>
+
+<h3>Description</h3>
+
+<p>Multi-environment trial of 33 barley genotypes in 18 locations
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("lin.unbalanced")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 405 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype/cultivar</p>
+</dd>
+<dt><code>loc</code></dt><dd><p>location</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield (kg/ha)</p>
+</dd>
+<dt><code>region</code></dt><dd><p>region</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Yield of six-row barley from the 1986 Eastern Cooperative trial
+</p>
+<p>The named cultivars Bruce, Laurier, Leger are checks, while the other
+cultivars were tests. Cultivar names use the following codes:
+</p>
+<p>&quot;A&quot; is for Atlantic-Quebec. &quot;O&quot; is for &quot;Ontario&quot;.
+</p>
+<p>&quot;S&quot; is second-year. &quot;T&quot; is third-year.
+</p>
+
+
+<h3>Source</h3>
+
+<p>C. S. Lin, M. R. Binns (1988).
+A Method for Assessing Regional Trial Data When The Test Cultivars Are
+Unbalanced With Respect to Locations.
+<em>Canadian Journal of Plant Science</em>, 68(4): 1103-1110.
+https://doi.org/10.4141/cjps88-130
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(lin.unbalanced)
+dat &lt;- lin.unbalanced
+
+# location maximum, Lin &amp; Binns table 1
+# aggregate(yield ~ loc, data=dat, FUN=max)
+
+# location mean/index, Lin &amp; Binns, table 1
+dat2 &lt;- subset(dat, is.element(dat$gen,
+  c('Bruce','Laurier','Leger','S1','S2',
+    'S3','S4','S5','S6','S7','T1','T2')))
+aggregate(yield ~ loc, data=dat2, FUN=mean)
+
+libs(reshape2)
+dat3 &lt;- acast(dat, gen ~ loc, value.var="yield")
+libs(lattice)
+lattice::levelplot(t(scale(dat3)), main="lin.unbalanced", xlab="loc", ylab="genotype")
+
+# calculate the superiority measure of Lin &amp; Binns 1988.
+# lower is better
+locmax &lt;- apply(dat3, 2, max, na.rm=TRUE)
+P &lt;- apply(dat3, 1, function(x) {
+  sum((x-locmax)^2, na.rm=TRUE)/(2*length(na.omit(x)))
+})/1000
+P &lt;- sort(P)
+round(P) # match Lin &amp; Binns 1988 table 2, column P
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

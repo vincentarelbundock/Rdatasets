@@ -1,0 +1,106 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of wheat</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>baker.wheat.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of wheat
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of wheat
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("baker.wheat.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 225 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>col</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield (grams)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data was collected in 1939-1940.  The trial consists of sixteen 40 ft. x
+40 ft. blocks subdivided into nine plots each. The data were secured in
+1939-1940 from White Federation wheat. The design of the experiment was
+square with alleys 20 feet wide between blocks. The plots were 10 feet
+long with two guard rows on each side.
+</p>
+<p>Morning glories infested the middle two columns of blocks, uniformly
+over the blocks affected.
+</p>
+<p>The data here include missing values for the alleys so that the field
+map is approximately the correct shape and size.
+</p>
+<p>Field width: 4 blocks of 40 feet + 3 alleys of 20 feet = 220 feet.
+</p>
+<p>Field length: 4 blocks of 40 feet + 3 alleys of 20 feet = 220 feet.
+</p>
+
+
+<h3>Source</h3>
+
+<p>G. A. Baker, E. B. Roessler (1957).
+Implications of a uniformity trial with small plots of wheat.
+Hilgardia, 27, 183-188.
+https://hilgardia.ucanr.edu/Abstract/?a=hilg.v27n05p183
+https://doi.org/10.3733/hilg.v27n05p183
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+  library(agridat)
+  data(baker.wheat.uniformity)
+  dat &lt;- baker.wheat.uniformity
+
+  libs(desplot)
+  desplot(dat, yield ~ col*row,
+          flip=TRUE, aspect=1,
+          main="baker.wheat.uniformity")
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of millet</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>tesfaye.millet</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of millet
+</h2>
+
+<h3>Description</h3>
+
+<p>Multi-environment trial of millet
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("tesfaye.millet")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 415 observations on the following 9 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+<dt><code>site</code></dt><dd><p>site (location)</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>replicate</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column ordinate</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row ordinate</p>
+</dd>
+<dt><code>plot</code></dt><dd><p>plot number</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype</p>
+</dd>
+<dt><code>entry_number</code></dt><dd><p>entry</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, kg/ha</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Experiments conducted at Bako and Assosa research centers in Ethiopia.
+The data has:
+4 years, 2 sites = 7 environments, 
+2-3 reps per trial, 
+47 genotypes.
+</p>
+<p>Tesfaye et al used asreml to fit a GxE model with Factor Analytic
+covariance structure for the GxE part and AR1xAR1 for spatial
+residuals at each site.
+</p>
+<p>Data in PloS ONE  was published under Creative Commons Attribution License.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Tesfaye K, Alemu T, Argaw T, de Villiers S, Assefa E (2023)
+Evaluation of finger millet (Eleusine coracana (L.) Gaertn.) in multi-environment trials using enhanced statistical models.
+PLoS ONE 18(2): e0277499.
+https://doi.org/10.1371/journal.pone.0277499
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(tesfaye.millet)
+  dat &lt;- tesfaye.millet
+
+  dat &lt;- transform(dat, year=factor(year), site=factor(site))
+  libs(dplyr,asreml,lucid)
+  dat &lt;- mutate(dat,
+                env=factor(paste0(site,year)),
+                gen=factor(gen),
+                rep=factor(rep),
+                xfac=factor(col), yfac=factor(row))
+  libs(desplot)
+  desplot(dat, yield~col*row|env, main="tesfaye.millet")
+  dat &lt;- arrange(dat, env, xfac, yfac)
+
+  # Fixed environment
+  # Random row/col within environment, Factor Analytic GxE
+  # AR1xAR1 spatial residuals within each environment
+  if(require("asreml", quietly=TRUE)){
+    libs(asreml)
+    m1 &lt;- asreml(yield ~ 1 + env,
+                 data=dat,
+                 random = ~  at(env):xfac + at(env):yfac + gen:fa(env),
+                 residual = ~ dsum( ~ ar1(xfac):ar1(yfac)|env) )
+    m1 &lt;- update(m1)
+    lucid::vc(m1)
+  }
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

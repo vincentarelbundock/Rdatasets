@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head><title>R: Human Brain Cell Marker Genes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>markers_human_brain_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Human Brain Cell Marker Genes</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, markers_human_brain_df, is a data frame containing the top 1,000
+marker genes for each of six major brain cell types (astrocytes, endothelial cells,
+microglia, neurons, oligodendrocytes, and OPCs) identified through meta-analysis
+of human brain gene expression data.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(markers_human_brain_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 5,500 observations and 2 variables:
+</p>
+
+<dl>
+<dt>markers</dt><dd><p>Character: Gene symbol for cell-type specific marker</p>
+</dd>
+<dt>cell</dt><dd><p>Character: Cell type classification (astrocytes/endothelial/microglia/neurons/oligodendrocytes/OPCs)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'markers_human_brain_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps distinguish
+this dataset as part of the NeuroDataSets package. The suffix 'df' indicates
+that the dataset is a data frame. The original content has not been modified.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the BRETIGEA package version 1.0.3.
+</p>
+
+</main>
+
+</div>
+</body></html>

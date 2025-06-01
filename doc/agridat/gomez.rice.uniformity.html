@@ -1,0 +1,128 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of rice</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gomez.rice.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of rice
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of rice in Philippines.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 648 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>grain yield, grams/m^2</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>An area 20 meters by 38 meters was planted to rice variety IR8.  At
+harvest, a 1-meter border was removed around the field and discarded.
+Each square meter (1 meter by 1 meter) was harvested and weighed.
+</p>
+<p>Field width: 18 plots x 1 m = 18 m
+</p>
+<p>Field length: 38 plots x 1 m = 38 m
+</p>
+<p>Note that Gomez published a paper in 1969 on rice uniformity data from
+four trials conducted in the 1968 dry and wet seasons. It is likely
+that this data is taken from one of those four trials. Estimated
+harvest year is 1968.
+&quot;Estimation of optimum plot size from rice uniformity data&quot;.
+https://www.cabidigitallibrary.org/doi/full/10.5555/19711601105
+</p>
+<p>Used with permission of Kwanchai Gomez.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Gomez, K.A. and Gomez, A.A. (1984).
+Statistical Procedures for Agricultural Research.
+Wiley-Interscience. Page 481.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(gomez.rice.uniformity)
+dat &lt;- gomez.rice.uniformity
+
+libs(desplot)
+# Raw data plot
+desplot(dat, yield ~ col*row,
+        aspect=38/18, # true aspect
+        main="gomez.rice.uniformity")
+
+libs(desplot, reshape2)
+# 3x3 moving average.  Gomez figure 12.1
+dmat &lt;- melt(dat, id.var=c('col','row'))
+dmat &lt;- acast(dmat, row~col)
+m0 &lt;- dmat
+cx &lt;- 2:17
+rx &lt;- 2:35
+dmat3 &lt;- (m0[rx+1,cx+1]+m0[rx+1,cx]+m0[rx+1,cx-1]+
+            m0[rx,cx+1]+m0[rx,cx]+m0[rx,cx-1]+
+            m0[rx-1,cx+1]+m0[rx-1,cx]+m0[rx-1,cx-1])/9
+dat3 &lt;- melt(dmat3)
+desplot(dat3, value~Var2*Var1,
+        aspect=38/18,
+        at=c(576,637,695,753,811,870,927),
+        main="gomez.rice.uniformity smoothed")
+
+
+libs(agricolae)
+ # Gomez table 12.4
+tab &lt;- index.smith(dmat,
+                   main="gomez.rice.uniformity",
+                   col="red")$uniformity
+tab &lt;- data.frame(tab)
+  
+## # Gomez figure 12.2
+## op &lt;- par(mar=c(5,4,4,4)+.1)
+## m1 &lt;- nls(Vx ~ 9041/Size^b, data=tab, start=list(b=1))
+## plot(Vx ~ Size, tab, xlab="Plot size, m^2")
+## lines(fitted(m1) ~ tab$Size, col='red')
+## axis(4, at=tab$Vx, labels=tab$CV)
+## mtext("CV", 4, line=2)
+## par(op)
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html><html><head><title>R: Insecticide treatments for carrot fly larvae</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>wheatley.carrot</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Insecticide treatments for carrot fly larvae
+</h2>
+
+<h3>Description</h3>
+
+<p>Insecticide treatments for carrot fly larvae.
+Two insecticides with five depths.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("wheatley.carrot")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 36 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>treatment</code></dt><dd><p>treatment factor, 11 levels</p>
+</dd>
+<dt><code>insecticide</code></dt><dd><p>insecticide factor</p>
+</dd>
+<dt><code>depth</code></dt><dd><p>depth</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>block</p>
+</dd>
+<dt><code>damaged</code></dt><dd><p>number of damaged plants</p>
+</dd>
+<dt><code>total</code></dt><dd><p>total number of plants</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>In 1964 an experiment was conducted with microplots to evaluate the
+effectiveness of treatments against carrot fly larvae.
+The treatment factor is a combination of insecticide and depth.
+</p>
+<p>Hardin &amp; Hilbe used this data to fit a generalized binomial model.
+</p>
+<p>Famoye (1995) used the same data to fit a generalized binomial regression model.
+Results for Famoye are not shown.
+</p>
+
+
+<h3>Source</h3>
+
+  
+<p>G A Wheatley &amp; H Freeman. (1982).
+A method of using the proportions of undamaged carrots or parsnips to
+estimate the relative population densities of carrot fly (Psila rosae)
+larvae, and its practical applications.
+<em>Annals of Applied Biology</em>, 100, 229-244.  Table 2.
+</p>
+<p>https://doi.org/10.1111/j.1744-7348.1982.tb01935.x
+</p>
+
+
+<h3>References</h3>
+
+<p>James William Hardin, Joseph M. Hilbe.
+<em>Generalized Linear Models and Extensions</em>, 2nd ed.
+</p>
+<p>F Famoye (1995). Generalized Binomial Regression.
+<em>Biom J</em>, 37, 581-594.  
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+data(wheatley.carrot)
+dat &lt;- wheatley.carrot
+
+# Observed proportions of damage
+dat &lt;- transform(dat, prop=damaged/total)
+libs(lattice)
+xyplot(prop~depth|insecticide, data=dat, subset=treatment!="T11",
+       cex=1.5, main="wheatley.carrot", ylab="proportion damaged")
+
+# Model for Wheatley. Deviance for treatment matches Wheatley, but other
+# deviances do not.  Why?
+# treatment:rep is the residual
+m1 &lt;- glm(cbind(damaged,total-damaged) ~ rep + treatment + treatment:rep,
+          data=dat, family=binomial("cloglog"))
+anova(m1)
+
+# GLM of Hardin &amp; Hilbe p. 161. By default, R uses T01 as the base,
+# but Hardin uses T11. Results match.
+m2 &lt;- glm(cbind(damaged,total-damaged) ~ rep + C(treatment, base=11),
+          data=dat, family=binomial("cloglog"))
+summary(m2)
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

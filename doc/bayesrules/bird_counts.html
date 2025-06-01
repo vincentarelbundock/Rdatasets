@@ -1,0 +1,66 @@
+<!DOCTYPE html><html><head><title>R: Bird Counts Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>bird_counts</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Bird Counts Data</h2>
+
+<h3>Description</h3>
+
+<p>Bird count data collected between the years 1921 and 2017, in late December, by birdwatchers in the Ontario, Canada area.
+The data was made available by the Bird Studies Canada website and distributed through the R for Data Science TidyTuesday project.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>bird_counts
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 18706 rows and 7 variables. Each row represents observations for the given bird species in the given year.
+</p>
+
+<dl>
+<dt>year</dt><dd><p>year of data collection</p>
+</dd>
+<dt>species</dt><dd><p>scientific name of observed bird species</p>
+</dd>
+<dt>species_latin</dt><dd><p>latin name of observed bird species</p>
+</dd>
+<dt>count</dt><dd><p>number of birds observed</p>
+</dd>
+<dt>hours</dt><dd><p>total person-hours of observation period</p>
+</dd>
+<dt>count_per_hour</dt><dd><p>count divided by hours</p>
+</dd>
+<dt>count_per_week</dt><dd><p>count_per_hour multiplied by 168 hours per week</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://github.com/rfordatascience/tidytuesday/blob/master/data/2019/2019-06-18/bird_counts.csv/">https://github.com/rfordatascience/tidytuesday/blob/master/data/2019/2019-06-18/bird_counts.csv/</a>.
+</p>
+
+</main>
+
+</div>
+</body></html>

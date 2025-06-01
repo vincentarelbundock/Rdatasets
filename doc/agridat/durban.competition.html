@@ -1,0 +1,124 @@
+<!DOCTYPE html><html><head><title>R: Sugar beet yields with competition effects</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>durban.competition</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Sugar beet yields with competition effects
+</h2>
+
+<h3>Description</h3>
+
+<p>Sugar beet yields with competition effects
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 114 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>Genotype factor, 36 levels plus Border</p>
+</dd>
+<dt><code>col</code></dt><dd><p>Column</p>
+</dd>
+<dt><code>block</code></dt><dd><p>Row/Block</p>
+</dd>
+<dt><code>wheel</code></dt><dd><p>Position relative to wheel tracks</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>Root yields, kg/plot</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This sugar-beet trial was conducted in 1979.
+</p>
+<p>Single-row plots, 12 m long, 0.5 m between rows.  Each block is made
+up of all 36 genotypes laid out side by side.  Guard/border plots are
+at each end.  Root yields were collected.
+</p>
+<p>Wheel tracks are located between columns 1 and 2, and between columns
+5 and 6, for each set of six plots.  Each genotype was randomly
+allocated once to each pair of plots (1,6), (2,5), (3,4) across the
+three reps.  Wheel effect were not significant in _this_ trial.
+</p>
+<p>Field width: 18m + 1m guard rows = 19m
+</p>
+<p>Field length: 3 blocks * 12m + 2*0.5m spacing = 37m
+Retrieved from
+https://www.ma.hw.ac.uk/~iain/research/JAgSciData/data/Trial1.dat
+</p>
+<p>Used with permission of Iain Currie.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Durban, M., Currie, I. and R. Kempton, 2001.
+Adjusting for fertility and competition in variety trials.
+J. of Agricultural Science, 136, 129&ndash;140.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+data(durban.competition)
+dat &lt;- durban.competition
+
+# Check that genotypes were balanced across wheel tracks.
+with(dat, table(gen,wheel))
+
+libs(desplot)
+desplot(dat, yield ~ col*block,
+        out1=block, text=gen, col=wheel, aspect=37/19, # true aspect
+        main="durban.competition")
+
+
+# Calculate residual after removing block/genotype effects
+m1 &lt;- lm(yield ~ gen + block, data=dat)
+dat$res &lt;- resid(m1)
+
+## desplot(dat, res ~ col*block, out1=block, text=gen, col=wheel,
+##         main="durban.competition - residuals")
+
+# Calculate mean of neighboring plots
+dat$comp &lt;- NA
+dat$comp[3:36] &lt;- ( dat$yield[2:35] + dat$yield[4:37] ) / 2
+dat$comp[41:74] &lt;- ( dat$yield[40:73] + dat$yield[42:75] ) / 2
+dat$comp[79:112] &lt;- ( dat$yield[78:111] + dat$yield[80:113] ) / 2
+
+# Demonstrate the competition effect
+# Competitor plots have low/high yield -&gt; residuals are negative/positive
+libs(lattice)
+xyplot(res~comp, dat, type=c('p','r'), main="durban.competition",
+       xlab="Average yield of neighboring plots", ylab="Residual")
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

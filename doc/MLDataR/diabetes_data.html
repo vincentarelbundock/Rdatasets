@@ -1,0 +1,97 @@
+<!DOCTYPE html><html><head><title>R: Diabetes datasets</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>diabetes_data</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Diabetes datasets</h2>
+
+<h3>Description</h3>
+
+<p>Diabetes datasets
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>diabetes_data
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 520 rows and 17 variables:
+</p>
+
+<dl>
+<dt>Age</dt><dd><p>age of the patient presenting with diabetes</p>
+</dd>
+<dt>Gender</dt><dd><p>gender of the patient with diabetes</p>
+</dd>
+<dt>ExcessUrination</dt><dd><p>if the patient has a history of excessive urination</p>
+</dd>
+<dt>Polydipsia</dt><dd><p>abnormal thurst, accompanied by the excessive intake of water or fluid</p>
+</dd>
+<dt>WeightLossSudden</dt><dd><p>Sudden weight loss that has recently occured</p>
+</dd>
+<dt>Fatigue</dt><dd><p>Fatigue or weakness</p>
+</dd>
+<dt>Polyphagia</dt><dd><p>excessive or extreme hunger</p>
+</dd>
+<dt>GenitalThrush</dt><dd><p>patient has thrush fungus on or near their genital region</p>
+</dd>
+<dt>BlurredVision</dt><dd><p>history of blurred vision</p>
+</dd>
+<dt>Itching</dt><dd><p>skin itching</p>
+</dd>
+<dt>Irritability</dt><dd><p>general irritability and mood issues</p>
+</dd>
+<dt>DelayHealing</dt><dd><p>delayed healing of wounds</p>
+</dd>
+<dt>PartialPsoriasis</dt><dd><p>partial psoriasis on the body</p>
+</dd>
+<dt>MuscleStiffness</dt><dd><p>stiffness of the muscles</p>
+</dd>
+<dt>Alopecia</dt><dd><p>scalp alopecia and hair shedding</p>
+</dd>
+<dt>Obesity</dt><dd><p>Classified as obese</p>
+</dd>
+<dt>DiabeticClass</dt><dd><p>Class label to indicate whether the patient is diabetic or not</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Collected by Gary Hutson <a href="mailto:hutsons-hacks@outlook.com">hutsons-hacks@outlook.com</a>, Dec-2021
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library(dplyr)
+data(diabetes_data)
+# Convert diabetes data to factor'
+diabetes_data &lt;- diabetes_data %&gt;%
+ glimpse() %&gt;%
+ mutate(DiabeticClass = as.factor(DiabeticClass))
+ is.factor(diabetes_data$DiabeticClass)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

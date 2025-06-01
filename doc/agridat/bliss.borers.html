@@ -1,0 +1,129 @@
+<!DOCTYPE html><html><head><title>R: Corn borer infestation under four treatments</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>bliss.borers</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Corn borer infestation under four treatments
+</h2>
+
+<h3>Description</h3>
+
+<p>Corn borer infestation under four treatments
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 48 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>borers</code></dt><dd><p>number of borers per hill</p>
+</dd>
+<dt><code>treat</code></dt><dd><p>treatment factor</p>
+</dd>
+<dt><code>freq</code></dt><dd><p>frequency of the borer count</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Four treatments to control corn borers.  Treatment 1 is the control.
+</p>
+<p>In 15 blocks, for each treatment, 8 hills of plants were examined, and the
+number of corn borers present was recorded.  The data here are
+aggregated across blocks.
+</p>
+<p>Bliss mentions that the level of infestation varied significantly
+between the blocks.
+</p>
+
+
+<h3>Source</h3>
+
+<p>C. Bliss and R. A. Fisher. (1953).
+Fitting the Negative Binomial Distribution to Biological Data.
+<em>Biometrics</em>, 9, 176&ndash;200.  Table 3.
+https://doi.org/10.2307/3001850
+</p>
+<p>Geoffrey Beall. 1940. The Fit and Significance of Contagious
+Distributions when Applied to Observations on Larval Insects.
+<em>Ecology</em>, 21, 460-474.  Page 463.
+https://doi.org/10.2307/1930285
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(bliss.borers)
+dat &lt;- bliss.borers
+
+# Add 0 frequencies
+dat0 &lt;- expand.grid(borers=0:26, treat=c('T1','T2','T3','T4'))
+dat0 &lt;- merge(dat0,dat, all=TRUE)
+dat0$freq[is.na(dat0$freq)] &lt;- 0
+
+# Expand to individual (non-aggregated) counts for each hill
+dd &lt;- data.frame(borers = rep(dat0$borers, times=dat0$freq),
+                 treat = rep(dat0$treat, times=dat0$freq))
+
+libs(lattice)
+histogram(~borers|treat, dd, type='count', breaks=0:27-.5,
+          layout=c(1,4), main="bliss.borers", xlab="Borers per hill")
+
+
+libs(MASS)
+  m1 &lt;- glm.nb(borers~0+treat, data=dd)
+  # Bliss, table 3, presents treatment means, which are matched by:
+  exp(coef(m1)) # 4.033333 3.166667 1.483333 1.508333
+  # Bliss gives treatment values k = c(1.532,1.764,1.333,1.190).
+  # The mean of these is 1.45, similar to this across-treatment estimate
+  m1$theta # 1.47
+
+
+# Plot observed and expected distributions for treatment 2
+libs(latticeExtra)
+  xx &lt;- 0:26
+  yy &lt;- dnbinom(0:26, mu=3.17, size=1.47)*120 # estimates are from glm.nb
+  histogram(~borers, dd, type='count', subset=treat=='T2',
+            main="bliss.borers - trt T2 observed and expected",
+            breaks=0:27-.5) +
+              xyplot(yy~xx, col='navy', type='b')
+
+
+# "Poissonness"-type plot
+libs(vcd)
+  dat2 &lt;- droplevels(subset(dat, treat=='T2'))
+  vcd::distplot(dat2$borers, type = "nbinomial",
+           main="bliss.borers neg binomialness plot")
+  # Better way is a rootogram
+  g1 &lt;- vcd::goodfit(dat2$borers, "nbinomial")
+  plot(g1, main="bliss.borers - Treatment 2")
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

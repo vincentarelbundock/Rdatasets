@@ -1,0 +1,95 @@
+<!DOCTYPE html><html><head><title>R: Book Banning Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>book_banning</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Book Banning Data</h2>
+
+<h3>Description</h3>
+
+<p>The book banning data was collected by Fast and Hegland as part of a course project
+at St Olaf College, and distributed with &quot;Broadening Your Statistical Horizons&quot; by Legler and Roback.
+This data set includes the features and outcomes for 931 book challenges 
+(ie. requests to ban a book) made in the US between 2000 and 2010.
+Information on the books being challenged and the characteristics of these books 
+were collected from the American Library Society. State-level demographic information and 
+political leanings were obtained from the US Census Bureau and Cook Political Report, respectively.
+Due to an outlying large number of challenges, book challenges made in the state of Texas 
+were omitted.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>book_banning
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 931 rows and 17 variables. Each row represents a single book challenge within the given state and date.
+</p>
+
+<dl>
+<dt>title</dt><dd><p>title of book being challenged</p>
+</dd>
+<dt>book_id</dt><dd><p>identifier for the book</p>
+</dd>
+<dt>author</dt><dd><p>author of the book</p>
+</dd>
+<dt>date</dt><dd><p>date of the challenge</p>
+</dd>
+<dt>year</dt><dd><p>year of the challenge</p>
+</dd>
+<dt>removed</dt><dd><p>whether or not the challenge was successful (the book was removed)</p>
+</dd>
+<dt>explicit</dt><dd><p>whether the book was challenged for sexually explicit material</p>
+</dd>
+<dt>antifamily</dt><dd><p>whether the book was challenged for anti-family material</p>
+</dd>
+<dt>occult</dt><dd><p>whether the book was challenged for occult material</p>
+</dd>
+<dt>language</dt><dd><p>whether the book was challenged for inapropriate language</p>
+</dd>
+<dt>lgbtq</dt><dd><p>whether the book was challenged for LGBTQ material</p>
+</dd>
+<dt>violent</dt><dd><p>whether the book was challenged for violent material</p>
+</dd>
+<dt>state</dt><dd><p>US state in which the challenge was made</p>
+</dd>
+<dt>political_value_index</dt><dd><p>Political Value Index of the state (negative = leans Republican, 0 = neutral, positive = leans Democrat)</p>
+</dd>
+<dt>median_income</dt><dd><p>median income in the state, relative to the average state median income</p>
+</dd>
+<dt>hs_grad_rate</dt><dd><p>high school graduation rate, in percent, relative to the average state high school graduation rate</p>
+</dd>
+<dt>college_grad_rate</dt><dd><p>college graduation rate, in percent, relative to the average state college graduation rate</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Shannon Fast and Thomas Hegland (2011). Book Challenges: A Statistical Examination. Project for Statistics 316-Advanced Statistical Modeling, St. Olaf College.
+Julie Legler and Paul Roback (2019). Broadening Your Statistical Horizons: Generalized Linear Models and Multilevel Models. <a href="https://bookdown.org/roback/bookdown-bysh/">https://bookdown.org/roback/bookdown-bysh/</a>.
+<a href="https://github.com/proback/BeyondMLR/blob/master/data/bookbanningNoTex.csv/">https://github.com/proback/BeyondMLR/blob/master/data/bookbanningNoTex.csv/</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html><html><head><title>R: Stone tool subclasses, Olorgesailie, Kenya</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Olorgesailie.sub</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Stone tool subclasses, Olorgesailie, Kenya
+</h2>
+
+<h3>Description</h3>
+
+<p>The data represent the number of specimens in each of 16 artifact subclasses recovered from 19 localities at the Lower Paleolithic site of Olorgesailie as described in Isaac (1977).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Olorgesailie.sub)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 19 observations showing the stratum, locality and the number of specimens for each of 16 stone artifact types.
+</p>
+
+<dl>
+<dt><code>Strat</code></dt><dd><p>stratum: <code>Lower</code>, <code>Middle</code>, <code>Upper</code></p>
+</dd>
+<dt><code>Locality</code></dt><dd><p>Locality</p>
+</dd>
+<dt><code>HA</code></dt><dd><p>Number of handaxes</p>
+</dd>
+<dt><code>PHA</code></dt><dd><p>Number of pick-like handaxes</p>
+</dd>
+<dt><code>CHA</code></dt><dd><p>Number of chisel handaxes</p>
+</dd>
+<dt><code>CL</code></dt><dd><p>Number of cleavers</p>
+</dd>
+<dt><code>KN</code></dt><dd><p>Number of knives</p>
+</dd>
+<dt><code>BLCT</code></dt><dd><p>Number of broken large cutting tools</p>
+</dd>
+<dt><code>PAT</code></dt><dd><p>Number of picks and trièdres</p>
+</dd>
+<dt><code>CH</code></dt><dd><p>Number of choppers</p>
+</dd>
+<dt><code>CS</code></dt><dd><p>Number of core scrapers</p>
+</dd>
+<dt><code>LFS</code></dt><dd><p>Number of large flake scrapers</p>
+</dd>
+<dt><code>CB</code></dt><dd><p>Number of core bifaces</p>
+</dd>
+<dt><code>OLT</code></dt><dd><p>Number of other large tools</p>
+</dd>
+<dt><code>SSS</code></dt><dd><p>Number of small scrapers simple</p>
+</dd>
+<dt><code>SSNP</code></dt><dd><p>Number of small scrapers nosed point</p>
+</dd>
+<dt><code>OST</code></dt><dd><p>Number of other small tools</p>
+</dd>
+<dt><code>SP</code></dt><dd><p>Number of spheroids</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data come from Table E1 in Isaac (1977: 239). The <code>Locality</code> contains the column headings in the original table. The <code>rownames</code> are the same as those in <code>Olorgesailie.maj</code>. The attribute <code>Variables</code> in the data frame includes the full variable names. Potts (2011) provides updated information on the site complex.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Isaac, Glynn Ll. 1977. <em>Olorgesailie: Archeological Studies of a Middle Pleistocene Lake Basin in Kenya</em>. The University of Chicago Press.
+</p>
+
+
+<h3>References</h3>
+
+<p>Carlson, David L. 2017. <em>Quantitative Methods in Archaeology Using R</em>. Cambridge University Press, pp 280-293.
+</p>
+<p>Potts, R. 2011. Olorgesailie&ndash;Retrospective and current synthesis. In <em>Casting the net wide: papers in honor of Glynn Isaac and his approach to human origins research</em>, edited by J. Sept and D. Pilbeam, pp 1&ndash;20. American School of Prehistoric Research Monographs in Archaeology and Paleoanthropology.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Olorgesailie.sub)
+# Chi square after removing the first two columns and simulating the p
+# value since there are a number of very small expected values
+chisq.test(Olorgesailie.sub[,3:18], simulate.p.value=TRUE)
+# Compute percentages over the localities
+Olor.pct &lt;- prop.table(as.matrix(Olorgesailie.sub[,3:18]), 1)*100
+boxplot(Olor.pct, cex.axis=.7)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

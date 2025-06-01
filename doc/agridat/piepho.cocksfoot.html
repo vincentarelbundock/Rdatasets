@@ -1,0 +1,118 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of cock's foot, heading dates for 25...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>piepho.cocksfoot</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of cock's foot, heading dates for 25 varieties in 7 years
+</h2>
+
+<h3>Description</h3>
+
+<p>Multi-environment trial of cock's foot, heading dates for 25 varieties in 7 yearsyears
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("piepho.cocksfoot")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 111 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype factor, 25 levels</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year, numeric</p>
+</dd>
+<dt><code>date</code></dt><dd><p>heading date (days from April 1)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>These data are heading dates (days from April 1 to heading) of  25 cock's foot
+<em>Dactylis glomerata</em> varieties in trials at Hannover, Germany,
+repeated over seven years.  Values are means over replications.
+</p>
+<p>Piepho fits a model similar to Finlay-Wilkinson regression, but with
+genotype and environment swapped.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Hans-Pieter Piepho. (1999).
+Fitting a Regression Model for Genotype-by-Environment Data on Heading
+Dates in Grasses by Methods for Nonlinear Mixed Models.
+<em>Biometrics</em>, 55, 1120-1128.
+https://doi.org/10.1111/j.0006-341X.1999.01120.x  
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+  library(agridat)
+  data(piepho.cocksfoot)
+  dat &lt;- piepho.cocksfoot
+  dat$year &lt;- factor(dat$year)
+  
+  libs(lattice)
+  # Gaussian, not gamma distn
+  densityplot(~date|year, data=dat, main="piepho.cocksfoot - heading date")
+
+  if(require("mumm", quietly=TRUE)){
+    libs(mumm) # The mumm package can reproduce Piepho's results
+
+    levelplot(date ~ year*gen, dat)
+    # note mp(random,fixed)
+    mod3 &lt;- mumm(date ~ -1 + gen + (1|year) + mp(year, gen), dat)
+    
+    # Compare to Piepho table 3, "full maximum likelihood"
+    mod3$sigmas^2 # variances for year:gen, residual match
+    #        year mp year:gen    Residual 
+    # 17.70287377  0.02944158  0.49024737
+    
+    # mod3$par_fix # fixed genotypes match
+  
+    # mod3$sdreport # estim/stderr
+    #               Estimate Std. Error
+    # nu          49.0393183 1.55038652
+    # nu          42.0889493 1.67597832
+    # nu          45.3411252 1.59818620
+    # etc
+  
+    # mod3$par_rand # random year:gen match
+    # $`mp year:gen`
+    #        1990        1991        1992        1993        1994        1995 
+    #  0.10595661 -0.05298523  0.08228274 -0.09629696 -0.11045540  0.29637268 
+  }
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

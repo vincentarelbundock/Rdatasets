@@ -1,0 +1,102 @@
+<!DOCTYPE html><html><head><title>R: Mediterranean Shipwrecks</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>shipwrecks</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Mediterranean Shipwrecks</h2>
+
+<h3>Description</h3>
+
+<p>A dataset of Mediterranean shipwrecks.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>shipwrecks
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A <code>data.frame</code> with 1784 observations (wrecks) and 13 variables:
+</p>
+
+<dl>
+<dt>name</dt><dd><p><code>character</code>: wreck name.</p>
+</dd>
+<dt>sea</dt><dd><p><code>character</code>: region of the sea where the wreck was discovered.</p>
+</dd>
+<dt>country</dt><dd><p><code>character</code>: country where the wreck was discovered.</p>
+</dd>
+<dt>region</dt><dd><p><code>character</code>: region where the wreck was discovered.</p>
+</dd>
+<dt>depth_min</dt><dd><p><code>integer</code>: minimum depth of the wreck (m).</p>
+</dd>
+<dt>depth_max</dt><dd><p><code>integer</code>: maximum depth of the wreck (m).</p>
+</dd>
+<dt>depth</dt><dd><p><code>character</code>: depth of the wreck (m).</p>
+</dd>
+<dt>period</dt><dd><p><code>character</code>: chronology (period).</p>
+</dd>
+<dt>dating</dt><dd><p><code>character</code>: chronology (dating).</p>
+</dd>
+<dt>date_early</dt><dd><p><code>integer</code>: earliest date.</p>
+</dd>
+<dt>date_late</dt><dd><p><code>integer</code>: latest date.</p>
+</dd>
+<dt>origin</dt><dd><p><code>character</code>: place of origin.</p>
+</dd>
+<dt>destination</dt><dd><p><code>character</code>: place of destination.</p>
+</dd>
+</dl>
+
+
+
+<h3>Note</h3>
+
+<p>This dataset contains typos and needs to be normalized.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Strauss, J. (2013). <em>Shipwrecks Database</em>. Version 1.0. Accessed 2022-08-13.
+URL: <a href="https://oxrep.classics.ox.ac.uk/databases/shipwrecks_database/">https://oxrep.classics.ox.ac.uk/databases/shipwrecks_database/</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Parker, A. J. (1992). <em>Ancient Shipwrecks of the Mediterranean and the Roman
+Provinces</em>. British Archaeological Reports International Series 580. Oxford.
+</p>
+<p>Strauss, E. J. (2007). <em>Roman Cargoes: Underwater Evidence from the Eastern
+Mediterranean</em>. Doctoral thesis, University College London.
+URL: <a href="https://discovery.ucl.ac.uk/id/eprint/1349806">https://discovery.ucl.ac.uk/id/eprint/1349806</a>.
+</p>
+
+
+<h3>See Also</h3>
+
+<p>Other artefact data: 
+<code>munsingen</code>
+</p>
+
+</main>
+
+</div>
+</body></html>

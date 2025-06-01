@@ -1,0 +1,101 @@
+rownames,artist,country,birth,death,alive,genx,gender,count,year_acquired_min,year_acquired_max
+1,Ad Gerritsen,dutch,1940,2015,FALSE,FALSE,male,1,1981,1981
+2,Kirstine Roepstorff,danish,1972,,TRUE,TRUE,female,3,2005,2005
+3,Lisa Baumgardner,american,1958,2015,FALSE,FALSE,female,2,2016,2016
+4,David Bates,american,1952,,TRUE,FALSE,male,1,2001,2001
+5,Simon Levy,american,1946,,TRUE,FALSE,male,1,2012,2012
+6,Pierre Mercure,canadian,1927,1966,FALSE,FALSE,male,8,2008,2008
+7,Ko Verzuu,dutch,1901,1971,FALSE,FALSE,male,2,2018,2018
+8,Shigeyoshi Morioka,japanese,1941,,TRUE,FALSE,male,1,1981,1981
+9,William Ross Abrams,american,1920,2007,FALSE,FALSE,male,1,1949,1949
+10,Emily Roysdon,american,1977,,TRUE,TRUE,female,5,2013,2013
+11,David O. Russell,american,1958,,TRUE,FALSE,male,1,2002,2002
+12,David Zink Yi,peruvian,1973,,TRUE,TRUE,male,2,2017,2017
+13,Peter Purves-Smith,australian,1913,1949,FALSE,FALSE,male,1,1941,1941
+14,Wolfgang von Wersin,german,1882,1976,FALSE,FALSE,male,1,1956,1956
+15,Peter Schlumbohm,american,1896,1962,FALSE,FALSE,male,21,1943,2001
+16,Robert Cremean,american,1932,,TRUE,FALSE,male,16,1974,1974
+17,Michael Vivo,american,1947,1984,FALSE,FALSE,male,1,1978,1978
+18,Viktor Pal'mov,,1888,1929,FALSE,FALSE,male,1,2001,2001
+19,Caroline Durieux,american,1896,1989,FALSE,FALSE,female,4,1942,1969
+20,Heike Baranowsky,german,1967,,TRUE,TRUE,female,1,2004,2004
+21,Fernando Vilela,brazilian,1973,,TRUE,TRUE,male,2,2013,2013
+22,Roy Colmer,british,1935,2014,FALSE,FALSE,male,4,1986,1987
+23,TorbjÃ¸rn RÃ¸dland,norwegian,1970,,TRUE,TRUE,male,3,2018,2018
+24,Vincent van Gogh,dutch,1853,1890,FALSE,FALSE,male,6,1940,1998
+25,Andrew Foster Bush,american,1956,,TRUE,FALSE,male,1,1983,1983
+26,Hermelindo Fiaminghi,brazilian,1920,2004,FALSE,FALSE,male,2,2016,2016
+27,Tony Fitzpatrick,american,1958,,TRUE,FALSE,male,2,1993,2005
+28,Sally Mann,american,1951,,TRUE,FALSE,female,1,1987,1987
+29,Sadie Benning,american,1973,,TRUE,TRUE,non-binary,10,2000,2017
+30,Anna Boghiguian,egyptian,1946,,TRUE,FALSE,female,12,2016,2016
+31,Heinrich Nauen,german,1880,1941,FALSE,FALSE,male,3,1940,1942
+32,Mary E. Frey,american,1948,,TRUE,FALSE,female,9,1985,1993
+33,David Bradshaw,american,1944,,TRUE,FALSE,male,1,2014,2014
+34,Jun Dobashi,japanese,1910,1975,FALSE,FALSE,male,1,1964,1964
+35,Louis De Clercq,french,1836,1901,FALSE,FALSE,male,3,1985,2009
+36,Nicholas Dean,american,1933,,TRUE,FALSE,male,1,1997,1997
+37,Cecil Stephenson,british,1889,1965,FALSE,FALSE,male,1,1985,1985
+38,Charles B. Kaufmann,american,1890,1957,FALSE,FALSE,male,1,1995,1995
+39,Yinka Shonibare,british,1962,,TRUE,FALSE,male,8,2002,2018
+40,Jacques Villon,french,1875,1963,FALSE,FALSE,male,253,1935,1995
+41,Arthur Young,american,1905,1995,FALSE,FALSE,male,1,1984,1984
+42,Lew Thomas,american,1932,,TRUE,FALSE,male,5,1978,2014
+43,Paul Wonner,american,1920,2008,FALSE,FALSE,male,1,1980,1980
+44,Doug Dubois,american,1960,,TRUE,FALSE,male,4,1987,1989
+45,Max Almy,american,1948,,TRUE,FALSE,female,1,1984,1984
+46,Barbel Scianghetti,american,1939,,TRUE,FALSE,female,1,1991,1991
+47,Jim Gaylord,american,1974,,TRUE,TRUE,male,1,2008,2008
+48,Pierre Ayot,canadian,1943,1995,FALSE,FALSE,male,1,1967,1967
+49,Mario Prassinos,french,1916,1985,FALSE,FALSE,male,53,1948,1965
+50,Ronnie Goodman,american,1960,2020,FALSE,FALSE,male,1,2013,2013
+51,Edward Zwick,american,1952,,TRUE,FALSE,male,1,2012,2012
+52,JosÃ© R. Alicea,american,1928,,TRUE,FALSE,male,4,1964,1967
+53,Kathy High,american,1954,,TRUE,FALSE,female,1,1990,1990
+54,Julius Thiengen Bloch,american,1888,1966,FALSE,FALSE,male,4,1940,1940
+55,Robert Gordy,american,1933,1986,FALSE,FALSE,male,1,1991,1991
+56,Karin Sander,german,1957,,TRUE,FALSE,female,7,1994,2019
+57,Edward Fella,american,1938,,TRUE,FALSE,male,11,2000,2000
+58,Jakob Jack Friedrich Bollschweiler,german,1888,1938,FALSE,FALSE,male,2,1949,1949
+59,Russell Limbach,american,1904,1971,FALSE,FALSE,male,1,1940,1940
+60,Joe Scorsone,american,1942,,TRUE,FALSE,male,2,1980,1980
+61,James Montgomery Flagg,american,1877,1960,FALSE,FALSE,male,7,1940,1967
+62,Jean-Baptiste-Camille Corot,french,1796,1875,FALSE,FALSE,male,2,1954,1964
+63,Stephen Metts,american,1968,,TRUE,TRUE,male,1,2004,2004
+64,Grant T. Reynard,american,1887,1968,FALSE,FALSE,male,1,1940,1940
+65,Charles Clifford,british,1819,1863,FALSE,FALSE,male,1,1978,1978
+66,Jay McCafferty,american,1948,,TRUE,FALSE,male,1,1981,1981
+67,Marco De Valdivia,chilean,1947,,TRUE,FALSE,male,2,1979,1979
+68,Gustav Klimt,austrian,1862,1918,FALSE,FALSE,male,11,1955,1979
+69,Leander Fornas,american,1925,2014,FALSE,FALSE,male,4,1956,1986
+70,Richard Barnes,american,1953,,TRUE,FALSE,male,4,2012,2012
+71,John Ahearn,american,1951,,TRUE,FALSE,male,4,2016,2016
+72,AmÃ¨rico BalÃ¡n,argentine,1915,1986,FALSE,FALSE,male,1,1969,1969
+73,Victor Brauner,romanian,1903,1966,FALSE,FALSE,male,11,1947,1975
+74,Rong Rong,chinese,1968,,TRUE,TRUE,male,5,2008,2008
+75,Joseph Pollet,american,1897,1979,FALSE,FALSE,male,1,1940,1940
+76,Fred Williams,australian,1927,1982,FALSE,FALSE,male,16,1973,1980
+77,Charles L. Goeller,american,1901,1955,FALSE,FALSE,male,1,1934,1934
+78,Rob Voerman,dutch,1966,,TRUE,TRUE,male,3,2006,2006
+79,Mariah Robertson,american,1975,,TRUE,TRUE,female,2,2010,2012
+80,Keigo Yamamoto,japanese,1936,,TRUE,FALSE,male,3,1979,1986
+81,Werner Knaupp,german,1936,,TRUE,FALSE,male,2,1969,1969
+82,Ricardo Basbaum,brazilian,1961,,TRUE,FALSE,male,1,2006,2006
+83,Osamu Nagata,japanese,1950,,TRUE,FALSE,male,1,1986,1986
+84,Olga Rozanova,russian,1886,1918,FALSE,FALSE,female,211,1974,2001
+85,Robert Kozma,american,1951,,TRUE,FALSE,male,1,1990,1990
+86,Bernard Tschumi,,1944,,TRUE,FALSE,male,61,1992,2000
+87,Pasquale Santoro,italian,1933,,TRUE,FALSE,male,1,1966,1966
+88,Carl AubÃ¶ck,austrian,1900,1957,FALSE,FALSE,male,8,1959,2001
+89,Ron Herron,british,1930,1994,FALSE,FALSE,male,2,2000,2000
+90,Akihiro Kaneko,japanese,1961,,TRUE,FALSE,male,1,2000,2000
+91,Gianfredo Camesi,swiss,1940,,TRUE,FALSE,male,6,2007,2007
+92,Arthur Secunda,american,1927,,TRUE,FALSE,male,6,1967,1974
+93,Andrzej Zborski,polish,1929,,TRUE,FALSE,male,1,2015,2015
+94,Amy O'Neill,american,1971,,TRUE,TRUE,female,4,2015,2015
+95,Yehudit Sasportas,israeli,1969,,TRUE,TRUE,female,1,2005,2005
+96,AndrÃ© Marchand,french,1907,1997,FALSE,FALSE,male,1,1952,1952
+97,SanlÃ© Sory,burkinabe,1943,,TRUE,FALSE,male,26,2018,2018
+98,Claude Monet,french,1840,1926,FALSE,FALSE,male,5,1956,1992
+99,Jean L'Anselme,french,1919,2011,FALSE,FALSE,male,7,1976,1976
+100,G. de Latenay,french,1859,1943,FALSE,FALSE,male,1,1958,1958

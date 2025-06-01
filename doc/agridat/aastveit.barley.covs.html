@@ -1,0 +1,208 @@
+<!DOCTYPE html><html><head><title>R: Barley heights and environmental covariates in Norway</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>aastveit.barley</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Barley heights and environmental covariates in Norway
+</h2>
+
+<h3>Description</h3>
+
+<p>Average height for 15 genotypes of barley in each of 9 years.
+Also 19 covariates in each of the 9 years.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("aastveit.barley.covs")
+data("aastveit.barley.height")
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>The 'aastveit.barley.covs' dataframe has 9 observations on the following 20 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+<dt><code>R1</code></dt><dd><p>avg rainfall (mm/day) in period 1</p>
+</dd>
+<dt><code>R2</code></dt><dd><p>avg rainfall (mm/day) in period 2</p>
+</dd>
+<dt><code>R3</code></dt><dd><p>avg rainfall (mm/day) in period 3</p>
+</dd>
+<dt><code>R4</code></dt><dd><p>avg rainfall (mm/day) in period 4</p>
+</dd>
+<dt><code>R5</code></dt><dd><p>avg rainfall (mm/day) in period 5</p>
+</dd>
+<dt><code>R6</code></dt><dd><p>avg rainfall (mm/day) in period 6</p>
+</dd>
+<dt><code>S1</code></dt><dd><p>daily solar radiation (ca/cm^2) in period 1</p>
+</dd>
+<dt><code>S2</code></dt><dd><p>daily solar radiation (ca/cm^2) in period 2</p>
+</dd>
+<dt><code>S3</code></dt><dd><p>daily solar radiation (ca/cm^2) in period 3</p>
+</dd>
+<dt><code>S4</code></dt><dd><p>daily solar radiation (ca/cm^2) in period 4</p>
+</dd>
+<dt><code>S5</code></dt><dd><p>daily solar radiation (ca/cm^2) in period 5</p>
+</dd>
+<dt><code>S6</code></dt><dd><p>daily solar radiation (ca/cm^2) in period 6</p>
+</dd>
+<dt><code>ST</code></dt><dd><p>sowing time, measured in days after April 1</p>
+</dd>
+<dt><code>T1</code></dt><dd><p>avg temp (deg Celsius) in period 1</p>
+</dd>
+<dt><code>T2</code></dt><dd><p>avg temp (deg Celsius) in period 2</p>
+</dd>
+<dt><code>T3</code></dt><dd><p>avg temp (deg Celsius) in period 3</p>
+</dd>
+<dt><code>T4</code></dt><dd><p>avg temp (deg Celsius) in period 4</p>
+</dd>
+<dt><code>T5</code></dt><dd><p>avg temp (deg Celsius) in period 5</p>
+</dd>
+<dt><code>T6</code></dt><dd><p>avg temp (deg Celsius) in period 6</p>
+</dd>
+</dl>
+
+<p>The 'aastveit.barley.height' dataframe has 135 observations on the
+following 3 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year, 9 years spanning from 1974 to 1982</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype, 15 levels</p>
+</dd>
+<dt><code>height</code></dt><dd><p>height (cm)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Experiments were conducted at As, Norway.
+</p>
+<p>The <code>height</code> dataframe contains average plant height (cm) of 15 varieties
+of barley in each of 9 years.
+</p>
+<p>The growth season of each year was divided into eight periods from
+sowing to harvest.  Because the plant stop growing about 20 days after
+ear emergence, only the first 6 periods are included here.
+</p>
+<p>Used with permission of Harald Martens.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Aastveit, A. H. and Martens, H. (1986).
+ANOVA interactions interpreted by partial least squares regression.
+Biometrics, 42, 829&ndash;844.
+https://doi.org/10.2307/2530697
+</p>
+
+
+<h3>References</h3>
+
+<p>J. Chadoeuf and J. B. Denis (1991).
+Asymptotic variances for the multiplicative interaction model.
+J. App. Stat., 18, 331-353.
+https://doi.org/10.1080/02664769100000032
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data("aastveit.barley.covs")
+data("aastveit.barley.height")
+
+libs(reshape2, pls)
+  
+  # First, PCA of each matrix separately
+
+  Z &lt;- acast(aastveit.barley.height, year ~ gen, value.var="height")
+  Z &lt;- sweep(Z, 1, rowMeans(Z))
+  Z &lt;- sweep(Z, 2, colMeans(Z)) # Double-centered
+  sum(Z^2)*4 # Total SS = 10165
+  sv &lt;- svd(Z)$d
+  round(100 * sv^2/sum(sv^2),1) # Prop of variance each axis
+  # Aastveit Figure 1.  PCA of height
+  biplot(prcomp(Z),
+         main="aastveit.barley - height", cex=0.5)
+  
+  U &lt;- aastveit.barley.covs
+  rownames(U) &lt;- U$year
+  U$year &lt;- NULL
+  U &lt;- scale(U) # Standardized covariates
+  sv &lt;- svd(U)$d
+  # Proportion of variance on each axis
+  round(100 * sv^2/sum(sv^2),1)
+
+  # Now, PLS relating the two matrices
+  m1 &lt;- plsr(Z~U)
+  loadings(m1)
+  # Aastveit Fig 2a (genotypes), but rotated differently
+  biplot(m1, which="y", var.axes=TRUE)
+  # Fig 2b, 2c (not rotated)
+  biplot(m1, which="x", var.axes=TRUE)
+
+  # Adapted from section 7.4 of Turner &amp; Firth,
+  # "Generalized nonlinear models in R: An overview of the gnm package"
+  # who in turn reproduce the analysis of Chadoeuf &amp; Denis (1991),
+  # "Asymptotic variances for the multiplicative interaction model"
+
+  libs(gnm)
+  dath &lt;- aastveit.barley.height
+  dath$year = factor(dath$year)
+
+  set.seed(42)
+  m2 &lt;- gnm(height ~ year + gen + Mult(year, gen), data = dath)
+  # Turner: "To obtain parameterization of equation 1, in which sig_k is the
+  # singular value for component k, the row and column scores must be constrained
+  # so that the scores sum to zero and the squared scores sum to one.
+  # These contrasts can be obtained using getContrasts"
+  gamma &lt;- getContrasts(m2, pickCoef(m2, "[.]y"),
+                        ref = "mean", scaleWeights = "unit")
+  delta &lt;- getContrasts(m2, pickCoef(m2, "[.]g"),
+                        ref = "mean", scaleWeights = "unit")
+  # estimate &amp; std err
+  gamma &lt;- gamma$qvframe
+  delta &lt;- delta$qvframe
+  # change sign of estimate
+  gamma[,1] &lt;- -1 * gamma[,1]
+  delta[,1] &lt;- -1 * delta[,1]
+  # conf limits based on asymptotic normality, Chadoeuf table 8, p. 350, 
+  round(cbind(gamma[,1], gamma[, 1] +
+                           outer(gamma[, 2], c(-1.96, 1.96))) ,3)  
+  round(cbind(delta[,1], delta[, 1] +
+                           outer(delta[, 2], c(-1.96, 1.96))) ,3)
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

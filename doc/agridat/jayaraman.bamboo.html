@@ -1,0 +1,101 @@
+<!DOCTYPE html><html><head><title>R: Bamboo progeny trial</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>jayaraman.bamboo</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Bamboo progeny trial
+</h2>
+
+<h3>Description</h3>
+
+<p>Bamboo progeny trial in 2 locations, 3 blocks
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("jayaraman.bamboo")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 216 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>loc</code></dt><dd><p>location factor</p>
+</dd>
+<dt><code>block</code></dt><dd><p>block factor</p>
+</dd>
+<dt><code>tree</code></dt><dd><p>tree factor</p>
+</dd>
+<dt><code>family</code></dt><dd><p>family factor</p>
+</dd>
+<dt><code>height</code></dt><dd><p>height, cm</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data from a replicated trial of bamboo at two locations in Kerala,
+India.  Each location had 3 blocks.  In each block were 6 families,
+with 6 trees in each family. 
+</p>
+
+
+<h3>Source</h3>
+
+<p>K. Jayaraman (1999). &quot;A Statistical Manual For Forestry Research&quot;.
+Forestry Research Support Programme for Asia and the Pacific. Page 170.
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  library(agridat)
+  data(jayaraman.bamboo)
+  dat &lt;- jayaraman.bamboo
+
+  # very surprising differences between locations
+  libs(lattice)
+  bwplot(height ~ family|loc, dat, main="jayaraman.bamboo")
+  # match Jayarman's anova table 6.3, page 173
+  # m1 &lt;- aov(height ~ loc+loc:block + family + family:loc +
+  #  family:loc:block, data=dat)
+  # anova(m1)
+
+  # more modern approach with mixed model, match variance components needed
+  # for equation 6.9, heritability of the half-sib averages as
+  m2 &lt;- lme4::lmer(height ~ 1 + (1|loc/block) + (1|family/loc/block), data=dat)
+  lucid::vc(m2)
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

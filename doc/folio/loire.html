@@ -1,0 +1,85 @@
+<!DOCTYPE html><html><head><title>R: Medieval Ceramics from the Loire Basin</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>loire</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Medieval Ceramics from the Loire Basin</h2>
+
+<h3>Description</h3>
+
+<p>A dataset containing the ceramic counts from the Loire Basin (France).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>loire
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A <code>data.frame</code> with 332 observations (assemblages) and 331 variables (ceramic types).
+The first five columns provide background information, the next columns give
+the MNI of each ceramic types:
+</p>
+
+<dl>
+<dt>site</dt><dd><p><code>character</code>: name of the archaeological site.</p>
+</dd>
+<dt>city</dt><dd><p><code>character</code>: city.</p>
+</dd>
+<dt>area</dt><dd><p><code>character</code>: geographical area.</p>
+</dd>
+<dt>lower</dt><dd><p><code>integer</code>: lower bound of the temporal range (year AD).</p>
+</dd>
+<dt>upper</dt><dd><p><code>integer</code>: upper bound of the temporal range (year AD).</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>https://ceramedvaldeloire.huma-num.fr/editions/suppl79racf2022/accueil
+</p>
+
+
+<h3>References</h3>
+
+<p>Husi, P. (dir.). (2022). <em>La céramique médiévale et moderne du bassin de la
+Loire moyenne, chrono-typologie et transformation des aires culturelles
+dans la longue durée (6e-19e s.)</em>. Suppléments à la revue Archéologique du
+Centre de la France, 79.
+</p>
+
+
+<h3>See Also</h3>
+
+<p>Other count data: 
+<code>birds</code>,
+<code>boves</code>,
+<code>chevelon</code>,
+<code>compiegne</code>,
+<code>merzbach</code>,
+<code>mississippi</code>,
+<code>zuni</code>
+</p>
+
+</main>
+
+</div>
+</body></html>

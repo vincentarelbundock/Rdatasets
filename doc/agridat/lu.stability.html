@@ -1,0 +1,141 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of maize, to illustrate stability...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>lu.stability</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of maize, to illustrate stability statistics
+</h2>
+
+<h3>Description</h3>
+
+<p>Multi-environment trial to illustrate stability statistics
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("lu.stability")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 120 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>yield</code></dt><dd><p>yield</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype factor, 5 levels</p>
+</dd>
+<dt><code>env</code></dt><dd><p>environment factor, 6 levels</p>
+</dd>
+<dt><code>block</code></dt><dd><p>block factor, 4 levels</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data for 5 maize genotypes in 2 years x 3 sites = 6 environments.
+</p>
+
+
+<h3>Source</h3>
+
+<p>H.Y. Lu and C. T. Tien. (1993)
+Studies on nonparametric method of phenotypic stability: II. Selection
+for stability of agroeconomic concept.
+J. Agric. Assoc. China 164:1-17.
+</p>
+
+
+<h3>References</h3>
+
+<p>Hsiu Ying Lu. 1995.
+PC-SAS Program for Estimating Huehn's Nonparametric Stability
+Statistics.
+Agron J. 87:888-891.
+</p>
+<p>Kae-Kang Hwu and Li-yu D Liu. (2013)
+Stability Analysis Using Multiple Environment Trials Data by Linear
+Regression. (In Chinese)
+Crop, Environment &amp; Bioinformatics 10:131-142.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+  library(agridat)
+  data(lu.stability)
+  dat &lt;- lu.stability
+
+  # GxE means. Match Lu 1995 table 1
+  libs(reshape2)
+  datm &lt;- acast(dat, gen~env, fun=mean, value.var='yield')
+  round(datm, 2)
+  # Gen/Env means. Match Lu 1995 table 3
+  apply(datm, 1, mean)
+  apply(datm, 2, mean)
+  
+  
+  # Traditional ANOVA. Match Hwu table 2
+  # F value for gen,env
+  m1 = aov(yield~env+gen+Error(block:env+env:gen), data=dat)
+  summary(m1)   
+  # F value for gen:env, block:env
+  m2 &lt;- aov(yield ~ gen + env + gen:env + block:env, data=dat) 
+  summary(m2)
+
+  # Finlay Wilkinson regression coefficients
+  # First, calculate env mean, merge in
+  libs(dplyr)
+  dat2 &lt;- group_by(dat, env)
+  dat2 &lt;- mutate(dat2, locmn=mean(yield))
+  m4 &lt;- lm(yield ~ gen -1 + gen:locmn, data=dat2)
+  coef(m4) # Match Hwu table 4
+
+# Table 6: Shukla's heterogeneity test
+  dat2$ge = paste0(dat2$gen, dat2$env) # Create a separate ge interaction term  
+  m6 &lt;- lm(yield ~ gen + env + ge + ge:locmn, data=dat2)
+  m6b &lt;- lm( yield ~ gen + env + ge + locmn, data=dat2)
+  anova(m6, m6b) # Non-significant difference
+
+  # Table 7 - Shukla stability
+  # First, environment means
+  emn &lt;- group_by(dat2, env)
+  emn &lt;- summarize(emn, ymn=mean(yield))
+  # Regress GxE terms on envt means
+  getab = (model.tables(m2,"effects")$tables)$'gen:env'
+  getab
+  for (ll in 1:nrow(getab)){
+    m7l &lt;- lm(getab[ll, ] ~ emn$ymn)
+    cat("\n\n*************** Gen ",ll," ***************\n") 
+    cat("Regression coefficient: ",round(coefficients(m7l)[2],5),"\n") 
+    print(anova(m7l)) 
+  } # Match Hwu table 7.
+
+
+## End(Not run) # dontrun
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

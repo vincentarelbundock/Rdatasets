@@ -1,0 +1,181 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of 5 barley varieties, 6 locations, 2...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>fisher.barley</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of 5 barley varieties, 6 locations, 2 years
+</h2>
+
+<h3>Description</h3>
+
+<p>Multi-environment trial of 5 barley varieties, 6 locations, 2 years
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("fisher.barley")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 60 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>yield</code></dt><dd><p>yield, bu/ac</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype/variety, 5 levels</p>
+</dd>
+<dt><code>env</code></dt><dd><p>environment/location, 2 levels</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year, 1931/1932</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Trials of 5 varieties of barley were conducted at 6 stations in
+Minnesota during the years 1931-1932.
+</p>
+<p>This is a subset of Immer's barley data.  The yield values here are
+totals of 3 reps (Immer gave the average yield of 3 reps).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Ronald Fisher (1935).
+<em>The Design of Experiments</em>.
+</p>
+
+
+<h3>References</h3>
+
+<p>George Fernandez (1991).
+Analysis of Genotype x Environment Interaction by Stability Estimates.
+Hort Science, 26, 947-950.
+</p>
+<p>F. Yates &amp; W. G. Cochran (1938).
+The Analysis of Groups of Experiments.
+Journal of Agricultural Science, 28, 556-580, table 1.
+https://doi.org/10.1017/S0021859600050978
+</p>
+<p>G. K. Shukla, 1972.
+Some statistical aspects of partitioning of genotype-environmental
+components of variability.
+Heredity, 29, 237-245. Table 1.
+https://doi.org/10.1038/hdy.1972.87
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(fisher.barley)
+  dat &lt;- fisher.barley
+
+  libs(dplyr,lattice)
+  # Yates 1938 figure 1. Regression on env mean
+  # Sum years within loc
+  dat2 &lt;- aggregate(yield ~ gen + env, data=dat, FUN=sum)
+  # Avg within env
+  emn &lt;- aggregate(yield ~ env, data=dat2, FUN=mean)
+  dat2$envmn &lt;- emn$yield[match(dat2$env, emn$env)]
+  xyplot(yield ~ envmn, dat2, group=gen, type=c('p','r'),
+         main="fisher.barley - stability regression",
+         xlab="Environment total", ylab="Variety mean",
+         auto.key=list(columns=3))
+
+
+  # calculate stability according to the sum-of-squares approach used by
+  # Shukla (1972), eqn 11. match to Shukla, Table 4, M.S. column
+  # also matches fernandez, table 3, stabvar column
+  libs(dplyr)
+  dat2 &lt;- dat
+  dat2 &lt;- group_by(dat2, gen,env)
+  dat2 &lt;- summarize(dat2, yield=sum(yield)) # means across years
+  dat2 &lt;- group_by(dat2, env)
+  dat2 &lt;- mutate(dat2, envmn=mean(yield)) # env means
+  dat2 &lt;- group_by(dat2, gen)
+  dat2 &lt;- mutate(dat2, genmn=mean(yield)) # gen means
+  dat2 &lt;- ungroup(dat2)
+  dat2 &lt;- mutate(dat2, grandmn=mean(yield)) # grand mean
+  # correction factor overall
+  dat2 &lt;- mutate(dat2, cf = sum((yield - genmn - envmn + grandmn)^2))
+  t=5; s=6 # t genotypes, s environments
+  dat2 &lt;- group_by(dat2, gen)
+  dat2 &lt;- mutate(dat2, ss=sum((yield-genmn-envmn+grandmn)^2))
+  # divide by 6 to scale down to plot-level
+  dat2 &lt;- mutate(dat2, sig2i = 1/((s-1)*(t-1)*(t-2)) * (t*(t-1)*ss-cf)/6)
+  dat2[!duplicated(dat2$gen),c('gen','sig2i')]    
+  ##       &lt;chr&gt;     &lt;dbl&gt;
+  ## 1 Manchuria  25.87912
+  ## 2  Peatland  75.68001
+  ## 3  Svansota  19.59984
+  ## 4     Trebi 225.52866
+  ## 5    Velvet  22.73051
+
+  if(require("asreml", quietly=TRUE)) {
+    # mixed model approach gives similar results (but not identical)
+    libs(asreml,lucid)
+
+    dat2 &lt;- dat
+    dat2 &lt;- dplyr::group_by(dat2, gen,env)
+    dat2 &lt;- dplyr::summarize(dat2, yield=sum(yield)) # means across years
+    dat2 &lt;- dplyr::arrange(dat2, gen)
+    
+    # G-side
+    m1g &lt;- asreml(yield ~ gen, data=dat2,
+                  random = ~ env + at(gen):units,
+                  family=asr_gaussian(dispersion=1.0))
+    m1g &lt;- update(m1g)
+    summary(m1g)$varcomp[-1,1:2]/6
+    #                            component std.error
+    # at(gen, Manchuria):units  33.8145031  27.22721
+    # at(gen, Peatland):units   70.4489092  50.52680
+    # at(gen, Svansota):units   25.2728568  21.92919
+    # at(gen, Trebi):units     231.6981702 150.80464
+    # at(gen, Velvet):units     13.9325646  16.58571
+    # units!R                    0.1666667        NA
+    
+    # R-side estimates = G-side estimate + 0.1666 (resid variance)
+    m1r &lt;- asreml(yield ~ gen, data=dat2,
+                  random = ~ env,
+                  residual = ~ dsum( ~ units|gen))
+    m1r &lt;- update(m1r)
+    summary(m1r)$varcomp[-1,1:2]/6
+    #                     component std.error
+    # gen_Manchuria!R  34.00058  27.24871
+    # gen_Peatland!R   70.65501  50.58925
+    # gen_Svansota!R   25.42022  21.88606
+    # gen_Trebi!R     231.85846 150.78756
+    # gen_Velvet!R     14.08405  16.55558
+  }
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

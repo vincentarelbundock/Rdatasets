@@ -1,0 +1,105 @@
+<!DOCTYPE html><html><head><title>R: Zuni Ceramics</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>zuni</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Zuni Ceramics</h2>
+
+<h3>Description</h3>
+
+<p>A dataset containing ceramic counts from the Zuni region of the American
+Southwest.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>zuni
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A <code>data.frame</code> with 420 observations (assemblages) and 18 variables (ceramic types):
+</p>
+
+<dl>
+<dt>LINO</dt><dd><p><code>integer</code>: Lino Gray (575-875).</p>
+</dd>
+<dt>KIAT</dt><dd><p><code>integer</code>: Kiatuthlanna Black-on-white (850-910).</p>
+</dd>
+<dt>RED</dt><dd><p><code>integer</code>: Red Mesa Black-on-white (900-1030).</p>
+</dd>
+<dt>GALL</dt><dd><p><code>integer</code>: Gallup Black-on-white (1025-1150).</p>
+</dd>
+<dt>ESC</dt><dd><p><code>integer</code>: Escavada Black-on-white (1050-1150).</p>
+</dd>
+<dt>PUBW</dt><dd><p><code>integer</code>: Puerco Black-on-white (1050-1200).</p>
+</dd>
+<dt>RES</dt><dd><p><code>integer</code>: Reserve Black-on-white (1071-1115).</p>
+</dd>
+<dt>TULA</dt><dd><p><code>integer</code>: Tularosa Black-on-white (1175-1300).</p>
+</dd>
+<dt>PINE</dt><dd><p><code>integer</code>: Pinedale Black-on-white (1275-1325).</p>
+</dd>
+<dt>PUBR</dt><dd><p><code>integer</code>: Puerco Black-on-red (1050-1200).</p>
+</dd>
+<dt>WING</dt><dd><p><code>integer</code>: Wingate Black-on-red (1070-1200).</p>
+</dd>
+<dt>WIPO</dt><dd><p><code>integer</code>: Wingate Polychrome (1150-1250).</p>
+</dd>
+<dt>SJ</dt><dd><p><code>integer</code>: St. Johns Black-on-red/Polychrome (1200-1300).</p>
+</dd>
+<dt>LSJ</dt><dd><p><code>integer</code>: St. Johns glaze, Techado Polychrome (1275-1300).</p>
+</dd>
+<dt>SPR</dt><dd><p><code>integer</code>: Springerville Polychrome (1250-1300).</p>
+</dd>
+<dt>PINER</dt><dd><p><code>integer</code>: Pinedale Black-on-red/Polychrome (1275-1325).</p>
+</dd>
+<dt>HESH</dt><dd><p><code>integer</code>: Heshotauthla Polychrome (1285-1400).</p>
+</dd>
+<dt>KWAK</dt><dd><p><code>integer</code>: Kwakina Polychrome (1285-1400).</p>
+</dd>
+</dl>
+
+<p>The numbers in brackets correspond to the date range of each type (in AD years).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Peeples, M. A., &amp; Schachner, G. (2012). Refining correspondence
+analysis-based ceramic seriation of regional data sets. <em>Journal of
+Archaeological Science</em>, 39(8), 2818-2827. <a href="https://doi.org/10.1016/j.jas.2012.04.040">doi:10.1016/j.jas.2012.04.040</a>.
+</p>
+
+
+<h3>See Also</h3>
+
+<p>Other count data: 
+<code>birds</code>,
+<code>boves</code>,
+<code>chevelon</code>,
+<code>compiegne</code>,
+<code>loire</code>,
+<code>merzbach</code>,
+<code>mississippi</code>
+</p>
+
+</main>
+
+</div>
+</body></html>

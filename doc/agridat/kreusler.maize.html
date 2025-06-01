@@ -1,0 +1,219 @@
+<!DOCTYPE html><html><head><title>R: Growth of maize plants in Germany during 1875-1878</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>kreusler.maize</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Growth of maize plants in Germany during 1875-1878
+</h2>
+
+<h3>Description</h3>
+
+<p>Growth of maize plants in Germany during 1875-1878.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("kreusler.maize")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 165 observations on the following 17 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+<dt><code>date</code></dt><dd><p>calendar date</p>
+</dd>
+<dt><code>raindays</code></dt><dd><p>number of days of rain per week (zahl der regenstage)</p>
+</dd>
+<dt><code>rain</code></dt><dd><p>rain amount (mm)</p>
+</dd>
+<dt><code>temp</code></dt><dd><p>temperature mean (deg C) (temperatur mittel)</p>
+</dd>
+<dt><code>parentseed</code></dt><dd><p>weight of parent seed (g) (alte korner)</p>
+</dd>
+<dt><code>roots</code></dt><dd><p>weight of roots (g) (wurzel)</p>
+</dd>
+<dt><code>leaves</code></dt><dd><p>weight of leaves (g) (blatter)</p>
+</dd>
+<dt><code>stem</code></dt><dd><p>weight of stem (g) (stengel)</p>
+</dd>
+<dt><code>tassel</code></dt><dd><p>weight of tassel (g) (blutenstande)</p>
+</dd>
+<dt><code>grain</code></dt><dd><p>weight of grain (korner)</p>
+</dd>
+<dt><code>plantweight</code></dt><dd><p>weight of entire plant (ganze pflanze)</p>
+</dd>
+<dt><code>plantheight</code></dt><dd><p>plant height (cm) (mittlere hohe der pflanzen)</p>
+</dd>
+<dt><code>leafcount</code></dt><dd><p>number of leaves (anzahl der blatter)</p>
+</dd>
+<dt><code>leafarea</code></dt><dd><p>leaf area (cm^2) (flachenmaass der blatter)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Experiments were performed at Poppelsdorf, Germany (near Bonn) during
+the years 1875 to 1878.  Observations were collected weekly throughout
+the growing season.
+</p>
+<p>Five varieties were grown in 1875. Two in 1876, and one in 1877 and 1878.
+</p>
+<p>The plants were selected by eye as representative, with the number of
+plants chosen decreasing during the growing season.  For example, the
+dry-weight data was based on the following number of plants:
+</p>
+<p>In 1875 the number sampled began at 20 and dropped to 10.
+</p>
+<p>In 1876 the number sampled began at 45 and dropped to 24.
+</p>
+<p>In 1877 the number sampled began at 90 and dropped to 36.
+</p>
+<p>In 1878 the number sampled began at 120 and dropped to 40.
+</p>
+<p>Most of the observations included fresh weight and dry weight of entire
+plants, along with leaf area, date of inflorescence, fertilization, and
+kernel development.
+</p>
+<p>The data of Hornberger 71 are the same as Kreusler/Hornberger, but more
+complete.
+</p>
+<p>The temperature data was originally given in degrees Reaumur in 1875 and
+1876, and degrees Celsius in 1877 and 1878.  All temperatures in this
+data are degrees Celsius.  Note: deg C = 1.25 deg R.  Briggs, Kidd &amp;
+West (1920) give all temperature in Celsius.
+</p>
+
+
+<h3>Source</h3>
+
+<p>The 1875-1876 data are from:
+</p>
+<p>A. Prehn &amp; G. Becker. (1878)
+<em>Jahresbericht fur Agrikultur-chemie</em>, Vol 20, p. 216-220.
+https://books.google.com/books?id=ZfxNAAAAYAAJ&amp;pg=216
+</p>
+<p>The 1877 data are from:
+</p>
+<p>A. Kreusler, A. Prehn, Hornberger. (1880)
+<em>Jahresbericht fur Agrikultur-Chemie</em>, Vol 21, p 248.
+https://books.google.com/books?id=U3IYAQAAIAAJ&amp;pg=248
+</p>
+<p>The 1878 data are from:
+</p>
+<p>U. Kreusler, A. Prehn, R. Hornberger. (1880).
+<em>Jahresbericht fur Agrikultur-Chemie</em>, Vol 22, p. 211.
+https://books.google.com/books?id=9HIYAQAAIAAJ&amp;pg=211
+</p>
+<p>Dry plant weight and leaf area for all genotypes and years are
+repeated by:
+</p>
+<p>G. E. Briggs, Franklin Kidd, Cyril West. (1920).
+A Quantitative Analysis of Plant Growth. Part I.
+<em>Annals of Applied Biology</em>, 7, 103-123.
+</p>
+<p>G. E. Briggs, Franklin Kidd, Cyril West. (1920).
+A Quantitative Analysis of Plant Growth. Part II.
+<em>Annals of Applied Biology</em>, 7, 202-223.
+</p>
+
+
+<h3>References</h3>
+
+<p>Roderick Hunt, G. Clifford Evans. 1980.
+Classical Data on the Growth of Maize: Curve Fitting With Statistical Analysis.
+<em>New Phytol</em>, 86, 155-180.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+data(kreusler.maize)
+dat &lt;- kreusler.maize
+dat$date2 &lt;- as.Date(dat$date,"%d %b %Y")
+dat$doy &lt;- as.numeric(strftime(dat$date2, format="%j"))
+
+# Hunt &amp; Evans Fig 2a
+libs(lattice)
+xyplot(log10(plantweight)~doy|factor(year), data=dat, group=gen,
+       type=c('p','smooth'), span=.4, as.table=TRUE,
+       xlab="Day of year", main="kreusler.maize - growth of maize",
+       auto.key=list(columns=5))
+
+# Hunt &amp; Evans Fig 2b
+xyplot(log10(plantweight)~doy|gen, data=dat, group=factor(year),
+       type=c('p','smooth'), span=.5, as.table=TRUE,
+       xlab="Day of year",
+       auto.key=list(columns=4))
+# Hunt &amp; Evans Fig 3a
+xyplot(log10(leafarea)~doy|factor(year), data=dat, group=gen,
+       type=c('p','smooth'), span=.5, as.table=TRUE,
+       xlab="Day of year",
+       auto.key=list(columns=5))
+# Hunt &amp; Evans Fig 3a
+xyplot(log10(leafarea)~doy|gen, data=dat, group=factor(year),
+       type=c('p','smooth'), span=.5, as.table=TRUE,
+       xlab="Day of year",
+       auto.key=list(columns=4))
+
+# All traits
+
+xyplot(raindays~doy|factor(year), data=dat, group=gen,
+       type='l', auto.key=list(columns=5), as.table=TRUE, layout=c(1,4))
+xyplot(rain~doy|factor(year), data=dat, group=gen,
+       type='l', auto.key=list(columns=5), as.table=TRUE, layout=c(1,4))
+xyplot(temp~doy|factor(year), data=dat, group=gen,
+       type='l', auto.key=list(columns=5), as.table=TRUE, layout=c(1,4))
+xyplot(parentseed~doy|factor(year), data=dat, group=gen,
+       type='l', auto.key=list(columns=5), as.table=TRUE, layout=c(1,4))
+xyplot(roots~doy|factor(year), data=dat, group=gen,
+       type='l', auto.key=list(columns=5), as.table=TRUE, layout=c(1,4))
+xyplot(leaves~doy|factor(year), data=dat, group=gen,
+       type='l', auto.key=list(columns=5), as.table=TRUE, layout=c(1,4))
+xyplot(stem~doy|factor(year), data=dat, group=gen,
+       type='l', auto.key=list(columns=5), as.table=TRUE, layout=c(1,4))
+xyplot(grain~doy|factor(year), data=dat, group=gen,
+       type='l', auto.key=list(columns=5), as.table=TRUE, layout=c(1,4))
+xyplot(plantweight~doy|factor(year), data=dat, group=gen,
+       type='l', auto.key=list(columns=5), as.table=TRUE, layout=c(1,4))
+xyplot(plantheight~doy|factor(year), data=dat, group=gen,
+       type='l', auto.key=list(columns=5), as.table=TRUE, layout=c(1,4))
+xyplot(leafcount~doy|factor(year), data=dat, group=gen,
+       type='l', auto.key=list(columns=5), as.table=TRUE, layout=c(1,4))
+xyplot(leafarea~doy|factor(year), data=dat, group=gen,
+       type='l', auto.key=list(columns=5), as.table=TRUE, layout=c(1,4))
+xyplot(tassel~doy|factor(year), data=dat, group=gen,
+       type='l', auto.key=list(columns=5), as.table=TRUE, layout=c(1,4))
+
+## End(Not run)
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html><html><head><title>R: Growth of soybean varieties in 3 years</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>davidian.soybean</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Growth of soybean varieties in 3 years
+</h2>
+
+<h3>Description</h3>
+
+<p>Growth of soybean varieties in 3 years
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("davidian.soybean")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 412 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>plot</code></dt><dd><p>plot code</p>
+</dd>
+<dt><code>variety</code></dt><dd><p>variety, F or P</p>
+</dd>
+<dt><code>year</code></dt><dd><p>1988-1990</p>
+</dd>
+<dt><code>day</code></dt><dd><p>days after planting</p>
+</dd>
+<dt><code>weight</code></dt><dd><p>weight of soybean leaves</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This experiment compared the growth patterns of two genotypes of soybean
+varieties: F=Forrest (commercial variety) and P=Plant Introduction
+number 416937 (experimental variety).
+</p>
+<p>Data were collected in 3 consecutive years.
+</p>
+<p>At the start of each growing season, 16 plots were seeded (8 for each
+variety). Data were collected approximately weekly. At each timepoint,
+six plants were randomly selected from each plot. The leaves from these
+6 plants were weighed, and average leaf weight per plant was
+reported. (We assume that the data collection is destructive and
+different plants are sampled at each date).
+</p>
+<p>Note: this data is the same as the &quot;nlme::Soybean&quot; data.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Marie Davidian and D. M. Giltinan, (1995).
+<em>Nonlinear Models for Repeated Measurement Data</em>.
+Chapman and Hall, London.
+</p>
+<p>Electronic version retrieved from
+https://www4.stat.ncsu.edu/~davidian/data/soybean.dat
+</p>
+
+
+<h3>References</h3>
+
+<p>Pinheiro, J. C. and Bates, D. M. (2000).
+<em>Mixed-Effects Models in S and S-PLUS</em>.
+Springer, New York.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(davidian.soybean)
+  dat &lt;- davidian.soybean
+  dat$year &lt;- factor(dat$year)
+
+  libs(lattice)
+  xyplot(weight ~ day|variety*year, dat,
+         group=plot, type='l',
+         main="davidian.soybean")
+
+
+  # The only way to keep your sanity with nlme is to use groupedData objects
+  # Well, maybe not.  When I use "devtools::run_examples",
+  # the "groupedData" function creates a dataframe with/within(?) an
+  # environment, and then "nlsList" cannot find datg, even though
+  # ls() shows datg is visible and head(datg) is fine.
+  # Also works fine in interactive mode. It is driving me insane.
+  # reid.grasses has the same problem
+  # Use if(0){} to block this code from running.
+  if(0){
+    libs(nlme)
+    datg &lt;- groupedData(weight ~ day|plot, dat)
+    # separate fixed-effect model for each plot
+    # 1988P6 gives unusual estimates
+    m1 &lt;- nlsList(SSlogis, data=datg,
+                  subset = plot != "1988P6")
+    # plot(m1) # seems heterogeneous
+    plot(intervals(m1), layout=c(3,1)) # clear year,variety effects in Asym
+
+    # A = maximum, B = time of half A = steepness of curve
+    # C = sharpness of curve (smaller = sharper curve)
+
+    # switch to mixed effects
+    m2 &lt;- nlme(weight ~ A / (1+exp(-(day-B)/C)),
+               data=datg,
+               fixed=list(A ~ 1, B ~ 1, C ~ 1),
+               random = A +B +C ~ 1,
+               start=list(fixed = c(17,52,7.5))) # no list!
+
+    # add covariates for A,B,C effects, correlation, weights
+    # not necessarily best model, but it shows the syntax
+    m3 &lt;- nlme(weight ~ A / (1+exp(-(day-B)/C)),
+               data=datg,
+               fixed=list(A ~ variety + year,
+                          B ~ year,
+                        C ~ year),
+               random = A +B +C ~ 1,
+               start=list(fixed= c(19,0,0,0,
+                                   55,0,0,
+                                   8,0,0)),
+               correlation = corAR1(form = ~ 1|plot),
+               weights=varPower(), # really helps
+               control=list(mxMaxIter=200))
+
+    plot(augPred(m3), layout=c(8,6),
+      main="davidian.soybean - model 3")
+  } # end if(0)
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

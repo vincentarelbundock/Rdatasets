@@ -1,0 +1,161 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of wheat cultivars introduced...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>perry.springwheat</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of wheat cultivars introduced 1860-1982.
+</h2>
+
+<h3>Description</h3>
+
+<p>Yields of wheat cultivars introduced 1860-1982.  Grown in 20 environments.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("perry.springwheat")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 560 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>yield</code></dt><dd><p>yield, kg/ha</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype/cultivar factor, 28 levels</p>
+</dd>
+<dt><code>env</code></dt><dd><p>environment factor, 20 levels</p>
+</dd>
+<dt><code>site</code></dt><dd><p>site factor</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year, 1979-1982</p>
+</dd>
+<dt><code>yor</code></dt><dd><p>year of release, 1860-1982</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Twenty-eight of the most significant wheat cultivars of the past
+century in Western  Australia, were grown in 20 field trials over 4
+years in the Central and Eastern wheat-belt of Australia.
+</p>
+<p>At the Wongan Hills site there were separate early and late sown
+trials in 1979 and 1980.  Later sowing dates generally have lower
+yields.
+</p>
+<p>Note: Although not indicated by the original paper, it may be that the
+Merredin site in 1979 also had early/late sowing dates.
+</p>
+<p>Used with permission of Mario D'Antuono and CSIRO Publishing.
+</p>
+
+
+<h3>Source</h3>
+
+<p>MW Perry and MF D'Antuono. (1989).
+Yield improvement and associated characteristics of some Australian
+spring wheat cultivars introduced between 1860 and 1982.
+Australian Journal of Agricultural Research, 40(3), 457&ndash;472.
+https://www.publish.csiro.au/nid/43/issue/1237.htm
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+  library(agridat)
+  data(perry.springwheat)
+  dat &lt;- perry.springwheat
+
+  libs(lattice)
+  xyplot(yield~yor|env, dat, type=c('p','r'), xlab="year of release",
+         main="perry.springwheat")
+  
+  # Show the genetic trend for each testing location * year.
+  # libs(latticeExtra)
+  # useOuterStrips(xyplot(yield~yor|site*factor(year), dat,
+  #                       type=c('p','r')))
+
+
+  # Perry reports a rate of gain of 5.8 kg/ha/year.  No model is given.
+  # We fit a model with separate intercept/slope for each env
+  m1 &lt;- lm(yield ~ env + yor + env:yor, data=dat)
+  # Average slope across environments
+  mean(c(coef(m1)[21], coef(m1)[21]+coef(m1)[22:40]))
+  ## [1] 5.496781
+
+
+  # ----------
+
+  # Now a mixed-effects model.  Fixed overall int/slope.  Random env int/slope.
+
+  # First, re-scale response so we don't have huge variances
+  dat$y &lt;- dat$yield / 100
+
+  libs(lme4)
+  # Use || for uncorrelated int/slope.  Bad model.  See below.
+  # m2 &lt;- lmer(y ~ 1 + yor + (1+yor||env), data=dat)
+  ## Warning messages:
+  ## 1: In checkConv(attr(opt, "derivs"), opt$par, ctrl = control$checkConv,  :
+  ##   Model failed to converge with max|grad| = 0.55842 (tol = 0.002, component 1)
+  ## 2: In checkConv(attr(opt, "derivs"), opt$par, ctrl = control$checkConv,  :
+  ##   Model is nearly unidentifiable: very large eigenvalue
+  ##  - Rescale variables?;Model is nearly unidentifiable: large eigenvalue ratio
+  ##  - Rescale variables?
+
+  # Looks like lme4 is having trouble with variance of intercepts
+  # There is nothing special about 1800 years, so change the
+  # intercept -- 'correct' yor by subtracting 1800 and try again.
+  dat$yorc &lt;- dat$yor - 1800
+  m3 &lt;- lmer(y ~ 1 + yorc + (1+yorc||env), data=dat)
+  
+  # Now lme4 succeeds.  Rate of gain is 100*0.0549 = 5.49
+  fixef(m3)
+  ## (Intercept)        yorc
+  ##  5.87492444  0.05494464
+
+  if(require("asreml", quietly=TRUE)){
+    libs(asreml,lucid)
+    m3a &lt;- asreml(y ~ 1 + yorc, data=dat, random = ~ env + env:yorc)
+    lucid::vc(m3)
+    ##      grp        var1 var2     vcov   sdcor
+    ##      env (Intercept) &lt;NA&gt; 11.61    3.407
+    ##    env.1        yorc &lt;NA&gt;  0.00063 0.02511
+    ## Residual        &lt;NA&gt; &lt;NA&gt;  3.551   1.884
+    
+    lucid::vc(m3a)
+    ##           effect component std.error z.ratio      con
+    ##      env!env.var  11.61     4.385        2.6 Positive
+    ## env:yorc!env.var   0.00063  0.000236     2.7 Positive
+    ##       R!variance   3.551    0.2231      16   Positive
+  }
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

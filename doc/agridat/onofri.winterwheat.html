@@ -1,0 +1,105 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of winter wheat, 7 years</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>onofri.winterwheat</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of winter wheat, 7 years
+</h2>
+
+<h3>Description</h3>
+
+<p>Multi-environment trial of winter wheat, 7 years, 8 gen
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("onofri.winterwheat")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 168 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year, numeric</p>
+</dd>
+<dt><code>block</code></dt><dd><p>block, 3 levels</p>
+</dd>
+<dt><code>plot</code></dt><dd><p>plot, numeric</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype, 7 levels</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield for each plot</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Yield of 8 durum winter wheat varieties across 7 years with 3 reps.
+</p>
+<p>Downloaded electronic version from here Nov 2015:
+https://www.casaonofri.it/Biometry/index.html
+</p>
+<p>Used with permission of Andrea Onofri.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Andrea Onofri, Egidio Ciriciofolo (2007).
+Using R to Perform the AMMI Analysis on Agriculture Variety Trials.
+R News, Vol. 7, No. 1, pp. 14-19.
+</p>
+
+
+<h3>References</h3>
+
+<p>F. Mendiburu.
+AMMI.
+https://tarwi.lamolina.edu.pe/~fmendiburu/AMMI.htm
+</p>
+<p>A. Onofri.
+https://accounts.unipg.it/~onofri/RTutorial/CaseStudies/WinterWheat.htm
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(agridat)
+data(onofri.winterwheat)
+dat &lt;- onofri.winterwheat
+dat &lt;- transform(dat, year=factor(dat$year))
+
+m1 &lt;- aov(yield ~ year + block:year + gen + gen:year, dat)
+anova(m1) # Matches Onofri figure 1
+
+libs(agricolae)
+m2 &lt;- AMMI(dat$year, dat$gen, dat$block, dat$yield)
+plot(m2)
+title("onofri.winterwheat - AMMI biplot")
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

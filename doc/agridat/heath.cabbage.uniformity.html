@@ -1,0 +1,95 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of cabbage.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>heath.cabbage.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of cabbage.
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of cabbage.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("heath.cabbage.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 48 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>yield</code></dt><dd><p>pounds per plot</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Heath says each plot is .011 acres. An acre is 43560 sq ft, so each
+plot is 479.16 sq feet, which rounds to 480 sq feet. If Heath Figure
+3-1 is correctly shaped, each plot is approximately 12 feet x 40 feet
+= 480 sq ft.
+Each plot had &quot;some 350&quot; plants.
+Harvested 1958.
+</p>
+
+
+<h3>Source</h3>
+
+<p>O.V.S. Heath (1970).
+Investigation by Experiment. Fig. 3-1, p. 50.
+https://archive.org/details/investigationbye0000heat
+</p>
+
+
+<h3>References</h3>
+
+<p>None.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  library(agridat)
+  data(heath.cabbage.uniformity)
+  dat &lt;- heath.cabbage.uniformity
+  
+  # Heath Fig 3-1, p. 50
+  libs(desplot)
+  desplot(dat, yield ~ col*row,
+          aspect=(8*12)/(6*40),
+          main="heath.cabbage.uniformity")
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html><html><head><title>R: Thefts of motor vehicles 2014 to 2017</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>nycvehiclethefts_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Thefts of motor vehicles 2014 to 2017</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'nycvehiclethefts_tbl_df' to avoid confusion with other packages
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the 'usdatasets'
+package and identifies it as a tibble. The original content of the dataset has not been modified.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(nycvehiclethefts_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 35,746 observations and 9 variables:
+</p>
+
+<dl>
+<dt>uid</dt><dd><p>Integer value representing a unique identifier for each vehicle theft incident.</p>
+</dd>
+<dt>date_single</dt><dd><p>Character value representing the single date of the theft incident.</p>
+</dd>
+<dt>date_start</dt><dd><p>Character value representing the start date of the theft incident.</p>
+</dd>
+<dt>date_end</dt><dd><p>Character value representing the end date of the theft incident.</p>
+</dd>
+<dt>longitude</dt><dd><p>Numeric value indicating the longitude where the incident occurred.</p>
+</dd>
+<dt>latitude</dt><dd><p>Numeric value indicating the latitude where the incident occurred.</p>
+</dd>
+<dt>location_type</dt><dd><p>Character value representing the type of location where the theft took place.</p>
+</dd>
+<dt>location_category</dt><dd><p>Character value indicating the category of the location.</p>
+</dd>
+<dt>census_block</dt><dd><p>Character value indicating the census block where the incident took place.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Data from the New York City Vehicle Thefts records
+</p>
+
+</main>
+
+</div>
+</body></html>

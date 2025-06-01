@@ -1,0 +1,147 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trials of beans, 2 species in 2 years</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>smith.beans.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trials of beans, 2 species in 2 years
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trials of beans at California, 1954-1955, 2 species in 2 years
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("smith.beans.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 912 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>expt</code></dt><dd><p>experiment</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, kg</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Trials were conducted in California.
+</p>
+<p>In 1955 plots were twice as wide and twice as long as in 1954. 
+Red Kidney is a bush variety bean, Standard Pink is a viny variety.
+</p>
+<p>Smith randomly assigned A,B,C,D to plots and used these as 'varieties'
+for calculating ANOVA tables.  Plots were combined side-by-side and
+end-to-end to make larger plots. Decreasing LSDs were observed for
+increases in plot sizes.  LSDs were seldom above 200, which was
+considered to be a noticeable difference for the farmers.
+</p>
+<p>There are four datasets:
+</p>
+<p>&mdash;&ndash;
+</p>
+<p>1954 Experiment 1: Red Kidney.
+</p>
+<p>1954 Experiment 2: Standard Pink
+</p>
+<p>Field width: 18 plots * 30 inches = 45 ft
+</p>
+<p>Field length: 12 plots * 15 ft = 180 ft
+</p>
+<p>&mdash;&ndash;
+</p>
+<p>1955 Experiment 3: Red Kidney.
+</p>
+<p>1955 Experiment 4: Standard Pink
+</p>
+<p>Field width: 16 plots * 2 rows * 30 in = 80 ft
+</p>
+<p>Field length: 15 plots * 30 ft = 450 ft
+</p>
+
+
+<h3>Source</h3>
+
+<p>Francis L. Smith, 1958.
+Effects of plot size, plot shape, and number of replications on the
+efficacy of bean yield trials.
+Hilgardia, 28, 43-63.
+https://doi.org/10.3733/hilg.v28n02p043  
+</p>
+
+
+<h3>References</h3>
+
+<p>None.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+  
+  data(smith.beans.uniformity)
+  dat1 &lt;- subset(smith.beans.uniformity, expt=="E1")
+  dat2 &lt;- subset(smith.beans.uniformity, expt=="E2")
+  dat3 &lt;- subset(smith.beans.uniformity, expt=="E3")
+  dat4 &lt;- subset(smith.beans.uniformity, expt=="E4")
+
+  cv &lt;- function(x) { sd(x)/mean(x) }
+  cv(dat1$yield)
+  cv(dat2$yield) # Does not match Smith. Checked all values by hand.
+  cv(dat3$yield)
+  cv(dat4$yield)
+
+  libs("desplot")
+  desplot(dat1, yield ~ col*row,
+          aspect=180/45, flip=TRUE, # true aspect
+          main="smith.beans.uniformity, expt 1 (true aspect)")
+
+  desplot(dat2, yield ~ col*row,
+          aspect=180/45, flip=TRUE, # true aspect
+          main="smith.beans.uniformity, expt 2 (true aspect)")
+
+  desplot(dat3, yield ~ col*row,
+          aspect=450/80, flip=TRUE, # true aspect
+          main="smith.beans.uniformity, expt 3 (true aspect)")
+
+  desplot(dat4, yield ~ col*row,
+          aspect=450/80, flip=TRUE, # true aspect
+          main="smith.beans.uniformity expt 4, (true aspect)")
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

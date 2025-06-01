@@ -1,0 +1,146 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of maize, oat, alfalfa, mangolds</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>summerby.multi.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of maize, oat, alfalfa, mangolds
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of maize, oat, alfalfa, mangolds
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("summerby.multi.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 2600 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>col</code></dt><dd><p>column ordinate</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row ordinate</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield</p>
+</dd>
+<dt><code>range</code></dt><dd><p>range (block in field)</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+<dt><code>crop</code></dt><dd><p>crop</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Note that the plots for each range are the same across years.
+For example the plots in range R2 are the same in 1922, 1923, 1924,
+1925.
+</p>
+<p>Grown at Macdonald College, Quebec.
+Four ranges of land each 760 x 100 links were used.
+In years 1922-1926, all crops were harvested in 20 link by 20 links
+plots. 
+</p>
+<p>In oats, the yields are for cleaned grain.
+In mangolds and alfalfa, the yields of dry matter were calculated.
+In maize, the green weights of fodder were obtained.
+In 1925, range R3 oats were damaged by birds.
+In 1927, range R4 oats were lodges and not harvested.
+In 1924 range R5 had some flooding and is considered 'inadvisable' for use.
+In 1914 range R3 oat yield was variable, perhaps from poor germination.
+Data are included here for completeness, but should perhaps not be included.
+</p>
+<p>The row numbers in this data are based on the figure on page 13 of Summerby.
+Row 1 is at the bottom. There appears to be approximately a blank row between ranges.
+</p>
+<p>The paper by Summerby has more year/range combinations, but those
+plots are 20 links by 100 links and are only a single plot wide.
+</p>
+<p>These data were converted from PDF to png images, then OCR converted
+to text, then hand-checked by K.Wright.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Summerby, R. (1934).
+The value of preliminary uniformity trials in increasing the precision of field experiments.
+Macdonald College.
+https://books.google.com/books?id=6zlMAAAAYAAJ&amp;pg=RA14-PA47
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  library(agridat)
+  data(summerby.multi.uniformity)
+  dat &lt;- summerby.multi.uniformity
+
+  libs(desplot)
+  dat &lt;- mutate(dat, env=paste(range, year, crop))
+  desplot(dat, yield ~ col*row|env, aspect=(5*20)/(35*20),
+          main="summerby.multi.uniformity")
+
+  # Show all ranges for a single year.
+  # dat 
+
+  # Compare the variance for each dataset in Summerby, page 18, column (a)
+  # with what we calculate.  Very slight differences.
+  # libs(dplyr)
+  # dat 
+  ## range  year       var  summerby
+  ##  1 R2     1922  82404      82404
+  ##  2 R2     1923 254780.    254780  
+  ##  3 R2     1924 111978.    111978  
+  ##  4 R2     1925  84515.     84515  
+  ##  5 R2     1926 101008.    100960  
+  ##  6 R3     1922 185031.    185031  
+  ##  7 R3     1923 154777.    154784 
+  ##  8 R3     1924 252451.    252451  
+  ##  9 R3     1926 472087.    472088  
+  ## 10 R4     1924     19.3       19.341 
+  ## 11 R4     1925     14.2       14.234 
+  ## 12 R4     1926     14.2       14.236 
+  ## 13 R5     1924 134472.    134472  
+  ## 14 R5     1925 289001.    289026  
+  ## 15 R5     1926 131714.    131714  
+  ## 16 R5     1927      8.62       8.622
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

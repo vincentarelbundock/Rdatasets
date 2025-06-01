@@ -1,0 +1,161 @@
+<!DOCTYPE html><html><head><title>R: Number of lambs born to 3 breeds on 3 farms</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>mead.lamb</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Number of lambs born to 3 breeds on 3 farms
+</h2>
+
+<h3>Description</h3>
+
+<p>Number of lambs born to 3 breeds on 3 farms
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("mead.lamb")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 36 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>farm</code></dt><dd><p>farm: F1, F2, F3</p>
+</dd>
+<dt><code>breed</code></dt><dd><p>breed: B1, B2, B3</p>
+</dd>
+<dt><code>lambclass</code></dt><dd><p>lambing class: L0, L1, L2, L3</p>
+</dd>
+<dt><code>y</code></dt><dd><p>count of ewes in class</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data 'y' are counts of ewes in different lambing classes.
+The classes are number of live lambs per birth for 0, 1, 2, 3+ lambs.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Roger Mead, Robert N Curnow, Anne M Hasted. 2002.
+Statistical Methods in Agriculture and Experimental Biology, 3rd ed.
+Chapman and Hall. Page 359.
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(mead.lamb)
+dat &lt;- mead.lamb
+
+# farm 1 has more ewes in lambclass 3
+d2 &lt;- xtabs(y ~ farm+breed+lambclass, data=dat)
+mosaicplot(d2, color=c("lemonchiffon1","moccasin","lightsalmon1","indianred"),
+           xlab="farm/lambclass", ylab="breed", main="mead.lamb")
+
+names(dat) &lt;- c('F','B','L','y') # for compactness
+# Match totals in Mead example 14.6
+libs(dplyr)
+dat &lt;- group_by(dat, F,B)
+summarize(dat, y=sum(y))
+##          F      B     y
+##   &lt;fctr&gt; &lt;fctr&gt; &lt;int&gt;
+## 1     F1      A   150
+## 2     F1      B    46
+## 3     F1      C    78
+## 4     F2      A    72
+## 5     F2      B    79
+## 6     F2      C    28
+## 7     F3      A   224
+## 8     F3      B   129
+## 9     F3      C    34
+
+
+# Models
+m1 &lt;- glm(y ~ F + B + F:B, data=dat,
+          family=poisson(link=log))
+m2 &lt;- update(m1, y ~ F + B + F:B + L)
+m3 &lt;- update(m1, y ~ F + B + F:B + L + B:L)
+m4 &lt;- update(m1, y ~ F + B + F:B + L + F:L)
+m5 &lt;- update(m1, y ~ F + B + F:B + L + B:L + F:L)
+
+AIC(m1, m2, m3, m4, m5) # Model 4 has best AIC
+##    df      AIC
+## m1  9 852.9800
+## m2 12 306.5457
+## m3 18 303.5781
+## m4 18 206.1520
+## m5 24 213.8873
+
+# Change contrasts for Miroslav
+m4 &lt;- update(m4,
+             contrasts=list(F=contr.sum,B=contr.sum,L=contr.sum))
+summary(m4)
+
+# Match deviance table from Mead
+libs(broom)
+all &lt;- do.call(rbind, lapply(list(m1, m2, m3, m4, m5), broom::glance))
+all$model &lt;- unlist(lapply(list(m1, m2, m3, m4, m5),
+                               function(x) as.character(formula(x)[3])))
+all[,c('model','deviance','df.residual')]
+##                         model  deviance df.residual
+## 1                 F + B + F:B 683.67257          27
+## 2             F + B + L + F:B 131.23828          24
+## 3       F + B + L + F:B + B:L 116.27069          18
+## 4       F + B + L + F:B + F:L  18.84460          18
+## 5 F + B + L + F:B + B:L + F:L  14.57987          12
+
+
+if(0){
+  # Using MASS::loglm
+  libs(MASS)
+  # Note: without 'fitted=TRUE', devtools::run_examples has an error
+  m4b &lt;- MASS::loglm(y ~ F + B + F:B + L + F:L, data = dat, fitted=TRUE)
+  # Table of farm * class interactions. Match Mead p. 360
+  round(coef(m4b)$F.L,2)
+  fitted(m4b)
+  resid(m4b)
+  # libs(vcd)
+  # mosaic(m4b, shade=TRUE,
+  # formula = ~ F + B + F:B + L + F:L,
+  # residual_type="rstandard", keep_aspect=FALSE)
+}
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

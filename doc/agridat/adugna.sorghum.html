@@ -1,0 +1,121 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of sorghum at 3 locations across 5...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>adugna.sorghum</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of sorghum at 3 locations across 5 years
+</h2>
+
+<h3>Description</h3>
+
+<p>Multi-environment trial of sorghum at 3 locations across 5 years
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 289 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype, 28 levels</p>
+</dd>
+<dt><code>trial</code></dt><dd><p>trial, 2 levels</p>
+</dd>
+<dt><code>env</code></dt><dd><p>environment, 13 levels</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield kg/ha</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year, 2001-2005</p>
+</dd>
+<dt><code>loc</code></dt><dd><p>location, 3 levels</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Sorghum yields at 3 locations across 5 years.
+The trials were carried out at three locations in dry, hot lowlands of
+Ethiopia:
+</p>
+<p>Melkassa (39 deg 21 min E, 8 deg 24 min N)
+</p>
+<p>Mieso (39 deg 22 min E, 8 deg 41 min N)
+</p>
+<p>Kobo (39 deg 37 min E, 12 deg 09 min N)
+</p>
+<p>Trial 1 was 14 hybrids and one open-pollinated variety.
+</p>
+<p>Trial 2 was 12 experimental lines.
+</p>
+<p>Used with permission of Asfaw Adugna.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Asfaw Adugna (2008).
+Assessment of yield stability in sorghum using
+univariate and multivariate statistical approaches.
+Hereditas, 145, 28&ndash;37.  
+https://doi.org/10.1111/j.0018-0661.2008.2023.x
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(adugna.sorghum)
+dat &lt;- adugna.sorghum
+
+libs(lattice)
+redblue &lt;- colorRampPalette(c("firebrick", "lightgray", "#375997"))
+levelplot(yield ~ env*gen, data=dat, main="adugna.sorghum gxe heatmap",
+          col.regions=redblue)
+
+# Genotype means match Adugna
+tapply(dat$yield, dat$gen, mean)
+
+# CV for each genotype.  G1..G15 match, except for G2.
+# The table in Adugna scrambles the means for G16..G28
+libs(reshape2)
+mat &lt;- acast(dat, gen~env,  value.var='yield')
+round(sqrt(apply(mat, 1, var, na.rm=TRUE)) / apply(mat, 1, mean, na.rm=TRUE) * 100,2)
+
+# Shukla stability.  G1..G15 match Adugna.  Can't match G16..G28.
+dat1 &lt;- droplevels(subset(dat, trial=="T1"))
+mat1 &lt;- acast(dat1, gen~env,  value.var='yield')
+w &lt;- mat1; k=15; n=8  # k=p gen, n=q env
+w &lt;- sweep(w, 1, rowMeans(mat1, na.rm=TRUE))
+w &lt;- sweep(w, 2, colMeans(mat1, na.rm=TRUE))
+w &lt;- w + mean(mat1, na.rm=TRUE)
+w &lt;- rowSums(w^2, na.rm=TRUE)
+sig2 &lt;- k*w/((k-2)*(n-1)) - sum(w)/((k-1)*(k-2)*(n-1))
+round(sig2/10000,1) # Genotypes in T1 are divided by 10000
+
+## End(Not run)
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html><html><head><title>R: Workers Compensation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>WorkersComp</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Workers Compensation</h2>
+
+<h3>Description</h3>
+
+<p>Standard example in worker's compensation insurance, examining losses
+due to permanent, partial disability claims. The data are from Klugman (1992), who
+considers Bayesian model representations, and are originally from the National Council on
+Compensation Insurance. We consider n=121 occupation, or risk, classes, over T=7 years.
+To protect the data source, further information on the occupation classes and years is not
+available. Source: Frees, E. W., Young, V. and Y. Luo (2001). Case studies using panel
+data models. North American Actuarial Journal, 4, No. 4, 24-42.</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(WorkersComp)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 847 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>CL</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>YR</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>PR</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>LOSS</code></dt><dd><p>a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>http://instruction.bus.wisc.edu/jfrees/jfreesbooks/Regression
+</p>
+<p>DataDescriptions.pdf
+</p>
+
+
+<h3>Source</h3>
+
+<p>http://instruction.bus.wisc.edu/jfrees/jfreesbooks/Regression
+</p>
+
+
+<h3>References</h3>
+
+<p>Frees E.W. (2010), Regression Modeling with Actuarial and Financial Applications,
+Cambridge University Press.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(WorkersComp)
+## maybe str(WorkersComp) ; plot(WorkersComp) ...
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

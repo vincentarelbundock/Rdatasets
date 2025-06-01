@@ -1,0 +1,115 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of potatoes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>kalamkar.potato.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of potatoes
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of potatoes at Saskatchewan, Canada, 1929.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("kalamkar.potato.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 576 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, pounds per plot</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data is for potato yields in 96 rows, each 132 feet long, with 3
+feet between rows.
+</p>
+<p>Each row was harvested as six plots, each 22 feet long.  Each hill had
+one seed piece.  Hills were spaced 2 feet apart in each row.
+</p>
+<p>Field width: 6 plots * 22 feet = 132 feet
+</p>
+<p>Field length: 96 rows * 3 feet = 288 feet
+</p>
+<p>Units of yield are not given.  In this experiment, there were 22
+plants per plot. Today potato plants yield 3-5 pounds.
+If we assume this experiment had a yield of about 2 pound per plant,
+that would be 22 pounds per plot, which is similar to the data
+values. Also, Kirk 1929 mentions &quot;200 bushels per acre&quot;, and 22 pounds
+per plot x (43560/66) divided by (60 pounds per bushel) = 242, so this
+seems reasonable.  Also the 'kirk.potato' data by the same author was
+recorded in pounds per plot.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Kalamkar, R.J. (1932).
+Experimental Error and the Field-Plot Technique with Potatoes.
+The Journal of Agricultural Science, 22, 373-385.
+https://doi.org/10.1017/S0021859600053697
+</p>
+
+
+<h3>References</h3>
+
+<p>Kirk, L. E. (1929)
+Field plot technique with potatoes with special reference to the Latin
+square.
+Scientific Agriculture, 9, 719.
+https://cdnsciencepub.com/doi/10.4141/sa-1929-0067
+https://doi.org/10.4141/sa-1929-0067
+https://www.google.com/books/edition/Revue_Agronomique_Canadien/-gMkAQAAMAAJ
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(kalamkar.potato.uniformity)
+dat &lt;- kalamkar.potato.uniformity
+
+# Similar to figure 1 of Kalamkar
+libs(desplot)
+desplot(dat, yield~col*row,
+        flip=TRUE, tick=TRUE, aspect=288/132, # true aspect
+        main="kalamkar.potato.uniformity")
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

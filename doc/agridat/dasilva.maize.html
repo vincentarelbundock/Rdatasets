@@ -1,0 +1,137 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of maize</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>dasilva.maize</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of maize
+</h2>
+
+<h3>Description</h3>
+
+<p>Multi-environment trial of maize with 3 reps.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("dasilva.maize")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1485 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>env</code></dt><dd><p>environment</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>replicate block, 3 per env</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield (tons/hectare)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Each location had 3 blocks. Block numbers are unique across
+environments.
+</p>
+<p>NOTE! The environment codes in the supplemental data file of da Silva
+2015 do not quite match the environment codes of the paper, but are
+mostly off by 1.
+</p>
+<p>DaSilva Table 1 has a footnote &quot;Machado et al 2007&quot;. This reference
+appears to be:
+</p>
+<p>Machado et al.
+Estabilidade de producao de hibridos simples e duplos de milhooriundos
+de um mesmo conjunto genico.
+Bragantia, 67, no 3. www.scielo.br/pdf/brag/v67n3/a10v67n3.pdf
+</p>
+<p>In DaSilva Table 1, the mean of E1 is 10.803.  This appears to be a
+copy of the mean from row 1 of Table 1 in Machado. Using the
+supplemental data from this paper, the correct mean is 8.685448.
+</p>
+
+
+<h3>Source</h3>
+
+<p>A Bayesian Shrinkage Approach for AMMI Models.
+Carlos Pereira da Silva, Luciano Antonio de Oliveira, Joel Jorge
+Nuvunga, Andrezza Kellen Alves Pamplona, Marcio Balestre.
+Plos One. Supplemental material.
+https://doi.org/10.1371/journal.pone.0131414
+</p>
+<p>Used via license: Creative Commons BY-SA.
+</p>
+
+
+<h3>References</h3>
+
+<p>J.J. Nuvunga, L.A. Oliveira, A.K.A. Pamplona, C.P. Silva, R.R. Lima
+and M. Balestre. 
+Factor analysis using mixed models of multi-environment trials with
+different levels of unbalancing.
+Genet. Mol. Res. 14.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(agridat)
+data(dasilva.maize)
+dat &lt;- dasilva.maize
+
+# Try to match Table 1 of da Silva 2015.
+# aggregate(yield ~ env, data=dat, FUN=mean)
+##   env     yield
+## 1  E1  6.211817  # match E2 in Table 1
+## 2  E2  4.549104  # E3
+## 3  E3  5.152254  # E4
+## 4  E4  6.245904  # E5
+## 5  E5  8.084609  # E6
+## 6  E6 13.191890  # E7
+## 7  E7  8.895721  # E8
+## 8  E8  8.685448  
+## 9  E9  8.737089  # E9
+
+# Unable to match CVs in Table 2, but who knows what they used
+# for residual variance.
+# aggregate(yield ~ env, data=dat, FUN=function(x) 100*sd(x)/mean(x))
+
+# Match DaSilva supplement 2, ANOVA
+# m1 &lt;- aov(yield ~ env + gen + rep:env + gen:env, dat)
+# anova(m1)
+## Response: yield
+##            Df Sum Sq Mean Sq  F value    Pr(&gt;F)    
+## env         8 8994.2 1124.28 964.1083 &lt; 2.2e-16 ***
+## gen        54  593.5   10.99   9.4247 &lt; 2.2e-16 ***
+## env:rep    18   57.5    3.19   2.7390 0.0001274 ***
+## env:gen   432  938.1    2.17   1.8622 1.825e-15 ***
+## Residuals 972 1133.5    1.17                       
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

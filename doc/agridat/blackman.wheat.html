@@ -1,0 +1,126 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of wheat, conventional and semi-dwarf...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>blackman.wheat</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of wheat, conventional and semi-dwarf varieties
+</h2>
+
+<h3>Description</h3>
+
+<p>Multi-environment trial of wheat, conventional and semi-dwarf
+varieties, 7 locs with low/high fertilizer levels.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 168 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype</p>
+</dd>
+<dt><code>loc</code></dt><dd><p>location</p>
+</dd>
+<dt><code>nitro</code></dt><dd><p>nitrogen fertilizer, low/high</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield (g/m^2)</p>
+</dd>
+<dt><code>type</code></dt><dd><p>type factor, conventional/semi-dwarf</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Conducted in U.K. in 1975.  Each loc had three reps, two nitrogen
+treatments.
+</p>
+<p>Locations were Begbroke, Boxworth, Crafts Hill, Earith, Edinburgh,
+Fowlmere, Trumpington.
+</p>
+<p>At the two highest-yielding locations, Earith and Edinburgh, yield was
+_lower_ for the high-nitrogen treatment.  Blackman et al. say &quot;it
+seems probable that effects on development and structure of the crop
+were responsible for the reductions in yield at high nitrogen&quot;.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Blackman, JA and Bingham, J. and Davidson, JL (1978).
+Response of semi-dwarf and conventional winter wheat varieties to the
+application of nitrogen fertilizer.
+<em>The Journal of Agricultural Science</em>, 90, 543&ndash;550.
+https://doi.org/10.1017/S0021859600056070
+</p>
+
+
+<h3>References</h3>
+
+<p>Gower, J. and Lubbe, S.G. and Gardner, S. and Le Roux, N. (2011).
+<em>Understanding Biplots</em>, Wiley.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(blackman.wheat)
+dat &lt;- blackman.wheat
+
+libs(lattice)
+
+# Semi-dwarf generally higher yielding than conventional
+# bwplot(yield~type|loc,dat, main="blackman.wheat")
+
+# Peculiar interaction--Ear/Edn locs have reverse nitro response
+dotplot(gen~yield|loc, dat, group=nitro, auto.key=TRUE,
+        main="blackman.wheat: yield for low/high nitrogen")
+
+# Height data from table 6 of Blackman.  Height at Trumpington loc.
+# Shorter varieties have higher yields, greater response to nitro.
+heights &lt;- data.frame(gen=c("Cap", "Dur", "Fun", "Hob", "Hun", "Kin",
+                            "Ran", "Spo", "T64", "T68","T95", "Tem"),
+                      ht=c(101,76,76,80,98,88,98,81,86,73,78,93))
+dat$height &lt;- heights$ht[match(dat$gen, heights$gen)]
+xyplot(yield~height|loc,dat,group=nitro,type=c('p','r'),
+       main="blackman.wheat",
+       subset=loc=="Tru", auto.key=TRUE)
+
+
+libs(reshape2)
+# AMMI-style biplot Fig 6.4 of Gower 2011
+dat$env &lt;- factor(paste(dat$loc,dat$nitro,sep="-"))
+datm &lt;- acast(dat, gen~env, value.var='yield')
+datm &lt;- sweep(datm, 1, rowMeans(datm))
+datm &lt;- sweep(datm, 2, colMeans(datm))
+biplot(prcomp(datm), main="blackman.wheat AMMI-style biplot")
+
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

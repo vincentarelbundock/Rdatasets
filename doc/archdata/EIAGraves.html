@@ -1,0 +1,109 @@
+<!DOCTYPE html><html><head><title>R: Early Iron Age Graves - Tell el-Far'ah, Palestine</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>EIAGraves</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Early Iron Age Graves - Tell el-Far'ah, Palestine
+</h2>
+
+<h3>Description</h3>
+
+<p>Counts of 52 different ceramic types in 6 large tombs and 10 broadly contemporaneous groups of tombs.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("EIAGraves")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 52 rows (ceramic types) found in 16 units (a grave or a group of graves).
+</p>
+
+<dl>
+<dt><code>Type</code></dt><dd><p>Ceramic type number</p>
+</dd>
+<dt><code>G100</code></dt><dd><p>19 broadly contemporaneous graves and tombs</p>
+</dd>
+<dt><code>G200B</code></dt><dd><p>30 broadly contemporaneous graves and tombs</p>
+</dd>
+<dt><code>G200C</code></dt><dd><p>28 broadly contemporaneous graves and tombs</p>
+</dd>
+<dt><code>G201</code></dt><dd><p>An indidivual tomb</p>
+</dd>
+<dt><code>G229</code></dt><dd><p>An indidivual tomb</p>
+</dd>
+<dt><code>G500N</code></dt><dd><p>19 broadly contemporaneous graves and tombs</p>
+</dd>
+<dt><code>G532</code></dt><dd><p>An indidivual tomb</p>
+</dd>
+<dt><code>G542</code></dt><dd><p>An indidivual tomb</p>
+</dd>
+<dt><code>G552</code></dt><dd><p>An indidivual tomb</p>
+</dd>
+<dt><code>G562</code></dt><dd><p>An indidivual tomb</p>
+</dd>
+<dt><code>G600</code></dt><dd><p>52 broadly contemporaneous graves and tombs</p>
+</dd>
+<dt><code>G800</code></dt><dd><p>39 broadly contemporaneous graves and tombs</p>
+</dd>
+<dt><code>G900B</code></dt><dd><p>41 broadly contemporaneous graves and tombs</p>
+</dd>
+<dt><code>G900L</code></dt><dd><p>3 broadly contemporaneous graves and tombs</p>
+</dd>
+<dt><code>G900S</code></dt><dd><p>5 broadly contemporaneous graves and tombs</p>
+</dd>
+<dt><code>G900U</code></dt><dd><p>7 broadly contemporaneous graves and tombs</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data on counts of 52 different ceramic types in 6 large tombs and 10 broadly contemporaneous groups of tombs come from Tell el-Far'ah (South), Palestine. They were originally published in McClellan (1979).  The data were scanned from Table 2.5 in Baxter (2003, p. 25-6). The 52 rows correspond to different pottery types found in association with the burials.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Baxter, M. J. 2003. <em>Statistics in Archaeology</em>. Arnold, London.
+</p>
+<p>McClellan, T. L. 1979. Chronology of the 'Philistine' Burials at Tell el-Farah (South). <em>Journal of Field Archaeology</em> 6: 57-73.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(EIAGraves)
+# How many ceramics of each type?
+# Exclude the first column which is the ceramic type number
+rowSums(EIAGraves[, -1])
+# How many tomb groups contain each type?
+rowSums(EIAGraves[, -1]&gt;0)
+# How many ceramics in each tomb group?
+colSums(EIAGraves[, -1])
+# How many types are found in each tomb group?
+colSums(EIAGraves[, -1]&gt;0)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

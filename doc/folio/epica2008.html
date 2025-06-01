@@ -1,0 +1,106 @@
+<!DOCTYPE html><html><head><title>R: EPICA Dome C</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>epica2008</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>EPICA Dome C</h2>
+
+<h3>Description</h3>
+
+<p>EPICA Dome C 800-ka composite <code class="reqn">CO_2</code> data.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>epica2008
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A <code>data.frame</code> with 1096 observations and 2 variables:
+</p>
+
+<dl>
+<dt>age</dt><dd><p><code>integer</code>: year BP.</p>
+</dd>
+<dt>CO2</dt><dd><p><code>numeric</code>: <code class="reqn">CO_2</code> (ppmv).</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.ncei.noaa.gov/access/paleo-search/study/6091">https://www.ncei.noaa.gov/access/paleo-search/study/6091</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Lüthi, D., Le Floch, M., Bereiter, B., Blunier, T., Barnola, J.-M.,
+Siegenthaler, U., Raynaud, D., Jouzel, J., Fischer, H., Kawamura, K. and
+Stocker, T. F. (2008). High-resolution carbon dioxide concentration record
+650,000-800,000 years before present. <em>Nature</em>, 453, 379-382.
+<a href="https://doi.org/10.1038/nature06949">doi:10.1038/nature06949</a>
+</p>
+<p>Monnin, E., Indermuhle, A., Dallenbach, A., Fluckiger, J., Stauffer, B.,
+Stocker, T. F., Raynaud, D. and Barnola, J.-M. (2001). Atmospheric CO2
+concentrations over the last glacial termination. <em>Science</em>, 291,
+112-114. <a href="https://doi.org/10.1126/science.291.5501.112">doi:10.1126/science.291.5501.112</a>
+</p>
+<p>Petit, J. R., Jouzel, J., Raynaud, D., Barkov, N. I., Barnola, J.-M.,
+Basile, I., Benders, M., Chappellaz, J., Davis, M., Delayque, G.,
+Delmotte, M., Kotlyakov, V. M., Legrand, M., Lipenkov, V. Y.,
+Lorius, C., Pepin, L., Ritz, C., Saltzman, E. and Stievenard, M. (1999).
+Climate and atmospheric history of the past 420,000 years from the Vostok
+ice core, Antarctica. <em>Nature</em>, 399, 429-436. <a href="https://doi.org/10.1038/20859">doi:10.1038/20859</a>
+</p>
+<p>Siegenthaler, U., Stocker, T. F., Monnin, E., Luthi, D., Schwander, J.,
+Stauffer, B., Raynaud, D., Barnola, J.-M., Fischer, H., Masson-Delmotte, V.,
+Jouzel, J. (2005). Stable Carbon Cycle-Climate Relationship During the Late
+Pleistocene. <em>Science</em>, 310, 1313-1317. <a href="https://doi.org/10.1126/science.1120130">doi:10.1126/science.1120130</a>
+</p>
+
+
+<h3>See Also</h3>
+
+<p>Other palaeoenvironment data: 
+<code>law2006</code>,
+<code>lisiecki2005</code>,
+<code>ngrip2004</code>,
+<code>ngrip2010</code>,
+<code>spratt2016</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>plot(
+  x = epica2008$age / 1000,
+  y = epica2008$CO2,
+  type = "l",
+  xlim = c(800, 0),
+  xlab = "kilo year BP",
+  ylab = expression("CO"[2]~"(ppmv)")
+)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

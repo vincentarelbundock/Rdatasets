@@ -1,0 +1,150 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of oats in United States, 5...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>edwards.oats</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of oats in United States, 5 locations, 7 years.
+</h2>
+
+<h3>Description</h3>
+
+<p>Multi-environment trial of oats in 5 locations, 7 years, with 3
+replicates in each trial.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("edwards.oats")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 3694 observations on the following 7 variables.
+</p>
+
+<dl>
+<dt><code>eid</code></dt><dd><p>Environment identification (factor)</p>
+</dd>
+<dt><code>year</code></dt><dd><p>Year</p>
+</dd>
+<dt><code>loc</code></dt><dd><p>Location name</p>
+</dd>
+<dt><code>block</code></dt><dd><p>Block</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>Genotype name</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>Yield</p>
+</dd>
+<dt><code>testwt</code></dt><dd><p>Test weight</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This data comes from a breeding program, but does not have the usual
+pattern of (1) genotypes entering/leaving the program (2) check
+genotypes that remain throughout the duration of the program.
+</p>
+<p>Experiments were conducted by the Iowa State University Oat Variety
+Trial in the years 1997 to 2003.
+</p>
+<p>In each year there were 40 genotypes, with about 30 released checks
+and 10 experimental lines. Each genotype appeared in a range of 3 to
+34 of the year-loc combinations.
+</p>
+<p>The trials were grown in five locations in Iowa:
+Ames, Nashua, Crawfordsville, Lewis, Sutherland.
+In 1998 there was no trial grown at Sutherland.
+There were 3 blocks in each trial.
+</p>
+<p>Five genotypes were removed from the data because of low yields (and are not included here).
+</p>
+<p>The environment identifaction values are the same as in Edwards (2006)
+table 1.
+</p>
+<p>Electronic data supplied by Jode Edwards.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Jode W. Edwards, Jean-Luc Jannink (2006).
+Bayesian Modeling of Heterogeneous Error and Genotype x Environment Interaction Variances.
+Crop Science, 46, 820-833.
+https://dx.doi.org/10.2135/cropsci2005.0164
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  libs(dplyr,lattice, reshape2, stringr)
+  data(edwards.oats)
+  dat &lt;- edwards.oats
+  dat$env &lt;- paste0(dat$year,".",dat$loc)
+  dat$eid &lt;- factor(dat$eid)
+  mat &lt;- reshape2::acast(dat, env ~ gen,
+                         fun.aggregate=mean, value.var="yield", na.rm=TRUE)
+  lattice::levelplot(mat, aspect="m",
+                     main="edwards.oats",
+                     xlab="environment", ylab="genotype",
+                     scales=list(x=list(rot=90)))
+
+  # Calculate BLUEs of gen/env effects
+  m1 &lt;- lm(yield ~ gen+eid, dat)
+
+  gg &lt;- coef(m1)[2:80]
+  names(gg) &lt;- stringr::str_replace(names(gg), "gen", "")
+  gg &lt;- c(0,gg)
+  names(gg)[1] &lt;- "ACStewart"
+
+  ee &lt;- coef(m1)[81:113]
+  names(ee) &lt;- stringr::str_replace(names(ee), "eid", "")
+  ee &lt;- c(0,ee)
+  names(ee)[1] &lt;- "1"
+  
+  # Subtract gen/env coefs from yield values
+  dat2 &lt;- dat
+  dat2$gencoef &lt;- gg[match(dat2$gen, names(gg))]
+  dat2$envcoef &lt;- ee[match(dat2$eid, names(ee))]
+  dat2 &lt;- dplyr::mutate(dat2, y = yield - gencoef - envcoef)
+
+  # Calculate variance for each gen*env. Shape of the graph is vaguely
+  # similar to Fig 2 of Edwards et al (2006), who used a Bayesian model
+  dat2 &lt;- group_by(dat2, gen, eid)
+  dat2sum &lt;- summarize(dat2, stddev = sd(y))
+  bwplot(stddev ~ eid, dat2sum)
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

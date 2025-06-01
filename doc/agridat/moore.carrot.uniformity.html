@@ -1,0 +1,203 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trials of pole beans, bush beans, sweet corn,...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>moore.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trials of pole beans, bush beans, sweet corn, carrots,
+spring and fall cauliflower
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trials of pole beans, bush beans, sweet corn, carrots,
+spring and fall cauliflower at Washington, 1952-1955.
+</p>
+
+
+<h3>Format</h3>
+
+<p>Each data frame has the following columns at a minimum.  Some datasets
+have an additional trait column.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield (pounds)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>All trials were grown on sandy loam soil in the Puyallup valley of
+Washington.  In most experiments a gradient in soil fertility was
+evident. Moore &amp; Darroch appear to have assigned 4 treatments to the
+plots and used the residual variation to calculate a CV.  In the
+examples below a 'raw' CV is calculated and is always higher than the
+CV given by Moore &amp; Darroch.
+</p>
+<p><b>Blue Lake Pole Beans</b>.
+</p>
+<p>Conducted 1952. Seven pickings were made at about 5-day intervals.
+Table 26.
+</p>
+<p>Field width: 12 rows x 5 feet = 60 feet.
+</p>
+<p>Field length: 12 ranges x 10 feet = 120 feet.
+</p>
+<p><b>Bush Beans</b>.
+</p>
+<p>Conducted in 1955. Two harvests. Table 27.
+</p>
+<p>Field width: 24 rows x 3 feet = 72 feet.
+</p>
+<p>Field length: 24 ranges x 5 feet = 120 feet.
+</p>
+<p><b>Sweet Corn</b>.
+</p>
+<p>Conducted 1952. Table 28-29.
+</p>
+<p>Field width: 24 rows x 3 feet = 72 feet.
+</p>
+<p>Field length: 12 ranges x 10 feet = 120 feet.
+</p>
+<p><b>Carrot</b>.
+</p>
+<p>Conducted 1952. Table 30.
+</p>
+<p>Field width: 24 rows * 1.5 feet = 36 feet.
+</p>
+<p>Field length: 12 ranges * 5 feet = 60 feet.
+</p>
+<p><b>Spring Cauliflower</b>.
+</p>
+<p>Conducted spring 1951.  Five harvests. Table 31-32.
+</p>
+<p>Field width: 12 rows x 3 feet = 36 feet.
+</p>
+<p>Field length: 10 plants * 1.5 feet * 20 ranges = 300 feet.
+</p>
+<p><b>Fall Cauliflower</b>.
+</p>
+<p>Conducted fall 1951. Five harvests. Table 33-34.
+</p>
+<p>Field width: 12 rows x 3 feet = 36 feet.
+</p>
+<p>Field length: 10 plants * 1.5 feet * 20 ranges = 300 feet.
+</p>
+
+
+<h3>Source</h3>
+
+  
+<p>Moore, John F and Darroch, JG. (1956).
+Field plot technique with Blue Lake pole beans, bush beans, carrots,
+sweet corn, spring and fall cauliflower, page 25-30.
+Washington Agricultural Experiment Stations, Institute of Agricultural
+Sciences, State College of Washington.
+https://babel.hathitrust.org/cgi/pt?id=uiug.30112019919072&amp;view=1up&amp;seq=33&amp;skin=2021
+</p>
+
+
+<h3>References</h3>
+
+<p>None.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+  
+  cv &lt;- function(x) sd(x)/mean(x)
+
+  libs(desplot)
+  
+  # Pole Bean
+  data(moore.polebean.uniformity)
+  cv(moore.polebean.uniformity$yield) # 8.00. Moore says 6.73.
+  desplot(moore.polebean.uniformity, yield~col*row,
+          flip=TRUE, tick=TRUE, aspect=120/60, # true aspect
+          main="moore.polebean.uniformity - yield")
+
+  # Bush bean
+  data(moore.bushbean.uniformity)
+  cv(moore.bushbean.uniformity$yield) # 12.1. Moore says 10.8
+  desplot(moore.bushbean.uniformity, yield~col*row,
+          flip=TRUE, tick=TRUE, aspect=120/72, # true aspect
+          main="moore.bushbean.uniformity - yield")
+
+  # Sweet corn
+  data(moore.sweetcorn.uniformity)
+  cv(moore.sweetcorn.uniformity$yield) # 17.5. Moore says 13.6
+  desplot(moore.sweetcorn.uniformity, yield~col*row,
+          flip=TRUE, tick=TRUE, aspect=120/72, # true aspect
+          main="moore.sweetcorn.uniformity - yield")
+  ## desplot(moore.sweetcorn.uniformity, ears~col*row,
+  ##         flip=TRUE, tick=TRUE, aspect=120/72, # true aspect
+  ##         main="moore.sweetcorn.uniformity - ears")
+  ## libs(lattice)
+  ## xyplot(yield ~ ears, moore.sweetcorn.uniformity)
+  
+  libs(desplot)
+  # Carrot
+  data(moore.carrot.uniformity)
+  cv(moore.carrot.uniformity$yield) # 33.4. Moore says 27.6
+  desplot(moore.carrot.uniformity, yield~col*row,
+          flip=TRUE, tick=TRUE, aspect=60/36, # true aspect
+          main="moore.carrot.uniformity - yield")
+
+  libs(desplot)
+  # Spring cauliflower
+  data(moore.springcauliflower.uniformity)
+  cv(moore.springcauliflower.uniformity$yield) # 21. Moore says 19.5
+  desplot(moore.springcauliflower.uniformity, yield~col*row,
+          flip=TRUE, tick=TRUE, aspect=300/36, # true aspect
+          main="moore.springcauliflower.uniformity - yield")
+  ## desplot(moore.springcauliflower.uniformity, heads~col*row, 
+  ##         flip=TRUE, tick=TRUE, aspect=300/36, # true aspect
+  ##         main="moore.springcauliflower.uniformity - heads")
+  ## libs(lattice)
+  ## xyplot(yield ~ heads, moore.springcauliflower.uniformity)
+
+  libs(desplot)
+  # Fall cauliflower
+  data(moore.fallcauliflower.uniformity)
+  cv(moore.fallcauliflower.uniformity$yield) # 17.7. Moore says 17.0
+  desplot(moore.fallcauliflower.uniformity, yield~col*row, 
+          flip=TRUE, tick=TRUE, aspect=300/36, # true aspect
+          main="moore.fallcauliflower.uniformity - yield")
+  ## desplot(moore.fallcauliflower.uniformity, heads~col*row, 
+  ##         flip=TRUE, tick=TRUE, aspect=300/36, # true aspect
+  ##         main="moore.fallcauliflower.uniformity - heads")
+  ## libs(lattice)
+  ## xyplot(yield ~ heads, moore.fallcauliflower.uniformity)
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

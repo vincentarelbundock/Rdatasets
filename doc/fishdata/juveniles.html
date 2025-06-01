@@ -1,0 +1,65 @@
+<!DOCTYPE html><html><head><title>R: Base table of juvenile fish sample sites and dates.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>juveniles</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Base table of juvenile fish sample sites and dates.</h2>
+
+<h3>Description</h3>
+
+<p>A dataset containing base location and time catch information for juvenile Galaxis maculatus.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>juveniles
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A dataset containing 496 rows and 7 variables
+</p>
+
+<dl>
+<dt>fish_code</dt><dd><p>Primary key, uniquely identifies each fish</p>
+</dd>
+<dt>fish</dt><dd><p>Alternate key</p>
+</dd>
+<dt>otolith_code</dt><dd><p>Alternate key</p>
+</dd>
+<dt>site</dt><dd><p>Site that fish was caught on</p>
+</dd>
+<dt>day</dt><dd><p>Day group that the fish was collected on (1 = 1st fishing day, 5 = 5th fishing day). For exact catch date, see 'catch_date'</p>
+</dd>
+<dt>month</dt><dd><p>Month that the fish was collected on</p>
+</dd>
+<dt>catch_date</dt><dd><p>Day that fish was caught on</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(juveniles)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

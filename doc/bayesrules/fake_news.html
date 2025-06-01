@@ -1,0 +1,114 @@
+<!DOCTYPE html><html><head><title>R: A collection of 150 news articles</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>fake_news</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>A collection of 150 news articles</h2>
+
+<h3>Description</h3>
+
+<p>A dataset containing data behind the study
+&quot;FakeNewsNet: A Data Repository with News Content, Social Context and Spatialtemporal Information for Studying Fake News on Social Media&quot;
+<a href="https://arxiv.org/abs/1809.01286">https://arxiv.org/abs/1809.01286</a>.
+The news articles in this dataset were posted to Facebook in September 2016, in the run-up to the U.S. presidential election.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>fake_news
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 150 rows and 6 variables:
+</p>
+
+<dl>
+<dt>title</dt><dd><p>The title of the news article</p>
+</dd>
+<dt>text</dt><dd><p>Text of the article</p>
+</dd>
+<dt>url</dt><dd><p>Hyperlink for the article</p>
+</dd>
+<dt>authors</dt><dd><p>Authors of the article</p>
+</dd>
+<dt>type</dt><dd><p>Binary variable indicating whether the article presents fake or real news(fake, real)</p>
+</dd>
+<dt>title_words</dt><dd><p>Number of words in the title</p>
+</dd>
+<dt>text_words</dt><dd><p>Number of words in the text</p>
+</dd>
+<dt>title_char</dt><dd><p>Number of characters in the title</p>
+</dd>
+<dt>text_char</dt><dd><p>Number of characters in the text</p>
+</dd>
+<dt>title_caps</dt><dd><p>Number of words that are all capital letters in the title</p>
+</dd>
+<dt>text_caps</dt><dd><p>Number of words that are all capital letters in the text</p>
+</dd>
+<dt>title_caps_percent</dt><dd><p>Percent of words that are all capital letters in the title</p>
+</dd>
+<dt>text_caps_percent</dt><dd><p>Percent of words that are all capital letters in the text</p>
+</dd>
+<dt>title_excl</dt><dd><p>Number of characters that are exclamation marks in the title</p>
+</dd>
+<dt>text_excl</dt><dd><p>Number of characters that are exclamation marks in the text</p>
+</dd>
+<dt>title_excl_percent</dt><dd><p>Percent of characters that are exclamation marks in the title</p>
+</dd>
+<dt>text_excl_percent</dt><dd><p>Percent of characters that are exclamation marks in the text</p>
+</dd>
+<dt>title_has_excl</dt><dd><p>Binary variable indicating whether the title of the article includes an exlamation point or not(TRUE, FALSE)</p>
+</dd>
+<dt>anger</dt><dd><p>Percent of words that are associated with anger</p>
+</dd>
+<dt>anticipation</dt><dd><p>Percent of words that are associated with anticipation</p>
+</dd>
+<dt>disgust</dt><dd><p>Percent of words that are associated with disgust</p>
+</dd>
+<dt>fear</dt><dd><p>Percent of words that are associated with fear</p>
+</dd>
+<dt>joy</dt><dd><p>Percent of words that are associated with joy</p>
+</dd>
+<dt>sadness</dt><dd><p>Percent of words that are associated with sadness</p>
+</dd>
+<dt>surprise</dt><dd><p>Percent of words that are associated with surprise</p>
+</dd>
+<dt>trust</dt><dd><p>Percent of words that are associated with trust</p>
+</dd>
+<dt>negative</dt><dd><p>Percent of words that have negative sentiment</p>
+</dd>
+<dt>positive</dt><dd><p>Percent of words that have positive sentiment</p>
+</dd>
+<dt>text_syllables</dt><dd><p>Number of syllables in text</p>
+</dd>
+<dt>text_syllables_per_word</dt><dd><p>Number of syllables per word in text</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Shu, K., Mahudeswaran, D., Wang, S., Lee, D. and Liu, H. (2018) FakeNewsNet: A Data Repository with News Content, Social Context and Dynamic Information for Studying Fake News on Social Media
+</p>
+
+</main>
+
+</div>
+</body></html>

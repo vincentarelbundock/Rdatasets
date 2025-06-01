@@ -1,0 +1,147 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trials of cotton in China</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>siao.cotton.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trials of cotton in China
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trials of cotton in China
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("siao.cotton.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 858 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row ordinate</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column ordinate</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, catties per mou</p>
+</dd>
+<dt><code>crop</code></dt><dd><p>crop trial number</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>1930 test
+</p>
+<p>A blank test carried out at Provincial Cotton Station at Yuyao,
+Chekiang, China. There were 200 rows, 24 feet long, 1 foot apart,
+planted in a single series. Seed sown in drills, thinned to 8 inches
+plant-to-plant, 30 plants on one row. 
+Appendix Table I, Actual yield of 200 rows of 1930 test.
+</p>
+<p>1931 test A
+</p>
+<p>Same piece of land, same culture, same fertilization as previous year.
+Yields were much lower due to  weather.
+Appendix Table II, Actual yield of 200 rows of 1931 test.
+</p>
+<p>1931 test B
+</p>
+<p>There were 24 long ridges of cotton. On each ridge were 3 rows 1.2
+feet apart (so rows were 3.6 feet wide).
+Each ridge was cut into 12 sections 16.66 feet long with plants one
+foot apart. Siao notes that the yield of the border plots are lower
+than of the inner plots. The correlation between yield and the number
+of plants in the plot is only .09.  
+Appendix Table III, Actual yield of 264 rows of 1931 test (12 col, 22 row).
+</p>
+<p>1932 test
+</p>
+<p>Another 200 rows 24 feet long were planted with same cultural
+practice as 1930 test. Weather was unfavorable.
+Appendix Table IV, Actual yield of 194 rows of 1932 test.
+</p>
+<p>A &quot;catty&quot; is 1.33 pounds (Love &amp; Reisner).
+</p>
+<p>A &quot;mou&quot; is 1/6 acre (Siao page 12).
+</p>
+<p>See also &quot;The Cornell-Nanking Story&quot; by Love &amp; Reisner for tangential
+information.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Siao, Fu.
+A field plot technic study with cotton.
+Found in:
+Harry H. Love papers, 1907-1964.
+Box 3, folder 34, Cotton - Plot Technic Study 1930-1932.
+https://rmc.library.cornell.edu/EAD/htmldocs/RMA00890.html
+</p>
+
+
+<h3>References</h3>
+
+<p>Siao, Fu (1935).
+Uniformity trials with cotton,
+J. Amer. Soc. Agron., 27, 974-979
+https://doi.org/10.2134/agronj1935.00021962002700120004x
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  library(agridat)
+  data(siao.cotton.uniformity)
+  dat &lt;- siao.cotton.uniformity
+  
+  # 1930. Siao reports mean 132.25. We have 132.15
+  dat 
+  dat 
+
+  # 1931a. Siao reports 61.8. We have 61.79
+  dat 
+  dat 
+
+  # 1931b. Siao p 56 reports mean 212.7 (after dropping border???). We have 212.26
+  dat 
+  dat 
+                                            tick=TRUE, flip=TRUE,
+                                            main="siao.cotton.uniformity 1931b")
+  
+  # 1932. Siao p 61 reports mean 43.4. We have 43.03
+  dat 
+  dat 
+                                            tick=TRUE,
+                                            main="siao.cotton.uniformity 1932")
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

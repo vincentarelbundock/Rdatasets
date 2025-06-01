@@ -1,0 +1,137 @@
+<!DOCTYPE html><html><head><title>R: Weight of cork samples on four sides of trees</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>box.cork</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Weight of cork samples on four sides of trees</h2>
+
+<h3>Description</h3>
+
+<p>The cork data gives the weights of cork borings of the trunk for 28 trees
+on the north (N), east (E), south (S) and west (W) directions.
+</p>
+
+
+<h3>Format</h3>
+
+<p>Data frame with 28 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>tree</code></dt><dd><p>tree number</p>
+</dd>
+<dt><code>dir</code></dt><dd><p>direction N,E,S,W</p>
+</dd>
+<dt><code>y</code></dt><dd><p>weight of cork deposit (centigrams), north direction</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>C.R. Rao (1948).
+Tests of significance in multivariate analysis. 
+<em>Biometrika</em>, 35, 58-79.
+https://doi.org/10.2307/2332629  
+</p>
+
+
+<h3>References</h3>
+
+<p>K.V. Mardia, J.T. Kent and J.M. Bibby (1979) <em>Multivariate Analysis</em>,
+Academic Press.
+</p>
+<p>Russell D Wolfinger, (1996).
+Heterogeneous Variance: Covariance Structures for Repeated Measures.
+<em>Journal of Agricultural, Biological, and Environmental
+Statistics</em>, 1, 205-230.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(box.cork)
+  dat &lt;- box.cork
+
+  libs(reshape2, lattice)
+  dat2 &lt;- acast(dat, tree ~ dir, value.var='y')
+  splom(dat2, pscales=3,
+        prepanel.limits = function(x) c(25,100),
+        main="box.cork", xlab="Cork yield on side of tree",
+        panel=function(x,y,...){
+          panel.splom(x,y,...)
+          panel.abline(0,1,col="gray80")
+        })
+
+
+  ## Radial star plot, each tree is one line
+  libs(plotrix)
+  libs(reshape2)
+  dat2 &lt;- acast(dat, tree ~ dir, value.var='y')
+  radial.plot(dat2, start=pi/2, rp.type='p', clockwise=TRUE,
+              radial.lim=c(0,100), main="box.cork",
+              lwd=2, labels=c('North','East','South','West'),
+              line.col=rep(c("royalblue","red","#009900","dark orange",
+                             "#999999","#a6761d","deep pink"),
+                           length=nrow(dat2)))
+
+  if(require("asreml", quietly=TRUE)) {  
+    libs(asreml, lucid)
+    
+    # Unstructured covariance
+    dat$dir &lt;- factor(dat$dir)
+    dat$tree &lt;- factor(dat$tree)  
+    dat &lt;- dat[order(dat$tree, dat$dir), ]
+    
+    # Unstructured covariance matrix
+    m1 &lt;- asreml(y~dir, data=dat, residual = ~ tree:us(dir))
+    
+    lucid::vc(m1)
+    
+    # Note: 'rcor' is a personal function to extract the correlations
+    # into a matrix format
+    # round(kw::rcor(m1)$dir, 2)
+    #        E      N      S      W
+    # E 219.93 223.75 229.06 171.37
+    # N 223.75 290.41 288.44 226.27
+    # S 229.06 288.44 350.00 259.54
+    # W 171.37 226.27 259.54 226.00
+    
+    # Note: Wolfinger used a common diagonal variance
+    
+    # Factor Analytic with different specific variances
+    # fixme: does not work with asreml4
+    # m2 &lt;- update(m1, residual = ~tree:facv(dir,1))
+    # round(kw::rcor(m2)$dir, 2)
+    #       E       N      S      W
+    # E 219.94 209.46 232.85 182.27
+    # N 209.46 290.41 291.82 228.43
+    # S 232.85 291.82 349.99 253.94
+    # W 182.27 228.43 253.94 225.99
+  }
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

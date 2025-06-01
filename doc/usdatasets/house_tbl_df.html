@@ -1,0 +1,79 @@
+<!DOCTYPE html><html><head><title>R: United States House of Representatives historical make-up</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>house_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>United States House of Representatives historical make-up</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'house_tbl_df' to avoid confusion with other packages in
+the R ecosystem from which datasets have been sourced. This naming convention helps distinguish
+this dataset as part of the 'usdatasets' package and assists users in identifying its specific
+characteristics. The suffix 'tbl_df' identifies the dataset as a tibble. The original content
+of the dataset has not been modified in any way.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(house_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 116 observations and 12 variables:
+</p>
+
+<dl>
+<dt>congress</dt><dd><p>Congress number (numeric).</p>
+</dd>
+<dt>year_start</dt><dd><p>Starting year of the congress (numeric).</p>
+</dd>
+<dt>year_end</dt><dd><p>Ending year of the congress (numeric).</p>
+</dd>
+<dt>seats</dt><dd><p>Total number of seats in the House of Representatives (numeric).</p>
+</dd>
+<dt>p1</dt><dd><p>Abbreviation of the first party (character).</p>
+</dd>
+<dt>np1</dt><dd><p>Number of seats for the first party (numeric).</p>
+</dd>
+<dt>p2</dt><dd><p>Abbreviation of the second party (character).</p>
+</dd>
+<dt>np2</dt><dd><p>Number of seats for the second party (numeric).</p>
+</dd>
+<dt>other</dt><dd><p>Number of seats for other parties (numeric).</p>
+</dd>
+<dt>vac</dt><dd><p>Number of vacant seats (numeric).</p>
+</dd>
+<dt>del</dt><dd><p>Number of delegate seats (numeric).</p>
+</dd>
+<dt>res</dt><dd><p>Number of resident commissioner seats (numeric).</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Historical House of Representatives Data
+</p>
+
+</main>
+
+</div>
+</body></html>

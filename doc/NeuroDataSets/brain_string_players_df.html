@@ -1,0 +1,69 @@
+<!DOCTYPE html><html><head><title>R: Brain Activity in String Players</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>brain_string_players_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Brain Activity in String Players</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, brain_string_players_df, is a data frame containing neurophysiological
+measurements from a study of 15 violin and other string instrument players.
+The data examines the relationship between years of musical practice and
+measured brain activity levels in relevant cortical regions.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(brain_string_players_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 15 observations and 2 variables:
+</p>
+
+<dl>
+<dt>Years</dt><dd><p>Integer: Years of musical practice</p>
+</dd>
+<dt>Activity</dt><dd><p>Numeric: Brain activity measurement (likely fMRI or similar neuroimaging units)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'brain_string_players_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps distinguish
+this dataset as part of the NeuroDataSets package. The suffix 'df' indicates
+that the dataset is a data frame. The original content has not been modified.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the Sleuth3 package version 1.0-6. Original reference:
+Ramsey, F.L. and Schafer, D.W. (2013) <em>The Statistical Sleuth: A Course in Methods
+of Data Analysis</em> (3rd ed), Cengage Learning.
+</p>
+
+</main>
+
+</div>
+</body></html>

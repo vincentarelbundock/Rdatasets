@@ -1,0 +1,185 @@
+<!DOCTYPE html><html><head><title>R: Thyroid disease dataset</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>thyroid_disease</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Thyroid disease dataset</h2>
+
+<h3>Description</h3>
+
+<p>The dataset is to be used with a supervised classification ML model to classify thyroid disease.
+The dataset was sourced and adapted from the UCI Machine Learning repository <a href="https://archive.ics.uci.edu/ml/index.php">https://archive.ics.uci.edu/ml/index.php</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>thyroid_disease
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 3772 rows and 28 variables:
+</p>
+
+<dl>
+<dt>ThryroidClass</dt><dd><p>binary classification label indicating whether <strong>sick = 1</strong> or <strong>negative=0</strong></p>
+</dd>
+<dt>patient_age</dt><dd><p>age of the patient</p>
+</dd>
+<dt>patient_gender</dt><dd><p>flag indicating gender of patient - <strong>1=Female</strong> and <strong>0=Male</strong></p>
+</dd>
+<dt>presc_thyroxine</dt><dd><p>flag to indicate whether thyroxine replacement prescribed <strong>1=Thyroxine prescribed</strong></p>
+</dd>
+<dt>queried_why_on_thyroxine</dt><dd><p>flag to indicate query has been actioned</p>
+</dd>
+<dt>presc_anthyroid_meds</dt><dd><p>flag to indicate whether anti-thyroid medicine has been prescribed</p>
+</dd>
+<dt>sick</dt><dd><p>flag to indicate sickness due to thyroxine depletion or over activity</p>
+</dd>
+<dt>pregnant</dt><dd><p>flag to indicate whether the patient is pregnant</p>
+</dd>
+<dt>thyroid_surgery</dt><dd><p>flag to indicate whether the patient has had thyroid surgery</p>
+</dd>
+<dt>radioactive_iodine_therapyI131</dt><dd><p>indicates whether patient has had radioactive iodine treatment: <a href="https://www.nhs.uk/conditions/thyroid-cancer/treatment/">https://www.nhs.uk/conditions/thyroid-cancer/treatment/</a></p>
+</dd>
+<dt>query_hypothyroid</dt><dd><p>flag to indicate under active thyroid query <a href="https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/">https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/</a></p>
+</dd>
+<dt>query_hyperthyroid</dt><dd><p>flag to indicate over active thyroid query <a href="https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/">https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/</a></p>
+</dd>
+<dt>lithium</dt><dd><p>Lithium carbonate administered to decrease the level of thyroid hormones</p>
+</dd>
+<dt>goitre</dt><dd><p>flag to indicate swelling of the thyroid gland <a href="https://www.nhs.uk/conditions/goitre/">https://www.nhs.uk/conditions/goitre/</a></p>
+</dd>
+<dt>tumor</dt><dd><p>flag to indicate a tumor</p>
+</dd>
+<dt>hypopituitarism</dt><dd><p>flag to indicate a diagnosed under active thyroid</p>
+</dd>
+<dt>psych_condition</dt><dd><p>indicates whether a patient has a psychological condition</p>
+</dd>
+<dt>TSH_measured</dt><dd><p>a TSH level lower than normal indicates there is usually more than enough thyroid hormone in the body and may indicate hyperthyroidism</p>
+</dd>
+<dt>TSH_reading</dt><dd><p>the reading result of the TSH blood test</p>
+</dd>
+<dt>T3_measured</dt><dd><p>linked to TSH reading - when free triiodothyronine rise above normal this indicates hyperthyroidism</p>
+</dd>
+<dt>T3_reading</dt><dd><p>the reading result of the T3 blood test looking for above normal levels of free triiodothyronine</p>
+</dd>
+<dt>T4_measured</dt><dd><p>free thyroxine, also known as T4, is used with T3 and TSH tests to diagnose hyperthyroidism</p>
+</dd>
+<dt>T4_reading</dt><dd><p>the reading result of th T4 test</p>
+</dd>
+<dt>thyrox_util_rate_T4U_measured</dt><dd><p>flag indicating the thyroxine utilisation rate <a href="https://pubmed.ncbi.nlm.nih.gov/1685967/">https://pubmed.ncbi.nlm.nih.gov/1685967/</a></p>
+</dd>
+<dt>thyrox_util_rate_T4U_reading</dt><dd><p>the result of the test</p>
+</dd>
+<dt>FTI_measured</dt><dd><p>flag to indicate measurement on the Free Thyroxine Index (FTI)<a href="https://endocrinology.testcatalog.org/show/FRTUP">https://endocrinology.testcatalog.org/show/FRTUP</a></p>
+</dd>
+<dt>FTI_reading</dt><dd><p>the result of the test mentioned above</p>
+</dd>
+<dt>ref_src</dt><dd><p>[nominal] indicating the referral source of the patient</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Prepared and adatped by Gary Hutson <a href="mailto:hutsons-hacks@outlook.com">hutsons-hacks@outlook.com</a>, Dec-2021 and sourced from  Garavan Institute and J. Ross Quinlan.
+</p>
+
+
+<h3>References</h3>
+
+<p>Thyroid disease records supplied by the Garavan Institute and J. Ross Quinlan.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library(dplyr)
+library(ConfusionTableR)
+library(parsnip)
+library(rsample)
+library(recipes)
+library(ranger)
+library(workflows)
+data("thyroid_disease")
+td &lt;- thyroid_disease
+# Create a factor of the class label to use in ML model
+td$ThryroidClass &lt;- as.factor(td$ThryroidClass)
+# Check the structure of the data to make sure factor has been created
+str(td)
+# Remove missing values, or choose more advaced imputation option
+td &lt;- td[complete.cases(td),]
+#Drop the column for referral source
+td &lt;- td %&gt;%
+ dplyr::select(-ref_src)
+# Analyse class imbalance
+class_imbalance &lt;- prop.table(table(td$ThryroidClass))
+class_imbalance
+#Divide the data into a training test split
+set.seed(123)
+split &lt;- rsample::initial_split(td, prop=3/4)
+train_data &lt;- rsample::training(split)
+test_data &lt;- rsample::testing(split)
+# Create recipe to upsample and normalise
+set.seed(123)
+td_recipe &lt;-
+ recipe(ThryroidClass ~ ., data=train_data) %&gt;%
+  step_normalize(all_predictors()) %&gt;%
+  step_zv(all_predictors())
+# Instantiate the model
+set.seed(123)
+rf_mod &lt;-
+  parsnip::rand_forest() %&gt;%
+  set_engine("ranger") %&gt;%
+  set_mode("classification")
+# Create the model workflow
+td_wf &lt;-
+  workflow() %&gt;%
+  workflows::add_model(rf_mod) %&gt;%
+  workflows::add_recipe(td_recipe)
+# Fit the workflow to our training data
+set.seed(123)
+td_rf_fit &lt;-
+  td_wf %&gt;%
+  fit(data = train_data)
+# Extract the fitted data
+td_fitted &lt;- td_rf_fit %&gt;%
+   extract_fit_parsnip()
+# Predict the test set on the training set to see model performance
+class_pred &lt;- predict(td_rf_fit, test_data)
+td_preds &lt;- test_data %&gt;%
+bind_cols(class_pred)
+# Convert both to factors
+td_preds$.pred_class &lt;- as.factor(td_preds$.pred_class)
+td_preds$ThryroidClass &lt;- as.factor(td_preds$ThryroidClass)
+# Evaluate the data with ConfusionTableR
+cm &lt;- ConfusionTableR::binary_class_cm(td_preds$ThryroidClass ,
+                                       td_preds$.pred_class,
+                                       positive="sick")
+#View Confusion matrix
+cm$confusion_matrix
+#View record level
+cm$record_level_cm
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

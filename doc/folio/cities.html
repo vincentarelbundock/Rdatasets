@@ -1,0 +1,94 @@
+<!DOCTYPE html><html><head><title>R: Roman cities</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>cities</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Roman cities</h2>
+
+<h3>Description</h3>
+
+<p>A dataset of population, area, and infrastructural measures for Roman cities
+of the Imperial period.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>cities
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A <code>data.frame</code> with 125 observations (Roman cities) and 8 variables:
+</p>
+
+<dl>
+<dt>name</dt><dd><p><code>character</code>: site Name.</p>
+</dd>
+<dt>area</dt><dd><p><code>integer</code>: site area, in hectares.</p>
+</dd>
+<dt>population</dt><dd><p><code>integer</code>: population estimate, following the
+methodology in Hanson and Ortman (2017).</p>
+</dd>
+<dt>forum_area</dt><dd><p><code>integer</code>: total area of all fora/agorae in the site,
+in square meters.</p>
+</dd>
+<dt>street_area</dt><dd><p><code>integer</code>: total area of streets in the site, in
+square meters.</p>
+</dd>
+<dt>street_length</dt><dd><p><code>integer</code>: total length of streets in the site, in
+meters.</p>
+</dd>
+<dt>street_width</dt><dd><p><code>integer</code>: average width of streets, in square
+meters.</p>
+</dd>
+<dt>block_area</dt><dd><p><code>integer</code>: average area of a block, in square meters.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Hanson, J. &amp; Ortman, S. (2019). Population, area, and infrastructural
+measures for Roman cities of the Imperial period. <em>tDAR</em>.
+<a href="https://doi.org/10.6067/XCV8448563">doi:10.6067/XCV8448563</a>.
+</p>
+
+
+<h3>References</h3>
+
+<p>Hanson J. W. &amp; Ortman S. G. (2017). A systematic method for estimating the
+populations of Greek and Roman settlements. <em>Journal of Roman Archaeology</em>,
+30: 301-324. <a href="https://doi.org/10.1017/S1047759400074134">doi:10.1017/S1047759400074134</a>.
+</p>
+<p>Hanson J. W., Ortman S. G., Bettencourt L. M. A. &amp; Mazur L. C. (2019). Urban
+form, infrastructure and spatial organisation in the Roman Empire.
+<em>Antiquity</em>, 93(369): 702-718. <a href="https://doi.org/10.15184/aqy.2018.192">doi:10.15184/aqy.2018.192</a>.
+</p>
+
+
+<h3>See Also</h3>
+
+<p>Other geographical data: 
+<code>inrap</code>
+</p>
+
+</main>
+
+</div>
+</body></html>

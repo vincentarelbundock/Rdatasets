@@ -1,0 +1,75 @@
+<!DOCTYPE html><html><head><title>R: Museum of Modern Art (MoMA) data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>moma</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Museum of Modern Art (MoMA) data</h2>
+
+<h3>Description</h3>
+
+<p>The Museum of Modern Art data includes information about the individual artists included in the collection of the Museum of Modern Art in New York City.
+It does not include information about works for artist collectives or companies.
+The data was made available by MoMA itself and downloaded in December 2020.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>moma
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 10964 rows and 11 variables. Each row represents an individual artist in the MoMA collection.
+</p>
+
+<dl>
+<dt>artist</dt><dd><p>name</p>
+</dd>
+<dt>country</dt><dd><p>country of origin</p>
+</dd>
+<dt>birth</dt><dd><p>year of birth</p>
+</dd>
+<dt>death</dt><dd><p>year of death</p>
+</dd>
+<dt>alive</dt><dd><p>whether or not the artist was living at the time of data collection (December 2020)</p>
+</dd>
+<dt>genx</dt><dd><p>whether or not the artist is Gen X or younger, ie. born during 1965 or after</p>
+</dd>
+<dt>gender</dt><dd><p>gender identity (as perceived by MoMA employees)</p>
+</dd>
+<dt>department</dt><dd><p>MoMA department in which the artist's works most frequently appear</p>
+</dd>
+<dt>count</dt><dd><p>number of the artist's works in the MoMA collection</p>
+</dd>
+<dt>year_acquired_min</dt><dd><p>first year MoMA acquired one of the artist's works</p>
+</dd>
+<dt>year_acquired_max</dt><dd><p>most recent year MoMA acquired one of the artist's works</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://github.com/MuseumofModernArt/collection/blob/master/Artworks.csv/">https://github.com/MuseumofModernArt/collection/blob/master/Artworks.csv/</a>.
+</p>
+
+</main>
+
+</div>
+</body></html>

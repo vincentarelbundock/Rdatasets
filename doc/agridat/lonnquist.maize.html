@@ -1,0 +1,158 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of maize, half diallel</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>lonnquist.maize</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of maize, half diallel
+</h2>
+
+<h3>Description</h3>
+
+<p>Half diallel of maize
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("lonnquist.maize")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 78 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>p1</code></dt><dd><p>parent 1 factor</p>
+</dd>
+<dt><code>p2</code></dt><dd><p>parent 2 factor</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Twelve hybrids were selfed/crossed in a half-diallel design.
+The data here are means adjusted for block effects.
+Original experiment was 3 reps at 2 locations in 2 years.  
+</p>
+
+
+<h3>Source</h3>
+
+<p>J. H. Lonnquist, C. O. Gardner. (1961)
+Heterosis in Intervarietal Crosses in Maize and Its Implication in
+Breeding Procedures.
+Crop Science, 1, 179-183.  Table 1.
+</p>
+
+
+<h3>References</h3>
+
+<p>Mohring, Melchinger, Piepho. (2011).
+REML-Based Diallel Analysis.
+<em>Crop Science</em>, 51, 470-478.
+https://doi.org/10.2135/cropsci2010.05.0272
+</p>
+<p>C. O. Gardner and S. A. Eberhart. 1966.
+Analysis and Interpretation of the Variety Cross Diallel and Related
+Populations. <em>Biometrics</em>, 22, 439-452.
+https://doi.org/10.2307/2528181
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(lonnquist.maize)
+  dat &lt;- lonnquist.maize
+  dat &lt;- transform(dat,
+                   p1=factor(p1,
+                             levels=c("C","L","M","H","G","P","B","RM","N","K","R2","K2")),
+                   p2=factor(p2,
+                             levels=c("C","L","M","H","G","P","B","RM","N","K","R2","K2")))
+  
+  libs(lattice)
+  redblue &lt;- colorRampPalette(c("firebrick", "lightgray", "#375997"))
+  levelplot(yield ~ p1*p2, dat, col.regions=redblue,
+            main="lonnquist.maize - yield of diallel cross")
+
+
+  # Calculate the F1 means in Lonnquist, table 1
+  # libs(reshape2)
+  # mat &lt;- acast(dat, p1~p2)
+  # mat[upper.tri(mat)] &lt;- t(mat)[upper.tri(mat)] # make symmetric
+  # diag(mat) &lt;- NA
+  # round(rowMeans(mat, na.rm=TRUE),1)
+  ##    C     L     M     H     G     P     B    RM     N     K    R2    K2
+  ## 94.8  89.2  95.0  96.4  95.3  95.2  97.3  93.7  95.0  94.0  98.9 102.4
+
+
+  # Griffings method
+  # https://www.statforbiology.com/2021/stat_met_diallel_griffing/
+  # libs(lmDiallel)
+  # dat2 &lt;- lonnquist.maize
+  # dat2 &lt;- subset(dat2,
+  #                is.element(p1, c("M","H","G","B","K","K2")) &amp;
+  #                is.element(p2, c("M","H","G","B","K","K2")))
+  # dat2 &lt;- droplevels(dat2)
+  # dmod1 &lt;- lm(yield ~ GCA(p1, p2) + tSCA(p1, p2),
+  #             data = dat2)
+  # dmod2 &lt;- lm.diallel(yield ~ p1 + p2, 
+  #                     data = dat2, fct = "GRIFFING2")
+  # anova.diallel(dmod1, MSE=7.1, dfr=60)
+  ## Response: yield
+  ##              Df Sum Sq Mean Sq F value    Pr(&gt;F)    
+  ## GCA(p1, p2)   5 234.23  46.846  6.5980 5.923e-05 ***
+  ## tSCA(p1, p2) 15 238.94  15.929  2.2436   0.01411 *  
+  ## Residuals    60          7.100                      
+
+  
+  # ----------
+
+  if(require("asreml", quietly=TRUE)){
+    # Mohring 2011 used 6 varieties to calculate GCA &amp; SCA
+    # Matches Table 3, column 2
+    d2 &lt;- subset(dat, is.element(p1, c("M","H","G","B","K","K2")) &amp;
+                        is.element(p2, c("M","H","G","B","K","K2")))
+    d2 &lt;- droplevels(d2)
+    libs(asreml,lucid)
+    m2 &lt;- asreml(yield~ 1, data=d2, random = ~ p1 + and(p2))
+    lucid::vc(m2)
+    ##     effect component std.error z.ratio      con
+    ##  p1!p1.var     3.865     3.774     1   Positive
+    ## R!variance    15.93      5.817     2.7 Positive
+  
+    # Calculate GCA effects
+    m3 &lt;- asreml(yield~ p1 + and(p2), data=d2)
+    coef(m3)$fixed-1.462
+    # Matches Gardner 1966, Table 5, Griffing method
+  }
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

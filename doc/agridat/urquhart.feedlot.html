@@ -1,0 +1,176 @@
+<!DOCTYPE html><html><head><title>R: Weight gain calves in a feedlot</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>urquhart.feedlot</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Weight gain calves in a feedlot
+</h2>
+
+<h3>Description</h3>
+
+<p>Weight gain calves in a feedlot, given three different diets.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("urquhart.feedlot")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 67 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>animal</code></dt><dd><p>animal ID</p>
+</dd>
+<dt><code>herd</code></dt><dd><p>herd ID</p>
+</dd>
+<dt><code>diet</code></dt><dd><p>diet: Low, Medium, High</p>
+</dd>
+<dt><code>weight1</code></dt><dd><p>initial weight</p>
+</dd>
+<dt><code>weight2</code></dt><dd><p>slaughter weight</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Calves born in 1975 in 11 different herds entered a feedlot as
+yearlings. Each animal was fed one of three diets with low, medium, or
+high energy. The original sources explored the use of some contrasts
+for comparing breeds.
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+    Herd </td><td style="text-align: left;"> Breed </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    9 </td><td style="text-align: left;"> New Mexico Herefords </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    16 </td><td style="text-align: left;">  New Mexico Herefords </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    3 </td><td style="text-align: left;"> Utah State University Herefords </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    32 </td><td style="text-align: left;"> Angus </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    24 </td><td style="text-align: left;">  Angus x Hereford (cross) </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    31 </td><td style="text-align: left;"> Charolais x Hereford </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    19 </td><td style="text-align: left;"> Charolais x Hereford </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    36 </td><td style="text-align: left;"> Charolais x Hereford </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    34 </td><td style="text-align: left;"> Brangus </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    35 </td><td style="text-align: left;"> Brangus </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    33 </td><td style="text-align: left;"> Southern Select </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>N. Scott Urquhart (1982).
+Adjustment in Covariance when One Factor Affects the Covariate
+Biometrics, 38, 651-660.  Table 4, p. 659.
+https://doi.org/10.2307/2530046
+</p>
+
+
+<h3>References</h3>
+
+<p>N. Scott Urquhart and David L. Weeks (1978).
+Linear Models in Messy Data: Some Problems and Alternatives
+Biometrics, 34, 696-705.
+https://doi.org/10.2307/2530391
+</p>
+<p>Also available in the 'emmeans' package as the 'feedlot' data.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+  library(agridat)
+  data(urquhart.feedlot)
+  dat &lt;- urquhart.feedlot
+
+  libs(reshape2)
+  d2 &lt;- melt(dat, id.vars=c('animal','herd','diet'))
+
+  libs(latticeExtra)
+  useOuterStrips(xyplot(value ~ variable|diet*herd, data=d2, group=animal,
+                        type='l',
+                        xlab="Initial &amp; slaughter timepoint for each diet",
+                        ylab="Weight for each herd",
+                        main="urquhart.feedlot - weight gain by animal"))
+
+
+  # simple fixed-effects model 
+  dat &lt;- transform(dat, animal = factor(animal), herd=factor(herd))
+  m1 &lt;- lm(weight2 ~ weight1 + herd*diet, data = dat)
+  coef(m1) # weight1 = 1.1373 match Urquhart table 5 common slope
+  
+  # random-effects model might be better, for example
+  # libs(lme4)
+  # m1 &lt;- lmer(weight2 ~ -1 + diet + weight1 + (1|herd), data=dat)
+  # summary(m1) # weight1 = 1.2269
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

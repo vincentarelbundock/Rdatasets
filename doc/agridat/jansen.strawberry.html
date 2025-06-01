@@ -1,0 +1,113 @@
+<!DOCTYPE html><html><head><title>R: Ordered disease ratings of strawberry crosses.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>jansen.strawberry</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Ordered disease ratings of strawberry crosses.
+</h2>
+
+<h3>Description</h3>
+
+<p>Ordered disease ratings of strawberry crosses.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("jansen.strawberry")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 144 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>male</code></dt><dd><p>male parent</p>
+</dd>
+<dt><code>female</code></dt><dd><p>female parent</p>
+</dd>
+<dt><code>block</code></dt><dd><p>block</p>
+</dd>
+<dt><code>category</code></dt><dd><p>disease damage, <code>C1</code> &lt; <code>C2</code> &lt; <code>C3</code></p>
+</dd>
+<dt><code>count</code></dt><dd><p>number of plants in each category</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>In strawberries, red core disease is caused by a fungus,
+<em>Phytophtora fragariae</em>.  This experiment evaluated different
+populations for damage caused by red core disease.
+</p>
+<p>There were 3 male strawberry plants and 4 DIFFERENT female strawberry
+plants that were crossed to create 12 populations.
+Note: Jansen labeled the male parents 1,2,3 and the female parents
+1,2,3,4.  To reduce confusion, this data labels the female parents 5,6,7,8.
+</p>
+<p>The experiment had four blocks with 12 plots each (one for each
+population).  Plots usually had 10 plants, but some plots only had 9
+plants.  Each plant was assessed for damage from fungus and rated as
+belonging to category C1, C2, or C3 (increasing damage).
+</p>
+<p>Used with permission of Hans Jansen.
+</p>
+
+
+<h3>Source</h3>
+
+<p>J. Jansen, 1990.
+On the statistical analysis of ordinal data when extravariation is present.
+Applied Statistics, 39, 75-84, Table 1.
+https://doi.org/10.2307/2347813
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+data(jansen.strawberry)
+dat &lt;- jansen.strawberry
+dat &lt;- transform(dat, category=ordered(category, levels=c('C1','C2','C3')))
+
+dtab &lt;- xtabs(count ~ male + female + category, data=dat)
+ftable(dtab)
+
+mosaicplot(dtab,
+           color=c("lemonchiffon1","lightsalmon1","indianred"),
+           main="jansen.strawberry disease ratings",
+           xlab="Male parent", ylab="Female parent")
+
+libs(MASS,vcd)
+# Friendly suggests a minimal model is [MF][C]
+# m1 &lt;- loglm( ~ 1*2 + 3, dtab) # Fails, only with devtools
+# mosaic(m1)
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

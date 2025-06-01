@@ -1,0 +1,134 @@
+<!DOCTYPE html><html><head><title>R: Germination of Orobanche seeds for two genotypes and two...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>crowder.seeds</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Germination of Orobanche seeds for two genotypes and two treatments.
+</h2>
+
+<h3>Description</h3>
+
+<p>Number of Orobanche seeds tested/germinated for two genotypes and
+two treatments.
+</p>
+
+
+<h3>Format</h3>
+
+
+<dl>
+<dt><code>plate</code></dt><dd><p>Factor for replication</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>Factor for genotype with levels <code>O73</code>, <code>O75</code></p>
+</dd>
+<dt><code>extract</code></dt><dd><p>Factor for extract from <code>bean</code>, <code>cucumber</code></p>
+</dd>
+<dt><code>germ</code></dt><dd><p>Number of seeds that germinated</p>
+</dd>
+<dt><code>n</code></dt><dd><p>Total number of seeds tested</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Egyptian broomrape, <em>orobanche aegyptiaca</em> is a parasitic plant
+family.  The plants have no chlorophyll and grow on the roots of other
+plants.  The seeds remain dormant in soil until certain compounds from
+living plants stimulate germination.
+</p>
+<p>Two genotypes were studied in the experiment, <em>O. aegyptiaca 73</em>
+and <em>O. aegyptiaca 75</em>.  The seeds were brushed with one of two
+extracts prepared from either a bean plant or cucmber plant.
+</p>
+<p>The experimental design was a 2x2 factorial, each with 5 or 6 reps of
+plates.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Crowder, M.J., 1978.
+Beta-binomial anova for proportions.
+<em>Appl. Statist.</em>, 27, 34-37.
+https://doi.org/10.2307/2346223
+</p>
+
+
+<h3>References</h3>
+
+<p>N. E. Breslow and D. G. Clayton. 1993.
+Approximate inference in generalized linear mixed models.
+<em>Journal of the American Statistical Association</em>, 88:9-25.
+https://doi.org/10.2307/2290687
+</p>
+<p>Y. Lee and J. A. Nelder. 1996.
+Hierarchical generalized linear models with discussion.
+<em>J. R. Statist. Soc. B</em>, 58:619-678.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(crowder.seeds)
+  dat &lt;- crowder.seeds
+  m1.glm &lt;- m1.glmm &lt;- m1.glmmtmb &lt;- m1.hglm &lt;- NA
+
+
+  # ----- Graphic
+  libs(lattice)
+  dotplot(germ/n~gen|extract, dat, main="crowder.seeds")
+
+
+  # --- GLMM.  Assumes Gaussian random effects
+  libs(MASS)
+  m1.glmm &lt;- glmmPQL(cbind(germ, n-germ) ~ gen*extract, random= ~1|plate,
+                     family=binomial(), data=dat)
+  summary(m1.glmm)
+  ## round(summary(m1.glmm)$tTable,2)
+  ##                        Value Std.Error DF t-value p-value
+  ## (Intercept)            -0.44      0.25 17   -1.80    0.09
+  ## genO75                 -0.10      0.31 17   -0.34    0.74
+  ## extractcucumber         0.52      0.34 17    1.56    0.14
+  ## genO75:extractcucumber  0.80      0.42 17    1.88    0.08
+
+
+  # ----- glmmTMB
+  libs(glmmTMB)
+  m1.glmmtmb &lt;- glmmTMB(cbind(germ, n-germ) ~ gen*extract + (1|plate),
+                        data=dat,
+                        family=binomial)
+  summary(m1.glmmtmb)
+  ## round(summary(m1.glmmtmb)$coefficients$cond , 2)
+  ##                        Estimate Std. Error z value Pr(&gt;|z|)
+  ## (Intercept)               -0.45       0.22   -2.03     0.04
+  ## genO75                    -0.10       0.28   -0.35     0.73
+  ## extractcucumber            0.53       0.30    1.74     0.08
+  ## genO75:extractcucumber     0.81       0.38    2.11     0.04
+ 
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of barley</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>williams.barley.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of barley
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of barley at Narrabri, New South Wales, 1984.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 720 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>grain yield kg/ha divided by 10</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Grown at Roseworthy Agricultural College.  Plots were 5 m long (4 m
+sown, 3.3 m harvested) by 0.75 m wide.
+</p>
+<p>A three-plot seeder was used, planting in a serpentine fashion.
+Williams noted that it appears that the middle plot of each pass
+has a lower yield, possibly due to soil compaction from the tractor.
+</p>
+<p>Field width: 48 plots * .75 m = 36 m
+</p>
+<p>Field length: 15 plots * 5 m = 75 m
+</p>
+
+
+<h3>Source</h3>
+
+<p>Williams, ER and Luckett, DJ. 1988.
+The use of uniformity data in the design and analysis of cotton and barley variety trials.
+Australian Journal of Agricultural Research, 39, 339-350.
+https://doi.org/10.1071/AR9880339
+</p>
+
+
+<h3>References</h3>
+
+<p>Maria Xose Rodriguez-Alvarez, Martin P. Boer, Fred A. van Eeuwijk, Paul
+H. C. Eilersd (2018).
+Correcting for spatial heterogeneity in plant breeding experiments
+with P-splines.
+Spatial Statistics, 23, 52-71.
+https://doi.org/10.1016/j.spasta.2017.10.003
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(williams.barley.uniformity)
+dat &lt;- williams.barley.uniformity
+
+libs(desplot)
+desplot(dat, yield ~ col*row,
+        aspect= 75/36, # true aspect
+        main="williams.barley.uniformity")
+
+
+# Smoothed contour/persp plot like Williams Fig 1b, 2b
+libs(lattice)
+dat$fit &lt;- fitted(loess(yield~col*row, dat, span=.1))
+contourplot(fit~col*row, data=dat,
+            aspect=75/36, region=TRUE, col.regions=RedGrayBlue,
+            main="williams.barley.uniformity")
+wireframe(fit~col*row, data=dat, zlim=c(100, 350),
+          main="williams.barley.uniformity")
+
+# Williams table 1
+anova(aov(yield ~ factor(row) + factor(col), dat))
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

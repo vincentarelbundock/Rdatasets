@@ -1,0 +1,134 @@
+<!DOCTYPE html><html><head><title>R: Potato blight due to weather in Prosser, Washington</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>johnson.blight</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Potato blight due to weather in Prosser, Washington
+</h2>
+
+<h3>Description</h3>
+
+<p>Potato blight due to weather in Prosser, Washington
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 25 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+<dt><code>area</code></dt><dd><p>area affected, hectares</p>
+</dd>
+<dt><code>blight</code></dt><dd><p>blight detected, 0/1 numeric</p>
+</dd>
+<dt><code>rain.am</code></dt><dd><p>number of rainy days in April and May</p>
+</dd>
+<dt><code>rain.ja</code></dt><dd><p>number of rainy days in July and August</p>
+</dd>
+<dt><code>precip.m</code></dt><dd><p>precipitation in May when temp &gt; 5C, milimeters</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The variable 'blight detected' is 1 if 'area' &gt; 0.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Johnson, D.A. and Alldredge, J.R. and Vakoch, D.L. (1996).
+Potato late blight forecasting models for the semiarid environment of
+south-central Washington. <em>Phytopathology</em>, 86, 480&ndash;484.
+https://doi.org/10.1094/Phyto-86-480
+</p>
+
+
+<h3>References</h3>
+
+<p>Vinayanand Kandala,
+<em>Logistic Regression</em>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(johnson.blight)
+dat &lt;- johnson.blight
+
+# Define indicator for blight in previous year
+dat$blight.prev[2:25] &lt;- dat$blight[1:24]
+dat$blight.prev[1] &lt;- 0 # Need this to match the results of Johnson
+dat$blight.prev &lt;- factor(dat$blight.prev)
+dat$blight &lt;- factor(dat$blight)
+
+# Johnson et al developed two logistic models to predict outbreak of blight
+
+m1 &lt;- glm(blight ~ blight.prev + rain.am + rain.ja, data=dat, family=binomial)
+summary(m1)
+##              Estimate Std. Error z value Pr(&gt;|z|)
+## (Intercept)  -11.4699     5.5976  -2.049   0.0405 *
+## blight.prev1   3.8796     1.8066   2.148   0.0318 *
+## rain.am        0.7162     0.3665   1.954   0.0507 .
+## rain.ja        0.2587     0.2468   1.048   0.2945
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+## (Dispersion parameter for binomial family taken to be 1)
+
+##     Null deviance: 34.617  on 24  degrees of freedom
+## Residual deviance: 13.703  on 21  degrees of freedom
+## AIC: 21.703
+
+
+
+m2 &lt;- glm(blight ~ blight.prev + rain.am + precip.m, data=dat, family=binomial)
+summary(m2)
+##              Estimate Std. Error z value Pr(&gt;|z|)
+## (Intercept)   -7.5483     3.8070  -1.983   0.0474 *
+## blight.prev1   3.5526     1.6061   2.212   0.0270 *
+## rain.am        0.6290     0.2763   2.276   0.0228 *
+## precip.m      -0.0904     0.1144  -0.790   0.4295
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+## (Dispersion parameter for binomial family taken to be 1)
+
+##     Null deviance: 34.617  on 24  degrees of freedom
+## Residual deviance: 14.078  on 21  degrees of freedom
+## AIC: 22.078
+
+libs(lattice)
+splom(dat[,c('blight','rain.am','rain.ja','precip.m')],
+      main="johnson.blight - indicator of blight")
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html><html><head><title>R: Alpha lattice design of spring oats</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>john.alpha</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Alpha lattice design of spring oats
+</h2>
+
+<h3>Description</h3>
+
+<p>Alpha lattice design of spring oats
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 72 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>plot</code></dt><dd><p>plot number</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>replicate</p>
+</dd>
+<dt><code>block</code></dt><dd><p>incomplete block</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype (variety)</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>dry matter yield (tonnes/ha)</p>
+</dd>
+<dt><code>row</code></dt><dd><p>Row ordinate</p>
+</dd>
+<dt><code>col</code></dt><dd><p>Column ordinate</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>A spring oats trial grown in Craibstone, near Aberdeen.  There were 24
+varieties in 3 replicates, each consisting of 6 incomplete blocks of 4
+plots.  Planted in a resolvable alpha design.
+</p>
+<p>Caution: Note that the table on page 146 of John &amp; Williams (1995) is
+NOT the physical layout.  The plots were laid out in a single line.
+</p>
+
+
+<h3>Source</h3>
+
+  
+<p>J. A. John &amp; E. R. Williams (1995).
+Cyclic and computer generated designs.
+Chapman and Hall, London.  Page 146.
+</p>
+
+
+<h3>References</h3>
+
+<p>Piepho, H.P. and Mohring, J. (2007),
+Computing heritability and selection response from unbalanced
+plant breeding trials.
+Genetics, 177, 1881-1888.
+https://doi.org/10.1534/genetics.107.074229
+</p>
+<p>Paul Schmidt, Jens Hartung, Jörn Bennewitz, and Hans-Peter Piepho
+(2019).
+Heritability in Plant Breeding on a Genotype-Difference Basis.
+Genetics, 212, 991-1008.
+https://doi.org/10.1534/genetics.119.302134
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(john.alpha)
+  dat &lt;- john.alpha
+  
+  # RCB (no incomplete block)
+  m0 &lt;- lm(yield ~ 0 + gen + rep, data=dat)
+
+  # Block fixed (intra-block analysis) (bottom of table 7.4 in John)
+  m1 &lt;- lm(yield ~ 0 + gen + rep + rep:block, dat)
+  anova(m1)
+
+  # Block random (combined inter-intra block analysis)
+  libs(lme4, lucid)
+  m2 &lt;- lmer(yield ~ 0 + gen + rep + (1|rep:block), dat)
+
+  anova(m2)
+  ## Analysis of Variance Table
+  ##     Df Sum Sq Mean Sq  F value
+  ## gen 24 380.43 15.8513 185.9942
+  ## rep  2   1.57  0.7851   9.2123
+  vc(m2)
+  ##        grp        var1 var2    vcov  sdcor
+  ##  rep:block (Intercept) &lt;NA&gt; 0.06194 0.2489
+  ##   Residual        &lt;NA&gt; &lt;NA&gt; 0.08523 0.2919
+
+
+  # Variety means.  John and Williams table 7.5.  Slight, constant
+  # difference for each method as compared to John and Williams.
+  means &lt;- data.frame(rcb=coef(m0)[1:24],
+                      ib=coef(m1)[1:24],
+                      intra=fixef(m2)[1:24])
+  head(means)
+  ##             rcb       ib    intra
+  ## genG01 5.201233 5.268742 5.146433
+  ## genG02 4.552933 4.665389 4.517265
+  ## genG03 3.381800 3.803790 3.537934
+  ## genG04 4.439400 4.728175 4.528828
+  ## genG05 5.103100 5.225708 5.075944
+  ## genG06 4.749067 4.618234 4.575394
+  
+  libs(lattice)
+  splom(means, main="john.alpha - means for RCB, IB, Intra-block")
+  
+
+  # ----------
+  if(require("asreml", quietly=TRUE)){
+    libs(asreml,lucid)
+
+  # Heritability calculation of Piepho &amp; Mohring, Example 1
+    
+    m3 &lt;- asreml(yield ~ 1 + rep, data=dat, random=~ gen + rep:block)
+    sg2 &lt;- summary(m3)$varcomp['gen','component'] # .142902
+    
+    # Average variance of a difference of two adjusted means (BLUP)
+    
+    p3 &lt;- predict(m3, data=dat, classify="gen", sed=TRUE)
+    # Matrix of pair-wise SED values, squared
+    vdiff &lt;- p3$sed^2
+    # Average variance of two DIFFERENT means (using lower triangular of vdiff)
+    vblup &lt;- mean(vdiff[lower.tri(vdiff)]) # .05455038
+    
+    # Note that without sed=TRUE, asreml reports square root of the average variance
+    # of a difference between the variety means, so the following gives the same value
+    # predict(m3, data=dat, classify="gen")$avsed ^ 2 # .05455038
+    
+    # Average variance of a difference of two adjusted means (BLUE)
+    m4 &lt;- asreml(yield ~ 1 + gen + rep, data=dat, random = ~ rep:block)
+    p4 &lt;- predict(m4, data=dat, classify="gen", sed=TRUE)
+    vdiff &lt;- p4$sed^2
+    vblue &lt;- mean(vdiff[lower.tri(vdiff)]) # .07010875
+    # Again, could use predict(m4, data=dat, classify="gen")$avsed ^ 2
+    
+    # H^2 Ad-hoc measure of heritability
+    sg2 / (sg2 + vblue/2) # .803
+    
+    # H^2c Similar measure proposed by Cullis.
+    1-(vblup / (2*sg2)) # .809
+  }
+
+  # ----------
+  # lme4 to calculate Cullis H2
+  # https://stackoverflow.com/questions/38697477
+  
+  libs(lme4)
+  
+  cov2sed &lt;- function(x){
+    # Convert var-cov matrix to SED matrix
+    # sed[i,j] = sqrt( x[i,i] + x[j,j]- 2*x[i,j] )
+    n &lt;- nrow(x)
+    vars &lt;- diag(x)
+    sed &lt;- sqrt( matrix(vars, n, n, byrow=TRUE) +
+                   matrix(vars, n, n, byrow=FALSE) - 2*x )
+    diag(sed) &lt;- 0
+    return(sed)
+  }
+  
+  # Same as asreml model m4. Note 'gen' must be first term
+  m5blue &lt;- lmer(yield ~ 0 + gen + rep + (1|rep:block), dat)
+  
+  libs(emmeans)
+  ls5blue &lt;- emmeans(m5blue, "gen")
+  con &lt;- ls5blue@linfct[,1:24] # contrast matrix for genotypes
+  # The 'con' matrix is identity diagonal, so we don't need to multiply,
+  # but do so for a generic approach
+  # sed5blue &lt;- cov2sed(con 
+  tmp &lt;- tcrossprod( crossprod(t(con), vcov(m5blue)[1:24,1:24]), con)
+  sed5blue &lt;- cov2sed(tmp)
+
+  
+  # vblue Average variance of difference between genotypes
+  vblue &lt;- mean(sed5blue[upper.tri(sed5blue)]^2)
+  vblue # .07010875 matches 'vblue' from asreml
+  
+  # Now blups
+  m5blup &lt;- lmer(yield ~ 0 + (1|gen) + rep + (1|rep:block), dat)
+  # Need lme4::ranef in case ordinal is loaded
+  re5 &lt;- lme4::ranef(m5blup,condVar=TRUE)
+  vv1 &lt;- attr(re5$gen,"postVar")  
+  vblup &lt;- 2*mean(vv1) # .0577 not exactly same as 'vblup' above
+  vblup
+  
+  # H^2 Ad-hoc measure of heritability
+  sg2 &lt;- c(lme4::VarCorr(m5blup)[["gen"]])  # 0.142902
+  sg2 / (sg2 + vblue/2) # .803 matches asreml
+
+  # H^2c Similar measure proposed by Cullis.
+  1-(vblup / 2 / sg2) # .809 from asreml, .800 from lme4
+
+  
+  # ----------
+  # Sommer to calculate Cullis H2
+  libs(sommer)
+  m2.ran &lt;- mmer(fixed  = yield ~ rep,
+                 random =       ~ gen + rep:block,
+                 data   = dat)
+  
+  vc_g     &lt;- m2.ran$sigma$gen       # genetic variance component
+  n_g      &lt;- n_distinct(dat$gen)    # number of genotypes
+  C22_g    &lt;- m2.ran$PevU$gen$yield  # Prediction error variance matrix for genotypic BLUPs
+  trC22_g  &lt;- sum(diag(C22_g))       # trace
+  # Mean variance of a difference between genotypic BLUPs. Smith eqn 26
+  # I do not see the algebraic reason for this...2
+  av2 &lt;- 2/n_g * (trC22_g - (sum(C22_g)-trC22_g) / (n_g-1))                      
+  
+  ### H2 Cullis
+  1-(av2 / (2 * vc_g)) #0.8091
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

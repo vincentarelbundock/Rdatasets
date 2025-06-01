@@ -1,0 +1,112 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of barley</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>kristensen.barley.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of barley
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of barley conducted in Denmark, 1905.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("kristensen.barley.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 718 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, hectograms/plot</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Experiment conducted in 1905 at Askov, Denmark. Harvested plot size was
+10 x 14 'alen', 6.24 x 8.79 meters. The soil was uniform, but an
+attack of mildew spread from an adjacent field. Yield is measured in
+hectograms/plot for straw and grain together. (Page 468).
+</p>
+<p>Orientation of the plots dimensions is not clear from the text, but
+the aspect used in the example below aligns well with Kristensen
+figure 1.
+</p>
+<p>Field width: 22 plots * 8.79 m
+</p>
+<p>Field length: 11 plots * 6.24 m
+</p>
+<p>Notes from Kristensen: Fig 5 is a 3x3 moving average, Fig 6 is
+deviation from the trend, Fig 7 is the field average added to the
+deviation.  Fig 13 is another uniformity trial of barley in 1924, Fig
+14 is a uniformity trial of oats in 1924.
+</p>
+
+
+<h3>Source</h3>
+
+<p>R. K. Kristensen (1925). 
+Anlaeg og Opgoerelse af Markforsoeg.
+Tidsskrift for landbrugets planteavl, Vol 31, 464-494.
+Fig 1, pg. 467.
+https://dca.au.dk/publikationer/historiske/planteavl/ 
+</p>
+
+
+<h3>References</h3>
+
+<p>J. Neyman, K. Iwaszkiewicz, St. Kolodziejczyk. (1935).
+Statistical Problems in Agricultural Experimentation.
+Supplement to the Journal of the Royal Statistical Society,
+Vol. 2, No. 2 (1935), pp. 107-180.
+https://doi.org/10.2307/2983637
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(kristensen.barley.uniformity)
+dat &lt;- kristensen.barley.uniformity
+
+libs(desplot)
+desplot(dat, yield ~ col*row,
+        flip=TRUE, aspect=(11*6.24)/(22*8.79),
+        main="kristensen.barley.uniformity")
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

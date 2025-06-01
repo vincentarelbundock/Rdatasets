@@ -1,0 +1,115 @@
+<!DOCTYPE html><html><head><title>R: WNBA Basketball Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>basketball</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>WNBA Basketball Data</h2>
+
+<h3>Description</h3>
+
+<p>The WNBA Basketball Data was scraped from <a href="https://www.basketball-reference.com/wnba/players/">https://www.basketball-reference.com/wnba/players/</a> and contains information on basketball players from the 2019 season.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>basketball
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 146 rows and 30 variables. Each row represents a single WNBA basketball player. The variables on each player are as follows.
+</p>
+
+<dl>
+<dt>player_name</dt><dd><p>first and last name</p>
+</dd>
+<dt>height</dt><dd><p>height in inches</p>
+</dd>
+<dt>weight</dt><dd><p>weight in pounds</p>
+</dd>
+<dt>year</dt><dd><p>year of the WNBA season</p>
+</dd>
+<dt>team</dt><dd><p>team that the WNBA player is a member of</p>
+</dd>
+<dt>age</dt><dd><p>age in years</p>
+</dd>
+<dt>games_played</dt><dd><p>number of games played by the player in that season</p>
+</dd>
+<dt>games_started</dt><dd><p>number of games the player started in that season</p>
+</dd>
+<dt>avg_minutes_played</dt><dd><p>average number of minutes played per game</p>
+</dd>
+<dt>avg_field_goals</dt><dd><p>average number of field goals per game played</p>
+</dd>
+<dt>avg_field_goal_attempts</dt><dd><p>average number of field goals attempted per game played</p>
+</dd>
+<dt>field_goal_pct</dt><dd><p>percent of field goals made throughout the season</p>
+</dd>
+<dt>avg_three_pointers</dt><dd><p>average number of three pointers per game played</p>
+</dd>
+<dt>avg_three_pointer_attempts</dt><dd><p>average number of three pointers attempted per game played</p>
+</dd>
+<dt>three_pointer_pct</dt><dd><p>percent of three pointers made throughout the season</p>
+</dd>
+<dt>avg_two_pointers</dt><dd><p>average number of two pointers made per game played</p>
+</dd>
+<dt>avg_two_pointer_attempts</dt><dd><p>average number of two pointers attempted per game played</p>
+</dd>
+<dt>two_pointer_pct</dt><dd><p>percent of two pointers made throughout the season</p>
+</dd>
+<dt>avg_free_throws</dt><dd><p>average number of free throws made per game played</p>
+</dd>
+<dt>avg_free_throw_attempts</dt><dd><p>average number of free throws attempted per game played</p>
+</dd>
+<dt>free_throw_pct</dt><dd><p>percent of free throws made throughout the season</p>
+</dd>
+<dt>avg_offensive_rb</dt><dd><p>average number of offensive rebounds per game played</p>
+</dd>
+<dt>avg_defensive_rb</dt><dd><p>average number of defensive rebounds per game played</p>
+</dd>
+<dt>avg_rb</dt><dd><p>average number of rebounds (both offensive and defensive) per game played</p>
+</dd>
+<dt>avg_assists</dt><dd><p>average number of assists per game played</p>
+</dd>
+<dt>avg_steals</dt><dd><p>average number of steals per game played</p>
+</dd>
+<dt>avg_blocks</dt><dd><p>average number of blocks per game played</p>
+</dd>
+<dt>avg_turnovers</dt><dd><p>average number of turnovers per game played</p>
+</dd>
+<dt>avg_personal_fouls</dt><dd><p>average number of personal fouls per game played. Note: after 5 fouls the player is not allowed to play in that game anymore</p>
+</dd>
+<dt>avg_points</dt><dd><p>average number of points made per game played</p>
+</dd>
+<dt>total_minutes</dt><dd><p>total number of minutes played throughout the season</p>
+</dd>
+<dt>starter</dt><dd><p>whether or not the player started in more than half of the games they played</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.basketball-reference.com/">https://www.basketball-reference.com/</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

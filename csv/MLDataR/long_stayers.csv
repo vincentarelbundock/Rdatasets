@@ -1,0 +1,769 @@
+rownames,stranded.label,age,care.home.referral,medicallysafe,hcop,mental_health_care,periods_of_previous_care,admit_date,frailty_index
+1,Not Stranded,50,0,0,0,0,1,29/12/2020,No index item
+2,Not Stranded,31,1,0,1,0,1,11/12/2020,No index item
+3,Not Stranded,32,0,1,0,1,1,19/01/2021,No index item
+4,Not Stranded,69,1,1,0,1,1,07/01/2021,Mobility problems
+5,Not Stranded,33,0,0,1,1,1,15/01/2021,No index item
+6,Stranded,75,1,1,0,1,1,02/01/2021,Mobility problems
+7,Not Stranded,26,1,0,1,0,1,02/01/2021,No index item
+8,Not Stranded,64,0,1,1,0,1,29/12/2020,Fall patient history
+9,Not Stranded,53,0,1,0,0,5,04/01/2021,No index item
+10,Not Stranded,63,1,0,0,1,1,30/12/2020,Activity Limitation
+11,Not Stranded,30,1,1,0,0,1,28/12/2020,No index item
+12,Not Stranded,77,1,1,1,0,1,16/01/2021,Mobility problems
+13,Stranded,80,1,1,0,0,1,06/01/2021,Mobility problems
+14,Not Stranded,72,1,0,0,0,1,12/01/2021,Mobility problems
+15,Stranded,60,0,1,1,0,4,04/01/2021,No index item
+16,Stranded,32,0,1,0,0,1,19/01/2021,No index item
+17,Not Stranded,70,1,1,0,0,1,15/01/2021,Mobility problems
+18,Not Stranded,31,1,0,0,0,1,16/12/2020,No index item
+19,Stranded,75,1,0,1,1,2,19/01/2021,Mobility problems
+20,Not Stranded,75,1,0,0,0,1,06/01/2021,Activity Limitation
+21,Stranded,77,1,0,0,1,4,13/12/2020,Mobility problems
+22,Stranded,67,1,1,0,0,1,18/12/2020,Mobility problems
+23,Not Stranded,68,0,1,1,0,1,08/02/2021,Mobility problems
+24,Stranded,29,0,1,0,0,1,21/01/2021,No index item
+25,Not Stranded,80,1,0,0,0,1,09/02/2021,Activity Limitation
+26,Stranded,41,0,1,1,0,1,25/12/2020,No index item
+27,Not Stranded,43,0,1,0,1,1,02/12/2020,No index item
+28,Not Stranded,76,1,0,1,0,1,25/01/2021,Activity Limitation
+29,Not Stranded,69,0,0,1,1,1,23/12/2020,Fall patient history
+30,Not Stranded,38,1,0,0,1,1,13/01/2021,No index item
+31,Not Stranded,60,0,0,0,1,1,28/12/2020,No index item
+32,Not Stranded,62,0,0,0,1,1,15/01/2021,Activity Limitation
+33,Stranded,22,0,0,0,1,3,02/02/2021,No index item
+34,Not Stranded,78,0,1,0,1,1,17/01/2021,Fall patient history
+35,Not Stranded,45,0,0,1,0,1,13/12/2020,No index item
+36,Not Stranded,79,1,1,1,1,1,19/12/2020,Mobility problems
+37,Stranded,35,0,1,0,0,1,10/12/2020,No index item
+38,Not Stranded,46,1,1,0,0,1,23/01/2021,No index item
+39,Stranded,60,1,0,0,0,1,03/01/2021,No index item
+40,Stranded,56,1,0,0,0,1,24/12/2020,No index item
+41,Not Stranded,70,0,0,0,0,1,13/01/2021,Fall patient history
+42,Stranded,80,1,0,0,0,2,07/12/2020,Activity Limitation
+43,Stranded,48,1,1,0,0,3,08/01/2021,No index item
+44,Stranded,54,0,1,1,1,1,20/01/2021,No index item
+45,Stranded,64,1,0,0,0,1,21/01/2021,Activity Limitation
+46,Not Stranded,25,0,1,0,1,2,31/12/2020,No index item
+47,Stranded,74,1,0,0,1,1,27/12/2020,Fall patient history
+48,Not Stranded,22,0,0,1,1,1,20/01/2021,No index item
+49,Not Stranded,31,0,0,1,1,1,05/01/2021,No index item
+50,Stranded,63,0,1,1,0,2,26/12/2020,Mobility problems
+51,Stranded,22,0,1,0,1,5,31/12/2020,No index item
+52,Stranded,79,0,0,0,0,1,09/12/2020,Mobility problems
+53,Stranded,64,0,0,1,0,2,23/12/2020,Mobility problems
+54,Stranded,58,1,0,1,1,7,28/12/2020,No index item
+55,Stranded,42,0,1,0,1,1,05/12/2020,No index item
+56,Stranded,66,1,1,1,1,1,02/01/2021,Fall patient history
+57,Stranded,41,1,0,0,0,1,06/12/2020,No index item
+58,Stranded,62,1,1,0,1,4,17/12/2020,Mobility problems
+59,Stranded,74,1,1,1,0,1,01/02/2021,Fall patient history
+60,Stranded,22,1,1,1,1,1,18/12/2020,No index item
+61,Stranded,72,0,0,0,1,1,02/01/2021,Mobility problems
+62,Not Stranded,39,0,1,0,0,1,17/01/2021,No index item
+63,Stranded,36,0,0,0,1,1,19/01/2021,No index item
+64,Stranded,78,1,1,0,1,1,05/01/2021,Fall patient history
+65,Not Stranded,79,0,0,0,0,1,25/12/2020,Mobility problems
+66,Stranded,61,0,1,0,1,10,13/12/2020,Fall patient history
+67,Not Stranded,69,0,0,0,1,1,01/02/2021,Mobility problems
+68,Stranded,54,1,0,0,1,1,30/12/2020,No index item
+69,Stranded,78,1,0,0,0,8,20/12/2020,Fall patient history
+70,Not Stranded,62,0,1,0,1,1,30/01/2021,Fall patient history
+71,Not Stranded,74,1,0,0,1,1,24/01/2021,Activity Limitation
+72,Stranded,71,1,1,1,1,10,08/12/2020,Activity Limitation
+73,Not Stranded,42,0,0,1,1,1,05/01/2021,No index item
+74,Stranded,60,1,0,1,1,1,30/12/2020,No index item
+75,Stranded,67,0,0,0,1,3,09/02/2021,Mobility problems
+76,Not Stranded,61,0,1,1,1,1,21/12/2020,Fall patient history
+77,Not Stranded,73,1,1,0,0,1,02/02/2021,Fall patient history
+78,Not Stranded,27,0,0,0,1,1,18/12/2020,No index item
+79,Not Stranded,26,1,0,1,0,1,28/12/2020,No index item
+80,Not Stranded,24,1,0,1,0,1,22/01/2021,No index item
+81,Not Stranded,22,0,1,1,1,1,27/01/2021,No index item
+82,Not Stranded,66,0,1,0,0,1,28/12/2020,Mobility problems
+83,Not Stranded,36,1,0,0,0,1,01/01/2021,No index item
+84,Not Stranded,67,1,0,0,1,1,26/12/2020,Activity Limitation
+85,Stranded,37,1,0,1,0,7,04/01/2021,No index item
+86,Stranded,68,1,1,0,0,10,25/12/2020,Activity Limitation
+87,Stranded,75,0,1,1,0,1,03/01/2021,Activity Limitation
+88,Stranded,66,0,0,0,0,3,16/12/2020,Activity Limitation
+89,Not Stranded,79,0,1,0,1,1,10/01/2021,Activity Limitation
+90,Not Stranded,24,0,0,0,1,1,25/01/2021,No index item
+91,Not Stranded,21,0,0,0,0,1,12/01/2021,No index item
+92,Not Stranded,34,1,1,0,1,1,11/01/2021,No index item
+93,Not Stranded,42,1,1,1,0,1,22/01/2021,No index item
+94,Not Stranded,60,0,0,0,1,1,08/02/2021,No index item
+95,Not Stranded,64,0,0,1,0,1,21/12/2020,Mobility problems
+96,Not Stranded,66,0,1,0,0,1,17/12/2020,Fall patient history
+97,Not Stranded,24,1,0,1,0,1,13/12/2020,No index item
+98,Not Stranded,22,1,0,1,1,1,07/12/2020,No index item
+99,Stranded,65,1,1,0,0,10,15/12/2020,Mobility problems
+100,Stranded,78,1,0,1,1,4,09/12/2020,Activity Limitation
+101,Stranded,33,0,0,0,0,2,07/12/2020,No index item
+102,Stranded,71,1,0,1,1,1,25/01/2021,Activity Limitation
+103,Not Stranded,21,0,1,1,1,1,02/02/2021,No index item
+104,Stranded,62,0,0,0,1,1,01/01/2021,Fall patient history
+105,Stranded,27,0,1,0,1,8,27/01/2021,No index item
+106,Stranded,67,0,1,1,1,7,27/01/2021,Mobility problems
+107,Stranded,27,1,1,0,1,1,10/02/2021,No index item
+108,Stranded,64,0,0,0,0,1,08/01/2021,Activity Limitation
+109,Not Stranded,68,0,1,0,1,1,05/12/2020,Activity Limitation
+110,Stranded,77,0,1,1,0,3,13/01/2021,Fall patient history
+111,Not Stranded,24,0,0,1,0,2,27/01/2021,No index item
+112,Stranded,46,0,1,1,1,1,12/01/2021,No index item
+113,Stranded,23,0,0,0,1,3,10/12/2020,No index item
+114,Stranded,63,1,0,1,0,1,02/12/2020,Activity Limitation
+115,Not Stranded,39,0,1,1,1,1,16/01/2021,No index item
+116,Not Stranded,67,1,0,1,0,1,16/01/2021,Activity Limitation
+117,Not Stranded,65,1,1,1,0,1,23/01/2021,Fall patient history
+118,Stranded,25,0,0,1,1,8,22/01/2021,No index item
+119,Not Stranded,73,0,1,1,1,1,14/01/2021,Fall patient history
+120,Not Stranded,75,1,1,0,0,1,13/12/2020,Fall patient history
+121,Not Stranded,67,0,1,1,1,1,01/02/2021,Fall patient history
+122,Not Stranded,61,1,0,1,0,1,17/12/2020,Activity Limitation
+123,Stranded,80,0,0,0,1,3,27/12/2020,Activity Limitation
+124,Stranded,80,0,1,1,1,1,15/01/2021,Fall patient history
+125,Stranded,23,0,1,0,0,1,16/01/2021,No index item
+126,Not Stranded,26,0,1,1,0,1,29/01/2021,No index item
+127,Stranded,75,0,0,0,0,5,25/01/2021,Fall patient history
+128,Not Stranded,23,1,1,0,1,1,18/01/2021,No index item
+129,Stranded,40,1,1,0,0,2,14/01/2021,No index item
+130,Not Stranded,65,1,0,0,1,1,08/02/2021,Mobility problems
+131,Not Stranded,78,0,0,0,0,1,03/01/2021,Activity Limitation
+132,Not Stranded,73,1,1,1,1,1,14/01/2021,Fall patient history
+133,Stranded,66,1,1,1,1,3,25/01/2021,Mobility problems
+134,Not Stranded,76,0,0,0,0,1,13/01/2021,Mobility problems
+135,Not Stranded,26,1,1,1,0,1,20/01/2021,No index item
+136,Not Stranded,31,0,0,0,0,1,17/12/2020,No index item
+137,Not Stranded,21,1,0,0,0,1,22/01/2021,No index item
+138,Not Stranded,22,0,1,0,1,1,29/01/2021,No index item
+139,Not Stranded,29,1,0,1,0,1,23/01/2021,No index item
+140,Not Stranded,75,0,0,0,0,1,25/01/2021,Mobility problems
+141,Not Stranded,55,1,0,1,1,1,07/02/2021,No index item
+142,Not Stranded,80,1,1,1,1,1,13/01/2021,Activity Limitation
+143,Stranded,71,1,1,0,0,3,06/01/2021,Mobility problems
+144,Not Stranded,79,0,1,0,1,1,16/01/2021,Fall patient history
+145,Not Stranded,78,0,1,0,1,1,07/02/2021,Fall patient history
+146,Not Stranded,21,0,1,0,0,1,23/12/2020,No index item
+147,Stranded,73,0,1,1,1,1,14/12/2020,Mobility problems
+148,Not Stranded,60,0,1,0,1,1,03/12/2020,No index item
+149,Not Stranded,79,0,0,0,1,1,23/01/2021,Fall patient history
+150,Stranded,22,1,0,1,1,7,01/02/2021,No index item
+151,Not Stranded,78,1,1,1,1,1,14/01/2021,Mobility problems
+152,Stranded,37,1,1,1,0,3,03/01/2021,No index item
+153,Stranded,60,0,0,0,1,1,12/12/2020,No index item
+154,Not Stranded,67,1,1,0,0,1,02/02/2021,Activity Limitation
+155,Not Stranded,76,1,0,0,0,1,19/01/2021,Activity Limitation
+156,Stranded,36,0,0,1,1,1,21/01/2021,No index item
+157,Not Stranded,21,1,0,0,0,1,02/01/2021,No index item
+158,Not Stranded,23,1,1,0,1,1,07/02/2021,No index item
+159,Not Stranded,77,0,0,0,1,1,06/12/2020,Activity Limitation
+160,Stranded,69,0,0,0,0,6,22/01/2021,Activity Limitation
+161,Stranded,36,1,1,1,1,2,06/01/2021,No index item
+162,Not Stranded,65,1,1,1,1,1,24/12/2020,Mobility problems
+163,Not Stranded,71,0,0,0,1,1,29/01/2021,Activity Limitation
+164,Not Stranded,72,1,0,0,1,7,28/12/2020,Activity Limitation
+165,Not Stranded,32,1,1,0,0,1,22/12/2020,No index item
+166,Not Stranded,68,0,0,0,0,1,19/12/2020,Activity Limitation
+167,Stranded,62,1,0,0,0,3,09/12/2020,Fall patient history
+168,Stranded,34,1,1,1,0,10,31/01/2021,No index item
+169,Not Stranded,68,1,1,0,0,1,01/01/2021,Fall patient history
+170,Not Stranded,75,0,1,1,0,1,01/02/2021,Mobility problems
+171,Not Stranded,64,1,0,1,0,1,20/12/2020,Fall patient history
+172,Not Stranded,71,0,0,1,1,1,02/01/2021,Fall patient history
+173,Not Stranded,25,0,0,0,0,1,02/12/2020,No index item
+174,Stranded,69,0,0,0,1,7,25/01/2021,Activity Limitation
+175,Stranded,70,0,0,0,0,1,31/12/2020,Fall patient history
+176,Stranded,71,0,0,1,1,1,08/01/2021,Mobility problems
+177,Not Stranded,42,1,0,1,0,1,21/01/2021,No index item
+178,Stranded,63,1,1,1,0,3,19/01/2021,Fall patient history
+179,Not Stranded,76,0,1,1,1,1,12/12/2020,Activity Limitation
+180,Stranded,37,1,0,0,0,1,22/01/2021,No index item
+181,Not Stranded,32,0,0,0,1,1,10/02/2021,No index item
+182,Not Stranded,69,0,1,0,1,1,07/02/2021,Activity Limitation
+183,Not Stranded,62,1,1,1,0,1,14/01/2021,Activity Limitation
+184,Stranded,67,1,0,1,0,1,10/12/2020,Fall patient history
+185,Stranded,40,0,0,1,1,1,10/02/2021,No index item
+186,Not Stranded,76,1,1,0,0,1,15/12/2020,Fall patient history
+187,Stranded,76,0,1,1,0,1,30/12/2020,Mobility problems
+188,Stranded,33,0,1,0,1,10,08/12/2020,No index item
+189,Stranded,60,1,0,1,0,1,22/01/2021,No index item
+190,Not Stranded,25,1,0,0,1,1,04/12/2020,No index item
+191,Stranded,21,0,1,1,0,1,03/12/2020,No index item
+192,Stranded,40,0,0,0,1,3,30/01/2021,No index item
+193,Not Stranded,77,1,0,1,1,1,18/01/2021,Fall patient history
+194,Not Stranded,40,1,1,1,0,1,04/12/2020,No index item
+195,Not Stranded,42,1,1,0,1,1,05/01/2021,No index item
+196,Not Stranded,67,0,1,0,1,1,11/12/2020,Activity Limitation
+197,Not Stranded,61,0,0,0,1,2,09/02/2021,Mobility problems
+198,Not Stranded,23,0,1,0,0,1,04/01/2021,No index item
+199,Not Stranded,77,0,0,0,0,1,08/01/2021,Activity Limitation
+200,Not Stranded,76,1,0,0,1,1,30/01/2021,Mobility problems
+201,Stranded,21,1,1,1,1,3,03/02/2021,No index item
+202,Stranded,78,0,0,1,0,1,02/12/2020,Fall patient history
+203,Not Stranded,32,0,0,0,0,1,02/01/2021,No index item
+204,Not Stranded,64,1,0,1,1,1,03/01/2021,Activity Limitation
+205,Not Stranded,69,1,0,0,0,1,28/12/2020,Mobility problems
+206,Stranded,66,1,0,0,0,5,30/01/2021,Activity Limitation
+207,Stranded,80,1,0,1,1,1,29/12/2020,Mobility problems
+208,Not Stranded,52,1,0,1,1,1,10/01/2021,No index item
+209,Not Stranded,21,1,0,0,1,1,03/01/2021,No index item
+210,Not Stranded,74,0,0,1,0,1,06/12/2020,Mobility problems
+211,Stranded,76,0,0,1,0,6,13/01/2021,Fall patient history
+212,Stranded,60,1,1,0,0,1,15/01/2021,No index item
+213,Not Stranded,60,1,1,1,0,1,04/01/2021,No index item
+214,Stranded,73,1,0,1,1,4,25/12/2020,Mobility problems
+215,Stranded,71,0,1,1,1,1,30/01/2021,Activity Limitation
+216,Stranded,38,1,1,0,1,2,08/01/2021,No index item
+217,Not Stranded,63,0,1,1,0,1,24/12/2020,Activity Limitation
+218,Not Stranded,32,1,1,1,1,1,18/12/2020,No index item
+219,Stranded,32,0,1,0,0,2,31/12/2020,No index item
+220,Not Stranded,41,0,0,1,1,1,21/12/2020,No index item
+221,Not Stranded,65,1,0,0,0,1,03/01/2021,Mobility problems
+222,Stranded,66,0,0,1,0,1,06/01/2021,Mobility problems
+223,Stranded,64,0,0,1,0,1,19/01/2021,Activity Limitation
+224,Stranded,63,0,0,1,1,1,09/02/2021,Activity Limitation
+225,Stranded,26,1,1,0,1,2,05/01/2021,No index item
+226,Not Stranded,22,1,1,0,0,1,31/01/2021,No index item
+227,Stranded,69,1,0,0,1,1,20/12/2020,Mobility problems
+228,Stranded,24,0,0,1,0,1,01/02/2021,No index item
+229,Not Stranded,31,0,1,1,0,1,29/12/2020,No index item
+230,Stranded,80,0,1,1,0,1,24/01/2021,Fall patient history
+231,Stranded,63,0,1,1,1,1,12/01/2021,Mobility problems
+232,Stranded,46,1,0,0,1,2,18/12/2020,No index item
+233,Not Stranded,22,1,0,1,0,1,11/12/2020,No index item
+234,Stranded,73,0,0,1,1,1,03/12/2020,Activity Limitation
+235,Not Stranded,63,0,0,1,0,1,26/01/2021,Activity Limitation
+236,Not Stranded,74,0,1,0,1,1,01/02/2021,Mobility problems
+237,Stranded,51,0,1,1,1,10,05/02/2021,No index item
+238,Stranded,77,1,1,0,0,4,16/12/2020,Mobility problems
+239,Stranded,32,0,1,1,1,10,20/01/2021,No index item
+240,Stranded,27,0,1,0,0,2,21/01/2021,No index item
+241,Not Stranded,62,0,1,0,1,1,04/01/2021,Activity Limitation
+242,Not Stranded,71,0,0,1,1,1,03/01/2021,Mobility problems
+243,Not Stranded,22,1,0,1,1,1,04/01/2021,No index item
+244,Not Stranded,65,0,1,1,0,1,09/12/2020,Fall patient history
+245,Not Stranded,29,1,1,0,0,1,20/12/2020,No index item
+246,Not Stranded,49,1,1,1,0,1,03/01/2021,No index item
+247,Stranded,41,1,0,1,1,1,01/01/2021,No index item
+248,Stranded,80,1,0,1,1,1,05/02/2021,Mobility problems
+249,Not Stranded,34,1,0,1,1,1,31/12/2020,No index item
+250,Not Stranded,23,1,1,1,1,1,20/12/2020,No index item
+251,Not Stranded,64,0,0,0,0,1,10/01/2021,Activity Limitation
+252,Stranded,67,1,1,1,0,3,06/02/2021,Activity Limitation
+253,Not Stranded,24,0,1,1,0,3,12/12/2020,No index item
+254,Stranded,25,0,0,1,0,3,17/01/2021,No index item
+255,Stranded,67,0,0,0,0,1,31/01/2021,Mobility problems
+256,Stranded,21,0,1,1,1,1,22/01/2021,No index item
+257,Not Stranded,30,0,0,1,0,1,19/12/2020,No index item
+258,Not Stranded,71,0,1,1,1,1,15/12/2020,Mobility problems
+259,Not Stranded,67,0,0,1,1,1,07/02/2021,Activity Limitation
+260,Not Stranded,80,1,1,0,1,1,18/12/2020,Activity Limitation
+261,Stranded,34,1,1,1,0,3,02/12/2020,No index item
+262,Stranded,27,1,0,0,0,5,09/12/2020,No index item
+263,Stranded,24,1,0,0,1,1,04/12/2020,No index item
+264,Stranded,75,1,1,1,1,1,06/02/2021,Fall patient history
+265,Stranded,65,1,0,0,0,3,26/12/2020,Activity Limitation
+266,Not Stranded,75,1,1,0,0,1,04/12/2020,Mobility problems
+267,Stranded,25,1,0,0,1,2,10/01/2021,No index item
+268,Stranded,24,0,1,1,0,1,04/12/2020,No index item
+269,Stranded,21,0,1,1,0,8,05/02/2021,No index item
+270,Not Stranded,74,1,0,1,1,1,08/12/2020,Fall patient history
+271,Stranded,38,0,1,1,1,2,18/01/2021,No index item
+272,Not Stranded,21,0,0,1,1,1,09/12/2020,No index item
+273,Stranded,40,0,0,1,0,1,11/01/2021,No index item
+274,Stranded,69,1,0,1,0,1,24/01/2021,Mobility problems
+275,Not Stranded,75,0,0,1,0,1,11/01/2021,Fall patient history
+276,Not Stranded,74,0,1,0,1,1,08/02/2021,Activity Limitation
+277,Not Stranded,29,0,1,0,0,1,02/01/2021,No index item
+278,Not Stranded,79,1,1,0,0,1,20/12/2020,Mobility problems
+279,Not Stranded,57,0,0,1,1,1,26/12/2020,No index item
+280,Stranded,22,1,0,0,0,8,23/12/2020,No index item
+281,Not Stranded,28,1,0,0,0,1,16/12/2020,No index item
+282,Not Stranded,66,0,0,0,0,1,08/12/2020,Fall patient history
+283,Stranded,71,0,0,1,0,1,23/12/2020,Fall patient history
+284,Stranded,74,1,0,0,0,1,20/01/2021,Mobility problems
+285,Stranded,77,1,1,1,1,2,30/01/2021,Fall patient history
+286,Stranded,71,1,1,1,1,3,07/12/2020,Fall patient history
+287,Stranded,63,0,0,1,0,10,13/12/2020,Activity Limitation
+288,Not Stranded,72,1,1,0,0,1,05/01/2021,Activity Limitation
+289,Stranded,26,1,0,1,1,1,02/02/2021,No index item
+290,Stranded,33,0,0,1,1,4,12/01/2021,No index item
+291,Not Stranded,21,1,0,0,1,1,10/12/2020,No index item
+292,Not Stranded,25,0,0,1,1,1,20/12/2020,No index item
+293,Stranded,31,1,0,1,1,1,09/01/2021,No index item
+294,Stranded,24,0,1,1,0,1,25/12/2020,No index item
+295,Not Stranded,62,1,1,1,0,1,31/12/2020,Activity Limitation
+296,Stranded,76,1,0,1,0,1,17/12/2020,Fall patient history
+297,Not Stranded,72,0,1,1,1,1,08/01/2021,Mobility problems
+298,Not Stranded,24,1,0,1,1,1,12/12/2020,No index item
+299,Not Stranded,67,0,1,0,0,1,27/01/2021,Fall patient history
+300,Stranded,58,0,1,0,0,2,12/01/2021,No index item
+301,Stranded,30,0,1,0,1,1,23/12/2020,No index item
+302,Not Stranded,66,1,0,1,0,1,11/01/2021,Fall patient history
+303,Stranded,65,0,1,1,1,10,06/02/2021,Activity Limitation
+304,Not Stranded,69,1,1,1,1,1,12/01/2021,Fall patient history
+305,Stranded,37,0,0,0,1,1,13/12/2020,No index item
+306,Stranded,63,1,1,1,1,4,05/01/2021,Fall patient history
+307,Not Stranded,79,1,1,1,1,1,02/02/2021,Fall patient history
+308,Not Stranded,60,1,0,1,0,1,31/01/2021,No index item
+309,Stranded,25,0,1,0,1,4,24/12/2020,No index item
+310,Not Stranded,78,1,1,0,0,1,10/01/2021,Activity Limitation
+311,Not Stranded,41,1,1,1,0,1,27/12/2020,No index item
+312,Not Stranded,22,0,1,0,0,1,30/12/2020,No index item
+313,Stranded,27,0,0,1,0,1,29/12/2020,No index item
+314,Not Stranded,25,1,1,1,0,1,05/01/2021,No index item
+315,Not Stranded,43,0,0,1,1,1,02/01/2021,No index item
+316,Not Stranded,78,0,1,1,0,1,29/01/2021,Mobility problems
+317,Stranded,30,0,1,0,1,1,08/12/2020,No index item
+318,Stranded,74,1,1,1,0,1,03/01/2021,Mobility problems
+319,Not Stranded,28,1,0,1,0,1,14/12/2020,No index item
+320,Not Stranded,69,1,1,0,1,1,12/01/2021,Fall patient history
+321,Stranded,31,1,0,1,0,6,21/01/2021,No index item
+322,Not Stranded,62,1,0,0,0,1,10/12/2020,Fall patient history
+323,Not Stranded,67,1,1,0,0,1,06/01/2021,Fall patient history
+324,Stranded,43,1,0,1,1,1,11/01/2021,No index item
+325,Not Stranded,64,1,1,1,0,1,13/01/2021,Fall patient history
+326,Not Stranded,75,0,0,0,1,1,14/01/2021,Mobility problems
+327,Stranded,62,1,1,0,0,1,10/02/2021,Mobility problems
+328,Not Stranded,73,1,0,0,1,1,09/02/2021,Activity Limitation
+329,Stranded,23,1,0,1,1,1,21/12/2020,No index item
+330,Stranded,77,1,1,1,1,1,09/01/2021,Fall patient history
+331,Stranded,46,0,0,0,0,1,13/12/2020,No index item
+332,Not Stranded,77,1,1,1,1,2,26/01/2021,Activity Limitation
+333,Not Stranded,76,0,0,1,1,1,29/01/2021,Fall patient history
+334,Stranded,44,0,0,0,1,1,12/12/2020,No index item
+335,Stranded,79,0,0,0,1,2,18/12/2020,Activity Limitation
+336,Not Stranded,71,1,1,1,0,1,06/02/2021,Mobility problems
+337,Stranded,44,1,1,1,0,1,17/01/2021,No index item
+338,Not Stranded,62,1,1,1,0,1,02/12/2020,Fall patient history
+339,Not Stranded,33,1,1,1,0,1,02/01/2021,No index item
+340,Stranded,41,0,1,0,0,1,15/01/2021,No index item
+341,Stranded,71,1,1,0,1,1,26/12/2020,Activity Limitation
+342,Not Stranded,63,0,0,0,1,1,14/12/2020,Mobility problems
+343,Not Stranded,22,1,1,0,0,1,06/12/2020,No index item
+344,Not Stranded,33,0,1,1,0,1,20/01/2021,No index item
+345,Stranded,64,0,1,1,1,3,05/01/2021,Fall patient history
+346,Not Stranded,78,0,1,1,0,1,17/12/2020,Fall patient history
+347,Not Stranded,22,0,1,1,1,1,03/12/2020,No index item
+348,Not Stranded,23,0,0,0,0,1,25/12/2020,No index item
+349,Stranded,26,0,0,1,1,1,12/01/2021,No index item
+350,Stranded,37,1,1,0,1,1,07/02/2021,No index item
+351,Not Stranded,67,1,1,1,0,1,05/12/2020,Activity Limitation
+352,Not Stranded,30,0,0,0,0,1,16/01/2021,No index item
+353,Not Stranded,80,0,1,0,0,1,11/12/2020,Mobility problems
+354,Stranded,24,0,0,0,0,4,24/12/2020,No index item
+355,Not Stranded,21,0,0,1,0,1,03/01/2021,No index item
+356,Not Stranded,63,0,0,1,1,1,25/01/2021,Mobility problems
+357,Stranded,28,0,0,1,1,3,04/02/2021,No index item
+358,Stranded,76,0,1,0,0,8,07/01/2021,Mobility problems
+359,Stranded,63,0,0,1,1,3,12/12/2020,Fall patient history
+360,Stranded,63,1,0,1,0,3,27/01/2021,Activity Limitation
+361,Stranded,75,0,0,1,0,10,08/01/2021,Mobility problems
+362,Stranded,63,1,1,1,0,4,08/02/2021,Fall patient history
+363,Not Stranded,65,1,0,0,0,1,06/01/2021,Activity Limitation
+364,Not Stranded,67,0,0,0,0,1,11/01/2021,Activity Limitation
+365,Not Stranded,68,0,0,0,1,1,18/01/2021,Mobility problems
+366,Not Stranded,30,1,1,1,0,1,06/01/2021,No index item
+367,Stranded,29,0,1,0,0,7,29/12/2020,No index item
+368,Stranded,21,0,0,0,1,3,11/12/2020,No index item
+369,Not Stranded,65,1,0,0,1,1,05/01/2021,Fall patient history
+370,Not Stranded,61,0,1,1,1,1,14/01/2021,Fall patient history
+371,Not Stranded,25,1,0,1,0,1,15/01/2021,No index item
+372,Not Stranded,21,0,1,0,0,1,26/01/2021,No index item
+373,Not Stranded,21,1,1,1,0,1,05/12/2020,No index item
+374,Not Stranded,68,1,1,0,1,1,10/01/2021,Mobility problems
+375,Not Stranded,28,1,1,0,1,1,04/01/2021,No index item
+376,Not Stranded,58,1,0,1,1,1,25/12/2020,No index item
+377,Not Stranded,76,0,1,0,0,1,19/01/2021,Mobility problems
+378,Not Stranded,77,1,0,0,0,1,16/12/2020,Fall patient history
+379,Not Stranded,32,0,0,1,1,1,01/02/2021,No index item
+380,Not Stranded,70,0,1,0,0,1,23/01/2021,Mobility problems
+381,Not Stranded,63,0,0,1,1,1,25/01/2021,Activity Limitation
+382,Stranded,22,1,0,1,1,4,02/02/2021,No index item
+383,Not Stranded,69,1,0,0,0,1,17/12/2020,Fall patient history
+384,Not Stranded,75,1,1,0,1,1,29/01/2021,Fall patient history
+385,Not Stranded,25,1,0,0,0,1,15/12/2020,No index item
+386,Not Stranded,80,0,1,1,0,3,29/01/2021,Fall patient history
+387,Stranded,35,1,1,0,1,1,19/12/2020,No index item
+388,Not Stranded,67,0,0,1,1,1,07/12/2020,Mobility problems
+389,Not Stranded,71,1,0,1,1,1,09/02/2021,Mobility problems
+390,Not Stranded,60,1,1,1,1,1,24/01/2021,No index item
+391,Not Stranded,42,1,0,1,1,1,28/12/2020,No index item
+392,Stranded,73,1,1,0,1,1,04/12/2020,Mobility problems
+393,Not Stranded,68,0,1,0,0,1,10/02/2021,Activity Limitation
+394,Not Stranded,79,0,1,1,0,1,10/02/2021,Fall patient history
+395,Not Stranded,31,0,0,0,0,1,14/12/2020,No index item
+396,Not Stranded,25,1,0,1,0,1,02/12/2020,No index item
+397,Not Stranded,75,0,1,0,0,1,09/02/2021,Fall patient history
+398,Not Stranded,73,0,0,1,1,1,10/02/2021,Mobility problems
+399,Not Stranded,80,0,0,1,1,1,27/12/2020,Fall patient history
+400,Not Stranded,25,1,0,1,0,1,18/12/2020,No index item
+401,Stranded,60,1,0,0,1,8,10/02/2021,No index item
+402,Not Stranded,65,1,1,1,1,1,12/12/2020,Fall patient history
+403,Not Stranded,75,0,1,1,0,1,10/01/2021,Mobility problems
+404,Not Stranded,65,1,0,1,1,1,11/01/2021,Fall patient history
+405,Not Stranded,70,1,1,0,1,1,23/01/2021,Activity Limitation
+406,Not Stranded,26,1,0,0,0,1,19/12/2020,No index item
+407,Not Stranded,46,1,1,0,1,1,09/01/2021,No index item
+408,Not Stranded,25,0,1,0,0,1,07/02/2021,No index item
+409,Not Stranded,39,1,1,0,0,1,13/01/2021,No index item
+410,Not Stranded,28,0,0,1,1,1,17/12/2020,No index item
+411,Not Stranded,28,0,0,1,1,1,09/12/2020,No index item
+412,Not Stranded,25,1,1,0,0,1,26/12/2020,No index item
+413,Stranded,22,1,1,1,0,1,08/02/2021,No index item
+414,Not Stranded,21,1,0,0,0,1,04/01/2021,No index item
+415,Stranded,21,0,1,1,1,1,01/02/2021,No index item
+416,Not Stranded,62,1,0,1,1,1,08/02/2021,Activity Limitation
+417,Stranded,22,1,1,0,1,1,12/12/2020,No index item
+418,Not Stranded,76,1,1,0,1,1,04/02/2021,Mobility problems
+419,Not Stranded,67,0,0,0,1,2,30/12/2020,Fall patient history
+420,Not Stranded,78,0,1,0,1,1,12/12/2020,Fall patient history
+421,Not Stranded,26,0,1,0,1,1,17/01/2021,No index item
+422,Stranded,21,1,1,1,1,1,17/01/2021,No index item
+423,Not Stranded,79,0,0,1,0,1,04/01/2021,Activity Limitation
+424,Not Stranded,21,0,1,0,1,1,29/12/2020,No index item
+425,Not Stranded,36,1,1,1,0,1,19/12/2020,No index item
+426,Stranded,31,1,1,1,0,1,07/12/2020,No index item
+427,Not Stranded,25,1,0,1,1,1,07/12/2020,No index item
+428,Stranded,69,1,1,0,1,1,18/12/2020,Mobility problems
+429,Not Stranded,26,1,0,0,0,1,15/01/2021,No index item
+430,Not Stranded,43,0,0,0,1,1,30/01/2021,No index item
+431,Not Stranded,63,1,0,1,1,1,31/12/2020,Mobility problems
+432,Not Stranded,80,0,0,0,1,1,08/02/2021,Mobility problems
+433,Not Stranded,70,1,0,1,1,1,30/01/2021,Fall patient history
+434,Not Stranded,72,1,0,1,1,1,21/01/2021,Mobility problems
+435,Not Stranded,63,1,0,0,0,1,24/01/2021,Activity Limitation
+436,Stranded,29,1,1,0,1,1,30/12/2020,No index item
+437,Stranded,71,1,0,0,1,1,08/02/2021,Fall patient history
+438,Not Stranded,28,0,1,0,0,1,31/12/2020,No index item
+439,Not Stranded,21,0,0,1,1,1,15/12/2020,No index item
+440,Not Stranded,31,0,0,1,1,1,18/12/2020,No index item
+441,Stranded,41,0,1,0,0,1,09/01/2021,No index item
+442,Not Stranded,67,1,0,1,1,1,15/12/2020,Fall patient history
+443,Not Stranded,75,1,0,0,0,1,19/12/2020,Mobility problems
+444,Not Stranded,75,1,1,1,0,1,20/01/2021,Fall patient history
+445,Not Stranded,30,1,1,1,1,1,08/02/2021,No index item
+446,Not Stranded,80,0,0,1,0,1,29/12/2020,Mobility problems
+447,Not Stranded,28,1,1,0,0,1,19/01/2021,No index item
+448,Not Stranded,26,0,1,0,1,1,27/12/2020,No index item
+449,Not Stranded,79,1,0,0,0,1,10/02/2021,Mobility problems
+450,Stranded,26,0,0,0,1,1,24/01/2021,No index item
+451,Not Stranded,23,0,0,1,1,1,05/12/2020,No index item
+452,Not Stranded,23,1,0,1,0,1,31/12/2020,No index item
+453,Not Stranded,76,0,0,0,1,1,20/12/2020,Fall patient history
+454,Stranded,64,1,1,1,1,1,02/02/2021,Activity Limitation
+455,Not Stranded,67,0,1,1,1,1,07/12/2020,Fall patient history
+456,Stranded,76,1,1,0,1,2,14/01/2021,Mobility problems
+457,Stranded,62,1,1,0,0,1,16/12/2020,Activity Limitation
+458,Stranded,69,1,0,1,0,1,16/12/2020,Mobility problems
+459,Not Stranded,75,1,0,0,1,1,30/12/2020,Fall patient history
+460,Not Stranded,81,0,0,0,1,1,25/12/2020,Activity Limitation
+461,Not Stranded,64,0,0,1,1,1,24/01/2021,Activity Limitation
+462,Not Stranded,26,0,1,0,1,1,21/12/2020,No index item
+463,Not Stranded,39,1,1,0,0,1,02/02/2021,No index item
+464,Not Stranded,37,1,1,1,1,1,27/12/2020,No index item
+465,Not Stranded,65,0,0,0,0,1,06/01/2021,Mobility problems
+466,Stranded,21,1,1,0,0,3,16/01/2021,No index item
+467,Stranded,22,1,0,0,0,1,12/12/2020,No index item
+468,Stranded,71,1,1,0,0,2,20/12/2020,Activity Limitation
+469,Not Stranded,38,0,1,0,0,1,13/12/2020,No index item
+470,Not Stranded,27,1,1,0,0,1,12/12/2020,No index item
+471,Not Stranded,28,1,1,0,1,1,20/12/2020,No index item
+472,Not Stranded,80,1,1,1,1,1,01/01/2021,Fall patient history
+473,Not Stranded,72,0,1,0,1,1,09/01/2021,Mobility problems
+474,Not Stranded,69,0,1,1,0,1,08/02/2021,Activity Limitation
+475,Not Stranded,74,1,0,1,1,1,11/01/2021,Activity Limitation
+476,Not Stranded,65,1,1,0,0,1,30/12/2020,Activity Limitation
+477,Not Stranded,72,0,0,0,0,1,31/12/2020,Fall patient history
+478,Not Stranded,31,1,0,0,0,1,19/12/2020,No index item
+479,Not Stranded,63,0,0,1,0,1,12/01/2021,Activity Limitation
+480,Stranded,67,0,0,0,0,1,11/01/2021,Fall patient history
+481,Not Stranded,35,1,1,1,0,1,19/01/2021,No index item
+482,Not Stranded,29,1,0,0,1,1,16/01/2021,No index item
+483,Stranded,28,0,0,1,0,10,04/02/2021,No index item
+484,Stranded,60,1,0,1,0,1,03/01/2021,No index item
+485,Not Stranded,69,0,0,1,1,1,01/02/2021,Activity Limitation
+486,Not Stranded,24,1,0,1,1,1,28/12/2020,No index item
+487,Not Stranded,21,0,1,1,0,1,26/01/2021,No index item
+488,Stranded,80,0,1,1,1,5,29/12/2020,Fall patient history
+489,Stranded,60,1,0,0,0,1,27/01/2021,No index item
+490,Stranded,75,1,0,0,1,1,05/01/2021,Activity Limitation
+491,Not Stranded,61,0,0,1,0,1,05/12/2020,Mobility problems
+492,Stranded,74,0,0,0,0,1,24/12/2020,Fall patient history
+493,Not Stranded,75,1,1,1,1,1,02/12/2020,Activity Limitation
+494,Stranded,67,0,0,0,0,2,17/12/2020,Activity Limitation
+495,Not Stranded,22,0,1,0,0,1,17/01/2021,No index item
+496,Not Stranded,66,1,0,1,0,1,04/02/2021,Mobility problems
+497,Not Stranded,76,0,1,1,0,1,15/01/2021,Activity Limitation
+498,Not Stranded,63,0,0,0,0,1,17/12/2020,Fall patient history
+499,Not Stranded,68,0,1,0,0,1,27/12/2020,Fall patient history
+500,Not Stranded,39,0,0,1,1,1,08/12/2020,No index item
+501,Not Stranded,80,0,0,1,1,1,06/12/2020,Activity Limitation
+502,Not Stranded,65,1,0,1,1,1,04/02/2021,Activity Limitation
+503,Not Stranded,41,1,1,0,0,1,09/02/2021,No index item
+504,Not Stranded,41,1,1,1,0,1,09/01/2021,No index item
+505,Not Stranded,70,0,1,0,0,1,02/02/2021,Activity Limitation
+506,Not Stranded,77,1,0,1,0,1,18/12/2020,Mobility problems
+507,Stranded,35,0,0,0,0,7,31/01/2021,No index item
+508,Not Stranded,61,1,1,0,0,1,02/12/2020,Fall patient history
+509,Not Stranded,21,0,0,1,0,1,21/01/2021,No index item
+510,Not Stranded,64,1,1,1,0,1,18/12/2020,Activity Limitation
+511,Not Stranded,72,1,1,1,0,1,04/01/2021,Fall patient history
+512,Not Stranded,76,1,1,1,1,1,27/12/2020,Fall patient history
+513,Not Stranded,71,0,1,1,1,1,10/02/2021,Activity Limitation
+514,Not Stranded,22,0,1,1,1,1,04/01/2021,No index item
+515,Stranded,61,0,0,1,0,2,17/12/2020,Fall patient history
+516,Stranded,66,0,1,0,0,1,01/01/2021,Activity Limitation
+517,Not Stranded,74,0,1,0,0,1,07/02/2021,Mobility problems
+518,Not Stranded,77,0,0,0,1,1,04/02/2021,Activity Limitation
+519,Not Stranded,41,0,0,0,1,1,09/01/2021,No index item
+520,Stranded,60,1,0,1,0,1,24/12/2020,No index item
+521,Not Stranded,79,1,1,1,1,1,08/12/2020,Fall patient history
+522,Not Stranded,78,0,1,1,0,1,26/12/2020,Activity Limitation
+523,Stranded,26,1,0,0,1,1,16/12/2020,No index item
+524,Stranded,45,0,0,0,0,1,10/02/2021,No index item
+525,Not Stranded,24,0,1,1,1,1,23/01/2021,No index item
+526,Not Stranded,70,1,0,1,0,1,19/12/2020,Fall patient history
+527,Not Stranded,21,1,1,0,1,1,29/01/2021,No index item
+528,Not Stranded,74,0,0,0,1,1,04/01/2021,Mobility problems
+529,Not Stranded,76,1,0,0,1,1,05/01/2021,Activity Limitation
+530,Not Stranded,31,1,1,0,0,1,08/12/2020,No index item
+531,Stranded,22,0,0,1,0,1,27/12/2020,No index item
+532,Not Stranded,24,1,0,0,0,1,03/12/2020,No index item
+533,Not Stranded,69,1,1,0,0,1,15/01/2021,Mobility problems
+534,Not Stranded,31,0,1,1,0,1,01/01/2021,No index item
+535,Not Stranded,73,0,0,1,1,1,01/02/2021,Activity Limitation
+536,Not Stranded,63,0,0,1,0,1,29/01/2021,Fall patient history
+537,Not Stranded,46,1,0,1,0,1,07/12/2020,No index item
+538,Not Stranded,73,1,1,1,1,1,01/01/2021,Fall patient history
+539,Not Stranded,23,1,0,0,1,1,09/01/2021,No index item
+540,Not Stranded,32,1,0,1,0,1,21/01/2021,No index item
+541,Not Stranded,43,1,0,1,1,1,09/12/2020,No index item
+542,Not Stranded,27,0,0,1,1,1,30/01/2021,No index item
+543,Not Stranded,62,0,1,1,0,1,15/12/2020,Activity Limitation
+544,Not Stranded,73,0,1,1,1,1,03/12/2020,Fall patient history
+545,Not Stranded,29,0,1,1,0,1,08/01/2021,No index item
+546,Not Stranded,72,0,1,1,0,1,31/12/2020,Fall patient history
+547,Stranded,53,0,1,0,1,1,13/12/2020,No index item
+548,Not Stranded,28,0,1,1,0,1,10/12/2020,No index item
+549,Not Stranded,50,0,1,1,1,1,19/01/2021,No index item
+550,Stranded,76,0,1,0,0,2,24/12/2020,Activity Limitation
+551,Not Stranded,21,1,0,0,1,1,16/01/2021,No index item
+552,Not Stranded,25,1,1,1,0,1,17/01/2021,No index item
+553,Not Stranded,72,0,1,1,0,1,04/12/2020,Mobility problems
+554,Not Stranded,23,1,1,1,1,2,13/12/2020,No index item
+555,Not Stranded,68,0,1,1,1,1,17/12/2020,Mobility problems
+556,Not Stranded,37,1,1,1,1,1,09/01/2021,No index item
+557,Not Stranded,79,1,0,1,1,1,09/12/2020,Fall patient history
+558,Not Stranded,58,1,0,0,1,1,22/01/2021,No index item
+559,Not Stranded,42,0,1,1,0,1,03/12/2020,No index item
+560,Not Stranded,35,1,0,0,1,1,08/12/2020,No index item
+561,Not Stranded,54,0,1,1,1,1,11/01/2021,No index item
+562,Not Stranded,61,1,0,1,1,1,17/12/2020,Fall patient history
+563,Not Stranded,24,0,1,1,1,1,12/01/2021,No index item
+564,Not Stranded,68,1,0,0,1,1,18/01/2021,Mobility problems
+565,Not Stranded,77,1,0,0,1,1,05/02/2021,Mobility problems
+566,Stranded,66,1,0,1,0,1,27/01/2021,Fall patient history
+567,Not Stranded,21,1,0,0,1,1,03/01/2021,No index item
+568,Not Stranded,71,1,1,1,0,1,18/12/2020,Activity Limitation
+569,Stranded,37,1,1,1,1,2,20/12/2020,No index item
+570,Stranded,69,0,1,0,1,1,02/02/2021,Mobility problems
+571,Stranded,39,1,0,0,0,1,10/12/2020,No index item
+572,Stranded,76,0,1,1,0,2,09/01/2021,Mobility problems
+573,Not Stranded,67,1,0,1,1,1,06/02/2021,Fall patient history
+574,Not Stranded,22,0,0,1,1,1,01/01/2021,No index item
+575,Stranded,23,0,0,0,0,1,20/12/2020,No index item
+576,Not Stranded,63,1,0,0,0,1,01/02/2021,Mobility problems
+577,Not Stranded,35,1,0,1,1,1,02/02/2021,No index item
+578,Not Stranded,62,0,1,0,1,1,25/12/2020,Fall patient history
+579,Not Stranded,36,0,0,0,1,1,17/01/2021,No index item
+580,Not Stranded,62,1,0,0,1,1,24/12/2020,Mobility problems
+581,Not Stranded,76,0,0,1,1,1,30/12/2020,Fall patient history
+582,Stranded,80,1,1,1,0,1,30/12/2020,Activity Limitation
+583,Stranded,79,0,1,0,0,1,11/12/2020,Activity Limitation
+584,Not Stranded,42,0,0,0,1,1,11/12/2020,No index item
+585,Not Stranded,52,1,0,1,1,1,07/02/2021,No index item
+586,Not Stranded,22,1,1,0,0,1,18/12/2020,No index item
+587,Stranded,68,0,0,0,1,1,04/02/2021,Mobility problems
+588,Not Stranded,65,1,1,1,0,1,26/12/2020,Mobility problems
+589,Stranded,52,1,1,1,1,1,03/02/2021,No index item
+590,Not Stranded,25,1,1,1,1,1,02/02/2021,No index item
+591,Stranded,68,1,0,1,1,1,03/01/2021,Fall patient history
+592,Stranded,80,1,0,1,1,1,25/12/2020,Mobility problems
+593,Stranded,44,1,1,0,1,1,03/01/2021,No index item
+594,Not Stranded,63,1,1,0,0,1,10/01/2021,Fall patient history
+595,Stranded,77,1,1,0,1,1,09/01/2021,Activity Limitation
+596,Not Stranded,77,0,0,0,1,1,15/01/2021,Mobility problems
+597,Not Stranded,60,0,1,0,0,1,03/01/2021,No index item
+598,Not Stranded,21,0,1,0,1,1,13/01/2021,No index item
+599,Not Stranded,38,0,0,1,1,1,25/12/2020,No index item
+600,Not Stranded,26,1,0,0,0,1,04/01/2021,No index item
+601,Not Stranded,67,0,0,0,1,1,21/01/2021,Mobility problems
+602,Not Stranded,66,1,0,1,0,1,21/01/2021,Activity Limitation
+603,Not Stranded,30,1,0,0,1,1,30/01/2021,No index item
+604,Stranded,54,1,0,0,1,1,18/12/2020,No index item
+605,Stranded,65,0,1,0,0,2,23/01/2021,Fall patient history
+606,Stranded,63,0,0,0,1,3,15/01/2021,Activity Limitation
+607,Not Stranded,60,0,0,0,1,1,21/01/2021,No index item
+608,Not Stranded,25,0,1,1,1,1,09/01/2021,No index item
+609,Stranded,27,0,1,1,0,1,10/02/2021,No index item
+610,Not Stranded,70,1,0,0,0,1,09/02/2021,Activity Limitation
+611,Stranded,24,0,1,1,0,2,17/01/2021,No index item
+612,Stranded,36,0,0,1,0,1,26/12/2020,No index item
+613,Stranded,66,1,0,1,0,10,30/12/2020,Fall patient history
+614,Not Stranded,26,1,1,0,0,1,22/01/2021,No index item
+615,Not Stranded,50,1,0,1,0,1,03/12/2020,No index item
+616,Not Stranded,27,1,0,0,1,1,02/02/2021,No index item
+617,Not Stranded,66,1,0,1,1,1,25/01/2021,Activity Limitation
+618,Not Stranded,23,1,1,1,1,1,31/12/2020,No index item
+619,Not Stranded,50,1,0,1,0,1,22/12/2020,No index item
+620,Not Stranded,63,1,0,0,0,1,30/12/2020,Mobility problems
+621,Not Stranded,28,1,0,0,0,1,12/01/2021,No index item
+622,Not Stranded,28,1,0,1,1,1,28/12/2020,No index item
+623,Not Stranded,45,1,1,1,0,1,22/12/2020,No index item
+624,Not Stranded,62,0,1,1,1,1,29/12/2020,Activity Limitation
+625,Not Stranded,21,0,0,0,0,1,07/12/2020,No index item
+626,Not Stranded,29,0,1,1,0,1,04/12/2020,No index item
+627,Stranded,69,1,1,1,1,3,27/12/2020,Fall patient history
+628,Not Stranded,70,1,1,1,0,1,08/01/2021,Mobility problems
+629,Not Stranded,45,1,0,1,0,1,29/01/2021,No index item
+630,Not Stranded,78,1,1,0,0,1,26/12/2020,Mobility problems
+631,Not Stranded,34,1,0,1,0,1,12/01/2021,No index item
+632,Not Stranded,63,1,0,1,1,1,02/12/2020,Fall patient history
+633,Not Stranded,68,1,1,0,0,1,02/02/2021,Mobility problems
+634,Stranded,62,1,0,1,0,1,01/01/2021,Activity Limitation
+635,Not Stranded,31,0,0,1,0,1,02/12/2020,No index item
+636,Not Stranded,38,1,1,0,1,1,23/01/2021,No index item
+637,Stranded,48,0,1,0,0,3,09/02/2021,No index item
+638,Not Stranded,72,1,0,0,0,1,16/12/2020,Mobility problems
+639,Not Stranded,32,1,0,1,1,1,21/01/2021,No index item
+640,Not Stranded,66,1,0,0,1,1,29/12/2020,Mobility problems
+641,Not Stranded,71,1,1,0,1,1,17/12/2020,Mobility problems
+642,Not Stranded,79,1,0,1,1,1,20/12/2020,Activity Limitation
+643,Not Stranded,50,0,0,0,0,1,01/02/2021,No index item
+644,Not Stranded,65,0,1,1,0,1,18/12/2020,Fall patient history
+645,Not Stranded,79,0,0,0,1,1,22/12/2020,Mobility problems
+646,Not Stranded,80,0,0,1,0,1,28/12/2020,Mobility problems
+647,Not Stranded,33,0,0,1,0,1,06/02/2021,No index item
+648,Not Stranded,72,1,1,0,0,1,14/12/2020,Fall patient history
+649,Stranded,42,0,0,0,1,10,17/12/2020,No index item
+650,Not Stranded,70,1,1,1,0,1,03/02/2021,Activity Limitation
+651,Not Stranded,72,0,0,1,0,1,12/12/2020,Activity Limitation
+652,Not Stranded,70,0,0,1,1,1,01/01/2021,Activity Limitation
+653,Not Stranded,28,1,1,0,0,1,18/12/2020,No index item
+654,Not Stranded,74,0,1,1,1,1,09/02/2021,Activity Limitation
+655,Not Stranded,73,0,1,0,0,1,21/01/2021,Activity Limitation
+656,Not Stranded,80,0,1,1,1,1,15/12/2020,Activity Limitation
+657,Not Stranded,67,1,0,1,0,1,15/01/2021,Activity Limitation
+658,Not Stranded,67,0,1,0,0,1,27/01/2021,Activity Limitation
+659,Stranded,60,1,0,0,1,3,01/02/2021,No index item
+660,Not Stranded,71,1,1,1,1,1,22/01/2021,Fall patient history
+661,Not Stranded,73,0,0,1,0,1,16/01/2021,Activity Limitation
+662,Not Stranded,22,1,1,1,1,1,22/12/2020,No index item
+663,Not Stranded,72,0,1,0,1,1,28/01/2021,Fall patient history
+664,Not Stranded,73,0,0,0,0,1,03/01/2021,Fall patient history
+665,Not Stranded,76,0,0,1,0,1,01/02/2021,Activity Limitation
+666,Not Stranded,69,0,0,1,1,1,12/12/2020,Activity Limitation
+667,Not Stranded,70,1,0,0,1,2,31/01/2021,Mobility problems
+668,Not Stranded,74,0,1,0,0,1,04/12/2020,Activity Limitation
+669,Stranded,66,0,1,0,0,3,11/12/2020,Mobility problems
+670,Stranded,45,1,0,1,1,1,16/01/2021,No index item
+671,Stranded,49,1,0,1,0,1,24/12/2020,No index item
+672,Not Stranded,21,0,0,0,1,1,27/12/2020,No index item
+673,Not Stranded,80,0,0,0,1,1,25/12/2020,Fall patient history
+674,Not Stranded,22,1,1,0,1,1,10/01/2021,No index item
+675,Not Stranded,68,0,1,0,0,1,25/12/2020,Mobility problems
+676,Not Stranded,74,0,1,1,0,1,05/01/2021,Activity Limitation
+677,Not Stranded,53,0,0,1,0,1,30/12/2020,No index item
+678,Not Stranded,25,0,0,1,0,1,24/01/2021,No index item
+679,Not Stranded,25,0,1,1,0,1,09/12/2020,No index item
+680,Not Stranded,23,0,0,1,0,1,25/01/2021,No index item
+681,Stranded,22,0,0,0,0,7,04/12/2020,No index item
+682,Stranded,26,1,0,0,1,3,10/02/2021,No index item
+683,Not Stranded,22,1,1,0,0,1,14/01/2021,No index item
+684,Not Stranded,27,1,1,1,1,1,12/01/2021,No index item
+685,Not Stranded,62,0,0,0,1,1,20/01/2021,Fall patient history
+686,Not Stranded,68,1,0,0,1,1,23/12/2020,Fall patient history
+687,Not Stranded,77,1,1,0,1,1,29/01/2021,Fall patient history
+688,Not Stranded,63,0,0,0,0,1,14/12/2020,Fall patient history
+689,Not Stranded,23,1,1,0,0,1,04/12/2020,No index item
+690,Not Stranded,46,0,0,0,0,8,15/01/2021,No index item
+691,Not Stranded,74,0,0,0,0,1,16/12/2020,Mobility problems
+692,Stranded,44,0,0,1,1,1,15/12/2020,No index item
+693,Not Stranded,60,1,0,1,1,1,08/12/2020,No index item
+694,Not Stranded,71,0,0,1,0,2,25/12/2020,Activity Limitation
+695,Not Stranded,25,0,0,0,1,1,03/01/2021,No index item
+696,Not Stranded,43,1,0,0,1,1,02/02/2021,No index item
+697,Stranded,80,1,0,1,1,2,10/02/2021,Activity Limitation
+698,Stranded,79,0,0,0,0,1,11/01/2021,Activity Limitation
+699,Stranded,28,1,0,0,1,1,04/02/2021,No index item
+700,Stranded,26,1,0,1,0,,28/12/2020,No index item
+701,Stranded,65,0,0,0,1,,18/12/2020,Fall patient history
+702,Stranded,63,1,0,0,1,,02/12/2020,Activity Limitation
+703,Stranded,52,0,1,0,1,,17/01/2021,No index item
+704,Stranded,69,0,1,1,1,,21/01/2021,Mobility problems
+705,Stranded,27,1,0,1,0,,22/12/2020,No index item
+706,Stranded,65,1,0,0,0,,21/12/2020,Mobility problems
+707,Stranded,30,0,1,0,1,,05/12/2020,No index item
+708,Stranded,22,1,0,0,0,,01/01/2021,No index item
+709,Stranded,60,0,0,1,0,,21/12/2020,No index item
+710,Stranded,23,0,1,0,1,,23/01/2021,No index item
+711,Stranded,24,0,1,0,0,,08/12/2020,No index item
+712,Stranded,40,0,1,1,1,,15/01/2021,No index item
+713,Stranded,38,0,1,0,1,,22/12/2020,No index item
+714,Stranded,21,1,0,1,0,,06/01/2021,No index item
+715,Stranded,67,0,1,1,1,,02/12/2020,Mobility problems
+716,Stranded,34,0,0,1,1,,11/12/2020,No index item
+717,Stranded,72,1,0,0,1,,20/12/2020,Mobility problems
+718,Stranded,56,0,0,1,1,,17/12/2020,No index item
+719,Stranded,24,1,0,1,1,,06/01/2021,No index item
+720,Stranded,67,0,1,0,0,,15/01/2021,Fall patient history
+721,Stranded,34,0,1,0,0,,01/02/2021,No index item
+722,Stranded,66,1,1,1,1,,30/12/2020,Mobility problems
+723,Stranded,42,1,1,0,1,,12/12/2020,No index item
+724,Stranded,67,1,1,0,0,,09/12/2020,Fall patient history
+725,Stranded,79,0,0,1,1,,08/12/2020,Fall patient history
+726,Stranded,38,1,0,0,1,,23/01/2021,No index item
+727,Stranded,25,1,1,0,0,,11/01/2021,No index item
+728,Stranded,22,0,0,1,1,,06/12/2020,No index item
+729,Stranded,66,0,0,1,1,,03/01/2021,Activity Limitation
+730,Stranded,78,0,1,0,1,,23/01/2021,Fall patient history
+731,Stranded,75,1,1,1,1,,02/01/2021,Mobility problems
+732,Stranded,22,1,1,1,0,,12/01/2021,No index item
+733,Stranded,24,1,1,1,0,,11/01/2021,No index item
+734,Stranded,76,0,1,1,1,,03/02/2021,Fall patient history
+735,Stranded,75,1,0,0,1,,06/12/2020,Fall patient history
+736,Stranded,72,0,0,1,1,,01/01/2021,Mobility problems
+737,Stranded,76,1,1,1,1,,03/02/2021,Mobility problems
+738,Stranded,76,1,0,0,0,,22/12/2020,Activity Limitation
+739,Stranded,67,1,0,0,1,,12/12/2020,Mobility problems
+740,Stranded,42,1,1,1,0,,05/02/2021,No index item
+741,Stranded,64,1,0,0,0,,05/12/2020,Fall patient history
+742,Stranded,72,0,0,0,1,,16/01/2021,Mobility problems
+743,Stranded,22,1,1,0,0,,20/12/2020,No index item
+744,Stranded,64,0,1,0,0,,23/12/2020,Fall patient history
+745,Stranded,39,1,0,0,0,,24/12/2020,No index item
+746,Stranded,70,1,0,0,0,,07/02/2021,Activity Limitation
+747,Stranded,27,1,1,0,0,,13/01/2021,No index item
+748,Stranded,32,0,0,1,1,,29/12/2020,No index item
+749,Stranded,36,0,1,1,0,,05/12/2020,No index item
+750,Stranded,50,1,1,1,1,,20/01/2021,No index item
+751,Stranded,61,1,0,0,1,,24/01/2021,Activity Limitation
+752,Stranded,28,1,0,1,1,,29/12/2020,No index item
+753,Stranded,25,0,1,1,1,,28/01/2021,No index item
+754,Stranded,60,0,0,1,0,,05/12/2020,No index item
+755,Stranded,65,0,0,0,1,,09/12/2020,Activity Limitation
+756,Stranded,37,1,0,1,1,,28/12/2020,No index item
+757,Stranded,62,0,1,0,1,,26/12/2020,Fall patient history
+758,Stranded,52,0,0,1,1,,17/01/2021,No index item
+759,Stranded,73,1,1,0,0,,02/12/2020,Fall patient history
+760,Stranded,66,1,1,1,0,,30/01/2021,Mobility problems
+761,Stranded,22,1,1,1,1,,18/12/2020,No index item
+762,Stranded,43,1,1,1,1,,29/01/2021,No index item
+763,Stranded,33,0,0,1,1,,08/02/2021,No index item
+764,Stranded,63,0,1,0,1,,19/12/2020,Activity Limitation
+765,Stranded,65,1,0,0,1,,23/12/2020,Fall patient history
+766,Stranded,70,0,0,0,1,,17/12/2020,Fall patient history
+767,Stranded,61,0,1,0,0,,26/01/2021,Mobility problems
+768,Stranded,65,0,0,1,0,,18/01/2021,Activity Limitation

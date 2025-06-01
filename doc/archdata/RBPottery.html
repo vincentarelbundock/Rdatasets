@@ -1,0 +1,99 @@
+<!DOCTYPE html><html><head><title>R: Romano-British Pottery</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>RBPottery</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Romano-British Pottery
+</h2>
+
+<h3>Description</h3>
+
+<p>Results of chemical analyses of 48 specimens of Romano-British pottery from 5 sites in 3 regions.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("RBPottery")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 48 observations on the following 12 variables.
+</p>
+
+<dl>
+<dt><code>ID</code></dt><dd><p>Sample ID</p>
+</dd>
+<dt><code>Kiln</code></dt><dd><p>Kiln: <code>Gloucester</code>, <code>Llanedeyrn</code>, <code>Caldicot</code>, <code>Islands Thorns</code>, and <code>Ashley Rails</code></p>
+</dd>
+<dt><code>Region</code></dt><dd><p>Region: <code>Gloucester</code>, <code>Wales</code>, and <code>New Forest</code></p>
+</dd>
+<dt><code>Al2O3</code></dt><dd><p>Percentage aluminum trioxide</p>
+</dd>
+<dt><code>Fe2O3</code></dt><dd><p>Percentage Iron trioxide</p>
+</dd>
+<dt><code>MgO</code></dt><dd><p>Percentage magnesium oxide</p>
+</dd>
+<dt><code>CaO</code></dt><dd><p>Percentage calcium oxide</p>
+</dd>
+<dt><code>Na2O</code></dt><dd><p>Percentage sodium oxide</p>
+</dd>
+<dt><code>K2O</code></dt><dd><p>Percentage potassium oxide</p>
+</dd>
+<dt><code>TiO2</code></dt><dd><p>Percentage titanium dioxide</p>
+</dd>
+<dt><code>MnO</code></dt><dd><p>Percentage manganese oxide</p>
+</dd>
+<dt><code>BaO</code></dt><dd><p>Percentage barium oxide</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Results of chemical analyses of 48 specimens of Romano-British pottery published by Tubb, et al. (1980). The numbers are the percentage metal oxide. &quot;Kiln&quot; indicates at which kiln site the pottery was found. The kiln sites come from three regions (1=Gloucester, (2=Llanedeyrn, 3=Caldicot), (4=Islands Thorns, 5=Ashley Rails)). The data were scanned from Table 2.2 in Baxter (2003, p. 21) and preserve three probable typographical errors in the original publication. Those errors are the values for TiO2 in line 4 (sample GA4), for MnO in line 35 (sample C13), and for K2O in line 36 (sample C14). Versions of these data are also available as <code>Pottery</code> in package <code>car</code>, <code>pottery</code> in package <code>HSAUR</code>, and <code>Pottery2</code> in package <code>heplots</code>.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Baxter, M. J. 2003. <em>Statistics in Archaeology</em>. Arnold.
+</p>
+<p>Tubb, A., A. J. Parker, and G. Nickless. 1980. The Analysis of Romano-British Pottery by Atomic Absorption Spectrophotometry. <em>Archaeometry</em> 22: 153-71.
+</p>
+
+
+<h3>References</h3>
+
+<p>Carlson, David L. 2017. <em>Quantitative Methods in Archaeology Using R</em>. Cambridge University Press, pp 247-255, 335-342.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(RBPottery)
+print(aggregate(RBPottery[, -c(1:3)], list(Region=RBPottery$Region), mean), digits=2)
+plot(Na2O~CaO, RBPottery, pch=as.numeric(Region)-1)
+legend("topright", levels(RBPottery$Region), title="Region", pch=0:2)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

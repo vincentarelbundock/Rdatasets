@@ -1,0 +1,115 @@
+<!DOCTYPE html><html><head><title>R: Balanced lattice experiment in cotton</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>cochran.lattice</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Balanced lattice experiment in cotton
+</h2>
+
+<h3>Description</h3>
+
+<p>Balanced lattice experiment in cotton
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("cochran.lattice")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 80 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>y</code></dt><dd><p>percent of affected flower buds</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>replicate</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>trt</code></dt><dd><p>treatment factor</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The experiment is a balanced lattice square with 16 treatments in a 4x4
+layout in each of 5 replicates.  The treatments were applied to cotton
+plants.  Each plot was ten rows wide by 70 feet long
+(about 1/18 of an acre).  (Estimated plot width is 34.5 feet.)
+Data were collected from the middle 4 rows.
+The data are the percentages of squares showing attack by boll weevils.
+A 'square' is the name given to a young flower bud.
+</p>
+<p>The plot orientation is not clear.
+</p>
+
+
+<h3>Source</h3>
+
+<p>William G. Cochran, Gertrude M. Cox. <em>Experimental Designs</em>, 2nd
+Edition. Page 490.
+</p>
+<p>Originally from: F. M. Wadley (1946).
+Incomplete block designs in insect population problems.
+<em>J. Economic Entomology</em>, 38, 651&ndash;654.
+</p>
+
+
+<h3>References</h3>
+
+<p>Walter Federer.
+Combining Standard Block Analyses With Spatial Analyses Under a Random
+Effects Model. Cornell Univ Tech Report BU-1373-MA.
+https://hdl.handle.net/1813/31971
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(cochran.lattice)
+dat &lt;- cochran.lattice
+
+libs(desplot)
+desplot(dat, y~row*col|rep,
+        text=trt, # aspect unknown, should be 2 or .5
+         main="cochran.lattice")
+
+
+# Random rep,row,column model often used by Federer
+libs(lme4)
+dat &lt;- transform(dat, rowf=factor(row), colf=factor(col))
+m1 &lt;-  lmer(y ~ trt + (1|rep) + (1|rep:row) + (1|rep:col), data=dat)
+summary(m1)
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

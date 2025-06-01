@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head><title>R: Neurophysiological Point Process Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>neuro_pointprocess_matrix</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Neurophysiological Point Process Data</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, neuro_pointprocess_matrix, is a matrix containing times of observed
+neuronal firing in windows of 250ms surrounding stimulus application in human subjects.
+Each row represents an experimental replication (469 total replicates), with values
+indicating spike times relative to stimulus onset.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(neuro_pointprocess_matrix)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A numeric matrix with 469 observations (rows) and 6 variables (columns):
+</p>
+
+<dl>
+<dt>[,1:6]</dt><dd><p>Numeric: Spike times (milliseconds) relative to stimulus onset,
+with NA representing no spike in that trial window</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'neuro_pointprocess_matrix' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps distinguish
+this dataset as part of the NeuroDataSets package. The suffix 'matrix' indicates
+that the dataset is a matrix. The original content has not been modified.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the boot package version 1.3-31. Original collection:
+Dr. S.J. Boniface, Neurophysiology Unit, Radcliffe Infirmary, Oxford.
+</p>
+
+</main>
+
+</div>
+</body></html>

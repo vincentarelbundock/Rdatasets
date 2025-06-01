@@ -1,0 +1,119 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of rice, with solar radiation and...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>senshu.rice</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of rice, with solar radiation and temperature
+</h2>
+
+<h3>Description</h3>
+
+<p>Response of rice to solar radiation and temperature
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 40 observations on the following 7 variables.
+</p>
+
+<dl>
+<dt><code>country</code></dt><dd><p>country</p>
+</dd>
+<dt><code>loc</code></dt><dd><p>location</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year of planting, last two digits</p>
+</dd>
+<dt><code>month</code></dt><dd><p>month of planting</p>
+</dd>
+<dt><code>rad</code></dt><dd><p>solar radiation</p>
+</dd>
+<dt><code>mint</code></dt><dd><p>minimum temperature</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield t/ha</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Minimum temperature is the average across 30 days post flowering.
+</p>
+<p>Opinion: Fitting a quadratic model to this data makes no sense.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Seshu, D. V. and Cady, F. B. 1984.
+Response of rice to solar radiation and temperature estimated from international yield trials.
+<em>Crop Science</em>, 24, 649-654.
+https://doi.org/10.2135/cropsci1984.0011183X002400040006x
+</p>
+
+
+<h3>References</h3>
+
+<p>Walter W. Piegorsch, A. John Bailer. (2005)
+<em>Analyzing Environmental Data</em>, Wiley.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+library(agridat)
+
+data(senshu.rice)
+dat &lt;- senshu.rice
+
+# Model 1 of Senshu &amp; Cady
+m1 &lt;- lm(yield ~ 1 + rad + mint + I(mint^2), dat)
+coef(m1)
+
+# Use Fieller to calculate conf int around optimum minimum temp
+# See: Piegorsch &amp; Bailer, p. 31.
+# Calculation derived from vegan:::fieller.MOStest
+m2 &lt;- lm(yield ~ 1 + mint + I(mint^2), dat)
+b1 &lt;- coef(m2)[2]
+b2 &lt;- coef(m2)[3]
+vc &lt;- vcov(m2)
+sig11 &lt;- vc[2,2]
+sig12 &lt;- vc[2,3]
+sig22 &lt;- vc[3,3]
+u &lt;- -b1/2/b2
+tval &lt;- qt(1-.05/2, nrow(dat)-3)
+gam &lt;- tval^2 * sig22 / b2^2
+x &lt;- u + gam * sig12 / (2 * sig22)
+f &lt;- tval / (-2*b2)
+sq &lt;- sqrt(sig11 + 4*u*sig12 + 4*u^2*sig22 - gam * (sig11 - sig12^2 / sig22) )
+ci &lt;- (x + c(1,-1)*f*sq) / (1-gam)
+plot(yield ~ mint, dat, xlim=c(17, 32),
+main="senshu.rice: Quadratic fit and Fieller confidence interval",
+     xlab="Minimum temperature", ylab="Yield")
+lines(17:32, predict(m2, new=data.frame(mint=17:32)))
+abline(v=ci, col="blue")
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

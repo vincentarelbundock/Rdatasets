@@ -1,0 +1,136 @@
+<!DOCTYPE html><html><head><title>R: Bodyweight of cows in a 2-by-2 factorial experiment</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>diggle.cow</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Bodyweight of cows in a 2-by-2 factorial experiment
+</h2>
+
+<h3>Description</h3>
+
+<p>Bodyweight of cows in a 2-by-2 factorial experiment.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 598 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>animal</code></dt><dd><p>Animal factor, 26 levels</p>
+</dd>
+<dt><code>iron</code></dt><dd><p>Factor with levels <code>Iron</code>, <code>NoIron</code></p>
+</dd>
+<dt><code>infect</code></dt><dd><p>Factor levels <code>Infected</code>, <code>NonInfected</code></p>
+</dd>
+<dt><code>weight</code></dt><dd><p>Weight in (rounded to nearest 5) kilograms</p>
+</dd>
+<dt><code>day</code></dt><dd><p>Days after birth</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Diggle et al., 1994, pp. 100-101, consider an experiment that studied
+how iron dosing (none/standard) and micro-organism (infected or
+non-infected) influence the weight of cows.
+</p>
+<p>Twenty-eight cows were allocated in a 2-by-2 factorial design
+with these factors.  Some calves were inoculated with tuberculosis at six
+weeks of age.  At six months, some calves were maintained on
+supplemental iron diet for a further 27 months.
+</p>
+<p>The weight of each animal was measured at 23 times,
+unequally spaced. One cow died during the study and data for another
+cow was removed.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Diggle, P. J., Liang, K.-Y., &amp; Zeger, S. L. (1994).
+<em>Analysis of Longitudinal Data</em>. Page 100-101.
+</p>
+<p>Retrieved Oct 2011 from
+https://www.maths.lancs.ac.uk/~diggle/lda/Datasets/
+</p>
+
+
+<h3>References</h3>
+
+<p>Lepper, AWD and Lewis, VM, 1989. Effects of altered dietary iron
+intake in Mycobacterium paratuberculosis-infected dairy cattle:
+sequential observations on growth, iron and copper metabolism and
+development of paratuberculosis.
+<em>Research in veterinary science</em>, 46, 289&ndash;296.
+</p>
+<p>Arunas P. Verbyla and Brian R. Cullis and Michael G. Kenward
+and Sue J. Welham, (1999), The analysis of designed experiments and
+longitudinal data by using smoothing splines. <em>Appl. Statist.</em>,
+48, 269&ndash;311.
+</p>
+<p>SAS/STAT(R) 9.2 User's Guide, Second Edition.
+https://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_glimmix_sect018.htm
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(diggle.cow)
+  dat &lt;- diggle.cow
+  
+  # Figure 1 of Verbyla 1999
+  libs(latticeExtra)
+  useOuterStrips(xyplot(weight ~ day|iron*infect, dat, group=animal,
+                        type='b', cex=.5, 
+                        main="diggle.cow"))
+  
+  # Scaling
+  dat &lt;- transform(dat, time = (day-122)/10)
+
+
+  if(require("asreml", quietly=TRUE)) {
+    libs(asreml, latticeExtra)
+    
+    ## # Smooth for each animal.  No treatment effects. Similar to SAS Output 38.6.9
+    
+    m1 &lt;- asreml(weight ~ 1 + lin(time) + animal + animal:lin(time), data=dat,
+                 random = ~ animal:spl(time))
+    p1 &lt;- predict(m1, data=dat, classify="animal:time",
+                  design.points=list(time=seq(0,65.9, length=50)))
+    p1 &lt;- p1$pvals
+    p1 &lt;- merge(dat, p1, all=TRUE) # to get iron/infect merged in
+    foo1 &lt;- xyplot(weight ~ day|iron*infect, dat, group=animal,
+                   main="diggle.cow")
+    foo2 &lt;- xyplot(predicted.value ~ day|iron*infect, p1, type='l', group=animal)
+    print(foo1+foo2)
+  }
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

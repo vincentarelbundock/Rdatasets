@@ -1,0 +1,626 @@
+rownames,X,Y,region,departement,commune,site,start,end,type
+1,831470,6881060,Champagne-Ardenne,Marne,Dampierre-le-Château,Liévaux,2001-07-30,2002-01-19,fouille
+2,448620,6911591,Basse-Normandie,Calvados,Thaon,Éléazar,2002-01-20,2002-01-24,fouille
+3,938295,6671971,Franche-Comté,Doubs,Ornans,La Fontaine au Malade,2002-01-09,2002-01-25,fouille
+4,844916.38,6838098.42,Champagne-Ardenne,Haute-Marne,Saint-Dizier,Les Crassées,2001-12-17,2002-02-22,fouille
+5,525664,6701622,Centre,Indre-et-Loire,Tours,Lycée Descartes,1999-09-01,2002-02-28,fouille
+6,927843,6686329,Franche-Comté,Doubs,Besançon,Parking des Remparts dérasés,2001-06-01,2002-02-28,fouille
+7,686536,6863407,Ile-de-France,Seine-et-Marne,Magny-le-Hongre,Courtalin,2001-12-03,2002-02-28,fouille
+8,679684,6874182,Ile-de-France,Seine-et-Marne,Messy,La Mare au Roi,2001-12-01,2002-03-01,fouille
+9,679304,6872103,Ile-de-France,Seine-et-Marne,Claye-Souilly,Les Monts Gardés 3,2001-12-01,2002-03-21,fouille
+10,688152.561,7024497.07,Nord-Pas-de-Calais,Pas-de-Calais,Saint-Laurent-Blangy,ZAC Actiparc,2001-04-01,2002-04-01,fouille
+11,525467,6701604,Centre,Indre-et-Loire,Tours,Hôtel de police Nord,2001-11-01,2002-04-30,fouille
+12,575110,6690727,Centre,Loir-et-Cher,Saint-Romain-sur-Cher,Les Cormins,2001-11-15,2002-04-30,fouille
+13,788030,6894820,Champagne-Ardenne,Marne,Val-de-Vesle,Moncheux,2001-11-13,2002-05-01,fouille
+14,678997,6872366,Ile-de-France,Seine-et-Marne,Claye-Souilly,Les Monts Gardés 1,2002-03-25,2002-05-17,fouille
+15,931300,6881000,Lorraine,Moselle,Sillegny,Rue du Stade,2002-04-02,2002-05-24,fouille
+16,766975,6904970,Champagne-Ardenne,Marne,Vrigny,Les Robogniers 1,2001-12-02,2002-05-30,fouille
+17,666950,6837818,Ile-de-France,Seine-et-Marne,Lieusaint,Jardin de la Méridienne,2002-01-01,2002-06-01,fouille
+18,938695,6671919,Franche-Comté,Doubs,Ornans,Espace Courbet,2002-05-28,2002-06-10,fouille
+19,798960,6914020,Champagne-Ardenne,Marne,Bétheniville,Mont-de-Merlan,2002-05-24,2002-06-13,fouille
+20,932100,6804400,Lorraine,Vosges,Mirecourt,Rue du Docteur-Joyeux,2002-05-03,2002-06-21,fouille
+21,722019,6770187,Bourgogne,Yonne,Saint-Julien-du-Sault,Les Sablons,2002-04-15,2002-06-25,fouille
+22,637102,6845957,Ile-de-France,Essonne,Saint-Aubin,L'Orme des Merisiers,2002-02-20,2002-06-28,fouille
+23,985825.13,6248158.18,Provences-Alpes-Côte-d'Azur,Var,Grimaud,Le Château,2002-06-17,2002-06-28,fouille
+24,722228.249,6883219.838,Picardie,Aisne,Essômes-sur-Marne,Ferme de La Cense,2001-10-16,2002-06-30,fouille
+25,678304,6787979,Ile-de-France,Seine-et-Marne,Souppes-sur-Loing,À l'est de Beaumoulin,2002-04-15,2002-07-26,fouille
+26,858800,6879500,Lorraine,Meuse,Nubécourt,Aux Villées,2001-09-01,2002-07-31,fouille
+27,666469,6838210,Ile-de-France,Seine-et-Marne,Lieusaint,"ZAC de la Pyramide, lot C3",2002-06-01,2002-08-01,fouille
+28,212620,6817403,Bretagne,Finistère,Carhaix-Plouguer,"5, rue du Docteur-Menguy",2002-07-01,2002-08-09,fouille
+29,860500,6876400,Lorraine,Meuse,Beausite,La Hachie,2001-09-01,2002-08-12,fouille
+30,864765.147,6877794.702,Lorraine,Meuse,Les Trois-Domaines,La Hachie,2001-09-10,2002-08-15,fouille
+31,927300,6874900,Lorraine,Meurthe-et-Moselle,Lesménils,Notre Dame - Chêne Brûlé,2002-05-15,2002-08-15,fouille
+32,561975,6911433,Haute-Normandie,Eure,Criquebeuf-sur-Seine,Les Brûlins,2002-07-16,2002-08-15,fouille
+33,603689,6640002,Centre,Indre,Montierchaume,La Fleuranderie,2002-07-08,2002-08-28,fouille
+34,883800,6877800,Lorraine,Meuse,Lacroix-sur-Meuse,La Finotte,2002-06-24,2002-08-30,fouille
+35,884100,6878100,Lorraine,Meuse,Lacroix-sur-Meuse,Les Battants,2002-06-24,2002-08-31,fouille
+36,623669,6650417,Centre,Indre,Issoudun,Centre de l'image et du multimédia,2002-05-20,2002-09-06,fouille
+37,602730,6471186,Limousin,Corrèze,Naves,Les Arènes de Tintignac - fouille 2002,2002-05-13,2002-09-27,fouille
+38,478011.652,6509980.464,Poitou-Charentes,Charente,Angoulême,Abbaye Saint-Cybard,2002-04-15,2002-09-30,fouille
+39,831940,6841530,Champagne-Ardenne,Haute-Marne,Perthes,La Pièce des Essarts,2002-04-15,2002-09-30,fouille
+40,632528.616,6970372.288,Picardie,Somme,Fresnoy-au-Val,La Trannoye,2002-05-02,2002-09-30,fouille
+41,666885,6837798,Ile-de-France,Seine-et-Marne,Lieusaint,"ZAC de la Pyramide, lot C1",2002-07-15,2002-10-04,fouille
+42,700608,6873137,Ile-de-France,Seine-et-Marne,Changis-sur-Marne,Les Pétreaux 1,2002-05-29,2002-10-10,fouille
+43,496567,6662172,Centre,Indre-et-Loire,Richelieu,Carrefour RD749,2002-10-01,2002-10-22,fouille
+44,811500.63,6303961.734,Languedoc-Roussillon,Gard,Nîmes,Magaille Est,2002-05-06,2002-10-25,fouille
+45,525450,6702118,Centre,Indre-et-Loire,Tours,Parking Anatole-France,2002-08-19,2002-10-25,fouille
+46,701184.699,7050258.67,Nord-Pas-de-Calais,Nord,Seclin,Le Petit Marais,2002-08-26,2002-10-25,fouille
+47,911600,6878700,Lorraine,Meurthe-et-Moselle,Jaulny,Le Fey,2002-10-14,2002-10-30,fouille
+48,773045.12,6274642.69,Languedoc-Roussillon,Hérault,Lattes,Le Castrum,2002-09-30,2002-11-15,fouille
+49,775850,6906890,Champagne-Ardenne,Marne,Reims,30-32 et 34 rue de l'Écu,2002-09-30,2002-11-15,fouille
+50,506666,6935633,Haute-Normandie,Seine-Maritime,Saint-Vigor-d'Ymonville,La Mare des Mares (carrière Lafarge tranche 4),2002-03-04,2002-11-16,fouille
+51,651793,6860420,Ile-de-France,Paris,Paris,64 rue Gay-Lussac - 3 rue des Ursulines,2002-09-23,2002-11-19,fouille
+52,691149,6878713,Ile-de-France,Seine-et-Marne,Barcy,Le Marais de Narcy,2002-07-29,2002-11-28,fouille
+53,941500,6879400,Lorraine,Moselle,Solgne,Poirier Gaillard,2002-10-01,2002-11-30,fouille
+54,574439,6278885,Midi-Pyrénées,Haute-Garonne,Toulouse,Place des Carmes,2002-07-01,2002-12-01,fouille
+55,922000,6876700,Lorraine,Meurthe-et-Moselle,Vandières,Bêtes aux Champs,2002-11-26,2002-12-09,fouille
+56,717113.089,6520647.161,Auvergne,Puy-de-Dôme,Pont-du-Château,Champ Lamet,2002-11-13,2002-12-13,fouille
+57,638995.884,6960165.356,Picardie,Somme,Conty,ZAC  Henri-Dunant,2002-11-18,2002-12-20,fouille
+58,736029.316,6918255.907,Picardie,Aisne,Vasseny,Dessus des Groins,2002-10-07,2002-12-22,fouille
+59,525653.81,6701812.14,Centre,Indre-et-Loire,Tours,Temple de la rue Nationale,1951-01-01,2002-12-31,fouille
+60,743356.912,6892529.784,Picardie,Aisne,Ronchères,Le Bois de la Forge,2002-06-01,2002-12-31,fouille
+61,567010,6877010,Haute-Normandie,Eure,Guichainville,Le Long Buisson 2,2002-08-19,2003-01-01,fouille
+62,775475,6906150,Champagne-Ardenne,Marne,Reims,20  rue de Contrai,2002-09-16,2003-01-03,fouille
+63,790181.031,6588974.37,Bourgogne,Saône-et-Loire,Nochize,Ancienne église,2003-01-15,2003-01-16,fouille
+64,170245,6775324,Bretagne,Finistère,Bénodet,Route de Kernéost,2003-01-06,2003-02-11,fouille
+65,919300,6879500,Lorraine,Meurthe-et-Moselle,Prény,Ferme de Tautecourt,2002-01-02,2003-02-28,fouille
+66,773770,6901380,Champagne-Ardenne,Marne,Champfleury,RN 51,2002-10-01,2003-02-28,fouille
+67,921100,6880200,Lorraine,Meurthe-et-Moselle,Pagny-sur-Moselle,Moulon 2 - Maladrie,2003-02-27,2003-03-12,fouille
+68,496262,6612714,Poitou-Charentes,Vienne,Poitiers,Rue de la Marne,2001-12-03,2003-03-14,fouille
+69,1047480.684,6818949.519,Alsace,Bas-Rhin,Gerstheim,Domaine de Bancalis,2003-03-04,2003-03-17,fouille
+70,565500,6881300,Haute-Normandie,Eure,Évreux,Le Clos-au-Duc,2002-08-05,2003-03-30,fouille
+71,579245,6897795,Haute-Normandie,Eure,Aubevoye,Le Chemin Vert,2003-03-24,2003-03-31,fouille
+72,666136,6838082,Ile-de-France,Seine-et-Marne,Lieusaint,Rond-Point Schumann,2002-11-20,2003-04-04,fouille
+73,691025,6177436,Languedoc-Roussillon,Pyrénées-Orientales,Perpignan,Hôpital militaire,2003-03-10,2003-04-04,fouille
+74,749329.473,6570861.453,Auvergne,Allier,Saint-Prix,Les Jeanrais,2003-02-24,2003-04-18,fouille
+75,453514,6895121,Basse-Normandie,Calvados,Saint-Martin-de-Fontenay,Le Diguet 1,2003-04-04,2003-04-18,fouille
+76,715365.463,6512709.603,Auvergne,Puy-de-Dôme,Le Cendre,Gondole,2003-03-21,2003-04-22,fouille
+77,701284,6675238,Bourgogne,Nièvre,La Charité-sur-Loire,L'abbaye,2003-02-28,2003-04-30,fouille
+78,931332.45,6266145.9,Provences-Alpes-Côte-d'Azur,Var,Saint-Maximin-la-Sainte-Baume,Mirade,2003-03-30,2003-04-30,fouille
+79,1061389,6893110,Alsace,Bas-Rhin,Wissembourg,Rue des Carmes,2003-05-12,2003-05-23,fouille
+80,765689.916,6416460.572,Auvergne,Haute-Loire,Landos,Landos St-Félix,2003-03-25,2003-05-29,fouille
+81,657897,6868292,Ile-de-France,Seine-Saint-Denis,Bobigny,Hôpital Avicenne,2002-10-15,2003-05-31,fouille
+82,655240,6856656,Ile-de-France,Val-de-Marne,Ivry-sur-Seine,"44-46, rue Raspail",2003-04-02,2003-06-14,fouille
+83,774740,6906565,Champagne-Ardenne,Marne,Reims,11-19  rue Buirette,2003-05-19,2003-06-20,fouille
+84,930111.5,6922382,Lorraine,Moselle,Thionville,"24-26, rue de la Vieille-Porte",2003-05-12,2003-06-24,fouille
+85,1051403,6867662,Alsace,Bas-Rhin,Haguenau,Rue des Anneaux,2003-05-26,2003-06-24,fouille
+86,892422.458,6247136.226,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,Espace Bargemon,2002-03-25,2003-06-25,fouille
+87,417942.118,6422354.847,Aquitaine,Gironde,Bordeaux,Parking Place Jean-Jaurès,2002-01-28,2003-07-15,fouille
+88,582000,6902000,Haute-Normandie,Eure,Bouafles,La Plante à Tabac,2003-05-05,2003-07-18,fouille
+89,881056,6519336,Rhône-Alpes,Isère,Optevoz,Chemin de la Cure Bataillier,2003-07-17,2003-07-21,fouille
+90,719422.442,6915202.639,Picardie,Aisne,Ploisy,Zone 6 Bras De Fer,2003-06-23,2003-07-25,fouille
+91,1010449,6802126,Alsace,Haut-Rhin,Sainte-Marie-aux-Mines,Mine Saint-Louis Eisenthür,2003-07-15,2003-08-02,fouille
+92,808779.33,6304316.46,Languedoc-Roussillon,Gard,Nîmes,78 avenue Jean-Jaurès,2003-07-07,2003-08-14,fouille
+93,800920,6873135,Champagne-Ardenne,Marne,Saint-Memmie,"9, rue du Pont-Alips",2003-07-29,2003-08-22,fouille
+94,685195,6870835,Ile-de-France,Seine-et-Marne,Lesches,Les Prés de Refuge,2003-03-15,2003-08-31,fouille
+95,693037,6873841,Ile-de-France,Seine-et-Marne,Meaux,"Zi Nord, Lot D1",2003-07-28,2003-08-31,fouille
+96,775480,6905810,Champagne-Ardenne,Marne,Reims,Rue de l'Équerre,2000-06-21,2003-09-01,fouille
+97,844763,6427410,Rhône-Alpes,Ardèche,Saint-Péray,Chavas,2003-06-30,2003-09-09,fouille
+98,284116,6828878,Bretagne,Côtes-d'Armor,Quessoy,Le Clos Maillard,2003-08-04,2003-09-09,fouille
+99,775480,6906720,Champagne-Ardenne,Marne,Reims,"19, rue Eugène-Desteuque",2003-02-10,2003-09-15,fouille
+100,514500,6886300,Haute-Normandie,Eure,Capelle-les-Grands,Les Terres-Noires,2003-05-12,2003-09-15,fouille
+101,347070,6966785,Basse-Normandie,Manche,Omonville-la-Petite,La Jupinerie,2003-08-25,2003-09-26,fouille
+102,775475.03,6906733.84,Champagne-Ardenne,Marne,Reims,19  rue Eugène-Desteuque,2003-02-01,2003-09-30,fouille
+103,1030646,6845046,Alsace,Bas-Rhin,Marlenheim,Maison apprederis,2003-07-02,2003-09-30,fouille
+104,663452,6878154,Ile-de-France,Val-d'Oise,Roissy-en-France,Le Moulin,2003-09-08,2003-10-20,fouille
+105,573280,6902360,Haute-Normandie,Eure,Muids,Le Gorgeon des Rues 2,2003-08-25,2003-10-22,fouille
+106,802760,6870050,Champagne-Ardenne,Marne,Sarry,Les Auges,2003-10-06,2003-10-24,fouille
+107,946600,6809300,Lorraine,Vosges,Vincey,"Pontière de la Banvoye, Chemin des pêcheurs",2003-10-13,2003-10-27,fouille
+108,658143,6796782,Ile-de-France,Seine-et-Marne,Buthiers,Le dessus-de-Rochefort,2003-08-01,2003-10-30,fouille
+109,640181,6866813,Ile-de-France,Hauts-de-Seine,Nanterre,Avenue Jules-Quentin,2003-09-08,2003-10-31,fouille
+110,419091,6781027,Pays de la Loire,Mayenne,Laval,Saint-Tugal,2003-05-01,2003-11-01,fouille
+111,987313,6711773,Franche-Comté,Doubs,Mandeure,Rue de la Récille,2003-09-08,2003-11-17,fouille
+112,1045419,6836607,Alsace,Bas-Rhin,Geispolsheim,Forlen,2003-10-20,2003-11-18,fouille
+113,608413,6246715,Languedoc-Roussillon,Aude,Mas-Saintes-Puelles,En Courdelle,2003-11-25,2003-11-26,fouille
+114,1046255,6858287,Alsace,Bas-Rhin,Brumath,Rue du château,2003-10-13,2003-11-28,fouille
+115,653067,6868543,Ile-de-France,Seine-Saint-Denis,L'Île-Saint-Denis,"66-70, Rue Du Landy",2003-11-17,2003-11-28,fouille
+116,601287.906,7064508.01,Nord-Pas-de-Calais,Pas-de-Calais,Saint-Étienne-au-Mont,Rue des Écoles,2003-11-03,2003-12-12,fouille
+117,525011,6701461,Centre,Indre-et-Loire,Tours,Hôpital Clocheville,2003-01-01,2003-12-31,fouille
+118,664054,6837047,Ile-de-France,Seine-et-Marne,Tigery,ZAC des Fossés Neufs,2003-01-01,2003-12-31,fouille
+119,774850,6906310,Champagne-Ardenne,Marne,Reims,15  rue Clovis,2003-10-01,2003-12-31,fouille
+120,417945.091,6422227.559,Aquitaine,Gironde,Bordeaux,12 place de la Bourse,2002-01-01,2003-12-31,fouille
+121,636624,6889325,Ile-de-France,Val-d'Oise,Hérouville,Église Saint-Clair,2003-03-01,2004-01-01,fouille
+122,650084.626,6977329.274,Picardie,Somme,Amiens,38-42  rue Lamartine,2003-09-01,2004-01-01,fouille
+123,668703,6834002,Ile-de-France,Seine-et-Marne,Savigny-le-Temple,"ZAC de la Grange du Bois, lot A1",2003-12-01,2004-01-31,fouille
+124,849061,6427479,Rhône-Alpes,Drôme,Valence,Place des Ormeaux,2003-09-01,2004-02-15,fouille
+125,735631.1,6280132.77,Languedoc-Roussillon,Hérault,Aigues-Vives,La Madeleine,2003-11-24,2004-02-27,fouille
+126,651485,6861237,Ile-de-France,Paris,Paris,"1 place Paul Claudel, théâtre national de l'Odéon",2003-06-16,2004-03-05,fouille
+127,892379.747,6247793.248,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,"1bis, rue Malaval",2003-08-15,2004-03-15,fouille
+128,936093.97,6341879.65,Provences-Alpes-Côte-d'Azur,Alpes de Haute-Provence,Peipin,Les Granges,2003-11-01,2004-03-17,fouille
+129,583259,6807230,Centre,Eure-et-Loir,Mignières,Le Petit Cocurtin,2004-01-05,2004-03-19,fouille
+130,571776,6689401,Centre,Loir-et-Cher,Mareuil-sur-Cher,La Jahonnière,2004-02-04,2004-03-22,fouille
+131,775501.26,6276343.91,Languedoc-Roussillon,Hérault,Pérols,ZAC du Parc de l'Aéroport,2004-01-06,2004-03-24,fouille
+132,290918,6847386,Bretagne,Côtes-d'Armor,Pléneuf-Val-André,Piégu  1,2003-10-06,2004-03-30,fouille
+133,714780.716,7002671.08,Nord-Pas-de-Calais,Nord,Masnières,Les Hauts de Masnières,2003-03-10,2004-04-02,fouille
+134,408340,6766890,Pays de la Loire,Mayenne,Cossé-le-Vivien,Guinefolle (2),2004-03-01,2004-04-30,fouille
+135,565000,6926100,Haute-Normandie,Seine-Maritime,Le Mesnil-Esnard,Rue des Hautes Haies,2004-04-01,2004-04-30,fouille
+136,565400,6884600,Haute-Normandie,Eure,Gravigny,Les Coudrettes,2004-04-15,2004-04-30,fouille
+137,290908,6847381,Bretagne,Côtes-d'Armor,Pléneuf-Val-André,Piégu 2,2004-04-19,2004-05-07,fouille
+138,711133.13766561,7056373.1788966,Nord-Pas-de-Calais,Nord,Villeneuve-d'Ascq,"La Haute Borne, lot C ouest",2004-04-05,2004-05-19,fouille
+139,366298,6788185,Bretagne,Ille-et-Vilaine,Brécé,Le Bourg,2004-05-11,2004-05-27,fouille
+140,655356,6664675,Centre,Cher,Bourges,"35, rue de Sarrebourg",2004-03-01,2004-05-31,fouille
+141,782140,6276825,Languedoc-Roussillon,Hérault,Mauguio,"La Font de Mauguio, Les Aires de Saint-Jacques",2004-05-10,2004-06-11,fouille
+142,1005300,6793600,Alsace,Haut-Rhin,Le Bonhomme,Le Cerisier,2004-06-16,2004-06-24,fouille
+143,840185,6520700,Rhône-Alpes,Rhône,Sainte-Foy-lès-Lyon,Angle rues Sergent M. Berthet/Saint-Pierre-de-Vaise,2004-03-29,2004-06-25,fouille
+144,548100,6896600,Haute-Normandie,Eure,Crosville-la-Vieille,Le Bout du Val,2004-06-02,2004-06-25,fouille
+145,711806,6653981,Bourgogne,Nièvre,Nevers,"12, rue Saint-Genest",2003-10-01,2004-06-30,fouille
+146,312673,6682653,Pays de la Loire,Loire-Atlantique,Pornic,La Tocnaye,2004-04-01,2004-06-30,fouille
+147,669270,6837363,Ile-de-France,Seine-et-Marne,Moissy-Cramayel,Parc d'activités de Chanteloup,2004-04-26,2004-06-30,fouille
+148,694930,6807022,Ile-de-France,Seine-et-Marne,Varennes-sur-Seine,Le Marais du Colombier,2004-05-04,2004-06-30,fouille
+149,775845,6905730,Champagne-Ardenne,Marne,Reims,115  rue du Barbâtre,2004-06-01,2004-06-30,fouille
+150,723235.809,6919622.384,Picardie,Aisne,Soissons,Caserne Gouraud (2),2004-06-02,2004-07-15,fouille
+151,842048,6519536,Rhône-Alpes,Rhône,Sainte-Foy-lès-Lyon,Cathédrale Saint-Jean,2004-02-01,2004-07-30,fouille
+152,546450,6689991,Centre,Indre-et-Loire,Bléré,Le Chemin d'Espagne,2004-07-19,2004-08-13,fouille
+153,1040007,6728515,Alsace,Haut-Rhin,Hégenheim,Rue de Hésingue,2004-07-19,2004-08-13,fouille
+154,573931,6690162,Centre,Loir-et-Cher,Thésée,La Pichonnerie,2004-07-25,2004-09-10,fouille
+155,704019.02,6251965.71,Languedoc-Roussillon,Hérault,Puisserguier,Nécropole de La Rouquette,2003-07-20,2004-09-15,fouille
+156,774635,6906765,Champagne-Ardenne,Marne,Reims,"9-11, boulevard du Général Leclerc",2004-05-27,2004-09-16,fouille
+157,1028113,6811627,Alsace,Bas-Rhin,Dambach-la-Ville,Plateforme départementale d'activités de Dambach-la-Ville,2004-05-24,2004-09-30,fouille
+158,1030804.284,6811500.037,Alsace,Bas-Rhin,Dambach-la-Ville,Wilmstein,2004-05-24,2004-09-30,fouille
+159,710922.25064313,7056078.0962892,Nord-Pas-de-Calais,Nord,Villeneuve-d'Ascq,"La Haute Borne, lot B",2004-08-23,2004-09-30,fouille
+160,774560,6907450,Champagne-Ardenne,Marne,Reims,17-19  rue Mont d'Arène et 6-8  rue Maucroix,2004-02-23,2004-10-01,fouille
+161,787050,6802020,Champagne-Ardenne,Aube,Bouranton,La Louvière,2004-08-09,2004-10-03,fouille
+162,701764,6808822,Ile-de-France,Seine-et-Marne,Marolles-sur-Seine,La Croix Saint-Jacques (2),2004-08-09,2004-10-08,fouille
+163,543159,6690743,Centre,Indre-et-Loire,Athée-sur-Cher,Pièce de la Colasserie,2004-08-30,2004-10-08,fouille
+164,650289,6862248,Ile-de-France,Paris,Paris,60 quai des Tuileries - Musée de l'Orangerie,2003-09-29,2004-10-18,fouille
+165,929013,6686536,Franche-Comté,Doubs,Besançon,Collège Lumière (1),2003-11-01,2004-10-29,fouille
+166,929023,6686536,Franche-Comté,Doubs,Besançon,Collège Lumière (3),2003-11-01,2004-10-29,fouille
+167,929013,6686546,Franche-Comté,Doubs,Besançon,Collège Lumière,2003-11-01,2004-10-29,fouille
+168,602730,6471186,Limousin,Corrèze,Naves,Les Arènes de Tintignac  - fouille 2004,2004-09-01,2004-10-29,fouille
+169,636357,6280730,Midi-Pyrénées,Tarn,Castres,Empy Neuf,2004-10-11,2004-10-29,fouille
+170,1043030.621,6821169.254,Alsace,Bas-Rhin,Osthouse,Lotissement Zorn de Bulach,2004-09-13,2004-11-22,fouille
+171,893052.598,6247663.967,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,Rue Longue-des-Capucins,2004-09-30,2004-11-22,fouille
+172,679090,6687533,Centre,Cher,Neuvy-Deux-Clochers,Tour de Vesvre 2,2003-09-01,2004-11-30,fouille
+173,776880,6905920,Champagne-Ardenne,Marne,Reims,Place du 11 Novembre,2004-11-01,2004-11-30,fouille
+174,700391.662,6874035.536,Ile-de-France,Seine-et-Marne,Changis-sur-Marne,5000 ans de vie rurale à Changis-sur-Marne,1995-07-24,2004-12-04,fouille
+175,700948,6873503,Ile-de-France,Seine-et-Marne,Changis-sur-Marne,La Pelle à four,2004-05-15,2004-12-07,fouille
+176,701095,6873399,Ile-de-France,Seine-et-Marne,Changis-sur-Marne,La Pelle à four sud,2004-09-01,2004-12-07,fouille
+177,430765,6802026,Pays de la Loire,Mayenne,Moulay,La Garde,2004-11-02,2004-12-09,fouille
+178,380882,6568197,Poitou-Charentes,Charente-Maritime,Aytré,ZAC Bongraine,2004-09-13,2004-12-17,fouille
+179,355009,6797669,Bretagne,Ille-et-Vilaine,Betton,La Touche Nicoul,2004-11-29,2004-12-17,fouille
+180,352069,6789660,Bretagne,Ille-et-Vilaine,Rennes,"La visitation, un quartier de la ville antique de Rennes",2004-07-17,2004-12-20,fouille
+181,695131.682,7052138.23,Nord-Pas-de-Calais,Nord,Wavrin,Le Château du Bourg,2004-09-13,2004-12-20,fouille
+182,655719.768,6878685.925,Ile-de-France,Val-d'Oise,Villiers-le-Bel,"69, rue Gambetta",2004-10-21,2004-12-24,fouille
+183,664121,6838511,Ile-de-France,Essonne,Tigery,ZAC de la Pépinière,2004-11-08,2004-12-24,fouille
+184,617539,6756326,Centre,Loiret,Orléans,8-10 rue Porte Madeleine,2004-11-22,2004-12-24,fouille
+185,617549,6756326,Centre,Loiret,Orléans,"8-10, rue Porte-Madeleine",2004-11-22,2004-12-28,fouille
+186,935500,6890900,Lorraine,Moselle,Peltre,Les Rouaux,2004-07-28,2004-12-31,fouille
+187,543457,6690626,Centre,Indre-et-Loire,Athée-sur-Cher,Bussière,2004-11-29,2004-12-31,fouille
+188,666303,6835017,Ile-de-France,Seine-et-Marne,Lieusaint,"ZAC du Carré Sénart, bureaux, parkings",2004-12-01,2004-12-31,fouille
+189,212630,6817408,Bretagne,Finistère,Carhaix-Plouguer,Réserve Archéologique,2000-01-01,2005-01-01,fouille
+190,897608.54,6272726.15,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Aix-en-Provence,ZAC Sextius-Mirabeau îlot A,2004-05-02,2005-01-01,fouille
+191,694020,151800,Languedoc-Roussillon,Hérault,Saint-André-de-Sangonis,Le Lagarel,2004-09-10,2005-01-15,fouille
+192,537819,6691502,Centre,Indre-et-Loire,Athée-sur-Cher,Le Brandon,2005-01-01,2005-02-01,fouille
+193,611016.366,6917131.949,Picardie,Oise,Sérifontaine,La Vigne,2005-01-31,2005-02-04,fouille
+194,892265.598,6246576.33,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,23 quai de Rive Neuve,2004-12-15,2005-02-14,fouille
+195,538558,6691486,Centre,Indre-et-Loire,Athée-sur-Cher,La Tour du Brandon,2005-02-01,2005-03-01,fouille
+196,544653,6690256,Centre,Indre-et-Loire,Bléré,Les Fossés Blancs,2005-01-12,2005-03-07,fouille
+197,496136.134,6612599.318,Poitou-Charentes,Vienne,Poitiers,15  rue Arthur-Ranc,2005-02-14,2005-03-11,fouille
+198,782879,6549464,Rhône-Alpes,Loire,Roanne,"Centre ancien, place du Maréchal de Lattre de Tassigny",2004-09-06,2005-03-18,fouille
+199,538019,6691490,Centre,Indre-et-Loire,Athée-sur-Cher,L'Érable,2005-02-07,2005-03-25,fouille
+200,341676,6840451,Bretagne,Ille-et-Vilaine,Lillemer,Les Hauts,2005-02-24,2005-03-25,fouille
+201,572929,6689821,Centre,Loir-et-Cher,Mareuil-sur-Cher,Bagneux,2005-03-01,2005-03-30,fouille
+202,573180,6689969,Centre,Loir-et-Cher,Mareuil-sur-Cher,La Croix de Bagneux,2004-09-13,2005-03-31,fouille
+203,892000.229,6247004.17,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,Collège du Vieux-Port,2005-01-03,2005-04-08,fouille
+204,892383.174,6247227.271,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,Hôtel-Dieu (place Daviel et rue des Belles-écuelles),2005-01-03,2005-04-08,fouille
+205,892000.229,6247004.17,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,Collège Vieux-Port,2005-03-01,2005-04-08,fouille
+206,541766,6691479,Centre,Indre-et-Loire,Athée-sur-Cher,Touche Morin,2005-01-20,2005-04-13,fouille
+207,433922,6806290,Pays de la Loire,Mayenne,Aron,"Le Panveau, La Davière",2005-03-07,2005-04-15,fouille
+208,548443,6689325,Centre,Indre-et-Loire,Bléré,Les Pentes du Vaugerin,2005-03-14,2005-04-15,fouille
+209,561537,6689816,Centre,Loir-et-Cher,Faverolles-sur-Cher,La Chapelle de Senelles,2005-03-14,2005-04-15,fouille
+210,556628,6528105,Limousin,Haute-Vienne,Verneuil-sur-Vienne,La Rivaille,2005-03-29,2005-04-15,fouille
+211,863872.02,6330171.6,Provences-Alpes-Côte-d'Azur,Vaucluse,Carpentras,Boulevard Clemenceau,2005-02-28,2005-04-22,fouille
+212,588643,6817431,Centre,Eure-et-Loir,Chartres,"11-13, rue des Fileurs",2004-12-06,2005-04-29,fouille
+213,540440,6691060,Centre,Indre-et-Loire,Athée-sur-Cher,Chomedormeau,2005-01-17,2005-04-29,fouille
+214,565938,6690329,Centre,Loir-et-Cher,Angé,Le Bois de la Faix,2005-02-17,2005-04-30,fouille
+215,678218.46,6985785.558,Picardie,Somme,Méaulte,Plateforme aéro-industrielle de Haute-Picardie,2005-04-11,2005-04-30,fouille
+216,536320,6691550,Centre,Indre-et-Loire,Truyes,Les Grandes Maisons,2005-04-21,2005-05-13,fouille
+217,928625,6686567,Franche-Comté,Doubs,Besançon,Place de la Révolution,2005-03-21,2005-05-17,fouille
+218,559439,6689833,Centre,Loir-et-Cher,Épeigné-les-Bois,Le Marchais Rond - Les Allets,2005-03-21,2005-05-27,fouille
+219,892024.94,6246354.07,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,"165 rue Sainte, 5&8209;7  rue du Commandant-Lamy",2005-05-09,2005-05-27,fouille
+220,571513,6689387,Centre,Loir-et-Cher,Mareuil-sur-Cher,Le Casseux,2005-04-04,2005-06-03,fouille
+221,900675.14,6263939.79,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Gardanne,Font-de-Garach,2005-05-17,2005-06-09,fouille
+222,1176503.61,6109391.62,Corse,Corse-du-Sud,Ajaccio,Espace Alban,2005-03-14,2005-06-10,fouille
+223,680551.2984309,7018705.4656371,Nord-Pas-de-Calais,Pas-de-Calais,Dainville,Gérico,2005-02-21,2005-06-17,fouille
+224,926200,6902500,Lorraine,Moselle,Norroy-le-Veneur,ZAC du Centre Relais,2005-02-21,2005-06-20,fouille
+225,844242.37,6340855.78,Provences-Alpes-Côte-d'Azur,Vaucluse,Orange,La Croix-Rouge,2005-06-01,2005-06-24,fouille
+226,282415,6711640,Pays de la Loire,Loire-Atlantique,Piriac-sur-Mer,Z.A. du Pladreau - La villa du Pladreau à Piriac-sur-Mer,2005-04-01,2005-06-30,fouille
+227,567936,6689763,Centre,Loir-et-Cher,Angé,Preuilland-Le Petit Jardin,2005-02-01,2005-07-01,fouille
+228,657965,6857678,Ile-de-France,Val-de-Marne,Saint-Maurice,Les Serres de l'hôpital Esquirol,2005-05-10,2005-07-11,fouille
+229,1026810,6776632,Alsace,Haut-Rhin,Sainte-Croix-en-Plaine,"Ancien échangeur, gendarmerie",2005-05-13,2005-07-17,fouille
+230,826803,6383106,Rhône-Alpes,Ardèche,Alba-la-Romaine,Le Clos,2005-07-20,2005-07-29,fouille
+231,580848,6439008,Limousin,Corrèze,Nespouls,"La Bille, El Barjou, Le Lacaud",2005-06-06,2005-08-05,fouille
+232,774980,6907790,Champagne-Ardenne,Marne,Reims,12  rue Duquenelle,2005-07-18,2005-08-09,fouille
+233,730177.478,6466125.547,Auvergne,Haute-Loire,Brioude,Place Grégoire-de-Tours ,2005-10-15,2005-08-15,fouille
+234,547245,6689661,Centre,Indre-et-Loire,Sublaines,Le Grand Ormeau,2005-02-28,2005-08-27,fouille
+235,895929.97,6272615.24,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Aix-en-Provence,ZAC de Ravanas,2005-07-05,2005-09-02,fouille
+236,532879,6692375,Centre,Indre-et-Loire,Esvres,Les Billettes,2005-05-17,2005-09-15,fouille
+237,893115.19,6247671.481,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,53-63 rue Bernard-du-Bois,2005-06-19,2005-09-19,fouille
+238,809451.85,6305271.77,Languedoc-Roussillon,Gard,Nîmes,Place du Chapitre et ses abords,2005-07-04,2005-09-27,fouille
+239,422487,6773139,Pays de la Loire,Mayenne,Entrammes,La Carie,2005-07-18,2005-11-10,fouille
+240,756542.738,6754579.48,Bourgogne,Yonne,Ligny-le-Châtel,"La Coupe au Meunier, Le Ru Carbone",2005-03-01,2005-11-30,fouille
+241,679090,6687543,Centre,Cher,Neuvy-Deux-Clochers,Tour de Vesvre 3,2005-05-01,2005-11-30,fouille
+242,670892,6830059,Ile-de-France,Seine-et-Marne,Cesson,"Plaine du Moulin à Vent, zone sud",2005-11-15,2005-12-01,fouille
+243,840962.075,6580396.596,Bourgogne,Côte-d'Or,Mâcon,Angle rue Tilladet et Epinoches,2005-09-26,2005-12-06,fouille
+244,892374.575,6247606.146,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,Parking République,2005-05-11,2005-12-23,fouille
+245,892374.575,6247606.146,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,Parking République,2005-05-11,2005-12-23,fouille
+246,618202,6755905,Centre,Loiret,Orléans,La Loire,1971-01-01,2005-12-31,fouille
+247,525586.25,6702281.06,Centre,Indre-et-Loire,Tours,"Pont 1, dit «de l'île Saint-Jacques»",2000-01-01,2005-12-31,fouille
+248,775110,6906840,Champagne-Ardenne,Marne,Reims,"5 et 7, rue de Pouilly",2005-09-12,2006-02-15,fouille
+249,720792.752,6971502.293,Picardie,Aisne,Saint-Quentin,Angle des rues Voltaire et des Faucons,2005-02-01,2006-02-28,fouille
+250,931370,6895309,Lorraine,Moselle,Metz,Esplanade,2006-01-16,2006-03-01,fouille
+251,326573,6830849,Bretagne,Côtes-d'Armor,Taden,Les Alleux,2005-10-07,2006-03-03,fouille
+252,336162,6746750,Bretagne,Ille-et-Vilaine,Langon,La Lande du Moulin,2006-01-09,2006-03-09,fouille
+253,349990,6691407,Pays de la Loire,Loire-Atlantique,Saint-Herblain,Zone d'aménagement d'Ar Mor,2004-11-14,2006-03-17,fouille
+254,501146,6621659,Poitou-Charentes,Vienne,Saint-Georges-lès-Baillargeaux,Les Varennes,2005-11-21,2006-03-24,fouille
+255,938227,6558676,Rhône-Alpes,Haute-savoie,Présilly,Eccorçon-Les Murailles,2005-10-01,2006-03-30,fouille
+256,779935,6800295,Champagne-Ardenne,Aube,Troyes,Place de la Libération,2004-08-03,2006-03-31,fouille
+257,892731.472,6247032.248,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,République-Surverse Vieux-Port,2006-03-01,2006-04-01,fouille
+258,892731.472,6247031.248,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,République surverse,2006-02-13,2006-04-14,fouille
+259,771192.053,6279887.489,Languedoc-Roussillon,Hérault,Montpellier,Rue Fontaine du Pila,2005-12-05,2006-04-15,fouille
+260,780380,6800430,Champagne-Ardenne,Aube,Troyes,Troyes Campus,2006-01-09,2006-04-18,fouille
+261,1030615.91,6283308.47,Provences-Alpes-Côte-d'Azur,Alpes Maritimes,Antibes,Bas-Lauvert,2006-01-09,2006-04-21,fouille
+262,619409,6756045,Centre,Loiret,Orléans,Rue de l'Abreuvoir,2006-02-13,2006-04-21,fouille
+263,669591,6831560,Ile-de-France,Seine-et-Marne,Savigny-le-Temple,Le Mont Blanc,2004-08-01,2006-05-01,fouille
+264,585930,6895600,Haute-Normandie,Eure,Notre-Dame-de-l'Isle,La plaine du moulin à vent,2006-02-08,2006-05-08,fouille
+265,670321,6830101,Ile-de-France,Seine-et-Marne,Cesson,Plaine du Moulin à Vent (ext. sud bassin),2006-03-08,2006-05-08,fouille
+266,671295,6831067,Ile-de-France,Seine-et-Marne,Cesson,Plaine du Moulin à Vent (protohistorique),2006-04-20,2006-05-31,fouille
+267,574380,6278377,Midi-Pyrénées,Haute-Garonne,Toulouse,Cité Judiciaire,1999-06-01,2006-06-30,fouille
+268,837820,6378927,Rhône-Alpes,Drôme,Châteauneuf-du-Rhône,La Labre,2006-03-27,2006-06-30,fouille
+269,1019463,6800833,Alsace,Haut-Rhin,Bergheim,Lieux-dits Froen et Böckenbrück,2006-06-01,2006-06-30,fouille
+270,670620,6831755,Ile-de-France,Seine-et-Marne,Cesson,Plaine du Moulin à Vent (gallo-romain),2006-03-20,2006-07-21,fouille
+271,754227.303,6920714.881,Picardie,Aisne,Beaurieux,La Plaine,2006-05-22,2006-07-21,fouille
+272,627940,6778029,Centre,Loiret,Neuville-aux-Bois,La Grande Route (A19-C1),2006-04-01,2006-07-31,fouille
+273,648490,6778991,Centre,Loiret,Courcelles,Le Haut de l'Aunette (A19),2006-06-01,2006-07-31,fouille
+274,527034,6706770,Centre,Indre-et-Loire,Notre-Dame-d'Oé,Le Tertreau,2006-07-15,2006-08-15,fouille
+275,561677,6883068,Haute-Normandie,Eure,Parville,Bois de Parville,2006-02-06,2006-08-25,fouille
+276,689193.153,7038413.6,Nord-Pas-de-Calais,Pas-de-Calais,Loison-sous-Lens,Parc d'activité des Oiseaux,2006-04-01,2006-08-31,fouille
+277,355864.382,6689490.861,Pays de la Loire,Loire-Atlantique,Nantes,Château des ducs de Bretagne (tour philippienne),2003-08-01,,fouille
+278,295046,6758835,Bretagne,Morbihan,Saint-Marcel,Saint-Marcel « Le Bourg » - Les influences culturelles à la fin de l'Antiquité,2006-05-29,2006-09-01,fouille
+279,665979,6835812,Ile-de-France,Seine-et-Marne,Lieusaint,Merigest,2006-08-01,2006-09-01,fouille
+280,791492.4,6288539.75,Languedoc-Roussillon,Hérault,Lunel,Mas de Fourques,2006-07-20,2006-09-22,fouille
+281,433785,6805459,Pays de la Loire,Mayenne,Aron,Le Panveau,2006-09-01,2006-10-01,fouille
+282,358588,6624175,Pays de la Loire,Vendée,Aubigny,Le Baillargeau,2006-08-01,2006-10-13,fouille
+283,649635.351,6977706.388,Picardie,Somme,Amiens,Bas Parvis - Marché aux Herbes,2006-05-15,2006-10-15,fouille
+284,697237.73,7041955.12,Nord-Pas-de-Calais,Pas-de-Calais,Carvin,"Carvin, du Néolithique à l'Antiquité",2006-05-15,2006-10-15,fouille
+285,729111.974,7018500.96,Nord-Pas-de-Calais,Nord,Haspres,Les Vallées,2006-10-02,2006-11-09,fouille
+286,911927.26,6233824.84,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,La Ciotat,ZAC de la Source du Pré,2006-05-22,2006-11-17,fouille
+287,575878,6372797,Midi-Pyrénées,Lot,Cahors,166 rue des Hortes,2006-10-16,2006-11-18,fouille
+288,350175,6696555,Pays de la Loire,Loire-Atlantique,Orvault,ZAC du Vallon des Garettes,2006-10-16,2006-11-22,fouille
+289,775260.72,6906661.08,Champagne-Ardenne,Marne,Reims,Rue  Saint-Symphorien,2006-06-15,2006-11-25,fouille
+290,654592,6877552,Ile-de-France,Val-d'Oise,Sarcelles,"Place de la Libération, rue des Piliers, rue Pierre-Brossolette",2006-11-01,2006-11-30,fouille
+291,665886,6834373,Ile-de-France,Seine-et-Marne,Lieusaint,Le Champtier à Cailles,2006-06-26,2006-12-12,fouille
+292,717292.914,6520815.611,Auvergne,Puy-de-Dôme,Pont-du-Château,Champ Lamet et Chambussière,2006-10-03,2006-12-22,fouille
+293,892774.3693,6247180.219,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,La Bourse,1967-01-01,2006-12-31,fouille
+294,691539,6874332,Ile-de-France,Seine-et-Marne,Meaux,25 rue Saint-Fiacre - 124 rue de Châage,,,fouille
+295,1005258.99,6265823.21,Provences-Alpes-Côte-d'Azur,Var,Saint-Raphaël,Vieille Église de Saint-Raphaël,2003-01-01,2007-01-01,fouille
+296,1005258.99,6265823.21,Provences-Alpes-Côte-d'Azur,Var,Saint-Raphaël,Vieille Église de Saint-Raphaël ,2003-01-01,2007-01-01,fouille
+297,666419,6835790,Ile-de-France,Seine-et-Marne,Lieusaint,Centre commercial 2,2006-09-04,2007-01-05,fouille
+298,653990,6777466,Centre,Loiret,Batilly-en-Gâtinais,Les Pierrières (site A19 - I1. 1-2),2006-07-01,2007-01-31,fouille
+299,613460,6771391,Centre,Loiret,Chevilly,La Pièce de Chameul (A19 - A2-7),2006-08-01,2007-01-31,fouille
+300,1044642.56,6298133.36,Provences-Alpes-Côte-d'Azur,Alpes Maritimes,Nice,Le Pont Vieux,2006-10-18,2007-02-18,fouille
+301,928479,6686886,Franche-Comté,Doubs,Besançon,"85 bis, rue Battant",2007-01-15,2007-02-23,fouille
+302,1001920.97,6266615.53,Provences-Alpes-Côte-d'Azur,Var,Fréjus,Fouille de l'amphithéâtre,2006-04-01,2007-02-28,fouille
+303,650421.433,6977148.286,Picardie,Somme,Amiens,Des entrepôts et un théâtre gallo-romains à Amiens,2006-09-15,2007-03-15,fouille
+304,659724,6875617,Ile-de-France,Val-d'Oise,Gonesse,ZAC Entrée sud de Gonesse,2006-10-15,2007-03-15,fouille
+305,625272,6776576,Centre,Loiret,Aschères-le-Marché,Le Marjolet ; La Cabarne,2006-10-09,2007-03-19,fouille
+306,525594.24,6701608.25,Centre,Indre-et-Loire,Tours,"63-65bis rue Nationale, 9 rue Etienne Palu et 2-8 rue Gambetta",2006-09-01,2007-03-31,fouille
+307,669580,6864599,Ile-de-France,Seine-et-Marne,Chelles,30-32 rue Gustave-Nast,2006-09-01,2007-03-31,fouille
+308,932137,6894450,Lorraine,Moselle,Metz,ZAC du quartier de l'amphithéâtre,2006-03-20,2007-04-04,fouille
+309,474027,6853198,Basse-Normandie,Orne,Goulet,Le Mont,2007-02-18,2007-04-27,fouille
+310,892167.3,6247236.614,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,Place de l'îlot Madeleine (îlot 7),2007-01-30,2007-05-02,fouille
+311,651751,6574178,Limousin,Creuse,Nouhant,La Ribière,2007-02-26,2007-05-04,fouille
+312,669843.836,6901018.675,Picardie,Oise,Senlis,Le cimetière médiéval Saint-Rieul,2007-03-12,2007-05-15,fouille
+313,894967.14,6288343.37,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Le Puy-Sainte-Réparade,Arnajon,2007-04-02,2007-05-15,fouille
+314,616061,6755993,Centre,Loiret,Orléans,Prieuré de la Madeleine,1998-07-01,2007-05-16,fouille
+315,616057,6755958,Centre,Loiret,Orléans,Rue du Faubourg Madeleine - le Prieuré de la Madeleine,2006-09-04,2007-05-16,fouille
+316,892982.108,6247674.095,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,Boulevard Nédélec,2006-09-04,2007-05-26,fouille
+317,730566,6257386,Languedoc-Roussillon,Hérault,Valros,Le Pirou - la vigne de Bioaux - le Rec de Ligno,2006-10-23,2007-06-01,fouille
+318,1036592.506,6826291.89,Alsace,Bas-Rhin,Meistratzheim,Foegel - Meistratzheim,2007-03-05,2007-06-01,fouille
+319,703677.975,7026102.61,Nord-Pas-de-Calais,Pas-de-Calais,Corbehem,CORBEHEM « rue de Gouy »,2007-05-09,2007-06-15,fouille
+320,775190,6906455,Champagne-Ardenne,Marne,Reims,Place du cardinal Luçon,2007-04-02,2007-06-28,fouille
+321,349064,6601669,Pays de la Loire,Vendée,Jard-sur-Mer,Le Grand Essart,2007-01-10,2007-06-30,fouille
+322,939902.47,6309192.66,Provences-Alpes-Côte-d'Azur,Alpes de Haute-Provence,Valensole,Baïsse de Sainte-Anne - Une nécropole de l'Antiquité tardive à Valensole,2007-03-12,2007-06-30,fouille
+323,650417.6,6989950.223,Picardie,Somme,Villers-Bocage,Parc d'activités de la Montignette,2007-04-23,2007-07-13,fouille
+324,573500,6916500,Haute-Normandie,Eure,Romilly-sur-Andelle,Prieuré Saint-Crespin,2006-07-17,2007-07-17,fouille
+325,575886,6373002,Midi-Pyrénées,Lot,Cahors,Allées Fénelon,2007-03-05,2007-07-29,fouille
+326,808760.82,6304513.51,Languedoc-Roussillon,Gard,Nîmes,Parking avenue Jean-Jaurès,2006-10-01,2007-08-04,fouille
+327,735783.19,6282075.566,Languedoc-Roussillon,Hérault,Clermont-l'Hérault,L'Estagnol,2007-05-14,2007-08-15,fouille
+328,459805,6266482,Midi-Pyrénées,Hautes-Pyrénées,Maubourguet,Darré Bourg-Vieux,2007-07-16,2007-08-17,fouille
+329,742800,6823500,Champagne-Ardenne,Aube,Pont-sur-Seine,Gravières,2007-02-12,2007-08-21,fouille
+330,573516,6271958,Midi-Pyrénées,Haute-Garonne,Vieille-Toulouse,5 Chemin de la Planho,2007-02-27,2007-08-31,fouille
+331,417687,6523237,Poitou-Charentes,Charente-Maritime,Saintes,7  Petite rue du Séminaire,2007-07-19,2007-08-31,fouille
+332,892462.547,6247596.021,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,30  14 rue Trinquet,2007-04-10,2007-09-14,fouille
+333,1044850.52,6298409.59,Provences-Alpes-Côte-d'Azur,Alpes Maritimes,Nice,Porte Pairolière,2006-10-23,2007-09-15,fouille
+334,693215,6806385,Ile-de-France,Seine-et-Marne,Ville-Saint-Jacques,Hameau gaulois et <I>villa</I> romaine à Ville-Saint-Jacques,2007-07-23,2007-09-21,fouille
+335,570511.683,6281122.114,Midi-Pyrénées,Haute-Garonne,Toulouse,13 chemin de la Flambère,2007-09-10,2007-10-26,fouille
+336,482693,6509611,Poitou-Charentes,Charente,Soyaux,Champ des Rochers,2007-08-13,2007-11-16,fouille
+337,893015.643,6247659.136,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,Voie Nouvelle,2007-09-24,2007-11-16,fouille
+338,775475,6906640,Champagne-Ardenne,Marne,Reims,Rue Saint-Symphorien,2007-06-19,2007-11-24,fouille
+339,635474.49,6856410.172,Ile-de-France,Yvelines,Versailles,Cour du Grand Commun - Louis XIII aux origines du château de Versailles,2007-03-19,2007-11-30,fouille
+340,470113,6860303,Basse-Normandie,Orne,Ri,DB16013001,2007-06-04,2007-11-30,fouille
+341,795023,6516930,Rhône-Alpes,Loire,Feurs,Rue Camille-Pariat - Une maison romaine sous le centre hospitalier de Feurs,2007-10-15,2007-12-04,fouille
+342,742092.2,6612152.841,Auvergne,Allier,Chevagnes,Les maisons fortes du bas Moyen Âge à Chevagnes,2007-10-10,2007-12-05,fouille
+343,926300,6911800,Lorraine,Moselle,Vitry-sur-Orne,"ZAC de La Plaine - Vallange, un village retrouvé",2007-03-08,2007-12-14,fouille
+344,667649,6837347,Ile-de-France,Seine-et-Marne,Lieusaint,"ZAC de la Pyramide, lots D-E-F",2004-06-24,2007-12-19,fouille
+345,574629.43,6276312.206,Midi-Pyrénées,Haute-Garonne,Toulouse,16 rue Rambaud,2007-09-17,2007-12-21,fouille
+346,423491,6519497,Poitou-Charentes,Charente-Maritime,Chaniers,Les Groies,2007-10-01,2007-12-21,fouille
+347,1031659.284,6844943.344,Alsace,Bas-Rhin,Marlenheim,Le Clos du Marlenberg,2007-08-06,2008-01-09,fouille
+348,574318,6277030,Midi-Pyrénées,Haute-Garonne,Toulouse,105 rue Saint-Roch,2007-09-25,2008-01-22,fouille
+349,1230401,6180962,Corse,Corse-du-Sud,Lucciana,Torricella,2007-12-10,2008-03-07,fouille
+350,858647,6440504,Rhône-Alpes,Drôme,Romans-sur-Isère,Contournement nord-ouest de Romans,2007-11-05,2008-03-11,fouille
+351,390071,6788332,Bretagne,Ille-et-Vilaine,Vitré,Boulevard de Laval - La Grande Haie,2007-10-15,2008-04-08,fouille
+352,619918,6758429,Centre,Loiret,Orléans,ZAC du Clos de la Fontaine,2007-07-02,2008-04-11,fouille
+353,1034969.07,6293905.18,Provences-Alpes-Côte-d'Azur,Alpes Maritimes,Cagnes-sur-Mer,Le Béal II,2008-02-11,2008-04-12,fouille
+354,1024400,6788000,Alsace,Haut-Rhin,Colmar,Des inhumations en fosses-silos et deux colliers en cuivre du Néolithique,2008-03-25,2008-05-23,fouille
+355,434160,6274344,Aquitaine,Pyrénées-Atlantiques,Claracq,Chemin de la Lande,2008-04-21,2008-05-30,fouille
+356,567344,6289720,Midi-Pyrénées,Haute-Garonne,Seilh,Château Percin,2007-11-19,2008-06-13,fouille
+357,951627,6585218,Rhône-Alpes,Haute-savoie,Chens-sur-Léman,Rue de Charnage - Un village du Bronze final à Chens-sur-Léman,2008-01-07,2008-06-13,fouille
+358,516655,6285471,Midi-Pyrénées,Gers,Marsan,Lasserre,2008-01-08,2008-06-13,fouille
+359,273300,6835474,Bretagne,Côtes-d'Armor,Ploufragan,Une villa gallo-romaine à Ploufragan,2008-03-31,2008-06-13,fouille
+360,434594,6272369,Aquitaine,Pyrénées-Atlantiques,Claracq,Chemin des Thuyas,2008-04-21,2008-06-13,fouille
+361,927585,6500518,Rhône-Alpes,Savoie,Chambéry,"Place Henri-Dunant, Quartier des Halles",2008-04-14,2008-06-26,fouille
+362,430368,6268290,Aquitaine,Pyrénées-Atlantiques,Auriac,Duclos,2008-04-02,2008-06-27,fouille
+363,721018.833,6525145.968,Auvergne,Puy-de-Dôme,Les Martres-d'Artière,Champ Chalatras,2008-02-06,2008-07-04,fouille
+364,602310,6834400,Centre,Eure-et-Loir,Épernon,"Quartier Savonnière, tranche 2",2008-03-25,2008-07-18,fouille
+365,882500,6550113,Rhône-Alpes,Ain,Saint-Jean-le-Vieux,Les Colombiers chemin rural,2008-03-10,2008-07-28,fouille
+366,832626,6539449,Rhône-Alpes,Rhône,Anse,La Citadelle,2008-01-14,2008-07-31,fouille
+367,646728,6859375,Ile-de-France,Paris,Paris,62  rue Henry-Farman,2008-02-18,2008-07-31,fouille
+368,851231.054,6683244.044,Bourgogne,Côte-d'Or,Gevrey-Chambertin,Au-dessus de Bergis,2008-06-09,2008-08-04,fouille
+369,689484.346,6179186.605,Languedoc-Roussillon,Pyrénées-Orientales,Perpignan,Les nécropoles de Negabous,2008-03-31,2008-08-08,fouille
+370,929875,6922112,Lorraine,Moselle,Thionville,Cour des Capucins - fouille 2008,2008-03-25,2008-09-08,fouille
+371,436263,6301108,Aquitaine,Landes,Cazères-sur-l'Adour,Septsos,2008-06-30,2008-09-12,fouille
+372,1050152,6842090,Alsace,Bas-Rhin,Strasbourg,4 rue Brûlée,2008-03-26,2008-09-30,fouille
+373,619869,6758479,Centre,Loiret,Orléans,Un sanctuaire antique - ZAC du Clos de la Fontaine,2007-07-02,2008-10-03,fouille
+374,739530,6825690,Champagne-Ardenne,Aube,La Saulsotte,Le Vieux Bouchy,2008-07-15,2008-10-03,fouille
+375,893092.289,6247219.898,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,"25 rue Thubaneau, Jeu de Paume",2008-06-28,2008-10-15,fouille
+376,377240,6573622,Poitou-Charentes,Charente-Maritime,L'Houmeau,Monsidun,2008-02-18,2008-10-18,fouille
+377,892034.951,6247399.557,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,Esplanade de la Major ,2008-03-01,2008-11-01,fouille
+378,697027.979,7041856.09,Nord-Pas-de-Calais,Pas-de-Calais,Carvin,ZAC de la Gare d'Eau,2008-05-19,2008-11-14,fouille
+379,432602,6713870,Pays de la Loire,Maine-et-Loire,Angers,"Rue Saint-Maurille, place du Ralliement",2008-09-23,2008-11-21,fouille
+380,434102,6280249,Aquitaine,Landes,Miramont-Sensacq,Cazaou de Luc,2008-09-29,2008-11-21,fouille
+381,977408.75,6391208,Provences-Alpes-Côte-d'Azur,Hautes-Alpes,Embrun,Îlot du Théâtre,2007-11-30,2008-12-01,fouille
+382,770300,6830580,Champagne-Ardenne,Aube,Plancy-l'Abbaye,Lieu-dit Saint-Martin,2008-10-13,2008-12-01,fouille
+383,774419.34,6906949.48,Champagne-Ardenne,Marne,Reims,Tracé de la ligne de tramway,2007-07-03,2008-12-02,fouille
+384,440860,6376665,Aquitaine,Gironde,Lignan-de-Bazas,L'Ambrot,2008-10-13,2008-12-19,fouille
+385,892034.951,6247399.557,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,Esplanade Major,2008-09-11,2008-12-19,fouille
+386,892034.951,6247399.557,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,Esplanade de la Major,2008-03-01,2009-01-31,fouille
+387,809431.16,6305689.97,Languedoc-Roussillon,Gard,Nîmes,Le quartier Clérisseau,2008-09-08,2009-02-06,fouille
+388,430585,6599773,Poitou-Charentes,Deux-Sèvres,Faye-sur-Ardin,Voie communale n° 16,2008-10-13,2009-02-06,fouille
+389,719878.93,6243819.23,Languedoc-Roussillon,Hérault,Sauvian,La Lesse-Espagnac,2008-11-05,2009-03-03,fouille
+390,436330,6303746,Aquitaine,Landes,Le Vignau,Romentère,2009-01-05,2009-04-10,fouille
+391,428439,6268385,Aquitaine,Pyrénées-Atlantiques,Argelos,Labarthe 3,2009-04-06,2009-05-07,fouille
+392,429646,6268080,Aquitaine,Pyrénées-Atlantiques,Thèze,Mugain 2,2009-04-06,2009-05-07,fouille
+393,649019,6846969,Ile-de-France,Essonne,Massy,Rue du Pérou,2009-05-12,2009-05-07,fouille
+394,775190,6905540,Champagne-Ardenne,Marne,Reims,"Bd Docteur Henri Henrot, rue Folle Peine et rue des Moulins (ZAC du vieux Port)",2007-11-19,2009-05-09,fouille
+395,565700,6933300,Haute-Normandie,Seine-Maritime,Isneauville,Une ferme gauloise puis gallo-romaine,2009-01-06,2009-05-18,fouille
+396,666837.371,6860909.645,Ile-de-France,Seine-Saint-Denis,Noisy-le-Grand,4 rue des Mastraits - Nécropole du haut Moyen Âge,2008-10-27,2009-05-25,fouille
+397,791634,6509824,Rhône-Alpes,Loire,Chambéon,Chambéon - Magneux 3500 d'occupation dans la plaine du Forez,2008-06-02,2009-05-29,fouille
+398,555565,6537254,Limousin,Haute-Vienne,Saint-Gence,La Gagnerie,2009-04-06,2009-06-05,fouille
+399,327212,6651240,Pays de la Loire,Vendée,Sallertaine,La Caillaudière,2008-10-20,2009-06-20,fouille
+400,775190,6905540,Champagne-Ardenne,Marne,Reims,Boulevard Henri-Henrot (ZAC du Vieux Port),2008-06-01,2009-07-10,fouille
+401,894518.425,6688043.285,Franche-Comté,Jura,Dammartin-Marpain,Des chasseurs-cueilleurs en Franche-Comté,2008-10-09,2009-07-10,fouille
+402,423191,6504475,Poitou-Charentes,Charente-Maritime,Pons,Avenue de Versailles,2009-02-16,2009-07-10,fouille
+403,430962,6328089,Aquitaine,Landes,Pouydesseaux,Loustalet,2009-04-20,2009-07-10,fouille
+404,716365.6,6519854.3,Auvergne,Puy-de-Dôme,Lempdes,ZAC de la Fontanille II,2008-11-17,2009-07-17,fouille
+405,602730,6471186,Limousin,Corrèze,Naves,Les Arènes de Tintignac - fouille 2009,2009-07-06,2009-07-31,fouille
+406,832367,6529560,Rhône-Alpes,Rhône,Fleurieux-sur-l'Arbresle,Une ferme antique à Fleurieux-sur-l'Arbresle,2009-04-20,2009-08-12,fouille
+407,512272,6286513,Midi-Pyrénées,Gers,Lahitte,Soulan de Lasserre-Cabanery,2009-06-15,2009-08-28,fouille
+408,897500,6780700,Lorraine,Vosges,Damblain,Cap Vosges,2008-05-13,2009-08-30,fouille
+409,931710,6895140,Lorraine,Moselle,Metz,Îlot Sainte-Chrétienne - fouille 2009,2009-02-01,2009-09-30,fouille
+410,931710,6895140,Lorraine,Moselle,Metz,Sainte Chrétienne,2009-02-01,2009-09-30,fouille
+411,747660.087,6946026.63,Picardie,Aisne,Laon,Pôle d'activités du Griffon  tranche 1B,2009-06-02,2009-10-02,fouille
+412,787119.67,6468150.111,Auvergne,Haute-Loire,Bas-en-Basset,Occupations de La Tène finale et de l'époque gallo-romaine,2009-09-08,2009-10-02,fouille
+413,1033400.15,6284487.43,Provences-Alpes-Côte-d'Azur,Alpes Maritimes,Antibes,Place Mariéjol - fouille 2009,2009-09-07,2009-10-09,fouille
+414,671197,6830668,Ile-de-France,Seine-et-Marne,Cesson,La Plaine du Moulin à Vent - fouille 2009,2009-06-15,2009-10-15,fouille
+415,744565,6825930,Champagne-Ardenne,Aube,Pont-sur-Seine,Pont sur Seine - Haut de Launoy,2009-09-10,2009-10-30,fouille
+416,912175.18,6234379.05,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,La Ciotat,Îlot Saint-Jacques,,,fouille
+417,365474,6780650,Bretagne,Ille-et-Vilaine,Châteaugiron,ZAC de La Perdriotais - Une longue occupation rurale aux origines de Châteaugiron,2008-05-01,2009-11-01,fouille
+418,650950.92,6237093.29,Languedoc-Roussillon,Aude,Carcassonne,Lo Badarel,2009-07-06,2009-11-09,fouille
+419,658893,6875686,Ile-de-France,Val-d'Oise,Gonesse,"Cours Baleine, ZAC entrée sud II",2009-09-07,2009-11-15,fouille
+420,759472,6278998,Languedoc-Roussillon,Hérault,Murviel-lès-Montpellier,9 bis route de Bel-Air,2009-11-16,2009-12-11,fouille
+421,647755,6495588,Limousin,Corrèze,Ussel,Le Theil,2009-11-15,2009-12-15,fouille
+422,849595.301,6694498.313,Bourgogne,Côte-d'Or,Plombières-lès-Dijon,La Peute Combe,2009-05-04,2009-12-24,fouille
+423,1037695.217,6855232.802,Alsace,Bas-Rhin,Gougenheim,D'exceptionnelles sépultures du Néolithique récent,2000-08-01,2009-12-31,fouille
+424,701808.015,7052582.06,Nord-Pas-de-Calais,Nord,Noyelles-lès-Seclin,Une agglomération gallo-romaine atypique à Noyelles-lez-Seclin,2009-11-16,2010-01-01,fouille
+425,892383.174,6247227.271,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,Hôtel Dieu 6 Place Daviel II,2010-02-28,2010-01-01,fouille
+426,1192724.73,6082076.67,Corse,Corse-du-Sud,Propriano,"Quattrina - Aux origines de la Corse chrétienne, les églises oubliées de Propriano",2009-09-15,2010-01-08,fouille
+427,618679,6756041,Centre,Loiret,Orléans,ZAC Bourgogne,2010-01-10,2010-02-10,fouille
+428,618457,6756383,Centre,Loiret,Orléans,"Deuxième ligne de tramway, place de l'Étape",2009-11-16,2010-03-26,fouille
+429,380287,6570496,Poitou-Charentes,Charente-Maritime,La Rochelle,"Hôpital protestant, rue du Docteur Schweitzer",2009-11-29,2010-03-26,fouille
+430,985704,6711917,Franche-Comté,Doubs,Mandeure,Rue du Théâtre,2010-03-01,2010-03-31,fouille
+431,694149,6970761,Picardie,Somme,Cizancourt,La Sole des Galets et Vallée Madeleine,2010-03-08,2010-04-02,fouille
+432,508067,6318471,Midi-Pyrénées,Gers,Lectoure,Estoube,2010-02-16,2010-04-09,fouille
+433,617991,6756227,Centre,Loiret,Orléans,"Deuxième ligne de tramway, place de Gaulle",2009-11-16,2010-04-23,fouille
+434,607044,6797389,Centre,Eure-et-Loir,Ymonville,Les Hyèbles 2,2009-07-04,2010-04-30,fouille
+435,607044,6797389,Centre,Eure-et-Loir,Ymonville,Les Hyèbles,2009-07-04,2010-04-30,fouille
+436,706331.35,6519499.4,Auvergne,Puy-de-Dôme,Clermont-Ferrand,Carré Jaude 2 - extension 2010,2010-02-03,2010-04-30,fouille
+437,685667,6859850,Ile-de-France,Seine-et-Marne,Bailly-Romainvilliers,Le Prieuré,2010-03-05,2010-05-07,fouille
+438,1044768.201,6853679.893,Alsace,Bas-Rhin,Eckwersheim,De l'âge du Bronze à l'époque mérovingienne,2010-03-01,2010-05-12,fouille
+439,667814.406,6580072.463,Auvergne,Allier,Montluçon,Les Hauts de Buffon,2010-02-10,2010-06-07,fouille
+440,639260.556,6852054.634,Ile-de-France,Yvelines,Jouy-en-Josas,Domaine du Montcel,2010-05-31,2010-06-10,fouille
+441,601175,6797424,Centre,Eure-et-Loir,Prasville,Rougemont,2010-04-20,2010-06-11,fouille
+442,708751,7013749,Nord-Pas-de-Calais,Pas-de-Calais,Sauchy-Lestrée,Le Grotin,2010-05-04,2010-06-15,fouille
+443,694135,6971462,Picardie,Somme,Cizancourt,La Sole des Galets,2010-03-15,2010-06-16,fouille
+444,709724,7016163,Nord-Pas-de-Calais,Pas-de-Calais,Oisy-le-Verger,Le Pont d'Epinoy,2010-05-04,2010-06-18,fouille
+445,708722,7013519,Nord-Pas-de-Calais,Pas-de-Calais,Sauchy-Lestrée,Le Prunier,2010-05-19,2010-06-18,fouille
+446,601085,6639225,Centre,Indre,Déols,ZAC de Grandéols,2010-03-30,2010-06-30,fouille
+447,692820,6185900,Languedoc-Roussillon,Pyrénées-Orientales,Claira,Route du  Barcarès,2010-11-30,2010-06-30,fouille
+448,708686,7013009,Nord-Pas-de-Calais,Pas-de-Calais,Sauchy-Lestrée,Le Mont des Trois Pensées,2010-05-11,2010-06-30,fouille
+449,641889,6845999,Ile-de-France,Essonne,Palaiseau,Campus de l'École polytechnique,2010-04-02,2010-07-02,fouille
+450,694073,6972156,Picardie,Somme,Saint-Christ-Briost,La Terrière,2010-06-21,2010-07-02,fouille
+451,709525,7015663,Nord-Pas-de-Calais,Pas-de-Calais,Oisy-le-Verger,Le Bois de Bloquières,2010-06-21,2010-07-02,fouille
+452,644076,6787042,Centre,Loiret,Pithiviers,Bois Médor et Vieux Chemin d'Étampes,2010-05-05,2010-07-06,fouille
+453,918602.64,6376785.8,Provences-Alpes-Côte-d'Azur,Hautes-Alpes,La Bâtie-Montsaléon,Plaine de Lachaup,2010-05-17,2010-07-13,fouille
+454,678311.338,6864305.229,Ile-de-France,Seine-et-Marne,Lagny-sur-Marne,9 rue Gambetta,2010-03-22,2010-07-13,fouille
+455,640968,6784752,Centre,Loiret,Pithiviers-le-Vieil,Les Jardins du Bourg,2009-09-09,2010-07-16,fouille
+456,524665.49,6701829.7,Centre,Indre-et-Loire,Tours,Clinique des Dames Blanches,2010-05-03,2010-07-23,fouille
+457,978800,6869900,Lorraine,Moselle,Bassing,La Tête d'Or,2010-03-01,2010-07-31,fouille
+458,774180.79,6275662.48,Languedoc-Roussillon,Hérault,Lattes,La Courgoulude,2010-04-02,2010-08-10,fouille
+459,707538,7010015,Nord-Pas-de-Calais,Pas-de-Calais,Bourlon,La Maladrerie,2010-05-10,2010-08-13,fouille
+460,657833,6874469,Ile-de-France,Val-d'Oise,Bonneuil-en-France,"La Fontaine Plamond, aéroport du Bourget phase 1",2010-04-26,2010-09-03,fouille
+461,708250.749,7011455.227,Nord-Pas-de-Calais,Pas-de-Calais,Marquion,L'Épine,2010-05-03,2010-09-03,fouille
+462,933595,6849162,Lorraine,Meurthe-et-Moselle,Nancy,Berger-Levrault,2010-03-01,2010-09-17,fouille
+463,706571,7008680,Nord-Pas-de-Calais,Pas-de-Calais,Sains-lès-Marquion,Le Dièvre,2010-08-17,2010-09-17,fouille
+464,431843,6713374,Pays de la Loire,Maine-et-Loire,Angers,Clinique Saint-Louis,2010-11-03,2010-09-30,fouille
+465,891888.782,6247214.58,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,Consigne sanitaire,2010-09-29,2010-10-07,fouille
+466,599165,6805175,Centre,Eure-et-Loir,Allonnes,"La Petite Contrée, secteur 3",2010-08-16,2010-10-08,fouille
+467,698494,6988447,Picardie,Somme,Moislains,Au Petit Chemin de Nurlu,2010-08-09,2010-10-08,fouille
+468,717720,6249950,Languedoc-Roussillon,Hérault,Béziers,27-29 rue Kléber,2010-09-13,2010-10-19,fouille
+469,693957,6973784,Picardie,Somme,Saint-Christ-Briost,Les Dix-Huit,2010-06-28,2010-10-29,fouille
+470,700013,6991908,Picardie,Somme,Étricourt-Manancourt,Les Seize et Le Fond de Manancourt,2010-08-23,2010-11-10,fouille
+471,695764,6960006,Picardie,Somme,Breuil,"Sole de l'Epinette, Sole du Bois Marotte et Sole de la Voie de Quiquery",2010-09-06,2010-11-17,fouille
+472,672118.57,7047140.53,Nord-Pas-de-Calais,Pas-de-Calais,Fouquereuil,Rue du Marais,2010-08-02,2010-12-03,fouille
+473,597972.52,6806406.088,Centre,Eure-et-Loir,Prunay-le-Gillon,Les Carreaux,2010-09-20,2010-12-09,fouille
+474,553146,6534579,Limousin,Haute-Vienne,Veyrac,Le Petit Moulin,,2010-12-13,fouille
+475,694048,6972677,Picardie,Somme,Saint-Christ-Briost,Bois de Briost et Sole d'Happlincourt,2010-08-17,2010-12-17,fouille
+476,705300,7002552,Nord-Pas-de-Calais,Pas-de-Calais,Havrincourt,Les Bosquets,2010-09-27,2010-12-17,fouille
+477,693332,6983728,Picardie,Somme,Allaines,Les Quatre Journaux et Parc de l'Orgibet,2010-10-11,2010-12-24,fouille
+478,696804,6956263,Picardie,Somme,Ercheu,Au Chemin de Ham et Le Champs d'Artois,2010-10-11,2010-12-24,fouille
+479,892197.771,6247262.564,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,Place du Refuge,2010-09-06,2011-01-21,fouille
+480,1032709.34,6286546.55,Provences-Alpes-Côte-d'Azur,Alpes Maritimes,Antibes,64 avenue de Nice,2010-11-29,2011-01-21,fouille
+481,837160,6379174,Rhône-Alpes,Drôme,Châteauneuf-du-Rhône,Le Grand Palais  Les Résidences du Ponant,2010-11-15,2011-02-04,fouille
+482,657669.47,6666795.414,Centre,Cher,Saint-Germain-du-Puy,Le Grand Pacage,2011-03-10,2011-03-30,fouille
+483,679457.42,6864446.514,Ile-de-France,Seine-et-Marne,Lagny-sur-Marne,19-25 Avenue Grouard,2010-11-01,2011-05-01,fouille
+484,693315.8125,6979116.5,Picardie,Somme,Barleux,La Croisette et Sole du Bois de Marc,2011-04-11,2011-06-03,fouille
+485,431475,6803310,Pays de la Loire,Mayenne,Moulay,Oppidum - RN12,2009-11-02,2011-06-24,fouille
+486,598256.54,6760205.908,Centre,Loiret,Épieds-en-Beauce,Les Chantaupiaux,2011-03-07,2011-08-26,fouille
+487,657876.535,6667326.824,Centre,Cher,Saint-Germain-du-Puy,Les Boubards,2011-06-14,2011-09-02,fouille
+488,112075.83,6839887.73,Bretagne,Finistère,Île-Molène,Beg ar Loued,2003-03-01,2011-09-09,fouille
+489,705182.526,6521515.637,Auvergne,Puy-de-Dôme,Clermont-Ferrand,ZAC de Trémonteix,2010-09-08,2011-09-15,fouille
+490,707904.9375,7010510.5,Nord-Pas-de-Calais,Pas-de-Calais,Bourlon,La Vallée de Marquion,2011-05-04,2011-10-07,fouille
+491,650692.505,6846991.263,Ile-de-France,Essonne,Wissous,Zone sud ouest aéroport Paris-Orly,2011-09-01,2011-10-10,fouille
+492,679486,6864439,Ile-de-France,Seine-et-Marne,Lagny-sur-Marne,19-25 avenue Grouard,2011-10-03,2011-10-22,fouille
+493,695677.3125,6966057,Nord-Pas-de-Calais,Nord,Béthencourt,Vallée des Marottes,2011-09-12,2011-10-28,fouille
+494,693000.0625,6976371.5,Picardie,Somme,Barleux,"Dessus des Plates Pierres, Les Onze Polleux, Le Bois Crochette, Les Croix Noires et La Cloche",2010-09-13,2011-10-30,fouille
+495,590264,6837691,Centre,Eure-et-Loir,Nogent-le-Roi,Le Poirier  Les Gués,2011-08-23,2011-11-04,fouille
+496,695661,6959000.5,Picardie,Somme,Moyencourt,Le Haut du Bois de Pique,2010-06-28,2011-11-17,fouille
+497,695199.3125,6968640,Picardie,Somme,Épénancourt,Les Rouges Monts et La Grosse Borne,2011-09-12,2011-11-25,fouille
+498,525935,6701315.5,Centre,Indre-et-Loire,Tours,"Tramway, rue Charles-Gille",2011-02-21,2011-12-21,fouille
+499,695341.5625,6963794,Picardie,Somme,Rouy-le-Grand,Vallée Ronvalle,2011-10-03,2011-12-23,fouille
+500,566686,6913762,Haute-Normandie,Eure,Alizay,"Le Postel, Le Port au Chanvre, Le Chêne, Le Pré Rompu",2011-02-07,2012-03-31,fouille
+501,698790,6941867,Picardie,Oise,Noyon,La Mare aux Canards,2011-06-14,2012-06-15,fouille
+502,842889.5,6840661.9,Champagne-Ardenne,Haute-Marne,Saint-Dizier,Parc de référence,2012-03-01,2012-06-30,fouille
+503,749070,6828400,Champagne-Ardenne,Marne,Esclavolles-Lurey,Nécropole mérovingienne,2012-06-14,2012-07-30,fouille
+504,708540.5,7012317.5,Nord-Pas-de-Calais,Pas-de-Calais,Marquion,Le Mont-des-Trois-Pensées et La Plaine du Renard,2011-05-16,2012-07-31,fouille
+505,359520,6925856,Basse-Normandie,Manche,Portbail,Genestel,2012-05-29,2012-08-03,fouille
+506,352870,6781684,Bretagne,Ille-et-Vilaine,Noyal-Châtillon-sur-Seiche,La Guyomerais,2012-03-12,2012-09-14,fouille
+507,547822,6689737,Centre,Indre-et-Loire,Sublaines,Le Bois Gaulpied et Le Grand Ormeau,2012-07-23,2012-09-26,fouille
+508,346991.556,6800838.575,Bretagne,Ille-et-Vilaine,La Mézière,Les Lignes de la Gonzée,2012-02-13,2012-10-12,fouille
+509,496464.647,6612319.661,Poitou-Charentes,Vienne,Poitiers,Les Jardins du Puygarreau,2012-08-06,2012-10-19,fouille
+510,525651,6701526,Centre,Indre-et-Loire,Tours,Rue Nationale et place Jean-Jaurès,2011-02-21,2012-10-24,fouille
+511,726585.008,6958166.957,Picardie,Aisne,Vendeuil,Le Bacquet d'Oise,2012-05-14,2012-10-26,fouille
+512,584756.942,6452121.67,Limousin,Corrèze,Brive-la-Gaillarde,Abords de la collégiale Saint-Martin,2012-07-23,2012-10-31,fouille
+513,526715,6530511,Poitou-Charentes,Charente,Chassenon,Le Bourg antique,2012-08-27,2012-10-31,fouille
+514,526715,6530511,Poitou-Charentes,Charente,Chassenon,Bourg de Chassenon,2012-08-27,2012-10-31,fouille
+515,602037.46,7070804.428,Nord-Pas-de-Calais,Pas-de-Calais,Boulogne-sur-Mer,Crypte de la Basilique Notre-Dame de Boulogne-sur-Mer,2011-01-01,2012-11-01,fouille
+516,618353.505,6755649.776,Centre,Loiret,Orléans,Ile de Loire entre duit Saint Charles et le pont George V,2012-09-16,2012-11-05,fouille
+517,389974.599,6580166.355,Poitou-Charentes,Charente-Maritime,Andilly,rue Saint-Nicolas,2012-08-20,2012-11-16,fouille
+518,446497.221,6513843.485,Poitou-Charentes,Charente,Bourg-Charente,Les Pièces de Monsieur Jarnac,2012-07-23,2012-11-30,fouille
+519,923241,6680463,Franche-Comté,Doubs,Rancenay,Sous la Grette,2012-10-15,2012-12-14,fouille
+520,561694.349,6929339.938,Haute-Normandie,Seine-Maritime,Rouen,Angle des rues Verte et Pouchet,2012-06-01,2012-12-31,fouille
+521,853439.4,6692289.668,Bourgogne,Côte-d'Or,Dijon,Rue du Pont des Tanneries,2012-10-01,2013-02-28,fouille
+522,468581.441,6895271.264,Basse-Normandie,Calvados,Moult,Le Val des Cigognes,2013-01-28,2013-03-08,fouille
+523,364792.55,6804542.56,Bretagne,Ille-et-Vilaine,Ercé-près-Liffré,ZAC Le Bocage de l'Illet - tranche 1,2013-04-08,2013-06-07,fouille
+524,427278,6922347,Basse-Normandie,Calvados,Port-en-Bessin-Huppain,Avenue du Général de Gaulle,2013-06-05,2013-06-27,fouille
+525,428935.78,6915610.38,Basse-Normandie,Calvados,Vaucelles,Le Chemin du Moulin Morin,2013-04-29,2013-06-28,fouille
+526,254332.106,6742887.933,Bretagne,Morbihan,Bono,Mané Mourin,2013-03-04,2013-07-22,fouille
+527,780740.499,6801248.121,Champagne-Ardenne,Aube,Troyes,Rue des Carmélites,,2013-08-15,fouille
+528,566700,6982000,Haute-Normandie,Seine-Maritime,Grèges,La Maison Blanche,,2013-08-30,fouille
+529,719658,6707754,Bourgogne,Nièvre,Entrains-sur-Nohain,Rue Romaine,2013-06-19,2013-09-20,fouille
+530,774236.537,6277568.953,Languedoc-Roussillon,Hérault,Montpellier,Contournement ferroviaire Nîmes-Montpellier - La Cavalade,2013-04-01,2013-09-30,fouille
+531,881078.868,6519934.447,Rhône-Alpes,Isère,Optevoz,Rue Philippe Tassier,2013-07-08,2013-10-11,fouille
+532,729419.996,6524915.213,Auvergne,Puy-de-Dôme,Lezoux,Les Colis,2013-06-03,2013-10-29,fouille
+533,417445.491,6523444.2,Poitou-Charentes,Charente-Maritime,Saintes,Rue  Daniel-Massiou,,2013-10-31,fouille
+534,931300,6839200,Lorraine,Meurthe-et-Moselle,Messein,Noires terres,2004-01-01,,fouille
+535,779930,6800170,Champagne-Ardenne,Aube,Troyes,Habitat antique et tannerie médiévale,2010-03-01,,fouille
+536,716067.293,6514067.843,Auvergne,Puy-de-Dôme,Cournon-d'Auvergne,Les Queyriaux,2010-08-30,,fouille
+537,477663,3211945,Aquitaine,Dordogne,Boulazac,Boulazac,2011-11-01,,fouille
+538,837738.401,6606778.328,Bourgogne,Saône-et-Loire,Martailly-lès-Brancion,Château,2012-01-01,,fouille
+539,500995.038,6622691.994,Poitou-Charentes,Vienne,Saint-Georges-lès-Baillargeaux,Les Gains,2012-02-29,,fouille
+540,869668.97,6685851.154,Bourgogne,Côte-d'Or,Labergement-Foigney,Labergement-Foigney Champs Cottin,2012-09-01,,fouille
+541,781600,6793550,Champagne-Ardenne,Aube,Buchères,Parc logistique de l'Aube,2012-09-20,,fouille
+542,659556,6876592,Ile-de-France,Val-d'Oise,Gonesse,Église Saint-Pierre-et-Saint-Paul,2013-01-14,,fouille
+543,864992,6686933,Bourgogne,Côte-d'Or,Magny-sur-Tille,"LGV Rhin-Rhône branche Est deuxième phase - Le Grand Pré, le Bas de l'Ampone",2013-03-18,,fouille
+544,918700,6245300,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Cuges-les-Pins,ZAC des Vigneaux,2013-03-25,,fouille
+545,652055.121,6861866.618,Ile-de-France,Paris,Paris,"Paris, Préfecture de police, bâtiment d'accueil - 2 rue de Lutèce",2013-04-15,,fouille
+546,647239.582,6495953.76,Limousin,Corrèze,Ussel,Le Theil,2013-05-21,,fouille
+547,653912.264,6891956.804,Ile-de-France,Val-d'Oise,Viarmes,Place Pierre Salvi,2013-06-03,,fouille
+548,989955,6733541,Franche-Comté,Territoire de Belfort,Belfort,Place d'Armes,2013-07-01,,fouille
+549,171212,6792622,Bretagne,Finistère,Quimper,Kervouyec II,,,fouille
+550,235872,6748449,Bretagne,Morbihan,Belz,Kerduelland,,,fouille
+551,242736,6810230,Bretagne,Côtes-d'Armor,Laniscat,Rosquelfen,,,fouille
+552,290290,6706080,Pays de la Loire,Loire-Atlantique,Guérande,Place de la Psalette - Collégiale St Aubin,,,fouille
+553,291529.818,6706049.723,Pays de la Loire,Loire-Atlantique,Guérande,ZAC de la Métairie de la Lande,,,fouille
+554,351830,6789740,Bretagne,Ille-et-Vilaine,Rennes,Couvent des Jacobins,,,fouille
+555,355574,6689305,Pays de la Loire,Loire-Atlantique,Nantes,Nantes Bouffay Neptune,,,fouille
+556,367830,6846855,Basse-Normandie,Manche,Le Mont-Saint-Michel,"Le Mont-Saint-Michel, La Cour des Ecoles",,,fouille
+557,367864,6846706,Basse-Normandie,Manche,Le Mont-Saint-Michel,Mont-Saint-Michel / Les Remparts - Tour Denis,,,fouille
+558,380037,6776905,Bretagne,Ille-et-Vilaine,Bais,Un grand domaine gallo-romain,,,fouille
+559,384539,6707707,Pays de la Loire,Loire-Atlantique,Ancenis,ZAC de la Savinière,,,fouille
+560,401483.879,6920057.216,Basse-Normandie,Calvados,Isigny-sur-Mer,Le Tuilley - La Campagne,,,fouille
+561,417374.231,6421841.285,Aquitaine,Gironde,Bordeaux,Place Pey-Berland,,,fouille
+562,424124.349,6570264.032,Poitou-Charentes,Deux-Sèvres,Usseau,Rue de la Laiterie,,,fouille
+563,431883.951,6713804.704,Pays de la Loire,Maine-et-Loire,Angers,Château d'Angers,,,fouille
+564,471010,6766000,Pays de la Loire,Sarthe,Vallon-sur-Gée,LGV Bretagne-Pays de la Loire - La Bourlerie,,,fouille
+565,487922.264,6778424.357,Pays de la Loire,Sarthe,La Milesse,LGV Bretagne-Pays de la Loire - La Ronce,,,fouille
+566,491305,6771212,Pays de la Loire,Sarthe,Le Mans,Théâtre de Jacobins,,,fouille
+567,492460,6775375,Pays de la Loire,Sarthe,Neuville-sur-Sarthe,Chapeau,,,fouille
+568,497381,6897649,Basse-Normandie,Calvados,Lisieux,Quai des Remparts,,,fouille
+569,497686.623,6616435.479,Poitou-Charentes,Vienne,Poitiers,La Folie,,,fouille
+570,502176,6421631,Aquitaine,Dordogne,Bergerac,Les  Vaures,,,fouille
+571,506370.539,6421344.152,Aquitaine,Dordogne,Creysse,Déviation de la R.N. 21,,,fouille
+572,546771,6335990,Midi-Pyrénées,Tarn-et-Garonne,Moissac,Le Patus - rue de l'Abbaye,,,fouille
+573,566708.49,6221555.68,Midi-Pyrénées,Ariège,Le Mas-d'Azil,Grotte du Mas d'Azil,,,fouille
+574,574370.605,6278386.884,Languedoc-Roussillon,Aude,Narbonne,Tribunal d'instance,,,fouille
+575,577070,6794480,Centre,Eure-et-Loir,Alluyes,La Pierre Aiguë,,,fouille
+576,579618,6898536,Haute-Normandie,Eure,Aubevoye,La chartreuse,,,fouille
+577,600257,6803857,Centre,Eure-et-Loir,Allonnes,Contournement,,,fouille
+578,604375.361,7047575.41,Nord-Pas-de-Calais,Pas-de-Calais,Étaples,Chemin de la Motte Ouest,,,fouille
+579,605258,6798465,Centre,Eure-et-Loir,Prasville,Vers Chesnay - La romanisation de la Beauce à Prasville,,,fouille
+580,609143.973,7092827.37,Nord-Pas-de-Calais,Pas-de-Calais,Escalles,Mont d'Hubert,,,fouille
+581,616455.513,6761304.299,Centre,Loiret,Saran,Lac de la Médecinerie,,,fouille
+582,617981,6756227,Centre,Loiret,Orléans,Deuxième ligne du tramway - Place de Gaulle,,,fouille
+583,619624.564,7004320.804,Picardie,Somme,Caours,Eclipse,,,fouille
+584,634079.203,6867141.067,Ile-de-France,Yvelines,Saint-Germain-en-Laye,Domaine national : Petite Terrasse et Grand rond-point,,,fouille
+585,640005,6850980,Ile-de-France,Essonne,Saclay,"Val d'Albian, La Grande Mare, La Mare aux Saules",,,fouille
+586,647446,6858106,Ile-de-France,Hauts-de-Seine,Vanves,Rue Gaudray,,,fouille
+587,648493,6862623,Ile-de-France,Paris,Paris,Musée du Quai Branly,,,fouille
+588,648837,6885317,Ile-de-France,Val-d'Oise,Baillet-en-France,Centre de vacances CNPO,,,fouille
+589,651804,6862433,Ile-de-France,Paris,Paris,Rue de Rivoli,,,fouille
+590,651921.28,6860625.83,Ile-de-France,Paris,Paris,22 rue d'Ulm / 9-11 rue Pierre et Marie Curie / 193 rue Saint Jacques,,,fouille
+591,652736,6861014,Ile-de-France,Paris,Paris,Collège des Bernardins,,,fouille
+592,657870,6857662,Ile-de-France,Val-de-Marne,Saint-Maurice,"53-57, rue du Maréchal-Leclerc",,,fouille
+593,658727,6833715,Ile-de-France,Essonne,Lisses,ZAC du bois de Chaland,,,fouille
+594,658832,6874939,Ile-de-France,Val-d'Oise,Bonneuil-en-France,Zone de servitude ILS,,,fouille
+595,664602,6834711,Ile-de-France,Essonne,Saint-Pierre-du-Perray,"Le Buisson Ribeau, Lac VIII",,,fouille
+596,672812,6832684,Ile-de-France,Seine-et-Marne,Vert-Saint-Denis,"Saint-Clément, La Bichère",,,fouille
+597,675980.29,6435482.04,Languedoc-Roussillon,Pyrénées-Orientales,Amélie-les-Bains-Palalda,Camps de Las Basses,,,fouille
+598,682409,6862066,Ile-de-France,Seine-et-Marne,Montévrain,Les Vingt-deux-arpents,,,fouille
+599,687320.012,6924341.555,Picardie,Oise,Compiègne,29-33 rue Solférino,,,fouille
+600,694570,6963261,Picardie,Somme,Mesnil-Saint-Nicaise,Chemin Bezard,,,fouille
+601,699660.604,6992026.16,Picardie,Somme,Étricourt-Manancourt,Etricourt-Manancourt,,,fouille
+602,705683.565,6922434.437,Picardie,Oise,Attichy,Le Buissonnet,,,fouille
+603,714639.21,6252083.98,Languedoc-Roussillon,Hérault,Béziers,Le Crès Néolithique II,,,fouille
+604,717167.956,6520700.489,Auvergne,Puy-de-Dôme,Pont-du-Château,Champ Lamet 6-Gefco,,,fouille
+605,725508.399,6292594.56,Languedoc-Roussillon,Hérault,Lodève,Immeuble Barral Quartier Cathédral,,,fouille
+606,726802.406,6956418.595,Picardie,Aisne,Vendeuil,La Prairie de Montigny,,,fouille
+607,736551.98,7024454.6,Nord-Pas-de-Calais,Nord,Famars,La Rhonelle,,,fouille
+608,786215,6594849,Bourgogne,Saône-et-Loire,Paray-le-Monial,Aux origines de la basilique de Paray-le-Monial,,,fouille
+609,798605,6651724,Bourgogne,Saône-et-Loire,Autun,Faubourg d'Arroux,,,fouille
+610,800434.577,6651599.915,Bourgogne,Saône-et-Loire,Autun,Autun Pont l'Evêque,,,fouille
+611,848960,630360,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Saint-Rémy-de-Provence,Zac d'Ussol,,,fouille
+612,853770,6520385,Rhône-Alpes,Rhône,Décines-Charpieu,Le Montout OL Land TR. 1,,,fouille
+613,854220,6693746,Bourgogne,Côte-d'Or,Dijon,Boulevard de la Trémouille - Place de la République,,,fouille
+614,884414,6664200,Franche-Comté,Jura,Choisey,Choisey Les Champins,,,fouille
+615,892002.39,6247009.59,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,Collège du Vieux-Port,,,fouille
+616,892357.767,6247084.37,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,Maison diamantée,,,fouille
+617,892361.071,6247126.21,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,Pavillon Daviel,,,fouille
+618,893092.289,6247219.898,Provences-Alpes-Côte-d'Azur,Bouches-du-Rhône,Marseille,25  rue Thubaneau - Le jeu de paume,,,fouille
+619,896093.82,6294355.28,Provences-Alpes-Côte-d'Azur,Vaucluse,Villelaure,La Tuilière,,,fouille
+620,931476.771,6893907.317,Lorraine,Moselle,Metz,Rue Mazarin,,,fouille
+621,932400,6896200,Lorraine,Moselle,Metz,Larry,,,fouille
+622,933590,6849170,Lorraine,Meurthe-et-Moselle,Nancy,Îlot Berger-Levrault,,,fouille
+623,945800,6837600,Lorraine,Meurthe-et-Moselle,Rosières-aux-Salines,28-30 rue du Colonel Thiébaut,,,fouille
+624,1033204,6284746,Provences-Alpes-Côte-d'Azur,Alpes Maritimes,Antibes,Le pré-aux-Pêcheurs,,,fouille
+625,1050262.86,6841786.58,Alsace,Bas-Rhin,Strasbourg,Place du Château,,,fouille

@@ -1,0 +1,59 @@
+<!DOCTYPE html><html><head><title>R: Pop vs Soda vs Coke</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>pop_vs_soda</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Pop vs Soda vs Coke</h2>
+
+<h3>Description</h3>
+
+<p>Results of a volunteer survey on how people around the U.S. refer to fizzy cola drinks. The options are &quot;pop&quot;, &quot;soda&quot;, &quot;coke&quot;, or &quot;other&quot;.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>pop_vs_soda
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 374250 observations, one per survey respondent, and 4 variables:
+</p>
+
+<dl>
+<dt>state</dt><dd><p>the U.S. state in which the respondent resides</p>
+</dd>
+<dt>region</dt><dd><p>region in which the state falls (as defined by the U.S. Census)</p>
+</dd>
+<dt>word_for_cola</dt><dd><p>how the respondent refers to fizzy cola drinks</p>
+</dd>
+<dt>pop</dt><dd><p>whether or not the respondent refers to fizzy cola drinks as &quot;pop&quot;</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>The survey responses were obtained at <a href="https://popvssoda.com/">https://popvssoda.com/</a> which is maintained by Alan McConchie.
+</p>
+
+</main>
+
+</div>
+</body></html>

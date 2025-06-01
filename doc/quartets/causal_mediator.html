@@ -1,0 +1,62 @@
+<!DOCTYPE html><html><head><title>R: Mediator Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>causal_mediator</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Mediator Data</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains 100 observations, generated under the following mechanism:
+X ~ N(0, 1) (exposure)
+Z ~ X + N(0,1) (measured factor: mediator)
+Y ~ Z + N(0, 1) (outcome)
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>causal_mediator
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A dataframe with 100 rows and 3 variables:
+</p>
+
+<ul>
+<li> <p><code>exposure</code>: exposure
+</p>
+</li>
+<li> <p><code>covariate</code>: a known factor (mediator)
+</p>
+</li>
+<li> <p><code>outcome</code>: outcome
+</p>
+</li></ul>
+
+
+
+<h3>References</h3>
+
+<p>D'Agostino McGowan L, Barrett M (2023). Causal inference is not a statistical problem. Preprint arXiv:2304.02683v1.
+</p>
+
+</main>
+
+</div>
+</body></html>

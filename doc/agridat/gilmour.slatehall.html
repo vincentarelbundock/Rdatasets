@@ -1,0 +1,126 @@
+<!DOCTYPE html><html><head><title>R: Slate Hall Farm 1978</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gilmour.slatehall</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Slate Hall Farm 1978
+</h2>
+
+<h3>Description</h3>
+
+<p>Yields for a trial at Slate Hall Farm in 1978.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 150 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield (grams/plot)</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype factor, 25 levels</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>rep factor, 6 levels</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The trial was of spring wheat at Slate Hall Farm in 1978.  The
+experiment was a balanced lattice with 25 varieties in 6 replicates.
+The 'rep' labels are arbitrary (no rep labels appeared in the source
+data).  
+Each row within a rep is an incomplete block.
+The plot size was 1.5 meters by 4 meters.
+</p>
+<p>Field width: 10 plots x 4 m = 40 m
+</p>
+<p>Field length: 15 plots x 1.5 meters = 22.5 m
+</p>
+
+
+<h3>Source</h3>
+
+<p>Arthur R Gilmour and Brian R Cullis and Arunas P Verbyla (1997).
+Accounting for natural and extraneous variation in the analysis
+of field experiments.
+Journal of Agricultural, Biological, and Environmental
+Statistics, 2, 269-293.
+https://doi.org/10.2307/1400446
+</p>
+
+
+<h3>References</h3>
+
+<p>None.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(gilmour.slatehall)
+  dat &lt;- gilmour.slatehall
+
+  libs(desplot)
+  desplot(dat, yield ~ col * row,
+          aspect=22.5/40, num=gen, out1=rep, cex=1,
+          main="gilmour.slatehall")
+
+
+  if(require("asreml", quietly=TRUE)) {
+
+    libs(asreml,lucid)
+
+    # Model 4 of Gilmour et al 1997
+    dat &lt;- transform(dat, xf=factor(col), yf=factor(row))
+    dat &lt;- dat[order(dat$xf, dat$yf), ]
+    m4 &lt;- asreml(yield ~ gen + lin(row), data=dat,
+                 random = ~ dev(row) + dev(col),
+                 resid = ~ ar1(xf):ar1(yf))
+    # coef(m4)$fixed[1] # linear row
+    # [1] 31.72252 # (sign switch due to row ordering)
+    
+    lucid::vc(m4)
+    ##       effect component std.error z.ratio bound 
+    ##     dev(col)  2519      1959         1.3     P   0
+    ##     dev(row) 20290     10260         2       P   0
+    ##     xf:yf(R) 23950      4616         5.2     P   0
+    ## xf:yf!xf!cor     0.439     0.113     3.9     U   0
+    ## xf:yf!yf!cor     0.125     0.117     1.1     U   0
+    
+    plot(varioGram(m4), main="gilmour.slatehall")
+  }
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

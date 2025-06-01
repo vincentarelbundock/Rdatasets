@@ -1,0 +1,102 @@
+<!DOCTYPE html><html><head><title>R: A study of small-plots of old-growth Douglas Fir in Oregon.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>johnson.douglasfir</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+A study of small-plots of old-growth Douglas Fir in Oregon.
+</h2>
+
+<h3>Description</h3>
+
+<p>A study of small-plots of old-growth Douglas Fir in Oregon.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("johnson.douglasfir")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1600 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>volume</code></dt><dd><p>volume per plot</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>A study in 40 acres of old-growth Douglas-Fir near Eugene, Oregon. The
+area was divided into a 40-by-40 grid of plots, each 1/40 acre. The
+volume represents the total timber volume (Scribner Decimal C) of each
+1/40 acre plot. 
+</p>
+<p>The authors conclude a 1-chain by 3-chain 3/10 acre rectangle was most
+efficient for intensive cruise work.  
+</p>
+<p>To convert plot volume to total volume per acre, multiply by 40 (each
+plot is 1/40 acre) and multiply by 10 (correction for the Scribner scale).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Floyd A. Johnson, Homer J. Hixon. (1952).
+The most efficient size and shape of plot to use for cruising in
+old-growth Douglas-fir timber.
+Jour. Forestry, 50, 17-20.
+https://doi.org/10.1093/jof/50.1.17
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(agridat)
+data(johnson.douglasfir)
+dat &lt;- johnson.douglasfir
+
+# Average volume per acre. Johnson &amp; Hixon give 91000.
+# Transcription may have some errors...the pdf was blurry.
+mean(dat$volume) * 400
+# 91124 
+
+libs(lattice)
+levelplot(volume ~ col*row, dat, main="johnson.douglasfir", aspect=1)
+histogram( ~ volume, data=dat, main="johnson.douglasfir")
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

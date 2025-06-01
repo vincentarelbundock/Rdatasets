@@ -1,0 +1,115 @@
+<!DOCTYPE html><html><head><title>R: Big Word Club (BWC)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>big_word_club</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Big Word Club (BWC)</h2>
+
+<h3>Description</h3>
+
+<p>Data on the effectiveness of a digital learning program designed by the Abdul Latif Jameel Poverty Action Lab (J-PAL) to address disparities in vocabulary levels among children from households with different income levels.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>big_word_club
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 818 student-level observations and 31 variables:
+</p>
+
+<dl>
+<dt>participant_id</dt><dd><p>unique student id</p>
+</dd>
+<dt>treat</dt><dd><p>control group (0) or treatment group (1)</p>
+</dd>
+<dt>age_months</dt><dd><p>age in months</p>
+</dd>
+<dt>female</dt><dd><p>whether student identifies as female</p>
+</dd>
+<dt>kindergarten</dt><dd><p>grade level, pre-school (0) or kindergarten (1)</p>
+</dd>
+<dt>teacher_id</dt><dd><p>unique teacher id</p>
+</dd>
+<dt>school_id</dt><dd><p>unique school id</p>
+</dd>
+<dt>private_school</dt><dd><p>whether school is private</p>
+</dd>
+<dt>title1</dt><dd><p>whether school has Title 1 status</p>
+</dd>
+<dt>free_reduced_lunch</dt><dd><p>percent of school that receive free / reduced lunch</p>
+</dd>
+<dt>state</dt><dd><p>school location</p>
+</dd>
+<dt>esl_observed</dt><dd><p>whether student has ESL status</p>
+</dd>
+<dt>special_ed_observed</dt><dd><p>whether student has special education status</p>
+</dd>
+<dt>new_student</dt><dd><p>whether student enrolled after program began</p>
+</dd>
+<dt>distracted_a1</dt><dd><p>student's distraction level during assessment 1 (0 = not distracted; 1 = mildly distracted; 2 = moderately distracted; 3 = extremely distracted)</p>
+</dd>
+<dt>distracted_a2</dt><dd><p>same as distracted_a1 but during assessment 2</p>
+</dd>
+<dt>distracted_ppvt</dt><dd><p>same as distracted_a1 but during standardized assessment</p>
+</dd>
+<dt>score_a1</dt><dd><p>student score on BWC assessment 1</p>
+</dd>
+<dt>invalid_a1</dt><dd><p>whether student's score on assessment 1 was invalid</p>
+</dd>
+<dt>score_a2</dt><dd><p>student score on BWC assessment 2</p>
+</dd>
+<dt>invalid_a2</dt><dd><p>whether student's score on assessment 2 was invalid</p>
+</dd>
+<dt>score_ppvt</dt><dd><p>student score on standardized assessment</p>
+</dd>
+<dt>score_ppvt_age</dt><dd><p>score_ppvt adjusted for age</p>
+</dd>
+<dt>invalid_ppvt</dt><dd><p>whether student's score on standardized assessment was invalid</p>
+</dd>
+<dt>t_logins_april</dt><dd><p>number of teacher logins onto BWC system in April</p>
+</dd>
+<dt>t_logins_total</dt><dd><p>number of teacher logins onto BWC system during entire study</p>
+</dd>
+<dt>t_weeks_used</dt><dd><p>number of weeks of the BWC program that the classroom has completed</p>
+</dd>
+<dt>t_words_learned</dt><dd><p>teacher response to the number of words students had learned through BWC (0 = almost none; 1 = 1 to 5; 2 = 6 to 10)</p>
+</dd>
+<dt>t_financial_struggle</dt><dd><p>teacher response to the number of their students that have families that experience financial struggle</p>
+</dd>
+<dt>t_misbehavior</dt><dd><p>teacher response to frequency that student misbehavior interferes with teaching (0 = never; 1 = rarely; 2 = occasionally; 3 = frequently)</p>
+</dd>
+<dt>t_years_experience</dt><dd><p>teacher's number of years of teaching experience</p>
+</dd>
+<dt>score_pct_change</dt><dd><p>percent change in scores before and after the program</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>These data correspond to the following study: Ariel Kalil, Susan Mayer, Philip Oreopoulos (2020). Closing the word gap with Big Word Club: Evaluating the Impact of a Tech-Based Early Childhood Vocabulary Program. Data was obtained through the was obtained through the Inter-university Consortium for Political and Social Research (ICPSR) <a href="https://www.openicpsr.org/openicpsr/project/117330/version/V1/view/">https://www.openicpsr.org/openicpsr/project/117330/version/V1/view/</a>.
+</p>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of wheat</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>ansari.wheat.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of wheat
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of wheat in India in 1940.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("ansari.wheat.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 768 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield of grain per plot, in half-ounces</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>An experiment was conducted at the Government Research Farm, Raya
+(Muttra District), during the rainy season of 1939-40. 
+</p>
+<p>&quot;Wheat was sown over an area of 180 ft. x 243 ft. with 324 rows on a
+field of average fertility. It had wheat during 1938-39 rabi and was
+fallow during 1939-40 kharif. The seed was sown behind desi plough in
+rows 9 inches apart, the length of each row being 180 feet&quot;.
+</p>
+<p>&quot;At the time of harvest, 18 rows on both sides and 10 feet at the end of
+the field were discarded to eliminate border effects and an area of
+160 feet x 216 feet with 288 rows was harvested in small units, each
+being 2 feet 3 inches broad with three rows 20 feet long. There were 96
+units across the rows and eight units along the rows. The total number
+of unit plots thus obtained was 768. The yield of grain for each unit
+plot was weighed and recorded separately and is given in the appendix.&quot;
+</p>
+<p>Field width: 96 plots * 2.25 feet = 216 feet.
+</p>
+<p>Field length: 8 plots * 20 feet = 160 feet.
+</p>
+<p>Comment: There seems to be a strong cyclical patern to the fertility gradient.
+&quot;History of the field reveals no explanation for this phenomenon, as an average
+field usually found on the farm was selected for the trial.&quot;
+</p>
+
+
+<h3>Source</h3>
+
+<p>Ansari, M. A. A., and G. K. Sant (1943).
+A Study of Soil Heterogeneity in Relation to Size and Shape of Plots in a Wheat Field at Raya (Muhra District).
+Ind. J. Agr. Sci, 13, 652-658.
+https://archive.org/details/in.ernet.dli.2015.271748
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(ansari.wheat.uniformity)
+  dat &lt;- ansari.wheat.uniformity
+
+  # match Ansari figure 3
+  libs(desplot)
+  desplot(dat, yield ~ col*row,
+          flip=TRUE, aspect=216/160, # true aspect
+          main="ansari.wheat.uniformity") 
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html><html><head><title>R: Intercropping experiment of sorghum/cowpea</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>petersen.sorghum.cowpea</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Intercropping experiment of sorghum/cowpea
+</h2>
+
+<h3>Description</h3>
+
+<p>Intercropping experiment of sorghum/cowpea.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("petersen.sorghum.cowpea")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 18 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>block</code></dt><dd><p>block</p>
+</dd>
+<dt><code>srows</code></dt><dd><p>sorghum rows</p>
+</dd>
+<dt><code>crows</code></dt><dd><p>cowpea rows</p>
+</dd>
+<dt><code>syield</code></dt><dd><p>sorghum yield, kg/ha</p>
+</dd>
+<dt><code>cyield</code></dt><dd><p>cowpea yield, kg/ha</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>An intercropping experiment in Tanzania.  The treatments consisted of
+four ratios of sorghum rows to cowpea rows as 1:4, 2:3, 3:2, 4:1.
+</p>
+<p>The sole-crop yields with 5 rows per crop are also given (not part of
+the blocks).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Roger G Petersen (1994).
+Agricultural Field Experiments.
+Marcel Dekker Inc, New York.
+Page 372.
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+libs(agridat)
+data(petersen.sorghum.cowpea)
+dat &lt;- petersen.sorghum.cowpea
+
+# Petersen figure 10.4a
+tmp &lt;- dat 
+
+with(tmp, plot(srows, syield + cyield,
+               col="blue", type='l', xlim=c(0,5), ylim=c(0,4000)) )
+with(tmp, lines(srows, syield) )
+with(tmp, lines(srows, cyield, col="red") )
+title("Cow Pea (red), Sorghum (black), Total (blue)")
+title("petersen.sorghum.cowpea", line=0.5)
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

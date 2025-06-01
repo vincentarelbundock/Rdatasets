@@ -1,0 +1,117 @@
+<!DOCTYPE html><html><head><title>R: Insecticide treatment effectiveness</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gomez.nonnormal1</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Insecticide treatment effectiveness
+</h2>
+
+<h3>Description</h3>
+
+<p>Insecticide treatment effectiveness
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("gomez.nonnormal1")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 36 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>trt</code></dt><dd><p>insecticidal treatment</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>replicate</p>
+</dd>
+<dt><code>larvae</code></dt><dd><p>number of larvae</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Nine treatments (including the control, T9) were used on four
+replicates.  The number of living insect larvae were recorded.
+</p>
+<p>The data show signs of non-normality, and a log transform was used by Gomez.
+</p>
+<p>Used with permission of Kwanchai Gomez.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Gomez, K.A. and Gomez, A.A.. 1984,
+Statistical Procedures for Agricultural Research.
+Wiley-Interscience.
+Page 300.
+</p>
+
+
+<h3>References</h3>
+
+<p>None.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(agridat)
+data(gomez.nonnormal1)
+dat &lt;- gomez.nonnormal1
+
+# Gomez figure 7.3
+## libs(dplyr)
+## dat2 &lt;- dat %&gt;% group_by(trt)
+## dat2 &lt;- summarize(dat2, mn=mean(larvae), rng=diff(range(larvae)))
+## plot(rng ~ mn, data=dat2,
+##      xlab="mean number of larvae", ylab="range of number of larvae",
+##      main="gomez.nonnormal1")
+
+
+# Because some of the original values are less than 10,
+# the transform used is log10(x+1) instead of log10(x).
+dat &lt;- transform(dat, tlarvae=log10(larvae+1))
+
+# QQ plots for raw/transformed data
+libs(reshape2, lattice)
+qqmath( ~ value|variable, data=melt(dat),
+       main="gomez.nonnormal1 - raw/transformed QQ plot",
+       scales=list(relation="free"))
+
+
+# Gomez table 7.16
+m1 &lt;- lm(tlarvae ~ rep + trt, data=dat)
+anova(m1)
+## Response: tlarvae
+##           Df Sum Sq Mean Sq F value    Pr(&gt;F)
+## rep        3 0.9567 0.31889  3.6511 0.0267223 *
+## trt        8 3.9823 0.49779  5.6995 0.0004092 ***
+## Residuals 24 2.0961 0.08734
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

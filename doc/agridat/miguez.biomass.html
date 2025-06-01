@@ -1,0 +1,151 @@
+<!DOCTYPE html><html><head><title>R: Biomass of 3 crops in Greece</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>miguez.biomass</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Biomass of 3 crops in Greece
+</h2>
+
+<h3>Description</h3>
+
+<p>Biomass of 3 crops in Greece
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("miguez.biomass")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 212 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>doy</code></dt><dd><p>day of year</p>
+</dd>
+<dt><code>block</code></dt><dd><p>block, 1-4</p>
+</dd>
+<dt><code>input</code></dt><dd><p>management input, Lo/Hi</p>
+</dd>
+<dt><code>crop</code></dt><dd><p>crop type</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield tons/ha</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Experiment was conducted in Greece in 2009. Yield values are
+destructive Measurements of above-ground biomass for fiber sorghum,
+maize, sweet sorghum.
+</p>
+<p>Hi management refers to weekly irrigation and high nitrogen applications.
+Lo management refers to bi-weekly irrigation and low nitrogen.
+</p>
+<p>The experiment had 4 blocks.
+</p>
+<p>Crops were planted on DOY 141 with 0 yield.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Fernando E. Miguez. R package nlraa.
+https://github.com/femiguez/nlraa
+</p>
+
+
+<h3>References</h3>
+
+<p>Sotirios V. Archontoulis and Fernando E. Miguez (2013).
+Nonlinear Regression Models and Applications in Agricultural Research.
+<em>Agron. Journal</em>, 105:1-13.
+https://doi.org/10.2134/agronj2012.0506
+</p>
+<p>Hamze Dokoohaki.
+https://www.rpubs.com/Para2x/100378
+https://rstudio-pubs-static.s3.amazonaws.com/100440_26eb9108524c4cc99071b0db8e648e7d.html
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(miguez.biomass)
+  dat &lt;- miguez.biomass
+  dat &lt;- subset(dat, doy &gt; 141)
+
+  libs(lattice)
+  xyplot(yield ~ doy | crop*input,  data = dat,
+         main="miguez.biomass",
+         groups = crop,
+         type=c('p','smooth'),
+         auto.key=TRUE)
+
+
+  # ----------
+  # Archontoulis et al fit some nonlinear models.
+  # Here is a simple example which does NOT account for crop/input
+  # Slow, so dont run
+  if(0){
+    dat2 &lt;- transform(dat, eu = paste(block, input, crop))
+    dat2 &lt;- groupedData(yield ~ doy | eu, data = dat2)
+    fit.lis &lt;- nlsList(yield ~ SSfpl(doy, A, B, xmid, scal),
+                       data = dat2,
+                       control=nls.control(maxiter=100))
+    print(plot(intervals(fit.lis)))
+    
+    libs(nlme)
+    # use all data to get initial values
+    inits &lt;- getInitial(yield ~ SSfpl(doy, A, B, xmid, scal), data = dat2)
+    inits
+    xvals &lt;- 150:325
+    y1 &lt;- with(as.list(inits), SSfpl(xvals, A, B, xmid, scal))
+    plot(yield ~ doy, dat2)
+    lines(xvals,y1)
+    
+    # must have groupedData object to use augPred
+    dat2 &lt;- groupedData(yield ~ doy|eu, data=dat2)
+    plot(dat2)
+    
+    # without 'random', all effects are included in 'random'
+    m1 &lt;- nlme(yield ~ SSfpl(doy, A, B, xmid,scale),
+               data= dat2,
+               fixed= A + B + xmid + scale ~ 1,
+               # random = B ~ 1|eu, # to make only B random
+               random = A + B + xmid + scale ~ 1|eu,
+               start=inits)
+    fixef(m1)
+    summary(m1)
+    plot(augPred(m1, level=0:1),
+         main="miguez.biomass - observed/predicted data") # only works with groupedData object
+  }
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

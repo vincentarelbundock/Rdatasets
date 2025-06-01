@@ -1,0 +1,86 @@
+<!DOCTYPE html><html><head><title>R: Claims Longitudinal</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>ClaimsLong</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Claims Longitudinal
+</h2>
+
+<h3>Description</h3>
+
+<p>This is a simulated data set, based on the car insurance data set used throughout the text.
+There are 40000 policies over 3 years, giving 120000 records.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(ClaimsLong)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 120000 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>policyID</code></dt><dd><p>number of policy, a numeric vector</p>
+</dd>
+<dt><code>agecat</code></dt><dd><p>driver's age category: 1 (youngest), 2, 3, 4, 5, 6, a numeric vector</p>
+</dd>
+<dt><code>valuecat</code></dt><dd><p>vehicle value, in categories 1,...,6. (Category 1 has been recoded as 9.), a numeric vector</p>
+</dd>
+<dt><code>period</code></dt><dd><p>1, 2, 3, a numeric vector</p>
+</dd>
+<dt><code>numclaims</code></dt><dd><p>number of claims, a numeric vector</p>
+</dd>
+<dt><code>claim</code></dt><dd><p>a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset &quot;Longitudinal Claims&quot;
+</p>
+
+
+<h3>Source</h3>
+
+<p>http://www.businessandeconomics.mq.edu.au/our_departments/Applied_Finance_and_Actuarial_Studies/
+</p>
+<p>research/books/GLMsforInsuranceData/data_sets</p>
+
+
+<h3>References</h3>
+
+<p>De Jong P., Heller G.Z. (2008), Generalized linear models for insurance data,
+Cambridge University Press
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(ClaimsLong)
+## maybe str(ClaimsLong) ; plot(ClaimsLong) ...
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

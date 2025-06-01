@@ -1,0 +1,104 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of rice, split-plot design</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gomez.multilocsplitplot</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of rice, split-plot design
+</h2>
+
+<h3>Description</h3>
+
+<p>Grain yield was measured at 3 locations with 2 reps per location.
+Within each rep, the main plot was 6 nitrogen fertilizer treatments
+and the sub plot was 2 rice varieties.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 108 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>loc</code></dt><dd><p>location, 3 levels</p>
+</dd>
+<dt><code>nitro</code></dt><dd><p>nitrogen in kg/ha</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>replicate, 2 levels</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype, 2 levels</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, kg/ha</p>
+</dd>
+</dl>
+
+<p>Used with permission of Kwanchai Gomez.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Gomez, K.A. and Gomez, A.A.. 1984,
+Statistical Procedures for Agricultural Research.
+Wiley-Interscience.
+Page 339.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+library(agridat)
+data(gomez.multilocsplitplot)
+dat &lt;- gomez.multilocsplitplot
+dat$nf &lt;- factor(dat$nitro)
+
+# Gomez figure 8.3
+libs(lattice)
+xyplot(yield~nitro, dat, group=loc, type=c('p','smooth'), auto.key=TRUE,
+       main="gomez.multilocsplitplot")
+
+# AOV
+# Be careful to use the right stratum, 'nf' appears in both strata.
+# Still not quite the same as Gomez table 8.21
+t1 &lt;- terms(yield ~ loc * nf * gen + Error(loc:rep:nf),
+            "Error", keep.order=TRUE)
+m1 &lt;- aov(t1, data=dat)
+summary(m1)
+
+  # F values are somewhat similar to Gomez Table 8.21
+  libs(lme4)
+  m2 &lt;- lmer(yield ~ loc*nf*gen + (1|loc/rep/nf), dat)
+  anova(m2)
+  ## Analysis of Variance Table
+  ##            Df   Sum Sq  Mean Sq F value
+  ## loc         2   117942    58971  0.1525
+  ## nf          5 72841432 14568286 37.6777
+  ## gen         1  7557570  7557570 19.5460
+  ## loc:nf     10 10137188  1013719  2.6218
+  ## loc:gen     2  4270469  2135235  5.5223
+  ## nf:gen      5  1501767   300353  0.7768
+  ## loc:nf:gen 10  1502273   150227  0.3885
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

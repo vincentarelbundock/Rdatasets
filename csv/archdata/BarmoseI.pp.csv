@@ -1,0 +1,474 @@
+rownames,North,East,Class,Label
+1,5.5,3.75,1,Scrapers
+2,7.92,1.35,1,Scrapers
+3,10.5,1.92,1,Scrapers
+4,8.5,2.42,1,Scrapers
+5,8.28,3.42,1,Scrapers
+6,8.35,3.85,1,Scrapers
+7,9.28,3.85,1,Scrapers
+8,7.78,4.42,1,Scrapers
+9,7.92,4.21,1,Scrapers
+10,8.31,4.17,1,Scrapers
+11,8.35,4.45,1,Scrapers
+12,8.21,4.64,1,Scrapers
+13,9.5,5,1,Scrapers
+14,10.35,5,1,Scrapers
+15,11.35,4.42,1,Scrapers
+16,11.28,4.71,1,Scrapers
+17,11.07,4.92,1,Scrapers
+18,8.28,5.45,1,Scrapers
+19,8.31,5.74,1,Scrapers
+20,8.67,5.71,1,Scrapers
+21,8.81,5.64,1,Scrapers
+22,10.92,5.21,1,Scrapers
+23,10.95,5.42,1,Scrapers
+24,11.35,5.42,1,Scrapers
+25,11.64,5.42,1,Scrapers
+26,7.28,6.14,1,Scrapers
+27,7.6,6.07,1,Scrapers
+28,9.64,6.38,1,Scrapers
+29,6.95,7.57,1,Scrapers
+30,7.5,7.71,1,Scrapers
+31,8.17,7.57,1,Scrapers
+32,8.5,7.31,1,Scrapers
+33,8.95,7.24,1,Scrapers
+34,8.64,7.78,1,Scrapers
+35,8.88,7.85,1,Scrapers
+36,11.71,8.1,1,Scrapers
+37,9.92,9.07,1,Scrapers
+38,7.05,10.92,1,Scrapers
+39,7.07,2.67,2,Burins
+40,9.38,2.5,2,Burins
+41,9.57,2.35,2,Burins
+42,7.92,4.35,2,Burins
+43,10.5,4.88,2,Burins
+44,11.64,4.9,2,Burins
+45,12.17,4.64,2,Burins
+46,10.71,5.31,2,Burins
+47,11.28,5.07,2,Burins
+48,7.57,6.21,2,Burins
+49,8.21,6.24,2,Burins
+50,8.35,6.17,2,Burins
+51,8.35,6.35,2,Burins
+52,8.64,6.42,2,Burins
+53,8.88,6.53,2,Burins
+54,9,6.74,2,Burins
+55,9.81,6.42,2,Burins
+56,9.78,6.74,2,Burins
+57,9.85,6.95,2,Burins
+58,5.74,6.71,2,Burins
+59,5.67,7.42,2,Burins
+60,6.45,8.31,2,Burins
+61,5.57,9.6,2,Burins
+62,9.81,9.64,2,Burins
+63,10,10.28,2,Burins
+64,10.14,2.24,3,Lanceolate Microliths
+65,8.24,3.95,3,Lanceolate Microliths
+66,8.2,4.17,3,Lanceolate Microliths
+67,8.5,4.42,3,Lanceolate Microliths
+68,8.71,4.35,3,Lanceolate Microliths
+69,11.14,4.85,3,Lanceolate Microliths
+70,5.57,5.53,3,Lanceolate Microliths
+71,7.92,5.14,3,Lanceolate Microliths
+72,8.28,5.57,3,Lanceolate Microliths
+73,8.24,5.74,3,Lanceolate Microliths
+74,9.35,5.5,3,Lanceolate Microliths
+75,9.31,5.95,3,Lanceolate Microliths
+76,9.95,5,3,Lanceolate Microliths
+77,10.21,5.21,3,Lanceolate Microliths
+78,11.15,5,3,Lanceolate Microliths
+79,11.38,5.42,3,Lanceolate Microliths
+80,11.75,5.6,3,Lanceolate Microliths
+81,7.92,6.71,3,Lanceolate Microliths
+82,8.53,6.05,3,Lanceolate Microliths
+83,9.7,6.45,3,Lanceolate Microliths
+84,9.6,6.85,3,Lanceolate Microliths
+85,10.1,6.5,3,Lanceolate Microliths
+86,10.28,6.25,3,Lanceolate Microliths
+87,10.45,6.35,3,Lanceolate Microliths
+88,11.45,6.85,3,Lanceolate Microliths
+89,7.64,7,3,Lanceolate Microliths
+90,7.42,7.9,3,Lanceolate Microliths
+91,7.63,7.24,3,Lanceolate Microliths
+92,7.95,7.3,3,Lanceolate Microliths
+93,8.28,7.25,3,Lanceolate Microliths
+94,8.28,7.7,3,Lanceolate Microliths
+95,8.6,7.35,3,Lanceolate Microliths
+96,8.8,7.35,3,Lanceolate Microliths
+97,8.65,7.85,3,Lanceolate Microliths
+98,7.95,9.35,3,Lanceolate Microliths
+99,10.9,9.6,3,Lanceolate Microliths
+100,9.65,5.25,4,Microburins
+101,10,5.17,4,Microburins
+102,10.74,5.95,4,Microburins
+103,11.05,5.88,4,Microburins
+104,7.75,6.28,4,Microburins
+105,8.7,6.28,4,Microburins
+106,8.75,6.78,4,Microburins
+107,9.05,6.75,4,Microburins
+108,9.28,6.28,4,Microburins
+109,9.35,6.5,4,Microburins
+110,9.8,6.25,4,Microburins
+111,10.75,6.28,4,Microburins
+112,11.15,6.5,4,Microburins
+113,11.7,6.28,4,Microburins
+114,7.3,7.7,4,Microburins
+115,9.75,7.25,4,Microburins
+116,9.8,1.75,5,Flake Axes
+117,10.42,2.17,5,Flake Axes
+118,6.57,3.75,5,Flake Axes
+119,7.78,3.35,5,Flake Axes
+120,7.75,3.57,5,Flake Axes
+121,8.35,3.35,5,Flake Axes
+122,8.57,3.7,5,Flake Axes
+123,8.71,3.57,5,Flake Axes
+124,8.8,3.67,5,Flake Axes
+125,8.78,3.9,5,Flake Axes
+126,9,3.8,5,Flake Axes
+127,9.2,3.75,5,Flake Axes
+128,8.38,4.3,5,Flake Axes
+129,8.57,4.1,5,Flake Axes
+130,9,4.35,5,Flake Axes
+131,4.8,5.1,5,Flake Axes
+132,10.57,5.17,5,Flake Axes
+133,10.85,5.95,5,Flake Axes
+134,11.5,5.85,5,Flake Axes
+135,8.1,6.7,5,Flake Axes
+136,8.45,6.28,5,Flake Axes
+137,9,6.38,5,Flake Axes
+138,7.53,7.57,5,Flake Axes
+139,9.05,7.35,5,Flake Axes
+140,10.38,9.95,5,Flake Axes
+141,9.35,10.7,5,Flake Axes
+142,9.57,10.67,5,Flake Axes
+143,10.3,10.8,5,Flake Axes
+144,9.1,4.1,6,Core Axes
+145,10.5,5.15,6,Core Axes
+146,8.6,6.4,6,Core Axes
+147,11.3,8.8,6,Core Axes
+148,7.6,0.67,7,Square Knives
+149,7.07,1.64,7,Square Knives
+150,11.24,1.64,7,Square Knives
+151,11.21,1.95,7,Square Knives
+152,6.64,2.71,7,Square Knives
+153,6.78,2.88,7,Square Knives
+154,7.28,2.64,7,Square Knives
+155,10.1,2.3,7,Square Knives
+156,10.1,2.6,7,Square Knives
+157,10.5,2.74,7,Square Knives
+158,10.42,2.78,7,Square Knives
+159,10.45,2.9,7,Square Knives
+160,10.05,2.8,7,Square Knives
+161,7,3.81,7,Square Knives
+162,7.45,3.85,7,Square Knives
+163,8.15,3.8,7,Square Knives
+164,8.15,3.9,7,Square Knives
+165,8.95,3.1,7,Square Knives
+166,9.05,3.95,7,Square Knives
+167,9.15,3.85,7,Square Knives
+168,10.95,3.53,7,Square Knives
+169,11.6,3.05,7,Square Knives
+170,5.42,4.81,7,Square Knives
+171,5.7,4.95,7,Square Knives
+172,7,4.07,7,Square Knives
+173,8.1,4.1,7,Square Knives
+174,8.1,4.65,7,Square Knives
+175,8.1,4.95,7,Square Knives
+176,8.25,4.1,7,Square Knives
+177,8.21,4.92,7,Square Knives
+178,8.35,4.35,7,Square Knives
+179,8.25,4.95,7,Square Knives
+180,8.5,4.6,7,Square Knives
+181,8.65,4.65,7,Square Knives
+182,8.7,4.75,7,Square Knives
+183,8.85,4.15,7,Square Knives
+184,8.85,4.28,7,Square Knives
+185,8.8,4.8,7,Square Knives
+186,8.8,4.85,7,Square Knives
+187,9.35,4.1,7,Square Knives
+188,9.67,4.25,7,Square Knives
+189,4.25,4.9,7,Square Knives
+190,4.35,4.8,7,Square Knives
+191,4.8,4.42,7,Square Knives
+192,4.85,4.5,7,Square Knives
+193,4.9,4.57,7,Square Knives
+194,4.95,4.3,7,Square Knives
+195,11.1,4.67,7,Square Knives
+196,11.15,4.95,7,Square Knives
+197,11.25,4.8,7,Square Knives
+198,11.25,4.98,7,Square Knives
+199,11.53,4.92,7,Square Knives
+200,11.7,4.8,7,Square Knives
+201,11.65,4.98,7,Square Knives
+202,12.15,4.92,7,Square Knives
+203,6.53,5.88,7,Square Knives
+204,6.85,5.92,7,Square Knives
+205,6.95,5.85,7,Square Knives
+206,7.42,5.42,7,Square Knives
+207,7.42,5.95,7,Square Knives
+208,7.8,5.45,7,Square Knives
+209,8.05,5.85,7,Square Knives
+210,8.1,5.75,7,Square Knives
+211,8.2,5.15,7,Square Knives
+212,8.15,5.85,7,Square Knives
+213,8.3,5.25,7,Square Knives
+214,8.3,5.5,7,Square Knives
+215,8.3,5.9,7,Square Knives
+216,8.35,5.9,7,Square Knives
+217,8.45,5.8,7,Square Knives
+218,8.53,5.3,7,Square Knives
+219,8.95,5.53,7,Square Knives
+220,9.5,5.35,7,Square Knives
+221,9.85,5.35,7,Square Knives
+222,9.8,5.1,7,Square Knives
+223,10.35,5.95,7,Square Knives
+224,10.57,5.75,7,Square Knives
+225,10.57,5.8,7,Square Knives
+226,10.65,5.25,7,Square Knives
+227,10.67,5.53,7,Square Knives
+228,10.7,5.6,7,Square Knives
+229,10.7,5.67,7,Square Knives
+230,10.67,5.8,7,Square Knives
+231,10.8,5.2,7,Square Knives
+232,10.8,5.8,7,Square Knives
+233,10.88,5.8,7,Square Knives
+234,10.92,5.95,7,Square Knives
+235,11,5.95,7,Square Knives
+236,11.1,5.95,7,Square Knives
+237,11.3,5.35,7,Square Knives
+238,11.3,5.38,7,Square Knives
+239,11.3,5.92,7,Square Knives
+240,11.45,5.9,7,Square Knives
+241,11.5,5.1,7,Square Knives
+242,11.57,5.1,7,Square Knives
+243,11.85,5.35,7,Square Knives
+244,12.35,5.3,7,Square Knives
+245,2.64,6.45,7,Square Knives
+246,4.57,6.15,7,Square Knives
+247,6.3,6.1,7,Square Knives
+248,6.75,6.25,7,Square Knives
+249,7.25,6.35,7,Square Knives
+250,7.4,6.42,7,Square Knives
+251,7.6,6.8,7,Square Knives
+252,7.7,6.15,7,Square Knives
+253,7.8,6.25,7,Square Knives
+254,7.95,6.95,7,Square Knives
+255,8.2,6.2,7,Square Knives
+256,8.25,6.25,7,Square Knives
+257,8.75,6.8,7,Square Knives
+258,8.8,6.3,7,Square Knives
+259,8.9,6.6,7,Square Knives
+260,9,6.6,7,Square Knives
+261,9.15,6.53,7,Square Knives
+262,9.3,6.78,7,Square Knives
+263,9.35,6.67,7,Square Knives
+264,9.35,6.5,7,Square Knives
+265,9.6,6.5,7,Square Knives
+266,9.7,6.5,7,Square Knives
+267,9.5,6.9,7,Square Knives
+268,9.85,6.6,7,Square Knives
+269,10.1,6.3,7,Square Knives
+270,10.14,6.1,7,Square Knives
+271,10.25,6.25,7,Square Knives
+272,10.25,6.35,7,Square Knives
+273,10.25,6.75,7,Square Knives
+274,10.4,6.1,7,Square Knives
+275,10.57,6.05,7,Square Knives
+276,10.5,6.35,7,Square Knives
+277,10.7,6.25,7,Square Knives
+278,10.85,6.15,7,Square Knives
+279,11.15,6.3,7,Square Knives
+280,11.15,6.5,7,Square Knives
+281,11.25,6.25,7,Square Knives
+282,11.2,6.3,7,Square Knives
+283,11.2,6.35,7,Square Knives
+284,11.2,6.5,7,Square Knives
+285,11.2,6.64,7,Square Knives
+286,11.2,6.75,7,Square Knives
+287,11.35,6.05,7,Square Knives
+288,11.35,6.2,7,Square Knives
+289,11.4,6.3,7,Square Knives
+290,11.38,6.35,7,Square Knives
+291,11.57,6.1,7,Square Knives
+292,11.55,6.2,7,Square Knives
+293,11.57,6.3,7,Square Knives
+294,11.78,6.15,7,Square Knives
+295,11.75,6.2,7,Square Knives
+296,11.6,6.9,7,Square Knives
+297,12.1,6.35,7,Square Knives
+298,12.25,6.25,7,Square Knives
+299,12.5,6.3,7,Square Knives
+300,12.35,6.57,7,Square Knives
+301,6.3,7.75,7,Square Knives
+302,6.35,7.95,7,Square Knives
+303,6.67,7.1,7,Square Knives
+304,7.8,7.75,7,Square Knives
+305,7.85,7.92,7,Square Knives
+306,7.95,7.05,7,Square Knives
+307,7.98,7.25,7,Square Knives
+308,8.1,7.92,7,Square Knives
+309,8.2,7.1,7,Square Knives
+310,8.25,7.25,7,Square Knives
+311,8.15,7.6,7,Square Knives
+312,8.25,7.75,7,Square Knives
+313,8.57,7.5,7,Square Knives
+314,8.6,7.8,7,Square Knives
+315,8.95,7.3,7,Square Knives
+316,9.3,7.25,7,Square Knives
+317,9.42,7.2,7,Square Knives
+318,9.53,7.05,7,Square Knives
+319,9.67,7.05,7,Square Knives
+320,9.78,7.05,7,Square Knives
+321,9.88,7.1,7,Square Knives
+322,9.64,7.7,7,Square Knives
+323,10.7,7.25,7,Square Knives
+324,11.25,7.25,7,Square Knives
+325,7.25,8.25,7,Square Knives
+326,7.5,8.35,7,Square Knives
+327,8.45,8.35,7,Square Knives
+328,8.9,8.6,7,Square Knives
+329,9.2,8.8,7,Square Knives
+330,10.2,8.25,7,Square Knives
+331,10.5,9.9,7,Square Knives
+332,4.8,10.8,7,Square Knives
+333,5.3,10.3,7,Square Knives
+334,5.3,10.75,7,Square Knives
+335,7.7,10.95,7,Square Knives
+336,10,10.67,7,Square Knives
+337,10.64,10.15,7,Square Knives
+338,11.15,10.15,7,Square Knives
+339,11.25,10.2,7,Square Knives
+340,10.15,2.8,8,Blade/Flake Knives
+341,7.75,3.7,8,Blade/Flake Knives
+342,9.3,3.8,8,Blade/Flake Knives
+343,8.3,4.67,8,Blade/Flake Knives
+344,9.15,4.15,8,Blade/Flake Knives
+345,8.5,5.7,8,Blade/Flake Knives
+346,10.5,5.1,8,Blade/Flake Knives
+347,11.5,5.3,8,Blade/Flake Knives
+348,7.75,6.3,8,Blade/Flake Knives
+349,8.95,6.57,8,Blade/Flake Knives
+350,9.15,6.5,8,Blade/Flake Knives
+351,10.05,6.9,8,Blade/Flake Knives
+352,11.25,6.07,8,Blade/Flake Knives
+353,7.65,7.3,8,Blade/Flake Knives
+354,10.05,7.8,8,Blade/Flake Knives
+355,9.15,8,8,Blade/Flake Knives
+356,12.42,8.42,8,Blade/Flake Knives
+357,12.42,10.2,8,Blade/Flake Knives
+358,8.67,4.8,9,Denticulated/Notched Pieces
+359,11.25,4.85,9,Denticulated/Notched Pieces
+360,5.4,5.5,9,Denticulated/Notched Pieces
+361,7.7,5.42,9,Denticulated/Notched Pieces
+362,7.75,5.9,9,Denticulated/Notched Pieces
+363,8.05,5.9,9,Denticulated/Notched Pieces
+364,7.15,6,9,Denticulated/Notched Pieces
+365,5,6.85,9,Denticulated/Notched Pieces
+366,8.3,6.15,9,Denticulated/Notched Pieces
+367,8.2,6.3,9,Denticulated/Notched Pieces
+368,8.53,6.85,9,Denticulated/Notched Pieces
+369,8.75,6.7,9,Denticulated/Notched Pieces
+370,8.95,6.85,9,Denticulated/Notched Pieces
+371,9.3,6.75,9,Denticulated/Notched Pieces
+372,9.7,6.2,9,Denticulated/Notched Pieces
+373,9.9,6.15,9,Denticulated/Notched Pieces
+374,10.55,6.05,9,Denticulated/Notched Pieces
+375,11.64,6.25,9,Denticulated/Notched Pieces
+376,12,6,9,Denticulated/Notched Pieces
+377,13.15,6.25,9,Denticulated/Notched Pieces
+378,7.64,7.8,9,Denticulated/Notched Pieces
+379,11.2,7.2,9,Denticulated/Notched Pieces
+380,5.35,8.15,9,Denticulated/Notched Pieces
+381,5,10,9,Denticulated/Notched Pieces
+382,5.7,10.8,9,Denticulated/Notched Pieces
+383,9.8,10.7,9,Denticulated/Notched Pieces
+384,7.5,0.8,10,Cores
+385,7.1,1.17,10,Cores
+386,9.6,1.75,10,Cores
+387,10.25,1.35,10,Cores
+388,8.4,2.3,10,Cores
+389,10.25,2.25,10,Cores
+390,10.55,2.25,10,Cores
+391,10.67,2.1,10,Cores
+392,10.55,2.8,10,Cores
+393,11.1,2.2,10,Cores
+394,11.25,2.45,10,Cores
+395,7.3,3.67,10,Cores
+396,7.5,3.6,10,Cores
+397,7.65,3.5,10,Cores
+398,7.75,3.45,10,Cores
+399,7.7,3.7,10,Cores
+400,8.95,3.9,10,Cores
+401,11.75,3.25,10,Cores
+402,3.7,4.15,10,Cores
+403,7.8,4,10,Cores
+404,8,4.1,10,Cores
+405,8.15,4.4,10,Cores
+406,8.1,4.7,10,Cores
+407,8.6,4.3,10,Cores
+408,8.7,4.65,10,Cores
+409,9.15,4.15,10,Cores
+410,10.85,4.4,10,Cores
+411,11.7,4.92,10,Cores
+412,11.64,4.7,10,Cores
+413,11.42,4.45,10,Cores
+414,12.1,4.9,10,Cores
+415,4.75,5.92,10,Cores
+416,5.4,5.2,10,Cores
+417,5.42,5.42,10,Cores
+418,8.25,5.35,10,Cores
+419,9,5.05,10,Cores
+420,9.25,5.64,10,Cores
+421,11.5,5.05,10,Cores
+422,11.6,5.1,10,Cores
+423,11.8,5.4,10,Cores
+424,11.6,5.95,10,Cores
+425,3.55,6.8,10,Cores
+426,3.75,6.35,10,Cores
+427,6.95,6.8,10,Cores
+428,8.25,6.8,10,Cores
+429,8.3,6.57,10,Cores
+430,8.57,6.35,10,Cores
+431,8.65,6.6,10,Cores
+432,8.9,6.35,10,Cores
+433,8.9,6.57,10,Cores
+434,8.98,6.8,10,Cores
+435,9.25,6.85,10,Cores
+436,9.3,6.8,10,Cores
+437,9.64,6.85,10,Cores
+438,9.8,6.55,10,Cores
+439,10.05,6.6,10,Cores
+440,10.15,6.75,10,Cores
+441,10.5,6.7,10,Cores
+442,11.05,6.65,10,Cores
+443,11.1,6.57,10,Cores
+444,11.2,6.57,10,Cores
+445,11.3,6.28,10,Cores
+446,11.7,6.45,10,Cores
+447,7.68,7.1,10,Cores
+448,7.85,7.8,10,Cores
+449,8.42,7.2,10,Cores
+450,9.1,7.1,10,Cores
+451,9.64,7.15,10,Cores
+452,9.8,7.15,10,Cores
+453,9.95,7.45,10,Cores
+454,10.05,7.55,10,Cores
+455,10.25,7.25,10,Cores
+456,10.67,7.2,10,Cores
+457,10.7,7.85,10,Cores
+458,6.1,8.3,10,Cores
+459,6.4,8.42,10,Cores
+460,7.4,9.85,10,Cores
+461,12.35,9.3,10,Cores
+462,7.25,10.85,10,Cores
+463,4.85,11.2,10,Cores
+464,7.25,11.3,10,Cores
+465,8.3,3.35,11,Core Platforms
+466,8.35,4.1,11,Core Platforms
+467,9.05,6.9,11,Core Platforms
+468,9.15,6.3,11,Core Platforms
+469,7.7,7.8,11,Core Platforms
+470,5.7,8.3,11,Core Platforms
+471,6.7,9.85,11,Core Platforms
+472,7.25,9.3,11,Core Platforms
+473,9.8,9.3,11,Core Platforms

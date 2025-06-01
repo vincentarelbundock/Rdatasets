@@ -1,0 +1,114 @@
+<!DOCTYPE html><html><head><title>R: Multi-location/year breeding trial in California</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>george.wheat</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-location/year breeding trial in California
+</h2>
+
+<h3>Description</h3>
+
+<p>Multi-location/year breeding trial in California
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("george.wheat")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 13996 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype number</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+<dt><code>loc</code></dt><dd><p>location</p>
+</dd>
+<dt><code>block</code></dt><dd><p>block</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield per plot</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This is a nice example of data from a breeding trial, in which some
+check genotypes are kepts during the whole experiment, while other
+genotypes enter and leave the breeding program.  The data is highly
+unbalanced with respect to genotypes-by-environments.
+</p>
+<p>Results of late-stage small-trials of 211 genotypes of wheat in
+California, conducted at 9 locations during the years 2004-2018.
+</p>
+<p>Each trial was an RCB with 4 blocks.
+</p>
+<p>The authors used this data to look at GGE biplots across years and
+concluded that repeatable genotype-by-location patterns were weak, and
+therefore the California cereal production region is a large,
+unstable, mega-environment.
+</p>
+<p>Data downloaded 2019-10-29 from Dryad,
+https://doi.org/10.5061/dryad.bf8rt6b. 
+Data are public domain.  
+</p>
+
+
+<h3>Source</h3>
+
+<p>Nicholas George and Mark Lundy (2019).
+Quantifying Genotype x Environment Effects in Long-Term Common Wheat Yield Trials from an Agroecologically Diverse Production Region.
+Crop Science, 59, 1960-1972.
+https://doi.org/10.2135/cropsci2019.01.0010
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  library(agridat)
+  libs(lattice, reshape2)
+  data(george.wheat)
+  dat &lt;- george.wheat
+  
+  dat$env &lt;- paste0(dat$year, ".", dat$loc)
+  # average reps, cast to matrix
+  mat &lt;- reshape2::acast(dat, gen ~ env, value.var="yield", fun=mean, na.rm=TRUE)
+  lattice::levelplot(mat, aspect="m", 
+                     main="george.wheat", xlab="genotype", ylab="environment",
+                     scales=list(x=list(cex=.3,rot=90),y=list(cex=.5)))
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

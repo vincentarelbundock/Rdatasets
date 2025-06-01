@@ -1,0 +1,66 @@
+<!DOCTYPE html><html><head><title>R: Dopamine beta-Hydroxylase Activity in Schizophrenia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>dopamine_schizophrenia_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Dopamine <code class="reqn">\beta</code>-Hydroxylase Activity in Schizophrenia</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, 'dopamine_schizophrenia_tbl_df', is a tibble containing measurements
+of dopamine <code class="reqn">\beta</code>-hydroxylase (DBH) activity in 25 schizophrenic patients treated
+with antipsychotic medication. The data compares DBH levels between patient groups.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(dopamine_schizophrenia_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 25 observations and 2 variables:
+</p>
+
+<dl>
+<dt>dbh</dt><dd><p>Integer: Dopamine <code class="reqn">\beta</code>-hydroxylase activity level (nmol/(mL<code class="reqn">\cdot</code>hr))</p>
+</dd>
+<dt>group</dt><dd><p>Character: Treatment/patient group classification</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as <code>dopamine_schizophrenia_tbl_df</code> to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps distinguish
+this dataset as part of the <span class="pkg">NeuroDataSets</span> package. The suffix <code>tbl_df</code> indicates
+that the dataset is a tibble. The original content has not been modified.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the <span class="pkg">BSDA</span> package version 1.2.2
+</p>
+
+</main>
+
+</div>
+</body></html>

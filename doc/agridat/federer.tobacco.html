@@ -1,0 +1,122 @@
+<!DOCTYPE html><html><head><title>R: RCB of tobacco, height plants exposed to radiation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>federer.tobacco</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+RCB of tobacco, height plants exposed to radiation
+</h2>
+
+<h3>Description</h3>
+
+<p>RCB of tobacco, height plants exposed to radiation
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 56 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>block</code></dt><dd><p>block, numeric</p>
+</dd>
+<dt><code>dose</code></dt><dd><p>radiation dose, roentgens</p>
+</dd>
+<dt><code>height</code></dt><dd><p>height of 20 plants, cm</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>An experiment conducted in 1951 and described in Federer (1954).  The
+treatment involved exposing tobacco seeds to seven different doses of
+radiation.  The seedlings were transplanted to the field in an RCB
+experiment with 7 treatments in 8 blocks.  The physical layout of the
+experiment was in 8 rows and 7 columns.
+</p>
+<p>Shortly after the plants were transplanted to the field it became
+apparent that an environmental gradient existed. The response variable
+was the total height (centimeters) of 20 plants.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Walter T Federer and C S Schlottfeldt, 1954.
+The use of covariance to control gradients in experiments.
+<em>Biometrics</em>, 10, 282&ndash;290.
+https://doi.org/10.2307/3001881
+</p>
+
+
+<h3>References</h3>
+
+<p>R. D. Cook and S. Weisberg (1999).
+<em>Applied Regression Including Computing and Graphics</em>.
+</p>
+<p>Walter T Federer and Russell D Wolfinger, 2003.
+PROC GLM and PROC MIXED Codes for Trend Analyses for
+Row-Column Designed Experiments,
+<em>Handbook of Formulas and Software for Plant Geneticists and
+Breeders</em>, Haworth Press.
+</p>
+<p>Paul N Hinz, (1987).
+Nearest-Neighbor Analysis in Practice,
+<em>Iowa State Journal of Research</em>, 62, 199&ndash;217.
+https://lib.dr.iastate.edu/iowastatejournalofresearch/vol62/iss2/1
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+data(federer.tobacco)
+dat &lt;- federer.tobacco
+
+# RCB analysis.  Treatment factor not signficant.
+dat &lt;- transform(dat, dosef=factor(dose), rowf=factor(row),
+                 blockf=factor(block))
+m1 &lt;- lm(height ~ blockf + dosef, data=dat)
+anova(m1)
+
+# RCB residuals show strong spatial trends
+libs(desplot)
+dat$resid &lt;- resid(m1)
+desplot(dat, resid ~ row * block,
+        # aspect unknown
+        main="federer.tobacco")
+
+
+# Row-column analysis.  Treatment now significant
+m2 &lt;- lm(height ~ rowf + blockf + dosef, data=dat)
+anova(m2)
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

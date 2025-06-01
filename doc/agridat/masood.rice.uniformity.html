@@ -1,0 +1,120 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of rice</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>masood.rice.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of rice
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of rice at Lahore, Punjab, circa 2011.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("masood.rice.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 288 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, kg/m^2</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data by collected from the Rice Research Institute on a paddy yield trial.
+A single variety of rice was harvested in an area 12m x 24 m.
+Yield in kilograms was measured for each square meter.
+Masood et al report a low degree of similarity for neighboring plots.
+</p>
+<p>Note, the Smith index calculations below match the results in the
+Pakistan Journal of Agricultural Research, but do not match the
+results in the American-Eurasian Journal, which seems to be the same
+paper and seems to refer to the same data.  The results may simply
+differ by a scaling factor.
+</p>
+<p>The yield values in Masood are labeled as &quot;gm^2&quot; (gram per sq meter),
+but this would be extremely low. Probably should be &quot;kgm^2&quot;.
+</p>
+<p>Field length: 24 plots x 1m = 24m.
+</p>
+<p>Field width: 12 plots x 1m = 12m.
+</p>
+<p>Used with permission of Asif Masood.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Masood, M Asif and Raza, Irum. 2012.
+Estimation of optimum field plot size and shape in paddy yield trial.
+Pakistan J. Agric. Res., Vol. 25 No. 4, 2012
+</p>
+
+
+<h3>References</h3>
+
+<p>Masood, M Asif and Raza, Irum. 2012.
+Estimation of optimum field plot size and shape in paddy yield trial.
+American-Eurasian Journal of Scientific Research, 7, 264-269.
+Table 1.
+https://doi.org/10.5829/idosi.aejsr.2012.7.6.1926
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+  data(masood.rice.uniformity)
+  dat &lt;- masood.rice.uniformity
+  
+  libs(desplot)
+  desplot(dat, yield ~ col*row,
+          flip=TRUE, tick=TRUE, aspect=24/12, # true aspect
+          main="masood.rice.uniformity - yield heatmap")
+
+  libs(agricolae)
+  libs(reshape2)
+  dmat &lt;- acast(dat, row~col, value.var='yield')
+  index.smith(dmat,
+              main="masood.rice.uniformity",
+              col="red") # CVs match Table 3
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

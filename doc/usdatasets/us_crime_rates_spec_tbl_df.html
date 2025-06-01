@@ -1,0 +1,78 @@
+<!DOCTYPE html><html><head><title>R: US Crime Rates</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>us_crime_rates_spec_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>US Crime Rates</h2>
+
+<h3>Description</h3>
+
+<p>The dataset 'us_crime_rates_spec_tbl_df' contains crime statistics for the United States,
+including various types of crimes and population data for each year. This dataset is
+structured as a tibble for ease of use within the R ecosystem. This naming convention helps
+distinguish this dataset as part of the 'usdatasets' package.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(us_crime_rates_spec_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 60 rows and 12 columns:
+</p>
+
+<dl>
+<dt>year</dt><dd><p>Numeric year of the recorded data, e.g., 2000, 2001.</p>
+</dd>
+<dt>population</dt><dd><p>Numeric population total for the respective year.</p>
+</dd>
+<dt>total</dt><dd><p>Numeric total number of crimes reported.</p>
+</dd>
+<dt>violent</dt><dd><p>Numeric total number of violent crimes.</p>
+</dd>
+<dt>property</dt><dd><p>Numeric total number of property crimes.</p>
+</dd>
+<dt>murder</dt><dd><p>Numeric total number of murders.</p>
+</dd>
+<dt>forcible_rape</dt><dd><p>Numeric total number of forcible rapes.</p>
+</dd>
+<dt>robbery</dt><dd><p>Numeric total number of robberies.</p>
+</dd>
+<dt>aggravated_assault</dt><dd><p>Numeric total number of aggravated assaults.</p>
+</dd>
+<dt>burglary</dt><dd><p>Numeric total number of burglaries.</p>
+</dd>
+<dt>larceny_theft</dt><dd><p>Numeric total number of larcenies.</p>
+</dd>
+<dt>vehicle_theft</dt><dd><p>Numeric total number of vehicle thefts.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Federal Bureau of Investigation (FBI) Uniform Crime Reporting (UCR) Program.
+</p>
+
+</main>
+
+</div>
+</body></html>

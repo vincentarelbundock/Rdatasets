@@ -1,0 +1,65 @@
+<!DOCTYPE html><html><head><title>R: Voice Pitch Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>voices</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Voice Pitch Data</h2>
+
+<h3>Description</h3>
+
+<p>Voice pitch data collected by Winter and Grawunder (2012). 
+In an experiment, subjects participated in role-playing dialog under various conditions,
+while researchers monitored voice pitch (Hz).
+The conditions spanned different scenarios (eg: making an appointment, asking for a favor)
+and different attitudes to use in the scenario (polite or informal).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>voices
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 84 rows and 4 variables. Each row represents a single observation for the given subject.
+</p>
+
+<dl>
+<dt>subject</dt><dd><p>subject identifier</p>
+</dd>
+<dt>scenario</dt><dd><p>context of the dialog (encoded as A, B, ..., G)</p>
+</dd>
+<dt>attitude</dt><dd><p>whether the attitude to use in dialog was polite or informal</p>
+</dd>
+<dt>pitch</dt><dd><p>average voice pitch (Hz)</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Winter, B., &amp; Grawunder, S. (2012). The Phonetic Profile of Korean Formal and Informal Speech Registers. Journal of Phonetics, 40, 808-815. 
+<a href="https://bodo-winter.net/data_and_scripts/POP.csv">https://bodo-winter.net/data_and_scripts/POP.csv</a>.
+<a href="https://bodo-winter.net/tutorial/bw_LME_tutorial2.pdf">https://bodo-winter.net/tutorial/bw_LME_tutorial2.pdf</a>.
+</p>
+
+</main>
+
+</div>
+</body></html>

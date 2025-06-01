@@ -1,0 +1,115 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of barley</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>piepho.barley.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of barley
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of barley in Germany
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("piepho.barley.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1080 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row ordinate</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column ordinate</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield per plot</p>
+</dd>    
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Uniformity trial of barley at Ihinger Hof farm, conducted by the
+University of Hohenheim, Germany, in 2007.
+</p>
+<p>Note: The paper by Piepho says &quot;The trial had 30 rows and 36
+columns. Plot widths were 1.90 m along rows and 3.73 m along columns.&quot;
+This is confirmed by the variograms in Figure 1.
+It is not clear what &quot;along rows&quot; and &quot;along columns&quot; means in
+English.
+</p>
+<p>However, the SAS code supplement to the paper, called
+&quot;PBR_1654_sm_example1.sas&quot;, has row=1-36, col=1-30.
+</p>
+
+
+<h3>Source</h3>
+
+<p>H. P. Piepho &amp; E. R. Williams (2010).
+Linear variance models for plant breeding trials.
+Plant Breeding, 129, 1-8.
+https://doi.org/10.1111/j.1439-0523.2009.01654.x
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  data(piepho.barley.uniformity) 
+  dat &lt;- piepho.barley.uniformity
+  libs(desplot)
+  desplot(dat, yield ~ col*row,
+          tick=TRUE, aspect=(36*3.73)/(30*1.90),
+          main="piepho.barley.uniformity.csv")
+
+  if(require("asreml", quietly=TRUE)){
+    libs(asreml,dplyr,lucid)
+    dat &lt;- mutate(dat, x=factor(col), y=factor(row))
+    dat &lt;- arrange(dat, x, y)
+  
+    # Piepho AR1xAR1 model (in random term, NOT residual)
+    m1 &lt;- asreml(data=dat,
+                 yield ~ 1, 
+                 random = ~ x + y + ar1(x):ar1(y), 
+                 residual = ~  units,
+                 na.action=na.method(x="keep") )
+    m1 &lt;- update(m1)
+    # Match Piepho table 3, footnote 4: .9671, .9705 for col,row correlation
+    # Note these parameters are basically at the boundary of the parameter
+    # space. Questionable fit.
+    lucid::vc(m1)
+  }
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

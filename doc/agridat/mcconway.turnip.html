@@ -1,0 +1,152 @@
+<!DOCTYPE html><html><head><title>R: RCB experiment of turnips</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>mcconway.turnip</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+RCB experiment of turnips
+</h2>
+
+<h3>Description</h3>
+
+<p>RCB experiment of turnips, 2 treatments for planting date and density
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 64 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype</p>
+</dd>
+<dt><code>date</code></dt><dd><p>planting date, levels <code>21Aug1990</code> <code>28Aug1990</code></p>
+</dd>
+<dt><code>density</code></dt><dd><p>planting density, 1, 2, 4, 8 kg/ha</p>
+</dd>
+<dt><code>block</code></dt><dd><p>block, 4 levels</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This is a randomized block experiment with 16 treatments
+allocated at random to each of four blocks.  The 16 treatments
+were combinations of two varieties, two planting dates, and
+four densities.
+</p>
+<p>Lee et al (2008) proposed an analysis using mixed models with changing
+treatment variances.
+</p>
+<p>Piepho (2009) proposed an ordinary ANOVA using transformed data.
+</p>
+<p>Used with permission of Kevin McConway.
+</p>
+
+
+<h3>Source</h3>
+
+<p>K. J. McConway, M. C. Jones, P. C. Taylor.
+Statistical Modelling Using Genstat.
+</p>
+
+
+<h3>References</h3>
+
+<p>Michael Berthold, D. J. Hand.
+Intelligent data analysis: an introduction, 1998.
+Pages 75&ndash;82.
+</p>
+<p>Lee, C.J. and O Donnell, M. and O Neill, M. (2008).
+Statistical analysis of field trials with changing treatment
+variance.
+Agronomy Journal, 100, 484&ndash;489.
+</p>
+<p>Piepho, H.P. (2009),
+Data transformation in statistical analysis of field trials
+with changing treatment variance.
+Agronomy Journal, 101, 865&ndash;869.
+https://doi.org/10.2134/agronj2008.0226x
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(mcconway.turnip)
+dat &lt;- mcconway.turnip
+dat$densf &lt;- factor(dat$density)
+
+# Table 2 of Lee et al.
+m0 &lt;- aov( yield ~ gen * densf * date + block, dat )
+summary(m0)
+##                Df Sum Sq Mean Sq F value   Pr(&gt;F)
+## gen             1   84.0   83.95   8.753  0.00491 **
+## densf           3  470.4  156.79  16.347 2.51e-07 ***
+## date            1  233.7  233.71  24.367 1.14e-05 ***
+## block           3  163.7   54.58   5.690  0.00216 **
+## gen:densf       3    8.6    2.88   0.301  0.82485
+## gen:date        1   36.5   36.45   3.800  0.05749 .
+## densf:date      3  154.8   51.60   5.380  0.00299 **
+## gen:densf:date  3   18.0    6.00   0.626  0.60224
+## Residuals      45  431.6    9.59
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+# Boxplots suggest heteroskedasticity for date, density
+libs("HH")
+interaction2wt(yield ~ gen + date + densf +block, dat,
+               x.between=0, y.between=0,
+               main="mcconway.turnip - yield")
+
+
+libs(nlme)
+# Random block model
+m1 &lt;- lme(yield ~ gen * date * densf, random= ~1|block, data=dat)
+summary(m1)
+anova(m1)
+
+# Multiplicative variance model over densities and dates
+m2 &lt;- update(m1,
+             weights=varComb(varIdent(form=~1|densf),
+               varIdent(form=~1|date)))
+summary(m2)
+anova(m2)
+
+# Unstructured variance model over densities and dates
+m3 &lt;- update(m1, weights=varIdent(form=~1|densf*date))
+summary(m3)
+anova(m3)
+
+# Table 3 of Piepho, using transformation
+m4 &lt;- aov( yield^.235 ~ gen * date * densf + block, dat )
+summary(m4)
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

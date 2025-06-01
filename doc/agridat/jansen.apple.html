@@ -1,0 +1,112 @@
+<!DOCTYPE html><html><head><title>R: Infestation of apple shoots by apple canker.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>jansen.apple</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Infestation of apple shoots by apple canker.
+</h2>
+
+<h3>Description</h3>
+
+<p>Infestation of apple shoots by apple canker.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("jansen.apple")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 36 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>inoculum</code></dt><dd><p>inoculum level</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype/variety</p>
+</dd>
+<dt><code>block</code></dt><dd><p>block</p>
+</dd>
+<dt><code>y</code></dt><dd><p>number of inoculations developing canker</p>
+</dd>
+<dt><code>n</code></dt><dd><p>number of inoculations</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Shoots of apple trees were infected with fungus <em>Nectria
+galligena</em>, which may cause apple canker.
+</p>
+<p>The incoulum density treatment had 3 levels, measured in macroconidia
+per ml.
+</p>
+<p>There were 4 blocks.
+</p>
+<p>Used with permission of J. Jansen. Electronic version supplied by Miroslav Zoric.
+</p>
+
+
+<h3>Source</h3>
+
+<p>J. Jansen &amp; J.A. Hoekstra (1993).
+The analysis of proportions in agricultural experiments by a
+generalized linear mixed model. 
+Statistica Neerlandica, 47(3), 161-174.
+https://doi.org/10.1111/j.1467-9574.1993.tb01414.x
+</p>
+
+
+<h3>References</h3>
+
+<p>None.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(jansen.apple)
+dat &lt;- jansen.apple
+
+libs(lattice)
+xyplot(inoculum ~ y/n|gen, data=dat, group=block,
+       layout=c(3,1),
+       main="jansen.apple",
+       xlab="Proportion infected per block/inoculum",
+       ylab="Inoculum level")
+
+## libs(lme4)
+## # Tentative model.  Needs improvement.
+## m1 &lt;- glmer(cbind(y,n-y) ~ gen + factor(inoculum) + (1|block),
+##             data=dat, family=binomial)
+## summary(m1)
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

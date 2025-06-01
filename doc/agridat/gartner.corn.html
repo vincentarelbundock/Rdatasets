@@ -1,0 +1,186 @@
+<!DOCTYPE html><html><head><title>R: Yield monitor data from a corn field in Minnesota</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gartner.corn</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Yield monitor data from a corn field in Minnesota
+</h2>
+
+<h3>Description</h3>
+
+<p>Yield monitor data from a corn field in Minnesota
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("gartner.corn")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 4949 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt><code>long</code></dt><dd><p>longitude</p>
+</dd>
+<dt><code>lat</code></dt><dd><p>latitude</p>
+</dd>
+<dt><code>mass</code></dt><dd><p>grain mass flow per second, pounds</p>
+</dd>
+<dt><code>time</code></dt><dd><p>GPS time, in seconds</p>
+</dd>
+<dt><code>seconds</code></dt><dd><p>seconds elapsed for each datum</p>
+</dd>
+<dt><code>dist</code></dt><dd><p>distance traveled for each datum, in inches</p>
+</dd>
+<dt><code>moist</code></dt><dd><p>grain moisture, percent</p>
+</dd>
+<dt><code>elev</code></dt><dd><p>elevation, feet</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data was collected 5 Nov 2011 from a corn field south of Mankato,
+Minnesota, using a combine-mounted yield monitor.
+https://www.google.com/maps/place/43.9237575,-93.9750632
+</p>
+<p>Each harvested swath was 12 rows wide = 360 inches.
+</p>
+<p>Timestamp 0 = 5 Nov 2011, 12:38:03 Central Time.
+Timestamp 16359 = 4.54 hours later.
+</p>
+<p>Yield is calculated as total dry weight (corrected to 15.5 percent
+moisture), divided by 56 pounds (to get bushels), divided by the
+harvested area:
+</p>
+<p>drygrain = [massflow * seconds * (100-moisture) / (100-15.5)] / 56
+harvested area = (distance * swath width) / 6272640
+yield = drygrain / area
+</p>
+
+
+<h3>Source</h3>
+
+<p>University of Minnesota Precision Agriculture Center.
+Retrieved 27 Aug 2015 from https://web.archive.org/web/20100717003256/https://www.soils.umn.edu/academics/classes/soil4111/files/yield_a.xls
+</p>
+<p>Used via license: Creative Commons BY-SA 3.0.
+</p>
+
+
+<h3>References</h3>
+
+<p>Suman Rakshit, Adrian Baddeley, Katia Stefanova, Karyn Reeves, Kefei
+Chen, Zhanglong Cao, Fiona Evans, Mark Gibberd (2020).
+Novel approach to the analysis of spatially-varying treatment effects
+in on-farm experiments.
+Field Crops Research, 255, 15 September 2020, 107783.
+https://doi.org/10.1016/j.fcr.2020.107783
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(gartner.corn)
+  dat &lt;- gartner.corn
+
+  # Calculate yield from mass &amp; moisture
+  dat &lt;- transform(dat,
+  yield=(mass*seconds*(100-moist)/(100-15.5)/56)/(dist*360/6272640))
+
+  # Delete low yield outliers
+  dat &lt;- subset(dat, yield &gt;50)
+
+  # Group yield into 20 bins for red-gray-blue colors
+  medy &lt;- median(dat$yield)
+  ncols &lt;- 20
+  wwidth &lt;- 150
+  brks &lt;- seq(from = -wwidth/2, to=wwidth/2, length=ncols-1)
+  brks &lt;- c(-250, brks, 250) # 250 is safe..we cleaned data outside ?(50,450)?
+  yldbrks &lt;- brks + medy
+  dat &lt;- transform(dat, yldbin = as.numeric(cut(yield, breaks= yldbrks)))
+  redblue &lt;- colorRampPalette(c("firebrick", "lightgray", "#375997"))
+  dat$yieldcolor = redblue(ncols)[dat$yldbin]
+
+  # Polygons for soil map units
+  # Go to: https://websoilsurvey.nrcs.usda.gov/app/WebSoilSurvey.aspx
+  # Click: Lat and Long. 43.924, -93.975
+  # Click the little AOI rectangle icon.  Drag around the field
+  # In the AOI Properties, enter the Name: Gartner
+  # Click the tab Soil Map to see map unit symbols, names
+  # Click: Download Soils Data.  Click: Create Download Link.
+  # Download the zip file and find the soilmu_a_aoi files.
+
+  # Read shape files
+  libs(sf)
+  fname &lt;- system.file(package="agridat", "files", "gartner.corn.shp")
+  shp &lt;- sf::st_read( fname )
+
+  # Annotate soil map units. Coordinates chosen by hand.
+  mulabs = data.frame(
+    name=c("110","319","319","230","105C","110","211","110","211","230","105C"),
+    x = c(-93.97641, -93.97787, -93.97550, -93.97693, -93.97654, -93.97480,
+          -93.97375, -93.978284, -93.977617, -93.976715, -93.975929),
+    y = c(43.92185, 43.92290, 43.92358, 43.92445, 43.92532, 43.92553,
+          43.92568, 43.922163, 43.926427, 43.926993, 43.926631) )
+  mulabs = st_as_sf( mulabs, coords=c("x","y"), crs=4326)
+  mulabs = st_transform(mulabs, 2264)
+
+  # Trim top and bottom ends of the field
+  dat &lt;- subset(dat, lat &lt; 43.925850 &amp; lat &gt; 43.921178)
+  # Colored points for yield
+  dat &lt;- st_as_sf(dat, coords=c("long","lat"), crs=4326)
+
+  libs(ggplot2)
+  
+  ggplot() +
+    geom_sf(data=dat, aes(col=yieldcolor) ) +
+    scale_color_identity() +
+    geom_sf_label(data=mulabs, aes(label=name), cex=2) +
+    geom_sf(data=shp["MUSYM"], fill="transparent") +
+    ggtitle("gartner.corn") +
+    theme_classic()
+  
+  if(0){
+    # Draw a 3D surface.  Clearly shows the low drainage area
+    # Re-run the steps above up, stop before the "Colored points" line.
+    libs(rgl)
+    dat &lt;- transform(dat, x=long-min(long), y=lat-min(lat), z=elev-min(elev))
+    clear3d()
+    points3d(dat$x, dat$y, dat$z/50000,
+             col=redblue(ncols)[dat$yldbin])
+    axes3d()
+    title3d(xlab='x',ylab='y',zlab='elev')
+    close3d()
+  }
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html><html><head><title>R: Sugar beet trial with competition effects</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>kempton.competition</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Sugar beet trial with competition effects
+</h2>
+
+<h3>Description</h3>
+
+<p>Yield of sugar beets for 36 varieties in a 3-rep RCB experiment.
+Competition effects are present.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 108 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype, 36 levels</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>rep, 3 levels</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, kg/plot</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Entries are grown in 12m rows, 0.5m apart.  Guard rows were grown
+alongside replicate boundaries, but yields of these plots are not
+included.
+</p>
+
+
+<h3>Source</h3>
+
+<p>R Kempton, 1982.
+Adjustment for competition between varieties in plant breeding trials,
+<em>Journal of Agricultural Science</em>, 98, 599-611.
+https://doi.org/10.1017/S0021859600054381
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+library(agridat)
+
+data(kempton.competition)
+dat &lt;- kempton.competition
+
+# Raw means in Kempton table 2
+round(tapply(dat$yield, dat$gen, mean),2)
+
+# Fixed genotype effects, random rep effects,
+# Autocorrelation of neighboring plots within the same rep, phi = -0.22
+libs(nlme)
+m1 &lt;- lme(yield ~ -1+gen, random=~1|rep, data=dat,
+          corr=corAR1(form=~col|rep))
+# Lag 1 autocorrelation is negative--evidence of competition
+plot(ACF(m1), alpha=.05, grid=TRUE, main="kempton.competition",
+     ylab="Autocorrelation between neighborning plots")
+
+# Genotype effects
+round(fixef(m1),2)
+
+# Variance of yield increases with yield
+plot(m1, main="kempton.competition")
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html><html><head><title>R: Lettuce resistance to downy mildew resistance (with marker...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>hadasch.lettuce</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Lettuce resistance to downy mildew resistance (with marker data)
+</h2>
+
+<h3>Description</h3>
+
+<p>Lettuce resistance to downy mildew resistance (with marker data).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("hadasch.lettuce")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 703 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>loc</code></dt><dd><p>locations</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>replicate</p>
+</dd>
+<dt><code>dmr</code></dt><dd><p>downy mildew resistance</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>A biparental cross of 95 recombinant inbred lines of &quot;Salinas 88&quot;
+(susceptible) and &quot;La Brillante&quot; (highly resistant to downy mildew). The
+89 RILs were evaluated in field experiments performed in 2010 and 2011
+near Salinas, California. Each loc had a 2 or 3 rep RCB design. There
+were approximately 30 plants per plot. Plots were scored 0 (no disease)
+to 5 (severe disease).
+</p>
+<p>The authors used the following model in a first-stage analysis to
+compute adjusted means for each genotype:
+</p>
+<p>y = loc + gen + gen:loc + block:loc + error
+</p>
+<p>where gen was fixed and all other terms random.  The adjusted means were
+used as the response in a second stage:
+</p>
+<p>mn = 1 + Zu + error
+</p>
+<p>where Z is the design matrix of marker effects. The error term is fixed to have covariance matrix R be the same as from the first stage.
+</p>
+<p>Genotyping was performed with 95 SNPs and 205 amplified fragment length
+polymporphism markers so that a marker matrix M (89×300) was
+provided. The biallelic marker M(iw) for the ith genotype and the wth
+marker with alleles A1 (i.e. the reference allele) and A2 was coded as 1
+for A1,A1, -1 for A2,A2 and 0 for A1,A2 and A2,A2.
+</p>
+<p>The electronic version of the lettuce data are licensed CC-BY 4 and were
+downloaded 20 Feb 2021. 
+https://figshare.com/articles/dataset/Lettuce_trial_phenotypic_and_marker_data_/8299493
+</p>
+
+
+<h3>Source</h3>
+
+<p>Hadasch, S., I. Simko, R. J. Hayes, J. O. Ogutu, and H.P. Piepho (2016).
+Comparing the predictive abilities of phenotypic and
+marker-assisted selection methods in a biparental lettuce population.
+Plant Genome 9.
+https://doi.org/10.3835/plantgenome2015.03.0014
+</p>
+
+
+<h3>References</h3>
+
+<p>Hayes, R. J., Galeano, C. H., Luo, Y., Antonise, R., &amp; Simko, I. (2014).
+Inheritance of Decay of Fresh-cut Lettuce in a Recombinant Inbred Line Population from &quot;Salinas 88&quot; × &quot;La Brillante&quot;.
+J. Amer. Soc. Hort. Sci., 139(4), 388-398.
+https://doi.org/10.21273/JASHS.139.4.388
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  library(agridat)
+  data(hadasch.lettuce)
+  data(hadasch.lettuce.markers)
+  dat &lt;- hadasch.lettuce
+  datm &lt;- hadasch.lettuce.markers
+  
+  libs(agridat)
+  # loc 1 has 2 reps, loc 3 has higher dmr
+  dotplot(dmr ~ factor(gen)|factor(loc), dat,
+        group=rep, layout=c(1,3),
+        main="hadasch.lettuce")
+
+  # kinship matrix
+  # head( tcrossprod(as.matrix(datm[,-1])) )
+
+  if(require("asreml", quietly=TRUE)){
+    libs(asreml)
+    dat &lt;- transform(dat, loc=factor(loc), gen=factor(gen), rep=factor(rep))
+    m1 &lt;- asreml(dmr ~ 1 + gen, data=dat,
+                 random = ~ loc + gen:loc + rep:loc)
+    p1 &lt;- predict(m1, classify="gen")$pvals
+  }
+  
+  libs(sommer)
+  m2 &lt;- mmer(dmr ~ 0 + gen, data=dat,
+             random = ~ loc + gen:loc + rep:loc)
+  p2 &lt;- coef(m2)
+  head(p1)
+  head(p2)
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

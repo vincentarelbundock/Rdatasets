@@ -1,0 +1,79 @@
+<!DOCTYPE html><html><head><title>R: Minneapolis police use of force data.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>mn_police_use_of_force_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Minneapolis police use of force data.</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'mn_police_use_of_force_df' to avoid confusion with other packages
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the 'usdatasets'
+package and identifies it as a data frame. The original content of the dataset has not been modified.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(mn_police_use_of_force_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 12925 observations and 13 variables:
+</p>
+
+<dl>
+<dt>response_datetime</dt><dd><p>Character string representing the date and time of the response.</p>
+</dd>
+<dt>problem</dt><dd><p>Character string describing the nature of the problem.</p>
+</dd>
+<dt>is_911_call</dt><dd><p>Character string indicating whether the incident was initiated by a 911 call.</p>
+</dd>
+<dt>primary_offense</dt><dd><p>Character string indicating the primary offense involved in the incident.</p>
+</dd>
+<dt>subject_injury</dt><dd><p>Character string describing the injuries sustained by the subject, if any.</p>
+</dd>
+<dt>force_type</dt><dd><p>Character string describing the type of force used by the police.</p>
+</dd>
+<dt>force_type_action</dt><dd><p>Character string describing the specific actions related to the use of force.</p>
+</dd>
+<dt>race</dt><dd><p>Character string indicating the race of the subject involved in the incident.</p>
+</dd>
+<dt>sex</dt><dd><p>Character string indicating the sex of the subject.</p>
+</dd>
+<dt>age</dt><dd><p>Integer representing the age of the subject.</p>
+</dd>
+<dt>type_resistance</dt><dd><p>Character string describing the type of resistance offered by the subject.</p>
+</dd>
+<dt>precinct</dt><dd><p>Character string indicating the precinct in which the incident occurred.</p>
+</dd>
+<dt>neighborhood</dt><dd><p>Character string representing the neighborhood where the incident occurred.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Data from police use of force reports in Minnesota
+</p>
+
+</main>
+
+</div>
+</body></html>

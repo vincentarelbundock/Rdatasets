@@ -1,0 +1,63 @@
+<!DOCTYPE html><html><head><title>R: Minnesota High School Graduates of 1938</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>minn38_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Minnesota High School Graduates of 1938</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'minn38_df' to avoid confusion with other packages
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the 'usdatasets'
+package and identifies it as a data frame. The original content of the dataset has not been modified.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(minn38_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 168 observations and 5 variables:
+</p>
+
+<dl>
+<dt>hs</dt><dd><p>Factor indicating the high school status, with 3 levels.</p>
+</dd>
+<dt>phs</dt><dd><p>Factor indicating the post-high school status, with 4 levels.</p>
+</dd>
+<dt>fol</dt><dd><p>Factor indicating the field of study, with 7 levels.</p>
+</dd>
+<dt>sex</dt><dd><p>Factor indicating the gender of the participants, with 2 levels.</p>
+</dd>
+<dt>f</dt><dd><p>Integer representing the associated numerical value for the participants.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Data from the Minnesota 1938 study
+</p>
+
+</main>
+
+</div>
+</body></html>

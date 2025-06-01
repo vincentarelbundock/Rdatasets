@@ -1,0 +1,93 @@
+<!DOCTYPE html><html><head><title>R: Household medical expenditure</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>vietnamlss</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Household medical expenditure</h2>
+
+<h3>Description</h3>
+
+<p>Data from the World Bank's 1997 Vietnam Living Standards Survey 1997-98
+at the household level.
+Cameron and Trivedi (2005)
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>vietnamlss
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 5999 observations and 9 variables:
+</p>
+
+<dl>
+<dt>sex</dt><dd><p>gender of household head, 1 = male; 2 = female</p>
+</dd>
+<dt>age</dt><dd><p>age of household head</p>
+</dd>
+<dt>educyr98</dt><dd><p>schooling year of household head</p>
+</dd>
+<dt>farm</dt><dd><p>type of household, = 1 if farm </p>
+</dd>
+<dt>urban98</dt><dd><p>= 1 if urban area, = 0 if rural area</p>
+</dd>
+<dt>hhsize</dt><dd><p>household size</p>
+</dd>
+<dt>lhhexp1</dt><dd><p>household total expenditure, ln</p>
+</dd>
+<dt>lhhex12m</dt><dd><p>household medical expenditure, ln</p>
+</dd>
+<dt>lnrlfood</dt><dd><p>household food expenditure, ln</p>
+</dd>
+</dl>
+
+
+
+<h3>Section in Text</h3>
+
+<p>4.6.4 Quantile Regression Example, pp. 88-90
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="http://cameron.econ.ucdavis.edu/mmabook/mmadata.html">http://cameron.econ.ucdavis.edu/mmabook/mmadata.html</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Cameron, A. and Trivedi, P. (2005), &quot;Microeconometrics: Methods and
+Applications,&quot; Cambridge University Press, New York.
+</p>
+<p>World Bank Living Standards Survey 1997-1998 Vietnam.
+<a href="https://microdata.worldbank.org/index.php/catalog/2694">https://microdata.worldbank.org/index.php/catalog/2694</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>summary(vietnamlss)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

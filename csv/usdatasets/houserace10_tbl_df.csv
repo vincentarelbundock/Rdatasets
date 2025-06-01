@@ -1,0 +1,436 @@
+rownames,id,state,abbr,num,name1,perc1,party1,votes1,name2,perc2,party2,votes2,name3,perc3,party3,votes3,name4,perc4,party4,votes4,name5,perc5,party5,votes5
+1,3,Alabama,AL,1,Jo Bonner,83,Republican,128803,David Walter,17,Other: Constitution,26295,,0,,0,,0,,0,,0,,0
+2,4,Alabama,AL,2,Martha Roby,51,Republican,111332,Bobby Bright,49,Democrat,106465,,0,,0,,0,,0,,0,,0
+3,5,Alabama,AL,3,Mike Rogers,59,Republican,117439,Steve Segrest,41,Democrat,79990,,0,,0,,0,,0,,0,,0
+4,6,Alabama,AL,4,Robert Aderholt,,Republican,0,,0,,0,,0,,0,,0,,0,,0,,0
+5,7,Alabama,AL,5,Mo Brooks,58,Republican,130927,Steve Raby,42,Democrat,95078,,0,,0,,0,,0,,0,,0
+6,8,Alabama,AL,6,Spencer Bachus,,Republican,0,,0,,0,,0,,0,,0,,0,,0,,0
+7,9,Alabama,AL,7,Terri Sewell,72,Democrat,135958,Don Chamberlain,28,Republican,51672,,0,,0,,0,,0,,0,,0
+8,12,Alaska,AK,1,Don Young,69,Republican,139034,Harry Crawford,31,Democrat,61867,,0,,0,,0,,0,,0,,0
+9,15,Arizona,AZ,1,Paul Gosar,50,Republican,106423,Ann Kirkpatrick,44,Democrat,92681,,0,,0,,0,,0,,0,,0
+10,16,Arizona,AZ,2,Trent Franks,65,Republican,157168,John Thrasher,31,Democrat,74764,,0,,0,,0,,0,,0,,0
+11,17,Arizona,AZ,3,Ben Quayle,52,Republican,97954,Jon Hulburd,41,Democrat,77034,,0,,0,,0,,0,,0,,0
+12,18,Arizona,AZ,4,Ed Pastor,66,Democrat,53030,Janet Contreras,28,Republican,22565,,0,,0,,0,,0,,0,,0
+13,19,Arizona,AZ,5,David Schweikert,52,Republican,99640,Harry Mitchell,43,Democrat,82225,,0,,0,,0,,0,,0,,0
+14,20,Arizona,AZ,6,Jeff Flake,67,Republican,151122,Rebecca Schneider,29,Democrat,66060,,0,,0,,0,,0,,0,,0
+15,21,Arizona,AZ,7,Raul Grijalva,49,Democrat,72309,Ruth McClung,45,Republican,66074,,0,,0,,0,,0,,0,,0
+16,22,Arizona,AZ,8,Gabrielle Giffords,49,Democrat,133046,Jesse Kelly,47,Republican,129405,,0,,0,,0,,0,,0,,0
+17,25,Arkansas,AR,1,Rick Crawford,52,Republican,92558,Chad Causey,43,Democrat,77551,,0,,0,,0,,0,,0,,0
+18,26,Arkansas,AR,2,Tim Griffin,58,Republican,119962,Joyce Elliott,38,Democrat,79183,,0,,0,,0,,0,,0,,0
+19,27,Arkansas,AR,3,Steve Womack,72,Republican,147599,David Whitaker,28,Democrat,56071,,0,,0,,0,,0,,0,,0
+20,28,Arkansas,AR,4,Mike Ross,58,Democrat,102222,Beth Anne Rankin,40,Republican,71385,,0,,0,,0,,0,,0,,0
+21,31,California,CA,1,Mike Thompson,63,Democrat,108118,Loren Hanks,32,Republican,54556,,0,,0,,0,,0,,0,,0
+22,32,California,CA,2,Wally Herger,57,Republican,99303,Jim Reed,43,Democrat,75487,,0,,0,,0,,0,,0,,0
+23,33,California,CA,3,Dan Lungren,51,Republican,104537,Ami Bera,43,Democrat,88229,,0,,0,,0,,0,,0,,0
+24,34,California,CA,4,Tom McClintock,62,Republican,142641,Clint Curtis,31,Democrat,73045,,0,,0,,0,,0,,0,,0
+25,35,California,CA,5,Doris Matsui,72,Democrat,89253,Paul Smith,26,Republican,31998,,0,,0,,0,,0,,0,,0
+26,36,California,CA,6,Lynn Woolsey,65,Democrat,132855,Jim Judd,30,Republican,61521,,0,,0,,0,,0,,0,,0
+27,37,California,CA,7,George Miller,67,Democrat,90504,Rick Tubbs,33,Republican,43792,,0,,0,,0,,0,,0,,0
+28,38,California,CA,8,Nancy Pelosi,80,Democrat,149757,John Dennis,15,Republican,28789,,0,,0,,0,,0,,0,,0
+29,39,California,CA,9,Barbara Lee,84,Democrat,131942,Gerald Hashimoto,11,Republican,17984,,0,,0,,0,,0,,0,,0
+30,40,California,CA,10,John Garamendi,58,Democrat,97752,Gary Clift,38,Republican,64013,,0,,0,,0,,0,,0,,0
+31,41,California,CA,11,Jerry McNerney,48,Democrat,88879,David Harmer,47,Republican,88255,,0,,0,,0,,0,,0,,0
+32,42,California,CA,12,Jackie Speier,75,Democrat,125300,Mike Moloney,22,Republican,37196,,0,,0,,0,,0,,0,,0
+33,43,California,CA,13,Pete Stark,72,Democrat,89247,Forest Baker,28,Republican,35354,,0,,0,,0,,0,,0,,0
+34,44,California,CA,14,Anna Eshoo,69,Democrat,131708,Dave Chapman,28,Republican,53725,,0,,0,,0,,0,,0,,0
+35,45,California,CA,15,Mike Honda,68,Democrat,120324,Scott Kirkland,32,Republican,57760,,0,,0,,0,,0,,0,,0
+36,46,California,CA,16,Zoe Lofgren,68,Democrat,100267,Daniel Sahagun,25,Republican,36263,,0,,0,,0,,0,,0,,0
+37,47,California,CA,17,Sam Farr,66,Democrat,79771,Jeff Taylor,30,Republican,36573,,0,,0,,0,,0,,0,,0
+38,48,California,CA,18,Dennis Cardoza,58,Democrat,60684,Michael Berryhill,42,Republican,44609,,0,,0,,0,,0,,0,,0
+39,49,California,CA,19,Jeff Denham,65,Republican,109863,Loraine Goodwin,35,Democrat,58832,,0,,0,,0,,0,,0,,0
+40,50,California,CA,20,Andy Vidak,50,Republican,34584,Jim Costa,50,Democrat,33936,,0,,0,,0,,0,,0,,0
+41,51,California,CA,21,Devin Nunes,,Republican,0,,0,,0,,0,,0,,0,,0,,0,,0
+42,52,California,CA,22,Kevin McCarthy,,Republican,0,,0,,0,,0,,0,,0,,0,,0,,0
+43,53,California,CA,23,Lois Capps,57,Democrat,100140,Tom Watson,38,Republican,66309,,0,,0,,0,,0,,0,,0
+44,54,California,CA,24,Elton Gallegly,60,Republican,135573,Timothy Allison,40,Democrat,89897,,0,,0,,0,,0,,0,,0
+45,55,California,CA,25,Buck McKeon,62,Republican,102182,Jackie Conaway,38,Democrat,62906,,0,,0,,0,,0,,0,,0
+46,56,California,CA,26,David Dreier,54,Republican,100182,Russ Warner,37,Democrat,67478,,0,,0,,0,,0,,0,,0
+47,57,California,CA,27,Brad Sherman,65,Democrat,88192,Mark Reed,35,Republican,47059,,0,,0,,0,,0,,0,,0
+48,58,California,CA,28,Howard Berman,70,Democrat,76169,Merlin Froyd,22,Republican,24419,,0,,0,,0,,0,,0,,0
+49,59,California,CA,29,Adam Schiff,65,Democrat,89863,John Colbert,32,Republican,44001,,0,,0,,0,,0,,0,,0
+50,60,California,CA,30,Henry Waxman,65,Democrat,128537,Charles Wilkerson,32,Republican,64132,,0,,0,,0,,0,,0,,0
+51,61,California,CA,31,Xavier Becerra,84,Democrat,64942,Stephen Smith,16,Republican,12411,,0,,0,,0,,0,,0,,0
+52,62,California,CA,32,Judy Chu,71,Democrat,67862,Edward Schmerling,29,Republican,27522,,0,,0,,0,,0,,0,,0
+53,63,California,CA,33,Karen Bass,86,Democrat,111982,James Andion,14,Republican,17979,,0,,0,,0,,0,,0,,0
+54,64,California,CA,34,Lucille Roybal-Allard,77,Democrat,60078,Wayne Miller,23,Republican,17696,,0,,0,,0,,0,,0,,0
+55,65,California,CA,35,Maxine Waters,79,Democrat,84235,Bruce Brown,21,Republican,22188,,0,,0,,0,,0,,0,,0
+56,66,California,CA,36,Jane Harman,60,Democrat,97703,Mattie Fein,35,Republican,57513,,0,,0,,0,,0,,0,,0
+57,67,California,CA,37,Laura Richardson,69,Democrat,72889,Star Parker,23,Republican,24440,,0,,0,,0,,0,,0,,0
+58,68,California,CA,38,Grace Napolitano,74,Democrat,75069,Robert Vaughn,26,Republican,26697,,0,,0,,0,,0,,0,,0
+59,69,California,CA,39,Linda Sanchez,64,Democrat,72011,Larry Andre,32,Republican,36644,,0,,0,,0,,0,,0,,0
+60,70,California,CA,40,Ed Royce,67,Republican,111538,Christina Avalos,33,Democrat,53813,,0,,0,,0,,0,,0,,0
+61,71,California,CA,41,Jerry Lewis,64,Republican,118727,Pat Meagher,36,Democrat,68107,,0,,0,,0,,0,,0,,0
+62,72,California,CA,42,Gary Miller,62,Republican,117461,Michael Williamson,32,Democrat,59468,,0,,0,,0,,0,,0,,0
+63,73,California,CA,43,Joe Baca,65,Democrat,61942,Scott Folkens,35,Republican,33685,,0,,0,,0,,0,,0,,0
+64,74,California,CA,44,Ken Calvert,56,Republican,101674,Bill Hedrick,44,Democrat,80233,,0,,0,,0,,0,,0,,0
+65,75,California,CA,45,Mary Bono Mack,52,Republican,101602,Steve Pougnet,42,Democrat,81531,,0,,0,,0,,0,,0,,0
+66,76,California,CA,46,Dana Rohrabacher,62,Republican,126214,Ken Arnold,38,Democrat,76056,,0,,0,,0,,0,,0,,0
+67,77,California,CA,47,Loretta Sanchez,51,Democrat,41502,Van Tran,41,Republican,33522,,0,,0,,0,,0,,0,,0
+68,78,California,CA,48,John Campbell,60,Republican,134064,Beth Krom,36,Democrat,80258,,0,,0,,0,,0,,0,,0
+69,79,California,CA,49,Darrell Issa,63,Republican,98208,Howard Katz,32,Democrat,49303,,0,,0,,0,,0,,0,,0
+70,80,California,CA,50,Brian Bilbray,57,Republican,108260,Francine Busby,39,Democrat,74215,,0,,0,,0,,0,,0,,0
+71,81,California,CA,51,Bob Filner,60,Democrat,62438,Nick Popaditch,40,Republican,42098,,0,,0,,0,,0,,0,,0
+72,82,California,CA,52,Duncan D. Hunter,63,Republican,104650,Ray Lutz,32,Democrat,52999,,0,,0,,0,,0,,0,,0
+73,83,California,CA,53,Susan Davis,62,Democrat,78345,Michael Crimmins,35,Republican,43697,,0,,0,,0,,0,,0,,0
+74,86,Colorado,CO,1,Diana DeGette,67,Democrat,127188,Mike Fallon,29,Republican,54446,,0,,0,,0,,0,,0,,0
+75,87,Colorado,CO,2,Jared Polis,57,Democrat,140997,Stephen Bailey,38,Republican,93520,,0,,0,,0,,0,,0,,0
+76,88,Colorado,CO,3,Scott Tipton,50,Republican,126227,John Salazar,46,Democrat,114763,,0,,0,,0,,0,,0,,0
+77,89,Colorado,CO,4,Cory Gardner,53,Republican,129919,Betsy Markey,41,Democrat,99907,,0,,0,,0,,0,,0,,0
+78,90,Colorado,CO,5,Doug Lamborn,66,Republican,149187,Kevin Bradley,29,Democrat,66243,,0,,0,,0,,0,,0,,0
+79,91,Colorado,CO,6,Mike Coffman,66,Republican,205493,John Flerlage,31,Democrat,97133,,0,,0,,0,,0,,0,,0
+80,92,Colorado,CO,7,Ed Perlmutter,53,Democrat,105616,Ryan Frazier,42,Republican,83742,,0,,0,,0,,0,,0,,0
+81,95,Connecticut,CT,1,John Larson,61,Democrat,139113,Ann Brickley,37,Republican,84084,,0,,0,,0,,0,,0,,0
+82,96,Connecticut,CT,2,Joe Courtney,60,Democrat,146554,Janet Peckinpaugh,39,Republican,94698,,0,,0,,0,,0,,0,,0
+83,97,Connecticut,CT,3,Rosa DeLauro,65,Democrat,142486,Jerry Labriola,34,Republican,73714,,0,,0,,0,,0,,0,,0
+84,98,Connecticut,CT,4,Jim Himes,53,Democrat,113485,Dan Debicella,47,Republican,100376,,0,,0,,0,,0,,0,,0
+85,99,Connecticut,CT,5,Chris Murphy,54,Democrat,120339,Sam Caligiuri,46,Republican,101097,,0,,0,,0,,0,,0,,0
+86,101,Delaware,DE,1,John Carney,57,Democrat,173443,Glen Urquhart,41,Republican,125408,,0,,0,,0,,0,,0,,0
+87,104,Florida,FL,1,Jeff Miller,80,Republican,169511,Joe Cantrell,11,Other: No Party Affiliation,23064,John Krause,9,Other: No Party Affiliation,18106,,0,,0,,0,,0
+88,105,Florida,FL,2,Steve Southerland,54,Republican,134912,Allen Boyd,41,Democrat,104415,,0,,0,,0,,0,,0,,0
+89,106,Florida,FL,3,Corrine Brown,63,Democrat,92537,Michael Yost,34,Republican,50400,,0,,0,,0,,0,,0,,0
+90,107,Florida,FL,4,Ander Crenshaw,77,Republican,175162,Troy Stanley,23,Other: No Party Affiliation,51620,,0,,0,,0,,0,,0,,0
+91,108,Florida,FL,5,Richard Nugent,67,Republican,208443,Jim Piccillo,33,Democrat,100649,,0,,0,,0,,0,,0,,0
+92,109,Florida,FL,6,Cliff Stearns,71,Republican,178779,Steve Schonberg,29,Other: No Party Affiliation,71381,,0,,0,,0,,0,,0,,0
+93,110,Florida,FL,7,John Mica,69,Republican,184868,Heather Beaven,31,Democrat,82999,,0,,0,,0,,0,,0,,0
+94,111,Florida,FL,8,Daniel Webster,56,Republican,123464,Alan Grayson,38,Democrat,84036,,0,,0,,0,,0,,0,,0
+95,112,Florida,FL,9,Gus Bilirakis,71,Republican,162891,Anita de Palma,29,Democrat,65295,,0,,0,,0,,0,,0,,0
+96,113,Florida,FL,10,Bill Young,66,Republican,137837,Charlie Justice,34,Democrat,71228,,0,,0,,0,,0,,0,,0
+97,114,Florida,FL,11,Kathy Castor,60,Democrat,89211,Mike Prendergast,40,Republican,60033,,0,,0,,0,,0,,0,,0
+98,115,Florida,FL,12,Dennis Ross,48,Republican,101245,Lori Edwards,41,Democrat,86515,,0,,0,,0,,0,,0,,0
+99,116,Florida,FL,13,Vern Buchanan,69,Republican,183615,James Golden,31,Democrat,82992,,0,,0,,0,,0,,0,,0
+100,117,Florida,FL,14,Connie Mack,69,Republican,187331,James Roach,27,Democrat,74067,,0,,0,,0,,0,,0,,0
+101,118,Florida,FL,15,Bill Posey,65,Republican,156865,Shannon Roberts,35,Democrat,85440,,0,,0,,0,,0,,0,,0
+102,119,Florida,FL,16,Tom Rooney,67,Republican,157405,Jim Horn,33,Democrat,77767,,0,,0,,0,,0,,0,,0
+103,120,Florida,FL,17,Frederica Wilson,86,Democrat,104036,Roderick Vereen,14,Other: No Party Affiliation,16538,,0,,0,,0,,0,,0,,0
+104,121,Florida,FL,18,Ileana Ros-Lehtinen,69,Republican,100068,Rolando Banciella,31,Democrat,45392,,0,,0,,0,,0,,0,,0
+105,122,Florida,FL,19,Ted Deutch,63,Democrat,128760,Joe Budd,37,Republican,76555,,0,,0,,0,,0,,0,,0
+106,123,Florida,FL,20,Debbie Wasserman Schultz,60,Democrat,98417,Karen Harrington,38,Republican,62222,,0,,0,,0,,0,,0,,0
+107,124,Florida,FL,21,Mario Diaz-Balart,,Republican,0,,0,,0,,0,,0,,0,,0,,0,,0
+108,125,Florida,FL,22,Allen West,54,Republican,115411,Ron Klein,46,Democrat,97051,,0,,0,,0,,0,,0,,0
+109,126,Florida,FL,23,Alcee Hastings,79,Democrat,96815,Bernard Sansaricq,21,Republican,25627,,0,,0,,0,,0,,0,,0
+110,127,Florida,FL,24,Sandra Adams,60,Republican,145932,Suzanne Kosmas,40,Democrat,98612,,0,,0,,0,,0,,0,,0
+111,128,Florida,FL,25,David Rivera,52,Republican,74386,Joe Garcia,42,Democrat,60123,,0,,0,,0,,0,,0,,0
+112,131,Georgia,GA,1,Jack Kingston,72,Republican,117121,Oscar Harris,28,Democrat,46330,,0,,0,,0,,0,,0,,0
+113,132,Georgia,GA,2,Sanford Bishop,51,Democrat,86370,Mike Keown,49,Republican,81594,,0,,0,,0,,0,,0,,0
+114,133,Georgia,GA,3,Lynn Westmoreland,69,Republican,158966,Frank Saunders,31,Democrat,71036,,0,,0,,0,,0,,0,,0
+115,134,Georgia,GA,4,Hank Johnson,75,Democrat,130865,Lisbeth Carter,25,Republican,44563,,0,,0,,0,,0,,0,,0
+116,135,Georgia,GA,5,John Lewis,74,Democrat,129795,Fenn Little,26,Republican,46318,,0,,0,,0,,0,,0,,0
+117,136,Georgia,GA,6,Tom Price,,Republican,0,,0,,0,,0,,0,,0,,0,,0,,0
+118,137,Georgia,GA,7,Rob Woodall,67,Republican,160771,Doug Heckman,33,Democrat,78823,,0,,0,,0,,0,,0,,0
+119,138,Georgia,GA,8,Austin Scott,53,Republican,102025,Jim Marshall,47,Democrat,91799,,0,,0,,0,,0,,0,,0
+120,139,Georgia,GA,9,Tom Graves,,Republican,0,,0,,0,,0,,0,,0,,0,,0,,0
+121,140,Georgia,GA,10,Paul Broun,67,Republican,137263,Russell Edwards,33,Democrat,66574,,0,,0,,0,,0,,0,,0
+122,141,Georgia,GA,11,Phil Gingrey,,Republican,0,,0,,0,,0,,0,,0,,0,,0,,0
+123,142,Georgia,GA,12,John Barrow,57,Democrat,91636,Ray McKinney,43,Republican,69954,,0,,0,,0,,0,,0,,0
+124,143,Georgia,GA,13,David Scott,70,Democrat,138993,Mike Crane,30,Republican,58266,,0,,0,,0,,0,,0,,0
+125,146,Hawaii,HI,1,Colleen Hanabusa,53,Democrat,93930,Charles Djou,47,Republican,82499,,0,,0,,0,,0,,0,,0
+126,147,Hawaii,HI,2,Mazie Hirono,72,Democrat,132280,John Willoughby,25,Republican,46400,,0,,0,,0,,0,,0,,0
+127,150,Idaho,ID,1,Raul Labrador,51,Republican,126055,Walt Minnick,41,Democrat,101870,,0,,0,,0,,0,,0,,0
+128,151,Idaho,ID,2,Mike Simpson,69,Republican,136864,Mike Crawford,24,Democrat,48594,,0,,0,,0,,0,,0,,0
+129,155,Illinois,IL,1,Bobby Rush,80,Democrat,145044,Ray Wardingley,16,Republican,28924,,0,,0,,0,,0,,0,,0
+130,156,Illinois,IL,2,"Jesse Jackson, Jr.",80,Democrat,147112,Isaac Hayes,14,Republican,25425,,0,,0,,0,,0,,0,,0
+131,157,Illinois,IL,3,Daniel Lipinski,70,Democrat,113756,Michael Bendas,24,Republican,39828,,0,,0,,0,,0,,0,,0
+132,158,Illinois,IL,4,Luis Gutierrez,77,Democrat,61830,Israel Vasquez,14,Republican,11497,,0,,0,,0,,0,,0,,0
+133,159,Illinois,IL,5,Mike Quigley,71,Democrat,106185,David Ratowitz,25,Republican,38269,,0,,0,,0,,0,,0,,0
+134,160,Illinois,IL,6,Peter Roskam,64,Republican,113971,Benjamin Lowe,36,Democrat,64962,,0,,0,,0,,0,,0,,0
+135,161,Illinois,IL,7,Danny Davis,81,Democrat,146159,Mark Weiman,16,Republican,29005,,0,,0,,0,,0,,0,,0
+136,162,Illinois,IL,8,Joe Walsh,49,Republican,97403,Melissa Bean,48,Democrat,96850,,0,,0,,0,,0,,0,,0
+137,163,Illinois,IL,9,Jan Schakowsky,66,Democrat,114969,Joel Pollak,31,Republican,54274,,0,,0,,0,,0,,0,,0
+138,164,Illinois,IL,10,Robert Dold,51,Republican,108518,Daniel Seals,49,Democrat,103512,,0,,0,,0,,0,,0,,0
+139,165,Illinois,IL,11,Adam Kinzinger,57,Republican,128250,Debbie Halvorson,43,Democrat,94939,,0,,0,,0,,0,,0,,0
+140,166,Illinois,IL,12,Jerry Costello,60,Democrat,119878,Teri Newman,37,Republican,73226,,0,,0,,0,,0,,0,,0
+141,167,Illinois,IL,13,Judy Biggert,64,Republican,149857,Scott Harper,36,Democrat,84290,,0,,0,,0,,0,,0,,0
+142,168,Illinois,IL,14,Randy Hultgren,51,Republican,111808,Bill Foster,45,Democrat,97792,,0,,0,,0,,0,,0,,0
+143,169,Illinois,IL,15,Tim Johnson,64,Republican,136499,David Gill,36,Democrat,75688,,0,,0,,0,,0,,0,,0
+144,170,Illinois,IL,16,Donald Manzullo,65,Republican,138100,George Gaulrapp,31,Democrat,65935,,0,,0,,0,,0,,0,,0
+145,171,Illinois,IL,17,Bobby Schilling,53,Republican,103668,Phil Hare,43,Democrat,84820,,0,,0,,0,,0,,0,,0
+146,172,Illinois,IL,18,Aaron Schock,69,Republican,152701,Deirdre Hirner,26,Democrat,56958,,0,,0,,0,,0,,0,,0
+147,173,Illinois,IL,19,John Shimkus,71,Republican,166041,Tim Bagwell,29,Democrat,67068,,0,,0,,0,,0,,0,,0
+148,175,Indiana,IN,1,Peter Visclosky,59,Democrat,99151,Mark Leyva,39,Republican,65475,,0,,0,,0,,0,,0,,0
+149,176,Indiana,IN,2,Joe Donnelly,48,Democrat,91330,Jackie Walorski,47,Republican,88787,,0,,0,,0,,0,,0,,0
+150,177,Indiana,IN,3,Marlin Stutzman,63,Republican,116030,Thomas Hayhurst,33,Democrat,61149,,0,,0,,0,,0,,0,,0
+151,178,Indiana,IN,4,Todd Rokita,69,Republican,137988,David Sanders,26,Democrat,52542,,0,,0,,0,,0,,0,,0
+152,179,Indiana,IN,5,Dan Burton,62,Republican,146862,Tim Crawford,25,Democrat,60011,,0,,0,,0,,0,,0,,0
+153,180,Indiana,IN,6,Mike Pence,67,Republican,126015,Barry Welsh,30,Democrat,56639,,0,,0,,0,,0,,0,,0
+154,181,Indiana,IN,7,Andre Carson,59,Democrat,85938,Marvin Scott,38,Republican,55169,,0,,0,,0,,0,,0,,0
+155,182,Indiana,IN,8,Larry Bucshon,57,Republican,115778,Trent Van Haaften,37,Democrat,75480,,0,,0,,0,,0,,0,,0
+156,183,Indiana,IN,9,Todd Young,52,Republican,118055,Baron Hill,42,Democrat,95301,,0,,0,,0,,0,,0,,0
+157,186,Iowa,IA,1,Bruce Braley,49,Democrat,103931,Benjamin Lange,48,Republican,99976,,0,,0,,0,,0,,0,,0
+158,187,Iowa,IA,2,Dave Loebsack,51,Democrat,115332,Mariannette Miller-Meeks,46,Republican,104046,,0,,0,,0,,0,,0,,0
+159,188,Iowa,IA,3,Leonard Boswell,51,Democrat,120061,Brad Zaun,47,Republican,110506,,0,,0,,0,,0,,0,,0
+160,189,Iowa,IA,4,Tom Latham,66,Republican,152124,Bill Maske,32,Democrat,73952,,0,,0,,0,,0,,0,,0
+161,190,Iowa,IA,5,Steve King,66,Republican,127974,Matthew Campbell,32,Democrat,62856,,0,,0,,0,,0,,0,,0
+162,193,Kansas,KS,1,Tim Huelskamp,74,Republican,140447,Alan Jilka,23,Democrat,43385,,0,,0,,0,,0,,0,,0
+163,194,Kansas,KS,2,Lynn Jenkins,63,Republican,128083,Cheryl Hudspeth,32,Democrat,65448,,0,,0,,0,,0,,0,,0
+164,195,Kansas,KS,3,Kevin Yoder,59,Republican,134692,Stephene Moore,38,Democrat,87920,,0,,0,,0,,0,,0,,0
+165,196,Kansas,KS,4,Mike Pompeo,59,Republican,117171,Raj Goyle,36,Democrat,71866,,0,,0,,0,,0,,0,,0
+166,198,Kentucky,KY,1,Ed Whitfield,71,Republican,153365,Charles Hatchett,29,Democrat,61935,,0,,0,,0,,0,,0,,0
+167,199,Kentucky,KY,2,Brett Guthrie,68,Republican,155877,Ed Marksberry,32,Democrat,73737,,0,,0,,0,,0,,0,,0
+168,200,Kentucky,KY,3,John Yarmuth,55,Democrat,138992,Todd Lally,44,Republican,112469,,0,,0,,0,,0,,0,,0
+169,201,Kentucky,KY,4,Geoff Davis,69,Republican,151684,John Waltz,31,Democrat,66599,,0,,0,,0,,0,,0,,0
+170,202,Kentucky,KY,5,Hal Rogers,77,Republican,150842,Jim Holbert,23,Democrat,43997,,0,,0,,0,,0,,0,,0
+171,203,Kentucky,KY,6,Ben Chandler,50,Democrat,119845,Andy Barr,50,Republican,119245,,0,,0,,0,,0,,0,,0
+172,205,Louisiana,LA,1,Steve Scalise,79,Republican,157150,Myron Katz,19,Democrat,38400,,0,,0,,0,,0,,0,,0
+173,206,Louisiana,LA,2,Cedric Richmond,65,Democrat,83653,Joseph Cao,33,Republican,43364,,0,,0,,0,,0,,0,,0
+174,207,Louisiana,LA,3,Jeff Landry,64,Republican,108957,Ravi Sangisetty,36,Democrat,61909,,0,,0,,0,,0,,0,,0
+175,208,Louisiana,LA,4,John Fleming,62,Republican,105206,David Melville,32,Democrat,54598,,0,,0,,0,,0,,0,,0
+176,209,Louisiana,LA,5,Rodney Alexander,79,Republican,122030,Tom Gibbs,21,Independent,33279,,0,,0,,0,,0,,0,,0
+177,210,Louisiana,LA,6,Bill Cassidy,66,Republican,138552,Merritt McDonald,34,Democrat,72537,,0,,0,,0,,0,,0,,0
+178,211,Louisiana,LA,7,Charles Boustany,,Republican,0,,0,,0,,0,,0,,0,,0,,0,,0
+179,213,Maine,ME,1,Chellie Pingree,57,Democrat,166196,Dean Scontras,43,Republican,126218,,0,,0,,0,,0,,0,,0
+180,214,Maine,ME,2,Mike Michaud,55,Democrat,146577,Jason Levesque,45,Republican,119382,,0,,0,,0,,0,,0,,0
+181,217,Maryland,MD,1,Andy Harris,55,Republican,146272,Frank Kratovil,42,Democrat,111237,,0,,0,,0,,0,,0,,0
+182,218,Maryland,MD,2,Dutch Ruppersberger,64,Democrat,127110,Marcelo Cardarelli,33,Republican,66382,,0,,0,,0,,0,,0,,0
+183,219,Maryland,MD,3,John Sarbanes,61,Democrat,137058,Jim Wilhelm,36,Republican,81916,,0,,0,,0,,0,,0,,0
+184,220,Maryland,MD,4,Donna Edwards,84,Democrat,148857,Robert Broadus,16,Republican,29211,,0,,0,,0,,0,,0,,0
+185,221,Maryland,MD,5,Steny Hoyer,64,Democrat,143620,Charles Lollar,35,Republican,79122,,0,,0,,0,,0,,0,,0
+186,222,Maryland,MD,6,Roscoe Bartlett,62,Republican,142584,Andrew Duck,33,Democrat,75807,,0,,0,,0,,0,,0,,0
+187,223,Maryland,MD,7,Elijah Cummings,75,Democrat,142395,Frank Mirabile,23,Republican,43930,,0,,0,,0,,0,,0,,0
+188,224,Maryland,MD,8,Chris Van Hollen,73,Democrat,137842,Michael Philips,25,Republican,47759,,0,,0,,0,,0,,0,,0
+189,226,Massachusetts,MA,1,John Olver,60,Democrat,127857,Bill Gunn,35,Republican,74145,,0,,0,,0,,0,,0,,0
+190,227,Massachusetts,MA,2,Richard Neal,57,Democrat,122547,Tom Wesley,43,Republican,91181,,0,,0,,0,,0,,0,,0
+191,228,Massachusetts,MA,3,Jim McGovern,56,Democrat,122357,Marty Lamb,39,Republican,84972,,0,,0,,0,,0,,0,,0
+192,229,Massachusetts,MA,4,Barney Frank,54,Democrat,125825,Sean Bielat,43,Republican,101315,,0,,0,,0,,0,,0,,0
+193,230,Massachusetts,MA,5,Niki Tsongas,55,Democrat,122676,Jon Golnik,42,Republican,94501,,0,,0,,0,,0,,0,,0
+194,231,Massachusetts,MA,6,John Tierney,57,Democrat,142456,Bill Hudak,43,Republican,107739,,0,,0,,0,,0,,0,,0
+195,232,Massachusetts,MA,7,Ed Markey,66,Democrat,141364,Gerry Dembrowski,34,Republican,73006,,0,,0,,0,,0,,0,,0
+196,233,Massachusetts,MA,8,Mike Capuano,,Democrat,0,,0,,0,,0,,0,,0,,0,,0,,0
+197,234,Massachusetts,MA,9,Stephen Lynch,68,Democrat,156079,Vernon Harrison,26,Republican,60120,,0,,0,,0,,0,,0,,0
+198,235,Massachusetts,MA,10,Bill Keating,47,Democrat,132582,Jeff Perry,42,Republican,119820,,0,,0,,0,,0,,0,,0
+199,237,Michigan,MI,1,Dan Benishek,52,Republican,120077,Gary McDowell,41,Democrat,94805,,0,,0,,0,,0,,0,,0
+200,238,Michigan,MI,2,Bill Huizenga,65,Republican,149235,Fred Johnson,32,Democrat,72745,,0,,0,,0,,0,,0,,0
+201,239,Michigan,MI,3,Justin Amash,60,Republican,136051,Pat Miles,37,Democrat,85463,,0,,0,,0,,0,,0,,0
+202,240,Michigan,MI,4,Dave Camp,66,Republican,147622,Jerry Campbell,31,Democrat,68123,,0,,0,,0,,0,,0,,0
+203,241,Michigan,MI,5,Dale Kildee,53,Democrat,107212,John Kupiec,44,Republican,89671,,0,,0,,0,,0,,0,,0
+204,242,Michigan,MI,6,Fred Upton,62,Republican,123133,Don Cooney,34,Democrat,66725,,0,,0,,0,,0,,0,,0
+205,243,Michigan,MI,7,Tim Walberg,50,Republican,114384,Mark Schauer,45,Democrat,103650,,0,,0,,0,,0,,0,,0
+206,244,Michigan,MI,8,Mike Rogers,64,Republican,157412,Lance Enderle,34,Democrat,84392,,0,,0,,0,,0,,0,,0
+207,245,Michigan,MI,9,Gary Peters,50,Democrat,126155,Rocky Raczkowski,47,Republican,119673,,0,,0,,0,,0,,0,,0
+208,246,Michigan,MI,10,Candice Miller,72,Republican,168120,Henry Yanez,25,Democrat,58335,,0,,0,,0,,0,,0,,0
+209,247,Michigan,MI,11,Thaddeus McCotter,59,Republican,142268,Natalie Mosher,38,Democrat,92221,,0,,0,,0,,0,,0,,0
+210,248,Michigan,MI,12,Sander Levin,61,Democrat,124667,Don Volaric,35,Republican,71371,,0,,0,,0,,0,,0,,0
+211,249,Michigan,MI,13,Hansen Clarke,79,Democrat,100507,John Hauler,19,Republican,23452,,0,,0,,0,,0,,0,,0
+212,250,Michigan,MI,14,John Conyers,77,Democrat,115250,Don Ukrainec,20,Republican,29894,,0,,0,,0,,0,,0,,0
+213,251,Michigan,MI,15,John Dingell,57,Democrat,118117,Rob Steele,40,Republican,83305,,0,,0,,0,,0,,0,,0
+214,253,Minnesota,MN,1,Tim Walz,49,Democrat,122390,Randy Demmer,44,Republican,109261,,0,,0,,0,,0,,0,,0
+215,254,Minnesota,MN,2,John Kline,63,Republican,181340,Shelley Madore,37,Democrat,104808,,0,,0,,0,,0,,0,,0
+216,255,Minnesota,MN,3,Erik Paulsen,59,Republican,161178,Jim Meffert,37,Democrat,100240,,0,,0,,0,,0,,0,,0
+217,256,Minnesota,MN,4,Betty McCollum,59,Democrat,136746,Teresa Collett,35,Republican,80135,,0,,0,,0,,0,,0,,0
+218,257,Minnesota,MN,5,Keith Ellison,68,Democrat,154830,Joel Demos,24,Republican,55224,,0,,0,,0,,0,,0,,0
+219,258,Minnesota,MN,6,Michele Bachmann,53,Republican,159479,Tarryl Clark,40,Democrat,120846,,0,,0,,0,,0,,0,,0
+220,259,Minnesota,MN,7,Collin Peterson,55,Democrat,133096,Lee Byberg,38,Republican,90650,,0,,0,,0,,0,,0,,0
+221,260,Minnesota,MN,8,Chip Cravaack,48,Republican,133485,James Oberstar,47,Democrat,129083,,0,,0,,0,,0,,0,,0
+222,261,Mississippi,MS,1,Alan Nunnelee,55,Republican,116036,Travis Childers,41,Democrat,85400,,0,,0,,0,,0,,0,,0
+223,262,Mississippi,MS,2,Bennie Thompson,62,Democrat,101257,Bill Marcy,37,Republican,61202,,0,,0,,0,,0,,0,,0
+224,263,Mississippi,MS,3,Gregg Harper,68,Republican,128160,Joel Gill,31,Democrat,58605,,0,,0,,0,,0,,0,,0
+225,264,Mississippi,MS,4,Steven Palazzo,52,Republican,101318,Gene Taylor,47,Democrat,91838,,0,,0,,0,,0,,0,,0
+226,266,Missouri,MO,1,Lacy Clay,74,Democrat,134295,Robyn Hamlin,24,Republican,43260,,0,,0,,0,,0,,0,,0
+227,267,Missouri,MO,2,Todd Akin,68,Republican,179731,Arthur Lieber,29,Democrat,77249,,0,,0,,0,,0,,0,,0
+228,268,Missouri,MO,3,Russ Carnahan,49,Democrat,99011,Ed Martin,47,Republican,94593,,0,,0,,0,,0,,0,,0
+229,269,Missouri,MO,4,Vicky Hartzler,50,Republican,113500,Ike Skelton,45,Democrat,101507,,0,,0,,0,,0,,0,,0
+230,270,Missouri,MO,5,Emanuel Cleaver,53,Democrat,101076,Jacob Turk,44,Republican,84415,,0,,0,,0,,0,,0,,0
+231,271,Missouri,MO,6,Sam Graves,69,Republican,153973,Clint Hylton,31,Democrat,67717,,0,,0,,0,,0,,0,,0
+232,272,Missouri,MO,7,Billy Long,63,Republican,140260,Scott Eckersley,30,Democrat,67073,,0,,0,,0,,0,,0,,0
+233,273,Missouri,MO,8,Jo Ann Emerson,66,Republican,128515,Tommy Sowers,29,Democrat,56362,,0,,0,,0,,0,,0,,0
+234,274,Missouri,MO,9,Blaine Luetkemeyer,78,Republican,162512,Christopher Dwyer,22,Other: Libertarian,46778,,0,,0,,0,,0,,0,,0
+235,275,Montana,MT,1,Denny Rehberg,60,Republican,217223,Dennis McDonald,34,Democrat,121297,,0,,0,,0,,0,,0,,0
+236,277,Nebraska,NE,1,Jeff Fortenberry,71,Republican,115623,Ivy Harper,29,Democrat,46339,,0,,0,,0,,0,,0,,0
+237,278,Nebraska,NE,2,Lee Terry,61,Republican,88293,Tom White,39,Democrat,55409,,0,,0,,0,,0,,0,,0
+238,279,Nebraska,NE,3,Adrian Smith,70,Republican,116502,Rebekah Davis,18,Democrat,29708,,0,,0,,0,,0,,0,,0
+239,282,Nevada,NV,1,Shelley Berkley,62,Democrat,102870,Kenneth Wegner,35,Republican,58920,,0,,0,,0,,0,,0,,0
+240,283,Nevada,NV,2,Dean Heller,63,Republican,169286,Nancy Price,33,Democrat,87226,,0,,0,,0,,0,,0,,0
+241,284,Nevada,NV,3,Joe Heck,48,Republican,128703,Dina Titus,47,Democrat,126781,,0,,0,,0,,0,,0,,0
+242,287,New Hampshire,NH,1,Frank Guinta,54,Republican,120588,Carol Shea-Porter,43,Democrat,95689,,0,,0,,0,,0,,0,,0
+243,288,New Hampshire,NH,2,Charlie Bass,48,Republican,108550,Ann Kuster,47,Democrat,104874,,0,,0,,0,,0,,0,,0
+244,289,New Jersey,NJ,1,Robert Andrews,63,Democrat,99792,Dale Glading,35,Republican,56304,,0,,0,,0,,0,,0,,0
+245,290,New Jersey,NJ,2,Frank LoBiondo,66,Republican,106117,Gary Stein,31,Democrat,49689,,0,,0,,0,,0,,0,,0
+246,291,New Jersey,NJ,3,Jon Runyan,50,Republican,106175,John Adler,47,Democrat,100069,,0,,0,,0,,0,,0,,0
+247,292,New Jersey,NJ,4,Chris Smith,69,Republican,128743,Howard Kleinhendler,28,Democrat,51503,,0,,0,,0,,0,,0,,0
+248,293,New Jersey,NJ,5,Scott Garrett,65,Republican,119478,Tod Theise,33,Democrat,60045,,0,,0,,0,,0,,0,,0
+249,294,New Jersey,NJ,6,Frank Pallone,55,Democrat,81339,Anna Little,44,Republican,65118,,0,,0,,0,,0,,0,,0
+250,295,New Jersey,NJ,7,Leonard Lance,59,Republican,104642,Ed Potosnak,41,Democrat,71486,,0,,0,,0,,0,,0,,0
+251,296,New Jersey,NJ,8,Bill Pascrell,63,Democrat,87156,Roland Straten,36,Republican,50547,,0,,0,,0,,0,,0,,0
+252,297,New Jersey,NJ,9,Steve Rothman,61,Democrat,77993,Michael Agosta,38,Republican,48965,,0,,0,,0,,0,,0,,0
+253,298,New Jersey,NJ,10,Donald Payne,85,Democrat,92827,Michael Alonso,13,Republican,14156,,0,,0,,0,,0,,0,,0
+254,299,New Jersey,NJ,11,Rodney Frelinghuysen,67,Republican,122076,Douglas Herbert,31,Democrat,55441,,0,,0,,0,,0,,0,,0
+255,300,New Jersey,NJ,12,Rush Holt,53,Democrat,107147,Scott Sipprelle,46,Republican,93311,,0,,0,,0,,0,,0,,0
+256,301,New Jersey,NJ,13,Albio Sires,74,Democrat,60473,Henrietta Dwyer,23,Republican,18897,,0,,0,,0,,0,,0,,0
+257,303,New Mexico,NM,1,Martin Heinrich,52,Democrat,110046,Jonathan Barela,48,Republican,103207,,0,,0,,0,,0,,0,,0
+258,304,New Mexico,NM,2,Steve Pearce,55,Republican,91954,Harry Teague,45,Democrat,73995,,0,,0,,0,,0,,0,,0
+259,305,New Mexico,NM,3,Ben R. Lujan,57,Democrat,118419,Tom Mullins,43,Republican,90039,,0,,0,,0,,0,,0,,0
+260,309,New York,NY,1,Timothy Bishop,51,Democrat,92252,Randy Altschuler,49,Republican,88791,,0,,0,,0,,0,,0,,0
+261,310,New York,NY,2,Steve Israel,57,Democrat,88242,John Gomez,43,Republican,66445,,0,,0,,0,,0,,0,,0
+262,311,New York,NY,3,Peter King,72,Republican,126142,Howard Kudler,28,Democrat,48963,,0,,0,,0,,0,,0,,0
+263,312,New York,NY,4,Carolyn McCarthy,54,Democrat,89828,Francis Becker,46,Republican,77483,,0,,0,,0,,0,,0,,0
+264,313,New York,NY,5,Gary Ackerman,62,Democrat,64765,James Milano,37,Republican,38300,,0,,0,,0,,0,,0,,0
+265,314,New York,NY,6,Gregory Meeks,85,Democrat,48968,Asher Taub,15,Republican,8710,,0,,0,,0,,0,,0,,0
+266,315,New York,NY,7,Joseph Crowley,80,Democrat,63364,Ken Reynolds,19,Republican,15076,,0,,0,,0,,0,,0,,0
+267,316,New York,NY,8,Jerrold Nadler,75,Democrat,85371,Susan Kone,25,Republican,28514,,0,,0,,0,,0,,0,,0
+268,317,New York,NY,9,Anthony Weiner,59,Democrat,47004,Bob Turner,41,Republican,33330,,0,,0,,0,,0,,0,,0
+269,318,New York,NY,10,Edolphus Towns,91,Democrat,82354,Diana Muniz,7,Republican,6537,,0,,0,,0,,0,,0,,0
+270,319,New York,NY,11,Yvette Clarke,90,Democrat,88645,Hugh Carr,10,Republican,9545,,0,,0,,0,,0,,0,,0
+271,320,New York,NY,12,Nydia Velazquez,93,Democrat,57039,Alice Gaffney,7,Other: Conservative,4388,,0,,0,,0,,0,,0,,0
+272,321,New York,NY,13,Mike Grimm,51,Republican,59346,Michael McMahon,48,Democrat,55056,,0,,0,,0,,0,,0,,0
+273,322,New York,NY,14,Carolyn Maloney,75,Democrat,72566,Ryan Brumberg,22,Republican,20983,,0,,0,,0,,0,,0,,0
+274,323,New York,NY,15,Charles Rangel,80,Democrat,74193,Michel Faulkner,10,Republican,9235,,0,,0,,0,,0,,0,,0
+275,324,New York,NY,16,Jose E. Serrano,95,Democrat,51731,Frank Della Valle,5,Republican,2488,,0,,0,,0,,0,,0,,0
+276,325,New York,NY,17,Eliot Engel,72,Democrat,85100,Anthony Mele,23,Republican,27705,,0,,0,,0,,0,,0,,0
+277,326,New York,NY,18,Nita Lowey,62,Democrat,104016,Jim Russell,38,Republican,63734,,0,,0,,0,,0,,0,,0
+278,327,New York,NY,19,Nan Hayworth,53,Republican,104154,John Hall,47,Democrat,92986,,0,,0,,0,,0,,0,,0
+279,328,New York,NY,20,Christopher Gibson,55,Republican,123511,Scott Murphy,45,Democrat,99255,,0,,0,,0,,0,,0,,0
+280,329,New York,NY,21,Paul Tonko,59,Democrat,116953,Theodore Danz,41,Republican,80382,,0,,0,,0,,0,,0,,0
+281,330,New York,NY,22,Maurice Hinchey,52,Democrat,90613,George Phillips,48,Republican,82385,,0,,0,,0,,0,,0,,0
+282,331,New York,NY,23,Bill Owens,48,Democrat,76389,Matthew Doheny,46,Republican,72714,,0,,0,,0,,0,,0,,0
+283,332,New York,NY,24,Richard Hanna,53,Republican,96686,Michael Arcuri,47,Democrat,86037,,0,,0,,0,,0,,0,,0
+284,333,New York,NY,25,Ann Marie Buerkle,50,Republican,99594,Daniel Maffei,50,Democrat,98935,,0,,0,,0,,0,,0,,0
+285,334,New York,NY,26,Christopher Lee,74,Republican,141856,Philip Fedele,26,Democrat,50247,,0,,0,,0,,0,,0,,0
+286,335,New York,NY,27,Brian Higgins,61,Democrat,110034,Leonard Roberto,39,Republican,70922,,0,,0,,0,,0,,0,,0
+287,336,New York,NY,28,Louise Slaughter,65,Democrat,96641,Jill Rowland,35,Republican,51670,,0,,0,,0,,0,,0,,0
+288,337,New York,NY,29,Thomas Reed,56,Republican,101219,Matthew Zeller,44,Democrat,78578,,0,,0,,0,,0,,0,,0
+289,339,North Carolina,NC,1,G.K. Butterfield,59,Democrat,102025,Ashley Woolard,41,Republican,70434,,0,,0,,0,,0,,0,,0
+290,340,North Carolina,NC,2,Renee Ellmers,50,Republican,91924,Bob Etheridge,49,Democrat,89829,,0,,0,,0,,0,,0,,0
+291,341,North Carolina,NC,3,Walter Jones,72,Republican,141978,Johnny Rouse,26,Democrat,50600,,0,,0,,0,,0,,0,,0
+292,342,North Carolina,NC,4,David Price,57,Democrat,152501,William Lawson,43,Republican,115715,,0,,0,,0,,0,,0,,0
+293,343,North Carolina,NC,5,Virginia Foxx,66,Republican,139543,Billy Kennedy,34,Democrat,72205,,0,,0,,0,,0,,0,,0
+294,344,North Carolina,NC,6,Howard Coble,75,Republican,157743,Sam Turner,25,Democrat,51655,,0,,0,,0,,0,,0,,0
+295,345,North Carolina,NC,7,Mike McIntyre,54,Democrat,112397,Ilario Pantano,46,Republican,96582,,0,,0,,0,,0,,0,,0
+296,346,North Carolina,NC,8,Larry Kissell,53,Democrat,87394,Harold Johnson,44,Republican,72626,,0,,0,,0,,0,,0,,0
+297,347,North Carolina,NC,9,Sue Myrick,69,Republican,158162,Jeff Doctor,31,Democrat,71065,,0,,0,,0,,0,,0,,0
+298,348,North Carolina,NC,10,Patrick McHenry,71,Republican,130393,Jeff Gregory,29,Democrat,52546,,0,,0,,0,,0,,0,,0
+299,349,North Carolina,NC,11,Heath Shuler,54,Democrat,129677,Jeff Miller,46,Republican,109029,,0,,0,,0,,0,,0,,0
+300,350,North Carolina,NC,12,Mel Watt,64,Democrat,102783,Greg Dority,34,Republican,55066,,0,,0,,0,,0,,0,,0
+301,351,North Carolina,NC,13,Brad Miller,55,Democrat,115127,William Randall,45,Republican,92588,,0,,0,,0,,0,,0,,0
+302,353,North Dakota,ND,1,Rick Berg,55,Republican,129586,Earl Pomeroy,45,Democrat,106371,,0,,0,,0,,0,,0,,0
+303,356,Ohio,OH,1,Steve Chabot,52,Republican,101691,Steve Driehaus,45,Democrat,87394,,0,,0,,0,,0,,0,,0
+304,357,Ohio,OH,2,Jean Schmidt,59,Republican,136120,Surya Yalamanchili,35,Democrat,80139,,0,,0,,0,,0,,0,,0
+305,358,Ohio,OH,3,Mike Turner,69,Republican,149135,Joe Roberts,31,Democrat,68127,,0,,0,,0,,0,,0,,0
+306,359,Ohio,OH,4,Jim Jordan,72,Republican,143495,Doug Litt,25,Democrat,49369,,0,,0,,0,,0,,0,,0
+307,360,Ohio,OH,5,Bob Latta,68,Republican,138571,Caleb Finkenbiner,26,Democrat,53671,,0,,0,,0,,0,,0,,0
+308,361,Ohio,OH,6,Bill Johnson,50,Republican,101558,Charlie Wilson,45,Democrat,91018,,0,,0,,0,,0,,0,,0
+309,362,Ohio,OH,7,Steve Austria,63,Republican,132923,Bill Conner,32,Democrat,67792,,0,,0,,0,,0,,0,,0
+310,363,Ohio,OH,8,John Boehner,66,Republican,139254,Justin Coussoule,30,Democrat,63593,,0,,0,,0,,0,,0,,0
+311,364,Ohio,OH,9,Marcy Kaptur,59,Democrat,117890,Rich Iott,41,Republican,81876,,0,,0,,0,,0,,0,,0
+312,365,Ohio,OH,10,Dennis Kucinich,53,Democrat,97880,Peter Corrigan,44,Republican,81658,,0,,0,,0,,0,,0,,0
+313,366,Ohio,OH,11,Marcia Fudge,82,Democrat,131398,Thomas Pekarek,18,Republican,27918,,0,,0,,0,,0,,0,,0
+314,367,Ohio,OH,12,Pat Tiberi,60,Republican,210033,Paula Brooks,37,Democrat,129736,,0,,0,,0,,0,,0,,0
+315,368,Ohio,OH,13,Betty Sutton,55,Democrat,115331,Tom Ganley,45,Republican,92608,,0,,0,,0,,0,,0,,0
+316,369,Ohio,OH,14,Steve LaTourette,65,Republican,147159,Bill O'Neill,31,Democrat,70754,,0,,0,,0,,0,,0,,0
+317,370,Ohio,OH,15,Steve Stivers,57,Republican,137441,Mary Jo Kilroy,39,Democrat,93578,,0,,0,,0,,0,,0,,0
+318,371,Ohio,OH,16,Jim Renacci,52,Republican,112902,John Boccieri,41,Democrat,89008,,0,,0,,0,,0,,0,,0
+319,372,Ohio,OH,17,Timothy Ryan,54,Democrat,100295,Jim Graham,30,Republican,56441,,0,,0,,0,,0,,0,,0
+320,373,Ohio,OH,18,Bob Gibbs,54,Republican,105727,Zack Space,40,Democrat,79257,,0,,0,,0,,0,,0,,0
+321,376,Oklahoma,OK,1,John Sullivan,77,Republican,151155,Angelia O'Dell,23,Independent,45646,,0,,0,,0,,0,,0,,0
+322,377,Oklahoma,OK,2,Dan Boren,57,Democrat,108184,Charles Thompson,43,Republican,83198,,0,,0,,0,,0,,0,,0
+323,378,Oklahoma,OK,3,Frank Lucas,78,Republican,161915,Frankie Robbins,22,Democrat,45684,,0,,0,,0,,0,,0,,0
+324,379,Oklahoma,OK,4,Tom Cole,,Republican,0,,0,,0,,0,,0,,0,,0,,0,,0
+325,380,Oklahoma,OK,5,James Lankford,62,Republican,122009,Billy Coyle,35,Democrat,68947,,0,,0,,0,,0,,0,,0
+326,383,Oregon,OR,1,David Wu,55,Democrat,152045,Rob Cornilles,42,Republican,116551,,0,,0,,0,,0,,0,,0
+327,384,Oregon,OR,2,Greg Walden,74,Republican,200925,Joyce Segers,26,Democrat,69508,,0,,0,,0,,0,,0,,0
+328,385,Oregon,OR,3,Earl Blumenauer,70,Democrat,187893,Delia Lopez,25,Republican,65589,,0,,0,,0,,0,,0,,0
+329,386,Oregon,OR,4,Peter DeFazio,54,Democrat,136743,Art Robinson,45,Republican,114123,,0,,0,,0,,0,,0,,0
+330,387,Oregon,OR,5,Kurt Schrader,51,Democrat,139474,Scott Bruun,46,Republican,124462,,0,,0,,0,,0,,0,,0
+331,390,Pennsylvania,PA,1,Robert Brady,,Democrat,0,,0,,0,,0,,0,,0,,0,,0,,0
+332,391,Pennsylvania,PA,2,Chaka Fattah,89,Democrat,179281,Rick Hellberg,11,Republican,21393,,0,,0,,0,,0,,0,,0
+333,392,Pennsylvania,PA,3,Mike Kelly,56,Republican,108398,Kathy Dahlkemper,44,Democrat,86674,,0,,0,,0,,0,,0,,0
+334,393,Pennsylvania,PA,4,Jason Altmire,51,Democrat,118554,Keith Rothfus,49,Republican,113434,,0,,0,,0,,0,,0,,0
+335,394,Pennsylvania,PA,5,Glenn Thompson,69,Republican,124100,Michael Pipe,28,Democrat,51107,,0,,0,,0,,0,,0,,0
+336,395,Pennsylvania,PA,6,Jim Gerlach,57,Republican,132330,Manan Trivedi,43,Democrat,99766,,0,,0,,0,,0,,0,,0
+337,396,Pennsylvania,PA,7,Patrick Meehan,55,Republican,133146,Bryan Lentz,44,Democrat,106214,,0,,0,,0,,0,,0,,0
+338,397,Pennsylvania,PA,8,Michael Fitzpatrick,54,Republican,126404,Patrick Murphy,46,Democrat,109157,,0,,0,,0,,0,,0,,0
+339,398,Pennsylvania,PA,9,Bill Shuster,73,Republican,140097,Tom Conners,27,Democrat,51706,,0,,0,,0,,0,,0,,0
+340,399,Pennsylvania,PA,10,Thomas Marino,55,Republican,109603,Christopher Carney,45,Democrat,89170,,0,,0,,0,,0,,0,,0
+341,400,Pennsylvania,PA,11,Lou Barletta,55,Republican,99837,Paul Kanjorski,45,Democrat,83250,,0,,0,,0,,0,,0,,0
+342,401,Pennsylvania,PA,12,Mark Critz,51,Democrat,91776,Tim Burns,49,Republican,88799,,0,,0,,0,,0,,0,,0
+343,402,Pennsylvania,PA,13,Allyson Schwartz,56,Democrat,117798,Dee Adcock,44,Republican,91195,,0,,0,,0,,0,,0,,0
+344,403,Pennsylvania,PA,14,Mike Doyle,69,Democrat,121081,Melissa Haluszczak,28,Republican,49692,,0,,0,,0,,0,,0,,0
+345,404,Pennsylvania,PA,15,Charles Dent,54,Republican,109500,John Callahan,39,Democrat,79857,,0,,0,,0,,0,,0,,0
+346,405,Pennsylvania,PA,16,Joseph Pitts,65,Republican,133408,Lois Herr,35,Democrat,70506,,0,,0,,0,,0,,0,,0
+347,406,Pennsylvania,PA,17,Tim Holden,56,Democrat,117228,Dave Argall,44,Republican,93544,,0,,0,,0,,0,,0,,0
+348,407,Pennsylvania,PA,18,Tim Murphy,67,Republican,158224,Dan Connolly,33,Democrat,77212,,0,,0,,0,,0,,0,,0
+349,408,Pennsylvania,PA,19,Todd Platts,72,Republican,162786,Ryan Sanders,23,Democrat,52737,,0,,0,,0,,0,,0,,0
+350,410,Rhode Island,RI,1,David Cicilline,51,Democrat,81098,John Loughlin,45,Republican,71443,,0,,0,,0,,0,,0,,0
+351,411,Rhode Island,RI,2,Jim Langevin,60,Democrat,104227,Mark Zaccaria,32,Republican,55326,,0,,0,,0,,0,,0,,0
+352,414,South Carolina,SC,1,Tim Scott,65,Republican,144951,Ben Frasier,29,Democrat,64351,,0,,0,,0,,0,,0,,0
+353,415,South Carolina,SC,2,Joe Wilson,54,Republican,138755,Rob Miller,44,Democrat,113354,,0,,0,,0,,0,,0,,0
+354,416,South Carolina,SC,3,Jeff Duncan,63,Republican,125513,Jane Dyer,36,Democrat,72436,,0,,0,,0,,0,,0,,0
+355,417,South Carolina,SC,4,Trey Gowdy,64,Republican,137167,Paul Corden,29,Democrat,62173,,0,,0,,0,,0,,0,,0
+356,418,South Carolina,SC,5,Mick Mulvaney,55,Republican,119776,John Spratt,45,Democrat,99034,,0,,0,,0,,0,,0,,0
+357,419,South Carolina,SC,6,Jim Clyburn,63,Democrat,122709,Jim Pratt,36,Republican,69390,,0,,0,,0,,0,,0,,0
+358,422,South Dakota,SD,1,Kristi Noem,48,Republican,153683,Stephanie Herseth Sandlin,46,Democrat,146561,,0,,0,,0,,0,,0,,0
+359,424,Tennessee,TN,1,Phil Roe,81,Republican,122985,Michael Clark,17,Democrat,26038,,0,,0,,0,,0,,0,,0
+360,425,Tennessee,TN,2,John Duncan,82,Republican,142572,David Hancock,15,Democrat,25713,,0,,0,,0,,0,,0,,0
+361,426,Tennessee,TN,3,Chuck Fleischmann,57,Republican,91891,John Wolfe,28,Democrat,45345,,0,,0,,0,,0,,0,,0
+362,427,Tennessee,TN,4,Scott DesJarlais,57,Republican,104025,Lincoln Davis,39,Democrat,70329,,0,,0,,0,,0,,0,,0
+363,428,Tennessee,TN,5,Jim Cooper,56,Democrat,99012,David Hall,42,Republican,74104,,0,,0,,0,,0,,0,,0
+364,429,Tennessee,TN,6,Diane Black,67,Republican,128340,Brett Carter,29,Democrat,56057,,0,,0,,0,,0,,0,,0
+365,430,Tennessee,TN,7,Marsha Blackburn,72,Republican,158892,Greg Rabidoux,25,Democrat,54341,,0,,0,,0,,0,,0,,0
+366,431,Tennessee,TN,8,Stephen Fincher,59,Republican,98483,Roy Herron,39,Democrat,64701,,0,,0,,0,,0,,0,,0
+367,432,Tennessee,TN,9,Steve Cohen,74,Democrat,99801,Charlotte Bergmann,25,Republican,33872,,0,,0,,0,,0,,0,,0
+368,434,Texas,TX,1,Louie Gohmert,90,Republican,124398,Charles Parkes,10,Other: Libertarian,13839,,0,,0,,0,,0,,0,,0
+369,435,Texas,TX,2,Ted Poe,89,Republican,129899,David Smith,11,Other: Libertarian,16695,,0,,0,,0,,0,,0,,0
+370,436,Texas,TX,3,Sam Johnson,66,Republican,100894,John Lingenfelder,31,Democrat,47670,,0,,0,,0,,0,,0,,0
+371,437,Texas,TX,4,Ralph Hall,73,Republican,136231,VaLinda Hathcox,22,Democrat,40919,,0,,0,,0,,0,,0,,0
+372,438,Texas,TX,5,Jeb Hensarling,71,Republican,106611,Tom Berry,28,Democrat,41577,,0,,0,,0,,0,,0,,0
+373,439,Texas,TX,6,Joe Barton,66,Republican,107104,David Cozad,31,Democrat,50683,,0,,0,,0,,0,,0,,0
+374,440,Texas,TX,7,John Culberson,82,Republican,143389,Bob Townsend,18,Other: Libertarian,31633,,0,,0,,0,,0,,0,,0
+375,441,Texas,TX,8,Kevin Brady,80,Republican,161257,Kent Hargett,18,Democrat,36566,,0,,0,,0,,0,,0,,0
+376,442,Texas,TX,9,Al Green,76,Democrat,79957,Steve Mueller,23,Republican,24157,,0,,0,,0,,0,,0,,0
+377,443,Texas,TX,10,Michael McCaul,65,Republican,144774,Ted Ankrum,33,Democrat,73934,,0,,0,,0,,0,,0,,0
+378,444,Texas,TX,11,Mike Conaway,81,Republican,125354,James Quillian,15,Democrat,23939,,0,,0,,0,,0,,0,,0
+379,445,Texas,TX,12,Kay Granger,72,Republican,109766,Tracey Smith,25,Democrat,38403,,0,,0,,0,,0,,0,,0
+380,446,Texas,TX,13,Mac Thornberry,87,Republican,113153,Keith Dyer,9,Independent,11190,John Burwell,4,Other: Libertarian,5642,,0,,0,,0,,0
+381,447,Texas,TX,14,Ron Paul,76,Republican,140441,Robert Pruett,24,Democrat,44345,,0,,0,,0,,0,,0,,0
+382,448,Texas,TX,15,Ruben Hinojosa,56,Democrat,53373,Eddie Zamora,42,Republican,39893,,0,,0,,0,,0,,0,,0
+383,449,Texas,TX,16,Silvestre Reyes,58,Democrat,49242,Tim Besco,37,Republican,30983,,0,,0,,0,,0,,0,,0
+384,450,Texas,TX,17,Bill Flores,62,Republican,106275,Chet Edwards,37,Democrat,62926,,0,,0,,0,,0,,0,,0
+385,451,Texas,TX,18,Sheila Jackson Lee,70,Democrat,84972,John Faulk,27,Republican,33024,,0,,0,,0,,0,,0,,0
+386,452,Texas,TX,19,Randy Neugebauer,78,Republican,105818,Andy Wilson,19,Democrat,26082,,0,,0,,0,,0,,0,,0
+387,453,Texas,TX,20,Charlie Gonzalez,64,Democrat,58551,Clayton Trotter,34,Republican,31725,,0,,0,,0,,0,,0,,0
+388,454,Texas,TX,21,Lamar Smith,69,Republican,162763,Lainey Melnick,28,Democrat,65834,,0,,0,,0,,0,,0,,0
+389,455,Texas,TX,22,Pete Olson,68,Republican,140391,Kesha Rogers,30,Democrat,62011,,0,,0,,0,,0,,0,,0
+390,456,Texas,TX,23,Quico Canseco,49,Republican,74671,Ciro Rodriguez,44,Democrat,67212,,0,,0,,0,,0,,0,,0
+391,457,Texas,TX,24,Kenny Marchant,82,Republican,99891,David Sparks,18,Other: Libertarian,22504,,0,,0,,0,,0,,0,,0
+392,458,Texas,TX,25,Lloyd Doggett,53,Democrat,99853,Donna Campbell,45,Republican,84780,,0,,0,,0,,0,,0,,0
+393,459,Texas,TX,26,Michael Burgess,67,Republican,120683,Neil Durrance,31,Democrat,55182,,0,,0,,0,,0,,0,,0
+394,460,Texas,TX,27,Blake Farenthold,48,Republican,50954,Solomon Ortiz,47,Democrat,50155,,0,,0,,0,,0,,0,,0
+395,461,Texas,TX,28,Henry Cuellar,56,Democrat,62055,Bryan Underwood,42,Republican,46417,,0,,0,,0,,0,,0,,0
+396,462,Texas,TX,29,Gene Green,65,Democrat,43185,Roy Morales,34,Republican,22786,,0,,0,,0,,0,,0,,0
+397,463,Texas,TX,30,Eddie Bernice Johnson,76,Democrat,86195,Stephen Broden,22,Republican,24599,,0,,0,,0,,0,,0,,0
+398,464,Texas,TX,31,John Carter,83,Republican,126290,Bill Oliver,17,Other: Libertarian,26710,,0,,0,,0,,0,,0,,0
+399,465,Texas,TX,32,Pete Sessions,63,Republican,79181,Grier Raggio,35,Democrat,44134,,0,,0,,0,,0,,0,,0
+400,468,Utah,UT,1,Rob Bishop,69,Republican,129451,Morgan Bowen,24,Democrat,44265,,0,,0,,0,,0,,0,,0
+401,469,Utah,UT,2,Jim Matheson,51,Democrat,116404,Morgan Philpot,46,Republican,105514,,0,,0,,0,,0,,0,,0
+402,470,Utah,UT,3,Jason Chaffetz,72,Republican,126915,Karen Hyer,23,Democrat,40049,,0,,0,,0,,0,,0,,0
+403,473,Vermont,VT,1,Peter Welch,65,Democrat,149483,Paul Beaudry,32,Republican,73982,,0,,0,,0,,0,,0,,0
+404,474,Virginia,VA,1,Robert Wittman,64,Republican,135432,Krystal Ball,35,Democrat,73668,,0,,0,,0,,0,,0,,0
+405,475,Virginia,VA,2,Scott Rigell,53,Republican,88007,Glenn Nye,42,Democrat,70306,,0,,0,,0,,0,,0,,0
+406,476,Virginia,VA,3,Bobby Scott,70,Democrat,114656,Chuck Smith,27,Republican,44488,,0,,0,,0,,0,,0,,0
+407,477,Virginia,VA,4,Randy Forbes,62,Republican,122667,Wynne LeGrow,38,Democrat,74209,,0,,0,,0,,0,,0,,0
+408,478,Virginia,VA,5,Robert Hurt,51,Republican,119242,Tom Perriello,47,Democrat,110566,,0,,0,,0,,0,,0,,0
+409,479,Virginia,VA,6,Bob Goodlatte,77,Republican,125722,Jeffrey Vanke,14,Independent,22289,Stuart Bain,9,Other: Libertarian,15373,,0,,0,,0,,0
+410,480,Virginia,VA,7,Eric Cantor,59,Republican,138093,Rick Waugh,34,Democrat,79289,,0,,0,,0,,0,,0,,0
+411,481,Virginia,VA,8,Jim Moran,61,Democrat,116269,Patrick Murray,37,Republican,71100,,0,,0,,0,,0,,0,,0
+412,482,Virginia,VA,9,Morgan Griffith,51,Republican,95835,Rick Boucher,46,Democrat,86791,,0,,0,,0,,0,,0,,0
+413,483,Virginia,VA,10,Frank Wolf,63,Republican,130624,Jeff Barnett,35,Democrat,72272,,0,,0,,0,,0,,0,,0
+414,484,Virginia,VA,11,Gerry Connolly,49,Democrat,111615,Keith Fimian,49,Republican,110695,,0,,0,,0,,0,,0,,0
+415,486,Washington,WA,1,Jay Inslee,57,Democrat,150348,James Watkins,43,Republican,111535,,0,,0,,0,,0,,0,,0
+416,487,Washington,WA,2,Rick Larsen,51,Democrat,143494,John Koster,49,Republican,138010,,0,,0,,0,,0,,0,,0
+417,488,Washington,WA,3,Jaime Herrera,53,Republican,149339,Denny Heck,47,Democrat,131473,,0,,0,,0,,0,,0,,0
+418,489,Washington,WA,4,Doc Hastings,68,Republican,145317,Jay Clough,32,Democrat,69512,,0,,0,,0,,0,,0,,0
+419,490,Washington,WA,5,Cathy McMorris Rodgers,64,Republican,150681,Daryl Romeyn,36,Democrat,85686,,0,,0,,0,,0,,0,,0
+420,491,Washington,WA,6,Norm Dicks,58,Democrat,145369,Doug Cloud,42,Republican,105022,,0,,0,,0,,0,,0,,0
+421,492,Washington,WA,7,Jim McDermott,83,Democrat,192241,Bob Jeffers-Schroder,17,Other: No Party Designation,40050,,0,,0,,0,,0,,0,,0
+422,493,Washington,WA,8,Dave Reichert,53,Republican,143746,Suzan DelBene,47,Democrat,128566,,0,,0,,0,,0,,0,,0
+423,494,Washington,WA,9,Adam Smith,54,Democrat,111182,Dick Muri,46,Republican,93147,,0,,0,,0,,0,,0,,0
+424,496,West Virginia,WV,1,David McKinley,50,Republican,89915,Mike Oliverio,50,Democrat,88558,,0,,0,,0,,0,,0,,0
+425,497,West Virginia,WV,2,Shelley Moore Capito,68,Republican,126102,Virginia Lynch Graf,30,Democrat,54671,,0,,0,,0,,0,,0,,0
+426,498,West Virginia,WV,3,Nick Rahall,55,Democrat,79422,Elliott Maynard,45,Republican,64669,,0,,0,,0,,0,,0,,0
+427,501,Wisconsin,WI,1,Paul Ryan,68,Republican,179702,John Heckenlively,30,Democrat,79350,,0,,0,,0,,0,,0,,0
+428,502,Wisconsin,WI,2,Tammy Baldwin,62,Democrat,190433,Chad Lee,38,Republican,118037,,0,,0,,0,,0,,0,,0
+429,503,Wisconsin,WI,3,Ron Kind,50,Democrat,126281,Dan Kapanke,47,Republican,117151,,0,,0,,0,,0,,0,,0
+430,504,Wisconsin,WI,4,Gwen Moore,69,Democrat,143531,Dan Sebring,30,Republican,61531,,0,,0,,0,,0,,0,,0
+431,505,Wisconsin,WI,5,Jim Sensenbrenner,69,Republican,229007,Todd Kolosso,27,Democrat,90544,,0,,0,,0,,0,,0,,0
+432,506,Wisconsin,WI,6,Tom Petri,71,Republican,183167,Joseph Kallas,29,Democrat,75889,,0,,0,,0,,0,,0,,0
+433,507,Wisconsin,WI,7,Sean Duffy,52,Republican,132248,Julie Lassa,44,Democrat,113113,,0,,0,,0,,0,,0,,0
+434,508,Wisconsin,WI,8,Reid Ribble,55,Republican,144050,Steven Kagen,45,Democrat,118617,,0,,0,,0,,0,,0,,0
+435,510,Wyoming,WY,1,Cynthia Lummis,71,Republican,131632,David Wendt,25,Democrat,45766,,0,,0,,0,,0,,0,,0

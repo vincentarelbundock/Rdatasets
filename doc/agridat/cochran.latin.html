@@ -1,0 +1,82 @@
+<!DOCTYPE html><html><head><title>R: Latin square design in wheat</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>cochran.latin</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Latin square design in wheat
+</h2>
+
+<h3>Description</h3>
+
+<p>Six wheat plots were sampled by six operators and shoot heights
+measured. The operators sampled plots in six ordered sequences.
+The dependent variate was the difference between measured
+height and true height of the plot.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 36 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>operator</code></dt><dd><p>operator factor</p>
+</dd>
+<dt><code>diff</code></dt><dd><p>difference between measured height and true height</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Cochran, W.G. and Cox, G.M. (1957),
+<em>Experimental Designs</em>, 2nd ed., Wiley and Sons, New York.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(cochran.latin)
+dat &lt;- cochran.latin
+
+libs(desplot)
+desplot(dat, diff~col*row,
+        text=operator, cex=1, # aspect unknown
+        main="cochran.latin")
+
+
+dat &lt;- transform(dat, rf=factor(row), cf=factor(col))
+aov.dat &lt;- aov(diff ~ operator + Error(rf*cf), dat)
+summary(aov.dat)
+model.tables(aov.dat, type="means")
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html><html><head><title>R: Acres and price of cotton 1910-1943</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>walsh.cottonprice</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Acres and price of cotton 1910-1943
+</h2>
+
+<h3>Description</h3>
+
+<p>Acres and price of cotton 1910-1943
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 34 observations on the following 9 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year, numeric 1910-1943</p>
+</dd>
+<dt><code>acres</code></dt><dd><p>acres of cototn (1000s)</p>
+</dd>
+<dt><code>cotton</code></dt><dd><p>price per pound (cents) in previous year</p>
+</dd>
+<dt><code>cottonseed</code></dt><dd><p>price per ton (dollars) in previous year</p>
+</dd>
+<dt><code>combined</code></dt><dd><p>cotton price/pound + 1.857 x cottonseed price/pound (cents)</p>
+</dd>
+<dt><code>index</code></dt><dd><p>price index, 1911-1914=100</p>
+</dd>
+<dt><code>adjcotton</code></dt><dd><p>adjusted cotton price per pound (cents) in previous year</p>
+</dd>
+<dt><code>adjcottonseed</code></dt><dd><p>adjusted cottonseed price per ton (dollars) in previous year</p>
+</dd>
+<dt><code>adjcombined</code></dt><dd><p>adjusted combined price/pound (cents)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The 'index' is a price index for all farm commodities.
+</p>
+
+
+<h3>Source</h3>
+
+<p>R.M. Walsh (1944).
+Response to Price in Production of Cotton and Cottonseed,
+<em>Journal of Farm Economics</em>, 26, 359-372.
+https://doi.org/10.2307/1232237
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+data(walsh.cottonprice)
+dat &lt;- walsh.cottonprice
+
+dat &lt;- transform(dat, acres=acres/1000) # convert to million acres
+
+percentchg &lt;- function(x){ # percent change from previous to current
+  ix &lt;- 2:(nrow(dat))
+  c(NA, (x[ix]-x[ix-1])/x[ix-1])
+}
+
+# Compare percent change in acres with percent change in previous price
+# using constant dollars
+dat &lt;- transform(dat, chga = percentchg(acres), chgp = percentchg(adjcombined))
+
+with(dat, cor(chga, chgp, use='pair')) # .501 correlation
+libs(lattice)
+xyplot(chga~chgp, dat, type=c('p','r'),
+       main="walsh.cottonprice",
+       xlab="Percent change in previous price", ylab="Percent change in acres")
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

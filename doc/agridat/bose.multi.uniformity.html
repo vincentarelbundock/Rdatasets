@@ -1,0 +1,131 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trials of barley, wheat, lentils</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>bose.multi.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trials of barley, wheat, lentils
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trials of barley, wheat, lentils in India 1930-1932.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("bose.multi.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1170 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+<dt><code>crop</code></dt><dd><p>crop</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row ordinate</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column ordinate</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield per plot in grams</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>A field about 1/4 acre was sown in three consecutive years (beginning
+in 1929-1930) with barley, wheat, and lentil.
+</p>
+<p>At harvest, borders 3 feet on east and west and 6 feet on north and
+south were removed. The field was divided into plots four feet square,
+which were harvested separately, measured in grams.
+</p>
+<p>Fertility contours of the field were somewhat similar across years,
+with correlation values across years 0.45, 0.48, 0.21.
+</p>
+<p>Field width: 15 plots * 4 feet = 60 feet.
+</p>
+<p>Field length: 26 plots * 4 feet = 104 feet.
+</p>
+<p>Conclusions:
+</p>
+<p>&quot;An experimental field which may be sensibly uniform for one crop or
+for one season may not be so for another crop or in a different
+season&quot; p. 592. 
+</p>
+
+
+<h3>Source</h3>
+
+<p>Bose, R. D. (1935).
+Some soil heterogeneity trials at Pusa and the size and shape of experimental plots. 
+Ind. J. Agric. Sci., 5, 579-608. Table 1 (p. 585), Table 4 (p. 589), Table 5 (p. 590).
+https://archive.org/details/in.ernet.dli.2015.271739
+</p>
+
+
+<h3>References</h3>
+
+<p>Shaw (1935).
+Handbook of Statistics for Use in Plant-Breeding and Agricultural Problems, p. 149-170.
+https://krishikosh.egranth.ac.in/handle/1/21153
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(bose.multi.uniformity)
+  dat &lt;- bose.multi.uniformity
+
+  # match sum at bottom of Bose tables 1, 4, 5
+  # library(dplyr)
+  # dat 
+
+  libs(desplot, dplyr)
+  # Calculate percent of mean yield for each year
+  dat &lt;- group_by(dat, year)
+  dat &lt;- mutate(dat, pctyld = (yield-mean(yield))/mean(yield))
+
+  dat &lt;- ungroup(dat)
+  dat &lt;- mutate(dat, year=as.character(year))
+  # Bose smoothed the data by averaging 2x3 plots together before drawing
+  # contour maps.  Heatmaps of raw data have similar structure to Bose Fig 1.
+  desplot(dat, pctyld ~ col*row|year,
+          tick=TRUE, flip=TRUE, aspect=(26)/(15),
+          main="bose.multi.* - Percent of mean yield")
+  
+  # contourplot() results need to be mentally flipped upside down
+  # contourplot(pctyld ~ col*row|year, dat,
+  #   region=TRUE, as.table=TRUE, aspect=26/15)
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

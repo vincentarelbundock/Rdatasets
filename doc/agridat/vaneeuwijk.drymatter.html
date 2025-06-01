@@ -1,0 +1,140 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of maize, dry matter content</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>vaneeuwijk.drymatter</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of maize, dry matter content
+</h2>
+
+<h3>Description</h3>
+
+<p>Multi-environment trial of maize, dry matter content
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("vaneeuwijk.drymatter")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 168 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+<dt><code>site</code></dt><dd><p>site, 4 levels</p>
+</dd>
+<dt><code>variety</code></dt><dd><p>variety, 6 levels</p>
+</dd>
+<dt><code>y</code></dt><dd><p>dry matter percent</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Percent dry matter is given.
+</p>
+<p>Site codes are soil type classifications:
+SS=Southern Sand, CS=Central Sand, NS=Northern Sand, RC=River Clay.
+</p>
+<p>These data are a balanced subset of the data analyzed in
+van Eeuwijk, Keizer, and Bakker (1995b) and
+Kroonenberg, Basford, and Ebskamp (1995).
+</p>
+<p>Used with permission of Fred van Eeuwijk.
+</p>
+
+
+<h3>Source</h3>
+
+  
+<p>van Eeuwijk, Fred A. and Pieter M. Kroonenberg (1998).
+Multiplicative Models for Interaction in Three-Way ANOVA, with Applications to Plant Breeding
+Biometrics, 54, 1315-1333.
+https://doi.org/10.2307/2533660
+</p>
+
+
+<h3>References</h3>
+
+<p>Kroonenberg, P.M., Basford, K.E. &amp; Ebskamp, A.G.M. (1995).
+Three-way cluster and component analysis of maize variety trials.
+Euphytica, 84(1):31-42.
+https://doi.org/10.1007/BF01677554
+</p>
+<p>van Eeuwijk, F.A., Keizer, L.C.P. &amp; Bakker, J.J. Van Eeuwijk. (1995b).
+Linear and bilinear models for the analysis of multi-environment trials: 
+II. An application to data from the Dutch Maize Variety Trials
+Euphytica, 84(1):9-22.
+https://doi.org/10.1007/BF01677552
+</p>
+<p>Hardeo Sahai, Mario M. Ojeda.
+Analysis of Variance for Random Models, Volume 1. Page 261.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+  library(agridat)
+  data(vaneeuwijk.drymatter)
+  dat &lt;- vaneeuwijk.drymatter
+  dat &lt;- transform(dat, year=factor(year))
+  dat &lt;- transform(dat, env=factor(paste(year,site)))
+
+  libs(HH)
+  HH::interaction2wt(y ~ year+site+variety,dat,rot=c(90,0),
+                     x.between=0, y.between=0,
+                     main="vaneeuwijk.drymatter")
+
+  
+  # anova model
+  m1 &lt;- aov(y ~ variety+env+variety:env, data=dat)
+  anova(m1) # Similar to VanEeuwijk table 2
+  m2 &lt;- aov(y ~ year*site*variety, data=dat)
+  anova(m2) # matches Sahai table 5.5
+  
+  # variance components model
+  libs(lme4)
+  libs(lucid)
+  m3 &lt;- lmer(y ~ (1|year) + (1|site) + (1|variety) +
+               (1|year:site) + (1|year:variety) + (1|site:variety),
+             data=dat)
+  vc(m3) # matches Sahai page 266
+  ##          grp        var1 var2    vcov  sdcor
+  ## year:variety (Intercept) &lt;NA&gt; 0.3187  0.5645
+  ##    year:site (Intercept) &lt;NA&gt; 7.735   2.781 
+  ## site:variety (Intercept) &lt;NA&gt; 0.03502 0.1871
+  ##         year (Intercept) &lt;NA&gt; 6.272   2.504 
+  ##      variety (Intercept) &lt;NA&gt; 0.4867  0.6976
+  ##         site (Intercept) &lt;NA&gt; 6.504   2.55  
+  ##     Residual        &lt;NA&gt; &lt;NA&gt; 0.8885  0.9426
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

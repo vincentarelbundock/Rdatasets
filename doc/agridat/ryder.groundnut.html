@@ -1,0 +1,108 @@
+<!DOCTYPE html><html><head><title>R: RCB experiment of groundut, wet and dry yields</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>ryder.groundnut</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+RCB experiment of groundut, wet and dry yields
+</h2>
+
+<h3>Description</h3>
+
+<p>RCB experiment of groundut, wet and dry yields
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 24 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>block</code></dt><dd><p>block</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype factor</p>
+</dd>
+<dt><code>wet</code></dt><dd><p>wet yield, kg/plot</p>
+</dd>
+<dt><code>dry</code></dt><dd><p>dry yield, kg/plot</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Ryder (1981) uses this data to discuss the importance of looking at
+the field plan for an experiment.  Based on analysis of the residuals,
+he suggests that varieties A and B in block 3 may have had their data
+swapped.
+</p>
+
+
+<h3>Source</h3>
+
+<p>K. Ryder (1981). Field plans: why the biometrician finds them useful,
+<em>Experimental Agriculture</em>, 17, 243&ndash;256.
+</p>
+<p>https://doi.org/10.1017/S0014479700011601
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+  library(agridat)
+  data(ryder.groundnut)
+  dat &lt;- ryder.groundnut
+
+  # RCB model
+  m1 &lt;- lm(dry~block+gen,dat)
+  dat$res1 &lt;- resid(m1)
+
+  # Table 3 of Ryder.  Scale up from kg/plot to kg/ha
+  round(dat$res1 * 596.6,0)
+  
+  # Visually.  Note largest positive/negative residuals are adjacent
+  libs(desplot)
+  desplot(dat, res1 ~ col + row,
+          text=gen, # aspect unknown
+          main="ryder.groundnut - residuals")
+  
+  
+  libs(desplot)
+  # Swap the dry yields for two plots and re-analyze
+  dat[dat$block=="B3" &amp; dat$gen=="A", "dry"] &lt;- 2.8
+  dat[dat$block=="B3" &amp; dat$gen=="B", "dry"] &lt;- 1.4
+  m2 &lt;- lm(dry~block+gen, dat)
+  dat$res2 &lt;- resid(m2)
+  desplot(dat, res2 ~ col+row,
+          # aspect unknown
+          text=gen, main="ryder.groundnut")
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

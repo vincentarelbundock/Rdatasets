@@ -1,0 +1,142 @@
+<!DOCTYPE html><html><head><title>R: Herbicide control of larkspur</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>turner.herbicide</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Herbicide control of larkspur
+</h2>
+
+<h3>Description</h3>
+
+<p>Herbicide control of larkspur
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("turner.herbicide")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 12 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>rep</code></dt><dd><p>rep factor</p>
+</dd>
+<dt><code>rate</code></dt><dd><p>rate of herbicide</p>
+</dd>
+<dt><code>live</code></dt><dd><p>number of live plants before application</p>
+</dd>
+<dt><code>dead</code></dt><dd><p>number of plants killed by herbicide</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Effectiveness of the herbicide Picloram on larkspur plants at 4 doses
+(0, 1.1, 2.2, 4.5) in 3 reps.  Experiment was done in 1986 at Manti,
+Utah.
+</p>
+
+
+<h3>Source</h3>
+
+<p>David L. Turner and Michael H. Ralphs and John O. Evans (1992).
+Logistic Analysis for Monitoring and Assessing Herbicide Efficacy.
+<em>Weed Technology</em>, 6, 424-430.
+https://www.jstor.org/stable/3987312
+</p>
+
+
+<h3>References</h3>
+
+<p>Christopher Bilder, Thomas Loughin.
+<em>Analysis of Categorical Data with R</em>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+  library(agridat)
+  data(turner.herbicide)
+  dat &lt;- turner.herbicide
+  
+  dat &lt;- transform(dat, prop=dead/live)
+  # xyplot(prop~rate,dat, pch=20, main="turner.herbicide", ylab="Proportion killed")
+
+  m1 &lt;- glm(prop~rate, data=dat, weights=live, family=binomial)
+  coef(m1) # -3.46, 2.6567  Same as Turner eqn 3
+  
+  # Make conf int on link scale and back-transform
+  p1 &lt;- expand.grid(rate=seq(0,to=5,length=50))
+  p1 &lt;- cbind(p1, predict(m1, newdata=p1, type='link', se.fit=TRUE))
+  p1 &lt;- transform(p1, lo = plogis(fit - 2*se.fit),
+                  fit = plogis(fit),
+                  up = plogis(fit + 2*se.fit))
+  
+  # Figure 2 of Turner
+  libs(latticeExtra)
+  foo1 &lt;- xyplot(prop~rate,dat, cex=1.5,
+                 main="turner.herbicide (model with 2*S.E.)",
+                 xlab="Herbicide rate", ylab="Proportion killed")
+  foo2 &lt;- xyplot(fit~rate, p1, type='l')
+  foo3 &lt;- xyplot(lo+up~rate, p1, type='l', lty=1, col='gray')
+  print(foo1 + foo2 + foo3)
+
+
+  # What dose gives a LD90 percent kill rate?
+  # libs(MASS)
+  # dose.p(m1, p=.9)
+  ##             Dose       SE
+  ## p = 0.9: 2.12939 0.128418
+
+  # Alternative method
+  # libs(car) # logit(.9) = 2.197225
+  # deltaMethod(m1, g="(log(.9/(1-.9))-b0)/(b1)", parameterNames=c('b0','b1'))
+  ##                      Estimate       SE
+  ## (2.197225 - b0)/(b1)  2.12939 0.128418
+  
+  # What is a 95 percent conf interval for LD90?  Bilder &amp; Loughin page 138
+  root &lt;- function(x, prob=.9, alpha=0.05){
+    co &lt;- coef(m1)    # b0,b1
+    covs &lt;- vcov(m1)  # b00,b11,b01
+    # .95 = b0 + b1*x
+    # (b0+b1*x) + Z(alpha/2) * sqrt(b00 + x^2*b11 + 2*x*b01) &gt; .95
+    # (b0+b1*x) - Z(alpha/2) * sqrt(b00 + x^2*b11 + 2*x*b01) &lt; .95
+    f &lt;- abs(co[1] + co[2]*x - log(prob/(1-prob))) /
+      sqrt(covs[1,1] + x^2 * covs[2,2] + 2*x*covs[1,2])
+    return( f - qnorm(1-alpha/2))
+  }
+  lower &lt;- uniroot(f=root, c(0,2.13))
+  upper &lt;- uniroot(f=root, c(2.12, 5))
+  c(lower$root, upper$root)
+  # 1.92 2.45
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html><html><head><title>R: Third party insurance</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Thirdparty</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Third party insurance
+</h2>
+
+<h3>Description</h3>
+
+<p>Third party insurance is a compulsory insurance for vehicle owners
+in Australia. It insures vehicle owners against injury  caused to
+other drivers, passengers or pedestrians, as a result of an
+accident.
+</p>
+<p>This data set records the number of third party claims in a
+twelve&ndash;month period between 1984-1986 in each of 176 geographical
+areas (local government areas) in New South Wales, Australia.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Thirdparty)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 176 observations on the following variable.
+</p>
+
+<dl>
+<dt><code>lga.sd.claims.accidents.ki.population.pop_density</code></dt><dd><p>a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset &quot;Third Party Claims&quot;
+</p>
+
+
+<h3>Source</h3>
+
+<p>http://www.businessandeconomics.mq.edu.au/our_departments/Applied_Finance_and_Actuarial_Studies/
+</p>
+<p>research/books/GLMsforInsuranceData/data_sets</p>
+
+
+<h3>References</h3>
+
+<p>De Jong P., Heller G.Z. (2008), Generalized linear models for insurance data,
+Cambridge University Press
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Thirdparty)
+## maybe str(Thirdparty) ; plot(Thirdparty) ...
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

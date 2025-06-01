@@ -1,0 +1,143 @@
+<!DOCTYPE html><html><head><title>R: Mating crosses of white pine trees</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>hanover.whitepine</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Mating crosses of white pine trees
+</h2>
+
+<h3>Description</h3>
+
+<p>Mating crosses of white pine trees
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("hanover.whitepine")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 112 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>rep</code></dt><dd><p>replicate</p>
+</dd>
+<dt><code>female</code></dt><dd><p>female parent</p>
+</dd>
+<dt><code>male</code></dt><dd><p>male parent</p>
+</dd>
+<dt><code>length</code></dt><dd><p>epicotyl length, cm</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Four male (pollen parent) White Pine trees were mated to seven female
+trees and 2654 progeny were grown in four replications, one plot per
+mating in each replication.  Parent trees were sourced from Idaho,
+USA.  The data are plot means of epicotyl length.
+</p>
+<p>Becker (1984) used these data to demonstrate the calculation of
+heritability.
+</p>
+
+
+<h3>Source</h3>
+
+  
+<p>Hanover, James W and Barnes, Burton V. (1962).
+Heritability of height growth in year-old western white pine.
+<em>Proc Forest Genet Workshop</em>. 22, 71&ndash;76.
+</p>
+<p>Walter A. Becker (1984).
+<em>Manual of Quantitative Genetics</em>, 4th ed. Page 83.
+</p>
+
+
+<h3>References</h3>
+
+  
+<p>None  
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+  library(agridat)
+  data(hanover.whitepine)
+  dat &lt;- hanover.whitepine
+
+  libs(lattice)
+  # Relatively high male-female interaction in growth comared
+  # to additive gene action. Response is more consistent within
+  # male progeny than female progeny.
+  # with(dat, interaction.plot(female, male, length))
+  # with(dat, interaction.plot(male, female, length))
+  bwplot(length ~ male|female, data=dat,
+         main="hanover.whitepine - length for male:female crosses",
+         xlab="Male parent", ylab="Epicotyl length")
+  
+  # Progeny sums match Becker p 83
+  sum(dat$length) # 380.58
+  aggregate(length ~  female + male, data=dat, FUN=sum)
+  
+  # Sum of squares matches Becker p 85
+  m1 &lt;- aov(length ~ rep + male + female + male:female, data=dat)
+  anova(m1)
+  
+  # Variance components match Becker p. 85
+  libs(lme4)
+  libs(lucid)
+  m2 &lt;- lmer(length ~ (1|rep) + (1|male) + (1|female) + (1|male:female), data=dat)
+  #as.data.frame(lme4::VarCorr(m2))
+  vc(m2)
+  ##         grp        var1 var2    vcov  sdcor
+  ## male:female (Intercept) &lt;NA&gt; 0.1369  0.3699
+  ##      female (Intercept) &lt;NA&gt; 0.02094 0.1447
+  ##        male (Intercept) &lt;NA&gt; 0.1204  0.3469
+  ##         rep (Intercept) &lt;NA&gt; 0.01453 0.1205
+  ##    Residual        &lt;NA&gt; &lt;NA&gt; 0.2004  0.4477
+  
+  # Becker used this value for variability between individuals, within plot
+  s2w &lt;- 1.109
+  
+  # Calculating heritability for individual trees
+  s2m &lt;- .120
+  s2f &lt;- .0209
+  s2mf &lt;- .137
+  vp &lt;- s2m + s2f + s2mf + s2w  # variability of phenotypes = 1.3869
+  4*s2m / vp # heritability male 0.346
+  4*s2f / vp # heritability female 0.06
+  2*(s2m+s2f)/vp # heritability male+female .203
+  # As shown in the boxplot, heritability is stronger through the
+  # males than through the females.
+
+## End(Not run)
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

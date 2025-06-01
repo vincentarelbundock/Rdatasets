@@ -1,0 +1,165 @@
+<!DOCTYPE html><html><head><title>R: Unemployment duration</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>jobless</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Unemployment duration</h2>
+
+<h3>Description</h3>
+
+<p>Data from the January Current Population Survey's Displaced
+Workers Supplements (DWS) for the years 1986, 1988, 1990, and 1992.
+Only individuals between 20 and 61 years old who were displaced from
+nonagricultural jobs due to plant closure, slack work, or abolished positions
+are included in the sample (McCall, 1996).
+Cameron and Trivedi (2005).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>jobless
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 3343 observations and 43 variables:
+</p>
+
+<dl>
+<dt>spell</dt><dd><p>length of spell (joblessness duration) in number of two-week intervals</p>
+</dd>
+<dt>censor1</dt><dd><p>= 1 if re-employed at full-time job</p>
+</dd>
+<dt>censor2</dt><dd><p>= 1 if re-employed at part-time job</p>
+</dd>
+<dt>censor3</dt><dd><p>= 1 if re-employed but left job: pt–ft status unknown</p>
+</dd>
+<dt>censor4</dt><dd><p>= 1 if still jobless</p>
+</dd>
+<dt>ui</dt><dd><p>= 1 if filed unemployment insurance claim</p>
+</dd>
+<dt>reprate</dt><dd><p>eligible replacement rate, weekly benefit amount divided by
+weekly earnings in the lost job,</p>
+</dd>
+<dt>logwage</dt><dd><p>log weekly earnings in lost job, 1985 prices</p>
+</dd>
+<dt>tenure</dt><dd><p>years tenure in lost job</p>
+</dd>
+<dt>disrate</dt><dd><p>eligible disregard rate</p>
+</dd>
+<dt>slack</dt><dd><p>= 1 if lost job due to slack work</p>
+</dd>
+<dt>abolpos</dt><dd><p>= 1 if lost job due to abolished position</p>
+</dd>
+<dt>explose</dt><dd><p>= 1 if expected to lose job</p>
+</dd>
+<dt>stateur</dt><dd><p>state unemployment rate, percent</p>
+</dd>
+<dt>houshead</dt><dd><p>= 1 if household head</p>
+</dd>
+<dt>married</dt><dd><p>= 1 if married</p>
+</dd>
+<dt>female</dt><dd><p>= 1 if female</p>
+</dd>
+<dt>child</dt><dd><p>= 1 if has children</p>
+</dd>
+<dt>ychild</dt><dd><p>= 1 if has children five age and under</p>
+</dd>
+<dt>nonwhite</dt><dd><p>= 1 if nonwhite</p>
+</dd>
+<dt>age</dt><dd><p>age</p>
+</dd>
+<dt>schlt12</dt><dd><p>= 1 if less than 12 years schooling</p>
+</dd>
+<dt>schgt12</dt><dd><p>= 1 if more than 12 years schooling</p>
+</dd>
+<dt>smsa</dt><dd><p>= 1 if resides in SMSA (standard metropolitan statistical area)</p>
+</dd>
+<dt>bluecoll</dt><dd><p>= 1 if los job blue collar</p>
+</dd>
+<dt>mining</dt><dd><p>= 1 if lost job in mining</p>
+</dd>
+<dt>constr</dt><dd><p>= 1 if lost job in construction</p>
+</dd>
+<dt>transp</dt><dd><p>= 1 if lost job in transportation</p>
+</dd>
+<dt>trade</dt><dd><p>= 1 if lost job in trade</p>
+</dd>
+<dt>fire</dt><dd><p>= 1 if lost job in finance, insurance and real estate sector</p>
+</dd>
+<dt>services</dt><dd><p>= 1 if lost job in services sector</p>
+</dd>
+<dt>pubadmin</dt><dd><p>= 1 if lost job in the public administration</p>
+</dd>
+<dt>year85</dt><dd><p>= 1 if year of job loss is 1985</p>
+</dd>
+<dt>year87</dt><dd><p>= 1 if year of job loss is 1987</p>
+</dd>
+<dt>year89</dt><dd><p>= 1 if year of job loss is 1989</p>
+</dd>
+<dt>midatl</dt><dd><p>= 1 if residence in Middle Atlantic</p>
+</dd>
+<dt>encen</dt><dd><p>= 1 if residence in East North Central</p>
+</dd>
+<dt>wncen</dt><dd><p>= 1 if residence in West North Central</p>
+</dd>
+<dt>southatl</dt><dd><p>= 1 if residence in South Atlantic</p>
+</dd>
+<dt>escen</dt><dd><p>= 1 if residence in East South Central</p>
+</dd>
+<dt>wscen</dt><dd><p>= 1 if residence in West South Central</p>
+</dd>
+<dt>mountain</dt><dd><p>= 1 if residence in Mountain region</p>
+</dd>
+<dt>pacific</dt><dd><p>= 1 if residence in Pacific region</p>
+</dd>
+</dl>
+
+
+
+<h3>Section in Text</h3>
+
+<p>17.11 Duration Example: Unemployment Duration, pp. 603-8, 632-6, 658-62
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="http://cameron.econ.ucdavis.edu/mmabook/mmadata.html">http://cameron.econ.ucdavis.edu/mmabook/mmadata.html</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Cameron, A. and Trivedi, P. (2005), &quot;Microeconometrics: Methods and
+Applications,&quot; Cambridge University Press, New York.
+</p>
+<p>McCall, B. (1996), Unemployment Insurance Rules, Joblessness,
+and Part-time Work,&quot; Econometrica, 64, 647-682.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>summary(jobless)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

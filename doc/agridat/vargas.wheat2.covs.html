@@ -1,0 +1,192 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of wheat with environmental...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>vargas.wheat2</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of wheat with environmental covariates
+</h2>
+
+<h3>Description</h3>
+
+<p>The yield of 8 wheat genotypes was measured in 21 low-humidity
+environments.  Each environment had 13 covariates recorded.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("vargas.wheat2.covs")
+data("vargas.wheat2.yield")
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>The 'vargas.wheat2.covs' data frame has 21 observations on the following 14 variables.
+</p>
+
+<dl>
+<dt><code>env</code></dt><dd><p>environment</p>
+</dd>
+<dt><code>CYC</code></dt><dd><p>length of growth cycle in days</p>
+</dd>
+<dt><code>mTC</code></dt><dd><p>mean daily minimum temperature in degrees Celsius</p>
+</dd>
+<dt><code>MTC</code></dt><dd><p>mean daily maximum temperature</p>
+</dd>
+<dt><code>SHC</code></dt><dd><p>sun hours per day</p>
+</dd>
+<dt><code>mTV</code></dt><dd><p>mean daily minimum temp during vegetative stage</p>
+</dd>
+<dt><code>MTV</code></dt><dd><p>mean daily maximum temp during vegetative stage</p>
+</dd>
+<dt><code>SHV</code></dt><dd><p>sun hours per day during vegetative stage</p>
+</dd>
+<dt><code>mTS</code></dt><dd><p>mean daily minimum temp during spike growth stage</p>
+</dd>
+<dt><code>MTS</code></dt><dd><p>mean daily maximum temp during spike growth stage</p>
+</dd>
+<dt><code>SHS</code></dt><dd><p>sun hours per day during spike growth stage</p>
+</dd>
+<dt><code>mTG</code></dt><dd><p>mean daily minimum temp during grainfill stage</p>
+</dd>
+<dt><code>MTG</code></dt><dd><p>mean daily maximum temp during grainfill stage</p>
+</dd>
+<dt><code>SHG</code></dt><dd><p>sun hours per day during grainfill stage</p>
+</dd>
+</dl>
+
+<p>The 'vargas.wheat2.yield' data frame has 168 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>env</code></dt><dd><p>environment</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield (kg/ha)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Grain yields (kg/ha) for 8 wheat genotypes at 21 low-humidity
+environments grown during 1990-1994. The data is environment-centered
+and genotype-centered. The rows and columns of the GxE matrix have
+mean zero. The locations of the experiments were:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+    OBD </td><td style="text-align: left;"> Ciudad Obregon, Mexico, planted in December </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    SUD </td><td style="text-align: left;"> Wad Medani, Sudan </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    TLD </td><td style="text-align: left;"> Tlaltizapan, Mexico, planted in December </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    TLF </td><td style="text-align: left;"> Tlaltizapan, Mexico, planted in February </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    IND </td><td style="text-align: left;"> Dharwar,  India </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    SYR </td><td style="text-align: left;"> Aleppo, Syria </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    NIG </td><td style="text-align: left;"> Kadawa, Nigeria </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+  
+<p>Mateo Vargas and Jose Crossa and Ken Sayre and Matthew Renolds and
+Martha E Ramirez and Mike Talbot, 1998.
+Interpreting Genotype x Environment Interaction in Wheat by
+Partial Least Squares Regression, <em>Crop Science</em>, 38, 679&ndash;689.
+https://doi.org/10.2135/cropsci1998.0011183X003800030010x
+</p>
+<p>Data provided by Jose Crossa.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+  library(agridat)
+  libs(pls,reshape2)
+  
+  data(vargas.wheat2.covs)
+  datc &lt;- vargas.wheat2.covs
+
+  data(vargas.wheat2.yield)
+  daty &lt;- vargas.wheat2.yield
+
+  # Cast to matrix
+  daty &lt;- acast(daty, env ~ gen, value.var='yield')
+  rownames(datc) &lt;- datc$env
+  datc$env &lt;- NULL
+  
+  # The pls package centers, but does not (by default) use scaled covariates
+  # Vargas says you should
+  # daty &lt;- scale(daty)
+  datc &lt;- scale(datc)
+
+  m2 &lt;- plsr(daty ~ datc)
+
+  # Plot predicted vs observed for each genotype using all components
+  plot(m2)
+
+  # Loadings
+  # plot(m2, "loadings", xaxt='n')
+  # axis(1, at=1:ncol(datc), labels=colnames(datc), las=2)
+
+  # Biplots
+  biplot(m2, cex=.5, which="y", var.axes=TRUE,
+         main="vargas.wheat2 - daty ~ datc") # Vargas figure 2a
+  biplot(m2, cex=.5, which="x", var.axes=TRUE) # Vectors form figure 2 b
+  # biplot(m2, cex=.5, which="scores", var.axes=TRUE)
+  # biplot(m2, cex=.5, which="loadings", var.axes=TRUE)
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

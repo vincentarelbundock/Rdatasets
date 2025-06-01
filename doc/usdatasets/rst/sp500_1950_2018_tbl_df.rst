@@ -1,0 +1,60 @@
+.. container::
+
+   .. container::
+
+      ====================== ===============
+      sp500_1950_2018_tbl_df R Documentation
+      ====================== ===============
+
+      .. rubric:: Daily observations for the S&P 500 - Historical Data
+         (1950-2018)
+         :name: daily-observations-for-the-sp-500---historical-data-1950-2018
+
+      .. rubric:: Description
+         :name: description
+
+      The dataset name has been changed to 'sp500_1950_2018_tbl_df' to
+      avoid confusion with other packages in the R ecosystem. This
+      naming convention helps distinguish this dataset as part of the
+      'usdatasets' package and identifies it as a tibble. The original
+      content of the dataset has not been modified.
+
+      .. rubric:: Usage
+         :name: usage
+
+      .. code:: R
+
+         data(sp500_1950_2018_tbl_df)
+
+      .. rubric:: Format
+         :name: format
+
+      A tibble with 17346 observations and 7 variables:
+
+      Date
+         Factor indicating the date of the recorded stock prices.
+
+      Open
+         Numeric representing the opening price of the stock.
+
+      High
+         Numeric representing the highest price of the stock during the
+         day.
+
+      Low
+         Numeric representing the lowest price of the stock during the
+         day.
+
+      Close
+         Numeric representing the closing price of the stock.
+
+      Adj.Close
+         Numeric representing the adjusted closing price of the stock.
+
+      Volume
+         Numeric representing the trading volume of the stock.
+
+      .. rubric:: Source
+         :name: source
+
+      Historical data on S&P 500 stock prices from 1950 to 2018.

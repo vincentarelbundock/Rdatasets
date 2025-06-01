@@ -1,0 +1,96 @@
+<!DOCTYPE html><html><head><title>R: Distribution of Late Romano-British Oxford Pottery</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>OxfordPots</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Distribution of Late Romano-British Oxford Pottery
+</h2>
+
+<h3>Description</h3>
+
+<p>Percentages of Late Romano-British Oxford Pottery on 30 sites
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("OxfordPots")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 30 observations on the following 7 variables.
+</p>
+
+<dl>
+<dt><code>Place</code></dt><dd><p>Site name</p>
+</dd>
+<dt><code>OxfordPct</code></dt><dd><p>Percentage of Oxford pottery</p>
+</dd>
+<dt><code>OxfordDst</code></dt><dd><p>Distance to Oxford in miles</p>
+</dd>
+<dt><code>NewForestPct</code></dt><dd><p>Percentage of New Forest pottery</p>
+</dd>
+<dt><code>NewForestDst</code></dt><dd><p>Distance to New Forest</p>
+</dd>
+<dt><code>WalledArea</code></dt><dd><p>Acreage of walled towns</p>
+</dd>
+<dt><code>WaterTrans</code></dt><dd><p>Availability of a water transportation link, 1=probable presence</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>In several publications Ian Hodder analyzed the spatial distribution of Late Romano-British pottery produced at Oxford as evidence of trade and marketing patterns. These data come from the article by Fulford and Hodder (1974). In addition to the percentage of Oxford pottery and the distance to Oxford for 30 sites, data on New Forest pottery was included and information on walled town size and the availability of water transportation.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Fulford, M. and I. Hodder. 1974. A Regression Analysis of Some Late Romano-British Pottery: A Case Study. <em>Oxoniensia</em> 39: 26-33.
+</p>
+
+
+<h3>References</h3>
+
+<p>Hodder, I. 1974. A Regression Analysis of Some Trade and Marketing Patterns. <em>World Archaeology</em> 6: 172-189.
+</p>
+<p>Hodder, I. and C. Orton. 1976. <em>Spatial Analysis in Archaeology</em>, pp 117-119.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(OxfordPots)
+# Construct Fulford and Hodder's Figure 3
+Oxford.lm1 &lt;- lm(log(OxfordPct)~OxfordDst, OxfordPots, subset=WaterTrans==0)
+Oxford.lm2 &lt;- lm(log(OxfordPct)~OxfordDst, OxfordPots, subset=WaterTrans==1)
+plot(log(OxfordPct)~OxfordDst, OxfordPots, xlim=c(0, 160), yaxt="n", ylim=c(0, 3.25),
+     ylab="Percentage of Oxford Pottery", xlab="Distance (miles)", 
+     pch=c(1, 16)[WaterTrans+1], cex=1.5, lwd=2)
+# Add log y-axis
+axis(2, log(c(1, 5, 10, 20)), c(1, 5, 10, 20), las=1)
+abline(Oxford.lm1, lwd=2)
+abline(Oxford.lm2, lwd=2)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>
