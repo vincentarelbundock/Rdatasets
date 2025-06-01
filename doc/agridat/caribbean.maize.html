@@ -1,0 +1,129 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of maize with fertilization</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>caribbean.maize</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of maize with fertilization
+</h2>
+
+<h3>Description</h3>
+
+<p>Maize fertilization trial on Antigua and St. Vincent.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 612 observations on the following 7 variables.
+</p>
+
+<dl>
+<dt><code>isle</code></dt><dd><p>island, 2 levels</p>
+</dd>
+<dt><code>site</code></dt><dd><p>site</p>
+</dd>
+<dt><code>block</code></dt><dd><p>block</p>
+</dd>
+<dt><code>plot</code></dt><dd><p>plot, numeric</p>
+</dd>
+<dt><code>trt</code></dt><dd><p>treatment factor combining N,P,K</p>
+</dd>
+<dt><code>ears</code></dt><dd><p>number of ears harvested</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield in kilograms</p>
+</dd>
+<dt><code>N</code></dt><dd><p>nitrogen fertilizer level</p>
+</dd>
+<dt><code>P</code></dt><dd><p>phosphorous fertilizer level</p>
+</dd>
+<dt><code>K</code></dt><dd><p>potassium fertilizer level</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Antigua is a coral island in the Caribbean with sufficient level
+land for experiments and a semi-arid climate, while St. Vincent
+is volcanic and level areas are uncommon, but the rainfall can
+be seasonally heavy.
+</p>
+<p>There are 8-9 sites on each island.
+</p>
+<p>Plots were 16 feet by 18 feet. A central area 12 feet by 12 feet was
+harvested and recorded.
+</p>
+<p>The number of ears harvested was only recorded on the isle of Antigua.
+</p>
+<p>The actual amounts of N, P, and K are not given. Only 0, 1, 2, 3.
+</p>
+<p>The digits of the treatment represent the levels of nitrogen,
+phosphorus, and potassium fertilizer, respectively.
+</p>
+<p>The TEAN site suffered damage from goats on plot 27, 35 and 36.
+</p>
+<p>The LFAN site suffered damage from cattle on one boundary&ndash;plots 9,
+18, 27, 36.
+</p>
+<p>Electronic version of the data was retrieved from
+http://lib.stat.cmu.edu/datasets/Andrews/
+https://www2.stat.duke.edu/courses/Spring01/sta114/data/andrews.html
+</p>
+
+
+<h3>Source</h3>
+
+<p>D.F. Andrews and A.M. Herzberg. 1985.
+Data: A Collection of Problems from Many Fields for the Student
+and Research Worker.
+Springer.
+Table 58.1 and 58.2.
+</p>
+
+
+<h3>References</h3>
+
+<p>Also in the DAAG package as data sets antigua and stVincent.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library(agridat)
+data(caribbean.maize)
+dat &lt;- caribbean.maize
+
+# Yield and ears are correlated
+libs(lattice)
+xyplot(yield~ears|site, dat, ylim=c(0,10), subset=isle=="Antigua",
+       main="caribbean.maize - Antiqua")
+
+# Some locs show large response to nitrogen (as expected), e.g. UISV, OOSV
+dotplot(trt~yield|site, data=dat, main="caribbean.maize treatment response")
+
+# Show the strong N*site interaction with little benefit on Antiqua, but
+# a strong response on St.Vincent.
+dat &lt;- transform(dat, env=paste(substring(isle,1,1),site,sep="-"))
+bwplot(yield~N|env, dat,
+       main="caribbean.maize", xlab="nitrogen")
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

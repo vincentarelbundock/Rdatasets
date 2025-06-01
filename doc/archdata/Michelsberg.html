@@ -1,0 +1,178 @@
+<!DOCTYPE html><html><head><title>R: Younger Neolithic Pottery from Central Europe</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Michelsberg</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Younger Neolithic Pottery from Central Europe
+</h2>
+
+<h3>Description</h3>
+
+<p>A sites by types table of abundance data on vessel types in archaeological features of the Younger Neolithic Michelsberg Culture from Belgium, France and Germany by Birgit Höhn (2002).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Michelsberg)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 109 observations on the following 42 variables. Each line represents one feature. Some categorical variables are not converted to factors.
+</p>
+
+<dl>
+<dt><code>id</code></dt><dd><p>Unique identifier (categorical, integer)</p>
+</dd>
+<dt><code>site_name</code></dt><dd><p>Name of site (categorical, character)</p>
+</dd>
+<dt><code>catalogue_nr</code></dt><dd><p>Number in catalogue of Höhn (2002) (categorical, integer)</p>
+</dd>
+<dt><code>feature_nr</code></dt><dd><p>Number of the archaeological feature (categorical, numeric)</p>
+</dd>
+<dt><code>to3</code></dt><dd><p>Pot/vessel type 3 count</p>
+</dd>
+<dt><code>f4</code></dt><dd><p>Bottle type 4 count</p>
+</dd>
+<dt><code>b2</code></dt><dd><p>Beaker type 2 count</p>
+</dd>
+<dt><code>to2</code></dt><dd><p>Pot/vessel type 2 count</p>
+</dd>
+<dt><code>b3</code></dt><dd><p>Beaker type 3 count</p>
+</dd>
+<dt><code>b7</code></dt><dd><p>Beaker type 7 count</p>
+</dd>
+<dt><code>kw5</code></dt><dd><p>Carinated bowl type 5 count</p>
+</dd>
+<dt><code>vg1</code></dt><dd><p>Storage vessel type 1 count</p>
+</dd>
+<dt><code>vg2</code></dt><dd><p>Storage vessel type 2 count</p>
+</dd>
+<dt><code>t4a</code></dt><dd><p>Tulip beaker type 4a count</p>
+</dd>
+<dt><code>kw2</code></dt><dd><p>Carinated bowl type 2 count</p>
+</dd>
+<dt><code>kw4</code></dt><dd><p>Carinated bowl type 4 count</p>
+</dd>
+<dt><code>b5</code></dt><dd><p>Beaker type 5 count</p>
+</dd>
+<dt><code>t3b</code></dt><dd><p>Tulip beaker type 3b count</p>
+</dd>
+<dt><code>f3</code></dt><dd><p>Bottle type 3 count</p>
+</dd>
+<dt><code>kw3</code></dt><dd><p>Carinated bowl type 3 count</p>
+</dd>
+<dt><code>kw1</code></dt><dd><p>Carinated bowl type 1 count</p>
+</dd>
+<dt><code>b6</code></dt><dd><p>Beaker type 6 count</p>
+</dd>
+<dt><code>to1</code></dt><dd><p>Pot/vessel type 1 count</p>
+</dd>
+<dt><code>b1</code></dt><dd><p>Beaker type 1 count</p>
+</dd>
+<dt><code>t3a</code></dt><dd><p>Tulip beaker type 3a count</p>
+</dd>
+<dt><code>vg4</code></dt><dd><p>Storage vessel type 4 count</p>
+</dd>
+<dt><code>ks2</code></dt><dd><p>Conical bowl type 2 count</p>
+</dd>
+<dt><code>ks1</code></dt><dd><p>Conical bowl type 1 count</p>
+</dd>
+<dt><code>t2b</code></dt><dd><p>Tulip beaker type 2b count</p>
+</dd>
+<dt><code>f2</code></dt><dd><p>Bottle type 2 count</p>
+</dd>
+<dt><code>bs3</code></dt><dd><p>Globular bowl type 3 count</p>
+</dd>
+<dt><code>t2a</code></dt><dd><p>Tulip beaker type 2a count</p>
+</dd>
+<dt><code>bs2</code></dt><dd><p>Globular bowl type 2 count</p>
+</dd>
+<dt><code>b4</code></dt><dd><p>Beaker type 4 count</p>
+</dd>
+<dt><code>bs1</code></dt><dd><p>Globular bowl type 1 count</p>
+</dd>
+<dt><code>f1</code></dt><dd><p>Bottle type 1 count</p>
+</dd>
+<dt><code>t1b</code></dt><dd><p>Tulip beaker type 1b count</p>
+</dd>
+<dt><code>vg3</code></dt><dd><p>Storage vessel type 3 count</p>
+</dd>
+<dt><code>t1a</code></dt><dd><p>Tulip beaker type 1a count</p>
+</dd>
+<dt><code>mbk_phase</code></dt><dd><p>MBK phase according to Lüning (1967) as an ordered factor with levels <code>I</code> &lt; <code>I/II</code> &lt; <code>II</code> &lt; <code>II/III</code> &lt; <code>III</code> &lt; <code>III-V</code> &lt; <code>III/IV</code> &lt; <code>IV</code> &lt; <code>IV/V</code> &lt; <code>Munz</code> &lt; <code>V</code></p>
+</dd>
+<dt><code>x_utm32n</code></dt><dd><p>x coordinate in m; projection UTM WGS 84, zone 32 nord</p>
+</dd>
+<dt><code>y_utm32n</code></dt><dd><p>y coordinate in m; projection UTM WGS 84, zone 32 nord</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Höhn (2002) recorded pottery vessel shapes from 108 archaeological features (pits, ditches etc.) from 69 sites of the Central European Younger Neolithic Michelsberg Culture (MBK; 4350-3500 BC) following Lüning's (1967) typology. Her correspondence analysis of the abundance data (columns 5 to 39) exhibits a pronounced Guttman effect or arch, suggesting the data set is structured by a time gradient. Recently Mischka et al. (2015) projected an 109th Michelsberg assemblage, Flintbek LA48, a pit with Michelsberg pottery from a North German site of the Funnel Beaker Culture (TRB), as a supplementary row into the existing chronology thereby connecting the relative chronologies of TRB and MBK. The data frame contains as attributes the references for the data, a typological key and the map projection. Note that ambiguous fragments of conical bowls (ks1 and ks2) are assigned as 0.5 to each of the two types resulting also in positive entries suitable to analysis by CA.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Höhn, B. 2002. <em>Die Michelsberger Kultur in der Wetterau. Universitätsforschungen zur prähistorischen Archäologie 87</em>. Bonn: Habelt.
+</p>
+<p>Mischka, D., Roth, G. and K. Struckmeyer 2015. Michelsberg and Oxie in contact next to the Baltic Sea. In: <em>Neolithic Diversities. Perspectives from a conference in Lund, Sweden. Acta Archaeologica Lundensia Ser. 8, No. 65</em>, edited by Kr. Brink et al.,  pp 241–250.
+</p>
+<p>Lüning, J. 1967. Die Michelsberger Kultur: Ihre Funde in zeitlicher und räumlicher Gliederung. <em>Berichte der Römisch-Germanischen Kommission</em> 48, 1-350.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>if (requireNamespace("ca", quietly = TRUE)) {
+data(Michelsberg)
+str(Michelsberg)
+names(Michelsberg)[5:39]
+attributes(Michelsberg)$typological_key
+
+# geographical distribution
+xy &lt;- as.matrix(Michelsberg[,41:42])/1000
+plot(xy, asp=1, pch=16, col=rgb(.3,.3,.3,.5))
+text(xy[,1], xy[,2], Michelsberg$id, cex=.7, pos=2)
+# Note site 109 to the Northeast; 
+
+# preparing the data set for CA
+abu &lt;- Michelsberg[, 5:39]
+rownames(abu) &lt;- Michelsberg$id
+
+# CA with site 109, Flintbek LA48, as supplementary row
+MBK.ca &lt;- ca::ca(abu, ndim=min(dim(abu)-1), suprow=109 )
+
+# asymmetric biplot with row quality and column contribution
+plot(MBK.ca, map="rowprincipal", contrib=c("relative", "absolute"))
+
+title(main="Row-isometric Biplot of Michelsberg CA", cex.sub=.7, 
+     sub="color intensity represents quality for sites and contributions for types")
+} else {
+  cat("This example requires package ca to run.\n")
+}
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

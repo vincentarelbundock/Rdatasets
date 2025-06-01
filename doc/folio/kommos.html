@@ -1,0 +1,108 @@
+<!DOCTYPE html><html><head><title>R: Transport Jars from Kommos (Crete)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>kommos</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Transport Jars from Kommos (Crete)</h2>
+
+<h3>Description</h3>
+
+<p>Chemical analysis (neutron activation analysis) of 88 Late Bronze Age
+transport jars found in excavations at Kommos, Crete.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>kommos
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A <code>data.frame</code> with 88 observations and 22 variables (chemical elements):
+</p>
+
+<dl>
+<dt>type</dt><dd><p><code>factor</code>: <code>CJ</code> (Canaanite jar), <code>EJ</code> (Egyptian jar);
+<code>TSJ</code> (transport stirrup jar), <code>SNA</code> (short-necked amphora).</p>
+</dd>
+<dt>date</dt><dd><p><code>character</code>: chronology (period).</p>
+</dd>
+<dt>Sm</dt><dd><p><code>numeric</code>: Sm content (ppm).</p>
+</dd>
+<dt>Lu</dt><dd><p><code>numeric</code>: Lu content (ppm).</p>
+</dd>
+<dt>U</dt><dd><p><code>numeric</code>: U content (ppm).</p>
+</dd>
+<dt>Yb</dt><dd><p><code>numeric</code>: Yb content (ppm).</p>
+</dd>
+<dt>As</dt><dd><p><code>numeric</code>: As content (ppm).</p>
+</dd>
+<dt>Sb</dt><dd><p><code>numeric</code>: Sb content (ppm).</p>
+</dd>
+<dt>Ca</dt><dd><p><code>numeric</code>: Ca content (ppm).</p>
+</dd>
+<dt>Na</dt><dd><p><code>numeric</code>: Na content (ppm).</p>
+</dd>
+<dt>La</dt><dd><p><code>numeric</code>: La content (ppm).</p>
+</dd>
+<dt>Ce</dt><dd><p><code>numeric</code>: Ce content (ppm).</p>
+</dd>
+<dt>Th</dt><dd><p><code>numeric</code>: Th content (ppm).</p>
+</dd>
+<dt>Cr</dt><dd><p><code>numeric</code>: Cr content (ppm).</p>
+</dd>
+<dt>Hf</dt><dd><p><code>numeric</code>: Hf content (ppm).</p>
+</dd>
+<dt>Cs</dt><dd><p><code>numeric</code>: Cs content (ppm).</p>
+</dd>
+<dt>Sc</dt><dd><p><code>numeric</code>: Sc content (ppm).</p>
+</dd>
+<dt>Rb</dt><dd><p><code>numeric</code>: Rb content (ppm).</p>
+</dd>
+<dt>Fe</dt><dd><p><code>numeric</code>: Fe content (ppm).</p>
+</dd>
+<dt>Ta</dt><dd><p><code>numeric</code>: Ta content (ppm).</p>
+</dd>
+<dt>Co</dt><dd><p><code>numeric</code>: Co content (ppm).</p>
+</dd>
+<dt>Eu</dt><dd><p><code>numeric</code>: Eu content (ppm).</p>
+</dd>
+</dl>
+
+
+
+<h3>References</h3>
+
+<p>Day, P. M., Quinn, P. S., Rutter, J. B. &amp; Kilikoglou, V. (2011).
+A World of Goods: Transport Jars and Commodity Exchange at the Late Bronze
+Age Harbor of Kommos, Crete. <em>Hesperia</em>, 80, 511-558.
+<a href="https://doi.org/10.2972/hesperia.80.4.0511">doi:10.2972/hesperia.80.4.0511</a>
+</p>
+
+
+<h3>See Also</h3>
+
+<p>Other chemical data: 
+<code>bronze</code>,
+<code>verre</code>
+</p>
+
+</main>
+
+</div>
+</body></html>

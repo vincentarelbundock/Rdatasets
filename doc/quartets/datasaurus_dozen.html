@@ -1,0 +1,66 @@
+<!DOCTYPE html><html><head><title>R: Datasaurus Dozen Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>datasaurus_dozen</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Datasaurus Dozen Data</h2>
+
+<h3>Description</h3>
+
+<p>A dataset containing 12 datasets that are equal in mean, variance, and
+Pearson's correlation but very different when visualized.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>datasaurus_dozen
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1846 rows and 3 variables:
+</p>
+
+<ul>
+<li> <p><code>dataset</code>: the dataset the values come from
+</p>
+</li>
+<li> <p><code>x</code>: the x-variable
+</p>
+</li>
+<li> <p><code>y</code>: the y-variable
+</p>
+</li></ul>
+
+
+
+<h3>References</h3>
+
+<p>Davies R, Locke S, D'Agostino McGowan L (2022). <em>datasauRus: Datasets from the
+Datasaurus Dozen</em>. R package version 0.1.6, <a href="https://CRAN.R-project.org/package=datasauRus">https://CRAN.R-project.org/package=datasauRus</a>.
+</p>
+<p>Matejka, J., &amp; Fitzmaurice, G. (2017). Same Stats, Different Graphs:
+Generating Datasets with Varied Appearance and Identical Statistics through
+Simulated Annealing. CHI 2017 Conference proceedings: ACM SIGCHI Conference
+on Human Factors in Computing Systems. Retrieved from https://www.autodesk.com/research/publications/same-stats-different-graphs
+</p>
+
+</main>
+
+</div>
+</body></html>

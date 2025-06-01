@@ -1,0 +1,243 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of soybean in Australia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>australia.soybean</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of soybean in Australia
+</h2>
+
+<h3>Description</h3>
+
+<p>Yield and other traits of 58 varieties of soybeans, grown in four
+locations across two years in Australia.  This is four-way data of
+Year x Loc x Gen x Trait.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 464 observations on the following 10 variables.
+</p>
+
+<dl>
+<dt><code>env</code></dt><dd><p>environment, 8 levels, first character of location
+and last two characters of year</p>
+</dd>
+<dt><code>loc</code></dt><dd><p>location</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype of soybeans, 1-58</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, metric tons / hectare</p>
+</dd>
+<dt><code>height</code></dt><dd><p>height (meters)</p>
+</dd>
+<dt><code>lodging</code></dt><dd><p>lodging</p>
+</dd>
+<dt><code>size</code></dt><dd><p>seed size, (millimeters)</p>
+</dd>
+<dt><code>protein</code></dt><dd><p>protein (percentage)</p>
+</dd>
+<dt><code>oil</code></dt><dd><p>oil (percentage)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Measurement are available from four locations in Queensland, Australia in two
+consecutive years 1970, 1971.
+</p>
+<p>The 58 different genotypes of soybeans consisted of 43 lines (40 local
+Australian selections from a cross, their two parents, and one other
+which was used a parent in earlier trials) and 15 other lines of which
+12 were from the US.
+</p>
+<p>Lines 1-40 were local Australian selections from Mamloxi (CPI 172) and
+Avoyelles (CPI 15939).
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+No. </td><td style="text-align: left;"> Line </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+1-40 </td><td style="text-align: left;"> Local selections </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+41 </td><td style="text-align: left;"> Avoyelles (CPI 15939) Tanzania </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+42 </td><td style="text-align: left;"> Hernon 49 (CPI 15948) Tanzania </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+43 </td><td style="text-align: left;"> Mamloxi (CPI 172)  Nigeria </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+44 </td><td style="text-align: left;"> Dorman  USA </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+45 </td><td style="text-align: left;"> Hampton  USA </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+46 </td><td style="text-align: left;"> Hill  USA </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+47 </td><td style="text-align: left;"> Jackson  USA </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+48 </td><td style="text-align: left;"> Leslie  USA </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+49 </td><td style="text-align: left;"> Semstar  Australia </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+50 </td><td style="text-align: left;"> Wills  USA </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+51 </td><td style="text-align: left;"> C26673  Morocco </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+52 </td><td style="text-align: left;"> C26671  Morocco </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+53 </td><td style="text-align: left;"> Bragg  USA </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+54 </td><td style="text-align: left;"> Delmar  USA </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+55 </td><td style="text-align: left;"> Lee  USA </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+56 </td><td style="text-align: left;"> Hood  USA </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+57 </td><td style="text-align: left;"> Ogden  USA </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+58 </td><td style="text-align: left;"> Wayne  USA
+</td>
+</tr>
+
+</table>
+
+<p>Note on the data in Basford and Tukey book. The values for line 58 for
+Nambour 1970 and Redland Bay 1971 are incorrectly listed on page 477 as
+20.490 and 15.070. They should be 17.350 and 13.000, respectively. In
+the data set made available here, these values have been corrected.
+</p>
+<p>Used with permission of Kaye Basford, Pieter Kroonenberg.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Basford, K. E., and Tukey, J. W. (1999).
+Graphical analysis of multiresponse data illustrated with a plant breeding trial.
+Chapman and Hall/CRC.
+</p>
+<p>Retrieved from:
+https://three-mode.leidenuniv.nl/data/soybeaninf.htm
+</p>
+
+
+<h3>References</h3>
+
+  
+<p>K E Basford (1982). The Use of Multidimensional Scaling in Analysing
+Multi-Attribute Genotype Response Across Environments,
+Aust J Agric Res, 33, 473&ndash;480.
+</p>
+<p>Kroonenberg, P. M., &amp; Basford, K. E. B. (1989). An investigation of
+multi-attribute genotype response across environments using three-mode
+principal component analysis.
+Euphytica, 44, 109&ndash;123.
+</p>
+<p>Marcin Kozak (2010).
+Use of parallel coordinate plots in multi-response selection of
+interesting genotypes.
+Communications in Biometry and Crop Science, 5, 83-95.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(australia.soybean)
+  dat &lt;- australia.soybean
+
+  libs(reshape2)
+  dm &lt;- melt(dat, id.var=c('env', 'year','loc','gen'))
+
+  # Joint plot of genotypes &amp; traits. Similar to Figure 1 of Kroonenberg 1989
+  dmat &lt;- acast(dm, gen~variable, fun=mean)
+  dmat &lt;- scale(dmat)
+  biplot(princomp(dmat), main="australia.soybean trait x gen biplot", cex=.75)
+
+
+  # Figure 1 of Kozak 2010, lines 44-58
+  libs(reshape2, lattice, latticeExtra)
+  data(australia.soybean)
+  dat &lt;- australia.soybean
+  dat &lt;- melt(dat, id.var=c('env', 'year','loc','gen'))
+  dat &lt;- acast(dat, gen~variable, fun=mean)
+  dat &lt;- scale(dat)
+  dat &lt;- as.data.frame(dat)[,c(2:6,1)]
+  dat$gen &lt;- rownames(dat)
+  # data for the graphic by Kozak
+  dat2 &lt;- dat[44:58,]
+  dat3 &lt;- subset(dat2, is.element(gen, c("G48","G49","G50","G51")))
+
+  parallelplot( ~ dat3[,1:6]|dat3$gen, main="australia.soybean",
+               as.table=TRUE, horiz=FALSE) +
+    parallelplot( ~ dat2[,1:6], horiz=FALSE, col="gray80") +
+    parallelplot( ~ dat3[,1:6]|dat3$gen,
+                 as.table=TRUE, horiz=FALSE, lwd=2)
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html><html><head><title>R: Sample of egg weights on 24 consecutive days</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>goulden.eggs</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Sample of egg weights on 24 consecutive days
+</h2>
+
+<h3>Description</h3>
+
+<p>Sample of egg weights on 24 consecutive days
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("goulden.eggs")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 240 observations on the following 2 variables.
+</p>
+
+<dl>
+<dt><code>day</code></dt><dd><p>day</p>
+</dd>
+<dt><code>weight</code></dt><dd><p>weight</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data are the weights of 10 eggs taken at random on each day for 24
+days.  Day 1 was Dec 10, and Day 24 was Jan 2.
+</p>
+<p>The control chart for standard deviations shows 4 values beyond the
+upper limits. The data reveals a single, unusually large egg on each
+of these days.  These are almost surely double-yolk eggs.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Cyrus H. Goulden (1952).
+<em>Methods of Statistical Analysis</em>, 2nd ed. Page 425.
+</p>
+
+
+<h3>References</h3>
+
+<p>None.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(goulden.eggs)
+dat &lt;- goulden.eggs
+
+libs(qicharts)
+# Figure 19-4 of Goulden. (Goulden uses 1/n when calculating std dev)
+op &lt;- par(mfrow=c(2,1))
+qic(weight, x = day, data = dat, chart = 'xbar',
+    main = 'goulden.eggs - Xbar chart',
+    xlab = 'Date', ylab = 'Avg egg weight' )
+qic(weight, x = day, data = dat, chart = 's',
+    main = 'goulden.eggs - S chart',
+    xlab = 'Date', ylab = 'Std dev egg weight' )
+par(op)
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

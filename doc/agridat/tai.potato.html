@@ -1,0 +1,107 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of potato</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>tai.potato</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of potato
+</h2>
+
+<h3>Description</h3>
+
+<p>Multi-environment trial of potato tuber yields
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("tai.potato")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 48 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>yield</code></dt><dd><p>yield, kg/plot</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype code</p>
+</dd>
+<dt><code>variety</code></dt><dd><p>variety name</p>
+</dd>
+<dt><code>env</code></dt><dd><p>environment code</p>
+</dd>
+<dt><code>loc</code></dt><dd><p>location</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Mean tuber yield of 8 genotypes in 3 locations over two years.
+Katahdin and Sebago are check varieties.  Each location was planted as
+a 4-rep RCB design.
+</p>
+<p>In Tai's plot of the stability parameters, F5751 and Sebago were in
+the average stability area.  The highest yielding genotype F6032 had
+an unstable performance.
+</p>
+
+
+<h3>Source</h3>
+
+<p>G.C.C. Tai, 1971.
+Genotypic stability analysis and its application to potato regional trials.
+Crop Sci 11, 184-190.  Table 2, p. 187.
+https://doi.org/10.2135/cropsci1971.0011183X001100020006x
+</p>
+
+
+<h3>References</h3>
+
+<p>George Fernandez (1991).
+Analysis of Genotype x Environment Interaction by Stability Estimates.
+<em>Hort Science</em>, 26, 947-950.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(tai.potato)
+dat &lt;- tai.potato
+
+libs(lattice)
+dotplot(variety ~ yield|env, dat, main="tai.potato")
+
+# fixme - need to add tai() example
+
+# note, st4gi::tai assumes there are replications in the data
+# https://github.com/reyzaguirre/st4gi/blob/master/R/tai.R
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

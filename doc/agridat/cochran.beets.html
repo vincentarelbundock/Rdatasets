@@ -1,0 +1,96 @@
+<!DOCTYPE html><html><head><title>R: Yield and number of plants in a sugarbeet fertilizer...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>cochran.beets</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Yield and number of plants in a sugarbeet fertilizer experiment
+</h2>
+
+<h3>Description</h3>
+
+<p>Yield and number of plants in a sugarbeet fertilizer experiment.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("cochran.beets")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 42 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>fert</code></dt><dd><p>fertilizer treatment</p>
+</dd>
+<dt><code>block</code></dt><dd><p>block</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, tons/acres</p>
+</dd>
+<dt><code>plants</code></dt><dd><p>number of plants per plot</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Yield (tons/acre) and number of beets per plot.  Fertilizer
+treatments combine superphosphate (P), muriate of potash (K),
+and sodium nitrate (N).
+</p>
+
+
+<h3>Source</h3>
+
+<p>George Snedecor (1946).
+<em>Statisitcal Methods</em>, 4th ed. Table 12.13, p. 332.
+</p>
+
+
+<h3>References</h3>
+
+<p>H. Fairfield Smith (1957).
+Interpretation of Adjusted Treatment Means and Regressions in Analysis
+of Covariance.
+<em>Biometrics</em>, 13, 282-308.
+https://doi.org/10.2307/2527917
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(cochran.beets)
+dat = cochran.beets
+
+# P has strong effect
+libs(lattice)
+xyplot(yield ~ plants|fert, dat, main="cochran.beets") 
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

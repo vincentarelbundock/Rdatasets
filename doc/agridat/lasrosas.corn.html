@@ -1,0 +1,182 @@
+<!DOCTYPE html><html><head><title>R: Yield monitor data for a corn field in Argentina with...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>lasrosas.corn</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Yield monitor data for a corn field in Argentina with variable nitrogen.
+</h2>
+
+<h3>Description</h3>
+
+<p>Yield monitor data for a corn field in Argentina with variable nitrogen.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("lasrosas.corn")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 3443 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year, 1999 or 2001</p>
+</dd>
+<dt><code>lat</code></dt><dd><p>latitude</p>
+</dd>
+<dt><code>long</code></dt><dd><p>longitude</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, quintals/ha</p>
+</dd>
+<dt><code>nitro</code></dt><dd><p>nitrogen fertilizer, kg/ha</p>
+</dd>
+<dt><code>topo</code></dt><dd><p>topographic factor</p>
+</dd>
+<dt><code>bv</code></dt><dd><p>brightness value (proxy for low organic matter content)</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>rep factor</p>
+</dd>
+<dt><code>nf</code></dt><dd><p>nitrogen as a factor, N0-N4</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Corn yield and nitrogen fertilizer treatment with field characteristics
+for the Las Rosas farm, Rio Cuarto, Cordoba, Argentina.
+</p>
+<p>Data has 6 nitro treatments, 3 reps, in strips.
+</p>
+<p>Data collected using yield monitor, for harvests in 1999 and 2001.
+</p>
+<p>The points within each long strip have been averaged so that the
+distance between points _within_ a strip is the same as the distance
+_between_ strips (9.8 meters).
+</p>
+<p>The topographic factor a factor with levels W = West slope, HT =
+Hilltop, E = East slope, LO = Low East.
+</p>
+<p>The 'rep' factor in this data was added by hand and did not appear in
+the original data.
+</p>
+<p>Slightly different levels of nitrogen were used in the two years, so
+the nitrogen factor 'nf' was created to have common levels across
+years.
+</p>
+<p>Published descriptions of the data describe the experiment design as
+having randomized nitrogen treatments.  The nitrogen treatments were
+randomized within one rep, but the same randomization was used in the
+other two reps.
+</p>
+<p>Anselin et al. used corn grain price of $6.85/quintal and nitrogen
+cost of $0.4348/kg.
+</p>
+<p>The corners of the field in 1999 are:
+https://www.google.com/maps/place/-33.0501258,-63.8488636
+https://www.google.com/maps/place/-33.05229635,-63.84181819
+</p>
+<p>Anselin et al. found a significant response to nitrogen for slope.
+However, Bongiovanni and Lowenberg-DeBoer (2002) found that slope
+position was NOT significant in 2001.
+</p>
+<p>Used with permission of the ASU GeoDa Center.
+</p>
+
+
+<h3>Source</h3>
+
+<p>The Las Rosas data files were obtained from
+https://geodacenter.asu.edu/sdata
+and converted from ESRI shape files to a flat data.frame.
+</p>
+
+
+<h3>References</h3>
+
+<p>Bongiovanni and Lowenberg-DeBoer (2000).
+Nitrogen management in corn with a spatial regression model.
+Proceedings of the Fifth International Conference on Precision
+Agriculture.
+</p>
+<p>Anselin, L., R. Bongiovanni, J. Lowenberg-DeBoer (2004).
+A spatial econometric approach to the economics of site-specific
+nitrogen management in corn production.
+American Journal of Agricultural Economics, 86, 675&ndash;687.
+https://doi.org/10.1111/j.0002-9092.2004.00610.x
+</p>
+<p>Lambert, Lowenberg-Deboer, Bongiovanni (2004).
+A Comparison of Four Spatial Regression Models for Yield Monitor Data:
+A Case Study from Argentina.
+Precision Agriculture, 5, 579-600.
+https://doi.org/10.1007/s11119-004-6344-3
+</p>
+<p>Suman Rakshit, Adrian Baddeley, Katia Stefanova, Karyn Reeves, Kefei
+Chen, Zhanglong Cao, Fiona Evans, Mark Gibberd (2020).
+Novel approach to the analysis of spatially-varying treatment effects
+in on-farm experiments.
+Field Crops Research, 255, 15 September 2020, 107783.
+https://doi.org/10.1016/j.fcr.2020.107783
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(lasrosas.corn)
+dat &lt;- lasrosas.corn
+
+# yield map
+libs(lattice,latticeExtra)  # for panel.levelplot.points
+redblue &lt;- colorRampPalette(c("firebrick", "lightgray", "#375997"))
+levelplot(yield ~ long*lat|factor(year), data=dat, 
+          main="lasrosas.corn grain yield", xlab="Longitude", ylab="Latitude",
+          scales=list(alternating=FALSE),
+          prepanel = prepanel.default.xyplot,
+          panel = panel.levelplot.points,
+          type = c("p", "g"), aspect = "iso", col.regions=redblue)
+
+
+d1 &lt;- subset(dat, year==1999)
+
+# Experiment design
+xyplot(lat~long, data=d1, col=as.numeric(as.factor(d1$nitro)), pch=d1$topo,
+       main="lasrosas.corn experiment layout 1999")
+
+# A quadratic response to nitrogen is suggested
+xyplot(yield~nitro|topo, data=d1, type=c('p','smooth'), layout=c(4,1),
+       main="lasrosas.corn yield by topographic zone 1999")
+
+# Full-field quadratic response to nitrogen.  Similar to Bongiovanni 2000,
+# table 1.
+m1 &lt;- lm(yield ~ 1 + nitro + I(nitro^2), data=d1, subset=year==1999)
+coef(m1)
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

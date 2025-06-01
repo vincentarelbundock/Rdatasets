@@ -1,0 +1,179 @@
+<!DOCTYPE html><html><head><title>R: Incomplete block alpha design</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>burgueno.alpha</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Incomplete block alpha design
+</h2>
+
+<h3>Description</h3>
+
+<p>Incomplete block alpha design
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("burgueno.alpha")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 48 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>rep</code></dt><dd><p>rep, 3 levels</p>
+</dd>
+<dt><code>block</code></dt><dd><p>block, 12 levels</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype, 16 levels</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>A field experiment with 3 reps, 4 blocks per rep, laid out as an alpha
+design.
+</p>
+<p>The plot size is not given.
+</p>
+<p>Electronic version of the data obtained from CropStat software.
+</p>
+<p>Used with permission of Juan Burgueno.
+</p>
+
+
+<h3>Source</h3>
+
+<p>J Burgueno, A Cadena, J Crossa, M Banziger, A Gilmour, B Cullis. 2000.
+User's guide for spatial analysis of field variety trials using ASREML.  
+CIMMYT.
+https://books.google.com/books?id=PR_tYCFyLCYC&amp;pg=PA1
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(burgueno.alpha)
+  dat &lt;- burgueno.alpha
+
+  libs(desplot)
+  desplot(dat, yield~col*row,
+          out1=rep, out2=block, # aspect unknown
+          text=gen, cex=1,shorten="none",
+          main='burgueno.alpha')
+
+
+  libs(lme4,lucid)
+  # Inc block model
+  m0 &lt;- lmer(yield ~ gen + (1|rep/block), data=dat)
+  vc(m0) # Matches Burgueno p. 26
+  ##        grp        var1 var2   vcov sdcor
+  ##  block:rep (Intercept) &lt;NA&gt;  86900 294.8
+  ##        rep (Intercept) &lt;NA&gt; 200900 448.2
+  ##   Residual        &lt;NA&gt; &lt;NA&gt; 133200 365  
+
+
+  if(require("asreml", quietly=TRUE)) {
+    libs(asreml)
+    
+    dat &lt;- transform(dat, xf=factor(col), yf=factor(row))
+    dat &lt;- dat[order(dat$xf, dat$yf),]                 
+    
+    # Sequence of models on page 36 of Burgueno
+    
+    m1 &lt;- asreml(yield ~  gen, data=dat)
+    m1$loglik # -232.13
+    
+    m2 &lt;- asreml(yield ~  gen, data=dat,
+                 random = ~ rep)
+    m2$loglik # -223.48
+    
+    # Inc Block model
+    m3 &lt;- asreml(yield ~  gen, data=dat,
+                 random = ~ rep/block)
+    m3$loglik # -221.42
+    m3$coef$fixed # Matches solution on p. 27
+    
+    # AR1xAR1 model
+    m4 &lt;- asreml(yield ~ 1 + gen, data=dat,
+                 resid = ~ar1(xf):ar1(yf))
+    m4$loglik # -221.47
+    plot(varioGram(m4), main="burgueno.alpha") # Figure 1
+    
+    m5 &lt;- asreml(yield ~ 1 + gen, data=dat,
+                 random= ~ yf, resid = ~ar1(xf):ar1(yf))
+    m5$loglik # -220.07
+    
+    m6 &lt;- asreml(yield ~ 1 + gen + pol(yf,-2), data=dat,
+                 resid = ~ar1(xf):ar1(yf))
+    m6$loglik # -204.64
+    
+    m7 &lt;- asreml(yield ~ 1 + gen + lin(yf), data=dat,
+                 random= ~ spl(yf), resid = ~ar1(xf):ar1(yf))
+    m7$loglik # -212.51
+    
+    m8 &lt;- asreml(yield ~ 1 + gen + lin(yf), data=dat,
+                 random= ~ spl(yf))
+    m8$loglik # -213.91
+    
+    # Polynomial model with predictions
+    m9 &lt;- asreml(yield ~ 1 + gen + pol(yf,-2) + pol(xf,-2), data=dat,
+                 random= ~ spl(yf),
+                 resid = ~ar1(xf):ar1(yf))
+    m9 &lt;- update(m9)
+    m9$loglik # -191.44 vs -189.61
+  
+    m10 &lt;- asreml(yield ~ 1 + gen + lin(yf)+lin(xf), data=dat,
+                  resid = ~ar1(xf):ar1(yf))
+    m10$loglik # -211.56
+    
+    m11 &lt;- asreml(yield ~ 1 + gen + lin(yf)+lin(xf), data=dat,
+                  random= ~ spl(yf),
+                  resid = ~ar1(xf):ar1(yf))
+    m11$loglik # -208.90
+    
+    m12 &lt;- asreml(yield ~ 1 + gen + lin(yf)+lin(xf), data=dat,
+                  random= ~ spl(yf)+spl(xf),
+                  resid = ~ar1(xf):ar1(yf))
+    m12$loglik # -206.82
+    
+    m13 &lt;- asreml(yield ~ 1 + gen + lin(yf)+lin(xf), data=dat,
+                  random= ~ spl(yf)+spl(xf))
+    m13$loglik # -207.52
+  }
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

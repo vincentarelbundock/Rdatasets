@@ -1,0 +1,102 @@
+<!DOCTYPE html><html><head><title>R: Singapore Automobile Claims</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>SingaporeAuto</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Singapore Automobile Claims</h2>
+
+<h3>Description</h3>
+
+<p>The data is from the General Insurance Association of Singapore, an organization consisting of general (property and casualty) insurers in Singapore (see the organization's website: www.gia.org.sg). From this database, several characteristics are available to explain automobile accident frequency. These characteristics include vehicle variables, such as type and age, as well as person level variables, such as age, gender and prior driving experience.</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(SingaporeAuto)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 7483 observations on the following 15 variables.
+</p>
+
+<dl>
+<dt><code>SexInsured</code></dt><dd><p>a factor with levels <code>F</code> <code>M</code> <code>U</code></p>
+</dd>
+<dt><code>Female</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>VehicleType</code></dt><dd><p>a factor with levels <code>A</code> <code>G</code> <code>M</code> <code>P</code> <code>Q</code> <code>S</code> <code>T</code> <code>W</code> <code>Z</code></p>
+</dd>
+<dt><code>PC</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>Clm_Count</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>Exp_weights</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>LNWEIGHT</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>NCD</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>AgeCat</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>AutoAge0</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>AutoAge1</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>AutoAge2</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>AutoAge</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>VAgeCat</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>VAgecat1</code></dt><dd><p>a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>http://instruction.bus.wisc.edu/jfrees/jfreesbooks/Regression%20Modeling/BookWebDec2010/
+</p>
+<p>DataDescriptions.pdf
+</p>
+
+
+<h3>Source</h3>
+
+<p>http://instruction.bus.wisc.edu/jfrees/jfreesbooks/Regression%20Modeling/BookWebDec2010/data.html
+</p>
+
+
+<h3>References</h3>
+
+<p>Frees E.W., Valdez E.A. (2008), Hierarchical insurance claims modeling, ,,Journal of the American Statistical Association&quot;, 103(484), p. 1457-1469. 
+</p>
+<p>Frees E.W. (2010), Regression Modeling with Actuarial and Financial Applications, Cambridge University Press.</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(SingaporeAuto)
+## maybe str(SingaporeAuto) ; plot(SingaporeAuto) ...
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

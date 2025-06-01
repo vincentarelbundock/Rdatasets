@@ -1,0 +1,176 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of corn, 3 years on same ground</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>smith.corn.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of corn, 3 years on same ground
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of corn, 3 years on same ground, 1895-1897, in Illinois.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 360 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>plot</code></dt><dd><p>plot number, consistent across years</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year. Last two digits of 1895, 1896, 1897</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, bushels / acre</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data come from the Illinois Experiment Station.
+</p>
+<p>The data values are from Smith (1910) and the field map is from Harris (1920).
+Each plot was 1/10 acre, but the dimensions are not given. Note that
+1/10 acre is also the area of a square 1 chain (66 feet) on a side.
+</p>
+<p>The following text is abridged from Smith (1910).
+</p>
+<p>How much variability may we reasonably expect in land that is
+apparently uniform? Some data among the records of the soil plots at
+the Illinois Experiment station furnish interesting material for study
+in this connection.
+</p>
+<p>A field that had lain sixteen years in pasture was broken up in 1895
+and laid out into plots to be subsequently used for soil
+experiments. The land is slightly rolling but otherwise quite uniform
+in appearance. There are in the series to be considered in this
+connection 120 one-tenth acre plots. These plots were all planted to
+corn for three consecutive years without any soil treatment, so that
+the records offer a rather exceptional opportunity for a study of this
+kind.
+</p>
+<p>A study of this data reveals some very striking variations. It will be
+noticed in the first place that there is a tremendous difference in
+production in the different years. The first year, 1895, was an
+extremely unfavorable one for corn and the yields are exceptionally
+low. The weather records show that the season was not only unusually
+dry, but also cool in the early part. The following year we have an
+exceptionally favorable corn season, and the yields run unusually
+high. The third year was also a good one, and the yields are perhaps
+somewhat above the normal for this locality.
+</p>
+<p>It will be observed that certain plots appear to be very
+abnormal. Thus plots 117, 118, 119, and 120 give an abnormally high
+yield in the first season and an abnormally low one in the two
+following years. This is to be accounted for in the topography of the
+land. These plots lie in a low spot which was favorable in the dry
+year of 1895, but unfavorable in 1896 and 1897. For this reason these
+four plots were rejected from further consideration in this study, as
+were also plots 616, 617, 618, 619, and 620. This leaves 111 plots
+whose variations are apparently unaccounted for and which furnish the
+data from which the following results are taken.
+</p>
+<p>It is noticeable that the variability as measured by the standard
+deviation becomes less in each succeeding year. This suggests the
+question as to whether continued cropping might not tend to induce
+uniformity. The records of a few of these plots which were continued
+in corn for three years longer, however, do not support such a
+conclusion.
+</p>
+<p>It seems reasonable to expect greater variability in seasons very
+unfavorable for production, such as that of 1895, because so much may
+depend upon certain critical factors of production coming into play
+and this suggestion may be the explanation of the high standard
+deviation in this first year. Results extending over a longer series
+of years would be extremely interesting in this connection.
+</p>
+<p>If we consider the total range of variation in any single year, we
+find differences as follows: Plots lying adjoining have shown the
+following maximum variations: 18 bushels in 1895; 11 bushels in 1896;
+8 bushels in 1897.
+</p>
+<p>The above results give us a conception of the unaccountable plot
+variations which we have to deal with in field tests. The possibility
+remains that a still closer study might detect some abnormal factors
+at play to account for these variations in certain cases, but the
+study certainly suggests the importance of conservatism in arriving at
+conclusions based upon plot tests.
+</p>
+<p>The particular value that the writer has derived from this study is
+the strengthening of his conviction that the only dependence to be
+placed upon variety tests and other field experiments is from records
+involving the average of liberal numbers and extending over long
+periods of time.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Smith, L.H. 1910.
+Plot arrangement for variety experiments with corn.
+Agronomy Journal, 1, 84&ndash;89. Table 1.
+https://books.google.com/books?id=mQT0AAAAMAAJ&amp;pg=PA84
+</p>
+<p>Harris, J.A. 1920.
+Practical universality of field heterogeneity as a factor
+influencing plot yields.
+Journal of Agricultural Research, 19, 279&ndash;314. Page 296-297.
+https://books.google.com/books?id=jyEXAAAAYAAJ&amp;pg=PA279
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(smith.corn.uniformity)
+  dat &lt;- smith.corn.uniformity
+
+  dat = transform(dat, year=factor(year))
+  libs(desplot)
+  desplot(dat, yield~col*row|year,
+          layout=c(2,2), aspect=1,
+          main="smith.corn.uniformity: yield across years 1895-1987")
+
+  ## # Outliers are obvious
+  ## libs(lattice)
+  ## xyplot(yield~row|factor(col), dat, groups=year,
+  ##        auto.key=list(columns=3), main="smith.corn.uniformity")
+
+  libs(rgl)
+  # A few odd pairs of outliers in column 6
+  # black/gray dots very close to each other
+  plot3d(dat$col, dat$row, dat$yield, col=dat$year,
+         xlab="col",ylab="row",zlab="yield")
+  close3d()
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

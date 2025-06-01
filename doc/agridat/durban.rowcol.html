@@ -1,0 +1,159 @@
+<!DOCTYPE html><html><head><title>R: Row-column experiment of spring barley, many varieties</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>durban.rowcol</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Row-column experiment of spring barley, many varieties
+</h2>
+
+<h3>Description</h3>
+
+<p>Row-column experiment of spring barley, many varieties
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 544 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>bed</code></dt><dd><p>bed (column)</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>rep, 2 levels</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype, 272 levels</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, tonnes/ha</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Spring barley variety trial of 272 entries (260 new varieties, 12
+control). Grown at the Scottish Crop Research Institute in 1998.
+Row-column design with 2 reps, 16 rows (north/south) by 34 beds
+(east/west).
+The land sloped downward from row 16 to row 1.  Plot yields were
+converted to tonnes per hectare.
+</p>
+<p>Plot dimensions are not given.
+</p>
+<p>Used with permission of Maria Durban.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Durban, Maria and Hackett, Christine and McNicol, James and
+Newton, Adrian and Thomas, William and Currie, Iain. 2003.
+The practical use of semiparametric models in field trials,
+Journal of Agric Biological and Envir Stats, 8, 48-66.
+https://doi.org/10.1198/1085711031265
+</p>
+
+
+<h3>References</h3>
+
+<p>Edmondson, Rodney (2020).
+Multi-level Block Designs for Comparative Experiments.
+J of Agric, Biol, and Env Stats.
+https://doi.org/10.1007/s13253-020-00416-0
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(durban.rowcol)
+  dat &lt;- durban.rowcol
+  
+  libs(desplot)
+  desplot(dat, yield~bed*row,
+          out1=rep, num=gen, # aspect unknown
+          main="durban.rowcol")
+  
+
+  # Durban 2003 Figure 1
+  m10 &lt;- lm(yield~gen, data=dat)
+  dat$resid &lt;- m10$resid
+  ## libs(lattice)
+  ## xyplot(resid~row, dat, type=c('p','smooth'), main="durban.rowcol")
+  ## xyplot(resid~bed, dat, type=c('p','smooth'), main="durban.rowcol")
+  
+  # Figure 3
+  libs(lattice)
+  xyplot(resid ~ bed|factor(row), data=dat,
+         main="durban.rowcol",
+         type=c('p','smooth'))
+  
+  
+
+  # Figure 5 - field trend
+  # note, Durban used gam package like this
+  # m1lo &lt;- gam(yield ~ gen + lo(row, span=10/16) + lo(bed, span=9/34), data=dat)
+  libs(mgcv)
+  m1lo &lt;- gam(yield ~ gen + s(row) + s(bed, k=5), data=dat)
+  new1 &lt;- expand.grid(row=unique(dat$row),bed=unique(dat$bed))
+  new1 &lt;- cbind(new1, gen="G001")
+  p1lo &lt;- predict(m1lo, newdata=new1)
+  libs(lattice)
+  wireframe(p1lo~row+bed, new1, aspect=c(1,.5), main="Field trend")
+
+
+  if(require("asreml", quietly=TRUE)) {
+    libs(asreml)
+
+    dat &lt;- transform(dat, rowf=factor(row), bedf=factor(bed))
+    dat &lt;- dat[order(dat$rowf, dat$bedf),]
+
+    m1a1 &lt;- asreml(yield~gen + lin(rowf) + lin(bedf), data=dat,
+                   random=~spl(rowf) + spl(bedf) + units,
+                   family=asr_gaussian(dispersion=1))
+    m1a2 &lt;- asreml(yield~gen + lin(rowf) + lin(bedf), data=dat,
+                   random=~spl(rowf) + spl(bedf) + units,
+                   resid = ~ar1(rowf):ar1(bedf))
+    m1a2 &lt;- update(m1a2)
+    m1a3 &lt;- asreml(yield~gen, data=dat, random=~units,
+                   resid = ~ar1(rowf):ar1(bedf))
+    
+    # Figure 7
+    libs(lattice)
+    v7a &lt;- asr_varioGram(x=dat$bedf, y=dat$rowf, z=m1a3$residuals)
+    wireframe(gamma ~ x*y, v7a, aspect=c(1,.5)) # Fig 7a
+    
+    v7b &lt;- asr_varioGram(x=dat$bedf, y=dat$rowf, z=m1a2$residuals)
+    wireframe(gamma ~ x*y, v7b, aspect=c(1,.5)) # Fig 7b
+    
+    v7c &lt;- asr_varioGram(x=dat$bedf, y=dat$rowf, z=m1lo$residuals)
+    wireframe(gamma ~ x*y, v7c, aspect=c(1,.5)) # Fig 7c
+  }
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html><html><head><title>R: Counts of yellow/white and sweet/starchy maize kernels by 15...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>pearl.kernels</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Counts of yellow/white and sweet/starchy maize kernels by 15 observers
+</h2>
+
+<h3>Description</h3>
+
+<p>Counts of yellow/white and sweet/starchy kernels on each of 4 maize
+ears by 15 observers.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 59 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>ear</code></dt><dd><p>ear, 8-11</p>
+</dd>
+<dt><code>obs</code></dt><dd><p>observer, 1-15</p>
+</dd>
+<dt><code>ys</code></dt><dd><p>number of yellow starchy kernels</p>
+</dd>
+<dt><code>yt</code></dt><dd><p>yellow sweet</p>
+</dd>
+<dt><code>ws</code></dt><dd><p>white starchy</p>
+</dd>
+<dt><code>wt</code></dt><dd><p>white sweet</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>An ear of white sweet corn was crossed with an ear of yellow starchy
+corn.  The F1 kernels of the cross were grown and a sample of four
+ears was harvested. The F2 kernels of these ears were classified by
+each of 15 observers into white/yellow and sweet/starchy.
+</p>
+<p>By Mendelian genetics, the kernels should occur in the
+ratio 9 yellow starch, 3 white starch, 3 yellow sweet,
+1 white sweet.
+</p>
+<p>The observers had the following positions:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+    1 </td><td style="text-align: left;"> Plant pathologist </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    2 </td><td style="text-align: left;"> Asst plant pathologist </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    3 </td><td style="text-align: left;"> Prof agronomy </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    4 </td><td style="text-align: left;"> Asst prof agronomy </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    5 </td><td style="text-align: left;"> Prof philosophy </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    6 </td><td style="text-align: left;"> Biologist </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    7 </td><td style="text-align: left;"> Biologist </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    8 </td><td style="text-align: left;"> Asst biologist </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    9 </td><td style="text-align: left;"> Computer </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    10 </td><td style="text-align: left;"> Farmer </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    11 </td><td style="text-align: left;"> Prof plant physiology </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    12 </td><td style="text-align: left;"> Instructor plant physiology </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    13 </td><td style="text-align: left;"> Asst plant physiology </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    14 </td><td style="text-align: left;"> Asst plant physiology </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    15 </td><td style="text-align: left;"> Prof biology </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>Raymond Pearl, 1911.
+The Personal Equation In Breeding Experiments Involving Certain
+Characters of Maize, Biol. Bull., 21, 339-366.
+https://www.biolbull.org/cgi/reprint/21/6/339.pdf
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+data(pearl.kernels)
+dat &lt;- pearl.kernels
+
+libs(lattice)
+xyplot(ys+yt+ws+wt~obs|ear, dat, type='l', as.table=TRUE,
+       auto.key=list(columns=4),
+       main="pearl.kernels", xlab="observer",ylab="kernels",
+       layout=c(4,1), scales=list(x=list(rot=90)))
+
+# Test hypothesis that distribution is 'Mendelian' 9:3:3:1
+dat$pval &lt;- apply(dat[, 3:6], 1, function(x)
+                  chisq.test(x, p=c(9,3,3,1)/16)$p.val)
+dotplot(pval~obs|ear, dat, layout=c(1,4), main="pearl.kernels",
+        ylab="P-value for test of 9:3:3:1 distribution")
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

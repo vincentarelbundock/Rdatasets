@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head><title>R: New York Air Quality Measurements</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>airquality_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>New York Air Quality Measurements</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'airquality_df' to avoid confusion with other packages
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+'usdatasets' package and assists users in identifying its specific characteristics. The suffix 'df'
+identifies the dataset as a data frame, helping to differentiate it from other datasets within the package.
+The original content of the dataset has not been modified in any way.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(airquality_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 153 observations and 6 variables:
+</p>
+
+<dl>
+<dt>Ozone</dt><dd><p>Ozone concentration (parts per billion) from 1 to 331.</p>
+</dd>
+<dt>Solar.R</dt><dd><p>Solar radiation (watts per square meter).</p>
+</dd>
+<dt>Wind</dt><dd><p>Wind speed (miles per hour).</p>
+</dd>
+<dt>Temp</dt><dd><p>Temperature (degrees Fahrenheit).</p>
+</dd>
+<dt>Month</dt><dd><p>Month of the observation (integer from 5 to 9).</p>
+</dd>
+<dt>Day</dt><dd><p>Day of the observation (integer from 1 to 31).</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>United States Environmental Protection Agency (EPA).
+</p>
+
+</main>
+
+</div>
+</body></html>

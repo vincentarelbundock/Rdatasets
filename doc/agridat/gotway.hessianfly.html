@@ -1,0 +1,119 @@
+<!DOCTYPE html><html><head><title>R: Hessian fly damage to wheat varieties</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gotway.hessianfly</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Hessian fly damage to wheat varieties
+</h2>
+
+<h3>Description</h3>
+
+<p>Hessian fly damage to wheat varieties
+</p>
+
+
+<h3>Format</h3>
+
+
+<dl>
+<dt><code>block</code></dt><dd><p>block factor, 4 levels</p>
+</dd>
+<dt><code>genotype factor, 16 wheat varieties</code></dt><dd></dd>
+<dt><code>lat</code></dt><dd><p>latitude, numeric</p>
+</dd>
+<dt><code>long</code></dt><dd><p>longitude, numeric</p>
+</dd>
+<dt><code>y</code></dt><dd><p>number of damaged plants</p>
+</dd>
+<dt><code>n</code></dt><dd><p>number of total plants</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The response is binomial.
+</p>
+<p>Each plot was square.
+</p>
+
+
+<h3>Source</h3>
+
+<p>C. A. Gotway and W. W. Stroup.
+A Generalized Linear Model Approach to Spatial Data Analysis and Prediction
+<em>Journal of Agricultural, Biological, and Environmental
+Statistics</em>, 2, 157-178.
+</p>
+<p>https://doi.org/10.2307/1400401
+</p>
+
+
+<h3>References</h3>
+
+<p>The GLIMMIX procedure. https://www.ats.ucla.edu/stat/SAS/glimmix.pdf
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(gotway.hessianfly)
+  dat &lt;- gotway.hessianfly
+  
+  dat$prop &lt;- dat$y / dat$n
+  
+  libs(desplot)
+  desplot(dat, prop~long*lat,
+          aspect=1, # true aspect
+          out1=block, num=gen, cex=.75,
+          main="gotway.hessianfly")
+  
+
+  # ----------------------------------------------------------------------------
+
+  # spaMM package example
+  libs(spaMM)
+  m1 = HLCor(cbind(y, n-y) ~ 1 + gen + (1|block) + Matern(1|long+lat),
+             data=dat, family=binomial(), ranPars=list(nu=0.5, rho=1/.7))
+  summary(m1)
+  fixef(m1)
+  # The following line fails with "Invalid graphics state"
+  # when trying to use pkgdown::build_site
+  # filled.mapMM(m1)
+
+  # ----------------------------------------------------------------------------
+
+  # Block random.  See Glimmix manual, output 1.18.
+  # Note: (Different parameterization)
+  
+  libs(lme4)
+  l2 &lt;- glmer(cbind(y, n-y) ~ gen + (1|block), data=dat, family=binomial,
+    control=glmerControl(check.nlev.gtr.1="ignore"))
+  coef(l2)
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

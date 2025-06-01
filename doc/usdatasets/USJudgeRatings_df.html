@@ -1,0 +1,77 @@
+<!DOCTYPE html><html><head><title>R: Lawyers' Ratings of State Judges in the US Superior Court</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>USJudgeRatings_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Lawyers' Ratings of State Judges in the US Superior Court</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'USJudgeRatings_df' to avoid confusion with other packages
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the 'usdatasets'
+package and identifies it as a data frame. The original content of the dataset has not been modified.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(USJudgeRatings_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 43 observations and 12 variables representing ratings for U.S. judges:
+</p>
+
+<dl>
+<dt>CONT</dt><dd><p>Numeric vector representing the judges' ratings on control.</p>
+</dd>
+<dt>INTG</dt><dd><p>Numeric vector representing the judges' ratings on integrity.</p>
+</dd>
+<dt>DMNR</dt><dd><p>Numeric vector representing the judges' ratings on demeanor.</p>
+</dd>
+<dt>DILG</dt><dd><p>Numeric vector representing the judges' ratings on diligence.</p>
+</dd>
+<dt>CFMG</dt><dd><p>Numeric vector representing the judges' ratings on communications with clients.</p>
+</dd>
+<dt>DECI</dt><dd><p>Numeric vector representing the judges' ratings on decisiveness.</p>
+</dd>
+<dt>PREP</dt><dd><p>Numeric vector representing the judges' ratings on preparation.</p>
+</dd>
+<dt>FAMI</dt><dd><p>Numeric vector representing the judges' ratings on family law expertise.</p>
+</dd>
+<dt>ORAL</dt><dd><p>Numeric vector representing the judges' ratings on oral communications.</p>
+</dd>
+<dt>WRIT</dt><dd><p>Numeric vector representing the judges' ratings on written communications.</p>
+</dd>
+<dt>PHYS</dt><dd><p>Numeric vector representing the judges' ratings on physical appearance.</p>
+</dd>
+<dt>RTEN</dt><dd><p>Numeric vector representing the judges' ratings on overall rating.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>U.S. judge ratings data.
+</p>
+
+</main>
+
+</div>
+</body></html>

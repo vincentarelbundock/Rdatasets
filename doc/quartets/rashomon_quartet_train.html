@@ -1,0 +1,137 @@
+<!DOCTYPE html><html><head><title>R: Rashomon Quartet Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>rashomon_quartet</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Rashomon Quartet Data</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains 2,000 observations, 1,000 training observations and
+1,000 testing observations. These were generated such that 4 modeling
+techniques (regression tree, linear model, neural network, random forest)
+will yield the same <code class="reqn">R^2</code> and RMSE but will fit the models very differently.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>rashomon_quartet
+
+rashomon_quartet_train
+
+rashomon_quartet_test
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p><code>rashomon_quartet</code>: A dataframe with 2000 rows and 5 variables:
+</p>
+
+<ul>
+<li> <p><code>split</code>: train, test
+</p>
+</li>
+<li> <p><code>x1</code>
+</p>
+</li>
+<li> <p><code>x2</code>
+</p>
+</li>
+<li> <p><code>x3</code>
+</p>
+</li>
+<li> <p><code>y</code>
+</p>
+</li></ul>
+
+<p><code>rashomon_quartet_train</code>: A dataframe with 1000 rows and 4 variables:
+</p>
+
+<ul>
+<li> <p><code>x1</code>
+</p>
+</li>
+<li> <p><code>x2</code>
+</p>
+</li>
+<li> <p><code>x3</code>
+</p>
+</li>
+<li> <p><code>y</code>
+</p>
+</li></ul>
+
+<p><code>rashomon_quartet_test</code>: A dataframe with 1000 rows and 4 variables:
+</p>
+
+<ul>
+<li> <p><code>x1</code>
+</p>
+</li>
+<li> <p><code>x2</code>
+</p>
+</li>
+<li> <p><code>x3</code>
+</p>
+</li>
+<li> <p><code>y</code>
+</p>
+</li></ul>
+
+
+
+<h3>Details</h3>
+
+<p>There are three explanatory variables <code>x1</code>, <code>x2</code>, <code>x3</code> and one outcome <code>y</code>
+generated as:
+</p>
+<p><code class="reqn">y = sin((3x_1 + x_2)/5)+\varepsilon</code>
+</p>
+<p>where <code class="reqn">\varepsilon\sim N(0,1/3)</code> and <code class="reqn">[x_1,x_2,x_3]\sim N(0, \Sigma_{3x3})</code>
+and <code class="reqn">\Sigma_{3x3}</code> has 1 on the diagonal and 0.9 elsewhere.
+</p>
+<p>If fit using the following hyperparameters, each model will yield an <code class="reqn">R^2</code> of 0.73 and an RMSE of 0.354
+</p>
+
+<ul>
+<li><p> Regression tree: max depth: 3, min split: 250
+</p>
+</li>
+<li><p> Linear model: all main effects
+</p>
+</li>
+<li><p> Random Forest: mtry: 1, number of trees: 100
+</p>
+</li>
+<li><p> Neural network: hidden neurons in each layer: 8, 4, threshold for partial derivatives of the error function as stopping criteria: 0.05
+</p>
+</li></ul>
+
+<p><code>rashomon_quartet_train</code> contains just the training data and <code>rashomon_quartet_test</code> contains only the test data.
+</p>
+
+
+<h3>References</h3>
+
+<p>P. Biecek, H. Baniecki, M. Krzyziński, D. Cook. Performance is not enough: the story of Rashomon’s quartet. Preprint arXiv:2302.13356v2, 2023.
+</p>
+
+</main>
+
+</div>
+</body></html>

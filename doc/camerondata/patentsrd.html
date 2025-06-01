@@ -1,0 +1,128 @@
+<!DOCTYPE html><html><head><title>R: Patents and R&amp;D</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>patentsrd</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Patents and R&amp;D</h2>
+
+<h3>Description</h3>
+
+<p>Panel data on patents and R&amp;D expenditures. The sample includes
+346 firms with five years of data from 1975 to 1979 used by Hall,
+Griliches, and Hausman (1986).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>patentsrd
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 346 observations and 25 variables:
+</p>
+
+<dl>
+<dt>cusip</dt><dd><p>Compustat's identifying number for the firm
+(Committee on Uniform Security Identification Procedures number).</p>
+</dd>
+<dt>ardssic</dt><dd><p>A two-digit code for the applied R&amp;D
+industrial classification.</p>
+</dd>
+<dt>scisect</dt><dd><p>= 1 if firm is in the scientific sector.</p>
+</dd>
+<dt>logk</dt><dd><p>log of the book value of capital in 1972.</p>
+</dd>
+<dt>sumpat</dt><dd><p>sum of patents applied for between 1972-1979.</p>
+</dd>
+<dt>logr70</dt><dd><p>log of R&amp;D spending in 1970, in 1972 dollars.</p>
+</dd>
+<dt>logr71</dt><dd><p>log of R&amp;D spending in 1971, in 1972 dollars.</p>
+</dd>
+<dt>logr72</dt><dd><p>log of R&amp;D spending in 1972, in 1972 dollars.</p>
+</dd>
+<dt>logr73</dt><dd><p>log of R&amp;D spending in 1973, in 1972 dollars.</p>
+</dd>
+<dt>logr74</dt><dd><p>log of R&amp;D spending in 1974, in 1972 dollars.</p>
+</dd>
+<dt>logr75</dt><dd><p>log of R&amp;D spending in 1975, in 1972 dollars.</p>
+</dd>
+<dt>logr76</dt><dd><p>log of R&amp;D spending in 1976, in 1972 dollars.</p>
+</dd>
+<dt>logr77</dt><dd><p>log of R&amp;D spending in 1977, in 1972 dollars.</p>
+</dd>
+<dt>logr78</dt><dd><p>log of R&amp;D spending in 1978, in 1972 dollars.</p>
+</dd>
+<dt>logr79</dt><dd><p>log of R&amp;D spending in 1979, in 1972 dollars.</p>
+</dd>
+<dt>pat70</dt><dd><p>number of patents applied in the year that were eventually granted (1970).</p>
+</dd>
+<dt>pat71</dt><dd><p>number of patents applied in the year that were eventually granted (1971).</p>
+</dd>
+<dt>pat72</dt><dd><p>number of patents applied in the year that were eventually granted (1972).</p>
+</dd>
+<dt>pat73</dt><dd><p>number of patents applied in the year that were eventually granted (1973).</p>
+</dd>
+<dt>pat74</dt><dd><p>number of patents applied in the year that were eventually granted (1974).</p>
+</dd>
+<dt>pat75</dt><dd><p>number of patents applied in the year that were eventually granted (1975).</p>
+</dd>
+<dt>pat76</dt><dd><p>number of patents applied in the year that were eventually granted (1976).</p>
+</dd>
+<dt>pat77</dt><dd><p>number of patents applied in the year that were eventually granted (1977).</p>
+</dd>
+<dt>pat78</dt><dd><p>number of patents applied in the year that were eventually granted (1978).</p>
+</dd>
+<dt>pat79</dt><dd><p>number of patents applied in the year that were eventually granted (1979).</p>
+</dd>
+</dl>
+
+
+
+<h3>Section in Text</h3>
+
+<p>23.3 Nonlinear Panel Example: Patents and R&amp;D, pp. 792-5
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="http://cameron.econ.ucdavis.edu/mmabook/mmadata.html">http://cameron.econ.ucdavis.edu/mmabook/mmadata.html</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Cameron, A. and Trivedi, P. (2005), &quot;Microeconometrics: Methods and
+Applications,&quot; Cambridge University Press, New York.
+</p>
+<p>Hall, B., Griliches, Z. and Hausman J. (1986), &quot;Patents and R and D:
+Is There a Lag?,&quot; International Economic Review, 27,
+issue 2, p. 265-83.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>summary(patentsrd)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

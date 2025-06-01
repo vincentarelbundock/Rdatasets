@@ -1,0 +1,189 @@
+<!DOCTYPE html><html><head><title>R: Cucumber yields and quantitative traits</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>cramer.cucumber</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Cucumber yields and quantitative traits
+</h2>
+
+<h3>Description</h3>
+
+<p>Cucumber yields and quantitative traits
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("cramer.cucumber")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 24 observations on the following 9 variables.
+</p>
+
+<dl>
+<dt><code>cycle</code></dt><dd><p>cycle</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>replicate</p>
+</dd>
+<dt><code>plants</code></dt><dd><p>plants per plot</p>
+</dd>
+<dt><code>flowers</code></dt><dd><p>number of pistillate flowers</p>
+</dd>
+<dt><code>branches</code></dt><dd><p>number of branches</p>
+</dd>
+<dt><code>leaves</code></dt><dd><p>number of leaves</p>
+</dd>
+<dt><code>totalfruit</code></dt><dd><p>total fruit number</p>
+</dd>
+<dt><code>culledfruit</code></dt><dd><p>culled fruit number</p>
+</dd>
+<dt><code>earlyfruit</code></dt><dd><p>early fruit number</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data are used to illustrate path analysis of the correlations
+between phenotypic traits.
+</p>
+<p>Used with permission of Christopher Cramer.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Christopher S. Cramer, Todd C. Wehner, and Sandra B. Donaghy. 1999.
+Path Coefficient Analysis of Quantitative Traits.
+In: Handbook of Formulas and Software for Plant Geneticists and
+Breeders, page 89.
+</p>
+
+
+<h3>References</h3>
+
+<p>Cramer, C. S., T. C. Wehner, and S. B. Donaghy. 1999.
+PATHSAS: a SAS computer program for path coefficient analysis of quantitative data.
+J. Hered, 90, 260-262
+https://doi.org/10.1093/jhered/90.1.260
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(cramer.cucumber)
+  dat &lt;- cramer.cucumber
+
+  libs(lattice)
+  splom(dat[3:9], group=dat$cycle,
+        main="cramer.cucumber - traits by cycle",
+        auto.key=list(columns=3))
+
+
+  # derived traits
+  dat &lt;- transform(dat,
+                   marketable = totalfruit-culledfruit,
+                   branchesperplant = branches/plants,
+                   nodesperbranch = leaves/(branches+plants),
+                   femalenodes = flowers+totalfruit)
+  dat &lt;- transform(dat,
+                   perfenod = (femalenodes/leaves),
+                   fruitset = totalfruit/flowers,
+                   fruitperplant = totalfruit / plants,
+                   marketableperplant = marketable/plants,
+                   earlyperplant=earlyfruit/plants)
+  # just use cycle 1
+  dat1 &lt;- subset(dat, cycle==1)
+
+  # define independent and dependent variables
+  indep &lt;- c("branchesperplant", "nodesperbranch", "perfenod", "fruitset")
+  dep0 &lt;- "fruitperplant"
+  dep &lt;- c("marketable","earlyperplant")
+
+  # standardize trait data for cycle 1
+  sdat &lt;- data.frame(scale(dat1[1:8, c(indep,dep0,dep)]))
+
+  # slopes for dep0 ~ indep
+  X &lt;- as.matrix(sdat[,indep])
+  Y &lt;- as.matrix(sdat[,c(dep0)])
+  # estdep &lt;- solve(t(X) 
+  estdep &lt;- solve(crossprod(X), crossprod(X,Y))
+  estdep
+  ## branchesperplant 0.7160269
+  ## nodesperbranch   0.3415537
+  ## perfenod         0.2316693
+  ## fruitset         0.2985557
+
+  # slopes for dep ~ dep0
+  X &lt;- as.matrix(sdat[,dep0])
+  Y &lt;- as.matrix(sdat[,c(dep)])
+  # estind2 &lt;- solve(t(X) 
+  estind2 &lt;- solve(crossprod(X), crossprod(X,Y))
+  estind2
+  ##  marketable earlyperplant
+  ##     0.97196     0.8828393
+
+  # correlation coefficients for indep variables
+  corrind=cor(sdat[,indep])
+  round(corrind,2)
+  ##                  branchesperplant nodesperbranch perfenod fruitset
+  ## branchesperplant             1.00           0.52    -0.24     0.09
+  ## nodesperbranch               0.52           1.00    -0.44     0.14
+  ## perfenod                    -0.24          -0.44     1.00     0.04
+  ## fruitset                     0.09           0.14     0.04     1.00
+
+  # Correlation coefficients for dependent variables
+  corrdep=cor(sdat[,c(dep0, dep)])
+  round(corrdep,2)
+  ##               fruitperplant marketable earlyperplant
+  ## fruitperplant          1.00       0.97          0.88
+  ## marketable             0.97       1.00          0.96
+  ## earlyperplant          0.88       0.96          1.00
+
+  result = corrind
+  result = result*matrix(estdep,ncol=4,nrow=4,byrow=TRUE)
+  round(result,2) # match SAS output columns 1-4
+  ##                  branchesperplant nodesperbranch perfenod fruitset
+  ## branchesperplant             0.72           0.18    -0.06     0.03
+  ## nodesperbranch               0.37           0.34    -0.10     0.04
+  ## perfenod                    -0.17          -0.15     0.23     0.01
+  ## fruitset                     0.07           0.05     0.01     0.30
+
+  resdep0 = rowSums(result)
+  resdep &lt;- cbind(resdep0,resdep0)*matrix(estind2, nrow=4,ncol=2,byrow=TRUE)
+  colnames(resdep) &lt;- dep
+  # slightly different from SAS output last 2 columns
+  round(cbind(fruitperplant=resdep0, round(resdep,2)),2)
+  ##                  fruitperplant marketable earlyperplant
+  ## branchesperplant          0.87       0.84          0.76
+  ## nodesperbranch            0.65       0.63          0.58
+  ## perfenod                 -0.08      -0.08         -0.07
+  ## fruitset                  0.42       0.41          0.37
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

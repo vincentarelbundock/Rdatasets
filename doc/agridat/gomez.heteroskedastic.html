@@ -1,0 +1,104 @@
+<!DOCTYPE html><html><head><title>R: RCB experiment of rice, heteroskedastic varieties</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gomez.heteroskedastic</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+RCB experiment of rice, heteroskedastic varieties
+</h2>
+
+<h3>Description</h3>
+
+<p>RCB experiment of rice, heteroskedastic varieties
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("gomez.heteroskedastic")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 105 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype</p>
+</dd>
+<dt><code>group</code></dt><dd><p>group of genotypes</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>replicate</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>RCB design with three reps.  Genotypes 1-15 are hybrids, 16-32 are
+parents, 33-35 are checks.
+</p>
+<p>Used with permission of Kwanchai Gomez.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Gomez, K.A. and Gomez, A.A.. 1984,
+Statistical Procedures for Agricultural Research.
+Wiley-Interscience.
+Page 310.
+</p>
+
+
+<h3>References</h3>
+
+<p>None.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(agridat)
+data(gomez.heteroskedastic)
+dat &lt;- gomez.heteroskedastic
+
+# Fix the outlier as reported by Gomez p. 311
+dat[dat$gen=="G17" &amp; dat$rep=="R2","yield"] &lt;- 7.58
+
+libs(lattice)
+bwplot(gen ~ yield, dat, group=as.numeric(dat$group),
+       ylab="genotype", main="gomez.heterogeneous")
+
+# Match Gomez table 7.28
+m1 &lt;- lm(yield ~ rep + gen, data=dat)
+anova(m1)
+## Response: yield
+##           Df Sum Sq Mean Sq F value    Pr(&gt;F)
+## rep        2  3.306 1.65304  5.6164  0.005528 **
+## gen       34 40.020 1.17705  3.9992 5.806e-07 ***
+## Residuals 68 20.014 0.29432
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

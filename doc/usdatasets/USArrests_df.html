@@ -1,0 +1,61 @@
+<!DOCTYPE html><html><head><title>R: Violent Crime Rates by US State</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>USArrests_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Violent Crime Rates by US State</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'USArrests_df' to avoid confusion with other packages
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the 'usdatasets'
+package and identifies it as a data frame. The original content of the dataset has not been modified.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(USArrests_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 50 observations and 4 variables representing the rates of arrests in the U.S.:
+</p>
+
+<dl>
+<dt>Murder</dt><dd><p>Numeric vector representing the murder rates per 100,000 residents.</p>
+</dd>
+<dt>Assault</dt><dd><p>Integer vector representing the assault rates per 100,000 residents.</p>
+</dd>
+<dt>UrbanPop</dt><dd><p>Integer vector representing the percentage of the population living in urban areas.</p>
+</dd>
+<dt>Rape</dt><dd><p>Numeric vector representing the rape rates per 100,000 residents.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>U.S. arrests data from 1973.
+</p>
+
+</main>
+
+</div>
+</body></html>

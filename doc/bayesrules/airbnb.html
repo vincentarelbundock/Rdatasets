@@ -1,0 +1,79 @@
+<!DOCTYPE html><html><head><title>R: Chicago AirBnB Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>airbnb</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Chicago AirBnB Data</h2>
+
+<h3>Description</h3>
+
+<p>The AirBnB data was collated by Trinh and Ameri as part of a course project
+at St Olaf College, and distributed with &quot;Broadening Your Statistical Horizons&quot; by Legler and Roback.
+This data set includes the prices and features for 1561 AirBnB listings in Chicago, collected in 2016.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>airbnb
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1561 rows and 12 variables. Each row represents a single AirBnB listing.
+</p>
+
+<dl>
+<dt>price</dt><dd><p>the nightly price of the listing (in USD)</p>
+</dd>
+<dt>rating</dt><dd><p>the listing's average rating, on a scale from 1 to 5</p>
+</dd>
+<dt>reviews</dt><dd><p>number of user reviews the listing has</p>
+</dd>
+<dt>room_type</dt><dd><p>the type of listing (eg: Shared room)</p>
+</dd>
+<dt>accommodates</dt><dd><p>number of guests the listing accommodates</p>
+</dd>
+<dt>bedrooms</dt><dd><p>the number of bedrooms the listing has</p>
+</dd>
+<dt>minimum_stay</dt><dd><p>the minimum number of nights to stay in the listing</p>
+</dd>
+<dt>neighborhood</dt><dd><p>the neighborhood in which the listing is located</p>
+</dd>
+<dt>district</dt><dd><p>the broader district in which the listing is located</p>
+</dd>
+<dt>walk_score</dt><dd><p>the neighborhood's rating for walkability (0 - 100)</p>
+</dd>
+<dt>transit_score</dt><dd><p>the neighborhood's rating for access to public transit (0 - 100)</p>
+</dd>
+<dt>bike_score</dt><dd><p>the neighborhood's rating for bikeability (0 - 100)</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Ly Trinh and Pony Ameri (2018). Airbnb Price Determinants: A Multilevel Modeling Approach. Project for Statistics 316-Advanced Statistical Modeling, St. Olaf College.
+Julie Legler and Paul Roback (2019). Broadening Your Statistical Horizons: Generalized Linear Models and Multilevel Models. <a href="https://bookdown.org/roback/bookdown-bysh/">https://bookdown.org/roback/bookdown-bysh/</a>.
+<a href="https://github.com/proback/BeyondMLR/blob/master/data/airbnb.csv/">https://github.com/proback/BeyondMLR/blob/master/data/airbnb.csv/</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

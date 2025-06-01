@@ -1,0 +1,124 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of cotton</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>panse.cotton.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of cotton
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of cotton in India in 1934.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("panse.cotton.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1280 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>total yield per plot, grams</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>A uniformity trial of cotton at the Institute of Plant Industry, Indore, India.
+</p>
+<p>The  trial consisted of 128 rows of cotton with a spacing of 14 inches
+between rows and length 186 feet 8 inches.
+</p>
+<p>Each harvested plot was 4 rows wide and  4 ft 8 in long, measuring 1/2000 acre.
+</p>
+<p>Four pickings were made between Nov 1933 and Jan 1934. The data here are the total yields.
+</p>
+<p>The fertility map shows appreciable variation, not following any
+systematic pattern.
+</p>
+<p>Field length: 40 plots * 4 feet 8 inches = 206 feet 8 inches
+</p>
+<p>Field width: 32 plots * 4 rows/plot * 14 inches/row = 150 feet
+</p>
+<p>Conclusions: Lower error was obtained when the plots were long rows
+instead of across the rows.
+</p>
+<p>The data were typed by K.Wright from Panse (1941) p. 864-865.
+</p>
+
+
+<h3>Source</h3>
+
+<p>V. G. Panse (1941).
+Studies in the technique of field experiments. V. Size and shape of
+blocks and arrangements of plots in cotton trials. 
+The Indian Journal Of Agricultural Science, 11, 850-867
+https://archive.org/details/in.ernet.dli.2015.271747/page/n955
+</p>
+
+
+<h3>References</h3>
+
+<p>Hutchinson, J. B. and V. G. Panse (1936).
+Studies in the technique of field experiments. I. Size, shape and
+arrangement of plots in cotton trials. 
+Indian J. Agric. Sci., 5, 523-538.
+https://archive.org/details/in.ernet.dli.2015.271739/page/n599
+</p>
+<p>V.G. Panse and P.V. Sukhatme. (1954).
+Statistical Methods for Agricultural Workers.
+First edition page 137. Fourth edition, page 131.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(panse.cotton.uniformity)
+dat &lt;- panse.cotton.uniformity
+  
+# match the CV of Panse 1954
+# sd(dat$yield)/mean(dat$yield) * 100
+# 32.1
+  
+# match the fertility map of Hutchinson, fig 1
+libs(desplot)
+desplot(dat, yield ~ col*row,
+        flip=TRUE, aspect=207/150, # true aspect
+        main="panse.cotton.uniformity")
+
+
+## End(Not run)  
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

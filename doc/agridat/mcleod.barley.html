@@ -1,0 +1,124 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of barley in South Canterbury with...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>mcleod.barley</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of barley in South Canterbury with yield and yield components
+</h2>
+
+<h3>Description</h3>
+
+<p>Yield and yield components for barley with different seeding rates.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 40 observations on the following 10 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year, numeric</p>
+</dd>
+<dt><code>site</code></dt><dd><p>site factor</p>
+</dd>
+<dt><code>rate</code></dt><dd><p>rate, numeric</p>
+</dd>
+<dt><code>plants</code></dt><dd><p>plants per sq meter</p>
+</dd>
+<dt><code>tillers</code></dt><dd><p>tillers per plant</p>
+</dd>
+<dt><code>heads</code></dt><dd><p>heads per plant</p>
+</dd>
+<dt><code>surviving</code></dt><dd><p>percent surviving tillers</p>
+</dd>
+<dt><code>grains</code></dt><dd><p>grains per head</p>
+</dd>
+<dt><code>weight</code></dt><dd><p>weight of 1000 grains</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield tons/hectare</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Trials were conducted at 5 sites, 3 years in South Canterbury.
+(not all sites in every year).
+Values are the average of 6 blocks.  In 1974 there was a
+severe drought.  The other years had favorable growing conditions.
+</p>
+
+
+<h3>Source</h3>
+
+<p>C. C. McLeod (1982).
+Effects of rates of seeding on barley sown for grain.
+<em>New Zealand Journal of Experimental Agriculture</em>, 10, 133-136.
+https://doi.org/10.1080/03015521.1982.10427857.
+</p>
+
+
+<h3>References</h3>
+
+<p>Maindonald (1992).
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+data(mcleod.barley)
+dat &lt;- mcleod.barley
+
+# Table 3 of McLeod.  Across-environment means by planting rate
+d1 &lt;- aggregate(cbind(plants, tillers, heads, surviving, grains,
+                      weight, yield) ~ rate, dat, FUN=mean)
+# Calculate income based on seed cost of $280/ton, grain $140/ton.
+d1 &lt;- transform(d1, income=140*yield-280*rate/1000)
+signif(d1,3)
+##  rate plants tillers heads surviving grains weight yield
+##    50 112.12    5.22  4.36     83.95  21.25  46.11  3.97
+##    75 162.75    4.04  3.26     80.89  19.95  45.10  4.26
+##   100 202.62    3.69  2.73     74.29  19.16  44.66  4.38
+##   125 239.00    3.28  2.33     71.86  18.45  43.45  4.41
+##   150 293.62    2.90  2.00     69.54  17.94  42.77  4.47
+
+# Even though tillers/plant, heads/plant, surviving tillers,
+# grains/head, weight/1000 grains are all decreasing as planting
+# rate increases, the total yield is still increasing.
+# But, income peaks around seed rate of 100.
+
+libs(lattice)
+xyplot(yield +income +surviving +grains +weight +plants +tillers +heads ~ rate,
+       data=d1, outer=TRUE, type=c('p','l'),
+       scales=list(y=list(relation="free")),
+       xlab="Nitrogen rate", ylab="Trait value",
+       main="mcleod.barley - nitrogen response curves"  )
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

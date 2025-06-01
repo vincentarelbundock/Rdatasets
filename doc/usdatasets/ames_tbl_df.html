@@ -1,0 +1,219 @@
+<!DOCTYPE html><html><head><title>R: Housing prices in Ames, Iowa</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>ames_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Housing prices in Ames, Iowa</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'ames_tbl_df' to avoid confusion with other packages
+in the R ecosystem from which datasets have been sourced. This naming convention helps
+distinguish this dataset as part of the 'usdatasets' package and assists users in identifying
+its specific characteristics. The suffix 'tbl_df' identifies the dataset as a tibble.
+The original content of the dataset has not been modified in any way.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(ames_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 2,930 observations and 82 variables:
+</p>
+
+<dl>
+<dt>Order</dt><dd><p>Row number in the dataset.</p>
+</dd>
+<dt>PID</dt><dd><p>Parcel Identifier.</p>
+</dd>
+<dt>area</dt><dd><p>Total house area in square feet.</p>
+</dd>
+<dt>price</dt><dd><p>Sale price of the house.</p>
+</dd>
+<dt>MS.SubClass</dt><dd><p>Building class type.</p>
+</dd>
+<dt>MS.Zoning</dt><dd><p>Zoning classification of the property.</p>
+</dd>
+<dt>Lot.Frontage</dt><dd><p>Lot frontage length in feet.</p>
+</dd>
+<dt>Lot.Area</dt><dd><p>Total lot area in square feet.</p>
+</dd>
+<dt>Street</dt><dd><p>Street type access to the property.</p>
+</dd>
+<dt>Alley</dt><dd><p>Alley type access.</p>
+</dd>
+<dt>Lot.Shape</dt><dd><p>Shape of the lot.</p>
+</dd>
+<dt>Land.Contour</dt><dd><p>Land contour around the property.</p>
+</dd>
+<dt>Utilities</dt><dd><p>Availability of utilities.</p>
+</dd>
+<dt>Lot.Config</dt><dd><p>Lot configuration.</p>
+</dd>
+<dt>Land.Slope</dt><dd><p>Slope of the land.</p>
+</dd>
+<dt>Neighborhood</dt><dd><p>Neighborhood in Ames.</p>
+</dd>
+<dt>Condition.1</dt><dd><p>Proximity to main conditions like railroads.</p>
+</dd>
+<dt>Condition.2</dt><dd><p>Proximity to secondary conditions.</p>
+</dd>
+<dt>Bldg.Type</dt><dd><p>Type of building.</p>
+</dd>
+<dt>House.Style</dt><dd><p>Architectural style of the house.</p>
+</dd>
+<dt>Overall.Qual</dt><dd><p>Overall quality of the materials and finish.</p>
+</dd>
+<dt>Overall.Cond</dt><dd><p>Overall condition of the house.</p>
+</dd>
+<dt>Year.Built</dt><dd><p>Year the house was built.</p>
+</dd>
+<dt>Year.Remod.Add</dt><dd><p>Year of the last remodel or addition.</p>
+</dd>
+<dt>Roof.Style</dt><dd><p>Roof style.</p>
+</dd>
+<dt>Roof.Matl</dt><dd><p>Roof material.</p>
+</dd>
+<dt>Exterior.1st</dt><dd><p>Primary exterior material.</p>
+</dd>
+<dt>Exterior.2nd</dt><dd><p>Secondary exterior material.</p>
+</dd>
+<dt>Mas.Vnr.Type</dt><dd><p>Masonry veneer type.</p>
+</dd>
+<dt>Mas.Vnr.Area</dt><dd><p>Masonry veneer area in square feet.</p>
+</dd>
+<dt>Exter.Qual</dt><dd><p>Exterior material quality.</p>
+</dd>
+<dt>Exter.Cond</dt><dd><p>Condition of the exterior material.</p>
+</dd>
+<dt>Foundation</dt><dd><p>Type of foundation.</p>
+</dd>
+<dt>Bsmt.Qual</dt><dd><p>Basement quality.</p>
+</dd>
+<dt>Bsmt.Cond</dt><dd><p>Basement condition.</p>
+</dd>
+<dt>Bsmt.Exposure</dt><dd><p>Basement exposure to the outside.</p>
+</dd>
+<dt>BsmtFin.Type.1</dt><dd><p>Type 1 of finished basement.</p>
+</dd>
+<dt>BsmtFin.SF.1</dt><dd><p>Square feet of finished basement type 1.</p>
+</dd>
+<dt>BsmtFin.Type.2</dt><dd><p>Type 2 of finished basement.</p>
+</dd>
+<dt>BsmtFin.SF.2</dt><dd><p>Square feet of finished basement type 2.</p>
+</dd>
+<dt>Bsmt.Unf.SF</dt><dd><p>Unfinished basement area in square feet.</p>
+</dd>
+<dt>Total.Bsmt.SF</dt><dd><p>Total basement area in square feet.</p>
+</dd>
+<dt>Heating</dt><dd><p>Type of heating system.</p>
+</dd>
+<dt>Heating.QC</dt><dd><p>Heating system quality.</p>
+</dd>
+<dt>Central.Air</dt><dd><p>Presence of central air conditioning.</p>
+</dd>
+<dt>Electrical</dt><dd><p>Type of electrical system.</p>
+</dd>
+<dt>X1st.Flr.SF</dt><dd><p>First floor area in square feet.</p>
+</dd>
+<dt>X2nd.Flr.SF</dt><dd><p>Second floor area in square feet.</p>
+</dd>
+<dt>Low.Qual.Fin.SF</dt><dd><p>Low-quality finished area in square feet.</p>
+</dd>
+<dt>Bsmt.Full.Bath</dt><dd><p>Number of full bathrooms in the basement.</p>
+</dd>
+<dt>Bsmt.Half.Bath</dt><dd><p>Number of half bathrooms in the basement.</p>
+</dd>
+<dt>Full.Bath</dt><dd><p>Number of full bathrooms above ground.</p>
+</dd>
+<dt>Half.Bath</dt><dd><p>Number of half bathrooms above ground.</p>
+</dd>
+<dt>Bedroom.AbvGr</dt><dd><p>Number of bedrooms above ground.</p>
+</dd>
+<dt>Kitchen.AbvGr</dt><dd><p>Number of kitchens above ground.</p>
+</dd>
+<dt>Kitchen.Qual</dt><dd><p>Kitchen quality.</p>
+</dd>
+<dt>TotRms.AbvGrd</dt><dd><p>Total number of rooms above ground.</p>
+</dd>
+<dt>Functional</dt><dd><p>Functionality of the house.</p>
+</dd>
+<dt>Fireplaces</dt><dd><p>Number of fireplaces.</p>
+</dd>
+<dt>Fireplace.Qu</dt><dd><p>Fireplace quality.</p>
+</dd>
+<dt>Garage.Type</dt><dd><p>Type of garage.</p>
+</dd>
+<dt>Garage.Yr.Blt</dt><dd><p>Year the garage was built.</p>
+</dd>
+<dt>Garage.Finish</dt><dd><p>Garage finish type.</p>
+</dd>
+<dt>Garage.Cars</dt><dd><p>Number of cars the garage can accommodate.</p>
+</dd>
+<dt>Garage.Area</dt><dd><p>Garage area in square feet.</p>
+</dd>
+<dt>Garage.Qual</dt><dd><p>Garage quality.</p>
+</dd>
+<dt>Garage.Cond</dt><dd><p>Garage condition.</p>
+</dd>
+<dt>Paved.Drive</dt><dd><p>Indicates whether the driveway is paved.</p>
+</dd>
+<dt>Wood.Deck.SF</dt><dd><p>Wood deck area in square feet.</p>
+</dd>
+<dt>Open.Porch.SF</dt><dd><p>Open porch area in square feet.</p>
+</dd>
+<dt>Enclosed.Porch</dt><dd><p>Enclosed porch area in square feet.</p>
+</dd>
+<dt>X3Ssn.Porch</dt><dd><p>Three-season porch area in square feet.</p>
+</dd>
+<dt>Screen.Porch</dt><dd><p>Screened porch area in square feet.</p>
+</dd>
+<dt>Pool.Area</dt><dd><p>Pool area in square feet.</p>
+</dd>
+<dt>Pool.QC</dt><dd><p>Pool quality.</p>
+</dd>
+<dt>Fence</dt><dd><p>Type of fence.</p>
+</dd>
+<dt>Misc.Feature</dt><dd><p>Miscellaneous features of the property.</p>
+</dd>
+<dt>Misc.Val</dt><dd><p>Value of miscellaneous features.</p>
+</dd>
+<dt>Mo.Sold</dt><dd><p>Month the house was sold.</p>
+</dd>
+<dt>Yr.Sold</dt><dd><p>Year the house was sold.</p>
+</dd>
+<dt>Sale.Type</dt><dd><p>Type of sale.</p>
+</dd>
+<dt>Sale.Condition</dt><dd><p>Condition of the sale.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Ames Housing Dataset, provided by Dean De Cock
+</p>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html><html><head><title>R: Factorial experiment of potato, 3x3 with missing values</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>yates.missing</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Factorial experiment of potato, 3x3 with missing values
+</h2>
+
+<h3>Description</h3>
+
+<p>Factorial experiment of potato, 3x3 with missing values.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 80 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>trt</code></dt><dd><p>treatment factor, 8 levels</p>
+</dd>
+<dt><code>block</code></dt><dd><p>block, 10 levels</p>
+</dd>
+<dt><code>y</code></dt><dd><p>infection intensity</p>
+</dd>
+<dt><code>n</code></dt><dd><p>nitrogen treatment, 2 levels</p>
+</dd>
+<dt><code>p</code></dt><dd><p>phosphorous treatment, 2 levels</p>
+</dd>
+<dt><code>k</code></dt><dd><p>potassium treatment, 2 levels</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The response variable <code>y</code> is the intensity of infection of potato
+tubers innoculated with <em>Phytophthora Erythroseptica</em>.
+</p>
+<p>There were 3 treatment factors:
+</p>
+<p>2 nitrogen levels
+</p>
+<p>2 phosphorous levels
+</p>
+<p>2 potassium levels
+</p>
+<p>Yates (1933) presents an iterative algorithm to estimate missing
+values in a matrix, using this data as an example.
+</p>
+
+
+<h3>Source</h3>
+
+<p>F. Yates (1933).
+The analysis of replicated experiments when the field results are incomplete.
+Emp. J. Exp. Agric., 1, 129&ndash;142.
+</p>
+
+
+<h3>References</h3>
+
+<p>Steel &amp; Torrie (1980).
+Principles and Procedures of Statistics, 2nd Edition, page 212.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(yates.missing)
+dat &lt;- yates.missing
+
+libs(lattice)
+bwplot(y ~ trt, data=dat,
+       xlab="Treatment", ylab="Infection intensity",
+       main="yates.missing")
+
+libs(reshape2)
+mat0 &lt;- acast(dat[, c('trt','block','y')], trt~block,
+               id.var=c('trt','block'), value.var='y')
+
+# Use lm to estimate missing values.  The estimated missing values
+# are the same as in Yates (1933)
+m1 &lt;- lm(y~trt+block, dat)
+dat$pred &lt;- predict(m1, new=dat[, c('trt','block')])
+dat$filled &lt;- ifelse(is.na(dat$y), dat$pred, dat$y)
+mat1 &lt;- acast(dat[, c('trt','block','pred')], trt~block,
+               id.var=c('trt','block'), value.var='pred')
+
+
+# Another method to estimate missing values via PCA
+libs("nipals")
+m2 &lt;- nipals(mat0, center=FALSE, ncomp=3, fitted=TRUE)
+# mat2 &lt;- m2$scores 
+mat2 &lt;- m2$fitted
+
+  # See also pcaMethods::svdImpute
+  
+  # Compare
+  ord &lt;- c("0","n","k","p","nk","np","kp","nkp")
+  print(mat0[ord,], na.print=".")
+  round(mat1[ord,] ,2)
+  round(mat2[ord,] ,2)
+  
+  # mat2 SVD with 3 components recovers original data better than
+  # mat1 from lm()
+  sum((mat0-mat1)^2, na.rm=TRUE)
+  sum((mat0-mat2)^2, na.rm=TRUE) # Smaller SS =&gt; better fit
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

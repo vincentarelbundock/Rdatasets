@@ -1,0 +1,15 @@
+rownames,version,season,subtitle,location,region,country,n_survivors,lat,lon,date_drop_off
+1,US,1,,Vancouver Island,British Columbia,Canada,10,50.72444,-127.498056,
+2,US,2,,Vancouver Island,British Columbia,Canada,10,50.72444,-127.498056,
+3,US,3,,Patagonia,Patagonia,Argentina,10,-41,-68,
+4,US,4,Lost and Found,Vancouver Island,British Columbia,Canada,14,50.72444,-127.498056,
+5,US,5,Redemption,Selenge Province,,Mongolia,10,49.75,106.5,
+6,US,6,The Arctic,Great Slave Lake,Northwest Territories,Canada,10,61.500278,-114.001111,
+7,US,7,Million Dollar Challenge,Great Slave Lake,Northwest Territories,Canada,10,61.500278,-114.001111,2019-09-18
+8,US,8,Grizzly Mountain,Chilko Lake,British Columbia,Canada,10,51.266667,-124.05,2020-09-18
+9,US,9,Polar Bear Island,Big River,Labrador,Canada,10,59.66,-64.273611,2021-09-18
+10,AU,1,,lutruwita / Tasmania,lutruwita / Tasmania,Australia,10,146.271252,-42.745305,
+11,US,10,Predator Lake,Reindeer Lake,Saskatchewan,Canada,10,58.25,-103.333333,
+12,US Frozen,1,,Coast,Labrador,Canada,6,54.890584,-59.004796,
+13,AU,2,,,South Island,New Zealand,10,167.848175284246,-45.1179976077765,
+14,US,11,Arctic Circle,Mackenzie River delta in Arctic,"Inuvik, Northwest Territories",Canada,10,68.359736102393,-133.728432928741,

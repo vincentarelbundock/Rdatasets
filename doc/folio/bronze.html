@@ -1,0 +1,99 @@
+<!DOCTYPE html><html><head><title>R: Chinese Ritual Bronzes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>bronze</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Chinese Ritual Bronzes</h2>
+
+<h3>Description</h3>
+
+<p>Chemical analysis of 369 Chinese ritual bronzes.
+The major elements (Cu, Sn and Pb) were measured using atomic absorption
+spectroscopy and the trace elements using neutron activation analysis.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>bronze
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A <code>data.frame</code> with 88 observations and 22 variables (chemical elements):
+</p>
+
+<dl>
+<dt>reference</dt><dd><p><code>integer</code>: catalog number.</p>
+</dd>
+<dt>chronology</dt><dd><p><code>integer</code>: chronology (typology).</p>
+</dd>
+<dt>dynasty</dt><dd><p>ordered <code>factor</code>: dynasty name.</p>
+</dd>
+<dt>Cu</dt><dd><p><code>numeric</code>: Cu content (ppm).</p>
+</dd>
+<dt>Sn</dt><dd><p><code>numeric</code>: Sn content (ppm).</p>
+</dd>
+<dt>Pb</dt><dd><p><code>numeric</code>: Pb content (ppm).</p>
+</dd>
+<dt>Zn</dt><dd><p><code>numeric</code>: Zn content (ppm).</p>
+</dd>
+<dt>Au</dt><dd><p><code>numeric</code>: Au content (ppm).</p>
+</dd>
+<dt>Ag</dt><dd><p><code>numeric</code>: Ag content (ppm).</p>
+</dd>
+<dt>As</dt><dd><p><code>numeric</code>: As content (ppm).</p>
+</dd>
+<dt>Sb</dt><dd><p><code>numeric</code>: Sb content (ppm).</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Wood, J. R. &amp; Liu, Y. (2023). A Multivariate Approach to Investigate
+Metallurgical Technology: The Case of the Chinese Ritual Bronzes.
+<em>Journal of Archaeological Method and Theory</em>, 30: 707-756.
+<a href="https://doi.org/10.1007/s10816-022-09572-8">doi:10.1007/s10816-022-09572-8</a>.
+</p>
+
+
+<h3>References</h3>
+
+<p>Bagley, R. W. (1987). <em>Shang ritual bronzes in the Arthur M. Sackler
+collections</em>. New York: The Arthur M. Sackler Foundation.
+</p>
+<p>Rawson, J. (1990). <em>Western Zhou ritual bronzes from the Arthur M. Sackler
+collections</em>. New York: The Arthur M. Sackler Foundation.
+</p>
+<p>So, J. (1995). <em>Eastern Zhou ritual bronzes from the Arthur M. Sackler
+Collections</em>. New York: The Arthur M. Sackler Foundation.
+</p>
+
+
+<h3>See Also</h3>
+
+<p>Other chemical data: 
+<code>kommos</code>,
+<code>verre</code>
+</p>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of corn with nitrogen fertilizer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>engelstad.nitro</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of corn with nitrogen fertilizer
+</h2>
+
+<h3>Description</h3>
+
+<p>Corn yield response to nitrogen fertilizer for a single variety of
+corn at two locations over five years
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 60 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>loc</code></dt><dd><p>location, 2 levels</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year, 1962-1966</p>
+</dd>
+<dt><code>nitro</code></dt><dd><p>nitrogen fertilizer kg/ha</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, quintals/ha</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Corn yield response to nitrogen fertilizer for a single variety of
+corn at two locations in Tennessee over five years.
+The yield data is the mean of 9 replicates.  The original
+paper fits quadratic curves to the data.  Schabenberger and Pierce fit
+multiple models including linear plateau.  The example below fits a
+quadratic plateau for one year/loc.  In the original paper, the 1965
+and 1966 data for the Knoxville location was not used as it appeared
+that the response due to nitrogen was minimal in 1965 and nonexistant
+in 1966.  The economic optimum can be found by setting the tangent
+equal to the ratio of (fertilizer price)/(grain price).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Engelstad, OP and Parks, WL.  1971.
+Variability in Optimum N Rates for Corn.
+<em>Agronomy Journal</em>, 63, 21&ndash;23.
+</p>
+
+
+<h3>References</h3>
+
+<p>Schabenberger, O. and Pierce, F.J., 2002.
+<em>Contemporary statistical models for the plant and soil sciences</em>,
+CRC. Page 254-259.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(agridat)
+data(engelstad.nitro)
+dat &lt;- engelstad.nitro
+
+libs(latticeExtra)
+useOuterStrips(xyplot(yield ~ nitro | factor(year)*loc, dat,
+                      main="engelstad.nitro"))
+
+# Fit a quadratic plateau model to one year/loc
+j62 &lt;- droplevels(subset(dat, loc=="Jackson" &amp; year==1962))
+# ymax is maximum yield, M is the change point, k affects curvature
+m1 &lt;-  nls(yield ~ ymax*(nitro &gt; M) +
+           (ymax - (k/2) * (M-nitro)^2) * (nitro &lt; M),
+           data= j62,
+           start=list(ymax=80, M=150, k=.01))
+
+# Plot the raw data and model
+newdat &lt;- data.frame(nitro=seq(0,max(dat$nitro)))
+p1 &lt;- predict(m1, new=newdat)
+plot(yield ~ nitro, j62)
+lines(p1 ~ newdat$nitro, col="blue")
+title("engelstad.nitro: quadratic plateau at Jackson 1962")
+
+# Optimum nitro level ignoring prices = 225
+coef(m1)['M']
+
+# Optimum nitro level using $0.11 for N cost, $1.15 for grain price = 140
+# Set the first derivative equal to N/corn price, k(M-nitro)=.11/1.15
+coef(m1)['M']-(.11/1.15)/coef(m1)['k']
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

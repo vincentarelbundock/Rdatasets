@@ -1,0 +1,91 @@
+<!DOCTYPE html><html><head><title>R: Batter Statistics for 2018 Major League Baseball (MLB) Season</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>mlb_players_18_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Batter Statistics for 2018 Major League Baseball (MLB) Season</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'mlb_players_18_tbl_df' to avoid confusion with other packages
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the 'usdatasets'
+package and identifies it as a tibble. The original content of the dataset has not been modified.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(mlb_players_18_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 1270 observations and 19 variables:
+</p>
+
+<dl>
+<dt>name</dt><dd><p>Character string representing the name of the player.</p>
+</dd>
+<dt>team</dt><dd><p>Character string indicating the team the player belongs to.</p>
+</dd>
+<dt>position</dt><dd><p>Character string indicating the position played by the player.</p>
+</dd>
+<dt>games</dt><dd><p>Integer representing the number of games played.</p>
+</dd>
+<dt>AB</dt><dd><p>Integer indicating the number of at-bats.</p>
+</dd>
+<dt>R</dt><dd><p>Integer representing the number of runs scored.</p>
+</dd>
+<dt>H</dt><dd><p>Integer representing the number of hits.</p>
+</dd>
+<dt>doubles</dt><dd><p>Integer indicating the number of doubles hit.</p>
+</dd>
+<dt>triples</dt><dd><p>Integer indicating the number of triples hit.</p>
+</dd>
+<dt>HR</dt><dd><p>Integer representing the number of home runs hit.</p>
+</dd>
+<dt>RBI</dt><dd><p>Integer indicating the number of runs batted in.</p>
+</dd>
+<dt>walks</dt><dd><p>Integer indicating the number of walks received.</p>
+</dd>
+<dt>strike_outs</dt><dd><p>Integer indicating the number of strikeouts.</p>
+</dd>
+<dt>stolen_bases</dt><dd><p>Integer representing the number of stolen bases.</p>
+</dd>
+<dt>caught_stealing_base</dt><dd><p>Integer indicating the number of times caught stealing.</p>
+</dd>
+<dt>AVG</dt><dd><p>Numeric representing the batting average.</p>
+</dd>
+<dt>OBP</dt><dd><p>Numeric representing the on-base percentage.</p>
+</dd>
+<dt>SLG</dt><dd><p>Numeric representing the slugging percentage.</p>
+</dd>
+<dt>OPS</dt><dd><p>Numeric representing the on-base plus slugging percentage.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Data from Major League Baseball (MLB) player statistics for the 2018 season
+</p>
+
+</main>
+
+</div>
+</body></html>

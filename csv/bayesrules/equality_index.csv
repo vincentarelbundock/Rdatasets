@@ -1,0 +1,51 @@
+rownames,state,region,gop_2016,laws,historical,percent_urban
+1,alabama,south,62.08,3,gop,59
+2,alaska,west,51.28,2,gop,66
+3,arizona,west,48.67,3,gop,89.8
+4,arkansas,south,60.57,3,gop,56.2
+5,california,west,31.62,155,dem,95
+6,colorado,west,43.25,26,swing,86.2
+7,connecticut,northeast,40.93,20,dem,88
+8,delaware,south,41.79,17,dem,83.3
+9,florida,south,49.02,4,swing,91.2
+10,georgia,south,50.77,5,gop,75.1
+11,hawaii,west,30.03,24,dem,91.9
+12,idaho,west,59.26,2,gop,70.6
+13,illinois,midwest,38.76,38,dem,88.5
+14,indiana,midwest,56.82,2,swing,72.4
+15,iowa,midwest,51.15,4,swing,64
+16,kansas,midwest,56.65,1,gop,74.2
+17,kentucky,south,62.52,5,gop,58.4
+18,louisiana,south,58.09,11,gop,73.2
+19,maine,northeast,44.87,18,dem,38.7
+20,maryland,south,33.91,32,dem,87.2
+21,massachusetts,northeast,32.81,10,dem,92
+22,michigan,midwest,47.5,7,swing,74.6
+23,minnesota,midwest,44.92,4,dem,73.3
+24,mississippi,south,57.94,1,gop,49.4
+25,missouri,midwest,56.77,1,gop,70.4
+26,montana,west,56.17,2,gop,55.9
+27,nebraska,midwest,58.75,7,gop,73.1
+28,nevada,west,45.5,34,swing,94.2
+29,new hampshire,northeast,46.61,12,swing,60.3
+30,new jersey,northeast,41,20,dem,94.7
+31,new mexico,west,40.04,15,swing,77.4
+32,new york,northeast,36.15,30,dem,87.9
+33,north carolina,south,49.83,1,swing,66.1
+34,north dakota,midwest,62.96,3,gop,59.9
+35,ohio,midwest,51.69,1,swing,77.9
+36,oklahoma,south,65.32,3,gop,66.2
+37,oregon,west,39.09,27,dem,81
+38,pennsylvania,northeast,48.58,16,swing,78.7
+39,rhode island,northeast,38.9,17,dem,90.7
+40,south carolina,south,54.94,1,gop,66.3
+41,south dakota,midwest,61.53,1,gop,56.7
+42,tennessee,south,60.72,5,gop,66.4
+43,texas,south,52.23,3,gop,84.7
+44,utah,west,45.54,14,gop,90.6
+45,vermont,northeast,29.76,18,dem,38.9
+46,virginia,south,44.43,11,swing,75.5
+47,washington,west,38.07,23,dem,84.1
+48,west virginia,south,68.63,4,gop,48.7
+49,wisconsin,midwest,47.22,5,swing,70.2
+50,wyoming,west,67.4,2,gop,64.8

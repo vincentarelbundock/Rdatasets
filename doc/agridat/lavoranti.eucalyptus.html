@@ -1,0 +1,153 @@
+<!DOCTYPE html><html><head><title>R: Height of Eucalyptus trees in southern Brazil</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>lavoranti.eucalyptus</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Height of Eucalyptus trees in southern Brazil
+</h2>
+
+<h3>Description</h3>
+
+<p>Height of Eucalyptus trees in southern Brazil
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 490 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype (progeny) factor</p>
+</dd>
+<dt><code>origin</code></dt><dd><p>origin of progeny</p>
+</dd>
+<dt><code>loc</code></dt><dd><p>location</p>
+</dd>
+<dt><code>height</code></dt><dd><p>height, meters</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The genotypes originated from three different locations in Queensland,
+Australia, and were tested in southern Brazil.  The experiment was
+conducted as a randomized complete block design with 6 plants per plot
+and 10 blocks.  Mean tree height is reported.
+</p>
+<p>The testing locations are described in the following table:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+    Loc	</td><td style="text-align: left;"> City </td><td style="text-align: left;"> Lat (S) </td><td style="text-align: left;"> Long (W) </td><td style="text-align: left;"> Altitude </td><td style="text-align: left;"> Avg min temp </td><td style="text-align: left;"> Avg max temp </td><td style="text-align: left;"> Avg temp (C) </td><td style="text-align: left;"> Precip (mm)</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    L1 </td><td style="text-align: left;"> Barra Ribeiro, RS </td><td style="text-align: left;"> 30.33 </td><td style="text-align: left;"> 51.23 </td><td style="text-align: left;"> 30 </td><td style="text-align: left;"> 9 </td><td style="text-align: left;"> 25 </td><td style="text-align: left;"> 19 </td><td style="text-align: left;"> 1400</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    L2 </td><td style="text-align: left;"> Telemaco Borba, PR </td><td style="text-align: left;"> 24.25 </td><td style="text-align: left;"> 20.48 </td><td style="text-align: left;"> 850 </td><td style="text-align: left;"> 11 </td><td style="text-align: left;"> 26 </td><td style="text-align: left;"> 19 </td><td style="text-align: left;"> 1480</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    L3 </td><td style="text-align: left;"> Boa Experanca de Sul, SP </td><td style="text-align: left;"> 21.95 </td><td style="text-align: left;"> 48.53 </td><td style="text-align: left;"> 540 </td><td style="text-align: left;"> 15 </td><td style="text-align: left;"> 23 </td><td style="text-align: left;"> 21 </td><td style="text-align: left;"> 1300</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    L4 </td><td style="text-align: left;"> Guanhaes, MG </td><td style="text-align: left;"> 18.66 </td><td style="text-align: left;"> 43 </td><td style="text-align: left;"> 900 </td><td style="text-align: left;"> 14 </td><td style="text-align: left;"> 24 </td><td style="text-align: left;"> 19 </td><td style="text-align: left;"> 1600</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    L5 </td><td style="text-align: left;"> Ipatinga, MG </td><td style="text-align: left;"> 19.25 </td><td style="text-align: left;"> 42.33 </td><td style="text-align: left;"> 250 </td><td style="text-align: left;"> 15 </td><td style="text-align: left;"> 24 </td><td style="text-align: left;"> 22 </td><td style="text-align: left;"> 1250</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    L6 </td><td style="text-align: left;"> Aracruz, ES </td><td style="text-align: left;"> 19.8 </td><td style="text-align: left;"> 40.28 </td><td style="text-align: left;"> 50 </td><td style="text-align: left;"> 15 </td><td style="text-align: left;"> 26 </td><td style="text-align: left;"> 24 </td><td style="text-align: left;"> 1360</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    L7 </td><td style="text-align: left;"> Cacapva, SP </td><td style="text-align: left;"> 23.05 </td><td style="text-align: left;"> 45.76 </td><td style="text-align: left;"> 650 </td><td style="text-align: left;"> 14 </td><td style="text-align: left;"> 24 </td><td style="text-align: left;"> 20 </td><td style="text-align: left;"> 1260
+  </td>
+</tr>
+
+</table>
+
+<p>Arciniegas-Alarcon (2010) used the 'Ravenshoe' subset of the data to
+illustrate imputation of missing values.
+</p>
+
+
+<h3>Source</h3>
+
+<p>O J Lavoranti (2003). Estabilidade e adaptabilidade fenotipica
+atraves da reamostragem bootstrap no modelo AMMI, PhD thesis,
+University of Sao Paulo, Brazil.
+</p>
+
+
+<h3>References</h3>
+
+<p>Arciniegas-Alarcon, S. and Garcia-Pena, M. and dos Santos Dias,
+C.T. and Krzanowski, W.J. (2010). An alternative methodology for
+imputing missing data in trials with genotype-by-environment
+interaction, <em>Biometrical Letters</em>, 47, 1-14.
+https://doi.org/10.2478/bile-2014-0006
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+# Arciniegas-Alarcon et al use SVD and regression to estimate missing values.
+# Partition the matrix X as a missing value xm, row vector xr1, column
+# vector xc1, and submatrix X11
+# X = [ xm  xr1 ]
+#     [ xc1 X11 ] and let X11 = UDV'.
+# Estimate the missing value xm = xr1 V D^{-1} U' xc1
+
+data(lavoranti.eucalyptus)
+dat &lt;- lavoranti.eucalyptus
+
+libs(lattice)
+levelplot(height~loc*gen, dat, main="lavoranti.eucalyptus - GxE heatmap")
+
+dat &lt;- droplevels(subset(dat, origin=="Ravenshoe"))
+libs(reshape2)
+dat &lt;- acast(dat, gen~loc, value.var='height')
+
+dat[1,1] &lt;- NA
+x11 &lt;- dat[-1,][,-1]
+X11.svd &lt;- svd(x11)
+xc1 &lt;- dat[-1,][,1]
+xr1 &lt;- dat[,-1][1,]
+xm &lt;- xr1 
+xm # = 18.29, Original value was 17.4
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

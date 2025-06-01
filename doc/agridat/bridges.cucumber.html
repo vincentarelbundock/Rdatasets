@@ -1,0 +1,152 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of cucumbers in a latin square design</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>bridges.cucumber</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of cucumbers in a latin square design
+</h2>
+
+<h3>Description</h3>
+
+<p>Cucumber yields in latin square design at two locs.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 32 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>loc</code></dt><dd><p>location</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype/cultivar</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>weight of marketable fruit per plot</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Conducted at Clemson University in 1985.  four cucumber cultivars
+were grown in a latin square design at Clemson, SC, and Tifton, GA.
+</p>
+<p>Separate variances are modeled each location.
+</p>
+<p>Plot dimensions are not given.
+</p>
+<p>Bridges (1989) used this data to illustrate fitting a heterogeneous
+mixed model.
+</p>
+<p>Used with permission of William Bridges.
+</p>
+
+
+<h3>Source</h3>
+
+<p>William Bridges (1989).
+Analysis of a plant breeding experiment with
+heterogeneous variances using mixed model equations.
+Applications of mixed models in agriculture and related
+disciplines, S. Coop. Ser. Bull, 45&ndash;51.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(bridges.cucumber)
+  dat &lt;- bridges.cucumber
+  dat &lt;- transform(dat, rowf=factor(row), colf=factor(col))
+
+  libs(desplot)
+  desplot(dat, yield~col*row|loc,
+          # aspect unknown
+          text=gen, cex=1,
+          main="bridges.cucumber")
+
+  # Graphical inference test for heterogenous variances
+  libs(nullabor)
+  # Create a lineup of datasets
+  fun &lt;- null_permute("loc")
+  dat20 &lt;- lineup(fun, dat, n=20, pos=9)
+
+  # Now plot
+  libs(lattice)
+  bwplot(yield ~ loc|factor(.sample), dat20,
+         main="bridges.cucumber - graphical inference")
+
+  if(require("asreml", quietly=TRUE)) {
+    libs(asreml,lucid)
+    
+    ## Random row/col/resid. Same as Bridges 1989, p. 147
+    m1 &lt;- asreml(yield ~ 1 + gen + loc + loc:gen,
+                 random = ~ rowf:loc + colf:loc, data=dat)
+  
+    lucid::vc(m1)
+    ##   effect component std.error z.ratio bound 
+    ## rowf:loc     31.62     23.02     1.4     P   0
+    ## colf:loc     18.08     15.32     1.2     P   0
+    ## units(R)     31.48     12.85     2.4     P   0
+    
+    ## Random row/col/resid at each loc. Matches p. 147
+    m2 &lt;- asreml(yield ~ 1 + gen + loc + loc:gen,
+                 random = ~ at(loc):rowf + at(loc):colf, data=dat,
+                 resid = ~ dsum( ~ units|loc))
+    lucid::vc(m2)
+    ##                effect component std.error z.ratio bound 
+    ## at(loc, Clemson):rowf     32.32    36.58     0.88     P   0
+    ##  at(loc, Tifton):rowf     30.92    28.63     1.1      P   0
+    ## at(loc, Clemson):colf     22.55    28.78     0.78     P   0
+    ##  at(loc, Tifton):colf     13.62    14.59     0.93     P   0
+    ##        loc_Clemson(R)     46.85    27.05     1.7      P   0
+    ##         loc_Tifton(R)     16.11     9.299    1.7      P   0
+    
+    predict(m2, data=dat, classify='loc:gen')$pvals
+    ##       loc      gen predicted.value std.error    status
+    ## 1 Clemson   Dasher            45.6      5.04 Estimable
+    ## 2 Clemson Guardian            31.6      5.04 Estimable
+    ## 3 Clemson Poinsett            21.4      5.04 Estimable
+    ## 4 Clemson   Sprint            26        5.04 Estimable
+    ## 5  Tifton   Dasher            50.5      3.89 Estimable
+    ## 6  Tifton Guardian            38.7      3.89 Estimable
+    ## 7  Tifton Poinsett            33        3.89 Estimable
+    ## 8  Tifton   Sprint            39.2      3.89 Estimable
+    
+    # Is a heterogeneous model justified? Maybe not.
+    # m1$loglik
+    ## -67.35585
+    # m2$loglik
+    ## -66.35621
+  }
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

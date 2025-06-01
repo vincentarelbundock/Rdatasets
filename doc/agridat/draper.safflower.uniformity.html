@@ -1,0 +1,155 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of safflower</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>draper.safflower.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of safflower
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of safflower in Arizona in 1958.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("draper.safflower.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 640 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>expt</code></dt><dd><p>experiment</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield per plot (grams)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Experiments were conducted at the Agricultural Experiment Station Farm
+at Eloy, Arizona. The crop was harvested in July 1958.
+</p>
+<p>The crop was planted in two rows 12 inches apart on vegetable beds 40
+inches center to center.
+</p>
+<p>In each test, the end ranges and one row of plots on one side were
+next to alleys, and those plots gave estimates of border effects. 
+</p>
+<p>Experiment E4 (four foot test)
+</p>
+<p>Sandy streaks were present in the field. Average yield was 1487
+lb/ac. A diagonal fertility gradient was in this field.  Widening the
+plot was equally effective as lengthening the plot to reduce
+variability.  The optimum plot size was 1 bed wide, 24 feet long.
+Considering economic costs, the optimum size was 1 bed, 12 feet long.
+</p>
+<p>Field width: 16 beds * 3.33 feet = 53 feet
+</p>
+<p>Field length: 18 ranges * 4 feet = 72 feet
+</p>
+<p>Experiment E5 (five foot test)
+</p>
+<p>Average yield 2517 lb/ac, typical for this crop.  Combining plots
+lengthwise was more effective than widening the plots, in order to
+reduce variability. The optimum plot size was 1 bed wide, 25 feet
+long.
+Considering economic costs, the optimum size was 1 bed, 18 feet long.
+</p>
+<p>Field width: 14 beds * 3.33 feet = 46.6 feet.
+</p>
+<p>Field length: 18 ranges * 5 feet = 90 feet.
+</p>
+<p>Data are from Table A &amp; B of Draper, p. 53-56.
+Typed by K.Wright.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Arlen D. Draper. (1959).
+Optimum plot size and shape for safflower yield tests.
+Dissertation. University of Arizona.
+https://hdl.handle.net/10150/319371
+Page 53-56.
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(draper.safflower.uniformity)
+  dat4 &lt;- subset(draper.safflower.uniformity, expt=="E4")
+  dat5 &lt;- subset(draper.safflower.uniformity, expt=="E5")
+  
+  libs(desplot)
+  desplot(dat4, yield~col*row,
+          flip=TRUE, tick=TRUE, aspect=72/53, # true aspect
+          main="draper.safflower.uniformity (four foot)")
+  
+  desplot(dat5, yield~col*row,
+          flip=TRUE, tick=TRUE, aspect=90/46, # true aspect
+          main="draper.safflower.uniformity (five foot)")
+
+  # Draper appears to removed the border plots, but it is difficult to
+  # match his results exactly
+  dat4 &lt;- subset(dat4, row&gt;1 &amp; row&lt;20)
+  dat4 &lt;- subset(dat4, col&gt;1 &amp; col&lt;17)
+  dat5 &lt;- subset(dat5, row&gt;1 &amp; row&lt;20)
+  dat5 &lt;- subset(dat5, col&lt;15)
+  # Convert gm/plot to pounds/acre. Draper (p. 20) says 1487 pounds/acre
+  mean(dat4$yield) / 453.592 / (3.33*4) * 43560 # 1472 lb/ac
+  
+  libs(agricolae)
+  libs(reshape2)
+  
+  s4 &lt;- index.smith(acast(dat4, row~col, value.var='yield'),
+                    main="draper.safflower.uniformity (four foot)",
+                    col="red")$uni
+  s4 # match Draper table 2, p 22
+  
+  ## s5 &lt;- index.smith(acast(dat5, row~col, value.var='yield'),
+  ##                   main="draper.safflower.uniformity (five foot)",
+  ##                   col="red")$uni
+  ## s5 # match Draper table 1, p 21
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

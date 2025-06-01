@@ -1,0 +1,79 @@
+<!DOCTYPE html><html><head><title>R: North Carolina births, 1000 cases</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>ncbirths_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>North Carolina births, 1000 cases</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'ncbirths_tbl_df' to avoid confusion with other packages
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the 'usdatasets'
+package and identifies it as a tibble. The original content of the dataset has not been modified.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(ncbirths_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 1000 observations and 13 variables:
+</p>
+
+<dl>
+<dt>fage</dt><dd><p>Integer representing the father's age.</p>
+</dd>
+<dt>mage</dt><dd><p>Integer representing the mother's age.</p>
+</dd>
+<dt>mature</dt><dd><p>Factor with 2 levels indicating if the mother is mature (&gt;=35 years).</p>
+</dd>
+<dt>weeks</dt><dd><p>Integer representing the number of gestation weeks.</p>
+</dd>
+<dt>premie</dt><dd><p>Factor with 2 levels indicating if the baby was born prematurely.</p>
+</dd>
+<dt>visits</dt><dd><p>Integer representing the number of prenatal visits.</p>
+</dd>
+<dt>marital</dt><dd><p>Factor with 2 levels indicating the marital status of the mother.</p>
+</dd>
+<dt>gained</dt><dd><p>Integer representing the mother's weight gain during pregnancy (in pounds).</p>
+</dd>
+<dt>weight</dt><dd><p>Numeric value representing the baby's birth weight (in grams).</p>
+</dd>
+<dt>lowbirthweight</dt><dd><p>Factor with 2 levels indicating if the baby was born with low birth weight.</p>
+</dd>
+<dt>gender</dt><dd><p>Factor with 2 levels indicating the baby's gender.</p>
+</dd>
+<dt>habit</dt><dd><p>Factor with 2 levels indicating if the mother has a smoking habit.</p>
+</dd>
+<dt>whitemom</dt><dd><p>Factor with 2 levels indicating if the mother is white.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Data from birth records in North Carolina
+</p>
+
+</main>
+
+</div>
+</body></html>

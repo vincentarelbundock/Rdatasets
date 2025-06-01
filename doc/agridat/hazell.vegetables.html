@@ -1,0 +1,174 @@
+<!DOCTYPE html><html><head><title>R: Gross profit for 4 vegetable crops in 6 years</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>hazell.vegetables</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Gross profit for 4 vegetable crops in 6 years
+</h2>
+
+<h3>Description</h3>
+
+<p>Gross profit for 4 vegetable crops in 6 years
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("hazell.vegetables")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 6 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year factor, 6 levels</p>
+</dd>
+<dt><code>carrot</code></dt><dd><p>Carrot profit, dollars/acre</p>
+</dd>
+<dt><code>celery</code></dt><dd><p>Celery profit, dollars/acre</p>
+</dd>
+<dt><code>cucumber</code></dt><dd><p>Cucumber profit, dollars/acre</p>
+</dd>
+<dt><code>pepper</code></dt><dd><p>Pepper profit, dollars/acre</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The values in the table are gross profits (loss) in dollars per acre.
+The criteria in the example below are (1) total acres &lt; 200, (2) total
+labor &lt; 10000, (3) crop rotation.
+</p>
+<p>The example shows how to use linear programming to maximize expected profit.
+</p>
+
+
+<h3>Source</h3>
+
+<p>P.B.R. Hazell, (1971).
+A linear alternative to quadratic and semivariance programming for farm planning
+under uncertainty.
+<em>Am. J. Agric. Econ.</em>, 53, 53-62.
+https://doi.org/10.2307/3180297
+</p>
+
+
+<h3>References</h3>
+
+<p>Carlos Romero, Tahir Rehman. (2003).
+<em>Multiple Criteria Analysis for Agricultural Decisions</em>. Elsevier.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+  library(agridat)
+  data(hazell.vegetables)
+  dat &lt;- hazell.vegetables
+  
+  libs(lattice)
+  xyplot(carrot+celery+cucumber+pepper ~ year,dat,
+         ylab="yearly profit by crop",
+         type='b', auto.key=list(columns=4),
+         panel.hline=0)
+
+  # optimal strategy for planting crops (calculated below)
+  dat2 &lt;- apply(dat[,-1], 1, function(x) x*c(0, 27.5, 100, 72.5))/1000
+  colnames(dat2) &lt;- rownames(dat)
+  barplot(dat2, legend.text=c("     0 carrot", "27.5 celery", " 100 cucumber", "72.5 pepper"),
+          xlim=c(0,7), ylim=c(-5,120),
+          col=c('orange','green','forestgreen','red'),
+          xlab="year", ylab="Gross profit, $1000",
+          main="hazell.vegetables - retrospective profit from optimal strategy",
+          args.legend=list(title="acres, crop"))
+
+  libs(linprog)
+  # colMeans(dat[ , -1])
+  # 252.8333 442.6667 283.8333 515.8333
+ 
+  # cvec = avg across-years profit per acre for each crop
+  cvec &lt;- c(253, 443, 284, 516)
+  
+  # Maximize c'x for Ax=b
+  A &lt;- rbind(c(1,1,1,1), c(25,36,27,87), c(-1,1,-1,1))
+  colnames(A) &lt;- names(cvec) &lt;- c("carrot","celery","cucumber","pepper")
+  rownames(A) &lt;- c('land','labor','rotation')
+
+  # bvec criteria = (1) total acres &lt; 200, (2) total labor &lt; 10000,
+  # (3) crop rotation.
+
+  bvec &lt;- c(200,10000,0)
+  const.dir &lt;- c("&lt;=","&lt;=","&lt;=")
+
+  m1 &lt;- solveLP(cvec, bvec, A, maximum=TRUE, const.dir=const.dir, lpSolve=TRUE)
+  # m1$solution # optimal number of acres for each crop
+  #   carrot    celery  cucumber    pepper
+  #  0.00000  27.45098 100.00000  72.54902
+  
+  # Average income for this plan
+  ## sum(cvec * m1$solution)
+  ## [1] 77996.08
+
+  # Year-to-year income for this plan
+  ## as.matrix(dat[,-1]) 
+  ##           [,1]
+  ## [1,]  80492.16
+  ## [2,]  80431.37
+  ## [3,]  81884.31
+  ## [4,] 106868.63
+  ## [5,]  37558.82
+  ## [6,]  80513.73
+
+  # optimum allocation that minimizes year-to-year income variability.
+  # brute-force search
+
+  # For generality, assume we have unequal probabilities for each year.
+  probs &lt;- c(.15, .20, .20, .15, .15, .15)
+  # Randomly allocate crops to 200 acres, 100,000 times
+  #set.seed(1)
+  mat &lt;- matrix(runif(4*100000), ncol=4)
+  mat &lt;- 200*sweep(mat, 1, rowSums(mat), "/")
+  # each row is one strategy, showing profit for each of the six years
+  # profit &lt;- mat 
+  profit &lt;- tcrossprod(mat, as.matrix(dat[,-1])) # Each row is profit, columns are years
+  # calculate weighted variance using year probabilities
+  wtvar &lt;- apply(profit, 1, function(x) cov.wt(as.data.frame(x), wt=probs)$cov)
+  # five best planting allocations that minimizes the weighted variance
+  ix &lt;- order(wtvar)[1:5]
+  mat[ix,]
+  ## carrot celery cucumber pepper
+  ##          [,1]     [,2]     [,3]     [,4]
+  ## [1,] 71.26439 28.09259 85.04644 15.59657
+  ## [2,] 72.04428 27.53299 84.29760 16.12512
+  ## [3,] 72.16332 27.35147 84.16669 16.31853
+  ## [4,] 72.14622 29.24590 84.12452 14.48335
+  ## [5,] 68.95226 27.39246 88.61828 15.03700
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html><html><head><title>R: Soil nitrogen at three times for eight fertilizer treatments</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gomez.nitrogen</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Soil nitrogen at three times for eight fertilizer treatments
+</h2>
+
+<h3>Description</h3>
+
+<p>Soil nitrogen at three times for eight fertilizer treatments
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 96 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>trt</code></dt><dd><p>nitrogen treatment factor</p>
+</dd>
+<dt><code>nitro</code></dt><dd><p>soil nitrogen content, percent</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>replicate</p>
+</dd>
+<dt><code>stage</code></dt><dd><p>growth stage, three periods</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Eight fertilizer treatments were tested.
+</p>
+<p>Soil nitrogen content was measured at three times.  P1 = 15 days post
+transplanting. P2 = 40 days post transplanting. P3 = panicle initiation.
+</p>
+<p>Used with permission of Kwanchai Gomez.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Gomez, K.A. and Gomez, A.A.. 1984,
+Statistical Procedures for Agricultural Research.
+Wiley-Interscience.
+Page 259.
+</p>
+
+
+<h3>References</h3>
+
+<p>R-help mailing list, 9 May 2013.
+Data provided by Cyril Lundrigan.  Analysis method by Rich Heiberger.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(agridat)
+
+data(gomez.nitrogen)
+dat &lt;- gomez.nitrogen
+
+# Note the depletion of nitrogen over time (stage)
+libs(HH)
+interaction2wt(nitro ~ rep/trt + trt*stage, data=dat,
+               x.between=0, y.between=0,
+               main="gomez.nitrogen")
+
+# Just the fertilizer profiles
+with(dat, interaction.plot(stage, trt, nitro,
+                           col=1:4, lty=1:3, main="gomez.nitrogen",
+                           xlab="Soil nitrogen at three times for each treatment"))
+
+# Gomez table 6.16
+m1 &lt;- aov(nitro ~ Error(rep/trt) + trt*stage, data=dat)
+summary(m1)
+
+# Gomez table 6.18
+# Treatment                    1 2 3 4 5 6 7 8
+cont &lt;- cbind("T7 vs others" = c( 1, 1, 1, 1, 1, 1,-7, 1),
+              "T8 vs others"  = c( 1, 1, 1, 1, 1, 1, 0,-6),
+              "T2,T5 vs others"   = c(-1, 2,-1,-1, 2,-1, 0, 0),
+              "T2 vs T5"       = c( 0, 1, 0, 0,-1, 0, 0, 0))
+contrasts(dat$trt) &lt;- cont
+contrasts(dat$trt)
+
+m2 &lt;- aov(nitro ~ Error(rep/trt) + trt*stage, data=dat)
+summary(m2, expand.split=FALSE,
+        split=list(trt=list(
+                     "T7 vs others"=1,
+                     "T8 vs others"=2,
+                     "T2,T5 vs others"=3,
+                     "T2 vs T5"=4,
+                     rest=c(5,6,7)),
+          "trt:stage"=list(
+            "(T7 vs others):P"=c(1,8),
+            "(T8 vs others):P"=c(2,9),
+            "(T2,T5 vs others):P"=c(3,10),
+            "(T2 vs T5):P"=c(4,11),
+            "rest:P"=c(5,6,7,12,13,14))
+          ))
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

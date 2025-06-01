@@ -1,0 +1,107 @@
+<!DOCTYPE html><html><head><title>R: Compiègne Ceramics</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>compiegne</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Compiègne Ceramics</h2>
+
+<h3>Description</h3>
+
+<p>A dataset containing the ceramic counts from the Place des Hallettes in
+Compiègne (Oise, France). The data are grouped into five periods of about a
+century, ranging from the 9th to the 14th century, and sixteen ceramic
+types.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>compiegne
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A <code>data.frame</code> with 5 observations (periods) and 16 variables (ceramic types):
+</p>
+
+<dl>
+<dt>A</dt><dd><p><code>integer</code>: red to white ceramics with fine sized inclusions.</p>
+</dd>
+<dt>B</dt><dd><p><code>integer</code>: red to white ceramics with medium sized inclusions.</p>
+</dd>
+<dt>C</dt><dd><p><code>integer</code>: dark ceramics with fine sized inclusions.</p>
+</dd>
+<dt>D</dt><dd><p><code>integer</code>: dark ceramics with medium sized inclusions.</p>
+</dd>
+<dt>E</dt><dd><p><code>integer</code>: ceramics close to those of groups B or D, with
+similarities to group F.</p>
+</dd>
+<dt>F</dt><dd><p><code>integer</code>: black, red or beige ceramics with coarse inclusions.</p>
+</dd>
+<dt>G</dt><dd><p><code>integer</code>: red polished ceramics with fine to medium sized
+inclusions.</p>
+</dd>
+<dt>H</dt><dd><p><code>integer</code>: black polished ceramics with fine sized inclusions.</p>
+</dd>
+<dt>I</dt><dd><p><code>integer</code>: black polished ceramics with medium sized inclusions.</p>
+</dd>
+<dt>J</dt><dd><p><code>integer</code>: polished and painted ceramics with fine to medium
+sized inclusions.</p>
+</dd>
+<dt>K</dt><dd><p><code>integer</code>: painted ceramics, similar to those of group A.</p>
+</dd>
+<dt>L</dt><dd><p><code>integer</code>: painted ceramics, similar to those of group B.</p>
+</dd>
+<dt>M</dt><dd><p><code>integer</code>: painted ceramics with coarse inclusions.</p>
+</dd>
+<dt>N</dt><dd><p><code>integer</code>: glazed ceramics.</p>
+</dd>
+<dt>O</dt><dd><p><code>integer</code>: stamped ceramics.</p>
+</dd>
+<dt>P</dt><dd><p><code>integer</code>: coated ceramics.</p>
+</dd>
+</dl>
+
+<p>Chronological periods are numbered from the oldest to the most recent
+(from 1 to 5).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Lacroix, M. C. (1997). La céramique médiévale du site des Hallettes à
+Compiègne (Oise). <em>Revue archéologique de Picardie</em>. Numéro spécial,
+13(1), 135-168. <a href="https://doi.org/10.3406/pica.1997.1945">doi:10.3406/pica.1997.1945</a>
+</p>
+
+
+<h3>See Also</h3>
+
+<p>Other count data: 
+<code>birds</code>,
+<code>boves</code>,
+<code>chevelon</code>,
+<code>loire</code>,
+<code>merzbach</code>,
+<code>mississippi</code>,
+<code>zuni</code>
+</p>
+
+</main>
+
+</div>
+</body></html>

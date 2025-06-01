@@ -1,0 +1,116 @@
+<!DOCTYPE html><html><head><title>R: Bronze La Tene fibulae from Munsingen, Switzerland</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Fibulae</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Bronze La Tene fibulae from Munsingen, Switzerland
+</h2>
+
+<h3>Description</h3>
+
+<p>The La Tène fibulae from the Iron Age cemetery of Münsingen near Berne, Switzerland (100 - 500 BCE) described by F. R. Hodson (1968).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("Fibulae")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 30 observations on the following 16 variables.
+</p>
+
+<dl>
+<dt><code>Grave</code></dt><dd><p>Grave number</p>
+</dd>
+<dt><code>Mno</code></dt><dd><p>Museum number</p>
+</dd>
+<dt><code>FL</code></dt><dd><p>Foot Length</p>
+</dd>
+<dt><code>BH</code></dt><dd><p>Bow Height</p>
+</dd>
+<dt><code>BFA</code></dt><dd><p>Bow Front Angle</p>
+</dd>
+<dt><code>FA</code></dt><dd><p>Foot Angle</p>
+</dd>
+<dt><code>CD</code></dt><dd><p>Coil Diameter</p>
+</dd>
+<dt><code>BRA</code></dt><dd><p>Bow Rear Angle</p>
+</dd>
+<dt><code>ED</code></dt><dd><p>Element Diameter</p>
+</dd>
+<dt><code>FEL</code></dt><dd><p>Foot Extension Length</p>
+</dd>
+<dt><code>C</code></dt><dd><p>Catchplate</p>
+</dd>
+<dt><code>BW</code></dt><dd><p>Bow Width</p>
+</dd>
+<dt><code>BT</code></dt><dd><p>Bow Thickness</p>
+</dd>
+<dt><code>FEW</code></dt><dd><p>Foot Extension Width</p>
+</dd>
+<dt><code>Coils</code></dt><dd><p>Number of Coils</p>
+</dd>
+<dt><code>Length</code></dt><dd><p>Total Length</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The La Tène fibulae from the Iron Age cemetery of Münsingen near Berne, Switzerland were reported by F. R. Hodson (1968). They were featured in several papers by Hodson over the years and used to illustrate a variety of multivariate statistical techniques. The data here were taken from Doran and Hodson (1975), Table 9.1. These are the raw  measurements including 5 missing values in foot extension thickness and 1 in foot extension length.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Doran, J. E. and F. R. Hodson. 1975. <em>Mathematics and Computers in Archaeology</em>. Harvard University Press, Cambridge, Massachusetts.
+</p>
+<p>Hodson, F. R. 1968. <em>The La Tène Cemetery at Műnsingen-Rain</em>. Stampfli, Berne.
+</p>
+
+
+<h3>References</h3>
+
+<p>Carlson, David L. 2017. <em>Quantitative Methods in Archaeology Using R</em>. Cambridge University Press, pp 88-91, 95-99, 103-109, 127-129, 132-138, 162-169.
+</p>
+<p>Hodson, F. R., P. H. A. Sneath, J. E. Doran. 1966. Some Experiments in the Numerical Analysis of Archaeological Data.  <em>Biometrika</em> 53: 311-324.
+</p>
+<p>Hodson, F. R. 1969. Searching for Structure within Multivariate Archaeological Data. <em>World Archaeology</em> 1: 90-105.
+</p>
+<p>Hodson, F. R. 1970. Cluster Analysis and Archaeology: some New Developments and Applications. <em>World Archaeology</em> 1: 299-320.
+</p>
+<p>Hodson, F. R. 1971. Numerical Typology and Prehistoric Archaeology. In <em>Mathematics int eh Archaeological and Historical Sciences</em>, edited by F. R. Hodson, D. G. Kendall and P. Tautu, pp 30-45. Edinburgh University Press, Edinburgh.
+</p>
+<p>Sneath, P. H. A. 1968. Goodness of Intuitive Arrangements into Time Trends Based on Complex Pattern. <em>Systematic Zoology</em> 17: 256-260.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Fibulae)
+t(sapply(Fibulae[, 3:16], quantile, na.rm=TRUE))
+plot(density(Fibulae$Length, bw="SJ"), main="Kernel Density Plot of Length")
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

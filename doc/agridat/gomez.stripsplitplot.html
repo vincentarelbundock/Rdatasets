@@ -1,0 +1,106 @@
+<!DOCTYPE html><html><head><title>R: Strip-split-plot experiment of rice</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gomez.stripsplitplot</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Strip-split-plot experiment of rice
+</h2>
+
+<h3>Description</h3>
+
+<p>A strip-split-plot experiment with three reps, genotype as the horizontal
+strip, nitrogen fertilizer as the vertical strip, and planting method
+as the subplot factor.
+</p>
+
+
+<h3>Format</h3>
+
+
+<dl>
+<dt><code>yield</code></dt><dd><p>grain yield in kg/ha</p>
+</dd>
+<dt><code>planting</code></dt><dd><p>planting factor, P1=broadcast, P2=transplanted</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>rep, 3 levels</p>
+</dd>
+<dt><code>nitro</code></dt><dd><p>nitrogen fertilizer, kg/ha</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype, G1 to G6</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Note, this is a superset of the the 'gomez.stripplot' data.
+</p>
+<p>Used with permission of Kwanchai Gomez.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Gomez, K.A. and Gomez, A.A.. 1984,
+Statistical Procedures for Agricultural Research.
+Wiley-Interscience.
+Page 155.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(gomez.stripsplitplot)
+dat &lt;- gomez.stripsplitplot
+
+# Layout
+libs(desplot)
+desplot(dat, gen ~ col*row,
+        out1=rep, col=nitro, text=planting, cex=1,
+        main="gomez.stripsplitplot")
+
+
+# Gomez table 4.19, ANOVA of strip-split-plot design
+dat &lt;- transform(dat, nf=factor(nitro))
+m1 &lt;- aov(yield ~ nf * gen * planting +
+          Error(rep + rep:nf + rep:gen + rep:nf:gen), data=dat)
+summary(m1)
+
+# There is a noticeable linear trend along the y coordinate which may be
+# an artifact that blocking will remove, or may need to be modeled.
+# Note the outside values in the high-nitro boxplot.
+libs("HH")
+interaction2wt(yield ~ nitro + gen + planting + row, dat,
+               x.between=0, y.between=0,
+               x.relation="free")
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

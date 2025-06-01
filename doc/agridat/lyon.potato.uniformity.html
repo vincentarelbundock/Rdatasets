@@ -1,0 +1,105 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of potatoes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>lyon.potato.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of potatoes
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of potatoes at Nebraska Experiment Station, 1909.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 204 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column, section</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, pounds</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>In 1909, potatoes were harvested from uniform land at Nebraska
+Experiment Station.
+</p>
+<p>There were 34 rows, 34 inches apart.
+Lyon, page 97 says &quot;He harvested each row in six sections,
+each of which was seventy-two feet and seven inches long.&quot;
+It is not clear if each SECTION is 72 feet long, or if each
+ROW is 72 feet long.  Yield of potato is roughly 0.5 to 0.8
+pounds per square foot, so it seems more plausible the entire row is
+72 feet long (see calculations below).
+</p>
+<p>Field width: 6 plots = 72 feet
+</p>
+<p>Field length: 34 rows * 34 in / 12in/ft = 96 ft
+</p>
+
+
+<h3>Source</h3>
+
+<p>Lyon, T.L. (1911).
+Some experiments to estimate errors in field plat tests.
+Proc. Amer. Soc. Agron, 3, 89-114. Table III.
+https://doi.org/10.2134/agronj1911.00021962000300010016x
+</p>
+
+
+<h3>References</h3>
+
+<p>None.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+  
+  data(lyon.potato.uniformity)
+  dat &lt;- lyon.potato.uniformity
+
+  # Yield per square foot, assuming 72 foot rows
+  sum(dat$yield)/(72*96) # 0.67 # seems about right
+  # Yield per square foot, assuming 72 foot plots
+  sum(dat$yield)/(6*72*96) # 0.11
+  
+  libs(desplot)
+  desplot(dat, yield ~ col*row,
+          tick=TRUE, flip=TRUE, aspect=96/72, # true aspect
+          main="lyon.potato.uniformity")
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

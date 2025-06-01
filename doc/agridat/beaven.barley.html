@@ -1,0 +1,113 @@
+<!DOCTYPE html><html><head><title>R: Yields of 8 barley varieties in 1913 as used by Student.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>beaven.barley</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Yields of 8 barley varieties in 1913 as used by Student.
+</h2>
+
+<h3>Description</h3>
+
+<p>Yields of 8 barley varieties in 1913.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("beaven.barley")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 160 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield (grams)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Eight races of barley were grown on a regular pattern of plots.
+</p>
+<p>These data were prepared from Richey (1926) because the text was
+cleaner.
+</p>
+<p>Each plot was planted 40 inches on a side, but only the middle square
+36 inches on a side was harvested.
+</p>
+<p>Field width: 32 plots * 3 feet = 96 feet
+</p>
+<p>Field length: 5 plots * 3 feet = 15 feet
+</p>
+
+
+<h3>Source</h3>
+
+<p>Student. (1923).
+On testing varieties of cereals.
+<em>Biometrika</em>, 271-293.
+</p>
+<p>https://doi.org/10.1093/biomet/15.3-4.271
+</p>
+
+
+<h3>References</h3>
+
+<p>Frederick D. Richey (1926).
+The moving average as a basis for measuring correlated
+variation in agronomic experiments.
+<em>Jour. Agr. Research</em>, 32, 1161-1175.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+data(beaven.barley)
+dat &lt;- beaven.barley
+
+# Match the means shown in Richey table IV
+tapply(dat$yield, dat$gen, mean)
+##       a       b       c       d       e       f       g       h
+## 298.080 300.710 318.685 295.260 306.410 276.475 304.605 271.820
+
+# Compare to Student 1923, diagram I,II
+libs(desplot)
+desplot(dat, yield ~ col*row,
+        aspect=15/96, # true aspect
+        main="beaven.barley - variety trial", text=gen)
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

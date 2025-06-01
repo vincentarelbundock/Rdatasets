@@ -1,0 +1,114 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trials of wheat in India</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>iyer.wheat.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trials of wheat in India
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trials of wheat in India.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("iyer.wheat.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 2000 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, ounces per plot</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data collected at the Agricultural Sub-station in Karnal, India, in
+April 1978. A net area of 400 ft x 125 ft was harvested by dividing it
+into 80x25 units 5 ft x 5 ft after eliminating a minimum border of 3.5
+ft all around the net area.
+</p>
+<p>Field width: 80 plots * 5 feet = 400 feet
+</p>
+<p>Field length: 25 rows * 5 feet = 125 feet
+</p>
+<p>In a second paper, Iyer used this data to compare random vs. balanced
+arrangements of treatments to plots, with the conclusion that
+&quot;it is very difficult to say which [method] is better. However, there is
+some tendency for the randomized arrangements to give more accurate results.&quot;
+</p>
+
+
+<h3>Source</h3>
+
+<p>P. V. Krishna Iyer (1942).
+Studies with wheat uniformity trial data. I. Size and shape of
+experimental plots and the relative efficiency of different layouts.
+The Indian Journal of Agricultural Science, 12, 240-262. Page 259-262.
+https://archive.org/stream/in.ernet.dli.2015.7638/2015.7638.The-Indian-Journal-Of-Agricultural-Science-Vol-xii-1942#page/n267/mode/2up
+</p>
+
+
+<h3>References</h3>
+
+<p>None.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(iyer.wheat.uniformity)
+dat &lt;- iyer.wheat.uniformity
+
+libs(desplot)
+desplot(dat, yield ~ col*row,
+        main="iyer.wheat.uniformity", tick=TRUE, 
+        aspect=(25*5)/(80*5)) # true aspect
+
+# not exactly the same as Iyer table 1, p. 241
+var(subset(dat, col &lt;= 20)$yield)
+var(subset(dat, col &gt; 20 &amp; col &lt;= 40)$yield)
+var(subset(dat, col &gt; 40 &amp; col &lt;= 60)$yield)
+var(subset(dat, col &gt; 60)$yield)
+  
+# cv for 1x1 whole-field
+# sd(dat$yield)/mean(dat$yield)
+# 18.3
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

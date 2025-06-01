@@ -1,0 +1,136 @@
+<!DOCTYPE html><html><head><title>R: Damage to potato tubers from lifting rods.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>keen.potatodamage</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Damage to potato tubers from lifting rods.
+</h2>
+
+<h3>Description</h3>
+
+<p>Damage to potato tubers from lifting rods.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("keen.potatodamage")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1152 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>energy</code></dt><dd><p>energy factor</p>
+</dd>
+<dt><code>weight</code></dt><dd><p>weight class</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype/variety factor</p>
+</dd>
+<dt><code>rod</code></dt><dd><p>rod factor</p>
+</dd>
+<dt><code>damage</code></dt><dd><p>damage category</p>
+</dd>
+<dt><code>count</code></dt><dd><p>count of tubers in each combination of categories</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Experiments performed at Wageningen, Netherlands.
+</p>
+<p>Potatoes can be damaged by the lifter.  In this experiment, eight
+types of lifting rod were compared.  Two energy levels, six
+genotypes/varieties and three weight classes were used.
+Most combinations of treatments involved about 20 potato tubers.
+Tubers were rated as undamaged (D1) to severely damaged (D4).
+</p>
+<p>The main interest is in differences between rods, and not in
+interactions.  The other factors (besides rod) were introduced to
+create variety in experimental conditions and are not of interest.
+</p>
+<p>Keen and Engle estimated the following rod effects.
+</p>
+<p># Rod: 1 2 3 4 5 6 7 8
+</p>
+<p># Effect: 0 -1.26 -0.42 0.55 -1.50 -1.85 -1.76 -2.09
+</p>
+<p>Used with permission of Bas Engel.
+</p>
+
+
+<h3>Source</h3>
+
+<p>A. Keen and B. Engel.
+Analysis of a mixed model for ordinal data by iterative re-weighted REML.
+Statistica Neerlandica, 51, 129&ndash;144. Table 2.
+https://doi.org/10.1111/1467-9574.00044
+</p>
+
+
+<h3>References</h3>
+
+<p>R. Larsson &amp; Jesper Ryden (2021).
+Applications of discrete factor analysis.
+Communications in Statistics - Simulation and Computation.
+https://doi.org/10.1080/03610918.2021.1964528
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+data(keen.potatodamage)
+dat &lt;- keen.potatodamage
+
+# Energy E1, Rod R4, Weight W1 have higher proportions of severe damage
+# Rod 8 has the least damage
+d2 &lt;- xtabs(count~energy+rod+gen+weight+damage, data=dat)
+mosaicplot(d2, color=c("lemonchiffon1","moccasin","lightsalmon1","indianred"),
+           xlab="Energy / Genotype", ylab="Rod / Weight", main="keen.potatodamage")
+
+
+# Not run because CRAN prefers examples less than 5 seconds.
+libs(ordinal)
+# Note, the clmm2 function can have only 1 random term.  Results are
+# similar to Keen &amp; Engle, but necessarily different (they had multiple
+# random terms).
+m1 &lt;- clmm2(damage ~ rod + energy + gen + weight, data=dat,
+            weights=count, random=rod:energy, link='probit')
+round(coef(m1)[4:10],2)
+## rodR2 rodR3 rodR4 rodR5 rodR6 rodR7 rodR8
+## -1.19 -0.41  0.50 -1.46 -1.73 -1.67 -1.99
+
+# Alternative
+# m2 &lt;- clmm(damage ~ rod + energy + gen + weight +
+#          (1|rod:energy), data=dat, weights=count, link='probit')
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

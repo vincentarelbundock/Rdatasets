@@ -1,0 +1,86 @@
+<!DOCTYPE html><html><head><title>R: Mask Site, Alaska, USA</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>MaskSite</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Mask Site, Alaska, USA
+</h2>
+
+<h3>Description</h3>
+
+<p>The distribution of five categories of artifacts at the Mask site, occupied by the Nunamiut (Binford 1978a).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("MaskSite")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 494 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>X</code></dt><dd><p>horizontal coordinate</p>
+</dd>
+<dt><code>Y</code></dt><dd><p>vertical coordinate</p>
+</dd>
+<dt><code>Category</code></dt><dd><p>a factor with levels <code>Artifacts</code>, <code>Spent Cartridges</code>, <code>Wood Shavings</code>, <code>Bone Splinters</code>, and <code>Large Bones</code></p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The Mask Site was reported by Binford (1978a) as an example of a hunting stand where Nunamiut men watched for game as part of a larger ethnoarchaeological study of the Nunamiut (Binford 1978b). The data from the site have been widely used to illustrate the utility of various methods of intra site spatial analysis (including Baxter 2003, Blankholm 1991, Kintigh 1990, and Whallon 1984). The data consist of 494 locations of five different classes (artifacts, spent cartridges, wood shavings, bone splinters, and large bones). The data were scanned from Appendix A (Blankholm 1991).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Binford, L. R. 1978a. Dimensional Analysis of Behavior and Site Structure: Learning from an Eskimo Hunting Stand. <em>American Antiquity</em> 43: 330 - 361.
+</p>
+<p>Blankholm, Hans Peter. 1991. <em>Intrasite Spatial Analysis in Theory and Practice</em>. Aarhus University Press.
+</p>
+
+
+<h3>References</h3>
+
+<p>Baxter, M. 2003. <em>Statistics in Archaeology</em>. Arnold Applications in Statistics.
+</p>
+<p>Binford, L. R. 1978b. Nunamiut Ethnoarchaeology. Academic Press.
+</p>
+<p>Kintigh, K. 1990. Intrasite Spatial Analysis: A Commentary on Major Methods. In <em>Mathematics and Information Science in Archaeology: A Flexible Framework</em>, edited by A. Voorrips, pp 165-200. Studies in Modern Archaeology 3. Holos.
+</p>
+<p>Whallon, R. 1984. Unconstrained Clustering for the Analysis of Spatial Distributions in Archaeology. In <em>Intrasite Spatial Analysis in Archaeology</em>, edited by H. Hietala, pp 242 - 277. Cambridge University Press.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(MaskSite)
+plot(Y~X, MaskSite, main="Mask Site", asp=1, pch=as.numeric(Category), cex=.75)
+legend("bottomright", levels(MaskSite$Category), pch=1:5)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html><html><head><title>R: Weather Data for Perth, Australia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>weather_perth</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Weather Data for Perth, Australia</h2>
+
+<h3>Description</h3>
+
+<p>A sub-sample of daily weather information on Perth, Australia from the weatherAUS data in the rattle package.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>weather_perth
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1000 daily observations and 21 variables:
+</p>
+
+<dl>
+<dt>mintemp</dt><dd><p>minimum temperature (degrees Celsius)</p>
+</dd>
+<dt>maxtemp</dt><dd><p>maximum temperature (degrees Celsius)</p>
+</dd>
+<dt>rainfall</dt><dd><p>rainfall (mm)</p>
+</dd>
+<dt>windgustdir</dt><dd><p>direction of strongest wind gust</p>
+</dd>
+<dt>windgustspeed</dt><dd><p>speed of strongest wind gust (km/h)</p>
+</dd>
+<dt>winddir9am</dt><dd><p>direction of wind gust at 9am</p>
+</dd>
+<dt>winddir3pm</dt><dd><p>direction of wind gust at 3pm</p>
+</dd>
+<dt>windspeed9am</dt><dd><p>wind speed at 9am (km/h)</p>
+</dd>
+<dt>windspeed3pm</dt><dd><p>wind speed at 3pm (km/h)</p>
+</dd>
+<dt>humidity9am</dt><dd><p>humidity level at 9am (percent)</p>
+</dd>
+<dt>humidity3pm</dt><dd><p>humidity level at 3pm (percent)</p>
+</dd>
+<dt>pressure9am</dt><dd><p>atmospheric pressure at 9am (hpa)</p>
+</dd>
+<dt>pressure3pm</dt><dd><p>atmospheric pressure at 3pm (hpa)</p>
+</dd>
+<dt>temp9am</dt><dd><p>temperature at 9am (degrees Celsius)</p>
+</dd>
+<dt>temp3pm</dt><dd><p>temperature at 3pm (degrees Celsius)</p>
+</dd>
+<dt>raintoday</dt><dd><p>whether or not it rained today (Yes or No)</p>
+</dd>
+<dt>risk_mm</dt><dd><p>the amount of rain today (mm)</p>
+</dd>
+<dt>raintomorrow</dt><dd><p>whether or not it rained the next day (Yes or No)</p>
+</dd>
+<dt>year</dt><dd><p>the year of the date</p>
+</dd>
+<dt>month</dt><dd><p>the month of the date</p>
+</dd>
+<dt>day_of_year</dt><dd><p>the day of the year</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Data in the original weatherAUS data set were obtained from <a href="https://www.bom.gov.au/climate/data/">https://www.bom.gov.au/climate/data/</a>. Copyright Commonwealth of Australia 2010, Bureau of Meteorology.
+</p>
+
+</main>
+
+</div>
+</body></html>

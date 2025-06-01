@@ -1,0 +1,132 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of wheat with Augmented design</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>belamkar.augmented</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of wheat with Augmented design
+</h2>
+
+<h3>Description</h3>
+
+<p>Multi-environment trial of wheat in Nebraska with Augmented design
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("belamkar.augmented")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 2700 observations on the following 9 variables.
+</p>
+
+<dl>
+<dt><code>loc</code></dt><dd><p>location</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>replicate</p>
+</dd>
+<dt><code>iblock</code></dt><dd><p>incomplete block</p>
+</dd>
+<dt><code>gen_new</code></dt><dd><p>new genotype (1=yes, 0=no)</p>
+</dd>
+<dt><code>gen_check</code></dt><dd><p>check genotype (0=no)</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype name</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column ordinate</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row ordinate</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, bu/ac</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The experiment had 8 locations with 270 new, experimental lines
+(genotypes) and 3 check lines. There were 10 incomplete blocks at each
+location. There were 2 replicate blocks at Alliance and 1 block at all
+other locations. Each plot was 3 m long by 1.2 m wide.
+</p>
+<p>The electronic data were found in supplement S4 downloaded from
+https://doi.org/10.25387/g3.6249410
+The license for the data is CC-BY 4.0.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Vikas Belamkar, Mary J. Guttieri, Waseem Hussain, Diego Jarquín,
+Ibrahim El-basyoni, Jesse Poland, Aaron J. Lorenz, P. Stephen
+Baenziger (2018).
+Genomic Selection in Preliminary Yield Trials in a Winter Wheat
+Breeding Program.
+G3 Genes|Genomes|Genetics, 8, Pages 2735–2747.
+https://doi.org/10.1534/g3.118.200415
+</p>
+
+
+<h3>References</h3>
+
+<p>Same data appear in ASRtriala package: https://vsni.co.uk/free-software/asrtriala
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  library(agridat)
+  data(belamkar.augmented)
+  dat &lt;- belamkar.augmented
+
+  libs(desplot)
+  desplot(dat, yield ~ col*row|loc, out1=rep, out2=iblock)
+  # Experiment design showing check placement
+  dat$gen_check &lt;- factor(dat$gen_check)
+  desplot(dat, gen_check ~ col*row|loc, out1=rep, out2=iblock,
+          main="belamkar.augmented")
+
+  # Belamkar supplement S3 has R code for analysis
+  if(require("asreml", quietly=TRUE)){
+    library(asreml)
+
+    # AR1xAR1 model to calculate BLUEs for a single loc
+    d1 &lt;- droplevels(subset(dat, loc=="Lincoln"))
+    d1$colf &lt;- factor(d1$col)
+    d1$rowf &lt;- factor(d1$row)
+    d1$gen &lt;- factor(d1$gen)
+    d1$gen_check &lt;- factor(d1$gen_check)
+    d1 &lt;- d1[order(d1$col),]
+    d1 &lt;- as.data.frame(d1)
+    m1 &lt;- asreml(fixed=yield ~ gen_check, data=d1,
+                 random = ~ gen_new:gen,
+                 residual = ~ar1(colf):ar1v(rowf) )
+    p1 &lt;- predict(m1, classify="gen")
+    head(p1$pvals)
+  }
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

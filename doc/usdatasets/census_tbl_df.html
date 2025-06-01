@@ -1,0 +1,70 @@
+<!DOCTYPE html><html><head><title>R: Random sample of 2000 U.S. Census Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>census_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Random sample of 2000 U.S. Census Data</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'census_tbl_df' to avoid confusion with other packages
+in the R ecosystem from which datasets have been sourced. This naming convention helps
+distinguish this dataset as part of the 'usdatasets' package and assists users in identifying
+its specific characteristics. The suffix 'tbl_df' identifies the dataset as a tibble. The original content of the dataset has not been modified in any way.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(census_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 500 observations and 8 variables:
+</p>
+
+<dl>
+<dt>census_year</dt><dd><p>Year of the census (in integer).</p>
+</dd>
+<dt>state_fips_code</dt><dd><p>FIPS code for the state (factor with 47 levels).</p>
+</dd>
+<dt>total_family_income</dt><dd><p>Total family income (in US dollars).</p>
+</dd>
+<dt>age</dt><dd><p>Age of the individual (in years).</p>
+</dd>
+<dt>sex</dt><dd><p>Sex of the individual (factor: male/female).</p>
+</dd>
+<dt>race_general</dt><dd><p>General race category (factor with 8 levels).</p>
+</dd>
+<dt>marital_status</dt><dd><p>Marital status of the individual (factor with 6 levels).</p>
+</dd>
+<dt>total_personal_income</dt><dd><p>Total personal income (in US dollars).</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>US Census Bureau
+</p>
+
+</main>
+
+</div>
+</body></html>

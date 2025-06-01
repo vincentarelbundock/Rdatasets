@@ -1,0 +1,126 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of sorghum, 6 environments</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>omer.sorghum</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of sorghum, 6 environments
+</h2>
+
+<h3>Description</h3>
+
+<p>Multi-environment trial of sorghum, 6 environments
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("omer.sorghum")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 432 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>env</code></dt><dd><p>environment</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>replication</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype factor</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, kg/ha</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Trials were conducted in Sudan, 3 years at 2 locations, 4 reps in RCBD
+at each location. The year and location have been combined to form 6
+environments. Only environments are given in the data, not the
+individual year and location.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Siraj Osman Omer, Abdel Wahab Hassan Abdalla, Mohammed Hamza Mohammed, Murari Singh (2015).
+Bayesian estimation of genotype-by-environment interaction in sorghum variety trials
+<em>Communications in Biometry and Crop Science</em>, 10 (2), 82-95.
+</p>
+<p>Electronic data provided by Siraj Osman Omer.
+</p>
+
+
+<h3>References</h3>
+
+<p>None.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+data(omer.sorghum)
+dat &lt;- omer.sorghum
+
+# REML approach
+libs(lme4)
+libs(lucid)
+
+# 1 loc, 2 years. Match Omer table 1.
+m1 &lt;- lmer(yield ~ 1 + env + (1|env:rep) + (1|gen) + (1|gen:env),
+           data=subset(dat, is.element(env, c('E2','E4'))))
+vc(m1)
+##      grp        var1 var2    vcov  sdcor
+##  gen:env (Intercept) &lt;NA&gt; 17050   130.6
+##      gen (Intercept) &lt;NA&gt;  2760    52.54
+##  env:rep (Intercept) &lt;NA&gt;   959.1  30.97
+## Residual        &lt;NA&gt; &lt;NA&gt; 43090   207.6
+
+# 1 loc, 3 years. Match Omer table 1.
+m2 &lt;- lmer(yield ~ 1 + env + (1|env:rep) + (1|gen) + (1|gen:env),
+           data=subset(dat, is.element(env, c('E2','E4','E6'))))
+vc(m2)
+##      grp        var1 var2  vcov  sdcor
+##  gen:env (Intercept) &lt;NA&gt; 22210 149
+##      gen (Intercept) &lt;NA&gt;  9288  96.37
+##  env:rep (Intercept) &lt;NA&gt;  1332  36.5
+## Residual        &lt;NA&gt; &lt;NA&gt; 40270 200.7
+
+# all 6 locs. Match Omer table 3, frequentist approach
+m3 &lt;- lmer(yield ~ 1 + env + (1|env:rep) + (1|gen) + (1|gen:env),
+           data=dat)
+vc(m3)
+##       grp        var1 var2  vcov  sdcor
+##   gen:env (Intercept) &lt;NA&gt; 21340 146.1
+##   env:rep (Intercept) &lt;NA&gt;  1152  33.95
+##       gen (Intercept) &lt;NA&gt;  1169  34.2
+##  Residual        &lt;NA&gt; &lt;NA&gt; 24660 157
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

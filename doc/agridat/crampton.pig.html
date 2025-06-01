@@ -1,0 +1,117 @@
+<!DOCTYPE html><html><head><title>R: Weight gain in pigs for different treatments</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>crampton.pig</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Weight gain in pigs for different treatments
+</h2>
+
+<h3>Description</h3>
+
+<p>Weight gain in pigs for different treatments, with initial weight and
+feed eaten as covariates.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("crampton.pig")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 50 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>treatment</code></dt><dd><p>feed treatment</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>replicate</p>
+</dd>
+<dt><code>weight1</code></dt><dd><p>initial weight</p>
+</dd>
+<dt><code>feed</code></dt><dd><p>feed eaten</p>
+</dd>
+<dt><code>weight2</code></dt><dd><p>final weight</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>A study of the effect of initial weight and feed eaten on the weight
+gaining ability of pigs with different feed treatments.
+</p>
+<p>The data are extracted from Ostle. It is not clear that 'replicate' is
+actually a blocking replicate as opposed to a repeated measurement.
+The original source document needs to be consulted.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Crampton, EW and Hopkins, JW. (1934).
+The Use of the Method of Partial Regression in the Analysis of Comparative Feeding Trial Data, Part II.
+The Journal of Nutrition, 8, 113-123.
+https://doi.org/10.1093/jn/8.3.329
+</p>
+
+
+<h3>References</h3>
+
+<p>Bernard Ostle. Statistics in Research, Page 458.
+https://archive.org/details/secondeditionsta001000mbp
+</p>
+<p>Goulden (1939). Methods of Statistical Analysis, 1st ed. Page 256-259.
+https://archive.org/details/methodsofstatist031744mbp
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+  library(agridat)
+
+  data(crampton.pig)
+  dat &lt;- crampton.pig
+
+  dat &lt;- transform(dat, gain=weight2-weight1)
+  libs(lattice)
+  # Trt 4 looks best
+  xyplot(gain ~ feed, dat, group=treatment, type=c('p','r'),
+         auto.key=list(columns=5),
+         xlab="Feed eaten", ylab="Weight gain", main="crampton.pig")
+  
+  # Basic Anova without covariates
+  m1 &lt;- lm(weight2 ~ treatment + rep, data=dat)
+  anova(m1)
+  # Add covariates
+  m2 &lt;- lm(weight2 ~ treatment + rep + weight1 + feed, data=dat)
+  anova(m2)
+  # Remove treatment, test this nested model for significant treatments
+  m3 &lt;- lm(weight2 ~ rep + weight1 + feed, data=dat)
+  anova(m2,m3) # p-value .07. F=2.34 matches Ostle
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

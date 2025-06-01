@@ -1,0 +1,58 @@
+rownames,Age,Gender,Headache,Epilepsy,Hemparesis,increaseICT,Pathology,Pathology_Grade,Thalamic_extension,Bil_extension,Post_extension,BrainStem_extension,MultiFocality,Midlineshift,Edema,Approx_Tumor_Vol,ExtentofSurgicalresection,Shunt,ResidualsizeonMRI,Neurostate,PSBeforeRT,Died
+1,7,Male,No,No,Left,No,GBM,4,Infiltrate Thalamis,No extension,No extension,No extension,Unifocal,Yes,Moderate,1206.37,Biopsy,Yes,Yes,Symptomatic,80,Dead
+2,3.5,Male,No,No,Left,No,Glioneural tumor GIII,3,Infiltrate Thalamis,No extension,No extension,Brain Stem Extension,Unifocal,Yes,Mild,173.42,Biopsy,No,Yes,Symptomatic,60,Dead
+3,12,Male,No,No,Left,Yes,GBM,4,No extension,No extension,No extension,No extension,Unifocal,Yes,Mild,376.99,Subtotal Resection,No,Yes,Asymptomatic,70,Alive
+4,8,Male,Yes,No,Right,No,GBM,4,No extension,No extension,No extension,No extension,Unifocal,Yes,Mild,1033.96,Subtotal Resection,Yes,Yes,Symptomatic,40,Dead
+5,3,Male,Yes,No,Right,No,GBM,4,No extension,No extension,No extension,No extension,Unifocal,Yes,Moderate,663.5,Subtotal Resection,Yes,Yes,Asymptomatic,80,Dead
+6,13,Male,Yes,No,Right,No,GBM,4,No extension,No extension,No extension,No extension,Unifocal,Yes,Moderate,2251.89,Subtotal Resection,No,Yes,Symptomatic,30,Dead
+7,6,Male,Yes,No,Right,No,GBM,4,No extension,No extension,No extension,No extension,Unifocal,Yes,Moderate,376.99,Subtotal Resection,No,Yes,Symptomatic,40,Dead
+8,13,Male,Yes,No,Right,No,Gliosarcoma,4,No extension,No extension,No extension,No extension,Unifocal,Yes,Moderate,469.14,Subtotal Resection,No,Yes,Symptomatic,50,Dead
+9,3,Male,Yes,No,Right,No,GBM,4,No extension,No extension,No extension,No extension,Unifocal,Yes,Moderate,1895.85,Subtotal Resection,Yes,Yes,Symptomatic,30,Dead
+10,11,Male,Yes,No,Right,No,GBM,4,No extension,No extension,Posterior Fossa Extension,No extension,Unifocal,No,Moderate,593.76,Subtotal Resection,No,Yes,Symptomatic,50,Dead
+11,5,Male,Yes,No,Right,No,GBM,4,No extension,No extension,Posterior Fossa Extension,No extension,Unifocal,No,Moderate,593.76,Biopsy,Yes,Yes,Symptomatic,30,Dead
+12,6,Male,Yes,No,Right,No,GBM,4,No extension,No extension,Posterior Fossa Extension,Brain Stem Extension,Unifocal,Yes,Moderate,268.08,Biopsy,Yes,Yes,Symptomatic,40,Dead
+13,9,Male,Yes,No,Right,No,Astrocytoma G III,3,Infiltrate Thalamis,No extension,No extension,No extension,Unifocal,Yes,Moderate,335.1,Biopsy,Yes,Yes,Symptomatic,50,Dead
+14,8,Male,Yes,No,Right,Yes,Gliosarcoma,4,No extension,No extension,No extension,No extension,Unifocal,Yes,Mild,653.45,Gross Resection,No,No,Asymptomatic,70,Dead
+15,12,Male,Yes,No,Right,Yes,GBM,4,No extension,No extension,No extension,No extension,Unifocal,Yes,Moderate,760.01,Gross Resection,No,No,Asymptomatic,70,Alive
+16,10,Male,Yes,No,Right,Yes,GBM,4,No extension,No extension,No extension,No extension,Unifocal,Yes,Moderate,335.1,Subtotal Resection,No,Yes,Asymptomatic,80,Dead
+17,2,Male,Yes,No,Right,Yes,Astrocytoma G III,3,No extension,No extension,No extension,No extension,Unifocal,No,No,136.86,Gross Resection,No,No,Asymptomatic,80,Alive
+18,3,Male,Yes,No,Right,Yes,Gliosarcoma,4,No extension,No extension,No extension,No extension,Unifocal,No,Mild,50.27,Gross Resection,No,No,Asymptomatic,80,Alive
+19,10,Male,Yes,No,Right,Yes,GBM,4,No extension,No extension,No extension,No extension,Unifocal,No,Mild,167.13,Subtotal Resection,No,Yes,Symptomatic,70,Dead
+20,5,Male,Yes,No,Right,Yes,GBM,4,No extension,No extension,No extension,No extension,Unifocal,No,Moderate,52.36,Subtotal Resection,No,Yes,Asymptomatic,70,Dead
+21,8,Male,Yes,No,Right,Yes,GBM,4,No extension,No extension,Posterior Fossa Extension,No extension,Unifocal,No,Mild,30.16,Subtotal Resection,No,Yes,Symptomatic,50,Alive
+22,5,Male,Yes,No,Right,Yes,Astrocytoma G III,3,No extension,No extension,Posterior Fossa Extension,Brain Stem Extension,Unifocal,No,Mild,511.28,Biopsy,No,Yes,Symptomatic,50,Alive
+23,3,Male,Yes,No,Right,Yes,GBM,4,Infiltrate Thalamis,No extension,No extension,No extension,Unifocal,Yes,Severe,1895.85,Subtotal Resection,Yes,Yes,Symptomatic,40,Dead
+24,3,Male,Yes,No,Right,Yes,GBM,4,Infiltrate Thalamis,Inifiltrate Both Hemispheres,No extension,No extension,Unifocal,Yes,Moderate,1337.06,Biopsy,No,Yes,Symptomatic,30,Dead
+25,13.5,Male,Yes,No,Right,Yes,Astrocytoma G III,3,Infiltrate Thalamis,Inifiltrate Both Hemispheres,No extension,No extension,Unifocal,No,Mild,261.38,Biopsy,Yes,Yes,Symptomatic,30,Dead
+26,4,Male,Yes,No,Left,No,GBM,4,Infiltrate Thalamis,No extension,No extension,No extension,Unifocal,Yes,Moderate,1055.58,Subtotal Resection,No,Yes,Symptomatic,30,Dead
+27,4,Male,Yes,No,Left,No,Astrocytoma G III,3,Infiltrate Thalamis,No extension,No extension,No extension,Unifocal,Yes,Moderate,328.43,Biopsy,Yes,Yes,Symptomatic,50,Dead
+28,14,Male,No,Yes,Right,No,GBM,4,Infiltrate Thalamis,No extension,No extension,No extension,Unifocal,Yes,Severe,131.95,Biopsy,Yes,Yes,Symptomatic,80,Alive
+29,10,Male,No,Yes,Left,No,GBM,4,No extension,No extension,Posterior Fossa Extension,No extension,Unifocal,Yes,Mild,904.78,Subtotal Resection,Yes,Yes,Symptomatic,50,Alive
+30,3,Male,Yes,Yes,Right,Yes,Pleomorphic xanthoastrocytoma GIII,3,No extension,No extension,No extension,No extension,Unifocal,No,Mild,523.6,Subtotal Resection,No,Yes,Asymptomatic,70,Alive
+31,17,Male,Yes,Yes,Left,Yes,GBM,4,Infiltrate Thalamis,No extension,No extension,No extension,Multifocal,No,Moderate,511.28,Subtotal Resection,Yes,Yes,Symptomatic,50,Dead
+32,11,Female,No,No,Right,No,GBM,4,Infiltrate Thalamis,No extension,No extension,No extension,Unifocal,Yes,Moderate,174.17,Biopsy,Yes,Yes,Symptomatic,70,Dead
+33,7,Female,No,No,Right,Yes,GBM,4,No extension,No extension,No extension,No extension,Unifocal,No,Moderate,67.02,Gross Resection,No,No,Asymptomatic,80,Alive
+34,6,Female,No,No,Left,No,GBM,4,No extension,No extension,No extension,No extension,Unifocal,Yes,Moderate,753.98,Subtotal Resection,No,Yes,Asymptomatic,80,Dead
+35,5,Female,No,No,Left,No,GBM,4,No extension,No extension,No extension,No extension,Unifocal,No,Mild,511.28,Biopsy,Yes,Yes,Symptomatic,40,Dead
+36,6,Female,No,No,Left,No,GBM,4,No extension,No extension,Posterior Fossa Extension,No extension,Unifocal,Yes,Mild,91.48,Biopsy,Yes,Yes,Symptomatic,70,Dead
+37,8,Female,No,No,Left,No,Astrocytoma G III,3,No extension,No extension,Posterior Fossa Extension,No extension,Unifocal,Yes,Moderate,198.85,Gross Resection,Yes,No,Symptomatic,40,Alive
+38,6,Female,No,No,Left,No,GBM,4,No extension,No extension,Posterior Fossa Extension,Brain Stem Extension,Unifocal,No,Mild,291.94,Biopsy,No,Yes,Symptomatic,50,Dead
+39,11,Female,No,No,Left,No,Astroblastoma Intermediate Grade,3,Infiltrate Thalamis,No extension,No extension,No extension,Unifocal,Yes,Mild,898.5,Biopsy,No,Yes,Symptomatic,40,Alive
+40,10,Female,Yes,No,Right,No,GBM,4,No extension,No extension,No extension,No extension,Unifocal,Yes,Mild,560.77,Subtotal Resection,No,Yes,Symptomatic,60,Dead
+41,4,Female,Yes,No,Right,No,GBM,4,No extension,No extension,No extension,No extension,Unifocal,Yes,Moderate,552.92,Subtotal Resection,No,Yes,Asymptomatic,80,Dead
+42,6,Female,Yes,No,Right,No,GBM,4,No extension,No extension,No extension,No extension,Unifocal,Yes,Moderate,502.65,Subtotal Resection,No,Yes,Symptomatic,70,Dead
+43,9,Female,Yes,No,Right,No,GBM,4,No extension,No extension,No extension,No extension,Unifocal,No,Mild,4.19,Gross Resection,No,No,Symptomatic,50,Alive
+44,11,Female,Yes,No,Right,No,GBM,4,No extension,No extension,No extension,No extension,Unifocal,No,Moderate,201.06,Biopsy,Yes,Yes,Asymptomatic,70,Dead
+45,13,Female,Yes,No,Right,No,Astrocytoma G III,3,Infiltrate Thalamis,No extension,No extension,No extension,Unifocal,Yes,Moderate,551.01,Biopsy,Yes,Yes,Symptomatic,60,Dead
+46,17,Female,Yes,No,Right,No,GBM,4,Infiltrate Thalamis,Inifiltrate Both Hemispheres,No extension,No extension,Multifocal,Yes,Severe,999,Biopsy,No,Yes,Symptomatic,30,Dead
+47,14,Female,Yes,No,Right,Yes,GBM,4,No extension,No extension,No extension,No extension,Unifocal,No,Mild,140.74,Gross Resection,No,No,Asymptomatic,60,Alive
+48,12.5,Female,Yes,No,Right,Yes,Astrocytoma G III,3,No extension,No extension,No extension,No extension,Unifocal,No,Mild,879.65,Subtotal Resection,No,Yes,Symptomatic,70,Alive
+49,10.5,Female,Yes,No,Right,Yes,Astrocytoma G III,3,Infiltrate Thalamis,No extension,No extension,No extension,Unifocal,Yes,Mild,816.56,Biopsy,Yes,Yes,Symptomatic,40,Dead
+50,4.5,Female,Yes,No,Left,Yes,Astrocytoma G III,3,No extension,No extension,No extension,No extension,Unifocal,Yes,Moderate,518.36,Subtotal Resection,No,Yes,Asymptomatic,70,Alive
+51,15,Female,Yes,No,Left,Yes,GBM,4,No extension,No extension,No extension,No extension,Unifocal,Yes,Moderate,575.96,Biopsy,No,Yes,Symptomatic,40,Dead
+52,3,Female,Yes,No,Left,Yes,GBM,4,Infiltrate Thalamis,No extension,No extension,No extension,Unifocal,No,Mild,94.25,Biopsy,No,Yes,Symptomatic,50,Alive
+53,6,Female,No,Yes,Right,No,Astrocytoma G III,3,No extension,No extension,No extension,No extension,Unifocal,No,Mild,11.49,Gross Resection,No,No,Asymptomatic,70,Alive
+54,3,Female,No,Yes,Right,No,GBM,4,Infiltrate Thalamis,Inifiltrate Both Hemispheres,No extension,No extension,Multifocal,Yes,Moderate,999,Subtotal Resection,No,Yes,Symptomatic,60,Dead
+55,6,Female,No,Yes,Left,No,Astrocytoma G III,3,No extension,No extension,No extension,No extension,Unifocal,Yes,Moderate,84.2,Gross Resection,No,No,Symptomatic,60,Alive
+56,9,Female,No,Yes,Right,No,GBM,4,No extension,No extension,No extension,No extension,Unifocal,Yes,Mild,1253.86,Subtotal Resection,No,Yes,Asymptomatic,80,Dead
+57,8,Female,Yes,Yes,Right,No,GBM,4,No extension,No extension,No extension,No extension,Unifocal,Yes,Severe,1935.22,Biopsy,Yes,Yes,Symptomatic,30,Dead

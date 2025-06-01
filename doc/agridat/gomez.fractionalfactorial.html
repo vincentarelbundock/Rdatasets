@@ -1,0 +1,133 @@
+<!DOCTYPE html><html><head><title>R: Fractional factorial of rice, 1/2 2^6 = 2x2x2x2x2x2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gomez.fractionalfactorial</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Fractional factorial of rice, 1/2 2^6 = 2x2x2x2x2x2
+</h2>
+
+<h3>Description</h3>
+
+<p>Fractional factorial of rice, 1/2 2^6 = 2x2x2x2x2x2.
+Two reps with 2 blocks in each rep.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 64 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>yield</code></dt><dd><p>grain yield in tons/ha</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>replicate, 2 levels</p>
+</dd>
+<dt><code>block</code></dt><dd><p>block within rep, 2 levels</p>
+</dd>
+<dt><code>trt</code></dt><dd><p>treatment, levels (1) to abcdef</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column position in the field</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row position in the field</p>
+</dd>
+<dt><code>a</code></dt><dd><p>a treatment, 2 levels</p>
+</dd>
+<dt><code>b</code></dt><dd><p>b treatment, 2 levels</p>
+</dd>
+<dt><code>c</code></dt><dd><p>c treatment, 2 levels</p>
+</dd>
+<dt><code>d</code></dt><dd><p>d treatment, 2 levels</p>
+</dd>
+<dt><code>e</code></dt><dd><p>e treatment, 2 levels</p>
+</dd>
+<dt><code>f</code></dt><dd><p>f treatment, 2 levels</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Grain yield from a 2^6 fractional factorial experiment in blocks of 16
+plots each, with two replications.
+</p>
+<p>Gomez has some inconsistencies. One example:
+</p>
+<p>Page 171: treatment (1) in rep 1, block 2 and rep 2, block 1.
+</p>
+<p>Page 172: treatment (1) in Rep 1, block 1 and rep 2, block 1.
+</p>
+<p>This data uses the layout shown on page 171.
+</p>
+<p>Used with permission of Kwanchai Gomez.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Gomez, K.A. and Gomez, A.A.. 1984,
+Statistical Procedures for Agricultural Research.
+Wiley-Interscience.
+Page 171-172.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(gomez.fractionalfactorial)
+dat &lt;- gomez.fractionalfactorial
+
+# trt abcdef has the highest yield
+# Gomez, Figure 4.8
+libs(desplot)
+desplot(dat, yield~col*row,
+        # aspect unknown
+        text=trt, shorten="none", show.key=FALSE, cex=1,
+        main="gomez.fractionalfactorial - treatment &amp; yield")
+
+
+  # Ensure factors
+  dat &lt;- transform(dat,
+                   a=factor(a), b=factor(b), c=factor(c),
+                   d=factor(d), e=factor(e), f=factor(f) )
+  
+# Gomez table 4.24, trt SS totalled together.
+# Why didn't Gomez nest block within rep?
+m0 &lt;- lm(yield ~ rep * block + trt, dat)
+anova(m0)
+
+# Gomez table 4.24, trt SS split apart
+m1 &lt;- lm(yield ~ rep * block + (a+b+c+d+e+f)^3, dat)
+anova(m1)
+
+libs(FrF2)
+aliases(m1)
+MEPlot(m1, select=3:8,
+       main="gomez.fractionalfactorial - main effects plot")
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

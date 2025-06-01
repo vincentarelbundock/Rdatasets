@@ -1,0 +1,88 @@
+<!DOCTYPE html><html><head><title>R: Care Home Incidents</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>care_home_incidents</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Care Home Incidents</h2>
+
+<h3>Description</h3>
+
+<p>a NHS patient safety incidents dataset: <a href="https://www.england.nhs.uk/patient-safety/report-patient-safety-incident/">https://www.england.nhs.uk/patient-safety/report-patient-safety-incident/</a> dataset that has been synthetically generated against real data
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>care_home_incidents
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1216 rows and 12 variables:
+</p>
+
+<dl>
+<dt>CareHomeFail</dt><dd><p>a binary indicator to specify whether a certain care home is failing</p>
+</dd>
+<dt>WeightLoss</dt><dd><p>aggregation of incidents indicating weight loss in patient</p>
+</dd>
+<dt>Medication</dt><dd><p>medication missed aggregaation</p>
+</dd>
+<dt>Falls</dt><dd><p>Recorded number of patient falls</p>
+</dd>
+<dt>Choking</dt><dd><p>Number of patient choking incidents</p>
+</dd>
+<dt>UnexpectedDeaths</dt><dd><p>unexpected deaths in the care home</p>
+</dd>
+<dt>Bruising</dt><dd><p>Number of bruising incidents in the care home</p>
+</dd>
+<dt>Absconsion</dt><dd><p>Absconding from the care home setting</p>
+</dd>
+<dt>ResidentAbuseByResident</dt><dd><p>Abuse conducted by one care home resident against another</p>
+</dd>
+<dt>ResidentAbuseByStaff</dt><dd><p>Incidents of resident abuse by staff</p>
+</dd>
+<dt>ResidentAbuseOnStaff</dt><dd><p>Incidents of residents abusing staff</p>
+</dd>
+<dt>Wounds</dt><dd><p>Unexplained wounds against staff</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Collected by Gary Hutson <a href="mailto:hutsons-hacks@outlook.com">hutsons-hacks@outlook.com</a>, Jan-2022
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library(dplyr)
+data(care_home_incidents)
+# Convert diabetes data to factor'
+ch_incs &lt;- care_home_incidents %&gt;%
+ mutate(CareHomeFail = as.factor(CareHomeFail))
+ ch_incs %&gt;% glimpse()
+ # Check factor
+ factor(ch_incs$CareHomeFail)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

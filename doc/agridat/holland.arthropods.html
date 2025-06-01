@@ -1,0 +1,126 @@
+<!DOCTYPE html><html><head><title>R: Counts of arthropods in a grid-sampled wheat field</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>holland.arthropods</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Counts of arthropods in a grid-sampled wheat field
+</h2>
+
+<h3>Description</h3>
+
+<p>Counts of arthropods in a grid-sampled wheat field
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("holland.arthropods")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 63 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>n.brevicollis</code></dt><dd><p>species counts</p>
+</dd>
+<dt><code>linyphiidae</code></dt><dd><p>species counts</p>
+</dd>
+<dt><code>collembola</code></dt><dd><p>species counts</p>
+</dd>
+<dt><code>carabidae</code></dt><dd><p>species counts</p>
+</dd>
+<dt><code>lycosidae</code></dt><dd><p>species counts</p>
+</dd>
+<dt><code>weedcover</code></dt><dd><p>percent weed cover</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Arthropods were sampled at 30m x 30m grid in a wheat field near
+Wimborne, Dorest, UK on 6 dates in Jun/Jul 1996.  Arthropod counts were
+aggregated across the 6 dates.
+</p>
+<p>Holland et al. used SADIE (Spatial Analysis by Distance Indices) to
+look for spatial patterns.  Significant patterns were found for
+N. brevicollis, Carabidae, Lycosidae.  The Lycosidae counts were also
+significantly associated with weed cover.
+</p>
+<p>Used with permission of John Holland.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Holland J. M., Perry J. N., Winder, L. (1999).
+The within-field spatial and temporal distribution of arthropods
+within winter wheat.
+Bulletin of Entomological Research, 89: 499-513.  Figure 3 (large
+grid in 1996).
+https://doi.org/10.1017/S0007485399000656
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+library(agridat)
+data(holland.arthropods)
+dat &lt;- holland.arthropods
+
+
+  # use log count to make it possible to have same scale for insects
+  libs(reshape2, lattice)
+  grays &lt;- colorRampPalette(c("#d9d9d9","#252525"))
+  dat2 &lt;- melt(dat, id.var=c('row','col'))
+  contourplot(log(value) ~ col*row|variable, dat2,
+              col.regions=grays(7), region=TRUE,
+              main="holland.arthropods - log counts in winter wheat")
+
+
+if(0){
+  # individual species
+  libs(lattice)
+  grays &lt;- colorRampPalette(c("#d9d9d9","#252525"))
+  contourplot(linyphiidae ~ col*row, dat, at=c(0,40,80,120,160,200), region=TRUE,
+              col.regions=grays(5),
+              main="holland.arthropods - linyphiidae counts in winter wheat")
+  contourplot(n.brevicollis ~ col*row, dat, region=TRUE)
+  contourplot(linyphiidae~ col*row, dat, region=TRUE)
+  contourplot(collembola ~ col*row, dat, region=TRUE)
+  contourplot(carabidae ~ col*row, dat, region=TRUE)
+  contourplot(lycosidae ~ col*row, dat, region=TRUE)
+  contourplot(weedcover ~ col*row, dat, region=TRUE)
+}
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

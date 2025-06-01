@@ -1,0 +1,91 @@
+<!DOCTYPE html><html><head><title>R: Late Stone Age and Early Sami Iron Age Pithouses in Arctic...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>PitHouses</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Late Stone Age and Early Sami Iron Age Pithouses in Arctic Norway
+</h2>
+
+<h3>Description</h3>
+
+<p>The morphology of 45 Arctic Norway pithouses is described in terms of 6 categorical variables.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("PitHouses")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 45 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>Hearths</code></dt><dd><p>a factor with levels <code>None</code>, <code>One</code>, <code>Two</code>, and <code>Charcoal Conc</code></p>
+</dd>
+<dt><code>Depth</code></dt><dd><p>a factor with levels <code>Deep</code> and <code>Shallow</code></p>
+</dd>
+<dt><code>Size</code></dt><dd><p>a factor with levels <code>Small</code>, <code>Medium</code>, and <code>Large</code></p>
+</dd>
+<dt><code>Form</code></dt><dd><p>a factor with levels <code>Oval</code> and <code>Rectangular</code></p>
+</dd>
+<dt><code>Orient</code></dt><dd><p>a factor with levels <code>Parallel Coast</code> and <code>Gabel Toward Coast</code></p>
+</dd>
+<dt><code>Entrance</code></dt><dd><p>a factor with levels <code>One Side</code>, <code>Front and One Side</code>, and <code>None</code></p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data on the morphology of pit houses from Arctic Norway described by Engelstad (1988). The data were scanned from Table A7 in Baxter (1994). The category labels are used rather than the numeric values listed in Table A7. The data represent the Group C pithouses as described in Engelstad (1988) which was more variable than groups A or B. The data were converted into an incidence matrix (Table A8 in Baxter (1994) and Table 3 in Englestad (1988)) and used in a multiple correspondence analysis.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Baxter, M. J. 1994. <em>Exploratory Multivariate Analysis in Archaeology</em>. Edinburgh University Press.
+</p>
+<p>Engelstad, E. 1988. Pit Houses in Arctic Norway - An Investigation of Their Typology Using Multiple Correspondence Analysis. In <em>Multivariate Archaeology</em>, edited by T. Madsen, pp. 71-84. Aarhus University Press.
+</p>
+
+
+<h3>References</h3>
+
+<p>Carlson, David L. 2017. <em>Quantitative Methods in Archaeology Using R</em>. Cambridge University Press, pp 192-197.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(PitHouses)
+# Crosstabulation of Hearths with Size
+PitHouses.tbl &lt;- xtabs(~Hearths+Size, PitHouses)
+PitHouses.tbl
+barplot(PitHouses.tbl, ylab="Frequency", main="Arctic Norway Pithouses", beside=TRUE,
+    legend.text=TRUE, args.legend=list(title="Hearths"))
+barplot(prop.table(PitHouses.tbl, 2)*100, ylim=c(0, 60), main="Arctic Norway Pithouses",
+    ylab="Percent", beside=TRUE, legend.text=TRUE, args.legend=list(title="Hearths"))
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

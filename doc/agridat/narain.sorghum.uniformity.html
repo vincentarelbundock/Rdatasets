@@ -1,0 +1,101 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of sorghum</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>narain.sorghum.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of sorghum
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of sorghum in Pakistan, 1936.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("narain.sorghum.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 160 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, maunds per 1/40 acre</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>A uniformity trial with chari (sorghum) at Rawalpindi Agricultural
+Station (Pakistan) in kharif (monsoon season) in 1936. Each plot was
+36 feet by 30.25 feet.  The source document does not describe the
+orientation of the plots, but the fertility map shown in Narain figure
+1 shows the plots are taller than wide.
+</p>
+<p>Field width: 10 plots * 30.25 feet
+</p>
+<p>Field length: 16 plots * 36 feet
+</p>
+
+
+<h3>Source</h3>
+
+<p>R. Narain and A. Singh, (1940).
+A Note on the Shape of Blocks in Field Experiments.
+Ind. J. Agr. Sci., 10, 844-853. Page 845.
+https://archive.org/stream/in.ernet.dli.2015.271745
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+  data(narain.sorghum.uniformity)
+  dat &lt;- narain.sorghum.uniformity
+  
+  # Narain figure 1
+  libs(desplot)
+  desplot(dat, yield ~ col*row,
+          flip=TRUE, aspect=(16*36)/(10*30.25),
+          main="narain.sorghum.uniformity")
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

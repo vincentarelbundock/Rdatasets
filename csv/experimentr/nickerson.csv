@@ -1,0 +1,957 @@
+rownames,treatment,voted02p
+1,GOTV,did not vote
+2,GOTV,did not vote
+3,GOTV,did not vote
+4,Recycling,did not vote
+5,Recycling,did not vote
+6,GOTV,did not vote
+7,GOTV,voted
+8,GOTV,voted
+9,Recycling,did not vote
+10,GOTV,voted
+11,GOTV,did not vote
+12,GOTV,did not vote
+13,Recycling,did not vote
+14,Recycling,did not vote
+15,Recycling,voted
+16,GOTV,voted
+17,GOTV,did not vote
+18,Recycling,did not vote
+19,GOTV,voted
+20,Recycling,did not vote
+21,GOTV,voted
+22,GOTV,did not vote
+23,Recycling,did not vote
+24,Recycling,did not vote
+25,Recycling,did not vote
+26,GOTV,did not vote
+27,GOTV,did not vote
+28,GOTV,did not vote
+29,Recycling,did not vote
+30,Recycling,did not vote
+31,GOTV,voted
+32,GOTV,voted
+33,Recycling,did not vote
+34,Recycling,voted
+35,Recycling,did not vote
+36,GOTV,did not vote
+37,Recycling,did not vote
+38,GOTV,did not vote
+39,GOTV,did not vote
+40,Recycling,did not vote
+41,GOTV,did not vote
+42,GOTV,voted
+43,Recycling,voted
+44,GOTV,did not vote
+45,GOTV,voted
+46,GOTV,voted
+47,GOTV,did not vote
+48,GOTV,did not vote
+49,Recycling,did not vote
+50,GOTV,did not vote
+51,GOTV,did not vote
+52,GOTV,did not vote
+53,GOTV,did not vote
+54,Recycling,did not vote
+55,GOTV,did not vote
+56,Recycling,did not vote
+57,GOTV,did not vote
+58,GOTV,voted
+59,Recycling,did not vote
+60,Recycling,did not vote
+61,GOTV,did not vote
+62,Recycling,did not vote
+63,Recycling,did not vote
+64,GOTV,did not vote
+65,Recycling,did not vote
+66,Recycling,did not vote
+67,GOTV,did not vote
+68,GOTV,did not vote
+69,Recycling,voted
+70,GOTV,voted
+71,Recycling,did not vote
+72,Recycling,voted
+73,GOTV,voted
+74,Recycling,voted
+75,GOTV,did not vote
+76,Recycling,did not vote
+77,Recycling,did not vote
+78,Recycling,voted
+79,Recycling,voted
+80,GOTV,did not vote
+81,GOTV,voted
+82,Recycling,did not vote
+83,Recycling,did not vote
+84,GOTV,did not vote
+85,Recycling,did not vote
+86,Recycling,did not vote
+87,GOTV,did not vote
+88,Recycling,did not vote
+89,GOTV,did not vote
+90,Recycling,voted
+91,GOTV,did not vote
+92,Recycling,did not vote
+93,Recycling,voted
+94,Recycling,did not vote
+95,GOTV,did not vote
+96,Recycling,voted
+97,Recycling,did not vote
+98,GOTV,did not vote
+99,Recycling,voted
+100,Recycling,voted
+101,Recycling,voted
+102,Recycling,did not vote
+103,Recycling,did not vote
+104,Recycling,voted
+105,GOTV,voted
+106,Recycling,did not vote
+107,Recycling,did not vote
+108,Recycling,voted
+109,Recycling,did not vote
+110,GOTV,did not vote
+111,Recycling,did not vote
+112,Recycling,did not vote
+113,Recycling,did not vote
+114,Recycling,voted
+115,GOTV,voted
+116,GOTV,did not vote
+117,GOTV,did not vote
+118,Recycling,did not vote
+119,Recycling,voted
+120,GOTV,voted
+121,GOTV,voted
+122,Recycling,voted
+123,GOTV,voted
+124,Recycling,did not vote
+125,Recycling,voted
+126,GOTV,voted
+127,Recycling,voted
+128,Recycling,voted
+129,Recycling,voted
+130,GOTV,did not vote
+131,GOTV,voted
+132,GOTV,did not vote
+133,Recycling,voted
+134,GOTV,voted
+135,GOTV,did not vote
+136,GOTV,did not vote
+137,GOTV,did not vote
+138,Recycling,did not vote
+139,GOTV,voted
+140,Recycling,did not vote
+141,GOTV,did not vote
+142,GOTV,did not vote
+143,GOTV,did not vote
+144,Recycling,voted
+145,GOTV,did not vote
+146,GOTV,voted
+147,GOTV,did not vote
+148,GOTV,voted
+149,GOTV,voted
+150,Recycling,did not vote
+151,GOTV,voted
+152,Recycling,did not vote
+153,Recycling,did not vote
+154,GOTV,voted
+155,Recycling,did not vote
+156,Recycling,did not vote
+157,GOTV,did not vote
+158,GOTV,did not vote
+159,Recycling,did not vote
+160,Recycling,did not vote
+161,Recycling,did not vote
+162,Recycling,voted
+163,GOTV,did not vote
+164,GOTV,did not vote
+165,GOTV,voted
+166,Recycling,did not vote
+167,Recycling,did not vote
+168,Recycling,did not vote
+169,GOTV,did not vote
+170,GOTV,did not vote
+171,GOTV,did not vote
+172,GOTV,did not vote
+173,GOTV,did not vote
+174,GOTV,voted
+175,GOTV,voted
+176,GOTV,did not vote
+177,Recycling,did not vote
+178,GOTV,did not vote
+179,Recycling,did not vote
+180,GOTV,did not vote
+181,Recycling,voted
+182,GOTV,did not vote
+183,Recycling,did not vote
+184,GOTV,did not vote
+185,GOTV,did not vote
+186,Recycling,voted
+187,GOTV,did not vote
+188,GOTV,did not vote
+189,Recycling,did not vote
+190,Recycling,did not vote
+191,Recycling,voted
+192,Recycling,did not vote
+193,GOTV,did not vote
+194,GOTV,voted
+195,Recycling,did not vote
+196,GOTV,voted
+197,Recycling,did not vote
+198,GOTV,did not vote
+199,GOTV,did not vote
+200,GOTV,did not vote
+201,GOTV,did not vote
+202,Recycling,voted
+203,GOTV,voted
+204,GOTV,voted
+205,Recycling,voted
+206,GOTV,voted
+207,GOTV,did not vote
+208,Recycling,voted
+209,Recycling,did not vote
+210,GOTV,did not vote
+211,Recycling,voted
+212,Recycling,did not vote
+213,GOTV,did not vote
+214,GOTV,voted
+215,GOTV,did not vote
+216,GOTV,did not vote
+217,Recycling,did not vote
+218,Recycling,did not vote
+219,GOTV,voted
+220,GOTV,voted
+221,Recycling,did not vote
+222,Recycling,did not vote
+223,GOTV,did not vote
+224,GOTV,did not vote
+225,GOTV,voted
+226,GOTV,voted
+227,GOTV,did not vote
+228,Recycling,did not vote
+229,GOTV,voted
+230,Recycling,voted
+231,Recycling,did not vote
+232,Recycling,voted
+233,Recycling,did not vote
+234,GOTV,did not vote
+235,Recycling,did not vote
+236,Recycling,did not vote
+237,GOTV,did not vote
+238,Recycling,did not vote
+239,GOTV,voted
+240,GOTV,voted
+241,GOTV,did not vote
+242,GOTV,did not vote
+243,Recycling,voted
+244,Recycling,voted
+245,Recycling,did not vote
+246,GOTV,did not vote
+247,Recycling,did not vote
+248,GOTV,did not vote
+249,GOTV,did not vote
+250,Recycling,did not vote
+251,GOTV,did not vote
+252,GOTV,did not vote
+253,Recycling,did not vote
+254,Recycling,did not vote
+255,Recycling,voted
+256,GOTV,voted
+257,Recycling,did not vote
+258,Recycling,did not vote
+259,Recycling,voted
+260,Recycling,did not vote
+261,Recycling,voted
+262,Recycling,did not vote
+263,Recycling,did not vote
+264,Recycling,voted
+265,GOTV,voted
+266,Recycling,voted
+267,Recycling,did not vote
+268,Recycling,did not vote
+269,Recycling,did not vote
+270,Recycling,voted
+271,Recycling,voted
+272,GOTV,voted
+273,Recycling,did not vote
+274,GOTV,voted
+275,Recycling,voted
+276,GOTV,did not vote
+277,Recycling,did not vote
+278,GOTV,voted
+279,GOTV,did not vote
+280,GOTV,voted
+281,GOTV,did not vote
+282,GOTV,did not vote
+283,Recycling,voted
+284,GOTV,did not vote
+285,GOTV,did not vote
+286,Recycling,voted
+287,Recycling,voted
+288,GOTV,did not vote
+289,Recycling,did not vote
+290,GOTV,voted
+291,Recycling,did not vote
+292,Recycling,did not vote
+293,Recycling,did not vote
+294,GOTV,did not vote
+295,GOTV,did not vote
+296,GOTV,voted
+297,Recycling,voted
+298,Recycling,did not vote
+299,GOTV,did not vote
+300,Recycling,did not vote
+301,Recycling,did not vote
+302,Recycling,voted
+303,Recycling,did not vote
+304,Recycling,did not vote
+305,GOTV,did not vote
+306,GOTV,did not vote
+307,Recycling,did not vote
+308,Recycling,did not vote
+309,Recycling,did not vote
+310,Recycling,did not vote
+311,Recycling,did not vote
+312,Recycling,did not vote
+313,GOTV,did not vote
+314,GOTV,voted
+315,GOTV,voted
+316,GOTV,did not vote
+317,GOTV,did not vote
+318,Recycling,did not vote
+319,Recycling,did not vote
+320,GOTV,voted
+321,GOTV,did not vote
+322,Recycling,did not vote
+323,Recycling,did not vote
+324,GOTV,did not vote
+325,GOTV,voted
+326,GOTV,voted
+327,GOTV,did not vote
+328,GOTV,voted
+329,Recycling,voted
+330,Recycling,voted
+331,GOTV,voted
+332,Recycling,did not vote
+333,GOTV,did not vote
+334,Recycling,voted
+335,Recycling,voted
+336,Recycling,did not vote
+337,Recycling,did not vote
+338,Recycling,did not vote
+339,Recycling,did not vote
+340,Recycling,did not vote
+341,GOTV,voted
+342,GOTV,did not vote
+343,Recycling,voted
+344,GOTV,did not vote
+345,GOTV,voted
+346,Recycling,did not vote
+347,GOTV,voted
+348,Recycling,voted
+349,Recycling,did not vote
+350,GOTV,did not vote
+351,GOTV,did not vote
+352,GOTV,voted
+353,GOTV,voted
+354,Recycling,did not vote
+355,Recycling,did not vote
+356,Recycling,voted
+357,Recycling,did not vote
+358,Recycling,did not vote
+359,GOTV,voted
+360,GOTV,voted
+361,Recycling,did not vote
+362,Recycling,did not vote
+363,Recycling,did not vote
+364,GOTV,voted
+365,GOTV,did not vote
+366,GOTV,voted
+367,GOTV,voted
+368,GOTV,did not vote
+369,GOTV,voted
+370,Recycling,did not vote
+371,Recycling,did not vote
+372,Recycling,did not vote
+373,GOTV,did not vote
+374,GOTV,voted
+375,Recycling,did not vote
+376,Recycling,did not vote
+377,Recycling,voted
+378,Recycling,did not vote
+379,Recycling,voted
+380,GOTV,did not vote
+381,GOTV,did not vote
+382,GOTV,voted
+383,GOTV,did not vote
+384,GOTV,voted
+385,GOTV,voted
+386,GOTV,did not vote
+387,GOTV,voted
+388,GOTV,did not vote
+389,Recycling,did not vote
+390,GOTV,did not vote
+391,Recycling,did not vote
+392,GOTV,did not vote
+393,GOTV,did not vote
+394,Recycling,voted
+395,Recycling,did not vote
+396,GOTV,did not vote
+397,Recycling,did not vote
+398,Recycling,voted
+399,Recycling,did not vote
+400,Recycling,voted
+401,GOTV,voted
+402,GOTV,voted
+403,Recycling,did not vote
+404,Recycling,did not vote
+405,Recycling,voted
+406,Recycling,voted
+407,Recycling,did not vote
+408,GOTV,voted
+409,GOTV,voted
+410,Recycling,voted
+411,Recycling,did not vote
+412,GOTV,voted
+413,Recycling,voted
+414,Recycling,did not vote
+415,Recycling,did not vote
+416,Recycling,voted
+417,Recycling,did not vote
+418,Recycling,did not vote
+419,Recycling,voted
+420,GOTV,did not vote
+421,Recycling,did not vote
+422,Recycling,did not vote
+423,Recycling,did not vote
+424,GOTV,voted
+425,Recycling,did not vote
+426,Recycling,voted
+427,GOTV,voted
+428,Recycling,did not vote
+429,Recycling,did not vote
+430,Recycling,did not vote
+431,Recycling,did not vote
+432,GOTV,voted
+433,Recycling,did not vote
+434,Recycling,voted
+435,Recycling,voted
+436,GOTV,did not vote
+437,Recycling,voted
+438,GOTV,voted
+439,GOTV,did not vote
+440,Recycling,voted
+441,Recycling,did not vote
+442,GOTV,voted
+443,GOTV,did not vote
+444,GOTV,did not vote
+445,Recycling,voted
+446,Recycling,did not vote
+447,Recycling,voted
+448,Recycling,did not vote
+449,Recycling,voted
+450,Recycling,did not vote
+451,GOTV,voted
+452,Recycling,did not vote
+453,GOTV,voted
+454,Recycling,voted
+455,Recycling,voted
+456,Recycling,did not vote
+457,Recycling,did not vote
+458,Recycling,voted
+459,Recycling,did not vote
+460,GOTV,did not vote
+461,Recycling,did not vote
+462,GOTV,voted
+463,Recycling,voted
+464,Recycling,did not vote
+465,Recycling,voted
+466,GOTV,did not vote
+467,GOTV,did not vote
+468,GOTV,did not vote
+469,Recycling,did not vote
+470,Recycling,voted
+471,Recycling,did not vote
+472,Recycling,did not vote
+473,Recycling,did not vote
+474,GOTV,voted
+475,GOTV,did not vote
+476,GOTV,did not vote
+477,Recycling,voted
+478,Recycling,did not vote
+479,Recycling,voted
+480,Recycling,did not vote
+481,Recycling,voted
+482,Recycling,did not vote
+483,Recycling,did not vote
+484,GOTV,did not vote
+485,Recycling,did not vote
+486,GOTV,did not vote
+487,GOTV,did not vote
+488,Recycling,did not vote
+489,Recycling,did not vote
+490,Recycling,did not vote
+491,Recycling,did not vote
+492,Recycling,voted
+493,Recycling,did not vote
+494,Recycling,voted
+495,Recycling,did not vote
+496,GOTV,voted
+497,Recycling,did not vote
+498,Recycling,did not vote
+499,Recycling,did not vote
+500,Recycling,voted
+501,Recycling,voted
+502,Recycling,voted
+503,Recycling,did not vote
+504,GOTV,voted
+505,GOTV,voted
+506,Recycling,did not vote
+507,Recycling,voted
+508,GOTV,did not vote
+509,Recycling,did not vote
+510,Recycling,did not vote
+511,Recycling,did not vote
+512,Recycling,voted
+513,Recycling,did not vote
+514,Recycling,voted
+515,GOTV,did not vote
+516,Recycling,did not vote
+517,Recycling,did not vote
+518,GOTV,did not vote
+519,Recycling,voted
+520,Recycling,did not vote
+521,GOTV,did not vote
+522,GOTV,did not vote
+523,Recycling,did not vote
+524,Recycling,did not vote
+525,GOTV,did not vote
+526,Recycling,did not vote
+527,Recycling,did not vote
+528,Recycling,did not vote
+529,Recycling,did not vote
+530,Recycling,did not vote
+531,GOTV,did not vote
+532,Recycling,voted
+533,Recycling,did not vote
+534,Recycling,did not vote
+535,GOTV,voted
+536,Recycling,did not vote
+537,Recycling,voted
+538,Recycling,did not vote
+539,Recycling,did not vote
+540,Recycling,did not vote
+541,GOTV,voted
+542,GOTV,voted
+543,Recycling,voted
+544,Recycling,did not vote
+545,GOTV,did not vote
+546,GOTV,did not vote
+547,Recycling,did not vote
+548,Recycling,did not vote
+549,Recycling,did not vote
+550,GOTV,did not vote
+551,GOTV,did not vote
+552,GOTV,voted
+553,GOTV,did not vote
+554,Recycling,voted
+555,GOTV,did not vote
+556,Recycling,did not vote
+557,GOTV,did not vote
+558,GOTV,did not vote
+559,Recycling,did not vote
+560,GOTV,voted
+561,GOTV,did not vote
+562,GOTV,voted
+563,GOTV,did not vote
+564,GOTV,did not vote
+565,GOTV,did not vote
+566,GOTV,did not vote
+567,GOTV,did not vote
+568,Recycling,voted
+569,Recycling,did not vote
+570,GOTV,did not vote
+571,GOTV,did not vote
+572,GOTV,did not vote
+573,Recycling,voted
+574,GOTV,did not vote
+575,Recycling,did not vote
+576,Recycling,did not vote
+577,GOTV,voted
+578,GOTV,did not vote
+579,GOTV,voted
+580,GOTV,did not vote
+581,Recycling,voted
+582,GOTV,voted
+583,GOTV,did not vote
+584,GOTV,voted
+585,Recycling,did not vote
+586,GOTV,voted
+587,GOTV,voted
+588,GOTV,voted
+589,GOTV,did not vote
+590,Recycling,did not vote
+591,Recycling,did not vote
+592,GOTV,did not vote
+593,Recycling,did not vote
+594,GOTV,voted
+595,GOTV,did not vote
+596,GOTV,did not vote
+597,Recycling,did not vote
+598,Recycling,did not vote
+599,GOTV,did not vote
+600,GOTV,did not vote
+601,Recycling,did not vote
+602,GOTV,did not vote
+603,Recycling,did not vote
+604,GOTV,did not vote
+605,GOTV,did not vote
+606,GOTV,did not vote
+607,GOTV,voted
+608,GOTV,did not vote
+609,Recycling,did not vote
+610,GOTV,voted
+611,Recycling,did not vote
+612,GOTV,voted
+613,GOTV,did not vote
+614,GOTV,voted
+615,GOTV,did not vote
+616,GOTV,did not vote
+617,Recycling,did not vote
+618,GOTV,voted
+619,GOTV,did not vote
+620,GOTV,voted
+621,GOTV,did not vote
+622,GOTV,voted
+623,GOTV,voted
+624,GOTV,did not vote
+625,Recycling,did not vote
+626,GOTV,voted
+627,GOTV,voted
+628,GOTV,did not vote
+629,Recycling,voted
+630,GOTV,did not vote
+631,GOTV,did not vote
+632,Recycling,did not vote
+633,GOTV,voted
+634,GOTV,did not vote
+635,GOTV,did not vote
+636,Recycling,did not vote
+637,GOTV,did not vote
+638,GOTV,did not vote
+639,GOTV,did not vote
+640,Recycling,did not vote
+641,GOTV,did not vote
+642,GOTV,voted
+643,GOTV,did not vote
+644,GOTV,voted
+645,GOTV,voted
+646,GOTV,did not vote
+647,GOTV,voted
+648,GOTV,voted
+649,GOTV,voted
+650,Recycling,did not vote
+651,Recycling,did not vote
+652,GOTV,voted
+653,GOTV,did not vote
+654,GOTV,did not vote
+655,GOTV,did not vote
+656,GOTV,voted
+657,GOTV,did not vote
+658,GOTV,did not vote
+659,GOTV,did not vote
+660,GOTV,did not vote
+661,GOTV,voted
+662,GOTV,did not vote
+663,GOTV,did not vote
+664,Recycling,did not vote
+665,GOTV,voted
+666,GOTV,voted
+667,GOTV,did not vote
+668,GOTV,did not vote
+669,GOTV,voted
+670,Recycling,did not vote
+671,GOTV,voted
+672,GOTV,voted
+673,GOTV,voted
+674,GOTV,did not vote
+675,Recycling,did not vote
+676,GOTV,voted
+677,GOTV,voted
+678,Recycling,voted
+679,GOTV,voted
+680,GOTV,did not vote
+681,GOTV,voted
+682,Recycling,voted
+683,GOTV,did not vote
+684,Recycling,did not vote
+685,GOTV,voted
+686,GOTV,did not vote
+687,Recycling,voted
+688,GOTV,did not vote
+689,Recycling,did not vote
+690,Recycling,did not vote
+691,GOTV,did not vote
+692,GOTV,voted
+693,Recycling,voted
+694,Recycling,voted
+695,GOTV,did not vote
+696,Recycling,voted
+697,GOTV,did not vote
+698,GOTV,did not vote
+699,GOTV,voted
+700,GOTV,did not vote
+701,GOTV,did not vote
+702,Recycling,did not vote
+703,GOTV,did not vote
+704,Recycling,voted
+705,GOTV,did not vote
+706,GOTV,voted
+707,GOTV,did not vote
+708,GOTV,voted
+709,Recycling,did not vote
+710,Recycling,did not vote
+711,Recycling,did not vote
+712,Recycling,did not vote
+713,GOTV,did not vote
+714,Recycling,did not vote
+715,GOTV,did not vote
+716,GOTV,did not vote
+717,GOTV,did not vote
+718,Recycling,voted
+719,GOTV,voted
+720,GOTV,voted
+721,Recycling,voted
+722,GOTV,did not vote
+723,Recycling,did not vote
+724,GOTV,did not vote
+725,GOTV,voted
+726,GOTV,voted
+727,GOTV,did not vote
+728,GOTV,voted
+729,GOTV,voted
+730,Recycling,voted
+731,Recycling,did not vote
+732,Recycling,did not vote
+733,GOTV,voted
+734,Recycling,did not vote
+735,GOTV,did not vote
+736,GOTV,voted
+737,GOTV,voted
+738,Recycling,did not vote
+739,Recycling,did not vote
+740,GOTV,did not vote
+741,GOTV,did not vote
+742,GOTV,did not vote
+743,Recycling,voted
+744,Recycling,did not vote
+745,GOTV,voted
+746,Recycling,voted
+747,GOTV,did not vote
+748,Recycling,did not vote
+749,GOTV,did not vote
+750,Recycling,voted
+751,Recycling,did not vote
+752,Recycling,did not vote
+753,GOTV,did not vote
+754,GOTV,did not vote
+755,Recycling,voted
+756,Recycling,did not vote
+757,Recycling,did not vote
+758,Recycling,voted
+759,GOTV,did not vote
+760,GOTV,did not vote
+761,Recycling,voted
+762,Recycling,did not vote
+763,GOTV,did not vote
+764,GOTV,voted
+765,GOTV,did not vote
+766,GOTV,voted
+767,Recycling,did not vote
+768,GOTV,did not vote
+769,GOTV,did not vote
+770,Recycling,did not vote
+771,GOTV,voted
+772,GOTV,did not vote
+773,GOTV,voted
+774,GOTV,voted
+775,GOTV,did not vote
+776,GOTV,did not vote
+777,GOTV,did not vote
+778,Recycling,voted
+779,GOTV,voted
+780,GOTV,did not vote
+781,GOTV,did not vote
+782,Recycling,did not vote
+783,GOTV,did not vote
+784,GOTV,did not vote
+785,Recycling,did not vote
+786,Recycling,did not vote
+787,GOTV,voted
+788,Recycling,did not vote
+789,GOTV,did not vote
+790,Recycling,did not vote
+791,Recycling,did not vote
+792,Recycling,did not vote
+793,GOTV,did not vote
+794,GOTV,did not vote
+795,GOTV,did not vote
+796,GOTV,voted
+797,Recycling,did not vote
+798,Recycling,voted
+799,GOTV,voted
+800,Recycling,did not vote
+801,GOTV,voted
+802,Recycling,did not vote
+803,Recycling,voted
+804,GOTV,did not vote
+805,GOTV,voted
+806,GOTV,did not vote
+807,Recycling,did not vote
+808,Recycling,did not vote
+809,GOTV,did not vote
+810,Recycling,did not vote
+811,GOTV,voted
+812,Recycling,did not vote
+813,Recycling,did not vote
+814,GOTV,did not vote
+815,Recycling,did not vote
+816,GOTV,did not vote
+817,GOTV,did not vote
+818,Recycling,did not vote
+819,GOTV,did not vote
+820,GOTV,voted
+821,Recycling,did not vote
+822,GOTV,did not vote
+823,GOTV,did not vote
+824,Recycling,voted
+825,Recycling,did not vote
+826,Recycling,did not vote
+827,Recycling,did not vote
+828,Recycling,did not vote
+829,Recycling,voted
+830,GOTV,did not vote
+831,Recycling,voted
+832,GOTV,voted
+833,Recycling,did not vote
+834,Recycling,did not vote
+835,Recycling,did not vote
+836,Recycling,voted
+837,GOTV,did not vote
+838,Recycling,voted
+839,Recycling,did not vote
+840,GOTV,voted
+841,Recycling,did not vote
+842,GOTV,voted
+843,Recycling,voted
+844,Recycling,did not vote
+845,Recycling,did not vote
+846,Recycling,did not vote
+847,Recycling,did not vote
+848,GOTV,did not vote
+849,Recycling,voted
+850,GOTV,did not vote
+851,GOTV,did not vote
+852,GOTV,did not vote
+853,GOTV,voted
+854,GOTV,did not vote
+855,GOTV,did not vote
+856,Recycling,did not vote
+857,GOTV,did not vote
+858,GOTV,voted
+859,GOTV,voted
+860,GOTV,did not vote
+861,Recycling,did not vote
+862,Recycling,did not vote
+863,GOTV,voted
+864,GOTV,voted
+865,Recycling,did not vote
+866,GOTV,did not vote
+867,GOTV,did not vote
+868,GOTV,voted
+869,Recycling,did not vote
+870,GOTV,did not vote
+871,GOTV,voted
+872,Recycling,did not vote
+873,GOTV,voted
+874,GOTV,voted
+875,Recycling,voted
+876,GOTV,did not vote
+877,GOTV,voted
+878,Recycling,did not vote
+879,Recycling,did not vote
+880,GOTV,did not vote
+881,Recycling,did not vote
+882,GOTV,did not vote
+883,GOTV,voted
+884,GOTV,voted
+885,GOTV,did not vote
+886,GOTV,voted
+887,Recycling,voted
+888,Recycling,did not vote
+889,GOTV,did not vote
+890,Recycling,did not vote
+891,GOTV,voted
+892,GOTV,voted
+893,Recycling,voted
+894,GOTV,did not vote
+895,GOTV,did not vote
+896,Recycling,did not vote
+897,GOTV,did not vote
+898,GOTV,did not vote
+899,Recycling,did not vote
+900,GOTV,voted
+901,Recycling,did not vote
+902,GOTV,voted
+903,Recycling,voted
+904,Recycling,did not vote
+905,Recycling,did not vote
+906,Recycling,did not vote
+907,Recycling,did not vote
+908,Recycling,did not vote
+909,Recycling,did not vote
+910,Recycling,did not vote
+911,Recycling,did not vote
+912,GOTV,did not vote
+913,GOTV,did not vote
+914,Recycling,did not vote
+915,GOTV,did not vote
+916,Recycling,did not vote
+917,Recycling,voted
+918,GOTV,did not vote
+919,Recycling,did not vote
+920,Recycling,did not vote
+921,Recycling,did not vote
+922,Recycling,did not vote
+923,Recycling,did not vote
+924,GOTV,voted
+925,GOTV,did not vote
+926,GOTV,did not vote
+927,Recycling,did not vote
+928,GOTV,did not vote
+929,GOTV,did not vote
+930,Recycling,did not vote
+931,Recycling,did not vote
+932,Recycling,did not vote
+933,Recycling,voted
+934,Recycling,did not vote
+935,Recycling,voted
+936,Recycling,voted
+937,Recycling,did not vote
+938,GOTV,did not vote
+939,GOTV,did not vote
+940,Recycling,voted
+941,Recycling,voted
+942,GOTV,voted
+943,Recycling,did not vote
+944,GOTV,did not vote
+945,Recycling,voted
+946,GOTV,voted
+947,Recycling,did not vote
+948,Recycling,did not vote
+949,Recycling,voted
+950,GOTV,voted
+951,GOTV,did not vote
+952,GOTV,did not vote
+953,GOTV,did not vote
+954,GOTV,voted
+955,Recycling,did not vote
+956,Recycling,did not vote

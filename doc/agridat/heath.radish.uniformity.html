@@ -1,0 +1,105 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of radish</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>heath.radish.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of radish
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of radish in four containers.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("heath.radish.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 400 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>block</code></dt><dd><p>block</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>weight per plant, grams</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Weight of 399 radish plants grown at 1 inch x 1 inch spacing in four plastic basins.
+Seed wetted 1968-02-15, planted 1968-02-17, harvested 1968-03-26.
+</p>
+<p>Heath said, Most of the large plants were round the edges...one
+important source of variation might have been competition for light.
+</p>
+
+
+<h3>Source</h3>
+
+<p>O.V.S. Heath (1970).
+Investigation by Experiment. Table 1, p 24-25.
+https://archive.org/details/investigationbye0000heat
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  require(agridat)
+  data(heath.radish.uniformity)
+  dat &lt;- heath.radish.uniformity
+  libs(desplot, dplyr)
+  desplot(dat, yield ~ col*row|block,
+          aspect=1,
+          main="heath.radish.uniformity")
+
+  # Indicator for border/interior plants
+  dat &lt;- mutate(dat,
+                inner = row &gt; 1 &amp; row &lt; 10 &amp; col &gt;  1 &amp; col &lt; 10)
+  # Heath has 5.80 and 9.63 (we assume this is a typo of 9.36)
+  dat &lt;- group_by(dat, inner)
+  summarize(dat, mean=mean(yield, na.rm=TRUE))
+  # Interior plots are significantly lower yielding
+  anova(aov(yield ~ block + inner, dat))
+  # lattice::bwplot(yield ~ inner, dat, horiz=0)
+  # similar to Heath fig 2-2
+  # lattice::histogram( ~ yield|inner, dat, layout=c(1,2), n=20)
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

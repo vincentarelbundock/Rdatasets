@@ -1,0 +1,134 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of barley, percent of leaves affected...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>wedderburn.barley</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of barley, percent of leaves affected by leaf blotch
+</h2>
+
+<h3>Description</h3>
+
+<p>Percent of leaf area affected by leaf blotch on 10 varieties of barley
+at 9 sites.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 90 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>y</code></dt><dd><p>Percent of leaf area affected, 0-100.</p>
+</dd>
+<dt><code>site</code></dt><dd><p>Site factor, 9 levels</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>Variety factor, 10 levels</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Incidence of <em>Rhynchosporium secalis</em> (leaf blotch) on the leaves of
+10 varieties of barley grown at 9 sites in 1965.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Wedderburn, R W M (1974).
+Quasilikelihood functions, generalized linear models and the
+Gauss-Newton method.
+<em>Biometrika</em>, 61, 439&ndash;47.
+https://doi.org/10.2307/2334725
+</p>
+<p>Wedderburn credits the original data to an unpublished thesis by
+J. F. Jenkyn.
+</p>
+
+
+<h3>References</h3>
+
+<p>McCullagh, P and Nelder, J A (1989).
+<em>Generalized Linear Models</em> (2nd ed).
+</p>
+<p>R. B. Millar.
+<em>Maximum Likelihood Estimation and Inference: With Examples in R,
+SAS and ADMB</em>.  Chapter 8.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+data(wedderburn.barley)
+dat &lt;- wedderburn.barley
+dat$y &lt;- dat$y/100
+
+libs(lattice)
+dotplot(gen~y|site, dat, main="wedderburn.barley")
+
+# Use the variance function mu(1-mu).  McCullagh page 330
+# Note, 'binomial' gives same results as 'quasibinomial', but also a warning
+m1 &lt;- glm(y ~ gen + site, data=dat, family="quasibinomial")
+summary(m1)
+
+# Same shape (different scale) as McCullagh fig 9.1a
+plot(m1, which=1, main="wedderburn.barley")
+
+# Compare data and model
+dat$pbin &lt;- predict(m1, type="response")
+dotplot(gen~pbin+y|site, dat, main="wedderburn.barley: observed/predicted")
+
+
+# Wedderburn suggested variance function: mu^2 * (1-mu)^2
+# Millar shows how to do this explicitly.
+wedder &lt;- list(varfun=function(mu) (mu*(1-mu))^2,
+             validmu=function(mu) all(mu&gt;0) &amp;&amp; all(mu&lt;1),
+             dev.resids=function(y,mu,wt) wt * ((y-mu)^2)/(mu*(1-mu))^2,
+             initialize=expression({
+               n &lt;- rep.int(1, nobs)
+               mustart &lt;- pmax(0.001, pmin(0.99,y)) }),
+             name="(mu(1-mu))^2")
+m2 &lt;- glm(y ~ gen + site, data=dat, family=quasi(link="logit", variance=wedder))
+#plot(m2)
+
+# Alternatively, the 'gnm' package has the 'wedderburn' family.
+libs(gnm)
+m3 &lt;- glm(y ~ gen + site, data=dat, family="wedderburn")
+summary(m3)
+# Similar to McCullagh fig 9.2
+  plot(m3, which=1)
+  title("wedderburn.barley")
+
+# Compare data and model
+dat$pwed &lt;- predict(m3, type="response")
+dotplot(gen~pwed+y|site, dat, main="wedderburn.barley")
+
+## End(Not run)
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

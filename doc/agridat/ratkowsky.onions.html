@@ -1,0 +1,93 @@
+<!DOCTYPE html><html><head><title>R: Onion yields for different densities at two locations</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>ratkowsky.onions</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Onion yields for different densities at two locations
+</h2>
+
+<h3>Description</h3>
+
+<p>Onion yields for different densities at two locations
+</p>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>density</dt><dd><p>planting density (plants per square meter)</p>
+</dd>
+<dt>yield</dt><dd><p>yield (g / plant)</p>
+</dd>
+<dt>loc</dt><dd><p>location, Purnong Landing or Virginia</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Spanish white onions.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Ratkowsky, D. A. (1983).
+<em>Nonlinear Regression Modeling: A Unified Practical Approach.</em>
+New York: Marcel Dekker.
+</p>
+
+
+<h3>References</h3>
+
+<p>Ruppert, D., Wand, M.P. and Carroll, R.J. (2003).
+<em>Semiparametric Regression</em>. Cambridge University Press.
+https://stat.tamu.edu/~carroll/semiregbook/
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(ratkowsky.onions)
+dat &lt;- ratkowsky.onions
+
+# Model inverse yield as a quadratic.  Could be better...
+libs(lattice)
+dat &lt;- transform(dat, iyield = 1/yield)
+m1 &lt;- lm(iyield ~ I(density^2)*loc, dat)
+dat$pred &lt;- predict(m1)
+
+libs(latticeExtra)
+foo &lt;- xyplot(iyield ~ density, data=dat, group=loc, auto.key=TRUE,
+               main="ratkowski.onions",ylab="Inverse yield")
+foo + xyplot(pred ~ density, data=dat, group=loc, type='l')
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

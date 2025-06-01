@@ -1,0 +1,173 @@
+<!DOCTYPE html><html><head><title>R: Long-term barley yields at different fertilizer levels</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>vold.longterm</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Long-term barley yields at different fertilizer levels
+</h2>
+
+<h3>Description</h3>
+
+<p>Long-term barley yields at different fertilizer levels
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("vold.longterm")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 76 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+<dt><code>nitro</code></dt><dd><p>nitrogen fertilizer, grams/m^2</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, grams/m^2</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Trials conducted at Osaker, Norway.
+Nitrogen fertilizer amounts were increased by twenty percent in 1978.
+</p>
+<p>Vold (1998) fit a Michaelis-Menten type equation with a different
+maximum in each year and a decreasing covariate for non-fertilizer
+nitrogen.
+</p>
+<p>Miguez used a non-linear mixed effects model with asymptotic curve.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Arild Vold (1998).
+A generalization of ordinary yield response functions.
+<em>Ecological modelling</em>, 108, 227-236.
+https://doi.org/10.1016/S0304-3800(98)00031-3
+</p>
+
+
+<h3>References</h3>
+
+<p>Fernando E. Miguez (2008).
+Using Non-Linear Mixed Models for Agricultural Data.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+  library(agridat)
+  data(vold.longterm)
+  dat &lt;- vold.longterm
+  
+  libs(lattice)
+  foo1 &lt;- xyplot(yield ~ nitro | factor(year), data = dat,
+                 as.table=TRUE, type = "o",
+                 main=list("vold.longterm", cex=1.5),
+                 xlab = list("N fertilizer",cex=1.5,font=4),
+                 ylab = list("Yield", cex=1.5))
+  
+
+  # Long term trend shows decreasing yields
+  xyplot(yield ~ year , data = dat, group=nitro, type='o',
+         main="vold.longterm - yield level by nitrogen",
+         auto.key=list(columns=4))
+
+
+  if(0){
+  # Global model
+  m1.nls &lt;- nls(yield ~ SSasymp(nitro, max, int, lograte), data=dat)
+  summary(m1.nls)
+  libs(MASS) # for 'confint'
+  confint(m1.nls)
+  
+  # Raw data plus global model.  Year variation not modeled.
+  pdat &lt;- data.frame(nitro=seq(0,14,0.5))
+  pdat$pred &lt;- predict(m1.nls, newdata=pdat)
+    libs(latticeExtra) # for layers
+    foo1 + xyplot(pred ~ nitro , data = pdat,
+                  as.table=TRUE, type='l', col='red', lwd=2)
+  }
+
+  # Separate fit for each year.  Overfitting with 3x19=57 params.
+  libs(nlme)
+  m2.lis &lt;- nlsList(yield ~ SSasymp(nitro,max,int,lograte) | year, data=dat)
+  plot(intervals(m2.lis),layout = c(3,1),
+       main="vold.longterm") # lograte might be same for each year
+
+
+  # Fixed overall asymptotic model, plus random deviations for each year
+  # Simpler code, but less clear about what model is fit: m3.lme &lt;- nlme(m2.lis)
+  libs(nlme)
+  m3.lme &lt;- nlme(yield ~ SSasymp(nitro, max, int, lograte), data=dat,
+                 groups = ~ year,
+                 fixed = list(max~1, int~1, lograte~1),
+                 random= max + int + lograte ~ 1,
+                 start= c(max=300, int=100, rate=-2))
+  
+  ## # Fixed effects are similar for the nls/lme models
+  ## coef(m1.nls)
+  ## fixef(m3.lme)
+  ## # Random effects are normally distributed
+  ## qqnorm(m3.lme, ~ ranef(.),col="black")
+  ## # Note the trend in intercept effects over time
+  ## plot(ranef(m3.lme),layout=c(3,1))
+  
+  ## # Correlation between int,lograte int,max may not be needed
+  ## intervals(m3.lme,which="var-cov")
+  ## pairs(m3.lme,pch=19,col="black")
+  
+  ## # Model with int uncorrelated with max,lograte.  AIC is worse.
+  ## # fit4.lm3 &lt;- update(m3.lme, random=pdBlocked(list(max+lograte~1,int ~ 1)))
+  ## # intervals(fit4.lm3, which="var-cov")
+  ## # anova(m3.lme, fit4.lm3)
+  
+  # Plot the random-effect model.  Excellent fit with few parameters.
+  pdat2 &lt;- expand.grid(year=1970:1988, nitro=seq(0,15,length=50))
+  pdat2$pred &lt;- predict(m3.lme, new=pdat2)
+  pdat2$predf &lt;- predict(m3.lme, new=pdat2, level=0)
+  foo1 &lt;- update(foo1, type='p',
+                 key=simpleKey(c("Observed","Fixed","Random"),
+                               col=c("blue","red","darkgreen"),
+                               points=FALSE, columns=3))
+  libs(latticeExtra)
+  foo2 &lt;- xyplot(pred~nitro|year, data=pdat2, type='l', col="darkgreen", lwd=2)
+  foo3 &lt;- xyplot(predf~nitro|year, data=pdat2, type='l', col="red",lwd=1)
+  foo1 + foo2 + foo3
+
+  
+  ## # Income is maximized at about 15
+  ## pdat2 &lt;- transform(pdat2, income = predf*2 - 7*nitro)
+  ## with(pdat2, xyplot(income~nitro))
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

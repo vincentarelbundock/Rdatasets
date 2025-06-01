@@ -1,0 +1,129 @@
+<!DOCTYPE html><html><head><title>R: Long stayers dataset</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>long_stayers</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Long stayers dataset</h2>
+
+<h3>Description</h3>
+
+<p>classification dataset of long staying patients.
+Contains patients who have been registered as an inpatient for longer than 7 days length of stay <a href="https://www.england.nhs.uk/south/wp-content/uploads/sites/6/2016/12/rig-reviewing-stranded-patients-hospital.pdf">https://www.england.nhs.uk/south/wp-content/uploads/sites/6/2016/12/rig-reviewing-stranded-patients-hospital.pdf</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>long_stayers
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 768 rows and 9 variables:
+</p>
+
+<dl>
+<dt>stranded.label</dt><dd><p>binary classification label indicating whether <strong>stranded = 1</strong> or <strong>not stranded=0</strong></p>
+</dd>
+<dt>age</dt><dd><p>age of the patient</p>
+</dd>
+<dt>care.home.referral</dt><dd><p>flag indicating whether referred from a private care home - <strong>1=Care Home Referral</strong> and <strong>0=Not a care home referral</strong></p>
+</dd>
+<dt>medicallysafe</dt><dd><p>flag indicating whether they are medically safe for discharge - <strong>1=Medically safe</strong> and <strong>0=Not medically safe</strong></p>
+</dd>
+<dt>hcop</dt><dd><p>flag indicating health care for older person triage - <strong>1=Yes triaged from HCOP</strong> and <strong>0=Triaged from different department</strong></p>
+</dd>
+<dt>mental_health_care</dt><dd><p>flag indicating whether they require mental health care - <strong>1=MH assistance needed</strong> and <strong>0=No history of mental health</strong></p>
+</dd>
+<dt>periods_of_previous_care</dt><dd><p>Count of the number of times they have been in hospital in last 12 months</p>
+</dd>
+<dt>admit_date</dt><dd><p>date the patient was admitted as an inpatient</p>
+</dd>
+<dt>frailty_index</dt><dd><p>indicates the type of frailty - nominal variable</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Prepared, acquired and adatped by Gary Hutson <a href="mailto:hutsons-hacks@outlook.com">hutsons-hacks@outlook.com</a>, Dec-2021. Synthetic data, based off live patient data from various NHS secondary health care trusts.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library(dplyr)
+library(ggplot2)
+library(caret)
+library(rsample)
+library(varhandle)
+data("long_stayers")
+glimpse(long_stayers)
+# Examine class imbalance
+prop.table(table(long_stayers$stranded.label))
+# Feature engineering
+long_stayers &lt;- long_stayers %&gt;%
+dplyr::mutate(stranded.label=factor(stranded.label)) %&gt;%
+ dplyr::select(everything(), -c(admit_date))
+ # Feature encoding
+ cats &lt;- select_if(long_stayers, is.character)
+ cat_dummy &lt;- varhandle::to.dummy(cats$frailty_index, "frail_ind")
+#Converts the frailty index column to dummy encoding and sets a column called "frail_ind" prefix
+cat_dummy &lt;- cat_dummy %&gt;%
+ as.data.frame() %&gt;%
+ dplyr::select(-frail_ind.No_index_item) #Drop the field of interest
+long_stayers &lt;- long_stayers %&gt;%
+ dplyr::select(-frailty_index) %&gt;%
+ bind_cols(cat_dummy) %&gt;% na.omit(.)
+# Split the data
+split &lt;- rsample::initial_split(long_stayers, prop = 3/4)
+train &lt;- rsample::training(split)
+test &lt;- rsample::testing(split)
+set.seed(123)
+glm_class_mod &lt;- caret::train(factor(stranded.label) ~ ., data = train,
+                             method = "glm")
+print(glm_class_mod)
+# Predict the probabilities
+preds &lt;- predict(glm_class_mod, newdata = test) # Predict class
+pred_prob &lt;- predict(glm_class_mod, newdata = test, type="prob") #Predict probs
+
+predicted &lt;- data.frame(preds, pred_prob)
+test &lt;- test %&gt;%
+ bind_cols(predicted) %&gt;%
+ dplyr::rename(pred_class=preds)
+#Evaluate with ConfusionTableR
+library(ConfusionTableR)
+cm &lt;- ConfusionTableR::binary_class_cm(test$stranded.label, test$pred_class, positive="Stranded")
+cm$record_level_cm
+# Visualise odds ration
+library(OddsPlotty)
+plotty &lt;- OddsPlotty::odds_plot(glm_class_mod$finalModel,
+                               title = "Odds Plot ",
+                               subtitle = "Showing odds of patient stranded",
+                               point_col = "#00f2ff",
+                               error_bar_colour = "black",
+                               point_size = .5,
+                               error_bar_width = .8,
+                               h_line_color = "red")
+print(plotty)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

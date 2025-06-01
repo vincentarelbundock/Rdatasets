@@ -1,0 +1,84 @@
+<!DOCTYPE html><html><head><title>R: Gelman Heterogeneity Causal Quartet Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>heterogeneous_causal_quartet</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Gelman Heterogeneity Causal Quartet Data</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains 88 observations, each generated under a different
+mechanism treatment heterogeneity with respect to some
+pre-exposure characteristic, <code>z</code>:
+</p>
+
+<ul>
+<li><p> (1) Linear interaction
+</p>
+</li>
+<li><p> (2) No effect then steady increase
+</p>
+</li>
+<li><p> (3) Plateau
+</p>
+</li>
+<li><p> (4) Intermediate zone with large effects
+</p>
+</li></ul>
+
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>heterogeneous_causal_quartet
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A dataframe with 88 rows and 5 variables:
+</p>
+
+<ul>
+<li> <p><code>dataset</code>: The data generating mechanism
+</p>
+</li>
+<li> <p><code>exposure</code>: exposure
+</p>
+</li>
+<li> <p><code>covariate</code>: a pre-exposure factor
+</p>
+</li>
+<li> <p><code>outcome</code>: outcome
+</p>
+</li>
+<li> <p><code>.causal_effect</code>: latent true causal effect
+</p>
+</li></ul>
+
+
+
+<h3>References</h3>
+
+<p>Gelman, A., Hullman, J., &amp; Kennedy, L. (2023). Causal quartets: Different ways to attain the same average treatment effect. arXiv preprint arXiv:2302.12878.
+</p>
+<p>Hullman J (2023). <em>causalQuartet: Create Causal Quartets for Interrogating Average Treatment Effects</em>. R package version 0.0.0.9000.
+</p>
+
+</main>
+
+</div>
+</body></html>

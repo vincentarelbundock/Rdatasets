@@ -1,0 +1,99 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of winter wheat in Ontario</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>yan.winterwheat</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of winter wheat in Ontario
+</h2>
+
+<h3>Description</h3>
+
+<p>Yield of 18 varieties of winter wheat grown at 9 environments in
+Ontario in 1993.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 162 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype</p>
+</dd>
+<dt><code>env</code></dt><dd><p>environment</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield in metric tons per hectare</p>
+</dd>
+</dl>
+
+<p>Used with permission of Weikai Yan.
+</p>
+
+
+<h3>Details</h3>
+
+<p>The yield is the mean of several reps, measured in metric tons per hectare.
+</p>
+<p>This data has often been used to illustrate GGE biplots.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Weikai Yan and M.S. Kang (2002).
+GGE biplot analysis: A graphical tool for breeders, geneticists, and
+agronomists.
+CRC. Page 59.
+</p>
+<p>Weikai Yan and Nicholas A. Tinker. 2006.
+Biplot analysis of multi-environment trial data: Principles and
+applications. Table 1.
+</p>
+
+
+<h3>References</h3>
+
+<p>Weikai Yan and Manjit S. Kang and Baoluo Ma and Sheila Woods, 2007,
+GGE Biplot vs. AMMI Analysis of Genotype-by-Environment Data,
+Crop Science, 2007, 47, 641&ndash;653.
+https://doi.org/10.2135/cropsci2006.06.0374
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+data(yan.winterwheat)
+dat &lt;- yan.winterwheat
+
+libs(gge)
+m1 &lt;- gge(dat, yield ~ gen*env)
+biplot(m1, flip=c(1,1), hull=TRUE,
+       main="yan.winterwheat - GGE biplot")
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

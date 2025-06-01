@@ -1,0 +1,88 @@
+<!DOCTYPE html><html><head><title>R: Upper Paleolithic End Scrapers from Castenet A and Ferrassie...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>EndScrapers</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Upper Paleolithic End Scrapers from Castenet A and Ferrassie H, France
+</h2>
+
+<h3>Description</h3>
+
+<p>Data on 3000 Upper Paleolithic end scrapers from two sites analyzed by James Sackett (1966) and reanalyzed by Dwight Read (1974 and 2007). 
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(EndScrapers)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 48 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>Width</code></dt><dd><p>Width: <code>Narrow</code>, <code>Wide</code></p>
+</dd>
+<dt><code>Sides</code></dt><dd><p>Sides: <code>Convergent</code>, <code>Parallel</code></p>
+</dd>
+<dt><code>Curvature</code></dt><dd><p>End Curvature: <code>Round</code>, <code>Medium</code>, <code>Shallow</code></p>
+</dd>
+<dt><code>Retouched</code></dt><dd><p>Retouching: <code>Retouched</code>, <code>Unretouched</code></p>
+</dd>
+<dt><code>Site</code></dt><dd><p>Site: <code>Castenet A</code>, <code>Ferrassie H</code></p>
+</dd>
+<dt><code>Freq</code></dt><dd><p>Number of end scrapers</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The scrapers are grouped on 5 categorical variables into 48 groups. Sackett's analysis employed Chi square and the examination of residuals. Read used the data to illustrate loglinear modelling (1974, 2007). The data come from Tables IV and VIII (pp 373 and 380) in Sackett's original article
+</p>
+
+
+<h3>Source</h3>
+
+<p>Sackett, James R. 1966. Quantitative Analysis of Upper Paleolithic Stone Tools. <em>American Anthropologist</em> 68(2): 356&ndash;394.
+</p>
+
+
+<h3>References</h3>
+
+<p>Carlson, David L. 2017. <em>Quantitative Methods in Archaeology Using R</em>. Cambridge University Press, pp 72-77, 91-94.
+</p>
+<p>Read, Dwight W. 1974. Some Comments on Typologies in Archaeology and an Outline of a Methodology. <em>American Antiquity</em> 39: 216-242.
+</p>
+<p>Read, Dwight W. 2007. <em>Artifact Classification: A Conceptual and Methodological Approach</em>. Left Coast Press.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(EndScrapers)
+xtabs(Freq~Site+Curvature, EndScrapers)
+xtabs(Freq~Curvature+Sides+Site, EndScrapers)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

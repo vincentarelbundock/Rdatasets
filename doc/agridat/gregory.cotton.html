@@ -1,0 +1,156 @@
+<!DOCTYPE html><html><head><title>R: Factorial experiment of cotton in Sudan.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gregory.cotton</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Factorial experiment of cotton in Sudan.
+</h2>
+
+<h3>Description</h3>
+
+<p>Factorial experiment of cotton in Sudan.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("gregory.cotton")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 144 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>yield</code></dt><dd><p>yield</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+<dt><code>nitrogen</code></dt><dd><p>nitrogen level</p>
+</dd>
+<dt><code>date</code></dt><dd><p>sowing date</p>
+</dd>
+<dt><code>water</code></dt><dd><p>irrigation amount</p>
+</dd>
+<dt><code>spacing</code></dt><dd><p>spacing between plants</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Experiment conducted in Sudan at the Gezira Research Farm in 1929-1930
+and 1930-1931.  The effects on yield of four factors was studied in
+all possible combinations.
+</p>
+<p>Sowing dates in 1929: D1 = Jul 24, D2 = Aug 11, D3 = Sep 2, D4 = Sep 25.
+</p>
+<p>Spacing: S1 = 25 cm between holes, S2 = 50 cm, S3 = 75 cm. The usual
+spacing is 50-70 cm.
+</p>
+<p>Irrigation: I1 = Light, I2 = Medium, I3 = Heavy.
+</p>
+<p>Nitrogen: N0 = None/Control, N1 = 600 rotls/feddan.
+</p>
+<p>In each year there were 4*3*2*2=72 treatments, each replicated four
+times. The means are given here.
+</p>
+<p>Gregory (1932) has two interesting graphics:
+1. radial bar plot
+2. photographs of 3D model of treatment means.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Gregory, FG and Crowther, F and Lambert, AR (1932).
+The interrelation of factors controlling the production of cotton
+under irrigation in the Sudan.
+<em>The Journal of Agricultural Science</em>, 22, 617-638. Table 1, 10.
+https://doi.org/10.1017/S0021859600054137
+</p>
+
+
+<h3>References</h3>
+
+<p>Paterson, D. Statistical Technique in Agricultural Research, p. 211.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(gregory.cotton)
+dat &lt;- gregory.cotton
+
+# Main effect means, Gregory table 2
+## libs(dplyr)
+## dat 
+## dat 
+## dat 
+## dat 
+
+
+# Figure 2 of Gregory. Not recommended, but an interesting exercise.
+# https://stackoverflow.com/questions/13887365
+if(FALSE){
+  libs(ggplot2)
+  d1 &lt;- subset(dat, year=="Y1")
+  d1 &lt;- transform(d1, grp=factor(paste(date,nitrogen,water,spacing)))
+  d1 &lt;- d1[order(d1$grp),] # for angles
+  # Rotate labels on the left half 180 deg. First 18, last 18 labels
+  d1$ang &lt;- 90+seq(from=(360/nrow(d1))/1.5, to=(1.5*(360/nrow(d1)))-360,
+                   length.out=nrow(d1))+80
+  d1$ang[1:18] &lt;- d1$ang[1:18] + 180
+  d1$ang[55:72] &lt;- d1$ang[55:72] + 180
+  # Lables on left half to right-adjusted
+  d1$hjust &lt;- 0
+  d1$hjust[1:18] &lt;- d1$hjust[55:72] &lt;- 1
+  
+  gg &lt;- ggplot(d1, aes(x=grp,y=yield,fill=factor(spacing))) +
+    geom_col() +
+    guides(fill=FALSE) + # no legend for 'spacing'
+    coord_polar(start=-pi/2) + # default is to start at top
+    labs(title="gregory.cotton 1929",x="",y="",label="") +
+    # The bar columns are centered on 1:72, subtract 0.5 to add radial axes
+    geom_vline(xintercept = seq(1, 72, by=3)-0.5, color="gray", size=.25) +
+    geom_vline(xintercept = seq(1, 72, by=18)-0.5, size=1) +
+    geom_vline(xintercept = seq(1, 72, by=9)-0.5, size=.5) +
+    geom_hline(yintercept=c(1,2,3)) + 
+    geom_text(data=d1, aes(x=grp, y=max(yield), label=grp, angle=ang, hjust=hjust),
+              size=2) +
+    theme(panel.background=element_blank(),
+          axis.title=element_blank(),
+          panel.grid=element_blank(),
+          axis.text.x=element_blank(),
+          axis.text.y=element_blank(),
+          axis.ticks=element_blank() )
+  print(gg)
+  
+}
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

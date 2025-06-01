@@ -1,0 +1,122 @@
+<!DOCTYPE html><html><head><title>R: Training and earnings</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>nswproject</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Training and earnings</h2>
+
+<h3>Description</h3>
+
+<p>Data from the National Supported Work (NSW) demonstration project
+used by Lalonde (1986), and Dehejia and Wahba (1999, 2002).
+This sample has 185 observations in the treatment group and 2490 in the
+control group. The treatment sample consists of males who received
+training during 1976-1977. THe control group consists of male
+household heads under the age of 55 who are not retired,
+drawn from the PSID (Cameron and Trivedi, 2005).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>nswproject
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 2675 observations and 18 variables:
+</p>
+
+<dl>
+<dt>treat</dt><dd><p>= 1 if individual is in treatment group, = 0 if in control group</p>
+</dd>
+<dt>age</dt><dd><p>age in years</p>
+</dd>
+<dt>educ</dt><dd><p>education in years</p>
+</dd>
+<dt>black</dt><dd><p>= 1 if black</p>
+</dd>
+<dt>hisp</dt><dd><p>= 1 if hispanic</p>
+</dd>
+<dt>marr</dt><dd><p>= 1 if married</p>
+</dd>
+<dt>re74</dt><dd><p>real annual earnings in 1974 (pre-treatment), in 1982 usd</p>
+</dd>
+<dt>re75</dt><dd><p>real annual earnings in 1975 (pre-treatment), in 1982 usd</p>
+</dd>
+<dt>re78</dt><dd><p>real annual earnings in 1978 (post-treatment), in 1982 usd</p>
+</dd>
+<dt>u74</dt><dd><p>= 1 if unemployed in 1974</p>
+</dd>
+<dt>u75</dt><dd><p>= 1 if unemployed in 1975</p>
+</dd>
+<dt>agesq</dt><dd><p>age squared</p>
+</dd>
+<dt>educsq</dt><dd><p>educ squared</p>
+</dd>
+<dt>nodegree</dt><dd><p>= 1 if years of education &lt; 12</p>
+</dd>
+<dt>re74sq</dt><dd><p>re74 squared</p>
+</dd>
+<dt>re75sq</dt><dd><p>re75 squared</p>
+</dd>
+<dt>u74black</dt><dd><p>interaction term u74 x black</p>
+</dd>
+<dt>u74hisp</dt><dd><p>interaction term u74 x hisp</p>
+</dd>
+</dl>
+
+
+
+<h3>Section in Text</h3>
+
+<p>25.8 Treatment Evaluation Example: The Effect of Training on Earnings, pp. 889-95
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="http://cameron.econ.ucdavis.edu/mmabook/mmadata.html">http://cameron.econ.ucdavis.edu/mmabook/mmadata.html</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Cameron, A. and Trivedi, P. (2005), &quot;Microeconometrics: Methods and
+Applications,&quot; Cambridge University Press, New York.
+</p>
+<p>Dehejia R. and Wahba S. (1999), &quot;Causal Effects in Nonexperimental
+Studies: Reevaluating the Evaluation of Training Programs,&quot;
+JASA, 1053-1062.
+</p>
+<p>Dehejia R. and Wahba S. (2002), &quot;Propensity-score Matching Methods for
+Nonexperimental Causal Studies&quot;, ReStat, 151-161
+</p>
+<p>Lalonde, R. (1986), &quot;Evaluating the Econometric Evaluations of
+Training Programs with Experimental Data,&quot; AER, 604-620.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>summary(nswproject)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of oats and wheat on the same ground.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>wyatt.multi.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of oats and wheat on the same ground.
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of oats and wheat on the same ground.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("wyatt.multi.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 258 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, bu/ac</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+<dt><code>crop</code></dt><dd><p>crop</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Experiments conducted at the Soils Experimental field at the
+University of Alberta, Canada.
+</p>
+<p>Oats were grown in 1925, with average yield 88 bu/ac.
+</p>
+<p>Wheat was grown in 1926, with average yield 32.2 bu/ac.
+</p>
+<p>The data reported are relative yields within each year.
+</p>
+<p>The plot size in rows 1 and 2 (Series A and B in the original paper) is 1/10th acre.
+The plot size in row 3 is 1/11 acre.
+</p>
+<p>Field length: 3 plots (140 ft, 140 ft, 128 ft) + 2 roads * 16 feet = 440 feet.
+</p>
+<p>Field width: 43 plots * 37 ft = 1591 feet.
+</p>
+
+
+<h3>Source</h3>
+
+<p>F. A. Wyatt (1927).
+Variation in plot yields due to soil heterogeneity.
+Scientific Agriculture, 7, 248-256. Table 1.
+https://doi.org/10.4141/sa-1927-0020
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(wyatt.multi.uniformity)
+dat &lt;- wyatt.multi.uniformity
+
+# range of yields. Wyatt has 48.6 bu/ac for oats, 10.4 for wheat
+# diff(range(na.omit(subset(dat, crop=="oats")$yield)/100*88)) # 48.4
+# diff(range(na.omit(subset(dat, crop=="wheat")$yield)/100*32.8)) # 10.5 
+
+# std dev. Wyatt has 9.18 bu/ac for oats, 2.06 for wheat, 2.06 for wheat
+# sd(na.omit(subset(dat, crop=="oats")$yield)/100*88) # 9.11
+# sd(na.omit(subset(dat, crop=="wheat")$yield)/100*32.8) # 2.14
+
+# correlation across years. Wyatt has .08
+# cor(reshape2::acast(dat, row+col ~ crop, value.var="yield"), use="pair")
+
+# Fig 3
+libs(lattice)
+xyplot(yield ~ col|factor(row), dat, group=crop,
+       main="wyatt.multi.uniformity",
+       type='l', layout=c(1,3), auto.key=TRUE )                
+
+libs(desplot)
+desplot(dat, yield ~ col*row, subset=crop=="oats",
+        tick=TRUE,
+        aspect=(440)/(1591), # true aspect
+        main="wyatt.multi.uniformity - 1925 oats")
+desplot(dat, yield ~ col*row, subset=crop=="wheat",
+        aspect=(440)/(1591), # true aspect
+        main="wyatt.multi.uniformity - 1926 wheat")
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

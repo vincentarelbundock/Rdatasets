@@ -1,0 +1,1001 @@
+rownames,income,age,party,trump_approval,education,robots,climate_change,transformers,science_is_honest,vaccines_are_safe,books,ghosts,fed_sci_budget,earth_sun,wise_unwise
+1,8,64,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,1,Strongly Agree,Somewhat Disagree,20,Yes,Too Low,FALSE,Wise but Unhappy
+2,68,56,Democrat,Strongly disapprove,High school,Unlikely,Real and Caused by People,0,Somewhat Agree,Somewhat Disagree,6,No,Too High,FALSE,Wise but Unhappy
+3,46,63,Independent,Somewhat Approve,Some college,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,0,No,About Right,TRUE,Happy but Unwise
+4,51,48,Republican,Strongly Approve,High school,Unlikely,Not Real At All,0,Somewhat Disagree,Somewhat Disagree,1,No,About Right,FALSE,Happy but Unwise
+5,100,32,Democrat,Somewhat Approve,Some college,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,30,Yes,Too Low,FALSE,Wise but Unhappy
+6,54,64,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,15,No,Too Low,TRUE,Wise but Unhappy
+7,83,61,Independent,Somewhat Approve,College degree,Unlikely,Real but not Caused by People,0,Strongly Agree,Strongly Agree,0,Yes,About Right,TRUE,Happy but Unwise
+8,114,64,Republican,Somewhat disapprove,College degree,Unlikely,Real and Caused by People,2,Somewhat Agree,Strongly Agree,40,No,About Right,TRUE,Wise but Unhappy
+9,90,64,Republican,Somewhat Approve,High school,Likely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,0,No,About Right,TRUE,Happy but Unwise
+10,5,68,Democrat,Somewhat disapprove,Some college,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,1,No,Too Low,TRUE,Wise but Unhappy
+11,57,63,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,0,No,Too Low,FALSE,Wise but Unhappy
+12,47,44,Independent,Neither approve nor disapprove,High school,Unlikely,Real and Caused by People,1,Strongly Disagree,Somewhat Agree,2,Yes,Too High,TRUE,Happy but Unwise
+13,39,57,Democrat,Somewhat Approve,College degree,Unlikely,Real and Caused by People,0,Strongly Disagree,Somewhat Agree,12,Yes,Too High,TRUE,Happy but Unwise
+14,5,62,Democrat,Strongly disapprove,College degree,Likely,Real and Caused by People,0,Strongly Agree,Strongly Agree,6,No,Too Low,TRUE,Wise but Unhappy
+15,84,62,Republican,Somewhat disapprove,College degree,Likely,Real and Caused by People,1,Somewhat Agree,Strongly Agree,6,No,Too Low,FALSE,Happy but Unwise
+16,104,46,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,24,No,Too Low,TRUE,Happy but Unwise
+17,8,60,Democrat,Strongly disapprove,Some college,Likely,Real and Caused by People,5,Strongly Agree,Strongly Agree,0,Yes,Too Low,FALSE,Happy but Unwise
+18,23,62,Democrat,Neither approve nor disapprove,High school,Likely,Real but not Caused by People,1,Strongly Disagree,Strongly Agree,40,No,Too High,TRUE,Happy but Unwise
+19,55,40,Republican,Somewhat Approve,College degree,Unlikely,Not Real At All,0,Somewhat Disagree,Strongly Agree,15,No,Too High,FALSE,Wise but Unhappy
+20,80,48,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,5,Yes,Too Low,TRUE,Happy but Unwise
+21,194,54,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,4,Strongly Agree,Strongly Agree,4,Yes,Too Low,TRUE,Happy but Unwise
+22,82,62,Republican,Strongly Approve,College degree,Unlikely,Not Real At All,0,Somewhat Agree,Somewhat Agree,0,No,About Right,TRUE,Happy but Unwise
+23,22,50,Democrat,Neither approve nor disapprove,High school,Likely,Real and Caused by People,1,Somewhat Agree,Somewhat Agree,6,Yes,Too Low,TRUE,Happy but Unwise
+24,54,59,Democrat,Somewhat Approve,Some college,Unlikely,Real and Caused by People,1,Somewhat Agree,Somewhat Disagree,25,Yes,About Right,TRUE,Wise but Unhappy
+25,79,30,Independent,Strongly Approve,College degree,Unlikely,Not Real At All,1,Strongly Agree,Strongly Agree,5,Yes,Too Low,FALSE,Happy but Unwise
+26,5,60,Democrat,Somewhat disapprove,Some college,Likely,Real and Caused by People,3,Strongly Agree,Somewhat Agree,2,No,Too Low,FALSE,Happy but Unwise
+27,60,70,Democrat,Strongly disapprove,College degree,Unlikely,Real but not Caused by People,5,Somewhat Agree,Strongly Agree,6,No,About Right,TRUE,Wise but Unhappy
+28,39,19,Independent,Somewhat Approve,High school,Unlikely,Real and Caused by People,2,Somewhat Agree,Somewhat Agree,3,Yes,Too Low,TRUE,Happy but Unwise
+29,58,61,Independent,Somewhat Approve,College degree,Likely,Real but not Caused by People,0,Somewhat Agree,Somewhat Agree,0,Yes,About Right,FALSE,Happy but Unwise
+30,54,57,Democrat,Somewhat disapprove,High school,Likely,Not Real At All,0,Somewhat Agree,Strongly Agree,0,No,About Right,TRUE,Wise but Unhappy
+31,73,36,Democrat,Neither approve nor disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,12,No,About Right,FALSE,Wise but Unhappy
+32,26,63,Democrat,Somewhat disapprove,High school,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,5,Yes,Too Low,TRUE,Wise but Unhappy
+33,48,63,Republican,Strongly Approve,College degree,Unlikely,Not Real At All,0,Somewhat Agree,Strongly Agree,30,No,About Right,TRUE,Happy but Unwise
+34,61,55,Independent,Strongly disapprove,High school,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,1,No,About Right,TRUE,Happy but Unwise
+35,67,56,Republican,Somewhat Approve,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Somewhat Agree,1,Yes,Too Low,FALSE,Wise but Unhappy
+36,58,54,Democrat,Somewhat Approve,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Somewhat Agree,0,Yes,About Right,FALSE,Happy but Unwise
+37,70,50,Independent,Strongly disapprove,College degree,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,30,Yes,Too High,TRUE,Happy but Unwise
+38,114,65,Independent,Somewhat disapprove,Graduate degree,Unlikely,Real but not Caused by People,5,Somewhat Agree,Strongly Agree,10,No,Too Low,TRUE,Happy but Unwise
+39,93,73,Democrat,Strongly disapprove,College degree,Likely,Real but not Caused by People,2,Strongly Agree,Somewhat Agree,200,Yes,Too Low,TRUE,Wise but Unhappy
+40,114,44,Independent,Strongly disapprove,Some college,Likely,Real but not Caused by People,3,Somewhat Agree,Strongly Agree,6,No,About Right,FALSE,Wise but Unhappy
+41,97,65,Republican,Strongly Approve,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,7,No,Too Low,FALSE,Happy but Unwise
+42,70,25,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,4,Somewhat Disagree,Somewhat Disagree,124,Yes,About Right,TRUE,Happy but Unwise
+43,103,53,Republican,Strongly disapprove,College degree,Unlikely,Real but not Caused by People,0,Somewhat Disagree,Somewhat Agree,1,No,Too High,TRUE,Happy but Unwise
+44,152,30,Independent,Neither approve nor disapprove,College degree,Unlikely,Real and Caused by People,0,Somewhat Disagree,Strongly Disagree,15,No,About Right,TRUE,Wise but Unhappy
+45,64,73,Independent,Strongly Approve,Some college,Unlikely,Not Real At All,0,Strongly Disagree,Strongly Agree,8,No,About Right,FALSE,Happy but Unwise
+46,109,56,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,10,No,Too Low,TRUE,Wise but Unhappy
+47,80,54,Independent,Strongly Approve,Graduate degree,Unlikely,Real but not Caused by People,0,Somewhat Disagree,Strongly Agree,5,No,Too High,TRUE,Happy but Unwise
+48,20,60,Republican,Somewhat disapprove,Other,Likely,Real but not Caused by People,2,Somewhat Agree,Somewhat Agree,0,Yes,About Right,TRUE,Wise but Unhappy
+49,52,19,Independent,Somewhat disapprove,Some college,Unlikely,Real and Caused by People,1,Strongly Agree,Somewhat Disagree,5,Yes,Too Low,TRUE,Wise but Unhappy
+50,56,35,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,50,Yes,Too Low,TRUE,Wise but Unhappy
+51,74,31,Republican,Somewhat Approve,College degree,Unlikely,Real but not Caused by People,1,Strongly Disagree,Somewhat Agree,10,No,Too High,TRUE,Happy but Unwise
+52,91,31,Independent,Neither approve nor disapprove,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,5,Yes,Too Low,FALSE,Happy but Unwise
+53,52,62,Independent,Somewhat disapprove,High school,Unlikely,Real and Caused by People,3,Somewhat Agree,Somewhat Agree,1,Yes,Too High,TRUE,Wise but Unhappy
+54,58,75,Republican,Strongly Approve,High school,Likely,Real but not Caused by People,1,Somewhat Agree,Somewhat Agree,20,No,About Right,TRUE,Wise but Unhappy
+55,159,66,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,30,No,About Right,FALSE,Wise but Unhappy
+56,161,58,Independent,Somewhat disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Somewhat Disagree,4,No,About Right,FALSE,Happy but Unwise
+57,76,47,Republican,Strongly disapprove,Some college,Unlikely,Real and Caused by People,4,Somewhat Agree,Somewhat Agree,20,Yes,Too Low,TRUE,Happy but Unwise
+58,51,18,Republican,Strongly Approve,High school,Unlikely,Not Real At All,2,Somewhat Agree,Strongly Agree,4,Yes,About Right,FALSE,Happy but Unwise
+59,47,34,Republican,Strongly Approve,High school,Likely,Not Real At All,5,Strongly Disagree,Strongly Disagree,1,Yes,Too High,TRUE,Wise but Unhappy
+60,53,63,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,4,Somewhat Agree,Strongly Agree,6,No,About Right,TRUE,Wise but Unhappy
+61,82,28,Republican,Strongly Approve,Some college,Unlikely,Real and Caused by People,2,Somewhat Agree,Somewhat Agree,0,No,About Right,TRUE,Happy but Unwise
+62,101,36,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,2,Strongly Agree,Somewhat Agree,8,Yes,Too Low,FALSE,Wise but Unhappy
+63,61,32,Independent,Somewhat Approve,High school,Unlikely,Real and Caused by People,4,Somewhat Agree,Strongly Agree,18,No,About Right,TRUE,Wise but Unhappy
+64,83,55,Independent,Somewhat Approve,Some college,Unlikely,Real and Caused by People,1,Somewhat Agree,Somewhat Disagree,0,Yes,About Right,TRUE,Happy but Unwise
+65,75,72,Republican,Strongly Approve,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Somewhat Agree,6,Yes,About Right,TRUE,Wise but Unhappy
+66,250,31,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,20,No,Too Low,FALSE,Wise but Unhappy
+67,61,41,Democrat,Strongly disapprove,High school,Unlikely,Real and Caused by People,2,Somewhat Agree,Somewhat Disagree,0,No,Too Low,TRUE,Happy but Unwise
+68,106,48,Republican,Strongly Approve,High school,Unlikely,Not Real At All,2,Somewhat Agree,Somewhat Agree,2,Yes,About Right,TRUE,Happy but Unwise
+69,61,86,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,2,No,Too Low,TRUE,Happy but Unwise
+70,124,53,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,50,No,Too Low,FALSE,Wise but Unhappy
+71,30,74,Independent,Somewhat Approve,High school,Likely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,50,No,About Right,TRUE,Happy but Unwise
+72,52,33,Independent,Strongly Approve,College degree,Unlikely,Not Real At All,2,Strongly Disagree,Strongly Agree,1000,Yes,Too High,TRUE,Happy but Unwise
+73,41,78,Republican,Somewhat Approve,Some college,Likely,Not Real At All,0,Somewhat Agree,Somewhat Agree,0,No,About Right,TRUE,Happy but Unwise
+74,106,45,Republican,Strongly Approve,College degree,Unlikely,Not Real At All,2,Somewhat Agree,Somewhat Agree,20,No,Too Low,FALSE,Happy but Unwise
+75,21,41,Democrat,Somewhat Approve,High school,Likely,Real and Caused by People,0,Somewhat Disagree,Somewhat Agree,1,No,About Right,FALSE,Happy but Unwise
+76,107,76,Independent,Strongly disapprove,College degree,Likely,Real and Caused by People,2,Strongly Agree,Strongly Agree,3,No,Too Low,FALSE,Wise but Unhappy
+77,53,65,Republican,Strongly Approve,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,3,No,About Right,TRUE,Wise but Unhappy
+78,26,48,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,2,Strongly Agree,Somewhat Agree,15,Yes,Too Low,FALSE,Happy but Unwise
+79,126,46,Independent,Neither approve nor disapprove,Some college,Unlikely,Real but not Caused by People,3,Strongly Agree,Strongly Agree,1,No,Too Low,FALSE,Wise but Unhappy
+80,179,50,Republican,Strongly Approve,Graduate degree,Unlikely,Not Real At All,5,Strongly Disagree,Strongly Agree,10,No,Too Low,FALSE,Happy but Unwise
+81,122,48,Republican,Strongly Approve,College degree,Unlikely,Not Real At All,2,Somewhat Disagree,Somewhat Agree,20,No,Too High,FALSE,Happy but Unwise
+82,113,54,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,65,Yes,Too Low,FALSE,Wise but Unhappy
+83,140,21,Independent,Somewhat disapprove,Some college,Unlikely,Real and Caused by People,3,Somewhat Agree,Somewhat Agree,3,No,Too Low,TRUE,Happy but Unwise
+84,207,48,Independent,Somewhat disapprove,Graduate degree,Unlikely,Real and Caused by People,1,Somewhat Disagree,Strongly Agree,150,No,About Right,FALSE,Happy but Unwise
+85,182,42,Independent,Somewhat disapprove,Graduate degree,Unlikely,Real and Caused by People,1,Somewhat Agree,Strongly Agree,12,Yes,Too Low,FALSE,Wise but Unhappy
+86,128,50,Independent,Strongly Approve,Some college,Likely,Real and Caused by People,3,Strongly Agree,Strongly Agree,5,Yes,Too Low,FALSE,Wise but Unhappy
+87,71,40,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,60,No,Too Low,FALSE,Wise but Unhappy
+88,70,52,Republican,Strongly Approve,Some college,Unlikely,Real and Caused by People,0,Strongly Disagree,Somewhat Agree,0,No,Too High,FALSE,Wise but Unhappy
+89,144,37,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,15,No,Too Low,FALSE,Wise but Unhappy
+90,179,45,Independent,Somewhat disapprove,College degree,Likely,Real and Caused by People,2,Somewhat Agree,Strongly Agree,1,Yes,Too Low,FALSE,Happy but Unwise
+91,37,27,Democrat,Neither approve nor disapprove,High school,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,3,No,About Right,TRUE,Happy but Unwise
+92,113,43,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Strongly Agree,Somewhat Agree,12,Yes,Too Low,FALSE,Wise but Unhappy
+93,60,28,Republican,Neither approve nor disapprove,Graduate degree,Unlikely,Real but not Caused by People,1,Somewhat Agree,Strongly Agree,16,No,Too Low,TRUE,Wise but Unhappy
+94,43,80,Democrat,Strongly disapprove,High school,Likely,Not Real At All,2,Strongly Agree,Strongly Agree,25,No,About Right,TRUE,Happy but Unwise
+95,150,68,Republican,Strongly Approve,Graduate degree,Unlikely,Real but not Caused by People,0,Somewhat Disagree,Somewhat Agree,3,No,Too High,FALSE,Happy but Unwise
+96,61,36,Independent,Somewhat disapprove,Graduate degree,Unlikely,Real and Caused by People,4,Somewhat Agree,Somewhat Disagree,12,No,Too Low,TRUE,Happy but Unwise
+97,121,53,Republican,Somewhat Approve,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,35,Yes,About Right,FALSE,Happy but Unwise
+98,64,38,Democrat,Somewhat disapprove,Other,Unlikely,Real and Caused by People,4,Somewhat Agree,Strongly Agree,10,Yes,Too High,TRUE,Wise but Unhappy
+99,110,37,Republican,Strongly Approve,College degree,Unlikely,Real but not Caused by People,1,Strongly Disagree,Somewhat Disagree,10,No,About Right,TRUE,Happy but Unwise
+100,93,42,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,4,Strongly Agree,Strongly Agree,20,Yes,Too Low,TRUE,Happy but Unwise
+101,68,24,Republican,Strongly Approve,Some college,Unlikely,Real and Caused by People,2,Neither Agree nor Disagree,Neither Agree nor Disagree,10,No,About Right,TRUE,Happy but Unwise
+102,36,50,Democrat,Strongly disapprove,College degree,Unlikely,Not Real At All,1,Strongly Disagree,Strongly Agree,2,Yes,Too Low,FALSE,Happy but Unwise
+103,114,53,Republican,Somewhat Approve,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,7,No,About Right,FALSE,Happy but Unwise
+104,161,30,Independent,Somewhat disapprove,Other,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,20,No,About Right,FALSE,Happy but Unwise
+105,93,20,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,10,Yes,About Right,FALSE,Happy but Unwise
+106,74,67,Republican,Strongly Approve,Some college,Unlikely,Not Real At All,0,Somewhat Agree,Somewhat Agree,4,No,About Right,TRUE,Wise but Unhappy
+107,77,18,Republican,Strongly Approve,High school,Unlikely,Real but not Caused by People,1,Somewhat Agree,Strongly Agree,3,Yes,About Right,FALSE,Wise but Unhappy
+108,124,34,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,60,No,Too Low,FALSE,Wise but Unhappy
+109,60,60,Democrat,Somewhat disapprove,High school,Likely,Real and Caused by People,1,Strongly Agree,Strongly Agree,20,No,About Right,TRUE,Happy but Unwise
+110,71,25,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,3,Strongly Agree,Strongly Agree,5,No,Too Low,FALSE,Wise but Unhappy
+111,48,56,Republican,Strongly Approve,Graduate degree,Unlikely,Real but not Caused by People,2,Strongly Disagree,Somewhat Disagree,4,Yes,Too High,FALSE,Wise but Unhappy
+112,58,50,Republican,Strongly Approve,High school,Unlikely,Not Real At All,0,Strongly Disagree,Somewhat Agree,1,No,Too High,FALSE,Happy but Unwise
+113,96,61,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,2,Yes,Too Low,TRUE,Wise but Unhappy
+114,52,34,Independent,Somewhat Approve,Some college,Unlikely,Real and Caused by People,3,Strongly Agree,Strongly Agree,0,Yes,Too Low,TRUE,Wise but Unhappy
+115,103,55,Republican,Strongly Approve,Graduate degree,Unlikely,Not Real At All,0,Somewhat Disagree,Somewhat Agree,5,No,Too High,FALSE,Happy but Unwise
+116,100,25,Independent,Strongly Approve,High school,Likely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,0,Yes,About Right,TRUE,Wise but Unhappy
+117,70,19,Republican,Strongly disapprove,Some college,Unlikely,Real and Caused by People,2,Somewhat Agree,Strongly Agree,2,Yes,About Right,TRUE,Happy but Unwise
+118,23,70,Independent,Somewhat Approve,Graduate degree,Unlikely,Not Real At All,1,Strongly Disagree,Strongly Agree,1,No,Too High,TRUE,Wise but Unhappy
+119,140,28,Independent,Somewhat disapprove,Some college,Likely,Real and Caused by People,0,Somewhat Agree,Somewhat Agree,1,Yes,About Right,TRUE,Happy but Unwise
+120,104,35,Independent,Somewhat Approve,Graduate degree,Unlikely,Real but not Caused by People,1,Somewhat Agree,Strongly Agree,10,Yes,Too Low,FALSE,Happy but Unwise
+121,142,27,Independent,Strongly disapprove,College degree,Likely,Real and Caused by People,0,Strongly Agree,Strongly Agree,8,No,Too High,FALSE,Happy but Unwise
+122,52,48,Independent,Strongly Approve,Some college,Unlikely,Not Real At All,0,Strongly Agree,Somewhat Agree,5,Yes,Too Low,TRUE,Happy but Unwise
+123,90,50,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,50,Yes,Too Low,TRUE,Wise but Unhappy
+124,152,30,Independent,Somewhat disapprove,Graduate degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,50,No,About Right,TRUE,Wise but Unhappy
+125,130,35,Democrat,Strongly disapprove,Other,Unlikely,Real and Caused by People,5,Strongly Agree,Strongly Agree,8,Yes,Too Low,FALSE,Happy but Unwise
+126,96,22,Democrat,Somewhat disapprove,College degree,Unlikely,Real and Caused by People,4,Strongly Agree,Strongly Agree,6,Yes,About Right,TRUE,Happy but Unwise
+127,159,40,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,20,Yes,Too Low,TRUE,Happy but Unwise
+128,34,70,Independent,Strongly Approve,High school,Unlikely,Real but not Caused by People,0,Somewhat Agree,Somewhat Agree,10,No,Too High,TRUE,Happy but Unwise
+129,163,46,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,3,Strongly Agree,Somewhat Agree,24,Yes,Too Low,TRUE,Wise but Unhappy
+130,144,42,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,1,Somewhat Agree,Strongly Agree,6,No,Too Low,TRUE,Wise but Unhappy
+131,106,36,Republican,Strongly Approve,College degree,Unlikely,Real but not Caused by People,4,Somewhat Agree,Neither Agree nor Disagree,15,No,Too Low,FALSE,Happy but Unwise
+132,88,66,Republican,Strongly disapprove,College degree,Likely,Real and Caused by People,0,Strongly Agree,Somewhat Agree,10,Yes,Too Low,TRUE,Wise but Unhappy
+133,39,71,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Strongly Disagree,Somewhat Agree,100,Yes,Too High,TRUE,Wise but Unhappy
+134,57,25,Independent,Strongly disapprove,Graduate degree,Likely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,5,No,Too High,TRUE,Happy but Unwise
+135,91,69,Republican,Strongly Approve,Some college,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,2,No,About Right,FALSE,Happy but Unwise
+136,65,29,Independent,Strongly disapprove,College degree,Likely,Real and Caused by People,2,Somewhat Agree,Strongly Agree,20,No,Too Low,TRUE,Wise but Unhappy
+137,57,60,Republican,Strongly Approve,College degree,Unlikely,Real and Caused by People,2,Somewhat Agree,Somewhat Agree,15,Yes,About Right,TRUE,Wise but Unhappy
+138,43,70,Democrat,Strongly disapprove,College degree,Likely,Real and Caused by People,0,Strongly Disagree,Somewhat Disagree,2,No,About Right,FALSE,Happy but Unwise
+139,101,45,Independent,Somewhat Approve,College degree,Unlikely,Real but not Caused by People,2,Somewhat Agree,Strongly Agree,2,No,Too Low,TRUE,Happy but Unwise
+140,152,30,Republican,Neither approve nor disapprove,College degree,Unlikely,Real but not Caused by People,3,Somewhat Agree,Strongly Agree,25,No,Too High,FALSE,Happy but Unwise
+141,35,63,Republican,Strongly Approve,Graduate degree,Likely,Real but not Caused by People,1,Strongly Disagree,Somewhat Agree,24,No,About Right,FALSE,Wise but Unhappy
+142,109,51,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,3,No,Too Low,TRUE,Wise but Unhappy
+143,87,56,Republican,Strongly Approve,High school,Likely,Real and Caused by People,0,Strongly Agree,Strongly Agree,3,No,About Right,TRUE,Happy but Unwise
+144,79,62,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,5,Yes,Too Low,FALSE,Happy but Unwise
+145,73,46,Democrat,Somewhat Approve,Some college,Unlikely,Real and Caused by People,0,Strongly Agree,Somewhat Disagree,0,Yes,Too Low,TRUE,Happy but Unwise
+146,89,83,Republican,Strongly Approve,High school,Unlikely,Not Real At All,0,Somewhat Agree,Strongly Agree,12,No,About Right,TRUE,Wise but Unhappy
+147,250,48,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,3,Strongly Agree,Strongly Agree,3,No,Too Low,FALSE,Happy but Unwise
+148,93,54,Independent,Strongly disapprove,Some college,Likely,Real and Caused by People,2,Somewhat Agree,Strongly Agree,15,Yes,Too Low,FALSE,Wise but Unhappy
+149,21,64,Democrat,Strongly disapprove,College degree,Unlikely,Real but not Caused by People,3,Strongly Agree,Strongly Agree,0,No,About Right,TRUE,Wise but Unhappy
+150,80,62,Republican,Strongly Approve,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,125,No,Too Low,TRUE,Wise but Unhappy
+151,30,68,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,3,No,Too Low,TRUE,Wise but Unhappy
+152,73,40,Democrat,Strongly disapprove,College degree,Unlikely,Real but not Caused by People,0,Strongly Agree,Strongly Disagree,10,No,Too Low,TRUE,Wise but Unhappy
+153,133,53,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,3,No,Too Low,FALSE,Wise but Unhappy
+154,74,85,Democrat,Strongly disapprove,Graduate degree,Unlikely,Not Real At All,0,Somewhat Agree,Somewhat Agree,5,No,Too High,TRUE,Happy but Unwise
+155,67,55,Democrat,Somewhat Approve,Some college,Unlikely,Real but not Caused by People,2,Somewhat Agree,Strongly Agree,0,No,Too Low,TRUE,Happy but Unwise
+156,159,52,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,3,Yes,Too Low,FALSE,Happy but Unwise
+157,101,68,Republican,Strongly Approve,College degree,Unlikely,Real but not Caused by People,2,Strongly Agree,Strongly Agree,5,No,Too Low,FALSE,Happy but Unwise
+158,109,59,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,20,No,Too Low,TRUE,Wise but Unhappy
+159,62,25,Democrat,Strongly disapprove,High school,Likely,Real and Caused by People,3,Strongly Agree,Somewhat Agree,50,Yes,About Right,TRUE,Wise but Unhappy
+160,114,57,Republican,Somewhat Approve,Some college,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,60,Yes,Too Low,TRUE,Happy but Unwise
+161,132,72,Independent,Strongly Approve,High school,Unlikely,Real and Caused by People,0,Strongly Disagree,Strongly Agree,20,No,About Right,FALSE,Happy but Unwise
+162,79,66,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,2,Strongly Agree,Somewhat Agree,3,Yes,About Right,TRUE,Wise but Unhappy
+163,103,49,Independent,Strongly disapprove,Some college,Likely,Real and Caused by People,1,Strongly Agree,Strongly Agree,20,No,Too Low,FALSE,Wise but Unhappy
+164,88,44,Independent,Neither approve nor disapprove,High school,Unlikely,Real and Caused by People,5,Neither Agree nor Disagree,Somewhat Agree,3,No,Too Low,FALSE,Wise but Unhappy
+165,51,58,Republican,Strongly Approve,High school,Unlikely,Not Real At All,0,Somewhat Disagree,Strongly Agree,0,No,About Right,FALSE,Happy but Unwise
+166,47,55,Democrat,Strongly disapprove,High school,Likely,Real and Caused by People,3,Strongly Agree,Strongly Agree,15,No,Too Low,TRUE,Happy but Unwise
+167,83,42,Republican,Somewhat Approve,High school,Unlikely,Not Real At All,2,Strongly Agree,Strongly Agree,2,Yes,About Right,TRUE,Happy but Unwise
+168,202,34,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,30,No,Too Low,FALSE,Happy but Unwise
+169,47,47,Independent,Strongly Approve,High school,Unlikely,Real and Caused by People,3,Strongly Disagree,Somewhat Agree,0,No,Too High,TRUE,Happy but Unwise
+170,96,38,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,2,Strongly Agree,Somewhat Agree,0,Yes,About Right,FALSE,Wise but Unhappy
+171,67,31,Democrat,Somewhat disapprove,High school,Unlikely,Real but not Caused by People,3,Somewhat Disagree,Strongly Agree,2,Yes,Too Low,TRUE,Happy but Unwise
+172,40,49,Democrat,Strongly Approve,Some college,Likely,Real but not Caused by People,0,Strongly Agree,Somewhat Disagree,10,No,About Right,TRUE,Wise but Unhappy
+173,58,52,Independent,Neither approve nor disapprove,Some college,Likely,Not Real At All,5,Strongly Disagree,Somewhat Agree,2,No,Too High,TRUE,Happy but Unwise
+174,113,63,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,50,No,Too Low,FALSE,Wise but Unhappy
+175,43,26,Democrat,Somewhat disapprove,High school,Likely,Real and Caused by People,2,Somewhat Agree,Strongly Agree,50,Yes,About Right,TRUE,Happy but Unwise
+176,144,43,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,20,No,Too Low,FALSE,Happy but Unwise
+177,42,19,Independent,Somewhat disapprove,Some college,Unlikely,Real and Caused by People,1,Somewhat Agree,Strongly Agree,5,No,Too Low,TRUE,Wise but Unhappy
+178,73,22,Republican,Neither approve nor disapprove,Graduate degree,Unlikely,Not Real At All,0,Strongly Disagree,Strongly Disagree,0,No,Too High,TRUE,Wise but Unhappy
+179,152,39,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,3,Strongly Agree,Somewhat Agree,5,No,About Right,FALSE,Wise but Unhappy
+180,72,65,Independent,Somewhat Approve,Some college,Unlikely,Not Real At All,0,Strongly Disagree,Somewhat Agree,0,Yes,About Right,TRUE,Wise but Unhappy
+181,112,35,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real but not Caused by People,0,Somewhat Agree,Somewhat Disagree,8,Yes,Too Low,TRUE,Happy but Unwise
+182,61,40,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,10,No,Too High,TRUE,Happy but Unwise
+183,77,18,Democrat,Somewhat disapprove,Some college,Unlikely,Real but not Caused by People,2,Somewhat Agree,Strongly Agree,25,No,About Right,FALSE,Wise but Unhappy
+184,112,59,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,2,No,Too Low,FALSE,Happy but Unwise
+185,71,58,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,3,No,Too Low,TRUE,Wise but Unhappy
+186,52,61,Independent,Somewhat disapprove,Some college,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,2,Yes,Too High,TRUE,Wise but Unhappy
+187,22,64,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,2,No,About Right,TRUE,Wise but Unhappy
+188,136,64,Republican,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,5,No,Too Low,TRUE,Wise but Unhappy
+189,167,65,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,12,No,Too Low,TRUE,Wise but Unhappy
+190,76,60,Independent,Strongly Approve,Graduate degree,Unlikely,Not Real At All,0,Somewhat Disagree,Somewhat Agree,150,Yes,Too High,FALSE,Wise but Unhappy
+191,32,60,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,6,No,About Right,TRUE,Wise but Unhappy
+192,110,44,Republican,Somewhat Approve,College degree,Unlikely,Real and Caused by People,0,Strongly Disagree,Strongly Agree,3,No,About Right,TRUE,Happy but Unwise
+193,80,22,Independent,Somewhat Approve,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,20,Yes,About Right,TRUE,Happy but Unwise
+194,114,56,Independent,Strongly Approve,Graduate degree,Unlikely,Real but not Caused by People,1,Somewhat Agree,Strongly Agree,2,No,About Right,FALSE,Wise but Unhappy
+195,236,52,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,6,No,Too Low,FALSE,Wise but Unhappy
+196,48,64,Democrat,Strongly disapprove,High school,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,5,No,About Right,TRUE,Wise but Unhappy
+197,25,45,Democrat,Strongly disapprove,High school,Unlikely,Real and Caused by People,0,Somewhat Disagree,Strongly Disagree,2,Yes,Too Low,TRUE,Wise but Unhappy
+198,143,52,Independent,Strongly Approve,Graduate degree,Likely,Real and Caused by People,5,Strongly Agree,Strongly Agree,20,No,Too Low,TRUE,Wise but Unhappy
+199,17,63,Independent,Strongly disapprove,Some college,Likely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,10,No,About Right,TRUE,Happy but Unwise
+200,138,49,Democrat,Somewhat Approve,College degree,Unlikely,Real but not Caused by People,0,Strongly Agree,Strongly Agree,3,No,Too Low,TRUE,Wise but Unhappy
+201,100,19,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,4,No,Too Low,FALSE,Wise but Unhappy
+202,104,70,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,5,Strongly Agree,Strongly Agree,60,Yes,Too Low,FALSE,Wise but Unhappy
+203,85,60,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,50,No,Too High,TRUE,Wise but Unhappy
+204,202,40,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,15,No,Too Low,FALSE,Wise but Unhappy
+205,41,41,Independent,Neither approve nor disapprove,College degree,Unlikely,Real and Caused by People,5,Strongly Agree,Strongly Agree,7,Yes,Too Low,TRUE,Wise but Unhappy
+206,65,50,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,2,Somewhat Agree,Strongly Agree,0,No,Too Low,TRUE,Happy but Unwise
+207,147,64,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,3,Somewhat Agree,Strongly Agree,3,No,Too Low,TRUE,Wise but Unhappy
+208,19,83,Republican,Strongly Approve,High school,Likely,Real and Caused by People,4,Somewhat Agree,Strongly Agree,3,Yes,Too Low,TRUE,Happy but Unwise
+209,97,53,Independent,Strongly Approve,College degree,Unlikely,Real and Caused by People,5,Strongly Disagree,Strongly Disagree,1,Yes,About Right,FALSE,Happy but Unwise
+210,105,68,Independent,Strongly disapprove,Graduate degree,Unlikely,Real but not Caused by People,3,Somewhat Disagree,Strongly Disagree,4,Yes,About Right,FALSE,Wise but Unhappy
+211,132,60,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,6,No,About Right,TRUE,Wise but Unhappy
+212,153,58,Republican,Strongly Approve,Graduate degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Somewhat Disagree,10,Yes,About Right,TRUE,Happy but Unwise
+213,17,53,Democrat,Somewhat disapprove,Some college,Likely,Real and Caused by People,2,Somewhat Disagree,Somewhat Agree,2,No,Too Low,FALSE,Happy but Unwise
+214,45,26,Independent,Somewhat disapprove,High school,Likely,Not Real At All,3,Somewhat Agree,Strongly Agree,3,No,About Right,FALSE,Happy but Unwise
+215,35,58,Democrat,Strongly disapprove,High school,Likely,Not Real At All,0,Somewhat Agree,Strongly Disagree,0,Yes,Too High,FALSE,Wise but Unhappy
+216,90,37,Independent,Strongly disapprove,College degree,Unlikely,Real but not Caused by People,0,Strongly Agree,Strongly Agree,120,No,Too Low,TRUE,Happy but Unwise
+217,62,52,Independent,Strongly Approve,Graduate degree,Unlikely,Not Real At All,1,Somewhat Disagree,Strongly Agree,4,No,About Right,TRUE,Wise but Unhappy
+218,71,56,Democrat,Strongly disapprove,High school,Likely,Real and Caused by People,2,Strongly Agree,Strongly Agree,3,No,Too Low,TRUE,Happy but Unwise
+219,118,50,Republican,Strongly Approve,Some college,Unlikely,Not Real At All,4,Somewhat Disagree,Strongly Agree,0,No,Too High,FALSE,Happy but Unwise
+220,159,47,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,4,Yes,Too Low,FALSE,Happy but Unwise
+221,5,55,Republican,Strongly Approve,High school,Unlikely,Real but not Caused by People,4,Somewhat Agree,Strongly Agree,5,Yes,Too Low,TRUE,Happy but Unwise
+222,436,55,Independent,Somewhat disapprove,College degree,Unlikely,Real and Caused by People,2,Somewhat Agree,Strongly Agree,3,Yes,Too Low,TRUE,Happy but Unwise
+223,97,61,Republican,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,10,No,Too Low,FALSE,Happy but Unwise
+224,22,64,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,1,Somewhat Agree,Strongly Agree,4,No,Too Low,FALSE,Happy but Unwise
+225,19,54,Republican,Strongly Approve,Some college,Likely,Real and Caused by People,1,Somewhat Disagree,Strongly Disagree,15,Yes,Too Low,TRUE,Happy but Unwise
+226,200,52,Democrat,Somewhat disapprove,Some college,Likely,Real but not Caused by People,2,Strongly Agree,Strongly Agree,200,Yes,Too Low,FALSE,Wise but Unhappy
+227,51,71,Republican,Strongly Approve,Some college,Unlikely,Real but not Caused by People,0,Strongly Disagree,Somewhat Disagree,16,Yes,Too High,FALSE,Wise but Unhappy
+228,7,58,Republican,Strongly Approve,High school,Unlikely,Real but not Caused by People,0,Somewhat Disagree,Somewhat Agree,3,No,Too High,TRUE,Wise but Unhappy
+229,18,40,Democrat,Strongly disapprove,Some college,Unlikely,Not Real At All,1,Strongly Disagree,Strongly Disagree,100,No,Too High,TRUE,Happy but Unwise
+230,56,59,Democrat,Strongly disapprove,High school,Likely,Real and Caused by People,0,Strongly Agree,Strongly Agree,0,No,Too Low,TRUE,Wise but Unhappy
+231,140,42,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,225,No,Too Low,FALSE,Wise but Unhappy
+232,31,38,Independent,Somewhat Approve,College degree,Unlikely,Real and Caused by People,1,Somewhat Agree,Strongly Agree,20,Yes,Too Low,TRUE,Wise but Unhappy
+233,93,64,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,5,Yes,About Right,FALSE,Happy but Unwise
+234,32,59,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,6,No,Too Low,FALSE,Wise but Unhappy
+235,59,29,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,3,Yes,Too Low,FALSE,Happy but Unwise
+236,150,65,Republican,Strongly disapprove,High school,Unlikely,Not Real At All,0,Somewhat Disagree,Somewhat Agree,2,No,Too High,TRUE,Happy but Unwise
+237,132,52,Republican,Strongly Approve,Some college,Unlikely,Not Real At All,0,Somewhat Agree,Strongly Agree,2,Yes,Too Low,TRUE,Happy but Unwise
+238,172,40,Republican,Strongly Approve,High school,Unlikely,Not Real At All,2,Strongly Disagree,Somewhat Agree,13,No,Too High,TRUE,Wise but Unhappy
+239,25,52,Independent,Strongly disapprove,High school,Likely,Not Real At All,0,Somewhat Disagree,Strongly Agree,0,No,Too Low,TRUE,Happy but Unwise
+240,31,56,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,3,Strongly Agree,Strongly Agree,0,Yes,Too Low,TRUE,Happy but Unwise
+241,54,60,Republican,Somewhat Approve,High school,Unlikely,Not Real At All,0,Somewhat Disagree,Strongly Agree,0,No,About Right,TRUE,Happy but Unwise
+242,199,63,Democrat,Strongly disapprove,Graduate degree,Likely,Real but not Caused by People,1,Strongly Agree,Strongly Agree,12,No,Too Low,FALSE,Wise but Unhappy
+243,55,59,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,3,Yes,Too Low,TRUE,Wise but Unhappy
+244,44,56,Republican,Somewhat Approve,Graduate degree,Unlikely,Not Real At All,0,Strongly Disagree,Strongly Disagree,20,No,Too High,FALSE,Wise but Unhappy
+245,51,61,Republican,Strongly Approve,Some college,Unlikely,Real but not Caused by People,2,Neither Agree nor Disagree,Somewhat Agree,17,No,About Right,TRUE,Happy but Unwise
+246,98,57,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,2,No,Too Low,FALSE,Wise but Unhappy
+247,39,57,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,1,Strongly Agree,Somewhat Agree,15,No,Too Low,TRUE,Wise but Unhappy
+248,26,49,Independent,Somewhat Approve,College degree,Unlikely,Not Real At All,0,Somewhat Agree,Strongly Agree,0,No,About Right,FALSE,Happy but Unwise
+249,70,72,Republican,Strongly Approve,High school,Unlikely,Not Real At All,0,Somewhat Disagree,Somewhat Agree,2,No,About Right,FALSE,Happy but Unwise
+250,174,68,Democrat,Strongly disapprove,Graduate degree,Likely,Real and Caused by People,0,Strongly Agree,Strongly Agree,0,No,About Right,TRUE,Happy but Unwise
+251,122,60,Republican,Strongly Approve,Graduate degree,Unlikely,Not Real At All,0,Somewhat Disagree,Strongly Agree,10,No,Too Low,FALSE,Happy but Unwise
+252,163,63,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,2,Strongly Agree,Somewhat Agree,30,No,About Right,FALSE,Happy but Unwise
+253,74,46,Republican,Strongly Approve,Some college,Unlikely,Not Real At All,1,Somewhat Disagree,Strongly Agree,25,No,Too High,FALSE,Happy but Unwise
+254,146,39,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,2,Somewhat Disagree,Somewhat Disagree,1000,Yes,Too High,TRUE,Wise but Unhappy
+255,44,50,Independent,Somewhat Approve,High school,Unlikely,Real and Caused by People,0,Somewhat Agree,Somewhat Agree,0,No,Too High,FALSE,Wise but Unhappy
+256,124,88,Independent,Neither approve nor disapprove,College degree,Likely,Real but not Caused by People,0,Strongly Agree,Strongly Agree,0,No,About Right,TRUE,Wise but Unhappy
+257,101,31,Republican,Somewhat Approve,College degree,Unlikely,Real but not Caused by People,1,Somewhat Agree,Strongly Agree,4,No,Too Low,FALSE,Happy but Unwise
+258,176,45,Democrat,Neither approve nor disapprove,High school,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,0,No,Too Low,FALSE,Wise but Unhappy
+259,62,30,Democrat,Strongly Approve,High school,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,2,Yes,Too High,TRUE,Happy but Unwise
+260,71,64,Republican,Strongly Approve,High school,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,20,No,About Right,TRUE,Wise but Unhappy
+261,44,32,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,2,Strongly Agree,Somewhat Agree,30,No,Too Low,TRUE,Wise but Unhappy
+262,132,42,Independent,Strongly Approve,College degree,Unlikely,Real but not Caused by People,0,Somewhat Agree,Somewhat Agree,3,No,About Right,TRUE,Happy but Unwise
+263,71,70,Independent,Strongly Approve,Some college,Unlikely,Not Real At All,0,Somewhat Agree,Strongly Agree,4,No,About Right,FALSE,Happy but Unwise
+264,93,69,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,0,No,Too Low,TRUE,Wise but Unhappy
+265,48,51,Independent,Strongly Approve,Some college,Unlikely,Real but not Caused by People,4,Somewhat Agree,Strongly Agree,0,Yes,About Right,TRUE,Wise but Unhappy
+266,48,64,Independent,Strongly Approve,Some college,Unlikely,Not Real At All,0,Strongly Disagree,Neither Agree nor Disagree,3,Yes,Too High,TRUE,Wise but Unhappy
+267,73,49,Republican,Strongly Approve,Graduate degree,Unlikely,Real but not Caused by People,0,Somewhat Agree,Somewhat Disagree,3,No,About Right,TRUE,Happy but Unwise
+268,79,34,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,3,Somewhat Disagree,Somewhat Agree,8,Yes,Too High,TRUE,Happy but Unwise
+269,103,50,Republican,Neither approve nor disapprove,College degree,Unlikely,Not Real At All,0,Somewhat Agree,Somewhat Agree,50,No,Too High,FALSE,Wise but Unhappy
+270,169,65,Independent,Strongly Approve,Graduate degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Somewhat Agree,5,No,Too Low,TRUE,Wise but Unhappy
+271,104,74,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,20,No,Too Low,TRUE,Wise but Unhappy
+272,46,49,Republican,Strongly Approve,Some college,Unlikely,Real but not Caused by People,0,Somewhat Agree,Somewhat Agree,1,No,About Right,TRUE,Happy but Unwise
+273,103,25,Republican,Strongly disapprove,Some college,Unlikely,Not Real At All,5,Somewhat Disagree,Somewhat Disagree,0,Yes,Too High,TRUE,Happy but Unwise
+274,71,22,Democrat,Strongly disapprove,Graduate degree,Likely,Real and Caused by People,0,Somewhat Disagree,Strongly Disagree,40,No,About Right,FALSE,Wise but Unhappy
+275,45,67,Democrat,Somewhat disapprove,High school,Likely,Real and Caused by People,3,Strongly Agree,Strongly Agree,50,No,About Right,FALSE,Happy but Unwise
+276,109,25,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,5,No,Too Low,TRUE,Wise but Unhappy
+277,135,76,Independent,Strongly disapprove,Other,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,0,No,Too Low,TRUE,Wise but Unhappy
+278,71,30,Independent,Somewhat Approve,Some college,Unlikely,Real and Caused by People,3,Somewhat Agree,Strongly Agree,0,No,About Right,FALSE,Happy but Unwise
+279,144,21,Independent,Somewhat disapprove,College degree,Unlikely,Real and Caused by People,2,Somewhat Disagree,Strongly Agree,60,No,Too Low,TRUE,Wise but Unhappy
+280,75,38,Republican,Strongly Approve,College degree,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,13,No,About Right,TRUE,Wise but Unhappy
+281,100,59,Republican,Somewhat Approve,Graduate degree,Unlikely,Real and Caused by People,1,Somewhat Disagree,Strongly Agree,3,Yes,About Right,FALSE,Happy but Unwise
+282,90,52,Republican,Strongly Approve,High school,Unlikely,Not Real At All,3,Strongly Disagree,Strongly Agree,25,Yes,About Right,TRUE,Wise but Unhappy
+283,74,21,Democrat,Strongly disapprove,Some college,Likely,Real and Caused by People,2,Neither Agree nor Disagree,Neither Agree nor Disagree,0,No,About Right,FALSE,Happy but Unwise
+284,135,38,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,0,No,Too Low,TRUE,Wise but Unhappy
+285,126,53,Independent,Somewhat Approve,Some college,Unlikely,Real and Caused by People,2,Somewhat Agree,Strongly Agree,3,No,Too Low,FALSE,Wise but Unhappy
+286,74,51,Independent,Somewhat disapprove,College degree,Unlikely,Real and Caused by People,2,Somewhat Agree,Strongly Agree,2,No,About Right,FALSE,Happy but Unwise
+287,64,45,Independent,Neither approve nor disapprove,Some college,Unlikely,Not Real At All,0,Neither Agree nor Disagree,Strongly Agree,28,No,Too High,TRUE,Happy but Unwise
+288,98,40,Democrat,Somewhat disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,5,No,Too Low,TRUE,Happy but Unwise
+289,83,70,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,3,Somewhat Agree,Somewhat Disagree,1,No,About Right,TRUE,Wise but Unhappy
+290,124,58,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,3,No,Too Low,FALSE,Wise but Unhappy
+291,92,42,Independent,Somewhat disapprove,College degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,5,No,Too Low,TRUE,Happy but Unwise
+292,92,36,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,1,Somewhat Agree,Somewhat Agree,3,Yes,Too High,FALSE,Wise but Unhappy
+293,48,40,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,100,No,Too Low,TRUE,Happy but Unwise
+294,74,24,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,2,Somewhat Agree,Strongly Agree,10,Yes,Too Low,FALSE,Happy but Unwise
+295,135,75,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,6,No,Too Low,FALSE,Wise but Unhappy
+296,73,68,Republican,Somewhat Approve,Some college,Likely,Real but not Caused by People,0,Somewhat Agree,Strongly Disagree,250,No,About Right,TRUE,Happy but Unwise
+297,132,57,Independent,Strongly Approve,College degree,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,4,No,About Right,FALSE,Happy but Unwise
+298,48,64,Republican,Strongly Approve,Graduate degree,Unlikely,Not Real At All,3,Somewhat Agree,Somewhat Agree,0,Yes,About Right,FALSE,Wise but Unhappy
+299,92,56,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,12,Yes,Too Low,FALSE,Wise but Unhappy
+300,25,33,Democrat,Somewhat disapprove,Graduate degree,Unlikely,Real but not Caused by People,1,Neither Agree nor Disagree,Strongly Agree,12,No,About Right,TRUE,Happy but Unwise
+301,22,40,Independent,Somewhat Approve,Some college,Unlikely,Real and Caused by People,5,Strongly Agree,Strongly Agree,5,Yes,Too Low,TRUE,Happy but Unwise
+302,57,57,Republican,Strongly Approve,Some college,Unlikely,Real but not Caused by People,1,Somewhat Agree,Strongly Agree,56,Yes,Too High,FALSE,Happy but Unwise
+303,170,63,Independent,Somewhat disapprove,College degree,Unlikely,Real but not Caused by People,0,Somewhat Disagree,Somewhat Agree,3,No,About Right,TRUE,Wise but Unhappy
+304,92,57,Independent,Somewhat Approve,Some college,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,52,No,Too Low,TRUE,Happy but Unwise
+305,91,48,Independent,Somewhat Approve,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,12,Yes,About Right,FALSE,Wise but Unhappy
+306,10,55,Independent,Neither approve nor disapprove,College degree,Unlikely,Real and Caused by People,4,Somewhat Agree,Somewhat Agree,6,No,Too Low,TRUE,Happy but Unwise
+307,48,60,Independent,Strongly Approve,Some college,Unlikely,Not Real At All,0,Somewhat Agree,Strongly Agree,40,Yes,Too High,TRUE,Wise but Unhappy
+308,105,59,Independent,Strongly Approve,High school,Likely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,0,Yes,About Right,TRUE,Happy but Unwise
+309,52,51,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,4,Yes,Too Low,TRUE,Wise but Unhappy
+310,90,64,Republican,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,3,Yes,Too Low,TRUE,Wise but Unhappy
+311,39,75,Democrat,Strongly disapprove,High school,Likely,Real and Caused by People,0,Strongly Disagree,Strongly Disagree,0,No,Too High,TRUE,Happy but Unwise
+312,120,53,Democrat,Strongly disapprove,High school,Likely,Real and Caused by People,0,Strongly Agree,Strongly Agree,2,Yes,About Right,TRUE,Happy but Unwise
+313,34,65,Republican,Strongly Approve,High school,Unlikely,Real but not Caused by People,1,Somewhat Disagree,Strongly Agree,0,No,Too High,TRUE,Happy but Unwise
+314,180,40,Republican,Strongly Approve,College degree,Likely,Not Real At All,0,Somewhat Disagree,Somewhat Agree,0,No,Too High,TRUE,Wise but Unhappy
+315,150,45,Republican,Somewhat Approve,College degree,Unlikely,Not Real At All,0,Somewhat Disagree,Strongly Agree,0,No,Too Low,TRUE,Happy but Unwise
+316,164,26,Democrat,Strongly disapprove,High school,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,15,No,Too Low,FALSE,Wise but Unhappy
+317,83,64,Independent,Somewhat Approve,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,4,No,About Right,TRUE,Happy but Unwise
+318,386,36,Independent,Strongly Approve,Graduate degree,Unlikely,Not Real At All,0,Somewhat Disagree,Strongly Agree,5,No,About Right,FALSE,Happy but Unwise
+319,79,60,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,5,Strongly Agree,Somewhat Agree,3,Yes,About Right,TRUE,Happy but Unwise
+320,32,64,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,6,No,Too Low,FALSE,Happy but Unwise
+321,327,55,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,2,No,Too Low,TRUE,Wise but Unhappy
+322,62,62,Republican,Strongly Approve,College degree,Unlikely,Real but not Caused by People,0,Somewhat Disagree,Strongly Agree,5,No,Too Low,TRUE,Wise but Unhappy
+323,180,64,Republican,Somewhat Approve,Some college,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,1,Yes,About Right,TRUE,Happy but Unwise
+324,70,49,Independent,Strongly disapprove,Some college,Unlikely,Real but not Caused by People,4,Strongly Agree,Strongly Agree,0,Yes,About Right,TRUE,Happy but Unwise
+325,103,58,Republican,Strongly Approve,Some college,Unlikely,Not Real At All,0,Somewhat Disagree,Strongly Disagree,50,Yes,About Right,TRUE,Wise but Unhappy
+326,20,60,Republican,Strongly Approve,High school,Likely,Real and Caused by People,4,Somewhat Agree,Strongly Agree,0,Yes,About Right,TRUE,Happy but Unwise
+327,57,47,Independent,Somewhat Approve,Graduate degree,Likely,Real and Caused by People,1,Strongly Agree,Strongly Agree,5,No,Too Low,FALSE,Happy but Unwise
+328,90,55,Republican,Strongly Approve,Graduate degree,Unlikely,Not Real At All,2,Somewhat Disagree,Somewhat Disagree,8,No,About Right,FALSE,Happy but Unwise
+329,78,58,Democrat,Strongly disapprove,Other,Unlikely,Real and Caused by People,3,Strongly Disagree,Somewhat Agree,120,No,Too Low,FALSE,Wise but Unhappy
+330,132,61,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Somewhat Agree,6,No,Too Low,FALSE,Wise but Unhappy
+331,73,61,Republican,Neither approve nor disapprove,Graduate degree,Unlikely,Real and Caused by People,3,Strongly Agree,Strongly Agree,20,No,Too High,FALSE,Wise but Unhappy
+332,42,57,Republican,Somewhat Approve,Graduate degree,Unlikely,Not Real At All,0,Somewhat Agree,Strongly Agree,30,Yes,About Right,TRUE,Happy but Unwise
+333,21,69,Democrat,Strongly disapprove,High school,Likely,Real but not Caused by People,0,Somewhat Disagree,Somewhat Disagree,2,No,About Right,FALSE,Happy but Unwise
+334,163,58,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,12,No,Too Low,TRUE,Wise but Unhappy
+335,25,63,Independent,Strongly Approve,High school,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,4,Yes,Too Low,TRUE,Wise but Unhappy
+336,92,66,Republican,Strongly Approve,High school,Likely,Not Real At All,3,Strongly Disagree,Strongly Disagree,2,Yes,Too High,TRUE,Happy but Unwise
+337,88,44,Independent,Strongly disapprove,High school,Unlikely,Real but not Caused by People,5,Strongly Agree,Strongly Agree,0,Yes,Too Low,TRUE,Happy but Unwise
+338,22,70,Independent,Somewhat Approve,Graduate degree,Unlikely,Not Real At All,0,Strongly Agree,Strongly Agree,6,No,About Right,TRUE,Wise but Unhappy
+339,43,63,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Somewhat Disagree,5,No,About Right,FALSE,Happy but Unwise
+340,90,60,Republican,Strongly Approve,College degree,Unlikely,Not Real At All,2,Strongly Disagree,Somewhat Agree,15,No,About Right,TRUE,Wise but Unhappy
+341,47,60,Independent,Strongly disapprove,High school,Unlikely,Real and Caused by People,2,Somewhat Disagree,Strongly Agree,6,Yes,Too Low,FALSE,Happy but Unwise
+342,120,52,Independent,Somewhat Approve,Graduate degree,Unlikely,Real but not Caused by People,3,Strongly Disagree,Somewhat Agree,8,No,About Right,TRUE,Wise but Unhappy
+343,10,38,Independent,Strongly Approve,High school,Likely,Real and Caused by People,0,Somewhat Disagree,Strongly Agree,4,Yes,Too Low,TRUE,Happy but Unwise
+344,10,61,Independent,Strongly disapprove,Some college,Likely,Real and Caused by People,4,Somewhat Disagree,Strongly Disagree,10,Yes,Too High,FALSE,Happy but Unwise
+345,55,62,Independent,Strongly Approve,High school,Likely,Real and Caused by People,4,Somewhat Agree,Somewhat Agree,10,No,About Right,TRUE,Happy but Unwise
+346,113,40,Independent,Strongly Approve,Graduate degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,0,No,About Right,FALSE,Happy but Unwise
+347,137,40,Republican,Strongly Approve,College degree,Unlikely,Real and Caused by People,0,Strongly Disagree,Strongly Agree,15,Yes,About Right,FALSE,Wise but Unhappy
+348,9,61,Republican,Somewhat Approve,College degree,Unlikely,Real but not Caused by People,3,Somewhat Agree,Strongly Agree,25,Yes,Too Low,TRUE,Wise but Unhappy
+349,37,68,Democrat,Strongly disapprove,High school,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,1,No,About Right,TRUE,Happy but Unwise
+350,39,32,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,1,Somewhat Agree,Strongly Agree,30,No,Too Low,FALSE,Happy but Unwise
+351,13,55,Republican,Strongly Approve,Some college,Unlikely,Real but not Caused by People,2,Somewhat Agree,Somewhat Agree,0,Yes,About Right,TRUE,Happy but Unwise
+352,47,58,Republican,Somewhat Approve,High school,Likely,Real and Caused by People,0,Somewhat Disagree,Somewhat Disagree,0,No,About Right,TRUE,Happy but Unwise
+353,72,60,Independent,Strongly Approve,Some college,Unlikely,Not Real At All,1,Somewhat Disagree,Somewhat Agree,40,No,About Right,FALSE,Wise but Unhappy
+354,37,58,Independent,Strongly Approve,College degree,Likely,Not Real At All,3,Somewhat Agree,Strongly Agree,60,Yes,About Right,TRUE,Happy but Unwise
+355,69,55,Independent,Strongly Approve,Some college,Unlikely,Not Real At All,4,Strongly Disagree,Strongly Agree,7,No,Too High,TRUE,Wise but Unhappy
+356,208,55,Independent,Strongly Approve,Graduate degree,Unlikely,Not Real At All,4,Somewhat Disagree,Strongly Agree,10,No,About Right,TRUE,Happy but Unwise
+357,75,59,Republican,Strongly Approve,Some college,Unlikely,Real and Caused by People,4,Strongly Agree,Strongly Agree,5,Yes,About Right,TRUE,Wise but Unhappy
+358,30,57,Independent,Somewhat disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,17,No,Too Low,TRUE,Wise but Unhappy
+359,23,62,Democrat,Strongly disapprove,High school,Likely,Real and Caused by People,3,Strongly Agree,Strongly Agree,5,No,About Right,FALSE,Happy but Unwise
+360,8,34,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Strongly Disagree,Strongly Agree,3,No,Too Low,TRUE,Happy but Unwise
+361,114,40,Republican,Somewhat Approve,Graduate degree,Unlikely,Real but not Caused by People,0,Strongly Agree,Strongly Agree,150,No,About Right,FALSE,Wise but Unhappy
+362,112,33,Democrat,Strongly disapprove,High school,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,0,Yes,Too Low,FALSE,Happy but Unwise
+363,129,45,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,6,Yes,About Right,TRUE,Happy but Unwise
+364,94,51,Democrat,Strongly disapprove,High school,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,10,No,Too Low,TRUE,Wise but Unhappy
+365,129,63,Republican,Strongly Approve,Graduate degree,Unlikely,Real but not Caused by People,0,Strongly Agree,Somewhat Disagree,10,No,Too Low,FALSE,Happy but Unwise
+366,177,63,Republican,Strongly Approve,Some college,Unlikely,Not Real At All,0,Strongly Disagree,Strongly Agree,2,Yes,About Right,TRUE,Happy but Unwise
+367,30,62,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Strongly Disagree,Strongly Disagree,100,Yes,Too High,FALSE,Wise but Unhappy
+368,12,35,Democrat,Somewhat Approve,College degree,Likely,Real and Caused by People,2,Neither Agree nor Disagree,Somewhat Agree,4,No,Too Low,TRUE,Happy but Unwise
+369,135,57,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,3,No,Too Low,TRUE,Wise but Unhappy
+370,87,50,Independent,Somewhat Approve,High school,Unlikely,Not Real At All,1,Somewhat Agree,Somewhat Disagree,6,Yes,Too Low,TRUE,Happy but Unwise
+371,52,65,Independent,Somewhat disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,2,No,Too Low,TRUE,Wise but Unhappy
+372,86,55,Democrat,Strongly disapprove,High school,Unlikely,Real and Caused by People,3,Strongly Agree,Strongly Agree,10,No,Too Low,TRUE,Wise but Unhappy
+373,93,51,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,5,Strongly Agree,Strongly Agree,3,Yes,Too Low,TRUE,Happy but Unwise
+374,183,80,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,10,No,About Right,FALSE,Wise but Unhappy
+375,169,61,Independent,Strongly Approve,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Somewhat Agree,5,No,About Right,TRUE,Happy but Unwise
+376,13,22,Republican,Strongly disapprove,College degree,Unlikely,Real and Caused by People,5,Strongly Agree,Somewhat Agree,6,Yes,About Right,TRUE,Happy but Unwise
+377,102,61,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,8,Yes,About Right,FALSE,Wise but Unhappy
+378,71,60,Independent,Neither approve nor disapprove,Some college,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,4,No,Too Low,FALSE,Happy but Unwise
+379,101,54,Republican,Strongly Approve,College degree,Unlikely,Not Real At All,0,Somewhat Agree,Strongly Agree,12,No,Too Low,TRUE,Happy but Unwise
+380,198,54,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,1,Strongly Agree,Somewhat Agree,10,Yes,Too Low,FALSE,Happy but Unwise
+381,153,60,Republican,Somewhat Approve,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,3,Yes,About Right,TRUE,Happy but Unwise
+382,43,56,Democrat,Strongly disapprove,High school,Likely,Real and Caused by People,4,Strongly Disagree,Strongly Agree,20,No,About Right,TRUE,Happy but Unwise
+383,5,64,Democrat,Somewhat disapprove,High school,Unlikely,Not Real At All,2,Somewhat Disagree,Somewhat Disagree,6,No,About Right,FALSE,Happy but Unwise
+384,61,29,Democrat,Strongly disapprove,College degree,Likely,Real and Caused by People,0,Somewhat Disagree,Strongly Disagree,0,No,Too High,TRUE,Wise but Unhappy
+385,42,20,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,4,Strongly Disagree,Strongly Agree,15,Yes,Too High,FALSE,Wise but Unhappy
+386,65,28,Democrat,Somewhat Approve,Some college,Unlikely,Real but not Caused by People,0,Somewhat Agree,Somewhat Disagree,100,Yes,Too Low,TRUE,Happy but Unwise
+387,203,50,Republican,Somewhat Approve,Graduate degree,Unlikely,Real but not Caused by People,0,Somewhat Agree,Somewhat Agree,70,No,Too High,FALSE,Happy but Unwise
+388,168,58,Independent,Strongly disapprove,Other,Likely,Real and Caused by People,0,Somewhat Agree,Somewhat Agree,4,Yes,About Right,FALSE,Happy but Unwise
+389,130,36,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,4,Strongly Agree,Strongly Agree,20,Yes,Too Low,FALSE,Happy but Unwise
+390,47,43,Democrat,Strongly disapprove,High school,Unlikely,Not Real At All,5,Strongly Disagree,Strongly Agree,0,No,About Right,TRUE,Happy but Unwise
+391,90,63,Republican,Somewhat Approve,College degree,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,3,Yes,About Right,TRUE,Wise but Unhappy
+392,64,45,Independent,Somewhat Approve,College degree,Unlikely,Real and Caused by People,2,Somewhat Agree,Somewhat Agree,2,Yes,Too Low,TRUE,Wise but Unhappy
+393,92,78,Independent,Strongly disapprove,Some college,Likely,Real and Caused by People,0,Strongly Agree,Strongly Agree,100,Yes,Too Low,FALSE,Wise but Unhappy
+394,45,18,Independent,Strongly disapprove,High school,Likely,Real and Caused by People,3,Somewhat Agree,Somewhat Agree,3,No,About Right,TRUE,Wise but Unhappy
+395,104,68,Independent,Somewhat Approve,Graduate degree,Unlikely,Not Real At All,2,Somewhat Agree,Strongly Agree,30,No,About Right,FALSE,Happy but Unwise
+396,105,64,Republican,Strongly Approve,Graduate degree,Unlikely,Real but not Caused by People,3,Somewhat Disagree,Somewhat Agree,15,No,Too High,FALSE,Happy but Unwise
+397,64,71,Republican,Strongly Approve,College degree,Unlikely,Not Real At All,4,Strongly Disagree,Strongly Agree,4,No,Too High,FALSE,Happy but Unwise
+398,57,66,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,5,Yes,Too Low,FALSE,Wise but Unhappy
+399,102,31,Independent,Somewhat Approve,High school,Unlikely,Not Real At All,3,Somewhat Disagree,Somewhat Agree,1,Yes,Too High,TRUE,Wise but Unhappy
+400,91,60,Republican,Strongly Approve,College degree,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,5,No,About Right,FALSE,Wise but Unhappy
+401,162,39,Independent,Strongly Approve,Graduate degree,Unlikely,Not Real At All,1,Strongly Disagree,Strongly Disagree,1,Yes,About Right,TRUE,Happy but Unwise
+402,163,67,Independent,Somewhat disapprove,College degree,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Disagree,2,No,Too Low,TRUE,Happy but Unwise
+403,120,20,Independent,Somewhat Approve,Some college,Unlikely,Real but not Caused by People,1,Somewhat Agree,Somewhat Agree,25,No,Too Low,FALSE,Wise but Unhappy
+404,124,57,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,5,No,Too Low,FALSE,Wise but Unhappy
+405,77,29,Independent,Strongly Approve,High school,Unlikely,Real but not Caused by People,0,Strongly Disagree,Strongly Agree,0,Yes,About Right,TRUE,Happy but Unwise
+406,83,61,Independent,Somewhat Approve,Some college,Unlikely,Real but not Caused by People,0,Strongly Disagree,Somewhat Agree,7,Yes,About Right,TRUE,Wise but Unhappy
+407,136,66,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,3,No,Too Low,TRUE,Happy but Unwise
+408,133,63,Independent,Strongly disapprove,College degree,Likely,Real and Caused by People,2,Strongly Agree,Strongly Agree,700,No,Too Low,FALSE,Wise but Unhappy
+409,104,62,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,4,Yes,Too Low,FALSE,Wise but Unhappy
+410,39,60,Independent,Strongly Approve,High school,Unlikely,Not Real At All,0,Strongly Disagree,Strongly Agree,50,Yes,Too Low,TRUE,Happy but Unwise
+411,170,21,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,3,Somewhat Agree,Strongly Agree,17,No,Too Low,FALSE,Happy but Unwise
+412,41,61,Republican,Strongly Approve,College degree,Unlikely,Real but not Caused by People,5,Somewhat Agree,Strongly Agree,15,Yes,Too Low,FALSE,Wise but Unhappy
+413,167,72,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,4,No,Too Low,TRUE,Wise but Unhappy
+414,79,28,Republican,Strongly Approve,College degree,Unlikely,Real but not Caused by People,5,Strongly Agree,Strongly Agree,15,Yes,Too Low,FALSE,Happy but Unwise
+415,113,29,Independent,Somewhat disapprove,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Somewhat Agree,2,No,About Right,FALSE,Happy but Unwise
+416,109,33,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,4,No,Too Low,FALSE,Wise but Unhappy
+417,80,32,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Somewhat Agree,7,Yes,Too Low,TRUE,Happy but Unwise
+418,70,51,Independent,Somewhat Approve,High school,Unlikely,Real and Caused by People,1,Somewhat Disagree,Somewhat Disagree,0,No,About Right,TRUE,Happy but Unwise
+419,35,41,Independent,Strongly Approve,High school,Unlikely,Not Real At All,4,Strongly Disagree,Strongly Disagree,0,Yes,About Right,FALSE,Happy but Unwise
+420,58,59,Republican,Strongly Approve,High school,Unlikely,Not Real At All,0,Neither Agree nor Disagree,Strongly Agree,1,No,Too High,TRUE,Happy but Unwise
+421,105,70,Republican,Strongly Approve,Graduate degree,Unlikely,Real but not Caused by People,1,Somewhat Disagree,Strongly Agree,5,Yes,About Right,FALSE,Wise but Unhappy
+422,48,65,Independent,Strongly Approve,Graduate degree,Likely,Not Real At All,2,Somewhat Agree,Strongly Agree,9,No,About Right,TRUE,Wise but Unhappy
+423,43,60,Independent,Strongly Approve,Some college,Likely,Not Real At All,2,Somewhat Disagree,Strongly Disagree,14,Yes,Too High,FALSE,Happy but Unwise
+424,64,32,Independent,Neither approve nor disapprove,High school,Unlikely,Real and Caused by People,5,Strongly Disagree,Strongly Agree,5,Yes,Too Low,TRUE,Wise but Unhappy
+425,164,36,Democrat,Strongly disapprove,High school,Unlikely,Real and Caused by People,3,Strongly Agree,Strongly Agree,3,No,Too Low,FALSE,Wise but Unhappy
+426,90,60,Independent,Strongly Approve,Other,Likely,Real and Caused by People,0,Strongly Disagree,Strongly Agree,0,Yes,About Right,TRUE,Happy but Unwise
+427,102,61,Democrat,Somewhat Approve,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,5,Yes,About Right,FALSE,Wise but Unhappy
+428,79,23,Independent,Strongly disapprove,High school,Unlikely,Real and Caused by People,4,Strongly Agree,Somewhat Disagree,70,Yes,Too Low,TRUE,Happy but Unwise
+429,42,55,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,1,Strongly Disagree,Somewhat Disagree,3,Yes,Too High,FALSE,Happy but Unwise
+430,54,58,Democrat,Somewhat Approve,Some college,Unlikely,Real and Caused by People,4,Somewhat Agree,Somewhat Agree,20,Yes,About Right,TRUE,Happy but Unwise
+431,77,24,Republican,Strongly Approve,Graduate degree,Unlikely,Not Real At All,0,Somewhat Agree,Somewhat Disagree,5,No,About Right,FALSE,Wise but Unhappy
+432,48,34,Democrat,Strongly disapprove,College degree,Unlikely,Not Real At All,1,Somewhat Disagree,Strongly Agree,3,Yes,Too Low,TRUE,Happy but Unwise
+433,46,77,Independent,Somewhat disapprove,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Disagree,2,No,About Right,FALSE,Happy but Unwise
+434,98,36,Independent,Somewhat disapprove,Some college,Unlikely,Real and Caused by People,1,Somewhat Agree,Somewhat Disagree,5,Yes,Too Low,FALSE,Wise but Unhappy
+435,114,19,Republican,Strongly Approve,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,5,Yes,About Right,FALSE,Wise but Unhappy
+436,57,54,Democrat,Strongly Approve,Some college,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,5,Yes,Too Low,TRUE,Happy but Unwise
+437,65,23,Republican,Strongly disapprove,Some college,Unlikely,Real and Caused by People,5,Somewhat Agree,Somewhat Agree,30,Yes,Too Low,TRUE,Happy but Unwise
+438,56,19,Independent,Somewhat disapprove,Some college,Unlikely,Real and Caused by People,1,Somewhat Agree,Strongly Agree,7,Yes,Too High,TRUE,Happy but Unwise
+439,106,67,Independent,Strongly Approve,College degree,Unlikely,Real but not Caused by People,0,Somewhat Agree,Somewhat Agree,0,No,Too Low,FALSE,Happy but Unwise
+440,116,38,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,1,Somewhat Agree,Somewhat Agree,12,No,Too Low,FALSE,Wise but Unhappy
+441,79,99,Independent,Strongly Approve,College degree,Unlikely,Not Real At All,4,Somewhat Agree,Strongly Disagree,25,No,Too Low,FALSE,Happy but Unwise
+442,124,25,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,23,No,Too Low,FALSE,Wise but Unhappy
+443,90,42,Republican,Strongly Approve,College degree,Unlikely,Real and Caused by People,3,Somewhat Disagree,Strongly Disagree,6,Yes,Too Low,TRUE,Wise but Unhappy
+444,57,71,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,13,No,Too Low,FALSE,Wise but Unhappy
+445,94,48,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,3,Strongly Agree,Strongly Agree,1,No,Too Low,TRUE,Wise but Unhappy
+446,69,62,Democrat,Strongly disapprove,High school,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,4,No,Too Low,TRUE,Wise but Unhappy
+447,45,82,Independent,Strongly disapprove,High school,Unlikely,Real and Caused by People,0,Strongly Agree,Somewhat Agree,3,Yes,Too High,TRUE,Happy but Unwise
+448,48,26,Independent,Strongly Approve,Graduate degree,Likely,Not Real At All,5,Somewhat Agree,Neither Agree nor Disagree,55,Yes,Too Low,FALSE,Wise but Unhappy
+449,79,65,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,70,Yes,Too Low,FALSE,Wise but Unhappy
+450,92,58,Republican,Neither approve nor disapprove,Graduate degree,Unlikely,Not Real At All,0,Strongly Disagree,Strongly Disagree,12,No,Too High,FALSE,Happy but Unwise
+451,74,72,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,2,No,Too Low,TRUE,Wise but Unhappy
+452,104,40,Democrat,Strongly Approve,Graduate degree,Unlikely,Real but not Caused by People,0,Strongly Agree,Somewhat Disagree,3,No,Too Low,TRUE,Wise but Unhappy
+453,113,42,Independent,Neither approve nor disapprove,Graduate degree,Likely,Real but not Caused by People,1,Somewhat Agree,Somewhat Agree,4,No,About Right,FALSE,Wise but Unhappy
+454,100,22,Republican,Somewhat Approve,High school,Unlikely,Real and Caused by People,2,Somewhat Disagree,Somewhat Disagree,10,Yes,Too Low,FALSE,Wise but Unhappy
+455,91,58,Independent,Strongly Approve,College degree,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,0,Yes,Too Low,FALSE,Wise but Unhappy
+456,168,20,Independent,Somewhat disapprove,Some college,Likely,Real and Caused by People,1,Somewhat Agree,Somewhat Agree,5,Yes,Too Low,FALSE,Happy but Unwise
+457,47,42,Democrat,Somewhat Approve,College degree,Likely,Real and Caused by People,4,Somewhat Agree,Strongly Disagree,20,No,Too Low,TRUE,Happy but Unwise
+458,74,23,Independent,Strongly disapprove,Some college,Likely,Real and Caused by People,2,Strongly Agree,Strongly Agree,0,No,Too Low,TRUE,Wise but Unhappy
+459,64,62,Republican,Strongly Approve,Graduate degree,Unlikely,Not Real At All,0,Strongly Disagree,Strongly Agree,50,No,Too High,TRUE,Happy but Unwise
+460,41,53,Independent,Strongly Approve,Some college,Unlikely,Real but not Caused by People,3,Somewhat Agree,Strongly Agree,25,Yes,Too Low,FALSE,Wise but Unhappy
+461,18,83,Republican,Somewhat disapprove,Some college,Unlikely,Not Real At All,0,Somewhat Agree,Somewhat Agree,0,No,About Right,TRUE,Wise but Unhappy
+462,152,35,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,10,No,About Right,TRUE,Happy but Unwise
+463,73,53,Independent,Strongly Approve,Some college,Likely,Real but not Caused by People,0,Somewhat Agree,Strongly Disagree,5,No,About Right,TRUE,Happy but Unwise
+464,42,40,Independent,Somewhat Approve,College degree,Likely,Not Real At All,3,Somewhat Agree,Strongly Agree,0,Yes,About Right,FALSE,Happy but Unwise
+465,68,48,Democrat,Somewhat disapprove,Some college,Unlikely,Not Real At All,2,Somewhat Disagree,Strongly Agree,4,No,About Right,FALSE,Wise but Unhappy
+466,162,48,Independent,Strongly Approve,Graduate degree,Unlikely,Not Real At All,2,Somewhat Agree,Somewhat Agree,3,Yes,About Right,TRUE,Happy but Unwise
+467,36,65,Republican,Strongly Approve,College degree,Unlikely,Not Real At All,0,Somewhat Disagree,Strongly Agree,10,Yes,About Right,TRUE,Wise but Unhappy
+468,10,43,Democrat,Strongly disapprove,College degree,Likely,Real and Caused by People,0,Somewhat Disagree,Somewhat Agree,20,No,About Right,TRUE,Wise but Unhappy
+469,48,23,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Somewhat Agree,Somewhat Disagree,20,Yes,Too Low,FALSE,Wise but Unhappy
+470,126,42,Independent,Strongly Approve,Graduate degree,Likely,Not Real At All,2,Somewhat Agree,Somewhat Agree,7,Yes,Too Low,FALSE,Wise but Unhappy
+471,9,70,Democrat,Strongly disapprove,Other,Unlikely,Real and Caused by People,0,Somewhat Agree,Somewhat Agree,40,No,Too High,TRUE,Happy but Unwise
+472,122,65,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Somewhat Agree,Somewhat Agree,3,No,Too Low,TRUE,Wise but Unhappy
+473,163,47,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Somewhat Agree,3,No,Too Low,TRUE,Happy but Unwise
+474,38,45,Republican,Strongly Approve,College degree,Unlikely,Real but not Caused by People,2,Strongly Agree,Strongly Agree,7,No,About Right,FALSE,Happy but Unwise
+475,78,38,Independent,Strongly disapprove,High school,Unlikely,Not Real At All,1,Strongly Disagree,Strongly Agree,0,Yes,Too Low,TRUE,Wise but Unhappy
+476,500,46,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,2,Yes,Too Low,FALSE,Wise but Unhappy
+477,77,51,Republican,Strongly disapprove,Graduate degree,Likely,Real and Caused by People,1,Strongly Agree,Strongly Agree,15,Yes,Too High,FALSE,Wise but Unhappy
+478,103,51,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,4,No,Too Low,FALSE,Wise but Unhappy
+479,64,28,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,5,Somewhat Agree,Strongly Agree,2,Yes,Too Low,TRUE,Wise but Unhappy
+480,166,28,Independent,Somewhat Approve,Some college,Unlikely,Real but not Caused by People,3,Strongly Disagree,Strongly Agree,5,No,About Right,FALSE,Wise but Unhappy
+481,102,49,Republican,Somewhat Approve,High school,Unlikely,Not Real At All,3,Somewhat Disagree,Somewhat Disagree,1,Yes,Too High,FALSE,Happy but Unwise
+482,86,69,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,5,No,Too Low,FALSE,Wise but Unhappy
+483,74,38,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,1,Strongly Agree,Somewhat Agree,4,Yes,Too Low,TRUE,Wise but Unhappy
+484,146,46,Independent,Strongly disapprove,Graduate degree,Likely,Real and Caused by People,2,Somewhat Disagree,Somewhat Disagree,5,Yes,Too High,FALSE,Happy but Unwise
+485,101,49,Democrat,Strongly disapprove,High school,Likely,Real but not Caused by People,4,Strongly Agree,Strongly Agree,10,Yes,Too Low,FALSE,Wise but Unhappy
+486,74,45,Republican,Somewhat Approve,Graduate degree,Unlikely,Real but not Caused by People,1,Strongly Agree,Somewhat Agree,26,No,Too High,TRUE,Wise but Unhappy
+487,24,27,Independent,Neither approve nor disapprove,College degree,Unlikely,Real and Caused by People,4,Somewhat Disagree,Somewhat Agree,30,No,About Right,FALSE,Wise but Unhappy
+488,80,41,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,2,Somewhat Agree,Strongly Agree,20,Yes,About Right,TRUE,Wise but Unhappy
+489,96,24,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,20,Yes,Too Low,TRUE,Wise but Unhappy
+490,109,32,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,3,No,Too Low,FALSE,Wise but Unhappy
+491,52,54,Independent,Somewhat disapprove,High school,Likely,Real but not Caused by People,0,Strongly Agree,Strongly Agree,400,No,Too High,TRUE,Wise but Unhappy
+492,109,51,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,5,No,Too Low,TRUE,Wise but Unhappy
+493,74,44,Republican,Somewhat Approve,Some college,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,10,No,Too Low,FALSE,Wise but Unhappy
+494,88,45,Democrat,Strongly disapprove,College degree,Likely,Real but not Caused by People,2,Strongly Agree,Neither Agree nor Disagree,10,Yes,Too Low,TRUE,Wise but Unhappy
+495,124,49,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,25,No,Too Low,FALSE,Wise but Unhappy
+496,43,18,Independent,Strongly disapprove,High school,Unlikely,Real and Caused by People,0,Somewhat Disagree,Somewhat Agree,40,No,About Right,FALSE,Happy but Unwise
+497,51,30,Independent,Strongly disapprove,Some college,Likely,Real but not Caused by People,3,Strongly Agree,Somewhat Disagree,5,Yes,Too High,FALSE,Wise but Unhappy
+498,144,29,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,2,No,Too Low,TRUE,Wise but Unhappy
+499,74,21,Republican,Strongly Approve,Some college,Unlikely,Real but not Caused by People,3,Somewhat Disagree,Strongly Agree,5,No,About Right,TRUE,Happy but Unwise
+500,58,75,Independent,Strongly Approve,College degree,Likely,Real but not Caused by People,3,Somewhat Agree,Somewhat Agree,4,Yes,Too Low,TRUE,Wise but Unhappy
+501,76,50,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,1,Strongly Disagree,Somewhat Disagree,2,Yes,Too Low,TRUE,Happy but Unwise
+502,36,87,Republican,Somewhat Approve,Some college,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,20,No,About Right,FALSE,Wise but Unhappy
+503,236,72,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,1,Somewhat Agree,Strongly Agree,12,Yes,Too Low,FALSE,Wise but Unhappy
+504,91,54,Independent,Neither approve nor disapprove,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,100,Yes,Too Low,FALSE,Wise but Unhappy
+505,57,18,Democrat,Somewhat disapprove,College degree,Unlikely,Real and Caused by People,2,Somewhat Agree,Somewhat Agree,30,No,Too High,TRUE,Wise but Unhappy
+506,122,41,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,3,Somewhat Agree,Somewhat Agree,2,No,Too Low,TRUE,Wise but Unhappy
+507,89,21,Independent,Somewhat disapprove,Some college,Likely,Real and Caused by People,3,Somewhat Agree,Somewhat Agree,2,No,About Right,FALSE,Happy but Unwise
+508,67,70,Democrat,Somewhat Approve,Some college,Unlikely,Real but not Caused by People,1,Strongly Disagree,Somewhat Agree,0,No,Too High,FALSE,Happy but Unwise
+509,142,22,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,5,No,Too Low,TRUE,Wise but Unhappy
+510,136,97,Independent,Somewhat Approve,College degree,Unlikely,Real but not Caused by People,1,Somewhat Disagree,Strongly Agree,5,No,Too Low,TRUE,Wise but Unhappy
+511,43,35,Independent,Strongly disapprove,College degree,Likely,Real and Caused by People,2,Strongly Agree,Somewhat Agree,7,No,About Right,FALSE,Happy but Unwise
+512,102,40,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,4,Somewhat Agree,Strongly Agree,0,Yes,About Right,FALSE,Wise but Unhappy
+513,79,28,Independent,Somewhat Approve,Some college,Unlikely,Real and Caused by People,5,Somewhat Agree,Somewhat Agree,30,No,About Right,TRUE,Happy but Unwise
+514,69,50,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,3,Strongly Disagree,Strongly Agree,7,No,Too High,FALSE,Wise but Unhappy
+515,126,29,Independent,Neither approve nor disapprove,Some college,Unlikely,Real and Caused by People,1,Somewhat Agree,Strongly Agree,3,No,Too Low,FALSE,Wise but Unhappy
+516,144,27,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,3,Strongly Agree,Strongly Agree,3,No,Too Low,FALSE,Wise but Unhappy
+517,106,50,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,4,No,Too Low,TRUE,Happy but Unwise
+518,122,20,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,3,Somewhat Agree,Somewhat Agree,7,No,Too Low,TRUE,Wise but Unhappy
+519,68,34,Democrat,Somewhat disapprove,Some college,Unlikely,Real and Caused by People,3,Somewhat Disagree,Strongly Agree,60,Yes,About Right,FALSE,Happy but Unwise
+520,101,34,Independent,Somewhat Approve,College degree,Likely,Real but not Caused by People,2,Somewhat Agree,Strongly Agree,18,No,Too High,FALSE,Wise but Unhappy
+521,77,34,Democrat,Strongly Approve,High school,Unlikely,Real and Caused by People,1,Somewhat Agree,Strongly Agree,1,Yes,Too Low,FALSE,Wise but Unhappy
+522,163,33,Independent,Neither approve nor disapprove,Graduate degree,Unlikely,Real and Caused by People,3,Somewhat Disagree,Neither Agree nor Disagree,4,No,Too Low,TRUE,Happy but Unwise
+523,57,36,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,2,Strongly Agree,Somewhat Agree,50,Yes,About Right,TRUE,Wise but Unhappy
+524,52,74,Republican,Strongly Approve,High school,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,10,No,Too High,TRUE,Happy but Unwise
+525,78,21,Democrat,Strongly Approve,Other,Likely,Real and Caused by People,3,Strongly Disagree,Somewhat Disagree,4,No,Too High,FALSE,Happy but Unwise
+526,74,29,Republican,Somewhat disapprove,College degree,Unlikely,Real and Caused by People,2,Strongly Agree,Somewhat Agree,0,Yes,Too Low,TRUE,Happy but Unwise
+527,70,37,Independent,Strongly Approve,High school,Unlikely,Real but not Caused by People,0,Somewhat Disagree,Strongly Disagree,0,No,Too High,FALSE,Happy but Unwise
+528,52,79,Independent,Somewhat disapprove,High school,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,35,No,About Right,FALSE,Happy but Unwise
+529,104,23,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,5,No,Too Low,TRUE,Happy but Unwise
+530,220,77,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,10,Yes,Too Low,FALSE,Wise but Unhappy
+531,89,36,Republican,Strongly Approve,Some college,Unlikely,Real but not Caused by People,4,Strongly Agree,Strongly Agree,10,No,About Right,FALSE,Happy but Unwise
+532,82,69,Republican,Strongly Approve,Some college,Unlikely,Not Real At All,0,Strongly Disagree,Strongly Agree,3,No,About Right,TRUE,Happy but Unwise
+533,73,20,Democrat,Strongly disapprove,High school,Likely,Real and Caused by People,4,Strongly Agree,Strongly Agree,100,No,Too Low,FALSE,Wise but Unhappy
+534,71,34,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,2,Somewhat Agree,Strongly Agree,0,No,Too Low,TRUE,Happy but Unwise
+535,89,23,Independent,Neither approve nor disapprove,Some college,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,9,No,About Right,FALSE,Happy but Unwise
+536,142,51,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,6,No,About Right,FALSE,Wise but Unhappy
+537,81,68,Republican,Strongly Approve,High school,Likely,Real and Caused by People,0,Somewhat Disagree,Somewhat Disagree,4,Yes,Too High,TRUE,Happy but Unwise
+538,73,68,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,300,No,Too Low,FALSE,Wise but Unhappy
+539,120,44,Democrat,Strongly disapprove,High school,Likely,Real and Caused by People,4,Strongly Agree,Somewhat Agree,12,Yes,About Right,TRUE,Happy but Unwise
+540,90,19,Democrat,Strongly disapprove,College degree,Likely,Real and Caused by People,0,Strongly Disagree,Strongly Agree,9,No,Too High,FALSE,Happy but Unwise
+541,80,20,Republican,Somewhat Approve,Some college,Unlikely,Real and Caused by People,2,Somewhat Agree,Strongly Agree,12,No,Too Low,FALSE,Wise but Unhappy
+542,106,31,Republican,Strongly Approve,Some college,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,0,Yes,About Right,TRUE,Happy but Unwise
+543,80,67,Republican,Strongly Approve,Graduate degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,150,No,About Right,FALSE,Wise but Unhappy
+544,127,85,Republican,Somewhat Approve,Some college,Unlikely,Real but not Caused by People,0,Somewhat Agree,Somewhat Agree,0,Yes,About Right,TRUE,Happy but Unwise
+545,24,28,Independent,Somewhat Approve,College degree,Unlikely,Real and Caused by People,2,Somewhat Agree,Strongly Agree,0,Yes,About Right,TRUE,Happy but Unwise
+546,8,50,Republican,Strongly Approve,High school,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,6,Yes,About Right,TRUE,Happy but Unwise
+547,60,39,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,25,No,Too Low,TRUE,Wise but Unhappy
+548,167,34,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,1,Somewhat Agree,Strongly Agree,36,No,Too Low,TRUE,Happy but Unwise
+549,43,50,Independent,Somewhat disapprove,High school,Likely,Real and Caused by People,5,Somewhat Disagree,Strongly Disagree,2,No,Too Low,TRUE,Happy but Unwise
+550,121,49,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,12,Yes,Too Low,FALSE,Happy but Unwise
+551,74,42,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,3,No,Too Low,TRUE,Wise but Unhappy
+552,101,42,Democrat,Strongly disapprove,Graduate degree,Likely,Real and Caused by People,0,Strongly Agree,Strongly Agree,2,Yes,About Right,FALSE,Wise but Unhappy
+553,360,65,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,12,No,Too Low,TRUE,Wise but Unhappy
+554,30,49,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Disagree,50,Yes,Too Low,FALSE,Wise but Unhappy
+555,80,50,Republican,Somewhat Approve,College degree,Unlikely,Real and Caused by People,5,Somewhat Agree,Strongly Agree,4,No,About Right,FALSE,Happy but Unwise
+556,72,70,Independent,Somewhat Approve,Graduate degree,Unlikely,Not Real At All,0,Strongly Agree,Strongly Disagree,25,Yes,About Right,TRUE,Wise but Unhappy
+557,81,27,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,27,Yes,Too Low,FALSE,Happy but Unwise
+558,54,54,Republican,Strongly Approve,Some college,Likely,Real but not Caused by People,0,Somewhat Disagree,Strongly Agree,20,No,About Right,TRUE,Happy but Unwise
+559,23,73,Independent,Somewhat disapprove,High school,Unlikely,Not Real At All,0,Strongly Disagree,Strongly Agree,3,No,Too High,TRUE,Wise but Unhappy
+560,44,44,Republican,Strongly Approve,Some college,Unlikely,Real and Caused by People,4,Somewhat Disagree,Somewhat Agree,6,Yes,Too Low,TRUE,Wise but Unhappy
+561,159,45,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,18,No,Too Low,FALSE,Wise but Unhappy
+562,163,45,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,12,No,Too Low,TRUE,Happy but Unwise
+563,44,80,Democrat,Strongly disapprove,High school,Likely,Real and Caused by People,0,Somewhat Agree,Somewhat Agree,20,Yes,Too Low,TRUE,Wise but Unhappy
+564,47,45,Democrat,Strongly disapprove,Other,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,20,Yes,Too Low,TRUE,Wise but Unhappy
+565,124,80,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,20,No,About Right,TRUE,Wise but Unhappy
+566,97,32,Independent,Strongly disapprove,High school,Likely,Real and Caused by People,0,Somewhat Agree,Somewhat Agree,3,No,About Right,TRUE,Happy but Unwise
+567,220,45,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,6,Yes,Too Low,TRUE,Wise but Unhappy
+568,48,24,Independent,Strongly disapprove,Some college,Unlikely,Real but not Caused by People,0,Somewhat Disagree,Somewhat Agree,30,Yes,Too Low,FALSE,Wise but Unhappy
+569,118,54,Republican,Strongly Approve,Graduate degree,Unlikely,Real but not Caused by People,5,Strongly Disagree,Strongly Agree,3,Yes,Too Low,FALSE,Happy but Unwise
+570,94,43,Independent,Strongly disapprove,High school,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,0,No,Too Low,TRUE,Wise but Unhappy
+571,79,43,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,1,Strongly Agree,Somewhat Agree,7,No,About Right,FALSE,Wise but Unhappy
+572,73,31,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,5,Strongly Agree,Somewhat Disagree,4,No,Too High,FALSE,Wise but Unhappy
+573,73,31,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,4,Somewhat Agree,Strongly Agree,20,No,Too Low,FALSE,Happy but Unwise
+574,80,71,Republican,Strongly Approve,College degree,Unlikely,Real but not Caused by People,1,Somewhat Agree,Strongly Agree,10,No,About Right,TRUE,Happy but Unwise
+575,104,40,Independent,Strongly disapprove,Graduate degree,Unlikely,Real but not Caused by People,4,Somewhat Agree,Strongly Agree,6,No,Too Low,TRUE,Wise but Unhappy
+576,106,28,Republican,Neither approve nor disapprove,College degree,Unlikely,Real but not Caused by People,2,Somewhat Agree,Somewhat Agree,1,No,Too Low,FALSE,Happy but Unwise
+577,52,47,Independent,Somewhat disapprove,High school,Unlikely,Real and Caused by People,1,Neither Agree nor Disagree,Somewhat Disagree,3,No,Too High,TRUE,Happy but Unwise
+578,113,22,Democrat,Somewhat Approve,Graduate degree,Unlikely,Real and Caused by People,1,Somewhat Agree,Strongly Agree,20,No,Too Low,FALSE,Happy but Unwise
+579,34,71,Democrat,Somewhat disapprove,High school,Likely,Real and Caused by People,2,Somewhat Disagree,Strongly Agree,9,No,Too High,TRUE,Happy but Unwise
+580,122,77,Republican,Neither approve nor disapprove,Some college,Unlikely,Real and Caused by People,1,Somewhat Agree,Strongly Agree,30,No,Too Low,FALSE,Wise but Unhappy
+581,16,68,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,2,No,About Right,TRUE,Happy but Unwise
+582,37,46,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,1,Somewhat Agree,Somewhat Agree,0,No,About Right,TRUE,Happy but Unwise
+583,121,25,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,8,Yes,Too Low,FALSE,Happy but Unwise
+584,93,46,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,3,Somewhat Agree,Strongly Agree,4,Yes,Too Low,TRUE,Happy but Unwise
+585,152,50,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Somewhat Agree,10,No,About Right,TRUE,Happy but Unwise
+586,31,25,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Disagree,Strongly Disagree,10,Yes,Too Low,TRUE,Wise but Unhappy
+587,56,29,Democrat,Strongly disapprove,High school,Unlikely,Real and Caused by People,2,Strongly Agree,Somewhat Disagree,25,Yes,Too High,TRUE,Wise but Unhappy
+588,106,20,Republican,Strongly Approve,Some college,Unlikely,Real but not Caused by People,4,Strongly Disagree,Strongly Agree,20,No,Too High,TRUE,Wise but Unhappy
+589,182,40,Independent,Neither approve nor disapprove,Some college,Unlikely,Real and Caused by People,2,Somewhat Agree,Strongly Agree,3,Yes,Too Low,FALSE,Wise but Unhappy
+590,144,32,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,20,No,Too Low,TRUE,Happy but Unwise
+591,52,54,Republican,Somewhat Approve,Some college,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,10,Yes,Too Low,TRUE,Wise but Unhappy
+592,152,35,Republican,Strongly disapprove,High school,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,2,No,About Right,TRUE,Happy but Unwise
+593,79,19,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,4,No,Too Low,FALSE,Happy but Unwise
+594,56,67,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,20,Yes,Too Low,FALSE,Happy but Unwise
+595,144,35,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,10,No,Too Low,FALSE,Wise but Unhappy
+596,129,42,Republican,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,3,Yes,Too Low,TRUE,Happy but Unwise
+597,92,91,Democrat,Strongly disapprove,High school,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,1,No,About Right,TRUE,Wise but Unhappy
+598,80,21,Republican,Strongly Approve,Some college,Unlikely,Not Real At All,5,Somewhat Agree,Strongly Agree,4,Yes,Too Low,TRUE,Happy but Unwise
+599,47,67,Republican,Strongly Approve,High school,Unlikely,Real and Caused by People,2,Strongly Disagree,Strongly Agree,15,Yes,Too Low,FALSE,Happy but Unwise
+600,98,32,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,5,Strongly Agree,Strongly Agree,5,No,Too Low,TRUE,Happy but Unwise
+601,161,30,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,10,No,Too Low,FALSE,Happy but Unwise
+602,74,71,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,3,Strongly Agree,Strongly Agree,40,No,Too Low,TRUE,Wise but Unhappy
+603,67,73,Independent,Somewhat Approve,Graduate degree,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,3,No,Too Low,TRUE,Happy but Unwise
+604,110,38,Republican,Somewhat Approve,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,20,No,About Right,FALSE,Happy but Unwise
+605,45,30,Democrat,Somewhat disapprove,Some college,Unlikely,Not Real At All,3,Somewhat Agree,Strongly Agree,15,No,About Right,TRUE,Happy but Unwise
+606,73,20,Independent,Somewhat Approve,Some college,Unlikely,Real but not Caused by People,5,Neither Agree nor Disagree,Neither Agree nor Disagree,5,No,About Right,FALSE,Happy but Unwise
+607,121,45,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,10,No,Too Low,FALSE,Wise but Unhappy
+608,30,75,Republican,Strongly Approve,High school,Likely,Real and Caused by People,0,Somewhat Disagree,Strongly Agree,100,Yes,Too High,TRUE,Happy but Unwise
+609,124,48,Democrat,Strongly disapprove,Other,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,15,No,Too Low,FALSE,Wise but Unhappy
+610,71,21,Independent,Somewhat Approve,Some college,Unlikely,Real and Caused by People,4,Somewhat Agree,Strongly Agree,0,No,Too Low,FALSE,Happy but Unwise
+611,102,46,Independent,Somewhat disapprove,High school,Unlikely,Real and Caused by People,4,Strongly Agree,Somewhat Disagree,12,Yes,Too Low,TRUE,Happy but Unwise
+612,72,92,Independent,Somewhat disapprove,High school,Likely,Real and Caused by People,3,Strongly Agree,Strongly Agree,0,Yes,Too Low,TRUE,Happy but Unwise
+613,80,71,Republican,Somewhat Approve,College degree,Unlikely,Real and Caused by People,0,Strongly Disagree,Somewhat Agree,2,Yes,Too High,FALSE,Wise but Unhappy
+614,31,36,Democrat,Somewhat Approve,High school,Unlikely,Real and Caused by People,1,Somewhat Agree,Strongly Agree,200,Yes,Too Low,TRUE,Wise but Unhappy
+615,56,30,Democrat,Strongly disapprove,High school,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,15,Yes,Too Low,TRUE,Wise but Unhappy
+616,91,36,Republican,Strongly Approve,College degree,Unlikely,Real but not Caused by People,2,Somewhat Disagree,Strongly Agree,6,No,About Right,FALSE,Happy but Unwise
+617,109,48,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Disagree,90,No,Too High,FALSE,Wise but Unhappy
+618,39,43,Independent,Strongly Approve,High school,Likely,Real and Caused by People,5,Somewhat Disagree,Somewhat Agree,0,Yes,Too Low,TRUE,Happy but Unwise
+619,62,27,Republican,Strongly Approve,High school,Unlikely,Real and Caused by People,4,Strongly Disagree,Somewhat Disagree,4,Yes,Too High,TRUE,Happy but Unwise
+620,135,36,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,40,Yes,Too Low,FALSE,Wise but Unhappy
+621,390,48,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,5,Yes,Too Low,FALSE,Wise but Unhappy
+622,170,46,Democrat,Somewhat disapprove,Graduate degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,6,No,Too Low,FALSE,Happy but Unwise
+623,92,99,Republican,Somewhat Approve,College degree,Unlikely,Real and Caused by People,3,Somewhat Agree,Strongly Agree,15,No,About Right,TRUE,Happy but Unwise
+624,223,84,Independent,Strongly Approve,Graduate degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,10,No,About Right,TRUE,Wise but Unhappy
+625,102,37,Independent,Neither approve nor disapprove,High school,Likely,Real and Caused by People,3,Somewhat Disagree,Strongly Disagree,0,Yes,Too Low,TRUE,Happy but Unwise
+626,68,44,Republican,Strongly Approve,Some college,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,10,No,Too Low,TRUE,Happy but Unwise
+627,160,65,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Somewhat Agree,0,No,About Right,FALSE,Wise but Unhappy
+628,70,38,Independent,Strongly disapprove,High school,Unlikely,Real and Caused by People,0,Somewhat Disagree,Strongly Agree,30,No,Too Low,FALSE,Happy but Unwise
+629,56,68,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,15,No,Too Low,FALSE,Wise but Unhappy
+630,38,51,Republican,Strongly Approve,College degree,Unlikely,Not Real At All,0,Strongly Disagree,Somewhat Agree,8,No,Too Low,TRUE,Happy but Unwise
+631,64,54,Democrat,Strongly Approve,Some college,Unlikely,Not Real At All,0,Strongly Disagree,Strongly Agree,0,No,Too High,FALSE,Happy but Unwise
+632,124,37,Republican,Strongly Approve,Graduate degree,Unlikely,Real but not Caused by People,1,Strongly Disagree,Strongly Agree,16,Yes,About Right,FALSE,Wise but Unhappy
+633,7,66,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,50,Yes,Too Low,FALSE,Happy but Unwise
+634,43,65,Independent,Strongly Approve,Some college,Likely,Real and Caused by People,0,Somewhat Disagree,Somewhat Agree,100,No,About Right,FALSE,Happy but Unwise
+635,12,72,Republican,Strongly Approve,Some college,Unlikely,Real and Caused by People,0,Somewhat Disagree,Strongly Agree,52,Yes,Too Low,TRUE,Happy but Unwise
+636,34,65,Democrat,Somewhat disapprove,Some college,Unlikely,Real and Caused by People,0,Somewhat Disagree,Strongly Agree,10,Yes,Too High,TRUE,Happy but Unwise
+637,87,22,Democrat,Strongly disapprove,Some college,Likely,Real and Caused by People,5,Neither Agree nor Disagree,Neither Agree nor Disagree,0,Yes,Too Low,TRUE,Happy but Unwise
+638,58,51,Republican,Strongly Approve,High school,Likely,Not Real At All,0,Somewhat Agree,Somewhat Agree,0,No,Too High,TRUE,Happy but Unwise
+639,260,43,Independent,Somewhat disapprove,Some college,Unlikely,Real and Caused by People,1,Strongly Disagree,Strongly Agree,18,Yes,Too Low,TRUE,Happy but Unwise
+640,139,32,Democrat,Somewhat Approve,College degree,Unlikely,Real and Caused by People,2,Somewhat Agree,Somewhat Agree,2,No,About Right,TRUE,Happy but Unwise
+641,211,65,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,12,Yes,Too Low,TRUE,Wise but Unhappy
+642,73,71,Independent,Neither approve nor disapprove,Some college,Unlikely,Real but not Caused by People,0,Strongly Agree,Strongly Agree,1,No,About Right,FALSE,Happy but Unwise
+643,72,65,Independent,Strongly Approve,High school,Unlikely,Real but not Caused by People,2,Strongly Agree,Strongly Agree,6,No,About Right,FALSE,Wise but Unhappy
+644,9,40,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real but not Caused by People,1,Strongly Disagree,Strongly Disagree,20,No,Too High,TRUE,Happy but Unwise
+645,56,79,Democrat,Strongly disapprove,Some college,Likely,Real and Caused by People,1,Somewhat Agree,Somewhat Agree,20,No,Too Low,TRUE,Wise but Unhappy
+646,30,68,Republican,Strongly Approve,High school,Likely,Real but not Caused by People,0,Somewhat Disagree,Strongly Agree,3,No,About Right,TRUE,Happy but Unwise
+647,101,51,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,2,Strongly Agree,Somewhat Agree,12,Yes,Too Low,FALSE,Wise but Unhappy
+648,32,39,Republican,Strongly Approve,College degree,Unlikely,Not Real At All,0,Strongly Disagree,Strongly Disagree,12,Yes,Too High,FALSE,Happy but Unwise
+649,168,51,Independent,Neither approve nor disapprove,College degree,Unlikely,Real but not Caused by People,0,Strongly Agree,Somewhat Agree,24,No,About Right,FALSE,Happy but Unwise
+650,75,83,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Neither Agree nor Disagree,Strongly Agree,0,No,Too Low,TRUE,Wise but Unhappy
+651,27,52,Republican,Strongly Approve,College degree,Unlikely,Not Real At All,0,Somewhat Disagree,Strongly Agree,1,No,Too Low,TRUE,Happy but Unwise
+652,32,53,Independent,Somewhat Approve,Some college,Unlikely,Real but not Caused by People,0,Somewhat Agree,Somewhat Agree,2,No,About Right,TRUE,Happy but Unwise
+653,93,66,Democrat,Strongly disapprove,Graduate degree,Likely,Real and Caused by People,3,Strongly Agree,Strongly Agree,20,No,Too Low,TRUE,Wise but Unhappy
+654,29,37,Independent,Strongly disapprove,College degree,Unlikely,Not Real At All,2,Somewhat Disagree,Strongly Agree,2,Yes,Too Low,FALSE,Happy but Unwise
+655,131,53,Democrat,Strongly disapprove,High school,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,0,No,Too Low,TRUE,Happy but Unwise
+656,168,65,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,3,Strongly Agree,Strongly Agree,5,Yes,Too Low,TRUE,Happy but Unwise
+657,62,18,Democrat,Strongly disapprove,High school,Unlikely,Real and Caused by People,5,Strongly Agree,Somewhat Agree,50,No,Too Low,TRUE,Wise but Unhappy
+658,10,43,Independent,Somewhat disapprove,College degree,Unlikely,Not Real At All,0,Somewhat Disagree,Somewhat Disagree,50,No,Too High,TRUE,Happy but Unwise
+659,24,65,Independent,Neither approve nor disapprove,Some college,Unlikely,Real and Caused by People,2,Somewhat Agree,Strongly Agree,20,No,About Right,FALSE,Happy but Unwise
+660,15,86,Independent,Strongly Approve,High school,Likely,Real but not Caused by People,0,Somewhat Disagree,Somewhat Agree,20,No,About Right,TRUE,Happy but Unwise
+661,107,76,Democrat,Strongly Approve,Graduate degree,Likely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,25,No,Too Low,FALSE,Happy but Unwise
+662,204,35,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,45,No,Too Low,TRUE,Wise but Unhappy
+663,75,40,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Somewhat Agree,20,Yes,Too Low,FALSE,Wise but Unhappy
+664,12,48,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,4,Somewhat Agree,Somewhat Agree,15,No,About Right,TRUE,Wise but Unhappy
+665,144,36,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,7,No,Too Low,TRUE,Wise but Unhappy
+666,79,48,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,4,Somewhat Agree,Somewhat Disagree,3,No,Too Low,FALSE,Wise but Unhappy
+667,28,68,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,50,No,Too Low,FALSE,Wise but Unhappy
+668,129,51,Republican,Strongly Approve,Some college,Unlikely,Real but not Caused by People,1,Strongly Disagree,Somewhat Agree,3,Yes,Too High,TRUE,Happy but Unwise
+669,25,53,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,4,Strongly Agree,Somewhat Disagree,10,No,About Right,TRUE,Wise but Unhappy
+670,5,43,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,1,Strongly Agree,Somewhat Agree,2,No,Too Low,TRUE,Wise but Unhappy
+671,10,76,Independent,Strongly Approve,High school,Likely,Real and Caused by People,0,Somewhat Disagree,Strongly Agree,0,Yes,About Right,TRUE,Happy but Unwise
+672,107,44,Independent,Strongly disapprove,College degree,Likely,Real and Caused by People,0,Strongly Agree,Strongly Agree,20,No,Too Low,FALSE,Happy but Unwise
+673,46,75,Republican,Somewhat Approve,Some college,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,4,No,About Right,TRUE,Happy but Unwise
+674,61,35,Democrat,Strongly disapprove,Some college,Likely,Real and Caused by People,0,Strongly Agree,Strongly Disagree,20,No,Too Low,TRUE,Wise but Unhappy
+675,44,43,Independent,Strongly Approve,Some college,Likely,Real but not Caused by People,4,Somewhat Disagree,Somewhat Agree,3,No,About Right,TRUE,Wise but Unhappy
+676,155,30,Independent,Somewhat Approve,Some college,Unlikely,Real but not Caused by People,3,Somewhat Disagree,Strongly Agree,7,No,Too Low,FALSE,Wise but Unhappy
+677,58,21,Democrat,Somewhat Approve,High school,Likely,Not Real At All,0,Somewhat Agree,Somewhat Agree,0,No,About Right,TRUE,Happy but Unwise
+678,132,34,Independent,Strongly Approve,College degree,Unlikely,Real but not Caused by People,0,Somewhat Disagree,Strongly Agree,5,No,About Right,FALSE,Happy but Unwise
+679,126,43,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,3,Strongly Agree,Strongly Agree,3,No,Too Low,FALSE,Wise but Unhappy
+680,37,45,Democrat,Strongly disapprove,High school,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,0,No,Too High,TRUE,Wise but Unhappy
+681,60,20,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Somewhat Disagree,Strongly Agree,3,No,About Right,FALSE,Wise but Unhappy
+682,81,47,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,1,Strongly Agree,Somewhat Disagree,6,Yes,Too Low,FALSE,Happy but Unwise
+683,77,28,Republican,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Somewhat Agree,Somewhat Disagree,5,No,About Right,FALSE,Wise but Unhappy
+684,109,22,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,40,No,Too Low,TRUE,Wise but Unhappy
+685,71,42,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,1,Strongly Agree,Somewhat Agree,10,No,About Right,FALSE,Wise but Unhappy
+686,122,37,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,5,No,Too Low,TRUE,Wise but Unhappy
+687,39,50,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,20,No,Too Low,FALSE,Wise but Unhappy
+688,61,33,Democrat,Strongly disapprove,College degree,Likely,Real and Caused by People,3,Somewhat Disagree,Strongly Disagree,15,Yes,About Right,FALSE,Wise but Unhappy
+689,140,47,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,80,No,Too Low,FALSE,Wise but Unhappy
+690,105,46,Democrat,Strongly disapprove,Some college,Likely,Real and Caused by People,2,Strongly Agree,Strongly Agree,0,Yes,Too Low,TRUE,Happy but Unwise
+691,37,27,Republican,Strongly Approve,College degree,Likely,Real and Caused by People,4,Somewhat Agree,Somewhat Agree,150,Yes,Too Low,TRUE,Happy but Unwise
+692,113,21,Democrat,Strongly disapprove,Some college,Likely,Real and Caused by People,0,Strongly Disagree,Strongly Agree,0,Yes,Too Low,TRUE,Wise but Unhappy
+693,75,75,Republican,Strongly Approve,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Neither Agree nor Disagree,7,Yes,Too Low,TRUE,Wise but Unhappy
+694,152,24,Independent,Somewhat disapprove,College degree,Unlikely,Real and Caused by People,3,Strongly Agree,Strongly Agree,15,Yes,Too Low,TRUE,Happy but Unwise
+695,74,24,Republican,Somewhat Approve,Some college,Unlikely,Real and Caused by People,1,Somewhat Disagree,Strongly Agree,10,No,Too Low,TRUE,Wise but Unhappy
+696,42,30,Independent,Somewhat disapprove,Some college,Likely,Real and Caused by People,2,Somewhat Agree,Strongly Agree,10,No,Too Low,TRUE,Happy but Unwise
+697,63,23,Independent,Somewhat Approve,High school,Likely,Real and Caused by People,1,Somewhat Agree,Strongly Agree,200,No,About Right,TRUE,Wise but Unhappy
+698,32,51,Democrat,Somewhat disapprove,High school,Unlikely,Real and Caused by People,5,Somewhat Agree,Strongly Agree,1,Yes,Too Low,TRUE,Wise but Unhappy
+699,58,53,Independent,Strongly Approve,High school,Unlikely,Real but not Caused by People,0,Strongly Disagree,Strongly Agree,0,Yes,Too High,TRUE,Happy but Unwise
+700,135,51,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,3,Yes,Too Low,FALSE,Wise but Unhappy
+701,81,66,Independent,Neither approve nor disapprove,High school,Likely,Real and Caused by People,0,Somewhat Disagree,Strongly Agree,100,No,Too High,FALSE,Happy but Unwise
+702,46,50,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real but not Caused by People,0,Somewhat Agree,Somewhat Agree,5,No,Too Low,TRUE,Wise but Unhappy
+703,76,24,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,25,No,Too Low,FALSE,Wise but Unhappy
+704,95,47,Republican,Neither approve nor disapprove,Graduate degree,Unlikely,Real but not Caused by People,0,Neither Agree nor Disagree,Strongly Agree,100,No,About Right,TRUE,Happy but Unwise
+705,23,50,Independent,Strongly Approve,Graduate degree,Likely,Not Real At All,5,Somewhat Agree,Somewhat Agree,50,No,Too Low,TRUE,Wise but Unhappy
+706,38,41,Republican,Neither approve nor disapprove,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,5,No,About Right,TRUE,Happy but Unwise
+707,68,86,Republican,Strongly Approve,Graduate degree,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,25,No,About Right,TRUE,Happy but Unwise
+708,177,54,Republican,Somewhat Approve,Graduate degree,Unlikely,Real and Caused by People,3,Somewhat Agree,Strongly Agree,6,No,About Right,FALSE,Happy but Unwise
+709,79,69,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Somewhat Agree,Somewhat Agree,4,Yes,Too High,TRUE,Happy but Unwise
+710,46,47,Independent,Strongly disapprove,High school,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,5,Yes,Too Low,FALSE,Happy but Unwise
+711,106,37,Independent,Strongly Approve,Some college,Unlikely,Real but not Caused by People,4,Neither Agree nor Disagree,Strongly Agree,1,Yes,About Right,TRUE,Wise but Unhappy
+712,73,38,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,15,No,Too Low,FALSE,Wise but Unhappy
+713,18,46,Republican,Strongly Approve,College degree,Unlikely,Not Real At All,3,Strongly Disagree,Somewhat Disagree,1,No,About Right,TRUE,Happy but Unwise
+714,17,52,Republican,Strongly Approve,High school,Unlikely,Real but not Caused by People,0,Strongly Disagree,Somewhat Agree,5,No,Too High,FALSE,Wise but Unhappy
+715,135,65,Republican,Strongly Approve,College degree,Unlikely,Not Real At All,0,Somewhat Disagree,Strongly Disagree,0,No,Too High,FALSE,Happy but Unwise
+716,61,35,Republican,Strongly Approve,College degree,Unlikely,Not Real At All,5,Somewhat Agree,Strongly Agree,2,No,About Right,FALSE,Happy but Unwise
+717,57,50,Republican,Strongly Approve,College degree,Likely,Not Real At All,3,Somewhat Disagree,Somewhat Disagree,0,No,Too High,FALSE,Happy but Unwise
+718,56,51,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,200,Yes,Too Low,TRUE,Wise but Unhappy
+719,14,96,Independent,Strongly Approve,Graduate degree,Likely,Real and Caused by People,5,Strongly Agree,Somewhat Agree,1000,Yes,About Right,TRUE,Happy but Unwise
+720,98,47,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,7,No,Too Low,TRUE,Happy but Unwise
+721,139,30,Independent,Somewhat Approve,College degree,Unlikely,Real but not Caused by People,2,Strongly Agree,Somewhat Agree,5,No,About Right,TRUE,Happy but Unwise
+722,142,53,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,5,No,Too Low,FALSE,Wise but Unhappy
+723,10,86,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,150,No,Too Low,FALSE,Wise but Unhappy
+724,211,48,Republican,Somewhat Approve,Some college,Unlikely,Real and Caused by People,2,Somewhat Agree,Strongly Agree,1,Yes,About Right,TRUE,Happy but Unwise
+725,47,51,Independent,Strongly Approve,High school,Likely,Not Real At All,5,Strongly Disagree,Strongly Agree,0,No,Too High,TRUE,Happy but Unwise
+726,72,65,Republican,Strongly disapprove,High school,Likely,Real and Caused by People,3,Strongly Disagree,Strongly Agree,50,Yes,Too Low,TRUE,Happy but Unwise
+727,39,45,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,3,Strongly Agree,Somewhat Agree,0,Yes,Too Low,TRUE,Happy but Unwise
+728,55,47,Republican,Strongly Approve,Some college,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,1,Yes,Too High,TRUE,Happy but Unwise
+729,116,48,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,1,Somewhat Agree,Somewhat Agree,5,No,Too Low,FALSE,Happy but Unwise
+730,9,48,Democrat,Strongly disapprove,High school,Unlikely,Not Real At All,0,Somewhat Disagree,Strongly Agree,0,Yes,About Right,TRUE,Happy but Unwise
+731,35,30,Republican,Strongly Approve,High school,Unlikely,Not Real At All,4,Strongly Agree,Strongly Agree,0,No,About Right,FALSE,Happy but Unwise
+732,5,48,Democrat,Somewhat disapprove,Other,Unlikely,Real and Caused by People,1,Somewhat Agree,Strongly Disagree,30,Yes,Too Low,TRUE,Happy but Unwise
+733,23,51,Democrat,Strongly disapprove,Some college,Unlikely,Real but not Caused by People,2,Strongly Agree,Strongly Agree,0,No,About Right,TRUE,Wise but Unhappy
+734,164,35,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,10,No,Too Low,FALSE,Wise but Unhappy
+735,90,48,Democrat,Somewhat disapprove,Some college,Unlikely,Real and Caused by People,0,Strongly Agree,Somewhat Disagree,1,Yes,Too Low,TRUE,Happy but Unwise
+736,9,22,Independent,Strongly Approve,High school,Likely,Not Real At All,3,Strongly Agree,Strongly Disagree,200,No,About Right,FALSE,Happy but Unwise
+737,131,51,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Disagree,40,No,Too Low,FALSE,Wise but Unhappy
+738,118,73,Republican,Strongly Approve,Some college,Unlikely,Not Real At All,0,Somewhat Disagree,Strongly Disagree,5,No,Too High,TRUE,Happy but Unwise
+739,80,23,Independent,Strongly disapprove,College degree,Likely,Real and Caused by People,2,Somewhat Agree,Somewhat Agree,8,Yes,Too Low,TRUE,Wise but Unhappy
+740,69,51,Republican,Strongly Approve,Some college,Unlikely,Not Real At All,5,Strongly Disagree,Strongly Disagree,15,Yes,Too High,TRUE,Wise but Unhappy
+741,57,42,Republican,Strongly Approve,High school,Unlikely,Real and Caused by People,4,Somewhat Agree,Somewhat Agree,1,Yes,Too Low,FALSE,Wise but Unhappy
+742,124,84,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,30,No,Too Low,FALSE,Wise but Unhappy
+743,54,77,Republican,Strongly Approve,High school,Likely,Real but not Caused by People,0,Somewhat Disagree,Strongly Agree,260,No,Too High,TRUE,Happy but Unwise
+744,57,37,Republican,Strongly Approve,College degree,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,4,Yes,Too Low,FALSE,Happy but Unwise
+745,220,50,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Strongly Agree,Somewhat Agree,0,Yes,Too Low,FALSE,Wise but Unhappy
+746,152,30,Republican,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,3,Strongly Agree,Strongly Agree,4,Yes,About Right,TRUE,Happy but Unwise
+747,121,31,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,10,Yes,About Right,TRUE,Happy but Unwise
+748,104,24,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,2,Somewhat Agree,Strongly Agree,20,Yes,Too Low,FALSE,Wise but Unhappy
+749,140,26,Independent,Somewhat disapprove,Graduate degree,Unlikely,Real and Caused by People,2,Somewhat Agree,Strongly Agree,5,No,Too Low,TRUE,Happy but Unwise
+750,114,35,Republican,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,2,Somewhat Agree,Strongly Agree,10,No,About Right,FALSE,Wise but Unhappy
+751,122,18,Republican,Somewhat Approve,Some college,Likely,Real but not Caused by People,4,Somewhat Disagree,Somewhat Agree,9,No,Too High,FALSE,Happy but Unwise
+752,113,77,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,250,Yes,Too Low,FALSE,Happy but Unwise
+753,135,60,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,6,No,Too Low,FALSE,Wise but Unhappy
+754,68,58,Republican,Strongly Approve,Some college,Unlikely,Not Real At All,2,Somewhat Agree,Somewhat Agree,30,No,About Right,TRUE,Happy but Unwise
+755,79,41,Independent,Strongly disapprove,Some college,Likely,Real but not Caused by People,3,Strongly Agree,Strongly Agree,0,Yes,About Right,TRUE,Happy but Unwise
+756,105,71,Independent,Strongly disapprove,Graduate degree,Unlikely,Not Real At All,3,Strongly Disagree,Strongly Disagree,0,Yes,About Right,TRUE,Wise but Unhappy
+757,85,61,Democrat,Strongly disapprove,Some college,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,0,Yes,Too High,TRUE,Wise but Unhappy
+758,62,34,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,10,No,Too Low,TRUE,Wise but Unhappy
+759,69,61,Republican,Strongly Approve,College degree,Unlikely,Not Real At All,2,Strongly Disagree,Somewhat Disagree,3,No,Too High,TRUE,Wise but Unhappy
+760,143,24,Independent,Somewhat Approve,Graduate degree,Likely,Real and Caused by People,4,Somewhat Agree,Strongly Agree,12,No,Too Low,FALSE,Wise but Unhappy
+761,52,70,Independent,Somewhat disapprove,High school,Unlikely,Real and Caused by People,3,Somewhat Agree,Strongly Agree,2,Yes,Too Low,TRUE,Happy but Unwise
+762,74,21,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,25,No,Too Low,FALSE,Wise but Unhappy
+763,43,67,Independent,Strongly disapprove,Some college,Likely,Real and Caused by People,5,Strongly Agree,Somewhat Agree,0,No,About Right,FALSE,Happy but Unwise
+764,124,70,Independent,Strongly Approve,College degree,Unlikely,Real but not Caused by People,2,Somewhat Disagree,Strongly Agree,5,No,About Right,TRUE,Wise but Unhappy
+765,103,80,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,30,No,Too Low,FALSE,Wise but Unhappy
+766,116,41,Independent,Strongly disapprove,High school,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Disagree,5,No,Too Low,FALSE,Wise but Unhappy
+767,220,45,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,10,Yes,Too Low,FALSE,Wise but Unhappy
+768,74,54,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,5,No,Too Low,TRUE,Wise but Unhappy
+769,132,36,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,10,No,Too Low,FALSE,Wise but Unhappy
+770,39,38,Independent,Strongly disapprove,Some college,Likely,Not Real At All,1,Somewhat Disagree,Somewhat Disagree,5,Yes,Too Low,TRUE,Happy but Unwise
+771,120,42,Independent,Somewhat Approve,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,0,No,Too Low,TRUE,Wise but Unhappy
+772,64,23,Democrat,Neither approve nor disapprove,Some college,Unlikely,Real and Caused by People,4,Somewhat Agree,Strongly Agree,0,Yes,Too Low,FALSE,Wise but Unhappy
+773,85,63,Republican,Strongly disapprove,College degree,Likely,Real and Caused by People,0,Strongly Agree,Strongly Agree,0,Yes,Too Low,TRUE,Happy but Unwise
+774,103,32,Independent,Strongly disapprove,College degree,Likely,Real and Caused by People,3,Somewhat Agree,Strongly Agree,10,No,Too High,FALSE,Wise but Unhappy
+775,84,62,Independent,Somewhat Approve,College degree,Unlikely,Real but not Caused by People,3,Somewhat Agree,Strongly Agree,10,No,Too Low,TRUE,Happy but Unwise
+776,114,47,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,2,Somewhat Agree,Somewhat Agree,200,Yes,Too Low,FALSE,Wise but Unhappy
+777,142,34,Independent,Somewhat Approve,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,18,No,Too Low,TRUE,Wise but Unhappy
+778,100,23,Independent,Somewhat Approve,Some college,Unlikely,Real and Caused by People,1,Strongly Disagree,Somewhat Disagree,2,Yes,About Right,FALSE,Wise but Unhappy
+779,79,27,Independent,Strongly disapprove,Some college,Unlikely,Real but not Caused by People,4,Strongly Agree,Strongly Agree,20,Yes,About Right,TRUE,Happy but Unwise
+780,70,48,Democrat,Strongly disapprove,Some college,Unlikely,Real but not Caused by People,0,Somewhat Agree,Somewhat Agree,1,Yes,About Right,TRUE,Happy but Unwise
+781,74,36,Democrat,Somewhat Approve,Some college,Unlikely,Not Real At All,3,Strongly Agree,Strongly Agree,2,No,About Right,FALSE,Wise but Unhappy
+782,82,47,Republican,Strongly Approve,College degree,Unlikely,Not Real At All,0,Neither Agree nor Disagree,Somewhat Agree,20,Yes,About Right,TRUE,Happy but Unwise
+783,129,48,Republican,Strongly Approve,Graduate degree,Unlikely,Real but not Caused by People,1,Strongly Agree,Strongly Agree,4,No,Too Low,FALSE,Happy but Unwise
+784,104,54,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,4,No,Too Low,TRUE,Wise but Unhappy
+785,121,45,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,60,Yes,About Right,FALSE,Happy but Unwise
+786,124,50,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,20,No,Too Low,FALSE,Wise but Unhappy
+787,80,35,Democrat,Neither approve nor disapprove,College degree,Unlikely,Real and Caused by People,2,Somewhat Agree,Strongly Agree,3,Yes,About Right,FALSE,Wise but Unhappy
+788,43,48,Independent,Somewhat disapprove,High school,Likely,Real and Caused by People,2,Somewhat Disagree,Somewhat Agree,1,No,Too High,FALSE,Happy but Unwise
+789,45,50,Independent,Strongly disapprove,High school,Unlikely,Real and Caused by People,3,Strongly Disagree,Somewhat Agree,2,Yes,Too High,TRUE,Happy but Unwise
+790,113,38,Independent,Neither approve nor disapprove,Some college,Unlikely,Real and Caused by People,0,Somewhat Agree,Somewhat Disagree,10,No,Too Low,FALSE,Happy but Unwise
+791,116,36,Independent,Strongly disapprove,Graduate degree,Likely,Real and Caused by People,2,Somewhat Agree,Somewhat Agree,7,No,About Right,FALSE,Happy but Unwise
+792,124,67,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,70,Yes,Too Low,FALSE,Wise but Unhappy
+793,176,38,Republican,Neither approve nor disapprove,Graduate degree,Unlikely,Real and Caused by People,3,Strongly Agree,Strongly Agree,3,No,Too Low,FALSE,Wise but Unhappy
+794,92,58,Independent,Somewhat disapprove,Graduate degree,Unlikely,Not Real At All,0,Somewhat Disagree,Strongly Agree,20,No,Too High,FALSE,Happy but Unwise
+795,117,42,Republican,Strongly Approve,Some college,Unlikely,Real but not Caused by People,0,Strongly Disagree,Somewhat Agree,4,No,About Right,TRUE,Happy but Unwise
+796,137,51,Independent,Somewhat Approve,College degree,Unlikely,Not Real At All,0,Somewhat Disagree,Neither Agree nor Disagree,2,No,Too Low,FALSE,Happy but Unwise
+797,39,48,Independent,Neither approve nor disapprove,Some college,Unlikely,Not Real At All,4,Somewhat Agree,Strongly Agree,40,Yes,Too Low,TRUE,Happy but Unwise
+798,80,37,Independent,Strongly disapprove,High school,Unlikely,Real but not Caused by People,0,Somewhat Disagree,Strongly Agree,100,No,Too Low,TRUE,Happy but Unwise
+799,60,50,Democrat,Strongly disapprove,High school,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,5,No,About Right,TRUE,Wise but Unhappy
+800,114,45,Independent,Somewhat Approve,Some college,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,30,Yes,Too Low,FALSE,Happy but Unwise
+801,89,52,Republican,Strongly Approve,Some college,Unlikely,Real but not Caused by People,2,Somewhat Agree,Strongly Agree,50,No,About Right,FALSE,Happy but Unwise
+802,11,41,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,5,Somewhat Agree,Strongly Agree,200,No,Too Low,TRUE,Happy but Unwise
+803,16,65,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,1,Somewhat Agree,Strongly Agree,2,No,About Right,TRUE,Wise but Unhappy
+804,125,53,Republican,Somewhat Approve,College degree,Unlikely,Real and Caused by People,0,Somewhat Disagree,Strongly Agree,0,No,Too Low,FALSE,Happy but Unwise
+805,92,43,Independent,Neither approve nor disapprove,High school,Unlikely,Real and Caused by People,4,Somewhat Disagree,Strongly Disagree,0,No,Too Low,TRUE,Happy but Unwise
+806,161,28,Independent,Somewhat disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,1,No,About Right,FALSE,Happy but Unwise
+807,74,22,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,2,Somewhat Agree,Strongly Agree,6,No,Too Low,FALSE,Happy but Unwise
+808,148,58,Independent,Neither approve nor disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Somewhat Agree,40,No,Too Low,TRUE,Happy but Unwise
+809,85,58,Republican,Somewhat Approve,High school,Likely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,0,Yes,Too Low,TRUE,Happy but Unwise
+810,44,54,Democrat,Strongly Approve,Some college,Unlikely,Real and Caused by People,0,Strongly Agree,Somewhat Agree,0,No,Too Low,FALSE,Wise but Unhappy
+811,165,65,Independent,Somewhat disapprove,Graduate degree,Unlikely,Real but not Caused by People,0,Somewhat Disagree,Strongly Agree,5,No,About Right,FALSE,Happy but Unwise
+812,175,92,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,100,Yes,Too Low,TRUE,Wise but Unhappy
+813,14,65,Independent,Strongly Approve,Graduate degree,Unlikely,Not Real At All,0,Strongly Disagree,Strongly Agree,6,No,Too High,TRUE,Happy but Unwise
+814,179,51,Republican,Strongly Approve,College degree,Unlikely,Not Real At All,1,Somewhat Disagree,Somewhat Agree,5,No,About Right,FALSE,Happy but Unwise
+815,62,56,Democrat,Strongly Approve,High school,Unlikely,Real and Caused by People,3,Strongly Disagree,Strongly Disagree,16,Yes,Too High,TRUE,Happy but Unwise
+816,179,49,Independent,Somewhat disapprove,College degree,Likely,Real and Caused by People,0,Somewhat Agree,Somewhat Agree,15,Yes,Too Low,FALSE,Happy but Unwise
+817,39,49,Republican,Somewhat Approve,High school,Unlikely,Real but not Caused by People,1,Somewhat Agree,Strongly Agree,3,Yes,Too Low,TRUE,Happy but Unwise
+818,85,63,Independent,Strongly disapprove,High school,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,0,Yes,Too Low,FALSE,Wise but Unhappy
+819,45,58,Independent,Somewhat Approve,High school,Likely,Real and Caused by People,1,Somewhat Agree,Strongly Agree,3,No,About Right,TRUE,Wise but Unhappy
+820,37,59,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,1,Strongly Agree,Somewhat Agree,1,Yes,Too Low,FALSE,Wise but Unhappy
+821,148,60,Republican,Strongly Approve,College degree,Unlikely,Real but not Caused by People,0,Somewhat Disagree,Strongly Agree,20,No,About Right,FALSE,Happy but Unwise
+822,80,55,Republican,Strongly Approve,College degree,Unlikely,Real but not Caused by People,3,Somewhat Agree,Strongly Agree,20,Yes,About Right,TRUE,Happy but Unwise
+823,40,61,Democrat,Strongly disapprove,Some college,Likely,Real but not Caused by People,2,Somewhat Disagree,Strongly Agree,100,No,About Right,TRUE,Wise but Unhappy
+824,181,53,Republican,Somewhat disapprove,High school,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,2,Yes,About Right,FALSE,Happy but Unwise
+825,65,55,Independent,Strongly Approve,College degree,Unlikely,Real and Caused by People,2,Somewhat Agree,Strongly Agree,10,No,About Right,TRUE,Happy but Unwise
+826,76,57,Democrat,Somewhat disapprove,Some college,Unlikely,Real and Caused by People,1,Somewhat Disagree,Somewhat Agree,8,Yes,Too Low,TRUE,Happy but Unwise
+827,90,56,Democrat,Strongly Approve,College degree,Unlikely,Real and Caused by People,0,Strongly Disagree,Strongly Agree,4,No,About Right,TRUE,Happy but Unwise
+828,74,49,Republican,Strongly Approve,Some college,Unlikely,Not Real At All,2,Somewhat Disagree,Strongly Agree,12,No,About Right,TRUE,Wise but Unhappy
+829,162,50,Republican,Strongly Approve,College degree,Likely,Real but not Caused by People,1,Somewhat Agree,Strongly Disagree,20,No,Too High,FALSE,Happy but Unwise
+830,45,83,Independent,Strongly Approve,High school,Unlikely,Not Real At All,0,Strongly Disagree,Somewhat Agree,12,Yes,Too High,FALSE,Happy but Unwise
+831,144,45,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,25,No,Too Low,TRUE,Happy but Unwise
+832,100,57,Democrat,Strongly disapprove,Some college,Likely,Real and Caused by People,1,Strongly Agree,Strongly Agree,20,Yes,Too Low,FALSE,Wise but Unhappy
+833,74,80,Republican,Strongly Approve,Some college,Unlikely,Not Real At All,0,Somewhat Disagree,Strongly Agree,0,No,About Right,FALSE,Happy but Unwise
+834,103,70,Independent,Strongly Approve,Graduate degree,Unlikely,Real but not Caused by People,0,Somewhat Agree,Somewhat Agree,30,Yes,Too High,TRUE,Happy but Unwise
+835,61,50,Independent,Somewhat disapprove,High school,Unlikely,Real and Caused by People,4,Somewhat Agree,Strongly Agree,1,No,About Right,FALSE,Happy but Unwise
+836,109,42,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,12,No,Too Low,TRUE,Wise but Unhappy
+837,79,54,Independent,Strongly disapprove,Some college,Unlikely,Real but not Caused by People,0,Somewhat Agree,Somewhat Disagree,12,Yes,Too Low,TRUE,Happy but Unwise
+838,101,72,Republican,Strongly Approve,Graduate degree,Unlikely,Not Real At All,0,Somewhat Agree,Strongly Agree,5,No,About Right,TRUE,Happy but Unwise
+839,113,49,Republican,Strongly Approve,Graduate degree,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,12,No,About Right,FALSE,Happy but Unwise
+840,86,60,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,3,Strongly Agree,Somewhat Agree,6,No,Too Low,TRUE,Happy but Unwise
+841,32,54,Democrat,Somewhat disapprove,High school,Unlikely,Real and Caused by People,3,Somewhat Agree,Strongly Agree,2,Yes,About Right,FALSE,Happy but Unwise
+842,103,54,Republican,Strongly Approve,Some college,Unlikely,Real and Caused by People,0,Somewhat Disagree,Strongly Agree,1,No,Too High,FALSE,Happy but Unwise
+843,101,49,Democrat,Somewhat Approve,High school,Likely,Real and Caused by People,0,Strongly Agree,Strongly Agree,0,Yes,Too Low,FALSE,Wise but Unhappy
+844,98,27,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,2,Strongly Agree,Somewhat Agree,2,No,Too Low,TRUE,Happy but Unwise
+845,77,30,Independent,Strongly Approve,High school,Likely,Real but not Caused by People,2,Somewhat Agree,Strongly Agree,20,No,About Right,FALSE,Wise but Unhappy
+846,126,25,Independent,Somewhat Approve,Other,Unlikely,Real but not Caused by People,2,Somewhat Disagree,Strongly Agree,3,No,Too High,FALSE,Wise but Unhappy
+847,37,60,Independent,Strongly Approve,Some college,Likely,Real but not Caused by People,3,Somewhat Agree,Somewhat Disagree,4,Yes,About Right,FALSE,Happy but Unwise
+848,157,46,Republican,Strongly disapprove,College degree,Unlikely,Real and Caused by People,3,Somewhat Disagree,Somewhat Disagree,6,Yes,About Right,TRUE,Wise but Unhappy
+849,161,35,Democrat,Strongly disapprove,College degree,Unlikely,Real but not Caused by People,4,Somewhat Agree,Strongly Agree,30,Yes,Too High,TRUE,Wise but Unhappy
+850,41,62,Republican,Strongly Approve,Graduate degree,Likely,Not Real At All,0,Strongly Disagree,Somewhat Disagree,20,No,About Right,FALSE,Happy but Unwise
+851,103,60,Republican,Strongly Approve,College degree,Unlikely,Not Real At All,0,Somewhat Agree,Somewhat Agree,4,No,About Right,TRUE,Wise but Unhappy
+852,91,65,Republican,Strongly Approve,College degree,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,0,No,About Right,FALSE,Wise but Unhappy
+853,188,47,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,1,Somewhat Agree,Strongly Agree,8,No,Too Low,FALSE,Happy but Unwise
+854,21,43,Independent,Strongly disapprove,High school,Likely,Not Real At All,4,Somewhat Agree,Strongly Agree,4,No,About Right,TRUE,Happy but Unwise
+855,103,58,Independent,Somewhat Approve,Some college,Unlikely,Real but not Caused by People,0,Somewhat Disagree,Strongly Agree,5,No,Too High,FALSE,Happy but Unwise
+856,27,59,Independent,Neither approve nor disapprove,Graduate degree,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,16,No,Too Low,TRUE,Wise but Unhappy
+857,326,58,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,1,Somewhat Agree,Strongly Agree,40,Yes,Too Low,FALSE,Wise but Unhappy
+858,74,66,Democrat,Strongly disapprove,Some college,Likely,Real and Caused by People,0,Strongly Agree,Strongly Agree,12,Yes,Too Low,FALSE,Happy but Unwise
+859,500,42,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,15,No,Too Low,FALSE,Wise but Unhappy
+860,86,60,Democrat,Strongly disapprove,High school,Likely,Real and Caused by People,0,Strongly Agree,Strongly Agree,10,No,Too High,TRUE,Happy but Unwise
+861,77,55,Independent,Strongly Approve,Graduate degree,Unlikely,Real but not Caused by People,5,Strongly Agree,Strongly Agree,25,Yes,Too Low,TRUE,Happy but Unwise
+862,500,70,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,10,No,About Right,FALSE,Wise but Unhappy
+863,47,47,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,5,Strongly Agree,Strongly Agree,2,No,Too Low,TRUE,Happy but Unwise
+864,88,62,Independent,Neither approve nor disapprove,High school,Unlikely,Real and Caused by People,3,Somewhat Disagree,Somewhat Agree,30,No,About Right,FALSE,Happy but Unwise
+865,56,53,Independent,Somewhat disapprove,Other,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,30,Yes,About Right,TRUE,Happy but Unwise
+866,68,72,Republican,Strongly disapprove,Graduate degree,Likely,Real and Caused by People,0,Strongly Agree,Strongly Agree,10,No,Too Low,TRUE,Happy but Unwise
+867,153,60,Republican,Neither approve nor disapprove,Some college,Unlikely,Real and Caused by People,0,Somewhat Disagree,Somewhat Disagree,5,Yes,About Right,FALSE,Wise but Unhappy
+868,64,51,Republican,Strongly Approve,Some college,Unlikely,Real and Caused by People,3,Strongly Agree,Strongly Agree,100,No,About Right,TRUE,Wise but Unhappy
+869,138,51,Republican,Strongly Approve,High school,Unlikely,Real but not Caused by People,1,Somewhat Disagree,Strongly Agree,6,No,About Right,TRUE,Wise but Unhappy
+870,79,50,Democrat,Strongly Approve,College degree,Unlikely,Real but not Caused by People,0,Strongly Agree,Strongly Agree,20,Yes,Too Low,FALSE,Wise but Unhappy
+871,64,60,Republican,Somewhat Approve,College degree,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,3,No,About Right,FALSE,Wise but Unhappy
+872,124,50,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,50,No,Too Low,FALSE,Wise but Unhappy
+873,113,58,Democrat,Strongly disapprove,Some college,Likely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,2,No,Too Low,TRUE,Wise but Unhappy
+874,155,55,Independent,Somewhat Approve,College degree,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,6,No,Too Low,FALSE,Wise but Unhappy
+875,202,47,Independent,Somewhat disapprove,Graduate degree,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,22,No,Too Low,FALSE,Wise but Unhappy
+876,71,61,Independent,Strongly Approve,Some college,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,0,No,Too High,FALSE,Happy but Unwise
+877,65,51,Democrat,Strongly disapprove,Some college,Unlikely,Real but not Caused by People,0,Somewhat Agree,Somewhat Disagree,0,No,Too Low,TRUE,Happy but Unwise
+878,103,56,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Somewhat Disagree,Strongly Disagree,50,Yes,About Right,FALSE,Wise but Unhappy
+879,43,69,Independent,Strongly Approve,High school,Unlikely,Real and Caused by People,0,Somewhat Disagree,Somewhat Agree,40,No,About Right,TRUE,Happy but Unwise
+880,142,50,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,12,No,Too Low,TRUE,Wise but Unhappy
+881,58,52,Republican,Strongly Approve,Graduate degree,Likely,Not Real At All,0,Strongly Agree,Somewhat Agree,4,No,Too High,TRUE,Happy but Unwise
+882,45,18,Democrat,Somewhat disapprove,High school,Unlikely,Real and Caused by People,4,Strongly Disagree,Somewhat Disagree,2,No,Too High,FALSE,Happy but Unwise
+883,90,63,Independent,Strongly Approve,Some college,Unlikely,Real but not Caused by People,2,Strongly Agree,Strongly Agree,2,No,Too Low,FALSE,Happy but Unwise
+884,69,55,Republican,Strongly Approve,Some college,Unlikely,Not Real At All,0,Strongly Disagree,Strongly Agree,60,No,Too High,TRUE,Wise but Unhappy
+885,13,45,Democrat,Strongly disapprove,College degree,Likely,Real and Caused by People,0,Somewhat Agree,Somewhat Agree,12,No,Too Low,TRUE,Happy but Unwise
+886,100,50,Republican,Strongly Approve,Graduate degree,Unlikely,Real but not Caused by People,0,Strongly Agree,Strongly Agree,12,No,About Right,FALSE,Wise but Unhappy
+887,25,56,Democrat,Strongly disapprove,Other,Likely,Real and Caused by People,2,Somewhat Disagree,Somewhat Agree,1,Yes,Too High,TRUE,Wise but Unhappy
+888,57,66,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,3,Strongly Agree,Strongly Agree,20,No,Too Low,FALSE,Wise but Unhappy
+889,80,55,Independent,Neither approve nor disapprove,High school,Unlikely,Real and Caused by People,5,Neither Agree nor Disagree,Strongly Agree,3,No,Too Low,FALSE,Happy but Unwise
+890,100,27,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,1,Somewhat Agree,Strongly Agree,17,Yes,Too Low,FALSE,Wise but Unhappy
+891,71,21,Independent,Somewhat Approve,Some college,Likely,Real and Caused by People,3,Strongly Agree,Somewhat Agree,13,No,Too Low,FALSE,Wise but Unhappy
+892,55,58,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,200,Yes,Too Low,TRUE,Wise but Unhappy
+893,146,46,Independent,Strongly disapprove,College degree,Likely,Real and Caused by People,1,Strongly Disagree,Strongly Disagree,5,Yes,About Right,FALSE,Happy but Unwise
+894,79,37,Independent,Strongly disapprove,High school,Unlikely,Real and Caused by People,5,Somewhat Agree,Strongly Disagree,7,Yes,About Right,FALSE,Happy but Unwise
+895,54,21,Republican,Somewhat Approve,Some college,Likely,Real and Caused by People,0,Somewhat Disagree,Strongly Agree,0,No,About Right,TRUE,Happy but Unwise
+896,41,33,Independent,Somewhat Approve,College degree,Unlikely,Real and Caused by People,5,Strongly Disagree,Strongly Disagree,50,Yes,About Right,TRUE,Wise but Unhappy
+897,100,50,Republican,Strongly Approve,Graduate degree,Unlikely,Not Real At All,0,Strongly Agree,Strongly Agree,12,No,About Right,FALSE,Happy but Unwise
+898,104,22,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,6,Yes,Too Low,FALSE,Wise but Unhappy
+899,64,45,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,3,Somewhat Agree,Somewhat Disagree,2,Yes,Too Low,TRUE,Wise but Unhappy
+900,114,33,Republican,Strongly Approve,Graduate degree,Unlikely,Real but not Caused by People,1,Strongly Agree,Strongly Agree,10,No,About Right,FALSE,Wise but Unhappy
+901,104,29,Democrat,Strongly disapprove,College degree,Likely,Real and Caused by People,2,Strongly Agree,Strongly Agree,100,Yes,Too Low,FALSE,Wise but Unhappy
+902,135,30,Democrat,Somewhat Approve,College degree,Likely,Real and Caused by People,3,Strongly Agree,Strongly Agree,5,No,Too High,TRUE,Wise but Unhappy
+903,56,67,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,3,Strongly Agree,Strongly Agree,4,Yes,Too Low,TRUE,Happy but Unwise
+904,132,57,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,3,No,Too Low,TRUE,Wise but Unhappy
+905,94,20,Democrat,Neither approve nor disapprove,High school,Unlikely,Real and Caused by People,1,Somewhat Disagree,Strongly Agree,1,No,Too Low,TRUE,Wise but Unhappy
+906,71,51,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,1,No,About Right,TRUE,Wise but Unhappy
+907,71,48,Republican,Somewhat disapprove,Some college,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,3,No,About Right,TRUE,Wise but Unhappy
+908,91,63,Republican,Strongly Approve,College degree,Unlikely,Real but not Caused by People,0,Strongly Disagree,Strongly Agree,80,No,About Right,FALSE,Happy but Unwise
+909,170,72,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,5,No,Too Low,FALSE,Happy but Unwise
+910,54,61,Democrat,Strongly disapprove,High school,Unlikely,Real and Caused by People,1,Somewhat Disagree,Somewhat Disagree,100,Yes,Too Low,TRUE,Wise but Unhappy
+911,170,59,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,5,No,Too Low,FALSE,Happy but Unwise
+912,38,57,Independent,Neither approve nor disapprove,College degree,Likely,Not Real At All,0,Somewhat Agree,Strongly Agree,3,No,About Right,TRUE,Happy but Unwise
+913,73,50,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,5,Somewhat Disagree,Strongly Disagree,2,No,Too High,TRUE,Happy but Unwise
+914,140,27,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,25,No,Too Low,TRUE,Wise but Unhappy
+915,60,80,Democrat,Strongly disapprove,College degree,Unlikely,Real but not Caused by People,5,Strongly Agree,Strongly Disagree,20,No,Too Low,TRUE,Wise but Unhappy
+916,90,83,Republican,Strongly Approve,College degree,Unlikely,Not Real At All,0,Somewhat Agree,Strongly Agree,0,No,About Right,TRUE,Wise but Unhappy
+917,86,90,Democrat,Strongly disapprove,College degree,Likely,Real and Caused by People,3,Strongly Agree,Strongly Agree,15,No,Too Low,FALSE,Happy but Unwise
+918,109,24,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,1,No,Too Low,FALSE,Wise but Unhappy
+919,105,70,Independent,Somewhat Approve,High school,Likely,Real and Caused by People,1,Somewhat Disagree,Strongly Agree,1,Yes,About Right,TRUE,Wise but Unhappy
+920,73,22,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,4,Strongly Agree,Neither Agree nor Disagree,4,No,About Right,FALSE,Wise but Unhappy
+921,74,49,Independent,Strongly disapprove,College degree,Likely,Real and Caused by People,0,Strongly Agree,Somewhat Agree,12,Yes,Too Low,TRUE,Happy but Unwise
+922,74,23,Democrat,Somewhat disapprove,Some college,Unlikely,Real and Caused by People,2,Somewhat Agree,Strongly Agree,10,No,Too Low,FALSE,Wise but Unhappy
+923,181,24,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,6,Yes,About Right,FALSE,Happy but Unwise
+924,93,50,Independent,Neither approve nor disapprove,Some college,Unlikely,Real and Caused by People,1,Somewhat Agree,Strongly Agree,0,Yes,Too Low,FALSE,Wise but Unhappy
+925,144,51,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,2,Yes,Too Low,TRUE,Wise but Unhappy
+926,103,68,Independent,Strongly Approve,Some college,Unlikely,Real but not Caused by People,0,Somewhat Disagree,Somewhat Agree,2,No,Too High,TRUE,Happy but Unwise
+927,139,21,Independent,Somewhat disapprove,Some college,Unlikely,Real but not Caused by People,4,Somewhat Agree,Somewhat Agree,6,No,About Right,TRUE,Happy but Unwise
+928,74,34,Democrat,Strongly disapprove,Other,Unlikely,Real and Caused by People,3,Strongly Agree,Strongly Agree,6,No,Too Low,TRUE,Wise but Unhappy
+929,102,24,Independent,Strongly Approve,Some college,Likely,Real and Caused by People,1,Somewhat Disagree,Somewhat Disagree,56,Yes,About Right,FALSE,Wise but Unhappy
+930,422,46,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,1,Strongly Agree,Somewhat Agree,10,No,About Right,TRUE,Wise but Unhappy
+931,56,75,Democrat,Strongly disapprove,Some college,Likely,Not Real At All,0,Somewhat Agree,Somewhat Agree,2,No,Too Low,TRUE,Wise but Unhappy
+932,83,18,Independent,Somewhat Approve,Some college,Unlikely,Real and Caused by People,1,Strongly Disagree,Strongly Agree,15,No,About Right,TRUE,Wise but Unhappy
+933,74,55,Democrat,Strongly disapprove,Some college,Likely,Real and Caused by People,0,Strongly Agree,Strongly Agree,0,Yes,Too Low,TRUE,Happy but Unwise
+934,30,45,Independent,Strongly disapprove,High school,Likely,Not Real At All,0,Somewhat Agree,Strongly Agree,5,No,About Right,TRUE,Happy but Unwise
+935,105,27,Independent,Somewhat disapprove,High school,Unlikely,Real but not Caused by People,2,Strongly Agree,Strongly Disagree,4,Yes,Too Low,FALSE,Wise but Unhappy
+936,64,89,Republican,Strongly Approve,Some college,Unlikely,Not Real At All,0,Strongly Disagree,Strongly Agree,5,No,Too High,FALSE,Happy but Unwise
+937,71,50,Republican,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Neither Agree nor Disagree,Neither Agree nor Disagree,10,No,Too Low,TRUE,Wise but Unhappy
+938,64,26,Independent,Strongly disapprove,Some college,Unlikely,Not Real At All,3,Strongly Agree,Strongly Agree,2,No,About Right,TRUE,Wise but Unhappy
+939,121,34,Independent,Strongly disapprove,High school,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,0,Yes,Too Low,FALSE,Happy but Unwise
+940,92,26,Independent,Strongly disapprove,College degree,Likely,Real and Caused by People,2,Somewhat Agree,Somewhat Agree,5,Yes,Too Low,FALSE,Wise but Unhappy
+941,77,36,Republican,Strongly disapprove,Graduate degree,Likely,Real and Caused by People,3,Somewhat Agree,Somewhat Agree,7,Yes,Too Low,FALSE,Wise but Unhappy
+942,113,75,Independent,Strongly Approve,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Neither Agree nor Disagree,62,Yes,Too Low,FALSE,Happy but Unwise
+943,71,44,Independent,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Strongly Disagree,Strongly Agree,0,No,Too High,FALSE,Happy but Unwise
+944,102,70,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,1,Somewhat Agree,Somewhat Disagree,3,Yes,About Right,FALSE,Happy but Unwise
+945,65,79,Independent,Strongly Approve,Some college,Unlikely,Real and Caused by People,1,Strongly Disagree,Strongly Agree,25,No,Too Low,TRUE,Happy but Unwise
+946,176,40,Democrat,Strongly disapprove,Graduate degree,Likely,Real and Caused by People,4,Strongly Agree,Strongly Disagree,59,No,Too Low,FALSE,Wise but Unhappy
+947,153,66,Republican,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Somewhat Disagree,Somewhat Disagree,2,No,Too Low,FALSE,Wise but Unhappy
+948,58,53,Independent,Strongly disapprove,High school,Likely,Real but not Caused by People,2,Somewhat Agree,Somewhat Agree,2,Yes,Too High,TRUE,Happy but Unwise
+949,144,23,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,2,No,Too Low,TRUE,Happy but Unwise
+950,79,80,Democrat,Strongly disapprove,College degree,Likely,Real and Caused by People,1,Somewhat Agree,Somewhat Agree,1000,No,Too Low,FALSE,Wise but Unhappy
+951,144,26,Independent,Neither approve nor disapprove,College degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,7,No,Too Low,FALSE,Wise but Unhappy
+952,98,45,Independent,Neither approve nor disapprove,Some college,Likely,Real and Caused by People,1,Somewhat Agree,Strongly Agree,5,No,Too Low,FALSE,Wise but Unhappy
+953,140,62,Democrat,Somewhat Approve,Some college,Likely,Real and Caused by People,2,Strongly Disagree,Strongly Agree,4,No,Too High,FALSE,Happy but Unwise
+954,105,75,Democrat,Strongly disapprove,Some college,Likely,Real and Caused by People,2,Somewhat Disagree,Strongly Agree,1,Yes,About Right,TRUE,Wise but Unhappy
+955,88,32,Independent,Neither approve nor disapprove,High school,Unlikely,Real and Caused by People,4,Strongly Agree,Strongly Agree,0,Yes,Too Low,TRUE,Happy but Unwise
+956,163,46,Independent,Strongly Approve,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Somewhat Agree,1,No,About Right,TRUE,Happy but Unwise
+957,90,55,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,300,Yes,Too Low,TRUE,Wise but Unhappy
+958,62,51,Republican,Strongly Approve,Some college,Unlikely,Real but not Caused by People,0,Somewhat Disagree,Strongly Agree,3,No,About Right,TRUE,Happy but Unwise
+959,159,39,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,3,Strongly Agree,Strongly Agree,4,No,Too Low,FALSE,Happy but Unwise
+960,127,50,Democrat,Somewhat disapprove,Some college,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,12,No,Too Low,FALSE,Happy but Unwise
+961,84,45,Independent,Somewhat Approve,Graduate degree,Unlikely,Real but not Caused by People,3,Somewhat Disagree,Strongly Agree,15,Yes,Too Low,TRUE,Happy but Unwise
+962,104,59,Independent,Strongly disapprove,Graduate degree,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,30,No,About Right,FALSE,Happy but Unwise
+963,42,50,Independent,Neither approve nor disapprove,College degree,Unlikely,Not Real At All,2,Somewhat Agree,Somewhat Disagree,5,Yes,Too Low,FALSE,Happy but Unwise
+964,61,29,Democrat,Strongly disapprove,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,5,Yes,About Right,FALSE,Happy but Unwise
+965,13,87,Democrat,Strongly disapprove,Other,Likely,Real and Caused by People,0,Neither Agree nor Disagree,Neither Agree nor Disagree,3,No,Too High,TRUE,Happy but Unwise
+966,161,29,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,1,Strongly Agree,Strongly Agree,3,No,Too Low,FALSE,Happy but Unwise
+967,130,25,Independent,Strongly disapprove,High school,Unlikely,Real and Caused by People,3,Strongly Agree,Strongly Agree,0,Yes,Too Low,FALSE,Wise but Unhappy
+968,17,39,Democrat,Strongly disapprove,Graduate degree,Likely,Real and Caused by People,0,Strongly Disagree,Somewhat Disagree,6,No,Too Low,FALSE,Happy but Unwise
+969,83,40,Independent,Somewhat Approve,College degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,4,No,About Right,FALSE,Happy but Unwise
+970,54,40,Republican,Somewhat Approve,High school,Unlikely,Real but not Caused by People,3,Strongly Agree,Somewhat Agree,0,No,About Right,FALSE,Wise but Unhappy
+971,25,57,Republican,Strongly Approve,High school,Unlikely,Real and Caused by People,0,Somewhat Disagree,Somewhat Agree,4,Yes,About Right,TRUE,Happy but Unwise
+972,114,19,Independent,Somewhat Approve,Some college,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Agree,5,Yes,About Right,FALSE,Happy but Unwise
+973,124,54,Democrat,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Somewhat Agree,Strongly Agree,7,No,Too Low,FALSE,Wise but Unhappy
+974,159,18,Democrat,Strongly disapprove,High school,Unlikely,Real and Caused by People,0,Strongly Disagree,Strongly Agree,4,Yes,Too Low,FALSE,Wise but Unhappy
+975,113,65,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,40,No,Too Low,FALSE,Wise but Unhappy
+976,56,89,Democrat,Neither approve nor disapprove,Some college,Likely,Real and Caused by People,0,Strongly Agree,Strongly Agree,5,No,Too Low,TRUE,Wise but Unhappy
+977,69,70,Independent,Somewhat disapprove,Some college,Unlikely,Not Real At All,1,Strongly Agree,Strongly Agree,3,No,Too Low,TRUE,Happy but Unwise
+978,47,41,Independent,Strongly Approve,Some college,Likely,Real and Caused by People,0,Strongly Disagree,Strongly Agree,0,No,About Right,TRUE,Happy but Unwise
+979,46,65,Democrat,Strongly disapprove,High school,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,0,Yes,Too High,TRUE,Wise but Unhappy
+980,83,64,Democrat,Somewhat Approve,High school,Unlikely,Real and Caused by People,3,Somewhat Agree,Somewhat Disagree,0,No,About Right,TRUE,Happy but Unwise
+981,74,38,Independent,Strongly disapprove,College degree,Unlikely,Real and Caused by People,3,Somewhat Agree,Somewhat Agree,3,Yes,Too Low,TRUE,Wise but Unhappy
+982,92,78,Independent,Strongly Approve,Some college,Unlikely,Real and Caused by People,0,Strongly Agree,Strongly Agree,3,No,Too Low,TRUE,Happy but Unwise
+983,88,26,Independent,Somewhat disapprove,College degree,Unlikely,Real but not Caused by People,3,Strongly Agree,Somewhat Agree,1,Yes,Too Low,TRUE,Happy but Unwise
+984,89,59,Republican,Somewhat Approve,Some college,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,0,Yes,About Right,FALSE,Happy but Unwise
+985,71,18,Independent,Strongly disapprove,High school,Unlikely,Real and Caused by People,3,Somewhat Agree,Strongly Agree,15,No,Too Low,FALSE,Happy but Unwise
+986,155,41,Independent,Somewhat Approve,College degree,Likely,Real but not Caused by People,0,Neither Agree nor Disagree,Strongly Agree,4,No,Too Low,FALSE,Wise but Unhappy
+987,44,49,Republican,Strongly disapprove,Some college,Likely,Real and Caused by People,3,Somewhat Agree,Somewhat Agree,10,Yes,Too Low,TRUE,Wise but Unhappy
+988,74,30,Democrat,Strongly Approve,Some college,Unlikely,Real and Caused by People,2,Strongly Agree,Strongly Disagree,10,No,Too Low,FALSE,Wise but Unhappy
+989,144,52,Independent,Strongly disapprove,Graduate degree,Unlikely,Real and Caused by People,1,Somewhat Disagree,Strongly Agree,20,No,Too Low,TRUE,Wise but Unhappy
+990,8,66,Republican,Strongly Approve,High school,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,10,No,Too High,TRUE,Happy but Unwise
+991,132,44,Independent,Strongly Approve,College degree,Likely,Real but not Caused by People,0,Somewhat Agree,Somewhat Agree,3,No,Too High,FALSE,Wise but Unhappy
+992,86,65,Democrat,Strongly disapprove,Some college,Unlikely,Real and Caused by People,0,Strongly Disagree,Strongly Agree,0,No,Too Low,TRUE,Happy but Unwise
+993,64,81,Republican,Strongly Approve,Some college,Unlikely,Not Real At All,2,Strongly Agree,Strongly Agree,5,No,About Right,TRUE,Wise but Unhappy
+994,110,59,Republican,Somewhat Approve,College degree,Unlikely,Real but not Caused by People,0,Somewhat Agree,Strongly Agree,10,No,About Right,TRUE,Happy but Unwise
+995,103,25,Independent,Somewhat Approve,College degree,Unlikely,Real but not Caused by People,2,Somewhat Agree,Strongly Agree,20,No,Too High,FALSE,Happy but Unwise
+996,55,22,Independent,Somewhat Approve,College degree,Unlikely,Not Real At All,2,Somewhat Disagree,Somewhat Agree,10,No,Too Low,TRUE,Wise but Unhappy
+997,114,34,Republican,Strongly disapprove,College degree,Likely,Real and Caused by People,4,Somewhat Disagree,Strongly Agree,10,No,Too High,TRUE,Wise but Unhappy
+998,70,74,Republican,Strongly Approve,Some college,Unlikely,Real and Caused by People,0,Somewhat Agree,Neither Agree nor Disagree,3,No,Too High,FALSE,Wise but Unhappy
+999,93,60,Independent,Strongly disapprove,Graduate degree,Unlikely,Real but not Caused by People,0,Somewhat Disagree,Strongly Agree,4,Yes,Too Low,TRUE,Happy but Unwise
+1000,35,46,Independent,Strongly Approve,High school,Likely,Not Real At All,3,Strongly Agree,Strongly Agree,0,No,About Right,TRUE,Happy but Unwise

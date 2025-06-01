@@ -1,0 +1,170 @@
+<!DOCTYPE html><html><head><title>R: Health expenditures and insurance plans</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>randhealth</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Health expenditures and insurance plans</h2>
+
+<h3>Description</h3>
+
+<p>Data from the RAND Health Insurance Experiment. The data comes
+from Deb and Trivedi (2002). It includes variables on the number of contacts
+with a medical doctor, medical expenditures, demographics, health status, and insurance status.
+Cameron and Trivedi (2005).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>randhealth
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 20,190 observations and 45 variables:
+</p>
+
+<dl>
+<dt>plan</dt><dd><p>health insurance plan number</p>
+</dd>
+<dt>site</dt><dd><p>one of six sites where experiment was conducted</p>
+</dd>
+<dt>coins</dt><dd><p>medical coinsurance</p>
+</dd>
+<dt>tookphys</dt><dd><p>took baseline physical</p>
+</dd>
+<dt>year</dt><dd><p>study year</p>
+</dd>
+<dt>zper</dt><dd><p>person id, leading digit is sit</p>
+</dd>
+<dt>black</dt><dd><p>= 1 if race of household head is black</p>
+</dd>
+<dt>income</dt><dd><p>income based on annual income</p>
+</dd>
+<dt>xage</dt><dd><p>age that year</p>
+</dd>
+<dt>female</dt><dd><p>= 1 if person is female</p>
+</dd>
+<dt>educdec</dt><dd><p>years of schooling of decision maker</p>
+</dd>
+<dt>time</dt><dd><p>time eligible during the year</p>
+</dd>
+<dt>outpdol</dt><dd><p>outpatient exp. excl. ment and</p>
+</dd>
+<dt>drugdol</dt><dd><p>drugs purchased, outpatient</p>
+</dd>
+<dt>suppdol</dt><dd><p>supplies purchased, outpatient</p>
+</dd>
+<dt>mentdol</dt><dd><p>psychotherapy exp., outpatient</p>
+</dd>
+<dt>inpdol</dt><dd><p>inpatient exp., facilities and md</p>
+</dd>
+<dt>meddol</dt><dd><p>annual medical expenditures in constant dollars, excluding dental and outpatient mental</p>
+</dd>
+<dt>totadm</dt><dd><p>number of hospital admissions</p>
+</dd>
+<dt>inpmis</dt><dd><p>missing any inpatient charges</p>
+</dd>
+<dt>mentvis</dt><dd><p>number psychotehrapy visits</p>
+</dd>
+<dt>mdvis</dt><dd><p>number face-to-face md visits</p>
+</dd>
+<dt>notmdvis</dt><dd><p>number face-to-face, not md visits</p>
+</dd>
+<dt>num</dt><dd><p>family size</p>
+</dd>
+<dt>mhi</dt><dd><p>mental health index, baseline</p>
+</dd>
+<dt>disea</dt><dd><p>number of chronic diseases</p>
+</dd>
+<dt>physlm</dt><dd><p>= 1 if person has physical limitation</p>
+</dd>
+<dt>ghindx</dt><dd><p>general health index, baseline</p>
+</dd>
+<dt>mdeoff</dt><dd><p>maximum expenditure offer</p>
+</dd>
+<dt>pioff</dt><dd><p>participation incentive</p>
+</dd>
+<dt>child</dt><dd><p>= 1 if age is less than 18</p>
+</dd>
+<dt>fchild</dt><dd><p>= 1 if female child</p>
+</dd>
+<dt>lfam</dt><dd><p>log of family size</p>
+</dd>
+<dt>lpi</dt><dd><p>log of annual participation incentive payment or 0 if no payment</p>
+</dd>
+<dt>idp</dt><dd><p>= 1 if individual deductible plan</p>
+</dd>
+<dt>logc</dt><dd><p>log(coinsurance + 1) where coinsurance rate is 0 to 100</p>
+</dd>
+<dt>fmde</dt><dd><p>log(max(medical deductible expenditure)) if idp=1 and mde&gt;1, 0 otherwise</p>
+</dd>
+<dt>hlthg</dt><dd><p>= 1 if self-rated health is good</p>
+</dd>
+<dt>hlthf</dt><dd><p>= 1 if self-rated health is fair</p>
+</dd>
+<dt>hlthp</dt><dd><p>= 1 if self-rated health is poor, (omitted is excellent)</p>
+</dd>
+<dt>xghindx</dt><dd><p>ghi with imputation</p>
+</dd>
+<dt>linc</dt><dd><p>log of annual family income, usd</p>
+</dd>
+<dt>lnum</dt><dd><p>log of family size</p>
+</dd>
+<dt>lnmeddol</dt><dd><p>log of medical expenditures given meddol &gt; 0; missing otherwise</p>
+</dd>
+<dt>binexp</dt><dd><p>= 1 if medical expenditures &gt; 0</p>
+</dd>
+</dl>
+
+
+
+<h3>Section in Text</h3>
+
+<p>16.6 Selection Models, pp. 553-6, 565
+20.3 Count Example: Contacts with Medical Doctor, p.671
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="http://cameron.econ.ucdavis.edu/mmabook/mmadata.html">http://cameron.econ.ucdavis.edu/mmabook/mmadata.html</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Cameron, A. and Trivedi, P. (2005), &quot;Microeconometrics: Methods and
+Applications,&quot; Cambridge University Press, New York.
+</p>
+<p>Deb, P. and Trivedi, P.K. (2002), &quot;The Structure of Demand for Health Care:
+Latent Class versus Two-Part Models,&quot; Journal of Health Economics, 21, 601-625.
+</p>
+<p>RAND Corporation. &quot;RAND's Health Insurance Experiment .&quot;
+https://www.rand.org/health-care/projects/hie.html
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>summary(randhealth)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

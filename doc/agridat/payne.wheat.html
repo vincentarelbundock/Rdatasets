@@ -1,0 +1,148 @@
+<!DOCTYPE html><html><head><title>R: Long term rotation experiment at Rothamsted</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>payne.wheat</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Long term rotation experiment at Rothamsted
+</h2>
+
+<h3>Description</h3>
+
+<p>Long term rotation experiment at Rothamsted
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("payne.wheat")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 480 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>rotation</code></dt><dd><p>rotation treatment</p>
+</dd>
+<dt><code>nitro</code></dt><dd><p>nitrogen rate kg/ha</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>metric tons per hectare</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The rotation treatments are:
+</p>
+<p>AB = arable rotation with spring barley.
+AF = arable rotation with bare fallow.
+Ln3 = 3-year grass lay between crops.
+Ln8 = 8-year grass lay between crops.
+Lc3 = 3-year grass-clover lay between crops.
+Lc8 = 8-year grass-clover lay between crops.
+</p>
+<p>The full data are available via CC-BY 4.0 license at:
+Margaret Glendining, Paul Poulton, Andrew Macdonald, Chloe MacLaren,
+Suzanne Clark (2022). 
+Dataset: Woburn Ley-arable experiment: yields of wheat as first test
+crop, 1976-2018 Electronic Rothamsted Archive, Rothamsted Research.
+https://doi.org/10.23637/wrn3-wheat7618-01
+</p>
+<p>The data used here are a subset as appearing in the paper by Payne.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Payne, R. (2013)
+Design and analysis of long-term rotation experiments.
+Agronomy Journal, 107, 772-785.
+https://doi.org/10.2134/agronj2012.0411
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(payne.wheat)
+  dat &lt;- payne.wheat
+
+  # make factors
+  dat &lt;- transform(dat,
+                   rotf = factor(rotation),
+                   yrf = factor(year),
+                   nitrof = factor(nitro))
+    
+  # visualize the response to nitrogen
+  libs(lattice)
+  # Why does Payne use nitrogen factor, when it is an obvious polynomial term?
+  # Probably doesn't matter too much.
+  xyplot(yield ~ nitro|yrf, dat,
+         groups=rotf, type='b',
+         auto.key=list(columns=6),
+         main="payne.wheat")
+  
+  # What are the long-term trends?  Yields are decreasing
+  xyplot(yield ~ year | rotf, data=dat, groups=nitrof,
+         type='l', auto.key=list(columns=4))
+
+  if(require("asreml", quietly=TRUE)){
+    libs(asreml)
+# Model 5: drop 3-way interaction and return to pol function (easier prediction)
+    m5 &lt;- asreml(yield ~ rotf * nitrof * pol(year,2) -
+                   (rotf:nitrof:pol(year,2)),
+                 data=dat,
+                 random = ~yrf,
+                 residual = ~ dsum( ~ units|yrf))
+    summary(m5)$varcomp # Table 7 of Payne
+    # lucid::vc(m5)
+
+    # Table 8 of Payne
+    wald(m5, denDF="default") 
+    
+    # Predictions of three-way interactions from final model
+    p5 &lt;- predict(m5, classify="rotf:nitrof:year")
+    p5 &lt;- p5$pvals # Matches Payne table 8
+    head(p5)
+    
+    # Plot the predictions.  Matches Payne figure 1
+    xyplot(predicted.value ~ year | rotf, data=p5,
+           groups=nitrof,
+           ylab="yield t/ha", type='l', auto.key=list(columns=5))
+  }
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

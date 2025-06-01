@@ -1,0 +1,62 @@
+<!DOCTYPE html><html><head><title>R: US State Facts and Figures - US State Regions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>state_region_factor</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>US State Facts and Figures - US State Regions</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'state_region_factor' to avoid confusion with other packages
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the 'usdatasets'
+package and identifies it as a factor variable representing U.S. state regions.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(state_region_factor)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A factor variable with 50 observations, representing the region of each U.S. state.
+The regions are classified into four levels:
+</p>
+
+<dl>
+<dt>&quot;Northeast&quot;</dt><dd><p>States located in the Northeast region.</p>
+</dd>
+<dt>&quot;South&quot;</dt><dd><p>States located in the Southern region.</p>
+</dd>
+<dt>&quot;North Central&quot;</dt><dd><p>States located in the North Central region.</p>
+</dd>
+<dt>&quot;West&quot;</dt><dd><p>States located in the Western region.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>U.S. Census Bureau.
+</p>
+
+</main>
+
+</div>
+</body></html>

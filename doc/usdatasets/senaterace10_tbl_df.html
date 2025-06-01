@@ -1,0 +1,99 @@
+<!DOCTYPE html><html><head><title>R: Election results for the 2010 U.S. Senate races</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>senaterace10_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Election results for the 2010 U.S. Senate races</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'senaterace10_tbl_df' to avoid confusion with other packages
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the 'usdatasets'
+package and identifies it as a tibble. The original content of the dataset has not been modified.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(senaterace10_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 38 observations and 23 variables:
+</p>
+
+<dl>
+<dt>id</dt><dd><p>Numeric identifier for the election race.</p>
+</dd>
+<dt>state</dt><dd><p>Character string indicating the U.S. state where the election took place.</p>
+</dd>
+<dt>abbr</dt><dd><p>Character string representing the state abbreviation.</p>
+</dd>
+<dt>name1</dt><dd><p>Character string indicating the name of the first candidate.</p>
+</dd>
+<dt>perc1</dt><dd><p>Numeric indicating the percentage of votes received by the first candidate.</p>
+</dd>
+<dt>party1</dt><dd><p>Character string indicating the party affiliation of the first candidate.</p>
+</dd>
+<dt>votes1</dt><dd><p>Numeric indicating the total votes received by the first candidate.</p>
+</dd>
+<dt>name2</dt><dd><p>Character string indicating the name of the second candidate.</p>
+</dd>
+<dt>perc2</dt><dd><p>Numeric indicating the percentage of votes received by the second candidate.</p>
+</dd>
+<dt>party2</dt><dd><p>Character string indicating the party affiliation of the second candidate.</p>
+</dd>
+<dt>votes2</dt><dd><p>Numeric indicating the total votes received by the second candidate.</p>
+</dd>
+<dt>name3</dt><dd><p>Character string indicating the name of the third candidate.</p>
+</dd>
+<dt>perc3</dt><dd><p>Numeric indicating the percentage of votes received by the third candidate.</p>
+</dd>
+<dt>party3</dt><dd><p>Character string indicating the party affiliation of the third candidate.</p>
+</dd>
+<dt>votes3</dt><dd><p>Numeric indicating the total votes received by the third candidate.</p>
+</dd>
+<dt>name4</dt><dd><p>Character string indicating the name of the fourth candidate.</p>
+</dd>
+<dt>perc4</dt><dd><p>Numeric indicating the percentage of votes received by the fourth candidate.</p>
+</dd>
+<dt>party4</dt><dd><p>Character string indicating the party affiliation of the fourth candidate.</p>
+</dd>
+<dt>votes4</dt><dd><p>Numeric indicating the total votes received by the fourth candidate.</p>
+</dd>
+<dt>name5</dt><dd><p>Character string indicating the name of the fifth candidate.</p>
+</dd>
+<dt>perc5</dt><dd><p>Numeric indicating the percentage of votes received by the fifth candidate.</p>
+</dd>
+<dt>party5</dt><dd><p>Character string indicating the party affiliation of the fifth candidate.</p>
+</dd>
+<dt>votes5</dt><dd><p>Numeric indicating the total votes received by the fifth candidate.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Data on U.S. Senate races held in 2010, including candidates' names, vote percentages, and party affiliations.
+</p>
+
+</main>
+
+</div>
+</body></html>

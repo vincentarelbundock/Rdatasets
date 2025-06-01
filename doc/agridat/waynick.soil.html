@@ -1,0 +1,101 @@
+<!DOCTYPE html><html><head><title>R: Soil nitrogen and carbon in two fields</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>waynick.soil</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Soil nitrogen and carbon in two fields
+</h2>
+
+<h3>Description</h3>
+
+<p>Soil nitrogen and carbon in two fields
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 200 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>field</code></dt><dd><p>field name, 2 levels</p>
+</dd>
+<dt><code>sample</code></dt><dd><p>sample number</p>
+</dd>
+<dt><code>x</code></dt><dd><p>x ordinate</p>
+</dd>
+<dt><code>y</code></dt><dd><p>y ordinate</p>
+</dd>
+<dt><code>nitro</code></dt><dd><p>nitrogen content, percent</p>
+</dd>
+<dt><code>carbon</code></dt><dd><p>carbon content, percent</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Two fields were studied, one at University Farm in Davis, the other
+near Oakley.  The Davis field is silty clay loam, the Oakley field is
+blow sand.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Waynick, Dean, and Sharp, Leslie. (1918).
+Variability in soils and its significance to past and future soil investigations, I-II.
+University of California press.
+https://archive.org/details/variabilityinsoi45wayn
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(waynick.soil)
+dat &lt;- waynick.soil
+
+# Strong relationship between N,C
+libs(lattice)
+xyplot(nitro~carbon|field, data=dat, main="waynick.soil")
+
+# Spatial plot
+libs(sp, gstat)
+d1 &lt;- subset(dat, field=="Davis")
+d2 &lt;- subset(dat, field=="Oakley")
+coordinates(d1) &lt;- data.frame(x=d1$x, y=d1$y)
+coordinates(d2) &lt;- data.frame(x=d2$x, y=d2$y)
+spplot(d1, zcol = "nitro", cuts=8, cex = 1.6,
+       main = "waynick.soil - Davis field - nitrogen",
+       col.regions =  bpy.colors(8), key.space = "right")
+
+# Variogram
+v1 &lt;- gstat::variogram(nitro~1, data=d1)
+plot(v1, main="waynick.soil - Davis field - nitrogen") # Maybe hasn't reached sill
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

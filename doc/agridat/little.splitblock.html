@@ -1,0 +1,126 @@
+<!DOCTYPE html><html><head><title>R: Split-block experiment of sugar beets</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>little.splitblock</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Split-block experiment of sugar beets
+</h2>
+
+<h3>Description</h3>
+
+<p>Split-block experiment of sugar beets.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("little.splitblock")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 80 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>sugar beet yield, tons/acre</p>
+</dd>
+<dt><code>harvest</code></dt><dd><p>harvest date, weeks after planting</p>
+</dd>
+<dt><code>nitro</code></dt><dd><p>nitrogen, pounds/acre</p>
+</dd>
+<dt><code>block</code></dt><dd><p>block</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Four rates of nitrogen, laid out as a 4x4 Latin-square experiment.
+</p>
+<p>Within each column block, the sub-plots are strips (across 4 rows) of
+5 different harvest dates.
+</p>
+<p>The use of sub-plots a s strips necessitates care when determining the
+error terms in the ANOVA table.
+</p>
+<p>Note, Little has yield value of 22.3 for row 3, column I-H3. This data
+uses 23.3 in order to match the marginal totals given by Little.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Thomas M. Little, F. Jackson Hills. (1978)
+<em>Agricultural Experimentation</em>
+</p>
+
+
+<h3>References</h3>
+
+<p>None.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(little.splitblock)
+dat &lt;- little.splitblock
+
+# Match marginal totals given by Little.
+## sum(dat$yield)
+## with(dat, tapply(yield,col,sum))
+## with(dat, tapply(yield,row,sum))
+
+# Layout shown by Little figure 10.2
+libs(desplot)
+desplot(dat, yield ~ col*row,
+        out1=block, out2=col, col=nitro, cex=1, num=harvest,
+        main="little.splitblock")
+
+
+# Convert continuous traits to factors
+dat &lt;- transform(dat, R=factor(row), C=factor(block),
+                 H=factor(harvest), N=factor(nitro))
+
+if(0){
+  libs(lattice)
+  xyplot(yield ~ nitro|H,dat)
+  xyplot(yield ~ harvest|N,dat)
+}
+
+# Anova table matches Little, table 10.3
+m1 &lt;- aov(yield ~ R + C + N + H + N:H +
+            Error(R:C:N + C:H + C:N:H), data=dat)
+summary(m1)
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of maize in Louisianna at 4 locs in 3...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>kang.maize</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of maize in Louisianna at 4 locs in 3 years
+</h2>
+
+<h3>Description</h3>
+
+<p>Maize yields at 4 locs in 3 years in Louisianna.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("kang.maize")</code></pre>
+
+
+<h3>Format</h3>
+
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype, 17 levels</p>
+</dd>
+<dt><code>env</code></dt><dd><p>environment, 12 levels</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, tonnes/ha</p>
+</dd>
+<dt><code>environment</code></dt><dd><p>environment, 13 levels</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year, 85-87</p>
+</dd>
+<dt><code>loc</code></dt><dd><p>location, 4 levels</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Yield trials were conducted at four locations (Alexandria, Baton
+Rouge, Bossier City, and St. Joseph) in Louisiana during 1985 to 1987.
+Each loc was planted as RCB design with 4 reps.  Mean yields are given
+in this data.
+</p>
+<p>Used with permission of Dan Gorman.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Kang, MS and Gorman, DP. (1989).
+Genotype x environment interaction in maize.
+Agronomy Journal, 81, 662-664.  Table 2.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(kang.maize)
+dat &lt;- kang.maize
+
+# Sweep out loc means, then show interaction plot.
+libs(reshape2)
+mat &lt;- acast(dat, gen~env, value.var='yield')
+mat &lt;- sweep(mat, 2, colMeans(mat))
+dat2 &lt;- melt(mat)
+names(dat2) &lt;- c('gen','env','yield')
+libs(lattice)
+xyplot(yield~env|gen, data=dat2, type='l', group=gen,
+       panel=function(x,y,...){
+         panel.abline(h=0,col="gray70")
+         panel.xyplot(x,y,...)
+       },
+       ylab="Environment-centered yield",
+       main="kang.maize - maize hybrid yields", scales=list(x=list(rot=90)))
+
+
+# Weather covariates for each environment.
+covs &lt;- data.frame(env=c("AL85","AL86","AL87", "BR85","BR86","BR87",
+                     "BC85","BC86","BC87", "SJ85","SJ86","SJ87"),
+                   maxt=c(30.7,30.2,29.7,31.5,29.4,28.5, 31.9, 30.4,31.7, 32,29.6,28.9),
+                   mint=c(18.7,19.3,18.5, 19.7,18,17.2, 19.1,20.4,20.3, 20.4,19.1,17.5),
+                   rain=c(.2,.34,.22, .28,.36,.61, .2,.43,.2, .36,.41,.22),
+                   humid=c(82.8,91.1,85.4, 88.1,90.9,88.6, 95.4,90.4,86.7, 95.6,89.5,85))
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

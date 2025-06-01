@@ -1,0 +1,110 @@
+<!DOCTYPE html><html><head><title>R: Latin square of four breeds of sheep with four diets</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>depalluel.sheep</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Latin square of four breeds of sheep with four diets
+</h2>
+
+<h3>Description</h3>
+
+<p>Latin square of four breeds of sheep with four diets
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("depalluel.sheep")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 32 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>food</code></dt><dd><p>diet</p>
+</dd>
+<dt><code>animal</code></dt><dd><p>animal number</p>
+</dd>
+<dt><code>breed</code></dt><dd><p>sheep breed</p>
+</dd>
+<dt><code>weight</code></dt><dd><p>weight, pounds</p>
+</dd>
+<dt><code>date</code></dt><dd><p>months after start</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This may be the earliest known Latin Square experiment.
+</p>
+<p>Four sheep from each of four breeds were randomized to four feeds and
+four slaughter dates.
+</p>
+<p>Sheep that eat roots will eat more than sheep eating corn, but each
+acre of land produces more roots than corn.
+</p>
+<p>de Palleuel said: In short, by adopting the use of roots, instead of
+corn, for the fattening of all sorts of cattle, the farmers in the
+neighborhood of the capital will not only gain great profit
+themselves, but will also very much benefit the public by supplying
+this great city with resources, and preventing the sudden rise of meat
+in her markets, which is often considerable.
+</p>
+
+
+<h3>Source</h3>
+
+<p>M. Crette de Palluel (1788).
+On the advantage and economy of feeding sheep in the house with roots.
+<em>Annals of Agriculture</em>, 14, 133-139.
+https://books.google.com/books?id=LXIqAAAAYAAJ&amp;pg=PA133
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+data(depalluel.sheep)
+dat &lt;- depalluel.sheep
+
+# Not the best view...weight gain is large in the first month, then slows down
+# and the linear line hides this fact
+libs(lattice)
+xyplot(weight ~ date|food, dat, group=animal, type='l', auto.key=list(columns=4),
+       xlab="Months since start",
+       main="depalluel.sheep")
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

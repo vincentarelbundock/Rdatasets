@@ -1,0 +1,107 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of rape in Manitoba</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>brandle.rape</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of rape in Manitoba
+</h2>
+
+<h3>Description</h3>
+
+<p>Rape seed yields for 5 genotypes, 3 years, 9 locations.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 135 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year, numeric</p>
+</dd>
+<dt><code>loc</code></dt><dd><p>location, 9 levels</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, kg/ha</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The yields are the mean of 4 reps.
+</p>
+<p>Note, in table 2 of Brandle, the value of Triton in 1985 at Bagot is
+shown as 2355, but should be 2555 to match the means reported
+in the paper.
+</p>
+<p>Used with permission of P. McVetty.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Brandle, JE and McVetty, PBE. (1988).
+Genotype x environment interaction and stability analysis of seed
+yield of oilseed rape grown in Manitoba.
+Canadian Journal of Plant Science, 68, 381&ndash;388.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(brandle.rape)
+dat &lt;- brandle.rape
+
+libs(lattice)
+dotplot(gen~yield|loc, dat, group=year, auto.key=list(columns=3),
+        main="brandle.rape, yields per location", ylab="Genotype")
+
+# Matches table 4 of Brandle
+# round(tapply(dat$yield, dat$gen, mean),0)
+
+# Brandle reports variance components:
+# sigma^2_gl: 9369  gy: 14027 g: 72632 resid: 150000
+# Brandle analyzed rep-level data, so the residual variance is different.
+# The other components are matched by the following analysis.
+
+libs(lme4)
+libs(lucid)
+dat$year &lt;- factor(dat$year)
+m1 &lt;- lmer(yield ~ year + loc + year:loc + (1|gen) +
+             (1|gen:loc) + (1|gen:year), data=dat)
+vc(m1)
+##      grp        var1 var2  vcov  sdcor
+##  gen:loc (Intercept) &lt;NA&gt;  9363  96.76
+## gen:year (Intercept) &lt;NA&gt; 14030 118.4
+##      gen (Intercept) &lt;NA&gt; 72630 269.5
+## Residual        &lt;NA&gt; &lt;NA&gt; 75010 273.9
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

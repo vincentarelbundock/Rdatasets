@@ -1,0 +1,61 @@
+<!DOCTYPE html><html><head><title>R: 1986 Challenger disaster and O-rings</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>orings_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>1986 Challenger disaster and O-rings</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'orings_tbl_df' to avoid confusion with other packages
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the 'usdatasets'
+package and identifies it as a tibble. The original content of the dataset has not been modified.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(orings_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 23 observations and 4 variables:
+</p>
+
+<dl>
+<dt>mission</dt><dd><p>Integer representing the mission number.</p>
+</dd>
+<dt>temperature</dt><dd><p>Integer representing the launch temperature in Fahrenheit.</p>
+</dd>
+<dt>damaged</dt><dd><p>Integer representing the number of damaged O-rings in the mission.</p>
+</dd>
+<dt>undamaged</dt><dd><p>Numeric representing the number of undamaged O-rings in the mission.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Data from NASA missions related to O-ring performance.
+</p>
+
+</main>
+
+</div>
+</body></html>

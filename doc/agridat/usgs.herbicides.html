@@ -1,0 +1,160 @@
+<!DOCTYPE html><html><head><title>R: Concentrations of herbicides in streams in the United States</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>usgs.herbicides</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Concentrations of herbicides in streams in the United States
+</h2>
+
+<h3>Description</h3>
+
+<p>Concentrations of selected herbicides and degradation products
+determined by laboratory method analysis code GCS for water samples
+collected from 51 streams in nine Midwestern States,2002
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("usgs.herbicides")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 184 observations on the following 19 variables.
+</p>
+
+<dl>
+<dt><code>mapnum</code></dt><dd><p>map number</p>
+</dd>
+<dt><code>usgsid</code></dt><dd><p>USGS ID</p>
+</dd>
+<dt><code>long</code></dt><dd><p>longitude</p>
+</dd>
+<dt><code>lat</code></dt><dd><p>latitude</p>
+</dd>
+<dt><code>site</code></dt><dd><p>site name</p>
+</dd>
+<dt><code>city</code></dt><dd><p>city</p>
+</dd>
+<dt><code>sampletype</code></dt><dd><p>sample type code</p>
+</dd>
+<dt><code>date</code></dt><dd><p>date sample was collected</p>
+</dd>
+<dt><code>hour</code></dt><dd><p>hour sample was collected</p>
+</dd>
+<dt><code>acetochlor</code></dt><dd><p>concentration as character</p>
+</dd>
+<dt><code>alachlor</code></dt><dd><p>concentration as character</p>
+</dd>
+<dt><code>ametryn</code></dt><dd><p>concentration as character</p>
+</dd>
+<dt><code>atrazine</code></dt><dd><p>concentration as character</p>
+</dd>
+<dt><code>CIAT</code></dt><dd><p>concentration as character</p>
+</dd>
+<dt><code>CEAT</code></dt><dd><p>concentration as character</p>
+</dd>
+<dt><code>cyanazine</code></dt><dd><p>concentration as character</p>
+</dd>
+<dt><code>CAM</code></dt><dd><p>concentration as character</p>
+</dd>
+<dt><code>dimethenamid</code></dt><dd><p>concentration as character</p>
+</dd>
+<dt><code>flufenacet</code></dt><dd><p>concentration as character</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Concentrations of selected herbicides and degradation products determined by laboratory method analysis code GCS for water samples collected from 51 streams in nine Midwestern States, 2002.
+</p>
+<p>All concentrations are micrograms/liter, &quot;&lt;&quot; means &quot;less than&quot;. The data are in character format to allow for &quot;&lt;&quot;.
+</p>
+<p>The original report contains data for more herbicides. This data is for illustrative purposes.
+</p>
+<p>Sample types: CR = concurrent replicate sample, FB = field blank, LD = laboratory duplicate, S1 = sample from pre-emergence runoff, S2 = sample from post-emergence runoff, S3 = sample from harvest-season runoff.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Scribner, E.A., Battaglin, W.A., Dietze, J.E., and Thurman, E.M.,
+&quot;Reconnaissance Data for Glyphosate, Other Selected Herbicides, their Degradation Products, and Antibiotics in 51 streams in Nine Midwestern States, 2002&quot;.
+U.S. Geological Survey Open File Report 03-217.
+Herbicide data from table 5, page 30-37. Site coordinates page 7-8.
+https://ks.water.usgs.gov/pubs/reports/ofr.03-217.html
+</p>
+
+
+<h3>References</h3>
+
+<p>None.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+  library(agridat)
+  data(usgs.herbicides)
+  dat &lt;- usgs.herbicides
+  
+
+  libs(NADA)
+  # create censored data for one trait
+  dat$y &lt;- as.numeric(dat$atrazine)
+  dat$ycen &lt;- is.na(dat$y)
+  dat$y[is.na(dat$y)] &lt;- .05
+  
+  # percent censored
+  with(dat, censummary(y, censored=ycen))
+  # median/mean
+  with(dat, cenmle(y, ycen, dist="lognormal"))
+  # boxplot
+  with(dat, cenboxplot(obs=y, cen=ycen, log=FALSE,
+                       main="usgs.herbicides"))
+  # with(dat, boxplot(y))
+  pp &lt;- with(dat, ros(obs=y, censored=ycen, forwardT="log")) # default lognormal
+  plot(pp)
+
+
+  plotfun &lt;- function(vv){
+    dat$y &lt;- as.numeric(dat[[vv]])
+    dat$ycen &lt;- is.na(dat$y)
+    dat$y[is.na(dat$y)] &lt;- .01
+    # qqnorm(log(dat$y), main=vv) # ordinary qq plot shows censored values
+    pp &lt;- with(dat, ros(obs=y, censored=ycen, forwardT="log"))
+    plot(pp, main=vv) # omits censored values
+  }
+  op &lt;- par(mfrow=c(3,3))
+  vnames &lt;- c("acetochlor", "alachlor", "ametryn", "atrazine","CIAT", "CEAT", "cyanazine", #"CAM",
+              "dimethenamid", "flufenacet")
+  for(vv in vnames) plotfun(vv)
+  par(op)
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

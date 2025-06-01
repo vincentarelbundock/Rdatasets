@@ -1,0 +1,193 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of barley in Alberta, 6 varieties at...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>yang.barley</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of barley in Alberta, 6 varieties at 18 locations in Alberta.
+</h2>
+
+<h3>Description</h3>
+
+<p>Yield of 6 barley varieties at 18 locations in Alberta.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("yang.barley")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 108 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>site</code></dt><dd><p>site factor, 18 levels</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype factor, 6 levels</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, Mg/ha</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>From an experiment in 2003.  Yang (2013) uses this data to illustrate
+a procedure for bootstrapping biplots.
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+    site </td><td style="text-align: left;">    long </td><td style="text-align: left;">  lat </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    Beaverlodge </td><td style="text-align: left;">  119.43 </td><td style="text-align: left;"> 55.21 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    BigLakes </td><td style="text-align: left;">  113.70 </td><td style="text-align: left;"> 53.61 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    Calmar </td><td style="text-align: left;">  113.85 </td><td style="text-align: left;"> 53.26 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    CdcNorth </td><td style="text-align: left;">  113.33 </td><td style="text-align: left;"> 53.63 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    DawsonCreek </td><td style="text-align: left;">  120.23 </td><td style="text-align: left;"> 55.76 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    FtKent </td><td style="text-align: left;">  110.61 </td><td style="text-align: left;"> 54.31 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    FtStJohn </td><td style="text-align: left;">  120.85 </td><td style="text-align: left;"> 56.25 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    Irricana </td><td style="text-align: left;">  113.60 </td><td style="text-align: left;"> 51.32 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    Killam </td><td style="text-align: left;">  111.85 </td><td style="text-align: left;"> 52.78 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    Lacombe </td><td style="text-align: left;">  113.73 </td><td style="text-align: left;"> 52.46 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    LethbridgeDry </td><td style="text-align: left;">  112.81 </td><td style="text-align: left;"> 49.70 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    LethbridgeIrr </td><td style="text-align: left;">  112.81 </td><td style="text-align: left;"> 49.70 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    Lomond </td><td style="text-align: left;">  112.65 </td><td style="text-align: left;"> 50.35 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    Neapolis </td><td style="text-align: left;">  113.86 </td><td style="text-align: left;"> 51.65 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    NorthernSunrise </td><td style="text-align: left;">    NA </td><td style="text-align: left;">   NA </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    Olds </td><td style="text-align: left;">  114.09 </td><td style="text-align: left;"> 51.78 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    StPaul </td><td style="text-align: left;">  111.28 </td><td style="text-align: left;"> 53.98 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    Stettler </td><td style="text-align: left;">  112.71 </td><td style="text-align: left;"> 52.31
+  </td>
+</tr>
+
+</table>
+
+<p>Used with permission of Rong-Cai Yang.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Rong-Cai Yang (2007).
+Mixed-Model Analysis of Crossover Genotype-Environment Interactions.
+Crop Science, 47, 1051-1062.
+https://doi.org/10.2135/cropsci2006.09.0611
+</p>
+
+
+<h3>References</h3>
+
+<p>Zhiqiu Hu and Rong-Cai Yang, (2013).
+Improved Statistical Inference for Graphical Description and
+Interpretation of Genotype x Environment Interaction.
+Crop Science, 53, 2400-2410.
+https://doi.org/10.2135/cropsci2013.04.0218 
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(yang.barley)
+dat &lt;- yang.barley
+
+libs(reshape2)
+dat &lt;- acast(dat, gen~site, value.var='yield')
+
+  ## For bootstrapping of a biplot, see the non-cran packages:
+  ## 'bbplot' and 'distfree.cr'
+  ## https://statgen.ualberta.ca/index.html?open=software.html
+  ## install.packages("https://statgen.ualberta.ca/download/software/bbplot_1.0.zip")
+  ## install.packages("https://statgen.ualberta.ca/download/software/distfree.cr_1.5.zip")
+
+  ## libs(SDMTools)
+  ## libs(distfree.cr)
+  ## libs(bbplot)
+
+  ## d1 &lt;- bbplot.boot(dat, nsample=2000) # bootstrap the data
+  ## plot(d1) # plot distributions of principal components
+  ## b1 &lt;- bbplot(d1) # create data structures for the biplot
+  ## plot(b1) # create the confidence regions on the biplot
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html><html><head><title>R: Road Accident Deaths in US States</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>road_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Road Accident Deaths in US States</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'road_df' to avoid confusion with other packages
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the 'usdatasets'
+package and identifies it as a data frame. The original content of the dataset has not been modified.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(road_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 26 observations and 6 variables:
+</p>
+
+<dl>
+<dt>deaths</dt><dd><p>Integer indicating the number of road deaths.</p>
+</dd>
+<dt>drivers</dt><dd><p>Integer representing the number of licensed drivers.</p>
+</dd>
+<dt>popden</dt><dd><p>Numeric indicating the population density (people per square mile).</p>
+</dd>
+<dt>rural</dt><dd><p>Numeric indicating the percentage of rural roads.</p>
+</dd>
+<dt>temp</dt><dd><p>Integer representing the average temperature (in degrees Fahrenheit).</p>
+</dd>
+<dt>fuel</dt><dd><p>Numeric indicating the fuel consumption per capita (in gallons).</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Data on road safety statistics, including deaths, drivers, population density, and environmental factors.
+</p>
+
+</main>
+
+</div>
+</body></html>

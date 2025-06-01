@@ -1,0 +1,169 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial evaluating 36 maize genotypes in 9...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>acorsi.grayleafspot</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial evaluating 36 maize genotypes in 9 locations 
+</h2>
+
+<h3>Description</h3>
+
+<p>Multi-environment trial evaluating 36 maize genotypes in 9 locations 
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("acorsi.grayleafspot")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 324 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype, 36 levels</p>
+</dd>
+<dt><code>env</code></dt><dd><p>environment, 9 levels</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>replicate, 2 levels</p>
+</dd>
+<dt><code>y</code></dt><dd><p>grey leaf spot severity</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Experiments conducted in 9 environments in Brazil in 2010-11.  Each
+location had an RCB with 2 reps.
+</p>
+<p>The response variable is the percentage of leaf area affected by gray
+leaf spot within each experimental unit (plot).
+</p>
+<p>Acorsi et al. use this data to illustrate the fitting of a generalized
+AMMI model with non-normal data.
+</p>
+
+
+<h3>Source</h3>
+
+<p>C. R. L. Acorsi, T. A. Guedes, M. M. D. Coan, R. J. B. Pinto,
+C. A. Scapim, C. A. P. Pacheco, P. E. O. Guimaraes, C. R. Casela. (2016).
+Applying the generalized additive main effects and multiplicative
+interaction model to analysis of maize genotypes resistant to grey leaf spot.
+<em>Journal of Agricultural Science</em>.
+https://doi.org/10.1017/S0021859616001015
+</p>
+<p>Electronic data and R code kindly provided by Marlon Coan.
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(acorsi.grayleafspot)
+  dat &lt;- acorsi.grayleafspot
+  
+  # Acorsi figure 2. Note: Acorsi used cell means
+  op &lt;- par(mfrow=c(2,1), mar=c(5,4,3,2))
+  libs(lattice)
+  boxplot(y ~ env, dat, las=2,
+          xlab="environment", ylab="GLS severity")
+  title("acorsi.grayleafspot")
+  boxplot(y ~ gen, dat, las=2,
+          xlab="genotype", ylab="GLS severity")
+  par(op)
+  
+  # GLM models
+  
+  # glm main-effects model with logit u(1-u) and wedderburn u^2(1-u)^2
+  # variance functions
+  # glm1 &lt;- glm(y~ env/rep + gen + env, data=dat, family=quasibinomial)
+  # glm2 &lt;- glm(y~ env/rep + gen + env, data=dat, family=wedderburn)
+  # plot(glm2, which=1); plot(glm2, which=2)
+  
+  # GAMMI models of Acorsi. See also section 7.4 of Turner
+  # "Generalized nonlinear models in R: An overview of the gnm package"
+  
+  # full gnm model with wedderburn, seems to work
+  libs(gnm)
+  set.seed(1)
+  gnm1 &lt;- gnm(y ~  env/rep + env + gen + instances(Mult(env,gen),2),
+              data=dat,
+              family=wedderburn, iterMax =800)
+  deviance(gnm1) # 433.8548
+  # summary(gnm1)
+  # anova(gnm1, test ="F")  # anodev, Acorsi table 4
+  ##                          Df Deviance Resid. Df Resid. Dev       F    Pr(&gt;F)    
+  ## NULL                                       647     3355.5                      
+  ## env                       8  1045.09       639     2310.4 68.4696 &lt; 2.2e-16 ***
+  ## env:rep                   9    12.33       630     2298.1  0.7183    0.6923    
+  ## gen                      35  1176.23       595     1121.9 17.6142 &lt; 2.2e-16 ***
+  ## Mult(env, gen, inst = 1) 42   375.94       553      745.9  4.6915 &lt; 2.2e-16 ***
+  ## Mult(env, gen, inst = 2) 40   312.06       513      433.9  4.0889 3.712e-14 ***
+
+
+  # maybe better, start simple and build up the model
+  gnm2a &lt;- gnm(y ~  env/rep + env + gen,
+               data=dat,
+               family=wedderburn, iterMax =800)
+
+  # add first interaction term
+  res2a &lt;- residSVD(gnm2a, env, gen, 2)
+  gnm2b &lt;- update(gnm2a, . ~ . + Mult(env,gen,inst=1),
+                  start = c(coef(gnm2a), res2a[, 1]))
+  deviance(gnm2b) # 692.19
+
+  # add second interaction term
+  res2b &lt;- residSVD(gnm2b, env, gen, 2)
+  gnm2c &lt;- update(gnm2b, . ~ . + Mult(env,gen,inst=1) + Mult(env,gen,inst=2),
+                  start = c(coef(gnm2a), res2a[, 1], res2b[,1]))
+  deviance(gnm2c) # 433.8548
+  # anova(gnm2c) # weird error message
+
+  # note, to build the ammi biplot, use the first column of res2a to get
+  # axis 1, and the FIRST column of res2b to get axis 2. Slightly confusing
+  emat &lt;- cbind(res2a[1:9, 1], res2b[1:9, 1])
+  rownames(emat) &lt;- gsub("fac1.", "", rownames(emat))
+  
+  gmat &lt;- cbind(res2a[10:45, 1], res2b[10:45, 1])
+  rownames(gmat) &lt;- gsub("fac2.", "", rownames(gmat))
+
+  # match Acorsi figure 4
+  biplot(gmat, emat, xlim=c(-2.2, 2.2), ylim=c(-2.2, 2.2), expand=2, cex=0.5,
+         xlab="Axis 1", ylab="Axis 2",
+         main="acorsi.grayleafspot - GAMMI biplot")
+
+## End(Not run)
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

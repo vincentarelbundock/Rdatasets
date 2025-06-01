@@ -1,0 +1,217 @@
+<!DOCTYPE html><html><head><title>R: Time-varying Causal Quartet Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>causal_collider_time</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Time-varying Causal Quartet Data</h2>
+
+<h3>Description</h3>
+
+<p>These datasets contains 100 observations, each generated under a different
+data generating mechanism:
+</p>
+
+<ul>
+<li><p> (1) A collider
+</p>
+</li>
+<li><p> (2) A confounder
+</p>
+</li>
+<li><p> (3) A mediator
+</p>
+</li>
+<li><p> (4) M-bias
+</p>
+</li></ul>
+
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>causal_collider_time
+
+causal_confounding_time
+
+causal_mediator_time
+
+causal_m_bias_time
+
+causal_quartet_time
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p><code>causal_collider_time</code>: A dataframe with 100 rows and 7 variables:
+</p>
+
+<ul>
+<li> <p><code>covariate_baseline</code>: known factor measured at baseline
+</p>
+</li>
+<li> <p><code>exposure_baseline</code>: exposure measured at baseline
+</p>
+</li>
+<li> <p><code>outcome_baseline</code>: outcome measured at baseline
+</p>
+</li>
+<li> <p><code>exposure_followup</code>: exposure measured at the followup visit (final time)
+</p>
+</li>
+<li> <p><code>outcome_followup</code>: outcome measured at the followup visit (final time)
+</p>
+</li>
+<li> <p><code>covariate_followup</code>: known factor measured at the followup visit (final time)
+</p>
+</li></ul>
+
+<p><code>causal_confounding_time</code>: A dataframe with 100 rows and 7 variables:
+</p>
+
+<ul>
+<li> <p><code>covariate_baseline</code>: known factor measured at baseline
+</p>
+</li>
+<li> <p><code>exposure_baseline</code>: exposure measured at baseline
+</p>
+</li>
+<li> <p><code>outcome_baseline</code>: outcome measured at baseline
+</p>
+</li>
+<li> <p><code>exposure_followup</code>: exposure measured at the followup visit (final time)
+</p>
+</li>
+<li> <p><code>outcome_followup</code>: outcome measured at the followup visit (final time)
+</p>
+</li>
+<li> <p><code>covariate_followup</code>: known factor measured at the followup visit (final time)
+</p>
+</li></ul>
+
+<p><code>causal_mediator_time</code>: A dataframe with 100 rows and 7 variables:
+</p>
+
+<ul>
+<li> <p><code>covariate_baseline</code>: known factor measured at baseline
+</p>
+</li>
+<li> <p><code>exposure_baseline</code>: exposure measured at baseline
+</p>
+</li>
+<li> <p><code>outcome_baseline</code>: outcome measured at baseline
+</p>
+</li>
+<li> <p><code>covariate_mid</code>: known factor measured at some mid-point
+</p>
+</li>
+<li> <p><code>exposure_mid</code>: exposure measured at some mid-point
+</p>
+</li>
+<li> <p><code>outcome_mid</code>: outcome measured at some mid-point
+</p>
+</li>
+<li> <p><code>exposure_followup</code>: exposure measured at the followup visit (final time)
+</p>
+</li>
+<li> <p><code>outcome_followup</code>: outcome measured at the followup visit (final time)
+</p>
+</li>
+<li> <p><code>covariate_followup</code>: known factor measured at the followup visit (final time)
+</p>
+</li></ul>
+
+<p><code>causal_m_bias_time</code>: A dataframe with 100 rows and 9 variables:
+</p>
+
+<ul>
+<li> <p><code>u1</code>: unmeasured factor
+</p>
+</li>
+<li> <p><code>u2</code>: unmeasured factor
+</p>
+</li>
+<li> <p><code>covariate_baseline</code>: known factor measured at baseline
+</p>
+</li>
+<li> <p><code>exposure_baseline</code>: exposure measured at baseline
+</p>
+</li>
+<li> <p><code>outcome_baseline</code>: outcome measured at baseline
+</p>
+</li>
+<li> <p><code>exposure_followup</code>: exposure measured at the followup visit (final time)
+</p>
+</li>
+<li> <p><code>outcome_followup</code>: outcome measured at the followup visit (final time)
+</p>
+</li>
+<li> <p><code>covariate_followup</code>: known factor measured at the followup visit (final time)
+</p>
+</li></ul>
+
+<p>An object of class <code>tbl_df</code> (inherits from <code>tbl</code>, <code>data.frame</code>) with 400 rows and 12 columns.
+</p>
+
+
+<h3>Details</h3>
+
+<p>There are two time points:
+</p>
+
+<ul>
+<li><p> baseline
+</p>
+</li>
+<li><p> follow up
+</p>
+</li></ul>
+
+<p>These datasets help demonstrate that a model that includes only pre-exposure
+covariates (that is, only adjusting for covariates measured at baseline), will
+be less prone to potential biases. Adjusting for only pre-exposure covariates
+&quot;solves&quot; the bias in datasets 1-3. It does not solve the data generated under
+the &quot;M-bias&quot; scenario, however this is more of a toy example, it has been
+shown many times that the assumptions needed for this M-bias to hold are
+often not ones we practically see in data analysis.
+</p>
+
+
+<h3>References</h3>
+
+<p>D'Agostino McGowan L, Barrett M (2023). Causal inference is not a statistical problem. Preprint arXiv:2304.02683v1.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+## incorrect model because covariate is post-treatment
+lm(outcome_followup ~ exposure_baseline + covariate_followup,
+   data = causal_collider_time)
+
+## correct model because covariate is pre-treatment
+## even though the true mechanism dictates that the covariate is a collider,
+## because the pre-exposure variable is used, the collider bias does not
+## occur.
+lm(outcome_followup ~ exposure_baseline + covariate_baseline,
+   data = causal_collider_time)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

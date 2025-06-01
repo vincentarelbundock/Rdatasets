@@ -1,0 +1,160 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of oranges</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>parker.orange.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of oranges
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of oranges at Riverside, CA, 1921-1927.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("parker.orange.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1364 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, pounds/tree for plot </p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>An orchard of naval oranges was planted in 1917 at the University of
+California Citrus Experiment Station at Riverside.  The orchard was
+maintained under uniform conditions for 10 years.
+</p>
+<p>Eight Washington Navel orange trees in a single row constituted a
+plot. The planting distance is 20 feet between trees within the row
+and 24 feet between rows.  Every other row was a guard row, so row 2
+and row 4 were observational units, while row 3 was a guard row. For
+example, from row 2 to row 4 is 2*24 = 48 feet.  Another way to think
+of this is that each plot was 48 feet wide, but only the middle 24
+feet was harvested.  At each end of the plot was one guard
+tree. Including guard trees at the row ends, each row plot was 10
+trees * 20 feet = 200 feet long.
+</p>
+<p>Field width (west-east) 10 plots * 200 feet =  2000 feet.
+</p>
+<p>Field length (north-south) 27 plots * 48 feet =  1296 feet.
+</p>
+<p>An investigation into the variability between plots included
+systematic soil surveys, soil moisture, soil nitrates, and inspection
+for differences in infestation of the citrus nematode. None of these
+factors was considered to be the primary cause of the variations in
+yield.
+</p>
+<p>After the 7 years of uniformity trials, different treatments were
+applied to the plots.
+</p>
+<p>Parker et al. state that soil heterogeneity is considerable and
+first-year yields are not predictive of future yields.
+</p>
+<p>Table 25 has mean top volume per tree for each plot in 1926.
+Table 26 has mean area of trunk cross section.
+</p>
+
+
+<h3>Source</h3>
+
+<p>E. R. Parker &amp; L. D. Batchelor. (1932).
+Variation in the Yields of Fruit Trees in Relation to the Planning of Future Experiments.
+Hilgardia, 7(2), 81-161. Tables 3-9.
+https://doi.org/10.3733/hilg.v07n02p081
+</p>
+
+
+<h3>References</h3>
+
+<p>Batchelor, L. D. (Leon Dexter), b. 1884; Parker, E. R. (Edwin Robert), 1896-1952; McBride, Robert, d. 1927. (1928)
+Studies preliminary to the establishment of a series of fertilizer
+trials in a bearing citrus grove. 
+Vol B451. Berkeley, Cal. : Agricultural Experiment Station
+https://archive.org/details/studiesprelimina451batc
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+data(parker.orange.uniformity)
+dat &lt;- parker.orange.uniformity
+
+# Parker fig 2, field plan
+libs(desplot)
+dat$year &lt;- factor(dat$year)
+# 27 rows * 48 ft x 10 cols * 200 feet
+desplot(dat, yield ~ col*row|year,
+        flip = TRUE, aspect = 27*48/(10*200), # true aspect
+        main = "parker.orange.uniformity")
+
+# CV across plots in each year. Similar to Parker table 11
+cv &lt;- function(x) {
+  x &lt;- na.omit(x)
+  sd(x)/mean(x)
+}
+round(100*tapply(dat$yield, dat$year, cv),2)
+
+
+# Correlation of plot yields across years. Similar to Parker table 15.
+# Paker et al may have calculated correlation differently.
+libs(reshape2)
+libs(corrgram)
+dat2 &lt;- acast(dat, row+col ~ year, value.var = 'yield')
+round(cor(dat2, use = "pair"),3)
+corrgram(dat2, lower = panel.pts, upper = panel.conf,
+         main="parker.orange.uniformity")
+
+
+# Fertility index. Mean across years (ignoring 1921). Parker table 16
+dat3 &lt;- aggregate(yield ~ row+col, data = subset(dat, year !=1921 ),
+                  FUN = mean, na.rm = TRUE)
+round(acast(dat3, row ~ col, value.var = 'yield'),0)
+
+libs(desplot)
+desplot(dat3, yield ~ col*row,
+        flip = TRUE, aspect = 27*48/(10*200), # true aspect
+        main = "parker.orange.uniformity - mean across years")
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

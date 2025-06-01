@@ -1,0 +1,107 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of grape</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>strickland.grape.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of grape
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of grape in Australia
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("strickland.grape.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 155 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield per vine, pounds</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Yields of individual grape vines, planted 8 feet apart in rows 10 feet
+apart.
+Grown in Rutherglen, North-East Victoria, Australia, 1930.
+</p>
+<p>Certain sections were omitted because of missing vines.
+</p>
+
+
+<h3>Source</h3>
+
+<p>A. G. Strickland (1932).
+A vine uniformity trial.
+Journal of Agriculture, Victoria, 30, 584-593.
+https://handle.slv.vic.gov.au/10381/386462
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+data(strickland.grape.uniformity)
+dat &lt;- strickland.grape.uniformity
+
+  libs(desplot)
+  desplot(dat, yield ~ col*row,
+          main="strickland.grape.uniformity",
+          flip=TRUE, aspect=(31*8)/(5*10) )
+  
+  # CV 43.4
+  sd(dat$yield, na.rm=TRUE)/mean(dat$yield, na.rm=TRUE)
+  
+  # anova like Strickland, appendix 1
+  anova(aov(yield ~ factor(row) + factor(col), data=dat))
+
+  # numbers ending in .5 much more common than .0
+  # table(substring(format(na.omit(dat$yield)),4,4))
+  #  0   5 
+  # 25 100 
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

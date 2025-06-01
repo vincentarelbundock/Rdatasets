@@ -1,0 +1,122 @@
+<!DOCTYPE html><html><head><title>R: French Medieval Glass Composition</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>verre</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>French Medieval Glass Composition</h2>
+
+<h3>Description</h3>
+
+<p>Chemical analysis (electron probe X-ray micro analysis) of 398 medieval
+glass vessels found in France.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>verre
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A <code>data.frame</code> with 398 observations and 17 variables:
+</p>
+
+<dl>
+<dt>Site</dt><dd><p><code>factor</code>: <code>CNL</code> (Cour Napoléon, Louvre), <code>ORL</code> (Orléans),
+<code>POI</code> (Poitiers), <code>ANG</code> (Angers), <code>OMO</code> (Omonville, Seine Maritime),
+<code>ROU</code> (Rouen), <code>MEA</code> (Meaux), <code>CHL</code> (Châlons-sur-Marne),
+<code>PAI</code> (Pairu, Argonne, Ardennes), <code>BER</code> (Bercettes, Argonne, Ardennes),
+<code>BIN</code> (Binois, Argonne, Ardennes), <code>CHE</code> (Chevrie, Argonne, Ardennes),
+<code>MIT</code> (Mitte, Argonne, Ardennes), <code>MET</code> (Metz), <code>CHM</code> (Chambaran).</p>
+</dd>
+<dt>Sample</dt><dd><p><code>character</code>: sample code.</p>
+</dd>
+<dt>Type</dt><dd><p><code>character</code>: typology.</p>
+</dd>
+<dt>Age</dt><dd><p><code>character</code>: century.</p>
+</dd>
+<dt>Periode</dt><dd><p><code>factor</code>: <code>I</code> (9th-12th century), <code>II</code> (13th-first
+half of the 15th century), <code>III</code> (end of the 15th to end of the 16th
+century), <code>IV</code> (end of 16th to end of the 17th century).</p>
+</dd>
+<dt>Tint</dt><dd><p><code>factor</code>: <code style="white-space: pre;">&#8288;?&#8288;</code> (unknown), <code>B</code> (blue), <code>CL</code> (colourless),
+<code>CLg</code> (colourless &ndash; greyish tint),
+<code>PB</code> (pale blue; <code>PGE</code>: pale greenish),
+<code>PGE-B</code> (pale green-blue or blue-green),
+<code>PGY-B</code> (pale grey-blue), <code>R</code> (opaque red), <code>W</code> (opaque white),
+<code style="white-space: pre;">&#8288;*av&#8288;</code> (added aventurine spots),
+<code style="white-space: pre;">&#8288;*bl&#8288;</code> (added thread blue or blue spots),
+<code style="white-space: pre;">&#8288;*r&#8288;</code> (added thread opaque red or opaque red spots),
+<code style="white-space: pre;">&#8288;*w&#8288;</code> (added thread opaque white).</p>
+</dd>
+<dt>Na2O</dt><dd><p><code>numeric</code>: Na2O content (percent).</p>
+</dd>
+<dt>CaO</dt><dd><p><code>numeric</code>: CaO content (percent).</p>
+</dd>
+<dt>K2O</dt><dd><p><code>numeric</code>: K2O content (percent).</p>
+</dd>
+<dt>MgO</dt><dd><p><code>numeric</code>: MgO content (percent).</p>
+</dd>
+<dt>P2O5</dt><dd><p><code>numeric</code>: P2O5 content (percent).</p>
+</dd>
+<dt>SiO2</dt><dd><p><code>numeric</code>: SiO2 content (percent).</p>
+</dd>
+<dt>Al2O3</dt><dd><p><code>numeric</code>: Al2O3 content (percent).</p>
+</dd>
+<dt>FeO</dt><dd><p><code>numeric</code>: FeO content (percent).</p>
+</dd>
+<dt>MnO</dt><dd><p><code>numeric</code>: MnO content (percent).</p>
+</dd>
+<dt>Cl</dt><dd><p><code>numeric</code>: Cl content (percent).</p>
+</dd>
+<dt>Reference</dt><dd><p><code>character</code>: site reference.</p>
+</dd>
+</dl>
+
+
+
+<h3>References</h3>
+
+<p>Barrera J., Velde B. (1989). A study of french medieval glass composition.
+<em>Archéologie médiévale</em>, 19, 81-130. <a href="https://doi.org/10.3406/arcme.1989.953">doi:10.3406/arcme.1989.953</a>.
+</p>
+
+
+<h3>See Also</h3>
+
+<p>Other chemical data: 
+<code>bronze</code>,
+<code>kommos</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>plot(
+  x = verre$Na2O,
+  y = verre$CaO / (verre$CaO + verre$K2O),
+  type = "p",
+  xlab = expression("Na"[2]*"O (%)"),
+  ylab = expression("CaO"/"(CaO"+"K"[2]*"O)")
+)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

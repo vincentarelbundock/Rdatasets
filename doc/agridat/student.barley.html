@@ -1,0 +1,153 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of barley</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>student.barley</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of barley
+</h2>
+
+<h3>Description</h3>
+
+<p>Yield for two varieties of barley grown at 51 locations in the years
+1901 to 1906.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 102 observations on the following 7 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year, 1901-1906</p>
+</dd>
+<dt><code>farmer</code></dt><dd><p>farmer name</p>
+</dd>
+<dt><code>place</code></dt><dd><p>place (nearest town)</p>
+</dd>
+<dt><code>district</code></dt><dd><p>district, geographical area</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype, <code>Archer</code> and <code>Goldthorpe</code></p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, 'stones' per acre (1 stone = 14 pounds)</p>
+</dd>
+<dt><code>income</code></dt><dd><p>income per acre in shillings, based on yield and quality</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Experiments were conducted for six years by the Department of
+Agriculture in Ireland.  A total of seven varieties were tested, but
+only Archer and Goldthorpe were tested in all six years (others were
+dropped after being found inferior, or were added later).  Plots were
+two acres in size.  The value of the grain depended on the yield and
+quality.  Quality varied much from farm to farm, but not so much within
+the same farm.
+</p>
+<p>The phrase &quot;analysis of variance&quot; first appears in the abstract (only)
+of a 1918 paper by Fisher.  The 1923 paper by Student contained the
+first analysis of variance table (but not for this data).
+</p>
+<p>One stone is 14 pounds.
+To convert lb/ac to tonnes/ha, multiply by 0.00112085116
+</p>
+<p>Note: The analysis of Student cannot be reproduced exactly.  For
+example, Student states that the maximum income of Goldthorpe is 230
+shillings.  A quick glance at Table I of Student shows that the
+maximum income for Goldthorpe is 220 shillings (11 pounds, 0
+shillings) in 1901 at Thurles.  Also, the results of Kempton could not
+be reproduced exactly, perhaps due to rounding or the conversion
+factor that was used.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Student. 1923.
+On Testing Varieties of Cereals.
+<em>Biometrika</em>, 15, 271&ndash;293.
+https://doi.org/10.1093/biomet/15.3-4.271
+</p>
+
+
+<h3>References</h3>
+
+<p>R A Kempton and P N Fox, 1997.
+<em>Statistical Methods for Plant Variety Evaluation</em>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+  library(agridat)
+  data(student.barley)
+  dat &lt;- student.barley
+
+  libs(lattice)
+  bwplot(yield ~ gen|district, dat, main="student.barley - yield")
+
+  dat$year &lt;- factor(dat$year)
+  dat$income &lt;- NULL
+  
+  # convert to tons/ha
+  dat &lt;- transform(dat, yield=yield*14 * 0.00112085116)
+  
+  # Define 'loc' the way that Kempton does
+  dat$loc &lt;- rep("",nrow(dat))
+  dat[is.element(dat$farmer, c("Allardyce","Roche","Quinn")),"loc"] &lt;- "1"
+  dat[is.element(dat$farmer, c("Luttrell","Dooley")), "loc"] &lt;- "2"
+  dat[is.element(dat$year, c("1904","1905","1906")) &amp; dat$farmer=="Kearney","loc"] &lt;- "2"
+  dat[dat$farmer=="Mulhall","loc"] &lt;- "3"
+  
+  dat &lt;- transform(dat, loc=factor(paste(place,loc,sep="")))
+  
+  libs(reshape2)
+  datm &lt;- melt(dat, measure.var='yield')
+
+  # Kempton Table 9.5
+  round(acast(datm, loc+gen~year),2)
+
+  # Kempton Table 9.6
+  d2 &lt;- dcast(datm, year+loc~gen)
+  mean(d2$Archer)
+  mean(d2$Goldthorpe)
+  mean(d2$Archer-d2$Goldthorpe)
+  sqrt(var(d2$Archer-d2$Goldthorpe)/51)
+  cor(d2$Archer,d2$Goldthorpe)
+
+
+if(0){
+  # Kempton Table 9.6b
+  libs(lme4)
+  m2 &lt;- lmer(yield~1 + (1|loc) + (1|year) +
+               (1|loc:year) + (1|gen:loc) + (1|gen:year), data=dat,
+             control=lmerControl(check.nobs.vs.rankZ="ignore"))
+}
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html><html><head><title>R: SANAD Epilepsy Drug Treatment Quality of Life Study</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>epilepsy_drug_qol_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>SANAD Epilepsy Drug Treatment Quality of Life Study</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, epilepsy_drug_qol_df, is a data frame containing quality of life
+measurements from the SANAD randomized controlled trial comparing carbamazepine
+and lamotrigine in 544 epilepsy patients. QoL assessments were collected at
+baseline, 3 months, 1 year and 2 years using validated instruments.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(epilepsy_drug_qol_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1,852 observations and 9 variables:
+</p>
+
+<dl>
+<dt>id</dt><dd><p>Integer: Patient identification number</p>
+</dd>
+<dt>with.time</dt><dd><p>Numeric: Time to withdrawal/discontinuation (days)</p>
+</dd>
+<dt>trt</dt><dd><p>Factor with 2 levels: Treatment group (carbamazepine/lamotrigine)</p>
+</dd>
+<dt>with.status</dt><dd><p>Integer: Withdrawal status indicator</p>
+</dd>
+<dt>time</dt><dd><p>Numeric: Assessment time point (days since baseline)</p>
+</dd>
+<dt>anxiety</dt><dd><p>Numeric: Anxiety score (from QoL measure)</p>
+</dd>
+<dt>depress</dt><dd><p>Numeric: Depression score (from QoL measure)</p>
+</dd>
+<dt>aep</dt><dd><p>Numeric: Adverse effects profile score</p>
+</dd>
+<dt>with.status2</dt><dd><p>Numeric: Alternative withdrawal coding</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'epilepsy_drug_qol_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps distinguish
+this dataset as part of the NeuroDataSets package. The suffix 'df' indicates
+that the dataset is a data frame. The original content has not been modified.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the joineRML package version 0.4.7. Original study:
+Marson, A.G., et al. (2007) The SANAD study of effectiveness of carbamazepine,
+gabapentin, lamotrigine, oxcarbazepine, or topiramate for treatment of partial
+epilepsy: an unblinded randomised controlled trial. <em>The Lancet</em>, 369(9566), 1000-1015.
+</p>
+
+</main>
+
+</div>
+</body></html>

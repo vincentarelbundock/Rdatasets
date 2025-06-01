@@ -1,0 +1,97 @@
+<!DOCTYPE html><html><head><title>R: Location of Inrap Archaeological Sites</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>inrap</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Location of Inrap Archaeological Sites</h2>
+
+<h3>Description</h3>
+
+<p>A dataset of geographical locations of archaeological sites in France.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>inrap
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A <code>data.frame</code> with 625 observations (archaeological sites) and 11 variables:
+</p>
+
+<dl>
+<dt>X</dt><dd><p><code>numeric</code>: longitude (RGF93 v1 / Lambert-93).</p>
+</dd>
+<dt>Y</dt><dd><p><code>numeric</code>: latitude (RGF93 v1 / Lambert-93).</p>
+</dd>
+<dt>region</dt><dd><p><code>character</code>: French region.</p>
+</dd>
+<dt>departement</dt><dd><p><code>character</code>: French departement.</p>
+</dd>
+<dt>commune</dt><dd><p><code>character</code>: French city.</p>
+</dd>
+<dt>site</dt><dd><p><code>character</code>: name of the site.</p>
+</dd>
+<dt>start</dt><dd><p><code>Date</code>: excavation start date.</p>
+</dd>
+<dt>end</dt><dd><p><code>Date</code>: excavation end date.</p>
+</dd>
+<dt>period</dt><dd><p><code>list</code>: chronology periods.</p>
+</dd>
+<dt>theme</dt><dd><p><code>list</code>: themes.</p>
+</dd>
+<dt>type</dt><dd><p><code>character</code>.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This dataset presents the geographical locations of a selection of
+preventive archaeological excavations carried out in France by the
+Institut national de recherches archéologiques préventives (Inrap).
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.data.gouv.fr/fr/datasets/r/b098d16a-ae19-48e4-8c58-e659e0603acd">https://www.data.gouv.fr/fr/datasets/r/b098d16a-ae19-48e4-8c58-e659e0603acd</a>
+(last update: 2024-06-03)
+</p>
+
+
+<h3>See Also</h3>
+
+<p>Other geographical data: 
+<code>cities</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'># library(sf)
+# coord &lt;- st_as_sf(inrap, coords = c("X", "Y"), crs = st_crs(2154))
+# plot(coord["region"])
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

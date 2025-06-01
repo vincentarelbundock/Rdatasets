@@ -1,0 +1,129 @@
+<!DOCTYPE html><html><head><title>R: Incomplete-block experiment of maize in Ethiopia.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>damesa.maize</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Incomplete-block experiment of maize in Ethiopia.
+</h2>
+
+<h3>Description</h3>
+
+<p>Incomplete-block experiment of maize in Ethiopia.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("damesa.maize")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 264 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt><code>site</code></dt><dd><p>site, 4 levels</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>replicate, 3 levels</p>
+</dd>
+<dt><code>block</code></dt><dd><p>incomplete block</p>
+</dd>
+<dt><code>plot</code></dt><dd><p>plot number</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype, 22 levels</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row ordinate</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column ordinate</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, t/ha</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>An experiment harvested in 2012, evaluating drought-tolerant maize
+hybrids at 4 sites in Ethiopia.
+At each site, an incomplete-block design was used.
+</p>
+<p>Damesa et al use this data to compare single-stage and two-stage
+analyses.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Tigist Mideksa Damesa, Jens Möhring, Mosisa Worku, Hans-Peter Piepho (2017).
+One Step at a Time: Stage-Wise Analysis of a Series of Experiments.
+Agronomy J, 109, 845-857.
+https://doi.org/10.2134/agronj2016.07.0395
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  library(agridat)
+  data(damesa.maize)
+  libs(desplot)
+  desplot(damesa.maize,
+          yield ~ col*row|site,
+          main="damesa.maize",
+          out1=rep, out2=block, num=gen, cex=1)
+
+  if(require("asreml", quietly=TRUE)) {
+    # Fit the single-stage model in Damesa
+    libs(asreml,lucid)
+    m0 &lt;- asreml(data=damesa.maize,
+                 fixed = yield ~ gen,
+                 random = ~ site + gen:site + at(site):rep/block,
+                 residual = ~ dsum( ~ units|site) )
+    lucid::vc(m0) # match Damesa table 1 column 3
+    ##                 effect component std.error z.ratio bound 
+    ##       at(site, S1):rep   0.08819   0.1814     0.49     P 0  
+    ##       at(site, S2):rep   1.383     1.426      0.97     P 0  
+    ##       at(site, S3):rep   0              NA      NA     B 0  
+    ##       at(site, S4):rep   0.01442   0.02602    0.55     P 0  
+    ##                   site  10.45      8.604      1.2      P 0.1
+    ##               gen:site   0.1054    0.05905    1.8      P 0.1
+    ## at(site, S1):rep:block   0.3312    0.3341     0.99     P 0  
+    ## at(site, S2):rep:block   0.4747    0.1633     2.9      P 0  
+    ## at(site, S3):rep:block   0              NA      NA     B 0  
+    ## at(site, S4):rep:block   0.06954   0.04264    1.6      P 0  
+    ##              site_S1!R   1.346     0.3768     3.6      P 0  
+    ##              site_S2!R   0.1936    0.06628    2.9      P 0  
+    ##              site_S3!R   1.153     0.2349     4.9      P 0  
+    ##              site_S4!R   0.1112    0.03665    3        P 0  
+  }
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

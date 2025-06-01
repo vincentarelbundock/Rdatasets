@@ -1,0 +1,7 @@
+rownames,sample,age_expected,age_expected_error,age_found,age_found_error,activity_expected,activity_found,activity_found_error
+1,Tree Ring,1372,50,1100,150,10.65,10.99,0.15
+2,Ptolemy,2149,150,2300,450,9.67,9.5,0.45
+3,Tayinat,2624,50,2600,150,9.1,9.18,0.18
+4,Redwood,2928,52,3005,165,8.78,8.68,0.17
+5,Sesostris,3792,50,3700,400,7.9,7.97,0.3
+6,"Zojer, Sneferu",4600,75,4750,250,7.15,7.04,0.2

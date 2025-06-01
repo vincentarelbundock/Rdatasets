@@ -1,0 +1,81 @@
+<!DOCTYPE html><html><head><title>R: Cards Against Humanity's Pulse of the Nation Survey</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>pulse_of_the_nation</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Cards Against Humanity's Pulse of the Nation Survey</h2>
+
+<h3>Description</h3>
+
+<p>Cards Against Humanity's &quot;Pulse of the Nation&quot; project (<a href="https://thepulseofthenation.com/">https://thepulseofthenation.com/</a>) conducted monthly polls into people's social and political views, as well as some silly things. This data includes responses to a subset of questions included in the poll conducted in September 2017.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>pulse_of_the_nation
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with observations on 1000 survey respondents with 15 variables:
+</p>
+
+<dl>
+<dt>income</dt><dd><p>income in \$1000s</p>
+</dd>
+<dt>age</dt><dd><p>age in years</p>
+</dd>
+<dt>party</dt><dd><p>political party affiliation</p>
+</dd>
+<dt>trump_approval</dt><dd><p>approval level of Donald Trump's job performance</p>
+</dd>
+<dt>education</dt><dd><p>maximum education level completed</p>
+</dd>
+<dt>robots</dt><dd><p>opinion of how likely their job is to be replaced by robots within 10 years</p>
+</dd>
+<dt>climate_change</dt><dd><p>belief in climate change</p>
+</dd>
+<dt>transformers</dt><dd><p>the number of Transformers film the respondent has seen</p>
+</dd>
+<dt>science_is_honest</dt><dd><p>opinion of whether scientists are generally honest and serve the public good</p>
+</dd>
+<dt>vaccines_are_safe</dt><dd><p>opinion of whether vaccines are safe and protect children from disease</p>
+</dd>
+<dt>books</dt><dd><p>number of books read in the past year</p>
+</dd>
+<dt>ghosts</dt><dd><p>whether or not they believe in ghosts</p>
+</dd>
+<dt>fed_sci_budget</dt><dd><p>respondent's estimate of the percentage of the federal budget that is spent on scientific research</p>
+</dd>
+<dt>earth_sun</dt><dd><p>belief about whether the earth is always farther away from the sun in winter than in summer (TRUE or FALSE)</p>
+</dd>
+<dt>wise_unwise</dt><dd><p>whether the respondent would rather be wise but unhappy, or unwise but happy</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://thepulseofthenation.com/downloads/201709-CAH_PulseOfTheNation_Raw.csv">https://thepulseofthenation.com/downloads/201709-CAH_PulseOfTheNation_Raw.csv</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

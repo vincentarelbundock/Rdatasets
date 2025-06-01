@@ -1,0 +1,38 @@
+rownames,id,state,abbr,name1,perc1,party1,votes1,name2,perc2,party2,votes2,name3,perc3,party3,votes3,name4,perc4,party4,votes4,name5,perc5,party5,votes5
+1,1,Alabama,AL,Robert Bentley,58,Republican,857162,Ron Sparks,42,Democrat,623492,,0,,0,,0,,0,,0,,0
+2,10,Alaska,AK,Sean Parnell,59,Republican,119347,Ethan Berkowitz,38,Democrat,77552,Don Wright,2,Other: Alaskan Independence,3774,,0,,0,,0,,0
+3,13,Arizona,AZ,Jan Brewer,55,Republican,867323,Terry Goddard,42,Democrat,669793,,0,,0,,0,,0,,0,,0
+4,23,Arkansas,AR,Mike Beebe,64,Democrat,498755,Jim Keet,34,Republican,260282,,0,,0,,0,,0,,0,,0
+5,29,California,CA,Jerry Brown,53,Democrat,4457696,Meg Whitman,41,Republican,3464190,,0,,0,,0,,0,,0,,0
+6,84,Colorado,CO,John Hickenlooper,51,Democrat,856569,Tom Tancredo,37,Other: American Constitution,620626,Dan Maes,11,Republican,187998,,0,,0,,0,,0
+7,93,Connecticut,CT,Dan Malloy,50,Democrat,564885,Tom Foley,49,Republican,557123,,0,,0,,0,,0,,0,,0
+8,102,Florida,FL,Rick Scott,49,Republican,2589915,Alex Sink,48,Democrat,2522857,,0,,0,,0,,0,,0,,0
+9,129,Georgia,GA,Nathan Deal,53,Republican,1341589,Roy Barnes,43,Democrat,1094621,John Monds,4,Other: Libertarian,101720,,0,,0,,0,,0
+10,144,Hawaii,HI,Neil Abercrombie,58,Democrat,222510,Duke Aiona,41,Republican,157098,,0,,0,,0,,0,,0,,0
+11,148,Idaho,ID,C.L. Butch Otter,59,Republican,266717,Keith Allred,33,Democrat,148233,,0,,0,,0,,0,,0,,0
+12,152,Illinois,IL,Pat Quinn,47,Democrat,1721812,Bill Brady,46,Republican,1702399,Scott Lee Cohen,4,Independent,134219,Rich Whitney,3,Other: Green,99625,,0,,0
+13,184,Iowa,IA,Terry Branstad,53,Republican,589565,Chet Culver,43,Democrat,481297,,0,,0,,0,,0,,0,,0
+14,191,Kansas,KS,Sam Brownback,63,Republican,522540,Tom Holland,32,Democrat,264214,,0,,0,,0,,0,,0,,0
+15,212,Maine,ME,Paul LePage,38,Republican,215486,Eliot Cutler,37,Independent,205601,Libby Mitchell,19,Democrat,107702,Shawn Moody,5,Independent,28557,,0,,0
+16,215,Maryland,MD,Martin O'Malley,56,Democrat,966446,Robert Ehrlich,42,Republican,733491,,0,,0,,0,,0,,0,,0
+17,225,Massachusetts,MA,Deval Patrick,48,Democrat,1108404,Charlie Baker,42,Republican,962848,Tim Cahill,8,Independent,183933,,0,,0,,0,,0
+18,236,Michigan,MI,Rick Snyder,58,Republican,1880438,Virg Bernero,40,Democrat,1289928,,0,,0,,0,,0,,0,,0
+19,252,Minnesota,MN,Mark Dayton,44,Democrat,919231,Tom Emmer,43,Republican,910480,Tom Horner,12,Other: Independence,251491,,0,,0,,0,,0
+20,276,Nebraska,NE,Dave Heineman,74,Republican,352267,Mike Meister,26,Democrat,121994,,0,,0,,0,,0,,0,,0
+21,280,Nevada,NV,Brian Sandoval,53,Republican,382350,Rory Reid,42,Democrat,298170,None of these candidates,2,Other: No Party Designation,12231,,0,,0,,0,,0
+22,285,New Hampshire,NH,John Lynch,53,Democrat,239390,John Stephen,45,Republican,205433,,0,,0,,0,,0,,0,,0
+23,302,New Mexico,NM,Susana Martinez,54,Republican,317421,Diane Denish,46,Democrat,274892,,0,,0,,0,,0,,0,,0
+24,306,New York,NY,Andrew Cuomo,61,Democrat,2602443,Carl Paladino,34,Republican,1445779,,0,,0,,0,,0,,0,,0
+25,354,Ohio,OH,John Kasich,49,Republican,1849609,Ted Strickland,47,Democrat,1752507,,0,,0,,0,,0,,0,,0
+26,374,Oklahoma,OK,Mary Fallin,60,Republican,624285,Jari Askins,40,Democrat,415150,,0,,0,,0,,0,,0,,0
+27,381,Oregon,OR,John Kitzhaber,49,Democrat,680840,Chris Dudley,48,Republican,665930,,0,,0,,0,,0,,0,,0
+28,388,Pennsylvania,PA,Tom Corbett,55,Republican,2137983,Dan Onorato,45,Democrat,1783995,,0,,0,,0,,0,,0,,0
+29,409,Rhode Island,RI,Lincoln Chafee,36,Independent,123398,John Robitaille,34,Republican,114761,Frank Caprio,23,Democrat,78776,Ken Block,6,Other: Moderate Party,22116,,0,,0
+30,412,South Carolina,SC,Nikki Haley,51,Republican,674576,Vincent Sheheen,47,Democrat,617733,,0,,0,,0,,0,,0,,0
+31,420,South Dakota,SD,Dennis Daugaard,62,Republican,195021,Scott Heidepriem,38,Democrat,122010,,0,,0,,0,,0,,0,,0
+32,423,Tennessee,TN,Bill Haslam,65,Republican,1040688,Mike McWherter,33,Democrat,529834,,0,,0,,0,,0,,0,,0
+33,433,Texas,TX,Rick Perry,55,Republican,2733784,Bill White,42,Democrat,2102606,,0,,0,,0,,0,,0,,0
+34,466,Utah,UT,Gary Herbert,64,Republican,381244,Peter Corroon,32,Democrat,188832,,0,,0,,0,,0,,0,,0
+35,471,Vermont,VT,Peter Shumlin,50,Democrat,116277,Brian Dubie,48,Republican,111988,,0,,0,,0,,0,,0,,0
+36,499,Wisconsin,WI,Scott Walker,52,Republican,1128159,Tom Barrett,47,Democrat,1005008,,0,,0,,0,,0,,0,,0
+37,509,Wyoming,WY,Matt Mead,72,Republican,123764,Leslie Petersen,25,Democrat,43336,,0,,0,,0,,0,,0,,0

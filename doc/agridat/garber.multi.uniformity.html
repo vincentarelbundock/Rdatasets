@@ -1,0 +1,183 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trials of oat hay and wheat grain</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>garber.multi.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trials of oat hay and wheat grain
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trials of oat hay and wheat grain, at West Virginia
+Agricultural Experiment Station, 1923-1924, on the same land.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 270 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>plot</code></dt><dd><p>plot number</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+<dt><code>crop</code></dt><dd><p>crop</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield (pounds or bu/ac)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The experiments were conducted at the West Virginia Agricultural
+Experiment Station at Maggie, West Virginia.
+</p>
+<p>Note, Garber et al (1926) and Garber et al (1931) describe uniformity
+trials from the same field, but the experimental plot numbers in the
+two papers are different, indicating different parts of the field.
+</p>
+<p>The data from 1923 and 1924 are given in Garber (1926).
+</p>
+<p>The data from 1927, 1928, 1929 are given in Garber (1931).
+</p>
+<p>All the data were given in the source papers as relative deviations
+from mean, but have been converted to absolute yields for this
+package.
+</p>
+<p>First paper: Garber (1926)
+</p>
+<p>Each plot was 68 feet x 21 feet. After discarding a 3.5 foot border on
+all sides, the harvested area was 61 feet x 14 feet. The plots were
+laid out in double series with a 14-foot roadway between the
+plots. For example, columns 1 &amp; 2 were side-by-side, then 14 foot
+road, then columns 3 &amp; 4, then 14 foot road, then columns 5 &amp; 6.
+</p>
+<p>Note: The orientation of the plots (68x21) is an educated guess.
+If the orientation was 21x68, the field would be extremely narrow and
+long.
+</p>
+<p>Field width: 6 plots * 68 feet + 14 ft/roadway * 2 = 436 feet
+</p>
+<p>Field length: 45 plots * 21 feet/plot = 945 feet
+</p>
+<p>Garber said: &quot;Plots 211 to 214, and 261 to 264, [note, these are rows
+11-14, columns 5-6] inclusive, were eliminated from this study because
+of the fact that a few years ago a straw stack had stood on or in the
+vicinity...which undoubtedly accounts for the relatively high yields
+on plots 261 to 264, inclusive.&quot;
+</p>
+<p>1923 oat hay, yield in pounds per acre
+</p>
+<p>The data for the oat hay was given in Table 5 as mean-subtracted
+yields in pounds per acre for each plot. The oat
+yield in row 22, column 5 was given as +59.7.  This is obviously
+incorrect, since the negative yields all end in '.7' and positive
+yields all ended in '.3'.  We used -59.7 as the centered yield value
+and added the mean of 1883.7 (p. 259) to all centered yields to obtain
+absolute yields in pounds per acre.
+</p>
+<p>1924 wheat, yield in bushels per acre
+</p>
+<p>The data for the wheat was given in bushels per acre, expressed as
+deviations from the mean yield (15.6 bu).
+We added the mean to all plot data.
+</p>
+<p>Second paper: Garber (1926)
+</p>
+<p>1927 corn, 1928 oats, 1929 wheat
+</p>
+<p>The field is 10 plots wide, 84 plots tall.
+</p>
+<p>Field width: 10 plots * 68 feet + 4 roads * 14 feet = 736 feet.
+</p>
+<p>Field length: 84 plots * 21 feet + 3 roads * 14 feet = 1806 feet.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Garber, R.J. and Mcllvaine, T.C. and Hoover, M.M. (1926).
+A study of soil heterogeneity in experiment plots.
+Jour Agr Res, 33, 255-268. Tables 3, 5.
+https://naldc.nal.usda.gov/download/IND43967148/PDF
+</p>
+<p>Garber, R. J. and T. C. McIlvaine and M. M. Hoover (1931).
+A Method of Laying Out Experimental Plats.
+Journal of the American Society of Agronomy, 23, 286-298,
+https://archive.org/details/in.ernet.dli.2015.229753/page/n299
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+  
+  data(garber.multi.uniformity)
+  dat &lt;- garber.multi.uniformity
+
+  ## aggregate(yield~year, data=dat, FUN=mean)
+  ##   year      yield
+  ## 1 1923 1883.30741
+  ## 2 1924   15.58296
+  ## 3 1927   76.28965
+  ## 4 1928   32.81415
+  ## 5 1929   19.44650
+
+  libs(desplot)
+  desplot(dat, yield ~ col*row, subset=year==1923,
+          flip=TRUE, tick=TRUE, aspect=945/436, # true aspect
+          main="garber.multi.uniformity 1923 oats")
+  desplot(dat, yield ~ col*row, subset=year==1924,
+          flip=TRUE, tick=TRUE, aspect=945/436, # true aspect
+          main="garber.multi.uniformity 1924 wheat")
+  desplot(dat, yield ~ col*row|year, subset=year &gt;= 1927,
+          flip=TRUE, tick=TRUE, aspect=1806/736, # true aspect
+          main="garber.multi.uniformity 1927-1929")
+
+  # Correlation of same plots in 1923 vs 1924. Garber has 0.37
+  # cor(subset(dat, year==1923)$yield,
+  #     subset(dat, year==1924)$yield ) # .37
+  # Garber 1931 table 2 has .58, .20
+  # cor(subset(dat, year==1927)$yield,
+  #     subset(dat, year==1928)$yield, use="pair" ) # .58
+  # cor(subset(dat, year==1927)$yield,
+  #     subset(dat, year==1929)$yield, use="pair" ) # .19
+
+
+## End(Not run)  
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

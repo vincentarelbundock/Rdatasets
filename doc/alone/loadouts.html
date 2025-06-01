@@ -1,0 +1,81 @@
+<!DOCTYPE html><html><head><title>R: Loadouts</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>loadouts</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Loadouts</h2>
+
+<h3>Description</h3>
+
+<p>Information on each survivalists loadout of 10 items
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>loadouts
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt><code>version</code></dt><dd><p>Country code for the version of the show</p>
+</dd>
+<dt><code>season</code></dt><dd><p>The season number</p>
+</dd>
+<dt><code>id</code></dt><dd><p>Survivalist ID</p>
+</dd>
+<dt><code>name</code></dt><dd><p>Name of the survivalist</p>
+</dd>
+<dt><code>item_number</code></dt><dd><p>Item number</p>
+</dd>
+<dt><code>item_detailed</code></dt><dd><p>Detailed loadout item description</p>
+</dd>
+<dt><code>item</code></dt><dd><p>Loadout item. Simplified for aggregation</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://en.wikipedia.org/wiki/Alone_(TV_series)">https://en.wikipedia.org/wiki/Alone_(TV_series)</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library(dplyr)
+library(ggplot2)
+library(forcats)
+
+loadouts |&gt;
+  count(item) |&gt;
+  mutate(item = fct_reorder(item, n, max)) |&gt;
+  ggplot(aes(item, n)) +
+  geom_col() +
+  geom_text(aes(item, n + 3, label = n)) +
+  coord_flip()
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

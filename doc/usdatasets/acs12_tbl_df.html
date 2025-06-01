@@ -1,0 +1,81 @@
+<!DOCTYPE html><html><head><title>R: American Community Survey 2012</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>acs12_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>American Community Survey 2012</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'acs12_tbl_df' to avoid confusion with other packages
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+'usdatasets' package and assists users in identifying its specific characteristics. The suffix 'tbl_df'
+identifies the dataset as a tibble data frame, helping to differentiate it from other datasets within the package.
+The original content of the dataset has not been modified in any way.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(acs12_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 2,000 observations and 13 variables:
+</p>
+
+<dl>
+<dt>income</dt><dd><p>Income of individuals (integer).</p>
+</dd>
+<dt>employment</dt><dd><p>Employment status (factor with 3 levels).</p>
+</dd>
+<dt>hrs_work</dt><dd><p>Number of hours worked per week (integer).</p>
+</dd>
+<dt>race</dt><dd><p>Race of individuals (factor with 4 levels).</p>
+</dd>
+<dt>age</dt><dd><p>Age of individuals (integer).</p>
+</dd>
+<dt>gender</dt><dd><p>Gender of individuals (factor with 2 levels: &quot;male&quot;, &quot;female&quot;).</p>
+</dd>
+<dt>citizen</dt><dd><p>Citizenship status (factor with 2 levels: &quot;no&quot;, &quot;yes&quot;).</p>
+</dd>
+<dt>time_to_work</dt><dd><p>Time taken to travel to work in minutes (integer).</p>
+</dd>
+<dt>lang</dt><dd><p>Primary language spoken at home (factor with 2 levels: &quot;english&quot;, &quot;other&quot;).</p>
+</dd>
+<dt>married</dt><dd><p>Marital status (factor with 2 levels: &quot;no&quot;, &quot;yes&quot;).</p>
+</dd>
+<dt>edu</dt><dd><p>Educational attainment (factor with 3 levels).</p>
+</dd>
+<dt>disability</dt><dd><p>Disability status (factor with 2 levels).</p>
+</dd>
+<dt>birth_qrtr</dt><dd><p>Birth quarter of individuals (factor with 4 levels).</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>American Community Survey, 2012.
+</p>
+
+</main>
+
+</div>
+</body></html>

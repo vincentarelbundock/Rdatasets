@@ -1,0 +1,99 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of cotton</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>williams.cotton.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of cotton
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of cotton at Narrabri, New South Wales, 1984.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 288 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>lint yield, kg/ha divided by 10</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Cotton uniformity trial grown at Narrabri, New South Wales, 1984-1985.
+Plots were 12m long, 1m apart, 12 rows by 24 columns, with an
+irrigation furrow between columns.
+</p>
+<p>Field width: 24 plots * 1 m = 24 m
+</p>
+<p>Field length: 12 plots * 12 m = 144 m
+</p>
+
+
+<h3>Source</h3>
+
+<p>Williams, ER and Luckett, DJ. 1988.
+The use of uniformity data in the design and analysis of cotton and barley variety trials.
+Australian Journal of Agricultural Research, 39, 339-350.
+https://doi.org/10.1071/AR9880339
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(williams.cotton.uniformity)
+dat &lt;- williams.cotton.uniformity
+
+libs(desplot)
+desplot(dat, yield ~ col*row,
+        aspect=144/24, # true aspect
+        main="williams.cotton.uniformity")
+
+
+# Smoothed contour/persp plot like Williams 1988 Fig 1a, 2a
+dat$fit &lt;- fitted(loess(yield~col*row, dat, span=.5))
+libs("lattice")
+contourplot(fit~col*row, data=dat,
+            aspect=144/24,
+            region=TRUE, cuts=6, col.regions=RedGrayBlue,
+            main="williams.cotton.uniformity")
+# wireframe(fit~col*row, data=dat, zlim=c(100, 250),
+#           main="williams.cotton.uniformity")
+
+# Williams table 1
+anova(aov(yield ~ factor(row) + factor(col), dat))
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

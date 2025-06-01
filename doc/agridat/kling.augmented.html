@@ -1,0 +1,106 @@
+<!DOCTYPE html><html><head><title>R: Augmented design of meadowfoam</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>kling.augmented</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Augmented design of meadowfoam
+</h2>
+
+<h3>Description</h3>
+
+<p>Augmented design of meadowfoam
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("kling.augmented")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 68 observations on the following 7 variables.
+</p>
+
+<dl>
+<dt><code>plot</code></dt><dd><p>Plot number</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>Genotype / Entry</p>
+</dd>
+<dt><code>name</code></dt><dd><p>Genotype name</p>
+</dd>
+<dt><code>block</code></dt><dd><p>Block, text</p>
+</dd>
+<dt><code>tsw</code></dt><dd><p>Thousand seed weight</p>
+</dd>
+<dt><code>row</code></dt><dd><p>Row ordinate</p>
+</dd>
+<dt><code>col</code></dt><dd><p>Column ordinate</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>An experiment with meadowfoam.
+Blocks are in one direction, serpentine layout.
+There are 50 new genotypes and 3 checks (C1=Ross, C2=OMF183,
+C3=Starlight).
+New genotypes have 1 rep, checks have 6 reps.
+The response variable is thousand seed weight.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Jennifer Kling, &quot;Introduction to Augmented Experimental Design&quot;
+https://plant-breeding-genomics.extension.org/introduction-to-augmented-experimental-design/
+Accessed May 2022.          
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(kling.augmented)
+dat &lt;- kling.augmented
+libs(desplot,lattice,lme4)
+# Layout and yields
+desplot(dat, tsw ~ col*row, text=name, cex=1.5)
+
+# Mixed model, fixed blocks, random genotypes
+m1 &lt;- lmer(tsw ~ block + (1|name), data=dat)
+ran1 &lt;- ranef(m1, condVar=TRUE)
+ran1
+dotplot(ran1) # Caterpillar plot
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

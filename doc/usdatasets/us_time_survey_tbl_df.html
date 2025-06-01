@@ -1,0 +1,69 @@
+<!DOCTYPE html><html><head><title>R: American Time Survey 2009 - 2019</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>us_time_survey_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>American Time Survey 2009 - 2019</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'us_time_survey_tbl_df' to avoid confusion with other packages
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the 'usdatasets'
+package and identifies it as a tibble. The original content of the dataset has not been modified.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(us_time_survey_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 11 observations and 8 variables representing time use in various activities:
+</p>
+
+<dl>
+<dt>year</dt><dd><p>Numeric value representing the year of the survey.</p>
+</dd>
+<dt>household_activities</dt><dd><p>Numeric value representing time spent on household activities (in hours).</p>
+</dd>
+<dt>eating_and_drinking</dt><dd><p>Numeric value representing time spent on eating and drinking (in hours).</p>
+</dd>
+<dt>leisure_and_sports</dt><dd><p>Numeric value representing time spent on leisure and sports activities (in hours).</p>
+</dd>
+<dt>sleeping</dt><dd><p>Numeric value representing time spent sleeping (in hours).</p>
+</dd>
+<dt>caring_children</dt><dd><p>Numeric value representing time spent caring for children (in hours).</p>
+</dd>
+<dt>working_employed</dt><dd><p>Numeric value representing time spent working while employed (in hours).</p>
+</dd>
+<dt>working_employed_days_worked</dt><dd><p>Numeric value representing the number of days worked while employed.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>U.S. Bureau of Labor Statistics.
+</p>
+
+</main>
+
+</div>
+</body></html>

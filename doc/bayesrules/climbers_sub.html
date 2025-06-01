@@ -1,0 +1,95 @@
+<!DOCTYPE html><html><head><title>R: Himalayan Climber Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>climbers_sub</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Himalayan Climber Data</h2>
+
+<h3>Description</h3>
+
+<p>A sub-sample of the Himalayan Database distributed through the R for Data Science TidyTuesday project. This dataset includes information on the results and conditions for various Himalayan climbing expeditions. Each row corresponds to a single member of a climbing expedition team.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>climbers_sub
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 2076 observations (1 per climber) and 22 variables:
+</p>
+
+<dl>
+<dt>expedition_id</dt><dd><p>unique expedition identifier</p>
+</dd>
+<dt>member_id</dt><dd><p>unique climber identifier</p>
+</dd>
+<dt>peak_id</dt><dd><p>unique identifier of the expedition's destination peak</p>
+</dd>
+<dt>peak_name</dt><dd><p>name of the expedition's destination peak</p>
+</dd>
+<dt>year</dt><dd><p>year of expedition</p>
+</dd>
+<dt>season</dt><dd><p>season of expedition (Autumn, Spring, Summer, Winter)</p>
+</dd>
+<dt>sex</dt><dd><p>climber gender identity which the database oversimplifies to a binary category</p>
+</dd>
+<dt>age</dt><dd><p>climber age</p>
+</dd>
+<dt>citizenship</dt><dd><p>climber citizenship</p>
+</dd>
+<dt>expedition_role</dt><dd><p>climber's role in the expedition (eg: Co-Leader)</p>
+</dd>
+<dt>hired</dt><dd><p>whether the climber was a hired member of the expedition</p>
+</dd>
+<dt>highpoint_metres</dt><dd><p>the destination peak's highpoint (metres)</p>
+</dd>
+<dt>success</dt><dd><p>whether the climber successfully reached the destination</p>
+</dd>
+<dt>solo</dt><dd><p>whether the climber was on a solo expedition</p>
+</dd>
+<dt>oxygen_used</dt><dd><p>whether the climber utilized supplemental oxygen</p>
+</dd>
+<dt>died</dt><dd><p>whether the climber died during the expedition</p>
+</dd>
+<dt>death_cause</dt><dd></dd>
+<dt>death_height_metres</dt><dd></dd>
+<dt>injured</dt><dd><p>whether the climber was injured on the expedition</p>
+</dd>
+<dt>injury_type</dt><dd></dd>
+<dt>injury_height_metres</dt><dd></dd>
+<dt>count</dt><dd><p>number of climbers in the expedition</p>
+</dd>
+<dt>height_metres</dt><dd><p>height of the peak in meters</p>
+</dd>
+<dt>first_ascent_year</dt><dd><p>the year of the first recorded summit of the peak (though not necessarily the actual first summit!)</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Original source: <a href="https://www.himalayandatabase.com/">https://www.himalayandatabase.com/</a>. Complete dataset distributed by: <a href="https://github.com/rfordatascience/tidytuesday/tree/master/data/2020/2020-09-22/">https://github.com/rfordatascience/tidytuesday/tree/master/data/2020/2020-09-22/</a>.
+</p>
+
+</main>
+
+</div>
+</body></html>

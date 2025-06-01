@@ -1,0 +1,151 @@
+<!DOCTYPE html><html><head><title>R: Potato yields in single-drill plots</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>connolly.potato</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Potato yields in single-drill plots
+</h2>
+
+<h3>Description</h3>
+
+<p>Potato yields in single-drill plots
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("connolly.potato")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 80 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>rep</code></dt><dd><p>block</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>variety</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, kg/ha</p>
+</dd>
+<dt><code>matur</code></dt><dd><p>maturity group</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Connolly et el use this data to illustrate how yield can be affected
+by competition from neighboring plots.
+</p>
+<p>This data uses M1, M2, M3 for maturity, while Connolly et al use
+FE (first early), SE (second early) and M (maincrop).
+</p>
+<p>The trial was 20 sections, each of which was an independent row of 20
+drills.  The data here are four reps of single-drill plots from
+sections 1, 6, 11, and 16.
+</p>
+<p>The neighbor covariate for a plot is defined as the average of the
+plots to the left and right.  For drills at the edge of the trial, the
+covariate was the average of the one neighboring plot yield and the
+section (i.e. rep) mean.
+</p>
+<p>It would be interesting to fit a model that uses differences in
+maturity between a plot and its neighbor as the actual covariate.
+</p>
+<p>https://doi.org/10.1111/j.1744-7348.1993.tb04099.x
+</p>
+<p>Used with permission of Iain Currie.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Connolly, T and Currie, ID and Bradshaw, JE and McNicol, JW. (1993).
+Inter-plot competition in yield trials of potatoes
+<em>Solanum tuberosum L.</em> with single-drill plots.
+Annals of Applied Biology, 123, 367-377.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(agridat)
+data(connolly.potato)
+dat &lt;- connolly.potato
+
+# Field plan
+libs(desplot)
+desplot(dat, yield~col*row,
+        out1=rep, # aspect unknown
+        main="connolly.potato yields (reps not contiguous)")
+
+
+# Later maturities are higher yielding
+libs(lattice)
+bwplot(yield~matur, dat, main="connolly.potato yield by maturity")
+
+# Observed raw means. Matches Connolly table 2.
+mn &lt;- aggregate(yield~gen, data=dat, FUN=mean)
+mn[rev(order(mn$yield)),]
+
+# Create a covariate which is the average of neighboring plot yields
+libs(reshape2)
+mat &lt;- acast(dat, row~col, value.var='yield')
+mat2 &lt;- matrix(NA, nrow=4, ncol=20)
+mat2[,2:19] &lt;- (mat[ , 1:18] + mat[ , 3:20])/2
+mat2[ , 1] &lt;- (mat[ , 1] + apply(mat, 1, mean))/2
+mat2[ , 20] &lt;- (mat[ , 20] + apply(mat, 1, mean))/2
+dat2 &lt;- melt(mat2)
+colnames(dat2) &lt;- c('row','col','cov')
+dat &lt;- merge(dat, dat2)
+# xyplot(yield ~ cov, data=dat, type=c('p','r'))
+
+# Connolly et al fit a model with avg neighbor yield as a covariate
+m1 &lt;- lm(yield ~ 0 + gen + rep + cov, data=dat)
+coef(m1)['cov'] # = -.303  (Connolly obtained -.31)
+
+# Block names and effects
+bnm &lt;- c("R1","R2","R3","R4")
+beff &lt;- c(0, coef(m1)[c('repR2','repR3','repR4')])
+# Variety names and effects
+vnm &lt;- paste0("V", formatC(1:20, width=2, flag='0'))
+veff &lt;- coef(m1)[1:20]
+
+# Adjust yield for variety and block effects
+dat &lt;- transform(dat, yadj = yield - beff[match(rep,bnm)]
+                - veff[match(gen,vnm)])
+
+# Similar to Connolly Fig 1.  Point pattern doesn't quite match
+xyplot(yadj~cov, data=dat, type=c('p','r'),
+       main="connolly.potato",
+       xlab="Avg yield of nearest neighbors",
+       ylab="Yield, adjusted for variety and block effects")
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

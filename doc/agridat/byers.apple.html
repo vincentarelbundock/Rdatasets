@@ -1,0 +1,107 @@
+<!DOCTYPE html><html><head><title>R: Diameters of apples</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>byers.apple</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Diameters of apples
+</h2>
+
+<h3>Description</h3>
+
+<p>Measurements of the diameters of apples
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 480 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>tree</code></dt><dd><p>tree, 10 levels</p>
+</dd>
+<dt><code>apple</code></dt><dd><p>apple, 24 levels</p>
+</dd>
+<dt><code>size</code></dt><dd><p>size of apple</p>
+</dd>
+<dt><code>appleid</code></dt><dd><p>unique id number for each apple</p>
+</dd>
+<dt><code>time</code></dt><dd><p>time period, 1-6 = (week/2)</p>
+</dd>
+<dt><code>diameter</code></dt><dd><p>diameter, inches</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Experiment conducted at the Winchester Agricultural Experiment Station
+of Virginia Polytechnic Institute and State University.   Twentyfive
+apples were chosen from each of ten apple trees.
+</p>
+<p>Of these, there were 80 apples in the largest size class, 2.75 inches
+in diameter or greater.
+</p>
+<p>The diameters of the apples were recorded every two weeks over a
+12-week period.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Schabenberger, Oliver and Francis J. Pierce. 2002.
+<em>Contemporary Statistical Models for the Plant and Soil
+Sciences</em>. CRC Press, Boca Raton, FL.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+  library(agridat)
+  data(byers.apple)
+  dat &lt;- byers.apple
+
+  libs(lattice)
+  xyplot(diameter ~ time | factor(appleid), data=dat, type=c('p','l'),
+         strip=strip.custom(par.strip.text=list(cex=.7)),
+         main="byers.apple")
+
+  # Overall fixed linear trend, plus random intercept/slope deviations
+  # for each apple.  Observations within each apple are correlated.
+  libs(nlme)
+  libs(lucid)
+  m1 &lt;- lme(diameter ~ 1 + time, data=dat,
+            random = ~ time|appleid, method='ML',
+            cor = corAR1(0, form=~ time|appleid),
+            na.action=na.omit)
+  vc(m1)
+  ##       effect   variance   stddev corr
+  ##  (Intercept) 0.007354   0.08575    NA
+  ##         time 0.00003632 0.006027 0.83
+  ##     Residual 0.0004555  0.02134    NA
+
+## End(Not run)
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

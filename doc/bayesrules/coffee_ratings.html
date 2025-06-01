@@ -1,0 +1,105 @@
+<!DOCTYPE html><html><head><title>R: Coffee Ratings Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>coffee_ratings</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Coffee Ratings Data</h2>
+
+<h3>Description</h3>
+
+<p>A sub-set of data on coffee bean ratings / quality originally collected by James LeDoux (jmzledoux) and distributed through the R for Data Science TidyTuesday project.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>coffee_ratings
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1339 batches of coffee beans and 27 variables on each batch. 
+</p>
+
+<dl>
+<dt>owner</dt><dd><p>farm owner</p>
+</dd>
+<dt>farm_name</dt><dd><p>farm where beans were grown</p>
+</dd>
+<dt>country_of_origin</dt><dd><p>country where farm is</p>
+</dd>
+<dt>mill</dt><dd><p>where beans were processed</p>
+</dd>
+<dt>in_country_partner</dt><dd><p>country of coffee partner</p>
+</dd>
+<dt>altitude_low_meters</dt><dd><p>lowest altitude of the farm</p>
+</dd>
+<dt>altitude_high_meters</dt><dd><p>highest altitude of the farm</p>
+</dd>
+<dt>altitude_mean_meters</dt><dd><p>average altitude of the farm</p>
+</dd>
+<dt>number_of_bags</dt><dd><p>number of bags tested</p>
+</dd>
+<dt>bag_weight</dt><dd><p>weight of each tested bag</p>
+</dd>
+<dt>species</dt><dd><p>bean species</p>
+</dd>
+<dt>variety</dt><dd><p>bean variety</p>
+</dd>
+<dt>processing_method</dt><dd><p>how beans were processed</p>
+</dd>
+<dt>aroma</dt><dd><p>bean aroma grade</p>
+</dd>
+<dt>flavor</dt><dd><p>bean flavor grade</p>
+</dd>
+<dt>aftertaste</dt><dd><p>bean aftertaste grade</p>
+</dd>
+<dt>acidity</dt><dd><p>bean acidity grade</p>
+</dd>
+<dt>body</dt><dd><p>bean body grade</p>
+</dd>
+<dt>balance</dt><dd><p>bean balance grade</p>
+</dd>
+<dt>uniformity</dt><dd><p>bean uniformity grade</p>
+</dd>
+<dt>clean_cup</dt><dd><p>bean clean cup grade</p>
+</dd>
+<dt>sweetness</dt><dd><p>bean sweetness grade</p>
+</dd>
+<dt>moisture</dt><dd><p>bean moisture grade</p>
+</dd>
+<dt>category_one_defects</dt><dd><p>count of category one defects</p>
+</dd>
+<dt>category_two_defects</dt><dd><p>count of category two defects</p>
+</dd>
+<dt>color</dt><dd><p>bean color</p>
+</dd>
+<dt>total_cup_points</dt><dd><p>total bean rating (0 &ndash; 100)</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-07-07/coffee_ratings.csv">https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-07-07/coffee_ratings.csv</a>.
+</p>
+
+</main>
+
+</div>
+</body></html>

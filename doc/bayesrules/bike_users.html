@@ -1,0 +1,79 @@
+<!DOCTYPE html><html><head><title>R: Capital Bikeshare Bike Ridership (Registered and Casual...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>bike_users</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Capital Bikeshare Bike Ridership (Registered and Casual Riders)</h2>
+
+<h3>Description</h3>
+
+<p>Data on ridership among registered members and casual users of the Capital Bikeshare service in Washington, D.C..
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>bike_users
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 534 daily observations, 267 each for registered riders and casual riders, and 13 variables:
+</p>
+
+<dl>
+<dt>date</dt><dd><p>date of observation</p>
+</dd>
+<dt>season</dt><dd><p>fall, spring, summer, or winter</p>
+</dd>
+<dt>year</dt><dd><p>the year of the date</p>
+</dd>
+<dt>month</dt><dd><p>the month of the date</p>
+</dd>
+<dt>day_of_week</dt><dd><p>the day of the week</p>
+</dd>
+<dt>weekend</dt><dd><p>whether or not the date falls on a weekend (TRUE or FALSE)</p>
+</dd>
+<dt>holiday</dt><dd><p>whether or not the date falls on a holiday (yes or no)</p>
+</dd>
+<dt>temp_actual</dt><dd><p>raw temperature (degrees Fahrenheit)</p>
+</dd>
+<dt>temp_feel</dt><dd><p>what the temperature feels like (degrees Fahrenheit)</p>
+</dd>
+<dt>humidity</dt><dd><p>humidity level (percentage)</p>
+</dd>
+<dt>windspeed</dt><dd><p>wind speed (miles per hour)</p>
+</dd>
+<dt>weather_cat</dt><dd><p>weather category (categ1 = pleasant, categ2 = moderate, categ3 = severe)</p>
+</dd>
+<dt>user</dt><dd><p>rider type (casual or registered)</p>
+</dd>
+<dt>rides</dt><dd><p>number of bikeshare rides</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Fanaee-T, Hadi and Gama, Joao (2013). Event labeling combining ensemble detectors and background knowledge. Progress in Artificial Intelligence. <a href="https://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset/">https://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset/</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

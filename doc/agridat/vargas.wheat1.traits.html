@@ -1,0 +1,190 @@
+<!DOCTYPE html><html><head><title>R: Wheat yields in 7 years with genetic and environment...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>vargas.wheat1</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Wheat yields in 7 years with genetic and environment covariates
+</h2>
+
+<h3>Description</h3>
+
+<p>Yield of Durum wheat, 7 genotypes, 6 years, with 16 genotypic variates
+and 16 environment variates.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("vargas.wheat1.covs")
+data("vargas.wheat1.traits")
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>The <code>vargas.wheat1.covs</code> dataframe has 6 observations on the following 17 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year, 1990-1995</p>
+</dd>
+<dt><code>MTD</code></dt><dd><p>Mean daily max temperature December, deg C</p>
+</dd>
+<dt><code>MTJ</code></dt><dd><p>Mean max in January</p>
+</dd>
+<dt><code>MTF</code></dt><dd><p>Mean max in February</p>
+</dd>
+<dt><code>MTM</code></dt><dd><p>Mean max in March</p>
+</dd>
+<dt><code>mTD</code></dt><dd><p>Mean daily minimum temperature December, deg C</p>
+</dd>
+<dt><code>mTJ</code></dt><dd><p>Mean min in January</p>
+</dd>
+<dt><code>mTF</code></dt><dd><p>Mean min in February</p>
+</dd>
+<dt><code>mTM</code></dt><dd><p>Mean min in March</p>
+</dd>
+<dt><code>PRD</code></dt><dd><p>Monthly precipitation in December, mm</p>
+</dd>
+<dt><code>PRJ</code></dt><dd><p>Precipitation in January</p>
+</dd>
+<dt><code>PRF</code></dt><dd><p>Precipitation in February</p>
+</dd>
+<dt><code>PRM</code></dt><dd><p>Precipitation in March</p>
+</dd>
+<dt><code>SHD</code></dt><dd><p>Sun hours in December</p>
+</dd>
+<dt><code>SHJ</code></dt><dd><p>Sun hours in January</p>
+</dd>
+<dt><code>SHF</code></dt><dd><p>Sun hours in February</p>
+</dd>
+<dt><code>SHM</code></dt><dd><p>Sun hours in March</p>
+</dd>
+</dl>
+
+<p>The <code>vargas.wheat1.traits</code> dataframe has 126 observations on the following 19 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year, 1990-1995</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>replicate, 3 levels</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype, 7 levels</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, kg/ha</p>
+</dd>
+<dt><code>ANT</code></dt><dd><p>anthesis, days after emergence</p>
+</dd>
+<dt><code>MAT</code></dt><dd><p>maturity, days after emergence</p>
+</dd>
+<dt><code>GFI</code></dt><dd><p>grainfill, MAT-ANT</p>
+</dd>
+<dt><code>PLH</code></dt><dd><p>plant height, cm</p>
+</dd>
+<dt><code>BIO</code></dt><dd><p>biomass above ground, kg/ha</p>
+</dd>
+<dt><code>HID</code></dt><dd><p>harvest index</p>
+</dd>
+<dt><code>STW</code></dt><dd><p>straw yield, kg/ha</p>
+</dd>
+<dt><code>NSM</code></dt><dd><p>spikes / m^2</p>
+</dd>
+<dt><code>NGM</code></dt><dd><p>grains / m^2</p>
+</dd>
+<dt><code>NGS</code></dt><dd><p>grains per spike</p>
+</dd>
+<dt><code>TKW</code></dt><dd><p>thousand kernel weight, g</p>
+</dd>
+<dt><code>WTI</code></dt><dd><p>weight per tiller, g</p>
+</dd>
+<dt><code>SGW</code></dt><dd><p>spike grain weight, g</p>
+</dd>
+<dt><code>VGR</code></dt><dd><p>vegetative growth rate, kg/ha/day, STW/ANT</p>
+</dd>
+<dt><code>KGR</code></dt><dd><p>kernel growth rate, mg/kernel/day</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Conducted in Ciudad Obregon, Mexico.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Mateo Vargas and Jose Crossa and Ken Sayre and Matthew Renolds and
+Martha E Ramirez and Mike Talbot, 1998.
+Interpreting Genotype x Environment Interaction in Wheat by
+Partial Least Squares Regression.
+Crop Science, 38, 679-689.
+https://doi.org/10.2135/cropsci1998.0011183X003800030010x
+</p>
+<p>Data provided by Jose Crossa.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+  data(vargas.wheat1.covs)
+  data(vargas.wheat1.traits)
+
+  libs(pls)
+  libs(reshape2)
+
+  # Yield as a function of non-yield traits
+  Y0 &lt;- vargas.wheat1.traits[,c('gen','rep','year','yield')]
+  Y0 &lt;- acast(Y0, gen ~ year, value.var='yield', fun=mean)
+  Y0 &lt;- sweep(Y0, 1, rowMeans(Y0))
+  Y0 &lt;- sweep(Y0, 2, colMeans(Y0)) # GxE residuals
+  Y1 &lt;- scale(Y0) # scaled columns
+  X1 &lt;- vargas.wheat1.traits[, -4] # omit yield
+  X1 &lt;- aggregate(cbind(ANT,MAT,GFI,PLH,BIO,HID,STW,NSM,NGM,
+                        NGS,TKW,WTI,SGW,VGR,KGR) ~ gen, data=X1, FUN=mean)
+  rownames(X1) &lt;- X1$gen
+  X1$gen &lt;- NULL
+  X1 &lt;- scale(X1) # scaled columns
+  m1 &lt;- plsr(Y1~X1)
+  loadings(m1)[,1,drop=FALSE] # X loadings in Table 1 of Vargas
+
+  biplot(m1, cex=.5, which="x", var.axes=TRUE,
+         main="vargas.wheat1 - gen ~ trait") # Vargas figure 2a
+
+  # Yield as a function of environment covariates
+  Y2 &lt;- t(Y0)
+  X2 &lt;- vargas.wheat1.covs
+  rownames(X2) &lt;- X2$year
+  X2$year &lt;- NULL
+  Y2 &lt;- scale(Y2)
+  X2 &lt;- scale(X2)
+
+  m2 &lt;- plsr(Y2~X2)
+  loadings(m2)[,1,drop=FALSE] # X loadings in Table 2 of Vargas
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

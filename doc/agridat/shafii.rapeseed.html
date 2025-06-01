@@ -1,0 +1,138 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of rapeseed in U.S.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>shafii.rapeseed</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of rapeseed in U.S.
+</h2>
+
+<h3>Description</h3>
+
+<p>Rapeseed yield multi-environment trial, 6 genotypes, 3 years, 14 loc, 3 rep
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 648 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year, numeric: 87, 88, 89</p>
+</dd>
+<dt><code>loc</code></dt><dd><p>location, 14 levels</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>rep, 3 levels</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype, 6 levels</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, kg/ha</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data are from the U.S. National Winter Rapeseed trials conducted
+in 1986, 1987, and 1988.  Trial locations included Georgia (GGA, TGA),
+Idaho (ID), Kansas (KS), Mississippi (MS), Montana (MT), New York
+(NY), North Carolina (NC), Oregon (OR), South Carolina (SC), Tennessee
+(TN), Texas (TX), Virginia (VA), and Washington (WA).
+</p>
+<p>SAS codes for the analysis can be found at
+https://webpages.uidaho.edu/cals-statprog/ammi/index.html
+</p>
+<p>Electronic version from:
+https://www.uiweb.uidaho.edu/ag/statprog/ammi/yld.data
+</p>
+<p>Used with permission of Bill Price.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Bahman Shafii and William J Price, 1998.
+Analysis of Genotype-by-Environment Interaction Using the
+Additive Main Effects and Multiplicative Interaction Model
+and Stability Estimates.
+JABES, 3, 335&ndash;345.
+https://doi.org/10.2307/1400587
+</p>
+
+
+<h3>References</h3>
+
+<p>Matthew Kramer (2018).
+Using the Posterior Predictive Distribution as a Diagnostic Tool for Mixed Models.
+Joint Statistical Meetings 2018, Biometrics Section.
+https://www.ars.usda.gov/ARSUserFiles/3122/KramerProceedingsJSM2018.pdf
+</p>
+<p>Reyhaneh Bijari and Sigurdur Olafsson (2022).
+Accounting for G×E interactions in plant breeding: a probabilistic
+approach
+https://doi.org/10.21203/rs.3.rs-2052233/v1
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(agridat)
+data(shafii.rapeseed)
+dat &lt;- shafii.rapeseed
+
+dat$gen &lt;- with(dat, reorder(gen, yield, mean))
+dat$loc &lt;- with(dat, reorder(loc, yield, mean))
+dat$yield &lt;- dat$yield/1000
+
+dat &lt;- transform(dat, rep=factor(rep), year=as.factor(as.character(year)))
+dat$locyr = paste(dat$loc, dat$year, sep="")
+
+# The 'means' of reps
+datm &lt;- aggregate(yield~gen+year+loc+locyr, data=dat, FUN=mean)
+datm &lt;- datm[order(datm$gen),]
+datm$gen &lt;- as.character(datm$gen)
+datm$gen &lt;- factor(datm$gen,
+                       levels=c("Bienvenu","Bridger","Cascade",
+                         "Dwarf","Glacier","Jet"))
+dat$locyr &lt;- reorder(dat$locyr, dat$yield, mean)
+
+libs(lattice)
+# This picture tells most of the story
+dotplot(loc~yield|gen,group=year,data=dat,
+        auto.key=list(columns=3),
+        par.settings=list(superpose.symbol=list(pch = c('7','8','9'))),
+        main="shafii.rapeseed",ylab="Location")
+
+
+# AMMI biplot.  Remove gen and locyr effects.
+m1.lm &lt;- lm(yield ~ gen + locyr, data=datm)
+datm$res &lt;- resid(m1.lm)
+# Convert to a matrix
+libs(reshape2)
+dm &lt;- melt(datm, measure.var='res', id.var=c('gen', 'locyr'))
+dmat &lt;- acast(dm, gen~locyr)
+# AMMI biplot.  Figure 1 of Shafii (1998)
+biplot(prcomp(dmat), main="shafii.rapeseed - AMMI biplot")
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

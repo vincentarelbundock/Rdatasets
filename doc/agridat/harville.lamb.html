@@ -1,0 +1,121 @@
+<!DOCTYPE html><html><head><title>R: Birth weight of lambs from different lines/sires</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>harville.lamb</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Birth weight of lambs from different lines/sires
+</h2>
+
+<h3>Description</h3>
+
+<p>Birth weight of lambs from different lines/sires
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("harville.lamb")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 62 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>line</code></dt><dd><p>genotype line number</p>
+</dd>
+<dt><code>sire</code></dt><dd><p>sire number</p>
+</dd>
+<dt><code>damage</code></dt><dd><p>dam age, class 1,2,3</p>
+</dd>
+<dt><code>weight</code></dt><dd><p>lamb birth weight</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Weight at birth of 62 lambs. There were 5 distinct lines.
+</p>
+<p>Some sires had multiple lambs. Each dam had one lamb.
+</p>
+<p>The age of the dam is a category: 1 (1-2 years), 2 (2-3 years) or 3 (over 3 years).
+</p>
+<p>Note: Jiang, gives the data in table 1.2, but there is a small error.
+Jiang has a weight 9.0 for sire 31, line 3, age 3. The correct value is 9.5.
+</p>
+
+
+<h3>Source</h3>
+
+<p>David A. Harville and Alan P. Fenech (1985).
+Confidence Intervals for a Variance Ratio, or for Heritability, in an
+Unbalanced Mixed Linear Model.
+<em>Biometrics</em>, 41, 137-152.
+https://doi.org/10.2307/2530650
+</p>
+
+
+<h3>References</h3>
+
+<p>Jiming Jiang,
+Linear and Generalized Linear Mixed Models and Their Applications. Table 1.2.
+</p>
+<p>Andre I. Khuri, Linear Model Methodology. Table 11.5.  Page 368.
+https://books.google.com/books?id=UfDvCAAAQBAJ&amp;pg=PA164
+</p>
+<p>Daniel Gianola, Keith Hammond.
+Advances in Statistical Methods for Genetic Improvement of
+Livestock. Table 8.1, page 165.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(harville.lamb)
+dat &lt;- harville.lamb
+dat &lt;- transform(dat, line=factor(line), sire=factor(sire), damage=factor(damage))
+
+library(lattice)
+bwplot(weight ~ line, dat,
+       main="harville.lamb",
+       xlab="line", ylab="birth weights")
+
+if(0){
+  libs(lme4, lucid)
+    
+  m1 &lt;- lmer(weight ~  -1 + line + damage + (1|sire), data=dat)
+  summary(m1)
+  vc(m1) # Khuri reports variances 0.5171, 2.9616
+  ##      grp        var1 var2   vcov  sdcor
+  ##     sire (Intercept) &lt;NA&gt; 0.5171 0.7191
+  ## Residual        &lt;NA&gt; &lt;NA&gt; 2.962  1.721 
+  }
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

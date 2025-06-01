@@ -1,0 +1,108 @@
+<!DOCTYPE html><html><head><title>R: Pediatric High-Grade Glioma Clinical Dataset</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>pediatric_glioma_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Pediatric High-Grade Glioma Clinical Dataset</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, pediatric_glioma_tbl_df, is a tibble containing comprehensive
+clinical and tumor characteristics for 57 pediatric patients with high-grade
+glioma. The data includes 22 variables covering demographic, symptomatic,
+pathological, treatment, and outcome measures.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(pediatric_glioma_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 57 observations and 22 variables:
+</p>
+
+<dl>
+<dt>Age</dt><dd><p>Numeric: Patient age in years</p>
+</dd>
+<dt>Gender</dt><dd><p>Character: Patient gender</p>
+</dd>
+<dt>Headache</dt><dd><p>Character: Headache presence/characteristics</p>
+</dd>
+<dt>Epilepsy</dt><dd><p>Character: Epilepsy status</p>
+</dd>
+<dt>Hemparesis</dt><dd><p>Character: Hemiparesis presence</p>
+</dd>
+<dt>increaseICT</dt><dd><p>Character: Increased intracranial pressure indicators</p>
+</dd>
+<dt>Pathology</dt><dd><p>Character: Tumor pathology classification</p>
+</dd>
+<dt>Pathology_Grade</dt><dd><p>Numeric: WHO tumor grade (III-IV)</p>
+</dd>
+<dt>Thalamic_extension</dt><dd><p>Character: Thalamic involvement</p>
+</dd>
+<dt>Bil_extension</dt><dd><p>Character: Bilateral extension</p>
+</dd>
+<dt>Post_extension</dt><dd><p>Character: Posterior fossa extension</p>
+</dd>
+<dt>BrainStem_extension</dt><dd><p>Character: Brainstem involvement</p>
+</dd>
+<dt>MultiFocality</dt><dd><p>Character: Multifocal tumor presence</p>
+</dd>
+<dt>Midlineshift</dt><dd><p>Character: Midline shift presence</p>
+</dd>
+<dt>Edema</dt><dd><p>Character: Peritumoral edema characteristics</p>
+</dd>
+<dt>Approx_Tumor_Vol</dt><dd><p>Numeric: Estimated tumor volume (cm³)</p>
+</dd>
+<dt>ExtentofSurgicalresection</dt><dd><p>Character: Surgical resection extent</p>
+</dd>
+<dt>Shunt</dt><dd><p>Character: Ventricular shunt presence</p>
+</dd>
+<dt>ResidualsizeonMRI</dt><dd><p>Character: Post-surgical residual tumor</p>
+</dd>
+<dt>Neurostate</dt><dd><p>Character: Neurological status</p>
+</dd>
+<dt>PSBeforeRT</dt><dd><p>Numeric: Performance status pre-radiotherapy</p>
+</dd>
+<dt>Died</dt><dd><p>Character: Mortality outcome</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'pediatric_glioma_tbl_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps distinguish
+this dataset as part of the NeuroDataSets package. The suffix 'tbl_df' indicates
+that the dataset is a tibble. The original content has not been modified.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Kaggle dataset: Pediatric High-Grade Glioma Dataset.
+URL: <a href="https://www.kaggle.com/datasets/amraam/pediatric-high-grade-glioma-dataset">https://www.kaggle.com/datasets/amraam/pediatric-high-grade-glioma-dataset</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

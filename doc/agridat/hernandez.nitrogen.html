@@ -1,0 +1,156 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of corn with nitrogen fertilizer at 5...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>hernandez.nitrogen</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of corn with nitrogen fertilizer at 5 sites.
+</h2>
+
+<h3>Description</h3>
+
+<p>Corn response to nitrogen fertilizer at 5 sites.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 136 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>site</code></dt><dd><p>site factor, 5 levels</p>
+</dd>
+<dt><code>loc</code></dt><dd><p>location name</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>rep, 4 levels</p>
+</dd>
+<dt><code>nitro</code></dt><dd><p>nitrogen, kg/ha</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, Mg/ha</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Experiment was conducted in 2006 at 5 sites in Minnesota.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Hernandez, J.A. and Mulla, D.J. 2008.
+Estimating uncertainty of economically optimum fertilizer rates,
+<em>Agronomy Journal</em>, 100, 1221-1229.
+https://doi.org/10.2134/agronj2007.0273
+</p>
+<p>Electronic data kindly supplied by Jose Hernandez.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+  library(agridat)
+  data(hernandez.nitrogen)
+  dat &lt;- hernandez.nitrogen
+  cprice &lt;- 118.1 # $118.1/Mg or $3/bu
+  nprice &lt;- 0.6615 # $0.66/kg N or $0.30/lb N
+  
+  # Hernandez optimized yield with a constraint on the ratio of the prices.
+  # Simpler to just calculate the income and optimize that.
+  dat &lt;- transform(dat, inc = yield * cprice - nitro * nprice)
+  libs(lattice)
+  xyplot(inc ~ nitro|site, dat, groups=rep, auto.key=list(columns=4),
+         xlab="nitrogen", ylab="income", main="hernandez.nitrogen")
+  
+  # Site 5 only
+  dat1 &lt;- subset(dat, site=='S5')
+  
+  # When we optimize on income, a simple quadratic model works just fine,
+  # and matches the results of the nls model below.
+  # Note, 'poly(nitro)' gives weird coefs
+  lm1 &lt;- lm(inc ~ 1 + nitro + I(nitro^2), data=dat1) 
+  c1 &lt;- coef(lm1)
+  -c1[2] / (2*c1[3])
+  ##    nitro
+  ## 191.7198    # Optimum nitrogen is 192 for site 5
+  
+  
+  # Use the delta method to get a conf int
+  libs("car")
+  del1 &lt;- deltaMethod(lm1, "-b1/(2*b2)", parameterNames= paste("b", 0:2, sep=""))
+  # Simple Wald-type conf int for optimum
+  del1$Est +  c(-1,1) * del1$SE * qt(1-.1/2, nrow(dat1)-length(coef(lm1)))
+  ## 118.9329 264.5067
+  
+  
+  # Nonlinear regression
+  # Reparameterize b0 + b1*x + b2*x^2 using th2 = -b1/2b2 so that th2 is optimum
+  nls1 &lt;- nls(inc ~ th11- (2*th2*th12)*nitro + th12*nitro^2,
+              data = dat1, start = list(th11 = 5, th2 = 150, th12 =-0.1),)
+  summary(nls1)
+  # Wald conf int
+  wald &lt;- function(object, alpha=0.1){
+    nobs &lt;- length(resid(object))
+    npar &lt;- length(coef(object))
+    est &lt;- coef(object)
+    stderr &lt;- summary(object)$parameters[,2]
+    tval &lt;- qt(1-alpha/2, nobs-npar)
+    ci &lt;- cbind(est - tval * stderr, est + tval * stderr)
+    colnames(ci) &lt;- paste(round(100*c(alpha/2, 1-alpha/2), 1), "pct", sep= "")
+    return(ci)
+  }
+  round(wald(nls1),2)
+  ##          5
+  ## th11 936.44 1081.93
+  ## th2  118.93  264.51   # th2 is the optimum
+  ## th12  -0.03   -0.01
+  
+  
+  # Likelihood conf int
+  libs(MASS)
+  round(confint(nls1, "th2", level = 0.9),2)
+  ##       5
+  ## 147.96 401.65
+  
+  
+  # Bootstrap conf int
+  libs(boot)
+  dat1$fit &lt;- fitted(nls1)
+  bootfun &lt;- function(rs, i) { # bootstrap the residuals
+    dat1$y &lt;- dat1$fit + rs[i]
+    coef(nls(y ~ th11- (2*th2*th12)*nitro + th12*nitro^2, dat1,
+             start = coef(nls1) ))
+  }
+  res1 &lt;- scale(resid(nls1), scale = FALSE) # remove the mean.  Why? It is close to 0.
+  set.seed(5) # Sometime the bootstrap fails, but this seed works
+  boot1 &lt;- boot(res1, bootfun, R = 500)
+  boot.ci(boot1, index = 2, type = c("perc"), conf = 0.9)
+  ## Level     Percentile
+  ## 90
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

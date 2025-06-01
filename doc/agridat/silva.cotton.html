@@ -1,0 +1,216 @@
+<!DOCTYPE html><html><head><title>R: Number of cotton bolls for different levels of defoliation.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>silva.cotton</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Number of cotton bolls for different levels of defoliation.
+</h2>
+
+<h3>Description</h3>
+
+<p>Number of cotton bolls, nodes, plant height, and plant weight for different levels of defoliation.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("silva.cotton")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 125 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>stage</code></dt><dd><p>growth stage</p>
+</dd>
+<dt><code>defoliation</code></dt><dd><p>level of defoliation, 0, 25, 50, 75, 100</p>
+</dd>
+<dt><code>plant</code></dt><dd><p>plant number</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>replicate</p>
+</dd>
+<dt><code>reproductive</code></dt><dd><p>number of reproductive structures</p>
+</dd>
+<dt><code>bolls</code></dt><dd><p>number of bolls</p>
+</dd>
+<dt><code>height</code></dt><dd><p>plant height</p>
+</dd>
+<dt><code>nodes</code></dt><dd><p>number of nodes</p>
+</dd>
+<dt><code>weight</code></dt><dd><p>weight of bolls</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data come from a greenhouse experiment with cotton plants. Completely
+randomized design with 5 replicates, 2 plants per pot.
+</p>
+<p>Artificial defoliation was used at levels 0, 25, 50, 75, 100 percent.
+</p>
+<p>Data was collected per plant at five growth stages: vegetative,
+flower-bud, blossom, fig and cotton boll.
+</p>
+<p>The primary response variable is the number of bolls. The data are
+counts, underdispersed, correlated.
+</p>
+<p>Zeviana et al. used this data to compared Poisson, Gamma-count, and
+quasi-Poisson GLMs.
+</p>
+<p>Bonat &amp; Zeviani used this data to fit multivariate correlated
+generalized linear model.
+</p>
+<p>Used with permission of Walmes Zeviani.
+</p>
+<p>Electronic version from:
+https://www.leg.ufpr.br/~walmes/data/desfolha_algodao.txt
+</p>
+
+
+<h3>Source</h3>
+
+<p>Silva, Anderson Miguel da; Degrande, Paulo Eduardo; Suekane, Renato;
+Fernandes, Marcos Gino; &amp; Zeviani, Walmes Marques. (2012).
+Impacto de diferentes niveis de desfolha artificial nos estadios fenologicos do algodoeiro.
+Revista de Ciencias Agrarias, 35(1), 163-172.
+https://www.scielo.mec.pt/scielo.php?script=sci_arttext&amp;pid=S0871-018X2012000100016&amp;lng=pt&amp;tlng=pt.
+</p>
+
+
+<h3>References</h3>
+
+<p>Zeviani, W. M., Ribeiro, P. J., Bonat, W. H., Shimakura, S. E., Muniz, J. A. (2014).
+The Gamma-count distribution in the analysis of experimental underdispersed data.
+<em>Journal of Applied Statistics</em>, 41(12), 1-11.
+https://doi.org/10.1080/02664763.2014.922168
+Online supplement: https://leg.ufpr.br/doku.php/publications:papercompanions:zeviani-jas2014
+</p>
+<p>Regression Models for Count Data.
+https://cursos.leg.ufpr.br/rmcd/applications.html#cotton-bolls
+</p>
+<p>Wagner Hugo Bonat &amp; Walmes Marques Zeviani (2017).
+Multivariate Covariance Generalized Linear Models for the Analysis of
+Experimental Data.
+Short-cource at: 62nd RBras and 17th SEAGRO meeting/
+https://github.com/leg-ufpr/mcglm4aed
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+library(agridat)
+data(silva.cotton)
+dat &lt;- silva.cotton
+dat$stage &lt;- ordered(dat$stage,
+                     levels=c("vegetative","flowerbud","blossom","boll","bollopen"))
+# make stage a numeric factors
+dat &lt;- transform(dat,
+                 stage = factor(stage, levels = unique(stage),
+                                labels = 1:nlevels(stage)))
+
+# sum data across plants, 1 pot = 2 plants
+dat &lt;- aggregate(cbind(weight,height,bolls,nodes) ~
+                    stage+defoliation+rep, data=dat, FUN=sum)
+
+  # all traits, plant-level data
+  libs(latticeExtra)
+  foo &lt;- xyplot(weight + height + bolls + nodes ~ defoliation | stage,
+                data = dat, outer=TRUE,
+                xlab="Defoliation percent", ylab="", main="silva.cotton",
+                as.table = TRUE, jitter.x = TRUE, type = c("p", "smooth"),
+                scales = list(y = "free"))
+  combineLimits(useOuterStrips(foo))
+
+
+if(0){
+
+  # poisson glm with quadratic effect for defoliation
+  m0 &lt;- glm(bolls ~ 1, data=dat, family=poisson)
+  m1 &lt;- glm(bolls ~ defoliation+I(defoliation^2), data=dat, family=poisson)
+  m2 &lt;- glm(bolls ~ stage:defoliation+I(defoliation^2), data=dat, family=poisson)
+  m3 &lt;- glm(bolls ~ stage:(defoliation+I(defoliation^2)), data=dat, family=poisson)
+  par(mfrow=c(2,2)); plot(m3); layout(1)
+  anova(m0, m1, m2, m3, test="Chisq")
+
+  # predicted values
+  preddat &lt;- expand.grid(stage=levels(dat$stage),
+                         defoliation=seq(0,100,length=20))
+  preddat$pred &lt;- predict(m3, newdata=preddat, type="response")
+
+  # Zeviani figure 3
+  libs(latticeExtra)
+  xyplot(bolls ~ jitter(defoliation)|stage, dat,
+         as.table=TRUE,
+         main="silva.cotton - observed and model predictions",
+         xlab="Defoliation percent",
+         ylab="Number of bolls") +
+    xyplot(pred ~ defoliation|stage, data=preddat,
+           as.table=TRUE,
+           type='smooth', col="black", lwd=2)
+}
+
+if(0){
+  # ----- mcglm -----
+  dat &lt;- transform(dat, deffac=factor(defoliation))
+
+  libs(car)
+
+  vars &lt;- c("weight","height","bolls","nodes")
+  splom(~dat[vars], data=dat,
+        groups = stage,
+        auto.key = list(title = "Growth stage",
+                        cex.title = 1,
+                        columns = 3),
+        par.settings = list(superpose.symbol = list(pch = 4)),
+        as.matrix = TRUE)
+
+  splom(~dat[vars], data=dat,
+        groups = defoliation,
+        auto.key = list(title = "Artificial defoliation",
+                        cex.title = 1,
+                        columns = 3),
+        as.matrix = TRUE)
+
+  # multivariate linear model.
+  m1 &lt;- lm(cbind(weight, height, bolls, nodes) ~ stage * deffac,
+           data = dat)
+  anova(m1)
+
+  summary.aov(m1)
+
+  r0 &lt;- residuals(m1)
+
+  # Checking the models assumptions on the residuals.
+  car::scatterplotMatrix(r0,
+                         gap = 0, smooth = FALSE, reg.line = FALSE, ellipse = TRUE,
+                         diagonal = "qqplot")
+
+  }
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

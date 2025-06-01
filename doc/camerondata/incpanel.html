@@ -1,0 +1,95 @@
+<!DOCTYPE html><html><head><title>R: Hourly wages</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>incpanel</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Hourly wages</h2>
+
+<h3>Description</h3>
+
+<p>Data from the Michigan Panel Survey of Income Dynamics, Individual Level Final
+Release 1993. Sample of 4856 women, extracted by Cameron and Trivedi (2005).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>incpanel
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 4856 observations and 9 variables:
+</p>
+
+<dl>
+<dt>intnum</dt><dd><p>interview number 1968</p>
+</dd>
+<dt>persnum</dt><dd><p>person number</p>
+</dd>
+<dt>age</dt><dd><p>age of individual in 1993</p>
+</dd>
+<dt>educatn</dt><dd><p>highest grade/year of school completed 1993</p>
+</dd>
+<dt>earnings</dt><dd><p>total labor income of individual received in 1992, dollars</p>
+</dd>
+<dt>hours</dt><dd><p>total annual work hours in 1992</p>
+</dd>
+<dt>sex</dt><dd><p>sex of individual,= 2 if female</p>
+</dd>
+<dt>kids</dt><dd><p>total number of children born to this individual</p>
+</dd>
+<dt>married</dt><dd><p>last known marital status: 1 = married,
+2 = never married, 3 = widowed, 4 = divorced, 5 = separated,
+8 = NA, 9 = no histories 85-93 </p>
+</dd>
+</dl>
+
+
+
+<h3>Section in Text</h3>
+
+<p>9.2.1 Nonparametric density estimation, pp. 295
+9.2.2 Nonparametric Regression, pp. 297
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="http://cameron.econ.ucdavis.edu/mmabook/mmadata.html">http://cameron.econ.ucdavis.edu/mmabook/mmadata.html</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Cameron, A. and Trivedi, P. (2005), &quot;Microeconometrics: Methods and
+Applications,&quot; Cambridge University Press, New York.
+</p>
+<p>Michigan Panel Study of Income Dynamics (PSID),
+<a href="https://psidonline.isr.umich.edu/">https://psidonline.isr.umich.edu/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>summary(incpanel)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

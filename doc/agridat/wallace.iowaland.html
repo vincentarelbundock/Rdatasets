@@ -1,0 +1,125 @@
+<!DOCTYPE html><html><head><title>R: Iowa farmland values by county in 1925</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>wallace.iowaland</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Iowa farmland values by county in 1925
+</h2>
+
+<h3>Description</h3>
+
+<p>Iowa farmland values by county in 1925
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("wallace.iowaland")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 99 observations on the following 10 variables.
+</p>
+
+<dl>
+<dt><code>county</code></dt><dd><p>county factor, 99 levels</p>
+</dd>
+<dt><code>fips</code></dt><dd><p>FIPS code (state+county)</p>
+</dd>
+<dt><code>lat</code></dt><dd><p>latitude</p>
+</dd>
+<dt><code>long</code></dt><dd><p>longitude</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>average corn yield per acre (bu)</p>
+</dd>
+<dt><code>corn</code></dt><dd><p>percent of land in corn</p>
+</dd>
+<dt><code>grain</code></dt><dd><p>percent of land in small grains</p>
+</dd>
+<dt><code>untillable</code></dt><dd><p>percent of land untillable</p>
+</dd>
+<dt><code>fedval</code></dt><dd><p>land value (excluding buildings) per acre, 1925 federal census</p>
+</dd>
+<dt><code>stval</code></dt><dd><p>land value (excluding buildings) per acre, 1925 state census</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>None.
+</p>
+
+
+<h3>Source</h3>
+
+<p>H.A. Wallace (1926). Comparative Farm-Land Values in Iowa.
+<em>The Journal of Land &amp; Public Utility Economics</em>, 2, 385-392.
+Page 387-388.
+https://doi.org/10.2307/3138610
+</p>
+
+
+<h3>References</h3>
+
+<p>Larry Winner. Spatial Data Analysis.
+https://www.stat.ufl.edu/~winner/data/iowaland.txt
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(agridat)
+data(wallace.iowaland)
+dat &lt;- wallace.iowaland
+
+# Interesting trends involving latitude
+libs(lattice)
+splom(~dat[,-c(1:2)], type=c('p','smooth'), lwd=2, main="wallace.iowaland")
+
+# Means. Similar to Wallace table 1
+apply(dat[, c('yield','corn','grain','untillable','fedval')], 2, mean)
+
+# Correlations.  Similar to Wallace table 2
+round(cor(dat[, c('yield','corn','grain','untillable','fedval')]),2)
+
+m1 &lt;- lm(fedval ~ yield + corn + grain + untillable, dat)
+summary(m1) # estimates similar to Wallace, top of p. 389
+
+# Choropleth map
+libs(maps)
+data(county.fips)
+dat &lt;- transform(dat, polnm = paste0('iowa,',county)) # polnm example: iowa,adair
+
+libs("latticeExtra") # for mapplot
+redblue &lt;- colorRampPalette(c("firebrick", "lightgray", "#375997"))
+mapplot(polnm~fedval , data=dat, colramp=redblue,
+        main="wallace.iowaland - Federal land values",
+        xlab="Land value, dollars per acre",
+        scales=list(draw=FALSE),
+        map=map('county', 'iowa', plot=FALSE,
+          fill=TRUE, projection="mercator"))
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

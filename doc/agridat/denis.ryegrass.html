@@ -1,0 +1,93 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of perennial ryegrass in France</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>denis.ryegrass</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of perennial ryegrass in France
+</h2>
+
+<h3>Description</h3>
+
+<p>Plant strength of perennial ryegrass in France for 21 genotypes at 7
+locations.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 147 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype, 21 levels</p>
+</dd>
+<dt><code>loc</code></dt><dd><p>location, 7 levels</p>
+</dd>
+<dt><code>strength</code></dt><dd><p>average plant strength * 100</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>INRA conducted a breeding trial in western France with 21 genotypes at
+7 locations.  The observed data is 'strength' averaged over 7-10
+plants per plot and three plots per location (after adjusting for
+blocking effects).  Each plant was scored on a scale 0-9.
+</p>
+<p>The original data had a value of 86.0 for genotype G1 at location
+L4&ndash;this was replaced by an additive estimated value of 361.2 as in
+Gower and Hand (1996).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Jean-Baptiste Denis and John C. Gower, 1996.
+Asymptotic confidence regions for biadditive models:
+interpreting genotype-environment interaction,
+<em>Applied Statistics</em>, 45, 479-493.
+https://doi.org/10.2307/2986069
+</p>
+
+
+<h3>References</h3>
+
+<p>Gower, J.C. and Hand, D.J., 1996.  Biplots.
+Chapman and Hall.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(agridat)
+data(denis.ryegrass)
+dat &lt;- denis.ryegrass
+
+# biplots (without ellipses) similar to Denis figure 1
+libs(gge)
+m1 &lt;- gge(dat, strength ~ gen*loc, scale=FALSE)
+biplot(m1, main="denis.ryegrass biplot")
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

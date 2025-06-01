@@ -1,0 +1,112 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of wheat in Russia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>jurowski.wheat.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of wheat in Russia
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of wheat in Russia
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("jurowski.wheat.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 480 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row ordinate</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column ordinate</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, Pud per plot</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The experiment was conducted in Russia at Ofrossimowka. This word
+&quot;Ofrossimowka&quot; appeared in the German text of Sapehin, but is
+otherwise extremely difficult to find.  There may be alternate ways
+the actual Russian name is translated into German/English.
+</p>
+<p>Likewise, the name &quot;Jurowski&quot; is very difficult to find and may have
+other transliterations.
+</p>
+<p>Sapehin gives the original source as:
+Arbeiten d. Vers.-St. d. Russ. Ges. f. Zuckerind. 1913.
+which may expand to
+Arbeiten der Versuchsstationen der Russ. Ges. f. Zuckerindustrie. 1913.
+</p>
+<p>Sepehin appendix says the plot size is &quot;4 x 12 m^2&quot;.
+It is not clear which plot dimension is 4 m and which is 12 m.
+If 4m wide 12m tall, then field is 48m wide x 480m long.
+If 4m tall 12m wide, then field is 144m wide x 160m long. This seems
+much more likely.
+</p>
+<p>Sapehin says the std dev is &quot;21.8 pud&quot;.  A &quot;pud&quot; is a Russian unit of
+weight equal to 16.38 kilograms.
+</p>
+<p>Data converted by OCR from Sapehin and hand-checked by K.Wright.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Sapehin, A. A. (1927).
+Beitrage zur Methodik des Feldversuches.
+Die Landwirtschaflichen Versuchsstationen, 105, 243-259.
+https://www.google.com/books/edition/Die_Landwirthschaftlichen_Versuchs_Stati/cLZGAAAAYAAJ?hl=en&amp;pg=PA243
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  library(agridat)
+  data(jurowski.wheat.uniformity)
+  dat &lt;- jurowski.wheat.uniformity
+  
+  sd(dat$yield)
+  libs(desplot)
+  desplot(dat, yield~col*row,
+          aspect=(40*4)/(12*12), flip=TRUE, tick=TRUE,
+          main="jurowski.wheat.uniformity")
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

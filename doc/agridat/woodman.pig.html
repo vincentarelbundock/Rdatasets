@@ -1,0 +1,146 @@
+<!DOCTYPE html><html><head><title>R: Weight gain in pigs for different treatments</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>woodman.pig</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Weight gain in pigs for different treatments
+</h2>
+
+<h3>Description</h3>
+
+<p>Weight gain in pigs for different treatments, with initial weight and
+feed eaten as covariates.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("woodman.pig")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 30 observations on the following 7 variables.
+</p>
+
+<dl>
+<dt><code>pen</code></dt><dd><p>pen</p>
+</dd>
+<dt><code>treatment</code></dt><dd><p>diet</p>
+</dd>
+<dt><code>pig</code></dt><dd><p>pig number</p>
+</dd>
+<dt><code>sex</code></dt><dd><p>sex</p>
+</dd>
+<dt><code>weight1</code></dt><dd><p>initial weight in pounds, week 0</p>
+</dd>
+<dt><code>weight2</code></dt><dd><p>final weight in pounds, week 16</p>
+</dd>
+<dt><code>feed</code></dt><dd><p>feed eaten in pounds</p>
+</dd>
+<dt><code>w0</code></dt><dd><p>initial weight</p>
+</dd>
+<dt><code>g</code></dt><dd><p>average weekly gain</p>
+</dd>
+<dt><code>h</code></dt><dd><p>half rate of change in growth</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Six pigs in each of 5 pens were fed individually. From each litter
+there were 3 males and 3 females chosen for a pen. Three different
+diet treatments were used.
+</p>
+<p>Note: Woodman gives the initial weights to the nearest 0.5
+pounds.
+</p>
+<p>The w0, g, h columns are from Wishart 1938. Wishart used the weekly
+weight measurements (not available) to fit quadratic growth curves for
+each pig and then reported the constants. These are the data that are
+widely used by many authors.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Woodman, Evans, Callow &amp; Wishart (1936).
+The nutrition of the bacon pig. I. The influence of high levels of protein intake on growth, conformation and quality in the bacon pig.
+The Journal of Agricultural Science, 26, 546 - 619. 
+Table V, Page 557.
+https://doi.org/10.1017/S002185960002308X
+</p>
+<p>Wishart, J. (1938).
+Growth-rate determinations in nutrition studies with the bacon pig and their analysis.
+Biometrika, 30: 16-28. Page 20, table 2.
+https://doi.org/10.2307/2332221
+</p>
+
+
+<h3>References</h3>
+
+<p>Wishart (1950) Table 2, p 17.
+</p>
+<p>Bernard Ostle (1963). Statistics in Research, 2nd ed. Page 455.
+https://archive.org/details/secondeditionsta001000mbp
+</p>
+<p>Henry Scheffe (1999).
+The Analysis of Variance.  Page 217.
+</p>
+<p>Peter H Westfall, Randall Tobias, Russell D Wolfinger (2011).
+Multiple Comparisons and Multiple Tests using SAS. Sec 8.3.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  library(agridat)
+  data(woodman.pig)
+  dat &lt;- woodman.pig
+  
+  # add day of year for each weighing
+  dat &lt;- transform(dat, date1=36, date2=148)
+  plot(NA, xlim=c(31,153), ylim=c(28,214),
+       xlab="day of year", ylab="weight")
+  segments(dat$date1, dat$weight1, dat$date2, dat$weight2,
+           col=as.numeric(as.factor(dat$treatment)))
+  title("woodman.pig")
+
+  # Average gain per week
+  dat &lt;- transform(dat, pen=factor(pen), treatment=factor(treatment),
+                   sex=factor(sex))
+  m1 &lt;- lm(g ~ -1 + pen + treatment +sex + treatment:sex + w0, data=dat)
+  anova(m1)
+  # Compare diets. Results similar to Westfall 8.13
+  libs(emmeans)
+  pairs(emmeans(m1, "treatment"))
+  # NOTE: Results may be misleading due to involvement in interactions
+  #  contrast estimate    SE df t.ratio p.value
+  #  A - B      0.4283 0.288 19 1.490   0.3179 
+  #  A - C      0.5200 0.284 19 1.834   0.1857 
+  #  B - C      0.0918 0.288 19 0.319   0.9456 
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

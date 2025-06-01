@@ -1,0 +1,112 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trials of barley, 10 years on same ground</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>baker.barley.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trials of barley, 10 years on same ground
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trials of barley at Davis, California, 1925-1935, 10 years on same ground.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 570 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, pounds/acre</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Ten years of uniformity trials were sown on the same ground.  Baker
+(1952) shows a map of the field, in which gravel subsoil extended from
+the upper right corner diagonally lower-center.
+This part of the field had lower yields on the 10-year average map.
+</p>
+<p>Plot 41 in 1928 is missing.
+</p>
+<p>Field width: 19 plots = 827 ft
+</p>
+<p>Field length: 3 plots * 161 ft + 2 alleys * 15 feet = 513 ft
+</p>
+
+
+<h3>Source</h3>
+
+<p>Baker, GA and Huberty, MR and Veihmeyer, FJ.  (1952)
+A uniformity trial on unirrigated barley of ten years' duration.
+<em>Agronomy Journal</em>, 44, 267-270.
+https://doi.org/10.2134/agronj1952.00021962004400050011x
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+data(baker.barley.uniformity)
+dat &lt;- baker.barley.uniformity
+
+# Ten-year average
+dat2 &lt;- aggregate(yield ~ row*col, data=dat, FUN=mean, na.rm=TRUE)
+
+libs(desplot)
+desplot(dat, yield~col*row|year,
+        aspect = 513/827, # true aspect
+        main="baker.barley.uniformity - heatmaps by year")
+
+desplot(dat2, yield~col*row,
+        aspect = 513/827, # true aspect
+        main="baker.barley.uniformity - heatmap of 10-year average")
+# Note low yield in upper right, slanting to left a bit due to sandy soil
+# as shown in Baker figure 1.
+
+
+# Baker fig 2, stdev vs mean
+dat3 &lt;- aggregate(yield ~ row*col, data=dat, FUN=sd, na.rm=TRUE)
+plot(dat2$yield, dat3$yield, xlab="Mean yield", ylab="Std Dev yield",
+     main="baker.barley.uniformity")
+
+# Baker table 4, correlation of plots across years
+# libs(reshape2)
+# mat &lt;- acast(dat, row+col~year)
+# round(cor(mat, use='pair'),2)
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

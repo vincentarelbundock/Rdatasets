@@ -1,0 +1,75 @@
+<!DOCTYPE html><html><head><title>R: Oscar winners, 1929 to 2018</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>oscars_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Oscar winners, 1929 to 2018</h2>
+
+<h3>Description</h3>
+
+<p>The dataset name has been changed to 'oscars_tbl_df' to avoid confusion with other packages
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the 'usdatasets'
+package and identifies it as a tibble. The original content of the dataset has not been modified.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(oscars_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 184 observations and 11 variables:
+</p>
+
+<dl>
+<dt>oscar_no</dt><dd><p>Numeric indicating the Oscar number.</p>
+</dd>
+<dt>oscar_yr</dt><dd><p>Numeric representing the year the Oscar was awarded.</p>
+</dd>
+<dt>award</dt><dd><p>Character string indicating the category of the award.</p>
+</dd>
+<dt>name</dt><dd><p>Character string with the name of the recipient.</p>
+</dd>
+<dt>movie</dt><dd><p>Character string indicating the movie for which the award was given.</p>
+</dd>
+<dt>age</dt><dd><p>Numeric indicating the age of the recipient at the time of the award.</p>
+</dd>
+<dt>birth_pl</dt><dd><p>Character string indicating the birthplace of the recipient.</p>
+</dd>
+<dt>birth_date</dt><dd><p>Date representing the birthdate of the recipient.</p>
+</dd>
+<dt>birth_mo</dt><dd><p>Numeric indicating the birth month.</p>
+</dd>
+<dt>birth_d</dt><dd><p>Numeric indicating the birth day.</p>
+</dd>
+<dt>birth_y</dt><dd><p>Numeric indicating the birth year.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Data from historical Oscar award records.
+</p>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html><html><head><title>R: Romano-British Glass, Major and Minor Elements</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>RBGlass1</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Romano-British Glass, Major and Minor Elements
+</h2>
+
+<h3>Description</h3>
+
+<p>The concentrations for 11 major and minor elements in 105 Romano-British waste glass specimens from two furnace sites (Leicester and Mancetter).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("RBGlass1")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 105 observations on the following 12 variables.
+</p>
+
+<dl>
+<dt><code>Site</code></dt><dd><p>a factor with levels <code>Leicester</code> and <code>Mancetter</code></p>
+</dd>
+<dt><code>Al</code></dt><dd><p>Percentage Aluminum</p>
+</dd>
+<dt><code>Fe</code></dt><dd><p>Percentage Iron</p>
+</dd>
+<dt><code>Mg</code></dt><dd><p>Percentage Magnesium</p>
+</dd>
+<dt><code>Ca</code></dt><dd><p>Percentage Calcium</p>
+</dd>
+<dt><code>Na</code></dt><dd><p>Percentage Sodium</p>
+</dd>
+<dt><code>K</code></dt><dd><p>Percentage Potassium</p>
+</dd>
+<dt><code>Ti</code></dt><dd><p>Percentage Titanium</p>
+</dd>
+<dt><code>P</code></dt><dd><p>Percentage Phosphorus</p>
+</dd>
+<dt><code>Mn</code></dt><dd><p>Percentage Manganese</p>
+</dd>
+<dt><code>Sb</code></dt><dd><p>Percentage Antinmony</p>
+</dd>
+<dt><code>Pb</code></dt><dd><p>Percentage Lead</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The concentrations for 11 major and minor elements in 105 Romano-British waste glass specimens from two furnace sites (Leicester and Mancetter) come from Caroline Jackson's Ph. D. thesis at Bradford University. The data here were scanned from from Baxter (1994) Table A1. Measurements are percentage for each element.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Baxter, M. J. 1994. <em>Exploratory Multivariate Analysis in Archaeology</em>. Edinburgh University Press.
+</p>
+<p>Jackson, C. M. 1992. A Compositional Analysis of Roman and Early Post-Roman Glass and Glass Working Waste from Selected British Sites Towards an Understanding of the Technology of Glass-Making Through Analysis by Inductively-Coupled Plasma Spectrometry. Unpublished PhD thesis. Bradford University (BL: D214554).
+</p>
+
+
+<h3>References</h3>
+
+<p>Baxter, M. J., Cool H.E.M., Heyworth M.P. and Jackson, C.M. 1995. Compositional Variability in Colourless Roman Vessel Glass. <em>Archaeometry</em> 37(1), 129-141.
+</p>
+<p>Baxter, M. J., Cool, H. E. M. and Jackson, C. M. (2005). Further Studies in the Compositional Variability of Colourless Romano-British Glass.  <em>Archaeometry</em>  47, 47-68.
+</p>
+<p>Carlson, David L. 2017. <em>Quantitative Methods in Archaeology Using R</em>. Cambridge University Press, pp 245-247, 256-261.
+</p>
+<p>Jackson, C M, J R Hunter, S E Warren, and H E M Cool. 1991. The Analysis of Blue-Green Glass and Glassy Waste from Two Romano-British Glass Working Sites. In <em>Archaeometry 1990</em>, edited by E. Pernicka and G. A. Wagner, pp 295-304. Birkhäuser Verlag.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(RBGlass1)
+RBGlass1.pca &lt;- prcomp(RBGlass1[, -1], scale.=TRUE)
+biplot(RBGlass1.pca, xlabs=abbreviate(RBGlass1$Site, 1), cex=.75)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

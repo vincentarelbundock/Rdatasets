@@ -1,0 +1,99 @@
+<!DOCTYPE html><html><head><title>R: Hours worked and wages (more precision)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>laborpanelprec</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Hours worked and wages (more precision)</h2>
+
+<h3>Description</h3>
+
+<p>Data on 532 males over 10 years (1979-1988) from Ziliak (1997),
+with more significant digits (seven decimals) than the data originally posted on
+JBES website with two decimal places (Cameron and Trivedi, 2005).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>laborpanelprec
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 5320 observations and 8 variables:
+</p>
+
+<dl>
+<dt>lnhr</dt><dd><p>log of annual hours worked</p>
+</dd>
+<dt>lnwg</dt><dd><p>log of of hourly wage</p>
+</dd>
+<dt>kids</dt><dd><p>number of children</p>
+</dd>
+<dt>ageh</dt><dd><p>age</p>
+</dd>
+<dt>agesq</dt><dd><p>quadratic age</p>
+</dd>
+<dt>disab</dt><dd><p>= 1 if bad health</p>
+</dd>
+<dt>id</dt><dd><p>identification code</p>
+</dd>
+<dt>year</dt><dd><p>interview year</p>
+</dd>
+</dl>
+<p>...
+
+</p>
+
+
+<h3>Section in Text</h3>
+
+<p>22.3 Panel GMM Example: Hours and Wages, pp. 754-6
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="http://cameron.econ.ucdavis.edu/mmabook/mmadata.html">http://cameron.econ.ucdavis.edu/mmabook/mmadata.html</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Cameron, A. and Trivedi, P. (2005), &quot;Microeconometrics: Methods and
+Applications,&quot; Cambridge University Press, New York.
+</p>
+<p>Ziliak, J. (1997), &quot;Efficient Estimation With Panel Data when
+Instruments are Predetermined: An Empirical Comparison of
+Moment-Condition Estimators,&quot;
+Journal of Business and Economic Statistics, 15, 419-431.
+<a href="https://amstat.tandfonline.com/doi/abs/10.1080/07350015.1997.10524720">https://amstat.tandfonline.com/doi/abs/10.1080/07350015.1997.10524720</a>
+</p>
+<p>Panel Study of Income Dynamics (PSID),
+<a href="https://psidonline.isr.umich.edu">https://psidonline.isr.umich.edu</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>summary(laborpanelprec)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of rice</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>lord.rice.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of rice
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of rice in Ceylon, 1929.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("lord.rice.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 560 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>field</code></dt><dd><p>field</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>grain</code></dt><dd><p>grain weight, pounds per plot</p>
+</dd>
+<dt><code>straw</code></dt><dd><p>straw weight, pounds per plot</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>In 1929, eight fields 1/5 acre in size were broadcast seeded with rice
+at the Anuradhapura Experiment Station in the northern dry zone of
+Ceylon. After broadcast, the fields were marked into 10 ft by 10 ft
+squares. At harvest, weights of grain and straw were recorded.
+</p>
+<p>Fields 10-14 were on one side of a drain, and fields 26-28 on the
+other side.
+</p>
+<p>Each field was surrounded by a bund. Plots next to the bunds had higher
+yields.
+</p>
+<p>Field width: 5 plots * 10 feet = 50 feet
+</p>
+<p>Field length: 14 plots * 10 feet = 140 feet
+</p>
+<p>Conclusions: &quot;It would appear that plots of about 1/87 acre are the most effective.&quot;
+</p>
+
+
+<h3>Source</h3>
+
+<p>Lord, L. (1931).
+A Uniformity Trial with Irrigated Broadcast Rice.
+The Journal of Agricultural Science, 21(1), 178-188.
+https://doi.org/10.1017/S0021859600008029
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(lord.rice.uniformity)
+dat &lt;- lord.rice.uniformity
+
+# match table on page 180
+## libs(dplyr)
+## dat 
+##   field grain straw
+##   &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1 10      590   732
+## 2 11      502   600
+## 3 12      315   488
+## 4 13      291   538
+## 5 14      489   670
+## 6 26      441   560
+## 7 27      451   629
+## 8 28      530   718
+
+# There are consistently high yields along all edges of the field
+# libs(lattice)
+# bwplot(grain ~ factor(col)|field,dat)
+# bwplot(grain ~ factor(col)|field,dat)
+
+# Heatmaps
+libs(desplot)
+desplot(dat, grain ~ col*row|field,
+        flip=TRUE, aspect=140/50,
+        main="lord.rice.uniformity")
+
+
+# bivariate scatterplots  
+# xyplot(grain ~ straw|field, dat)
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

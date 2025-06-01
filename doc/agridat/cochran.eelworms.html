@@ -1,0 +1,151 @@
+<!DOCTYPE html><html><head><title>R: Counts of eelworms before and after fumigant treatments</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>cochran.eelworms</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Counts of eelworms before and after fumigant treatments
+</h2>
+
+<h3>Description</h3>
+
+<p>Counts of eelworms before and after fumigant treatments
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 48 observations on the following 7 variables.
+</p>
+
+<dl>
+<dt><code>block</code></dt><dd><p>block factor, 4 levels</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>fumigant</code></dt><dd><p>fumigant factor</p>
+</dd>
+<dt><code>dose</code></dt><dd><p>dose, Numeric 0,1,2.  Maybe should be a factor?</p>
+</dd>
+<dt><code>initial</code></dt><dd><p>count of eelworms pre-treatment</p>
+</dd>
+<dt><code>final</code></dt><dd><p>count of eelworms post-treatment</p>
+</dd>
+<dt><code>grain</code></dt><dd><p>grain yield in pounds</p>
+</dd>
+<dt><code>straw</code></dt><dd><p>straw yield in pounds</p>
+</dd>
+<dt><code>weeds</code></dt><dd><p>ratio of weeds to total oats</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>A soil fumigation experiment on Spring Oats, conducted in 1935.
+</p>
+<p>Each plot is 30 links x 41.7 links, but it is not clear which side of
+the plot has a specific length.
+</p>
+<p>Treatment codes: Con = Control, Chl = Chlorodinitrobenzen, Cym =
+Cymag, Car = Carbon Disulphide jelly, See = Seekay.
+</p>
+<p>Experiment was conducted in 1935 at Rothamsted Experiment Station.  In
+early March 400 grams of soil (4 x 100g) were sampled and the number
+of eelworm cysts were counted.  Fumigants were added to the soil, oats
+were sown and later harvested.  In October, the plots were again
+sampled and the final count of cysts recorded.
+</p>
+<p>The Rothamsted report concludes that &quot;Car&quot; and &quot;Cym&quot; produced higher
+yields, due partly to the nitrogen in the fumigant, while &quot;Chl&quot;
+decreased the yield.  All fumigants reduced weeds. The crop was
+'unusually weedy'. &quot;Car&quot; and &quot;See&quot; decreased the number of eelworm
+cysts in the soil.
+</p>
+<p>The original data can be found in the Rothamsted Report. The report
+notes the position of the blocks in the field were slightly different
+than shown.
+</p>
+<p>The experiment plan shown in Bailey (2008, p. 73), shows columns 9-11
+shifted slightly upward. It is not clear why.
+</p>
+<p>Thanks to U.Genschel for identifying a typo.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Cochran and Cox, 1950.
+<em>Experimental Designs</em>. Table 3.1.
+</p>
+
+
+<h3>References</h3>
+
+<p>R. A. Bailey (2008).
+Design of Comparative Experiments. Cambridge.
+</p>
+<p>Other Experiments at Rothamsted (1936).
+Report For 1935, Rothamsted Research. pp 174 - 193.
+https://doi.org/10.23637/ERADOC-1-67
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(cochran.eelworms)
+  dat &lt;- cochran.eelworms
+
+  libs(lattice)
+  splom(dat[ , 5:10],
+        group=dat$fumigant, auto.key=TRUE,
+        main="cochran.eelworms")
+  
+  libs(desplot)
+  desplot(dat, fumigant~col*row, text=dose, flip=TRUE, cex=2)
+  
+  # Very strong spatial trends
+  desplot(dat, initial ~ col*row,
+          flip=TRUE, # aspect unknown
+          main="cochran.eelworms")
+
+
+  # final counts are strongly related to initial counts
+  libs(lattice)
+  xyplot(final~initial|factor(dose), data=dat, group=fumigant,
+         main="cochran.eelworms - by dose (panel) &amp; fumigant",
+         xlab="Initial worm count",
+         ylab="Final worm count", auto.key=list(columns=5))
+  
+  # One approach...log transform, use 'initial' as covariate, create 9 treatments
+  dat &lt;- transform(dat, trt=factor(paste0(fumigant, dose)))
+  m1 &lt;- aov(log(final) ~ block + trt + log(initial), data=dat)
+  anova(m1)
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

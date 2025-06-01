@@ -1,0 +1,112 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of wheat, 22 varieties at 14 sites in...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>fox.wheat</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of wheat, 22 varieties at 14 sites in Australia
+</h2>
+
+<h3>Description</h3>
+
+<p>Wheat yields of 22 varieties at 14 sites in Australia
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("fox.wheat")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 308 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype/variety factor, 22 levels</p>
+</dd>
+<dt><code>site</code></dt><dd><p>site factor, 14 levels</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, tonnes/ha</p>
+</dd>
+<dt><code>state</code></dt><dd><p>state in Australia</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The 1975 Interstate Wheat Variety trial in Australia used RCB design
+with 4 blocks, 22 varieties in 14 sites.  Wagga is represented twice, by
+trials sown in May and June.
+</p>
+<p>The 22 varieties were a highly selected and represent considerable
+genetic diversity with four different groups.
+(i) from the University of Sydney: Timson, Songlen, Gamenya.
+(ii) widely grown on Mallee soils: Heron and Halberd.
+(iii) late maturing varieties from Victoria: Pinnacle, KL-21, JL-157.
+(iv) with Mexican parentage: WW-15  and Oxley.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Fox, P.N. and Rathjen, A.J. (1981).
+Relationships between sites used in the interstate wheat variety trials.
+<em>Australian Journal of Agricultural Research</em>, 32, 691-702.
+</p>
+<p>Electronic version supplied by Jonathan Godfrey.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+data(fox.wheat)
+dat &lt;- fox.wheat
+
+# Means of varieties.  Slight differences from Fox and Rathjen suggest
+# they had more decimals of precision than shown.
+tapply(dat$yield, dat$gen, mean)
+
+# Calculate genotype means, merge into the data
+genm &lt;- tapply(dat$yield, dat$gen, mean)
+dat$genm &lt;- genm[match(dat$gen, names(genm))]
+
+# Calculate slopes for each site.  Matches Fox, Table 2, Col A.
+m1 &lt;- lm(yield~site+site:genm, data=dat)
+sort(round(coef(m1)[15:28],2), dec=TRUE)
+
+# Figure 1 of Fox
+libs(lattice)
+xyplot(yield~genm|state, data=dat, type=c('p','r'), group=site,
+       auto.key=list(columns=4),
+       main="fox.wheat", xlab="Variety mean across all sites",
+       ylab="Variety yield at each site within states")
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html><html><head><title>R: Nebraska farm income in 2007 by county</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>nebraska.farmincome</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Nebraska farm income in 2007 by county
+</h2>
+
+<h3>Description</h3>
+
+<p>Nebraska farm income in 2007 by county
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 93 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>county</code></dt><dd><p>county</p>
+</dd>
+<dt><code>crop</code></dt><dd><p>crop income, thousand dollars</p>
+</dd>
+<dt><code>animal</code></dt><dd><p>livestock and poultry income, thousand dollars</p>
+</dd>
+<dt><code>area</code></dt><dd><p>area of each county, square miles</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The variables for each county are:
+</p>
+<p>Value of farm products sold - crops (NAICS) 2007 (adjusted)
+</p>
+<p>Value of farm products sold - livestock, 2007 (adjusted).
+</p>
+<p>Area in square miles.
+</p>
+<p>Note: Cuming county is a very important beef-producing county.
+Some counties are not reported to protect privacy.
+Western Nebraska is dryer and has lower income.
+South-central Nebraska is irrigated and has higher crop income per
+square mile.
+</p>
+
+
+<h3>Source</h3>
+
+<p>U.S. Department of Agriculture-National Agriculture Statistics
+Service. https://censtats.census.gov/usa/usa.shtml
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+data(nebraska.farmincome)
+dat &lt;- nebraska.farmincome
+
+libs(maps, mapproj, latticeExtra)
+# latticeExtra for mapplot
+
+dat$stco &lt;- paste0('nebraska,', dat$county)
+# Scale to million dollars per county
+dat &lt;- transform(dat, crop=crop/1000, animal=animal/1000)
+
+# Raw, county-wide incomes.  Note the outlier Cuming county
+redblue &lt;- colorRampPalette(c("firebrick", "lightgray", "#375997"))
+mapplot(stco ~ crop + animal, data = dat, colramp=redblue,
+        main="nebraska.farmincome",
+        xlab="Farm income from animals and crops (million $ per county)",
+        scales = list(draw = FALSE), 
+        map = map('county', 'nebraska', plot = FALSE, fill = TRUE,
+          projection = "mercator") )
+
+# Now scale to income/mile^2
+dat &lt;- within(dat, {
+  crop.rate &lt;- crop/area
+  animal.rate &lt;- animal/area
+})
+# And use manual breakpoints.
+mapplot(stco ~ crop.rate + animal.rate, data = dat, colramp=redblue,
+        main="nebraska.farmincome: income per square mile (percentile breaks)",
+        xlab="Farm income (million $ / mi^2) from animals and crops",
+        scales = list(draw = FALSE), 
+        map = map('county', 'nebraska', plot = FALSE, fill = TRUE,
+          projection = "mercator"),
+        # Percentile break points
+        # breaks=quantile(c(dat$crop.rate, dat$animal.rate),
+        #                 c(0,.1,.2,.4,.6,.8,.9,1), na.rm=TRUE)
+        # Fisher-Jenks breakpoints via classInt package
+        # breaks=classIntervals(na.omit(c(dat$crop.rate, dat$animal.rate)),
+        #                       n=7, style='fisher')$brks
+        breaks=c(0,.049, .108, .178, .230, .519, .958, 1.31))
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

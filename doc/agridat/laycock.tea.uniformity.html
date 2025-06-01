@@ -1,0 +1,113 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trials of tea</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>laycock.tea.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trials of tea
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trials of tea
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("laycock.tea.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 54 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>loc</code></dt><dd><p>location, L1 or L2</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield (pounds)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Actual physical dimensions for the tea shrubs are not given, so we use
+an estimate of four feet square for each shrub (which is similar to
+the <code>eden.tea.uniformity</code> experiment).
+</p>
+<p>Location 1 (Laycock, page 108) is at the Research Station,
+Nyasaland. Plots were 10 by 15 bushes, harvested 23 times in 1942.
+</p>
+<p>Field length: 8 plots * 10 bushes * 4 feet = 320 feet.
+</p>
+<p>Field width: 4 plots * 15 bushes * 4 feet = 240 feet.
+</p>
+<p>Location 2 (Laycock page 110) is at Mianga Estate, Nyasaland. Plots
+were 9 by 11 bushes, harvested 18 times in 1951/52.
+</p>
+<p>Field length: 9 plots * 9 bushes * 4 feet = 324 feet.
+</p>
+<p>Field width: 6 plots * 11 bushes * 4 feet = 264 feet.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Laycock, D. H. (1955).
+The effect of plot shape in reducing the errors of tea experiments.
+Tropical Agriculture, 32, 107-114.
+</p>
+
+
+<h3>References</h3>
+
+<p>Zimmerman, Dale L., and David A. Harville. (1991).
+A random field approach to the analysis of field-plot experiments
+and other spatial experiments.
+Biometrics, 47, 223-239.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+data(laycock.tea.uniformity)
+dat &lt;- laycock.tea.uniformity
+
+libs(desplot)
+desplot(dat, yield ~ col*row|loc,
+        flip=TRUE, aspect=322/252, # average of 2 locs
+        main="laycock.tea.uniformity")
+
+
+## End(Not run)
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

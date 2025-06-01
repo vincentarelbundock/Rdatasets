@@ -1,0 +1,128 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of maize in South Africa</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>saunders.maize.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of maize in South Africa
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of maize in South Africa
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("saunders.maize.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 2500 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row ordinate</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column ordinate</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield per plot, pounds</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>These two maize uniformity trials were conducted by Potchefstroom
+Experiment Station, South Africa.
+</p>
+<p>Each harvested unit was a plot of 10 plants, planted 3 feet by 3 feet
+in individual hills.
+</p>
+<p>Dataset for 1928-1929 experiment
+</p>
+<p>Rows 41-43 are missing.
+</p>
+<p>Field width: 4 plots * 10 yards = 40 yards
+</p>
+<p>Field length : 250 plots * 1 yard = 250 yards
+</p>
+<p>Dataset for 1929-30 experiment
+</p>
+<p>Row 255 is missing
+</p>
+<p>There is an obvious edge effect in the first column.
+</p>
+<p>Field width: 5 plots * 20 yards = 100 yards
+</p>
+<p>Field length: 300 plots * 1 yard = 300 yards
+</p>
+<p>Two possible outliers in the 1929-30 data were verified as being
+correctly transcribed from the source document.
+</p>
+<p>This data was made available with special help from the staff at
+Rothamsted Research Library.
+</p>
+<p>Rothamsted library scanned the paper documents to pdf. Screen captures
+of the pdf were saved as jpg files, then uploaded to an OCR conversion
+site. The resulting text was about 95 percent accurate and was
+carefully hand-checked and formatted into csv files.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Rothamsted Research Library, Box STATS17  WG Cochran, Folder 5.
+</p>
+
+
+<h3>References</h3>
+
+<p>Rayner &amp; A. R. Saunders.
+Statistical Methods, with Special Reference to Field Experiments.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(saunders.maize.uniformity)
+  dat &lt;- saunders.maize.uniformity
+
+  libs(desplot)
+
+  desplot(dat, yield ~ col*row, subset=year==1929,
+          flip=TRUE, aspect=250/40,
+          main="saunders.maize.uniformity 1928-29")
+  desplot(dat, yield ~ col*row, subset=year==1930,
+          flip=TRUE, aspect=300/100,
+          main="saunders.maize.uniformity 1929-30")
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

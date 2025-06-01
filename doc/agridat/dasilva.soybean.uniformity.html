@@ -1,0 +1,97 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of soybean</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>dasilva.soybean.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of soybean
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of soybean in Brazil, 1970.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("dasilva.soybean.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1152 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, grams/plot</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Field length: 48 rows * .6 m = 28.8 m
+</p>
+<p>Field width: 24 columns * .6 m = 14.4 m
+</p>
+
+
+<h3>Source</h3>
+
+<p>Enedino Correa da Silva. (1974).
+Estudo do tamanho e forma de parcelas para experimentos de soja (Plot size and shape for soybean yield trials).
+Pesquisa Agropecuaria Brasileira, Serie Agronomia, 9,  49-59. Table 3,
+page 52-53.
+https://seer.sct.embrapa.br/index.php/pab/article/view/17250
+</p>
+
+
+<h3>References</h3>
+
+<p>Humada-Gonzalez, G.G. (2013).
+Estimação do tamanho otimo de parcela experimental em experimento com soja.
+Dissertation, Universidade Federal de Lavras.
+http://repositorio.ufla.br/jspui/handle/1/744
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(dasilva.soybean.uniformity)
+dat &lt;- dasilva.soybean.uniformity
+
+libs(desplot)
+desplot(dat, yield ~ col*row,
+        flip=TRUE, aspect=28.8/14.4, 
+        main="dasilva.soybean.uniformity")
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

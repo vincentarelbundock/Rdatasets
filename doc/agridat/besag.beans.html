@@ -1,0 +1,153 @@
+<!DOCTYPE html><html><head><title>R: Competition experiment in beans with height measurements</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>besag.beans</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Competition experiment in beans with height measurements
+</h2>
+
+<h3>Description</h3>
+
+<p>Competition experiment in beans with height measurements
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("besag.beans")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 152 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype / variety</p>
+</dd>
+<dt><code>height</code></dt><dd><p>plot height, cm</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>plot yield, g</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row / block</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>replicate factor</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Field beans of regular height were grown beside shorter varieties.
+In each block, each variety occurred once as a left-side neighbor and
+once as a right-side neighbor of every variety (including itself).
+Border plots were placed at the ends of each block.
+Each block with 38 adjacent plots.
+Each plot was one row, 3 meters long with 50 cm spacing between rows.
+No gaps between plots.  Spacing between plants was 6.7 cm.
+Four blocks (rows) were used, each with six replicates.
+</p>
+<p>Plot yield and height was recorded.
+</p>
+<p>Kempton and Lockwood used models that adjusted yield according to the
+difference in height of neighboring plots.
+</p>
+<p>Field length: 4 plots * 3m = 12m
+</p>
+<p>Field width: 38 plots * 0.5 m = 19m
+</p>
+
+
+<h3>Source</h3>
+
+<p>Julian Besag and Rob Kempton (1986).
+Statistical Analysis of Field Experiments Using Neighbouring Plots.
+<em>Biometrics</em>, 42, 231-251.  Table 6.
+https://doi.org/10.2307/2531047
+</p>
+
+
+<h3>References</h3>
+
+<p>Kempton, RA and Lockwood, G. (1984).
+Inter-plot competition in variety trials of field beans (Vicia faba L.).
+<em>The Journal of Agricultural Science</em>, 103, 293&ndash;302.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+data(besag.beans)
+dat = besag.beans
+
+libs(desplot)
+desplot(dat, yield ~ col*row,
+        aspect=12/19, out1=row, out2=rep, num=gen, cex=1, # true aspect
+        main="besag.beans")
+
+
+libs(reshape2)
+# Add a covariate = excess height of neighbors
+mat &lt;- acast(dat, row~col, value.var='height')
+mat2 &lt;- matrix(NA, nrow=4, ncol=38)
+mat2[,2:37] &lt;- (mat[,1:36] + mat[,3:38] - 2*mat[,2:37])
+dat2 &lt;- melt(mat2)
+colnames(dat2) &lt;- c('row','col','cov')
+dat &lt;- merge(dat, dat2)
+  
+# Drop border plots
+dat &lt;- subset(dat, rep != 'R0')
+  
+libs(lattice)
+# Plot yield vs neighbors height advantage
+xyplot(yield~cov, data=dat, group=gen,
+       main="besag.beans",
+       xlab="Mean excess heights of neighbor plots",
+       auto.key=list(columns=3))
+  
+# Trial mean.
+mean(dat$yield) # 391 matches Kempton table 3
+  
+# Mean excess height of neighbors for each genotype
+# tapply(dat$cov, dat$gen, mean)/2 # Matches Kempton table 4
+
+# Variety means, matches Kempton table 4 mean yield
+m1 &lt;- lm(yield ~ -1 + gen, dat)
+coef(m1)
+
+# Full model used by Kempton, eqn 5.  Not perfectly clear.
+# Appears to include rep term, perhaps within block
+dat$blk &lt;- factor(dat$row)
+dat$blkrep &lt;- factor(paste(dat$blk, dat$rep))
+m2 &lt;- lm(yield ~ -1 + gen + blkrep + cov, data=dat)
+coef(m2) # slope 'cov' = -.72, while Kempton says -.79
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

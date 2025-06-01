@@ -1,0 +1,188 @@
+<!DOCTYPE html><html><head><title>R: Long term wheat yields on Broadbalk fields at Rothamsted.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>broadbalk.wheat</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Long term wheat yields on Broadbalk fields at Rothamsted.
+</h2>
+
+<h3>Description</h3>
+
+<p>Long term wheat yields on Broadbalk fields at Rothamsted.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1258 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+<dt><code>plot</code></dt><dd><p>plot</p>
+</dd>
+<dt><code>grain</code></dt><dd><p>grain yield, tonnes</p>
+</dd>
+<dt><code>straw</code></dt><dd><p>straw yield, tonnes</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Note: This data is only 1852-1925.  You can find recent data for these
+experiments at the Electronic Rothamsted Archive:
+https://www.era.rothamsted.ac.uk/
+</p>
+<p>Rothamsted Experiment station conducted wheat experiments on the
+Broadbalk Fields beginning in 1844 with data for yields of grain and
+straw collected from 1852 to 1925.
+Ronald Fisher was hired to analyze data from the agricultural trials.
+Organic manures and inorganic fertilizer treatments were applied in
+various combinations to the plots.
+</p>
+<p>N1 is 48kg, N1.5 is 72kg, N2 is 96kg, N4 is 192kg nitrogen.
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+    Plot </td><td style="text-align: left;"> Treatment</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    2b   </td><td style="text-align: left;">  manure </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    3    </td><td style="text-align: left;">  No fertilizer or manure </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    5    </td><td style="text-align: left;">  P K Na Mg (No N)</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    6    </td><td style="text-align: left;">  N1 P K Na Mg </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    7    </td><td style="text-align: left;">  N2 P K Na Mg </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    8    </td><td style="text-align: left;">  N3 P K Na Mg </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    9    </td><td style="text-align: left;">  N1* P K Na Mg since 1894; 9A and 9B received different treatments 1852-93</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    10   </td><td style="text-align: left;">  N2 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    11   </td><td style="text-align: left;">  N2 P</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    12   </td><td style="text-align: left;">  N2 P Na* </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    13   </td><td style="text-align: left;">  N2 P K </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    14   </td><td style="text-align: left;">  N2 P Mg* </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    15   </td><td style="text-align: left;">  N2 P K Na Mg (timing of N application different to other plots, see below)</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    16   </td><td style="text-align: left;">  N4 P K Na Mg 1852-64; unmanured 1865-83; N2*P K Na Mg since 1884</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    17   </td><td style="text-align: left;">  N2 applied in even years; P K Na Mg applied in odd years </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    18   </td><td style="text-align: left;">  N2 applied in odd years; P K Na Mg applied in even years </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    19   </td><td style="text-align: left;">  N1.5 P and rape cake 1852-78, 1879-1925 rape cake only</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+  </td>
+</tr>
+
+</table>
+
+<p>Electronic version of the data was retrieved from http://lib.stat.cmu.edu/datasets/Andrews/
+</p>
+
+
+<h3>Source</h3>
+
+<p>D.F. Andrews and A.M. Herzberg. 1985.
+Data: A Collection of Problems from Many Fields for the Student and
+Research Worker.
+Springer.
+</p>
+
+
+<h3>References</h3>
+
+<p>Broadbalk Winter Wheat Experiment.
+https://www.era.rothamsted.ac.uk/index.php?area=home&amp;page=index&amp;dataset=4
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+library(agridat)
+data(broadbalk.wheat)
+dat &lt;- broadbalk.wheat
+
+libs(lattice)
+## xyplot(grain~straw|plot, dat, type=c('p','smooth'), as.table=TRUE,
+##        main="broadbalk.wheat")
+xyplot(grain~year|plot, dat, type=c('p','smooth'), as.table=TRUE,
+       main="broadbalk.wheat") # yields are decreasing
+
+# See the treatment descriptions to understand the patterns
+redblue &lt;- colorRampPalette(c("firebrick", "lightgray", "#375997"))
+levelplot(grain~year*plot, dat, main="broadbalk.wheat: Grain", col.regions=redblue)
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

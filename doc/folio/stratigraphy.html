@@ -1,0 +1,70 @@
+<!DOCTYPE html><html><head><title>R: Chronostratigraphic Chart</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>stratigraphy</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Chronostratigraphic Chart</h2>
+
+<h3>Description</h3>
+
+<p>The ICS international chronostratigraphic chart (v2022/2).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>stratigraphy
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A <code>data.frame</code> with 176 observations and 5 variables:
+</p>
+
+<dl>
+<dt>type</dt><dd><p><code>character</code>: unit type (&quot;<code>eon</code>&quot;, &quot;<code>era</code>&quot;, &quot;<code>period</code>&quot;,
+&quot;<code>series</code>&quot; or &quot;<code>stage</code>&quot;). Precambrian and Hadean are informal units.</p>
+</dd>
+<dt>name</dt><dd><p><code>character</code>: unit name.</p>
+</dd>
+<dt>age</dt><dd><p><code>numeric</code>: numerical age (Ma).</p>
+</dd>
+<dt>error</dt><dd><p><code>numeric</code>: error on numerical <code>age</code> (Ma).</p>
+</dd>
+<dt>parent</dt><dd><p><code>character</code>: parent unit.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf">https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Cohen, K. M., Finney, S. C., Gibbard, P. L. and Fan, J.-X. (2013).
+The ICS International Chronostratigraphic Chart. <em>Episodes</em>,
+36(3): 199-204. <a href="https://doi.org/10.18814/epiiugs/2013/v36i3/002">doi:10.18814/epiiugs/2013/v36i3/002</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

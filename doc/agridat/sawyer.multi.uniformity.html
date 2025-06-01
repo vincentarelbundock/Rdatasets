@@ -1,0 +1,178 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trials of wheat, swedes, oats, 3 years on the same...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>sawyer.multi.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trials of wheat, swedes, oats, 3 years on the same land
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trials of wheat, swedes, oats at Rothamsted, England, 1925-1927.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("sawyer.multi.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 48 observations on the following 7 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+<dt><code>crop</code></dt><dd><p>crop</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>grain</code></dt><dd><p>wheat/oats grain weight, pounds</p>
+</dd>
+<dt><code>straw</code></dt><dd><p>wheat/oats straw weight, pounds</p>
+</dd>
+<dt><code>leafwt</code></dt><dd><p>swedes leaf weight, pounds</p>
+</dd>
+<dt><code>rootwt</code></dt><dd><p>swedes root weight, pounds</p>
+</dd>
+<dt><code>rootct</code></dt><dd><p>swedes root count</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>An experiment conducted at Rothamsted, England, in 1925-1927, in
+Sawyers Field.
+</p>
+<p>Row 6, column 1 was not planted in any year.
+</p>
+<p>1925: Wheat was harvested
+</p>
+<p>Row 1, column 1 had partially missing data for the wheat values in
+1925 and was not used in the Rothamsted summary statistics on page 155.
+</p>
+<p>1926: Swedes were harvested
+</p>
+<p>1927: Oats were harvested
+</p>
+<p>Note the summaries statistics at the bottom of the page in each report
+are calibrated to ACRES.
+</p>
+<p>Field width: 8 plots * 22 feet = 528 feet
+</p>
+<p>Field length: 6 plots * 22 feet = 396 feet
+</p>
+<p>The field is 8 plots wide, 6 plots long.  The plots are drawn in the
+source documents as squares .098 acres each (1 chain = 66 feet on each
+side).
+</p>
+<p>Eden &amp; Maskell (page 165) say the field was clover, and ploughed in
+the autumn of 1924. The field was laid out uniformly in lands of one
+chain width and each plot width made to coincide with the land width
+from ridge to ridge. The length of each plot was also one chain and
+from the point of view of yield data the trial comprised 47 plots in
+8x6 except that the run of the hedge only allowed a rank of five plots
+at one of the ends.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Rothamsted Experimental Station, Report 1925-26.
+Lawes Agricultural Trust, p. 154-155.
+https://www.era.rothamsted.ac.uk/eradoc/book/84
+</p>
+<p>Rothamsted Experimental Station, Report 1927-1928.
+Lawes Agricultural Trust, p. 153.  
+https://www.era.rothamsted.ac.uk/eradoc/article/ResReport1927-28-131-175
+</p>
+
+
+<h3>References</h3>
+
+<p>Eden, T. and E. J. Maskell. (1928).
+The influence of soil heterogeneity on the growth and yield of
+successive crops.
+Jour of Agricultural Science, 18, 163-185.
+https://archive.org/stream/in.ernet.dli.2015.25895/2015.25895.Journal-Of-Agricultural-Science-Vol-xviii-1928#page/n175
+</p>
+<p>McCullagh, P. and Clifford, D., (2006).
+Evidence for conformal invariance of crop yields,
+Proceedings of the Royal Society A: Mathematical, Physical and
+Engineering Science, 462, 2119&ndash;2143.
+https://doi.org/10.1098/rspa.2006.1667
+</p>
+<p>Winifred A. Mackenzie. (1926)
+Note on a remarkable correlation between grain and straw, obtained at
+Rothamsted.
+Journal of Agricultural Science, 16, 275-279.
+https://doi.org/10.1017/S0021859600018256
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  
+  library(agridat)
+  data("sawyer.multi.uniformity")
+  dat &lt;- sawyer.multi.uniformity
+  
+  libs(desplot)
+  # The field plan shows square plots
+  desplot(dat, grain~col*row,
+          subset= year==1925,
+          main="sawyer.multi.uniformity - 1925 wheat grain yield",
+          aspect=(6)/(8)) # true aspect
+  
+  desplot(dat, rootwt~col*row,
+          subset= year==1926,
+          main="sawyer.multi.uniformity - 1926 root weight of swedes",
+          aspect=(6)/(8))
+
+  desplot(dat, grain~col*row, subset= year==1927,
+          main="sawyer.multi.uniformity - 1927 oats grain yield",
+          aspect=(6)/(8))
+
+
+  # This plot shows the "outlier" in the wheat data reported by Mackenzie.
+  libs(lattice)
+  xyplot(grain ~ straw, data=subset(dat, year==1925))
+  
+  round(cor(dat[,7:9], use="pair"),2) # Matches McCullagh p 2121
+  ##        leafwt rootwt rootct
+  ## leafwt   1.00   0.66   0.47
+  ## rootwt   0.66   1.00   0.43
+  ## rootct   0.47   0.43   1.00
+  
+  ## pairs(dat[,7:9],
+  ##       main="sawyer.multi.uniformity")
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

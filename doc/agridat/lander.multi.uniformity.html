@@ -1,0 +1,127 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trials of wheat and chari, 4 years on the same...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>lander.multi.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trials of wheat and chari, 4 years on the same land.
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trials of wheat and chari, 4 years on the same land, in India.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("lander.multi.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 780 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, maunds per plot</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+<dt><code>crop</code></dt><dd><p>crop</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Note, &quot;chari&quot; in this paper is <em>Andropogon Sorghum</em>, and &quot;wheat&quot;
+is <em>Triticum vulgare</em>.
+</p>
+<p>Uniformity trials carried out at Rawalpindi, India.
+</p>
+<p>The area consisted of 5 fields (D4,D5,D6,D7,D8), each 5 acres in
+size. Each of these 5 fields was divided into three sub-divisions A,
+B, C, by means of two strong bunds each 5 feet wide. These 3
+sub-divisions were divided into 5 blocks, each consisting of 13
+experimental plots with 14 non-experiment strips 5 feet wide
+separating the plots from the other. The dimensions of the plot were
+207 ft 5 in by 19 ft 1 in.
+</p>
+<p>The same land was used for 4 consecutive crops. The first crop was
+wheat, followed by chari (sorghum), followed by wheat 2 times.
+</p>
+<p>Field width: 207.42 * 5 plots = 1037.1 feet
+</p>
+<p>Field length: (19.08+5)*39 rows = 939.12 feet
+</p>
+<p>Conclusions: It is evident, therefore, that soil heterogenity as
+revealed by any one  crop cannot be a true index of the subsequent
+behavior of that area with respect to other crops. Even the same crop
+raised in different seasons has not shown any constancy as regards
+soil heterogeneity.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Lander, P. E. et al. (1938).
+Soil Uniformity Trials in the Punjab I.
+Ind. J. Agr. Sci. 8:271-307.
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(lander.multi.uniformity)
+dat &lt;- lander.multi.uniformity
+
+# Yearly means, similar to Lander table 7
+## filter(dat) 
+## 1 1929   18.1
+## 2 1930   58.3
+## 3 1931   22.8
+## 4 1932   14.1
+
+# heatmaps for all years
+libs(desplot)
+dat$year &lt;- factor(dat$year)
+desplot(dat, yield ~ col*row|year,
+        flip=TRUE, aspect=(1037.1/939.12),
+        main="lander.multi.uniformity")
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html><html><head><title>R: Leaves for cauliflower plants at different times</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>mead.cauliflower</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Leaves for cauliflower plants at different times
+</h2>
+
+<h3>Description</h3>
+
+<p>Leaves for cauliflower plants at different times in two years.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 14 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year factor</p>
+</dd>
+<dt><code>degdays</code></dt><dd><p>degree days above 32F</p>
+</dd>
+<dt><code>leaves</code></dt><dd><p>number of leaves</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Numbers of leaves for 10 cauliflower plants in each of two years, and
+temperature degree-days above 32F, divided by 100.
+</p>
+<p>The year is 1956-57 or 1957-58.
+</p>
+<p>Over the data range shown, the number of leaves is increasing
+linearly.  Extrapolating backwards shows that a linear model is
+inappropriate, and so a glm is used.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Roger Mead, Robert N Curnow, Anne M Hasted. 2002.
+Statistical Methods in Agriculture and Experimental Biology, 3rd ed.
+Chapman and Hall. Page 251.
+</p>
+
+
+<h3>References</h3>
+
+<p>Mick O'Neill. Regression &amp; Generalized Linear (Mixed) Models.
+Statistical Advisory &amp; Training Service Pty Ltd.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(mead.cauliflower)
+dat &lt;- mead.cauliflower
+
+dat &lt;- transform(dat, year=factor(year))
+
+m1 &lt;- glm(leaves ~ degdays + year, data=dat, family=poisson)
+coef(m1)
+## (Intercept)     degdays    year1957
+##  3.49492453  0.08512651  0.21688760
+
+dat$pred &lt;- predict(m1, type="response")
+libs(lattice)
+libs(latticeExtra)
+xyplot(leaves~degdays, data=dat, groups=year, type=c('p'),
+       auto.key=list(columns=2),
+       main="mead.cauliflower - observed (symbol) &amp; fitted (line)",
+       xlab="degree days", ylab="Number of leaves", ) +
+  xyplot(pred~degdays, data=dat, groups=year, type=c('l'), col="black")
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

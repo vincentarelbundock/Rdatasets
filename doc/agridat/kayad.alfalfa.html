@@ -1,0 +1,114 @@
+<!DOCTYPE html><html><head><title>R: Yield monitor data for 4 cuttings of alfalfa in Saudi Arabia.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>kayad.alfalfa</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Yield monitor data for 4 cuttings of alfalfa in Saudi Arabia.
+</h2>
+
+<h3>Description</h3>
+
+<p>Yield monitor data for 4 cuttings of alfalfa in Saudi Arabia.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("kayad.alfalfa")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 8628 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>harvest</code></dt><dd><p>harvest number</p>
+</dd>
+<dt><code>lat</code></dt><dd><p>latitude</p>
+</dd>
+<dt><code>long</code></dt><dd><p>longitude</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, tons/ha</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data was collected from a 23.5 ha field of alfalfa in Saudia Arabia.
+The field was harvested four consecutive times (H8 = 5 Dec 2013, H9 = 16 Feb 2014, H10 = 2 Apr 2014, H11 = 6 May 2014).
+Data were collected using a geo-referenced yield monitor.
+Supporting information contains yield monitor data for 4 hay harvests on a center-pivot field.
+</p>
+<p># TODO: Normalize the yields for each harvest, then average together
+# to create a productivity map. Two ways to normalize:
+# Normalize to 0-100: ((mapValue - min) * 100) / (max - min)
+# Standardize: ((mapValue - mean) / stdev) * 100
+</p>
+
+
+<h3>Source</h3>
+
+<p>Ahmed G. Kayad, et al. (2016).
+Assessing the Spatial Variability of Alfalfa Yield Using Satellite Imagery and Ground-Based Data.
+PLOS One, 11(6).
+https://doi.org/10.1371/journal.pone.0157166
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+  library(agridat)
+  data(kayad.alfalfa)
+  dat &lt;- kayad.alfalfa
+
+  # match Kayad table 1 stats
+  libs(dplyr)
+  dat &lt;- group_by(dat, harvest)
+  summarize(dat, min=min(yield), max=max(yield),
+            mean=mean(yield), stdev=sd(yield), var=var(yield))
+
+  # Figure 4 of Kayad
+  libs(latticeExtra)
+  catcols &lt;- c("#cccccc","#ff0000","#ffff00","#55ff00","#0070ff","#c500ff","#73004c")
+  levelplot(yield ~ long*lat |harvest, dat,
+            aspect=1, at = c(0,2,3,4,5,6,7,10), col.regions=catcols,
+            main="kayad.alfalfa",
+            prepanel=prepanel.default.xyplot,
+            panel=panel.levelplot.points)
+
+  # Similar to Kayad fig 5.
+  ## levelplot(yield ~ long*lat |harvest, dat,
+  ##           prepanel=prepanel.default.xyplot,
+  ##           panel=panel.levelplot.points,
+  ##           col.regions=pals::brewer.reds)
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

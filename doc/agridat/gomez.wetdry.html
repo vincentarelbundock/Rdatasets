@@ -1,0 +1,115 @@
+<!DOCTYPE html><html><head><title>R: Rice yield in wet &amp; dry seasons with nitrogen fertilizer...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gomez.wetdry</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Rice yield in wet &amp; dry seasons with nitrogen fertilizer treatments
+</h2>
+
+<h3>Description</h3>
+
+<p>Rice yield in wet &amp; dry seasons with nitrogen fertilizer treatments
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 96 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>season</code></dt><dd><p>season = wet/dry</p>
+</dd>
+<dt><code>nitrogen</code></dt><dd><p>nitrogen fertilizer kg/ha</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>replicate</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>grain yield, t/ha</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Five nitrogen fertilizer treatments were tested in 2 seasons using 3 reps.
+</p>
+<p>Used with permission of Kwanchai Gomez.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Gomez, K.A. and Gomez, A.A.. 1984,
+Statistical Procedures for Agricultural Research.
+Wiley-Interscience.
+Page 318.
+</p>
+
+
+<h3>References</h3>
+
+<p>Rong-Cai Yang, Patricia Juskiw. (2011).
+Analysis of covariance in agronomy and crop research.
+Canadian Journal of Plant Science, 91:621-641.
+https://doi.org/10.4141/cjps2010-032
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(gomez.wetdry)
+dat &lt;- gomez.wetdry
+
+libs(lattice)
+foo1 &lt;- xyplot(yield ~ nitrogen|season, data=dat, 
+               group=rep,type='l',auto.key=list(columns=3),
+               ylab="yield in each season",
+               main="gomez.wetdry raw data &amp; model")
+
+# Yang &amp; Juskiw fit a quadratic model with linear and quadratic
+# contrasts using non-equal intervals of nitrogen levels.
+# This example below omits the tedious contrasts
+
+libs(latticeExtra, lme4)
+m1 &lt;-lmer(yield ~ season*poly(nitrogen, 2) + (1|season:rep), data=dat)
+pdat &lt;- expand.grid(season=c('dry','wet'),
+                    nitrogen=seq(from=0,to=150,by=5))
+pdat$pred &lt;- predict(m1, newdata=pdat, re.form= ~ 0)
+foo1 + 
+  xyplot(pred ~ nitrogen|season, data=pdat, type='l',lwd=2,col="black")
+
+
+# m2 &lt;-lmer(yield ~ poly(nitrogen, 2) + (1|season:rep), data=dat)
+# anova(m1,m2)
+## m2: yield ~ poly(nitrogen, 2) + (1 | season:rep)
+## m1: yield ~ season * poly(nitrogen, 2) + (1 | season:rep)
+##    Df    AIC    BIC  logLik deviance  Chisq Chi Df Pr(&gt;Chisq)    
+## m2  5 86.418 93.424 -38.209   76.418                             
+## m1  8 64.216 75.425 -24.108   48.216 28.202      3  3.295e-06 ***
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

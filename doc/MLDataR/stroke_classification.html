@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><title>R: Stroke Classification dataset</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>stroke_classification</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Stroke Classification dataset</h2>
+
+<h3>Description</h3>
+
+<p>This dataset has been obtained from a Stoke department within the NHS and is a traditional supervised ML classification dataset
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>stroke_classification
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 5110 rows and 11 variables:
+</p>
+
+<dl>
+<dt>pat_id</dt><dd><p>unique patient identifier index</p>
+</dd>
+<dt>stroke</dt><dd><p>outcome variable as a flag - 1 for stroke and 0 for no stroke</p>
+</dd>
+<dt>gender</dt><dd><p>patient gender description</p>
+</dd>
+<dt>age</dt><dd><p>age of the patient</p>
+</dd>
+<dt>hypertension</dt><dd><p>binary flag to indicate whether patient has hypertension: <a href="https://www.nhs.uk/conditions/high-blood-pressure-hypertension/">https://www.nhs.uk/conditions/high-blood-pressure-hypertension/</a></p>
+</dd>
+<dt>heart_disease</dt><dd><p>binary flag to indicate whether patient has heart disease: 1 or no heart disease history: 0</p>
+</dd>
+<dt>work_related_stress</dt><dd><p>binary flag to indicate whether patient has history of work related stress</p>
+</dd>
+<dt>urban_residence</dt><dd><p>binary flag indicating whether patient lives in an urban area or not</p>
+</dd>
+<dt>avg_glucose_level</dt><dd><p>average blood glucose readings of the patient</p>
+</dd>
+<dt>bmi</dt><dd><p>body mass index of the patient: <a href="https://www.nhs.uk/live-well/healthy-weight/bmi-calculator/">https://www.nhs.uk/live-well/healthy-weight/bmi-calculator/</a></p>
+</dd>
+<dt>smokes</dt><dd><p>binary flag to indicate if the patient smokes - 1 for current smoker and 0 for smoking cessation</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Prepared and compiled by Gary Hutson <a href="mailto:hutsons-hacks@outlook.com">hutsons-hacks@outlook.com</a>, Apr-2022.
+</p>
+
+</main>
+
+</div>
+</body></html>

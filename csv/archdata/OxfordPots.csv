@@ -1,0 +1,31 @@
+rownames,Place,OxfordPct,OxfordDst,NewForestPct,NewForestDst,WalledArea,WaterTrans
+1,Dorchester (Dorset),5.85,95,14.55,35,70,0
+2,Ilchester,12,80,9.25,45,32,0
+3,Bath,21.25,55,1.25,45,22,1
+4,Gatcombe,21,65,,55,16,1
+5,Mildenhall,17.5,30,1.75,35,15,0
+6,Salisbury,1.5,65,17.5,12,,0
+7,Winchester,8.5,47,14.5,22,138,0
+8,Portchester,9,62,15,28,,0
+9,Pevensey,7.75,90,2.5,90,,0
+10,Durrington,11.5,42,13.25,20,,0
+11,Chichester,6.75,65,13,40,101,0
+12,Clausentum,6.25,58,15.5,15,,0
+13,East Anton,14.75,38,4.5,25,,0
+14,Silchester,19.5,28,3.5,40,107,1
+15,Caerwent,19,74,,72,44,1
+16,Gloucester,21,46,,69,41,1
+17,Cirencester,22.5,33,,56,230,1
+18,Droitwich,10.75,55,,96,,0
+19,Verulamium,17.25,25,,81,200,0
+20,London,18.25,55,,80,330,1
+21,Richborough,17.5,115,,136,,1
+22,Canterbury,17.5,105,,125,130,1
+23,Cholchester,7,95,,131,108,0
+24,Norwich,4,125,,169,,0
+25,Caister,4,135,,172,35,0
+26,Leicester,7.5,60,,120,87,0
+27,Brough-on-Humber,1.5,140,,128,13,0
+28,Wroxeter,5.5,90,,200,170,0
+29,Dorchester-on-Thames,22.5,9,,56,13.5,1
+30,Alchester,22.5,11,,72,27,1

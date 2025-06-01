@@ -1,0 +1,70 @@
+<!DOCTYPE html><html><head><title>R: Penguins Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>penguins_bayes</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Penguins Data</h2>
+
+<h3>Description</h3>
+
+<p>Data on penguins in the Palmer Archipelago, originally collected by Gordan etal and distributed through the penguins data in the palmerpenguins package.
+In addition to the original penguins data is a variable above_average_weight.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>penguins_bayes
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 344 penguins and 9 variables on each. 
+</p>
+
+<dl>
+<dt>species</dt><dd><p>species (Adelie, Chinstrap, Gentoo)</p>
+</dd>
+<dt>island</dt><dd><p>home island (Biscoe, Dream, Torgersen)</p>
+</dd>
+<dt>year</dt><dd><p>year of observation</p>
+</dd>
+<dt>bill_length_mm</dt><dd><p>length of bill (mm)</p>
+</dd>
+<dt>bill_depth_mm</dt><dd><p>depth of bill (mm)</p>
+</dd>
+<dt>flipper_length_mm</dt><dd><p>length of flipper (mm)</p>
+</dd>
+<dt>body_mass_g</dt><dd><p>body mass (g)</p>
+</dd>
+<dt>above_average_weight</dt><dd><p>whether or not the body mass exceeds 4200g (TRUE or FALSE)</p>
+</dd>
+<dt>sex</dt><dd><p>male or female</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Gorman KB, Williams TD, and Fraser WR (2014). Ecological sexual dimorphism and environmental variability within a community of antarctic penguins (Genus Pygoscelis). PLoS ONE, 9(3).
+</p>
+
+</main>
+
+</div>
+</body></html>

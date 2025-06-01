@@ -1,0 +1,114 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of barley</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>goulden.barley.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of barley
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of barley in Canada
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 400 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, grams per plot</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Yield (in grams) of 2304 square-yard plots of barley grown in a field
+48 yards on each side at Dominion Rust Research Laboratory (Manitoba,
+Canada) in 1931. The field was sown at half density in one direction,
+then half-density in a perpendicular direction.
+</p>
+<p>In a letter from Goulden to Cochran, Goulden said: I had intended to
+use these yields for a study of the effect of systematic arrangements
+and also to measure the bias of semi-Latin squares...The correlation
+between adjacent pairs of plots is not high (0.5) and it was difficult
+to demonstrate the bias in a satisfactory manner.
+</p>
+<p>Note: The data in Goulden (1939) are a subset of 20 rows and columns
+from one corner of the field in this full dataset.
+</p>
+<p>Field width: 48 plots x 3 feet = 144 feet
+</p>
+<p>Field length: 48 plots x 3 feet = 144 feet
+</p>
+<p>This data was made available with special help from the staff at
+Rothamsted Research Library.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Rothamsted Research Library, Box STATS17  WG Cochran, Folder 5.
+</p>
+
+
+<h3>References</h3>
+
+<p>C. H. Goulden, (1939).
+Methods of statistical analysis, 1st ed. Page 18.  
+https://archive.org/stream/methodsofstatist031744mbp
+Note: This version is 20 plots x 20 plots.
+</p>
+<p>Leonard, Warren and Andrew Clark (1939).
+Field Plot Technique. Page 39.
+https://archive.org/stream/fieldplottechniq00leon
+Note: This version is 20 plots x 20 plots.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(goulden.barley.uniformity)
+dat &lt;- goulden.barley.uniformity
+
+libs(desplot)
+desplot(dat, yield ~ col*row,
+        aspect=48/48, # true aspect
+        main="goulden.barley.uniformity")
+
+# Left skewed distribution. See LeClerg, Leonard, Clark
+hist(dat$yield, main="goulden.barley.uniformity",
+     breaks=c(21,40,59,78,97,116,135,154,173,192,211,230,249,268,287)+.5)
+
+
+## End(Not run)  
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

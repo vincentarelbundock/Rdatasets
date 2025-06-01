@@ -1,0 +1,116 @@
+<!DOCTYPE html><html><head><title>R: Hotel Bookings Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>hotel_bookings</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Hotel Bookings Data</h2>
+
+<h3>Description</h3>
+
+<p>A random subset of the data on hotel bookings originally collected by Antonio, Almeida and Nunes (2019) and distributed through the R for Data Science TidyTuesday project.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>hotel_bookings
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1000 hotel bookings and 32 variables on each booking. 
+</p>
+
+<dl>
+<dt>hotel</dt><dd><p>&quot;Resort Hotel&quot; or &quot;City Hotel&quot;</p>
+</dd>
+<dt>is_canceled</dt><dd><p>whether the booking was cancelled</p>
+</dd>
+<dt>lead_time</dt><dd><p>number of days between booking and arrival</p>
+</dd>
+<dt>arrival_date_year</dt><dd><p>year of scheduled arrival</p>
+</dd>
+<dt>arrival_date_month</dt><dd><p>month of scheduled arrival</p>
+</dd>
+<dt>arrival_date_week_number</dt><dd><p>week of scheduled arrival</p>
+</dd>
+<dt>arrival_date_day_of_month</dt><dd><p>day of month of scheduled arrival</p>
+</dd>
+<dt>stays_in_weekend_nights</dt><dd><p>number of reserved weekend nights</p>
+</dd>
+<dt>stays_in_week_nights</dt><dd><p>number of reserved week nights</p>
+</dd>
+<dt>adults</dt><dd><p>number of adults in booking</p>
+</dd>
+<dt>children</dt><dd><p>number of children</p>
+</dd>
+<dt>babies</dt><dd><p>number of babies</p>
+</dd>
+<dt>meal</dt><dd><p>whether the booking includes breakfast (BB = bed &amp; breakfast), breakfast and dinner (HB = half board), or breakfast, lunch, and dinner (FB = full board)</p>
+</dd>
+<dt>country</dt><dd><p>guest's country of origin</p>
+</dd>
+<dt>market_segment</dt><dd><p>market segment designation (eg: TA = travel agent, TO = tour operator)</p>
+</dd>
+<dt>distribution_channel</dt><dd><p>booking distribution channel (eg: TA = travel agent, TO = tour operator)</p>
+</dd>
+<dt>is_repeated_guest</dt><dd><p>whether or not booking was made by a repeated guest</p>
+</dd>
+<dt>previous_cancellations</dt><dd><p>guest's number of previous booking cancellations</p>
+</dd>
+<dt>previous_bookings_not_canceled</dt><dd><p>guest's number of previous bookings that weren't cancelled</p>
+</dd>
+<dt>reserved_room_type</dt><dd><p>code for type of room reserved by guest</p>
+</dd>
+<dt>assigned_room_type</dt><dd><p>code for type of room assigned by hotel</p>
+</dd>
+<dt>booking_changes</dt><dd><p>number of changes made to the booking</p>
+</dd>
+<dt>deposit_type</dt><dd><p>No Deposit, Non Refund, Refundable</p>
+</dd>
+<dt>agent</dt><dd><p>booking travel agency</p>
+</dd>
+<dt>company</dt><dd><p>booking company</p>
+</dd>
+<dt>days_in_waiting_list</dt><dd><p>number of days the guest waited for booking confirmation</p>
+</dd>
+<dt>customer_type</dt><dd><p>Contract, Group, Transient, Transient-party (a transient booking tied to another transient booking)</p>
+</dd>
+<dt>average_daily_rate</dt><dd><p>average hotel cost per day</p>
+</dd>
+<dt>required_car_parking_spaces</dt><dd><p>number of parking spaces the guest needed</p>
+</dd>
+<dt>total_of_special_requests</dt><dd><p>number of guest special requests</p>
+</dd>
+<dt>reservation_status</dt><dd><p>Canceled, Check-Out, No-Show</p>
+</dd>
+<dt>reservation_status_date</dt><dd><p>when the guest cancelled or checked out</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Nuno Antonio, Ana de Almeida, and Luis Nunes (2019). &quot;Hotel booking demand datasets.&quot; Data in Brief (22): 41-49.
+<a href="https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-02-11/hotels.csv/">https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-02-11/hotels.csv/</a>.
+</p>
+
+</main>
+
+</div>
+</body></html>

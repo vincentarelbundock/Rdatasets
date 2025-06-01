@@ -1,0 +1,95 @@
+<!DOCTYPE html><html><head><title>R: Patterns of Gray Matter in Schizophrenia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gm_expected_patterns_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Patterns of Gray Matter in Schizophrenia</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, gm_expected_patterns_tbl_df, is a tibble containing expected patterns
+of gray matter in schizophrenia derived from large-scale meta-analyses by the ENIGMA consortium.
+It includes data from multiple neurological and psychiatric conditions for comparison.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(gm_expected_patterns_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 33 observations and 16 variables:
+</p>
+
+<dl>
+<dt>GM</dt><dd><p>Character vector indicating gray matter regions</p>
+</dd>
+<dt>SSD</dt><dd><p>Numeric vector of expected patterns for schizophrenia spectrum disorder</p>
+</dd>
+<dt>MDD</dt><dd><p>Numeric vector of expected patterns for major depressive disorder</p>
+</dd>
+<dt>AD_ADNI</dt><dd><p>Numeric vector of expected patterns for Alzheimer's disease (ADNI cohort)</p>
+</dd>
+<dt>AD_ADNIOSYRIX</dt><dd><p>Numeric vector of expected patterns for Alzheimer's disease (ADNI+OSYRIX cohort)</p>
+</dd>
+<dt>BD</dt><dd><p>Numeric vector of expected patterns for bipolar disorder</p>
+</dd>
+<dt>PD</dt><dd><p>Numeric vector of expected patterns for Parkinson's disease</p>
+</dd>
+<dt>Diabetes</dt><dd><p>Numeric vector of expected patterns for diabetes</p>
+</dd>
+<dt>HighBP</dt><dd><p>Numeric vector of expected patterns for high blood pressure</p>
+</dd>
+<dt>HighLipids</dt><dd><p>Numeric vector of expected patterns for high lipids</p>
+</dd>
+<dt>MET</dt><dd><p>Numeric vector of expected patterns for metabolic syndrome</p>
+</dd>
+<dt>DS_22q</dt><dd><p>Numeric vector of expected patterns for 22q11.2 deletion syndrome</p>
+</dd>
+<dt>Suicide</dt><dd><p>Numeric vector of expected patterns for suicide</p>
+</dd>
+<dt>OCD_pediatric</dt><dd><p>Numeric vector of expected patterns for pediatric OCD</p>
+</dd>
+<dt>OCD_adult</dt><dd><p>Numeric vector of expected patterns for adult OCD</p>
+</dd>
+<dt>AN</dt><dd><p>Numeric vector of expected patterns for anorexia nervosa</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'gm_expected_patterns_tbl_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+NeuroDataSets package and assists users in identifying its specific characteristics.
+The suffix 'tbl_df' indicates that the dataset is a tibble. The original content has not been modified
+in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the RVIpkg package version 0.3.2.
+</p>
+
+</main>
+
+</div>
+</body></html>

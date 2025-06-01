@@ -1,0 +1,201 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of maize with pedigrees</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>butron.maize</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of maize with pedigrees
+</h2>
+
+<h3>Description</h3>
+
+<p>Maize yields in a multi-environment trial.  Pedigree included.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 245 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype</p>
+</dd>
+<dt><code>male</code></dt><dd><p>male parent</p>
+</dd>
+<dt><code>female</code></dt><dd><p>female parent</p>
+</dd>
+<dt><code>env</code></dt><dd><p>environment</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, Mg/ha</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Ten inbreds were crossed to produce a diallel without reciprocals.
+The 45 F1 crosses were evaluated along with 4 checks in a
+triple-lattice 7x7 design.  Pink stem borer infestation was natural.
+</p>
+<p>Experiments were performed  in 1995 and 1996 at three sites in
+northwestern Spain:
+Pontevedra (42 deg 24 min N, 8 deg 38 min W, 20 m over sea),
+Pontecaldelas (42 deg 23 N, 8 min 32 W, 300 m above sea),
+Ribadumia (42 deg 30 N, 8 min 46 W, 50 m above sea).
+</p>
+<p>A two-letter location code and the year are concatenated to define the
+environment.
+</p>
+<p>The average number of larvae per plant in each environment:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+    Env </td><td style="text-align: left;"> Larvae</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    pc95 </td><td style="text-align: left;"> 0.54</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    pc96 </td><td style="text-align: left;"> 0.91</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    ri96 </td><td style="text-align: left;"> 1.78</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    pv95 </td><td style="text-align: left;"> 2.62</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    pv96 </td><td style="text-align: left;"> 3.35</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+  </td>
+</tr>
+
+</table>
+
+<p>Used with permission of Ana Butron.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Butron, A and Velasco, P and Ordas, A and Malvar, RA (2004).
+Yield evaluation of maize cultivars across environments with different
+levels of pink stem borer infestation.
+Crop Science, 44, 741-747.
+https://doi.org/10.2135/cropsci2004.7410
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(butron.maize)
+  dat &lt;- butron.maize
+
+  libs(reshape2)
+  mat &lt;- acast(dat, gen~env, value.var='yield')
+  mat &lt;- sweep(mat, 2, colMeans(mat))
+  mat.svd &lt;- svd(mat)
+  # Calculate PC1 and PC2 scores as in Table 4 of Butron
+  # Comment out to keep Rcmd check from choking on '
+  # round(mat.svd$u[,1:2] 
+
+  biplot(princomp(mat), main="butron.maize", cex=.7) # Figure 1 of Butron
+
+
+  if(require("asreml", quietly=TRUE)) {
+
+    # Here we see if including pedigree information is helpful for a
+    # multi-environment model
+    # Including the pedigree provided little benefit
+    
+    # Create the pedigree
+    ped &lt;- dat[, c('gen','male','female')]
+    ped &lt;- ped[!duplicated(ped),] # remove duplicates
+    unip &lt;- unique(c(ped$male, ped$female)) # Unique parents
+    unip &lt;- unip[!is.na(unip)]
+    # We have to define parents at the TOP of the pedigree
+    ped &lt;- rbind(data.frame(gen=c("Dent","Flint"), # genetic groups
+                            male=c(0,0),
+                            female=c(0,0)),
+                 data.frame(gen=c("A509","A637","A661","CM105","EP28",
+                                  "EP31","EP42","F7","PB60","Z77016"),
+                            male=rep(c('Dent','Flint'),each=5),
+                            female=rep(c('Dent','Flint'),each=5)),
+                 ped)
+    ped[is.na(ped$male),'male'] &lt;- 0
+    ped[is.na(ped$female),'female'] &lt;- 0
+
+    libs(asreml)
+    ped.ainv &lt;- ainverse(ped)
+      
+    m0 &lt;- asreml(yield ~ 1+env, data=dat, random = ~ gen)
+    m1 &lt;- asreml(yield ~ 1+env, random = ~ vm(gen, ped.ainv), data=dat)
+    m2 &lt;- update(m1, random = ~ idv(env):vm(gen, ped.ainv))
+    m3 &lt;- update(m2, random = ~ diag(env):vm(gen, ped.ainv))
+    m4 &lt;- update(m3, random = ~ fa(env,1):vm(gen, ped.ainv))
+    #summary(m0)$aic
+    #summary(m4)$aic
+    ##    df      AIC
+    ## m0  2 229.4037
+    ## m1  2 213.2487
+    ## m2  2 290.6156
+    ## m3  6 296.8061
+    ## m4 11 218.1568
+    
+    p0 &lt;- predict(m0, data=dat, classify="gen")$pvals
+    p1 &lt;- predict(m1, data=dat, classify="gen")$pvals
+    p1par &lt;- p1[1:12,]   # parents
+    p1 &lt;- p1[-c(1:12),]  # remove parents
+    # Careful!  Need to manually sort the predictions
+    p0 &lt;- p0[order(as.character(p0$gen)),]
+    p1 &lt;- p1[order(as.character(p1$gen)),]
+    
+    # lims &lt;- range(c(p0$pred, p1$pred)) * c(.95,1.05)
+    lims &lt;- c(6,8.25) # zoom in on the higher-yielding hybrids
+    plot(p0$predicted.value, p1$predicted.value,
+         pch="", xlim=lims, ylim=lims, main="butron.maize",
+         xlab="BLUP w/o pedigree", ylab="BLUP with pedigree")
+    abline(0,1,col="lightgray")
+    text(x=p0$predicted.value, y=p1$predicted.value,
+         p0$gen, cex=.5, srt=-45)
+    text(x=min(lims), y=p1par$predicted.value, p1par$gen, cex=.5, col="red")
+    round( cor(p0$predicted.value, p1$predicted.value), 3)
+    # 0.994
+    # Including the pedigree provided very little change
+  }
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

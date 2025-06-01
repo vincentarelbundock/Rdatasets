@@ -1,0 +1,124 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of oats in India</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>shaw.oats</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of oats in India
+</h2>
+
+<h3>Description</h3>
+
+<p>Multi-environment trial of oats in India, 13 genotypes, 3 year, 2 loc,
+5 reps
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("shaw.oats")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 390 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>env</code></dt><dd><p>environment, 2 levels</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year, 3 levels</p>
+</dd>
+<dt><code>block</code></dt><dd><p>block, 5 levels</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype variety, 13 levels</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield of oats, pounds per plot</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>An oat trial in India of 11 hybrid oats compared to 2 established
+high-yielding varieties, labeled L and M. The trail was conducted at 2
+locations. The size and exact locations of the plots varied from year
+to year.
+</p>
+<p>At Pusa, the crop was grown without irrigation. At Karnal the crop was
+given 2-3 irrigations. Five blocks were used, each plot 1000 square
+feet. In 1932, variety L was high-yielding at Pusa, but low-yielding
+at Karnal.
+</p>
+<p>Shaw used this data to illustrate ANOVA for a multi-environment trial.
+</p>
+
+
+<h3>Source</h3>
+
+<p>F.J.F. Shaw (1936).
+A Handbook of Statistics For Use In Plant Breeding and Agricultural Problems.
+The Imperial Council of Agricultural Research, India.
+https://archive.org/details/HandbookStatistics1936/page/n12
+P. 126
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(shaw.oats)
+dat &lt;- shaw.oats
+# sum(dat$yield) # 16309 matches Shaw p. 125
+# sum( (dat$yield-mean(dat$yield)) ^2) # total SS matches Shaw p. 141
+
+dat$year &lt;- factor(dat$year)
+libs(lattice)
+
+dotplot(yield ~ gen|env, data=dat, groups=year,
+        main="shaw.oats",
+        par.settings=list(superpose.symbol=list(pch=c('2','3','4'))),
+        panel=function(x,y,...){
+          panel.dotplot(x,y,...)
+          panel.superpose(x,y,..., panel.groups=function(x,y,col.line,...) {
+            dd&lt;-aggregate(y~x,data.frame(x,y),mean)
+            panel.xyplot(x=dd$x, y=dd$y, col=col.line, type="l")
+          })},
+        auto.key=TRUE)
+
+
+
+# Shaw &amp; Bose meticulously calculate the ANOVA table, p. 141
+m1 &lt;- aov(yield ~ year*env*block*gen - year:env:block:gen, dat)
+anova(m1)
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

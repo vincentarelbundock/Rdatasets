@@ -1,0 +1,85 @@
+.. container::
+
+   .. container::
+
+      ======= ===============
+      law2006 R Documentation
+      ======= ===============
+
+      .. rubric:: Law Dome Ice Core
+         :name: law-dome-ice-core
+
+      .. rubric:: Description
+         :name: description
+
+      Law Dome Ice Core 2000-year ``CH_4``, ``CO_2`` and ``N_{2}O``
+      data.
+
+      .. rubric:: Usage
+         :name: usage
+
+      .. code:: R
+
+         law2006
+
+      .. rubric:: Format
+         :name: format
+
+      A ``data.frame`` with 2004 observations and 8 variables:
+
+      year
+         ``integer``: year AD.
+
+      NOAA04
+         ``numeric``: NOAA04 ``CH_4`` scale.
+
+      CH4_spl
+         ``numeric``: ``CH_4`` spline (ppb).
+
+      CH4_grw
+         ``numeric``: ``CH_4`` growth Rate (ppb/yr).
+
+      CO2_spl
+         ``numeric``: ``CO_2`` spline (ppb).
+
+      CO2_grw
+         ``numeric``: ``CO_2`` growth Rate (ppb/yr).
+
+      N2O_spl
+         ``numeric``: ``N_{2}O`` spline (ppb).
+
+      N2O_grw
+         ``numeric``: ``N_{2}O`` growth Rate (ppb/yr).
+
+      .. rubric:: Source
+         :name: source
+
+      https://www.ncei.noaa.gov/access/paleo-search/study/9959
+
+      .. rubric:: References
+         :name: references
+
+      MacFarling Meure, C., Etheridge, D., Trudinger, C., Steele, P.,
+      Langenfelds, R., van Ommen, T., Smith, A. and Elkins, J. (2006).
+      The Law Dome CO2, CH4 and N2O Ice Core Records Extended to 2000
+      years BP. *Geophysical Research Letters*, 33(14), L14810.
+      `doi:10.1029/2006GL026152 <https://doi.org/10.1029/2006GL026152>`__.
+
+      .. rubric:: See Also
+         :name: see-also
+
+      Other palaeoenvironment data: ``epica2008``, ``lisiecki2005``,
+      ``ngrip2004``, ``ngrip2010``, ``spratt2016``
+
+      .. rubric:: Examples
+         :name: examples
+
+      .. code:: R
+
+         plot(
+           x = law2006$year,
+           y = law2006$CO2_spl,
+           type = "l",
+           xlab = "Year AD",
+           ylab = expression("CO"[2]~"(ppm)")
+         )

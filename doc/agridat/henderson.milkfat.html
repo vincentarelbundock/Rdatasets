@@ -1,0 +1,120 @@
+<!DOCTYPE html><html><head><title>R: Milk fat yields for a single cow</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>henderson.milkfat</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Milk fat yields for a single cow
+</h2>
+
+<h3>Description</h3>
+
+<p>Average daily fat yields (kg/day) from milk from a single cow for each of 35 weeks.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 35 observations on the following 2 variables.
+</p>
+
+<dl>
+<dt><code>week</code></dt><dd><p>week, numeric</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, kg/day</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Charles McCulloch.  Workshop on Generalized Linear Mixed Models.
+</p>
+<p>Used with permission of Charles McCulloch and Harold Henderson.
+</p>
+
+
+<h3>References</h3>
+
+<p>None.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(henderson.milkfat)
+dat &lt;- henderson.milkfat
+
+plot(yield~week, data=dat, cex = 0.8, ylim=c(0,.9),
+     main="henderson.milkfat", xlab = "Week",
+     ylab = "Fat yield (kg/day)")
+
+# Yield ~ a * t^b * exp(g*t) # where t is time
+m1 &lt;- nls(yield ~ alpha * week^beta * exp(gamma * week),
+          data=dat,
+          start=list(alpha=.1, beta=.1, gamma=.1))
+
+# Or, take logs and fit a linear model
+# log(yield) ~ log(alpha) + beta*log(t)  + gamma*t
+m2 &lt;- lm(log(yield) ~ 1 + log(week) + week, dat)
+
+# Or, use glm and a link to do the transform
+m3 &lt;- glm(yield ~ 1 + log(week) + week, quasi(link = "log"), dat)
+
+# Note: m2 has E[log(y)] = log(alpha) + beta*log(t)  + gamma*t
+#  and m3 has  log(E[y]) = log(alpha) + beta*log(t)  + gamma*t
+
+# Generalized additive models
+libs("mgcv")
+m4 &lt;- gam(log(yield) ~ s(week), gaussian, dat)
+m5 &lt;- gam(yield ~ s(week), quasi(link = "log"), dat)
+
+# Model predictions
+pdat &lt;- data.frame(week = seq(1, 35, by = 0.1))
+pdat &lt;- transform(pdat, p1 = predict(m1, pdat),
+                  p2 = exp(predict(m2, pdat)), # back transform
+                  p3 = predict(m3, pdat, type="resp"), # response scale
+                  p4 = exp(predict(m4, pdat)),
+                  p5 = predict(m5, pdat, type="response"))
+
+# Compare fits
+with(pdat, {
+  lines(week, p1)
+  lines(week, p2, col = "red", lty="dotted")
+  lines(week, p3, col = "red", lty="dashed")
+  lines(week, p4, col = "blue", lty = "dashed")
+  lines(week, p5, col = "blue")
+})
+
+legend("topright",
+  c("obs", "lm, log-transformed", "glm, log-link",
+    "gam, log-transformed", "gam, log-link"),
+  lty = c("solid", "dotted", "dashed", "dashed", "solid"),
+  col = c("black", "red", "red", "blue", "blue"),
+  cex = 0.8, bty = "n")
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

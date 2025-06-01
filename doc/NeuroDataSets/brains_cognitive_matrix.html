@@ -1,0 +1,90 @@
+<!DOCTYPE html><html><head><title>R: BRAiNS Cohort Cognitive States Matrix</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>brains_cognitive_matrix</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>BRAiNS Cohort Cognitive States Matrix</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, <code>brains_cognitive_matrix</code>, is a matrix containing the states and covariates
+of 649 participants enrolled in the BRAiNS cohort at the University of Kentucky's
+Alzheimer's Disease Research Center. The data includes longitudinal cognitive assessments
+and various health covariates across multiple visits.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(brains_cognitive_matrix)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A matrix with 6240 observations and 13 variables:
+</p>
+
+<dl>
+<dt>ID</dt><dd><p>Integer: Participant identification number</p>
+</dd>
+<dt>visitno</dt><dd><p>Integer: Visit number</p>
+</dd>
+<dt>prstate</dt><dd><p>Integer: Previous cognitive state</p>
+</dd>
+<dt>custate</dt><dd><p>Integer: Current cognitive state</p>
+</dd>
+<dt>bagec</dt><dd><p>Integer: Baseline age centered</p>
+</dd>
+<dt>famhx</dt><dd><p>Integer: Family history of dementia (0 = No, 1 = Yes)</p>
+</dd>
+<dt>HBP</dt><dd><p>Integer: History of high blood pressure (0 = No, 1 = Yes)</p>
+</dd>
+<dt>apoe4</dt><dd><p>Integer: APOE <code class="reqn">\varepsilon_4</code> allele carrier status (0 = Non-carrier, 1 = Carrier)</p>
+</dd>
+<dt>smk1</dt><dd><p>Integer: Smoking status indicator 1</p>
+</dd>
+<dt>smk2</dt><dd><p>Integer: Smoking status indicator 2</p>
+</dd>
+<dt>smk3</dt><dd><p>Integer: Smoking status indicator 3</p>
+</dd>
+<dt>lowed</dt><dd><p>Integer: Low education indicator (0 = No, 1 = Yes)</p>
+</dd>
+<dt>headinj</dt><dd><p>Integer: History of head injury (0 = No, 1 = Yes)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as <code>brains_cognitive_matrix</code> to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps distinguish
+this dataset as part of the <span class="pkg">NeuroDataSets</span> package. The suffix <code>matrix</code> indicates
+that the dataset is a matrix. The original content has not been modified.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the <span class="pkg">RRMLRfMC</span> package version 0.4.0. Original study:
+University of Kentucky's Alzheimer's Disease Research Center BRAiNS cohort.
+</p>
+
+</main>
+
+</div>
+</body></html>

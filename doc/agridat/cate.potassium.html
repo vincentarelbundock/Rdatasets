@@ -1,0 +1,119 @@
+<!DOCTYPE html><html><head><title>R: Relative cotton yield for different soil potassium...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>cate.potassium</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Relative cotton yield for different soil potassium concentrations
+</h2>
+
+<h3>Description</h3>
+
+<p>Relative cotton yield for different soil potassium concentrations
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 24 observations on the following 2 variables.
+</p>
+
+<dl>
+<dt><code>yield</code></dt><dd><p>Relative yield</p>
+</dd>
+<dt><code>potassium</code></dt><dd><p>Soil potassium, ppm</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Cate &amp; Nelson used this data to determine the minimum optimal amount
+of soil potassium to achieve maximum yield.
+</p>
+<p>Note, Fig 1 of Cate &amp; Nelson does not match the data from Table 2.  It
+sort of appears that points with high-concentrations of potassium were
+shifted left to a truncation point.  Also, the calculations below do
+not quite match the results in Table 1.  Perhaps the published data
+were rounded?
+</p>
+
+
+<h3>Source</h3>
+
+<p>Cate, R.B. and Nelson, L.A. (1971).
+A simple statistical procedure for partitioning soil test correlation
+data into two classes.
+<em>Soil Science Society of America Journal</em>, 35, 658&ndash;660.
+https://doi.org/10.2136/sssaj1971.03615995003500040048x
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(cate.potassium)
+dat &lt;- cate.potassium
+names(dat) &lt;- c('y','x')
+
+CateNelson &lt;- function(dat){
+  dat &lt;- dat[order(dat$x),] # Sort the data by x
+  x &lt;- dat$x
+  y &lt;- dat$y
+
+  # Create a data.frame to store the results
+  out &lt;- data.frame(x=NA, mean1=NA, css1=NA, mean2=NA, css2=NA, r2=NA)
+
+  css &lt;- function(x) { var(x) * (length(x)-1) }
+  tcss &lt;- css(y) # Total corrected sum of squares
+
+  for(i in 2:(length(y)-2)){
+    y1 &lt;- y[1:i]
+    y2 &lt;- y[-(1:i)]
+
+    out[i, 'x'] &lt;- x[i]
+    out[i, 'mean1'] &lt;- mean(y1)
+    out[i, 'mean2'] &lt;- mean(y2)
+    out[i, 'css1'] &lt;- css1 &lt;- css(y1)
+    out[i, 'css2'] &lt;- css2 &lt;- css(y2)
+    out[i, 'r2'] &lt;-  ( tcss - (css1+css2)) / tcss
+  }
+  return(out)
+}
+
+cn &lt;- CateNelson(dat)
+ix &lt;- which.max(cn$r2)
+with(dat, plot(y~x, ylim=c(0,110), xlab="Potassium", ylab="Yield"))
+title("cate.potassium - Cate-Nelson analysis")
+abline(v=dat$x[ix], col="skyblue")
+abline(h=(dat$y[ix] + dat$y[ix+1])/2, col="skyblue")
+
+  # another approach with similar results
+  # https://joe.org/joe/2013october/tt1.php
+  libs("rcompanion")
+  cateNelson(dat$x, dat$y, plotit=0)
+
+## End(Not run)
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

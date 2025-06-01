@@ -1,0 +1,242 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of wheat for 18 genotypes at 25...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>crossa.wheat</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of wheat for 18 genotypes at 25 locations
+</h2>
+
+<h3>Description</h3>
+
+<p>Wheat yields for 18 genotypes at 25 locations
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 450 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>loc</code></dt><dd><p>location</p>
+</dd>
+<dt><code>locgroup</code></dt><dd><p>location group: Grp1-Grp2</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype</p>
+</dd>
+<dt><code>gengroup</code></dt><dd><p>genotype group: W1, W2, W3</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>grain yield, tons/ha</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Grain yield from the 8th Elite Selection Wheat Yield Trial to evaluate
+18 bread wheat genotypes at 25 locations in 15 countries.
+</p>
+<p>Cross et al. used this data to cluster loctions into 2
+mega-environments and clustered genotypes into 3 wheat clusters.
+</p>
+<p>Locations
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+    Code </td><td style="text-align: left;"> Country </td><td style="text-align: left;"> Location </td><td style="text-align: right;"> Latitude (N) </td><td style="text-align: right;"> Elevation (m) </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    AK </td><td style="text-align: left;"> Algeria </td><td style="text-align: left;"> El Khroub </td><td style="text-align: right;"> 36 </td><td style="text-align: right;"> 640 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    AL </td><td style="text-align: left;"> Algeria </td><td style="text-align: left;"> Setif </td><td style="text-align: right;"> 36 </td><td style="text-align: right;"> 1,023 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    BJ </td><td style="text-align: left;"> Bangladesh </td><td style="text-align: left;"> Joydebpur </td><td style="text-align: right;"> 24 </td><td style="text-align: right;"> 8 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    CA </td><td style="text-align: left;"> Cyprus </td><td style="text-align: left;"> Athalassa </td><td style="text-align: right;"> 35 </td><td style="text-align: right;"> 142 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    EG </td><td style="text-align: left;"> Egypt </td><td style="text-align: left;"> E1 Gemmeiza </td><td style="text-align: right;"> 31 </td><td style="text-align: right;"> 8 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    ES </td><td style="text-align: left;"> Egypt </td><td style="text-align: left;"> Sakha </td><td style="text-align: right;"> 31 </td><td style="text-align: right;"> 6 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    EB </td><td style="text-align: left;"> Egypt </td><td style="text-align: left;"> Beni-Suef </td><td style="text-align: right;"> 29 </td><td style="text-align: right;"> 28 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    IL </td><td style="text-align: left;"> India </td><td style="text-align: left;"> Ludhiana </td><td style="text-align: right;"> 31 </td><td style="text-align: right;"> 247 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    ID </td><td style="text-align: left;"> India </td><td style="text-align: left;"> Delhi </td><td style="text-align: right;"> 29 </td><td style="text-align: right;"> 228 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    JM </td><td style="text-align: left;"> Jordan </td><td style="text-align: left;"> Madaba </td><td style="text-align: right;"> 36 </td><td style="text-align: right;"> 785 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    KN </td><td style="text-align: left;"> Kenya </td><td style="text-align: left;"> Njoro </td><td style="text-align: right;"> 0 </td><td style="text-align: right;"> 2,165 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    MG </td><td style="text-align: left;"> Mexico </td><td style="text-align: left;"> Guanajuato </td><td style="text-align: right;"> 21 </td><td style="text-align: right;"> 1,765 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    MS </td><td style="text-align: left;"> Mexico </td><td style="text-align: left;"> Sonora </td><td style="text-align: right;"> 27 </td><td style="text-align: right;"> 38 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    MM </td><td style="text-align: left;"> Mexico </td><td style="text-align: left;"> Michoacfin </td><td style="text-align: right;"> 20 </td><td style="text-align: right;"> 1,517 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    NB </td><td style="text-align: left;"> Nepal </td><td style="text-align: left;"> Bhairahwa </td><td style="text-align: right;"> 27 </td><td style="text-align: right;"> 105 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    PI </td><td style="text-align: left;"> Pakistan </td><td style="text-align: left;"> Islamabad </td><td style="text-align: right;"> 34 </td><td style="text-align: right;"> 683 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    PA </td><td style="text-align: left;"> Pakistan </td><td style="text-align: left;"> Ayub </td><td style="text-align: right;"> 32 </td><td style="text-align: right;"> 213 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    SR </td><td style="text-align: left;"> Saudi Arabia </td><td style="text-align: left;"> Riyadh </td><td style="text-align: right;"> 24 </td><td style="text-align: right;"> 600 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    SG </td><td style="text-align: left;"> Sudan </td><td style="text-align: left;"> Gezira </td><td style="text-align: right;"> 14 </td><td style="text-align: right;"> 411 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    SE </td><td style="text-align: left;"> Spain </td><td style="text-align: left;"> Encinar </td><td style="text-align: right;"> 38 </td><td style="text-align: right;"> 20 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    SJ </td><td style="text-align: left;"> Spain </td><td style="text-align: left;"> Jerez </td><td style="text-align: right;"> 37 </td><td style="text-align: right;"> 180 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    SC </td><td style="text-align: left;"> Spain </td><td style="text-align: left;"> Cordoba </td><td style="text-align: right;"> 38 </td><td style="text-align: right;"> 110 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    SS </td><td style="text-align: left;"> Spain </td><td style="text-align: left;"> Sevilla </td><td style="text-align: right;"> 38 </td><td style="text-align: right;"> 20 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    TB </td><td style="text-align: left;"> Tunisia </td><td style="text-align: left;"> Beja </td><td style="text-align: right;"> 37 </td><td style="text-align: right;"> 150 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    TC </td><td style="text-align: left;"> Thailand </td><td style="text-align: left;"> Chiang Mai </td><td style="text-align: right;"> 18 820 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+  </td>
+</tr>
+
+</table>
+
+<p>Used with permission of Jose' Crossa.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Crossa, J and Fox, PN and Pfeiffer, WH and Rajaram, S and Gauch Jr,
+HG. (1991).
+AMMI adjustment for statistical analysis of an
+international wheat yield trial.
+Theoretical and Applied Genetics, 81, 27&ndash;37.
+https://doi.org/10.1007/BF00226108
+</p>
+
+
+<h3>References</h3>
+
+<p>Jean-Louis Laffont, Kevin Wright and Mohamed Hanafi (2013).
+Genotype + Genotype x Block of Environments (GGB) Biplots.
+Crop Science, 53, 2332-2341.
+https://doi.org/10.2135/cropsci2013.03.0178
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+  library(agridat)
+  data(crossa.wheat)
+  dat &lt;- crossa.wheat
+  
+  # AMMI biplot.  Fig 3 of Crossa et al.
+  libs(agricolae)
+  m1 &lt;- with(dat, AMMI(E=loc, G=gen, R=1, Y=yield))
+  b1 &lt;- m1$biplot[,1:4]
+  b1$PC1 &lt;- -1 * b1$PC1 # Flip vertical
+  plot(b1$yield, b1$PC1, cex=0.0,
+       text(b1$yield, b1$PC1, cex=.5, labels=row.names(b1),col="brown"),
+       main="crossa.wheat AMMI biplot",
+       xlab="Average yield", ylab="PC1", frame=TRUE)
+  mn &lt;- mean(b1$yield)
+  abline(h=0, v=mn, col='wheat')
+
+  g1 &lt;- subset(b1,type=="GEN")
+  text(g1$yield, g1$PC1, rownames(g1), col="darkgreen", cex=.5)
+  
+  e1 &lt;- subset(b1,type=="ENV")
+  arrows(mn, 0,
+         0.95*(e1$yield - mn) + mn, 0.95*e1$PC1,
+         col= "brown", lwd=1.8,length=0.1)
+  
+  # GGB example
+  library(agridat)
+  data(crossa.wheat)
+  dat2 &lt;- crossa.wheat
+  libs(gge)
+  # Specify env.group as column in data frame
+  m2 &lt;- gge(dat2, yield~gen*loc,
+            env.group=locgroup, gen.group=gengroup,
+            scale=FALSE)
+  biplot(m2, main="crossa.wheat - GGB biplot")
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

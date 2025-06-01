@@ -1,0 +1,93 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of maize hybrids in China</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>fan.stability</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of maize hybrids in China
+</h2>
+
+<h3>Description</h3>
+
+<p>Yield of 13 hybrids, grown in 10 locations across 2 years.  Conducted
+in Yunnan, China.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 260 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype</p>
+</dd>
+<dt><code>maturity</code></dt><dd><p>maturity, days</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+<dt><code>loc</code></dt><dd><p>location</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, Mg/ha</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data are the mean of 3 reps.
+</p>
+<p>These data were used to conduct a stability analysis of yield.
+</p>
+<p>Used with permission of Manjit Kang.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Fan, X.M. and Kang, M.S. and Chen, H. and Zhang, Y. and Tan, J. and Xu, C. (2007).
+Yield stability of maize hybrids evaluated in multi-environment trials in Yunnan, China.
+Agronomy Journal, 99, 220-228.
+https://doi.org/10.2134/agronj2006.0144
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(fan.stability)
+dat &lt;- fan.stability
+
+dat$env &lt;- factor(paste(dat$loc, dat$year, sep=""))
+libs(lattice)
+dotplot(gen~yield|env, dat, main="fan.stability")
+
+libs(reshape2, agricolae)
+dm &lt;- acast(dat, gen~env, value.var='yield')
+# Use 0.464 as pooled error from ANOVA.  Calculate yield mean/stability.
+stability.par(dm, rep=3, MSerror=0.464) # Table 5 of Fan et al.
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

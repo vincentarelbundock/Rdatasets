@@ -1,0 +1,155 @@
+<!DOCTYPE html><html><head><title>R: Multi-environment trial of maize for 9 cultivars at 20...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>cornelius.maize</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Multi-environment trial of maize for 9 cultivars at 20 locations.
+</h2>
+
+<h3>Description</h3>
+
+<p>Maize yields for 9 cultivars at 20 locations.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("cornelius.maize")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 180 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>env</code></dt><dd><p>environment factor, 20 levels</p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype/cultivar, 9 levels</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, kg/ha</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Cell means (kg/hectare) for the CIMMYT EVT16B maize yield trial.
+</p>
+
+
+<h3>Source</h3>
+
+<p>P L Cornelius and J Crossa and M S Seyedsadr. (1996).
+Statistical Tests and Estimators of Multiplicative Models for
+Genotype-by-Environment Interaction.
+Book: <em>Genotype-by-Environment Interaction</em>. Pages 199-234.
+</p>
+
+
+<h3>References</h3>
+
+<p>Forkman, Johannes and Piepho, Hans-Peter. (2014).
+Parametric bootstrap methods for testing multiplicative terms in GGE
+and AMMI models. <em>Biometrics</em>, 70(3), 639-647.
+https://doi.org/10.1111/biom.12162
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(cornelius.maize)
+dat &lt;- cornelius.maize
+
+# dotplot(gen~yield|env,dat) # We cannot compare genotype yields easily
+# Subtract environment mean from each observation
+libs(reshape2)
+mat &lt;- acast(dat, gen~env)
+mat &lt;- scale(mat, scale=FALSE)
+dat2 &lt;- melt(mat)
+names(dat2) &lt;- c('gen','env','yield')
+libs(lattice)
+bwplot(yield ~ gen, dat2,
+       main="cornelius.maize - environment centered yields")
+
+if(0){
+# This reproduces the analysis of Forkman and Piepho.
+
+test.pc &lt;- function(Y0, type="AMMI", n.boot=10000, maxpc=6) {
+
+  # Test the significance of Principal Components in GGE/AMMI
+
+  # Singular value decomposition of centered/double-centered Y
+  Y &lt;- sweep(Y0, 1, rowMeans(Y0)) # subtract environment means
+  if(type=="AMMI") {
+    Y &lt;- sweep(Y, 2, colMeans(Y0)) # subtract genotype means
+    Y &lt;- Y + mean(Y0)
+  }
+  lam &lt;- svd(Y)$d
+
+  # Observed value of test statistic.
+  # t.obs[k] is the proportion of variance explained by the kth term out of
+  # the k...M terms, e.g. t.obs[2] is lam[2]^2 / sum(lam[2:M]^2)
+  t.obs &lt;- { lam^2/rev(cumsum(rev(lam^2))) } [1:(M-1)]
+  t.boot &lt;- matrix(NA, nrow=n.boot, ncol=M-1)
+
+  # Centering rows/columns reduces the rank by 1 in each direction.
+  I &lt;- if(type=="AMMI") nrow(Y0)-1 else nrow(Y0)
+  J &lt;- ncol(Y0)-1
+  M &lt;- min(I, J) # rank of Y, maximum number of components
+  M &lt;- min(M, maxpc) # Optional step: No more than 5 components
+
+  for(K in 0:(M-2)){ # 'K' multiplicative components in the svd
+
+    for(bb in 1:n.boot){
+      E.b &lt;- matrix(rnorm((I-K) * (J-K)), nrow = I-K, ncol = J-K)
+      lam.b &lt;- svd(E.b)$d
+      t.boot[bb, K+1] &lt;- lam.b[1]^2 / sum(lam.b^2)
+    }
+
+  }
+
+  # P-value for each additional multiplicative term in the SVD.
+  # P-value is the proportion of time bootstrap values exceed t.obs
+  colMeans(t.boot &gt; matrix(rep(t.obs, n.boot), nrow=n.boot, byrow=TRUE))
+}
+
+dat &lt;- cornelius.maize
+
+# Convert to matrix format
+libs(reshape2)
+dat &lt;- acast(dat, env~gen, value.var='yield')
+
+## R&gt; test.pc(dat,"AMMI")
+## [1] 0.0000 0.1505 0.2659 0.0456 0.1086 # Forkman: .00 .156 .272 .046 .111
+
+## R&gt; test.pc(dat,"GGE")
+## [1] 0.0000 0.2934 0.1513 0.0461 0.2817 # Forkman: .00 .296 .148 .047 .285
+
+}
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

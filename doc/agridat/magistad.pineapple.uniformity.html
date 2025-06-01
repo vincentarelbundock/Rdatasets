@@ -1,0 +1,158 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of pineapple</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>magistad.pineapple.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of pineapple
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of pineapple in Hawaii in 1932
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("magistad.pineapple.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 137 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>field</code></dt><dd><p>field number</p>
+</dd>
+<dt><code>plat</code></dt><dd><p>plat number</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>number</code></dt><dd><p>number of fruits</p>
+</dd>
+<dt><code>weight</code></dt><dd><p>weight of fruits, grams</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Field 19. Kunia. Harvested 1932.
+</p>
+<p>&quot;In this field, harvested in 1932, there were four rows per bed. A 300-foot bed was divided into four equal parts to form plats 1, 2, 3, and 4.  The third [sic, second] bed from this was similarly divided to form plats 5 to 8, inclusive.  In the same manner plats 9 to 24 were formed. In this way 24 plats each 75 feet long and 1 bed wide were formed.&quot;
+Page 635: &quot;the smallest plats are 75 by 6.5 feet&quot;.
+</p>
+<p>Field length: 4 plats * 75 feet = 300 feet
+</p>
+<p>Field width: 6 plats * 6.5 feet = 39 feet
+</p>
+<p>Field 82. Pearl City.
+</p>
+<p>&quot;Eight beds, each separated by two beds, were selected and harvested. Beds were 8 feet center to center. Each bed was divided into three plats 76 feet long.&quot;
+The columns which have data are bed 1, 4, 7, 10, 13, 16, 19, 22
+</p>
+<p>Note: Layout of plats into rows/columns assumes the same pattern as field 19.
+</p>
+<p>Field length: 3 plats * 76 feet = 228 feet
+</p>
+<p>Field width: 22 plats * 8 feet = 176 feet.
+</p>
+<p>Field 21. Kahuku.
+</p>
+<p>&quot;In field 21, Kahuku, the experimental plan was of the Latin square type, having five beds of five plats each. The beds were 7.5 feet center to center. Each plat was approximately 60 feet long and each third bed was selected and harvested.&quot;
+Note: Layout of plats into rows/columns assumes the same pattern as field 19.
+</p>
+<p>Field lenght: 5 plats * 60 feet = 300 feet
+</p>
+<p>Field width: 13 plats * 7.5 feet = 97.5 feet
+</p>
+<p>Field 1. Kunia.
+</p>
+<p>&quot;This experiment was another Latin square test having eight plats in each column and eight plats in each row. It was harvested in 1930.  Each plat consisted of two beds 150 feet long. Beds were 6 feet center to center and consisted of three rows each. The entire experimental area occupied 2.85 acres.&quot;
+</p>
+<p>Field length: 8 plats * 150 feet = 1200 feet
+</p>
+<p>Field width: 8 plats * 2 beds * 6 feet = 96 feet
+</p>
+<p>Total area: 1200*96/43560=2.64 acres
+</p>
+
+
+<h3>Source</h3>
+
+<p>O. C. Magistad &amp; C. A. Farden (1934).
+Experimental Error In Field Experiments With Pineapples.
+Journal of the American Society of Agronomy, 26, 631&ndash;643.
+https://doi.org/10.2134/agronj1934.00021962002600080001x
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+  data(magistad.pineapple.uniformity)
+  dat &lt;- magistad.pineapple.uniformity
+
+  # match table page 641
+  ## dat 
+  ##   summarize(number=mean(number),
+  ##             weight=mean(weight)) 
+  ##   field   number   weight
+  ## 1     1 596.4062 2499.922
+  ## 2    19 171.1667 2100.250
+  ## 3    21 171.1600 2056.800
+  ## 4    82 220.7500 1264.500
+  
+  libs(desplot)
+  desplot(dat, weight ~ col*row,
+          subset=field==19,
+          aspect=300/39,
+          main="magistad.pineapple.uniformity - field 19")
+  desplot(dat, weight ~ col*row,
+          subset=field==82,
+          aspect=228/176,
+          main="magistad.pineapple.uniformity - field 82")          
+  desplot(dat, weight ~ col*row,
+          subset=field==21,
+          aspect=300/97.5,
+          main="magistad.pineapple.uniformity - field 21")
+  desplot(dat, weight ~ col*row,
+          subset=field==1,
+          aspect=1200/96,
+          main="magistad.pineapple.uniformity - field 1")          
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html><html><head><title>R: Returns to schooling</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>schooling</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Returns to schooling</h2>
+
+<h3>Description</h3>
+
+<p>Data from the National Longitudinal Survey of Young Men.
+Cohort includes 3,010 males aged 24 to 34 years old in 1976,  who were
+ages 14-24 when first interviewed in 1966.
+Cameron and Trivedi (2005)
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>schooling
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 5226 observations and 101 variables:
+</p>
+
+<dl>
+<dt>id</dt><dd><p>identification code</p>
+</dd>
+<dt>black</dt><dd><p>= 1 if black race</p>
+</dd>
+<dt>imigrnt</dt><dd><p>= 1 if born in the US</p>
+</dd>
+<dt>hhead</dt><dd><p>person lived with at age 14 (in 1966)</p>
+</dd>
+<dt>mag_14</dt><dd><p>= 1 if magazines available at age 14</p>
+</dd>
+<dt>news_14</dt><dd><p>= 1 if newspapers available at age 14</p>
+</dd>
+<dt>lib_14</dt><dd><p>= 1 if library card available at age 14</p>
+</dd>
+<dt>num_sib</dt><dd><p>total number of siblings</p>
+</dd>
+<dt>fgrade</dt><dd><p>highest grade completed by father (1966)</p>
+</dd>
+<dt>mgrade</dt><dd><p>highest grade completed by mother (1966)</p>
+</dd>
+<dt>iq</dt><dd><p>IQ score in 1968</p>
+</dd>
+<dt>bdate</dt><dd><p>date of birth</p>
+</dd>
+<dt>gfill76</dt><dd><p>highest grade completed 1976, some values filled from prevs reports</p>
+</dd>
+<dt>wt76</dt><dd><p>sampling weights 1976</p>
+</dd>
+<dt>grade76</dt><dd><p>highest grade completed in 1976</p>
+</dd>
+<dt>grade66</dt><dd><p>highest grade completed in 1966</p>
+</dd>
+<dt>age76</dt><dd><p>age in 1976</p>
+</dd>
+<dt>age66</dt><dd><p>age in 1966</p>
+</dd>
+<dt>smsa76</dt><dd><p>current residence, = 1 if lived in central city in 1976</p>
+</dd>
+<dt>smsa66</dt><dd><p>current residence, = 1 if lived in central city in 1966</p>
+</dd>
+<dt>region</dt><dd><p>census region in 1966</p>
+</dd>
+<dt>col4</dt><dd><p>= 1 if there is a 4-year college nearby</p>
+</dd>
+<dt>mcol4</dt><dd><p>= 1 if male 4-year college nearby</p>
+</dd>
+<dt>col4pub</dt><dd><p>= 1 if public 4-year college nearby</p>
+</dd>
+<dt>south76</dt><dd><p>= 1 if lived in South in 1976</p>
+</dd>
+<dt>wage76</dt><dd><p>hourly wage in 1976, ln</p>
+</dd>
+<dt>exp76</dt><dd><p>work experience in 1976, years calculated as (10 + age66) - grade76 - 6</p>
+</dd>
+<dt>expsq76</dt><dd><p>experience 1976 squared, exp76^2/100</p>
+</dd>
+<dt>agesq76</dt><dd><p>age squared (1976)</p>
+</dd>
+<dt>reg1</dt><dd><p>region, = 1 if lived in region NE</p>
+</dd>
+<dt>reg2</dt><dd><p>region, = 1 if lived in region MidAtl</p>
+</dd>
+<dt>reg3</dt><dd><p>region, = 1 if lived in region ENC</p>
+</dd>
+<dt>reg4</dt><dd><p>region, = 1 if lived in region WNC</p>
+</dd>
+<dt>reg5</dt><dd><p>region, = 1 if lived in region SA</p>
+</dd>
+<dt>reg6</dt><dd><p>region, = 1 if lived in region ESC</p>
+</dd>
+<dt>reg7</dt><dd><p>region, = 1 if lived in region WSC</p>
+</dd>
+<dt>reg8</dt><dd><p>region, = 1 if lived in region M</p>
+</dd>
+<dt>reg9</dt><dd><p>region, = 1 if lived in region P</p>
+</dd>
+<dt>momdad14</dt><dd><p>= 1 if lived with both parents at age 14</p>
+</dd>
+<dt>sinmom14</dt><dd><p>= 1 if lived with mother only at age 14</p>
+</dd>
+<dt>nodaded</dt><dd><p>= 1 if father has no formal education</p>
+</dd>
+<dt>nomomed</dt><dd><p>= 1 if mother has no formal education</p>
+</dd>
+<dt>daded</dt><dd><p>mean grade level of father</p>
+</dd>
+<dt>momed</dt><dd><p>mean grade level of mother</p>
+</dd>
+<dt>famed</dt><dd><p>father's and mother's education</p>
+</dd>
+<dt>famed1</dt><dd><p>= 1 if mgrade&gt; 12 &amp; fgrade&gt; 12</p>
+</dd>
+<dt>famed2</dt><dd><p>= 1 if mgrade&gt;=12 &amp; fgrade&gt;=12</p>
+</dd>
+<dt>famed3</dt><dd><p>= 1 if mgrade==12 &amp; fgrade==12</p>
+</dd>
+<dt>famed4</dt><dd><p>= 1 if mgrade&gt;=12 &amp; fgrade==-1</p>
+</dd>
+<dt>famed5</dt><dd><p>= 1 if fgrade&gt;=12</p>
+</dd>
+<dt>famed6</dt><dd><p>= 1 if mgrade&gt;=12 &amp; fgrade&gt; -1</p>
+</dd>
+<dt>famed7</dt><dd><p>= 1 if mgrade&gt;=9 &amp; fgrade&gt;=9</p>
+</dd>
+<dt>famed8</dt><dd><p>= 1 if mgrade&gt; -1 &amp; fgrade&gt; -1</p>
+</dd>
+<dt>famed9</dt><dd><p>= 1 if famed not in range 1-8</p>
+</dd>
+<dt>int76</dt><dd><p>= 1 if wt76 not missing</p>
+</dd>
+<dt>age1415</dt><dd><p>= 1 if in age group 14-15</p>
+</dd>
+<dt>age1617</dt><dd><p>= 1 if in age group 16-17</p>
+</dd>
+<dt>age1819</dt><dd><p>= 1 if in age group 18-19</p>
+</dd>
+<dt>age2021</dt><dd><p>= 1 if in age group 20-21</p>
+</dd>
+<dt>age2224</dt><dd><p>= 1 if in age group 22-24</p>
+</dd>
+<dt>cage1415</dt><dd><p>= 1 if in age group 14-15 and lived near college</p>
+</dd>
+<dt>cage1617</dt><dd><p>= 1 = 1 if in age group 16-17 and lived near college</p>
+</dd>
+<dt>cage1819</dt><dd><p>= 1 if in age group 18-19 and lived near college</p>
+</dd>
+<dt>cage2021</dt><dd><p>= 1 if in age group 20-21 and lived near college</p>
+</dd>
+<dt>cage2224</dt><dd><p>= 1 if in age group 22-24 and lived near college</p>
+</dd>
+<dt>cage66</dt><dd><p>age in 1966 and lived near college</p>
+</dd>
+<dt>a1</dt><dd><p>= 1 if age in 1966 is 14</p>
+</dd>
+<dt>a2</dt><dd><p>= 1 if age in 1966 is 15</p>
+</dd>
+<dt>a3</dt><dd><p>= 1 if age in 1966 is 16</p>
+</dd>
+<dt>a4</dt><dd><p>= 1 if age in 1966 is 17</p>
+</dd>
+<dt>a5</dt><dd><p>= 1 if age in 1966 is 18</p>
+</dd>
+<dt>a6</dt><dd><p>= 1 if age in 1966 is 19</p>
+</dd>
+<dt>a7</dt><dd><p>= 1 if age in 1966 is 20</p>
+</dd>
+<dt>a8</dt><dd><p>= 1 if age in 1966 is 21</p>
+</dd>
+<dt>a9</dt><dd><p>= 1 if age in 1966 is 22</p>
+</dd>
+<dt>a10</dt><dd><p>= 1 if age in 1966 is 23</p>
+</dd>
+<dt>a11</dt><dd><p>= 1 if age in 1966 is 24</p>
+</dd>
+<dt>ca1</dt><dd><p>= 1 if did not live near college in 1966</p>
+</dd>
+<dt>ca2</dt><dd><p>= 1 if lived near college and age in 1966 = 14</p>
+</dd>
+<dt>ca3</dt><dd><p>= 1 if lived near college and age in 1966 = 15</p>
+</dd>
+<dt>ca4</dt><dd><p>= 1 if lived near college and age in 1966 = 16</p>
+</dd>
+<dt>ca5</dt><dd><p>= 1 if lived near college and age in 1966 = 17</p>
+</dd>
+<dt>ca6</dt><dd><p>= 1 if lived near college and age in 1966 = 18</p>
+</dd>
+<dt>ca7</dt><dd><p>= 1 if lived near college and age in 1966 = 19</p>
+</dd>
+<dt>ca8</dt><dd><p>= 1 if lived near college and age in 1966 = 20</p>
+</dd>
+<dt>ca9</dt><dd><p>= 1 if lived near college and age in 1966 = 21</p>
+</dd>
+<dt>ca10</dt><dd><p>= 1 if lived near college and age in 1966 = 22</p>
+</dd>
+<dt>ca11</dt><dd><p>= 1 if lived near college and age in 1966 = 23</p>
+</dd>
+<dt>ca12</dt><dd><p>= 1 if lived near college and age in 1966 = 24</p>
+</dd>
+<dt>g25</dt><dd><p>grade level when 25 years old</p>
+</dd>
+<dt>g25i</dt><dd><p>= 1 if =g25 and intrvwed in year used for determining g25</p>
+</dd>
+<dt>intmo66</dt><dd><p>interview month in 1966, used to identify cases incl by Card</p>
+</dd>
+<dt>nlsflt</dt><dd><p>flag to identify if the case was used by Card</p>
+</dd>
+<dt>nsib</dt><dd><p>number of siblings</p>
+</dd>
+<dt>ns1</dt><dd><p>= 1 if the person has no siblings</p>
+</dd>
+<dt>ns2</dt><dd><p>= 1 if number of siblings is 2</p>
+</dd>
+<dt>ns3</dt><dd><p>= 1 if number of siblings is 3</p>
+</dd>
+<dt>ns4</dt><dd><p>= 1 if number of siblings is 4</p>
+</dd>
+<dt>ns5</dt><dd><p>= 1 if number of siblings is 6</p>
+</dd>
+<dt>ns6</dt><dd><p>= 1 if number of siblings is 9</p>
+</dd>
+<dt>ns7</dt><dd><p>= 1 if number of siblings is 18</p>
+</dd>
+</dl>
+
+
+
+<h3>Section in Text</h3>
+
+<p>4.9.6 Instrumental Variables Application, pp. 110-2
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="http://cameron.econ.ucdavis.edu/mmabook/mmadata.html">http://cameron.econ.ucdavis.edu/mmabook/mmadata.html</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Cameron, A. and Trivedi, P. (2005), &quot;Microeconometrics: Methods and
+Applications,&quot; Cambridge University Press, New York.
+</p>
+<p>Card, D. (1995), &quot;Using Geographic Variation in College Proximity to
+Estimate the Returns to Schooling&quot;, in
+Aspects of Labor Market Behavior: Essays in Honor of John Vanderkamp,
+eds. L.N. Christofides et al., Toronto: University of Toronto Press, pp.201-221.
+</p>
+<p>Kling, J.R. (2001) &quot;Interpreting Instrumental Variables Estimates of
+the Return to Schooling,&quot; Journal of Business and Economic Statistics,
+19, 358-364.
+</p>
+<p><a href="https://www.nlsinfo.org/content/cohorts/older-and-young-men">https://www.nlsinfo.org/content/cohorts/older-and-young-men</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>summary(schooling)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

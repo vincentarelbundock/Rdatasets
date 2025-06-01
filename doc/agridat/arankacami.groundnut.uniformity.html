@@ -1,0 +1,93 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of groundnut</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>arankacami.groundnut.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of groundnut
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of groundnut
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("arankacami.groundnut.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 96 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, kg/plot</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The year of the experiment is unknown, but before 1995.
+</p>
+<p>Basic plot size is 0.75 m (rows) x  4 m (columns).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Ira Arankacami, R. Rangaswamy. (1995).
+A Text Book of Agricultural Statistics.
+New Age International Publishers.
+Table 19.1. Page 237.
+https://www.google.com/books/edition/A_Text_Book_of_Agricultural_Statistics/QDLWE4oakSgC
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+library(agridat)
+data(arankacami.groundnut.uniformity)
+dat &lt;- arankacami.groundnut.uniformity
+
+require(desplot)
+desplot(dat, yield ~ col*row,
+        flip=TRUE, aspect=(12*.75)/(8*4),
+        main="arankacami.groundnut.uniformity")
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html><html><head><title>R: Lower Paleolithic handaxes from Furze Platt, Maidenhead,...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Handaxes</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Lower Paleolithic handaxes from Furze Platt, Maidenhead, Berkshire, England
+</h2>
+
+<h3>Description</h3>
+
+<p>Handaxes from the Furze Platt site stored at the Royal Ontario Museum.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Handaxes)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 600 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt><code>Catalog</code></dt><dd><p>Specimen catalog number</p>
+</dd>
+<dt><code>L</code></dt><dd><p>Maximum Length</p>
+</dd>
+<dt><code>L1</code></dt><dd><p>Distance from the butt to the location of the maximum breadth measured along the length dimension</p>
+</dd>
+<dt><code>B</code></dt><dd><p>Maximum breadth</p>
+</dd>
+<dt><code>B1</code></dt><dd><p>Breadth measured at 1/5 of the length from the tip. Measured perpendicular to the length</p>
+</dd>
+<dt><code>B2</code></dt><dd><p>Breadth measured at 1/5 of the length from the butt. Measured perpendicular to the length</p>
+</dd>
+<dt><code>T</code></dt><dd><p>Maximum thickness, not necessarily measured at the maximum breadth</p>
+</dd>
+<dt><code>T1</code></dt><dd><p>Thickness measured at B1</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data consist of measurements on 600 handaxes from the Furze Platt site stored at the Royal Ontario Museum that were measured by William Fox. The measurements follow the system used by Derek Roe (Roe 1964, 1968, 1981). Fox's measurements were digitized by Tony Baker and uploaded to his website.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Fox, William and Tony Baker. 2006. Dimensions of 600 Acheulean Handaxes from Furze Platt, Maidenhead, Berkshire, England. Archived at <a href="https://web.archive.org/web/20080515113522/http://www.ele.net/acheulean/FPatROM.htm">https://web.archive.org/web/20080515113522/http://www.ele.net/acheulean/FPatROM.htm</a>. 11 Accessed January 2021.
+</p>
+
+
+<h3>References</h3>
+
+<p>Baker, Tony. 2006. The Acheulean Handaxe. Archived article available at <a href="https://web.archive.org/web/20080831233847/http://www.ele.net:80/acheulean/handaxe.htm">https://web.archive.org/web/20080831233847/http://www.ele.net:80/acheulean/handaxe.htm</a>. Accessed 11 January 2021.
+</p>
+<p>Carlson, David L. 2017. <em>Quantitative Methods in Archaeology Using R</em>. Cambridge University Press, pp 221-231, 269-277, 321-330.
+</p>
+<p>Fox, William. 1969. An Analysis of the R. O. M. Collection, Lower Paleolithic Implements: Furze Platt, Maidenhead, Berkshire, England. Unpublished paper and notes in the possession of the author.
+</p>
+<p>Roe, D. A. 1964. The British Lower and Middle Paleolithic: some problems, methods of study and preliminary results. <em>Proceedings of the Prehistoric Society</em> 30: 245&ndash;267.
+</p>
+<p>Roe, D. A. 1968. British Lower and Middle Paleolithic Handaxe groups. <em>Proceedings of the Prehistoric Society</em> 34: 1&ndash;82.
+</p>
+<p>Roe, D. A. 1981. <em>The Lower and Middle Paleolithic Periods in Britain</em>. Routledge.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Handaxes)
+summary(Handaxes)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

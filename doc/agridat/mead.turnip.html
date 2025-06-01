@@ -1,0 +1,105 @@
+<!DOCTYPE html><html><head><title>R: Density/spacing experiment for turnips in 3 blocks.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>mead.turnip</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Density/spacing experiment for turnips in 3 blocks.
+</h2>
+
+<h3>Description</h3>
+
+<p>Density/spacing experiment for turnips in 3 blocks.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("mead.turnip")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 60 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>yield</code></dt><dd><p>log yield (pounds/plot)</p>
+</dd>
+<dt><code>block</code></dt><dd><p>block</p>
+</dd>
+<dt><code>spacing</code></dt><dd><p>row spacing, inches</p>
+</dd>
+<dt><code>density</code></dt><dd><p>density of seeds, pounds/acre</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>An experiment with turnips, 3 blocks, 20 treatments in a factorial
+arrangement of 5 seeding rates (density) and 4 widths (spacing).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Roger Mead. (1988).
+<em>The Design of Experiments: Statistical Principles for Practical Applications</em>.
+Example 12.3. Page 323.
+</p>
+
+
+<h3>References</h3>
+
+<p>H. P. Piepho, R. N. Edmondson. (2018).
+A tutorial on the statistical analysis of factorial experiments
+with qualitative and quantitative treatment factor levels.
+Jour Agronomy and Crop Science, 8, 1-27.
+https://doi.org/10.1111/jac.12267
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(mead.turnip)
+dat &lt;- mead.turnip
+
+dat$ratef &lt;- factor(dat$density)
+dat$widthf &lt;- factor(dat$spacing)
+
+m1 &lt;- aov(yield ~ block + ratef + widthf + ratef:widthf, data=dat)
+anova(m1) # table 12.10 in Mead
+
+# Similar to Piepho fig 10
+libs(lattice)
+xyplot(yield ~ log(spacing)|ratef, data=dat,
+       auto.key=list(columns=5),
+       main="mead.turnip - log(yield) for each density",
+       group=ratef)
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

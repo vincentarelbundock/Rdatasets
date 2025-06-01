@@ -1,0 +1,108 @@
+<!DOCTYPE html><html><head><title>R: Early Stone Age Sites - Norway</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>ESASites</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Early Stone Age Sites - Norway
+</h2>
+
+<h3>Description</h3>
+
+<p>Data on 43 Early Stone Age assemblages in Norway come originally from Bølviken et al (1982).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("ESASites")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 43 observations on the following 16 variables.
+</p>
+
+<dl>
+<dt><code>TA</code></dt><dd><p>Tanged Arrows</p>
+</dd>
+<dt><code>BA</code></dt><dd><p>Blade Arrows</p>
+</dd>
+<dt><code>TOA</code></dt><dd><p>Transverse and Oblique Arrows</p>
+</dd>
+<dt><code>AA</code></dt><dd><p>Atypical Arrows</p>
+</dd>
+<dt><code>M</code></dt><dd><p>Microliths</p>
+</dd>
+<dt><code>FK</code></dt><dd><p>Flake Knives</p>
+</dd>
+<dt><code>BK</code></dt><dd><p>Blade Knives</p>
+</dd>
+<dt><code>NK</code></dt><dd><p>Notched Knives</p>
+</dd>
+<dt><code>CFS</code></dt><dd><p>Core and Flake Scrapers</p>
+</dd>
+<dt><code>BS</code></dt><dd><p>Blade Scrapers</p>
+</dd>
+<dt><code>DS</code></dt><dd><p>Disc Scrapers</p>
+</dd>
+<dt><code>Bu</code></dt><dd><p>Burins</p>
+</dd>
+<dt><code>Ax</code></dt><dd><p>Axes</p>
+</dd>
+<dt><code>Ch</code></dt><dd><p>Chisels</p>
+</dd>
+<dt><code>SAx</code></dt><dd><p>Slate Axes</p>
+</dd>
+<dt><code>Pf</code></dt><dd><p>Perforators</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data on 43 Early Stone Age (8000 - 4000 BCE) assemblages in Norway come originally from  Bølviken et al (1982). The data were scanned from Table A5 (Appendix A) in Baxter (1994).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Baxter, M. J. 1994. <em>Exploratory Multivariate Analysis in Archaeology</em>. Edinburgh University Press. Edinburgh.
+</p>
+<p>Bølviken, E., E. Helskog, K. Helskog, I. M. Holm-Olsen, L. Solheim, and R. Bertelsen. 1982. Correspondence Analysis: An Alternative to Principal Components. <em>World Archaeology</em> 14: 41-60.
+</p>
+
+
+<h3>References</h3>
+
+<p>Carlson, David L. 2017. <em>Quantitative Methods in Archaeology Using R</em>. Cambridge University Press, pp 398-410.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(ESASites)
+NS &lt;- rowSums(ESASites)
+NT &lt;- rowSums(ESASites &gt; 0)
+plot(NS, NT, xlab="Number of Artifacts", ylab="Number of Types", main="Early Stone Age Sites",
+    las=1)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

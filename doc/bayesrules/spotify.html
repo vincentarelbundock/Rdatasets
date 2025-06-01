@@ -1,0 +1,97 @@
+<!DOCTYPE html><html><head><title>R: Spotify Song Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>spotify</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Spotify Song Data</h2>
+
+<h3>Description</h3>
+
+<p>A sub-sample of the Spotify song data originally collected by Kaylin Pavlik (kaylinquest) and distributed through the R for Data Science TidyTuesday project.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>spotify
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 350 songs (or tracks) and 23 variables:
+</p>
+
+<dl>
+<dt>track_id</dt><dd><p>unique song identifier</p>
+</dd>
+<dt>title</dt><dd><p>song name</p>
+</dd>
+<dt>artist</dt><dd><p>song artist</p>
+</dd>
+<dt>popularity</dt><dd><p>song popularity from 0 (low) to 100 (high)</p>
+</dd>
+<dt>album_id</dt><dd><p>id of the album on which the song appears</p>
+</dd>
+<dt>album_name</dt><dd><p>name of the album on which the song appears</p>
+</dd>
+<dt>album_release_date</dt><dd><p>when the album was released</p>
+</dd>
+<dt>playlist_name</dt><dd><p>Spotify playlist on which the song appears</p>
+</dd>
+<dt>playlist_id</dt><dd><p>unique playlist identifier</p>
+</dd>
+<dt>genre</dt><dd><p>genre of the playlist</p>
+</dd>
+<dt>subgenre</dt><dd><p>subgenre of the playlist</p>
+</dd>
+<dt>danceability</dt><dd><p>a score from 0 (not danceable) to 100 (danceable) based on features such as tempo, rhythm, etc.</p>
+</dd>
+<dt>energy</dt><dd><p>a score from 0 (low energy) to 100 (high energy) based on features such as loudness, timbre, entropy, etc.</p>
+</dd>
+<dt>key</dt><dd><p>song key</p>
+</dd>
+<dt>loudness</dt><dd><p>song loudness (dB)</p>
+</dd>
+<dt>mode</dt><dd><p>0 (minor key) or 1 (major key)</p>
+</dd>
+<dt>speechiness</dt><dd><p>a score from 0 (non-speechy tracks) to 100 (speechy tracks)</p>
+</dd>
+<dt>acousticness</dt><dd><p>a score from 0 (not acoustic) to 100 (very acoustic)</p>
+</dd>
+<dt>instrumentalness</dt><dd><p>a score from 0 (not instrumental) to 100 (very instrumental)</p>
+</dd>
+<dt>liveness</dt><dd><p>a score from 0 (no live audience presence on the song) to 100 (strong live audience presence on the song)</p>
+</dd>
+<dt>valence</dt><dd><p>a score from 0 (the song is more negative, sad, angry) to 100 (the song is more positive, happy, euphoric)</p>
+</dd>
+<dt>tempo</dt><dd><p>song tempo (beats per minute)</p>
+</dd>
+<dt>duration_ms</dt><dd><p>song duration (ms)</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-01-21/spotify_songs.csv/">https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-01-21/spotify_songs.csv/</a>.
+</p>
+
+</main>
+
+</div>
+</body></html>

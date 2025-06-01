@@ -1,0 +1,119 @@
+<!DOCTYPE html><html><head><title>R: Diallel 6x6</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>grover.diallel</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Diallel 6x6
+</h2>
+
+<h3>Description</h3>
+
+<p>Diallel 6x6 in 4 blocks.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("grover.diallel")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 144 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>yield</code></dt><dd><p>yield value</p>
+</dd>
+<dt><code>rep</code></dt><dd><p>a character vector</p>
+</dd>
+<dt><code>parent1</code></dt><dd><p>a character vector</p>
+</dd>
+<dt><code>parent2</code></dt><dd><p>a character vector</p>
+</dd>
+<dt><code>cross</code></dt><dd><p>a character vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Yield for a 6x6 diallel with 4 reps.
+</p>
+<p>Note: The mean for the 2x2 cross is slightly different than Grover
+p. 252. There appears to be an unknown error in the one of the 4 reps
+in the data on page 250.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Grover, Deepak &amp; Lajpat Rai (2010).
+Experimental Designing And Data Analysis In Agriculture And Biology.
+Agrotech Publishing Academy. Page 85.
+https://archive.org/details/expldesnanddatanalinagblg00023
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  data(grover.diallel)
+  dat &lt;- grover.diallel
+
+  anova(aov(yield ~ rep + cross, data=dat))
+
+  # These effects match the GCA and SCA values in Grover table 3, page 253.
+  
+  libs(lmDiallel)
+  m2 &lt;- lm.diallel(yield ~ parent1 + parent2, Block=rep,
+                   data=dat, fct="GRIFFING1")
+  library(multcomp)
+  summary( glht(linfct=diallel.eff(m2), test=adjusted(type="none")) )
+  ## Linear Hypotheses:
+  ##                Estimate Std. Error t value Pr(&gt;|t|)    
+  ## Intercept == 0  93.0774     0.9050 102.851    &lt;0.01 ***
+  ## g_P1 == 0        1.4851     1.4309   1.038   1.0000    
+  ## g_P2 == 0       -0.9911     1.4309  -0.693   1.0000    
+  ## g_P3 == 0        2.2631     1.4309   1.582   0.9748    
+  ## g_P4 == 0        5.4247     1.4309   3.791   0.0302 *  
+  ## g_P5 == 0       -4.2490     1.4309  -2.969   0.1972    
+  ## g_P6 == 0       -3.9328     1.4309  -2.748   0.3008    
+  ## ts_P1:P1 == 0  -10.4026     4.5249  -2.299   0.6014    
+  ## ts_P1:P2 == 0   -9.7214     3.2629  -2.979   0.1933    
+  ## ts_P1:P3 == 0   -0.4581     3.2629  -0.140   1.0000    
+  ## ts_P1:P4 == 0   17.0428     3.2629   5.223    &lt;0.01 ***
+  ## ts_P1:P5 == 0   25.4765     3.2629   7.808    &lt;0.01 ***
+  ## ts_P1:P6 == 0  -21.9372     3.2629  -6.723    &lt;0.01 ***
+  ## ts_P2:P1 == 0   -9.7214     3.2629  -2.979   0.1928    
+  ## ts_P2:P2 == 0    7.0899     4.5249   1.567   0.9773    
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

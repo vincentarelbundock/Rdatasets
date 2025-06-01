@@ -1,0 +1,16 @@
+rownames,Outcomes,SE,Treat,Study,Treat.order
+1,-1.22,0.504,Placebo,1,Placebo
+2,-1.53,0.439,Ropinirole,1,Pramipexole
+3,-0.7,0.282,Placebo,2,Ropinirole
+4,-2.4,0.258,Pramipexole,2,Bromocriptine
+5,-0.3,0.505,Placebo,3,Cabergoline
+6,-2.6,0.51,Pramipexole,3,Placebo
+7,-1.2,0.478,Bromocriptine,3,Pramipexole
+8,-0.24,0.265,Ropinirole,4,Ropinirole
+9,-0.59,0.354,Bromocriptine,4,Bromocriptine
+10,-0.73,0.335,Ropinirole,5,Cabergoline
+11,-0.18,0.442,Bromocriptine,5,Placebo
+12,-2.2,0.197,Bromocriptine,6,Pramipexole
+13,-2.5,0.19,Cabergoline,6,Ropinirole
+14,-1.8,0.2,Bromocriptine,7,Bromocriptine
+15,-2.1,0.25,Cabergoline,7,Cabergoline

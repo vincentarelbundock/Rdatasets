@@ -1,0 +1,132 @@
+<!DOCTYPE html><html><head><title>R: Nonlinear maize yield-density model</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>carmer.density</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Nonlinear maize yield-density model
+</h2>
+
+<h3>Description</h3>
+
+<p>Nonlinear maize yield-density model.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 32 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>gen</code></dt><dd><p>genotype/hybrid, 8 levels</p>
+</dd>
+<dt><code>pop</code></dt><dd><p>population (plants)</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, pounds per hill</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Eight single-cross hybrids were in the experiment&ndash;Hy2xOh7 and WF9xC103 were
+included because it was believed they had optimum yields at relatively
+high and low populations.  Planted in 1963.  Plots were thinned to
+2, 4, 6, 8 plants per hill, giving densities 8, 16, 24, 32 thousand
+plants per acre.  Hills were in rows 40 inches apart.
+One hill = 1/4000 acre.
+Split-plot design with 5 reps, density is main plot and subplot was hybrid.
+</p>
+
+
+<h3>Source</h3>
+
+<p>S G Carmer and J A Jackobs (1965).
+An Exponential Model for Predicting Optimum Plant Density and Maximum
+Corn Yield. <em>Agronomy Journal</em>, 57, 241&ndash;244.
+https://doi.org/10.2134/agronj1965.00021962005700030003x
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(agridat)
+data(carmer.density)
+dat &lt;- carmer.density
+dat$gen &lt;- factor(dat$gen, levels=c('Hy2x0h7','WF9xC103','R61x187-2',
+                             'WF9x38-11','WF9xB14','C103xB14',
+                             '0h43xB37','WF9xH60'))
+
+# Separate analysis for each hybrid
+# Model: y = x * a * k^x.  Table 1 of Carmer and Jackobs.
+out &lt;- data.frame(a=rep(NA,8), k=NA)
+preds &lt;- NULL
+rownames(out) &lt;- levels(dat$gen)
+newdat &lt;- data.frame(pop=seq(2,8,by=.1))
+for(i in levels(dat$gen)){
+  print(i)
+  dati &lt;- subset(dat, gen==i)
+  mi &lt;- nls(yield ~ pop * a * k^pop, data=dati, start=list(a=10,k=1))
+  out[i, ] &lt;- mi$m$getPars()
+  # Predicted values
+  pi &lt;- cbind(gen=i, newdat, pred= predict(mi, newdat=newdat))
+  preds &lt;- rbind(preds, pi)
+}
+# Optimum plant density is -1/log(k)
+out$pop.opt &lt;- -1/log(out$k)
+round(out, 3)
+##               a     k pop.opt
+## Hy2x0h7   0.782 0.865   6.875
+## WF9xC103  1.039 0.825   5.192
+## R61x187-2 0.998 0.798   4.441
+## WF9x38-11 1.042 0.825   5.203
+## WF9xB14   1.067 0.806   4.647
+## C103xB14  0.813 0.860   6.653
+## 0h43xB37  0.673 0.862   6.740
+## WF9xH60   0.858 0.854   6.358
+
+
+# Fit an overall fixed-effect with random deviations for each hybrid.
+libs(nlme)
+m1 &lt;- nlme(yield ~ pop * a * k^pop,
+           fixed = a + k ~ 1,
+           random = a + k ~ 1|gen,
+           data=dat, start=c(a=10,k=1))
+# summary(m1) # Random effect for 'a' probably not needed
+
+
+libs(latticeExtra)
+# Plot Data, fixed-effect prediction, random-effect prediction.
+pdat &lt;- expand.grid(gen=levels(dat$gen), pop=seq(2,8,length=50))
+pdat$pred &lt;- predict(m1, pdat)
+pdat$predf &lt;- predict(m1, pdat, level=0)
+
+xyplot(yield~pop|gen, dat, pch=16, as.table=TRUE,
+       main="carmer.density models",
+       key=simpleKey(text=c("Data", "Fixed effect","Random effect"),
+         col=c("blue", "red","darkgreen"), columns=3, points=FALSE)) +
+  xyplot(predf~pop|gen, pdat, type='l', as.table=TRUE, col="red") +
+  xyplot(pred~pop|gen, pdat, type='l', col="darkgreen", lwd=2)
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

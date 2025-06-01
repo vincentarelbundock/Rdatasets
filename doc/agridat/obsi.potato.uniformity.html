@@ -1,0 +1,126 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of potato in Africa 2001</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>obsi.potato.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of potato in Africa 2001
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of potato in Africa in 2001
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("obsi.potato.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 2569 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>loc</code></dt><dd><p>location, 2 levels</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, kg/m^2</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data collected from potato uniformity trials at Hollota (L1) and Kulumsa (L2).
+Each field was 0.15 hectares.
+</p>
+<p>In each field, 75cm between rows and 60cm between plants. The basic
+units harvested were 1.2m x 1.5m. It is not clear which way the plots
+are oriented in the field with respect to the rows and columns.
+</p>
+<p>At location L1, plot (10,7) was 22.5 in the source document, but was
+changed to 2.25 for this electronic data.
+</p>
+<p>Hollota:
+</p>
+<p>Field width: 26 * 1.2 m
+</p>
+<p>Field length: 63 rows * 1.5 m
+</p>
+<p>Note the horizontal banding of 8 or 9 rows at location L1.
+</p>
+<p>Kulumsa
+</p>
+<p>Field width: 19 * 1.2 m
+</p>
+<p>Field length: 49 * 1.5 m
+</p>
+
+
+<h3>Source</h3>
+
+<p>Dechassa Obsi. 2008.
+Application of Spatial Modeling to the Study of Soil Fertility Pattern.
+MS Thesis, Addis Ababa University. Page 122-125.
+https://etd.aau.edu.et/handle/123456789/3221
+</p>
+
+
+<h3>References</h3>
+
+<p>None.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(obsi.potato.uniformity)
+dat &lt;- obsi.potato.uniformity
+
+  # Mean plot yield according to Obsi p. 54
+  # libs(dplyr)
+  # dat &lt;- group_by(dat, loc)
+  # summarize(dat, yield=mean(yield))
+  ##   loc   yield
+  ##   &lt;fct&gt; &lt;dbl&gt;
+  ## 1 L1     2.54 # Obsi says 2.55
+  ## 2 L2     5.31 # Obsi says 5.36
+
+libs(desplot)
+desplot(dat, yield ~ col*row, subset=loc=="L1",
+  main="obsi.potato.uniformity - loc L1",
+  flip=TRUE, tick=TRUE)
+desplot(dat, yield ~ col*row, subset=loc=="L2",
+  main="obsi.potato.uniformity - loc L2",
+  flip=TRUE, tick=TRUE)
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

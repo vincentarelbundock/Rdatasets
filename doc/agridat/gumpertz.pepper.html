@@ -1,0 +1,138 @@
+<!DOCTYPE html><html><head><title>R: Phytophtera disease incidence in a pepper field</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gumpertz.pepper</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Phytophtera disease incidence in a pepper field
+</h2>
+
+<h3>Description</h3>
+
+<p>Phytophtera disease incidence in a pepper field
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 800 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>field</code></dt><dd><p>field factor, 2 levels</p>
+</dd>
+<dt><code>row</code></dt><dd><p>x ordinate</p>
+</dd>
+<dt><code>quadrat</code></dt><dd><p>y ordinate</p>
+</dd>
+<dt><code>disease</code></dt><dd><p>presence (Y) or absence (N) of disease</p>
+</dd>
+<dt><code>water</code></dt><dd><p>soil moisture percent</p>
+</dd>
+<dt><code>leaf</code></dt><dd><p>leaf assay count</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Each field is 20 rows by 20 quadrates, with 2 to 3 bell pepper plants
+per plot.  If any plant was wilted, dead, or had lesions, the
+Phytophthora disease was considered to be present in the plot.  The
+soil pathogen load was assayed as the number of leaf disks colonized
+out of five.  In field 2, the pattern of disease presence appears to
+follow soil water content.  In field 1, no obvious trends were
+present.
+</p>
+<p>Gumpertz et al. model the presence of disease  using soil moisture and
+leaf assay as covariates, and using disease presence of neighboring
+plots as covariates in an autologistic model.
+</p>
+<p>Used with permission of Marcia Gumpertz.  Research funded by USDA.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Marcia L. Gumpertz; Jonathan M. Graham; Jean B. Ristaino (1997).
+Autologistic Model of Spatial Pattern of Phytophthora Epidemic
+in Bell Pepper: Effects of Soil Variables on Disease Presence.
+Journal of Agricultural, Biological, and Environmental
+Statistics, Vol. 2, No. 2., pp. 131-156.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+data(gumpertz.pepper)
+dat &lt;- gumpertz.pepper
+
+# Gumpertz deletes two outliers
+dat[ dat$field =="F1" &amp; dat$row==20 &amp; dat$quadrat==10, 'water'] &lt;- NA
+dat[ dat$field =="F2" &amp; dat$row==5 &amp; dat$quadrat==4, 'water'] &lt;- NA
+
+# Horizontal flip
+dat &lt;- transform(dat, row=21-row)
+
+# Disease presence.  Gumpertz fig 1a, 2a.
+libs(desplot)
+grays &lt;- colorRampPalette(c("#d9d9d9","#252525"))
+desplot(dat, disease ~ row*quadrat|field,
+        col.regions=c('white','black'), aspect=1, # uncertain aspect
+        main="gumpertz.pepper disease presence", )
+
+# Soil water.  Gumpertz fig 1b, 2b
+desplot(dat, water ~ row*quadrat|field,
+        col.regions=grays(5), aspect=1, # uncertain aspect
+        at=c(5,7.5,10,12.5,15,18),
+        main="gumpertz.pepper soil moisture")
+
+# Leaf assay.  Gumpertz fig 1c, 2c
+desplot(dat, leaf ~ row*quadrat|field,
+        col.regions=grays(6),
+        at=c(0,1,2,3,4,5,6)-.5, aspect=1, # uncertain aspect
+        main="gumpertz.pepper leaf assay", )
+
+
+# Use the inner 16x16 grid of plots in field 2
+dat2 &lt;- droplevels(subset(dat, field=="F2" &amp; !is.na(water) &amp;
+                          row &gt; 2 &amp; row &lt; 19 &amp; quadrat &gt; 2 &amp; quadrat &lt; 19))
+
+m21 &lt;- glm(disease ~ water + leaf, data=dat2, family=binomial)
+coef(m21) # These match Gumpertz et al table 4, model 1
+## (Intercept)       water        leaf
+##  -9.1019623   0.7059993   0.4603931
+dat2$res21 &lt;- resid(m21)
+if(0){
+  libs(desplot)
+  desplot(dat2, res21 ~ row*quadrat,
+          main="gumpertz.pepper field 2, model 1 residuals")
+  # Still shows obvious trends.  Gumpertz et al add spatial covariates for
+  # neighboring plots, but with only minor improvement in misclassification
+}
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

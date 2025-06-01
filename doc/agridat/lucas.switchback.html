@@ -1,0 +1,122 @@
+<!DOCTYPE html><html><head><title>R: Switchback experiment on dairy cattle, milk yield for 3...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>lucas.switchback</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Switchback experiment on dairy cattle, milk yield for 3 treatments
+</h2>
+
+<h3>Description</h3>
+
+<p>Switchback experiment on dairy cattle, milk yield for 3 treatments
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("lucas.switchback")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 36 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>cow</code></dt><dd><p>cow factor, 12 levels</p>
+</dd>
+<dt><code>trt</code></dt><dd><p>treatment factor, 3 levels</p>
+</dd>
+<dt><code>period</code></dt><dd><p>period factor, 3 levels</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield (FCM = fat corrected milk), pounds/day</p>
+</dd>
+<dt><code>block</code></dt><dd><p>block factor</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Lucas says
+&quot;because no data from feeding trials employing the present designs are yet available, uniformity data will be used&quot;.
+</p>
+<p>Six cows were started together in block 1, then three cows in block 2
+and three cows in block 3.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Lucas, HL. 1956.
+Switchback trials for more than two treatments.
+Journal of Dairy Science, 39, 146-154.
+https://doi.org/10.3168/jds.S0022-0302(56)94721-X
+</p>
+
+
+<h3>References</h3>
+
+<p>Sanders, WL and Gaynor, PJ. 1987.
+Analysis of Switchback Data Using Statistical Analysis System.
+Journal of Dairy Science, 70, 2186-2191.
+https://doi.org/10.3168/jds.S0022-0302(87)80273-4
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+data(lucas.switchback)
+dat &lt;- lucas.switchback
+
+# Create a numeric period variable
+dat$per &lt;- as.numeric(substring(dat$period,2))
+
+libs(lattice)
+xyplot(yield ~ period|block, data=dat, group=cow, type=c('l','r'),
+       auto.key=list(columns=6),
+       main="lucas.switchback - (actually uniformity data)")
+
+# Need to use 'terms' to preserve the order of the model terms
+# Really, cow(block), per:cow(block), period(block)
+m1 &lt;- aov(terms(yield ~ block + cow:block + per:cow:block +
+                period:block + trt, keep.order=TRUE), data=dat)
+anova(m1) # Match Sanders &amp; Gaynor table 3
+## Analysis of Variance Table
+##               Df  Sum Sq Mean Sq F value    Pr(&gt;F)
+## block          2   30.93  15.464  55.345 5.132e-05 ***
+## block:cow      9 1700.97 188.997 676.426 1.907e-09 ***
+## block:cow:per 12  120.47  10.040  35.932 4.137e-05 ***
+## block:period   3   14.85   4.950  17.717  0.001194 **
+## trt            2    1.58   0.789   2.825  0.126048
+## Residuals      7    1.96   0.279
+
+coef(m1) # trtT2 and trtT3 match Sanders table 3 trt diffs
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

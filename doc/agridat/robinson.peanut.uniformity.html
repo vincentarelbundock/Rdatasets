@@ -1,0 +1,113 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of peanuts</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>robinson.peanut.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of peanuts
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of peanuts in North Carolina in 1939, 1940.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("robinson.peanut.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1152 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield in grams/plot</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Two crops of peanuts were grown in North Carolina in 1939 and 1940.
+A different field was used each year.
+</p>
+<p>A block of 36 rows 3 feet wide and 200 feet long were harvested in 12.5 foot lengths.
+</p>
+<p>Field length: 36 plots * 12.5 feet = 200 feet
+</p>
+<p>Field width: 16 plots * 3 feet = 48 feet
+</p>
+<p>Widening the plot was not as effective as increasing the plot length
+in order to reduce error. This agrees with the results of other
+uniformity studies.
+</p>
+<p>Assuming 30 percent of the total cost of an experiment is proportional
+to the size of the plots used, the optimum plot size is approximately
+3.2 units.
+</p>
+
+
+<h3>Source</h3>
+
+<p>H.F. Robinson and J.A.Rigney and P.H.Harvey (1948).
+Investigations In Peanut Plot Technique With Peanuts.
+Univ California Tech. Bul. No 86.
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+
+library(agridat)
+
+  data(robinson.peanut.uniformity)
+  dat &lt;- robinson.peanut.uniformity
+
+  # Mean yield per year. Robinson has 703.9, 787.3
+  # tapply(dat$yield, dat$year, mean)
+  #     1939     1940 
+  # 703.7847 787.8125 
+  
+  libs(desplot)
+  desplot(dat, yield ~ col*row|year,
+          flip=TRUE, tick=TRUE, aspect=200/48,
+          main="robinson.peanut.uniformity")
+  
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>
