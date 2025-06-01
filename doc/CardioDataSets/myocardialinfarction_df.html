@@ -1,0 +1,78 @@
+<!DOCTYPE html><html><head><title>R: Streptokinase Therapy in AMI</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>myocardialinfarction_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Streptokinase Therapy in AMI</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, myocardialinfarction_df, is a data frame containing information from 33 clinical trials
+comparing intravenous streptokinase versus placebo or no therapy in patients hospitalized for
+acute myocardial infarction. It includes data on treatment outcomes between intervention and control groups.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(myocardialinfarction_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 33 observations and 6 variables:
+</p>
+
+<dl>
+<dt>trial</dt><dd><p>Trial identifier (character vector)</p>
+</dd>
+<dt>year</dt><dd><p>Year of publication (integer vector)</p>
+</dd>
+<dt>ai</dt><dd><p>Number of events in treatment group (integer vector)</p>
+</dd>
+<dt>n1i</dt><dd><p>Total number of participants in treatment group (integer vector)</p>
+</dd>
+<dt>ci</dt><dd><p>Number of events in control group (integer vector)</p>
+</dd>
+<dt>n2i</dt><dd><p>Total number of participants in control group (integer vector)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'myocardialinfarction_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+CardioDataSets package and assists users in identifying its specific characteristics.
+The suffix 'df' indicates that the dataset is a standard data frame. The original content has not been modified
+in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the metadat package version 1.2-0. Original publication:
+Lau J, Antman EM, Jimenez-Silva J, Kupelnick B, Mosteller F, Chalmers TC (1992).
+&quot;Cumulative meta-analysis of therapeutic trials for myocardial infarction.&quot;
+New England Journal of Medicine, 327(4):248-254.
+</p>
+
+</main>
+
+</div>
+</body></html>

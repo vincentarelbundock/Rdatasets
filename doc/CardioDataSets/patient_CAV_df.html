@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><title>R: CAV in Heart Transplant Patients</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>patient_CAV_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>CAV in Heart Transplant Patients</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, patient_CAV_df, is a data frame containing longitudinal follow-up data
+from heart transplant recipients at Papworth Hospital, UK. It tracks 2,803 angiographic
+examinations for the onset of cardiac allograft vasculopathy and mortality.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(patient_CAV_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 2,803 observations and 5 variables:
+</p>
+
+<dl>
+<dt>PTNUM</dt><dd><p>Patient identification number (integer)</p>
+</dd>
+<dt>years</dt><dd><p>Time since transplant in years (numeric)</p>
+</dd>
+<dt>state</dt><dd><p>Disease state (numeric)</p>
+</dd>
+<dt>dage</dt><dd><p>Donor age in years (integer)</p>
+</dd>
+<dt>pdiag</dt><dd><p>Primary diagnosis code (numeric)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'patient_CAV_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+CardioDataSets package and assists users in identifying its specific characteristics.
+The suffix 'df' indicates that the dataset is a standard data frame. The original content has not been modified
+in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the flexmsm package version 0.1.2. Original data:
+Papworth Hospital, UK. Subset of cav data from msm package.
+</p>
+
+</main>
+
+</div>
+</body></html>

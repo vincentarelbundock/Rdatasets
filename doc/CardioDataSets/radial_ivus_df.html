@@ -1,0 +1,94 @@
+<!DOCTYPE html><html><head><title>R: Radial Artery IVUS Patient Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>radial_ivus_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Radial Artery IVUS Patient Data</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, radial_ivus_df, is a data frame containing demographic and clinical
+data from 115 patients who underwent intravascular ultrasound (IVUS) examination
+of the radial artery following transradial coronary angiography. It includes 15
+variables covering patient characteristics, laboratory results, and IVUS measurements.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(radial_ivus_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 115 observations and 15 variables:
+</p>
+
+<dl>
+<dt>male</dt><dd><p>Male sex indicator (integer: 0/1)</p>
+</dd>
+<dt>age</dt><dd><p>Age in years (integer)</p>
+</dd>
+<dt>height</dt><dd><p>Height in cm (numeric)</p>
+</dd>
+<dt>weight</dt><dd><p>Weight in kg (numeric)</p>
+</dd>
+<dt>HBP</dt><dd><p>High blood pressure status (integer: 0/1)</p>
+</dd>
+<dt>DM</dt><dd><p>Diabetes mellitus status (integer: 0/1)</p>
+</dd>
+<dt>smoking</dt><dd><p>Smoking status (factor with 3 levels)</p>
+</dd>
+<dt>TC</dt><dd><p>Total cholesterol in mg/dL (integer)</p>
+</dd>
+<dt>TG</dt><dd><p>Triglycerides in mg/dL (integer)</p>
+</dd>
+<dt>HDL</dt><dd><p>HDL cholesterol in mg/dL (integer)</p>
+</dd>
+<dt>LDL</dt><dd><p>LDL cholesterol in mg/dL (integer)</p>
+</dd>
+<dt>hsCRP</dt><dd><p>High-sensitivity C-reactive protein in mg/L (numeric)</p>
+</dd>
+<dt>NTAV</dt><dd><p>Normalized total atheroma volume (numeric)</p>
+</dd>
+<dt>PAV</dt><dd><p>Percent atheroma volume (numeric)</p>
+</dd>
+<dt>sex</dt><dd><p>Sex (factor with 2 levels)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'radial_ivus_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+CardioDataSets package and assists users in identifying its specific characteristics.
+The suffix 'df' indicates that the dataset is a standard data frame. The original content has not been modified
+in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the moonBook package version 0.3.1
+</p>
+
+</main>
+
+</div>
+</body></html>

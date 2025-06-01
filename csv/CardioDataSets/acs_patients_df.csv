@@ -1,0 +1,858 @@
+rownames,age,sex,cardiogenicShock,entry,Dx,EF,height,weight,BMI,obesity,TC,LDLC,HDLC,TG,DM,HBP,smoking
+1,62,Male,No,Femoral,STEMI,18,168,72,25.51020408,Yes,215,154,35,155,Yes,No,Smoker
+2,78,Female,No,Femoral,STEMI,18.4,148,48,21.9138057,No,,,,166,No,Yes,Never
+3,76,Female,Yes,Femoral,STEMI,20,,,,No,,,,,No,Yes,Never
+4,89,Female,No,Femoral,STEMI,21.8,165,50,18.36547291,No,121,73,20,89,No,No,Never
+5,56,Male,No,Radial,NSTEMI,21.8,162,64,24.38652644,No,195,151,36,63,Yes,Yes,Smoker
+6,73,Female,No,Radial,Unstable Angina,22,153,59,25.20398137,Yes,184,112,38,137,Yes,Yes,Never
+7,58,Male,No,Radial,Unstable Angina,24.7,167,78,27.96801606,Yes,161,91,34,196,Yes,Yes,Ex-smoker
+8,62,Male,No,Femoral,STEMI,26.6,160,50,19.53125,No,136,88,33,30,Yes,Yes,Ex-smoker
+9,59,Female,No,Radial,Unstable Angina,28.5,152,67,28.99930748,Yes,239,161,34,118,Yes,Yes,Never
+10,71,Male,No,Femoral,STEMI,31.1,168,60,21.2585034,No,169,88,54,141,Yes,No,Smoker
+11,52,Male,No,Radial,Unstable Angina,31.1,175,60,19.59183673,No,272,212,32,52,Yes,No,Ex-smoker
+12,52,Female,No,Radial,Unstable Angina,31.1,156,63,25.88757396,Yes,184,123,43,72,Yes,Yes,Never
+13,66,Male,No,Femoral,Unstable Angina,31.5,164,64,23.7953599,No,239,150,42,156,Yes,Yes,Never
+14,64,Female,No,Femoral,STEMI,31.9,150,51,22.66666667,No,171,94,46,120,Yes,No,Never
+15,62,Female,No,Femoral,STEMI,32,158,49,19.6282647,No,130,78,31,139,No,No,Ex-smoker
+16,42,Female,No,Radial,STEMI,32,,,,No,179,94,60,132,No,No,Smoker
+17,65,Male,No,Radial,Unstable Angina,32,152,54,23.37257618,No,169,114,35,63,Yes,Yes,Smoker
+18,64,Male,No,Radial,STEMI,33.1,,,,No,198,152,44,156,Yes,No,Never
+19,63,Male,Yes,Radial,STEMI,33.3,175,71,23.18367347,No,173,107,32,115,No,Yes,Smoker
+20,30,Male,No,Femoral,STEMI,34,148,80,36.5230095,Yes,201,122,42,77,No,No,Ex-smoker
+21,60,Male,No,Radial,Unstable Angina,34.3,173,68,22.72043837,No,125,53,55,30,Yes,Yes,Smoker
+22,81,Male,No,Femoral,NSTEMI,34.4,162,51,19.43301326,No,108,57,41,30,No,Yes,Smoker
+23,49,Male,No,Femoral,Unstable Angina,34.4,165,67,24.6097337,No,151,87,40,117,No,No,Ex-smoker
+24,72,Female,No,Femoral,STEMI,34.5,145,50,23.78121284,No,233,139,44,95,No,Yes,Never
+25,63,Male,Yes,Femoral,STEMI,34.6,170,70,24.22145329,No,164,114,35,66,No,No,Smoker
+26,72,Female,No,Femoral,Unstable Angina,34.6,155,45,18.73048907,No,174,86,37,183,Yes,Yes,Never
+27,64,Male,Yes,Radial,STEMI,35,165,63,23.14049587,No,225,151,32,148,No,No,Smoker
+28,64,Male,No,Femoral,STEMI,35.4,167,65,23.30668005,No,148,94,37,56,Yes,Yes,Smoker
+29,66,Male,No,Femoral,Unstable Angina,35.4,160,60,23.4375,No,,,,,Yes,Yes,Never
+30,47,Male,Yes,Femoral,STEMI,35.5,179,68,21.22280828,No,208,152,36,47,Yes,No,Smoker
+31,46,Female,No,Femoral,STEMI,35.6,155,48,19.97918835,No,188,118,53,52,No,No,Smoker
+32,55,Male,Yes,Femoral,NSTEMI,35.7,165,63,23.14049587,No,185,92,66,71,Yes,Yes,Never
+33,73,Male,No,Radial,NSTEMI,35.9,160,70,27.34375,Yes,214,145,45,99,No,Yes,Ex-smoker
+34,59,Male,No,Radial,NSTEMI,36.5,175,62,20.24489796,No,181,120,41,76,Yes,Yes,Smoker
+35,79,Female,No,Radial,Unstable Angina,36.5,140,50,25.51020408,Yes,159,89,31,115,No,Yes,Smoker
+36,80,Male,No,Radial,STEMI,36.6,162,54,20.57613169,No,127,61,33,76,No,No,Ex-smoker
+37,76,Female,No,Radial,NSTEMI,36.8,153,50,21.35930625,No,212,147,48,83,No,No,Never
+38,73,Male,No,Femoral,NSTEMI,37,162,53,20.19509221,No,250,162,68,95,No,No,Ex-smoker
+39,61,Female,No,Femoral,Unstable Angina,37,156,44,18.08021039,No,132,74,29,156,No,No,Never
+40,58,Male,Yes,Radial,STEMI,37.3,168,74,26.21882086,Yes,195,125,48,89,Yes,Yes,Never
+41,58,Male,No,Femoral,STEMI,37.5,165,85,31.22130395,Yes,272,196,56,58,No,Yes,Smoker
+42,72,Female,No,Radial,NSTEMI,37.5,150,70,31.11111111,Yes,131,86,21,102,Yes,Yes,Never
+43,57,Male,No,Femoral,NSTEMI,37.9,168,70,24.8015873,No,105,265,35,126,Yes,No,Smoker
+44,66,Male,No,Radial,Unstable Angina,38,165,69,25.34435262,Yes,140,77,45,122,Yes,Yes,Never
+45,71,Male,No,Radial,Unstable Angina,38,170,69,23.87543253,No,133,82,21,92,No,Yes,Ex-smoker
+46,65,Female,No,Femoral,STEMI,38.4,162,67,25.52964487,Yes,198,133,42,54,No,Yes,Never
+47,53,Male,No,Radial,Unstable Angina,38.4,163,68,25.59373706,Yes,276,169,33,233,Yes,Yes,Smoker
+48,61,Female,No,Femoral,NSTEMI,38.5,148,64,29.2184076,Yes,117,60,24,160,Yes,Yes,Never
+49,77,Male,No,Radial,STEMI,38.8,160,54,21.09375,No,86,42,19,78,No,Yes,Ex-smoker
+50,82,Male,No,Femoral,STEMI,39,164,50,18.590124930000002,No,159,64,62,29,No,Yes,Never
+51,65,Male,Yes,Radial,STEMI,39,163,58,21.8299522,No,223,89,31,416,Yes,Yes,Smoker
+52,61,Male,No,Femoral,STEMI,39.4,168,56,19.84126984,No,165,112,42,107,No,Yes,Never
+53,39,Male,No,Radial,STEMI,40,169,93,32.56188509,Yes,208,140,25,243,No,No,Smoker
+54,49,Male,No,Radial,STEMI,40,178,80,25.2493372,Yes,195,147,37,88,No,No,Smoker
+55,67,Male,No,Femoral,NSTEMI,40,165,62,22.77318641,No,134,82,40,67,Yes,Yes,Never
+56,76,Male,No,Radial,STEMI,40.2,165,75,27.54820937,Yes,194,147,30,60,No,Yes,Never
+57,79,Female,No,Radial,NSTEMI,40.2,155,60,24.97398543,No,187,108,35,209,Yes,Yes,Never
+58,63,Male,No,Radial,Unstable Angina,40.2,168,62,21.96712018,No,164,103,34,101,No,No,Smoker
+59,74,Female,Yes,Femoral,STEMI,40.4,150,55,24.44444444,No,176,79,54,134,Yes,Yes,Never
+60,67,Male,No,Femoral,STEMI,40.5,165,75,27.54820937,Yes,186,133,47,67,No,Yes,Smoker
+61,57,Male,No,Femoral,STEMI,40.6,167,58,20.79672989,No,125,27,75,37,No,No,Never
+62,59,Male,No,Radial,STEMI,40.9,172,65,21.97133586,No,165,110,45,29,No,No,Smoker
+63,76,Male,No,Radial,STEMI,41,158,67,26.83864765,Yes,223,143,48,115,Yes,No,Smoker
+64,55,Male,No,Radial,STEMI,41.3,170,75,25.95155709,Yes,140,89,28,85,Yes,Yes,Smoker
+65,80,Female,No,Femoral,STEMI,41.5,157,48,19.47340663,No,212,125,48,88,No,No,Never
+66,88,Female,No,Radial,NSTEMI,41.7,155,53,22.0603538,No,189,107,49,89,No,No,Never
+67,75,Female,No,Femoral,STEMI,41.8,160,70,27.34375,Yes,174,127,21,177,Yes,Yes,Never
+68,72,Male,No,Radial,STEMI,42,168,64,22.67573696,No,154,81,31,36,Yes,Yes,Smoker
+69,52,Male,No,Femoral,Unstable Angina,42,170,78,26.98961938,Yes,231,167,41,90,No,No,Ex-smoker
+70,49,Male,No,Radial,STEMI,42.1,167,69,24.74093729,No,309,222,48,182,No,No,Never
+71,78,Male,No,Femoral,NSTEMI,42.1,158,50,20.02884153,No,175,95,46,37,No,Yes,Ex-smoker
+72,61,Female,No,Femoral,Unstable Angina,42.1,148,62,28.30533236,Yes,231,,27,389,No,Yes,Ex-smoker
+73,67,Female,No,Radial,NSTEMI,42.2,153,43,18.36900337,No,208,154,37,112,Yes,No,Never
+74,54,Male,No,Radial,NSTEMI,42.4,168,63,22.32142857,No,221,155,56,58,No,No,Smoker
+75,76,Female,No,Radial,NSTEMI,42.5,163,55,20.70081674,No,154,87,48,67,No,Yes,Never
+76,52,Male,No,Radial,STEMI,42.5,160,55,21.484375,No,221,166,51,71,No,No,Smoker
+77,65,Male,No,Femoral,STEMI,42.6,168,59,20.90419501,No,221,147,47,127,No,Yes,Smoker
+78,64,Male,No,Radial,STEMI,42.7,164,65,24.1671624,No,152,114,16,16,No,No,Ex-smoker
+79,85,Male,No,Femoral,NSTEMI,42.7,165,60,22.03856749,No,127,70,42,61,No,Yes,Ex-smoker
+80,75,Female,No,Radial,STEMI,42.8,156,46,18.90203813,No,126,71,27,84,Yes,Yes,Never
+81,78,Female,No,Radial,STEMI,42.9,158,57,22.83287935,No,166,112,38,76,No,Yes,Never
+82,81,Male,No,Femoral,Unstable Angina,43,166,59,21.41094498,No,126,72,24,94,No,Yes,Never
+83,74,Female,No,Radial,Unstable Angina,43,150,51,22.66666667,No,195,131,36,140,Yes,Yes,Never
+84,58,Male,Yes,Femoral,STEMI,43.2,178,80,25.2493372,Yes,174,115,19,151,Yes,No,Smoker
+85,63,Female,No,Femoral,STEMI,43.2,149,40,18.01720643,No,99,68,24,82,No,No,Never
+86,72,Female,No,Femoral,Unstable Angina,43.2,160,62,24.21875,No,178,92,68,42,No,Yes,Never
+87,77,Male,No,Radial,STEMI,43.3,163,60,22.58270917,No,,,,50,Yes,No,Ex-smoker
+88,77,Male,No,Radial,NSTEMI,44,168,65,23.03004535,No,185,141,26,96,No,No,Smoker
+89,67,Male,No,Radial,STEMI,44,,,,No,188,125,38,148,Yes,Yes,Never
+90,53,Male,No,Radial,STEMI,44,168,75,26.57312925,Yes,248,155,40,138,No,No,Smoker
+91,63,Female,No,Radial,STEMI,44,150,55,24.44444444,No,246,141,7,70,Yes,Yes,Ex-smoker
+92,54,Male,No,Radial,STEMI,44.1,176,78,25.18078512,Yes,231,95,58,93,No,Yes,Ex-smoker
+93,79,Female,No,Radial,NSTEMI,44.1,160,65,25.390625,Yes,160,100,31,119,Yes,Yes,Never
+94,50,Male,No,Radial,STEMI,44.2,175,70,22.85714286,No,202,34,14,106,No,No,Smoker
+95,75,Male,No,Radial,NSTEMI,44.3,168,60,21.2585034,No,140,85,25,142,No,Yes,Smoker
+96,57,Male,No,Radial,STEMI,44.5,177,72,22.98190175,No,196,96,28,446,No,No,Smoker
+97,69,Male,No,Femoral,NSTEMI,44.6,163,56,21.07719523,No,225,64,77,91,No,Yes,Smoker
+98,55,Male,No,Radial,Unstable Angina,44.8,162,58,22.10028959,No,258,195,41,97,Yes,No,Smoker
+99,79,Male,No,Femoral,NSTEMI,44.9,172,60,20.2812331,No,173,123,28,76,No,Yes,Ex-smoker
+100,70,Male,No,Femoral,STEMI,45,165,60,22.03856749,No,227,154,35,108,Yes,Yes,Never
+101,73,Male,No,Femoral,STEMI,45,168,47,16.65249433,No,154,102,37,44,No,No,Smoker
+102,70,Male,Yes,Femoral,STEMI,45,,,,No,130,56,53,38,No,No,Smoker
+103,82,Female,No,Radial,Unstable Angina,45,150,55,24.44444444,No,141,65,38,44,No,Yes,Ex-smoker
+104,44,Male,No,Femoral,Unstable Angina,45.1,180,80,24.69135802,No,103,52,31,68,Yes,Yes,Smoker
+105,61,Male,No,Femoral,STEMI,45.3,162,58,22.10028959,No,251,161,55,109,Yes,Yes,Never
+106,80,Female,No,Femoral,STEMI,45.4,150,65,28.88888889,Yes,88,29,38,80,No,Yes,Never
+107,70,Female,No,Radial,STEMI,45.4,160,60,23.4375,No,89,36,34,120,No,Yes,Never
+108,77,Male,Yes,Femoral,STEMI,45.5,,,,No,139,70,47,28,Yes,Yes,Ex-smoker
+109,65,Male,No,Radial,STEMI,45.6,167,62,22.23098713,No,178,131,45,27,No,Yes,Ex-smoker
+110,68,Male,No,Femoral,NSTEMI,45.6,177,79,25.21625331,Yes,139,90,38,74,No,Yes,Ex-smoker
+111,70,Male,No,Radial,NSTEMI,45.7,151,50,21.92886277,No,164,102,35,92,No,No,Smoker
+112,65,Male,No,Radial,Unstable Angina,45.8,162,65,24.76756592,No,209,140,36,212,Yes,Yes,Ex-smoker
+113,51,Male,No,Radial,Unstable Angina,45.9,165,59,21.67125803,No,234,153,56,109,No,No,Smoker
+114,66,Male,Yes,Femoral,STEMI,46,168,58,20.54988662,No,126,63,48,62,Yes,Yes,Ex-smoker
+115,53,Male,No,Radial,NSTEMI,46,170,72,24.91349481,No,,,,,Yes,Yes,Ex-smoker
+116,56,Male,No,Radial,STEMI,46.1,167,74,26.53375883,Yes,164,111,38,91,Yes,Yes,Smoker
+117,74,Female,Yes,Femoral,STEMI,46.2,,,,No,153,80,46,73,Yes,Yes,Never
+118,78,Female,No,Femoral,NSTEMI,46.4,157,60,24.34175829,No,174,103,10,129,No,Yes,Ex-smoker
+119,49,Male,No,Radial,NSTEMI,46.5,162,66,25.1486054,Yes,179,119,31,120,No,Yes,Never
+120,84,Female,No,Radial,Unstable Angina,46.6,160,60,23.4375,No,25,96,10,26,No,No,Smoker
+121,81,Male,No,Femoral,NSTEMI,46.8,165,65,23.87511478,No,164,109,33,40,No,Yes,Smoker
+122,53,Male,No,Femoral,NSTEMI,46.9,165,71,26.07897153,Yes,184,124,29,414,Yes,No,Smoker
+123,77,Male,No,Radial,STEMI,47,155,60,24.97398543,No,180,132,40,60,Yes,Yes,Ex-smoker
+124,81,Male,No,Radial,STEMI,47,166,68,24.67702134,No,278,188,37,146,Yes,Yes,Ex-smoker
+125,69,Male,No,Radial,STEMI,47,175,60,19.59183673,No,143,91,33,50,No,No,Smoker
+126,48,Female,Yes,Femoral,STEMI,47,160,60,23.4375,No,222,161,40,118,No,No,Never
+127,76,Male,No,Radial,Unstable Angina,47,163,62,23.33546614,No,160,81,41,166,No,No,Ex-smoker
+128,41,Male,No,Radial,STEMI,47.1,170,73,25.25951557,Yes,258,189,36,66,Yes,No,Smoker
+129,68,Male,No,Radial,STEMI,47.2,170,60,20.76124567,No,221,108,44,178,Yes,Yes,Never
+130,55,Male,No,Radial,STEMI,47.2,163,56,21.07719523,No,277,194,40,154,No,Yes,Smoker
+131,80,Female,No,Radial,NSTEMI,47.3,156.5,67.2,27.43725056,Yes,212,128,50,45,No,Yes,Never
+132,81,Male,No,Radial,Unstable Angina,47.3,150,50,22.22222222,No,151,96,43,39,No,No,Smoker
+133,80,Female,No,Radial,STEMI,47.3,156,67.2,27.61341223,Yes,165,105,39,85,No,Yes,Never
+134,61,Male,No,Radial,STEMI,47.4,179,76,23.71960925,No,172,116,35,58,Yes,No,Ex-smoker
+135,66,Male,No,Femoral,NSTEMI,47.6,158,50,20.02884153,No,166,98,39,113,Yes,No,Smoker
+136,48,Male,No,Radial,STEMI,47.6,,,,No,208,130,48,101,Yes,No,Smoker
+137,64,Male,No,Femoral,STEMI,47.8,174,70,23.1206236,No,210,153,44,54,No,No,Never
+138,62,Male,No,Radial,STEMI,48,167,85,30.47796622,Yes,197,131,42,143,No,Yes,Smoker
+139,72,Female,No,Femoral,STEMI,48.1,163,55,20.70081674,No,148,84,37,103,No,Yes,Never
+140,72,Female,No,Femoral,STEMI,48.1,160,58,22.65625,No,159,91,45,67,No,Yes,Never
+141,74,Female,No,Femoral,NSTEMI,48.1,155,56,23.30905307,No,315,205,75,80,Yes,Yes,Never
+142,53,Female,No,Radial,NSTEMI,48.1,160,63,24.609375,No,210,167,27,130,No,No,Smoker
+143,51,Male,No,Radial,STEMI,48.2,178,70,22.09317005,No,160,112,32,142,No,No,Never
+144,47,Male,No,Radial,STEMI,48.2,175,80,26.12244898,Yes,208,151,41,224,No,Yes,Smoker
+145,69,Female,No,Radial,NSTEMI,48.2,155,55,22.89281998,No,165,83,50,63,Yes,No,Never
+146,48,Male,No,Radial,STEMI,48.3,170,68,23.52941176,No,181,113,38,33,No,No,Smoker
+147,58,Male,No,Radial,NSTEMI,48.3,168,76,26.92743764,Yes,199,132,38,211,No,No,Ex-smoker
+148,74,Male,No,Femoral,NSTEMI,48.6,169,72,25.20920136,Yes,207,146,30,101,Yes,No,Ex-smoker
+149,75,Male,No,Radial,NSTEMI,48.6,160,58,22.65625,No,143,94,24,92,No,Yes,Ex-smoker
+150,58,Male,No,Radial,STEMI,48.7,168,60,21.2585034,No,195,144,30,66,No,Yes,Smoker
+151,64,Male,No,Femoral,STEMI,48.8,162,72,27.43484225,Yes,185,91,68,78,No,Yes,Ex-smoker
+152,70,Male,No,Radial,STEMI,48.8,176,77,24.85795455,No,145,98,36,38,No,No,Never
+153,69,Female,No,Radial,STEMI,48.9,153,63,26.91272587,Yes,205,112,44,75,Yes,No,Smoker
+154,61,Male,No,Radial,STEMI,48.9,167,60,21.51385851,No,201,76,31,55,Yes,No,Never
+155,38,Male,No,Radial,Unstable Angina,48.9,166,95,34.4752504,Yes,116,47,50,129,Yes,Yes,Smoker
+156,44,Male,No,Radial,STEMI,49,179,93,29.02531132,Yes,134,71,39,96,Yes,No,Ex-smoker
+157,57,Male,No,Femoral,STEMI,49,163,63,23.71184463,No,205,136,48,117,No,No,Never
+158,56,Male,No,Radial,STEMI,49,170,68,23.52941176,No,239,15,41,78,Yes,Yes,Smoker
+159,80,Male,No,Radial,NSTEMI,49,170,62,21.4532872,No,169,108,44,55,No,Yes,Ex-smoker
+160,85,Female,No,Radial,Unstable Angina,49.1,149,51,22.9719382,No,139,76,33,76,No,Yes,Never
+161,56,Female,No,Femoral,NSTEMI,49.1,155,58,24.14151925,No,242,172,32,302,Yes,Yes,Never
+162,79,Male,No,Radial,Unstable Angina,49.1,168,70,24.8015873,No,,,,61,Yes,Yes,Smoker
+163,84,Female,No,Radial,NSTEMI,49.2,155,53,22.0603538,No,278,185,45,210,No,Yes,Never
+164,55,Male,No,Femoral,STEMI,49.3,168,48,17.00680272,No,113,79,14,47,No,No,Smoker
+165,55,Male,Yes,Femoral,STEMI,49.3,168,48,17.00680272,No,113,79,14,47,No,No,Smoker
+166,54,Male,No,Radial,STEMI,49.5,170,78,26.98961938,Yes,216,143,41,138,No,No,Ex-smoker
+167,78,Female,No,Femoral,STEMI,49.5,150,42,18.66666667,No,184,125,42,25,Yes,Yes,Never
+168,82,Female,No,Femoral,STEMI,49.7,150,42,18.66666667,No,123,71,27,73,No,No,Smoker
+169,66,Male,No,Femoral,STEMI,49.7,180,67,20.67901235,No,141,98,32,54,Yes,Yes,Ex-smoker
+170,71,Male,No,Femoral,NSTEMI,49.9,155,66,27.47138398,Yes,202,130,37,134,No,Yes,Ex-smoker
+171,52,Male,No,Radial,STEMI,50,173,70,23.38868656,No,202,157,45,40,No,No,Ex-smoker
+172,57,Male,No,Femoral,NSTEMI,50,175,84,27.42857143,Yes,180,107,42,130,No,Yes,Smoker
+173,82,Male,No,Femoral,NSTEMI,50,165,61,22.40587695,No,182,125,36,74,Yes,Yes,Ex-smoker
+174,76,Male,No,Femoral,Unstable Angina,50,160,56,21.875,No,228,181,29,66,No,Yes,Smoker
+175,49,Male,No,Femoral,STEMI,50.1,164,65,24.1671624,No,155,82,59,77,Yes,No,Ex-smoker
+176,62,Female,No,Radial,NSTEMI,50.1,150,46,20.44444444,No,153,101,32,113,Yes,Yes,Ex-smoker
+177,57,Male,No,Radial,STEMI,50.3,165,68,24.97704316,No,236,173,10,77,Yes,No,Smoker
+178,57,Male,No,Radial,NSTEMI,50.3,174,67,22.12973973,No,181,110,51,49,No,No,Ex-smoker
+179,81,Female,No,Radial,STEMI,50.4,164,50,18.590124930000002,No,168,107,41,69,No,No,Never
+180,53,Male,No,Radial,STEMI,50.4,176,74,23.88946281,No,245,166,50,128,No,No,Never
+181,72,Male,Yes,Femoral,STEMI,50.5,173,74,24.72518293,No,218,147,47,120,No,Yes,Ex-smoker
+182,78,Male,No,Radial,Unstable Angina,50.5,170,60,20.76124567,No,169,92,10,142,No,No,Ex-smoker
+183,53,Male,No,Radial,Unstable Angina,50.6,157,80,32.45567772,Yes,199,129,32,257,Yes,Yes,Smoker
+184,63,Female,No,Radial,STEMI,50.8,151,52,22.80601728,No,222,161,42,120,No,Yes,Ex-smoker
+185,74,Female,Yes,Radial,STEMI,51,149,50,22.52150804,No,203,141,38,57,Yes,No,Ex-smoker
+186,54,Male,No,Radial,STEMI,51,163,72,27.09925101,Yes,187,123,47,192,No,Yes,Smoker
+187,81,Female,No,Radial,STEMI,51.2,150,45,20,No,209,156,42,84,No,Yes,Never
+188,63,Female,No,Femoral,STEMI,51.3,156,61,25.06574622,Yes,190,128,43,126,No,Yes,Ex-smoker
+189,81,Female,No,Radial,Unstable Angina,51.3,145,45,21.40309156,No,256,166,8,64,No,Yes,Never
+190,67,Male,No,Femoral,STEMI,51.5,175,73,23.83673469,No,,,,,Yes,Yes,Smoker
+191,69,Female,No,Femoral,STEMI,51.5,158,55,22.03172568,No,152,79,51,108,No,No,Smoker
+192,58,Male,No,Femoral,STEMI,51.6,170,60,20.76124567,No,212,149,33,120,No,Yes,Smoker
+193,70,Female,No,Femoral,Unstable Angina,51.6,150,45,20,No,323,220,50,184,Yes,Yes,Never
+194,56,Male,No,Femoral,STEMI,51.7,172,80,27.04164413,Yes,192,136,32,106,Yes,Yes,Never
+195,63,Male,No,Femoral,STEMI,51.7,165,60,22.03856749,No,146,99,33,78,No,Yes,Ex-smoker
+196,54,Female,No,Radial,NSTEMI,51.7,154,66,27.82931354,Yes,227,132,47,111,Yes,Yes,Never
+197,77,Male,No,Radial,Unstable Angina,51.9,165,60,22.03856749,No,189,127,41,68,No,No,Smoker
+198,55,Male,No,Radial,STEMI,52,164,60,22.30814991,No,169,118,28,156,No,No,Smoker
+199,48,Male,No,Radial,STEMI,52,165,75,27.54820937,Yes,200,134,34,217,Yes,No,Smoker
+200,62,Male,No,Radial,STEMI,52,170,62,21.4532872,No,235,180,40,90,No,No,Ex-smoker
+201,65,Male,Yes,Radial,STEMI,52,160,65,25.390625,Yes,168,118,40,24,Yes,Yes,Smoker
+202,77,Male,No,Femoral,STEMI,52,172,53,17.91508924,No,168,111,36,76,No,Yes,Ex-smoker
+203,54,Male,No,Radial,STEMI,52,175,80,26.12244898,Yes,230,151,40,201,No,No,Smoker
+204,38,Male,No,Radial,STEMI,52.1,174,90,29.72651605,Yes,188,142,29,110,No,No,Smoker
+205,70,Female,No,Radial,Unstable Angina,52.2,141,63,31.68854685,Yes,152,93,29,135,No,Yes,Never
+206,49,Male,No,Radial,STEMI,52.4,177,86,27.45060487,Yes,193,141,30,203,No,No,Smoker
+207,69,Female,No,Radial,Unstable Angina,52.4,155,60,24.97398543,No,153,92,35,84,No,No,Never
+208,67,Male,No,Radial,Unstable Angina,52.4,160,50,19.53125,No,144,75,50,44,No,No,Smoker
+209,36,Male,No,Femoral,STEMI,52.5,184,76,22.44801512,No,215,159,30,164,No,No,Smoker
+210,70,Male,Yes,Radial,STEMI,52.6,165,60,22.03856749,No,143,91,39,44,Yes,Yes,Ex-smoker
+211,62,Male,No,Radial,STEMI,52.6,161,58,22.37567995,No,189,128,40,115,No,No,Smoker
+212,56,Male,No,Radial,STEMI,52.8,165,73,26.81359045,Yes,157,99,41,105,Yes,No,Never
+213,51,Male,No,Femoral,STEMI,52.8,176,72,23.24380165,No,183,120,11,71,No,No,Smoker
+214,64,Female,No,Femoral,NSTEMI,52.9,155,58,24.14151925,No,251,141,50,136,No,Yes,Ex-smoker
+215,75,Male,No,Radial,STEMI,53,170,55,19.03114187,No,184,129,32,101,No,Yes,Ex-smoker
+216,41,Male,No,Radial,Unstable Angina,53,171,86,29.41075887,Yes,33,103,10,110,No,No,Smoker
+217,53,Male,No,Radial,STEMI,53,165,70,25.71166208,Yes,208,148,28,38,No,No,Smoker
+218,78,Female,No,Femoral,STEMI,53,160,70,27.34375,Yes,246,163,53,80,No,Yes,Never
+219,51,Female,No,Radial,Unstable Angina,53,160,63,24.609375,No,184,130,39,65,No,Yes,Never
+220,75,Female,No,Radial,Unstable Angina,53,,,,No,196,147,29,133,No,Yes,Never
+221,66,Male,No,Femoral,Unstable Angina,53.2,164,54,20.07733492,No,96,60,24,80,Yes,Yes,Never
+222,68,Male,No,Femoral,STEMI,53.5,160,59,23.046875,No,226,162,45,55,No,Yes,Never
+223,61,Male,No,Femoral,STEMI,53.6,158,65,26.03749399,Yes,151,79,52,60,No,Yes,Ex-smoker
+224,59,Male,No,Radial,NSTEMI,53.6,165,68,24.97704316,No,155,74,43,109,Yes,No,Ex-smoker
+225,77,Female,No,Radial,NSTEMI,53.7,155,55,22.89281998,No,231,130,43,178,Yes,Yes,Never
+226,49,Female,No,Radial,STEMI,53.8,156,46,18.90203813,No,159,71,47,172,Yes,Yes,Never
+227,57,Male,No,Femoral,Unstable Angina,53.8,169,55,19.25702882,No,227,170,34,108,No,Yes,Smoker
+228,52,Male,No,Radial,STEMI,54,165,70,25.71166208,Yes,262,205,26,154,No,No,Smoker
+229,77,Female,No,Femoral,STEMI,54,160,58,22.65625,No,148,87,39,78,No,Yes,Ex-smoker
+230,56,Male,No,Radial,STEMI,54,169,70,24.50894577,No,166,119,33,83,No,Yes,Never
+231,46,Female,No,Radial,STEMI,54,158,57,22.83287935,No,289,224,44,81,Yes,No,Smoker
+232,71,Female,No,Femoral,Unstable Angina,54,140,47,23.97959184,No,203,157,39,79,Yes,Yes,Never
+233,62,Female,No,Femoral,Unstable Angina,54,161,66,25.46198063,Yes,128,74,35,75,No,No,Never
+234,41,Male,No,Radial,STEMI,54.2,178,72,22.72440348,No,147,77,42,71,No,No,Smoker
+235,69,Female,No,Radial,NSTEMI,54.2,155,45,18.73048907,No,,,,,Yes,No,Never
+236,56,Male,No,Radial,NSTEMI,54.2,170,71,24.56747405,No,200,166,38,176,No,Yes,Smoker
+237,70,Female,No,Radial,Unstable Angina,54.3,155,60,24.97398543,No,229,154,51,121,Yes,Yes,Never
+238,67,Female,No,Radial,STEMI,54.5,155,66,27.47138398,Yes,175,104,59,24,No,Yes,Ex-smoker
+239,70,Female,No,Radial,Unstable Angina,54.6,145,45,21.40309156,No,199,107,60,119,No,Yes,Never
+240,78,Male,No,Femoral,Unstable Angina,54.6,175,74,24.16326531,No,164,87,36,54,Yes,Yes,Ex-smoker
+241,87,Male,No,Radial,Unstable Angina,54.7,165,62,22.77318641,No,137,81,39,46,Yes,Yes,Ex-smoker
+242,81,Female,No,Radial,STEMI,54.8,160,58,22.65625,No,166,104,46,48,No,No,Ex-smoker
+243,88,Male,No,Femoral,Unstable Angina,54.8,,,,No,150,86,39,87,No,Yes,Ex-smoker
+244,56,Male,No,Radial,NSTEMI,54.8,170,76,26.29757785,Yes,222,149,36,135,No,No,Smoker
+245,78,Female,No,Femoral,Unstable Angina,54.8,151,60,26.31463532,Yes,163,90,41,177,No,No,Ex-smoker
+246,47,Male,No,Femoral,STEMI,54.9,178,68,21.46193662,No,190,129,29,118,No,No,Smoker
+247,60,Male,No,Radial,STEMI,54.9,183,83,24.78425752,No,150,79,47,174,Yes,No,Smoker
+248,69,Male,No,Femoral,Unstable Angina,54.9,164,87,32.34681737,Yes,144,98,37,62,Yes,Yes,Ex-smoker
+249,61,Male,No,Radial,STEMI,55,160,65,25.390625,Yes,217,170,33,49,No,No,Smoker
+250,52,Male,No,Radial,STEMI,55,177,85,27.13141179,Yes,214,132,43,194,Yes,No,Ex-smoker
+251,61,Male,No,Femoral,STEMI,55,170,74,25.60553633,Yes,143,83,20,163,No,No,Smoker
+252,58,Male,No,Femoral,STEMI,55,168,61,21.61281179,No,170,116,50,48,No,No,Smoker
+253,51,Male,No,Femoral,NSTEMI,55,160,81,31.640625,Yes,213,76,36,489,No,Yes,Smoker
+254,58,Male,No,Radial,NSTEMI,55,174,74,24.44180209,No,178,104,39,263,Yes,Yes,Smoker
+255,35,Male,No,Radial,Unstable Angina,55,170,87,30.10380623,Yes,210,145,38,169,No,No,Smoker
+256,71,Male,No,Radial,STEMI,55.1,166,60,21.77384236,No,178,121,29,115,No,No,Smoker
+257,46,Male,No,Radial,NSTEMI,55.1,165,63,23.14049587,No,195,128,36,136,No,No,Smoker
+258,40,Male,No,Femoral,Unstable Angina,55.1,175,80,26.12244898,Yes,248,158,37,240,No,No,Smoker
+259,57,Male,No,Radial,Unstable Angina,55.1,160,70,27.34375,Yes,199,118,38,212,No,Yes,Smoker
+260,70,Male,No,Radial,Unstable Angina,55.1,169,78,27.30996814,Yes,151,77,43,130,No,Yes,Never
+261,71,Male,No,Radial,STEMI,55.2,165,50,18.36547291,No,98,48,37,27,Yes,No,Never
+262,45,Female,No,Femoral,Unstable Angina,55.2,150,45,20,No,231,141,50,98,Yes,Yes,Never
+263,43,Male,No,Radial,NSTEMI,55.3,180,78,24.074074070000002,No,223,159,25,184,Yes,Yes,Smoker
+264,41,Male,No,Femoral,STEMI,55.4,170,69,23.87543253,No,148,103,33,133,Yes,Yes,Smoker
+265,57,Male,No,Radial,Unstable Angina,55.4,153,53,22.64086462,No,271,179,40,179,Yes,Yes,Never
+266,74,Male,No,Femoral,Unstable Angina,55.4,165,68,24.97704316,No,166,129,28,125,No,Yes,Smoker
+267,60,Male,No,Radial,STEMI,55.5,172,85,28.73174689,Yes,184,133,36,112,No,Yes,Smoker
+268,57,Male,No,Femoral,NSTEMI,55.5,169,68,23.80869017,No,187,146,34,65,No,No,Smoker
+269,51,Male,No,Femoral,NSTEMI,55.5,178,85,26.82742078,Yes,240,196,36,194,No,No,Smoker
+270,37,Male,No,Femoral,STEMI,55.6,174,75,24.77209671,No,179,121,37,76,No,No,Smoker
+271,90,Female,No,Radial,Unstable Angina,55.6,141,52,26.15562597,Yes,230,154,45,169,No,No,Ex-smoker
+272,76,Male,Yes,Femoral,STEMI,55.7,172,82,27.71768524,Yes,164,119,23,151,No,No,Ex-smoker
+273,58,Male,Yes,Radial,STEMI,55.7,162,60,22.86236854,No,199,129,39,75,No,Yes,Never
+274,69,Female,No,Femoral,STEMI,55.7,150,65,28.88888889,Yes,207,134,42,135,No,Yes,Never
+275,70,Female,No,Radial,STEMI,55.7,160,58,22.65625,No,156,111,35,62,Yes,No,Never
+276,50,Male,No,Femoral,NSTEMI,55.7,170,72,24.91349481,No,225,108,48,257,No,No,Ex-smoker
+277,74,Male,No,Radial,NSTEMI,55.8,168,73,25.86451247,Yes,170,114,37,70,No,Yes,Ex-smoker
+278,73,Male,No,Radial,Unstable Angina,55.8,175,84,27.42857143,Yes,180,122,34,70,No,Yes,Ex-smoker
+279,65,Male,No,Radial,NSTEMI,55.8,,,,No,221,128,42,157,Yes,No,Smoker
+280,60,Male,No,Radial,STEMI,55.9,160,50,19.53125,No,105,51,29,123,No,Yes,Smoker
+281,60,Male,No,Radial,STEMI,55.9,173,67,22.38631428,No,181,112,51,32,No,No,Smoker
+282,85,Female,No,Radial,STEMI,55.9,154,55,23.19109462,No,181,123,44,43,No,No,Never
+283,55,Male,No,Radial,STEMI,56,,,,No,227,132,33,224,No,Yes,Never
+284,72,Male,No,Radial,Unstable Angina,56,178,70,22.09317005,No,137,73,47,31,No,Yes,Smoker
+285,70,Male,No,Radial,STEMI,56,165,74,27.18089991,Yes,140,88,34,181,No,Yes,Ex-smoker
+286,49,Male,No,Radial,Unstable Angina,56,177,82,26.17383255,Yes,234,156,35,164,Yes,No,Ex-smoker
+287,70,Male,No,Radial,Unstable Angina,56,166,67,24.31412397,No,227,144,47,75,No,Yes,Smoker
+288,49,Male,No,Radial,Unstable Angina,56,177,82,26.17383255,Yes,234,156,35,164,Yes,No,Ex-smoker
+289,53,Male,No,Radial,Unstable Angina,56,174,67,22.12973973,No,168,112,44,61,No,Yes,Smoker
+290,74,Female,No,Femoral,Unstable Angina,56,150,57,25.33333333,Yes,102,72,25,65,Yes,Yes,Never
+291,49,Male,No,Femoral,NSTEMI,56,172,74,25.01352082,Yes,168,107,28,188,Yes,No,Smoker
+292,43,Male,No,Radial,STEMI,56.1,183,81,24.18704649,No,176,87,46,218,No,No,Smoker
+293,43,Male,No,Femoral,STEMI,56.1,173,93,31.07354071,Yes,97,53,26,93,Yes,No,Smoker
+294,68,Male,No,Radial,Unstable Angina,56.1,162.5,53.3,20.18461538,No,189,91,45,141,No,No,Smoker
+295,68,Male,No,Radial,Unstable Angina,56.1,162.5,53.3,20.18461538,No,207,137,43,136,No,No,Smoker
+296,78,Male,No,Femoral,NSTEMI,56.1,160,70,27.34375,Yes,154,86,42,148,Yes,Yes,Ex-smoker
+297,35,Male,No,Radial,STEMI,56.2,171,70,23.93898977,No,163,102,28,220,No,No,Smoker
+298,52,Male,No,Femoral,Unstable Angina,56.2,170,62,21.4532872,No,208,113,41,259,No,No,Smoker
+299,58,Male,No,Femoral,Unstable Angina,56.2,165,78,28.65013774,Yes,116,48,38,164,Yes,Yes,Smoker
+300,67,Male,No,Radial,Unstable Angina,56.2,170,62,21.4532872,No,131,67,30,156,No,Yes,Smoker
+301,76,Female,No,Femoral,Unstable Angina,56.2,143,48,23.47303047,No,211,145,39,75,No,Yes,Never
+302,56,Male,No,Radial,NSTEMI,56.3,163,62,23.33546614,No,162,103,26,184,No,No,Ex-smoker
+303,55,Male,No,Radial,STEMI,56.3,178,81,25.56495392,Yes,161,108,34,59,No,No,Smoker
+304,72,Male,No,Radial,STEMI,56.3,165,64,23.50780533,No,218,171,35,120,No,Yes,Ex-smoker
+305,46,Male,No,Radial,NSTEMI,56.3,169,55,19.25702882,No,182,123,33,120,Yes,Yes,Ex-smoker
+306,78,Female,No,Radial,NSTEMI,56.4,149,50,22.52150804,No,244,161,48,97,No,Yes,Never
+307,58,Male,No,Femoral,STEMI,56.4,160,67,26.171875,Yes,239,169,43,112,No,No,Smoker
+308,58,Male,No,Femoral,Unstable Angina,56.4,174,70,23.1206236,No,230,143,58,109,No,No,Never
+309,62,Male,No,Radial,Unstable Angina,56.4,160,60,23.4375,No,118,70,35,95,No,Yes,Smoker
+310,83,Female,No,Femoral,STEMI,56.5,160,65,25.390625,Yes,170,128,35,58,No,Yes,Ex-smoker
+311,62,Male,No,Radial,STEMI,56.5,165,75,27.54820937,Yes,228,175,46,98,Yes,Yes,Smoker
+312,65,Female,No,Radial,STEMI,56.5,158,59,23.63403301,No,168,104,45,646,No,Yes,Never
+313,50,Male,No,Radial,Unstable Angina,56.5,174,78,25.76298058,Yes,182,111,43,134,No,Yes,Smoker
+314,61,Male,No,Radial,Unstable Angina,56.5,130,70,41.42011834,Yes,229,148,47,151,Yes,Yes,Ex-smoker
+315,86,Female,No,Radial,Unstable Angina,56.5,155,58,24.14151925,No,223,147,33,147,Yes,Yes,Never
+316,52,Male,No,Radial,Unstable Angina,56.5,168,79,27.99036281,Yes,198,131,38,101,No,No,Smoker
+317,65,Male,No,Radial,Unstable Angina,56.5,169,63,22.05805119,No,154,98,29,91,No,Yes,Smoker
+318,68,Male,No,Radial,Unstable Angina,56.5,164,63,23.42355741,No,192,110,39,81,No,Yes,Smoker
+319,46,Male,No,Radial,Unstable Angina,56.6,165,71,26.07897153,Yes,158,89,30,157,No,Yes,Smoker
+320,61,Male,No,Femoral,STEMI,56.6,158,50,20.02884153,No,160,83,49,58,No,No,Smoker
+321,57,Male,No,Femoral,STEMI,56.7,170,89,30.79584775,Yes,172,104,36,189,Yes,Yes,Smoker
+322,40,Male,No,Radial,STEMI,56.7,173,76,25.39343112,Yes,155,70,45,217,No,Yes,Smoker
+323,69,Female,No,Femoral,NSTEMI,56.7,158,80,32.04614645,Yes,330,263,49,84,Yes,No,Ex-smoker
+324,71,Female,No,Radial,STEMI,56.8,144,45,21.70138889,No,202,128,31,149,No,No,Never
+325,63,Male,No,Radial,Unstable Angina,56.8,175,81,26.44897959,Yes,149,93,24,154,Yes,Yes,Ex-smoker
+326,52,Male,No,Femoral,STEMI,56.9,175,83,27.10204082,Yes,120,63,38,112,No,No,Smoker
+327,41,Male,No,Radial,Unstable Angina,56.9,178,87,27.45865421,Yes,173,113,33,138,Yes,No,Never
+328,55,Male,No,Femoral,STEMI,57,175,68,22.20408163,No,188,132,28,131,Yes,Yes,Smoker
+329,77,Female,No,Radial,NSTEMI,57,,,,No,157,108,29,60,No,Yes,Never
+330,77,Male,No,Femoral,Unstable Angina,57.1,168,63,22.32142857,No,108,60,21,123,Yes,Yes,Smoker
+331,67,Female,No,Radial,Unstable Angina,57.2,168,52,18.42403628,No,199,125,38,141,Yes,Yes,Never
+332,65,Male,No,Femoral,Unstable Angina,57.2,160,63,24.609375,No,141,79,28,152,No,No,Never
+333,73,Male,No,Radial,Unstable Angina,57.2,160,59,23.046875,No,178,100,33,176,No,Yes,Never
+334,72,Male,No,Femoral,Unstable Angina,57.3,161,63,24.30461788,No,132.8,77,32,119,Yes,Yes,Smoker
+335,61,Male,No,Femoral,Unstable Angina,57.3,169,61,21.3577956,No,105,45,38,28,No,Yes,Smoker
+336,70,Female,No,Femoral,Unstable Angina,57.3,145,45,21.40309156,No,191,106,52,64,Yes,Yes,Never
+337,59,Male,No,Radial,Unstable Angina,57.3,159,57,22.54657648,No,161,107,25,164,Yes,Yes,Never
+338,59,Male,No,Radial,Unstable Angina,57.3,160,70,27.34375,Yes,178,101,35,123,Yes,Yes,Never
+339,47,Male,No,Radial,STEMI,57.4,170,70,24.22145329,No,159,93,47,88,No,No,Never
+340,64,Male,No,Radial,STEMI,57.4,168,57,20.19557823,No,223,126,66,83,No,Yes,Smoker
+341,44,Male,No,Femoral,STEMI,57.4,180,97,29.9382716,Yes,194,143,41,108,No,No,Smoker
+342,53,Female,No,Radial,Unstable Angina,57.4,151,58,25.43748081,Yes,255,136,51,176,No,Yes,Never
+343,69,Male,No,Femoral,Unstable Angina,57.6,159,66,26.10656224,Yes,154,71,55,68,No,No,Ex-smoker
+344,58,Male,No,Femoral,Unstable Angina,57.6,162,73,27.81588173,Yes,184,90,63,135,Yes,Yes,Never
+345,64,Female,No,Radial,Unstable Angina,57.7,165,74,27.18089991,Yes,182,113,24,64,No,No,Smoker
+346,77,Female,No,Femoral,Unstable Angina,57.8,158,60,24.03460984,No,146,88,45,65,No,No,Never
+347,48,Male,No,Radial,Unstable Angina,57.9,171,77,26.33288875,Yes,199,149,21,114,No,Yes,Ex-smoker
+348,62,Male,No,Radial,STEMI,57.9,168,73,25.86451247,Yes,226,146,53,31,No,No,Smoker
+349,66,Male,No,Radial,STEMI,58,175,82,26.7755102,Yes,164,93,47,60,Yes,Yes,Never
+350,73,Male,No,Radial,STEMI,58,,,,No,103,57,34,35,No,Yes,Smoker
+351,69,Male,No,Femoral,STEMI,58,163,65,24.4646016,No,144,94,30,75,No,Yes,Never
+352,68,Male,No,Radial,STEMI,58,165,63,23.14049587,No,127,81,28,80,No,Yes,Smoker
+353,41,Male,No,Radial,Unstable Angina,58,169,70,24.50894577,No,286,198,48,166,No,No,Ex-smoker
+354,68,Female,No,Femoral,NSTEMI,58,155,51,21.22788762,No,177,113,34,151,No,No,Ex-smoker
+355,75,Male,No,Radial,NSTEMI,58,177,73,23.30109483,No,117,69,34,19,Yes,Yes,Smoker
+356,73,Male,No,Radial,NSTEMI,58,165,60,22.03856749,No,169,109,41,106,No,Yes,Ex-smoker
+357,56,Male,No,Radial,STEMI,58.1,168,65,23.03004535,No,166,102,10,87,Yes,Yes,Smoker
+358,46,Male,Yes,Femoral,STEMI,58.1,170,76,26.29757785,Yes,118,74,25,61,No,Yes,Never
+359,55,Male,No,Radial,STEMI,58.1,163,68,25.59373706,Yes,193,102,42,200,Yes,No,Smoker
+360,61,Male,No,Femoral,STEMI,58.1,168,74,26.21882086,Yes,178,111,39,20,No,No,Never
+361,68,Female,No,Radial,Unstable Angina,58.1,158,60,24.03460984,No,179,117,44,93,Yes,Yes,Never
+362,55,Male,No,Femoral,Unstable Angina,58.1,170,70,24.22145329,No,173,112,23,90,Yes,Yes,Smoker
+363,57,Female,No,Femoral,STEMI,58.2,164,68,25.2825699,Yes,125,55,39,109,Yes,Yes,Never
+364,50,Male,No,Radial,Unstable Angina,58.2,165,78,28.65013774,Yes,210,152,38,63,No,Yes,Never
+365,69,Male,No,Radial,Unstable Angina,58.2,173,74,24.72518293,No,178,117,42,79,No,Yes,Never
+366,44,Male,No,Radial,STEMI,58.3,175,90,29.3877551,Yes,267,202,38,215,Yes,Yes,Smoker
+367,38,Male,No,Radial,STEMI,58.3,173,95,31.7417889,Yes,206,123,26,276,No,No,Smoker
+368,83,Male,No,Radial,STEMI,58.3,165,67,24.6097337,No,231,125,76,79,Yes,No,Smoker
+369,70,Male,No,Radial,STEMI,58.3,168,70,24.8015873,No,211,157,37,154,No,Yes,Smoker
+370,76,Female,No,Femoral,STEMI,58.4,145,56,26.63495838,Yes,213,141,34,62,No,Yes,Never
+371,53,Female,No,Radial,Unstable Angina,58.4,165,75,27.54820937,Yes,239,83,37,319,No,No,Ex-smoker
+372,37,Male,No,Radial,NSTEMI,58.4,163,66,24.84098009,No,162,108,39,136,No,Yes,Smoker
+373,49,Male,No,Radial,NSTEMI,58.4,158,56,22.43230252,No,221,136,70,118,No,Yes,Ex-smoker
+374,57,Male,No,Radial,STEMI,58.5,170,75,25.95155709,Yes,202,140,34,37,Yes,Yes,Never
+375,51,Male,No,Radial,NSTEMI,58.5,169,68,23.80869017,No,246,185,41,154,No,No,Smoker
+376,64,Male,No,Radial,STEMI,58.6,157,64,25.96454217,Yes,205,112,65,82,No,Yes,Ex-smoker
+377,53,Male,No,Radial,STEMI,58.6,168,62,21.96712018,No,248,182,37,122,No,No,Smoker
+378,77,Male,No,Femoral,Unstable Angina,58.6,160,59,23.046875,No,168,98,36,32,No,Yes,Smoker
+379,46,Female,No,Femoral,NSTEMI,58.6,155,55,22.89281998,No,220,151,34,162,No,Yes,Never
+380,65,Female,No,Radial,STEMI,58.7,160,67,26.171875,Yes,165,104,34,137,No,Yes,Never
+381,65,Female,No,Radial,STEMI,58.7,160,67,26.171875,Yes,165,104,34,137,No,Yes,Never
+382,77,Female,No,Femoral,STEMI,58.7,150,50,22.22222222,No,95,41,8,105,Yes,Yes,Never
+383,81,Female,No,Femoral,NSTEMI,58.7,,,,No,194,133,36,159,Yes,Yes,Never
+384,67,Female,No,Radial,Unstable Angina,58.7,150,50,22.22222222,No,128,65,38,83,No,No,Never
+385,37,Male,No,Radial,STEMI,58.8,170,106,36.67820069,Yes,210,150,33,181,Yes,No,Smoker
+386,73,Male,No,Radial,STEMI,58.8,160,45,17.578125,No,163,99,55,44,No,No,Ex-smoker
+387,51,Male,No,Radial,NSTEMI,58.8,175,69,22.53061224,No,134,95,15,109,No,No,Ex-smoker
+388,61,Male,No,Radial,NSTEMI,58.8,164,78,29.00059488,Yes,216,163,34,181,No,Yes,Never
+389,71,Male,No,Femoral,NSTEMI,58.8,168,70,24.8015873,No,188,114,33,201,No,Yes,Smoker
+390,81,Female,No,Radial,STEMI,58.9,148,45,20.54419284,No,206,123,49,99,No,Yes,Ex-smoker
+391,58,Male,No,Femoral,STEMI,58.9,170,65,22.49134948,No,213,139,42,57,No,No,Never
+392,71,Male,No,Radial,Unstable Angina,58.9,172,80,27.04164413,Yes,154,71,50,115,Yes,Yes,Never
+393,75,Female,No,Radial,STEMI,59,,,,No,170,101,44,124,Yes,Yes,Smoker
+394,64,Female,No,Radial,STEMI,59,165,71,26.07897153,Yes,195,133,33,45,No,Yes,Never
+395,59,Female,No,Radial,STEMI,59,158,60,24.03460984,No,103,36,38,132,Yes,Yes,Never
+396,51,Male,No,Femoral,STEMI,59,170,60,20.76124567,No,171,100,49,127,No,Yes,Smoker
+397,86,Male,No,Femoral,STEMI,59,165,55,20.2020202,No,199,133,37,30,No,Yes,Never
+398,60,Male,No,Radial,Unstable Angina,59,163,62,23.33546614,No,232,108,24,375,Yes,Yes,Never
+399,60,Female,No,Femoral,Unstable Angina,59,151,66,28.94609886,Yes,215,147,30,118,No,Yes,Never
+400,71,Female,No,Femoral,Unstable Angina,59,154,52,21.92612582,No,126,76,27,83,No,No,Never
+401,56,Male,No,Radial,Unstable Angina,59,160,62,24.21875,No,190,118,23,152,Yes,Yes,Never
+402,42,Male,No,Radial,NSTEMI,59.1,172,73,24.67550027,No,188,104,59,113,No,Yes,Smoker
+403,68,Male,No,Femoral,Unstable Angina,59.1,177,78,24.89706023,No,155.8,97,22,184,No,No,Ex-smoker
+404,46,Female,No,Radial,Unstable Angina,59.1,150,60,26.66666667,Yes,183,134,36,79,Yes,No,Never
+405,75,Female,Yes,Femoral,NSTEMI,59.1,,,,No,197,141,48,70,No,Yes,Never
+406,72,Male,No,Femoral,Unstable Angina,59.1,170,56,19.37716263,No,198,136,46,139,Yes,No,Ex-smoker
+407,66,Male,No,Femoral,STEMI,59.2,170,65,22.49134948,No,164,109,34,61,No,No,Ex-smoker
+408,81,Male,No,Radial,Unstable Angina,59.2,167,50,17.92821543,No,78,49,26,34,No,Yes,Smoker
+409,60,Female,No,Femoral,Unstable Angina,59.2,159,85,33.62208773,Yes,183,112,30,64,Yes,Yes,Never
+410,52,Male,No,Radial,STEMI,59.3,163,70,26.34649403,Yes,246,178,48,82,No,No,Smoker
+411,75,Female,No,Radial,Unstable Angina,59.3,155,55,22.89281998,No,314,208,63,176,Yes,Yes,Never
+412,48,Female,No,Radial,NSTEMI,59.3,158,53,21.23057202,No,134,72,51,76,No,No,Never
+413,44,Male,No,Radial,Unstable Angina,59.3,176,82,26.47210744,Yes,,,,171,No,Yes,Smoker
+414,78,Female,No,Radial,Unstable Angina,59.3,155,57,23.72528616,No,167,115,37,51,No,Yes,Never
+415,79,Male,No,Femoral,STEMI,59.4,168,60,21.2585034,No,129,74,25,88,No,Yes,Never
+416,58,Male,No,Radial,Unstable Angina,59.4,160,69,26.953125,Yes,114,62,37,150,No,Yes,Ex-smoker
+417,60,Male,No,Radial,Unstable Angina,59.4,174,80,26.42356982,Yes,203,128,48,60,No,Yes,Ex-smoker
+418,64,Male,No,Radial,NSTEMI,59.4,167,62,22.23098713,No,197,138,27,110,No,No,Ex-smoker
+419,57,Male,No,Radial,NSTEMI,59.4,168,73,25.86451247,Yes,235,190,34,87,Yes,Yes,Ex-smoker
+420,60,Male,No,Radial,NSTEMI,59.4,167,66,23.66524436,No,189,120,38,110,No,Yes,Ex-smoker
+421,72,Male,No,Radial,Unstable Angina,59.5,165,78,28.65013774,Yes,197,121,41,124,No,Yes,Smoker
+422,57,Male,No,Femoral,Unstable Angina,59.5,169,75,26.25958475,Yes,155,87,39,61,Yes,Yes,Smoker
+423,79,Female,No,Femoral,Unstable Angina,59.5,150,55,24.44444444,No,139,175,5,66,No,Yes,Never
+424,59,Male,No,Radial,Unstable Angina,59.5,174,78,25.76298058,Yes,203,128,35,258,Yes,Yes,Smoker
+425,65,Male,No,Radial,Unstable Angina,59.5,167,74,26.53375883,Yes,179,74,29,377,Yes,Yes,Never
+426,61,Male,No,Radial,Unstable Angina,59.5,167,68,24.38237298,No,184,117,34,99,No,Yes,Smoker
+427,75,Female,No,Radial,Unstable Angina,59.5,152,61,26.40235457,Yes,155,105,41,108,Yes,Yes,Never
+428,55,Male,No,Radial,NSTEMI,59.6,165,52,19.10009183,No,227,140,35,192,No,No,Smoker
+429,50,Male,No,Femoral,Unstable Angina,59.6,160,67,26.171875,Yes,185,113,41,92,Yes,Yes,Never
+430,45,Male,No,Femoral,Unstable Angina,59.6,173,72,24.05693475,No,,,,60,Yes,Yes,Never
+431,81,Female,No,Radial,Unstable Angina,59.6,150,49,21.77777778,No,258,161,31,185,Yes,Yes,Never
+432,52,Male,No,Radial,Unstable Angina,59.6,163,65,24.4646016,No,224,149,26,217,Yes,No,Ex-smoker
+433,55,Male,No,Radial,NSTEMI,59.7,166,65,23.58832922,No,234,153,35,129,No,No,Smoker
+434,59,Male,No,Femoral,Unstable Angina,59.7,161,68,26.2335558,Yes,100,38,42,65,Yes,Yes,Ex-smoker
+435,54,Female,No,Radial,Unstable Angina,59.7,154,65,27.40765728,Yes,118,50,33,97,Yes,Yes,Ex-smoker
+436,72,Male,No,Radial,Unstable Angina,59.7,162,64,24.38652644,No,191,148,27,92,No,No,Never
+437,56,Male,No,Radial,STEMI,59.8,170,80,27.6816609,Yes,164,113,43,30,Yes,Yes,Ex-smoker
+438,65,Female,No,Femoral,STEMI,59.8,145,45,21.40309156,No,176,118,34,142,Yes,No,Never
+439,54,Female,No,Radial,Unstable Angina,59.8,,,,No,118,50,33,138,Yes,Yes,Never
+440,49,Male,No,Radial,Unstable Angina,59.8,180,97,29.9382716,Yes,204,107,43,180,No,No,Never
+441,51,Male,No,Femoral,NSTEMI,59.8,172,70,23.66143862,No,265,177,45,288,Yes,No,Smoker
+442,48,Male,Yes,Femoral,STEMI,59.9,173,67,22.38631428,No,162,94,39,92,No,No,Smoker
+443,56,Female,No,Radial,Unstable Angina,59.9,159,65,25.71100827,Yes,193,119,28,107,No,Yes,Never
+444,65,Male,No,Femoral,Unstable Angina,59.9,168,65,23.03004535,No,145,52,24,680,Yes,No,Smoker
+445,68,Male,No,Radial,STEMI,60,175,75,24.48979592,No,206,128,40,66,No,Yes,Smoker
+446,73,Female,No,Femoral,STEMI,60,150,44,19.55555556,No,177,44,55,77,Yes,No,Never
+447,68,Female,No,Radial,STEMI,60,158,76,30.44383913,Yes,167,117,35,117,No,Yes,Never
+448,64,Male,Yes,Radial,STEMI,60,165,63,23.14049587,No,225,151,32,148,No,No,Smoker
+449,71,Female,No,Radial,Unstable Angina,60,145,50,23.78121284,No,201,154,34,144,No,Yes,Ex-smoker
+450,53,Male,No,Femoral,Unstable Angina,60,173,71,23.72281065,No,141,72,41,239,No,No,Ex-smoker
+451,74,Female,No,Radial,Unstable Angina,60,140,45,22.95918367,No,480,314,44,243,Yes,Yes,Never
+452,58,Male,No,Radial,NSTEMI,60,170,75,25.95155709,Yes,145,83,35,66,No,Yes,Never
+453,55,Male,No,Radial,Unstable Angina,60,167,62,22.23098713,No,150,82,26,153,Yes,No,Smoker
+454,54,Male,No,Femoral,Unstable Angina,60,,,,No,171,115,40,79,No,No,Smoker
+455,48,Male,No,Femoral,STEMI,60.1,164,72,26.76977989,Yes,134,98,24,60,No,No,Smoker
+456,75,Male,No,Radial,Unstable Angina,60.1,163,50,18.81892431,No,130,43,61,72,No,Yes,Smoker
+457,28,Male,No,Radial,NSTEMI,60.1,168,52,18.42403628,No,493,366,59,163,No,No,Ex-smoker
+458,62,Female,No,Radial,Unstable Angina,60.1,155,60,24.97398543,No,131,57,44,124,No,No,Ex-smoker
+459,62,Male,No,Femoral,STEMI,60.2,160,50,19.53125,No,190,115,51,38,No,No,Ex-smoker
+460,79,Female,Yes,Radial,STEMI,60.2,155,60,24.97398543,No,153,87,34,22,Yes,No,Never
+461,53,Male,No,Radial,Unstable Angina,60.2,162,68,25.91068435,Yes,203,120,36,297,No,Yes,Smoker
+462,67,Male,No,Radial,Unstable Angina,60.2,163,60,22.58270917,No,163,106,30,155,No,Yes,Never
+463,68,Male,No,Radial,Unstable Angina,60.2,173,75,25.05930703,Yes,217,152,24,150,No,Yes,Ex-smoker
+464,70,Female,No,Radial,Unstable Angina,60.2,152,56,24.23822715,No,181,122,34,68,No,Yes,Never
+465,54,Male,No,Radial,Unstable Angina,60.2,162,67,25.52964487,Yes,139,77,57,67,No,Yes,Smoker
+466,76,Female,No,Radial,Unstable Angina,60.4,155,55,22.89281998,No,202,121,31,207,Yes,No,Never
+467,47,Male,No,Radial,NSTEMI,60.4,175,76,24.81632653,No,205,106,34,246,No,No,Smoker
+468,56,Male,No,Radial,NSTEMI,60.5,172,61,20.61925365,No,186,144,34,53,No,No,Smoker
+469,70,Male,No,Femoral,Unstable Angina,60.5,168,65,23.03004535,No,182,119,49,48,No,Yes,Never
+470,68,Female,No,Radial,STEMI,60.6,164,75,27.88518739,Yes,232,132,60,132,Yes,Yes,Never
+471,79,Female,No,Radial,Unstable Angina,60.6,148,40,18.26150475,No,170,85,20,311,Yes,Yes,Never
+472,47,Male,No,Femoral,NSTEMI,60.6,170,78,26.98961938,Yes,188,126,39,173,No,No,Smoker
+473,62,Male,Yes,Femoral,STEMI,60.7,171,48,16.41530727,No,143,99,27,75,Yes,No,Smoker
+474,66,Male,No,Radial,Unstable Angina,60.7,169,63,22.05805119,No,261,189,43,104,No,No,Ex-smoker
+475,48,Male,No,Radial,Unstable Angina,60.7,171,62,21.20310523,No,183,86,65,115,No,No,Smoker
+476,73,Male,No,Radial,Unstable Angina,60.8,170,70,24.22145329,No,185,103,34,155,Yes,Yes,Ex-smoker
+477,81,Male,Yes,Radial,STEMI,61,170,77,26.64359862,Yes,91,50,26,70,No,Yes,Ex-smoker
+478,77,Male,No,Radial,STEMI,61,167,66,23.66524436,No,122,65,47,11,No,Yes,Ex-smoker
+479,73,Female,No,Femoral,STEMI,61,160,60,23.4375,No,161,114,32,61,No,Yes,Never
+480,49,Female,No,Femoral,STEMI,61,157,55,22.31327843,No,182,109,52,30,No,Yes,Never
+481,68,Male,No,Femoral,STEMI,61,170,75,25.95155709,Yes,147,93,38,74,No,No,Ex-smoker
+482,36,Male,No,Femoral,STEMI,61,178,68,21.46193662,No,157,122,22,70,No,No,Smoker
+483,65,Female,No,Radial,Unstable Angina,61,164,62,23.05175491,No,184,136,32,135,No,Yes,Ex-smoker
+484,75,Male,No,Radial,Unstable Angina,61,165,72,26.44628099,Yes,98,52,29,60,Yes,Yes,Ex-smoker
+485,50,Male,No,Radial,Unstable Angina,61,170,60,20.76124567,No,163,96,38,170,Yes,Yes,Smoker
+486,75,Male,No,Radial,Unstable Angina,61,165,72,26.44628099,Yes,173,117,36,44,Yes,Yes,Never
+487,73,Female,No,Femoral,Unstable Angina,61,152,57,24.67105263,No,190,100,38,125,No,Yes,Ex-smoker
+488,85,Female,No,Radial,Unstable Angina,61,153,65,27.76709812,Yes,,,,,No,No,Never
+489,66,Female,No,Radial,Unstable Angina,61,,,,No,230,156,47,94,No,No,Ex-smoker
+490,43,Female,No,Radial,Unstable Angina,61,164,56,20.82093992,No,214,120,46,53,No,No,Never
+491,57,Male,No,Radial,Unstable Angina,61,168,72,25.51020408,Yes,195,128,42,64,No,Yes,Never
+492,55,Male,No,Radial,Unstable Angina,61,168,82,29.05328798,Yes,188,75,35,619,Yes,Yes,Smoker
+493,81,Male,No,Radial,STEMI,61,170,77,26.64359862,Yes,116,83,23,41,No,Yes,Ex-smoker
+494,55,Male,No,Femoral,STEMI,61.1,176,90,29.05475207,Yes,261,208,28,98,No,No,Smoker
+495,59,Male,No,Radial,Unstable Angina,61.2,175,78,25.46938776,Yes,177,131,32,104,No,Yes,Never
+496,79,Female,No,Radial,Unstable Angina,61.2,140,45,22.95918367,No,149,104,26,54,No,Yes,Smoker
+497,58,Male,No,Radial,Unstable Angina,61.2,166,63,22.86253448,No,186,92,44,93,No,No,Never
+498,63,Female,No,Femoral,NSTEMI,61.3,153,90,38.44675125,Yes,181,116,51,72,Yes,No,Never
+499,58,Male,Yes,Radial,STEMI,61.3,161,66,25.46198063,Yes,131,76,39,58,Yes,Yes,Smoker
+500,63,Female,Yes,Femoral,STEMI,61.3,159,63,24.91990032,No,140,53,10,31,No,No,Never
+501,52,Male,No,Radial,STEMI,61.3,163,64,24.08822312,No,200,143,40,65,Yes,Yes,Ex-smoker
+502,64,Female,No,Radial,Unstable Angina,61.3,155,46,19.14672216,No,197,112,51,81,No,Yes,Smoker
+503,62,Male,No,Radial,NSTEMI,61.3,165,72,26.44628099,Yes,122,73,26,80,Yes,Yes,Never
+504,67,Male,No,Radial,STEMI,61.4,163,66,24.84098009,No,162,102,44,81,No,No,Ex-smoker
+505,65,Male,No,Radial,NSTEMI,61.4,173,67,22.38631428,No,151,90,45,49,No,No,Never
+506,51,Male,No,Femoral,Unstable Angina,61.4,173,79,26.3958034,Yes,163,91,25,219,No,No,Smoker
+507,48,Female,No,Radial,STEMI,61.5,165,58,21.30394858,No,154,60,60,139,No,No,Smoker
+508,42,Female,No,Femoral,NSTEMI,61.5,160,73,28.515625,Yes,,,,,No,No,Never
+509,60,Male,No,Radial,Unstable Angina,61.5,,,,No,169,120,25,122,Yes,Yes,Never
+510,78,Male,No,Femoral,NSTEMI,61.5,178,73,23.0400202,No,153,92,46,62,Yes,Yes,Smoker
+511,75,Male,No,Radial,STEMI,61.6,162,45,17.14677641,No,128,65,44,45,No,No,Smoker
+512,61,Female,No,Radial,STEMI,61.6,155,75,31.21748179,Yes,245,184,52,41,Yes,No,Never
+513,45,Male,No,Radial,STEMI,61.6,166,70,25.40281608,Yes,255,152,46,312,Yes,Yes,Smoker
+514,55,Female,No,Femoral,NSTEMI,61.6,153,62,26.48553975,Yes,126,66,30,123,Yes,Yes,Smoker
+515,42,Male,No,Radial,NSTEMI,61.6,163,71,26.72287252,Yes,183,125,35,129,No,No,Smoker
+516,82,Female,No,Femoral,NSTEMI,61.7,150,50,22.22222222,No,163,103,47,29,No,Yes,Never
+517,53,Male,No,Radial,NSTEMI,61.7,164,70,26.0261749,Yes,203,94,19,458,No,Yes,Smoker
+518,49,Female,No,Radial,Unstable Angina,61.7,162,67,25.52964487,Yes,233,163,41,138,Yes,Yes,Never
+519,75,Female,No,Radial,STEMI,61.8,157,61,24.74745426,No,165,100,32,129,Yes,Yes,Never
+520,79,Female,No,Femoral,NSTEMI,61.8,140,66,33.67346939,Yes,236,144,60,189,Yes,Yes,Smoker
+521,47,Female,No,Radial,STEMI,61.8,153,70,29.90302875,Yes,194,133,43,257,No,Yes,Ex-smoker
+522,83,Female,No,Radial,NSTEMI,61.8,149,49,22.07107788,No,207,158,25,106,No,Yes,Never
+523,78,Male,No,Radial,NSTEMI,61.8,165,70,25.71166208,Yes,141,69,54,153,Yes,Yes,Never
+524,82,Female,No,Femoral,NSTEMI,61.8,158,65,26.03749399,Yes,32,100,4,66,Yes,Yes,Never
+525,80,Female,No,Femoral,STEMI,61.9,156,57,23.42209073,No,226,150,40,128,No,Yes,Smoker
+526,80,Female,No,Femoral,STEMI,61.9,156,57,23.42209073,No,188,117,49,128,No,Yes,Smoker
+527,58,Male,No,Radial,NSTEMI,61.9,177,79,25.21625331,Yes,196,136,21,180,No,Yes,Smoker
+528,69,Female,No,Femoral,NSTEMI,61.9,158,64,25.63691716,Yes,225,164,39,127,Yes,Yes,Never
+529,67,Male,No,Radial,STEMI,62,165,56,20.56932966,No,189,105,58,66,No,Yes,Smoker
+530,51,Male,No,Radial,STEMI,62,170,95,32.87197232,Yes,182,142,40,99,Yes,Yes,Smoker
+531,62,Male,No,Radial,STEMI,62,170,80,27.6816609,Yes,217,159,34,143,No,Yes,Smoker
+532,66,Female,No,Radial,STEMI,62,,,,No,258,187,34,67,No,Yes,Smoker
+533,59,Male,No,Radial,NSTEMI,62,168,75,26.57312925,Yes,185,80,33,318,No,Yes,Never
+534,44,Female,No,Radial,Unstable Angina,62,150,51,22.66666667,No,296,93,26,393,Yes,Yes,Ex-smoker
+535,56,Male,No,Radial,Unstable Angina,62,170,75,25.95155709,Yes,198,123,40,165,Yes,No,Smoker
+536,49,Male,No,Radial,Unstable Angina,62,172,68,22.98539751,No,191,122,46,53,No,No,Smoker
+537,59,Male,No,Radial,NSTEMI,62.2,172,86,29.06976744,Yes,351,270,35,194,No,No,Smoker
+538,48,Female,No,Radial,Unstable Angina,62.2,153,51,21.78649237,No,151,81,55,45,No,No,Never
+539,47,Female,No,Radial,Unstable Angina,62.2,160,58,22.65625,No,178,109,48,36,No,Yes,Ex-smoker
+540,56,Male,No,Radial,Unstable Angina,62.2,174,83,27.41445369,Yes,181,124,30,92,No,Yes,Never
+541,81,Male,No,Radial,STEMI,62.3,172,55,18.59113034,No,207,141,48,69,No,No,Ex-smoker
+542,51,Female,No,Femoral,STEMI,62.4,161,63,24.30461788,No,223,136,46,247,Yes,Yes,Never
+543,85,Female,No,Radial,Unstable Angina,62.4,130,30,17.75147929,No,177,105,35,56,No,No,Smoker
+544,74,Male,No,Radial,Unstable Angina,62.4,163,71,26.72287252,Yes,191,116,41,112,No,Yes,Ex-smoker
+545,50,Female,No,Radial,Unstable Angina,62.4,152,60,25.96952909,Yes,162,99,39,115,No,Yes,Smoker
+546,56,Female,No,Femoral,Unstable Angina,62.5,157,58,23.53036634,No,178,121,25,165,No,Yes,Ex-smoker
+547,64,Male,No,Radial,Unstable Angina,62.6,162,80,30.48315806,Yes,183,110,46,143,Yes,Yes,Smoker
+548,55,Female,No,Femoral,Unstable Angina,62.6,154,72,30.35925114,Yes,161,75,33,187,No,Yes,Never
+549,50,Male,No,Radial,NSTEMI,62.6,168,63,22.32142857,No,204,136,46,115,No,Yes,Never
+550,84,Male,No,Femoral,STEMI,62.7,168,79,27.99036281,Yes,159,102,30,80,No,Yes,Ex-smoker
+551,64,Male,No,Radial,Unstable Angina,62.7,163,62,23.33546614,No,344,71,30,217,No,Yes,Ex-smoker
+552,70,Male,No,Radial,NSTEMI,62.7,165,65,23.87511478,No,184,126,39,101,Yes,No,Smoker
+553,68,Female,No,Radial,Unstable Angina,62.7,148,52,23.73995617,No,207,101,48,168,Yes,No,Never
+554,48,Male,No,Radial,Unstable Angina,62.8,164,60,22.30814991,No,152,64,58,151,No,No,Smoker
+555,61,Male,No,Radial,Unstable Angina,62.8,165,67,24.6097337,No,177,123,41,66,No,Yes,Never
+556,49,Female,No,Femoral,Unstable Angina,62.8,150,48,21.33333333,No,195,121,40,145,No,Yes,Never
+557,55,Male,No,Femoral,NSTEMI,62.9,164,73,27.14158239,Yes,315,235,55,100,No,No,Smoker
+558,56,Male,No,Radial,Unstable Angina,62.9,,,,No,190,106,47,75,No,No,Never
+559,78,Male,No,Radial,STEMI,63,160,58,22.65625,No,198,138,35,110,No,No,Smoker
+560,87,Female,No,Femoral,Unstable Angina,63,140,42,21.42857143,No,200,135,44,103,No,No,Never
+561,75,Male,No,Femoral,Unstable Angina,63,153,63,26.91272587,Yes,151,82,31,143,Yes,No,Ex-smoker
+562,76,Female,No,Radial,Unstable Angina,63,153,50,21.35930625,No,275,178,45,87,No,Yes,Never
+563,66,Male,No,Femoral,Unstable Angina,63,168,61,21.61281179,No,246,64,29,801,Yes,No,Ex-smoker
+564,80,Male,No,Radial,Unstable Angina,63,170,78,26.98961938,Yes,197,144,26,166,Yes,Yes,Never
+565,52,Female,No,Femoral,Unstable Angina,63,158,60,24.03460984,No,238,152,44,192,Yes,Yes,Never
+566,70,Female,No,Femoral,STEMI,63.1,153,43,18.36900337,No,170,105,44,57,No,Yes,Never
+567,52,Male,No,Radial,STEMI,63.1,172,76,25.68956193,Yes,123,70,35,109,No,Yes,Smoker
+568,75,Female,No,Radial,Unstable Angina,63.1,144,39,18.80787037,No,293,151,42,454,No,Yes,Never
+569,51,Male,No,Radial,Unstable Angina,63.2,168,62,21.96712018,No,246,178,44,146,Yes,No,Smoker
+570,41,Male,No,Radial,STEMI,63.3,163,64,24.08822312,No,196,126,33,182,No,No,Smoker
+571,64,Female,No,Radial,NSTEMI,63.3,155,62,25.80645161,Yes,216,143,16,168,Yes,Yes,Never
+572,62,Female,No,Radial,STEMI,63.4,156,52,21.36752137,No,248,174,46,200,Yes,Yes,Smoker
+573,70,Female,No,Radial,STEMI,63.4,160,62,24.21875,No,192,68,23,459,No,No,Smoker
+574,63,Female,Yes,Femoral,STEMI,63.4,150,66,29.33333333,Yes,230,155,49,91,No,No,Smoker
+575,67,Female,No,Radial,Unstable Angina,63.4,147,51,23.60127725,No,198,108,38,268,Yes,Yes,Never
+576,80,Female,No,Radial,NSTEMI,63.4,158,51,20.42941836,No,204,124,47,110,No,Yes,Never
+577,80,Female,No,Radial,Unstable Angina,63.4,148,57,26.02264427,Yes,214,140,43,76,Yes,Yes,Never
+578,49,Female,No,Femoral,Unstable Angina,63.5,159,63,24.91990032,No,204,108,53,170,Yes,Yes,Ex-smoker
+579,64,Male,No,Radial,Unstable Angina,63.5,,,,No,,,,,No,Yes,Ex-smoker
+580,49,Male,No,Radial,Unstable Angina,63.5,170,68,23.52941176,No,158,104,31,64,No,Yes,Smoker
+581,72,Male,No,Femoral,Unstable Angina,63.5,160,58,22.65625,No,102,55,34,89,No,No,Smoker
+582,79,Female,No,Femoral,NSTEMI,63.6,154,61,25.72103221,Yes,205,143,33,117,No,No,Never
+583,78,Female,No,Femoral,Unstable Angina,63.6,145,58,27.5862069,Yes,246,175,39,110,Yes,Yes,Never
+584,54,Male,No,Radial,NSTEMI,63.7,175,74,24.16326531,No,246,174,45,165,No,Yes,Ex-smoker
+585,65,Male,No,Radial,Unstable Angina,63.7,170,77,26.64359862,Yes,104,27,84,81,No,No,Ex-smoker
+586,62,Male,No,Femoral,Unstable Angina,63.7,182,66,19.92512982,No,136,63,42,78,No,Yes,Never
+587,62,Male,No,Radial,Unstable Angina,63.7,168,64,22.67573696,No,230,173,32,86,No,No,Smoker
+588,70,Male,Yes,Femoral,STEMI,63.8,172,72,24.33747972,No,186,148,36,67,No,Yes,Smoker
+589,67,Male,No,Radial,Unstable Angina,63.8,166,45,16.33038177,No,199,113,58,58,Yes,No,Smoker
+590,75,Female,No,Radial,NSTEMI,63.8,153,55,23.49523687,No,228,116,67,68,Yes,Yes,Ex-smoker
+591,67,Male,No,Radial,Unstable Angina,63.8,166,45,16.33038177,No,164,99,40,91,Yes,No,Ex-smoker
+592,69,Male,No,Radial,NSTEMI,63.8,158,65,26.03749399,Yes,190,118,29,153,No,Yes,Ex-smoker
+593,49,Male,No,Radial,NSTEMI,63.8,,,,No,143,89,37,38,No,No,Smoker
+594,54,Male,No,Femoral,Unstable Angina,63.8,151,68,29.82325337,Yes,161,83,50,108,Yes,No,Never
+595,62,Male,No,Radial,Unstable Angina,63.9,172,76,25.68956193,Yes,198,104,57,106,No,Yes,Never
+596,65,Female,No,Femoral,Unstable Angina,63.9,150,43,19.11111111,No,137,95,20,104,No,Yes,Never
+597,78,Female,No,Radial,Unstable Angina,63.9,150,40,17.77777778,No,196,194,44,171,No,Yes,Never
+598,57,Male,No,Radial,NSTEMI,64,163,55,20.70081674,No,141,74,50,52,No,Yes,Smoker
+599,51,Male,No,Radial,NSTEMI,64,176,80,25.82644628,Yes,293,200,34,137,Yes,Yes,Smoker
+600,74,Male,No,Radial,NSTEMI,64,168,70,24.8015873,No,192,140,36,99,No,No,Ex-smoker
+601,78,Female,No,Radial,Unstable Angina,64,155,60,24.97398543,No,183,124,43,154,No,Yes,Never
+602,71,Female,No,Femoral,Unstable Angina,64,150,48,21.33333333,No,149,83,44,51,No,Yes,Never
+603,65,Female,No,Radial,NSTEMI,64,161,51,19.67516685,No,286,188,62,104,Yes,No,Never
+604,85,Male,No,Radial,Unstable Angina,64.1,171,60,20.51913409,No,182,107,37,78,No,Yes,Never
+605,44,Male,No,Radial,Unstable Angina,64.2,176,73,23.56663223,No,231,192,29,144,No,No,Smoker
+606,54,Male,No,Radial,Unstable Angina,64.2,170,66,22.83737024,No,154,76,38,177,Yes,Yes,Ex-smoker
+607,73,Female,No,Radial,Unstable Angina,64.2,165,62,22.77318641,No,190,125,24,91,Yes,No,Never
+608,53,Male,No,Femoral,Unstable Angina,64.2,160,63,24.609375,No,177,104,45,78,No,No,Smoker
+609,59,Male,No,Femoral,Unstable Angina,64.2,170,85,29.41176471,Yes,134,81,31,102,Yes,No,Ex-smoker
+610,68,Female,No,Radial,Unstable Angina,64.3,154,76,32.0458762,Yes,195,132,47,65,Yes,No,Ex-smoker
+611,49,Male,No,Radial,Unstable Angina,64.3,185,100,29.2184076,Yes,173,103,40,182,No,Yes,Ex-smoker
+612,59,Male,No,Radial,Unstable Angina,64.3,174,67,22.12973973,No,206,98,72,231,No,Yes,Never
+613,65,Male,No,Radial,NSTEMI,64.3,160,70.8,27.65625,Yes,190,137,28,110,No,Yes,Ex-smoker
+614,75,Female,No,Radial,Unstable Angina,64.3,158,67,26.83864765,Yes,165,93,30,194,No,Yes,Never
+615,74,Female,No,Femoral,STEMI,64.5,150,59,26.22222222,Yes,154,97,35,109,Yes,Yes,Never
+616,67,Female,No,Radial,Unstable Angina,64.5,165,66,24.24242424,No,221,137,52,95,Yes,Yes,Ex-smoker
+617,57,Female,No,Femoral,Unstable Angina,64.5,150,65,28.88888889,Yes,261,194,51,99,Yes,Yes,Never
+618,51,Female,No,Femoral,Unstable Angina,64.6,164,42,15.61570494,No,240,109,49,54,No,Yes,Smoker
+619,51,Female,No,Femoral,NSTEMI,64.6,164,42,15.61570494,No,197,122,49,54,No,Yes,Smoker
+620,45,Male,No,Femoral,STEMI,64.7,174,74,24.44180209,No,144,88,37,129,No,No,Never
+621,61,Male,No,Radial,Unstable Angina,64.8,170,72,24.91349481,No,194,144,32,55,No,Yes,Smoker
+622,66,Male,No,Femoral,Unstable Angina,64.8,167,71,25.4580659,Yes,221,145,37,92,No,No,Smoker
+623,53,Female,No,Radial,Unstable Angina,64.8,150,53,23.55555556,No,244,170,34,51,No,Yes,Ex-smoker
+624,66,Male,No,Radial,Unstable Angina,64.8,168,69,24.44727891,No,150,85,38,148,No,Yes,Smoker
+625,65,Male,No,Femoral,STEMI,64.9,169,68,23.80869017,No,147,78,32,173,Yes,No,Smoker
+626,62,Female,No,Femoral,STEMI,64.9,158,67,26.83864765,Yes,271,189,53,94,No,Yes,Never
+627,68,Male,No,Radial,NSTEMI,65,159,59,23.33768443,No,222,158,51,98,No,Yes,Smoker
+628,64,Male,No,Femoral,STEMI,65,,,,No,156,95,46,61,No,Yes,Ex-smoker
+629,60,Male,No,Radial,STEMI,65,168,70,24.8015873,No,273,216,29,152,No,No,Smoker
+630,65,Male,No,Femoral,Unstable Angina,65,167,55,19.72103697,No,184,115,45,44,No,No,Ex-smoker
+631,80,Female,No,Radial,NSTEMI,65,140,40,20.40816327,No,200,137,34,101,Yes,No,Never
+632,73,Female,No,Radial,Unstable Angina,65,151,60,26.31463532,Yes,170,96,51,91,Yes,Yes,Never
+633,64,Male,No,Radial,NSTEMI,65,168,69,24.44727891,No,234,156,43,119,No,No,Never
+634,70,Female,No,Femoral,Unstable Angina,65,140,56,28.57142857,Yes,116,50,35,219,No,Yes,Never
+635,41,Male,No,Radial,Unstable Angina,65,152,50,21.64127424,No,208,201,40,406,No,No,Smoker
+636,70,Female,No,Femoral,Unstable Angina,65.2,151,55,24.12174905,No,224,156,40,141,Yes,Yes,Never
+637,57,Female,No,Femoral,Unstable Angina,65.3,151,94,41.22626201,Yes,292,210,36,332,Yes,No,Smoker
+638,71,Female,No,Radial,Unstable Angina,65.3,148,55,25.10956903,Yes,189,118,39,124,No,Yes,Never
+639,77,Male,No,Radial,STEMI,65.4,167,55,19.72103697,No,178,100,51,73,No,No,Ex-smoker
+640,69,Female,No,Femoral,Unstable Angina,65.4,151,67,29.38467611,Yes,241,157,57,68,No,Yes,Ex-smoker
+641,58,Male,No,Femoral,Unstable Angina,65.4,160,66,25.78125,Yes,120,67,39,72,No,No,Smoker
+642,68,Male,No,Radial,Unstable Angina,65.5,169,80,28.01022373,Yes,119,66,34,39,No,Yes,Never
+643,74,Female,No,Femoral,Unstable Angina,65.5,160,55,21.484375,No,166,82,53,64,Yes,Yes,Never
+644,67,Male,No,Radial,Unstable Angina,65.6,173,81,27.06405159,Yes,224,189,35,56,No,Yes,Smoker
+645,51,Male,Yes,Radial,STEMI,65.7,168,70,24.8015873,No,174,118,37,112,No,Yes,Smoker
+646,60,Male,No,Radial,Unstable Angina,65.7,167,78,27.96801606,Yes,239,131,50,219,No,No,Ex-smoker
+647,60,Male,No,Radial,Unstable Angina,65.7,167,78,27.96801606,Yes,239,131,50,219,No,No,Ex-smoker
+648,66,Female,No,Radial,Unstable Angina,65.8,158,63,25.23634033,Yes,166,111,34,62,No,No,Never
+649,88,Female,No,Femoral,NSTEMI,65.8,150,50,22.22222222,No,164,115,38,86,No,No,Ex-smoker
+650,63,Male,No,Radial,NSTEMI,65.9,160,70,27.34375,Yes,227,140,35,221,Yes,Yes,Smoker
+651,88,Male,No,Radial,Unstable Angina,66,168,55,19.48696145,No,166,93,34,34,No,No,Ex-smoker
+652,40,Male,No,Femoral,NSTEMI,66,168,62,21.96712018,No,215,134,32,241,No,No,Smoker
+653,52,Male,No,Radial,Unstable Angina,66,178,99,31.24605479,Yes,120,55,19,225,No,No,Never
+654,65,Female,No,Radial,Unstable Angina,66,151,57,24.99890356,No,263,183,42,80,No,Yes,Never
+655,79,Female,No,Radial,Unstable Angina,66,154,63,26.56434475,Yes,181,111,36,179,No,No,Never
+656,73,Male,No,Femoral,Unstable Angina,66.1,160,60,23.4375,No,145,115,34,54,No,No,Smoker
+657,53,Female,No,Femoral,Unstable Angina,66.1,150,61,27.11111111,Yes,203,126,42,50,Yes,Yes,Never
+658,74,Female,No,Femoral,Unstable Angina,66.2,153,55,23.49523687,No,234,198,54,77,Yes,Yes,Never
+659,61,Male,No,Radial,Unstable Angina,66.2,183,112,33.44381737,Yes,186,114,39,96,No,No,Smoker
+660,56,Male,No,Radial,Unstable Angina,66.3,176,70,22.5981405,No,235,183,33,93,No,No,Never
+661,75,Female,No,Radial,Unstable Angina,66.3,158,60,24.03460984,No,124,70,30,131,Yes,Yes,Never
+662,72,Female,No,Radial,Unstable Angina,66.3,153,45,19.22337562,No,189,125,47,40,No,Yes,Never
+663,56,Male,No,Radial,Unstable Angina,66.4,166,55,19.95935549,No,136,85,38,57,No,Yes,Smoker
+664,68,Male,No,Femoral,Unstable Angina,66.4,163,59,22.20633069,No,207,140,26,105,Yes,Yes,Smoker
+665,48,Male,No,Radial,Unstable Angina,66.4,161,57,21.98989237,No,300,227,38,136,No,No,Smoker
+666,41,Male,No,Radial,Unstable Angina,66.4,163,57,21.45357371,No,194,110,60,48,No,No,Ex-smoker
+667,87,Male,No,Radial,Unstable Angina,66.4,168,55,19.48696145,No,128,71,31,87,No,No,Never
+668,55,Male,No,Radial,STEMI,66.5,,,,No,212,132,44,94,No,No,Smoker
+669,64,Female,No,Radial,Unstable Angina,66.5,160,62,24.21875,No,157,72,46,247,Yes,Yes,Never
+670,69,Male,No,Femoral,NSTEMI,66.7,179,70,21.84700852,No,251,122,44,450,Yes,Yes,Smoker
+671,73,Male,No,Radial,Unstable Angina,66.7,170,76,26.29757785,Yes,225,140,24,283,No,No,Ex-smoker
+672,55,Male,Yes,Femoral,STEMI,66.9,178,65,20.51508648,No,212,159,40,45,No,No,Smoker
+673,79,Male,No,Radial,Unstable Angina,66.9,169,77,26.95984034,Yes,131,81,23,150,No,Yes,Smoker
+674,68,Male,No,Radial,Unstable Angina,66.9,165,67,24.6097337,No,158,107,33,165,No,Yes,Smoker
+675,68,Male,No,Radial,Unstable Angina,66.9,165,65,23.87511478,No,199,147,43,41,No,No,Never
+676,65,Female,No,Femoral,STEMI,67,158,64,25.63691716,Yes,279,168,38,283,Yes,No,Never
+677,58,Male,No,Radial,Unstable Angina,67,167,67,24.02380867,No,143,86,19,232,Yes,No,Never
+678,72,Male,No,Femoral,Unstable Angina,67,164,50,18.590124930000002,No,131,67,49,67,No,No,Ex-smoker
+679,68,Male,No,Radial,Unstable Angina,67,180,82,25.30864198,Yes,138,46,47,34,No,No,Ex-smoker
+680,70,Female,Yes,Femoral,STEMI,67.1,150,44,19.55555556,No,171,98,44,82,Yes,Yes,Never
+681,41,Male,No,Radial,NSTEMI,67.1,175,92,30.04081633,Yes,297,125,33,584,Yes,Yes,Ex-smoker
+682,44,Male,No,Radial,STEMI,67.2,173,69,23.05456246,No,229,159,51,105,Yes,No,Smoker
+683,67,Male,No,Radial,Unstable Angina,67.2,169,69,24.15881797,No,130,150,29,193,Yes,Yes,Ex-smoker
+684,61,Male,No,Radial,Unstable Angina,67.2,160,67,26.171875,Yes,170,115,40,39,No,No,Ex-smoker
+685,51,Male,No,Radial,Unstable Angina,67.2,167,73,26.17519452,Yes,169,77,28,377,No,No,Smoker
+686,64,Male,No,Radial,Unstable Angina,67.4,155,53,22.0603538,No,262,162,41,261,No,Yes,Smoker
+687,70,Male,No,Femoral,STEMI,67.5,,,,No,111.8,65,40,84,No,No,Ex-smoker
+688,56,Male,No,Femoral,Unstable Angina,67.5,166,76,27.58020032,Yes,248,168,38,310,No,Yes,Smoker
+689,74,Female,No,Radial,Unstable Angina,67.6,155,61,25.39021852,Yes,240,161,58,74,No,No,Ex-smoker
+690,75,Female,No,Radial,Unstable Angina,67.7,140,50,25.51020408,Yes,175,96,34,219,Yes,No,Smoker
+691,68,Female,No,Femoral,Unstable Angina,67.7,,,,No,152,80,48,54,No,Yes,Never
+692,67,Female,No,Femoral,Unstable Angina,68,160,60,23.4375,No,199,141,29,161,No,Yes,Never
+693,77,Female,No,Radial,Unstable Angina,68,157,57,23.12467037,No,231,97,29,84,No,Yes,Never
+694,52,Male,No,Radial,Unstable Angina,68,169,69,24.15881797,No,136,78,27,164,Yes,No,Smoker
+695,39,Female,No,Radial,Unstable Angina,68.2,159,54,21.35991456,No,157,85,46,75,No,No,Never
+696,53,Male,No,Radial,Unstable Angina,68.4,,,,No,199,145,41,67,No,No,Smoker
+697,52,Female,No,Femoral,Unstable Angina,68.4,148,60,27.39225712,Yes,186,134,33,96,No,Yes,Ex-smoker
+698,41,Male,No,Radial,Unstable Angina,68.6,180,84,25.92592593,Yes,267,164,31,365,Yes,No,Smoker
+699,66,Male,No,Femoral,NSTEMI,69,170,67,23.183391,No,195,118,25,235,Yes,No,Smoker
+700,67,Male,No,Radial,Unstable Angina,69.1,170,51,17.64705882,No,181,129,38,33,No,Yes,Smoker
+701,46,Male,No,Radial,Unstable Angina,69.7,165,71,26.07897153,Yes,251,166,36,246,No,Yes,Ex-smoker
+702,68,Male,No,Femoral,Unstable Angina,69.9,170,54,18.68512111,No,158,115,33,59,No,No,Smoker
+703,71,Female,No,Femoral,Unstable Angina,70,145,58,27.5862069,Yes,231,118,42,279,No,Yes,Never
+704,68,Male,No,Radial,Unstable Angina,70,,,,No,156,79,37,184,No,Yes,Never
+705,73,Female,No,Radial,Unstable Angina,70,148,51,23.28341855,No,157,90,32,161,No,Yes,Never
+706,83,Female,No,Radial,Unstable Angina,70.2,145,60,28.53745541,Yes,167,84,34,84,No,Yes,Ex-smoker
+707,76,Female,No,Radial,Unstable Angina,70.2,150,70,31.11111111,Yes,204,139,27,139,Yes,Yes,Never
+708,68,Female,No,Radial,Unstable Angina,71.1,158,56,22.43230252,No,222,171,36,50,No,Yes,Never
+709,51,Male,No,Radial,Unstable Angina,71.5,175,70,22.85714286,No,171,94,46,124,No,No,Never
+710,61,Male,No,Radial,Unstable Angina,71.6,165,74,27.18089991,Yes,221,157,36,183,Yes,No,Smoker
+711,61,Male,No,Radial,Unstable Angina,71.9,165,55,20.2020202,No,181,124,45,143,Yes,Yes,Smoker
+712,66,Female,No,Femoral,Unstable Angina,71.9,160,60,23.4375,No,126,52,41,156,Yes,No,Never
+713,47,Male,No,Radial,NSTEMI,72,170,67,23.183391,No,179,108,31,237,Yes,Yes,Ex-smoker
+714,44,Male,No,Femoral,STEMI,72.8,,,,No,210,119,30,261,Yes,No,Smoker
+715,59,Male,No,Radial,Unstable Angina,73,170,64,22.14532872,No,204,105,28,304,No,No,Never
+716,67,Male,No,Radial,STEMI,73.6,,,,No,156,92,29,218,No,Yes,Smoker
+717,77,Male,No,Radial,Unstable Angina,74,172,76,25.68956193,Yes,108,63,31,53,Yes,Yes,Ex-smoker
+718,62,Male,No,Femoral,NSTEMI,74,163,74,27.85200798,Yes,138,80,30,141,No,No,Smoker
+719,62,Female,No,Radial,NSTEMI,75,160,68,26.5625,Yes,220,149,45,119,Yes,No,Never
+720,40,Male,No,Femoral,Unstable Angina,78.1,169,74,25.90945695,Yes,200,134,56,177,Yes,Yes,Never
+721,40,Male,No,Femoral,Unstable Angina,78.1,169,74,25.90945695,Yes,197,130,36,177,Yes,No,Never
+722,91,Male,No,Radial,Unstable Angina,79,170,60,20.76124567,No,132,75,37,63,No,Yes,Smoker
+723,39,Male,Yes,Femoral,STEMI,40,,,,No,204,108,58,249,Yes,Yes,Smoker
+724,59,Male,No,Femoral,STEMI,,176,78,25.18078512,Yes,160,97,31,101,No,No,Never
+725,71,Female,No,Femoral,Unstable Angina,,,,,No,54,23,10,79,Yes,No,Ex-smoker
+726,48,Male,No,Radial,STEMI,,,,,No,149,95,42,24,Yes,No,Smoker
+727,66,Male,No,Radial,NSTEMI,,,,,No,125,59,42,39,No,No,Smoker
+728,65,Female,Yes,Femoral,STEMI,,,,,No,243,141,26,153,Yes,Yes,Never
+729,60,Female,No,Radial,STEMI,,,,,No,,,,124,No,No,Never
+730,75,Male,No,Radial,STEMI,,,,,No,221,158,32,115,No,No,Ex-smoker
+731,37,Male,No,Radial,STEMI,,,,,No,222,109,61,240,No,No,Smoker
+732,71,Male,Yes,Femoral,STEMI,,,,,No,,,,49,No,No,Never
+733,51,Male,No,Femoral,STEMI,,,,,No,205,115,31,212,No,Yes,Ex-smoker
+734,40,Male,No,Radial,STEMI,,180,76,23.45679012,No,263,191,35,133,No,No,Smoker
+735,47,Male,No,Femoral,STEMI,,,,,No,226,183,34,66,Yes,No,Never
+736,45,Male,No,Femoral,STEMI,,,,,No,275,214,42,162,No,No,Never
+737,66,Male,No,Radial,STEMI,,,,,No,275,214,42,39,No,No,Smoker
+738,60,Male,No,Radial,NSTEMI,,,,,No,209,144,47,70,No,Yes,Smoker
+739,52,Male,Yes,Femoral,STEMI,,,,,No,189,138,25,101,No,No,Smoker
+740,61,Male,No,Radial,STEMI,,161,58,22.37567995,No,203,134,42,125,No,Yes,Smoker
+741,62,Female,No,Radial,STEMI,,162,70,26.6727633,Yes,267,170,55,89,No,Yes,Never
+742,80,Male,No,Femoral,Unstable Angina,,,,,No,129,68,36,151,Yes,Yes,Ex-smoker
+743,43,Male,No,Radial,Unstable Angina,,173,95,31.7417889,Yes,254,185,31,191,Yes,No,Smoker
+744,53,Male,No,Radial,STEMI,,174,80,26.42356982,Yes,166,88,43,134,No,Yes,Smoker
+745,40,Male,No,Radial,STEMI,,170,62,21.4532872,No,253,162,44,149,No,No,Smoker
+746,78,Female,No,Femoral,Unstable Angina,,156,67,27.53122945,Yes,194,113,55,80,No,Yes,Never
+747,61,Male,Yes,Radial,STEMI,,158,67,26.83864765,Yes,145,98,26,82,Yes,Yes,Ex-smoker
+748,47,Male,No,Femoral,STEMI,,174,69,22.79032897,No,246,193,33,100,No,No,Smoker
+749,73,Male,No,Radial,NSTEMI,,167,60,21.51385851,No,177,117,46,64,Yes,Yes,Smoker
+750,81,Male,Yes,Radial,STEMI,,,,,No,95,52,17,83,No,No,Ex-smoker
+751,46,Male,Yes,Femoral,STEMI,,,,,No,,,,,No,Yes,Smoker
+752,77,Female,No,Femoral,STEMI,,,,,No,,,,,No,Yes,Ex-smoker
+753,82,Male,Yes,Femoral,STEMI,,,,,No,141,94,33,27,No,Yes,Ex-smoker
+754,70,Male,Yes,Radial,STEMI,,166,65,23.58832922,No,173,101,36,91,Yes,Yes,Never
+755,74,Male,Yes,Femoral,STEMI,,,,,No,,,,,No,No,Ex-smoker
+756,51,Male,Yes,Femoral,STEMI,,,,,No,158,113,24,114,No,No,Smoker
+757,82,Female,Yes,Radial,STEMI,,,,,No,75,21,26,127,Yes,Yes,Never
+758,57,Male,No,Femoral,STEMI,,,,,No,,,,,No,Yes,Never
+759,84,Female,No,Radial,STEMI,,,,,No,184,130,22,102,Yes,Yes,Never
+760,81,Male,Yes,Femoral,STEMI,,,,,No,123,60,45,45,No,Yes,Ex-smoker
+761,76,Male,Yes,Femoral,NSTEMI,,,,,No,89,52,14,30,Yes,Yes,Ex-smoker
+762,75,Female,No,Femoral,STEMI,,,,,No,126,85,33,24,No,Yes,Ex-smoker
+763,63,Male,Yes,Femoral,NSTEMI,,168,70,24.8015873,No,61,32,22,32,No,No,Smoker
+764,76,Female,No,Femoral,NSTEMI,,152,46,19.9099723,No,139,68,42,89,No,No,Smoker
+765,69,Male,No,Radial,Unstable Angina,,165,65,23.87511478,No,209,137,40,110,No,No,Never
+766,59,Male,No,Radial,Unstable Angina,,174,78,25.76298058,Yes,213,78,23,877,Yes,No,Smoker
+767,70,Male,No,Femoral,Unstable Angina,,163,74,27.85200798,Yes,210,64,25,549,Yes,Yes,Never
+768,61,Male,No,Femoral,Unstable Angina,,172,68,22.98539751,No,104,64,27,37,No,No,Ex-smoker
+769,67,Male,No,Radial,Unstable Angina,,170,62,21.4532872,No,225,155,26,208,No,Yes,Smoker
+770,86,Female,No,Radial,NSTEMI,,,,,No,,,,,No,No,Never
+771,71,Female,No,Femoral,NSTEMI,,,,,No,,,,,No,Yes,Never
+772,57,Male,No,Radial,Unstable Angina,,165,72,26.44628099,Yes,191,142,24,180,No,No,Ex-smoker
+773,53,Male,No,Radial,Unstable Angina,,,,,No,220,136,46,116,No,No,Never
+774,59,Female,No,Femoral,Unstable Angina,,,,,No,133,43,15,97,Yes,Yes,Ex-smoker
+775,62,Male,No,Radial,Unstable Angina,,160,63.7,24.8828125,No,238,163,43,123,Yes,Yes,Ex-smoker
+776,70,Male,No,Radial,Unstable Angina,,,,,No,224,119,73,75,No,Yes,Smoker
+777,69,Male,No,Radial,Unstable Angina,,,,,No,149,113,26,61,No,Yes,Ex-smoker
+778,66,Female,No,Femoral,Unstable Angina,,,,,No,,,,113,No,Yes,Ex-smoker
+779,70,Male,No,Radial,Unstable Angina,,,,,No,173,92,51,76,Yes,Yes,Smoker
+780,66,Male,No,Radial,NSTEMI,,,,,No,229,156,43,55,No,No,Smoker
+781,58,Male,No,Femoral,Unstable Angina,,,,,No,147,87,33,126,Yes,Yes,Never
+782,72,Female,No,Radial,NSTEMI,,,,,No,154,98,36,60,Yes,Yes,Ex-smoker
+783,49,Female,No,Radial,Unstable Angina,,,,,No,189,118,48,67,No,Yes,Never
+784,47,Female,No,Radial,Unstable Angina,,158,67,26.83864765,Yes,191,84,27,429,No,Yes,Never
+785,61,Male,No,Femoral,Unstable Angina,,169,68,23.80869017,No,118,61,40,122,No,No,Smoker
+786,60,Male,No,Femoral,Unstable Angina,,,,,No,120,52,34,192,Yes,Yes,Ex-smoker
+787,71,Male,No,Femoral,NSTEMI,,169,61,21.3577956,No,215,147,50,74,No,Yes,Never
+788,64,Male,No,Radial,Unstable Angina,,,,,No,123,63,35,76,No,Yes,Ex-smoker
+789,59,Male,No,Radial,Unstable Angina,,167,64,22.94811574,No,222,277,47,49,No,No,Never
+790,77,Female,No,Radial,Unstable Angina,,145,65,30.91557669,Yes,123,60,34,89,Yes,Yes,Ex-smoker
+791,56,Male,No,Radial,Unstable Angina,,,,,No,225,119,37,259,Yes,Yes,Smoker
+792,72,Male,No,Radial,Unstable Angina,,167,65,23.30668005,No,98,47,27,101,No,No,Smoker
+793,61,Male,No,Femoral,Unstable Angina,,,,,No,140,71,33,536,Yes,Yes,Smoker
+794,59,Male,No,Femoral,Unstable Angina,,167,63,22.58955144,No,175,95,37,353,No,Yes,Smoker
+795,76,Male,No,Femoral,Unstable Angina,,,,,No,175,116,39,68,No,No,Never
+796,74,Female,No,Radial,Unstable Angina,,149.5,63,28.18760417,Yes,208,128,36,199,Yes,Yes,Never
+797,60,Male,No,Radial,Unstable Angina,,167,74,26.53375883,Yes,,,,269,Yes,Yes,Never
+798,62,Male,No,Femoral,Unstable Angina,,175,75,24.48979592,No,181,98,48,156,No,Yes,Never
+799,64,Female,No,Radial,Unstable Angina,,,,,No,138,81,39,50,No,Yes,Never
+800,72,Female,No,Radial,Unstable Angina,,,,,No,152,91,44,53,Yes,Yes,Never
+801,65,Female,No,Radial,Unstable Angina,,,,,No,190,125,34,156,Yes,No,Ex-smoker
+802,66,Male,No,Radial,Unstable Angina,,,,,No,206,127,25,244,No,Yes,Ex-smoker
+803,70,Male,No,Radial,Unstable Angina,,,,,No,169,99,43,81,No,No,Smoker
+804,72,Male,No,Radial,Unstable Angina,,,,,No,186,116,36,75,Yes,No,Ex-smoker
+805,67,Female,No,Radial,Unstable Angina,,,,,No,232,157,36,175,No,Yes,Ex-smoker
+806,69,Female,No,Radial,Unstable Angina,,151,52,22.80601728,No,174,93,29,163,No,No,Never
+807,71,Female,No,Femoral,Unstable Angina,,,,,No,166,86,48,124,No,Yes,Never
+808,70,Female,No,Femoral,Unstable Angina,,135,48.7,26.72153635,Yes,169,124,33,145,No,No,Never
+809,67,Female,No,Radial,Unstable Angina,,147,55.2,25.54491184,Yes,261,165,40,65,No,Yes,Never
+810,71,Female,No,Radial,Unstable Angina,,154,62,26.14268848,Yes,150,78,44,129,Yes,No,Never
+811,69,Male,No,Radial,NSTEMI,,170,69,23.87543253,No,204,142,27,108,No,Yes,Smoker
+812,80,Female,No,Radial,NSTEMI,,143.5,42.5,20.63883257,No,177.4,81,38,92,No,No,Never
+813,51,Male,No,Radial,Unstable Angina,,165,60,22.03856749,No,245,119,89,25,No,No,Smoker
+814,75,Female,No,Radial,Unstable Angina,,155,60,24.97398543,No,119,43,46,76,No,Yes,Never
+815,71,Female,No,Femoral,Unstable Angina,,156,59,24.24391847,No,234,160,50,244,No,Yes,Never
+816,47,Male,No,Radial,Unstable Angina,,173,60,20.04744562,No,214,132,41,80,Yes,No,Never
+817,55,Male,No,Radial,Unstable Angina,,178,60,18.9370029,No,178,114,33,103,Yes,No,Smoker
+818,73,Female,No,Radial,Unstable Angina,,152,50,21.64127424,No,227,150,42,175,No,Yes,Never
+819,65,Male,No,Radial,Unstable Angina,,168,60,21.2585034,No,206,154,28,172,Yes,Yes,Ex-smoker
+820,55,Male,No,Radial,Unstable Angina,,168,78,27.63605442,Yes,155,95,29,120,Yes,No,Smoker
+821,47,Male,No,Radial,Unstable Angina,,171,82,28.04281659,Yes,243,140,36,275,Yes,Yes,Smoker
+822,65,Female,No,Femoral,Unstable Angina,,153,48,20.504934,No,186,102,49,138,No,Yes,Never
+823,63,Female,No,Femoral,Unstable Angina,,165,63,23.14049587,No,143,82,29,119,Yes,Yes,Never
+824,73,Male,No,Radial,Unstable Angina,,171,80,27.35884546,Yes,141,65,41,123,No,No,Never
+825,67,Male,No,Radial,Unstable Angina,,170,61,21.10726644,No,225,155,26,208,No,Yes,Smoker
+826,42,Male,No,Radial,Unstable Angina,,171,84,28.72678773,Yes,244,160,33,266,No,No,Smoker
+827,44,Male,No,Radial,Unstable Angina,,,76,,No,123,70,28,158,No,No,Ex-smoker
+828,56,Male,No,Radial,Unstable Angina,,170,95,32.87197232,Yes,197,113,41,166,No,Yes,Ex-smoker
+829,79,Female,No,Radial,Unstable Angina,,155,58,24.14151925,No,159,83,13,58,No,Yes,Never
+830,78,Female,No,Radial,Unstable Angina,,150,50,22.22222222,No,181,139,30,70,No,Yes,Never
+831,61,Male,No,Radial,Unstable Angina,,164,85,31.60321237,Yes,166,62,47,235,Yes,Yes,Ex-smoker
+832,69,Female,No,Radial,Unstable Angina,,,50,,No,152,83,45,138,Yes,Yes,Never
+833,64,Male,No,Radial,Unstable Angina,,167,82,29.4022733,Yes,169,114,28,103,No,Yes,Never
+834,61,Female,No,Radial,Unstable Angina,,,,,No,255,189,41,109,No,No,Never
+835,65,Male,No,Radial,Unstable Angina,,165,70,25.71166208,Yes,186,119,47,93,No,Yes,Ex-smoker
+836,47,Female,No,Femoral,Unstable Angina,,156,61.65,25.33284024,Yes,130,73,45,88,Yes,Yes,Never
+837,60,Female,No,Radial,Unstable Angina,,150,51.9,23.06666667,No,186,117,46,63,Yes,Yes,Never
+838,74,Female,No,Femoral,Unstable Angina,,160,72.5,28.3203125,Yes,157,100,28,134,No,Yes,Never
+839,67,Male,No,Femoral,Unstable Angina,,168,63.6,22.53401361,No,182,110,33,195,No,No,Never
+840,61,Male,No,Radial,Unstable Angina,,162,64.9,24.72946197,No,247,170,41,124,No,No,Smoker
+841,55,Male,No,Radial,Unstable Angina,,172,71,23.99945917,No,129,63,45,47,No,No,Never
+842,66,Male,No,Femoral,Unstable Angina,,,,,No,136,75,19,50,No,No,Never
+843,57,Male,No,Femoral,Unstable Angina,,170,71,24.56747405,No,181,121,29,102,No,Yes,Never
+844,57,Female,No,Radial,Unstable Angina,,159,72,28.47988608,Yes,174,91,42,151,No,Yes,Never
+845,61,Male,No,Radial,Unstable Angina,,172,70,23.66143862,No,115,65,38,79,Yes,No,Never
+846,55,Male,No,Radial,Unstable Angina,,167,72,25.81663021,Yes,172,92,47,158,No,Yes,Never
+847,59,Male,No,Femoral,Unstable Angina,,,,,No,169,74,23,187,No,No,Smoker
+848,61,Male,No,Radial,Unstable Angina,,169,88,30.8112461,Yes,150,111,23,108,No,Yes,Never
+849,67,Female,No,Radial,Unstable Angina,,162,58,22.10028959,No,182,102,61,91,No,Yes,Never
+850,73,Female,No,Radial,Unstable Angina,,157,72,29.21010994,Yes,169,116,27,135,No,Yes,Never
+851,71,Male,No,Femoral,NSTEMI,,169,61,21.3577956,No,215,147,50,74,No,Yes,Never
+852,69,Male,No,Femoral,Unstable Angina,,,,,No,117,75,26,88,Yes,Yes,Ex-smoker
+853,69,Female,No,Radial,Unstable Angina,,153,66.45,28.38651801,Yes,336,224,61,137,No,Yes,Never
+854,86,Female,No,Radial,Unstable Angina,,142.5,50.4,24.8199446,No,232,153,41,182,No,Yes,Never
+855,78,Female,No,Radial,Unstable Angina,,158,60,24.03460984,No,178.4,130,29,97,Yes,Yes,Never
+856,67,Male,No,Femoral,Unstable Angina,,156,64,26.29848784,Yes,177.2,107,36,286,Yes,Yes,Never
+857,74,Male,Yes,Femoral,STEMI,,,,,No,117.6,58,45,,No,Yes,Smoker

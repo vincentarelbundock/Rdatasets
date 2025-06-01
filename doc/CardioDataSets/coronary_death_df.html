@@ -1,0 +1,96 @@
+<!DOCTYPE html><html><head><title>R: High vs Moderate Statins for MI Prevention</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>coronary_death_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>High vs Moderate Statins for MI Prevention</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, coronary_death_df, is a data frame containing information from 4 clinical trials
+comparing intensive (high dose) versus moderate (standard dose) statin therapy for preventing
+coronary death or myocardial infarction. It includes data on treatment outcomes across multiple
+endpoints.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(coronary_death_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 4 observations and 16 variables:
+</p>
+
+<dl>
+<dt>trial</dt><dd><p>Trial identifier (character vector)</p>
+</dd>
+<dt>pop</dt><dd><p>Patient population description (character vector)</p>
+</dd>
+<dt>nt</dt><dd><p>Number of patients in treatment group (integer vector)</p>
+</dd>
+<dt>nc</dt><dd><p>Number of patients in control group (integer vector)</p>
+</dd>
+<dt>ep1t</dt><dd><p>Endpoint 1 events in treatment group (integer vector)</p>
+</dd>
+<dt>ep1c</dt><dd><p>Endpoint 1 events in control group (integer vector)</p>
+</dd>
+<dt>ep2t</dt><dd><p>Endpoint 2 events in treatment group (integer vector)</p>
+</dd>
+<dt>ep2c</dt><dd><p>Endpoint 2 events in control group (integer vector)</p>
+</dd>
+<dt>ep3t</dt><dd><p>Endpoint 3 events in treatment group (integer vector)</p>
+</dd>
+<dt>ep3c</dt><dd><p>Endpoint 3 events in control group (integer vector)</p>
+</dd>
+<dt>ep4t</dt><dd><p>Endpoint 4 events in treatment group (integer vector)</p>
+</dd>
+<dt>ep4c</dt><dd><p>Endpoint 4 events in control group (integer vector)</p>
+</dd>
+<dt>ep5t</dt><dd><p>Endpoint 5 events in treatment group (integer vector)</p>
+</dd>
+<dt>ep5c</dt><dd><p>Endpoint 5 events in control group (integer vector)</p>
+</dd>
+<dt>ep6t</dt><dd><p>Endpoint 6 events in treatment group (integer vector)</p>
+</dd>
+<dt>ep6c</dt><dd><p>Endpoint 6 events in control group (integer vector)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'coronary_death_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+CardioDataSets package and assists users in identifying its specific characteristics.
+The suffix 'df' indicates that the dataset is a standard data frame. The original content has not been modified
+in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the metadat package version 1.2-0
+</p>
+
+</main>
+
+</div>
+</body></html>

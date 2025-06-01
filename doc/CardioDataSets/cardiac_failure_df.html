@@ -1,0 +1,89 @@
+<!DOCTYPE html><html><head><title>R: Heart Failure Clinical Dataset</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>cardiac_failure_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Heart Failure Clinical Dataset</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, cardiac_failure_df, is a data frame containing clinical data from
+299 patients with heart failure. It includes 13 variables covering demographic
+information, medical history, laboratory results, and mortality outcomes.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(cardiac_failure_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 299 observations and 13 variables:
+</p>
+
+<dl>
+<dt>age</dt><dd><p>Patient age in years (numeric)</p>
+</dd>
+<dt>anaemia</dt><dd><p>Presence of anaemia (integer: 0=no, 1=yes)</p>
+</dd>
+<dt>creatinine_phosphokinase</dt><dd><p>Level of CPK enzyme in mcg/L (integer)</p>
+</dd>
+<dt>diabetes</dt><dd><p>Presence of diabetes (integer: 0=no, 1=yes)</p>
+</dd>
+<dt>ejection_fraction</dt><dd><p>Percentage of blood leaving heart (integer)</p>
+</dd>
+<dt>high_blood_pressure</dt><dd><p>Presence of hypertension (integer: 0=no, 1=yes)</p>
+</dd>
+<dt>platelets</dt><dd><p>Platelet count in kiloplatelets/mL (numeric)</p>
+</dd>
+<dt>serum_creatinine</dt><dd><p>Level of serum creatinine in mg/dL (numeric)</p>
+</dd>
+<dt>serum_sodium</dt><dd><p>Level of serum sodium in mEq/L (integer)</p>
+</dd>
+<dt>sex</dt><dd><p>Patient sex (integer: 0=female, 1=male)</p>
+</dd>
+<dt>smoking</dt><dd><p>Smoking status (integer: 0=no, 1=yes)</p>
+</dd>
+<dt>time</dt><dd><p>Follow-up period in days (integer)</p>
+</dd>
+<dt>DEATH_EVENT</dt><dd><p>Death during follow-up (integer: 0=no, 1=yes)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'cardiac_failure_df' to avoid confusion with other
+datasets in the R ecosystem. This naming convention helps distinguish this dataset
+as part of the CardioDataSets package and assists users in identifying its specific
+characteristics. The suffix 'df' indicates that the dataset is a standard data frame.
+The original content has not been modified in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the SOPC package version 0.1.0
+</p>
+
+</main>
+
+</div>
+</body></html>

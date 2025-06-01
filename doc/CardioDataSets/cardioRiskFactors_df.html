@@ -1,0 +1,95 @@
+<!DOCTYPE html><html><head><title>R: Cardiovascular Risk Factors</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>cardioRiskFactors_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Cardiovascular Risk Factors</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, cardioRiskFactors_df, is a data frame containing information from
+a study investigating the association between uric acid and cardiovascular risk
+factors in developing countries. It includes data from 998 participants (474 men
+and 524 women) aged 25-64 years.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(cardioRiskFactors_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 998 observations and 14 variables:
+</p>
+
+<dl>
+<dt>age</dt><dd><p>Age in years (integer)</p>
+</dd>
+<dt>bmi</dt><dd><p>Body Mass Index in kg/m² (numeric)</p>
+</dd>
+<dt>waisthip</dt><dd><p>Waist-to-hip ratio (numeric)</p>
+</dd>
+<dt>smok</dt><dd><p>Smoking status (integer)</p>
+</dd>
+<dt>choles</dt><dd><p>Total cholesterol in mg/dL (numeric)</p>
+</dd>
+<dt>trig</dt><dd><p>Triglycerides in mg/dL (numeric)</p>
+</dd>
+<dt>hdl</dt><dd><p>HDL cholesterol in mg/dL (numeric)</p>
+</dd>
+<dt>ldl</dt><dd><p>LDL cholesterol in mg/dL (numeric)</p>
+</dd>
+<dt>sys</dt><dd><p>Systolic blood pressure in mmHg (integer)</p>
+</dd>
+<dt>dia</dt><dd><p>Diastolic blood pressure in mmHg (numeric)</p>
+</dd>
+<dt>Uric</dt><dd><p>Uric acid level in mg/dL (integer)</p>
+</dd>
+<dt>sex</dt><dd><p>Sex (integer)</p>
+</dd>
+<dt>alco</dt><dd><p>Alcohol consumption (numeric)</p>
+</dd>
+<dt>apoa</dt><dd><p>Apolipoprotein A in mg/dL (numeric)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'cardioRiskFactors_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+CardioDataSets package and assists users in identifying its specific characteristics.
+The suffix 'df' indicates that the dataset is a standard data frame. The original content has not been modified
+in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the Rfit package version 0.27.0. Original study:
+Heritier S, Cantoni E, Copt S, Victoria-Feser M (2009).
+Robust Methods in Biostatistics.
+New York: John Wiley and Sons.
+</p>
+
+</main>
+
+</div>
+</body></html>

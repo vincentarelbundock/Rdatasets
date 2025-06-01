@@ -1,0 +1,70 @@
+<!DOCTYPE html><html><head><title>R: Age vs. Maximum Heart Rate</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>age_heartrate_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Age vs. Maximum Heart Rate</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, age_heartrate_df, is a data frame containing simulated data
+representing the relationship between age and maximum heart rate. It includes
+15 observations based on established physiological models.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(age_heartrate_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 15 observations and 2 variables:
+</p>
+
+<dl>
+<dt>age</dt><dd><p>Age in years (numeric)</p>
+</dd>
+<dt>maxrate</dt><dd><p>Maximum predicted heart rate in beats per minute (numeric)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'age_heartrate_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+CardioDataSets package and assists users in identifying its specific characteristics.
+The suffix 'df' indicates that the dataset is a standard data frame. The original content has not been modified
+in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the UsingR package version 2.0-7. Original research:
+Tanaka H, Monahan KD, Seals DR (2001).
+&quot;Age-predicted maximal heart rate revisited.&quot;
+Journal of the American College of Cardiology, 37(1):153-156.
+</p>
+
+</main>
+
+</div>
+</body></html>

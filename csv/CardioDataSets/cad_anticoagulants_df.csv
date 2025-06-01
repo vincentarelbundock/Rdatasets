@@ -1,0 +1,35 @@
+rownames,study,year,intensity,asp.t,asp.c,ai,n1i,ci,n2i
+1,MacMillan et al,1960,high,0,0,8,27,0,23
+2,Borchegrevink,1960,high,0,0,1,103,8,100
+3,Clausen et al,1961,high,0,0,15,93,13,99
+4,Harvald et al,1961,high,0,0,34,145,45,171
+5,Apenstrom and Korsan-Bengtsen,1964,high,0,0,39,118,50,113
+6,Conrad et al,1964,high,0,0,9,52,8,34
+7,Wasserman et al,1966,high,0,0,12,77,15,70
+8,Loeliger et al,1967,high,0,0,8,128,11,112
+9,Lovell et al,1967,high,0,0,33,178,39,172
+10,Seaman et al,1969,high,0,0,36,88,31,87
+11,Sorensen et al,1969,high,0,0,30,156,43,120
+12,Sixty Plus Reinfarction,1980,high,0,0,51,439,69,439
+13,WARIS,1990,high,0,0,94,607,123,607
+14,ASPECT,1994,high,0,0,170,1700,189,1704
+15,Meuwissen et al,1969,high,0,0,1,68,8,70
+16,Drapkin and Merskey,1974,high,0,0,111,745,166,782
+17,Breddin et al,1980,high,0,0,39,320,32,309
+18,Breddin et al,1980,high,0,1,39,320,27,317
+19,CABADAS,1993,high,0,1,3,307,8,309
+20,Eritsland et al,1996,high,0,1,5,319,9,291
+21,ATACS,1990,high,0,1,1,24,0,32
+22,McEnany et al,1982,moderate,0,1,1,68,1,71
+23,Kraska et al,1981,moderate,0,1,5,60,7,60
+24,EPSIM,1982,moderate,0,1,67,652,72,651
+25,COOP,1969,moderate,0,0,120,385,114,350
+26,MRC Anticoagulant,1964,moderate,0,0,29,195,40,188
+27,Williams et al,1986,moderate,0,0,1,51,4,51
+28,McEnany et al,1982,moderate,0,0,1,68,3,77
+29,ATACS,1990,high,1,1,0,37,0,32
+30,OASIS Pilot 2,1998,moderate,1,1,2,98,5,99
+31,ATACS-Main,1994,moderate,1,1,2,105,2,109
+32,OASIS Pilot,1998,low,1,1,2,155,3,154
+33,Post-CABG,1997,low,1,1,28,674,39,677
+34,CARS,1997,low,1,1,118,3382,102,3393
