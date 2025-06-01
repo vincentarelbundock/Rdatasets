@@ -1,0 +1,75 @@
+<!DOCTYPE html><html><head><title>R: Heart Failure rehospitalization risk</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>heartfailure_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Heart Failure rehospitalization risk</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, heartfailure_df, is a data frame containing simulated data from 800 patients
+with heart failure who are at risk of recurrent hospitalization. The dataset includes
+3,068 observations (2,268 events) tracking patient outcomes over time.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(heartfailure_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 3,068 observations and 6 variables:
+</p>
+
+<dl>
+<dt>id</dt><dd><p>Patient identification number (integer vector)</p>
+</dd>
+<dt>treatment</dt><dd><p>Treatment assignment (factor with 2 levels)</p>
+</dd>
+<dt>t0</dt><dd><p>Start time of observation period (numeric vector)</p>
+</dd>
+<dt>t1</dt><dd><p>End time of observation period (numeric vector)</p>
+</dd>
+<dt>enum</dt><dd><p>Event number (numeric vector)</p>
+</dd>
+<dt>event</dt><dd><p>Event indicator (numeric vector)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'heartfailure_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+CardioDataSets package and assists users in identifying its specific characteristics.
+The suffix 'df' indicates that the dataset is a standard data frame. The original content has not been modified
+in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the survPen package version 2.0-2. Based on hfaction_cpx12 dataset from package WA.
+</p>
+
+</main>
+
+</div>
+</body></html>

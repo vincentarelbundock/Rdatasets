@@ -1,0 +1,70 @@
+<!DOCTYPE html><html><head><title>R: Anger recall effect on heart rate (Lakens, 2013)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>emotion_heartrate_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Anger recall effect on heart rate (Lakens, 2013)</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, emotion_heartrate_df, is a data frame containing heart rate measurements
+from a study investigating how recalling anger affects heart rate. It includes baseline
+and anger-induced heart rate measurements from 68 participants.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(emotion_heartrate_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 68 observations and 3 variables:
+</p>
+
+<dl>
+<dt>ID</dt><dd><p>Participant identification number (integer vector)</p>
+</dd>
+<dt>HR_baseline</dt><dd><p>Baseline heart rate in beats per minute (numeric vector)</p>
+</dd>
+<dt>HR_anger</dt><dd><p>Heart rate during anger recall in beats per minute (numeric vector)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'emotion_heartrate_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+CardioDataSets package and assists users in identifying its specific characteristics.
+The suffix 'df' indicates that the dataset is a standard data frame. The original content has not been modified
+in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the esci package version 1.0-7. Original study:
+Lakens D (2013). Conceptual replication of Ekman et al. (1983) emotion study.
+</p>
+
+</main>
+
+</div>
+</body></html>

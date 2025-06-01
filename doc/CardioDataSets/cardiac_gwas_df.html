@@ -1,0 +1,77 @@
+<!DOCTYPE html><html><head><title>R: Coronary Artery Disease GWAS Meta-Analysis</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>cardiac_gwas_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Coronary Artery Disease GWAS Meta-Analysis</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, cardiac_gwas_df, is a data frame containing genome-wide association study
+(GWAS) results from a multi-ethnic meta-analysis of coronary artery disease (CAD).
+It includes 9,919 genetic variants with their effect sizes and study characteristics.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(cardiac_gwas_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 9,919 observations and 7 variables:
+</p>
+
+<dl>
+<dt>beta_flipped</dt><dd><p>Effect size estimates (numeric)</p>
+</dd>
+<dt>gcse</dt><dd><p>Genomic control standard error (numeric)</p>
+</dd>
+<dt>variants</dt><dd><p>Genetic variant identifiers (character)</p>
+</dd>
+<dt>studies</dt><dd><p>Participating studies (character)</p>
+</dd>
+<dt>cases</dt><dd><p>Number of cases (integer)</p>
+</dd>
+<dt>controls</dt><dd><p>Number of controls (integer)</p>
+</dd>
+<dt>fdr214_gwas46</dt><dd><p>False discovery rate adjusted p-values (numeric)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as 'cardiac_gwas_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+CardioDataSets package and assists users in identifying its specific characteristics.
+The suffix 'df' indicates that the dataset is a standard data frame. The original content has not been modified
+in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the getmstatistic package version 0.2.2
+</p>
+
+</main>
+
+</div>
+</body></html>
