@@ -1,0 +1,125 @@
+<!DOCTYPE html><html><head><title>R: FieldingOF table</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>FieldingOF</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+FieldingOF table
+</h2>
+
+<h3>Description</h3>
+
+<p>Outfield position data: information about positions played in the outfield
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(FieldingOF)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 12380 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>playerID</code></dt><dd><p>Player ID code</p>
+</dd>
+<dt><code>yearID</code></dt><dd><p>Year</p>
+</dd>
+<dt><code>stint</code></dt><dd><p>player's stint (order of appearances within a season)</p>
+</dd>
+<dt><code>Glf</code></dt><dd><p>Games played in left field</p>
+</dd>
+<dt><code>Gcf</code></dt><dd><p>Games played in center field</p>
+</dd>
+<dt><code>Grf</code></dt><dd><p>Games played in right field</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Lahman, S. (2024) Lahman's Baseball Database, 1871-2023, 2024 version, <a href="http://www.seanlahman.com/">http://www.seanlahman.com/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>require("dplyr")
+require("tidyr")
+
+## Data set only goes through 1955
+## Can get a more complete record from the Fielding data frame
+## or from the Appearances data (see below)
+
+## Output directly from the FieldingOF data
+
+## Barry Bonds (no records: post-1955 player)
+FieldingOF %&gt;% 
+   filter(playerID == "bondsba01") 
+
+## Willie Mays (first few years)
+FieldingOF %&gt;% 
+  filter(playerID == "mayswi01") 
+
+## Ty Cobb (complete)
+FieldingOF %&gt;% 
+  filter(playerID == "cobbty01") 
+
+## One way to get OF game information from the Fielding data
+## Note: OF games != sum(LF, CF, RF) because players can switch
+## OF positions within a game. Players can also switch from
+## other positions to outfield during a game. OF represents
+## the number of games a player started in the outfield.
+Fielding %&gt;%
+   select(playerID, yearID, stint, POS, G) %&gt;%
+   filter(POS %in% c("LF", "CF", "RF", "OF")) %&gt;%
+   tidyr::spread(POS, G, fill = 0) %&gt;%
+   filter(playerID == "trumbma01")
+
+## Another way is through the Appearances data (no stint).
+## Provides a somewhat nicer table than the above.
+
+## Mark Trumbo (active player)
+Appearances %&gt;%
+   select(playerID, yearID, G_lf, G_cf, G_rf, G_of) %&gt;%
+   filter(playerID == "trumbma01")
+
+## A slightly better format, perhaps
+Appearances %&gt;%
+  select(playerID, yearID, G_lf, G_cf, G_rf, G_of) %&gt;%
+  rename(LF = G_lf, CF = G_cf, RF = G_rf, OF = G_of) %&gt;%
+  filter(playerID == "trumbma01")
+
+## Willie Mays (1951-1973)
+Appearances %&gt;%
+  select(playerID, yearID, G_lf, G_cf, G_rf, G_of) %&gt;%
+  filter(playerID == "mayswi01")
+
+## Joe DiMaggio (1936-1951)
+Appearances %&gt;%
+  select(playerID, yearID, G_lf, G_cf, G_rf, G_of) %&gt;%
+  filter(playerID == "dimagjo01")
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

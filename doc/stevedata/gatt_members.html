@@ -1,0 +1,61 @@
+<!DOCTYPE html><html><head><title>R: The 128 Countries That Had Signed GATT by 1994</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gatt_members</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The 128 Countries That Had Signed GATT by 1994</h2>
+
+<h3>Description</h3>
+
+<p>A data set on GATT membership.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>gatt_members
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 128 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>country</code></dt><dd><p>a character vector for a country name</p>
+</dd>
+<dt><code>iso3c</code></dt><dd><p>a three-character ISO code</p>
+</dd>
+<dt><code>date</code></dt><dd><p>the date the country joined GATT</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data come from the World Trade Organization. Three-character ISO codes should
+be used with some caution as they mostly match what these states are now, if
+not what they were when they signed GATT (see: Benin, Democratic Republic of
+Congo). The conspicuous exception here is Yugoslavia, which has Yugoslavia's
+three-character ISO code of <code>YUG</code>
+</p>
+
+</main>
+
+</div>
+</body></html>

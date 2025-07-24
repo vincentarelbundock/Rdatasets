@@ -85,7 +85,7 @@
 
       Grotenhuis, Manfred Te, Rob Eisinga, and SV Subramanian. 2011.
       "Robinson's Ecological Correlations and the Behavior of
-      Individuals: methodological corrections." *Internatoinal Journal
+      Individuals: methodological corrections." *International Journal
       of Epidemiology* 40(4): 1123-25.
 
       Robinson, WS. 1950. "Ecological Correlations and the Behavior of

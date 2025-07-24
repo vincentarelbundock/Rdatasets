@@ -42,7 +42,7 @@
          the core non-tariff barrier coverage ratio
 
       ``qualcov``
-         the quality non-tariff barrier coverate ratio
+         the quality non-tariff barrier coverage ratio
 
       ``polity``
          the familiar Polity measure of democracy, from -10 to 10

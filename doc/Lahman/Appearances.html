@@ -1,0 +1,177 @@
+<!DOCTYPE html><html><head><title>R: Appearances table</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Appearances</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Appearances table
+</h2>
+
+<h3>Description</h3>
+
+<p>Data on player appearances
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Appearances)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 113720 observations on the following 21 variables.
+</p>
+
+<dl>
+<dt><code>yearID</code></dt><dd><p>Year</p>
+</dd>
+<dt><code>teamID</code></dt><dd><p>Team; a factor</p>
+</dd>
+<dt><code>lgID</code></dt><dd><p>League; a factor with levels <code>AA</code> <code>AL</code> <code>FL</code> <code>NL</code> <code>PL</code> <code>UA</code></p>
+</dd>
+<dt><code>playerID</code></dt><dd><p>Player ID code</p>
+</dd>
+<dt><code>G_all</code></dt><dd><p>Total games played</p>
+</dd>
+<dt><code>GS</code></dt><dd><p>Games started</p>
+</dd>
+<dt><code>G_batting</code></dt><dd><p>Games in which player batted</p>
+</dd>
+<dt><code>G_defense</code></dt><dd><p>Games in which player appeared on defense</p>
+</dd>
+<dt><code>G_p</code></dt><dd><p>Games as pitcher</p>
+</dd>
+<dt><code>G_c</code></dt><dd><p>Games as catcher</p>
+</dd>
+<dt><code>G_1b</code></dt><dd><p>Games as firstbaseman</p>
+</dd>
+<dt><code>G_2b</code></dt><dd><p>Games as secondbaseman</p>
+</dd>
+<dt><code>G_3b</code></dt><dd><p>Games as thirdbaseman</p>
+</dd>
+<dt><code>G_ss</code></dt><dd><p>Games as shortstop</p>
+</dd>
+<dt><code>G_lf</code></dt><dd><p>Games as leftfielder</p>
+</dd>
+<dt><code>G_cf</code></dt><dd><p>Games as centerfielder</p>
+</dd>
+<dt><code>G_rf</code></dt><dd><p>Games as right fielder</p>
+</dd>
+<dt><code>G_of</code></dt><dd><p>Games as outfielder</p>
+</dd>
+<dt><code>G_dh</code></dt><dd><p>Games as designated hitter</p>
+</dd>
+<dt><code>G_ph</code></dt><dd><p>Games as pinch hitter</p>
+</dd>
+<dt><code>G_pr</code></dt><dd><p>Games as pinch runner</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The Appearances table in the original version has some incorrect variable names.
+In particular, the 5th column is <code>career_year</code>.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Lahman, S. (2024) Lahman's Baseball Database, 1871-2023, 2024 version, <a href="http://www.seanlahman.com/">http://www.seanlahman.com/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Appearances)
+library("dplyr")
+library("tidyr")
+
+# Henry Aaron's last two years as a DH in Milwaukee
+Appearances %&gt;%
+   filter(playerID == "aaronha01" &amp; teamID == "ML4") %&gt;%
+   select(yearID:G_batting, G_of:G_ph)  # subset variables
+   
+# Herb Washington, strictly a pinch runner for Oakland in 1974-5
+Appearances %&gt;%
+   filter(playerID == "washihe01") 
+
+# A true utility player - Jerry Hairston, Jr.
+Appearances %&gt;%
+  filter(playerID == "hairsje02")
+
+# Appearances for the 1984 Cleveland Indians
+Appearances %&gt;%
+  filter(teamID == "CLE" &amp; yearID == 1984)
+
+# Pete Rose's primary position each year of his career
+Appearances %&gt;% 
+   filter(playerID == "rosepe01") %&gt;%
+   group_by(yearID, teamID) %&gt;%
+   gather(pos, G, G_1b:G_rf) %&gt;%
+   filter(G == max(G)) %&gt;%
+   select(yearID:G_all, pos, G) %&gt;%
+   mutate(pos = substring(as.character(pos), 3, 4)) %&gt;%
+   arrange(yearID, teamID)
+
+
+# Most pitcher appearances each year since 1950
+Appearances %&gt;%
+   filter(yearID &gt;= 1950) %&gt;%
+   group_by(yearID) %&gt;%
+   summarise(maxPitcher = playerID[which.max(G_p)],
+             maxAppear = max(G_p))
+
+# Individuals who have played all 162 games since 1961
+all162 &lt;- Appearances %&gt;%
+              filter(yearID &gt; 1960 &amp; G_all == 162) %&gt;% 
+              arrange(yearID, playerID) %&gt;%
+              select(yearID:G_all)
+# Number of all-gamers by year (returns a vector)
+table(all162$yearID)
+
+# Players with most pinch hitting appearances in a year
+Appearances %&gt;%
+  arrange(desc(G_ph)) %&gt;%
+  select(playerID, yearID, teamID, lgID, G_all, G_ph) %&gt;%
+  head(., 10)
+
+# Players with most pinch hitting appearances, career
+Appearances %&gt;%
+  group_by(playerID) %&gt;%
+  select(playerID, G_all, G_ph) %&gt;%
+  summarise(G = sum(G_all), PH = sum(G_ph)) %&gt;%
+  arrange(desc(PH)) %&gt;%
+  head(., 10)
+
+# Players with most career appearances at each position
+Appearances %&gt;%
+  select(playerID, G_c:G_rf) %&gt;%
+  rename(C = G_c, `1B` = G_1b, `2B` = G_2b, SS = G_ss,
+         `3B` = G_3b, LF = G_lf, CF = G_cf, RF = G_rf) %&gt;%
+  gather(pos, G, C:RF) %&gt;%
+  group_by(pos, playerID) %&gt;%
+  summarise(G = sum(G)) %&gt;%
+  arrange(desc(G)) %&gt;%
+  do(head(., 1))
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

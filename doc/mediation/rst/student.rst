@@ -71,7 +71,7 @@
          Indicator variable for gender. 1 = female.
 
       income:
-         Total family income. 13 levels.
+         Total family income. 16 levels.
 
       free:
          Percent of 10th grade students receiving free lunch. 1 to 7

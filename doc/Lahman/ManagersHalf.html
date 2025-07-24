@@ -1,0 +1,95 @@
+<!DOCTYPE html><html><head><title>R: ManagersHalf table</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>ManagersHalf</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+ManagersHalf table
+</h2>
+
+<h3>Description</h3>
+
+<p>Split season data for managers
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(ManagersHalf)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 93 observations on the following 10 variables.
+</p>
+
+<dl>
+<dt><code>playerID</code></dt><dd><p>Manager (player) ID code</p>
+</dd>
+<dt><code>yearID</code></dt><dd><p>Year</p>
+</dd>
+<dt><code>teamID</code></dt><dd><p>Team; a factor</p>
+</dd>
+<dt><code>lgID</code></dt><dd><p>League; a factor with levels <code>AL</code> <code>NL</code></p>
+</dd>
+<dt><code>inseason</code></dt><dd><p>Managerial order.  One if the individual managed the team
+the entire year.  Otherwise denotes where the manager appeared
+in the managerial order (1 for first manager, 2 for second, etc.).
+A factor with levels <code>1</code> <code>2</code> <code>3</code> <code>4</code> <code>5</code></p>
+</dd>
+<dt><code>half</code></dt><dd><p>First or second half of season</p>
+</dd>
+<dt><code>G</code></dt><dd><p>Games managed</p>
+</dd>
+<dt><code>W</code></dt><dd><p>Wins</p>
+</dd>
+<dt><code>L</code></dt><dd><p>Losses</p>
+</dd>
+<dt><code>rank</code></dt><dd><p>Team's position in standings for the half</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Lahman, S. (2024) Lahman's Baseball Database, 1871-2023, 2024 version, <a href="http://www.seanlahman.com/">http://www.seanlahman.com/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library("dplyr")
+library("reshape2")
+
+# Only have data for 1892 and 1981
+
+# League rank by half for 1981 teams with the same
+# manager in both halves who were hired in-season
+ManagersHalf %&gt;% 
+  filter(yearID &gt;= 1901) %&gt;%
+  group_by(teamID, yearID) %&gt;%
+  filter(all(playerID == playerID[1])) %&gt;%  # same manager in both halves
+  mutate(winPct = round(W/G, 3)) %&gt;%
+  reshape2::dcast(playerID + yearID + teamID + lgID ~ half,
+                     value.var = "rank") %&gt;%
+  rename(rank1 = `1`, rank2 = `2`) 
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

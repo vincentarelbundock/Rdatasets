@@ -1,0 +1,107 @@
+<!DOCTYPE html><html><head><title>R: Parks table</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Parks</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Parks table
+</h2>
+
+<h3>Description</h3>
+
+<p>Name and location data for baseball stadiums. 
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Parks)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 260 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>park.key</code></dt><dd><p>unique identifier for each ballpark</p>
+</dd>
+<dt><code>park.name</code></dt><dd><p>the name of the ballpark</p>
+</dd>
+<dt><code>park.alias</code></dt><dd><p>a semicolon delimited list of other names for the ballpark if they exist</p>
+</dd>
+<dt><code>city</code></dt><dd><p>city where the ballpark is located</p>
+</dd>
+<dt><code>state</code></dt><dd><p>state where the ballpark is located</p>
+</dd>
+<dt><code>country</code></dt><dd><p>country where the ballpark is located</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This dataset apparently includes all ballparks that were ever used in baseball. There is no
+indication of the years they were used, nor the teams that played there.
+</p>
+<p>The ballparks can be associated with teams through the <code>park</code> variable in the 
+<code>Teams</code> table.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Lahman, S. (2024) Lahman's Baseball Database, 1871-2023, 2023 version, <a href="http://www.seanlahman.com/">http://www.seanlahman.com/</a>
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Teams</code></p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Parks)
+library(dplyr)
+# how many parks in each country?
+table(Parks$country)
+
+# how many parks in each US state?
+Parks %&gt;% 
+  filter(country=="US") %&gt;% 
+  count(state, sort=TRUE)
+
+# ballparks in NYC
+Parks %&gt;% 
+  filter(state=="NY") %&gt;% 
+  filter(city %in% c("New York", "Brooklyn", "Queens"))
+
+# ballparks in Canada
+Parks %&gt;% 
+  filter(country=="CA") %&gt;% 
+  count(state, sort=TRUE)
+
+# what are the Canadian parks?
+Parks %&gt;% 
+  dplyr::filter(country=="CA")
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html><html><head><title>R: Teams table</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Teams</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Teams table
+</h2>
+
+<h3>Description</h3>
+
+<p>Yearly statistics and standings for teams
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Teams)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 3045 observations on the following 48 variables.
+</p>
+
+<dl>
+<dt><code>yearID</code></dt><dd><p>Year</p>
+</dd>
+<dt><code>lgID</code></dt><dd><p>League; a factor with levels <code>AA</code> <code>AL</code> <code>FL</code> <code>NL</code> <code>PL</code> <code>UA</code></p>
+</dd>
+<dt><code>teamID</code></dt><dd><p>Team; a factor</p>
+</dd>
+<dt><code>franchID</code></dt><dd><p>Franchise (links to <code>TeamsFranchises</code> table)</p>
+</dd>
+<dt><code>divID</code></dt><dd><p>Team's division; a factor with levels  <code>C</code> <code>E</code> <code>W</code></p>
+</dd>
+<dt><code>Rank</code></dt><dd><p>Position in final standings</p>
+</dd>
+<dt><code>G</code></dt><dd><p>Games played</p>
+</dd>
+<dt><code>Ghome</code></dt><dd><p>Games played at home</p>
+</dd>
+<dt><code>W</code></dt><dd><p>Wins</p>
+</dd>
+<dt><code>L</code></dt><dd><p>Losses</p>
+</dd>
+<dt><code>DivWin</code></dt><dd><p>Division Winner (Y or N)</p>
+</dd>
+<dt><code>WCWin</code></dt><dd><p>Wild Card Winner (Y or N)</p>
+</dd>
+<dt><code>LgWin</code></dt><dd><p>League Champion(Y or N)</p>
+</dd>
+<dt><code>WSWin</code></dt><dd><p>World Series Winner (Y or N)</p>
+</dd>
+<dt><code>R</code></dt><dd><p>Runs scored</p>
+</dd>
+<dt><code>AB</code></dt><dd><p>At bats</p>
+</dd>
+<dt><code>H</code></dt><dd><p>Hits by batters</p>
+</dd>
+<dt><code>X2B</code></dt><dd><p>Doubles</p>
+</dd>
+<dt><code>X3B</code></dt><dd><p>Triples</p>
+</dd>
+<dt><code>HR</code></dt><dd><p>Homeruns by batters</p>
+</dd>
+<dt><code>BB</code></dt><dd><p>Walks by batters</p>
+</dd>
+<dt><code>SO</code></dt><dd><p>Strikeouts by batters</p>
+</dd>
+<dt><code>SB</code></dt><dd><p>Stolen bases</p>
+</dd>
+<dt><code>CS</code></dt><dd><p>Caught stealing</p>
+</dd>
+<dt><code>HBP</code></dt><dd><p>Batters hit by pitch</p>
+</dd>
+<dt><code>SF</code></dt><dd><p>Sacrifice flies</p>
+</dd>
+<dt><code>RA</code></dt><dd><p>Opponents runs scored</p>
+</dd>
+<dt><code>ER</code></dt><dd><p>Earned runs allowed</p>
+</dd>
+<dt><code>ERA</code></dt><dd><p>Earned run average</p>
+</dd>
+<dt><code>CG</code></dt><dd><p>Complete games</p>
+</dd>
+<dt><code>SHO</code></dt><dd><p>Shutouts</p>
+</dd>
+<dt><code>SV</code></dt><dd><p>Saves</p>
+</dd>
+<dt><code>IPouts</code></dt><dd><p>Outs Pitched (innings pitched x 3)</p>
+</dd>
+<dt><code>HA</code></dt><dd><p>Hits allowed</p>
+</dd>
+<dt><code>HRA</code></dt><dd><p>Homeruns allowed</p>
+</dd>
+<dt><code>BBA</code></dt><dd><p>Walks allowed</p>
+</dd>
+<dt><code>SOA</code></dt><dd><p>Strikeouts by pitchers</p>
+</dd>
+<dt><code>E</code></dt><dd><p>Errors</p>
+</dd>
+<dt><code>DP</code></dt><dd><p>Double Plays</p>
+</dd>
+<dt><code>FP</code></dt><dd><p>Fielding  percentage</p>
+</dd>
+<dt><code>name</code></dt><dd><p>Team's full name</p>
+</dd>
+<dt><code>park</code></dt><dd><p>Name of team's home ballpark</p>
+</dd>
+<dt><code>attendance</code></dt><dd><p>Home attendance total</p>
+</dd>
+<dt><code>BPF</code></dt><dd><p>Three-year park factor for batters</p>
+</dd>
+<dt><code>PPF</code></dt><dd><p>Three-year park factor for pitchers</p>
+</dd>
+<dt><code>teamIDBR</code></dt><dd><p>Team ID used by Baseball Reference website</p>
+</dd>
+<dt><code>teamIDlahman45</code></dt><dd><p>Team ID used in Lahman database version 4.5</p>
+</dd>
+<dt><code>teamIDretro</code></dt><dd><p>Team ID used by Retrosheet</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Variables <code>X2B</code> and <code>X3B</code> are named <code>2B</code> and <code>3B</code> in the original database
+</p>
+
+
+<h3>Source</h3>
+
+<p>Lahman, S. (2024) Lahman's Baseball Database, 1871-2023, 2024 version, <a href="http://www.seanlahman.com/">http://www.seanlahman.com/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Teams)
+library("dplyr")
+library("tidyr")
+
+# Add some selected measures to the Teams data frame
+# Restrict to AL and NL in modern era
+teams &lt;- Teams %&gt;% 
+  filter(yearID &gt;= 1901 &amp; lgID %in% c("AL", "NL")) %&gt;%
+  group_by(yearID, teamID) %&gt;%
+  mutate(TB = H + X2B + 2 * X3B + 3 * HR,
+         WinPct = W/G,
+         rpg = R/G,
+         hrpg = HR/G,
+         tbpg = TB/G,
+         kpg = SO/G,
+         k2bb = SO/BB,
+         whip = 3 * (H + BB)/IPouts)
+
+# Function to create a ggplot by year for selected team stats
+# Both arguments are character strings
+yrPlot &lt;- function(yvar, label)
+{
+    require("ggplot2")
+    ggplot(teams, aes_string(x = "yearID", y = yvar)) +
+       geom_point(size = 0.5) +
+       geom_smooth(method="loess") +
+       labs(x = "Year", y = paste(label, "per game"))
+}
+
+## Run scoring in the modern era by year
+yrPlot("rpg", "Runs")
+
+## Home runs per game by year
+yrPlot("hrpg", "Home runs")
+
+## Total bases per game by year
+yrPlot("tbpg", "Total bases")
+
+## Strikeouts per game by year
+yrPlot("kpg", "Strikeouts")
+
+## Plot win percentage vs. run differential (R - RA)
+ggplot(teams, aes(x = R - RA, y = WinPct)) +
+   geom_point(size = 0.5) +
+   geom_smooth(method="loess") + 
+   geom_hline(yintercept = 0.5, color = "orange") +
+   geom_vline(xintercept = 0, color = "orange") +
+   labs(x = "Run differential", y = "Win percentage")
+
+## Plot attendance vs. win percentage by league, post-1980
+teams %&gt;%  filter(yearID &gt;= 1980) %&gt;%
+ggplot(., aes(x = WinPct, y = attendance/1000)) +
+   geom_point(size = 0.5) +
+   geom_smooth(method="loess", se = FALSE) +
+   facet_wrap(~ lgID) +
+   labs(x = "Win percentage", y = "Attendance (1000s)")
+
+## Teams with over 4 million attendance in a season
+teams %&gt;% 
+  filter(attendance &gt;= 4e6) %&gt;%
+  select(yearID, lgID, teamID, Rank, attendance) %&gt;%
+  arrange(desc(attendance))
+
+## Average season HRs by park, post-1980
+teams %&gt;% 
+   filter(yearID &gt;= 1980) %&gt;%
+   group_by(park) %&gt;%
+     summarise(meanHRpg = mean((HR + HRA)/Ghome), nyears = n()) %&gt;%
+     filter(nyears &gt;= 10) %&gt;%
+     arrange(desc(meanHRpg)) %&gt;%
+     head(., 10)
+
+## Home runs per game at Fenway Park and Wrigley Field,
+## the two oldest MLB parks, by year. Fenway opened in 1912.
+teams %&gt;% 
+  filter(yearID &gt;= 1912 &amp; teamID %in% c("BOS", "CHN")) %&gt;%
+  mutate(hrpg = (HR + HRA)/Ghome) %&gt;%
+  ggplot(., aes(x = yearID, y = hrpg, color = teamID)) +
+    geom_line(size = 1) +
+    geom_point() +
+    labs(x = "Year", y = "Home runs per game", color = "Team") +
+    scale_color_manual(values = c("red", "blue"))
+
+## Ditto for total strikeouts per game
+teams %&gt;% 
+  filter(yearID &gt;= 1912 &amp; teamID %in% c("BOS", "CHN")) %&gt;%
+  mutate(kpg = (SO + SOA)/Ghome) %&gt;%
+  ggplot(., aes(x = yearID, y = kpg, color = teamID)) +
+  geom_line(size = 1) +
+  geom_point() +
+  labs(x = "Year", y = "Strikeouts per game", color = "Team") +
+  scale_color_manual(values = c("red", "blue"))  
+
+
+## Not run: 
+if(require(googleVis)) {
+motion1 &lt;- gvisMotionChart(as.data.frame(teams), 
+             idvar="teamID", timevar="yearID", chartid="gvisTeams",
+	           options=list(width=700, height=600))
+plot(motion1)
+#print(motion1, file="gvisTeams.html")
+
+# Merge with avg salary for years where salary is available
+
+teamsal &lt;- Salaries %&gt;%
+                group_by(yearID, teamID) %&gt;%
+                summarise(Salary = sum(salary, na.rm = TRUE)) %&gt;%
+                select(yearID, teamID, Salary)
+
+teamsSal &lt;- teams %&gt;%
+                filter(yearID &gt;= 1985) %&gt;%
+                left_join(teamsal, by = c("yearID", "teamID")) %&gt;%
+                select(yearID, teamID, attendance, Salary, WinPct) %&gt;%
+                as.data.frame(.)
+
+motion2 &lt;- gvisMotionChart(teamsSal, idvar="teamID", timevar="yearID",
+  xvar="attendance", yvar="salary", sizevar="WinPct",
+	chartid="gvisTeamsSal", options=list(width=700, height=600))
+plot(motion2)
+#print(motion2, file="gvisTeamsSal.html")
+
+}
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

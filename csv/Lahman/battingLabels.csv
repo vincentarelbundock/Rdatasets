@@ -1,0 +1,23 @@
+rownames,variable,label
+1,playerID,Player ID code
+2,yearID,Year
+3,stint,Player's stint
+4,teamID,Team
+5,lgID,League
+6,G,Games
+8,AB,At Bats
+9,R,Runs
+10,H,Hits
+11,X2B,Doubles
+12,X3B,Triples
+13,HR,Homeruns
+14,RBI,Runs Batted In
+15,SB,Stolen Bases
+16,CS,Caught Stealing
+17,BB,Base on Balls
+18,SO,Strikeouts
+19,IBB,Intentional walks
+20,HBP,Hit by pitch
+21,SH,Sacrifice hits
+22,SF,Sacrifice flies
+23,GIDP,Grounded into double plays

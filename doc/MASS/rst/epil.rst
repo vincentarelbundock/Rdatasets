@@ -58,6 +58,12 @@
       ``lage``
          log-ages, centred to have zero mean.
 
+      .. rubric:: Note
+         :name: note
+
+      The value of ``y`` in row 31 was corrected from ``21`` to ``23``
+      in version 7.3-65.
+
       .. rubric:: Source
          :name: source
 

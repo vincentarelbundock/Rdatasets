@@ -1,0 +1,159 @@
+<!DOCTYPE html><html><head><title>R: BattingPost table</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>BattingPost</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+BattingPost table
+</h2>
+
+<h3>Description</h3>
+
+<p>Post season batting statistics
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(BattingPost)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 16857 observations on the following 22 variables.
+</p>
+
+<dl>
+<dt><code>yearID</code></dt><dd><p>Year</p>
+</dd>
+<dt><code>round</code></dt><dd><p>Level of playoffs </p>
+</dd>
+<dt><code>playerID</code></dt><dd><p>Player ID code</p>
+</dd>
+<dt><code>teamID</code></dt><dd><p>Team</p>
+</dd>
+<dt><code>lgID</code></dt><dd><p>League; a factor with levels <code>AA</code> <code>AL</code> <code>NL</code></p>
+</dd>
+<dt><code>G</code></dt><dd><p>Games</p>
+</dd>
+<dt><code>AB</code></dt><dd><p>At Bats</p>
+</dd>
+<dt><code>R</code></dt><dd><p>Runs</p>
+</dd>
+<dt><code>H</code></dt><dd><p>Hits</p>
+</dd>
+<dt><code>X2B</code></dt><dd><p>Doubles</p>
+</dd>
+<dt><code>X3B</code></dt><dd><p>Triples</p>
+</dd>
+<dt><code>HR</code></dt><dd><p>Homeruns</p>
+</dd>
+<dt><code>RBI</code></dt><dd><p>Runs Batted In</p>
+</dd>
+<dt><code>SB</code></dt><dd><p>Stolen Bases</p>
+</dd>
+<dt><code>CS</code></dt><dd><p>Caught stealing</p>
+</dd>
+<dt><code>BB</code></dt><dd><p>Base on Balls</p>
+</dd>
+<dt><code>SO</code></dt><dd><p>Strikeouts</p>
+</dd>
+<dt><code>IBB</code></dt><dd><p>Intentional walks</p>
+</dd>
+<dt><code>HBP</code></dt><dd><p>Hit by pitch</p>
+</dd>
+<dt><code>SH</code></dt><dd><p>Sacrifices</p>
+</dd>
+<dt><code>SF</code></dt><dd><p>Sacrifice flies</p>
+</dd>
+<dt><code>GIDP</code></dt><dd><p>Grounded into double plays</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Variables <code>X2B</code> and <code>X3B</code> are named <code>2B</code> and <code>3B</code> in the original database
+</p>
+
+
+<h3>Source</h3>
+
+<p>Lahman, S. (2024) Lahman's Baseball Database, 1871-2023, 2024 version, <a href="http://www.seanlahman.com/">http://www.seanlahman.com/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'># Post-season batting data
+# Requires care since intra-league playoffs have evolved since 1969
+# Simplest case: World Series
+
+require("dplyr")
+
+# Create a sub-data frame for modern World Series play
+ws &lt;- BattingPost %&gt;%
+        filter(round == "WS" &amp; yearID &gt;= 1903) %&gt;%
+        mutate(BA = 0 + (AB &gt; 0) * round(H/AB, 3),
+               TB = H + X2B + 2 * X3B + 3 * HR,
+               SA = 0 + (AB &gt; 0) * round(TB/AB, 3),
+               PA = AB + BB + IBB + HBP + SH + SF,
+               OB = H + BB + IBB + HBP,
+               OBP = 0 + (AB &gt; 0) * round(OB/PA, 3) )
+
+# Players with most appearances in the WS:
+ws %&gt;% group_by(playerID) %&gt;%
+       summarise(appearances = n()) %&gt;%
+       arrange(desc(appearances)) %&gt;%
+       head(., 10)
+
+# Non-Yankees with most WS appearances
+ws %&gt;% filter(teamID != "NYA") %&gt;%
+       group_by(playerID) %&gt;%
+       summarise(appearances = n()) %&gt;%
+       arrange(desc(appearances)) %&gt;%
+       head(., 10)
+
+
+# Top ten single WS batting averages ( &gt;= 10 AB )
+ws %&gt;% filter(AB &gt; 10) %&gt;%
+       arrange(desc(BA)) %&gt;%
+       head(., 10)
+
+# Top ten slugging averages in a single WS 
+ws %&gt;% filter(AB &gt; 10) %&gt;%
+  arrange(desc(SA)) %&gt;%
+  head(., 10)
+
+
+# Hitting stats for the 1946 St. Louis Cardinals, ordered by BA
+ws %&gt;% 
+  filter(teamID == "SLN" &amp; yearID == 1946) %&gt;%
+  arrange(desc(BA))
+
+# Babe Ruth's WS profile
+ws %&gt;% 
+  filter(playerID == "ruthba01") %&gt;%
+  arrange(yearID)
+
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

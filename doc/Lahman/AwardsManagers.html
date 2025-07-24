@@ -1,0 +1,84 @@
+<!DOCTYPE html><html><head><title>R: AwardsManagers table</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>AwardsManagers</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+AwardsManagers table 
+</h2>
+
+<h3>Description</h3>
+
+<p>Award information for managers awards
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(AwardsManagers)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 193 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>playerID</code></dt><dd><p>Manager (player) ID code</p>
+</dd>
+<dt><code>awardID</code></dt><dd><p>Name of award won</p>
+</dd>
+<dt><code>yearID</code></dt><dd><p>Year</p>
+</dd>
+<dt><code>lgID</code></dt><dd><p>League; a factor with levels <code>AL</code> <code>NL</code></p>
+</dd>
+<dt><code>tie</code></dt><dd><p>Award was a tie (Y or N)</p>
+</dd>
+<dt><code>notes</code></dt><dd><p>Notes about the award</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Lahman, S. (2024) Lahman's Baseball Database, 1871-2023, 2024 version, <a href="http://www.seanlahman.com/">http://www.seanlahman.com/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'># Post-season managerial awards
+
+# Number of recipients of each award by year
+with(AwardsManagers, table(yearID, awardID))
+
+# 1996 award winners
+subset(AwardsManagers, yearID == 1996)
+
+# AL winners of the BBWAA managerial award
+subset(AwardsManagers, awardID == "BBWAA Manager of the year" &amp;
+                          lgID == "AL")
+
+# Tony LaRussa's manager of the year awards
+subset(AwardsManagers, playerID == "larusto01")
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

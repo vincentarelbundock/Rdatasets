@@ -1,0 +1,99 @@
+<!DOCTYPE html><html><head><title>R: HomeGames table</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>HomeGames</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+HomeGames table
+</h2>
+
+<h3>Description</h3>
+
+<p>Data mapping teams to the stadiums they played regular season games in as the home team.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(HomeGames)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 3233 observations on the following 9 variables.
+</p>
+
+<dl>
+<dt><code>year.key</code></dt><dd><p>Year</p>
+</dd>
+<dt><code>league.key</code></dt><dd><p>League; a factor with levels <code>AA</code> <code>AL</code> <code>FL</code> <code>NL</code> <code>PL</code> <code>UA</code></p>
+</dd>
+<dt><code>team.key</code></dt><dd><p>Team; a factor</p>
+</dd>
+<dt><code>park.key</code></dt><dd><p>Unique identifier for each ballpark</p>
+</dd>
+<dt><code>span.first</code></dt><dd><p>First date the park began acting as home field for the team</p>
+</dd>
+<dt><code>span.last</code></dt><dd><p>Last date the park began acting as home field for the team</p>
+</dd>
+<dt><code>games</code></dt><dd><p>Total games in this time span</p>
+</dd>
+<dt><code>openings</code></dt><dd><p>Total opening in this time span</p>
+</dd>
+<dt><code>attendance</code></dt><dd><p>Total attendance in this time span</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Lahman, S. (2024) Lahman's Baseball Database, 1871-2023, 2024 version, <a href="http://www.seanlahman.com/">http://www.seanlahman.com/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(HomeGames)
+library(dplyr)
+
+# How many parks has every team played in as the home team for even a single game?
+HomeGames %&gt;%
+  count(team.key) %&gt;%
+  arrange(team.key)
+
+# What parks have the Toronto Blue Jays played in as the home team?
+HomeGames %&gt;%
+  filter(team.key == "TOR") %&gt;%
+  arrange(span.last)
+  
+# What parks have the Boston Red Sox played in as the home team?
+HomeGames %&gt;%
+  filter(team.key == "BOS") %&gt;%
+  arrange(span.last)
+  
+# What is the Toronto Blue Jays annual total home attendance by year?
+HomeGames %&gt;%
+  filter(team.key == "TOR") %&gt;%
+  group_by(year.key) %&gt;%
+  summarize(total.attendance = sum(attendance)) %&gt;%
+  arrange(year.key)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,31 @@
+rownames,variable,label
+1,playerID,Player ID code
+2,yearID,Year
+3,stint,Player's stint
+4,teamID,Team
+5,lgID,League
+6,W,Wins
+7,L,Losses
+8,G,Games
+9,GS,Games Started
+10,CG,Complete Games 
+11,SHO,Shutouts
+12,SV,Saves
+13,IPOuts,Outs Pitched
+14,H,Hits
+15,ER,Earned Runs
+16,HR,Homeruns
+17,BB,Walks
+18,SO,Strikeouts
+19,BAOpp,Opponent's Batting Average
+20,ERA,Earned Run Average
+21,IBB,Intentional Walks
+22,WP,Wild Pitches
+23,HBP,Batters Hit By Pitch
+24,BK,Balks
+25,BFP,Batters faced by Pitcher
+26,GF,Games Finished
+27,R,Runs Allowed
+28,SH,Sacrifices by opposing batters
+29,SF,Sacrifice flies by opposing batters
+30,GIDP,Grounded into double plays by opposing batter

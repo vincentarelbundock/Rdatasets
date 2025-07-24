@@ -85,7 +85,7 @@
              subset(gapminder, continent != "Oceania"),
              aes(x = year, y = lifeExp, group = country, color = country)
            ) +
-             geom_line(lwd = 1, show_guide = FALSE) +
+             geom_line(lwd = 1, show.legend = FALSE) +
              facet_wrap(~continent) +
              scale_color_manual(values = country_colors) +
              theme_bw() +
@@ -97,7 +97,7 @@
            ggplot(gap_bit, aes(x = gdpPercap, y = lifeExp, size = pop)) +
              scale_x_log10(limits = c(150, 115000)) +
              ylim(c(16, 96)) +
-             geom_point(pch = 21, color = "grey20", show_guide = FALSE) +
+             geom_point(pch = 21, color = "grey20", show.legend = FALSE) +
              scale_size_area(max_size = 40) +
              facet_wrap(~continent) +
              coord_fixed(ratio = 1 / 43) +

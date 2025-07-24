@@ -1,0 +1,153 @@
+<!DOCTYPE html><html><head><title>R: SeriesPost table</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>SeriesPost</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+SeriesPost table
+</h2>
+
+<h3>Description</h3>
+
+<p>Post season series information
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(SeriesPost)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 389 observations on the following 9 variables.
+</p>
+
+<dl>
+<dt><code>yearID</code></dt><dd><p>Year</p>
+</dd>
+<dt><code>round</code></dt><dd><p>Level of playoffs </p>
+</dd>
+<dt><code>teamIDwinner</code></dt><dd><p>Team ID of the team that won the series; a factor</p>
+</dd>
+<dt><code>lgIDwinner</code></dt><dd><p>League ID of the team that won the series; a factor with levels <code>AL</code> <code>NL</code></p>
+</dd>
+<dt><code>teamIDloser</code></dt><dd><p>Team ID of the team that lost the series; a factor</p>
+</dd>
+<dt><code>lgIDloser</code></dt><dd><p>League ID of the team that lost the series; a factor with levels <code>AL</code> <code>NL</code> </p>
+</dd>
+<dt><code>wins</code></dt><dd><p>Wins by team that won the series</p>
+</dd>
+<dt><code>losses</code></dt><dd><p>Losses by team that won the series</p>
+</dd>
+<dt><code>ties</code></dt><dd><p>Tie games</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Lahman, S. (2024) Lahman's Baseball Database, 1871-2023, 2024 version, <a href="http://www.seanlahman.com/">http://www.seanlahman.com/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(SeriesPost)
+
+# How many times has each team won the World Series?
+
+# Notes: 
+# - the SeriesPost table includes an identifier for the 
+# team (teamID), but not the franchise (e.g. the Brooklyn Dodgers
+# [BRO] and Los Angeles Dodgers [LAN] are counted separately)
+#
+# - the World Series was first played in 1903, but the 
+# Lahman data tables have the final round of the earlier 
+# playoffs labelled "WS", so it is necessary to
+# filter the SeriesPost table to exclude years prior to 1903. 
+
+# using the dplyr data manipulation package
+library("dplyr")
+library("tidyr")
+library("ggplot2")
+
+## WS winners, arranged in descending order of titles won
+ws_winner_table &lt;- SeriesPost %&gt;%
+  filter(yearID &gt; "1902", round == "WS") %&gt;%
+  group_by(teamIDwinner) %&gt;%
+  summarise(wincount = n()) %&gt;%
+  arrange(desc(wincount))
+ws_winner_table
+
+## Expanded form of World Series team data in modern era
+
+ws &lt;- SeriesPost %&gt;%
+        filter(yearID &gt;= 1903 &amp; round == "WS") %&gt;%
+        select(-ties, -round) %&gt;%
+        mutate(lgIDloser = droplevels(lgIDloser),
+               lgIDwinner = droplevels(lgIDwinner))
+
+# Bar chart of length of series (# games played)
+# 1903, 1919 and 1921 had eight games
+ggplot(ws, aes(x = wins + losses)) +
+  geom_bar(fill = "dodgerblue") +
+  labs(x = "Number of games", y = "Frequency")
+
+# Last year the Cubs appeared in the WS
+ws %&gt;% 
+  filter(teamIDwinner == "CHN" | teamIDloser == "CHN") %&gt;% 
+  summarise(max(yearID))
+
+# Dot chart of number of WS appearances by teamID
+ws %&gt;% 
+  gather(wl, team, teamIDwinner, teamIDloser) %&gt;%
+  count(team) %&gt;%
+  arrange(desc(n)) %&gt;%
+  ggplot(., aes(x = reorder(team, n), y = n)) +
+    theme_bw() +
+    geom_point(size = 3, color = "dodgerblue") +
+    geom_segment(aes(xend = reorder(team, n), yend = 0), 
+                 linetype = "dotted", color = "dodgerblue", 
+                 size = 1) +
+    labs(x = NULL, y = "Number of WS appearances") +
+    scale_y_continuous(expand = c(0, 0), limits = c(0, 42)) +
+    coord_flip() +
+    theme(axis.text.y = element_text(size = rel(0.8)),
+          axis.ticks.y = element_blank())
+
+# Initial year of each round of championship series in modern era
+SeriesPost %&gt;% 
+    filter(yearID &gt;= 1903) %&gt;%   # modern WS started in 1903
+    group_by(round) %&gt;%
+    summarise(first_year = min(yearID)) %&gt;%
+    arrange(first_year)
+
+# Ditto, but with more information about each series played
+SeriesPost %&gt;% 
+  filter(yearID &gt;= 1903) %&gt;%
+  group_by(round) %&gt;%
+  arrange(yearID) %&gt;%
+  do(head(., 1)) %&gt;%
+  select(-lgIDwinner, -lgIDloser) %&gt;%
+  arrange(yearID, round)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

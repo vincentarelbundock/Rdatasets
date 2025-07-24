@@ -84,6 +84,7 @@ Imports:
     intendo,
     ipsRdbs,
     itsadug,
+    Lahman,
     lattice,
     lme4,
     mediation,

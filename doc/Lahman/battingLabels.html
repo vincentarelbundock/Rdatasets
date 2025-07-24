@@ -1,0 +1,89 @@
+<!DOCTYPE html><html><head><title>R: Variable Labels</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>battingLabels</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Variable Labels
+</h2>
+
+<h3>Description</h3>
+
+<p>These data frames provide descriptive labels for the variables in the
+<code>Batting</code>, 
+<code>Pitching</code> and
+<code>Fielding</code> files (and related <code>*Post</code> files).
+They are useful for plots and other output using <code>Label</code>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(battingLabels)
+
+data(fieldingLabels)
+
+data(pitchingLabels)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>Each is data frame with observations on the following 2 variables.
+</p>
+
+<dl>
+<dt><code>variable</code></dt><dd><p>variable name</p>
+</dd>
+<dt><code>label</code></dt><dd><p>variable label</p>
+</dd>
+</dl>
+
+
+
+<h3>See Also</h3>
+
+<p><code>Label</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(battingLabels)
+str(battingLabels)
+
+require("dplyr")
+
+# find and plot maximum number of homers per year
+batHR &lt;- Batting %&gt;%
+           filter(!is.na(HR)) %&gt;%
+           group_by(yearID) %&gt;%
+           summarise(max=max(HR))
+		
+with(batHR, {
+  plot(yearID, max, 
+       xlab=Label("yearID"), ylab=paste("Maximum", Label("HR")), 
+       cex=0.8)
+  lines(lowess(yearID, max), col="blue", lwd=2)
+  abline(lm(max ~ yearID), col="red", lwd=2)
+	})
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

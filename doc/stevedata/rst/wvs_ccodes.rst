@@ -42,4 +42,4 @@
       .. rubric:: Details
          :name: details
 
-      http://svmiller.com/blog/2015/06/syncing-word-values-survey-country-codes-with-cow-codes/
+      https://svmiller.com/blog/2015/06/syncing-word-values-survey-country-codes-with-cow-codes/

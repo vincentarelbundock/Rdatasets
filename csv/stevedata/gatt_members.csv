@@ -1,0 +1,129 @@
+rownames,country,iso3c,date
+1,Angola,AGO,1994-04-08
+2,Antigua and Barbuda,ATG,1987-03-30
+3,Argentina,ARG,1967-10-11
+4,Australia,AUS,1948-01-01
+5,Austria,AUT,1951-10-19
+6,Bahrain,BHR,1993-12-13
+7,Bangladesh,BGD,1972-12-16
+8,Barbados,BRB,1967-02-15
+9,Belgium,BEL,1948-01-01
+10,Belize,BLZ,1983-10-07
+11,Benin,BEN,1963-09-12
+12,Bolivia,BOL,1990-09-08
+13,Botswana,BWA,1987-08-28
+14,Brazil,BRA,1948-07-30
+15,Brunei Darussalam,BRN,1993-12-09
+16,Burkina Faso,BFA,1963-05-03
+17,Burundi,BDI,1965-03-13
+18,Cameroon,CMR,1963-05-03
+19,Canada,CAN,1948-01-01
+20,Central African Republic,CAF,1963-05-03
+21,Chad,TCD,1963-07-12
+22,Chile,CHL,1949-03-16
+23,Colombia,COL,1981-10-03
+24,"Congo, Republic of",COG,1963-05-03
+25,Costa Rica,CRI,1990-11-24
+26,Côte d'Ivoire,CIV,1963-12-31
+27,Cuba,CUB,1948-01-01
+28,Cyprus,CYP,1963-07-15
+29,Czech Republic,CZE,1993-04-15
+30,Denmark,DNK,1950-05-28
+31,Djibouti,DJI,1994-12-16
+32,Dominica,DMA,1993-04-20
+33,Dominican Republic,DOM,1950-05-19
+34,Egypt,EGY,1970-05-09
+35,El Salvador,SLV,1991-05-22
+36,Fiji,FJI,1993-11-16
+37,Finland,FIN,1950-05-25
+38,France,FRA,1948-01-01
+39,Gabon,GAB,1963-05-03
+40,The Gambia,GMB,1965-02-22
+41,Germany,DEU,1951-10-01
+42,Ghana,GHA,1957-10-17
+43,Greece,GRC,1950-03-01
+44,Grenada,GRD,1994-02-09
+45,Guatemala,GTM,1991-10-10
+46,Guinea,GIN,1994-12-08
+47,Guinea Bissau,GNB,1994-03-17
+48,Guyana,GUY,1966-07-05
+49,Haiti,HTI,1950-01-01
+50,Honduras,HND,1994-04-10
+51,Hong Kong,HKG,1986-04-23
+52,Hungary,HUN,1973-09-09
+53,Iceland,ISL,1968-04-21
+54,India,IND,1948-07-08
+55,Indonesia,IDN,1950-02-24
+56,Ireland,IRL,1967-12-22
+57,Israel,ISR,1962-07-05
+58,Italy,ITA,1950-05-30
+59,Jamaica,JAM,1963-12-31
+60,Japan,JPN,1955-09-10
+61,Kenya,KEN,1964-02-05
+62,"Korea, Republic of",KOR,1967-04-14
+63,Kuwait,KWT,1963-05-03
+64,Lesotho,LSO,1988-01-08
+65,Liechtenstein,LIE,1994-03-29
+66,Luxembourg,LUX,1948-01-01
+67,Macao,MAC,1991-01-11
+68,Madagascar,MDG,1963-09-30
+69,Malawi,MWI,1964-08-28
+70,Malaysia,MYS,1957-10-24
+71,Maldives,MDV,1983-04-19
+72,Mali,MLI,1993-01-11
+73,Malta,MLT,1964-11-17
+74,Mauritania,MRT,1963-09-30
+75,Mauritius,MUS,1970-09-02
+76,Mexico,MEX,1986-08-24
+77,Morocco,MAR,1987-06-17
+78,Mozambique,MOZ,1992-07-27
+79,"Myanmar, Union of",MMR,1948-07-29
+80,Namibia,NAM,1992-09-15
+81,Netherlands,NLD,1948-01-01
+82,New Zealand,NZL,1948-07-30
+83,Nicaragua,NIC,1950-05-28
+84,Niger,NER,1963-12-31
+85,Nigeria,NGA,1960-11-18
+86,Norway,NOR,1948-07-10
+87,Pakistan,PAK,1948-07-30
+88,Papua New Guinea,PNG,1994-12-16
+89,Paraguay,PRY,1994-01-06
+90,Peru,PER,1951-10-07
+91,Philippines,PHL,1979-12-27
+92,Poland,POL,1967-10-18
+93,Portugal,PRT,1962-05-06
+94,Qatar,QAT,1994-04-07
+95,Romania,ROU,1971-11-14
+96,Rwanda,RWA,1966-01-01
+97,Senegal,SEN,1963-09-27
+98,Sierra Leone,SLE,1961-05-19
+99,Singapore,SGP,1973-08-20
+100,Slovak Republic,SVK,1993-04-15
+101,Slovenia,SVN,1994-10-30
+102,Solomon Islands,SLB,1994-12-28
+103,South Africa,ZAF,1948-06-13
+104,Spain,ESP,1963-08-29
+105,Sri Lanka,LKA,1948-07-29
+106,Saint Kitts and Nevis,KNA,1994-03-24
+107,Saint Lucia,LCA,1993-04-13
+108,Saint Vincent and the Grenadines,VCT,1993-05-18
+109,Suriname,SUR,1978-03-22
+110,"Swaziland, Kingdom of",SWZ,1993-02-08
+111,Sweden,SWE,1950-04-30
+112,Switzerland,CHE,1966-08-01
+113,Tanzania,TZA,1961-12-09
+114,Thailand,THA,1982-11-20
+115,Togo,TGO,1964-03-20
+116,Trinidad and Tobago,TTO,1962-10-23
+117,Tunisia,TUN,1990-08-29
+118,Turkey,TUR,1951-10-17
+119,Uganda,UGA,1962-10-23
+120,United Arab Emirates,ARE,1994-03-08
+121,United Kingdom,GBR,1948-01-01
+122,United States of America,USA,1948-01-01
+123,Uruguay,URY,1953-12-06
+124,Venezuela,VEN,1990-08-31
+125,Yugoslavia,YUG,1966-08-25
+126,Zaire,COD,1971-09-11
+127,Zambia,ZMB,1982-02-10
+128,Zimbabwe,ZWE,1948-07-11
