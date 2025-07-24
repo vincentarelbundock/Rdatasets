@@ -1,6 +1,6 @@
 pandoc: 3.2.1
-pkgdown: 2.1.1
+pkgdown: 2.1.3
 pkgdown_sha: ~
 articles:
   data: data.html
-last_built: 2025-06-01T13:33Z
+last_built: 2025-07-24T11:04Z
