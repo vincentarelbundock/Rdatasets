@@ -1,0 +1,19 @@
+rownames,variable,label
+1,playerID,Player ID code
+2,yearID,Year
+3,stint,Player's stint
+4,teamID,Team
+5,lgID,League
+6,Pos,Position
+7,G,Games 
+8,GS,Games Started
+9,InnOuts,Time played in the field (outs)
+10,PO,Putouts
+11,A,Assists
+12,E,Errors
+13,DP,Double Plays
+14,PB,Passed Balls (by catchers)
+15,WP,Wild Pitches (by catchers)
+16,SB,Opponent Stolen Bases (by catchers)
+17,CS,Opponents Caught Stealing (by catchers)
+18,ZR,Zone Rating

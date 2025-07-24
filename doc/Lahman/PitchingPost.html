@@ -1,0 +1,170 @@
+<!DOCTYPE html><html><head><title>R: PitchingPost table</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>PitchingPost</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+PitchingPost table
+</h2>
+
+<h3>Description</h3>
+
+<p>Post season pitching statistics
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(PitchingPost)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 6757 observations on the following 30 variables.
+</p>
+
+<dl>
+<dt><code>playerID</code></dt><dd><p>Player ID code</p>
+</dd>
+<dt><code>yearID</code></dt><dd><p>Year</p>
+</dd>
+<dt><code>round</code></dt><dd><p>Level of playoffs </p>
+</dd>
+<dt><code>teamID</code></dt><dd><p>Team; a factor</p>
+</dd>
+<dt><code>lgID</code></dt><dd><p>League; a factor with levels <code>AA</code> <code>AL</code> <code>NL</code></p>
+</dd>
+<dt><code>W</code></dt><dd><p>Wins</p>
+</dd>
+<dt><code>L</code></dt><dd><p>Losses</p>
+</dd>
+<dt><code>G</code></dt><dd><p>Games</p>
+</dd>
+<dt><code>GS</code></dt><dd><p>Games Started</p>
+</dd>
+<dt><code>CG</code></dt><dd><p>Complete Games</p>
+</dd>
+<dt><code>SHO</code></dt><dd><p>Shutouts </p>
+</dd>
+<dt><code>SV</code></dt><dd><p>Saves</p>
+</dd>
+<dt><code>IPouts</code></dt><dd><p>Outs Pitched (innings pitched x 3)</p>
+</dd>
+<dt><code>H</code></dt><dd><p>Hits</p>
+</dd>
+<dt><code>ER</code></dt><dd><p>Earned Runs</p>
+</dd>
+<dt><code>HR</code></dt><dd><p>Homeruns</p>
+</dd>
+<dt><code>BB</code></dt><dd><p>Walks</p>
+</dd>
+<dt><code>SO</code></dt><dd><p>Strikeouts</p>
+</dd>
+<dt><code>BAOpp</code></dt><dd><p>Opponents' batting average</p>
+</dd>
+<dt><code>ERA</code></dt><dd><p>Earned Run Average</p>
+</dd>
+<dt><code>IBB</code></dt><dd><p>Intentional Walks</p>
+</dd>
+<dt><code>WP</code></dt><dd><p>Wild Pitches</p>
+</dd>
+<dt><code>HBP</code></dt><dd><p>Batters Hit By Pitch</p>
+</dd>
+<dt><code>BK</code></dt><dd><p>Balks</p>
+</dd>
+<dt><code>BFP</code></dt><dd><p>Batters faced by Pitcher</p>
+</dd>
+<dt><code>GF</code></dt><dd><p>Games Finished</p>
+</dd>
+<dt><code>R</code></dt><dd><p>Runs Allowed</p>
+</dd>
+<dt><code>SH</code></dt><dd><p>Sacrifice Hits allowed</p>
+</dd>
+<dt><code>SF</code></dt><dd><p>Sacrifice Flies allowed</p>
+</dd>
+<dt><code>GIDP</code></dt><dd><p>Grounded into Double Plays</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Lahman, S. (2024) Lahman's Baseball Database, 1871-2023, 2024 version, <a href="http://www.seanlahman.com/">http://www.seanlahman.com/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library("dplyr")
+library(ggplot2)
+
+# Restrict data to World Series in modern era
+ws &lt;- PitchingPost %&gt;%
+         filter(yearID &gt;= 1903 &amp; round == "WS")
+# Pitchers with ERA 0.00 in WS play (&gt; 10 IP)
+ws %&gt;%
+  filter(IPouts &gt; 30 &amp; ERA == 0.00) %&gt;%
+  arrange(desc(IPouts)) %&gt;%
+  select(playerID, yearID, teamID, lgID, IPouts, W, L, G, 
+         CG, SHO, H, R, SO, BFP) 
+
+# Pitchers with the most IP in a series 
+# 1903 Series went eight games - for details, see
+# https://en.wikipedia.org/wiki/1903_World_Series
+ws %&gt;%
+  arrange(desc(IPouts)) %&gt;%
+  select(playerID, yearID, teamID, lgID, IPouts, W, L, G, 
+         CG, SHO, H, SO, BFP, ERA) %&gt;%
+  head(., 10)
+
+# Pitchers with highest strikeout rate in WS
+# (minimum 20 IP)
+ws %&gt;%
+  filter(IPouts &gt;= 60) %&gt;%
+  mutate(K_rate = 27 * SO/IPouts) %&gt;%
+  arrange(desc(K_rate)) %&gt;%
+  select(playerID, yearID, teamID, lgID, IPouts, 
+         H, SO, K_rate) %&gt;%
+  head(., 10)
+  
+# Pitchers with the most IP in WS history
+ws %&gt;%
+  group_by(playerID) %&gt;%
+  summarise_at(vars(IPouts, H, ER, CG, BB, SO, W, L), 
+               sum, na.rm = TRUE) %&gt;%
+  mutate(ERA = round(27 * ER/IPouts, 2),
+         Kper9 = round(27 * SO/IPouts, 3),
+         WHIP = round(3 * (H + BB)/IPouts, 3)) %&gt;%
+  arrange(desc(IPouts)) %&gt;%
+  select(-H, -ER) %&gt;%
+  head(., 10)
+
+# Plot of K/9 by year
+ws %&gt;%
+  group_by(yearID) %&gt;%
+  summarise(Kper9 = 27 * sum(SO)/sum(IPouts)) %&gt;%
+  ggplot(., aes(x = yearID, y = Kper9)) +
+    geom_point() +
+    geom_smooth() +
+    labs(x = "Year", y = "K per 9 innings")
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

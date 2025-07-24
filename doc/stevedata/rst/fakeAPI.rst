@@ -83,4 +83,4 @@
 
       Miller, Steven V. 2020. "Some Parlor Tricks with Survey-Type
       Analyses in R." URL:
-      http://svmiller.com/blog/2020/08/some-parlor-tricks-with-survey-type-analyses-in-r/
+      https://svmiller.com/blog/2020/08/some-parlor-tricks-with-survey-type-analyses-in-r/

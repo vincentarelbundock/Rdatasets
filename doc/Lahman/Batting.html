@@ -1,0 +1,239 @@
+<!DOCTYPE html><html><head><title>R: Batting table</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Batting</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Batting table
+</h2>
+
+<h3>Description</h3>
+
+<p>Batting table - batting statistics
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Batting)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 113799 observations on the following 22 variables.
+</p>
+
+<dl>
+<dt><code>playerID</code></dt><dd><p>Player ID code</p>
+</dd>
+<dt><code>yearID</code></dt><dd><p>Year</p>
+</dd>
+<dt><code>stint</code></dt><dd><p>player's stint (order of appearances within a season)</p>
+</dd>
+<dt><code>teamID</code></dt><dd><p>Team; a factor</p>
+</dd>
+<dt><code>lgID</code></dt><dd><p>League; a factor with levels <code>AA</code> <code>AL</code> <code>FL</code> <code>NL</code> <code>PL</code> <code>UA</code></p>
+</dd>
+<dt><code>G</code></dt><dd><p>Games: number of games in which a player played</p>
+</dd>
+<dt><code>AB</code></dt><dd><p>At Bats</p>
+</dd>
+<dt><code>R</code></dt><dd><p>Runs</p>
+</dd>
+<dt><code>H</code></dt><dd><p>Hits: times reached base because of a batted, fair ball without error by the defense</p>
+</dd>
+<dt><code>X2B</code></dt><dd><p>Doubles: hits on which the batter reached second base safely</p>
+</dd>
+<dt><code>X3B</code></dt><dd><p>Triples: hits on which the batter reached third base safely</p>
+</dd>
+<dt><code>HR</code></dt><dd><p>Homeruns</p>
+</dd>
+<dt><code>RBI</code></dt><dd><p>Runs Batted In</p>
+</dd>
+<dt><code>SB</code></dt><dd><p>Stolen Bases</p>
+</dd>
+<dt><code>CS</code></dt><dd><p>Caught Stealing</p>
+</dd>
+<dt><code>BB</code></dt><dd><p>Base on Balls</p>
+</dd>
+<dt><code>SO</code></dt><dd><p>Strikeouts</p>
+</dd>
+<dt><code>IBB</code></dt><dd><p>Intentional walks</p>
+</dd>
+<dt><code>HBP</code></dt><dd><p>Hit by pitch</p>
+</dd>
+<dt><code>SH</code></dt><dd><p>Sacrifice hits</p>
+</dd>
+<dt><code>SF</code></dt><dd><p>Sacrifice flies</p>
+</dd>
+<dt><code>GIDP</code></dt><dd><p>Grounded into double plays</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Variables <code>X2B</code> and <code>X3B</code> are named <code>2B</code> and <code>3B</code> in the original database
+</p>
+
+
+<h3>Source</h3>
+
+<p>Lahman, S. (2024) Lahman's Baseball Database, 1871-2023, 2024 version, <a href="http://www.seanlahman.com/">http://www.seanlahman.com/</a>
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>battingStats</code> for calculating batting average (BA) and other derived statistics
+</p>
+<p><code>baseball</code> for a similar dataset, but a subset of players who played 15 or more seasons.
+</p>
+<p><code>Baseball</code> for data on batting in the 1987 season.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Batting)
+head(Batting)
+require("dplyr")
+
+## Prelude: Extract information from Salaries and People
+## to be merged with the batting data.
+
+# Subset of Salaries data
+salaries &lt;- Salaries %&gt;%
+              select(playerID, yearID, teamID, salary)
+
+# Subset of People table (player metadata)
+peopleInfo &lt;- People %&gt;%
+              select(playerID, birthYear, birthMonth, nameLast,
+                     nameFirst, bats)
+
+# Left join salaries and peopleInfo to batting data,
+# create an age variable and sort by playerID, yearID and stint
+# Returns an ignorable warning.
+batting &lt;- battingStats() %&gt;% 
+             left_join(salaries, 
+                       by =c("playerID", "yearID", "teamID")) %&gt;%
+             left_join(peopleInfo, by = "playerID") %&gt;%
+             mutate(age = yearID - birthYear - 
+                            1L *(birthMonth &gt;= 10)) %&gt;%
+             arrange(playerID, yearID, stint)
+
+## Generate a ggplot similar to the NYT graph in the story about Ted
+## Williams and the last .400 MLB season 
+# http://www.nytimes.com/interactive/2011/09/18/sports/baseball/WILLIAMS-GRAPHIC.html
+
+# Restrict the pool of eligible players to the years after 1899 and
+# players with a minimum of 450 plate appearances (this covers the
+# strike year of 1994 when Tony Gwynn hit .394 before play was suspended
+# for the season - in a normal year, the minimum number of plate appearances is 502)
+
+eligibleHitters &lt;- batting %&gt;%
+                     filter(yearID &gt;= 1900 &amp; PA &gt; 450)
+
+# Find the hitters with the highest BA in MLB each year (there are a
+# few ties).  Include all players with BA &gt; .400, whether they
+# won a batting title or not, and add an indicator variable for
+# .400 average in a season.
+
+topHitters &lt;- eligibleHitters %&gt;%
+                 group_by(yearID) %&gt;%
+                 filter(BA == max(BA)| BA &gt;= .400) %&gt;%
+                 mutate(ba400 = BA &gt;= 0.400) %&gt;%
+                 select(playerID, yearID, nameLast, 
+                        nameFirst, BA, ba400)
+
+# Sub-data frame for the .400 hitters plus the outliers after 1950
+# (averages above .380) - used to produce labels in the plot below
+bignames &lt;- topHitters %&gt;%
+              filter(ba400 | (yearID &gt; 1950 &amp; BA &gt; 0.380)) %&gt;%
+              arrange(desc(BA))
+
+# Variable to provide a vertical offset to certain
+# labels in the ggplot below
+bignames$yoffset &lt;-  c(0, 0, 0, 0, 0.002, 0, 0, 0,
+                       0.001, -0.001, 0, -0.002, 0, 0,
+                       0.002, 0, 0)
+
+# Produce the plot
+
+require("ggplot2")                               
+ggplot(topHitters, aes(x = yearID, y = BA)) +
+  geom_point(aes(colour = ba400), size = 2.5) +
+  geom_hline(yintercept = 0.400, size = 1, colour = "gray70") +
+  geom_text(data = bignames, aes(y = BA + yoffset,
+                                 label = nameLast), 
+                             size = 3, hjust = 1.2) +
+  scale_colour_manual(values = c("FALSE" = "black", "TRUE" = "red")) +
+  xlim(1899, 2015) +
+  xlab("Year") +
+  scale_y_continuous("Batting average",
+                     limits = c(0.330, 0.430),
+                     breaks = seq(0.34, 0.42, by = 0.02),
+                     labels = c(".340", ".360", ".380", ".400", ".420")) +
+  geom_smooth() +
+  theme(legend.position = "none")
+
+##########################################################
+# after Chris Green,
+# http://sabr.org/research/baseball-s-first-power-surge-home-runs-late-19th-century-major-leagues
+
+# Total home runs by year
+totalHR &lt;- Batting %&gt;%
+             group_by(yearID) %&gt;%
+             summarise(HomeRuns = sum(as.numeric(HR), na.rm=TRUE),
+                       Games = sum(as.numeric(G), na.rm=TRUE))
+
+# Plot HR by year, pre-1919 (dead ball era)
+totalHR %&gt;% filter(yearID &lt;= 1918) %&gt;%
+            ggplot(., aes(x = yearID, y = HomeRuns)) +
+               geom_line() +
+               geom_point() +
+               labs(x = "Year", y = "Home runs hit")
+
+# Take games into account
+totalHR %&gt;% filter(yearID &lt;= 1918) %&gt;%
+  ggplot(., aes(x = yearID, y = HomeRuns/Games)) +
+     geom_line() +
+     geom_point() +
+     labs(x = "Year", y = "Home runs per game played")
+
+# Widen perspective to all years from 1871
+ggplot(totalHR, aes(x = yearID, y = HomeRuns)) +
+  geom_point() +
+  geom_path() +
+  geom_smooth() +
+  labs(x = "Year", y = "Home runs hit")
+
+# Similar plot for HR per game played by year -
+# shows several eras with spikes in HR hit
+ggplot(totalHR, aes(x = yearID, y = HomeRuns/Games)) +
+  geom_point() +
+  geom_path() +
+  geom_smooth(se = FALSE) +
+  labs(x = "Year", y = "Home runs per game played")
+
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

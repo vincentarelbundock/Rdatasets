@@ -28,7 +28,7 @@
       A data frame with 147 observations on the following 10 variables.
 
       ``levine``
-         a numeric vector that servies as a cross-section identifier
+         a numeric vector that serves as a cross-section identifier
 
       ``country``
          a character vector for the country

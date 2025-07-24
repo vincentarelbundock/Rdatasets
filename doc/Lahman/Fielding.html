@@ -1,0 +1,143 @@
+<!DOCTYPE html><html><head><title>R: Fielding table</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Fielding</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Fielding table
+</h2>
+
+<h3>Description</h3>
+
+<p>Fielding table
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Fielding)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 151507 observations on the following 18 variables.
+</p>
+
+<dl>
+<dt><code>playerID</code></dt><dd><p>Player ID code</p>
+</dd>
+<dt><code>yearID</code></dt><dd><p>Year</p>
+</dd>
+<dt><code>stint</code></dt><dd><p>player's stint (order of appearances within a season)</p>
+</dd>
+<dt><code>teamID</code></dt><dd><p>Team; a factor</p>
+</dd>
+<dt><code>lgID</code></dt><dd><p>League; a factor with levels <code>AA</code> <code>AL</code> <code>FL</code> <code>NL</code> <code>PL</code> <code>UA</code></p>
+</dd>
+<dt><code>POS</code></dt><dd><p>Position</p>
+</dd>
+<dt><code>G</code></dt><dd><p>Games </p>
+</dd>
+<dt><code>GS</code></dt><dd><p>Games Started</p>
+</dd>
+<dt><code>InnOuts</code></dt><dd><p>Time played in the field expressed as outs </p>
+</dd>
+<dt><code>PO</code></dt><dd><p>Putouts</p>
+</dd>
+<dt><code>A</code></dt><dd><p>Assists</p>
+</dd>
+<dt><code>E</code></dt><dd><p>Errors</p>
+</dd>
+<dt><code>DP</code></dt><dd><p>Double Plays</p>
+</dd>
+<dt><code>PB</code></dt><dd><p>Passed Balls (by catchers)</p>
+</dd>
+<dt><code>WP</code></dt><dd><p>Wild Pitches (by catchers)</p>
+</dd>
+<dt><code>SB</code></dt><dd><p>Opponent Stolen Bases (by catchers)</p>
+</dd>
+<dt><code>CS</code></dt><dd><p>Opponents Caught Stealing (by catchers)</p>
+</dd>
+<dt><code>ZR</code></dt><dd><p>Zone Rating</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Lahman, S. (2024) Lahman's Baseball Database, 1871-2023, 2024 version, <a href="http://www.seanlahman.com/">http://www.seanlahman.com/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Fielding)
+# Basic fielding data
+
+require("dplyr")
+
+
+# Roberto Clemente's fielding profile
+# pitching and catching related data removed
+# subset(Fielding, playerID == "clemero01")[, 1:13]
+Fielding %&gt;% 
+   filter(playerID == "clemero01") %&gt;%
+   select(1:13)
+   
+# Yadier Molina's fielding profile
+# PB, WP, SP and CS apply to catchers
+Fielding %&gt;% 
+  subset(playerID == "molinya01") %&gt;%
+  select(-WP, -ZR)
+
+# Pedro Martinez's fielding profile
+Fielding %&gt;% subset(playerID == "martipe02")
+
+# Table of games played by Pete Rose at different positions
+with(subset(Fielding, playerID == "rosepe01"), xtabs(G ~ POS))
+
+# Career total G/PO/A/E/DP for Luis Aparicio
+Fielding %&gt;%
+    filter(playerID == "aparilu01") %&gt;% 
+    select(G, PO, A, E, DP) %&gt;%
+    summarise_each(funs(sum))
+
+
+# Top ten 2B/SS in turning DPs
+Fielding %&gt;%
+    subset(POS %in% c("2B", "SS")) %&gt;%
+    group_by(playerID) %&gt;%
+    summarise(TDP = sum(DP, na.rm = TRUE)) %&gt;%
+    arrange(desc(TDP)) %&gt;%
+    head(., 10)
+
+# League average fielding statistics, 1961-present
+Fielding %&gt;% 
+   filter(yearID &gt;= 1961 &amp; POS != "DH") %&gt;%
+   select(yearID, lgID, POS, InnOuts, PO, A, E) %&gt;%
+   group_by(yearID, lgID) %&gt;%
+   summarise_at(vars(InnOuts, PO, A, E), funs(sum), na.rm = TRUE) %&gt;%
+   mutate(fpct = round( (PO + A)/(PO + A + E), 3), 
+          OPE = round(InnOuts/E, 3))
+
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

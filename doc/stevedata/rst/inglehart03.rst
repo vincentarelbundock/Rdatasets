@@ -44,7 +44,7 @@
 
       ``muslim``
          a dummy variable that equals 1 if Inglehart codes the state as
-         being a "predominently Islamic society"
+         being a "predominantly Islamic society"
 
       .. rubric:: Details
          :name: details

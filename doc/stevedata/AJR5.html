@@ -1,0 +1,89 @@
+<!DOCTYPE html><html><head><title>R: The Colonial Origins of Comparative Development (Table 5)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>AJR5</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The Colonial Origins of Comparative Development (Table 5)</h2>
+
+<h3>Description</h3>
+
+<p>A data set to reproduce Table 5 in Acemoglu et al. (2001).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>AJR5
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 163 observations on the following variables.
+</p>
+
+<dl>
+<dt><code>shortnam</code></dt><dd><p>a three-character code, ostensibly an ISO code</p>
+</dd>
+<dt><code>catho80</code></dt><dd><p>the percentage of the country that is estimated to be Catholic</p>
+</dd>
+<dt><code>muslim80</code></dt><dd><p>the percentage of the country that is estimated to be Muslim</p>
+</dd>
+<dt><code>lat_abst</code></dt><dd><p>the latitude of the country (absolute value)</p>
+</dd>
+<dt><code>no_cpm80</code></dt><dd><p>the percentage of the country that is esimated to be another religion</p>
+</dd>
+<dt><code>f_brit</code></dt><dd><p>a dummy variable indicating whether the observation is a former British colony</p>
+</dd>
+<dt><code>f_french</code></dt><dd><p>a dummy variable indicating whether the observation is a former French colony</p>
+</dd>
+<dt><code>avexpr</code></dt><dd><p>average protection against expropriation risk, 1985-1995</p>
+</dd>
+<dt><code>sjlofr</code></dt><dd><p>a dummy variable for whether the legal origin of the country's commercial code is French</p>
+</dd>
+<dt><code>logpgp95</code></dt><dd><p>log-transformed GDP per capita (PPP) in 1995</p>
+</dd>
+<dt><code>logem4</code></dt><dd><p>log-transformed European settler mortality</p>
+</dd>
+<dt><code>baseco</code></dt><dd><p>a dummy variable indicating whether the observation is in the 'base sample'</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Acemoglu et al. (2001) are fairly transparent about what their data are and
+where you can read more about the sources they're using. La Porta et al.
+(1999) will feature prominently in some of these variables.
+</p>
+
+
+<h3>References</h3>
+
+<p>Acemoglu, Daron, Simon Johnson, and James A. Robinson. 2001. &quot;The Colonial
+Origins of Comparative Development: An Empirical Investigation&quot;. <em>American
+Economic Review</em> 91(5): 1369&ndash;1401.
+</p>
+<p>La Porta, Rafael, Florencio Lopez-de-Silanes, Andrei Shleifer and Robert W.
+Vishny. 1999. &quot;The Quality of Government&quot; <em>Journal of Law, Economics, and
+Organization</em> 15(1): 222-79.
+</p>
+
+</main>
+
+</div>
+</body></html>

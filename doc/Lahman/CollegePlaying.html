@@ -1,0 +1,97 @@
+<!DOCTYPE html><html><head><title>R: CollegePlaying table</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>CollegePlaying</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+CollegePlaying table
+</h2>
+
+<h3>Description</h3>
+
+<p>Information on schools players attended, by player
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(CollegePlaying)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 17350 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>playerID</code></dt><dd><p>Player ID code</p>
+</dd>
+<dt><code>schoolID</code></dt><dd><p>school ID code</p>
+</dd>
+<dt><code>yearID</code></dt><dd><p>Year player attended school</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This data set reflects a change in the Lahman schema for the 2015 version.
+The old <code>SchoolsPlayers</code> table was replaced with
+this new table called <code>CollegePlaying</code>.
+</p>
+<p>According to the documentation,
+this change reflects advances in the compilation of this data, largely led by
+Ted Turocy. The old table reported college attendance for major league
+players by listing a start date and end date.  The new version has a 
+separate record for each year that a player attended.  This allows
+us to better account for players who attended multiple colleges or
+skipped a season, as well as to identify teammates.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Lahman, S. (2024) Lahman's Baseball Database, 1871-2023, 2024 version, <a href="http://www.seanlahman.com/">http://www.seanlahman.com/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(CollegePlaying)
+head(CollegePlaying)
+
+## Q: What are the top universities for producing MLB players?
+SPcount &lt;- table(CollegePlaying$schoolID)
+SPcount[SPcount&gt;50]
+
+library("lattice")
+dotplot(SPcount[SPcount&gt;50])
+dotplot(sort(SPcount[SPcount&gt;50]))
+
+## Q: How many schools are represented in this dataset?
+length(table(CollegePlaying$schoolID))
+
+# Histogram of the number of players from each school who played in MLB:
+with(CollegePlaying, 
+     hist(table(schoolID), xlab = "Number of players",
+                           main = ""))
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

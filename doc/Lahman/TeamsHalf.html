@@ -1,0 +1,89 @@
+<!DOCTYPE html><html><head><title>R: TeamsHalf table</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>TeamsHalf</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+TeamsHalf table
+</h2>
+
+<h3>Description</h3>
+
+<p>Split season data for teams
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(TeamsHalf)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 52 observations on the following 10 variables.
+</p>
+
+<dl>
+<dt><code>yearID</code></dt><dd><p>Year</p>
+</dd>
+<dt><code>lgID</code></dt><dd><p>League; a factor with levels <code>AL</code> <code>NL</code></p>
+</dd>
+<dt><code>teamID</code></dt><dd><p>Team; a factor</p>
+</dd>
+<dt><code>Half</code></dt><dd><p>First or second half of season</p>
+</dd>
+<dt><code>divID</code></dt><dd><p>Division</p>
+</dd>
+<dt><code>DivWin</code></dt><dd><p>Won Division (Y or N)</p>
+</dd>
+<dt><code>Rank</code></dt><dd><p>Team's position in standings for the half</p>
+</dd>
+<dt><code>G</code></dt><dd><p>Games played</p>
+</dd>
+<dt><code>W</code></dt><dd><p>Wins</p>
+</dd>
+<dt><code>L</code></dt><dd><p>Losses</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Lahman, S. (2024) Lahman's Baseball Database, 1871-2023, 2024 version, <a href="http://www.seanlahman.com/">http://www.seanlahman.com/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'># 1981 season team data split into half seasons
+data(TeamsHalf)
+library("dplyr")
+
+# List standings with winning percentages by
+# season half, league and division
+TeamsHalf %&gt;%
+   group_by(Half, lgID, divID) %&gt;%
+   mutate(WinPct = round(W/G, 3)) %&gt;%
+   arrange(Half, lgID, divID, Rank) %&gt;%
+   select(Half, lgID, divID, Rank, teamID, WinPct)
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html><html><head><title>R: AllstarFull table</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>AllstarFull</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+AllstarFull table
+</h2>
+
+<h3>Description</h3>
+
+<p>All Star appearances by players
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(AllstarFull)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 5673 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt><code>playerID</code></dt><dd><p>Player ID code</p>
+</dd>
+<dt><code>yearID</code></dt><dd><p>Year</p>
+</dd>
+<dt><code>gameNum</code></dt><dd><p>Game number (for years in which more than one game was played)</p>
+</dd>
+<dt><code>gameID</code></dt><dd><p>Game ID code</p>
+</dd>
+<dt><code>teamID</code></dt><dd><p>Team; a factor</p>
+</dd>
+<dt><code>lgID</code></dt><dd><p>League; a factor with levels <code>AL</code> <code>NL</code></p>
+</dd>
+<dt><code>GP</code></dt><dd><p>Game played (zero if player did not appear in game)</p>
+</dd>
+<dt><code>startingPos</code></dt><dd><p>If the player started, what position he played</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Lahman, S. (2024) Lahman's Baseball Database, 1871-2023, 2024 version, <a href="http://www.seanlahman.com/">http://www.seanlahman.com/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(AllstarFull)
+
+# find number of appearances by players in the All Star games
+player_appearances &lt;- with(AllstarFull, rev(sort(table(playerID))))
+
+# How many All-Star players, in total?
+length(player_appearances)
+
+# density plot of the whole distribution
+plot(density(player_appearances), main="Player appearances in All Star Games")
+rug(jitter(player_appearances))
+
+# who has played in more than 10 ASGs?
+player_appearances[player_appearances &gt; 10]
+hist(player_appearances[player_appearances &gt; 10])
+
+
+# Hank Aaron's All-Star record:
+subset(AllstarFull, playerID == "aaronha01")
+
+# Years that Stan Musial played in the ASG:
+with(AllstarFull, yearID[playerID == "musiast01"])
+
+# Starting positions he played (NA means did not start)
+with(AllstarFull, startingPos[playerID == "musiast01"])
+
+# All-Star rosters from the 1966 ASG
+subset(AllstarFull, gameID == "NLS196607120")
+
+# All-Stars from the Washington Nationals
+subset(AllstarFull, teamID == "WAS")
+
+# Teams with the fewest All-Stars
+rare &lt;- names(which(table(AllstarFull$teamID) &lt; 10))
+
+# Records associated with the 'rare' teams:
+# (There are a few teamID typos: can you spot them?)
+subset(AllstarFull, teamID %in% rare)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

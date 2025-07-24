@@ -1,0 +1,131 @@
+<!DOCTYPE html><html><head><title>R: FieldingPost data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>FieldingPost</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+FieldingPost data
+</h2>
+
+<h3>Description</h3>
+
+<p>Post season fielding data
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(FieldingPost)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 16606 observations on the following 17 variables.
+</p>
+
+<dl>
+<dt><code>playerID</code></dt><dd><p>Player ID code</p>
+</dd>
+<dt><code>yearID</code></dt><dd><p>Year</p>
+</dd>
+<dt><code>teamID</code></dt><dd><p>Team; a factor</p>
+</dd>
+<dt><code>lgID</code></dt><dd><p>League; a factor with levels <code>AL</code> <code>NL</code></p>
+</dd>
+<dt><code>round</code></dt><dd><p>Level of playoffs </p>
+</dd>
+<dt><code>POS</code></dt><dd><p>Position</p>
+</dd>
+<dt><code>G</code></dt><dd><p>Games </p>
+</dd>
+<dt><code>GS</code></dt><dd><p>Games Started</p>
+</dd>
+<dt><code>InnOuts</code></dt><dd><p>Time played in the field expressed as outs </p>
+</dd>
+<dt><code>PO</code></dt><dd><p>Putouts</p>
+</dd>
+<dt><code>A</code></dt><dd><p>Assists</p>
+</dd>
+<dt><code>E</code></dt><dd><p>Errors</p>
+</dd>
+<dt><code>DP</code></dt><dd><p>Double Plays</p>
+</dd>
+<dt><code>TP</code></dt><dd><p>Triple Plays</p>
+</dd>
+<dt><code>PB</code></dt><dd><p>Passed Balls</p>
+</dd>
+<dt><code>SB</code></dt><dd><p>Stolen Bases allowed (by catcher)</p>
+</dd>
+<dt><code>CS</code></dt><dd><p>Caught Stealing (by catcher)</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Lahman, S. (2024) Lahman's Baseball Database, 1871-2023, 2024 version, <a href="http://www.seanlahman.com/">http://www.seanlahman.com/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>require("dplyr")
+
+## World Series fielding record for Yogi Berra
+FieldingPost %&gt;%
+  filter(playerID == "berrayo01" &amp; round == "WS")
+
+## Yogi's career efficiency in throwing out base stealers 
+## in his WS appearances and CS as a percentage of his 
+## overall assists
+FieldingPost %&gt;%
+  filter(playerID == "berrayo01" &amp; round == "WS" &amp; POS == "C") %&gt;%
+  summarise(cs_pct = round(100 * sum(CS)/sum(SB + CS), 2),
+            cs_assists = round(100 * sum(CS)/sum(A), 2))
+
+## Innings per error for several selected shortstops in the WS
+FieldingPost %&gt;%
+  filter(playerID %in% c("belanma01", "jeterde01", "campabe01",
+                         "conceda01", "bowala01"), round == "WS") %&gt;%
+  group_by(playerID) %&gt;%
+  summarise(G = sum(G),
+            InnOuts = sum(InnOuts),
+            Eper9 = round(27 * sum(E)/sum(InnOuts), 3))
+
+
+## Top 10 center fielders in innings played in the WS
+FieldingPost %&gt;%
+  filter(POS == "CF" &amp; round == "WS") %&gt;%
+  group_by(playerID) %&gt;%
+  summarise(inn_total = sum(InnOuts)) %&gt;%
+  arrange(desc(inn_total)) %&gt;%
+  head(., 10)
+
+## Most total chances by position
+FieldingPost %&gt;%
+  filter(round == "WS" &amp; !(POS %in% c("DH", "OF", "P"))) %&gt;%
+  group_by(POS, playerID) %&gt;%
+  summarise(TC = sum(PO + A + E)) %&gt;%
+  arrange(desc(TC)) %&gt;%
+  do(head(., 1))    # provides top player by position
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

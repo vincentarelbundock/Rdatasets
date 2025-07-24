@@ -45,7 +45,7 @@
          economic aid obligations in nominal U.S. dollars
 
       ``constoblig``
-         economic aid obligations in costant 2019 U.S. dollars
+         economic aid obligations in constant 2019 U.S. dollars
 
       ``clphy``
          a physical violence index, bound between 0 and 1

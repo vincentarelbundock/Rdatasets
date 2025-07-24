@@ -1,0 +1,114 @@
+<!DOCTYPE html><html><head><title>R: The Correlates of Dyadic Voting Similiarities in the UN...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>rok_unga</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The Correlates of Dyadic Voting Similiarities in the UN General Assembly for South Korea</h2>
+
+<h3>Description</h3>
+
+<p>A data set on dyadic voting similarity for South Korea in relation to other
+states, from 1991 to 2022.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>rok_unga
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with the following variables.
+</p>
+
+<dl>
+<dt><code>ccode1</code></dt><dd><p>a numeric vector, and constant, identifies the Correlates of War state code for South Korea (732)</p>
+</dd>
+<dt><code>ccode2</code></dt><dd><p>a numeric vector for the Correlates of War state code for the other state in the dyad</p>
+</dd>
+<dt><code>iso3c</code></dt><dd><p>a three-character ISO code corresponding with the Correlates of War state code for <code>ccode2</code></p>
+</dd>
+<dt><code>year</code></dt><dd><p>a numeric vector for a year</p>
+</dd>
+<dt><code>agree</code></dt><dd><p>the percentage of the time South Korea and the other state in the dyad agreed on a vote in a given year</p>
+</dd>
+<dt><code>v_agree</code></dt><dd><p>the percentage of the time South Korea and the other state in the dyad agreed on a vote in a given year, as calculated by Voeten et al. in their data</p>
+</dd>
+<dt><code>kappa</code></dt><dd><p>weighted Cohen's kappa for dyadic foreign policy similarity as derived from the UN voting data</p>
+</dd>
+<dt><code>ip1</code></dt><dd><p>the ideal point estimate for South Korea for a given year, as derived from UN voting data</p>
+</dd>
+<dt><code>ip2</code></dt><dd><p>the ideal point estimate for <code>ccode2</code>, as derived from UN voting data</p>
+</dd>
+<dt><code>ipd</code></dt><dd><p>the absolute distance between <code>ip1</code> and <code>ip2</code></p>
+</dd>
+<dt><code>gdppc1</code></dt><dd><p>estimated GDP per capita in 2015 USD for South Korea in the referent year</p>
+</dd>
+<dt><code>gdppc2</code></dt><dd><p>estimated GDP per capita in 2015 USD for <code>ccode2</code> in a given year</p>
+</dd>
+<dt><code>v2x_polyarchy1</code></dt><dd><p>the Varieties of Democracy estimate for the &quot;polyarchy&quot; for South Korea in the referent year</p>
+</dd>
+<dt><code>v2x_polyarchy2</code></dt><dd><p>the Varieties of Democracy estimate for the &quot;polyarchy&quot; for <code>ccode2</code> in a given year</p>
+</dd>
+<dt><code>xm_euds1</code></dt><dd><p>Xavier Marquez' estimate for the extended Unified Democracy Score for South Korea in the referent year</p>
+</dd>
+<dt><code>xm_euds2</code></dt><dd><p>Xavier Marquez' estimate for the extended Unified Democracy Score  for <code>ccode2</code> in a given year</p>
+</dd>
+<dt><code>capdist</code></dt><dd><p>the distance between Seoul and the capital of <code>ccode2</code> in the year</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Voeten et al's codebook cautions that their agreement variable is there for
+comparison and should not be used for a serious analysis of dyadic foreign
+policy similarity. The <code>agree</code> variable I calculate is based on <em>all</em> votes,
+whereas (I think) Voeten et al. exclude amendments and votes on paragraphs.
+</p>
+<p>Cohen's (weighted) kappa is suggested by Haege (2011) for use measuring
+dyadic foreign policy similarity. This measure is likewise calculated by me
+for <em>all</em> votes. I forget how Haege (2011) does this for his calculations and
+if he is excluding votes on amendments or paragraphs. Its interpretation
+differs from how one might use the ideal point distance variable. This is a
+chance-corrected correlation. Higher values indicate more similarity whereas
+higher values in the ideal point distance variable communicate more dissimilarity.
+</p>
+<p>GDP per capita include some imputations by way of a semiparametric Bayesian
+Gaussian copulas. This prominently concerns Venezuela. Data are otherwise
+derived from the World Bank's open data.
+</p>
+<p>Xavier Marquez' &quot;extended Unified Democracy Scores&quot; approximate a normal
+distribution with a standard deviation of 1. Invoking <code>pnorm()</code> on a particular
+estimate provides a kind of probabilistic assessment of whether the observation
+in question is a democracy. In both the Varieties of Democracy estimate and
+the Marquez estimate, higher values = &quot;more democracy&quot;. See also: the
+<code>Lipset59</code> documentation in this same package.
+</p>
+<p>Capital-to-capital distance is calculated using the Vicenty method (&quot;as the
+crow flies&quot;), and is done by way of a <span class="pkg">peacesciencer</span> call and its
+<code>add_capital_distance()</code> function. There are unusual cases where a capital
+moved (i.e. Burundi, Kazakhstan, Myanmar, Nigeria). In those cases, the
+capital on Jan. 1 of the given year is treated as the capital.
+</p>
+
+</main>
+
+</div>
+</body></html>

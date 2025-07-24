@@ -1,0 +1,217 @@
+<!DOCTYPE html><html><head><title>R: Managers table</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Managers</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Managers table
+</h2>
+
+<h3>Description</h3>
+
+<p>Managers table: information about individual team managers, teams they managed and some basic statistics
+for those teams in each year.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Managers)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 3749 observations on the following 10 variables.
+</p>
+
+<dl>
+<dt><code>playerID</code></dt><dd><p>Manager (player) ID code</p>
+</dd>
+<dt><code>yearID</code></dt><dd><p>Year</p>
+</dd>
+<dt><code>teamID</code></dt><dd><p>Team; a factor</p>
+</dd>
+<dt><code>lgID</code></dt><dd><p>League; a factor with levels <code>AA</code> <code>AL</code> <code>FL</code> <code>NL</code> <code>PL</code> <code>UA</code></p>
+</dd>
+<dt><code>inseason</code></dt><dd><p>Managerial order.  Zero if the individual managed the team
+the entire year.  Otherwise denotes where the manager appeared
+in the managerial order (1 for first manager, 2 for second, etc.)</p>
+</dd>
+<dt><code>G</code></dt><dd><p>Games managed</p>
+</dd>
+<dt><code>W</code></dt><dd><p>Wins</p>
+</dd>
+<dt><code>L</code></dt><dd><p>Losses</p>
+</dd>
+<dt><code>rank</code></dt><dd><p>Team's final position in standings that year</p>
+</dd>
+<dt><code>plyrMgr</code></dt><dd><p>Player Manager (denoted by 'Y'); a factor with levels <code>N</code> <code>Y</code></p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Lahman, S. (2024) Lahman's Baseball Database, 1871-2023, 2024 version, <a href="http://www.seanlahman.com/">http://www.seanlahman.com/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>####################################
+# Basic career summaries by manager
+####################################
+
+library("dplyr")
+mgrSumm &lt;- Managers %&gt;%
+            group_by(playerID) %&gt;%
+            summarise(nyear = length(unique(yearID)),
+                      yearBegin = min(yearID),
+                      yearEnd = max(yearID),
+                      nTeams = length(unique(teamID)),
+                      nfirst = sum(rank == 1L),
+                      W = sum(W),
+                      L = sum(L),
+                      WinPct = round(W/(W + L), 3))
+
+MgrInfo &lt;- People %&gt;%
+            filter(!is.na(playerID)) %&gt;%
+            select(playerID, nameLast, nameFirst)
+
+# Merge names into the table
+mgrTotals &lt;- right_join(MgrInfo, mgrSumm, by = "playerID")
+
+# add total games managed
+mgrTotals &lt;- mgrTotals %&gt;%
+              mutate(games = W + L)
+
+##########################
+# Some basic queries
+##########################
+
+# Top 20 managers in terms of years of service:
+mgrTotals %&gt;%
+   arrange(desc(nyear)) %&gt;%
+   head(., 20)
+
+# Top 20 winningest managers (500 games minimum)
+mgrTotals %&gt;%
+   filter((W + L) &gt;= 500) %&gt;%
+   arrange(desc(WinPct)) %&gt;%
+   head(., 20)
+
+# Most of these are 19th century managers.
+# How about the modern era?
+mgrTotals %&gt;%
+   filter(yearBegin &gt;= 1901 &amp; (W + L) &gt;= 500) %&gt;%
+   arrange(desc(WinPct)) %&gt;%
+   head(., 20)
+
+# Top 10 managers in terms of percentage of titles 
+# (league or divisional) - should bias toward managers
+#  post-1970 since more first place finishes are available
+mgrTotals %&gt;%
+   filter(yearBegin &gt;= 1901 &amp; (W + L) &gt;= 500) %&gt;%
+   arrange(desc(round(nfirst/nyear, 3))) %&gt;%
+   head(., 10)
+
+# How about pre-1969?
+mgrTotals %&gt;%
+  filter(yearBegin &gt;= 1901 &amp; yearEnd &lt;= 1969 &amp;
+          (W + L) &gt;= 500) %&gt;%
+  arrange(desc(round(nfirst/nyear, 3))) %&gt;%
+  head(., 10)
+
+## Tony LaRussa's managerial record by team
+Managers %&gt;%
+  filter(playerID == "larusto01") %&gt;%
+  group_by(teamID) %&gt;%
+  summarise(nyear = length(unique(yearID)),
+            yearBegin = min(yearID),
+            yearEnd = max(yearID),
+            games = sum(G),
+            nfirst = sum(rank == 1L),
+            W = sum(W),
+            L = sum(L),
+            WinPct = round(W/(W + L), 3))
+
+##############################################
+# Density plot of the number of games managed:
+##############################################
+
+library("ggplot2")
+
+ggplot(mgrTotals, aes(x = games)) + 
+    geom_density(fill = "red", alpha = 0.3) +
+    labs(x = "Number of games managed")
+
+# Who managed more than 4000 games?
+mgrTotals %&gt;% 
+  filter(W + L &gt;= 4000) %&gt;%
+  arrange(desc(W + L))
+# Connie Mack's advantage: he owned the Philadelphia A's :)
+
+# Table of Tony LaRussa's team finishes (rank order):
+Managers %&gt;%
+   filter(playerID == "larusto01") %&gt;%
+   count(rank)
+
+
+
+##############################################
+# Scatterplot of winning percentage vs. number 
+# of games managed (min 100)
+##############################################
+
+ggplot(subset(mgrTotals, yearBegin &gt;= 1900 &amp; games &gt;= 100),
+       aes(x = games, y = WinPct)) + 
+  geom_point() + geom_smooth() +
+  labs(x = "Number of games managed")
+
+############################################
+# Division titles
+############################################
+
+# Plot of number of first place finishes by managers who
+# started in the divisional era (&gt;= 1969) with 
+# at least 8 years of experience
+
+mgrTotals %&gt;% 
+  filter(yearBegin &gt;= 1969 &amp; nyear &gt;= 8) %&gt;%
+  ggplot(., aes(x = nyear, y = nfirst)) +
+     geom_point(position = position_jitter(width = 0.2)) +
+     labs(x = "Number of years", 
+          y = "Number of divisional titles") +
+     geom_smooth()
+
+
+# Change response to proportion of titles relative
+# to years managed
+mgrTotals %&gt;% 
+  filter(yearBegin &gt;= 1969 &amp; nyear &gt;= 8) %&gt;%
+  ggplot(., aes(x = nyear, y = round(nfirst/nyear, 3))) +
+     geom_point(position = position_jitter(width = 0.2)) +
+     labs(x = "Number of years", 
+          y = "Proportion of divisional titles") +
+     geom_smooth()
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,28 @@
+rownames,file,class,nobs,nvar,title
+1,AllstarFull,data.frame,5454,8,AllstarFull table
+2,Appearances,data.frame,110423,21,Appearances table
+3,AwardsManagers,data.frame,179,6,AwardsManagers table
+4,AwardsPlayers,data.frame,6531,6,AwardsPlayers table
+5,AwardsShareManagers,data.frame,425,7,AwardsShareManagers table
+6,AwardsSharePlayers,data.frame,6879,7,AwardsSharePlayers table
+7,Batting,data.frame,110495,22,Batting table
+8,BattingPost,data.frame,15879,22,BattingPost table
+9,CollegePlaying,data.frame,17350,3,CollegePlaying table
+10,Fielding,data.frame,147080,18,Fielding table
+11,FieldingOF,data.frame,12028,6,FieldingOF table
+12,FieldingOFsplit,data.frame,34563,18,FieldingOFsplit table
+13,FieldingPost,data.frame,15063,17,FieldingPost data
+14,HallOfFame,data.frame,4191,9,Hall of Fame Voting Data
+15,HomeGames,data.frame,3195,9,HomeGames table
+16,Managers,data.frame,3684,10,Managers table
+17,ManagersHalf,data.frame,93,10,ManagersHalf table
+18,Parks,data.frame,255,6,Parks table
+19,People,data.frame,20370,26,People table
+20,Pitching,data.frame,49430,30,Pitching table
+21,PitchingPost,data.frame,6308,30,PitchingPost table
+22,Salaries,data.frame,26428,5,Salaries table
+23,Schools,data.frame,1207,5,Schools table
+24,SeriesPost,data.frame,367,9,SeriesPost table
+25,Teams,data.frame,2985,48,Teams table
+26,TeamsFranchises,data.frame,120,4,TeamFranchises table
+27,TeamsHalf,data.frame,52,10,TeamsHalf table

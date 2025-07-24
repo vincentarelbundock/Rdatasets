@@ -1,0 +1,114 @@
+<!DOCTYPE html><html><head><title>R: Lahman Datasets</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>LahmanData</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Lahman Datasets
+</h2>
+
+<h3>Description</h3>
+
+<p>This dataset gives a concise description of the data files in the Lahman package.
+It may be useful for computing on the various files.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(LahmanData)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 24 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>file</code></dt><dd><p>name of dataset</p>
+</dd>
+<dt><code>class</code></dt><dd><p>class of dataset</p>
+</dd>
+<dt><code>nobs</code></dt><dd><p>number of observations</p>
+</dd>
+<dt><code>nvar</code></dt><dd><p>number of variables</p>
+</dd>
+<dt><code>title</code></dt><dd><p>dataset title</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This dataset is generated using <code>vcdExtra::datasets(package="Lahman")</code>
+with some post-processing.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(LahmanData)
+
+# find ID variables in the datasets
+IDvars &lt;- lapply(LahmanData[,"file"], function(x) grep('.*ID$', colnames(get(x)), value=TRUE))
+names(IDvars) &lt;- LahmanData[,"file"]
+str(IDvars)
+# vector of unique ID variables
+unique(unlist(IDvars))
+
+# which datasets have playerID?
+names(which(sapply(IDvars, function(x) "playerID" %in% x)))
+
+################################################
+# Visualize relations among datasets via an MDS
+################################################
+# jaccard distance between two sets; assure positivity
+jaccard &lt;- function(A, B) {
+	max(1 - length(intersect(A,B)) / length(union(A,B)), .00001)
+}	
+
+distmat &lt;- function(vars, FUN=jaccard) {
+	nv &lt;- length(vars)
+	d &lt;- matrix(0, nv, nv, dimnames=list(names(vars), names(vars)))
+	
+	for(i in 1:nv) {
+		for (j in 1:nv) {
+			if (i != j) d[i,j] &lt;- FUN(vars[[i]], vars[[j]])
+		}
+	}
+	
+	d[is.nan(d)] = 0
+	
+	d
+}
+
+# do an MDS on distances
+distID &lt;- distmat(IDvars)
+config &lt;- cmdscale(distID)
+
+pos=rep(1:4, length=nrow(config))
+plot(config[,1], config[,2], xlab = "", ylab = "", asp = 1, axes=FALSE,
+	main="MDS of ID variable distances of Lahman tables")
+abline(h=0, v=0, col="gray80")
+text(config[,1], config[,2], rownames(config), cex = 0.75, pos=pos, xpd=NA)
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html><html><head><title>R: TeamFranchises table</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>TeamsFranchises</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+TeamFranchises table
+</h2>
+
+<h3>Description</h3>
+
+<p>Information about team franchises
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(TeamsFranchises)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 120 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>franchID</code></dt><dd><p>Franchise ID; a factor</p>
+</dd>
+<dt><code>franchName</code></dt><dd><p>Franchise name</p>
+</dd>
+<dt><code>active</code></dt><dd><p>Whether team is currently active (Y or N)</p>
+</dd>
+<dt><code>NAassoc</code></dt><dd><p>ID of National Association team franchise played as</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Lahman, S. (2024) Lahman's Baseball Database, 1871-2023, 2024 version, <a href="http://www.seanlahman.com/">http://www.seanlahman.com/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(TeamsFranchises)
+
+# Which of the active Major League Baseball teams had a National Association predecessor?
+
+# Notes: 
+# - the National Association was founded in 1871, and continued through the
+# 1875 season. In 1876, six clubs from the National Association and two other
+# independent clubs formed the National League, which exists to this day.
+# - the `active` field has "NA" for the National Association franchises
+# - where appropriate, the `NAassoc` field has the `franchID` of the successor National League team
+
+# using the dplyr data manipulation package
+library("dplyr")
+
+NatAssoc_active_table &lt;- TeamsFranchises %&gt;%
+  filter(active == "Y") %&gt;%
+  filter(!is.na(NAassoc))
+NatAssoc_active_table
+
+# Merge current team IDs with franchise IDs
+currentTeams &lt;- Teams %&gt;% 
+                  filter(yearID == 2014) %&gt;%
+                  select(teamID, franchID, lgID, park)
+
+# Merge TeamsFranchises with currentTeams
+TeamsFranchises %&gt;%
+    filter(active == "Y") %&gt;%
+    select(-active, -NAassoc) %&gt;%
+    left_join(currentTeams, by = "franchID")
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

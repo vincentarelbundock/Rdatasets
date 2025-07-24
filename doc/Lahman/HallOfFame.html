@@ -1,0 +1,215 @@
+<!DOCTYPE html><html><head><title>R: Hall of Fame Voting Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>HallOfFame</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Hall of Fame Voting Data
+</h2>
+
+<h3>Description</h3>
+
+<p>Hall of Fame table. This is composed of the voting results for all candidates nominated for the
+Baseball Hall of Fame.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(HallOfFame)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 6382 observations on the following 9 variables.
+</p>
+
+<dl>
+<dt><code>playerID</code></dt><dd><p>Player ID code</p>
+</dd>
+<dt><code>yearID</code></dt><dd><p>Year of ballot</p>
+</dd>
+<dt><code>votedBy</code></dt><dd><p>Method by which player was voted upon.  See Details</p>
+</dd>
+<dt><code>ballots</code></dt><dd><p>Total ballots cast in that year</p>
+</dd>
+<dt><code>needed</code></dt><dd><p>Number of votes needed for selection in that year</p>
+</dd>
+<dt><code>votes</code></dt><dd><p>Total votes received</p>
+</dd>
+<dt><code>inducted</code></dt><dd><p>Whether player was inducted by that vote or not (Y or N)</p>
+</dd>
+<dt><code>category</code></dt><dd><p>Category of candidate; a factor with levels <code>Manager</code> <code>Pioneer/Executive</code> <code>Player</code> <code>Umpire</code></p>
+</dd>
+<dt><code>needed_note</code></dt><dd><p>Explanation of qualifiers for special elections</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This table links to the <code>People</code> table via the <code>playerID</code>.
+</p>
+<p><code>votedBy</code>: Most Hall of Fame inductees have been elected by the 
+Baseball Writers Association of America (<code>BBWAA</code>).  Rules for election are
+described in <a href="https://en.wikipedia.org/wiki/National_Baseball_Hall_of_Fame_and_Museum#Selection_process">https://en.wikipedia.org/wiki/National_Baseball_Hall_of_Fame_and_Museum#Selection_process</a>.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Lahman, S. (2024) Lahman's Baseball Database, 1871-2023, 2024 version, <a href="http://www.seanlahman.com/">http://www.seanlahman.com/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Some examples for  Hall of Fame induction data
+
+require("dplyr")
+require("ggplot2")
+
+############################################################
+## Some simple queries
+
+# What are the different types of HOF voters?
+table(HallOfFame$votedBy)
+
+# What was the first year of Hall of Fame elections?
+sort(unique(HallOfFame$yearID))[1]
+# Who comprised the original class?
+subset(HallOfFame, yearID == 1936 &amp; inducted == "Y")
+
+# Result of a player's last year on the BBWAA ballot
+# Restrict to players voted by BBWAA:
+HOFplayers &lt;- subset(HallOfFame, 
+                 votedBy == "BBWAA" &amp; category == "Player")
+
+
+# Number of years as HOF candidate, last pct vote, etc.
+# for a given player
+playerOutcomes &lt;- HallOfFame %&gt;%
+    filter(votedBy == "BBWAA" &amp; category == "Player") %&gt;%
+    group_by(playerID) %&gt;%
+    mutate(nyears = length(ballots)) %&gt;%
+    arrange(yearID) %&gt;%
+    do(tail(., 1)) %&gt;%
+    mutate(lastPct = 100 * round(votes/ballots, 3)) %&gt;%
+    select(playerID, nyears, inducted, lastPct, yearID) %&gt;%
+    rename(lastYear = yearID)
+
+
+############################################################
+# How many voting years until election?
+inducted &lt;- subset(playerOutcomes, inducted == "Y")
+table(inducted$nyears)
+
+# Bar chart of years to induction for inductees
+barplot(table(inducted$nyears), 
+        main="Number of voting years until election",
+	    	ylab="Number of players", xlab="Years")
+box()
+
+# What is the form of this distribution?
+require("vcd")
+goodfit(inducted$nyears)
+plot(goodfit(inducted$nyears), xlab="Number of years",
+	main="Poissonness plot of number of years voting until election")
+Ord_plot(table(inducted$nyears), xlab="Number of years")
+
+
+
+# First ballot inductees sorted by vote percentage:
+playerOutcomes %&gt;%
+  filter(nyears == 1L &amp; inducted == "Y") %&gt;%
+  arrange(desc(lastPct))
+
+# Who took at least ten years on the ballot before induction?
+playerOutcomes %&gt;%
+  filter(nyears &gt;= 10L &amp; inducted == "Y")
+
+############################################################
+## Plots of voting percentages over time for the borderline
+## HOF candidates, according to the BBWAA:
+
+# Identify players on the BBWAA ballot for at least 10 years
+# Returns a character vector of playerIDs
+longTimers &lt;- as.character(unlist(subset(playerOutcomes,
+                                         nyears &gt;= 10, select = "playerID")))
+
+# Extract their information from the HallOfFame data
+HOFlt &lt;- HallOfFame %&gt;% 
+    filter(playerID %in% longTimers &amp; votedBy == "BBWAA") %&gt;%
+    group_by(playerID) %&gt;%
+    mutate(elected = ifelse(any(inducted == "Y"), 
+                              "Elected", "Not elected"),
+           pct = 100 * round(votes/ballots, 3))
+
+# Plot the voting profiles:
+ggplot(HOFlt, aes(x = yearID, y = pct,
+                  group = playerID)) +
+    ggtitle("Profiles of BBWAA voting percentage, long-time HOF candidates") +
+    geom_line() +
+    geom_hline(yintercept = 75, colour = 'red') +
+    labs(x = "Year", y = "Percentage of votes") +
+    facet_wrap(~ elected, ncol = 1)
+    
+## Eventual inductees tend to have increasing support over time.
+## Fit simple linear regression models to each player's voting
+## percentage profile and extract the slopes. Then compare the
+## distributions of the slopes in each group.
+
+# data frame for playerID and induction status among
+# long term candidates
+HOFstatus &lt;- HOFlt %&gt;% 
+               group_by(playerID) %&gt;%
+               select(playerID, elected, inducted) %&gt;%
+               do(tail(., 1))
+
+# data frame of regression slopes, which represent average
+# increase in percentage support by BBWAA members over a
+# player's candidacy.
+HOFslope &lt;- HOFlt %&gt;%
+              group_by(playerID) %&gt;%
+              do(mod = lm(pct ~ yearID, data = .)) %&gt;%
+              do(data.frame(slope = coef(.$mod)[2]))
+
+## Boxplots of regression slopes by induction group
+ggplot(data.frame(HOFstatus, HOFslope), 
+       aes(x = elected, y = slope)) +
+    geom_boxplot(width = 0.5) +
+    geom_point(position = position_jitter(width = 0.2))
+
+# Note 1: Only two players whose maximum voting percentage
+# was over 60% were not eventually inducted
+# into the HOF: Gil Hodges and Jack Morris. 
+# Red Ruffing was elected in a 1967 runoff election while
+# the others have been voted in by the Veterans Committee. 
+
+# Note 2: Of the players whose slope was &gt;= 2.5 among 
+# non-inductees, only Jack Morris has not (yet) been 
+# subsequently inducted into the HOF; however, his last year of
+# eligibility was 2014 so he could be inducted by a future
+# Veterans Committee.
+
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

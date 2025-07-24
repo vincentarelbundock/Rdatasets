@@ -100,7 +100,7 @@
          :name: details
 
       See accompanying blog post at
-      http://svmiller.com/blog/2020/03/what-explains-british-attitudes-toward-immigration-a-pedagogical-example/.
+      https://svmiller.com/blog/2020/03/what-explains-british-attitudes-toward-immigration-a-pedagogical-example/.
 
       .. rubric:: Source
          :name: source
