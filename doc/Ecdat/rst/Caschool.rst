@@ -86,7 +86,8 @@
       .. rubric:: Source
          :name: source
 
-      California Department of Education https://www.cde.ca.gov.
+      California Department of Education
+      https://web.archive.org/web/20250823081216/https://www.cde.ca.gov/.
 
       .. rubric:: References
          :name: references

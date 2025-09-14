@@ -102,7 +102,7 @@
 
       Cameron, A.C. and Trivedi P.K. (1998) *Regression analysis of
       count data*, Cambridge University Press,
-      http://cameron.econ.ucdavis.edu/racd/racddata.html, chapter 6.
+      https://cameron.econ.ucdavis.edu/racd/racddata.html, chapter 6.
 
       Journal of Applied Econometrics data archive :
       http://qed.econ.queensu.ca/jae/.

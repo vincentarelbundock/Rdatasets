@@ -24,7 +24,7 @@
       .. rubric:: Format
          :name: format
 
-      A data frame with 50402 observations on the following 30
+      A data frame with 52344 observations on the following 30
       variables.
 
       ``playerID``
@@ -121,7 +121,7 @@
       .. rubric:: Source
          :name: source
 
-      Lahman, S. (2024) Lahman's Baseball Database, 1871-2023, 2024
+      Lahman, S. (2025) Lahman's Baseball Database, 1871-2024, 2025
       version, http://www.seanlahman.com
 
       .. rubric:: Examples

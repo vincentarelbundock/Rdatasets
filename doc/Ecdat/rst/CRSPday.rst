@@ -43,8 +43,7 @@
 
       ge
          the return for General Electric,
-         `PERMNO <https://www.crsp.org/products/documentation/crsp-link>`__
-         12060
+         `PERMNO <https://www.crsp.org/>`__ 12060
 
       ibm
          the return for IBM, PERMNO 12490

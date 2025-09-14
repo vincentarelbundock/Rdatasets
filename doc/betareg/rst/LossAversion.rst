@@ -96,7 +96,7 @@
       along with replication materials are available in the Harvard
       Dataverse.
 
-      Kosmidis and Zeileis (2024) revisit the data using
+      Kosmidis and Zeileis (2025) revisit the data using
       extended-support beta mixture (XBX) regression, which can
       simultaneously capture both the probability of rational behavior
       and the mean amount of loss aversion.
@@ -117,9 +117,10 @@
       Economic Behavior & Organization*, **111**, 169–176.
       `doi:10.1016/j.jebo.2014.12.021 <https://doi.org/10.1016/j.jebo.2014.12.021>`__
 
-      Kosmidis I, Zeileis A (2024). Extended-Support Beta Regression for
-      [0, 1] Responses. 2409.07233, *arXiv.org E-Print Archive*.
-      `doi:10.48550/arXiv.2409.07233 <https://doi.org/10.48550/arXiv.2409.07233>`__
+      Kosmidis I, Zeileis A (2025). Extended-Support Beta Regression for
+      [0, 1] Responses. *Journal of the Royal Statistical Society C*,
+      forthcoming.
+      `doi:10.1093/jrsssc/qlaf039 <https://doi.org/10.1093/jrsssc/qlaf039>`__
 
       .. rubric:: See Also
          :name: see-also

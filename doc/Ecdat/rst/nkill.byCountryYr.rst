@@ -228,20 +228,21 @@
       .. rubric:: Source
          :name: source
 
-      National Consortium for the Study of Terrorism and Responses to
-      Terrorism (START). (2017). Global Terrorism Database [Data file].
-      Retrieved from https://start.umd.edu/gtd [accessed 2022-10-08].
+      START (National Consortium for the Study of Terrorism and
+      Responses to Terrorism). (2022). Global Terrorism Database, 1970 -
+      2020 [data file]. Retrieved from https://www.start.umd.edu/gtd,
+      2024-10-17.
 
       See also the `Global Terrorism
       Database <https://en.wikipedia.org/wiki/Global_Terrorism_Database>`__
       maintained by the `National Consortium for the Study of Terrorism
       and Responses to
       Terrorism <https://en.wikipedia.org/wiki/National_Consortium_for_the_Study_of_Terrorism_and_Responses_to_Terrorism>`__
-      (START, 2015), https://www.start.umd.edu/gtd.
+      (START, 2022), https://www.start.umd.edu/gtd.
 
       The world and US population figures came from "Total Population -
       Both Sexes", `World Population Prospects
-      2022 <https://population.un.org/wpp/Download/Standard/Population/>`__,
+      2022 <https://www.un.org/development/desa/pd/content/World-Population-Prospects-2022>`__,
       published by the Population Division, World Population Prospects,
       of the United Nations, accessed 2022-10-09.
 
@@ -330,3 +331,4 @@
          ip <- paste(pch., names(maxDeaths[omax[1:8]]))
          legend('topleft', ip, cex=.55, 
                 col=cols, text.col=cols)
+                

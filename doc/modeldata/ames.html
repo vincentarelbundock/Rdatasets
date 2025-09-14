@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
 <script type="text/javascript">
-const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
 function processMathHTML() {
     var l = document.getElementsByClassName('reqn');
     for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
@@ -48,7 +48,7 @@ ames_folds&lt;- vfold_cv(ames_train)
 
 <h3>Value</h3>
 
-<table>
+<table role = "presentation">
 <tr><td><code>ames</code></td>
 <td>
 <p>a tibble</p>
@@ -60,9 +60,9 @@ ames_folds&lt;- vfold_cv(ames_train)
 
 <p>De Cock, D. (2011). &quot;Ames, Iowa: Alternative to the Boston Housing Data as an End of Semester Regression Project,&quot; <em>Journal of Statistics Education</em>,  Volume 19, Number 3.
 </p>
-<p><a href="http://jse.amstat.org/v19n3/decock/DataDocumentation.txt">http://jse.amstat.org/v19n3/decock/DataDocumentation.txt</a>
+<p><a href="https://jse.amstat.org/v19n3/decock/DataDocumentation.txt">https://jse.amstat.org/v19n3/decock/DataDocumentation.txt</a>
 </p>
-<p><a href="http://jse.amstat.org/v19n3/decock.pdf">http://jse.amstat.org/v19n3/decock.pdf</a>
+<p><a href="https://jse.amstat.org/v19n3/decock.pdf">https://jse.amstat.org/v19n3/decock.pdf</a>
 </p>
 
 

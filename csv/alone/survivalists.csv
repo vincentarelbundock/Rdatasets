@@ -113,39 +113,49 @@ rownames,version,season,id,name,first_name,last_name,age,gender,city,state,count
 112,US,11,US086,Dusty Blake,Dusty,Blake,36,Male,Fifty-Six,Arkansas,United States,8,10,FALSE,Gastrointestinal issues,Health,4,,,Welder
 113,US,11,US085,Peter Albano,Peter,Albano,42,Male,Castelgar,British Columbia,Canada,9,8,FALSE,Discovered emotional trauma and needed to leave to address it,Personal,3,,,Librarian
 114,US,11,US089,Cubby Hoover,Cubby,Hoover,33,Male,Seligman,Missouri,United States,10,4,TRUE,Arrow 4 inches into his thigh,Health,1,,,Bowyer And Homesteader
-115,US Frozen,1,US053,Woniya Thibeault,Woniya,Thibeault,45,Female,,California,United States,1,50,FALSE,,,,,,
-116,US Frozen,1,US067,Michelle Finn,Michelle,Finn,47,Female,,Maine,United States,2,38,FALSE,Eye injury,Health,8,,,
-117,US Frozen,1,US063,Callie Russell,Callie,Russell,34,Female,,Montana,United States,3,26,FALSE,Lack of food,Health,7,,,
-118,US Frozen,1,US061,Amos Rodriguez,Amos,Rodriguez,41,Male,,Indiana,United States,4,19,FALSE,"Missed his family, but also health: didn't want to push his body",Personal,5,,,
-119,US Frozen,1,US025,Greg Ovens,Greg,Ovens,58,Male,,British Columbia,Canada,5,6,FALSE,"Lack of food, anxiety, wet gear",Personal,3,,,
-120,US Frozen,1,US060,Mark D'Ambrosio,Mark,D'Ambrosio,36,Male,,Washington,United States,6,5,FALSE,Missed his family,Personal,1,,,
-121,AU,1,AU004,Gina Chick,Gina,Chick,52,Female,,New South Wales,Australia,1,67,FALSE,,,,,,Rewilding Facilitator
-122,AU,1,AU008,Mike Atkinson,Mike,Atkinson,45,Male,,New South Wales,Australia,2,64,TRUE,Blood pressure too low,Health,10,,,Solo Adventurist
-123,AU,1,AU007,Michael Wallace,Michael,Wallace,43,Male,,New South Wales,Australia,3,30,FALSE,Missed his family,Personal,10,,,Vet And Bush Regenerator
-124,AU,1,AU006,Kate Grarock,Kate,Grarock,41,Female,,Australian Capital Territory,Australia,4,23,FALSE,Missed her family,Personal,8,,,Wildlife Biologist
-125,AU,1,AU002,Chris Bakon,Chris,Bakon,39,Male,,Tasmania,Australia,5,12,FALSE,Just felt right,Personal,7,,,Army Veteran
-126,AU,1,AU003,Duane Byrnes,Duane,Byrnes,35,Male,,New South Wales,Australia,6,10,FALSE,Missed his family,Personal,5,,,Wildlife And Environmental Officer
-127,AU,1,AU009,Peter Athanassiou,Peter,Athanassiou,31,Male,,New South Wales,Australia,7,3,FALSE,"Injured Knee, had enough",Personal,3,,,Hunting Guide
-128,AU,1,AU005,Jimmy Lassaline,Jimmy,Lassaline,22,Male,,South Australia,Australia,8,2,TRUE,Tested positive for COVID-19,Health,2,,,Farmhand And Engineering Student
-129,AU,1,AU001,Beck Henog,Beck,Henog,42,Female,,Victoria,Australia,9,2,FALSE,"Couldn't start fire, lost the mental game",Personal,2,,,School Teacher
-130,AU,1,AU010,Rob Kelly,Rob,Kelly,41,Male,,Victoria,Australia,10,2,FALSE,Missed his family,Personal,2,,,Planning And Environmental Manager
-131,AU,2,AU016,Krzysztof,Krzysztof,,39,Male,,Victoria,Australia,1,64,FALSE,,,,,,Aquaculturist
-132,AU,2,AU015,Suzan,Suzan,,54,Female,,New South Wales,Australia,2,63,FALSE,At physical limit,Health,10,,,Adventure Guide
-133,AU,2,AU014,Andreas,Andreas,,42,Male,,New South Wales,Australia,3,57,FALSE,At physical limit; unable to sustain himself further,Health,10,,,Personal Trainer/Subsistence Hunter
-134,AU,2,AU012,Tamika,Tamika,,51,Female,,Queensland,Australia,4,53,FALSE,Felt like she was at her physical limit; worried about her safety given her weakness; didn't think she could get more food,Health,9,,,Off-Gridder/Former Police Officer
-135,AU,2,AU017,Rick,Rick,,58,Male,,Queensland,Australia,5,38,FALSE,Accomplished what he wanted to accomplish,Personal,8,,,Survival Educator/Former Sas Soldier
-136,AU,2,AU018,Jack,Jack,,55,Male,,Victoria,Australia,6,16,FALSE,Wanted to finish strong,Personal,5,,,Tradesman And Wild Game Hunter
-137,AU,2,AU020,Chace,Chace,,27,Male,,Queensland,Australia,7,10,FALSE,Missed pregnant wife,Personal,4,,,Defence Force Combat Engineer
-138,AU,2,AU011,Jason,Jason,,37,Male,,New South Wales,Australia,8,8,FALSE,No longer trusted himself; dizzy spells,Personal,4,,,Youth Worker
-139,AU,2,AU013,Leanne,Leanne,,41,Female,,Victoria,Australia,9,4,FALSE,Missed her family,Personal,2,,,World Heritage Aboriginals Program Officer
-140,AU,2,AU019,Mike,Mike,,60,Male,,New South Wales,Australia,10,2,TRUE,Heart palpitations,Health,2,,,Resilience Coach
-141,AU,3,AU028,Shay,Shay,,30,Male,,,New Zealand,1,76,FALSE,,,,,,Profressional Trapper
-142,AU,3,AU027,Muzza,Muzza,,63,Male,,Victoria,Australia,2,73,TRUE,Low blood pressure,Health,12,,,Bushman
-143,AU,3,AU023,Corinne,Corinne,,38,Female,,Tasmania,Australia,3,70,FALSE,Decided she didn't have anything more to prove,Personal,12,,,Food Safety Consultant
-144,AU,3,AU029,Tom,Tom,,33,Male,,New South Wales,Australia,4,47,FALSE,"Couldn't procure enough food, didn't want to wait for medical to extract him",Health,10,,,Ecologist
-145,AU,3,AU021,Ben,Ben,,38,Male,,South Australia,Australia,5,40,TRUE,"Low blood pressure, starvation",Health,8,,,English Teacher
-146,AU,3,AU025,Karla,Karla,,35,Female,,Queensland,Australia,6,35,FALSE,Missed her friends and family,Personal,7,,,Expedition Leader
-147,AU,3,AU030,Yonke,Yonke,,52,Female,,Victoria,Australia,7,31,FALSE,Wasn't getting the experience she hoped for,Personal,6,,,Farmer And Permaculturalist
-148,AU,3,AU022,Ceilidh,Ceilidh,,34,Female,,Queensland,Australia,8,19,TRUE,Likely kidney infection from an untreated UTI,Health,5,,,Disability Services
-149,AU,3,AU024,Eva,Eva,,31,Female,,New South Wales,Australia,9,17,FALSE,"Couldn't procure food (protein), and felt like she exhausted all options with fishing",Health,4,,,Rewilding Facilitator
-150,AU,3,AU026,Matt,Matt,,31,Male,,Western Australia,Australia,10,16,FALSE,Missed his family,Personal,3,,,Indigenous Youth Worker
+115,US,12,US102,Nathan Olsen,Nathan,Olsen,52,Male,Buhl,Idaho,United States,1,34,FALSE,,,,,,Tech Ceo
+116,US,12,US098,Kelsey Loper,Kelsey,Loper,35,Female,Winnett,Montana,United States,2,33,FALSE,"Lack of food, did not want to be medically evacuated",Health,12,,,Horse Trainer
+117,US,12,US104,Katie Rydge,Katie,Rydge,46,Female,"Emerald Beach, Gumbaynggirr Country",New South Wales,Australia,3,28,FALSE,Sick of eating only plants,Health,12,,,Survival Skills Instructor & Mentor
+118,US,12,US099,Baha Mahmutov,Baha,Mahmutov,50,Male,Wharncliff,Ontario,Canada,4,19,FALSE,Did not bring ferro rod and struggled to keep fire going and lack of food,Personal,7,,,Homesteader/Railroad Maintenance
+119,US,12,US101,Dug North,Dug,North,54,Male,Nashua,New Hampshire,United States,5,14,FALSE,Concerned about his health after fainting,Health,6,,,User Experience Designer
+120,US,12,US100,Douglas S. Meyer,Douglas,Meyer,57,Male,Kannapolis,North Carolina,United States,6,14,FALSE,"Struggled with wet weather, worried about father's cancer",Personal,5,,,Primitive Technology Instructor
+121,US,12,US097,Will Lamb,Will,Lamb,34,Male,Leakey,Texas,United States,7,5,TRUE,"Acute colitis, vomiting blood",Health,3,,,Exotic Animal Rancher/Fabricator
+122,US,12,US095,Pablo Arguelles,Pablo,Arugelles,55,Male,Jacksonville,Florida,United States,8,5,FALSE,Struggled to stay hydrated,Health,3,,,Video Editor
+123,US,12,US096,Colton Gilman,Colton,Gilman,34,Male,Red Lodge,Montana,United States,9,4,FALSE,Depression due to lack of distractions,Personal,2,,,Carpenter
+124,US,12,US103,Jit Patel,Jit,Patel,35,Male,Anakiwa,,New Zealand,10,4,FALSE,Diarrhea and vomiting,Health,1,,,Outdoor Educator
+125,US Frozen,1,US053,Woniya Thibeault,Woniya,Thibeault,45,Female,,California,United States,1,50,FALSE,,,,,,
+126,US Frozen,1,US067,Michelle Finn,Michelle,Finn,47,Female,,Maine,United States,2,38,FALSE,Eye injury,Health,8,,,
+127,US Frozen,1,US063,Callie Russell,Callie,Russell,34,Female,,Montana,United States,3,26,FALSE,Lack of food,Health,7,,,
+128,US Frozen,1,US061,Amos Rodriguez,Amos,Rodriguez,41,Male,,Indiana,United States,4,19,FALSE,"Missed his family, but also health: didn't want to push his body",Personal,5,,,
+129,US Frozen,1,US025,Greg Ovens,Greg,Ovens,58,Male,,British Columbia,Canada,5,6,FALSE,"Lack of food, anxiety, wet gear",Personal,3,,,
+130,US Frozen,1,US060,Mark D'Ambrosio,Mark,D'Ambrosio,36,Male,,Washington,United States,6,5,FALSE,Missed his family,Personal,1,,,
+131,AU,1,AU004,Gina Chick,Gina,Chick,52,Female,,New South Wales,Australia,1,67,FALSE,,,,,,Rewilding Facilitator
+132,AU,1,AU008,Mike Atkinson,Mike,Atkinson,45,Male,,New South Wales,Australia,2,64,TRUE,Blood pressure too low,Health,10,,,Solo Adventurist
+133,AU,1,AU007,Michael Wallace,Michael,Wallace,43,Male,,New South Wales,Australia,3,30,FALSE,Missed his family,Personal,10,,,Vet And Bush Regenerator
+134,AU,1,AU006,Kate Grarock,Kate,Grarock,41,Female,,Australian Capital Territory,Australia,4,23,FALSE,Missed her family,Personal,8,,,Wildlife Biologist
+135,AU,1,AU002,Chris Bakon,Chris,Bakon,39,Male,,Tasmania,Australia,5,12,FALSE,Just felt right,Personal,7,,,Army Veteran
+136,AU,1,AU003,Duane Byrnes,Duane,Byrnes,35,Male,,New South Wales,Australia,6,10,FALSE,Missed his family,Personal,5,,,Wildlife And Environmental Officer
+137,AU,1,AU009,Peter Athanassiou,Peter,Athanassiou,31,Male,,New South Wales,Australia,7,3,FALSE,"Injured Knee, had enough",Personal,3,,,Hunting Guide
+138,AU,1,AU005,Jimmy Lassaline,Jimmy,Lassaline,22,Male,,South Australia,Australia,8,2,TRUE,Tested positive for COVID-19,Health,2,,,Farmhand And Engineering Student
+139,AU,1,AU001,Beck Henog,Beck,Henog,42,Female,,Victoria,Australia,9,2,FALSE,"Couldn't start fire, lost the mental game",Personal,2,,,School Teacher
+140,AU,1,AU010,Rob Kelly,Rob,Kelly,41,Male,,Victoria,Australia,10,2,FALSE,Missed his family,Personal,2,,,Planning And Environmental Manager
+141,AU,2,AU016,Krzysztof,Krzysztof,,39,Male,,Victoria,Australia,1,64,FALSE,,,,,,Aquaculturist
+142,AU,2,AU015,Suzan,Suzan,,54,Female,,New South Wales,Australia,2,63,FALSE,At physical limit,Health,10,,,Adventure Guide
+143,AU,2,AU014,Andreas,Andreas,,42,Male,,New South Wales,Australia,3,57,FALSE,At physical limit; unable to sustain himself further,Health,10,,,Personal Trainer/Subsistence Hunter
+144,AU,2,AU012,Tamika,Tamika,,51,Female,,Queensland,Australia,4,53,FALSE,Felt like she was at her physical limit; worried about her safety given her weakness; didn't think she could get more food,Health,9,,,Off-Gridder/Former Police Officer
+145,AU,2,AU017,Rick,Rick,,58,Male,,Queensland,Australia,5,38,FALSE,Accomplished what he wanted to accomplish,Personal,8,,,Survival Educator/Former Sas Soldier
+146,AU,2,AU018,Jack,Jack,,55,Male,,Victoria,Australia,6,16,FALSE,Wanted to finish strong,Personal,5,,,Tradesman And Wild Game Hunter
+147,AU,2,AU020,Chace,Chace,,27,Male,,Queensland,Australia,7,10,FALSE,Missed pregnant wife,Personal,4,,,Defence Force Combat Engineer
+148,AU,2,AU011,Jason,Jason,,37,Male,,New South Wales,Australia,8,8,FALSE,No longer trusted himself; dizzy spells,Personal,4,,,Youth Worker
+149,AU,2,AU013,Leanne,Leanne,,41,Female,,Victoria,Australia,9,4,FALSE,Missed her family,Personal,2,,,World Heritage Aboriginals Program Officer
+150,AU,2,AU019,Mike,Mike,,60,Male,,New South Wales,Australia,10,2,TRUE,Heart palpitations,Health,2,,,Resilience Coach
+151,AU,3,AU028,Shay,Shay,,30,Male,,,New Zealand,1,76,FALSE,,,,,,Profressional Trapper
+152,AU,3,AU027,Muzza,Muzza,,63,Male,,Victoria,Australia,2,73,TRUE,Low blood pressure,Health,12,,,Bushman
+153,AU,3,AU023,Corinne,Corinne,,38,Female,,Tasmania,Australia,3,70,FALSE,Decided she didn't have anything more to prove,Personal,12,,,Food Safety Consultant
+154,AU,3,AU029,Tom,Tom,,33,Male,,New South Wales,Australia,4,47,FALSE,"Couldn't procure enough food, didn't want to wait for medical to extract him",Health,10,,,Ecologist
+155,AU,3,AU021,Ben,Ben,,38,Male,,South Australia,Australia,5,40,TRUE,"Low blood pressure, starvation",Health,8,,,English Teacher
+156,AU,3,AU025,Karla,Karla,,35,Female,,Queensland,Australia,6,35,FALSE,Missed her friends and family,Personal,7,,,Expedition Leader
+157,AU,3,AU030,Yonke,Yonke,,52,Female,,Victoria,Australia,7,31,FALSE,Wasn't getting the experience she hoped for,Personal,6,,,Farmer And Permaculturalist
+158,AU,3,AU022,Ceilidh,Ceilidh,,34,Female,,Queensland,Australia,8,19,TRUE,Likely kidney infection from an untreated UTI,Health,5,,,Disability Services
+159,AU,3,AU024,Eva,Eva,,31,Female,,New South Wales,Australia,9,17,FALSE,"Couldn't procure food (protein), and felt like she exhausted all options with fishing",Health,4,,,Rewilding Facilitator
+160,AU,3,AU026,Matt,Matt,,31,Male,,Western Australia,Australia,10,16,FALSE,Missed his family,Personal,3,,,Indigenous Youth Worker

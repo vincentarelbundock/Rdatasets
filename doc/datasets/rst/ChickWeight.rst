@@ -54,7 +54,8 @@
       second day thereafter until day 20. They were also measured on day
       21. There were four groups on chicks on different protein diets.
 
-      This dataset was originally part of package ``nlme``, and that has
+      This dataset was originally part of package
+      `nlme <https://CRAN.R-project.org/package=nlme>`__, and that has
       methods (including for ``[``, ``as.data.frame``, ``plot`` and
       ``print``) for its grouped-data classes.
 

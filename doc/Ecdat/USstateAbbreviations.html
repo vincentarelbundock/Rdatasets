@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
 <script type="text/javascript">
-const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
 function processMathHTML() {
     var l = document.getElementsByClassName('reqn');
     for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
@@ -21,7 +21,7 @@ Standard abbreviations for states of the United States </h2>
 
 <h3>Description</h3>
 
-<p>The object returned by <code>readUSstateAbbreviations()</code> on May 20,
+<p>The object returned by <code>Ecfun::readUSstateAbbreviations()</code> on May 20,
 2013.
 </p>
 

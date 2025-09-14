@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
 <script type="text/javascript">
-const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
 function processMathHTML() {
     var l = document.getElementsByClassName('reqn');
     for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
@@ -57,7 +57,7 @@ The ordering is according to increasing maximum height.
 
 <h3>Details</h3>
 
-<p>This dataset was originally part of package <code>nlme</code>, and that has
+<p>This dataset was originally part of package <a href="https://CRAN.R-project.org/package=nlme"><span class="pkg">nlme</span></a>, and that has
 methods (including for <code>[</code>, <code>as.data.frame</code>, <code>plot</code> and
 <code>print</code>) for its grouped-data classes.
 </p>

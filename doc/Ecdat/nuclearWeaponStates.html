@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
 <script type="text/javascript">
-const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
 function processMathHTML() {
     var l = document.getElementsByClassName('reqn');
     for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
@@ -120,61 +120,59 @@ the selection of the date for each country in
 this dataset.  
 </p>
 
-<ul>
-<li><p><code>US</code>
-The <a href="https://en.wikipedia.org/wiki/Manhattan_Project">Manhattan Project</a> started in
-stages. It was officially brought to the
-attention of the US government by a 
+<dl>
+<dt><code>US</code></dt><dd><p> The 
+<a href="https://en.wikipedia.org/wiki/Manhattan_Project">Manhattan Project</a> 
+started in stages. It was officially brought 
+to the attention of the US government by a 
 letter officially from 
-<a href="https://commons.wikimedia.org/wiki/File:Einstein-Roosevelt-letter.png">Albert Einstein to US President Roosevelt</a>, 1939-08-02.  
-It was officially authorized 
+<a href="https://commons.wikimedia.org/wiki/File:Einstein-Roosevelt-letter.png">Albert Einstein to US President Roosevelt</a>, 
+1939-08-02. It was officially authorized 
 <a href="https://en.wikipedia.org/wiki/Timeline_of_the_Manhattan_Project">1942-01-19</a>. 
 We use this later date as the date of the 
 start of the US nuclear-weapons program.
-
 </p>
-</li>
-<li><p><code>RU</code>
-Russian scientists were studying uranium 
+</dd>
+<dt><code>RU</code></dt><dd>
+<p>Russian scientists were studying uranium 
 before the first world war but didn't get 
 much official attention until the atomic
 bombing of Hiroshima, 1945-08-06.  Shortly
 thereafter on 
 <a href="https://en.wikipedia.org/wiki/Soviet_atomic_bomb_project">1945-08-22</a>, 
-Stalin appointed <a href="https://en.wikipedia.org/wiki/Lavrentiy_Beria">Lavrentiy Beria</a>.  Beria 
-was a able administrator and guided the 
+Stalin appointed 
+<a href="https://en.wikipedia.org/wiki/Lavrentiy_Beria">Lavrentiy Beria</a>.  
+Beria was a able administrator and guided the 
 project to fruition in four years.    
-
 </p>
-</li>
-<li><p><code>GB</code>
-British scientists were among the leaders 
+</dd>
+<dt><code>GB</code></dt><dd>
+<p>British scientists were among the leaders 
 in nuclear technology in the late 
 nineteenth century.  They welcomed 
 German-Jewish physicists 
-<a href="https://en.wikipedia.org/wiki/Otto_Robert_Frisch">Otto Frisch</a> and 
-<a href="https://en.wikipedia.org/wiki/Rudolf_Peierls">Rudolf Peierls</a>, who estimated 
-in 1939 that only 
+<a href="https://en.wikipedia.org/wiki/Otto_Robert_Frisch">Otto Frisch</a> 
+and 
+<a href="https://en.wikipedia.org/wiki/Rudolf_Peierls">Rudolf Peierls</a>, 
+who estimated in 1939 that only 
 <a href="https://en.wikipedia.org/wiki/Frisch-Peierls_memorandum">a few pounds or kilograms of uranium-235 might be enough to achieve a critical mass, whereas several tonnes of natural uranium would likely be required</a>. 
-Because of the war, this information was 
-passed to scientists in the United States, 
-who developed it into the bomb dropped on
-Hiroshima 
+Because of the war, this information was passed 
+to scientists in the United States, who developed 
+it into the bomb dropped on Hiroshima 
 <a href="https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki">1945-08-06</a>, 
 with help from British and Canadian 
 scientists and Canadian industry.  After 
 the war, the US refused to share much of 
 the information developed in the Manhattan
-Project with the British.  British elites 
-felt disrespected by US.  On 
+Project with the British. British elites 
+felt disrespected by US. On 
 <a href="https://en.wikipedia.org/wiki/Nuclear_weapons_and_the_United_Kingdom#Resumption_of_independent_UK_efforts">1947-01-08</a>, 
-the British government decided to 
-initiate their own nuclear-weapons program.  
-
+the British government decided to initiate 
+their own nuclear-weapons program.  
 </p>
-</li>
-<li><p><code>FR</code>
-France was one of the nuclear pioneers, 
+</dd>
+<dt><code>FR</code></dt><dd>
+<p>France was one of the nuclear pioneers, 
 going back to the work of 
 <a href="https://en.wikipedia.org/wiki/Marie_Curie">Marie Curie</a> and 
 <a href="https://en.wikipedia.org/wiki/Henri_Becquerel">Henri Becquerel</a> in the 
@@ -185,11 +183,10 @@ support them in the
 On <a href="https://nuke.fas.org/guide/israel/nuke/farr.htm">France and Israel secretly agreed to
 collaborate in the development of nuclear
 weapons</a>.  
-
 </p>
-</li>
-<li><p><code>CN</code>
-<a href="https://en.wikipedia.org/wiki/China_and_weapons_of_mass_destruction#History">Mao Zedong reportedly decided to begin a Chinese nuclear-weapons program</a> 
+</dd>
+<dt><code>CN</code></dt><dd>
+<p><a href="https://en.wikipedia.org/wiki/China_and_weapons_of_mass_destruction#History">Mao Zedong reportedly decided to begin a Chinese nuclear-weapons program</a> 
 during the 
 <a href="https://en.wikipedia.org/wiki/First_Taiwan_Strait_Crisis#Aftermath:_China_and_nuclear_weapons">First Taiwan Strait Crisis of 1954–1955</a>.  
 That crisis was resolved shortly after
@@ -197,11 +194,10 @@ That crisis was resolved shortly after
 when China stated it was willing to 
 negotiate.  We use this as the date of the
 start of China's nuclear weapons program.  
-
 </p>
-</li>
-<li><p><code>IN</code>
-Indian scientists started research on 
+</dd>
+<dt><code>IN</code></dt><dd>
+<p>Indian scientists started research on 
 nuclear weapons before Indian independence 
 but didn't make a substantive commitment 
 to actually making a nuclear weapon until 
@@ -210,11 +206,10 @@ they lost territory to China in the
 that ended 1962-11-21.  We use that date as 
 the date for the initiation of India's 
 nuclear-weapons program.  
-
 </p>
-</li>
-<li><p><code>IL</code> 
-Israel's first Prime Minister David 
+</dd>
+<dt><code>IL</code></dt><dd> 
+<p>Israel's first Prime Minister David 
 Ben-Gurion was reportedly &quot;nearly obsessed&quot;
 with obtaining nuclear weapons to prevent 
 the Holocaust from recurring.  For present
@@ -223,11 +218,10 @@ the end of the
 <a href="https://en.wikipedia.org/wiki/1948_Arab-Israeli_War">1948 Arab–Israeli War</a>, 
 as the beginning of Israel's 
 nuclear-weapons program.  
-
 </p>
-</li>
-<li><p><code>PK</code>
-Pakistan's elite were totally humiliated 
+</dd>
+<dt><code>PK</code></dt><dd>
+<p>Pakistan's elite were totally humiliated 
 by their defeat in the 
 <a href="https://en.wikipedia.org/wiki/Indo-Pakistani_War_of_1971">Indo-Pakistani War of 1971</a>,
 1971-12-03 / -16: That war ended the
@@ -244,11 +238,10 @@ significant funding seemed not to have come
 until later, 1972-01-20 is the date we will 
 use here for the beginning of Pakistan's
 nuclear-weapons program.  
-
 </p>
-</li>
-<li><p><code>KP</code>
-The 1950-1953 Korean War ended with a 
+</dd>
+<dt><code>KP</code></dt><dd>
+<p>The 1950-1953 Korean War ended with a 
 cease-fire, not an official end to 
 hostilities.  Since then North Korea has
 perceived nuclear threats from the US.  In 
@@ -274,9 +267,9 @@ program.  They clearly wanted nuclear
 weapons much earlier but didn't seem to 
 move seriously in the direction of 
 developing nuclear weapons until around 
-
 </p>
-</li></ul>
+</dd>
+</dl>
 
 
 

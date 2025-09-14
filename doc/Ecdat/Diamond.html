@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
 <script type="text/javascript">
-const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
 function processMathHTML() {
     var l = document.getElementsByClassName('reqn');
     for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
@@ -70,7 +70,7 @@ function processMathHTML() {
 <h3>References</h3>
 
 <p>Journal of Statistics Education's data archive : 
-<a href="http://jse.amstat.org/jse_data_archive.htm">http://jse.amstat.org/jse_data_archive.htm</a>.
+<a href="https://jse.amstat.org/jse_data_archive.htm">https://jse.amstat.org/jse_data_archive.htm</a>.
 </p>
 
 

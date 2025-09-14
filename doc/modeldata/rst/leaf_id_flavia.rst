@@ -85,7 +85,7 @@
 
       -  ``monotonic_contour``: numeric
 
-      -  ``num_max_ponits``: numeric
+      -  ``num_max_points``: numeric
 
       -  ``num_min_points``: numeric
 
@@ -125,7 +125,7 @@
 
       -  ``equivalent_diameter``: numeric
 
-      -  ``eccentriciry``: numeric
+      -  ``eccentricity``: numeric
 
       -  ``contrast``: numeric
 

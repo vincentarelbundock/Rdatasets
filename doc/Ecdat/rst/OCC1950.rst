@@ -84,8 +84,8 @@
 
       Steven Ruggles, Sarah Flood, Ronald Goeken, Josiah Grover, Erin
       Meyer, Jose Pacas, and Matthew Sobek (2020)
-      `doi:10.18128/D010.V10.0 <https://doi.org/10.18128/D010.V10.0>`__\ IPUMS
-      USA: Version 10.0 [dataset]. Minneapolis, MN: IPUMS.
+      `doi:10.18128/D010.V10.0 <https://doi.org/10.18128/D010.V10.0>`__
+      IPUMS USA: Version 10.0 [dataset]. Minneapolis, MN: IPUMS.
 
       .. rubric:: Examples
          :name: examples

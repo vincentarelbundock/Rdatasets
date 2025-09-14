@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
 <script type="text/javascript">
-const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
 function processMathHTML() {
     var l = document.getElementsByClassName('reqn');
     for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
@@ -122,7 +122,7 @@ prediction.
 <li> <p><code>monotonic_contour</code>:  numeric
 </p>
 </li>
-<li> <p><code>num_max_ponits</code>:  numeric
+<li> <p><code>num_max_points</code>:  numeric
 </p>
 </li>
 <li> <p><code>num_min_points</code>:  numeric
@@ -182,7 +182,7 @@ prediction.
 <li> <p><code>equivalent_diameter</code>:  numeric
 </p>
 </li>
-<li> <p><code>eccentriciry</code>:  numeric
+<li> <p><code>eccentricity</code>:  numeric
 </p>
 </li>
 <li> <p><code>contrast</code>:  numeric
@@ -223,7 +223,7 @@ prediction.
 
 <h3>Value</h3>
 
-<table>
+<table role = "presentation">
 <tr><td><code>leaf_id_flavia</code></td>
 <td>
 <p>a data frame</p>

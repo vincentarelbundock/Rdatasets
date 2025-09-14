@@ -70,7 +70,7 @@
       ``demoDir <- system.file('demoFiles', package='Ecdat')``
       ``demoCsv <- dir(demoDir, pattern='csv$', full.names=TRUE)``
 
-      ``nipa6.16 <- readNIPA(demoCsv)``
+      ``nipa6.16 <- Ecfun::readNIPA(demoCsv)``
       ``USFinanceIndustry <- as.data.frame(nipa6.16)``
       ``names(USFinanceIndustry) <- c('year', 'CorporateProfitsAdj', 'Domestic', 'Financial', 'Nonfinancial', 'restOfWorld')``
       ``USFinanceIndustry$FinanceProportion <- with(USFinanceIndustry, Financial/Domestic)``

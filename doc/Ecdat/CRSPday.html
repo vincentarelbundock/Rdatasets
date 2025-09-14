@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
 <script type="text/javascript">
-const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
 function processMathHTML() {
     var l = document.getElementsByClassName('reqn');
     for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
@@ -48,7 +48,7 @@ function processMathHTML() {
 <dt>day</dt><dd><p>the day</p>
 </dd>
 <dt>ge</dt><dd><p>the return for General Electric, 
-<a href="https://www.crsp.org/products/documentation/crsp-link">PERMNO</a> 12060</p>
+<a href="https://www.crsp.org/">PERMNO</a> 12060</p>
 </dd>
 <dt>ibm</dt><dd><p> the return for IBM, PERMNO 12490</p>
 </dd>

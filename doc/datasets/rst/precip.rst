@@ -6,14 +6,15 @@
       precip R Documentation
       ====== ===============
 
-      .. rubric:: Annual Precipitation in US Cities
-         :name: annual-precipitation-in-us-cities
+      .. rubric:: Annual Precipitation in Selected US Cities
+         :name: annual-precipitation-in-selected-us-cities
 
       .. rubric:: Description
          :name: description
 
-      The average amount of precipitation (rainfall) in inches for each
-      of 70 United States (and Puerto Rico) cities.
+      The yearly amount of precipitation (rainfall) in inches, averaged
+      over the 30-year period 1941–1970, for each of 70 United States
+      (and Puerto Rico) cities.
 
       .. rubric:: Usage
          :name: usage
@@ -37,7 +38,7 @@
       .. rubric:: Source
          :name: source
 
-      Statistical Abstracts of the United States, 1975.
+      Statistical Abstracts of the United States, 1975, p. 192.
 
       .. rubric:: References
          :name: references

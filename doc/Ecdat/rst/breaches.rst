@@ -75,9 +75,12 @@
          ``Date`` of the start of the incident = first date given in
          ``Date_of_Breach`` above.
 
-      ``breach_end`` ``Date`` of the end of the incident or ``NA`` if
-      only one date is given in ``Date_of_Breach`` above. ``year``
-      ``integer`` giving the year of the breach
+      breach_end
+         ``Date`` of the end of the incident or ``NA`` if only one date
+         is given in ``Date_of_Breach`` above.
+
+      year
+         ``integer`` giving the year of the breach
 
       .. rubric:: Details
          :name: details

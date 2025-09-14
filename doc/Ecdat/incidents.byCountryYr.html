@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
 <script type="text/javascript">
-const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
 function processMathHTML() {
     var l = document.getElementsByClassName('reqn');
     for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
@@ -323,22 +323,35 @@ it suggests larger problems.
 
 <h3>Source</h3>
 
-<p>National Consortium for the Study of Terrorism and Responses to Terrorism (START). (2017). Global Terrorism Database [Data file]. Retrieved from <a href="https://start.umd.edu/gtd">https://start.umd.edu/gtd</a> [accessed 2022-10-08]. 
+<p>START (National Consortium for the Study of 
+Terrorism and Responses to Terrorism). (2022).
+Global Terrorism Database, 1970 - 2020 [data file].
+Retrieved from <a href="https://www.start.umd.edu/gtd">https://www.start.umd.edu/gtd</a>, 
+2024-10-17. 
 </p>
-<p>See also the <a href="https://en.wikipedia.org/wiki/Global_Terrorism_Database">Global Terrorism Database</a> maintained by the <a href="https://en.wikipedia.org/wiki/National_Consortium_for_the_Study_of_Terrorism_and_Responses_to_Terrorism">National Consortium for the Study of Terrorism and Responses to Terrorism</a> (START, 2015), <a href="https://www.start.umd.edu/gtd">https://www.start.umd.edu/gtd</a>. 
+<p>See also the 
+<a href="https://en.wikipedia.org/wiki/Global_Terrorism_Database">Global Terrorism Database</a> 
+maintained by the 
+<a href="https://en.wikipedia.org/wiki/National_Consortium_for_the_Study_of_Terrorism_and_Responses_to_Terrorism">National Consortium for the Study of Terrorism and Responses to Terrorism</a> 
+(START, 2022), <a href="https://www.start.umd.edu/gtd">https://www.start.umd.edu/gtd</a>. 
 </p>
 <p>The world and US population figures came from 
-&quot;Total Population - Both Sexes&quot;, <a href="https://population.un.org/wpp/Download/Standard/Population/">World Population Prospects 2022</a>, published by the Population Division, World Population Prospects, of 
-the United Nations, accessed 2022-10-09.   
+&quot;Total Population - Both Sexes&quot;, 
+<a href="https://www.un.org/development/desa/pd/content/World-Population-Prospects-2022">World Population Prospects 2022</a>, 
+published by the Population Division, 
+World Population Prospects, of the United Nations, 
+accessed 2022-10-09.   
 </p>
-<p><a href="https://www.mortality.org">Human Mortality Database.  University of California, Berkeley (USA), and Max Planck Institute for Demographic Research (Germany)</a>, accessed 2022-10-11.  
+<p><a href="https://www.mortality.org">Human Mortality Database. University of California, Berkeley (USA), and Max Planck Institute for Demographic Research (Germany)</a>, 
+accessed 2022-10-11.  
 </p>
 
 
 <h3>References</h3>
 
 <p>Robert Pape, Keven Ruby, Vincent Bauer and 
-Gentry Jenkins, <a href="https://www.washingtonpost.com/news/monkey-cage/wp/2014/08/11/how-to-fix-the-flaws-in-the-global-terrorism-database-and-why-it-matters/">&quot;How to fix the flaws in the Global Terrorism Database and why it matters&quot;</a>, 
+Gentry Jenkins, 
+<a href="https://www.washingtonpost.com/news/monkey-cage/wp/2014/08/11/how-to-fix-the-flaws-in-the-global-terrorism-database-and-why-it-matters/">&quot;How to fix the flaws in the Global Terrorism Database and why it matters&quot;</a>, 
 <em>The Washington Post</em>, August 11, 
 2014 (accessed 2016-01-09).  
 </p>
@@ -414,6 +427,7 @@ axis(2, sqrt(i.nk), i.nk, las=1)
 ip &lt;- paste(pch., names(maxDeaths[omax[1:8]]))
 legend('topleft', ip, cex=.55, 
        col=cols, text.col=cols)
+       
 </code></pre>
 
 </main>

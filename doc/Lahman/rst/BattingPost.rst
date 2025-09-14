@@ -24,7 +24,7 @@
       .. rubric:: Format
          :name: format
 
-      A data frame with 16857 observations on the following 22
+      A data frame with 17360 observations on the following 22
       variables.
 
       ``yearID``
@@ -102,8 +102,8 @@
       .. rubric:: Source
          :name: source
 
-      Lahman, S. (2024) Lahman's Baseball Database, 1871-2023, 2024
-      version, http://www.seanlahman.com/
+      Lahman, S. (2025) Lahman's Baseball Database, 1871-2024, 2025
+      version, https://sabr.org/lahman-database/
 
       .. rubric:: Examples
          :name: examples

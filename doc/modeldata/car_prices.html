@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
 <script type="text/javascript">
-const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
 function processMathHTML() {
     var l = document.getElementsByClassName('reqn');
     for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
@@ -26,7 +26,7 @@ function processMathHTML() {
 
 <h3>Value</h3>
 
-<table>
+<table role = "presentation">
 <tr><td><code>car_prices</code></td>
 <td>
 <p>data frame of the suggested retail price (column <code>Price</code>) and various
@@ -41,7 +41,7 @@ characteristics of each car (columns <code>Mileage</code>, <code>Cylinder</code>
 
 <p>Kuiper, S. (2008). Introduction to Multiple Regression: How Much Is Your Car Worth?,
 <em>Journal of Statistics Education</em>, Vol. 16
-<a href="http://jse.amstat.org/jse_archive.htm#2008">http://jse.amstat.org/jse_archive.htm#2008</a>.
+<a href="https://jse.amstat.org/jse_archive.htm#2008">https://jse.amstat.org/jse_archive.htm#2008</a>.
 </p>
 
 

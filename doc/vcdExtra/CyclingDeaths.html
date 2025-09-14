@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
 <script type="text/javascript">
-const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
 function processMathHTML() {
     var l = document.getElementsByClassName('reqn');
     for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
@@ -25,7 +25,7 @@ London Cycling Deaths
 <p>A data frame containing the number of deaths of cyclists in London from 2005 through
 2012 in each fortnightly period.  Aberdein &amp; Spiegelhalter (2013)
 discuss these data in relation to the observation that six cyclists
-died in London between Nov. 5 and Nov. 13, 2013. 
+died in London between Nov. 5 and Nov. 13, 2013.
 </p>
 
 
@@ -50,10 +50,8 @@ died in London between Nov. 5 and Nov. 13, 2013.
 
 <h3>Source</h3>
 
-<p><a href="https://www.data.gov.uk/dataset/cb7ae6f0-4be6-4935-9277-47e5ce24a11f/road-safety-data">https://www.data.gov.uk/dataset/cb7ae6f0-4be6-4935-9277-47e5ce24a11f/road-safety-data</a>,
-STATS 19 data, 2005-2012, using the files
-<code>Casualty0512.csv</code> and 
-<code>Accidents0512.csv</code>
+<p>Road Safety Data from GOV.UK, but 2005-2012.
+Similar data is available in the <span class="pkg">stats19</span>, <a href="https://docs.ropensci.org/stats19/">https://docs.ropensci.org/stats19/</a>.
 </p>
 
 
@@ -69,14 +67,14 @@ Have London's roads become more dangerous for cyclists?
 
 <pre><code class='language-R'>data(CyclingDeaths)
 
-plot(deaths ~ date, data=CyclingDeaths, 
-  type="h", 
-	lwd=3, 
-	ylab="Number of deaths", 
+plot(deaths ~ date, data=CyclingDeaths,
+  type="h",
+	lwd=3,
+	ylab="Number of deaths",
 	axes=FALSE)
-axis(1, at=seq(as.Date('2005-01-01'), 
-               by='years', 
-               length.out=9), 
+axis(1, at=seq(as.Date('2005-01-01'),
+               by='years',
+               length.out=9),
      labels=2005:2013)
 axis(2, at=0:3)
 

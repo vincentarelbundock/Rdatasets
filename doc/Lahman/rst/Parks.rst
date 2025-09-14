@@ -24,7 +24,7 @@
       .. rubric:: Format
          :name: format
 
-      A data frame with 260 observations on the following 6 variables.
+      A data frame with 262 observations on the following 6 variables.
 
       ``park.key``
          unique identifier for each ballpark
@@ -58,8 +58,8 @@
       .. rubric:: Source
          :name: source
 
-      Lahman, S. (2024) Lahman's Baseball Database, 1871-2023, 2023
-      version, http://www.seanlahman.com/
+      Lahman, S. (2025) Lahman's Baseball Database, 1871-2024, 2025
+      version, https://sabr.org/lahman-database/
 
       .. rubric:: See Also
          :name: see-also

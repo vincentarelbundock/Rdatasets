@@ -12,8 +12,8 @@
       .. rubric:: Description
          :name: description
 
-      The object returned by ``readUSstateAbbreviations()`` on May 20,
-      2013.
+      The object returned by ``Ecfun::readUSstateAbbreviations()`` on
+      May 20, 2013.
 
       .. rubric:: Usage
          :name: usage
