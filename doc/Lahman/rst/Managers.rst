@@ -26,7 +26,7 @@
       .. rubric:: Format
          :name: format
 
-      A data frame with 3749 observations on the following 10 variables.
+      A data frame with 3786 observations on the following 10 variables.
 
       ``playerID``
          Manager (player) ID code
@@ -65,8 +65,8 @@
       .. rubric:: Source
          :name: source
 
-      Lahman, S. (2024) Lahman's Baseball Database, 1871-2023, 2024
-      version, http://www.seanlahman.com/
+      Lahman, S. (2025) Lahman's Baseball Database, 1871-2024, 2025
+      version, https://sabr.org/lahman-database/
 
       .. rubric:: Examples
          :name: examples

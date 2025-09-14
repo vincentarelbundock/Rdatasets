@@ -53,9 +53,9 @@
       Data as an End of Semester Regression Project," *Journal of
       Statistics Education*, Volume 19, Number 3.
 
-      http://jse.amstat.org/v19n3/decock/DataDocumentation.txt
+      https://jse.amstat.org/v19n3/decock/DataDocumentation.txt
 
-      http://jse.amstat.org/v19n3/decock.pdf
+      https://jse.amstat.org/v19n3/decock.pdf
 
       .. rubric:: Examples
          :name: examples

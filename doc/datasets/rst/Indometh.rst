@@ -48,7 +48,8 @@
       Each of the six subjects were given an intravenous injection of
       indometacin.
 
-      This dataset was originally part of package ``nlme``, and that has
+      This dataset was originally part of package
+      `nlme <https://CRAN.R-project.org/package=nlme>`__, and that has
       methods (including for ``[``, ``as.data.frame``, ``plot`` and
       ``print``) for its grouped-data classes.
 

@@ -65,10 +65,8 @@
          :name: source
 
       The original R source for this dataset was compiled by Frank
-      Harrell and Robert Dawson:
-      https://biostat.app.vumc.org/wiki/pub/Main/DataSets/titanic.html,
-      described in more detail in
-      https://biostat.app.vumc.org/wiki/pub/Main/DataSets/titanic3info.txt
+      Harrell and Robert Dawson
+      https://hbiostat.org/data/repo/titanic.html.
 
       For this version of the Titanic data, passenger details were
       deleted, survived was cast as a factor, and the name changed to

@@ -12,10 +12,11 @@
       .. rubric:: Description
          :name: description
 
-      An experiment was conducted to determine the optimum conditions
+      An experiment was conducted to determine the optimal conditions
       for extruding plastic film. Three responses were measured in
-      relation to two factors, rate of extrusion and amount of an
-      additive.
+      relation to two factors, change in rate of extrusion and amount of
+      an additive, both with two levels and ``n=5`` observations per
+      cell.
 
       .. rubric:: Format
          :name: format

@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
 <script type="text/javascript">
-const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
 function processMathHTML() {
     var l = document.getElementsByClassName('reqn');
     for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
@@ -20,9 +20,9 @@ function processMathHTML() {
 
 <h3>Description</h3>
 
-<p>An experiment was conducted to determine the optimum conditions for
+<p>An experiment was conducted to determine the optimal conditions for
 extruding plastic film.  Three responses were measured in relation to two
-factors, rate of extrusion and amount of an additive.
+factors, change in rate of extrusion and amount of an additive, both with two levels and <code class="reqn">n=5</code> observations per cell.
 </p>
 
 

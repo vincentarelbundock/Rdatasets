@@ -86,7 +86,7 @@
          :name: references
 
       Journal of Statistics Education's data archive :
-      http://jse.amstat.org/jse_data_archive.htm.
+      https://jse.amstat.org/jse_data_archive.htm.
 
       .. rubric:: See Also
          :name: see-also

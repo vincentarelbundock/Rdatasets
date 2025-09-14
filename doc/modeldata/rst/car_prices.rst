@@ -34,7 +34,7 @@
 
       Kuiper, S. (2008). Introduction to Multiple Regression: How Much
       Is Your Car Worth?, *Journal of Statistics Education*, Vol. 16
-      http://jse.amstat.org/jse_archive.htm#2008.
+      https://jse.amstat.org/jse_archive.htm#2008.
 
       .. rubric:: Examples
          :name: examples

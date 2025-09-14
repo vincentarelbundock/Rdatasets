@@ -56,7 +56,7 @@
       vardp
          volatility of the real oil price process measured as the
          squared recursive standard errors of the regression of
-         codept-pt-1 on a constant
+         ``pt-pt-1`` on a constant
 
       p97
          adaptive expectations (with parameter theta=0.97) for the real

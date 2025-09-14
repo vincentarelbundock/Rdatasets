@@ -24,7 +24,7 @@
       .. rubric:: Format
          :name: format
 
-      A data frame with 7447 observations on the following 7 variables.
+      A data frame with 7523 observations on the following 7 variables.
 
       ``awardID``
          name of award votes were received for
@@ -50,8 +50,8 @@
       .. rubric:: Source
          :name: source
 
-      Lahman, S. (2024) Lahman's Baseball Database, 1871-2023, 2023
-      version, http://www.seanlahman.com/
+      Lahman, S. (2025) Lahman's Baseball Database, 1871-2024, 2025
+      version, https://sabr.org/lahman-database/
 
       .. rubric:: Examples
          :name: examples

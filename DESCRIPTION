@@ -118,6 +118,7 @@ Imports:
     stevedata,
     survival,
     texmex,
+    ttbbeer,
     tidyr,
     tidyverse,
     timeSeriesDataSets,

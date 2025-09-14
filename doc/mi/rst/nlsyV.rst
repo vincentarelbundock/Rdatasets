@@ -65,7 +65,7 @@
          :name: source
 
       National Longitudinal Survey of Youth, 1997,
-      https://www.bls.gov/nls/nlsy97.htm
+      https://www.nlsinfo.org/content/cohorts/nlsy97
 
       .. rubric:: Examples
          :name: examples

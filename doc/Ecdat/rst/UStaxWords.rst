@@ -12,7 +12,7 @@
       .. rubric:: Description
          :name: description
 
-      Thousands of words in US tax law for 1995 to 2015 in 10 year
+      Thousands of words in US tax law for 1955 to 2015 in 10 year
       intervals. This includes income taxes and all taxes in the code
       itself (written by congress) and regulations (written by
       government administrators). For 2015 only ``EntireTaxCodeAndRegs``

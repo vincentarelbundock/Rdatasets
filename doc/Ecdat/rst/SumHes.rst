@@ -64,8 +64,7 @@
          :name: references
 
       Hayashi, F. (2000) *Econometrics*, Princeton University Press,
-      http://fhayashi.fc2web.com/hayashi_econometrics.htm, chapter 5,
-      358-363.
+      http://fhayashi.fc2web.com/, chapter 5, 358-363.
 
       .. rubric:: See Also
          :name: see-also

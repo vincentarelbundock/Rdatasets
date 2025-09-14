@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
 <script type="text/javascript">
-const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
 function processMathHTML() {
     var l = document.getElementsByClassName('reqn');
     for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
@@ -104,18 +104,19 @@ incident = first date given in
 <code>Date_of_Breach</code> above. 
 </p>
 </dd>
-</dl>
-<p><code>breach_end</code>
-<code>Date</code> of the end of the incident
+<dt>breach_end</dt><dd>
+<p><code>Date</code> of the end of the incident
 or <code>NA</code> if only one date is given in 
 <code>Date_of_Breach</code> above.  
-
-<code>year</code>
-<code>integer</code> giving the year of the
-breach 
-
-
 </p>
+</dd>
+<dt>year</dt><dd>
+<p><code>integer</code> giving the year of the
+breach 
+</p>
+</dd>
+</dl>
+
 
 
 <h3>Details</h3>

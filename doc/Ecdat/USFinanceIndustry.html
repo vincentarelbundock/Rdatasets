@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
 <script type="text/javascript">
-const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
 function processMathHTML() {
     var l = document.getElementsByClassName('reqn');
     for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
@@ -88,7 +88,7 @@ in the overlap period between parts B and C
 <p><code>demoDir &lt;- system.file('demoFiles', package='Ecdat')</code>
 <code>demoCsv &lt;- dir(demoDir, pattern='csv$', full.names=TRUE)</code>
 </p>
-<p><code>nipa6.16 &lt;- readNIPA(demoCsv)</code>
+<p><code>nipa6.16 &lt;- Ecfun::readNIPA(demoCsv)</code>
 <code>USFinanceIndustry &lt;- as.data.frame(nipa6.16)</code>
 <code>names(USFinanceIndustry) &lt;- c('year', 
     'CorporateProfitsAdj', 'Domestic', 'Financial', 

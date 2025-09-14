@@ -26,10 +26,10 @@
       .. rubric:: Format
          :name: format
 
-      A data frame with 95 observations on the following 7 variables.
+      A data frame with 99 observations on the following 7 variables.
 
       year
-         an integer vector giving the year ``c(1925:2019)``.
+         an integer vector giving the year ``c(1925:2023)``.
 
       stateFedIncarcerees
          Total number of incarcerees = ``maleTotal + femaleTotal``.
@@ -89,7 +89,7 @@
       For ``USincarcerations``, we used the numbers from ``p19t03.csv``
       and ``p19t05.csv``, because they seem likely to be more accurate.
 
-      However, these numbers include only people in state and federal
+      However, these numbers include only humans in state and federal
       prisons. It excludes jails.
 
       `Key Statistic: Total correctional
@@ -106,6 +106,24 @@
       the period of overlap. We therefore used the older data up to 2007
       and ``cpus1718.csv`` for 2008-2018.
 
+      An update to 2023 on 2025-09-01 combined new data from
+      ``p20stt01.csv`` and ``p20stt05.csv`` from
+      `Archive.org <https://web.archive.org/web/20220620031528/https://bjs.ojp.gov/content/pub/sheets/p20st.zip>`__
+      with ``p20stt01.csv`` and ``p20stt05.csv`` from `"Prisoners in
+      2022 - Statistical
+      Tables" <https://bjs.ojp.gov/library/publications/prisoners-2022-statistical-tables>`__
+      and ``pdrp23t02.csv`` from `"Prisons Report Series: Preliminary
+      Data Release,
+      2023" <https://bjs.ojp.gov/library/publications/prisons-report-series-preliminary-data-release-2023>`__.
+
+      The rates for 2023 were computed by dividing the numbers of
+      incarcerees in ``pdrp23t02.csv`` by 2022 population numbers
+      inferred from ``stateFedIncarcerees/stateFedIncarcerationRate``,
+      ``stateFedMales/stateFedMaleRate``, and
+      ``stateFedFemales/stateFedFemaleRate`` and adjusted to 2023 by
+      'pop*exp(median(log(diff(pop))))'. This added 0.63 percent to the
+      2022 population.
+
       Actual analysis of the jail data is left for another project.
 
       .. rubric:: Source
@@ -121,6 +139,17 @@
       2019 <https://bjs.ojp.gov/library/publications/prisoners-2019>`__,
       accessed 2020-11-23.
 
+      ``p20stt01.csv`` and ``p20stt05.csv`` from
+      `Archive.org <https://web.archive.org/web/20220620031528/https://bjs.ojp.gov/content/pub/sheets/p20st.zip>`__
+
+      ``p20stt01.csv`` and ``p20stt05.csv`` from `"Prisoners in 2022 -
+      Statistical
+      Tables" <https://bjs.ojp.gov/library/publications/prisoners-2022-statistical-tables>`__
+
+      ``pdrp23t02.csv`` from `"Prisons Report Series: Preliminary Data
+      Release,
+      2023" <https://bjs.ojp.gov/library/publications/prisons-report-series-preliminary-data-release-2023>`__.
+
       Data on jails and community supervision dating back to 1980 are
       available in `Key Statistic: Total correctional
       population <https://bjs.ojp.gov/data/key-statistics>`__ with data
@@ -128,7 +157,7 @@
       Populations In The United States,
       2017-2018 <https://bjs.ojp.gov/library/publications/correctional-populations-united-states-2017-2018>`__.
 
-      Some time in 2021 or later more recent data should become
+      Some time in 2026 or later more recent data should become
       available. When that happens, it may be desired to update this
       table to include those numbers – and check for any revisions of
       earlier numbers.

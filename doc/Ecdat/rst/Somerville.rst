@@ -79,7 +79,7 @@
       https://amstat.tandfonline.com/loi/ubes20. Cameron, A.C. and
       Trivedi P.K. (1998) *Regression analysis of count data*, Cambridge
       University Press,
-      http://cameron.econ.ucdavis.edu/racd/racddata.html, chapter 6.
+      https://cameron.econ.ucdavis.edu/racd/racddata.html, chapter 6.
 
       .. rubric:: See Also
          :name: see-also

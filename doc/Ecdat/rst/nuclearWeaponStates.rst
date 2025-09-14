@@ -88,7 +88,8 @@
       ``startNucPgmYr``. The following summarizes the rationale behind
       the selection of the date for each country in this dataset.
 
-      -  ``US`` The `Manhattan
+      ``US``
+         The `Manhattan
          Project <https://en.wikipedia.org/wiki/Manhattan_Project>`__
          started in stages. It was officially brought to the attention
          of the US government by a letter officially from `Albert
@@ -99,19 +100,20 @@
          We use this later date as the date of the start of the US
          nuclear-weapons program.
 
-      -  ``RU`` Russian scientists were studying uranium before the
-         first world war but didn't get much official attention until
-         the atomic bombing of Hiroshima, 1945-08-06. Shortly thereafter
-         on
+      ``RU``
+         Russian scientists were studying uranium before the first world
+         war but didn't get much official attention until the atomic
+         bombing of Hiroshima, 1945-08-06. Shortly thereafter on
          `1945-08-22 <https://en.wikipedia.org/wiki/Soviet_atomic_bomb_project>`__,
          Stalin appointed `Lavrentiy
          Beria <https://en.wikipedia.org/wiki/Lavrentiy_Beria>`__. Beria
          was a able administrator and guided the project to fruition in
          four years.
 
-      -  ``GB`` British scientists were among the leaders in nuclear
-         technology in the late nineteenth century. They welcomed
-         German-Jewish physicists `Otto
+      ``GB``
+         British scientists were among the leaders in nuclear technology
+         in the late nineteenth century. They welcomed German-Jewish
+         physicists `Otto
          Frisch <https://en.wikipedia.org/wiki/Otto_Robert_Frisch>`__
          and `Rudolf
          Peierls <https://en.wikipedia.org/wiki/Rudolf_Peierls>`__, who
@@ -131,9 +133,10 @@
          the British government decided to initiate their own
          nuclear-weapons program.
 
-      -  ``FR`` France was one of the nuclear pioneers, going back to
-         the work of `Marie
-         Curie <https://en.wikipedia.org/wiki/Marie_Curie>`__ and `Henri
+      ``FR``
+         France was one of the nuclear pioneers, going back to the work
+         of `Marie Curie <https://en.wikipedia.org/wiki/Marie_Curie>`__
+         and `Henri
          Becquerel <https://en.wikipedia.org/wiki/Henri_Becquerel>`__ in
          the 1890s. In 1956 the French were deeply offended by the
          refusal of the US to support them in the `Suez
@@ -142,7 +145,8 @@
          development of nuclear
          weapons <https://nuke.fas.org/guide/israel/nuke/farr.htm>`__.
 
-      -  ``CN`` `Mao Zedong reportedly decided to begin a Chinese
+      ``CN``
+         `Mao Zedong reportedly decided to begin a Chinese
          nuclear-weapons
          program <https://en.wikipedia.org/wiki/China_and_weapons_of_mass_destruction#History>`__
          during the `First Taiwan Strait Crisis of
@@ -152,23 +156,26 @@
          when China stated it was willing to negotiate. We use this as
          the date of the start of China's nuclear weapons program.
 
-      -  ``IN`` Indian scientists started research on nuclear weapons
-         before Indian independence but didn't make a substantive
-         commitment to actually making a nuclear weapon until they lost
-         territory to China in the `Sino-Indian
+      ``IN``
+         Indian scientists started research on nuclear weapons before
+         Indian independence but didn't make a substantive commitment to
+         actually making a nuclear weapon until they lost territory to
+         China in the `Sino-Indian
          War <https://en.wikipedia.org/wiki/Sino-Indian_War>`__ that
          ended 1962-11-21. We use that date as the date for the
          initiation of India's nuclear-weapons program.
 
-      -  ``IL`` Israel's first Prime Minister David Ben-Gurion was
-         reportedly "nearly obsessed" with obtaining nuclear weapons to
-         prevent the Holocaust from recurring. For present purposes, we
-         use 1949-03-10, the date of the end of the `1948 Arab–Israeli
+      ``IL``
+         Israel's first Prime Minister David Ben-Gurion was reportedly
+         "nearly obsessed" with obtaining nuclear weapons to prevent the
+         Holocaust from recurring. For present purposes, we use
+         1949-03-10, the date of the end of the `1948 Arab–Israeli
          War <https://en.wikipedia.org/wiki/1948_Arab-Israeli_War>`__,
          as the beginning of Israel's nuclear-weapons program.
 
-      -  ``PK`` Pakistan's elite were totally humiliated by their defeat
-         in the `Indo-Pakistani War of
+      ``PK``
+         Pakistan's elite were totally humiliated by their defeat in the
+         `Indo-Pakistani War of
          1971 <https://en.wikipedia.org/wiki/Indo-Pakistani_War_of_1971>`__,
          1971-12-03 / -16: That war ended the `Bangladesh Liberation
          War <https://en.wikipedia.org/wiki/Bangladesh_Liberation_War>`__,
@@ -182,7 +189,8 @@
          until later, 1972-01-20 is the date we will use here for the
          beginning of Pakistan's nuclear-weapons program.
 
-      -  ``KP`` The 1950-1953 Korean War ended with a cease-fire, not an
+      ``KP``
+         The 1950-1953 Korean War ended with a cease-fire, not an
          official end to hostilities. Since then North Korea has
          perceived nuclear threats from the US. In 1956 the Soviet Union
          began giving North Korean scientists and engineers "basic

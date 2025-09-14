@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
 <script type="text/javascript">
-const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
 function processMathHTML() {
     var l = document.getElementsByClassName('reqn');
     for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
@@ -35,41 +35,41 @@ the US.  This does not include jail inmates.
 
 <h3>Format</h3>
 
-<p>A data frame with 95 observations on the 
+<p>A data frame with 99 observations on the 
 following 7 variables.
 </p>
 
 <dl>
 <dt>year</dt><dd>
 <p>an integer vector giving the year 
-<code>c(1925:2019)</code>.  
+<code>c(1925:2023)</code>.  
 </p>
 </dd>
 <dt>stateFedIncarcerees</dt><dd>
 <p>Total number of incarcerees = 
 <code>maleTotal + femaleTotal</code>. 
 </p>
-</dd>	
+</dd>
 <dt>stateFedIncarcerationRate</dt><dd>
 <p>incarceration rate = 
 <code>stateFedIncarcerees</code> per 
 100,000 population.  
 </p>
-</dd>	
+</dd>
 <dt>stateFedMales</dt><dd>
 <p>Total number of male incarcerees.  
 </p>
-</dd>	
+</dd>
 <dt>stateFedMaleRate</dt><dd>
 <p>male incarceration rate = 
 <code>maleTotal</code> per 100,000 males 
 in the US population.  
 </p>
-</dd>	
+</dd>
 <dt>stateFedFemales</dt><dd>
 <p>Total number of female incarcerees. 
 </p>
-</dd>	
+</dd>
 <dt>stateFedFemaleRate</dt><dd>
 <p>female incarceration rate = 
 <code>femaleTotal</code> per 100,000 
@@ -127,7 +127,7 @@ numbers from <code>p19t03.csv</code> and
 <code>p19t05.csv</code>, because they seem likely 
 to be more accurate.  
 </p>
-<p>However, these numbers include only people 
+<p>However, these numbers include only humans 
 in state and federal prisons.  It excludes
 jails.  
 </p>
@@ -147,6 +147,24 @@ correctional population 1980-2016&quot; for
 therefore used the older data up to 2007
 and <code>cpus1718.csv</code> for 2008-2018.  
 </p>
+<p>An update to 2023 on 2025-09-01 combined new data 
+from <code>p20stt01.csv</code> and <code>p20stt05.csv</code> 
+from <a href="https://web.archive.org/web/20220620031528/https://bjs.ojp.gov/content/pub/sheets/p20st.zip">Archive.org</a>
+with <code>p20stt01.csv</code> and <code>p20stt05.csv</code> 
+from 
+<a href="https://bjs.ojp.gov/library/publications/prisoners-2022-statistical-tables">&quot;Prisoners in 2022 - Statistical Tables&quot;</a>
+and <code>pdrp23t02.csv</code> from 
+<a href="https://bjs.ojp.gov/library/publications/prisons-report-series-preliminary-data-release-2023">&quot;Prisons Report Series: Preliminary Data Release, 2023&quot;</a>.
+</p>
+<p>The rates for 2023 were computed by dividing the 
+numbers of incarcerees in <code>pdrp23t02.csv</code> by 
+2022 population numbers inferred from 
+<code>stateFedIncarcerees/stateFedIncarcerationRate</code>, 
+<code>stateFedMales/stateFedMaleRate</code>, and 
+<code>stateFedFemales/stateFedFemaleRate</code> and 
+adjusted to 2023 by 'pop*exp(median(log(diff(pop))))'. 
+This added 0.63 percent to the 2022 population. 
+</p>
 <p>Actual analysis of the jail data is left
 for another project.  
 </p>
@@ -161,6 +179,15 @@ for another project.
 files <code>p*t03.csv</code> and <code>p*t05.csv</code> from
 <a href="https://bjs.ojp.gov/library/publications/prisoners-2019">Prisoners In 2019</a>, accessed 2020-11-23.  
 </p>
+<p><code>p20stt01.csv</code> and <code>p20stt05.csv</code> from 
+<a href="https://web.archive.org/web/20220620031528/https://bjs.ojp.gov/content/pub/sheets/p20st.zip">Archive.org</a>
+</p>
+<p><code>p20stt01.csv</code> and <code>p20stt05.csv</code> from 
+<a href="https://bjs.ojp.gov/library/publications/prisoners-2022-statistical-tables">&quot;Prisoners in 2022 - Statistical Tables&quot;</a>
+</p>
+<p><code>pdrp23t02.csv</code> from 
+<a href="https://bjs.ojp.gov/library/publications/prisons-report-series-preliminary-data-release-2023">&quot;Prisons Report Series: Preliminary Data Release, 2023&quot;</a>.
+</p>
 <p>Data on jails and community supervision 
 dating back to 1980 are available in 
 <a href="https://bjs.ojp.gov/data/key-statistics">Key Statistic: Total correctional population</a> 
@@ -168,7 +195,7 @@ with data on the most recent years
 available from 
 <a href="https://bjs.ojp.gov/library/publications/correctional-populations-united-states-2017-2018">Publication Correctional Populations In The United States, 2017-2018</a>.  
 </p>
-<p>Some time in 2021 or later more recent data
+<p>Some time in 2026 or later more recent data
 should become available.  When that happens, 
 it may be desired to update this table to
 include those numbers &ndash; and check for any

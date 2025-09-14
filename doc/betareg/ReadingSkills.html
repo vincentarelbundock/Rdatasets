@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
 <script type="text/javascript">
-const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
 function processMathHTML() {
     var l = document.getElementsByClassName('reqn');
     for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
@@ -62,7 +62,7 @@ that can be obtained in the test: <code>accuracy1 = (original_accuracy - a) / (b
 (<code>a</code> and <code>b</code> are not provided). Subsequently, <code>accuracy</code> was obtained
 from <code>accuracy1</code> by replacing all observations with a value of 1 with 0.99.
 </p>
-<p>Kosmidis and Zeileis (2024) propose to investigate the original unrestricted
+<p>Kosmidis and Zeileis (2025) propose to investigate the original unrestricted
 <code>accuracy1</code> variable using their extended-support beta mixture regression.
 </p>
 
@@ -84,10 +84,10 @@ Extended Beta Regression in R: Shaken, Stirred, Mixed, and Partitioned.
 <em>Journal of Statistical Software</em>, <b>48</b>(11), 1&ndash;25.
 <a href="https://doi.org/10.18637/jss.v048.i11">doi:10.18637/jss.v048.i11</a>
 </p>
-<p>Kosmidis I, Zeileis A (2024).
+<p>Kosmidis I, Zeileis A (2025).
 Extended-Support Beta Regression for [0, 1] Responses.
-2409.07233, <em>arXiv.org E-Print Archive</em>.
-<a href="https://doi.org/10.48550/arXiv.2409.07233">doi:10.48550/arXiv.2409.07233</a>
+<em>Journal of the Royal Statistical Society C</em>, forthcoming.
+<a href="https://doi.org/10.1093/jrsssc/qlaf039">doi:10.1093/jrsssc/qlaf039</a>
 </p>
 <p>Pammer K, Kevan A (2004).
 The Contribution of Visual Sensitivity, Phonological Processing
@@ -122,7 +122,7 @@ rs_beta &lt;- betareg(accuracy ~ dyslexia * iq | dyslexia + iq,
   data = ReadingSkills, hessian = TRUE)
 summary(rs_beta)
 
-## Extended-support beta mixture regression (Kosmidis &amp; Zeileis 2024)
+## Extended-support beta mixture regression (Kosmidis &amp; Zeileis 2025)
 rs_xbx &lt;- betareg(accuracy1 ~ dyslexia * iq | dyslexia + iq, data = ReadingSkills)
 summary(rs_xbx)
 

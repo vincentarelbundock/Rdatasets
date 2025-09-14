@@ -102,7 +102,7 @@
 
       Cameron, A.C. and Trivedi P.K. (1998) *Regression analysis of
       count data*, Cambridge University Press,
-      http://cameron.econ.ucdavis.edu/racd/racddata.html, chapter 9.
+      https://cameron.econ.ucdavis.edu/racd/racddata.html, chapter 9.
 
       Cameron, A.C. and P.K. Trivedi (2005) *Microeconometrics : methods
       and applications*, Cambridge, pp. 792–5.

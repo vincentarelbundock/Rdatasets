@@ -39,9 +39,8 @@
       .. rubric:: Source
          :name: source
 
-      https://www.data.gov.uk/dataset/cb7ae6f0-4be6-4935-9277-47e5ce24a11f/road-safety-data,
-      STATS 19 data, 2005-2012, using the files ``Casualty0512.csv`` and
-      ``Accidents0512.csv``
+      Road Safety Data from GOV.UK, but 2005-2012. Similar data is
+      available in the stats19, https://docs.ropensci.org/stats19/.
 
       .. rubric:: References
          :name: references
@@ -57,14 +56,14 @@
 
          data(CyclingDeaths)
 
-         plot(deaths ~ date, data=CyclingDeaths, 
-           type="h", 
-             lwd=3, 
-             ylab="Number of deaths", 
+         plot(deaths ~ date, data=CyclingDeaths,
+           type="h",
+             lwd=3,
+             ylab="Number of deaths",
              axes=FALSE)
-         axis(1, at=seq(as.Date('2005-01-01'), 
-                        by='years', 
-                        length.out=9), 
+         axis(1, at=seq(as.Date('2005-01-01'),
+                        by='years',
+                        length.out=9),
               labels=2005:2013)
          axis(2, at=0:3)
 
