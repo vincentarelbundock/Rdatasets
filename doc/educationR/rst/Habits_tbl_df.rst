@@ -1,60 +1,54 @@
-.. container::
+============= ===============
+Habits_tbl_df R Documentation
+============= ===============
 
-   .. container::
+Study Habits of Students in Two Matched School Districts
+--------------------------------------------------------
 
-      ============= ===============
-      Habits_tbl_df R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Study Habits of Students in Two Matched School
-         Districts
-         :name: study-habits-of-students-in-two-matched-school-districts
+This dataset, Habits_tbl_df, is a tibble containing data on the study
+habits of students in two matched school districts. It includes
+variables related to the number of hours students from each district
+spent on studying, the difference between the two groups, and the
+significance of this difference.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, Habits_tbl_df, is a tibble containing data on the
-      study habits of students in two matched school districts. It
-      includes variables related to the number of hours students from
-      each district spent on studying, the difference between the two
-      groups, and the significance of this difference.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Habits_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Habits_tbl_df)
+A tibble with 11 observations and 4 variables:
 
-      .. rubric:: Format
-         :name: format
+A
+   Number of study hours in the first school district (integer).
 
-      A tibble with 11 observations and 4 variables:
+B
+   Number of study hours in the second school district (integer).
 
-      A
-         Number of study hours in the first school district (integer).
+differ
+   Difference in study hours between the two school districts (integer).
 
-      B
-         Number of study hours in the second school district (integer).
+signrks
+   Significance of the difference in study hours (numeric).
 
-      differ
-         Difference in study hours between the two school districts
-         (integer).
+Details
+~~~~~~~
 
-      signrks
-         Significance of the difference in study hours (numeric).
+The dataset name has been kept as 'Habits_tbl_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the educationR package and assists
+users in identifying its specific characteristics. The suffix 'tbl_df'
+indicates that the dataset is a tibble. The original content has not
+been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'Habits_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      educationR package and assists users in identifying its specific
-      characteristics. The suffix 'tbl_df' indicates that the dataset is
-      a tibble. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset was taken from the BSDA package.
+The dataset was taken from the BSDA package.

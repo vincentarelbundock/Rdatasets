@@ -1,64 +1,60 @@
-.. container::
+============ ===============
+trump_tweets R Documentation
+============ ===============
 
-   .. container::
+Trump Tweets from2009 to 2017
+-----------------------------
 
-      ============ ===============
-      trump_tweets R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Trump Tweets from2009 to 2017
-         :name: trump-tweets-from2009-to-2017
+This dataset contains all tweets from Donald Trump's Twitter account
+from 2009 to 2017. Additionally, the results of a sentiment analysis,
+conducted on tweets from the campaign period (2015-06-17 to 2016-11-08),
+are included in ``sentiment_counts``.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains all tweets from Donald Trump's Twitter
-      account from 2009 to 2017. Additionally, the results of a
-      sentiment analysis, conducted on tweets from the campaign period
-      (2015-06-17 to 2016-11-08), are included in ``sentiment_counts``.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   trump_tweets
 
-      .. code:: R
+Format
+~~~~~~
 
-         trump_tweets
+An object of class ``"data.frame"``.
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      An object of class ``"data.frame"``.
+- source. Device or service used to compose tweet.
 
-      .. rubric:: Details
-         :name: details
+- id_str. Tweet ID.
 
-      -  source. Device or service used to compose tweet.
+- text. Tweet.
 
-      -  id_str. Tweet ID.
+- created_at. Data and time tweet was tweeted.
 
-      -  text. Tweet.
+- retweet_count. How many times tweet had been retweeted at time dataset
+  was created.
 
-      -  created_at. Data and time tweet was tweeted.
+- in_reply_to_user_id_str. If a reply, the user id of person being
+  replied to.
 
-      -  retweet_count. How many times tweet had been retweeted at time
-         dataset was created.
+- favorite_count. Number of times tweet had been favored at time dataset
+  was created.
 
-      -  in_reply_to_user_id_str. If a reply, the user id of person
-         being replied to.
+- is_retweet. A logical telling us if it is a retweet or not.
 
-      -  favorite_count. Number of times tweet had been favored at time
-         dataset was created.
+Source
+~~~~~~
 
-      -  is_retweet. A logical telling us if it is a retweet or not.
+The Trump Twitter Archive: https://www.thetrumparchive.com/
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      The Trump Twitter Archive: https://www.thetrumparchive.com/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         head(trump_tweets)
+   head(trump_tweets)

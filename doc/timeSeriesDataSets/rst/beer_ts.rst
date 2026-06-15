@@ -1,42 +1,38 @@
-.. container::
+======= ===============
+beer_ts R Documentation
+======= ===============
 
-   .. container::
+Monthly Beer Production.
+------------------------
 
-      ======= ===============
-      beer_ts R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Monthly Beer Production.
-         :name: monthly-beer-production.
+The dataset name has been changed to 'beer_ts' to avoid confusion with
+other packages in the R ecosystem from which datasets have been sourced.
+The suffix 'ts' signifies that this dataset is a time series object.
+This naming convention helps distinguish this dataset as part of the
+'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'beer_ts' to avoid confusion
-      with other packages in the R ecosystem from which datasets have
-      been sourced. The suffix 'ts' signifies that this dataset is a
-      time series object. This naming convention helps distinguish this
-      dataset as part of the 'timeseriesdatasets' package and assists
-      users in identifying its specific characteristics. The original
-      content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(beer_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(beer_ts)
+A time series object with 56 observations:
 
-      .. rubric:: Format
-         :name: format
+beer
+   A numeric vector representing the monthly beer production, measured
+   in megalitres.
 
-      A time series object with 56 observations:
+Source
+~~~~~~
 
-      beer
-         A numeric vector representing the monthly beer production,
-         measured in megalitres.
-
-      .. rubric:: Source
-         :name: source
-
-      Data provided by the Australian Bureau of Statistics.
+Data provided by the Australian Bureau of Statistics.

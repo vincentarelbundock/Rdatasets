@@ -1,108 +1,108 @@
-.. container::
+===== ===============
+GHR04 R Documentation
+===== ===============
 
-   .. container::
+Comparative Public Health: The Political Economy of Human Misery and Well-Being
+-------------------------------------------------------------------------------
 
-      ===== ===============
-      GHR04 R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Comparative Public Health: The Political Economy of
-         Human Misery and Well-Being
-         :name: comparative-public-health-the-political-economy-of-human-misery-and-well-being
+This is a data set for replicating Ghobarah et al. (2004), a reduced
+form of what they make available on Dataverse for replication. Variables
+have been renamed for legibility.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This is a data set for replicating Ghobarah et al. (2004), a
-      reduced form of what they make available on Dataverse for
-      replication. Variables have been renamed for legibility.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   GHR04
 
-      .. code:: R
+Format
+~~~~~~
 
-         GHR04
+A data frame with 182 observations on the following 15 variables.
 
-      .. rubric:: Format
-         :name: format
+``country``
+   a character vector denoting a country name
 
-      A data frame with 182 observations on the following 15 variables.
+``iso3c``
+   a three-character ISO code for the country
 
-      ``country``
-         a character vector denoting a country name
+``pubhlthexppgdp``
+   a numeric vector for public health expenditures as a percentage of
+   GDP
 
-      ``iso3c``
-         a three-character ISO code for the country
+``totexphlth``
+   a numeric vector for total expenditures on health
 
-      ``pubhlthexppgdp``
-         a numeric vector for public health expenditures as a percentage
-         of GDP
+``hale``
+   a numeric vector for health adjusted life expectancy (in years)
 
-      ``totexphlth``
-         a numeric vector for total expenditures on health
+``log_gdppc``
+   a numeric vector for (log-transformed) GDP per capita
 
-      ``hale``
-         a numeric vector for health adjusted life expectancy (in years)
+``gini``
+   a numeric vector for income inequality
 
-      ``log_gdppc``
-         a numeric vector for (log-transformed) GDP per capita
+``log_educ``
+   a numeric vector for (log-transformed) educational attainment
 
-      ``gini``
-         a numeric vector for income inequality
+``log_vanhanen``
+   a numeric vector for (log-transformed) racial-linguistic-religious
+   heterogeneity
 
-      ``log_educ``
-         a numeric vector for (log-transformed) educational attainment
+``rivalry``
+   a dummy variable indicating the presence of an enduring international
+   rivalry for the country
 
-      ``log_vanhanen``
-         a numeric vector for (log-transformed)
-         racial-linguistic-religious heterogeneity
+``polity``
+   a numeric vector communicating a Polity score, as a measure of the
+   democratic nature of the country's regime
 
-      ``rivalry``
-         a dummy variable indicating the presence of an enduring
-         international rivalry for the country
+``prvhlthexpgdp``
+   a numeric vector for private spending on health as a percentage of
+   GDP
 
-      ``polity``
-         a numeric vector communicating a Polity score, as a measure of
-         the democratic nature of the country's regime
+``urban_growth``
+   a numeric vector for the pace of urbanization
 
-      ``prvhlthexpgdp``
-         a numeric vector for private spending on health as a percentage
-         of GDP
+``cwdeaths``
+   a numeric vector for civil war deaths
 
-      ``urban_growth``
-         a numeric vector for the pace of urbanization
+``contig_cw``
+   a dummy variable communicating whether there is a civil war in a
+   geographically contiguous territory
 
-      ``cwdeaths``
-         a numeric vector for civil war deaths
+Details
+~~~~~~~
 
-      ``contig_cw``
-         a dummy variable communicating whether there is a civil war in
-         a geographically contiguous territory
+The three-character ISO code is the only new addition to the data. I add
+this because the country names they have in the data are not neat and
+may lead users astray if they wanted to search for a specific
+observation. The ISO code for Yugoslavia (Serbia and Montenegro) around
+this time was "SCG".
 
-      .. rubric:: Details
-         :name: details
+The data the authors make available come with no .do file to indicate
+what exactly they used. Some forensic work based on the descriptive
+statistics they mention led to this reduced form of their data, which
+almost perfectly replicates their results. The differences are typically
+in the hundredths, and often in the thousandths, and should be
+considered "good enough" for replication purposes. The descriptive
+statistics correspond with what the authors report in their analyses for
+all variables, except the Polity variable. I have no way of knowing how
+they got the median they report. It should be 6, not 7.
 
-      The three-character ISO code is the only new addition to the data.
-      I add this because the country names they have in the data are not
-      neat and may lead users astray if they wanted to search for a
-      specific observation. The ISO code for Yugoslavia (Serbia and
-      Montenegro) around this time was "SCG".
+The only real confusion on my end is why I ended up with one more
+observation than they report in Tables 1 and 3, and two more
+observations than they report in Table 2. This suggests one (or more?)
+of their variables they use has an ``NA``, but I have no way of knowing
+what it could be.
 
-      The data the authors make available come with no .do file to
-      indicate what exactly they used. Some forensic work based on the
-      descriptive statistics they mention led to this reduced form of
-      their data, which almost perfectly replicates their results. The
-      differences are typically in the hundredths, and often in the
-      thousandths, and should be considered "good enough" for
-      replication purposes. The only real confusion on my end is why I
-      ended up with one more observation than they report in their
-      analyses. This suggests one (or more?) of their variables they use
-      has an ``NA``, but I have no way of knowing what it could be.
+Source
+~~~~~~
 
-      .. rubric:: Source
-         :name: source
-
-      Ghobarah, Hazem Adam, Paul Huth, and Bruce Russett. 2004.
-      "Comparative Public Health: The Political Economy of Human Misery
-      and Well-Being" International Studies Quarterly 48: 73-94
+Ghobarah, Hazem Adam, Paul Huth, and Bruce Russett. 2004. "Comparative
+Public Health: The Political Economy of Human Misery and Well-Being"
+*International Studies Quarterly* 48: 73-94

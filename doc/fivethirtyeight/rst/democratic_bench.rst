@@ -1,46 +1,41 @@
-.. container::
+================ ===============
+democratic_bench R Documentation
+================ ===============
 
-   .. container::
+Some Democrats Who Could Step Up If Hillary Isn't Ready For Hillary
+-------------------------------------------------------------------
 
-      ================ ===============
-      democratic_bench R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Some Democrats Who Could Step Up If Hillary Isn't
-         Ready For Hillary
-         :name: some-democrats-who-could-step-up-if-hillary-isnt-ready-for-hillary
+The raw data behind the story "Some Democrats Who Could Step Up If
+Hillary Isn't Ready For Hillary"
+https://fivethirtyeight.com/features/some-democrats-who-could-step-up-if-hillary-isnt-ready-for-hillary/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Some Democrats Who Could Step Up If
-      Hillary Isn't Ready For Hillary"
-      https://fivethirtyeight.com/features/some-democrats-who-could-step-up-if-hillary-isnt-ready-for-hillary/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   democratic_bench
 
-      .. code:: R
+Format
+~~~~~~
 
-         democratic_bench
+A data frame with 67 rows representing members of the Democratic Party
+and 3 variables:
 
-      .. rubric:: Format
-         :name: format
+candidate
+   Candidate
 
-      A data frame with 67 rows representing members of the Democratic
-      Party and 3 variables:
+raised_exp
+   Amount the candidate was expected to raise
 
-      candidate
-         Candidate
+raised_act
+   Amount the candidate actually raised
 
-      raised_exp
-         Amount the candidate was expected to raise
+Source
+~~~~~~
 
-      raised_act
-         Amount the candidate actually raised
-
-      .. rubric:: Source
-         :name: source
-
-      See
-      https://github.com/fivethirtyeight/data/tree/master/democratic-bench.
+See
+https://github.com/fivethirtyeight/data/tree/master/democratic-bench.

@@ -1,67 +1,61 @@
-.. container::
+============== ===============
+us_temp_tbl_df R Documentation
+============== ===============
 
-   .. container::
+US Temperature Data
+-------------------
 
-      ============== ===============
-      us_temp_tbl_df R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: US Temperature Data
-         :name: us-temperature-data
+The dataset 'us_temp_tbl_df' contains temperature records from various
+weather stations across the United States, providing both maximum and
+minimum temperature readings. This dataset is structured as a tibble for
+ease of use within the R ecosystem. This naming convention helps
+distinguish this dataset as part of the 'usdatasets' package.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset 'us_temp_tbl_df' contains temperature records from
-      various weather stations across the United States, providing both
-      maximum and minimum temperature readings. This dataset is
-      structured as a tibble for ease of use within the R ecosystem.
-      This naming convention helps distinguish this dataset as part of
-      the 'usdatasets' package.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(us_temp_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(us_temp_tbl_df)
+A tibble with 10,118 rows and 9 columns:
 
-      .. rubric:: Format
-         :name: format
+station
+   Character string representing the weather station identifier.
 
-      A tibble with 10,118 rows and 9 columns:
+name
+   Character string for the name of the weather station.
 
-      station
-         Character string representing the weather station identifier.
+latitude
+   Numeric value for the latitude of the weather station.
 
-      name
-         Character string for the name of the weather station.
+longitude
+   Numeric value for the longitude of the weather station.
 
-      latitude
-         Numeric value for the latitude of the weather station.
+elevation
+   Numeric value for the elevation of the weather station in meters.
 
-      longitude
-         Numeric value for the longitude of the weather station.
+date
+   Date of the recorded temperature data.
 
-      elevation
-         Numeric value for the elevation of the weather station in
-         meters.
+tmax
+   Numeric value for the maximum temperature recorded (in degrees
+   Celsius).
 
-      date
-         Date of the recorded temperature data.
+tmin
+   Numeric value for the minimum temperature recorded (in degrees
+   Celsius).
 
-      tmax
-         Numeric value for the maximum temperature recorded (in degrees
-         Celsius).
+year
+   Factor representing the year of the recorded data.
 
-      tmin
-         Numeric value for the minimum temperature recorded (in degrees
-         Celsius).
+Source
+~~~~~~
 
-      year
-         Factor representing the year of the recorded data.
-
-      .. rubric:: Source
-         :name: source
-
-      National Oceanic and Atmospheric Administration (NOAA).
+National Oceanic and Atmospheric Administration (NOAA).

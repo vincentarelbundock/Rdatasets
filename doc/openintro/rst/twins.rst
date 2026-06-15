@@ -1,62 +1,59 @@
-.. container::
+===== ===============
+twins R Documentation
+===== ===============
 
-   .. container::
+twins
+-----
 
-      ===== ===============
-      twins R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: twins
-         :name: twins
+A data frame containing data collected in the mid 20th century by Cyril
+Burt from a study tracked down identical twins who were separated at
+birth: one child was raised in the home of their biological parents and
+the other in a foster home. In an attempt to answer the question of
+whether intelligence is the result of nature or nurture, both children
+were given IQ tests.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A data frame containing data collected in the mid 20th century by
-      Cyril Burt from a study tracked down identical twins who were
-      separated at birth: one child was raised in the home of their
-      biological parents and the other in a foster home. In an attempt
-      to answer the question of whether intelligence is the result of
-      nature or nurture, both children were given IQ tests.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   twins
 
-      .. code:: R
+Format
+~~~~~~
 
-         twins
+A data frame with 27 observations on the following 2 variables.
 
-      .. rubric:: Format
-         :name: format
+foster
+   IQ score of the twin raised by Foster parents.
 
-      A data frame with 27 observations on the following 2 variables.
+biological
+   IQ score of the twin raised by Biological parents.
 
-      foster
-         IQ score of the twin raised by Foster parents.
+Examples
+~~~~~~~~
 
-      biological
-         IQ score of the twin raised by Biological parents.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   library(ggplot2)
+   library(dplyr)
+   library(tidyr)
 
-         library(ggplot2)
-         library(dplyr)
-         library(tidyr)
+   plot_data <- twins |>
+     pivot_longer(cols = c(foster, biological), names_to = "twin", values_to = "iq")
 
-         plot_data <- twins |>
-           pivot_longer(cols = c(foster, biological), names_to = "twin", values_to = "iq")
-
-         ggplot(plot_data, aes(iq, fill = twin)) +
-           geom_histogram(color = "white", binwidth = 5) +
-           facet_wrap(~twin) +
-           theme_minimal() +
-           labs(
-             title = "IQ of identical twins",
-             subtitle = "Separated at birth",
-             x = "IQ",
-             y = "Count",
-             fill = ""
-           )
+   ggplot(plot_data, aes(iq, fill = twin)) +
+     geom_histogram(color = "white", binwidth = 5) +
+     facet_wrap(~twin) +
+     theme_minimal() +
+     labs(
+       title = "IQ of identical twins",
+       subtitle = "Separated at birth",
+       x = "IQ",
+       y = "Count",
+       fill = ""
+     )

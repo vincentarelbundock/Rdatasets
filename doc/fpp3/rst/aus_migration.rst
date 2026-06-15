@@ -1,67 +1,62 @@
-.. container::
+============= ===============
+aus_migration R Documentation
+============= ===============
 
-   .. container::
+Australian migration data
+-------------------------
 
-      ============= ===============
-      aus_migration R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Australian migration data
-         :name: australian-migration-data
+Net Overseas Migration (NOM) to Australia.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Net Overseas Migration (NOM) to Australia.
+Time series of class 'tsibble'
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      Time series of class 'tsibble'
+``aus_migration`` contains quarterly data with one measured variable:
 
-      .. rubric:: Details
-         :name: details
++----------+-----------------------------------------------------------+
+| ``NOM``: | The net gain or loss of population through immigration to |
+|          | Australia and emigration from Australia                   |
++----------+-----------------------------------------------------------+
+|          |                                                           |
++----------+-----------------------------------------------------------+
 
-      ``aus_migration`` contains quarterly data with one measured
-      variable:
+from 1981 Q2 to 2023 Q3 for the 6 states and 2 territories of Australia,
+indexed by:
 
-      +----------+----------------------------------------------------------+
-      | ``NOM``: | The net gain or loss of population through immigration   |
-      |          | to Australia and emigration from Australia               |
-      +----------+----------------------------------------------------------+
-      |          |                                                          |
-      +----------+----------------------------------------------------------+
+============ =============
+``Quarter``: Year-quarter.
+             
+============ =============
 
-      from 1981 Q2 to 2023 Q3 for the 6 states and 2 territories of
-      Australia, indexed by:
+NOM is based on an international traveller's duration of stay being in
+or out of Australia for 12 months or more, over a 16 month period.
 
-      ============ =============
-      ``Quarter``: Year-quarter.
-      \            
-      ============ =============
+Each series is uniquely identified using the key:
 
-      NOM is based on an international traveller's duration of stay
-      being in or out of Australia for 12 months or more, over a 16
-      month period.
++------------------------------------+
+| ``State``: The state or territory. |
++------------------------------------+
+|                                    |
++------------------------------------+
 
-      Each series is uniquely identified using the key:
+Source
+~~~~~~
 
-      +------------------------------------+
-      | ``State``: The state or territory. |
-      +------------------------------------+
-      |                                    |
-      +------------------------------------+
+Australian Bureau of Statistics.
+https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/dec-2023.
+Cat No. 310102.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Australian Bureau of Statistics.
-      https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/dec-2023.
-      Cat No. 310102.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         aus_migration
+   aus_migration

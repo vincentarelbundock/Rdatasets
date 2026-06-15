@@ -98,11 +98,17 @@ data(Engel95)
 ## Sort on logexp (the endogenous regressor) for plotting purposes
 
 Engel95 &lt;- Engel95[order(Engel95$logexp),] 
+Engel95 &lt;- Engel95[seq_len(min(120, nrow(Engel95))), ]
 
-attach(Engel95)
+with(Engel95, {
 
-model.iv &lt;- npregiv(y=food,z=logexp,w=logwages,method="Landweber-Fridman")
-phihat &lt;- model.iv$phi
+model.iv &lt;- npregiv(y=food,
+                    z=logexp,
+                    w=logwages,
+                    method="Landweber-Fridman",
+                    iterate.max=3,
+                    iterate.diff.tol=1.0e-04)
+phi &lt;- model.iv$phi
 
 ## Compute the non-IV regression (i.e. regress y on z)
 
@@ -124,7 +130,7 @@ plot(logexp,food,
      cex=.5,
      col="lightgrey")
 
-lines(logexp,phihat,col="blue",lwd=2,lty=2)
+lines(logexp,phi,col="blue",lwd=2,lty=2)
 
 lines(logexp,fitted(ghat),col="red",lwd=2,lty=4)
 
@@ -134,6 +140,7 @@ legend(quantile(logexp,trim),quantile(food,1-trim),
        lty=c(2,4),
        col=c("blue","red"),
        lwd=c(2,2))
+})
 
 ## End(Not run) 
 </code></pre>

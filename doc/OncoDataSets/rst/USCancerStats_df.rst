@@ -1,59 +1,54 @@
-.. container::
+================ ===============
+USCancerStats_df R Documentation
+================ ===============
 
-   .. container::
+US Cancer Incidence, Mortality, and Survival Changes
+----------------------------------------------------
 
-      ================ ===============
-      USCancerStats_df R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: US Cancer Incidence, Mortality, and Survival Changes
-         :name: us-cancer-incidence-mortality-and-survival-changes
+This dataset, USCancerStats_df, is a data frame containing cancer
+statistics for 20 solid tumor types, including incidence, mortality, and
+survival data. The dataset reports the absolute difference in 5-year
+survival between 1989-1995 and 1950-1954, as well as the percentage
+change in mortality and incidence from 1950 to 1996.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, USCancerStats_df, is a data frame containing cancer
-      statistics for 20 solid tumor types, including incidence,
-      mortality, and survival data. The dataset reports the absolute
-      difference in 5-year survival between 1989-1995 and 1950-1954, as
-      well as the percentage change in mortality and incidence from 1950
-      to 1996.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(USCancerStats_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(USCancerStats_df)
+A data frame with 20 observations and 4 variables:
 
-      .. rubric:: Format
-         :name: format
+site
+   Tumor site (character).
 
-      A data frame with 20 observations and 4 variables:
+survival
+   Absolute difference in 5-year survival (numeric).
 
-      site
-         Tumor site (character).
+mortality
+   Percentage change in mortality (numeric).
 
-      survival
-         Absolute difference in 5-year survival (numeric).
+incidence
+   Percentage change in incidence (numeric).
 
-      mortality
-         Percentage change in mortality (numeric).
+Details
+~~~~~~~
 
-      incidence
-         Percentage change in incidence (numeric).
+The dataset name has been kept as 'USCancerStats_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the OncoDataSets package and assists
+users in identifying its specific characteristics. The suffix '\_df'
+indicates that the dataset is a data frame. The original content has not
+been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'USCancerStats_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The suffix '\_df' indicates that the dataset is a
-      data frame. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the R4HCR package.
+Data taken from the R4HCR package.

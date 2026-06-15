@@ -1,137 +1,132 @@
-.. container::
+==================== ===============
+mriCardioVars_tbl_df R Documentation
+==================== ===============
 
-   .. container::
+Elderly CV/MRI and Biomarkers
+-----------------------------
 
-      ==================== ===============
-      mriCardioVars_tbl_df R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Elderly CV/MRI and Biomarkers
-         :name: elderly-cvmri-and-biomarkers
+This dataset, mriCardioVars_tbl_df, is a tibble containing MRI and
+clinical data from 735 elderly participants in a U.S. observational
+study of cardiovascular and cerebrovascular disease incidence. It
+includes 30 variables covering demographic, clinical, and imaging
+measures.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, mriCardioVars_tbl_df, is a tibble containing MRI and
-      clinical data from 735 elderly participants in a U.S.
-      observational study of cardiovascular and cerebrovascular disease
-      incidence. It includes 30 variables covering demographic,
-      clinical, and imaging measures.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(mriCardioVars_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(mriCardioVars_tbl_df)
+A tibble with 735 observations and 30 variables:
 
-      .. rubric:: Format
-         :name: format
+ptid
+   Patient identification number (numeric)
 
-      A tibble with 735 observations and 30 variables:
+mridate
+   MRI date (Date)
 
-      ptid
-         Patient identification number (numeric)
+age
+   Age in years (numeric)
 
-      mridate
-         MRI date (Date)
+sex
+   Sex (character)
 
-      age
-         Age in years (numeric)
+race
+   Race (character)
 
-      sex
-         Sex (character)
+weight
+   Weight in kg (numeric)
 
-      race
-         Race (character)
+height
+   Height in cm (numeric)
 
-      weight
-         Weight in kg (numeric)
+packyrs
+   Smoking pack-years (numeric)
 
-      height
-         Height in cm (numeric)
+yrsquit
+   Years since quitting smoking (numeric)
 
-      packyrs
-         Smoking pack-years (numeric)
+alcoh
+   Alcohol consumption (numeric)
 
-      yrsquit
-         Years since quitting smoking (numeric)
+physact
+   Physical activity level (numeric)
 
-      alcoh
-         Alcohol consumption (numeric)
+chf
+   Congestive heart failure status (numeric)
 
-      physact
-         Physical activity level (numeric)
+chd
+   Coronary heart disease status (numeric)
 
-      chf
-         Congestive heart failure status (numeric)
+stroke
+   Stroke history (numeric)
 
-      chd
-         Coronary heart disease status (numeric)
+diabetes
+   Diabetes status (numeric)
 
-      stroke
-         Stroke history (numeric)
+genhlth
+   General health status (numeric)
 
-      diabetes
-         Diabetes status (numeric)
+ldl
+   LDL cholesterol in mg/dL (numeric)
 
-      genhlth
-         General health status (numeric)
+alb
+   Albumin level (numeric)
 
-      ldl
-         LDL cholesterol in mg/dL (numeric)
+crt
+   Creatinine level (numeric)
 
-      alb
-         Albumin level (numeric)
+plt
+   Platelet count (numeric)
 
-      crt
-         Creatinine level (numeric)
+sbp
+   Systolic blood pressure in mmHg (numeric)
 
-      plt
-         Platelet count (numeric)
+aai
+   Ankle-arm index (numeric)
 
-      sbp
-         Systolic blood pressure in mmHg (numeric)
+fev
+   Forced expiratory volume (numeric)
 
-      aai
-         Ankle-arm index (numeric)
+dsst
+   Digit Symbol Substitution Test score (numeric)
 
-      fev
-         Forced expiratory volume (numeric)
+atrophy
+   Brain atrophy measure (numeric)
 
-      dsst
-         Digit Symbol Substitution Test score (numeric)
+whgrd
+   White matter hyperintensity grade (numeric)
 
-      atrophy
-         Brain atrophy measure (numeric)
+numinf
+   Number of brain infarcts (numeric)
 
-      whgrd
-         White matter hyperintensity grade (numeric)
+volinf
+   Volume of brain infarcts (numeric)
 
-      numinf
-         Number of brain infarcts (numeric)
+obstime
+   Observation time (numeric)
 
-      volinf
-         Volume of brain infarcts (numeric)
+death
+   Mortality status (numeric)
 
-      obstime
-         Observation time (numeric)
+Details
+~~~~~~~
 
-      death
-         Mortality status (numeric)
+The dataset name has been kept as 'mriCardioVars_tbl_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the CardioDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'tbl_df' indicates that the dataset is a tibble. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'mriCardioVars_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      CardioDataSets package and assists users in identifying its
-      specific characteristics. The suffix 'tbl_df' indicates that the
-      dataset is a tibble. The original content has not been modified in
-      any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the rigr package version 1.0.7
+Data taken from the rigr package version 1.0.7

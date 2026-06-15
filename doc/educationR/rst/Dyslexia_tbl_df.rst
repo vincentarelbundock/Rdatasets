@@ -1,68 +1,63 @@
-.. container::
+=============== ===============
+Dyslexia_tbl_df R Documentation
+=============== ===============
 
-   .. container::
+Dyslexia: Data on College Students Diagnosed with Dyslexia
+----------------------------------------------------------
 
-      =============== ===============
-      Dyslexia_tbl_df R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Dyslexia: Data on College Students Diagnosed with
-         Dyslexia
-         :name: dyslexia-data-on-college-students-diagnosed-with-dyslexia
+This dataset, Dyslexia_tbl_df, is a tibble containing data on a group of
+college students diagnosed with dyslexia. The dataset includes various
+personal characteristics such as age, gender, handedness, weight,
+height, and number of children, along with the number of words they were
+able to read correctly.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, Dyslexia_tbl_df, is a tibble containing data on a
-      group of college students diagnosed with dyslexia. The dataset
-      includes various personal characteristics such as age, gender,
-      handedness, weight, height, and number of children, along with the
-      number of words they were able to read correctly.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Dyslexia_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Dyslexia_tbl_df)
+A tibble with 8 observations and 7 variables:
 
-      .. rubric:: Format
-         :name: format
+words
+   Number of words read correctly (integer).
 
-      A tibble with 8 observations and 7 variables:
+age
+   Age of the student (integer).
 
-      words
-         Number of words read correctly (integer).
+gender
+   Gender of the student (character).
 
-      age
-         Age of the student (integer).
+handed
+   Handedness of the student (character).
 
-      gender
-         Gender of the student (character).
+weight
+   Weight of the student (integer).
 
-      handed
-         Handedness of the student (character).
+height
+   Height of the student (integer).
 
-      weight
-         Weight of the student (integer).
+children
+   Number of children the student has (integer).
 
-      height
-         Height of the student (integer).
+Details
+~~~~~~~
 
-      children
-         Number of children the student has (integer).
+The dataset name has been kept as 'Dyslexia_tbl_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the educationR package and assists
+users in identifying its specific characteristics. The suffix 'tbl_df'
+indicates that the dataset is a tibble. The original content has not
+been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'Dyslexia_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      educationR package and assists users in identifying its specific
-      characteristics. The suffix 'tbl_df' indicates that the dataset is
-      a tibble. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset was taken from the BSDA package.
+The dataset was taken from the BSDA package.

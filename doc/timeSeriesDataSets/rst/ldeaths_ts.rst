@@ -1,45 +1,38 @@
-.. container::
+========== ===============
+ldeaths_ts R Documentation
+========== ===============
 
-   .. container::
+Monthly Deaths from Lung Diseases in the UK (1974-1980).
+--------------------------------------------------------
 
-      ========== ===============
-      ldeaths_ts R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Monthly Deaths from Lung Diseases in the UK
-         (1974-1980).
-         :name: monthly-deaths-from-lung-diseases-in-the-uk-1974-1980.
+The dataset name has been changed to 'ldeaths_ts' to avoid confusion
+with other packages in the R ecosystem from which datasets have been
+sourced. The suffix 'ts' indicates that this dataset is a time series
+object. This naming convention helps distinguish this dataset as part of
+the 'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'ldeaths_ts' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. The suffix 'ts' indicates that this
-      dataset is a time series object. This naming convention helps
-      distinguish this dataset as part of the 'timeseriesdatasets'
-      package and assists users in identifying its specific
-      characteristics. The original content of the dataset has not been
-      modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(ldeaths_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(ldeaths_ts)
+A time series object with 72 observations:
 
-      .. rubric:: Format
-         :name: format
+ldeaths
+   A numeric vector representing the monthly number of deaths from lung
+   diseases in the UK, from 1974 to 1980.
 
-      A time series object with 72 observations:
+Source
+~~~~~~
 
-      ldeaths
-         A numeric vector representing the monthly number of deaths from
-         lung diseases in the UK, from 1974 to 1980.
-
-      .. rubric:: Source
-         :name: source
-
-      Data collected by the UK Office of Population Censuses and
-      Surveys.
+Data collected by the UK Office of Population Censuses and Surveys.

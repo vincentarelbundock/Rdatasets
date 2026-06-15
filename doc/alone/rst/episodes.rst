@@ -1,87 +1,83 @@
-.. container::
+======== ===============
+episodes R Documentation
+======== ===============
 
-   .. container::
+Episodes
+--------
 
-      ======== ===============
-      episodes R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Episodes
-         :name: episodes
+Contains details of each episode including the title, number of viewers,
+beginning quote and IMDb rating
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Contains details of each episode including the title, number of
-      viewers, beginning quote and IMDb rating
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   episodes
 
-      .. code:: R
+Format
+~~~~~~
 
-         episodes
+This data frame contains the following columns:
 
-      .. rubric:: Format
-         :name: format
+``version``
+   Country code for the version of the show
 
-      This data frame contains the following columns:
+``season``
+   The season number
 
-      ``version``
-         Country code for the version of the show
+``episode_number_overall``
+   Episode number across seasons
 
-      ``season``
-         The season number
+``episode``
+   Episode number
 
-      ``episode_number_overall``
-         Episode number across seasons
+``title``
+   Episode title
 
-      ``episode``
-         Episode number
+``day_start``
+   The day the episode started on
 
-      ``title``
-         Episode title
+``n_remaining``
+   How are remaining at the start of the episode
 
-      ``day_start``
-         The day the episode started on
+``air_date``
+   Date the episode originally aired
 
-      ``n_remaining``
-         How are remaining at the start of the episode
+``viewers``
+   Number of viewers in the US (millions)
 
-      ``air_date``
-         Date the episode originally aired
+``quote``
+   The beginning quote
 
-      ``viewers``
-         Number of viewers in the US (millions)
+``author``
+   Author of the beginning quote
 
-      ``quote``
-         The beginning quote
+``imdb_rating``
+   IMDb rating of the episode
 
-      ``author``
-         Author of the beginning quote
+``n_ratings``
+   Number of ratings given for the episode
 
-      ``imdb_rating``
-         IMDb rating of the episode
+``description``
+   Description of the episode from IMDb
 
-      ``n_ratings``
-         Number of ratings given for the episode
+Source
+~~~~~~
 
-      ``description``
-         Description of the episode from IMDb
+https://en.wikipedia.org/wiki/List_of_Alone_episodes#Season_1_(2015)_-_Vancouver_Island
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      https://en.wikipedia.org/wiki/List_of_Alone_episodes#Season_1_(2015)_-_Vancouver_Island
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   library(dplyr)
+   library(ggplot2)
 
-      .. code:: R
-
-         library(dplyr)
-         library(ggplot2)
-
-         episodes |>
-           ggplot(aes(episode_number_overall, viewers, colour = as.factor(season))) +
-           geom_line()
+   episodes |>
+     ggplot(aes(episode_number_overall, viewers, colour = as.factor(season))) +
+     geom_line()

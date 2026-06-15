@@ -1,100 +1,92 @@
-.. container::
+=========================== ===============
+gm_expected_patterns_tbl_df R Documentation
+=========================== ===============
 
-   .. container::
+Patterns of Gray Matter in Schizophrenia
+----------------------------------------
 
-      =========================== ===============
-      gm_expected_patterns_tbl_df R Documentation
-      =========================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Patterns of Gray Matter in Schizophrenia
-         :name: patterns-of-gray-matter-in-schizophrenia
+This dataset, gm_expected_patterns_tbl_df, is a tibble containing
+expected patterns of gray matter in schizophrenia derived from
+large-scale meta-analyses by the ENIGMA consortium. It includes data
+from multiple neurological and psychiatric conditions for comparison.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, gm_expected_patterns_tbl_df, is a tibble containing
-      expected patterns of gray matter in schizophrenia derived from
-      large-scale meta-analyses by the ENIGMA consortium. It includes
-      data from multiple neurological and psychiatric conditions for
-      comparison.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(gm_expected_patterns_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(gm_expected_patterns_tbl_df)
+A tibble with 33 observations and 16 variables:
 
-      .. rubric:: Format
-         :name: format
+GM
+   Character vector indicating gray matter regions
 
-      A tibble with 33 observations and 16 variables:
+SSD
+   Numeric vector of expected patterns for schizophrenia spectrum
+   disorder
 
-      GM
-         Character vector indicating gray matter regions
+MDD
+   Numeric vector of expected patterns for major depressive disorder
 
-      SSD
-         Numeric vector of expected patterns for schizophrenia spectrum
-         disorder
+AD_ADNI
+   Numeric vector of expected patterns for Alzheimer's disease (ADNI
+   cohort)
 
-      MDD
-         Numeric vector of expected patterns for major depressive
-         disorder
+AD_ADNIOSYRIX
+   Numeric vector of expected patterns for Alzheimer's disease
+   (ADNI+OSYRIX cohort)
 
-      AD_ADNI
-         Numeric vector of expected patterns for Alzheimer's disease
-         (ADNI cohort)
+BD
+   Numeric vector of expected patterns for bipolar disorder
 
-      AD_ADNIOSYRIX
-         Numeric vector of expected patterns for Alzheimer's disease
-         (ADNI+OSYRIX cohort)
+PD
+   Numeric vector of expected patterns for Parkinson's disease
 
-      BD
-         Numeric vector of expected patterns for bipolar disorder
+Diabetes
+   Numeric vector of expected patterns for diabetes
 
-      PD
-         Numeric vector of expected patterns for Parkinson's disease
+HighBP
+   Numeric vector of expected patterns for high blood pressure
 
-      Diabetes
-         Numeric vector of expected patterns for diabetes
+HighLipids
+   Numeric vector of expected patterns for high lipids
 
-      HighBP
-         Numeric vector of expected patterns for high blood pressure
+MET
+   Numeric vector of expected patterns for metabolic syndrome
 
-      HighLipids
-         Numeric vector of expected patterns for high lipids
+DS_22q
+   Numeric vector of expected patterns for 22q11.2 deletion syndrome
 
-      MET
-         Numeric vector of expected patterns for metabolic syndrome
+Suicide
+   Numeric vector of expected patterns for suicide
 
-      DS_22q
-         Numeric vector of expected patterns for 22q11.2 deletion
-         syndrome
+OCD_pediatric
+   Numeric vector of expected patterns for pediatric OCD
 
-      Suicide
-         Numeric vector of expected patterns for suicide
+OCD_adult
+   Numeric vector of expected patterns for adult OCD
 
-      OCD_pediatric
-         Numeric vector of expected patterns for pediatric OCD
+AN
+   Numeric vector of expected patterns for anorexia nervosa
 
-      OCD_adult
-         Numeric vector of expected patterns for adult OCD
+Details
+~~~~~~~
 
-      AN
-         Numeric vector of expected patterns for anorexia nervosa
+The dataset name has been kept as 'gm_expected_patterns_tbl_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the NeuroDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'tbl_df' indicates that the dataset is a tibble. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'gm_expected_patterns_tbl_df' to
-      avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      NeuroDataSets package and assists users in identifying its
-      specific characteristics. The suffix 'tbl_df' indicates that the
-      dataset is a tibble. The original content has not been modified in
-      any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the RVIpkg package version 0.3.2.
+Data taken from the RVIpkg package version 0.3.2.

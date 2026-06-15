@@ -1,75 +1,68 @@
-.. container::
+====================== ===============
+mueller_approval_polls R Documentation
+====================== ===============
 
-   .. container::
+Both Parties Think The Mueller Report Was Fair. They Just Completely Disagree On What It Says.
+----------------------------------------------------------------------------------------------
 
-      ====================== ===============
-      mueller_approval_polls R Documentation
-      ====================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Both Parties Think The Mueller Report Was Fair. They
-         Just Completely Disagree On What It Says.
-         :name: both-parties-think-the-mueller-report-was-fair.-they-just-completely-disagree-on-what-it-says.
+The raw data behind the story 'Both Parties Think The Mueller Report Was
+Fair. They Just Completely Disagree On What It Says.'
+https://fivethirtyeight.com/features/both-parties-think-the-mueller-report-was-fair-they-just-disagree-on-what-it-says/
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story 'Both Parties Think The Mueller
-      Report Was Fair. They Just Completely Disagree On What It Says.'
-      https://fivethirtyeight.com/features/both-parties-think-the-mueller-report-was-fair-they-just-disagree-on-what-it-says/
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   mueller_approval_polls
 
-      .. code:: R
+Format
+~~~~~~
 
-         mueller_approval_polls
+A dataset with 65 rows representing every job approval poll of Robert
+Mueller that we could find from when Mueller was appointed as special
+council on May 17, 2017 through May 3, 2019 and 12 variables
 
-      .. rubric:: Format
-         :name: format
+start
+   the start date of the poll
 
-      A dataset with 65 rows representing every job approval poll of
-      Robert Mueller that we could find from when Mueller was appointed
-      as special council on May 17, 2017 through May 3, 2019 and 12
-      variables
+end
+   the end date of the poll
 
-      start
-         the start date of the poll
+pollster
+   the name of the pollster
 
-      end
-         the end date of the poll
+sample_size
+   the size of the poll sample
 
-      pollster
-         the name of the pollster
+population
+   unknown
 
-      sample_size
-         the size of the poll sample
+text
+   the text of the poll question
 
-      population
-         unknown
+approve
+   the number of approval in the poll
 
-      text
-         the text of the poll question
+disapprove
+   the number of disapproval in the poll
 
-      approve
-         the number of approval in the poll
+unsure
+   the number of unsure in the poll
 
-      disapprove
-         the number of disapproval in the poll
+approve\_(republican)
+   the number of approval from Republican
 
-      unsure
-         the number of unsure in the poll
+approve\_(democrat)
+   the number of approval from Democrat
 
-      approve\_(republican)
-         the number of approval from Republican
+url
+   the url of the poll
 
-      approve\_(democrat)
-         the number of approval from Democrat
+Source
+~~~~~~
 
-      url
-         the url of the poll
-
-      .. rubric:: Source
-         :name: source
-
-      Polls, Washington Post / ABC and Washington Post / Schar School
-      Polls
+Polls, Washington Post / ABC and Washington Post / Schar School Polls

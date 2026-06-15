@@ -1,146 +1,142 @@
-.. container::
+========== ===============
+SeriesPost R Documentation
+========== ===============
 
-   .. container::
+SeriesPost table
+----------------
 
-      ========== ===============
-      SeriesPost R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: SeriesPost table
-         :name: seriespost-table
+Post season series information
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Post season series information
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(SeriesPost)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(SeriesPost)
+A data frame with 440 observations on the following 9 variables.
 
-      .. rubric:: Format
-         :name: format
+``yearID``
+   Year
 
-      A data frame with 400 observations on the following 9 variables.
+``round``
+   Level of playoffs
 
-      ``yearID``
-         Year
+``teamIDwinner``
+   Team ID of the team that won the series; a factor
 
-      ``round``
-         Level of playoffs
+``lgIDwinner``
+   League ID of the team that won the series; a factor with levels
+   ``AL`` ``NL``
 
-      ``teamIDwinner``
-         Team ID of the team that won the series; a factor
+``teamIDloser``
+   Team ID of the team that lost the series; a factor
 
-      ``lgIDwinner``
-         League ID of the team that won the series; a factor with levels
-         ``AL`` ``NL``
+``lgIDloser``
+   League ID of the team that lost the series; a factor with levels
+   ``AL`` ``NL``
 
-      ``teamIDloser``
-         Team ID of the team that lost the series; a factor
+``wins``
+   Wins by team that won the series
 
-      ``lgIDloser``
-         League ID of the team that lost the series; a factor with
-         levels ``AL`` ``NL``
+``losses``
+   Losses by team that won the series
 
-      ``wins``
-         Wins by team that won the series
+``ties``
+   Tie games
 
-      ``losses``
-         Losses by team that won the series
+Source
+~~~~~~
 
-      ``ties``
-         Tie games
+Lahman, S. (2026) Lahman's Baseball Database, 1871-2025, 2026 version,
+https://sabr.org/lahman-database/
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Lahman, S. (2025) Lahman's Baseball Database, 1871-2024, 2025
-      version, https://sabr.org/lahman-database/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   data(SeriesPost)
 
-      .. code:: R
+   # How many times has each team won the World Series?
 
-         data(SeriesPost)
+   # Notes: 
+   # - the SeriesPost table includes an identifier for the 
+   # team (teamID), but not the franchise (e.g. the Brooklyn Dodgers
+   # [BRO] and Los Angeles Dodgers [LAN] are counted separately)
+   #
+   # - the World Series was first played in 1903, but the 
+   # Lahman data tables have the final round of the earlier 
+   # playoffs labelled "WS", so it is necessary to
+   # filter the SeriesPost table to exclude years prior to 1903. 
 
-         # How many times has each team won the World Series?
+   # using the dplyr data manipulation package
+   library("dplyr")
+   library("tidyr")
+   library("ggplot2")
 
-         # Notes: 
-         # - the SeriesPost table includes an identifier for the 
-         # team (teamID), but not the franchise (e.g. the Brooklyn Dodgers
-         # [BRO] and Los Angeles Dodgers [LAN] are counted separately)
-         #
-         # - the World Series was first played in 1903, but the 
-         # Lahman data tables have the final round of the earlier 
-         # playoffs labelled "WS", so it is necessary to
-         # filter the SeriesPost table to exclude years prior to 1903. 
+   ## WS winners, arranged in descending order of titles won
+   ws_winner_table <- SeriesPost %>%
+     filter(yearID > "1902", round == "WS") %>%
+     group_by(teamIDwinner) %>%
+     summarise(wincount = n()) %>%
+     arrange(desc(wincount))
+   ws_winner_table
 
-         # using the dplyr data manipulation package
-         library("dplyr")
-         library("tidyr")
-         library("ggplot2")
+   ## Expanded form of World Series team data in modern era
 
-         ## WS winners, arranged in descending order of titles won
-         ws_winner_table <- SeriesPost %>%
-           filter(yearID > "1902", round == "WS") %>%
-           group_by(teamIDwinner) %>%
-           summarise(wincount = n()) %>%
-           arrange(desc(wincount))
-         ws_winner_table
+   ws <- SeriesPost %>%
+           filter(yearID >= 1903 & round == "WS") %>%
+           select(-ties, -round) %>%
+           mutate(lgIDloser = droplevels(lgIDloser),
+                  lgIDwinner = droplevels(lgIDwinner))
 
-         ## Expanded form of World Series team data in modern era
+   # Bar chart of length of series (# games played)
+   # 1903, 1919 and 1921 had eight games
+   ggplot(ws, aes(x = wins + losses)) +
+     geom_bar(fill = "dodgerblue") +
+     labs(x = "Number of games", y = "Frequency")
 
-         ws <- SeriesPost %>%
-                 filter(yearID >= 1903 & round == "WS") %>%
-                 select(-ties, -round) %>%
-                 mutate(lgIDloser = droplevels(lgIDloser),
-                        lgIDwinner = droplevels(lgIDwinner))
+   # Last year the Cubs appeared in the WS
+   ws %>% 
+     filter(teamIDwinner == "CHN" | teamIDloser == "CHN") %>% 
+     summarise(max(yearID))
 
-         # Bar chart of length of series (# games played)
-         # 1903, 1919 and 1921 had eight games
-         ggplot(ws, aes(x = wins + losses)) +
-           geom_bar(fill = "dodgerblue") +
-           labs(x = "Number of games", y = "Frequency")
+   # Dot chart of number of WS appearances by teamID
+   ws %>% 
+     gather(wl, team, teamIDwinner, teamIDloser) %>%
+     count(team) %>%
+     arrange(desc(n)) %>%
+     ggplot(., aes(x = reorder(team, n), y = n)) +
+       theme_bw() +
+       geom_point(size = 3, color = "dodgerblue") +
+       geom_segment(aes(xend = reorder(team, n), yend = 0), 
+                    linetype = "dotted", color = "dodgerblue", 
+                    size = 1) +
+       labs(x = NULL, y = "Number of WS appearances") +
+       scale_y_continuous(expand = c(0, 0), limits = c(0, 42)) +
+       coord_flip() +
+       theme(axis.text.y = element_text(size = rel(0.8)),
+             axis.ticks.y = element_blank())
 
-         # Last year the Cubs appeared in the WS
-         ws %>% 
-           filter(teamIDwinner == "CHN" | teamIDloser == "CHN") %>% 
-           summarise(max(yearID))
+   # Initial year of each round of championship series in modern era
+   SeriesPost %>% 
+       filter(yearID >= 1903) %>%   # modern WS started in 1903
+       group_by(round) %>%
+       summarise(first_year = min(yearID)) %>%
+       arrange(first_year)
 
-         # Dot chart of number of WS appearances by teamID
-         ws %>% 
-           gather(wl, team, teamIDwinner, teamIDloser) %>%
-           count(team) %>%
-           arrange(desc(n)) %>%
-           ggplot(., aes(x = reorder(team, n), y = n)) +
-             theme_bw() +
-             geom_point(size = 3, color = "dodgerblue") +
-             geom_segment(aes(xend = reorder(team, n), yend = 0), 
-                          linetype = "dotted", color = "dodgerblue", 
-                          size = 1) +
-             labs(x = NULL, y = "Number of WS appearances") +
-             scale_y_continuous(expand = c(0, 0), limits = c(0, 42)) +
-             coord_flip() +
-             theme(axis.text.y = element_text(size = rel(0.8)),
-                   axis.ticks.y = element_blank())
-
-         # Initial year of each round of championship series in modern era
-         SeriesPost %>% 
-             filter(yearID >= 1903) %>%   # modern WS started in 1903
-             group_by(round) %>%
-             summarise(first_year = min(yearID)) %>%
-             arrange(first_year)
-
-         # Ditto, but with more information about each series played
-         SeriesPost %>% 
-           filter(yearID >= 1903) %>%
-           group_by(round) %>%
-           arrange(yearID) %>%
-           do(head(., 1)) %>%
-           select(-lgIDwinner, -lgIDloser) %>%
-           arrange(yearID, round)
+   # Ditto, but with more information about each series played
+   SeriesPost %>% 
+     filter(yearID >= 1903) %>%
+     group_by(round) %>%
+     arrange(yearID) %>%
+     do(head(., 1)) %>%
+     select(-lgIDwinner, -lgIDloser) %>%
+     arrange(yearID, round)

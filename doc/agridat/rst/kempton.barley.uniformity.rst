@@ -1,117 +1,113 @@
-.. container::
+========================= ===============
+kempton.barley.uniformity R Documentation
+========================= ===============
 
-   .. container::
+Uniformity trial of barley
+--------------------------
 
-      ========================= ===============
-      kempton.barley.uniformity R Documentation
-      ========================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of barley
-         :name: uniformity-trial-of-barley
+Uniformity trial of barley at Cambridge, England, 1978.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Uniformity trial of barley at Cambridge, England, 1978.
+A data frame with 196 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row
 
-      A data frame with 196 observations on the following 3 variables.
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   grain yield, kg
 
-      ``col``
-         column
+Details
+~~~~~~~
 
-      ``yield``
-         grain yield, kg
+A uniformity trial of spring barley planted in 1978. Conducted by the
+Plant Breeding Institute in Cambridge, England.
 
-      .. rubric:: Details
-         :name: details
+Each plot is 5 feet wide, 14 feet long.
 
-      A uniformity trial of spring barley planted in 1978. Conducted by
-      the Plant Breeding Institute in Cambridge, England.
+Field width: 7 plots \* 14 feet = 98 feet
 
-      Each plot is 5 feet wide, 14 feet long.
+Field length: 28 plots \* 5 feet = 140 feet
 
-      Field width: 7 plots \* 14 feet = 98 feet
+Source
+~~~~~~
 
-      Field length: 28 plots \* 5 feet = 140 feet
+R. A. Kempton and C. W. Howes (1981). The use of neighbouring plot
+values in the analysis of variety trials. Applied Statistics, 30, 59–70.
+https://doi.org/10.2307/2346657
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      R. A. Kempton and C. W. Howes (1981). The use of neighbouring plot
-      values in the analysis of variety trials. Applied Statistics, 30,
-      59–70. https://doi.org/10.2307/2346657
+McCullagh, P. and Clifford, D., (2006). Evidence for conformal
+invariance of crop yields, Proceedings of the Royal Society A:
+Mathematical, Physical and Engineering Science. 462, 2119–2143.
+https://doi.org/10.1098/rspa.2006.1667
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      McCullagh, P. and Clifford, D., (2006). Evidence for conformal
-      invariance of crop yields, Proceedings of the Royal Society A:
-      Mathematical, Physical and Engineering Science. 462, 2119–2143.
-      https://doi.org/10.1098/rspa.2006.1667
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+     library(agridat)
+     data(kempton.barley.uniformity)
+     dat <- kempton.barley.uniformity
 
-         ## Not run: 
+     libs(desplot)
+     desplot(dat, yield~col*row,
+             aspect=140/98, tick=TRUE, # true aspect
+             main="kempton.barley.uniformity")
+     
+     
+     # Kempton estimated auto-regression coefficients b1=0.10, b2=0.91
+     
+     dat <- transform(dat, xf = factor(col), yf=factor(row))
 
-           library(agridat)
-           data(kempton.barley.uniformity)
-           dat <- kempton.barley.uniformity
+     # ----------
 
-           libs(desplot)
-           desplot(dat, yield~col*row,
-                   aspect=140/98, tick=TRUE, # true aspect
-                   main="kempton.barley.uniformity")
-           
-           
-           # Kempton estimated auto-regression coefficients b1=0.10, b2=0.91
-           
-           dat <- transform(dat, xf = factor(col), yf=factor(row))
+     if(require("asreml", quietly=TRUE)){
+       libs(asreml,lucid)
+     
+       dat <- transform(dat, xf = factor(col), yf=factor(row))
+       m1 <- asreml(yield ~ 1, data=dat, resid = ~ar1(xf):ar1(yf))
+     
+       # lucid::vc(m1)
+       ##       effect component std.error z.ratio bound 
+       ##      xf:yf!R    0.1044   0.02197     4.7     P   0
+       ## xf:yf!xf!cor    0.2458   0.07484     3.3     U   0
+       ## xf:yf!yf!cor    0.8186   0.03821    21       U   0
+     
+       # asreml estimates auto-regression correlations of 0.25, 0.82
+       # Kempton estimated auto-regression coefficients b1=0.10, b2=0.91
+     }
+     
+     # ----------
 
-           # ----------
-
-           if(require("asreml", quietly=TRUE)){
-             libs(asreml,lucid)
-           
-             dat <- transform(dat, xf = factor(col), yf=factor(row))
-             m1 <- asreml(yield ~ 1, data=dat, resid = ~ar1(xf):ar1(yf))
-           
-             # lucid::vc(m1)
-             ##       effect component std.error z.ratio bound 
-             ##      xf:yf!R    0.1044   0.02197     4.7     P   0
-             ## xf:yf!xf!cor    0.2458   0.07484     3.3     U   0
-             ## xf:yf!yf!cor    0.8186   0.03821    21       U   0
-           
-             # asreml estimates auto-regression correlations of 0.25, 0.82
-             # Kempton estimated auto-regression coefficients b1=0.10, b2=0.91
-           }
-           
-           # ----------
-
-           if(0){
-             # Kempton defines 4 blocks, randomly assigns variety codes 1-49 in each block, fits
-             # RCB model, computes mean squares for variety and residual.  Repeat 40 times.
-             # Kempton's estimate: variety = 1032, residual = 1013
-             # Our estimate: variety = 825, residual = 1080
-             fitfun <- function(dat){
-               dat <- transform(dat, block=factor(ceiling(row/7)),
-                                gen=factor(c(sample(1:49),sample(1:49),sample(1:49),sample(1:49))))
-               m2 <- lm(yield*100 ~ block + gen, dat)
-               anova(m2)[2:3,'Mean Sq']
-             }
-             set.seed(251)
-             out <- replicate(50, fitfun(dat))
-             rowMeans(out) # 826 1079
-           }
+     if(0){
+       # Kempton defines 4 blocks, randomly assigns variety codes 1-49 in each block, fits
+       # RCB model, computes mean squares for variety and residual.  Repeat 40 times.
+       # Kempton's estimate: variety = 1032, residual = 1013
+       # Our estimate: variety = 825, residual = 1080
+       fitfun <- function(dat){
+         dat <- transform(dat, block=factor(ceiling(row/7)),
+                          gen=factor(c(sample(1:49),sample(1:49),sample(1:49),sample(1:49))))
+         m2 <- lm(yield*100 ~ block + gen, dat)
+         anova(m2)[2:3,'Mean Sq']
+       }
+       set.seed(251)
+       out <- replicate(50, fitfun(dat))
+       rowMeans(out) # 826 1079
+     }
 
 
 
-         ## End(Not run)
+   ## End(Not run)

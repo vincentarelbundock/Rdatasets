@@ -1,50 +1,45 @@
-.. container::
+================= ===============
+murder_2015_final R Documentation
+================= ===============
 
-   .. container::
+A Handful Of Cities Are Driving 2016's Rise In Murder
+-----------------------------------------------------
 
-      ================= ===============
-      murder_2015_final R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: A Handful Of Cities Are Driving 2016's Rise In Murder
-         :name: a-handful-of-cities-are-driving-2016s-rise-in-murder
+The raw data behind the story "A Handful Of Cities Are Driving 2016's
+Rise In Murder"
+https://fivethirtyeight.com/features/a-handful-of-cities-are-driving-2016s-rise-in-murders/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "A Handful Of Cities Are Driving
-      2016's Rise In Murder"
-      https://fivethirtyeight.com/features/a-handful-of-cities-are-driving-2016s-rise-in-murders/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   murder_2015_final
 
-      .. code:: R
+Format
+~~~~~~
 
-         murder_2015_final
+A data frame with 83 rows representing large US cities and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+city
+   Name of city
 
-      A data frame with 83 rows representing large US cities and 5
-      variables:
+state
+   Name of state
 
-      city
-         Name of city
+murders_2014
+   Total murders in 2014
 
-      state
-         Name of state
+murders_2015
+   Total murders in 2015
 
-      murders_2014
-         Total murders in 2014
+change
+   2015 - 2014
 
-      murders_2015
-         Total murders in 2015
+Source
+~~~~~~
 
-      change
-         2015 - 2014
-
-      .. rubric:: Source
-         :name: source
-
-      Unknown
+Unknown

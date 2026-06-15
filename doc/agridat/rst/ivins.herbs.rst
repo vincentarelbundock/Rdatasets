@@ -1,121 +1,114 @@
-.. container::
+=========== ===============
+ivins.herbs R Documentation
+=========== ===============
 
-   .. container::
+Percent ground cover of herbage species and nettles.
+----------------------------------------------------
 
-      =========== ===============
-      ivins.herbs R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Percent ground cover of herbage species and nettles.
-         :name: percent-ground-cover-of-herbage-species-and-nettles.
+Percent ground cover of herbage species and nettles.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Percent ground cover of herbage species and nettles.
+A data frame with 78 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``block``
+   block, 6 levels
 
-      A data frame with 78 observations on the following 4 variables.
+``gen``
+   genotype, 13 levels
 
-      ``block``
-         block, 6 levels
+``nettle``
+   percent ground cover of nettles
 
-      ``gen``
-         genotype, 13 levels
+``herb``
+   percent ground cover of herbage species
 
-      ``nettle``
-         percent ground cover of nettles
+Details
+~~~~~~~
 
-      ``herb``
-         percent ground cover of herbage species
+On the University of Nottingham farm, 13 different strains and species
+of herbage plants were sown on about 4 acres in an RCB design. Each
+grass species was sown together with white clover seed.
 
-      .. rubric:: Details
-         :name: details
+During establishment of the herbage plants, it became apparent that
+*Urtica dioica* (nettle) became established according to the particular
+herbage plant in each plot. In particular, nettle became established in
+plots sown with leguminous species and the two grass species. The
+graminaceous plots had less nettles.
 
-      On the University of Nottingham farm, 13 different strains and
-      species of herbage plants were sown on about 4 acres in an RCB
-      design. Each grass species was sown together with white clover
-      seed.
+The data here are the percentage ground cover of nettle and herbage
+plants in September 1951.
 
-      During establishment of the herbage plants, it became apparent
-      that *Urtica dioica* (nettle) became established according to the
-      particular herbage plant in each plot. In particular, nettle
-      became established in plots sown with leguminous species and the
-      two grass species. The graminaceous plots had less nettles.
+Note, some of the percent ground cover amounts were originally reported
+as 'trace'. These have been arbitrarily set to 0.1 in this data.
 
-      The data here are the percentage ground cover of nettle and
-      herbage plants in September 1951.
+=== =================== =================================
+gen species             strain
+G01 Lolium perenne      Irish perennial ryegrass
+G02 Lolium perenne      S. 23 perennial ryegrass
+G03 Dactylis glomerata  Danish cocksfoot
+G04 Dactylis glomerata  S. 143 cocksfoot
+G05 Phleum pratense     American timothy
+G06 Phleum pratense     S. 48 timothy
+G07 Festuca pratensis   S. 215 meadow fescue
+G08 Poa trivialis       Danish rough stalked meadow grass
+G09 Cynosurus cristatus New Zealand crested dogstail
+G10 Trifolium pratense  Montgomery late red clover
+G11 Medicago lupulina   Commercial black medick
+G12 Trifolium repens    S. 100 white clover
+G13 Plantago lanceolata Commercial ribwort plantain
+=== =================== =================================
 
-      Note, some of the percent ground cover amounts were originally
-      reported as 'trace'. These have been arbitrarily set to 0.1 in
-      this data.
+Source
+~~~~~~
 
-      === =================== =================================
-      gen species             strain
-      G01 Lolium perenne      Irish perennial ryegrass
-      G02 Lolium perenne      S. 23 perennial ryegrass
-      G03 Dactylis glomerata  Danish cocksfoot
-      G04 Dactylis glomerata  S. 143 cocksfoot
-      G05 Phleum pratense     American timothy
-      G06 Phleum pratense     S. 48 timothy
-      G07 Festuca pratensis   S. 215 meadow fescue
-      G08 Poa trivialis       Danish rough stalked meadow grass
-      G09 Cynosurus cristatus New Zealand crested dogstail
-      G10 Trifolium pratense  Montgomery late red clover
-      G11 Medicago lupulina   Commercial black medick
-      G12 Trifolium repens    S. 100 white clover
-      G13 Plantago lanceolata Commercial ribwort plantain
-      === =================== =================================
+Ivins, JD. (1952). Concerning the Ecology of Urtica Dioica L., *Journal
+of Ecology*, 40, 380-382. https://doi.org/10.2307/2256806
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Ivins, JD. (1952). Concerning the Ecology of Urtica Dioica L.,
-      *Journal of Ecology*, 40, 380-382. https://doi.org/10.2307/2256806
+Ivins, JD (1950). Weeds in relation to the establishment of the Ley.
+*Grass and Forage Science*, 5, 237–242.
+https://doi.org/10.1111/j.1365-2494.1950.tb01287.x
 
-      .. rubric:: References
-         :name: references
+O'Gorman, T.W. (2001). A comparison of the F-test, Friedman's test, and
+several aligned rank tests for the analysis of randomized complete
+blocks. *Journal of agricultural, biological, and environmental
+statistics*, 6, 367–378. https://doi.org/10.1198/108571101317096578
 
-      Ivins, JD (1950). Weeds in relation to the establishment of the
-      Ley. *Grass and Forage Science*, 5, 237–242.
-      https://doi.org/10.1111/j.1365-2494.1950.tb01287.x
+Examples
+~~~~~~~~
 
-      O'Gorman, T.W. (2001). A comparison of the F-test, Friedman's
-      test, and several aligned rank tests for the analysis of
-      randomized complete blocks. *Journal of agricultural, biological,
-      and environmental statistics*, 6, 367–378.
-      https://doi.org/10.1198/108571101317096578
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(ivins.herbs)
+   dat <- ivins.herbs
 
-         ## Not run: 
+   # Nettle is primarily established in legumes.
+   libs(lattice)
+   xyplot(herb~nettle|gen, dat, main="ivins.herbs - herb yield vs weeds",
+          xlab="Percent groundcover in nettles",
+          ylab="Percent groundcover in herbs")
 
-         library(agridat)
-         data(ivins.herbs)
-         dat <- ivins.herbs
+   # O'Brien used first 7 species to test gen differences
+   dat7 <- droplevels(subset(dat, is.element(gen, c('G01','G02','G03','G04','G05','G06','G07'))))
+   m1 <- lm(herb ~ gen + block, data=dat7)
+   anova(m1) # gen p-value is .041
+   ## Response: herb
+   ##           Df  Sum Sq Mean Sq F value  Pr(>F)
+   ## gen        6 1083.24 180.540  2.5518 0.04072 *
+   ## block      5  590.69 118.138  1.6698 0.17236
+   ## Residuals 30 2122.48  70.749
 
-         # Nettle is primarily established in legumes.
-         libs(lattice)
-         xyplot(herb~nettle|gen, dat, main="ivins.herbs - herb yield vs weeds",
-                xlab="Percent groundcover in nettles",
-                ylab="Percent groundcover in herbs")
-
-         # O'Brien used first 7 species to test gen differences
-         dat7 <- droplevels(subset(dat, is.element(gen, c('G01','G02','G03','G04','G05','G06','G07'))))
-         m1 <- lm(herb ~ gen + block, data=dat7)
-         anova(m1) # gen p-value is .041
-         ## Response: herb
-         ##           Df  Sum Sq Mean Sq F value  Pr(>F)
-         ## gen        6 1083.24 180.540  2.5518 0.04072 *
-         ## block      5  590.69 118.138  1.6698 0.17236
-         ## Residuals 30 2122.48  70.749
-
-         friedman.test(herb ~ gen|block, dat7) # gen p-value .056
+   friedman.test(herb ~ gen|block, dat7) # gen p-value .056
 
 
-         ## End(Not run)
+   ## End(Not run)

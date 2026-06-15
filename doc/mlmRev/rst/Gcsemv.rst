@@ -1,63 +1,58 @@
-.. container::
+====== ===============
+Gcsemv R Documentation
+====== ===============
 
-   .. container::
+GCSE exam score
+---------------
 
-      ====== ===============
-      Gcsemv R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: GCSE exam score
-         :name: gcse-exam-score
+The GCSE exam scores on a science subject. Two components of the exam
+were chosen as outcome variables: written paper and course work. There
+are 1,905 students from 73 schools in England.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The GCSE exam scores on a science subject. Two components of the
-      exam were chosen as outcome variables: written paper and course
-      work. There are 1,905 students from 73 schools in England.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Gcsemv)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Gcsemv)
+A data frame with 1905 observations on the following 5 variables.
 
-      .. rubric:: Format
-         :name: format
+school
+   School ID - a factor
 
-      A data frame with 1905 observations on the following 5 variables.
+student
+   Student ID - a factor
 
-      school
-         School ID - a factor
+gender
+   Gender of student
 
-      student
-         Student ID - a factor
+written
+   Total score on written paper
 
-      gender
-         Gender of student
+course
+   Total score on coursework paper
 
-      written
-         Total score on written paper
+Source
+~~~~~~
 
-      course
-         Total score on coursework paper
+https://www.bristol.ac.uk/cmm/learning/mmsoftware/data-rev.html
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      http://www.bristol.ac.uk/cmm/learning/mmsoftware/data-rev.html
+Multivariate response models. (2000). In Rasbash, J., et al, *A user's
+guide to MLwiN*, Institute of Education, University of London.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Multivariate response models. (2000). In Rasbash, J., et al, *A
-      user's guide to MLwiN*, Institute of Education, University of
-      London.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         str(Gcsemv)
+   str(Gcsemv)

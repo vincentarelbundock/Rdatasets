@@ -1,58 +1,54 @@
-.. container::
+========= ===============
+munsingen R Documentation
+========= ===============
 
-   .. container::
+Münsingen Cemetery
+------------------
 
-      ========= ===============
-      munsingen R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Münsingen Cemetery
-         :name: münsingen-cemetery
+A dataset of data set of artifact presence/absence for the Celtic
+Münsingen-Rain cemetery (Switzerland).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset of data set of artifact presence/absence for the Celtic
-      Münsingen-Rain cemetery (Switzerland).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   munsingen
 
-      .. code:: R
+Format
+~~~~~~
 
-         munsingen
+A ``data.frame`` with 59 observations (graves) and 70 variables
+(artefact types).
 
-      .. rubric:: Format
-         :name: format
+References
+~~~~~~~~~~
 
-      A ``data.frame`` with 59 observations (graves) and 70 variables
-      (artefact types).
+Hodson, F. R. (1968). *The La Tene Cemetery at Münsingen-Rain*.
+Stämpfli, Bern.
 
-      .. rubric:: References
-         :name: references
+Kendall, D. G. (1971). Seriation from abundance matrices. In Hodson, F.
+R., Kendall, D. G. and Tautu, P. (eds), *Mathematics in the
+Archaeological and Historical Sciences*. Edinburgh University Press,
+Edinburgh, 215-232.
 
-      Hodson, F. R. (1968). *The La Tene Cemetery at Münsingen-Rain*.
-      Stämpfli, Bern.
+See Also
+~~~~~~~~
 
-      Kendall, D. G. (1971). Seriation from abundance matrices. In
-      Hodson, F. R., Kendall, D. G. and Tautu, P. (eds), *Mathematics in
-      the Archaeological and Historical Sciences*. Edinburgh University
-      Press, Edinburgh, 215-232.
+Other artefact data: ``shipwrecks``
 
-      .. rubric:: See Also
-         :name: see-also
+Examples
+~~~~~~~~
 
-      Other artefact data: ``shipwrecks``
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         heatmap(
-           x = as.matrix(munsingen),
-           Rowv = NA,
-           Colv = NA,
-           scale = "none",
-           col = c("white", "black")
-         )
+   heatmap(
+     x = as.matrix(munsingen),
+     Rowv = NA,
+     Colv = NA,
+     scale = "none",
+     col = c("white", "black")
+   )

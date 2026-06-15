@@ -1,54 +1,49 @@
-.. container::
+============== ===============
+QuizPulse10_df R Documentation
+============== ===============
 
-   .. container::
+Quiz vs Lecture Pulse Rates
+---------------------------
 
-      ============== ===============
-      QuizPulse10_df R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Quiz vs Lecture Pulse Rates
-         :name: quiz-vs-lecture-pulse-rates
+This dataset, QuizPulse10_df, is a data frame containing paired data on
+pulse rates for 10 students during a quiz and a lecture. The dataset
+allows for the exploration of how pulse rates differ during these two
+activities.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, QuizPulse10_df, is a data frame containing paired
-      data on pulse rates for 10 students during a quiz and a lecture.
-      The dataset allows for the exploration of how pulse rates differ
-      during these two activities.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(QuizPulse10_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(QuizPulse10_df)
+A data frame with 10 observations and 3 variables:
 
-      .. rubric:: Format
-         :name: format
+Student
+   Student ID (integer).
 
-      A data frame with 10 observations and 3 variables:
+Quiz
+   Pulse rate during the quiz (integer).
 
-      Student
-         Student ID (integer).
+Lecture
+   Pulse rate during the lecture (integer).
 
-      Quiz
-         Pulse rate during the quiz (integer).
+Details
+~~~~~~~
 
-      Lecture
-         Pulse rate during the lecture (integer).
+The dataset name has been kept as 'QuizPulse10_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the educationR package and assists
+users in identifying its specific characteristics. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'QuizPulse10_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      educationR package and assists users in identifying its specific
-      characteristics. The original content has not been modified in any
-      way.
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset was taken from the Lock5Data package.
+The dataset was taken from the Lock5Data package.

@@ -1,55 +1,49 @@
-.. container::
+========================= ===============
+ability_intelligence_list R Documentation
+========================= ===============
 
-   .. container::
+Ability and Intelligence Tests
+------------------------------
 
-      ========================= ===============
-      ability_intelligence_list R Documentation
-      ========================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Ability and Intelligence Tests
-         :name: ability-and-intelligence-tests
+This dataset, ability_intelligence_list, is a list containing
+psychometric data from six cognitive tests administered to 112
+individuals. The list includes a covariance matrix, variable means, and
+observation count for tests measuring various intellectual abilities.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, ability_intelligence_list, is a list containing
-      psychometric data from six cognitive tests administered to 112
-      individuals. The list includes a covariance matrix, variable
-      means, and observation count for tests measuring various
-      intellectual abilities.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(ability_intelligence_list)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(ability_intelligence_list)
+A list with 3 components:
 
-      .. rubric:: Format
-         :name: format
+cov
+   Numeric matrix [6×6]: Test score covariance matrix
 
-      A list with 3 components:
+center
+   Numeric vector [6]: Variable means
 
-      cov
-         Numeric matrix [6×6]: Test score covariance matrix
+n.obs
+   Numeric: Number of observations (112)
 
-      center
-         Numeric vector [6]: Variable means
+Details
+~~~~~~~
 
-      n.obs
-         Numeric: Number of observations (112)
+The dataset name has been kept as 'ability_intelligence_list' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the NeuroDataSets package. The
+suffix 'list' indicates that the dataset is a list object. The original
+content has not been modified.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'ability_intelligence_list' to
-      avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      NeuroDataSets package. The suffix 'list' indicates that the
-      dataset is a list object. The original content has not been
-      modified.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the educationR package version 0.10
+Data taken from the educationR package version 0.10

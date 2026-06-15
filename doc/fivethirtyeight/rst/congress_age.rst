@@ -1,75 +1,70 @@
-.. container::
+============ ===============
+congress_age R Documentation
+============ ===============
 
-   .. container::
+Both Republicans And Democrats Have an Age Problem
+--------------------------------------------------
 
-      ============ ===============
-      congress_age R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Both Republicans And Democrats Have an Age Problem
-         :name: both-republicans-and-democrats-have-an-age-problem
+The raw data behind the story "Both Republicans And Democrats Have an
+Age Problem"
+https://fivethirtyeight.com/features/both-republicans-and-democrats-have-an-age-problem/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Both Republicans And Democrats Have
-      an Age Problem"
-      https://fivethirtyeight.com/features/both-republicans-and-democrats-have-an-age-problem/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   congress_age
 
-      .. code:: R
+Format
+~~~~~~
 
-         congress_age
+A data frame with 18,635 rows representing members of Congress (House
+and Senate) and 13 variables:
 
-      .. rubric:: Format
-         :name: format
+congress
+   Congress number.
 
-      A data frame with 18,635 rows representing members of Congress
-      (House and Senate) and 13 variables:
+chamber
+   Chamber of congress: House of Representatives or Senate.
 
-      congress
-         Congress number.
+bioguide
+   bioguide
 
-      chamber
-         Chamber of congress: House of Representatives or Senate.
+firstname
+   First name
 
-      bioguide
-         bioguide
+middlename
+   Middle name
 
-      firstname
-         First name
+lastname
+   Last name
 
-      middlename
-         Middle name
+suffix
+   Suffix
 
-      lastname
-         Last name
+birthday
+   Birthday
 
-      suffix
-         Suffix
+state
+   State abbreviation
 
-      birthday
-         Birthday
+party
+   Party abbreviation
 
-      state
-         State abbreviation
+incumbent
+   Boolean variable of whether member was an incumbent.
 
-      party
-         Party abbreviation
+termstart
+   Start date of session.
 
-      incumbent
-         Boolean variable of whether member was an incumbent.
+age
+   Age at start of session.
 
-      termstart
-         Start date of session.
+Source
+~~~~~~
 
-      age
-         Age at start of session.
-
-      .. rubric:: Source
-         :name: source
-
-      See
-      https://github.com/fivethirtyeight/data/tree/master/congress-age
+See https://github.com/fivethirtyeight/data/tree/master/congress-age

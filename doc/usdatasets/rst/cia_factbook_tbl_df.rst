@@ -1,73 +1,69 @@
-.. container::
+=================== ===============
+cia_factbook_tbl_df R Documentation
+=================== ===============
 
-   .. container::
+CIA Factbook Details on Countries
+---------------------------------
 
-      =================== ===============
-      cia_factbook_tbl_df R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: CIA Factbook Details on Countries
-         :name: cia-factbook-details-on-countries
+The dataset name has been changed to 'cia_factbook_tbl_df' to avoid
+confusion with other packages in the R ecosystem from which datasets
+have been sourced. This naming convention helps distinguish this dataset
+as part of the 'usdatasets' package and assists users in identifying its
+specific characteristics. The suffix 'tbl_df' identifies the dataset as
+a tibble. The original content of the dataset has not been modified in
+any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'cia_factbook_tbl_df' to
-      avoid confusion with other packages in the R ecosystem from which
-      datasets have been sourced. This naming convention helps
-      distinguish this dataset as part of the 'usdatasets' package and
-      assists users in identifying its specific characteristics. The
-      suffix 'tbl_df' identifies the dataset as a tibble. The original
-      content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(cia_factbook_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(cia_factbook_tbl_df)
+A tibble with 259 observations and 11 variables:
 
-      .. rubric:: Format
-         :name: format
+country
+   Name of the country (factor with 259 levels).
 
-      A tibble with 259 observations and 11 variables:
+area
+   Total area of the country (in square kilometers).
 
-      country
-         Name of the country (factor with 259 levels).
+birth_rate
+   Birth rate (number of live births per 1,000 people).
 
-      area
-         Total area of the country (in square kilometers).
+death_rate
+   Death rate (number of deaths per 1,000 people).
 
-      birth_rate
-         Birth rate (number of live births per 1,000 people).
+infant_mortality_rate
+   Infant mortality rate (number of deaths of infants under one year old
+   per 1,000 live births).
 
-      death_rate
-         Death rate (number of deaths per 1,000 people).
+internet_users
+   Number of internet users (in millions).
 
-      infant_mortality_rate
-         Infant mortality rate (number of deaths of infants under one
-         year old per 1,000 live births).
+life_exp_at_birth
+   Life expectancy at birth (in years).
 
-      internet_users
-         Number of internet users (in millions).
+maternal_mortality_rate
+   Maternal mortality rate (number of maternal deaths per 100,000 live
+   births).
 
-      life_exp_at_birth
-         Life expectancy at birth (in years).
+net_migration_rate
+   Net migration rate (number of migrants per 1,000 people).
 
-      maternal_mortality_rate
-         Maternal mortality rate (number of maternal deaths per 100,000
-         live births).
+population
+   Total population of the country.
 
-      net_migration_rate
-         Net migration rate (number of migrants per 1,000 people).
+population_growth_rate
+   Population growth rate (percentage).
 
-      population
-         Total population of the country.
+Source
+~~~~~~
 
-      population_growth_rate
-         Population growth rate (percentage).
-
-      .. rubric:: Source
-         :name: source
-
-      CIA World Factbook
+CIA World Factbook

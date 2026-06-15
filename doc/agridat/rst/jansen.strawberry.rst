@@ -1,98 +1,93 @@
-.. container::
+================= ===============
+jansen.strawberry R Documentation
+================= ===============
 
-   .. container::
+Ordered disease ratings of strawberry crosses.
+----------------------------------------------
 
-      ================= ===============
-      jansen.strawberry R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Ordered disease ratings of strawberry crosses.
-         :name: ordered-disease-ratings-of-strawberry-crosses.
+Ordered disease ratings of strawberry crosses.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Ordered disease ratings of strawberry crosses.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("jansen.strawberry")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("jansen.strawberry")
+A data frame with 144 observations on the following 5 variables.
 
-      .. rubric:: Format
-         :name: format
+``male``
+   male parent
 
-      A data frame with 144 observations on the following 5 variables.
+``female``
+   female parent
 
-      ``male``
-         male parent
+``block``
+   block
 
-      ``female``
-         female parent
+``category``
+   disease damage, ``C1`` < ``C2`` < ``C3``
 
-      ``block``
-         block
+``count``
+   number of plants in each category
 
-      ``category``
-         disease damage, ``C1`` < ``C2`` < ``C3``
+Details
+~~~~~~~
 
-      ``count``
-         number of plants in each category
+In strawberries, red core disease is caused by a fungus, *Phytophtora
+fragariae*. This experiment evaluated different populations for damage
+caused by red core disease.
 
-      .. rubric:: Details
-         :name: details
+There were 3 male strawberry plants and 4 DIFFERENT female strawberry
+plants that were crossed to create 12 populations. Note: Jansen labeled
+the male parents 1,2,3 and the female parents 1,2,3,4. To reduce
+confusion, this data labels the female parents 5,6,7,8.
 
-      In strawberries, red core disease is caused by a fungus,
-      *Phytophtora fragariae*. This experiment evaluated different
-      populations for damage caused by red core disease.
+The experiment had four blocks with 12 plots each (one for each
+population). Plots usually had 10 plants, but some plots only had 9
+plants. Each plant was assessed for damage from fungus and rated as
+belonging to category C1, C2, or C3 (increasing damage).
 
-      There were 3 male strawberry plants and 4 DIFFERENT female
-      strawberry plants that were crossed to create 12 populations.
-      Note: Jansen labeled the male parents 1,2,3 and the female parents
-      1,2,3,4. To reduce confusion, this data labels the female parents
-      5,6,7,8.
+Used with permission of Hans Jansen.
 
-      The experiment had four blocks with 12 plots each (one for each
-      population). Plots usually had 10 plants, but some plots only had
-      9 plants. Each plant was assessed for damage from fungus and rated
-      as belonging to category C1, C2, or C3 (increasing damage).
+Source
+~~~~~~
 
-      Used with permission of Hans Jansen.
+J. Jansen, 1990. On the statistical analysis of ordinal data when
+extravariation is present. Applied Statistics, 39, 75-84, Table 1.
+https://doi.org/10.2307/2347813
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      J. Jansen, 1990. On the statistical analysis of ordinal data when
-      extravariation is present. Applied Statistics, 39, 75-84, Table 1.
-      https://doi.org/10.2307/2347813
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
 
-         ## Not run: 
+   data(jansen.strawberry)
+   dat <- jansen.strawberry
+   dat <- transform(dat, category=ordered(category, levels=c('C1','C2','C3')))
 
-         library(agridat)
+   dtab <- xtabs(count ~ male + female + category, data=dat)
+   ftable(dtab)
 
-         data(jansen.strawberry)
-         dat <- jansen.strawberry
-         dat <- transform(dat, category=ordered(category, levels=c('C1','C2','C3')))
+   mosaicplot(dtab,
+              color=c("lemonchiffon1","lightsalmon1","indianred"),
+              main="jansen.strawberry disease ratings",
+              xlab="Male parent", ylab="Female parent")
 
-         dtab <- xtabs(count ~ male + female + category, data=dat)
-         ftable(dtab)
-
-         mosaicplot(dtab,
-                    color=c("lemonchiffon1","lightsalmon1","indianred"),
-                    main="jansen.strawberry disease ratings",
-                    xlab="Male parent", ylab="Female parent")
-
-         libs(MASS,vcd)
-         # Friendly suggests a minimal model is [MF][C]
-         # m1 <- loglm( ~ 1*2 + 3, dtab) # Fails, only with devtools
-         # mosaic(m1)
+   libs(MASS,vcd)
+   # Friendly suggests a minimal model is [MF][C]
+   # m1 <- loglm( ~ 1*2 + 3, dtab) # Fails, only with devtools
+   # mosaic(m1)
 
 
-         ## End(Not run)
+   ## End(Not run)

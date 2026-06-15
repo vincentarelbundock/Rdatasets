@@ -1,47 +1,42 @@
-.. container::
+================ ===============
+country_isocodes R Documentation
+================ ===============
 
-   .. container::
+ISO 3166 Country Codes (Two-Character, Three-Character, Numeric)
+----------------------------------------------------------------
 
-      ================ ===============
-      country_isocodes R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: ISO 3166 Country Codes (Two-Character,
-         Three-Character, Numeric)
-         :name: iso-3166-country-codes-two-character-three-character-numeric
+A data set of country ISO codes, for my ease and for the ease of my
+students.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A data set of country ISO codes, for my ease and for the ease of
-      my students.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   country_isocodes
 
-      .. code:: R
+Format
+~~~~~~
 
-         country_isocodes
+A data frame with 249 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``iso2c``
+   a two-character ISO code
 
-      A data frame with 249 observations on the following 4 variables.
+``iso3c``
+   a three-character ISO code
 
-      ``iso2c``
-         a two-character ISO code
+``iso3n``
+   a three-digit numeric ISO code
 
-      ``iso3c``
-         a three-character ISO code
+``name``
+   an English country name
 
-      ``iso3n``
-         a three-digit numeric ISO code
+Details
+~~~~~~~
 
-      ``name``
-         an English country name
-
-      .. rubric:: Details
-         :name: details
-
-      This is a simple, abbreviated port and rename of the
-      ``ISO3_166_1`` data in the ISOcodes package.
+This is a simple, abbreviated port and rename of the ``ISO3_166_1`` data
+in the ISOcodes package.

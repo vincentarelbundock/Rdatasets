@@ -1,58 +1,54 @@
-.. container::
+======================= ===============
+voter_count_spec_tbl_df R Documentation
+======================= ===============
 
-   .. container::
+US Voter Turnout Data.
+----------------------
 
-      ======================= ===============
-      voter_count_spec_tbl_df R Documentation
-      ======================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: US Voter Turnout Data.
-         :name: us-voter-turnout-data.
+The dataset name has been changed to 'voter_count_spec_tbl_df' to avoid
+confusion with other packages in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a special tibble. The original content of the dataset
+has not been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'voter_count_spec_tbl_df' to
-      avoid confusion with other packages in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a special tibble. The
-      original content of the dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(voter_count_spec_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(voter_count_spec_tbl_df)
+A special tibble containing voting statistics across different years and
+regions:
 
-      .. rubric:: Format
-         :name: format
+year
+   Year of the election.
 
-      A special tibble containing voting statistics across different
-      years and regions:
+region
+   Region of the voters.
 
-      year
-         Year of the election.
+voting_eligible_population
+   Total population eligible to vote.
 
-      region
-         Region of the voters.
+total_ballots_counted
+   Total number of ballots counted.
 
-      voting_eligible_population
-         Total population eligible to vote.
+highest_office
+   Total votes for the highest office.
 
-      total_ballots_counted
-         Total number of ballots counted.
+percent_total_ballots_counted
+   Percentage of total ballots counted.
 
-      highest_office
-         Total votes for the highest office.
+percent_highest_office
+   Percentage of votes for the highest office.
 
-      percent_total_ballots_counted
-         Percentage of total ballots counted.
+Source
+~~~~~~
 
-      percent_highest_office
-         Percentage of votes for the highest office.
-
-      .. rubric:: Source
-         :name: source
-
-      Election data from various sources.
+Election data from various sources.

@@ -1,45 +1,40 @@
-.. container::
+================ ===============
+AirPassengers_ts R Documentation
+================ ===============
 
-   .. container::
+Monthly Airline Passenger Numbers from 1949 to 1960.
+----------------------------------------------------
 
-      ================ ===============
-      AirPassengers_ts R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Monthly Airline Passenger Numbers from 1949 to 1960.
-         :name: monthly-airline-passenger-numbers-from-1949-to-1960.
+The dataset name has been changed to 'AirPassengers_ts' to avoid
+confusion with other packages in the R ecosystem from which datasets
+have been sourced. This naming convention helps distinguish this dataset
+as part of the 'timeseriesdatasets' package and assists users in
+identifying its specific characteristics. The suffix 'ts' identifies the
+dataset as a time series, helping to differentiate it from other
+datasets within the package. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'AirPassengers_ts' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. This naming convention helps
-      distinguish this dataset as part of the 'timeseriesdatasets'
-      package and assists users in identifying its specific
-      characteristics. The suffix 'ts' identifies the dataset as a time
-      series, helping to differentiate it from other datasets within the
-      package. The original content of the dataset has not been modified
-      in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(AirPassengers_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(AirPassengers_ts)
+A time series object with 144 observations:
 
-      .. rubric:: Format
-         :name: format
+AirPassengers
+   A numeric vector containing the monthly airline passenger numbers
+   from 1949 to 1960.
 
-      A time series object with 144 observations:
+Source
+~~~~~~
 
-      AirPassengers
-         A numeric vector containing the monthly airline passenger
-         numbers from 1949 to 1960.
-
-      .. rubric:: Source
-         :name: source
-
-      Original data provided by the International Air Transport
-      Association (IATA).
+Original data provided by the International Air Transport Association
+(IATA).

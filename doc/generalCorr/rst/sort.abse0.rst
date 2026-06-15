@@ -1,22 +1,18 @@
-.. container::
+========== ===============
+sort.abse0 R Documentation
+========== ===============
 
-   .. container::
+internal sort.abse0
+-------------------
 
-      ========== ===============
-      sort.abse0 R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: internal sort.abse0
-         :name: internal-sort.abse0
+intended for internal use only
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      intended for internal use only
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
-
-      .. code:: R
-
-         sort.abse0
+   sort.abse0

@@ -1,51 +1,47 @@
-.. container::
+========== ===============
+usmelec_ts R Documentation
+========== ===============
 
-   .. container::
+Monthly Total Net Electricity Generation in the USA
+---------------------------------------------------
 
-      ========== ===============
-      usmelec_ts R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Monthly Total Net Electricity Generation in the USA
-         :name: monthly-total-net-electricity-generation-in-the-usa
+The dataset name has been changed to 'usmelec_ts' to avoid confusion
+with other datasets in the R ecosystem from which data have been
+sourced. The suffix 'ts' indicates that this dataset is a time series
+object. This naming convention helps distinguish this dataset as part of
+the 'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'usmelec_ts' to avoid
-      confusion with other datasets in the R ecosystem from which data
-      have been sourced. The suffix 'ts' indicates that this dataset is
-      a time series object. This naming convention helps distinguish
-      this dataset as part of the 'timeseriesdatasets' package and
-      assists users in identifying its specific characteristics. The
-      original content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(usmelec_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(usmelec_ts)
+A 'ts' object with 486 observations:
 
-      .. rubric:: Format
-         :name: format
+time
+   Monthly time series from January 1973 to June 2013.
 
-      A 'ts' object with 486 observations:
+value
+   Total net electricity generation in the USA (in GWh).
 
-      time
-         Monthly time series from January 1973 to June 2013.
+Details
+~~~~~~~
 
-      value
-         Total net electricity generation in the USA (in GWh).
+This dataset contains monthly total net electricity generation data for
+the USA from January 1973 to June 2013. The values are measured in
+gigawatt-hours (GWh).
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains monthly total net electricity generation
-      data for the USA from January 1973 to June 2013. The values are
-      measured in gigawatt-hours (GWh).
-
-      .. rubric:: Source
-         :name: source
-
-      U.S. Energy Information Administration (EIA).
+U.S. Energy Information Administration (EIA).

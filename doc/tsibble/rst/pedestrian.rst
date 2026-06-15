@@ -1,54 +1,50 @@
-.. container::
+========== ===============
+pedestrian R Documentation
+========== ===============
 
-   .. container::
+Pedestrian counts in the city of Melbourne
+------------------------------------------
 
-      ========== ===============
-      pedestrian R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Pedestrian counts in the city of Melbourne
-         :name: pedestrian-counts-in-the-city-of-melbourne
+A dataset containing the hourly pedestrian counts from 2015-01-01 to
+2016-12-31 at 4 sensors in the city of Melbourne.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset containing the hourly pedestrian counts from 2015-01-01
-      to 2016-12-31 at 4 sensors in the city of Melbourne.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   pedestrian
 
-      .. code:: R
+Format
+~~~~~~
 
-         pedestrian
+A tsibble with 66,071 rows and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+- **Sensor**: Sensor names (key)
 
-      A tsibble with 66,071 rows and 5 variables:
+- **Date_Time**: Date time when the pedestrian counts are recorded
+  (index)
 
-      -  **Sensor**: Sensor names (key)
+- **Date**: Date when the pedestrian counts are recorded
 
-      -  **Date_Time**: Date time when the pedestrian counts are
-         recorded (index)
+- **Time**: Hour associated with Date_Time
 
-      -  **Date**: Date when the pedestrian counts are recorded
+- **Counts**: Hourly pedestrian counts
 
-      -  **Time**: Hour associated with Date_Time
+Examples
+~~~~~~~~
 
-      -  **Counts**: Hourly pedestrian counts
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         library(dplyr)
-         data(pedestrian)
-         # make implicit missingness to be explicit ----
-         pedestrian %>% fill_gaps()
-         # compute daily maximum counts across sensors ----
-         pedestrian %>%
-           group_by_key() %>%
-           index_by(Date) %>% # group by Date and use it as new index
-           summarise(MaxC = max(Count))
+   library(dplyr)
+   data(pedestrian)
+   # make implicit missingness to be explicit ----
+   pedestrian %>% fill_gaps()
+   # compute daily maximum counts across sensors ----
+   pedestrian %>%
+     group_by_key() %>%
+     index_by(Date) %>% # group by Date and use it as new index
+     summarise(MaxC = max(Count))

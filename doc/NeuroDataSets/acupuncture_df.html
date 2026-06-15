@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><title>R: Acupuncture Therapy for Chronic Headache</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>acupuncture_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Acupuncture Therapy for Chronic Headache</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, acupuncture_df, is a data frame from a randomized controlled trial (RCT) evaluating the
+effectiveness of acupuncture therapy for chronic headaches. The primary outcome was the headache severity
+score, measured using a 6-item Likert-type scale at the one-year follow-up. The dataset includes group
+allocation, baseline headache score, one-year follow-up score, and the corresponding change score. Some
+observations may contain missing values due to omitted cases recorded in the dataset attributes.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(acupuncture_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 301 observations and 4 variables:
+</p>
+
+<dl>
+<dt>group</dt><dd><p>Group assignment (integer)</p>
+</dd>
+<dt>pk1</dt><dd><p>Baseline headache severity score (numeric)</p>
+</dd>
+<dt>pk5</dt><dd><p>Headache severity score at one-year follow-up (numeric)</p>
+</dd>
+<dt>change</dt><dd><p>Change in headache severity score (numeric)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as acupuncture_df to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+NeuroDataSets package and assists users in identifying its specific characteristics.
+The suffix df indicates that the dataset is a data frame. The original content has not been modified
+in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the R4HCR package version 0.1
+</p>
+
+</main>
+
+</div>
+</body></html>

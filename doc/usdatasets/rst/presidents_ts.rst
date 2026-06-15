@@ -1,55 +1,51 @@
-.. container::
+============= ===============
+presidents_ts R Documentation
+============= ===============
 
-   .. container::
+Quarterly Approval Ratings of US Presidents
+-------------------------------------------
 
-      ============= ===============
-      presidents_ts R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Quarterly Approval Ratings of US Presidents
-         :name: quarterly-approval-ratings-of-us-presidents
+The dataset name has been changed to 'presidents_ts' to avoid confusion
+with other packages in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a time series object. The original content of the
+dataset has not been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'presidents_ts' to avoid
-      confusion with other packages in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a time series object.
-      The original content of the dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(presidents_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(presidents_ts)
+A time series object with 120 observations, covering quarterly data from
+1945 to 1975. Each observation represents the number of presidents'
+approval ratings during a given quarter. The data is structured as
+follows:
 
-      .. rubric:: Format
-         :name: format
+Qtr1
+   Numeric values representing the approval ratings for the first
+   quarter.
 
-      A time series object with 120 observations, covering quarterly
-      data from 1945 to 1975. Each observation represents the number of
-      presidents' approval ratings during a given quarter. The data is
-      structured as follows:
+Qtr2
+   Numeric values representing the approval ratings for the second
+   quarter.
 
-      Qtr1
-         Numeric values representing the approval ratings for the first
-         quarter.
+Qtr3
+   Numeric values representing the approval ratings for the third
+   quarter.
 
-      Qtr2
-         Numeric values representing the approval ratings for the second
-         quarter.
+Qtr4
+   Numeric values representing the approval ratings for the fourth
+   quarter.
 
-      Qtr3
-         Numeric values representing the approval ratings for the third
-         quarter.
+Source
+~~~~~~
 
-      Qtr4
-         Numeric values representing the approval ratings for the fourth
-         quarter.
-
-      .. rubric:: Source
-         :name: source
-
-      Data on presidential approval ratings from 1945 to 1975.
+Data on presidential approval ratings from 1945 to 1975.

@@ -1,370 +1,363 @@
-.. container::
+========= ===============
+schooling R Documentation
+========= ===============
 
-   .. container::
+Returns to schooling
+--------------------
 
-      ========= ===============
-      schooling R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Returns to schooling
-         :name: returns-to-schooling
+Data from the National Longitudinal Survey of Young Men. Cohort includes
+3,010 males aged 24 to 34 years old in 1976, who were ages 14-24 when
+first interviewed in 1966. Cameron and Trivedi (2005)
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data from the National Longitudinal Survey of Young Men. Cohort
-      includes 3,010 males aged 24 to 34 years old in 1976, who were
-      ages 14-24 when first interviewed in 1966. Cameron and Trivedi
-      (2005)
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   schooling
 
-      .. code:: R
+Format
+~~~~~~
 
-         schooling
+A data frame with 5226 observations and 101 variables:
 
-      .. rubric:: Format
-         :name: format
+id
+   identification code
 
-      A data frame with 5226 observations and 101 variables:
+black
+   = 1 if black race
 
-      id
-         identification code
+imigrnt
+   = 1 if born in the US
 
-      black
-         = 1 if black race
+hhead
+   person lived with at age 14 (in 1966)
 
-      imigrnt
-         = 1 if born in the US
+mag_14
+   = 1 if magazines available at age 14
 
-      hhead
-         person lived with at age 14 (in 1966)
+news_14
+   = 1 if newspapers available at age 14
 
-      mag_14
-         = 1 if magazines available at age 14
+lib_14
+   = 1 if library card available at age 14
 
-      news_14
-         = 1 if newspapers available at age 14
+num_sib
+   total number of siblings
 
-      lib_14
-         = 1 if library card available at age 14
+fgrade
+   highest grade completed by father (1966)
 
-      num_sib
-         total number of siblings
+mgrade
+   highest grade completed by mother (1966)
 
-      fgrade
-         highest grade completed by father (1966)
+iq
+   IQ score in 1968
 
-      mgrade
-         highest grade completed by mother (1966)
+bdate
+   date of birth
 
-      iq
-         IQ score in 1968
+gfill76
+   highest grade completed 1976, some values filled from prevs reports
 
-      bdate
-         date of birth
+wt76
+   sampling weights 1976
 
-      gfill76
-         highest grade completed 1976, some values filled from prevs
-         reports
+grade76
+   highest grade completed in 1976
 
-      wt76
-         sampling weights 1976
+grade66
+   highest grade completed in 1966
 
-      grade76
-         highest grade completed in 1976
+age76
+   age in 1976
 
-      grade66
-         highest grade completed in 1966
+age66
+   age in 1966
 
-      age76
-         age in 1976
+smsa76
+   current residence, = 1 if lived in central city in 1976
 
-      age66
-         age in 1966
+smsa66
+   current residence, = 1 if lived in central city in 1966
 
-      smsa76
-         current residence, = 1 if lived in central city in 1976
+region
+   census region in 1966
 
-      smsa66
-         current residence, = 1 if lived in central city in 1966
+col4
+   = 1 if there is a 4-year college nearby
 
-      region
-         census region in 1966
+mcol4
+   = 1 if male 4-year college nearby
 
-      col4
-         = 1 if there is a 4-year college nearby
+col4pub
+   = 1 if public 4-year college nearby
 
-      mcol4
-         = 1 if male 4-year college nearby
+south76
+   = 1 if lived in South in 1976
 
-      col4pub
-         = 1 if public 4-year college nearby
+wage76
+   hourly wage in 1976, ln
 
-      south76
-         = 1 if lived in South in 1976
+exp76
+   work experience in 1976, years calculated as (10 + age66) - grade76 -
+   6
 
-      wage76
-         hourly wage in 1976, ln
+expsq76
+   experience 1976 squared, exp76^2/100
 
-      exp76
-         work experience in 1976, years calculated as (10 + age66) -
-         grade76 - 6
+agesq76
+   age squared (1976)
 
-      expsq76
-         experience 1976 squared, exp76^2/100
+reg1
+   region, = 1 if lived in region NE
 
-      agesq76
-         age squared (1976)
+reg2
+   region, = 1 if lived in region MidAtl
 
-      reg1
-         region, = 1 if lived in region NE
+reg3
+   region, = 1 if lived in region ENC
 
-      reg2
-         region, = 1 if lived in region MidAtl
+reg4
+   region, = 1 if lived in region WNC
 
-      reg3
-         region, = 1 if lived in region ENC
+reg5
+   region, = 1 if lived in region SA
 
-      reg4
-         region, = 1 if lived in region WNC
+reg6
+   region, = 1 if lived in region ESC
 
-      reg5
-         region, = 1 if lived in region SA
+reg7
+   region, = 1 if lived in region WSC
 
-      reg6
-         region, = 1 if lived in region ESC
+reg8
+   region, = 1 if lived in region M
 
-      reg7
-         region, = 1 if lived in region WSC
+reg9
+   region, = 1 if lived in region P
 
-      reg8
-         region, = 1 if lived in region M
+momdad14
+   = 1 if lived with both parents at age 14
 
-      reg9
-         region, = 1 if lived in region P
+sinmom14
+   = 1 if lived with mother only at age 14
 
-      momdad14
-         = 1 if lived with both parents at age 14
+nodaded
+   = 1 if father has no formal education
 
-      sinmom14
-         = 1 if lived with mother only at age 14
+nomomed
+   = 1 if mother has no formal education
 
-      nodaded
-         = 1 if father has no formal education
+daded
+   mean grade level of father
 
-      nomomed
-         = 1 if mother has no formal education
+momed
+   mean grade level of mother
 
-      daded
-         mean grade level of father
+famed
+   father's and mother's education
 
-      momed
-         mean grade level of mother
+famed1
+   = 1 if mgrade> 12 & fgrade> 12
 
-      famed
-         father's and mother's education
+famed2
+   = 1 if mgrade>=12 & fgrade>=12
 
-      famed1
-         = 1 if mgrade> 12 & fgrade> 12
+famed3
+   = 1 if mgrade==12 & fgrade==12
 
-      famed2
-         = 1 if mgrade>=12 & fgrade>=12
+famed4
+   = 1 if mgrade>=12 & fgrade==-1
 
-      famed3
-         = 1 if mgrade==12 & fgrade==12
+famed5
+   = 1 if fgrade>=12
 
-      famed4
-         = 1 if mgrade>=12 & fgrade==-1
+famed6
+   = 1 if mgrade>=12 & fgrade> -1
 
-      famed5
-         = 1 if fgrade>=12
+famed7
+   = 1 if mgrade>=9 & fgrade>=9
 
-      famed6
-         = 1 if mgrade>=12 & fgrade> -1
+famed8
+   = 1 if mgrade> -1 & fgrade> -1
 
-      famed7
-         = 1 if mgrade>=9 & fgrade>=9
+famed9
+   = 1 if famed not in range 1-8
 
-      famed8
-         = 1 if mgrade> -1 & fgrade> -1
+int76
+   = 1 if wt76 not missing
 
-      famed9
-         = 1 if famed not in range 1-8
+age1415
+   = 1 if in age group 14-15
 
-      int76
-         = 1 if wt76 not missing
+age1617
+   = 1 if in age group 16-17
 
-      age1415
-         = 1 if in age group 14-15
+age1819
+   = 1 if in age group 18-19
 
-      age1617
-         = 1 if in age group 16-17
+age2021
+   = 1 if in age group 20-21
 
-      age1819
-         = 1 if in age group 18-19
+age2224
+   = 1 if in age group 22-24
 
-      age2021
-         = 1 if in age group 20-21
+cage1415
+   = 1 if in age group 14-15 and lived near college
 
-      age2224
-         = 1 if in age group 22-24
+cage1617
+   = 1 = 1 if in age group 16-17 and lived near college
 
-      cage1415
-         = 1 if in age group 14-15 and lived near college
+cage1819
+   = 1 if in age group 18-19 and lived near college
 
-      cage1617
-         = 1 = 1 if in age group 16-17 and lived near college
+cage2021
+   = 1 if in age group 20-21 and lived near college
 
-      cage1819
-         = 1 if in age group 18-19 and lived near college
+cage2224
+   = 1 if in age group 22-24 and lived near college
 
-      cage2021
-         = 1 if in age group 20-21 and lived near college
+cage66
+   age in 1966 and lived near college
 
-      cage2224
-         = 1 if in age group 22-24 and lived near college
+a1
+   = 1 if age in 1966 is 14
 
-      cage66
-         age in 1966 and lived near college
+a2
+   = 1 if age in 1966 is 15
 
-      a1
-         = 1 if age in 1966 is 14
+a3
+   = 1 if age in 1966 is 16
 
-      a2
-         = 1 if age in 1966 is 15
+a4
+   = 1 if age in 1966 is 17
 
-      a3
-         = 1 if age in 1966 is 16
+a5
+   = 1 if age in 1966 is 18
 
-      a4
-         = 1 if age in 1966 is 17
+a6
+   = 1 if age in 1966 is 19
 
-      a5
-         = 1 if age in 1966 is 18
+a7
+   = 1 if age in 1966 is 20
 
-      a6
-         = 1 if age in 1966 is 19
+a8
+   = 1 if age in 1966 is 21
 
-      a7
-         = 1 if age in 1966 is 20
+a9
+   = 1 if age in 1966 is 22
 
-      a8
-         = 1 if age in 1966 is 21
+a10
+   = 1 if age in 1966 is 23
 
-      a9
-         = 1 if age in 1966 is 22
+a11
+   = 1 if age in 1966 is 24
 
-      a10
-         = 1 if age in 1966 is 23
+ca1
+   = 1 if did not live near college in 1966
 
-      a11
-         = 1 if age in 1966 is 24
+ca2
+   = 1 if lived near college and age in 1966 = 14
 
-      ca1
-         = 1 if did not live near college in 1966
+ca3
+   = 1 if lived near college and age in 1966 = 15
 
-      ca2
-         = 1 if lived near college and age in 1966 = 14
+ca4
+   = 1 if lived near college and age in 1966 = 16
 
-      ca3
-         = 1 if lived near college and age in 1966 = 15
+ca5
+   = 1 if lived near college and age in 1966 = 17
 
-      ca4
-         = 1 if lived near college and age in 1966 = 16
+ca6
+   = 1 if lived near college and age in 1966 = 18
 
-      ca5
-         = 1 if lived near college and age in 1966 = 17
+ca7
+   = 1 if lived near college and age in 1966 = 19
 
-      ca6
-         = 1 if lived near college and age in 1966 = 18
+ca8
+   = 1 if lived near college and age in 1966 = 20
 
-      ca7
-         = 1 if lived near college and age in 1966 = 19
+ca9
+   = 1 if lived near college and age in 1966 = 21
 
-      ca8
-         = 1 if lived near college and age in 1966 = 20
+ca10
+   = 1 if lived near college and age in 1966 = 22
 
-      ca9
-         = 1 if lived near college and age in 1966 = 21
+ca11
+   = 1 if lived near college and age in 1966 = 23
 
-      ca10
-         = 1 if lived near college and age in 1966 = 22
+ca12
+   = 1 if lived near college and age in 1966 = 24
 
-      ca11
-         = 1 if lived near college and age in 1966 = 23
+g25
+   grade level when 25 years old
 
-      ca12
-         = 1 if lived near college and age in 1966 = 24
+g25i
+   = 1 if =g25 and intrvwed in year used for determining g25
 
-      g25
-         grade level when 25 years old
+intmo66
+   interview month in 1966, used to identify cases incl by Card
 
-      g25i
-         = 1 if =g25 and intrvwed in year used for determining g25
+nlsflt
+   flag to identify if the case was used by Card
 
-      intmo66
-         interview month in 1966, used to identify cases incl by Card
+nsib
+   number of siblings
 
-      nlsflt
-         flag to identify if the case was used by Card
+ns1
+   = 1 if the person has no siblings
 
-      nsib
-         number of siblings
+ns2
+   = 1 if number of siblings is 2
 
-      ns1
-         = 1 if the person has no siblings
+ns3
+   = 1 if number of siblings is 3
 
-      ns2
-         = 1 if number of siblings is 2
+ns4
+   = 1 if number of siblings is 4
 
-      ns3
-         = 1 if number of siblings is 3
+ns5
+   = 1 if number of siblings is 6
 
-      ns4
-         = 1 if number of siblings is 4
+ns6
+   = 1 if number of siblings is 9
 
-      ns5
-         = 1 if number of siblings is 6
+ns7
+   = 1 if number of siblings is 18
 
-      ns6
-         = 1 if number of siblings is 9
+Section in Text
+~~~~~~~~~~~~~~~
 
-      ns7
-         = 1 if number of siblings is 18
+4.9.6 Instrumental Variables Application, pp. 110-2
 
-      .. rubric:: Section in Text
-         :name: section-in-text
+Source
+~~~~~~
 
-      4.9.6 Instrumental Variables Application, pp. 110-2
+http://cameron.econ.ucdavis.edu/mmabook/mmadata.html
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      http://cameron.econ.ucdavis.edu/mmabook/mmadata.html
+Cameron, A. and Trivedi, P. (2005), "Microeconometrics: Methods and
+Applications," Cambridge University Press, New York.
 
-      .. rubric:: References
-         :name: references
+Card, D. (1995), "Using Geographic Variation in College Proximity to
+Estimate the Returns to Schooling", in Aspects of Labor Market Behavior:
+Essays in Honor of John Vanderkamp, eds. L.N. Christofides et al.,
+Toronto: University of Toronto Press, pp.201-221.
 
-      Cameron, A. and Trivedi, P. (2005), "Microeconometrics: Methods
-      and Applications," Cambridge University Press, New York.
+Kling, J.R. (2001) "Interpreting Instrumental Variables Estimates of the
+Return to Schooling," Journal of Business and Economic Statistics, 19,
+358-364.
 
-      Card, D. (1995), "Using Geographic Variation in College Proximity
-      to Estimate the Returns to Schooling", in Aspects of Labor Market
-      Behavior: Essays in Honor of John Vanderkamp, eds. L.N.
-      Christofides et al., Toronto: University of Toronto Press,
-      pp.201-221.
+https://www.nlsinfo.org/content/cohorts/older-and-young-men
 
-      Kling, J.R. (2001) "Interpreting Instrumental Variables Estimates
-      of the Return to Schooling," Journal of Business and Economic
-      Statistics, 19, 358-364.
+Examples
+~~~~~~~~
 
-      https://www.nlsinfo.org/content/cohorts/older-and-young-men
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         summary(schooling)
+   summary(schooling)

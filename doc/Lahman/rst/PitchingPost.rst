@@ -1,181 +1,177 @@
-.. container::
+============ ===============
+PitchingPost R Documentation
+============ ===============
 
-   .. container::
+PitchingPost table
+------------------
 
-      ============ ===============
-      PitchingPost R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: PitchingPost table
-         :name: pitchingpost-table
+Post season pitching statistics
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Post season pitching statistics
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(PitchingPost)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(PitchingPost)
+A data frame with 7474 observations on the following 30 variables.
 
-      .. rubric:: Format
-         :name: format
+``playerID``
+   Player ID code
 
-      A data frame with 6991 observations on the following 30 variables.
+``yearID``
+   Year
 
-      ``playerID``
-         Player ID code
+``round``
+   Level of playoffs
 
-      ``yearID``
-         Year
+``teamID``
+   Team; a factor
 
-      ``round``
-         Level of playoffs
+``lgID``
+   League; a factor with levels ``AA`` ``AL`` ``NL``
 
-      ``teamID``
-         Team; a factor
+``W``
+   Wins
 
-      ``lgID``
-         League; a factor with levels ``AA`` ``AL`` ``NL``
+``L``
+   Losses
 
-      ``W``
-         Wins
+``G``
+   Games
 
-      ``L``
-         Losses
+``GS``
+   Games Started
 
-      ``G``
-         Games
+``CG``
+   Complete Games
 
-      ``GS``
-         Games Started
+``SHO``
+   Shutouts
 
-      ``CG``
-         Complete Games
+``SV``
+   Saves
 
-      ``SHO``
-         Shutouts
+``IPouts``
+   Outs Pitched (innings pitched x 3)
 
-      ``SV``
-         Saves
+``H``
+   Hits
 
-      ``IPouts``
-         Outs Pitched (innings pitched x 3)
+``ER``
+   Earned Runs
 
-      ``H``
-         Hits
+``HR``
+   Homeruns
 
-      ``ER``
-         Earned Runs
+``BB``
+   Walks
 
-      ``HR``
-         Homeruns
+``SO``
+   Strikeouts
 
-      ``BB``
-         Walks
+``BAOpp``
+   Opponents' batting average
 
-      ``SO``
-         Strikeouts
+``ERA``
+   Earned Run Average
 
-      ``BAOpp``
-         Opponents' batting average
+``IBB``
+   Intentional Walks
 
-      ``ERA``
-         Earned Run Average
+``WP``
+   Wild Pitches
 
-      ``IBB``
-         Intentional Walks
+``HBP``
+   Batters Hit By Pitch
 
-      ``WP``
-         Wild Pitches
+``BK``
+   Balks
 
-      ``HBP``
-         Batters Hit By Pitch
+``BFP``
+   Batters faced by Pitcher
 
-      ``BK``
-         Balks
+``GF``
+   Games Finished
 
-      ``BFP``
-         Batters faced by Pitcher
+``R``
+   Runs Allowed
 
-      ``GF``
-         Games Finished
+``SH``
+   Sacrifice Hits allowed
 
-      ``R``
-         Runs Allowed
+``SF``
+   Sacrifice Flies allowed
 
-      ``SH``
-         Sacrifice Hits allowed
+``GIDP``
+   Grounded into Double Plays
 
-      ``SF``
-         Sacrifice Flies allowed
+Source
+~~~~~~
 
-      ``GIDP``
-         Grounded into Double Plays
+Lahman, S. (2026) Lahman's Baseball Database, 1871-2025, 2026 version,
+https://sabr.org/lahman-database/
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Lahman, S. (2025) Lahman's Baseball Database, 1871-2024, 2025
-      version, https://sabr.org/lahman-database/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   library("dplyr")
+   library(ggplot2)
 
-      .. code:: R
+   # Restrict data to World Series in modern era
+   ws <- PitchingPost %>%
+            filter(yearID >= 1903 & round == "WS")
+   # Pitchers with ERA 0.00 in WS play (> 10 IP)
+   ws %>%
+     filter(IPouts > 30 & ERA == 0.00) %>%
+     arrange(desc(IPouts)) %>%
+     select(playerID, yearID, teamID, lgID, IPouts, W, L, G, 
+            CG, SHO, H, R, SO, BFP) 
 
-         library("dplyr")
-         library(ggplot2)
+   # Pitchers with the most IP in a series 
+   # 1903 Series went eight games - for details, see
+   # https://en.wikipedia.org/wiki/1903_World_Series
+   ws %>%
+     arrange(desc(IPouts)) %>%
+     select(playerID, yearID, teamID, lgID, IPouts, W, L, G, 
+            CG, SHO, H, SO, BFP, ERA) %>%
+     head(., 10)
 
-         # Restrict data to World Series in modern era
-         ws <- PitchingPost %>%
-                  filter(yearID >= 1903 & round == "WS")
-         # Pitchers with ERA 0.00 in WS play (> 10 IP)
-         ws %>%
-           filter(IPouts > 30 & ERA == 0.00) %>%
-           arrange(desc(IPouts)) %>%
-           select(playerID, yearID, teamID, lgID, IPouts, W, L, G, 
-                  CG, SHO, H, R, SO, BFP) 
+   # Pitchers with highest strikeout rate in WS
+   # (minimum 20 IP)
+   ws %>%
+     filter(IPouts >= 60) %>%
+     mutate(K_rate = 27 * SO/IPouts) %>%
+     arrange(desc(K_rate)) %>%
+     select(playerID, yearID, teamID, lgID, IPouts, 
+            H, SO, K_rate) %>%
+     head(., 10)
+     
+   # Pitchers with the most IP in WS history
+   ws %>%
+     group_by(playerID) %>%
+     summarise_at(vars(IPouts, H, ER, CG, BB, SO, W, L), 
+                  sum, na.rm = TRUE) %>%
+     mutate(ERA = round(27 * ER/IPouts, 2),
+            Kper9 = round(27 * SO/IPouts, 3),
+            WHIP = round(3 * (H + BB)/IPouts, 3)) %>%
+     arrange(desc(IPouts)) %>%
+     select(-H, -ER) %>%
+     head(., 10)
 
-         # Pitchers with the most IP in a series 
-         # 1903 Series went eight games - for details, see
-         # https://en.wikipedia.org/wiki/1903_World_Series
-         ws %>%
-           arrange(desc(IPouts)) %>%
-           select(playerID, yearID, teamID, lgID, IPouts, W, L, G, 
-                  CG, SHO, H, SO, BFP, ERA) %>%
-           head(., 10)
-
-         # Pitchers with highest strikeout rate in WS
-         # (minimum 20 IP)
-         ws %>%
-           filter(IPouts >= 60) %>%
-           mutate(K_rate = 27 * SO/IPouts) %>%
-           arrange(desc(K_rate)) %>%
-           select(playerID, yearID, teamID, lgID, IPouts, 
-                  H, SO, K_rate) %>%
-           head(., 10)
-           
-         # Pitchers with the most IP in WS history
-         ws %>%
-           group_by(playerID) %>%
-           summarise_at(vars(IPouts, H, ER, CG, BB, SO, W, L), 
-                        sum, na.rm = TRUE) %>%
-           mutate(ERA = round(27 * ER/IPouts, 2),
-                  Kper9 = round(27 * SO/IPouts, 3),
-                  WHIP = round(3 * (H + BB)/IPouts, 3)) %>%
-           arrange(desc(IPouts)) %>%
-           select(-H, -ER) %>%
-           head(., 10)
-
-         # Plot of K/9 by year
-         ws %>%
-           group_by(yearID) %>%
-           summarise(Kper9 = 27 * sum(SO)/sum(IPouts)) %>%
-           ggplot(., aes(x = yearID, y = Kper9)) +
-             geom_point() +
-             geom_smooth() +
-             labs(x = "Year", y = "K per 9 innings")
+   # Plot of K/9 by year
+   ws %>%
+     group_by(yearID) %>%
+     summarise(Kper9 = 27 * sum(SO)/sum(IPouts)) %>%
+     ggplot(., aes(x = yearID, y = Kper9)) +
+       geom_point() +
+       geom_smooth() +
+       labs(x = "Year", y = "K per 9 innings")

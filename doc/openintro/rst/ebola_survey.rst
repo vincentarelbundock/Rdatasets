@@ -1,50 +1,46 @@
-.. container::
+============ ===============
+ebola_survey R Documentation
+============ ===============
 
-   .. container::
+Survey on Ebola quarantine
+--------------------------
 
-      ============ ===============
-      ebola_survey R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Survey on Ebola quarantine
-         :name: survey-on-ebola-quarantine
+In New York City on October 23rd, 2014, a doctor who had recently been
+treating Ebola patients in Guinea went to the hospital with a slight
+fever and was subsequently diagnosed with Ebola. Soon thereafter, an NBC
+4 New York/The Wall Street Journal/Marist Poll asked New Yorkers whether
+they favored a "mandatory 21-day quarantine for anyone who has come in
+contact with an Ebola patient". This poll included responses of 1,042
+New York adults between October 26th and 28th, 2014.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      In New York City on October 23rd, 2014, a doctor who had recently
-      been treating Ebola patients in Guinea went to the hospital with a
-      slight fever and was subsequently diagnosed with Ebola. Soon
-      thereafter, an NBC 4 New York/The Wall Street Journal/Marist Poll
-      asked New Yorkers whether they favored a "mandatory 21-day
-      quarantine for anyone who has come in contact with an Ebola
-      patient". This poll included responses of 1,042 New York adults
-      between October 26th and 28th, 2014.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   ebola_survey
 
-      .. code:: R
+Format
+~~~~~~
 
-         ebola_survey
+A data frame with 1042 observations on the following variable.
 
-      .. rubric:: Format
-         :name: format
+quarantine
+   Indicates whether the respondent is in ``favor`` or ``against`` the
+   mandatory quarantine.
 
-      A data frame with 1042 observations on the following variable.
+Source
+~~~~~~
 
-      quarantine
-         Indicates whether the respondent is in ``favor`` or ``against``
-         the mandatory quarantine.
+Poll ID NY141026 on maristpoll.marist.edu.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Poll ID NY141026 on maristpoll.marist.edu.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         table(ebola_survey)
+   table(ebola_survey)

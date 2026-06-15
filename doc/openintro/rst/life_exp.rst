@@ -1,57 +1,54 @@
-.. container::
+======== ===============
+life_exp R Documentation
+======== ===============
 
-   .. container::
+life_exp
+--------
 
-      ======== ===============
-      life_exp R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: life_exp
-         :name: life_exp
+A data frame with 3142 rows and 4 columns. County level data for life
+expectancy and median income in the United States.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A data frame with 3142 rows and 4 columns. County level data for
-      life expectancy and median income in the United States.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   life_exp
 
-      .. code:: R
+Format
+~~~~~~
 
-         life_exp
+A data frame with 3142 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+state
+   Name of the state.
 
-      A data frame with 3142 observations on the following 4 variables.
+county
+   Name of the county.
 
-      state
-         Name of the state.
+expectancy
+   Life expectancy in the county.
 
-      county
-         Name of the county.
+income
+   Median income in the county, measured in US $.
 
-      expectancy
-         Life expectancy in the county.
+Examples
+~~~~~~~~
 
-      income
-         Median income in the county, measured in US $.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   library(ggplot2)
 
-         library(ggplot2)
-
-         # Income V Expectancy
-         ggplot(life_exp, aes(x = income, y = expectancy)) +
-           geom_point(color = openintro::IMSCOL["green", "full"], alpha = 0.2) +
-           theme_minimal() +
-           labs(
-             title = "Is there a relationship between median income and life expectancy?",
-             x = "Median income (US $)",
-             y = "Life Expectancy (year)"
-           )
+   # Income V Expectancy
+   ggplot(life_exp, aes(x = income, y = expectancy)) +
+     geom_point(color = openintro::IMSCOL["green", "full"], alpha = 0.2) +
+     theme_minimal() +
+     labs(
+       title = "Is there a relationship between median income and life expectancy?",
+       x = "Median income (US $)",
+       y = "Life Expectancy (year)"
+     )

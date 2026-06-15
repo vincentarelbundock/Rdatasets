@@ -1,36 +1,32 @@
-.. container::
+========= ===============
+parabolic R Documentation
+========= ===============
 
-   .. container::
+Parabolic class boundary data
+-----------------------------
 
-      ========= ===============
-      parabolic R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Parabolic class boundary data
-         :name: parabolic-class-boundary-data
+Parabolic class boundary data
 
-      .. rubric:: Description
-         :name: description
+Details
+~~~~~~~
 
-      Parabolic class boundary data
+These data were simulated. There are two correlated predictors and two
+classes in the factor outcome.
 
-      .. rubric:: Details
-         :name: details
+Value
+~~~~~
 
-      These data were simulated. There are two correlated predictors and
-      two classes in the factor outcome.
+============= ============
+``parabolic`` a data frame
+============= ============
 
-      .. rubric:: Value
-         :name: value
+Examples
+~~~~~~~~
 
-      ============= ============
-      ``parabolic`` a data frame
-      ============= ============
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(parabolic)
-         str(parabolic)
+   data(parabolic)
+   str(parabolic)

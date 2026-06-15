@@ -1,52 +1,47 @@
-.. container::
+====================== ===============
+markers_human_brain_df R Documentation
+====================== ===============
 
-   .. container::
+Human Brain Cell Marker Genes
+-----------------------------
 
-      ====================== ===============
-      markers_human_brain_df R Documentation
-      ====================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Human Brain Cell Marker Genes
-         :name: human-brain-cell-marker-genes
+This dataset, markers_human_brain_df, is a data frame containing the top
+1,000 marker genes for each of six major brain cell types (astrocytes,
+endothelial cells, microglia, neurons, oligodendrocytes, and OPCs)
+identified through meta-analysis of human brain gene expression data.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, markers_human_brain_df, is a data frame containing
-      the top 1,000 marker genes for each of six major brain cell types
-      (astrocytes, endothelial cells, microglia, neurons,
-      oligodendrocytes, and OPCs) identified through meta-analysis of
-      human brain gene expression data.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(markers_human_brain_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(markers_human_brain_df)
+A data frame with 5,500 observations and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+markers
+   Character: Gene symbol for cell-type specific marker
 
-      A data frame with 5,500 observations and 2 variables:
+cell
+   Character: Cell type classification
+   (astrocytes/endothelial/microglia/neurons/oligodendrocytes/OPCs)
 
-      markers
-         Character: Gene symbol for cell-type specific marker
+Details
+~~~~~~~
 
-      cell
-         Character: Cell type classification
-         (astrocytes/endothelial/microglia/neurons/oligodendrocytes/OPCs)
+The dataset name has been kept as 'markers_human_brain_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the NeuroDataSets package. The
+suffix 'df' indicates that the dataset is a data frame. The original
+content has not been modified.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'markers_human_brain_df' to
-      avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      NeuroDataSets package. The suffix 'df' indicates that the dataset
-      is a data frame. The original content has not been modified.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the BRETIGEA package version 1.0.3.
+Data taken from the BRETIGEA package version 1.0.3.

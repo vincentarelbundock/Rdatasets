@@ -1,39 +1,35 @@
-.. container::
+===== ===============
+plots R Documentation
+===== ===============
 
-   .. container::
+Plots data.
+-----------
 
-      ===== ===============
-      plots R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Plots data.
-         :name: plots-data.
+Data on the plots at the Portal Project
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data on the plots at the Portal Project
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   plots
 
-      .. code:: R
+Format
+~~~~~~
 
-         plots
+A data frame with columns:
 
-      .. rubric:: Format
-         :name: format
+plot_id
+   Numeric identifier for the plot
 
-      A data frame with columns:
+plot_type
+   Type of experimental manipulation conducted on the plot
 
-      plot_id
-         Numeric identifier for the plot
+Source
+~~~~~~
 
-      plot_type
-         Type of experimental manipulation conducted on the plot
-
-      .. rubric:: Source
-         :name: source
-
-      Portal Project Teaching Database,
-      `doi:10.6084/m9.figshare.1314459 <https://doi.org/10.6084/m9.figshare.1314459>`__
+Portal Project Teaching Database,
+`doi:10.6084/m9.figshare.1314459 <https://doi.org/10.6084/m9.figshare.1314459>`__

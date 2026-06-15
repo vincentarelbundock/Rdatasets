@@ -1,74 +1,69 @@
-.. container::
+==================== ===============
+vehiclethefts_tbl_df R Documentation
+==================== ===============
 
-   .. container::
+NYC Vehicle Thefts (2014-2017)
+------------------------------
 
-      ==================== ===============
-      vehiclethefts_tbl_df R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: NYC Vehicle Thefts (2014-2017)
-         :name: nyc-vehicle-thefts-2014-2017
+This dataset contains detailed records of motor vehicle thefts in New
+York City from 2014 to 2017. The dataset includes spatial coordinates,
+timestamps, and additional contextual information about each theft. It
+provides valuable insights into patterns and trends of vehicle thefts in
+NYC.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains detailed records of motor vehicle thefts in
-      New York City from 2014 to 2017. The dataset includes spatial
-      coordinates, timestamps, and additional contextual information
-      about each theft. It provides valuable insights into patterns and
-      trends of vehicle thefts in NYC.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(vehiclethefts_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(vehiclethefts_tbl_df)
+A tibble with 35,746 rows and 9 variables:
 
-      .. rubric:: Format
-         :name: format
+uid
+   Unique identifier for each record (integer).
 
-      A tibble with 35,746 rows and 9 variables:
+date_single
+   Single date of the incident (character).
 
-      uid
-         Unique identifier for each record (integer).
+date_start
+   Start date of the incident (character).
 
-      date_single
-         Single date of the incident (character).
+date_end
+   End date of the incident (character).
 
-      date_start
-         Start date of the incident (character).
+longitude
+   Longitude of the theft location (numeric).
 
-      date_end
-         End date of the incident (character).
+latitude
+   Latitude of the theft location (numeric).
 
-      longitude
-         Longitude of the theft location (numeric).
+location_type
+   Type of location where the theft occurred (character).
 
-      latitude
-         Latitude of the theft location (numeric).
+location_category
+   Category of the location (character).
 
-      location_type
-         Type of location where the theft occurred (character).
+census_block
+   Census block of the theft location (character).
 
-      location_category
-         Category of the location (character).
+Details
+~~~~~~~
 
-      census_block
-         Census block of the theft location (character).
+The dataset name has been changed to 'vehiclethefts_tbl_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the crimedatasets package and
+assists users in identifying its specific characteristics. The suffix
+'tbl_df' indicates that the dataset is stored as a tibble in R. The
+original content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been changed to 'vehiclethefts_tbl_df' to
-      avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      crimedatasets package and assists users in identifying its
-      specific characteristics. The suffix 'tbl_df' indicates that the
-      dataset is stored as a tibble in R. The original content has not
-      been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Crime Open Database: Motor Vehicle Theft Records.
+Crime Open Database: Motor Vehicle Theft Records.

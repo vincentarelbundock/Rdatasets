@@ -1,53 +1,48 @@
-.. container::
+====== ===============
+easton R Documentation
+====== ===============
 
-   .. container::
+Data from "The Democracy of Dating: How Political Affiliations Shape Relationship Formation"
+--------------------------------------------------------------------------------------------
 
-      ====== ===============
-      easton R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Data from "The Democracy of Dating: How Political
-         Affiliations Shape Relationship Formation"
-         :name: data-from-the-democracy-of-dating-how-political-affiliations-shape-relationship-formation
+This dataset is used in the exercises of Chapters 5 and 6 from the R
+Companion.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset is used in the exercises of Chapters 5 and 6 from the
-      R Companion.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   easton
 
-      .. code:: R
+Format
+~~~~~~
 
-         easton
+A data frame with 725 rows and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+attractiveness_score
+   Attractiveness of the shown profile according to the subject
 
-      A data frame with 725 rows and 5 variables:
+age
+   Age in years
 
-      attractiveness_score
-         Attractiveness of the shown profile according to the subject
+male
+   Gender. 1 = Male, 0 = Female
 
-      age
-         Age in years
+republican
+   Political orientation. 1 = Republican, 0 = Democrat
 
-      male
-         Gender. 1 = Male, 0 = Female
+treatment_republican_profile
+   1 = A profile of a Republican was shown, 0 = A profile of a Democrat
+   was shown
 
-      republican
-         Political orientation. 1 = Republican, 0 = Democrat
+Source
+~~~~~~
 
-      treatment_republican_profile
-         1 = A profile of a Republican was shown, 0 = A profile of a
-         Democrat was shown
-
-      .. rubric:: Source
-         :name: source
-
-      Easton, Matthew J., and John B. Holbein. “The Democracy of Dating:
-      How Political Affiliations Shape Relationship Formation.” Journal
-      of Experimental Political Science, vol. 8, no. 3, 2021, pp.
-      260–272., doi:10.1017/XPS.2020.21.
+Easton, Matthew J., and John B. Holbein. “The Democracy of Dating: How
+Political Affiliations Shape Relationship Formation.” Journal of
+Experimental Political Science, vol. 8, no. 3, 2021, pp. 260–272.,
+doi:10.1017/XPS.2020.21.

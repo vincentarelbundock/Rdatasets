@@ -1,68 +1,64 @@
-.. container::
+================ ===============
+brain_size_iq_df R Documentation
+================ ===============
 
-   .. container::
+Brain Size and IQ Study Data
+----------------------------
 
-      ================ ===============
-      brain_size_iq_df R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Brain Size and IQ Study Data
-         :name: brain-size-and-iq-study-data
+This dataset, brain_size_iq_df, is a data frame containing
+neurocognitive measurements from a study examining relationships between
+brain size, gender, and intelligence. The data include 40 right-handed
+psychology students with no neurological history, selected based on
+extreme Scholastic Aptitude Test scores.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, brain_size_iq_df, is a data frame containing
-      neurocognitive measurements from a study examining relationships
-      between brain size, gender, and intelligence. The data include 40
-      right-handed psychology students with no neurological history,
-      selected based on extreme Scholastic Aptitude Test scores.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(brain_size_iq_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(brain_size_iq_df)
+A data frame with 40 observations and 7 variables:
 
-      .. rubric:: Format
-         :name: format
+ID
+   Numeric: Participant identification number
 
-      A data frame with 40 observations and 7 variables:
+GENDER
+   Factor with 2 levels: Participant's gender (Male/Female)
 
-      ID
-         Numeric: Participant identification number
+FSIQ
+   Numeric: Full Scale IQ score
 
-      GENDER
-         Factor with 2 levels: Participant's gender (Male/Female)
+VIQ
+   Numeric: Verbal IQ score
 
-      FSIQ
-         Numeric: Full Scale IQ score
+PIQ
+   Numeric: Performance IQ score
 
-      VIQ
-         Numeric: Verbal IQ score
+MRI
+   Numeric: Brain size measurement from MRI (in cubic cm)
 
-      PIQ
-         Numeric: Performance IQ score
+IQDI
+   Factor with 2 levels: IQ group classification (High/Low)
 
-      MRI
-         Numeric: Brain size measurement from MRI (in cubic cm)
+Details
+~~~~~~~
 
-      IQDI
-         Factor with 2 levels: IQ group classification (High/Low)
+The dataset name has been kept as 'brain_size_iq_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the NeuroDataSets package. The
+suffix 'df' indicates that the dataset is a data frame. The original
+content has not been modified.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'brain_size_iq_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      NeuroDataSets package. The suffix 'df' indicates that the dataset
-      is a data frame. The original content has not been modified.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the sur package version 1.0.4. Original study:
-      Willerman, L., Schultz, R., Rutledge, J.N. and Bigler, E.D. (1991)
-      In Vivo Brain Size and Intelligence. *Intelligence*, 15, 223-228.
+Data taken from the sur package version 1.0.4. Original study:
+Willerman, L., Schultz, R., Rutledge, J.N. and Bigler, E.D. (1991) In
+Vivo Brain Size and Intelligence. *Intelligence*, 15, 223-228.

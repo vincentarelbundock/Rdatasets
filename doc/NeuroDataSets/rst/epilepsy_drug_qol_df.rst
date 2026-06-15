@@ -1,78 +1,72 @@
-.. container::
+==================== ===============
+epilepsy_drug_qol_df R Documentation
+==================== ===============
 
-   .. container::
+SANAD Epilepsy Drug Treatment Quality of Life Study
+---------------------------------------------------
 
-      ==================== ===============
-      epilepsy_drug_qol_df R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: SANAD Epilepsy Drug Treatment Quality of Life Study
-         :name: sanad-epilepsy-drug-treatment-quality-of-life-study
+This dataset, epilepsy_drug_qol_df, is a data frame containing quality
+of life measurements from the SANAD randomized controlled trial
+comparing carbamazepine and lamotrigine in 544 epilepsy patients. QoL
+assessments were collected at baseline, 3 months, 1 year and 2 years
+using validated instruments.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, epilepsy_drug_qol_df, is a data frame containing
-      quality of life measurements from the SANAD randomized controlled
-      trial comparing carbamazepine and lamotrigine in 544 epilepsy
-      patients. QoL assessments were collected at baseline, 3 months, 1
-      year and 2 years using validated instruments.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(epilepsy_drug_qol_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(epilepsy_drug_qol_df)
+A data frame with 1,852 observations and 9 variables:
 
-      .. rubric:: Format
-         :name: format
+id
+   Integer: Patient identification number
 
-      A data frame with 1,852 observations and 9 variables:
+with.time
+   Numeric: Time to withdrawal/discontinuation (days)
 
-      id
-         Integer: Patient identification number
+trt
+   Factor with 2 levels: Treatment group (carbamazepine/lamotrigine)
 
-      with.time
-         Numeric: Time to withdrawal/discontinuation (days)
+with.status
+   Integer: Withdrawal status indicator
 
-      trt
-         Factor with 2 levels: Treatment group
-         (carbamazepine/lamotrigine)
+time
+   Numeric: Assessment time point (days since baseline)
 
-      with.status
-         Integer: Withdrawal status indicator
+anxiety
+   Numeric: Anxiety score (from QoL measure)
 
-      time
-         Numeric: Assessment time point (days since baseline)
+depress
+   Numeric: Depression score (from QoL measure)
 
-      anxiety
-         Numeric: Anxiety score (from QoL measure)
+aep
+   Numeric: Adverse effects profile score
 
-      depress
-         Numeric: Depression score (from QoL measure)
+with.status2
+   Numeric: Alternative withdrawal coding
 
-      aep
-         Numeric: Adverse effects profile score
+Details
+~~~~~~~
 
-      with.status2
-         Numeric: Alternative withdrawal coding
+The dataset name has been kept as 'epilepsy_drug_qol_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the NeuroDataSets package. The
+suffix 'df' indicates that the dataset is a data frame. The original
+content has not been modified.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'epilepsy_drug_qol_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      NeuroDataSets package. The suffix 'df' indicates that the dataset
-      is a data frame. The original content has not been modified.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the joineRML package version 0.4.7. Original
-      study: Marson, A.G., et al. (2007) The SANAD study of
-      effectiveness of carbamazepine, gabapentin, lamotrigine,
-      oxcarbazepine, or topiramate for treatment of partial epilepsy: an
-      unblinded randomised controlled trial. *The Lancet*, 369(9566),
-      1000-1015.
+Data taken from the joineRML package version 0.4.7. Original study:
+Marson, A.G., et al. (2007) The SANAD study of effectiveness of
+carbamazepine, gabapentin, lamotrigine, oxcarbazepine, or topiramate for
+treatment of partial epilepsy: an unblinded randomised controlled trial.
+*The Lancet*, 369(9566), 1000-1015.

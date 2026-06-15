@@ -1,49 +1,46 @@
-.. container::
+============== ===============
+family_college R Documentation
+============== ===============
 
-   .. container::
+Simulated sample of parent / teen college attendance
+----------------------------------------------------
 
-      ============== ===============
-      family_college R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Simulated sample of parent / teen college attendance
-         :name: simulated-sample-of-parent-teen-college-attendance
+A simulated dataset based on real population summaries.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A simulated dataset based on real population summaries.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   family_college
 
-      .. code:: R
+Format
+~~~~~~
 
-         family_college
+A data frame with 792 observations on the following 2 variables.
 
-      .. rubric:: Format
-         :name: format
+teen
+   Whether the teen goes to ``college`` or ``not``.
 
-      A data frame with 792 observations on the following 2 variables.
+parents
+   Whether the parent holds a college ``degree`` or ``not``.
 
-      teen
-         Whether the teen goes to ``college`` or ``not``.
+Source
+~~~~~~
 
-      parents
-         Whether the parent holds a college ``degree`` or ``not``.
+Simulation based off of summary information provided at
+https://eric.ed.gov/?id=ED460660.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Simulation based off of summary information provided at
-      https://eric.ed.gov/?id=ED460660.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   library(dplyr)
 
-         library(dplyr)
-
-         family_college |>
-           count(teen, parents)
+   family_college |>
+     count(teen, parents)

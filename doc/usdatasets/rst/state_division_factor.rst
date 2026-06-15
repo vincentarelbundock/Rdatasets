@@ -1,70 +1,64 @@
-.. container::
+===================== ===============
+state_division_factor R Documentation
+===================== ===============
 
-   .. container::
+US State Facts and Figures - US State Divisions
+-----------------------------------------------
 
-      ===================== ===============
-      state_division_factor R Documentation
-      ===================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: US State Facts and Figures - US State Divisions
-         :name: us-state-facts-and-figures---us-state-divisions
+The dataset name has been changed to 'state_division_factor' to avoid
+confusion with other packages in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a factor. The original content of the dataset has not
+been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'state_division_factor' to
-      avoid confusion with other packages in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a factor. The original
-      content of the dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(state_division_factor)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(state_division_factor)
+A factor with 50 observations representing the divisions of U.S. states.
+It contains 9 levels:
 
-      .. rubric:: Format
-         :name: format
+East South Central
+   Region including Alabama, Kentucky, Mississippi, and Tennessee.
 
-      A factor with 50 observations representing the divisions of U.S.
-      states. It contains 9 levels:
+Pacific
+   Region including California, Oregon, and Washington.
 
-      East South Central
-         Region including Alabama, Kentucky, Mississippi, and Tennessee.
+Mountain
+   Region including Colorado, Idaho, Montana, Nevada, Utah, and Wyoming.
 
-      Pacific
-         Region including California, Oregon, and Washington.
+West South Central
+   Region including Arkansas, Louisiana, Oklahoma, and Texas.
 
-      Mountain
-         Region including Colorado, Idaho, Montana, Nevada, Utah, and
-         Wyoming.
+New England
+   Region including Connecticut, Maine, Massachusetts, New Hampshire,
+   Rhode Island, and Vermont.
 
-      West South Central
-         Region including Arkansas, Louisiana, Oklahoma, and Texas.
+South Atlantic
+   Region including Delaware, Florida, Georgia, Maryland, North
+   Carolina, South Carolina, Virginia, Washington, D.C., and West
+   Virginia.
 
-      New England
-         Region including Connecticut, Maine, Massachusetts, New
-         Hampshire, Rhode Island, and Vermont.
+East North Central
+   Region including Illinois, Indiana, Michigan, Ohio, and Wisconsin.
 
-      South Atlantic
-         Region including Delaware, Florida, Georgia, Maryland, North
-         Carolina, South Carolina, Virginia, Washington, D.C., and West
-         Virginia.
+West North Central
+   Region including Iowa, Kansas, Minnesota, Missouri, Nebraska, North
+   Dakota, and South Dakota.
 
-      East North Central
-         Region including Illinois, Indiana, Michigan, Ohio, and
-         Wisconsin.
+Middle Atlantic
+   Region including New Jersey, New York, and Pennsylvania.
 
-      West North Central
-         Region including Iowa, Kansas, Minnesota, Missouri, Nebraska,
-         North Dakota, and South Dakota.
+Source
+~~~~~~
 
-      Middle Atlantic
-         Region including New Jersey, New York, and Pennsylvania.
-
-      .. rubric:: Source
-         :name: source
-
-      U.S. Census Bureau regional divisions.
+U.S. Census Bureau regional divisions.

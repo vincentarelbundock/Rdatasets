@@ -1,78 +1,72 @@
-.. container::
+======= ===============
+lizards R Documentation
+======= ===============
 
-   .. container::
+A Comparison of Site Preferences of Two Species of Lizard
+---------------------------------------------------------
 
-      ======= ===============
-      lizards R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: A Comparison of Site Preferences of Two Species of
-         Lizard
-         :name: a-comparison-of-site-preferences-of-two-species-of-lizard
+“These data describe the daytime habits of two species of lizards,
+*grahami* and *opalinus*. They were collected by observing occupied
+sites or perches and recording the appropriate description, namely
+species involved, time of the day, height and diameter of the perch and
+whether the site was sunny or shaded. Time of the day is recorded as
+early, mid-day or late.” (McCullagh and Nelder, 1989, p.129).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      “These data describe the daytime habits of two species of lizards,
-      *grahami* and *opalinus*. They were collected by observing
-      occupied sites or perches and recording the appropriate
-      description, namely species involved, time of the day, height and
-      diameter of the perch and whether the site was sunny or shaded.
-      Time of the day is recorded as early, mid-day or late.” (McCullagh
-      and Nelder, 1989, p.129).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(lizards)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(lizards)
+A data frame with 24 observations on the following 6 variables.
 
-      .. rubric:: Format
-         :name: format
+Site
+   A factor with levels ``Sun`` and ``Shade``.
 
-      A data frame with 24 observations on the following 6 variables.
+Diameter
+   A factor with levels ``D <= 2`` and ``D > 2`` (inches).
 
-      Site
-         A factor with levels ``Sun`` and ``Shade``.
+Height
+   A factor with levels ``H < 5`` and ``H >= 5`` (feet).
 
-      Diameter
-         A factor with levels ``D <= 2`` and ``D > 2`` (inches).
+Time
+   A factor with levels ``Early``, ``Mid-day`` and ``Late``.
 
-      Height
-         A factor with levels ``H < 5`` and ``H >= 5`` (feet).
+grahami
+   A numeric vector giving the observed sample size for *grahami*
+   lizards.
 
-      Time
-         A factor with levels ``Early``, ``Mid-day`` and ``Late``.
+opalinus
+   A numeric vector giving the observed sample size for *opalinus*
+   lizards.
 
-      grahami
-         A numeric vector giving the observed sample size for *grahami*
-         lizards.
+Details
+~~~~~~~
 
-      opalinus
-         A numeric vector giving the observed sample size for *opalinus*
-         lizards.
+The data were originally published in Fienberg (1970).
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The data were originally published in Fienberg (1970).
+McCullagh, P., Nelder, J.A., 1989. *Generalized linear models*. London,
+Chapman & Hall, 511 p.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      McCullagh, P., Nelder, J.A., 1989. *Generalized linear models*.
-      London, Chapman & Hall, 511 p.
+Fienberg, S.E., 1970. *The analysis of multidimensional contingency
+tables*. Ecology 51: 419-433.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Fienberg, S.E., 1970. *The analysis of multidimensional
-      contingency tables*. Ecology 51: 419-433.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(lizards)
+   data(lizards)

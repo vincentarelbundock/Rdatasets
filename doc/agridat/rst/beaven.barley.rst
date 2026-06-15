@@ -1,95 +1,89 @@
-.. container::
+============= ===============
+beaven.barley R Documentation
+============= ===============
 
-   .. container::
+Yields of 8 barley varieties in 1913 as used by Student.
+--------------------------------------------------------
 
-      ============= ===============
-      beaven.barley R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Yields of 8 barley varieties in 1913 as used by
-         Student.
-         :name: yields-of-8-barley-varieties-in-1913-as-used-by-student.
+Yields of 8 barley varieties in 1913.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Yields of 8 barley varieties in 1913.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("beaven.barley")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("beaven.barley")
+A data frame with 160 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row
 
-      A data frame with 160 observations on the following 4 variables.
+``col``
+   column
 
-      ``row``
-         row
+``gen``
+   genotype
 
-      ``col``
-         column
+``yield``
+   yield (grams)
 
-      ``gen``
-         genotype
+Details
+~~~~~~~
 
-      ``yield``
-         yield (grams)
+Eight races of barley were grown on a regular pattern of plots.
 
-      .. rubric:: Details
-         :name: details
+These data were prepared from Richey (1926) because the text was
+cleaner.
 
-      Eight races of barley were grown on a regular pattern of plots.
+Each plot was planted 40 inches on a side, but only the middle square 36
+inches on a side was harvested.
 
-      These data were prepared from Richey (1926) because the text was
-      cleaner.
+Field width: 32 plots \* 3 feet = 96 feet
 
-      Each plot was planted 40 inches on a side, but only the middle
-      square 36 inches on a side was harvested.
+Field length: 5 plots \* 3 feet = 15 feet
 
-      Field width: 32 plots \* 3 feet = 96 feet
+Source
+~~~~~~
 
-      Field length: 5 plots \* 3 feet = 15 feet
+Student. (1923). On testing varieties of cereals. *Biometrika*, 271-293.
 
-      .. rubric:: Source
-         :name: source
+https://doi.org/10.1093/biomet/15.3-4.271
 
-      Student. (1923). On testing varieties of cereals. *Biometrika*,
-      271-293.
+References
+~~~~~~~~~~
 
-      https://doi.org/10.1093/biomet/15.3-4.271
+Frederick D. Richey (1926). The moving average as a basis for measuring
+correlated variation in agronomic experiments. *Jour. Agr. Research*,
+32, 1161-1175.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Frederick D. Richey (1926). The moving average as a basis for
-      measuring correlated variation in agronomic experiments. *Jour.
-      Agr. Research*, 32, 1161-1175.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
 
-         ## Not run: 
+   data(beaven.barley)
+   dat <- beaven.barley
 
-         library(agridat)
+   # Match the means shown in Richey table IV
+   tapply(dat$yield, dat$gen, mean)
+   ##       a       b       c       d       e       f       g       h
+   ## 298.080 300.710 318.685 295.260 306.410 276.475 304.605 271.820
 
-         data(beaven.barley)
-         dat <- beaven.barley
+   # Compare to Student 1923, diagram I,II
+   libs(desplot)
+   desplot(dat, yield ~ col*row,
+           aspect=15/96, # true aspect
+           main="beaven.barley - variety trial", text=gen)
 
-         # Match the means shown in Richey table IV
-         tapply(dat$yield, dat$gen, mean)
-         ##       a       b       c       d       e       f       g       h
-         ## 298.080 300.710 318.685 295.260 306.410 276.475 304.605 271.820
-
-         # Compare to Student 1923, diagram I,II
-         libs(desplot)
-         desplot(dat, yield ~ col*row,
-                 aspect=15/96, # true aspect
-                 main="beaven.barley - variety trial", text=gen)
-
-         ## End(Not run)
+   ## End(Not run)

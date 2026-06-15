@@ -1,66 +1,61 @@
-.. container::
+============= ===============
+births_tbl_df R Documentation
+============= ===============
 
-   .. container::
+North Carolina births, 100 cases
+--------------------------------
 
-      ============= ===============
-      births_tbl_df R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: North Carolina births, 100 cases
-         :name: north-carolina-births-100-cases
+The dataset name has been changed to 'births_tbl_df' to avoid confusion
+with other packages in the R ecosystem from which datasets have been
+sourced. This naming convention helps distinguish this dataset as part
+of the 'usdatasets' package and assists users in identifying its
+specific characteristics. The suffix 'tbl_df' identifies the dataset as
+a tibble. The original content of the dataset has not been modified in
+any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'births_tbl_df' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. This naming convention helps
-      distinguish this dataset as part of the 'usdatasets' package and
-      assists users in identifying its specific characteristics. The
-      suffix 'tbl_df' identifies the dataset as a tibble. The original
-      content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(births_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(births_tbl_df)
+A tibble with 150 observations and 9 variables:
 
-      .. rubric:: Format
-         :name: format
+f_age
+   Age of the father (in years).
 
-      A tibble with 150 observations and 9 variables:
+m_age
+   Age of the mother (in years).
 
-      f_age
-         Age of the father (in years).
+weeks
+   Number of weeks of pregnancy.
 
-      m_age
-         Age of the mother (in years).
+premature
+   Indicates if the baby is premature (factor: yes/no).
 
-      weeks
-         Number of weeks of pregnancy.
+visits
+   Number of prenatal visits.
 
-      premature
-         Indicates if the baby is premature (factor: yes/no).
+gained
+   Weight gained by the mother during pregnancy (in pounds).
 
-      visits
-         Number of prenatal visits.
+weight
+   Birth weight of the baby (in grams).
 
-      gained
-         Weight gained by the mother during pregnancy (in pounds).
+sex_baby
+   Sex of the baby (factor: male/female).
 
-      weight
-         Birth weight of the baby (in grams).
+smoke
+   Indicates if the mother smoked during pregnancy (factor: yes/no).
 
-      sex_baby
-         Sex of the baby (factor: male/female).
+Source
+~~~~~~
 
-      smoke
-         Indicates if the mother smoked during pregnancy (factor:
-         yes/no).
-
-      .. rubric:: Source
-         :name: source
-
-      National Vital Statistics Reports
+National Vital Statistics Reports

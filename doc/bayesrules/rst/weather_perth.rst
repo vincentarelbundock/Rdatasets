@@ -1,98 +1,94 @@
-.. container::
+============= ===============
+weather_perth R Documentation
+============= ===============
 
-   .. container::
+Weather Data for Perth, Australia
+---------------------------------
 
-      ============= ===============
-      weather_perth R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Weather Data for Perth, Australia
-         :name: weather-data-for-perth-australia
+A sub-sample of daily weather information on Perth, Australia from the
+weatherAUS data in the rattle package.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A sub-sample of daily weather information on Perth, Australia from
-      the weatherAUS data in the rattle package.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   weather_perth
 
-      .. code:: R
+Format
+~~~~~~
 
-         weather_perth
+A data frame with 1000 daily observations and 21 variables:
 
-      .. rubric:: Format
-         :name: format
+mintemp
+   minimum temperature (degrees Celsius)
 
-      A data frame with 1000 daily observations and 21 variables:
+maxtemp
+   maximum temperature (degrees Celsius)
 
-      mintemp
-         minimum temperature (degrees Celsius)
+rainfall
+   rainfall (mm)
 
-      maxtemp
-         maximum temperature (degrees Celsius)
+windgustdir
+   direction of strongest wind gust
 
-      rainfall
-         rainfall (mm)
+windgustspeed
+   speed of strongest wind gust (km/h)
 
-      windgustdir
-         direction of strongest wind gust
+winddir9am
+   direction of wind gust at 9am
 
-      windgustspeed
-         speed of strongest wind gust (km/h)
+winddir3pm
+   direction of wind gust at 3pm
 
-      winddir9am
-         direction of wind gust at 9am
+windspeed9am
+   wind speed at 9am (km/h)
 
-      winddir3pm
-         direction of wind gust at 3pm
+windspeed3pm
+   wind speed at 3pm (km/h)
 
-      windspeed9am
-         wind speed at 9am (km/h)
+humidity9am
+   humidity level at 9am (percent)
 
-      windspeed3pm
-         wind speed at 3pm (km/h)
+humidity3pm
+   humidity level at 3pm (percent)
 
-      humidity9am
-         humidity level at 9am (percent)
+pressure9am
+   atmospheric pressure at 9am (hpa)
 
-      humidity3pm
-         humidity level at 3pm (percent)
+pressure3pm
+   atmospheric pressure at 3pm (hpa)
 
-      pressure9am
-         atmospheric pressure at 9am (hpa)
+temp9am
+   temperature at 9am (degrees Celsius)
 
-      pressure3pm
-         atmospheric pressure at 3pm (hpa)
+temp3pm
+   temperature at 3pm (degrees Celsius)
 
-      temp9am
-         temperature at 9am (degrees Celsius)
+raintoday
+   whether or not it rained today (Yes or No)
 
-      temp3pm
-         temperature at 3pm (degrees Celsius)
+risk_mm
+   the amount of rain today (mm)
 
-      raintoday
-         whether or not it rained today (Yes or No)
+raintomorrow
+   whether or not it rained the next day (Yes or No)
 
-      risk_mm
-         the amount of rain today (mm)
+year
+   the year of the date
 
-      raintomorrow
-         whether or not it rained the next day (Yes or No)
+month
+   the month of the date
 
-      year
-         the year of the date
+day_of_year
+   the day of the year
 
-      month
-         the month of the date
+Source
+~~~~~~
 
-      day_of_year
-         the day of the year
-
-      .. rubric:: Source
-         :name: source
-
-      Data in the original weatherAUS data set were obtained from
-      https://www.bom.gov.au/climate/data/. Copyright Commonwealth of
-      Australia 2010, Bureau of Meteorology.
+Data in the original weatherAUS data set were obtained from
+https://www.bom.gov.au/climate/data/. Copyright Commonwealth of
+Australia 2010, Bureau of Meteorology.

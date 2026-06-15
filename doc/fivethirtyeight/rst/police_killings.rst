@@ -1,138 +1,133 @@
-.. container::
+=============== ===============
+police_killings R Documentation
+=============== ===============
 
-   .. container::
+Where Police Have Killed Americans In 2015
+------------------------------------------
 
-      =============== ===============
-      police_killings R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Where Police Have Killed Americans In 2015
-         :name: where-police-have-killed-americans-in-2015
+The raw data behind the story "Where Police Have Killed Americans In
+2015"
+https://fivethirtyeight.com/features/where-police-have-killed-americans-in-2015/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Where Police Have Killed Americans
-      In 2015"
-      https://fivethirtyeight.com/features/where-police-have-killed-americans-in-2015/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   police_killings
 
-      .. code:: R
+Format
+~~~~~~
 
-         police_killings
+A data frame with 467 rows representing People who died from
+interactions with police and 34 variables:
 
-      .. rubric:: Format
-         :name: format
+name
+   Name of deceased
 
-      A data frame with 467 rows representing People who died from
-      interactions with police and 34 variables:
+age
+   Age of deceased
 
-      name
-         Name of deceased
+gender
+   Gender of deceased
 
-      age
-         Age of deceased
+raceethnicity
+   Race/ethnicity of deceased
 
-      gender
-         Gender of deceased
+month
+   Month of killing
 
-      raceethnicity
-         Race/ethnicity of deceased
+day
+   Day of incident
 
-      month
-         Month of killing
+year
+   Year of incident
 
-      day
-         Day of incident
+streetaddress
+   Address/intersection where incident occurred
 
-      year
-         Year of incident
+city
+   City where incident occurred
 
-      streetaddress
-         Address/intersection where incident occurred
+state
+   State where incident occurred
 
-      city
-         City where incident occurred
+latitude
+   Latitude, geocoded from address
 
-      state
-         State where incident occurred
+longitude
+   Longitude, geocoded from address
 
-      latitude
-         Latitude, geocoded from address
+state_fp
+   State FIPS code
 
-      longitude
-         Longitude, geocoded from address
+county_fp
+   County FIPS code
 
-      state_fp
-         State FIPS code
+tract_ce
+   Tract ID code
 
-      county_fp
-         County FIPS code
+geo_id
+   Combined tract ID code
 
-      tract_ce
-         Tract ID code
+county_id
+   Combined county ID code
 
-      geo_id
-         Combined tract ID code
+namelsad
+   Tract description
 
-      county_id
-         Combined county ID code
+lawenforcementagency
+   Agency involved in incident
 
-      namelsad
-         Tract description
+cause
+   Cause of death
 
-      lawenforcementagency
-         Agency involved in incident
+armed
+   How/whether deceased was armed
 
-      cause
-         Cause of death
+pop
+   Tract population
 
-      armed
-         How/whether deceased was armed
+share_white
+   Share of pop that is non-Hispanic white
 
-      pop
-         Tract population
+share_black
+   Share of pop that is black (alone, not in combination)
 
-      share_white
-         Share of pop that is non-Hispanic white
+share_hispanic
+   Share of pop that is Hispanic/Latino (any race)
 
-      share_black
-         Share of pop that is black (alone, not in combination)
+p_income
+   Tract-level median personal income
 
-      share_hispanic
-         Share of pop that is Hispanic/Latino (any race)
+h_income
+   Tract-level median household income
 
-      p_income
-         Tract-level median personal income
+county_income
+   County-level median household income
 
-      h_income
-         Tract-level median household income
+comp_income
+   'h_income' / 'county_income'
 
-      county_income
-         County-level median household income
+county_bucket
+   Household income, quintile within county
 
-      comp_income
-         'h_income' / 'county_income'
+nat_bucket
+   Household income, quintile nationally
 
-      county_bucket
-         Household income, quintile within county
+pov
+   Tract-level poverty rate (official)
 
-      nat_bucket
-         Household income, quintile nationally
+urate
+   Tract-level unemployment rate
 
-      pov
-         Tract-level poverty rate (official)
+college
+   Share of 25+ pop with BA or higher
 
-      urate
-         Tract-level unemployment rate
+Source
+~~~~~~
 
-      college
-         Share of 25+ pop with BA or higher
-
-      .. rubric:: Source
-         :name: source
-
-      See
-      https://github.com/fivethirtyeight/data/tree/master/police-killings
+See https://github.com/fivethirtyeight/data/tree/master/police-killings

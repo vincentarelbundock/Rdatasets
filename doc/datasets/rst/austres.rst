@@ -1,30 +1,25 @@
-.. container::
+======= ===============
+austres R Documentation
+======= ===============
 
-   .. container::
+Quarterly Time Series of the Number of Australian Residents
+-----------------------------------------------------------
 
-      ======= ===============
-      austres R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Quarterly Time Series of the Number of Australian
-         Residents
-         :name: quarterly-time-series-of-the-number-of-australian-residents
+Numbers (in thousands) of Australian residents measured quarterly from
+March 1971 to March 1994. The object is of class ``"ts"``.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Numbers (in thousands) of Australian residents measured quarterly
-      from March 1971 to March 1994. The object is of class ``"ts"``.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   austres
 
-      .. code:: R
+Source
+~~~~~~
 
-         austres
-
-      .. rubric:: Source
-         :name: source
-
-      P. J. Brockwell and R. A. Davis (1996) *Introduction to Time
-      Series and Forecasting.* Springer
+P. J. Brockwell and R. A. Davis (1996) *Introduction to Time Series and
+Forecasting.* Springer

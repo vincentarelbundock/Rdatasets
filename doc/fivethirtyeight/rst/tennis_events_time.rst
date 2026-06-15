@@ -1,58 +1,51 @@
-.. container::
+================== ===============
+tennis_events_time R Documentation
+================== ===============
 
-   .. container::
+Why Some Tennis Matches Take Forever
+------------------------------------
 
-      ================== ===============
-      tennis_events_time R Documentation
-      ================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Why Some Tennis Matches Take Forever
-         :name: why-some-tennis-matches-take-forever
+The raw data behind the story "Why Some Tennis Matches Take Forever"
+https://fivethirtyeight.com/features/why-some-tennis-matches-take-forever/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Why Some Tennis Matches Take
-      Forever"
-      https://fivethirtyeight.com/features/why-some-tennis-matches-take-forever/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   tennis_events_time
 
-      .. code:: R
+Format
+~~~~~~
 
-         tennis_events_time
+A data frame with 205 rows representing tournaments and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+tournament
+   Name of event
 
-      A data frame with 205 rows representing tournaments and 5
-      variables:
+surface
+   Court surface used at the event
 
-      tournament
-         Name of event
+sec_added
+   Seconds added per point for this event on this surface in years
+   shown, from regression model controlling for players, year and other
+   factors
 
-      surface
-         Court surface used at the event
+year_start
+   Start year for data used from this tournament in regression
 
-      sec_added
-         Seconds added per point for this event on this surface in years
-         shown, from regression model controlling for players, year and
-         other factors
+year_end
+   End year for data used from this tournament in regression
 
-      year_start
-         Start year for data used from this tournament in regression
+Source
+~~~~~~
 
-      year_end
-         End year for data used from this tournament in regression
+See https://github.com/fivethirtyeight/data/tree/master/tennis-time
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      See
-      https://github.com/fivethirtyeight/data/tree/master/tennis-time
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``tennis_players_time`` and ``tennis_serve_time``
+``tennis_players_time`` and ``tennis_serve_time``

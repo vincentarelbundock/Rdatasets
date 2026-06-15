@@ -1,86 +1,80 @@
-.. container::
+======================= ===============
+police_shootings_tbl_df R Documentation
+======================= ===============
 
-   .. container::
+Fatal Police Shootings data
+---------------------------
 
-      ======================= ===============
-      police_shootings_tbl_df R Documentation
-      ======================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Fatal Police Shootings data
-         :name: fatal-police-shootings-data
+This dataset contains records of every fatal police shooting by an
+on-duty officer since January 1, 2015. It includes information about the
+shooting incidents, the characteristics of the individuals involved, and
+details such as mental illness signs, body camera usage, and more. This
+dataset is valuable for analyzing trends and patterns in fatal police
+shootings in the United States.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains records of every fatal police shooting by an
-      on-duty officer since January 1, 2015. It includes information
-      about the shooting incidents, the characteristics of the
-      individuals involved, and details such as mental illness signs,
-      body camera usage, and more. This dataset is valuable for
-      analyzing trends and patterns in fatal police shootings in the
-      United States.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(police_shootings_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(police_shootings_tbl_df)
+A tibble with 6,421 observations and 12 variables:
 
-      .. rubric:: Format
-         :name: format
+date
+   Date of the shooting (Date).
 
-      A tibble with 6,421 observations and 12 variables:
+manner_of_death
+   How the individual died (character).
 
-      date
-         Date of the shooting (Date).
+armed
+   Indicates if the individual was armed (character).
 
-      manner_of_death
-         How the individual died (character).
+age
+   Age of the individual (numeric).
 
-      armed
-         Indicates if the individual was armed (character).
+gender
+   Gender of the individual (character).
 
-      age
-         Age of the individual (numeric).
+race
+   Race of the individual (character).
 
-      gender
-         Gender of the individual (character).
+city
+   City where the shooting occurred (character).
 
-      race
-         Race of the individual (character).
+state
+   State where the shooting occurred (character).
 
-      city
-         City where the shooting occurred (character).
+signs_of_mental_illness
+   Whether the individual showed signs of mental illness (logical).
 
-      state
-         State where the shooting occurred (character).
+threat_level
+   Perceived threat level of the individual (character).
 
-      signs_of_mental_illness
-         Whether the individual showed signs of mental illness
-         (logical).
+flee
+   Whether the individual was fleeing (character).
 
-      threat_level
-         Perceived threat level of the individual (character).
+body_camera
+   Whether the officer was wearing a body camera (logical).
 
-      flee
-         Whether the individual was fleeing (character).
+Details
+~~~~~~~
 
-      body_camera
-         Whether the officer was wearing a body camera (logical).
+The dataset name has been changed to 'police_shootings_tbl_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the crimedatasets package and
+assists users in identifying its specific characteristics. The suffix
+'tbl_df' indicates that the dataset is a tibble, which is a modern
+version of a data frame in R. The original content has not been modified
+in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been changed to 'police_shootings_tbl_df' to
-      avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      crimedatasets package and assists users in identifying its
-      specific characteristics. The suffix 'tbl_df' indicates that the
-      dataset is a tibble, which is a modern version of a data frame in
-      R. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Washington Post Fatal Police Shootings database.
+Washington Post Fatal Police Shootings database.

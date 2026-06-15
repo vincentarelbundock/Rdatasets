@@ -1,65 +1,60 @@
-.. container::
+=========== ===============
+lyons.wheat R Documentation
+=========== ===============
 
-   .. container::
+Multi-environment trial of winter wheat at 12 sites in 4 years.
+---------------------------------------------------------------
 
-      =========== ===============
-      lyons.wheat R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Multi-environment trial of winter wheat at 12 sites in
-         4 years.
-         :name: multi-environment-trial-of-winter-wheat-at-12-sites-in-4-years.
+Yield of winter wheat at 12 sites in 4 years.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Yield of winter wheat at 12 sites in 4 years.
+A data frame with 48 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``loc``
+   location, 12 levels
 
-      A data frame with 48 observations on the following 3 variables.
+``year``
+   year, numeric
 
-      ``loc``
-         location, 12 levels
+``yield``
+   yield (kg)
 
-      ``year``
-         year, numeric
+Details
+~~~~~~~
 
-      ``yield``
-         yield (kg)
+Krzanowski uses this briefly for multi-dimensional scaling.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      Krzanowski uses this briefly for multi-dimensional scaling.
+R. Lyons (1980). A review of multidimensional scaling. Unpublished M.Sc.
+dissertation, University of Reading.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      R. Lyons (1980). A review of multidimensional scaling. Unpublished
-      M.Sc. dissertation, University of Reading.
+Krzanowski, W.J. (1988) *Principles of multivariate analysis*. Oxford
+University Press.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Krzanowski, W.J. (1988) *Principles of multivariate analysis*.
-      Oxford University Press.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(lyons.wheat)
+   dat <- lyons.wheat
 
-         ## Not run: 
+   libs(lattice)
+   xyplot(yield~factor(year), dat, group=loc,
+     main="lyons.wheat",
+     auto.key=list(columns=4), type=c('p','l'))
 
-         library(agridat)
-         data(lyons.wheat)
-         dat <- lyons.wheat
-
-         libs(lattice)
-         xyplot(yield~factor(year), dat, group=loc,
-           main="lyons.wheat",
-           auto.key=list(columns=4), type=c('p','l'))
-
-         ## End(Not run)
+   ## End(Not run)

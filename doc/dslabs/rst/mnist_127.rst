@@ -1,64 +1,58 @@
-.. container::
+========= ===============
+mnist_127 R Documentation
+========= ===============
 
-   .. container::
+Useful example for illustrating generative models based on MNIST data
+---------------------------------------------------------------------
 
-      ========= ===============
-      mnist_127 R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Useful example for illustrating generative models
-         based on MNIST data
-         :name: useful-example-for-illustrating-generative-models-based-on-mnist-data
+We only include a randomly selected set of 1s, 2s and 7s along with the
+two predictors based on the proportion of dark pixels in the upper left
+and lower right quadrants respectively. The dataset is divided into
+training and test sets.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      We only include a randomly selected set of 1s, 2s and 7s along
-      with the two predictors based on the proportion of dark pixels in
-      the upper left and lower right quadrants respectively. The dataset
-      is divided into training and test sets.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   mnist_127
 
-      .. code:: R
+Format
+~~~~~~
 
-         mnist_127
+An object of class ``list``.
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      An object of class ``list``.
+- train. A data frame containing training data: labels and predictors.
 
-      .. rubric:: Details
-         :name: details
+- test. A data frame containing test data: labels and predictors.
 
-      -  train. A data frame containing training data: labels and
-         predictors.
+- index_train. The index of the original mnist training data used for
+  the training set.
 
-      -  test. A data frame containing test data: labels and predictors.
+- index_test. The index of the original mnist test data used for the
+  test set.
 
-      -  index_train. The index of the original mnist training data used
-         for the training set.
+References
+~~~~~~~~~~
 
-      -  index_test. The index of the original mnist test data used for
-         the test set.
+Y. LeCun, L. Bottou, Y. Bengio, and P. Haffner. "Gradient-based learning
+applied to document recognition." Proceedings of the IEEE,
+86(11):2278-2324, November 1998.
 
-      .. rubric:: References
-         :name: references
+See Also
+~~~~~~~~
 
-      Y. LeCun, L. Bottou, Y. Bengio, and P. Haffner. "Gradient-based
-      learning applied to document recognition." Proceedings of the
-      IEEE, 86(11):2278-2324, November 1998.
+[read_mnist(), mnist_27]
 
-      .. rubric:: See Also
-         :name: see-also
+Examples
+~~~~~~~~
 
-      [read_mnist(), mnist_27]
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         with(mnist_127$train, plot(x_1, x_2, col = as.numeric(y)))
+   with(mnist_127$train, plot(x_1, x_2, col = as.numeric(y)))

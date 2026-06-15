@@ -1,90 +1,85 @@
-.. container::
+============== ===============
+candy_rankings R Documentation
+============== ===============
 
-   .. container::
+Candy Power Ranking
+-------------------
 
-      ============== ===============
-      candy_rankings R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Candy Power Ranking
-         :name: candy-power-ranking
+The raw data behind the story "The Ultimate Halloween Candy Power
+Ranking"
+https://fivethirtyeight.com/features/the-ultimate-halloween-candy-power-ranking/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "The Ultimate Halloween Candy Power
-      Ranking"
-      https://fivethirtyeight.com/features/the-ultimate-halloween-candy-power-ranking/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   candy_rankings
 
-      .. code:: R
+Format
+~~~~~~
 
-         candy_rankings
+A data frame with 85 rows representing Halloween candy and 13 variables:
 
-      .. rubric:: Format
-         :name: format
+competitorname
+   The name of the Halloween candy.
 
-      A data frame with 85 rows representing Halloween candy and 13
-      variables:
+chocolate
+   Does it contain chocolate?
 
-      competitorname
-         The name of the Halloween candy.
+fruity
+   Is it fruit flavored?
 
-      chocolate
-         Does it contain chocolate?
+caramel
+   Is there caramel in the candy?
 
-      fruity
-         Is it fruit flavored?
+peanutyalmondy
+   Does it contain peanuts, peanut butter or almonds?
 
-      caramel
-         Is there caramel in the candy?
+nougat
+   Does it contain nougat?
 
-      peanutyalmondy
-         Does it contain peanuts, peanut butter or almonds?
+crispedricewafer
+   Does it contain crisped rice, wafers, or a cookie component?
 
-      nougat
-         Does it contain nougat?
+hard
+   Is it a hard candy?
 
-      crispedricewafer
-         Does it contain crisped rice, wafers, or a cookie component?
+bar
+   Is it a candy bar?
 
-      hard
-         Is it a hard candy?
+pluribus
+   Is it one of many candies in a bag or box?
 
-      bar
-         Is it a candy bar?
+sugarpercent
+   The percentile of sugar it falls under within the data set.
 
-      pluribus
-         Is it one of many candies in a bag or box?
+pricepercent
+   The unit price percentile compared to the rest of the set.
 
-      sugarpercent
-         The percentile of sugar it falls under within the data set.
+winpercent
+   The overall win percentage according to 269,000 matchups.
 
-      pricepercent
-         The unit price percentile compared to the rest of the set.
+Source
+~~~~~~
 
-      winpercent
-         The overall win percentage according to 269,000 matchups.
+See
+https://github.com/fivethirtyeight/data/tree/master/candy-power-ranking
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      See
-      https://github.com/fivethirtyeight/data/tree/master/candy-power-ranking
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         # To convert data frame to tidy data (long) format, run:
-         library(dplyr)
-         library(tidyr)
-         library(stringr)
-         candy_rankings_tidy <- candy_rankings %>%
-           pivot_longer(-c(competitorname, sugarpercent, pricepercent, winpercent), 
-              names_to = "characteristics", values_to = "present") %>%
-           mutate(present = as.logical(present)) %>%
-           arrange(competitorname)
+   # To convert data frame to tidy data (long) format, run:
+   library(dplyr)
+   library(tidyr)
+   library(stringr)
+   candy_rankings_tidy <- candy_rankings %>%
+     pivot_longer(-c(competitorname, sugarpercent, pricepercent, winpercent), 
+        names_to = "characteristics", values_to = "present") %>%
+     mutate(present = as.logical(present)) %>%
+     arrange(competitorname)

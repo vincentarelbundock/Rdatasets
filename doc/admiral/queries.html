@@ -1,0 +1,58 @@
+<!DOCTYPE html><html><head><title>R: Queries Dataset</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>queries</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Queries Dataset</h2>
+
+<h3>Description</h3>
+
+<p>Queries Dataset
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>queries
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>An object of class <code>tbl_df</code> (inherits from <code>tbl</code>, <code>data.frame</code>) with 15 rows and 8 columns.
+</p>
+
+
+<h3>Source</h3>
+
+<p>An example of standard query dataset to be used in deriving Standardized
+MedDRA Query variables in ADAE
+</p>
+
+
+<h3>See Also</h3>
+
+<p>Other datasets:
+<code>admiral_adlb</code>,
+<code>admiral_adsl</code>,
+<code>example_qs</code>,
+<code>queries_mh</code>
+</p>
+
+</main>
+
+</div>
+</body></html>

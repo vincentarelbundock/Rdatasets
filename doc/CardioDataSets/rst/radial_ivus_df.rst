@@ -1,93 +1,87 @@
-.. container::
+============== ===============
+radial_ivus_df R Documentation
+============== ===============
 
-   .. container::
+Radial Artery IVUS Patient Data
+-------------------------------
 
-      ============== ===============
-      radial_ivus_df R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Radial Artery IVUS Patient Data
-         :name: radial-artery-ivus-patient-data
+This dataset, radial_ivus_df, is a data frame containing demographic and
+clinical data from 115 patients who underwent intravascular ultrasound
+(IVUS) examination of the radial artery following transradial coronary
+angiography. It includes 15 variables covering patient characteristics,
+laboratory results, and IVUS measurements.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, radial_ivus_df, is a data frame containing
-      demographic and clinical data from 115 patients who underwent
-      intravascular ultrasound (IVUS) examination of the radial artery
-      following transradial coronary angiography. It includes 15
-      variables covering patient characteristics, laboratory results,
-      and IVUS measurements.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(radial_ivus_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(radial_ivus_df)
+A data frame with 115 observations and 15 variables:
 
-      .. rubric:: Format
-         :name: format
+male
+   Male sex indicator (integer: 0/1)
 
-      A data frame with 115 observations and 15 variables:
+age
+   Age in years (integer)
 
-      male
-         Male sex indicator (integer: 0/1)
+height
+   Height in cm (numeric)
 
-      age
-         Age in years (integer)
+weight
+   Weight in kg (numeric)
 
-      height
-         Height in cm (numeric)
+HBP
+   High blood pressure status (integer: 0/1)
 
-      weight
-         Weight in kg (numeric)
+DM
+   Diabetes mellitus status (integer: 0/1)
 
-      HBP
-         High blood pressure status (integer: 0/1)
+smoking
+   Smoking status (factor with 3 levels)
 
-      DM
-         Diabetes mellitus status (integer: 0/1)
+TC
+   Total cholesterol in mg/dL (integer)
 
-      smoking
-         Smoking status (factor with 3 levels)
+TG
+   Triglycerides in mg/dL (integer)
 
-      TC
-         Total cholesterol in mg/dL (integer)
+HDL
+   HDL cholesterol in mg/dL (integer)
 
-      TG
-         Triglycerides in mg/dL (integer)
+LDL
+   LDL cholesterol in mg/dL (integer)
 
-      HDL
-         HDL cholesterol in mg/dL (integer)
+hsCRP
+   High-sensitivity C-reactive protein in mg/L (numeric)
 
-      LDL
-         LDL cholesterol in mg/dL (integer)
+NTAV
+   Normalized total atheroma volume (numeric)
 
-      hsCRP
-         High-sensitivity C-reactive protein in mg/L (numeric)
+PAV
+   Percent atheroma volume (numeric)
 
-      NTAV
-         Normalized total atheroma volume (numeric)
+sex
+   Sex (factor with 2 levels)
 
-      PAV
-         Percent atheroma volume (numeric)
+Details
+~~~~~~~
 
-      sex
-         Sex (factor with 2 levels)
+The dataset name has been kept as 'radial_ivus_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the CardioDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'df' indicates that the dataset is a standard data frame. The original
+content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'radial_ivus_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      CardioDataSets package and assists users in identifying its
-      specific characteristics. The suffix 'df' indicates that the
-      dataset is a standard data frame. The original content has not
-      been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the moonBook package version 0.3.1
+Data taken from the moonBook package version 0.3.1

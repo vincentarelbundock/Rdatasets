@@ -1,82 +1,77 @@
-.. container::
+=========== ===============
+cochran.bib R Documentation
+=========== ===============
 
-   .. container::
+Multi-environment trial of corn, balanced incomplete block design
+-----------------------------------------------------------------
 
-      =========== ===============
-      cochran.bib R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Multi-environment trial of corn, balanced incomplete
-         block design
-         :name: multi-environment-trial-of-corn-balanced-incomplete-block-design
+Balanced incomplete block design in corn
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Balanced incomplete block design in corn
+A data frame with 52 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``loc``
+   location/block, 13 levels
 
-      A data frame with 52 observations on the following 3 variables.
+``gen``
+   genotype/line, 13 levels
 
-      ``loc``
-         location/block, 13 levels
+``yield``
+   yield, pounds/plot
 
-      ``gen``
-         genotype/line, 13 levels
+Details
+~~~~~~~
 
-      ``yield``
-         yield, pounds/plot
+Incomplete block design. Each loc/block has 4 genotypes/lines. The
+blocks are planted at different locations.
 
-      .. rubric:: Details
-         :name: details
+Conducted in 1943 in North Carolina.
 
-      Incomplete block design. Each loc/block has 4 genotypes/lines. The
-      blocks are planted at different locations.
+Source
+~~~~~~
 
-      Conducted in 1943 in North Carolina.
+North Carolina Agricultural Experiment Station, United States Department
+of Agriculture.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      North Carolina Agricultural Experiment Station, United States
-      Department of Agriculture.
+Cochran, W.G. and Cox, G.M. (1957), *Experimental Designs*, 2nd ed.,
+Wiley and Sons, New York, p. 448.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Cochran, W.G. and Cox, G.M. (1957), *Experimental Designs*, 2nd
-      ed., Wiley and Sons, New York, p. 448.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
 
-         ## Not run: 
+   data(cochran.bib)
+   dat <- cochran.bib
 
-         library(agridat)
+   # Show the incomplete-block structure
+   libs(lattice)
+   redblue <- colorRampPalette(c("firebrick", "lightgray", "#375997"))
+   levelplot(yield~loc*gen, dat,
+             col.regions=redblue,
+             xlab="loc (block)", main="cochran.bib - incomplete blocks")
 
-         data(cochran.bib)
-         dat <- cochran.bib
+   with(dat, table(gen,loc))
+   rowSums(as.matrix(with(dat, table(gen,loc))))
+   colSums(as.matrix(with(dat, table(gen,loc))))
 
-         # Show the incomplete-block structure
-         libs(lattice)
-         redblue <- colorRampPalette(c("firebrick", "lightgray", "#375997"))
-         levelplot(yield~loc*gen, dat,
-                   col.regions=redblue,
-                   xlab="loc (block)", main="cochran.bib - incomplete blocks")
+   m1 = aov(yield ~ gen + Error(loc), data=dat)
+   summary(m1)
 
-         with(dat, table(gen,loc))
-         rowSums(as.matrix(with(dat, table(gen,loc))))
-         colSums(as.matrix(with(dat, table(gen,loc))))
-
-         m1 = aov(yield ~ gen + Error(loc), data=dat)
-         summary(m1)
-
-         libs(nlme)
-         m2 = lme(yield ~ -1 + gen, data=dat, random=~1|loc)
+   libs(nlme)
+   m2 = lme(yield ~ -1 + gen, data=dat, random=~1|loc)
 
 
-         ## End(Not run)
+   ## End(Not run)

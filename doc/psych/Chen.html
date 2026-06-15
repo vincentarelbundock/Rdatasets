@@ -78,6 +78,23 @@ cor.plot(Schmid,TRUE)
 print(fa(Schmid,6,rotate="oblimin"),cut=0)  #shows an oblique solution
 round(cov2cor(schmid.leiman),2)
 cor.plot(cov2cor(West),TRUE)
+#do not use the first model, just showing the names
+model &lt;- 'Cognition =~ dif_reasoning +slow_react + confused + forgetful + dif_concent
+          Vitality =~ tired + energetic.R + worn_out      +    peppy.R
+          MentalHealth =~ calm.R  + blue+ happy.R  + nervous+ down
+          DiseaseWorry =~ afraid + frustrated+ worried'
+#model with relative short names  
+rownames(Chen) &lt;- colnames(Chen)        
+model &lt;- 'Cognition =~ diff  + slo + con + for + dcon
+          Vitality =~ tired + ener + worn + pep
+           MentalHealth =~ calm + blue+ hap  + nerv + down  
+           DiseaseWorry =~ afr + frust + wor'
+ #no g          
+chenwest &lt;- CFA(model, Chen[-1,-1])  
+#bifactor         
+chenwest.bi &lt;- CFA.bifactor(model,Chen[-1,-1], all=TRUE)
+om &lt;- omega(Chen[-1,-1],4, covar=TRUE)
+fa.congruence(chenwest.bi,om) #bifactor agrees with sl from omega
 </code></pre>
 
 </main>

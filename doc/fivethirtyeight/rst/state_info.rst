@@ -1,59 +1,55 @@
-.. container::
+========== ===============
+state_info R Documentation
+========== ===============
 
-   .. container::
+Information on each state
+-------------------------
 
-      ========== ===============
-      state_info R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Information on each state
-         :name: information-on-each-state
+State name, abbreviation, US Census designated division & region.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      State name, abbreviation, US Census designated division & region.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   state_info
 
-      .. code:: R
+Format
+~~~~~~
 
-         state_info
+A data frame with 51 rows representing airlines and 4 variables:
 
-      .. rubric:: Format
-         :name: format
+state
+   State name
 
-      A data frame with 51 rows representing airlines and 4 variables:
+state_abbrev
+   State abbreviation
 
-      state
-         State name
+division
+   US Census designated division. Values for ``division`` are nested
+   within ``region``
 
-      state_abbrev
-         State abbreviation
+region
+   US Census designated region
 
-      division
-         US Census designated division. Values for ``division`` are
-         nested within ``region``
+Source
+~~~~~~
 
-      region
-         US Census designated region
+US Census Bureau
+https://en.wikipedia.org/wiki/List_of_regions_of_the_United_States#Interstate_regions.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      US Census Bureau
-      https://en.wikipedia.org/wiki/List_of_regions_of_the_United_States#Interstate_regions.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         library(dplyr)
-         # Number of states in each division
-         state_info %>%
-           count(division)
-         # Number of states in each region
-         state_info %>%
-           count(region)
+   library(dplyr)
+   # Number of states in each division
+   state_info %>%
+     count(division)
+   # Number of states in each region
+   state_info %>%
+     count(region)

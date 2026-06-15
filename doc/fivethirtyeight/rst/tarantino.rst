@@ -1,51 +1,46 @@
-.. container::
+========= ===============
+tarantino R Documentation
+========= ===============
 
-   .. container::
+A Complete Catalog Of Every Time Someone Cursed Or Bled Out In A Quentin Tarantino Movie
+----------------------------------------------------------------------------------------
 
-      ========= ===============
-      tarantino R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: A Complete Catalog Of Every Time Someone Cursed Or
-         Bled Out In A Quentin Tarantino Movie
-         :name: a-complete-catalog-of-every-time-someone-cursed-or-bled-out-in-a-quentin-tarantino-movie
+The raw data behind the story "A Complete Catalog Of Every Time Someone
+Cursed Or Bled Out In A Quentin Tarantino Movie"
+https://fivethirtyeight.com/features/complete-catalog-curses-deaths-quentin-tarantino-films/.
+An analysis using this data was contributed by Olivia Barrows, Jojo
+Miller, and Jayla Nakayama as a package vignette at
+https://fivethirtyeightdata.github.io/fivethirtyeightdata/articles/tarantino_swears.html.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "A Complete Catalog Of Every Time
-      Someone Cursed Or Bled Out In A Quentin Tarantino Movie"
-      https://fivethirtyeight.com/features/complete-catalog-curses-deaths-quentin-tarantino-films/.
-      An analysis using this data was contributed by Olivia Barrows,
-      Jojo Miller, and Jayla Nakayama as a package vignette at
-      https://fivethirtyeightdata.github.io/fivethirtyeightdata/articles/tarantino_swears.html.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   tarantino
 
-      .. code:: R
+Format
+~~~~~~
 
-         tarantino
+A data frame with 1894 rows representing curse/death instances and 4
+variables:
 
-      .. rubric:: Format
-         :name: format
+movie
+   Film title
 
-      A data frame with 1894 rows representing curse/death instances and
-      4 variables:
+profane
+   Whether the event was a profane word (TRUE) or a death (FALSE)
 
-      movie
-         Film title
+word
+   The specific profane word, if the event was a word
 
-      profane
-         Whether the event was a profane word (TRUE) or a death (FALSE)
+minutes_in
+   The number of minutes into the film the event occurred
 
-      word
-         The specific profane word, if the event was a word
+Source
+~~~~~~
 
-      minutes_in
-         The number of minutes into the film the event occurred
-
-      .. rubric:: Source
-         :name: source
-
-      See https://github.com/fivethirtyeight/data/tree/master/tarantino
+See https://github.com/fivethirtyeight/data/tree/master/tarantino

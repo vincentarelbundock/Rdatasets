@@ -1,92 +1,88 @@
-.. container::
+====== ===============
+comics R Documentation
+====== ===============
 
-   .. container::
+comics
+------
 
-      ====== ===============
-      comics R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: comics
-         :name: comics
+A data frame containing information about comic book characters from
+Marvel Comics and DC Comics.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A data frame containing information about comic book characters
-      from Marvel Comics and DC Comics.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   comics
 
-      .. code:: R
+Format
+~~~~~~
 
-         comics
+A data frame with 21821 observations on the following 11 variables.
 
-      .. rubric:: Format
-         :name: format
+name
+   Name of the character. May include: Real name, hero or villain name,
+   alias(es) and/or which universe they live in (i.e. Earth-616 in
+   Marvel's multiverse).
 
-      A data frame with 21821 observations on the following 11
-      variables.
+id
+   Status of the characters identity with levels ``Secret``, ``Publie``,
+   ``⁠No Dual⁠`` and ``Unknown``.
 
-      name
-         Name of the character. May include: Real name, hero or villain
-         name, alias(es) and/or which universe they live in (i.e.
-         Earth-616 in Marvel's multiverse).
+align
+   Character's alignment with levels ``Good``, ``Bad``, ``Neutral`` and
+   ``⁠Reformed Criminals⁠``.
 
-      id
-         Status of the characters identity with levels ``Secret``,
-         ``Publie``, ``⁠No Dual⁠`` and ``Unknown``.
+eye
+   Character's eye color.
 
-      align
-         Character's alignment with levels ``Good``, ``Bad``,
-         ``Neutral`` and ``⁠Reformed Criminals⁠``.
+hair
+   Character's hair color.
 
-      eye
-         Character's eye color.
+gender
+   Character's gender.
 
-      hair
-         Character's hair color.
+gsm
+   Character's classification as a gender or sexual minority.
 
-      gender
-         Character's gender.
+alive
+   Is the character dead or alive?
 
-      gsm
-         Character's classification as a gender or sexual minority.
+appearances
+   Number of comic boooks the character appears in.
 
-      alive
-         Is the character dead or alive?
+first_appear
+   Date of publication for the comic book the character first appeared
+   in.
 
-      appearances
-         Number of comic boooks the character appears in.
+publisher
+   Publisher of the comic with levels ``Marvel`` and ``DC``.
 
-      first_appear
-         Date of publication for the comic book the character first
-         appeared in.
+Examples
+~~~~~~~~
 
-      publisher
-         Publisher of the comic with levels ``Marvel`` and ``DC``.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   library(ggplot2)
+   library(dplyr)
 
-         library(ggplot2)
-         library(dplyr)
+   # Good v Bad
 
-         # Good v Bad
+   plot_data <- comics |>
+     filter(align == "Good" | align == "Bad")
 
-         plot_data <- comics |>
-           filter(align == "Good" | align == "Bad")
-
-         ggplot(plot_data, aes(x = align, fill = align)) +
-           geom_bar() +
-           facet_wrap(~publisher) +
-           scale_fill_manual(values = c(IMSCOL["red", "full"], IMSCOL["blue", "full"])) +
-           theme_minimal() +
-           labs(
-             title = "Is there a balance of power",
-             x = "",
-             y = "Number of characters",
-             fill = ""
-           )
+   ggplot(plot_data, aes(x = align, fill = align)) +
+     geom_bar() +
+     facet_wrap(~publisher) +
+     scale_fill_manual(values = c(IMSCOL["red", "full"], IMSCOL["blue", "full"])) +
+     theme_minimal() +
+     labs(
+       title = "Is there a balance of power",
+       x = "",
+       y = "Number of characters",
+       fill = ""
+     )

@@ -1,48 +1,43 @@
-.. container::
+========== ===============
+undefeated R Documentation
+========== ===============
 
-   .. container::
+Mayweather Is Defined By The Zero Next To His Name
+--------------------------------------------------
 
-      ========== ===============
-      undefeated R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Mayweather Is Defined By The Zero Next To His Name
-         :name: mayweather-is-defined-by-the-zero-next-to-his-name
+The raw data behind: "Mayweather Is Defined By The Zero Next To His
+Name"
+https://fivethirtyeight.com/features/mayweather-is-defined-by-the-zero-next-to-his-name/
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind: "Mayweather Is Defined By The Zero Next To
-      His Name"
-      https://fivethirtyeight.com/features/mayweather-is-defined-by-the-zero-next-to-his-name/
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   undefeated
 
-      .. code:: R
+Format
+~~~~~~
 
-         undefeated
+A data frame with 2125 rows representing boxing matches and 4 variables:
 
-      .. rubric:: Format
-         :name: format
+name
+   Name of boxer
 
-      A data frame with 2125 rows representing boxing matches and 4
-      variables:
+url
+   URL with the boxer's record
 
-      name
-         Name of boxer
+date
+   Date of the match
 
-      url
-         URL with the boxer's record
+wins
+   Number of cumulative wins for the boxer including the match at the
+   specified date
 
-      date
-         Date of the match
+Source
+~~~~~~
 
-      wins
-         Number of cumulative wins for the boxer including the match at
-         the specified date
-
-      .. rubric:: Source
-         :name: source
-
-      Box Rec
+Box Rec

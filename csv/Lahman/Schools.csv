@@ -2,1207 +2,1287 @@ rownames,schoolID,name_full,city,state,country
 1,abilchrist,Abilene Christian University,Abilene,TX,USA
 2,adelphi,Adelphi University,Garden City,NY,USA
 3,adrianmi,Adrian College,Adrian,MI,USA
-4,alabamaam,Alabama A&M University,Normal,AL,USA
-5,alabamast,Alabama State University,Montgomery,AL,USA
-6,albanyst,Albany State University,Albany,GA,USA
-7,albertsnid,Albertson College,Caldwell,ID,USA
-8,albionmi,Albion College,Albion,MI,USA
-9,albrightpa,Albright College,Reading,PA,USA
-10,alcornst,Alcorn State University,Lorman,MS,USA
-11,caallan,Allan Hancock College,Santa Maria,CA,USA
-12,allegheny,Allegheny College,Meadville,PA,USA
-13,almami,Alma College,Alma,MI,USA
-14,alverniapa,Alvernia College,Reading,PA,USA
-15,txalvin,Alvin Community College,Alvin,TX,USA
-16,amerintl,American International University,Springfield,MA,USA
-17,caameri,American River College,Sacramento,CA,USA
-18,american,American University,Washington,DC,USA
-19,amherstma,Amherst College,Amherst,MA,USA
-20,andersonsc,Anderson College,Anderson,SC,USA
-21,inander,Anderson University,Anderson,IN,USA
-22,txangjc,Angelina College,Lufkin,TX,USA
-23,txangel,Angelo State University,San Angelo,TX,USA
-24,mdaacco,Anne Arundel Community College,Arnold,MD,USA
-25,caantel,Antelope Valley College,Lancaster,CA,USA
-26,appalst,Appalachian State University,Boone,NC,USA
-27,aquinasmi,Aquinas College,Grand Rapids,MI,USA
-28,arizonast,Arizona State University,Tempe,AZ,USA
-29,azweste,Arizona Western College,Yuma,AZ,USA
-30,arkansasst,Arkansas State University,Jonesboro,AR,USA
-31,arktech,Arkansas Tech University,Russellville,AR,USA
-32,armstratl,Armstrong Atlantic State University,Savannah,GA,USA
-33,ashland,Ashland University,Ashland,OH,USA
-34,maassum,Assumption College,Worcester,MA,USA
-35,athensst,Athens State University,Athens,AL,USA
-36,auburn,Auburn University,Auburn,AL,USA
-37,auburnmont,Auburn University at Montgomery,Montgomery,AL,USA
-38,augsburgmn,Augsburg College,Minneapolis,MN,USA
-39,ilaugus,Augustana College,Rock Island,IL,USA
-40,austincol,Austin College,Sherman,TX,USA
-41,txausti,Austin Community College,Austin,TX,USA
-42,austinpeay,Austin Peay State University,Clarksville,TN,USA
-43,azusapac,Azusa Pacific University,Azusa,CA,USA
-44,baconeok,Bacone College,Muskogee,OK,USA
-45,bakerks,Baker University,Baldwin City,KS,USA
-46,cabakjc,Bakersfield College,Bakersfield,CA,USA
-47,baldwalloh,Baldwin-Wallace College,Berea,OH,USA
-48,ballst,Ball State University,Muncie,IN,USA
-49,mdbalcc,Baltimore City Community College,Baltimore,MD,USA
-50,flbarry,Barry University,Miami Shores,FL,USA
-51,cabarst,Barstow Community College,Barstow,CA,USA
-52,bartonnc,Barton College,Wilson,NC,USA
-53,ksbarto,Barton County Community College,Great Bend,KS,USA
-54,batesme,Bates College,Lewiston,ME,USA
-55,baylor,Baylor University,Waco,TX,USA
-56,kybella,Bellarmine College,Louisville,KY,USA
-57,wabelle,Bellevue Community College,Bellevue,WA,USA
-58,nebellevue,Bellevue University,Bellevue,NE,USA
-59,belmontab,Belmont Abbey College,Belmont,NC,USA
-60,belmont,Belmont University,Nashville,TN,USA
-61,beloitwi,Beloit College,Beloit,WI,USA
-62,mnbemid,Bemidji State University,Bemidji,MN,USA
-63,benedctnks,Benedictine College,Atchison,KS,USA
-64,dcbenfr,Benjamin Franklin University,Washington,DC,USA
-65,njberge,Bergen Community College,Paramus,NJ,USA
-66,baruchcuny,Bernard M Baruch College,New York,NY,USA
-67,gaberry,Berry College,Mount Berry,GA,USA
-68,bethanywv,Bethany College,Bethany,WV,USA
-69,betheltn,Bethel College,McKenzie,TN,USA
-70,inbethel,Bethel College,Mishawaka,IN,USA
-71,bethcook,Bethune-Cookman College,Daytona Beach,FL,USA
-72,albevil,Bevill State Community College,Sumiton,AL,USA
-73,biolaca,Biola University,La Mirada,CA,USA
-74,birmsouth,Birmingham-Southern College,Birmingham,AL,USA
-75,blackbrnil,Blackburn College,Carlinville,IL,USA
-76,txblinn,Blinn College,Brenham,TX,USA
-77,bloomsburg,Bloomsburg University of Pennsylvania,Bloomsburg,PA,USA
-78,orbluem,Blue Mountain Community College,Pendleton,OR,USA
-79,bluefield,Bluefield College,Bluefield,VA,USA
-80,boisest,Boise State University,Boise,ID,USA
-81,njborde,Bordentown Military Institute,Bordentown,NJ,USA
-82,labossi,Bossier Parish Community College,Bossier City,LA,USA
-83,bostoncoll,Boston College,Chestnut Hill,MA,USA
-84,bostonuniv,Boston University,Boston,MA,USA
-85,bowdoinme,Bowdoin College,Brunswick,ME,USA
-86,bowlgreen,Bowling Green State University,Bowling Green,OH,USA
-87,bradley,Bradley University,Peoria,IL,USA
-88,brandeisma,Brandeis University,Waltham,MA,USA
-89,debrand,Brandywine Junior College,Wilmington,DE,USA
-90,ncbreva,Brevard College,Brevard,NC,USA
-91,flbreva,Brevard Community College,Cocoa,FL,USA
-92,brewparker,Brewton-Parker College,Mount Vernon,GA,USA
-93,brdgwatrva,Bridgewater College,Bridgewater,VA,USA
-94,bridgwtrst,Bridgewater State College,Bridgewater,MA,USA
-95,byu,Brigham Young University,Provo,UT,USA
-96,idbyuid,Brigham Young University-Idaho,Rexburg,ID,USA
-97,njbrook,Brookdale Community College,Lincroft,NJ,USA
-98,brklyncuny,Brooklyn College - The City University of New York,Brooklyn,NY,USA
-99,flbrowa,Broward Community College,Fort Lauderdale,FL,USA
-100,brown,Brown University,Providence,RI,USA
-101,bryant,Bryant College,Smithfield,RI,USA
-102,bucknell,Bucknell University,Lewisburg,PA,USA
-103,pabucks,Bucks County Community College,Lewisburg,PA,USA
-104,buenavista,Buena Vista University,Storm Lake,IA,USA
-105,buffalost,Buffalo State College,Buffalo,NY,USA
-106,njburli,Burlington County College,Pemberton,NJ,USA
-107,txburne,Burnetta College,Venus,TX,USA
-108,pabutle,Butler County Community College,Butler,PA,USA
-109,ksbutle,Butler County Community College,El Dorado,KS,USA
-110,butler,Butler University,Indianapolis,IN,USA
-111,cabutte,Butte College,Oroville,CA,USA
-112,cacabri,Cabrillo College,Aptos,CA,USA
-113,alcalho,Calhoun Community College,Decatur,AL,USA
-114,calutheran,California Lutheran University,Thousand Oaks,CA,USA
-115,calpolypom,California Polytechnic State University - Pomona,Pomona,CA,USA
-116,calpoly,California Polytechnic State University - San Luis Obispo,San Luis Obispo,CA,USA
-117,chicost,California State University Chico,Chico,CA,USA
-118,csdomhills,California State University Dominguez Hills,Carson,CA,USA
-119,cshayward,California State University East Bay,Hayward,CA,USA
-120,fresnost,California State University Fresno,Fresno,CA,USA
-121,calstfull,California State University Fullerton,Fullerton,CA,USA
-122,longbeach,California State University Long Beach,Long Beach,CA,USA
-123,calstla,California State University Los Angeles,Los Angeles,CA,USA
-124,calstnorth,California State University Northridge,Los Angeles,CA,USA
-125,sacstate,California State University Sacramento,Sacramento,CA,USA
-126,casanbe,California State University San Bernardino,San Bernardino,CA,USA
-127,csstanisl,California State University Stanislaus,Turlock,CA,USA
-128,calipa,California University of Pennsylvania,California,PA,USA
-129,njcamde,Camden County College,Blackwood,NJ,USA
-130,cameronok,Cameron University,Lawton,OK,USA
-131,campbell,Campbell University,Buies Creek,NC,USA
-132,cacanad,Canada College,Redwood City,CA,USA
-133,canisius,Canisius College,Buffalo,NY,USA
-134,incante,Canterbury College,Danville,IN,USA
-135,ohcapit,Capital University,Bexley,OH,USA
-136,crdstritch,Cardinal Stritch University,Milwaukee,WI,USA
-137,pacarli,Carlisle Indian Industrial School,Carlisle,PA,USA
-138,crngmellon,Carnegie Mellon University,Pittsburgh,PA,USA
-139,wicarro,Carroll College,Waukesha,WI,USA
-140,carsnewm,Carson-Newman College,Jefferson City,TN,USA
-141,carthagewi,Carthage College,Kenosha,WI,USA
-142,ohcaset,Case Institute of Applied Sciences,Cleveland,OH,USA
-143,casewestrn,Case Western Reserve University,Cleveland,OH,USA
-144,catawba,Catawba College,Salisbury,NC,USA
-145,catholic,Catholic University of America,Washington,DC,USA
-146,mdcecil,Cecil Community College,North East,MD,USA
-147,njcente,Centenary College,Hackettstown,NJ,USA
-148,centenary,Centenary College of Louisiana,Shreveport,LA,USA
-149,azcentr,Central Arizona College,Coolidge,AZ,USA
-150,cconnst,Central Connecticut State University,New Britain,CT,USA
-151,flcentr,Central Florida Community College,Ocala,FL,USA
-152,cmichigan,Central Michigan University,Mount Pleasant,MI,USA
-153,centralst,Central State University,Wilberforce,OH,USA
-154,cwashngton,Central Washington University,Ellensburg,WA,USA
-155,wacentr,Centralia College,Centralia,WA,USA
-156,centreky,Centre College,Danville,KY,USA
-157,cacerri,Cerritos College,Norwalk,CA,USA
-158,cachabo,Chabot College,Hayward,CA,USA
-159,cachaff,Chaffey College,Rancho Cucamonga,CA,USA
-160,azchand,Chandler-Gilbert Community College,Chandler,AZ,USA
-161,chapmanca,Chapman University,Orange,CA,USA
-162,charlsouth,Charleston Southern University,Charleston,SC,USA
-163,alchatt,Chattahoochee Valley Community College,Phenix City,AL,USA
-164,tnchatt,Chattanooga State Technical Community College,Chattanooga,TN,USA
-165,orcheme,Chemeketa Community College,Salem,OR,USA
-166,pacheyn,Cheyney University,Cheyney,PA,USA
-167,chicagost,Chicago State University,Chicago,IL,USA
-168,flchipo,Chipola College,Marianna,FL,USA
-169,ncchowa,Chowan College,Murfreesboro,NC,USA
-170,tnchris,Christian Brothers University,Memphis,TN,USA
-171,cacitru,Citrus College,Glendora,CA,USA
-172,casfcco,City College of San Francisco,San Francisco,CA,USA
-173,clrmuddscr,Claremont McKenna College,Claremont,CA,USA
-174,txclare,Clarendon College,Clarendon,TX,USA
-175,clarion,Clarion University of Pennsylvania,Clarion,PA,USA
-176,waclark,Clark College,Vancouver,WA,USA
-177,clarksonny,Clarkson University,Potsdam,NY,USA
-178,clemson,Clemson University,Clemson,SC,USA
-179,tncleve,Cleveland State Community College,Cleveland,TN,USA
-180,clevst,Cleveland State University,Cleveland,OH,USA
-181,kscloud,Cloud County Community College,Concordia,KS,USA
-182,txcoast,Coastal Bend College,Beeville,TX,USA
-183,coastcar,Coastal Carolina University,Conway,SC,USA
-184,gacoast,Coastal Georgia Community College,Brunswick,GA,USA
-185,azcochi,Cochise Community College,Douglas,AZ,USA
-186,colbyme,Colby College,Waterville,ME,USA
-187,colgate,Colgate University,Hamilton,NY,USA
-188,charleston,College of Charleston,Charleston,SC,USA
-189,ildupag,College of DuPage,Glen Ellyn,IL,USA
-190,eutah,College of Eastern Utah,Price,UT,USA
-191,camarin,College of Marin,Kentfield,CA,USA
-192,cacsmat,College of San Mateo,San Mateo,CA,USA
-193,idcosid,College of Southern Idaho,Twin Falls,ID,USA
-194,mdcolsm,College of Southern Maryland,La Plata,MD,USA
-195,nvsouth,College of Southern Nevada,Henderson,NV,USA
-196,strose,College of St. Rose,Albany,NY,USA
-197,cacanyo,College of the Canyons,Santa Clarita,CA,USA
-198,holycross,College of the Holy Cross,Worcester,MA,USA
-199,caredwo,College of the Redwoods,Eureka,CA,USA
-200,casequo,College of the Sequoias,Visalia,CA,USA
-201,casiski,College of the Siskiyous,Weed,CA,USA
-202,nmsouth,College of the Southwest,Hobbs,NM,USA
-203,willmary,College of William and Mary,Williamsburg,VA,USA
-204,woosteroh,College of Wooster,Wooster,OH,USA
-205,txcolli,Collin College,Dallas,TX,USA
-206,colocollege,Colorado College,Colorado Springs,CO,USA
-207,comines,Colorado School of Mines,Golden,CO,USA
-208,coloradost,Colorado State University,Fort Collins,CO,USA
-209,costpue,Colorado State University-Pueblo,Pueblo,CO,USA
-210,wacolum,Columbia Basin College,Pasco,WA,USA
-211,tncolum,Columbia State Community College,Columbia,TN,USA
-212,columbia,Columbia University,New York,NY,USA
-213,gacolum,Columbus State University,Columbus,GA,USA
-214,paalleb,Community College of Allegheny County - Boyce Campus,Monroeville,PA,USA
-215,paalles,Community College of Allegheny County - South Campus,West Mifflin,PA,USA
-216,mdccbcc,Community College of Baltimore County - Catonsville Campus,Catonsville,MD,USA
-217,mdccbce,Community College of Baltimore County - Essex Campus,Essex,MD,USA
-218,pabeave,Community College of Beaver County,Monaca,PA,USA
-219,paccphi,Community College of Philadelphia,Philadelphia,PA,USA
-220,ccri,Community College of Rhode Island,Warwick,RI,USA
-221,cacompt,Compton Community College,Compton,CA,USA
-222,concordny,Concordia College-Bronxville,Bronxville,NY,USA
-223,cncrdiacol,Concordia College-Moorhead,Moorhead,MN,USA
-224,moconco,Concordia Seminary-St. Louis,St. Louis,MO,USA
-225,inconco,Concordia Theological Seminary,Fort Wayne,IN,USA
-226,concrdiatx,Concordia University at Austin,Austin,TX,USA
-227,concrdiamn,Concordia University-St. Paul,St. Paul,MN,USA
-228,okconno,Connors State College,Warner,OK,USA
-229,cacontr,Contra Costa College,San Pablo,CA,USA
-230,mscopia,Copiah-Lincoln Community College,Wesson,MS,USA
-231,orcorba,Corban College,Salem,OR,USA
-232,cornellia,Cornell College,Mount Vernon,IA,USA
-233,cornell,Cornell University,Ithaca,NY,USA
-234,cacosum,Cosumnes River College,Sacramento,CA,USA
-235,njccmor,County College of Morris,Randolph,NJ,USA
-236,kscowle,Cowley County Community College,Arkansas City,KS,USA
-237,creighton,Creighton University,Omaha,NE,USA
-238,mocrowd,Crowder College,Neosho,MO,USA
-239,cacuest,Cuesta College,San Luis Obispo,CA,USA
-240,moculve,Culver-Stockton College,Canton,MO,USA
-241,cumbrlndtn,Cumberland University,Lebanon,TN,USA
-242,ohcuyah,Cuyahoga Community College,Cleveland,OH,USA
-243,cacypre,Cypress College,Cypress,CA,USA
-244,dallasbapt,Dallas Baptist University,Dallas,TX,USA
-245,dartmouth,Dartmouth College,Hanover,NH,USA
-246,davidson,Davidson College,Davidson,NC,USA
-247,daviselkins,Davis and Elkins College,Elkins,WV,USA
-248,fldayto,Daytona Beach Community College,Daytona Beach,FL,USA
-249,madeajc,Dean College,Franklin,MA,USA
-250,cadeanz,DeAnza College,Cupertino,CA,USA
-251,padelaw,Delaware County Community College,Marple,PA,USA
-252,delawarest,Delaware State University,Dover,DE,USA
-253,dedelaw,Delaware Technical and Community College,Dover,DE,USA
-254,ladelga,Delgado Community College,New Orleans,LA,USA
-255,deltast,Delta State University,Cleveland,MS,USA
-256,denisonoh,Denison University,Granville,OH,USA
-257,depaul,DePaul University,Chicago,IL,USA
-258,depauwin,DePauw University,Greencastle,IN,USA
-259,iadmacc,Des Moines Area Community College,Boone,IA,USA
-260,iadesmo,Des Moines University,Des Moines,IA,USA
-261,padesal,DeSales University,Center Valley,PA,USA
-262,midetrte,Detroit Institute of Technology,Detroit,MI,USA
-263,cadiabl,Diablo Valley College,Pleasant Hill,CA,USA
-264,dickinson,Dickinson College,Carlisle,PA,USA
-265,utdixie,Dixie State College of Utah,St. George,UT,USA
-266,ildixon,Dixon College,Dixon,IL,USA
-267,nedoane,Doane College,Crete,NE,USA
-268,dominican,Dominican College,Orangeburg,NY,USA
-269,drake,Drake University,Des Moines,IA,USA
-270,modrury,Drury University,Springfield,MO,USA
-271,duke,Duke University,Durham,NC,USA
-272,duquesne,Duquesne University,Pittsburgh,PA,USA
-273,nydutch,Dutchess Community College,Poughkeepsie,NY,USA
-274,ecarolina,East Carolina University,Greenville,NC,USA
-275,moeastc,East Central College,Union,MO,USA
-276,mseccco,East Central Community College,Decatur,MS,USA
-277,ecentralok,East Central University,Ada,OK,USA
-278,caelajc,East Los Angeles College,Monterey Park,CA,USA
-279,okeaste,East Oklahoma State College,Wilburton,OK,USA
-280,estroud,East Stroudsburg University of Pennsylvania,East Stroudsburg,PA,USA
-281,etennst,East Tennessee State University,Johnson City,TN,USA
-282,etxbaptist,East Texas Baptist University,Marshall,TX,USA
-283,econnst,Eastern Connecticut State University,Willimantic,CT,USA
-284,eillinois,Eastern Illinois University,Charleston,IL,USA
-285,ekentucky,Eastern Kentucky University,Richmond,KY,USA
-286,vaemenn,Eastern Mennonite University,Harrisonburg,VA,USA
-287,emichigan,Eastern Michigan University,Ypsilanti,MI,USA
-288,nmeaste,Eastern New Mexico University,Portales,NM,USA
-289,txeastf,Eastfield College,Mesquite,TX,USA
-290,eckerd,Eckerd College,St. Petersburg,FL,USA
-291,edinboro,Edinboro University of Pennsylvania,Edinboro,PA,USA
-292,flediso,Edison College,Fort Myers,FL,USA
-293,waedmon,Edmonds Community College,Lynnwood,WA,USA
-294,caelcam,El Camino College,Torrance,CA,USA
-295,txelpas,El Paso Community College,El Paso,TX,USA
-296,elizbthtwn,Elizabethtown College,Elizabethtown,PA,USA
-297,iaellsw,Ellsworth College,Iowa Falls,IA,USA
-298,ilelmhu,Elmhurst College,Elmhurst,IL,USA
-299,elon,Elon University,Elon,NC,USA
-300,maemers,Emerson College,Boston,MA,USA
-301,emoryhenry,Emory and Henry College,Emory,VA,USA
-302,emoryga,Emory University,Atlanta,GA,USA
-303,emporiast,Emporia State University,Emporia,KS,USA
-304,alenter,Enterprise-Ozark Community College,Enterprise,AL,USA
-305,nyeriec,Erie Community College,Buffalo,NY,USA
-306,erskine,Erskine College,Due West,SC,USA
-307,eurekail,Eureka College,Eureka,IL,USA
-308,waevere,Everett Community College,Everett,WA,USA
-309,fairfield,Fairfield University,Fairfield,CT,USA
-310,fairldick,Fairleigh Dickinson University - Metropolitan Campus,Teaneck,NJ,USA
-311,alfscco,Faulkner State College,Bay Minette,AL,USA
-312,alfaulk,Faulkner University,Montgomery,AL,USA
-313,fayetvilst,Fayetteville State University,Fayetteville,NC,USA
-314,cafeath,Feather River College,Quincy,CA,USA
-315,ferrisst,Ferris State University,Big Rapids,MI,USA
-316,ferrumva,Ferrum College,Ferrum,VA,USA
-317,flagler,Flagler College,St. Augustine,FL,USA
-318,floridaam,Florida Agricultural and Mechanical University,Tallahassee,FL,USA
-319,flatlantic,Florida Atlantic University,Boca Raton,FL,USA
-320,flflajc,Florida College,Jacksonville,FL,USA
-321,flgateway,Florida Gateway College,Lake City,FL,USA
-322,flgulfc,Florida Gulf Coast University,Fort Myers,FL,USA
-323,fltech,Florida Institute of Technology,Melbourne,FL,USA
-324,flinternat,Florida International University,Miami,FL,USA
-325,flsouthern,Florida Southern College,Lakeland,FL,USA
-326,floridast,Florida State University,Tallahassee,FL,USA
-327,cafooth,Foothill College,Los Altos Hills,CA,USA
-328,fordham,Fordham University,New York,NY,USA
-329,forthays,Fort Hays State University,Hays,KS,USA
-330,coftlew,Fort Lewis College,Durango,CO,USA
-331,ksftsco,Fort Scott Community College,Fort Scott,KS,USA
-332,scfranc,Francis Marion University,Florence,SC,USA
-333,txfrank,Frank Phillips College,Borger,TX,USA
-334,frankmarsh,Franklin and Marshall College,Lancaster,PA,USA
-335,franklinin,Franklin College,Franklin,IN,USA
-336,freedhrdmn,Freed-Hardeman University,Henderson,TN,USA
-337,cafrecc,Fresno City College,Fresno,CA,USA
-338,cafrepa,Fresno Pacific University,Fresno,CA,USA
-339,friendsks,Friends University,Wichita,KS,USA
-340,mdfrost,Frostburg State University,Frostburg,MD,USA
-341,cafulle,Fullerton College,Fullerton,CA,USA
-342,furman,Furman University,Greenville,SC,USA
-343,algadsd,Gadsden State Community College,Gadsden,AL,USA
-344,gallaudet,Gallaudet University,Washington,DC,USA
-345,txgalve,Galveston College,Galveston,TX,USA
-346,gannon,Gannon University,Erie,PA,USA
-347,ksgarde,Garden City Community College,Garden City,KS,USA
-348,gardwebb,Gardner-Webb University,Boiling Springs,NC,USA
-349,mdgarre,Garrett Community College,McHenry,MD,USA
-350,cagavil,Gavilan College,Gilroy,CA,USA
-351,genevapa,Geneva College,Beaver Falls,PA,USA
-352,georgefox,George Fox University,Newberg,OR,USA
-353,georgemas,George Mason University,Fairfax,VA,USA
-354,georgewash,George Washington University,Washington,DC,USA
-355,georgtwnky,Georgetown College,Georgetown,KY,USA
-356,georgetown,Georgetown University,Washington,DC,USA
-357,gacollege,Georgia College and State University,Milledgeville,GA,USA
-358,gatech,Georgia Institute of Technology,Atlanta,GA,USA
-359,gagpjco,Georgia Perimeter College,Covington,GA,USA
-360,georgiasou,Georgia Southern University,Statesboro,GA,USA
-361,gaswestern,Georgia Southwestern State University,Americus,GA,USA
-362,georgiast,Georgia State University,Atlanta,GA,USA
-363,gettysburg,Gettysburg College,Gettysburg,PA,USA
-364,ohgiffi,Giffin Junior College,Van Wert,OH,USA
-365,migocco,Glen Oaks Community College,Centreville,MI,USA
-366,caglend,Glendale Community College,Glendale,CA,USA
-367,glenvilst,Glenville State College,Glenville,WV,USA
-368,njglouc,Gloucester County College,Sewell,NJ,USA
-369,cagolde,Golden West College,Huntington Beach,CA,USA
-370,gonzaga,Gonzaga University,Spokane,WA,USA
-371,grambling,Grambling State University,Grambling,LA,USA
-372,grcanyon,Grand Canyon University,Phoenix,AZ,USA
-373,migrand,Grand Rapids Community College,Grand Rapids,MI,USA
-374,grvalleyst,Grand Valley State University,Allendale,MI,USA
-375,grandview,Grand View College,Des Moines,IA,USA
-376,txgrays,Grayson County College,Denison,TX,USA
-377,wagreen,Green River Community College,Auburn,WA,USA
-378,grinnellia,Grinnell College,Grinnell,IA,USA
-379,grossmont,Grossmont College,El Cajon,CA,USA
-380,grovecity,Grove City College,Grove City,PA,USA
-381,guilfordnc,Guilford College,Greensboro,NC,USA
-382,flgccco,Gulf Coast Community College,Panama City,FL,USA
-383,msgcmac,Gulf Coast Military Academy,Gulfport,MS,USA
-384,mdhager,Hagerstown Community College,Hagerstown,MD,USA
-385,pahahne,Hahnemann University,Philadelphia,PA,USA
-386,hamlinemn,Hamline University,St. Paul,MN,USA
-387,hampsydney,Hampden-Sydney College,Hampden-Sydney,VA,USA
-388,inhanov,Hanover College,Hanover,IN,USA
-389,harding,Harding University,Searcy,AR,USA
-390,hardinsimm,Hardin-Simmons University,Abilene,TX,USA
-391,moharri,Harris-Stowe State College,St. Louis,MO,USA
-392,iltruma,Harry S Truman College,Chicago,IL,USA
-393,cahartn,Hartnell College,Salinas,CA,USA
-394,hartwickny,Hartwick College,Oneonta,NY,USA
-395,harvard,Harvard University,Cambridge,MA,USA
-396,haskellks,Haskell Indian Nations University,Lawrence,KS,USA
-397,nehasti,Hastings College,Hastings,NE,USA
-398,pahaver,Haverford College in Pennsylvania,Haverford,PA,USA
-399,hawaiipac,Hawaii Pacific University,Honolulu,HI,USA
-400,heidelberg,Heidelberg College,Tiffin,OH,USA
-401,hendrsonst,Henderson State University,Arkadelphia,AR,USA
-402,hendrixar,Hendrix College,Conway,AR,USA
-403,mihenry,Henry Ford Community College,Dearborn,MI,USA
-404,highpoint,High Point University,High Point,NC,USA
-405,iahighl,Highland Park College,Des Moines,IA,USA
-406,txhillj,Hill College,Hillsboro,TX,USA
-407,flhills,Hillsborough Community College,Tampa,FL,USA
-408,hillsdale,Hillsdale College,Hillsdale,MI,USA
-409,mshinds,Hinds Community College,Raymond,MS,USA
-410,hiramoh,Hiram College,Hiram,OH,USA
-411,tnhiwas,Hiwassee College,Madisonville,TN,USA
-412,hobartny,Hobart and William Smith Colleges,Geneva,NY,USA
-413,hofstra,Hofstra University,Hempstead,NY,USA
-414,msholme,Holmes Community College,Ridgeland,MS,USA
-415,hopemi,Hope College,Holland,MI,USA
-416,houstnbapt,Houston Baptist University,Houston,TX,USA
-417,txhowar,Howard College,Big Spring,TX,USA
-418,howrdpayne,Howard Payne University,Brownwood,TX,USA
-419,howard,Howard University,Washington,DC,USA
-420,humboldtst,Humboldt State University,Arcata,CA,USA
-421,huntercuny,Hunter College - The City University of New York,New York,NY,USA
-422,kshutch,Hutchinson Community College,Hutchinson,KS,USA
-423,idahost,Idaho State University,Pocatello,ID,USA
-424,ilcenjc,Illinois Central College,East Peoria,IL,USA
-425,ilcollege,Illinois College,Jacksonville,IL,USA
-426,illinoisst,Illinois State University,Normal,IL,USA
-427,ilwesleyan,Illinois Wesleyan University,Bloomington,IL,USA
-428,caimper,Imperial Valley College,Imperial,CA,USA
-429,ksindep,Independence Community College,Independence,KS,USA
-430,iaindia,Indian Hills Community College,Centerville,IA,USA
-431,flindia,Indian River Community College,Fort Pierce,FL,USA
-432,inintec,Indiana Institute of Technology,Fort Wayne,IN,USA
-433,indianast,Indiana State University,Terre Haute,IN,USA
-434,indianapa,Indiana University of Pennsylvania,Indiana,PA,USA
-435,indiana,Indiana University-Bloomington,Bloomington,IN,USA
-436,inindwe,Indiana Wesleyan University,Marion,IN,USA
-437,iona,Iona College,New Rochelle,NY,USA
-438,iowast,Iowa State University,Ames,IA,USA
-439,iawesleyan,Iowa Wesleyan College,Mount Pleasant,IA,USA
-440,iawescc,Iowa Western Community College,Council Bluffs,IA,USA
-441,msitawa,Itawamba Community College,Fulton,MS,USA
-442,ithacany,Ithaca College,Ithaca,NY,USA
-443,tnjacks,Jackson State Community College,Jackson,TN,USA
-444,jacksonst,Jackson State University,Jackson,MS,USA
-445,jksonvilst,Jacksonville State University,Jacksonville,AL,USA
-446,jacksonvil,Jacksonville University,Jacksonville,FL,USA
-447,jamesmad,James Madison University,Harrisonburg,VA,USA
-448,mojcjco,Jefferson City Junior College,Jefferson City,MO,USA
-449,mojeffe,Jefferson College,Hillsboro,MO,USA
-450,aljeffd,Jefferson Davis Community College,Brewton,AL,USA
-451,illogan,John A Logan College,Carterville,IL,USA
-452,johnbrwnar,John Brown University,Siloam Springs,AR,USA
-453,ohjohnc,John Carroll University,University Heights,OH,USA
-454,nepersh,John J Pershing College,Beatrice,NE,USA
-455,johnshpkns,Johns Hopkins University,Baltimore,MD,USA
-456,ksjohns,Johnson County Community College,Overland Park,KS,USA
-457,juniatapa,Juniata College,Huntingdon,PA,USA
-458,kalamazoo,Kalamazoo College,Kalamazoo,MI,USA
-459,mikalam,Kalamazoo Valley Community College,Kalamazoo,MI,USA
-460,ilkanka,Kankakee Community College,Kankakee,IL,USA
-461,kskccco,Kansas City Kansas Community College,Kansas City,KS,USA
-462,kansasst,Kansas State University,Manhattan,KS,USA
-463,ilkaska,Kaskaskia College,Arcola,IL,USA
-464,keenest,Keene State College,Keene,NH,USA
-465,ilkenne,Kennedy-King College,Chicago,IL,USA
-466,kennesawst,Kennesaw State University,Kennesaw,GA,USA
-467,kentst,Kent State University,Kent,OH,USA
-468,kentuckyst,Kentucky State University,Frankfort,KY,USA
-469,kywesleyan,Kentucky Wesleyan College,Owensboro,KY,USA
-470,kenyonoh,Kenyon College,Gambier,OH,USA
-471,txkilgo,Kilgore College,Kilgore,TX,USA
-472,tnkingc,King College,Bristol,TN,USA
-473,nykbcco,Kingsborough Community College,Brooklyn,NY,USA
-474,iakirkw,Kirkwood Community College,Cedar Rapids,IA,USA
-475,ilkishw,Kishwaukee College,Malta,IL,USA
-476,knoxil,Knox College,Galesburg,IL,USA
-477,kutztown,Kutztown University of Pennsylvania,Kutztown,PA,USA
-478,kslabet,Labette Community College,Parsons,KS,USA
-479,lafayette,Lafayette College,Easton,PA,USA
-480,ohlerie,Lake Erie College,Painesville,OH,USA
-481,lakeforest,Lake Forest College,Lake Forest,IL,USA
-482,illakel,Lake Land College,Mattoon,IL,USA
-483,milmich,Lake Michigan College,Benton Harbor,MI,USA
-484,ohlakel,Lakeland Community College,Kirtland,OH,USA
-485,colamar,Lamar Community College,Lamar,CO,USA
-486,lamar,Lamar University,Beaumont,TX,USA
-487,lambuthtn,Lambuth University,Jackson,TN,USA
-488,lanecol,Lane College,Jackson,TN,USA
-489,calaney,Laney College,Oakland,CA,USA
-490,palaroc,LaRoche College,Pittsburgh,PA,USA
-491,lasalle,LaSalle University,Philadelphia,PA,USA
-492,calasse,Lassen College,Susanville,CA,USA
-493,wilawre,Lawrence University,Appleton,WI,USA
-494,lebvalley,Lebanon Valley College,Annville,PA,USA
-495,txleejc,Lee College,Baytown,TX,USA
-496,lee,Lee University,Cleveland,TN,USA
-497,lehigh,Lehigh University,Bethlehem,PA,USA
-498,nylehma,Lehman College,Bronx,NY,USA
-499,lemoyne,LeMoyne College,Syracuse,NY,USA
-500,lemoynowen,LeMoyne-Owen College,Memphis,TN,USA
-501,lenoirrhyn,Lenoir-Rhyne College,Hickory,NC,USA
-502,illewis,Lewis & Clark Community College,Godfrey,IL,USA
-503,lewclarkor,Lewis and Clark College,Portland,OR,USA
-504,lewisil,Lewis University,Romeoville,IL,USA
-505,lewclarkst,Lewis-Clark State College,Lewiston,ID,USA
-506,liberty,Liberty University,Lynchburg,VA,USA
-507,sclimes,Limestone College,Gaffney,SC,USA
-508,illinco,Lincoln College,Lincoln,IL,USA
-509,lincolnlandcc,Lincoln Land Community College,Springfield,IL,USA
-510,lincolnmem,Lincoln Memorial University,Harrogate,TN,USA
-511,illtjco,Lincoln Trail College,Robinson,IL,USA
-512,lincolnmo,Lincoln University,Jefferson City,MO,USA
-513,palinco,Lincoln University,Lincoln University,PA,USA
-514,linfieldor,Linfield College,McMinnville,OR,USA
-515,orlinnb,Linn-Benton Community College,Albany,OR,USA
-516,lipscomb,Lipscomb University,Nashville,TN,USA
-517,lockhaven,Lock Haven University of Pennsylvania,Lock Haven,PA,USA
-518,illomba,Lombard College,Galesburg,IL,USA
-519,txlonmo,Lon Morris College,Jacksonville,TX,USA
-520,calobcc,Long Beach City College,Long Beach,CA,USA
-521,longisland,Long Island University - Brooklyn Campus,Brooklyn,NY,USA
-522,cwpost,Long Island University - C W Post Campus,Brookville,NY,USA
-523,molongv,Longview Community College,Kansas City,MO,USA
-524,longwoodva,Longwood University,Farmville,VA,USA
-525,lorasia,Loras College,Dubuque,IA,USA
-526,calacco,Los Angeles City College,Los Angeles,CA,USA
-527,caharbo,Los Angeles Harbor College,Wilmington,CA,USA
-528,calamjc,Los Angeles Mission College,Sylmar,CA,USA
-529,capierc,Los Angeles Pierce College,Woodland Hills,CA,USA
-530,calavco,Los Angeles Valley College,Los Angeles,CA,USA
-531,nclouis,Louisburg College,Louisburg,NC,USA
-532,lacollege,Louisiana College,Pineville,LA,USA
-533,lsu,Louisiana State University,Baton Rouge,LA,USA
-534,latech,Louisiana Tech University,Ruston,LA,USA
-535,malowete,Lowell Technological Institute,Lowell,MA,USA
-536,walower,Lower Columbia College,Longview,WA,USA
-537,loyolamd,Loyola College in Maryland,Baltimore,MD,USA
-538,loyolamary,Loyola Marymount University,Los Angeles,CA,USA
-539,loyolachi,Loyola University Chicago,Chicago,IL,USA
-540,loyolano,Loyola University New Orleans,New Orleans,LA,USA
-541,lubbchrist,Lubbock Christian University,Lubbock,TX,USA
-542,allurle,Lurleen B Wallace Community College,Andalusia,AL,USA
-543,lutheria,Luther College,Decorah,IA,USA
-544,lycomingpa,Lycoming College,Williamsport,PA,USA
-545,lynchbrgva,Lynchburg College,Lynchburg,VA,USA
-546,fllynnu,Lynn University,Boca Raton,FL,USA
-547,macmurryil,MacMurray College,Jacksonville,IL,USA
-548,mimacom,Macomb Community College,Warren,MI,USA
-549,manchester,Manchester College,North Manchester,IN,USA
-550,manhattan,Manhattan College,New York,NY,USA
-551,mansfield,Mansfield University of Pennsylvania,Mansfield,PA,USA
-552,momaple,Maple Woods Community College,Kansas City,MO,USA
-553,mariettaoh,Marietta College,Marietta,OH,USA
-554,almario,Marion Military Institute,Marion,AL,USA
-555,nymarit,Maritime College,Throggs Neck,NY,USA
-556,marquette,Marquette University,Milwaukee,WI,USA
-557,ncmarsh,Mars Hill College,Mars Hill,NC,USA
-558,marshall,Marshall University,Huntington,WV,USA
-559,mryvilletn,Maryville College,Maryville,TN,USA
-560,macollege,Massachusetts College of Liberal Arts,North Adams,MA,USA
-561,mit,Massachusetts Institute of Technology,Cambridge,MA,USA
-562,mamassa,Massasoit Community College,Brockton,MA,USA
-563,mcdaniel,McDaniel College,Westminster,MD,USA
-564,ilmcken,McKendree University,Lebanon,IL,USA
-565,txmclen,McLennan Community College,Waco,TX,USA
-566,txmcmur,McMurry University,Abilene,TX,USA
-567,mcneese,McNeese State University,Lake Charles,LA,USA
-568,vamedic,Medical College of Virginia,Richmond,VA,USA
-569,camendo,Mendocino College,Ukiah,CA,USA
-570,camenlo,Menlo College,Atherton,CA,USA
-571,camerce,Merced College,Merced,CA,USA
-572,njmerce,Mercer County Community College,West Windsor,NJ,USA
-573,mercer,Mercer University,Macon,GA,USA
-574,nymercy,Mercy College,Dobbs Ferry,NY,USA
-575,mercyhurst,Mercyhurst College,Erie,PA,USA
-576,msmerid,Meridian Community College,Meridian,MS,USA
-577,txmerid,Meridian Junior College,Meridian,TX,USA
-578,mamerri,Merrimack College,North Andover,MA,USA
-579,camerri,Merritt College,Oakland,CA,USA
-580,azmescc,Mesa Community College,Mesa,AZ,USA
-581,mesast,Mesa State College,Grand Junction,CO,USA
-582,mnmesabi,Mesabi Range Community and Technical College,Virginia,MN,USA
-583,messiah,Messiah College,Grantham,PA,USA
-584,miamioh,Miami University of Ohio,Oxford,OH,USA
-585,miamidade,Miami-Dade College,Miami,FL,USA
-586,flmdkjc,Miami-Dade College - Kendall Campus,Miami,FL,USA
-587,flmdnjc,Miami-Dade College - North Campus,Miami,FL,USA
-588,flmdwjc,Miami-Dade College - Wolfson Campus,Miami,FL,USA
-589,michiganst,Michigan State University,East Lansing,MI,USA
-590,gamiddl,Middle Georgia College,Cochran,GA,USA
-591,mtennst,Middle Tennessee State University,Murfreesboro,TN,USA
-592,middlbryvt,Middlebury College,Middlebury,VT,USA
-593,mamiddl,Middlesex Community College,Bedford,MA,USA
-594,njmiddl,Middlesex County Community College,Edison,NJ,USA
-595,txmidla,Midland College,Midland,TX,USA
-596,midlndluth,Midland Lutheran College,Fremont,NE,USA
-597,almiles,Miles College,Fairfield,AL,USA
-598,millersvil,Millersville University of Pennsylvania,Millersville,PA,USA
-599,milligantn,Milligan College,Milligan College,TN,USA
-600,millikin,Millikin University,Decatur,IL,USA
-601,millsapsms,Millsaps College,Jackson,MS,USA
-602,mominer,Mineral Area College,Park Hills,MO,USA
-603,mankatost,Minnesota State University - Mankato,Mankato,MN,USA
-604,mnmoorh,Minnesota State University - Moorhead,Moorhead,MN,USA
-605,camirac,MiraCosta College,Oceanside,CA,USA
-606,camissi,Mission College,Santa Clara,CA,USA
-607,mscollege,Mississippi College,Clinton,MS,USA
-608,msmdcco,Mississippi Delta Community College,Moorhead,MS,USA
-609,mcmgccc,Mississippi Gulf Coast Community College,Perkinston,MS,USA
-610,missst,Mississippi State University,Mississippi State,MS,USA
-611,mosouthern,Missouri Southern State University,Joplin,MO,USA
-612,swmost,Missouri State University,Springfield,MO,USA
-613,morolla,Missouri University of Science and Technology,Rolla,MO,USA
-614,movalley,Missouri Valley College,Marshall,MO,USA
-615,mowestern,Missouri Western State University,St. Joseph,MO,USA
-616,ctmitch,Mitchell College,New London,CT,USA
-617,camodes,Modesto Junior College,Modesto,CA,USA
-618,nymohaw,Mohawk Valley Community College,Utica,NY,USA
-619,monmouth,Monmouth University,West Long Branch,NJ,USA
-620,monroecc,Monroe Community College,Rochester,NY,USA
-621,mntclairst,Montclair State University,Montclair,NJ,USA
-622,campjco,Monterey Peninsula College,Monterey,CA,USA
-623,mdmontg,Montgomery College - Rockville Campus,Rockville,MD,USA
-624,montreatnc,Montreat College,Montreat,NC,USA
-625,camoorp,Moorpark College,Moorpark,CA,USA
-626,ilmorai,Moraine Valley Community College,Palos Hills,IL,USA
-627,morehead,Morehead State University,Morehead,KY,USA
-628,morehouse,Morehouse College,Atlanta,GA,USA
-629,morganst,Morgan State University,Baltimore,MD,USA
-630,mrningside,Morningside College,Sioux City,IA,USA
-631,tnmotlo,Motlow State Community College,Lynchburg,TN,USA
-632,ormount,Mount Hood Community College,Gresham,OR,USA
-633,ilmount,Mount Morris College,Mount Morris,IL,USA
-634,mtolive,Mount Olive College,Mount Olive,NC,USA
-635,camsajc,Mount San Antonio College,Walnut,CA,USA
-636,camsjjc,Mount San Jacinto College,San Jacinto,CA,USA
-637,mtstmarys,Mount St. Mary's University,Emmitsburg,MD,USA
-638,mtunionoh,Mount Union College,Alliance,OH,USA
-639,mtvernnaz,Mount Vernon Nazarene University,Mount Vernon,OH,USA
-640,muhlenberg,Muhlenberg College,Allentown,PA,USA
-641,okmurra,Murray State College,Tishomingo,OK,USA
-642,murrayst,Murray State University,Murray,KY,USA
-643,mimuske,Muskegon Community College,Muskegon,MI,USA
-644,muskingum,Muskingum College,New Concord,OH,USA
-645,canapav,Napa Valley College,Napa,CA,USA
-646,nynassa,Nassau Community College,Garden City,NY,USA
-647,txnavar,Navarro College,Corsicana,TX,USA
-648,newesleyan,Nebraska Wesleyan University,Lincoln,NE,USA
-649,ksneosh,Neosho County Community College,Chanute,KS,USA
-650,njcity,New Jersey City University,Jersey City,NJ,USA
-651,nmhighland,New Mexico Highlands University,Las Vegas,NM,USA
-652,nmnmjco,New Mexico Junior College,Hobbs,NM,USA
-653,nmmilin,New Mexico Military Institute,Roswell,NM,USA
-654,nmstate,New Mexico State University,Las Cruces,NM,USA
-655,nytech,New York Institute of Technology,Old Westbury,NY,USA
-656,newyorku,New York University,New York,NY,USA
-657,newberry,Newberry College,Newberry,SC,USA
-658,vaappre,Newport News Apprentice School,Newport News,VA,USA
-659,niagara,Niagara University,Lewiston,NY,USA
-660,nicholls,Nicholls State University,Thibodaux,LA,USA
-661,norfolkst,Norfolk State University,Norfolk,VA,USA
-662,mnnorma,Normandale Community College,Bloomington,MN,USA
-663,arnorth,North Arkansas College,Bentonville,AR,USA
-664,ncat,North Carolina A&T State University,Greensboro,NC,USA
-665,ncstate,North Carolina State University,Raleigh,NC,USA
-666,ncentralil,North Central College,Naperville,IL,USA
-667,txnctjc,North Central Texas College,Gainesville,TX,USA
-668,ndstate,North Dakota State University,Fargo,ND,USA
-669,flnfcco,North Florida Community College,Madison,FL,USA
-670,idnidjc,North Idaho College,Coeur d'Alene,ID,USA
-671,manscco,North Shore Community College,Danvers,MA,USA
-672,okneoam,Northeast Oklahoma A&M College,Miami,OK,USA
-673,txnetex,Northeast Texas Community College,Mount Pleasant,TX,USA
-674,neillinois,Northeastern Illinois University,Chicago,IL,USA
-675,oknestu,Northeastern State University,Tahlequah,OK,USA
-676,neastern,Northeastern University,Boston,MA,USA
-677,narizona,Northern Arizona University,Flagstaff,AZ,USA
-678,manecco,Northern Essex Community College,Haverhill,MA,USA
-679,nillinois,Northern Illinois University,DeKalb,IL,USA
-680,nkentucky,Northern Kentucky University,Highland Heights,KY,USA
-681,minorth,Northern Michigan University,Marquette,MI,USA
-682,flnwfsc,Northwest Florida State College,Niceville,FL,USA
-683,msnwmcc,Northwest Mississippi Community College,Senatobia,MS,USA
-684,nwmost,Northwest Missouri State University,Maryville,MO,USA
-685,nwokstate,Northwestern Oklahoma State University,Alva,OK,USA
-686,nwstate,Northwestern State University of Louisiana,Natchitoches,LA,USA
-687,nwestern,Northwestern University,Evanston,IL,USA
-688,alnorth,Northwest-Shoals Community College,Muscle Shoals,AL,USA
-689,northwood,Northwood University,Midland,MI,USA
-690,ctnorwa,Norwalk Community College,Norwalk,CT,USA
-691,norwichvt,Norwich University,Northfield,VT,USA
-692,flnovas,Nova Southeastern University,Fort Lauderdale,FL,USA
-693,mioakla,Oakland Community College,Farmington Hills,MI,USA
-694,oakland,Oakland University,Rochester,MI,USA
-695,oberlinoh,Oberlin College,Oberlin,OH,USA
-696,occidental,Occidental College,Los Angeles,CA,USA
-697,txodess,Odessa College,Odessa,TX,USA
-698,oglethrpga,Oglethorpe University,Atlanta,GA,USA
-699,ohdominican,Ohio Dominican University,Columbus,OH,USA
-700,ohnorth,Ohio Northern University,Ada,OH,USA
-701,ohio,Ohio University,Athens,OH,USA
-702,ohvalley,Ohio Valley College,Vienna,WV,USA
-703,ohwesleyan,Ohio Wesleyan University,Delaware,OH,USA
-704,flokalo,Okaloosa-Walton College,Niceville,FL,USA
-705,okbapti,Oklahoma Baptist University,Shawnee,OK,USA
-706,okocsw,Oklahoma City Southwestern College,Oklahoma City,OK,USA
-707,okcity,Oklahoma City University,Oklahoma City,OK,USA
-708,okstate,Oklahoma State University,Stillwater,OK,USA
-709,okwesle,Oklahoma Wesleyan University,Bartlesville,OK,USA
-710,olddom,Old Dominion University,Norfolk,VA,USA
-711,olivetmi,Olivet College,Olivet,MI,USA
-712,olivetnaz,Olivet Nazarene University,Bourbonnais,IL,USA
-713,ilolney,Olney Central College,Olney,IL,USA
-714,waolymp,Olympic College,Bremerton,WA,USA
-715,nyonond,Onondaga Community College,Syracuse,NY,USA
-716,oralrob,Oral Roberts University,Tulsa,OK,USA
-717,caorang,Orange Coast College,Costa Mesa,CA,USA
-718,oregonst,Oregon State University,Corvallis,OR,USA
-719,otterbein,Otterbein College,Westerville,OH,USA
-720,ouachitab,Ouachita Baptist University,Arkadelphia,AR,USA
-721,oxnard,Oxnard College,Oxnard,CA,USA
-722,pacificor,Pacific University,Forest Grove,OR,USA
-723,flpbaun,Palm Beach Atlantic University,West Palm Beach,FL,USA
-724,pbsc,Palm Beach Community College,Lake Worth,FL,USA
-725,flpalme,Palmer College,DeFuniak Springs,FL,USA
-726,capalom,Palomar College,San Marcos,CA,USA
-727,txpanol,Panola College,Carthage,TX,USA
-728,txparis,Paris Junior College,Paris,TX,USA
-729,mnparke,Parker College,Winnebago,MN,USA
-730,ilparkl,Parkland College,Champaign,IL,USA
-731,iaparso,Parsons College,Fairfield,IA,USA
-732,capasad,Pasadena City College,Pasadena,CA,USA
-733,flpasco,Pasco-Hernando Community College,New Port Richey,FL,USA
-734,txpaulq,Paul Quinn College,Dallas,TX,USA
-735,mspearl,Pearl River Community College,Poplarville,MS,USA
-736,psubehrend,Penn State Erie - the Behrend College of Pennsylvania State University,Erie,PA,USA
-737,pennst,Pennsylvania State University,State College,PA,USA
-738,flpensa,Pensacola Junior College,Pensacola,FL,USA
-739,pepperdine,Pepperdine University,Malibu,CA,USA
-740,pfeiffer,Pfeiffer University,Misenheimer,NC,USA
-741,philly,Philadelphia University,Philadelphia,PA,USA
-742,philsmith,Philander Smith College,Little Rock,AR,USA
-743,azphoen,Phoenix College,Phoenix,AZ,USA
-744,piedmontga,Piedmont College,Demorest,GA,USA
-745,azpimcc,Pima Community College,Tucson,AZ,USA
-746,ncpitcc,Pitt Community College,Winterville,NC,USA
-747,pittsbst,Pittsburg State University,Pittsburg,KS,USA
-748,plymouth,Plymouth State College,Plymouth,NH,USA
-749,ptlomanaz,Point Loma Nazarene University,San Diego,CA,USA
-750,ptparkpa,Point Park University,Pittsburgh,PA,USA
-751,flpolkc,Polk Community College,Winter Haven,FL,USA
-752,pompitzer,Pomona College/Pitzer College,Claremont,CA,USA
-753,caporte,Porterville College,Porterville,CA,USA
-754,portlandst,Portland State University,Portland,OR,USA
-755,wvpotom,Potomac State College,Keyser,WV,USA
-756,prairview,Prairie View A&M University,Prairie View,TX,USA
-757,kspratt,Pratt Community College,Pratt,KS,USA
-758,presbytrn,Presbyterian College,Clinton,SC,USA
-759,princeton,Princeton University,Princeton,NJ,USA
-760,providence,Providence College,Providence,RI,USA
-761,purdue,Purdue University,West Lafayette,IN,USA
-762,quincy,Quincy University,Quincy,IL,USA
-763,quinnipiac,Quinnipiac College,Hamden,CT,USA
-764,maquins,Quinsigamond Community College,Worcester,MA,USA
-765,radford,Radford University,Radford,VA,USA
-766,ramaponj,Ramapo College,Mahwah,NJ,USA
-767,caranch,Rancho Santiago College,Santa Ana,CA,USA
-768,randmacon,Randolph-Macon College,Ashland,VA,USA
-769,careedl,Reedley College,Reedley,CA,USA
-770,ric,Rhode Island College,Providence,RI,USA
-771,rhodestn,Rhodes College,Memphis,TN,USA
-772,rice,Rice University,Houston,TX,USA
-773,njricha,Richard Stockton College of New Jersey,Pomona,NJ,USA
-774,mericke,Ricker College,Houlton,ME,USA
-775,rider,Rider University,Lawrenceville,NJ,USA
-776,carioho,Rio Hondo College,Whittier,CA,USA
-777,riponwi,Ripon College,Ripon,WI,USA
-778,carivcc,Riverside Community College,Riverside,CA,USA
-779,roanokeva,Roanoke College,Salem,VA,USA
-780,robertmor,Robert Morris University,Moon Township,PA,USA
-781,mdrockh,Rock Hill College,Ellicott City,MD,USA
-782,rockhurst,Rockhurst University,Kansas City,MO,USA
-783,nyrockl,Rockland Community College,Suffern,NY,USA
-784,riroger,Roger Williams University,Bristol,RI,USA
-785,okroger,Rogers State University,Claremore,OK,USA
-786,rollins,Rollins College,Winter Park,FL,USA
-787,rosehulman,Rose-Hulman Institute of Technology,Terre Haute,IN,USA
-788,rowannj,Rowan University,Glassboro,NJ,USA
-789,rutgers,Rutgers - the State University of New Jersey,New Brunswick,NJ,USA
-790,ncruthe,Rutherford College,Rutherford College,NC,USA
-791,casacra,Sacramento City College,Sacramento,CA,USA
-792,wisacre,Sacred Heart College,Watertown,WI,USA
-793,casaddl,Saddleback College,Mission Viejo,CA,USA
-794,saginawval,Saginaw Valley State University,Saginaw,MI,USA
-795,salemintl,Salem International University,Salem,WV,USA
-796,utslxxo,Salt Lake Community College,Salt Lake City,UT,USA
-797,samhouston,Sam Houston State University,Huntsville,TX,USA
-798,samford,Samford University,Birmingham,AL,USA
-799,txsajco,San Antonio College,San Antonio,TX,USA
-800,casbvjc,San Bernardino Valley College,San Bernardino,CA,USA
-801,sdcity,San Diego City College,San Diego,CA,USA
-802,casdmjc,San Diego Mesa College,San Diego,CA,USA
-803,sandiegost,San Diego State University,San Diego,CA,USA
-804,sanfranst,San Francisco State University,San Francisco,CA,USA
-805,txsjjco,San Jacinto College,Pasadena,TX,USA
-806,txsjjcn,San Jacinto College - North Campus,Houston,TX,USA
-807,casjdjc,San Joaquin Delta College,Stockton,CA,USA
-808,casjcco,San Jose City College,San Jose,CA,USA
-809,sanjosest,San Jose State University,San Jose,CA,USA
-810,casajco,Santa Ana College,Santa Ana,CA,USA
-811,casbcco,Santa Barbara City College,Santa Barbara,CA,USA
-812,santaclara,Santa Clara University,Santa Clara,CA,USA
-813,flsanta,Santa Fe Community College,Gainesville,FL,USA
-814,casmjco,Santa Monica College,Santa Monica,CA,USA
-815,casrjco,Santa Rosa Junior College,Santa Rosa,CA,USA
-816,ilsvcco,Sauk Valley Community College,Dixon,IL,USA
-817,savcolad,Savannah College of Arts and Design,Savannah,GA,USA
-818,schreiner,Schreiner University,Kerrville,TX,USA
-819,paschuy,Schuylkill College,Reading,PA,USA
-820,azscott,Scottsdale Community College,Scottsdale,AZ,USA
-821,seattle,Seattle University,Seattle,WA,USA
-822,seminolecc,Seminole Community College,Sanford,FL,USA
-823,oksemin,Seminole State College,Seminole,OK,USA
-824,setonhall,Seton Hall University,South Orange,NJ,USA
-825,cashast,Shasta College,Redding,CA,USA
-826,shaw,Shaw University,Raleigh,NC,USA
-827,shenandoah,Shenandoah University,Winchester,VA,USA
-828,shepherdwv,Shepherd College,Shepherdstown,WV,USA
-829,shipnsburg,Shippensburg University of Pennsylvania,Shippensburg,PA,USA
-830,washore,Shoreline Community College,Shoreline,WA,USA
-831,shorterga,Shorter College,Rome,GA,USA
-832,ilshurt,Shurtleff College,Alton,IL,USA
-833,siena,Siena College,Loudonville,NY,USA
-834,casierr,Sierra College,Rocklin,CA,USA
-835,iasimps,Simpson College,Indianola,IA,USA
-836,ohsincl,Sinclair Community College,Dayton,OH,USA
-837,caskyli,Skyline JC,San Bruno,CA,USA
-838,sliprock,Slippery Rock University of Pennsylvania,Slippery Rock,PA,USA
-839,utsnojc,Snow College,Ephraim,UT,USA
-840,casolan,Solano Community College,Fairfield,CA,USA
-841,kysomer,Somerset Community College,Somerset,KY,USA
-842,sonomast,Sonoma State University,Rohnert Park,CA,USA
-843,scstate,South Carolina State University,Orangeburg,SC,USA
-844,sdakotast,South Dakota State University,Brookings,SD,USA
-845,sfcc,South Florida Community College,Avon Park,FL,USA
-846,gasgajc,South Georgia College,Douglas,GA,USA
-847,azsouth,South Mountain Community College,Phoenix,AZ,USA
-848,ilssjco,South Suburban College,South Holland,IL,USA
-849,semost,Southeast Missouri State University,Cape Girardeau,MO,USA
-850,ilseijc,Southeastern Illinois College,Harrisburg,IL,USA
-851,iaseccs,Southeastern Iowa Community College - Keokuk Campus,Keokuk,IA,USA
-852,sela,Southeastern Louisiana University,Hammond,LA,USA
-853,seoklahoma,Southeastern Oklahoma State University,Durant,OK,USA
-854,sefl,Southeastern University,Lakeland,FL,USA
-855,sarkansas,Southern Arkansas University,Magnolia,AR,USA
-856,sillinois,Southern Illinois University Carbondale,Carbondale,IL,USA
-857,silledward,Southern Illinois University Edwardsville,Edwardsville,IL,USA
-858,smethodist,Southern Methodist University,Dallas,TX,USA
-859,alsuscc,Southern Union State Community College,Wadley,AL,USA
-860,southernu,Southern University and A&M College,Baton Rouge,LA,USA
-861,sutah,Southern Utah University,Cedar City,UT,USA
-862,msswmcc,Southwest Mississippi Community College,Summit,MS,USA
-863,tnswten,Southwest Tennessee Community College,Memphis,TN,USA
-864,txswtex,Southwest Texas Junior College,Uvalde,TX,USA
-865,swesternks,Southwestern College,Winfield,KS,USA
-866,caswjco,Southwestern College,Chula Vista,CA,USA
-867,ilswijc,Southwestern Illinois College,Belleville,IL,USA
-868,swoklahoma,Southwestern Oklahoma State University,Weatherford,OK,USA
-869,swesterntx,Southwestern University,Georgetown,TX,USA
-870,scspart,Spartanburg Methodist College,Spartanburg,SC,USA
-871,wasfcco,Spokane Falls Community College,Spokane,WA,USA
-872,springhill,Spring Hill College,Mobile,AL,USA
-873,sprngfldma,Springfield College,Springfield,MA,USA
-874,stambrseia,St. Ambrose University,Davenport,IA,USA
-875,ncstand,St. Andrews Presbyterian College,Laurinburg,NC,USA
-876,stanselm,St. Anselm College,Manchester,NH,USA
-877,staugustne,St. Augustine's College,Raleigh,NC,USA
-878,stbonny,St. Bonaventure University,St. Bonaventure,NY,USA
-879,kystcat,St. Catherine College,St. Catherine,KY,USA
-880,mistcla,St. Clair County Community College,Port Huron,MI,USA
-881,stedwardtx,St. Edward's University,Austin,TX,USA
-882,stfranny,St. Francis University,Brooklyn,NY,USA
-883,stfranpa,St. Francis University,Loretto,PA,USA
-884,mdstjoh,St. John's College,Annapolis,MD,USA
-885,flsjrcc,St. Johns River Community College,Palatka,FL,USA
-886,stjohns,St. John's University,Queens,NY,USA
-887,stjosephin,St. Joseph's College,Rensselaer,IN,USA
-888,mestjos,St. Joseph's College,Standish,ME,USA
-889,stjosephs,St. Joseph's University,Philadelphia,PA,USA
-890,stlawrence,St. Lawrence University,Canton,NY,USA
-891,stleo,St. Leo College,St. Leo,FL,USA
-892,mofores,St. Louis Community College - Forest Park Campus,St. Louis,MO,USA
-893,meramec,St. Louis Community College - Meramec Campus,Kirkwood,MO,USA
-894,stlouis,St. Louis University,St. Louis,MO,USA
-895,stmartinwa,St. Martin's College,Lacey,WA,USA
-896,ksstmaC,St. Mary's College,St. Mary's,KS,USA
-897,stmarysca,St. Mary's College of California,Moraga,CA,USA
-898,stmarytx,St. Mary's University,San Antonio,TX,USA
-899,stmarysmn,St. Mary's University of Minnesota,Winona,MN,USA
-900,stmichaels,St. Michael's College,Colchester,VT,USA
-901,wistnor,St. Norbert College,De Pere,WI,USA
-902,stpeters,St. Peter's College,Jersey City,NJ,USA
-903,flstpet,St. Petersburg College,St. Petersburg,FL,USA
-904,stthomasfl,St. Thomas University,Miami Gardens,FL,USA
-905,ilstvia,St. Viator College,Bourbonnais,IL,USA
-906,stxavieril,St. Xavier University,Orland Park,IL,USA
-907,stcloudst,St.Cloud State University,St. Cloud,MN,USA
-908,stanford,Stanford University,Palo Alto,CA,USA
-909,flmanat,State College of Florida - Manatee-Sarasota,Bradenton,FL,USA
-910,sunybing,State University of New York at Binghamton,Binghamton,NY,USA
-911,nybrock,State University of New York at Brockport,Brockport,NY,USA
-912,nycortland,State University of New York at Cortland,Cortland,NY,USA
-913,nyfredonia,State University of New York at Fredonia,Fredonia,NY,USA
-914,nyoneonta,State University of New York at Oneonta,Oneonta,NY,USA
-915,wgeorgia,State University of West Georgia,Carrollton,GA,USA
-916,sfaustin,Stephen F Austin State University,Nacogdoches,TX,USA
-917,sterlingks,Sterling University,Sterling,KS,USA
-918,stetson,Stetson University,DeLand,FL,USA
-919,stonybrook,Stony Brook University,Stony Brook,NY,USA
-920,nysuffo,Suffolk County Community College,Brentwood,NY,USA
-921,sulrossst,Sul Ross State University,Alpine,TX,USA
-922,susquehnna,Susquehanna University,Selinsgrove,PA,USA
-923,swarthmore,Swarthmore College,Swarthmore,PA,USA
-924,syracuse,Syracuse University,Syracuse,NY,USA
-925,watacom,Tacoma Community College,Tacoma,WA,USA
-926,catafjc,Taft College,Taft,CA,USA
-927,fltalla,Tallahassee Community College,Tallahassee,FL,USA
-928,motarki,Tarkio College,Tarkio,MO,USA
-929,tarletonst,Tarleton State University,Stephenville,TX,USA
-930,txtempl,Temple College,Temple,TX,USA
-931,temple,Temple University,Philadelphia,PA,USA
-932,tennst,Tennessee State University,Nashville,TN,USA
-933,tntech,Tennessee Technological University,Cookeville,TN,USA
-934,tnwesleyan,Tennessee Wesleyan College,Athens,TN,USA
-935,txtexar,Texarkana College,Texarkana,TX,USA
-936,texasam,Texas A&M University,College Station,TX,USA
-937,tamucomm,Texas A&M University-Commerce,Commerce,TX,USA
-938,tamukvill,Texas A&M University-Kingsville,Kingsville,TX,USA
-939,txchrist,Texas Christian University,Fort Worth,TX,USA
-940,swtexas,Texas State University,San Marcos,TX,USA
-941,txtech,Texas Tech University,Lubbock,TX,USA
-942,txwesleyan,Texas Wesleyan University,Fort Worth,TX,USA
-943,citadel,The Citadel,Charleston,SC,USA
-944,mastersca,The Master's College,Santa Clarita,CA,USA
-945,ohiost,The Ohio State University,Columbus,OH,USA
-946,thielpa,Thiel College,Greenville,PA,USA
-947,thomasmore,Thomas More College,Crestview Hills,KY,USA
-948,mothree,Three Rivers Community College,Poplar Bluff,MO,USA
-949,towson,Towson University,Towson,MD,USA
-950,trnsylvnia,Transylvania University,Lexington,KY,USA
-951,ortreas,Treasure Valley Community College,Ontario,OR,USA
-952,cotrini,Trinidad State Junior College,Trinidad,CO,USA
-953,trinityct,Trinity College,Hartford,CT,USA
-954,trinitytx,Trinity University,San Antonio,TX,USA
-955,iltrito,Triton College,River Grove,IL,USA
-956,troyst,Troy University,Troy,AL,USA
-957,trumanst,Truman State University,Kirksville,MO,USA
-958,tuftsma,Tufts University,Medford,MA,USA
-959,tulane,Tulane University,New Orleans,LA,USA
-960,mstupel,Tupelo Military Institute,Tupelo,MS,USA
-961,tusculum,Tusculum College,Greenville,TN,USA
-962,tuskegee,Tuskegee University,Tuskegee,AL,USA
-963,txtyler,Tyler Junior College,Tyler,TX,USA
-964,unionny,Union College,Schenectady,NY,USA
-965,uniontn,Union University,Jackson,TN,USA
-966,army,United States Military Academy,West Point,NY,USA
-967,navy,United States Naval Academy,Annapolis,MD,USA
-968,sunybuff,University at Buffalo - State University of New York,Buffalo,NY,USA
-969,akron,University of Akron,Akron,OH,USA
-970,alabama,University of Alabama,Tuscaloosa,AL,USA
-971,uab,University of Alabama at Birmingham,Birmingham,AL,USA
-972,arizona,University of Arizona,Tucson,AZ,USA
-973,arkansas,University of Arkansas,Fayetteville,AR,USA
-974,arkansaslr,University of Arkansas at Little Rock,Little Rock,AR,USA
-975,arkmont,University of Arkansas at Monticello,Monticello,AR,USA
-976,arkansaspb,University of Arkansas at Pine Bluff,Pine Bluff,AR,USA
-977,arftsmi,University of Arkansas-Fort Smith,Fort Smith,AR,USA
-978,mdbalti,University of Baltimore,Baltimore,MD,USA
-979,bridgeport,University of Bridgeport,Bridgeport,CT,USA
-980,california,University of California - Berkeley,Berkeley,CA,USA
-981,ucdavis,University of California - Davis,Davis,CA,USA
-982,ucirvine,University of California - Irvine,Irvine,CA,USA
-983,ucla,University of California - Los Angeles,Los Angeles,CA,USA
-984,ucriver,University of California - Riverside,Riverside,CA,USA
-985,ucsd,University of California - San Diego,La Jolla,CA,USA
-986,ucsb,University of California - Santa Barbara,Santa Barbara,CA,USA
-987,carkansas,University of Central Arkansas,Conway,AR,USA
-988,cflorida,University of Central Florida,Orlando,FL,USA
-989,cmissouri,University of Central Missouri,Warrensburg,MO,USA
-990,centok,University of Central Oklahoma,Edmond,OK,USA
-991,charleswv,University of Charleston,Charleston,WV,USA
-992,chicago,University of Chicago,Chicago,IL,USA
-993,cincy,University of Cincinnati,Cincinnati,OH,USA
-994,colorado,University of Colorado,Boulder,CO,USA
-995,uconn,University of Connecticut,Storrs,CT,USA
-996,ctconap,University of Connecticut at Avery Point,Groton,CT,USA
-997,dayton,University of Dayton,Dayton,OH,USA
-998,delaware,University of Delaware,Newark,DE,USA
-999,denver,University of Denver,Denver,CO,USA
-1000,detroit,University of Detroit Mercy,Detroit,MI,USA
-1001,dubuque,University of Dubuque,Dubuque,IA,USA
-1002,evansville,University of Evansville,Evansville,IN,USA
-1003,florida,University of Florida,Gainesville,FL,USA
-1004,georgia,University of Georgia,Athens,GA,USA
-1005,hartford,University of Hartford,West Hartford,CT,USA
-1006,hawaiihilo,University of Hawaii at Hilo,Hilo,HI,USA
-1007,hawaii,University of Hawaii at Manoa,Honolulu,HI,USA
-1008,houston,University of Houston,Houston,TX,USA
-1009,idaho,University of Idaho,Moscow,ID,USA
-1010,illchicago,University of Illinois at Chicago,Chicago,IL,USA
-1011,illinois,University of Illinois at Urbana-Champaign,Champaign,IL,USA
-1012,indpolis,University of Indianapolis,Indianapolis,IN,USA
-1013,iowa,University of Iowa,Iowa City,IA,USA
-1014,kansas,University of Kansas,Lawrence,KS,USA
-1015,kentucky,University of Kentucky,Lexington,KY,USA
-1016,laverneca,University of La Verne,La Verne,CA,USA
-1017,ulala,University of Louisiana at Lafayette,Lafayette,LA,USA
-1018,ulamo,University of Louisiana at Monroe,Monroe,LA,USA
-1019,louisville,University of Louisville,Louisville,KY,USA
-1020,maine,University of Maine at Orono,Orono,ME,USA
-1021,maryhrdbay,University of Mary Hardin-Baylor,Belton,TX,USA
-1022,maryland,University of Maryland,College Park,MD,USA
-1023,umbc,University of Maryland - Baltimore County,Baltimore,MD,USA
-1024,mdmdbal,University of Maryland Baltimore,Baltimore,MD,USA
-1025,umes,University of Maryland Eastern Shore,Princess Anne,MD,USA
-1026,umass,University of Massachusetts Amherst,Amherst,MA,USA
-1027,umassdartm,University of Massachusetts Dartmouth,North Dartmouth,MA,USA
-1028,masslowell,University of Massachusetts Lowell,Lowell,MA,USA
-1029,memphis,University of Memphis,Memphis,TN,USA
-1030,miamifl,University of Miami,Coral Gables,FL,USA
-1031,michigan,University of Michigan,Ann Arbor,MI,USA
-1032,minnesota,University of Minnesota,Minneapolis,MN,USA
-1033,mnmorris,University of Minnesota - Morris,Morris,MN,USA
-1034,olemiss,University of Mississippi,Oxford,MS,USA
-1035,missouri,University of Missouri Columbia,Columbia,MO,USA
-1036,umkc,University of Missouri Kansas City,Kansas City,MO,USA
-1037,mobileal,University of Mobile,Mobile,AL,USA
-1038,montevallo,University of Montevallo,Montevallo,AL,USA
-1039,nebkearney,University of Nebraska at Kearney,Kearney,NE,USA
-1040,nebraska,University of Nebraska at Lincoln,Lincoln,NE,USA
-1041,nebomaha,University of Nebraska at Omaha,Omaha,NE,USA
-1042,unlv,University of Nevada-Las Vegas,Las Vegas,NV,USA
-1043,nevada,University of Nevada-Reno,Reno,NV,USA
-1044,newhamp,University of New Hampshire,Durham,NH,USA
-1045,newhaven,University of New Haven,West Haven,CT,USA
-1046,nmexico,University of New Mexico,Albuquerque,NM,USA
-1047,norleans,University of New Orleans,New Orleans,LA,USA
-1048,nalabama,University of North Alabama,Florence,AL,USA
-1049,uncashe,University of North Carolina at Asheville,Asheville,NC,USA
-1050,unc,University of North Carolina at Chapel Hill,Chapel Hill,NC,USA
-1051,charlotte,University of North Carolina at Charlotte,Charlotte,NC,USA
-1052,uncgreen,University of North Carolina at Greensboro,Greensboro,NC,USA
-1053,ncuncpe,University of North Carolina at Pembroke,Pembroke,NC,USA
-1054,uncwilm,University of North Carolina at Wilmington,Wilmington,NC,USA
-1055,ndunind,University of North Dakota,Grand Forks,ND,USA
-1056,nflorida,University of North Florida,Jacksonville,FL,USA
-1057,ntexas,University of North Texas,Denton,TX,USA
-1058,ncolorado,University of Northern Colorado,Greeley,CO,USA
-1059,niowa,University of Northern Iowa,Cedar Falls,IA,USA
-1060,notredame,University of Notre Dame,South Bend,IN,USA
-1061,oklahoma,University of Oklahoma,Norman,OK,USA
-1062,oregon,University of Oregon,Eugene,OR,USA
-1063,upenn,University of Pennsylvania,Philadelphia,PA,USA
-1064,pittsburgh,University of Pittsburgh,Pittsburgh,PA,USA
-1065,portland,University of Portland,Portland,OR,USA
-1066,pugetsound,University of Puget Sound,Tacoma,WA,USA
-1067,rhodeisle,University of Rhode Island,Kingston,RI,USA
-1068,richmond,University of Richmond,Richmond,VA,USA
-1069,riogrande,University of Rio Grande,Rio Grande,OH,USA
-1070,nyuroch,University of Rochester,Rochester,NY,USA
-1071,sandiego,University of San Diego,San Diego,CA,USA
-1072,sanfran,University of San Francisco,San Francisco,CA,USA
-1073,scranton,University of Scranton,Scranton,PA,USA
-1074,salabama,University of South Alabama,Mobile,AL,USA
-1075,scarolina,University of South Carolina,Columbia,SC,USA
-1076,uscaiken,University of South Carolina Aiken,Aiken,SC,USA
-1077,scupsta,University of South Carolina Upstate,Spartanburg,SC,USA
-1078,sflorida,University of South Florida,Tampa,FL,USA
-1079,usc,University of Southern California,Los Angeles,CA,USA
-1080,sindiana,University of Southern Indiana,Evansville,IN,USA
-1081,smaine,University of Southern Maine,Gorham,ME,USA
-1082,smiss,University of Southern Mississippi,Hattiesburg,MS,USA
-1083,stfrncisil,University of St. Francis,Joliet,IL,USA
-1084,stthomasmn,University of St. Thomas,St. Paul,MN,USA
-1085,tampa,University of Tampa,Tampa,FL,USA
-1086,tennessee,University of Tennessee,Knoxville,TN,USA
-1087,utchat,University of Tennessee at Chattanooga,Chattanooga,TN,USA
-1088,tntenme,University of Tennessee Health Science Center,Memphis,TN,USA
-1089,utarl,University of Texas at Arlington,Arlington,TX,USA
-1090,texas,University of Texas at Austin,Austin,TX,USA
-1091,utep,University of Texas at El Paso,El Paso,TX,USA
-1092,utpanam,University of Texas Pan American,Edinburg,TX,USA
-1093,ozarks,University of the Ozarks,Clarksville,AR,USA
-1094,pacific,University of the Pacific,Stockton,CA,USA
-1095,uofsouth,University of the South,Sewanee,TN,USA
-1096,toledo,University of Toledo,Toledo,OH,USA
-1097,tulsa,University of Tulsa,Tulsa,OK,USA
-1098,utah,University of Utah,Salt Lake City,UT,USA
-1099,vermont,University of Vermont,Burlington,VT,USA
-1100,virginia,University of Virginia,Charlottesville,VA,USA
-1101,washington,University of Washington,Seattle,WA,USA
-1102,walabama,University of West Alabama,Livingston,AL,USA
-1103,wflorida,University of West Florida,Pensacola,FL,USA
-1104,wilacrosse,University of Wisconsin at La Crosse,La Crosse,WI,USA
-1105,wisconsin,University of Wisconsin at Madison,Madison,WI,USA
-1106,wioshkosh,University of Wisconsin at Oshkosh,Oshkosh,WI,USA
-1107,wistvnspt,University of Wisconsin at Stevens Point,Stevens Point,WI,USA
-1108,wisuperior,University of Wisconsin at Superior,Superior,WI,USA
-1109,wiwhitewtr,University of Wisconsin at Whitewater,Whitewater,WI,USA
-1110,wyoming,University of Wyoming,Laramie,WY,USA
-1111,upperiowa,Upper Iowa University,Fayette,IA,USA
-1112,njupsal,Upsala College,East Orange,NJ,USA
-1113,ursinus,Ursinus College,Collegeville,PA,USA
-1114,utahst,Utah State University,Logan,UT,USA
-1115,utahvalley,Utah Valley State University,Orem,UT,USA
-1116,valdostast,Valdosta State University,Valdosta,GA,USA
-1117,flvalen,Valencia Community College,Orlando,FL,USA
-1118,valpo,Valparaiso University,Valparaiso,IN,USA
-1119,vandy,Vanderbilt University,Nashville,TN,USA
-1120,vanguardca,Vanguard University of Southern California,Costa Mesa,CA,USA
-1121,caventu,Ventura College,Ventura,CA,USA
-1122,txverno,Vernon College,Vernon,TX,USA
-1123,villanova,Villanova University,Villanova,PA,USA
-1124,invince,Vincennes University,Vincennes,IN,USA
-1125,vcu,Virginia Commonwealth University,Richmond,VA,USA
-1126,vmi,Virginia Military Institute,Lexington,VA,USA
-1127,vatech,Virginia Polytechnic Institute and State University,Blacksburg,VA,USA
-1128,virginiast,Virginia State University,Petersburg,VA,USA
-1129,viterbowi,Viterbo University,La Crosse,WI,USA
-1130,pavolan,Volant College,Volant,PA,USA
-1131,tnvolun,Volunteer State Community College,Gallatin,TN,USA
-1132,wabashin,Wabash College,Crawfordsville,IN,USA
-1133,ilwabas,Wabash Valley College,Mount Carmel,IL,USA
-1134,wagner,Wagner College,Staten Island,NY,USA
-1135,wake,Wake Forest University,Winston-Salem,NC,USA
-1136,wawalla,Walla Walla Community College,Walla Walla,WA,USA
-1137,alwsdot,Wallace State Community College (Dothan),Dothan,AL,USA
-1138,alwshan,Wallace State Community College (Hanceville),Hanceville,AL,USA
-1139,warnerpac,Warner Pacific College,Portland,OR,USA
-1140,washburn,Washburn University,Topeka,KS,USA
-1141,washjeffpa,Washington and Jefferson College,Washington,PA,USA
-1142,washleeva,Washington and Lee University,Lexington,VA,USA
-1143,washcollmd,Washington College,Chestertown,MD,USA
-1144,washcolltn,Washington College,Jonesborough,TN,USA
-1145,washst,Washington State University,Pullman,WA,USA
-1146,wshngtonmo,Washington University in St. Louis,St. Louis,MO,USA
-1147,waynestne,Wayne State College,Wayne,NE,USA
-1148,waynest,Wayne State University,Detroit,MI,USA
-1149,waynesburg,Waynesburg College,Waynesburg,PA,USA
-1150,txweath,Weatherford College,Weatherford,TX,USA
-1151,ncweave,Weaver College,Weaverville,NC,USA
-1152,weberst,Weber State College,Ogden,UT,USA
-1153,wawenat,Wenatchee Valley College,Wenatchee,WA,USA
-1154,txwesle,Wesley College,Greenville,TX,USA
-1155,wesleyanct,Wesleyan University,Middletown,CT,USA
-1156,wchester,West Chester University of Pennsylvania,West Chester,PA,USA
-1157,cawhjco,West Hills College,Coalinga,CA,USA
-1158,kywkycc,West Kentucky Community and Technical College,Paducah,KY,USA
-1159,wlibertyst,West Liberty State College,West Liberty,WV,USA
-1160,cawlajc,West Los Angeles College,Culver City,CA,USA
-1161,txwestt,West Texas A&M University,Canyon,TX,USA
-1162,cawvjco,West Valley College,Saratoga,CA,USA
-1163,wvstate,West Virginia State University,Institute,WV,USA
-1164,wvirginia,West Virginia University,Morgantown,WV,USA
-1165,wvwesleyan,West Virginia Wesleyan College,Buckhannon,WV,USA
-1166,mewestb,Westbrook College,Portland,ME,USA
-1167,wcarolina,Western Carolina University,Cullowhee,NC,USA
-1168,wconnst,Western Connecticut State University,Danbury,CT,USA
-1169,willinois,Western Illinois University,Macomb,IL,USA
-1170,wkentucky,Western Kentucky University,Bowling Green,KY,USA
-1171,wmichigan,Western Michigan University,Kalamazoo,MI,USA
-1172,neweste,Western Nebraska Community College,Scottsbluff,NE,USA
-1173,okweste,Western Oklahoma State College,Altus,OK,USA
-1174,orweste,Western Oregon University,Monmouth,OR,USA
-1175,wwashngton,Western Washington University,Bellingham,WA,USA
-1176,wminstermo,Westminster College,Fulton,MO,USA
-1177,wminsterpa,Westminster College,New Wilmington,PA,USA
-1178,westmontca,Westmont College,Santa Barbara,CA,USA
-1179,txwhart,Wharton County Junior College,Wharton,TX,USA
-1180,wheatonma,Wheaton College,Wheaton,MA,USA
-1181,whitmanwa,Whitman College,Walla Walla,WA,USA
-1182,whittierca,Whittier College,Whittier,CA,USA
-1183,whitwrthwa,Whitworth College,Spokane,WA,USA
-1184,wichitast,Wichita State University,Wichita,KS,USA
-1185,widenerpa,Widener University,Chester,PA,USA
-1186,wilbrforce,Wilberforce University,Wilberforce,OH,USA
-1187,ilwrigh,Wilbur Wright College,Chicago,IL,USA
-1188,wileytx,Wiley College,Marshall,TX,USA
-1189,wilkespa,Wilkes University,Wilkes-Barre,PA,USA
-1190,willamette,Willamette University,Salem,OR,USA
-1191,wlmcarey,William Carey College,Hattiesburg,MS,USA
-1192,wlmjewell,William Jewell College,Liberty,MO,USA
-1193,wpaterson,William Paterson University,Wayne,NJ,USA
-1194,wlmpennia,William Penn University,Oskaloosa,IA,USA
-1195,ilharpe,William Rainey Harper College,Palatine,IL,USA
-1196,williamsma,Williams College,Williamstown,MA,USA
-1197,wingate,Wingate University,Wingate,NC,USA
-1198,winstsalst,Winston-Salem State University,Winston-Salem,NC,USA
-1199,winthrop,Winthrop University,Rock Hill,SC,USA
-1200,wittnbrgoh,Wittenberg University,Springfield,OH,USA
-1201,wofford,Wofford College,Spartanburg,SC,USA
-1202,wrightst,Wright State University,Dayton,OH,USA
-1203,xavier,Xavier University,Cincinnati,OH,USA
-1204,wayakim,Yakima Valley Community College,Yakima,WA,USA
-1205,yale,Yale University,New Haven,CT,USA
-1206,azyavap,Yavapai College,Prescott,AZ,USA
-1207,youngst,Youngstown State University,Youngstown,OH,USA
+4,akron,University of Akron,Akron,OH,USA
+5,alabama,University of Alabama,Tuscaloosa,AL,USA
+6,alabamaam,Alabama A&M University,Normal,AL,USA
+7,alabamast,Alabama State University,Montgomery,AL,USA
+8,alabamast1929,Alabama State Teachers College,Montgomery,AL,USA
+9,albanyst,Albany State University,Albany,GA,USA
+10,albertsnid,Albertson College,Caldwell,ID,USA
+11,albevil,Bevill State Community College,Sumiton,AL,USA
+12,albionmi,Albion College,Albion,MI,USA
+13,albrightpa,Albright College,Reading,PA,USA
+14,alcalho,Calhoun Community College,Decatur,AL,USA
+15,alchatt,Chattahoochee Valley Community College,Phenix City,AL,USA
+16,alcornst,Alcorn State University,Lorman,MS,USA
+17,alcornst1878,Alcorn A&M College,Lorman,MS,USA
+18,alenter,Enterprise-Ozark Community College,Enterprise,AL,USA
+19,alfaulk,Faulkner University,Montgomery,AL,USA
+20,alfscco,Faulkner State College,Bay Minette,AL,USA
+21,algadsd,Gadsden State Community College,Gadsden,AL,USA
+22,aljeffd,Jefferson Davis Community College,Brewton,AL,USA
+23,allegheny,Allegheny College,Meadville,PA,USA
+24,allurle,Lurleen B Wallace Community College,Andalusia,AL,USA
+25,almami,Alma College,Alma,MI,USA
+26,almario,Marion Military Institute,Marion,AL,USA
+27,almiles,Miles College,Fairfield,AL,USA
+28,almiles1898,Miles Memorial College,Fairfield,AL,USA
+29,alnorth,Northwest-Shoals Community College,Muscle Shoals,AL,USA
+30,alstillman,Stillman Institute,Tuscaloosa,AL,USA
+31,alsuscc,Southern Union State Community College,Wadley,AL,USA
+32,altallad,Talladega College,Talladega,AL,USA
+33,alverniapa,Alvernia College,Reading,PA,USA
+34,alwsdot,Wallace State Community College (Dothan),Dothan,AL,USA
+35,alwshan,Wallace State Community College (Hanceville),Hanceville,AL,USA
+36,american,American University,Washington,DC,USA
+37,amerintl,American International University,Springfield,MA,USA
+38,amherstma,Amherst College,Amherst,MA,USA
+39,andersonsc,Anderson College,Anderson,SC,USA
+40,appalst,Appalachian State University,Boone,NC,USA
+41,aquinasmi,Aquinas College,Grand Rapids,MI,USA
+42,arbaptist,Arkansas Baptist College,Little Rock,AR,USA
+43,arftsmi,University of Arkansas-Fort Smith,Fort Smith,AR,USA
+44,arizona,University of Arizona,Tucson,AZ,USA
+45,arizonast,Arizona State University,Tempe,AZ,USA
+46,arkansas,University of Arkansas,Fayetteville,AR,USA
+47,arkansaslr,University of Arkansas at Little Rock,Little Rock,AR,USA
+48,arkansaspb,University of Arkansas at Pine Bluff,Pine Bluff,AR,USA
+49,arkansaspb1927,Arkansas AM&N College,Pine Bluff,AR,USA
+50,arkansasst,Arkansas State University,Jonesboro,AR,USA
+51,arkmont,University of Arkansas at Monticello,Monticello,AR,USA
+52,arktech,Arkansas Tech University,Russellville,AR,USA
+53,armstratl,Armstrong Atlantic State University,Savannah,GA,USA
+54,army,United States Military Academy,West Point,NY,USA
+55,arnorth,North Arkansas College,Bentonville,AR,USA
+56,ashland,Ashland University,Ashland,OH,USA
+57,athensst,Athens State University,Athens,AL,USA
+58,auburn,Auburn University,Auburn,AL,USA
+59,auburnmont,Auburn University at Montgomery,Montgomery,AL,USA
+60,augsburgmn,Augsburg College,Minneapolis,MN,USA
+61,austincol,Austin College,Sherman,TX,USA
+62,austinpeay,Austin Peay State University,Clarksville,TN,USA
+63,azcentr,Central Arizona College,Coolidge,AZ,USA
+64,azchand,Chandler-Gilbert Community College,Chandler,AZ,USA
+65,azcochi,Cochise Community College,Douglas,AZ,USA
+66,azmescc,Mesa Community College,Mesa,AZ,USA
+67,azphoen,Phoenix College,Phoenix,AZ,USA
+68,azpimcc,Pima Community College,Tucson,AZ,USA
+69,azscott,Scottsdale Community College,Scottsdale,AZ,USA
+70,azsouth,South Mountain Community College,Phoenix,AZ,USA
+71,azusapac,Azusa Pacific University,Azusa,CA,USA
+72,azweste,Arizona Western College,Yuma,AZ,USA
+73,azyavap,Yavapai College,Prescott,AZ,USA
+74,baconeok,Bacone College,Muskogee,OK,USA
+75,bakerks,Baker University,Baldwin City,KS,USA
+76,baldwalloh,Baldwin-Wallace College,Berea,OH,USA
+77,ballst,Ball State University,Muncie,IN,USA
+78,bartonnc,Barton College,Wilson,NC,USA
+79,baruchcuny,Bernard M Baruch College,New York,NY,USA
+80,batesme,Bates College,Lewiston,ME,USA
+81,baylor,Baylor University,Waco,TX,USA
+82,belmont,Belmont University,Nashville,TN,USA
+83,belmontab,Belmont Abbey College,Belmont,NC,USA
+84,beloitwi,Beloit College,Beloit,WI,USA
+85,benedctnks,Benedictine College,Atchison,KS,USA
+86,benedictsc,Benedict College,Columbia,SC,USA
+87,bethanywv,Bethany College,Bethany,WV,USA
+88,bethcook,Bethune-Cookman College,Daytona Beach,FL,USA
+89,bethcook1872,Cookman Institute,Jacksonville,FL,USA
+90,betheltn,Bethel College,McKenzie,TN,USA
+91,biolaca,Biola University,La Mirada,CA,USA
+92,birmsouth,Birmingham-Southern College,Birmingham,AL,USA
+93,bishoptx,Bishop College,Marshall,TX,USA
+94,blackbrnil,Blackburn College,Carlinville,IL,USA
+95,bloomsburg,Bloomsburg University of Pennsylvania,Bloomsburg,PA,USA
+96,bluefield,Bluefield College,Bluefield,VA,USA
+97,bluefieldu1943,Bluefield State College,Bluefield,WV,USA
+98,boisest,Boise State University,Boise,ID,USA
+99,bostoncoll,Boston College,Chestnut Hill,MA,USA
+100,bostonuniv,Boston University,Boston,MA,USA
+101,bowdoinme,Bowdoin College,Brunswick,ME,USA
+102,bowiest,Bowie State University,Bowie,MD,USA
+103,bowlgreen,Bowling Green State University,Bowling Green,OH,USA
+104,bradley,Bradley University,Peoria,IL,USA
+105,brandeisma,Brandeis University,Waltham,MA,USA
+106,brdgwatrva,Bridgewater College,Bridgewater,VA,USA
+107,brewnormal,Brewer College,Greenwood,SC,USA
+108,brewparker,Brewton-Parker College,Mount Vernon,GA,USA
+109,bridgeport,University of Bridgeport,Bridgeport,CT,USA
+110,bridgwtrst,Bridgewater State College,Bridgewater,MA,USA
+111,brklyncuny,Brooklyn College - The City University of New York,Brooklyn,NY,USA
+112,brown,Brown University,Providence,RI,USA
+113,bryant,Bryant College,Smithfield,RI,USA
+114,bucknell,Bucknell University,Lewisburg,PA,USA
+115,buenavista,Buena Vista University,Storm Lake,IA,USA
+116,buffalost,Buffalo State College,Buffalo,NY,USA
+117,butler,Butler University,Indianapolis,IN,USA
+118,byu,Brigham Young University,Provo,UT,USA
+119,caallan,Allan Hancock College,Santa Maria,CA,USA
+120,caallia1952,California Western University,San Diego,CA,USA
+121,caameri,American River College,Sacramento,CA,USA
+122,caantel,Antelope Valley College,Lancaster,CA,USA
+123,cabakjc,Bakersfield College,Bakersfield,CA,USA
+124,cabarst,Barstow Community College,Barstow,CA,USA
+125,cabutte,Butte College,Oroville,CA,USA
+126,cacabri,Cabrillo College,Aptos,CA,USA
+127,cacanad,Canada College,Redwood City,CA,USA
+128,cacanyo,College of the Canyons,Santa Clarita,CA,USA
+129,cacerri,Cerritos College,Norwalk,CA,USA
+130,cachabo,Chabot College,Hayward,CA,USA
+131,cachaff,Chaffey College,Rancho Cucamonga,CA,USA
+132,cacitru,Citrus College,Glendora,CA,USA
+133,cacompt,Compton Community College,Compton,CA,USA
+134,cacontr,Contra Costa College,San Pablo,CA,USA
+135,cacosum,Cosumnes River College,Sacramento,CA,USA
+136,cacsmat,College of San Mateo,San Mateo,CA,USA
+137,cacuest,Cuesta College,San Luis Obispo,CA,USA
+138,cacypre,Cypress College,Cypress,CA,USA
+139,cadeanz,DeAnza College,Cupertino,CA,USA
+140,cadiabl,Diablo Valley College,Pleasant Hill,CA,USA
+141,caelajc,East Los Angeles College,Monterey Park,CA,USA
+142,caelcam,El Camino College,Torrance,CA,USA
+143,cafeath,Feather River College,Quincy,CA,USA
+144,cafooth,Foothill College,Los Altos Hills,CA,USA
+145,cafrecc,Fresno City College,Fresno,CA,USA
+146,cafrepa,Fresno Pacific University,Fresno,CA,USA
+147,cafulle,Fullerton College,Fullerton,CA,USA
+148,cagavil,Gavilan College,Gilroy,CA,USA
+149,caglend,Glendale Community College,Glendale,CA,USA
+150,cagolde,Golden West College,Huntington Beach,CA,USA
+151,caharbo,Los Angeles Harbor College,Wilmington,CA,USA
+152,cahartn,Hartnell College,Salinas,CA,USA
+153,caimper,Imperial Valley College,Imperial,CA,USA
+154,calacco,Los Angeles City College,Los Angeles,CA,USA
+155,calamjc,Los Angeles Mission College,Sylmar,CA,USA
+156,calaney,Laney College,Oakland,CA,USA
+157,calasse,Lassen College,Susanville,CA,USA
+158,calavco,Los Angeles Valley College,Los Angeles,CA,USA
+159,california,University of California - Berkeley,Berkeley,CA,USA
+160,calipa,California University of Pennsylvania,California,PA,USA
+161,calobcc,Long Beach City College,Long Beach,CA,USA
+162,calpoly,California Polytechnic State University - San Luis Obispo,San Luis Obispo,CA,USA
+163,calpolypom,California Polytechnic State University - Pomona,Pomona,CA,USA
+164,calstfull,California State University Fullerton,Fullerton,CA,USA
+165,calstla,California State University Los Angeles,Los Angeles,CA,USA
+166,calstnorth,California State University Northridge,Los Angeles,CA,USA
+167,calutheran,California Lutheran University,Thousand Oaks,CA,USA
+168,camarin,College of Marin,Kentfield,CA,USA
+169,camendo,Mendocino College,Ukiah,CA,USA
+170,camenlo,Menlo College,Atherton,CA,USA
+171,camerce,Merced College,Merced,CA,USA
+172,cameronok,Cameron University,Lawton,OK,USA
+173,camerri,Merritt College,Oakland,CA,USA
+174,camirac,MiraCosta College,Oceanside,CA,USA
+175,camissi,Mission College,Santa Clara,CA,USA
+176,camodes,Modesto Junior College,Modesto,CA,USA
+177,camoorp,Moorpark College,Moorpark,CA,USA
+178,campbell,Campbell University,Buies Creek,NC,USA
+179,campjco,Monterey Peninsula College,Monterey,CA,USA
+180,camsajc,Mount San Antonio College,Walnut,CA,USA
+181,camsjjc,Mount San Jacinto College,San Jacinto,CA,USA
+182,canapav,Napa Valley College,Napa,CA,USA
+183,canisius,Canisius College,Buffalo,NY,USA
+184,caorang,Orange Coast College,Costa Mesa,CA,USA
+185,capalom,Palomar College,San Marcos,CA,USA
+186,capasad,Pasadena City College,Pasadena,CA,USA
+187,capierc,Los Angeles Pierce College,Woodland Hills,CA,USA
+188,caporte,Porterville College,Porterville,CA,USA
+189,caranch,Rancho Santiago College,Santa Ana,CA,USA
+190,caredwo,College of the Redwoods,Eureka,CA,USA
+191,careedl,Reedley College,Reedley,CA,USA
+192,carioho,Rio Hondo College,Whittier,CA,USA
+193,carivcc,Riverside Community College,Riverside,CA,USA
+194,carkansas,University of Central Arkansas,Conway,AR,USA
+195,carsnewm,Carson-Newman College,Jefferson City,TN,USA
+196,carthagewi,Carthage College,Kenosha,WI,USA
+197,casacra,Sacramento City College,Sacramento,CA,USA
+198,casaddl,Saddleback College,Mission Viejo,CA,USA
+199,casajco,Santa Ana College,Santa Ana,CA,USA
+200,casanbe,California State University San Bernardino,San Bernardino,CA,USA
+201,casbcco,Santa Barbara City College,Santa Barbara,CA,USA
+202,casbvjc,San Bernardino Valley College,San Bernardino,CA,USA
+203,casdmjc,San Diego Mesa College,San Diego,CA,USA
+204,casequo,College of the Sequoias,Visalia,CA,USA
+205,casewestrn,Case Western Reserve University,Cleveland,OH,USA
+206,casfcco,City College of San Francisco,San Francisco,CA,USA
+207,cashast,Shasta College,Redding,CA,USA
+208,casierr,Sierra College,Rocklin,CA,USA
+209,casiski,College of the Siskiyous,Weed,CA,USA
+210,casjcco,San Jose City College,San Jose,CA,USA
+211,casjdjc,San Joaquin Delta College,Stockton,CA,USA
+212,caskyli,Skyline JC,San Bruno,CA,USA
+213,casmjco,Santa Monica College,Santa Monica,CA,USA
+214,casolan,Solano Community College,Fairfield,CA,USA
+215,casrjco,Santa Rosa Junior College,Santa Rosa,CA,USA
+216,caswjco,Southwestern College,Chula Vista,CA,USA
+217,catafjc,Taft College,Taft,CA,USA
+218,catawba,Catawba College,Salisbury,NC,USA
+219,catholic,Catholic University of America,Washington,DC,USA
+220,caventu,Ventura College,Ventura,CA,USA
+221,cawhjco,West Hills College,Coalinga,CA,USA
+222,cawlajc,West Los Angeles College,Culver City,CA,USA
+223,cawvjco,West Valley College,Saratoga,CA,USA
+224,ccny,City College of New York,New York,NY,USA
+225,cconnst,Central Connecticut State University,New Britain,CT,USA
+226,ccri,Community College of Rhode Island,Warwick,RI,USA
+227,centenary,Centenary College of Louisiana,Shreveport,LA,USA
+228,centok,University of Central Oklahoma,Edmond,OK,USA
+229,centralst,Central State University,Wilberforce,OH,USA
+230,centreky,Centre College,Danville,KY,USA
+231,cflorida,University of Central Florida,Orlando,FL,USA
+232,chapmanca,Chapman University,Orange,CA,USA
+233,charleston,College of Charleston,Charleston,SC,USA
+234,charleswv,University of Charleston,Charleston,WV,USA
+235,charlotte,University of North Carolina at Charlotte,Charlotte,NC,USA
+236,charlsouth,Charleston Southern University,Charleston,SC,USA
+237,chicago,University of Chicago,Chicago,IL,USA
+238,chicagost,Chicago State University,Chicago,IL,USA
+239,chicost,California State University Chico,Chico,CA,USA
+240,cincy,University of Cincinnati,Cincinnati,OH,USA
+241,citadel,The Citadel,Charleston,SC,USA
+242,clarion,Clarion University of Pennsylvania,Clarion,PA,USA
+243,clarkatl1865,Atlanta University,Atlanta,GA,USA
+244,clarkatl1869,Clark College,Atlanta,GA,USA
+245,clarksonny,Clarkson University,Potsdam,NY,USA
+246,clemson,Clemson University,Clemson,SC,USA
+247,clevst,Cleveland State University,Cleveland,OH,USA
+248,clrmuddscr,Claremont McKenna College,Claremont,CA,USA
+249,cmichigan,Central Michigan University,Mount Pleasant,MI,USA
+250,cmissouri,University of Central Missouri,Warrensburg,MO,USA
+251,cncrdiacol,Concordia College-Moorhead,Moorhead,MN,USA
+252,coastcar,Coastal Carolina University,Conway,SC,USA
+253,coftlew,Fort Lewis College,Durango,CO,USA
+254,colamar,Lamar Community College,Lamar,CO,USA
+255,colbyme,Colby College,Waterville,ME,USA
+256,colgate,Colgate University,Hamilton,NY,USA
+257,colocollege,Colorado College,Colorado Springs,CO,USA
+258,colorado,University of Colorado,Boulder,CO,USA
+259,coloradost,Colorado State University,Fort Collins,CO,USA
+260,columbia,Columbia University,New York,NY,USA
+261,comines,Colorado School of Mines,Golden,CO,USA
+262,concordny,Concordia College-Bronxville,Bronxville,NY,USA
+263,concrdiamn,Concordia University-St. Paul,St. Paul,MN,USA
+264,concrdiatx,Concordia University at Austin,Austin,TX,USA
+265,cornell,Cornell University,Ithaca,NY,USA
+266,cornellia,Cornell College,Mount Vernon,IA,USA
+267,costpue,Colorado State University-Pueblo,Pueblo,CO,USA
+268,cotrini,Trinidad State Junior College,Trinidad,CO,USA
+269,crdstritch,Cardinal Stritch University,Milwaukee,WI,USA
+270,creighton,Creighton University,Omaha,NE,USA
+271,crngmellon,Carnegie Mellon University,Pittsburgh,PA,USA
+272,csdomhills,California State University Dominguez Hills,Carson,CA,USA
+273,cshayward,California State University East Bay,Hayward,CA,USA
+274,csstanisl,California State University Stanislaus,Turlock,CA,USA
+275,ctconap,University of Connecticut at Avery Point,Groton,CT,USA
+276,ctmitch,Mitchell College,New London,CT,USA
+277,ctnorwa,Norwalk Community College,Norwalk,CT,USA
+278,cumbrlndtn,Cumberland University,Lebanon,TN,USA
+279,cwashngton,Central Washington University,Ellensburg,WA,USA
+280,cwpost,Long Island University - C W Post Campus,Brookville,NY,USA
+281,dallasbapt,Dallas Baptist University,Dallas,TX,USA
+282,dartmouth,Dartmouth College,Hanover,NH,USA
+283,davidson,Davidson College,Davidson,NC,USA
+284,daviselkins,Davis and Elkins College,Elkins,WV,USA
+285,dayton,University of Dayton,Dayton,OH,USA
+286,dcbenfr,Benjamin Franklin University,Washington,DC,USA
+287,debrand,Brandywine Junior College,Wilmington,DE,USA
+288,dedelaw,Delaware Technical and Community College,Dover,DE,USA
+289,delaware,University of Delaware,Newark,DE,USA
+290,delawarest,Delaware State University,Dover,DE,USA
+291,deltast,Delta State University,Cleveland,MS,USA
+292,denisonoh,Denison University,Granville,OH,USA
+293,denver,University of Denver,Denver,CO,USA
+294,depaul,DePaul University,Chicago,IL,USA
+295,depauwin,DePauw University,Greencastle,IN,USA
+296,detroit,University of Detroit Mercy,Detroit,MI,USA
+297,detroit1911,University of Detroit,Detroit,MI,USA
+298,dickinson,Dickinson College,Carlisle,PA,USA
+299,dillard1869,New Orleans University,New Orleans,LA,USA
+300,dominican,Dominican College,Orangeburg,NY,USA
+301,drake,Drake University,Des Moines,IA,USA
+302,dubuque,University of Dubuque,Dubuque,IA,USA
+303,duke,Duke University,Durham,NC,USA
+304,duquesne,Duquesne University,Pittsburgh,PA,USA
+305,ecarolina,East Carolina University,Greenville,NC,USA
+306,ecentralok,East Central University,Ada,OK,USA
+307,eckerd,Eckerd College,St. Petersburg,FL,USA
+308,econnst,Eastern Connecticut State University,Willimantic,CT,USA
+309,edinboro,Edinboro University of Pennsylvania,Edinboro,PA,USA
+310,edwaters,Edward Waters College,Jacksonville,FL,USA
+311,eillinois,Eastern Illinois University,Charleston,IL,USA
+312,ekentucky,Eastern Kentucky University,Richmond,KY,USA
+313,elizbthtwn,Elizabethtown College,Elizabethtown,PA,USA
+314,elon,Elon University,Elon,NC,USA
+315,emichigan,Eastern Michigan University,Ypsilanti,MI,USA
+316,emoryga,Emory University,Atlanta,GA,USA
+317,emoryhenry,Emory and Henry College,Emory,VA,USA
+318,emporiast,Emporia State University,Emporia,KS,USA
+319,erskine,Erskine College,Due West,SC,USA
+320,estroud,East Stroudsburg University of Pennsylvania,East Stroudsburg,PA,USA
+321,etennst,East Tennessee State University,Johnson City,TN,USA
+322,etxbaptist,East Texas Baptist University,Marshall,TX,USA
+323,eurekail,Eureka College,Eureka,IL,USA
+324,eutah,College of Eastern Utah,Price,UT,USA
+325,evansville,University of Evansville,Evansville,IN,USA
+326,fairfield,Fairfield University,Fairfield,CT,USA
+327,fairldick,Fairleigh Dickinson University - Metropolitan Campus,Teaneck,NJ,USA
+328,fayetvilst,Fayetteville State University,Fayetteville,NC,USA
+329,ferrisst,Ferris State University,Big Rapids,MI,USA
+330,ferrisst1898,Ferris Institute,Big Rapids,MI,USA
+331,ferrumva,Ferrum College,Ferrum,VA,USA
+332,fisk,Fisk University,Nashville,TN,USA
+333,flagler,Flagler College,St. Augustine,FL,USA
+334,flatlantic,Florida Atlantic University,Boca Raton,FL,USA
+335,flbarry,Barry University,Miami Shores,FL,USA
+336,flbreva,Brevard Community College,Cocoa,FL,USA
+337,flbrowa,Broward Community College,Fort Lauderdale,FL,USA
+338,flcentr,Central Florida Community College,Ocala,FL,USA
+339,flchipo,Chipola College,Marianna,FL,USA
+340,fldayto,Daytona Beach Community College,Daytona Beach,FL,USA
+341,flediso,Edison College,Fort Myers,FL,USA
+342,flflajc,Florida College,Jacksonville,FL,USA
+343,flgateway,Florida Gateway College,Lake City,FL,USA
+344,flgccco,Gulf Coast Community College,Panama City,FL,USA
+345,flgulfc,Florida Gulf Coast University,Fort Myers,FL,USA
+346,flhills,Hillsborough Community College,Tampa,FL,USA
+347,flindia,Indian River Community College,Fort Pierce,FL,USA
+348,flinternat,Florida International University,Miami,FL,USA
+349,fllynnu,Lynn University,Boca Raton,FL,USA
+350,flmanat,State College of Florida - Manatee-Sarasota,Bradenton,FL,USA
+351,flmdkjc,Miami-Dade College - Kendall Campus,Miami,FL,USA
+352,flmdnjc,Miami-Dade College - North Campus,Miami,FL,USA
+353,flmdwjc,Miami-Dade College - Wolfson Campus,Miami,FL,USA
+354,flmemorial1918,Florida Normal & Industrial Institute,St. Augustine,FL,USA
+355,flnfcco,North Florida Community College,Madison,FL,USA
+356,flnovas,Nova Southeastern University,Fort Lauderdale,FL,USA
+357,flnwfsc,Northwest Florida State College,Niceville,FL,USA
+358,flokalo,Okaloosa-Walton College,Niceville,FL,USA
+359,florida,University of Florida,Gainesville,FL,USA
+360,floridaam,Florida Agricultural and Mechanical University,Tallahassee,FL,USA
+361,floridaam1909,Florida A&M College,Tallahassee,FL,USA
+362,floridast,Florida State University,Tallahassee,FL,USA
+363,flpalme,Palmer College,DeFuniak Springs,FL,USA
+364,flpasco,Pasco-Hernando Community College,New Port Richey,FL,USA
+365,flpbaun,Palm Beach Atlantic University,West Palm Beach,FL,USA
+366,flpensa,Pensacola Junior College,Pensacola,FL,USA
+367,flpolkc,Polk Community College,Winter Haven,FL,USA
+368,flsanta,Santa Fe Community College,Gainesville,FL,USA
+369,flsjrcc,St. Johns River Community College,Palatka,FL,USA
+370,flsouthern,Florida Southern College,Lakeland,FL,USA
+371,flstpet,St. Petersburg College,St. Petersburg,FL,USA
+372,fltalla,Tallahassee Community College,Tallahassee,FL,USA
+373,fltech,Florida Institute of Technology,Melbourne,FL,USA
+374,flvalen,Valencia Community College,Orlando,FL,USA
+375,fordham,Fordham University,New York,NY,USA
+376,forthays,Fort Hays State University,Hays,KS,USA
+377,franklinin,Franklin College,Franklin,IN,USA
+378,frankmarsh,Franklin and Marshall College,Lancaster,PA,USA
+379,freedhrdmn,Freed-Hardeman University,Henderson,TN,USA
+380,fresnost,California State University Fresno,Fresno,CA,USA
+381,friendsks,Friends University,Wichita,KS,USA
+382,furman,Furman University,Greenville,SC,USA
+383,gaberry,Berry College,Mount Berry,GA,USA
+384,gacoast,Coastal Georgia Community College,Brunswick,GA,USA
+385,gacollege,Georgia College and State University,Milledgeville,GA,USA
+386,gacolum,Columbus State University,Columbus,GA,USA
+387,gagpjco,Georgia Perimeter College,Covington,GA,USA
+388,gallaudet,Gallaudet University,Washington,DC,USA
+389,gamiddl,Middle Georgia College,Cochran,GA,USA
+390,gannon,Gannon University,Erie,PA,USA
+391,gardwebb,Gardner-Webb University,Boiling Springs,NC,USA
+392,gasgajc,South Georgia College,Douglas,GA,USA
+393,gaswestern,Georgia Southwestern State University,Americus,GA,USA
+394,gatech,Georgia Institute of Technology,Atlanta,GA,USA
+395,genevapa,Geneva College,Beaver Falls,PA,USA
+396,georgefox,George Fox University,Newberg,OR,USA
+397,georgemas,George Mason University,Fairfax,VA,USA
+398,georgetown,Georgetown University,Washington,DC,USA
+399,georgewash,George Washington University,Washington,DC,USA
+400,georgia,University of Georgia,Athens,GA,USA
+401,georgiasou,Georgia Southern University,Statesboro,GA,USA
+402,georgiast,Georgia State University,Atlanta,GA,USA
+403,georgtwnky,Georgetown College,Georgetown,KY,USA
+404,gettysburg,Gettysburg College,Gettysburg,PA,USA
+405,glenvilst,Glenville State College,Glenville,WV,USA
+406,gonzaga,Gonzaga University,Spokane,WA,USA
+407,grambling,Grambling State University,Grambling,LA,USA
+408,grandview,Grand View College,Des Moines,IA,USA
+409,grcanyon,Grand Canyon University,Phoenix,AZ,USA
+410,grinnellia,Grinnell College,Grinnell,IA,USA
+411,grossmont,Grossmont College,El Cajon,CA,USA
+412,grovecity,Grove City College,Grove City,PA,USA
+413,grvalleyst,Grand Valley State University,Allendale,MI,USA
+414,guilfordnc,Guilford College,Greensboro,NC,USA
+415,hamlinemn,Hamline University,St. Paul,MN,USA
+416,hampsydney,Hampden-Sydney College,Hampden-Sydney,VA,USA
+417,hamptonva1930,Hampton Institute,Hampton,VA,USA
+418,harbison,Harbison Agricultural College,Irmo,SC,USA
+419,harding,Harding University,Searcy,AR,USA
+420,hardinsimm,Hardin-Simmons University,Abilene,TX,USA
+421,hartford,University of Hartford,West Hartford,CT,USA
+422,hartwickny,Hartwick College,Oneonta,NY,USA
+423,harvard,Harvard University,Cambridge,MA,USA
+424,haskellks,Haskell Indian Nations University,Lawrence,KS,USA
+425,hawaii,University of Hawaii at Manoa,Honolulu,HI,USA
+426,hawaiihilo,University of Hawaii at Hilo,Hilo,HI,USA
+427,hawaiipac,Hawaii Pacific University,Honolulu,HI,USA
+428,hedding,Hedding College,Abingdon,IL,USA
+429,heidelberg,Heidelberg College,Tiffin,OH,USA
+430,hendersontx,Henderson Institute,Henderson,TX,USA
+431,hendrixar,Hendrix College,Conway,AR,USA
+432,hendrsonst,Henderson State University,Arkadelphia,AR,USA
+433,highpoint,High Point University,High Point,NC,USA
+434,hillsdale,Hillsdale College,Hillsdale,MI,USA
+435,hiramoh,Hiram College,Hiram,OH,USA
+436,hobartny,Hobart and William Smith Colleges,Geneva,NY,USA
+437,hofstra,Hofstra University,Hempstead,NY,USA
+438,holycross,College of the Holy Cross,Worcester,MA,USA
+439,hopemi,Hope College,Holland,MI,USA
+440,houstnbapt,Houston Baptist University,Houston,TX,USA
+441,houston,University of Houston,Houston,TX,USA
+442,howard,Howard University,Washington,DC,USA
+443,howrdpayne,Howard Payne University,Brownwood,TX,USA
+444,humboldtst,Humboldt State University,Arcata,CA,USA
+445,huntercuny,Hunter College - The City University of New York,New York,NY,USA
+446,husttillot1876,Samuel Huston College,Austin,TX,USA
+447,iadesmo,Des Moines University,Des Moines,IA,USA
+448,iadmacc,Des Moines Area Community College,Boone,IA,USA
+449,iaellsw,Ellsworth College,Iowa Falls,IA,USA
+450,iahighl,Highland Park College,Des Moines,IA,USA
+451,iaindia,Indian Hills Community College,Centerville,IA,USA
+452,iakirkw,Kirkwood Community College,Cedar Rapids,IA,USA
+453,iaparso,Parsons College,Fairfield,IA,USA
+454,iaseccs,Southeastern Iowa Community College - Keokuk Campus,Keokuk,IA,USA
+455,iasimps,Simpson College,Indianola,IA,USA
+456,iawescc,Iowa Western Community College,Council Bluffs,IA,USA
+457,iawesleyan,Iowa Wesleyan College,Mount Pleasant,IA,USA
+458,idaho,University of Idaho,Moscow,ID,USA
+459,idahost,Idaho State University,Pocatello,ID,USA
+460,idbyuid,Brigham Young University-Idaho,Rexburg,ID,USA
+461,idcosid,College of Southern Idaho,Twin Falls,ID,USA
+462,idnidjc,North Idaho College,Coeur d'Alene,ID,USA
+463,ilaugus,Augustana College,Rock Island,IL,USA
+464,ilcenjc,Illinois Central College,East Peoria,IL,USA
+465,ilcollege,Illinois College,Jacksonville,IL,USA
+466,ildixon,Dixon College,Dixon,IL,USA
+467,ildupag,College of DuPage,Glen Ellyn,IL,USA
+468,ilelmhu,Elmhurst College,Elmhurst,IL,USA
+469,ilharpe,William Rainey Harper College,Palatine,IL,USA
+470,ilkanka,Kankakee Community College,Kankakee,IL,USA
+471,ilkaska,Kaskaskia College,Arcola,IL,USA
+472,ilkenne,Kennedy-King College,Chicago,IL,USA
+473,ilkishw,Kishwaukee College,Malta,IL,USA
+474,illakel,Lake Land College,Mattoon,IL,USA
+475,illchicago,University of Illinois at Chicago,Chicago,IL,USA
+476,illewis,Lewis & Clark Community College,Godfrey,IL,USA
+477,illinco,Lincoln College,Lincoln,IL,USA
+478,illinois,University of Illinois at Urbana-Champaign,Champaign,IL,USA
+479,illinoisst,Illinois State University,Normal,IL,USA
+480,illinoisst1857,Illinois State Normal University,Normal,IL,USA
+481,illogan,John A Logan College,Carterville,IL,USA
+482,illomba,Lombard College,Galesburg,IL,USA
+483,illtjco,Lincoln Trail College,Robinson,IL,USA
+484,ilmcken,McKendree University,Lebanon,IL,USA
+485,ilmorai,Moraine Valley Community College,Palos Hills,IL,USA
+486,ilmount,Mount Morris College,Mount Morris,IL,USA
+487,ilolney,Olney Central College,Olney,IL,USA
+488,ilparkl,Parkland College,Champaign,IL,USA
+489,ilroosevelt,Roosevelt University,Chicago,IL,USA
+490,ilseijc,Southeastern Illinois College,Harrisburg,IL,USA
+491,ilshurt,Shurtleff College,Alton,IL,USA
+492,ilssjco,South Suburban College,South Holland,IL,USA
+493,ilstvia,St. Viator College,Bourbonnais,IL,USA
+494,ilsvcco,Sauk Valley Community College,Dixon,IL,USA
+495,ilswijc,Southwestern Illinois College,Belleville,IL,USA
+496,iltrito,Triton College,River Grove,IL,USA
+497,iltruma,Harry S Truman College,Chicago,IL,USA
+498,ilwabas,Wabash Valley College,Mount Carmel,IL,USA
+499,ilwesleyan,Illinois Wesleyan University,Bloomington,IL,USA
+500,ilwrigh,Wilbur Wright College,Chicago,IL,USA
+501,inander,Anderson University,Anderson,IN,USA
+502,inbethel,Bethel College,Mishawaka,IN,USA
+503,incante,Canterbury College,Danville,IN,USA
+504,inconco,Concordia Theological Seminary,Fort Wayne,IN,USA
+505,indiana,Indiana University-Bloomington,Bloomington,IN,USA
+506,indianapa,Indiana University of Pennsylvania,Indiana,PA,USA
+507,indianast,Indiana State University,Terre Haute,IN,USA
+508,indpolis,University of Indianapolis,Indianapolis,IN,USA
+509,inhanov,Hanover College,Hanover,IN,USA
+510,inindwe,Indiana Wesleyan University,Marion,IN,USA
+511,inintec,Indiana Institute of Technology,Fort Wayne,IN,USA
+512,invince,Vincennes University,Vincennes,IN,USA
+513,iona,Iona College,New Rochelle,NY,USA
+514,iowa,University of Iowa,Iowa City,IA,USA
+515,iowast,Iowa State University,Ames,IA,USA
+516,ithacany,Ithaca College,Ithaca,NY,USA
+517,jacksonst,Jackson State University,Jackson,MS,USA
+518,jacksonvil,Jacksonville University,Jacksonville,FL,USA
+519,jamesmad,James Madison University,Harrisonburg,VA,USA
+520,jarvisu1929,Jarvis Christian College,Wood County,TX,USA
+521,jcsunc,Johnson C. Smith University,Charlotte,NC,USA
+522,jcsunc1878,Biddle University,Charlotte,NC,USA
+523,jksonvilst,Jacksonville State University,Jacksonville,AL,USA
+524,johnbrwnar,John Brown University,Siloam Springs,AR,USA
+525,johnshpkns,Johns Hopkins University,Baltimore,MD,USA
+526,juniatapa,Juniata College,Huntingdon,PA,USA
+527,kalamazoo,Kalamazoo College,Kalamazoo,MI,USA
+528,kansas,University of Kansas,Lawrence,KS,USA
+529,kansasst,Kansas State University,Manhattan,KS,USA
+530,keenest,Keene State College,Keene,NH,USA
+531,kennesawst,Kennesaw State University,Kennesaw,GA,USA
+532,kentst,Kent State University,Kent,OH,USA
+533,kentucky,University of Kentucky,Lexington,KY,USA
+534,kentuckyst,Kentucky State University,Frankfort,KY,USA
+535,kentuckyst1902,Kentucky Normal & Industrial Institute for Colored Persons,Frankfort,KY,USA
+536,kenyonoh,Kenyon College,Gambier,OH,USA
+537,knoxil,Knox College,Galesburg,IL,USA
+538,knoxville,Knoxville College,Knoxville,TN,USA
+539,ksbarto,Barton County Community College,Great Bend,KS,USA
+540,ksbutle,Butler County Community College,El Dorado,KS,USA
+541,kscloud,Cloud County Community College,Concordia,KS,USA
+542,kscowle,Cowley County Community College,Arkansas City,KS,USA
+543,ksftsco,Fort Scott Community College,Fort Scott,KS,USA
+544,ksgarde,Garden City Community College,Garden City,KS,USA
+545,kshutch,Hutchinson Community College,Hutchinson,KS,USA
+546,ksindep,Independence Community College,Independence,KS,USA
+547,ksjohns,Johnson County Community College,Overland Park,KS,USA
+548,kskccco,Kansas City Kansas Community College,Kansas City,KS,USA
+549,kslabet,Labette Community College,Parsons,KS,USA
+550,ksneosh,Neosho County Community College,Chanute,KS,USA
+551,kspratt,Pratt Community College,Pratt,KS,USA
+552,ksstmaC,St. Mary's College,St. Mary's,KS,USA
+553,kutztown,Kutztown University of Pennsylvania,Kutztown,PA,USA
+554,kybella,Bellarmine College,Louisville,KY,USA
+555,kysomer,Somerset Community College,Somerset,KY,USA
+556,kystcat,St. Catherine College,St. Catherine,KY,USA
+557,kywesleyan,Kentucky Wesleyan College,Owensboro,KY,USA
+558,kywkycc,West Kentucky Community and Technical College,Paducah,KY,USA
+559,labossi,Bossier Parish Community College,Bossier City,LA,USA
+560,lacollege,Louisiana College,Pineville,LA,USA
+561,ladelga,Delgado Community College,New Orleans,LA,USA
+562,lafayette,Lafayette College,Easton,PA,USA
+563,lakeforest,Lake Forest College,Lake Forest,IL,USA
+564,lamar,Lamar University,Beaumont,TX,USA
+565,lambuthtn,Lambuth University,Jackson,TN,USA
+566,lanecol,Lane College,Jackson,TN,USA
+567,langstonok1897,Oklahoma Colored Agricultural & Normal University,Langston,OK,USA
+568,lasalle,LaSalle University,Philadelphia,PA,USA
+569,latech,Louisiana Tech University,Ruston,LA,USA
+570,laverneca,University of La Verne,La Verne,CA,USA
+571,lebvalley,Lebanon Valley College,Annville,PA,USA
+572,lee,Lee University,Cleveland,TN,USA
+573,lehigh,Lehigh University,Bethlehem,PA,USA
+574,leland,Leland College,New Orleans,LA,USA
+575,lemoyne,LeMoyne College,Syracuse,NY,USA
+576,lemoynowen,LeMoyne-Owen College,Memphis,TN,USA
+577,lemoynowen1871,LeMoyne College,Memphis,TN,USA
+578,lenoirrhyn,Lenoir-Rhyne College,Hickory,NC,USA
+579,lewclarkor,Lewis and Clark College,Portland,OR,USA
+580,lewclarkst,Lewis-Clark State College,Lewiston,ID,USA
+581,lewisil,Lewis University,Romeoville,IL,USA
+582,lhbelen,Colegio de Belén,La Habana,La Habana,Cuba
+583,liberty,Liberty University,Lynchburg,VA,USA
+584,lincolnlandcc,Lincoln Land Community College,Springfield,IL,USA
+585,lincolnmem,Lincoln Memorial University,Harrogate,TN,USA
+586,lincolnmo,Lincoln University,Jefferson City,MO,USA
+587,linfieldor,Linfield College,McMinnville,OR,USA
+588,lipscomb,Lipscomb University,Nashville,TN,USA
+589,livingnc,Livingstone College,Salisbury,NC,USA
+590,lockhaven,Lock Haven University of Pennsylvania,Lock Haven,PA,USA
+591,longbeach,California State University Long Beach,Long Beach,CA,USA
+592,longisland,Long Island University - Brooklyn Campus,Brooklyn,NY,USA
+593,longwoodva,Longwood University,Farmville,VA,USA
+594,lorasia,Loras College,Dubuque,IA,USA
+595,louisville,University of Louisville,Louisville,KY,USA
+596,loyolachi,Loyola University Chicago,Chicago,IL,USA
+597,loyolamary,Loyola Marymount University,Los Angeles,CA,USA
+598,loyolamd,Loyola College in Maryland,Baltimore,MD,USA
+599,loyolano,Loyola University New Orleans,New Orleans,LA,USA
+600,lsu,Louisiana State University,Baton Rouge,LA,USA
+601,lubbchrist,Lubbock Christian University,Lubbock,TX,USA
+602,lutheria,Luther College,Decorah,IA,USA
+603,lycomingpa,Lycoming College,Williamsport,PA,USA
+604,lynchbrgva,Lynchburg College,Lynchburg,VA,USA
+605,maassum,Assumption College,Worcester,MA,USA
+606,macmurryil,MacMurray College,Jacksonville,IL,USA
+607,macollege,Massachusetts College of Liberal Arts,North Adams,MA,USA
+608,madeajc,Dean College,Franklin,MA,USA
+609,maemers,Emerson College,Boston,MA,USA
+610,maine,University of Maine at Orono,Orono,ME,USA
+611,malcomx1911,Crane Junior College,Chicago,IL,USA
+612,malowete,Lowell Technological Institute,Lowell,MA,USA
+613,mamassa,Massasoit Community College,Brockton,MA,USA
+614,mamerri,Merrimack College,North Andover,MA,USA
+615,mamiddl,Middlesex Community College,Bedford,MA,USA
+616,manchester,Manchester College,North Manchester,IN,USA
+617,manecco,Northern Essex Community College,Haverhill,MA,USA
+618,manhattan,Manhattan College,New York,NY,USA
+619,mankatost,Minnesota State University - Mankato,Mankato,MN,USA
+620,manscco,North Shore Community College,Danvers,MA,USA
+621,mansfield,Mansfield University of Pennsylvania,Mansfield,PA,USA
+622,maquins,Quinsigamond Community College,Worcester,MA,USA
+623,mariettaoh,Marietta College,Marietta,OH,USA
+624,marquette,Marquette University,Milwaukee,WI,USA
+625,marshall,Marshall University,Huntington,WV,USA
+626,maryhrdbay,University of Mary Hardin-Baylor,Belton,TX,USA
+627,maryland,University of Maryland,College Park,MD,USA
+628,masslowell,University of Massachusetts Lowell,Lowell,MA,USA
+629,mastersca,The Master's College,Santa Clarita,CA,USA
+630,mcdaniel,McDaniel College,Westminster,MD,USA
+631,mcmgccc,Mississippi Gulf Coast Community College,Perkinston,MS,USA
+632,mcneese,McNeese State University,Lake Charles,LA,USA
+633,mdaacco,Anne Arundel Community College,Arnold,MD,USA
+634,mdbalcc,Baltimore City Community College,Baltimore,MD,USA
+635,mdbalti,University of Baltimore,Baltimore,MD,USA
+636,mdccbcc,Community College of Baltimore County - Catonsville Campus,Catonsville,MD,USA
+637,mdccbce,Community College of Baltimore County - Essex Campus,Essex,MD,USA
+638,mdcecil,Cecil Community College,North East,MD,USA
+639,mdcolsm,College of Southern Maryland,La Plata,MD,USA
+640,mdfrost,Frostburg State University,Frostburg,MD,USA
+641,mdgarre,Garrett Community College,McHenry,MD,USA
+642,mdhager,Hagerstown Community College,Hagerstown,MD,USA
+643,mdmdbal,University of Maryland Baltimore,Baltimore,MD,USA
+644,mdmontg,Montgomery College - Rockville Campus,Rockville,MD,USA
+645,mdrockh,Rock Hill College,Ellicott City,MD,USA
+646,mdstjoh,St. John's College,Annapolis,MD,USA
+647,meharrytn,Meharry Medical College,Nashville,TN,USA
+648,memphis,University of Memphis,Memphis,TN,USA
+649,meramec,St. Louis Community College - Meramec Campus,Kirkwood,MO,USA
+650,mercer,Mercer University,Macon,GA,USA
+651,mercyhurst,Mercyhurst College,Erie,PA,USA
+652,mericke,Ricker College,Houlton,ME,USA
+653,mesast,Mesa State College,Grand Junction,CO,USA
+654,messiah,Messiah College,Grantham,PA,USA
+655,mestjos,St. Joseph's College,Standish,ME,USA
+656,mewestb,Westbrook College,Portland,ME,USA
+657,miamidade,Miami-Dade College,Miami,FL,USA
+658,miamifl,University of Miami,Coral Gables,FL,USA
+659,miamioh,Miami University of Ohio,Oxford,OH,USA
+660,michigan,University of Michigan,Ann Arbor,MI,USA
+661,michiganst,Michigan State University,East Lansing,MI,USA
+662,middlbryvt,Middlebury College,Middlebury,VT,USA
+663,midetrte,Detroit Institute of Technology,Detroit,MI,USA
+664,midlndluth,Midland Lutheran College,Fremont,NE,USA
+665,migocco,Glen Oaks Community College,Centreville,MI,USA
+666,migrand,Grand Rapids Community College,Grand Rapids,MI,USA
+667,mihenry,Henry Ford Community College,Dearborn,MI,USA
+668,mikalam,Kalamazoo Valley Community College,Kalamazoo,MI,USA
+669,millersvil,Millersville University of Pennsylvania,Millersville,PA,USA
+670,milligantn,Milligan College,Milligan College,TN,USA
+671,millikin,Millikin University,Decatur,IL,USA
+672,millsapsms,Millsaps College,Jackson,MS,USA
+673,milmich,Lake Michigan College,Benton Harbor,MI,USA
+674,mimacom,Macomb Community College,Warren,MI,USA
+675,mimuske,Muskegon Community College,Muskegon,MI,USA
+676,minnesota,University of Minnesota,Minneapolis,MN,USA
+677,minorth,Northern Michigan University,Marquette,MI,USA
+678,mioakla,Oakland Community College,Farmington Hills,MI,USA
+679,missouri,University of Missouri Columbia,Columbia,MO,USA
+680,missst,Mississippi State University,Mississippi State,MS,USA
+681,mistcla,St. Clair County Community College,Port Huron,MI,USA
+682,mit,Massachusetts Institute of Technology,Cambridge,MA,USA
+683,mnbemid,Bemidji State University,Bemidji,MN,USA
+684,mnmesabi,Mesabi Range Community and Technical College,Virginia,MN,USA
+685,mnmoorh,Minnesota State University - Moorhead,Moorhead,MN,USA
+686,mnmorris,University of Minnesota - Morris,Morris,MN,USA
+687,mnnorma,Normandale Community College,Bloomington,MN,USA
+688,mnparke,Parker College,Winnebago,MN,USA
+689,mntclairst,Montclair State University,Montclair,NJ,USA
+690,mobileal,University of Mobile,Mobile,AL,USA
+691,moconco,Concordia Seminary-St. Louis,St. Louis,MO,USA
+692,mocrowd,Crowder College,Neosho,MO,USA
+693,moculve,Culver-Stockton College,Canton,MO,USA
+694,modrury,Drury University,Springfield,MO,USA
+695,moeastc,East Central College,Union,MO,USA
+696,mofores,St. Louis Community College - Forest Park Campus,St. Louis,MO,USA
+697,moharri,Harris-Stowe State College,St. Louis,MO,USA
+698,mojcjco,Jefferson City Junior College,Jefferson City,MO,USA
+699,mojeffe,Jefferson College,Hillsboro,MO,USA
+700,molongv,Longview Community College,Kansas City,MO,USA
+701,momaple,Maple Woods Community College,Kansas City,MO,USA
+702,mominer,Mineral Area College,Park Hills,MO,USA
+703,monmouth,Monmouth University,West Long Branch,NJ,USA
+704,monroecc,Monroe Community College,Rochester,NY,USA
+705,montevallo,University of Montevallo,Montevallo,AL,USA
+706,montreatnc,Montreat College,Montreat,NC,USA
+707,morehead,Morehead State University,Morehead,KY,USA
+708,morehouse,Morehouse College,Atlanta,GA,USA
+709,morehouse1897,Atlanta Baptist College,Atlanta,GA,USA
+710,morganst,Morgan State University,Baltimore,MD,USA
+711,morganst1890,Morgan State College,Baltimore,MD,USA
+712,morolla,Missouri University of Science and Technology,Rolla,MO,USA
+713,morrisbrown,Morris Brown College,Atlanta,GA,USA
+714,mosouthern,Missouri Southern State University,Joplin,MO,USA
+715,motarki,Tarkio College,Tarkio,MO,USA
+716,mothree,Three Rivers Community College,Poplar Bluff,MO,USA
+717,movalley,Missouri Valley College,Marshall,MO,USA
+718,mowestern,Missouri Western State University,St. Joseph,MO,USA
+719,mrningside,Morningside College,Sioux City,IA,USA
+720,mryvilletn,Maryville College,Maryville,TN,USA
+721,mscollege,Mississippi College,Clinton,MS,USA
+722,mscopia,Copiah-Lincoln Community College,Wesson,MS,USA
+723,mseccco,East Central Community College,Decatur,MS,USA
+724,msgcmac,Gulf Coast Military Academy,Gulfport,MS,USA
+725,mshinds,Hinds Community College,Raymond,MS,USA
+726,msholme,Holmes Community College,Ridgeland,MS,USA
+727,msitawa,Itawamba Community College,Fulton,MS,USA
+728,msmdcco,Mississippi Delta Community College,Moorhead,MS,USA
+729,msmerid,Meridian Community College,Meridian,MS,USA
+730,msnwmcc,Northwest Mississippi Community College,Senatobia,MS,USA
+731,mspearl,Pearl River Community College,Poplarville,MS,USA
+732,msswmcc,Southwest Mississippi Community College,Summit,MS,USA
+733,mstupel,Tupelo Military Institute,Tupelo,MS,USA
+734,mtennst,Middle Tennessee State University,Murfreesboro,TN,USA
+735,mtolive,Mount Olive College,Mount Olive,NC,USA
+736,mtstmarys,Mount St. Mary's University,Emmitsburg,MD,USA
+737,mtunionoh,Mount Union College,Alliance,OH,USA
+738,mtvernnaz,Mount Vernon Nazarene University,Mount Vernon,OH,USA
+739,muhlenberg,Muhlenberg College,Allentown,PA,USA
+740,murrayst,Murray State University,Murray,KY,USA
+741,muskingum,Muskingum College,New Concord,OH,USA
+742,nalabama,University of North Alabama,Florence,AL,USA
+743,narizona,Northern Arizona University,Flagstaff,AZ,USA
+744,navy,United States Naval Academy,Annapolis,MD,USA
+745,ncat,North Carolina A&T State University,Greensboro,NC,USA
+746,ncat1915,Negro A&T College of North Carolina,Greensboro,NC,USA
+747,ncbreva,Brevard College,Brevard,NC,USA
+748,nccentral1923,Durham State Normal School for Negroes,Durham,NC,USA
+749,nccentral1925,North Carolina College for Negroes,Durham,NC,USA
+750,ncchowa,Chowan College,Murfreesboro,NC,USA
+751,ncentralil,North Central College,Naperville,IL,USA
+752,nclouis,Louisburg College,Louisburg,NC,USA
+753,ncmarsh,Mars Hill College,Mars Hill,NC,USA
+754,ncolorado,University of Northern Colorado,Greeley,CO,USA
+755,ncpitcc,Pitt Community College,Winterville,NC,USA
+756,ncruthe,Rutherford College,Rutherford College,NC,USA
+757,ncstand,St. Andrews Presbyterian College,Laurinburg,NC,USA
+758,ncstate,North Carolina State University,Raleigh,NC,USA
+759,ncuncpe,University of North Carolina at Pembroke,Pembroke,NC,USA
+760,ncweave,Weaver College,Weaverville,NC,USA
+761,ndstate,North Dakota State University,Fargo,ND,USA
+762,ndunind,University of North Dakota,Grand Forks,ND,USA
+763,neastern,Northeastern University,Boston,MA,USA
+764,nebellevue,Bellevue University,Bellevue,NE,USA
+765,nebkearney,University of Nebraska at Kearney,Kearney,NE,USA
+766,nebomaha,University of Nebraska at Omaha,Omaha,NE,USA
+767,nebraska,University of Nebraska at Lincoln,Lincoln,NE,USA
+768,nedoane,Doane College,Crete,NE,USA
+769,nehasti,Hastings College,Hastings,NE,USA
+770,neillinois,Northeastern Illinois University,Chicago,IL,USA
+771,nepersh,John J Pershing College,Beatrice,NE,USA
+772,nevada,University of Nevada-Reno,Reno,NV,USA
+773,newberry,Newberry College,Newberry,SC,USA
+774,newesleyan,Nebraska Wesleyan University,Lincoln,NE,USA
+775,neweste,Western Nebraska Community College,Scottsbluff,NE,USA
+776,newhamp,University of New Hampshire,Durham,NH,USA
+777,newhaven,University of New Haven,West Haven,CT,USA
+778,newyorku,New York University,New York,NY,USA
+779,nflorida,University of North Florida,Jacksonville,FL,USA
+780,niagara,Niagara University,Lewiston,NY,USA
+781,nicholls,Nicholls State University,Thibodaux,LA,USA
+782,nillinois,Northern Illinois University,DeKalb,IL,USA
+783,niowa,University of Northern Iowa,Cedar Falls,IA,USA
+784,njberge,Bergen Community College,Paramus,NJ,USA
+785,njborde,Bordentown Military Institute,Bordentown,NJ,USA
+786,njbrook,Brookdale Community College,Lincroft,NJ,USA
+787,njburli,Burlington County College,Pemberton,NJ,USA
+788,njcamde,Camden County College,Blackwood,NJ,USA
+789,njccmor,County College of Morris,Randolph,NJ,USA
+790,njcente,Centenary College,Hackettstown,NJ,USA
+791,njcity,New Jersey City University,Jersey City,NJ,USA
+792,njglouc,Gloucester County College,Sewell,NJ,USA
+793,njmerce,Mercer County Community College,West Windsor,NJ,USA
+794,njmiddl,Middlesex County Community College,Edison,NJ,USA
+795,njricha,Richard Stockton College of New Jersey,Pomona,NJ,USA
+796,njupsal,Upsala College,East Orange,NJ,USA
+797,nkentucky,Northern Kentucky University,Highland Heights,KY,USA
+798,nmeaste,Eastern New Mexico University,Portales,NM,USA
+799,nmexico,University of New Mexico,Albuquerque,NM,USA
+800,nmhighland,New Mexico Highlands University,Las Vegas,NM,USA
+801,nmmilin,New Mexico Military Institute,Roswell,NM,USA
+802,nmnmjco,New Mexico Junior College,Hobbs,NM,USA
+803,nmsouth,College of the Southwest,Hobbs,NM,USA
+804,nmstate,New Mexico State University,Las Cruces,NM,USA
+805,norfolkst,Norfolk State University,Norfolk,VA,USA
+806,norleans,University of New Orleans,New Orleans,LA,USA
+807,northwood,Northwood University,Midland,MI,USA
+808,norwichvt,Norwich University,Northfield,VT,USA
+809,notredame,University of Notre Dame,South Bend,IN,USA
+810,ntexas,University of North Texas,Denton,TX,USA
+811,nvsouth,College of Southern Nevada,Henderson,NV,USA
+812,nwestern,Northwestern University,Evanston,IL,USA
+813,nwmost,Northwest Missouri State University,Maryville,MO,USA
+814,nwokstate,Northwestern Oklahoma State University,Alva,OK,USA
+815,nwstate,Northwestern State University of Louisiana,Natchitoches,LA,USA
+816,nybrock,State University of New York at Brockport,Brockport,NY,USA
+817,nycortland,State University of New York at Cortland,Cortland,NY,USA
+818,nydutch,Dutchess Community College,Poughkeepsie,NY,USA
+819,nyeriec,Erie Community College,Buffalo,NY,USA
+820,nyfredonia,State University of New York at Fredonia,Fredonia,NY,USA
+821,nykbcco,Kingsborough Community College,Brooklyn,NY,USA
+822,nylehma,Lehman College,Bronx,NY,USA
+823,nymarit,Maritime College,Throggs Neck,NY,USA
+824,nymercy,Mercy College,Dobbs Ferry,NY,USA
+825,nymohaw,Mohawk Valley Community College,Utica,NY,USA
+826,nynassa,Nassau Community College,Garden City,NY,USA
+827,nyoneonta,State University of New York at Oneonta,Oneonta,NY,USA
+828,nyonond,Onondaga Community College,Syracuse,NY,USA
+829,nyrockl,Rockland Community College,Suffern,NY,USA
+830,nysuffo,Suffolk County Community College,Brentwood,NY,USA
+831,nytech,New York Institute of Technology,Old Westbury,NY,USA
+832,nyuroch,University of Rochester,Rochester,NY,USA
+833,oakland,Oakland University,Rochester,MI,USA
+834,oberlinoh,Oberlin College,Oberlin,OH,USA
+835,occidental,Occidental College,Los Angeles,CA,USA
+836,oglethrpga,Oglethorpe University,Atlanta,GA,USA
+837,ohcapit,Capital University,Bexley,OH,USA
+838,ohcaset,Case Institute of Applied Sciences,Cleveland,OH,USA
+839,ohcuyah,Cuyahoga Community College,Cleveland,OH,USA
+840,ohdominican,Ohio Dominican University,Columbus,OH,USA
+841,ohgiffi,Giffin Junior College,Van Wert,OH,USA
+842,ohio,Ohio University,Athens,OH,USA
+843,ohiost,The Ohio State University,Columbus,OH,USA
+844,ohjohnc,John Carroll University,University Heights,OH,USA
+845,ohlakel,Lakeland Community College,Kirtland,OH,USA
+846,ohlerie,Lake Erie College,Painesville,OH,USA
+847,ohnorth,Ohio Northern University,Ada,OH,USA
+848,ohsincl,Sinclair Community College,Dayton,OH,USA
+849,ohvalley,Ohio Valley College,Vienna,WV,USA
+850,ohwesleyan,Ohio Wesleyan University,Delaware,OH,USA
+851,okbapti,Oklahoma Baptist University,Shawnee,OK,USA
+852,okcity,Oklahoma City University,Oklahoma City,OK,USA
+853,okconno,Connors State College,Warner,OK,USA
+854,okeaste,East Oklahoma State College,Wilburton,OK,USA
+855,oklahoma,University of Oklahoma,Norman,OK,USA
+856,okmurra,Murray State College,Tishomingo,OK,USA
+857,okneoam,Northeast Oklahoma A&M College,Miami,OK,USA
+858,oknestu,Northeastern State University,Tahlequah,OK,USA
+859,okocsw,Oklahoma City Southwestern College,Oklahoma City,OK,USA
+860,okroger,Rogers State University,Claremore,OK,USA
+861,oksemin,Seminole State College,Seminole,OK,USA
+862,okstate,Oklahoma State University,Stillwater,OK,USA
+863,okwesle,Oklahoma Wesleyan University,Bartlesville,OK,USA
+864,okweste,Western Oklahoma State College,Altus,OK,USA
+865,olddom,Old Dominion University,Norfolk,VA,USA
+866,olemiss,University of Mississippi,Oxford,MS,USA
+867,olivetmi,Olivet College,Olivet,MI,USA
+868,olivetnaz,Olivet Nazarene University,Bourbonnais,IL,USA
+869,oralrob,Oral Roberts University,Tulsa,OK,USA
+870,orbluem,Blue Mountain Community College,Pendleton,OR,USA
+871,orcheme,Chemeketa Community College,Salem,OR,USA
+872,orcorba,Corban College,Salem,OR,USA
+873,oregon,University of Oregon,Eugene,OR,USA
+874,oregonst,Oregon State University,Corvallis,OR,USA
+875,orlinnb,Linn-Benton Community College,Albany,OR,USA
+876,ormount,Mount Hood Community College,Gresham,OR,USA
+877,ortreas,Treasure Valley Community College,Ontario,OR,USA
+878,orweste,Western Oregon University,Monmouth,OR,USA
+879,otterbein,Otterbein College,Westerville,OH,USA
+880,ouachitab,Ouachita Baptist University,Arkadelphia,AR,USA
+881,oxnard,Oxnard College,Oxnard,CA,USA
+882,ozarks,University of the Ozarks,Clarksville,AR,USA
+883,paalleb,Community College of Allegheny County - Boyce Campus,Monroeville,PA,USA
+884,paalles,Community College of Allegheny County - South Campus,West Mifflin,PA,USA
+885,pabeave,Community College of Beaver County,Monaca,PA,USA
+886,pabucks,Bucks County Community College,Lewisburg,PA,USA
+887,pabutle,Butler County Community College,Butler,PA,USA
+888,pacarli,Carlisle Indian Industrial School,Carlisle,PA,USA
+889,paccphi,Community College of Philadelphia,Philadelphia,PA,USA
+890,pacheyn,Cheyney University,Cheyney,PA,USA
+891,pacheyn1913,Cheyney State Teachers College,Cheyney,PA,USA
+892,pacific,University of the Pacific,Stockton,CA,USA
+893,pacificor,Pacific University,Forest Grove,OR,USA
+894,padelaw,Delaware County Community College,Marple,PA,USA
+895,padesal,DeSales University,Center Valley,PA,USA
+896,pahahne,Hahnemann University,Philadelphia,PA,USA
+897,pahaver,Haverford College in Pennsylvania,Haverford,PA,USA
+898,painega,Paine College,Augusta,GA,USA
+899,palaroc,LaRoche College,Pittsburgh,PA,USA
+900,palinco,Lincoln University,Lower Oxford Township,PA,USA
+901,paschuy,Schuylkill College,Reading,PA,USA
+902,pavolan,Volant College,Volant,PA,USA
+903,pbsc,Palm Beach Community College,Lake Worth,FL,USA
+904,pennst,Pennsylvania State University,State College,PA,USA
+905,pennst1874,Pennsylvania State College,State College,PA,USA
+906,pepperdine,Pepperdine University,Malibu,CA,USA
+907,pfeiffer,Pfeiffer University,Misenheimer,NC,USA
+908,philly,Philadelphia University,Philadelphia,PA,USA
+909,philsmith,Philander Smith College,Little Rock,AR,USA
+910,philsmith1894,George Smith College,Sedalia,MO,USA
+911,piedmontga,Piedmont College,Demorest,GA,USA
+912,pineywoods,Piney Woods College,Piney Woods,MS,USA
+913,pittsbst,Pittsburg State University,Pittsburg,KS,USA
+914,pittsbst1903,Kansas State Normal School,Pittsburg,KS,USA
+915,pittsburgh,University of Pittsburgh,Pittsburgh,PA,USA
+916,plymouth,Plymouth State College,Plymouth,NH,USA
+917,pompitzer,Pomona College/Pitzer College,Claremont,CA,USA
+918,portland,University of Portland,Portland,OR,USA
+919,portlandst,Portland State University,Portland,OR,USA
+920,prairview,Prairie View A&M University,Prairie View,TX,USA
+921,prairview1899,Prairie View State Normal & Industrial College,Prairie View,TX,USA
+922,presbytrn,Presbyterian College,Clinton,SC,USA
+923,princeton,Princeton University,Princeton,NJ,USA
+924,providence,Providence College,Providence,RI,USA
+925,psubehrend,Penn State Erie - the Behrend College of Pennsylvania State University,Erie,PA,USA
+926,ptlomanaz,Point Loma Nazarene University,San Diego,CA,USA
+927,ptparkpa,Point Park University,Pittsburgh,PA,USA
+928,pugetsound,University of Puget Sound,Tacoma,WA,USA
+929,pugetsound1914,College of Puget Sound,Tacoma,WA,USA
+930,purdue,Purdue University,West Lafayette,IN,USA
+931,quincy,Quincy University,Quincy,IL,USA
+932,quinnipiac,Quinnipiac College,Hamden,CT,USA
+933,radford,Radford University,Radford,VA,USA
+934,ramaponj,Ramapo College,Mahwah,NJ,USA
+935,randmacon,Randolph-Macon College,Ashland,VA,USA
+936,rhodeisle,University of Rhode Island,Kingston,RI,USA
+937,rhodestn,Rhodes College,Memphis,TN,USA
+938,ric,Rhode Island College,Providence,RI,USA
+939,rice,Rice University,Houston,TX,USA
+940,richmond,University of Richmond,Richmond,VA,USA
+941,rider,Rider University,Lawrenceville,NJ,USA
+942,riogrande,University of Rio Grande,Rio Grande,OH,USA
+943,riponwi,Ripon College,Ripon,WI,USA
+944,riroger,Roger Williams University,Bristol,RI,USA
+945,roanokeva,Roanoke College,Salem,VA,USA
+946,robertmor,Robert Morris University,Moon Township,PA,USA
+947,rockhurst,Rockhurst University,Kansas City,MO,USA
+948,rollins,Rollins College,Winter Park,FL,USA
+949,rosehulman,Rose-Hulman Institute of Technology,Terre Haute,IN,USA
+950,rowannj,Rowan University,Glassboro,NJ,USA
+951,rowannj1958,Glassboro State College,Glassboro,NJ,USA
+952,rustms,Rust College,Holly Springs,MS,USA
+953,rutgers,Rutgers - the State University of New Jersey,New Brunswick,NJ,USA
+954,sacstate,California State University Sacramento,Sacramento,CA,USA
+955,saginawval,Saginaw Valley State University,Saginaw,MI,USA
+956,salabama,University of South Alabama,Mobile,AL,USA
+957,salemintl,Salem International University,Salem,WV,USA
+958,samford,Samford University,Birmingham,AL,USA
+959,samhouston,Sam Houston State University,Huntsville,TX,USA
+960,sandiego,University of San Diego,San Diego,CA,USA
+961,sandiegost,San Diego State University,San Diego,CA,USA
+962,sanfran,University of San Francisco,San Francisco,CA,USA
+963,sanfranst,San Francisco State University,San Francisco,CA,USA
+964,sanjosest,San Jose State University,San Jose,CA,USA
+965,santaclara,Santa Clara University,Santa Clara,CA,USA
+966,sarkansas,Southern Arkansas University,Magnolia,AR,USA
+967,savcolad,Savannah College of Arts and Design,Savannah,GA,USA
+968,savst1890,Georgia State Industrial College,Savannah,GA,USA
+969,scarolina,University of South Carolina,Columbia,SC,USA
+970,scfranc,Francis Marion University,Florence,SC,USA
+971,schreiner,Schreiner University,Kerrville,TX,USA
+972,sclimes,Limestone College,Gaffney,SC,USA
+973,scranton,University of Scranton,Scranton,PA,USA
+974,scspart,Spartanburg Methodist College,Spartanburg,SC,USA
+975,scstate,South Carolina State University,Orangeburg,SC,USA
+976,scupsta,University of South Carolina Upstate,Spartanburg,SC,USA
+977,sdakotast,South Dakota State University,Brookings,SD,USA
+978,sdcity,San Diego City College,San Diego,CA,USA
+979,sdcity1914,San Diego Junior College,San Diego,CA,USA
+980,seattle,Seattle University,Seattle,WA,USA
+981,sefl,Southeastern University,Lakeland,FL,USA
+982,sela,Southeastern Louisiana University,Hammond,LA,USA
+983,seminolecc,Seminole Community College,Sanford,FL,USA
+984,semost,Southeast Missouri State University,Cape Girardeau,MO,USA
+985,seoklahoma,Southeastern Oklahoma State University,Durant,OK,USA
+986,setonhall,Seton Hall University,South Orange,NJ,USA
+987,sfaustin,Stephen F Austin State University,Nacogdoches,TX,USA
+988,sfcc,South Florida Community College,Avon Park,FL,USA
+989,sflorida,University of South Florida,Tampa,FL,USA
+990,shaw,Shaw University,Raleigh,NC,USA
+991,shenandoah,Shenandoah University,Winchester,VA,USA
+992,shepherdwv,Shepherd College,Shepherdstown,WV,USA
+993,shipnsburg,Shippensburg University of Pennsylvania,Shippensburg,PA,USA
+994,shorterga,Shorter College,Rome,GA,USA
+995,siena,Siena College,Loudonville,NY,USA
+996,silledward,Southern Illinois University Edwardsville,Edwardsville,IL,USA
+997,sillinois,Southern Illinois University Carbondale,Carbondale,IL,USA
+998,sindiana,University of Southern Indiana,Evansville,IN,USA
+999,sliprock,Slippery Rock University of Pennsylvania,Slippery Rock,PA,USA
+1000,smaine,University of Southern Maine,Gorham,ME,USA
+1001,smethodist,Southern Methodist University,Dallas,TX,USA
+1002,smiss,University of Southern Mississippi,Hattiesburg,MS,USA
+1003,sonomast,Sonoma State University,Rohnert Park,CA,USA
+1004,southernu,Southern University and A&M College,Baton Rouge,LA,USA
+1005,springhill,Spring Hill College,Mobile,AL,USA
+1006,sprngfldma,Springfield College,Springfield,MA,USA
+1007,stambrseia,St. Ambrose University,Davenport,IA,USA
+1008,stanford,Stanford University,Palo Alto,CA,USA
+1009,stanselm,St. Anselm College,Manchester,NH,USA
+1010,staugustne,St. Augustine's College,Raleigh,NC,USA
+1011,stbonny,St. Bonaventure University,St. Bonaventure,NY,USA
+1012,stcloudst,St.Cloud State University,St. Cloud,MN,USA
+1013,stedwardtx,St. Edward's University,Austin,TX,USA
+1014,sterlingks,Sterling University,Sterling,KS,USA
+1015,stetson,Stetson University,DeLand,FL,USA
+1016,stfranny,St. Francis University,Brooklyn,NY,USA
+1017,stfranpa,St. Francis University,Loretto,PA,USA
+1018,stfrncisil,University of St. Francis,Joliet,IL,USA
+1019,stjohns,St. John's University,Queens,NY,USA
+1020,stjosephin,St. Joseph's College,Rensselaer,IN,USA
+1021,stjosephs,St. Joseph's University,Philadelphia,PA,USA
+1022,stlawrence,St. Lawrence University,Canton,NY,USA
+1023,stleo,St. Leo College,St. Leo,FL,USA
+1024,stlouis,St. Louis University,St. Louis,MO,USA
+1025,stmartinwa,St. Martin's College,Lacey,WA,USA
+1026,stmarysca,St. Mary's College of California,Moraga,CA,USA
+1027,stmarysmn,St. Mary's University of Minnesota,Winona,MN,USA
+1028,stmarytx,St. Mary's University,San Antonio,TX,USA
+1029,stmichaels,St. Michael's College,Colchester,VT,USA
+1030,stonybrook,Stony Brook University,Stony Brook,NY,USA
+1031,stpeters,St. Peter's College,Jersey City,NJ,USA
+1032,stphilipstx,St. Philip's College,San Antonio,TX,USA
+1033,strose,College of St. Rose,Albany,NY,USA
+1034,stthomasfl,St. Thomas University,Miami Gardens,FL,USA
+1035,stthomasmn,University of St. Thomas,St. Paul,MN,USA
+1036,stxavieril,St. Xavier University,Orland Park,IL,USA
+1037,sulrossst,Sul Ross State University,Alpine,TX,USA
+1038,sunybing,State University of New York at Binghamton,Binghamton,NY,USA
+1039,sunybuff,University at Buffalo - State University of New York,Buffalo,NY,USA
+1040,susquehnna,Susquehanna University,Selinsgrove,PA,USA
+1041,sutah,Southern Utah University,Cedar City,UT,USA
+1042,swarthmore,Swarthmore College,Swarthmore,PA,USA
+1043,swesternks,Southwestern College,Winfield,KS,USA
+1044,swesterntx,Southwestern University,Georgetown,TX,USA
+1045,swmost,Missouri State University,Springfield,MO,USA
+1046,swoklahoma,Southwestern Oklahoma State University,Weatherford,OK,USA
+1047,swtexas,Texas State University,San Marcos,TX,USA
+1048,syracuse,Syracuse University,Syracuse,NY,USA
+1049,tampa,University of Tampa,Tampa,FL,USA
+1050,tamucomm,Texas A&M University-Commerce,Commerce,TX,USA
+1051,tamukvill,Texas A&M University-Kingsville,Kingsville,TX,USA
+1052,tarletonst,Tarleton State University,Stephenville,TX,USA
+1053,temple,Temple University,Philadelphia,PA,USA
+1054,tennessee,University of Tennessee,Knoxville,TN,USA
+1055,tennst,Tennessee State University,Nashville,TN,USA
+1056,tennst1925,Tennessee A&I State Normal College,Nashville,TN,USA
+1057,texas,University of Texas at Austin,Austin,TX,USA
+1058,texasam,Texas A&M University,College Station,TX,USA
+1059,texascoltx,Texas College,Tyler,TX,USA
+1060,thielpa,Thiel College,Greenville,PA,USA
+1061,thomasmore,Thomas More College,Crestview Hills,KY,USA
+1062,tnchatt,Chattanooga State Technical Community College,Chattanooga,TN,USA
+1063,tnchris,Christian Brothers University,Memphis,TN,USA
+1064,tncleve,Cleveland State Community College,Cleveland,TN,USA
+1065,tncolum,Columbia State Community College,Columbia,TN,USA
+1066,tnhiwas,Hiwassee College,Madisonville,TN,USA
+1067,tnjacks,Jackson State Community College,Jackson,TN,USA
+1068,tnkingc,King College,Bristol,TN,USA
+1069,tnmotlo,Motlow State Community College,Lynchburg,TN,USA
+1070,tnswten,Southwest Tennessee Community College,Memphis,TN,USA
+1071,tntech,Tennessee Technological University,Cookeville,TN,USA
+1072,tntenme,University of Tennessee Health Science Center,Memphis,TN,USA
+1073,tnvolun,Volunteer State Community College,Gallatin,TN,USA
+1074,tnwesleyan,Tennessee Wesleyan College,Athens,TN,USA
+1075,toledo,University of Toledo,Toledo,OH,USA
+1076,tougaloo,Tougaloo College,Tougaloo,MS,USA
+1077,towson,Towson University,Towson,MD,USA
+1078,trinityct,Trinity College,Hartford,CT,USA
+1079,trinitytx,Trinity University,San Antonio,TX,USA
+1080,trnsylvnia,Transylvania University,Lexington,KY,USA
+1081,troyst,Troy University,Troy,AL,USA
+1082,trumanst,Truman State University,Kirksville,MO,USA
+1083,tuftsma,Tufts University,Medford,MA,USA
+1084,tulane,Tulane University,New Orleans,LA,USA
+1085,tulsa,University of Tulsa,Tulsa,OK,USA
+1086,tusculum,Tusculum College,Greenville,TN,USA
+1087,tuskegee,Tuskegee University,Tuskegee,AL,USA
+1088,tuskegee1937,Tuskegee Institute,Tuskegee,AL,USA
+1089,txalvin,Alvin Community College,Alvin,TX,USA
+1090,txangel,Angelo State University,San Angelo,TX,USA
+1091,txangjc,Angelina College,Lufkin,TX,USA
+1092,txausti,Austin Community College,Austin,TX,USA
+1093,txblinn,Blinn College,Brenham,TX,USA
+1094,txburne,Burnetta College,Venus,TX,USA
+1095,txchrist,Texas Christian University,Fort Worth,TX,USA
+1096,txclare,Clarendon College,Clarendon,TX,USA
+1097,txcoast,Coastal Bend College,Beeville,TX,USA
+1098,txcolli,Collin College,Dallas,TX,USA
+1099,txeastf,Eastfield College,Mesquite,TX,USA
+1100,txelpas,El Paso Community College,El Paso,TX,USA
+1101,txfrank,Frank Phillips College,Borger,TX,USA
+1102,txgalve,Galveston College,Galveston,TX,USA
+1103,txgrays,Grayson County College,Denison,TX,USA
+1104,txhillj,Hill College,Hillsboro,TX,USA
+1105,txhowar,Howard College,Big Spring,TX,USA
+1106,txkilgo,Kilgore College,Kilgore,TX,USA
+1107,txleejc,Lee College,Baytown,TX,USA
+1108,txlonmo,Lon Morris College,Jacksonville,TX,USA
+1109,txmclen,McLennan Community College,Waco,TX,USA
+1110,txmcmur,McMurry University,Abilene,TX,USA
+1111,txmerid,Meridian Junior College,Meridian,TX,USA
+1112,txmidla,Midland College,Midland,TX,USA
+1113,txnavar,Navarro College,Corsicana,TX,USA
+1114,txnctjc,North Central Texas College,Gainesville,TX,USA
+1115,txnetex,Northeast Texas Community College,Mount Pleasant,TX,USA
+1116,txodess,Odessa College,Odessa,TX,USA
+1117,txpanol,Panola College,Carthage,TX,USA
+1118,txparis,Paris Junior College,Paris,TX,USA
+1119,txpaulq,Paul Quinn College,Dallas,TX,USA
+1120,txrange,Ranger College,Ranger,TX,USA
+1121,txsajco,San Antonio College,San Antonio,TX,USA
+1122,txsjjcn,San Jacinto College - North Campus,Houston,TX,USA
+1123,txsjjco,San Jacinto College,Pasadena,TX,USA
+1124,txswtex,Southwest Texas Junior College,Uvalde,TX,USA
+1125,txtech,Texas Tech University,Lubbock,TX,USA
+1126,txtempl,Temple College,Temple,TX,USA
+1127,txtexar,Texarkana College,Texarkana,TX,USA
+1128,txtyler,Tyler Junior College,Tyler,TX,USA
+1129,txutper1973,University of Texas of the Permian Basin,Odessa,TX,USA
+1130,txverno,Vernon College,Vernon,TX,USA
+1131,txweath,Weatherford College,Weatherford,TX,USA
+1132,txwesle,Wesley College,Greenville,TX,USA
+1133,txwesleyan,Texas Wesleyan University,Fort Worth,TX,USA
+1134,txwestt,West Texas A&M University,Canyon,TX,USA
+1135,txwhart,Wharton County Junior College,Wharton,TX,USA
+1136,uab,University of Alabama at Birmingham,Birmingham,AL,USA
+1137,ucdavis,University of California - Davis,Davis,CA,USA
+1138,ucirvine,University of California - Irvine,Irvine,CA,USA
+1139,ucla,University of California - Los Angeles,Los Angeles,CA,USA
+1140,uconn,University of Connecticut,Storrs,CT,USA
+1141,ucriver,University of California - Riverside,Riverside,CA,USA
+1142,ucsb,University of California - Santa Barbara,Santa Barbara,CA,USA
+1143,ucsb1944,Santa Barbara College,Santa Barbara,CA,USA
+1144,ucsd,University of California - San Diego,La Jolla,CA,USA
+1145,ulala,University of Louisiana at Lafayette,Lafayette,LA,USA
+1146,ulamo,University of Louisiana at Monroe,Monroe,LA,USA
+1147,umass,University of Massachusetts Amherst,Amherst,MA,USA
+1148,umassdartm,University of Massachusetts Dartmouth,North Dartmouth,MA,USA
+1149,umbc,University of Maryland - Baltimore County,Baltimore,MD,USA
+1150,umes,University of Maryland Eastern Shore,Princess Anne,MD,USA
+1151,umkc,University of Missouri Kansas City,Kansas City,MO,USA
+1152,unc,University of North Carolina at Chapel Hill,Chapel Hill,NC,USA
+1153,uncashe,University of North Carolina at Asheville,Asheville,NC,USA
+1154,uncgreen,University of North Carolina at Greensboro,Greensboro,NC,USA
+1155,uncwilm,University of North Carolina at Wilmington,Wilmington,NC,USA
+1156,unionny,Union College,Schenectady,NY,USA
+1157,uniontn,Union University,Jackson,TN,USA
+1158,unlv,University of Nevada-Las Vegas,Las Vegas,NV,USA
+1159,uofsouth,University of the South,Sewanee,TN,USA
+1160,upenn,University of Pennsylvania,Philadelphia,PA,USA
+1161,upperiowa,Upper Iowa University,Fayette,IA,USA
+1162,uredlands,University of Redlands,Redlands,CA,USA
+1163,ursinus,Ursinus College,Collegeville,PA,USA
+1164,usc,University of Southern California,Los Angeles,CA,USA
+1165,uscaiken,University of South Carolina Aiken,Aiken,SC,USA
+1166,utah,University of Utah,Salt Lake City,UT,USA
+1167,utahst,Utah State University,Logan,UT,USA
+1168,utahvalley,Utah Valley State University,Orem,UT,USA
+1169,utarl,University of Texas at Arlington,Arlington,TX,USA
+1170,utchat,University of Tennessee at Chattanooga,Chattanooga,TN,USA
+1171,utdixie,Dixie State College of Utah,St. George,UT,USA
+1172,utep,University of Texas at El Paso,El Paso,TX,USA
+1173,utpanam,University of Texas Pan American,Edinburg,TX,USA
+1174,utslxxo,Salt Lake Community College,Salt Lake City,UT,USA
+1175,utsnojc,Snow College,Ephraim,UT,USA
+1176,vaappre,Newport News Apprentice School,Newport News,VA,USA
+1177,vaemenn,Eastern Mennonite University,Harrisonburg,VA,USA
+1178,valdostast,Valdosta State University,Valdosta,GA,USA
+1179,valpo,Valparaiso University,Valparaiso,IN,USA
+1180,vamedic,Medical College of Virginia,Richmond,VA,USA
+1181,vandy,Vanderbilt University,Nashville,TN,USA
+1182,vanguardca,Vanguard University of Southern California,Costa Mesa,CA,USA
+1183,vatech,Virginia Polytechnic Institute and State University,Blacksburg,VA,USA
+1184,vcu,Virginia Commonwealth University,Richmond,VA,USA
+1185,vermont,University of Vermont,Burlington,VT,USA
+1186,villanova,Villanova University,Villanova,PA,USA
+1187,virginia,University of Virginia,Charlottesville,VA,USA
+1188,virginiast,Virginia State University,Petersburg,VA,USA
+1189,virginiast1902,Virginia Normal & Industrial Institute,Petersburg,VA,USA
+1190,virginiast1930,Virginia State College for Negroes,Ettrick,VA,USA
+1191,virunion,Virginia Union University,Richmond,VA,USA
+1192,viterbowi,Viterbo University,La Crosse,WI,USA
+1193,vmi,Virginia Military Institute,Lexington,VA,USA
+1194,wabashin,Wabash College,Crawfordsville,IN,USA
+1195,wabelle,Bellevue Community College,Bellevue,WA,USA
+1196,wacentr,Centralia College,Centralia,WA,USA
+1197,waclark,Clark College,Vancouver,WA,USA
+1198,wacolum,Columbia Basin College,Pasco,WA,USA
+1199,waedmon,Edmonds Community College,Lynnwood,WA,USA
+1200,waevere,Everett Community College,Everett,WA,USA
+1201,wagner,Wagner College,Staten Island,NY,USA
+1202,wagreen,Green River Community College,Auburn,WA,USA
+1203,wake,Wake Forest University,Winston-Salem,NC,USA
+1204,walabama,University of West Alabama,Livingston,AL,USA
+1205,walden,Walden University,Nashville,TN,USA
+1206,walower,Lower Columbia College,Longview,WA,USA
+1207,waolymp,Olympic College,Bremerton,WA,USA
+1208,warnerpac,Warner Pacific College,Portland,OR,USA
+1209,wasfcco,Spokane Falls Community College,Spokane,WA,USA
+1210,washburn,Washburn University,Topeka,KS,USA
+1211,washcollmd,Washington College,Chestertown,MD,USA
+1212,washcolltn,Washington College,Jonesborough,TN,USA
+1213,washington,University of Washington,Seattle,WA,USA
+1214,washjeffpa,Washington and Jefferson College,Washington,PA,USA
+1215,washleeva,Washington and Lee University,Lexington,VA,USA
+1216,washore,Shoreline Community College,Shoreline,WA,USA
+1217,washst,Washington State University,Pullman,WA,USA
+1218,watacom,Tacoma Community College,Tacoma,WA,USA
+1219,wawalla,Walla Walla Community College,Walla Walla,WA,USA
+1220,wawenat,Wenatchee Valley College,Wenatchee,WA,USA
+1221,wayakim,Yakima Valley Community College,Yakima,WA,USA
+1222,waynesburg,Waynesburg College,Waynesburg,PA,USA
+1223,waynest,Wayne State University,Detroit,MI,USA
+1224,waynestne,Wayne State College,Wayne,NE,USA
+1225,wbapbible,Western Baptist College,Kansas City,MO,USA
+1226,wcarolina,Western Carolina University,Cullowhee,NC,USA
+1227,wchester,West Chester University of Pennsylvania,West Chester,PA,USA
+1228,wconnst,Western Connecticut State University,Danbury,CT,USA
+1229,weberst,Weber State College,Ogden,UT,USA
+1230,wesleyanct,Wesleyan University,Middletown,CT,USA
+1231,westmontca,Westmont College,Santa Barbara,CA,USA
+1232,wflorida,University of West Florida,Pensacola,FL,USA
+1233,wgeorgia,State University of West Georgia,Carrollton,GA,USA
+1234,wheatonma,Wheaton College,Wheaton,MA,USA
+1235,whitmanwa,Whitman College,Walla Walla,WA,USA
+1236,whittierca,Whittier College,Whittier,CA,USA
+1237,whitwrthwa,Whitworth College,Spokane,WA,USA
+1238,wicarro,Carroll College,Waukesha,WI,USA
+1239,wichitast,Wichita State University,Wichita,KS,USA
+1240,widenerpa,Widener University,Chester,PA,USA
+1241,widenerpa1892,Pennsylvania Military College,Chester,PA,USA
+1242,wilacrosse,University of Wisconsin at La Crosse,La Crosse,WI,USA
+1243,wilawre,Lawrence University,Appleton,WI,USA
+1244,wilbrforce,Wilberforce University,Wilberforce,OH,USA
+1245,wileytx,Wiley College,Marshall,TX,USA
+1246,wilkespa,Wilkes University,Wilkes-Barre,PA,USA
+1247,willamette,Willamette University,Salem,OR,USA
+1248,williamsma,Williams College,Williamstown,MA,USA
+1249,willinois,Western Illinois University,Macomb,IL,USA
+1250,willmary,College of William and Mary,Williamsburg,VA,USA
+1251,wingate,Wingate University,Wingate,NC,USA
+1252,winstsalst,Winston-Salem State University,Winston-Salem,NC,USA
+1253,winstsalst1925,Winston-Salem Teachers College,Winston-Salem,NC,USA
+1254,winthrop,Winthrop University,Rock Hill,SC,USA
+1255,wioshkosh,University of Wisconsin at Oshkosh,Oshkosh,WI,USA
+1256,wisacre,Sacred Heart College,Watertown,WI,USA
+1257,wisconsin,University of Wisconsin at Madison,Madison,WI,USA
+1258,wistnor,St. Norbert College,De Pere,WI,USA
+1259,wistvnspt,University of Wisconsin at Stevens Point,Stevens Point,WI,USA
+1260,wisuperior,University of Wisconsin at Superior,Superior,WI,USA
+1261,wittnbrgoh,Wittenberg University,Springfield,OH,USA
+1262,wiwhitewtr,University of Wisconsin at Whitewater,Whitewater,WI,USA
+1263,wkentucky,Western Kentucky University,Bowling Green,KY,USA
+1264,wlibertyst,West Liberty State College,West Liberty,WV,USA
+1265,wlmcarey,William Carey College,Hattiesburg,MS,USA
+1266,wlmjewell,William Jewell College,Liberty,MO,USA
+1267,wlmpennia,William Penn University,Oskaloosa,IA,USA
+1268,wmichigan,Western Michigan University,Kalamazoo,MI,USA
+1269,wminstermo,Westminster College,Fulton,MO,USA
+1270,wminsterpa,Westminster College,New Wilmington,PA,USA
+1271,wofford,Wofford College,Spartanburg,SC,USA
+1272,woosteroh,College of Wooster,Wooster,OH,USA
+1273,wpaterson,William Paterson University,Wayne,NJ,USA
+1274,wrightst,Wright State University,Dayton,OH,USA
+1275,wshngtonmo,Washington University in St. Louis,St. Louis,MO,USA
+1276,wuquindaro,Western University,Quindaro,KS,USA
+1277,wvirginia,West Virginia University,Morgantown,WV,USA
+1278,wvpotom,Potomac State College,Keyser,WV,USA
+1279,wvstate,West Virginia State University,Institute,WV,USA
+1280,wvwesleyan,West Virginia Wesleyan College,Buckhannon,WV,USA
+1281,wwashngton,Western Washington University,Bellingham,WA,USA
+1282,wyoming,University of Wyoming,Laramie,WY,USA
+1283,xavier,Xavier University,Cincinnati,OH,USA
+1284,xavierla,Xavier University of Louisiana,New Orleans,LA,USA
+1285,xavierla1932,Xavier College,New Orleans,LA,USA
+1286,yale,Yale University,New Haven,CT,USA
+1287,youngst,Youngstown State University,Youngstown,OH,USA

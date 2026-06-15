@@ -1,101 +1,96 @@
-.. container::
+================= ===============
+gotway.hessianfly R Documentation
+================= ===============
 
-   .. container::
+Hessian fly damage to wheat varieties
+-------------------------------------
 
-      ================= ===============
-      gotway.hessianfly R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Hessian fly damage to wheat varieties
-         :name: hessian-fly-damage-to-wheat-varieties
+Hessian fly damage to wheat varieties
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Hessian fly damage to wheat varieties
+``block``
+   block factor, 4 levels
 
-      .. rubric:: Format
-         :name: format
+``genotype factor, 16 wheat varieties``
+``lat``
+   latitude, numeric
 
-      ``block``
-         block factor, 4 levels
+``long``
+   longitude, numeric
 
-      ``genotype factor, 16 wheat varieties``
-      ``lat``
-         latitude, numeric
+``y``
+   number of damaged plants
 
-      ``long``
-         longitude, numeric
+``n``
+   number of total plants
 
-      ``y``
-         number of damaged plants
+Details
+~~~~~~~
 
-      ``n``
-         number of total plants
+The response is binomial.
 
-      .. rubric:: Details
-         :name: details
+Each plot was square.
 
-      The response is binomial.
+Source
+~~~~~~
 
-      Each plot was square.
+C. A. Gotway and W. W. Stroup. A Generalized Linear Model Approach to
+Spatial Data Analysis and Prediction *Journal of Agricultural,
+Biological, and Environmental Statistics*, 2, 157-178.
 
-      .. rubric:: Source
-         :name: source
+https://doi.org/10.2307/1400401
 
-      C. A. Gotway and W. W. Stroup. A Generalized Linear Model Approach
-      to Spatial Data Analysis and Prediction *Journal of Agricultural,
-      Biological, and Environmental Statistics*, 2, 157-178.
+References
+~~~~~~~~~~
 
-      https://doi.org/10.2307/1400401
+The GLIMMIX procedure. https://www.ats.ucla.edu/stat/SAS/glimmix.pdf
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      The GLIMMIX procedure.
-      https://www.ats.ucla.edu/stat/SAS/glimmix.pdf
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+     library(agridat)
+     data(gotway.hessianfly)
+     dat <- gotway.hessianfly
+     
+     dat$prop <- dat$y / dat$n
+     
+     libs(desplot)
+     desplot(dat, prop~long*lat,
+             aspect=1, # true aspect
+             out1=block, num=gen, cex=.75,
+             main="gotway.hessianfly")
+     
 
-         ## Not run: 
+     # ----------------------------------------------------------------------------
 
-           library(agridat)
-           data(gotway.hessianfly)
-           dat <- gotway.hessianfly
-           
-           dat$prop <- dat$y / dat$n
-           
-           libs(desplot)
-           desplot(dat, prop~long*lat,
-                   aspect=1, # true aspect
-                   out1=block, num=gen, cex=.75,
-                   main="gotway.hessianfly")
-           
+     # spaMM package example
+     libs(spaMM)
+     m1 = HLCor(cbind(y, n-y) ~ 1 + gen + (1|block) + Matern(1|long+lat),
+                data=dat, family=binomial(), ranPars=list(nu=0.5, rho=1/.7))
+     summary(m1)
+     fixef(m1)
+     # The following line fails with "Invalid graphics state"
+     # when trying to use pkgdown::build_site
+     # filled.mapMM(m1)
 
-           # ----------------------------------------------------------------------------
+     # ----------------------------------------------------------------------------
 
-           # spaMM package example
-           libs(spaMM)
-           m1 = HLCor(cbind(y, n-y) ~ 1 + gen + (1|block) + Matern(1|long+lat),
-                      data=dat, family=binomial(), ranPars=list(nu=0.5, rho=1/.7))
-           summary(m1)
-           fixef(m1)
-           # The following line fails with "Invalid graphics state"
-           # when trying to use pkgdown::build_site
-           # filled.mapMM(m1)
-
-           # ----------------------------------------------------------------------------
-
-           # Block random.  See Glimmix manual, output 1.18.
-           # Note: (Different parameterization)
-           
-           libs(lme4)
-           l2 <- glmer(cbind(y, n-y) ~ gen + (1|block), data=dat, family=binomial,
-             control=glmerControl(check.nlev.gtr.1="ignore"))
-           coef(l2)
+     # Block random.  See Glimmix manual, output 1.18.
+     # Note: (Different parameterization)
+     
+     libs(lme4)
+     l2 <- glmer(cbind(y, n-y) ~ gen + (1|block), data=dat, family=binomial,
+       control=glmerControl(check.nlev.gtr.1="ignore"))
+     coef(l2)
 
 
-         ## End(Not run)
+   ## End(Not run)

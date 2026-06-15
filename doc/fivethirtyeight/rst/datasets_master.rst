@@ -1,56 +1,51 @@
-.. container::
+=============== ===============
+datasets_master R Documentation
+=============== ===============
 
-   .. container::
+Master list of all datasets
+---------------------------
 
-      =============== ===============
-      datasets_master R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Master list of all datasets
-         :name: master-list-of-all-datasets
+All datasets included in both fivethirtyeight and fivethirtyeightdata
+packages
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      All datasets included in both fivethirtyeight and
-      fivethirtyeightdata packages
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   datasets_master
 
-      .. code:: R
+Format
+~~~~~~
 
-         datasets_master
+A data frame with 9 variables:
 
-      .. rubric:: Format
-         :name: format
+Data Frame Name
+   Name of lazy-loaded data frame
 
-      A data frame with 9 variables:
+In fivethirtyeightdata?
+   Whether the (large) dataset is in the fivethirtyeightdata package
 
-      Data Frame Name
-         Name of lazy-loaded data frame
+Article Title
+   Title as it appears on FiveThirtyEight.com
 
-      In fivethirtyeightdata?
-         Whether the (large) dataset is in the fivethirtyeightdata
-         package
+URL
+   Link to article on FiveThirtyEight.com
 
-      Article Title
-         Title as it appears on FiveThirtyEight.com
+Author 1
+   Main author
 
-      URL
-         Link to article on FiveThirtyEight.com
+Author 2
+   Second author (if any)
 
-      Author 1
-         Main author
+Author 3
+   Third author (if any)
 
-      Author 2
-         Second author (if any)
+Date
+   Date published
 
-      Author 3
-         Third author (if any)
-
-      Date
-         Date published
-
-      Filed Under
-         Tag for article
+Filed Under
+   Tag for article

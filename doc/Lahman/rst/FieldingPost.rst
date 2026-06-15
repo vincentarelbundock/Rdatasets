@@ -1,130 +1,125 @@
-.. container::
+============ ===============
+FieldingPost R Documentation
+============ ===============
 
-   .. container::
+FieldingPost data
+-----------------
 
-      ============ ===============
-      FieldingPost R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: FieldingPost data
-         :name: fieldingpost-data
+Post season fielding data
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Post season fielding data
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(FieldingPost)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(FieldingPost)
+A data frame with 17934 observations on the following 17 variables.
 
-      .. rubric:: Format
-         :name: format
+``playerID``
+   Player ID code
 
-      A data frame with 16502 observations on the following 17
-      variables.
+``yearID``
+   Year
 
-      ``playerID``
-         Player ID code
+``teamID``
+   Team; a factor
 
-      ``yearID``
-         Year
+``lgID``
+   League; a factor with levels ``AL`` ``NL``
 
-      ``teamID``
-         Team; a factor
+``round``
+   Level of playoffs
 
-      ``lgID``
-         League; a factor with levels ``AL`` ``NL``
+``POS``
+   Position
 
-      ``round``
-         Level of playoffs
+``G``
+   Games
 
-      ``POS``
-         Position
+``GS``
+   Games Started
 
-      ``G``
-         Games
+``InnOuts``
+   Time played in the field expressed as outs
 
-      ``GS``
-         Games Started
+``PO``
+   Putouts
 
-      ``InnOuts``
-         Time played in the field expressed as outs
+``A``
+   Assists
 
-      ``PO``
-         Putouts
+``E``
+   Errors
 
-      ``A``
-         Assists
+``DP``
+   Double Plays
 
-      ``E``
-         Errors
+``TP``
+   Triple Plays
 
-      ``DP``
-         Double Plays
+``PB``
+   Passed Balls
 
-      ``TP``
-         Triple Plays
+``SB``
+   Stolen Bases allowed (by catcher)
 
-      ``PB``
-         Passed Balls
+``CS``
+   Caught Stealing (by catcher)
 
-      ``SB``
-         Stolen Bases allowed (by catcher)
+Source
+~~~~~~
 
-      ``CS``
-         Caught Stealing (by catcher)
+Lahman, S. (2026) Lahman's Baseball Database, 1871-2025, 2026 version,
+https://sabr.org/lahman-database/
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Lahman, S. (2025) Lahman's Baseball Database, 1871-2024, 2025
-      version, https://sabr.org/lahman-database/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   require("dplyr")
 
-      .. code:: R
+   ## World Series fielding record for Yogi Berra
+   FieldingPost %>%
+     filter(playerID == "berrayo01" & round == "WS")
 
-         require("dplyr")
+   ## Yogi's career efficiency in throwing out base stealers 
+   ## in his WS appearances and CS as a percentage of his 
+   ## overall assists
+   FieldingPost %>%
+     filter(playerID == "berrayo01" & round == "WS" & POS == "C") %>%
+     summarise(cs_pct = round(100 * sum(CS)/sum(SB + CS), 2),
+               cs_assists = round(100 * sum(CS)/sum(A), 2))
 
-         ## World Series fielding record for Yogi Berra
-         FieldingPost %>%
-           filter(playerID == "berrayo01" & round == "WS")
-
-         ## Yogi's career efficiency in throwing out base stealers 
-         ## in his WS appearances and CS as a percentage of his 
-         ## overall assists
-         FieldingPost %>%
-           filter(playerID == "berrayo01" & round == "WS" & POS == "C") %>%
-           summarise(cs_pct = round(100 * sum(CS)/sum(SB + CS), 2),
-                     cs_assists = round(100 * sum(CS)/sum(A), 2))
-
-         ## Innings per error for several selected shortstops in the WS
-         FieldingPost %>%
-           filter(playerID %in% c("belanma01", "jeterde01", "campabe01",
-                                  "conceda01", "bowala01"), round == "WS") %>%
-           group_by(playerID) %>%
-           summarise(G = sum(G),
-                     InnOuts = sum(InnOuts),
-                     Eper9 = round(27 * sum(E)/sum(InnOuts), 3))
+   ## Innings per error for several selected shortstops in the WS
+   FieldingPost %>%
+     filter(playerID %in% c("belanma01", "jeterde01", "campabe01",
+                            "conceda01", "bowala01"), round == "WS") %>%
+     group_by(playerID) %>%
+     summarise(G = sum(G),
+               InnOuts = sum(InnOuts),
+               Eper9 = round(27 * sum(E)/sum(InnOuts), 3))
 
 
-         ## Top 10 center fielders in innings played in the WS
-         FieldingPost %>%
-           filter(POS == "CF" & round == "WS") %>%
-           group_by(playerID) %>%
-           summarise(inn_total = sum(InnOuts)) %>%
-           arrange(desc(inn_total)) %>%
-           head(., 10)
+   ## Top 10 center fielders in innings played in the WS
+   FieldingPost %>%
+     filter(POS == "CF" & round == "WS") %>%
+     group_by(playerID) %>%
+     summarise(inn_total = sum(InnOuts)) %>%
+     arrange(desc(inn_total)) %>%
+     head(., 10)
 
-         ## Most total chances by position
-         FieldingPost %>%
-           filter(round == "WS" & !(POS %in% c("DH", "OF", "P"))) %>%
-           group_by(POS, playerID) %>%
-           summarise(TC = sum(PO + A + E)) %>%
-           arrange(desc(TC)) %>%
-           do(head(., 1))    # provides top player by position
+   ## Most total chances by position
+   FieldingPost %>%
+     filter(round == "WS" & !(POS %in% c("DH", "OF", "P"))) %>%
+     group_by(POS, playerID) %>%
+     summarise(TC = sum(PO + A + E)) %>%
+     arrange(desc(TC)) %>%
+     do(head(., 1))    # provides top player by position

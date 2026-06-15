@@ -1,166 +1,160 @@
-.. container::
+==================== ===============
+causal_collider_time R Documentation
+==================== ===============
 
-   .. container::
+Time-varying Causal Quartet Data
+--------------------------------
 
-      ==================== ===============
-      causal_collider_time R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Time-varying Causal Quartet Data
-         :name: time-varying-causal-quartet-data
+These datasets contains 100 observations, each generated under a
+different data generating mechanism:
 
-      .. rubric:: Description
-         :name: description
+- (1) A collider
 
-      These datasets contains 100 observations, each generated under a
-      different data generating mechanism:
+- (2) A confounder
 
-      -  (1) A collider
+- (3) A mediator
 
-      -  (2) A confounder
+- (4) M-bias
 
-      -  (3) A mediator
+Usage
+~~~~~
 
-      -  (4) M-bias
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   causal_collider_time
 
-      .. code:: R
+   causal_confounding_time
 
-         causal_collider_time
+   causal_mediator_time
 
-         causal_confounding_time
+   causal_m_bias_time
 
-         causal_mediator_time
+   causal_quartet_time
 
-         causal_m_bias_time
+Format
+~~~~~~
 
-         causal_quartet_time
+``causal_collider_time``: A dataframe with 100 rows and 7 variables:
 
-      .. rubric:: Format
-         :name: format
+- ``covariate_baseline``: known factor measured at baseline
 
-      ``causal_collider_time``: A dataframe with 100 rows and 7
-      variables:
+- ``exposure_baseline``: exposure measured at baseline
 
-      -  ``covariate_baseline``: known factor measured at baseline
+- ``outcome_baseline``: outcome measured at baseline
 
-      -  ``exposure_baseline``: exposure measured at baseline
+- ``exposure_followup``: exposure measured at the followup visit (final
+  time)
 
-      -  ``outcome_baseline``: outcome measured at baseline
+- ``outcome_followup``: outcome measured at the followup visit (final
+  time)
 
-      -  ``exposure_followup``: exposure measured at the followup visit
-         (final time)
+- ``covariate_followup``: known factor measured at the followup visit
+  (final time)
 
-      -  ``outcome_followup``: outcome measured at the followup visit
-         (final time)
+``causal_confounding_time``: A dataframe with 100 rows and 7 variables:
 
-      -  ``covariate_followup``: known factor measured at the followup
-         visit (final time)
+- ``covariate_baseline``: known factor measured at baseline
 
-      ``causal_confounding_time``: A dataframe with 100 rows and 7
-      variables:
+- ``exposure_baseline``: exposure measured at baseline
 
-      -  ``covariate_baseline``: known factor measured at baseline
+- ``outcome_baseline``: outcome measured at baseline
 
-      -  ``exposure_baseline``: exposure measured at baseline
+- ``exposure_followup``: exposure measured at the followup visit (final
+  time)
 
-      -  ``outcome_baseline``: outcome measured at baseline
+- ``outcome_followup``: outcome measured at the followup visit (final
+  time)
 
-      -  ``exposure_followup``: exposure measured at the followup visit
-         (final time)
+- ``covariate_followup``: known factor measured at the followup visit
+  (final time)
 
-      -  ``outcome_followup``: outcome measured at the followup visit
-         (final time)
+``causal_mediator_time``: A dataframe with 100 rows and 7 variables:
 
-      -  ``covariate_followup``: known factor measured at the followup
-         visit (final time)
+- ``covariate_baseline``: known factor measured at baseline
 
-      ``causal_mediator_time``: A dataframe with 100 rows and 7
-      variables:
+- ``exposure_baseline``: exposure measured at baseline
 
-      -  ``covariate_baseline``: known factor measured at baseline
+- ``outcome_baseline``: outcome measured at baseline
 
-      -  ``exposure_baseline``: exposure measured at baseline
+- ``covariate_mid``: known factor measured at some mid-point
 
-      -  ``outcome_baseline``: outcome measured at baseline
+- ``exposure_mid``: exposure measured at some mid-point
 
-      -  ``covariate_mid``: known factor measured at some mid-point
+- ``outcome_mid``: outcome measured at some mid-point
 
-      -  ``exposure_mid``: exposure measured at some mid-point
+- ``exposure_followup``: exposure measured at the followup visit (final
+  time)
 
-      -  ``outcome_mid``: outcome measured at some mid-point
+- ``outcome_followup``: outcome measured at the followup visit (final
+  time)
 
-      -  ``exposure_followup``: exposure measured at the followup visit
-         (final time)
+- ``covariate_followup``: known factor measured at the followup visit
+  (final time)
 
-      -  ``outcome_followup``: outcome measured at the followup visit
-         (final time)
+``causal_m_bias_time``: A dataframe with 100 rows and 9 variables:
 
-      -  ``covariate_followup``: known factor measured at the followup
-         visit (final time)
+- ``u1``: unmeasured factor
 
-      ``causal_m_bias_time``: A dataframe with 100 rows and 9 variables:
+- ``u2``: unmeasured factor
 
-      -  ``u1``: unmeasured factor
+- ``covariate_baseline``: known factor measured at baseline
 
-      -  ``u2``: unmeasured factor
+- ``exposure_baseline``: exposure measured at baseline
 
-      -  ``covariate_baseline``: known factor measured at baseline
+- ``outcome_baseline``: outcome measured at baseline
 
-      -  ``exposure_baseline``: exposure measured at baseline
+- ``exposure_followup``: exposure measured at the followup visit (final
+  time)
 
-      -  ``outcome_baseline``: outcome measured at baseline
+- ``outcome_followup``: outcome measured at the followup visit (final
+  time)
 
-      -  ``exposure_followup``: exposure measured at the followup visit
-         (final time)
+- ``covariate_followup``: known factor measured at the followup visit
+  (final time)
 
-      -  ``outcome_followup``: outcome measured at the followup visit
-         (final time)
+An object of class ``tbl_df`` (inherits from ``tbl``, ``data.frame``)
+with 400 rows and 12 columns.
 
-      -  ``covariate_followup``: known factor measured at the followup
-         visit (final time)
+Details
+~~~~~~~
 
-      An object of class ``tbl_df`` (inherits from ``tbl``,
-      ``data.frame``) with 400 rows and 12 columns.
+There are two time points:
 
-      .. rubric:: Details
-         :name: details
+- baseline
 
-      There are two time points:
+- follow up
 
-      -  baseline
+These datasets help demonstrate that a model that includes only
+pre-exposure covariates (that is, only adjusting for covariates measured
+at baseline), will be less prone to potential biases. Adjusting for only
+pre-exposure covariates "solves" the bias in datasets 1-3. It does not
+solve the data generated under the "M-bias" scenario, however this is
+more of a toy example, it has been shown many times that the assumptions
+needed for this M-bias to hold are often not ones we practically see in
+data analysis.
 
-      -  follow up
+References
+~~~~~~~~~~
 
-      These datasets help demonstrate that a model that includes only
-      pre-exposure covariates (that is, only adjusting for covariates
-      measured at baseline), will be less prone to potential biases.
-      Adjusting for only pre-exposure covariates "solves" the bias in
-      datasets 1-3. It does not solve the data generated under the
-      "M-bias" scenario, however this is more of a toy example, it has
-      been shown many times that the assumptions needed for this M-bias
-      to hold are often not ones we practically see in data analysis.
+D'Agostino McGowan L, Barrett M (2023). Causal inference is not a
+statistical problem. Preprint arXiv:2304.02683v1.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      D'Agostino McGowan L, Barrett M (2023). Causal inference is not a
-      statistical problem. Preprint arXiv:2304.02683v1.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   ## incorrect model because covariate is post-treatment
+   lm(outcome_followup ~ exposure_baseline + covariate_followup,
+      data = causal_collider_time)
 
-         ## incorrect model because covariate is post-treatment
-         lm(outcome_followup ~ exposure_baseline + covariate_followup,
-            data = causal_collider_time)
-
-         ## correct model because covariate is pre-treatment
-         ## even though the true mechanism dictates that the covariate is a collider,
-         ## because the pre-exposure variable is used, the collider bias does not
-         ## occur.
-         lm(outcome_followup ~ exposure_baseline + covariate_baseline,
-            data = causal_collider_time)
+   ## correct model because covariate is pre-treatment
+   ## even though the true mechanism dictates that the covariate is a collider,
+   ## because the pre-exposure variable is used, the collider bias does not
+   ## occur.
+   lm(outcome_followup ~ exposure_baseline + covariate_baseline,
+      data = causal_collider_time)

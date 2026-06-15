@@ -1,56 +1,49 @@
-.. container::
+============= ===============
+country_codes R Documentation
+============= ===============
 
-   .. container::
+Country codes
+-------------
 
-      ============= ===============
-      country_codes R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Country codes
-         :name: country-codes
+Country codes
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Country codes
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   country_codes
 
-      .. code:: R
+Format
+~~~~~~
 
-         country_codes
+Data frame of Gapminder country names and ISO 3166-1 country codes:
 
-      .. rubric:: Format
-         :name: format
+country
+   Country name.
 
-      Data frame of Gapminder country names and ISO 3166-1 country
-      codes:
+iso_alpha
+   The 3-letter `ISO 3166-1
+   alpha-3 <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3>`__ code.
 
-      country
-         Country name.
+iso_num
+   The 3-digit `ISO 3166-1
+   numeric-3 <https://en.wikipedia.org/wiki/ISO_3166-1_numeric>`__ code.
 
-      iso_alpha
-         The 3-letter `ISO 3166-1
-         alpha-3 <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3>`__
-         code.
+Also includes the countries covered by the supplemental data frame
+``gapminder_unfiltered``.
 
-      iso_num
-         The 3-digit `ISO 3166-1
-         numeric-3 <https://en.wikipedia.org/wiki/ISO_3166-1_numeric>`__
-         code.
+Examples
+~~~~~~~~
 
-      Also includes the countries covered by the supplemental data frame
-      ``gapminder_unfiltered``.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         if (require("dplyr")) {
-           gapminder %>%
-             filter(year == 2007, country %in% c("Kenya", "Peru", "Syria")) %>%
-             select(country, continent) %>%
-             left_join(country_codes)
-         }
+   if (require("dplyr")) {
+     gapminder %>%
+       filter(year == 2007, country %in% c("Kenya", "Peru", "Syria")) %>%
+       select(country, continent) %>%
+       left_join(country_codes)
+   }

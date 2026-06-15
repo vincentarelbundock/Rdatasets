@@ -1,51 +1,47 @@
-.. container::
+================= ===============
+divorce_margarine R Documentation
+================= ===============
 
-   .. container::
+Divorce rate and margarine consumption data
+-------------------------------------------
 
-      ================= ===============
-      divorce_margarine R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Divorce rate and margarine consumption data
-         :name: divorce-rate-and-margarine-consumption-data
+Divorce rates in Maine and per capita consumption of margarine in US
+data
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Divorce rates in Maine and per capita consumption of margarine in
-      US data
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   divorce_margarine
 
-      .. code:: R
+Format
+~~~~~~
 
-         divorce_margarine
+An object of class ``"data.frame"``.
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      An object of class ``"data.frame"``.
+- divorce_rate_maine. Divorce per 1000 in Maine.
 
-      .. rubric:: Details
-         :name: details
+- margarine_consumption_per_capita. US per capita consumption of
+  margarine in pounds.
 
-      -  divorce_rate_maine. Divorce per 1000 in Maine.
+- year. Year.
 
-      -  margarine_consumption_per_capita. US per capita consumption of
-         margarine in pounds.
+Source
+~~~~~~
 
-      -  year. Year.
+`Spurious
+Correlations <https://www.tylervigen.com/spurious-correlations>`__
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      `Spurious
-      Correlations <https://www.tylervigen.com/spurious-correlations>`__
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         with(divorce_margarine, plot(margarine_consumption_per_capita, divorce_rate_maine))
+   with(divorce_margarine, plot(margarine_consumption_per_capita, divorce_rate_maine))

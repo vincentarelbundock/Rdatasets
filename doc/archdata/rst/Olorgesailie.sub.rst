@@ -1,126 +1,120 @@
-.. container::
+================ ===============
+Olorgesailie.sub R Documentation
+================ ===============
 
-   .. container::
+Stone tool subclasses, Olorgesailie, Kenya
+------------------------------------------
 
-      ================ ===============
-      Olorgesailie.sub R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Stone tool subclasses, Olorgesailie, Kenya
-         :name: stone-tool-subclasses-olorgesailie-kenya
+The data represent the number of specimens in each of 16 artifact
+subclasses recovered from 19 localities at the Lower Paleolithic site of
+Olorgesailie as described in Isaac (1977).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The data represent the number of specimens in each of 16 artifact
-      subclasses recovered from 19 localities at the Lower Paleolithic
-      site of Olorgesailie as described in Isaac (1977).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Olorgesailie.sub)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Olorgesailie.sub)
+A data frame with 19 observations showing the stratum, locality and the
+number of specimens for each of 16 stone artifact types.
 
-      .. rubric:: Format
-         :name: format
+``Strat``
+   stratum: ``Lower``, ``Middle``, ``Upper``
 
-      A data frame with 19 observations showing the stratum, locality
-      and the number of specimens for each of 16 stone artifact types.
+``Locality``
+   Locality
 
-      ``Strat``
-         stratum: ``Lower``, ``Middle``, ``Upper``
+``HA``
+   Number of handaxes
 
-      ``Locality``
-         Locality
+``PHA``
+   Number of pick-like handaxes
 
-      ``HA``
-         Number of handaxes
+``CHA``
+   Number of chisel handaxes
 
-      ``PHA``
-         Number of pick-like handaxes
+``CL``
+   Number of cleavers
 
-      ``CHA``
-         Number of chisel handaxes
+``KN``
+   Number of knives
 
-      ``CL``
-         Number of cleavers
+``BLCT``
+   Number of broken large cutting tools
 
-      ``KN``
-         Number of knives
+``PAT``
+   Number of picks and trièdres
 
-      ``BLCT``
-         Number of broken large cutting tools
+``CH``
+   Number of choppers
 
-      ``PAT``
-         Number of picks and trièdres
+``CS``
+   Number of core scrapers
 
-      ``CH``
-         Number of choppers
+``LFS``
+   Number of large flake scrapers
 
-      ``CS``
-         Number of core scrapers
+``CB``
+   Number of core bifaces
 
-      ``LFS``
-         Number of large flake scrapers
+``OLT``
+   Number of other large tools
 
-      ``CB``
-         Number of core bifaces
+``SSS``
+   Number of small scrapers simple
 
-      ``OLT``
-         Number of other large tools
+``SSNP``
+   Number of small scrapers nosed point
 
-      ``SSS``
-         Number of small scrapers simple
+``OST``
+   Number of other small tools
 
-      ``SSNP``
-         Number of small scrapers nosed point
+``SP``
+   Number of spheroids
 
-      ``OST``
-         Number of other small tools
+Details
+~~~~~~~
 
-      ``SP``
-         Number of spheroids
+The data come from Table E1 in Isaac (1977: 239). The ``Locality``
+contains the column headings in the original table. The ``rownames`` are
+the same as those in ``Olorgesailie.maj``. The attribute ``Variables``
+in the data frame includes the full variable names. Potts (2011)
+provides updated information on the site complex.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The data come from Table E1 in Isaac (1977: 239). The ``Locality``
-      contains the column headings in the original table. The
-      ``rownames`` are the same as those in ``Olorgesailie.maj``. The
-      attribute ``Variables`` in the data frame includes the full
-      variable names. Potts (2011) provides updated information on the
-      site complex.
+Isaac, Glynn Ll. 1977. *Olorgesailie: Archeological Studies of a Middle
+Pleistocene Lake Basin in Kenya*. The University of Chicago Press.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Isaac, Glynn Ll. 1977. *Olorgesailie: Archeological Studies of a
-      Middle Pleistocene Lake Basin in Kenya*. The University of Chicago
-      Press.
+Carlson, David L. 2017. *Quantitative Methods in Archaeology Using R*.
+Cambridge University Press, pp 280-293.
 
-      .. rubric:: References
-         :name: references
+Potts, R. 2011. Olorgesailie–Retrospective and current synthesis. In
+*Casting the net wide: papers in honor of Glynn Isaac and his approach
+to human origins research*, edited by J. Sept and D. Pilbeam, pp 1–20.
+American School of Prehistoric Research Monographs in Archaeology and
+Paleoanthropology.
 
-      Carlson, David L. 2017. *Quantitative Methods in Archaeology Using
-      R*. Cambridge University Press, pp 280-293.
+Examples
+~~~~~~~~
 
-      Potts, R. 2011. Olorgesailie–Retrospective and current synthesis.
-      In *Casting the net wide: papers in honor of Glynn Isaac and his
-      approach to human origins research*, edited by J. Sept and D.
-      Pilbeam, pp 1–20. American School of Prehistoric Research
-      Monographs in Archaeology and Paleoanthropology.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(Olorgesailie.sub)
-         # Chi square after removing the first two columns and simulating the p
-         # value since there are a number of very small expected values
-         chisq.test(Olorgesailie.sub[,3:18], simulate.p.value=TRUE)
-         # Compute percentages over the localities
-         Olor.pct <- prop.table(as.matrix(Olorgesailie.sub[,3:18]), 1)*100
-         boxplot(Olor.pct, cex.axis=.7)
+   data(Olorgesailie.sub)
+   # Chi square after removing the first two columns and simulating the p
+   # value since there are a number of very small expected values
+   chisq.test(Olorgesailie.sub[,3:18], simulate.p.value=TRUE)
+   # Compute percentages over the localities
+   Olor.pct <- prop.table(as.matrix(Olorgesailie.sub[,3:18]), 1)*100
+   boxplot(Olor.pct, cex.axis=.7)

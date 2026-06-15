@@ -1,39 +1,35 @@
-.. container::
+================= ===============
+aus_accommodation R Documentation
+================= ===============
 
-   .. container::
+Australian accommodation data
+-----------------------------
 
-      ================= ===============
-      aus_accommodation R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Australian accommodation data
-         :name: australian-accommodation-data
+``aus_accommodation`` contains quarterly data on Australian tourist
+accommodation from short-term non-residential accommodation with 15 or
+more rooms, 1998 Q1 - 2016 Q2. The data set also contains the Australian
+Consumer Price Index (CPI) for the same period. Takings are in millions
+of Australian dollars, Occupancy is a percentage of rooms occupied, CPI
+is an index with value 100 in 2012 Q1.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      ``aus_accommodation`` contains quarterly data on Australian
-      tourist accommodation from short-term non-residential
-      accommodation with 15 or more rooms, 1998 Q1 - 2016 Q2. The data
-      set also contains the Australian Consumer Price Index (CPI) for
-      the same period. Takings are in millions of Australian dollars,
-      Occupancy is a percentage of rooms occupied, CPI is an index with
-      value 100 in 2012 Q1.
+Time series of class 'tsibble'
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      Time series of class 'tsibble'
+Australian Bureau of Statistics, Cat No 8635.0, Table 10, and Cat No
+6401.0, Table 1.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Australian Bureau of Statistics, Cat No 8635.0, Table 10, and Cat
-      No 6401.0, Table 1.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         aus_accommodation
+   aus_accommodation

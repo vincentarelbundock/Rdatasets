@@ -1,71 +1,66 @@
-.. container::
+============== ===============
+denis.ryegrass R Documentation
+============== ===============
 
-   .. container::
+Multi-environment trial of perennial ryegrass in France
+-------------------------------------------------------
 
-      ============== ===============
-      denis.ryegrass R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Multi-environment trial of perennial ryegrass in
-         France
-         :name: multi-environment-trial-of-perennial-ryegrass-in-france
+Plant strength of perennial ryegrass in France for 21 genotypes at 7
+locations.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Plant strength of perennial ryegrass in France for 21 genotypes at
-      7 locations.
+A data frame with 147 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``gen``
+   genotype, 21 levels
 
-      A data frame with 147 observations on the following 3 variables.
+``loc``
+   location, 7 levels
 
-      ``gen``
-         genotype, 21 levels
+``strength``
+   average plant strength \* 100
 
-      ``loc``
-         location, 7 levels
+Details
+~~~~~~~
 
-      ``strength``
-         average plant strength \* 100
+INRA conducted a breeding trial in western France with 21 genotypes at 7
+locations. The observed data is 'strength' averaged over 7-10 plants per
+plot and three plots per location (after adjusting for blocking
+effects). Each plant was scored on a scale 0-9.
 
-      .. rubric:: Details
-         :name: details
+The original data had a value of 86.0 for genotype G1 at location
+L4–this was replaced by an additive estimated value of 361.2 as in Gower
+and Hand (1996).
 
-      INRA conducted a breeding trial in western France with 21
-      genotypes at 7 locations. The observed data is 'strength' averaged
-      over 7-10 plants per plot and three plots per location (after
-      adjusting for blocking effects). Each plant was scored on a scale
-      0-9.
+Source
+~~~~~~
 
-      The original data had a value of 86.0 for genotype G1 at location
-      L4–this was replaced by an additive estimated value of 361.2 as in
-      Gower and Hand (1996).
+Jean-Baptiste Denis and John C. Gower, 1996. Asymptotic confidence
+regions for biadditive models: interpreting genotype-environment
+interaction, *Applied Statistics*, 45, 479-493.
+https://doi.org/10.2307/2986069
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Jean-Baptiste Denis and John C. Gower, 1996. Asymptotic confidence
-      regions for biadditive models: interpreting genotype-environment
-      interaction, *Applied Statistics*, 45, 479-493.
-      https://doi.org/10.2307/2986069
+Gower, J.C. and Hand, D.J., 1996. Biplots. Chapman and Hall.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Gower, J.C. and Hand, D.J., 1996. Biplots. Chapman and Hall.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   library(agridat)
+   data(denis.ryegrass)
+   dat <- denis.ryegrass
 
-         library(agridat)
-         data(denis.ryegrass)
-         dat <- denis.ryegrass
-
-         # biplots (without ellipses) similar to Denis figure 1
-         libs(gge)
-         m1 <- gge(dat, strength ~ gen*loc, scale=FALSE)
-         biplot(m1, main="denis.ryegrass biplot")
+   # biplots (without ellipses) similar to Denis figure 1
+   libs(gge)
+   m1 <- gge(dat, strength ~ gen*loc, scale=FALSE)
+   biplot(m1, main="denis.ryegrass biplot")

@@ -1,68 +1,62 @@
-.. container::
+=============== ===============
+cardiac_gwas_df R Documentation
+=============== ===============
 
-   .. container::
+Coronary Artery Disease GWAS Meta-Analysis
+------------------------------------------
 
-      =============== ===============
-      cardiac_gwas_df R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Coronary Artery Disease GWAS Meta-Analysis
-         :name: coronary-artery-disease-gwas-meta-analysis
+This dataset, cardiac_gwas_df, is a data frame containing genome-wide
+association study (GWAS) results from a multi-ethnic meta-analysis of
+coronary artery disease (CAD). It includes 9,919 genetic variants with
+their effect sizes and study characteristics.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, cardiac_gwas_df, is a data frame containing
-      genome-wide association study (GWAS) results from a multi-ethnic
-      meta-analysis of coronary artery disease (CAD). It includes 9,919
-      genetic variants with their effect sizes and study
-      characteristics.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(cardiac_gwas_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(cardiac_gwas_df)
+A data frame with 9,919 observations and 7 variables:
 
-      .. rubric:: Format
-         :name: format
+beta_flipped
+   Effect size estimates (numeric)
 
-      A data frame with 9,919 observations and 7 variables:
+gcse
+   Genomic control standard error (numeric)
 
-      beta_flipped
-         Effect size estimates (numeric)
+variants
+   Genetic variant identifiers (character)
 
-      gcse
-         Genomic control standard error (numeric)
+studies
+   Participating studies (character)
 
-      variants
-         Genetic variant identifiers (character)
+cases
+   Number of cases (integer)
 
-      studies
-         Participating studies (character)
+controls
+   Number of controls (integer)
 
-      cases
-         Number of cases (integer)
+fdr214_gwas46
+   False discovery rate adjusted p-values (numeric)
 
-      controls
-         Number of controls (integer)
+Details
+~~~~~~~
 
-      fdr214_gwas46
-         False discovery rate adjusted p-values (numeric)
+The dataset name has been kept as 'cardiac_gwas_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the CardioDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'df' indicates that the dataset is a standard data frame. The original
+content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'cardiac_gwas_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      CardioDataSets package and assists users in identifying its
-      specific characteristics. The suffix 'df' indicates that the
-      dataset is a standard data frame. The original content has not
-      been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the getmstatistic package version 0.2.2
+Data taken from the getmstatistic package version 0.2.2

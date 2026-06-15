@@ -1,61 +1,56 @@
-.. container::
+=================== ===============
+nyc_marathon_tbl_df R Documentation
+=================== ===============
 
-   .. container::
+New York City Marathon Times
+----------------------------
 
-      =================== ===============
-      nyc_marathon_tbl_df R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: New York City Marathon Times
-         :name: new-york-city-marathon-times
+The dataset name has been changed to 'nyc_marathon_tbl_df' to avoid
+confusion with other packages in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a tibble. The original content of the dataset has not
+been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'nyc_marathon_tbl_df' to
-      avoid confusion with other packages in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a tibble. The original
-      content of the dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(nyc_marathon_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(nyc_marathon_tbl_df)
+A tibble with 102 observations and 7 variables:
 
-      .. rubric:: Format
-         :name: format
+year
+   Numeric value representing the year the marathon took place.
 
-      A tibble with 102 observations and 7 variables:
+name
+   Character value representing the name of the runner.
 
-      year
-         Numeric value representing the year the marathon took place.
+country
+   Character value indicating the country of origin of the runner.
 
-      name
-         Character value representing the name of the runner.
+time
+   Time variable in 'hms' format representing the finish time of the
+   runner.
 
-      country
-         Character value indicating the country of origin of the runner.
+time_hrs
+   Numeric value representing the finish time of the runner in hours.
 
-      time
-         Time variable in 'hms' format representing the finish time of
-         the runner.
+division
+   Character value indicating the division (category) the runner
+   participated in.
 
-      time_hrs
-         Numeric value representing the finish time of the runner in
-         hours.
+note
+   Character value containing additional notes, if any, about the runner
+   or the race.
 
-      division
-         Character value indicating the division (category) the runner
-         participated in.
+Source
+~~~~~~
 
-      note
-         Character value containing additional notes, if any, about the
-         runner or the race.
-
-      .. rubric:: Source
-         :name: source
-
-      Data from the New York City Marathon records
+Data from the New York City Marathon records

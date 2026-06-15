@@ -1,66 +1,60 @@
-.. container::
+===== ===============
+Metal R Documentation
+===== ===============
 
-   .. container::
+Production for SIC 33
+---------------------
 
-      ===== ===============
-      Metal R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Production for SIC 33
-         :name: production-for-sic-33
+a cross-section
 
-      .. rubric:: Description
-         :name: description
+*number of observations* : 27
 
-      a cross-section
+*observation* : regional
 
-      *number of observations* : 27
+*country* : United States
 
-      *observation* : regional
+Usage
+~~~~~
 
-      *country* : United States
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Metal)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Metal)
+A dataframe containing :
 
-      .. rubric:: Format
-         :name: format
+va
+   output
 
-      A dataframe containing :
+labor
+   labor input
 
-      va
-         output
+capital
+   capital input
 
-      labor
-         labor input
+Source
+~~~~~~
 
-      capital
-         capital input
+Aigner, D., K. Lovell and P. Schmidt (1977) “Formulation and estimation
+of stochastic frontier production models”, *Journal of Econometrics*,
+**6**, 21-37.
 
-      .. rubric:: Source
-         :name: source
+Hildebrand, G. and T. Liu (1957) *Manufacturing production functions in
+the United States*, Ithaca, N.Y.: Cornell University Press.
 
-      Aigner, D., K. Lovell and P. Schmidt (1977) “Formulation and
-      estimation of stochastic frontier production models”, *Journal of
-      Econometrics*, **6**, 21-37.
+References
+~~~~~~~~~~
 
-      Hildebrand, G. and T. Liu (1957) *Manufacturing production
-      functions in the United States*, Ithaca, N.Y.: Cornell University
-      Press.
+Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
+https://archive.org/details/econometricanaly0000gree_f4x3, Table F6.1.
 
-      .. rubric:: References
-         :name: references
+See Also
+~~~~~~~~
 
-      Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
-      https://archive.org/details/econometricanaly0000gree_f4x3, Table
-      F6.1.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-      ``Index.Observations``
+``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+``Index.Observations``

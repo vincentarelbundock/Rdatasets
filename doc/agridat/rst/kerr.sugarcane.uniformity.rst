@@ -1,99 +1,95 @@
-.. container::
+========================= ===============
+kerr.sugarcane.uniformity R Documentation
+========================= ===============
 
-   .. container::
+Uniformity trials of sugarcane, 4 fields
+----------------------------------------
 
-      ========================= ===============
-      kerr.sugarcane.uniformity R Documentation
-      ========================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trials of sugarcane, 4 fields
-         :name: uniformity-trials-of-sugarcane-4-fields
+Uniformity trials of sugarcane, 4 fields
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trials of sugarcane, 4 fields
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("kerr.sugarcane.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("kerr.sugarcane.uniformity")
+A data frame with 564 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row
 
-      A data frame with 564 observations on the following 4 variables.
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   yield, pounds per plot
 
-      ``col``
-         column
+``trial``
+   trial number
 
-      ``yield``
-         yield, pounds per plot
+Details
+~~~~~~~
 
-      ``trial``
-         trial number
+Experiment conducted at the Sugar Experiment Station, Brisbane,
+Queensland, Australia in 1937.
 
-      .. rubric:: Details
-         :name: details
+Four trials were harvested, each 12 plots by 12 plots, each plot 19 feet
+by 19 feet (one of the fields used 18-foot plots).
 
-      Experiment conducted at the Sugar Experiment Station, Brisbane,
-      Queensland, Australia in 1937.
+Trial 1 is plant cane.
 
-      Four trials were harvested, each 12 plots by 12 plots, each plot
-      19 feet by 19 feet (one field used 18-foot plots).
+Trial 2 is ratoon cane.
 
-      Trial 1 is plant cane.
+Trial 3 plant cane, irrigated.
 
-      Trial 2 is ratoon cane.
+Trial 4 is ratoon cane, irrigated.
 
-      Trial 3 plant cane, irrigated.
+Field length: 12 plots \* 19 feet = 228 feet.
 
-      Trial 4 is ratoon cane, irrigated.
+Field width: 12 plots \* 19 feet = 228 feet.
 
-      Field length: 12 plots \* 19 feet = 228 feet.
+Source
+~~~~~~
 
-      Field width: 12 plots \* 19 feet = 228 feet.
+H. W. Kerr (1939). Notes on plot technique. Proc. Internat. Soc.
+Sugarcane Technol. 6, 764–778.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      H. W. Kerr (1939). Notes on plot technique. Proc. Internat. Soc.
-      Sugarcane Technol. 6, 764–778.
+None
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(kerr.sugarcane.uniformity)
+   dat <- kerr.sugarcane.uniformity
 
-         ## Not run: 
+   # match Kerr figure 4
+   libs(desplot)
+   desplot(dat, yield ~ col*row|trial,
+           flip=TRUE, aspect=1, # true aspect
+           main="kerr.sugarcane.uniformity")
 
-         library(agridat)
-         data(kerr.sugarcane.uniformity)
-         dat <- kerr.sugarcane.uniformity
-
-         # match Kerr figure 4
-         libs(desplot)
-         desplot(dat, yield ~ col*row|trial,
-                 flip=TRUE, aspect=1, # true aspect
-                 main="kerr.sugarcane.uniformity")
-
-         # CV matches Kerr table 2, page 768
-         # aggregate(yield ~ trial, dat, FUN= function(x) round(100*sd(x)/mean(x),2))
-         ##   trial yield
-         ## 1    T1  7.95
-         ## 2    T2  9.30
-         ## 3    T3 10.37
-         ## 4    T4 13.76
+   # CV matches Kerr table 2, page 768
+   # aggregate(yield ~ trial, dat, FUN= function(x) round(100*sd(x)/mean(x),2))
+   ##   trial yield
+   ## 1    T1  7.95
+   ## 2    T2  9.30
+   ## 3    T3 10.37
+   ## 4    T4 13.76
 
 
-         ## End(Not run)
+   ## End(Not run)

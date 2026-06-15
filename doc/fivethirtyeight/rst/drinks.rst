@@ -1,67 +1,62 @@
-.. container::
+====== ===============
+drinks R Documentation
+====== ===============
 
-   .. container::
+Dear Mona Followup: Where Do People Drink The Most Beer, Wine And Spirits?
+--------------------------------------------------------------------------
 
-      ====== ===============
-      drinks R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Dear Mona Followup: Where Do People Drink The Most
-         Beer, Wine And Spirits?
-         :name: dear-mona-followup-where-do-people-drink-the-most-beer-wine-and-spirits
+The raw data behind the story "Dear Mona Followup: Where Do People Drink
+The Most Beer, Wine And Spirits?"
+https://fivethirtyeight.com/features/dear-mona-followup-where-do-people-drink-the-most-beer-wine-and-spirits/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Dear Mona Followup: Where Do People
-      Drink The Most Beer, Wine And Spirits?"
-      https://fivethirtyeight.com/features/dear-mona-followup-where-do-people-drink-the-most-beer-wine-and-spirits/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   drinks
 
-      .. code:: R
+Format
+~~~~~~
 
-         drinks
+A data frame with 193 rows representing countries and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+country
+   country
 
-      A data frame with 193 rows representing countries and 5 variables:
+beer_servings
+   Servings of beer in average serving sizes per person
 
-      country
-         country
+spirit_servings
+   Servings of spirits in average serving sizes per person
 
-      beer_servings
-         Servings of beer in average serving sizes per person
+wine_servings
+   Servings of wine in average serving sizes per person
 
-      spirit_servings
-         Servings of spirits in average serving sizes per person
+total_litres_of_pure_alcohol
+   Total litres of pure alcohol per person
 
-      wine_servings
-         Servings of wine in average serving sizes per person
+Source
+~~~~~~
 
-      total_litres_of_pure_alcohol
-         Total litres of pure alcohol per person
+World Health Organization, Global Information System on Alcohol and
+Health (GISAH), 2010.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      World Health Organization, Global Information System on Alcohol
-      and Health (GISAH), 2010.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         # To convert data frame to tidy data (long) format, run:
-         library(dplyr)
-         library(tidyr)
-         library(stringr)
-         drinks_tidy <- drinks %>%
-           pivot_longer(cols = ends_with("servings"), names_to = "type", values_to = "servings") %>%
-           mutate(
-             type = str_sub(type, start=1, end=-10)
-           ) %>%
-           arrange(country, type)
+   # To convert data frame to tidy data (long) format, run:
+   library(dplyr)
+   library(tidyr)
+   library(stringr)
+   drinks_tidy <- drinks %>%
+     pivot_longer(cols = ends_with("servings"), names_to = "type", values_to = "servings") %>%
+     mutate(
+       type = str_sub(type, start=1, end=-10)
+     ) %>%
+     arrange(country, type)

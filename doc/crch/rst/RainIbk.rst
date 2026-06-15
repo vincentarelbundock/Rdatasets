@@ -1,80 +1,75 @@
-.. container::
+======= ===============
+RainIbk R Documentation
+======= ===============
 
-   .. container::
+Precipitation Observations and Forecasts for Innsbruck
+------------------------------------------------------
 
-      ======= ===============
-      RainIbk R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Precipitation Observations and Forecasts for Innsbruck
-         :name: precipitation-observations-and-forecasts-for-innsbruck
+Accumulated 5-8 days precipitation amount for Innsbruck. Data includes
+GEFS reforecasts (Hamill et al. 2013) and observations from SYNOP
+station Innsbruck Airport (11120) from 2000-01-01 to 2013-09-17.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Accumulated 5-8 days precipitation amount for Innsbruck. Data
-      includes GEFS reforecasts (Hamill et al. 2013) and observations
-      from SYNOP station Innsbruck Airport (11120) from 2000-01-01 to
-      2013-09-17.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("RainIbk", package = "crch")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("RainIbk", package = "crch")
+A data frame with 4977 rows. The first column (``rain``) are 3 days
+accumulated precipitation amount observations, Columns 2-12 (``rainfc``)
+are 5-8 days accumulated precipitation amount forecasts from the
+individual ensemble members.
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      A data frame with 4977 rows. The first column (``rain``) are 3
-      days accumulated precipitation amount observations, Columns 2-12
-      (``rainfc``) are 5-8 days accumulated precipitation amount
-      forecasts from the individual ensemble members.
+Observations: https://www.ogimet.com/synops.phtml.en
 
-      .. rubric:: Source
-         :name: source
+Reforecasts: https://psl.noaa.gov/forecasts/reforecast2/
 
-      Observations: https://www.ogimet.com/synops.phtml.en
+References
+~~~~~~~~~~
 
-      Reforecasts: https://psl.noaa.gov/forecasts/reforecast2/
+Hamill TM, Bates GT, Whitaker JS, Murray DR, Fiorino M, Galarneau Jr TJ,
+Zhu Y, Lapenta W (2013). NOAA's Second-Generation Global Medium-Range
+Ensemble Reforecast Data Set. *Bulletin of the American Meteorological
+Society*, **94**\ (10), 1553-1565.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Hamill TM, Bates GT, Whitaker JS, Murray DR, Fiorino M, Galarneau
-      Jr TJ, Zhu Y, Lapenta W (2013). NOAA's Second-Generation Global
-      Medium-Range Ensemble Reforecast Data Set. *Bulletin of the
-      American Meteorological Society*, **94**\ (10), 1553-1565.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Spread skill relationship ##
 
-      .. code:: R
+   ## load and prepare data
+   data("RainIbk", package = "crch")
 
-         ## Spread skill relationship ##
+   ## mean and standard deviation of square root transformed ensemble forecasts
+   RainIbk$sqrtensmean <- 
+     apply(sqrt(RainIbk[,grep('^rainfc',names(RainIbk))]), 1, mean)
+   RainIbk$sqrtenssd <- 
+     apply(sqrt(RainIbk[,grep('^rainfc',names(RainIbk))]),  1, sd)
 
-         ## load and prepare data
-         data("RainIbk", package = "crch")
+   ## quintiles of sqrtenssd
+   sdcat <- cut(RainIbk$sqrtenssd, c(-Inf, quantile(RainIbk$sqrtenssd, 
+     seq(0.2,0.8,0.2)), Inf), labels = c(1:5))
 
-         ## mean and standard deviation of square root transformed ensemble forecasts
-         RainIbk$sqrtensmean <- 
-           apply(sqrt(RainIbk[,grep('^rainfc',names(RainIbk))]), 1, mean)
-         RainIbk$sqrtenssd <- 
-           apply(sqrt(RainIbk[,grep('^rainfc',names(RainIbk))]),  1, sd)
+   ## mean forecast errors for each quintile
+   m <- NULL
+   for(i in levels(sdcat)) {
+     m <- c(m, mean((sqrt(RainIbk$rain)[sdcat == i] -
+     RainIbk$sqrtensmean[sdcat == i])^2, na.rm = TRUE))
+   }
 
-         ## quintiles of sqrtenssd
-         sdcat <- cut(RainIbk$sqrtenssd, c(-Inf, quantile(RainIbk$sqrtenssd, 
-           seq(0.2,0.8,0.2)), Inf), labels = c(1:5))
-
-         ## mean forecast errors for each quintile
-         m <- NULL
-         for(i in levels(sdcat)) {
-           m <- c(m, mean((sqrt(RainIbk$rain)[sdcat == i] -
-           RainIbk$sqrtensmean[sdcat == i])^2, na.rm = TRUE))
-         }
-
-         ## plot
-         boxplot((sqrt(rain) - sqrtensmean)^2~sdcat, RainIbk, 
-           xlab = "Quintile of ensemble standard deviation", 
-           ylab = "mean squared error", main = "Spread skill relationship")
+   ## plot
+   boxplot((sqrt(rain) - sqrtensmean)^2~sdcat, RainIbk, 
+     xlab = "Quintile of ensemble standard deviation", 
+     ylab = "mean squared error", main = "Spread skill relationship")

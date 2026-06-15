@@ -1,46 +1,42 @@
-.. container::
+======= ===============
+milk_ts R Documentation
+======= ===============
 
-   .. container::
+Monthly Milk Production per Cow
+-------------------------------
 
-      ======= ===============
-      milk_ts R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Monthly Milk Production per Cow
-         :name: monthly-milk-production-per-cow
+The dataset name has been changed to 'milk_ts' to avoid confusion with
+other packages in the R ecosystem from which datasets have been sourced.
+The suffix 'ts' indicates that this dataset is a time series object.
+This naming convention helps distinguish this dataset as part of the
+'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'milk_ts' to avoid confusion
-      with other packages in the R ecosystem from which datasets have
-      been sourced. The suffix 'ts' indicates that this dataset is a
-      time series object. This naming convention helps distinguish this
-      dataset as part of the 'timeseriesdatasets' package and assists
-      users in identifying its specific characteristics. The original
-      content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(milk_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(milk_ts)
+A time series object of 168 observations on the following:
 
-      .. rubric:: Format
-         :name: format
+Time-Series [1:168]
+   Monthly milk production per cow (in pounds).
 
-      A time series object of 168 observations on the following:
+Details
+~~~~~~~
 
-      Time-Series [1:168]
-         Monthly milk production per cow (in pounds).
+The data covers the period from 1962 to 1976.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The data covers the period from 1962 to 1976.
-
-      .. rubric:: Source
-         :name: source
-
-      U.S. Department of Agriculture
+U.S. Department of Agriculture

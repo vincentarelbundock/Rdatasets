@@ -1,47 +1,42 @@
-.. container::
+============== ===============
+SleepingShrews R Documentation
+============== ===============
 
-   .. container::
+Shrew Heart Rates at Stages of Sleep
+------------------------------------
 
-      ============== ===============
-      SleepingShrews R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Shrew Heart Rates at Stages of Sleep
-         :name: shrew-heart-rates-at-stages-of-sleep
+Heart rates for a sample of six tree shrews at each of three stages of
+sleep.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Heart rates for a sample of six tree shrews at each of three
-      stages of sleep.
+A data frame with 18 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``ID``
+   Row ID
 
-      A data frame with 18 observations on the following 4 variables.
+``Shrew``
+   Shrew ID (``A`` through ``F``)
 
-      ``ID``
-         Row ID
+``Phase``
+   Phase of sleep (``DSW``\ =deep wave, ``LSW``\ =light wave, or
+   ``REM``\ =dreaming)
 
-      ``Shrew``
-         Shrew ID (``A`` through ``F``)
+``Rate``
+   Heart rate (beats per minute)
 
-      ``Phase``
-         Phase of sleep (``DSW``\ =deep wave, ``LSW``\ =light wave, or
-         ``REM``\ =dreaming)
+Details
+~~~~~~~
 
-      ``Rate``
-         Heart rate (beats per minute)
+Heart rates were recorded for a sample of six tree shrews at each of
+three stages of sleep.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      Heart rates were recorded for a sample of six tree shrews at each
-      of three stages of sleep.
-
-      .. rubric:: Source
-         :name: source
-
-      Berger, R. J. and Walker, J. M. (1972) "The Polygraphic Study of
-      Sleep in the Tree Shrew," Brain, Behavior, and Evolution, v. 5,
-      pp. 62
+Berger, R. J. and Walker, J. M. (1972) "The Polygraphic Study of Sleep
+in the Tree Shrew," Brain, Behavior, and Evolution, v. 5, pp. 62

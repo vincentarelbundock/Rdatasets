@@ -1,107 +1,102 @@
-.. container::
+============ ===============
+devries.pine R Documentation
+============ ===============
 
-   .. container::
+Graeco-Latin Square experiment in pine
+--------------------------------------
 
-      ============ ===============
-      devries.pine R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Graeco-Latin Square experiment in pine
-         :name: graeco-latin-square-experiment-in-pine
+Graeco-Latin Square experiment in pine
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Graeco-Latin Square experiment in pine
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("devries.pine")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("devries.pine")
+A data frame with 36 observations on the following 6 variables.
 
-      .. rubric:: Format
-         :name: format
+``block``
+   block
 
-      A data frame with 36 observations on the following 6 variables.
+``row``
+   row
 
-      ``block``
-         block
+``col``
+   column
 
-      ``row``
-         row
+``spacing``
+   spacing treatment
 
-      ``col``
-         column
+``thinning``
+   thinning treatment
 
-      ``spacing``
-         spacing treatment
+``volume``
+   stem volume in m^3/ha
 
-      ``thinning``
-         thinning treatment
+``growth``
+   annual stem volume increment m^3/ha at age 11
 
-      ``volume``
-         stem volume in m^3/ha
+Details
+~~~~~~~
 
-      ``growth``
-         annual stem volume increment m^3/ha at age 11
+Experiment conducted on Caribbean Pine at Coebiti in Surinam (Long 55 28
+30 W, Lat 5 18 5 N). Land was cleared in Jan 1965 and planted May 1965.
+Each experimental plot was 60m x 60m. Roads 10 m wide run between the
+rows. Each block is thus 180m wide and 200m deep. Data were collected
+only on 40m x 40m plots in the center of each experimental unit. Plots
+were thinned in 1972 and 1975. The two treatment factors (spacing,
+thinning) were assigned in a Graeco-Latin Square design.
 
-      .. rubric:: Details
-         :name: details
+Spacing: A=2.5, B=3, C=3.5. Thinning: Z=low, M=medium, S=heavy.
 
-      Experiment conducted on Caribbean Pine at Coebiti in Surinam (Long
-      55 28 30 W, Lat 5 18 5 N). Land was cleared in Jan 1965 and
-      planted May 1965. Each experimental plot was 60m x 60m. Roads 10 m
-      wide run between the rows. Each block is thus 180m wide and 200m
-      deep. Data were collected only on 40m x 40m plots in the center of
-      each experimental unit. Plots were thinned in 1972 and 1975. The
-      two treatment factors (spacing, thinning) were assigned in a
-      Graeco-Latin Square design.
+Field width: 4 blocks x 180 m = 720 m
 
-      Spacing: A=2.5, B=3, C=3.5. Thinning: Z=low, M=medium, S=heavy.
+Field length: 1 block x 200 m = 200 m.
 
-      Field width: 4 blocks x 180 m = 720 m
+Source
+~~~~~~
 
-      Field length: 1 block x 200 m = 200 m.
+P.G. De Vries, J.W. Hildebrand, N.R. De Graaf. (1978). Analysis of 11
+years growth of carribbean pine in a replicated Graeco-Latin square
+spacing-thinning experiment in Surinam. Page 46, 51.
+https://edepot.wur.nl/287590
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      P.G. De Vries, J.W. Hildebrand, N.R. De Graaf. (1978). Analysis of
-      11 years growth of carribbean pine in a replicated Graeco-Latin
-      square spacing-thinning experiment in Surinam. Page 46, 51.
-      https://edepot.wur.nl/287590
+None
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+     library(agridat)
+     data(devries.pine)
+     dat <- devries.pine
 
-         ## Not run: 
+     libs(desplot)
+     desplot(dat, volume ~ col*row,
+             main="devries.pine - expt design and tree volume",
+             col=spacing, num=thinning, cex=1, out1=block, aspect=200/720)
+     
+     libs(HH)
+     HH::interaction2wt(volume ~ spacing+thinning, dat,
+                        main="devries.pine")
 
-           library(agridat)
-           data(devries.pine)
-           dat <- devries.pine
-
-           libs(desplot)
-           desplot(dat, volume ~ col*row,
-                   main="devries.pine - expt design and tree volume",
-                   col=spacing, num=thinning, cex=1, out1=block, aspect=200/720)
-           
-           libs(HH)
-           HH::interaction2wt(volume ~ spacing+thinning, dat,
-                              main="devries.pine")
-
-           # ANOVA matches appendix 5 of DeVries
-           m1 <- aov(volume ~ block + spacing + thinning + block:factor(row) +
-                       block:factor(col), data=dat)
-           anova(m1)
+     # ANOVA matches appendix 5 of DeVries
+     m1 <- aov(volume ~ block + spacing + thinning + block:factor(row) +
+                 block:factor(col), data=dat)
+     anova(m1)
 
 
-         ## End(Not run)
+   ## End(Not run)

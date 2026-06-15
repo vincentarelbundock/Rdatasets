@@ -1,63 +1,58 @@
-.. container::
+========== ===============
+Thirdparty R Documentation
+========== ===============
 
-   .. container::
+Third party insurance
+---------------------
 
-      ========== ===============
-      Thirdparty R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Third party insurance
-         :name: third-party-insurance
+Third party insurance is a compulsory insurance for vehicle owners in
+Australia. It insures vehicle owners against injury caused to other
+drivers, passengers or pedestrians, as a result of an accident.
 
-      .. rubric:: Description
-         :name: description
+This data set records the number of third party claims in a twelve–month
+period between 1984-1986 in each of 176 geographical areas (local
+government areas) in New South Wales, Australia.
 
-      Third party insurance is a compulsory insurance for vehicle owners
-      in Australia. It insures vehicle owners against injury caused to
-      other drivers, passengers or pedestrians, as a result of an
-      accident.
+Usage
+~~~~~
 
-      This data set records the number of third party claims in a
-      twelve–month period between 1984-1986 in each of 176 geographical
-      areas (local government areas) in New South Wales, Australia.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Thirdparty)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Thirdparty)
+A data frame with 176 observations on the following variable.
 
-      .. rubric:: Format
-         :name: format
+``lga.sd.claims.accidents.ki.population.pop_density``
+   a numeric vector
 
-      A data frame with 176 observations on the following variable.
+Details
+~~~~~~~
 
-      ``lga.sd.claims.accidents.ki.population.pop_density``
-         a numeric vector
+The dataset "Third Party Claims"
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset "Third Party Claims"
+http://www.businessandeconomics.mq.edu.au/our_departments/Applied_Finance_and_Actuarial_Studies/
 
-      .. rubric:: Source
-         :name: source
+research/books/GLMsforInsuranceData/data_sets
 
-      http://www.businessandeconomics.mq.edu.au/our_departments/Applied_Finance_and_Actuarial_Studies/
+References
+~~~~~~~~~~
 
-      research/books/GLMsforInsuranceData/data_sets
+De Jong P., Heller G.Z. (2008), Generalized linear models for insurance
+data, Cambridge University Press
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      De Jong P., Heller G.Z. (2008), Generalized linear models for
-      insurance data, Cambridge University Press
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(Thirdparty)
-         ## maybe str(Thirdparty) ; plot(Thirdparty) ...
+   data(Thirdparty)
+   ## maybe str(Thirdparty) ; plot(Thirdparty) ...

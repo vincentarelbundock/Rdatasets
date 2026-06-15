@@ -20,19 +20,15 @@ function processMathHTML() {
 
 <h3>Description</h3>
 
-<p>Data from the General Social Survey, 1991, on the relation between 
-sex and party affiliation.
+<p>Data from the General Social Survey, 1991, on the relation between sex and
+party affiliation.
 </p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data(GSS)</code></pre>
 
 
 <h3>Format</h3>
 
-<p>A data frame in frequency form with 6 observations on the following 3 variables.
+<p>A data frame in frequency form with 6 observations on the following
+3 variables.
 </p>
 
 <dl>
@@ -48,14 +44,15 @@ sex and party affiliation.
 
 <h3>Source</h3>
 
-<p>Agresti, A. <em>Categorical Data Analysis</em>, 2nd E., John Wiley &amp; Sons, 2002,
-Table 3.11, p. 106.
+<p>Agresti, A. <em>Categorical Data Analysis</em>, 2nd E., John Wiley &amp;
+Sons, 2002, Table 3.11, p. 106.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(GSS)
+<pre><code class='language-R'>
+data(GSS)
 str(GSS)
 
 # use xtabs to show the table in a compact form
@@ -65,10 +62,11 @@ str(GSS)
 (mod.glm &lt;- glm(count ~ sex + party, family = poisson, data = GSS))
 
 # display all the residuals in a mosaic plot
-mosaic(mod.glm, 
-  formula = ~ sex + party, 
-  labeling = labeling_residuals, 
+mosaic(mod.glm,
+  formula = ~ sex + party,
+  labeling = labeling_residuals,
   suppress=0)
+
 </code></pre>
 
 </main>

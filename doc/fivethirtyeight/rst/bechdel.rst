@@ -1,93 +1,85 @@
-.. container::
+======= ===============
+bechdel R Documentation
+======= ===============
 
-   .. container::
+The Dollar-And-Cents Case Against Hollywood's Exclusion of Women
+----------------------------------------------------------------
 
-      ======= ===============
-      bechdel R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The Dollar-And-Cents Case Against Hollywood's
-         Exclusion of Women
-         :name: the-dollar-and-cents-case-against-hollywoods-exclusion-of-women
+The raw data behind the story "The Dollar-And-Cents Case Against
+Hollywood's Exclusion of Women"
+https://fivethirtyeight.com/features/the-dollar-and-cents-case-against-hollywoods-exclusion-of-women/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "The Dollar-And-Cents Case Against
-      Hollywood's Exclusion of Women"
-      https://fivethirtyeight.com/features/the-dollar-and-cents-case-against-hollywoods-exclusion-of-women/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   bechdel
 
-      .. code:: R
+Format
+~~~~~~
 
-         bechdel
+A data frame with 1794 rows representing movies and 15 variables:
 
-      .. rubric:: Format
-         :name: format
+year
+   Year of release
 
-      A data frame with 1794 rows representing movies and 15 variables:
+imdb
+   Text to construct IMDB url. Ex: https://www.imdb.com/title/tt1711425
 
-      year
-         Year of release
+title
+   Movie test
 
-      imdb
-         Text to construct IMDB url. Ex:
-         https://www.imdb.com/title/tt1711425
+test
+   bechdel test result (detailed, with discrepancies indicated)
 
-      title
-         Movie test
+clean_test
+   bechdel test result (detailed): ``ok`` = passes test, ``dubious``,
+   ``men`` = women only talk about men, ``notalk`` = women don't talk to
+   each other, ``nowomen`` = fewer than two women
 
-      test
-         bechdel test result (detailed, with discrepancies indicated)
+binary
+   Bechdel Test PASS vs FAIL binary
 
-      clean_test
-         bechdel test result (detailed): ``ok`` = passes test,
-         ``dubious``, ``men`` = women only talk about men, ``notalk`` =
-         women don't talk to each other, ``nowomen`` = fewer than two
-         women
+budget
+   Film budget
 
-      binary
-         Bechdel Test PASS vs FAIL binary
+domgross
+   Domestic (US) gross
 
-      budget
-         Film budget
+intgross
+   Total International (i.e., worldwide) gross
 
-      domgross
-         Domestic (US) gross
+code
+   Bechdel Code
 
-      intgross
-         Total International (i.e., worldwide) gross
+budget_2013
+   Budget in 2013 inflation adjusted dollars
 
-      code
-         Bechdel Code
+domgross_2013
+   Domestic gross (US) in 2013 inflation adjusted dollars
 
-      budget_2013
-         Budget in 2013 inflation adjusted dollars
+intgross_2013
+   Total International (i.e., worldwide) gross in 2013 inflation
+   adjusted dollars
 
-      domgross_2013
-         Domestic gross (US) in 2013 inflation adjusted dollars
+period_code
+decade_code
 
-      intgross_2013
-         Total International (i.e., worldwide) gross in 2013 inflation
-         adjusted dollars
+Details
+~~~~~~~
 
-      period_code
-      decade_code
+A vignette of an analysis of this dataset using the ``tidyverse`` can be
+found on
+`CRAN <https://fivethirtyeightdata.github.io/fivethirtyeightdata/articles/bechdel.html>`__
+or by running: ``vignette("bechdel", package = "fivethirtyeightdata")``
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      A vignette of an analysis of this dataset using the ``tidyverse``
-      can be found on
-      `CRAN <https://fivethirtyeightdata.github.io/fivethirtyeightdata/articles/bechdel.html>`__
-      or by running:
-      ``vignette("bechdel", package = "fivethirtyeightdata")``
-
-      .. rubric:: Source
-         :name: source
-
-      https://bechdeltest.com/ and https://www.the-numbers.com/. The
-      original data can be found at
-      https://github.com/fivethirtyeight/data/tree/master/bechdel.
+https://bechdeltest.com/ and https://www.the-numbers.com/. The original
+data can be found at
+https://github.com/fivethirtyeight/data/tree/master/bechdel.

@@ -1,42 +1,37 @@
-.. container::
+======== ===============
+mullinix R Documentation
+======== ===============
 
-   .. container::
+Data from "The Feedback Effects of Controversial Police Use of Force"
+---------------------------------------------------------------------
 
-      ======== ===============
-      mullinix R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Data from "The Feedback Effects of Controversial
-         Police Use of Force"
-         :name: data-from-the-feedback-effects-of-controversial-police-use-of-force
+This dataset is used in the exercises of Chapters 4 and 7 from the
+textbook.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset is used in the exercises of Chapters 4 and 7 from the
-      textbook.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   mullinix
 
-      .. code:: R
+Format
+~~~~~~
 
-         mullinix
+A data frame with 2915 rows and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+FL_10_DO
+   Condition indicator. L = Lethal, NL = Non-lethal
 
-      A data frame with 2915 rows and 2 variables:
+Q30
+   Outcome measure
 
-      FL_10_DO
-         Condition indicator. L = Lethal, NL = Non-lethal
+Source
+~~~~~~
 
-      Q30
-         Outcome measure
-
-      .. rubric:: Source
-         :name: source
-
-      Mullinix, Kevin J., et al. “The Feedback Effects of Controversial
-      Police Use of Force.” Political Behavior, vol. 43, no. 2, 2020,
-      pp. 881–898., https://doi.org/10.1007/s11109-020-09646-x.
+Mullinix, Kevin J., et al. “The Feedback Effects of Controversial Police
+Use of Force.” Political Behavior, vol. 43, no. 2, 2020, pp. 881–898.,
+https://doi.org/10.1007/s11109-020-09646-x.

@@ -1,69 +1,64 @@
-.. container::
+============= ===============
+battingLabels R Documentation
+============= ===============
 
-   .. container::
+Variable Labels
+---------------
 
-      ============= ===============
-      battingLabels R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Variable Labels
-         :name: variable-labels
+These data frames provide descriptive labels for the variables in the
+``Batting``, ``Pitching`` and ``Fielding`` files (and related ``*Post``
+files). They are useful for plots and other output using ``Label``.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      These data frames provide descriptive labels for the variables in
-      the ``Batting``, ``Pitching`` and ``Fielding`` files (and related
-      ``*Post`` files). They are useful for plots and other output using
-      ``Label``.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(battingLabels)
 
-      .. code:: R
+   data(fieldingLabels)
 
-         data(battingLabels)
+   data(pitchingLabels)
 
-         data(fieldingLabels)
+Format
+~~~~~~
 
-         data(pitchingLabels)
+Each is data frame with observations on the following 2 variables.
 
-      .. rubric:: Format
-         :name: format
+``variable``
+   variable name
 
-      Each is data frame with observations on the following 2 variables.
+``label``
+   variable label
 
-      ``variable``
-         variable name
+See Also
+~~~~~~~~
 
-      ``label``
-         variable label
+``Label``
 
-      .. rubric:: See Also
-         :name: see-also
+Examples
+~~~~~~~~
 
-      ``Label``
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   data(battingLabels)
+   str(battingLabels)
 
-      .. code:: R
+   require("dplyr")
 
-         data(battingLabels)
-         str(battingLabels)
-
-         require("dplyr")
-
-         # find and plot maximum number of homers per year
-         batHR <- Batting %>%
-                    filter(!is.na(HR)) %>%
-                    group_by(yearID) %>%
-                    summarise(max=max(HR))
-                 
-         with(batHR, {
-           plot(yearID, max, 
-                xlab=Label("yearID"), ylab=paste("Maximum", Label("HR")), 
-                cex=0.8)
-           lines(lowess(yearID, max), col="blue", lwd=2)
-           abline(lm(max ~ yearID), col="red", lwd=2)
-             })
+   # find and plot maximum number of homers per year
+   batHR <- Batting %>%
+              filter(!is.na(HR)) %>%
+              group_by(yearID) %>%
+              summarise(max=max(HR))
+           
+   with(batHR, {
+     plot(yearID, max, 
+          xlab=Label("yearID"), ylab=paste("Maximum", Label("HR")), 
+          cex=0.8)
+     lines(lowess(yearID, max), col="blue", lwd=2)
+     abline(lm(max ~ yearID), col="red", lwd=2)
+       })

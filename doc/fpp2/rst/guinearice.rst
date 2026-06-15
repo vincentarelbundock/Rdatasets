@@ -1,33 +1,30 @@
-.. container::
+========== ===============
+guinearice R Documentation
+========== ===============
 
-   .. container::
+Rice production (Guinea)
+------------------------
 
-      ========== ===============
-      guinearice R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Rice production (Guinea)
-         :name: rice-production-guinea
+Total annual rice production (million metric tons) for Guinea.
+1970-2011.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Total annual rice production (million metric tons) for Guinea.
-      1970-2011.
+Annual time series of class ``ts``.
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      Annual time series of class ``ts``.
+World Bank.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      World Bank.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         autoplot(guinearice)
+   autoplot(guinearice)

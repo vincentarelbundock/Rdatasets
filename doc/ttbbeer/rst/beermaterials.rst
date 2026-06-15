@@ -1,67 +1,62 @@
-.. container::
+============= ===============
+beermaterials R Documentation
+============= ===============
 
-   .. container::
+The beermaterials dataset
+-------------------------
 
-      ============= ===============
-      beermaterials R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The beermaterials dataset
-         :name: the-beermaterials-dataset
+The monthly aggregation of materials used in US Breweries as reported by
+the TTB. The dataset was transcribed from PDF's to a .rda dataset.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The monthly aggregation of materials used in US Breweries as
-      reported by the TTB. The dataset was transcribed from PDF's to a
-      .rda dataset.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   beermaterials
 
-      .. code:: R
+Format
+~~~~~~
 
-         beermaterials
+A data frame with 120 observations of 11 variables:
 
-      .. rubric:: Format
-         :name: format
+Month
+   Month of the year
 
-      A data frame with 120 observations of 11 variables:
+Year
+   Calendar Year
 
-      Month
-         Month of the year
+Malt_and_malt_products
+   Malt and malt products, in pounds
 
-      Year
-         Calendar Year
+Corn_and \_corn_products
+   Corn and corn products, in pounds
 
-      Malt_and_malt_products
-         Malt and malt products, in pounds
+Rice_and_rice_products
+   Rice and rice products, in pounds
 
-      Corn_and \_corn_products
-         Corn and corn products, in pounds
+Barley_and_barley_products
+   Barley and barley products, in pounds
 
-      Rice_and_rice_products
-         Rice and rice products, in pounds
+Wheat_and_wheat_products
+   Wheat and wheat products
 
-      Barley_and_barley_products
-         Barley and barley products, in pounds
+Sugar_and_syrups
+   Sugar and syrups, in pounds
 
-      Wheat_and_wheat_products
-         Wheat and wheat products
+Hops_dry
+   Hops in dry form, in pounds
 
-      Sugar_and_syrups
-         Sugar and syrups, in pounds
+Hops_extracts
+   Hops in extracted form, in pounds
 
-      Hops_dry
-         Hops in dry form, in pounds
+Other
+   Other materials such as flavor, in pounds
 
-      Hops_extracts
-         Hops in extracted form, in pounds
+Source
+~~~~~~
 
-      Other
-         Other materials such as flavor, in pounds
-
-      .. rubric:: Source
-         :name: source
-
-      https://catalog.data.gov/dataset/beer-production-and-operations-reports
+https://catalog.data.gov/dataset/beer-production-and-operations-reports

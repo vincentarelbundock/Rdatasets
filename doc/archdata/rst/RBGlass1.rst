@@ -1,115 +1,109 @@
-.. container::
+======== ===============
+RBGlass1 R Documentation
+======== ===============
 
-   .. container::
+Romano-British Glass, Major and Minor Elements
+----------------------------------------------
 
-      ======== ===============
-      RBGlass1 R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Romano-British Glass, Major and Minor Elements
-         :name: romano-british-glass-major-and-minor-elements
+The concentrations for 11 major and minor elements in 105 Romano-British
+waste glass specimens from two furnace sites (Leicester and Mancetter).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The concentrations for 11 major and minor elements in 105
-      Romano-British waste glass specimens from two furnace sites
-      (Leicester and Mancetter).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("RBGlass1")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("RBGlass1")
+A data frame with 105 observations on the following 12 variables.
 
-      .. rubric:: Format
-         :name: format
+``Site``
+   a factor with levels ``Leicester`` and ``Mancetter``
 
-      A data frame with 105 observations on the following 12 variables.
+``Al``
+   Percentage Aluminum
 
-      ``Site``
-         a factor with levels ``Leicester`` and ``Mancetter``
+``Fe``
+   Percentage Iron
 
-      ``Al``
-         Percentage Aluminum
+``Mg``
+   Percentage Magnesium
 
-      ``Fe``
-         Percentage Iron
+``Ca``
+   Percentage Calcium
 
-      ``Mg``
-         Percentage Magnesium
+``Na``
+   Percentage Sodium
 
-      ``Ca``
-         Percentage Calcium
+``K``
+   Percentage Potassium
 
-      ``Na``
-         Percentage Sodium
+``Ti``
+   Percentage Titanium
 
-      ``K``
-         Percentage Potassium
+``P``
+   Percentage Phosphorus
 
-      ``Ti``
-         Percentage Titanium
+``Mn``
+   Percentage Manganese
 
-      ``P``
-         Percentage Phosphorus
+``Sb``
+   Percentage Antinmony
 
-      ``Mn``
-         Percentage Manganese
+``Pb``
+   Percentage Lead
 
-      ``Sb``
-         Percentage Antinmony
+Details
+~~~~~~~
 
-      ``Pb``
-         Percentage Lead
+The concentrations for 11 major and minor elements in 105 Romano-British
+waste glass specimens from two furnace sites (Leicester and Mancetter)
+come from Caroline Jackson's Ph. D. thesis at Bradford University. The
+data here were scanned from from Baxter (1994) Table A1. Measurements
+are percentage for each element.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The concentrations for 11 major and minor elements in 105
-      Romano-British waste glass specimens from two furnace sites
-      (Leicester and Mancetter) come from Caroline Jackson's Ph. D.
-      thesis at Bradford University. The data here were scanned from
-      from Baxter (1994) Table A1. Measurements are percentage for each
-      element.
+Baxter, M. J. 1994. *Exploratory Multivariate Analysis in Archaeology*.
+Edinburgh University Press.
 
-      .. rubric:: Source
-         :name: source
+Jackson, C. M. 1992. A Compositional Analysis of Roman and Early
+Post-Roman Glass and Glass Working Waste from Selected British Sites
+Towards an Understanding of the Technology of Glass-Making Through
+Analysis by Inductively-Coupled Plasma Spectrometry. Unpublished PhD
+thesis. Bradford University (BL: D214554).
 
-      Baxter, M. J. 1994. *Exploratory Multivariate Analysis in
-      Archaeology*. Edinburgh University Press.
+References
+~~~~~~~~~~
 
-      Jackson, C. M. 1992. A Compositional Analysis of Roman and Early
-      Post-Roman Glass and Glass Working Waste from Selected British
-      Sites Towards an Understanding of the Technology of Glass-Making
-      Through Analysis by Inductively-Coupled Plasma Spectrometry.
-      Unpublished PhD thesis. Bradford University (BL: D214554).
+Baxter, M. J., Cool H.E.M., Heyworth M.P. and Jackson, C.M. 1995.
+Compositional Variability in Colourless Roman Vessel Glass.
+*Archaeometry* 37(1), 129-141.
 
-      .. rubric:: References
-         :name: references
+Baxter, M. J., Cool, H. E. M. and Jackson, C. M. (2005). Further Studies
+in the Compositional Variability of Colourless Romano-British Glass.
+*Archaeometry* 47, 47-68.
 
-      Baxter, M. J., Cool H.E.M., Heyworth M.P. and Jackson, C.M. 1995.
-      Compositional Variability in Colourless Roman Vessel Glass.
-      *Archaeometry* 37(1), 129-141.
+Carlson, David L. 2017. *Quantitative Methods in Archaeology Using R*.
+Cambridge University Press, pp 245-247, 256-261.
 
-      Baxter, M. J., Cool, H. E. M. and Jackson, C. M. (2005). Further
-      Studies in the Compositional Variability of Colourless
-      Romano-British Glass. *Archaeometry* 47, 47-68.
+Jackson, C M, J R Hunter, S E Warren, and H E M Cool. 1991. The Analysis
+of Blue-Green Glass and Glassy Waste from Two Romano-British Glass
+Working Sites. In *Archaeometry 1990*, edited by E. Pernicka and G. A.
+Wagner, pp 295-304. Birkhäuser Verlag.
 
-      Carlson, David L. 2017. *Quantitative Methods in Archaeology Using
-      R*. Cambridge University Press, pp 245-247, 256-261.
+Examples
+~~~~~~~~
 
-      Jackson, C M, J R Hunter, S E Warren, and H E M Cool. 1991. The
-      Analysis of Blue-Green Glass and Glassy Waste from Two
-      Romano-British Glass Working Sites. In *Archaeometry 1990*, edited
-      by E. Pernicka and G. A. Wagner, pp 295-304. Birkhäuser Verlag.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(RBGlass1)
-         RBGlass1.pca <- prcomp(RBGlass1[, -1], scale.=TRUE)
-         biplot(RBGlass1.pca, xlabs=abbreviate(RBGlass1$Site, 1), cex=.75)
+   data(RBGlass1)
+   RBGlass1.pca <- prcomp(RBGlass1[, -1], scale.=TRUE)
+   biplot(RBGlass1.pca, xlabs=abbreviate(RBGlass1$Site, 1), cex=.75)

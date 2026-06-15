@@ -1,49 +1,44 @@
-.. container::
+=================== ===============
+Tennessee_gifted_df R Documentation
+=================== ===============
 
-   .. container::
+Tennessee Self-Concept Scores for Gifted Students
+-------------------------------------------------
 
-      =================== ===============
-      Tennessee_gifted_df R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Tennessee Self-Concept Scores for Gifted Students
-         :name: tennessee-self-concept-scores-for-gifted-students
+This dataset, Tennessee_gifted_df, is a data frame containing the
+self-concept scores for 20 gifted high school students in Tennessee. It
+allows for the exploration of self-concept in the context of gifted
+students and may provide insights into their self-perception and
+potential academic achievement.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, Tennessee_gifted_df, is a data frame containing the
-      self-concept scores for 20 gifted high school students in
-      Tennessee. It allows for the exploration of self-concept in the
-      context of gifted students and may provide insights into their
-      self-perception and potential academic achievement.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Tennessee_gifted_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Tennessee_gifted_df)
+A data frame with 20 observations and 1 variable:
 
-      .. rubric:: Format
-         :name: format
+score
+   Self-concept scores for gifted students (numeric).
 
-      A data frame with 20 observations and 1 variable:
+Details
+~~~~~~~
 
-      score
-         Self-concept scores for gifted students (numeric).
+The dataset name has been kept as 'Tennessee_gifted_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the educationR package and
+assists users in identifying its specific characteristics. The original
+content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'Tennessee_gifted_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      educationR package and assists users in identifying its specific
-      characteristics. The original content has not been modified in any
-      way.
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset was taken from the BSDA package.
+The dataset was taken from the BSDA package.

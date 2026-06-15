@@ -1,49 +1,45 @@
-.. container::
+========== ===============
+partycodes R Documentation
+========== ===============
 
-   .. container::
+political parties appearing in the U.S. Congress
+------------------------------------------------
 
-      ========== ===============
-      partycodes R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: political parties appearing in the U.S. Congress
-         :name: political-parties-appearing-in-the-u.s.-congress
+Numeric codes and names of 85 political parties appearing in Poole and
+Rosenthal's collection of U.S. Congressional roll calls.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Numeric codes and names of 85 political parties appearing in Poole
-      and Rosenthal's collection of U.S. Congressional roll calls.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(partycodes)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(partycodes)
+``code``
+   integer, numeric code for legislator appearing in Poole and Rosenthal
+   rollcall data files
 
-      .. rubric:: Format
-         :name: format
+``party``
+   character, name of party
 
-      ``code``
-         integer, numeric code for legislator appearing in Poole and
-         Rosenthal rollcall data files
+Details
+~~~~~~~
 
-      ``party``
-         character, name of party
+The function ``readKH`` converts the integer codes into strings, via a
+table lookup in this data frame.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The function ``readKH`` converts the integer codes into strings,
-      via a table lookup in this data frame.
+Keith Poole's website: https://legacy.voteview.com/PARTY3.HTM
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      Keith Poole's website: https://legacy.voteview.com/PARTY3.HTM
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``readKH``
+``readKH``

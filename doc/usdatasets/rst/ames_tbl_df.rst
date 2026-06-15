@@ -1,284 +1,280 @@
-.. container::
+=========== ===============
+ames_tbl_df R Documentation
+=========== ===============
 
-   .. container::
+Housing prices in Ames, Iowa
+----------------------------
 
-      =========== ===============
-      ames_tbl_df R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Housing prices in Ames, Iowa
-         :name: housing-prices-in-ames-iowa
+The dataset name has been changed to 'ames_tbl_df' to avoid confusion
+with other packages in the R ecosystem from which datasets have been
+sourced. This naming convention helps distinguish this dataset as part
+of the 'usdatasets' package and assists users in identifying its
+specific characteristics. The suffix 'tbl_df' identifies the dataset as
+a tibble. The original content of the dataset has not been modified in
+any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'ames_tbl_df' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. This naming convention helps
-      distinguish this dataset as part of the 'usdatasets' package and
-      assists users in identifying its specific characteristics. The
-      suffix 'tbl_df' identifies the dataset as a tibble. The original
-      content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(ames_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(ames_tbl_df)
+A tibble with 2,930 observations and 82 variables:
 
-      .. rubric:: Format
-         :name: format
+Order
+   Row number in the dataset.
 
-      A tibble with 2,930 observations and 82 variables:
+PID
+   Parcel Identifier.
 
-      Order
-         Row number in the dataset.
+area
+   Total house area in square feet.
 
-      PID
-         Parcel Identifier.
+price
+   Sale price of the house.
 
-      area
-         Total house area in square feet.
+MS.SubClass
+   Building class type.
 
-      price
-         Sale price of the house.
+MS.Zoning
+   Zoning classification of the property.
 
-      MS.SubClass
-         Building class type.
+Lot.Frontage
+   Lot frontage length in feet.
 
-      MS.Zoning
-         Zoning classification of the property.
+Lot.Area
+   Total lot area in square feet.
 
-      Lot.Frontage
-         Lot frontage length in feet.
+Street
+   Street type access to the property.
 
-      Lot.Area
-         Total lot area in square feet.
+Alley
+   Alley type access.
 
-      Street
-         Street type access to the property.
+Lot.Shape
+   Shape of the lot.
 
-      Alley
-         Alley type access.
+Land.Contour
+   Land contour around the property.
 
-      Lot.Shape
-         Shape of the lot.
+Utilities
+   Availability of utilities.
 
-      Land.Contour
-         Land contour around the property.
+Lot.Config
+   Lot configuration.
 
-      Utilities
-         Availability of utilities.
+Land.Slope
+   Slope of the land.
 
-      Lot.Config
-         Lot configuration.
+Neighborhood
+   Neighborhood in Ames.
 
-      Land.Slope
-         Slope of the land.
+Condition.1
+   Proximity to main conditions like railroads.
 
-      Neighborhood
-         Neighborhood in Ames.
+Condition.2
+   Proximity to secondary conditions.
 
-      Condition.1
-         Proximity to main conditions like railroads.
+Bldg.Type
+   Type of building.
 
-      Condition.2
-         Proximity to secondary conditions.
+House.Style
+   Architectural style of the house.
 
-      Bldg.Type
-         Type of building.
+Overall.Qual
+   Overall quality of the materials and finish.
 
-      House.Style
-         Architectural style of the house.
+Overall.Cond
+   Overall condition of the house.
 
-      Overall.Qual
-         Overall quality of the materials and finish.
+Year.Built
+   Year the house was built.
 
-      Overall.Cond
-         Overall condition of the house.
+Year.Remod.Add
+   Year of the last remodel or addition.
 
-      Year.Built
-         Year the house was built.
+Roof.Style
+   Roof style.
 
-      Year.Remod.Add
-         Year of the last remodel or addition.
+Roof.Matl
+   Roof material.
 
-      Roof.Style
-         Roof style.
+Exterior.1st
+   Primary exterior material.
 
-      Roof.Matl
-         Roof material.
+Exterior.2nd
+   Secondary exterior material.
 
-      Exterior.1st
-         Primary exterior material.
+Mas.Vnr.Type
+   Masonry veneer type.
 
-      Exterior.2nd
-         Secondary exterior material.
+Mas.Vnr.Area
+   Masonry veneer area in square feet.
 
-      Mas.Vnr.Type
-         Masonry veneer type.
+Exter.Qual
+   Exterior material quality.
 
-      Mas.Vnr.Area
-         Masonry veneer area in square feet.
+Exter.Cond
+   Condition of the exterior material.
 
-      Exter.Qual
-         Exterior material quality.
+Foundation
+   Type of foundation.
 
-      Exter.Cond
-         Condition of the exterior material.
+Bsmt.Qual
+   Basement quality.
 
-      Foundation
-         Type of foundation.
+Bsmt.Cond
+   Basement condition.
 
-      Bsmt.Qual
-         Basement quality.
+Bsmt.Exposure
+   Basement exposure to the outside.
 
-      Bsmt.Cond
-         Basement condition.
+BsmtFin.Type.1
+   Type 1 of finished basement.
 
-      Bsmt.Exposure
-         Basement exposure to the outside.
+BsmtFin.SF.1
+   Square feet of finished basement type 1.
 
-      BsmtFin.Type.1
-         Type 1 of finished basement.
+BsmtFin.Type.2
+   Type 2 of finished basement.
 
-      BsmtFin.SF.1
-         Square feet of finished basement type 1.
+BsmtFin.SF.2
+   Square feet of finished basement type 2.
 
-      BsmtFin.Type.2
-         Type 2 of finished basement.
+Bsmt.Unf.SF
+   Unfinished basement area in square feet.
 
-      BsmtFin.SF.2
-         Square feet of finished basement type 2.
+Total.Bsmt.SF
+   Total basement area in square feet.
 
-      Bsmt.Unf.SF
-         Unfinished basement area in square feet.
+Heating
+   Type of heating system.
 
-      Total.Bsmt.SF
-         Total basement area in square feet.
+Heating.QC
+   Heating system quality.
 
-      Heating
-         Type of heating system.
+Central.Air
+   Presence of central air conditioning.
 
-      Heating.QC
-         Heating system quality.
+Electrical
+   Type of electrical system.
 
-      Central.Air
-         Presence of central air conditioning.
+X1st.Flr.SF
+   First floor area in square feet.
 
-      Electrical
-         Type of electrical system.
+X2nd.Flr.SF
+   Second floor area in square feet.
 
-      X1st.Flr.SF
-         First floor area in square feet.
+Low.Qual.Fin.SF
+   Low-quality finished area in square feet.
 
-      X2nd.Flr.SF
-         Second floor area in square feet.
+Bsmt.Full.Bath
+   Number of full bathrooms in the basement.
 
-      Low.Qual.Fin.SF
-         Low-quality finished area in square feet.
+Bsmt.Half.Bath
+   Number of half bathrooms in the basement.
 
-      Bsmt.Full.Bath
-         Number of full bathrooms in the basement.
+Full.Bath
+   Number of full bathrooms above ground.
 
-      Bsmt.Half.Bath
-         Number of half bathrooms in the basement.
+Half.Bath
+   Number of half bathrooms above ground.
 
-      Full.Bath
-         Number of full bathrooms above ground.
+Bedroom.AbvGr
+   Number of bedrooms above ground.
 
-      Half.Bath
-         Number of half bathrooms above ground.
+Kitchen.AbvGr
+   Number of kitchens above ground.
 
-      Bedroom.AbvGr
-         Number of bedrooms above ground.
+Kitchen.Qual
+   Kitchen quality.
 
-      Kitchen.AbvGr
-         Number of kitchens above ground.
+TotRms.AbvGrd
+   Total number of rooms above ground.
 
-      Kitchen.Qual
-         Kitchen quality.
+Functional
+   Functionality of the house.
 
-      TotRms.AbvGrd
-         Total number of rooms above ground.
+Fireplaces
+   Number of fireplaces.
 
-      Functional
-         Functionality of the house.
+Fireplace.Qu
+   Fireplace quality.
 
-      Fireplaces
-         Number of fireplaces.
+Garage.Type
+   Type of garage.
 
-      Fireplace.Qu
-         Fireplace quality.
+Garage.Yr.Blt
+   Year the garage was built.
 
-      Garage.Type
-         Type of garage.
+Garage.Finish
+   Garage finish type.
 
-      Garage.Yr.Blt
-         Year the garage was built.
+Garage.Cars
+   Number of cars the garage can accommodate.
 
-      Garage.Finish
-         Garage finish type.
+Garage.Area
+   Garage area in square feet.
 
-      Garage.Cars
-         Number of cars the garage can accommodate.
+Garage.Qual
+   Garage quality.
 
-      Garage.Area
-         Garage area in square feet.
+Garage.Cond
+   Garage condition.
 
-      Garage.Qual
-         Garage quality.
+Paved.Drive
+   Indicates whether the driveway is paved.
 
-      Garage.Cond
-         Garage condition.
+Wood.Deck.SF
+   Wood deck area in square feet.
 
-      Paved.Drive
-         Indicates whether the driveway is paved.
+Open.Porch.SF
+   Open porch area in square feet.
 
-      Wood.Deck.SF
-         Wood deck area in square feet.
+Enclosed.Porch
+   Enclosed porch area in square feet.
 
-      Open.Porch.SF
-         Open porch area in square feet.
+X3Ssn.Porch
+   Three-season porch area in square feet.
 
-      Enclosed.Porch
-         Enclosed porch area in square feet.
+Screen.Porch
+   Screened porch area in square feet.
 
-      X3Ssn.Porch
-         Three-season porch area in square feet.
+Pool.Area
+   Pool area in square feet.
 
-      Screen.Porch
-         Screened porch area in square feet.
+Pool.QC
+   Pool quality.
 
-      Pool.Area
-         Pool area in square feet.
+Fence
+   Type of fence.
 
-      Pool.QC
-         Pool quality.
+Misc.Feature
+   Miscellaneous features of the property.
 
-      Fence
-         Type of fence.
+Misc.Val
+   Value of miscellaneous features.
 
-      Misc.Feature
-         Miscellaneous features of the property.
+Mo.Sold
+   Month the house was sold.
 
-      Misc.Val
-         Value of miscellaneous features.
+Yr.Sold
+   Year the house was sold.
 
-      Mo.Sold
-         Month the house was sold.
+Sale.Type
+   Type of sale.
 
-      Yr.Sold
-         Year the house was sold.
+Sale.Condition
+   Condition of the sale.
 
-      Sale.Type
-         Type of sale.
+Source
+~~~~~~
 
-      Sale.Condition
-         Condition of the sale.
-
-      .. rubric:: Source
-         :name: source
-
-      Ames Housing Dataset, provided by Dean De Cock
+Ames Housing Dataset, provided by Dean De Cock

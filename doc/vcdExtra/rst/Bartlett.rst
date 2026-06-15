@@ -1,85 +1,77 @@
-.. container::
+======== ===============
+Bartlett R Documentation
+======== ===============
 
-   .. container::
+Bartlett Data on Plum Root Cuttings
+-----------------------------------
 
-      ======== ===============
-      Bartlett R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Bartlett Data on Plum Root Cuttings
-         :name: bartlett-data-on-plum-root-cuttings
+In an experiment to investigate the effect of cutting length (two
+levels) and planting time (two levels) on the survival of plum root
+cuttings, 240 cuttings were planted for each of the 2 x 2 combinations
+of these factors, and their survival was later recorded.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      In an experiment to investigate the effect of cutting length (two
-      levels) and planting time (two levels) on the survival of plum
-      root cuttings, 240 cuttings were planted for each of the 2 x 2
-      combinations of these factors, and their survival was later
-      recorded.
+A 3-dimensional array resulting from cross-tabulating 3 variables for
+960 observations. The variable names and their levels are:
 
-      Bartlett (1935) used these data to illustrate a method for testing
-      for no three-way interaction in a contingency table.
+=== ========== ===================
+dim Name       Levels
+1   ``Alive``  ``⁠"Alive", "Dead"⁠``
+2   ``Time``   ``⁠"Now", "Spring"⁠``
+3   ``Length`` ``⁠"Long", "Short"⁠``
+               
+=== ========== ===================
 
-      .. rubric:: Usage
-         :name: usage
+Details
+~~~~~~~
 
-      .. code:: R
+Bartlett (1935) used these data to illustrate a method for testing for
+no three-way interaction in a contingency table.
 
-         data(Bartlett)
+Source
+~~~~~~
 
-      .. rubric:: Format
-         :name: format
+Hand, D. and Daly, F. and Lunn, A. D.and McConway, K. J. and Ostrowski,
+E. (1994). *A Handbook of Small Data Sets*. London: Chapman & Hall, p.
+15, # 19.
 
-      A 3-dimensional array resulting from cross-tabulating 3 variables
-      for 960 observations. The variable names and their levels are:
+References
+~~~~~~~~~~
 
-      == ========== ===================
-      No Name       Levels
-      1  ``Alive``  ``"Alive", "Dead"``
-      2  ``Time``   ``"Now", "Spring"``
-      3  ``Length`` ``"Long", "Short"``
-      \             
-      == ========== ===================
+Bartlett, M. S. (1935). Contingency Table Interactions *Journal of the
+Royal Statistical Society*, Supplement, 1935, 2, 248-252.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Hand, D. and Daly, F. and Lunn, A. D.and McConway, K. J. and
-      Ostrowski, E. (1994). *A Handbook of Small Data Sets*. London:
-      Chapman & Hall, p. 15, # 19.
-
-      .. rubric:: References
-         :name: references
-
-      Bartlett, M. S. (1935). Contingency Table Interactions *Journal of
-      the Royal Statistical Society*, Supplement, 1935, 2, 248-252.
-
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(Bartlett)
-
-         # measures of association
-         assocstats(Bartlett)
-         oddsratio(Bartlett)
-
-         # Test models
-
-         ## Independence
-         MASS::loglm(formula = ~Alive + Time + Length, data = Bartlett)
-
-         ## No three-way association
-         MASS::loglm(formula = ~(Alive + Time + Length)^2, data = Bartlett)
-
-         # Use woolf_test() for a formal test of homogeneity of odds ratios
-         vcd::woolf_test(Bartlett)
+.. code:: R
 
 
-         # Plots
-         fourfold(Bartlett, mfrow=c(1,2))
+   data(Bartlett)
 
-         mosaic(Bartlett, shade=TRUE)
-         pairs(Bartlett, gp=shading_Friendly)
+   # measures of association
+   assocstats(Bartlett)
+   oddsratio(Bartlett)
+
+   # Test models
+
+   ## Independence
+   MASS::loglm(formula = ~Alive + Time + Length, data = Bartlett)
+
+   ## No three-way association
+   MASS::loglm(formula = ~(Alive + Time + Length)^2, data = Bartlett)
+
+   # Use woolf_test() for a formal test of homogeneity of odds ratios
+   vcd::woolf_test(Bartlett)
+
+
+   # Plots
+   fourfold(Bartlett, mfrow=c(1,2))
+
+   mosaic(Bartlett, shade=TRUE)
+   pairs(Bartlett, gp=shading_Friendly)

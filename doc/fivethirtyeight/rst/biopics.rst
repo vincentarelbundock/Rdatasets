@@ -1,82 +1,76 @@
-.. container::
+======= ===============
+biopics R Documentation
+======= ===============
 
-   .. container::
+'Straight Outta Compton' Is The Rare Biopic Not About White Dudes
+-----------------------------------------------------------------
 
-      ======= ===============
-      biopics R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: 'Straight Outta Compton' Is The Rare Biopic Not About
-         White Dudes
-         :name: straight-outta-compton-is-the-rare-biopic-not-about-white-dudes
+The raw data behind the story "'Straight Outta Compton' Is The Rare
+Biopic Not About White Dudes"
+https://fivethirtyeight.com/features/straight-outta-compton-is-the-rare-biopic-not-about-white-dudes/.
+An analysis using this data was contributed by Pradeep Adhokshaja as a
+package vignette at
+https://fivethirtyeightdata.github.io/fivethirtyeightdata/articles/biopics.html.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "'Straight Outta Compton' Is The
-      Rare Biopic Not About White Dudes"
-      https://fivethirtyeight.com/features/straight-outta-compton-is-the-rare-biopic-not-about-white-dudes/.
-      An analysis using this data was contributed by Pradeep Adhokshaja
-      as a package vignette at
-      https://fivethirtyeightdata.github.io/fivethirtyeightdata/articles/biopics.html.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   biopics
 
-      .. code:: R
+Format
+~~~~~~
 
-         biopics
+A data frame with 761 rows representing movies and 14 variables:
 
-      .. rubric:: Format
-         :name: format
+title
+   Title of the film.
 
-      A data frame with 761 rows representing movies and 14 variables:
+site
+   Text to construct IMDB url. Ex: https://www.imdb.com/title/tt1711425
 
-      title
-         Title of the film.
+country
+   Country of origin.
 
-      site
-         Text to construct IMDB url. Ex:
-         https://www.imdb.com/title/tt1711425
+year_release
+   Year of release.
 
-      country
-         Country of origin.
+box_office
+   Gross earnings at U.S. box office.
 
-      year_release
-         Year of release.
+director
+   Director of film.
 
-      box_office
-         Gross earnings at U.S. box office.
+number_of_subjects
+   The number of subjects featured in the film.
 
-      director
-         Director of film.
+subject
+   The actual name of the featured subject.
 
-      number_of_subjects
-         The number of subjects featured in the film.
+type_of_subject
+   The occupation of subject or reason for recognition.
 
-      subject
-         The actual name of the featured subject.
+race_known
+   Indicates whether the subject's race was discernible based on
+   background of self, parent, or grandparent.
 
-      type_of_subject
-         The occupation of subject or reason for recognition.
+subject_race
+   Race of the subject.
 
-      race_known
-         Indicates whether the subject's race was discernible based on
-         background of self, parent, or grandparent.
+person_of_color
+   Dummy variable that indicates person of color.
 
-      subject_race
-         Race of the subject.
+subject_sex
+   Sex of subject.
 
-      person_of_color
-         Dummy variable that indicates person of color.
+lead_actor_actress
+   The actor or actress who played the subject.
 
-      subject_sex
-         Sex of subject.
+Source
+~~~~~~
 
-      lead_actor_actress
-         The actor or actress who played the subject.
-
-      .. rubric:: Source
-         :name: source
-
-      IMDB https://www.imdb.com/
+IMDB https://www.imdb.com/

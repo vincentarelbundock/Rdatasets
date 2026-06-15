@@ -1,61 +1,56 @@
-.. container::
+=========== ===============
+NonResponse R Documentation
+=========== ===============
 
-   .. container::
+Non-Response Survey Data
+------------------------
 
-      =========== ===============
-      NonResponse R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Non-Response Survey Data
-         :name: non-response-survey-data
+Data about non-response for a Danish survey in 1965.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data about non-response for a Danish survey in 1965.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("NonResponse")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("NonResponse")
+A data frame with 12 observations and 4 variables.
 
-      .. rubric:: Format
-         :name: format
+Freq
+   frequency.
 
-      A data frame with 12 observations and 4 variables.
+residence
+   factor indicating whether residence was in Copenhagen, in a city
+   outside Copenhagen or at the countryside (Copenhagen, City, Country).
 
-      Freq
-         frequency.
+response
+   factor indicating whether a response was given (yes, no).
 
-      residence
-         factor indicating whether residence was in Copenhagen, in a
-         city outside Copenhagen or at the countryside (Copenhagen,
-         City, Country).
+gender
+   factor indicating gender (male, female).
 
-      response
-         factor indicating whether a response was given (yes, no).
+Source
+~~~~~~
 
-      gender
-         factor indicating gender (male, female).
+E. B. Andersen (1991), The Statistical Analysis of Categorical Data,
+Table 5.17.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      E. B. Andersen (1991), The Statistical Analysis of Categorical
-      Data, Table 5.17.
+E. B. Andersen (1991), *The Statistical Analysis of Categorical Data*.
+2nd edition. Springer-Verlag, Berlin.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      E. B. Andersen (1991), *The Statistical Analysis of Categorical
-      Data*. 2nd edition. Springer-Verlag, Berlin.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data("NonResponse")
-         structable(~ ., data = NonResponse)
+   data("NonResponse")
+   structable(~ ., data = NonResponse)

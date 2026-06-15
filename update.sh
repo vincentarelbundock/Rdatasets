@@ -6,7 +6,7 @@ cd doc
 cd ..
 Rscript -e "rmarkdown::render('README.Rmd')"
 git add .
-git commit -m "timeSeriesDataSets educationR crimedatasets MedDataSets OncoDataSets"
+git commit -m "admiral"
 git push
 git checkout gh-pages;
 git checkout master -- csv;

@@ -1,41 +1,37 @@
-.. container::
+===================== ===============
+env_regulation_tbl_df R Documentation
+===================== ===============
 
-   .. container::
+American Adults on Regulation and Renewable Energy
+--------------------------------------------------
 
-      ===================== ===============
-      env_regulation_tbl_df R Documentation
-      ===================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: American Adults on Regulation and Renewable Energy
-         :name: american-adults-on-regulation-and-renewable-energy
+The dataset name has been changed to 'env_regulation_tbl_df' to avoid
+confusion with other packages in the R ecosystem from which datasets
+have been sourced. This naming convention helps distinguish this dataset
+as part of the 'usdatasets' package and assists users in identifying its
+specific characteristics. The suffix 'tbl_df' identifies the dataset as
+a tibble. The original content of the dataset has not been modified in
+any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'env_regulation_tbl_df' to
-      avoid confusion with other packages in the R ecosystem from which
-      datasets have been sourced. This naming convention helps
-      distinguish this dataset as part of the 'usdatasets' package and
-      assists users in identifying its specific characteristics. The
-      suffix 'tbl_df' identifies the dataset as a tibble. The original
-      content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(env_regulation_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(env_regulation_tbl_df)
+A tibble with 705 observations and 1 variable:
 
-      .. rubric:: Format
-         :name: format
+statement
+   Environmental regulation statement (character).
 
-      A tibble with 705 observations and 1 variable:
+Source
+~~~~~~
 
-      statement
-         Environmental regulation statement (character).
-
-      .. rubric:: Source
-         :name: source
-
-      Environmental Regulation Study
+Environmental Regulation Study

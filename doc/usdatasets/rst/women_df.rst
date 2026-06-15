@@ -1,42 +1,37 @@
-.. container::
+======== ===============
+women_df R Documentation
+======== ===============
 
-   .. container::
+Average Heights and Weights for American Women
+----------------------------------------------
 
-      ======== ===============
-      women_df R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Average Heights and Weights for American Women
-         :name: average-heights-and-weights-for-american-women
+The dataset name has been kept as 'women_df' to maintain consistency
+with other datasets in the R ecosystem. This naming convention helps
+clearly identify this dataset within the context of its application. The
+original content of the dataset has not been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been kept as 'women_df' to maintain
-      consistency with other datasets in the R ecosystem. This naming
-      convention helps clearly identify this dataset within the context
-      of its application. The original content of the dataset has not
-      been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(women_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(women_df)
+A data frame containing measurements of women's height and weight:
 
-      .. rubric:: Format
-         :name: format
+height
+   Height of women in inches.
 
-      A data frame containing measurements of women's height and weight:
+weight
+   Weight of women in pounds.
 
-      height
-         Height of women in inches.
+Source
+~~~~~~
 
-      weight
-         Weight of women in pounds.
-
-      .. rubric:: Source
-         :name: source
-
-      Based on statistical data for women's height and weight.
+Based on statistical data for women's height and weight.

@@ -1,45 +1,40 @@
-.. container::
+=============== ===============
+airlines_tbl_df R Documentation
+=============== ===============
 
-   .. container::
+Airline names - U.S. Airlines Carrier Codes and Names
+-----------------------------------------------------
 
-      =============== ===============
-      airlines_tbl_df R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Airline names - U.S. Airlines Carrier Codes and Names
-         :name: airline-names---u.s.-airlines-carrier-codes-and-names
+The dataset name has been changed to 'airlines_tbl_df' to avoid
+confusion with other packages in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the 'usdatasets' package and
+assists users in identifying its specific characteristics. The suffix
+'tbl_df' identifies the dataset as a tibble, helping to differentiate it
+from other datasets within the package. The original content of the
+dataset has not been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'airlines_tbl_df' to avoid
-      confusion with other packages in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      'usdatasets' package and assists users in identifying its specific
-      characteristics. The suffix 'tbl_df' identifies the dataset as a
-      tibble, helping to differentiate it from other datasets within the
-      package. The original content of the dataset has not been modified
-      in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(airlines_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(airlines_tbl_df)
+A tibble with 16 observations and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+carrier
+   Carrier code (character) representing the airline.
 
-      A tibble with 16 observations and 2 variables:
+name
+   Name of the airline (character).
 
-      carrier
-         Carrier code (character) representing the airline.
+Source
+~~~~~~
 
-      name
-         Name of the airline (character).
-
-      .. rubric:: Source
-         :name: source
-
-      U.S. Department of Transportation.
+U.S. Department of Transportation.

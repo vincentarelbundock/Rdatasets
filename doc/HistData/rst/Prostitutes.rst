@@ -1,67 +1,58 @@
-.. container::
+=========== ===============
+Prostitutes R Documentation
+=========== ===============
 
-   .. container::
+Parent-Duchatelet's time-series data on the number of prostitutes in Paris
+--------------------------------------------------------------------------
 
-      =========== ===============
-      Prostitutes R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Parent-Duchatelet's time-series data on the number of
-         prostitutes in Paris
-         :name: parent-duchatelets-time-series-data-on-the-number-of-prostitutes-in-paris
+A table indicating month by month, for the years 1812-1854, the number
+of prostitutes on the registers of the administration of the city of
+Paris.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      A table indicating month by month, for the years 1812-1854, the
-      number of prostitutes on the registers of the administration of
-      the city of Paris.
+A data frame with 516 observations on the following 5 variables.
 
-      .. rubric:: Usage
-         :name: usage
+``Year``
+   a numeric vector
 
-      .. code:: R
+``month``
+   a factor with levels ``Apr`` ``Aug`` ``Dec`` ``Feb`` ``Jan`` ``Jul``
+   ``Jun`` ``Mar`` ``May`` ``Nov`` ``Oct`` ``Sep``
 
-         data(Prostitutes)
+``count``
+   a numeric vector: number of prostitutes
 
-      .. rubric:: Format
-         :name: format
+``mon``
+   a numeric vector: numeric month
 
-      A data frame with 516 observations on the following 5 variables.
+``date``
+   a Date
 
-      ``Year``
-         a numeric vector
+Details
+~~~~~~~
 
-      ``month``
-         a factor with levels ``Apr`` ``Aug`` ``Dec`` ``Feb`` ``Jan``
-         ``Jul`` ``Jun`` ``Mar`` ``May`` ``Nov`` ``Oct`` ``Sep``
+The data table was digitally scanned with OCR, and errors were corrected
+by comparing the yearly totals recorded in the table to the row sums of
+the scanned data.
 
-      ``count``
-         a numeric vector: number of prostitutes
+``month`` should obviously be made and ordered factor.
 
-      ``mon``
-         a numeric vector: numeric month
+Source
+~~~~~~
 
-      ``date``
-         a Date
+Parent-Duchatelet, A. (1857), *De la prostitution dans la ville de
+Paris*, 3rd ed, p. 32, 36
 
-      .. rubric:: Details
-         :name: details
+Examples
+~~~~~~~~
 
-      The data table was digitally scanned with OCR, and errors were
-      corrected by comparing the yearly totals recorded in the table to
-      the row sums of the scanned data.
+.. code:: R
 
-      .. rubric:: Source
-         :name: source
 
-      Parent-Duchatelet, A. (1857), *De la prostitution dans la ville de
-      Paris*, 3rd ed, p. 32, 36
-
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(Prostitutes)
-         ## maybe str(Prostitutes) ; plot(Prostitutes) ...
+   data(Prostitutes)
+   ## maybe str(Prostitutes) ; plot(Prostitutes) ...

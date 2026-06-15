@@ -24,7 +24,7 @@ Concentrations of herbicides in streams in the United States
 
 <p>Concentrations of selected herbicides and degradation products
 determined by laboratory method analysis code GCS for water samples
-collected from 51 streams in nine Midwestern States,2002
+collected from 51 streams in nine Midwestern States, 2002.
 </p>
 
 
@@ -83,13 +83,19 @@ collected from 51 streams in nine Midwestern States,2002
 
 <h3>Details</h3>
 
-<p>Concentrations of selected herbicides and degradation products determined by laboratory method analysis code GCS for water samples collected from 51 streams in nine Midwestern States, 2002.
+<p>Concentrations of selected herbicides and degradation products determined by
+laboratory method analysis code GCS for water samples collected from 51
+streams in nine Midwestern States, 2002.
 </p>
-<p>All concentrations are micrograms/liter, &quot;&lt;&quot; means &quot;less than&quot;. The data are in character format to allow for &quot;&lt;&quot;.
+<p>All concentrations are micrograms/liter, &quot;&lt;&quot; means &quot;less than&quot;. 
+The data are in character format to allow for &quot;&lt;&quot;.
 </p>
-<p>The original report contains data for more herbicides. This data is for illustrative purposes.
+<p>The original report contains data for more herbicides.
+This data is for illustrative purposes.
 </p>
-<p>Sample types: CR = concurrent replicate sample, FB = field blank, LD = laboratory duplicate, S1 = sample from pre-emergence runoff, S2 = sample from post-emergence runoff, S3 = sample from harvest-season runoff.
+<p>Sample types: CR = concurrent replicate sample, FB = field blank,
+LD = laboratory duplicate, S1 = sample from pre-emergence runoff,
+S2 = sample from post-emergence runoff, S3 = sample from harvest-season runoff.
 </p>
 
 
@@ -116,39 +122,38 @@ https://ks.water.usgs.gov/pubs/reports/ofr.03-217.html
   library(agridat)
   data(usgs.herbicides)
   dat &lt;- usgs.herbicides
-  
 
-  libs(NADA)
   # create censored data for one trait
   dat$y &lt;- as.numeric(dat$atrazine)
   dat$ycen &lt;- is.na(dat$y)
   dat$y[is.na(dat$y)] &lt;- .05
   
-  # percent censored
-  with(dat, censummary(y, censored=ycen))
-  # median/mean
-  with(dat, cenmle(y, ycen, dist="lognormal"))
-  # boxplot
-  with(dat, cenboxplot(obs=y, cen=ycen, log=FALSE,
-                       main="usgs.herbicides"))
-  # with(dat, boxplot(y))
-  pp &lt;- with(dat, ros(obs=y, censored=ycen, forwardT="log")) # default lognormal
-  plot(pp)
+#  library(NADA)
+#  # percent censored
+#  with(dat, censummary(y, censored=ycen))
+#  # median/mean
+#  with(dat, cenmle(y, ycen, dist="lognormal"))
+#  # boxplot
+#  with(dat, cenboxplot(obs=y, cen=ycen, log=FALSE,
+#                       main="usgs.herbicides"))
+#  # with(dat, boxplot(y))
+#  pp &lt;- with(dat, ros(obs=y, censored=ycen, forwardT="log")) # default lognormal
+#  plot(pp)
 
 
-  plotfun &lt;- function(vv){
-    dat$y &lt;- as.numeric(dat[[vv]])
-    dat$ycen &lt;- is.na(dat$y)
-    dat$y[is.na(dat$y)] &lt;- .01
-    # qqnorm(log(dat$y), main=vv) # ordinary qq plot shows censored values
-    pp &lt;- with(dat, ros(obs=y, censored=ycen, forwardT="log"))
-    plot(pp, main=vv) # omits censored values
-  }
-  op &lt;- par(mfrow=c(3,3))
-  vnames &lt;- c("acetochlor", "alachlor", "ametryn", "atrazine","CIAT", "CEAT", "cyanazine", #"CAM",
-              "dimethenamid", "flufenacet")
-  for(vv in vnames) plotfun(vv)
-  par(op)
+#  plotfun &lt;- function(vv){
+#    dat$y &lt;- as.numeric(dat[[vv]])
+#    dat$ycen &lt;- is.na(dat$y)
+#    dat$y[is.na(dat$y)] &lt;- .01
+#    # qqnorm(log(dat$y), main=vv) # ordinary qq plot shows censored values
+#    pp &lt;- with(dat, ros(obs=y, censored=ycen, forwardT="log"))
+#    plot(pp, main=vv) # omits censored values
+#  }
+#  op &lt;- par(mfrow=c(3,3))
+#  vnames &lt;- c("acetochlor", "alachlor", "ametryn", "atrazine","CIAT", "CEAT", "cyanazine", #"CAM",
+#              "dimethenamid", "flufenacet")
+#  for(vv in vnames) plotfun(vv)
+#  par(op)
   
 
 ## End(Not run)

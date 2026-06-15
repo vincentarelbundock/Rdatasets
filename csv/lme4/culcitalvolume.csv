@@ -1,0 +1,51 @@
+rownames,ttt,volume,predvolume,crab,shrimp,block,ttt2
+1,No Symbionts,3619.114737,336,n,n,1,1
+2,No Symbionts,4889.365367,396,n,n,2,1
+3,No Symbionts,1900.663555,630,n,n,2,1
+4,No Symbionts,3287.676712,673.75,n,n,3,1
+5,No Symbionts,4628.613176,715,n,n,3,1
+6,No Symbionts,3294.483496,760,n,n,4,1
+7,No Symbionts,3294.483496,825,n,n,4,1
+8,No Symbionts,2506.990938,882,n,n,5,1
+9,No Symbionts,2211.681228,882,n,n,5,1
+10,No Symbionts,2924.82276,900,n,n,6,1
+11,No Symbionts,2785.545486,900,n,n,6,1
+12,No Symbionts,2586.577951,912,n,n,7,1
+13,No Symbionts,2586.577951,935,n,n,7,1
+14,No Symbionts,2092.300707,1008,n,n,8,1
+15,No Symbionts,2722.713633,1020,n,n,8,1
+16,No Symbionts,2314.306588,1020,n,n,9,1
+17,No Symbionts,2968.805058,1365,n,n,9,1
+18,No Symbionts,2994.984996,1400,n,n,10,1
+19,Pair of Shrimp,4008.672226,276,n,y,5,2
+20,Pair of Shrimp,5466.371217,280,n,y,6,2
+21,Pair of Shrimp,2430.021918,510,n,y,6,2
+22,Pair of Shrimp,3560.471674,572,n,y,7,2
+23,Pair of Shrimp,2957.154985,646.875,n,y,7,2
+24,Pair of Shrimp,7103.14099,672,n,y,8,2
+25,Pair of Shrimp,2198.591259,672,n,y,8,2
+26,Pair of Shrimp,2198.591259,1045,n,y,9,2
+27,Pair of Shrimp,4297.69875,1358.5,n,y,9,2
+28,Pair of Shrimp,3974.114707,1644.5,n,y,10,2
+29,Pair of Shrimp,2198.591259,1995,n,y,10,2
+30,Pair of Crabs,7487.462491,513,y,n,5,3
+31,Pair of Crabs,4227.012915,748,y,n,5,3
+32,Pair of Crabs,5287.300436,797.5,y,n,6,3
+33,Pair of Crabs,4156.327081,840,y,n,6,3
+34,Pair of Crabs,4750.088092,850,y,n,7,3
+35,Pair of Crabs,4552.167755,864,y,n,7,3
+36,Pair of Crabs,6597.344573,945,y,n,8,3
+37,Pair of Crabs,5277.875658,975,y,n,8,3
+38,Pair of Crabs,4272.566009,1068.75,y,n,9,3
+39,Pair of Crabs,3665.191429,1176,y,n,9,3
+40,Pair of Crabs,3870.442149,1372,y,n,10,3
+41,Pair of Crabs,2238.384766,1402.5,y,n,10,3
+42,Pairs of Shrimp and Crabs,3203.377309,84,y,y,6,4
+43,Pairs of Shrimp and Crabs,4838.052687,224,y,y,7,4
+44,Pairs of Shrimp and Crabs,4138.524722,252,y,y,7,4
+45,Pairs of Shrimp and Crabs,4272.566009,324,y,y,8,4
+46,Pairs of Shrimp and Crabs,3939.557188,350,y,y,8,4
+47,Pairs of Shrimp and Crabs,3939.557188,385,y,y,9,4
+48,Pairs of Shrimp and Crabs,4146.902303,441,y,y,9,4
+49,Pairs of Shrimp and Crabs,4552.167755,605,y,y,10,4
+50,Pairs of Shrimp and Crabs,2001.19452,630,y,y,10,4

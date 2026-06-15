@@ -1,82 +1,78 @@
-.. container::
+================ ===============
+colmozzie_tbl_df R Documentation
+================ ===============
 
-   .. container::
+Weekly Notified Dengue Cases in Sri Lanka
+-----------------------------------------
 
-      ================ ===============
-      colmozzie_tbl_df R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Weekly Notified Dengue Cases in Sri Lanka
-         :name: weekly-notified-dengue-cases-in-sri-lanka
+The dataset name has been changed to 'colmozzie_tbl_df' to avoid
+confusion with other datasets from packages in the R ecosystem and to
+follow the naming conventions of the 'MedDataSets' package. The suffix
+'\_tbl_df' indicates that this dataset is a tibble, helping to
+distinguish it from other datasets within the package and from those in
+the broader R ecosystem. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'colmozzie_tbl_df' to avoid
-      confusion with other datasets from packages in the R ecosystem and
-      to follow the naming conventions of the 'MedDataSets' package. The
-      suffix '\_tbl_df' indicates that this dataset is a tibble, helping
-      to distinguish it from other datasets within the package and from
-      those in the broader R ecosystem. The original content of the
-      dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(colmozzie_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(colmozzie_tbl_df)
+A tibble with 279 observations and 12 variables:
 
-      .. rubric:: Format
-         :name: format
+Cases
+   Number of dengue cases reported during the week (integer).
 
-      A tibble with 279 observations and 12 variables:
+Year
+   Year of the reported cases (integer).
 
-      Cases
-         Number of dengue cases reported during the week (integer).
+Week
+   Week of the year (integer).
 
-      Year
-         Year of the reported cases (integer).
+TEM
+   Average temperature (numeric).
 
-      Week
-         Week of the year (integer).
+TMAX
+   Maximum temperature recorded (numeric).
 
-      TEM
-         Average temperature (numeric).
+Tm
+   Minimum temperature recorded (numeric).
 
-      TMAX
-         Maximum temperature recorded (numeric).
+SLP
+   Sea level pressure (character).
 
-      Tm
-         Minimum temperature recorded (numeric).
+H
+   Humidity levels (numeric).
 
-      SLP
-         Sea level pressure (character).
+PP
+   Precipitation levels (numeric).
 
-      H
-         Humidity levels (numeric).
+VV
+   Wind velocity (numeric).
 
-      PP
-         Precipitation levels (numeric).
+V
+   Another wind variable (numeric).
 
-      VV
-         Wind velocity (numeric).
+VM
+   Yet another wind variable (numeric).
 
-      V
-         Another wind variable (numeric).
+Details
+~~~~~~~
 
-      VM
-         Yet another wind variable (numeric).
+This dataset contains weekly reported cases of dengue fever in Sri
+Lanka, along with various meteorological variables that may be
+associated with the incidence of the disease.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains weekly reported cases of dengue fever in Sri
-      Lanka, along with various meteorological variables that may be
-      associated with the incidence of the disease.
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset is based on public health records and meteorological
-      data from Sri Lanka.
+The dataset is based on public health records and meteorological data
+from Sri Lanka.

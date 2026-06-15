@@ -1,42 +1,38 @@
-.. container::
+========= ===============
+tate_text R Documentation
+========= ===============
 
-   .. container::
+Tate Gallery modern artwork metadata
+------------------------------------
 
-      ========= ===============
-      tate_text R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Tate Gallery modern artwork metadata
-         :name: tate-gallery-modern-artwork-metadata
+Metadata such as artist, title, and year created for recent artworks
+owned by the Tate Gallery. Only artworks created during or after 1990
+are included, and the metadata source was last updated in 2014. The Tate
+Gallery provides these data but requests users to be respectful of their
+`guidelines for
+use <https://github.com/tategallery/collection#usage-guidelines-for-open-data>`__.
 
-      .. rubric:: Description
-         :name: description
+Value
+~~~~~
 
-      Metadata such as artist, title, and year created for recent
-      artworks owned by the Tate Gallery. Only artworks created during
-      or after 1990 are included, and the metadata source was last
-      updated in 2014. The Tate Gallery provides these data but requests
-      users to be respectful of their `guidelines for
-      use <https://github.com/tategallery/collection#usage-guidelines-for-open-data>`__.
+============= ========
+``tate_text`` a tibble
+============= ========
 
-      .. rubric:: Value
-         :name: value
+Source
+~~~~~~
 
-      ============= ========
-      ``tate_text`` a tibble
-      ============= ========
+- https://github.com/tategallery/collection
 
-      .. rubric:: Source
-         :name: source
+- https://www.tate.org.uk/
 
-      -  https://github.com/tategallery/collection
+Examples
+~~~~~~~~
 
-      -  https://www.tate.org.uk/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(tate_text)
-         str(tate_text)
+   data(tate_text)
+   str(tate_text)

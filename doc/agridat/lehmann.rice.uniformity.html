@@ -1,0 +1,128 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of rice in India</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>lehmann.rice.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of rice in India
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of rice in India, 3 years on same land.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("lehmann.rice.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 153 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+<dt><code>plot</code></dt><dd><p>plot (row)</p>
+</dd>
+<dt><code>range</code></dt><dd><p>range (column)</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>grain yield (pounds)</p>
+</dd>
+<dt><code>total</code></dt><dd><p>total crop yield (pounds)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>A uniformity experiment of paddy rice on the Experimental Farm at
+Hebbal (near Bangalore). The plots were the same year-over-year.
+</p>
+<p>The 6th report
+</p>
+<p>P. 2: Plots are 1/10 acre, 50 links wide, 200 links long.
+</p>
+<p>The 7th report
+</p>
+<p>P. 6 table 1 has yield (pounds) of paddy produced on the wet area of
+the farm for 1905-196. (No total weight weight is given). 
+</p>
+<p>The 9th report
+</p>
+<p>P. 19 has commenets.
+P. 47 tables 6 &amp; 7 has grain/total yield for Range B and Range C
+1906-1908.
+</p>
+<p>Field width: 3 plots * 200 links
+</p>
+<p>Field length: 17 plots * 50 links
+</p>
+<p>Transcription details: Data values typed and checked by K.Wright
+2024.12.09.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Lehmann, A.
+Ninth Annual Report of the Agricultural Chemist For the Year 1907-08.
+Department of Agriculture, Mysore State.
+[2nd-9th] Annual Report of the Agricultural Chemist.
+https://books.google.com/books?id=u_dHAAAAYAAJ
+</p>
+
+
+<h3>References</h3>
+
+<p>Theodor Roemer (1920).
+Der Feldversuch. Page 68, table 12.
+https://www.google.com/books/edition/Arbeiten_der_Deutschen_Landwirtschafts_G/7zBSAQAAMAAJ
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  library(agridat)
+  data(lehmann.rice.uniformity)
+  dat &lt;- lehmann.rice.uniformity
+
+  libs(desplot)
+  dat$year = factor(dat$year)
+  desplot(dat, yield ~ range*plot|year,
+          aspect=(17*50)/(2*200),
+          main="lehmann.rice.uniformity",
+          flip=TRUE, tick=TRUE)
+  desplot(dat, total ~ range*plot|year,
+          aspect=(17*50)/(2*200),
+          main="lehmann.rice.uniformity",
+          flip=TRUE, tick=TRUE)
+  
+  # libs(dplyr)
+  # group_by(dat, year) 
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

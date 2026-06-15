@@ -1,50 +1,44 @@
-.. container::
+========================== ===============
+heartTransplantTime_tbl_df R Documentation
+========================== ===============
 
-   .. container::
+Artificial Heart Transplant Durations
+-------------------------------------
 
-      ========================== ===============
-      heartTransplantTime_tbl_df R Documentation
-      ========================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Artificial Heart Transplant Durations
-         :name: artificial-heart-transplant-durations
+This dataset, heartTransplantTime_tbl_df, is a tibble containing the
+durations (in hours) of 15 artificial heart transplant operations.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, heartTransplantTime_tbl_df, is a tibble containing
-      the durations (in hours) of 15 artificial heart transplant
-      operations.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(heartTransplantTime_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(heartTransplantTime_tbl_df)
+A tibble with 15 observations and 1 variable:
 
-      .. rubric:: Format
-         :name: format
+duration
+   Operation duration in hours (numeric)
 
-      A tibble with 15 observations and 1 variable:
+Details
+~~~~~~~
 
-      duration
-         Operation duration in hours (numeric)
+The dataset name has been kept as 'heartTransplantTime_tbl_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the CardioDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'tbl_df' indicates that the dataset is a tibble. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'heartTransplantTime_tbl_df' to
-      avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      CardioDataSets package and assists users in identifying its
-      specific characteristics. The suffix 'tbl_df' indicates that the
-      dataset is a tibble. The original content has not been modified in
-      any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the BSDA package version 1.2.3. Original source:
-      Kitchens LJ (2003). "Basic Statistics and Data Analysis." Pacific
-      Grove, CA: Brooks/Cole, a division of Thomson Learning.
+Data taken from the BSDA package version 1.2.3. Original source:
+Kitchens LJ (2003). "Basic Statistics and Data Analysis." Pacific Grove,
+CA: Brooks/Cole, a division of Thomson Learning.

@@ -1,82 +1,77 @@
-.. container::
+======================== ===============
+senate_national_forecast R Documentation
+======================== ===============
 
-   .. container::
+Senate Forecast 2018
+--------------------
 
-      ======================== ===============
-      senate_national_forecast R Documentation
-      ======================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Senate Forecast 2018
-         :name: senate-forecast-2018
+This file contains links to the data behind FiveThirtyEight's 'Senate
+forecasts'
+https://projects.fivethirtyeight.com/2018-midterm-election-forecast/senate/
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This file contains links to the data behind FiveThirtyEight's
-      'Senate forecasts'
-      https://projects.fivethirtyeight.com/2018-midterm-election-forecast/senate/
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   senate_national_forecast
 
-      .. code:: R
+Format
+~~~~~~
 
-         senate_national_forecast
+A dataframe with 450 rows representing national-level results of the
+classic, lite, and deluxe Senate forecasts since Aug. 1, 2018 and 11
+variables
 
-      .. rubric:: Format
-         :name: format
+forecastdate
+   date of the forecast
 
-      A dataframe with 450 rows representing national-level results of
-      the classic, lite, and deluxe Senate forecasts since Aug. 1, 2018
-      and 11 variables
+party
+   the party of the forecast
 
-      forecastdate
-         date of the forecast
+model
+   the model of the forecast
 
-      party
-         the party of the forecast
+win_probability
+   the probability of the corresponding party winning
 
-      model
-         the model of the forecast
+mean_seats
+   the mean of the number of seats
 
-      win_probability
-         the probability of the corresponding party winning
+median_seats
+   the median number of seats
 
-      mean_seats
-         the mean of the number of seats
+p10_seats
+   the top 10 percentile of number of seats
 
-      median_seats
-         the median number of seats
+p90_seats
+   the top 90 percentile of number of seats
 
-      p10_seats
-         the top 10 percentile of number of seats
+margin
+   unknown
 
-      p90_seats
-         the top 90 percentile of number of seats
+p10_margin
+   the margin of p10_seats
 
-      margin
-         unknown
+p90_margin
+   the margin of p90_seats
 
-      p10_margin
-         the margin of p10_seats
+Note
+~~~~
 
-      p90_margin
-         the margin of p90_seats
+The original dataset included a meaningless column called "state", and
+all variables under this column was "US". So this column was removed.
 
-      .. rubric:: Note
-         :name: note
+Source
+~~~~~~
 
-      The original dataset included a meaningless column called "state",
-      and all variables under this column was "US". So this column was
-      removed.
+FiveThirtyEight’s House, Senate And Governor Models Methodology:
+https://fivethirtyeight.com/methodology/how-fivethirtyeights-house-and-senate-models-work/
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      FiveThirtyEight’s House, Senate And Governor Models Methodology:
-      https://fivethirtyeight.com/methodology/how-fivethirtyeights-house-and-senate-models-work/
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``senate_seat_forecast``
+``senate_seat_forecast``

@@ -1,69 +1,62 @@
-.. container::
+=============== ===============
+Ndrangheta_list R Documentation
+=============== ===============
 
-   .. container::
+Ndrangheta Mafia Covert Network Dataset
+---------------------------------------
 
-      =============== ===============
-      Ndrangheta_list R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Ndrangheta Mafia Covert Network Dataset
-         :name: ndrangheta-mafia-covert-network-dataset
+This dataset contains a network of co-attendance occurrences of
+suspected members of the Ndrangheta criminal organization at summits
+held between 2007 and 2009. These summits were meetings aimed at making
+important decisions, resolving internal issues, and establishing roles
+and powers.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains a network of co-attendance occurrences of
-      suspected members of the Ndrangheta criminal organization at
-      summits held between 2007 and 2009. These summits were meetings
-      aimed at making important decisions, resolving internal issues,
-      and establishing roles and powers.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Ndrangheta_list)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Ndrangheta_list)
+A list with 2 elements:
 
-      .. rubric:: Format
-         :name: format
+X
+   A numeric matrix of dimensions 146 x 146 representing the
+   co-attendance occurrences between members of the Ndrangheta
+   organization at summits. The matrix includes member pairs and their
+   respective co-attendance frequency.
 
-      A list with 2 elements:
+node_meta
+   A data frame with 146 observations and 3 variables:
 
-      X
-         A numeric matrix of dimensions 146 x 146 representing the
-         co-attendance occurrences between members of the Ndrangheta
-         organization at summits. The matrix includes member pairs and
-         their respective co-attendance frequency.
+Role
+   Character vector indicating the role of each member in the
+   organization.
 
-      node_meta
-         A data frame with 146 observations and 3 variables:
+Locale
+   Character vector indicating the geographic locale of each member.
 
-      Role
-         Character vector indicating the role of each member in the
-         organization.
+Id
+   Integer vector representing a unique identifier for each member.
 
-      Locale
-         Character vector indicating the geographic locale of each
-         member.
+Details
+~~~~~~~
 
-      Id
-         Integer vector representing a unique identifier for each
-         member.
+The dataset name has been changed to 'Ndrangheta_list' to avoid
+confusion with other data sets in the R ecosystem. This naming
+convention helps distinguish this dataset as part of the crimedatasets
+package and assists users in identifying its specific characteristics.
+The suffix 'list' indicates that the dataset is a list object in R. The
+original content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been changed to 'Ndrangheta_list' to avoid
-      confusion with other data sets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      crimedatasets package and assists users in identifying its
-      specific characteristics. The suffix 'list' indicates that the
-      dataset is a list object in R. The original content has not been
-      modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Ndrangheta mafia covert network dataset, containing data from
-      summits between 2007 and 2009.
+Ndrangheta mafia covert network dataset, containing data from summits
+between 2007 and 2009.

@@ -1,33 +1,29 @@
-.. container::
+===== ===============
+austa R Documentation
+===== ===============
 
-   .. container::
+International visitors to Australia
+-----------------------------------
 
-      ===== ===============
-      austa R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: International visitors to Australia
-         :name: international-visitors-to-australia
+Total international visitors to Australia (in millions). 1980-2015.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Total international visitors to Australia (in millions).
-      1980-2015.
+Annual time series of class ``ts``.
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      Annual time series of class ``ts``.
+International Visitor Survey, Tourism Research Australia.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      International Visitor Survey, Tourism Research Australia.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         autoplot(austa)
+   autoplot(austa)

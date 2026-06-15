@@ -1,81 +1,77 @@
-.. container::
+========== ===============
+vietnamlss R Documentation
+========== ===============
 
-   .. container::
+Household medical expenditure
+-----------------------------
 
-      ========== ===============
-      vietnamlss R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Household medical expenditure
-         :name: household-medical-expenditure
+Data from the World Bank's 1997 Vietnam Living Standards Survey 1997-98
+at the household level. Cameron and Trivedi (2005)
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data from the World Bank's 1997 Vietnam Living Standards Survey
-      1997-98 at the household level. Cameron and Trivedi (2005)
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   vietnamlss
 
-      .. code:: R
+Format
+~~~~~~
 
-         vietnamlss
+A data frame with 5999 observations and 9 variables:
 
-      .. rubric:: Format
-         :name: format
+sex
+   gender of household head, 1 = male; 2 = female
 
-      A data frame with 5999 observations and 9 variables:
+age
+   age of household head
 
-      sex
-         gender of household head, 1 = male; 2 = female
+educyr98
+   schooling year of household head
 
-      age
-         age of household head
+farm
+   type of household, = 1 if farm
 
-      educyr98
-         schooling year of household head
+urban98
+   = 1 if urban area, = 0 if rural area
 
-      farm
-         type of household, = 1 if farm
+hhsize
+   household size
 
-      urban98
-         = 1 if urban area, = 0 if rural area
+lhhexp1
+   household total expenditure, ln
 
-      hhsize
-         household size
+lhhex12m
+   household medical expenditure, ln
 
-      lhhexp1
-         household total expenditure, ln
+lnrlfood
+   household food expenditure, ln
 
-      lhhex12m
-         household medical expenditure, ln
+Section in Text
+~~~~~~~~~~~~~~~
 
-      lnrlfood
-         household food expenditure, ln
+4.6.4 Quantile Regression Example, pp. 88-90
 
-      .. rubric:: Section in Text
-         :name: section-in-text
+Source
+~~~~~~
 
-      4.6.4 Quantile Regression Example, pp. 88-90
+http://cameron.econ.ucdavis.edu/mmabook/mmadata.html
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      http://cameron.econ.ucdavis.edu/mmabook/mmadata.html
+Cameron, A. and Trivedi, P. (2005), "Microeconometrics: Methods and
+Applications," Cambridge University Press, New York.
 
-      .. rubric:: References
-         :name: references
+World Bank Living Standards Survey 1997-1998 Vietnam.
+https://microdata.worldbank.org/index.php/catalog/2694
 
-      Cameron, A. and Trivedi, P. (2005), "Microeconometrics: Methods
-      and Applications," Cambridge University Press, New York.
+Examples
+~~~~~~~~
 
-      World Bank Living Standards Survey 1997-1998 Vietnam.
-      https://microdata.worldbank.org/index.php/catalog/2694
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         summary(vietnamlss)
+   summary(vietnamlss)

@@ -1,64 +1,60 @@
-.. container::
+============== ===============
+penguins_bayes R Documentation
+============== ===============
 
-   .. container::
+Penguins Data
+-------------
 
-      ============== ===============
-      penguins_bayes R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Penguins Data
-         :name: penguins-data
+Data on penguins in the Palmer Archipelago, originally collected by
+Gordan etal and distributed through the penguins data in the
+palmerpenguins package. In addition to the original penguins data is a
+variable above_average_weight.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data on penguins in the Palmer Archipelago, originally collected
-      by Gordan etal and distributed through the penguins data in the
-      palmerpenguins package. In addition to the original penguins data
-      is a variable above_average_weight.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   penguins_bayes
 
-      .. code:: R
+Format
+~~~~~~
 
-         penguins_bayes
+A data frame with 344 penguins and 9 variables on each.
 
-      .. rubric:: Format
-         :name: format
+species
+   species (Adelie, Chinstrap, Gentoo)
 
-      A data frame with 344 penguins and 9 variables on each.
+island
+   home island (Biscoe, Dream, Torgersen)
 
-      species
-         species (Adelie, Chinstrap, Gentoo)
+year
+   year of observation
 
-      island
-         home island (Biscoe, Dream, Torgersen)
+bill_length_mm
+   length of bill (mm)
 
-      year
-         year of observation
+bill_depth_mm
+   depth of bill (mm)
 
-      bill_length_mm
-         length of bill (mm)
+flipper_length_mm
+   length of flipper (mm)
 
-      bill_depth_mm
-         depth of bill (mm)
+body_mass_g
+   body mass (g)
 
-      flipper_length_mm
-         length of flipper (mm)
+above_average_weight
+   whether or not the body mass exceeds 4200g (TRUE or FALSE)
 
-      body_mass_g
-         body mass (g)
+sex
+   male or female
 
-      above_average_weight
-         whether or not the body mass exceeds 4200g (TRUE or FALSE)
+Source
+~~~~~~
 
-      sex
-         male or female
-
-      .. rubric:: Source
-         :name: source
-
-      Gorman KB, Williams TD, and Fraser WR (2014). Ecological sexual
-      dimorphism and environmental variability within a community of
-      antarctic penguins (Genus Pygoscelis). PLoS ONE, 9(3).
+Gorman KB, Williams TD, and Fraser WR (2014). Ecological sexual
+dimorphism and environmental variability within a community of antarctic
+penguins (Genus Pygoscelis). PLoS ONE, 9(3).

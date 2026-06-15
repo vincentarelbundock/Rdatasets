@@ -1,85 +1,79 @@
-.. container::
+=============== ===============
+theobald.barley R Documentation
+=============== ===============
 
-   .. container::
+Multi-environment trial of barley, multiple years & fertilizer levels
+---------------------------------------------------------------------
 
-      =============== ===============
-      theobald.barley R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Multi-environment trial of barley, multiple years &
-         fertilizer levels
-         :name: multi-environment-trial-of-barley-multiple-years-fertilizer-levels
+Barley yields at multiple locs, years, fertilizer levels
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Barley yields at multiple locs, years, fertilizer levels
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("theobald.barley")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("theobald.barley")
+A data frame with 105 observations on the following 5 variables.
 
-      .. rubric:: Format
-         :name: format
+``yield``
+   yield, tonnes/ha
 
-      A data frame with 105 observations on the following 5 variables.
+``gen``
+   genotype
 
-      ``yield``
-         yield, tonnes/ha
+``loc``
+   location, 5 levels
 
-      ``gen``
-         genotype
+``nitro``
+   nitrogen kg/ha
 
-      ``loc``
-         location, 5 levels
+``year``
+   year, 2 levels
 
-      ``nitro``
-         nitrogen kg/ha
+Details
+~~~~~~~
 
-      ``year``
-         year, 2 levels
+Theobald and Talbot used BUGS to fit a fully Bayesian model for yield
+response curves.
 
-      .. rubric:: Details
-         :name: details
+Locations of the experiment were in north-east Scotland.
 
-      Theobald and Talbot used BUGS to fit a fully Bayesian model for
-      yield response curves.
+Assumed nitrogen cost 400 pounds per tonne. Grain prices used were 100,
+110, and 107.50 pounds per tonne for Georgie, Midas and Sundance.
 
-      Locations of the experiment were in north-east Scotland.
+Source
+~~~~~~
 
-      Assumed nitrogen cost 400 pounds per tonne. Grain prices used were
-      100, 110, and 107.50 pounds per tonne for Georgie, Midas and
-      Sundance.
+Chris M. Theobald and Mike Talbot, (2002). The Bayesian choice of crop
+variety and fertilizer dose. *Appl Statistics*, 51, 23-36.
+https://doi.org/10.1111/1467-9876.04863
 
-      .. rubric:: Source
-         :name: source
+Data provided by Chris Theobald and Mike Talbot.
 
-      Chris M. Theobald and Mike Talbot, (2002). The Bayesian choice of
-      crop variety and fertilizer dose. *Appl Statistics*, 51, 23-36.
-      https://doi.org/10.1111/1467-9876.04863
+Examples
+~~~~~~~~
 
-      Data provided by Chris Theobald and Mike Talbot.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
 
-         ## Not run: 
+   data(theobald.barley)
+   dat <- theobald.barley
+   dat <- transform(dat,  env=paste(loc,year,sep="-"))
+   dat <- transform(dat, income=100*yield - 400*nitro/1000)
 
-         library(agridat)
-
-         data(theobald.barley)
-         dat <- theobald.barley
-         dat <- transform(dat,  env=paste(loc,year,sep="-"))
-         dat <- transform(dat, income=100*yield - 400*nitro/1000)
-
-         libs(lattice)
-         xyplot(income~nitro|env, dat, groups=gen, type='b',
-                auto.key=list(columns=3), main="theobald.barley")
+   libs(lattice)
+   xyplot(income~nitro|env, dat, groups=gen, type='b',
+          auto.key=list(columns=3), main="theobald.barley")
 
 
-         ## End(Not run)
+   ## End(Not run)

@@ -1,91 +1,86 @@
-.. container::
+==== ===============
+cgd0 R Documentation
+==== ===============
 
-   .. container::
+Chronic Granulotomous Disease data
+----------------------------------
 
-      ==== ===============
-      cgd0 R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Chronic Granulotomous Disease data
-         :name: chronic-granulotomous-disease-data
+Data are from a placebo controlled trial of gamma interferon in chronic
+granulotomous disease (CGD). Contains the data on time to serious
+infections observed through end of study for each patient.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data are from a placebo controlled trial of gamma interferon in
-      chronic granulotomous disease (CGD). Contains the data on time to
-      serious infections observed through end of study for each patient.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   cgd0
 
-      .. code:: R
+Format
+~~~~~~
 
-         cgd0
+id
+   subject identification number
 
-      .. rubric:: Format
-         :name: format
+center
+   enrolling center
 
-      id
-         subject identification number
+random
+   date of randomization
 
-      center
-         enrolling center
+treatment
+   placebo or gamma interferon
 
-      random
-         date of randomization
+sex
+   sex
 
-      treatment
-         placebo or gamma interferon
+age
+   age in years, at study entry
 
-      sex
-         sex
+height
+   height in cm at study entry
 
-      age
-         age in years, at study entry
+weight
+   weight in kg at study entry
 
-      height
-         height in cm at study entry
+inherit
+   pattern of inheritance
 
-      weight
-         weight in kg at study entry
+steroids
+   use of steroids at study entry,1=yes
 
-      inherit
-         pattern of inheritance
+propylac
+   use of prophylactic antibiotics at study entry
 
-      steroids
-         use of steroids at study entry,1=yes
+hos.cat
+   a categorization of the centers into 4 groups
 
-      propylac
-         use of prophylactic antibiotics at study entry
+futime
+   days to last follow-up
 
-      hos.cat
-         a categorization of the centers into 4 groups
+etime1-etime7
+   up to 7 infection times for the subject
 
-      futime
-         days to last follow-up
+Details
+~~~~~~~
 
-      etime1-etime7
-         up to 7 infection times for the subject
+The ``cgdraw`` data set (this one) is in the form found in the
+references, with one line per patient and no recoding of the variables.
 
-      .. rubric:: Details
-         :name: details
+The ``cgd`` data set has been further processed so as to have one line
+per event, with covariates such as center recoded as factors to include
+meaningful labels.
 
-      The ``cgdraw`` data set (this one) is in the form found in the
-      references, with one line per patient and no recoding of the
-      variables.
+Source
+~~~~~~
 
-      The ``cgd`` data set has been further processed so as to have one
-      line per event, with covariates such as center recoded as factors
-      to include meaningful labels.
+Fleming and Harrington, Counting Processes and Survival Analysis,
+appendix D.2.
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      Fleming and Harrington, Counting Processes and Survival Analysis,
-      appendix D.2.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``cgd``
+``cgd``

@@ -1,59 +1,54 @@
-.. container::
+=================== ===============
+US_births_1994_2003 R Documentation
+=================== ===============
 
-   .. container::
+Some People Are Too Superstitious To Have A Baby On Friday The 13th
+-------------------------------------------------------------------
 
-      =================== ===============
-      US_births_1994_2003 R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Some People Are Too Superstitious To Have A Baby On
-         Friday The 13th
-         :name: some-people-are-too-superstitious-to-have-a-baby-on-friday-the-13th
+The raw data behind the story "Some People Are Too Superstitious To Have
+A Baby On Friday The 13th"
+https://fivethirtyeight.com/features/some-people-are-too-superstitious-to-have-a-baby-on-friday-the-13th/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Some People Are Too Superstitious
-      To Have A Baby On Friday The 13th"
-      https://fivethirtyeight.com/features/some-people-are-too-superstitious-to-have-a-baby-on-friday-the-13th/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   US_births_1994_2003
 
-      .. code:: R
+Format
+~~~~~~
 
-         US_births_1994_2003
+A data frame with 3652 rows representing dates and 6 variables:
 
-      .. rubric:: Format
-         :name: format
+year
+   Year
 
-      A data frame with 3652 rows representing dates and 6 variables:
+month
+   Month
 
-      year
-         Year
+date_of_month
+   Day
 
-      month
-         Month
+date
+   POSIX date
 
-      date_of_month
-         Day
+day_of_week
+   Abbreviation of day of week
 
-      date
-         POSIX date
+births
+   Number of births
 
-      day_of_week
-         Abbreviation of day of week
+Source
+~~~~~~
 
-      births
-         Number of births
+Centers for Disease Control and Prevention's National Center for Health
+Statistics
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      Centers for Disease Control and Prevention's National Center for
-      Health Statistics
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``US_births_2000_2014``
+``US_births_2000_2014``

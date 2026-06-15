@@ -1,107 +1,101 @@
-.. container::
+=========== ===============
+fight_songs R Documentation
+=========== ===============
 
-   .. container::
+Our Guide To The Exuberant Nonsense of College Fight Songs
+----------------------------------------------------------
 
-      =========== ===============
-      fight_songs R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Our Guide To The Exuberant Nonsense of College Fight
-         Songs
-         :name: our-guide-to-the-exuberant-nonsense-of-college-fight-songs
+The data behind the story "Our Guide To The Exuberant Nonsense Of
+College Fight Songs"
+https://projects.fivethirtyeight.com/college-fight-song-lyrics/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The data behind the story "Our Guide To The Exuberant Nonsense Of
-      College Fight Songs"
-      https://projects.fivethirtyeight.com/college-fight-song-lyrics/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   fight_songs
 
-      .. code:: R
+Format
+~~~~~~
 
-         fight_songs
+A data frame with 65 rows representing college fight songs, and 23
+variables:
 
-      .. rubric:: Format
-         :name: format
+school
+   school name
 
-      A data frame with 65 rows representing college fight songs, and 23
-      variables:
+conference
+   school college football conference
 
-      school
-         school name
+song_name
+   song title
 
-      conference
-         school college football conference
+writers
+   song author(s)
 
-      song_name
-         song title
+year
+   year the song was written; some years are unknown
 
-      writers
-         song author(s)
+student_writer
+   TRUE if song was written by a student, FALSE if not
 
-      year
-         year the song was written; some years are unknown
+official_song
+   TRUE if song is an official fight song according to the university,
+   FALSE if not
 
-      student_writer
-         TRUE if song was written by a student, FALSE if not
+contest
+   TRUE if song was chosen as part of a contest, FALSE if not
 
-      official_song
-         TRUE if song is an official fight song according to the
-         university, FALSE if not
+bpm
+   beats per minute
 
-      contest
-         TRUE if song was chosen as part of a contest, FALSE if not
+sec_duration
+   duration of the song in seconds
 
-      bpm
-         beats per minute
+fight
+   TRUE if song says 'fight', FALSE if not
 
-      sec_duration
-         duration of the song in seconds
+num_fights
+   number of time song says 'fight'
 
-      fight
-         TRUE if song says 'fight', FALSE if not
+victory
+   TRUE if song says 'victory', FALSE if not
 
-      num_fights
-         number of time song says 'fight'
+win_won
+   TRUE if song says 'win' or 'won', FALSE if not
 
-      victory
-         TRUE if song says 'victory', FALSE if not
+victory_win_won
+   TRUE if song says 'victory', 'win', or 'won'
 
-      win_won
-         TRUE if song says 'win' or 'won', FALSE if not
+rah
+   TRUE if song says 'rah', FALSE if not
 
-      victory_win_won
-         TRUE if song says 'victory', 'win', or 'won'
+nonsense
+   TRUE if song uses nonsense syllables, FALSE if not
 
-      rah
-         TRUE if song says 'rah', FALSE if not
+colors
+   TRUE if song mentions school colors, FALSE if not
 
-      nonsense
-         TRUE if song uses nonsense syllables, FALSE if not
+men
+   TRUE if song refers to a group of men, boys, sons, etc., FALSE if not
 
-      colors
-         TRUE if song mentions school colors, FALSE if not
+opponents
+   TRUE if song mentions opponents, FALSE if not
 
-      men
-         TRUE if song refers to a group of men, boys, sons, etc., FALSE
-         if not
+spelling
+   TRUE if song spells something out, FALSE if not
 
-      opponents
-         TRUE if song mentions opponents, FALSE if not
+trope_count
+   total number of tropes in song
 
-      spelling
-         TRUE if song spells something out, FALSE if not
+spotify_id
+   Spotify id for song
 
-      trope_count
-         total number of tropes in song
+Source
+~~~~~~
 
-      spotify_id
-         Spotify id for song
-
-      .. rubric:: Source
-         :name: source
-
-      Spotify https://www.spotify.com/us/
+Spotify https://www.spotify.com/us/

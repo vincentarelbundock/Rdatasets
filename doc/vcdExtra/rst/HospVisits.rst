@@ -1,74 +1,68 @@
-.. container::
+========== ===============
+HospVisits R Documentation
+========== ===============
 
-   .. container::
+Hospital Visits Data
+--------------------
 
-      ========== ===============
-      HospVisits R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Hospital Visits Data
-         :name: hospital-visits-data
+Length of stay in hospital for 132 schizophrenic patients, classified by
+visiting patterns, originally from Wing (1962).
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Length of stay in hospital for 132 schizophrenic patients,
-      classified by visiting patterns, originally from Wing (1962).
+A 3 by 3 frequency table, with format:
 
-      .. rubric:: Usage
-         :name: usage
+::
 
-      .. code:: R
 
-         data("HospVisits")
+   table [1:3, 1:3] 43 6 9 16 11 18 3 10 16
+   - attr(*, "dimnames")=List of 2
+   ..$ visit: chr [1:3] "Regular" "Infrequent" "Never"
+   ..$ stay : chr [1:3] "2-9" "10-19" "20+"
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      A 3 by 3 frequency table, with format: table [1:3, 1:3] 43 6 9 16
-      11 18 3 10 16 - attr(\*, "dimnames")=List of 2 ..$ visit: chr
-      [1:3] "Regular" "Infrequent" "Never" ..$ stay : chr [1:3] "2-9"
-      "10-19" "20+"
+Both table variables can be considered ordinal. The variable ``visit``
+refers to visiting patterns recorded hospital. The category labels are
+abbreviations of those given by Goodman (1983); e.g., ``"Regular"`` is
+short for “received visitors regularly or patient went home”. The
+variable ``stay`` refers to length of stay in hospital, in year groups.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      Both table variables can be considered ordinal. The variable
-      ``visit`` refers to visiting patterns recorded hospital. The
-      category labels are abbreviations of those given by Goodman
-      (1983); e.g., ``"Regular"`` is short for “received visitors
-      regularly or patient went home”. The variable ``stay`` refers to
-      length of stay in hospital, in year groups.
+Goodman, L. A. (1983) The analysis of dependence in
+cross-classifications having ordered categories, using log-linear models
+for frequencies and log-linear models for odds. *Biometrics*, 39,
+149-160.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Goodman, L. A. (1983) The analysis of dependence in
-      cross-classifications having ordered categories, using log-linear
-      models for frequencies and log-linear models for odds.
-      *Biometrics*, 39, 149-160.
+Wing, J. K. (1962). Institutionalism in Mental Hospitals, *British
+Journal of Social and Clinical Psychology*, 1 (1), 38-51.
 
-      .. rubric:: References
-         :name: references
+See Also
+~~~~~~~~
 
-      Wing, J. K. (1962). Institutionalism in Mental Hospitals, *British
-      Journal of Social and Clinical Psychology*, 1 (1), 38-51.
+``ca``
 
-      .. rubric:: See Also
-         :name: see-also
+Examples
+~~~~~~~~
 
-      ``ca``
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   data(HospVisits)
+   mosaic(HospVisits, gp=shading_Friendly)
 
-         data(HospVisits)
-         mosaic(HospVisits, gp=shading_Friendly)
-
-         if(require(ca)){
-           ca(HospVisits)
-           # surprisingly 1D !
-           plot(ca(HospVisits))
-           }
+   if(require(ca)){
+     ca(HospVisits)
+     # surprisingly 1D !
+     plot(ca(HospVisits))
+     }

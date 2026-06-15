@@ -1,77 +1,73 @@
-.. container::
+=============== ===============
+births14_tbl_df R Documentation
+=============== ===============
 
-   .. container::
+US Births 2014
+--------------
 
-      =============== ===============
-      births14_tbl_df R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: US Births 2014
-         :name: us-births-2014
+The dataset name has been changed to 'births14_tbl_df' to avoid
+confusion with other packages in the R ecosystem from which datasets
+have been sourced. This naming convention helps distinguish this dataset
+as part of the 'usdatasets' package and assists users in identifying its
+specific characteristics. The suffix 'tbl_df' identifies the dataset as
+a tibble. The original content of the dataset has not been modified in
+any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'births14_tbl_df' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. This naming convention helps
-      distinguish this dataset as part of the 'usdatasets' package and
-      assists users in identifying its specific characteristics. The
-      suffix 'tbl_df' identifies the dataset as a tibble. The original
-      content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(births14_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(births14_tbl_df)
+A tibble with 1,000 observations and 13 variables:
 
-      .. rubric:: Format
-         :name: format
+fage
+   Age of the father (in years).
 
-      A tibble with 1,000 observations and 13 variables:
+mage
+   Age of the mother (in years).
 
-      fage
-         Age of the father (in years).
+mature
+   Indicates if the mother is mature (yes/no).
 
-      mage
-         Age of the mother (in years).
+weeks
+   Number of weeks of pregnancy.
 
-      mature
-         Indicates if the mother is mature (yes/no).
+premie
+   Indicates if the baby is a premature birth (yes/no).
 
-      weeks
-         Number of weeks of pregnancy.
+visits
+   Number of prenatal visits.
 
-      premie
-         Indicates if the baby is a premature birth (yes/no).
+gained
+   Weight gained by the mother during pregnancy (in pounds).
 
-      visits
-         Number of prenatal visits.
+weight
+   Birth weight of the baby (in grams).
 
-      gained
-         Weight gained by the mother during pregnancy (in pounds).
+lowbirthweight
+   Indicates if the baby is of low birth weight (yes/no).
 
-      weight
-         Birth weight of the baby (in grams).
+sex
+   Sex of the baby (male/female).
 
-      lowbirthweight
-         Indicates if the baby is of low birth weight (yes/no).
+habit
+   Maternal smoking habits (yes/no).
 
-      sex
-         Sex of the baby (male/female).
+marital
+   Marital status of the mother (married/single).
 
-      habit
-         Maternal smoking habits (yes/no).
+whitemom
+   Indicates if the mother is white (yes/no).
 
-      marital
-         Marital status of the mother (married/single).
+Source
+~~~~~~
 
-      whitemom
-         Indicates if the mother is white (yes/no).
-
-      .. rubric:: Source
-         :name: source
-
-      National Vital Statistics Reports
+National Vital Statistics Reports

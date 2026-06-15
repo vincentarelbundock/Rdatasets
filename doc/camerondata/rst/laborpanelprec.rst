@@ -1,88 +1,82 @@
-.. container::
+============== ===============
+laborpanelprec R Documentation
+============== ===============
 
-   .. container::
+Hours worked and wages (more precision)
+---------------------------------------
 
-      ============== ===============
-      laborpanelprec R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Hours worked and wages (more precision)
-         :name: hours-worked-and-wages-more-precision
+Data on 532 males over 10 years (1979-1988) from Ziliak (1997), with
+more significant digits (seven decimals) than the data originally posted
+on JBES website with two decimal places (Cameron and Trivedi, 2005).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data on 532 males over 10 years (1979-1988) from Ziliak (1997),
-      with more significant digits (seven decimals) than the data
-      originally posted on JBES website with two decimal places (Cameron
-      and Trivedi, 2005).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   laborpanelprec
 
-      .. code:: R
+Format
+~~~~~~
 
-         laborpanelprec
+A data frame with 5320 observations and 8 variables:
 
-      .. rubric:: Format
-         :name: format
+lnhr
+   log of annual hours worked
 
-      A data frame with 5320 observations and 8 variables:
+lnwg
+   log of of hourly wage
 
-      lnhr
-         log of annual hours worked
+kids
+   number of children
 
-      lnwg
-         log of of hourly wage
+ageh
+   age
 
-      kids
-         number of children
+agesq
+   quadratic age
 
-      ageh
-         age
+disab
+   = 1 if bad health
 
-      agesq
-         quadratic age
+id
+   identification code
 
-      disab
-         = 1 if bad health
+year
+   interview year
 
-      id
-         identification code
+...
 
-      year
-         interview year
+Section in Text
+~~~~~~~~~~~~~~~
 
-      ...
+22.3 Panel GMM Example: Hours and Wages, pp. 754-6
 
-      .. rubric:: Section in Text
-         :name: section-in-text
+Source
+~~~~~~
 
-      22.3 Panel GMM Example: Hours and Wages, pp. 754-6
+http://cameron.econ.ucdavis.edu/mmabook/mmadata.html
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      http://cameron.econ.ucdavis.edu/mmabook/mmadata.html
+Cameron, A. and Trivedi, P. (2005), "Microeconometrics: Methods and
+Applications," Cambridge University Press, New York.
 
-      .. rubric:: References
-         :name: references
+Ziliak, J. (1997), "Efficient Estimation With Panel Data when
+Instruments are Predetermined: An Empirical Comparison of
+Moment-Condition Estimators," Journal of Business and Economic
+Statistics, 15, 419-431.
+https://amstat.tandfonline.com/doi/abs/10.1080/07350015.1997.10524720
 
-      Cameron, A. and Trivedi, P. (2005), "Microeconometrics: Methods
-      and Applications," Cambridge University Press, New York.
+Panel Study of Income Dynamics (PSID), https://psidonline.isr.umich.edu
 
-      Ziliak, J. (1997), "Efficient Estimation With Panel Data when
-      Instruments are Predetermined: An Empirical Comparison of
-      Moment-Condition Estimators," Journal of Business and Economic
-      Statistics, 15, 419-431.
-      https://amstat.tandfonline.com/doi/abs/10.1080/07350015.1997.10524720
+Examples
+~~~~~~~~
 
-      Panel Study of Income Dynamics (PSID),
-      https://psidonline.isr.umich.edu
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         summary(laborpanelprec)
+   summary(laborpanelprec)

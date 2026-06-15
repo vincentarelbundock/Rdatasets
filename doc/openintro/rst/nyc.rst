@@ -1,80 +1,75 @@
-.. container::
+=== ===============
+nyc R Documentation
+=== ===============
 
-   .. container::
+nyc
+---
 
-      === ===============
-      nyc R Documentation
-      === ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: nyc
-         :name: nyc
+Zagat is a public survey where anyone can provide scores to a
+restaurant. The scores from the general public are then gathered to
+produce ratings. This dataset contains a list of 168 NYC restaurants and
+their Zagat Ratings.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Zagat is a public survey where anyone can provide scores to a
-      restaurant. The scores from the general public are then gathered
-      to produce ratings. This dataset contains a list of 168 NYC
-      restaurants and their Zagat Ratings.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   nyc
 
-      .. code:: R
+Format
+~~~~~~
 
-         nyc
+A data frame with 168 observations on the following 6 variables.
 
-      .. rubric:: Format
-         :name: format
+restaurant
+   Name of the restaurant.
 
-      A data frame with 168 observations on the following 6 variables.
+price
+   Price of a mean for two, with drinks, in US $.
 
-      restaurant
-         Name of the restaurant.
+food
+   Zagat rating for food.
 
-      price
-         Price of a mean for two, with drinks, in US $.
+decor
+   Zagat rating for decor.
 
-      food
-         Zagat rating for food.
+service
+   Zagat rating for service.
 
-      decor
-         Zagat rating for decor.
+east
+   Indicator variable for location of the restaurant. ``0`` = west of
+   5th Avenue, ``1`` = east of 5th Avenue
 
-      service
-         Zagat rating for service.
+Details
+~~~~~~~
 
-      east
-         Indicator variable for location of the restaurant. ``0`` = west
-         of 5th Avenue, ``1`` = east of 5th Avenue
+For each category the scales are as follows:
 
-      .. rubric:: Details
-         :name: details
+0 - 9: poor to fair 10 - 15: fair to good 16 - 19: good to very good 20
+- 25: very good to excellent 25 - 30: extraordinary to perfection
 
-      For each category the scales are as follows:
+Examples
+~~~~~~~~
 
-      0 - 9: poor to fair 10 - 15: fair to good 16 - 19: good to very
-      good 20 - 25: very good to excellent 25 - 30: extraordinary to
-      perfection
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   library(dplyr)
+   library(ggplot2)
 
-      .. code:: R
+   location_labs <- c("West", "East")
+   names(location_labs) <- c(0, 1)
 
-         library(dplyr)
-         library(ggplot2)
-
-         location_labs <- c("West", "East")
-         names(location_labs) <- c(0, 1)
-
-         ggplot(nyc, mapping = aes(x = price, group = east, fill = east)) +
-           geom_boxplot(alpha = 0.5) +
-           facet_grid(east ~ ., labeller = labeller(east = location_labs)) +
-           labs(
-             title = "Is food more expensive east of 5th Avenue?",
-             x = "Price (US$)"
-           ) +
-           guides(fill = "none") +
-           theme_minimal() +
-           theme(axis.text.y = element_blank())
+   ggplot(nyc, mapping = aes(x = price, group = east, fill = east)) +
+     geom_boxplot(alpha = 0.5) +
+     facet_grid(east ~ ., labeller = labeller(east = location_labs)) +
+     labs(
+       title = "Is food more expensive east of 5th Avenue?",
+       x = "Price (US$)"
+     ) +
+     guides(fill = "none") +
+     theme_minimal() +
+     theme(axis.text.y = element_blank())

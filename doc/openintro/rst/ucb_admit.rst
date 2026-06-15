@@ -1,62 +1,59 @@
-.. container::
+========= ===============
+usb_admit R Documentation
+========= ===============
 
-   .. container::
+ucb_admit
+---------
 
-      ========= ===============
-      usb_admit R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: ucb_admit
-         :name: ucb_admit
+Data from a study carried out by the graduate Division of the University
+of California, Berkeley in the early 1970's to evaluate whether there
+was a sex bias in graduate admissions.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data from a study carried out by the graduate Division of the
-      University of California, Berkeley in the early 1970's to evaluate
-      whether there was a sex bias in graduate admissions.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   ucb_admit
 
-      .. code:: R
+Format
+~~~~~~
 
-         ucb_admit
+A data frame with 4526 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+admit
+   Was the applicant admitted to the university?
 
-      A data frame with 4526 observations on the following 3 variables.
+gender
+   Whether the applicant identified as male or female.
 
-      admit
-         Was the applicant admitted to the university?
+department
+   What department did the applicant apply to, noted as A through F for
+   confidentiality.
 
-      gender
-         Whether the applicant identified as male or female.
+Examples
+~~~~~~~~
 
-      department
-         What department did the applicant apply to, noted as A through
-         F for confidentiality.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   library(ggplot2)
+   library(dplyr)
 
-         library(ggplot2)
-         library(dplyr)
+   plot_data <- ucb_admit |>
+     count(dept, gender, admit)
 
-         plot_data <- ucb_admit |>
-           count(dept, gender, admit)
-
-         ggplot(plot_data, aes(dept, n, fill = gender)) +
-           geom_col(position = "dodge") +
-           facet_wrap(~admit) +
-           theme_minimal() +
-           labs(
-             title = "Does gender discrimination play a role in college admittance?",
-             x = "Department",
-             y = "Number of Students",
-             fill = "Gender",
-             caption = "Source: UC Berkeley, 1970's"
-           )
+   ggplot(plot_data, aes(dept, n, fill = gender)) +
+     geom_col(position = "dodge") +
+     facet_wrap(~admit) +
+     theme_minimal() +
+     labs(
+       title = "Does gender discrimination play a role in college admittance?",
+       x = "Department",
+       y = "Number of Students",
+       fill = "Gender",
+       caption = "Source: UC Berkeley, 1970's"
+     )

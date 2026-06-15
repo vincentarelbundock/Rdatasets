@@ -1,53 +1,49 @@
-.. container::
+===== ===============
+loons R Documentation
+===== ===============
 
-   .. container::
+Loon Count Data
+---------------
 
-      ===== ===============
-      loons R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Loon Count Data
-         :name: loon-count-data
+Loon count data collected from the year 2000 to 2017, in late December,
+by birdwatchers in the Ontario, Canada area. The data was made available
+by the Bird Studies Canada website and distributed through the R for
+Data Science TidyTuesday project. A more complete data set with a larger
+selection of birds can be found in the bird_counts data in the
+bayesrules package.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Loon count data collected from the year 2000 to 2017, in late
-      December, by birdwatchers in the Ontario, Canada area. The data
-      was made available by the Bird Studies Canada website and
-      distributed through the R for Data Science TidyTuesday project. A
-      more complete data set with a larger selection of birds can be
-      found in the bird_counts data in the bayesrules package.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   loons
 
-      .. code:: R
+Format
+~~~~~~
 
-         loons
+A data frame with 18 rows and 5 variables. Each row represents loon
+observations in the given year.
 
-      .. rubric:: Format
-         :name: format
+year
+   year of data collection
 
-      A data frame with 18 rows and 5 variables. Each row represents
-      loon observations in the given year.
+count
+   number of loons observed
 
-      year
-         year of data collection
+hours
+   total person-hours of observation period
 
-      count
-         number of loons observed
+count_per_hour
+   count divided by hours
 
-      hours
-         total person-hours of observation period
+count_per_100
+   count_per_hour multiplied by 100 hours
 
-      count_per_hour
-         count divided by hours
+Source
+~~~~~~
 
-      count_per_100
-         count_per_hour multiplied by 100 hours
-
-      .. rubric:: Source
-         :name: source
-
-      https://github.com/rfordatascience/tidytuesday/blob/master/data/2019/2019-06-18/bird_counts.csv.
+https://github.com/rfordatascience/tidytuesday/blob/master/data/2019/2019-06-18/bird_counts.csv.

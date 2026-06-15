@@ -1,51 +1,47 @@
-.. container::
+==================== ===============
+Program_stats_tbl_df R Documentation
+==================== ===============
 
-   .. container::
+Effects of Learning Methods on Statistics Students
+--------------------------------------------------
 
-      ==================== ===============
-      Program_stats_tbl_df R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Effects of Learning Methods on Statistics Students
-         :name: effects-of-learning-methods-on-statistics-students
+This dataset, Program_stats_tbl_df, is a tibble containing information
+about the effects of four different methods of programmed learning on
+statistics students. It includes the learning method used and the
+corresponding scores of the students.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, Program_stats_tbl_df, is a tibble containing
-      information about the effects of four different methods of
-      programmed learning on statistics students. It includes the
-      learning method used and the corresponding scores of the students.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Program_stats_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Program_stats_tbl_df)
+A tibble with 44 observations and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+method
+   Programmed learning method (character).
 
-      A tibble with 44 observations and 2 variables:
+score
+   Score obtained by the student (integer).
 
-      method
-         Programmed learning method (character).
+Details
+~~~~~~~
 
-      score
-         Score obtained by the student (integer).
+The dataset name has been kept as 'Program_stats_tbl_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the educationR package and
+assists users in identifying its specific characteristics. The suffix
+'tbl_df' indicates that the dataset is a tibble. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'Program_stats_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      educationR package and assists users in identifying its specific
-      characteristics. The suffix 'tbl_df' indicates that the dataset is
-      a tibble. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset was taken from the BSDA package.
+The dataset was taken from the BSDA package.

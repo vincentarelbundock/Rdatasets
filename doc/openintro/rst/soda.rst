@@ -1,44 +1,41 @@
-.. container::
+==== ===============
+soda R Documentation
+==== ===============
 
-   .. container::
+soda
+----
 
-      ==== ===============
-      soda R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: soda
-         :name: soda
+A randomly generated dataset of soda preference (cola or orange) based
+on location.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A randomly generated dataset of soda preference (cola or orange)
-      based on location.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   soda
 
-      .. code:: R
+Format
+~~~~~~
 
-         soda
+A data frame with 60 observations on the following 2 variables.
 
-      .. rubric:: Format
-         :name: format
+drink
+   Soda preference, cola or orange.
 
-      A data frame with 60 observations on the following 2 variables.
+location
+   Is the person from the West coast or East coast?
 
-      drink
-         Soda preference, cola or orange.
+Examples
+~~~~~~~~
 
-      location
-         Is the person from the West coast or East coast?
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   library(dplyr)
 
-         library(dplyr)
-
-         soda |>
-           count(location, drink)
+   soda |>
+     count(location, drink)

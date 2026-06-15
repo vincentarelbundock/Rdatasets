@@ -1,85 +1,79 @@
-.. container::
+========================= ===============
+mn_police_use_of_force_df R Documentation
+========================= ===============
 
-   .. container::
+Minneapolis police use of force data.
+-------------------------------------
 
-      ========================= ===============
-      mn_police_use_of_force_df R Documentation
-      ========================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Minneapolis police use of force data.
-         :name: minneapolis-police-use-of-force-data.
+The dataset name has been changed to 'mn_police_use_of_force_df' to
+avoid confusion with other packages in the R ecosystem. This naming
+convention helps distinguish this dataset as part of the 'usdatasets'
+package and identifies it as a data frame. The original content of the
+dataset has not been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'mn_police_use_of_force_df'
-      to avoid confusion with other packages in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a data frame. The
-      original content of the dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(mn_police_use_of_force_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(mn_police_use_of_force_df)
+A data frame with 12925 observations and 13 variables:
 
-      .. rubric:: Format
-         :name: format
+response_datetime
+   Character string representing the date and time of the response.
 
-      A data frame with 12925 observations and 13 variables:
+problem
+   Character string describing the nature of the problem.
 
-      response_datetime
-         Character string representing the date and time of the
-         response.
+is_911_call
+   Character string indicating whether the incident was initiated by a
+   911 call.
 
-      problem
-         Character string describing the nature of the problem.
+primary_offense
+   Character string indicating the primary offense involved in the
+   incident.
 
-      is_911_call
-         Character string indicating whether the incident was initiated
-         by a 911 call.
+subject_injury
+   Character string describing the injuries sustained by the subject, if
+   any.
 
-      primary_offense
-         Character string indicating the primary offense involved in the
-         incident.
+force_type
+   Character string describing the type of force used by the police.
 
-      subject_injury
-         Character string describing the injuries sustained by the
-         subject, if any.
+force_type_action
+   Character string describing the specific actions related to the use
+   of force.
 
-      force_type
-         Character string describing the type of force used by the
-         police.
+race
+   Character string indicating the race of the subject involved in the
+   incident.
 
-      force_type_action
-         Character string describing the specific actions related to the
-         use of force.
+sex
+   Character string indicating the sex of the subject.
 
-      race
-         Character string indicating the race of the subject involved in
-         the incident.
+age
+   Integer representing the age of the subject.
 
-      sex
-         Character string indicating the sex of the subject.
+type_resistance
+   Character string describing the type of resistance offered by the
+   subject.
 
-      age
-         Integer representing the age of the subject.
+precinct
+   Character string indicating the precinct in which the incident
+   occurred.
 
-      type_resistance
-         Character string describing the type of resistance offered by
-         the subject.
+neighborhood
+   Character string representing the neighborhood where the incident
+   occurred.
 
-      precinct
-         Character string indicating the precinct in which the incident
-         occurred.
+Source
+~~~~~~
 
-      neighborhood
-         Character string representing the neighborhood where the
-         incident occurred.
-
-      .. rubric:: Source
-         :name: source
-
-      Data from police use of force reports in Minnesota
+Data from police use of force reports in Minnesota

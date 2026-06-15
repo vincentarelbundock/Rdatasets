@@ -1,52 +1,47 @@
-.. container::
+=========== ===============
+qauselec_ts R Documentation
+=========== ===============
 
-   .. container::
+Quarterly Australian Electricity Production
+-------------------------------------------
 
-      =========== ===============
-      qauselec_ts R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Quarterly Australian Electricity Production
-         :name: quarterly-australian-electricity-production
+The dataset name has been changed to 'qauselec_ts' to avoid confusion
+with other packages in the R ecosystem from which datasets have been
+sourced. The suffix 'ts' indicates that this dataset is a time series
+object. This naming convention helps distinguish this dataset as part of
+the 'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'qauselec_ts' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. The suffix 'ts' indicates that this
-      dataset is a time series object. This naming convention helps
-      distinguish this dataset as part of the 'timeseriesdatasets'
-      package and assists users in identifying its specific
-      characteristics. The original content of the dataset has not been
-      modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(qauselec_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(qauselec_ts)
+A 'ts' object with 218 observations:
 
-      .. rubric:: Format
-         :name: format
+time
+   Quarterly time series from 1956 to 2010.
 
-      A 'ts' object with 218 observations:
+value
+   Electricity production (in GWh) in Australia.
 
-      time
-         Quarterly time series from 1956 to 2010.
+Details
+~~~~~~~
 
-      value
-         Electricity production (in GWh) in Australia.
+This dataset contains quarterly data on electricity production in
+Australia from 1956 to 2010. The values are measured in gigawatt-hours
+(GWh).
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains quarterly data on electricity production in
-      Australia from 1956 to 2010. The values are measured in
-      gigawatt-hours (GWh).
-
-      .. rubric:: Source
-         :name: source
-
-      Australian Bureau of Statistics.
+Australian Bureau of Statistics.

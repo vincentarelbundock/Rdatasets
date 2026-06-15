@@ -1,50 +1,46 @@
-.. container::
+========= ===============
+retailers R Documentation
+========= ===============
 
-   .. container::
+data on Dutch supermarkets
+--------------------------
 
-      ========= ===============
-      retailers R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: data on Dutch supermarkets
-         :name: data-on-dutch-supermarkets
+Anonymized and distorted data on revenue and cost structure for 60
+retailers. Currency is in thousands of Euros. There are two data sets.
+The ``SBS2000`` dataset is equal to the ``retailers`` data set except
+that it has a record identifier (called ``id``) column.
 
-      .. rubric:: Description
-         :name: description
+- id: A unique identifier (only in SBS2000)
 
-      Anonymized and distorted data on revenue and cost structure for 60
-      retailers. Currency is in thousands of Euros. There are two data
-      sets. The ``SBS2000`` dataset is equal to the ``retailers`` data
-      set except that it has a record identifier (called ``id``) column.
+- size: Size class (0=undetermined)
 
-      -  id: A unique identifier (only in SBS2000)
+- incl.prob: Probability of inclusion in the sample
 
-      -  size: Size class (0=undetermined)
+- staff: Number of staff
 
-      -  incl.prob: Probability of inclusion in the sample
+- turnover: Amount of turnover
 
-      -  staff: Number of staff
+- other.rev: Amount of other revenue
 
-      -  turnover: Amount of turnover
+- total.rev: Total revenue
 
-      -  other.rev: Amount of other revenue
+- staff.costs: Costs assiciated to staff
 
-      -  total.rev: Total revenue
+- total.costs: Total costs made
 
-      -  staff.costs: Costs assiciated to staff
+- profit: Amount of profit
 
-      -  total.costs: Total costs made
+- vat: Turnover reported for Value Added Tax
 
-      -  profit: Amount of profit
+Format
+~~~~~~
 
-      -  vat: Turnover reported for Value Added Tax
+A csv file, one retailer per row.
 
-      .. rubric:: Format
-         :name: format
+See Also
+~~~~~~~~
 
-      A csv file, one retailer per row.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      Other datasets: ``nace_rev2``, ``samplonomy``
+Other datasets: ``nace_rev2``, ``samplonomy``

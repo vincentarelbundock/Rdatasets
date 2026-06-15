@@ -1,98 +1,92 @@
-.. container::
+=============== ===============
+acs_patients_df R Documentation
+=============== ===============
 
-   .. container::
+Acute Coronary Syndrome (ACS) Patient Data
+------------------------------------------
 
-      =============== ===============
-      acs_patients_df R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Acute Coronary Syndrome (ACS) Patient Data
-         :name: acute-coronary-syndrome-acs-patient-data
+This dataset, acs_patients_df, is a data frame containing demographic
+and clinical data from 857 patients with Acute Coronary Syndrome (ACS).
+It includes 17 variables covering patient characteristics, vital signs,
+laboratory results, and risk factors.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, acs_patients_df, is a data frame containing
-      demographic and clinical data from 857 patients with Acute
-      Coronary Syndrome (ACS). It includes 17 variables covering patient
-      characteristics, vital signs, laboratory results, and risk
-      factors.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(acs_patients_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(acs_patients_df)
+A data frame with 857 observations and 17 variables:
 
-      .. rubric:: Format
-         :name: format
+age
+   Patient age in years (integer)
 
-      A data frame with 857 observations and 17 variables:
+sex
+   Patient sex (character)
 
-      age
-         Patient age in years (integer)
+cardiogenicShock
+   Presence of cardiogenic shock (character)
 
-      sex
-         Patient sex (character)
+entry
+   Method of hospital entry (character)
 
-      cardiogenicShock
-         Presence of cardiogenic shock (character)
+Dx
+   Diagnosis (character)
 
-      entry
-         Method of hospital entry (character)
+EF
+   Ejection fraction percentage (numeric)
 
-      Dx
-         Diagnosis (character)
+height
+   Height in cm (numeric)
 
-      EF
-         Ejection fraction percentage (numeric)
+weight
+   Weight in kg (numeric)
 
-      height
-         Height in cm (numeric)
+BMI
+   Body Mass Index in kg/m² (numeric)
 
-      weight
-         Weight in kg (numeric)
+obesity
+   Obesity status (character)
 
-      BMI
-         Body Mass Index in kg/m² (numeric)
+TC
+   Total cholesterol in mg/dL (numeric)
 
-      obesity
-         Obesity status (character)
+LDLC
+   LDL cholesterol in mg/dL (integer)
 
-      TC
-         Total cholesterol in mg/dL (numeric)
+HDLC
+   HDL cholesterol in mg/dL (integer)
 
-      LDLC
-         LDL cholesterol in mg/dL (integer)
+TG
+   Triglycerides in mg/dL (integer)
 
-      HDLC
-         HDL cholesterol in mg/dL (integer)
+DM
+   Diabetes mellitus status (character)
 
-      TG
-         Triglycerides in mg/dL (integer)
+HBP
+   High blood pressure status (character)
 
-      DM
-         Diabetes mellitus status (character)
+smoking
+   Smoking status (character)
 
-      HBP
-         High blood pressure status (character)
+Details
+~~~~~~~
 
-      smoking
-         Smoking status (character)
+The dataset name has been kept as 'acs_patients_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the CardioDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'df' indicates that the dataset is a standard data frame. The original
+content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'acs_patients_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      CardioDataSets package and assists users in identifying its
-      specific characteristics. The suffix 'df' indicates that the
-      dataset is a standard data frame. The original content has not
-      been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the moonBook package version 0.3.1
+Data taken from the moonBook package version 0.3.1

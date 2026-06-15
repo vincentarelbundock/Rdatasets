@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><title>R: Traumatic Brain Injury (TBI) in U.S. Military Personnel</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>TBI_military_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Traumatic Brain Injury (TBI) in U.S. Military Personnel</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, TBI_military_tbl_df, is a tibble containing information on traumatic brain injuries (TBI)
+diagnosed among U.S. military personnel. The dataset includes the service branch, military component,
+severity of the injury, number of diagnosed cases, and the year of observation.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(TBI_military_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 438 observations and 5 variables:
+</p>
+
+<dl>
+<dt>service</dt><dd><p>Branch of military service (character)</p>
+</dd>
+<dt>component</dt><dd><p>Status of the individual (active duty, reserve, or guard) (character)</p>
+</dd>
+<dt>severity</dt><dd><p>Severity category of the traumatic brain injury (character)</p>
+</dd>
+<dt>diagnosed</dt><dd><p>Number of diagnosed TBI cases (numeric)</p>
+</dd>
+<dt>year</dt><dd><p>Year of recorded TBI diagnosis (numeric)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as TBI_military_tbl_df to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+NeuroDataSets package and assists users in identifying its specific characteristics.
+The suffix tbl_df indicates that the dataset is a tibble (a modern data frame).
+The original content has not been modified in any way. Variable names and values are provided exactly
+as they appear in the source.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from Kaggle: <a href="https://www.kaggle.com/datasets/jessemostipak/traumatic-brain-injury-tbi">https://www.kaggle.com/datasets/jessemostipak/traumatic-brain-injury-tbi</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

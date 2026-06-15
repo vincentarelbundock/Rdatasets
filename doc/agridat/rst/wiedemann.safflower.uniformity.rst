@@ -1,118 +1,113 @@
-.. container::
+============================== ===============
+wiedemann.safflower.uniformity R Documentation
+============================== ===============
 
-   .. container::
+Uniformity trial of safflower
+-----------------------------
 
-      ============================== ===============
-      wiedemann.safflower.uniformity R Documentation
-      ============================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of safflower
-         :name: uniformity-trial-of-safflower
+Uniformity trial of safflower at Farmington, Utah, 1960.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of safflower at Farmington, Utah, 1960.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("wiedemann.safflower.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("wiedemann.safflower.uniformity")
+A data frame with 1782 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row
 
-      A data frame with 1782 observations on the following 3 variables.
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   yield, grams
 
-      ``col``
-         column
+Details
+~~~~~~~
 
-      ``yield``
-         yield, grams
+This trial was planted at University Field Station, Farmington, Utah, in
+1960, on a plot of land about one half acre in size. The soil was not
+too uniform...the northern third of the field was clay and the rest was
+gravelly. Rows were planted 22 inches apart, 62 rows total, each row
+running the length of the field. Before harvest, 4 rows were removed
+from each side, and 12 feet was removed from each end. Each row was
+harvested in five-foot lengths, threshed, and the seed weighed to the
+nearest gram.
 
-      .. rubric:: Details
-         :name: details
+The northern third of the field had yields twice as high as the
+remaining part of the field because the soil had better moisture
+retention. The remaining part of the field had yields that were more
+uniform.
 
-      This trial was planted at University Field Station, Farmington,
-      Utah, in 1960, on a plot of land about one half acre in size. The
-      soil was not too uniform...the northern third of the field was
-      clay and the rest was gravelly. Rows were planted 22 inches apart,
-      62 rows total, each row running the length of the field. Before
-      harvest, 4 rows were removed from each side, and 12 feet was
-      removed from each end. Each row was harvested in five-foot
-      lengths, threshed, and the seed weighed to the nearest gram.
+Wiedemann determined the optimum plot size to be about 8 basic plots.
+The shape of the plot was not very important. But, two-row plots were
+recommended for simplicity of harvest, so 3.33 feet by 20 feet.
 
-      The northern third of the field had yields twice as high as the
-      remaining part of the field because the soil had better moisture
-      retention. The remaining part of the field had yields that were
-      more uniform.
+Based on operational costs, K1=74 percent and K2=26 percent.
 
-      Wiedemann determined the optimum plot size to be about 8 basic
-      plots. The shape of the plot was not very important. But, two-row
-      plots were recommended for simplicity of harvest, so 3.33 feet by
-      20 feet.
+Field width: 33 plots/ranges \* 5ft = 165 feet
 
-      Based on operational costs, K1=74 percent and K2=26 percent.
+Field length: 54 rows \* 22 in/row = 99 feet
 
-      Field width: 33 plots/ranges \* 5ft = 165 feet
+The original source document has columns labeled 33, 32, ... 1. Here the
+columns are labeled 1:33 so that plotting tools work normally. See
+Wiedemann figure 8.
 
-      Field length: 54 rows \* 22 in/row = 99 feet
+Wiedemann notes the statistical analysis of the data required 100 hours
+of labor. Today the analysis takes only a second.
 
-      The original source document has columns labeled 33, 32, ... 1.
-      Here the columns are labeled 1:33 so that plotting tools work
-      normally. See Wiedemann figure 8.
+Transcription details: The tables in Wiedemann were converted by OCR to
+digital format, and all values were checked by K.Wright.
 
-      Wiedemann notes the statistical analysis of the data required 100
-      hours of labor. Today the analysis takes only a second.
+Source
+~~~~~~
 
-      For this R package, the tables in Wiedemann were converted by OCR
-      to digital format, and all values were checked by hand.
+Wiedemann, Alfred Max. 1962. Estimation of Optimum Plot Size and Shape
+for Use in Safflower Yield Trails. Table 5. All Graduate Theses and
+Dissertations. Paper 3600. Table 5.
+https://digitalcommons.usu.edu/etd/3600
+https://doi.org/10.26076/7184-afa1
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Wiedemann, Alfred Max. 1962. Estimation of Optimum Plot Size and
-      Shape for Use in Safflower Yield Trails. Table 5. All Graduate
-      Theses and Dissertations. Paper 3600. Table 5.
-      https://digitalcommons.usu.edu/etd/3600
-      https://doi.org/10.26076/7184-afa1
+None.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
 
-         ## Not run: 
+     data(wiedemann.safflower.uniformity)
+     dat <- wiedemann.safflower.uniformity
 
-         library(agridat)
+     # CV of entire field = 39
+     sd(dat$yield)/mean(dat$yield)
 
-           data(wiedemann.safflower.uniformity)
-           dat <- wiedemann.safflower.uniformity
+     libs(desplot)
+     desplot(dat, yield~col*row,
+             flip=TRUE, tick=TRUE, aspect =99/165, # true aspect
+             main="wiedemann.safflower.uniformity (true shape)")
 
-           # CV of entire field = 39
-           sd(dat$yield)/mean(dat$yield)
+     libs(agricolae)
+     libs(reshape2)
+     dmat <- acast(dat, row~col, value.var='yield')
+     agricolae::index.smith(dmat,
+                 main="wiedemann.safflower.uniformity",
+                 col="red")
+     
 
-           libs(desplot)
-           desplot(dat, yield~col*row,
-                   flip=TRUE, tick=TRUE, aspect =99/165, # true aspect
-                   main="wiedemann.safflower.uniformity (true shape)")
-
-           libs(agricolae)
-           libs(reshape2)
-           dmat <- acast(dat, row~col, value.var='yield')
-           agricolae::index.smith(dmat,
-                       main="wiedemann.safflower.uniformity",
-                       col="red")
-           
-
-         ## End(Not run)
+   ## End(Not run)

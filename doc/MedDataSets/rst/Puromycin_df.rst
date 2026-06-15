@@ -1,61 +1,55 @@
-.. container::
+============ ===============
+Puromycin_df R Documentation
+============ ===============
 
-   .. container::
+Reaction Velocity of an Enzymatic Reaction
+------------------------------------------
 
-      ============ ===============
-      Puromycin_df R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Reaction Velocity of an Enzymatic Reaction
-         :name: reaction-velocity-of-an-enzymatic-reaction
+The dataset name has been changed to 'Puromycin_df' to avoid confusion
+with datasets from other packages in the R ecosystem and to follow the
+naming convention in the 'MedDataSets' package. The suffix '\_df'
+indicates that this dataset is a data frame, distinguishing it both
+within the package and from similar datasets in other R packages. The
+original content of the dataset has not been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'Puromycin_df' to avoid
-      confusion with datasets from other packages in the R ecosystem and
-      to follow the naming convention in the 'MedDataSets' package. The
-      suffix '\_df' indicates that this dataset is a data frame,
-      distinguishing it both within the package and from similar
-      datasets in other R packages. The original content of the dataset
-      has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Puromycin_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Puromycin_df)
+A data frame with 23 observations and 3 variables:
 
-      .. rubric:: Format
-         :name: format
+conc
+   Substrate concentration (numeric).
 
-      A data frame with 23 observations and 3 variables:
+rate
+   Reaction velocity (numeric).
 
-      conc
-         Substrate concentration (numeric).
+state
+   A factor with two levels: ``treated`` and ``untreated``, indicating
+   whether Puromycin was present.
 
-      rate
-         Reaction velocity (numeric).
+The dataset contains additional metadata:
 
-      state
-         A factor with two levels: ``treated`` and ``untreated``,
-         indicating whether Puromycin was present.
+reference
+   The reference for this dataset: ``"A1.3, p. 269"``.
 
-      The dataset contains additional metadata:
+Details
+~~~~~~~
 
-      reference
-         The reference for this dataset: ``"A1.3, p. 269"``.
+This dataset contains data from an experiment on the reaction velocity
+of an enzymatic reaction with and without the use of Puromycin, an
+antibiotic that inhibits protein synthesis.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains data from an experiment on the reaction
-      velocity of an enzymatic reaction with and without the use of
-      Puromycin, an antibiotic that inhibits protein synthesis.
-
-      .. rubric:: Source
-         :name: source
-
-      Experimental data on the effects of Puromycin on enzyme reaction
-      rates.
+Experimental data on the effects of Puromycin on enzyme reaction rates.

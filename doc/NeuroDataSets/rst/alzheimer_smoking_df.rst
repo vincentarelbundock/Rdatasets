@@ -1,58 +1,53 @@
-.. container::
+==================== ===============
+alzheimer_smoking_df R Documentation
+==================== ===============
 
-   .. container::
+Smoking and Alzheimer's Disease
+-------------------------------
 
-      ==================== ===============
-      alzheimer_smoking_df R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Smoking and Alzheimer's Disease
-         :name: smoking-and-alzheimers-disease
+This dataset, alzheimer_smoking_df, is a data frame containing
+case-control data from a study examining the association between smoking
+and Alzheimer's disease. The study included 538 participants with
+information on smoking status, disease classification, and gender.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, alzheimer_smoking_df, is a data frame containing
-      case-control data from a study examining the association between
-      smoking and Alzheimer's disease. The study included 538
-      participants with information on smoking status, disease
-      classification, and gender.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(alzheimer_smoking_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(alzheimer_smoking_df)
+A data frame with 538 observations and 3 variables:
 
-      .. rubric:: Format
-         :name: format
+smoking
+   Factor: Smoking status of participants (4 levels)
 
-      A data frame with 538 observations and 3 variables:
+disease
+   Factor: Disease classification including Alzheimer's diagnosis (3
+   levels)
 
-      smoking
-         Factor: Smoking status of participants (4 levels)
+gender
+   Factor: Participant's gender (2 levels)
 
-      disease
-         Factor: Disease classification including Alzheimer's diagnosis
-         (3 levels)
+Details
+~~~~~~~
 
-      gender
-         Factor: Participant's gender (2 levels)
+The dataset name has been kept as 'alzheimer_smoking_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the NeuroDataSets package. The
+suffix 'df' indicates that the dataset is a data frame. The original
+content has not been modified.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'alzheimer_smoking_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      NeuroDataSets package. The suffix 'df' indicates that the dataset
-      is a data frame. The original content has not been modified.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the coin package version 1.4-3. Original study:
-      Salib, E. and Hillier, V. (1997). A case-control study of smoking
-      and Alzheimer's disease. International Journal of Geriatric
-      Psychiatry 12: 295-300.
+Data taken from the coin package version 1.4-3. Original study: Salib,
+E. and Hillier, V. (1997). A case-control study of smoking and
+Alzheimer's disease. International Journal of Geriatric Psychiatry 12:
+295-300.

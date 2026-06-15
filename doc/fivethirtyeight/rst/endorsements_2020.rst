@@ -1,78 +1,71 @@
-.. container::
+================= ===============
+endorsements_2020 R Documentation
+================= ===============
 
-   .. container::
+The 2020 Endorsement Primary - Which Democratic candidates are receiving the most support from prominent members of their party?
+--------------------------------------------------------------------------------------------------------------------------------
 
-      ================= ===============
-      endorsements_2020 R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The 2020 Endorsement Primary - Which Democratic
-         candidates are receiving the most support from prominent
-         members of their party?
-         :name: the-2020-endorsement-primary---which-democratic-candidates-are-receiving-the-most-support-from-prominent-members-of-their-party
+The raw data behind the story "The 2020 Endorsement Primary - Which
+Democratic candidates are receiving the most support from prominent
+members of their party?"
+https://projects.fivethirtyeight.com/2020-endorsements/democratic-primary/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "The 2020 Endorsement Primary -
-      Which Democratic candidates are receiving the most support from
-      prominent members of their party?"
-      https://projects.fivethirtyeight.com/2020-endorsements/democratic-primary/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   endorsements_2020
 
-      .. code:: R
+Format
+~~~~~~
 
-         endorsements_2020
+A data frame with 1000 rows representing endorsements and 13 variables:
 
-      .. rubric:: Format
-         :name: format
+date
+   date of the endorsement
 
-      A data frame with 1000 rows representing endorsements and 13
-      variables:
+position
+   position of the endorser
 
-      date
-         date of the endorsement
+city
+   city of the endorser
 
-      position
-         position of the endorser
+state
+   state of the endorser
 
-      city
-         city of the endorser
+endorser
+   name of the endorser
 
-      state
-         state of the endorser
+endorsee
+   name of the endorsee
 
-      endorser
-         name of the endorser
+endorser_party
+   party of the endorser
 
-      endorsee
-         name of the endorsee
+source
+   source link of the endorsement
 
-      endorser_party
-         party of the endorser
+order
+   order of the endorsement
 
-      source
-         source link of the endorsement
+category
+   category of the endorsement
 
-      order
-         order of the endorsement
+body
+   body of the endorsement
 
-      category
-         category of the endorsement
+district
+   district
 
-      body
-         body of the endorsement
+points
+   points the endorsement counts for
 
-      district
-         district
+Source
+~~~~~~
 
-      points
-         points the endorsement counts for
-
-      .. rubric:: Source
-         :name: source
-
-      2020 endorsement tracker. Methodology:
-      https://fivethirtyeight.com/methodology/how-our-presidential-endorsement-tracker-works/.
+2020 endorsement tracker. Methodology:
+https://fivethirtyeight.com/methodology/how-our-presidential-endorsement-tracker-works/.

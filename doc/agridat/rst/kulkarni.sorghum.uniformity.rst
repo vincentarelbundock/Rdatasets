@@ -1,110 +1,105 @@
-.. container::
+=========================== ===============
+kulkarni.sorghum.uniformity R Documentation
+=========================== ===============
 
-   .. container::
+Uniformity trial of sorghum
+---------------------------
 
-      =========================== ===============
-      kulkarni.sorghum.uniformity R Documentation
-      =========================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of sorghum
-         :name: uniformity-trial-of-sorghum
+Uniformity trial of sorghum in India, 3 years on the same plots
+1930-1932.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of sorghum in India, 3 years on the same plots
-      1930-1932.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("kulkarni.sorghum.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("kulkarni.sorghum.uniformity")
+A data frame with 480 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row
 
-      A data frame with 480 observations on the following 4 variables.
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   grain yield, tolas per plot
 
-      ``col``
-         column
+``year``
+   year
 
-      ``yield``
-         grain yield, tolas per plot
+Details
+~~~~~~~
 
-      ``year``
-         year
+The experiment was conducted in the Sholapur district in India for three
+consecutive years in 1930-1932.
 
-      .. rubric:: Details
-         :name: details
+One acre of land (290 ft x 150 ft) was chosen in the midst of a bigger
+area (plot 13 on the Mohol Plot) for sowing to sorghum. It was harvested
+in plots of 1/160 acre (72 ft 6 in x 3 ft 9 in) each containing three
+rows of plants 15 in. apart. The 160 plots were arranged in forty rows
+of four columns, and the yields were measured in tolas. The plot
+division was kept intact for three years, and the yields of the 160
+plots are available for three consecutive harvests. The original data
+are given in Appendix I.
 
-      The experiment was conducted in the Sholapur district in India for
-      three consecutive years in 1930-1932.
+Field width: 4 plots \* 72.5 feet = 290 feet
 
-      One acre of land (290 ft x 150 ft) was chosen in the midst of a
-      bigger area (plot 13 on the Mohol Plot) for sowing to sorghum. It
-      was harvested in plots of 1/160 acre (72 ft 6 in x 3 ft 9 in) each
-      containing three rows of plants 15 in. apart. The 160 plots were
-      arranged in forty rows of four columns, and the yields were
-      measured in tolas. The plot division was kept intact for three
-      years, and the yields of the 160 plots are available for three
-      consecutive harvests. The original data are given in Appendix I.
+Field length: 40 plots \* 3.75 feet = 150 feet
 
-      Field width: 4 plots \* 72.5 feet = 290 feet
+Conclusions: "Thus, highly narrow strips of plots (length much greater
+than breadth) lead to greater precision than plots of same area but much
+wider and not so narrow."
 
-      Field length: 40 plots \* 3.75 feet = 150 feet
+Correlation of plots from year to years was low.
 
-      Conclusions: "Thus, highly narrow strips of plots (length much
-      greater than breadth) lead to greater precision than plots of same
-      area but much wider and not so narrow."
+Source
+~~~~~~
 
-      Correlation of plots from year to years was low.
+Kulkarni, R. K., Bose, S. S., and Mahalanobis, P. C. (1936). The
+influence of shape and size of plots on the effective precision of field
+experiments with sorghum. Indian J. Agric. Sci., 6, 460-474. Appendix 1,
+page 172. https://archive.org/details/in.ernet.dli.2015.271737
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Kulkarni, R. K., Bose, S. S., and Mahalanobis, P. C. (1936). The
-      influence of shape and size of plots on the effective precision of
-      field experiments with sorghum. Indian J. Agric. Sci., 6, 460-474.
-      Appendix 1, page 172.
-      https://archive.org/details/in.ernet.dli.2015.271737
+None.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
 
-         ## Not run: 
+   data(kulkarni.sorghum.uniformity)
+   dat <- kulkarni.sorghum.uniformity
 
-         library(agridat)
+   # match means on page 462
+   # tapply(dat$yield, dat$year, mean)
+   #     1930     1931     1932 
+   # 116.2875  67.2250 126.3688 
 
-         data(kulkarni.sorghum.uniformity)
-         dat <- kulkarni.sorghum.uniformity
+   libs(reshape2)
+   libs(lattice)
+   dmat <- acast(dat, row+col ~ year, value.var="yield")
+   splom(dmat, main="kulkarni.sorghum.uniformity")
+   cor(dmat)
 
-         # match means on page 462
-         # tapply(dat$yield, dat$year, mean)
-         #     1930     1931     1932 
-         # 116.2875  67.2250 126.3688 
+   libs(desplot)
+   desplot(dat, yield ~ col*row|year,
+           flip=TRUE, aspect=150/290,
+           main="kulkarni.sorghum.uniformity")
+     
 
-         libs(reshape2)
-         libs(lattice)
-         dmat <- acast(dat, row+col ~ year, value.var="yield")
-         splom(dmat, main="kulkarni.sorghum.uniformity")
-         cor(dmat)
-
-         libs(desplot)
-         desplot(dat, yield ~ col*row|year,
-                 flip=TRUE, aspect=150/290,
-                 main="kulkarni.sorghum.uniformity")
-           
-
-         ## End(Not run)
+   ## End(Not run)

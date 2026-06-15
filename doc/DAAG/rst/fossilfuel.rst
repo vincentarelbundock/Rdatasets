@@ -1,57 +1,52 @@
-.. container::
+========== ===============
+fossilfuel R Documentation
+========== ===============
 
-   .. container::
+Fossil Fuel Data
+----------------
 
-      ========== ===============
-      fossilfuel R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Fossil Fuel Data
-         :name: fossil-fuel-data
+Estimates of total worldwide carbon emissions from fossil fuel use.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Estimates of total worldwide carbon emissions from fossil fuel
-      use.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   fossilfuel
 
-      .. code:: R
+Format
+~~~~~~
 
-         fossilfuel
+This data frame contains the following columns:
 
-      .. rubric:: Format
-         :name: format
+year
+   a numeric vector giving the year the measurement was taken.
 
-      This data frame contains the following columns:
+carbon
+   a numeric vector giving the total worldwide carbon emissions from
+   fossil fuel use, in millions of tonnes.
 
-      year
-         a numeric vector giving the year the measurement was taken.
+Details
+~~~~~~~
 
-      carbon
-         a numeric vector giving the total worldwide carbon emissions
-         from fossil fuel use, in millions of tonnes.
+Data for the years 1751 through to 2014 is available from Data for the
+years 2014 https://data.ess-dive.lbl.gov/portals/CDIAC
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      Data for the years 1751 through to 2014 is available from Data for
-      the years 2014 https://data.ess-dive.lbl.gov/portals/CDIAC
+Boden T A; Marland G; Andres R J (1999): Global, Regional, and National
+Fossil-Fuel CO2 Emissions (1751 - 2014) (V. 2017). Carbon Dioxide
+Information Analysis Center (CDIAC), Oak Ridge National Laboratory
+(ORNL), Oak Ridge, TN (United States), ESS-DIVE repository. Dataset.
+doi:10.3334/CDIAC/00001_V2017
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Boden T A; Marland G; Andres R J (1999): Global, Regional, and
-      National Fossil-Fuel CO2 Emissions (1751 - 2014) (V. 2017). Carbon
-      Dioxide Information Analysis Center (CDIAC), Oak Ridge National
-      Laboratory (ORNL), Oak Ridge, TN (United States), ESS-DIVE
-      repository. Dataset. doi:10.3334/CDIAC/00001_V2017
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         plot(fossilfuel)
+   plot(fossilfuel)

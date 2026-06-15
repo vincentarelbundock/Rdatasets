@@ -1,0 +1,99 @@
+<!DOCTYPE html><html><head><title>R: Country Code Lookup</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>country_code_lookup</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Country Code Lookup</h2>
+
+<h3>Description</h3>
+
+<p>These pre-defined country codes are sourced from
+<a href="https://www.iso.org/iso-3166-country-codes.html">ISO 3166 Standards</a>.
+See also <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3">Wikipedia</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>country_code_lookup
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>An object of class <code>tbl_df</code> (inherits from <code>tbl</code>, <code>data.frame</code>) with 249 rows and 3 columns.
+</p>
+
+
+<h3>Details</h3>
+
+<p><code>country_code</code> is the 3-letter ISO 3166-1 county code commonly found in the
+ADSL <code>COUNTRY</code> variable.
+<code>country_name</code> is the country long name corresponding to to the 3-letter code.
+<code>country_number</code> is the numeric code corresponding to an alphabetic sorting of
+the 3-letter codes.
+</p>
+<p>To see the entire table in the console, run <code>print(country_code_lookup)</code>.
+</p>
+
+
+<h3>See Also</h3>
+
+<p>dose_freq_lookup
+</p>
+<p>Other metadata:
+<code>atoxgr_criteria_ctcv4</code>,
+<code>atoxgr_criteria_ctcv4_uscv</code>,
+<code>atoxgr_criteria_ctcv5</code>,
+<code>atoxgr_criteria_ctcv5_uscv</code>,
+<code>atoxgr_criteria_ctcv6</code>,
+<code>atoxgr_criteria_ctcv6_uscv</code>,
+<code>atoxgr_criteria_daids</code>,
+<code>atoxgr_criteria_daids_uscv</code>,
+<code>dose_freq_lookup</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library(tibble)
+library(dplyr, warn.conflicts = FALSE)
+
+# Create reference dataset for periods
+adsl &lt;- tribble(
+  ~USUBJID, ~SEX, ~COUNTRY,
+  "ST01-01", "F", "AUT",
+  "ST01-02", "M", "MWI",
+  "ST01-03", "F", "GBR",
+  "ST01-04", "M", "CHE",
+  "ST01-05", "M", "NOR",
+  "ST01-06", "F", "JPN",
+  "ST01-07", "F", "USA"
+)
+
+adsl %&gt;%
+  derive_vars_merged(
+    dataset_add = country_code_lookup,
+    new_vars = exprs(COUNTRYN = country_number, COUNTRYL = country_name),
+    by_vars = exprs(COUNTRY = country_code)
+  )
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

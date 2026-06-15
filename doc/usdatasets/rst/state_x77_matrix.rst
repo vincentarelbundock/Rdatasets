@@ -1,64 +1,57 @@
-.. container::
+================ ===============
+state_x77_matrix R Documentation
+================ ===============
 
-   .. container::
+US State Facts and Figures - US State Demographics and Statistics (1977)
+------------------------------------------------------------------------
 
-      ================ ===============
-      state_x77_matrix R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: US State Facts and Figures - US State Demographics and
-         Statistics (1977)
-         :name: us-state-facts-and-figures---us-state-demographics-and-statistics-1977
+The dataset name has been changed to 'state_x77_matrix' to avoid
+confusion with other packages in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a matrix variable representing various demographic and
+statistical attributes of U.S. states in 1977.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'state_x77_matrix' to avoid
-      confusion with other packages in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a matrix variable
-      representing various demographic and statistical attributes of
-      U.S. states in 1977.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(state_x77_matrix)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(state_x77_matrix)
+A matrix with 50 rows and 8 columns representing various demographic and
+statistical characteristics of U.S. states. The columns include:
 
-      .. rubric:: Format
-         :name: format
+Population
+   Population of the state.
 
-      A matrix with 50 rows and 8 columns representing various
-      demographic and statistical characteristics of U.S. states. The
-      columns include:
+Income
+   Median income of the state's residents.
 
-      Population
-         Population of the state.
+Illiteracy
+   Illiteracy rate (percentage).
 
-      Income
-         Median income of the state's residents.
+Life Exp
+   Life expectancy (in years).
 
-      Illiteracy
-         Illiteracy rate (percentage).
+Murder
+   Murder rate (per 100,000 inhabitants).
 
-      Life Exp
-         Life expectancy (in years).
+HS Grad
+   High school graduation rate (percentage).
 
-      Murder
-         Murder rate (per 100,000 inhabitants).
+Frost
+   Number of days with frost.
 
-      HS Grad
-         High school graduation rate (percentage).
+Area
+   Total area of the state (in square miles).
 
-      Frost
-         Number of days with frost.
+Source
+~~~~~~
 
-      Area
-         Total area of the state (in square miles).
-
-      .. rubric:: Source
-         :name: source
-
-      U.S. Census Bureau (1977).
+U.S. Census Bureau (1977).

@@ -1,60 +1,56 @@
-.. container::
+==================== ===============
+SmokingLungCancer_df R Documentation
+==================== ===============
 
-   .. container::
+Years of Smoking and Lung Cancer Deaths in Men
+----------------------------------------------
 
-      ==================== ===============
-      SmokingLungCancer_df R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Years of Smoking and Lung Cancer Deaths in Men
-         :name: years-of-smoking-and-lung-cancer-deaths-in-men
+This dataset, SmokingLungCancer_df, is a data frame containing data on
+man-years of risk and observed number of lung cancer deaths among men.
+The data includes information about the years of smoking, pack-years,
+number of cigarettes smoked per day, and the number of deaths due to
+lung cancer.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, SmokingLungCancer_df, is a data frame containing
-      data on man-years of risk and observed number of lung cancer
-      deaths among men. The data includes information about the years of
-      smoking, pack-years, number of cigarettes smoked per day, and the
-      number of deaths due to lung cancer.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(SmokingLungCancer_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(SmokingLungCancer_df)
+A data frame with 63 observations and 4 variables:
 
-      .. rubric:: Format
-         :name: format
+yrs_smk
+   Years of smoking, represented as a factor with 9 levels.
 
-      A data frame with 63 observations and 4 variables:
+pys
+   Pack-years of smoking (numeric).
 
-      yrs_smk
-         Years of smoking, represented as a factor with 9 levels.
+num_cigs
+   Number of cigarettes smoked per day, represented as a factor with 7
+   levels.
 
-      pys
-         Pack-years of smoking (numeric).
+deaths
+   Number of deaths due to lung cancer (numeric).
 
-      num_cigs
-         Number of cigarettes smoked per day, represented as a factor
-         with 7 levels.
+Details
+~~~~~~~
 
-      deaths
-         Number of deaths due to lung cancer (numeric).
+The dataset name has been kept as 'SmokingLungCancer_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the OncoDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'\_df' indicates that the dataset is a data frame. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'SmokingLungCancer_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The suffix '\_df' indicates that the dataset is a
-      data frame. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the R4HCR package. Data originally from Table
-      24-4, page 702 of Kleinbaum et al (1988).
+Data taken from the R4HCR package. Data originally from Table 24-4, page
+702 of Kleinbaum et al (1988).

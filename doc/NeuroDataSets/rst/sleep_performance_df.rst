@@ -1,52 +1,47 @@
-.. container::
+==================== ===============
+sleep_performance_df R Documentation
+==================== ===============
 
-   .. container::
+Sleep and Learning Performance
+------------------------------
 
-      ==================== ===============
-      sleep_performance_df R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Sleep and Learning Performance
-         :name: sleep-and-learning-performance
+This dataset, sleep_performance_df, is a data frame containing
+measurements of the increase in slow-wave sleep and corresponding
+improvements in spatial learning tasks from 10 human subjects.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, sleep_performance_df, is a data frame containing
-      measurements of the increase in slow-wave sleep and corresponding
-      improvements in spatial learning tasks from 10 human subjects.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(sleep_performance_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(sleep_performance_df)
+A data frame with 10 observations and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+sleep
+   Integer vector representing increase in slow-wave sleep (units)
 
-      A data frame with 10 observations and 2 variables:
+improvement
+   Integer vector representing improvement in spatial learning tasks
+   (units)
 
-      sleep
-         Integer vector representing increase in slow-wave sleep (units)
+Details
+~~~~~~~
 
-      improvement
-         Integer vector representing improvement in spatial learning
-         tasks (units)
+The dataset name has been kept as 'sleep_performance_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the NeuroDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'df' indicates that the dataset is a data frame. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'sleep_performance_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      NeuroDataSets package and assists users in identifying its
-      specific characteristics. The suffix 'df' indicates that the
-      dataset is a data frame. The original content has not been
-      modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the abd package version 0.2-8
+Data taken from the abd package version 0.2-8

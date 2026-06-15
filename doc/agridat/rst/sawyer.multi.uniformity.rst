@@ -1,166 +1,158 @@
-.. container::
+======================= ===============
+sawyer.multi.uniformity R Documentation
+======================= ===============
 
-   .. container::
+Uniformity trials of wheat, swedes, oats, 3 years on the same land
+------------------------------------------------------------------
 
-      ======================= ===============
-      sawyer.multi.uniformity R Documentation
-      ======================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trials of wheat, swedes, oats, 3 years on
-         the same land
-         :name: uniformity-trials-of-wheat-swedes-oats-3-years-on-the-same-land
+Uniformity trials of wheat, swedes, oats at Rothamsted, England,
+1925-1927.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trials of wheat, swedes, oats at Rothamsted, England,
-      1925-1927.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("sawyer.multi.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("sawyer.multi.uniformity")
+A data frame with 48 observations on the following 7 variables.
 
-      .. rubric:: Format
-         :name: format
+``year``
+   year
 
-      A data frame with 48 observations on the following 7 variables.
+``crop``
+   crop
 
-      ``year``
-         year
+``row``
+   row
 
-      ``crop``
-         crop
+``col``
+   column
 
-      ``row``
-         row
+``grain``
+   wheat/oats grain weight, pounds
 
-      ``col``
-         column
+``straw``
+   wheat/oats straw weight, pounds
 
-      ``grain``
-         wheat/oats grain weight, pounds
+``leafwt``
+   swedes leaf weight, pounds
 
-      ``straw``
-         wheat/oats straw weight, pounds
+``rootwt``
+   swedes root weight, pounds
 
-      ``leafwt``
-         swedes leaf weight, pounds
+``rootct``
+   swedes root count
 
-      ``rootwt``
-         swedes root weight, pounds
+Details
+~~~~~~~
 
-      ``rootct``
-         swedes root count
+An experiment conducted at Rothamsted, England, in 1925-1927, in Sawyers
+Field.
 
-      .. rubric:: Details
-         :name: details
+Row 6, column 1 was not planted in any year.
 
-      An experiment conducted at Rothamsted, England, in 1925-1927, in
-      Sawyers Field.
+1925: Wheat was harvested
 
-      Row 6, column 1 was not planted in any year.
+Row 1, column 1 had partially missing data for the wheat values in 1925
+and was not used in the Rothamsted summary statistics on page 155.
 
-      1925: Wheat was harvested
+1926: Swedes were harvested
 
-      Row 1, column 1 had partially missing data for the wheat values in
-      1925 and was not used in the Rothamsted summary statistics on page
-      155.
+1927: Oats were harvested
 
-      1926: Swedes were harvested
+Note the summaries statistics at the bottom of the page in each report
+are calibrated to ACRES.
 
-      1927: Oats were harvested
+Field width: 8 plots \* 22 feet = 528 feet
 
-      Note the summaries statistics at the bottom of the page in each
-      report are calibrated to ACRES.
+Field length: 6 plots \* 22 feet = 396 feet
 
-      Field width: 8 plots \* 22 feet = 528 feet
+The field is 8 plots wide, 6 plots long. The plots are drawn in the
+source documents as squares .098 acres each (1 chain = 66 feet on each
+side).
 
-      Field length: 6 plots \* 22 feet = 396 feet
+Eden & Maskell (page 165) say the field was clover, and ploughed in the
+autumn of 1924. The field was laid out uniformly in lands of one chain
+width and each plot width made to coincide with the land width from
+ridge to ridge. The length of each plot was also one chain and from the
+point of view of yield data the trial comprised 47 plots in 8x6 except
+that the run of the hedge only allowed a rank of five plots at one of
+the ends.
 
-      The field is 8 plots wide, 6 plots long. The plots are drawn in
-      the source documents as squares .098 acres each (1 chain = 66 feet
-      on each side).
+Source
+~~~~~~
 
-      Eden & Maskell (page 165) say the field was clover, and ploughed
-      in the autumn of 1924. The field was laid out uniformly in lands
-      of one chain width and each plot width made to coincide with the
-      land width from ridge to ridge. The length of each plot was also
-      one chain and from the point of view of yield data the trial
-      comprised 47 plots in 8x6 except that the run of the hedge only
-      allowed a rank of five plots at one of the ends.
+Rothamsted Experimental Station, Report 1925-26. Lawes Agricultural
+Trust, p. 154-155. https://www.era.rothamsted.ac.uk/eradoc/book/84
 
-      .. rubric:: Source
-         :name: source
+Rothamsted Experimental Station, Report 1927-1928. Lawes Agricultural
+Trust, p. 153.
+https://www.era.rothamsted.ac.uk/eradoc/article/ResReport1927-28-131-175
 
-      Rothamsted Experimental Station, Report 1925-26. Lawes
-      Agricultural Trust, p. 154-155.
-      https://www.era.rothamsted.ac.uk/eradoc/book/84
+References
+~~~~~~~~~~
 
-      Rothamsted Experimental Station, Report 1927-1928. Lawes
-      Agricultural Trust, p. 153.
-      https://www.era.rothamsted.ac.uk/eradoc/article/ResReport1927-28-131-175
+Eden, T. and E. J. Maskell. (1928). The influence of soil heterogeneity
+on the growth and yield of successive crops. Jour of Agricultural
+Science, 18, 163-185.
+https://archive.org/stream/in.ernet.dli.2015.25895/2015.25895.Journal-Of-Agricultural-Science-Vol-xviii-1928#page/n175
 
-      .. rubric:: References
-         :name: references
+McCullagh, P. and Clifford, D., (2006). Evidence for conformal
+invariance of crop yields, Proceedings of the Royal Society A:
+Mathematical, Physical and Engineering Science, 462, 2119–2143.
+https://doi.org/10.1098/rspa.2006.1667
 
-      Eden, T. and E. J. Maskell. (1928). The influence of soil
-      heterogeneity on the growth and yield of successive crops. Jour of
-      Agricultural Science, 18, 163-185.
-      https://archive.org/stream/in.ernet.dli.2015.25895/2015.25895.Journal-Of-Agricultural-Science-Vol-xviii-1928#page/n175
+Winifred A. Mackenzie. (1926) Note on a remarkable correlation between
+grain and straw, obtained at Rothamsted. Journal of Agricultural
+Science, 16, 275-279. https://doi.org/10.1017/S0021859600018256
 
-      McCullagh, P. and Clifford, D., (2006). Evidence for conformal
-      invariance of crop yields, Proceedings of the Royal Society A:
-      Mathematical, Physical and Engineering Science, 462, 2119–2143.
-      https://doi.org/10.1098/rspa.2006.1667
+Examples
+~~~~~~~~
 
-      Winifred A. Mackenzie. (1926) Note on a remarkable correlation
-      between grain and straw, obtained at Rothamsted. Journal of
-      Agricultural Science, 16, 275-279.
-      https://doi.org/10.1017/S0021859600018256
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
+     
+     library(agridat)
+     data("sawyer.multi.uniformity")
+     dat <- sawyer.multi.uniformity
+     
+     libs(desplot)
+     # The field plan shows square plots
+     desplot(dat, grain~col*row,
+             subset= year==1925,
+             main="sawyer.multi.uniformity - 1925 wheat grain yield",
+             aspect=(6)/(8)) # true aspect
+     
+     desplot(dat, rootwt~col*row,
+             subset= year==1926,
+             main="sawyer.multi.uniformity - 1926 root weight of swedes",
+             aspect=(6)/(8))
 
-      .. code:: R
-
-         ## Not run: 
-           
-           library(agridat)
-           data("sawyer.multi.uniformity")
-           dat <- sawyer.multi.uniformity
-           
-           libs(desplot)
-           # The field plan shows square plots
-           desplot(dat, grain~col*row,
-                   subset= year==1925,
-                   main="sawyer.multi.uniformity - 1925 wheat grain yield",
-                   aspect=(6)/(8)) # true aspect
-           
-           desplot(dat, rootwt~col*row,
-                   subset= year==1926,
-                   main="sawyer.multi.uniformity - 1926 root weight of swedes",
-                   aspect=(6)/(8))
-
-           desplot(dat, grain~col*row, subset= year==1927,
-                   main="sawyer.multi.uniformity - 1927 oats grain yield",
-                   aspect=(6)/(8))
+     desplot(dat, grain~col*row, subset= year==1927,
+             main="sawyer.multi.uniformity - 1927 oats grain yield",
+             aspect=(6)/(8))
 
 
-           # This plot shows the "outlier" in the wheat data reported by Mackenzie.
-           libs(lattice)
-           xyplot(grain ~ straw, data=subset(dat, year==1925))
-           
-           round(cor(dat[,7:9], use="pair"),2) # Matches McCullagh p 2121
-           ##        leafwt rootwt rootct
-           ## leafwt   1.00   0.66   0.47
-           ## rootwt   0.66   1.00   0.43
-           ## rootct   0.47   0.43   1.00
-           
-           ## pairs(dat[,7:9],
-           ##       main="sawyer.multi.uniformity")
+     # This plot shows the "outlier" in the wheat data reported by Mackenzie.
+     libs(lattice)
+     xyplot(grain ~ straw, data=subset(dat, year==1925))
+     
+     round(cor(dat[,7:9], use="pair"),2) # Matches McCullagh p 2121
+     ##        leafwt rootwt rootct
+     ## leafwt   1.00   0.66   0.47
+     ## rootwt   0.66   1.00   0.43
+     ## rootct   0.47   0.43   1.00
+     
+     ## pairs(dat[,7:9],
+     ##       main="sawyer.multi.uniformity")
 
 
-         ## End(Not run)
+   ## End(Not run)

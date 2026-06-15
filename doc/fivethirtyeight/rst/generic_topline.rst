@@ -1,67 +1,63 @@
-.. container::
+=============== ===============
+generic_topline R Documentation
+=============== ===============
 
-   .. container::
+Congress Generic Ballot Polls
+-----------------------------
 
-      =============== ===============
-      generic_topline R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Congress Generic Ballot Polls
-         :name: congress-generic-ballot-polls
+The raw data behind the story "Are Democrats Winning The Race For
+Congress?"
+https://projects.fivethirtyeight.com/congress-generic-ballot-polls/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Are Democrats Winning The Race For
-      Congress?"
-      https://projects.fivethirtyeight.com/congress-generic-ballot-polls/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   generic_topline
 
-      .. code:: R
+Format
+~~~~~~
 
-         generic_topline
+A data frame with 751 rows representing polls and 9 variables:
 
-      .. rubric:: Format
-         :name: format
+subgroup
+   No description provided.
 
-      A data frame with 751 rows representing polls and 9 variables:
+modeldate
+   No description provided.
 
-      subgroup
-         No description provided.
+dem_estimate
+   No description provided.
 
-      modeldate
-         No description provided.
+dem_hi
+   No description provided.
 
-      dem_estimate
-         No description provided.
+dem_lo
+   No description provided.
 
-      dem_hi
-         No description provided.
+rep_estimate
+   No description provided.
 
-      dem_lo
-         No description provided.
+rep_hi
+   No description provided.
 
-      rep_estimate
-         No description provided.
+rep_lo
+   No description provided.
 
-      rep_hi
-         No description provided.
+timestamp
+   No description provided.
 
-      rep_lo
-         No description provided.
+Source
+~~~~~~
 
-      timestamp
-         No description provided.
+See
+https://github.com/fivethirtyeight/data/blob/master/congress-generic-ballot/README.md
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      See
-      https://github.com/fivethirtyeight/data/blob/master/congress-generic-ballot/README.md
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``generic_polllist``
+``generic_polllist``

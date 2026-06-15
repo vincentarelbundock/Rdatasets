@@ -1,43 +1,38 @@
-.. container::
+===================== ===============
+hist_ncaa_bball_casts R Documentation
+===================== ===============
 
-   .. container::
+The NCAA Bracket: Checking Our Work
+-----------------------------------
 
-      ===================== ===============
-      hist_ncaa_bball_casts R Documentation
-      ===================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The NCAA Bracket: Checking Our Work
-         :name: the-ncaa-bracket-checking-our-work
+The raw data behind the story "The NCAA Bracket: Checking Our Work"
+https://fivethirtyeight.com/features/the-ncaa-bracket-checking-our-work/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "The NCAA Bracket: Checking Our
-      Work"
-      https://fivethirtyeight.com/features/the-ncaa-bracket-checking-our-work/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   hist_ncaa_bball_casts
 
-      .. code:: R
+Format
+~~~~~~
 
-         hist_ncaa_bball_casts
+A data frame with 253 rows representing NCAA men's basketball tournament
+games and 6 variables:
 
-      .. rubric:: Format
-         :name: format
+year
+round
+favorite
+underdog
+favorite_prob
+favorite_win
 
-      A data frame with 253 rows representing NCAA men's basketball
-      tournament games and 6 variables:
+Source
+~~~~~~
 
-      year
-      round
-      favorite
-      underdog
-      favorite_prob
-      favorite_win
-
-      .. rubric:: Source
-         :name: source
-
-      See
-      https://fivethirtyeight.com/features/the-ncaa-bracket-checking-our-work/
+See
+https://fivethirtyeight.com/features/the-ncaa-bracket-checking-our-work/

@@ -1,100 +1,96 @@
-.. container::
+=============== ===============
+federer.tobacco R Documentation
+=============== ===============
 
-   .. container::
+RCB of tobacco, height plants exposed to radiation
+--------------------------------------------------
 
-      =============== ===============
-      federer.tobacco R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: RCB of tobacco, height plants exposed to radiation
-         :name: rcb-of-tobacco-height-plants-exposed-to-radiation
+RCB of tobacco, height plants exposed to radiation
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      RCB of tobacco, height plants exposed to radiation
+A data frame with 56 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row
 
-      A data frame with 56 observations on the following 4 variables.
+``block``
+   block, numeric
 
-      ``row``
-         row
+``dose``
+   radiation dose, roentgens
 
-      ``block``
-         block, numeric
+``height``
+   height of 20 plants, cm
 
-      ``dose``
-         radiation dose, roentgens
+Details
+~~~~~~~
 
-      ``height``
-         height of 20 plants, cm
+An experiment conducted in 1951 and described in Federer (1954). The
+treatment involved exposing tobacco seeds to seven different doses of
+radiation. The seedlings were transplanted to the field in an RCB
+experiment with 7 treatments in 8 blocks. The physical layout of the
+experiment was in 8 rows and 7 columns.
 
-      .. rubric:: Details
-         :name: details
+Shortly after the plants were transplanted to the field it became
+apparent that an environmental gradient existed. The response variable
+was the total height (centimeters) of 20 plants.
 
-      An experiment conducted in 1951 and described in Federer (1954).
-      The treatment involved exposing tobacco seeds to seven different
-      doses of radiation. The seedlings were transplanted to the field
-      in an RCB experiment with 7 treatments in 8 blocks. The physical
-      layout of the experiment was in 8 rows and 7 columns.
+Source
+~~~~~~
 
-      Shortly after the plants were transplanted to the field it became
-      apparent that an environmental gradient existed. The response
-      variable was the total height (centimeters) of 20 plants.
+Walter T Federer and C S Schlottfeldt, 1954. The use of covariance to
+control gradients in experiments. *Biometrics*, 10, 282–290.
+https://doi.org/10.2307/3001881
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Walter T Federer and C S Schlottfeldt, 1954. The use of covariance
-      to control gradients in experiments. *Biometrics*, 10, 282–290.
-      https://doi.org/10.2307/3001881
+R. D. Cook and S. Weisberg (1999). *Applied Regression Including
+Computing and Graphics*.
 
-      .. rubric:: References
-         :name: references
+Walter T Federer and Russell D Wolfinger, 2003. PROC GLM and PROC MIXED
+Codes for Trend Analyses for Row-Column Designed Experiments, *Handbook
+of Formulas and Software for Plant Geneticists and Breeders*, Haworth
+Press.
 
-      R. D. Cook and S. Weisberg (1999). *Applied Regression Including
-      Computing and Graphics*.
+Paul N Hinz, (1987). Nearest-Neighbor Analysis in Practice, *Iowa State
+Journal of Research*, 62, 199–217.
+https://lib.dr.iastate.edu/iowastatejournalofresearch/vol62/iss2/1
 
-      Walter T Federer and Russell D Wolfinger, 2003. PROC GLM and PROC
-      MIXED Codes for Trend Analyses for Row-Column Designed
-      Experiments, *Handbook of Formulas and Software for Plant
-      Geneticists and Breeders*, Haworth Press.
+Examples
+~~~~~~~~
 
-      Paul N Hinz, (1987). Nearest-Neighbor Analysis in Practice, *Iowa
-      State Journal of Research*, 62, 199–217.
-      https://lib.dr.iastate.edu/iowastatejournalofresearch/vol62/iss2/1
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
 
-         ## Not run: 
+   data(federer.tobacco)
+   dat <- federer.tobacco
 
-         library(agridat)
+   # RCB analysis.  Treatment factor not signficant.
+   dat <- transform(dat, dosef=factor(dose), rowf=factor(row),
+                    blockf=factor(block))
+   m1 <- lm(height ~ blockf + dosef, data=dat)
+   anova(m1)
 
-         data(federer.tobacco)
-         dat <- federer.tobacco
-
-         # RCB analysis.  Treatment factor not signficant.
-         dat <- transform(dat, dosef=factor(dose), rowf=factor(row),
-                          blockf=factor(block))
-         m1 <- lm(height ~ blockf + dosef, data=dat)
-         anova(m1)
-
-         # RCB residuals show strong spatial trends
-         libs(desplot)
-         dat$resid <- resid(m1)
-         desplot(dat, resid ~ row * block,
-                 # aspect unknown
-                 main="federer.tobacco")
+   # RCB residuals show strong spatial trends
+   libs(desplot)
+   dat$resid <- resid(m1)
+   desplot(dat, resid ~ row * block,
+           # aspect unknown
+           main="federer.tobacco")
 
 
-         # Row-column analysis.  Treatment now significant
-         m2 <- lm(height ~ rowf + blockf + dosef, data=dat)
-         anova(m2)
+   # Row-column analysis.  Treatment now significant
+   m2 <- lm(height ~ rowf + blockf + dosef, data=dat)
+   anova(m2)
 
 
-         ## End(Not run)
+   ## End(Not run)

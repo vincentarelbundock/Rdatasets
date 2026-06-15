@@ -1,107 +1,103 @@
-.. container::
+================ ===============
+govrace10_tbl_df R Documentation
+================ ===============
 
-   .. container::
+Election results for 2010 Governor races in the U.S.
+----------------------------------------------------
 
-      ================ ===============
-      govrace10_tbl_df R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Election results for 2010 Governor races in the U.S.
-         :name: election-results-for-2010-governor-races-in-the-u.s.
+The dataset name has been changed to 'govrace10_tbl_df' to avoid
+confusion with other packages in the R ecosystem from which datasets
+have been sourced. This naming convention helps distinguish this dataset
+as part of the 'usdatasets' package and assists users in identifying its
+specific characteristics. The suffix 'tbl_df' identifies the dataset as
+a tibble. The original content of the dataset has not been modified in
+any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'govrace10_tbl_df' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. This naming convention helps
-      distinguish this dataset as part of the 'usdatasets' package and
-      assists users in identifying its specific characteristics. The
-      suffix 'tbl_df' identifies the dataset as a tibble. The original
-      content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(govrace10_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(govrace10_tbl_df)
+A tibble with 37 observations and 23 variables:
 
-      .. rubric:: Format
-         :name: format
+id
+   Identification number (numeric).
 
-      A tibble with 37 observations and 23 variables:
+state
+   State name (character).
 
-      id
-         Identification number (numeric).
+abbr
+   State abbreviation (character).
 
-      state
-         State name (character).
+name1
+   Name of the first candidate (character).
 
-      abbr
-         State abbreviation (character).
+perc1
+   Percentage of votes for the first candidate (numeric).
 
-      name1
-         Name of the first candidate (character).
+party1
+   Political party of the first candidate (character).
 
-      perc1
-         Percentage of votes for the first candidate (numeric).
+votes1
+   Number of votes for the first candidate (numeric).
 
-      party1
-         Political party of the first candidate (character).
+name2
+   Name of the second candidate (character).
 
-      votes1
-         Number of votes for the first candidate (numeric).
+perc2
+   Percentage of votes for the second candidate (numeric).
 
-      name2
-         Name of the second candidate (character).
+party2
+   Political party of the second candidate (character).
 
-      perc2
-         Percentage of votes for the second candidate (numeric).
+votes2
+   Number of votes for the second candidate (numeric).
 
-      party2
-         Political party of the second candidate (character).
+name3
+   Name of the third candidate (character).
 
-      votes2
-         Number of votes for the second candidate (numeric).
+perc3
+   Percentage of votes for the third candidate (numeric).
 
-      name3
-         Name of the third candidate (character).
+party3
+   Political party of the third candidate (character).
 
-      perc3
-         Percentage of votes for the third candidate (numeric).
+votes3
+   Number of votes for the third candidate (numeric).
 
-      party3
-         Political party of the third candidate (character).
+name4
+   Name of the fourth candidate (character).
 
-      votes3
-         Number of votes for the third candidate (numeric).
+perc4
+   Percentage of votes for the fourth candidate (numeric).
 
-      name4
-         Name of the fourth candidate (character).
+party4
+   Political party of the fourth candidate (character).
 
-      perc4
-         Percentage of votes for the fourth candidate (numeric).
+votes4
+   Number of votes for the fourth candidate (numeric).
 
-      party4
-         Political party of the fourth candidate (character).
+name5
+   Name of the fifth candidate (character).
 
-      votes4
-         Number of votes for the fourth candidate (numeric).
+perc5
+   Percentage of votes for the fifth candidate (numeric).
 
-      name5
-         Name of the fifth candidate (character).
+party5
+   Political party of the fifth candidate (character).
 
-      perc5
-         Percentage of votes for the fifth candidate (numeric).
+votes5
+   Number of votes for the fifth candidate (numeric).
 
-      party5
-         Political party of the fifth candidate (character).
+Source
+~~~~~~
 
-      votes5
-         Number of votes for the fifth candidate (numeric).
-
-      .. rubric:: Source
-         :name: source
-
-      2010 Gubernatorial Races
+2010 Gubernatorial Races

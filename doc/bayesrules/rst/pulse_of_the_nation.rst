@@ -1,88 +1,84 @@
-.. container::
+=================== ===============
+pulse_of_the_nation R Documentation
+=================== ===============
 
-   .. container::
+Cards Against Humanity's Pulse of the Nation Survey
+---------------------------------------------------
 
-      =================== ===============
-      pulse_of_the_nation R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Cards Against Humanity's Pulse of the Nation Survey
-         :name: cards-against-humanitys-pulse-of-the-nation-survey
+Cards Against Humanity's "Pulse of the Nation" project
+(https://thepulseofthenation.com/) conducted monthly polls into people's
+social and political views, as well as some silly things. This data
+includes responses to a subset of questions included in the poll
+conducted in September 2017.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Cards Against Humanity's "Pulse of the Nation" project
-      (https://thepulseofthenation.com/) conducted monthly polls into
-      people's social and political views, as well as some silly things.
-      This data includes responses to a subset of questions included in
-      the poll conducted in September 2017.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   pulse_of_the_nation
 
-      .. code:: R
+Format
+~~~~~~
 
-         pulse_of_the_nation
+A data frame with observations on 1000 survey respondents with 15
+variables:
 
-      .. rubric:: Format
-         :name: format
+income
+   income in ``$``\ 1000s
 
-      A data frame with observations on 1000 survey respondents with 15
-      variables:
+age
+   age in years
 
-      income
-         income in \\$1000s
+party
+   political party affiliation
 
-      age
-         age in years
+trump_approval
+   approval level of Donald Trump's job performance
 
-      party
-         political party affiliation
+education
+   maximum education level completed
 
-      trump_approval
-         approval level of Donald Trump's job performance
+robots
+   opinion of how likely their job is to be replaced by robots within 10
+   years
 
-      education
-         maximum education level completed
+climate_change
+   belief in climate change
 
-      robots
-         opinion of how likely their job is to be replaced by robots
-         within 10 years
+transformers
+   the number of Transformers film the respondent has seen
 
-      climate_change
-         belief in climate change
+science_is_honest
+   opinion of whether scientists are generally honest and serve the
+   public good
 
-      transformers
-         the number of Transformers film the respondent has seen
+vaccines_are_safe
+   opinion of whether vaccines are safe and protect children from
+   disease
 
-      science_is_honest
-         opinion of whether scientists are generally honest and serve
-         the public good
+books
+   number of books read in the past year
 
-      vaccines_are_safe
-         opinion of whether vaccines are safe and protect children from
-         disease
+ghosts
+   whether or not they believe in ghosts
 
-      books
-         number of books read in the past year
+fed_sci_budget
+   respondent's estimate of the percentage of the federal budget that is
+   spent on scientific research
 
-      ghosts
-         whether or not they believe in ghosts
+earth_sun
+   belief about whether the earth is always farther away from the sun in
+   winter than in summer (TRUE or FALSE)
 
-      fed_sci_budget
-         respondent's estimate of the percentage of the federal budget
-         that is spent on scientific research
+wise_unwise
+   whether the respondent would rather be wise but unhappy, or unwise
+   but happy
 
-      earth_sun
-         belief about whether the earth is always farther away from the
-         sun in winter than in summer (TRUE or FALSE)
+Source
+~~~~~~
 
-      wise_unwise
-         whether the respondent would rather be wise but unhappy, or
-         unwise but happy
-
-      .. rubric:: Source
-         :name: source
-
-      https://thepulseofthenation.com/downloads/201709-CAH_PulseOfTheNation_Raw.csv
+https://thepulseofthenation.com/downloads/201709-CAH_PulseOfTheNation_Raw.csv

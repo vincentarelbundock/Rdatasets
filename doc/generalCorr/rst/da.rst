@@ -1,22 +1,18 @@
-.. container::
+== ===============
+da R Documentation
+== ===============
 
-   .. container::
+internal da
+-----------
 
-      == ===============
-      da R Documentation
-      == ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: internal da
-         :name: internal-da
+intended for internal use only
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      intended for internal use only
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
-
-      .. code:: R
-
-         da
+   da

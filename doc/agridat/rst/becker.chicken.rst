@@ -1,98 +1,94 @@
-.. container::
+============== ===============
+becker.chicken R Documentation
+============== ===============
 
-   .. container::
+Mating crosses of chickens
+--------------------------
 
-      ============== ===============
-      becker.chicken R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Mating crosses of chickens
-         :name: mating-crosses-of-chickens
+Mating crosses of chickens
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Mating crosses of chickens
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("becker.chicken")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("becker.chicken")
+A data frame with 45 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``male``
+   male parent
 
-      A data frame with 45 observations on the following 3 variables.
+``female``
+   female parent
 
-      ``male``
-         male parent
+``weight``
+   weight (g) at 8 weeks
 
-      ``female``
-         female parent
+Details
+~~~~~~~
 
-      ``weight``
-         weight (g) at 8 weeks
+From a large flock White Rock chickens, five male sires were chosen and
+mated to each of three female dams, producing 3 female progeny. The data
+are body weights at eight weeks of age.
 
-      .. rubric:: Details
-         :name: details
+Becker (1984) used these data to demonstrate the calculation of
+heritability.
 
-      From a large flock White Rock chickens, five male sires were
-      chosen and mated to each of three female dams, producing 3 female
-      progeny. The data are body weights at eight weeks of age.
+Source
+~~~~~~
 
-      Becker (1984) used these data to demonstrate the calculation of
-      heritability.
+Walter A. Becker (1984). *Manual of Quantitative Genetics*, 4th ed. Page
+83.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Walter A. Becker (1984). *Manual of Quantitative Genetics*, 4th
-      ed. Page 83.
+None
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+     library(agridat)
+     data(becker.chicken)
+     dat <- becker.chicken
+     
+     libs(lattice)
+     dotplot(weight ~ female, data=dat, group=male,
+             main="becker.chicken - progeny weight by M*F",
+             xlab="female parent",ylab="progeny weight",
+             auto.key=list(columns=5))
 
-         ## Not run: 
+     # Sums match Becker
+     # sum(dat$weight)
+     # aggregate(weight ~  male + female, dat, FUN=sum)
 
-           library(agridat)
-           data(becker.chicken)
-           dat <- becker.chicken
-           
-           libs(lattice)
-           dotplot(weight ~ female, data=dat, group=male,
-                   main="becker.chicken - progeny weight by M*F",
-                   xlab="female parent",ylab="progeny weight",
-                   auto.key=list(columns=5))
+     # Variance components
+     libs(lme4,lucid)
+     m1 <- lmer(weight ~  (1|male) + (1|female), data=dat)
+     # vc(m1)
+     ## grp        var1 var2      vcov    sdcor
+     ## 1   female (Intercept) <NA> 1096   33.1
+     ## 2     male (Intercept) <NA>  776.8 27.87
+     ## 3 Residual        <NA> <NA> 5524   74.32
 
-           # Sums match Becker
-           # sum(dat$weight)
-           # aggregate(weight ~  male + female, dat, FUN=sum)
-
-           # Variance components
-           libs(lme4,lucid)
-           m1 <- lmer(weight ~  (1|male) + (1|female), data=dat)
-           # vc(m1)
-           ## grp        var1 var2      vcov    sdcor
-           ## 1   female (Intercept) <NA> 1096   33.1
-           ## 2     male (Intercept) <NA>  776.8 27.87
-           ## 3 Residual        <NA> <NA> 5524   74.32
-
-           # Calculate heritabilities
-           # s2m <- 776  # variability for males
-           # s2f <- 1095 # variability for females
-           # s2w <- 5524 # variability within crosses
-           # vp <- s2m + s2f + s2w # 7395
-           # 4*s2m/vp # .42 male heritability
-           #4*s2f/vp # .59 female heritability
+     # Calculate heritabilities
+     # s2m <- 776  # variability for males
+     # s2f <- 1095 # variability for females
+     # s2w <- 5524 # variability within crosses
+     # vp <- s2m + s2f + s2w # 7395
+     # 4*s2m/vp # .42 male heritability
+     #4*s2f/vp # .59 female heritability
 
 
-         ## End(Not run)
+   ## End(Not run)

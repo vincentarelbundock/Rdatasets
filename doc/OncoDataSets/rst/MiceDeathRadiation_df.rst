@@ -1,61 +1,57 @@
-.. container::
+===================== ===============
+MiceDeathRadiation_df R Documentation
+===================== ===============
 
-   .. container::
+Mice Deaths from Radiation
+--------------------------
 
-      ===================== ===============
-      MiceDeathRadiation_df R Documentation
-      ===================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Mice Deaths from Radiation
-         :name: mice-deaths-from-radiation
+This dataset, MiceDeathRadiation_df, is a data frame containing data on
+deaths of RFM male mice exposed to 300 rads of x-radiation at 5–6 weeks
+of age. The dataset records the causes of death, which include thymic
+lymphoma, reticulum cell sarcoma, and other causes. Additionally, it
+distinguishes between mice kept in a conventional environment and those
+in a germ-free environment.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, MiceDeathRadiation_df, is a data frame containing
-      data on deaths of RFM male mice exposed to 300 rads of x-radiation
-      at 5–6 weeks of age. The dataset records the causes of death,
-      which include thymic lymphoma, reticulum cell sarcoma, and other
-      causes. Additionally, it distinguishes between mice kept in a
-      conventional environment and those in a germ-free environment.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(MiceDeathRadiation_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(MiceDeathRadiation_df)
+A data frame with 177 observations and 4 variables:
 
-      .. rubric:: Format
-         :name: format
+type
+   Type of environment (factor with 2 levels: conventional or
+   germ-free).
 
-      A data frame with 177 observations and 4 variables:
+cause
+   Cause of death (factor with 3 levels: thymic lymphoma, reticulum cell
+   sarcoma, or other).
 
-      type
-         Type of environment (factor with 2 levels: conventional or
-         germ-free).
+status
+   Survival status (numeric).
 
-      cause
-         Cause of death (factor with 3 levels: thymic lymphoma,
-         reticulum cell sarcoma, or other).
+y
+   Time to death in days (numeric).
 
-      status
-         Survival status (numeric).
+Details
+~~~~~~~
 
-      y
-         Time to death in days (numeric).
+The dataset name has been kept as 'MiceDeathRadiation_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the OncoDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'\_df' indicates that the dataset is a data frame. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'MiceDeathRadiation_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The suffix '\_df' indicates that the dataset is a
-      data frame. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the SMPracticals package.
+Data taken from the SMPracticals package.

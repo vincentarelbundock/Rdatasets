@@ -1,111 +1,105 @@
-.. container::
+=============== ===============
+wheatley.carrot R Documentation
+=============== ===============
 
-   .. container::
+Insecticide treatments for carrot fly larvae
+--------------------------------------------
 
-      =============== ===============
-      wheatley.carrot R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Insecticide treatments for carrot fly larvae
-         :name: insecticide-treatments-for-carrot-fly-larvae
+Insecticide treatments for carrot fly larvae. Two insecticides with five
+depths.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Insecticide treatments for carrot fly larvae. Two insecticides
-      with five depths.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("wheatley.carrot")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("wheatley.carrot")
+A data frame with 36 observations on the following 6 variables.
 
-      .. rubric:: Format
-         :name: format
+``treatment``
+   treatment factor, 11 levels
 
-      A data frame with 36 observations on the following 6 variables.
+``insecticide``
+   insecticide factor
 
-      ``treatment``
-         treatment factor, 11 levels
+``depth``
+   depth
 
-      ``insecticide``
-         insecticide factor
+``rep``
+   block
 
-      ``depth``
-         depth
+``damaged``
+   number of damaged plants
 
-      ``rep``
-         block
+``total``
+   total number of plants
 
-      ``damaged``
-         number of damaged plants
+Details
+~~~~~~~
 
-      ``total``
-         total number of plants
+In 1964 an experiment was conducted with microplots to evaluate the
+effectiveness of treatments against carrot fly larvae. The treatment
+factor is a combination of insecticide and depth.
 
-      .. rubric:: Details
-         :name: details
+Hardin & Hilbe used this data to fit a generalized binomial model.
 
-      In 1964 an experiment was conducted with microplots to evaluate
-      the effectiveness of treatments against carrot fly larvae. The
-      treatment factor is a combination of insecticide and depth.
+Famoye (1995) used the same data to fit a generalized binomial
+regression model. Results for Famoye are not shown.
 
-      Hardin & Hilbe used this data to fit a generalized binomial model.
+Source
+~~~~~~
 
-      Famoye (1995) used the same data to fit a generalized binomial
-      regression model. Results for Famoye are not shown.
+G A Wheatley & H Freeman. (1982). A method of using the proportions of
+undamaged carrots or parsnips to estimate the relative population
+densities of carrot fly (Psila rosae) larvae, and its practical
+applications. *Annals of Applied Biology*, 100, 229-244. Table 2.
 
-      .. rubric:: Source
-         :name: source
+https://doi.org/10.1111/j.1744-7348.1982.tb01935.x
 
-      G A Wheatley & H Freeman. (1982). A method of using the
-      proportions of undamaged carrots or parsnips to estimate the
-      relative population densities of carrot fly (Psila rosae) larvae,
-      and its practical applications. *Annals of Applied Biology*, 100,
-      229-244. Table 2.
+References
+~~~~~~~~~~
 
-      https://doi.org/10.1111/j.1744-7348.1982.tb01935.x
+James William Hardin, Joseph M. Hilbe. *Generalized Linear Models and
+Extensions*, 2nd ed.
 
-      .. rubric:: References
-         :name: references
+F Famoye (1995). Generalized Binomial Regression. *Biom J*, 37, 581-594.
 
-      James William Hardin, Joseph M. Hilbe. *Generalized Linear Models
-      and Extensions*, 2nd ed.
+Examples
+~~~~~~~~
 
-      F Famoye (1995). Generalized Binomial Regression. *Biom J*, 37,
-      581-594.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
 
-         ## Not run: 
+   data(wheatley.carrot)
+   dat <- wheatley.carrot
 
-         library(agridat)
+   # Observed proportions of damage
+   dat <- transform(dat, prop=damaged/total)
+   libs(lattice)
+   xyplot(prop~depth|insecticide, data=dat, subset=treatment!="T11",
+          cex=1.5, main="wheatley.carrot", ylab="proportion damaged")
 
-         data(wheatley.carrot)
-         dat <- wheatley.carrot
+   # Model for Wheatley. Deviance for treatment matches Wheatley, but other
+   # deviances do not.  Why?
+   # treatment:rep is the residual
+   m1 <- glm(cbind(damaged,total-damaged) ~ rep + treatment + treatment:rep,
+             data=dat, family=binomial("cloglog"))
+   anova(m1)
 
-         # Observed proportions of damage
-         dat <- transform(dat, prop=damaged/total)
-         libs(lattice)
-         xyplot(prop~depth|insecticide, data=dat, subset=treatment!="T11",
-                cex=1.5, main="wheatley.carrot", ylab="proportion damaged")
+   # GLM of Hardin & Hilbe p. 161. By default, R uses T01 as the base,
+   # but Hardin uses T11. Results match.
+   m2 <- glm(cbind(damaged,total-damaged) ~ rep + C(treatment, base=11),
+             data=dat, family=binomial("cloglog"))
+   summary(m2)
 
-         # Model for Wheatley. Deviance for treatment matches Wheatley, but other
-         # deviances do not.  Why?
-         # treatment:rep is the residual
-         m1 <- glm(cbind(damaged,total-damaged) ~ rep + treatment + treatment:rep,
-                   data=dat, family=binomial("cloglog"))
-         anova(m1)
-
-         # GLM of Hardin & Hilbe p. 161. By default, R uses T01 as the base,
-         # but Hardin uses T11. Results match.
-         m2 <- glm(cbind(damaged,total-damaged) ~ rep + C(treatment, base=11),
-                   data=dat, family=binomial("cloglog"))
-         summary(m2)
-
-         ## End(Not run)
+   ## End(Not run)

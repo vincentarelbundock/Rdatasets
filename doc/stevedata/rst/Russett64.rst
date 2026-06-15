@@ -1,83 +1,75 @@
-.. container::
+========= ===============
+Russett64 R Documentation
+========= ===============
 
-   .. container::
+Inequality and Instability: The Relation of Land Tenure to Politics (Russett, 1964)
+-----------------------------------------------------------------------------------
 
-      ========= ===============
-      Russett64 R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Inequality and Instability: The Relation of Land
-         Tenure to Politics (Russett, 1964)
-         :name: inequality-and-instability-the-relation-of-land-tenure-to-politics-russett-1964
+A data set on inequality and political instability, to replicate an
+analysis from Russett (1964).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A data set on inequality and political instability, to replicate
-      an analysis from Russett (1964).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   Russett64
 
-      .. code:: R
+Format
+~~~~~~
 
-         Russett64
+A data frame with 47 observations on the following 10 variables.
 
-      .. rubric:: Format
-         :name: format
+``country``
+   a character vector for the country
 
-      A data frame with 47 observations on the following 10 variables.
+``demcat``
+   a character vector for the type of political system, either "Stable
+   Democracies", "Unstable Democracies", or "Dictatorships"
 
-      ``country``
-         a character vector for the country
+``gini``
+   a numeric vector for the GINI coefficient
 
-      ``demcat``
-         a character vector for the type of political system, either
-         "Stable Democracies", "Unstable Democracies", or
-         "Dictatorships"
+``perc_farmsh``
+   a numeric vector for the percent of farms with half the land
 
-      ``gini``
-         a numeric vector for the GINI coefficient
+``perc_farmsr``
+   a numeric vector for the percent of farms that are rented
 
-      ``perc_farmsh``
-         a numeric vector for the percent of farms with half the land
+``pi``
+   a numeric vector for personnel instability
 
-      ``perc_farmsr``
-         a numeric vector for the percent of farms that are rented
+``eiw``
+   a numeric vector for Eckstein's internal war measure
 
-      ``pi``
-         a numeric vector for personnel instability
+``deaths``
+   a numeric vector for deaths from civil group violence per one million
 
-      ``eiw``
-         a numeric vector for Eckstein's internal war measure
+``gnppc``
+   a numeric vector for gross national product per capita
 
-      ``deaths``
-         a numeric vector for deaths from civil group violence per one
-         million
+``perc_lfa``
+   a numeric vector for the percent of the labor force in agriculture
 
-      ``gnppc``
-         a numeric vector for gross national product per capita
+Details
+~~~~~~~
 
-      ``perc_lfa``
-         a numeric vector for the percent of the labor force in
-         agriculture
+The data are scraped from Table 1 and Table 3 of his article, to the
+best of my ability. I was initially hoping this could be a problem for
+ChatGPT and its OCR functionality. However, ChatGPT made an absolute
+mess of Table 1. The bulk of this is hand-coded. The data, as of right
+now, can effectively reproduce what Russett (1964) reports in his
+analyses, but it is not identical.
 
-      .. rubric:: Details
-         :name: details
+You should read the article to see the assorted citations and data
+caveats that Russett (1964) reports. Those are ultimately
+suppressed/ignored here.
 
-      The data are scraped from Table 1 and Table 3 of his article, to
-      the best of my ability. I was initially hoping this could be a
-      problem for ChatGPT and its OCR functionality. However, ChatGPT
-      made an absolute mess of Table 1. The bulk of this is hand-coded.
-      The data, as of right now, can effectively reproduce what Russett
-      (1964) reports in his analyses, but it is not identical.
+References
+~~~~~~~~~~
 
-      You should read the article to see the assorted citations and data
-      caveats that Russett (1964) reports. Those are ultimately
-      suppressed/ignored here.
-
-      .. rubric:: References
-         :name: references
-
-      Russett, Bruce M. "Inequality and Instability: The Relation of
-      Land Tenure to Politics." *World Politics* 16(3): 442–54
+Russett, Bruce M. "Inequality and Instability: The Relation of Land
+Tenure to Politics." *World Politics* 16(3): 442–54

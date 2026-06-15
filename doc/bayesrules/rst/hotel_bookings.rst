@@ -1,138 +1,133 @@
-.. container::
+============== ===============
+hotel_bookings R Documentation
+============== ===============
 
-   .. container::
+Hotel Bookings Data
+-------------------
 
-      ============== ===============
-      hotel_bookings R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Hotel Bookings Data
-         :name: hotel-bookings-data
+A random subset of the data on hotel bookings originally collected by
+Antonio, Almeida and Nunes (2019) and distributed through the R for Data
+Science TidyTuesday project.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A random subset of the data on hotel bookings originally collected
-      by Antonio, Almeida and Nunes (2019) and distributed through the R
-      for Data Science TidyTuesday project.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   hotel_bookings
 
-      .. code:: R
+Format
+~~~~~~
 
-         hotel_bookings
+A data frame with 1000 hotel bookings and 32 variables on each booking.
 
-      .. rubric:: Format
-         :name: format
+hotel
+   "Resort Hotel" or "City Hotel"
 
-      A data frame with 1000 hotel bookings and 32 variables on each
-      booking.
+is_canceled
+   whether the booking was cancelled
 
-      hotel
-         "Resort Hotel" or "City Hotel"
+lead_time
+   number of days between booking and arrival
 
-      is_canceled
-         whether the booking was cancelled
+arrival_date_year
+   year of scheduled arrival
 
-      lead_time
-         number of days between booking and arrival
+arrival_date_month
+   month of scheduled arrival
 
-      arrival_date_year
-         year of scheduled arrival
+arrival_date_week_number
+   week of scheduled arrival
 
-      arrival_date_month
-         month of scheduled arrival
+arrival_date_day_of_month
+   day of month of scheduled arrival
 
-      arrival_date_week_number
-         week of scheduled arrival
+stays_in_weekend_nights
+   number of reserved weekend nights
 
-      arrival_date_day_of_month
-         day of month of scheduled arrival
+stays_in_week_nights
+   number of reserved week nights
 
-      stays_in_weekend_nights
-         number of reserved weekend nights
+adults
+   number of adults in booking
 
-      stays_in_week_nights
-         number of reserved week nights
+children
+   number of children
 
-      adults
-         number of adults in booking
+babies
+   number of babies
 
-      children
-         number of children
+meal
+   whether the booking includes breakfast (BB = bed & breakfast),
+   breakfast and dinner (HB = half board), or breakfast, lunch, and
+   dinner (FB = full board)
 
-      babies
-         number of babies
+country
+   guest's country of origin
 
-      meal
-         whether the booking includes breakfast (BB = bed & breakfast),
-         breakfast and dinner (HB = half board), or breakfast, lunch,
-         and dinner (FB = full board)
+market_segment
+   market segment designation (eg: TA = travel agent, TO = tour
+   operator)
 
-      country
-         guest's country of origin
+distribution_channel
+   booking distribution channel (eg: TA = travel agent, TO = tour
+   operator)
 
-      market_segment
-         market segment designation (eg: TA = travel agent, TO = tour
-         operator)
+is_repeated_guest
+   whether or not booking was made by a repeated guest
 
-      distribution_channel
-         booking distribution channel (eg: TA = travel agent, TO = tour
-         operator)
+previous_cancellations
+   guest's number of previous booking cancellations
 
-      is_repeated_guest
-         whether or not booking was made by a repeated guest
+previous_bookings_not_canceled
+   guest's number of previous bookings that weren't cancelled
 
-      previous_cancellations
-         guest's number of previous booking cancellations
+reserved_room_type
+   code for type of room reserved by guest
 
-      previous_bookings_not_canceled
-         guest's number of previous bookings that weren't cancelled
+assigned_room_type
+   code for type of room assigned by hotel
 
-      reserved_room_type
-         code for type of room reserved by guest
+booking_changes
+   number of changes made to the booking
 
-      assigned_room_type
-         code for type of room assigned by hotel
+deposit_type
+   No Deposit, Non Refund, Refundable
 
-      booking_changes
-         number of changes made to the booking
+agent
+   booking travel agency
 
-      deposit_type
-         No Deposit, Non Refund, Refundable
+company
+   booking company
 
-      agent
-         booking travel agency
+days_in_waiting_list
+   number of days the guest waited for booking confirmation
 
-      company
-         booking company
+customer_type
+   Contract, Group, Transient, Transient-party (a transient booking tied
+   to another transient booking)
 
-      days_in_waiting_list
-         number of days the guest waited for booking confirmation
+average_daily_rate
+   average hotel cost per day
 
-      customer_type
-         Contract, Group, Transient, Transient-party (a transient
-         booking tied to another transient booking)
+required_car_parking_spaces
+   number of parking spaces the guest needed
 
-      average_daily_rate
-         average hotel cost per day
+total_of_special_requests
+   number of guest special requests
 
-      required_car_parking_spaces
-         number of parking spaces the guest needed
+reservation_status
+   Canceled, Check-Out, No-Show
 
-      total_of_special_requests
-         number of guest special requests
+reservation_status_date
+   when the guest cancelled or checked out
 
-      reservation_status
-         Canceled, Check-Out, No-Show
+Source
+~~~~~~
 
-      reservation_status_date
-         when the guest cancelled or checked out
-
-      .. rubric:: Source
-         :name: source
-
-      Nuno Antonio, Ana de Almeida, and Luis Nunes (2019). "Hotel
-      booking demand datasets." Data in Brief (22): 41-49.
-      https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-02-11/hotels.csv/.
+Nuno Antonio, Ana de Almeida, and Luis Nunes (2019). "Hotel booking
+demand datasets." Data in Brief (22): 41-49.
+https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-02-11/hotels.csv/.

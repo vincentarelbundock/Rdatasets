@@ -1,120 +1,107 @@
-.. container::
+========== ===============
+Cormorants R Documentation
+========== ===============
 
-   .. container::
+Advertising Behavior by Males Cormorants
+----------------------------------------
 
-      ========== ===============
-      Cormorants R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Advertising Behavior by Males Cormorants
-         :name: advertising-behavior-by-males-cormorants
+Male double-crested cormorants use advertising behavior to attract
+females for breeding. In this study by Meagan McRae (2015), cormorants
+were observed two or three times a week at six stations in a
+tree-nesting colony for an entire season, April 10, 2014-July 10, 2014.
+The number of advertising birds was counted and these observations were
+classified by characteristics of the trees and nests.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Male double-crested cormorants use advertising behavior to attract
-      females for breeding. In this study by Meagan McRae (2015),
-      cormorants were observed two or three times a week at six stations
-      in a tree-nesting colony for an entire season, April 10, 2014-July
-      10, 2014. The number of advertising birds was counted and these
-      observations were classified by characteristics of the trees and
-      nests.
+A data frame with 343 observations on the following 8 variables.
 
-      The goal is to determine how this behavior varies temporally over
-      the season and spatially, as well as with characteristics of
-      nesting sites.
+``category``
+   Time of season, divided into 3 categories based on breeding
+   chronology, an ordered factor with levels ``Pre`` < ``Incubation`` <
+   ``⁠Chicks Present⁠``
 
-      .. rubric:: Usage
-         :name: usage
+``week``
+   Week of the season
 
-      .. code:: R
+``station``
+   Station of observations on two different peninsulas in a park, a
+   factor with levels ``B1`` ``B2`` ``C1`` ``C2`` ``C3`` ``C4``
 
-         data("Cormorants")
+``nest``
+   Type of nest, an ordered factor with levels ``no`` < ``partial`` <
+   ``full``
 
-      .. rubric:: Format
-         :name: format
+``height``
+   Relative height of bird in the tree, an ordered factor with levels
+   ``low`` < ``mid`` < ``high``
 
-      A data frame with 343 observations on the following 8 variables.
+``density``
+   Number of other nests in the tree, an ordered factor with levels
+   ``zero`` < ``few`` < ``moderate`` < ``high``
 
-      ``category``
-         Time of season, divided into 3 categories based on breeding
-         chronology, an ordered factor with levels ``Pre`` <
-         ``Incubation`` < ``Chicks Present``
+``tree_health``
+   Health of the tree the bird is advertising in, a factor with levels
+   ``dead`` ``healthy``
 
-      ``week``
-         Week of the season
+``count``
+   Number of birds advertising, a numeric vector
 
-      ``station``
-         Station of observations on two different peninsulas in a park,
-         a factor with levels ``B1`` ``B2`` ``C1`` ``C2`` ``C3`` ``C4``
+Details
+~~~~~~~
 
-      ``nest``
-         Type of nest, an ordered factor with levels ``no`` <
-         ``partial`` < ``full``
+The goal is to determine how this behavior varies temporally over the
+season and spatially, as well as with characteristics of nesting sites.
 
-      ``height``
-         Relative height of bird in the tree, an ordered factor with
-         levels ``low`` < ``mid`` < ``high``
+Observations were made on only 2 days in weeks 3 and 4, but 3 days in
+all other weeks. One should use log(days) as an offset, so that the
+response measures rate.
 
-      ``density``
-         Number of other nests in the tree, an ordered factor with
-         levels ``zero`` < ``few`` < ``moderate`` < ``high``
+``⁠Cormorants$days <- ifelse(Cormorants$week \%in\% 3:4, 2, 3)⁠``
 
-      ``tree_health``
-         Health of the tree the bird is advertising in, a factor with
-         levels ``dead`` ``healthy``
+Source
+~~~~~~
 
-      ``count``
-         Number of birds advertising, a numeric vector
+McRae, M. (2015). Spatial, Habitat and Frequency Changes in
+Double-crested Cormorant Advertising Display in a Tree-nesting Colony.
+Unpublished MA project, Environmental Studies, York University.
 
-      .. rubric:: Details
-         :name: details
+Examples
+~~~~~~~~
 
-      Observations were made on only 2 days in weeks 3 and 4, but 3 days
-      in all other weeks. One should use log(days) as an offset, so that
-      the response measures rate.
+.. code:: R
 
-      ``Cormorants$days <- ifelse(Cormorants$week %in% 3:4, 2, 3)``
 
-      .. rubric:: Source
-         :name: source
+   data(Cormorants)
+   str(Cormorants)
 
-      McRae, M. (2015). Spatial, Habitat and Frequency Changes in
-      Double-crested Cormorant Advertising Display in a Tree-nesting
-      Colony. Unpublished MA project, Environmental Studies, York
-      University.
+   if (require("ggplot2")) {
+     print(ggplot(Cormorants, aes(count)) +
+       geom_histogram(binwidth=0.5) +
+         labs(x="Number of birds advertising"))
 
-      .. rubric:: Examples
-         :name: examples
+   # Quick look at the data, on the log scale, for plots of `count ~ week`,
+   #   stratified by something else.
 
-      .. code:: R
+     print(ggplot(Cormorants, aes(week, count, color=height)) +
+       geom_jitter() +
+         stat_smooth(method="loess", size=2) +
+         scale_y_log10(breaks=c(1,2,5,10)) +
+         geom_vline(xintercept=c(4.5, 9.5)))
+   }
 
-         data(Cormorants)
-         str(Cormorants)
+   # ### models using week
+   fit1 <-glm(count ~ week + station + nest + height + density + tree_health,
+              data=Cormorants,
+              family =  poisson)
 
-         if (require("ggplot2")) {
-           print(ggplot(Cormorants, aes(count)) + 
-             geom_histogram(binwidth=0.5) + 
-               labs(x="Number of birds advertising"))
+   if (requireNamespace("car"))
+     car::Anova(fit1)
 
-         # Quick look at the data, on the log scale, for plots of `count ~ week`, 
-         #   stratified by something else.
-
-           print(ggplot(Cormorants, aes(week, count, color=height)) + 
-             geom_jitter() +
-               stat_smooth(method="loess", size=2) + 
-               scale_y_log10(breaks=c(1,2,5,10)) +
-               geom_vline(xintercept=c(4.5, 9.5)))
-         }
-
-         # ### models using week 
-         fit1 <-glm(count ~ week + station + nest + height + density + tree_health, 
-                    data=Cormorants,
-                    family =  poisson)
-
-         if (requireNamespace("car"))
-           car::Anova(fit1)
-           
-         # plot fitted effects
-         if (requireNamespace("effects"))
-           plot(effects::allEffects(fit1))
+   # plot fitted effects
+   if (requireNamespace("effects"))
+     plot(effects::allEffects(fit1))

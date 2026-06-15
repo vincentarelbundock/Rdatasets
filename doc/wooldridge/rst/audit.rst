@@ -1,56 +1,52 @@
-.. container::
+===== ===============
+audit R Documentation
+===== ===============
 
-   .. container::
+audit
+-----
 
-      ===== ===============
-      audit R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: audit
-         :name: audit
+Wooldridge Source: These data come from a 1988 Urban Institute audit
+study in the Washington, D.C. area. I obtained them from the article
+“The Urban Institute Audit Studies: Their Methods and Findings,” by
+James J. Heckman and Peter Siegelman. In Fix, M. and Struyk, R., eds.,
+Clear and Convincing Evidence: Measurement of Discrimination in America.
+Washington, D.C.: Urban Institute Press, 1993, 187-258. Data loads
+lazily.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Wooldridge Source: These data come from a 1988 Urban Institute
-      audit study in the Washington, D.C. area. I obtained them from the
-      article “The Urban Institute Audit Studies: Their Methods and
-      Findings,” by James J. Heckman and Peter Siegelman. In Fix, M. and
-      Struyk, R., eds., Clear and Convincing Evidence: Measurement of
-      Discrimination in America. Washington, D.C.: Urban Institute
-      Press, 1993, 187-258. Data loads lazily.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data('audit')
 
-      .. code:: R
+Format
+~~~~~~
 
-         data('audit')
+A data.frame with 241 observations on 3 variables:
 
-      .. rubric:: Format
-         :name: format
+- **w:** =1 if white app. got job offer
 
-      A data.frame with 241 observations on 3 variables:
+- **b:** =1 if black app. got job offer
 
-      -  **w:** =1 if white app. got job offer
+- **y:** b - w
 
-      -  **b:** =1 if black app. got job offer
+Used in Text
+~~~~~~~~~~~~
 
-      -  **y:** b - w
+pages 776-777, 784, 787
 
-      .. rubric:: Used in Text
-         :name: used-in-text
+Source
+~~~~~~
 
-      pages 776-777, 784, 787
+https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-          str(audit)
+    str(audit)

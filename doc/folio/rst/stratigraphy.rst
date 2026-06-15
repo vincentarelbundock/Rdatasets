@@ -1,57 +1,52 @@
-.. container::
+============ ===============
+stratigraphy R Documentation
+============ ===============
 
-   .. container::
+Chronostratigraphic Chart
+-------------------------
 
-      ============ ===============
-      stratigraphy R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Chronostratigraphic Chart
-         :name: chronostratigraphic-chart
+The ICS international chronostratigraphic chart (v2022/2).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The ICS international chronostratigraphic chart (v2022/2).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   stratigraphy
 
-      .. code:: R
+Format
+~~~~~~
 
-         stratigraphy
+A ``data.frame`` with 176 observations and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+type
+   ``character``: unit type ("``eon``", "``era``", "``period``",
+   "``series``" or "``stage``"). Precambrian and Hadean are informal
+   units.
 
-      A ``data.frame`` with 176 observations and 5 variables:
+name
+   ``character``: unit name.
 
-      type
-         ``character``: unit type ("``eon``", "``era``", "``period``",
-         "``series``" or "``stage``"). Precambrian and Hadean are
-         informal units.
+age
+   ``numeric``: numerical age (Ma).
 
-      name
-         ``character``: unit name.
+error
+   ``numeric``: error on numerical ``age`` (Ma).
 
-      age
-         ``numeric``: numerical age (Ma).
+parent
+   ``character``: parent unit.
 
-      error
-         ``numeric``: error on numerical ``age`` (Ma).
+Source
+~~~~~~
 
-      parent
-         ``character``: parent unit.
+https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf
-
-      .. rubric:: References
-         :name: references
-
-      Cohen, K. M., Finney, S. C., Gibbard, P. L. and Fan, J.-X. (2013).
-      The ICS International Chronostratigraphic Chart. *Episodes*,
-      36(3): 199-204.
-      `doi:10.18814/epiiugs/2013/v36i3/002 <https://doi.org/10.18814/epiiugs/2013/v36i3/002>`__
+Cohen, K. M., Finney, S. C., Gibbard, P. L. and Fan, J.-X. (2013). The
+ICS International Chronostratigraphic Chart. *Episodes*, 36(3): 199-204.
+`doi:10.18814/epiiugs/2013/v36i3/002 <https://doi.org/10.18814/epiiugs/2013/v36i3/002>`__

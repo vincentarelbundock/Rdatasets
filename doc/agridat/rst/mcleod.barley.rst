@@ -1,112 +1,105 @@
-.. container::
+============= ===============
+mcleod.barley R Documentation
+============= ===============
 
-   .. container::
+Multi-environment trial of barley in South Canterbury with yield and yield components
+-------------------------------------------------------------------------------------
 
-      ============= ===============
-      mcleod.barley R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Multi-environment trial of barley in South Canterbury
-         with yield and yield components
-         :name: multi-environment-trial-of-barley-in-south-canterbury-with-yield-and-yield-components
+Yield and yield components for barley with different seeding rates.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Yield and yield components for barley with different seeding
-      rates.
+A data frame with 40 observations on the following 10 variables.
 
-      .. rubric:: Format
-         :name: format
+``year``
+   year, numeric
 
-      A data frame with 40 observations on the following 10 variables.
+``site``
+   site factor
 
-      ``year``
-         year, numeric
+``rate``
+   rate, numeric
 
-      ``site``
-         site factor
+``plants``
+   plants per sq meter
 
-      ``rate``
-         rate, numeric
+``tillers``
+   tillers per plant
 
-      ``plants``
-         plants per sq meter
+``heads``
+   heads per plant
 
-      ``tillers``
-         tillers per plant
+``surviving``
+   percent surviving tillers
 
-      ``heads``
-         heads per plant
+``grains``
+   grains per head
 
-      ``surviving``
-         percent surviving tillers
+``weight``
+   weight of 1000 grains
 
-      ``grains``
-         grains per head
+``yield``
+   yield tons/hectare
 
-      ``weight``
-         weight of 1000 grains
+Details
+~~~~~~~
 
-      ``yield``
-         yield tons/hectare
+Trials were conducted at 5 sites, 3 years in South Canterbury. (not all
+sites in every year). Values are the average of 6 blocks. In 1974 there
+was a severe drought. The other years had favorable growing conditions.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      Trials were conducted at 5 sites, 3 years in South Canterbury.
-      (not all sites in every year). Values are the average of 6 blocks.
-      In 1974 there was a severe drought. The other years had favorable
-      growing conditions.
+C. C. McLeod (1982). Effects of rates of seeding on barley sown for
+grain. *New Zealand Journal of Experimental Agriculture*, 10, 133-136.
+https://doi.org/10.1080/03015521.1982.10427857.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      C. C. McLeod (1982). Effects of rates of seeding on barley sown
-      for grain. *New Zealand Journal of Experimental Agriculture*, 10,
-      133-136. https://doi.org/10.1080/03015521.1982.10427857.
+Maindonald (1992).
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Maindonald (1992).
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
 
-         ## Not run: 
+   data(mcleod.barley)
+   dat <- mcleod.barley
 
-         library(agridat)
+   # Table 3 of McLeod.  Across-environment means by planting rate
+   d1 <- aggregate(cbind(plants, tillers, heads, surviving, grains,
+                         weight, yield) ~ rate, dat, FUN=mean)
+   # Calculate income based on seed cost of $280/ton, grain $140/ton.
+   d1 <- transform(d1, income=140*yield-280*rate/1000)
+   signif(d1,3)
+   ##  rate plants tillers heads surviving grains weight yield
+   ##    50 112.12    5.22  4.36     83.95  21.25  46.11  3.97
+   ##    75 162.75    4.04  3.26     80.89  19.95  45.10  4.26
+   ##   100 202.62    3.69  2.73     74.29  19.16  44.66  4.38
+   ##   125 239.00    3.28  2.33     71.86  18.45  43.45  4.41
+   ##   150 293.62    2.90  2.00     69.54  17.94  42.77  4.47
 
-         data(mcleod.barley)
-         dat <- mcleod.barley
+   # Even though tillers/plant, heads/plant, surviving tillers,
+   # grains/head, weight/1000 grains are all decreasing as planting
+   # rate increases, the total yield is still increasing.
+   # But, income peaks around seed rate of 100.
 
-         # Table 3 of McLeod.  Across-environment means by planting rate
-         d1 <- aggregate(cbind(plants, tillers, heads, surviving, grains,
-                               weight, yield) ~ rate, dat, FUN=mean)
-         # Calculate income based on seed cost of $280/ton, grain $140/ton.
-         d1 <- transform(d1, income=140*yield-280*rate/1000)
-         signif(d1,3)
-         ##  rate plants tillers heads surviving grains weight yield
-         ##    50 112.12    5.22  4.36     83.95  21.25  46.11  3.97
-         ##    75 162.75    4.04  3.26     80.89  19.95  45.10  4.26
-         ##   100 202.62    3.69  2.73     74.29  19.16  44.66  4.38
-         ##   125 239.00    3.28  2.33     71.86  18.45  43.45  4.41
-         ##   150 293.62    2.90  2.00     69.54  17.94  42.77  4.47
-
-         # Even though tillers/plant, heads/plant, surviving tillers,
-         # grains/head, weight/1000 grains are all decreasing as planting
-         # rate increases, the total yield is still increasing.
-         # But, income peaks around seed rate of 100.
-
-         libs(lattice)
-         xyplot(yield +income +surviving +grains +weight +plants +tillers +heads ~ rate,
-                data=d1, outer=TRUE, type=c('p','l'),
-                scales=list(y=list(relation="free")),
-                xlab="Nitrogen rate", ylab="Trait value",
-                main="mcleod.barley - nitrogen response curves"  )
+   libs(lattice)
+   xyplot(yield +income +surviving +grains +weight +plants +tillers +heads ~ rate,
+          data=d1, outer=TRUE, type=c('p','l'),
+          scales=list(y=list(relation="free")),
+          xlab="Nitrogen rate", ylab="Trait value",
+          main="mcleod.barley - nitrogen response curves"  )
 
 
-         ## End(Not run)
+   ## End(Not run)

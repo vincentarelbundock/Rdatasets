@@ -1,52 +1,49 @@
-.. container::
+============== ===============
+JohnsonJohnson R Documentation
+============== ===============
 
-   .. container::
+Quarterly Earnings per Johnson & Johnson Share
+----------------------------------------------
 
-      ============== ===============
-      JohnsonJohnson R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Quarterly Earnings per Johnson & Johnson Share
-         :name: quarterly-earnings-per-johnson-johnson-share
+Quarterly earnings (dollars) per Johnson & Johnson share 1960–80.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Quarterly earnings (dollars) per Johnson & Johnson share 1960–80.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   JohnsonJohnson
 
-      .. code:: R
+Format
+~~~~~~
 
-         JohnsonJohnson
+A quarterly time series
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      A quarterly time series
+Shumway, R. H. and Stoffer, D. S. (2000) *Time Series Analysis and its
+Applications*. Second Edition. Springer. Example 1.1.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Shumway, R. H. and Stoffer, D. S. (2000) *Time Series Analysis and
-      its Applications*. Second Edition. Springer. Example 1.1.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   require(stats); require(graphics)
+   JJ <- log10(JohnsonJohnson)
+   plot(JJ)
+   ## This example gives a possible-non-convergence warning on some
+   ## platforms, but does seem to converge on x86 Linux and Windows.
+   (fit <- StructTS(JJ, type = "BSM"))
+   tsdiag(fit)
+   sm <- tsSmooth(fit)
+   plot(cbind(JJ, sm[, 1], sm[, 3]-0.5), plot.type = "single",
+        col = c("black", "green", "blue"))
+   abline(h = -0.5, col = "grey60")
 
-         require(stats); require(graphics)
-         JJ <- log10(JohnsonJohnson)
-         plot(JJ)
-         ## This example gives a possible-non-convergence warning on some
-         ## platforms, but does seem to converge on x86 Linux and Windows.
-         (fit <- StructTS(JJ, type = "BSM"))
-         tsdiag(fit)
-         sm <- tsSmooth(fit)
-         plot(cbind(JJ, sm[, 1], sm[, 3]-0.5), plot.type = "single",
-              col = c("black", "green", "blue"))
-         abline(h = -0.5, col = "grey60")
-
-         monthplot(fit)
+   monthplot(fit)

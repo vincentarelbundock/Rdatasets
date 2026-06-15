@@ -1,46 +1,41 @@
-.. container::
+========== ===============
+rareplants R Documentation
+========== ===============
 
-   .. container::
+Rare and Endangered Plant Species
+---------------------------------
 
-      ========== ===============
-      rareplants R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Rare and Endangered Plant Species
-         :name: rare-and-endangered-plant-species
+These data were taken from species lists for South Australia, Victoria
+and Tasmania. Species were classified as CC, CR, RC and RR, with C
+denoting common and R denoting rare. The first code relates to South
+Australia and Victoria, and the second to Tasmania. They were further
+classified by habitat according to the Victorian register, where D = dry
+only, W = wet only, and WD = wet or dry.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      These data were taken from species lists for South Australia,
-      Victoria and Tasmania. Species were classified as CC, CR, RC and
-      RR, with C denoting common and R denoting rare. The first code
-      relates to South Australia and Victoria, and the second to
-      Tasmania. They were further classified by habitat according to the
-      Victorian register, where D = dry only, W = wet only, and WD = wet
-      or dry.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   rareplants
 
-      .. code:: R
+Format
+~~~~~~
 
-         rareplants
+The format is: chr "rareplants"
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      The format is: chr "rareplants"
+Jasmyn Lynch, Department of Botany and Zoology at Australian National
+University
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Jasmyn Lynch, Department of Botany and Zoology at Australian
-      National University
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         chisq.test(rareplants)
+   chisq.test(rareplants)

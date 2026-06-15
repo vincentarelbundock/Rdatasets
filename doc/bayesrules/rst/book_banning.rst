@@ -1,106 +1,98 @@
-.. container::
+============ ===============
+book_banning R Documentation
+============ ===============
 
-   .. container::
+Book Banning Data
+-----------------
 
-      ============ ===============
-      book_banning R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Book Banning Data
-         :name: book-banning-data
+The book banning data was collected by Fast and Hegland as part of a
+course project at St Olaf College, and distributed with "Broadening Your
+Statistical Horizons" by Legler and Roback. This data set includes the
+features and outcomes for 931 book challenges (ie. requests to ban a
+book) made in the US between 2000 and 2010. Information on the books
+being challenged and the characteristics of these books were collected
+from the American Library Society. State-level demographic information
+and political leanings were obtained from the US Census Bureau and Cook
+Political Report, respectively. Due to an outlying large number of
+challenges, book challenges made in the state of Texas were omitted.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The book banning data was collected by Fast and Hegland as part of
-      a course project at St Olaf College, and distributed with
-      "Broadening Your Statistical Horizons" by Legler and Roback. This
-      data set includes the features and outcomes for 931 book
-      challenges (ie. requests to ban a book) made in the US between
-      2000 and 2010. Information on the books being challenged and the
-      characteristics of these books were collected from the American
-      Library Society. State-level demographic information and political
-      leanings were obtained from the US Census Bureau and Cook
-      Political Report, respectively. Due to an outlying large number of
-      challenges, book challenges made in the state of Texas were
-      omitted.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   book_banning
 
-      .. code:: R
+Format
+~~~~~~
 
-         book_banning
+A data frame with 931 rows and 17 variables. Each row represents a
+single book challenge within the given state and date.
 
-      .. rubric:: Format
-         :name: format
+title
+   title of book being challenged
 
-      A data frame with 931 rows and 17 variables. Each row represents a
-      single book challenge within the given state and date.
+book_id
+   identifier for the book
 
-      title
-         title of book being challenged
+author
+   author of the book
 
-      book_id
-         identifier for the book
+date
+   date of the challenge
 
-      author
-         author of the book
+year
+   year of the challenge
 
-      date
-         date of the challenge
+removed
+   whether or not the challenge was successful (the book was removed)
 
-      year
-         year of the challenge
+explicit
+   whether the book was challenged for sexually explicit material
 
-      removed
-         whether or not the challenge was successful (the book was
-         removed)
+antifamily
+   whether the book was challenged for anti-family material
 
-      explicit
-         whether the book was challenged for sexually explicit material
+occult
+   whether the book was challenged for occult material
 
-      antifamily
-         whether the book was challenged for anti-family material
+language
+   whether the book was challenged for inapropriate language
 
-      occult
-         whether the book was challenged for occult material
+lgbtq
+   whether the book was challenged for LGBTQ material
 
-      language
-         whether the book was challenged for inapropriate language
+violent
+   whether the book was challenged for violent material
 
-      lgbtq
-         whether the book was challenged for LGBTQ material
+state
+   US state in which the challenge was made
 
-      violent
-         whether the book was challenged for violent material
+political_value_index
+   Political Value Index of the state (negative = leans Republican, 0 =
+   neutral, positive = leans Democrat)
 
-      state
-         US state in which the challenge was made
+median_income
+   median income in the state, relative to the average state median
+   income
 
-      political_value_index
-         Political Value Index of the state (negative = leans
-         Republican, 0 = neutral, positive = leans Democrat)
+hs_grad_rate
+   high school graduation rate, in percent, relative to the average
+   state high school graduation rate
 
-      median_income
-         median income in the state, relative to the average state
-         median income
+college_grad_rate
+   college graduation rate, in percent, relative to the average state
+   college graduation rate
 
-      hs_grad_rate
-         high school graduation rate, in percent, relative to the
-         average state high school graduation rate
+Source
+~~~~~~
 
-      college_grad_rate
-         college graduation rate, in percent, relative to the average
-         state college graduation rate
-
-      .. rubric:: Source
-         :name: source
-
-      Shannon Fast and Thomas Hegland (2011). Book Challenges: A
-      Statistical Examination. Project for Statistics 316-Advanced
-      Statistical Modeling, St. Olaf College. Julie Legler and Paul
-      Roback (2019). Broadening Your Statistical Horizons: Generalized
-      Linear Models and Multilevel Models.
-      https://bookdown.org/roback/bookdown-bysh/.
-      https://github.com/proback/BeyondMLR/blob/master/data/bookbanningNoTex.csv/
+Shannon Fast and Thomas Hegland (2011). Book Challenges: A Statistical
+Examination. Project for Statistics 316-Advanced Statistical Modeling,
+St. Olaf College. Julie Legler and Paul Roback (2019). Broadening Your
+Statistical Horizons: Generalized Linear Models and Multilevel Models.
+https://bookdown.org/roback/bookdown-bysh/.
+https://github.com/proback/BeyondMLR/blob/master/data/bookbanningNoTex.csv/

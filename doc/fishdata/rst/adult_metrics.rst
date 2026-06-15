@@ -1,53 +1,49 @@
-.. container::
+============= ===============
+adult_metrics R Documentation
+============= ===============
 
-   .. container::
+Adult fish metrics data
+-----------------------
 
-      ============= ===============
-      adult_metrics R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Adult fish metrics data
-         :name: adult-fish-metrics-data
+A dataset containing metrics data for adult Galaxis maculatus.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset containing metrics data for adult Galaxis maculatus.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   adult_metrics
 
-      .. code:: R
+Format
+~~~~~~
 
-         adult_metrics
+A dataset containing 48 rows and 6 variables
 
-      .. rubric:: Format
-         :name: format
+fish_id
+   a unique identifier for each fish
 
-      A dataset containing 48 rows and 6 variables
+standard_length
+   standard length of the fish (distance from posterior to caudal
+   peduncle), cm
 
-      fish_id
-         a unique identifier for each fish
+body_depth
+   body depth of the fish at its maximum point, cm
 
-      standard_length
-         standard length of the fish (distance from posterior to caudal
-         peduncle), cm
+age
+   Age of fish when caught (days)
 
-      body_depth
-         body depth of the fish at its maximum point, cm
+birthdate
+   Day fish hatched
 
-      age
-         Age of fish when caught (days)
+growth_rate
+   Average daily growth of fish (mm/day)
 
-      birthdate
-         Day fish hatched
+Examples
+~~~~~~~~
 
-      growth_rate
-         Average daily growth of fish (mm/day)
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(adult_metrics)
+   data(adult_metrics)

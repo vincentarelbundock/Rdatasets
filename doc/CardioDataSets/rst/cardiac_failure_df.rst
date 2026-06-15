@@ -1,85 +1,80 @@
-.. container::
+================== ===============
+cardiac_failure_df R Documentation
+================== ===============
 
-   .. container::
+Heart Failure Clinical Dataset
+------------------------------
 
-      ================== ===============
-      cardiac_failure_df R Documentation
-      ================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Heart Failure Clinical Dataset
-         :name: heart-failure-clinical-dataset
+This dataset, cardiac_failure_df, is a data frame containing clinical
+data from 299 patients with heart failure. It includes 13 variables
+covering demographic information, medical history, laboratory results,
+and mortality outcomes.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, cardiac_failure_df, is a data frame containing
-      clinical data from 299 patients with heart failure. It includes 13
-      variables covering demographic information, medical history,
-      laboratory results, and mortality outcomes.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(cardiac_failure_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(cardiac_failure_df)
+A data frame with 299 observations and 13 variables:
 
-      .. rubric:: Format
-         :name: format
+age
+   Patient age in years (numeric)
 
-      A data frame with 299 observations and 13 variables:
+anaemia
+   Presence of anaemia (integer: 0=no, 1=yes)
 
-      age
-         Patient age in years (numeric)
+creatinine_phosphokinase
+   Level of CPK enzyme in mcg/L (integer)
 
-      anaemia
-         Presence of anaemia (integer: 0=no, 1=yes)
+diabetes
+   Presence of diabetes (integer: 0=no, 1=yes)
 
-      creatinine_phosphokinase
-         Level of CPK enzyme in mcg/L (integer)
+ejection_fraction
+   Percentage of blood leaving heart (integer)
 
-      diabetes
-         Presence of diabetes (integer: 0=no, 1=yes)
+high_blood_pressure
+   Presence of hypertension (integer: 0=no, 1=yes)
 
-      ejection_fraction
-         Percentage of blood leaving heart (integer)
+platelets
+   Platelet count in kiloplatelets/mL (numeric)
 
-      high_blood_pressure
-         Presence of hypertension (integer: 0=no, 1=yes)
+serum_creatinine
+   Level of serum creatinine in mg/dL (numeric)
 
-      platelets
-         Platelet count in kiloplatelets/mL (numeric)
+serum_sodium
+   Level of serum sodium in mEq/L (integer)
 
-      serum_creatinine
-         Level of serum creatinine in mg/dL (numeric)
+sex
+   Patient sex (integer: 0=female, 1=male)
 
-      serum_sodium
-         Level of serum sodium in mEq/L (integer)
+smoking
+   Smoking status (integer: 0=no, 1=yes)
 
-      sex
-         Patient sex (integer: 0=female, 1=male)
+time
+   Follow-up period in days (integer)
 
-      smoking
-         Smoking status (integer: 0=no, 1=yes)
+DEATH_EVENT
+   Death during follow-up (integer: 0=no, 1=yes)
 
-      time
-         Follow-up period in days (integer)
+Details
+~~~~~~~
 
-      DEATH_EVENT
-         Death during follow-up (integer: 0=no, 1=yes)
+The dataset name has been kept as 'cardiac_failure_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the CardioDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'df' indicates that the dataset is a standard data frame. The original
+content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'cardiac_failure_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      CardioDataSets package and assists users in identifying its
-      specific characteristics. The suffix 'df' indicates that the
-      dataset is a standard data frame. The original content has not
-      been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the SOPC package version 0.1.0
+Data taken from the SOPC package version 0.1.0

@@ -1,62 +1,54 @@
-.. container::
+===================== ===============
+mediacloud_hurricanes R Documentation
+===================== ===============
 
-   .. container::
+The Media Really Started Paying Attention to Puerto Rico When Trump Did
+-----------------------------------------------------------------------
 
-      ===================== ===============
-      mediacloud_hurricanes R Documentation
-      ===================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The Media Really Started Paying Attention to Puerto
-         Rico When Trump Did
-         :name: the-media-really-started-paying-attention-to-puerto-rico-when-trump-did
+The raw data behind the story "The Media Really Started Paying Attention
+to Puerto Rico When Trump Did"
+https://fivethirtyeight.com/features/the-media-really-started-paying-attention-to-puerto-rico-when-trump-did/:
+Mediacloud Hurricanes Data.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "The Media Really Started Paying
-      Attention to Puerto Rico When Trump Did"
-      https://fivethirtyeight.com/features/the-media-really-started-paying-attention-to-puerto-rico-when-trump-did/:
-      Mediacloud Hurricanes Data.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   mediacloud_hurricanes
 
-      .. code:: R
+Format
+~~~~~~
 
-         mediacloud_hurricanes
+A data frame with 38 rows representing dates and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+date
+   Date
 
-      A data frame with 38 rows representing dates and 5 variables:
+harvey
+   The number of sentences in online news which mention Hurricane Harvey
+   on the specified date
 
-      date
-         Date
+irma
+   The number of sentences in online news which mention Hurricane Irma
 
-      harvey
-         The number of sentences in online news which mention Hurricane
-         Harvey on the specified date
+maria
+   The number of sentences in online news which mention Hurricane Maria
 
-      irma
-         The number of sentences in online news which mention Hurricane
-         Irma
+jose
+   The number of sentences in online news which mention Hurricane Jose
 
-      maria
-         The number of sentences in online news which mention Hurricane
-         Maria
+Source
+~~~~~~
 
-      jose
-         The number of sentences in online news which mention Hurricane
-         Jose
+Mediacloud https://mediacloud.org/
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      Mediacloud https://mediacloud.org/
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``mediacloud_states``, ``mediacloud_online_news``,
-      ``mediacloud_trump``, ``tv_hurricanes``,
-      ``tv_hurricanes_by_network``, ``tv_states``, ``google_trends``
+``mediacloud_states``, ``mediacloud_online_news``, ``mediacloud_trump``,
+``tv_hurricanes``, ``tv_hurricanes_by_network``, ``tv_states``,
+``google_trends``

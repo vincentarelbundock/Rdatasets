@@ -1,50 +1,43 @@
-.. container::
+=============== ===============
+spice_test_wide R Documentation
+=============== ===============
 
-   .. container::
+Spice Test
+----------
 
-      =============== ===============
-      spice_test_wide R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Spice Test
-         :name: spice-test
+Results of a knowledge test from Junior Bake Off (Series 2, Episode 14).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Results of a knowledge test from Junior Bake Off (Series 2,
-      Episode 14).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   spice_test_wide
 
-      .. code:: R
+Format
+~~~~~~
 
-         spice_test_wide
+A data frame with 4 rows representing baker results from the spice-based
+knowledge test and 7 variables:
 
-      .. rubric:: Format
-         :name: format
+baker
+   A character string with a given name or nickname.
 
-      A data frame with 4 rows representing baker results from the
-      spice-based knowledge test and 7 variables:
+guess_1,guess_2,guess_3
+   The different guesses (in order) for what the mystery spice was.
 
-      baker
-         A character string with a given name or nickname.
+correct_1,correct_2,correct_3
+   An integer whether the guess was correct (``1``) or wrong (``0``).
 
-      guess_1,guess_2,guess_3
-         The different guesses (in order) for what the mystery spice
-         was.
+Examples
+~~~~~~~~
 
-      correct_1,correct_2,correct_3
-         An integer whether the guess was correct (``1``) or wrong
-         (``0``).
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         if (require('tibble')) {
-           spice_test_wide
-          }
-         head(spice_test_wide)
+   if (require('tibble')) {
+     spice_test_wide
+    }
+   head(spice_test_wide)

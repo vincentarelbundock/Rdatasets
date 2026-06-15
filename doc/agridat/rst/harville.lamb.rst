@@ -1,104 +1,99 @@
-.. container::
+============= ===============
+harville.lamb R Documentation
+============= ===============
 
-   .. container::
+Birth weight of lambs from different lines/sires
+------------------------------------------------
 
-      ============= ===============
-      harville.lamb R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Birth weight of lambs from different lines/sires
-         :name: birth-weight-of-lambs-from-different-linessires
+Birth weight of lambs from different lines/sires
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Birth weight of lambs from different lines/sires
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("harville.lamb")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("harville.lamb")
+A data frame with 62 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``line``
+   genotype line number
 
-      A data frame with 62 observations on the following 4 variables.
+``sire``
+   sire number
 
-      ``line``
-         genotype line number
+``damage``
+   dam age, class 1,2,3
 
-      ``sire``
-         sire number
+``weight``
+   lamb birth weight
 
-      ``damage``
-         dam age, class 1,2,3
+Details
+~~~~~~~
 
-      ``weight``
-         lamb birth weight
+Weight at birth of 62 lambs. There were 5 distinct lines.
 
-      .. rubric:: Details
-         :name: details
+Some sires had multiple lambs. Each dam had one lamb.
 
-      Weight at birth of 62 lambs. There were 5 distinct lines.
+The age of the dam is a category: 1 (1-2 years), 2 (2-3 years) or 3
+(over 3 years).
 
-      Some sires had multiple lambs. Each dam had one lamb.
+Note: Jiang, gives the data in table 1.2, but there is a small error.
+Jiang has a weight 9.0 for sire 31, line 3, age 3. The correct value is
+9.5.
 
-      The age of the dam is a category: 1 (1-2 years), 2 (2-3 years) or
-      3 (over 3 years).
+Source
+~~~~~~
 
-      Note: Jiang, gives the data in table 1.2, but there is a small
-      error. Jiang has a weight 9.0 for sire 31, line 3, age 3. The
-      correct value is 9.5.
+David A. Harville and Alan P. Fenech (1985). Confidence Intervals for a
+Variance Ratio, or for Heritability, in an Unbalanced Mixed Linear
+Model. *Biometrics*, 41, 137-152. https://doi.org/10.2307/2530650
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      David A. Harville and Alan P. Fenech (1985). Confidence Intervals
-      for a Variance Ratio, or for Heritability, in an Unbalanced Mixed
-      Linear Model. *Biometrics*, 41, 137-152.
-      https://doi.org/10.2307/2530650
+Jiming Jiang, Linear and Generalized Linear Mixed Models and Their
+Applications. Table 1.2.
 
-      .. rubric:: References
-         :name: references
+Andre I. Khuri, Linear Model Methodology. Table 11.5. Page 368.
+https://books.google.com/books?id=UfDvCAAAQBAJ&pg=PA164
 
-      Jiming Jiang, Linear and Generalized Linear Mixed Models and Their
-      Applications. Table 1.2.
+Daniel Gianola, Keith Hammond. Advances in Statistical Methods for
+Genetic Improvement of Livestock. Table 8.1, page 165.
 
-      Andre I. Khuri, Linear Model Methodology. Table 11.5. Page 368.
-      https://books.google.com/books?id=UfDvCAAAQBAJ&pg=PA164
+Examples
+~~~~~~~~
 
-      Daniel Gianola, Keith Hammond. Advances in Statistical Methods for
-      Genetic Improvement of Livestock. Table 8.1, page 165.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(harville.lamb)
+   dat <- harville.lamb
+   dat <- transform(dat, line=factor(line), sire=factor(sire), damage=factor(damage))
 
-         ## Not run: 
+   library(lattice)
+   bwplot(weight ~ line, dat,
+          main="harville.lamb",
+          xlab="line", ylab="birth weights")
 
-         library(agridat)
-         data(harville.lamb)
-         dat <- harville.lamb
-         dat <- transform(dat, line=factor(line), sire=factor(sire), damage=factor(damage))
-
-         library(lattice)
-         bwplot(weight ~ line, dat,
-                main="harville.lamb",
-                xlab="line", ylab="birth weights")
-
-         if(0){
-           libs(lme4, lucid)
-             
-           m1 <- lmer(weight ~  -1 + line + damage + (1|sire), data=dat)
-           summary(m1)
-           vc(m1) # Khuri reports variances 0.5171, 2.9616
-           ##      grp        var1 var2   vcov  sdcor
-           ##     sire (Intercept) <NA> 0.5171 0.7191
-           ## Residual        <NA> <NA> 2.962  1.721 
-           }
+   if(0){
+     libs(lme4, lucid)
+       
+     m1 <- lmer(weight ~  -1 + line + damage + (1|sire), data=dat)
+     summary(m1)
+     vc(m1) # Khuri reports variances 0.5171, 2.9616
+     ##      grp        var1 var2   vcov  sdcor
+     ##     sire (Intercept) <NA> 0.5171 0.7191
+     ## Residual        <NA> <NA> 2.962  1.721 
+     }
 
 
-         ## End(Not run)
+   ## End(Not run)

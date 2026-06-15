@@ -1,89 +1,75 @@
-.. container::
+======= ===============
+PhdPubs R Documentation
+======= ===============
 
-   .. container::
+Publications of PhD Candidates
+------------------------------
 
-      ======= ===============
-      PhdPubs R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Publications of PhD Candidates
-         :name: publications-of-phd-candidates
+A data set giving the number of publications by doctoral candidates in
+biochemistry in relation to various predictors, originally from Long
+(1997).
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      A data set giving the number of publications by doctoral
-      candidates in biochemistry in relation to various predictors,
-      originally from Long (1997).
+A data frame with 915 observations on the following 6 variables.
 
-      There is a large number of zero counts. Is there evidence for a
-      separate group of non-publishers?
+``articles``
+   number of articles published in the final three years of PhD studies
 
-      .. rubric:: Usage
-         :name: usage
+``female``
+   dummy variable for gender, coded ``1`` for female
 
-      .. code:: R
+``married``
+   dummy variable for marital status, coded ``1`` for married
 
-         data(PhdPubs)
+``kid5``
+   number of young children, age 5 and under
 
-      .. rubric:: Format
-         :name: format
+``phdprestige``
+   prestige of the PhD department. The higher the number the more
+   prestigious the program.
 
-      A data frame with 915 observations on the following 6 variables.
+``mentor``
+   number of publications by the mentor in the preceeding three years
 
-      ``articles``
-         number of articles published in the final three years of PhD
-         studies
+Details
+~~~~~~~
 
-      ``female``
-         dummy variable for gender, coded ``1`` for female
+There is a large number of zero counts. Is there evidence for a separate
+group of non-publishers?
 
-      ``married``
-         dummy variable for marital status, coded ``1`` for married
+In this version of the data set, ``phdprestige`` had been rounded to the
+nearest integer. A Stata version with the continuous values was
+subsequently found at https://www.stata-press.com/data/lf2/couart2.dta
 
-      ``kid5``
-         number of young children, age 5 and under
+Source
+~~~~~~
 
-      ``phdprestige``
-         prestige of the PhD department. The higher the number the more
-         prestigious the program.
+Long, J. S. (1997). *Regression Models for Categorical and Limited
+Dependent Variables*, Sage.
 
-      ``mentor``
-         number of publications by the mentor in the preceeding three
-         years
+Long, J. S. & Freese, J. (2006). *Regression Models for Categorical
+Dependent Variables Using Stata*, 2nd Ed., Stata Press.
 
-      .. rubric:: Details
-         :name: details
+Examples
+~~~~~~~~
 
-      In this version of the data set, ``phdprestige`` had been rounded
-      to the nearest integer. A Stata version with the continuous values
-      was subsequently found at
-      https://www.stata-press.com/data/lf2/couart2.dta
+.. code:: R
 
-      .. rubric:: Source
-         :name: source
 
-      Long, J. S. (1997). *Regression Models for Categorical and Limited
-      Dependent Variables*, Sage.
+   data(PhdPubs)
+   # very uninformative
+   hist(PhdPubs$articles,
+        breaks=0:19, col="pink", xlim=c(0,20),
+        xlab="Number of Articles")
 
-      Long, J. S. & Freese, J. (2006). *Regression Models for
-      Categorical Dependent Variables Using Stata*, 2nd Ed., Stata
-      Press.
+   library(vcd)
+   rootogram(goodfit(PhdPubs$articles), xlab="Number of Articles")
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(PhdPubs)
-         # very uninformative
-         hist(PhdPubs$articles, 
-              breaks=0:19, col="pink", xlim=c(0,20),
-              xlab="Number of Articles")
-
-         library(vcd)
-         rootogram(goodfit(PhdPubs$articles), xlab="Number of Articles")
-
-         # compare with negative binomial
-         rootogram(goodfit(PhdPubs$articles, type="nbinomial"), 
-             xlab="Number of Articles", main="Negative binomial")
+   # compare with negative binomial
+   rootogram(goodfit(PhdPubs$articles, type="nbinomial"),
+       xlab="Number of Articles", main="Negative binomial")

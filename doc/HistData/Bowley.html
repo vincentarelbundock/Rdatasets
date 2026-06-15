@@ -16,26 +16,18 @@ function processMathHTML() {
 
 <table style="width: 100%;"><tr><td>Bowley</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>
-Bowley's data on values of British and Irish trade, 1855-1899
-</h2>
+<h2>Bowley's data on values of British and Irish trade, 1855-1899</h2>
 
 <h3>Description</h3>
 
-<p>In one of the first statistical textbooks, Arthur Bowley (1901)
-used these data to illustrate an arithmetic and graphical analysis
-of time-series data using the total value of British and Irish
-exports from 1855-1899.  He presented a line graph of the time-series
-data, supplemented by overlaid line graphs of 3-, 5- and 10-year moving
-averages.  His goal was to show that while the initial series
-showed wide variability, moving averages made the series progressively
-smoother.
+<p>In one of the first statistical textbooks, Arthur Bowley (1901) used these
+data to illustrate an arithmetic and graphical analysis of time-series data
+using the total value of British and Irish exports from 1855-1899.  He
+presented a line graph of the time-series data, supplemented by overlaid
+line graphs of 3-, 5- and 10-year moving averages.  His goal was to show
+that while the initial series showed wide variability, moving averages made
+the series progressively smoother.
 </p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data(Bowley)</code></pre>
 
 
 <h3>Format</h3>
@@ -54,8 +46,8 @@ smoother.
 
 <h3>Source</h3>
 
-<p>Bowley, A. L. (1901). <em>Elements of Statistics</em>. London: P. S. King and Son,
-p. 151-154.
+<p>Bowley, A. L. (1901). <em>Elements of Statistics</em>. London: P. S.
+King and Son, p. 151-154.
 </p>
 <p>Digitized from Bowley's graph.
 </p>
@@ -63,7 +55,8 @@ p. 151-154.
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(Bowley)
+<pre><code class='language-R'>
+data(Bowley)
 
 # plot the data 
 with(Bowley,plot(Year, Value, type='b', lwd=2, 
@@ -76,9 +69,9 @@ running &lt;- function(x, width = 5){
   as.vector(stats::filter(x, rep(1 / width, width), sides = 2))
   }
 
-mav3&lt;-running(Bowley$Value, width=3)
-mav5&lt;-running(Bowley$Value, width=5)
-mav9&lt;-running(Bowley$Value, width=9)
+mav3 &lt;- running(Bowley$Value, width=3)
+mav5 &lt;- running(Bowley$Value, width=5)
+mav9 &lt;- running(Bowley$Value, width=9)
 lines(Bowley$Year, mav3, col='blue', lty=2)
 lines(Bowley$Year, mav5, col='green3', lty=3)
 lines(Bowley$Year, mav9, col='brown', lty=4)
@@ -91,6 +84,7 @@ library(ggplot2)
 ggplot(aes(x=Year, y=Value), data=Bowley) +
   geom_point() +
   geom_smooth(method="loess", formula=y~x)
+
 </code></pre>
 
 </main>

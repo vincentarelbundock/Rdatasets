@@ -1,81 +1,74 @@
-.. container::
+============ ===============
+comma_survey R Documentation
+============ ===============
 
-   .. container::
+Elitist, Superfluous, Or Popular? We Polled Americans on the Oxford Comma
+-------------------------------------------------------------------------
 
-      ============ ===============
-      comma_survey R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Elitist, Superfluous, Or Popular? We Polled Americans
-         on the Oxford Comma
-         :name: elitist-superfluous-or-popular-we-polled-americans-on-the-oxford-comma
+The raw data behind the story "Elitist, Superfluous, Or Popular? We
+Polled Americans on the Oxford Comma"
+https://fivethirtyeight.com/features/elitist-superfluous-or-popular-we-polled-americans-on-the-oxford-comma/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Elitist, Superfluous, Or Popular?
-      We Polled Americans on the Oxford Comma"
-      https://fivethirtyeight.com/features/elitist-superfluous-or-popular-we-polled-americans-on-the-oxford-comma/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   comma_survey
 
-      .. code:: R
+Format
+~~~~~~
 
-         comma_survey
+A data frame with 1129 rows representing respondents and 13 variables:
 
-      .. rubric:: Format
-         :name: format
+respondent_id
+   Respondent ID
 
-      A data frame with 1129 rows representing respondents and 13
-      variables:
+gender
+   Gender
 
-      respondent_id
-         Respondent ID
+age
+   Age
 
-      gender
-         Gender
+household_income
+   Household income bracket
 
-      age
-         Age
+education
+   Education level
 
-      household_income
-         Household income bracket
+location
+   Location (census region)
 
-      education
-         Education level
+more_grammar_correct
+   In your opinion, which sentence is more grammatically correct?
 
-      location
-         Location (census region)
+heard_oxford_comma
+   Prior to reading about it above, had you heard of the serial (or
+   Oxford) comma?
 
-      more_grammar_correct
-         In your opinion, which sentence is more grammatically correct?
+care_oxford_comma
+   How much, if at all, do you care about the use (or lack thereof) of
+   the serial (or Oxford) comma in grammar?
 
-      heard_oxford_comma
-         Prior to reading about it above, had you heard of the serial
-         (or Oxford) comma?
+write_following
+   How would you write the following sentence?
 
-      care_oxford_comma
-         How much, if at all, do you care about the use (or lack
-         thereof) of the serial (or Oxford) comma in grammar?
+data_singular_plural
+   When faced with using the word "data", have you ever spent time
+   considering if the word was a singular or plural noun?
 
-      write_following
-         How would you write the following sentence?
+care_data
+   How much, if at all, do you care about the debate over the use of the
+   word "data" as a singular or plural noun?
 
-      data_singular_plural
-         When faced with using the word "data", have you ever spent time
-         considering if the word was a singular or plural noun?
+care_proper_grammar
+   In your opinion, how important or unimportant is proper use of
+   grammar?
 
-      care_data
-         How much, if at all, do you care about the debate over the use
-         of the word "data" as a singular or plural noun?
+Source
+~~~~~~
 
-      care_proper_grammar
-         In your opinion, how important or unimportant is proper use of
-         grammar?
-
-      .. rubric:: Source
-         :name: source
-
-      See
-      https://github.com/fivethirtyeight/data/tree/master/comma-survey.
+See https://github.com/fivethirtyeight/data/tree/master/comma-survey.

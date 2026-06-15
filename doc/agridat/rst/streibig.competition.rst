@@ -1,106 +1,102 @@
-.. container::
+==================== ===============
+streibig.competition R Documentation
+==================== ===============
 
-   .. container::
+Competition experiment between barley and sinapis.
+--------------------------------------------------
 
-      ==================== ===============
-      streibig.competition R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Competition experiment between barley and sinapis.
-         :name: competition-experiment-between-barley-and-sinapis.
+Competition experiment between barley and sinapis, at different planting
+rates.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Competition experiment between barley and sinapis, at different
-      planting rates.
+A data frame with 135 observations on the following 8 variables.
 
-      .. rubric:: Format
-         :name: format
+``pot``
+   pot number
 
-      A data frame with 135 observations on the following 8 variables.
+``bseeds``
+   barley seeds sown
 
-      ``pot``
-         pot number
+``sseeds``
+   sinapis seeds sown
 
-      ``bseeds``
-         barley seeds sown
+``block``
+   block
 
-      ``sseeds``
-         sinapis seeds sown
+``bfwt``
+   barley fresh weight
 
-      ``block``
-         block
+``sfwt``
+   sinapis fresh weight
 
-      ``bfwt``
-         barley fresh weight
+``bdwt``
+   barley dry weight
 
-      ``sfwt``
-         sinapis fresh weight
+``sdwt``
+   sinapis dry weight
 
-      ``bdwt``
-         barley dry weight
+Details
+~~~~~~~
 
-      ``sdwt``
-         sinapis dry weight
+The source data (in McCullagh) also contains a count of plants harvested
+(not included here) that sometimes is greater than the number of seeds
+planted.
 
-      .. rubric:: Details
-         :name: details
+Used with permission of Jens Streibig.
 
-      The source data (in McCullagh) also contains a count of plants
-      harvested (not included here) that sometimes is greater than the
-      number of seeds planted.
+Source
+~~~~~~
 
-      Used with permission of Jens Streibig.
+Peter McCullagh, John A. Nelder. Generalized Linear Models, page
+318-320.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Peter McCullagh, John A. Nelder. Generalized Linear Models, page
-      318-320.
+Oliver Schabenberger and Francis J Pierce. 2002. Contemporary
+Statistical Models for the Plant and Soil Sciences. CRC Press. Page
+370-375.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Oliver Schabenberger and Francis J Pierce. 2002. Contemporary
-      Statistical Models for the Plant and Soil Sciences. CRC Press.
-      Page 370-375.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
+     
+   library(agridat)
 
-      .. code:: R
+   data(streibig.competition)
+   dat <- streibig.competition
 
-         ## Not run: 
-           
-         library(agridat)
+   # See Schaberger and Pierce, pages 370+
+   # Consider only the mono-species barley data (no competition from sinapis)
+   d1 <- subset(dat, sseeds<1)
+   d1 <- transform(d1, x=bseeds, y=bdwt, block=factor(block))
 
-         data(streibig.competition)
-         dat <- streibig.competition
+   # Inverse yield looks like it will be a good fit for Gamma's inverse link
+   libs(lattice)
+   xyplot(1/y~x, data=d1, group=block, auto.key=list(columns=3),
+          xlab="Seeding rate", ylab="Inverse yield of barley dry weight",
+          main="streibig.competition")
 
-         # See Schaberger and Pierce, pages 370+
-         # Consider only the mono-species barley data (no competition from sinapis)
-         d1 <- subset(dat, sseeds<1)
-         d1 <- transform(d1, x=bseeds, y=bdwt, block=factor(block))
-
-         # Inverse yield looks like it will be a good fit for Gamma's inverse link
-         libs(lattice)
-         xyplot(1/y~x, data=d1, group=block, auto.key=list(columns=3),
-                xlab="Seeding rate", ylab="Inverse yield of barley dry weight",
-                main="streibig.competition")
-
-         # linear predictor is quadratic, with separate intercept and slope per block
-         m1 <- glm(y ~ block + block:x + x+I(x^2), data=d1,
-                   family=Gamma(link="inverse"))
-         # Predict and plot
-         newdf <- expand.grid(x=seq(0,120,length=50), block=factor(c('B1','B2','B3')) )
-         newdf$pred <- predict(m1, new=newdf, type='response')
-         plot(y~x, data=d1, col=block, main="streibig.competition - by block",
-              xlab="Barley seeds", ylab="Barley dry weight")
-         for(bb in 1:3){
-           newbb <- subset(newdf, block==c('B1','B2','B3')[bb])
-           lines(pred~x, data=newbb, col=bb)
-         }
+   # linear predictor is quadratic, with separate intercept and slope per block
+   m1 <- glm(y ~ block + block:x + x+I(x^2), data=d1,
+             family=Gamma(link="inverse"))
+   # Predict and plot
+   newdf <- expand.grid(x=seq(0,120,length=50), block=factor(c('B1','B2','B3')) )
+   newdf$pred <- predict(m1, new=newdf, type='response')
+   plot(y~x, data=d1, col=block, main="streibig.competition - by block",
+        xlab="Barley seeds", ylab="Barley dry weight")
+   for(bb in 1:3){
+     newbb <- subset(newdf, block==c('B1','B2','B3')[bb])
+     lines(pred~x, data=newbb, col=bb)
+   }
 
 
-         ## End(Not run)
+   ## End(Not run)

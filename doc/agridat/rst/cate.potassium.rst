@@ -1,98 +1,93 @@
-.. container::
+============== ===============
+cate.potassium R Documentation
+============== ===============
 
-   .. container::
+Relative cotton yield for different soil potassium concentrations
+-----------------------------------------------------------------
 
-      ============== ===============
-      cate.potassium R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Relative cotton yield for different soil potassium
-         concentrations
-         :name: relative-cotton-yield-for-different-soil-potassium-concentrations
+Relative cotton yield for different soil potassium concentrations
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Relative cotton yield for different soil potassium concentrations
+A data frame with 24 observations on the following 2 variables.
 
-      .. rubric:: Format
-         :name: format
+``yield``
+   Relative yield
 
-      A data frame with 24 observations on the following 2 variables.
+``potassium``
+   Soil potassium, ppm
 
-      ``yield``
-         Relative yield
+Details
+~~~~~~~
 
-      ``potassium``
-         Soil potassium, ppm
+Cate & Nelson used this data to determine the minimum optimal amount of
+soil potassium to achieve maximum yield.
 
-      .. rubric:: Details
-         :name: details
+Note, Fig 1 of Cate & Nelson does not match the data from Table 2. It
+sort of appears that points with high-concentrations of potassium were
+shifted left to a truncation point. Also, the calculations below do not
+quite match the results in Table 1. Perhaps the published data were
+rounded?
 
-      Cate & Nelson used this data to determine the minimum optimal
-      amount of soil potassium to achieve maximum yield.
+Source
+~~~~~~
 
-      Note, Fig 1 of Cate & Nelson does not match the data from Table 2.
-      It sort of appears that points with high-concentrations of
-      potassium were shifted left to a truncation point. Also, the
-      calculations below do not quite match the results in Table 1.
-      Perhaps the published data were rounded?
+Cate, R.B. and Nelson, L.A. (1971). A simple statistical procedure for
+partitioning soil test correlation data into two classes. *Soil Science
+Society of America Journal*, 35, 658–660.
+https://doi.org/10.2136/sssaj1971.03615995003500040048x
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Cate, R.B. and Nelson, L.A. (1971). A simple statistical procedure
-      for partitioning soil test correlation data into two classes.
-      *Soil Science Society of America Journal*, 35, 658–660.
-      https://doi.org/10.2136/sssaj1971.03615995003500040048x
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(cate.potassium)
+   dat <- cate.potassium
+   names(dat) <- c('y','x')
 
-         ## Not run: 
+   CateNelson <- function(dat){
+     dat <- dat[order(dat$x),] # Sort the data by x
+     x <- dat$x
+     y <- dat$y
 
-         library(agridat)
-         data(cate.potassium)
-         dat <- cate.potassium
-         names(dat) <- c('y','x')
+     # Create a data.frame to store the results
+     out <- data.frame(x=NA, mean1=NA, css1=NA, mean2=NA, css2=NA, r2=NA)
 
-         CateNelson <- function(dat){
-           dat <- dat[order(dat$x),] # Sort the data by x
-           x <- dat$x
-           y <- dat$y
+     css <- function(x) { var(x) * (length(x)-1) }
+     tcss <- css(y) # Total corrected sum of squares
 
-           # Create a data.frame to store the results
-           out <- data.frame(x=NA, mean1=NA, css1=NA, mean2=NA, css2=NA, r2=NA)
+     for(i in 2:(length(y)-2)){
+       y1 <- y[1:i]
+       y2 <- y[-(1:i)]
 
-           css <- function(x) { var(x) * (length(x)-1) }
-           tcss <- css(y) # Total corrected sum of squares
+       out[i, 'x'] <- x[i]
+       out[i, 'mean1'] <- mean(y1)
+       out[i, 'mean2'] <- mean(y2)
+       out[i, 'css1'] <- css1 <- css(y1)
+       out[i, 'css2'] <- css2 <- css(y2)
+       out[i, 'r2'] <-  ( tcss - (css1+css2)) / tcss
+     }
+     return(out)
+   }
 
-           for(i in 2:(length(y)-2)){
-             y1 <- y[1:i]
-             y2 <- y[-(1:i)]
+   cn <- CateNelson(dat)
+   ix <- which.max(cn$r2)
+   with(dat, plot(y~x, ylim=c(0,110), xlab="Potassium", ylab="Yield"))
+   title("cate.potassium - Cate-Nelson analysis")
+   abline(v=dat$x[ix], col="skyblue")
+   abline(h=(dat$y[ix] + dat$y[ix+1])/2, col="skyblue")
 
-             out[i, 'x'] <- x[i]
-             out[i, 'mean1'] <- mean(y1)
-             out[i, 'mean2'] <- mean(y2)
-             out[i, 'css1'] <- css1 <- css(y1)
-             out[i, 'css2'] <- css2 <- css(y2)
-             out[i, 'r2'] <-  ( tcss - (css1+css2)) / tcss
-           }
-           return(out)
-         }
+     # another approach with similar results
+     # https://joe.org/joe/2013october/tt1.php
+     libs("rcompanion")
+     cateNelson(dat$x, dat$y, plotit=0)
 
-         cn <- CateNelson(dat)
-         ix <- which.max(cn$r2)
-         with(dat, plot(y~x, ylim=c(0,110), xlab="Potassium", ylab="Yield"))
-         title("cate.potassium - Cate-Nelson analysis")
-         abline(v=dat$x[ix], col="skyblue")
-         abline(h=(dat$y[ix] + dat$y[ix+1])/2, col="skyblue")
-
-           # another approach with similar results
-           # https://joe.org/joe/2013october/tt1.php
-           libs("rcompanion")
-           cateNelson(dat$x, dat$y, plotit=0)
-
-         ## End(Not run)
+   ## End(Not run)

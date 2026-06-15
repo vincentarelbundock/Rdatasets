@@ -1,52 +1,47 @@
-.. container::
+============ ===============
+unisex_names R Documentation
+============ ===============
 
-   .. container::
+The Most Common Unisex Names In America: Is Yours One Of Them?
+--------------------------------------------------------------
 
-      ============ ===============
-      unisex_names R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The Most Common Unisex Names In America: Is Yours One
-         Of Them?
-         :name: the-most-common-unisex-names-in-america-is-yours-one-of-them
+The raw data behind the story "The Most Common Unisex Names In America:
+Is Yours One Of Them?"
+https://fivethirtyeight.com/features/there-are-922-unisex-names-in-america-is-yours-one-of-them/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "The Most Common Unisex Names In
-      America: Is Yours One Of Them?"
-      https://fivethirtyeight.com/features/there-are-922-unisex-names-in-america-is-yours-one-of-them/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   unisex_names
 
-      .. code:: R
+Format
+~~~~~~
 
-         unisex_names
+A data frame with 919 rows representing names and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+name
+   First names from the Social Security Administration
 
-      A data frame with 919 rows representing names and 5 variables:
+total
+   Total number of living Americans with the name
 
-      name
-         First names from the Social Security Administration
+male_share
+   Percentage of people with the name who are male
 
-      total
-         Total number of living Americans with the name
+female_share
+   Percentage of people with the name who are female
 
-      male_share
-         Percentage of people with the name who are male
+gap
+   Gap between male_share and female_share
 
-      female_share
-         Percentage of people with the name who are female
+Source
+~~~~~~
 
-      gap
-         Gap between male_share and female_share
-
-      .. rubric:: Source
-         :name: source
-
-      Social Security Administration
-      https://www.ssa.gov/oact/babynames/limits.html. See
-      https://github.com/fivethirtyeight/data/tree/master/unisex-names.
+Social Security Administration
+https://www.ssa.gov/oact/babynames/limits.html. See
+https://github.com/fivethirtyeight/data/tree/master/unisex-names.

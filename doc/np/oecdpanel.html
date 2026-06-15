@@ -88,9 +88,9 @@ mobility,&rdquo; Journal of Econometrics, 136, 483-508
 <h3>Examples</h3>
 
 <pre><code class='language-R'>data("oecdpanel")
-attach(oecdpanel)
+with(oecdpanel, {
 summary(oecdpanel)
-detach(oecdpanel)
+})
 </code></pre>
 
 </main>

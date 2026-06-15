@@ -1,0 +1,102 @@
+<!DOCTYPE html><html><head><title>R: Concussions in the National Football League (2012–2014)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>nfl_concussions_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Concussions in the National Football League (2012–2014)</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, nfl_concussions_tbl_df, is a tibble containing detailed information on concussion
+injuries that occurred in the National Football League (NFL) from 2012 to 2014. The dataset includes
+hundreds of recorded concussion cases, capturing information such as player identity, team, game,
+date of injury, position, whether the injury occurred during pre-season, and multiple injury-related
+details including weeks injured, games missed, and reported injury type.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(nfl_concussions_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 392 observations and 18 variables:
+</p>
+
+<dl>
+<dt>ID</dt><dd><p>Unique identifier for each concussion record (character)</p>
+</dd>
+<dt>Player</dt><dd><p>Name of the player who sustained the concussion (character)</p>
+</dd>
+<dt>Team</dt><dd><p>Team of the injured player (character)</p>
+</dd>
+<dt>Game</dt><dd><p>Game in which the injury occurred (character)</p>
+</dd>
+<dt>Date</dt><dd><p>Date of the concussion incident (character)</p>
+</dd>
+<dt>Opposing Team</dt><dd><p>Opponent team during the game (character)</p>
+</dd>
+<dt>Position</dt><dd><p>Player's position (character)</p>
+</dd>
+<dt>Pre-Season Injury?</dt><dd><p>Indicates if the injury occurred during pre-season (character)</p>
+</dd>
+<dt>Winning Team?</dt><dd><p>Indicates if the player’s team won the game (character)</p>
+</dd>
+<dt>Week of Injury</dt><dd><p>Week number of the season when the injury occurred (numeric)</p>
+</dd>
+<dt>Season</dt><dd><p>NFL season year associated with the injury (character)</p>
+</dd>
+<dt>Weeks Injured</dt><dd><p>Number of weeks the player was injured (numeric)</p>
+</dd>
+<dt>Games Missed</dt><dd><p>Number of games missed due to the concussion (numeric)</p>
+</dd>
+<dt>Unknown Injury?</dt><dd><p>Indicates if the injury type was unknown (character)</p>
+</dd>
+<dt>Reported Injury Type</dt><dd><p>Reported type of concussion injury (character)</p>
+</dd>
+<dt>Total Snaps</dt><dd><p>Total snaps played before injury (numeric)</p>
+</dd>
+<dt>Play Time After Injury</dt><dd><p>Playtime after injury occurred (character)</p>
+</dd>
+<dt>Average Playtime Before Injury</dt><dd><p>Average playtime before injury (character)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as nfl_concussions_tbl_df to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+NeuroDataSets package and assists users in identifying its specific characteristics.
+The suffix tbl_df indicates that the dataset is a tibble (a modern data frame).
+The original content has not been modified in any way. Variable names and values are provided exactly
+as they appear in the source.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from Kaggle: <a href="https://www.kaggle.com/datasets/rishidamarla/concussions-in-the-nfl-20122014">https://www.kaggle.com/datasets/rishidamarla/concussions-in-the-nfl-20122014</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

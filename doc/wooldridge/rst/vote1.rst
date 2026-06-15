@@ -1,66 +1,62 @@
-.. container::
+===== ===============
+vote1 R Documentation
+===== ===============
 
-   .. container::
+vote1
+-----
 
-      ===== ===============
-      vote1 R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: vote1
-         :name: vote1
+Wooldridge Source: From M. Barone and G. Ujifusa, The Almanac of
+American Politics, 1992. Washington, DC: National Journal. Data loads
+lazily.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Wooldridge Source: From M. Barone and G. Ujifusa, The Almanac of
-      American Politics, 1992. Washington, DC: National Journal. Data
-      loads lazily.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data('vote1')
 
-      .. code:: R
+Format
+~~~~~~
 
-         data('vote1')
+A data.frame with 173 observations on 10 variables:
 
-      .. rubric:: Format
-         :name: format
+- **state:** state postal code
 
-      A data.frame with 173 observations on 10 variables:
+- **district:** congressional district
 
-      -  **state:** state postal code
+- **democA:** =1 if A is democrat
 
-      -  **district:** congressional district
+- **voteA:** percent vote for A
 
-      -  **democA:** =1 if A is democrat
+- **expendA:** camp. expends. by A, $1000s
 
-      -  **voteA:** percent vote for A
+- **expendB:** camp. expends. by B, $1000s
 
-      -  **expendA:** camp. expends. by A, $1000s
+- **prtystrA:** percent vote for president
 
-      -  **expendB:** camp. expends. by B, $1000s
+- **lexpendA:** log(expendA)
 
-      -  **prtystrA:** percent vote for president
+- **lexpendB:** log(expendB)
 
-      -  **lexpendA:** log(expendA)
+- **shareA:** 100*(expendA/(expendA+expendB))
 
-      -  **lexpendB:** log(expendB)
+Used in Text
+~~~~~~~~~~~~
 
-      -  **shareA:** 100*(expendA/(expendA+expendB))
+pages 34, 39, 164, 221-222, 299, 699
 
-      .. rubric:: Used in Text
-         :name: used-in-text
+Source
+~~~~~~
 
-      pages 34, 39, 164, 221-222, 299, 699
+https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-          str(vote1)
+    str(vote1)

@@ -1,101 +1,97 @@
-.. container::
+=========== ===============
+AllstarFull R Documentation
+=========== ===============
 
-   .. container::
+AllstarFull table
+-----------------
 
-      =========== ===============
-      AllstarFull R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: AllstarFull table
-         :name: allstarfull-table
+All Star appearances by players
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      All Star appearances by players
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(AllstarFull)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(AllstarFull)
+A data frame with 6425 observations on the following 8 variables.
 
-      .. rubric:: Format
-         :name: format
+``playerID``
+   Player ID code
 
-      A data frame with 5655 observations on the following 8 variables.
+``yearID``
+   Year
 
-      ``playerID``
-         Player ID code
+``gameNum``
+   Game number (for years in which more than one game was played)
 
-      ``yearID``
-         Year
+``gameID``
+   Game ID code
 
-      ``gameNum``
-         Game number (for years in which more than one game was played)
+``teamID``
+   Team; a factor
 
-      ``gameID``
-         Game ID code
+``lgID``
+   League; a factor with levels ``AL`` ``NL``
 
-      ``teamID``
-         Team; a factor
+``GP``
+   Game played (zero if player did not appear in game)
 
-      ``lgID``
-         League; a factor with levels ``AL`` ``NL``
+``startingPos``
+   If the player started, what position he played
 
-      ``GP``
-         Game played (zero if player did not appear in game)
+Source
+~~~~~~
 
-      ``startingPos``
-         If the player started, what position he played
+Lahman, S. (2026) Lahman's Baseball Database, 1871-2025, 2026 version,
+https://sabr.org/lahman-database/
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Lahman, S. (2025) Lahman's Baseball Database, 1871-2024, 2025
-      version, https://sabr.org/lahman-database/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   data(AllstarFull)
 
-      .. code:: R
+   # find number of appearances by players in the All Star games
+   player_appearances <- with(AllstarFull, rev(sort(table(playerID))))
 
-         data(AllstarFull)
+   # How many All-Star players, in total?
+   length(player_appearances)
 
-         # find number of appearances by players in the All Star games
-         player_appearances <- with(AllstarFull, rev(sort(table(playerID))))
+   # density plot of the whole distribution
+   plot(density(player_appearances), main="Player appearances in All Star Games")
+   rug(jitter(player_appearances))
 
-         # How many All-Star players, in total?
-         length(player_appearances)
-
-         # density plot of the whole distribution
-         plot(density(player_appearances), main="Player appearances in All Star Games")
-         rug(jitter(player_appearances))
-
-         # who has played in more than 10 ASGs?
-         player_appearances[player_appearances > 10]
-         hist(player_appearances[player_appearances > 10])
+   # who has played in more than 10 ASGs?
+   player_appearances[player_appearances > 10]
+   hist(player_appearances[player_appearances > 10])
 
 
-         # Hank Aaron's All-Star record:
-         subset(AllstarFull, playerID == "aaronha01")
+   # Hank Aaron's All-Star record:
+   subset(AllstarFull, playerID == "aaronha01")
 
-         # Years that Stan Musial played in the ASG:
-         with(AllstarFull, yearID[playerID == "musiast01"])
+   # Years that Stan Musial played in the ASG:
+   with(AllstarFull, yearID[playerID == "musiast01"])
 
-         # Starting positions he played (NA means did not start)
-         with(AllstarFull, startingPos[playerID == "musiast01"])
+   # Starting positions he played (NA means did not start)
+   with(AllstarFull, startingPos[playerID == "musiast01"])
 
-         # All-Star rosters from the 1966 ASG
-         subset(AllstarFull, gameID == "NLS196607120")
+   # All-Star rosters from the 1966 ASG
+   subset(AllstarFull, gameID == "NLS196607120")
 
-         # All-Stars from the Washington Nationals
-         subset(AllstarFull, teamID == "WAS")
+   # All-Stars from the Washington Nationals
+   subset(AllstarFull, teamID == "WAS")
 
-         # Teams with the fewest All-Stars
-         rare <- names(which(table(AllstarFull$teamID) < 10))
+   # Teams with the fewest All-Stars
+   rare <- names(which(table(AllstarFull$teamID) < 10))
 
-         # Records associated with the 'rare' teams:
-         # (There are a few teamID typos: can you spot them?)
-         subset(AllstarFull, teamID %in% rare)
+   # Records associated with the 'rare' teams:
+   # (There are a few teamID typos: can you spot them?)
+   subset(AllstarFull, teamID %in% rare)

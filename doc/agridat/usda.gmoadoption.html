@@ -1,0 +1,96 @@
+<!DOCTYPE html><html><head><title>R: Adoption of genetically modified crops in the United States</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>usda.gmoadoption</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Adoption of genetically modified crops in the United States
+</h2>
+
+<h3>Description</h3>
+
+<p>Adoption of genetically modified crops in the U.S. from 1996 to 2022.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("usda.gmoadoption")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 145 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>Year of crop</p>
+</dd>
+<dt><code>crop</code></dt><dd><p>Crop type</p>
+</dd>
+<dt><code>percent</code></dt><dd><p>Percent of planted acres</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>HT indicates herbicide-tolerant crops.
+Bt indicates insect-resistant (Bacillus thuringiensis) crops.
+The &quot;percent&quot; column is the percentage of planted acres for each
+crop that were genetically modified.
+HT/Bt for corn and cotton are not mutually exclusive categories. For example,
+as time progressed corn hybrids tended to be both HT and Bt.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Adoption of Genetically Engineered Crops in the United States - Recent Trends in GE Adoption
+USDA Economic Research Service. Accessed 2025-09-30.
+https://www.ers.usda.gov/data-products/adoption-of-genetically-engineered-crops-in-the-united-states/recent-trends-in-ge-adoption
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+data(usda.gmoadoption)
+dat &lt;- usda.gmoadoption
+library(ggplot2)
+ggplot(dat, aes(x = year, y = percent, color = crop)) +
+  geom_point() +
+  geom_line() +
+  labs(
+    title = "Adoption of Genetically Engineered Crops in the U.S.",
+    y = "Percentage of acres for each crop"
+  ) +
+  theme_minimal()
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

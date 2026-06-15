@@ -110,9 +110,9 @@ Approach</em>, South-Western College Publishing.
 <h3>Examples</h3>
 
 <pre><code class='language-R'>data("wage1")
-attach(wage1)
+with(wage1, {
 summary(wage1)
-detach(wage1)
+})
 </code></pre>
 
 </main>

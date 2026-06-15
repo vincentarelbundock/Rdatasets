@@ -1,0 +1,99 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of cucumber in North Carolina</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>wehner.cucumber.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial  of cucumber in North Carolina
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial  of cucumber in North Carolina
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("wehner.cucumber.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 150 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row ordinate</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column ordinate</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield per plot in number of fruit</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>A uniformity trial was planted in July 1982 near Clinton, North
+Carolina. Harvested September when 10
+Yield data were considered missing in plots where the plant stand was
+at all questionable.
+</p>
+<p>Seeds for the pickling variety 'Calypso' were planted on raised beds
+in rows 1.5 m apart. Each row was 25 plots 1.5 m long.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Todd C. Wehner. (1984).
+Variation for Yield within Locations in Homogeneous and Heterogeneous Cucumber Populations
+Cucurbit Genetics Cooperative Report, 7, 33-34.
+https://cucurbit.info/1984/07/variation-for-yield-within-locations-in-homogeneous-and-heterogeneous-cucumber-populations/
+</p>
+
+
+<h3>References</h3>
+
+<p>William H. Swallow and todd C. Wehner (1986).
+Optimum plot size determination and its application to cucumber yield
+trials.
+Euphytica, 35, 421-432.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  libs(agridat)
+  data(wehner.cucumber.uniformity)
+  dat &lt;- wehner.cucumber.uniformity
+
+  require(desplot)
+  desplot(dat, yield ~ col*row,
+          flip=TRUE, tick=TRUE, aspect=(25 * 1.5)/(22 * 1.5),
+        main="wehner.cucumber.uniformity")
+
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

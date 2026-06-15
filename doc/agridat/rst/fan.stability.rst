@@ -1,76 +1,72 @@
-.. container::
+============= ===============
+fan.stability R Documentation
+============= ===============
 
-   .. container::
+Multi-environment trial of maize hybrids in China
+-------------------------------------------------
 
-      ============= ===============
-      fan.stability R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Multi-environment trial of maize hybrids in China
-         :name: multi-environment-trial-of-maize-hybrids-in-china
+Yield of 13 hybrids, grown in 10 locations across 2 years. Conducted in
+Yunnan, China.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Yield of 13 hybrids, grown in 10 locations across 2 years.
-      Conducted in Yunnan, China.
+A data frame with 260 observations on the following 5 variables.
 
-      .. rubric:: Format
-         :name: format
+``gen``
+   genotype
 
-      A data frame with 260 observations on the following 5 variables.
+``maturity``
+   maturity, days
 
-      ``gen``
-         genotype
+``year``
+   year
 
-      ``maturity``
-         maturity, days
+``loc``
+   location
 
-      ``year``
-         year
+``yield``
+   yield, Mg/ha
 
-      ``loc``
-         location
+Details
+~~~~~~~
 
-      ``yield``
-         yield, Mg/ha
+Data are the mean of 3 reps.
 
-      .. rubric:: Details
-         :name: details
+These data were used to conduct a stability analysis of yield.
 
-      Data are the mean of 3 reps.
+Used with permission of Manjit Kang.
 
-      These data were used to conduct a stability analysis of yield.
+Source
+~~~~~~
 
-      Used with permission of Manjit Kang.
+Fan, X.M. and Kang, M.S. and Chen, H. and Zhang, Y. and Tan, J. and Xu,
+C. (2007). Yield stability of maize hybrids evaluated in
+multi-environment trials in Yunnan, China. Agronomy Journal, 99,
+220-228. https://doi.org/10.2134/agronj2006.0144
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Fan, X.M. and Kang, M.S. and Chen, H. and Zhang, Y. and Tan, J.
-      and Xu, C. (2007). Yield stability of maize hybrids evaluated in
-      multi-environment trials in Yunnan, China. Agronomy Journal, 99,
-      220-228. https://doi.org/10.2134/agronj2006.0144
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(fan.stability)
+   dat <- fan.stability
 
-         ## Not run: 
+   dat$env <- factor(paste(dat$loc, dat$year, sep=""))
+   libs(lattice)
+   dotplot(gen~yield|env, dat, main="fan.stability")
 
-         library(agridat)
-         data(fan.stability)
-         dat <- fan.stability
-
-         dat$env <- factor(paste(dat$loc, dat$year, sep=""))
-         libs(lattice)
-         dotplot(gen~yield|env, dat, main="fan.stability")
-
-         libs(reshape2, agricolae)
-         dm <- acast(dat, gen~env, value.var='yield')
-         # Use 0.464 as pooled error from ANOVA.  Calculate yield mean/stability.
-         stability.par(dm, rep=3, MSerror=0.464) # Table 5 of Fan et al.
+   libs(reshape2, agricolae)
+   dm <- acast(dat, gen~env, value.var='yield')
+   # Use 0.464 as pooled error from ANOVA.  Calculate yield mean/stability.
+   stability.par(dm, rep=3, MSerror=0.464) # Table 5 of Fan et al.
 
 
-         ## End(Not run)
+   ## End(Not run)

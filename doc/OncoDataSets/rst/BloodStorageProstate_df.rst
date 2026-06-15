@@ -1,113 +1,107 @@
-.. container::
+======================= ===============
+BloodStorageProstate_df R Documentation
+======================= ===============
 
-   .. container::
+Effects of Blood Storage on Prostate Cancer Study
+-------------------------------------------------
 
-      ======================= ===============
-      BloodStorageProstate_df R Documentation
-      ======================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Effects of Blood Storage on Prostate Cancer Study
-         :name: effects-of-blood-storage-on-prostate-cancer-study
+This dataset, BloodStorageProstate_df, is a data frame containing data
+on 316 men who underwent radical prostatectomy and received a
+transfusion during or within 30 days of the surgery. The dataset
+includes demographic, baseline, and prognostic factors, as well as data
+on the time to biochemical recurrence of prostate cancer, as indicated
+by prostate serum antigen (PSA) levels. The main exposure of interest
+was the red blood cell (RBC) storage duration group, and the outcome of
+interest was time to PSA cancer recurrence.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, BloodStorageProstate_df, is a data frame containing
-      data on 316 men who underwent radical prostatectomy and received a
-      transfusion during or within 30 days of the surgery. The dataset
-      includes demographic, baseline, and prognostic factors, as well as
-      data on the time to biochemical recurrence of prostate cancer, as
-      indicated by prostate serum antigen (PSA) levels. The main
-      exposure of interest was the red blood cell (RBC) storage duration
-      group, and the outcome of interest was time to PSA cancer
-      recurrence.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(BloodStorageProstate_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(BloodStorageProstate_df)
+A data frame with 316 observations and 20 variables:
 
-      .. rubric:: Format
-         :name: format
+RBC.Age.Group
+   Age group of red blood cells (numeric).
 
-      A data frame with 316 observations and 20 variables:
+Median.RBC.Age
+   Median age of red blood cells (numeric).
 
-      RBC.Age.Group
-         Age group of red blood cells (numeric).
+Age
+   Patient's age (numeric).
 
-      Median.RBC.Age
-         Median age of red blood cells (numeric).
+AA
+   African American status (numeric).
 
-      Age
-         Patient's age (numeric).
+FamHx
+   Family history of prostate cancer (numeric).
 
-      AA
-         African American status (numeric).
+PVol
+   Prostate volume (numeric).
 
-      FamHx
-         Family history of prostate cancer (numeric).
+TVol
+   Tumor volume (numeric).
 
-      PVol
-         Prostate volume (numeric).
+T.Stage
+   Tumor stage (numeric).
 
-      TVol
-         Tumor volume (numeric).
+bGS
+   Biopsy grade score (numeric).
 
-      T.Stage
-         Tumor stage (numeric).
+BN+
+   Bone metastasis status (numeric).
 
-      bGS
-         Biopsy grade score (numeric).
+OrganConfined
+   Organ confinement status (numeric).
 
-      BN+
-         Bone metastasis status (numeric).
+PreopPSA
+   Preoperative prostate serum antigen level (numeric).
 
-      OrganConfined
-         Organ confinement status (numeric).
+PreopTherapy
+   Preoperative therapy received (numeric).
 
-      PreopPSA
-         Preoperative prostate serum antigen level (numeric).
+Units
+   Number of blood transfusion units (numeric).
 
-      PreopTherapy
-         Preoperative therapy received (numeric).
+sGS
+   Surgical Gleason score (numeric).
 
-      Units
-         Number of blood transfusion units (numeric).
+AnyAdjTherapy
+   Any adjuvant therapy received (numeric).
 
-      sGS
-         Surgical Gleason score (numeric).
+AdjRadTherapy
+   Adjuvant radiation therapy received (numeric).
 
-      AnyAdjTherapy
-         Any adjuvant therapy received (numeric).
+Recurrence
+   Cancer recurrence status (numeric).
 
-      AdjRadTherapy
-         Adjuvant radiation therapy received (numeric).
+Censor
+   Censoring status (numeric).
 
-      Recurrence
-         Cancer recurrence status (numeric).
+TimeToRecurrence
+   Time to biochemical recurrence in months (numeric).
 
-      Censor
-         Censoring status (numeric).
+Details
+~~~~~~~
 
-      TimeToRecurrence
-         Time to biochemical recurrence in months (numeric).
+The dataset name has been kept as 'BloodStorageProstate_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the OncoDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'\_df' indicates that the dataset is a data frame. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'BloodStorageProstate_df' to
-      avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The suffix '\_df' indicates that the dataset is a
-      data frame. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the medicaldata package. Cata et al. (2011).
-      \*Blood Storage Duration and Biochemical Recurrence of Cancer
-      after Radical Prostatectomy\*. Mayo Clinic Proceedings, 86(2),
-      120–127.
+Data taken from the medicaldata package. Cata et al. (2011). \*Blood
+Storage Duration and Biochemical Recurrence of Cancer after Radical
+Prostatectomy\*. Mayo Clinic Proceedings, 86(2), 120–127.

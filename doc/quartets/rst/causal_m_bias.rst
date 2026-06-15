@@ -1,46 +1,41 @@
-.. container::
+============= ===============
+causal_m_bias R Documentation
+============= ===============
 
-   .. container::
+M-Bias Data
+-----------
 
-      ============= ===============
-      causal_m_bias R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: M-Bias Data
-         :name: m-bias-data
+This dataset contains 100 observations, generated under the following
+mechanism: U1 ~ N(0, 1) U2 ~ N(0, 1) Z ~ 8 U1 + U2 + N(0, 1) (measured
+factor) X ~ U1 + N(0, 1) (exposure) Y ~ X + U2 + N(0, 1) (outcome)
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains 100 observations, generated under the
-      following mechanism: U1 ~ N(0, 1) U2 ~ N(0, 1) Z ~ 8 U1 + U2 +
-      N(0, 1) (measured factor) X ~ U1 + N(0, 1) (exposure) Y ~ X + U2 +
-      N(0, 1) (outcome)
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   causal_m_bias
 
-      .. code:: R
+Format
+~~~~~~
 
-         causal_m_bias
+A dataframe with 100 rows and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+- ``u1``: an unknown factor
 
-      A dataframe with 100 rows and 5 variables:
+- ``u2``: an unknown factor
 
-      -  ``u1``: an unknown factor
+- ``covariate``: a known factor
 
-      -  ``u2``: an unknown factor
+- ``exposure``: exposure
 
-      -  ``covariate``: a known factor
+- ``outcome``: outcome
 
-      -  ``exposure``: exposure
+References
+~~~~~~~~~~
 
-      -  ``outcome``: outcome
-
-      .. rubric:: References
-         :name: references
-
-      D'Agostino McGowan L, Barrett M (2023). Causal inference is not a
-      statistical problem. Preprint arXiv:2304.02683v1.
+D'Agostino McGowan L, Barrett M (2023). Causal inference is not a
+statistical problem. Preprint arXiv:2304.02683v1.

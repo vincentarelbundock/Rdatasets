@@ -1,46 +1,39 @@
-.. container::
+====== ===============
+Muscle R Documentation
+====== ===============
 
-   .. container::
+Contraction of heart muscle sections
+------------------------------------
 
-      ====== ===============
-      Muscle R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Contraction of heart muscle sections
-         :name: contraction-of-heart-muscle-sections
+The ``Muscle`` data frame has 60 rows and 3 columns.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      The ``Muscle`` data frame has 60 rows and 3 columns.
+This data frame contains the following columns:
 
-      .. rubric:: Format
-         :name: format
+Strip
+   an ordered factor indicating the strip of muscle being measured.
 
-      This data frame contains the following columns:
+conc
+   a numeric vector giving the concentration of CaCl2
 
-      Strip
-         an ordered factor indicating the strip of muscle being
-         measured.
+length
+   a numeric vector giving the shortening of the heart muscle strip.
 
-      conc
-         a numeric vector giving the concentration of CaCl2
+Details
+~~~~~~~
 
-      length
-         a numeric vector giving the shortening of the heart muscle
-         strip.
+Baumann and Waldvogel (1963) describe data on the shortening of heart
+muscle strips dipped in a ``\mbox{CaCl}{}_2`` solution. The muscle
+strips are taken from the left auricle of a rat's heart.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      Baumann and Waldvogel (1963) describe data on the shortening of
-      heart muscle strips dipped in a ``\mbox{CaCl}{}_2`` solution. The
-      muscle strips are taken from the left auricle of a rat's heart.
-
-      .. rubric:: Source
-         :name: source
-
-      Baumann, F. and Waldvogel, F. (1963), La restitution
-      pastsystolique de la contraction de l'oreillette gauche du rat.
-      Effets de divers ions et de l'acetylcholine, *Helvetica
-      Physiologica Acta*, **21**.
+Baumann, F. and Waldvogel, F. (1963), La restitution pastsystolique de
+la contraction de l'oreillette gauche du rat. Effets de divers ions et
+de l'acetylcholine, *Helvetica Physiologica Acta*, **21**.

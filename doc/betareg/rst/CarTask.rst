@@ -1,89 +1,82 @@
-.. container::
+======= ===============
+CarTask R Documentation
+======= ===============
 
-   .. container::
+Partition-Primed Probability Judgement Task for Car Dealership
+--------------------------------------------------------------
 
-      ======= ===============
-      CarTask R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Partition-Primed Probability Judgement Task for Car
-         Dealership
-         :name: partition-primed-probability-judgement-task-for-car-dealership
+In this study participants were asked to judge how likely it is that a
+customer trades in a coupe or that a customer buys a car form a specific
+salesperson out of four possible salespersons.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      In this study participants were asked to judge how likely it is
-      that a customer trades in a coupe or that a customer buys a car
-      form a specific salesperson out of four possible salespersons.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("CarTask", package = "betareg")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("CarTask", package = "betareg")
+A data frame with 155 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``task``
+   a factor with levels ``Car`` and ``Salesperson`` indicating the
+   condition.
 
-      A data frame with 155 observations on the following 3 variables.
+``probability``
+   a numeric vector of the estimated probability.
 
-      ``task``
-         a factor with levels ``Car`` and ``Salesperson`` indicating the
-         condition.
+``NFCCscale``
+   a numeric vector of the NFCC scale.
 
-      ``probability``
-         a numeric vector of the estimated probability.
+Details
+~~~~~~~
 
-      ``NFCCscale``
-         a numeric vector of the NFCC scale.
+All participants in the study were undergraduate students at The
+Australian National University, some of whom obtained course credit in
+first-year Psychology for their participation in the study.
 
-      .. rubric:: Details
-         :name: details
+The NFCC scale is a combined scale of the Need for Closure and Need for
+Certainty scales which are strongly correlated.
 
-      All participants in the study were undergraduate students at The
-      Australian National University, some of whom obtained course
-      credit in first-year Psychology for their participation in the
-      study.
+For ``task`` the questions were:
 
-      The NFCC scale is a combined scale of the Need for Closure and
-      Need for Certainty scales which are strongly correlated.
+Car
+   What is the probability that a customer trades in a coupe?
 
-      For ``task`` the questions were:
+Salesperson
+   What is the probability that a customer buys a car from Carlos?
 
-      Car
-         What is the probability that a customer trades in a coupe?
+Source
+~~~~~~
 
-      Salesperson
-         What is the probability that a customer buys a car from Carlos?
+Taken from Smithson et al. (2011) supplements.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Taken from Smithson et al. (2011) supplements.
+Smithson, M., Merkle, E.C., and Verkuilen, J. (2011). Beta Regression
+Finite Mixture Models of Polarization and Priming. *Journal of
+Educational and Behavioral Statistics*, **36**\ (6), 804–831.
+`doi:10.3102/1076998610396893 <https://doi.org/10.3102/1076998610396893>`__
 
-      .. rubric:: References
-         :name: references
+Smithson, M., and Segale, C. (2009). Partition Priming in Judgments of
+Imprecise Probabilities. *Journal of Statistical Theory and Practice*,
+**3**\ (1), 169–181.
 
-      Smithson, M., Merkle, E.C., and Verkuilen, J. (2011). Beta
-      Regression Finite Mixture Models of Polarization and Priming.
-      *Journal of Educational and Behavioral Statistics*, **36**\ (6),
-      804–831.
-      `doi:10.3102/1076998610396893 <https://doi.org/10.3102/1076998610396893>`__
+Examples
+~~~~~~~~
 
-      Smithson, M., and Segale, C. (2009). Partition Priming in
-      Judgments of Imprecise Probabilities. *Journal of Statistical
-      Theory and Practice*, **3**\ (1), 169–181.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data("CarTask", package = "betareg")
-         library("flexmix")
-         car_betamix <- betamix(probability ~ 1, data = CarTask, k = 3,
-           extra_components = list(extraComponent(type = "uniform", coef = 1/2,
-           delta = 0.01), extraComponent(type = "uniform", coef = 1/4, delta = 0.01)),
-           FLXconcomitant = FLXPmultinom(~ task))
+   data("CarTask", package = "betareg")
+   library("flexmix")
+   car_betamix <- betamix(probability ~ 1, data = CarTask, k = 3,
+     extra_components = list(extraComponent(type = "uniform", coef = 1/2,
+     delta = 0.01), extraComponent(type = "uniform", coef = 1/4, delta = 0.01)),
+     FLXconcomitant = FLXPmultinom(~ task))

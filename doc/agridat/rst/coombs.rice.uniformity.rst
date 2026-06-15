@@ -1,82 +1,78 @@
-.. container::
+====================== ===============
+coombs.rice.uniformity R Documentation
+====================== ===============
 
-   .. container::
+Uniformity trial of rice in Malaysia
+------------------------------------
 
-      ====================== ===============
-      coombs.rice.uniformity R Documentation
-      ====================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of rice in Malaysia
-         :name: uniformity-trial-of-rice-in-malaysia
+Uniformity trial of rice in Malaysia
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of rice in Malaysia
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("coombs.rice.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("coombs.rice.uniformity")
+A data frame with 54 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row
 
-      A data frame with 54 observations on the following 3 variables.
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   yield in gantangs per plot
 
-      ``col``
-         column
+Details
+~~~~~~~
 
-      ``yield``
-         yield in gantangs per plot
+Estimated harvest date is 1915 or earlier.
 
-      .. rubric:: Details
-         :name: details
+Field length, 18 plots \* 1/2 chain.
 
-      Estimated harvest date is 1915 or earlier.
+Field width, 3 plots \* 1/2 chain.
 
-      Field length, 18 plots \* 1/2 chain.
+Source
+~~~~~~
 
-      Field width, 3 plots \* 1/2 chain.
+Coombs, G. E. and J. Grantham (1916). Field Experiments and the
+Interpretation of their results. The Agriculture Bulletin of the
+Federated Malay States, No 7.
+https://www.google.com/books/edition/The_Agricultural_Bulletin_of_the_Federat/M2E4AQAAMAAJ
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Coombs, G. E. and J. Grantham (1916). Field Experiments and the
-      Interpretation of their results. The Agriculture Bulletin of the
-      Federated Malay States, No 7.
-      https://www.google.com/books/edition/The_Agricultural_Bulletin_of_the_Federat/M2E4AQAAMAAJ
+None
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
+     library(agridat)
+     data(coombs.rice.uniformity)
+     dat <- coombs.rice.uniformity
 
-      .. code:: R
+     # Data check. Matches Coombs 709.4
+     # sum(dat$yield)
 
-         ## Not run: 
-           library(agridat)
-           data(coombs.rice.uniformity)
-           dat <- coombs.rice.uniformity
+     # There are an excess number of 12s and 14s in the yield
+     libs(lattice)
+     qqmath( ~ yield, dat) # weird
+     
+     libs(desplot)
+     desplot(dat, yield ~ col*row,
+             main="coombs.rice.uniformity",
+             flip=TRUE, aspect=(18 / 3))
 
-           # Data check. Matches Coombs 709.4
-           # sum(dat$yield)
-
-           # There are an excess number of 12s and 14s in the yield
-           libs(lattice)
-           qqmath( ~ yield, dat) # weird
-           
-           libs(desplot)
-           desplot(dat, yield ~ col*row,
-                   main="coombs.rice.uniformity",
-                   flip=TRUE, aspect=(18 / 3))
-
-         ## End(Not run)
+   ## End(Not run)

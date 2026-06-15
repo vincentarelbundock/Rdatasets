@@ -1,66 +1,61 @@
-.. container::
+=================== ===============
+NigeriaTerrorism_df R Documentation
+=================== ===============
 
-   .. container::
+Nigeria Terrorism Data
+----------------------
 
-      =================== ===============
-      NigeriaTerrorism_df R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Nigeria Terrorism Data
-         :name: nigeria-terrorism-data
+This dataset contains information on terrorist attacks by Fulani
+Extremists and Boko Haram in Nigeria, starting from the year 2014. The
+attack data is sourced from the Global Terrorism Database, while other
+variables are derived from the UCDP PRIO-Grid data. The dataset includes
+geographic coordinates, population data, and information about
+mountainous areas relevant to the attacks.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains information on terrorist attacks by Fulani
-      Extremists and Boko Haram in Nigeria, starting from the year 2014.
-      The attack data is sourced from the Global Terrorism Database,
-      while other variables are derived from the UCDP PRIO-Grid data.
-      The dataset includes geographic coordinates, population data, and
-      information about mountainous areas relevant to the attacks.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(NigeriaTerrorism_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(NigeriaTerrorism_df)
+A data frame with 312 observations and 6 variables:
 
-      .. rubric:: Format
-         :name: format
+att.ful
+   Number of attacks by Fulani Extremists (numeric).
 
-      A data frame with 312 observations and 6 variables:
+att.bok
+   Number of attacks by Boko Haram (numeric).
 
-      att.ful
-         Number of attacks by Fulani Extremists (numeric).
+xcoord
+   X-coordinate of the attack location (numeric).
 
-      att.bok
-         Number of attacks by Boko Haram (numeric).
+ycoord
+   Y-coordinate of the attack location (numeric).
 
-      xcoord
-         X-coordinate of the attack location (numeric).
+pop
+   Population of the area (numeric).
 
-      ycoord
-         Y-coordinate of the attack location (numeric).
+mtns
+   Indicator of whether the location is mountainous (numeric).
 
-      pop
-         Population of the area (numeric).
+Details
+~~~~~~~
 
-      mtns
-         Indicator of whether the location is mountainous (numeric).
+The dataset name has been changed to 'NigeriaTerrorism_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the crimedatasets package and
+assists users in identifying its specific characteristics. The suffix
+'df' indicates that the dataset is a traditional data frame in R. The
+original content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been changed to 'NigeriaTerrorism_df' to
-      avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      crimedatasets package and assists users in identifying its
-      specific characteristics. The suffix 'df' indicates that the
-      dataset is a traditional data frame in R. The original content has
-      not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Global Terrorism Database and UCDP PRIO-Grid data.
+Global Terrorism Database and UCDP PRIO-Grid data.

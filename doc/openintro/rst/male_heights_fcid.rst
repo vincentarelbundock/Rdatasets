@@ -1,44 +1,41 @@
-.. container::
+================= ===============
+male_heights_fcid R Documentation
+================= ===============
 
-   .. container::
+Random sample of adult male heights
+-----------------------------------
 
-      ================= ===============
-      male_heights_fcid R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Random sample of adult male heights
-         :name: random-sample-of-adult-male-heights
+This sample is based on data from the USDA Food Commodity Intake
+Database.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This sample is based on data from the USDA Food Commodity Intake
-      Database.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   male_heights_fcid
 
-      .. code:: R
+Format
+~~~~~~
 
-         male_heights_fcid
+A data frame with 100 observations on the following variable.
 
-      .. rubric:: Format
-         :name: format
+height_inch
+   Height, in inches.
 
-      A data frame with 100 observations on the following variable.
+Source
+~~~~~~
 
-      height_inch
-         Height, in inches.
+Simulated based on data from USDA.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Simulated based on data from USDA.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         data(male_heights_fcid)
-         histPlot(male_heights_fcid$height_inch)
+   data(male_heights_fcid)
+   histPlot(male_heights_fcid$height_inch)

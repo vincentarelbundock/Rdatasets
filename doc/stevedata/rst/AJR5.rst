@@ -1,88 +1,81 @@
-.. container::
+==== ===============
+AJR5 R Documentation
+==== ===============
 
-   .. container::
+The Colonial Origins of Comparative Development (Table 5)
+---------------------------------------------------------
 
-      ==== ===============
-      AJR5 R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The Colonial Origins of Comparative Development (Table
-         5)
-         :name: the-colonial-origins-of-comparative-development-table-5
+A data set to reproduce Table 5 in Acemoglu et al. (2001).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A data set to reproduce Table 5 in Acemoglu et al. (2001).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   AJR5
 
-      .. code:: R
+Format
+~~~~~~
 
-         AJR5
+A data frame with 163 observations on the following variables.
 
-      .. rubric:: Format
-         :name: format
+``shortnam``
+   a three-character code, ostensibly an ISO code
 
-      A data frame with 163 observations on the following variables.
+``catho80``
+   the percentage of the country that is estimated to be Catholic
 
-      ``shortnam``
-         a three-character code, ostensibly an ISO code
+``muslim80``
+   the percentage of the country that is estimated to be Muslim
 
-      ``catho80``
-         the percentage of the country that is estimated to be Catholic
+``lat_abst``
+   the latitude of the country (absolute value)
 
-      ``muslim80``
-         the percentage of the country that is estimated to be Muslim
+``no_cpm80``
+   the percentage of the country that is esimated to be another religion
 
-      ``lat_abst``
-         the latitude of the country (absolute value)
+``f_brit``
+   a dummy variable indicating whether the observation is a former
+   British colony
 
-      ``no_cpm80``
-         the percentage of the country that is esimated to be another
-         religion
+``f_french``
+   a dummy variable indicating whether the observation is a former
+   French colony
 
-      ``f_brit``
-         a dummy variable indicating whether the observation is a former
-         British colony
+``avexpr``
+   average protection against expropriation risk, 1985-1995
 
-      ``f_french``
-         a dummy variable indicating whether the observation is a former
-         French colony
+``sjlofr``
+   a dummy variable for whether the legal origin of the country's
+   commercial code is French
 
-      ``avexpr``
-         average protection against expropriation risk, 1985-1995
+``logpgp95``
+   log-transformed GDP per capita (PPP) in 1995
 
-      ``sjlofr``
-         a dummy variable for whether the legal origin of the country's
-         commercial code is French
+``logem4``
+   log-transformed European settler mortality
 
-      ``logpgp95``
-         log-transformed GDP per capita (PPP) in 1995
+``baseco``
+   a dummy variable indicating whether the observation is in the 'base
+   sample'
 
-      ``logem4``
-         log-transformed European settler mortality
+Details
+~~~~~~~
 
-      ``baseco``
-         a dummy variable indicating whether the observation is in the
-         'base sample'
+Acemoglu et al. (2001) are fairly transparent about what their data are
+and where you can read more about the sources they're using. La Porta et
+al. (1999) will feature prominently in some of these variables.
 
-      .. rubric:: Details
-         :name: details
+References
+~~~~~~~~~~
 
-      Acemoglu et al. (2001) are fairly transparent about what their
-      data are and where you can read more about the sources they're
-      using. La Porta et al. (1999) will feature prominently in some of
-      these variables.
+Acemoglu, Daron, Simon Johnson, and James A. Robinson. 2001. "The
+Colonial Origins of Comparative Development: An Empirical
+Investigation". *American Economic Review* 91(5): 1369–1401.
 
-      .. rubric:: References
-         :name: references
-
-      Acemoglu, Daron, Simon Johnson, and James A. Robinson. 2001. "The
-      Colonial Origins of Comparative Development: An Empirical
-      Investigation". *American Economic Review* 91(5): 1369–1401.
-
-      La Porta, Rafael, Florencio Lopez-de-Silanes, Andrei Shleifer and
-      Robert W. Vishny. 1999. "The Quality of Government" *Journal of
-      Law, Economics, and Organization* 15(1): 222-79.
+La Porta, Rafael, Florencio Lopez-de-Silanes, Andrei Shleifer and Robert
+W. Vishny. 1999.\ *Journal of Law, Economics, and Organization* 15(1):
+222-79.

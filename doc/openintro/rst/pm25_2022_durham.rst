@@ -1,102 +1,99 @@
-.. container::
+================ ===============
+pm25_2022_durham R Documentation
+================ ===============
 
-   .. container::
+Air quality for Durham, NC
+--------------------------
 
-      ================ ===============
-      pm25_2022_durham R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Air quality for Durham, NC
-         :name: air-quality-for-durham-nc
+Daily air quality is measured by the air quality index (AQI) reported by
+the Environmental Protection Agency in 2022.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Daily air quality is measured by the air quality index (AQI)
-      reported by the Environmental Protection Agency in 2022.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   pm25_2022_durham
 
-      .. code:: R
+Format
+~~~~~~
 
-         pm25_2022_durham
+A data frame with 356 observations on the following 20 variables.
 
-      .. rubric:: Format
-         :name: format
+date
+   Date.
 
-      A data frame with 356 observations on the following 20 variables.
+aqs_site_id
+   The numeric site ID.
 
-      date
-         Date.
+poc
+   A numeric vector, the Parameter Occurance Code.
 
-      aqs_site_id
-         The numeric site ID.
+daily_mean_pm2_5_concentration
+   A numeric vector with the average daily concentration of fine
+   particulates, or particulate matter 2.5.
 
-      poc
-         A numeric vector, the Parameter Occurance Code.
+units
+   A character vector with value ``ug/m3 LC``.
 
-      daily_mean_pm2_5_concentration
-         A numeric vector with the average daily concentration of fine
-         particulates, or particulate matter 2.5.
+daily_aqi_value
+   A numeric vector with the daily air quality index.
 
-      units
-         A character vector with value ``ug/m3 LC``.
+daily_obs_count
+   A numeric vector.
 
-      daily_aqi_value
-         A numeric vector with the daily air quality index.
+percent_complete
+   A numeric vector.
 
-      daily_obs_count
-         A numeric vector.
+aqs_parameter_code
+   A numeric vector.
 
-      percent_complete
-         A numeric vector.
+aqs_parameter_desc
+   A factor vector with level ``PM2.5 - Local Conditions``.
 
-      aqs_parameter_code
-         A numeric vector.
+cbsa_code
+   A numeric vector.
 
-      aqs_parameter_desc
-         A factor vector with level ``PM2.5 - Local Conditions``.
+cbsa_name
+   A character vector with value ``Durham-Chapel Hill, NC``.
 
-      cbsa_code
-         A numeric vector.
+state_code
+   A numeric vector.
 
-      cbsa_name
-         A character vector with value ``Durham-Chapel Hill, NC``.
+state
+   A character vector with value ``North Carolina``.
 
-      state_code
-         A numeric vector.
+county_code
+   A numeric vector.
 
-      state
-         A character vector with value ``North Carolina``.
+county
+   A character vector with value ``Durham``.
 
-      county_code
-         A numeric vector.
+site_latitude
+   A numeric vector of the latitude.
 
-      county
-         A character vector with value ``Durham``.
+site_longitude
+   A numeric vector of the longitude.
 
-      site_latitude
-         A numeric vector of the latitude.
+site_name
+   A character vector with value ``Durham Armory``.
 
-      site_longitude
-         A numeric vector of the longitude.
+Source
+~~~~~~
 
-      site_name
-         A character vector with value ``Durham Armory``.
+US Environmental Protection Agency, AirData, 2022.
+http://www3.epa.gov/airdata/ad_data_daily.html
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      US Environmental Protection Agency, AirData, 2022.
-      http://www3.epa.gov/airdata/ad_data_daily.html
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   library(ggplot2)
 
-         library(ggplot2)
-
-         ggplot(pm25_2022_durham, aes(x = date, y = daily_mean_pm2_5_concentration, group = 1)) +
-           geom_line()
+   ggplot(pm25_2022_durham, aes(x = date, y = daily_mean_pm2_5_concentration, group = 1)) +
+     geom_line()

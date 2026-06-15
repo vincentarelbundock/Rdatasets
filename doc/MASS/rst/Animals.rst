@@ -1,49 +1,45 @@
-.. container::
+======= ===============
+Animals R Documentation
+======= ===============
 
-   .. container::
+Brain and Body Weights for 28 Species
+-------------------------------------
 
-      ======= ===============
-      Animals R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Brain and Body Weights for 28 Species
-         :name: brain-and-body-weights-for-28-species
+Average brain and body weights for 28 species of land animals.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Average brain and body weights for 28 species of land animals.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   Animals
 
-      .. code:: R
+Format
+~~~~~~
 
-         Animals
+``body``
+   body weight in kg.
 
-      .. rubric:: Format
-         :name: format
+``brain``
+   brain weight in g.
 
-      ``body``
-         body weight in kg.
+Note
+~~~~
 
-      ``brain``
-         brain weight in g.
+The name ``Animals`` avoided conflicts with a system dataset ``animals``
+in S-PLUS 4.5 and later.
 
-      .. rubric:: Note
-         :name: note
+Source
+~~~~~~
 
-      The name ``Animals`` avoided conflicts with a system dataset
-      ``animals`` in S-PLUS 4.5 and later.
+P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression and Outlier
+Detection.* Wiley, p. 57.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression and
-      Outlier Detection.* Wiley, p. 57.
-
-      .. rubric:: References
-         :name: references
-
-      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
-      Statistics with S-PLUS.* Fourth Edition. Springer.
+Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics with
+S-PLUS.* Fourth Edition. Springer.

@@ -1,80 +1,76 @@
-.. container::
+============ ===============
+lisiecki2005 R Documentation
+============ ===============
 
-   .. container::
+Global Benthic ``\delta^{18}O`` Stack
+-------------------------------------
 
-      ============ ===============
-      lisiecki2005 R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Global Benthic ``\delta^{18}O`` Stack
-         :name: global-benthic-delta18o-stack
+A global Pliocene-Pleistocene benthic ``\delta^{18}O`` stack.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A global Pliocene-Pleistocene benthic ``\delta^{18}O`` stack.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   lisiecki2005
 
-      .. code:: R
+Format
+~~~~~~
 
-         lisiecki2005
+A ``data.frame`` with 2115 observations and 3 variables:
 
-      .. rubric:: Format
-         :name: format
+age
+   ``numeric``: calendar age (kilo year cal BP).
 
-      A ``data.frame`` with 2115 observations and 3 variables:
+delta
+   ``numeric``: benthic ``\delta^{18}O`` (per mil).
 
-      age
-         ``numeric``: calendar age (kilo year cal BP).
+error
+   ``numeric``: standard error (per mil).
 
-      delta
-         ``numeric``: benthic ``\delta^{18}O`` (per mil).
+Details
+~~~~~~~
 
-      error
-         ``numeric``: standard error (per mil).
+The LR04 stack spans 5.3 Myr and is an average of 57 globally
+distributed benthic ``\delta^{18}O`` records (which measure global ice
+volume and deep ocean temperature) collected from the scientific
+literature.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The LR04 stack spans 5.3 Myr and is an average of 57 globally
-      distributed benthic ``\delta^{18}O`` records (which measure global
-      ice volume and deep ocean temperature) collected from the
-      scientific literature.
+https://www.ncei.noaa.gov/access/paleo-search/study/5847
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      https://www.ncei.noaa.gov/access/paleo-search/study/5847
+Lisiecki, L. E. and Raymo, M. E. (2005). A Pliocene-Pleistocene stack of
+57 globally distributed benthic d18O records. *Paleoceanography*, 20,
+PA1003.
+`doi:10.1029/2004PA001071 <https://doi.org/10.1029/2004PA001071>`__
 
-      .. rubric:: References
-         :name: references
+See Also
+~~~~~~~~
 
-      Lisiecki, L. E. and Raymo, M. E. (2005). A Pliocene-Pleistocene
-      stack of 57 globally distributed benthic d18O records.
-      *Paleoceanography*, 20, PA1003.
-      `doi:10.1029/2004PA001071 <https://doi.org/10.1029/2004PA001071>`__
+Other palaeoenvironment data: ``epica2008``, ``law2006``, ``ngrip2004``,
+``ngrip2010``, ``spratt2016``
 
-      .. rubric:: See Also
-         :name: see-also
+Other isotopic data: ``ngrip2004``, ``ngrip2010``, ``nydal1996``,
+``spratt2016``, ``vegetation``
 
-      Other palaeoenvironment data: ``epica2008``, ``law2006``,
-      ``ngrip2004``, ``ngrip2010``, ``spratt2016``
+Examples
+~~~~~~~~
 
-      Other isotopic data: ``ngrip2004``, ``ngrip2010``, ``nydal1996``,
-      ``spratt2016``, ``vegetation``
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         plot(
-           x = lisiecki2005$age,
-           y = lisiecki2005$delta,
-           type = "l",
-           xlim = c(500, 0),
-           xlab = "kilo year BP",
-           ylab = expression(delta^{18}*"O")
-         )
+   plot(
+     x = lisiecki2005$age,
+     y = lisiecki2005$delta,
+     type = "l",
+     xlim = c(500, 0),
+     xlab = "kilo year BP",
+     ylab = expression(delta^{18}*"O")
+   )

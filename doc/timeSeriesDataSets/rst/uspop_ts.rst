@@ -1,50 +1,46 @@
-.. container::
+======== ===============
+uspop_ts R Documentation
+======== ===============
 
-   .. container::
+US Census Population Data
+-------------------------
 
-      ======== ===============
-      uspop_ts R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: US Census Population Data
-         :name: us-census-population-data
+The dataset name has been changed to 'uspop_ts' to avoid confusion with
+other datasets in the R ecosystem from which data have been sourced. The
+suffix 'ts' indicates that this dataset is a time series object. This
+naming convention helps distinguish this dataset as part of the
+'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'uspop_ts' to avoid confusion
-      with other datasets in the R ecosystem from which data have been
-      sourced. The suffix 'ts' indicates that this dataset is a time
-      series object. This naming convention helps distinguish this
-      dataset as part of the 'timeseriesdatasets' package and assists
-      users in identifying its specific characteristics. The original
-      content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(uspop_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(uspop_ts)
+A 'ts' object with 19 observations:
 
-      .. rubric:: Format
-         :name: format
+time
+   Annual time series from 1790 to 1970.
 
-      A 'ts' object with 19 observations:
+value
+   Population recorded by the US Census (in millions).
 
-      time
-         Annual time series from 1790 to 1970.
+Details
+~~~~~~~
 
-      value
-         Population recorded by the US Census (in millions).
+This dataset contains annual population data recorded by the US Census
+from 1790 to 1970. The values are recorded in millions.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains annual population data recorded by the US
-      Census from 1790 to 1970. The values are recorded in millions.
-
-      .. rubric:: Source
-         :name: source
-
-      US Census Bureau.
+US Census Bureau.

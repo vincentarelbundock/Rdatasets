@@ -1,81 +1,70 @@
-.. container::
+======== ===============
+Abortion R Documentation
+======== ===============
 
-   .. container::
+Abortion Opinion Data
+---------------------
 
-      ======== ===============
-      Abortion R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Abortion Opinion Data
-         :name: abortion-opinion-data
+Opinions about abortion classified by gender and SES
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Opinions about abortion classified by gender and SES
+A 3-dimensional array resulting from cross-tabulating 3 variables for
+1100 observations. The variable names and their levels are:
 
-      .. rubric:: Usage
-         :name: usage
+== ==================== ====================
+No Name                 Levels
+1  ``Sex``              ``⁠"Female", "Male"⁠``
+2  ``Status``           ``⁠"Lo", "Hi"⁠``
+3  ``Support_Abortion`` ``⁠"Yes", "No"⁠``
+                        
+== ==================== ====================
 
-      .. code:: R
+Details
+~~~~~~~
 
-         data(Abortion)
+``Support_Abortion`` is a natural response variable.
 
-      .. rubric:: Format
-         :name: format
+The combinations of ``Sex`` and ``Status`` represent four independent
+samples, having fixed ``Sex``-``Status`` marginal totals. There were 500
+females and 600 males. Within the female group, 250 of low status and
+250 of high status were sampled. Similarly for the males, with 300 in
+each of the low and hgh status sub-groups.
 
-      A 3-dimensional array resulting from cross-tabulating 3 variables
-      for 1100 observations. The variable names and their levels are:
+This is an example of a product-multinomial sampling scheme. the
+``Sex:Status`` association must be included in any loglinear model where
+the goal is to determine how attitude toward abortion depends on the
+others.
 
-      == ==================== ====================
-      No Name                 Levels
-      1  ``Sex``              ``"Female", "Male"``
-      2  ``Status``           ``"Lo", "Hi"``
-      3  ``Support_Abortion`` ``"Yes", "No"``
-      \                       
-      == ==================== ====================
+Alternatively, a logit model for abortion support may provide a simpler
+analysis.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      ``Support_Abortion`` is a natural response variable.
+Christensen, R. (1990). *Log-Linear Models*, New York, NY:
+Springer-Verlag, p. 92, Example 3.5.2.
 
-      The combinations of ``Sex`` and ``Status`` represent four
-      independent samples, having fixed ``Sex``-``Status`` marginal
-      totals. There were 500 females and 600 males. Within the female
-      group, 250 of low status and 250 of high status were sampled.
-      Similarly for the males, with 300 in each of the low and high
-      status sub-groups.
+Christensen, R. (1997). *Log-Linear Models and Logistic Regression*, New
+York, NY: Springer, p. 100, Example 3.5.2.
 
-      This is an example of a product-multinomial sampling scheme. the
-      ``Sex:Status`` association must be included in any loglinear model
-      where the goal is to determine how attitude toward abortion
-      depends on the others.
+Examples
+~~~~~~~~
 
-      Alternatively, a logit model for abortion support may provide a
-      simpler analysis.
-
-      .. rubric:: Source
-         :name: source
-
-      Christensen, R. (1990). *Log-Linear Models*, New York, NY:
-      Springer-Verlag, p. 92, Example 3.5.2.
-
-      Christensen, R. (1997). *Log-Linear Models and Logistic
-      Regression*, New York, NY: Springer, p. 100, Example 3.5.2.
-
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(Abortion)
+.. code:: R
 
 
-         ftable(Abortion)
-         mosaic(Abortion, shade=TRUE)
+   data(Abortion)
 
-         # stratified by Sex
-         fourfold(aperm(Abortion, 3:1))
-         # stratified by Status
-         fourfold(aperm(Abortion, c(3,1,2)))
+
+   ftable(Abortion)
+   mosaic(Abortion, shade=TRUE)
+
+   # stratified by Sex
+   fourfold(aperm(Abortion, 3:1))
+   # stratified by Status
+   fourfold(aperm(Abortion, c(3,1,2)))

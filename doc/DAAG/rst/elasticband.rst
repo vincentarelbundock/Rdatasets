@@ -1,74 +1,70 @@
-.. container::
+=========== ===============
+elasticband R Documentation
+=========== ===============
 
-   .. container::
+Elastic Band Data
+-----------------
 
-      =========== ===============
-      elasticband R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Elastic Band Data
-         :name: elastic-band-data
+The ``elasticband`` data frame has 7 rows and 2 columns giving, for each
+amount by which an elastic band is stretched over the end of a ruler,
+the distance that the band traveled when released.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The ``elasticband`` data frame has 7 rows and 2 columns giving,
-      for each amount by which an elastic band is stretched over the end
-      of a ruler, the distance that the band traveled when released.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   elasticband
 
-      .. code:: R
+Format
+~~~~~~
 
-         elasticband
+This data frame contains the following columns:
 
-      .. rubric:: Format
-         :name: format
+stretch
+   the amount by which the elastic band was stretched
 
-      This data frame contains the following columns:
+distance
+   the distance traveled
 
-      stretch
-         the amount by which the elastic band was stretched
+Source
+~~~~~~
 
-      distance
-         the distance traveled
+J. H. Maindonald
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      J. H. Maindonald
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   print("Example 1.8.1")
 
-      .. code:: R
+   attach(elasticband)     # R now knows where to find stretch and distance
+   plot(stretch, distance) # Alternative: plot(distance ~ stretch)
+   detach(elasticband)
 
-         print("Example 1.8.1")
+   print("Lists - Example 12.7")
 
-         attach(elasticband)     # R now knows where to find stretch and distance
-         plot(stretch, distance) # Alternative: plot(distance ~ stretch)
-         detach(elasticband)
+   elastic.lm <- lm(distance ~ stretch, data=elasticband)
+    names(elastic.lm)
+    elastic.lm$coefficients
+   elastic.lm[["coefficients"]]
+   pause()
 
-         print("Lists - Example 12.7")
+   elastic.lm[[1]]
+   pause()
 
-         elastic.lm <- lm(distance ~ stretch, data=elasticband)
-          names(elastic.lm)
-          elastic.lm$coefficients
-         elastic.lm[["coefficients"]]
-         pause()
+   elastic.lm[1]
+   pause()
 
-         elastic.lm[[1]]
-         pause()
+   options(digits=3)
+   elastic.lm$residuals 
+   pause()
 
-         elastic.lm[1]
-         pause()
+   elastic.lm$call
+   pause()
 
-         options(digits=3)
-         elastic.lm$residuals 
-         pause()
-
-         elastic.lm$call
-         pause()
-
-          mode(elastic.lm$call)
+    mode(elastic.lm$call)

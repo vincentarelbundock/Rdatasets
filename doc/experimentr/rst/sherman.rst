@@ -1,43 +1,37 @@
-.. container::
+======= ===============
+sherman R Documentation
+======= ===============
 
-   .. container::
+Data from "Deterrent Effects of Police Raids on Crack Houses: A Randomized, Controlled Experiment"
+--------------------------------------------------------------------------------------------------
 
-      ======= ===============
-      sherman R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Data from "Deterrent Effects of Police Raids on Crack
-         Houses: A Randomized, Controlled Experiment"
-         :name: data-from-deterrent-effects-of-police-raids-on-crack-houses-a-randomized-controlled-experiment
+This dataset is used in the exercises of Chapter 4 from the textbook.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset is used in the exercises of Chapter 4 from the
-      textbook.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   sherman
 
-      .. code:: R
+Format
+~~~~~~
 
-         sherman
+A data frame with 207 rows and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+treatment
+   Treatment indicator. 1 = treatment, 0 = control
 
-      A data frame with 207 rows and 2 variables:
+CFS_after_5weeks
+   Average crime reports in 5 weeks after treatment
 
-      treatment
-         Treatment indicator. 1 = treatment, 0 = control
+Source
+~~~~~~
 
-      CFS_after_5weeks
-         Average crime reports in 5 weeks after treatment
-
-      .. rubric:: Source
-         :name: source
-
-      Sherman, Lawrence W., et al. “Deterrent Effects of Police Raids on
-      Crack Houses: A Randomized, Controlled Experiment.” Justice
-      Quarterly, vol. 12, no. 4, 1995, pp. 755–781.,
-      https://doi.org/10.1080/07418829500096281.
+Sherman, Lawrence W., et al. “Deterrent Effects of Police Raids on Crack
+Houses: A Randomized, Controlled Experiment.” Justice Quarterly, vol.
+12, no. 4, 1995, pp. 755–781.,
+https://doi.org/10.1080/07418829500096281.

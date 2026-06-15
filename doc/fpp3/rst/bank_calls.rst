@@ -1,41 +1,37 @@
-.. container::
+========== ===============
+bank_calls R Documentation
+========== ===============
 
-   .. container::
+Call volume for a large North American commercial bank
+------------------------------------------------------
 
-      ========== ===============
-      bank_calls R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Call volume for a large North American commercial bank
-         :name: call-volume-for-a-large-north-american-commercial-bank
+Five-minute call volume handled on weekdays between 7:00am and 9:05pm,
+beginning 3 March and 24 October 2003 (164 days).
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Five-minute call volume handled on weekdays between 7:00am and
-      9:05pm, beginning 3 March and 24 October 2003 (164 days).
+Time series of class 'tsibble' at 5 minute intervals.
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      Time series of class 'tsibble' at 5 minute intervals.
+Jonathan Weinberg
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Jonathan Weinberg
+Weinberg, Brown & Stroud (2007) "Bayesian forecasting of an
+inhomogeneous Poisson process with applications to call center data"
+*Journal of the American Statistical Associiation*, 102:480, 1185-1198.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Weinberg, Brown & Stroud (2007) "Bayesian forecasting of an
-      inhomogeneous Poisson process with applications to call center
-      data" *Journal of the American Statistical Associiation*, 102:480,
-      1185-1198.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         bank_calls
+   bank_calls

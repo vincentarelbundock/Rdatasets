@@ -1,65 +1,59 @@
-.. container::
+==================== ===============
+LeukemiaRemission_df R Documentation
+==================== ===============
 
-   .. container::
+Impact of 6-MP on Acute Leukemia Remission Duration
+---------------------------------------------------
 
-      ==================== ===============
-      LeukemiaRemission_df R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Impact of 6-MP on Acute Leukemia Remission Duration
-         :name: impact-of-6-mp-on-acute-leukemia-remission-duration
+This dataset, LeukemiaRemission_df, is a data frame containing data on
+the duration of remission for acute leukemia patients who were randomly
+assigned to maintenance therapy with 6-mercaptopurine (6-MP), an active
+antileukemic compound, or a placebo. The dataset includes the sex, white
+blood cell (WBC) count, time to relapse, event status, and treatment
+group for the patients.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, LeukemiaRemission_df, is a data frame containing
-      data on the duration of remission for acute leukemia patients who
-      were randomly assigned to maintenance therapy with
-      6-mercaptopurine (6-MP), an active antileukemic compound, or a
-      placebo. The dataset includes the sex, white blood cell (WBC)
-      count, time to relapse, event status, and treatment group for the
-      patients.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(LeukemiaRemission_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(LeukemiaRemission_df)
+A data frame with 42 observations and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+sex
+   Sex of the patient (integer).
 
-      A data frame with 42 observations and 5 variables:
+wbc
+   White blood cell (WBC) count (numeric).
 
-      sex
-         Sex of the patient (integer).
+time
+   Time to relapse (integer).
 
-      wbc
-         White blood cell (WBC) count (numeric).
+event
+   Event status (Factor with 2 levels: 1 = relapse, 0 = no relapse).
 
-      time
-         Time to relapse (integer).
+grp
+   Treatment group (Factor with 2 levels: 1 = 6-MP, 0 = placebo).
 
-      event
-         Event status (Factor with 2 levels: 1 = relapse, 0 = no
-         relapse).
+Details
+~~~~~~~
 
-      grp
-         Treatment group (Factor with 2 levels: 1 = 6-MP, 0 = placebo).
+The dataset name has been kept as 'LeukemiaRemission_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the OncoDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'\_df' indicates that the dataset is a data frame. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'LeukemiaRemission_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The suffix '\_df' indicates that the dataset is a
-      data frame. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the R4HCR package. Kleinbaum, D.G. and Klein, M.,
-      1996. Survival Analysis: A Self-Learning Text. Springer.
+Data taken from the R4HCR package. Kleinbaum, D.G. and Klein, M., 1996.
+Survival Analysis: A Self-Learning Text. Springer.

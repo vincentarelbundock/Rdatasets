@@ -1,81 +1,74 @@
-.. container::
+======== ===============
+balcells R Documentation
+======== ===============
 
-   .. container::
+Data from "Do transitional justice museums persuade visitors? Evidence from a field experiment"
+-----------------------------------------------------------------------------------------------
 
-      ======== ===============
-      balcells R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Data from "Do transitional justice museums persuade
-         visitors? Evidence from a field experiment"
-         :name: data-from-do-transitional-justice-museums-persuade-visitors-evidence-from-a-field-experiment
+This dataset is used in the exercises of Chapter 4 from the textbook.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset is used in the exercises of Chapter 4 from the
-      textbook.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   balcells
 
-      .. code:: R
+Format
+~~~~~~
 
-         balcells
+A data frame with 264 rows and 14 variables:
 
-      .. rubric:: Format
-         :name: format
+age
+   Pre-treatment covariate denoting age in years
 
-      A data frame with 264 rows and 14 variables:
+gender
+   Pre-treatment covariate denoting gender
 
-      age
-         Pre-treatment covariate denoting age in years
+pre_ideology_1
+   Pre-treatment covariate denoting political ideology
 
-      gender
-         Pre-treatment covariate denoting gender
+pre_economic_situation
+   Pre-treatment covariate denoting economic situation
 
-      pre_ideology_1
-         Pre-treatment covariate denoting political ideology
+pre_political_interest
+   Pre-treatment covariate denoting interest in politics
 
-      pre_economic_situation
-         Pre-treatment covariate denoting economic situation
+pre_religion_importance
+   Pre-treatment covariate denoting religiosity
 
-      pre_political_interest
-         Pre-treatment covariate denoting interest in politics
+total_museums
+   Pre-treatment covariate denoting visits to other museums
 
-      pre_religion_importance
-         Pre-treatment covariate denoting religiosity
+pre_conf_gov
+   Pre-treatment covariate denoting trust in government
 
-      total_museums
-         Pre-treatment covariate denoting visits to other museums
+pre_inst_gov
+   Pre-treatment covariate denoting satisfaction in government
 
-      pre_conf_gov
-         Pre-treatment covariate denoting trust in government
+pre_current_ineq
+   Pre-treatment covariate denoting whether inequality is deemed a
+   problem
 
-      pre_inst_gov
-         Pre-treatment covariate denoting satisfaction in government
+pre_positive
+   Pre-treatment covariate denoting positive emotions
 
-      pre_current_ineq
-         Pre-treatment covariate denoting whether inequality is deemed a
-         problem
+pre_negative
+   Pre-treatment covariate denoting negative emotions
 
-      pre_positive
-         Pre-treatment covariate denoting positive emotions
+treatmentgroup
+   Treatment indicator. 1 = treatment, 0 = control
 
-      pre_negative
-         Pre-treatment covariate denoting negative emotions
+f3
+   Binary indicator of whether the follow-up survey was completed. 1 =
+   completed, 0 = did not complete
 
-      treatmentgroup
-         Treatment indicator. 1 = treatment, 0 = control
+Source
+~~~~~~
 
-      f3
-         Binary indicator of whether the follow-up survey was completed.
-         1 = completed, 0 = did not complete
-
-      .. rubric:: Source
-         :name: source
-
-      Balcells, Laia, et al. “Do Transitional Justice Museums Persuade
-      Visitors? Evidence from a Field Experiment.” The Journal of
-      Politics, vol. 84, no. 1, 2022, pp. 496–510.,
-      https://doi.org/10.1086/714765.
+Balcells, Laia, et al. “Do Transitional Justice Museums Persuade
+Visitors? Evidence from a Field Experiment.” The Journal of Politics,
+vol. 84, no. 1, 2022, pp. 496–510., https://doi.org/10.1086/714765.

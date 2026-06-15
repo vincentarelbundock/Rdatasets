@@ -1,22 +1,18 @@
-.. container::
+======= ===============
+diff.e0 R Documentation
+======= ===============
 
-   .. container::
+Internal diff.e0
+----------------
 
-      ======= ===============
-      diff.e0 R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Internal diff.e0
-         :name: internal-diff.e0
+Internal diff.e0
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Internal diff.e0
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
-
-      .. code:: R
-
-         data(diff.e0)
+   data(diff.e0)

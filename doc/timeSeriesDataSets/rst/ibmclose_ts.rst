@@ -1,43 +1,38 @@
-.. container::
+=========== ===============
+ibmclose_ts R Documentation
+=========== ===============
 
-   .. container::
+Daily Closing Stock Prices of IBM.
+----------------------------------
 
-      =========== ===============
-      ibmclose_ts R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Daily Closing Stock Prices of IBM.
-         :name: daily-closing-stock-prices-of-ibm.
+The dataset name has been changed to 'ibmclose_ts' to avoid confusion
+with other packages in the R ecosystem from which datasets have been
+sourced. The suffix 'ts' indicates that this dataset is a time series
+object. This naming convention helps distinguish this dataset as part of
+the 'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'ibmclose_ts' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. The suffix 'ts' indicates that this
-      dataset is a time series object. This naming convention helps
-      distinguish this dataset as part of the 'timeseriesdatasets'
-      package and assists users in identifying its specific
-      characteristics. The original content of the dataset has not been
-      modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(ibmclose_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(ibmclose_ts)
+A time series object with 369 observations:
 
-      .. rubric:: Format
-         :name: format
+ibmclose
+   A numeric vector representing the daily closing stock price of IBM,
+   measured in US dollars, over a period of 369 days.
 
-      A time series object with 369 observations:
+Source
+~~~~~~
 
-      ibmclose
-         A numeric vector representing the daily closing stock price of
-         IBM, measured in US dollars, over a period of 369 days.
-
-      .. rubric:: Source
-         :name: source
-
-      Data provided by Yahoo Finance.
+Data provided by Yahoo Finance.

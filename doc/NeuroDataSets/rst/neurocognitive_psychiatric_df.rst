@@ -1,80 +1,74 @@
-.. container::
+============================= ===============
+neurocognitive_psychiatric_df R Documentation
+============================= ===============
 
-   .. container::
+Neurocognitive Performance in Psychosis
+---------------------------------------
 
-      ============================= ===============
-      neurocognitive_psychiatric_df R Documentation
-      ============================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Neurocognitive Performance in Psychosis
-         :name: neurocognitive-performance-in-psychosis
+This dataset, neurocognitive_psychiatric_df, is a data frame containing
+comprehensive neurocognitive assessments from a study comparing
+performance patterns in schizophrenia, schizoaffective disorder, and
+controls. The data includes 242 observations across multiple cognitive
+domains using a psychosis-specific neurocognitive battery.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, neurocognitive_psychiatric_df, is a data frame
-      containing comprehensive neurocognitive assessments from a study
-      comparing performance patterns in schizophrenia, schizoaffective
-      disorder, and controls. The data includes 242 observations across
-      multiple cognitive domains using a psychosis-specific
-      neurocognitive battery.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(neurocognitive_psychiatric_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(neurocognitive_psychiatric_df)
+A data frame with 242 observations and 10 variables:
 
-      .. rubric:: Format
-         :name: format
+Dx
+   Factor with 3 levels: Diagnostic group
+   (Schizophrenia/Schizoaffective/Control)
 
-      A data frame with 242 observations and 10 variables:
+Speed
+   Integer: Processing speed score
 
-      Dx
-         Factor with 3 levels: Diagnostic group
-         (Schizophrenia/Schizoaffective/Control)
+Attention
+   Integer: Attention/vigilance score
 
-      Speed
-         Integer: Processing speed score
+Memory
+   Integer: Working memory score
 
-      Attention
-         Integer: Attention/vigilance score
+Verbal
+   Integer: Verbal learning score
 
-      Memory
-         Integer: Working memory score
+Visual
+   Integer: Visual learning score
 
-      Verbal
-         Integer: Verbal learning score
+ProbSolv
+   Integer: Problem solving score
 
-      Visual
-         Integer: Visual learning score
+SocialCog
+   Integer: Social cognition score
 
-      ProbSolv
-         Integer: Problem solving score
+Age
+   Integer: Participant age in years
 
-      SocialCog
-         Integer: Social cognition score
+Sex
+   Factor with 2 levels: Participant sex
 
-      Age
-         Integer: Participant age in years
+Details
+~~~~~~~
 
-      Sex
-         Factor with 2 levels: Participant sex
+The dataset name has been kept as 'neurocognitive_psychiatric_df' to
+avoid confusion with other datasets in the R ecosystem. This naming
+convention helps distinguish this dataset as part of the NeuroDataSets
+package. The suffix 'df' indicates that the dataset is a data frame. The
+original content has not been modified.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'neurocognitive_psychiatric_df'
-      to avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      NeuroDataSets package. The suffix 'df' indicates that the dataset
-      is a data frame. The original content has not been modified.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the heplots package version 1.7.4. Original
-      research: Hartman, L.I. (2016) Schizophrenia and Schizoaffective
-      Disorder: One Condition or Two? Unpublished PhD dissertation, York
-      University.
+Data taken from the heplots package version 1.7.4. Original research:
+Hartman, L.I. (2016) Schizophrenia and Schizoaffective Disorder: One
+Condition or Two? Unpublished PhD dissertation, York University.

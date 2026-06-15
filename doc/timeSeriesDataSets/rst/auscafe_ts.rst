@@ -1,44 +1,39 @@
-.. container::
+========== ===============
+auscafe_ts R Documentation
+========== ===============
 
-   .. container::
+Monthly Expenditure on Eating Out in Australia.
+-----------------------------------------------
 
-      ========== ===============
-      auscafe_ts R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Monthly Expenditure on Eating Out in Australia.
-         :name: monthly-expenditure-on-eating-out-in-australia.
+The dataset name has been changed to 'auscafe_ts' to avoid confusion
+with other packages in the R ecosystem from which datasets have been
+sourced. This naming convention helps distinguish this dataset as part
+of the 'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The suffix 'ts' identifies the dataset as a
+time series object, helping to differentiate it from other datasets
+within the package. The original content of the dataset has not been
+modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'auscafe_ts' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. This naming convention helps
-      distinguish this dataset as part of the 'timeseriesdatasets'
-      package and assists users in identifying its specific
-      characteristics. The suffix 'ts' identifies the dataset as a time
-      series object, helping to differentiate it from other datasets
-      within the package. The original content of the dataset has not
-      been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(auscafe_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(auscafe_ts)
+A time series object with 426 observations:
 
-      .. rubric:: Format
-         :name: format
+auscafe
+   A numeric vector representing the monthly expenditure on eating out
+   in Australia, measured in dollars.
 
-      A time series object with 426 observations:
+Source
+~~~~~~
 
-      auscafe
-         A numeric vector representing the monthly expenditure on eating
-         out in Australia, measured in dollars.
-
-      .. rubric:: Source
-         :name: source
-
-      Data provided by the Australian Bureau of Statistics.
+Data provided by the Australian Bureau of Statistics.

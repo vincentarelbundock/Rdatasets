@@ -22,7 +22,7 @@ function processMathHTML() {
 
 <p>This dataset is the NOAA Atlantic hurricane database best track data,
 <a href="https://www.nhc.noaa.gov/data/#hurdat">https://www.nhc.noaa.gov/data/#hurdat</a>. The data includes the positions and
-attributes of storms from 1975-2022. Storms
+attributes of storms from 1975-2024. Storms
 from 1979 onward are measured every six hours during the lifetime of the
 storm. Storms in earlier years have some missing data.
 </p>
@@ -36,7 +36,7 @@ storm. Storms in earlier years have some missing data.
 
 <h3>Format</h3>
 
-<p>A tibble with 19,537 observations
+<p>A tibble with 20,778 observations
 and 13 variables:
 </p>
 
@@ -106,8 +106,8 @@ starting in 2004.</p>
 # Show a few recent storm paths
 if (requireNamespace("ggplot2", quietly = TRUE)) {
   library(ggplot2)
-  storms %&gt;%
-    filter(year &gt;= 2000) %&gt;%
+  storms |&gt;
+    filter(year &gt;= 2000) |&gt;
     ggplot(aes(long, lat, color = paste(year, name))) +
     geom_path(show.legend = FALSE) +
     facet_wrap(~year)

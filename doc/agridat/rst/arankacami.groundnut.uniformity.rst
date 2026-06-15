@@ -1,74 +1,69 @@
-.. container::
+=============================== ===============
+arankacami.groundnut.uniformity R Documentation
+=============================== ===============
 
-   .. container::
+Uniformity trial of groundnut
+-----------------------------
 
-      =============================== ===============
-      arankacami.groundnut.uniformity R Documentation
-      =============================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of groundnut
-         :name: uniformity-trial-of-groundnut
+Uniformity trial of groundnut
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of groundnut
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("arankacami.groundnut.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("arankacami.groundnut.uniformity")
+A data frame with 96 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row
 
-      A data frame with 96 observations on the following 3 variables.
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   yield, kg/plot
 
-      ``col``
-         column
+Details
+~~~~~~~
 
-      ``yield``
-         yield, kg/plot
+The year of the experiment is unknown, but before 1995.
 
-      .. rubric:: Details
-         :name: details
+Basic plot size is 0.75 m (rows) x 4 m (columns).
 
-      The year of the experiment is unknown, but before 1995.
+Source
+~~~~~~
 
-      Basic plot size is 0.75 m (rows) x 4 m (columns).
+Ira Arankacami, R. Rangaswamy. (1995). A Text Book of Agricultural
+Statistics. New Age International Publishers. Table 19.1. Page 237.
+https://www.google.com/books/edition/A_Text_Book_of_Agricultural_Statistics/QDLWE4oakSgC
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Ira Arankacami, R. Rangaswamy. (1995). A Text Book of Agricultural
-      Statistics. New Age International Publishers. Table 19.1. Page
-      237.
-      https://www.google.com/books/edition/A_Text_Book_of_Agricultural_Statistics/QDLWE4oakSgC
+None
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
+   library(agridat)
+   data(arankacami.groundnut.uniformity)
+   dat <- arankacami.groundnut.uniformity
 
-      .. code:: R
-
-         ## Not run: 
-         library(agridat)
-         data(arankacami.groundnut.uniformity)
-         dat <- arankacami.groundnut.uniformity
-
-         require(desplot)
-         desplot(dat, yield ~ col*row,
-                 flip=TRUE, aspect=(12*.75)/(8*4),
-                 main="arankacami.groundnut.uniformity")
+   require(desplot)
+   desplot(dat, yield ~ col*row,
+           flip=TRUE, aspect=(12*.75)/(8*4),
+           main="arankacami.groundnut.uniformity")
 
 
-         ## End(Not run)
+   ## End(Not run)

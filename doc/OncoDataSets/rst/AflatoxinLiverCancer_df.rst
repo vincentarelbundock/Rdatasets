@@ -1,57 +1,52 @@
-.. container::
+======================= ===============
+AflatoxinLiverCancer_df R Documentation
+======================= ===============
 
-   .. container::
+Aflatoxin Dosage and Liver Cancer in Lab Animals
+------------------------------------------------
 
-      ======================= ===============
-      AflatoxinLiverCancer_df R Documentation
-      ======================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Aflatoxin Dosage and Liver Cancer in Lab Animals
-         :name: aflatoxin-dosage-and-liver-cancer-in-lab-animals
+This dataset, AflatoxinLiverCancer_df, is a data frame containing data
+from a study where varying doses of Aflatoxin B1 were administered to
+lab animals. The dataset records the total number of animals exposed to
+each dose and the number of animals that developed liver cancer.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, AflatoxinLiverCancer_df, is a data frame containing
-      data from a study where varying doses of Aflatoxin B1 were
-      administered to lab animals. The dataset records the total number
-      of animals exposed to each dose and the number of animals that
-      developed liver cancer.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(AflatoxinLiverCancer_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(AflatoxinLiverCancer_df)
+A data frame with 6 observations and 3 variables:
 
-      .. rubric:: Format
-         :name: format
+dose
+   Dose of Aflatoxin B1 administered (integer).
 
-      A data frame with 6 observations and 3 variables:
+total
+   Total number of animals exposed to the dose (integer).
 
-      dose
-         Dose of Aflatoxin B1 administered (integer).
+tumor
+   Number of animals that developed liver cancer (integer).
 
-      total
-         Total number of animals exposed to the dose (integer).
+Details
+~~~~~~~
 
-      tumor
-         Number of animals that developed liver cancer (integer).
+The dataset name has been kept as 'AflatoxinLiverCancer_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the OncoDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'\_df' indicates that the dataset is a data frame. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'AflatoxinLiverCancer_df' to
-      avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The suffix '\_df' indicates that the dataset is a
-      data frame. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the faraway package. Gaylor DW (1987). \*Linear
-      nonparametric upper limits for low dose extrapolation\*. ASA
-      Proceedings of the Biopharmaceutical Section.
+Data taken from the faraway package. Gaylor DW (1987). \*Linear
+nonparametric upper limits for low dose extrapolation\*. ASA Proceedings
+of the Biopharmaceutical Section.

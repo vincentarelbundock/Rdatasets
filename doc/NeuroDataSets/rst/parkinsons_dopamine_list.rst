@@ -1,65 +1,58 @@
-.. container::
+======================== ===============
+parkinsons_dopamine_list R Documentation
+======================== ===============
 
-   .. container::
+Dopamine Agonists as Adjunct Therapy in Parkinson’s
+---------------------------------------------------
 
-      ======================== ===============
-      parkinsons_dopamine_list R Documentation
-      ======================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Dopamine Agonists as Adjunct Therapy in Parkinson’s
-         :name: dopamine-agonists-as-adjunct-therapy-in-parkinsons
+This dataset, parkinsons_dopamine_list, is a list containing information
+from 7 studies investigating the mean lost work-time reduction in
+patients given 4 dopamine agonists and placebo as adjunct therapy for
+Parkinson's disease. There is placebo and four active drugs coded 2 to
+5.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, parkinsons_dopamine_list, is a list containing
-      information from 7 studies investigating the mean lost work-time
-      reduction in patients given 4 dopamine agonists and placebo as
-      adjunct therapy for Parkinson's disease. There is placebo and four
-      active drugs coded 2 to 5.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(parkinsons_dopamine_list)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(parkinsons_dopamine_list)
+A list with 5 components:
 
-      .. rubric:: Format
-         :name: format
+Outcomes
+   Numeric vector containing the outcomes (mean lost work-time
+   reduction)
 
-      A list with 5 components:
+SE
+   Numeric vector containing standard errors for the outcomes
 
-      Outcomes
-         Numeric vector containing the outcomes (mean lost work-time
-         reduction)
+Treat
+   Character vector indicating the treatment (placebo or drug codes 2-5)
 
-      SE
-         Numeric vector containing standard errors for the outcomes
+Study
+   Numeric vector indicating the study number (1-7)
 
-      Treat
-         Character vector indicating the treatment (placebo or drug
-         codes 2-5)
+Treat.order
+   Character vector showing the treatment order (placebo and drugs 2-5)
 
-      Study
-         Numeric vector indicating the study number (1-7)
+Details
+~~~~~~~
 
-      Treat.order
-         Character vector showing the treatment order (placebo and drugs
-         2-5)
+The dataset name has been kept as 'parkinsons_dopamine_list' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the NeuroDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'list' indicates that the dataset is a list. The original content has
+not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'parkinsons_dopamine_list' to
-      avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      NeuroDataSets package and assists users in identifying its
-      specific characteristics. The suffix 'list' indicates that the
-      dataset is a list. The original content has not been modified in
-      any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the bnma package version 1.6.0.
+Data taken from the bnma package version 1.6.0.

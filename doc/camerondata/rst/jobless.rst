@@ -1,190 +1,185 @@
-.. container::
+======= ===============
+jobless R Documentation
+======= ===============
 
-   .. container::
+Unemployment duration
+---------------------
 
-      ======= ===============
-      jobless R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Unemployment duration
-         :name: unemployment-duration
+Data from the January Current Population Survey's Displaced Workers
+Supplements (DWS) for the years 1986, 1988, 1990, and 1992. Only
+individuals between 20 and 61 years old who were displaced from
+nonagricultural jobs due to plant closure, slack work, or abolished
+positions are included in the sample (McCall, 1996). Cameron and Trivedi
+(2005).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data from the January Current Population Survey's Displaced
-      Workers Supplements (DWS) for the years 1986, 1988, 1990, and
-      1992. Only individuals between 20 and 61 years old who were
-      displaced from nonagricultural jobs due to plant closure, slack
-      work, or abolished positions are included in the sample (McCall,
-      1996). Cameron and Trivedi (2005).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   jobless
 
-      .. code:: R
+Format
+~~~~~~
 
-         jobless
+A data frame with 3343 observations and 43 variables:
 
-      .. rubric:: Format
-         :name: format
+spell
+   length of spell (joblessness duration) in number of two-week
+   intervals
 
-      A data frame with 3343 observations and 43 variables:
+censor1
+   = 1 if re-employed at full-time job
 
-      spell
-         length of spell (joblessness duration) in number of two-week
-         intervals
+censor2
+   = 1 if re-employed at part-time job
 
-      censor1
-         = 1 if re-employed at full-time job
+censor3
+   = 1 if re-employed but left job: pt–ft status unknown
 
-      censor2
-         = 1 if re-employed at part-time job
+censor4
+   = 1 if still jobless
 
-      censor3
-         = 1 if re-employed but left job: pt–ft status unknown
+ui
+   = 1 if filed unemployment insurance claim
 
-      censor4
-         = 1 if still jobless
+reprate
+   eligible replacement rate, weekly benefit amount divided by weekly
+   earnings in the lost job,
 
-      ui
-         = 1 if filed unemployment insurance claim
+logwage
+   log weekly earnings in lost job, 1985 prices
 
-      reprate
-         eligible replacement rate, weekly benefit amount divided by
-         weekly earnings in the lost job,
+tenure
+   years tenure in lost job
 
-      logwage
-         log weekly earnings in lost job, 1985 prices
+disrate
+   eligible disregard rate
 
-      tenure
-         years tenure in lost job
+slack
+   = 1 if lost job due to slack work
 
-      disrate
-         eligible disregard rate
+abolpos
+   = 1 if lost job due to abolished position
 
-      slack
-         = 1 if lost job due to slack work
+explose
+   = 1 if expected to lose job
 
-      abolpos
-         = 1 if lost job due to abolished position
+stateur
+   state unemployment rate, percent
 
-      explose
-         = 1 if expected to lose job
+houshead
+   = 1 if household head
 
-      stateur
-         state unemployment rate, percent
+married
+   = 1 if married
 
-      houshead
-         = 1 if household head
+female
+   = 1 if female
 
-      married
-         = 1 if married
+child
+   = 1 if has children
 
-      female
-         = 1 if female
+ychild
+   = 1 if has children five age and under
 
-      child
-         = 1 if has children
+nonwhite
+   = 1 if nonwhite
 
-      ychild
-         = 1 if has children five age and under
+age
+   age
 
-      nonwhite
-         = 1 if nonwhite
+schlt12
+   = 1 if less than 12 years schooling
 
-      age
-         age
+schgt12
+   = 1 if more than 12 years schooling
 
-      schlt12
-         = 1 if less than 12 years schooling
+smsa
+   = 1 if resides in SMSA (standard metropolitan statistical area)
 
-      schgt12
-         = 1 if more than 12 years schooling
+bluecoll
+   = 1 if los job blue collar
 
-      smsa
-         = 1 if resides in SMSA (standard metropolitan statistical area)
+mining
+   = 1 if lost job in mining
 
-      bluecoll
-         = 1 if los job blue collar
+constr
+   = 1 if lost job in construction
 
-      mining
-         = 1 if lost job in mining
+transp
+   = 1 if lost job in transportation
 
-      constr
-         = 1 if lost job in construction
+trade
+   = 1 if lost job in trade
 
-      transp
-         = 1 if lost job in transportation
+fire
+   = 1 if lost job in finance, insurance and real estate sector
 
-      trade
-         = 1 if lost job in trade
+services
+   = 1 if lost job in services sector
 
-      fire
-         = 1 if lost job in finance, insurance and real estate sector
+pubadmin
+   = 1 if lost job in the public administration
 
-      services
-         = 1 if lost job in services sector
+year85
+   = 1 if year of job loss is 1985
 
-      pubadmin
-         = 1 if lost job in the public administration
+year87
+   = 1 if year of job loss is 1987
 
-      year85
-         = 1 if year of job loss is 1985
+year89
+   = 1 if year of job loss is 1989
 
-      year87
-         = 1 if year of job loss is 1987
+midatl
+   = 1 if residence in Middle Atlantic
 
-      year89
-         = 1 if year of job loss is 1989
+encen
+   = 1 if residence in East North Central
 
-      midatl
-         = 1 if residence in Middle Atlantic
+wncen
+   = 1 if residence in West North Central
 
-      encen
-         = 1 if residence in East North Central
+southatl
+   = 1 if residence in South Atlantic
 
-      wncen
-         = 1 if residence in West North Central
+escen
+   = 1 if residence in East South Central
 
-      southatl
-         = 1 if residence in South Atlantic
+wscen
+   = 1 if residence in West South Central
 
-      escen
-         = 1 if residence in East South Central
+mountain
+   = 1 if residence in Mountain region
 
-      wscen
-         = 1 if residence in West South Central
+pacific
+   = 1 if residence in Pacific region
 
-      mountain
-         = 1 if residence in Mountain region
+Section in Text
+~~~~~~~~~~~~~~~
 
-      pacific
-         = 1 if residence in Pacific region
+17.11 Duration Example: Unemployment Duration, pp. 603-8, 632-6, 658-62
 
-      .. rubric:: Section in Text
-         :name: section-in-text
+Source
+~~~~~~
 
-      17.11 Duration Example: Unemployment Duration, pp. 603-8, 632-6,
-      658-62
+http://cameron.econ.ucdavis.edu/mmabook/mmadata.html
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      http://cameron.econ.ucdavis.edu/mmabook/mmadata.html
+Cameron, A. and Trivedi, P. (2005), "Microeconometrics: Methods and
+Applications," Cambridge University Press, New York.
 
-      .. rubric:: References
-         :name: references
+McCall, B. (1996), Unemployment Insurance Rules, Joblessness, and
+Part-time Work," Econometrica, 64, 647-682.
 
-      Cameron, A. and Trivedi, P. (2005), "Microeconometrics: Methods
-      and Applications," Cambridge University Press, New York.
+Examples
+~~~~~~~~
 
-      McCall, B. (1996), Unemployment Insurance Rules, Joblessness, and
-      Part-time Work," Econometrica, 64, 647-682.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         summary(jobless)
+   summary(jobless)

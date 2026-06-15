@@ -1,78 +1,73 @@
-.. container::
+============= ===============
+cochran.beets R Documentation
+============= ===============
 
-   .. container::
+Yield and number of plants in a sugarbeet fertilizer experiment
+---------------------------------------------------------------
 
-      ============= ===============
-      cochran.beets R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Yield and number of plants in a sugarbeet fertilizer
-         experiment
-         :name: yield-and-number-of-plants-in-a-sugarbeet-fertilizer-experiment
+Yield and number of plants in a sugarbeet fertilizer experiment.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Yield and number of plants in a sugarbeet fertilizer experiment.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("cochran.beets")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("cochran.beets")
+A data frame with 42 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``fert``
+   fertilizer treatment
 
-      A data frame with 42 observations on the following 4 variables.
+``block``
+   block
 
-      ``fert``
-         fertilizer treatment
+``yield``
+   yield, tons/acres
 
-      ``block``
-         block
+``plants``
+   number of plants per plot
 
-      ``yield``
-         yield, tons/acres
+Details
+~~~~~~~
 
-      ``plants``
-         number of plants per plot
+Yield (tons/acre) and number of beets per plot. Fertilizer treatments
+combine superphosphate (P), muriate of potash (K), and sodium nitrate
+(N).
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      Yield (tons/acre) and number of beets per plot. Fertilizer
-      treatments combine superphosphate (P), muriate of potash (K), and
-      sodium nitrate (N).
+George Snedecor (1946). *Statisitcal Methods*, 4th ed. Table 12.13, p.
+332.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      George Snedecor (1946). *Statisitcal Methods*, 4th ed. Table
-      12.13, p. 332.
+H. Fairfield Smith (1957). Interpretation of Adjusted Treatment Means
+and Regressions in Analysis of Covariance. *Biometrics*, 13, 282-308.
+https://doi.org/10.2307/2527917
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      H. Fairfield Smith (1957). Interpretation of Adjusted Treatment
-      Means and Regressions in Analysis of Covariance. *Biometrics*, 13,
-      282-308. https://doi.org/10.2307/2527917
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(cochran.beets)
+   dat = cochran.beets
 
-         ## Not run: 
-
-         library(agridat)
-         data(cochran.beets)
-         dat = cochran.beets
-
-         # P has strong effect
-         libs(lattice)
-         xyplot(yield ~ plants|fert, dat, main="cochran.beets") 
+   # P has strong effect
+   libs(lattice)
+   xyplot(yield ~ plants|fert, dat, main="cochran.beets") 
 
 
-         ## End(Not run)
+   ## End(Not run)

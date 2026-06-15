@@ -1,45 +1,41 @@
-.. container::
+======== ===============
+bushfire R Documentation
+======== ===============
 
-   .. container::
+Campbell Bushfire Data
+----------------------
 
-      ======== ===============
-      bushfire R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Campbell Bushfire Data
-         :name: campbell-bushfire-data
+This data set was used by Campbell (1984) to locate bushfire scars. The
+dataset contains satelite measurements on five frequency bands,
+corresponding to each of 38 pixels.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This data set was used by Campbell (1984) to locate bushfire
-      scars. The dataset contains satelite measurements on five
-      frequency bands, corresponding to each of 38 pixels.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(bushfire, package="robustbase")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(bushfire, package="robustbase")
+A data frame with 38 observations on 5 variables.
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      A data frame with 38 observations on 5 variables.
+Maronna, R.A. and Yohai, V.J. (1995) The Behavoiur of the Stahel-Donoho
+Robust Multivariate Estimator. *Journal of the American Statistical
+Association* **90**, 330–341.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Maronna, R.A. and Yohai, V.J. (1995) The Behavoiur of the
-      Stahel-Donoho Robust Multivariate Estimator. *Journal of the
-      American Statistical Association* **90**, 330–341.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(bushfire)
-         plot(bushfire)
-         covMcd(bushfire)
+   data(bushfire)
+   plot(bushfire)
+   covMcd(bushfire)

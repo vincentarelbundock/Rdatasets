@@ -1,93 +1,89 @@
-.. container::
+====================== ===============
+laycock.tea.uniformity R Documentation
+====================== ===============
 
-   .. container::
+Uniformity trials of tea
+------------------------
 
-      ====================== ===============
-      laycock.tea.uniformity R Documentation
-      ====================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trials of tea
-         :name: uniformity-trials-of-tea
+Uniformity trials of tea
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trials of tea
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("laycock.tea.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("laycock.tea.uniformity")
+A data frame with 54 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``loc``
+   location, L1 or L2
 
-      A data frame with 54 observations on the following 4 variables.
+``row``
+   row
 
-      ``loc``
-         location, L1 or L2
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   yield (pounds)
 
-      ``col``
-         column
+Details
+~~~~~~~
 
-      ``yield``
-         yield (pounds)
+Actual physical dimensions for the tea shrubs are not given, so we use
+an estimate of four feet square for each shrub (which is similar to the
+``eden.tea.uniformity`` experiment).
 
-      .. rubric:: Details
-         :name: details
+Location 1 (Laycock, page 108) is at the Research Station, Nyasaland.
+Plots were 10 by 15 bushes, harvested 23 times in 1942.
 
-      Actual physical dimensions for the tea shrubs are not given, so we
-      use an estimate of four feet square for each shrub (which is
-      similar to the ``eden.tea.uniformity`` experiment).
+Field length: 8 plots \* 10 bushes \* 4 feet = 320 feet.
 
-      Location 1 (Laycock, page 108) is at the Research Station,
-      Nyasaland. Plots were 10 by 15 bushes, harvested 23 times in 1942.
+Field width: 4 plots \* 15 bushes \* 4 feet = 240 feet.
 
-      Field length: 8 plots \* 10 bushes \* 4 feet = 320 feet.
+Location 2 (Laycock page 110) is at Mianga Estate, Nyasaland. Plots were
+9 by 11 bushes, harvested 18 times in 1951/52.
 
-      Field width: 4 plots \* 15 bushes \* 4 feet = 240 feet.
+Field length: 9 plots \* 9 bushes \* 4 feet = 324 feet.
 
-      Location 2 (Laycock page 110) is at Mianga Estate, Nyasaland.
-      Plots were 9 by 11 bushes, harvested 18 times in 1951/52.
+Field width: 6 plots \* 11 bushes \* 4 feet = 264 feet.
 
-      Field length: 9 plots \* 9 bushes \* 4 feet = 324 feet.
+Source
+~~~~~~
 
-      Field width: 6 plots \* 11 bushes \* 4 feet = 264 feet.
+Laycock, D. H. (1955). The effect of plot shape in reducing the errors
+of tea experiments. Tropical Agriculture, 32, 107-114.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Laycock, D. H. (1955). The effect of plot shape in reducing the
-      errors of tea experiments. Tropical Agriculture, 32, 107-114.
+Zimmerman, Dale L., and David A. Harville. (1991). A random field
+approach to the analysis of field-plot experiments and other spatial
+experiments. Biometrics, 47, 223-239.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Zimmerman, Dale L., and David A. Harville. (1991). A random field
-      approach to the analysis of field-plot experiments and other
-      spatial experiments. Biometrics, 47, 223-239.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
 
-         ## Not run: 
+   data(laycock.tea.uniformity)
+   dat <- laycock.tea.uniformity
 
-         library(agridat)
-
-         data(laycock.tea.uniformity)
-         dat <- laycock.tea.uniformity
-
-         libs(desplot)
-         desplot(dat, yield ~ col*row|loc,
-                 flip=TRUE, aspect=322/252, # average of 2 locs
-                 main="laycock.tea.uniformity")
+   libs(desplot)
+   desplot(dat, yield ~ col*row|loc,
+           flip=TRUE, aspect=322/252, # average of 2 locs
+           main="laycock.tea.uniformity")
 
 
-         ## End(Not run)
+   ## End(Not run)

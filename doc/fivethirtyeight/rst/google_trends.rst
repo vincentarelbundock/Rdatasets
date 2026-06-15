@@ -1,69 +1,60 @@
-.. container::
+============= ===============
+google_trends R Documentation
+============= ===============
 
-   .. container::
+The Media Really Started Paying Attention to Puerto Rico When Trump Did
+-----------------------------------------------------------------------
 
-      ============= ===============
-      google_trends R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The Media Really Started Paying Attention to Puerto
-         Rico When Trump Did
-         :name: the-media-really-started-paying-attention-to-puerto-rico-when-trump-did
+The raw data behind the story "The Media Really Started Paying Attention
+to Puerto Rico When Trump Did"
+https://fivethirtyeight.com/features/the-media-really-started-paying-attention-to-puerto-rico-when-trump-did/:
+Google Trends Data.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "The Media Really Started Paying
-      Attention to Puerto Rico When Trump Did"
-      https://fivethirtyeight.com/features/the-media-really-started-paying-attention-to-puerto-rico-when-trump-did/:
-      Google Trends Data.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   google_trends
 
-      .. code:: R
+Format
+~~~~~~
 
-         google_trends
+A data frame with 37 rows representing dates and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+date
+   Date
 
-      A data frame with 37 rows representing dates and 5 variables:
+hurricane_harvey_us
+   US Google search interest on the specified date for Hurricane Harvey
 
-      date
-         Date
+hurricane_irma_us
+   US Google search interest on the specified date for Hurricane Irma
 
-      hurricane_harvey_us
-         US Google search interest on the specified date for Hurricane
-         Harvey
+hurricane_maria_us
+   US Google search interest on the specified date for Hurricane Maria
 
-      hurricane_irma_us
-         US Google search interest on the specified date for Hurricane
-         Irma
+hurricane_jose_us
+   US Google search interest on the specified date for Hurricane Jose
 
-      hurricane_maria_us
-         US Google search interest on the specified date for Hurricane
-         Maria
+Details
+~~~~~~~
 
-      hurricane_jose_us
-         US Google search interest on the specified date for Hurricane
-         Jose
+Google search interest is measured in search term popularity relative to
+peak popularity in the given region and time period (with 100 as peak
+popularity)
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      Google search interest is measured in search term popularity
-      relative to peak popularity in the given region and time period
-      (with 100 as peak popularity)
+Google Trends https://trends.google.com/trends/
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      Google Trends https://trends.google.com/trends/
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``mediacloud_hurricanes``, ``mediacloud_states``,
-      ``mediacloud_online_news``, ``mediacloud_trump``,
-      ``tv_hurricanes``, ``tv_hurricanes_by_network``, ``tv_states``
+``mediacloud_hurricanes``, ``mediacloud_states``,
+``mediacloud_online_news``, ``mediacloud_trump``, ``tv_hurricanes``,
+``tv_hurricanes_by_network``, ``tv_states``

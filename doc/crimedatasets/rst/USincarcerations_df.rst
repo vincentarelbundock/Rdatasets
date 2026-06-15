@@ -1,72 +1,63 @@
-.. container::
+=================== ===============
+USincarcerations_df R Documentation
+=================== ===============
 
-   .. container::
+US Incarcerations 1925 Onward
+-----------------------------
 
-      =================== ===============
-      USincarcerations_df R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: US Incarcerations 1925 Onward
-         :name: us-incarcerations-1925-onward
+This dataset contains counts of prisoners under the jurisdiction of
+state and federal correctional authorities in the United States from
+1925 onward. The data excludes jail inmates and focuses on individuals
+in state and federal incarceration facilities.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains counts of prisoners under the jurisdiction
-      of state and federal correctional authorities in the United States
-      from 1925 onward. The data excludes jail inmates and focuses on
-      individuals in state and federal incarceration facilities.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(USincarcerations_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(USincarcerations_df)
+A data frame with 95 rows and 7 variables:
 
-      .. rubric:: Format
-         :name: format
+year
+   Year of the recorded data (numeric).
 
-      A data frame with 95 rows and 7 variables:
+stateFedIncarcerees
+   Number of prisoners under state and federal jurisdiction (numeric).
 
-      year
-         Year of the recorded data (numeric).
+stateFedIncarcerationRate
+   Incarceration rate per 100,000 population for state and federal
+   facilities (numeric).
 
-      stateFedIncarcerees
-         Number of prisoners under state and federal jurisdiction
-         (numeric).
+stateFedMales
+   Number of male prisoners in state and federal facilities (numeric).
 
-      stateFedIncarcerationRate
-         Incarceration rate per 100,000 population for state and federal
-         facilities (numeric).
+stateFedMaleRate
+   Male incarceration rate per 100,000 male population (numeric).
 
-      stateFedMales
-         Number of male prisoners in state and federal facilities
-         (numeric).
+stateFedFemales
+   Number of female prisoners in state and federal facilities (numeric).
 
-      stateFedMaleRate
-         Male incarceration rate per 100,000 male population (numeric).
+stateFedFemaleRate
+   Female incarceration rate per 100,000 female population (numeric).
 
-      stateFedFemales
-         Number of female prisoners in state and federal facilities
-         (numeric).
+Details
+~~~~~~~
 
-      stateFedFemaleRate
-         Female incarceration rate per 100,000 female population
-         (numeric).
+The dataset name has been changed to 'USincarcerations_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the crimedatasets package and
+assists users in identifying its specific characteristics. The suffix
+'df' indicates that the dataset is a data frame. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been changed to 'USincarcerations_df' to
-      avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      crimedatasets package and assists users in identifying its
-      specific characteristics. The suffix 'df' indicates that the
-      dataset is a data frame. The original content has not been
-      modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      US incarceration data (1925 onward).
+US incarceration data (1925 onward).

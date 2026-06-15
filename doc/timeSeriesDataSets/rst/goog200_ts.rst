@@ -1,43 +1,38 @@
-.. container::
+========== ===============
+goog200_ts R Documentation
+========== ===============
 
-   .. container::
+Daily Closing Stock Prices of Google Inc. (200 Days).
+-----------------------------------------------------
 
-      ========== ===============
-      goog200_ts R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Daily Closing Stock Prices of Google Inc. (200 Days).
-         :name: daily-closing-stock-prices-of-google-inc.-200-days.
+The dataset name has been changed to 'goog200_ts' to avoid confusion
+with other packages in the R ecosystem from which datasets have been
+sourced. The suffix 'ts' indicates that this dataset is a time series
+object. This naming convention helps distinguish this dataset as part of
+the 'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'goog200_ts' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. The suffix 'ts' indicates that this
-      dataset is a time series object. This naming convention helps
-      distinguish this dataset as part of the 'timeseriesdatasets'
-      package and assists users in identifying its specific
-      characteristics. The original content of the dataset has not been
-      modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(goog200_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(goog200_ts)
+A time series object with 200 observations:
 
-      .. rubric:: Format
-         :name: format
+goog200
+   A numeric vector representing the daily closing stock prices of
+   Google Inc., measured in US dollars, for a period of 200 days.
 
-      A time series object with 200 observations:
+Source
+~~~~~~
 
-      goog200
-         A numeric vector representing the daily closing stock prices of
-         Google Inc., measured in US dollars, for a period of 200 days.
-
-      .. rubric:: Source
-         :name: source
-
-      Data provided by Yahoo Finance.
+Data provided by Yahoo Finance.

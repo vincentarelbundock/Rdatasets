@@ -1,38 +1,34 @@
-.. container::
+====== ===============
+covers R Documentation
+====== ===============
 
-   .. container::
+Raw cover type data
+-------------------
 
-      ====== ===============
-      covers R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Raw cover type data
-         :name: raw-cover-type-data
+These data are raw data describing different types of forest cover-types
+from the UCI Machine Learning Database (see link below). There is one
+column in the data that has a few difference pieces of textual
+information (of variable lengths).
 
-      .. rubric:: Description
-         :name: description
+Value
+~~~~~
 
-      These data are raw data describing different types of forest
-      cover-types from the UCI Machine Learning Database (see link
-      below). There is one column in the data that has a few difference
-      pieces of textual information (of variable lengths).
+========== ============
+``covers`` a data frame
+========== ============
 
-      .. rubric:: Value
-         :name: value
+Source
+~~~~~~
 
-      ========== ============
-      ``covers`` a data frame
-      ========== ============
+https://archive.ics.uci.edu/ml/machine-learning-databases/covtype/covtype.info
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      https://archive.ics.uci.edu/ml/machine-learning-databases/covtype/covtype.info
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(covers)
-         str(covers)
+   data(covers)
+   str(covers)

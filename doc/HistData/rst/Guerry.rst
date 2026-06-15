@@ -1,204 +1,193 @@
-.. container::
+====== ===============
+Guerry R Documentation
+====== ===============
 
-   .. container::
+Data from A.-M. Guerry, "Essay on the Moral Statistics of France"
+-----------------------------------------------------------------
 
-      ====== ===============
-      Guerry R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Data from A.-M. Guerry, "Essay on the Moral Statistics
-         of France"
-         :name: data-from-a.-m.-guerry-essay-on-the-moral-statistics-of-france
+Andre-Michel Guerry (1833) was the first to systematically collect and
+analyze social data on such things as crime, literacy and suicide with
+the view to determining social laws and the relations among these
+variables.
 
-      .. rubric:: Description
-         :name: description
+The ``Guerry`` data frame comprises a collection of 'moral variables' on
+the 86 departments of France around 1830. A few additional variables
+have been added from other sources.
 
-      Andre-Michel Guerry (1833) was the first to systematically collect
-      and analyze social data on such things as crime, literacy and
-      suicide with the view to determining social laws and the relations
-      among these variables.
+Format
+~~~~~~
 
-      The Guerry data frame comprises a collection of 'moral variables'
-      on the 86 departments of France around 1830. A few additional
-      variables have been added from other sources.
+A data frame with 86 observations (the departments of France) on the
+following 23 variables.
 
-      .. rubric:: Usage
-         :name: usage
+``dept``
+   Department ID: Standard numbers for the departments, except for
+   Corsica (200)
 
-      .. code:: R
+``Region``
+   Region of France ('N'='North', 'S'='South', 'E'='East', 'W'='West',
+   'C'='Central'). Corsica is coded as NA
 
-         data(Guerry)
+``Department``
+   Department name: Departments are named according to usage in 1830,
+   but without accents. A factor with levels ``Ain``, ``Aisne``,
+   ``Allier``, ..., ``Vosges``, ``Yonne``
 
-      .. rubric:: Format
-         :name: format
+``Crime_pers``
+   Population per Crime against persons. Source: A2 (Compte general,
+   1825-1830)
 
-      A data frame with 86 observations (the departments of France) on
-      the following 23 variables.
+``Crime_prop``
+   Population per Crime against property. Source: A2 (Compte general,
+   1825-1830)
 
-      ``dept``
-         Department ID: Standard numbers for the departments, except for
-         Corsica (200)
+``Literacy``
+   Percent Read & Write: Percent of military conscripts who can read and
+   write. Source: A2
 
-      ``Region``
-         Region of France ('N'='North', 'S'='South', 'E'='East',
-         'W'='West', 'C'='Central'). Corsica is coded as NA
+``Donations``
+   Donations to the poor. Source: A2 (Bulletin des lois)
 
-      ``Department``
-         Department name: Departments are named according to usage in
-         1830, but without accents. A factor with levels ``Ain``
-         ``Aisne`` ``Allier`` ... ``Vosges`` ``Yonne``
+``Infants``
+   Population per illegitimate birth. Source: A2 (Bureau des Longitudes,
+   1817-1821)
 
-      ``Crime_pers``
-         Population per Crime against persons. Source: A2 (Compte
-         general, 1825-1830)
+``Suicides``
+   Population per suicide. Source: A2 (Compte general, 1827-1830)
 
-      ``Crime_prop``
-         Population per Crime against property. Source: A2 (Compte
-         general, 1825-1830)
+``MainCity``
+   Size of principal city ('1:Sm', '2:Med', '3:Lg'), used as a surrogate
+   for population density. Large refers to the top 10, small to the
+   bottom 10; all the rest are classed Medium. Source: A1. An ordered
+   factor with levels ``1:Sm`` < ``2:Med`` < ``3:Lg``
 
-      ``Literacy``
-         Percent Read & Write: Percent of military conscripts who can
-         read and write. Source: A2
+``Wealth``
+   Per capita tax on personal property. A ranked index based on taxes on
+   personal and movable property per inhabitant. Source: A1
 
-      ``Donations``
-         Donations to the poor. Source: A2 (Bulletin des lois)
+``Commerce``
+   Commerce and Industry, measured by the rank of the number of patents
+   / population. Source: A1
 
-      ``Infants``
-         Population per illegitimate birth. Source: A2 (Bureau des
-         Longitudes, 1817-1821)
+``Clergy``
+   Distribution of clergy, measured by the rank of the number of
+   Catholic priests in active service / population. Source: A1 (Almanach
+   officiel du clergy, 1829)
 
-      ``Suicides``
-         Population per suicide. Source: A2 (Compte general, 1827-1830)
+``Crime_parents``
+   Crimes against parents, measured by the rank of the ratio of crimes
+   against parents to all crimes– Average for the years 1825-1830.
+   Source: A1 (Compte general)
 
-      ``MainCity``
-         Size of principal city ('1:Sm', '2:Med', '3:Lg'), used as a
-         surrogate for population density. Large refers to the top 10,
-         small to the bottom 10; all the rest are classed Medium.
-         Source: A1. An ordered factor with levels ``1:Sm`` < ``2:Med``
-         < ``3:Lg``
+``Infanticide``
+   Infanticides per capita. A ranked ratio of number of infanticides to
+   population– Average for the years 1825-1830. Source: A1 (Compte
+   general)
 
-      ``Wealth``
-         Per capita tax on personal property. A ranked index based on
-         taxes on personal and movable property per inhabitant. Source:
-         A1
+``Donation_clergy``
+   Donations to the clergy. A ranked ratio of the number of bequests and
+   donations inter vivios to population– Average for the years
+   1815-1824. Source: A1 (Bull. des lois, ordunn. d'autorisation)
 
-      ``Commerce``
-         Commerce and Industry, measured by the rank of the number of
-         patents / population. Source: A1
+``Lottery``
+   Per capita wager on Royal Lottery. Ranked ratio of the proceeds bet
+   on the royal lottery to population— Average for the years 1822-1826.
+   Source: A1 (Compte rendus par le ministere des finances)
 
-      ``Clergy``
-         Distribution of clergy, measured by the rank of the number of
-         Catholic priests in active service / population. Source: A1
-         (Almanach officiel du clergy, 1829)
+``Desertion``
+   Military desertion, ratio of the number of young soldiers accused of
+   desertion to the force of the military contingent, minus the deficit
+   produced by the insufficiency of available billets– Average of the
+   years 1825-1827. Source: A1 (Compte du ministere du guerre, 1829 etat
+   V)
 
-      ``Crime_parents``
-         Crimes against parents, measured by the rank of the ratio of
-         crimes against parents to all crimes– Average for the years
-         1825-1830. Source: A1 (Compte general)
+``Instruction``
+   Instruction. Ranks recorded from Guerry's map of Instruction. Note:
+   this is inversely related to ``Literacy`` (as defined here)
 
-      ``Infanticide``
-         Infanticides per capita. A ranked ratio of number of
-         infanticides to population– Average for the years 1825-1830.
-         Source: A1 (Compte general)
+``Prostitutes``
+   Prostitutes in Paris. Number of prostitutes registered in Paris from
+   1816 to 1834, classified by the department of their birth Source:
+   Parent-Duchatelet (1836), *De la prostitution en Paris*
 
-      ``Donation_clergy``
-         Donations to the clergy. A ranked ratio of the number of
-         bequests and donations inter vivios to population– Average for
-         the years 1815-1824. Source: A1 (Bull. des lois, ordunn.
-         d'autorisation)
+``Distance``
+   Distance to Paris (km). Distance of each department centroid to the
+   centroid of the Seine (Paris) Source: calculated from department
+   centroids
 
-      ``Lottery``
-         Per capita wager on Royal Lottery. Ranked ratio of the proceeds
-         bet on the royal lottery to population— Average for the years
-         1822-1826. Source: A1 (Compte rendus par le ministere des
-         finances)
+``Area``
+   Area (1000 km^2). Source: Angeville (1836)
 
-      ``Desertion``
-         Military desertion, ratio of the number of young soldiers
-         accused of desertion to the force of the military contingent,
-         minus the deficit produced by the insufficiency of available
-         billets– Average of the years 1825-1827. Source: A1 (Compte du
-         ministere du guerre, 1829 etat V)
+``Pop1831``
+   1831 population. Population in 1831, taken from Angeville (1836),
+   *Essai sur la Statistique de la Population fran?ais*, in 1000s
 
-      ``Instruction``
-         Instruction. Ranks recorded from Guerry's map of Instruction.
-         Note: this is inversely related to ``Literacy`` (as defined
-         here)
+Details
+~~~~~~~
 
-      ``Prostitutes``
-         Prostitutes in Paris. Number of prostitutes registered in Paris
-         from 1816 to 1834, classified by the department of their birth
-         Source: Parent-Duchatelet (1836), *De la prostitution en Paris*
+Note that most of the variables (e.g., ``Crime_pers``) are scaled so
+that 'more is better' morally. This is done by expressing "bad" numbers
+as *population per* crime or by using ranks. Thus, in his choropleth
+maps, he was able to assign darker shading consistently to the
+departments that were worse.
 
-      ``Distance``
-         Distance to Paris (km). Distance of each department centroid to
-         the centroid of the Seine (Paris) Source: calculated from
-         department centroids
+Values for the quantitative variables displayed on Guerry's maps were
+taken from Table A2 in the English translation of Guerry (1833) by Whitt
+and Reinking. Values for the ranked variables were taken from Table A1,
+with some corrections applied. The maximum is indicated by rank 1, and
+the minimum by rank 86.
 
-      ``Area``
-         Area (1000 km^2). Source: Angeville (1836)
+Source
+~~~~~~
 
-      ``Pop1831``
-         1831 population. Population in 1831, taken from Angeville
-         (1836), *Essai sur la Statistique de la Population fran?ais*,
-         in 1000s
+Angeville, A. (1836). *Essai sur la Statistique de la Population
+fran?aise* Paris: F. Doufour.
 
-      .. rubric:: Details
-         :name: details
+Guerry, A.-M. (1833). *Essai sur la statistique morale de la France*
+Paris: Crochard. English translation: Hugh P. Whitt and Victor W.
+Reinking, Lewiston, N.Y. : Edwin Mellen Press, 2002.
 
-      Note that most of the variables (e.g., ``Crime_pers``) are scaled
-      so that 'more is better' morally.
+Parent-Duchatelet, A. (1836). *De la prostitution dans la ville de
+Paris*, 3rd ed, 1857, p. 32, 36
 
-      Values for the quantitative variables displayed on Guerry's maps
-      were taken from Table A2 in the English translation of Guerry
-      (1833) by Whitt and Reinking. Values for the ranked variables were
-      taken from Table A1, with some corrections applied. The maximum is
-      indicated by rank 1, and the minimum by rank 86.
+See the example by John Russell for the
+`30DayChartChallenge <https://github.com/drjohnrussell/30DayChartChallenge/blob/main/2025/Challenge22.R>`__
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Angeville, A. (1836). *Essai sur la Statistique de la Population
-      fran?aise* Paris: F. Doufour.
+Dray, S. and Jombart, T. (2011). A Revisit Of Guerry's Data: Introducing
+Spatial Constraints In Multivariate Analysis. *The Annals of Applied
+Statistics*, Vol. 5, No. 4, 2278-2299. https://arxiv.org/pdf/1202.6485,
+DOI: 10.1214/10-AOAS356.
 
-      Guerry, A.-M. (1833). *Essai sur la statistique morale de la
-      France* Paris: Crochard. English translation: Hugh P. Whitt and
-      Victor W. Reinking, Lewiston, N.Y. : Edwin Mellen Press, 2002.
+Brunsdon, C. and Dykes, J. (2007). Geographically weighted
+visualization: interactive graphics for scale-varying exploratory
+analysis. Geographical Information Science Research Conference (GISRUK
+07), NUI Maynooth, Ireland, April, 2007.
 
-      Parent-Duchatelet, A. (1836). *De la prostitution dans la ville de
-      Paris*, 3rd ed, 1857, p. 32, 36
+Friendly, M. (2007). A.-M. Guerry's Moral Statistics of France:
+Challenges for Multivariable Spatial Analysis. *Statistical Science*,
+22, 368-399.
 
-      .. rubric:: References
-         :name: references
+Friendly, M. (2007). Data from A.-M. Guerry, Essay on the Moral
+Statistics of France (1833),
+http://datavis.ca/gallery/guerry/guerrydat.html.
 
-      Dray, S. and Jombart, T. (2011). A Revisit Of Guerry's Data:
-      Introducing Spatial Constraints In Multivariate Analysis. *The
-      Annals of Applied Statistics*, Vol. 5, No. 4, 2278-2299.
-      http://arxiv.org/pdf/1202.6485, DOI: 10.1214/10-AOAS356.
+See Also
+~~~~~~~~
 
-      Brunsdon, C. and Dykes, J. (2007). Geographically weighted
-      visualization: interactive graphics for scale-varying exploratory
-      analysis. Geographical Information Science Research Conference
-      (GISRUK 07), NUI Maynooth, Ireland, April, 2007.
+The Guerry package for maps of France: ``gfrance``, related data,
+creating maps of his data and multivariate spatial analysis.
 
-      Friendly, M. (2007). A.-M. Guerry's Moral Statistics of France:
-      Challenges for Multivariable Spatial Analysis. *Statistical
-      Science*, 22, 368-399.
+Examples
+~~~~~~~~
 
-      Friendly, M. (2007). Data from A.-M. Guerry, Essay on the Moral
-      Statistics of France (1833),
-      http://datavis.ca/gallery/guerry/guerrydat.html.
+.. code:: R
 
-      .. rubric:: See Also
-         :name: see-also
 
-      The Guerry package for maps of France: ``gfrance`` and related
-      data.
-
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(Guerry)
-         ## maybe str(Guerry) ; plot(Guerry) ...
+   data(Guerry)
+   ## maybe str(Guerry) ; plot(Guerry) ...

@@ -1,64 +1,60 @@
-.. container::
+=========== ===============
+aus_tobacco R Documentation
+=========== ===============
 
-   .. container::
+Australian cigarette and tobacco expenditure
+--------------------------------------------
 
-      =========== ===============
-      aus_tobacco R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Australian cigarette and tobacco expenditure
-         :name: australian-cigarette-and-tobacco-expenditure
+The total household expenditure for cigarette and tobacco consumption
+(CTC) in Australia.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      The total household expenditure for cigarette and tobacco
-      consumption (CTC) in Australia.
+Time series of class 'tsibble'
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      Time series of class 'tsibble'
+``aus_tobacco`` contains quarterly data with one measured variable:
 
-      .. rubric:: Details
-         :name: details
+================ =====================
+``Expenditure``: The total expenditure
+                 
+================ =====================
 
-      ``aus_tobacco`` contains quarterly data with one measured
-      variable:
+from 1985 Q3 to 2023 Q4 for the 6 states and 2 territories of Australia,
+indexed by:
 
-      ================ =====================
-      ``Expenditure``: The total expenditure
-      \                
-      ================ =====================
+============ =============
+``Quarter``: Year-quarter.
+             
+============ =============
 
-      from 1985 Q3 to 2023 Q4 for the 6 states and 2 territories of
-      Australia, indexed by:
+The prices are represented as a chain volume measure (a representation
+of constant prices) in billions of dollars.
 
-      ============ =============
-      ``Quarter``: Year-quarter.
-      \            
-      ============ =============
+Each series is uniquely identified using the key:
 
-      The prices are represented as a chain volume measure (a
-      representation of constant prices) in billions of dollars.
++------------------------------------+
+| ``State``: The state or territory. |
++------------------------------------+
+|                                    |
++------------------------------------+
 
-      Each series is uniquely identified using the key:
+Source
+~~~~~~
 
-      +------------------------------------+
-      | ``State``: The state or territory. |
-      +------------------------------------+
-      |                                    |
-      +------------------------------------+
+Australian Bureau of Statistics.
+https://www.abs.gov.au/statistics/economy/national-accounts/australian-national-accounts-national-income-expenditure-and-product/mar-2024
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Australian Bureau of Statistics.
-      https://www.abs.gov.au/statistics/economy/national-accounts/australian-national-accounts-national-income-expenditure-and-product/mar-2024
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         aus_tobacco |> autoplot(Expenditure) + scale_y_log10()
+   aus_tobacco |> autoplot(Expenditure) + scale_y_log10()

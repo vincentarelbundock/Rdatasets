@@ -1,111 +1,108 @@
-.. container::
+================ ===============
+wallace.iowaland R Documentation
+================ ===============
 
-   .. container::
+Iowa farmland values by county in 1925
+--------------------------------------
 
-      ================ ===============
-      wallace.iowaland R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Iowa farmland values by county in 1925
-         :name: iowa-farmland-values-by-county-in-1925
+Iowa farmland values by county in 1925
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Iowa farmland values by county in 1925
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("wallace.iowaland")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("wallace.iowaland")
+A data frame with 99 observations on the following 10 variables.
 
-      .. rubric:: Format
-         :name: format
+``county``
+   county factor, 99 levels
 
-      A data frame with 99 observations on the following 10 variables.
+``fips``
+   FIPS code (state+county)
 
-      ``county``
-         county factor, 99 levels
+``lat``
+   latitude
 
-      ``fips``
-         FIPS code (state+county)
+``long``
+   longitude
 
-      ``lat``
-         latitude
+``yield``
+   average corn yield per acre (bu)
 
-      ``long``
-         longitude
+``corn``
+   percent of land in corn
 
-      ``yield``
-         average corn yield per acre (bu)
+``grain``
+   percent of land in small grains
 
-      ``corn``
-         percent of land in corn
+``untillable``
+   percent of land untillable
 
-      ``grain``
-         percent of land in small grains
+``fedval``
+   land value (excluding buildings) per acre, 1925 federal census
 
-      ``untillable``
-         percent of land untillable
+``stval``
+   land value (excluding buildings) per acre, 1925 state census
 
-      ``fedval``
-         land value (excluding buildings) per acre, 1925 federal census
+Details
+~~~~~~~
 
-      ``stval``
-         land value (excluding buildings) per acre, 1925 state census
+None.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      None.
+H.A. Wallace (1926). Comparative Farm-Land Values in Iowa. *The Journal
+of Land & Public Utility Economics*, 2, 385-392. Page 387-388.
+https://doi.org/10.2307/3138610
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      H.A. Wallace (1926). Comparative Farm-Land Values in Iowa. *The
-      Journal of Land & Public Utility Economics*, 2, 385-392. Page
-      387-388. https://doi.org/10.2307/3138610
+Larry Winner. Spatial Data Analysis.
+https://www.stat.ufl.edu/~winner/data/iowaland.txt
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Larry Winner. Spatial Data Analysis.
-      https://www.stat.ufl.edu/~winner/data/iowaland.txt
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   library(agridat)
+   data(wallace.iowaland)
+   dat <- wallace.iowaland
 
-         library(agridat)
-         data(wallace.iowaland)
-         dat <- wallace.iowaland
+   # Interesting trends involving latitude
+   libs(lattice)
+   splom(~dat[,-c(1:2)], type=c('p','smooth'), lwd=2, main="wallace.iowaland")
 
-         # Interesting trends involving latitude
-         libs(lattice)
-         splom(~dat[,-c(1:2)], type=c('p','smooth'), lwd=2, main="wallace.iowaland")
+   # Means. Similar to Wallace table 1
+   apply(dat[, c('yield','corn','grain','untillable','fedval')], 2, mean)
 
-         # Means. Similar to Wallace table 1
-         apply(dat[, c('yield','corn','grain','untillable','fedval')], 2, mean)
+   # Correlations.  Similar to Wallace table 2
+   round(cor(dat[, c('yield','corn','grain','untillable','fedval')]),2)
 
-         # Correlations.  Similar to Wallace table 2
-         round(cor(dat[, c('yield','corn','grain','untillable','fedval')]),2)
+   m1 <- lm(fedval ~ yield + corn + grain + untillable, dat)
+   summary(m1) # estimates similar to Wallace, top of p. 389
 
-         m1 <- lm(fedval ~ yield + corn + grain + untillable, dat)
-         summary(m1) # estimates similar to Wallace, top of p. 389
+   # Choropleth map
+   libs(maps)
+   data(county.fips)
+   dat <- transform(dat, polnm = paste0('iowa,',county)) # polnm example: iowa,adair
 
-         # Choropleth map
-         libs(maps)
-         data(county.fips)
-         dat <- transform(dat, polnm = paste0('iowa,',county)) # polnm example: iowa,adair
-
-         libs("latticeExtra") # for mapplot
-         redblue <- colorRampPalette(c("firebrick", "lightgray", "#375997"))
-         mapplot(polnm~fedval , data=dat, colramp=redblue,
-                 main="wallace.iowaland - Federal land values",
-                 xlab="Land value, dollars per acre",
-                 scales=list(draw=FALSE),
-                 map=map('county', 'iowa', plot=FALSE,
-                   fill=TRUE, projection="mercator"))
+   libs("latticeExtra") # for mapplot
+   redblue <- colorRampPalette(c("firebrick", "lightgray", "#375997"))
+   mapplot(polnm~fedval , data=dat, colramp=redblue,
+           main="wallace.iowaland - Federal land values",
+           xlab="Land value, dollars per acre",
+           scales=list(draw=FALSE),
+           map=map('county', 'iowa', plot=FALSE,
+             fill=TRUE, projection="mercator"))

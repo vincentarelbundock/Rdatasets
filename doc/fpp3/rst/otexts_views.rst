@@ -1,39 +1,36 @@
-.. container::
+============ ===============
+otexts_views R Documentation
+============ ===============
 
-   .. container::
+OTexts page views
+-----------------
 
-      ============ ===============
-      otexts_views R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: OTexts page views
-         :name: otexts-page-views
+Daily page views on the OTexts website https://OTexts.com/ as recorded
+by Google analytics.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Daily page views on the OTexts website https://OTexts.com/ as
-      recorded by Google analytics.
+Time series of class 'tsibble'
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      Time series of class 'tsibble'
+``otexts_views`` contains daily data with two columns:
 
-      .. rubric:: Details
-         :name: details
+============== ==========================================
+``Date``:      Date for which the page views are recorded
+``Pageviews``: Page views on the OTexts website
+               
+============== ==========================================
 
-      ``otexts_views`` contains daily data with two columns:
+Examples
+~~~~~~~~
 
-      ============== ==========================================
-      ``Date``:      Date for which the page views are recorded
-      ``Pageviews``: Page views on the OTexts website
-      \              
-      ============== ==========================================
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         otexts_views
+   otexts_views

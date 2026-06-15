@@ -82,29 +82,29 @@ the maximum possible value of the raw score (&quot;denominator&quot;)</p>
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>cms_patient_experience %&gt;%
+<pre><code class='language-R'>cms_patient_experience |&gt;
   dplyr::distinct(measure_cd, measure_title)
 
-cms_patient_experience %&gt;%
+cms_patient_experience |&gt;
   pivot_wider(
     id_cols = starts_with("org"),
     names_from = measure_cd,
     values_from = prf_rate
  )
 
-cms_patient_care %&gt;%
+cms_patient_care |&gt;
   pivot_wider(
     names_from = type,
     values_from = score
   )
 
-cms_patient_care %&gt;%
+cms_patient_care |&gt;
   pivot_wider(
     names_from = measure_abbr,
     values_from = score
   )
 
-cms_patient_care %&gt;%
+cms_patient_care |&gt;
   pivot_wider(
     names_from = c(measure_abbr, type),
     values_from = score

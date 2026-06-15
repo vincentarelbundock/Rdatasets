@@ -20,40 +20,37 @@ function processMathHTML() {
 
 <h3>Description</h3>
 
-<p>Three year survival of 474 breast cancer patients according to nuclear grade and diagnostic center.</p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data(Cancer)
-</code></pre>
+<p>Three year survival of 474 breast cancer patients according to nuclear grade
+and diagnostic center.
+</p>
 
 
 <h3>Format</h3>
 
-<p>A 3-dimensional array resulting from cross-tabulating 3 variables for   474 observations. The variable names and their levels are:
+<p>A 3-dimensional array resulting from cross-tabulating 3 variables
+for 474 observations. The variable names and their levels are:
 </p>
 
 <table>
 <tr>
  <td style="text-align: right;">
-    No </td><td style="text-align: left;"> Name </td><td style="text-align: left;"> Levels </td>
+dim </td><td style="text-align: left;"> Name </td><td style="text-align: left;"> Levels </td>
 </tr>
 <tr>
  <td style="text-align: right;">
-    1</td><td style="text-align: left;"> <code>Survival</code></td><td style="text-align: left;"> <code>"Died", "Surv"</code></td>
+1</td><td style="text-align: left;"> <code>Survival</code></td><td style="text-align: left;">  <code style="white-space: pre;">&#8288;"Died", "Surv"&#8288;</code></td>
 </tr>
 <tr>
  <td style="text-align: right;">
-    2</td><td style="text-align: left;"> <code>Grade</code></td><td style="text-align: left;"> <code>"Malignant", "Benign"</code></td>
+2</td><td style="text-align: left;"> <code>Grade</code></td><td style="text-align: left;"> <code style="white-space: pre;">&#8288;"Malignant", "Benign"&#8288;</code></td>
 </tr>
 <tr>
  <td style="text-align: right;">
-    3</td><td style="text-align: left;"> <code>Center</code></td><td style="text-align: left;"> <code>"Boston", "Glamorgan"</code></td>
+3</td><td style="text-align: left;"> <code>Center</code></td><td style="text-align: left;"> <code style="white-space: pre;">&#8288;"Boston", "Glamorgan"&#8288;</code></td>
 </tr>
 <tr>
  <td style="text-align: right;">
-  </td>
+</td>
 </tr>
 
 </table>
@@ -62,23 +59,24 @@ function processMathHTML() {
 
 <h3>Source</h3>
 
-<p>Lindsey, J. K. (1995). 
-Analysis of Frequency and Count Data 
-Oxford, UK: Oxford University Press. p. 38, Table 2.5.
+<p>Lindsey, J. K. (1995).
+Analysis of Frequency and Count Data Oxford, UK: Oxford University Press. p.
+38, Table 2.5.
 </p>
-<p>Whittaker, J. (1990)
-Graphical Models in Applied Multivariate Statistics
-New York: John Wiley and Sons, p. 220.
+<p>Whittaker, J. (1990) Graphical Models in Applied Multivariate Statistics New
+York: John Wiley and Sons, p. 220.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(Cancer)
+<pre><code class='language-R'>
+data(Cancer)
 
 MASS::loglm(~Survival + Grade + Center, data = Cancer)
 
 vcd::mosaic(Cancer, shade=TRUE)
+
 </code></pre>
 
 </main>

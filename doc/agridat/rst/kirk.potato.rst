@@ -1,87 +1,80 @@
-.. container::
+=========== ===============
+kirk.potato R Documentation
+=========== ===============
 
-   .. container::
+Variety trial of potatoes, highly replicated
+--------------------------------------------
 
-      =========== ===============
-      kirk.potato R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Variety trial of potatoes, highly replicated
-         :name: variety-trial-of-potatoes-highly-replicated
+Variety trial of potatoes, highly replicated
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Variety trial of potatoes, highly replicated
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("kirk.potato")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("kirk.potato")
+A data frame with 380 observations on the following 5 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row ordinate
 
-      A data frame with 380 observations on the following 5 variables.
+``col``
+   column ordinate
 
-      ``row``
-         row ordinate
+``rep``
+   replicate (not block)
 
-      ``col``
-         column ordinate
+``gen``
+   genotype (variety)
 
-      ``rep``
-         replicate (not block)
+``yield``
+   yield, pounds per plot
 
-      ``gen``
-         genotype (variety)
+Details
+~~~~~~~
 
-      ``yield``
-         yield, pounds per plot
+A highly-replicated variety trial of potatoes planted in 1924 with check
+plots every 5th row. Entries were not randomized. The rod rows were
+planted in series across the field, the rows spaced five links apart
+(nearly 3.5 feet) and with 3.5 foot passes between the series.
 
-      .. rubric:: Details
-         :name: details
+The replicates are sometimes dis-jointed, so are not really blocks.
 
-      A highly-replicated variety trial of potatoes planted in 1924 with
-      check plots every 5th row. Entries were not randomized. The rod
-      rows were planted in series across the field, the rows spaced five
-      links apart (nearly 3.5 feet) and with 3.5 foot passes between the
-      series.
+Source
+~~~~~~
 
-      The replicates are sometimes dis-jointed, so are not really
-      blocks.
+Kirk, L. E. and C. H. Goulden (1925) Some statistical observations on a
+yield test of potato varieties. Scientific Agriculture, 6, 89-97.
+https://www.google.com/books/edition/Canadian_Journal_of_Agriculture_Science/TgIkAQAAMAAJ
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Kirk, L. E. and C. H. Goulden (1925) Some statistical observations
-      on a yield test of potato varieties. Scientific Agriculture, 6,
-      89-97. https://doi.org/10.4141/sa-1925-0088 (paywall)
-      https://www.google.com/books/edition/Canadian_Journal_of_Agriculture_Science/TgIkAQAAMAAJ
+None
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
+     library(agridat)
+     data(kirk.potato)
+     dat <- kirk.potato
+     libs(desplot)
+     desplot(dat, yield ~ col*row,
+             flip=TRUE, aspect=1,
+             main="kirk.potato")
 
-      .. code:: R
+     # Match means in Table I
+     libs(dplyr)
+     dat 
 
-         ## Not run: 
-           library(agridat)
-           data(kirk.potato)
-           dat <- kirk.potato
-           libs(desplot)
-           desplot(dat, yield ~ col*row,
-                   flip=TRUE, aspect=1,
-                   main="kirk.potato")
-
-           # Match means in Table I
-           libs(dplyr)
-           dat 
-
-         ## End(Not run)
+   ## End(Not run)

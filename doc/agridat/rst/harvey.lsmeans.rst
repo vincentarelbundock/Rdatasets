@@ -1,113 +1,109 @@
-.. container::
+============== ===============
+harvey.lsmeans R Documentation
+============== ===============
 
-   .. container::
+Average daily gain of 65 steers for 3 lines, 9 sires.
+-----------------------------------------------------
 
-      ============== ===============
-      harvey.lsmeans R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Average daily gain of 65 steers for 3 lines, 9 sires.
-         :name: average-daily-gain-of-65-steers-for-3-lines-9-sires.
+Average daily gain of 65 steers for 3 lines, 9 sires.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Average daily gain of 65 steers for 3 lines, 9 sires.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("harvey.lsmeans")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("harvey.lsmeans")
+A data frame with 65 observations on the following 7 variables.
 
-      .. rubric:: Format
-         :name: format
+``line``
+   line of the dam
 
-      A data frame with 65 observations on the following 7 variables.
+``sire``
+   sire
 
-      ``line``
-         line of the dam
+``damage``
+   age class of the dam
 
-      ``sire``
-         sire
+``calf``
+   calf number
 
-      ``damage``
-         age class of the dam
+``weanage``
+   calf age at weaning
 
-      ``calf``
-         calf number
+``weight``
+   calf weight at start of feeding
 
-      ``weanage``
-         calf age at weaning
+``adg``
+   average daily gain
 
-      ``weight``
-         calf weight at start of feeding
+Details
+~~~~~~~
 
-      ``adg``
-         average daily gain
+The average daily gain 'adg' for each of 65 Hereford steers.
 
-      .. rubric:: Details
-         :name: details
+The calf age at weaning and initial weight at the beginning of the test
+feeding is also given.
 
-      The average daily gain 'adg' for each of 65 Hereford steers.
+The steers were fed for the same length of time in the feed lot.
 
-      The calf age at weaning and initial weight at the beginning of the
-      test feeding is also given.
+It is assumed that each calf has a unique dam and there are no twins or
+repeat matings.
 
-      The steers were fed for the same length of time in the feed lot.
+Harvey (1960) is one of the earliest papers presenting least squares
+means (lsmeans).
 
-      It is assumed that each calf has a unique dam and there are no
-      twins or repeat matings.
+Source
+~~~~~~
 
-      Harvey (1960) is one of the earliest papers presenting least
-      squares means (lsmeans).
+Harvey, Walter R. (1960). Least-squares Analysis of Data with Unequal
+Subclass Numbers. Technical Report ARS No 20-8. USDA, Agricultural
+Research Service. Page 101-102.
 
-      .. rubric:: Source
-         :name: source
+Reprinted as ARS H-4, 1975.
+https://archive.org/details/leastsquaresanal04harv
 
-      Harvey, Walter R. (1960). Least-squares Analysis of Data with
-      Unequal Subclass Numbers. Technical Report ARS No 20-8. USDA,
-      Agricultural Research Service. Page 101-102.
+References
+~~~~~~~~~~
 
-      Reprinted as ARS H-4, 1975.
-      https://archive.org/details/leastsquaresanal04harv
+Also appears in the 'dmm' package as 'harv101.df' See that package
+vignette for a complete analysis of the data.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Also appears in the 'dmm' package as 'harv101.df' See that package
-      vignette for a complete analysis of the data.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(harvey.lsmeans)
+   dat = harvey.lsmeans
 
-         ## Not run: 
+   libs(lattice)
+   dotplot(adg ~ sire|line,dat,
+           main="harvey.lsmeans", xlab="sire", ylab="average daily gain")
 
-         library(agridat)
-         data(harvey.lsmeans)
-         dat = harvey.lsmeans
+   # Model suggested by Harvey on page 103
+   m0 <- lm(adg ~ 1 + line + sire + damage + line:damage + weanage +
+            weight, data=dat)
 
-         libs(lattice)
-         dotplot(adg ~ sire|line,dat,
-                 main="harvey.lsmeans", xlab="sire", ylab="average daily gain")
-
-         # Model suggested by Harvey on page 103
-         m0 <- lm(adg ~ 1 + line + sire + damage + line:damage + weanage +
-                  weight, data=dat)
-
-         # Due to contrast settings, it can be hard to compare model coefficients to Harvey,
-         # but note the slopes of the continuous covariates match Harvey p. 107, where his
-         # b is weanage, d is weight
-         # coef(m0)
-         #       weanage       weight 
-         #  -0.008154879  0.001970446
-           
-         # A quick attempt to reproduce table 4 of Harvey, p. 109. Not right.
-         # libs(emmeans)
-         # emmeans(m0,c('line','sire','damage'))
+   # Due to contrast settings, it can be hard to compare model coefficients to Harvey,
+   # but note the slopes of the continuous covariates match Harvey p. 107, where his
+   # b is weanage, d is weight
+   # coef(m0)
+   #       weanage       weight 
+   #  -0.008154879  0.001970446
+     
+   # A quick attempt to reproduce table 4 of Harvey, p. 109. Not right.
+   # libs(emmeans)
+   # emmeans(m0,c('line','sire','damage'))
 
 
-         ## End(Not run)
+   ## End(Not run)

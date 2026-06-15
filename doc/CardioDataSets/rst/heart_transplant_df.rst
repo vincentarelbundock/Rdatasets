@@ -1,72 +1,66 @@
-.. container::
+=================== ===============
+heart_transplant_df R Documentation
+=================== ===============
 
-   .. container::
+Stanford Heart Transplant Data
+------------------------------
 
-      =================== ===============
-      heart_transplant_df R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Stanford Heart Transplant Data
-         :name: stanford-heart-transplant-data
+This dataset, heart_transplant_df, is a data frame containing survival
+data from the Stanford heart transplant program. It includes information
+on 172 patients with follow-up times, transplant status, and clinical
+covariates.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, heart_transplant_df, is a data frame containing
-      survival data from the Stanford heart transplant program. It
-      includes information on 172 patients with follow-up times,
-      transplant status, and clinical covariates.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(heart_transplant_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(heart_transplant_df)
+A data frame with 172 observations and 8 variables:
 
-      .. rubric:: Format
-         :name: format
+start
+   Start time of interval (numeric)
 
-      A data frame with 172 observations and 8 variables:
+stop
+   End time of interval (numeric)
 
-      start
-         Start time of interval (numeric)
+event
+   Survival status (numeric: 1=event, 0=censored)
 
-      stop
-         End time of interval (numeric)
+age
+   Patient age at enrollment (numeric)
 
-      event
-         Survival status (numeric: 1=event, 0=censored)
+year
+   Year of enrollment (numeric)
 
-      age
-         Patient age at enrollment (numeric)
+surgery
+   Prior bypass surgery (numeric)
 
-      year
-         Year of enrollment (numeric)
+transplant
+   Transplant status (factor: 0=no, 1=yes)
 
-      surgery
-         Prior bypass surgery (numeric)
+id
+   Patient identification number (numeric)
 
-      transplant
-         Transplant status (factor: 0=no, 1=yes)
+Details
+~~~~~~~
 
-      id
-         Patient identification number (numeric)
+The dataset name has been kept as 'heart_transplant_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the CardioDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'df' indicates that the dataset is a standard data frame. The original
+content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'heart_transplant_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      CardioDataSets package and assists users in identifying its
-      specific characteristics. The suffix 'df' indicates that the
-      dataset is a standard data frame. The original content has not
-      been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the lrstat package version 0.2.13. Original
-      source: Stanford Heart Transplant Study data from the survival
-      package.
+Data taken from the lrstat package version 0.2.13. Original source:
+Stanford Heart Transplant Study data from the survival package.

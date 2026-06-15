@@ -1,0 +1,88 @@
+<!DOCTYPE html><html><head><title>R: Pre-Defined Dose Frequencies</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>dose_freq_lookup</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Pre-Defined Dose Frequencies</h2>
+
+<h3>Description</h3>
+
+<p>These pre-defined dose frequencies are sourced from
+<a href="https://evs.nci.nih.gov/ftp1/CDISC/SDTM/SDTM%20Terminology.pdf">CDISC</a>. The
+number of rows to generate using <code>create_single_dose_dataset()</code> arguments
+<code>start_date</code> and <code>end_date</code> is derived from <code>DOSE_COUNT</code>, <code>DOSE_WINDOW</code>, and
+<code>CONVERSION_FACTOR</code> with appropriate functions from <code>lubridate</code>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>dose_freq_lookup
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>An object of class <code>tbl_df</code> (inherits from <code>tbl</code>, <code>data.frame</code>) with 86 rows and 5 columns.
+</p>
+
+
+<h3>Details</h3>
+
+<p><code>NCI_CODE</code> and <code>CDISC_VALUE</code> are included from the CDISC source for
+traceability.
+</p>
+<p><code>DOSE_COUNT</code> represents the number of doses received in one single unit of
+<code>DOSE_WINDOW</code>. For example, for <code>CDISC_VALUE=="10 DAYS PER MONTH"</code>,
+<code>DOSE_WINDOW=="MONTH"</code> and <code>DOSE_COUNT==10</code>. Similarly, for
+<code>CDISC_VALUE=="EVERY 2 WEEKS"</code>, <code>DOSE_WINDOW=="WEEK"</code> and
+<code>DOSE_COUNT==0.5</code> (to yield one dose every two weeks).
+</p>
+<p><code>CONVERSION_FACTOR</code> is used to convert <code>DOSE_WINDOW</code> units <code>"WEEK"</code>,
+<code>"MONTH"</code>, and <code>"YEAR"</code> to the unit <code>"DAY"</code>.
+</p>
+<p>For example, for <code>CDISC_VALUE=="10 DAYS PER MONTH"</code>, <code>CONVERSION_FACTOR</code>
+is <code>0.0329</code>. One day of a month is assumed to be <code>1 / 30.4375</code> of a month (one
+day is assumed to be <code>1/365.25</code> of a year).
+Given only <code>start_date</code> and <code>end_date</code> in the aggregate dataset, <code>CONVERSION_FACTOR</code>
+is used to calculate specific dates for<code>start_date</code> and <code>end_date</code> in the
+resulting single dose dataset for the doses that occur. In such cases, doses
+are assumed to occur at evenly spaced increments over the interval.
+</p>
+<p>To see the entire table in the console, run <code>print(dose_freq_lookup)</code>.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>create_single_dose_dataset()</code>
+</p>
+<p>Other metadata:
+<code>atoxgr_criteria_ctcv4</code>,
+<code>atoxgr_criteria_ctcv4_uscv</code>,
+<code>atoxgr_criteria_ctcv5</code>,
+<code>atoxgr_criteria_ctcv5_uscv</code>,
+<code>atoxgr_criteria_ctcv6</code>,
+<code>atoxgr_criteria_ctcv6_uscv</code>,
+<code>atoxgr_criteria_daids</code>,
+<code>atoxgr_criteria_daids_uscv</code>,
+<code>country_code_lookup</code>
+</p>
+
+</main>
+
+</div>
+</body></html>

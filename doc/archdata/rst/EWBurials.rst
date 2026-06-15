@@ -1,105 +1,98 @@
-.. container::
+========= ===============
+EWBurials R Documentation
+========= ===============
 
-   .. container::
+Ernest Witte Cemetery, Austin, County, Texas, U.S.A.
+----------------------------------------------------
 
-      ========= ===============
-      EWBurials R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Ernest Witte Cemetery, Austin, County, Texas, U.S.A.
-         :name: ernest-witte-cemetery-austin-county-texas-u.s.a.
+Sex, age, burial group, location, and burial orientation and direction
+facing from the Ernest Witte site, a Late Archaic cemetery in Texas
+(Hall 1981).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Sex, age, burial group, location, and burial orientation and
-      direction facing from the Ernest Witte site, a Late Archaic
-      cemetery in Texas (Hall 1981).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(EWBurials)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(EWBurials)
+A data frame with 49 observations on the following 7 variables.
 
-      .. rubric:: Format
-         :name: format
+``Group``
+   Cemetery group, a factor with levels ``1``, ``2``
 
-      A data frame with 49 observations on the following 7 variables.
+``North``
+   North grid location of the burial in meters (excavation grid system)
 
-      ``Group``
-         Cemetery group, a factor with levels ``1``, ``2``
+``West``
+   East grid location of the burial in meters (excavation grid system)
 
-      ``North``
-         North grid location of the burial in meters (excavation grid
-         system)
+``Age``
+   Age category, a factor with levels ``Fetus``, ``Infant``, ``Child``,
+   ``Adolescent``, ``Young Adult``, ``Adult``, ``Middle Adult``,
+   ``Old Adult``
 
-      ``West``
-         East grid location of the burial in meters (excavation grid
-         system)
+``Sex``
+   a factor with levels ``Female``, ``Male``
 
-      ``Age``
-         Age category, a factor with levels ``Fetus``, ``Infant``,
-         ``Child``, ``Adolescent``, ``Young Adult``, ``Adult``,
-         ``Middle Adult``, ``Old Adult``
+``Direction``
+   circular data in degrees indicating the direction of the individual
+   measured from the head along the vertebral column
 
-      ``Sex``
-         a factor with levels ``Female``, ``Male``
+``Looking``
+   circular data in degrees indication the direction the individual is
+   facing
 
-      ``Direction``
-         circular data in degrees indicating the direction of the
-         individual measured from the head along the vertebral column
+``Goods``
+   Presence or absence of grave goods
 
-      ``Looking``
-         circular data in degrees indication the direction the
-         individual is facing
+Details
+~~~~~~~
 
-      ``Goods``
-         Presence or absence of grave goods
+The Ernest Witte site in Austin County, Texas contains four burial
+groups from different time periods. Group 1 includes 60 interments and
+that occurred between about 2000 and 1200 BCE. Group 2 is the largest
+with 148 interments. The burials in this group were interred between
+about CE 200 and 500. Groups 3 and 4 include only 10 and 13 interments
+and date to CE 500 to 1500, but are not included in this data set which
+was taken from Appendix II (Hall 1981). Two of the variables,
+``direction`` and ``looking``, are circular data and require package
+``circular``. Hall (2010) provides a summary of the site and its
+significance.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The Ernest Witte site in Austin County, Texas contains four burial
-      groups from different time periods. Group 1 includes 60 interments
-      and that occurred between about 2000 and 1200 BCE. Group 2 is the
-      largest with 148 interments. The burials in this group were
-      interred between about CE 200 and 500. Groups 3 and 4 include only
-      10 and 13 interments and date to CE 500 to 1500, but are not
-      included in this data set which was taken from Appendix II (Hall
-      1981). Two of the variables, ``direction`` and ``looking``, are
-      circular data and require package ``circular``. Hall (2010)
-      provides a summary of the site and its significance.
+Hall, G. D. 1981. Allen's Creek: A Study in the Cultural Prehistory of
+the Lower Brazos River Valley. *The University of Texas at Austin. Texas
+Archeological Survey. Texas. Research Report No.* 61.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Hall, G. D. 1981. Allen's Creek: A Study in the Cultural
-      Prehistory of the Lower Brazos River Valley. *The University of
-      Texas at Austin. Texas Archeological Survey. Texas. Research
-      Report No.* 61.
+Carlson, David L. 2017. *Quantitative Methods in Archaeology Using R*.
+Cambridge University Press, pp 350-357.
 
-      .. rubric:: References
-         :name: references
+Hall, G. D. 2010. Ernest Witte site. *Handbook of Texas Online*
+https://www.tshaonline.org/handbook/entries/ernest-witte-site. Texas
+State Historical Association.
 
-      Carlson, David L. 2017. *Quantitative Methods in Archaeology Using
-      R*. Cambridge University Press, pp 350-357.
+Examples
+~~~~~~~~
 
-      Hall, G. D. 2010. Ernest Witte site. *Handbook of Texas Online*
-      https://www.tshaonline.org/handbook/entries/ernest-witte-site.
-      Texas State Historical Association.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   data(EWBurials)
+   xtabs(~Age+Sex+Group, EWBurials)
 
-      .. code:: R
-
-         data(EWBurials)
-         xtabs(~Age+Sex+Group, EWBurials)
-
-         if (requireNamespace("circular", quietly = TRUE)) {
-           plot(EWBurials$Direction)
-         } else {
-           cat("This example requires package circular.\n")
-         }
+   if (requireNamespace("circular", quietly = TRUE)) {
+     plot(EWBurials$Direction)
+   } else {
+     cat("This example requires package circular.\n")
+   }

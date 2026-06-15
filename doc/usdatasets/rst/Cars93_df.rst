@@ -1,56 +1,52 @@
-.. container::
+========= ===============
+Cars93_df R Documentation
+========= ===============
 
-   .. container::
+Data from 93 Cars on Sale in the USA in 1993
+--------------------------------------------
 
-      ========= ===============
-      Cars93_df R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Data from 93 Cars on Sale in the USA in 1993
-         :name: data-from-93-cars-on-sale-in-the-usa-in-1993
+The dataset name has been changed to 'Cars93_df' to avoid confusion with
+other packages in the R ecosystem from which datasets have been sourced.
+This naming convention helps distinguish this dataset as part of the
+'usdatasets' package and assists users in identifying its specific
+characteristics. The suffix '\_df' identifies the dataset as a data
+frame. The original content of the dataset has not been modified in any
+way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'Cars93_df' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. This naming convention helps
-      distinguish this dataset as part of the 'usdatasets' package and
-      assists users in identifying its specific characteristics. The
-      suffix '\_df' identifies the dataset as a data frame. The original
-      content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Cars93_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Cars93_df)
+A data frame with 54 observations and 6 variables:
 
-      .. rubric:: Format
-         :name: format
+type
+   Type of the car (factor with 3 levels).
 
-      A data frame with 54 observations and 6 variables:
+price
+   Price of the car (in US dollars).
 
-      type
-         Type of the car (factor with 3 levels).
+mpg_city
+   Miles per gallon in the city.
 
-      price
-         Price of the car (in US dollars).
+drive_train
+   Drive train type (factor with 3 levels).
 
-      mpg_city
-         Miles per gallon in the city.
+passengers
+   Number of passengers the car can accommodate.
 
-      drive_train
-         Drive train type (factor with 3 levels).
+weight
+   Weight of the car (in pounds).
 
-      passengers
-         Number of passengers the car can accommodate.
+Source
+~~~~~~
 
-      weight
-         Weight of the car (in pounds).
-
-      .. rubric:: Source
-         :name: source
-
-      1993 Cars Data
+1993 Cars Data

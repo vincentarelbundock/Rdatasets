@@ -1,71 +1,65 @@
-.. container::
+============ ===============
+cat_adoption R Documentation
+============ ===============
 
-   .. container::
+Cat Adoption
+------------
 
-      ============ ===============
-      cat_adoption R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Cat Adoption
-         :name: cat-adoption
+A subset of the cats at the animal shelter in Long Beach, California,
+USA.
 
-      .. rubric:: Description
-         :name: description
+Details
+~~~~~~~
 
-      A subset of the cats at the animal shelter in Long Beach,
-      California, USA.
+A data frame with 2257 rows and 19 columns:
 
-      .. rubric:: Details
-         :name: details
+time
+   The time the cat spent at the shelter.
 
-      A data frame with 2257 rows and 19 columns:
+event
+   The event of interest is the cat being homed or returned to its
+   original location (i.e., owner or community). The non-event is the
+   cat being transferred to another shelter or dying. Zero indicates a
+   non-event (censored), and one corresponds to the event occurring.
 
-      time
-         The time the cat spent at the shelter.
+sex
+   The sex of the cat.
 
-      event
-         The event of interest is the cat being homed or returned to its
-         original location (i.e., owner or community). The non-event is
-         the cat being transferred to another shelter or dying. Zero
-         indicates a non-event (censored), and one corresponds to the
-         event occurring.
+neutered
+   Whether the cat is neutered.
 
-      sex
-         The sex of the cat.
+intake_condition
+   The intake condition of the cat.
 
-      neutered
-         Whether the cat is neutered.
+intake_type
+   The type of intake.
 
-      intake_condition
-         The intake condition of the cat.
+latitude
+   Latitude of the intersection/cross street of intake or capture.
 
-      intake_type
-         The type of intake.
+longitude
+   Longitude of the intersection/cross street of intake or capture.
 
-      latitude
-         Latitude of the intersection/cross street of intake or capture.
+black,brown,brown_tabby,calico,cream,gray,gray_tabby,orange,orange_tabby,tan,tortie,white
+   Indicators for the color/pattern of the cat's fur.
 
-      longitude
-         Longitude of the intersection/cross street of intake or
-         capture.
+Value
+~~~~~
 
-      black,brown,brown_tabby,calico,cream,gray,gray_tabby,orange,orange_tabby,tan,tortie,white
-         Indicators for the color/pattern of the cat's fur.
+tibble
 
-      .. rubric:: Value
-         :name: value
+Source
+~~~~~~
 
-      tibble
+https://data.longbeach.gov/explore/dataset/animal-shelter-intakes-and-outcomes/information/
+on 2024-06-17
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      https://data.longbeach.gov/explore/dataset/animal-shelter-intakes-and-outcomes/information/
-      on 2024-06-17
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         str(cat_adoption)
+   str(cat_adoption)

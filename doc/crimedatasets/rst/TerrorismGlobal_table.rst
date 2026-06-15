@@ -1,53 +1,48 @@
-.. container::
+===================== ===============
+TerrorismGlobal_table R Documentation
+===================== ===============
 
-   .. container::
+Global Terrorism Database (GTD) Yearly Summaries
+------------------------------------------------
 
-      ===================== ===============
-      TerrorismGlobal_table R Documentation
-      ===================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Global Terrorism Database (GTD) Yearly Summaries
-         :name: global-terrorism-database-gtd-yearly-summaries
+This dataset contains yearly summaries of global terrorism incidents
+from 1970 onward. The data includes information on over 209,000
+incidents of terrorism, with details on the country, year, and other
+relevant variables related to each incident.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains yearly summaries of global terrorism
-      incidents from 1970 onward. The data includes information on over
-      209,000 incidents of terrorism, with details on the country, year,
-      and other relevant variables related to each incident.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(TerrorismGlobal_table)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(TerrorismGlobal_table)
+A table with 10,200 rows and 50 columns:
 
-      .. rubric:: Format
-         :name: format
+country_txt
+   Character vector representing the country where the terrorist
+   incident occurred.
 
-      A table with 10,200 rows and 50 columns:
+iyear
+   Character vector representing the year the incident took place.
 
-      country_txt
-         Character vector representing the country where the terrorist
-         incident occurred.
+Details
+~~~~~~~
 
-      iyear
-         Character vector representing the year the incident took place.
+The dataset name has been changed to 'TerrorismGlobal_table' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the crimedatasets package and
+assists users in identifying its specific characteristics. The suffix
+'table' indicates that the dataset is represented as a table in R. The
+original content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been changed to 'TerrorismGlobal_table' to
-      avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      crimedatasets package and assists users in identifying its
-      specific characteristics. The suffix 'table' indicates that the
-      dataset is represented as a table in R. The original content has
-      not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Global Terrorism Database (GTD), 1970-2020.
+Global Terrorism Database (GTD), 1970-2020.

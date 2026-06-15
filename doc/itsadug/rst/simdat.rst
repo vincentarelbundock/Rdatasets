@@ -1,52 +1,48 @@
-.. container::
+====== ===============
+simdat R Documentation
+====== ===============
 
-   .. container::
+Simulated time series data.
+---------------------------
 
-      ====== ===============
-      simdat R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Simulated time series data.
-         :name: simulated-time-series-data.
+A dataset containing the sine wave data with random noise added.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset containing the sine wave data with random noise added.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   simdat
 
-      .. code:: R
+Format
+~~~~~~
 
-         simdat
+A data frame with 75600 rows and 6 variables:
 
-      .. rubric:: Format
-         :name: format
+``Group``
+   Age group of participants: Adults or Children.
 
-      A data frame with 75600 rows and 6 variables:
+``Time``
+   Time, time measure from start of each time series.
 
-      ``Group``
-         Age group of participants: Adults or Children.
+``Trial``
+   Trial in the experiment, centered around zero.
 
-      ``Time``
-         Time, time measure from start of each time series.
+``Condition``
+   Continuous variable, ranging from -1 to 4. For example, stimulus
+   onset asynchrony.
 
-      ``Trial``
-         Trial in the experiment, centered around zero.
+``Subject``
+   Code for individual participants.
 
-      ``Condition``
-         Continuous variable, ranging from -1 to 4. For example,
-         stimulus onset asynchrony.
+``Y``
+   Time series measure. Similar to pupil size, sensor position, or
+   voltage.
 
-      ``Subject``
-         Code for individual participants.
+Author(s)
+~~~~~~~~~
 
-      ``Y``
-         Time series measure. Similar to pupil size, sensor position, or
-         voltage.
-
-      .. rubric:: Author(s)
-         :name: authors
-
-      Jacolien van Rij
+Jacolien van Rij

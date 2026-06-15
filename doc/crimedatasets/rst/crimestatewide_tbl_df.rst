@@ -1,76 +1,70 @@
-.. container::
+===================== ===============
+crimestatewide_tbl_df R Documentation
+===================== ===============
 
-   .. container::
+Annual Crime Dataset of US Counties
+-----------------------------------
 
-      ===================== ===============
-      crimestatewide_tbl_df R Documentation
-      ===================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Annual Crime Dataset of US Counties
-         :name: annual-crime-dataset-of-us-counties
+This dataset contains annual crime-related statistics for US counties,
+including violent crime rates, murder rates, and socio-economic
+indicators such as poverty, education, and unemployment. It provides a
+comprehensive overview of crime and its potential correlates across the
+United States.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains annual crime-related statistics for US
-      counties, including violent crime rates, murder rates, and
-      socio-economic indicators such as poverty, education, and
-      unemployment. It provides a comprehensive overview of crime and
-      its potential correlates across the United States.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(crimestatewide_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(crimestatewide_tbl_df)
+A tibble with 51 observations and 9 variables:
 
-      .. rubric:: Format
-         :name: format
+State
+   State name (character).
 
-      A tibble with 51 observations and 9 variables:
+violent crime rate
+   Violent crime rate per 100,000 people (numeric).
 
-      State
-         State name (character).
+murder rate
+   Murder rate per 100,000 people (numeric).
 
-      violent crime rate
-         Violent crime rate per 100,000 people (numeric).
+poverty
+   Poverty rate as a percentage (numeric).
 
-      murder rate
-         Murder rate per 100,000 people (numeric).
+high school
+   Percentage of high school graduates (numeric).
 
-      poverty
-         Poverty rate as a percentage (numeric).
+college
+   Percentage of college graduates (numeric).
 
-      high school
-         Percentage of high school graduates (numeric).
+single parent
+   Percentage of single-parent households (numeric).
 
-      college
-         Percentage of college graduates (numeric).
+unemployed
+   Unemployment rate as a percentage (numeric).
 
-      single parent
-         Percentage of single-parent households (numeric).
+metropolitan
+   Percentage of the population living in metropolitan areas (numeric).
 
-      unemployed
-         Unemployment rate as a percentage (numeric).
+Details
+~~~~~~~
 
-      metropolitan
-         Percentage of the population living in metropolitan areas
-         (numeric).
+The dataset name has been changed to 'crimestatewide_tbl_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the crimedatasets package and
+assists users in identifying its specific characteristics. The suffix
+'tbl_df' indicates that the dataset is stored as a tibble, a modern and
+more readable alternative to traditional data frames in R. The original
+content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been changed to 'crimestatewide_tbl_df' to
-      avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      crimedatasets package and assists users in identifying its
-      specific characteristics. The suffix 'tbl_df' indicates that the
-      dataset is stored as a tibble, a modern and more readable
-      alternative to traditional data frames in R. The original content
-      has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Annual crime data of US counties.
+Annual crime data of US counties.

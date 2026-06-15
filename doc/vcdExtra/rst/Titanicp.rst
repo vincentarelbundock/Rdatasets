@@ -1,81 +1,70 @@
-.. container::
+======== ===============
+Titanicp R Documentation
+======== ===============
 
-   .. container::
+Passengers on the Titanic
+-------------------------
 
-      ======== ===============
-      Titanicp R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Passengers on the Titanic
-         :name: passengers-on-the-titanic
+Data on passengers on the RMS Titanic, excluding the Crew and some
+individual identifier variables.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Data on passengers on the RMS Titanic, excluding the Crew and some
-      individual identifier variables.
+A data frame with 1309 observations on the following 6 variables.
 
-      .. rubric:: Usage
-         :name: usage
+``pclass``
+   a factor with levels ``⁠1st⁠`` ``⁠2nd⁠`` ``⁠3rd⁠``
 
-      .. code:: R
+``survived``
+   a factor with levels ``died`` ``survived``
 
-         data(Titanicp)
+``sex``
+   a factor with levels ``female`` ``male``
 
-      .. rubric:: Format
-         :name: format
+``age``
+   passenger age in years (or fractions of a year, for children), a
+   numeric vector; age is missing for 263 of the passengers
 
-      A data frame with 1309 observations on the following 6 variables.
+``sibsp``
+   number of siblings or spouses aboard, integer: ``0:8``
 
-      ``pclass``
-         a factor with levels ``1st`` ``2nd`` ``3rd``
+``parch``
+   number of parents or children aboard, integer: ``0:6``
 
-      ``survived``
-         a factor with levels ``died`` ``survived``
+Details
+~~~~~~~
 
-      ``sex``
-         a factor with levels ``female`` ``male``
+There are a number of related versions of the Titanic data, in various
+formats. This version was derived from ``ptitanic`` in the rpart.plot
+package, modifying it to remove the ``⁠Class 'labelled'⁠`` attributes for
+some variables (inherited from Frank Harrell's ``titanic3`` version)
+which caused problems with some applications, notably ``ggplot2``.
 
-      ``age``
-         passenger age in years (or fractions of a year, for children),
-         a numeric vector; age is missing for 263 of the passengers
+Other versions:
 
-      ``sibsp``
-         number of siblings or spouses aboard, integer: ``0:8``
+``Titanic`` is the 4-way frequency table of all 2201 people aboard the
+Titanic, including passengers and crew.
 
-      ``parch``
-         number of parents or children aboard, integer: ``0:6``
+Source
+~~~~~~
 
-      .. rubric:: Details
-         :name: details
+The original R source for this dataset was compiled by Frank Harrell and
+Robert Dawson: https://hbiostat.org/data/repo/titanic.txt, described in
+more detail in https://hbiostat.org/data/repo/titanic
 
-      There are a number of related versions of the Titanic data, in
-      various formats. This version was derived from ``ptitanic`` in the
-      rpart.plot package, modifying it to remove the
-      ``Class 'labelled'`` attributes for some variables (inherited from
-      Frank Harrell's ``titanic3`` version) which caused problems with
-      some applications, notably ``ggplot2``.
+For this version of the Titanic data, passenger details were deleted,
+survived was cast as a factor, and the name changed to ``Titanicp`` to
+minimize confusion with other versions.
 
-      Other versions:
+Examples
+~~~~~~~~
 
-      ``Titanic`` is the 4-way frequency table of all 2201 people aboard
-      the Titanic, including passengers and crew.
+.. code:: R
 
-      .. rubric:: Source
-         :name: source
 
-      The original R source for this dataset was compiled by Frank
-      Harrell and Robert Dawson
-      https://hbiostat.org/data/repo/titanic.html.
-
-      For this version of the Titanic data, passenger details were
-      deleted, survived was cast as a factor, and the name changed to
-      ``Titanicp`` to minimize confusion with other versions.
-
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(Titanicp)
-         ## maybe str(Titanicp) ; plot(Titanicp) ...
+   data(Titanicp)
+   ## maybe str(Titanicp) ; plot(Titanicp) ...

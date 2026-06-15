@@ -1,73 +1,69 @@
-.. container::
+==================== ===============
+li.millet.uniformity R Documentation
+==================== ===============
 
-   .. container::
+Uniformity trial of millet
+--------------------------
 
-      ==================== ===============
-      li.millet.uniformity R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of millet
-         :name: uniformity-trial-of-millet
+Uniformity trial of millet at China in 1934.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Uniformity trial of millet at China in 1934.
+A data frame with 600 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row
 
-      A data frame with 600 observations on the following 3 variables.
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   yield (grams)
 
-      ``col``
-         column
+Details
+~~~~~~~
 
-      ``yield``
-         yield (grams)
+Crop date estimated to be 1934.
 
-      .. rubric:: Details
-         :name: details
+Field was 100 ft x 100 ft. Plots were 15 feet long by 1 foot wide.
 
-      Crop date estimated to be 1934.
+Field width: 100 plots \* 1 foot = 100 feet
 
-      Field was 100 ft x 100 ft. Plots were 15 feet long by 1 foot wide.
+Field length: 6 plots \* 15 feet = 100 feet
 
-      Field width: 100 plots \* 1 foot = 100 feet
+Li found the most efficient use of land was obtained with plats 15 feet
+long and two rowss wide. Also satisfactory would be one row 30 feet
+long.
 
-      Field length: 6 plots \* 15 feet = 100 feet
+Source
+~~~~~~
 
-      Li found the most efficient use of land was obtained with plats 15
-      feet long and two rowss wide. Also satisfactory would be one row
-      30 feet long.
+Li, HW and Meng, CJ and Liu, TN. 1936. Field Results in a Millet
+Breeding Experiment. Agronomy Journal, 28, 1-15. Table 1.
+https://doi.org/10.2134/agronj1936.00021962002800010001x
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Li, HW and Meng, CJ and Liu, TN. 1936. Field Results in a Millet
-      Breeding Experiment. Agronomy Journal, 28, 1-15. Table 1.
-      https://doi.org/10.2134/agronj1936.00021962002800010001x
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+     
+     data(li.millet.uniformity)
+     dat <- li.millet.uniformity
 
-         ## Not run: 
+     mean(dat$yield) # matches Li et al.
+     
+     libs(desplot)
+     desplot(dat, yield~col*row,
+             aspect=100/100, # true aspect
+             main="li.millet.uniformity")
+     
 
-         library(agridat)
-           
-           data(li.millet.uniformity)
-           dat <- li.millet.uniformity
-
-           mean(dat$yield) # matches Li et al.
-           
-           libs(desplot)
-           desplot(dat, yield~col*row,
-                   aspect=100/100, # true aspect
-                   main="li.millet.uniformity")
-           
-
-         ## End(Not run)
+   ## End(Not run)

@@ -1,49 +1,45 @@
-.. container::
+=============== ===============
+VADeaths_matrix R Documentation
+=============== ===============
 
-   .. container::
+Death Rates in Virginia (1940)
+------------------------------
 
-      =============== ===============
-      VADeaths_matrix R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Death Rates in Virginia (1940)
-         :name: death-rates-in-virginia-1940
+The dataset name has been changed to 'VADeaths_matrix' to avoid
+confusion with other packages in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a matrix. The original content of the dataset has not
+been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'VADeaths_matrix' to avoid
-      confusion with other packages in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a matrix. The original
-      content of the dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(VADeaths_matrix)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(VADeaths_matrix)
+A matrix containing mortality rates (per 1000) for different demographic
+groups in Virginia:
 
-      .. rubric:: Format
-         :name: format
+Rural Male
+   Mortality rates for rural males by age group.
 
-      A matrix containing mortality rates (per 1000) for different
-      demographic groups in Virginia:
+Rural Female
+   Mortality rates for rural females by age group.
 
-      Rural Male
-         Mortality rates for rural males by age group.
+Urban Male
+   Mortality rates for urban males by age group.
 
-      Rural Female
-         Mortality rates for rural females by age group.
+Urban Female
+   Mortality rates for urban females by age group.
 
-      Urban Male
-         Mortality rates for urban males by age group.
+Source
+~~~~~~
 
-      Urban Female
-         Mortality rates for urban females by age group.
-
-      .. rubric:: Source
-         :name: source
-
-      Virginia mortality data.
+Virginia mortality data.

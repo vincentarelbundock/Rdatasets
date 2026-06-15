@@ -1,106 +1,103 @@
-.. container::
+================ ===============
+pm25_2011_durham R Documentation
+================ ===============
 
-   .. container::
+Air quality for Durham, NC
+--------------------------
 
-      ================ ===============
-      pm25_2011_durham R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Air quality for Durham, NC
-         :name: air-quality-for-durham-nc
+Daily air quality is measured by the air quality index (AQI) reported by
+the Environmental Protection Agency in 2011.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Daily air quality is measured by the air quality index (AQI)
-      reported by the Environmental Protection Agency in 2011.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   pm25_2011_durham
 
-      .. code:: R
+Format
+~~~~~~
 
-         pm25_2011_durham
+A data frame with 449 observations on the following 20 variables.
 
-      .. rubric:: Format
-         :name: format
+date
+   Date
 
-      A data frame with 449 observations on the following 20 variables.
+aqs_site_id
+   The numeric site ID.
 
-      date
-         Date
+poc
+   A numeric vector, the Parameter Occurance Code.
 
-      aqs_site_id
-         The numeric site ID.
+daily_mean_pm2_5_concentration
+   A numeric vector with the average daily concentration of fine
+   particulates, or particulate matter 2.5.
 
-      poc
-         A numeric vector, the Parameter Occurance Code.
+units
+   A character vector with value ``ug/m3 LC``.
 
-      daily_mean_pm2_5_concentration
-         A numeric vector with the average daily concentration of fine
-         particulates, or particulate matter 2.5.
+daily_aqi_value
+   A numeric vector with the daily air quality index.
 
-      units
-         A character vector with value ``ug/m3 LC``.
+daily_obs_count
+   A numeric vector.
 
-      daily_aqi_value
-         A numeric vector with the daily air quality index.
+percent_complete
+   A numeric vector.
 
-      daily_obs_count
-         A numeric vector.
+aqs_parameter_code
+   A numeric vector.
 
-      percent_complete
-         A numeric vector.
+aqs_parameter_desc
+   A factor with levels ``PM2.5 - Local Conditions`` and
+   ``Acceptable PM2.5 AQI & Speciation Mass``.
 
-      aqs_parameter_code
-         A numeric vector.
+cbsa_code
+   A numeric vector.
 
-      aqs_parameter_desc
-         A factor with levels ``PM2.5 - Local Conditions`` and
-         ``Acceptable PM2.5 AQI & Speciation Mass``.
+cbsa_name
+   A character vector with value ``Durham, NC``.
 
-      cbsa_code
-         A numeric vector.
+state_code
+   A numeric vector.
 
-      cbsa_name
-         A character vector with value ``Durham, NC``.
+state
+   A character vector with value ``North Carolina``.
 
-      state_code
-         A numeric vector.
+county_code
+   A numeric vector.
 
-      state
-         A character vector with value ``North Carolina``.
+county
+   A character vector with value ``Durham``.
 
-      county_code
-         A numeric vector.
+site_latitude
+   A numeric vector of the latitude.
 
-      county
-         A character vector with value ``Durham``.
+site_longitude
+   A numeric vector of the longitude.
 
-      site_latitude
-         A numeric vector of the latitude.
+csa_code
+   a numeric vector
 
-      site_longitude
-         A numeric vector of the longitude.
+csa_name
+   a factor with levels ``Raleigh-Durham-Cary, NC``
 
-      csa_code
-         a numeric vector
+Source
+~~~~~~
 
-      csa_name
-         a factor with levels ``Raleigh-Durham-Cary, NC``
+US Environmental Protection Agency, AirData, 2011.
+http://www3.epa.gov/airdata/ad_data_daily.html
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      US Environmental Protection Agency, AirData, 2011.
-      http://www3.epa.gov/airdata/ad_data_daily.html
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   library(ggplot2)
 
-         library(ggplot2)
-
-         ggplot(pm25_2011_durham, aes(x = date, y = daily_mean_pm2_5_concentration, group = 1)) +
-           geom_line()
+   ggplot(pm25_2011_durham, aes(x = date, y = daily_mean_pm2_5_concentration, group = 1)) +
+     geom_line()

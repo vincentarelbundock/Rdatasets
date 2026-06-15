@@ -1,27 +1,23 @@
-.. container::
+====== ===============
+badCol R Documentation
+====== ===============
 
-   .. container::
+internal badCol
+---------------
 
-      ====== ===============
-      badCol R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: internal badCol
-         :name: internal-badcol
+intended for internal use
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      intended for internal use
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(badCol)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(badCol)
-
-      .. rubric:: Format
-         :name: format
-
-      The format is: int 4
+The format is: int 4

@@ -1,75 +1,69 @@
-.. container::
+========== ===============
+gas_demand R Documentation
+========== ===============
 
-   .. container::
+Gasoline Demand in the OECD, 1960-1978
+--------------------------------------
 
-      ========== ===============
-      gas_demand R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Gasoline Demand in the OECD, 1960-1978
-         :name: gasoline-demand-in-the-oecd-1960-1978
+A data set on gasoline demand in the OECD countries from 1960 to 1978
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A data set on gasoline demand in the OECD countries from 1960 to
-      1978
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   gas_demand
 
-      .. code:: R
+Format
+~~~~~~
 
-         gas_demand
+A data frame with 342 observations on the following 6 variables.
 
-      .. rubric:: Format
-         :name: format
+``country``
+   a character vector for an English country name
 
-      A data frame with 342 observations on the following 6 variables.
+``year``
+   a numeric vector for the year of observation
 
-      ``country``
-         a character vector for an English country name
+``gas``
+   gasoline consumption per car, log-transformed
 
-      ``year``
-         a numeric vector for the year of observation
+``income``
+   real per capita income, log-transformed
 
-      ``gas``
-         gasoline consumption per car, log-transformed
+``price``
+   real gasoline price, log-transformed
 
-      ``income``
-         real per capita income, log-transformed
+``cars``
+   the stock of cars per capita, log-transformed
 
-      ``price``
-         real gasoline price, log-transformed
+Details
+~~~~~~~
 
-      ``cars``
-         the stock of cars per capita, log-transformed
+The data are a simple port from the AER package. Users should read
+Baltagi and Griffin (1983) for more information. The data are purely for
+illustration about panel models.
 
-      .. rubric:: Details
-         :name: details
+Generally, per capita income should not be negative when
+log-transformed, especially for this set of countries. While it is clear
+that such negative values arise from the logarithmic transformation of
+values less than 1, but more than 0, it is not clear why per capita
+income would be on that particular scale.
 
-      The data are a simple port from the AER package. Users should read
-      Baltagi and Griffin (1983) for more information. The data are
-      purely for illustration about panel models.
+The same curiosities emerge for the stock of cars per capita and real
+gasoline price, though proportional values between 0 and 1 are seemingly
+plausible (absent my willingness to look further into these details).
 
-      Generally, per capita income should not be negative when
-      log-transformed, especially for this set of countries. While it is
-      clear that such negative values arise from the logarithmic
-      transformation of values less than 1, but more than 0, it is not
-      clear why per capita income would be on that particular scale.
+No matter, the data are sufficient for replication of Baltagi and
+Griffin (1983) without any further effort from the user. That's always
+nice.
 
-      The same curiosities emerge for the stock of cars per capita and
-      real gasoline price, though proportional values between 0 and 1
-      are seemingly plausible (absent my willingness to look further
-      into these details).
+References
+~~~~~~~~~~
 
-      No matter, the data are sufficient for replication of Baltagi and
-      Griffin (1983) without any further effort from the user. That's
-      always nice.
-
-      .. rubric:: References
-         :name: references
-
-      Baltagi, Badi H. and James M. Griffin. 1983. "Gasoline Demand in
-      the OECD: An Application of Pooling and Testing Procedures"
-      *European Economic Review* 22: 117-137.
+Baltagi, Badi H. and James M. Griffin. 1983. "Gasoline Demand in the
+OECD: An Application of Pooling and Testing Procedures" *European
+Economic Review* 22: 117-137.

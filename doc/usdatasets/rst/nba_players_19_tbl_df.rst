@@ -1,57 +1,53 @@
-.. container::
+===================== ===============
+nba_players_19_tbl_df R Documentation
+===================== ===============
 
-   .. container::
+NBA Players for the 2018-2019 season
+------------------------------------
 
-      ===================== ===============
-      nba_players_19_tbl_df R Documentation
-      ===================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: NBA Players for the 2018-2019 season
-         :name: nba-players-for-the-2018-2019-season
+The dataset name has been changed to 'nba_players_19_tbl_df' to avoid
+confusion with other packages in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a tibble. The original content of the dataset has not
+been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'nba_players_19_tbl_df' to
-      avoid confusion with other packages in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a tibble. The original
-      content of the dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(nba_players_19_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(nba_players_19_tbl_df)
+A tibble with 494 observations and 7 variables:
 
-      .. rubric:: Format
-         :name: format
+first_name
+   Character string representing the player's first name.
 
-      A tibble with 494 observations and 7 variables:
+last_name
+   Character string representing the player's last name.
 
-      first_name
-         Character string representing the player's first name.
+team
+   Character string indicating the name of the team.
 
-      last_name
-         Character string representing the player's last name.
+team_abbr
+   Character string representing the team's abbreviation.
 
-      team
-         Character string indicating the name of the team.
+position
+   Character string indicating the player's position on the team.
 
-      team_abbr
-         Character string representing the team's abbreviation.
+number
+   Character string representing the player's jersey number.
 
-      position
-         Character string indicating the player's position on the team.
+height
+   Numeric value representing the player's height.
 
-      number
-         Character string representing the player's jersey number.
+Source
+~~~~~~
 
-      height
-         Numeric value representing the player's height.
-
-      .. rubric:: Source
-         :name: source
-
-      Data from NBA players' statistics in 2019
+Data from NBA players' statistics in 2019

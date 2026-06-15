@@ -1,62 +1,57 @@
-.. container::
+=================== ===============
+BrainCancerCases_df R Documentation
+=================== ===============
 
-   .. container::
+New Mexico Brain Cancer Cases Data
+----------------------------------
 
-      =================== ===============
-      BrainCancerCases_df R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: New Mexico Brain Cancer Cases Data
-         :name: new-mexico-brain-cancer-cases-data
+This dataset, BrainCancerCases_df, is a data frame containing data on
+brain cancer cases in New Mexico. It includes information about the
+county, number of cases, year of diagnosis, age group, and sex of the
+patients. The dataset consists of 1175 observations with 5 variables.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, BrainCancerCases_df, is a data frame containing data
-      on brain cancer cases in New Mexico. It includes information about
-      the county, number of cases, year of diagnosis, age group, and sex
-      of the patients. The dataset consists of 1175 observations with 5
-      variables.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(BrainCancerCases_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(BrainCancerCases_df)
+A data frame with 1175 observations and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+county
+   County of diagnosis (Factor with 31 levels).
 
-      A data frame with 1175 observations and 5 variables:
+cases
+   Number of cases (integer).
 
-      county
-         County of diagnosis (Factor with 31 levels).
+year
+   Year of diagnosis (integer).
 
-      cases
-         Number of cases (integer).
+agegroup
+   Age group of patients (integer).
 
-      year
-         Year of diagnosis (integer).
+sex
+   Sex of the patient (integer).
 
-      agegroup
-         Age group of patients (integer).
+Details
+~~~~~~~
 
-      sex
-         Sex of the patient (integer).
+The dataset name has been kept as 'BrainCancerCases_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the OncoDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'\_df' indicates that the dataset is a data frame. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'BrainCancerCases_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The suffix '\_df' indicates that the dataset is a
-      data frame. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the rsatscan package, distributed with SaTScan
-      software: https://www.satscan.org
+Data taken from the rsatscan package, distributed with SaTScan software:
+https://www.satscan.org

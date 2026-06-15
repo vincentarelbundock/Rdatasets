@@ -1,45 +1,41 @@
-.. container::
+========= ===============
+household R Documentation
+========= ===============
 
-   .. container::
+Household data
+--------------
 
-      ========= ===============
-      household R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Household data
-         :name: household-data
+This dataset is based on an example in
+``vignette("datatable-reshape", package = "data.table")``
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset is based on an example in
-      ``vignette("datatable-reshape", package = "data.table")``
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   household
 
-      .. code:: R
+Format
+~~~~~~
 
-         household
+A data frame with 5 rows and 5 columns:
 
-      .. rubric:: Format
-         :name: format
+family
+   Family identifier
 
-      A data frame with 5 rows and 5 columns:
+dob_child1
+   Date of birth of first child
 
-      family
-         Family identifier
+dob_child2
+   Date of birth of second child
 
-      dob_child1
-         Date of birth of first child
+name_child1
+   Name of first child
 
-      dob_child2
-         Date of birth of second child
+?
 
-      name_child1
-         Name of first child
-
-      ?
-
-      name_child2
-         Name of second child
+name_child2
+   Name of second child

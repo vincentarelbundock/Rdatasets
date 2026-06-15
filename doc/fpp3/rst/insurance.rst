@@ -1,34 +1,31 @@
-.. container::
+========= ===============
+insurance R Documentation
+========= ===============
 
-   .. container::
+Insurance quotations and advertising expenditure
+------------------------------------------------
 
-      ========= ===============
-      insurance R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Insurance quotations and advertising expenditure
-         :name: insurance-quotations-and-advertising-expenditure
+Monthly quotations and monthly television advertising expenditure for a
+US insurance company. January 2002 to April 2005
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Monthly quotations and monthly television advertising expenditure
-      for a US insurance company. January 2002 to April 2005
+Monthly time series of class 'tsibble'.
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      Monthly time series of class 'tsibble'.
+Kindly provided by Dave Reilly, Automatic Forecasting Systems.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Kindly provided by Dave Reilly, Automatic Forecasting Systems.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         insurance |>
-           ggplot(aes(x=TVadverts, y=Quotes)) + geom_point()
+   insurance |>
+     ggplot(aes(x=TVadverts, y=Quotes)) + geom_point()

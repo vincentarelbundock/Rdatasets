@@ -59,12 +59,9 @@ Cambridge	University Press.
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data("cps71")
-attach(cps71)
+<pre><code class='language-R'>data("cps71", package = "np")
 
-plot(age, logwage, xlab="Age", ylab="log(wage)")
-
-detach(cps71)
+if (interactive()) with(cps71, plot(age, logwage, xlab="Age", ylab="log(wage)"))
 </code></pre>
 
 </main>

@@ -1,113 +1,102 @@
-.. container::
+======= ===============
+Breslau R Documentation
+======= ===============
 
-   .. container::
+Halley's Breslau Life Table
+---------------------------
 
-      ======= ===============
-      Breslau R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Halley's Breslau Life Table
-         :name: halleys-breslau-life-table
+Edmond Halley published his Breslau life table in 1693, which was
+arguably the first in the world based on population data. David
+Bellhouse (2011) resurrected the original sources of these data,
+collected by Caspar Neumann in the city of Breslau (now called Wroclaw),
+and then reconstructed in the 1880s by Jonas Graetzer, the medical
+officer in Breslau at that time.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Edmond Halley published his Breslau life table in 1693, which was
-      arguably the first in the world based on population data. David
-      Bellhouse (2011) resurrected the original sources of these data,
-      collected by Caspar Neumann in the city of Breslau (now called
-      Wroclaw), and then reconstructed in the 1880s by Jonas Graetzer,
-      the medical officer in Breslau at that time.
+A data frame with 100 observations on the following 8 variables. The
+``yearXXXX`` variables give the number of deaths for persons of a given
+``age`` recorded in that year.
 
-      The dataset here follows Graetzer, and gives the number of deaths
-      at ages ``1:100`` recorded in each of the years ``1687:1691``.
-      Halley's analysis was based on the total over those years.
+``age``
+   a numeric vector
 
-      .. rubric:: Usage
-         :name: usage
+``year1687``
+   a numeric vector
 
-      .. code:: R
+``year1688``
+   a numeric vector
 
-         data("Breslau")
+``year1689``
+   a numeric vector
 
-      .. rubric:: Format
-         :name: format
+``year1690``
+   a numeric vector
 
-      A data frame with 100 observations on the following 8 variables.
-      The ``yearXXXX`` variables give the number of deaths for persons
-      of a given ``age`` recorded in that year.
+``year1691``
+   a numeric vector
 
-      ``age``
-         a numeric vector
+``total``
+   a numeric vector
 
-      ``year1687``
-         a numeric vector
+``average``
+   a numeric vector
 
-      ``year1688``
-         a numeric vector
+Details
+~~~~~~~
 
-      ``year1689``
-         a numeric vector
+The dataset here follows Graetzer, and gives the number of deaths at
+ages ``1:100`` recorded in each of the years ``1687:1691``. Halley's
+analysis was based on the total over those years.
 
-      ``year1690``
-         a numeric vector
+This dataset was kindly provided by David Bellhouse.
 
-      ``year1691``
-         a numeric vector
+Source
+~~~~~~
 
-      ``total``
-         a numeric vector
+Bellhouse, D.R. (2011), A new look at Halley's life table. *Journal of
+the Royal Statistical Society*: Series A, **174**, 823-832.
+`doi:10.1111/j.1467-985X.2010.00684.x <https://doi.org/10.1111/j.1467-985X.2010.00684.x>`__
 
-      ``average``
-         a numeric vector
+References
+~~~~~~~~~~
 
-      .. rubric:: Details
-         :name: details
+Halley, E. (1693). An estimate of the degrees of mortality of mankind,
+drawn from the curious tables of births and funerals in the City of
+Breslaw; with an attempt to ascertain the price of annuities upon lives.
+*Phil. Trans.*, **17**, 596-610.
 
-      This dataset was kindly provided by David Bellhouse.
+See Also
+~~~~~~~~
 
-      .. rubric:: Source
-         :name: source
+``Arbuthnot``, ``HalleyLifeTable``
 
-      Bellhouse, D.R. (2011), A new look at Halley's life table.
-      *Journal of the Royal Statistical Society*: Series A, **174**,
-      823-832.
-      `doi:10.1111/j.1467-985X.2010.00684.x <https://doi.org/10.1111/j.1467-985X.2010.00684.x>`__
+Examples
+~~~~~~~~
 
-      .. rubric:: References
-         :name: references
+.. code:: R
 
-      Halley, E. (1693). An estimate of the degrees of mortality of
-      mankind, drawn from the curious tables of births and funerals in
-      the City of Breslaw; with an attempt to ascertain the price of
-      annuities upon lives. *Phil. Trans.*, **17**, 596-610.
 
-      .. rubric:: See Also
-         :name: see-also
+   data(Breslau)
 
-      ``Arbuthnot``, ``HalleyLifeTable``
+   # Reproduce Figure 1 in Bellhouse (2011)
+   # He excluded age < 5 and made a point of the over-representation of deaths in quinquennial years.
+   library(ggplot2)
+   library(dplyr, warn.conflicts = FALSE)
+   Breslau5 <- Breslau |>
+     filter(age >= 5) |>
+     mutate(div5 = factor(age %% 5 == 0))
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(Breslau)
-
-         # Reproduce Figure 1 in Bellhouse (2011)
-         # He excluded age < 5 and made a point of the over-representation of deaths in quinquennial years.
-         library(ggplot2)
-         library(dplyr, warn.conflicts = FALSE)
-         Breslau5 <- Breslau |>
-           filter(age >= 5) |>
-           mutate(div5 = factor(age %% 5 == 0))
-
-         ggplot(Breslau5, aes(x=age, y=total), size=1.5) +
-           geom_point(aes(color=div5)) +
-           scale_color_manual(labels = c(FALSE, TRUE), 
-                              values = c("blue", "red")) +
-           guides(color=guide_legend("Age divisible by 5")) +
-           theme(legend.position = "top") +
-           labs(x = "Age current at death",
-                y = "Total number of deaths") +
-           theme_bw()
+   ggplot(Breslau5, aes(x=age, y=total), size=1.5) +
+     geom_point(aes(color=div5)) +
+     scale_color_manual(labels = c(FALSE, TRUE), 
+                        values = c("blue", "red")) +
+     guides(color=guide_legend("Age divisible by 5")) +
+     theme(legend.position = "top") +
+     labs(x = "Age current at death",
+          y = "Total number of deaths") +
+     theme_bw()

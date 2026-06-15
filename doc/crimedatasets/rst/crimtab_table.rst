@@ -1,59 +1,52 @@
-.. container::
+============= ===============
+crimtab_table R Documentation
+============= ===============
 
-   .. container::
+Student's 3000 Criminals Data
+-----------------------------
 
-      ============= ===============
-      crimtab_table R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Student's 3000 Criminals Data
-         :name: students-3000-criminals-data
+Data of 3000 male criminals over 20 years old undergoing their sentences
+in the chief prisons of England and Wales.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data of 3000 male criminals over 20 years old undergoing their
-      sentences in the chief prisons of England and Wales.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(crimtab_table)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(crimtab_table)
+A table with 42 rows and 22 columns:
 
-      .. rubric:: Format
-         :name: format
+Var1
+   Factor or categorical variable representing different crime
+   categories.
 
-      A table with 42 rows and 22 columns:
+Var2
+   A second factor or categorical variable, potentially representing
+   different classifications such as location, time, or crime severity.
 
-      Var1
-         Factor or categorical variable representing different crime
-         categories.
+Freq
+   Frequency of occurrences within each combination of categories,
+   representing the number of reported incidents for each combination.
 
-      Var2
-         A second factor or categorical variable, potentially
-         representing different classifications such as location, time,
-         or crime severity.
+Details
+~~~~~~~
 
-      Freq
-         Frequency of occurrences within each combination of categories,
-         representing the number of reported incidents for each
-         combination.
+The dataset name has been changed to 'crimtab_table' to avoid confusion
+with other data sets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the crimedatasets package and
+assists users in identifying its specific characteristics. The suffix
+'table' indicates that the dataset is stored as a contingency table,
+rather than a traditional data frame. The original content has not been
+modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been changed to 'crimtab_table' to avoid
-      confusion with other data sets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      crimedatasets package and assists users in identifying its
-      specific characteristics. The suffix 'table' indicates that the
-      dataset is stored as a contingency table, rather than a
-      traditional data frame. The original content has not been modified
-      in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Public crime data.
+Public crime data.

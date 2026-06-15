@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><title>R: Five data sets from Harman (1967). 9 cognitive variables from...</title>
+<!DOCTYPE html><html><head><title>R: Six data sets from Harman (1967). 9 cognitive variables from...</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
@@ -16,11 +16,11 @@ function processMathHTML() {
 
 <table style="width: 100%;"><tr><td>Harman</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>Five data sets from Harman (1967). 9 cognitive variables from Holzinger and 8 emotional variables from Burt</h2>
+<h2>Six data sets from Harman (1967). 9 cognitive variables from Holzinger and 8 emotional variables from Burt</h2>
 
 <h3>Description</h3>
 
-<p>Five classic data sets reported by Harman (1967) are 9 psychological (cognitive) variables taken from Holzinger  and 8 emotional variables taken from Burt. Two others are socioeconomic and political data sets. Additionally, 8 physical variables.  All five of these are used for tests and demonstrations of various factoring algortithms.
+<p>Classic data sets reported by Harman (1967) are 9 psychological (cognitive) variables taken from Holzinger  and 8 emotional variables taken from Burt. Two others are socioeconomic and political data sets. Additionally, 8 physical variables.  All five of these are used for tests and demonstrations of various factoring algortithms. One set of five variables (Haman_5) is included as a demonstration of a Heywood case.
 </p>
 
 
@@ -28,6 +28,7 @@ function processMathHTML() {
 
 <pre><code class='language-R'>data(Harman)  
 data(Harman.5)
+data(Harman_5)
 data(Harman.political)
 data(Harman.8)
 </code></pre>
@@ -44,6 +45,9 @@ data(Harman.8)
 </p>
 </li>
 <li><p> Harman.5:  12 census tracts for 5 socioeconomic data (Harman p 14)
+</p>
+</li>
+<li><p> Harman_5: 5 variables with a Heywood case (see Cooperman and Waller, 2022 )
 </p>
 </li>
 <li><p> Harman.political:  p 166.
@@ -83,6 +87,8 @@ data(Harman.8)
 </p>
 <p>Other Harman data sets are 5 socioeconomic variables for 12 census tracts Harman.5 used by John Loehlin as an example for EFA.  Another one of the many Harman (1967) data sets is Harman.political.  This contains 8 political variables taken over 147 election areas.  The principal factor method with SMCs as communalities match those of table 8.18.  The data are used by Dziubian and Shirkey as an example of the Kaiser-Meyer-Olkin test of factor adequacy.
 </p>
+<p>The Harman_5 correlation matrix is discussed by Cooperman and Waller and is nice example of a Heywood case. 
+</p>
 
 
 <h3>Source</h3>
@@ -97,11 +103,13 @@ Factor analysis by minimizing residuals (minres).  Psychometrika, 31(3):351-368.
 <h3>References</h3>
 
 <p>Harman, Harry Horace (1967), Modern factor analysis. Chicago, University of Chicago Press.
-</p>
-<p>P.Bentler. Covariance structure models for maximal reliability of unit-weighted
+Bentler, P. Covariance structure models for maximal reliability of unit-weighted
 composites. In Handbook of latent variable and related models, pages 1&ndash;17.  North Holland, 2007.
 </p>
-<p>Burt, C.General and Specific Factors underlying the Primary Emotions. Reports of the British Association for the Advancement of Science, 85th meeting, held in Manchester,  September 7-11, 1915. London, John Murray, 1916, p. 694-696 (retrieved from the web at https://www.biodiversitylibrary.org/item/95822#790
+<p>Burt, C. General and Specific Factors underlying the Primary Emotions. Reports of the British Association for the Advancement of Science, 85th meeting, held in Manchester,  September 7-11, 1915. London, John Murray, 1916, p. 694-696 (retrieved from the web at https://www.biodiversitylibrary.org/item/95822#790
+</p>
+<p>Cooperman, A.W. and N. G. Waller (2022) Heywood You Go Away! Examining Causes, Effects, and Treatments for
+Heywood Cases in Exploratory Factor Analysis, Psychological Methods, (27) 156-176.
 </p>
 
 

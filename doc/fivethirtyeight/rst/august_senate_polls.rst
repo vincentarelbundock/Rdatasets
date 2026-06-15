@@ -1,72 +1,64 @@
-.. container::
+=================== ===============
+august_senate_polls R Documentation
+=================== ===============
 
-   .. container::
+How Much Trouble Is Ted Cruz Really In?
+---------------------------------------
 
-      =================== ===============
-      august_senate_polls R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: How Much Trouble Is Ted Cruz Really In?
-         :name: how-much-trouble-is-ted-cruz-really-in
+The raw data behind the story "How Much Trouble Is Ted Cruz Really In?"
+https://fivethirtyeight.com/features/how-much-trouble-is-ted-cruz-really-in/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "How Much Trouble Is Ted Cruz Really
-      In?"
-      https://fivethirtyeight.com/features/how-much-trouble-is-ted-cruz-really-in/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   august_senate_polls
 
-      .. code:: R
+Format
+~~~~~~
 
-         august_senate_polls
+A data frame with 594 rows representing senate polls, and 11 variables:
 
-      .. rubric:: Format
-         :name: format
+cycle
+   the election year
 
-      A data frame with 594 rows representing senate polls, and 11
-      variables:
+state
+   the state of the poll
 
-      cycle
-         the election year
+senate_class
+   the class of the senate
 
-      state
-         the state of the poll
+start_date
+   the start date of the poll
 
-      senate_class
-         the class of the senate
+end_date
+   the end odate of the poll
 
-      start_date
-         the start date of the poll
+dem_poll
+   the percent of support for the Democrat during the poll
 
-      end_date
-         the end odate of the poll
+rep_poll
+   the percent of support for the Republican during the poll
 
-      dem_poll
-         the percent of support for the Democrat during the poll
+dem_result
+   the result percent of support for the Democrat during the election
 
-      rep_poll
-         the percent of support for the Republican during the poll
+rep_result
+   the result percent of support for the Republican during the election
 
-      dem_result
-         the result percent of support for the Democrat during the
-         election
+error
+   the difference between the percent of support of one party during the
+   poll and the result percent of support for the same party during the
+   election
 
-      rep_result
-         the result percent of support for the Republican during the
-         election
+absolute_error
+   the absolute value of the error value
 
-      error
-         the difference between the percent of support of one party
-         during the poll and the result percent of support for the same
-         party during the election
+Source
+~~~~~~
 
-      absolute_error
-         the absolute value of the error value
-
-      .. rubric:: Source
-         :name: source
-
-      Emerson College’s poll of registered voters
+Emerson College’s poll of registered voters

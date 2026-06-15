@@ -1,50 +1,44 @@
-.. container::
+============ ===============
+ny_childcare R Documentation
+============ ===============
 
-   .. container::
+New York childcare data
+-----------------------
 
-      ============ ===============
-      ny_childcare R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: New York childcare data
-         :name: new-york-childcare-data
+The number of employees (in thousands) in child day care services in New
+York City over the period the period from January 1990 to April 2024.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      The number of employees (in thousands) in child day care services
-      in New York City over the period the period from January 1990 to
-      April 2024.
+Time series of class 'tsibble'
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      Time series of class 'tsibble'
+``ny_childcare`` contains monthly data with two columns:
 
-      .. rubric:: Details
-         :name: details
+========== ====================
+``Month``: Year-month
+``Count``: Number of employees.
+           
+========== ====================
 
-      ``ny_childcare`` contains monthly data with two columns:
+Source
+~~~~~~
 
-      ========== ====================
-      ``Month``: Year-month
-      ``Count``: Number of employees.
-      \          
-      ========== ====================
+U.S. Bureau of Labor Statistics and Federal Reserve Bank of St. Louis,
+All Employees: Education and Health Services: Child Care Services in New
+York City, NY retrieved from FRED, Federal Reserve Bank of St. Louis;
+https://fred.stlouisfed.org/series/SMU36935616562440001, 30 May 2024.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      U.S. Bureau of Labor Statistics and Federal Reserve Bank of St.
-      Louis, All Employees: Education and Health Services: Child Care
-      Services in New York City, NY retrieved from FRED, Federal Reserve
-      Bank of St. Louis;
-      https://fred.stlouisfed.org/series/SMU36935616562440001, 30 May
-      2024.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         ny_childcare
+   ny_childcare

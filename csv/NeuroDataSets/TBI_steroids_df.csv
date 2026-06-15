@@ -1,0 +1,18 @@
+rownames,study,event.steroid,n.steroid,event.control,n.control
+1,Ransohoff 1972,9,17,13,18
+2,Alexander 1972,16,55,22,55
+3,Faupel 1976,16,67,16,28
+4,Cooper 1979,26,49,13,27
+5,Hernesniemi 1979,35,81,36,83
+6,Pitts 1980,114,201,38,74
+7,Saul 1981,8,50,9,50
+8,Braakman 1983,44,81,47,80
+9,Giannotta 1984,34,72,7,16
+10,Dearden 1986,33,68,21,62
+11,Chacon 1987,1,5,0,5
+12,Zagara 1987,4,12,4,12
+13,Stubbs 1989,13,98,5,54
+14,Gaab 1994,19,133,21,136
+15,Grumme 1995,38,175,49,195
+16,Zarate 1995,0,30,0,30
+17,MRC CRASH trial 2004,1052,4985,893,4979

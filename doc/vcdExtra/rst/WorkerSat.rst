@@ -1,66 +1,56 @@
-.. container::
+========= ===============
+WorkerSat R Documentation
+========= ===============
 
-   .. container::
+Worker Satisfaction Data
+------------------------
 
-      ========= ===============
-      WorkerSat R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Worker Satisfaction Data
-         :name: worker-satisfaction-data
+Blue collar workers job satisfaction from large scale investigation in
+Denmark in 1968 (Andersen, 1991).
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Blue collar workers job satisfaction from large scale
-      investigation in Denmark in 1968 (Andersen, 1991).
+A frequency data frame with 8 observations on the following 4 variables,
+representing the 2 x 2 x 2 classification of 715 cases.
 
-      .. rubric:: Usage
-         :name: usage
+``Manage``
+   Quality of management, an ordered factor with levels ``bad`` <
+   ``good``
 
-      .. code:: R
+``Super``
+   Supervisor satisfaction, an ordered factor with levels ``low`` <
+   ``high``
 
-         data("WorkerSat")
+``Worker``
+   Worker job satisfaction, an ordered factor with levels ``low`` <
+   ``high``
 
-      .. rubric:: Format
-         :name: format
+``Freq``
+   a numeric vector
 
-      A frequency data frame with 8 observations on the following 4
-      variables, representing the 2 x 2 x 2 classification of 715 cases.
+Source
+~~~~~~
 
-      ``Manage``
-         Quality of management, an ordered factor with levels ``bad`` <
-         ``good``
+Originally from https://online.stat.psu.edu/stat504/Lesson10
 
-      ``Super``
-         Supervisor satisfaction, an ordered factor with levels ``low``
-         < ``high``
+References
+~~~~~~~~~~
 
-      ``Worker``
-         Worker job satisfaction, an ordered factor with levels ``low``
-         < ``high``
+Andersen, E. B. (1991) Statistical Analysis of Categorical Data, 2nd
+Ed., Springer-Verlag.
 
-      ``Freq``
-         a numeric vector
+Examples
+~~~~~~~~
 
-      .. rubric:: Source
-         :name: source
+.. code:: R
 
-      Originally from https://online.stat.psu.edu/stat504/lesson/10/
 
-      .. rubric:: References
-         :name: references
+   data(WorkerSat)
 
-      Andersen, E. B. (1991) Statistical Analysis of Categorical Data,
-      2nd Ed., Springer-Verlag.
-
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(WorkerSat)
-
-         worker.tab <- xtabs(Freq ~ Worker + Super + Manage, data=WorkerSat)
-         fourfold(worker.tab)
-         mosaic(worker.tab, shade=TRUE)
+   worker.tab <- xtabs(Freq ~ Worker + Super + Manage, data=WorkerSat)
+   fourfold(worker.tab)
+   mosaic(worker.tab, shade=TRUE)

@@ -1,85 +1,79 @@
-.. container::
+=========== ===============
+BarmoseI.pp R Documentation
+=========== ===============
 
-   .. container::
+Piece plotted artifacts from Barmose I, South Zealand, Denmark
+--------------------------------------------------------------
 
-      =========== ===============
-      BarmoseI.pp R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Piece plotted artifacts from Barmose I, South Zealand,
-         Denmark
-         :name: piece-plotted-artifacts-from-barmose-i-south-zealand-denmark
+Two dimensional locations of 473 artifacts at the Barmose I Maglemosian
+site used by Blankholm (1991) to illustrate several spatial analysis
+methods.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Two dimensional locations of 473 artifacts at the Barmose I
-      Maglemosian site used by Blankholm (1991) to illustrate several
-      spatial analysis methods.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(BarmoseI.pp)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(BarmoseI.pp)
+A data frame with 473 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``North``
+   North coordinate
 
-      A data frame with 473 observations on the following 4 variables.
+``East``
+   East coordinate
 
-      ``North``
-         North coordinate
+``Class``
+   Numeric code used by Blankholm: ``1``, ``2``, ``3``, ``4``, ``5``,
+   ``6``, ``7``, ``8``, ``9``, ``10``, ``11``
 
-      ``East``
-         East coordinate
+``Label``
+   Artifact type: ``Scrapers``, ``Burins``, ``Lanceolate Microliths``,
+   ``Microburins``, ``Flake Axes``, ``Core Axes``, ``Square Knives``,
+   ``Blade/Flake Knives``, ``Denticulated/Notched Pieces``, ``Cores``,
+   ``Core Platforms``
 
-      ``Class``
-         Numeric code used by Blankholm: ``1``, ``2``, ``3``, ``4``,
-         ``5``, ``6``, ``7``, ``8``, ``9``, ``10``, ``11``
+Details
+~~~~~~~
 
-      ``Label``
-         Artifact type: ``Scrapers``, ``Burins``,
-         ``Lanceolate Microliths``, ``Microburins``, ``Flake Axes``,
-         ``Core Axes``, ``Square Knives``, ``Blade/Flake Knives``,
-         ``Denticulated/Notched Pieces``, ``Cores``, ``Core Platforms``
+Barmose I is an early Maglemosian (7500 - 6000 BCE) site located in
+Barmosen in South Zealand, Denmark. The site was excavated in 1967-1971
+by Axel Johansson (Johansson 1971 and 1990). Flake counts and grid
+coordinates were taken from Figure 100 in Blankholm (1991) for
+``BarmoseI.grid``. ``BarmoseI.pp`` includes the locations of 473
+artifacts from Appendix C of Blankholm's book (1991).
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      Barmose I is an early Maglemosian (7500 - 6000 BCE) site located
-      in Barmosen in South Zealand, Denmark. The site was excavated in
-      1967-1971 by Axel Johansson (Johansson 1971 and 1990). Flake
-      counts and grid coordinates were taken from Figure 100 in
-      Blankholm (1991) for ``BarmoseI.grid``. ``BarmoseI.pp`` includes
-      the locations of 473 artifacts from Appendix C of Blankholm's book
-      (1991).
+Blankholm, Hans Peter. 1991. *Intrasite Spatial Analysis in Theory and
+Practice*. Aarhus University Press.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Blankholm, Hans Peter. 1991. *Intrasite Spatial Analysis in Theory
-      and Practice*. Aarhus University Press.
+Carlson, David L. 2017. *Quantitative Methods in Archaeology Using R*.
+Cambridge University Press, pp 367-377.
 
-      .. rubric:: References
-         :name: references
+Johansson, Axel. 1971. Barmosegruppen. Præboreale Bopladsfund me
+Skiveøkser i Sydsjælland. Foreløbig Meddelelse. *Historisk Samfund for
+Præstø Amt*. Årbog 1968, pp. 101–170.
 
-      Carlson, David L. 2017. *Quantitative Methods in Archaeology Using
-      R*. Cambridge University Press, pp 367-377.
+Johansson, Axel. 1990. *Barmosegruppen. Præboreale Bopladsfund i
+Sydsjælland*. Årbog. Aarhus University Press.
 
-      Johansson, Axel. 1971. Barmosegruppen. Præboreale Bopladsfund me
-      Skiveøkser i Sydsjælland. Foreløbig Meddelelse. *Historisk Samfund
-      for Præstø Amt*. Årbog 1968, pp. 101–170.
+Examples
+~~~~~~~~
 
-      Johansson, Axel. 1990. *Barmosegruppen. Præboreale Bopladsfund i
-      Sydsjælland*. Årbog. Aarhus University Press.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(BarmoseI.pp)
-         plot(North~East, BarmoseI.pp, asp=1, pch=as.numeric(Class))
-         legend("bottomleft", levels(BarmoseI.pp$Label), pch=1:11, cex=.75)
+   data(BarmoseI.pp)
+   plot(North~East, BarmoseI.pp, asp=1, pch=as.numeric(Class))
+   legend("bottomleft", levels(BarmoseI.pp$Label), pch=1:11, cex=.75)

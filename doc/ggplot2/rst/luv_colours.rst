@@ -1,33 +1,29 @@
-.. container::
+=========== ===============
+luv_colours R Documentation
+=========== ===============
 
-   .. container::
+``colors()`` in Luv space
+-------------------------
 
-      =========== ===============
-      luv_colours R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: ``colors()`` in Luv space
-         :name: colors-in-luv-space
+All built-in ``colors()`` translated into Luv colour space.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      All built-in ``colors()`` translated into Luv colour space.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   luv_colours
 
-      .. code:: R
+Format
+~~~~~~
 
-         luv_colours
+A data frame with 657 observations and 4 variables:
 
-      .. rubric:: Format
-         :name: format
+L,u,v
+   Position in Luv colour space
 
-      A data frame with 657 observations and 4 variables:
-
-      L,u,v
-         Position in Luv colour space
-
-      col
-         Colour name
+col
+   Colour name

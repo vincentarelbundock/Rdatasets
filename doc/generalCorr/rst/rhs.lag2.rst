@@ -1,22 +1,18 @@
-.. container::
+======== ===============
+rhs.lag2 R Documentation
+======== ===============
 
-   .. container::
+internal rhs.lag2
+-----------------
 
-      ======== ===============
-      rhs.lag2 R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: internal rhs.lag2
-         :name: internal-rhs.lag2
+intended for internal use only
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      intended for internal use only
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
-
-      .. code:: R
-
-         rhs.lag2
+   rhs.lag2

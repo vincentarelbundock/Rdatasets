@@ -1,78 +1,74 @@
-.. container::
+======= ===============
+nba_elo R Documentation
+======= ===============
 
-   .. container::
+NBA Elo Ratings
+---------------
 
-      ======= ===============
-      nba_elo R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: NBA Elo Ratings
-         :name: nba-elo-ratings
+The raw data behind all nba predictions, including the story "The
+Complete History of the NBA"
+https://projects.fivethirtyeight.com/complete-history-of-the-nba
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind all nba predictions, including the story "The
-      Complete History of the NBA"
-      https://projects.fivethirtyeight.com/complete-history-of-the-nba
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   nba_elo_latest
 
-      .. code:: R
+Format
+~~~~~~
 
-         nba_elo_latest
+An object of class ``spec_tbl_df`` (inherits from ``tbl_df``, ``tbl``,
+``data.frame``) with 1230 rows and 24 columns.
 
-      .. rubric:: Format
-         :name: format
+nba_elo_latest
+~~~~~~~~~~~~~~
 
-      An object of class ``spec_tbl_df`` (inherits from ``tbl_df``,
-      ``tbl``, ``data.frame``) with 1230 rows and 24 columns.
+A data frame with 1230 rows representing game played during the most
+current season of the NBA, and 24 variables:
 
-      .. rubric:: nba_elo_latest
-         :name: nba_elo_latest
+date
+   Date
 
-      A data frame with 1230 rows representing game played during the
-      most current season of the NBA, and 24 variables:
+season
+   the season in which the game was played
 
-      date
-         Date
+neutral
+   True if the game was played on neutral territory, False if not
 
-      season
-         the season in which the game was played
+playoff
+   True if the game was played in a playoff, False if not
 
-      neutral
-         True if the game was played on neutral territory, False if not
+team1
+   name of first team
 
-      playoff
-         True if the game was played in a playoff, False if not
+team2
+   name of second team
 
-      team1
-         name of first team
+elo1_pre
+   Team 1 Elo rating before game
 
-      team2
-         name of second team
+elo2_pre
+   Team 2 Elo rating before game
 
-      elo1_pre
-         Team 1 Elo rating before game
+elo_prob1
+   Team 1's probability of winning based on Elo rating
 
-      elo2_pre
-         Team 2 Elo rating before game
+elo_prob2
+   Team 2's probability of winning based on Elo rating
 
-      elo_prob1
-         Team 1's probability of winning based on Elo rating
+elo1_post
+   Team 1 Elo rating after the game
 
-      elo_prob2
-         Team 2's probability of winning based on Elo rating
+elo2_post
+   Team 2 Elo rating after the game
 
-      elo1_post
-         Team 1 Elo rating after the game
+score1
+   the score of team 1
 
-      elo2_post
-         Team 2 Elo rating after the game
-
-      score1
-         the score of team 1
-
-      score2
-         the score of team 2
+score2
+   the score of team 2

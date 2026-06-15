@@ -20,20 +20,16 @@ function processMathHTML() {
 
 <h3>Description</h3>
 
-<p>A 6 x 4 contingency table representing the cross-classification of
-mental health status (<code>mental</code>) of 1660 young New York residents by
-their parents' socioeconomic status (<code>ses</code>).
+<p>A 6 x 4 contingency table representing the cross-classification of mental
+health status (<code>mental</code>) of 1660 young New York residents by their
+parents' socioeconomic status (<code>ses</code>).
 </p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data(Mental)</code></pre>
 
 
 <h3>Format</h3>
 
-<p>A data frame frequency table with 24 observations on the following 3 variables.
+<p>A data frame frequency table with 24 observations on the following 3
+variables.
 </p>
 
 <dl>
@@ -56,25 +52,26 @@ integer scores.  For <code>ses</code>, 1=&quot;High&quot; and 6=&quot;Low&quot;.
 
 <h3>Source</h3>
 
-<p>Haberman, S. J. 
-<em>The Analysis of Qualitative Data: New Developments</em>, Academic Press, 1979, Vol. II,
-p. 375.
+<p>Haberman, S. J.  <em>The Analysis of Qualitative Data: New
+Developments</em>, Academic Press, 1979, Vol. II, p. 375.
 </p>
-<p>Srole, L.; Langner, T. S.; Michael, S. T.; Kirkpatrick, P.; Opler, M. K. &amp; Rennie, T. A. C. 
-<em>Mental Health in the Metropolis: The Midtown Manhattan Study</em>,
-NYU Press, 1978, p. 289
+<p>Srole, L.; Langner, T. S.; Michael, S. T.; Kirkpatrick, P.; Opler, M. K. &amp;
+Rennie, T. A. C.  <em>Mental Health in the Metropolis: The Midtown
+Manhattan Study</em>, NYU Press, 1978, p. 289
 </p>
 
 
 <h3>References</h3>
 
-<p>Friendly, M. <em>Visualizing Categorical Data</em>, Cary, NC: SAS Institute, 2000, Appendix B.7.
+<p>Friendly, M. <em>Visualizing Categorical Data</em>, Cary, NC: SAS
+Institute, 2000, Appendix B.7.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(Mental)
+<pre><code class='language-R'>
+data(Mental)
 str(Mental)
 (Mental.tab &lt;- xtabs(Freq ~ ses + mental, data=Mental))
 
@@ -83,8 +80,9 @@ mosaic(Mental.tab, gp=shading_Friendly)
 sieve(Mental.tab, gp=shading_Friendly)
 
 if(require(ca)){
-  plot(ca(Mental.tab), main="Mental impairment &amp; SES")
+  plot(ca(Mental.tab), main="Mental impairment &amp; SES", lines=TRUE)
 }
+
 
 </code></pre>
 

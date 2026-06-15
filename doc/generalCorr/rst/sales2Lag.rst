@@ -1,22 +1,18 @@
-.. container::
+========= ===============
+sales2Lag R Documentation
+========= ===============
 
-   .. container::
+internal sales2Lag
+------------------
 
-      ========= ===============
-      sales2Lag R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: internal sales2Lag
-         :name: internal-sales2lag
+intended for internal use only
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      intended for internal use only
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
-
-      .. code:: R
-
-         sales2Lag
+   sales2Lag

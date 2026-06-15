@@ -1,64 +1,58 @@
-.. container::
+============== ===============
+usMortality_df R Documentation
+============== ===============
 
-   .. container::
+US Mortality Rates by Cause and Gender
+--------------------------------------
 
-      ============== ===============
-      usMortality_df R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: US Mortality Rates by Cause and Gender
-         :name: us-mortality-rates-by-cause-and-gender
+This dataset, usMortality_df, is a data frame containing mortality rates
+across all ages in the USA from 2011-2013, stratified by cause of death,
+sex, and rural/urban status. It includes national aggregate rates for 10
+causes of death, including Heart disease.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, usMortality_df, is a data frame containing mortality
-      rates across all ages in the USA from 2011-2013, stratified by
-      cause of death, sex, and rural/urban status. It includes national
-      aggregate rates for 10 causes of death, including Heart disease.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(usMortality_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(usMortality_df)
+A data frame with 40 observations and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+Status
+   Residential status (factor: Rural/Urban)
 
-      A data frame with 40 observations and 5 variables:
+Sex
+   Gender (factor: Male/Female)
 
-      Status
-         Residential status (factor: Rural/Urban)
+Cause
+   Cause of death (factor with 10 levels)
 
-      Sex
-         Gender (factor: Male/Female)
+Rate
+   Mortality rate per 100,000 population (numeric)
 
-      Cause
-         Cause of death (factor with 10 levels)
+SE
+   Standard error of mortality rate (numeric)
 
-      Rate
-         Mortality rate per 100,000 population (numeric)
+Details
+~~~~~~~
 
-      SE
-         Standard error of mortality rate (numeric)
+The dataset name has been kept as 'usMortality_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the CardioDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'df' indicates that the dataset is a standard data frame. The original
+content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'usMortality_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      CardioDataSets package and assists users in identifying its
-      specific characteristics. The suffix 'df' indicates that the
-      dataset is a standard data frame. The original content has not
-      been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the lattice package version 0.22-6. Original
-      source: Rural Health Reform Policy Research Center (2015).
-      "Exploring Rural and Urban Mortality Differences." Bethesda, MD:
-      August 2015.
+Data taken from the lattice package version 0.22-6. Original source:
+Rural Health Reform Policy Research Center (2015). "Exploring Rural and
+Urban Mortality Differences." Bethesda, MD: August 2015.

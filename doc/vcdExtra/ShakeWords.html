@@ -16,30 +16,16 @@ function processMathHTML() {
 
 <table style="width: 100%;"><tr><td>ShakeWords</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>
-Shakespeare's Word Type Frequencies
-</h2>
+<h2>Shakespeare's Word Type Frequencies</h2>
 
 <h3>Description</h3>
 
-<p>This data set, from Efron and Thisted (1976), 
-gives the number of distinct words types (<code>Freq</code>) of words
-that appeared exactly once, twice, etc. up to 100 times (<code>count</code>)
-in the complete works of Shakespeare.  In these works, Shakespeare
-used 31,534 distinct words (types), comprising 884,647 words in total.
+<p>This data set, from Efron and Thisted (1976), gives the number of distinct
+words types (<code>Freq</code>) of words that appeared exactly once, twice, etc.
+up to 100 times (<code>count</code>) in the complete works of Shakespeare.  In
+these works, Shakespeare used 31,534 distinct words (types), comprising
+884,647 words in total.
 </p>
-<p>Efron &amp; Thisted used this data to ask the question, &quot;How many
-words did Shakespeare know?&quot;  Put another way, suppose another
-new corpus of works Shakespeare were discovered, also with
-884,647 words. How many new word types would appear?
-The answer to the main question involves contemplating
-an infinite number of such new corpora.
-</p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data(ShakeWords)</code></pre>
 
 
 <h3>Format</h3>
@@ -58,26 +44,34 @@ an infinite number of such new corpora.
 
 <h3>Details</h3>
 
-<p>In addition to the words that appear <code>1:100</code> times, there are 846 words 
-that appear more than 100 times, not listed in this data set. 
+<p>Efron &amp; Thisted used this data to ask the question, &quot;How many words did
+Shakespeare know?&quot;  Put another way, suppose another new corpus of works
+Shakespeare were discovered, also with 884,647 words. How many new word
+types would appear? The answer to the main question involves contemplating
+an infinite number of such new corpora.
+</p>
+<p>In addition to the words that appear <code>1:100</code> times, there are 846 words
+that appear more than 100 times, not listed in this data set.
 </p>
 
 
 <h3>Source</h3>
 
-<p>Bradley Efron and Ronald Thisted (1976).
-Estimating the Number of Unseen Species: How Many Words Did Shakespeare Know?
-<em>Biometrika</em>,
-Vol. 63, No. 3, pp. 435-447, 
+<p>Bradley Efron and Ronald Thisted (1976). Estimating the Number of
+Unseen Species: How Many Words Did Shakespeare Know? <em>Biometrika</em>, Vol.
+63, No. 3, pp. 435-447,
+%<a href="http://www.jstor.org/stable/2335721">http://www.jstor.org/stable/2335721</a>
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(ShakeWords)
+<pre><code class='language-R'>
+data(ShakeWords)
 str(ShakeWords)
 
 plot(sqrt(Freq) ~ count, data=ShakeWords)
+
 </code></pre>
 
 </main>

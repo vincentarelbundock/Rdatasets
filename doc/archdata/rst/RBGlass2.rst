@@ -1,112 +1,106 @@
-.. container::
+======== ===============
+RBGlass2 R Documentation
+======== ===============
 
-   .. container::
+Romano-British Glass, Trace Elements
+------------------------------------
 
-      ======== ===============
-      RBGlass2 R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Romano-British Glass, Trace Elements
-         :name: romano-british-glass-trace-elements
+The concentrations for 11 trace elements in 105 Romano-British waste
+glass specimens from two furnace sites (Leicester and Mancetter).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The concentrations for 11 trace elements in 105 Romano-British
-      waste glass specimens from two furnace sites (Leicester and
-      Mancetter).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("RBGlass2")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("RBGlass2")
+A data frame with 105 observations on the following 12 variables.
 
-      .. rubric:: Format
-         :name: format
+``Site``
+   a factor with levels ``Leicester`` and ``Mancetter``
 
-      A data frame with 105 observations on the following 12 variables.
+``Ba``
+   Barium ppm
 
-      ``Site``
-         a factor with levels ``Leicester`` and ``Mancetter``
+``Co``
+   Cobalt ppm
 
-      ``Ba``
-         Barium ppm
+``Cr``
+   Chromium ppm
 
-      ``Co``
-         Cobalt ppm
+``Cu``
+   Copper ppm
 
-      ``Cr``
-         Chromium ppm
+``Li``
+   Lithium ppm
 
-      ``Cu``
-         Copper ppm
+``Ni``
+   Nickel ppm
 
-      ``Li``
-         Lithium ppm
+``Sr``
+   Strontium ppm
 
-      ``Ni``
-         Nickel ppm
+``V``
+   Vanadium ppm
 
-      ``Sr``
-         Strontium ppm
+``Y``
+   Yttrium ppm
 
-      ``V``
-         Vanadium ppm
+``Zn``
+   Zinc ppm
 
-      ``Y``
-         Yttrium ppm
+``Zr``
+   Zirconium ppm
 
-      ``Zn``
-         Zinc ppm
+Details
+~~~~~~~
 
-      ``Zr``
-         Zirconium ppm
+The concentrations for 11 trace elements in 105 Romano-British waste
+glass specimens from two furnace sites (Leicester and Mancetter) come
+from Caroline Jackson's Ph. D. thesis at Bradford University. The data
+here were scanned from from Baxter (1994) Table A2. Measurements are
+parts per million (ppm) for each of 11 elements.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The concentrations for 11 trace elements in 105 Romano-British
-      waste glass specimens from two furnace sites (Leicester and
-      Mancetter) come from Caroline Jackson's Ph. D. thesis at Bradford
-      University. The data here were scanned from from Baxter (1994)
-      Table A2. Measurements are parts per million (ppm) for each of 11
-      elements.
+Baxter, M. J. 1994. *Exploratory Multivariate Analysis in Archaeology*.
+Edinburgh University Press.
 
-      .. rubric:: Source
-         :name: source
+Jackson, C. M. 1992. A Compositional Analysis of Roman and Early
+Post-Roman Glass and Glass Working Waste from Selected British Sites
+Towards an Understanding of the Technology of Glass-Making Through
+Analysis by Inductively-Coupled Plasma Spectrometry. Unpublished PhD
+thesis. Bradford University (BL: D214554).
 
-      Baxter, M. J. 1994. *Exploratory Multivariate Analysis in
-      Archaeology*. Edinburgh University Press.
+References
+~~~~~~~~~~
 
-      Jackson, C. M. 1992. A Compositional Analysis of Roman and Early
-      Post-Roman Glass and Glass Working Waste from Selected British
-      Sites Towards an Understanding of the Technology of Glass-Making
-      Through Analysis by Inductively-Coupled Plasma Spectrometry.
-      Unpublished PhD thesis. Bradford University (BL: D214554).
+Baxter, M. J., Cool H.E.M., Heyworth M.P. and Jackson, C.M. 1995.
+Compositional Variability in Colourless Roman Vessel Glass.
+*Archaeometry* 37(1), 129-141.
 
-      .. rubric:: References
-         :name: references
+Baxter, M. J., Cool, H. E. M. and Jackson, C. M. (2005). Further Studies
+in the Compositional Variability of Colourless Romano-British Glass.
+*Archaeometry* 47, 47-68.
 
-      Baxter, M. J., Cool H.E.M., Heyworth M.P. and Jackson, C.M. 1995.
-      Compositional Variability in Colourless Roman Vessel Glass.
-      *Archaeometry* 37(1), 129-141.
+Jackson, C M, J R Hunter, S E Warren, and H E M Cool. 1991. The Analysis
+of Blue-Green Glass and Glassy Waste from Two Romano-British Glass
+Working Sites. In *Archaeometry 1990*, edited by E. Pernicka and G. A.
+Wagner, pp 295-304. Birkhäuser Verlag.
 
-      Baxter, M. J., Cool, H. E. M. and Jackson, C. M. (2005). Further
-      Studies in the Compositional Variability of Colourless
-      Romano-British Glass. *Archaeometry* 47, 47-68.
+Examples
+~~~~~~~~
 
-      Jackson, C M, J R Hunter, S E Warren, and H E M Cool. 1991. The
-      Analysis of Blue-Green Glass and Glassy Waste from Two
-      Romano-British Glass Working Sites. In *Archaeometry 1990*, edited
-      by E. Pernicka and G. A. Wagner, pp 295-304. Birkhäuser Verlag.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(RBGlass2)
-         RBGlass2.pca <- prcomp(RBGlass2[, -1], scale.=TRUE)
-         biplot(RBGlass2.pca, xlabs=abbreviate(RBGlass2$Site, 1), cex=.75)
+   data(RBGlass2)
+   RBGlass2.pca <- prcomp(RBGlass2[, -1], scale.=TRUE)
+   biplot(RBGlass2.pca, xlabs=abbreviate(RBGlass2$Site, 1), cex=.75)

@@ -1,50 +1,45 @@
-.. container::
+============ ===============
+nsw_offences R Documentation
+============ ===============
 
-   .. container::
+Monthly offences in NSW
+-----------------------
 
-      ============ ===============
-      nsw_offences R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Monthly offences in NSW
-         :name: monthly-offences-in-nsw
+``nsw_offences`` contains monthly data with one measured variable:
 
-      .. rubric:: Description
-         :name: description
+====== ===========================
+Count: Number of offences reported
+       
+====== ===========================
 
-      ``nsw_offences`` contains monthly data with one measured variable:
+Format
+~~~~~~
 
-      ====== ===========================
-      Count: Number of offences reported
-      \      
-      ====== ===========================
+Time series of class 'tsibble'
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      Time series of class 'tsibble'
+Each series is uniquely identified using one key:
 
-      .. rubric:: Details
-         :name: details
+===== ============
+Type: Offence type
+      
+===== ============
 
-      Each series is uniquely identified using one key:
+covering the period from Apr 1995–Dec 2023.
 
-      ===== ============
-      Type: Offence type
-      \     
-      ===== ============
+Source
+~~~~~~
 
-      covering the period from Apr 1995–Dec 2023.
+NSW Bureau of Crime Statistics and Research. https://bocsar.nsw.gov.au/
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      NSW Bureau of Crime Statistics and Research.
-      https://bocsar.nsw.gov.au/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         nsw_offences
+   nsw_offences

@@ -1,110 +1,105 @@
-.. container::
+============= ===============
+SingaporeAuto R Documentation
+============= ===============
 
-   .. container::
+Singapore Automobile Claims
+---------------------------
 
-      ============= ===============
-      SingaporeAuto R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Singapore Automobile Claims
-         :name: singapore-automobile-claims
+The data is from the General Insurance Association of Singapore, an
+organization consisting of general (property and casualty) insurers in
+Singapore (see the organization's website: www.gia.org.sg). From this
+database, several characteristics are available to explain automobile
+accident frequency. These characteristics include vehicle variables,
+such as type and age, as well as person level variables, such as age,
+gender and prior driving experience.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The data is from the General Insurance Association of Singapore,
-      an organization consisting of general (property and casualty)
-      insurers in Singapore (see the organization's website:
-      www.gia.org.sg). From this database, several characteristics are
-      available to explain automobile accident frequency. These
-      characteristics include vehicle variables, such as type and age,
-      as well as person level variables, such as age, gender and prior
-      driving experience.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(SingaporeAuto)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(SingaporeAuto)
+A data frame with 7483 observations on the following 15 variables.
 
-      .. rubric:: Format
-         :name: format
+``SexInsured``
+   a factor with levels ``F`` ``M`` ``U``
 
-      A data frame with 7483 observations on the following 15 variables.
+``Female``
+   a numeric vector
 
-      ``SexInsured``
-         a factor with levels ``F`` ``M`` ``U``
+``VehicleType``
+   a factor with levels ``A`` ``G`` ``M`` ``P`` ``Q`` ``S`` ``T`` ``W``
+   ``Z``
 
-      ``Female``
-         a numeric vector
+``PC``
+   a numeric vector
 
-      ``VehicleType``
-         a factor with levels ``A`` ``G`` ``M`` ``P`` ``Q`` ``S`` ``T``
-         ``W`` ``Z``
+``Clm_Count``
+   a numeric vector
 
-      ``PC``
-         a numeric vector
+``Exp_weights``
+   a numeric vector
 
-      ``Clm_Count``
-         a numeric vector
+``LNWEIGHT``
+   a numeric vector
 
-      ``Exp_weights``
-         a numeric vector
+``NCD``
+   a numeric vector
 
-      ``LNWEIGHT``
-         a numeric vector
+``AgeCat``
+   a numeric vector
 
-      ``NCD``
-         a numeric vector
+``AutoAge0``
+   a numeric vector
 
-      ``AgeCat``
-         a numeric vector
+``AutoAge1``
+   a numeric vector
 
-      ``AutoAge0``
-         a numeric vector
+``AutoAge2``
+   a numeric vector
 
-      ``AutoAge1``
-         a numeric vector
+``AutoAge``
+   a numeric vector
 
-      ``AutoAge2``
-         a numeric vector
+``VAgeCat``
+   a numeric vector
 
-      ``AutoAge``
-         a numeric vector
+``VAgecat1``
+   a numeric vector
 
-      ``VAgeCat``
-         a numeric vector
+Details
+~~~~~~~
 
-      ``VAgecat1``
-         a numeric vector
+http://instruction.bus.wisc.edu/jfrees/jfreesbooks/Regression%20Modeling/BookWebDec2010/
 
-      .. rubric:: Details
-         :name: details
+DataDescriptions.pdf
 
-      http://instruction.bus.wisc.edu/jfrees/jfreesbooks/Regression%20Modeling/BookWebDec2010/
+Source
+~~~~~~
 
-      DataDescriptions.pdf
+http://instruction.bus.wisc.edu/jfrees/jfreesbooks/Regression%20Modeling/BookWebDec2010/data.html
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      http://instruction.bus.wisc.edu/jfrees/jfreesbooks/Regression%20Modeling/BookWebDec2010/data.html
+Frees E.W., Valdez E.A. (2008), Hierarchical insurance claims modeling,
+,,Journal of the American Statistical Association", 103(484), p.
+1457-1469.
 
-      .. rubric:: References
-         :name: references
+Frees E.W. (2010), Regression Modeling with Actuarial and Financial
+Applications, Cambridge University Press.
 
-      Frees E.W., Valdez E.A. (2008), Hierarchical insurance claims
-      modeling, ,,Journal of the American Statistical Association",
-      103(484), p. 1457-1469.
+Examples
+~~~~~~~~
 
-      Frees E.W. (2010), Regression Modeling with Actuarial and
-      Financial Applications, Cambridge University Press.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(SingaporeAuto)
-         ## maybe str(SingaporeAuto) ; plot(SingaporeAuto) ...
+   data(SingaporeAuto)
+   ## maybe str(SingaporeAuto) ; plot(SingaporeAuto) ...

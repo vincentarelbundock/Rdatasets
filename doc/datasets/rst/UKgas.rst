@@ -1,41 +1,37 @@
-.. container::
+===== ===============
+UKgas R Documentation
+===== ===============
 
-   .. container::
+UK Quarterly Gas Consumption
+----------------------------
 
-      ===== ===============
-      UKgas R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: UK Quarterly Gas Consumption
-         :name: uk-quarterly-gas-consumption
+Quarterly UK gas consumption from 1960Q1 to 1986Q4, in millions of
+therms.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Quarterly UK gas consumption from 1960Q1 to 1986Q4, in millions of
-      therms.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   UKgas
 
-      .. code:: R
+Format
+~~~~~~
 
-         UKgas
+A quarterly time series of length 108.
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      A quarterly time series of length 108.
+Durbin, J. and Koopman, S. J. (2001). *Time Series Analysis by State
+Space Methods*. Oxford University Press.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Durbin, J. and Koopman, S. J. (2001). *Time Series Analysis by
-      State Space Methods*. Oxford University Press.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         ## maybe str(UKgas) ; plot(UKgas) ...
+   ## maybe str(UKgas) ; plot(UKgas) ...

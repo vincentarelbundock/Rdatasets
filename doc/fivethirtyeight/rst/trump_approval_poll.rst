@@ -1,113 +1,109 @@
-.. container::
+=================== ===============
+trump_approval_poll R Documentation
+=================== ===============
 
-   .. container::
+How Popular is Donald Trump
+---------------------------
 
-      =================== ===============
-      trump_approval_poll R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: How Popular is Donald Trump
-         :name: how-popular-is-donald-trump
+The raw data behind the story: "How Popular is Donald Trump"
+https://projects.fivethirtyeight.com/trump-approval-ratings/: Approval
+Poll Dataset
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story: "How Popular is Donald Trump"
-      https://projects.fivethirtyeight.com/trump-approval-ratings/:
-      Approval Poll Dataset
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   trump_approval_poll
 
-      .. code:: R
+Format
+~~~~~~
 
-         trump_approval_poll
+A data frame with 3051 rows representing individual polls and 20
+variables:
 
-      .. rubric:: Format
-         :name: format
+subgroup
+   The subgroup the poll falls into as defined by the type of people
+   being polled (all polls, voters, adults)
 
-      A data frame with 3051 rows representing individual polls and 20
-      variables:
+start_date
+   The date the polling began
 
-      subgroup
-         The subgroup the poll falls into as defined by the type of
-         people being polled (all polls, voters, adults)
+end_date
+   The date the polling concluded
 
-      start_date
-         The date the polling began
+pollster
+   The polling group which produced the poll
 
-      end_date
-         The date the polling concluded
+grade
+   The grade for President Trump that the respondents' approval ratings
+   correspond to
 
-      pollster
-         The polling group which produced the poll
+sample_size
+   The sample size of the poll
 
-      grade
-         The grade for President Trump that the respondents' approval
-         ratings correspond to
+population
+   The type of people being polled (a for adults, lv for likely voters,
+   rv for registered voters)
 
-      sample_size
-         The sample size of the poll
+weight
+   The weight fivethirtyeight gives the poll when determining approval
+   ratings based on historical accuracy of the pollster
 
-      population
-         The type of people being polled (a for adults, lv for likely
-         voters, rv for registered voters)
+approve
+   The percentage of respondents who approve of the president
 
-      weight
-         The weight fivethirtyeight gives the poll when determining
-         approval ratings based on historical accuracy of the pollster
+disapprove
+   The percentage of respondents who disapprove of the president
 
-      approve
-         The percentage of respondents who approve of the president
+adjusted_approve
+   The percentage of respondents who approve of the president adjusted
+   for systematic tendencies of the polling firm
 
-      disapprove
-         The percentage of respondents who disapprove of the president
+adjusted_disapprove
+   The percentage of respondents who approve of the president adjusted
+   for systematic tendencies of the polling firm
 
-      adjusted_approve
-         The percentage of respondents who approve of the president
-         adjusted for systematic tendencies of the polling firm
+multiversions
+   True if there are multiple versions of the poll, False if there are
+   not
 
-      adjusted_disapprove
-         The percentage of respondents who approve of the president
-         adjusted for systematic tendencies of the polling firm
+tracking
+   TRUE if the poll was tracked, FALSE if not
 
-      multiversions
-         True if there are multiple versions of the poll, False if there
-         are not
+url
+   Poll result URL
 
-      tracking
-         TRUE if the poll was tracked, FALSE if not
+poll_id
+   Poll ID number
 
-      url
-         Poll result URL
+question_id
+   ID number for the question being polled
 
-      poll_id
-         Poll ID number
+created_date
+   Date the poll was created
 
-      question_id
-         ID number for the question being polled
+timestamp
+   Date and time the poll was compiled
 
-      created_date
-         Date the poll was created
+Details
+~~~~~~~
 
-      timestamp
-         Date and time the poll was compiled
+Variables "model_date", "influence", and "president" were deleted
+because each observation contained the same value for these variables:
+January 5, 2018; 0; and Donald Trump respectively.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      Variables "model_date", "influence", and "president" were deleted
-      because each observation contained the same value for these
-      variables: January 5, 2018; 0; and Donald Trump respectively.
+https://projects.fivethirtyeight.com/trump-approval-data/approval_polllist.csv
+and
+https://projects.fivethirtyeight.com/trump-approval-data/approval_topline.csv
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      https://projects.fivethirtyeight.com/trump-approval-data/approval_polllist.csv
-      and
-      https://projects.fivethirtyeight.com/trump-approval-data/approval_topline.csv
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``trump_approval_trend``
+``trump_approval_trend``

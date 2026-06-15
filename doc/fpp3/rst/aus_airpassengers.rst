@@ -1,34 +1,31 @@
-.. container::
+================= ===============
+aus_airpassengers R Documentation
+================= ===============
 
-   .. container::
+Air Transport Passengers Australia
+----------------------------------
 
-      ================= ===============
-      aus_airpassengers R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Air Transport Passengers Australia
-         :name: air-transport-passengers-australia
+Total annual air passengers (in millions) including domestic and
+international aircraft passengers of air carriers registered in
+Australia. 1970-2016.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Total annual air passengers (in millions) including domestic and
-      international aircraft passengers of air carriers registered in
-      Australia. 1970-2016.
+Annual time series of class 'tsibble'.
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      Annual time series of class 'tsibble'.
+World Bank.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      World Bank.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         aus_airpassengers
+   aus_airpassengers

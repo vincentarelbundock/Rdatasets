@@ -1,72 +1,65 @@
-.. container::
+========= ===============
+infert_df R Documentation
+========= ===============
 
-   .. container::
+Infertility after Spontaneous and Induced Abortion
+--------------------------------------------------
 
-      ========= ===============
-      infert_df R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Infertility after Spontaneous and Induced Abortion
-         :name: infertility-after-spontaneous-and-induced-abortion
+The dataset name has been changed to 'infert_df' to avoid confusion with
+other datasets from packages in the R ecosystem and to follow the naming
+conventions of the 'MedDataSets' package. The suffix '\_df' indicates
+that this dataset is a data frame, helping to distinguish it from other
+datasets within the package and from those in the broader R ecosystem.
+The original content of the dataset has not been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'infert_df' to avoid
-      confusion with other datasets from packages in the R ecosystem and
-      to follow the naming conventions of the 'MedDataSets' package. The
-      suffix '\_df' indicates that this dataset is a data frame, helping
-      to distinguish it from other datasets within the package and from
-      those in the broader R ecosystem. The original content of the
-      dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(infert_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(infert_df)
+A data frame with 248 observations and 8 variables:
 
-      .. rubric:: Format
-         :name: format
+education
+   A factor representing the education level of the subjects, with 3
+   levels.
 
-      A data frame with 248 observations and 8 variables:
+age
+   A numeric vector indicating the age of the subjects.
 
-      education
-         A factor representing the education level of the subjects, with
-         3 levels.
+parity
+   A numeric vector representing the number of previous pregnancies.
 
-      age
-         A numeric vector indicating the age of the subjects.
+induced
+   A numeric vector indicating the number of induced abortions.
 
-      parity
-         A numeric vector representing the number of previous
-         pregnancies.
+case
+   A numeric vector indicating the case status (infertile or not).
 
-      induced
-         A numeric vector indicating the number of induced abortions.
+spontaneous
+   A numeric vector indicating the number of spontaneous abortions.
 
-      case
-         A numeric vector indicating the case status (infertile or not).
+stratum
+   An integer representing the stratum in the study.
 
-      spontaneous
-         A numeric vector indicating the number of spontaneous
-         abortions.
+pooled.stratum
+   A numeric vector representing the pooled stratum values.
 
-      stratum
-         An integer representing the stratum in the study.
+Details
+~~~~~~~
 
-      pooled.stratum
-         A numeric vector representing the pooled stratum values.
+This dataset examines the relationship between various factors such as
+education level, age, parity, and the incidence of infertility after
+spontaneous and induced abortion.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset examines the relationship between various factors
-      such as education level, age, parity, and the incidence of
-      infertility after spontaneous and induced abortion.
-
-      .. rubric:: Source
-         :name: source
-
-      Data collected from clinical studies on infertility.
+Data collected from clinical studies on infertility.

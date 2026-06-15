@@ -1,76 +1,69 @@
-.. container::
+=================== ===============
+betablockers_matrix R Documentation
+=================== ===============
 
-   .. container::
+FDA Beta Blockers Adverse Events
+--------------------------------
 
-      =================== ===============
-      betablockers_matrix R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: FDA Beta Blockers Adverse Events
-         :name: fda-beta-blockers-adverse-events
+This dataset, betablockers_matrix, is a matrix containing adverse event
+reports from the FDA Adverse Event Reporting System (FAERS) for 9 beta
+blockers from Q1 2021 to Q4 2023. The matrix includes 501 adverse events
+(rows) across 9 medications (columns).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, betablockers_matrix, is a matrix containing adverse
-      event reports from the FDA Adverse Event Reporting System (FAERS)
-      for 9 beta blockers from Q1 2021 to Q4 2023. The matrix includes
-      501 adverse events (rows) across 9 medications (columns).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(betablockers_matrix)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(betablockers_matrix)
+A matrix with 501 rows (adverse events) and 9 columns (beta blockers):
 
-      .. rubric:: Format
-         :name: format
+Acebutolol
+   Adverse event counts for Acebutolol (integer)
 
-      A matrix with 501 rows (adverse events) and 9 columns (beta
-      blockers):
+Atenolol
+   Adverse event counts for Atenolol (integer)
 
-      Acebutolol
-         Adverse event counts for Acebutolol (integer)
+Bisoprolol
+   Adverse event counts for Bisoprolol (integer)
 
-      Atenolol
-         Adverse event counts for Atenolol (integer)
+Carvedilol
+   Adverse event counts for Carvedilol (integer)
 
-      Bisoprolol
-         Adverse event counts for Bisoprolol (integer)
+Metoprolol
+   Adverse event counts for Metoprolol (integer)
 
-      Carvedilol
-         Adverse event counts for Carvedilol (integer)
+Nadolol
+   Adverse event counts for Nadolol (integer)
 
-      Metoprolol
-         Adverse event counts for Metoprolol (integer)
+Propranolol
+   Adverse event counts for Propranolol (integer)
 
-      Nadolol
-         Adverse event counts for Nadolol (integer)
+Timolol
+   Adverse event counts for Timolol (integer)
 
-      Propranolol
-         Adverse event counts for Propranolol (integer)
+Other
+   Adverse event counts for other beta blockers (integer)
 
-      Timolol
-         Adverse event counts for Timolol (integer)
+Details
+~~~~~~~
 
-      Other
-         Adverse event counts for other beta blockers (integer)
+The dataset name has been kept as 'betablockers_matrix' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the CardioDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'matrix' indicates that the dataset is a matrix object. The original
+content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'betablockers_matrix' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      CardioDataSets package and assists users in identifying its
-      specific characteristics. The suffix 'matrix' indicates that the
-      dataset is a matrix object. The original content has not been
-      modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the MDDC package version 1.1.0. Original data: FDA
-      Adverse Event Reporting System (FAERS) database, Q1 2021 to Q4
-      2023.
+Data taken from the MDDC package version 1.1.0. Original data: FDA
+Adverse Event Reporting System (FAERS) database, Q1 2021 to Q4 2023.

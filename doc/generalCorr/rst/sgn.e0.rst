@@ -1,22 +1,18 @@
-.. container::
+====== ===============
+sgn.e0 R Documentation
+====== ===============
 
-   .. container::
+internal sgn.e0
+---------------
 
-      ====== ===============
-      sgn.e0 R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: internal sgn.e0
-         :name: internal-sgn.e0
+intended for internal use only
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      intended for internal use only
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
-
-      .. code:: R
-
-         sgn.e0
+   sgn.e0

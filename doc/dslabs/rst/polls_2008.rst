@@ -1,50 +1,44 @@
-.. container::
+========== ===============
+polls_2008 R Documentation
+========== ===============
 
-   .. container::
+Poll data for popular vote in 2008 presidential election
+--------------------------------------------------------
 
-      ========== ===============
-      polls_2008 R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Poll data for popular vote in 2008 presidential
-         election
-         :name: poll-data-for-popular-vote-in-2008-presidential-election
+Data from different pollsters for the popular vote between Obama and
+McCain in the 2008 presidential election.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data from different pollsters for the popular vote between Obama
-      and McCain in the 2008 presidential election.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   polls_2008
 
-      .. code:: R
+Format
+~~~~~~
 
-         polls_2008
+An object of class ``data.frame``.
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      An object of class ``data.frame``.
+- day. Days until election day. Negative numbers are reported so that
+  days can increase up to 0, which is election day.
 
-      .. rubric:: Details
-         :name: details
+- margin. Average difference between Obama and McCain for that day.
 
-      -  day. Days until election day. Negative numbers are reported so
-         that days can increase up to 0, which is election day.
+Source
+~~~~~~
 
-      -  margin. Average difference between Obama and McCain for that
-         day.
+https://web.archive.org/web/20161108190914/http://www.pollster.com/08USPresGEMvO-2.html
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      https://web.archive.org/web/20161108190914/http://www.pollster.com/08USPresGEMvO-2.html
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         with(polls_2008, plot(day, margin))
+   with(polls_2008, plot(day, margin))

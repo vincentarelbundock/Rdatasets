@@ -1,79 +1,74 @@
-.. container::
+========== ===============
+vegetation R Documentation
+========== ===============
 
-   .. container::
+``\delta^{13}C`` Values for Vegetation
+--------------------------------------
 
-      ========== ===============
-      vegetation R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: ``\delta^{13}C`` Values for Vegetation
-         :name: delta13c-values-for-vegetation
+``\delta^{13}C`` Values for Vegetation
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      ``\delta^{13}C`` Values for Vegetation
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   vegetation
 
-      .. code:: R
+Format
+~~~~~~
 
-         vegetation
+A ``data.frame`` with 155 observations and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+family
+   ``character``: plant family.
 
-      A ``data.frame`` with 155 observations and 5 variables:
+species
+   ``character``: plant species.
 
-      family
-         ``character``: plant family.
+type
+   ``character``: C3 or C4 plant.
 
-      species
-         ``character``: plant species.
+delta
+   ``numeric``: isotopic ratio ``\delta^{13}C`` (per mil).
 
-      type
-         ``character``: C3 or C4 plant.
+country
+   ``character``: country.
 
-      delta
-         ``numeric``: isotopic ratio ``\delta^{13}C`` (per mil).
+Source
+~~~~~~
 
-      country
-         ``character``: country.
+Cerling, T. E. and Harris, J. M. (1999). Carbon isotope fractionation
+between diet and bioapatite in ungulate mammals and implications for
+ecological and paleoecological studies. *Oecologia*, 120, 347-363.
+`doi:10.1007/s004420050868 <https://doi.org/10.1007/s004420050868>`__
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      Cerling, T. E. and Harris, J. M. (1999). Carbon isotope
-      fractionation between diet and bioapatite in ungulate mammals and
-      implications for ecological and paleoecological studies.
-      *Oecologia*, 120, 347-363.
-      `doi:10.1007/s004420050868 <https://doi.org/10.1007/s004420050868>`__
+Other isotopic data: ``lisiecki2005``, ``ngrip2004``, ``ngrip2010``,
+``nydal1996``, ``spratt2016``
 
-      .. rubric:: See Also
-         :name: see-also
+Examples
+~~~~~~~~
 
-      Other isotopic data: ``lisiecki2005``, ``ngrip2004``,
-      ``ngrip2010``, ``nydal1996``, ``spratt2016``
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   hist(
+     x = vegetation$delta,
+     breaks = 20,
+     main = "C3 and C4 plants",
+     xlab = expression(delta^{13}*"C"),
+     xlim = c(-40, 0)
+    )
 
-      .. code:: R
-
-         hist(
-           x = vegetation$delta,
-           breaks = 20,
-           main = "C3 and C4 plants",
-           xlab = expression(delta^{13}*"C"),
-           xlim = c(-40, 0)
-          )
-
-         boxplot(
-           delta ~ type,
-           data = vegetation,
-           horizontal = TRUE,
-           xlab = expression(delta^{13}*"C"),
-           ylab = "Plant",
-           ylim = c(-40, 0)
-         )
+   boxplot(
+     delta ~ type,
+     data = vegetation,
+     horizontal = TRUE,
+     xlab = expression(delta^{13}*"C"),
+     ylab = "Plant",
+     ylim = c(-40, 0)
+   )

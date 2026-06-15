@@ -1,61 +1,56 @@
-.. container::
+======== ===============
+esoph_df R Documentation
+======== ===============
 
-   .. container::
+Smoking, Alcohol and (O)esophageal Cancer
+-----------------------------------------
 
-      ======== ===============
-      esoph_df R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Smoking, Alcohol and (O)esophageal Cancer
-         :name: smoking-alcohol-and-oesophageal-cancer
+The dataset name has been changed to 'esoph_df' to avoid confusion with
+datasets from other packages in the R ecosystem and to follow the naming
+conventions of the 'MedDataSets' package. The suffix '\_df' indicates
+that this dataset is a data frame, helping to distinguish it from other
+datasets within the package and from those in the broader R ecosystem.
+The original content of the dataset has not been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'esoph_df' to avoid confusion
-      with datasets from other packages in the R ecosystem and to follow
-      the naming conventions of the 'MedDataSets' package. The suffix
-      '\_df' indicates that this dataset is a data frame, helping to
-      distinguish it from other datasets within the package and from
-      those in the broader R ecosystem. The original content of the
-      dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(esoph_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(esoph_df)
+A data frame with 88 observations and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+agegp
+   Age group of the individuals (ordered factor).
 
-      A data frame with 88 observations and 5 variables:
+alcgp
+   Alcohol consumption group (ordered factor).
 
-      agegp
-         Age group of the individuals (ordered factor).
+tobgp
+   Tobacco consumption group (ordered factor).
 
-      alcgp
-         Alcohol consumption group (ordered factor).
+ncases
+   Number of cases (numeric).
 
-      tobgp
-         Tobacco consumption group (ordered factor).
+ncontrols
+   Number of controls (numeric).
 
-      ncases
-         Number of cases (numeric).
+Details
+~~~~~~~
 
-      ncontrols
-         Number of controls (numeric).
+This dataset contains data from a case-control study investigating the
+association between smoking, alcohol consumption, and esophageal cancer.
+It includes the number of cancer cases and controls for various age,
+alcohol consumption, and smoking groups.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains data from a case-control study investigating
-      the association between smoking, alcohol consumption, and
-      esophageal cancer. It includes the number of cancer cases and
-      controls for various age, alcohol consumption, and smoking groups.
-
-      .. rubric:: Source
-         :name: source
-
-      Data from a case-control study on esophageal cancer.
+Data from a case-control study on esophageal cancer.

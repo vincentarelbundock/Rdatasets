@@ -1,97 +1,87 @@
-.. container::
+======== ===============
+AirCrash R Documentation
+======== ===============
 
-   .. container::
+Air Crash Data
+--------------
 
-      ======== ===============
-      AirCrash R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Air Crash Data
-         :name: air-crash-data
+Data on all fatal commercial airplane crashes from 1993–2015. Excludes
+small planes (less than 6 passengers) and non-commercial (cargo,
+military, private) aircraft.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Data on all fatal commercial airplane crashes from 1993–2015.
-      Excludes small planes (less than 6 passengers) and non-commercial
-      (cargo, military, private) aircraft.
+A data frame with 439 observations on the following 5 variables.
 
-      .. rubric:: Usage
-         :name: usage
+``Phase``
+   phase of the flight, a factor with levels ``⁠en route⁠`` ``landing``
+   ``standing`` ``take-off`` ``unknown``
 
-      .. code:: R
+``Cause``
+   a factor with levels ``criminal`` ``⁠human error⁠`` ``mechanical``
+   ``unknown`` ``weather``
 
-         data("AirCrash")
+``date``
+   date of crash, a Date
 
-      .. rubric:: Format
-         :name: format
+``Fatalities``
+   number of fatalities, a numeric vector
 
-      A data frame with 439 observations on the following 5 variables.
+``Year``
+   year, a numeric vector
 
-      ``Phase``
-         phase of the flight, a factor with levels ``en route``
-         ``landing`` ``standing`` ``take-off`` ``unknown``
+Details
+~~~~~~~
 
-      ``Cause``
-         a factor with levels ``criminal`` ``human error``
-         ``mechanical`` ``unknown`` ``weather``
+``Phase`` of the flight was cleaned by combining related variants,
+spelling, etc.
 
-      ``date``
-         date of crash, a Date
+Source
+~~~~~~
 
-      ``Fatalities``
-         number of fatalities, a numeric vector
+Originally from David McCandless,
+https://web.archive.org/web/2024/https://informationisbeautiful.net/visualizations/plane-truth-every-single-commercial-plane-crash-visualized/,
+with the data at
+https://docs.google.com/spreadsheets/d/1OvDq4_BtbR6nSnnHnjD5hVC3HQ-ulZPGbo0RDGbzM3Q/edit?usp=drive_web,
+downloaded April 14, 2015.
 
-      ``Year``
-         year, a numeric vector
+References
+~~~~~~~~~~
 
-      .. rubric:: Details
-         :name: details
+Rick Wicklin,
+http://blogs.sas.com/content/iml/2015/03/30/visualizing-airline-crashes.html
 
-      ``Phase`` of the flight was cleaned by combining related variants,
-      spelling, etc.
+Examples
+~~~~~~~~
 
-      .. rubric:: Source
-         :name: source
-
-      Originally from David McCandless,
-      https://informationisbeautiful.net/visualizations/plane-truth-every-single-commercial-plane-crash-visualized/,
-      with the data at
-      https://docs.google.com/spreadsheets/d/1OvDq4_BtbR6nSnnHnjD5hVC3HQ-ulZPGbo0RDGbzM3Q/edit?usp=drive_web,
-      downloaded April 14, 2015.
-
-      .. rubric:: References
-         :name: references
-
-      Rick Wicklin,
-      http://blogs.sas.com/content/iml/2015/03/30/visualizing-airline-crashes.html
-
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(AirCrash)
-         aircrash.tab <- xtabs(~Phase + Cause, data=AirCrash)
-         mosaic(aircrash.tab, shade=TRUE)
-
-         # fix label overlap
-         mosaic(aircrash.tab, shade=TRUE,
-                labeling_args=list(rot_labels=c(30, 30, 30, 30)))
-
-         # reorder by Phase
-         phase.ord <- rev(c(3,4,1,2,5))
-         mosaic(aircrash.tab[phase.ord,], shade=TRUE,
-                labeling_args=list(rot_labels=c(30, 30, 30, 30)),
-                offset_varnames=0.5)
-
-         # reorder by frequency
-         phase.ord <- order(rowSums(aircrash.tab), decreasing=TRUE)
-         cause.ord <- order(colSums(aircrash.tab), decreasing=TRUE)
-         mosaic(aircrash.tab[phase.ord,cause.ord], shade=TRUE,
-                labeling_args=list(rot_labels=c(30, 30, 30, 30)))
+.. code:: R
 
 
-         library(ca)
-         aircrash.ca <- ca(aircrash.tab)
-         plot(aircrash.ca)
+   data(AirCrash)
+   aircrash.tab <- xtabs(~Phase + Cause, data=AirCrash)
+   mosaic(aircrash.tab, shade=TRUE)
+
+   # fix label overlap
+   mosaic(aircrash.tab, shade=TRUE,
+          labeling_args=list(rot_labels=c(30, 30, 30, 30)))
+
+   # reorder by Phase
+   phase.ord <- rev(c(3,4,1,2,5))
+   mosaic(aircrash.tab[phase.ord,], shade=TRUE,
+          labeling_args=list(rot_labels=c(30, 30, 30, 30)),
+          offset_varnames=0.5)
+
+   # reorder by frequency
+   phase.ord <- order(rowSums(aircrash.tab), decreasing=TRUE)
+   cause.ord <- order(colSums(aircrash.tab), decreasing=TRUE)
+   mosaic(aircrash.tab[phase.ord,cause.ord], shade=TRUE,
+          labeling_args=list(rot_labels=c(30, 30, 30, 30)))
+
+
+   library(ca)
+   aircrash.ca <- ca(aircrash.tab)
+   plot(aircrash.ca)

@@ -1,153 +1,149 @@
-.. container::
+======================= ===============
+nfl_fandom_surveymonkey R Documentation
+======================= ===============
 
-   .. container::
+How Every NFL Team’s Fans Lean Politically
+------------------------------------------
 
-      ======================= ===============
-      nfl_fandom_surveymonkey R Documentation
-      ======================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: How Every NFL Team’s Fans Lean Politically
-         :name: how-every-nfl-teams-fans-lean-politically
+The raw data behind the story "How Every NFL Team’s Fans Lean
+Politically"
+https://fivethirtyeight.com/features/how-every-nfl-teams-fans-lean-politically/:
+SurveyMonkey Data.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "How Every NFL Team’s Fans Lean
-      Politically"
-      https://fivethirtyeight.com/features/how-every-nfl-teams-fans-lean-politically/:
-      SurveyMonkey Data.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   nfl_fandom_surveymonkey
 
-      .. code:: R
+Format
+~~~~~~
 
-         nfl_fandom_surveymonkey
+a data frame with 33 rows representing teams and 25 variables:
 
-      .. rubric:: Format
-         :name: format
+team
+   NFL team
 
-      a data frame with 33 rows representing teams and 25 variables:
+total_respondents
+   Total number of poll respondents who ranked the given team in their
+   top 3 favorites
 
-      team
-         NFL team
+asian_dem
+   Number of Asian, democrat poll respondents who ranked the given team
+   in their top 3 favorites
 
-      total_respondents
-         Total number of poll respondents who ranked the given team in
-         their top 3 favorites
+black_dem
+   Number of Black, democrat poll respondents who ranked the given team
+   in their top 3 favorites
 
-      asian_dem
-         Number of Asian, democrat poll respondents who ranked the given
-         team in their top 3 favorites
+hispanic_dem
+   Number of Hispanic, democrat poll respondents who ranked the given
+   team in their top 3 favorites
 
-      black_dem
-         Number of Black, democrat poll respondents who ranked the given
-         team in their top 3 favorites
+other_dem
+   Number of democrat poll respondents who identified their race as
+   "other" (not Asian, Black, Hispanic, or White) and ranked the given
+   team in their top 3 favorites
 
-      hispanic_dem
-         Number of Hispanic, democrat poll respondents who ranked the
-         given team in their top 3 favorites
+white_dem
+   Number of White, democrat poll respondents who ranked the given team
+   in their top 3 favorites
 
-      other_dem
-         Number of democrat poll respondents who identified their race
-         as "other" (not Asian, Black, Hispanic, or White) and ranked
-         the given team in their top 3 favorites
+total_dem
+   Total number of democrat poll respondents who ranked the given team
+   in their top 3 favorites
 
-      white_dem
-         Number of White, democrat poll respondents who ranked the given
-         team in their top 3 favorites
+asian_ind
+   Number of Asian, independent poll respondents who ranked the given
+   team in their top 3 favorites
 
-      total_dem
-         Total number of democrat poll respondents who ranked the given
-         team in their top 3 favorites
+black_ind
+   Number of Black, independent poll respondents who ranked the given
+   team in their top 3 favorites
 
-      asian_ind
-         Number of Asian, independent poll respondents who ranked the
-         given team in their top 3 favorites
+hispanic_ind
+   Number of Hispanic, independent poll respondents who ranked the given
+   team in their top 3 favorites
 
-      black_ind
-         Number of Black, independent poll respondents who ranked the
-         given team in their top 3 favorites
+other_ind
+   Number of independent poll respondents who identified their race as
+   "other" (not Asian, Black, Hispanic, or White) and ranked the given
+   team in their top 3 favorites
 
-      hispanic_ind
-         Number of Hispanic, independent poll respondents who ranked the
-         given team in their top 3 favorites
+white_ind
+   Number of White, independent poll respondents who ranked the given
+   team in their top 3 favorites
 
-      other_ind
-         Number of independent poll respondents who identified their
-         race as "other" (not Asian, Black, Hispanic, or White) and
-         ranked the given team in their top 3 favorites
+total_ind
+   Total number of independent poll respondents who ranked the given
+   team in their top 3 favorites
 
-      white_ind
-         Number of White, independent poll respondents who ranked the
-         given team in their top 3 favorites
+asian_gop
+   Number of Asian, republican poll respondents who ranked the given
+   team in their top 3 favorites
 
-      total_ind
-         Total number of independent poll respondents who ranked the
-         given team in their top 3 favorites
+black_gop
+   Number of Black, republican poll respondents who ranked the given
+   team in their top 3 favorites
 
-      asian_gop
-         Number of Asian, republican poll respondents who ranked the
-         given team in their top 3 favorites
+hispanic_gop
+   Number of Hispanic, republican poll respondents who ranked the given
+   team in their top 3 favorites
 
-      black_gop
-         Number of Black, republican poll respondents who ranked the
-         given team in their top 3 favorites
+other_gop
+   Number of republican poll respondents who identified their race as
+   "other" (not Asian, Black, Hispanic, or White) and ranked the given
+   team in their top 3 favorites
 
-      hispanic_gop
-         Number of Hispanic, republican poll respondents who ranked the
-         given team in their top 3 favorites
+white_gop
+   Number of White, republican poll respondents who ranked the given
+   team in their top 3 favorites
 
-      other_gop
-         Number of republican poll respondents who identified their race
-         as "other" (not Asian, Black, Hispanic, or White) and ranked
-         the given team in their top 3 favorites
+total_gop
+   Total number of republican poll respondents who ranked the given team
+   in their top 3 favorites
 
-      white_gop
-         Number of White, republican poll respondents who ranked the
-         given team in their top 3 favorites
+gop_percent
+   Percent of fans (who ranked the team in their top 3 favorite NFL
+   teams) who are republicans
 
-      total_gop
-         Total number of republican poll respondents who ranked the
-         given team in their top 3 favorites
+dem_percent
+   Percent of fans who are democrats
 
-      gop_percent
-         Percent of fans (who ranked the team in their top 3 favorite
-         NFL teams) who are republicans
+ind_percent
+   Percent of fans who are independent
 
-      dem_percent
-         Percent of fans who are democrats
+white_percent
+   Percent of fans who are White
 
-      ind_percent
-         Percent of fans who are independent
+nonwhite_percent
+   Percent of fans who are not White
 
-      white_percent
-         Percent of fans who are White
+Source
+~~~~~~
 
-      nonwhite_percent
-         Percent of fans who are not White
+See
+https://github.com/fivethirtyeight/data/blob/master/nfl-fandom/NFL_fandom_data-surveymonkey.csv
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      See
-      https://github.com/fivethirtyeight/data/blob/master/nfl-fandom/NFL_fandom_data-surveymonkey.csv
+``nfl_fandom_google``
 
-      .. rubric:: See Also
-         :name: see-also
+Examples
+~~~~~~~~
 
-      ``nfl_fandom_google``
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         # To convert data frame to tidy data (long) format, run:
-         library(dplyr)
-         library(tidyr)
-         nfl_fandom_surveymonkey_tidy <- nfl_fandom_surveymonkey %>%
-           pivot_longer(-c("team", "total_respondents", "gop_percent", "dem_percent",
-                     "ind_percent", "white_percent", "nonwhite_percent"),
-                     names_to = "race_party", values_to = "percent") %>%
-           arrange(team)
+   # To convert data frame to tidy data (long) format, run:
+   library(dplyr)
+   library(tidyr)
+   nfl_fandom_surveymonkey_tidy <- nfl_fandom_surveymonkey %>%
+     pivot_longer(-c("team", "total_respondents", "gop_percent", "dem_percent",
+               "ind_percent", "white_percent", "nonwhite_percent"),
+               names_to = "race_party", values_to = "percent") %>%
+     arrange(team)

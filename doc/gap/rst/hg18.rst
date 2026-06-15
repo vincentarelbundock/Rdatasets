@@ -1,32 +1,28 @@
-.. container::
+==== ===============
+hg18 R Documentation
+==== ===============
 
-   .. container::
+Chromosomal lengths for build 36
+--------------------------------
 
-      ==== ===============
-      hg18 R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Chromosomal lengths for build 36
-         :name: chromosomal-lengths-for-build-36
+Data are used in other functions.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data are used in other functions.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(hg18)
 
-      .. code:: R
+Format
+~~~~~~
 
-         hg18
+A vector containing lengths of chromosomes.
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      A vector containing lengths of chromosomes.
-
-      .. rubric:: Details
-         :name: details
-
-      generated from GRCh.R.
+generated from GRCh.R.

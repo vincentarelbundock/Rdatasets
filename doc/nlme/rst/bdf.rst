@@ -1,130 +1,124 @@
-.. container::
+=== ===============
+bdf R Documentation
+=== ===============
 
-   .. container::
+Language scores
+---------------
 
-      === ===============
-      bdf R Documentation
-      === ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Language scores
-         :name: language-scores
+The ``bdf`` data frame has 2287 rows and 25 columns of language scores
+from grade 8 pupils in elementary schools in The Netherlands.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The ``bdf`` data frame has 2287 rows and 25 columns of language
-      scores from grade 8 pupils in elementary schools in The
-      Netherlands.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   bdf
 
-      .. code:: R
+Format
+~~~~~~
 
-         bdf
+schoolNR
+   a factor denoting the school.
 
-      .. rubric:: Format
-         :name: format
+pupilNR
+   a factor denoting the pupil.
 
-      schoolNR
-         a factor denoting the school.
+IQ.verb
+   a numeric vector of verbal IQ scores
 
-      pupilNR
-         a factor denoting the pupil.
+IQ.perf
+   a numeric vector of IQ scores.
 
-      IQ.verb
-         a numeric vector of verbal IQ scores
+sex
+   Sex of the student.
 
-      IQ.perf
-         a numeric vector of IQ scores.
+Minority
+   a factor indicating if the student is a member of a minority group.
 
-      sex
-         Sex of the student.
+repeatgr
+   an ordered factor indicating if one or more grades have been
+   repeated.
 
-      Minority
-         a factor indicating if the student is a member of a minority
-         group.
+aritPRET
+   a numeric vector
 
-      repeatgr
-         an ordered factor indicating if one or more grades have been
-         repeated.
+classNR
+   a numeric vector
 
-      aritPRET
-         a numeric vector
+aritPOST
+   a numeric vector
 
-      classNR
-         a numeric vector
+langPRET
+   a numeric vector
 
-      aritPOST
-         a numeric vector
+langPOST
+   a numeric vector
 
-      langPRET
-         a numeric vector
+ses
+   a numeric vector of socioeconomic status indicators.
 
-      langPOST
-         a numeric vector
+denomina
+   a factor indicating of the school is a public school, a Protestant
+   private school, a Catholic private school, or a non-denominational
+   private school.
 
-      ses
-         a numeric vector of socioeconomic status indicators.
+schoolSES
+   a numeric vector
 
-      denomina
-         a factor indicating of the school is a public school, a
-         Protestant private school, a Catholic private school, or a
-         non-denominational private school.
+satiprin
+   a numeric vector
 
-      schoolSES
-         a numeric vector
+natitest
+   a factor with levels ``0`` and ``1``
 
-      satiprin
-         a numeric vector
+meetings
+   a numeric vector
 
-      natitest
-         a factor with levels ``0`` and ``1``
+currmeet
+   a numeric vector
 
-      meetings
-         a numeric vector
+mixedgra
+   a factor indicating if the class is a mixed-grade class.
 
-      currmeet
-         a numeric vector
+percmino
+   a numeric vector
 
-      mixedgra
-         a factor indicating if the class is a mixed-grade class.
+aritdiff
+   a numeric vector
 
-      percmino
-         a numeric vector
+homework
+   a numeric vector
 
-      aritdiff
-         a numeric vector
+classsiz
+   a numeric vector
 
-      homework
-         a numeric vector
+groupsiz
+   a numeric vector
 
-      classsiz
-         a numeric vector
+Source
+~~~~~~
 
-      groupsiz
-         a numeric vector
+‘⁠http://stat.gamma.rug.nl/snijders/multilevel.htm⁠’, the first edition of
+http://www.stats.ox.ac.uk/~snijders/mlbook.htm.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      ‘⁠http://stat.gamma.rug.nl/snijders/multilevel.htm⁠’, the first
-      edition of http://www.stats.ox.ac.uk/~snijders/mlbook.htm.
+Snijders, Tom and Bosker, Roel (1999), *Multilevel Analysis: An
+Introduction to Basic and Advanced Multilevel Modeling*, Sage.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Snijders, Tom and Bosker, Roel (1999), *Multilevel Analysis: An
-      Introduction to Basic and Advanced Multilevel Modeling*, Sage.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   summary(bdf)
 
-      .. code:: R
-
-         summary(bdf)
-
-         ## More examples, including lme() fits  reproducing parts in the above
-         ## book, are available in the R script files
-         system.file("mlbook", "ch04.R", package ="nlme") # and
-         system.file("mlbook", "ch05.R", package ="nlme")
+   ## More examples, including lme() fits  reproducing parts in the above
+   ## book, are available in the R script files
+   system.file("mlbook", "ch04.R", package ="nlme") # and
+   system.file("mlbook", "ch05.R", package ="nlme")

@@ -1,51 +1,45 @@
-.. container::
+====================== ===============
+mediacloud_online_news R Documentation
+====================== ===============
 
-   .. container::
+The Media Really Started Paying Attention to Puerto Rico When Trump Did
+-----------------------------------------------------------------------
 
-      ====================== ===============
-      mediacloud_online_news R Documentation
-      ====================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The Media Really Started Paying Attention to Puerto
-         Rico When Trump Did
-         :name: the-media-really-started-paying-attention-to-puerto-rico-when-trump-did
+The raw data behind the story "The Media Really Started Paying Attention
+to Puerto Rico When Trump Did"
+https://fivethirtyeight.com/features/the-media-really-started-paying-attention-to-puerto-rico-when-trump-did/:
+Mediacloud Top Online News Data.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "The Media Really Started Paying
-      Attention to Puerto Rico When Trump Did"
-      https://fivethirtyeight.com/features/the-media-really-started-paying-attention-to-puerto-rico-when-trump-did/:
-      Mediacloud Top Online News Data.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   mediacloud_online_news
 
-      .. code:: R
+Format
+~~~~~~
 
-         mediacloud_online_news
+A data frame with 49 rows representing media outlets and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+name
+   Name of media outlet source included in Media Cloud's "U.S. Top
+   Online News" collection
 
-      A data frame with 49 rows representing media outlets and 2
-      variables:
+url
+   URL of corresponding media outlet source
 
-      name
-         Name of media outlet source included in Media Cloud's "U.S. Top
-         Online News" collection
+Source
+~~~~~~
 
-      url
-         URL of corresponding media outlet source
+Mediacloud https://mediacloud.org/
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      Mediacloud https://mediacloud.org/
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``mediacloud_hurricanes``, ``mediacloud_states``,
-      ``mediacloud_trump``, ``tv_hurricanes``,
-      ``tv_hurricanes_by_network``, ``tv_states``, ``google_trends``
+``mediacloud_hurricanes``, ``mediacloud_states``, ``mediacloud_trump``,
+``tv_hurricanes``, ``tv_hurricanes_by_network``, ``tv_states``,
+``google_trends``

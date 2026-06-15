@@ -1,41 +1,37 @@
-.. container::
+=============== ===============
+causal_mediator R Documentation
+=============== ===============
 
-   .. container::
+Mediator Data
+-------------
 
-      =============== ===============
-      causal_mediator R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Mediator Data
-         :name: mediator-data
+This dataset contains 100 observations, generated under the following
+mechanism: X ~ N(0, 1) (exposure) Z ~ X + N(0,1) (measured factor:
+mediator) Y ~ Z + N(0, 1) (outcome)
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains 100 observations, generated under the
-      following mechanism: X ~ N(0, 1) (exposure) Z ~ X + N(0,1)
-      (measured factor: mediator) Y ~ Z + N(0, 1) (outcome)
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   causal_mediator
 
-      .. code:: R
+Format
+~~~~~~
 
-         causal_mediator
+A dataframe with 100 rows and 3 variables:
 
-      .. rubric:: Format
-         :name: format
+- ``exposure``: exposure
 
-      A dataframe with 100 rows and 3 variables:
+- ``covariate``: a known factor (mediator)
 
-      -  ``exposure``: exposure
+- ``outcome``: outcome
 
-      -  ``covariate``: a known factor (mediator)
+References
+~~~~~~~~~~
 
-      -  ``outcome``: outcome
-
-      .. rubric:: References
-         :name: references
-
-      D'Agostino McGowan L, Barrett M (2023). Causal inference is not a
-      statistical problem. Preprint arXiv:2304.02683v1.
+D'Agostino McGowan L, Barrett M (2023). Causal inference is not a
+statistical problem. Preprint arXiv:2304.02683v1.

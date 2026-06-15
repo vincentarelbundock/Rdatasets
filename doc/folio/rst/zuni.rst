@@ -1,100 +1,96 @@
-.. container::
+==== ===============
+zuni R Documentation
+==== ===============
 
-   .. container::
+Zuni Ceramics
+-------------
 
-      ==== ===============
-      zuni R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Zuni Ceramics
-         :name: zuni-ceramics
+A dataset containing ceramic counts from the Zuni region of the American
+Southwest.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset containing ceramic counts from the Zuni region of the
-      American Southwest.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   zuni
 
-      .. code:: R
+Format
+~~~~~~
 
-         zuni
+A ``data.frame`` with 420 observations (assemblages) and 18 variables
+(ceramic types):
 
-      .. rubric:: Format
-         :name: format
+LINO
+   ``integer``: Lino Gray (575-875).
 
-      A ``data.frame`` with 420 observations (assemblages) and 18
-      variables (ceramic types):
+KIAT
+   ``integer``: Kiatuthlanna Black-on-white (850-910).
 
-      LINO
-         ``integer``: Lino Gray (575-875).
+RED
+   ``integer``: Red Mesa Black-on-white (900-1030).
 
-      KIAT
-         ``integer``: Kiatuthlanna Black-on-white (850-910).
+GALL
+   ``integer``: Gallup Black-on-white (1025-1150).
 
-      RED
-         ``integer``: Red Mesa Black-on-white (900-1030).
+ESC
+   ``integer``: Escavada Black-on-white (1050-1150).
 
-      GALL
-         ``integer``: Gallup Black-on-white (1025-1150).
+PUBW
+   ``integer``: Puerco Black-on-white (1050-1200).
 
-      ESC
-         ``integer``: Escavada Black-on-white (1050-1150).
+RES
+   ``integer``: Reserve Black-on-white (1071-1115).
 
-      PUBW
-         ``integer``: Puerco Black-on-white (1050-1200).
+TULA
+   ``integer``: Tularosa Black-on-white (1175-1300).
 
-      RES
-         ``integer``: Reserve Black-on-white (1071-1115).
+PINE
+   ``integer``: Pinedale Black-on-white (1275-1325).
 
-      TULA
-         ``integer``: Tularosa Black-on-white (1175-1300).
+PUBR
+   ``integer``: Puerco Black-on-red (1050-1200).
 
-      PINE
-         ``integer``: Pinedale Black-on-white (1275-1325).
+WING
+   ``integer``: Wingate Black-on-red (1070-1200).
 
-      PUBR
-         ``integer``: Puerco Black-on-red (1050-1200).
+WIPO
+   ``integer``: Wingate Polychrome (1150-1250).
 
-      WING
-         ``integer``: Wingate Black-on-red (1070-1200).
+SJ
+   ``integer``: St. Johns Black-on-red/Polychrome (1200-1300).
 
-      WIPO
-         ``integer``: Wingate Polychrome (1150-1250).
+LSJ
+   ``integer``: St. Johns glaze, Techado Polychrome (1275-1300).
 
-      SJ
-         ``integer``: St. Johns Black-on-red/Polychrome (1200-1300).
+SPR
+   ``integer``: Springerville Polychrome (1250-1300).
 
-      LSJ
-         ``integer``: St. Johns glaze, Techado Polychrome (1275-1300).
+PINER
+   ``integer``: Pinedale Black-on-red/Polychrome (1275-1325).
 
-      SPR
-         ``integer``: Springerville Polychrome (1250-1300).
+HESH
+   ``integer``: Heshotauthla Polychrome (1285-1400).
 
-      PINER
-         ``integer``: Pinedale Black-on-red/Polychrome (1275-1325).
+KWAK
+   ``integer``: Kwakina Polychrome (1285-1400).
 
-      HESH
-         ``integer``: Heshotauthla Polychrome (1285-1400).
+The numbers in brackets correspond to the date range of each type (in AD
+years).
 
-      KWAK
-         ``integer``: Kwakina Polychrome (1285-1400).
+Source
+~~~~~~
 
-      The numbers in brackets correspond to the date range of each type
-      (in AD years).
+Peeples, M. A., & Schachner, G. (2012). Refining correspondence
+analysis-based ceramic seriation of regional data sets. *Journal of
+Archaeological Science*, 39(8), 2818-2827.
+`doi:10.1016/j.jas.2012.04.040 <https://doi.org/10.1016/j.jas.2012.04.040>`__.
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      Peeples, M. A., & Schachner, G. (2012). Refining correspondence
-      analysis-based ceramic seriation of regional data sets. *Journal
-      of Archaeological Science*, 39(8), 2818-2827.
-      `doi:10.1016/j.jas.2012.04.040 <https://doi.org/10.1016/j.jas.2012.04.040>`__.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      Other count data: ``birds``, ``boves``, ``chevelon``,
-      ``compiegne``, ``loire``, ``merzbach``, ``mississippi``
+Other count data: ``birds``, ``boves``, ``chevelon``, ``compiegne``,
+``loire``, ``merzbach``, ``mississippi``

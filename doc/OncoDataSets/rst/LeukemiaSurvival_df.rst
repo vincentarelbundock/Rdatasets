@@ -1,63 +1,57 @@
-.. container::
+=================== ===============
+LeukemiaSurvival_df R Documentation
+=================== ===============
 
-   .. container::
+Leukemia Remission Survival Times Placebo-Controlled RCT
+--------------------------------------------------------
 
-      =================== ===============
-      LeukemiaSurvival_df R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Leukemia Remission Survival Times Placebo-Controlled
-         RCT
-         :name: leukemia-remission-survival-times-placebo-controlled-rct
+This dataset, LeukemiaSurvival_df, is a data frame containing remission
+survival times of 42 leukemia patients enrolled in a placebo-controlled
+randomized controlled trial (RCT). The dataset includes information on
+the time to remission, patient status, sex, white blood cell count
+(log-transformed), and treatment regimen.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, LeukemiaSurvival_df, is a data frame containing
-      remission survival times of 42 leukemia patients enrolled in a
-      placebo-controlled randomized controlled trial (RCT). The dataset
-      includes information on the time to remission, patient status,
-      sex, white blood cell count (log-transformed), and treatment
-      regimen.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(LeukemiaSurvival_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(LeukemiaSurvival_df)
+A data frame with 42 observations and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+time
+   Time to remission in days (integer).
 
-      A data frame with 42 observations and 5 variables:
+status
+   Patient status (1 for event, 0 for censored) (integer).
 
-      time
-         Time to remission in days (integer).
+sex
+   Gender of the patient (numeric, 1 for male, 2 for female).
 
-      status
-         Patient status (1 for event, 0 for censored) (integer).
+logWBC
+   Log-transformed white blood cell count (numeric).
 
-      sex
-         Gender of the patient (numeric, 1 for male, 2 for female).
+rx
+   Treatment regimen (numeric, coded treatment type).
 
-      logWBC
-         Log-transformed white blood cell count (numeric).
+Details
+~~~~~~~
 
-      rx
-         Treatment regimen (numeric, coded treatment type).
+The dataset name has been kept as 'LeukemiaSurvival_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the OncoDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'\_df' indicates that the dataset is a data frame. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'LeukemiaSurvival_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The suffix '\_df' indicates that the dataset is a
-      data frame. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the autoReg package.
+Data taken from the autoReg package.

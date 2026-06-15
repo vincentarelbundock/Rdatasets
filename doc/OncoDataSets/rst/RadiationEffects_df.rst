@@ -1,61 +1,57 @@
-.. container::
+=================== ===============
+RadiationEffects_df R Documentation
+=================== ===============
 
-   .. container::
+Radiation Dose Effects on Chromosomal Abnormality
+-------------------------------------------------
 
-      =================== ===============
-      RadiationEffects_df R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Radiation Dose Effects on Chromosomal Abnormality
-         :name: radiation-dose-effects-on-chromosomal-abnormality
+This dataset, RadiationEffects_df, is a data frame containing data from
+an experiment conducted to examine the effects of gamma radiation on the
+number of chromosomal abnormalities observed. The data explores the
+relationships between radiation dose, dose rate, and chromosomal
+changes.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, RadiationEffects_df, is a data frame containing data
-      from an experiment conducted to examine the effects of gamma
-      radiation on the number of chromosomal abnormalities observed. The
-      data explores the relationships between radiation dose, dose rate,
-      and chromosomal changes.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(RadiationEffects_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(RadiationEffects_df)
+A data frame with 27 observations and 4 variables:
 
-      .. rubric:: Format
-         :name: format
+cells
+   Number of cells observed (integer).
 
-      A data frame with 27 observations and 4 variables:
+ca
+   Number of chromosomal abnormalities (integer).
 
-      cells
-         Number of cells observed (integer).
+doseamt
+   Amount of gamma radiation dose (numeric).
 
-      ca
-         Number of chromosomal abnormalities (integer).
+doserate
+   Rate of gamma radiation dose (numeric).
 
-      doseamt
-         Amount of gamma radiation dose (numeric).
+Details
+~~~~~~~
 
-      doserate
-         Rate of gamma radiation dose (numeric).
+The dataset name has been kept as 'RadiationEffects_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the OncoDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'\_df' indicates that the dataset is a data frame. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'RadiationEffects_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The suffix '\_df' indicates that the dataset is a
-      data frame. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the faraway package. Based on the study by Purott
-      R. and Reeder E. (1976): \*The effect of changes in dose rate on
-      the yield of chromosome aberrations in human lymphocytes exposed
-      to gamma radiation\*. Mutation Research, 35, 437–444.
+Data taken from the faraway package. Based on the study by Purott R. and
+Reeder E. (1976): \*The effect of changes in dose rate on the yield of
+chromosome aberrations in human lymphocytes exposed to gamma
+radiation\*. Mutation Research, 35, 437–444.

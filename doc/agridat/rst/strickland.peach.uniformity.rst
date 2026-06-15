@@ -1,75 +1,71 @@
-.. container::
+=========================== ===============
+strickland.peach.uniformity R Documentation
+=========================== ===============
 
-   .. container::
+Uniformity trial of peach
+-------------------------
 
-      =========================== ===============
-      strickland.peach.uniformity R Documentation
-      =========================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of peach
-         :name: uniformity-trial-of-peach
+Uniformity trial of peach trees in Australia.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of peach trees in Australia.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("strickland.peach.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("strickland.peach.uniformity")
+A data frame with 144 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row
 
-      A data frame with 144 observations on the following 3 variables.
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   yield, pounds per tree
 
-      ``col``
-         column
+Details
+~~~~~~~
 
-      ``yield``
-         yield, pounds per tree
+Yields are the weight of peaches per individual tree in pounds.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      Yields are the weight of peaches per individual tree in pounds.
+A. G. Strickland (1935). Error in horticultural experiments. Journal of
+Agriculture, Victoria, 33, 408-416.
+https://handle.slv.vic.gov.au/10381/386642
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      A. G. Strickland (1935). Error in horticultural experiments.
-      Journal of Agriculture, Victoria, 33, 408-416.
-      https://handle.slv.vic.gov.au/10381/386642
+None
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
 
-         ## Not run: 
+     data(strickland.peach.uniformity)
+     dat <- strickland.peach.uniformity
 
-         library(agridat)
+     mean(dat$yield) # 131.3, Strickland has 131.3
+     sd(dat$yield)/mean(dat$yield) # 31.1, Strickland has 34.4
 
-           data(strickland.peach.uniformity)
-           dat <- strickland.peach.uniformity
+     libs(desplot)
+     desplot(dat, yield ~ col*row,
+             main="strickland.peach.uniformity",
+             flip=TRUE, aspect=1)
 
-           mean(dat$yield) # 131.3, Strickland has 131.3
-           sd(dat$yield)/mean(dat$yield) # 31.1, Strickland has 34.4
-
-           libs(desplot)
-           desplot(dat, yield ~ col*row,
-                   main="strickland.peach.uniformity",
-                   flip=TRUE, aspect=1)
-
-         ## End(Not run)
+   ## End(Not run)

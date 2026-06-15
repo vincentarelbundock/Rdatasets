@@ -1,0 +1,104 @@
+<!DOCTYPE html><html><head><title>R: Horseshoe Crab Mating</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>CrabSatellites</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Horseshoe Crab Mating</h2>
+
+<h3>Description</h3>
+
+<p>Determinants of mating for male satellites to nesting horseshoe crabs.
+The number of <code>satellites</code> is a natural outcome variable. This dataset is useful for exploring various count data models.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 173 observations on 5 variables.
+</p>
+
+<dl>
+<dt><code>color</code></dt><dd><p>Ordered factor indicating color (light medium, medium, dark medium, dark).</p>
+</dd>
+<dt><code>spine</code></dt><dd><p>Ordered factor indicating spine condition (both good, one worn or broken, both worn or broken).</p>
+</dd>
+<dt><code>width</code></dt><dd><p>Carapace width (cm).</p>
+</dd>
+<dt><code>weight</code></dt><dd><p>Weight (kg).</p>
+</dd>
+<dt><code>satellites</code></dt><dd><p>Number of satellites.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Brockmann (1996) investigates horseshoe crab mating. The crabs arrive on the beach in pairs to spawn. Furthermore, unattached males
+also come to the beach, crowd around the nesting couples and compete with attached males for fertilizations. These so-called
+satellite males form large groups around some couples while ignoring others. Brockmann (1996) shows that the groupings are
+not driven by environmental factors but by properties of the nesting female crabs. Larger females that are in better condition
+attract more satellites.
+</p>
+<p>Agresti (2002, 2013) reanalyzes the number of satellites using count models. Explanatory variables are the female crab's
+color, spine condition, weight, and carapace width. Color and spine condition are ordered factors but are treated as numeric in some analyses.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Table 4.3 in Agresti (2002). This dataset was taken from the <span class="pkg">countreg</span> package, which is not on CRAN
+</p>
+
+
+<h3>References</h3>
+
+<p>Agresti A (2002). Categorical Data Analysis, 2nd ed., John Wiley &amp; Sons, Hoboken.
+</p>
+<p>Agresti A (2013). Categorical Data Analysis, 3rd ed., John Wiley &amp; Sons, Hoboken.
+Brockmann HJ (1996). “Satellite Male Groups in Horseshoe Crabs, Limulus polyphemus”, Ethology, 102(1), 1–21.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## load data, use ordered factors as numeric, and grouped factor version of width
+data("CrabSatellites", package = "vcdExtra")
+CrabSatellites &lt;- transform(CrabSatellites,
+  color = as.numeric(color),
+  spine = as.numeric(spine),
+  cwidth = cut(width, c(-Inf, seq(23.25, 29.25), Inf))
+)
+
+## Agresti, Table 4.4
+aggregate(CrabSatellites$satellites,
+          list(CrabSatellites$cwidth), function(x)
+  round(c(Number = length(x), Sum = sum(x), Mean = mean(x), Var = var(x)), digits = 2))
+
+## Agresti, Figure 4.4
+plot(tapply(satellites, cwidth, mean) ~ tapply(width, cwidth, mean),
+  data = CrabSatellites,
+  ylim = c(0, 6), pch = 19, cex = 1.5,
+  xlab = "Mean carapace width (cm)",
+  ylab = "Mean number of satellites")
+
+## More examples: ?countreg::CrabSatellites` has examples of other plots and count data models
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

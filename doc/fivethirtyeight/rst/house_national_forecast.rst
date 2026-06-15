@@ -1,81 +1,76 @@
-.. container::
+======================= ===============
+house_national_forecast R Documentation
+======================= ===============
 
-   .. container::
+2018 House Forecast
+-------------------
 
-      ======================= ===============
-      house_national_forecast R Documentation
-      ======================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: 2018 House Forecast
-         :name: house-forecast
+The raw data behind the story 'Forecasting the race for the House'
+https://projects.fivethirtyeight.com/2018-midterm-election-forecast/house/
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story 'Forecasting the race for the House'
-      https://projects.fivethirtyeight.com/2018-midterm-election-forecast/house/
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   house_national_forecast
 
-      .. code:: R
+Format
+~~~~~~
 
-         house_national_forecast
+A dataframe with 588 rows representing district-level results of the
+classic, lite, and deluxe house forecasts since 2018/08/01 and 11
+variables.
 
-      .. rubric:: Format
-         :name: format
+forecastdate
+   date of the forecast
 
-      A dataframe with 588 rows representing district-level results of
-      the classic, lite, and deluxe house forecasts since 2018/08/01 and
-      11 variables.
+party
+   the party of the forecast
 
-      forecastdate
-         date of the forecast
+model
+   the model of the forecast
 
-      party
-         the party of the forecast
+win_probability
+   the probability of the corresponding party winning
 
-      model
-         the model of the forecast
+mean_seats
+   the mean of the number of seats
 
-      win_probability
-         the probability of the corresponding party winning
+median_seats
+   the median number of seats
 
-      mean_seats
-         the mean of the number of seats
+p10_seats
+   the top 10 percentile of number of seats
 
-      median_seats
-         the median number of seats
+p90_seats
+   the top 90 percentile of number of seats
 
-      p10_seats
-         the top 10 percentile of number of seats
+margin
+   unknown
 
-      p90_seats
-         the top 90 percentile of number of seats
+p10_margin
+   the margin of p10_seats
 
-      margin
-         unknown
+p90_margin
+   the margin of p90_seats
 
-      p10_margin
-         the margin of p10_seats
+Note
+~~~~
 
-      p90_margin
-         the margin of p90_seats
+The original dataset included a meaningless column called "state", and
+all variables under this column was "US". So this column was removed.
 
-      .. rubric:: Note
-         :name: note
+Source
+~~~~~~
 
-      The original dataset included a meaningless column called "state",
-      and all variables under this column was "US". So this column was
-      removed.
+FiveThirtyEight’s House, Senate And Governor Models Methodology:
+https://fivethirtyeight.com/methodology/how-fivethirtyeights-house-and-senate-models-work/
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      FiveThirtyEight’s House, Senate And Governor Models Methodology:
-      https://fivethirtyeight.com/methodology/how-fivethirtyeights-house-and-senate-models-work/
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``house_district_forecast``
+``house_district_forecast``

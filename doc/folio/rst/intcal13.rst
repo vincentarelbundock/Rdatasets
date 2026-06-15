@@ -1,57 +1,52 @@
-.. container::
+======== ===============
+intcal13 R Documentation
+======== ===============
 
-   .. container::
+IntCal13
+--------
 
-      ======== ===============
-      intcal13 R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: IntCal13
-         :name: intcal13
+The IntCal series of radiocarbon calibration curves.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The IntCal series of radiocarbon calibration curves.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   intcal13
 
-      .. code:: R
+Format
+~~~~~~
 
-         intcal13
+A ``data.frame`` with 5141 observations and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+calBP
+   ``integer``: calendar (calibrated) age (year BP).
 
-      A ``data.frame`` with 5141 observations and 5 variables:
+age
+   ``integer``: radiocarbon age (year BP).
 
-      calBP
-         ``integer``: calendar (calibrated) age (year BP).
+error
+   ``integer``: radiocarbon error (year BP).
 
-      age
-         ``integer``: radiocarbon age (year BP).
+delta
+   ``numeric``: isotopic ratio ``\Delta^{14}C`` (per mil).
 
-      error
-         ``integer``: radiocarbon error (year BP).
+sigma
+   ``numeric``: error on ``delta`` (per mil).
 
-      delta
-         ``numeric``: isotopic ratio ``\Delta^{14}C`` (per mil).
+Source
+~~~~~~
 
-      sigma
-         ``numeric``: error on ``delta`` (per mil).
+Reimer, P. J., Bard, E. Bayliss, A., Beck, J. W., Blackwell, P. G.,
+Bronk Ramsey, C., Buck, C. E. *et al.* (2013). IntCal13 and Marine13
+Radiocarbon age Calibration Curves 0-50,000 Years cal BP. *Radiocarbon*,
+55(4): 1869-87.
+`doi:10.2458/azu_js_rc.55.16947 <https://doi.org/10.2458/azu_js_rc.55.16947>`__.
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      Reimer, P. J., Bard, E. Bayliss, A., Beck, J. W., Blackwell, P.
-      G., Bronk Ramsey, C., Buck, C. E. *et al.* (2013). IntCal13 and
-      Marine13 Radiocarbon age Calibration Curves 0-50,000 Years cal BP.
-      *Radiocarbon*, 55(4): 1869-87.
-      `doi:10.2458/azu_js_rc.55.16947 <https://doi.org/10.2458/azu_js_rc.55.16947>`__.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      Other radiocarbon dating: ``arnold1949``, ``intcal09``,
-      ``intcal20``
+Other radiocarbon dating: ``arnold1949``, ``intcal09``, ``intcal20``

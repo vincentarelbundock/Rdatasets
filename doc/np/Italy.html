@@ -60,12 +60,12 @@ Methods,&rdquo; Ph.D. Thesis, University of York.
 <h3>Examples</h3>
 
 <pre><code class='language-R'>data("Italy")
-attach(Italy)
+with(Italy, {
 
 plot(ordered(year), gdp, xlab="Year (ordered factor)",
      ylab="GDP (millions of Lire, 1990=base)")
 
-detach(Italy)
+})
 </code></pre>
 
 </main>

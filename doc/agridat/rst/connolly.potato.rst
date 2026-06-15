@@ -1,135 +1,139 @@
-.. container::
+=============== ===============
+connolly.potato R Documentation
+=============== ===============
 
-   .. container::
+Potato yields in single-drill plots
+-----------------------------------
 
-      =============== ===============
-      connolly.potato R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Potato yields in single-drill plots
-         :name: potato-yields-in-single-drill-plots
+Potato yields in single-drill plots
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Potato yields in single-drill plots
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("connolly.potato")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("connolly.potato")
+A data frame with 80 observations on the following 6 variables.
 
-      .. rubric:: Format
-         :name: format
+``rep``
+   block
 
-      A data frame with 80 observations on the following 6 variables.
+``gen``
+   variety
 
-      ``rep``
-         block
+``row``
+   row
 
-      ``gen``
-         variety
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   yield, kg/ha
 
-      ``col``
-         column
+``matur``
+   maturity group
 
-      ``yield``
-         yield, kg/ha
+Details
+~~~~~~~
 
-      ``matur``
-         maturity group
+Connolly et el use this data to illustrate how yield can be affected by
+competition from neighboring plots.
 
-      .. rubric:: Details
-         :name: details
+This data uses M1, M2, M3 for maturity, while Connolly et al use FE
+(first early), SE (second early) and M (maincrop).
 
-      Connolly et el use this data to illustrate how yield can be
-      affected by competition from neighboring plots.
+The trial was 20 sections, each of which was an independent row of 20
+drills. The data here are four reps of single-drill plots from sections
+1, 6, 11, and 16.
 
-      This data uses M1, M2, M3 for maturity, while Connolly et al use
-      FE (first early), SE (second early) and M (maincrop).
+The neighbor covariate for a plot is defined as the average of the plots
+to the left and right. For drills at the edge of the trial, the
+covariate was the average of the one neighboring plot yield and the
+section (i.e. rep) mean.
 
-      The trial was 20 sections, each of which was an independent row of
-      20 drills. The data here are four reps of single-drill plots from
-      sections 1, 6, 11, and 16.
+It would be interesting to fit a model that uses differences in maturity
+between a plot and its neighbor as the actual covariate.
 
-      The neighbor covariate for a plot is defined as the average of the
-      plots to the left and right. For drills at the edge of the trial,
-      the covariate was the average of the one neighboring plot yield
-      and the section (i.e. rep) mean.
+https://doi.org/10.1111/j.1744-7348.1993.tb04099.x
 
-      It would be interesting to fit a model that uses differences in
-      maturity between a plot and its neighbor as the actual covariate.
+Used with permission of Iain Currie.
 
-      https://doi.org/10.1111/j.1744-7348.1993.tb04099.x
+Source
+~~~~~~
 
-      Used with permission of Iain Currie.
+Connolly, T and Currie, ID and Bradshaw, JE and McNicol, JW. (1993).
+Inter-plot competition in yield trials of potatoes *Solanum tuberosum
+L.* with single-drill plots. Annals of Applied Biology, 123, 367-377.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Connolly, T and Currie, ID and Bradshaw, JE and McNicol, JW.
-      (1993). Inter-plot competition in yield trials of potatoes
-      *Solanum tuberosum L.* with single-drill plots. Annals of Applied
-      Biology, 123, 367-377.
+Chaves, S.F.S., Ferreira, F.M., Ferreira, G.C. et al. Incorporating
+spatial and genetic competition into breeding pipelines with the R
+package gencomp. Heredity (2025).
+https://doi.org/10.1038/s41437-024-00743-9
 
-      .. rubric:: Examples
-         :name: examples
+Examples
+~~~~~~~~
 
-      .. code:: R
-
-         library(agridat)
-         data(connolly.potato)
-         dat <- connolly.potato
-
-         # Field plan
-         libs(desplot)
-         desplot(dat, yield~col*row,
-                 out1=rep, # aspect unknown
-                 main="connolly.potato yields (reps not contiguous)")
+.. code:: R
 
 
-         # Later maturities are higher yielding
-         libs(lattice)
-         bwplot(yield~matur, dat, main="connolly.potato yield by maturity")
+   library(agridat)
+   data(connolly.potato)
+   dat <- connolly.potato
 
-         # Observed raw means. Matches Connolly table 2.
-         mn <- aggregate(yield~gen, data=dat, FUN=mean)
-         mn[rev(order(mn$yield)),]
+   # Field plan
+   libs(desplot)
+   desplot(dat, yield~col*row,
+           out1=rep, # aspect unknown
+           main="connolly.potato yields (reps not contiguous)")
 
-         # Create a covariate which is the average of neighboring plot yields
-         libs(reshape2)
-         mat <- acast(dat, row~col, value.var='yield')
-         mat2 <- matrix(NA, nrow=4, ncol=20)
-         mat2[,2:19] <- (mat[ , 1:18] + mat[ , 3:20])/2
-         mat2[ , 1] <- (mat[ , 1] + apply(mat, 1, mean))/2
-         mat2[ , 20] <- (mat[ , 20] + apply(mat, 1, mean))/2
-         dat2 <- melt(mat2)
-         colnames(dat2) <- c('row','col','cov')
-         dat <- merge(dat, dat2)
-         # xyplot(yield ~ cov, data=dat, type=c('p','r'))
 
-         # Connolly et al fit a model with avg neighbor yield as a covariate
-         m1 <- lm(yield ~ 0 + gen + rep + cov, data=dat)
-         coef(m1)['cov'] # = -.303  (Connolly obtained -.31)
+   # Later maturities are higher yielding
+   libs(lattice)
+   bwplot(yield~matur, dat, main="connolly.potato yield by maturity")
 
-         # Block names and effects
-         bnm <- c("R1","R2","R3","R4")
-         beff <- c(0, coef(m1)[c('repR2','repR3','repR4')])
-         # Variety names and effects
-         vnm <- paste0("V", formatC(1:20, width=2, flag='0'))
-         veff <- coef(m1)[1:20]
+   # Observed raw means. Matches Connolly table 2.
+   mn <- aggregate(yield~gen, data=dat, FUN=mean)
+   mn[rev(order(mn$yield)),]
 
-         # Adjust yield for variety and block effects
-         dat <- transform(dat, yadj = yield - beff[match(rep,bnm)]
-                         - veff[match(gen,vnm)])
+   # Create a covariate which is the average of neighboring plot yields
+   libs(reshape2)
+   mat <- acast(dat, row~col, value.var='yield')
+   mat2 <- matrix(NA, nrow=4, ncol=20)
+   mat2[,2:19] <- (mat[ , 1:18] + mat[ , 3:20])/2
+   mat2[ , 1] <- (mat[ , 1] + apply(mat, 1, mean))/2
+   mat2[ , 20] <- (mat[ , 20] + apply(mat, 1, mean))/2
+   dat2 <- melt(mat2)
+   colnames(dat2) <- c('row','col','cov')
+   dat <- merge(dat, dat2)
+   # xyplot(yield ~ cov, data=dat, type=c('p','r'))
 
-         # Similar to Connolly Fig 1.  Point pattern doesn't quite match
-         xyplot(yadj~cov, data=dat, type=c('p','r'),
-                main="connolly.potato",
-                xlab="Avg yield of nearest neighbors",
-                ylab="Yield, adjusted for variety and block effects")
+   # Connolly et al fit a model with avg neighbor yield as a covariate
+   m1 <- lm(yield ~ 0 + gen + rep + cov, data=dat)
+   coef(m1)['cov'] # = -.303  (Connolly obtained -.31)
+
+   # Block names and effects
+   bnm <- c("R1","R2","R3","R4")
+   beff <- c(0, coef(m1)[c('repR2','repR3','repR4')])
+   # Variety names and effects
+   vnm <- paste0("V", formatC(1:20, width=2, flag='0'))
+   veff <- coef(m1)[1:20]
+
+   # Adjust yield for variety and block effects
+   dat <- transform(dat, yadj = yield - beff[match(rep,bnm)]
+                   - veff[match(gen,vnm)])
+
+   # Similar to Connolly Fig 1.  Point pattern doesn't quite match
+   xyplot(yadj~cov, data=dat, type=c('p','r'),
+          main="connolly.potato",
+          xlab="Avg yield of nearest neighbors",
+          ylab="Yield, adjusted for variety and block effects")

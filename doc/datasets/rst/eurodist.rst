@@ -1,44 +1,39 @@
-.. container::
+======== ===============
+eurodist R Documentation
+======== ===============
 
-   .. container::
+Distances Between European Cities and Between US Cities
+-------------------------------------------------------
 
-      ======== ===============
-      eurodist R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Distances Between European Cities and Between US
-         Cities
-         :name: distances-between-european-cities-and-between-us-cities
+The ``eurodist`` gives the road distances (in km) between 21 cities in
+Europe. The data are taken from a table in *The Cambridge
+Encyclopaedia*.
 
-      .. rubric:: Description
-         :name: description
+``UScitiesD`` gives “straight line” distances between 10 cities in the
+US.
 
-      The ``eurodist`` gives the road distances (in km) between 21
-      cities in Europe. The data are taken from a table in *The
-      Cambridge Encyclopaedia*.
+Usage
+~~~~~
 
-      ``UScitiesD`` gives “straight line” distances between 10 cities in
-      the US.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   eurodist
+   UScitiesD
 
-      .. code:: R
+Format
+~~~~~~
 
-         eurodist
-         UScitiesD
+``dist`` objects based on 21 and 10 objects, respectively. (You must
+have the stats package loaded to have the methods for this kind of
+object available).
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      ``dist`` objects based on 21 and 10 objects, respectively. (You
-      must have the stats package loaded to have the methods for this
-      kind of object available).
+Crystal, D. Ed. (1990) *The Cambridge Encyclopaedia*. Cambridge:
+Cambridge University Press,
 
-      .. rubric:: Source
-         :name: source
-
-      Crystal, D. Ed. (1990) *The Cambridge Encyclopaedia*. Cambridge:
-      Cambridge University Press,
-
-      The US cities distances were provided by Pierre Legendre.
+The US cities distances were provided by Pierre Legendre.

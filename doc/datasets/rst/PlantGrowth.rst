@@ -1,54 +1,50 @@
-.. container::
+=========== ===============
+PlantGrowth R Documentation
+=========== ===============
 
-   .. container::
+Results from an Experiment on Plant Growth
+------------------------------------------
 
-      =========== ===============
-      PlantGrowth R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Results from an Experiment on Plant Growth
-         :name: results-from-an-experiment-on-plant-growth
+Results from an experiment to compare yields (as measured by dried
+weight of plants) obtained under a control and two different treatment
+conditions.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Results from an experiment to compare yields (as measured by dried
-      weight of plants) obtained under a control and two different
-      treatment conditions.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   PlantGrowth
 
-      .. code:: R
+Format
+~~~~~~
 
-         PlantGrowth
+A data frame of 30 cases on 2 variables.
 
-      .. rubric:: Format
-         :name: format
+===== ========== =======
+[, 1] ``weight`` numeric
+[, 2] ``group``  factor
+===== ========== =======
 
-      A data frame of 30 cases on 2 variables.
+The levels of ``group`` are ‘ctrl’, ‘trt1’, and ‘trt2’.
 
-      ===== ========== =======
-      [, 1] ``weight`` numeric
-      [, 2] ``group``  factor
-      ===== ========== =======
+Source
+~~~~~~
 
-      The levels of ``group`` are ‘ctrl’, ‘trt1’, and ‘trt2’.
+Dobson, A. J. (1983) *An Introduction to Statistical Modelling*. London:
+Chapman and Hall.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Dobson, A. J. (1983) *An Introduction to Statistical Modelling*.
-      London: Chapman and Hall.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         ## One factor ANOVA example from Dobson's book, cf. Table 7.4:
-         require(stats); require(graphics)
-         boxplot(weight ~ group, data = PlantGrowth, main = "PlantGrowth data",
-                 ylab = "Dried weight of plants", col = "lightgray",
-                 notch = TRUE, varwidth = TRUE)
-         anova(lm(weight ~ group, data = PlantGrowth))
+   ## One factor ANOVA example from Dobson's book, cf. Table 7.4:
+   require(stats); require(graphics)
+   boxplot(weight ~ group, data = PlantGrowth, main = "PlantGrowth data",
+           ylab = "Dried weight of plants", col = "lightgray",
+           notch = TRUE, varwidth = TRUE)
+   anova(lm(weight ~ group, data = PlantGrowth))

@@ -1,49 +1,44 @@
-.. container::
+=============== ===============
+fheights_tbl_df R Documentation
+=============== ===============
 
-   .. container::
+Female College Student Heights
+------------------------------
 
-      =============== ===============
-      fheights_tbl_df R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Female College Student Heights
-         :name: female-college-student-heights
+This dataset, fheights_tbl_df, is a tibble containing the heights of 24
+female college students, measured in inches. The dataset provides
+insight into the physical characteristics of a specific demographic
+group.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, fheights_tbl_df, is a tibble containing the heights
-      of 24 female college students, measured in inches. The dataset
-      provides insight into the physical characteristics of a specific
-      demographic group.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(fheights_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(fheights_tbl_df)
+A tibble with 24 observations and 1 variable:
 
-      .. rubric:: Format
-         :name: format
+heights
+   Heights of female college students, measured in inches (integer).
 
-      A tibble with 24 observations and 1 variable:
+Details
+~~~~~~~
 
-      heights
-         Heights of female college students, measured in inches
-         (integer).
+The dataset name has been kept as 'fheights_tbl_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the educationR package and assists
+users in identifying its specific characteristics. The suffix 'tbl_df'
+indicates that the dataset is a tibble. The original content has not
+been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'fheights_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      educationR package and assists users in identifying its specific
-      characteristics. The suffix 'tbl_df' indicates that the dataset is
-      a tibble. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset was taken from the openintro package.
+The dataset was taken from the openintro package.

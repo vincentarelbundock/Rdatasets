@@ -20,18 +20,15 @@ function processMathHTML() {
 
 <h3>Description</h3>
 
-<p>Glass(1954) gave this 5 x 5 table on the occupations of 3500 British fathers and their sons.
+<p>Glass(1954) gave this 5 x 5 table on the occupations of 3500 British fathers
+and their sons.
 </p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data("Glass")</code></pre>
 
 
 <h3>Format</h3>
 
-<p>A frequency data frame with 25 observations on the following 3 variables representing a 5 x 5 table with 3500 cases.
+<p>A frequency data frame with 25 observations on the following 3
+variables representing a 5 x 5 table with 3500 cases.
 </p>
 
 <dl>
@@ -47,21 +44,21 @@ function processMathHTML() {
 
 <h3>Details</h3>
 
-<p>The occupational categories in order of status are:
-(1) Professional &amp; High Administrative
-(2) Managerial, Executive &amp; High Supervisory
-(3) Low Inspectional &amp; Supervisory
-(4) Routine Nonmanual &amp; Skilled Manual
-(5) Semi- &amp; Unskilled Manual
+<p>The occupational categories in order of status are: (1) Professional &amp; High
+Administrative (2) Managerial, Executive &amp; High Supervisory (3) Low
+Inspectional &amp; Supervisory (4) Routine Nonmanual &amp; Skilled Manual (5) Semi-
+&amp; Unskilled Manual
 </p>
-<p>However, to make the point that factors are ordered alphabetically by default,
-Friendly &amp; Meyer (2016) introduce this data set in the form given here. 
+<p>However, to make the point that factors are ordered alphabetically by
+default, Friendly &amp; Meyer (2016) introduce this data set in the form given
+here.
 </p>
 
 
 <h3>Source</h3>
 
-<p>Glass, D. V. (1954), <em>Social Mobility in Britain</em>. The Free Press.
+<p>Glass, D. V. (1954), <em>Social Mobility in Britain</em>. The Free
+Press.
 </p>
 
 
@@ -70,39 +67,41 @@ Friendly &amp; Meyer (2016) introduce this data set in the form given here.
 <p>Bishop, Y. M. M. and Fienberg, S. E. and Holland, P. W. (1975).
 <em>Discrete Multivariate Analysis: Theory and Practice</em>, MIT Press.
 </p>
-<p>Friendly, M. and Meyer, D. (2016). 
-<em>Discrete Data Analysis with R: Visualization and Modeling Techniques for Categorical and Count Data</em>. 
-Boca Raton, FL: Chapman &amp; Hall/CRC. <a href="http://ddar.datavis.ca">http://ddar.datavis.ca</a>.
+<p>Friendly, M. and Meyer, D. (2016).  <em>Discrete Data Analysis with R:
+Visualization and Modeling Techniques for Categorical and Count Data</em>.  Boca
+Raton, FL: Chapman &amp; Hall/CRC. <a href="http://ddar.datavis.ca">http://ddar.datavis.ca</a>.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(Glass)
+<pre><code class='language-R'>
+data(Glass)
 glass.tab &lt;- xtabs(Freq ~ father + son, data=Glass)
 
-largs &lt;- list(set_varnames=list(father="Father's Occupation", 
+largs &lt;- list(set_varnames=list(father="Father's Occupation",
                                 son="Son's Occupation"),
               abbreviate=10)
 gargs &lt;- list(interpolate=c(1,2,4,8))
 
-mosaic(glass.tab, 
-  shade=TRUE, 
-  labeling_args=largs, 
+mosaic(glass.tab,
+  shade=TRUE,
+  labeling_args=largs,
   gp_args=gargs,
-  main="Alphabetic order", 
-  legend=FALSE, 
+  main="Alphabetic order",
+  legend=FALSE,
   rot_labels=c(20,90,0,70))
 
 # reorder by status
-ord &lt;- c(2, 1, 4, 3, 5) 
-mosaic(glass.tab[ord, ord], 
-  shade=TRUE, 
-  labeling_args=largs,  
+ord &lt;- c(2, 1, 4, 3, 5)
+mosaic(glass.tab[ord, ord],
+  shade=TRUE,
+  labeling_args=largs,
   gp_args=gargs,
-  main="Effect order", 
-  legend=FALSE, 
+  main="Effect order",
+  legend=FALSE,
   rot_labels=c(20,90,0,70))
+
 
 </code></pre>
 

@@ -1,0 +1,104 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of coffee in India</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>rau.coffee.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of coffee in India
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of coffee in India in 1937
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("rau.coffee.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 144 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row ordinate</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column ordinate</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield per plot, pounds</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>An experiment at the Balehonnur Coffee Experiment Station, India.
+An area about 2 acres in size was selected.
+The yields are the total of 3 pickings in 1936 and 1937.
+</p>
+<p>Field length: 12 rows * 12 feet = 144 ft (each basic unit is 2 rows of trees, about 6 feet apart)
+</p>
+<p>Field width: 12 column * 30 feet = 360 ft (each basic unit is 5 trees, about 6 feet apart)
+</p>
+<p>Note: Rau does not specify exactly which ordinate of the plots in
+Table 1 has 2 trees and which ordinate has 5 trees, but given the
+shape of Table 1 (much wider than tall) and the logical arrangement of
+data, we believe we have the dimensions correct.
+</p>
+<p>Transcription details: An iPhone was used to capture the text in Table
+1, page 82, which was then manually corrected by K.Wright 2025.08.13.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Rau, A. Ananthapadmanabha (1940).
+Experimental Methods in Coffee.
+The Journal of the Mysore Agricultural &amp; Experimental Union, 19, 76-89.
+https://archive.org/details/mysore-agricultural_october-december-1940_19_2
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+library(agridat)
+data(rau.coffee.uniformity)
+dat &lt;- rau.coffee.uniformity
+
+library(desplot)
+desplot(dat, yield~col*row,
+        aspect=144/360, # probably true aspect
+        flip=TRUE, main="rau.coffee.uniformity")
+mean(dat$yield) # matches 27.24 in Rau
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

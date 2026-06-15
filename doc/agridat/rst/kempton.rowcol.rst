@@ -1,84 +1,80 @@
-.. container::
+============== ===============
+kempton.rowcol R Documentation
+============== ===============
 
-   .. container::
+Row-column experiment of wheat
+------------------------------
 
-      ============== ===============
-      kempton.rowcol R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Row-column experiment of wheat
-         :name: row-column-experiment-of-wheat
+Row-column experiment of wheat, 35 genotypes, 2 reps.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Row-column experiment of wheat, 35 genotypes, 2 reps.
+A data frame with 68 observations on the following 5 variables.
 
-      .. rubric:: Format
-         :name: format
+``rep``
+   replicate factor, 2 levels
 
-      A data frame with 68 observations on the following 5 variables.
+``row``
+   row
 
-      ``rep``
-         replicate factor, 2 levels
+``col``
+   column
 
-      ``row``
-         row
+``gen``
+   genotype factor, 35 levels
 
-      ``col``
-         column
+``yield``
+   yield
 
-      ``gen``
-         genotype factor, 35 levels
+Details
+~~~~~~~
 
-      ``yield``
-         yield
+Included to illustrate REML analysis of a row-column design.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      Included to illustrate REML analysis of a row-column design.
+R A Kempton and P N Fox, *Statistical Methods for Plant Variety
+Evaluation*, Chapman and Hall, 1997.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      R A Kempton and P N Fox, *Statistical Methods for Plant Variety
-      Evaluation*, Chapman and Hall, 1997.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(kempton.rowcol)
+   dat <- kempton.rowcol
+   dat <- transform(dat, rowf=factor(row), colf=factor(col))
 
-         ## Not run: 
-
-         library(agridat)
-         data(kempton.rowcol)
-         dat <- kempton.rowcol
-         dat <- transform(dat, rowf=factor(row), colf=factor(col))
-
-         libs(desplot)
-         desplot(dat, yield~col*row|rep,
-                 num=gen, out1=rep, # unknown aspect
-                 main="kempton.rowcol")
+   libs(desplot)
+   desplot(dat, yield~col*row|rep,
+           num=gen, out1=rep, # unknown aspect
+           main="kempton.rowcol")
 
 
-         # Model with rep, row, col as random.  Kempton, page 62.
-         # Use "-1" so that the vcov matrix doesn't include intercept
-         libs(lme4)
-         m1 <- lmer(yield ~ -1 + gen + rep + (1|rep:rowf) + (1|rep:colf), data=dat)
+   # Model with rep, row, col as random.  Kempton, page 62.
+   # Use "-1" so that the vcov matrix doesn't include intercept
+   libs(lme4)
+   m1 <- lmer(yield ~ -1 + gen + rep + (1|rep:rowf) + (1|rep:colf), data=dat)
 
-         # Variance components match Kempton.
-         print(m1, corr=FALSE)
+   # Variance components match Kempton.
+   print(m1, corr=FALSE)
 
-         # Standard error of difference for genotypes.  Kempton page 62, bottom.
-         covs <- as.matrix(vcov(m1)[1:35, 1:35])
-         vars <- diag(covs)
-         vdiff <- outer(vars, vars, "+") - 2 * covs
-         sed <- sqrt(vdiff[upper.tri(vdiff)])
-         min(sed) # Minimum SED
-         mean(sed) # Average SED
-         max(sed) # Maximum SED
+   # Standard error of difference for genotypes.  Kempton page 62, bottom.
+   covs <- as.matrix(vcov(m1)[1:35, 1:35])
+   vars <- diag(covs)
+   vdiff <- outer(vars, vars, "+") - 2 * covs
+   sed <- sqrt(vdiff[upper.tri(vdiff)])
+   min(sed) # Minimum SED
+   mean(sed) # Average SED
+   max(sed) # Maximum SED
 
 
-         ## End(Not run)
+   ## End(Not run)

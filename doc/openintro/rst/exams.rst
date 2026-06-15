@@ -1,37 +1,34 @@
-.. container::
+===== ===============
+exams R Documentation
+===== ===============
 
-   .. container::
+Exam scores
+-----------
 
-      ===== ===============
-      exams R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Exam scores
-         :name: exam-scores
+Exam scores from a class of 19 students.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Exam scores from a class of 19 students.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   exams
 
-      .. code:: R
+Format
+~~~~~~
 
-         exams
+A data frame with 19 observations on the following variable.
 
-      .. rubric:: Format
-         :name: format
+scores
+   a numeric vector
 
-      A data frame with 19 observations on the following variable.
+Examples
+~~~~~~~~
 
-      scores
-         a numeric vector
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         hist(exams$scores)
+   hist(exams$scores)

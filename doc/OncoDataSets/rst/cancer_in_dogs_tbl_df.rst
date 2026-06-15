@@ -1,62 +1,55 @@
-.. container::
+===================== ===============
+cancer_in_dogs_tbl_df R Documentation
+===================== ===============
 
-   .. container::
+Cancer in Dogs and Exposure to 2,4-D Herbicide
+----------------------------------------------
 
-      ===================== ===============
-      cancer_in_dogs_tbl_df R Documentation
-      ===================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Cancer in Dogs and Exposure to 2,4-D Herbicide
-         :name: cancer-in-dogs-and-exposure-to-24-d-herbicide
+This dataset, cancer_in_dogs_tbl_df, is a tibble containing information
+from a study conducted in 1994. The study aimed to determine whether
+there is an increased risk of cancer in dogs exposed to the herbicide
+2,4-Dichlorophenoxyacetic acid (2,4-D). It includes data from 491 dogs
+diagnosed with cancer (case group) and 945 dogs without cancer (control
+group).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, cancer_in_dogs_tbl_df, is a tibble containing
-      information from a study conducted in 1994. The study aimed to
-      determine whether there is an increased risk of cancer in dogs
-      exposed to the herbicide 2,4-Dichlorophenoxyacetic acid (2,4-D).
-      It includes data from 491 dogs diagnosed with cancer (case group)
-      and 945 dogs without cancer (control group).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(cancer_in_dogs_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(cancer_in_dogs_tbl_df)
+A tibble with 1,436 observations and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+order
+   Indicates whether the dog belongs to the "case" group (with cancer)
+   or the "control" group (without cancer) (factor with 2 levels).
 
-      A tibble with 1,436 observations and 2 variables:
+response
+   Indicates the dog's exposure to the herbicide 2,4-D, with levels such
+   as "exposed" or "not exposed" (factor with 2 levels).
 
-      order
-         Indicates whether the dog belongs to the "case" group (with
-         cancer) or the "control" group (without cancer) (factor with 2
-         levels).
+Details
+~~~~~~~
 
-      response
-         Indicates the dog's exposure to the herbicide 2,4-D, with
-         levels such as "exposed" or "not exposed" (factor with 2
-         levels).
+The dataset name has been kept as 'cancer_in_dogs_tbl_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the OncoDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'tbl_df' indicates that the dataset is a tibble. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'cancer_in_dogs_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The suffix 'tbl_df' indicates that the dataset is
-      a tibble. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the openintro package. Original study: Hayes HM,
-      Tarone RE, Cantor KP, Jessen CR, McCurnin DM, and Richardson RC.
-      1991. Case-Control Study of Canine Malignant Lymphoma: Positive
-      Association With Dog Owner's Use of 2,4-Dichlorophenoxyacetic Acid
-      Herbicides. \*Journal of the National Cancer Institute\*,
-      83(17):1226-1231.
+Data taken from the openintro package. Original study: Hayes HM, Tarone
+RE, Cantor KP, Jessen CR, McCurnin DM, and Richardson RC. 1991.
+Case-Control Study of Canine Malignant Lymphoma: Positive Association
+With Dog Owner's Use of 2,4-Dichlorophenoxyacetic Acid Herbicides.
+\*Journal of the National Cancer Institute\*, 83(17):1226-1231.

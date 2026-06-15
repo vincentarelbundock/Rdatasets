@@ -1,59 +1,54 @@
-.. container::
+=============== ===============
+nfl_suspensions R Documentation
+=============== ===============
 
-   .. container::
+The NFL's Uneven History Of Punishing Domestic Violence
+-------------------------------------------------------
 
-      =============== ===============
-      nfl_suspensions R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The NFL's Uneven History Of Punishing Domestic
-         Violence
-         :name: the-nfls-uneven-history-of-punishing-domestic-violence
+The raw data behind the story "The NFL's Uneven History Of Punishing
+Domestic Violence"
+https://fivethirtyeight.com/features/nfl-domestic-violence-policy-suspensions/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "The NFL's Uneven History Of
-      Punishing Domestic Violence"
-      https://fivethirtyeight.com/features/nfl-domestic-violence-policy-suspensions/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   nfl_suspensions
 
-      .. code:: R
+Format
+~~~~~~
 
-         nfl_suspensions
+A data frame with 269 rows representing National Football League players
+and 7 variables:
 
-      .. rubric:: Format
-         :name: format
+name
+   first initial.last name
 
-      A data frame with 269 rows representing National Football League
-      players and 7 variables:
+team
+   team at time of suspension
 
-      name
-         first initial.last name
+games
+   number of games suspended (one regular season = 16 games)
 
-      team
-         team at time of suspension
+category
+   personal conduct, substance abuse, performance enhancing drugs or
+   in-game violence
 
-      games
-         number of games suspended (one regular season = 16 games)
+description
+   description of suspension
 
-      category
-         personal conduct, substance abuse, performance enhancing drugs
-         or in-game violence
+year
+   year of suspension
 
-      description
-         description of suspension
+source
+   news source
 
-      year
-         year of suspension
+Source
+~~~~~~
 
-      source
-         news source
-
-      .. rubric:: Source
-         :name: source
-
-      https://en.wikipedia.org/wiki/List_of_players_and_coaches_suspended_by_the_NFL,
-      https://www.spotrac.com/fines-tracker/nfl/suspensions/
+https://en.wikipedia.org/wiki/List_of_players_and_coaches_suspended_by_the_NFL,
+https://www.spotrac.com/fines-tracker/nfl/suspensions/

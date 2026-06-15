@@ -1,47 +1,40 @@
-.. container::
+========= ===============
+books_mts R Documentation
+========= ===============
 
-   .. container::
+Sales of Paperback and Hardcover Books.
+---------------------------------------
 
-      ========= ===============
-      books_mts R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Sales of Paperback and Hardcover Books.
-         :name: sales-of-paperback-and-hardcover-books.
+The dataset name has been changed to 'books_mts' to avoid confusion with
+other packages in the R ecosystem from which datasets have been sourced.
+The suffix 'mts' signifies that this dataset is a multivariate time
+series object. This naming convention helps distinguish this dataset as
+part of the 'timeseriesdatasets' package and assists users in
+identifying its specific characteristics. The original content of the
+dataset has not been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'books_mts' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. The suffix 'mts' signifies that this
-      dataset is a multivariate time series object. This naming
-      convention helps distinguish this dataset as part of the
-      'timeseriesdatasets' package and assists users in identifying its
-      specific characteristics. The original content of the dataset has
-      not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(books_mts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(books_mts)
+A time series object with 60 observations and 2 series:
 
-      .. rubric:: Format
-         :name: format
+Paperback
+   A numeric vector representing the monthly sales of paperback books.
 
-      A time series object with 60 observations and 2 series:
+Hardcover
+   A numeric vector representing the monthly sales of hardcover books.
 
-      Paperback
-         A numeric vector representing the monthly sales of paperback
-         books.
+Source
+~~~~~~
 
-      Hardcover
-         A numeric vector representing the monthly sales of hardcover
-         books.
-
-      .. rubric:: Source
-         :name: source
-
-      Data provided by the Australian Bureau of Statistics.
+Data provided by the Australian Bureau of Statistics.

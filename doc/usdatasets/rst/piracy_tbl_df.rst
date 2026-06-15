@@ -1,65 +1,58 @@
-.. container::
+============= ===============
+piracy_tbl_df R Documentation
+============= ===============
 
-   .. container::
+Piracy and PIPA/SOPA
+--------------------
 
-      ============= ===============
-      piracy_tbl_df R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Piracy and PIPA/SOPA
-         :name: piracy-and-pipasopa
+The dataset name has been changed to 'piracy_tbl_df' to avoid confusion
+with other packages in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a tibble. The original content of the dataset has not
+been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'piracy_tbl_df' to avoid
-      confusion with other packages in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a tibble. The original
-      content of the dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(piracy_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(piracy_tbl_df)
+A tibble with 534 observations and 8 variables:
 
-      .. rubric:: Format
-         :name: format
+name
+   Character string indicating the name of the politician.
 
-      A tibble with 534 observations and 8 variables:
+party
+   Factor with 3 levels representing the politician's party affiliation.
 
-      name
-         Character string indicating the name of the politician.
+state
+   Factor with 50 levels indicating the U.S. state the politician
+   represents.
 
-      party
-         Factor with 3 levels representing the politician's party
-         affiliation.
+money_pro
+   Numeric representing the amount of pro-piracy funding received.
 
-      state
-         Factor with 50 levels indicating the U.S. state the politician
-         represents.
+money_con
+   Numeric representing the amount of anti-piracy funding received.
 
-      money_pro
-         Numeric representing the amount of pro-piracy funding received.
+years
+   Integer indicating the number of years in office.
 
-      money_con
-         Numeric representing the amount of anti-piracy funding
-         received.
+stance
+   Factor with 5 levels indicating the politician's stance on piracy.
 
-      years
-         Integer indicating the number of years in office.
+chamber
+   Factor with 2 levels indicating the chamber of the U.S. Congress
+   (House or Senate).
 
-      stance
-         Factor with 5 levels indicating the politician's stance on
-         piracy.
+Source
+~~~~~~
 
-      chamber
-         Factor with 2 levels indicating the chamber of the U.S.
-         Congress (House or Senate).
-
-      .. rubric:: Source
-         :name: source
-
-      Data on political stances and funding related to piracy.
+Data on political stances and funding related to piracy.

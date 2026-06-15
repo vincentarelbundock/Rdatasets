@@ -1,59 +1,54 @@
-.. container::
+=========== ===============
+elo_blatter R Documentation
+=========== ===============
 
-   .. container::
+Blatter's Reign At FIFA Hasn't Helped Soccer's Poor
+---------------------------------------------------
 
-      =========== ===============
-      elo_blatter R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Blatter's Reign At FIFA Hasn't Helped Soccer's Poor
-         :name: blatters-reign-at-fifa-hasnt-helped-soccers-poor
+The raw data behind the story "Blatter's Reign At FIFA Hasn't Helped
+Soccer's Poor"
+https://fivethirtyeight.com/features/blatters-reign-at-fifa-hasnt-helped-soccers-poor/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Blatter's Reign At FIFA Hasn't
-      Helped Soccer's Poor"
-      https://fivethirtyeight.com/features/blatters-reign-at-fifa-hasnt-helped-soccers-poor/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   elo_blatter
 
-      .. code:: R
+Format
+~~~~~~
 
-         elo_blatter
+A data frame with 191 rows representing countries and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+country
+   FIFA member country
 
-      A data frame with 191 rows representing countries and 5 variables:
+elo98
+   The team's Elo in 1998
 
-      country
-         FIFA member country
+elo15
+   The team's Elo in 2015
 
-      elo98
-         The team's Elo in 1998
+confederation
+   Confederation to which country belongs
 
-      elo15
-         The team's Elo in 2015
+gdp06
+   The country's purchasing power parity GDP as of 2006
 
-      confederation
-         Confederation to which country belongs
+popu06
+   The country's 2006 population
 
-      gdp06
-         The country's purchasing power parity GDP as of 2006
+gdp_source
+   Source for gdp06
 
-      popu06
-         The country's 2006 population
+popu_source
+   Source for popu06
 
-      gdp_source
-         Source for gdp06
+Source
+~~~~~~
 
-      popu_source
-         Source for popu06
-
-      .. rubric:: Source
-         :name: source
-
-      See
-      https://github.com/fivethirtyeight/data/tree/master/elo-blatter.
+See https://github.com/fivethirtyeight/data/tree/master/elo-blatter.

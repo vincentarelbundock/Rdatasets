@@ -1,57 +1,53 @@
-.. container::
+==== ===============
+acme R Documentation
+==== ===============
 
-   .. container::
+Monthly Excess Returns
+----------------------
 
-      ==== ===============
-      acme R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Monthly Excess Returns
-         :name: monthly-excess-returns
+The ``acme`` data frame has 60 rows and 3 columns.
 
-      .. rubric:: Description
-         :name: description
+The excess return for the Acme Cleveland Corporation are recorded along
+with those for all stocks listed on the New York and American Stock
+Exchanges were recorded over a five year period. These excess returns
+are relative to the return on a risk-less investment such a U.S.
+Treasury bills.
 
-      The ``acme`` data frame has 60 rows and 3 columns.
+Usage
+~~~~~
 
-      The excess return for the Acme Cleveland Corporation are recorded
-      along with those for all stocks listed on the New York and
-      American Stock Exchanges were recorded over a five year period.
-      These excess returns are relative to the return on a risk-less
-      investment such a U.S. Treasury bills.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   acme
 
-      .. code:: R
+Format
+~~~~~~
 
-         acme
+This data frame contains the following columns:
 
-      .. rubric:: Format
-         :name: format
+``month``
+   A character string representing the month of the observation.
 
-      This data frame contains the following columns:
+``market``
+   The excess return of the market as a whole.
 
-      ``month``
-         A character string representing the month of the observation.
+``acme``
+   The excess return for the Acme Cleveland Corporation.
 
-      ``market``
-         The excess return of the market as a whole.
+Source
+~~~~~~
 
-      ``acme``
-         The excess return for the Acme Cleveland Corporation.
+The data were obtained from
 
-      .. rubric:: Source
-         :name: source
+Simonoff, J.S. and Tsai, C.-L. (1994) Use of modified profile likelihood
+for improved tests of constancy of variance in regression. *Applied
+Statistics*, **43**, 353–370.
 
-      The data were obtained from
+References
+~~~~~~~~~~
 
-      Simonoff, J.S. and Tsai, C.-L. (1994) Use of modified profile
-      likelihood for improved tests of constancy of variance in
-      regression. *Applied Statistics*, **43**, 353–370.
-
-      .. rubric:: References
-         :name: references
-
-      Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and
-      Their Application*. Cambridge University Press.
+Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
+Application*. Cambridge University Press.

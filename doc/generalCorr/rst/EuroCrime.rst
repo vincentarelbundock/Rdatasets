@@ -1,32 +1,27 @@
-.. container::
+========= ===============
+EuroCrime R Documentation
+========= ===============
 
-   .. container::
+European Crime Data
+-------------------
 
-      ========= ===============
-      EuroCrime R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: European Crime Data
-         :name: european-crime-data
+This data set refers to crime in European countries during 2008. The
+sources are World Bank and Eurostat. The crime statistics refers to
+homicides. It avoids possible reporting bias from the presence of police
+officers, because homicide reporting in most countries is standardized.
+Typical usage is: ``data(EuroCrime);attach(EuroCrime)``. The secondary
+source ‘quandl.com’ was used for collecting these data.
 
-      .. rubric:: Description
-         :name: description
+Details
+~~~~~~~
 
-      This data set refers to crime in European countries during 2008.
-      The sources are World Bank and Eurostat. The crime statistics
-      refers to homicides. It avoids possible reporting bias from the
-      presence of police officers, because homicide reporting in most
-      countries is standardized. Typical usage is:
-      ``data(EuroCrime);attach(EuroCrime)``. The secondary source
-      ‘quandl.com’ was used for collecting these data.
+The variables included in the dataset are:
 
-      .. rubric:: Details
-         :name: details
+- ``Country`` Name of the European country
 
-      The variables included in the dataset are:
+- ``crim`` Per capita crime rate
 
-      -  ``Country`` Name of the European country
-
-      -  ``crim`` Per capita crime rate
-
-      -  ``off`` Per capita deployment of police officers
+- ``off`` Per capita deployment of police officers

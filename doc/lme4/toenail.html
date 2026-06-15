@@ -1,0 +1,103 @@
+<!DOCTYPE html><html><head><title>R: Toenail onychomycosis data from dermatophyte infections</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>toenail</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Toenail onychomycosis data from dermatophyte infections
+</h2>
+
+<h3>Description</h3>
+
+<p>Results of a clinical trial (De Backer et al. 1998) to compare 
+two oral antifungal treatments: itraconazole and terbinafine to treat
+toenail onychomycosis causes by dermatophytes.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("toenail")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1908 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt><code>patientID</code></dt><dd><p>a unique identifier for each patient in the trial.</p>
+</dd>
+<dt><code>outcome</code></dt><dd><p>a factor indicating the severity of the patient's 
+onycholysis (separation of the nail plate from the nail bed), with levels 
+<code>none or mild</code> and <code>moderate or severe</code>.</p>
+</dd>
+<dt><code>treatment</code></dt><dd><p>a factor indicating the treatment used with levels
+<code>itraconazole</code> and <code>terbinafine</code>.</p>
+</dd>
+<dt><code>time</code></dt><dd><p>exact timing of visit in months.</p>
+</dd>
+<dt><code>visit</code></dt><dd><p>An integer represent the sequential visit number for
+each subject.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data in <a href="https://CRAN.R-project.org/package=lme4"><span class="pkg">lme4</span></a> was copied from the toenail data found in the 
+<a href="https://CRAN.R-project.org/package=HSAUR3"><span class="pkg">HSAUR3</span></a> package. From the dataset documentation from the 
+<a href="https://CRAN.R-project.org/package=HSAUR3"><span class="pkg">HSAUR3</span></a> package: There is a clinical trial 
+(De Backer et al. 1998) to compare two competing oral antifungal 
+treatments for toenail infection (dermatophyte onychomycosis). 
+A total of 378 patients were randomly allocated 
+into two treatment groups, one group receiving 250mg per day of terbinafine 
+and the other group 200mg per day of itraconazole. Patients were evaluated at 
+seven visits, intended to be at weeks 0, 4, 8, 12, 24, 36, and 48 for the 
+degree of separation of the nail plate from the nail bed (onycholysis) 
+dichotomized into <code>moderate or severe</code> and <code>none or mild</code>. But 
+patients did not always arrive exactly at the scheduled time and the exact 
+time in months that they did attend was recorded. The data is not balanced 
+since not all patients attended for all seven planned visits.
+</p>
+
+
+<h3>Source</h3>
+
+<p>(De Backer et al. 1998)
+</p>
+
+
+<h3>References</h3>
+
+<p>De Backer M, De Vroey C, Lesaffre E, Scheys I, De Keyser P (1998).
+&ldquo;Twelve weeks of continuous oral therapy for toenail onychomycosis  caused by dermatophytes: A double-blind comparative trial of terbinafine  250 mg/day versus itraconazole 200 mg/day.&rdquo;
+<em>Journal of the American Academy of Dermatology</em>, <b>38</b>(5, Supplement 2), S57-S63.
+ISSN 0190-9622, <a href="https://doi.org/10.1016/S0190-9622%2898%2970486-4">doi:10.1016/S0190-9622(98)70486-4</a>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>toemod &lt;- glmer(outcome ~ time*treatment + (1 | patientID), 
+                data = toenail, family = binomial(link = "logit"))
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

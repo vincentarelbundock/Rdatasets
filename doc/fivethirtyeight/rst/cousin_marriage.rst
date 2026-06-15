@@ -1,40 +1,36 @@
-.. container::
+=============== ===============
+cousin_marriage R Documentation
+=============== ===============
 
-   .. container::
+How Many Americans Are Married To Their Cousins?
+------------------------------------------------
 
-      =============== ===============
-      cousin_marriage R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: How Many Americans Are Married To Their Cousins?
-         :name: how-many-americans-are-married-to-their-cousins
+The raw data behind the story "How Many Americans Are Married To Their
+Cousins?"
+https://fivethirtyeight.com/features/how-many-americans-are-married-to-their-cousins/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "How Many Americans Are Married To
-      Their Cousins?"
-      https://fivethirtyeight.com/features/how-many-americans-are-married-to-their-cousins/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   cousin_marriage
 
-      .. code:: R
+Format
+~~~~~~
 
-         cousin_marriage
+A data frame with 70 rows representing countries and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+country
+   Country
 
-      A data frame with 70 rows representing countries and 2 variables:
+percent
+   Percent of marriages that are consanguineous
 
-      country
-         Country
+Source
+~~~~~~
 
-      percent
-         Percent of marriages that are consanguineous
-
-      .. rubric:: Source
-         :name: source
-
-      consang.net
+consang.net

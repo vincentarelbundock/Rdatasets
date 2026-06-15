@@ -1,89 +1,84 @@
-.. container::
+======== ===============
+MaskSite R Documentation
+======== ===============
 
-   .. container::
+Mask Site, Alaska, USA
+----------------------
 
-      ======== ===============
-      MaskSite R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Mask Site, Alaska, USA
-         :name: mask-site-alaska-usa
+The distribution of five categories of artifacts at the Mask site,
+occupied by the Nunamiut (Binford 1978a).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The distribution of five categories of artifacts at the Mask site,
-      occupied by the Nunamiut (Binford 1978a).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("MaskSite")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("MaskSite")
+A data frame with 494 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``X``
+   horizontal coordinate
 
-      A data frame with 494 observations on the following 3 variables.
+``Y``
+   vertical coordinate
 
-      ``X``
-         horizontal coordinate
+``Category``
+   a factor with levels ``Artifacts``, ``Spent Cartridges``,
+   ``Wood Shavings``, ``Bone Splinters``, and ``Large Bones``
 
-      ``Y``
-         vertical coordinate
+Details
+~~~~~~~
 
-      ``Category``
-         a factor with levels ``Artifacts``, ``Spent Cartridges``,
-         ``Wood Shavings``, ``Bone Splinters``, and ``Large Bones``
+The Mask Site was reported by Binford (1978a) as an example of a hunting
+stand where Nunamiut men watched for game as part of a larger
+ethnoarchaeological study of the Nunamiut (Binford 1978b). The data from
+the site have been widely used to illustrate the utility of various
+methods of intra site spatial analysis (including Baxter 2003, Blankholm
+1991, Kintigh 1990, and Whallon 1984). The data consist of 494 locations
+of five different classes (artifacts, spent cartridges, wood shavings,
+bone splinters, and large bones). The data were scanned from Appendix A
+(Blankholm 1991).
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The Mask Site was reported by Binford (1978a) as an example of a
-      hunting stand where Nunamiut men watched for game as part of a
-      larger ethnoarchaeological study of the Nunamiut (Binford 1978b).
-      The data from the site have been widely used to illustrate the
-      utility of various methods of intra site spatial analysis
-      (including Baxter 2003, Blankholm 1991, Kintigh 1990, and Whallon
-      1984). The data consist of 494 locations of five different classes
-      (artifacts, spent cartridges, wood shavings, bone splinters, and
-      large bones). The data were scanned from Appendix A (Blankholm
-      1991).
+Binford, L. R. 1978a. Dimensional Analysis of Behavior and Site
+Structure: Learning from an Eskimo Hunting Stand. *American Antiquity*
+43: 330 - 361.
 
-      .. rubric:: Source
-         :name: source
+Blankholm, Hans Peter. 1991. *Intrasite Spatial Analysis in Theory and
+Practice*. Aarhus University Press.
 
-      Binford, L. R. 1978a. Dimensional Analysis of Behavior and Site
-      Structure: Learning from an Eskimo Hunting Stand. *American
-      Antiquity* 43: 330 - 361.
+References
+~~~~~~~~~~
 
-      Blankholm, Hans Peter. 1991. *Intrasite Spatial Analysis in Theory
-      and Practice*. Aarhus University Press.
+Baxter, M. 2003. *Statistics in Archaeology*. Arnold Applications in
+Statistics.
 
-      .. rubric:: References
-         :name: references
+Binford, L. R. 1978b. Nunamiut Ethnoarchaeology. Academic Press.
 
-      Baxter, M. 2003. *Statistics in Archaeology*. Arnold Applications
-      in Statistics.
+Kintigh, K. 1990. Intrasite Spatial Analysis: A Commentary on Major
+Methods. In *Mathematics and Information Science in Archaeology: A
+Flexible Framework*, edited by A. Voorrips, pp 165-200. Studies in
+Modern Archaeology 3. Holos.
 
-      Binford, L. R. 1978b. Nunamiut Ethnoarchaeology. Academic Press.
+Whallon, R. 1984. Unconstrained Clustering for the Analysis of Spatial
+Distributions in Archaeology. In *Intrasite Spatial Analysis in
+Archaeology*, edited by H. Hietala, pp 242 - 277. Cambridge University
+Press.
 
-      Kintigh, K. 1990. Intrasite Spatial Analysis: A Commentary on
-      Major Methods. In *Mathematics and Information Science in
-      Archaeology: A Flexible Framework*, edited by A. Voorrips, pp
-      165-200. Studies in Modern Archaeology 3. Holos.
+Examples
+~~~~~~~~
 
-      Whallon, R. 1984. Unconstrained Clustering for the Analysis of
-      Spatial Distributions in Archaeology. In *Intrasite Spatial
-      Analysis in Archaeology*, edited by H. Hietala, pp 242 - 277.
-      Cambridge University Press.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(MaskSite)
-         plot(Y~X, MaskSite, main="Mask Site", asp=1, pch=as.numeric(Category), cex=.75)
-         legend("bottomright", levels(MaskSite$Category), pch=1:5)
+   data(MaskSite)
+   plot(Y~X, MaskSite, main="Mask Site", asp=1, pch=as.numeric(Category), cex=.75)
+   legend("bottomright", levels(MaskSite$Category), pch=1:5)

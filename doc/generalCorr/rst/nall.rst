@@ -1,22 +1,18 @@
-.. container::
+==== ===============
+nall R Documentation
+==== ===============
 
-   .. container::
+internal nall
+-------------
 
-      ==== ===============
-      nall R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: internal nall
-         :name: internal-nall
+intended for internal use only
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      intended for internal use only
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
-
-      .. code:: R
-
-         nall
+   nall

@@ -1,42 +1,37 @@
-.. container::
+========== ===============
+trump_news R Documentation
+========== ===============
 
-   .. container::
+How Trump Hacked The Media
+--------------------------
 
-      ========== ===============
-      trump_news R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: How Trump Hacked The Media
-         :name: how-trump-hacked-the-media
+The raw data behind the story "How Trump Hacked The Media"
+https://fivethirtyeight.com/features/how-donald-trump-hacked-the-media/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "How Trump Hacked The Media"
-      https://fivethirtyeight.com/features/how-donald-trump-hacked-the-media/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   trump_news
 
-      .. code:: R
+Format
+~~~~~~
 
-         trump_news
+A data frame with 286 rows representing lead stories and 3 variables:
 
-      .. rubric:: Format
-         :name: format
+date
+   Date of lead story about Donald Trump.
 
-      A data frame with 286 rows representing lead stories and 3
-      variables:
+major_cat
+   Story classification
 
-      date
-         Date of lead story about Donald Trump.
+detail
 
-      major_cat
-         Story classification
+Source
+~~~~~~
 
-      detail
-
-      .. rubric:: Source
-         :name: source
-
-      Memeorandum https://www.memeorandum.com/.
+Memeorandum https://www.memeorandum.com/.

@@ -1,52 +1,47 @@
-.. container::
+============== ===============
+Anxiety_tbl_df R Documentation
+============== ===============
 
-   .. container::
+Math Test Scores versus Anxiety Scores
+--------------------------------------
 
-      ============== ===============
-      Anxiety_tbl_df R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Math Test Scores versus Anxiety Scores
-         :name: math-test-scores-versus-anxiety-scores
+This dataset, Anxiety_tbl_df, is a tibble containing information about
+math test scores and anxiety levels before the test for 20 students. The
+dataset provides insights into the relationship between anxiety levels
+and math test performance.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, Anxiety_tbl_df, is a tibble containing information
-      about math test scores and anxiety levels before the test for 20
-      students. The dataset provides insights into the relationship
-      between anxiety levels and math test performance.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Anxiety_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Anxiety_tbl_df)
+A tibble with 20 observations and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+anxiety
+   Anxiety score of the student before taking the math test (integer).
 
-      A tibble with 20 observations and 2 variables:
+math
+   Math test score of the student (integer).
 
-      anxiety
-         Anxiety score of the student before taking the math test
-         (integer).
+Details
+~~~~~~~
 
-      math
-         Math test score of the student (integer).
+The dataset name has been kept as 'Anxiety_tbl_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the educationR package and assists
+users in identifying its specific characteristics. The suffix 'tbl_df'
+indicates that the dataset is a tibble. The original content has not
+been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'Anxiety_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      educationR package and assists users in identifying its specific
-      characteristics. The suffix 'tbl_df' indicates that the dataset is
-      a tibble. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset was taken from the BSDA package.
+The dataset was taken from the BSDA package.

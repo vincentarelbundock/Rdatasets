@@ -1,70 +1,63 @@
-.. container::
+============= ===============
+weather_check R Documentation
+============= ===============
 
-   .. container::
+Where People Go To Check The Weather
+------------------------------------
 
-      ============= ===============
-      weather_check R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Where People Go To Check The Weather
-         :name: where-people-go-to-check-the-weather
+The raw data behind the story "Where People Go To Check The Weather"
+https://fivethirtyeight.com/features/weather-forecast-news-app-habits/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Where People Go To Check The
-      Weather"
-      https://fivethirtyeight.com/features/weather-forecast-news-app-habits/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   weather_check
 
-      .. code:: R
+Format
+~~~~~~
 
-         weather_check
+A data frame with 928 rows representing respondents and 9 variables:
 
-      .. rubric:: Format
-         :name: format
+respondent_id
+   Respondent ID
 
-      A data frame with 928 rows representing respondents and 9
-      variables:
+ck_weather
+   Do you typically check a daily weather report?
 
-      respondent_id
-         Respondent ID
+weather_source
+   How do you typically check the weather?
 
-      ck_weather
-         Do you typically check a daily weather report?
+weather_source_site
+   If they responded "A specific website or app" when asked how they
+   typically check the weather, they were asked to write-in the app or
+   website they used.
 
-      weather_source
-         How do you typically check the weather?
+ck_weather_watch
+   If you had a smartwatch (like the soon to be released Apple Watch),
+   how likely or unlikely would you be to check the weather on that
+   device?
 
-      weather_source_site
-         If they responded "A specific website or app" when asked how
-         they typically check the weather, they were asked to write-in
-         the app or website they used.
+age
+   Age
 
-      ck_weather_watch
-         If you had a smartwatch (like the soon to be released Apple
-         Watch), how likely or unlikely would you be to check the
-         weather on that device?
+female
+   Gender
 
-      age
-         Age
+hhold_income
+   How much total combined money did all members of your HOUSEHOLD earn
+   last year?
 
-      female
-         Gender
+region
+   US Region
 
-      hhold_income
-         How much total combined money did all members of your HOUSEHOLD
-         earn last year?
+Source
+~~~~~~
 
-      region
-         US Region
-
-      .. rubric:: Source
-         :name: source
-
-      The source of the data is a Survey Monkey Audience poll
-      commissioned by FiveThirtyEight and conducted from April 6 to
-      April 10, 2015. See
-      https://github.com/fivethirtyeight/data/tree/master/weather-check
+The source of the data is a Survey Monkey Audience poll commissioned by
+FiveThirtyEight and conducted from April 6 to April 10, 2015. See
+https://github.com/fivethirtyeight/data/tree/master/weather-check

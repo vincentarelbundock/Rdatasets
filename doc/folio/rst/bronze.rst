@@ -1,90 +1,84 @@
-.. container::
+====== ===============
+bronze R Documentation
+====== ===============
 
-   .. container::
+Chinese Ritual Bronzes
+----------------------
 
-      ====== ===============
-      bronze R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Chinese Ritual Bronzes
-         :name: chinese-ritual-bronzes
+Chemical analysis of 369 Chinese ritual bronzes. The major elements (Cu,
+Sn and Pb) were measured using atomic absorption spectroscopy and the
+trace elements using neutron activation analysis.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Chemical analysis of 369 Chinese ritual bronzes. The major
-      elements (Cu, Sn and Pb) were measured using atomic absorption
-      spectroscopy and the trace elements using neutron activation
-      analysis.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   bronze
 
-      .. code:: R
+Format
+~~~~~~
 
-         bronze
+A ``data.frame`` with 88 observations and 22 variables (chemical
+elements):
 
-      .. rubric:: Format
-         :name: format
+reference
+   ``integer``: catalog number.
 
-      A ``data.frame`` with 88 observations and 22 variables (chemical
-      elements):
+chronology
+   ``integer``: chronology (typology).
 
-      reference
-         ``integer``: catalog number.
+dynasty
+   ordered ``factor``: dynasty name.
 
-      chronology
-         ``integer``: chronology (typology).
+Cu
+   ``numeric``: Cu content (ppm).
 
-      dynasty
-         ordered ``factor``: dynasty name.
+Sn
+   ``numeric``: Sn content (ppm).
 
-      Cu
-         ``numeric``: Cu content (ppm).
+Pb
+   ``numeric``: Pb content (ppm).
 
-      Sn
-         ``numeric``: Sn content (ppm).
+Zn
+   ``numeric``: Zn content (ppm).
 
-      Pb
-         ``numeric``: Pb content (ppm).
+Au
+   ``numeric``: Au content (ppm).
 
-      Zn
-         ``numeric``: Zn content (ppm).
+Ag
+   ``numeric``: Ag content (ppm).
 
-      Au
-         ``numeric``: Au content (ppm).
+As
+   ``numeric``: As content (ppm).
 
-      Ag
-         ``numeric``: Ag content (ppm).
+Sb
+   ``numeric``: Sb content (ppm).
 
-      As
-         ``numeric``: As content (ppm).
+Source
+~~~~~~
 
-      Sb
-         ``numeric``: Sb content (ppm).
+Wood, J. R. & Liu, Y. (2023). A Multivariate Approach to Investigate
+Metallurgical Technology: The Case of the Chinese Ritual Bronzes.
+*Journal of Archaeological Method and Theory*, 30: 707-756.
+`doi:10.1007/s10816-022-09572-8 <https://doi.org/10.1007/s10816-022-09572-8>`__.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Wood, J. R. & Liu, Y. (2023). A Multivariate Approach to
-      Investigate Metallurgical Technology: The Case of the Chinese
-      Ritual Bronzes. *Journal of Archaeological Method and Theory*, 30:
-      707-756.
-      `doi:10.1007/s10816-022-09572-8 <https://doi.org/10.1007/s10816-022-09572-8>`__.
+Bagley, R. W. (1987). *Shang ritual bronzes in the Arthur M. Sackler
+collections*. New York: The Arthur M. Sackler Foundation.
 
-      .. rubric:: References
-         :name: references
+Rawson, J. (1990). *Western Zhou ritual bronzes from the Arthur M.
+Sackler collections*. New York: The Arthur M. Sackler Foundation.
 
-      Bagley, R. W. (1987). *Shang ritual bronzes in the Arthur M.
-      Sackler collections*. New York: The Arthur M. Sackler Foundation.
+So, J. (1995). *Eastern Zhou ritual bronzes from the Arthur M. Sackler
+Collections*. New York: The Arthur M. Sackler Foundation.
 
-      Rawson, J. (1990). *Western Zhou ritual bronzes from the Arthur M.
-      Sackler collections*. New York: The Arthur M. Sackler Foundation.
+See Also
+~~~~~~~~
 
-      So, J. (1995). *Eastern Zhou ritual bronzes from the Arthur M.
-      Sackler Collections*. New York: The Arthur M. Sackler Foundation.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      Other chemical data: ``kommos``, ``verre``
+Other chemical data: ``kommos``, ``verre``

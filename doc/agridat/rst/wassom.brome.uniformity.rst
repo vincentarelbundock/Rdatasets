@@ -1,96 +1,91 @@
-.. container::
+======================= ===============
+wassom.brome.uniformity R Documentation
+======================= ===============
 
-   .. container::
+Uniformity trials of bromegrass
+-------------------------------
 
-      ======================= ===============
-      wassom.brome.uniformity R Documentation
-      ======================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trials of bromegrass
-         :name: uniformity-trials-of-bromegrass
+Uniformity trials of bromegrass at Ames, Iowa, 1950-1951.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trials of bromegrass at Ames, Iowa, 1950-1951.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("wassom.brome.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("wassom.brome.uniformity")
+A data frame with 1296 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``expt``
+   experiment
 
-      A data frame with 1296 observations on the following 3 variables.
+``row``
+   row
 
-      ``expt``
-         experiment
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   forage yield, pounds
 
-      ``col``
-         column
+Details
+~~~~~~~
 
-      ``yield``
-         forage yield, pounds
+Experiments were conducted at Ames, Iowa. The response variable is
+forage yield in pounds of green weight.
 
-      .. rubric:: Details
-         :name: details
+Optimum plot size was estimated to be about 3.5 x 7.5 feet.
 
-      Experiments were conducted at Ames, Iowa. The response variable is
-      forage yield in pounds of green weight.
+Wassom and Kalton used two different methods to estimate optimum plot
+size. 1. Relative efficiency of different plot sizes. 2. Regression of
+the log variance of yield vs log plot size.
 
-      Optimum plot size was estimated to be about 3.5 x 7.5 feet.
+There are three Experiments:
 
-      Wassom and Kalton used two different methods to estimate optimum
-      plot size. 1. Relative efficiency of different plot sizes. 2.
-      Regression of the log variance of yield vs log plot size.
+Experiment E1 was broadcast seeded, harvested in 1950.
 
-      There are three Experiments:
+Experiment E2 was row planted, harvested in 1950.
 
-      Experiment E1 was broadcast seeded, harvested in 1950.
+Experiment E3 was broadcast seeded, harvested in 1951. This field
+contained a mixture of alfalfa and brome in about equal proportions.
 
-      Experiment E2 was row planted, harvested in 1950.
+Each plot was 3.5 ft x 4 ft, but the orientation of the plot is not
+clear.
 
-      Experiment E3 was broadcast seeded, harvested in 1951. This field
-      contained a mixture of alfalfa and brome in about equal
-      proportions.
+Field width: 36 plots
 
-      Each plot was 3.5 ft x 4 ft, but the orientation of the plot is
-      not clear.
+Field length: 36 plots
 
-      Field width: 36 plots
+Source
+~~~~~~
 
-      Field length: 36 plots
+Wassom and R.R. Kalton. (1953). Estimations of Optimum Plot Size Using
+Data from Bromegrass Uniformity Trials. Agricultural Experiment Station,
+Iowa State College, Bulletin 396, page 314-319.
+https://dr.lib.iastate.edu/handle/20.500.12876/62735
+https://babel.hathitrust.org/cgi/pt?id=uiug.30112019570701&view=1up&seq=26&skin=2021
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Wassom and R.R. Kalton. (1953). Estimations of Optimum Plot Size
-      Using Data from Bromegrass Uniformity Trials. Agricultural
-      Experiment Station, Iowa State College, Bulletin 396, page
-      314-319. https://dr.lib.iastate.edu/handle/20.500.12876/62735
-      https://babel.hathitrust.org/cgi/pt?id=uiug.30112019570701&view=1up&seq=26&skin=2021
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+     library(agridat)
+     data(wassom.brome.uniformity)
+     dat <- wassom.brome.uniformity
 
-         ## Not run: 
+     libs(desplot)
+     desplot(dat, yield~col*row|expt,
+             flip=TRUE, aspect=1, # approximate aspect
+             main="wassom.brome.uniformity")
+     
 
-           library(agridat)
-           data(wassom.brome.uniformity)
-           dat <- wassom.brome.uniformity
-
-           libs(desplot)
-           desplot(dat, yield~col*row|expt,
-                   flip=TRUE, aspect=1, # approximate aspect
-                   main="wassom.brome.uniformity")
-           
-
-         ## End(Not run)
+   ## End(Not run)

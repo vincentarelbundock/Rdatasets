@@ -1,41 +1,37 @@
-.. container::
+==== ===============
+fcid R Documentation
+==== ===============
 
-   .. container::
+Summary of male heights from USDA Food Commodity Intake Database
+----------------------------------------------------------------
 
-      ==== ===============
-      fcid R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Summary of male heights from USDA Food Commodity
-         Intake Database
-         :name: summary-of-male-heights-from-usda-food-commodity-intake-database
+Sample of heights based on the weighted sample in the survey.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Sample of heights based on the weighted sample in the survey.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   fcid
 
-      .. code:: R
+Format
+~~~~~~
 
-         fcid
+A data frame with 100 observations on the following 2 variables.
 
-      .. rubric:: Format
-         :name: format
+height
+   a numeric vector
 
-      A data frame with 100 observations on the following 2 variables.
+num_of_adults
+   a numeric vector
 
-      height
-         a numeric vector
+Examples
+~~~~~~~~
 
-      num_of_adults
-         a numeric vector
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         fcid
+   fcid

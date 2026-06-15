@@ -1,120 +1,114 @@
-.. container::
+========== ===============
+TRBPottery R Documentation
+========== ===============
 
-   .. container::
+Neolithic TRB Pottery from Demark
+---------------------------------
 
-      ========== ===============
-      TRBPottery R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Neolithic TRB Pottery from Demark
-         :name: neolithic-trb-pottery-from-demark
+Measurements at 8 landmarks along one side of 118 Neolithic TRB
+(Trichterrandbecherkultur, Funnelneckbeaker culture) pottery vessels
+representing 3 different groups.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Measurements at 8 landmarks along one side of 118 Neolithic TRB
-      (Trichterrandbecherkultur, Funnelneckbeaker culture) pottery
-      vessels representing 3 different groups.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("TRBPottery")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("TRBPottery")
+A data frame with 118 observations on the following 17 variables.
 
-      .. rubric:: Format
-         :name: format
+``Form``
+   a factor with levels ``Funnel beakers``, ``Bowls``, and ``Flasks``
 
-      A data frame with 118 observations on the following 17 variables.
+``AX``
+   Point 1, x
 
-      ``Form``
-         a factor with levels ``Funnel beakers``, ``Bowls``, and
-         ``Flasks``
+``AY``
+   Point 1, y
 
-      ``AX``
-         Point 1, x
+``BX``
+   Point 2, x
 
-      ``AY``
-         Point 1, y
+``BY``
+   Point 2, y
 
-      ``BX``
-         Point 2, x
+``CX``
+   Point 3, x
 
-      ``BY``
-         Point 2, y
+``CY``
+   Point 3, y
 
-      ``CX``
-         Point 3, x
+``DX``
+   Point 4, x
 
-      ``CY``
-         Point 3, y
+``DY``
+   Point 4, y
 
-      ``DX``
-         Point 4, x
+``EX``
+   Point 5, x
 
-      ``DY``
-         Point 4, y
+``EY``
+   Point 5, y
 
-      ``EX``
-         Point 5, x
+``FX``
+   Point 6, x
 
-      ``EY``
-         Point 5, y
+``FY``
+   Point 6, y
 
-      ``FX``
-         Point 6, x
+``GX``
+   Point 7, x
 
-      ``FY``
-         Point 6, y
+``GY``
+   Point 7, y
 
-      ``GX``
-         Point 7, x
+``HX``
+   Point 8, x
 
-      ``GY``
-         Point 7, y
+``HY``
+   Point 8, y
 
-      ``HX``
-         Point 8, x
+Details
+~~~~~~~
 
-      ``HY``
-         Point 8, y
+The data are based on a study by E. K. Nielsen (1983) of Neolithic
+Pottery of 135 complete pots. The measurements are taken at landmarks
+identified along the profile of each pot (see Madsen, 1988 Figure 5).
+The data were reanalyzed by Madsen (1988). Baxter (1994) reanalyzed the
+data using several different methods. The data were scanned from Table 1
+in Madsen (1988, p. 18) which included only 118 pots.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The data are based on a study by E. K. Nielsen (1983) of Neolithic
-      Pottery of 135 complete pots. The measurements are taken at
-      landmarks identified along the profile of each pot (see Madsen,
-      1988 Figure 5). The data were reanalyzed by Madsen (1988). Baxter
-      (1994) reanalyzed the data using several different methods. The
-      data were scanned from Table 1 in Madsen (1988, p. 18) which
-      included only 118 pots.
+Madsen, T. 1988. Multivariate Statistics and Archaeology. In
+*Multivariate Archaeology: Numerical Approaches in Scandinavian
+Archaeology*, edited by T. Madsen, pp 7 - 28.
 
-      .. rubric:: Source
-         :name: source
+Nielsen, E. K. 1983. Tidligneolitiske Keramikfund. Unpublished thesis.
+Institute of Archaeology, University of Copenhagen.
 
-      Madsen, T. 1988. Multivariate Statistics and Archaeology. In
-      *Multivariate Archaeology: Numerical Approaches in Scandinavian
-      Archaeology*, edited by T. Madsen, pp 7 - 28.
+References
+~~~~~~~~~~
 
-      Nielsen, E. K. 1983. Tidligneolitiske Keramikfund. Unpublished
-      thesis. Institute of Archaeology, University of Copenhagen.
+Baxter, M. J. 1994. *Exploratory Multivariate Analysis in Archaeology*.
+Edinburgh University Press, pp 128-132.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Baxter, M. J. 1994. *Exploratory Multivariate Analysis in
-      Archaeology*. Edinburgh University Press, pp 128-132.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(TRBPottery)
-         TRBPottery.frm <- aggregate(TRBPottery[, -1], list(Form=TRBPottery$Form), mean)
-         Xvals <- TRBPottery.frm[, seq(2, 16, by=2)]
-         Yvals <- TRBPottery.frm[, seq(3, 17, by=2)]
-         matplot(t(Xvals), t(Yvals), xlab="X", ylab="Y", type="l", asp=1, las=1, col="black", lwd=2)
-         legend("topleft", levels(TRBPottery$Form), lty=1:3, col="black", lwd=2)
+   data(TRBPottery)
+   TRBPottery.frm <- aggregate(TRBPottery[, -1], list(Form=TRBPottery$Form), mean)
+   Xvals <- TRBPottery.frm[, seq(2, 16, by=2)]
+   Yvals <- TRBPottery.frm[, seq(3, 17, by=2)]
+   matplot(t(Xvals), t(Yvals), xlab="X", ylab="Y", type="l", asp=1, las=1, col="black", lwd=2)
+   legend("topleft", levels(TRBPottery$Form), lty=1:3, col="black", lwd=2)

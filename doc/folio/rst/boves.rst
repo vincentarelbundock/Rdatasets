@@ -1,44 +1,39 @@
-.. container::
+===== ===============
+boves R Documentation
+===== ===============
 
-   .. container::
+Boves Ceramics
+--------------
 
-      ===== ===============
-      boves R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Boves Ceramics
-         :name: boves-ceramics
+A dataset containing the ceramic counts from the castle site of Boves
+(Somme, France). The data are grouped into eight periods ranging from
+the 10th to the 18th century and thirteen ceramic types.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset containing the ceramic counts from the castle site of
-      Boves (Somme, France). The data are grouped into eight periods
-      ranging from the 10th to the 18th century and thirteen ceramic
-      types.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   boves
 
-      .. code:: R
+Format
+~~~~~~
 
-         boves
+A ``data.frame`` with 8 observations (periods) and 13 variables (ceramic
+types).
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      A ``data.frame`` with 8 observations (periods) and 13 variables
-      (ceramic types).
+Racinet P. (2002). Le site castral et prioral de Boves du Xe au XVIIe
+siècle. Bilan des recherches 1996-2000. *Revue archéologique de
+Picardie*. Numéro spécial 20, 123 p.
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      Racinet P. (2002). Le site castral et prioral de Boves du Xe au
-      XVIIe siècle. Bilan des recherches 1996-2000. *Revue archéologique
-      de Picardie*. Numéro spécial 20, 123 p.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      Other count data: ``birds``, ``chevelon``, ``compiegne``,
-      ``loire``, ``merzbach``, ``mississippi``, ``zuni``
+Other count data: ``birds``, ``chevelon``, ``compiegne``, ``loire``,
+``merzbach``, ``mississippi``, ``zuni``

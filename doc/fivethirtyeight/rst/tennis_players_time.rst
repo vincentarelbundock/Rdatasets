@@ -1,48 +1,42 @@
-.. container::
+=================== ===============
+tennis_players_time R Documentation
+=================== ===============
 
-   .. container::
+Why Some Tennis Matches Take Forever
+------------------------------------
 
-      =================== ===============
-      tennis_players_time R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Why Some Tennis Matches Take Forever
-         :name: why-some-tennis-matches-take-forever
+The raw data behind the story "Why Some Tennis Matches Take Forever"
+https://fivethirtyeight.com/features/why-some-tennis-matches-take-forever/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Why Some Tennis Matches Take
-      Forever"
-      https://fivethirtyeight.com/features/why-some-tennis-matches-take-forever/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   tennis_players_time
 
-      .. code:: R
+Format
+~~~~~~
 
-         tennis_players_time
+A data frame with 218 rows representing players and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+player
+   Player Name
 
-      A data frame with 218 rows representing players and 2 variables:
+sec_added
+   Weighted average of seconds added per point as loser and winner of
+   matches, 1991-2015, from regression model controlling for tournament,
+   surface, year and other factors
 
-      player
-         Player Name
+Source
+~~~~~~
 
-      sec_added
-         Weighted average of seconds added per point as loser and winner
-         of matches, 1991-2015, from regression model controlling for
-         tournament, surface, year and other factors
+See https://github.com/fivethirtyeight/data/tree/master/tennis-time
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      See
-      https://github.com/fivethirtyeight/data/tree/master/tennis-time
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``tennis_events_time`` and ``tennis_serve_time``
+``tennis_events_time`` and ``tennis_serve_time``

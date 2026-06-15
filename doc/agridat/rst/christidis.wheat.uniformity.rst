@@ -1,80 +1,75 @@
-.. container::
+=========================== ===============
+christidis.wheat.uniformity R Documentation
+=========================== ===============
 
-   .. container::
+Uniformity trial of wheat
+-------------------------
 
-      =========================== ===============
-      christidis.wheat.uniformity R Documentation
-      =========================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of wheat
-         :name: uniformity-trial-of-wheat
+Uniformity trial of wheat at Cambridge, UK in 1931.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of wheat at Cambridge, UK in 1931.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("christidis.wheat.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("christidis.wheat.uniformity")
+A data frame with 288 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row
 
-      A data frame with 288 observations on the following 3 variables.
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   yield
 
-      ``col``
-         column
+Details
+~~~~~~~
 
-      ``yield``
-         yield
+Two blocks, 24 rows each. In block A, each 90-foot row was divided into
+12 units, each unit 7.5 feet long. Rows were 8 inches wide.
 
-      .. rubric:: Details
-         :name: details
+Field width: 12 units \* 7.5 feet = 90 feet
 
-      Two blocks, 24 rows each. In block A, each 90-foot row was divided
-      into 12 units, each unit 7.5 feet long. Rows were 8 inches wide.
+Field length: 24 rows \* 8 inches = 16 feet
 
-      Field width: 12 units \* 7.5 feet = 90 feet
+Source
+~~~~~~
 
-      Field length: 24 rows \* 8 inches = 16 feet
+Christidis, Basil G (1931). The importance of the shape of plots in
+field experimentation. *The Journal of Agricultural Science*, 21, 14-37.
+Table VI, p. 28. https://dx.doi.org/10.1017/S0021859600007942
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Christidis, Basil G (1931). The importance of the shape of plots
-      in field experimentation. *The Journal of Agricultural Science*,
-      21, 14-37. Table VI, p. 28.
-      https://dx.doi.org/10.1017/S0021859600007942
+None
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
-
-         ## Not run: 
-
-         library(agridat)
-         data(christidis.wheat.uniformity)
-         dat <- christidis.wheat.uniformity
-           
-         # sum(dat$yield) # Matches Christidis
-           
-          libs(desplot)
-          desplot(dat, yield ~  col*row,
-                  flip=TRUE, aspect=16/90, # true aspect
-                  main="christidis.wheat.uniformity")
+   library(agridat)
+   data(christidis.wheat.uniformity)
+   dat <- christidis.wheat.uniformity
+     
+   # sum(dat$yield) # Matches Christidis
+     
+    libs(desplot)
+    desplot(dat, yield ~  col*row,
+            flip=TRUE, aspect=16/90, # true aspect
+            main="christidis.wheat.uniformity")
 
 
-         ## End(Not run)
+   ## End(Not run)

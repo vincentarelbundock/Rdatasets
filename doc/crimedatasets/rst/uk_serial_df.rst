@@ -1,73 +1,67 @@
-.. container::
+============ ===============
+uk_serial_df R Documentation
+============ ===============
 
-   .. container::
+Serial Killers of the UK (1828 - 2015)
+--------------------------------------
 
-      ============ ===============
-      uk_serial_df R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Serial Killers of the UK (1828 - 2015)
-         :name: serial-killers-of-the-uk-1828---2015
+This dataset contains information about the serial killers in the UK,
+including their name, number of kills, years active, and the population
+during their time. It provides a historical view of some of the most
+infamous serial killers in the United Kingdom.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains information about the serial killers in the
-      UK, including their name, number of kills, years active, and the
-      population during their time. It provides a historical view of
-      some of the most infamous serial killers in the United Kingdom.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(uk_serial_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(uk_serial_df)
+A data frame with 62 observations and 8 variables:
 
-      .. rubric:: Format
-         :name: format
+number_of_kills
+   Total number of murders committed by the serial killer (integer).
 
-      A data frame with 62 observations and 8 variables:
+years
+   The years during which the serial killer was active (factor).
 
-      number_of_kills
-         Total number of murders committed by the serial killer
-         (integer).
+name
+   Name of the serial killer (character).
 
-      years
-         The years during which the serial killer was active (factor).
+aka
+   Known aliases of the serial killer (character).
 
-      name
-         Name of the serial killer (character).
+year_start
+   The first year the serial killer was active (integer).
 
-      aka
-         Known aliases of the serial killer (character).
+year_end
+   The last year the serial killer was active (integer).
 
-      year_start
-         The first year the serial killer was active (integer).
+date_of_first_kill
+   The date when the serial killer committed their first murder
+   (factor).
 
-      year_end
-         The last year the serial killer was active (integer).
+population_million
+   Population in millions at the time the serial killer was active
+   (numeric).
 
-      date_of_first_kill
-         The date when the serial killer committed their first murder
-         (factor).
+Details
+~~~~~~~
 
-      population_million
-         Population in millions at the time the serial killer was active
-         (numeric).
+The dataset name has been changed to 'uk_serial_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the crimedatasets package and
+assists users in identifying its specific characteristics. The suffix
+'df' indicates that the dataset is a data frame. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been changed to 'uk_serial_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      crimedatasets package and assists users in identifying its
-      specific characteristics. The suffix 'df' indicates that the
-      dataset is a data frame. The original content has not been
-      modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      https://www.murderuk.com/
+https://www.murderuk.com/

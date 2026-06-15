@@ -1,85 +1,80 @@
-.. container::
+=================== ===============
+care_home_incidents R Documentation
+=================== ===============
 
-   .. container::
+Care Home Incidents
+-------------------
 
-      =================== ===============
-      care_home_incidents R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Care Home Incidents
-         :name: care-home-incidents
+a NHS patient safety incidents dataset:
+https://www.england.nhs.uk/patient-safety/report-patient-safety-incident/
+dataset that has been synthetically generated against real data
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      a NHS patient safety incidents dataset:
-      https://www.england.nhs.uk/patient-safety/report-patient-safety-incident/
-      dataset that has been synthetically generated against real data
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   care_home_incidents
 
-      .. code:: R
+Format
+~~~~~~
 
-         care_home_incidents
+A data frame with 1216 rows and 12 variables:
 
-      .. rubric:: Format
-         :name: format
+CareHomeFail
+   a binary indicator to specify whether a certain care home is failing
 
-      A data frame with 1216 rows and 12 variables:
+WeightLoss
+   aggregation of incidents indicating weight loss in patient
 
-      CareHomeFail
-         a binary indicator to specify whether a certain care home is
-         failing
+Medication
+   medication missed aggregaation
 
-      WeightLoss
-         aggregation of incidents indicating weight loss in patient
+Falls
+   Recorded number of patient falls
 
-      Medication
-         medication missed aggregaation
+Choking
+   Number of patient choking incidents
 
-      Falls
-         Recorded number of patient falls
+UnexpectedDeaths
+   unexpected deaths in the care home
 
-      Choking
-         Number of patient choking incidents
+Bruising
+   Number of bruising incidents in the care home
 
-      UnexpectedDeaths
-         unexpected deaths in the care home
+Absconsion
+   Absconding from the care home setting
 
-      Bruising
-         Number of bruising incidents in the care home
+ResidentAbuseByResident
+   Abuse conducted by one care home resident against another
 
-      Absconsion
-         Absconding from the care home setting
+ResidentAbuseByStaff
+   Incidents of resident abuse by staff
 
-      ResidentAbuseByResident
-         Abuse conducted by one care home resident against another
+ResidentAbuseOnStaff
+   Incidents of residents abusing staff
 
-      ResidentAbuseByStaff
-         Incidents of resident abuse by staff
+Wounds
+   Unexplained wounds against staff
 
-      ResidentAbuseOnStaff
-         Incidents of residents abusing staff
+Source
+~~~~~~
 
-      Wounds
-         Unexplained wounds against staff
+Collected by Gary Hutson hutsons-hacks@outlook.com, Jan-2022
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Collected by Gary Hutson hutsons-hacks@outlook.com, Jan-2022
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         library(dplyr)
-         data(care_home_incidents)
-         # Convert diabetes data to factor'
-         ch_incs <- care_home_incidents %>%
-          mutate(CareHomeFail = as.factor(CareHomeFail))
-          ch_incs %>% glimpse()
-          # Check factor
-          factor(ch_incs$CareHomeFail)
+   library(dplyr)
+   data(care_home_incidents)
+   # Convert diabetes data to factor'
+   ch_incs <- care_home_incidents %>%
+    mutate(CareHomeFail = as.factor(CareHomeFail))
+    ch_incs %>% glimpse()
+    # Check factor
+    factor(ch_incs$CareHomeFail)

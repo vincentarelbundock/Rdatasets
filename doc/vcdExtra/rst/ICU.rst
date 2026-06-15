@@ -1,192 +1,176 @@
-.. container::
+=== ===============
+ICU R Documentation
+=== ===============
 
-   .. container::
+ICU data set
+------------
 
-      === ===============
-      ICU R Documentation
-      === ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: ICU data set
-         :name: icu-data-set
+The ICU data set consists of a sample of 200 subjects who were part of a
+much larger study on survival of patients following admission to an
+adult intensive care unit (ICU), derived from Hosmer, Lemeshow and
+Sturdivant (2013) and Friendly (2000).
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      The ICU data set consists of a sample of 200 subjects who were
-      part of a much larger study on survival of patients following
-      admission to an adult intensive care unit (ICU), derived from
-      Hosmer, Lemeshow and Sturdivant (2013) and Friendly (2000).
+A data frame with 200 observations on the following 22 variables.
 
-      The major goal of this study was to develop a logistic regression
-      model to predict the probability of survival to hospital discharge
-      of these patients and to study the risk factors associated with
-      ICU mortality. The clinical details of the study are described in
-      Lemeshow, Teres, Avrunin, and Pastides (1988).
+``died``
+   Died before discharge?, a factor with levels ``No`` ``Yes``
 
-      This data set is often used to illustrate model selection methods
-      for logistic regression.
+``age``
+   Patient age, a numeric vector
 
-      .. rubric:: Usage
-         :name: usage
+``sex``
+   Patient sex, a factor with levels ``Female`` ``Male``
 
-      .. code:: R
+``race``
+   Patient race, a factor with levels ``Black`` ``Other`` ``White``.
+   Also represented here as ``white``.
 
-         data(ICU)
+``service``
+   Service at ICU Admission, a factor with levels ``Medical``
+   ``Surgical``
 
-      .. rubric:: Format
-         :name: format
+``cancer``
+   Cancer part of present problem?, a factor with levels ``No`` ``Yes``
 
-      A data frame with 200 observations on the following 22 variables.
+``renal``
+   History of chronic renal failure?, a factor with levels ``No``
+   ``Yes``
 
-      ``died``
-         Died before discharge?, a factor with levels ``No`` ``Yes``
+``infect``
+   Infection probable at ICU admission?, a factor with levels ``No``
+   ``Yes``
 
-      ``age``
-         Patient age, a numeric vector
+``cpr``
+   Patient received CPR prior to ICU admission?, a factor with levels
+   ``No`` ``Yes``
 
-      ``sex``
-         Patient sex, a factor with levels ``Female`` ``Male``
+``systolic``
+   Systolic blood pressure at admission (mm Hg), a numeric vector
 
-      ``race``
-         Patient race, a factor with levels ``Black`` ``Other``
-         ``White``. Also represented here as ``white``.
+``hrtrate``
+   Heart rate at ICU Admission (beats/min), a numeric vector
 
-      ``service``
-         Service at ICU Admission, a factor with levels ``Medical``
-         ``Surgical``
+``previcu``
+   Previous admission to an ICU within 6 Months?, a factor with levels
+   ``No`` ``Yes``
 
-      ``cancer``
-         Cancer part of present problem?, a factor with levels ``No``
-         ``Yes``
+``admit``
+   Type of admission, a factor with levels ``Elective`` ``Emergency``
 
-      ``renal``
-         History of chronic renal failure?, a factor with levels ``No``
-         ``Yes``
+``fracture``
+   Admission with a long bone, multiple, neck, single area, or hip
+   fracture? a factor with levels ``No`` ``Yes``
 
-      ``infect``
-         Infection probable at ICU admission?, a factor with levels
-         ``No`` ``Yes``
+``po2``
+   PO2 from initial blood gases, a factor with levels ``⁠>60⁠`` ``⁠<=60⁠``
 
-      ``cpr``
-         Patient received CPR prior to ICU admission?, a factor with
-         levels ``No`` ``Yes``
+``ph``
+   pH from initial blood gases, a factor with levels ``⁠>=7.25⁠``
+   ``⁠<7.25⁠``
 
-      ``systolic``
-         Systolic blood pressure at admission (mm Hg), a numeric vector
+``pco``
+   PCO2 from initial blood gases, a factor with levels ``⁠<=45⁠`` ``⁠>45⁠``
 
-      ``hrtrate``
-         Heart rate at ICU Admission (beats/min), a numeric vector
+``bic``
+   Bicarbonate (HCO3) level from initial blood gases, a factor with
+   levels ``⁠>=18⁠`` ``⁠<18⁠``
 
-      ``previcu``
-         Previous admission to an ICU within 6 Months?, a factor with
-         levels ``No`` ``Yes``
+``creatin``
+   Creatinine, from initial blood gases, a factor with levels ``⁠<=2⁠``
+   ``⁠>2⁠``
 
-      ``admit``
-         Type of admission, a factor with levels ``Elective``
-         ``Emergency``
+``coma``
+   Level of unconsciousness at admission to ICU, a factor with levels
+   ``None`` ``Stupor`` ``Coma``
 
-      ``fracture``
-         Admission with a long bone, multiple, neck, single area, or hip
-         fracture? a factor with levels ``No`` ``Yes``
+``white``
+   a recoding of ``race``, a factor with levels ``White`` ``Non-white``
 
-      ``po2``
-         PO2 from initial blood gases, a factor with levels ``>60``
-         ``<=60``
+``uncons``
+   a recoding of ``coma`` a factor with levels ``No`` ``Yes``
 
-      ``ph``
-         pH from initial blood gases, a factor with levels ``>=7.25``
-         ``<7.25``
+Details
+~~~~~~~
 
-      ``pco``
-         PCO2 from initial blood gases, a factor with levels ``<=45``
-         ``>45``
+The major goal of this study was to develop a logistic regression model
+to predict the probability of survival to hospital discharge of these
+patients and to study the risk factors associated with ICU mortality.
+The clinical details of the study are described in Lemeshow, Teres,
+Avrunin, and Pastides (1988).
 
-      ``bic``
-         Bicarbonate (HCO3) level from initial blood gases, a factor
-         with levels ``>=18`` ``<18``
+This data set is often used to illustrate model selection methods for
+logistic regression.
 
-      ``creatin``
-         Creatinine, from initial blood gases, a factor with levels
-         ``<=2`` ``>2``
+Patient ID numbers are the rownames of the data frame.
 
-      ``coma``
-         Level of unconsciousness at admission to ICU, a factor with
-         levels ``None`` ``Stupor`` ``Coma``
+Note that the last two variables ``white`` and ``uncons`` are a recoding
+of respectively ``race`` and ``coma`` to binary variables.
 
-      ``white``
-         a recoding of ``race``, a factor with levels ``White``
-         ``Non-white``
+Source
+~~~~~~
 
-      ``uncons``
-         a recoding of ``coma`` a factor with levels ``No`` ``Yes``
+M. Friendly (2000), *Visualizing Categorical Data*, Appendix B.4. SAS
+Institute, Cary, NC.
 
-      .. rubric:: Details
-         :name: details
+Hosmer, D. W. Jr., Lemeshow, S. and Sturdivant, R. X. (2013) *Applied
+Logistic Regression*, NY: Wiley, Third Edition.
 
-      Patient ID numbers are the rownames of the data frame.
+References
+~~~~~~~~~~
 
-      Note that the last two variables ``white`` and ``uncons`` are a
-      recoding of respectively ``race`` and ``coma`` to binary
-      variables.
+Lemeshow, S., Teres, D., Avrunin, J. S., Pastides, H. (1988). Predicting
+the Outcome of Intensive Care Unit Patients. *Journal of the American
+Statistical Association*, 83, 348-356.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      M. Friendly (2000), *Visualizing Categorical Data*, Appendix B.4.
-      SAS Institute, Cary, NC.
+.. code:: R
 
-      Hosmer, D. W. Jr., Lemeshow, S. and Sturdivant, R. X. (2013)
-      *Applied Logistic Regression*, NY: Wiley, Third Edition.
 
-      .. rubric:: References
-         :name: references
+   data(ICU)
+   # remove redundant variables (race, coma)
+   ICU1 <- ICU[,-c(4,20)]
 
-      Lemeshow, S., Teres, D., Avrunin, J. S., Pastides, H. (1988).
-      Predicting the Outcome of Intensive Care Unit Patients. *Journal
-      of the American Statistical Association*, 83, 348-356.
+   # fit full model
+   icu.full <- glm(died ~ ., data=ICU1, family=binomial)
+   summary(icu.full)
 
-      .. rubric:: Examples
-         :name: examples
+   # simpler model (found from a "best" subsets procedure)
+   icu.mod1 <- glm(died ~ age + sex + cancer + systolic + admit + uncons,
+     data=ICU1,
+     family=binomial)
+   summary(icu.mod1)
 
-      .. code:: R
+   # even simpler model
+   icu.mod2 <- glm(died ~ age + cancer  + admit + uncons,
+     data=ICU1,
+     family=binomial)
+   summary(icu.mod2)
 
-         data(ICU)
-         # remove redundant variables (race, coma)
-         ICU1 <- ICU[,-c(4,20)]
+   anova(icu.mod2, icu.mod1, icu.full, test="Chisq")
 
-         # fit full model
-         icu.full <- glm(died ~ ., data=ICU1, family=binomial)
-         summary(icu.full)
+   ## Reproduce Fig 6.12 from VCD
 
-         # simpler model (found from a "best" subsets procedure)
-         icu.mod1 <- glm(died ~ age + sex + cancer + systolic + admit + uncons, 
-           data=ICU1, 
-           family=binomial)
-         summary(icu.mod1)
+   icu.fit <- data.frame(ICU, prob=predict(icu.mod2, type="response"))
 
-         # even simpler model
-         icu.mod2 <- glm(died ~ age + cancer  + admit + uncons, 
-           data=ICU1, 
-           family=binomial)
-         summary(icu.mod2)
+   # combine categorical risk factors to a single string
+   risks <- ICU[, c("cancer", "admit", "uncons")]
+   risks[,1] <- ifelse(risks[,1]=="Yes", "Cancer", "")
+   risks[,2] <- ifelse(risks[,2]=="Emergency", "Emerg", "")
+   risks[,3] <- ifelse(risks[,3]=="Yes", "Uncons", "")
+   risks <- apply(risks, 1, paste, collapse="")
+   risks[risks==""] <- "(none)"
+   icu.fit$risks <- risks
 
-         anova(icu.mod2, icu.mod1, icu.full, test="Chisq")
-
-         ## Reproduce Fig 6.12 from VCD
-
-         icu.fit <- data.frame(ICU, prob=predict(icu.mod2, type="response"))
-
-         # combine categorical risk factors to a single string
-         risks <- ICU[, c("cancer", "admit", "uncons")]
-         risks[,1] <- ifelse(risks[,1]=="Yes", "Cancer", "")
-         risks[,2] <- ifelse(risks[,2]=="Emergency", "Emerg", "")
-         risks[,3] <- ifelse(risks[,3]=="Yes", "Uncons", "")
-         risks <- apply(risks, 1, paste, collapse="")
-         risks[risks==""] <- "(none)"
-         icu.fit$risks <- risks
-
-         library(ggplot2)
-         ggplot(icu.fit, aes(x=age, y=prob, color=risks)) +
-             geom_point(size=2) +
-             geom_line(size=1.25, alpha=0.5) +
-             theme_bw() + ylab("Probability of death")
+   library(ggplot2)
+   ggplot(icu.fit, aes(x=age, y=prob, color=risks)) +
+       geom_point(size=2) +
+       geom_line(size=1.25, alpha=0.5) +
+       theme_bw() + ylab("Probability of death")

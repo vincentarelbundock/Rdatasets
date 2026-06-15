@@ -1,53 +1,46 @@
-.. container::
+=================== ===============
+cocaine_dopamine_df R Documentation
+=================== ===============
 
-   .. container::
+Effects of Cocaine on Dopamine Receptors
+----------------------------------------
 
-      =================== ===============
-      cocaine_dopamine_df R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Effects of Cocaine on Dopamine Receptors
-         :name: effects-of-cocaine-on-dopamine-receptors
+This dataset, cocaine_dopamine_df, is a data frame containing
+measurements of dopamine receptor blockade and perceived high levels
+from 34 human subjects as determined by PET scans.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, cocaine_dopamine_df, is a data frame containing
-      measurements of dopamine receptor blockade and perceived high
-      levels from 34 human subjects as determined by PET scans.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(cocaine_dopamine_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(cocaine_dopamine_df)
+A data frame with 34 observations and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+percent.blocked
+   Integer vector representing percent of dopamine receptors blocked
 
-      A data frame with 34 observations and 2 variables:
+high
+   Integer vector representing perceived level of high from PET scans
 
-      percent.blocked
-         Integer vector representing percent of dopamine receptors
-         blocked
+Details
+~~~~~~~
 
-      high
-         Integer vector representing perceived level of high from PET
-         scans
+The dataset name has been kept as 'cocaine_dopamine_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the NeuroDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'df' indicates that the dataset is a data frame. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'cocaine_dopamine_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      NeuroDataSets package and assists users in identifying its
-      specific characteristics. The suffix 'df' indicates that the
-      dataset is a data frame. The original content has not been
-      modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the abd package version 0.2-8
+Data taken from the abd package version 0.2-8

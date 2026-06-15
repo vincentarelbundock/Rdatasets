@@ -1,51 +1,45 @@
-.. container::
+=============== ===============
+juvenile_growth R Documentation
+=============== ===============
 
-   .. container::
+Growth data of juvenile fish
+----------------------------
 
-      =============== ===============
-      juvenile_growth R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Growth data of juvenile fish
-         :name: growth-data-of-juvenile-fish
+A dataset containing daily growth data for juvenile Galaxis maculatus.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset containing daily growth data for juvenile Galaxis
-      maculatus.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   juvenile_growth
 
-      .. code:: R
+Format
+~~~~~~
 
-         juvenile_growth
+A dataset containing 87581 rows and 5 variables
 
-      .. rubric:: Format
-         :name: format
+fish_code
+   Foreign key, links with 'juveniles'
 
-      A dataset containing 87581 rows and 5 variables
+otolith_code
+   Alternate key
 
-      fish_code
-         Foreign key, links with 'juveniles'
+period
+   a count of each otolith increment. Counts a day in the fishes life
 
-      otolith_code
-         Alternate key
+position
+   the distance of the increment from the centre of the otolith
 
-      period
-         a count of each otolith increment. Counts a day in the fishes
-         life
+distance
+   the distance of the increment from the previous increment
 
-      position
-         the distance of the increment from the centre of the otolith
+Examples
+~~~~~~~~
 
-      distance
-         the distance of the increment from the previous increment
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(juvenile_growth)
+   data(juvenile_growth)

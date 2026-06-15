@@ -1,59 +1,51 @@
-.. container::
+===== ===============
+cps71 R Documentation
+===== ===============
 
-   .. container::
+Canadian High School Graduate Earnings
+--------------------------------------
 
-      ===== ===============
-      cps71 R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Canadian High School Graduate Earnings
-         :name: canadian-high-school-graduate-earnings
+Canadian cross-section wage data consisting of a random sample taken
+from the 1971 Canadian Census Public Use Tapes for male individuals
+having common education (grade 13). There are 205 observations in total.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Canadian cross-section wage data consisting of a random sample
-      taken from the 1971 Canadian Census Public Use Tapes for male
-      individuals having common education (grade 13). There are 205
-      observations in total.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("cps71")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("cps71")
+A data frame with 2 columns, and 205 rows.
 
-      .. rubric:: Format
-         :name: format
+logwage
+   the first column, of type ``numeric``
 
-      A data frame with 2 columns, and 205 rows.
+age
+   the second column, of type ``integer``
 
-      logwage
-         the first column, of type ``numeric``
+Source
+~~~~~~
 
-      age
-         the second column, of type ``integer``
+Aman Ullah
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Aman Ullah
+Pagan, A. and A. Ullah (1999), *Nonparametric Econometrics,* Cambridge
+University Press.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Pagan, A. and A. Ullah (1999), *Nonparametric Econometrics,*
-      Cambridge University Press.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   data("cps71", package = "np")
 
-      .. code:: R
-
-         data("cps71")
-         attach(cps71)
-
-         plot(age, logwage, xlab="Age", ylab="log(wage)")
-
-         detach(cps71)
+   if (interactive()) with(cps71, plot(age, logwage, xlab="Age", ylab="log(wage)"))

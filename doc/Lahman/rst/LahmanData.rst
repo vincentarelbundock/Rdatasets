@@ -1,101 +1,95 @@
-.. container::
+========== ===============
+LahmanData R Documentation
+========== ===============
 
-   .. container::
+Lahman Datasets
+---------------
 
-      ========== ===============
-      LahmanData R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Lahman Datasets
-         :name: lahman-datasets
+This dataset gives a concise description of the data files in the Lahman
+package. It may be useful for computing on the various files.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset gives a concise description of the data files in the
-      Lahman package. It may be useful for computing on the various
-      files.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(LahmanData)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(LahmanData)
+A data frame with 24 observations on the following 5 variables.
 
-      .. rubric:: Format
-         :name: format
+``file``
+   name of dataset
 
-      A data frame with 24 observations on the following 5 variables.
+``class``
+   class of dataset
 
-      ``file``
-         name of dataset
+``nobs``
+   number of observations
 
-      ``class``
-         class of dataset
+``nvar``
+   number of variables
 
-      ``nobs``
-         number of observations
+``title``
+   dataset title
 
-      ``nvar``
-         number of variables
+Details
+~~~~~~~
 
-      ``title``
-         dataset title
+This dataset is generated using ``vcdExtra::datasets(package="Lahman")``
+with some post-processing.
 
-      .. rubric:: Details
-         :name: details
+Examples
+~~~~~~~~
 
-      This dataset is generated using
-      ``vcdExtra::datasets(package="Lahman")`` with some
-      post-processing.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   data(LahmanData)
 
-      .. code:: R
+   # find ID variables in the datasets
+   IDvars <- lapply(LahmanData[,"file"], function(x) grep('.*ID$', colnames(get(x)), value=TRUE))
+   names(IDvars) <- LahmanData[,"file"]
+   str(IDvars)
+   # vector of unique ID variables
+   unique(unlist(IDvars))
 
-         data(LahmanData)
+   # which datasets have playerID?
+   names(which(sapply(IDvars, function(x) "playerID" %in% x)))
 
-         # find ID variables in the datasets
-         IDvars <- lapply(LahmanData[,"file"], function(x) grep('.*ID$', colnames(get(x)), value=TRUE))
-         names(IDvars) <- LahmanData[,"file"]
-         str(IDvars)
-         # vector of unique ID variables
-         unique(unlist(IDvars))
+   ################################################
+   # Visualize relations among datasets via an MDS
+   ################################################
+   # jaccard distance between two sets; assure positivity
+   jaccard <- function(A, B) {
+       max(1 - length(intersect(A,B)) / length(union(A,B)), .00001)
+   }   
 
-         # which datasets have playerID?
-         names(which(sapply(IDvars, function(x) "playerID" %in% x)))
+   distmat <- function(vars, FUN=jaccard) {
+       nv <- length(vars)
+       d <- matrix(0, nv, nv, dimnames=list(names(vars), names(vars)))
+       
+       for(i in 1:nv) {
+           for (j in 1:nv) {
+               if (i != j) d[i,j] <- FUN(vars[[i]], vars[[j]])
+           }
+       }
+       
+       d[is.nan(d)] = 0
+       
+       d
+   }
 
-         ################################################
-         # Visualize relations among datasets via an MDS
-         ################################################
-         # jaccard distance between two sets; assure positivity
-         jaccard <- function(A, B) {
-             max(1 - length(intersect(A,B)) / length(union(A,B)), .00001)
-         }   
+   # do an MDS on distances
+   distID <- distmat(IDvars)
+   config <- cmdscale(distID)
 
-         distmat <- function(vars, FUN=jaccard) {
-             nv <- length(vars)
-             d <- matrix(0, nv, nv, dimnames=list(names(vars), names(vars)))
-             
-             for(i in 1:nv) {
-                 for (j in 1:nv) {
-                     if (i != j) d[i,j] <- FUN(vars[[i]], vars[[j]])
-                 }
-             }
-             
-             d[is.nan(d)] = 0
-             
-             d
-         }
-
-         # do an MDS on distances
-         distID <- distmat(IDvars)
-         config <- cmdscale(distID)
-
-         pos=rep(1:4, length=nrow(config))
-         plot(config[,1], config[,2], xlab = "", ylab = "", asp = 1, axes=FALSE,
-             main="MDS of ID variable distances of Lahman tables")
-         abline(h=0, v=0, col="gray80")
-         text(config[,1], config[,2], rownames(config), cex = 0.75, pos=pos, xpd=NA)
+   pos=rep(1:4, length=nrow(config))
+   plot(config[,1], config[,2], xlab = "", ylab = "", asp = 1, axes=FALSE,
+       main="MDS of ID variable distances of Lahman tables")
+   abline(h=0, v=0, col="gray80")
+   text(config[,1], config[,2], rownames(config), cex = 0.75, pos=pos, xpd=NA)

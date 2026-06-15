@@ -1,98 +1,92 @@
-.. container::
+==================== ===============
+ncaa_w_bball_tourney R Documentation
+==================== ===============
 
-   .. container::
+The Rise And Fall Of Women's NCAA Tournament Dynasties
+------------------------------------------------------
 
-      ==================== ===============
-      ncaa_w_bball_tourney R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The Rise And Fall Of Women's NCAA Tournament Dynasties
-         :name: the-rise-and-fall-of-womens-ncaa-tournament-dynasties
+The raw data behind the story 'The Rise And Fall Of Women's NCAA
+Tournament Dynasties'
+https://fivethirtyeight.com/features/louisiana-tech-was-the-uconn-of-the-80s/
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story 'The Rise And Fall Of Women's NCAA
-      Tournament Dynasties'
-      https://fivethirtyeight.com/features/louisiana-tech-was-the-uconn-of-the-80s/
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   ncaa_w_bball_tourney
 
-      .. code:: R
+Format
+~~~~~~
 
-         ncaa_w_bball_tourney
+A dataset with 2092 rows representing every team that has participated
+in the NCAA Division I Women's Basketball Tournament since it began in
+1982 and 19 variables
 
-      .. rubric:: Format
-         :name: format
+year
+   the year of the game which the team participated in
 
-      A dataset with 2092 rows representing every team that has
-      participated in the NCAA Division I Women's Basketball Tournament
-      since it began in 1982 and 19 variables
+school
+   the school of the participating team
 
-      year
-         the year of the game which the team participated in
+seed
+   The '(OR)' seeding designation in 1983 notes the eight teams that
+   played an opening-round game to become the No. 8 seed in each region.
 
-      school
-         the school of the participating team
+conference
+   the conference record of the team (if available)
 
-      seed
-         The '(OR)' seeding designation in 1983 notes the eight teams
-         that played an opening-round game to become the No. 8 seed in
-         each region.
+conf_w
+   number of winning in conference record
 
-      conference
-         the conference record of the team (if available)
+conf_l
+   number of losses in conference record
 
-      conf_w
-         number of winning in conference record
+conf_percent
+   percent of winning in conference record
 
-      conf_l
-         number of losses in conference record
+reg_w
+   number of winning in regular-season record
 
-      conf_percent
-         percent of winning in conference record
+reg_l
+   number of losses in regular-season record
 
-      reg_w
-         number of winning in regular-season record
+reg_percent
+   percent of winning in regular-season record
 
-      reg_l
-         number of losses in regular-season record
+how_qual
+   Whether the school qualified with an automatic bid (by winning its
+   conference or conference tournament) or an at-large bid.
 
-      reg_percent
-         percent of winning in regular-season record
+first_home_game
+   Whether the school played its first-round tournament games on its
+   home court.
 
-      how_qual
-         Whether the school qualified with an automatic bid (by winning
-         its conference or conference tournament) or an at-large bid.
+tourney_w
+   number of winning in tournament record
 
-      first_home_game
-         Whether the school played its first-round tournament games on
-         its home court.
+tourney_l
+   number of losses in tournament record
 
-      tourney_w
-         number of winning in tournament record
+tourney_finish
+   The round of the final game for each team. OR=opening-round loss
+   (1983 only); 1st=first-round loss; 2nd=second-round loss; RSF=loss in
+   the Sweet 16; RF=loss in the Elite Eight; NSF=loss in the national
+   semifinals; N2nd=national runner-up; Champ=national champions
 
-      tourney_l
-         number of losses in tournament record
+full_w
+   number of winning in full record
 
-      tourney_finish
-         The round of the final game for each team. OR=opening-round
-         loss (1983 only); 1st=first-round loss; 2nd=second-round loss;
-         RSF=loss in the Sweet 16; RF=loss in the Elite Eight; NSF=loss
-         in the national semifinals; N2nd=national runner-up;
-         Champ=national champions
+full_l
+   number of losses in full record
 
-      full_w
-         number of winning in full record
+full_percent
+   percent of winning in full record
 
-      full_l
-         number of losses in full record
+Source
+~~~~~~
 
-      full_percent
-         percent of winning in full record
-
-      .. rubric:: Source
-         :name: source
-
-      NCAA
+NCAA

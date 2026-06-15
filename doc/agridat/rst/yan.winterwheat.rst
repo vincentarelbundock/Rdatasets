@@ -1,78 +1,72 @@
-.. container::
+=============== ===============
+yan.winterwheat R Documentation
+=============== ===============
 
-   .. container::
+Multi-environment trial of winter wheat in Ontario
+--------------------------------------------------
 
-      =============== ===============
-      yan.winterwheat R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Multi-environment trial of winter wheat in Ontario
-         :name: multi-environment-trial-of-winter-wheat-in-ontario
+Yield of 18 varieties of winter wheat grown at 9 environments in Ontario
+in 1993.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Yield of 18 varieties of winter wheat grown at 9 environments in
-      Ontario in 1993.
+A data frame with 162 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``gen``
+   genotype
 
-      A data frame with 162 observations on the following 3 variables.
+``env``
+   environment
 
-      ``gen``
-         genotype
+``yield``
+   yield in metric tons per hectare
 
-      ``env``
-         environment
+Used with permission of Weikai Yan.
 
-      ``yield``
-         yield in metric tons per hectare
+Details
+~~~~~~~
 
-      Used with permission of Weikai Yan.
+The yield is the mean of several reps, measured in metric tons per
+hectare.
 
-      .. rubric:: Details
-         :name: details
+This data has often been used to illustrate GGE biplots.
 
-      The yield is the mean of several reps, measured in metric tons per
-      hectare.
+Source
+~~~~~~
 
-      This data has often been used to illustrate GGE biplots.
+Weikai Yan and M.S. Kang (2002). GGE biplot analysis: A graphical tool
+for breeders, geneticists, and agronomists. CRC. Page 59.
 
-      .. rubric:: Source
-         :name: source
+Weikai Yan and Nicholas A. Tinker. 2006. Biplot analysis of
+multi-environment trial data: Principles and applications. Table 1.
 
-      Weikai Yan and M.S. Kang (2002). GGE biplot analysis: A graphical
-      tool for breeders, geneticists, and agronomists. CRC. Page 59.
+References
+~~~~~~~~~~
 
-      Weikai Yan and Nicholas A. Tinker. 2006. Biplot analysis of
-      multi-environment trial data: Principles and applications. Table
-      1.
+Weikai Yan and Manjit S. Kang and Baoluo Ma and Sheila Woods, 2007, GGE
+Biplot vs. AMMI Analysis of Genotype-by-Environment Data, Crop Science,
+2007, 47, 641–653. https://doi.org/10.2135/cropsci2006.06.0374
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Weikai Yan and Manjit S. Kang and Baoluo Ma and Sheila Woods,
-      2007, GGE Biplot vs. AMMI Analysis of Genotype-by-Environment
-      Data, Crop Science, 2007, 47, 641–653.
-      https://doi.org/10.2135/cropsci2006.06.0374
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
 
-         ## Not run: 
+   data(yan.winterwheat)
+   dat <- yan.winterwheat
 
-         library(agridat)
-
-         data(yan.winterwheat)
-         dat <- yan.winterwheat
-
-         libs(gge)
-         m1 <- gge(dat, yield ~ gen*env)
-         biplot(m1, flip=c(1,1), hull=TRUE,
-                main="yan.winterwheat - GGE biplot")
+   libs(gge)
+   m1 <- gge(dat, yield ~ gen*env)
+   biplot(m1, flip=c(1,1), hull=TRUE,
+          main="yan.winterwheat - GGE biplot")
 
 
-         ## End(Not run)
+   ## End(Not run)

@@ -1,102 +1,95 @@
-.. container::
+================ ===============
+rashomon_quartet R Documentation
+================ ===============
 
-   .. container::
+Rashomon Quartet Data
+---------------------
 
-      ================ ===============
-      rashomon_quartet R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Rashomon Quartet Data
-         :name: rashomon-quartet-data
+This dataset contains 2,000 observations, 1,000 training observations
+and 1,000 testing observations. These were generated such that 4
+modeling techniques (regression tree, linear model, neural network,
+random forest) will yield the same ``R^2`` and RMSE but will fit the
+models very differently.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains 2,000 observations, 1,000 training
-      observations and 1,000 testing observations. These were generated
-      such that 4 modeling techniques (regression tree, linear model,
-      neural network, random forest) will yield the same ``R^2`` and
-      RMSE but will fit the models very differently.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   rashomon_quartet
 
-      .. code:: R
+   rashomon_quartet_train
 
-         rashomon_quartet
+   rashomon_quartet_test
 
-         rashomon_quartet_train
+Format
+~~~~~~
 
-         rashomon_quartet_test
+``rashomon_quartet``: A dataframe with 2000 rows and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+- ``split``: train, test
 
-      ``rashomon_quartet``: A dataframe with 2000 rows and 5 variables:
+- ``x1``
 
-      -  ``split``: train, test
+- ``x2``
 
-      -  ``x1``
+- ``x3``
 
-      -  ``x2``
+- ``y``
 
-      -  ``x3``
+``rashomon_quartet_train``: A dataframe with 1000 rows and 4 variables:
 
-      -  ``y``
+- ``x1``
 
-      ``rashomon_quartet_train``: A dataframe with 1000 rows and 4
-      variables:
+- ``x2``
 
-      -  ``x1``
+- ``x3``
 
-      -  ``x2``
+- ``y``
 
-      -  ``x3``
+``rashomon_quartet_test``: A dataframe with 1000 rows and 4 variables:
 
-      -  ``y``
+- ``x1``
 
-      ``rashomon_quartet_test``: A dataframe with 1000 rows and 4
-      variables:
+- ``x2``
 
-      -  ``x1``
+- ``x3``
 
-      -  ``x2``
+- ``y``
 
-      -  ``x3``
+Details
+~~~~~~~
 
-      -  ``y``
+There are three explanatory variables ``x1``, ``x2``, ``x3`` and one
+outcome ``y`` generated as:
 
-      .. rubric:: Details
-         :name: details
+``y = sin((3x_1 + x_2)/5)+\varepsilon``
 
-      There are three explanatory variables ``x1``, ``x2``, ``x3`` and
-      one outcome ``y`` generated as:
+where ``\varepsilon\sim N(0,1/3)`` and
+``[x_1,x_2,x_3]\sim N(0, \Sigma_{3x3})`` and ``\Sigma_{3x3}`` has 1 on
+the diagonal and 0.9 elsewhere.
 
-      ``y = sin((3x_1 + x_2)/5)+\varepsilon``
+If fit using the following hyperparameters, each model will yield an
+``R^2`` of 0.73 and an RMSE of 0.354
 
-      where ``\varepsilon\sim N(0,1/3)`` and
-      ``[x_1,x_2,x_3]\sim N(0, \Sigma_{3x3})`` and ``\Sigma_{3x3}`` has
-      1 on the diagonal and 0.9 elsewhere.
+- Regression tree: max depth: 3, min split: 250
 
-      If fit using the following hyperparameters, each model will yield
-      an ``R^2`` of 0.73 and an RMSE of 0.354
+- Linear model: all main effects
 
-      -  Regression tree: max depth: 3, min split: 250
+- Random Forest: mtry: 1, number of trees: 100
 
-      -  Linear model: all main effects
+- Neural network: hidden neurons in each layer: 8, 4, threshold for
+  partial derivatives of the error function as stopping criteria: 0.05
 
-      -  Random Forest: mtry: 1, number of trees: 100
+``rashomon_quartet_train`` contains just the training data and
+``rashomon_quartet_test`` contains only the test data.
 
-      -  Neural network: hidden neurons in each layer: 8, 4, threshold
-         for partial derivatives of the error function as stopping
-         criteria: 0.05
+References
+~~~~~~~~~~
 
-      ``rashomon_quartet_train`` contains just the training data and
-      ``rashomon_quartet_test`` contains only the test data.
-
-      .. rubric:: References
-         :name: references
-
-      P. Biecek, H. Baniecki, M. Krzyziński, D. Cook. Performance is not
-      enough: the story of Rashomon’s quartet. Preprint
-      arXiv:2302.13356v2, 2023.
+P. Biecek, H. Baniecki, M. Krzyziński, D. Cook. Performance is not
+enough: the story of Rashomon’s quartet. Preprint arXiv:2302.13356v2,
+2023.

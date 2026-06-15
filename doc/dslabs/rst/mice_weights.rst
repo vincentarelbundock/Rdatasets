@@ -1,72 +1,66 @@
-.. container::
+============ ===============
+mice_weights R Documentation
+============ ===============
 
-   .. container::
+Mice weights
+------------
 
-      ============ ===============
-      mice_weights R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Mice weights
-         :name: mice-weights
+Body weights, bone density, and percent fat for mice under two diets:
+chow and high fat. Data provided by Karen Svenson from Jackson
+Laboratories. Funding to generate these data came from NIH grant P50
+GM070683 awarded to Gary Churchill.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Body weights, bone density, and percent fat for mice under two
-      diets: chow and high fat. Data provided by Karen Svenson from
-      Jackson Laboratories. Funding to generate these data came from NIH
-      grant P50 GM070683 awarded to Gary Churchill.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   mice_weights
 
-      .. code:: R
+Format
+~~~~~~
 
-         mice_weights
+An object of class ``"data.frame"``.
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      An object of class ``"data.frame"``.
+- body_weight. Body weight in grams at 19 weeks.
 
-      .. rubric:: Details
-         :name: details
+- bone_density. Body density.
 
-      -  body_weight. Body weight in grams at 19 weeks.
+- percent_fat. Percent fat.
 
-      -  bone_density. Body density.
+- sex. The sex of the mice.
 
-      -  percent_fat. Percent fat.
+- diet. The diet of the mice: chow or high fat.
 
-      -  sex. The sex of the mice.
+- gen. These are outbread mice. This variable denotes the generation.
 
-      -  diet. The diet of the mice: chow or high fat.
+- litter. Which of two litters mice belong to.
 
-      -  gen. These are outbread mice. This variable denotes the
-         generation.
+Source
+~~~~~~
 
-      -  litter. Which of two litters mice belong to.
+Karen Svenson, Daniel M. Gatti, and Gary Churchill from Jackson
+Laboratories.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Karen Svenson, Daniel M. Gatti, and Gary Churchill from Jackson
-      Laboratories.
+Daniel M. Gatti, Petr Simecek, Lisa Somes, Clifton T. Jeffrey, Matthew
+J. Vincent, Kwangbom Choi, Xingyao Chen, Gary A. Churchill, and Karen L.
+Svenson. "The Effects of Sex and Diet on Physiology and Liver Gene
+Expression in Diversity Outbred Mice". bioRxiv 098657;
+`doi:10.1101/098657 <https://doi.org/10.1101/098657>`__
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Daniel M. Gatti, Petr Simecek, Lisa Somes, Clifton T. Jeffrey,
-      Matthew J. Vincent, Kwangbom Choi, Xingyao Chen, Gary A.
-      Churchill, and Karen L. Svenson. "The Effects of Sex and Diet on
-      Physiology and Liver Gene Expression in Diversity Outbred Mice".
-      bioRxiv 098657;
-      `doi:10.1101/098657 <https://doi.org/10.1101/098657>`__
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         mice_weights |> head()
-         with(mice_weights, table(sex, diet))
+   mice_weights |> head()
+   with(mice_weights, table(sex, diet))

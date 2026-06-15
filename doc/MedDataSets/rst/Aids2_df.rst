@@ -1,69 +1,62 @@
-.. container::
+======== ===============
+Aids2_df R Documentation
+======== ===============
 
-   .. container::
+Australian AIDS Survival Data
+-----------------------------
 
-      ======== ===============
-      Aids2_df R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Australian AIDS Survival Data
-         :name: australian-aids-survival-data
+The dataset name has been changed to 'Aids2_df' to avoid confusion with
+other datasets from packages in the R ecosystem and to follow the naming
+conventions of the 'MedDataSets' package. The suffix '\_df' indicates
+that this dataset is a data frame, helping to distinguish it from other
+datasets within the package and from those in the broader R ecosystem.
+The original content of the dataset has not been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'Aids2_df' to avoid confusion
-      with other datasets from packages in the R ecosystem and to follow
-      the naming conventions of the 'MedDataSets' package. The suffix
-      '\_df' indicates that this dataset is a data frame, helping to
-      distinguish it from other datasets within the package and from
-      those in the broader R ecosystem. The original content of the
-      dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Aids2_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Aids2_df)
+A data frame with 2843 observations and 7 variables:
 
-      .. rubric:: Format
-         :name: format
+state
+   A factor indicating the state of residence of the patient (4 levels).
 
-      A data frame with 2843 observations and 7 variables:
+sex
+   A factor indicating the sex of the patient (2 levels).
 
-      state
-         A factor indicating the state of residence of the patient (4
-         levels).
+diag
+   An integer indicating the year of diagnosis.
 
-      sex
-         A factor indicating the sex of the patient (2 levels).
+death
+   An integer indicating the year of death.
 
-      diag
-         An integer indicating the year of diagnosis.
+status
+   A factor indicating the status of the patient (2 levels: alive or
+   deceased).
 
-      death
-         An integer indicating the year of death.
+T.categ
+   A factor indicating the T-cell category of the patient (8 levels).
 
-      status
-         A factor indicating the status of the patient (2 levels: alive
-         or deceased).
+age
+   An integer indicating the age of the patient at diagnosis.
 
-      T.categ
-         A factor indicating the T-cell category of the patient (8
-         levels).
+Details
+~~~~~~~
 
-      age
-         An integer indicating the age of the patient at diagnosis.
+This dataset provides information on the survival rates and
+characteristics of AIDS patients in Australia, including their
+demographic details and clinical data.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset provides information on the survival rates and
-      characteristics of AIDS patients in Australia, including their
-      demographic details and clinical data.
-
-      .. rubric:: Source
-         :name: source
-
-      Australian Department of Health.
+Australian Department of Health.

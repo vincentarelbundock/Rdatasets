@@ -1,53 +1,47 @@
-.. container::
+============================= ===============
+dopamine_schizophrenia_tbl_df R Documentation
+============================= ===============
 
-   .. container::
+Dopamine ``\beta``-Hydroxylase Activity in Schizophrenia
+--------------------------------------------------------
 
-      ============================= ===============
-      dopamine_schizophrenia_tbl_df R Documentation
-      ============================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Dopamine ``\beta``-Hydroxylase Activity in
-         Schizophrenia
-         :name: dopamine-beta-hydroxylase-activity-in-schizophrenia
+This dataset, 'dopamine_schizophrenia_tbl_df', is a tibble containing
+measurements of dopamine ``\beta``-hydroxylase (DBH) activity in 25
+schizophrenic patients treated with antipsychotic medication. The data
+compares DBH levels between patient groups.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, 'dopamine_schizophrenia_tbl_df', is a tibble
-      containing measurements of dopamine ``\beta``-hydroxylase (DBH)
-      activity in 25 schizophrenic patients treated with antipsychotic
-      medication. The data compares DBH levels between patient groups.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(dopamine_schizophrenia_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(dopamine_schizophrenia_tbl_df)
+A tibble with 25 observations and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+dbh
+   Integer: Dopamine ``\beta``-hydroxylase activity level
+   (nmol/(mL\ ``\cdot``\ hr))
 
-      A tibble with 25 observations and 2 variables:
+group
+   Character: Treatment/patient group classification
 
-      dbh
-         Integer: Dopamine ``\beta``-hydroxylase activity level
-         (nmol/(mL\ ``\cdot``\ hr))
+Details
+~~~~~~~
 
-      group
-         Character: Treatment/patient group classification
+The dataset name has been kept as ``dopamine_schizophrenia_tbl_df`` to
+avoid confusion with other datasets in the R ecosystem. This naming
+convention helps distinguish this dataset as part of the NeuroDataSets
+package. The suffix ``tbl_df`` indicates that the dataset is a tibble.
+The original content has not been modified.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as
-      ``dopamine_schizophrenia_tbl_df`` to avoid confusion with other
-      datasets in the R ecosystem. This naming convention helps
-      distinguish this dataset as part of the NeuroDataSets package. The
-      suffix ``tbl_df`` indicates that the dataset is a tibble. The
-      original content has not been modified.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the BSDA package version 1.2.2
+Data taken from the BSDA package version 1.2.2

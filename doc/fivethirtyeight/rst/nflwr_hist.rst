@@ -1,60 +1,54 @@
-.. container::
+========== ===============
+nflwr_hist R Documentation
+========== ===============
 
-   .. container::
+The Football Hall Of Fame Has A Receiver Problem
+------------------------------------------------
 
-      ========== ===============
-      nflwr_hist R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The Football Hall Of Fame Has A Receiver Problem
-         :name: the-football-hall-of-fame-has-a-receiver-problem
+The raw data behind the story "The Football Hall Of Fame Has A Receiver
+Problem"
+https://fivethirtyeight.com/features/the-football-hall-of-fame-has-a-receiver-problem/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "The Football Hall Of Fame Has A
-      Receiver Problem"
-      https://fivethirtyeight.com/features/the-football-hall-of-fame-has-a-receiver-problem/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   nflwr_hist
 
-      .. code:: R
+Format
+~~~~~~
 
-         nflwr_hist
+A data frame with 6496 rows representing National Football League wide
+receivers and 6 variables:
 
-      .. rubric:: Format
-         :name: format
+pfr_player_id
+   Player identification code at https://www.pro-football-reference.com/
 
-      A data frame with 6496 rows representing National Football League
-      wide receivers and 6 variables:
+player_name
+   The player's name
 
-      pfr_player_id
-         Player identification code at
-         https://www.pro-football-reference.com/
+career_try
+   Career True Receiving Yards
 
-      player_name
-         The player's name
+career_ranypa
+   Adjusted Net Yards Per Attempt (relative to average) of player's
+   career teams, weighted by TRY w/ each team
 
-      career_try
-         Career True Receiving Yards
+career_wowy
+   The amount by which ``career_ranypa`` exceeds what would be expected
+   from his QBs' (age-adjusted) performance without the receiver
 
-      career_ranypa
-         Adjusted Net Yards Per Attempt (relative to average) of
-         player's career teams, weighted by TRY w/ each team
+bcs_rating
+   The number of yards per game by which a player would outgain an
+   average receiver on the same team, after adjusting for teammate
+   quality and age
 
-      career_wowy
-         The amount by which ``career_ranypa`` exceeds what would be
-         expected from his QBs' (age-adjusted) performance without the
-         receiver
+Source
+~~~~~~
 
-      bcs_rating
-         The number of yards per game by which a player would outgain an
-         average receiver on the same team, after adjusting for teammate
-         quality and age
-
-      .. rubric:: Source
-         :name: source
-
-      See
-      https://fivethirtyeight.com/features/the-football-hall-of-fame-has-a-receiver-problem/
+See
+https://fivethirtyeight.com/features/the-football-hall-of-fame-has-a-receiver-problem/

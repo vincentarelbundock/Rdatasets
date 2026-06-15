@@ -1,94 +1,90 @@
-.. container::
+========= ===============
+leafshape R Documentation
+========= ===============
 
-   .. container::
+Full Leaf Shape Data Set
+------------------------
 
-      ========= ===============
-      leafshape R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Full Leaf Shape Data Set
-         :name: full-leaf-shape-data-set
+Leaf length, width and petiole measurements taken at various sites
+worldwide. The ``leafshape17`` data frame is the subset that has data
+for North Queensland sites.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Leaf length, width and petiole measurements taken at various sites
-      worldwide. The ``leafshape17`` data frame is the subset that has
-      data for North Queensland sites.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(leafshape)
+   data(leafshape17)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(leafshape)
-         data(leafshape17)
+This data frame contains the following columns:
 
-      .. rubric:: Format
-         :name: format
+bladelen
+   leaf length (in mm)
 
-      This data frame contains the following columns:
+petiole
+   a numeric vector
 
-      bladelen
-         leaf length (in mm)
+bladewid
+   leaf width (in mm)
 
-      petiole
-         a numeric vector
+latitude
+   latitude
 
-      bladewid
-         leaf width (in mm)
+logwid
+   natural logarithm of width
 
-      latitude
-         latitude
+logpet
+   logarithm of petiole
 
-      logwid
-         natural logarithm of width
+loglen
+   logarithm of length
 
-      logpet
-         logarithm of petiole
+arch
+   leaf architecture (0 = plagiotropic, 1 = orthotropic
 
-      loglen
-         logarithm of length
+location
+   a factor with levels ``Sabah``, ``Panama``, ``Costa Rica``,
+   ``N Queensland``, ``S Queensland``, ``Tasmania``
 
-      arch
-         leaf architecture (0 = plagiotropic, 1 = orthotropic
+Source
+~~~~~~
 
-      location
-         a factor with levels ``Sabah``, ``Panama``, ``Costa Rica``,
-         ``N Queensland``, ``S Queensland``, ``Tasmania``
+King, D.A. and Maindonald, J.H. 1999. Tree architecture in relation to
+leaf dimensions and tree stature in temperate and tropical rain forests.
+Journal of Ecology 87: 1012-1024.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      King, D.A. and Maindonald, J.H. 1999. Tree architecture in
-      relation to leaf dimensions and tree stature in temperate and
-      tropical rain forests. Journal of Ecology 87: 1012-1024.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   library(MASS)
+   leaf17.lda <- lda(arch ~ logwid+loglen, data=leafshape17)
+   leaf17.hat <- predict(leaf17.lda)
+   leaf17.lda
+    table(leafshape17$arch, leaf17.hat$class)
+   pause()
 
-      .. code:: R
+   tab <- table(leafshape17$arch, leaf17.hat$class)
+    sum(tab[row(tab)==col(tab)])/sum(tab)
+   leaf17cv.lda <- lda(arch ~ logwid+loglen, data=leafshape17, CV=TRUE)
+   tab <- table(leafshape17$arch, leaf17cv.lda$class)
+   pause()
 
-         library(MASS)
-         leaf17.lda <- lda(arch ~ logwid+loglen, data=leafshape17)
-         leaf17.hat <- predict(leaf17.lda)
-         leaf17.lda
-          table(leafshape17$arch, leaf17.hat$class)
-         pause()
+   leaf17.glm <- glm(arch ~ logwid + loglen, family=binomial, data=leafshape17)
+    options(digits=3)
+   summary(leaf17.glm)$coef
+   pause()
 
-         tab <- table(leafshape17$arch, leaf17.hat$class)
-          sum(tab[row(tab)==col(tab)])/sum(tab)
-         leaf17cv.lda <- lda(arch ~ logwid+loglen, data=leafshape17, CV=TRUE)
-         tab <- table(leafshape17$arch, leaf17cv.lda$class)
-         pause()
+   leaf17.one <- cv.binary(leaf17.glm)
+   table(leafshape17$arch, round(leaf17.one$internal))     # Resubstitution
+   pause()
 
-         leaf17.glm <- glm(arch ~ logwid + loglen, family=binomial, data=leafshape17)
-          options(digits=3)
-         summary(leaf17.glm)$coef
-         pause()
-
-         leaf17.one <- cv.binary(leaf17.glm)
-         table(leafshape17$arch, round(leaf17.one$internal))     # Resubstitution
-         pause()
-
-         table(leafshape17$arch, round(leaf17.one$cv))           # Cross-validation
+   table(leafshape17$arch, round(leaf17.one$cv))           # Cross-validation

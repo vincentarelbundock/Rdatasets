@@ -1,51 +1,45 @@
-.. container::
+============== ===============
+aus_production R Documentation
+============== ===============
 
-   .. container::
+Quarterly production of selected commodities in Australia.
+----------------------------------------------------------
 
-      ============== ===============
-      aus_production R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Quarterly production of selected commodities in
-         Australia.
-         :name: quarterly-production-of-selected-commodities-in-australia.
+Quarterly estimates of selected indicators of manufacturing production
+in Australia.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Quarterly estimates of selected indicators of manufacturing
-      production in Australia.
+Time series of class ``tsibble``.
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      Time series of class ``tsibble``.
+``aus_production`` is a half-hourly ``tsibble`` with six values:
 
-      .. rubric:: Details
-         :name: details
+============ ==================================================
+Beer:        Beer production in megalitres.
+Tobacco:     Tobacco and cigarette production in tonnes.
+Bricks:      Clay brick production in millions of bricks.
+Cement:      Portland cement production in thousands of tonnes.
+Electricity: Electricity production in gigawatt hours.
+Gas:         Gas production in petajoules.
+             
+============ ==================================================
 
-      ``aus_production`` is a half-hourly ``tsibble`` with six values:
+Source
+~~~~~~
 
-      ============ ==================================================
-      Beer:        Beer production in megalitres.
-      Tobacco:     Tobacco and cigarette production in tonnes.
-      Bricks:      Clay brick production in millions of bricks.
-      Cement:      Portland cement production in thousands of tonnes.
-      Electricity: Electricity production in gigawatt hours.
-      Gas:         Gas production in petajoules.
-      \            
-      ============ ==================================================
+Australian Bureau of Statistics, catalogue number 8301.0.55.001 table 1.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Australian Bureau of Statistics, catalogue number 8301.0.55.001
-      table 1.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         library(tsibble)
-         aus_production
+   library(tsibble)
+   aus_production

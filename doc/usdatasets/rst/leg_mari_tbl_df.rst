@@ -1,41 +1,36 @@
-.. container::
+=============== ===============
+leg_mari_tbl_df R Documentation
+=============== ===============
 
-   .. container::
+Legalization of Marijuana Support in 2010 California Survey
+-----------------------------------------------------------
 
-      =============== ===============
-      leg_mari_tbl_df R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Legalization of Marijuana Support in 2010 California
-         Survey
-         :name: legalization-of-marijuana-support-in-2010-california-survey
+The dataset name has been changed to 'leg_mari_tbl_df' to avoid
+confusion with other packages in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a tibble. The original content of the dataset has not
+been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'leg_mari_tbl_df' to avoid
-      confusion with other packages in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a tibble. The original
-      content of the dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(leg_mari_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(leg_mari_tbl_df)
+A tibble with 119 observations and 1 variable:
 
-      .. rubric:: Format
-         :name: format
+response
+   Factor indicating responses related to legal marijuana, with 2
+   levels.
 
-      A tibble with 119 observations and 1 variable:
+Source
+~~~~~~
 
-      response
-         Factor indicating responses related to legal marijuana, with 2
-         levels.
-
-      .. rubric:: Source
-         :name: source
-
-      Data from surveys on attitudes towards legal marijuana
+Data from surveys on attitudes towards legal marijuana

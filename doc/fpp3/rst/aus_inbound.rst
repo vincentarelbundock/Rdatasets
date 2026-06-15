@@ -1,50 +1,45 @@
-.. container::
+=========== ===============
+aus_inbound R Documentation
+=========== ===============
 
-   .. container::
+Monthly short term (<1 year) visitor arrivals to Australia
+----------------------------------------------------------
 
-      =========== ===============
-      aus_inbound R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Monthly short term (<1 year) visitor arrivals to
-         Australia
-         :name: monthly-short-term-1-year-visitor-arrivals-to-australia
+``aus_inbound`` contains monthly data with one measured variable:
 
-      .. rubric:: Description
-         :name: description
+====== ===========================================
+Count: Number of individuals arriving in Australia
+       
+====== ===========================================
 
-      ``aus_inbound`` contains monthly data with one measured variable:
+Format
+~~~~~~
 
-      ====== ===========================================
-      Count: Number of individuals arriving in Australia
-      \      
-      ====== ===========================================
+Time series of class 'tsibble'
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      Time series of class 'tsibble'
+Each series is uniquely identified using two keys:
 
-      .. rubric:: Details
-         :name: details
+======== =========================
+County:  Country of stay/residence
+Purpose: Purpose of travel
+======== =========================
 
-      Each series is uniquely identified using two keys:
+covering the period from Jan 2005–Feb 2020.
 
-      ======== =========================
-      County:  Country of stay/residence
-      Purpose: Purpose of travel
-      ======== =========================
+Source
+~~~~~~
 
-      covering the period from Jan 2005–Feb 2020.
+Tourism Research Australia
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Tourism Research Australia
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         aus_inbound
+   aus_inbound

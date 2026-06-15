@@ -1,0 +1,21 @@
+rownames,name,sex,asymmetry
+1,Austin,M,0.3
+2,Carmichael,M,0.16
+3,Chuck,M,-0.24
+4,Dobbs,M,-0.25
+5,Donald,M,0.36
+6,Hoboh,M,0.17
+7,Jimmy Carter,M,0.11
+8,Lazarus,M,0.12
+9,Merv,M,0.34
+10,Storer,M,0.32
+11,Ada,F,0.71
+12,Anna,F,0.09
+13,Atlanta,F,1.12
+14,Cheri,F,-0.22
+15,Jeannie,F,1.19
+16,Kengee,F,0.01
+17,Lana,F,-0.24
+18,Lulu,F,0.24
+19,Mary,F,-0.3
+20,Panzee,F,-0.16

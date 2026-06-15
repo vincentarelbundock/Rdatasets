@@ -1,87 +1,83 @@
-.. container::
+============ ===============
+ManagersHalf R Documentation
+============ ===============
 
-   .. container::
+ManagersHalf table
+------------------
 
-      ============ ===============
-      ManagersHalf R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: ManagersHalf table
-         :name: managershalf-table
+Split season data for managers
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Split season data for managers
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(ManagersHalf)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(ManagersHalf)
+A data frame with 93 observations on the following 10 variables.
 
-      .. rubric:: Format
-         :name: format
+``playerID``
+   Manager (player) ID code
 
-      A data frame with 93 observations on the following 10 variables.
+``yearID``
+   Year
 
-      ``playerID``
-         Manager (player) ID code
+``teamID``
+   Team; a factor
 
-      ``yearID``
-         Year
+``lgID``
+   League; a factor with levels ``AL`` ``NL``
 
-      ``teamID``
-         Team; a factor
+``inseason``
+   Managerial order. One if the individual managed the team the entire
+   year. Otherwise denotes where the manager appeared in the managerial
+   order (1 for first manager, 2 for second, etc.). A factor with levels
+   ``1`` ``2`` ``3`` ``4`` ``5``
 
-      ``lgID``
-         League; a factor with levels ``AL`` ``NL``
+``half``
+   First or second half of season
 
-      ``inseason``
-         Managerial order. One if the individual managed the team the
-         entire year. Otherwise denotes where the manager appeared in
-         the managerial order (1 for first manager, 2 for second, etc.).
-         A factor with levels ``1`` ``2`` ``3`` ``4`` ``5``
+``G``
+   Games managed
 
-      ``half``
-         First or second half of season
+``W``
+   Wins
 
-      ``G``
-         Games managed
+``L``
+   Losses
 
-      ``W``
-         Wins
+``rank``
+   Team's position in standings for the half
 
-      ``L``
-         Losses
+Source
+~~~~~~
 
-      ``rank``
-         Team's position in standings for the half
+Lahman, S. (2026) Lahman's Baseball Database, 1871-2025, 2026 version,
+https://sabr.org/lahman-database/
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Lahman, S. (2025) Lahman's Baseball Database, 1871-2024, 2025
-      version, https://sabr.org/lahman-database/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   library("dplyr")
+   library("reshape2")
 
-      .. code:: R
+   # Only have data for 1892 and 1981
 
-         library("dplyr")
-         library("reshape2")
-
-         # Only have data for 1892 and 1981
-
-         # League rank by half for 1981 teams with the same
-         # manager in both halves who were hired in-season
-         ManagersHalf %>% 
-           filter(yearID >= 1901) %>%
-           group_by(teamID, yearID) %>%
-           filter(all(playerID == playerID[1])) %>%  # same manager in both halves
-           mutate(winPct = round(W/G, 3)) %>%
-           reshape2::dcast(playerID + yearID + teamID + lgID ~ half,
-                              value.var = "rank") %>%
-           rename(rank1 = `1`, rank2 = `2`) 
+   # League rank by half for 1981 teams with the same
+   # manager in both halves who were hired in-season
+   ManagersHalf %>% 
+     filter(yearID >= 1901) %>%
+     group_by(teamID, yearID) %>%
+     filter(all(playerID == playerID[1])) %>%  # same manager in both halves
+     mutate(winPct = round(W/G, 3)) %>%
+     reshape2::dcast(playerID + yearID + teamID + lgID ~ half,
+                        value.var = "rank") %>%
+     rename(rank1 = `1`, rank2 = `2`) 

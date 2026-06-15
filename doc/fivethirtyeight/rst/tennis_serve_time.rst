@@ -1,63 +1,56 @@
-.. container::
+================= ===============
+tennis_serve_time R Documentation
+================= ===============
 
-   .. container::
+Why Some Tennis Matches Take Forever
+------------------------------------
 
-      ================= ===============
-      tennis_serve_time R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Why Some Tennis Matches Take Forever
-         :name: why-some-tennis-matches-take-forever
+The raw data behind the story "Why Some Tennis Matches Take Forever"
+https://fivethirtyeight.com/features/why-some-tennis-matches-take-forever/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Why Some Tennis Matches Take
-      Forever"
-      https://fivethirtyeight.com/features/why-some-tennis-matches-take-forever/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   tennis_serve_time
 
-      .. code:: R
+Format
+~~~~~~
 
-         tennis_serve_time
+A data frame with 120 rows representing serves and 7 variables:
 
-      .. rubric:: Format
-         :name: format
+server
+   Name of player serving at 2015 French Open
 
-      A data frame with 120 rows representing serves and 7 variables:
+sec_between
+   Time in seconds between end of marked point and next serve, timed by
+   stopwatch app
 
-      server
-         Name of player serving at 2015 French Open
+opponent
+   Opponent, receiving serve
 
-      sec_between
-         Time in seconds between end of marked point and next serve,
-         timed by stopwatch app
+game_score
+   Score in the current game during the timed interval between points
 
-      opponent
-         Opponent, receiving serve
+set
+   Set number, out of five
 
-      game_score
-         Score in the current game during the timed interval between
-         points
+game
+   Score in games within the set
 
-      set
-         Set number, out of five
+date
+   Date
 
-      game
-         Score in games within the set
+Source
+~~~~~~
 
-      date
-         Date
+See https://github.com/fivethirtyeight/data/tree/master/tennis-time
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      See
-      https://github.com/fivethirtyeight/data/tree/master/tennis-time
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``tennis_events_time`` and ``tennis_players_time``
+``tennis_events_time`` and ``tennis_players_time``

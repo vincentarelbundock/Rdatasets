@@ -1,106 +1,101 @@
-.. container::
+=================== ===============
+eden.tea.uniformity R Documentation
+=================== ===============
 
-   .. container::
+Uniformity trial of tea
+-----------------------
 
-      =================== ===============
-      eden.tea.uniformity R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of tea
-         :name: uniformity-trial-of-tea
+Uniformity trial of tea in Ceylon.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of tea in Ceylon.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("eden.tea.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("eden.tea.uniformity")
+A data frame with 144 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``entry``
+   entry number
 
-      A data frame with 144 observations on the following 4 variables.
+``yield``
+   yield
 
-      ``entry``
-         entry number
+``row``
+   row
 
-      ``yield``
-         yield
+``col``
+   column
 
-      ``row``
-         row
+Details
+~~~~~~~
 
-      ``col``
-         column
+Tea plucking in Ceylon extended from 20 Apr 1928 to 10 Dec 1929. There
+were 42 pickings of tea.
 
-      .. rubric:: Details
-         :name: details
+It is not clear what the units are, but the paper mentions "quarter
+pound".
 
-      Tea plucking in Ceylon extended from 20 Apr 1928 to 10 Dec 1929.
-      There were 42 pluckings.
+The field was divided into 144 plots of 1/72 acre = 605 sq ft.
 
-      It is not clear what the units are, but the paper mentions
-      "quarter pound".
+Each plot contained 6 rows of bushes, approximately 42 bushes. (Each row
+was thus about 7 bushes).
 
-      The field was divided into 144 plots of 1/72 acre = 605 sq ft.
+Plots in row 12 were at high on a hillside, plots in row 1 were low on
+the hill.
 
-      Each plot contained 6 rows of bushes, approximately 42 bushes.
-      (Each row was thus about 7 bushes).
+Note: We will assume the plots are roughly square: 6 rows of 7 bushes.
 
-      Plots in row 12 were at high on a hillside, plots in row 1 were
-      low on the hill.
+Field width: 12 plots \* 24.6 feet = 295 feet
 
-      Note: We will assume the plots are roughly square: 6 rows of 7
-      bushes.
+Field length: 12 plots \* 24.6 feet = 295 feet
 
-      Field width: 12 plots \* 24.6 feet = 295 feet
+Transcription details: Data were typed by K.Wright. Although the pdf of
+the paper had a crease across the page that hid some of the digits, the
+row and column totals included in the paper allowed for re-construction
+of the missing digits.
 
-      Field length: 12 plots \* 24.6 feet = 295 feet
+Source
+~~~~~~
 
-      Data were typed by K.Wright. Although the pdf of the paper had a
-      crease across the page that hid some of the digits, the row and
-      column totals included in the paper allowed for re-construction of
-      the missing digits.
+T. Eden. (1931). Studies in the yield of tea. 1. The experimental errors
+of field experiments with tea. Agricultural Science, 21, 547-573.
+https://doi.org/10.1017/S0021859600088511
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      T. Eden. (1931). Studies in the yield of tea. 1. The experimental
-      errors of field experiments with tea. Agricultural Science, 21,
-      547-573. https://doi.org/10.1017/S0021859600088511
+None
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+     
+     data(eden.tea.uniformity)
+     dat <- eden.tea.uniformity
+     
+     # sum(dat$yield) # 140050.6 matches total yield in appendix A
+     # mean(dat$yield) # 972.574 match page 5554
+     
+     m1 <- aov(yield ~ factor(entry) + factor(row) + factor(col), data=dat)
+     summary(m1)
+     
+     libs(desplot)
+     desplot(dat, yield ~ col*row,
+             aspect=1,
+             main="eden.tea.uniformity")
+     
 
-         ## Not run: 
-
-         library(agridat)
-           
-           data(eden.tea.uniformity)
-           dat <- eden.tea.uniformity
-           
-           # sum(dat$yield) # 140050.6 matches total yield in appendix A
-           # mean(dat$yield) # 972.574 match page 5554
-           
-           m1 <- aov(yield ~ factor(entry) + factor(row) + factor(col), data=dat)
-           summary(m1)
-           
-           libs(desplot)
-           desplot(dat, yield ~ col*row,
-                   aspect=1,
-                   main="eden.tea.uniformity")
-           
-
-         ## End(Not run)
+   ## End(Not run)

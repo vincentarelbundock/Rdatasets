@@ -1,67 +1,62 @@
-.. container::
+================= ===============
+trumpworld_issues R Documentation
+================= ===============
 
-   .. container::
+What the World Thinks of Trump
+------------------------------
 
-      ================= ===============
-      trumpworld_issues R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: What the World Thinks of Trump
-         :name: what-the-world-thinks-of-trump
+The raw data behind the story "What the World Thinks of Trump"
+https://fivethirtyeight.com/features/what-the-world-thinks-of-trump/:
+Trump World Issues Dataset
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "What the World Thinks of Trump"
-      https://fivethirtyeight.com/features/what-the-world-thinks-of-trump/:
-      Trump World Issues Dataset
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   trumpworld_issues
 
-      .. code:: R
+Format
+~~~~~~
 
-         trumpworld_issues
+A data frame with 185 rows representing countries and 6 variables:
 
-      .. rubric:: Format
-         :name: format
+country
+   The country whose population is being polled
 
-      A data frame with 185 rows representing countries and 6 variables:
+net_approval
+   The difference in the number of respondents from the given country
+   who approve and who disapprove of the issue (Trump proposal) in
+   question (approve-disapprove)
 
-      country
-         The country whose population is being polled
+approve
+   The number of respondents from the given country who approve of the
+   issue (Trump proposal)
 
-      net_approval
-         The difference in the number of respondents from the given
-         country who approve and who disapprove of the issue (Trump
-         proposal) in question (approve-disapprove)
+disapprove
+   The number of respondents who disapprove of the issue
 
-      approve
-         The number of respondents from the given country who approve of
-         the issue (Trump proposal)
+dk_refused
+   undefined
 
-      disapprove
-         The number of respondents who disapprove of the issue
+issue
+   The specific trump policy proposal being posed. Specifically: 1:
+   Withdraw support for international climate change agreements 2: Build
+   a wall on the border between the U. S. and Mexico 3: Withdraw U.S.
+   support from the Iran nuclear weapons agreement 4: Withdraw U.S.
+   support for major trade agreements 5: Introduce tighter restrictions
+   on those entering the U.S. from some majority-Muslim countries
 
-      dk_refused
-         undefined
+Source
+~~~~~~
 
-      issue
-         The specific trump policy proposal being posed. Specifically:
-         1: Withdraw support for international climate change agreements
-         2: Build a wall on the border between the U. S. and Mexico 3:
-         Withdraw U.S. support from the Iran nuclear weapons agreement
-         4: Withdraw U.S. support for major trade agreements 5:
-         Introduce tighter restrictions on those entering the U.S. from
-         some majority-Muslim countries
+Pew Research Center
+https://www.pewresearch.org/fact-tank/2017/07/17/9-charts-on-how-the-world-sees-trump/
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      Pew Research Center
-      https://www.pewresearch.org/fact-tank/2017/07/17/9-charts-on-how-the-world-sees-trump/
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``trumpworld_polls``
+``trumpworld_polls``

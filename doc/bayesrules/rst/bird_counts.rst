@@ -1,57 +1,53 @@
-.. container::
+=========== ===============
+bird_counts R Documentation
+=========== ===============
 
-   .. container::
+Bird Counts Data
+----------------
 
-      =========== ===============
-      bird_counts R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Bird Counts Data
-         :name: bird-counts-data
+Bird count data collected between the years 1921 and 2017, in late
+December, by birdwatchers in the Ontario, Canada area. The data was made
+available by the Bird Studies Canada website and distributed through the
+R for Data Science TidyTuesday project.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Bird count data collected between the years 1921 and 2017, in late
-      December, by birdwatchers in the Ontario, Canada area. The data
-      was made available by the Bird Studies Canada website and
-      distributed through the R for Data Science TidyTuesday project.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   bird_counts
 
-      .. code:: R
+Format
+~~~~~~
 
-         bird_counts
+A data frame with 18706 rows and 7 variables. Each row represents
+observations for the given bird species in the given year.
 
-      .. rubric:: Format
-         :name: format
+year
+   year of data collection
 
-      A data frame with 18706 rows and 7 variables. Each row represents
-      observations for the given bird species in the given year.
+species
+   scientific name of observed bird species
 
-      year
-         year of data collection
+species_latin
+   latin name of observed bird species
 
-      species
-         scientific name of observed bird species
+count
+   number of birds observed
 
-      species_latin
-         latin name of observed bird species
+hours
+   total person-hours of observation period
 
-      count
-         number of birds observed
+count_per_hour
+   count divided by hours
 
-      hours
-         total person-hours of observation period
+count_per_week
+   count_per_hour multiplied by 168 hours per week
 
-      count_per_hour
-         count divided by hours
+Source
+~~~~~~
 
-      count_per_week
-         count_per_hour multiplied by 168 hours per week
-
-      .. rubric:: Source
-         :name: source
-
-      https://github.com/rfordatascience/tidytuesday/blob/master/data/2019/2019-06-18/bird_counts.csv/.
+https://github.com/rfordatascience/tidytuesday/blob/master/data/2019/2019-06-18/bird_counts.csv/.

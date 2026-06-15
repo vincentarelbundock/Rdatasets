@@ -1,79 +1,74 @@
-.. container::
+========== ===============
+vietnam_hh R Documentation
+========== ===============
 
-   .. container::
+Vietnam health care use (household level)
+-----------------------------------------
 
-      ========== ===============
-      vietnam_hh R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Vietnam health care use (household level)
-         :name: vietnam-health-care-use-household-level
+Data from the World Bank's Vietnam Living Standards Survey of 1997-1998
+at the household level. Sample extract by Cameron and Trivedi (2005).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data from the World Bank's Vietnam Living Standards Survey of
-      1997-1998 at the household level. Sample extract by Cameron and
-      Trivedi (2005).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   vietnam_hh
 
-      .. code:: R
+Format
+~~~~~~
 
-         vietnam_hh
+A data frame with 5999 observations and 8 variables:
 
-      .. rubric:: Format
-         :name: format
+sex
+   = 1 if head of household is female
 
-      A data frame with 5999 observations and 8 variables:
+age
+   age of head of household
 
-      sex
-         = 1 if head of household is female
+educ
+   Highest education obtained by head of household
 
-      age
-         age of head of household
+farm
+   = 1 for agricultural household
 
-      educ
-         Highest education obtained by head of household
+hhsize
+   household size
 
-      farm
-         = 1 for agricultural household
+commune
+   commune code
 
-      hhsize
-         household size
+lnhhexp
+   total household expenditure, ln
 
-      commune
-         commune code
+lnexp12m
+   household healthcare expenditure in the past 12 months, ln
 
-      lnhhexp
-         total household expenditure, ln
+Section in Text
+~~~~~~~~~~~~~~~
 
-      lnexp12m
-         household healthcare expenditure in the past 12 months, ln
+24.7 Clustering Example: Vietnam Health Care Use, pp 848-53
 
-      .. rubric:: Section in Text
-         :name: section-in-text
+Source
+~~~~~~
 
-      24.7 Clustering Example: Vietnam Health Care Use, pp 848-53
+http://cameron.econ.ucdavis.edu/mmabook/mmadata.html
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      http://cameron.econ.ucdavis.edu/mmabook/mmadata.html
+Cameron, A. and Trivedi, P. (2005), "Microeconometrics: Methods and
+Applications," Cambridge University Press, New York.
 
-      .. rubric:: References
-         :name: references
+World Bank Living Standards Survey 1997-1998 Vietnam.
+https://microdata.worldbank.org/index.php/catalog/2694
 
-      Cameron, A. and Trivedi, P. (2005), "Microeconometrics: Methods
-      and Applications," Cambridge University Press, New York.
+Examples
+~~~~~~~~
 
-      World Bank Living Standards Survey 1997-1998 Vietnam.
-      https://microdata.worldbank.org/index.php/catalog/2694
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         summary(vietnam_hh)
+   summary(vietnam_hh)

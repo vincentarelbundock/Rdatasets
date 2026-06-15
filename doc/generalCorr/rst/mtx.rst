@@ -1,22 +1,18 @@
-.. container::
+=== ===============
+mtx R Documentation
+=== ===============
 
-   .. container::
+internal mtx
+------------
 
-      === ===============
-      mtx R Documentation
-      === ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: internal mtx
-         :name: internal-mtx
+intended for internal use only
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      intended for internal use only
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
-
-      .. code:: R
-
-         mtx
+   mtx

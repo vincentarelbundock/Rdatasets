@@ -1,59 +1,55 @@
-.. container::
+============== ===============
+equality_index R Documentation
+============== ===============
 
-   .. container::
+LGBTQ+ Rights Laws by State
+---------------------------
 
-      ============== ===============
-      equality_index R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: LGBTQ+ Rights Laws by State
-         :name: lgbtq-rights-laws-by-state
+Data on the number of LGBTQ+ equality laws (as of 2019) and demographics
+in each U.S. state.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data on the number of LGBTQ+ equality laws (as of 2019) and
-      demographics in each U.S. state.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   equality_index
 
-      .. code:: R
+Format
+~~~~~~
 
-         equality_index
+A data frame with 50 observations, one per state, and 6 variables:
 
-      .. rubric:: Format
-         :name: format
+state
+   state name
 
-      A data frame with 50 observations, one per state, and 6 variables:
+region
+   region in which the state falls
 
-      state
-         state name
+gop_2016
+   percent of the 2016 presidential election vote earned by the
+   Republican ("GOP") candidate
 
-      region
-         region in which the state falls
+laws
+   number of LGBTQ+ rights laws (as of 2019)
 
-      gop_2016
-         percent of the 2016 presidential election vote earned by the
-         Republican ("GOP") candidate
+historical
+   political leaning of the state over time (gop = Republican, dem =
+   Democrat, swing = swing state)
 
-      laws
-         number of LGBTQ+ rights laws (as of 2019)
+percent_urban
+   percent of state's residents that live in urban areas (by the 2010
+   census)
 
-      historical
-         political leaning of the state over time (gop = Republican, dem
-         = Democrat, swing = swing state)
+Source
+~~~~~~
 
-      percent_urban
-         percent of state's residents that live in urban areas (by the
-         2010 census)
-
-      .. rubric:: Source
-         :name: source
-
-      Data on LGBTQ+ laws were obtained from Warbelow, Sarah, Courtnay
-      Avant, and Colin Kutney (2020). 2019 State Equality Index.
-      Washington, DC. Human Rights Campaign Foundation.
-      https://assets2.hrc.org/files/assets/resources/HRC-SEI-2019-Report.pdf?_ga=2.148925686.1325740687.1594310864-1928808113.1594310864&_gac=1.213124768.1594312278.EAIaIQobChMI9dP2hMzA6gIVkcDACh21GgLEEAAYASAAEgJiJvD_BwE/.
-      Data on urban residency obtained from
-      https://www.icip.iastate.edu/tables/population/urban-pct-states/.
+Data on LGBTQ+ laws were obtained from Warbelow, Sarah, Courtnay Avant,
+and Colin Kutney (2020). 2019 State Equality Index. Washington, DC.
+Human Rights Campaign Foundation.
+https://assets2.hrc.org/files/assets/resources/HRC-SEI-2019-Report.pdf?_ga=2.148925686.1325740687.1594310864-1928808113.1594310864&_gac=1.213124768.1594312278.EAIaIQobChMI9dP2hMzA6gIVkcDACh21GgLEEAAYASAAEgJiJvD_BwE/.
+Data on urban residency obtained from
+https://www.icip.iastate.edu/tables/population/urban-pct-states/.

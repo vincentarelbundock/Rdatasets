@@ -1,117 +1,112 @@
-.. container::
+================== ===============
+hessling.argentina R Documentation
+================== ===============
 
-   .. container::
+Relation between wheat yield and weather in Argentina
+-----------------------------------------------------
 
-      ================== ===============
-      hessling.argentina R Documentation
-      ================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Relation between wheat yield and weather in Argentina
-         :name: relation-between-wheat-yield-and-weather-in-argentina
+Relation between wheat yield and weather in Argentina
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Relation between wheat yield and weather in Argentina
+A data frame with 30 observations on the following 15 variables.
 
-      .. rubric:: Format
-         :name: format
+``yield``
+   average yield, kg/ha
 
-      A data frame with 30 observations on the following 15 variables.
+``year``
+   year
 
-      ``yield``
-         average yield, kg/ha
+``p05``
+   precipitation (mm) in May
 
-      ``year``
-         year
+``p06``
+   precip in June
 
-      ``p05``
-         precipitation (mm) in May
+``p07``
+   precip in July
 
-      ``p06``
-         precip in June
+``p08``
+   precip in August
 
-      ``p07``
-         precip in July
+``p09``
+   precip in Septempber
 
-      ``p08``
-         precip in August
+``p10``
+   precip in October
 
-      ``p09``
-         precip in Septempber
+``p11``
+   precip in November
 
-      ``p10``
-         precip in October
+``p12``
+   precip in December
 
-      ``p11``
-         precip in November
+``t06``
+   june temperature deviation from normal, deg Celsius
 
-      ``p12``
-         precip in December
+``t07``
+   july temp deviation
 
-      ``t06``
-         june temperature deviation from normal, deg Celsius
+``t08``
+   august temp deviation
 
-      ``t07``
-         july temp deviation
+``t09``
+   september temp deviation
 
-      ``t08``
-         august temp deviation
+``t10``
+   october temp deviation
 
-      ``t09``
-         september temp deviation
+``t11``
+   november temp deviation
 
-      ``t10``
-         october temp deviation
+Details
+~~~~~~~
 
-      ``t11``
-         november temp deviation
+In Argentina wheat is typically sown May to August. Harvest begins in
+November or December.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      In Argentina wheat is typically sown May to August. Harvest begins
-      in November or December.
+N. A. Hessling, 1922. Relations between the weather and the yield of
+wheat in the Argentine republic, *Monthly Weather Review*, 50, 302-308.
+https://doi.org/10.1175/1520-0493(1922)50<302:RBTWAT>2.0.CO;2
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      N. A. Hessling, 1922. Relations between the weather and the yield
-      of wheat in the Argentine republic, *Monthly Weather Review*, 50,
-      302-308.
-      https://doi.org/10.1175/1520-0493(1922)50<302:RBTWAT>2.0.CO;2
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(hessling.argentina)
+   dat <- hessling.argentina
 
-         ## Not run: 
+   # Fig 1 of Hessling.  Use avg Aug-Nov temp to predict yield
+   dat <- transform(dat, avetmp=(t08+t09+t10+t11)/4) # Avg temp
+   m0 <- lm(yield ~ avetmp, dat)
+   plot(yield~year, dat, ylim=c(100,1500), type='l',
+   main="hessling.argentina: observed (black) and predicted yield (blue)")
+   lines(fitted(m0)~year, dat, col="blue")
 
-         library(agridat)
-         data(hessling.argentina)
-         dat <- hessling.argentina
+   # A modern, PLS approach
+   libs(pls)
+   yld <- dat[,"yield",drop=FALSE]
+   yld <- as.matrix(sweep(yld, 2, colMeans(yld)))
+   cov <- dat[,c("p06","p07","p08","p09","p10","p11", "t08","t09","t10","t11")]
+   cov <- as.matrix(scale(cov))
+   m2 <- plsr(yld~cov)
 
-         # Fig 1 of Hessling.  Use avg Aug-Nov temp to predict yield
-         dat <- transform(dat, avetmp=(t08+t09+t10+t11)/4) # Avg temp
-         m0 <- lm(yield ~ avetmp, dat)
-         plot(yield~year, dat, ylim=c(100,1500), type='l',
-         main="hessling.argentina: observed (black) and predicted yield (blue)")
-         lines(fitted(m0)~year, dat, col="blue")
-
-         # A modern, PLS approach
-         libs(pls)
-         yld <- dat[,"yield",drop=FALSE]
-         yld <- as.matrix(sweep(yld, 2, colMeans(yld)))
-         cov <- dat[,c("p06","p07","p08","p09","p10","p11", "t08","t09","t10","t11")]
-         cov <- as.matrix(scale(cov))
-         m2 <- plsr(yld~cov)
-
-         # biplot(m2, which="x", var.axes=TRUE, main="hessling.argentina")
+   # biplot(m2, which="x", var.axes=TRUE, main="hessling.argentina")
 
 
-         libs(corrgram)
-         corrgram(dat, main="hessling.argentina - correlations of yield and covariates")
+   libs(corrgram)
+   corrgram(dat, main="hessling.argentina - correlations of yield and covariates")
 
 
-         ## End(Not run)
+   ## End(Not run)

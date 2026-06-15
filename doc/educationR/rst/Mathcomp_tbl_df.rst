@@ -1,51 +1,45 @@
-.. container::
+=============== ===============
+Mathcomp_tbl_df R Documentation
+=============== ===============
 
-   .. container::
+Incoming Freshmen Math Competency at a Community College
+--------------------------------------------------------
 
-      =============== ===============
-      Mathcomp_tbl_df R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Incoming Freshmen Math Competency at a Community
-         College
-         :name: incoming-freshmen-math-competency-at-a-community-college
+This dataset, Mathcomp_tbl_df, is a tibble containing the standardized
+math competency scores for a group of 31 entering freshmen at a small
+community college. The dataset provides insights into the initial math
+skills of incoming students, which could be useful for evaluating
+preparedness and designing interventions to improve academic success.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, Mathcomp_tbl_df, is a tibble containing the
-      standardized math competency scores for a group of 31 entering
-      freshmen at a small community college. The dataset provides
-      insights into the initial math skills of incoming students, which
-      could be useful for evaluating preparedness and designing
-      interventions to improve academic success.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Mathcomp_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Mathcomp_tbl_df)
+A tibble with 31 observations and 1 variable:
 
-      .. rubric:: Format
-         :name: format
+score
+   Standardized math competency score (integer).
 
-      A tibble with 31 observations and 1 variable:
+Details
+~~~~~~~
 
-      score
-         Standardized math competency score (integer).
+The dataset name has been kept as 'Mathcomp_tbl_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the educationR package and assists
+users in identifying its specific characteristics. The suffix 'tbl_df'
+indicates that the dataset is a tibble. The original content has not
+been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'Mathcomp_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      educationR package and assists users in identifying its specific
-      characteristics. The suffix 'tbl_df' indicates that the dataset is
-      a tibble. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset was taken from the BSDA package.
+The dataset was taken from the BSDA package.

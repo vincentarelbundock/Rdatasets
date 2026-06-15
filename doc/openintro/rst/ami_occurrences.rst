@@ -1,46 +1,43 @@
-.. container::
+=============== ===============
+ami_occurrences R Documentation
+=============== ===============
 
-   .. container::
+Acute Myocardial Infarction (Heart Attack) Events
+-------------------------------------------------
 
-      =============== ===============
-      ami_occurrences R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Acute Myocardial Infarction (Heart Attack) Events
-         :name: acute-myocardial-infarction-heart-attack-events
+This dataset is simulated but contains realistic occurrences of AMI in
+NY City.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset is simulated but contains realistic occurrences of
-      AMI in NY City.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   ami_occurrences
 
-      .. code:: R
+Format
+~~~~~~
 
-         ami_occurrences
+A data frame with 365 observations on the following variable.
 
-      .. rubric:: Format
-         :name: format
+ami
+   Number of daily occurrences of heart attacks in NY City.
 
-      A data frame with 365 observations on the following variable.
+Examples
+~~~~~~~~
 
-      ami
-         Number of daily occurrences of heart attacks in NY City.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   library(ggplot2)
 
-         library(ggplot2)
-
-         ggplot(ami_occurrences, mapping = aes(x = ami)) +
-           geom_bar() +
-           labs(
-             x = "Acute Myocardial Infarction events",
-             y = "Count",
-             title = "Acute Myocardial Infarction events in NYC"
-           )
+   ggplot(ami_occurrences, mapping = aes(x = ami)) +
+     geom_bar() +
+     labs(
+       x = "Acute Myocardial Infarction events",
+       y = "Count",
+       title = "Acute Myocardial Infarction events in NYC"
+     )

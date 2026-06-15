@@ -1,71 +1,66 @@
-.. container::
+========= ===============
+nydal1996 R Documentation
+========= ===============
 
-   .. container::
+``{}^{14}C`` Measurements in Atmospheric ``CO_2``
+-------------------------------------------------
 
-      ========= ===============
-      nydal1996 R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: ``{}^{14}C`` Measurements in Atmospheric ``CO_2``
-         :name: c-measurements-in-atmospheric-co_2
+Corrected ``{}^{14}C`` measurements from air samples collected at five
+Norwegian sites from 1962-1993.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Corrected ``{}^{14}C`` measurements from air samples collected at
-      five Norwegian sites from 1962-1993.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   nydal1996
 
-      .. code:: R
+Format
+~~~~~~
 
-         nydal1996
+A ``data.frame`` with 620 observations and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+site
+   ``character``: sampling station.
 
-      A ``data.frame`` with 620 observations and 5 variables:
+start
+   ``Date``: beginning date of the sampling period.
 
-      site
-         ``character``: sampling station.
+end
+   ``Date``: ending date of the sampling period.
 
-      start
-         ``Date``: beginning date of the sampling period.
+delta
+   ``numeric``: isotopic ratio ``\Delta^{14}C`` (per mil).
 
-      end
-         ``Date``: ending date of the sampling period.
+sigma
+   ``numeric``: error on ``delta`` (per mil).
 
-      delta
-         ``numeric``: isotopic ratio ``\Delta^{14}C`` (per mil).
+Source
+~~~~~~
 
-      sigma
-         ``numeric``: error on ``delta`` (per mil).
+Nydal, R. and Lövseth, K. (1996). *Carbon-14 Measurements in Atmospheric
+CO2 from Northern and Southern Hemisphere Sites, 1962-1993*.
+ORNL/CDIAC-93; NDP-057. Washington, DC: USDOE Office of Energy Research.
+`doi:10.2172/461185 <https://doi.org/10.2172/461185>`__
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      Nydal, R. and Lövseth, K. (1996). *Carbon-14 Measurements in
-      Atmospheric CO2 from Northern and Southern Hemisphere Sites,
-      1962-1993*. ORNL/CDIAC-93; NDP-057. Washington, DC: USDOE Office
-      of Energy Research.
-      `doi:10.2172/461185 <https://doi.org/10.2172/461185>`__
+Other isotopic data: ``lisiecki2005``, ``ngrip2004``, ``ngrip2010``,
+``spratt2016``, ``vegetation``
 
-      .. rubric:: See Also
-         :name: see-also
+Examples
+~~~~~~~~
 
-      Other isotopic data: ``lisiecki2005``, ``ngrip2004``,
-      ``ngrip2010``, ``spratt2016``, ``vegetation``
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         plot(
-           x = nydal1996$start,
-           y = nydal1996$delta,
-           type = "p",
-           xlab = "Date",
-           ylab = expression(Delta^{14}*"C")
-         )
+   plot(
+     x = nydal1996$start,
+     y = nydal1996$delta,
+     type = "p",
+     xlab = "Date",
+     ylab = expression(Delta^{14}*"C")
+   )

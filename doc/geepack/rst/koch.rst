@@ -1,48 +1,45 @@
-.. container::
+==== ===============
+koch R Documentation
+==== ===============
 
-   .. container::
+Ordinal Data from Koch
+----------------------
 
-      ==== ===============
-      koch R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Ordinal Data from Koch
-         :name: ordinal-data-from-koch
+The ``koch`` data frame has 288 rows and 4 columns.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The ``koch`` data frame has 288 rows and 4 columns.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   koch
 
-      .. code:: R
+Format
+~~~~~~
 
-         koch
+This data frame contains the following columns:
 
-      .. rubric:: Format
-         :name: format
+trt
+   a numeric vector
 
-      This data frame contains the following columns:
+day
+   a numeric vector
 
-      trt
-         a numeric vector
+y
+   an ordered factor with levels: ``1`` < ``2`` < ``3``
 
-      day
-         a numeric vector
+id
+   a numeric vector
 
-      y
-         an ordered factor with levels: ``1`` < ``2`` < ``3``
+Examples
+~~~~~~~~
 
-      id
-         a numeric vector
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         data(koch)
-         fit <- ordgee(ordered(y) ~ trt + as.factor(day), id=id, data=koch, corstr="exch")
-         summary(fit)
+   data(koch)
+   fit <- ordgee(ordered(y) ~ trt + as.factor(day), id=id, data=koch, corstr="exch")
+   summary(fit)

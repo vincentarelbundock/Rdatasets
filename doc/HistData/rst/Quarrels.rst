@@ -1,335 +1,325 @@
-.. container::
+======== ===============
+Quarrels R Documentation
+======== ===============
 
-   .. container::
+Statistics of Deadly Quarrels
+-----------------------------
 
-      ======== ===============
-      Quarrels R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Statistics of Deadly Quarrels
-         :name: statistics-of-deadly-quarrels
+*The Statistics Of Deadly Quarrels* by Lewis Fry Richardson (1960) is
+one of the earlier attempts at quantification of historical conflict
+behavior.
 
-      .. rubric:: Description
-         :name: description
+The data set contains 779 dyadic deadly quarrels that cover a time
+period from 1809 to 1949. A quarrel consists of one pair of
+belligerents, and is identified by its beginning date and magnitude (log
+10 of the number of deaths). Neither actor in a quarrel is identified by
+name.
 
-      *The Statistics Of Deadly Quarrels* by Lewis Fry Richardson (1960)
-      is one of the earlier attempts at quantification of historical
-      conflict behavior.
+Because Richardson took a dyad of belligerents as his unit, a given war,
+such as World War I or World War II comprises multiple observations, for
+all pairs of belligerents. For example, there are forty-four pairs of
+belligerents coded for World War I.
 
-      The data set contains 779 dyadic deadly quarrels that cover a time
-      period from 1809 to 1949. A quarrel consists of one pair of
-      belligerents, and is identified by its beginning date and
-      magnitude (log 10 of the number of deaths). Neither actor in a
-      quarrel is identified by name.
+For each quarrel, the nominal variables include the type of quarrel, as
+well as political, cultural, and economic similarities and
+dissimilarities between the pair of combatants.
 
-      Because Richardson took a dyad of belligerents as his unit, a
-      given war, such as World War I or World War II comprises multiple
-      observations, for all pairs of belligerents. For example, there
-      are forty-four pairs of belligerents coded for World War I.
+Format
+~~~~~~
 
-      For each quarrel, the nominal variables include the type of
-      quarrel, as well as political, cultural, and economic similarities
-      and dissimilarities between the pair of combatants.
+A data frame with 779 observations on the following 84 variables.
 
-      .. rubric:: Usage
-         :name: usage
+``ID``
+   V84: Id sequence
 
-      .. code:: R
+``year``
+   V1: Begin date of quarrel
 
-         data(Quarrels)
+``international``
+   V2: Nation vs nation
 
-      .. rubric:: Format
-         :name: format
+``colonial``
+   V3: Nation vs colony
 
-      A data frame with 779 observations on the following 84 variables.
+``revolution``
+   V4: Revolution or civil war
 
-      ``ID``
-         V84: Id sequence
+``nat.grp``
+   V5: Nation vs gp in other nation
 
-      ``year``
-         V1: Begin date of quarrel
+``grp.grpSame``
+   V6: Grp vs grp (same nation)
 
-      ``international``
-         V2: Nation vs nation
+``grp.grpDif``
+   V7: Grp vs grp (between nations)
 
-      ``colonial``
-         V3: Nation vs colony
+``numGroups``
+   V8: Number groups against which fighting
 
-      ``revolution``
-         V4: Revolution or civil war
+``months``
+   V9: Number months fighting
 
-      ``nat.grp``
-         V5: Nation vs gp in other nation
+``pairs``
+   V10: Number pairs in whole matrix
 
-      ``grp.grpSame``
-         V6: Grp vs grp (same nation)
+``monthsPairs``
+   V11: Num mons for all in matrix
 
-      ``grp.grpDif``
-         V7: Grp vs grp (between nations)
+``logDeaths``
+   V12: Log (killed) matrix
 
-      ``numGroups``
-         V8: Number groups against which fighting
+``deaths``
+   V13: Total killed for matrix
 
-      ``months``
-         V9: Number months fighting
+``exchangeGoods``
+   V14: Gp sent goods to other
 
-      ``pairs``
-         V10: Number pairs in whole matrix
+``obstacleGoods``
+   V15: Gp puts obstacles to goods
 
-      ``monthsPairs``
-         V11: Num mons for all in matrix
+``intermarriageOK``
+   V16: Present intermarriages
 
-      ``logDeaths``
-         V12: Log (killed) matrix
+``intermarriageBan``
+   V17: Intermarriages banned
 
-      ``deaths``
-         V13: Total killed for matrix
+``simBody``
+   V18: Similar body characteristics
 
-      ``exchangeGoods``
-         V14: Gp sent goods to other
+``difBody``
+   V19: Difference in body characteristics
 
-      ``obstacleGoods``
-         V15: Gp puts obstacles to goods
+``simDress``
+   V20: Similarity of customs (dress)
 
-      ``intermarriageOK``
-         V16: Present intermarriages
+``difDress``
+   V21: Difference of customs (dress)
 
-      ``intermarriageBan``
-         V17: Intermarriages banned
+``eqWealth``
+   V22: Common level of wealth
 
-      ``simBody``
-         V18: Similar body characteristics
+``difWealth``
+   V23: Difference in wealth
 
-      ``difBody``
-         V19: Difference in body characteristics
+``simMariagCust``
+   V24: Similar marriage customst
 
-      ``simDress``
-         V20: Similarity of customs (dress)
+``difMariagCust``
+   V25: Different marriage customs
 
-      ``difDress``
-         V21: Difference of customs (dress)
+``simRelig``
+   V26: Similar religion or philosophy of life
 
-      ``eqWealth``
-         V22: Common level of wealth
+``difRelig``
+   V27: Religion or philosophy felt different
 
-      ``difWealth``
-         V23: Difference in wealth
+``philanthropy``
+   V28: General philanthropy
 
-      ``simMariagCust``
-         V24: Similar marriage cusomst
+``restrictMigration``
+   V29: Restricted immigrations
 
-      ``difMariagCust``
-         V25: Different marriage customs
+``sameLanguage``
+   V30: Common mother tongue
 
-      ``simRelig``
-         V26: Similar religion or philosophy of life
+``difLanguage``
+   V31: Different languages
 
-      ``difRelig``
-         V27: Religion or philosophy felt different
+``simArtSci``
+   V32: Similar science, arts
 
-      ``philanthropy``
-         V28: General philanthropy
+``travel``
+   V33: Travel
 
-      ``restrictMigration``
-         V29: Restricted immigrations
+``ignorance``
+   V34: Ignorant of other/both
 
-      ``sameLanguage``
-         V30: Common mother tongue
+``simPersLiberty``
+   V35: Personal liberty similar
 
-      ``difLanguage``
-         V31: Different languages
+``difPersLiberty``
+   V36: More personal liberty
 
-      ``simArtSci``
-         V32: Similar science, arts
+``sameGov``
+   V37: Common government
 
-      ``travel``
-         V33: Travel
+``sameGovYrs``
+   V38: Years since common govt established
 
-      ``ignorance``
-         V34: Ignorant of other/both
+``prevConflict``
+   V39: Belligerents fought previously
 
-      ``simPersLiberty``
-         V35: Personal liberty similar
+``prevConflictYrs``
+   V40: Years since belligerents fought
 
-      ``difPersLiberty``
-         V36: More personal liberty
+``chronicFighting``
+   V41: Chronic fighting between belligerents
 
-      ``sameGov``
-         V37: Common government
+``persFriendship``
+   V42: Autocrats personal friends
 
-      ``sameGovYrs``
-         V38: Years since common govt established
+``persResentment``
+   V43: Leaders personal resentment
 
-      ``prevConflict``
-         V39: Belligerents fought previously
+``difLegal``
+   V44: Annoyingly different legal systems
 
-      ``prevConflictYrs``
-         V40: Years since belligerents fought
+``nonintervention``
+   V45: Policy of nonintervention
 
-      ``chronicFighting``
-         V41: Chronic fighting between belligerents
+``thirdParty``
+   V46: Led by 3rd group to conflict
 
-      ``persFriendship``
-         V42: Autocrats personal friends
+``supportEnemy``
+   V47: Supported others enemy
 
-      ``persResentment``
-         V43: Leaders personal resentment
+``attackAlly``
+   V48: Attacked ally of other
 
-      ``difLegal``
-         V44: Annoyingly different legal systems
+``rivalsLand``
+   V49: Rivals territory concess
 
-      ``nonintervention``
-         V45: Policy of nonintervention
+``rivalsTrade``
+   V50: Rivals trade
 
-      ``thirdParty``
-         V46: Led by 3rd group to conflict
+``churchPower``
+   V51: Church civil power
 
-      ``supportEnemy``
-         V47: Supported others enemy
+``noExtension``
+   V52: Policy not extending term
 
-      ``attackAlly``
-         V48: Attacked ally of other
+``territory``
+   V53: Desired territory
 
-      ``rivalsLand``
-         V49: Rivals territory concess
+``habitation``
+   V54: Wanted habitation
 
-      ``rivalsTrade``
-         V50: Rivals trade
+``minerals``
+   V55: Desired minerals
 
-      ``churchPower``
-         V51: Church civil power
+``StrongHold``
+   V56: Wanted strategic stronghold
 
-      ``noExtension``
-         V52: Policy not extending term
+``taxation``
+   V57: Taxed other
 
-      ``territory``
-         V53: Desired territory
+``loot``
+   V58: Wanted loot
 
-      ``habitation``
-         V54: Wanted habitation
+``objectedWar``
+   V59: Objected to war
 
-      ``minerals``
-         V55: Desired minerals
+``enjoyFight``
+   V60: Enjoyed fighting
 
-      ``StrongHold``
-         V56: Wanted strategic stronghold
+``pride``
+   V61: Elated by strong pride
 
-      ``taxation``
-         V57: Taxed other
+``overpopulated``
+   V62: Insufficient land for population
 
-      ``loot``
-         V58: Wanted loot
+``fightForPay``
+   V63: Fought only for pay
 
-      ``objectedWar``
-         V59: Objected to war
+``joinWinner``
+   V64: Desired to join winners
 
-      ``enjoyFight``
-         V60: Enjoyed fighting
+``otherDesiredWar``
+   V65: Quarrel desired by other
 
-      ``pride``
-         V61: Elated by strong pride
+``propaganda3rd``
+   V66: Issued of propaganda to third parties
 
-      ``overpopulated``
-         V62: Insufficient land for population
+``protection``
+   V67: Offered protection
 
-      ``fightForPay``
-         V63: Fought only for pay
+``sympathy``
+   V68: Sympathized under control
 
-      ``joinWinner``
-         V64: Desired to join winners
+``debt``
+   V69: Owed money to others
 
-      ``otherDesiredWar``
-         V65: Quarrel desired by other
+``prevAllies``
+   V70: Had fought as allies
 
-      ``propaganda3rd``
-         V66: Issued of propaganda to third parties
+``yearsAllies``
+   V71: Years since fought as allies
 
-      ``protection``
-         V67: Offered protection
+``intermingled``
+   V72: Had intermingled on territory
 
-      ``sympathy``
-         V68: Sympathized under control
+``interbreeding``
+   V73: Interbreeding between groups
 
-      ``debt``
-         V69: Owed money to others
+``propadanda``
+   V74: Issued propaganda to other group
 
-      ``prevAllies``
-         V70: Had fought as allies
+``orderedObey``
+   V75: Ordered other to obey
 
-      ``yearsAllies``
-         V71: Years since fought as allies
+``commerceOther``
+   V76: Commercial enterprises
 
-      ``intermingled``
-         V72: Had intermingled on territory
+``feltStronger``
+   V77: Felt stronger
 
-      ``interbreeding``
-         V73: Interbreeding between groups
+``competeIntellect``
+   V78: Competed successfully intellectual occ
 
-      ``propadanda``
-         V74: Issued propaganda to other group
+``insecureGovt``
+   V79: Government insecure
 
-      ``orderedObey``
-         V75: Ordered other to obey
+``prepWar``
+   V80: Preparations for war
 
-      ``commerceOther``
-         V76: Commercial enterprises
+``RegionalError``
+   V81: Regional error measure
 
-      ``feltStronger``
-         V77: Felt stronger
+``CasualtyError``
+   V82: Casualty error measure
 
-      ``competeIntellect``
-         V78: Competed successfully intellectual occ
+``Auxiliaries``
+   V83: Auxiliaries in service of nation at war
 
-      ``insecureGovt``
-         V79: Government insecure
+Details
+~~~~~~~
 
-      ``prepWar``
-         V80: Preparations for war
+In the original data set obtained from ICPSR, variables were named
+``V1``-``V84``. These were renamed to make them more meaningful.
+``V84``, renamed ``ID`` was moved to the first position, but otherwise
+the order of variables is the same.
 
-      ``RegionalError``
-         V81: Regional error measure
+In many of the ``factor`` variables, ``0`` is used to indicate
+"irrelevant to quarrel". This refers to those relations that Richardson
+found absent or irrelevant to the particular quarrel, and did not
+subsequently mention.
 
-      ``CasualtyError``
-         V82: Casualty error measure
+See the original codebook at
+http://www.icpsr.umich.edu/cgi-bin/file?comp=none&study=5407&ds=1&file_id=652814
+for details not contained here.
 
-      ``Auxiliaries``
-         V83: Auxiliaries in service of nation at war
+Source
+~~~~~~
 
-      .. rubric:: Details
-         :name: details
+http://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/05407
 
-      In the original data set obtained from ICPSR, variables were named
-      ``V1``-``V84``. These were renamed to make them more meaningful.
-      ``V84``, renamed ``ID`` was moved to the first position, but
-      otherwise the order of variables is the same.
+References
+~~~~~~~~~~
 
-      In many of the ``factor`` variables, ``0`` is used to indicate
-      "irrelevant to quarrel". This refers to those relations that
-      Richardson found absent or irrelevant to the particular quarrel,
-      and did not subsequently mention.
+Lewis F. Richardson, (1960). *The Statistics Of Deadly Quarrels*.
+(Edited by Q. Wright and C. C. Lienau). Pittsburgh: Boxwood Press.
 
-      See the original codebook at
-      http://www.icpsr.umich.edu/cgi-bin/file?comp=none&study=5407&ds=1&file_id=652814
-      for details not contained here.
+Rummel, Rudolph J. (1967), "Dimensions of Dyadic War, 1820-1952."
+*Journal of Conflict Resolution*. **11**, (2), 176 - 183.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      http://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/05407
+.. code:: R
 
-      .. rubric:: References
-         :name: references
 
-      Lewis F. Richardson, (1960). *The Statistics Of Deadly Quarrels*.
-      (Edited by Q. Wright and C. C. Lienau). Pittsburgh: Boxwood Press.
-
-      Rummel, Rudolph J. (1967), "Dimensions of Dyadic War, 1820-1952."
-      *Journal of Conflict Resolution*. 11, (2), 176 - 183.
-
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(Quarrels)
-         str(Quarrels)
+   data(Quarrels)
+   str(Quarrels)

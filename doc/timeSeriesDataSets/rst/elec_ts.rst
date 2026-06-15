@@ -1,42 +1,38 @@
-.. container::
+======= ===============
+elec_ts R Documentation
+======= ===============
 
-   .. container::
+Electricity Production.
+-----------------------
 
-      ======= ===============
-      elec_ts R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Electricity Production.
-         :name: electricity-production.
+The dataset name has been changed to 'elec_ts' to avoid confusion with
+other packages in the R ecosystem from which datasets have been sourced.
+The suffix 'ts' indicates that this dataset is a time series object.
+This naming convention helps distinguish this dataset as part of the
+'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'elec_ts' to avoid confusion
-      with other packages in the R ecosystem from which datasets have
-      been sourced. The suffix 'ts' indicates that this dataset is a
-      time series object. This naming convention helps distinguish this
-      dataset as part of the 'timeseriesdatasets' package and assists
-      users in identifying its specific characteristics. The original
-      content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(elec_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(elec_ts)
+A time series object with 476 observations:
 
-      .. rubric:: Format
-         :name: format
+elec
+   A numeric vector representing the monthly electricity production,
+   measured in gigawatt-hours (GWh).
 
-      A time series object with 476 observations:
+Source
+~~~~~~
 
-      elec
-         A numeric vector representing the monthly electricity
-         production, measured in gigawatt-hours (GWh).
-
-      .. rubric:: Source
-         :name: source
-
-      Data provided by the Australian Bureau of Statistics.
+Data provided by the Australian Bureau of Statistics.

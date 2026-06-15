@@ -1,45 +1,39 @@
-.. container::
+============ ===============
+hyndsight_ts R Documentation
+============ ===============
 
-   .. container::
+Daily Pageviews for the Hyndsight Blog (April 2014 - April 2015).
+-----------------------------------------------------------------
 
-      ============ ===============
-      hyndsight_ts R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Daily Pageviews for the Hyndsight Blog (April 2014 -
-         April 2015).
-         :name: daily-pageviews-for-the-hyndsight-blog-april-2014---april-2015.
+The dataset name has been changed to 'hyndsight_ts' to avoid confusion
+with other packages in the R ecosystem from which datasets have been
+sourced. The suffix 'ts' indicates that this dataset is a time series
+object. This naming convention helps distinguish this dataset as part of
+the 'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'hyndsight_ts' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. The suffix 'ts' indicates that this
-      dataset is a time series object. This naming convention helps
-      distinguish this dataset as part of the 'timeseriesdatasets'
-      package and assists users in identifying its specific
-      characteristics. The original content of the dataset has not been
-      modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(hyndsight_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(hyndsight_ts)
+A time series object with 365 observations:
 
-      .. rubric:: Format
-         :name: format
+hyndsight
+   A numeric vector representing the daily pageviews for the Hyndsight
+   blog, measured as the number of pageviews per day, from April 30,
+   2014 to April 29, 2015.
 
-      A time series object with 365 observations:
+Source
+~~~~~~
 
-      hyndsight
-         A numeric vector representing the daily pageviews for the
-         Hyndsight blog, measured as the number of pageviews per day,
-         from April 30, 2014 to April 29, 2015.
-
-      .. rubric:: Source
-         :name: source
-
-      Data provided by the author of the Hyndsight blog.
+Data provided by the author of the Hyndsight blog.

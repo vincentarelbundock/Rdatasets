@@ -1,57 +1,53 @@
-.. container::
+========= ===============
+juveniles R Documentation
+========= ===============
 
-   .. container::
+Base table of juvenile fish sample sites and dates.
+---------------------------------------------------
 
-      ========= ===============
-      juveniles R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Base table of juvenile fish sample sites and dates.
-         :name: base-table-of-juvenile-fish-sample-sites-and-dates.
+A dataset containing base location and time catch information for
+juvenile Galaxis maculatus.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset containing base location and time catch information for
-      juvenile Galaxis maculatus.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   juveniles
 
-      .. code:: R
+Format
+~~~~~~
 
-         juveniles
+A dataset containing 496 rows and 7 variables
 
-      .. rubric:: Format
-         :name: format
+fish_code
+   Primary key, uniquely identifies each fish
 
-      A dataset containing 496 rows and 7 variables
+fish
+   Alternate key
 
-      fish_code
-         Primary key, uniquely identifies each fish
+otolith_code
+   Alternate key
 
-      fish
-         Alternate key
+site
+   Site that fish was caught on
 
-      otolith_code
-         Alternate key
+day
+   Day group that the fish was collected on (1 = 1st fishing day, 5 =
+   5th fishing day). For exact catch date, see 'catch_date'
 
-      site
-         Site that fish was caught on
+month
+   Month that the fish was collected on
 
-      day
-         Day group that the fish was collected on (1 = 1st fishing day,
-         5 = 5th fishing day). For exact catch date, see 'catch_date'
+catch_date
+   Day that fish was caught on
 
-      month
-         Month that the fish was collected on
+Examples
+~~~~~~~~
 
-      catch_date
-         Day that fish was caught on
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(juveniles)
+   data(juveniles)

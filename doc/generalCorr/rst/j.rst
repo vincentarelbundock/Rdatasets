@@ -1,27 +1,23 @@
-.. container::
+= ===============
+j R Documentation
+= ===============
 
-   .. container::
+internal j
+----------
 
-      = ===============
-      j R Documentation
-      = ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: internal j
-         :name: internal-j
+intended for internal use
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      intended for internal use
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(j)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(j)
-
-      .. rubric:: Format
-         :name: format
-
-      The format is: int 4
+The format is: int 4

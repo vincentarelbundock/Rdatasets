@@ -1,73 +1,68 @@
-.. container::
+================== ===============
+SkinCancerChemo_df R Documentation
+================== ===============
 
-   .. container::
+Simulated Data from Skin Cancer Chemoprevention Trial
+-----------------------------------------------------
 
-      ================== ===============
-      SkinCancerChemo_df R Documentation
-      ================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Simulated Data from Skin Cancer Chemoprevention Trial
-         :name: simulated-data-from-skin-cancer-chemoprevention-trial
+This dataset, SkinCancerChemo_df, is a data frame containing simulated
+data mimicking the Skin Cancer Chemoprevention Trial as used in Chiou et
+al. (2017). It records tumor recurrence in patients who were part of the
+trial, which includes information on patient demographics, prior tumors,
+and the treatment they received. The dataset consists of 894
+observations with 7 variables.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, SkinCancerChemo_df, is a data frame containing
-      simulated data mimicking the Skin Cancer Chemoprevention Trial as
-      used in Chiou et al. (2017). It records tumor recurrence in
-      patients who were part of the trial, which includes information on
-      patient demographics, prior tumors, and the treatment they
-      received. The dataset consists of 894 observations with 7
-      variables.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(SkinCancerChemo_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(SkinCancerChemo_df)
+A data frame with 894 observations and 7 variables:
 
-      .. rubric:: Format
-         :name: format
+id
+   Patient ID (numeric).
 
-      A data frame with 894 observations and 7 variables:
+time
+   Time to event or censoring (numeric).
 
-      id
-         Patient ID (numeric).
+count
+   Number of tumor recurrences (numeric).
 
-      time
-         Time to event or censoring (numeric).
+age
+   Age of the patient at the start of the trial (numeric).
 
-      count
-         Number of tumor recurrences (numeric).
+male
+   Gender of the patient (1 = male, 0 = female) (numeric).
 
-      age
-         Age of the patient at the start of the trial (numeric).
+dfmo
+   Indicates whether the patient received DFMO treatment (1 = yes, 0 =
+   no) (numeric).
 
-      male
-         Gender of the patient (1 = male, 0 = female) (numeric).
+priorTumor
+   Number of prior tumors before the trial (numeric).
 
-      dfmo
-         Indicates whether the patient received DFMO treatment (1 = yes,
-         0 = no) (numeric).
+Details
+~~~~~~~
 
-      priorTumor
-         Number of prior tumors before the trial (numeric).
+The dataset name has been kept as 'SkinCancerChemo_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the OncoDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'\_df' indicates that the dataset is a data frame. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'SkinCancerChemo_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The suffix '\_df' indicates that the dataset is a
-      data frame. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the spef package. This simulated dataset is based
-      on the study by Chiou et al. (2017): \*Marginal and conditional
-      cumulative incidence functions in the presence of dependent
-      censoring\*. Biometrics, 73(2), 385–394.
+Data taken from the spef package. This simulated dataset is based on the
+study by Chiou et al. (2017): \*Marginal and conditional cumulative
+incidence functions in the presence of dependent censoring\*.
+Biometrics, 73(2), 385–394.

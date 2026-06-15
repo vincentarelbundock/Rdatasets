@@ -1,95 +1,90 @@
-.. container::
+===================== ===============
+oasis_dementia_mri_df R Documentation
+===================== ===============
 
-   .. container::
+OASIS Aging-Dementia Longitudinal MRI
+-------------------------------------
 
-      ===================== ===============
-      oasis_dementia_mri_df R Documentation
-      ===================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: OASIS Aging-Dementia Longitudinal MRI
-         :name: oasis-aging-dementia-longitudinal-mri
+This dataset, oasis_dementia_mri_df, is a data frame containing
+longitudinal neuroimaging and clinical data from 150 older adults (60-96
+years) with repeated MRI scans over multiple visits. The study includes
+both nondemented and demented individuals, with 373 total imaging
+sessions featuring 3-4 T1-weighted scans per session.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, oasis_dementia_mri_df, is a data frame containing
-      longitudinal neuroimaging and clinical data from 150 older adults
-      (60-96 years) with repeated MRI scans over multiple visits. The
-      study includes both nondemented and demented individuals, with 373
-      total imaging sessions featuring 3-4 T1-weighted scans per
-      session.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(oasis_dementia_mri_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(oasis_dementia_mri_df)
+A data frame with 373 observations and 15 variables:
 
-      .. rubric:: Format
-         :name: format
+Subject.ID
+   Character: Unique subject identifier
 
-      A data frame with 373 observations and 15 variables:
+MRI.ID
+   Character: Unique MRI session identifier
 
-      Subject.ID
-         Character: Unique subject identifier
+Group
+   Factor with 3 levels: Diagnostic group classification
 
-      MRI.ID
-         Character: Unique MRI session identifier
+Visit
+   Integer: Visit number
 
-      Group
-         Factor with 3 levels: Diagnostic group classification
+MR.Delay
+   Integer: Days since first visit
 
-      Visit
-         Integer: Visit number
+Gender
+   Character: Subject gender
 
-      MR.Delay
-         Integer: Days since first visit
+Hand
+   Character: Handedness
 
-      Gender
-         Character: Subject gender
+Age
+   Integer: Subject age in years
 
-      Hand
-         Character: Handedness
+EDUC
+   Integer: Years of education
 
-      Age
-         Integer: Subject age in years
+SES
+   Integer: Socioeconomic status
 
-      EDUC
-         Integer: Years of education
+MMSE
+   Integer: Mini-Mental State Examination score (0-30)
 
-      SES
-         Integer: Socioeconomic status
+CDR
+   Numeric: Clinical Dementia Rating (0-3)
 
-      MMSE
-         Integer: Mini-Mental State Examination score (0-30)
+eTIV
+   Integer: Estimated total intracranial volume (mm³)
 
-      CDR
-         Numeric: Clinical Dementia Rating (0-3)
+nWBV
+   Numeric: Normalized whole brain volume
 
-      eTIV
-         Integer: Estimated total intracranial volume (mm³)
+ASF
+   Numeric: Atlas scaling factor
 
-      nWBV
-         Numeric: Normalized whole brain volume
+Details
+~~~~~~~
 
-      ASF
-         Numeric: Atlas scaling factor
+The dataset name has been kept as 'oasis_dementia_mri_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the NeuroDataSets package. The
+suffix 'df' indicates that the dataset is a data frame. The original
+content has not been modified.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'oasis_dementia_mri_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      NeuroDataSets package. The suffix 'df' indicates that the dataset
-      is a data frame. The original content has not been modified.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the jointest package version 1.0. Original study:
-      Marcus, D.S. et al. (2007) Open Access Series of Imaging Studies
-      (OASIS): Cross-sectional MRI Data in Young, Middle Aged,
-      Nondemented and Demented Older Adults. *Journal of Cognitive
-      Neuroscience*, 19(9), 1498-1507.
+Data taken from the jointest package version 1.0. Original study:
+Marcus, D.S. et al. (2007) Open Access Series of Imaging Studies
+(OASIS): Cross-sectional MRI Data in Young, Middle Aged, Nondemented and
+Demented Older Adults. *Journal of Cognitive Neuroscience*, 19(9),
+1498-1507.

@@ -1,110 +1,103 @@
-.. container::
+============ ===============
+survivalists R Documentation
+============ ===============
 
-   .. container::
+Survivalists
+------------
 
-      ============ ===============
-      survivalists R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Survivalists
-         :name: survivalists
+Contains details of each survivalist including demographics and results.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Contains details of each survivalist including demographics and
-      results.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   survivalists
 
-      .. code:: R
+Format
+~~~~~~
 
-         survivalists
+This data frame contains the following columns:
 
-      .. rubric:: Format
-         :name: format
+``version``
+   Country code for the version of the show
 
-      This data frame contains the following columns:
+``season``
+   The season number
 
-      ``version``
-         Country code for the version of the show
+``id``
+   Survivalist ID
 
-      ``season``
-         The season number
+``name``
+   Name of the survivalist
 
-      ``id``
-         Survivalist ID
+``first_name``
+   First name of the survivalist
 
-      ``name``
-         Name of the survivalist
+``last_name``
+   Last name of the survivalist
 
-      ``first_name``
-         First name of the survivalist
+``age``
+   Age of survivalist
 
-      ``last_name``
-         Last name of the survivalist
+``gender``
+   Gender
 
-      ``age``
-         Age of survivalist
+``city``
+   City
 
-      ``gender``
-         Gender
+``state``
+   State
 
-      ``city``
-         City
+``country``
+   Country
 
-      ``state``
-         State
+``result``
+   Place the survivalist finished in the season
 
-      ``country``
-         Country
+``days_lasted``
+   The number of days lasted in the game before tapping out or winning
 
-      ``result``
-         Place the survivalist finished in the season
+``medically_evacuated``
+   Logical. If the survivalist was medically evacuated from the game
 
-      ``days_lasted``
-         The number of days lasted in the game before tapping out or
-         winning
+``reason_tapped_out``
+   The reason the survivalist tapped out of the game. ``NA`` means they
+   were the winner
 
-      ``medically_evacuated``
-         Logical. If the survivalist was medically evacuated from the
-         game
+``reason_category``
+   A simplified category of the reason for tapping out
 
-      ``reason_tapped_out``
-         The reason the survivalist tapped out of the game. ``NA`` means
-         they were the winner
+``episode_tapped``
+   Episode tapped out
 
-      ``reason_category``
-         A simplified category of the reason for tapping out
+``team``
+   The team they were associated with (only for season 4)
 
-      ``episode_tapped``
-         Episode tapped out
+``day_linked_up``
+   Day the team members linked up
 
-      ``team``
-         The team they were associated with (only for season 4)
+``profession``
+   Profession
 
-      ``day_linked_up``
-         Day the team members linked up
+Source
+~~~~~~
 
-      ``profession``
-         Profession
+https://en.wikipedia.org/wiki/List_of_Alone_episodes#Season_1_(2015)_-_Vancouver_Island
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      https://en.wikipedia.org/wiki/List_of_Alone_episodes#Season_1_(2015)_-_Vancouver_Island
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   library(dplyr)
+   library(ggplot2)
 
-      .. code:: R
-
-         library(dplyr)
-         library(ggplot2)
-
-         survivalists |>
-           count(reason_category, gender) |>
-           filter(!is.na(reason_category)) |>
-           ggplot(aes(reason_category, n, fill = gender)) +
-           geom_col()
+   survivalists |>
+     count(reason_category, gender) |>
+     filter(!is.na(reason_category)) |>
+     ggplot(aes(reason_category, n, fill = gender)) +
+     geom_col()

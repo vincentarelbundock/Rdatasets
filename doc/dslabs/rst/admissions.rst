@@ -1,52 +1,47 @@
-.. container::
+========== ===============
+admissions R Documentation
+========== ===============
 
-   .. container::
+Gender bias among graduate school admissions to UC Berkeley.
+------------------------------------------------------------
 
-      ========== ===============
-      admissions R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Gender bias among graduate school admissions to UC
-         Berkeley.
-         :name: gender-bias-among-graduate-school-admissions-to-uc-berkeley.
+The admission data for six majors for the fall of 1973; often used as an
+example of Simpson's paradox
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The admission data for six majors for the fall of 1973; often used
-      as an example of Simpson's paradox
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   admissions
 
-      .. code:: R
+Format
+~~~~~~
 
-         admissions
+An object of class ``"data.frame"``.
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      An object of class ``"data.frame"``.
+- major. The major or university department.
 
-      .. rubric:: Details
-         :name: details
+- gender. Men or women.
 
-      -  major. The major or university department.
+- admitted. Percent of students admitted.
 
-      -  gender. Men or women.
+- applicants. Total number of applicants.
 
-      -  admitted. Percent of students admitted.
+Source
+~~~~~~
 
-      -  applicants. Total number of applicants.
+PJ Bickel, EA Hammel, and JW O'Connell. Science (1975)
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      PJ Bickel, EA Hammel, and JW O'Connell. Science (1975)
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         admissions
+   admissions

@@ -1,106 +1,98 @@
-.. container::
+=================== ===============
+media_mentions_2020 R Documentation
+=================== ===============
 
-   .. container::
+2020 Presidential Candidates Media Mentions
+-------------------------------------------
 
-      =================== ===============
-      media_mentions_2020 R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: 2020 Presidential Candidates Media Mentions
-         :name: presidential-candidates-media-mentions
+The raw data behind the story "Beto O'Rourke Ignored Cable News - And It
+Ignored Him"
+https://fivethirtyeight.com/features/beto-orourke-ignored-cable-news-and-it-ignored-him/
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Beto O'Rourke Ignored Cable News -
-      And It Ignored Him"
-      https://fivethirtyeight.com/features/beto-orourke-ignored-cable-news-and-it-ignored-him/
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   media_mentions_cable
 
-      .. code:: R
+   media_mentions_online
 
-         media_mentions_cable
+Format
+~~~~~~
 
-         media_mentions_online
+2 dataframes about 2020 presidential candidate media mentions
 
-      .. rubric:: Format
-         :name: format
+An object of class ``spec_tbl_df`` (inherits from ``tbl_df``, ``tbl``,
+``data.frame``) with 954 rows and 6 columns.
 
-      2 dataframes about 2020 presidential candidate media mentions
+media_mentions_cable
+~~~~~~~~~~~~~~~~~~~~
 
-      An object of class ``spec_tbl_df`` (inherits from ``tbl_df``,
-      ``tbl``, ``data.frame``) with 954 rows and 6 columns.
+A data frame with 972 rows representing weeks of cable coverage and 7
+variables:
 
-      .. rubric:: media_mentions_cable
-         :name: media_mentions_cable
+date
+   start date for the week of coverage
 
-      A data frame with 972 rows representing weeks of cable coverage
-      and 7 variables:
+name
+   candidate's name
 
-      date
-         start date for the week of coverage
+matched_clips
+   number of 15-second clips in that week that mention the specified
+   candidate
 
-      name
-         candidate's name
+all_candidate_clips
+   number of 15-second clips in that week that mention any candidates
 
-      matched_clips
-         number of 15-second clips in that week that mention the
-         specified candidate
+total_clips
+   total number of 15-second clips that week across the three networks
 
-      all_candidate_clips
-         number of 15-second clips in that week that mention any
-         candidates
+pct_of_all_candidate_clips
+   percentage of clips in which that specific candidate is mentioned out
+   of all clips mentioning any candidate for that week (matched_clips /
+   all_candidate_clips)
 
-      total_clips
-         total number of 15-second clips that week across the three
-         networks
+query
+   query used for the GDELT Television API
 
-      pct_of_all_candidate_clips
-         percentage of clips in which that specific candidate is
-         mentioned out of all clips mentioning any candidate for that
-         week (matched_clips / all_candidate_clips)
+media_mentions_online
+~~~~~~~~~~~~~~~~~~~~~
 
-      query
-         query used for the GDELT Television API
+A data frame with 954 rows representing weeks and 6 variables:
 
-      .. rubric:: media_mentions_online
-         :name: media_mentions_online
+date
+   start date for the week of coverage
 
-      A data frame with 954 rows representing weeks and 6 variables:
+name
+   candidate's name
 
-      date
-         start date for the week of coverage
+matched_stories
+   number of stories in that week that mention the specified candidate
 
-      name
-         candidate's name
+all_candidate_stories
+   number of stories in that week that mention any candidate
 
-      matched_stories
-         number of stories in that week that mention the specified
-         candidate
+pct_of_all_candidate_stories
+   percentage of stories in which that specific candidate is mentioned
+   out of all stories mentioning any candidate for that week
+   (matched_stories / all_candidate_stories)
 
-      all_candidate_stories
-         number of stories in that week that mention any candidate
+query
+   query for Media Cloud
 
-      pct_of_all_candidate_stories
-         percentage of stories in which that specific candidate is
-         mentioned out of all stories mentioning any candidate for that
-         week (matched_stories / all_candidate_stories)
+Source
+~~~~~~
 
-      query
-         query for Media Cloud
+The GDELT Television API
+https://blog.gdeltproject.org/gdelt-2-0-television-api-debuts/, which
+processes the data from the TV News Archive
+https://archive.org/details/tv.
 
-      .. rubric:: Source
-         :name: source
-
-      The GDELT Television API
-      https://blog.gdeltproject.org/gdelt-2-0-television-api-debuts/,
-      which processes the data from the TV News Archive
-      https://archive.org/details/tv.
-
-      Two collections in the Media Cloud https://mediacloud.org/
-      database U.S. Top Online News
-      https://sources.mediacloud.org/#/collections/58722749 and U.S. Top
-      Digital Native News
-      https://sources.mediacloud.org/#/collections/57078150
+Two collections in the Media Cloud https://mediacloud.org/ database U.S.
+Top Online News https://sources.mediacloud.org/#/collections/58722749
+and U.S. Top Digital Native News
+https://sources.mediacloud.org/#/collections/57078150

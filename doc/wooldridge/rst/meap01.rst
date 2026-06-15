@@ -1,74 +1,69 @@
-.. container::
+====== ===============
+meap01 R Documentation
+====== ===============
 
-   .. container::
+meap01
+------
 
-      ====== ===============
-      meap01 R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: meap01
-         :name: meap01
+Wooldridge Source: Michigan Department of Education,
+www.michigan.gov/mde Data loads lazily.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Wooldridge Source: Michigan Department of Education,
-      www.michigan.gov/mde Data loads lazily.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data('meap01')
 
-      .. code:: R
+Format
+~~~~~~
 
-         data('meap01')
+A data.frame with 1823 observations on 11 variables:
 
-      .. rubric:: Format
-         :name: format
+- **dcode:** district code
 
-      A data.frame with 1823 observations on 11 variables:
+- **bcode:** building code
 
-      -  **dcode:** district code
+- **math4:** percent students satisfactory, 4th grade math
 
-      -  **bcode:** building code
+- **read4:** percent students satisfactory, 4th grade reading
 
-      -  **math4:** percent students satisfactory, 4th grade math
+- **lunch:** percent students eligible for free or reduced lunch
 
-      -  **read4:** percent students satisfactory, 4th grade reading
+- **enroll:** school enrollment
 
-      -  **lunch:** percent students eligible for free or reduced lunch
+- **expend:** total spending, $
 
-      -  **enroll:** school enrollment
+- **exppp:** expenditures per pupil: expend/enroll
 
-      -  **expend:** total spending, $
+- **lenroll:** log(enroll)
 
-      -  **exppp:** expenditures per pupil: expend/enroll
+- **lexpend:** log(expend)
 
-      -  **lenroll:** log(enroll)
+- **lexppp:** log(exppp)
 
-      -  **lexpend:** log(expend)
+Notes
+~~~~~
 
-      -  **lexppp:** log(exppp)
+This is another good data set to compare simple and multiple regression
+estimates. The expenditure variable (in logs, say) and the poverty
+measure (lunch) are negatively correlated in this data set. A simple
+regression of math4 on lexppp gives a negative coefficient. Controlling
+for lunch makes the spending coefficient positive and significant.
 
-      .. rubric:: Notes
-         :name: notes
+Used in Text: page 18
 
-      This is another good data set to compare simple and multiple
-      regression estimates. The expenditure variable (in logs, say) and
-      the poverty measure (lunch) are negatively correlated in this data
-      set. A simple regression of math4 on lexppp gives a negative
-      coefficient. Controlling for lunch makes the spending coefficient
-      positive and significant.
+Source
+~~~~~~
 
-      Used in Text: page 18
+https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-          str(meap01)
+    str(meap01)

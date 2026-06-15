@@ -1,85 +1,79 @@
-.. container::
+============== ===============
+buntaran.wheat R Documentation
+============== ===============
 
-   .. container::
+Multi-environment trial of wheat in Sweden in 2016.
+---------------------------------------------------
 
-      ============== ===============
-      buntaran.wheat R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Multi-environment trial of wheat in Sweden in 2016.
-         :name: multi-environment-trial-of-wheat-in-sweden-in-2016.
+Multi-environment trial of wheat in Sweden in 2016.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Multi-environment trial of wheat in Sweden in 2016.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("buntaran.wheat")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("buntaran.wheat")
+A data frame with 1069 observations on the following 7 variables.
 
-      .. rubric:: Format
-         :name: format
+``zone``
+   Geographic zone: south, middle, north
 
-      A data frame with 1069 observations on the following 7 variables.
+``loc``
+   Location
 
-      ``zone``
-         Geographic zone: south, middle, north
+``rep``
+   Block replicate (up to 4)
 
-      ``loc``
-         Location
+``alpha``
+   Incomplete-block in the alpha design
 
-      ``rep``
-         Block replicate (up to 4)
+``gen``
+   Genotype (cultivar)
 
-      ``alpha``
-         Incomplete-block in the alpha design
+``yield``
+   Dry matter yield, kg/ha
 
-      ``gen``
-         Genotype (cultivar)
+Details
+~~~~~~~
 
-      ``yield``
-         Dry matter yield, kg/ha
+Dry matter yield from wheat trials in Sweden in 2016. The experiments in
+each location were multi-rep with incomplete blocks in an alpha design.
 
-      .. rubric:: Details
-         :name: details
+Electronic data are from the online supplement of Buntaran (2020) and
+also from the "init" package at https://github.com/Flavjack/inti.
 
-      Dry matter yield from wheat trials in Sweden in 2016. The
-      experiments in each location were multi-rep with incomplete blocks
-      in an alpha design.
+Source
+~~~~~~
 
-      Electronic data are from the online supplement of Buntaran (2020)
-      and also from the "init" package at
-      https://github.com/Flavjack/inti.
+Buntaran, Harimurti et al. (2020). Cross-validation of stagewise
+mixed-model analysis of Swedish variety trials with winter wheat and
+spring barley. Crop Science, 60, 2221-2240.
+http://doi.org/10.1002/csc2.20177
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Buntaran, Harimurti et al. (2020). Cross-validation of stagewise
-      mixed-model analysis of Swedish variety trials with winter wheat
-      and spring barley. Crop Science, 60, 2221-2240.
-      http://doi.org/10.1002/csc2.20177
+None.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
+   data(buntaran.wheat)
+   library(agridat)
+   dat <- buntaran.wheat
+   library(lattice)
+   bwplot(yield~loc|zone, dat, layout=c(1,3),
+          scales=list(x=list(rot=90)),
+          main="buntaran.wheat")
 
-      .. code:: R
-
-         ## Not run: 
-         data(buntaran.wheat)
-         library(agridat)
-         dat <- buntaran.wheat
-         library(lattice)
-         bwplot(yield~loc|zone, dat, layout=c(1,3),
-                scales=list(x=list(rot=90)),
-                main="buntaran.wheat")
-
-         ## End(Not run)
+   ## End(Not run)

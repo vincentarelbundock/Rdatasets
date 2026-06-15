@@ -1,66 +1,62 @@
-.. container::
+======= ===============
+tourism R Documentation
+======= ===============
 
-   .. container::
+Australian domestic overnight trips
+-----------------------------------
 
-      ======= ===============
-      tourism R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Australian domestic overnight trips
-         :name: australian-domestic-overnight-trips
+A dataset containing the quarterly overnight trips from 1998 Q1 to 2016
+Q4 across Australia.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset containing the quarterly overnight trips from 1998 Q1 to
-      2016 Q4 across Australia.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   tourism
 
-      .. code:: R
+Format
+~~~~~~
 
-         tourism
+A tsibble with 23,408 rows and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+- **Quarter**: Year quarter (index)
 
-      A tsibble with 23,408 rows and 5 variables:
+- **Region**: The tourism regions are formed through the aggregation of
+  Statistical Local Areas (SLAs) which are defined by the various State
+  and Territory tourism authorities according to their research and
+  marketing needs
 
-      -  **Quarter**: Year quarter (index)
+- **State**: States and territories of Australia
 
-      -  **Region**: The tourism regions are formed through the
-         aggregation of Statistical Local Areas (SLAs) which are defined
-         by the various State and Territory tourism authorities
-         according to their research and marketing needs
+- **Purpose**: Stopover purpose of visit:
 
-      -  **State**: States and territories of Australia
+  - "Holiday"
 
-      -  **Purpose**: Stopover purpose of visit:
+  - "Visiting friends and relatives"
 
-         -  "Holiday"
+  - "Business"
 
-         -  "Visiting friends and relatives"
+  - "Other reason"
 
-         -  "Business"
+- **Trips**: Overnight trips in thousands
 
-         -  "Other reason"
+References
+~~~~~~~~~~
 
-      -  **Trips**: Overnight trips in thousands
+`Tourism Research Australia <https://www.tra.gov.au>`__
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      `Tourism Research Australia <https://www.tra.gov.au>`__
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         library(dplyr)
-         data(tourism)
-         # Total trips over geographical regions
-         tourism %>%
-           group_by(Region, State) %>%
-           summarise(Total_Trips = sum(Trips))
+   library(dplyr)
+   data(tourism)
+   # Total trips over geographical regions
+   tourism %>%
+     group_by(Region, State) %>%
+     summarise(Total_Trips = sum(Trips))

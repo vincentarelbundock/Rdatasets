@@ -1,103 +1,95 @@
-.. container::
+========= ===============
+compiegne R Documentation
+========= ===============
 
-   .. container::
+Compiègne Ceramics
+------------------
 
-      ========= ===============
-      compiegne R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Compiègne Ceramics
-         :name: compiègne-ceramics
+A dataset containing the ceramic counts from the Place des Hallettes in
+Compiègne (Oise, France). The data are grouped into five periods of
+about a century, ranging from the 9th to the 14th century, and sixteen
+ceramic types.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset containing the ceramic counts from the Place des
-      Hallettes in Compiègne (Oise, France). The data are grouped into
-      five periods of about a century, ranging from the 9th to the 14th
-      century, and sixteen ceramic types.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   compiegne
 
-      .. code:: R
+Format
+~~~~~~
 
-         compiegne
+A ``data.frame`` with 5 observations (periods) and 16 variables (ceramic
+types):
 
-      .. rubric:: Format
-         :name: format
+A
+   ``integer``: red to white ceramics with fine sized inclusions.
 
-      A ``data.frame`` with 5 observations (periods) and 16 variables
-      (ceramic types):
+B
+   ``integer``: red to white ceramics with medium sized inclusions.
 
-      A
-         ``integer``: red to white ceramics with fine sized inclusions.
+C
+   ``integer``: dark ceramics with fine sized inclusions.
 
-      B
-         ``integer``: red to white ceramics with medium sized
-         inclusions.
+D
+   ``integer``: dark ceramics with medium sized inclusions.
 
-      C
-         ``integer``: dark ceramics with fine sized inclusions.
+E
+   ``integer``: ceramics close to those of groups B or D, with
+   similarities to group F.
 
-      D
-         ``integer``: dark ceramics with medium sized inclusions.
+F
+   ``integer``: black, red or beige ceramics with coarse inclusions.
 
-      E
-         ``integer``: ceramics close to those of groups B or D, with
-         similarities to group F.
+G
+   ``integer``: red polished ceramics with fine to medium sized
+   inclusions.
 
-      F
-         ``integer``: black, red or beige ceramics with coarse
-         inclusions.
+H
+   ``integer``: black polished ceramics with fine sized inclusions.
 
-      G
-         ``integer``: red polished ceramics with fine to medium sized
-         inclusions.
+I
+   ``integer``: black polished ceramics with medium sized inclusions.
 
-      H
-         ``integer``: black polished ceramics with fine sized
-         inclusions.
+J
+   ``integer``: polished and painted ceramics with fine to medium sized
+   inclusions.
 
-      I
-         ``integer``: black polished ceramics with medium sized
-         inclusions.
+K
+   ``integer``: painted ceramics, similar to those of group A.
 
-      J
-         ``integer``: polished and painted ceramics with fine to medium
-         sized inclusions.
+L
+   ``integer``: painted ceramics, similar to those of group B.
 
-      K
-         ``integer``: painted ceramics, similar to those of group A.
+M
+   ``integer``: painted ceramics with coarse inclusions.
 
-      L
-         ``integer``: painted ceramics, similar to those of group B.
+N
+   ``integer``: glazed ceramics.
 
-      M
-         ``integer``: painted ceramics with coarse inclusions.
+O
+   ``integer``: stamped ceramics.
 
-      N
-         ``integer``: glazed ceramics.
+P
+   ``integer``: coated ceramics.
 
-      O
-         ``integer``: stamped ceramics.
+Chronological periods are numbered from the oldest to the most recent
+(from 1 to 5).
 
-      P
-         ``integer``: coated ceramics.
+Source
+~~~~~~
 
-      Chronological periods are numbered from the oldest to the most
-      recent (from 1 to 5).
+Lacroix, M. C. (1997). La céramique médiévale du site des Hallettes à
+Compiègne (Oise). *Revue archéologique de Picardie*. Numéro spécial,
+13(1), 135-168.
+`doi:10.3406/pica.1997.1945 <https://doi.org/10.3406/pica.1997.1945>`__
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      Lacroix, M. C. (1997). La céramique médiévale du site des
-      Hallettes à Compiègne (Oise). *Revue archéologique de Picardie*.
-      Numéro spécial, 13(1), 135-168.
-      `doi:10.3406/pica.1997.1945 <https://doi.org/10.3406/pica.1997.1945>`__
-
-      .. rubric:: See Also
-         :name: see-also
-
-      Other count data: ``birds``, ``boves``, ``chevelon``, ``loire``,
-      ``merzbach``, ``mississippi``, ``zuni``
+Other count data: ``birds``, ``boves``, ``chevelon``, ``loire``,
+``merzbach``, ``mississippi``, ``zuni``

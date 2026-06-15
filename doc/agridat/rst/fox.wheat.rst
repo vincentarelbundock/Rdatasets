@@ -1,97 +1,91 @@
-.. container::
+========= ===============
+fox.wheat R Documentation
+========= ===============
 
-   .. container::
+Multi-environment trial of wheat, 22 varieties at 14 sites in Australia
+-----------------------------------------------------------------------
 
-      ========= ===============
-      fox.wheat R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Multi-environment trial of wheat, 22 varieties at 14
-         sites in Australia
-         :name: multi-environment-trial-of-wheat-22-varieties-at-14-sites-in-australia
+Wheat yields of 22 varieties at 14 sites in Australia
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Wheat yields of 22 varieties at 14 sites in Australia
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("fox.wheat")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("fox.wheat")
+A data frame with 308 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``gen``
+   genotype/variety factor, 22 levels
 
-      A data frame with 308 observations on the following 4 variables.
+``site``
+   site factor, 14 levels
 
-      ``gen``
-         genotype/variety factor, 22 levels
+``yield``
+   yield, tonnes/ha
 
-      ``site``
-         site factor, 14 levels
+``state``
+   state in Australia
 
-      ``yield``
-         yield, tonnes/ha
+Details
+~~~~~~~
 
-      ``state``
-         state in Australia
+The 1975 Interstate Wheat Variety trial in Australia used RCB design
+with 4 blocks, 22 varieties in 14 sites. Wagga is represented twice, by
+trials sown in May and June.
 
-      .. rubric:: Details
-         :name: details
+The 22 varieties were a highly selected and represent considerable
+genetic diversity with four different groups. (i) from the University of
+Sydney: Timson, Songlen, Gamenya. (ii) widely grown on Mallee soils:
+Heron and Halberd. (iii) late maturing varieties from Victoria:
+Pinnacle, KL-21, JL-157. (iv) with Mexican parentage: WW-15 and Oxley.
 
-      The 1975 Interstate Wheat Variety trial in Australia used RCB
-      design with 4 blocks, 22 varieties in 14 sites. Wagga is
-      represented twice, by trials sown in May and June.
+Source
+~~~~~~
 
-      The 22 varieties were a highly selected and represent considerable
-      genetic diversity with four different groups. (i) from the
-      University of Sydney: Timson, Songlen, Gamenya. (ii) widely grown
-      on Mallee soils: Heron and Halberd. (iii) late maturing varieties
-      from Victoria: Pinnacle, KL-21, JL-157. (iv) with Mexican
-      parentage: WW-15 and Oxley.
+Fox, P.N. and Rathjen, A.J. (1981). Relationships between sites used in
+the interstate wheat variety trials. *Australian Journal of Agricultural
+Research*, 32, 691-702.
 
-      .. rubric:: Source
-         :name: source
+Electronic version supplied by Jonathan Godfrey.
 
-      Fox, P.N. and Rathjen, A.J. (1981). Relationships between sites
-      used in the interstate wheat variety trials. *Australian Journal
-      of Agricultural Research*, 32, 691-702.
+Examples
+~~~~~~~~
 
-      Electronic version supplied by Jonathan Godfrey.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
 
-         ## Not run: 
+   data(fox.wheat)
+   dat <- fox.wheat
 
-         library(agridat)
+   # Means of varieties.  Slight differences from Fox and Rathjen suggest
+   # they had more decimals of precision than shown.
+   tapply(dat$yield, dat$gen, mean)
 
-         data(fox.wheat)
-         dat <- fox.wheat
+   # Calculate genotype means, merge into the data
+   genm <- tapply(dat$yield, dat$gen, mean)
+   dat$genm <- genm[match(dat$gen, names(genm))]
 
-         # Means of varieties.  Slight differences from Fox and Rathjen suggest
-         # they had more decimals of precision than shown.
-         tapply(dat$yield, dat$gen, mean)
+   # Calculate slopes for each site.  Matches Fox, Table 2, Col A.
+   m1 <- lm(yield~site+site:genm, data=dat)
+   sort(round(coef(m1)[15:28],2), dec=TRUE)
 
-         # Calculate genotype means, merge into the data
-         genm <- tapply(dat$yield, dat$gen, mean)
-         dat$genm <- genm[match(dat$gen, names(genm))]
-
-         # Calculate slopes for each site.  Matches Fox, Table 2, Col A.
-         m1 <- lm(yield~site+site:genm, data=dat)
-         sort(round(coef(m1)[15:28],2), dec=TRUE)
-
-         # Figure 1 of Fox
-         libs(lattice)
-         xyplot(yield~genm|state, data=dat, type=c('p','r'), group=site,
-                auto.key=list(columns=4),
-                main="fox.wheat", xlab="Variety mean across all sites",
-                ylab="Variety yield at each site within states")
+   # Figure 1 of Fox
+   libs(lattice)
+   xyplot(yield~genm|state, data=dat, type=c('p','r'), group=site,
+          auto.key=list(columns=4),
+          main="fox.wheat", xlab="Variety mean across all sites",
+          ylab="Variety yield at each site within states")
 
 
-         ## End(Not run)
+   ## End(Not run)

@@ -1,54 +1,49 @@
-.. container::
+=============== ===============
+nonEnglishNames R Documentation
+=============== ===============
 
-   .. container::
+Names with Character Set Problems
+---------------------------------
 
-      =============== ===============
-      nonEnglishNames R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Names with Character Set Problems
-         :name: names-with-character-set-problems
+A ``data.frame`` describing names containing character codes rare or
+non-existent in standard English text, e.g., with various accent marks
+that may not be coded consistently in different locales or by different
+software.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A ``data.frame`` describing names containing character codes rare
-      or non-existent in standard English text, e.g., with various
-      accent marks that may not be coded consistently in different
-      locales or by different software.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(nonEnglishNames)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(nonEnglishNames)
+A ``data.frame`` with two columns:
 
-      .. rubric:: Format
-         :name: format
+nonEnglish
+   a character vector containing names that often have non-standard
+   characters with the non-standard characters replaced by "\_"
 
-      A ``data.frame`` with two columns:
+English
+   a character vector containing a standard English-character
+   translation of ``nonEnglish``
 
-      nonEnglish
-         a character vector containing names that often have
-         non-standard characters with the non-standard characters
-         replaced by "\_"
+See Also
+~~~~~~~~
 
-      English
-         a character vector containing a standard English-character
-         translation of ``nonEnglish``
+``grepNonStandardCharacters``, ``subNonStandardCharacters``
 
-      .. rubric:: See Also
-         :name: see-also
+Examples
+~~~~~~~~
 
-      ``grepNonStandardCharacters``, ``subNonStandardCharacters``
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(nonEnglishNames)
+   data(nonEnglishNames)
 
 
-         all.equal(ncol(nonEnglishNames), 2)
+   all.equal(ncol(nonEnglishNames), 2)

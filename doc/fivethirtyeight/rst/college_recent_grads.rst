@@ -1,108 +1,104 @@
-.. container::
+==================== ===============
+college_recent_grads R Documentation
+==================== ===============
 
-   .. container::
+The Economic Guide To Picking A College Major
+---------------------------------------------
 
-      ==================== ===============
-      college_recent_grads R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The Economic Guide To Picking A College Major
-         :name: the-economic-guide-to-picking-a-college-major
+The raw data behind the story "The Economic Guide To Picking A College
+Major"
+https://fivethirtyeight.com/features/the-economic-guide-to-picking-a-college-major/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "The Economic Guide To Picking A
-      College Major"
-      https://fivethirtyeight.com/features/the-economic-guide-to-picking-a-college-major/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   college_recent_grads
 
-      .. code:: R
+Format
+~~~~~~
 
-         college_recent_grads
+A data frame with 173 rows representing majors (recent graduates) and 21
+variables:
 
-      .. rubric:: Format
-         :name: format
+rank
+   Rank by median earnings
 
-      A data frame with 173 rows representing majors (recent graduates)
-      and 21 variables:
+major_code
+   Major code, FO1DP in ACS PUMS
 
-      rank
-         Rank by median earnings
+major
+   Major description
 
-      major_code
-         Major code, FO1DP in ACS PUMS
+major_category
+   Category of major from Carnevale et al
 
-      major
-         Major description
+total
+   Total number of people with major
 
-      major_category
-         Category of major from Carnevale et al
+sample_size
+   Sample size (unweighted) of full-time, year-round ONLY (used for
+   earnings)
 
-      total
-         Total number of people with major
+men
+   Men with major
 
-      sample_size
-         Sample size (unweighted) of full-time, year-round ONLY (used
-         for earnings)
+women
+   Women with major
 
-      men
-         Men with major
+sharewomen
+   Proportion women
 
-      women
-         Women with major
+employed
+   Number employed (ESR == 1 or 2)
 
-      sharewomen
-         Proportion women
+employed_fulltime
+   Employed 35 hours or more
 
-      employed
-         Number employed (ESR == 1 or 2)
+employed_parttime
+   Employed less than 35 hours
 
-      employed_fulltime
-         Employed 35 hours or more
+employed_fulltime_yearround
+   Employed at least 50 weeks (WKW == 1) and at least 35 hours (WKHP >=
+   35)
 
-      employed_parttime
-         Employed less than 35 hours
+unemployed
+   Number unemployed (ESR == 3)
 
-      employed_fulltime_yearround
-         Employed at least 50 weeks (WKW == 1) and at least 35 hours
-         (WKHP >= 35)
+unemployment_rate
+   Unemployed / (Unemployed + Employed)
 
-      unemployed
-         Number unemployed (ESR == 3)
+p25th
+   25th percentile of earnings
 
-      unemployment_rate
-         Unemployed / (Unemployed + Employed)
+median
+   Median earnings of full-time, year-round workers
 
-      p25th
-         25th percentile of earnings
+p75th
+   75th percentile of earnings
 
-      median
-         Median earnings of full-time, year-round workers
+college_jobs
+   Number with job requiring a college degree
 
-      p75th
-         75th percentile of earnings
+non_college_jobs
+   Number with job not requiring a college degree
 
-      college_jobs
-         Number with job requiring a college degree
+low_wage_jobs
+   Number in low-wage service jobs
 
-      non_college_jobs
-         Number with job not requiring a college degree
+Source
+~~~~~~
 
-      low_wage_jobs
-         Number in low-wage service jobs
+See
+https://github.com/fivethirtyeight/data/blob/master/college-majors/readme.md.
+Note that ``women-stem.csv`` was a subset of the original
+``recent-grads.csv``, so no data frame was created.
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      See
-      https://github.com/fivethirtyeight/data/blob/master/college-majors/readme.md.
-      Note that ``women-stem.csv`` was a subset of the original
-      ``recent-grads.csv``, so no data frame was created.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``college_grad_students``, ``college_all_ages``
+``college_grad_students``, ``college_all_ages``

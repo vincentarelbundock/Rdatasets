@@ -1,49 +1,44 @@
-.. container::
+================ ===============
+cchousing_tbl_df R Documentation
+================ ===============
 
-   .. container::
+Community college housing (simulated data)
+------------------------------------------
 
-      ================ ===============
-      cchousing_tbl_df R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Community college housing (simulated data)
-         :name: community-college-housing-simulated-data
+This dataset, cchousing_tbl_df, is a tibble containing simulated data on
+housing prices for students at a community college. The dataset provides
+the housing prices for 75 students, offering insights into the
+distribution of housing prices in this educational setting.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, cchousing_tbl_df, is a tibble containing simulated
-      data on housing prices for students at a community college. The
-      dataset provides the housing prices for 75 students, offering
-      insights into the distribution of housing prices in this
-      educational setting.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(cchousing_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(cchousing_tbl_df)
+A tibble with 75 observations and 1 variable:
 
-      .. rubric:: Format
-         :name: format
+price
+   Housing price for the student (numeric).
 
-      A tibble with 75 observations and 1 variable:
+Details
+~~~~~~~
 
-      price
-         Housing price for the student (numeric).
+The dataset name has been kept as 'cchousing_tbl_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the educationR package and assists
+users in identifying its specific characteristics. The suffix 'tbl_df'
+indicates that the dataset is a tibble. The original content has not
+been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'cchousing_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      educationR package and assists users in identifying its specific
-      characteristics. The suffix 'tbl_df' indicates that the dataset is
-      a tibble. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset was taken from the openintro package.
+The dataset was taken from the openintro package.

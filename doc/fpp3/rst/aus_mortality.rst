@@ -1,56 +1,52 @@
-.. container::
+============= ===============
+aus_mortality R Documentation
+============= ===============
 
-   .. container::
+Australian mortality data
+-------------------------
 
-      ============= ===============
-      aus_mortality R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Australian mortality data
-         :name: australian-mortality-data
+Weekly death counts and mortality rates in Australia.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Weekly death counts and mortality rates in Australia.
+Time series of class 'tsibble'
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      Time series of class 'tsibble'
+``aus_mortality`` contains weekly data with two measured variables:
 
-      .. rubric:: Details
-         :name: details
+============== ==============
+``Deaths``:    Death count
+``Mortality``: Mortality rate
+============== ==============
 
-      ``aus_mortality`` contains weekly data with two measured
-      variables:
+from 2015 week 01 to 2023 week 12 for five different age groups plus the
+total, categorised by sex.
 
-      ============== ==============
-      ``Deaths``:    Death count
-      ``Mortality``: Mortality rate
-      ============== ==============
+Each series is uniquely identified using three keys:
 
-      from 2015 week 01 to 2023 week 12 for five different age groups
-      plus the total, categorised by sex.
+======== ============================================
+``Sex``: Sex of the individual: Male, Female, or Both
+``Age``: Age group of the individual
+======== ============================================
 
-      Each series is uniquely identified using three keys:
+The mortality rate is defined as the number of deaths per thousand
+people in Australia in each week.
 
-      ======== ============================================
-      ``Sex``: Sex of the individual: Male, Female, or Both
-      ``Age``: Age group of the individual
-      ======== ============================================
+Source
+~~~~~~
 
-      The mortality rate is defined as the number of deaths per thousand
-      people in Australia in each week.
+https://mortality.org/Data/STMF (Downloaded on 29 May 2024)
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      https://mortality.org/Data/STMF (Downloaded on 29 May 2024)
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         aus_mortality
+   aus_mortality

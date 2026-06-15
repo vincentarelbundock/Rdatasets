@@ -16,43 +16,38 @@ function processMathHTML() {
 
 <table style="width: 100%;"><tr><td>HairEyePlace</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>
-Hair Color and Eye Color in Caithness and Aberdeen
-</h2>
+<h2>Hair Color and Eye Color in Caithness and Aberdeen</h2>
 
 <h3>Description</h3>
 
-<p>A three-way frequency table crossing eye color and hair color in two places, Caithness and Aberdeen,
-Scotland.
-These data were of interest to Fisher (1940) and others because
-there are mixtures of people of Nordic, Celtic and Anglo-Saxon origin.
+<p>A three-way frequency table crossing eye color and hair color in two places,
+Caithness and Aberdeen, Scotland. These data were of interest to Fisher
+(1940) and others because there are mixtures of people of Nordic, Celtic and
+Anglo-Saxon origin.
 </p>
-<p>One or both tables have been widely analyzed in conjunction with
-RC and canonical correlation models for categorical data, e.g.,
-Becker and Clogg (1989).
-</p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data(HairEyePlace)</code></pre>
 
 
 <h3>Format</h3>
 
 <p>The format is:
-num [1:4, 1:5, 1:2] 326 688 343 98 38 116 84 48 241 584 ...
-- attr(*, &quot;dimnames&quot;)=List of 3
-..$ Eye  : chr [1:4] &quot;Blue&quot; &quot;Light&quot; &quot;Medium&quot; &quot;Dark&quot;
-..$ Hair : chr [1:5] &quot;Fair&quot; &quot;Red&quot; &quot;Medium&quot; &quot;Dark&quot; ...
-..$ Place: chr [1:2] &quot;Caithness&quot; &quot;Aberdeen&quot;
 </p>
+<pre>
+  num [1:4, 1:5, 1:2] 326 688 343 98 38 116 84 48 241 584 ...
+- attr(*, "dimnames")=List of 3
+..$ Eye  : chr [1:4] "Blue" "Light" "Medium" "Dark"
+..$ Hair : chr [1:5] "Fair" "Red" "Medium" "Dark" ...
+..$ Place: chr [1:2] "Caithness" "Aberdeen"
+</pre>
 
 
 <h3>Details</h3>
 
-<p>The hair and eye colors are ordered as in the original source,
-suggesting that they form ordered categories.
+<p>One or both tables have been widely analyzed in conjunction with RC and
+canonical correlation models for categorical data, e.g., Becker and Clogg
+(1989).
+</p>
+<p>The hair and eye colors are ordered as in the original source, suggesting
+that they form ordered categories.
 </p>
 
 
@@ -64,18 +59,19 @@ suggesting that they form ordered categories.
 
 <h3>References</h3>
 
-<p>Becker, M. P., and Clogg, C. C. (1989). 
-Analysis of Sets of Two-Way Contingency Tables Using Association Models. 
-<em>Journal of the American Statistical Association</em>, 84(405), 142-151. 
+<p>Becker, M. P., and Clogg, C. C. (1989).  Analysis of Sets of
+Two-Way Contingency Tables Using Association Models.  <em>Journal of the
+American Statistical Association</em>, 84(405), 142-151.
 </p>
-<p>Fisher, R.A. (1940) The precision of discriminant functions. 
-<em>Annals of Eugenics</em>, 10, 422-429.
+<p>Fisher, R.A. (1940) The precision of discriminant functions.  <em>Annals
+of Eugenics</em>, 10, 422-429.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(HairEyePlace)
+<pre><code class='language-R'>
+data(HairEyePlace)
 
 # separate mosaics
 mosaic(HairEyePlace[,,1], shade=TRUE, main="Caithness")
@@ -85,6 +81,7 @@ mosaic(HairEyePlace[,,2], shade=TRUE, main="Aberdeen")
 mosaic(~Hair + Eye |Place, data=HairEyePlace, shade=TRUE, legend=FALSE)
 
 cotabplot(~Hair+Eye|Place, data=HairEyePlace, shade=TRUE, legend=FALSE)
+
 </code></pre>
 
 </main>

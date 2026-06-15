@@ -1,40 +1,36 @@
-.. container::
+======== ===============
+uspop_ts R Documentation
+======== ===============
 
-   .. container::
+Populations Recorded by the US Census
+-------------------------------------
 
-      ======== ===============
-      uspop_ts R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Populations Recorded by the US Census
-         :name: populations-recorded-by-the-us-census
+The dataset name has been changed to 'uspop_ts' to avoid confusion with
+other packages in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a time series object. The original content of the
+dataset has not been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'uspop_ts' to avoid confusion
-      with other packages in the R ecosystem. This naming convention
-      helps distinguish this dataset as part of the 'usdatasets' package
-      and identifies it as a time series object. The original content of
-      the dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(uspop_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(uspop_ts)
+A time series object with 19 observations representing the U.S.
+population from 1790 to 1970:
 
-      .. rubric:: Format
-         :name: format
+values
+   Numeric vector containing the population values in millions.
 
-      A time series object with 19 observations representing the U.S.
-      population from 1790 to 1970:
+Source
+~~~~~~
 
-      values
-         Numeric vector containing the population values in millions.
-
-      .. rubric:: Source
-         :name: source
-
-      U.S. Census Bureau.
+U.S. Census Bureau.

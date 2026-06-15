@@ -1,0 +1,131 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of potato in Poland.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>kotowski.potato.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of potato in Poland.
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of potato in Poland.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("kotowski.potato.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 152 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>field</code></dt><dd><p>field name</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row ordinate</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column ordinate</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield per plot, kg</p>
+</dd>
+<dt><code>starch</code></dt><dd><p>starch content per plot, percent</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Kotowski (Google translate): I examined the experimental field of the
+Vegetable Cultivation and Breeding Plant in Skierniewice. The material
+was provided by &quot;Wohltmany&quot; Lochowa potatoes. They were planted on 5
+May 1922 on two adjacent plots, combined into one complex; the soil
+was strong, &quot;even&quot; on the surface, not supplied with manure or mineral
+fertilizers for 3 years, the previous crop was two-year clover
+ploughed in autumn. The development of potatoes, initially weak, due
+to drought, later (from August) much better. They were dug on 12 Oct
+in such a way that 48 plots were marked out on one plot (field 1), and
+104 plots on the other (field 2); the plot was 10 m long and 5 rows of
+potatoes wide, 50 cm apart, so the plot area should theoretically have
+been 25 sq m, but in reality it could have had minor deviations. The
+entire number of tufts (tubers?) was weighed from each plot, and then
+the starch was determined twice on Reimann's scales immediately after
+the digging was finished.
+</p>
+<p>Field F1 width: 12 plots * 2.5 m = 30 m
+</p>
+<p>Field F1 length: 4 plots * 10m = 40 m
+</p>
+<p>Field F2 width: 26 plots * 2.5 m = 67 m
+</p>
+<p>Field F2 length: 4 plots * 10m = 40 m
+</p>
+<p>Transcription details: Data typed by K.Wright 2024.12.09. Text
+translation via Google Translate.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Kotowski, Feliks. (1924).
+A criterion of field homegenity and its value in field trials. (English title).
+Roczniki Nauk Rolniczych, 11, 26-35.
+https://www.google.com/books/edition/Roczniki_nauk_rolniczych/mz0iAQAAIAAJ
+Polish version on page 26. English abstract on page 35.
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  libs(agridat)
+  data(kotowski.potato.uniformity)
+  dat &lt;- kotowski.potato.uniformity
+  libs(desplot)
+   desplot(dat, yield~col*row|field, subset=field=="F1",
+          tick=TRUE, flip=TRUE,
+          aspect=(4*10)/(12*2.5),
+          main="kotowski.potato.uniformity - yield, field F1")
+  desplot(dat, yield~col*row|field, subset=field=="F2",
+          tick=TRUE, flip=TRUE,
+          aspect=(4*10)/(26*2.5),
+          main="kotowski.potato.uniformity - yield, field F2")
+  desplot(dat, starch~col*row|field, subset=field=="F1",
+          tick=TRUE, flip=TRUE,
+          aspect=(4*10)/(12*2.5),
+          main="kotowski.potato.uniformity - starch, field F1")
+  desplot(dat, starch~col*row|field, subset=field=="F2",
+          tick=TRUE, flip=TRUE,
+          aspect=(4*10)/(26*2.5),
+          main="kotowski.potato.uniformity - starch, field F2")
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

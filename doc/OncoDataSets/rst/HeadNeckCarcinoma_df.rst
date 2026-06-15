@@ -1,67 +1,63 @@
-.. container::
+==================== ===============
+HeadNeckCarcinoma_df R Documentation
+==================== ===============
 
-   .. container::
+Head and Neck Squamous-Cell Carcinoma Treatment
+-----------------------------------------------
 
-      ==================== ===============
-      HeadNeckCarcinoma_df R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Head and Neck Squamous-Cell Carcinoma Treatment
-         :name: head-and-neck-squamous-cell-carcinoma-treatment
+This dataset, HeadNeckCarcinoma_df, is a data frame containing results
+from 65 trials examining mortality risk in patients with nonmetastatic
+head and neck squamous-cell carcinoma receiving either locoregional
+treatment plus chemotherapy versus locoregional treatment alone. The
+dataset provides the observed minus expected number of deaths and
+corresponding variances in the locoregional treatment plus chemotherapy
+group.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, HeadNeckCarcinoma_df, is a data frame containing
-      results from 65 trials examining mortality risk in patients with
-      nonmetastatic head and neck squamous-cell carcinoma receiving
-      either locoregional treatment plus chemotherapy versus
-      locoregional treatment alone. The dataset provides the observed
-      minus expected number of deaths and corresponding variances in the
-      locoregional treatment plus chemotherapy group.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(HeadNeckCarcinoma_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(HeadNeckCarcinoma_df)
+A data frame with 65 observations and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+id
+   Trial identifier (numeric).
 
-      A data frame with 65 observations and 5 variables:
+trial
+   Name of the trial (character).
 
-      id
-         Trial identifier (numeric).
+OmE
+   Observed minus expected number of deaths (numeric).
 
-      trial
-         Name of the trial (character).
+V
+   Variance of the observed minus expected deaths (numeric).
 
-      OmE
-         Observed minus expected number of deaths (numeric).
+grp
+   Treatment group (integer).
 
-      V
-         Variance of the observed minus expected deaths (numeric).
+Details
+~~~~~~~
 
-      grp
-         Treatment group (integer).
+The dataset name has been kept as 'HeadNeckCarcinoma_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the OncoDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'\_df' indicates that the dataset is a data frame. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'HeadNeckCarcinoma_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The suffix '\_df' indicates that the dataset is a
-      data frame. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the metadat package. Pignon, J. P., Bourhis, J.,
-      Domenge, C., & Designe, L. (2000). Chemotherapy added to
-      locoregional treatment for head and neck squamous-cell carcinoma:
-      Three meta-analyses of updated individual data. Lancet, 355(9208),
-      949-955. https://doi.org/10.1016/S0140-6736(00)90011-4
+Data taken from the metadat package. Pignon, J. P., Bourhis, J.,
+Domenge, C., & Designe, L. (2000). Chemotherapy added to locoregional
+treatment for head and neck squamous-cell carcinoma: Three meta-analyses
+of updated individual data. Lancet, 355(9208), 949-955.
+https://doi.org/10.1016/S0140-6736(00)90011-4

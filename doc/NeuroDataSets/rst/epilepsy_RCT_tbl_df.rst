@@ -1,68 +1,64 @@
-.. container::
+=================== ===============
+epilepsy_RCT_tbl_df R Documentation
+=================== ===============
 
-   .. container::
+Epilepsy Treatment Randomized Controlled Trial
+----------------------------------------------
 
-      =================== ===============
-      epilepsy_RCT_tbl_df R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Epilepsy Treatment Randomized Controlled Trial
-         :name: epilepsy-treatment-randomized-controlled-trial
+This dataset, epilepsy_RCT_tbl_df, is a tibble containing data from a
+randomized controlled trial of progabide for epilepsy treatment. The
+trial recorded seizure counts for 59 patients at baseline and four
+follow-up visits.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, epilepsy_RCT_tbl_df, is a tibble containing data
-      from a randomized controlled trial of progabide for epilepsy
-      treatment. The trial recorded seizure counts for 59 patients at
-      baseline and four follow-up visits.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(epilepsy_RCT_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(epilepsy_RCT_tbl_df)
+A tibble with 59 observations and 8 variables:
 
-      .. rubric:: Format
-         :name: format
+id
+   Integer: Patient identification number
 
-      A tibble with 59 observations and 8 variables:
+treat
+   Factor with 2 levels: Treatment group (progabide/control)
 
-      id
-         Integer: Patient identification number
+base
+   Integer: Baseline seizure count
 
-      treat
-         Factor with 2 levels: Treatment group (progabide/control)
+age
+   Integer: Patient age in years
 
-      base
-         Integer: Baseline seizure count
+y1
+   Integer: Seizure count at first follow-up
 
-      age
-         Integer: Patient age in years
+y2
+   Integer: Seizure count at second follow-up
 
-      y1
-         Integer: Seizure count at first follow-up
+y3
+   Integer: Seizure count at third follow-up
 
-      y2
-         Integer: Seizure count at second follow-up
+y4
+   Integer: Seizure count at fourth follow-up
 
-      y3
-         Integer: Seizure count at third follow-up
+Details
+~~~~~~~
 
-      y4
-         Integer: Seizure count at fourth follow-up
+The dataset name has been kept as 'epilepsy_RCT_tbl_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the NeuroDataSets package. The
+suffix 'tbl_df' indicates that the dataset is a tibble. The original
+content has not been modified.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'epilepsy_RCT_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      NeuroDataSets package. The suffix 'tbl_df' indicates that the
-      dataset is a tibble. The original content has not been modified.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the pubh package version 2.0.0
+Data taken from the pubh package version 2.0.0

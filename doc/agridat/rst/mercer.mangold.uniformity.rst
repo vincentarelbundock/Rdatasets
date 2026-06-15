@@ -1,99 +1,101 @@
-.. container::
+========================= ===============
+mercer.mangold.uniformity R Documentation
+========================= ===============
 
-   .. container::
+Uniformity trial of mangolds
+----------------------------
 
-      ========================= ===============
-      mercer.mangold.uniformity R Documentation
-      ========================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of mangolds
-         :name: uniformity-trial-of-mangolds
+Uniformity trial of mangolds at Rothamsted Experiment Station, England,
+1910.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of mangolds at Rothamsted Experiment Station,
-      England, 1910.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("mercer.mangold.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("mercer.mangold.uniformity")
+A data frame with 200 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row
 
-      A data frame with 200 observations on the following 4 variables.
+``col``
+   column
 
-      ``row``
-         row
+``roots``
+   root yields, pounds
 
-      ``col``
-         column
+``leaves``
+   leaf yields, pounds
 
-      ``roots``
-         root yields, pounds
+Details
+~~~~~~~
 
-      ``leaves``
-         leaf yields, pounds
+Grown in 1910.
 
-      .. rubric:: Details
-         :name: details
+Each plot was 3 drills, each drill being 2.4 feet wide. Plots were 1/200
+acres, 7.2 feet by 30.25 feet long The length of the plots runs with the
+horizontal lines of figures [in Table I], this being also the direction
+of the drills across the field.
 
-      Grown in 1910.
+Field width: 10 plots \* 30.25ft = 302.5 feet
 
-      Each plot was 3 drills, each drill being 2.4 feet wide. Plots were
-      1/200 acres, 7.2 feet by 30.25 feet long The "length of the plots
-      runs with the horizontal lines of figures [in Table I], this being
-      also the direction of the drills across the field."
+Field length: 20 plots \* 7.25 ft = 145 feet
 
-      Field width: 10 plots \* 30.25ft = 302.5 feet
+Source
+~~~~~~
 
-      Field length: 20 plots \* 7.25 ft = 145 feet
+Mercer, WB and Hall, AD, (1911). The experimental error of field trials.
+The Journal of Agricultural Science, 4, 107-132. Table 1.
+https://doi.org/10.1017/S002185960000160X
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Mercer, WB and Hall, AD, 1911. The experimental error of field
-      trials The Journal of Agricultural Science, 4, 107-132. Table 1.
-      https://doi.org/10.1017/S002185960000160X
+Ehrenberg, P. (1915). Versuch eines Beweises für die Anwendbarkeit der
+Wahrscheinlichkeitsrechnung bei Feldversuchen. Die
+Landwwirthschaftlichen Versuchs-Stationen 87, 29-88.
+https://www.google.com/books/edition/Die_Landwirthschaftlichen_Versuchs_Stati/qFPbIBaHZKUC
 
-      .. rubric:: References
-         :name: references
+McCullagh, P. and Clifford, D., (2006). Evidence for conformal
+invariance of crop yields. Proceedings of the Royal Society A:
+Mathematical, Physical and Engineering Science, 462, 2119–2143.
+https://doi.org/10.1098/rspa.2006.1667
 
-      McCullagh, P. and Clifford, D., (2006). Evidence for conformal
-      invariance of crop yields, Proceedings of the Royal Society A:
-      Mathematical, Physical and Engineering Science, 462, 2119–2143.
-      https://doi.org/10.1098/rspa.2006.1667
+Roemer, Theodor (1920). Der Feldversuch. Page 64, table 5.
+https://www.google.com/books/edition/Arbeiten_der_Deutschen_Landwirtschafts_G/7zBSAQAAMAAJ
 
-      Theodor Roemer (1920). Der Feldversuch. Page 64, table 5.
+Examples
+~~~~~~~~
 
-      .. rubric:: Examples
-         :name: examples
+.. code:: R
 
-      .. code:: R
+   ## Not run: 
 
-         ## Not run: 
+   library(agridat)
+     
+     data(mercer.mangold.uniformity)
+     dat <- mercer.mangold.uniformity
+     
+     libs(desplot)
+     desplot(dat, leaves~col*row,
+             aspect=145/302, # true aspect
+             main="mercer.mangold.uniformity - leaves")
 
-         library(agridat)
-           
-           data(mercer.mangold.uniformity)
-           dat <- mercer.mangold.uniformity
-           
-           libs(desplot)
-           desplot(dat, leaves~col*row,
-                   aspect=145/302, # true aspect
-                   main="mercer.mangold.uniformity - leaves")
+     libs(desplot)
+     desplot(dat, roots~col*row,
+             aspect=145/302, # true aspect
+             main="mercer.mangold.uniformity - roots")
 
-           libs(desplot)
-           desplot(dat, roots~col*row,
-                   aspect=145/302, # true aspect
-                   main="mercer.mangold.uniformity - roots")
+     libs(lattice)
+     xyplot(roots~leaves, data=dat)
+     
 
-           libs(lattice)
-           xyplot(roots~leaves, data=dat)
-           
-
-         ## End(Not run)
+   ## End(Not run)

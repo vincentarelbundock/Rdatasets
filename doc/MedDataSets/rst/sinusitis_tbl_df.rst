@@ -1,55 +1,51 @@
-.. container::
+================ ===============
+sinusitis_tbl_df R Documentation
+================ ===============
 
-   .. container::
+Sinusitis and Antibiotic Experiment
+-----------------------------------
 
-      ================ ===============
-      sinusitis_tbl_df R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Sinusitis and Antibiotic Experiment
-         :name: sinusitis-and-antibiotic-experiment
+The dataset name has been changed to 'sinusitis_tbl_df' to avoid
+confusion with other datasets from packages in the R ecosystem and to
+follow the naming conventions of the 'MedDataSets' package. The suffix
+'\_tbl_df' indicates that this dataset is a tibble, helping to
+distinguish it from other datasets within the package and from those in
+the broader R ecosystem. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'sinusitis_tbl_df' to avoid
-      confusion with other datasets from packages in the R ecosystem and
-      to follow the naming conventions of the 'MedDataSets' package. The
-      suffix '\_tbl_df' indicates that this dataset is a tibble, helping
-      to distinguish it from other datasets within the package and from
-      those in the broader R ecosystem. The original content of the
-      dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(sinusitis_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(sinusitis_tbl_df)
+A tibble with 166 observations and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+group
+   A factor indicating the treatment group (e.g., antibiotic vs.
+   placebo).
 
-      A tibble with 166 observations and 2 variables:
+self_reported_improvement
+   A factor indicating the participants' self-reported improvement
+   (e.g., yes or no).
 
-      group
-         A factor indicating the treatment group (e.g., antibiotic vs.
-         placebo).
+Details
+~~~~~~~
 
-      self_reported_improvement
-         A factor indicating the participants' self-reported improvement
-         (e.g., yes or no).
+This dataset contains information from an experiment assessing the
+effects of antibiotics on patients with sinusitis, focusing on the group
+assignments and the self-reported improvement outcomes observed in the
+participants.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains information from an experiment assessing the
-      effects of antibiotics on patients with sinusitis, focusing on the
-      group assignments and the self-reported improvement outcomes
-      observed in the participants.
-
-      .. rubric:: Source
-         :name: source
-
-      Data collected from a clinical trial investigating the efficacy of
-      antibiotics in treating sinusitis.
+Data collected from a clinical trial investigating the efficacy of
+antibiotics in treating sinusitis.

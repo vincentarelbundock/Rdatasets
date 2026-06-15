@@ -1,95 +1,90 @@
-.. container::
+============= ===============
+police_locals R Documentation
+============= ===============
 
-   .. container::
+Most Police Don't Live In The Cities They Serve
+-----------------------------------------------
 
-      ============= ===============
-      police_locals R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Most Police Don't Live In The Cities They Serve
-         :name: most-police-dont-live-in-the-cities-they-serve
+The raw data behind the story "Most Police Don't Live In The Cities They
+Serve"
+https://fivethirtyeight.com/features/most-police-dont-live-in-the-cities-they-serve/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Most Police Don't Live In The
-      Cities They Serve"
-      https://fivethirtyeight.com/features/most-police-dont-live-in-the-cities-they-serve/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   police_locals
 
-      .. code:: R
+Format
+~~~~~~
 
-         police_locals
+A data frame with 75 rows representing cities and 8 variables:
 
-      .. rubric:: Format
-         :name: format
+city
+   U.S. city
 
-      A data frame with 75 rows representing cities and 8 variables:
+force_size
+   Number of police officers serving that city
 
-      city
-         U.S. city
+all
+   Percentage of the total police force that lives in the city
 
-      force_size
-         Number of police officers serving that city
+white
+   Percentage of white (non-Hispanic) police officers who live in the
+   city
 
-      all
-         Percentage of the total police force that lives in the city
+non_white
+   Percentage of non-white police officers who live in the city
 
-      white
-         Percentage of white (non-Hispanic) police officers who live in
-         the city
+black
+   Percentage of black police officers who live in the city
 
-      non_white
-         Percentage of non-white police officers who live in the city
+hispanic
+   Percentage of Hispanic police officers who live in the city
 
-      black
-         Percentage of black police officers who live in the city
+asian
+   Percentage of Asian police officers who live in the city
 
-      hispanic
-         Percentage of Hispanic police officers who live in the city
+Details
+~~~~~~~
 
-      asian
-         Percentage of Asian police officers who live in the city
+The dataset includes the cities with the 75 largest police forces, with
+the exception of Honolulu for which data is not available. All
+calculations are based on data from the U.S. Census.
 
-      .. rubric:: Details
-         :name: details
+The Census Bureau numbers are potentially going to differ from other
+counts for three reasons:
 
-      The dataset includes the cities with the 75 largest police forces,
-      with the exception of Honolulu for which data is not available.
-      All calculations are based on data from the U.S. Census.
+#. The census category for police officers also includes sheriffs,
+   transit police and others who might not be under the same
+   jurisdiction as a city's police department proper. The census
+   category won't include private security officers.
 
-      The Census Bureau numbers are potentially going to differ from
-      other counts for three reasons:
+#. The census data is estimated from 2006 to 2010; police forces may
+   have changed in size since then.
 
-      #. The census category for police officers also includes sheriffs,
-         transit police and others who might not be under the same
-         jurisdiction as a city's police department proper. The census
-         category won't include private security officers.
+#. There is always a margin of error in census numbers; they are
+   estimates, not complete counts.
 
-      #. The census data is estimated from 2006 to 2010; police forces
-         may have changed in size since then.
+Note: Missing values means that there are fewer than 100 police officers
+of that race serving that city.
 
-      #. There is always a margin of error in census numbers; they are
-         estimates, not complete counts.
+Source
+~~~~~~
 
-      Note: Missing values means that there are fewer than 100 police
-      officers of that race serving that city.
+See https://github.com/fivethirtyeight/data/tree/master/police-locals
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      See
-      https://github.com/fivethirtyeight/data/tree/master/police-locals
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         # To convert data frame to tidy data (long) format, run:
-         library(dplyr)
-         library(tidyr)
-         police_locals_tidy <- police_locals %>%
-            pivot_longer(all:asian, names_to = "race", values_to = "perc_in")
+   # To convert data frame to tidy data (long) format, run:
+   library(dplyr)
+   library(tidyr)
+   police_locals_tidy <- police_locals %>%
+      pivot_longer(all:asian, names_to = "race", values_to = "perc_in")

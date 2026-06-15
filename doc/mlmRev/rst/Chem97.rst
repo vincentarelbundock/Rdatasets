@@ -1,84 +1,78 @@
-.. container::
+====== ===============
+Chem97 R Documentation
+====== ===============
 
-   .. container::
+Scores on A-level Chemistry in 1997
+-----------------------------------
 
-      ====== ===============
-      Chem97 R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Scores on A-level Chemistry in 1997
-         :name: scores-on-a-level-chemistry-in-1997
+Scores on the 1997 A-level Chemistry examination in Britain. Students
+are grouped into schools within local education authories. In addition
+some demographic and pre-test information is provided.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Scores on the 1997 A-level Chemistry examination in Britain.
-      Students are grouped into schools within local education
-      authories. In addition some demographic and pre-test information
-      is provided.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Chem97)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Chem97)
+A data frame with 31022 observations on the following 8 variables.
 
-      .. rubric:: Format
-         :name: format
+lea
+   Local Education Authority - a factor
 
-      A data frame with 31022 observations on the following 8 variables.
+school
+   School identifier - a factor
 
-      lea
-         Local Education Authority - a factor
+student
+   Student identifier - a factor
 
-      school
-         School identifier - a factor
+score
+   Point score on A-level Chemistry in 1997
 
-      student
-         Student identifier - a factor
+gender
+   Student's gender
 
-      score
-         Point score on A-level Chemistry in 1997
+age
+   Age in month, centred at 222 months or 18.5 years
 
-      gender
-         Student's gender
+gcsescore
+   Average GCSE score of individual.
 
-      age
-         Age in month, centred at 222 months or 18.5 years
+gcsecnt
+   Average GCSE score of individual, centered at mean.
 
-      gcsescore
-         Average GCSE score of individual.
+Details
+~~~~~~~
 
-      gcsecnt
-         Average GCSE score of individual, centered at mean.
+This data set is relatively large with 31,022 individuals in 2,280
+schools. Note that while this is used, illustratively, to fit Normal
+response models, the distribution of the response is not well described
+by a Normal distribution.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This data set is relatively large with 31,022 individuals in 2,280
-      schools. Note that while this is used, illustratively, to fit
-      Normal response models, the distribution of the response is not
-      well described by a Normal distribution.
+https://www.bristol.ac.uk/cmm/learning/mmsoftware/data-rev.html
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      http://www.bristol.ac.uk/cmm/learning/mmsoftware/data-rev.html
+Yang, M., Fielding, A. and Goldstein, H. (2002). Multilevel ordinal
+models for examination grades (submitted to *Statistical Modelling*).
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Yang, M., Fielding, A. and Goldstein, H. (2002). Multilevel
-      ordinal models for examination grades (submitted to *Statistical
-      Modelling*).
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         str(Chem97)
-         summary(Chem97)
-         (fm1 <- lmer(score ~ (1|school) + (1|lea), Chem97))
-         (fm2 <- lmer(score ~ gcsecnt + (1|school) + (1|lea), Chem97))
+   str(Chem97)
+   summary(Chem97)
+   (fm1 <- lmer(score ~ (1|school) + (1|lea), Chem97))
+   (fm2 <- lmer(score ~ gcsecnt + (1|school) + (1|lea), Chem97))

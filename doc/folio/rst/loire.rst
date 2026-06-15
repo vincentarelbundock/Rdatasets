@@ -1,65 +1,59 @@
-.. container::
+===== ===============
+loire R Documentation
+===== ===============
 
-   .. container::
+Medieval Ceramics from the Loire Basin
+--------------------------------------
 
-      ===== ===============
-      loire R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Medieval Ceramics from the Loire Basin
-         :name: medieval-ceramics-from-the-loire-basin
+A dataset containing the ceramic counts from the Loire Basin (France).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset containing the ceramic counts from the Loire Basin
-      (France).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   loire
 
-      .. code:: R
+Format
+~~~~~~
 
-         loire
+A ``data.frame`` with 332 observations (assemblages) and 331 variables
+(ceramic types). The first five columns provide background information,
+the next columns give the MNI of each ceramic types:
 
-      .. rubric:: Format
-         :name: format
+site
+   ``character``: name of the archaeological site.
 
-      A ``data.frame`` with 332 observations (assemblages) and 331
-      variables (ceramic types). The first five columns provide
-      background information, the next columns give the MNI of each
-      ceramic types:
+city
+   ``character``: city.
 
-      site
-         ``character``: name of the archaeological site.
+area
+   ``character``: geographical area.
 
-      city
-         ``character``: city.
+lower
+   ``integer``: lower bound of the temporal range (year AD).
 
-      area
-         ``character``: geographical area.
+upper
+   ``integer``: upper bound of the temporal range (year AD).
 
-      lower
-         ``integer``: lower bound of the temporal range (year AD).
+Source
+~~~~~~
 
-      upper
-         ``integer``: upper bound of the temporal range (year AD).
+https://ceramedvaldeloire.huma-num.fr/editions/suppl79racf2022/accueil
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      https://ceramedvaldeloire.huma-num.fr/editions/suppl79racf2022/accueil
+Husi, P. (dir.). (2022). *La céramique médiévale et moderne du bassin de
+la Loire moyenne, chrono-typologie et transformation des aires
+culturelles dans la longue durée (6e-19e s.)*. Suppléments à la revue
+Archéologique du Centre de la France, 79.
 
-      .. rubric:: References
-         :name: references
+See Also
+~~~~~~~~
 
-      Husi, P. (dir.). (2022). *La céramique médiévale et moderne du
-      bassin de la Loire moyenne, chrono-typologie et transformation des
-      aires culturelles dans la longue durée (6e-19e s.)*. Suppléments à
-      la revue Archéologique du Centre de la France, 79.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      Other count data: ``birds``, ``boves``, ``chevelon``,
-      ``compiegne``, ``merzbach``, ``mississippi``, ``zuni``
+Other count data: ``birds``, ``boves``, ``chevelon``, ``compiegne``,
+``merzbach``, ``mississippi``, ``zuni``

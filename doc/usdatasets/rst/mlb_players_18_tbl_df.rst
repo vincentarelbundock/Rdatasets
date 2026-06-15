@@ -1,95 +1,90 @@
-.. container::
+===================== ===============
+mlb_players_18_tbl_df R Documentation
+===================== ===============
 
-   .. container::
+Batter Statistics for 2018 Major League Baseball (MLB) Season
+-------------------------------------------------------------
 
-      ===================== ===============
-      mlb_players_18_tbl_df R Documentation
-      ===================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Batter Statistics for 2018 Major League Baseball (MLB)
-         Season
-         :name: batter-statistics-for-2018-major-league-baseball-mlb-season
+The dataset name has been changed to 'mlb_players_18_tbl_df' to avoid
+confusion with other packages in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a tibble. The original content of the dataset has not
+been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'mlb_players_18_tbl_df' to
-      avoid confusion with other packages in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a tibble. The original
-      content of the dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(mlb_players_18_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(mlb_players_18_tbl_df)
+A tibble with 1270 observations and 19 variables:
 
-      .. rubric:: Format
-         :name: format
+name
+   Character string representing the name of the player.
 
-      A tibble with 1270 observations and 19 variables:
+team
+   Character string indicating the team the player belongs to.
 
-      name
-         Character string representing the name of the player.
+position
+   Character string indicating the position played by the player.
 
-      team
-         Character string indicating the team the player belongs to.
+games
+   Integer representing the number of games played.
 
-      position
-         Character string indicating the position played by the player.
+AB
+   Integer indicating the number of at-bats.
 
-      games
-         Integer representing the number of games played.
+R
+   Integer representing the number of runs scored.
 
-      AB
-         Integer indicating the number of at-bats.
+H
+   Integer representing the number of hits.
 
-      R
-         Integer representing the number of runs scored.
+doubles
+   Integer indicating the number of doubles hit.
 
-      H
-         Integer representing the number of hits.
+triples
+   Integer indicating the number of triples hit.
 
-      doubles
-         Integer indicating the number of doubles hit.
+HR
+   Integer representing the number of home runs hit.
 
-      triples
-         Integer indicating the number of triples hit.
+RBI
+   Integer indicating the number of runs batted in.
 
-      HR
-         Integer representing the number of home runs hit.
+walks
+   Integer indicating the number of walks received.
 
-      RBI
-         Integer indicating the number of runs batted in.
+strike_outs
+   Integer indicating the number of strikeouts.
 
-      walks
-         Integer indicating the number of walks received.
+stolen_bases
+   Integer representing the number of stolen bases.
 
-      strike_outs
-         Integer indicating the number of strikeouts.
+caught_stealing_base
+   Integer indicating the number of times caught stealing.
 
-      stolen_bases
-         Integer representing the number of stolen bases.
+AVG
+   Numeric representing the batting average.
 
-      caught_stealing_base
-         Integer indicating the number of times caught stealing.
+OBP
+   Numeric representing the on-base percentage.
 
-      AVG
-         Numeric representing the batting average.
+SLG
+   Numeric representing the slugging percentage.
 
-      OBP
-         Numeric representing the on-base percentage.
+OPS
+   Numeric representing the on-base plus slugging percentage.
 
-      SLG
-         Numeric representing the slugging percentage.
+Source
+~~~~~~
 
-      OPS
-         Numeric representing the on-base plus slugging percentage.
-
-      .. rubric:: Source
-         :name: source
-
-      Data from Major League Baseball (MLB) player statistics for the
-      2018 season
+Data from Major League Baseball (MLB) player statistics for the 2018
+season

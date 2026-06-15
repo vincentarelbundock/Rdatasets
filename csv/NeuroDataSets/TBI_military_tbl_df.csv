@@ -1,0 +1,439 @@
+rownames,service,component,severity,diagnosed,year
+1,Army,Active,Penetrating,189,2006
+2,Army,Active,Severe,102,2006
+3,Army,Active,Moderate,709,2006
+4,Army,Active,Mild,5896,2006
+5,Army,Active,Not Classifiable,122,2006
+6,Army,Active,Penetrating,33,2006
+7,Army,Active,Severe,26,2006
+8,Army,Guard,Moderate,177,2006
+9,Army,Guard,Mild,1332,2006
+10,Army,Guard,Not Classifiable,29,2006
+11,Army,Guard,Penetrating,12,2006
+12,Army,Guard,Severe,11,2006
+13,Army,Reserve,Moderate,63,2006
+14,Army,Reserve,Mild,541,2006
+15,Army,Reserve,Not Classifiable,12,2006
+16,Navy,Active,Penetrating,29,2006
+17,Navy,Active,Severe,28,2006
+18,Navy,Active,Moderate,217,2006
+19,Navy,Active,Mild,2143,2006
+20,Navy,Active,Not Classifiable,56,2006
+21,Navy,Active,Severe,1,2006
+22,Navy,Reserve,Moderate,19,2006
+23,Navy,Reserve,Mild,165,2006
+24,Navy,Reserve,Not Classifiable,5,2006
+25,Air Force,Active,Penetrating,21,2006
+26,Air Force,Active,Severe,24,2006
+27,Air Force,Active,Moderate,194,2006
+28,Air Force,Active,Mild,1966,2006
+29,Air Force,Active,Not Classifiable,30,2006
+30,Air Force,Active,Penetrating,5,2006
+31,Air Force,Active,Severe,4,2006
+32,Air Force,Guard,Moderate,20,2006
+33,Air Force,Guard,Mild,167,2006
+34,Air Force,Guard,Not Classifiable,8,2006
+35,Air Force,Guard,Severe,2,2006
+36,Air Force,Guard,Reserve,12,2006
+37,Air Force,Guard,Mild,114,2006
+38,Air Force,Guard,Not Classifiable,3,2006
+39,Marines,Active,Penetrating,53,2006
+40,Marines,Active,Severe,28,2006
+41,Marines,Active,Moderate,269,2006
+42,Marines,Active,Mild,1891,2006
+43,Marines,Active,Not Classifiable,23,2006
+44,Marines,Active,Penetrating,5,2006
+45,Marines,Active,Severe,5,2006
+46,Marines,Reserve,Moderate,33,2006
+47,Marines,Reserve,Mild,222,2006
+48,Marines,Reserve,Not Classifiable,7,2006
+49,Army,Active,Penetrating,237,2007
+50,Army,Active,Severe,134,2007
+51,Army,Active,Moderate,1126,2007
+52,Army,Active,Mild,8977,2007
+53,Army,Active,Not Classifiable,249,2007
+54,Army,Active,Penetrating,30,2007
+55,Army,Active,Severe,28,2007
+56,Army,Guard,Moderate,246,2007
+57,Army,Guard,Mild,2418,2007
+58,Army,Guard,Not Classifiable,50,2007
+59,Army,Guard,Penetrating,13,2007
+60,Army,Guard,Severe,8,2007
+61,Army,Reserve,Moderate,106,2007
+62,Army,Reserve,Mild,876,2007
+63,Army,Reserve,Not Classifiable,24,2007
+64,Navy,Active,Penetrating,38,2007
+65,Navy,Active,Severe,18,2007
+66,Navy,Active,Moderate,258,2007
+67,Navy,Active,Mild,2240,2007
+68,Navy,Active,Not Classifiable,55,2007
+69,Navy,Active,Penetrating,1,2007
+70,Navy,Active,Severe,1,2007
+71,Navy,Reserve,Moderate,16,2007
+72,Navy,Reserve,Mild,189,2007
+73,Navy,Reserve,Not Classifiable,9,2007
+74,Air Force,Active,Penetrating,29,2007
+75,Air Force,Active,Severe,25,2007
+76,Air Force,Active,Moderate,201,2007
+77,Air Force,Active,Mild,2049,2007
+78,Air Force,Active,Not Classifiable,39,2007
+79,Air Force,Active,Penetrating,5,2007
+80,Air Force,Active,Severe,1,2007
+81,Air Force,Guard,Moderate,17,2007
+82,Air Force,Guard,Mild,211,2007
+83,Air Force,Guard,Not Classifiable,3,2007
+84,Air Force,Guard,Reserve,17,2007
+85,Air Force,Guard,Mild,138,2007
+86,Air Force,Guard,Not Classifiable,3,2007
+87,Marines,Active,Penetrating,54,2007
+88,Marines,Active,Severe,33,2007
+89,Marines,Active,Moderate,373,2007
+90,Marines,Active,Mild,2372,2007
+91,Marines,Active,Not Classifiable,23,2007
+92,Marines,Active,Severe,1,2007
+93,Marines,Reserve,Moderate,28,2007
+94,Marines,Reserve,Mild,251,2007
+95,Marines,Reserve,Not Classifiable,2,2007
+96,Army,Active,Penetrating,313,2008
+97,Army,Active,Severe,159,2008
+98,Army,Active,Moderate,1098,2008
+99,Army,Active,Mild,11869,2008
+100,Army,Active,Not Classifiable,2082,2008
+101,Army,Active,Penetrating,38,2008
+102,Army,Active,Severe,27,2008
+103,Army,Guard,Moderate,236,2008
+104,Army,Guard,Mild,2394,2008
+105,Army,Guard,Not Classifiable,290,2008
+106,Army,Guard,Penetrating,13,2008
+107,Army,Guard,Severe,13,2008
+108,Army,Reserve,Moderate,97,2008
+109,Army,Reserve,Mild,937,2008
+110,Army,Reserve,Not Classifiable,65,2008
+111,Navy,Active,Penetrating,27,2008
+112,Navy,Active,Severe,18,2008
+113,Navy,Active,Moderate,220,2008
+114,Navy,Active,Mild,2232,2008
+115,Navy,Active,Not Classifiable,61,2008
+116,Navy,Active,Penetrating,2,2008
+117,Navy,Active,Severe,2,2008
+118,Navy,Reserve,Moderate,16,2008
+119,Navy,Reserve,Mild,234,2008
+120,Navy,Reserve,Not Classifiable,8,2008
+121,Air Force,Active,Penetrating,25,2008
+122,Air Force,Active,Severe,25,2008
+123,Air Force,Active,Moderate,183,2008
+124,Air Force,Active,Mild,1944,2008
+125,Air Force,Active,Not Classifiable,60,2008
+126,Air Force,Active,Penetrating,2,2008
+127,Air Force,Guard,Moderate,21,2008
+128,Air Force,Guard,Mild,217,2008
+129,Air Force,Guard,Not Classifiable,3,2008
+130,Air Force,Guard,Severe,1,2008
+131,Air Force,Guard,Reserve,12,2008
+132,Air Force,Guard,Mild,127,2008
+133,Air Force,Guard,Not Classifiable,5,2008
+134,Marines,Active,Penetrating,46,2008
+135,Marines,Active,Severe,27,2008
+136,Marines,Active,Moderate,239,2008
+137,Marines,Active,Mild,2763,2008
+138,Marines,Active,Not Classifiable,45,2008
+139,Marines,Active,Penetrating,3,2008
+140,Marines,Active,Severe,1,2008
+141,Marines,Reserve,Moderate,24,2008
+142,Marines,Reserve,Mild,242,2008
+143,Marines,Reserve,Not Classifiable,14,2008
+144,Army,Active,Penetrating,333,2009
+145,Army,Active,Severe,197,2009
+146,Army,Active,Moderate,987,2009
+147,Army,Active,Mild,11061,2009
+148,Army,Active,Not Classifiable,1430,2009
+149,Army,Active,Penetrating,67,2009
+150,Army,Active,Severe,50,2009
+151,Army,Guard,Moderate,260,2009
+152,Army,Guard,Mild,2921,2009
+153,Army,Guard,Not Classifiable,210,2009
+154,Army,Guard,Penetrating,17,2009
+155,Army,Guard,Severe,15,2009
+156,Army,Reserve,Moderate,98,2009
+157,Army,Reserve,Mild,1092,2009
+158,Army,Reserve,Not Classifiable,108,2009
+159,Navy,Active,Penetrating,25,2009
+160,Navy,Active,Severe,19,2009
+161,Navy,Active,Moderate,175,2009
+162,Navy,Active,Mild,2445,2009
+163,Navy,Active,Not Classifiable,76,2009
+164,Navy,Active,Penetrating,3,2009
+165,Navy,Active,Severe,3,2009
+166,Navy,Reserve,Moderate,29,2009
+167,Navy,Reserve,Mild,227,2009
+168,Navy,Reserve,Not Classifiable,13,2009
+169,Air Force,Active,Penetrating,25,2009
+170,Air Force,Active,Severe,22,2009
+171,Air Force,Active,Moderate,204,2009
+172,Air Force,Active,Mild,2391,2009
+173,Air Force,Active,Not Classifiable,48,2009
+174,Air Force,Active,Penetrating,2,2009
+175,Air Force,Active,Severe,2,2009
+176,Air Force,Guard,Moderate,28,2009
+177,Air Force,Guard,Mild,303,2009
+178,Air Force,Guard,Not Classifiable,9,2009
+179,Air Force,Guard,Penetrating,2,2009
+180,Air Force,Guard,Severe,3,2009
+181,Air Force,Guard,Reserve,17,2009
+182,Air Force,Guard,Mild,176,2009
+183,Air Force,Guard,Not Classifiable,5,2009
+184,Marines,Active,Penetrating,42,2009
+185,Marines,Active,Severe,48,2009
+186,Marines,Active,Moderate,278,2009
+187,Marines,Active,Mild,3016,2009
+188,Marines,Active,Not Classifiable,104,2009
+189,Marines,Active,Penetrating,2,2009
+190,Marines,Active,Severe,2,2009
+191,Marines,Reserve,Moderate,22,2009
+192,Marines,Reserve,Mild,271,2009
+193,Marines,Reserve,Not Classifiable,17,2009
+194,Army,Active,Penetrating,175,2010
+195,Army,Active,Severe,141,2010
+196,Army,Active,Moderate,971,2010
+197,Army,Active,Mild,11371,2010
+198,Army,Active,Not Classifiable,857,2010
+199,Army,Active,Penetrating,39,2010
+200,Army,Active,Severe,40,2010
+201,Army,Guard,Moderate,236,2010
+202,Army,Guard,Mild,3107,2010
+203,Army,Guard,Not Classifiable,254,2010
+204,Army,Guard,Penetrating,12,2010
+205,Army,Guard,Severe,22,2010
+206,Army,Reserve,Moderate,107,2010
+207,Army,Reserve,Mild,1204,2010
+208,Army,Reserve,Not Classifiable,111,2010
+209,Navy,Active,Penetrating,16,2010
+210,Navy,Active,Severe,22,2010
+211,Navy,Active,Moderate,164,2010
+212,Navy,Active,Mild,2312,2010
+213,Navy,Active,Not Classifiable,77,2010
+214,Navy,Active,Penetrating,3,2010
+215,Navy,Active,Severe,3,2010
+216,Navy,Reserve,Moderate,20,2010
+217,Navy,Reserve,Mild,233,2010
+218,Navy,Reserve,Not Classifiable,10,2010
+219,Air Force,Active,Penetrating,26,2010
+220,Air Force,Active,Severe,14,2010
+221,Air Force,Active,Moderate,187,2010
+222,Air Force,Active,Mild,2492,2010
+223,Air Force,Active,Not Classifiable,51,2010
+224,Air Force,Active,Penetrating,4,2010
+225,Air Force,Active,Severe,1,2010
+226,Air Force,Guard,Moderate,28,2010
+227,Air Force,Guard,Mild,344,2010
+228,Air Force,Guard,Not Classifiable,11,2010
+229,Air Force,Guard,Penetrating,4,2010
+230,Air Force,Guard,Severe,3,2010
+231,Air Force,Guard,Reserve,23,2010
+232,Air Force,Guard,Mild,207,2010
+233,Air Force,Guard,Not Classifiable,7,2010
+234,Marines,Active,Penetrating,45,2010
+235,Marines,Active,Severe,37,2010
+236,Marines,Active,Moderate,314,2010
+237,Marines,Active,Mild,3530,2010
+238,Marines,Active,Not Classifiable,142,2010
+239,Marines,Active,Penetrating,7,2010
+240,Marines,Active,Severe,8,2010
+241,Marines,Reserve,Moderate,38,2010
+242,Marines,Reserve,Mild,322,2010
+243,Marines,Reserve,Not Classifiable,16,2010
+244,Army,Active,Penetrating,246,2011
+245,Army,Active,Severe,155,2011
+246,Army,Active,Moderate,1046,2011
+247,Army,Active,Mild,13074,2011
+248,Army,Active,Not Classifiable,1238,2011
+249,Army,Active,Penetrating,41,2011
+250,Army,Active,Severe,32,2011
+251,Army,Guard,Moderate,221,2011
+252,Army,Guard,Mild,2852,2011
+253,Army,Guard,Not Classifiable,549,2011
+254,Army,Guard,Penetrating,19,2011
+255,Army,Guard,Severe,24,2011
+256,Army,Reserve,Moderate,102,2011
+257,Army,Reserve,Mild,1353,2011
+258,Army,Reserve,Not Classifiable,201,2011
+259,Navy,Active,Penetrating,23,2011
+260,Navy,Active,Severe,24,2011
+261,Navy,Active,Moderate,179,2011
+262,Navy,Active,Mild,2387,2011
+263,Navy,Active,Not Classifiable,116,2011
+264,Navy,Active,Penetrating,3,2011
+265,Navy,Active,Severe,1,2011
+266,Navy,Reserve,Moderate,21,2011
+267,Navy,Reserve,Mild,259,2011
+268,Navy,Reserve,Not Classifiable,17,2011
+269,Air Force,Active,Penetrating,32,2011
+270,Air Force,Active,Severe,25,2011
+271,Air Force,Active,Moderate,167,2011
+272,Air Force,Active,Mild,2600,2011
+273,Air Force,Active,Not Classifiable,96,2011
+274,Air Force,Active,Penetrating,7,2011
+275,Air Force,Guard,Moderate,31,2011
+276,Air Force,Guard,Mild,336,2011
+277,Air Force,Guard,Not Classifiable,13,2011
+278,Air Force,Guard,Penetrating,4,2011
+279,Air Force,Guard,Severe,2,2011
+280,Air Force,Guard,Reserve,11,2011
+281,Air Force,Guard,Mild,202,2011
+282,Air Force,Guard,Not Classifiable,8,2011
+283,Marines,Active,Penetrating,48,2011
+284,Marines,Active,Severe,97,2011
+285,Marines,Active,Moderate,359,2011
+286,Marines,Active,Mild,3902,2011
+287,Marines,Active,Not Classifiable,260,2011
+288,Marines,Active,Penetrating,4,2011
+289,Marines,Active,Severe,14,2011
+290,Marines,Reserve,Moderate,31,2011
+291,Marines,Reserve,Mild,370,2011
+292,Marines,Reserve,Not Classifiable,32,2011
+293,Army,Active,Penetrating,127,2012
+294,Army,Active,Severe,161,2012
+295,Army,Active,Moderate,1042,2012
+296,Army,Active,Mild,12429,2012
+297,Army,Active,Not Classifiable,1276,2012
+298,Army,Active,Penetrating,20,2012
+299,Army,Active,Severe,24,2012
+300,Army,Guard,Moderate,194,2012
+301,Army,Guard,Mild,2427,2012
+302,Army,Guard,Not Classifiable,216,2012
+303,Army,Guard,Penetrating,11,2012
+304,Army,Guard,Severe,21,2012
+305,Army,Reserve,Moderate,87,2012
+306,Army,Reserve,Mild,1205,2012
+307,Army,Reserve,Not Classifiable,131,2012
+308,Navy,Active,Penetrating,18,2012
+309,Navy,Active,Severe,30,2012
+310,Navy,Active,Moderate,217,2012
+311,Navy,Active,Mild,2677,2012
+312,Navy,Active,Not Classifiable,93,2012
+313,Navy,Active,Penetrating,4,2012
+314,Navy,Reserve,Moderate,18,2012
+315,Navy,Reserve,Mild,253,2012
+316,Navy,Reserve,Not Classifiable,19,2012
+317,Air Force,Active,Penetrating,25,2012
+318,Air Force,Active,Severe,17,2012
+319,Air Force,Active,Moderate,199,2012
+320,Air Force,Active,Mild,2681,2012
+321,Air Force,Active,Not Classifiable,99,2012
+322,Air Force,Active,Penetrating,2,2012
+323,Air Force,Active,Severe,4,2012
+324,Air Force,Guard,Moderate,30,2012
+325,Air Force,Guard,Mild,375,2012
+326,Air Force,Guard,Not Classifiable,17,2012
+327,Air Force,Guard,Penetrating,2,2012
+328,Air Force,Guard,Reserve,19,2012
+329,Air Force,Guard,Mild,208,2012
+330,Air Force,Guard,Not Classifiable,5,2012
+331,Marines,Active,Penetrating,35,2012
+332,Marines,Active,Severe,41,2012
+333,Marines,Active,Moderate,249,2012
+334,Marines,Active,Mild,3394,2012
+335,Marines,Active,Not Classifiable,209,2012
+336,Marines,Active,Penetrating,4,2012
+337,Marines,Active,Severe,1,2012
+338,Marines,Reserve,Moderate,24,2012
+339,Marines,Reserve,Mild,298,2012
+340,Marines,Reserve,Not Classifiable,15,2012
+341,Army,Active,Penetrating,99,2013
+342,Army,Active,Severe,103,2013
+343,Army,Active,Moderate,1130,2013
+344,Army,Active,Mild,10502,2013
+345,Army,Active,Not Classifiable,1247,2013
+346,Army,Active,Penetrating,17,2013
+347,Army,Active,Severe,16,2013
+348,Army,Guard,Moderate,182,2013
+349,Army,Guard,Mild,2090,2013
+350,Army,Guard,Not Classifiable,187,2013
+351,Army,Guard,Penetrating,6,2013
+352,Army,Guard,Severe,11,2013
+353,Army,Reserve,Moderate,82,2013
+354,Army,Reserve,Mild,1048,2013
+355,Army,Reserve,Not Classifiable,151,2013
+356,Navy,Active,Penetrating,24,2013
+357,Navy,Active,Severe,21,2013
+358,Navy,Active,Moderate,219,2013
+359,Navy,Active,Mild,2637,2013
+360,Navy,Active,Not Classifiable,101,2013
+361,Navy,Active,Severe,1,2013
+362,Navy,Reserve,Moderate,28,2013
+363,Navy,Reserve,Mild,270,2013
+364,Navy,Reserve,Not Classifiable,8,2013
+365,Air Force,Active,Penetrating,21,2013
+366,Air Force,Active,Severe,24,2013
+367,Air Force,Active,Moderate,230,2013
+368,Air Force,Active,Mild,2620,2013
+369,Air Force,Active,Not Classifiable,102,2013
+370,Air Force,Active,Penetrating,3,2013
+371,Air Force,Active,Severe,2,2013
+372,Air Force,Guard,Moderate,27,2013
+373,Air Force,Guard,Mild,343,2013
+374,Air Force,Guard,Not Classifiable,16,2013
+375,Air Force,Guard,Penetrating,1,2013
+376,Air Force,Guard,Reserve,11,2013
+377,Air Force,Guard,Mild,208,2013
+378,Air Force,Guard,Not Classifiable,8,2013
+379,Marines,Active,Penetrating,26,2013
+380,Marines,Active,Severe,27,2013
+381,Marines,Active,Moderate,282,2013
+382,Marines,Active,Mild,2894,2013
+383,Marines,Active,Not Classifiable,186,2013
+384,Marines,Active,Penetrating,3,2013
+385,Marines,Active,Severe,1,2013
+386,Marines,Reserve,Moderate,20,2013
+387,Marines,Reserve,Mild,211,2013
+388,Marines,Reserve,Not Classifiable,6,2013
+389,Army,Active,Penetrating,76,2014
+390,Army,Active,Severe,80,2014
+391,Army,Active,Moderate,1165,2014
+392,Army,Active,Mild,9268,2014
+393,Army,Active,Not Classifiable,881,2014
+394,Army,Active,Penetrating,16,2014
+395,Army,Active,Severe,12,2014
+396,Army,Guard,Moderate,136,2014
+397,Army,Guard,Mild,1730,2014
+398,Army,Guard,Not Classifiable,142,2014
+399,Army,Guard,Penetrating,3,2014
+400,Army,Guard,Severe,5,2014
+401,Army,Reserve,Moderate,85,2014
+402,Army,Reserve,Mild,962,2014
+403,Army,Reserve,Not Classifiable,125,2014
+404,Navy,Active,Penetrating,21,2014
+405,Navy,Active,Severe,18,2014
+406,Navy,Active,Moderate,314,2014
+407,Navy,Active,Mild,2549,2014
+408,Navy,Active,Not Classifiable,117,2014
+409,Navy,Active,Penetrating,2,2014
+410,Navy,Active,Severe,2,2014
+411,Navy,Reserve,Moderate,14,2014
+412,Navy,Reserve,Mild,227,2014
+413,Navy,Reserve,Not Classifiable,10,2014
+414,Air Force,Active,Penetrating,24,2014
+415,Air Force,Active,Severe,19,2014
+416,Air Force,Active,Moderate,229,2014
+417,Air Force,Active,Mild,2637,2014
+418,Air Force,Active,Not Classifiable,93,2014
+419,Air Force,Active,Penetrating,1,2014
+420,Air Force,Active,Severe,4,2014
+421,Air Force,Guard,Moderate,30,2014
+422,Air Force,Guard,Mild,371,2014
+423,Air Force,Guard,Not Classifiable,14,2014
+424,Air Force,Guard,Penetrating,2,2014
+425,Air Force,Guard,Severe,2,2014
+426,Air Force,Guard,Reserve,12,2014
+427,Air Force,Guard,Mild,223,2014
+428,Air Force,Guard,Not Classifiable,11,2014
+429,Marines,Active,Penetrating,27,2014
+430,Marines,Active,Severe,29,2014
+431,Marines,Active,Moderate,326,2014
+432,Marines,Active,Mild,2682,2014
+433,Marines,Active,Not Classifiable,147,2014
+434,Marines,Active,Penetrating,2,2014
+435,Marines,Active,Severe,2,2014
+436,Marines,Reserve,Moderate,24,2014
+437,Marines,Reserve,Mild,188,2014
+438,Marines,Reserve,Not Classifiable,9,2014

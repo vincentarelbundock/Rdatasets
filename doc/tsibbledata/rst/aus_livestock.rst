@@ -1,52 +1,48 @@
-.. container::
+============= ===============
+aus_livestock R Documentation
+============= ===============
 
-   .. container::
+Australian livestock slaughter
+------------------------------
 
-      ============= ===============
-      aus_livestock R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Australian livestock slaughter
-         :name: australian-livestock-slaughter
+Meat production in Australia for human consumption
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Meat production in Australia for human consumption
+Time series of class ``tsibble``
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      Time series of class ``tsibble``
+``aus_livestock`` is a monthly ``tsibble`` with one value:
 
-      .. rubric:: Details
-         :name: details
+====== ==============================
+Count: Number of animals slaughtered.
+       
+====== ==============================
 
-      ``aus_livestock`` is a monthly ``tsibble`` with one value:
+Each series is uniquely identified using two keys:
 
-      ====== ==============================
-      Count: Number of animals slaughtered.
-      \      
-      ====== ==============================
+======= ====================================
+Animal: The animal slaughtered.
+State:  The Australian state (or territory).
+        
+======= ====================================
 
-      Each series is uniquely identified using two keys:
+Source
+~~~~~~
 
-      ======= ====================================
-      Animal: The animal slaughtered.
-      State:  The Australian state (or territory).
-      \       
-      ======= ====================================
+Australian Bureau of Statistics, catalogue number 7218.0.55.001 tables 1
+to 7.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Australian Bureau of Statistics, catalogue number 7218.0.55.001
-      tables 1 to 7.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         library(tsibble)
-         aus_livestock
+   library(tsibble)
+   aus_livestock

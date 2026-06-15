@@ -1,59 +1,55 @@
-.. container::
+=========== ===============
+goog_tbl_df R Documentation
+=========== ===============
 
-   .. container::
+Google stock data
+-----------------
 
-      =========== ===============
-      goog_tbl_df R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Google stock data
-         :name: google-stock-data
+The dataset name has been changed to 'goog_tbl_df' to avoid confusion
+with other packages in the R ecosystem from which datasets have been
+sourced. This naming convention helps distinguish this dataset as part
+of the 'usdatasets' package and assists users in identifying its
+specific characteristics. The suffix 'tbl_df' identifies the dataset as
+a tibble. The original content of the dataset has not been modified in
+any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'goog_tbl_df' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. This naming convention helps
-      distinguish this dataset as part of the 'usdatasets' package and
-      assists users in identifying its specific characteristics. The
-      suffix 'tbl_df' identifies the dataset as a tibble. The original
-      content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(goog_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(goog_tbl_df)
+A tibble with 98 observations and 7 variables:
 
-      .. rubric:: Format
-         :name: format
+date
+   Date of the stock price observation (factor with 98 levels).
 
-      A tibble with 98 observations and 7 variables:
+open
+   Opening price of the stock (numeric).
 
-      date
-         Date of the stock price observation (factor with 98 levels).
+high
+   Highest price during the trading session (numeric).
 
-      open
-         Opening price of the stock (numeric).
+low
+   Lowest price during the trading session (numeric).
 
-      high
-         Highest price during the trading session (numeric).
+close
+   Closing price of the stock (numeric).
 
-      low
-         Lowest price during the trading session (numeric).
+volume
+   Number of shares traded (integer).
 
-      close
-         Closing price of the stock (numeric).
+adj_close
+   Adjusted closing price of the stock (numeric).
 
-      volume
-         Number of shares traded (integer).
+Source
+~~~~~~
 
-      adj_close
-         Adjusted closing price of the stock (numeric).
-
-      .. rubric:: Source
-         :name: source
-
-      Google Stock Market Data
+Google Stock Market Data

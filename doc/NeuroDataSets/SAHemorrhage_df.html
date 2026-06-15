@@ -1,0 +1,79 @@
+<!DOCTYPE html><html><head><title>R: Subarachnoid Hemorrhage Clinical and Laboratory Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>SAHemorrhage_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Subarachnoid Hemorrhage Clinical and Laboratory Data</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, SAHemorrhage_df, is a data frame containing clinical and laboratory variables from
+113 patients diagnosed with aneurysmal subarachnoid hemorrhage. The dataset includes functional
+outcomes, demographic information, clinical severity scores, and biomarker measurements. These data
+provide valuable information for studying neurological prognosis, biomarker associations, and clinical
+patterns in patients with subarachnoid hemorrhage.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(SAHemorrhage_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 113 observations and 7 variables:
+</p>
+
+<dl>
+<dt>gos6</dt><dd><p>Glasgow Outcome Scale at 6 months (ordered factor with 5 levels)</p>
+</dd>
+<dt>outcome</dt><dd><p>Clinical outcome classification (factor with 2 levels)</p>
+</dd>
+<dt>gender</dt><dd><p>Gender of the patient (factor with 2 levels)</p>
+</dd>
+<dt>age</dt><dd><p>Age of the patient (integer)</p>
+</dd>
+<dt>wfns</dt><dd><p>WFNS clinical grade (ordered factor with 5 levels)</p>
+</dd>
+<dt>s100b</dt><dd><p>S100B biomarker level (numeric)</p>
+</dd>
+<dt>ndka</dt><dd><p>Nucleoside diphosphate kinase A level (numeric)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as SAHemorrhage_df to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+NeuroDataSets package and assists users in identifying its specific characteristics.
+The suffix df indicates that the dataset is a data frame. The original content has not been modified
+in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the reportROC package version 3.6
+</p>
+
+</main>
+
+</div>
+</body></html>

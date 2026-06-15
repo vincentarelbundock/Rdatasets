@@ -1,73 +1,68 @@
-.. container::
+===================== ===============
+migraine_treatment_df R Documentation
+===================== ===============
 
-   .. container::
+Migraine Headache Treatment
+---------------------------
 
-      ===================== ===============
-      migraine_treatment_df R Documentation
-      ===================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Migraine Headache Treatment
-         :name: migraine-headache-treatment
+This dataset, migraine_treatment_df, is a data frame containing clinical
+data on 4,152 migraine treatment cases collected by Tammy
+Kostecki-Dillon. The data includes treatment details, headache
+characteristics, and patient demographics.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, migraine_treatment_df, is a data frame containing
-      clinical data on 4,152 migraine treatment cases collected by Tammy
-      Kostecki-Dillon. The data includes treatment details, headache
-      characteristics, and patient demographics.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(migraine_treatment_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(migraine_treatment_df)
+A data frame with 4,152 observations and 9 variables:
 
-      .. rubric:: Format
-         :name: format
+id
+   Integer: Patient identification number
 
-      A data frame with 4,152 observations and 9 variables:
+time
+   Integer: Time measurement (likely days or hours)
 
-      id
-         Integer: Patient identification number
+dos
+   Integer: Treatment dosage
 
-      time
-         Integer: Time measurement (likely days or hours)
+hatype
+   Factor with 3 levels: Headache type classification
 
-      dos
-         Integer: Treatment dosage
+age
+   Integer: Patient age in years
 
-      hatype
-         Factor with 3 levels: Headache type classification
+airq
+   Numeric: Air quality index measurement
 
-      age
-         Integer: Patient age in years
+medication
+   Factor with 3 levels: Medication type
 
-      airq
-         Numeric: Air quality index measurement
+headache
+   Factor with 2 levels: Headache presence/severity
 
-      medication
-         Factor with 3 levels: Medication type
+sex
+   Factor with 2 levels: Patient sex
 
-      headache
-         Factor with 2 levels: Headache presence/severity
+Details
+~~~~~~~
 
-      sex
-         Factor with 2 levels: Patient sex
+The dataset name has been kept as 'migraine_treatment_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the NeuroDataSets package. The
+suffix 'df' indicates that the dataset is a data frame. The original
+content has not been modified.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'migraine_treatment_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      NeuroDataSets package. The suffix 'df' indicates that the dataset
-      is a data frame. The original content has not been modified.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the carData package version 3.0-5. Original
-      collection: Kostecki-Dillon, T. (Year not specified) Migraine
-      Treatment Study.
+Data taken from the carData package version 3.0-5. Original collection:
+Kostecki-Dillon, T. (Year not specified) Migraine Treatment Study.

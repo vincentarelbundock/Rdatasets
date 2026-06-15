@@ -1,174 +1,169 @@
-.. container::
+============ ===============
+ortiz.tomato R Documentation
+============ ===============
 
-   .. container::
+Multi-environment trial of tomato in Latin America, weight/yield and environmental covariates
+---------------------------------------------------------------------------------------------
 
-      ============ ===============
-      ortiz.tomato R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Multi-environment trial of tomato in Latin America,
-         weight/yield and environmental covariates
-         :name: multi-environment-trial-of-tomato-in-latin-america-weightyield-and-environmental-covariates
+Multi-environment trial of tomato in Latin America, weight/yield and
+environmental covariates
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Multi-environment trial of tomato in Latin America, weight/yield
-      and environmental covariates
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+     data("ortiz.tomato.covs")
+     data("ortiz.tomato.yield")
 
-      .. code:: R
+Format
+~~~~~~
 
-           data("ortiz.tomato.covs")
-           data("ortiz.tomato.yield")
+The ``ortiz.tomato.covs`` data frame has 18 observations on the
+following 18 variables.
 
-      .. rubric:: Format
-         :name: format
+``env``
+   environment
 
-      The ``ortiz.tomato.covs`` data frame has 18 observations on the
-      following 18 variables.
+``Day``
+   degree days (base 10)
 
-      ``env``
-         environment
+``Dha``
+   days to harvest
 
-      ``Day``
-         degree days (base 10)
+``Driv``
+   drivings (0/1)
 
-      ``Dha``
-         days to harvest
+``ExK``
+   extra potassium (kg / ha)
 
-      ``Driv``
-         drivings (0/1)
+``ExN``
+   extra nitrogen (kg / ha)
 
-      ``ExK``
-         extra potassium (kg / ha)
+``ExP``
+   extra phosphorous (kg / ha)
 
-      ``ExN``
-         extra nitrogen (kg / ha)
+``Irr``
+   irrigation (0/1)
 
-      ``ExP``
-         extra phosphorous (kg / ha)
+``K``
+   potassium (me/100 g)
 
-      ``Irr``
-         irrigation (0/1)
+``Lat``
+   latitude
 
-      ``K``
-         potassium (me/100 g)
+``Long``
+   longitude
 
-      ``Lat``
-         latitude
+``MeT``
+   mean temperature (C)
 
-      ``Long``
-         longitude
+``MnT``
+   min temperature (C)
 
-      ``MeT``
-         mean temperature (C)
+``MxT``
+   max temperature (C)
 
-      ``MnT``
-         min temperature (C)
+``OM``
+   organic matter (percent)
 
-      ``MxT``
-         max temperature (C)
+``P``
+   phosphorous (ppm)
 
-      ``OM``
-         organic matter (percent)
+``pH``
+   soil pH
 
-      ``P``
-         phosphorous (ppm)
+``Prec``
+   precipitation (mm)
 
-      ``pH``
-         soil pH
+``Tri``
+   trimming (0/1)
 
-      ``Prec``
-         precipitation (mm)
+The ``ortiz.tomato.yield`` data frame has 270 observations on the
+following 4 variables.
 
-      ``Tri``
-         trimming (0/1)
+``env``
+   environment
 
-      The ``ortiz.tomato.yield`` data frame has 270 observations on the
-      following 4 variables.
+``gen``
+   genotype
 
-      ``env``
-         environment
+``yield``
+   marketable fruit yield t/ha
 
-      ``gen``
-         genotype
+``weight``
+   fruit weight, g
 
-      ``yield``
-         marketable fruit yield t/ha
+Details
+~~~~~~~
 
-      ``weight``
-         fruit weight, g
+The environment locations are:
 
-      .. rubric:: Details
-         :name: details
+=== =================================
+E04 Estanzuela, Guatemala
+E05 Baja Verapaz, Guatemala
+E06 Cogutepeque, El Salvador
+E07 San Andres, El Salvador
+E11 Comayagua, Honduras
+E14 Valle de Sabaco, Nicaragua
+E15 San Antonio de Belen, Costa Rica
+E20 San Cristobal, Dominican Republic
+E21 Constanza, Dominican Republic
+E27 Palmira, Colombia
+E40 La Molina, Peru
+E41 Santiago, Chile
+E42 Chillan, Chile
+E43 Curacavi, Chile
+E44 Colina, Chile
+E50 Belem, Brazil
+E51 Caacupe, Paraguay
+E53 Centeno, Trinidad Tobago
+    
+=== =================================
 
-      The environment locations are:
+Used with permission of Rodomiro Ortiz.
 
-      === =================================
-      E04 Estanzuela, Guatemala
-      E05 Baja Verapaz, Guatemala
-      E06 Cogutepeque, El Salvador
-      E07 San Andres, El Salvador
-      E11 Comayagua, Honduras
-      E14 Valle de Sabaco, Nicaragua
-      E15 San Antonio de Belen, Costa Rica
-      E20 San Cristobal, Dominican Republic
-      E21 Constanza, Dominican Republic
-      E27 Palmira, Colombia
-      E40 La Molina, Peru
-      E41 Santiago, Chile
-      E42 Chillan, Chile
-      E43 Curacavi, Chile
-      E44 Colina, Chile
-      E50 Belem, Brazil
-      E51 Caacupe, Paraguay
-      E53 Centeno, Trinidad Tobago
-      \   
-      === =================================
+Source
+~~~~~~
 
-      Used with permission of Rodomiro Ortiz.
+Rodomiro Ortiz and Jose Crossa and Mateo Vargas and Juan Izquierdo,
+2007. Studying the Effect of Environmental Variables On the Genotype x
+Environment Interaction of Tomato. Euphytica, 153, 119–134.
+https://doi.org/10.1007/s10681-006-9248-7
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Rodomiro Ortiz and Jose Crossa and Mateo Vargas and Juan
-      Izquierdo, 2007. Studying the Effect of Environmental Variables On
-      the Genotype x Environment Interaction of Tomato. Euphytica, 153,
-      119–134. https://doi.org/10.1007/s10681-006-9248-7
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(ortiz.tomato.covs)
+   data(ortiz.tomato.yield)
 
-         ## Not run: 
+   libs(pls, reshape2)
+   # Double-centered yield matrix
+   Y <- acast(ortiz.tomato.yield, env ~ gen, value.var='yield')
+   Y <- sweep(Y, 1, rowMeans(Y, na.rm=TRUE))
+   Y <- sweep(Y, 2, colMeans(Y, na.rm=TRUE))
 
-         library(agridat)
-         data(ortiz.tomato.covs)
-         data(ortiz.tomato.yield)
+   # Standardized covariates
+   X <- ortiz.tomato.covs
+   rownames(X) <- X$env
+   X <- X[,c("MxT", "MnT", "MeT", "Prec", "Day", "pH", "OM", "P", "K",
+             "ExN", "ExP", "ExK", "Trim", "Driv", "Irr", "Dha")]
+   X <- scale(X)
 
-         libs(pls, reshape2)
-         # Double-centered yield matrix
-         Y <- acast(ortiz.tomato.yield, env ~ gen, value.var='yield')
-         Y <- sweep(Y, 1, rowMeans(Y, na.rm=TRUE))
-         Y <- sweep(Y, 2, colMeans(Y, na.rm=TRUE))
+   # Now, PLS relating the two matrices.
+   # Note: plsr deletes observations with missing values
 
-         # Standardized covariates
-         X <- ortiz.tomato.covs
-         rownames(X) <- X$env
-         X <- X[,c("MxT", "MnT", "MeT", "Prec", "Day", "pH", "OM", "P", "K",
-                   "ExN", "ExP", "ExK", "Trim", "Driv", "Irr", "Dha")]
-         X <- scale(X)
+   m1 <- plsr(Y~X)
+   # Inner-product relationships similar to Ortiz figure 1.
+   biplot(m1, which="x", var.axes=TRUE, main="ortiz.tomato - env*cov biplot")
+   #biplot(m1, which="y", var.axes=TRUE)
 
-         # Now, PLS relating the two matrices.
-         # Note: plsr deletes observations with missing values
-
-         m1 <- plsr(Y~X)
-         # Inner-product relationships similar to Ortiz figure 1.
-         biplot(m1, which="x", var.axes=TRUE, main="ortiz.tomato - env*cov biplot")
-         #biplot(m1, which="y", var.axes=TRUE)
-
-         ## End(Not run)
+   ## End(Not run)

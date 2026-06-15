@@ -1,35 +1,32 @@
-.. container::
+========= ===============
+us_change R Documentation
+========= ===============
 
-   .. container::
+Percentage changes in economic variables in the USA.
+----------------------------------------------------
 
-      ========= ===============
-      us_change R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Percentage changes in economic variables in the USA.
-         :name: percentage-changes-in-economic-variables-in-the-usa.
+``us_change`` contains percentage changes in quarterly personal
+consumption expenditure, personal disposable income, production, savings
+and the unemployment rate for the US, 1970 to 2016. Original $ values
+were in chained 2012 US dollars.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      ``us_change`` contains percentage changes in quarterly personal
-      consumption expenditure, personal disposable income, production,
-      savings and the unemployment rate for the US, 1970 to 2016.
-      Original $ values were in chained 2012 US dollars.
+Time series of class 'tsibble'
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      Time series of class 'tsibble'
+Federal Reserve Bank of St Louis.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Federal Reserve Bank of St Louis.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         us_change
+   us_change

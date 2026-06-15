@@ -1,46 +1,42 @@
-.. container::
+======= ===============
+nail_ts R Documentation
+======= ===============
 
-   .. container::
+Nail Prices
+-----------
 
-      ======= ===============
-      nail_ts R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Nail Prices
-         :name: nail-prices
+The dataset name has been changed to 'nail_ts' to avoid confusion with
+other packages in the R ecosystem from which datasets have been sourced.
+The suffix 'ts' indicates that this dataset is a time series object.
+This naming convention helps distinguish this dataset as part of the
+'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'nail_ts' to avoid confusion
-      with other packages in the R ecosystem from which datasets have
-      been sourced. The suffix 'ts' indicates that this dataset is a
-      time series object. This naming convention helps distinguish this
-      dataset as part of the 'timeseriesdatasets' package and assists
-      users in identifying its specific characteristics. The original
-      content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(nail_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(nail_ts)
+A time series object of 197 observations on the following:
 
-      .. rubric:: Format
-         :name: format
+Time-Series [1:197]
+   Nail prices (in cents per pound).
 
-      A time series object of 197 observations on the following:
+Details
+~~~~~~~
 
-      Time-Series [1:197]
-         Nail prices (in cents per pound).
+The data covers the period from 1800 to 1996.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The data covers the period from 1800 to 1996.
-
-      .. rubric:: Source
-         :name: source
-
-      U.S. Department of Agriculture
+U.S. Department of Agriculture

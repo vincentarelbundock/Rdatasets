@@ -1,49 +1,43 @@
-.. container::
+=========== ===============
+pop_vs_soda R Documentation
+=========== ===============
 
-   .. container::
+Pop vs Soda vs Coke
+-------------------
 
-      =========== ===============
-      pop_vs_soda R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Pop vs Soda vs Coke
-         :name: pop-vs-soda-vs-coke
+Results of a volunteer survey on how people around the U.S. refer to
+fizzy cola drinks. The options are "pop", "soda", "coke", or "other".
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Results of a volunteer survey on how people around the U.S. refer
-      to fizzy cola drinks. The options are "pop", "soda", "coke", or
-      "other".
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   pop_vs_soda
 
-      .. code:: R
+Format
+~~~~~~
 
-         pop_vs_soda
+A data frame with 374250 observations, one per survey respondent, and 4
+variables:
 
-      .. rubric:: Format
-         :name: format
+state
+   the U.S. state in which the respondent resides
 
-      A data frame with 374250 observations, one per survey respondent,
-      and 4 variables:
+region
+   region in which the state falls (as defined by the U.S. Census)
 
-      state
-         the U.S. state in which the respondent resides
+word_for_cola
+   how the respondent refers to fizzy cola drinks
 
-      region
-         region in which the state falls (as defined by the U.S. Census)
+pop
+   whether or not the respondent refers to fizzy cola drinks as "pop"
 
-      word_for_cola
-         how the respondent refers to fizzy cola drinks
+Source
+~~~~~~
 
-      pop
-         whether or not the respondent refers to fizzy cola drinks as
-         "pop"
-
-      .. rubric:: Source
-         :name: source
-
-      The survey responses were obtained at https://popvssoda.com/ which
-      is maintained by Alan McConchie.
+The survey responses were obtained at https://popvssoda.com/ which is
+maintained by Alan McConchie.

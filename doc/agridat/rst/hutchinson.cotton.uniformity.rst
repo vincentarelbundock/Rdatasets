@@ -1,88 +1,83 @@
-.. container::
+============================ ===============
+hutchinson.cotton.uniformity R Documentation
+============================ ===============
 
-   .. container::
+Uniformity trial of cotton
+--------------------------
 
-      ============================ ===============
-      hutchinson.cotton.uniformity R Documentation
-      ============================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of cotton
-         :name: uniformity-trial-of-cotton
+Uniformity trial of cotton harvested in 1941
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of cotton harvested in 1941
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("hutchinson.cotton.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("hutchinson.cotton.uniformity")
+A data frame with 2000 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row ordinate
 
-      A data frame with 2000 observations on the following 3 variables.
+``col``
+   column ordinate
 
-      ``row``
-         row ordinate
+``yield``
+   yield per plant, grams
 
-      ``col``
-         column ordinate
+Details
+~~~~~~~
 
-      ``yield``
-         yield per plant, grams
+The data are lint yield from single plants in a cotton uniformity trial
+in St. Vincent in 1940-41. The experiment was planted in 50 rows with 40
+plants in each row. The spacing was 1.5 feet within rows and 4 feet
+between rows.
 
-      .. rubric:: Details
-         :name: details
+Field length: 40 plants \* 1.5 feet = 60 feet
 
-      The data are lint yield from single plants in a cotton uniformity
-      trial in St. Vincent in 1940-41. The experiment was planted in 50
-      rows with 40 plants in each row. The spacing was 1.5 feet within
-      rows and 4 feet between rows.
+Field width: 50 columns \* 4 feet = 200 feet
 
-      Field length: 40 plants \* 1.5 feet = 60 feet
+This data was made available with special help from the staff at
+Rothamsted Research Library.
 
-      Field width: 50 columns \* 4 feet = 200 feet
+Transcription details: Rothamsted library scanned the paper documents to
+pdf. K.Wright used the pdf to manually type the values into an Excel
+file and checked the hand-typed values. Plants marked as "Dead" on the
+PDF were left blank. There were 6 numbers that were illegible in the
+PDF. These were also left blank.
 
-      This data was made available with special help from the staff at
-      Rothamsted Research Library.
+Source
+~~~~~~
 
-      Rothamsted library scanned the paper documents to pdf. K.Wright
-      used the pdf to manually type the values into an Excel file and
-      immediately checked the hand-typed values. Plants marked as "Dead"
-      on the PDF were left blank. There were 6 numbers that were
-      illegible in the PDF. These were also left blank.
+Rothamsted Research Library, Box STATS17 WG Cochran, Folder 2.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Rothamsted Research Library, Box STATS17 WG Cochran, Folder 2.
+A. C. Brewer and R. Mead (1986). Continuous Second Order Models of
+Spatial Variation with Application to the Efficiency of Field Crop
+Experiments. Journal of the Royal Statistical Society. Series A
+(General), 149(4), 314–348. See page 325. http://doi.org/10.2307/2981720
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      A. C. Brewer and R. Mead (1986). Continuous Second Order Models of
-      Spatial Variation with Application to the Efficiency of Field Crop
-      Experiments. Journal of the Royal Statistical Society. Series A
-      (General), 149(4), 314–348. See page 325.
-      http://doi.org/10.2307/2981720
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
+     library(agridat)
+     data(hutchinson.cotton.uniformity)
+     dat <- hutchinson.cotton.uniformity
+     
+     require(desplot)
+     desplot(dat, yield ~ col*row,
+             tick=TRUE, flip=TRUE, aspect=(40*1.5)/(50*4), # true aspect
+             main="hutchinson.cotton.uniformity")
 
-      .. code:: R
-
-         ## Not run: 
-           library(agridat)
-           data(hutchinson.cotton.uniformity)
-           dat <- hutchinson.cotton.uniformity
-           
-           require(desplot)
-           desplot(dat, yield ~ col*row,
-                   tick=TRUE, flip=TRUE, aspect=(40*1.5)/(50*4), # true aspect
-                   main="hutchinson.cotton.uniformity")
-
-         ## End(Not run)
+   ## End(Not run)

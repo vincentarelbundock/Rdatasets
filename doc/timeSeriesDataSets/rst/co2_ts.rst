@@ -1,43 +1,39 @@
-.. container::
+====== ===============
+co2_ts R Documentation
+====== ===============
 
-   .. container::
+Mauna Loa Atmospheric CO2 Concentration.
+----------------------------------------
 
-      ====== ===============
-      co2_ts R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Mauna Loa Atmospheric CO2 Concentration.
-         :name: mauna-loa-atmospheric-co2-concentration.
+The dataset name has been changed to 'co2_ts' to avoid confusion with
+other packages in the R ecosystem from which datasets have been sourced.
+The suffix 'ts' indicates that this dataset is a time series object.
+This naming convention helps distinguish this dataset as part of the
+'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'co2_ts' to avoid confusion
-      with other packages in the R ecosystem from which datasets have
-      been sourced. The suffix 'ts' indicates that this dataset is a
-      time series object. This naming convention helps distinguish this
-      dataset as part of the 'timeseriesdatasets' package and assists
-      users in identifying its specific characteristics. The original
-      content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(co2_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(co2_ts)
+A time series object with 468 observations:
 
-      .. rubric:: Format
-         :name: format
+co2
+   A numeric vector representing the atmospheric CO2 concentration
+   measured at Mauna Loa, Hawaii, in parts per million (ppm).
 
-      A time series object with 468 observations:
+Source
+~~~~~~
 
-      co2
-         A numeric vector representing the atmospheric CO2 concentration
-         measured at Mauna Loa, Hawaii, in parts per million (ppm).
-
-      .. rubric:: Source
-         :name: source
-
-      Data provided by the National Oceanic and Atmospheric
-      Administration (NOAA).
+Data provided by the National Oceanic and Atmospheric Administration
+(NOAA).

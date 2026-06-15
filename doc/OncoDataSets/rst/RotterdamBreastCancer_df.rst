@@ -1,94 +1,88 @@
-.. container::
+======================== ===============
+RotterdamBreastCancer_df R Documentation
+======================== ===============
 
-   .. container::
+Rotterdam Breast Cancer Data
+----------------------------
 
-      ======================== ===============
-      RotterdamBreastCancer_df R Documentation
-      ======================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Rotterdam Breast Cancer Data
-         :name: rotterdam-breast-cancer-data
+This dataset, RotterdamBreastCancer_df, is a data frame containing data
+on 2982 patients with primary breast cancer. The data was collected as
+part of the Rotterdam tumor bank and was used in Royston and Altman
+(2013) for survival analysis and prognostic model evaluation.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, RotterdamBreastCancer_df, is a data frame containing
-      data on 2982 patients with primary breast cancer. The data was
-      collected as part of the Rotterdam tumor bank and was used in
-      Royston and Altman (2013) for survival analysis and prognostic
-      model evaluation.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(RotterdamBreastCancer_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(RotterdamBreastCancer_df)
+A data frame with 2982 observations and 15 variables:
 
-      .. rubric:: Format
-         :name: format
+pid
+   Patient ID (integer).
 
-      A data frame with 2982 observations and 15 variables:
+year
+   Year of diagnosis (integer).
 
-      pid
-         Patient ID (integer).
+age
+   Age at diagnosis in years (integer).
 
-      year
-         Year of diagnosis (integer).
+meno
+   Menopausal status: 1 = premenopausal, 2 = postmenopausal (integer).
 
-      age
-         Age at diagnosis in years (integer).
+size
+   Tumor size categorized into three levels (factor).
 
-      meno
-         Menopausal status: 1 = premenopausal, 2 = postmenopausal
-         (integer).
+grade
+   Tumor grade: 1 = low, 2 = intermediate, 3 = high (integer).
 
-      size
-         Tumor size categorized into three levels (factor).
+nodes
+   Number of lymph nodes involved (integer).
 
-      grade
-         Tumor grade: 1 = low, 2 = intermediate, 3 = high (integer).
+pgr
+   Progesterone receptor status (integer).
 
-      nodes
-         Number of lymph nodes involved (integer).
+er
+   Estrogen receptor status (integer).
 
-      pgr
-         Progesterone receptor status (integer).
+hormon
+   Hormonal therapy: 1 = yes, 0 = no (integer).
 
-      er
-         Estrogen receptor status (integer).
+chemo
+   Chemotherapy: 1 = yes, 0 = no (integer).
 
-      hormon
-         Hormonal therapy: 1 = yes, 0 = no (integer).
+rtime
+   Time to recurrence in days (numeric).
 
-      chemo
-         Chemotherapy: 1 = yes, 0 = no (integer).
+recur
+   Recurrence status: 1 = recurrence, 0 = no recurrence (integer).
 
-      rtime
-         Time to recurrence in days (numeric).
+dtime
+   Time to death in days (numeric).
 
-      recur
-         Recurrence status: 1 = recurrence, 0 = no recurrence (integer).
+death
+   Death status: 1 = deceased, 0 = alive (integer).
 
-      dtime
-         Time to death in days (numeric).
+Details
+~~~~~~~
 
-      death
-         Death status: 1 = deceased, 0 = alive (integer).
+The dataset name has been kept as 'RotterdamBreastCancer_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the OncoDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'\_df' indicates that the dataset is a data frame. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'RotterdamBreastCancer_df' to
-      avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The suffix '\_df' indicates that the dataset is a
-      data frame. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the survival package. Based on records from the
-      Rotterdam tumor bank and used in Royston and Altman (2013) for
-      survival analysis.
+Data taken from the survival package. Based on records from the
+Rotterdam tumor bank and used in Royston and Altman (2013) for survival
+analysis.

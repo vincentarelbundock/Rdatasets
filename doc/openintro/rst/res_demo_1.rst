@@ -1,43 +1,40 @@
-.. container::
+========== ===============
+res_demo_1 R Documentation
+========== ===============
 
-   .. container::
+Simulated data for regression
+-----------------------------
 
-      ========== ===============
-      res_demo_1 R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Simulated data for regression
-         :name: simulated-data-for-regression
+Simulated data for regression
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Simulated data for regression
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   res_demo_1
 
-      .. code:: R
+Format
+~~~~~~
 
-         res_demo_1
+A data frame with 100 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+x
+   a numeric vector
 
-      A data frame with 100 observations on the following 3 variables.
+y_lin
+   a numeric vector
 
-      x
-         a numeric vector
+y_fan_back
+   a numeric vector
 
-      y_lin
-         a numeric vector
+Examples
+~~~~~~~~
 
-      y_fan_back
-         a numeric vector
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         res_demo_1
+   res_demo_1

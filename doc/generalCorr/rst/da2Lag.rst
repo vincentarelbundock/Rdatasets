@@ -1,27 +1,23 @@
-.. container::
+====== ===============
+da2Lag R Documentation
+====== ===============
 
-   .. container::
+internal da2Lag
+---------------
 
-      ====== ===============
-      da2Lag R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: internal da2Lag
-         :name: internal-da2lag
+intended for internal use
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      intended for internal use
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(da2Lag)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(da2Lag)
-
-      .. rubric:: Format
-         :name: format
-
-      The format is: int 4
+The format is: int 4

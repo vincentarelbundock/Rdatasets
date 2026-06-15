@@ -1,43 +1,39 @@
-.. container::
+======= ===============
+MelTemp R Documentation
+======= ===============
 
-   .. container::
+Daily maximum temperatures in Melbourne, Australia
+--------------------------------------------------
 
-      ======= ===============
-      MelTemp R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Daily maximum temperatures in Melbourne, Australia
-         :name: daily-maximum-temperatures-in-melbourne-australia
+Daily maximum temperatures in Melbourne, Australia, from 1981-1990. Leap
+days have been omitted.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Daily maximum temperatures in Melbourne, Australia, from
-      1981-1990. Leap days have been omitted.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(MelTemp)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(MelTemp)
+Time series of frequency 365
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      Time series of frequency 365
+Hyndman, R.J., Bashtannyk, D.M. and Grunwald, G.K. (1996) "Estimating
+and visualizing conditional densities". \_Journal of Computational and
+Graphical Statistics\_, \*5\*, 315-336.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Hyndman, R.J., Bashtannyk, D.M. and Grunwald, G.K. (1996)
-      "Estimating and visualizing conditional densities". \_Journal of
-      Computational and Graphical Statistics\_, \*5\*, 315-336.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(MelTemp)
-         demo(Mel)
+   data(MelTemp)
+   demo(Mel)

@@ -1,57 +1,52 @@
-.. container::
+============= ===============
+police_deaths R Documentation
+============= ===============
 
-   .. container::
+The Dallas Shooting Was Among The Deadliest For Police In U.S. History
+----------------------------------------------------------------------
 
-      ============= ===============
-      police_deaths R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The Dallas Shooting Was Among The Deadliest For Police
-         In U.S. History
-         :name: the-dallas-shooting-was-among-the-deadliest-for-police-in-u.s.-history
+The raw data behind the story "The Dallas Shooting Was Among The
+Deadliest For Police In U.S. History"
+https://fivethirtyeight.com/features/the-dallas-shooting-was-among-the-deadliest-for-police-in-u-s-history/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "The Dallas Shooting Was Among The
-      Deadliest For Police In U.S. History"
-      https://fivethirtyeight.com/features/the-dallas-shooting-was-among-the-deadliest-for-police-in-u-s-history/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   police_deaths
 
-      .. code:: R
+Format
+~~~~~~
 
-         police_deaths
+A data frame with 22800 rows representing Police officers/dogs who lost
+their lives and 7 variables:
 
-      .. rubric:: Format
-         :name: format
+person
+   Name of person/canine who died
 
-      A data frame with 22800 rows representing Police officers/dogs who
-      lost their lives and 7 variables:
+cause_of_death
+   Cause of death
 
-      person
-         Name of person/canine who died
+date
+   Date of event
 
-      cause_of_death
-         Cause of death
+year
+   Year of event
 
-      date
-         Date of event
+canine
+   TRUE if canine, FALSE if human
 
-      year
-         Year of event
+dept_name
+   Name of police department
 
-      canine
-         TRUE if canine, FALSE if human
+state
+   State of police department
 
-      dept_name
-         Name of police department
+Source
+~~~~~~
 
-      state
-         State of police department
-
-      .. rubric:: Source
-         :name: source
-
-      Officer Down Memorial Page https://www.odmp.org/
+Officer Down Memorial Page https://www.odmp.org/

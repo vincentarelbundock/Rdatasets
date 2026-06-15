@@ -1,64 +1,54 @@
-.. container::
+=== ===============
+GSS R Documentation
+=== ===============
 
-   .. container::
+General Social Survey– Sex and Party affiliation
+------------------------------------------------
 
-      === ===============
-      GSS R Documentation
-      === ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: General Social Survey– Sex and Party affiliation
-         :name: general-social-survey-sex-and-party-affiliation
+Data from the General Social Survey, 1991, on the relation between sex
+and party affiliation.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Data from the General Social Survey, 1991, on the relation between
-      sex and party affiliation.
+A data frame in frequency form with 6 observations on the following 3
+variables.
 
-      .. rubric:: Usage
-         :name: usage
+``sex``
+   a factor with levels ``female`` ``male``
 
-      .. code:: R
+``party``
+   a factor with levels ``dem`` ``indep`` ``rep``
 
-         data(GSS)
+``count``
+   a numeric vector
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      A data frame in frequency form with 6 observations on the
-      following 3 variables.
+Agresti, A. *Categorical Data Analysis*, 2nd E., John Wiley & Sons,
+2002, Table 3.11, p. 106.
 
-      ``sex``
-         a factor with levels ``female`` ``male``
+Examples
+~~~~~~~~
 
-      ``party``
-         a factor with levels ``dem`` ``indep`` ``rep``
+.. code:: R
 
-      ``count``
-         a numeric vector
 
-      .. rubric:: Source
-         :name: source
+   data(GSS)
+   str(GSS)
 
-      Agresti, A. *Categorical Data Analysis*, 2nd E., John Wiley &
-      Sons, 2002, Table 3.11, p. 106.
+   # use xtabs to show the table in a compact form
+   (GSStab <- xtabs(count ~ sex + party, data=GSS))
 
-      .. rubric:: Examples
-         :name: examples
+   # fit the independence model
+   (mod.glm <- glm(count ~ sex + party, family = poisson, data = GSS))
 
-      .. code:: R
-
-         data(GSS)
-         str(GSS)
-
-         # use xtabs to show the table in a compact form
-         (GSStab <- xtabs(count ~ sex + party, data=GSS))
-
-         # fit the independence model
-         (mod.glm <- glm(count ~ sex + party, family = poisson, data = GSS))
-
-         # display all the residuals in a mosaic plot
-         mosaic(mod.glm, 
-           formula = ~ sex + party, 
-           labeling = labeling_residuals, 
-           suppress=0)
+   # display all the residuals in a mosaic plot
+   mosaic(mod.glm,
+     formula = ~ sex + party,
+     labeling = labeling_residuals,
+     suppress=0)

@@ -16,27 +16,23 @@ function processMathHTML() {
 
 <table style="width: 100%;"><tr><td>EdgeworthDeaths</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>
-Edgeworth's Data on Death Rates in British Counties
-</h2>
+<h2>Edgeworth's Data on Death Rates in British Counties</h2>
 
 <h3>Description</h3>
 
-<p>In 1885, Francis Edgeworth published a paper, <em>On methods of ascertaining variations in the rate of births, deaths and marriages</em>.
-It contained among the first examples of two-way tables, analyzed to show variation among row and column factors,
-in a way that Fisher would later formulate as the Analysis of Variance. 
+<p>In 1885, Francis Edgeworth published a paper, <em>On methods of
+ascertaining variations in the rate of births, deaths and marriages</em>. It
+contained among the first examples of two-way tables, analyzed to show
+variation among row and column factors, in a way that Fisher would later
+formulate as the Analysis of Variance.
 </p>
-<p>Although the data are rates per 1000, they provide a good example of a two-way ANOVA with n=1 per cell,
-where an additive model fits reasonably well. 
+<p>Although the data are rates per 1000, they provide a good example of a
+two-way ANOVA with n=1 per cell, where an additive model fits reasonably
+well.
 </p>
-<p>Treated as frequencies, the data is also a good example of a case where the independence model fits
-reasonably well.
+<p>Treated as frequencies, the data is also a good example of a case where the
+independence model fits reasonably well.
 </p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data("EdgeworthDeaths")</code></pre>
 
 
 <h3>Format</h3>
@@ -57,29 +53,32 @@ reasonably well.
 
 <h3>Details</h3>
 
-<p>Edgeworth's data came from the Registrar General's report for the final year, 1883.
-The <code>Freq</code> variable represents death rates per 1000 population in the six counties listed.
+<p>Edgeworth's data came from the Registrar General's report for the final
+year, 1883. The <code>Freq</code> variable represents death rates per 1000
+population in the six counties listed.
 </p>
 
 
 <h3>Source</h3>
 
-<p>The data were scanned from Table 5.2 in 
-Stigler, S. M. (1999) <em>Statistics on the Table: The History of Statistical Concepts and Methods</em>,
-Harvard University Press.
+<p>The data were scanned from Table 5.2 in Stigler, S. M. (1999)
+<em>Statistics on the Table: The History of Statistical Concepts and
+Methods</em>, Harvard University Press.
 </p>
 
 
 <h3>References</h3>
 
-<p>Edgeworth, F. Y. (1885). On Methods of Ascertaining Variations in the Rate of Births, Deaths, and Marriages. 
-<em>Journal of the Statistical Society of London</em>, 48(4), 628-649. doi:10.2307/2979201
+<p>Edgeworth, F. Y. (1885). On Methods of Ascertaining Variations
+in the Rate of Births, Deaths, and Marriages.  <em>Journal of the
+Statistical Society of London</em>, 48(4), 628-649. doi:10.2307/2979201
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(EdgeworthDeaths)
+<pre><code class='language-R'>
+data(EdgeworthDeaths)
 
 # fit the additive ANOVA model
 library(car)  # for Anova()
@@ -96,6 +95,7 @@ loglm( Freq ~ County + year, data=EdgeworthDeaths)
 mosaic( ~ County + year, data=EdgeworthDeaths, 
 	shade=TRUE, legend=FALSE, labeling=labeling_values, 
 	gp=shading_Friendly)
+
 
 
 </code></pre>

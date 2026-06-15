@@ -121,6 +121,7 @@
 
    ::
 
+
       data(Damian)
       Spengler.stat #show the basic descriptives of the original data set
       psych::lowerMat(Spengler[psych::cs(IQ,Parental,Ed.11,OccPres.50),

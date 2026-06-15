@@ -1,57 +1,53 @@
-.. container::
+====== ===============
+EmplUK R Documentation
+====== ===============
 
-   .. container::
+Employment and Wages in the United Kingdom
+------------------------------------------
 
-      ====== ===============
-      EmplUK R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Employment and Wages in the United Kingdom
-         :name: employment-and-wages-in-the-united-kingdom
+An unbalanced panel of 140 observations from 1976 to 1984
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      An unbalanced panel of 140 observations from 1976 to 1984
+A data frame containing :
 
-      .. rubric:: Format
-         :name: format
+firm
+   firm index
 
-      A data frame containing :
+year
+   year
 
-      firm
-         firm index
+sector
+   the sector of activity
 
-      year
-         year
+emp
+   employment
 
-      sector
-         the sector of activity
+wage
+   wages
 
-      emp
-         employment
+capital
+   capital
 
-      wage
-         wages
+output
+   output
 
-      capital
-         capital
+Details
+~~~~~~~
 
-      output
-         output
+*total number of observations* : 1031
 
-      .. rubric:: Details
-         :name: details
+*observation* : firms
 
-      *total number of observations* : 1031
+*country* : United Kingdom
 
-      *observation* : firms
+Source
+~~~~~~
 
-      *country* : United Kingdom
-
-      .. rubric:: Source
-         :name: source
-
-      Arellano M, Bond S (1991). “Some Tests of Specification for Panel
-      Data : Monte Carlo Evidence and an Application to Employment
-      Equations.” *Review of Economic Studies*, **58**, 277–297.
+Arellano M, Bond S (1991). “Some Tests of Specification for Panel Data :
+Monte Carlo Evidence and an Application to Employment Equations.”
+*Review of Economic Studies*, **58**, 277–297.

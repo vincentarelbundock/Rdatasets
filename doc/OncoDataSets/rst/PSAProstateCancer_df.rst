@@ -1,79 +1,73 @@
-.. container::
+==================== ===============
+PSAProstateCancer_df R Documentation
+==================== ===============
 
-   .. container::
+Factors associated with prostate specific antigen
+-------------------------------------------------
 
-      ==================== ===============
-      PSAProstateCancer_df R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Factors associated with prostate specific antigen
-         :name: factors-associated-with-prostate-specific-antigen
+This dataset, PSAProstateCancer_df, is a data frame containing data from
+a study by Stamey et al. (1989) to examine the association between
+prostate specific antigen (PSA) and several clinical measures in men
+about to receive a radical prostatectomy. The dataset includes 97
+observations and 9 variables, each representing a factor potentially
+associated with PSA.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, PSAProstateCancer_df, is a data frame containing
-      data from a study by Stamey et al. (1989) to examine the
-      association between prostate specific antigen (PSA) and several
-      clinical measures in men about to receive a radical prostatectomy.
-      The dataset includes 97 observations and 9 variables, each
-      representing a factor potentially associated with PSA.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(PSAProstateCancer_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(PSAProstateCancer_df)
+A data frame with 97 observations and 9 variables:
 
-      .. rubric:: Format
-         :name: format
+lcavol
+   Logarithm of cancer volume (numeric).
 
-      A data frame with 97 observations and 9 variables:
+lweight
+   Logarithm of prostate weight (numeric).
 
-      lcavol
-         Logarithm of cancer volume (numeric).
+age
+   Age of the patient in years (integer).
 
-      lweight
-         Logarithm of prostate weight (numeric).
+lbph
+   Logarithm of benign prostatic hyperplasia (numeric).
 
-      age
-         Age of the patient in years (integer).
+svi
+   Seminal vesicle invasion (integer).
 
-      lbph
-         Logarithm of benign prostatic hyperplasia (numeric).
+lcp
+   Logarithm of cancer perineural invasion (numeric).
 
-      svi
-         Seminal vesicle invasion (integer).
+gleason
+   Gleason score (integer).
 
-      lcp
-         Logarithm of cancer perineural invasion (numeric).
+pgg45
+   Percentage of cancerous tissue with Gleason score 4 or 5 (integer).
 
-      gleason
-         Gleason score (integer).
+lpsa
+   Logarithm of prostate specific antigen (PSA) (numeric).
 
-      pgg45
-         Percentage of cancerous tissue with Gleason score 4 or 5
-         (integer).
+Details
+~~~~~~~
 
-      lpsa
-         Logarithm of prostate specific antigen (PSA) (numeric).
+The dataset name has been kept as 'PSAProstateCancer_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the OncoDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'\_df' indicates that the dataset is a data frame. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'PSAProstateCancer_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The suffix '\_df' indicates that the dataset is a
-      data frame. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the ncvreg package. Based on data from Stamey et
-      al. (1989), which examined the association between prostate
-      specific antigen (PSA) and several clinical measures potentially
-      associated with PSA in men about to receive a radical
-      prostatectomy.
+Data taken from the ncvreg package. Based on data from Stamey et al.
+(1989), which examined the association between prostate specific antigen
+(PSA) and several clinical measures potentially associated with PSA in
+men about to receive a radical prostatectomy.

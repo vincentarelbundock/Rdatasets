@@ -1,39 +1,34 @@
-.. container::
+============= ===============
+Tetracycline2 R Documentation
+============= ===============
 
-   .. container::
+Pharmacokinetics of tetracycline
+--------------------------------
 
-      ============= ===============
-      Tetracycline2 R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Pharmacokinetics of tetracycline
-         :name: pharmacokinetics-of-tetracycline
+The ``Tetracycline2`` data frame has 40 rows and 4 columns.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      The ``Tetracycline2`` data frame has 40 rows and 4 columns.
+This data frame contains the following columns:
 
-      .. rubric:: Format
-         :name: format
+conc
+   a numeric vector
 
-      This data frame contains the following columns:
+Time
+   a numeric vector
 
-      conc
-         a numeric vector
+Subject
+   an ordered factor with levels ``4`` < ``5`` < ``2`` < ``1`` < ``3``
 
-      Time
-         a numeric vector
+Formulation
+   a factor with levels ``Berkmycin`` ``tetramycin``
 
-      Subject
-         an ordered factor with levels ``4`` < ``5`` < ``2`` < ``1`` <
-         ``3``
+Source
+~~~~~~
 
-      Formulation
-         a factor with levels ``Berkmycin`` ``tetramycin``
-
-      .. rubric:: Source
-         :name: source
-
-      Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in
-      S and S-PLUS*, Springer, New York.
+Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in S and
+S-PLUS*, Springer, New York.

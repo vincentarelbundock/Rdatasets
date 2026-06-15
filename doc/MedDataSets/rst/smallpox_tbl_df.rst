@@ -1,55 +1,50 @@
-.. container::
+=============== ===============
+smallpox_tbl_df R Documentation
+=============== ===============
 
-   .. container::
+Smallpox Vaccine Results
+------------------------
 
-      =============== ===============
-      smallpox_tbl_df R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Smallpox Vaccine Results
-         :name: smallpox-vaccine-results
+The dataset name has been changed to 'smallpox_tbl_df' to avoid
+confusion with other datasets from packages in the R ecosystem and to
+follow the naming conventions of the 'MedDataSets' package. The suffix
+'\_tbl_df' indicates that this dataset is a tibble, helping to
+distinguish it from other datasets within the package and from those in
+the broader R ecosystem. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'smallpox_tbl_df' to avoid
-      confusion with other datasets from packages in the R ecosystem and
-      to follow the naming conventions of the 'MedDataSets' package. The
-      suffix '\_tbl_df' indicates that this dataset is a tibble, helping
-      to distinguish it from other datasets within the package and from
-      those in the broader R ecosystem. The original content of the
-      dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(smallpox_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(smallpox_tbl_df)
+A tibble with 6,224 observations and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+result
+   A factor indicating the outcome of the vaccination (e.g., successful,
+   unsuccessful).
 
-      A tibble with 6,224 observations and 2 variables:
+inoculated
+   A factor indicating whether the individual was inoculated with the
+   smallpox vaccine.
 
-      result
-         A factor indicating the outcome of the vaccination (e.g.,
-         successful, unsuccessful).
+Details
+~~~~~~~
 
-      inoculated
-         A factor indicating whether the individual was inoculated with
-         the smallpox vaccine.
+This dataset contains the results of a study on the efficacy of the
+smallpox vaccine. It includes information on the vaccination outcomes of
+individuals who were inoculated, providing insight into the
+effectiveness of the vaccine in preventing the disease.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains the results of a study on the efficacy of
-      the smallpox vaccine. It includes information on the vaccination
-      outcomes of individuals who were inoculated, providing insight
-      into the effectiveness of the vaccine in preventing the disease.
-
-      .. rubric:: Source
-         :name: source
-
-      Data collected from studies on smallpox vaccination and its
-      outcomes.
+Data collected from studies on smallpox vaccination and its outcomes.

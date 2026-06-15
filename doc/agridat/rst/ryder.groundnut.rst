@@ -1,92 +1,88 @@
-.. container::
+=============== ===============
+ryder.groundnut R Documentation
+=============== ===============
 
-   .. container::
+RCB experiment of groundut, wet and dry yields
+----------------------------------------------
 
-      =============== ===============
-      ryder.groundnut R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: RCB experiment of groundut, wet and dry yields
-         :name: rcb-experiment-of-groundut-wet-and-dry-yields
+RCB experiment of groundut, wet and dry yields
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      RCB experiment of groundut, wet and dry yields
+A data frame with 24 observations on the following 6 variables.
 
-      .. rubric:: Format
-         :name: format
+``block``
+   block
 
-      A data frame with 24 observations on the following 6 variables.
+``row``
+   row
 
-      ``block``
-         block
+``col``
+   column
 
-      ``row``
-         row
+``gen``
+   genotype factor
 
-      ``col``
-         column
+``wet``
+   wet yield, kg/plot
 
-      ``gen``
-         genotype factor
+``dry``
+   dry yield, kg/plot
 
-      ``wet``
-         wet yield, kg/plot
+Details
+~~~~~~~
 
-      ``dry``
-         dry yield, kg/plot
+Ryder (1981) uses this data to discuss the importance of looking at the
+field plan for an experiment. Based on analysis of the residuals, he
+suggests that varieties A and B in block 3 may have had their data
+swapped.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      Ryder (1981) uses this data to discuss the importance of looking
-      at the field plan for an experiment. Based on analysis of the
-      residuals, he suggests that varieties A and B in block 3 may have
-      had their data swapped.
+K. Ryder (1981). Field plans: why the biometrician finds them useful,
+*Experimental Agriculture*, 17, 243–256.
 
-      .. rubric:: Source
-         :name: source
+https://doi.org/10.1017/S0014479700011601
 
-      K. Ryder (1981). Field plans: why the biometrician finds them
-      useful, *Experimental Agriculture*, 17, 243–256.
+Examples
+~~~~~~~~
 
-      https://doi.org/10.1017/S0014479700011601
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
+     
+     library(agridat)
+     data(ryder.groundnut)
+     dat <- ryder.groundnut
 
-      .. code:: R
+     # RCB model
+     m1 <- lm(dry~block+gen,dat)
+     dat$res1 <- resid(m1)
 
-         ## Not run: 
-           
-           library(agridat)
-           data(ryder.groundnut)
-           dat <- ryder.groundnut
-
-           # RCB model
-           m1 <- lm(dry~block+gen,dat)
-           dat$res1 <- resid(m1)
-
-           # Table 3 of Ryder.  Scale up from kg/plot to kg/ha
-           round(dat$res1 * 596.6,0)
-           
-           # Visually.  Note largest positive/negative residuals are adjacent
-           libs(desplot)
-           desplot(dat, res1 ~ col + row,
-                   text=gen, # aspect unknown
-                   main="ryder.groundnut - residuals")
-           
-           
-           libs(desplot)
-           # Swap the dry yields for two plots and re-analyze
-           dat[dat$block=="B3" & dat$gen=="A", "dry"] <- 2.8
-           dat[dat$block=="B3" & dat$gen=="B", "dry"] <- 1.4
-           m2 <- lm(dry~block+gen, dat)
-           dat$res2 <- resid(m2)
-           desplot(dat, res2 ~ col+row,
-                   # aspect unknown
-                   text=gen, main="ryder.groundnut")
+     # Table 3 of Ryder.  Scale up from kg/plot to kg/ha
+     round(dat$res1 * 596.6,0)
+     
+     # Visually.  Note largest positive/negative residuals are adjacent
+     libs(desplot)
+     desplot(dat, res1 ~ col + row,
+             text=gen, # aspect unknown
+             main="ryder.groundnut - residuals")
+     
+     
+     libs(desplot)
+     # Swap the dry yields for two plots and re-analyze
+     dat[dat$block=="B3" & dat$gen=="A", "dry"] <- 2.8
+     dat[dat$block=="B3" & dat$gen=="B", "dry"] <- 1.4
+     m2 <- lm(dry~block+gen, dat)
+     dat$res2 <- resid(m2)
+     desplot(dat, res2 ~ col+row,
+             # aspect unknown
+             text=gen, main="ryder.groundnut")
 
 
-         ## End(Not run)
+   ## End(Not run)

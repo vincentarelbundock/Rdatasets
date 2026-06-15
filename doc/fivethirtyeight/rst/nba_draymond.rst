@@ -1,52 +1,45 @@
-.. container::
+============ ===============
+nba_draymond R Documentation
+============ ===============
 
-   .. container::
+A Better Way to Evaluate NBA Defense
+------------------------------------
 
-      ============ ===============
-      nba_draymond R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: A Better Way to Evaluate NBA Defense
-         :name: a-better-way-to-evaluate-nba-defense
+The raw data behind the story "A Better Way to Evaluate NBA Defense"
+https://fivethirtyeight.com/features/a-better-way-to-evaluate-nba-defense/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "A Better Way to Evaluate NBA
-      Defense"
-      https://fivethirtyeight.com/features/a-better-way-to-evaluate-nba-defense/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   nba_draymond
 
-      .. code:: R
+Format
+~~~~~~
 
-         nba_draymond
+A data frame with 3009 rows representing DRAYMOND ratings (Defensive
+Rating Accounting for Yielding Minimal Openness by Nearest Defender) for
+every player since the 2013-14 season with 4 variables:
 
-      .. rubric:: Format
-         :name: format
+season
+   The second year of the season; for example, 2018-2019 season would be
+   listed as 2019
 
-      A data frame with 3009 rows representing DRAYMOND ratings
-      (Defensive Rating Accounting for Yielding Minimal Openness by
-      Nearest Defender) for every player since the 2013-14 season with 4
-      variables:
+player
+   Name of the player
 
-      season
-         The second year of the season; for example, 2018-2019 season
-         would be listed as 2019
+possessions
+   Number of possessions a player during the season
 
-      player
-         Name of the player
+draymond
+   Defensive Rating Accounting for Yielding Minimal Openness by Nearest
+   Defender
 
-      possessions
-         Number of possessions a player during the season
+Source
+~~~~~~
 
-      draymond
-         Defensive Rating Accounting for Yielding Minimal Openness by
-         Nearest Defender
-
-      .. rubric:: Source
-         :name: source
-
-      see
-      https://github.com/fivethirtyeight/data/tree/master/nba-draymond
+see https://github.com/fivethirtyeight/data/tree/master/nba-draymond

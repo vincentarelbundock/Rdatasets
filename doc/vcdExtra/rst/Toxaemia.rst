@@ -1,102 +1,89 @@
-.. container::
+======== ===============
+Toxaemia R Documentation
+======== ===============
 
-   .. container::
+Toxaemia Symptoms in Pregnancy
+------------------------------
 
-      ======== ===============
-      Toxaemia R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Toxaemia Symptoms in Pregnancy
-         :name: toxaemia-symptoms-in-pregnancy
+Brown et al (1983) gave these data on two signs of toxaemia, an abnormal
+condition during pregnancy characterized by high blood pressure
+(hypertension) and high levels of protein in the urine. If untreated,
+both the mother and baby are at risk of complications or death.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Brown et al (1983) gave these data on two signs of toxaemia, an
-      abnormal condition during pregnancy characterized by high blood
-      pressure (hypertension) and high levels of protein in the urine.
-      If untreated, both the mother and baby are at risk of
-      complications or death.
+A data frame in frequency form representing a 5 x 3 x 2 x 2 contingency
+table, with 60 observations on the following 5 variables.
 
-      The data frame ``Toxaemia`` represents 13384 expectant mothers in
-      Bradford, England in their first pregnancy, who were also
-      classified according to social class and the number of cigarettes
-      smoked per day.
+``class``
+   Social class of mother, a factor with levels ``1`` ``2`` ``3`` ``4``
+   ``5``
 
-      .. rubric:: Usage
-         :name: usage
+``smoke``
+   Cigarettes smoked per day during pregnancy, a factor with levels
+   ``0`` ``1-19`` ``⁠20+⁠``
 
-      .. code:: R
+``hyper``
+   Hypertension level, a factor with levels ``Low`` ``High``
 
-         data(Toxaemia)
+``urea``
+   Protein urea level, a factor with levels ``Low`` ``High``
 
-      .. rubric:: Format
-         :name: format
+``Freq``
+   frequency in each cell, a numeric vector
 
-      A data frame in frequency form representing a 5 x 3 x 2 x 2
-      contingency table, with 60 observations on the following 5
-      variables.
+Details
+~~~~~~~
 
-      ``class``
-         Social class of mother, a factor with levels ``1`` ``2`` ``3``
-         ``4`` ``5``
+The data frame ``Toxaemia`` represents 13384 expectant mothers in
+Bradford, England in their first pregnancy, who were also classified
+according to social class and the number of cigarettes smoked per day.
 
-      ``smoke``
-         Cigarettes smoked per day during pregnancy, a factor with
-         levels ``0`` ``1-19`` ``20+``
+Source
+~~~~~~
 
-      ``hyper``
-         Hypertension level, a factor with levels ``Low`` ``High``
+Brown, P. J., Stone, J. and Ord-Smith, C. (1983), Toxaemic signs during
+pregnancy. *JRSS, Series C, Applied Statistics*, 32, 69-72
 
-      ``urea``
-         Protein urea level, a factor with levels ``Low`` ``High``
+References
+~~~~~~~~~~
 
-      ``Freq``
-         frequency in each cell, a numeric vector
+Friendly, M. (2000), *Visualizing Categorical Data*, SAS Institute,
+Cary, NC, Example 7.15.
 
-      .. rubric:: Source
-         :name: source
+Friendly, M. and Meyer, D. (2016). *Discrete Data Analysis with R:
+Visualization and Modeling Techniques for Categorical and Count Data*.
+Boca Raton, FL: Chapman & Hall/CRC. http://ddar.datavis.ca. Example
+10.10.
 
-      Brown, P. J., Stone, J. and Ord-Smith, C. (1983), Toxaemic signs
-      during pregnancy. *JRSS, Series C, Applied Statistics*, 32, 69-72
+Examples
+~~~~~~~~
 
-      .. rubric:: References
-         :name: references
-
-      Friendly, M. (2000), *Visualizing Categorical Data*, SAS
-      Institute, Cary, NC, Example 7.15.
-
-      Friendly, M. and Meyer, D. (2016). *Discrete Data Analysis with R:
-      Visualization and Modeling Techniques for Categorical and Count
-      Data*. Boca Raton, FL: Chapman & Hall/CRC. http://ddar.datavis.ca.
-      Example 10.10.
-
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(Toxaemia)
-
-         tox.tab <- xtabs(Freq ~ class + smoke + hyper + urea, Toxaemia)
-         ftable(tox.tab, row.vars=1)
+.. code:: R
 
 
-         # symptoms by smoking
-         mosaic(~smoke + hyper + urea, data=tox.tab, shade=TRUE)
+   data(Toxaemia)
 
-         # symptoms by social class
-         mosaic(~class + hyper + urea, data=tox.tab, shade=TRUE)
+   tox.tab <- xtabs(Freq ~ class + smoke + hyper + urea, Toxaemia)
+   ftable(tox.tab, row.vars=1)
 
-         # predictors
-         mosaic(~smoke + class, data=tox.tab, shade=TRUE)
 
-         # responses
-         mosaic(~hyper + urea, data=tox.tab, shade=TRUE)
+   # symptoms by smoking
+   mosaic(~smoke + hyper + urea, data=tox.tab, shade=TRUE)
 
-         # log odds ratios for urea and hypertension, by class and smoke
-         ## Not run: 
-         LOR <-loddsratio(aperm(tox.tab))
-         LOR
+   # symptoms by social class
+   mosaic(~class + hyper + urea, data=tox.tab, shade=TRUE)
 
-         ## End(Not run)
+   # predictors
+   mosaic(~smoke + class, data=tox.tab, shade=TRUE)
+
+   # responses
+   mosaic(~hyper + urea, data=tox.tab, shade=TRUE)
+
+   # log odds ratios for urea and hypertension, by class and smoke
+   LOR <-loddsratio(aperm(tox.tab))
+   LOR

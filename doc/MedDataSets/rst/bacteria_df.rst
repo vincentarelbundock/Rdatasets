@@ -1,68 +1,62 @@
-.. container::
+=========== ===============
+bacteria_df R Documentation
+=========== ===============
 
-   .. container::
+Presence of Bacteria after Drug Treatments
+------------------------------------------
 
-      =========== ===============
-      bacteria_df R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Presence of Bacteria after Drug Treatments
-         :name: presence-of-bacteria-after-drug-treatments
+The dataset name has been changed to 'bacteria_df' to avoid confusion
+with other datasets from packages in the R ecosystem and to follow the
+naming conventions of the 'MedDataSets' package. The suffix '\_df'
+indicates that this dataset is a data frame, helping to distinguish it
+from other datasets within the package and from those in the broader R
+ecosystem. The original content of the dataset has not been modified in
+any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'bacteria_df' to avoid
-      confusion with other datasets from packages in the R ecosystem and
-      to follow the naming conventions of the 'MedDataSets' package. The
-      suffix '\_df' indicates that this dataset is a data frame, helping
-      to distinguish it from other datasets within the package and from
-      those in the broader R ecosystem. The original content of the
-      dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(bacteria_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(bacteria_df)
+A data frame with 220 observations and 6 variables:
 
-      .. rubric:: Format
-         :name: format
+y
+   A factor indicating the presence (1) or absence (0) of bacteria.
 
-      A data frame with 220 observations and 6 variables:
+ap
+   A factor indicating the result of an antibiotic susceptibility test
+   (yes/no).
 
-      y
-         A factor indicating the presence (1) or absence (0) of
-         bacteria.
+hilo
+   A factor indicating a high or low bacterial load (high/low).
 
-      ap
-         A factor indicating the result of an antibiotic susceptibility
-         test (yes/no).
+week
+   An integer representing the week of treatment.
 
-      hilo
-         A factor indicating a high or low bacterial load (high/low).
+ID
+   A factor representing the unique identifier for each patient (with 50
+   possible levels).
 
-      week
-         An integer representing the week of treatment.
+trt
+   A factor indicating the treatment group (with 3 possible levels).
 
-      ID
-         A factor representing the unique identifier for each patient
-         (with 50 possible levels).
+Details
+~~~~~~~
 
-      trt
-         A factor indicating the treatment group (with 3 possible
-         levels).
+This dataset contains information on the presence of bacteria in
+patients after receiving various drug treatments, including the
+treatment group and duration of treatment.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains information on the presence of bacteria in
-      patients after receiving various drug treatments, including the
-      treatment group and duration of treatment.
-
-      .. rubric:: Source
-         :name: source
-
-      Data collected from clinical trials on antibiotic treatments and
-      their effects on bacterial presence.
+Data collected from clinical trials on antibiotic treatments and their
+effects on bacterial presence.

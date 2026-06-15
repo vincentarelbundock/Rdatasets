@@ -1,44 +1,39 @@
-.. container::
+======== ===============
+frijters R Documentation
+======== ===============
 
-   .. container::
+Data from "Roommate effects in health outcomes"
+-----------------------------------------------
 
-      ======== ===============
-      frijters R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Data from "Roommate effects in health outcomes"
-         :name: data-from-roommate-effects-in-health-outcomes
+This dataset is used in the exercises of Chapter 7 from the textbook.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset is used in the exercises of Chapter 7 from the
-      textbook.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   frijters
 
-      .. code:: R
+Format
+~~~~~~
 
-         frijters
+A data frame with 214 rows and 3 variables:
 
-      .. rubric:: Format
-         :name: format
+Roommate_BMI
+   Roommate's BMI
 
-      A data frame with 214 rows and 3 variables:
+Past_BMI
+   Participant's BMI at baseline
 
-      Roommate_BMI
-         Roommate's BMI
+Current_BMI
+   Participant's BMI after living with roommate for one year
 
-      Past_BMI
-         Participant's BMI at baseline
+Source
+~~~~~~
 
-      Current_BMI
-         Participant's BMI after living with roommate for one year
-
-      .. rubric:: Source
-         :name: source
-
-      Frijters, Paul, et al. “Roommate Effects in Health Outcomes.”
-      Health Economics, vol. 28, no. 8, 2019, pp. 998–1034.,
-      https://doi.org/10.1002/hec.3901.
+Frijters, Paul, et al. “Roommate Effects in Health Outcomes.” Health
+Economics, vol. 28, no. 8, 2019, pp. 998–1034.,
+https://doi.org/10.1002/hec.3901.

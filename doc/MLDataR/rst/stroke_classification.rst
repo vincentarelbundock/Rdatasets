@@ -1,73 +1,68 @@
-.. container::
+===================== ===============
+stroke_classification R Documentation
+===================== ===============
 
-   .. container::
+Stroke Classification dataset
+-----------------------------
 
-      ===================== ===============
-      stroke_classification R Documentation
-      ===================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Stroke Classification dataset
-         :name: stroke-classification-dataset
+This dataset has been obtained from a Stoke department within the NHS
+and is a traditional supervised ML classification dataset
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset has been obtained from a Stoke department within the
-      NHS and is a traditional supervised ML classification dataset
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   stroke_classification
 
-      .. code:: R
+Format
+~~~~~~
 
-         stroke_classification
+A data frame with 5110 rows and 11 variables:
 
-      .. rubric:: Format
-         :name: format
+pat_id
+   unique patient identifier index
 
-      A data frame with 5110 rows and 11 variables:
+stroke
+   outcome variable as a flag - 1 for stroke and 0 for no stroke
 
-      pat_id
-         unique patient identifier index
+gender
+   patient gender description
 
-      stroke
-         outcome variable as a flag - 1 for stroke and 0 for no stroke
+age
+   age of the patient
 
-      gender
-         patient gender description
+hypertension
+   binary flag to indicate whether patient has hypertension:
+   https://www.nhs.uk/conditions/high-blood-pressure-hypertension/
 
-      age
-         age of the patient
+heart_disease
+   binary flag to indicate whether patient has heart disease: 1 or no
+   heart disease history: 0
 
-      hypertension
-         binary flag to indicate whether patient has hypertension:
-         https://www.nhs.uk/conditions/high-blood-pressure-hypertension/
+work_related_stress
+   binary flag to indicate whether patient has history of work related
+   stress
 
-      heart_disease
-         binary flag to indicate whether patient has heart disease: 1 or
-         no heart disease history: 0
+urban_residence
+   binary flag indicating whether patient lives in an urban area or not
 
-      work_related_stress
-         binary flag to indicate whether patient has history of work
-         related stress
+avg_glucose_level
+   average blood glucose readings of the patient
 
-      urban_residence
-         binary flag indicating whether patient lives in an urban area
-         or not
+bmi
+   body mass index of the patient:
+   https://www.nhs.uk/live-well/healthy-weight/bmi-calculator/
 
-      avg_glucose_level
-         average blood glucose readings of the patient
+smokes
+   binary flag to indicate if the patient smokes - 1 for current smoker
+   and 0 for smoking cessation
 
-      bmi
-         body mass index of the patient:
-         https://www.nhs.uk/live-well/healthy-weight/bmi-calculator/
+Source
+~~~~~~
 
-      smokes
-         binary flag to indicate if the patient smokes - 1 for current
-         smoker and 0 for smoking cessation
-
-      .. rubric:: Source
-         :name: source
-
-      Prepared and compiled by Gary Hutson hutsons-hacks@outlook.com,
-      Apr-2022.
+Prepared and compiled by Gary Hutson hutsons-hacks@outlook.com,
+Apr-2022.

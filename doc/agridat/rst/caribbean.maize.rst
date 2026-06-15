@@ -1,115 +1,109 @@
-.. container::
+=============== ===============
+caribbean.maize R Documentation
+=============== ===============
 
-   .. container::
+Multi-environment trial of maize with fertilization
+---------------------------------------------------
 
-      =============== ===============
-      caribbean.maize R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Multi-environment trial of maize with fertilization
-         :name: multi-environment-trial-of-maize-with-fertilization
+Maize fertilization trial on Antigua and St. Vincent.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Maize fertilization trial on Antigua and St. Vincent.
+A data frame with 612 observations on the following 7 variables.
 
-      .. rubric:: Format
-         :name: format
+``isle``
+   island, 2 levels
 
-      A data frame with 612 observations on the following 7 variables.
+``site``
+   site
 
-      ``isle``
-         island, 2 levels
+``block``
+   block
 
-      ``site``
-         site
+``plot``
+   plot, numeric
 
-      ``block``
-         block
+``trt``
+   treatment factor combining N,P,K
 
-      ``plot``
-         plot, numeric
+``ears``
+   number of ears harvested
 
-      ``trt``
-         treatment factor combining N,P,K
+``yield``
+   yield in kilograms
 
-      ``ears``
-         number of ears harvested
+``N``
+   nitrogen fertilizer level
 
-      ``yield``
-         yield in kilograms
+``P``
+   phosphorous fertilizer level
 
-      ``N``
-         nitrogen fertilizer level
+``K``
+   potassium fertilizer level
 
-      ``P``
-         phosphorous fertilizer level
+Details
+~~~~~~~
 
-      ``K``
-         potassium fertilizer level
+Antigua is a coral island in the Caribbean with sufficient level land
+for experiments and a semi-arid climate, while St. Vincent is volcanic
+and level areas are uncommon, but the rainfall can be seasonally heavy.
 
-      .. rubric:: Details
-         :name: details
+There are 8-9 sites on each island.
 
-      Antigua is a coral island in the Caribbean with sufficient level
-      land for experiments and a semi-arid climate, while St. Vincent is
-      volcanic and level areas are uncommon, but the rainfall can be
-      seasonally heavy.
+Plots were 16 feet by 18 feet. A central area 12 feet by 12 feet was
+harvested and recorded.
 
-      There are 8-9 sites on each island.
+The number of ears harvested was only recorded on the isle of Antigua.
 
-      Plots were 16 feet by 18 feet. A central area 12 feet by 12 feet
-      was harvested and recorded.
+The actual amounts of N, P, and K are not given. Only 0, 1, 2, 3.
 
-      The number of ears harvested was only recorded on the isle of
-      Antigua.
+The digits of the treatment represent the levels of nitrogen,
+phosphorus, and potassium fertilizer, respectively.
 
-      The actual amounts of N, P, and K are not given. Only 0, 1, 2, 3.
+The TEAN site suffered damage from goats on plot 27, 35 and 36.
 
-      The digits of the treatment represent the levels of nitrogen,
-      phosphorus, and potassium fertilizer, respectively.
+The LFAN site suffered damage from cattle on one boundary–plots 9, 18,
+27, 36.
 
-      The TEAN site suffered damage from goats on plot 27, 35 and 36.
+Electronic version of the data was retrieved from
+http://lib.stat.cmu.edu/datasets/Andrews/
+https://www2.stat.duke.edu/courses/Spring01/sta114/data/andrews.html
 
-      The LFAN site suffered damage from cattle on one boundary–plots 9,
-      18, 27, 36.
+Source
+~~~~~~
 
-      Electronic version of the data was retrieved from
-      http://lib.stat.cmu.edu/datasets/Andrews/
-      https://www2.stat.duke.edu/courses/Spring01/sta114/data/andrews.html
+D.F. Andrews and A.M. Herzberg. 1985. Data: A Collection of Problems
+from Many Fields for the Student and Research Worker. Springer. Table
+58.1 and 58.2.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      D.F. Andrews and A.M. Herzberg. 1985. Data: A Collection of
-      Problems from Many Fields for the Student and Research Worker.
-      Springer. Table 58.1 and 58.2.
+Also in the DAAG package as data sets antigua and stVincent.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Also in the DAAG package as data sets antigua and stVincent.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   library(agridat)
+   data(caribbean.maize)
+   dat <- caribbean.maize
 
-      .. code:: R
+   # Yield and ears are correlated
+   libs(lattice)
+   xyplot(yield~ears|site, dat, ylim=c(0,10), subset=isle=="Antigua",
+          main="caribbean.maize - Antiqua")
 
-         library(agridat)
-         data(caribbean.maize)
-         dat <- caribbean.maize
+   # Some locs show large response to nitrogen (as expected), e.g. UISV, OOSV
+   dotplot(trt~yield|site, data=dat, main="caribbean.maize treatment response")
 
-         # Yield and ears are correlated
-         libs(lattice)
-         xyplot(yield~ears|site, dat, ylim=c(0,10), subset=isle=="Antigua",
-                main="caribbean.maize - Antiqua")
-
-         # Some locs show large response to nitrogen (as expected), e.g. UISV, OOSV
-         dotplot(trt~yield|site, data=dat, main="caribbean.maize treatment response")
-
-         # Show the strong N*site interaction with little benefit on Antiqua, but
-         # a strong response on St.Vincent.
-         dat <- transform(dat, env=paste(substring(isle,1,1),site,sep="-"))
-         bwplot(yield~N|env, dat,
-                main="caribbean.maize", xlab="nitrogen")
+   # Show the strong N*site interaction with little benefit on Antiqua, but
+   # a strong response on St.Vincent.
+   dat <- transform(dat, env=paste(substring(isle,1,1),site,sep="-"))
+   bwplot(yield~N|env, dat,
+          main="caribbean.maize", xlab="nitrogen")

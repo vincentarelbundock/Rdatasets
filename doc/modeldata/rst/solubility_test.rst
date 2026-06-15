@@ -1,44 +1,39 @@
-.. container::
+=============== ===============
+solubility_test R Documentation
+=============== ===============
 
-   .. container::
+Solubility predictions from MARS model
+--------------------------------------
 
-      =============== ===============
-      solubility_test R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Solubility predictions from MARS model
-         :name: solubility-predictions-from-mars-model
+Solubility predictions from MARS model
 
-      .. rubric:: Description
-         :name: description
+Details
+~~~~~~~
 
-      Solubility predictions from MARS model
+For the solubility data in Kuhn and Johnson (2013), these data are the
+test set results for the MARS model. The observed solubility (in column
+``solubility``) and the model results (``prediction``) are contained in
+the data.
 
-      .. rubric:: Details
-         :name: details
+Value
+~~~~~
 
-      For the solubility data in Kuhn and Johnson (2013), these data are
-      the test set results for the MARS model. The observed solubility
-      (in column ``solubility``) and the model results (``prediction``)
-      are contained in the data.
+=================== ============
+``solubility_test`` a data frame
+=================== ============
 
-      .. rubric:: Value
-         :name: value
+Source
+~~~~~~
 
-      =================== ============
-      ``solubility_test`` a data frame
-      =================== ============
+Kuhn, M., Johnson, K. (2013) *Applied Predictive Modeling*, Springer
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Kuhn, M., Johnson, K. (2013) *Applied Predictive Modeling*,
-      Springer
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(solubility_test)
-         str(solubility_test)
+   data(solubility_test)
+   str(solubility_test)

@@ -1,44 +1,40 @@
-.. container::
+=================== ===============
+nfltix_div_avgprice R Documentation
+=================== ===============
 
-   .. container::
+Who Goes To Meaningless NFL Games And Why?
+------------------------------------------
 
-      =================== ===============
-      nfltix_div_avgprice R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Who Goes To Meaningless NFL Games And Why?
-         :name: who-goes-to-meaningless-nfl-games-and-why
+The raw data behind the story "Who Goes To Meaningless NFL Games And
+Why?"
+https://fivethirtyeight.com/features/who-goes-to-meaningless-nfl-games-and-why/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Who Goes To Meaningless NFL Games
-      And Why?"
-      https://fivethirtyeight.com/features/who-goes-to-meaningless-nfl-games-and-why/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   nfltix_div_avgprice
 
-      .. code:: R
+Format
+~~~~~~
 
-         nfltix_div_avgprice
+A data frame with 108 rows representing National Football League games
+and 3 variables:
 
-      .. rubric:: Format
-         :name: format
+event
+   NFL divisional game info
 
-      A data frame with 108 rows representing National Football League
-      games and 3 variables:
+division
+   NFL division
 
-      event
-         NFL divisional game info
+avg_tix_price
+   Average ticket price
 
-      division
-         NFL division
+Source
+~~~~~~
 
-      avg_tix_price
-         Average ticket price
-
-      .. rubric:: Source
-         :name: source
-
-      StubHub
+StubHub

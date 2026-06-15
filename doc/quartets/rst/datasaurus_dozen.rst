@@ -1,48 +1,43 @@
-.. container::
+================ ===============
+datasaurus_dozen R Documentation
+================ ===============
 
-   .. container::
+Datasaurus Dozen Data
+---------------------
 
-      ================ ===============
-      datasaurus_dozen R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Datasaurus Dozen Data
-         :name: datasaurus-dozen-data
+A dataset containing 12 datasets that are equal in mean, variance, and
+Pearson's correlation but very different when visualized.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset containing 12 datasets that are equal in mean, variance,
-      and Pearson's correlation but very different when visualized.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   datasaurus_dozen
 
-      .. code:: R
+Format
+~~~~~~
 
-         datasaurus_dozen
+A data frame with 1846 rows and 3 variables:
 
-      .. rubric:: Format
-         :name: format
+- ``dataset``: the dataset the values come from
 
-      A data frame with 1846 rows and 3 variables:
+- ``x``: the x-variable
 
-      -  ``dataset``: the dataset the values come from
+- ``y``: the y-variable
 
-      -  ``x``: the x-variable
+References
+~~~~~~~~~~
 
-      -  ``y``: the y-variable
+Davies R, Locke S, D'Agostino McGowan L (2022). *datasauRus: Datasets
+from the Datasaurus Dozen*. R package version 0.1.6,
+https://CRAN.R-project.org/package=datasauRus.
 
-      .. rubric:: References
-         :name: references
-
-      Davies R, Locke S, D'Agostino McGowan L (2022). *datasauRus:
-      Datasets from the Datasaurus Dozen*. R package version 0.1.6,
-      https://CRAN.R-project.org/package=datasauRus.
-
-      Matejka, J., & Fitzmaurice, G. (2017). Same Stats, Different
-      Graphs: Generating Datasets with Varied Appearance and Identical
-      Statistics through Simulated Annealing. CHI 2017 Conference
-      proceedings: ACM SIGCHI Conference on Human Factors in Computing
-      Systems. Retrieved from
-      https://www.autodesk.com/research/publications/same-stats-different-graphs
+Matejka, J., & Fitzmaurice, G. (2017). Same Stats, Different Graphs:
+Generating Datasets with Varied Appearance and Identical Statistics
+through Simulated Annealing. CHI 2017 Conference proceedings: ACM SIGCHI
+Conference on Human Factors in Computing Systems. Retrieved from
+https://www.autodesk.com/research/publications/same-stats-different-graphs

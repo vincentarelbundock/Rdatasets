@@ -1,71 +1,67 @@
-.. container::
+=================== ===============
+gomez.heterogeneity R Documentation
+=================== ===============
 
-   .. container::
+RCB experiment of rice, heterogeneity of regressions
+----------------------------------------------------
 
-      =================== ===============
-      gomez.heterogeneity R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: RCB experiment of rice, heterogeneity of regressions
-         :name: rcb-experiment-of-rice-heterogeneity-of-regressions
+RCB experiment of rice, heterogeneity of regressions
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      RCB experiment of rice, heterogeneity of regressions
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("gomez.heterogeneity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("gomez.heterogeneity")
+``gen``
+   genotype
 
-      .. rubric:: Format
-         :name: format
+``yield``
+   yield kg/ha
 
-      ``gen``
-         genotype
+``tillers``
+   tillers no/hill
 
-      ``yield``
-         yield kg/ha
+Details
+~~~~~~~
 
-      ``tillers``
-         tillers no/hill
+An experiment with 3 genotypes to examine the relationship of yield to
+number of tillers.
 
-      .. rubric:: Details
-         :name: details
+Used with permission of Kwanchai Gomez.
 
-      An experiment with 3 genotypes to examine the relationship of
-      yield to number of tillers.
+Source
+~~~~~~
 
-      Used with permission of Kwanchai Gomez.
+Gomez, K.A. and Gomez, A.A.. 1984, Statistical Procedures for
+Agricultural Research. Wiley-Interscience. Page 377.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Gomez, K.A. and Gomez, A.A.. 1984, Statistical Procedures for
-      Agricultural Research. Wiley-Interscience. Page 377.
+None.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(gomez.heterogeneity)
+   dat <- gomez.heterogeneity
 
-         ## Not run: 
+     libs(lattice)
+     xyplot(yield ~ tillers, dat, groups=gen,
+            type=c("p","r"),
+            main="gomez.heterogeneity")
 
-         library(agridat)
-         data(gomez.heterogeneity)
-         dat <- gomez.heterogeneity
-
-           libs(lattice)
-           xyplot(yield ~ tillers, dat, groups=gen,
-                  type=c("p","r"),
-                  main="gomez.heterogeneity")
-
-         ## End(Not run)
+   ## End(Not run)

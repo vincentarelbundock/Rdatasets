@@ -16,9 +16,7 @@ function processMathHTML() {
 
 <table style="width: 100%;"><tr><td>HospVisits</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>
-Hospital Visits Data
-</h2>
+<h2>Hospital Visits Data</h2>
 
 <h3>Description</h3>
 
@@ -27,35 +25,33 @@ visiting patterns, originally from Wing (1962).
 </p>
 
 
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data("HospVisits")</code></pre>
-
-
 <h3>Format</h3>
 
 <p>A 3 by 3 frequency table, with format:
-table [1:3, 1:3] 43 6 9 16 11 18 3 10 16
-- attr(*, &quot;dimnames&quot;)=List of 2
-..$ visit: chr [1:3] &quot;Regular&quot; &quot;Infrequent&quot; &quot;Never&quot;
-..$ stay : chr [1:3] &quot;2-9&quot; &quot;10-19&quot; &quot;20+&quot;
 </p>
+<pre>
+table [1:3, 1:3] 43 6 9 16 11 18 3 10 16
+- attr(*, "dimnames")=List of 2
+..$ visit: chr [1:3] "Regular" "Infrequent" "Never"
+..$ stay : chr [1:3] "2-9" "10-19" "20+"
+</pre>
 
 
 <h3>Details</h3>
 
-<p>Both table variables can be considered ordinal.
-The variable <code>visit</code> refers to visiting patterns recorded hospital. 
-The category labels are abbreviations of those given by Goodman (1983);
-e.g., <code>"Regular"</code> is short for &ldquo;received visitors regularly or patient went home&rdquo;.
-The variable <code>stay</code> refers to length of stay in hospital, in year groups.
+<p>Both table variables can be considered ordinal. The variable <code>visit</code>
+refers to visiting patterns recorded hospital.  The category labels are
+abbreviations of those given by Goodman (1983); e.g., <code>"Regular"</code> is
+short for &ldquo;received visitors regularly or patient went home&rdquo;. The
+variable <code>stay</code> refers to length of stay in hospital, in year groups.
 </p>
 
 
 <h3>Source</h3>
 
-<p>Goodman, L. A. (1983) The analysis of dependence in cross-classifications having ordered categories, using log-linear models for frequencies and log-linear models for odds. 
-<em>Biometrics</em>, 39, 149-160.
+<p>Goodman, L. A. (1983) The analysis of dependence in
+cross-classifications having ordered categories, using log-linear models for
+frequencies and log-linear models for odds.  <em>Biometrics</em>, 39, 149-160.
 </p>
 
 
@@ -68,12 +64,14 @@ The variable <code>stay</code> refers to length of stay in hospital, in year gro
 
 <h3>See Also</h3>
 
-<p><code>ca</code></p>
+<p><code>ca</code>
+</p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(HospVisits)
+<pre><code class='language-R'>
+data(HospVisits)
 mosaic(HospVisits, gp=shading_Friendly)
 
 if(require(ca)){
@@ -81,6 +79,7 @@ if(require(ca)){
   # surprisingly 1D !
   plot(ca(HospVisits))
   }
+
 </code></pre>
 
 </main>

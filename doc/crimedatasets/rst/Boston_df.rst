@@ -1,95 +1,88 @@
-.. container::
+========= ===============
+Boston_df R Documentation
+========= ===============
 
-   .. container::
+Boston Housing Data
+-------------------
 
-      ========= ===============
-      Boston_df R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Boston Housing Data
-         :name: boston-housing-data
+This dataset contains information on housing values and various factors
+influencing those values in 506 suburbs of Boston. It provides detailed
+insights into the factors such as crime rates, proximity to highways,
+and the quality of the local environment that may affect housing prices.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains information on housing values and various
-      factors influencing those values in 506 suburbs of Boston. It
-      provides detailed insights into the factors such as crime rates,
-      proximity to highways, and the quality of the local environment
-      that may affect housing prices.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Boston_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Boston_df)
+A data frame with 506 observations and 14 variables:
 
-      .. rubric:: Format
-         :name: format
+crim
+   Per capita crime rate by town (numeric).
 
-      A data frame with 506 observations and 14 variables:
+zn
+   Proportion of residential land zoned for lots over 25,000 sq.ft.
+   (numeric).
 
-      crim
-         Per capita crime rate by town (numeric).
+indus
+   Proportion of non-retail business acres per town (numeric).
 
-      zn
-         Proportion of residential land zoned for lots over 25,000
-         sq.ft. (numeric).
+chas
+   Charles River dummy variable (= 1 if tract bounds river; 0 otherwise)
+   (integer).
 
-      indus
-         Proportion of non-retail business acres per town (numeric).
+nox
+   Nitrogen oxides concentration (parts per 10 million) (numeric).
 
-      chas
-         Charles River dummy variable (= 1 if tract bounds river; 0
-         otherwise) (integer).
+rm
+   Average number of rooms per dwelling (numeric).
 
-      nox
-         Nitrogen oxides concentration (parts per 10 million) (numeric).
+age
+   Proportion of owner-occupied units built prior to 1940 (numeric).
 
-      rm
-         Average number of rooms per dwelling (numeric).
+dis
+   Weighted mean of distances to five Boston employment centres
+   (numeric).
 
-      age
-         Proportion of owner-occupied units built prior to 1940
-         (numeric).
+rad
+   Index of accessibility to radial highways (integer).
 
-      dis
-         Weighted mean of distances to five Boston employment centres
-         (numeric).
+tax
+   Full-value property-tax rate per $10,000 (numeric).
 
-      rad
-         Index of accessibility to radial highways (integer).
+ptratio
+   Pupil-teacher ratio by town (numeric).
 
-      tax
-         Full-value property-tax rate per $10,000 (numeric).
+black
+   1000(Bk - 0.63)^2 where Bk is the proportion of Black population by
+   town (numeric).
 
-      ptratio
-         Pupil-teacher ratio by town (numeric).
+lstat
+   Lower status of the population (percent) (numeric).
 
-      black
-         1000(Bk - 0.63)^2 where Bk is the proportion of Black
-         population by town (numeric).
+medv
+   Median value of owner-occupied homes in $1000s (numeric).
 
-      lstat
-         Lower status of the population (percent) (numeric).
+Details
+~~~~~~~
 
-      medv
-         Median value of owner-occupied homes in $1000s (numeric).
+The dataset name has been changed to 'Boston_df' to avoid confusion with
+other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the crimedatasets package and
+assists users in identifying its specific characteristics. The suffix
+'df' indicates that the dataset is a traditional data frame in R. The
+original content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been changed to 'Boston_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      crimedatasets package and assists users in identifying its
-      specific characteristics. The suffix 'df' indicates that the
-      dataset is a traditional data frame in R. The original content has
-      not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      This dataset was obtained from the Boston dataset, which is part
-      of the MASS package, with slight modifications.
+This dataset was obtained from the Boston dataset, which is part of the
+MASS package, with slight modifications.

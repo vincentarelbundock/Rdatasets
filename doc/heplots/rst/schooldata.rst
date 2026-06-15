@@ -1,150 +1,140 @@
-.. container::
+========== ===============
+schooldata R Documentation
+========== ===============
 
-   .. container::
+School Data
+-----------
 
-      ========== ===============
-      schooldata R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: School Data
-         :name: school-data
+School Data, from Charnes et al. (1981), a large scale social experiment
+in public school education. It was conceived in the late 1960's as a
+federally sponsored program charged with providing remedial assistance
+to educationally disadvantaged early primary school students. One aim is
+to explain scores on 3 different tests, ``reading``, ``mathematics`` and
+``selfesteem`` from 70 school sites by means of 5 explanatory variables
+related to parents and teachers.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      School Data, from Charnes et al. (1981), a large scale social
-      experiment in public school education. It was conceived in the
-      late 1960's as a federally sponsored program charged with
-      providing remedial assistance to educationally disadvantaged early
-      primary school students. One aim is to explain scores on 3
-      different tests, ``reading``, ``mathematics`` and ``selfesteem``
-      from 70 school sites by means of 5 explanatory variables related
-      to parents and teachers.
+A data frame with 70 observations on the following 8 variables.
 
-      .. rubric:: Format
-         :name: format
+``education``
+   Education level of mother as measured by the percentage of high
+   school graduates among female parents
 
-      A data frame with 70 observations on the following 8 variables.
+``occupation``
+   Highest occupation of a family member according to a pre-arranged
+   rating scale
 
-      ``education``
-         Education level of mother as measured by the percentage of high
-         school graduates among female parents
+``visit``
+   Parental visits index, representing the number of visits to the
+   school site
 
-      ``occupation``
-         Highest occupation of a family member according to a
-         pre-arranged rating scale
+``counseling``
+   Parent counseling index, calculated from data on time spent with
+   child on school-related topics such as reading together, etc.
 
-      ``visit``
-         Parental visits index, representing the number of visits to the
-         school site
+``teacher``
+   Number of teachers at the given site
 
-      ``counseling``
-         Parent counseling index, calculated from data on time spent
-         with child on school-related topics such as reading together,
-         etc.
+``reading``
+   Reading score as measured by the Metropolitan Achievement Test
 
-      ``teacher``
-         Number of teachers at the given site
+``mathematics``
+   Mathematics score as measured by the Metropolitan Achievement Test
 
-      ``reading``
-         Reading score as measured by the Metropolitan Achievement Test
+``selfesteem``
+   Coopersmith Self-Esteem Inventory, intended as a measure of
+   self-esteem
 
-      ``mathematics``
-         Mathematics score as measured by the Metropolitan Achievement
-         Test
+Details
+~~~~~~~
 
-      ``selfesteem``
-         Coopersmith Self-Esteem Inventory, intended as a measure of
-         self-esteem
+A number of observations are unusual, a fact only revealed by plotting.
 
-      .. rubric:: Details
-         :name: details
+The study was designed to compare schools using Program Follow Through
+(PFT) management methods of taking actions to achieve goals with those
+of Non Follow Through (NFT). Observations ``1:49`` came from PFT sites
+and ``50:70`` from NFT sites. This and other descriptors are contained
+in the dataset ``schoolsites``.
 
-      A number of observations are unusual, a fact only revealed by
-      plotting.
+Source
+~~~~~~
 
-      The study was designed to compare schools using Program Follow
-      Through (PFT) management methods of taking actions to achieve
-      goals with those of Non Follow Through (NFT). Observations
-      ``1:49`` came from PFT sites and ``50:70`` from NFT sites. This
-      and other descriptors are contained in the dataset
-      ``schoolsites``.
+This dataset was came originally from the (now-defunct) ``FRB`` package.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      This dataset was came originally from the (now-defunct) ``FRB``
-      package.
+A. Charnes, W.W. Cooper and E. Rhodes (1981). Evaluating Program and
+Managerial Efficiency: An Application of Data Envelopment Analysis to
+Program Follow Through. *Management Science*, **27**, 668-697.
 
-      .. rubric:: References
-         :name: references
+See Also
+~~~~~~~~
 
-      A. Charnes, W.W. Cooper and E. Rhodes (1981). Evaluating Program
-      and Managerial Efficiency: An Application of Data Envelopment
-      Analysis to Program Follow Through. *Management Science*, **27**,
-      668-697.
+``schoolsites``
 
-      .. rubric:: See Also
-         :name: see-also
+Examples
+~~~~~~~~
 
-      ``schoolsites``
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   data(schooldata)
+   # initial screening
+   plot(schooldata)
 
-         data(schooldata)
-         # initial screening
-         plot(schooldata)
+   # better plot
+   library(corrgram)
+   corrgram(schooldata, 
+            lower.panel=panel.ellipse, 
+            upper.panel=panel.pts)
 
-         # better plot
-         library(corrgram)
-         corrgram(schooldata, 
-                  lower.panel=panel.ellipse, 
-                  upper.panel=panel.pts)
+   # check for multivariate outliers
+   res <- cqplot(schooldata, id.n = 5)
+   res
 
-         # check for multivariate outliers
-         res <- cqplot(schooldata, id.n = 5)
-         res
+   #fit the MMreg model
+   school.mod <- lm(cbind(reading, mathematics, selfesteem) ~ 
+                        education + occupation + visit + counseling + teacher, data=schooldata)
 
-         #fit the MMreg model
-         school.mod <- lm(cbind(reading, mathematics, selfesteem) ~ 
-                              education + occupation + visit + counseling + teacher, data=schooldata)
+   # shorthand: fit all others
+   school.mod <- lm(cbind(reading, mathematics, selfesteem) ~ ., data=schooldata)
+   car::Anova(school.mod)
 
-         # shorthand: fit all others
-         school.mod <- lm(cbind(reading, mathematics, selfesteem) ~ ., data=schooldata)
-         car::Anova(school.mod)
+   # HE plots
+   heplot(school.mod, fill=TRUE, fill.alpha=0.1)
+   pairs(school.mod, fill=TRUE, fill.alpha=0.1)
 
-         # HE plots
-         heplot(school.mod, fill=TRUE, fill.alpha=0.1)
-         pairs(school.mod, fill=TRUE, fill.alpha=0.1)
+   # robust model, using robmlm()
+   school.rmod <- robmlm(cbind(reading, mathematics, selfesteem) ~ ., data=schooldata)
+   # note that counseling is now significant
+   car::Anova(school.rmod)
 
-         # robust model, using robmlm()
-         school.rmod <- robmlm(cbind(reading, mathematics, selfesteem) ~ ., data=schooldata)
-         # note that counseling is now significant
-         car::Anova(school.rmod)
+   # Index plot of the weights
+   wts <- school.rmod$weights
+   notable <- which(wts < 0.8)
+   plot(wts, type = "h", col="gray", ylab = "Observation weight")
+   points(seq_along(wts), wts, 
+          pch=16,
+          col = ifelse(wts < 0.8, "red", "black"))
 
-         # Index plot of the weights
-         wts <- school.rmod$weights
-         notable <- which(wts < 0.8)
-         plot(wts, type = "h", col="gray", ylab = "Observation weight")
-         points(seq_along(wts), wts, 
-                pch=16,
-                col = ifelse(wts < 0.8, "red", "black"))
-
-         text(notable, wts[notable],
-              labels = notable,
-              pos = 3,
-              col = "red")
+   text(notable, wts[notable],
+        labels = notable,
+        pos = 3,
+        col = "red")
 
 
 
-         # compare classical HE plot with that based on the robust model
-         heplot(school.mod, cex=1.4, lty=1, fill=TRUE, fill.alpha=0.1)
-         heplot(school.rmod, 
-                add=TRUE, 
-                error.ellipse=TRUE, 
-                lwd=c(2,2), lty=c(2,2), 
-                  term.labels=FALSE, err.label="", 
-                  fill=TRUE)
+   # compare classical HE plot with that based on the robust model
+   heplot(school.mod, cex=1.4, lty=1, fill=TRUE, fill.alpha=0.1)
+   heplot(school.rmod, 
+          add=TRUE, 
+          error.ellipse=TRUE, 
+          lwd=c(2,2), lty=c(2,2), 
+            term.labels=FALSE, err.label="", 
+            fill=TRUE)

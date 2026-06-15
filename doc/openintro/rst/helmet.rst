@@ -1,47 +1,44 @@
-.. container::
+====== ===============
+helmet R Documentation
+====== ===============
 
-   .. container::
+Socioeconomic status and reduced-fee school lunches
+---------------------------------------------------
 
-      ====== ===============
-      helmet R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Socioeconomic status and reduced-fee school lunches
-         :name: socioeconomic-status-and-reduced-fee-school-lunches
+Examining the relationship between socioeconomic status measured as the
+percentage of children in a neighborhood receiving reduced-fee lunches
+at school (lunch) and the percentage of bike riders in the neighborhood
+wearing helmets (helmet).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Examining the relationship between socioeconomic status measured
-      as the percentage of children in a neighborhood receiving
-      reduced-fee lunches at school (lunch) and the percentage of bike
-      riders in the neighborhood wearing helmets (helmet).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   helmet
 
-      .. code:: R
+Format
+~~~~~~
 
-         helmet
+A data frame with 12 observations representing neighborhoods on the
+following 2 variables.
 
-      .. rubric:: Format
-         :name: format
+lunch
+   Percent of students receiving reduced-fee school lunches.
 
-      A data frame with 12 observations representing neighborhoods on
-      the following 2 variables.
+helmet
+   Percent of bike riders wearing helmets.
 
-      lunch
-         Percent of students receiving reduced-fee school lunches.
+Examples
+~~~~~~~~
 
-      helmet
-         Percent of bike riders wearing helmets.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   library(ggplot2)
 
-         library(ggplot2)
-
-         ggplot(helmet, aes(x = lunch, y = helmet)) +
-           geom_point()
+   ggplot(helmet, aes(x = lunch, y = helmet)) +
+     geom_point()

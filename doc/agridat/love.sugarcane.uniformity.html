@@ -1,0 +1,105 @@
+<!DOCTYPE html><html><head><title>R: Uniformity Trial of Sugarcane in Puerto Rico</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>love.sugarcane.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity Trial of Sugarcane in Puerto Rico
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity Trial of Sugarcane in Puerto Rico
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("love.sugarcane.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 400 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row ordinate</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column ordinate</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield per plot, pounds</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data from an experiment provided by F. Chadron for a first ratoon crop
+at Rio Piedras Agricultural Experiment Station. 
+</p>
+<p>Field width: 20 &quot;sections&quot; * 10 feet = 200 feet.
+</p>
+<p>Field length: 20 rows, spaced about 4 feet apart = 80 feet.
+</p>
+<p>Weight in pounds per plot
+</p>
+<p>Note: Love does not give the distance between the rows, but
+&quot;Soil Survey of Puerto Rico&quot; says furrows are planted about 4 feet apart.
+</p>
+<p>Love (1943) says the manuscript is based on lecture notes given in
+1940, so the data of the experiment is before 1940.
+</p>
+<p>Transcription details: Data were scanned from source with iPhone,
+checked by K.Wright.  Thanks to C.Wright for providing a copy of the
+source book.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Love, Harry (1943).
+Experimental Methods in Agricultural Research.
+The Agricultural Experiment Station of the University of Puerto Rico.
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+library(agridat)
+data(love.sugarcane.uniformity)
+dat &lt;- love.sugarcane.uniformity
+
+require(desplot)
+desplot(dat, yield ~ col*row,
+        flip=TRUE, aspect=(20*4)/(20*10),
+        main="love.sugarcane.uniformity")
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

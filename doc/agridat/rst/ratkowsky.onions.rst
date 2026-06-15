@@ -1,72 +1,68 @@
-.. container::
+================ ===============
+ratkowsky.onions R Documentation
+================ ===============
 
-   .. container::
+Onion yields for different densities at two locations
+-----------------------------------------------------
 
-      ================ ===============
-      ratkowsky.onions R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Onion yields for different densities at two locations
-         :name: onion-yields-for-different-densities-at-two-locations
+Onion yields for different densities at two locations
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Onion yields for different densities at two locations
+This data frame contains the following columns:
 
-      .. rubric:: Format
-         :name: format
+density
+   planting density (plants per square meter)
 
-      This data frame contains the following columns:
+yield
+   yield (g / plant)
 
-      density
-         planting density (plants per square meter)
+loc
+   location, Purnong Landing or Virginia
 
-      yield
-         yield (g / plant)
+Details
+~~~~~~~
 
-      loc
-         location, Purnong Landing or Virginia
+Spanish white onions.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      Spanish white onions.
+Ratkowsky, D. A. (1983). *Nonlinear Regression Modeling: A Unified
+Practical Approach.* New York: Marcel Dekker.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Ratkowsky, D. A. (1983). *Nonlinear Regression Modeling: A Unified
-      Practical Approach.* New York: Marcel Dekker.
+Ruppert, D., Wand, M.P. and Carroll, R.J. (2003). *Semiparametric
+Regression*. Cambridge University Press.
+https://stat.tamu.edu/~carroll/semiregbook/
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Ruppert, D., Wand, M.P. and Carroll, R.J. (2003). *Semiparametric
-      Regression*. Cambridge University Press.
-      https://stat.tamu.edu/~carroll/semiregbook/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(ratkowsky.onions)
+   dat <- ratkowsky.onions
 
-         ## Not run: 
+   # Model inverse yield as a quadratic.  Could be better...
+   libs(lattice)
+   dat <- transform(dat, iyield = 1/yield)
+   m1 <- lm(iyield ~ I(density^2)*loc, dat)
+   dat$pred <- predict(m1)
 
-         library(agridat)
-         data(ratkowsky.onions)
-         dat <- ratkowsky.onions
-
-         # Model inverse yield as a quadratic.  Could be better...
-         libs(lattice)
-         dat <- transform(dat, iyield = 1/yield)
-         m1 <- lm(iyield ~ I(density^2)*loc, dat)
-         dat$pred <- predict(m1)
-
-         libs(latticeExtra)
-         foo <- xyplot(iyield ~ density, data=dat, group=loc, auto.key=TRUE,
-                        main="ratkowski.onions",ylab="Inverse yield")
-         foo + xyplot(pred ~ density, data=dat, group=loc, type='l')
+   libs(latticeExtra)
+   foo <- xyplot(iyield ~ density, data=dat, group=loc, auto.key=TRUE,
+                  main="ratkowski.onions",ylab="Inverse yield")
+   foo + xyplot(pred ~ density, data=dat, group=loc, type='l')
 
 
-         ## End(Not run)
+   ## End(Not run)

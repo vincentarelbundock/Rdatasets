@@ -1,41 +1,37 @@
-.. container::
+================== ===============
+causal_confounding R Documentation
+================== ===============
 
-   .. container::
+Confounder Data
+---------------
 
-      ================== ===============
-      causal_confounding R Documentation
-      ================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Confounder Data
-         :name: confounder-data
+This dataset contains 100 observations, generated under the following
+mechanism: Z ~ N(0, 1) (measured factor: confounder) X ~ Z + N(0,1)
+(exposure) Y ~ 0.5X + Z + N(0, 1) (outcome)
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains 100 observations, generated under the
-      following mechanism: Z ~ N(0, 1) (measured factor: confounder) X ~
-      Z + N(0,1) (exposure) Y ~ 0.5X + Z + N(0, 1) (outcome)
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   causal_confounding
 
-      .. code:: R
+Format
+~~~~~~
 
-         causal_confounding
+A dataframe with 100 rows and 3:
 
-      .. rubric:: Format
-         :name: format
+- ``covariate``: a known factor (confounder)
 
-      A dataframe with 100 rows and 3:
+- ``exposure``: exposure
 
-      -  ``covariate``: a known factor (confounder)
+- ``outcome``: outcome
 
-      -  ``exposure``: exposure
+References
+~~~~~~~~~~
 
-      -  ``outcome``: outcome
-
-      .. rubric:: References
-         :name: references
-
-      D'Agostino McGowan L, Barrett M (2023). Causal inference is not a
-      statistical problem. Preprint arXiv:2304.02683v1.
+D'Agostino McGowan L, Barrett M (2023). Causal inference is not a
+statistical problem. Preprint arXiv:2304.02683v1.

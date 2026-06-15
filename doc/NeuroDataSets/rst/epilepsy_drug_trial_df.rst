@@ -1,62 +1,58 @@
-.. container::
+====================== ===============
+epilepsy_drug_trial_df R Documentation
+====================== ===============
 
-   .. container::
+Epileptic Seizures Clinical Drug Trial
+--------------------------------------
 
-      ====================== ===============
-      epilepsy_drug_trial_df R Documentation
-      ====================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Epileptic Seizures Clinical Drug Trial
-         :name: epileptic-seizures-clinical-drug-trial
+This dataset, epilepsy_drug_trial_df, is a data frame containing seizure
+counts from a clinical trial of anti-epileptic medication. The data
+includes seizure frequency measurements along with treatment indicators
+and patient covariates for 295 observations.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, epilepsy_drug_trial_df, is a data frame containing
-      seizure counts from a clinical trial of anti-epileptic medication.
-      The data includes seizure frequency measurements along with
-      treatment indicators and patient covariates for 295 observations.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(epilepsy_drug_trial_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(epilepsy_drug_trial_df)
+A data frame with 295 observations and 6 variables:
 
-      .. rubric:: Format
-         :name: format
+seizures
+   Numeric: Count of epileptic seizures
 
-      A data frame with 295 observations and 6 variables:
+id
+   Integer: Patient identification number
 
-      seizures
-         Numeric: Count of epileptic seizures
+treat
+   Numeric: Treatment indicator
 
-      id
-         Integer: Patient identification number
+expind
+   Numeric: Exposure period indicator
 
-      treat
-         Numeric: Treatment indicator
+timeadj
+   Numeric: Adjusted time period
 
-      expind
-         Numeric: Exposure period indicator
+age
+   Numeric: Patient age in years
 
-      timeadj
-         Numeric: Adjusted time period
+Details
+~~~~~~~
 
-      age
-         Numeric: Patient age in years
+The dataset name has been kept as 'epilepsy_drug_trial_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the NeuroDataSets package. The
+suffix 'df' indicates that the dataset is a data frame. The original
+content has not been modified.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'epilepsy_drug_trial_df' to
-      avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      NeuroDataSets package. The suffix 'df' indicates that the dataset
-      is a data frame. The original content has not been modified.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the faraway package version 1.0.9
+Data taken from the faraway package version 1.0.9

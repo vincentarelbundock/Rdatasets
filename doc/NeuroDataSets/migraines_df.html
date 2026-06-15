@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><title>R: Effects of Transcranial Magnetic Stimulation on Migraine...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>migraines_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Effects of Transcranial Magnetic Stimulation on Migraine Headaches</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, migraines_df, is a data frame containing data on the effects of transcranial magnetic
+stimulation (TMS) on migraine headaches. The dataset includes two groups along with counts of participants
+who reported improvement (“Yes”), no improvement (“No”), and the total number of trials. These data are
+useful for evaluating the potential therapeutic impact of TMS on migraine symptoms.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(migraines_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 2 observations and 4 variables:
+</p>
+
+<dl>
+<dt>Group</dt><dd><p>Group indicator (factor with 2 levels)</p>
+</dd>
+<dt>Yes</dt><dd><p>Number of participants reporting improvement (integer)</p>
+</dd>
+<dt>No</dt><dd><p>Number of participants reporting no improvement (integer)</p>
+</dd>
+<dt>Trials</dt><dd><p>Total number of trials (integer)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as migraines_df to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+NeuroDataSets package and assists users in identifying its specific characteristics.
+The suffix df indicates that the dataset is a data frame. The original content has not been modified
+in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the Stat2Data package version 2.0.0
+</p>
+
+</main>
+
+</div>
+</body></html>

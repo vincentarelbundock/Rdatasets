@@ -1,96 +1,92 @@
-.. container::
+========== ===============
+TravelMode R Documentation
+========== ===============
 
-   .. container::
+Travel Mode Choice Data
+-----------------------
 
-      ========== ===============
-      TravelMode R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Travel Mode Choice Data
-         :name: travel-mode-choice-data
+Data on travel mode choice for travel between Sydney and Melbourne,
+Australia.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data on travel mode choice for travel between Sydney and
-      Melbourne, Australia.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("TravelMode")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("TravelMode")
+A data frame containing 840 observations on 4 modes for 210 individuals.
 
-      .. rubric:: Format
-         :name: format
+individual
+   Factor indicating individual with levels ``1`` to ``210``.
 
-      A data frame containing 840 observations on 4 modes for 210
-      individuals.
+mode
+   Factor indicating travel mode with levels ``"car"``, ``"air"``,
+   ``"train"``, or ``"bus"``.
 
-      individual
-         Factor indicating individual with levels ``1`` to ``210``.
+choice
+   Factor indicating choice with levels ``"no"`` and ``"yes"``.
 
-      mode
-         Factor indicating travel mode with levels ``"car"``, ``"air"``,
-         ``"train"``, or ``"bus"``.
+wait
+   Terminal waiting time, 0 for car.
 
-      choice
-         Factor indicating choice with levels ``"no"`` and ``"yes"``.
+vcost
+   Vehicle cost component.
 
-      wait
-         Terminal waiting time, 0 for car.
+travel
+   Travel time in the vehicle.
 
-      vcost
-         Vehicle cost component.
+gcost
+   Generalized cost measure.
 
-      travel
-         Travel time in the vehicle.
+income
+   Household income.
 
-      gcost
-         Generalized cost measure.
+size
+   Party size.
 
-      income
-         Household income.
+Source
+~~~~~~
 
-      size
-         Party size.
+Online complements to Greene (2003).
 
-      .. rubric:: Source
-         :name: source
+https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
 
-      Online complements to Greene (2003).
+References
+~~~~~~~~~~
 
-      https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
+Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper Saddle
+River, NJ: Prentice Hall.
 
-      .. rubric:: References
-         :name: references
+See Also
+~~~~~~~~
 
-      Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
-      Saddle River, NJ: Prentice Hall.
+``Greene2003``
 
-      .. rubric:: See Also
-         :name: see-also
+Examples
+~~~~~~~~
 
-      ``Greene2003``
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   data("TravelMode", package = "AER")
 
-         data("TravelMode", package = "AER")
+   ## overall proportions for chosen mode
+   with(TravelMode, prop.table(table(mode[choice == "yes"])))
 
-         ## overall proportions for chosen mode
-         with(TravelMode, prop.table(table(mode[choice == "yes"])))
+   ## travel vs. waiting time for different travel modes
+   library("lattice")
+   xyplot(travel ~ wait | mode, data = TravelMode)
 
-         ## travel vs. waiting time for different travel modes
-         library("lattice")
-         xyplot(travel ~ wait | mode, data = TravelMode)
-
-         ## Greene (2003), Table 21.11, conditional logit model
-         library("mlogit")
-         TravelMode$incair <- with(TravelMode, income * (mode == "air"))
-         tm_cl <- mlogit(choice ~ gcost + wait + incair, data = TravelMode,
-           shape = "long", alt.var = "mode", reflevel = "car")
-         summary(tm_cl)
+   ## Greene (2003), Table 21.11, conditional logit model
+   library("mlogit")
+   TravelMode$incair <- with(TravelMode, income * (mode == "air"))
+   tm_cl <- mlogit(choice ~ gcost + wait + incair, data = TravelMode,
+     shape = "long", alt.var = "mode", reflevel = "car")
+   summary(tm_cl)

@@ -1,73 +1,67 @@
-.. container::
+========== ===============
+pwt_sample R Documentation
+========== ===============
 
-   .. container::
+Penn World Table (10.0) Macroeconomic Data for Select Countries, 1950-2019
+--------------------------------------------------------------------------
 
-      ========== ===============
-      pwt_sample R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Penn World Table (10.0) Macroeconomic Data for Select
-         Countries, 1950-2019
-         :name: penn-world-table-10.0-macroeconomic-data-for-select-countries-1950-2019
+These are some macroeconomic data for 21 select (rich) countries. I've
+used these data before to discuss issues of grouping and skew in
+cross-sectional data.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      These are some macroeconomic data for 21 select (rich) countries.
-      I've used these data before to discuss issues of grouping and skew
-      in cross-sectional data.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   pwt_sample
 
-      .. code:: R
+Format
+~~~~~~
 
-         pwt_sample
+A data frame with 1470 observations on the following 11 variables.
 
-      .. rubric:: Format
-         :name: format
+``country``
+   the country name
 
-      A data frame with 1470 observations on the following 11 variables.
+``isocode``
+   The country's ISO code
 
-      ``country``
-         the country name
+``year``
+   a numeric vector for the year
 
-      ``isocode``
-         The country's ISO code
+``pop``
+   Population in millions
 
-      ``year``
-         a numeric vector for the year
+``hc``
+   Index of human capital per person, based on years of schooling and
+   returns to education
 
-      ``pop``
-         Population in millions
+``rgdpna``
+   Real GDP at constant 2011 national prices (in million 2017 USD)
 
-      ``hc``
-         Index of human capital per person, based on years of schooling
-         and returns to education
+``rgdpo``
+   Output-side real GDP at chained PPPs (in million 2017 USD)
 
-      ``rgdpna``
-         Real GDP at constant 2011 national prices (in million 2017 USD)
+``rgdpe``
+   Expenditure-side real GDP at chained PPPs (in million 2017 USD)
 
-      ``rgdpo``
-         Output-side real GDP at chained PPPs (in million 2017 USD)
+``labsh``
+   Share of labor compensation in GDP at current national prices
 
-      ``rgdpe``
-         Expenditure-side real GDP at chained PPPs (in million 2017 USD)
+``avh``
+   Average annual hours worked by persons engaged.
 
-      ``labsh``
-         Share of labor compensation in GDP at current national prices
+``emp``
+   Number of persons engaged (in millions)
 
-      ``avh``
-         Average annual hours worked by persons engaged.
+``rnna``
+   Capital stock at constant 2017 national prices (in million 2017 USD)
 
-      ``emp``
-         Number of persons engaged (in millions)
+Source
+~~~~~~
 
-      ``rnna``
-         Capital stock at constant 2017 national prices (in million 2017
-         USD)
-
-      .. rubric:: Source
-         :name: source
-
-      Taken from the ``pwt10`` package. See: https://www.rug.nl/ggdc/
+Taken from the ``pwt10`` package. See: https://www.rug.nl/ggdc/

@@ -1,90 +1,86 @@
-.. container::
+================= ===============
+walsh.cottonprice R Documentation
+================= ===============
 
-   .. container::
+Acres and price of cotton 1910-1943
+-----------------------------------
 
-      ================= ===============
-      walsh.cottonprice R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Acres and price of cotton 1910-1943
-         :name: acres-and-price-of-cotton-1910-1943
+Acres and price of cotton 1910-1943
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Acres and price of cotton 1910-1943
+A data frame with 34 observations on the following 9 variables.
 
-      .. rubric:: Format
-         :name: format
+``year``
+   year, numeric 1910-1943
 
-      A data frame with 34 observations on the following 9 variables.
+``acres``
+   acres of cototn (1000s)
 
-      ``year``
-         year, numeric 1910-1943
+``cotton``
+   price per pound (cents) in previous year
 
-      ``acres``
-         acres of cototn (1000s)
+``cottonseed``
+   price per ton (dollars) in previous year
 
-      ``cotton``
-         price per pound (cents) in previous year
+``combined``
+   cotton price/pound + 1.857 x cottonseed price/pound (cents)
 
-      ``cottonseed``
-         price per ton (dollars) in previous year
+``index``
+   price index, 1911-1914=100
 
-      ``combined``
-         cotton price/pound + 1.857 x cottonseed price/pound (cents)
+``adjcotton``
+   adjusted cotton price per pound (cents) in previous year
 
-      ``index``
-         price index, 1911-1914=100
+``adjcottonseed``
+   adjusted cottonseed price per ton (dollars) in previous year
 
-      ``adjcotton``
-         adjusted cotton price per pound (cents) in previous year
+``adjcombined``
+   adjusted combined price/pound (cents)
 
-      ``adjcottonseed``
-         adjusted cottonseed price per ton (dollars) in previous year
+Details
+~~~~~~~
 
-      ``adjcombined``
-         adjusted combined price/pound (cents)
+The 'index' is a price index for all farm commodities.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The 'index' is a price index for all farm commodities.
+R.M. Walsh (1944). Response to Price in Production of Cotton and
+Cottonseed, *Journal of Farm Economics*, 26, 359-372.
+https://doi.org/10.2307/1232237
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      R.M. Walsh (1944). Response to Price in Production of Cotton and
-      Cottonseed, *Journal of Farm Economics*, 26, 359-372.
-      https://doi.org/10.2307/1232237
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
 
-         ## Not run: 
+   data(walsh.cottonprice)
+   dat <- walsh.cottonprice
 
-         library(agridat)
+   dat <- transform(dat, acres=acres/1000) # convert to million acres
 
-         data(walsh.cottonprice)
-         dat <- walsh.cottonprice
+   percentchg <- function(x){ # percent change from previous to current
+     ix <- 2:(nrow(dat))
+     c(NA, (x[ix]-x[ix-1])/x[ix-1])
+   }
 
-         dat <- transform(dat, acres=acres/1000) # convert to million acres
+   # Compare percent change in acres with percent change in previous price
+   # using constant dollars
+   dat <- transform(dat, chga = percentchg(acres), chgp = percentchg(adjcombined))
 
-         percentchg <- function(x){ # percent change from previous to current
-           ix <- 2:(nrow(dat))
-           c(NA, (x[ix]-x[ix-1])/x[ix-1])
-         }
+   with(dat, cor(chga, chgp, use='pair')) # .501 correlation
+   libs(lattice)
+   xyplot(chga~chgp, dat, type=c('p','r'),
+          main="walsh.cottonprice",
+          xlab="Percent change in previous price", ylab="Percent change in acres")
 
-         # Compare percent change in acres with percent change in previous price
-         # using constant dollars
-         dat <- transform(dat, chga = percentchg(acres), chgp = percentchg(adjcombined))
-
-         with(dat, cor(chga, chgp, use='pair')) # .501 correlation
-         libs(lattice)
-         xyplot(chga~chgp, dat, type=c('p','r'),
-                main="walsh.cottonprice",
-                xlab="Percent change in previous price", ylab="Percent change in acres")
-
-         ## End(Not run)
+   ## End(Not run)

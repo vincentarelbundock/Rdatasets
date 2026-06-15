@@ -1,69 +1,65 @@
-.. container::
+====== ===============
+eagles R Documentation
+====== ===============
 
-   .. container::
+Foraging Ecology of Bald Eagles
+-------------------------------
 
-      ====== ===============
-      eagles R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Foraging Ecology of Bald Eagles
-         :name: foraging-ecology-of-bald-eagles
+Knight and Skagen collected during a field study on the foraging
+behaviour of wintering Bald Eagles in Washington State, USA data
+concerning 160 attempts by one (pirating) Bald Eagle to steal a chum
+salmon from another (feeding) Bald Eagle.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Knight and Skagen collected during a field study on the foraging
-      behaviour of wintering Bald Eagles in Washington State, USA data
-      concerning 160 attempts by one (pirating) Bald Eagle to steal a
-      chum salmon from another (feeding) Bald Eagle.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   eagles
 
-      .. code:: R
+Format
+~~~~~~
 
-         eagles
+The ``eagles`` data frame has 8 rows and 5 columns.
 
-      .. rubric:: Format
-         :name: format
+``y``
+   Number of successful attempts.
 
-      The ``eagles`` data frame has 8 rows and 5 columns.
+``n``
+   Total number of attempts.
 
-      ``y``
-         Number of successful attempts.
+``P``
+   Size of pirating eagle (``L`` = large, ``S`` = small).
 
-      ``n``
-         Total number of attempts.
+``A``
+   Age of pirating eagle (``I`` = immature, ``A`` = adult).
 
-      ``P``
-         Size of pirating eagle (``L`` = large, ``S`` = small).
+``V``
+   Size of victim eagle (``L`` = large, ``S`` = small).
 
-      ``A``
-         Age of pirating eagle (``I`` = immature, ``A`` = adult).
+Source
+~~~~~~
 
-      ``V``
-         Size of victim eagle (``L`` = large, ``S`` = small).
+Knight, R. L. and Skagen, S. K. (1988) Agonistic asymmetries and the
+foraging ecology of Bald Eagles. *Ecology* **69**, 1188–1194.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Knight, R. L. and Skagen, S. K. (1988) Agonistic asymmetries and
-      the foraging ecology of Bald Eagles. *Ecology* **69**, 1188–1194.
+Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics with
+S-PLUS.* Fourth Edition. Springer.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
-      Statistics with S-PLUS.* Fourth Edition. Springer.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         eagles.glm <- glm(cbind(y, n - y) ~ P*A + V, data = eagles,
-                           family = binomial)
-         dropterm(eagles.glm)
-         prof <- profile(eagles.glm)
-         plot(prof)
-         pairs(prof)
+   eagles.glm <- glm(cbind(y, n - y) ~ P*A + V, data = eagles,
+                     family = binomial)
+   dropterm(eagles.glm)
+   prof <- profile(eagles.glm)
+   plot(prof)
+   pairs(prof)

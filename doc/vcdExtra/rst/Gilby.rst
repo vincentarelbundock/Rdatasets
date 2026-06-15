@@ -1,82 +1,72 @@
-.. container::
+===== ===============
+Gilby R Documentation
+===== ===============
 
-   .. container::
+Clothing and Intelligence Rating of Children
+--------------------------------------------
 
-      ===== ===============
-      Gilby R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Clothing and Intelligence Rating of Children
-         :name: clothing-and-intelligence-rating-of-children
+Schoolboys were classified according to their clothing and to their
+teachers rating of "dullness" (lack of intelligence), in a 5 x 7 table
+originally from Gilby (1911). Anscombe (1981) presents a slightly
+collapsed 4 x 6 table, used here, where the last two categories of
+clothing were pooled as were the first two categories of dullness due to
+small counts.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Schoolboys were classified according to their clothing and to
-      their teachers rating of "dullness" (lack of intelligence), in a 5
-      x 7 table originally from Gilby (1911). Anscombe (1981) presents a
-      slightly collapsed 4 x 6 table, used here, where the last two
-      categories of clothing were pooled as were the first two
-      categories of dullness due to small counts.
+A 2-dimensional array resulting from cross-tabulating 2 variables for
+1725 observations. The variable names and their levels are:
 
-      Both ``Dullness`` and ``Clothing`` are ordered categories, so
-      models and methods that examine their association in terms of
-      ordinal categories are profitable.
++----+--------------+------------------------------------------------------------------------------------+
+| No | Name         | Levels                                                                             |
++----+--------------+------------------------------------------------------------------------------------+
+| 1  | ``Dullness`` | ``⁠"Ment. defective", "Slow", "Slow Intell", "Fairly Intell", "Capable", "V.Able"⁠`` |
++----+--------------+------------------------------------------------------------------------------------+
+| 2  | ``Clothing`` | ``⁠"V.Well clad", "Well clad", "Passable", "Insufficient"⁠``                         |
++----+--------------+------------------------------------------------------------------------------------+
+|    |              |                                                                                    |
++----+--------------+------------------------------------------------------------------------------------+
 
-      .. rubric:: Usage
-         :name: usage
+Details
+~~~~~~~
 
-      .. code:: R
+Both ``Dullness`` and ``Clothing`` are ordered categories, so models and
+methods that examine their association in terms of ordinal categories
+are profitable.
 
-         data(Gilby)
+Source
+~~~~~~
 
-      .. rubric:: Format
-         :name: format
+Anscombe, F. J. (1981). *Computing in Statistical Science Through APL*.
+New York: Springer-Verlag, p. 302
 
-      A 2-dimensional array resulting from cross-tabulating 2 variables
-      for 1725 observations. The variable names and their levels are:
+References
+~~~~~~~~~~
 
-      +----+--------------+------------------------------------------------+
-      | No | Name         | Levels                                         |
-      +----+--------------+------------------------------------------------+
-      | 1  | ``Dullness`` | ``"Ment. defective", "Slow", "Slow I           |
-      |    |              | ntell", "Fairly Intell", "Capable", "V.Able"`` |
-      +----+--------------+------------------------------------------------+
-      | 2  | ``Clothing`` | ``"V.Well cl                                   |
-      |    |              | ad", "Well clad", "Passable", "Insufficient"`` |
-      +----+--------------+------------------------------------------------+
-      |    |              |                                                |
-      +----+--------------+------------------------------------------------+
+Gilby, W. H. (1911). On the significance of the teacher's appreciation
+of general intelligence. *Biometrika*, 8, 93-108 (esp. p. 94). (Quoted
+by Kendall (1943,..., 1953) Table 13.1, p 320.)
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Anscombe, F. J. (1981). *Computing in Statistical Science Through
-      APL*. New York: Springer-Verlag, p. 302
+.. code:: R
 
-      .. rubric:: References
-         :name: references
 
-      Gilby, W. H. (1911). On the significance of the teacher's
-      appreciation of general intelligence. *Biometrika*, 8, 93-108
-      (esp. p. 94). [Quoted by Kendall (1943,..., 1953) Table 13.1, p
-      320.]
+   data(Gilby)
 
-      .. rubric:: Examples
-         :name: examples
+   # CMH tests treating row/column variables as ordinal
+   CMHtest(Gilby)
 
-      .. code:: R
+   mosaic(Gilby, shade=TRUE)
 
-         data(Gilby)
+   # correspondence analysis to see relations among categories
+   if(require(ca)){
+       ca(Gilby)
+       plot(ca(Gilby), lines=TRUE)
 
-         # CMH tests treating row/column variables as ordinal
-         CMHtest(Gilby)
-
-         mosaic(Gilby, shade=TRUE)
-
-         # correspondence analysis to see relations among categories
-         if(require(ca)){
-             ca(Gilby)
-             plot(ca(Gilby), lines=TRUE)
-
-         }
+   }

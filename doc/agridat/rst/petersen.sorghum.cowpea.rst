@@ -1,87 +1,82 @@
-.. container::
+======================= ===============
+petersen.sorghum.cowpea R Documentation
+======================= ===============
 
-   .. container::
+Intercropping experiment of sorghum/cowpea
+------------------------------------------
 
-      ======================= ===============
-      petersen.sorghum.cowpea R Documentation
-      ======================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Intercropping experiment of sorghum/cowpea
-         :name: intercropping-experiment-of-sorghumcowpea
+Intercropping experiment of sorghum/cowpea.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Intercropping experiment of sorghum/cowpea.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("petersen.sorghum.cowpea")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("petersen.sorghum.cowpea")
+A data frame with 18 observations on the following 5 variables.
 
-      .. rubric:: Format
-         :name: format
+``block``
+   block
 
-      A data frame with 18 observations on the following 5 variables.
+``srows``
+   sorghum rows
 
-      ``block``
-         block
+``crows``
+   cowpea rows
 
-      ``srows``
-         sorghum rows
+``syield``
+   sorghum yield, kg/ha
 
-      ``crows``
-         cowpea rows
+``cyield``
+   cowpea yield, kg/ha
 
-      ``syield``
-         sorghum yield, kg/ha
+Details
+~~~~~~~
 
-      ``cyield``
-         cowpea yield, kg/ha
+An intercropping experiment in Tanzania. The treatments consisted of
+four ratios of sorghum rows to cowpea rows as 1:4, 2:3, 3:2, 4:1.
 
-      .. rubric:: Details
-         :name: details
+The sole-crop yields with 5 rows per crop are also given (not part of
+the blocks).
 
-      An intercropping experiment in Tanzania. The treatments consisted
-      of four ratios of sorghum rows to cowpea rows as 1:4, 2:3, 3:2,
-      4:1.
+Source
+~~~~~~
 
-      The sole-crop yields with 5 rows per crop are also given (not part
-      of the blocks).
+Roger G Petersen (1994). Agricultural Field Experiments. Marcel Dekker
+Inc, New York. Page 372.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Roger G Petersen (1994). Agricultural Field Experiments. Marcel
-      Dekker Inc, New York. Page 372.
+None
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   libs(agridat)
+   data(petersen.sorghum.cowpea)
+   dat <- petersen.sorghum.cowpea
 
-         ## Not run: 
+   # Petersen figure 10.4a
+   tmp <- dat 
 
-         libs(agridat)
-         data(petersen.sorghum.cowpea)
-         dat <- petersen.sorghum.cowpea
-
-         # Petersen figure 10.4a
-         tmp <- dat 
-
-         with(tmp, plot(srows, syield + cyield,
-                        col="blue", type='l', xlim=c(0,5), ylim=c(0,4000)) )
-         with(tmp, lines(srows, syield) )
-         with(tmp, lines(srows, cyield, col="red") )
-         title("Cow Pea (red), Sorghum (black), Total (blue)")
-         title("petersen.sorghum.cowpea", line=0.5)
+   with(tmp, plot(srows, syield + cyield,
+                  col="blue", type='l', xlim=c(0,5), ylim=c(0,4000)) )
+   with(tmp, lines(srows, syield) )
+   with(tmp, lines(srows, cyield, col="red") )
+   title("Cow Pea (red), Sorghum (black), Total (blue)")
+   title("petersen.sorghum.cowpea", line=0.5)
 
 
-         ## End(Not run)
+   ## End(Not run)

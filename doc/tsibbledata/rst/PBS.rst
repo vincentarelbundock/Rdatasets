@@ -1,60 +1,56 @@
-.. container::
+=== ===============
+PBS R Documentation
+=== ===============
 
-   .. container::
+Monthly Medicare Australia prescription data
+--------------------------------------------
 
-      === ===============
-      PBS R Documentation
-      === ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Monthly Medicare Australia prescription data
-         :name: monthly-medicare-australia-prescription-data
+``PBS`` is a monthly ``tsibble`` with two values:
 
-      .. rubric:: Description
-         :name: description
+======== ===========================
+Scripts: Total number of scripts
+Cost:    Cost of the scripts in $AUD
+         
+======== ===========================
 
-      ``PBS`` is a monthly ``tsibble`` with two values:
+Format
+~~~~~~
 
-      ======== ===========================
-      Scripts: Total number of scripts
-      Cost:    Cost of the scripts in $AUD
-      \        
-      ======== ===========================
+Time series of class ``tsibble``
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      Time series of class ``tsibble``
+The data is disaggregated using four keys:
 
-      .. rubric:: Details
-         :name: details
++-------------+--------------------------------------------------------+
+| Concession: | Concessional scripts are given to pensioners,          |
+|             | unemployed, dependents, and other card holders         |
++-------------+--------------------------------------------------------+
+| Type:       | Co-payments are made until an individual's script      |
+|             | expenditure hits a threshold ($290.00 for concession,  |
+|             | $1141.80 otherwise). Safety net subsidies are provided |
+|             | to individuals exceeding this amount.                  |
++-------------+--------------------------------------------------------+
+| ATC1:       | Anatomical Therapeutic Chemical index (level 1)        |
++-------------+--------------------------------------------------------+
+| ATC2:       | Anatomical Therapeutic Chemical index (level 2)        |
++-------------+--------------------------------------------------------+
+|             |                                                        |
++-------------+--------------------------------------------------------+
 
-      The data is disaggregated using four keys:
+Source
+~~~~~~
 
-      +-------------+-------------------------------------------------------+
-      | Concession: | Concessional scripts are given to pensioners,         |
-      |             | unemployed, dependents, and other card holders        |
-      +-------------+-------------------------------------------------------+
-      | Type:       | Co-payments are made until an individual's script     |
-      |             | expenditure hits a threshold ($290.00 for concession, |
-      |             | $1141.80 otherwise). Safety net subsidies are         |
-      |             | provided to individuals exceeding this amount.        |
-      +-------------+-------------------------------------------------------+
-      | ATC1:       | Anatomical Therapeutic Chemical index (level 1)       |
-      +-------------+-------------------------------------------------------+
-      | ATC2:       | Anatomical Therapeutic Chemical index (level 2)       |
-      +-------------+-------------------------------------------------------+
-      |             |                                                       |
-      +-------------+-------------------------------------------------------+
+Medicare Australia
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Medicare Australia
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         library(tsibble)
-         PBS
+   library(tsibble)
+   PBS

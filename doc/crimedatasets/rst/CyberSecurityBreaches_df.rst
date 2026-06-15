@@ -1,80 +1,72 @@
-.. container::
+======================== ===============
+CyberSecurityBreaches_df R Documentation
+======================== ===============
 
-   .. container::
+Cybersecurity Breaches Reported to US Health Department
+-------------------------------------------------------
 
-      ======================== ===============
-      CyberSecurityBreaches_df R Documentation
-      ======================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Cybersecurity Breaches Reported to US Health
-         Department
-         :name: cybersecurity-breaches-reported-to-us-health-department
+This dataset contains records of cybersecurity breaches reported to the
+US Department of Health and Human Services (HHS). Since October 2009,
+organizations in the United States that store data on human health are
+required to report incidents compromising the confidentiality of 500 or
+more patients or human subjects (45 C.F.R. 164.408). These reports are
+publicly available and provide detailed information about the affected
+entities, breach types, and impacted individuals.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains records of cybersecurity breaches reported
-      to the US Department of Health and Human Services (HHS). Since
-      October 2009, organizations in the United States that store data
-      on human health are required to report incidents compromising the
-      confidentiality of 500 or more patients or human subjects (45
-      C.F.R. 164.408). These reports are publicly available and provide
-      detailed information about the affected entities, breach types,
-      and impacted individuals.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(CyberSecurityBreaches_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(CyberSecurityBreaches_df)
+A data frame with 1,151 observations and 9 variables:
 
-      .. rubric:: Format
-         :name: format
+Name.of.Covered.Entity
+   Name of the covered entity involved in the breach (character).
 
-      A data frame with 1,151 observations and 9 variables:
+State
+   US state where the entity is located (factor with 52 levels).
 
-      Name.of.Covered.Entity
-         Name of the covered entity involved in the breach (character).
+Covered.Entity.Type
+   Type of the covered entity (factor with 4 levels).
 
-      State
-         US state where the entity is located (factor with 52 levels).
+Individuals.Affected
+   Number of individuals affected by the breach (integer).
 
-      Covered.Entity.Type
-         Type of the covered entity (factor with 4 levels).
+Breach.Submission.Date
+   Date the breach was reported (Date).
 
-      Individuals.Affected
-         Number of individuals affected by the breach (integer).
+Type.of.Breach
+   Type of breach (factor with 29 levels).
 
-      Breach.Submission.Date
-         Date the breach was reported (Date).
+Location.of.Breached.Information
+   Location of the breached information (factor with 47 levels).
 
-      Type.of.Breach
-         Type of breach (factor with 29 levels).
+Business.Associate.Present
+   Indicates whether a business associate was involved (logical).
 
-      Location.of.Breached.Information
-         Location of the breached information (factor with 47 levels).
+Web.Description
+   Description of the breach provided online (character).
 
-      Business.Associate.Present
-         Indicates whether a business associate was involved (logical).
+Details
+~~~~~~~
 
-      Web.Description
-         Description of the breach provided online (character).
+The dataset name has been changed to 'CyberSecurityBreaches_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the crimedatasets package and
+assists users in identifying its specific characteristics. The suffix
+'df' indicates that the dataset is a traditional data frame in R. The
+original content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been changed to 'CyberSecurityBreaches_df' to
-      avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      crimedatasets package and assists users in identifying its
-      specific characteristics. The suffix 'df' indicates that the
-      dataset is a traditional data frame in R. The original content has
-      not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Cybersecurity breach data downloaded from the Office for Civil
-      Rights of the US Department of Health and Human Services (HHS) on
-      2015-02-26.
+Cybersecurity breach data downloaded from the Office for Civil Rights of
+the US Department of Health and Human Services (HHS) on 2015-02-26.

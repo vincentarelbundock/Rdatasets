@@ -1,47 +1,44 @@
-.. container::
+======= ===============
+gsearch R Documentation
+======= ===============
 
-   .. container::
+Simulated Google search experiment
+----------------------------------
 
-      ======= ===============
-      gsearch R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Simulated Google search experiment
-         :name: simulated-google-search-experiment
+The data were simulated to look like sample results from a Google search
+experiment.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The data were simulated to look like sample results from a Google
-      search experiment.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   gsearch
 
-      .. code:: R
+Format
+~~~~~~
 
-         gsearch
+A data frame with 10000 observations on the following 2 variables.
 
-      .. rubric:: Format
-         :name: format
+type
+   a factor with levels ``new search`` ``no new search``
 
-      A data frame with 10000 observations on the following 2 variables.
+outcome
+   a factor with levels ``current`` ``test 1`` ``test 2``
 
-      type
-         a factor with levels ``new search`` ``no new search``
+Examples
+~~~~~~~~
 
-      outcome
-         a factor with levels ``current`` ``test 1`` ``test 2``
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   library(ggplot2)
 
-         library(ggplot2)
+   table(gsearch$type, gsearch$outcome)
 
-         table(gsearch$type, gsearch$outcome)
-
-         ggplot(gsearch, aes(x = type, fill = outcome)) +
-           geom_bar(position = "fill") +
-           labs(y = "proportion")
+   ggplot(gsearch, aes(x = type, fill = outcome)) +
+     geom_bar(position = "fill") +
+     labs(y = "proportion")

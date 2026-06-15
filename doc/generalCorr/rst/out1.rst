@@ -1,22 +1,18 @@
-.. container::
+==== ===============
+out1 R Documentation
+==== ===============
 
-   .. container::
+internal out1
+-------------
 
-      ==== ===============
-      out1 R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: internal out1
-         :name: internal-out1
+intended for internal use only
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      intended for internal use only
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
-
-      .. code:: R
-
-         out1
+   out1

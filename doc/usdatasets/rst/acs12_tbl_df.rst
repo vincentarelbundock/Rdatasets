@@ -1,79 +1,74 @@
-.. container::
+============ ===============
+acs12_tbl_df R Documentation
+============ ===============
 
-   .. container::
+American Community Survey 2012
+------------------------------
 
-      ============ ===============
-      acs12_tbl_df R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: American Community Survey 2012
-         :name: american-community-survey-2012
+The dataset name has been changed to 'acs12_tbl_df' to avoid confusion
+with other packages in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the 'usdatasets' package and assists
+users in identifying its specific characteristics. The suffix 'tbl_df'
+identifies the dataset as a tibble data frame, helping to differentiate
+it from other datasets within the package. The original content of the
+dataset has not been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'acs12_tbl_df' to avoid
-      confusion with other packages in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      'usdatasets' package and assists users in identifying its specific
-      characteristics. The suffix 'tbl_df' identifies the dataset as a
-      tibble data frame, helping to differentiate it from other datasets
-      within the package. The original content of the dataset has not
-      been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(acs12_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(acs12_tbl_df)
+A tibble with 2,000 observations and 13 variables:
 
-      .. rubric:: Format
-         :name: format
+income
+   Income of individuals (integer).
 
-      A tibble with 2,000 observations and 13 variables:
+employment
+   Employment status (factor with 3 levels).
 
-      income
-         Income of individuals (integer).
+hrs_work
+   Number of hours worked per week (integer).
 
-      employment
-         Employment status (factor with 3 levels).
+race
+   Race of individuals (factor with 4 levels).
 
-      hrs_work
-         Number of hours worked per week (integer).
+age
+   Age of individuals (integer).
 
-      race
-         Race of individuals (factor with 4 levels).
+gender
+   Gender of individuals (factor with 2 levels: "male", "female").
 
-      age
-         Age of individuals (integer).
+citizen
+   Citizenship status (factor with 2 levels: "no", "yes").
 
-      gender
-         Gender of individuals (factor with 2 levels: "male", "female").
+time_to_work
+   Time taken to travel to work in minutes (integer).
 
-      citizen
-         Citizenship status (factor with 2 levels: "no", "yes").
+lang
+   Primary language spoken at home (factor with 2 levels: "english",
+   "other").
 
-      time_to_work
-         Time taken to travel to work in minutes (integer).
+married
+   Marital status (factor with 2 levels: "no", "yes").
 
-      lang
-         Primary language spoken at home (factor with 2 levels:
-         "english", "other").
+edu
+   Educational attainment (factor with 3 levels).
 
-      married
-         Marital status (factor with 2 levels: "no", "yes").
+disability
+   Disability status (factor with 2 levels).
 
-      edu
-         Educational attainment (factor with 3 levels).
+birth_qrtr
+   Birth quarter of individuals (factor with 4 levels).
 
-      disability
-         Disability status (factor with 2 levels).
+Source
+~~~~~~
 
-      birth_qrtr
-         Birth quarter of individuals (factor with 4 levels).
-
-      .. rubric:: Source
-         :name: source
-
-      American Community Survey, 2012.
+American Community Survey, 2012.

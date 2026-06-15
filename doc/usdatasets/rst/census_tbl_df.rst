@@ -1,62 +1,58 @@
-.. container::
+============= ===============
+census_tbl_df R Documentation
+============= ===============
 
-   .. container::
+Random sample of 2000 U.S. Census Data
+--------------------------------------
 
-      ============= ===============
-      census_tbl_df R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Random sample of 2000 U.S. Census Data
-         :name: random-sample-of-2000-u.s.-census-data
+The dataset name has been changed to 'census_tbl_df' to avoid confusion
+with other packages in the R ecosystem from which datasets have been
+sourced. This naming convention helps distinguish this dataset as part
+of the 'usdatasets' package and assists users in identifying its
+specific characteristics. The suffix 'tbl_df' identifies the dataset as
+a tibble. The original content of the dataset has not been modified in
+any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'census_tbl_df' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. This naming convention helps
-      distinguish this dataset as part of the 'usdatasets' package and
-      assists users in identifying its specific characteristics. The
-      suffix 'tbl_df' identifies the dataset as a tibble. The original
-      content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(census_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(census_tbl_df)
+A tibble with 500 observations and 8 variables:
 
-      .. rubric:: Format
-         :name: format
+census_year
+   Year of the census (in integer).
 
-      A tibble with 500 observations and 8 variables:
+state_fips_code
+   FIPS code for the state (factor with 47 levels).
 
-      census_year
-         Year of the census (in integer).
+total_family_income
+   Total family income (in US dollars).
 
-      state_fips_code
-         FIPS code for the state (factor with 47 levels).
+age
+   Age of the individual (in years).
 
-      total_family_income
-         Total family income (in US dollars).
+sex
+   Sex of the individual (factor: male/female).
 
-      age
-         Age of the individual (in years).
+race_general
+   General race category (factor with 8 levels).
 
-      sex
-         Sex of the individual (factor: male/female).
+marital_status
+   Marital status of the individual (factor with 6 levels).
 
-      race_general
-         General race category (factor with 8 levels).
+total_personal_income
+   Total personal income (in US dollars).
 
-      marital_status
-         Marital status of the individual (factor with 6 levels).
+Source
+~~~~~~
 
-      total_personal_income
-         Total personal income (in US dollars).
-
-      .. rubric:: Source
-         :name: source
-
-      US Census Bureau
+US Census Bureau

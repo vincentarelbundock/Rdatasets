@@ -1,55 +1,51 @@
-.. container::
+============== ===============
+global_economy R Documentation
+============== ===============
 
-   .. container::
+Global economic indicators
+--------------------------
 
-      ============== ===============
-      global_economy R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Global economic indicators
-         :name: global-economic-indicators
+Economic indicators featured by the World Bank from 1960 to 2017.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Economic indicators featured by the World Bank from 1960 to 2017.
+Time series of class ``tsibble``
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      Time series of class ``tsibble``
+``global_economy`` is an annual ``tsibble`` with six values:
 
-      .. rubric:: Details
-         :name: details
+=========== ===============================================
+GDP:        Gross domestic product (in $USD February 2019).
+Growth:     Annual percentage growth in GDP.
+CPI:        Consumer price index (base year 2010).
+Imports:    Imports of goods and services (% of GDP).
+Exports:    Exports of goods and services (% of GDP).
+Population: Total population.
+=========== ===============================================
 
-      ``global_economy`` is an annual ``tsibble`` with six values:
+Each series is uniquely identified by one key:
 
-      =========== ===============================================
-      GDP:        Gross domestic product (in $USD February 2019).
-      Growth:     Annual percentage growth in GDP.
-      CPI:        Consumer price index (base year 2010).
-      Imports:    Imports of goods and services (% of GDP).
-      Exports:    Exports of goods and services (% of GDP).
-      Population: Total population.
-      =========== ===============================================
+======== ====================================
+Country: The country or region of the series.
+         
+======== ====================================
 
-      Each series is uniquely identified by one key:
+Source
+~~~~~~
 
-      ======== ====================================
-      Country: The country or region of the series.
-      \        
-      ======== ====================================
+The World Bank,
+http://datatopics.worldbank.org/world-development-indicators/
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      The World Bank,
-      http://datatopics.worldbank.org/world-development-indicators/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         library(tsibble)
-         global_economy
+   library(tsibble)
+   global_economy

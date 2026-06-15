@@ -20,18 +20,15 @@ function processMathHTML() {
 
 <h3>Description</h3>
 
-<p>Blue collar workers job satisfaction from large scale investigation in Denmark in 1968 (Andersen, 1991). 
+<p>Blue collar workers job satisfaction from large scale investigation in
+Denmark in 1968 (Andersen, 1991).
 </p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data("WorkerSat")</code></pre>
 
 
 <h3>Format</h3>
 
-<p>A frequency data frame with 8 observations on the following 4 variables, representing the 2 x 2 x 2 classification of 715 cases.
+<p>A frequency data frame with 8 observations on the following 4
+variables, representing the 2 x 2 x 2 classification of 715 cases.
 </p>
 
 <dl>
@@ -49,24 +46,26 @@ function processMathHTML() {
 
 <h3>Source</h3>
 
-<p>Originally from <a href="https://online.stat.psu.edu/stat504/lesson/10/">https://online.stat.psu.edu/stat504/lesson/10/</a>
+<p>Originally from <a href="https://online.stat.psu.edu/stat504/Lesson10">https://online.stat.psu.edu/stat504/Lesson10</a>
 </p>
 
 
 <h3>References</h3>
 
-<p>Andersen, E. B. (1991)
-Statistical Analysis of Categorical Data, 2nd Ed., Springer-Verlag.
+<p>Andersen, E. B. (1991) Statistical Analysis of Categorical Data,
+2nd Ed., Springer-Verlag.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(WorkerSat)
+<pre><code class='language-R'>
+data(WorkerSat)
 
 worker.tab &lt;- xtabs(Freq ~ Worker + Super + Manage, data=WorkerSat)
 fourfold(worker.tab)
 mosaic(worker.tab, shade=TRUE)
+
 
 </code></pre>
 

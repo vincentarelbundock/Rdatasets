@@ -1,66 +1,62 @@
-.. container::
+====== ===============
+movies R Documentation
+====== ===============
 
-   .. container::
+movies
+------
 
-      ====== ===============
-      movies R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: movies
-         :name: movies
+A dataset with information about movies released in 2003.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset with information about movies released in 2003.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   movies
 
-      .. code:: R
+Format
+~~~~~~
 
-         movies
+A data frame with 140 observations on the following 5 variables.
 
-      .. rubric:: Format
-         :name: format
+movie
+   Title of the movie.
 
-      A data frame with 140 observations on the following 5 variables.
+genre
+   Genre of the movie.
 
-      movie
-         Title of the movie.
+score
+   Critics score of the movie on a 0 to 100 scale.
 
-      genre
-         Genre of the movie.
+rating
+   MPAA rating of the film.
 
-      score
-         Critics score of the movie on a 0 to 100 scale.
+box_office
+   Millions of dollars earned at the box office in the US and Canada.
 
-      rating
-         MPAA rating of the film.
+Source
+~~~~~~
 
-      box_office
-         Millions of dollars earned at the box office in the US and
-         Canada.
+`Investigating Statistical Concepts, Applications and
+Methods <http://www.rossmanchance.com/iscam2/data/movies03.txt>`__
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      `Investigating Statistical Concepts, Applications and
-      Methods <http://www.rossmanchance.com/iscam2/data/movies03.txt>`__
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   library(ggplot2)
 
-         library(ggplot2)
-
-         ggplot(movies, aes(score, box_office, color = genre)) +
-           geom_point() +
-           theme_minimal() +
-           labs(
-             title = "Does a critic score predict box office earnings?",
-             x = "Critic rating",
-             y = "Box office earnings (millions US$",
-             color = "Genre"
-           )
+   ggplot(movies, aes(score, box_office, color = genre)) +
+     geom_point() +
+     theme_minimal() +
+     labs(
+       title = "Does a critic score predict box office earnings?",
+       x = "Critic rating",
+       y = "Box office earnings (millions US$",
+       color = "Genre"
+     )

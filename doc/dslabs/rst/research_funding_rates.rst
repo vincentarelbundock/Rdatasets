@@ -1,68 +1,64 @@
-.. container::
+====================== ===============
+research_funding_rates R Documentation
+====================== ===============
 
-   .. container::
+Gender bias in research funding in the Netherlands
+--------------------------------------------------
 
-      ====================== ===============
-      research_funding_rates R Documentation
-      ====================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Gender bias in research funding in the Netherlands
-         :name: gender-bias-in-research-funding-in-the-netherlands
+Table S1 from paper title "Gender contributes to personal research
+funding success in The Netherlands"
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Table S1 from paper title "Gender contributes to personal research
-      funding success in The Netherlands"
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   research_funding_rates
 
-      .. code:: R
+Format
+~~~~~~
 
-         research_funding_rates
+An object of class ``"data.frame"``.
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      An object of class ``"data.frame"``.
+- discipline. Research area discipline.
 
-      .. rubric:: Details
-         :name: details
+- applications_total. Total applications.
 
-      -  discipline. Research area discipline.
+- applications_men. Total applications by men.
 
-      -  applications_total. Total applications.
+- applications_women. Total applications by women.
 
-      -  applications_men. Total applications by men.
+- awards_total. Total awards.
 
-      -  applications_women. Total applications by women.
+- awards_men. Total awards received by men.
 
-      -  awards_total. Total awards.
+- awards_women. Total awards received by women.
 
-      -  awards_men. Total awards received by men.
+- success_rates_total. Overall success rate.
 
-      -  awards_women. Total awards received by women.
+- success_rates_men. Success rate for men.
 
-      -  success_rates_total. Overall success rate.
+- success_rates_women. Success rate for women.
 
-      -  success_rates_men. Success rate for men.
+References
+~~~~~~~~~~
 
-      -  success_rates_women. Success rate for women.
+van der Lee R, Ellemers N. Gender contributes to personal research
+funding success in The Netherlands. Proc Natl Acad Sci U S A. 2015 Oct
+6;112(40):12349-53. doi: 10.1073/pnas.1510159112. Epub 2015 Sep 21.
+PMID: 26392544; PMCID: PMC4603485.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      van der Lee R, Ellemers N. Gender contributes to personal research
-      funding success in The Netherlands. Proc Natl Acad Sci U S A. 2015
-      Oct 6;112(40):12349-53. doi: 10.1073/pnas.1510159112. Epub 2015
-      Sep 21. PMID: 26392544; PMCID: PMC4603485.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         research_funding_rates
-         # The raw data for this table is available from
-         invisible(raw_data_research_funding_rates)
+   research_funding_rates
+   # The raw data for this table is available from
+   invisible(raw_data_research_funding_rates)

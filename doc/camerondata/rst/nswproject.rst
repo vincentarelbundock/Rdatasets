@@ -1,122 +1,117 @@
-.. container::
+========== ===============
+nswproject R Documentation
+========== ===============
 
-   .. container::
+Training and earnings
+---------------------
 
-      ========== ===============
-      nswproject R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Training and earnings
-         :name: training-and-earnings
+Data from the National Supported Work (NSW) demonstration project used
+by Lalonde (1986), and Dehejia and Wahba (1999, 2002). This sample has
+185 observations in the treatment group and 2490 in the control group.
+The treatment sample consists of males who received training during
+1976-1977. THe control group consists of male household heads under the
+age of 55 who are not retired, drawn from the PSID (Cameron and Trivedi,
+2005).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data from the National Supported Work (NSW) demonstration project
-      used by Lalonde (1986), and Dehejia and Wahba (1999, 2002). This
-      sample has 185 observations in the treatment group and 2490 in the
-      control group. The treatment sample consists of males who received
-      training during 1976-1977. THe control group consists of male
-      household heads under the age of 55 who are not retired, drawn
-      from the PSID (Cameron and Trivedi, 2005).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   nswproject
 
-      .. code:: R
+Format
+~~~~~~
 
-         nswproject
+A data frame with 2675 observations and 18 variables:
 
-      .. rubric:: Format
-         :name: format
+treat
+   = 1 if individual is in treatment group, = 0 if in control group
 
-      A data frame with 2675 observations and 18 variables:
+age
+   age in years
 
-      treat
-         = 1 if individual is in treatment group, = 0 if in control
-         group
+educ
+   education in years
 
-      age
-         age in years
+black
+   = 1 if black
 
-      educ
-         education in years
+hisp
+   = 1 if hispanic
 
-      black
-         = 1 if black
+marr
+   = 1 if married
 
-      hisp
-         = 1 if hispanic
+re74
+   real annual earnings in 1974 (pre-treatment), in 1982 usd
 
-      marr
-         = 1 if married
+re75
+   real annual earnings in 1975 (pre-treatment), in 1982 usd
 
-      re74
-         real annual earnings in 1974 (pre-treatment), in 1982 usd
+re78
+   real annual earnings in 1978 (post-treatment), in 1982 usd
 
-      re75
-         real annual earnings in 1975 (pre-treatment), in 1982 usd
+u74
+   = 1 if unemployed in 1974
 
-      re78
-         real annual earnings in 1978 (post-treatment), in 1982 usd
+u75
+   = 1 if unemployed in 1975
 
-      u74
-         = 1 if unemployed in 1974
+agesq
+   age squared
 
-      u75
-         = 1 if unemployed in 1975
+educsq
+   educ squared
 
-      agesq
-         age squared
+nodegree
+   = 1 if years of education < 12
 
-      educsq
-         educ squared
+re74sq
+   re74 squared
 
-      nodegree
-         = 1 if years of education < 12
+re75sq
+   re75 squared
 
-      re74sq
-         re74 squared
+u74black
+   interaction term u74 x black
 
-      re75sq
-         re75 squared
+u74hisp
+   interaction term u74 x hisp
 
-      u74black
-         interaction term u74 x black
+Section in Text
+~~~~~~~~~~~~~~~
 
-      u74hisp
-         interaction term u74 x hisp
+25.8 Treatment Evaluation Example: The Effect of Training on Earnings,
+pp. 889-95
 
-      .. rubric:: Section in Text
-         :name: section-in-text
+Source
+~~~~~~
 
-      25.8 Treatment Evaluation Example: The Effect of Training on
-      Earnings, pp. 889-95
+http://cameron.econ.ucdavis.edu/mmabook/mmadata.html
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      http://cameron.econ.ucdavis.edu/mmabook/mmadata.html
+Cameron, A. and Trivedi, P. (2005), "Microeconometrics: Methods and
+Applications," Cambridge University Press, New York.
 
-      .. rubric:: References
-         :name: references
+Dehejia R. and Wahba S. (1999), "Causal Effects in Nonexperimental
+Studies: Reevaluating the Evaluation of Training Programs," JASA,
+1053-1062.
 
-      Cameron, A. and Trivedi, P. (2005), "Microeconometrics: Methods
-      and Applications," Cambridge University Press, New York.
+Dehejia R. and Wahba S. (2002), "Propensity-score Matching Methods for
+Nonexperimental Causal Studies", ReStat, 151-161
 
-      Dehejia R. and Wahba S. (1999), "Causal Effects in Nonexperimental
-      Studies: Reevaluating the Evaluation of Training Programs," JASA,
-      1053-1062.
+Lalonde, R. (1986), "Evaluating the Econometric Evaluations of Training
+Programs with Experimental Data," AER, 604-620.
 
-      Dehejia R. and Wahba S. (2002), "Propensity-score Matching Methods
-      for Nonexperimental Causal Studies", ReStat, 151-161
+Examples
+~~~~~~~~
 
-      Lalonde, R. (1986), "Evaluating the Econometric Evaluations of
-      Training Programs with Experimental Data," AER, 604-620.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         summary(nswproject)
+   summary(nswproject)

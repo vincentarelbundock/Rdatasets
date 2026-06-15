@@ -1,33 +1,30 @@
-.. container::
+========== ===============
+debitcards R Documentation
+========== ===============
 
-   .. container::
+Retail debit card usage in Iceland.
+-----------------------------------
 
-      ========== ===============
-      debitcards R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Retail debit card usage in Iceland.
-         :name: retail-debit-card-usage-in-iceland.
+Monthly retail debit card usage in Iceland (million ISK). January 2000 -
+August 2013.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Monthly retail debit card usage in Iceland (million ISK). January
-      2000 - August 2013.
+Monthly time series of class ``ts``.
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      Monthly time series of class ``ts``.
+Statistics Iceland.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Statistics Iceland.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         autoplot(debitcards)
+   autoplot(debitcards)
