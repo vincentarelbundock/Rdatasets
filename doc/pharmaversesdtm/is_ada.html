@@ -1,0 +1,138 @@
+<!DOCTYPE html><html><head><title>R: Immunogenicity Specimen Assessments for ADA</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>is_ada</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Immunogenicity Specimen Assessments for ADA</h2>
+
+<h3>Description</h3>
+
+<p>A SDTM IS dataset containing relevant antidrug antibody assessment studies
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>is_ada
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 27 columns:
+</p>
+
+<dl>
+<dt>STUDYID</dt><dd><p>Study Identifier</p>
+</dd>
+<dt>DOMAIN</dt><dd><p>Domain Abbreviation</p>
+</dd>
+<dt>USUBJID</dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt>ISSEQ</dt><dd><p>Sequence Number</p>
+</dd>
+<dt>ISTESTCD</dt><dd><p>Immunogenicity Test/Exam Short Name</p>
+</dd>
+<dt>ISTEST</dt><dd><p>Immunogenicity Test or Examination Name</p>
+</dd>
+<dt>ISBDAGNT</dt><dd><p>Binding Agent</p>
+</dd>
+<dt>ISCAT</dt><dd><p>Category for Immunogenicity Test</p>
+</dd>
+<dt>ISORRES</dt><dd><p>Results or Findings in Original Units</p>
+</dd>
+<dt>ISORRESU</dt><dd><p>Original Units</p>
+</dd>
+<dt>ISSTRESC</dt><dd><p>Character Result/Finding in Std Format</p>
+</dd>
+<dt>ISSTRESN</dt><dd><p>Numeric Results/Findings in Std. Units</p>
+</dd>
+<dt>ISSTRESU</dt><dd><p>Standard Units</p>
+</dd>
+<dt>ISSTAT</dt><dd><p>Completion Status</p>
+</dd>
+<dt>ISREASND</dt><dd><p>Reason Not Done</p>
+</dd>
+<dt>ISNAM</dt><dd><p>Vendor Name</p>
+</dd>
+<dt>ISSPEC</dt><dd><p>Specimen Type</p>
+</dd>
+<dt>ISBLFL</dt><dd><p>Baseline Flag</p>
+</dd>
+<dt>ISLLOQ</dt><dd><p>Lower Limit of Quantitation</p>
+</dd>
+<dt>VISITNUM</dt><dd><p>Visit Number</p>
+</dd>
+<dt>VISIT</dt><dd><p>Visit Name</p>
+</dd>
+<dt>VISITDY</dt><dd><p>Planned Study Day of Visit</p>
+</dd>
+<dt>EPOCH</dt><dd><p>Epoch</p>
+</dd>
+<dt>ISDTC</dt><dd><p>Date/Time of Collection</p>
+</dd>
+<dt>ISDY</dt><dd><p>Study Day of Visit/Collection/Exam</p>
+</dd>
+<dt>ISTPT</dt><dd><p>Planned Time Point Name</p>
+</dd>
+<dt>ISTPTNUM</dt><dd><p>Planned Time Point Number</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Immunogenicity Specimen Assessments for ADA
+</p>
+<p>A SDTM IS dataset containing relevant antidrug antibody assessment studies
+</p>
+<p>Contains a set of 2 unique Test Short Names and Test Names: </p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+<strong>ISTESTCD</strong> </td><td style="text-align: left;"> <strong>ISTEST</strong> </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+ADA_BAB </td><td style="text-align: left;"> Binding Antidrug Antibody             </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+ADA_NAB </td><td style="text-align: left;"> Neutralizing Binding Antidrug Antibody
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Author(s)</h3>
+
+<p>Kristin Dahnert
+</p>
+
+
+<h3>Source</h3>
+
+<p>Generated dataset
+</p>
+
+</main>
+
+</div>
+</body></html>

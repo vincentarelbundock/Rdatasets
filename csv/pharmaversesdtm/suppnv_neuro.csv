@@ -1,0 +1,69 @@
+rownames,STUDYID,RDOMAIN,USUBJID,IDVAR,IDVARVAL,QNAM,QLABEL,QVAL,QORIG,QEVAL
+1,CDISCPILOT01,NV,01-701-1015,NVSEQ,2,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+2,CDISCPILOT01,NV,01-701-1015,NVSEQ,3,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+3,CDISCPILOT01,NV,01-701-1015,NVSEQ,5,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+4,CDISCPILOT01,NV,01-701-1015,NVSEQ,6,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+5,CDISCPILOT01,NV,01-701-1015,NVSEQ,7,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+6,CDISCPILOT01,NV,01-701-1015,NVSEQ,8,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+7,CDISCPILOT01,NV,01-701-1023,NVSEQ,2,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+8,CDISCPILOT01,NV,01-701-1023,NVSEQ,3,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+9,CDISCPILOT01,NV,01-701-1028,NVSEQ,2,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+10,CDISCPILOT01,NV,01-701-1028,NVSEQ,3,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+11,CDISCPILOT01,NV,01-701-1028,NVSEQ,5,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+12,CDISCPILOT01,NV,01-701-1028,NVSEQ,6,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+13,CDISCPILOT01,NV,01-701-1028,NVSEQ,7,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+14,CDISCPILOT01,NV,01-701-1028,NVSEQ,8,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+15,CDISCPILOT01,NV,01-701-1034,NVSEQ,2,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+16,CDISCPILOT01,NV,01-701-1034,NVSEQ,3,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+17,CDISCPILOT01,NV,01-701-1034,NVSEQ,5,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+18,CDISCPILOT01,NV,01-701-1034,NVSEQ,6,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+19,CDISCPILOT01,NV,01-701-1034,NVSEQ,7,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+20,CDISCPILOT01,NV,01-701-1034,NVSEQ,8,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+21,CDISCPILOT01,NV,01-701-1146,NVSEQ,2,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+22,CDISCPILOT01,NV,01-701-1146,NVSEQ,3,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+23,CDISCPILOT01,NV,01-701-1153,NVSEQ,2,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+24,CDISCPILOT01,NV,01-701-1153,NVSEQ,3,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+25,CDISCPILOT01,NV,01-701-1153,NVSEQ,5,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+26,CDISCPILOT01,NV,01-701-1153,NVSEQ,6,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+27,CDISCPILOT01,NV,01-701-1153,NVSEQ,7,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+28,CDISCPILOT01,NV,01-701-1153,NVSEQ,8,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+29,CDISCPILOT01,NV,01-701-1181,NVSEQ,2,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+30,CDISCPILOT01,NV,01-701-1181,NVSEQ,3,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+31,CDISCPILOT01,NV,01-701-1234,NVSEQ,2,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+32,CDISCPILOT01,NV,01-701-1234,NVSEQ,3,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+33,CDISCPILOT01,NV,01-701-1234,NVSEQ,5,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+34,CDISCPILOT01,NV,01-701-1234,NVSEQ,6,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+35,CDISCPILOT01,NV,01-701-1234,NVSEQ,7,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+36,CDISCPILOT01,NV,01-701-1234,NVSEQ,8,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+37,CDISCPILOT01,NV,01-701-1275,NVSEQ,2,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+38,CDISCPILOT01,NV,01-701-1275,NVSEQ,3,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+39,CDISCPILOT01,NV,01-701-1275,NVSEQ,5,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+40,CDISCPILOT01,NV,01-701-1275,NVSEQ,6,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+41,CDISCPILOT01,NV,01-701-1302,NVSEQ,2,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+42,CDISCPILOT01,NV,01-701-1302,NVSEQ,3,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+43,CDISCPILOT01,NV,01-701-1302,NVSEQ,5,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+44,CDISCPILOT01,NV,01-701-1302,NVSEQ,6,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+45,CDISCPILOT01,NV,01-701-1345,NVSEQ,2,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+46,CDISCPILOT01,NV,01-701-1345,NVSEQ,3,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+47,CDISCPILOT01,NV,01-701-1345,NVSEQ,5,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+48,CDISCPILOT01,NV,01-701-1345,NVSEQ,6,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+49,CDISCPILOT01,NV,01-701-1360,NVSEQ,2,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+50,CDISCPILOT01,NV,01-701-1360,NVSEQ,3,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+51,CDISCPILOT01,NV,01-701-1383,NVSEQ,2,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+52,CDISCPILOT01,NV,01-701-1383,NVSEQ,3,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+53,CDISCPILOT01,NV,01-701-1383,NVSEQ,5,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+54,CDISCPILOT01,NV,01-701-1383,NVSEQ,6,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+55,CDISCPILOT01,NV,01-701-1383,NVSEQ,7,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+56,CDISCPILOT01,NV,01-701-1383,NVSEQ,8,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+57,CDISCPILOT01,NV,01-701-1392,NVSEQ,2,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+58,CDISCPILOT01,NV,01-701-1392,NVSEQ,3,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+59,CDISCPILOT01,NV,01-701-1392,NVSEQ,5,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+60,CDISCPILOT01,NV,01-701-1392,NVSEQ,6,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+61,CDISCPILOT01,NV,01-701-1392,NVSEQ,7,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+62,CDISCPILOT01,NV,01-701-1392,NVSEQ,8,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+63,CDISCPILOT01,NV,01-714-1288,NVSEQ,2,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+64,CDISCPILOT01,NV,01-714-1288,NVSEQ,3,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+65,CDISCPILOT01,NV,01-714-1288,NVSEQ,5,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+66,CDISCPILOT01,NV,01-714-1288,NVSEQ,6,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN
+67,CDISCPILOT01,NV,01-714-1288,NVSEQ,7,REFREG,Reference Region,Whole Cerebellum,Assigned,STATISTICIAN
+68,CDISCPILOT01,NV,01-714-1288,NVSEQ,8,REFREG,Reference Region,Inferior Cerebellar Gray Matter,Assigned,STATISTICIAN

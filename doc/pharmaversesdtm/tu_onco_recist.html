@@ -1,0 +1,112 @@
+<!DOCTYPE html><html><head><title>R: Tumor Identification (RECIST 1.1) for Oncology</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>tu_onco_recist</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Tumor Identification (RECIST 1.1) for Oncology</h2>
+
+<h3>Description</h3>
+
+<p>A SDTM TU dataset using RECIST 1.1 intended for examples of ADaM dataset creation
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>tu_onco_recist
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 16 columns:
+</p>
+
+<dl>
+<dt>DOMAIN</dt><dd><p>Domain Abbreviation</p>
+</dd>
+<dt>STUDYID</dt><dd><p>Study Identifier</p>
+</dd>
+<dt>USUBJID</dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt>VISIT</dt><dd><p>Visit Name</p>
+</dd>
+<dt>VISITNUM</dt><dd><p>Visit Number</p>
+</dd>
+<dt>TULOC</dt><dd><p>Location of the Tumor/Lesion</p>
+</dd>
+<dt>TUTESTCD</dt><dd><p>Tumor/Lesion ID Short Name</p>
+</dd>
+<dt>TUTEST</dt><dd><p>Tumor/Lesion ID Test Name</p>
+</dd>
+<dt>TUORRES</dt><dd><p>Tumor/Lesion ID Result</p>
+</dd>
+<dt>TUSTRESC</dt><dd><p>Tumor/Lesion ID Result Std. Format</p>
+</dd>
+<dt>TUMETHOD</dt><dd><p>Method of Identification</p>
+</dd>
+<dt>TULNKID</dt><dd><p>Link ID</p>
+</dd>
+<dt>TUEVAL</dt><dd><p>Evaluator</p>
+</dd>
+<dt>TUEVALID</dt><dd><p>Evaluator Identifier</p>
+</dd>
+<dt>TUACPTFL</dt><dd><p>Accepted Record Flag</p>
+</dd>
+<dt>TUSEQ</dt><dd><p>Sequence Number</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Tumor Identification (RECIST 1.1) for Oncology
+</p>
+<p>A SDTM TU dataset using RECIST 1.1 intended for examples of ADaM dataset creation
+</p>
+<p>Contains a set of 1 unique Test Short Name and Test Name: </p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+<strong>TUTESTCD</strong> </td><td style="text-align: left;"> <strong>TUTEST</strong> </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+TUMIDENT </td><td style="text-align: left;"> Tumor Identification
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Author(s)</h3>
+
+<p>Stefan Bundfuss
+</p>
+
+
+<h3>Source</h3>
+
+<p>Generated dataset.
+</p>
+
+</main>
+
+</div>
+</body></html>

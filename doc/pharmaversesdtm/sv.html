@@ -1,0 +1,75 @@
+<!DOCTYPE html><html><head><title>R: Subject Visits</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>sv</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Subject Visits</h2>
+
+<h3>Description</h3>
+
+<p>A SDTM SV dataset from the CDISC pilot project with corrected duplicate observation
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>sv
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 8 columns:
+</p>
+
+<dl>
+<dt>STUDYID</dt><dd><p>Study Identifier</p>
+</dd>
+<dt>DOMAIN</dt><dd><p>Domain Abbreviation</p>
+</dd>
+<dt>USUBJID</dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt>VISITNUM</dt><dd><p>Visit Number</p>
+</dd>
+<dt>VISIT</dt><dd><p>Visit Name</p>
+</dd>
+<dt>VISITDY</dt><dd><p>Planned Study Day of Visit</p>
+</dd>
+<dt>SVSTDTC</dt><dd><p>Start Date/Time of Visit</p>
+</dd>
+<dt>SVENDTC</dt><dd><p>End Date/Time of Visit</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Subject Visits
+</p>
+<p>A SDTM SV dataset from the CDISC pilot project with corrected duplicate observation
+</p>
+
+
+<h3>Source</h3>
+
+<p>Constructed by admiralvaccine developers
+</p>
+
+</main>
+
+</div>
+</body></html>

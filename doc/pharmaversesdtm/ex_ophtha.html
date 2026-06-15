@@ -1,0 +1,97 @@
+<!DOCTYPE html><html><head><title>R: Exposure for Ophthalmology</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>ex_ophtha</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Exposure for Ophthalmology</h2>
+
+<h3>Description</h3>
+
+<p>An example Exposure SDTM dataset with ophthalmology-specific variables such as <code>EXLOC</code> and <code>EXLAT</code>
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>ex_ophtha
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 19 columns:
+</p>
+
+<dl>
+<dt>USUBJID</dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt>STUDYID</dt><dd><p>Study Identifier</p>
+</dd>
+<dt>DOMAIN</dt><dd><p>Domain Abbreviation</p>
+</dd>
+<dt>EXSEQ</dt><dd><p>Sequence Number</p>
+</dd>
+<dt>EXTRT</dt><dd><p>Name of Actual Treatment</p>
+</dd>
+<dt>EXDOSE</dt><dd><p>Dose per Administration</p>
+</dd>
+<dt>EXDOSU</dt><dd><p>Dose Units</p>
+</dd>
+<dt>EXDOSFRM</dt><dd><p>Dose Form</p>
+</dd>
+<dt>EXDOSFRQ</dt><dd><p>Dose Frequency per Interval</p>
+</dd>
+<dt>EXROUTE</dt><dd><p>Route of Administration</p>
+</dd>
+<dt>EXLOC</dt><dd><p>Location of Dose Administration</p>
+</dd>
+<dt>EXLAT</dt><dd><p>Laterality</p>
+</dd>
+<dt>VISITNUM</dt><dd><p>Visit Number</p>
+</dd>
+<dt>VISIT</dt><dd><p>Visit Name</p>
+</dd>
+<dt>VISITDY</dt><dd><p>Planned Study Day of Visit</p>
+</dd>
+<dt>EXSTDTC</dt><dd><p>Start Date/Time of Treatment</p>
+</dd>
+<dt>EXENDTC</dt><dd><p>End Date/Time of Treatment</p>
+</dd>
+<dt>EXSTDY</dt><dd><p>Study Day of Start of Treatment</p>
+</dd>
+<dt>EXENDY</dt><dd><p>Study Day of End of Treatment</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Exposure for Ophthalmology
+</p>
+<p>An example Exposure SDTM dataset with ophthalmology-specific variables such as <code>EXLOC</code> and <code>EXLAT</code>
+</p>
+
+
+<h3>Source</h3>
+
+<p>Constructed using ex from the pharmaversesdtm package
+</p>
+
+</main>
+
+</div>
+</body></html>

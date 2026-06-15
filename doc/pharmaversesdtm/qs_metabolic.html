@@ -1,0 +1,190 @@
+<!DOCTYPE html><html><head><title>R: Questionnaire Dataset-metabolic</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>qs_metabolic</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Questionnaire Dataset-metabolic</h2>
+
+<h3>Description</h3>
+
+<p>A SDTM QS dataset containing COEQ data (Control of Eating Questionnaire) for metabolic studies. Note that University of Leeds are the copyright holders of the Control of Eating Questionnaire (CoEQ) and the test data included within pharmaversesdtm as well as the ADCOEQ code are for not-for-profit use only within admiralmetabolic and pharmaverse-related examples/documentation. Any persons or companies wanting to use the CoEQ should request a license to do so from the following <a href="https://licensing.leeds.ac.uk/product/control-of-eating-questionnaire-coeq">link</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>qs_metabolic
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 18 columns:
+</p>
+
+<dl>
+<dt>STUDYID</dt><dd><p>Study Identifier</p>
+</dd>
+<dt>USUBJID</dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt>DOMAIN</dt><dd><p>Domain Abbreviation</p>
+</dd>
+<dt>VISIT</dt><dd><p>Visit Name</p>
+</dd>
+<dt>VISITNUM</dt><dd><p>Visit Number</p>
+</dd>
+<dt>VISITDY</dt><dd><p>Planned Study Day of Visit</p>
+</dd>
+<dt>QSBLFL</dt><dd><p>Baseline Flag</p>
+</dd>
+<dt>QSDTC</dt><dd><p>Date/Time of Finding</p>
+</dd>
+<dt>QSDY</dt><dd><p>Study Day of Finding</p>
+</dd>
+<dt>QSCAT</dt><dd><p>Category for Questionnaire</p>
+</dd>
+<dt>QSTEST</dt><dd><p>Questionnaire Test Name</p>
+</dd>
+<dt>QSTESTCD</dt><dd><p>Questionnaire Test Short Name</p>
+</dd>
+<dt>QSORRES</dt><dd><p>Result or Finding in Original Units</p>
+</dd>
+<dt>QSORRESU</dt><dd><p>Original Units</p>
+</dd>
+<dt>QSSTRESC</dt><dd><p>Character Result/Finding in Std Format</p>
+</dd>
+<dt>QSSTRESN</dt><dd><p>Numeric Result/Finding in Standard Units</p>
+</dd>
+<dt>QSSTRESU</dt><dd><p>Standard Units</p>
+</dd>
+<dt>QSSEQ</dt><dd><p>Sequence Number</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Questionnaire Dataset-metabolic
+</p>
+<p>A SDTM QS dataset containing COEQ data (Control of Eating Questionnaire) for metabolic studies. Note that University of Leeds are the copyright holders of the Control of Eating Questionnaire (CoEQ) and the test data included within pharmaversesdtm as well as the ADCOEQ code are for not-for-profit use only within admiralmetabolic and pharmaverse-related examples/documentation. Any persons or companies wanting to use the CoEQ should request a license to do so from the following <a href="https://licensing.leeds.ac.uk/product/control-of-eating-questionnaire-coeq">link</a>.
+</p>
+<p>Contains a set of 21 unique Test Short Names and Test Names: </p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+<strong>QSTESTCD</strong> </td><td style="text-align: left;"> <strong>QSTEST</strong> </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+COEQ01 </td><td style="text-align: left;"> How hungry have you felt?                                                   </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+COEQ02 </td><td style="text-align: left;"> How full have you felt?                                                     </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+COEQ03 </td><td style="text-align: left;"> How strong was your desire to eat sweet foods?                              </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+COEQ04 </td><td style="text-align: left;"> How strong was your desire to eat savoury foods?                            </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+COEQ05 </td><td style="text-align: left;"> How happy have you felt?                                                    </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+COEQ06 </td><td style="text-align: left;"> How anxious have you felt?                                                  </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+COEQ07 </td><td style="text-align: left;"> How alert have you felt?                                                    </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+COEQ08 </td><td style="text-align: left;"> How contented have you felt?                                                </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+COEQ09 </td><td style="text-align: left;"> During the last 7 days how often have you had food cravings?                </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+COEQ10 </td><td style="text-align: left;"> How strong have any food cravings been?                                     </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+COEQ11 </td><td style="text-align: left;"> How difficult has it been to resist any food cravings?                      </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+COEQ12 </td><td style="text-align: left;"> How often have you eaten in response to food cravings?                      </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+COEQ13 </td><td style="text-align: left;"> Chocolate or chocolate flavoured foods                                      </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+COEQ14 </td><td style="text-align: left;"> Other sweet foods (cakes, pastries, biscuits, etc)                          </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+COEQ15 </td><td style="text-align: left;"> Fruit or fruit juice                                                        </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+COEQ16 </td><td style="text-align: left;"> Dairy foods (cheese, yoghurts, milk, etc)                                   </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+COEQ17 </td><td style="text-align: left;"> Starchy foods (bread, rice, pasta, etc)                                     </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+COEQ18 </td><td style="text-align: left;"> Savoury foods (french fries, crisps, burgers, pizza, etc)                   </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+COEQ19 </td><td style="text-align: left;"> Generally, how difficult has it been to control your eating?                </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+COEQ20 </td><td style="text-align: left;"> Which one food makes it most difficult for you to control eating?           </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+COEQ21 </td><td style="text-align: left;"> How difficult has it been to resist eating this food during the last 7 days?
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>Constructed by admiralmetabolic developers
+</p>
+
+</main>
+
+</div>
+</body></html>

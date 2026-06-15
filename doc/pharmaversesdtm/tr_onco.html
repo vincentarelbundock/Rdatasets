@@ -1,0 +1,144 @@
+<!DOCTYPE html><html><head><title>R: Tumor Results for Oncology</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>tr_onco</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Tumor Results for Oncology</h2>
+
+<h3>Description</h3>
+
+<p>A SDTM TR dataset simulated by Gopi Vegesna
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>tr_onco
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 24 columns:
+</p>
+
+<dl>
+<dt>STUDYID</dt><dd><p>Study Identifier</p>
+</dd>
+<dt>DOMAIN</dt><dd><p>Domain Abbreviation</p>
+</dd>
+<dt>USUBJID</dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt>TRSEQ</dt><dd><p>Sequence Number</p>
+</dd>
+<dt>TRGRPID</dt><dd><p>Group ID</p>
+</dd>
+<dt>TRLNKGRP</dt><dd><p>Link Group</p>
+</dd>
+<dt>TRLNKID</dt><dd><p>Link ID</p>
+</dd>
+<dt>TRTESTCD</dt><dd><p>Tumor Assessment Short Name</p>
+</dd>
+<dt>TRTEST</dt><dd><p>Tumor Assessment Test Name</p>
+</dd>
+<dt>TRORRES</dt><dd><p>Result or Finding in Original Units</p>
+</dd>
+<dt>TRORRESU</dt><dd><p>Original Units</p>
+</dd>
+<dt>TRSTRESC</dt><dd><p>Character Result/Finding in Std Format</p>
+</dd>
+<dt>TRSTRESN</dt><dd><p>Numeric Result/Finding in Standard Units</p>
+</dd>
+<dt>TRSTRESU</dt><dd><p>Standard Units</p>
+</dd>
+<dt>TRSTAT</dt><dd><p>Completion Status</p>
+</dd>
+<dt>TRREASND</dt><dd><p>Reason Tumor Measurement Not Performed</p>
+</dd>
+<dt>TRMETHOD</dt><dd><p>Method used to Identify the Tumor</p>
+</dd>
+<dt>TREVAL</dt><dd><p>Evaluator</p>
+</dd>
+<dt>TREVALID</dt><dd><p>Evaluator Identifier</p>
+</dd>
+<dt>TRACPTFL</dt><dd><p>Accepted Record Flag</p>
+</dd>
+<dt>VISITNUM</dt><dd><p>Visit Number</p>
+</dd>
+<dt>VISIT</dt><dd><p>Visit Name</p>
+</dd>
+<dt>TRDTC</dt><dd><p>Date/Time of Tumor Measurement</p>
+</dd>
+<dt>TRDY</dt><dd><p>Study Day of Tumor Measurement</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Tumor Results for Oncology
+</p>
+<p>A SDTM TR dataset simulated by Gopi Vegesna
+</p>
+<p>Contains a set of 5 unique Test Short Names and Test Names: </p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+<strong>TRTESTCD</strong> </td><td style="text-align: left;"> <strong>TRTEST</strong> </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+DIAMETER </td><td style="text-align: left;"> Diameter             </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+LDIAM    </td><td style="text-align: left;"> Longest Diameter     </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+LPERP    </td><td style="text-align: left;"> Longest Perpendicular</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+SUMDIAM  </td><td style="text-align: left;"> Sum of Diameter      </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+TUMSTATE </td><td style="text-align: left;"> Tumor State
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Author(s)</h3>
+
+<p>Gopi Vegesna
+</p>
+
+
+<h3>Source</h3>
+
+<p>Generated dataset.
+</p>
+
+</main>
+
+</div>
+</body></html>

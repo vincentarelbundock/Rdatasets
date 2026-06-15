@@ -1,0 +1,45 @@
+rownames,termchar,scope,smq_name,smq_id,version,termvar
+1,Achromotrichia congenital,narrow,Pregnancy and neonatal topics (SMQ),20000185,20.1,AEDECOD
+2,Craniosynostosis,narrow,Pregnancy and neonatal topics (SMQ),20000185,20.1,AEDECOD
+3,Hypophosphatasia,narrow,Pregnancy and neonatal topics (SMQ),20000185,20.1,AEDECOD
+4,Congenital pyelocaliectasis,narrow,Pregnancy and neonatal topics (SMQ),20000185,20.1,AEDECOD
+5,Uterine contractions during pregnancy,narrow,Pregnancy and neonatal topics (SMQ),20000185,20.1,AEDECOD
+6,Uterine contractions during pregnancy,broad,Pregnancy and neonatal topics (SMQ),20000185,20.1,AEDECOD
+7,Ductus arteriosus premature closure,narrow,Pregnancy and neonatal topics (SMQ),20000185,20.1,AEDECOD
+8,Pseudotruncus arteriosus,narrow,Pregnancy and neonatal topics (SMQ),20000185,20.1,AEDECOD
+9,Lipomeningocele,narrow,Pregnancy and neonatal topics (SMQ),20000185,20.1,AEDECOD
+10,Macrocephaly,narrow,Pregnancy and neonatal topics (SMQ),20000185,20.1,AEDECOD
+11,Carnitine palmitoyltransferase deficiency,narrow,Pregnancy and neonatal topics (SMQ),20000185,20.1,AEDECOD
+12,Congenital labia pudendi adhesions,narrow,Pregnancy and neonatal topics (SMQ),20000185,20.1,AEDECOD
+13,Beckwith-Wiedemann syndrome,narrow,Pregnancy and neonatal topics (SMQ),20000185,20.1,AEDECOD
+14,Wolf-Hirschhorn syndrome,narrow,Pregnancy and neonatal topics (SMQ),20000185,20.1,AEDECOD
+15,Holt-Oram syndrome,narrow,Pregnancy and neonatal topics (SMQ),20000185,20.1,AEDECOD
+16,Langer-Giedion syndrome,narrow,Pregnancy and neonatal topics (SMQ),20000185,20.1,AEDECOD
+17,Congenital scoliosis,narrow,Pregnancy and neonatal topics (SMQ),20000185,20.1,AEDECOD
+18,Exophthalmos congenital,narrow,Pregnancy and neonatal topics (SMQ),20000185,20.1,AEDECOD
+19,Congenital pulmonary hypertension,narrow,Pregnancy and neonatal topics (SMQ),20000185,20.1,AEDECOD
+20,Retinopathy congenital,narrow,Pregnancy and neonatal topics (SMQ),20000185,20.1,AEDECOD
+21,Congenital acrochordon,narrow,Pregnancy and neonatal topics (SMQ),20000185,20.1,AEDECOD
+22,Bartter's syndrome,narrow,Pregnancy and neonatal topics (SMQ),20000185,20.1,AEDECOD
+23,Bile duct cancer recurrent,narrow,Biliary neoplasms (SMQ),20000121,20.1,AEDECOD
+24,Bile duct cancer recurrent,broad,Biliary neoplasms (SMQ),20000121,20.1,AEDECOD
+25,Bile duct squamous cell carcinoma,narrow,Biliary neoplasms (SMQ),20000121,20.1,AEDECOD
+26,Bile duct squamous cell carcinoma,broad,Biliary neoplasms (SMQ),20000121,20.1,AEDECOD
+27,Biliary neoplasm,narrow,Biliary neoplasms (SMQ),20000121,20.1,AEDECOD
+28,Biliary neoplasm,broad,Biliary neoplasms (SMQ),20000121,20.1,AEDECOD
+29,Cholangioadenoma,narrow,Biliary neoplasms (SMQ),20000121,20.1,AEDECOD
+30,Cholangioadenoma,broad,Biliary neoplasms (SMQ),20000121,20.1,AEDECOD
+31,Cholangiocarcinoma,narrow,Biliary neoplasms (SMQ),20000121,20.1,AEDECOD
+32,Cholangiocarcinoma,broad,Biliary neoplasms (SMQ),20000121,20.1,AEDECOD
+33,Choledochal cyst,narrow,Biliary neoplasms (SMQ),20000121,20.1,AEDECOD
+34,Choledochal cyst,broad,Biliary neoplasms (SMQ),20000121,20.1,AEDECOD
+35,Gallbladder cancer,narrow,Biliary neoplasms (SMQ),20000121,20.1,AEDECOD
+36,Gallbladder cancer,broad,Biliary neoplasms (SMQ),20000121,20.1,AEDECOD
+37,Gallbladder cancer recurrent,narrow,Biliary neoplasms (SMQ),20000121,20.1,AEDECOD
+38,Gallbladder cancer recurrent,broad,Biliary neoplasms (SMQ),20000121,20.1,AEDECOD
+39,Malignant neoplasm of ampulla of Vater,narrow,Biliary neoplasms (SMQ),20000121,20.1,AEDECOD
+40,Malignant neoplasm of ampulla of Vater,broad,Biliary neoplasms (SMQ),20000121,20.1,AEDECOD
+41,Mixed hepatocellular cholangiocarcinoma,narrow,Biliary neoplasms (SMQ),20000121,20.1,AEDECOD
+42,Mixed hepatocellular cholangiocarcinoma,broad,Biliary neoplasms (SMQ),20000121,20.1,AEDECOD
+43,Biliary adenoma,narrow,Biliary neoplasms (SMQ),20000121,20.1,AEDECOD
+44,Biliary adenoma,broad,Biliary neoplasms (SMQ),20000121,20.1,AEDECOD

@@ -1,0 +1,208 @@
+<!DOCTYPE html><html><head><title>R: Population Pharmacokinetic</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>adppk</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Population Pharmacokinetic</h2>
+
+<h3>Description</h3>
+
+<p>Population Pharmacokinetic
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>adppk
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 61 columns:
+</p>
+
+<dl>
+<dt> PROJID </dt><dd><p>Project Identifier</p>
+</dd>
+<dt> PROJIDN </dt><dd><p>Project Identifier (N)</p>
+</dd>
+<dt> STUDYID </dt><dd><p>Study Identifier</p>
+</dd>
+<dt> STUDYIDN </dt><dd><p>Study Identifier (N)</p>
+</dd>
+<dt> USUBJID </dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt> USUBJIDN </dt><dd><p>Unique Subject Identifier (N)</p>
+</dd>
+<dt> SUBJID </dt><dd><p>Subject Identifier for the Study</p>
+</dd>
+<dt> SUBJIDN </dt><dd><p>Subject Identifier for the Study (N)</p>
+</dd>
+<dt> SITEID </dt><dd><p>Study Site Identifier</p>
+</dd>
+<dt> SITEIDN </dt><dd><p>Study Site Identifier (N)</p>
+</dd>
+<dt> RECSEQ </dt><dd><p>Record Sequence</p>
+</dd>
+<dt> AFRLT </dt><dd><p>Act. Rel. Time from Analyte First Dose</p>
+</dd>
+<dt> APRLT </dt><dd><p>Actual Rel Time from Previous Dose</p>
+</dd>
+<dt> NFRLT </dt><dd><p>Nom. Rel. Time from Analyte First Dose</p>
+</dd>
+<dt> NPRLT </dt><dd><p>Nominal Rel Time from Previous Dose</p>
+</dd>
+<dt> EVID </dt><dd><p>Event ID</p>
+</dd>
+<dt> CMT </dt><dd><p>Compartment</p>
+</dd>
+<dt> DV </dt><dd><p>Dependent Variable Result</p>
+</dd>
+<dt> PARAMCD </dt><dd><p>Parameter Code</p>
+</dd>
+<dt> PARAM </dt><dd><p>Parameter</p>
+</dd>
+<dt> PARAMN </dt><dd><p>Parameter (N)</p>
+</dd>
+<dt> ASEQ </dt><dd><p>Analysis Sequence Number</p>
+</dd>
+<dt> AVAL </dt><dd><p>Analysis Value</p>
+</dd>
+<dt> AVALU </dt><dd><p>Analysis Value Unit</p>
+</dd>
+<dt> MDV </dt><dd><p>Missing Dependent Variable Result</p>
+</dd>
+<dt> ALLOQ </dt><dd><p>Analysis Lower Limit of Quantitation</p>
+</dd>
+<dt> BLQFL </dt><dd><p>Below Lower Limit of Quant Flag</p>
+</dd>
+<dt> BLQFN </dt><dd><p>Below Lower Limit of Quant Flag (N)</p>
+</dd>
+<dt> AMT </dt><dd><p>Actual Amount of Dose Received (unit)</p>
+</dd>
+<dt> DOSEA </dt><dd><p>Actual Treatment Dose</p>
+</dd>
+<dt> II </dt><dd><p>Dosing Interval (unit)</p>
+</dd>
+<dt> SS </dt><dd><p>Steady State</p>
+</dd>
+<dt> FORM </dt><dd><p>Drug Formulation</p>
+</dd>
+<dt> FORMN </dt><dd><p>Drug Formulation (N)</p>
+</dd>
+<dt> ROUTE </dt><dd><p>Route of Administration</p>
+</dd>
+<dt> ROUTEN </dt><dd><p>Route of Administration (N)</p>
+</dd>
+<dt> COHORT </dt><dd><p>Cohort Subject Enrolled Into</p>
+</dd>
+<dt> COHORTC </dt><dd><p>Description of Planned Arm</p>
+</dd>
+<dt> UDTC </dt><dd><p>Date/Time</p>
+</dd>
+<dt> WTBL </dt><dd><p>Numeric Result/Finding in Standard Units</p>
+</dd>
+<dt> HTBL </dt><dd><p>Numeric Result/Finding in Standard Units</p>
+</dd>
+<dt> BMIBL </dt><dd><p>Baseline Body Mass Index (kg/m2)</p>
+</dd>
+<dt> BSABL </dt><dd><p>Numeric Result/Finding in Standard Units</p>
+</dd>
+<dt> AGE </dt><dd><p>Age</p>
+</dd>
+<dt> SEX </dt><dd><p>Sex</p>
+</dd>
+<dt> SEXN </dt><dd><p>Sex (N)</p>
+</dd>
+<dt> RACE </dt><dd><p>Race</p>
+</dd>
+<dt> RACEN </dt><dd><p>Race (N)</p>
+</dd>
+<dt> ETHNIC </dt><dd><p>Ethnicity</p>
+</dd>
+<dt> ETHNICN </dt><dd><p>Ethnicity (N)</p>
+</dd>
+<dt> COUNTRY </dt><dd><p>Country</p>
+</dd>
+<dt> COUNTRYL </dt><dd><p>Country Name</p>
+</dd>
+<dt> COUNTRYN </dt><dd><p>Country (N)</p>
+</dd>
+<dt> CREATBL </dt><dd><p>Numeric Result/Finding in Standard Units</p>
+</dd>
+<dt> CRCLBL </dt><dd><p>Baseline Creatinine Clearance</p>
+</dd>
+<dt> EGFRBL </dt><dd><p>Age</p>
+</dd>
+<dt> TBILBL </dt><dd><p>Numeric Result/Finding in Standard Units</p>
+</dd>
+<dt> ASTBL </dt><dd><p>Numeric Result/Finding in Standard Units</p>
+</dd>
+<dt> ALTBL </dt><dd><p>Numeric Result/Finding in Standard Units</p>
+</dd>
+<dt> DOSEP </dt><dd><p>Planned Treatment Dose</p>
+</dd>
+<dt> DVL </dt><dd><p>Log DV</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Contains a set of 2 unique Parameter Codes and Parameters: </p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+<strong>PARAMCD</strong> </td><td style="text-align: left;"> <strong>PARAM</strong> </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+DOSE </td><td style="text-align: left;"> Xanomeline Patch Dose                      </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+XAN  </td><td style="text-align: left;"> Pharmacokinetic concentration of Xanomeline
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>Generated from admiral package (template ad_adppk.R).
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data("adppk")
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

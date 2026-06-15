@@ -1,0 +1,178 @@
+<!DOCTYPE html><html><head><title>R: Tau PET Scan Analysis Dataset</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>adtpet_neuro</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Tau PET Scan Analysis Dataset</h2>
+
+<h3>Description</h3>
+
+<p>Tau PET Scan Analysis Dataset
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>adtpet_neuro
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 46 columns:
+</p>
+
+<dl>
+<dt> STUDYID </dt><dd><p>Study Identifier</p>
+</dd>
+<dt> USUBJID </dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt> DOMAIN </dt><dd><p>Domain Abbreviation</p>
+</dd>
+<dt> ASEQ </dt><dd><p>Analysis Sequence Number</p>
+</dd>
+<dt> TRT01P </dt><dd><p>Planned Treatment for Period 01</p>
+</dd>
+<dt> TRT01A </dt><dd><p>Actual Treatment for Period 01</p>
+</dd>
+<dt> TRTSDT </dt><dd><p>Date of First Exposure to Treatment</p>
+</dd>
+<dt> TRTEDT </dt><dd><p>Date of Last Exposure to Treatment</p>
+</dd>
+<dt> ADT </dt><dd><p>Analysis Date</p>
+</dd>
+<dt> ADY </dt><dd><p>Analysis Relative Day</p>
+</dd>
+<dt> AVISIT </dt><dd><p>Analysis Visit</p>
+</dd>
+<dt> AVISITN </dt><dd><p>Analysis Visit (N)</p>
+</dd>
+<dt> PARAM </dt><dd><p>Parameter</p>
+</dd>
+<dt> PARAMCD </dt><dd><p>Parameter Code</p>
+</dd>
+<dt> AVAL </dt><dd><p>Analysis Value</p>
+</dd>
+<dt> AVALC </dt><dd><p>Analysis Value (C)</p>
+</dd>
+<dt> BASE </dt><dd><p>Baseline Value</p>
+</dd>
+<dt> BASEC </dt><dd><p>Baseline Value (C)</p>
+</dd>
+<dt> BASETYPE </dt><dd><p>Baseline Type</p>
+</dd>
+<dt> CHG </dt><dd><p>Change from Baseline</p>
+</dd>
+<dt> PCHG </dt><dd><p>Percent Change from Baseline</p>
+</dd>
+<dt> ABLFL </dt><dd><p>Baseline Record Flag</p>
+</dd>
+<dt> ANL01FL </dt><dd><p>Analysis Flag 01</p>
+</dd>
+<dt> ANL02FL </dt><dd><p>Analysis Flag 02</p>
+</dd>
+<dt> ONTRTFL </dt><dd><p>On Treatment Record Flag</p>
+</dd>
+<dt> NVSEQ </dt><dd><p>Sequence Number</p>
+</dd>
+<dt> NVLNKID </dt><dd><p>Link ID</p>
+</dd>
+<dt> NVTESTCD </dt><dd><p>Short Name of Nervous System Test</p>
+</dd>
+<dt> NVTEST </dt><dd><p>Name of Nervous System Test</p>
+</dd>
+<dt> NVCAT </dt><dd><p>Category for Nervous System Test</p>
+</dd>
+<dt> NVLOC </dt><dd><p>Location Used for the Measurement</p>
+</dd>
+<dt> NVNAM </dt><dd><p>Vendor Name</p>
+</dd>
+<dt> NVORRES </dt><dd><p>Result or Finding in Original Units</p>
+</dd>
+<dt> NVORRESU </dt><dd><p>Original Units</p>
+</dd>
+<dt> NVSTRESC </dt><dd><p>Character Result/Finding in Std Format</p>
+</dd>
+<dt> NVSTRESN </dt><dd><p>Numeric Result/Finding in Standard Units</p>
+</dd>
+<dt> NVSTRESU </dt><dd><p>Standard Units</p>
+</dd>
+<dt> NVMETHOD </dt><dd><p>Method of Test or Examination</p>
+</dd>
+<dt> NVLOBXFL </dt><dd><p>Last Observation Before Exposure Flag</p>
+</dd>
+<dt> REFREG </dt><dd><p>Reference Region</p>
+</dd>
+<dt> AGTRT </dt><dd><p>Reported Agent Name</p>
+</dd>
+<dt> AGCAT </dt><dd><p>Category for Agent</p>
+</dd>
+<dt> VISITNUM </dt><dd><p>Visit Number</p>
+</dd>
+<dt> VISIT </dt><dd><p>Visit Name</p>
+</dd>
+<dt> NVDTC </dt><dd><p>Date/Time of Collection</p>
+</dd>
+<dt> NVDY </dt><dd><p>Study Day of Visit/Collection/Exam</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Contains a set of 2 unique Parameter Codes and Parameters: </p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+<strong>PARAMCD</strong> </td><td style="text-align: left;"> <strong>PARAM</strong> </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+SUVRAFTP </td><td style="text-align: left;"> AVID FTP Standard Uptake Ratio Neocortical Composite Inferior Cerebellar Gray Matter    </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+SUVRBFTP </td><td style="text-align: left;"> BERKELEY FTP Standard Uptake Ratio Neocortical Composite Inferior Cerebellar Gray Matter
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>Generated from admiralneuro package (template ad_adtpet.R).
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data("adtpet_neuro")
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

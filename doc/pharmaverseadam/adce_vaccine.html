@@ -1,0 +1,175 @@
+<!DOCTYPE html><html><head><title>R: Clinical Events Analysis for Vaccine</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>adce_vaccine</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Clinical Events Analysis for Vaccine</h2>
+
+<h3>Description</h3>
+
+<p>Clinical Events Analysis for Vaccine
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>adce_vaccine
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 56 columns:
+</p>
+
+<dl>
+<dt> STUDYID </dt><dd><p>Study Identifier</p>
+</dd>
+<dt> USUBJID </dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt> SUBJID </dt><dd><p>Subject Identifier for the Study</p>
+</dd>
+<dt> SITEID </dt><dd><p>Study Site Identifier</p>
+</dd>
+<dt> COUNTRY </dt><dd><p>Country</p>
+</dd>
+<dt> DOMAIN </dt><dd><p>Domain Abbreviation</p>
+</dd>
+<dt> ASEQ </dt><dd><p>Analysis Sequence Number</p>
+</dd>
+<dt> AGE </dt><dd><p>Age</p>
+</dd>
+<dt> AGEU </dt><dd><p>Age Units</p>
+</dd>
+<dt> SEX </dt><dd><p>Sex</p>
+</dd>
+<dt> RACE </dt><dd><p>Race</p>
+</dd>
+<dt> ETHNIC </dt><dd><p>Ethnicity</p>
+</dd>
+<dt> TRT01P </dt><dd><p>Planned Treatment for Period 01</p>
+</dd>
+<dt> TRT01A </dt><dd><p>Actual Treatment for Period 01</p>
+</dd>
+<dt> TRTSDT </dt><dd><p>Date of First Exposure to Treatment</p>
+</dd>
+<dt> TRTEDT </dt><dd><p>Date of Last Exposure to Treatment</p>
+</dd>
+<dt> APERSDT </dt><dd><p>Period Start Date</p>
+</dd>
+<dt> APEREDT </dt><dd><p>Period End Date</p>
+</dd>
+<dt> APERSTDY </dt><dd><p>Analysis Sub-period Start Relative Day</p>
+</dd>
+<dt> CESEQ </dt><dd><p>Sequence Number</p>
+</dd>
+<dt> CETERM </dt><dd><p>Reported Term for the Clinical Event</p>
+</dd>
+<dt> CEDECOD </dt><dd><p>Dictionary-Derived Term</p>
+</dd>
+<dt> CECAT </dt><dd><p>Category for the Clinical Event</p>
+</dd>
+<dt> CESCAT </dt><dd><p>Subcategory for the Clinical Event</p>
+</dd>
+<dt> CESTDTC </dt><dd><p>Start Date/Time of Clinical Event</p>
+</dd>
+<dt> ASTDT </dt><dd><p>Analysis Start Date</p>
+</dd>
+<dt> CEENDTC </dt><dd><p>End Date/Time of Clinical Event</p>
+</dd>
+<dt> AENDT </dt><dd><p>Analysis End Date</p>
+</dd>
+<dt> ASTDY </dt><dd><p>Analysis Start Relative Day</p>
+</dd>
+<dt> AENDY </dt><dd><p>Analysis End Relative Day</p>
+</dd>
+<dt> ADURN </dt><dd><p>Analysis Duration (N)</p>
+</dd>
+<dt> ADURU </dt><dd><p>Analysis Duration Units</p>
+</dd>
+<dt> CEDUR </dt><dd><p>Duration of Clinical Event</p>
+</dd>
+<dt> APERIOD </dt><dd><p>Period</p>
+</dd>
+<dt> CEOCCUR </dt><dd><p>Clinical Event Occurrence</p>
+</dd>
+<dt> CEPRESP </dt><dd><p>Clinical Event Pre-specified</p>
+</dd>
+<dt> AOCC01FL </dt><dd><p>Event Occurrence Flag</p>
+</dd>
+<dt> ASEV </dt><dd><p>Analysis Severity/Intensity</p>
+</dd>
+<dt> ASEVN </dt><dd><p>Analysis Severity/Intensity (N)</p>
+</dd>
+<dt> AREL </dt><dd><p>Analysis Causality</p>
+</dd>
+<dt> CELNKID </dt><dd><p>Link ID</p>
+</dd>
+<dt> CELNKGRP </dt><dd><p>Link Group ID</p>
+</dd>
+<dt> CELAT </dt><dd><p>Laterality</p>
+</dd>
+<dt> CELOC </dt><dd><p>Location of Event</p>
+</dd>
+<dt> CESEV </dt><dd><p>Severity/Intensity</p>
+</dd>
+<dt> CEREL </dt><dd><p>Causality</p>
+</dd>
+<dt> CEOUT </dt><dd><p>Outcome of Event</p>
+</dd>
+<dt> EPOCH </dt><dd><p>Epoch</p>
+</dd>
+<dt> CEDTC </dt><dd><p>Date/Time of Event Collection</p>
+</dd>
+<dt> CETPT </dt><dd><p>Planned Time Point Name</p>
+</dd>
+<dt> CETPTNUM </dt><dd><p>Planned Time Point Number</p>
+</dd>
+<dt> CETPTREF </dt><dd><p>Time Point Reference</p>
+</dd>
+<dt> CERFTDTC </dt><dd><p>Date/Time of Reference Time Point</p>
+</dd>
+<dt> CEEVINTX </dt><dd><p>Evaluation Interval Text</p>
+</dd>
+<dt> CESTAT </dt><dd><p>Completion Status</p>
+</dd>
+<dt> CEREASND </dt><dd><p>Reason Clinical Event Not Collected</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Generated from admiralvaccine package (template ad_adce.R).
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data("adce_vaccine")
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

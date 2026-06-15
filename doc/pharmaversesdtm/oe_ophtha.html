@@ -1,0 +1,142 @@
+<!DOCTYPE html><html><head><title>R: Ophthalmic Examinations for Ophthalmology</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>oe_ophtha</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Ophthalmic Examinations for Ophthalmology</h2>
+
+<h3>Description</h3>
+
+<p>A SDTM OE dataset simulated by Ophthalmology team
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>oe_ophtha
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 25 columns:
+</p>
+
+<dl>
+<dt>STUDYID</dt><dd><p>Study Identifier</p>
+</dd>
+<dt>DOMAIN</dt><dd><p>Domain Abbreviation</p>
+</dd>
+<dt>USUBJID</dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt>OESEQ</dt><dd><p>Sequence Number</p>
+</dd>
+<dt>OECAT</dt><dd><p>Category for Ophthalmic Test or Exam</p>
+</dd>
+<dt>OESCAT</dt><dd><p>Subcategory for Ophthalmic Test or Exam</p>
+</dd>
+<dt>OEDTC</dt><dd><p>Date/Time of Collection</p>
+</dd>
+<dt>VISIT</dt><dd><p>Visit Name</p>
+</dd>
+<dt>VISITNUM</dt><dd><p>Visit Number</p>
+</dd>
+<dt>VISITDY</dt><dd><p>Planned Study Day of Visit</p>
+</dd>
+<dt>OESTRESN</dt><dd><p>Numeric Result/Finding in Standard Units</p>
+</dd>
+<dt>OESTRESC</dt><dd><p>Character Result/Finding in Std Format</p>
+</dd>
+<dt>OEORRES</dt><dd><p>Result or Finding in Original Units</p>
+</dd>
+<dt>OETEST</dt><dd><p>Name of Ophthalmic Test or Examination</p>
+</dd>
+<dt>OETESTCD</dt><dd><p>Short Name of Ophthalmic Test or Exam</p>
+</dd>
+<dt>OETSTDTL</dt><dd><p>Ophthalmic Test or Exam Detail</p>
+</dd>
+<dt>OELAT</dt><dd><p>Laterality</p>
+</dd>
+<dt>OELOC</dt><dd><p>Location Used for the Measurement</p>
+</dd>
+<dt>OEDY</dt><dd><p>Study Day of Visit/Collection/Exam</p>
+</dd>
+<dt>OEMETHOD</dt><dd><p>Method of Test or Examination</p>
+</dd>
+<dt>OEORRESU</dt><dd><p>Original Units</p>
+</dd>
+<dt>OESTRESU</dt><dd><p>Standard Units</p>
+</dd>
+<dt>OESTAT</dt><dd><p>Completion Status</p>
+</dd>
+<dt>OETPT</dt><dd><p>Planned Time Point Name</p>
+</dd>
+<dt>OETPTNUM</dt><dd><p>Planned Time Point Number</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Ophthalmic Examinations for Ophthalmology
+</p>
+<p>A SDTM OE dataset simulated by Ophthalmology team
+</p>
+<p>Contains a set of 4 unique Test Short Names and Test Names: </p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+<strong>OETESTCD</strong> </td><td style="text-align: left;"> <strong>OETEST</strong> </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+CSUBTH   </td><td style="text-align: left;"> Center Subfield Thickness            </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+DRSSR    </td><td style="text-align: left;"> Diabetic Retinopathy Sev Recode Value</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+IOP      </td><td style="text-align: left;"> Intraocular Pressure                 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VACSCORE </td><td style="text-align: left;"> Visual Acuity Score
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Author(s)</h3>
+
+<p>Gordon Miller
+</p>
+
+
+<h3>Source</h3>
+
+<p>Generated dataset.
+</p>
+
+</main>
+
+</div>
+</body></html>

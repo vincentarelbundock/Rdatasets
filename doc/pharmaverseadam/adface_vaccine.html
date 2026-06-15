@@ -1,0 +1,320 @@
+<!DOCTYPE html><html><head><title>R: Findings About Clinical Events Analysis</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>adface_vaccine</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Findings About Clinical Events Analysis</h2>
+
+<h3>Description</h3>
+
+<p>Findings About Clinical Events Analysis
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>adface_vaccine
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 61 columns:
+</p>
+
+<dl>
+<dt> STUDYID </dt><dd><p>Study Identifier</p>
+</dd>
+<dt> USUBJID </dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt> SUBJID </dt><dd><p>Subject Identifier for the Study</p>
+</dd>
+<dt> SITEID </dt><dd><p>Study Site Identifier</p>
+</dd>
+<dt> AGE </dt><dd><p>Age</p>
+</dd>
+<dt> AGEU </dt><dd><p>Age Units</p>
+</dd>
+<dt> SEX </dt><dd><p>Sex</p>
+</dd>
+<dt> RACE </dt><dd><p>Race</p>
+</dd>
+<dt> SAFFL </dt><dd><p>Safety Population Flag</p>
+</dd>
+<dt> ARM </dt><dd><p>Description of Planned Arm</p>
+</dd>
+<dt> ARMCD </dt><dd><p>Planned Arm Code</p>
+</dd>
+<dt> ACTARM </dt><dd><p>Description of Actual Arm</p>
+</dd>
+<dt> ACTARMCD </dt><dd><p>Actual Arm Code</p>
+</dd>
+<dt> TRTP </dt><dd><p>Planned Treatment</p>
+</dd>
+<dt> TRTA </dt><dd><p>Actual Treatment</p>
+</dd>
+<dt> TRT01P </dt><dd><p>Planned Treatment for Period 01</p>
+</dd>
+<dt> TRT01A </dt><dd><p>Actual Treatment for Period 01</p>
+</dd>
+<dt> TRT02P </dt><dd><p>Planned Treatment for Period 02</p>
+</dd>
+<dt> TRT02A </dt><dd><p>Actual Treatment for Period 02</p>
+</dd>
+<dt> TRTSDT </dt><dd><p>Date of First Exposure to Treatment</p>
+</dd>
+<dt> TRTSDTM </dt><dd><p>Datetime of First Exposure to Treatment</p>
+</dd>
+<dt> TRTEDT </dt><dd><p>Date of Last Exposure to Treatment</p>
+</dd>
+<dt> TRTEDTM </dt><dd><p>Datetime of Last Exposure to Treatment</p>
+</dd>
+<dt> APERSDT </dt><dd><p>Period Start Date</p>
+</dd>
+<dt> APEREDT </dt><dd><p>Period End Date</p>
+</dd>
+<dt> ADT </dt><dd><p>Analysis Date</p>
+</dd>
+<dt> ADTM </dt><dd><p>Analysis Datetime</p>
+</dd>
+<dt> ADY </dt><dd><p>Analysis Relative Day</p>
+</dd>
+<dt> ATPT </dt><dd><p>Analysis Timepoint</p>
+</dd>
+<dt> ATPTN </dt><dd><p>Analysis Timepoint (N)</p>
+</dd>
+<dt> ATPTREF </dt><dd><p>Analysis Timepoint Reference</p>
+</dd>
+<dt> APERIOD </dt><dd><p>Period</p>
+</dd>
+<dt> PARAM </dt><dd><p>Parameter</p>
+</dd>
+<dt> PARAMCD </dt><dd><p>Parameter Code</p>
+</dd>
+<dt> PARAMN </dt><dd><p>Parameter (N)</p>
+</dd>
+<dt> PARCAT1 </dt><dd><p>Parameter Category 1</p>
+</dd>
+<dt> PARCAT2 </dt><dd><p>Parameter Category 2</p>
+</dd>
+<dt> AVAL </dt><dd><p>Analysis Value</p>
+</dd>
+<dt> AVALC </dt><dd><p>Analysis Value (C)</p>
+</dd>
+<dt> ANL01FL </dt><dd><p>Analysis Flag 01</p>
+</dd>
+<dt> ANL02FL </dt><dd><p>Analysis Flag 02</p>
+</dd>
+<dt> ANL03FL </dt><dd><p>Analysis Flag 03</p>
+</dd>
+<dt> FATEST </dt><dd><p>Findings About Test Name</p>
+</dd>
+<dt> FALNKID </dt><dd><p>Link ID</p>
+</dd>
+<dt> FALNKGRP </dt><dd><p>Link Group ID</p>
+</dd>
+<dt> FATESTCD </dt><dd><p>Findings About Test Short Name</p>
+</dd>
+<dt> FAOBJ </dt><dd><p>Object of the Observation</p>
+</dd>
+<dt> FASTAT </dt><dd><p>Completion Status</p>
+</dd>
+<dt> FAREASND </dt><dd><p>Reason Not Performed</p>
+</dd>
+<dt> FAEVAL </dt><dd><p>Evaluator</p>
+</dd>
+<dt> EPOCH </dt><dd><p>Epoch</p>
+</dd>
+<dt> FAEVINTX </dt><dd><p>Evaluation Interval Text</p>
+</dd>
+<dt> EXDOSE </dt><dd><p>Dose</p>
+</dd>
+<dt> EXTRT </dt><dd><p>Name of Treatment</p>
+</dd>
+<dt> EXSTDTC </dt><dd><p>Start Date/Time of Treatment</p>
+</dd>
+<dt> EXENDTC </dt><dd><p>End Date/Time of Treatment</p>
+</dd>
+<dt> FAORRES </dt><dd><p>Result or Finding in Original Units</p>
+</dd>
+<dt> VAX01DT </dt><dd><p>Vaccination Date 01</p>
+</dd>
+<dt> VAX02DT </dt><dd><p>Vaccination Date 02</p>
+</dd>
+<dt> EVENTFL </dt><dd><p>Event Value Flag</p>
+</dd>
+<dt> EVENTDFL </dt><dd><p>Day Event Value Flag</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Contains a set of 30 unique Parameter Codes and Parameters: </p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+<strong>PARAMCD</strong> </td><td style="text-align: left;"> <strong>PARAM</strong> </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+DIARE    </td><td style="text-align: left;"> Redness diameter deltoid muscle left                           </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+DIASWEL  </td><td style="text-align: left;"> Swelling diameter deltoid muscle left                          </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MAXREDN  </td><td style="text-align: left;"> Redness maximum severity deltoid muscle left                   </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MAXSFAT  </td><td style="text-align: left;"> Fatigue maximum severity                                       </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MAXSHEA  </td><td style="text-align: left;"> Headache maximum severity                                      </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MAXSPIS  </td><td style="text-align: left;"> Pain at injection site maximum severity deltoid muscle left    </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MAXSWEL  </td><td style="text-align: left;"> Swelling maximum severity deltoid muscle left                  </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MAXTEMP  </td><td style="text-align: left;"> Fever maximum temperature                                      </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MDIRE    </td><td style="text-align: left;"> Redness maximum diameter deltoid muscle left                   </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MDISW    </td><td style="text-align: left;"> Swelling maximum diameter deltoid muscle left                  </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MSEVNWJP </td><td style="text-align: left;"> New or worsened joint pain maximum severity                    </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MSEVNWMP </td><td style="text-align: left;"> New or worsened muscle pain maximum severity                   </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+OCCHILLS </td><td style="text-align: left;"> Chills occurrence indicator                                    </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+OCCNWJP  </td><td style="text-align: left;"> New or worsened joint pain occurrence indicator                </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+OCCNWMP  </td><td style="text-align: left;"> New or worsened muscle pain occurrence indicator               </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+OCCVOM   </td><td style="text-align: left;"> Vomiting occurrence indicator                                  </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+OCDIAR   </td><td style="text-align: left;"> Diarrhea occurrence indicator                                  </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+OCFATIG  </td><td style="text-align: left;"> Fatigue occurrence indicator                                   </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+OCFEVER  </td><td style="text-align: left;"> Fever occurrence indicator                                     </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+OCHEAD   </td><td style="text-align: left;"> Headache occurrence indicator                                  </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+OCINS    </td><td style="text-align: left;"> Swelling occurrence indicator deltoid muscle left              </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+OCISR    </td><td style="text-align: left;"> Redness occurrence indicator deltoid muscle left               </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+OCPIS    </td><td style="text-align: left;"> Pain at injection site occurrence indicator deltoid muscle left</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+SEVFAT   </td><td style="text-align: left;"> Fatigue severity/intensity                                     </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+SEVHEAD  </td><td style="text-align: left;"> Headache severity/intensity                                    </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+SEVNWJP  </td><td style="text-align: left;"> New or worsened joint pain severity/intensity                  </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+SEVNWMP  </td><td style="text-align: left;"> New or worsened muscle pain severity/intensity                 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+SEVPIS   </td><td style="text-align: left;"> Pain at injection site severity/intensity deltoid muscle left  </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+SEVREDN  </td><td style="text-align: left;"> Redness severity/intensity deltoid muscle left                 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+SEVSWEL  </td><td style="text-align: left;"> Swelling severity/intensity deltoid muscle left
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>Generated from admiralvaccine package (template ad_adface.R).
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data("adface_vaccine")
+</code></pre>
+
+</main>
+
+</div>
+</body></html>
