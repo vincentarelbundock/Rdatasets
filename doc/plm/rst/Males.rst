@@ -1,82 +1,77 @@
-.. container::
+===== ===============
+Males R Documentation
+===== ===============
 
-   .. container::
+Wages and Education of Young Males
+----------------------------------
 
-      ===== ===============
-      Males R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Wages and Education of Young Males
-         :name: wages-and-education-of-young-males
+A panel of 545 observations from 1980 to 1987
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      A panel of 545 observations from 1980 to 1987
+A data frame containing :
 
-      .. rubric:: Format
-         :name: format
+nr
+   identifier
 
-      A data frame containing :
+year
+   year
 
-      nr
-         identifier
+school
+   years of schooling
 
-      year
-         year
+exper
+   years of experience (computed as ``age-6-school``)
 
-      school
-         years of schooling
+union
+   wage set by collective bargaining?
 
-      exper
-         years of experience (computed as ``age-6-school``)
+ethn
+   a factor with levels ``⁠black, hisp, other⁠``
 
-      union
-         wage set by collective bargaining?
+married
+   married?
 
-      ethn
-         a factor with levels ``⁠black, hisp, other⁠``
+health
+   health problem?
 
-      married
-         married?
+wage
+   log of hourly wage
 
-      health
-         health problem?
+industry
+   a factor with 12 levels
 
-      wage
-         log of hourly wage
+occupation
+   a factor with 9 levels
 
-      industry
-         a factor with 12 levels
+residence
+   a factor with levels
+   ``⁠rural_area, north_east, northern_central, south⁠``
 
-      occupation
-         a factor with 9 levels
+Details
+~~~~~~~
 
-      residence
-         a factor with levels
-         ``⁠rural_area, north_east, northern_central, south⁠``
+*total number of observations* : 4360
 
-      .. rubric:: Details
-         :name: details
+*observation* : individuals
 
-      *total number of observations* : 4360
+*country* : United States
 
-      *observation* : individuals
+Source
+~~~~~~
 
-      *country* : United States
+Journal of Applied Econometrics data archive
+http://qed.econ.queensu.ca/jae/1998-v13.2/vella-verbeek/.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Journal of Applied Econometrics data archive
-      http://qed.econ.queensu.ca/jae/1998-v13.2/vella-verbeek/.
+Vella F, Verbeek M (1998). “Whose wages do unions raise? A dynamic model
+of unionism and wage rate determination for young men.” *Journal of
+Applied Econometrics*, **13**, 163–183.
 
-      .. rubric:: References
-         :name: references
-
-      Vella F, Verbeek M (1998). “Whose wages do unions raise? A dynamic
-      model of unionism and wage rate determination for young men.”
-      *Journal of Applied Econometrics*, **13**, 163–183.
-
-      Verbeek M (2004). *A Guide to Modern Econometrics*, 2nd edition.
-      Wiley.
+Verbeek M (2004). *A Guide to Modern Econometrics*, 2nd edition. Wiley.

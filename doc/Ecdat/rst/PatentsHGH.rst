@@ -1,115 +1,109 @@
-.. container::
+========== ===============
+PatentsHGH R Documentation
+========== ===============
 
-   .. container::
+Dynamic Relation Between Patents and R&D
+----------------------------------------
 
-      ========== ===============
-      PatentsHGH R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Dynamic Relation Between Patents and R&D
-         :name: dynamic-relation-between-patents-and-rd
+a panel of 346 observations from 1975 to 1979
 
-      .. rubric:: Description
-         :name: description
+*number of observations* : 1730
 
-      a panel of 346 observations from 1975 to 1979
+*observation* : production units
 
-      *number of observations* : 1730
+*country* : United States
 
-      *observation* : production units
+Usage
+~~~~~
 
-      *country* : United States
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(PatentsHGH)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(PatentsHGH)
+A dataframe containing :
 
-      .. rubric:: Format
-         :name: format
+obsno
+   firm index
 
-      A dataframe containing :
+year
+   year
 
-      obsno
-         firm index
+cusip
+   Compustat's identifying number for the firm (Committee on Uniform
+   Security Identification Procedures number)
 
-      year
-         year
+ardsic
+   a two-digit code for the applied R&D industrial classification
+   (roughly that in Bound, Cummins, Griliches, Hall, and Jaffe, in the
+   Griliches R&D, Patents, and Productivity volume)
 
-      cusip
-         Compustat's identifying number for the firm (Committee on
-         Uniform Security Identification Procedures number)
+scisect
+   is the firm in the scientific sector ?
 
-      ardsic
-         a two-digit code for the applied R&D industrial classification
-         (roughly that in Bound, Cummins, Griliches, Hall, and Jaffe, in
-         the Griliches R&D, Patents, and Productivity volume)
+logk
+   the logarithm of the book value of capital in 1972.
 
-      scisect
-         is the firm in the scientific sector ?
+sumpat
+   the sum of patents applied for between 1972-1979.
 
-      logk
-         the logarithm of the book value of capital in 1972.
+logr
+   the logarithm of R&D spending during the year (in 1972 dollars)
 
-      sumpat
-         the sum of patents applied for between 1972-1979.
+logr1
+   the logarithm of R&D spending (one year lag)
 
-      logr
-         the logarithm of R&D spending during the year (in 1972 dollars)
+logr2
+   the logarithm of R&D spending (two years lag)
 
-      logr1
-         the logarithm of R&D spending (one year lag)
+logr3
+   the logarithm of R&D spending (three years lag)
 
-      logr2
-         the logarithm of R&D spending (two years lag)
+logr4
+   the logarithm of R&D spending (four years lag)
 
-      logr3
-         the logarithm of R&D spending (three years lag)
+logr5
+   the logarithm of R&D spending (five years lag)
 
-      logr4
-         the logarithm of R&D spending (four years lag)
+pat
+   the number of patents applied for during the year that were
+   eventually granted
 
-      logr5
-         the logarithm of R&D spending (five years lag)
+pat1
+   the number of patents (one year lag)
 
-      pat
-         the number of patents applied for during the year that were
-         eventually granted
+pat2
+   the number of patents (two years lag)
 
-      pat1
-         the number of patents (one year lag)
+pat3
+   the number of patents (three years lag)
 
-      pat2
-         the number of patents (two years lag)
+pat4
+   the number of patents (four years lag)
 
-      pat3
-         the number of patents (three years lag)
+Source
+~~~~~~
 
-      pat4
-         the number of patents (four years lag)
+Hall, Bronwyn, Zvi Griliches and Jerry Hausman (1986) “Patents and R&D:
+Is There a Lag?”, *International Economic Review*, **27**, 265-283.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Hall, Bronwyn, Zvi Griliches and Jerry Hausman (1986) “Patents and
-      R&D: Is There a Lag?”, *International Economic Review*, **27**,
-      265-283.
+Cameron, A.C. and Trivedi P.K. (1998) *Regression analysis of count
+data*, Cambridge University Press,
+https://cameron.econ.ucdavis.edu/racd/racddata.html, chapter 9.
 
-      .. rubric:: References
-         :name: references
+Cameron, A.C. and P.K. Trivedi (2005) *Microeconometrics : methods and
+applications*, Cambridge, pp. 792–5.
 
-      Cameron, A.C. and Trivedi P.K. (1998) *Regression analysis of
-      count data*, Cambridge University Press,
-      https://cameron.econ.ucdavis.edu/racd/racddata.html, chapter 9.
+See Also
+~~~~~~~~
 
-      Cameron, A.C. and P.K. Trivedi (2005) *Microeconometrics : methods
-      and applications*, Cambridge, pp. 792–5.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``PatentsRD``, ``Index.Source``, ``Index.Economics``,
-      ``Index.Econometrics``, ``Index.Observations``,
-      ``Index.Time.Series``
+``PatentsRD``, ``Index.Source``, ``Index.Economics``,
+``Index.Econometrics``, ``Index.Observations``, ``Index.Time.Series``

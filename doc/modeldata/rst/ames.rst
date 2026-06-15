@@ -1,66 +1,62 @@
-.. container::
+==== ===============
+ames R Documentation
+==== ===============
 
-   .. container::
+Ames Housing Data
+-----------------
 
-      ==== ===============
-      ames R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Ames Housing Data
-         :name: ames-housing-data
+A data set from De Cock (2011) has 82 fields were recorded for 2,930
+properties in Ames IA. This version is copies from the ``AmesHousing``
+package but does not include a few quality columns that appear to be
+outcomes rather than predictors.
 
-      .. rubric:: Description
-         :name: description
+Details
+~~~~~~~
 
-      A data set from De Cock (2011) has 82 fields were recorded for
-      2,930 properties in Ames IA. This version is copies from the
-      ``AmesHousing`` package but does not include a few quality columns
-      that appear to be outcomes rather than predictors.
+See this links for the sources below for more information as well as
+``?AmesHousing::make_ames``.
 
-      .. rubric:: Details
-         :name: details
+For these data, the training materials typically use:
 
-      See this links for the sources below for more information as well
-      as ``?AmesHousing::make_ames``.
+.. container:: sourceCode r
 
-      For these data, the training materials typically use:
+   ::
 
-      .. container:: sourceCode r
+      library(tidymodels)
 
-         ::
+      set.seed(4595)
+      data_split <- initial_split(ames, strata = "Sale_Price")
+      ames_train <- training(data_split)
+      ames_test  <- testing(data_split)
 
-            library(tidymodels)
+      set.seed(2453)
+      ames_folds<- vfold_cv(ames_train)
 
-            set.seed(4595)
-            data_split <- initial_split(ames, strata = "Sale_Price")
-            ames_train <- training(data_split)
-            ames_test  <- testing(data_split)
+Value
+~~~~~
 
-            set.seed(2453)
-            ames_folds<- vfold_cv(ames_train)
+======== ========
+``ames`` a tibble
+======== ========
 
-      .. rubric:: Value
-         :name: value
+Source
+~~~~~~
 
-      ======== ========
-      ``ames`` a tibble
-      ======== ========
+De Cock, D. (2011). "Ames, Iowa: Alternative to the Boston Housing Data
+as an End of Semester Regression Project," *Journal of Statistics
+Education*, Volume 19, Number 3.
 
-      .. rubric:: Source
-         :name: source
+https://jse.amstat.org/v19n3/decock/DataDocumentation.txt
 
-      De Cock, D. (2011). "Ames, Iowa: Alternative to the Boston Housing
-      Data as an End of Semester Regression Project," *Journal of
-      Statistics Education*, Volume 19, Number 3.
+https://jse.amstat.org/v19n3/decock.pdf
 
-      https://jse.amstat.org/v19n3/decock/DataDocumentation.txt
+Examples
+~~~~~~~~
 
-      https://jse.amstat.org/v19n3/decock.pdf
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(ames)
-         str(ames)
+   data(ames)
+   str(ames)

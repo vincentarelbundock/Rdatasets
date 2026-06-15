@@ -1,46 +1,42 @@
-.. container::
+============= ===============
+stackoverflow R Documentation
+============= ===============
 
-   .. container::
+Annual Stack Overflow Developer Survey Data
+-------------------------------------------
 
-      ============= ===============
-      stackoverflow R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Annual Stack Overflow Developer Survey Data
-         :name: annual-stack-overflow-developer-survey-data
+Annual Stack Overflow Developer Survey Data
 
-      .. rubric:: Description
-         :name: description
+Details
+~~~~~~~
 
-      Annual Stack Overflow Developer Survey Data
+These data are a collection of 5,594 data points collected on
+developers. These data could be used to try to predict who works
+remotely (as used in the source listed below).
 
-      .. rubric:: Details
-         :name: details
+Value
+~~~~~
 
-      These data are a collection of 5,594 data points collected on
-      developers. These data could be used to try to predict who works
-      remotely (as used in the source listed below).
+================= ========
+``stackoverflow`` a tibble
+================= ========
 
-      .. rubric:: Value
-         :name: value
+Source
+~~~~~~
 
-      ================= ========
-      ``stackoverflow`` a tibble
-      ================= ========
+Julia Silge, *Supervised Machine Learning Case Studies in R*
 
-      .. rubric:: Source
-         :name: source
+``⁠https://supervised-ml-course.netlify.com/chapter2⁠``
 
-      Julia Silge, *Supervised Machine Learning Case Studies in R*
+Raw data: ``⁠https://insights.stackoverflow.com/survey/⁠``
 
-      ``⁠https://supervised-ml-course.netlify.com/chapter2⁠``
+Examples
+~~~~~~~~
 
-      Raw data: ``⁠https://insights.stackoverflow.com/survey/⁠``
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(stackoverflow)
-         str(stackoverflow)
+   data(stackoverflow)
+   str(stackoverflow)

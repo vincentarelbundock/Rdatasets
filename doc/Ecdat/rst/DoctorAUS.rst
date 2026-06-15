@@ -1,116 +1,108 @@
-.. container::
+========= ===============
+DoctorAUS R Documentation
+========= ===============
 
-   .. container::
+Doctor Visits in Australia
+--------------------------
 
-      ========= ===============
-      DoctorAUS R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Doctor Visits in Australia
-         :name: doctor-visits-in-australia
+a cross-section from 1977–1978
 
-      .. rubric:: Description
-         :name: description
+*number of observations* : 5190
 
-      a cross-section from 1977–1978
+*observation* : individuals
 
-      *number of observations* : 5190
+*country* : Australia
 
-      *observation* : individuals
+Usage
+~~~~~
 
-      *country* : Australia
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(DoctorAUS)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(DoctorAUS)
+A dataframe containing :
 
-      .. rubric:: Format
-         :name: format
+sex
+   sex
 
-      A dataframe containing :
+age
+   age
 
-      sex
-         sex
+income
+   annual income in tens of thousands of dollars
 
-      age
-         age
+insurance
+   insurance contract (``medlevy`` : ``medibanl`` ``levy``, ``levyplus``
+   : private health insurance, ``freepoor`` : government insurance due
+   to low income, ``freerepa`` : government insurance due to old age
+   disability or veteran status
 
-      income
-         annual income in tens of thousands of dollars
+illness
+   number of illness in past 2 weeks
 
-      insurance
-         insurance contract (``medlevy`` : ``medibanl`` ``levy``,
-         ``levyplus`` : private health insurance, ``freepoor`` :
-         government insurance due to low income, ``freerepa`` :
-         government insurance due to old age disability or veteran
-         status
+actdays
+   number of days of reduced activity in past 2 weeks due to illness or
+   injury
 
-      illness
-         number of illness in past 2 weeks
+hscore
+   general health score using Goldberg's method (from 0 to 12)
 
-      actdays
-         number of days of reduced activity in past 2 weeks due to
-         illness or injury
+chcond
+   chronic condition (``np`` : no problem, ``la`` : limiting activity,
+   ``nla`` : not limiting activity)
 
-      hscore
-         general health score using Goldberg's method (from 0 to 12)
+doctorco
+   number of consultations with a doctor or specialist in the past 2
+   weeks
 
-      chcond
-         chronic condition (``np`` : no problem, ``la`` : limiting
-         activity, ``nla`` : not limiting activity)
+nondocco
+   number of consultations with non-doctor health professionals
+   (chemist, optician, physiotherapist, social worker, district
+   community nurse, chiropodist or chiropractor) in the past 2 weeks
 
-      doctorco
-         number of consultations with a doctor or specialist in the past
-         2 weeks
+hospadmi
+   number of admissions to a hospital, psychiatric hospital, nursing or
+   convalescent home in the past 12 months (up to 5 or more admissions
+   which is coded as 5)
 
-      nondocco
-         number of consultations with non-doctor health professionals
-         (chemist, optician, physiotherapist, social worker, district
-         community nurse, chiropodist or chiropractor) in the past 2
-         weeks
+hospdays
+   number of nights in a hospital, etc. during most recent admission:
+   taken, where appropriate, as the mid-point of the intervals 1, 2, 3,
+   4, 5, 6, 7, 8-14, 15-30, 31-60, 61-79 with 80 or more admissions
+   coded as 80. If no admission in past 12 months then equals zero.
 
-      hospadmi
-         number of admissions to a hospital, psychiatric hospital,
-         nursing or convalescent home in the past 12 months (up to 5 or
-         more admissions which is coded as 5)
+medecine
+   total number of prescribed and nonprescribed medications used in past
+   2 days
 
-      hospdays
-         number of nights in a hospital, etc. during most recent
-         admission: taken, where appropriate, as the mid-point of the
-         intervals 1, 2, 3, 4, 5, 6, 7, 8-14, 15-30, 31-60, 61-79 with
-         80 or more admissions coded as 80. If no admission in past 12
-         months then equals zero.
+prescrib
+   total number of prescribed medications used in past 2 days
 
-      medecine
-         total number of prescribed and nonprescribed medications used
-         in past 2 days
+nonpresc
+   total number of nonprescribed medications used in past 2 days
 
-      prescrib
-         total number of prescribed medications used in past 2 days
+Source
+~~~~~~
 
-      nonpresc
-         total number of nonprescribed medications used in past 2 days
+Cameron, A.C. and P.K. Trivedi (1986) “Econometric Models Based on Count
+Data: Comparisons and Applications of Some Estimators and Tests”,
+*Journal of Applied Econometrics*, **1**, 29-54..
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Cameron, A.C. and P.K. Trivedi (1986) “Econometric Models Based on
-      Count Data: Comparisons and Applications of Some Estimators and
-      Tests”, *Journal of Applied Econometrics*, **1**, 29-54..
+Cameron, A.C. and Trivedi P.K. (1998) *Regression analysis of count
+data*, Cambridge University Press,
+https://cameron.econ.ucdavis.edu/racd/racddata.html, chapter 3.
 
-      .. rubric:: References
-         :name: references
+See Also
+~~~~~~~~
 
-      Cameron, A.C. and Trivedi P.K. (1998) *Regression analysis of
-      count data*, Cambridge University Press,
-      https://cameron.econ.ucdavis.edu/racd/racddata.html, chapter 3.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``Doctor``, ``DoctorContacts``, ``Index.Source``,
-      ``Index.Economics``, ``Index.Econometrics``,
-      ``Index.Observations``
+``Doctor``, ``DoctorContacts``, ``Index.Source``, ``Index.Economics``,
+``Index.Econometrics``, ``Index.Observations``

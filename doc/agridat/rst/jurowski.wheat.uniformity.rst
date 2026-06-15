@@ -1,91 +1,88 @@
-.. container::
+========================= ===============
+jurowski.wheat.uniformity R Documentation
+========================= ===============
 
-   .. container::
+Uniformity trial of wheat in Russia
+-----------------------------------
 
-      ========================= ===============
-      jurowski.wheat.uniformity R Documentation
-      ========================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of wheat in Russia
-         :name: uniformity-trial-of-wheat-in-russia
+Uniformity trial of wheat in Russia
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of wheat in Russia
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("jurowski.wheat.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("jurowski.wheat.uniformity")
+A data frame with 480 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row ordinate
 
-      A data frame with 480 observations on the following 3 variables.
+``col``
+   column ordinate
 
-      ``row``
-         row ordinate
+``yield``
+   yield, Pud per plot
 
-      ``col``
-         column ordinate
+Details
+~~~~~~~
 
-      ``yield``
-         yield, Pud per plot
+The experiment was conducted in Russia at Ofrossimowka. This word
+"Ofrossimowka" appeared in the German text of Sapehin, but is otherwise
+extremely difficult to find. There may be alternate ways the actual
+Russian name is translated into German/English.
 
-      .. rubric:: Details
-         :name: details
+Likewise, the name "Jurowski" is very difficult to find and may have
+other transliterations.
 
-      The experiment was conducted in Russia at Ofrossimowka. This word
-      "Ofrossimowka" appeared in the German text of Sapehin, but is
-      otherwise extremely difficult to find. There may be alternate ways
-      the actual Russian name is translated into German/English.
+Sapehin gives the original source as: Arbeiten d. Vers.-St. d. Russ.
+Ges. f. Zuckerind. 1913. which may expand to Arbeiten der
+Versuchsstationen der Russ. Ges. f. Zuckerindustrie. 1913.
 
-      Likewise, the name "Jurowski" is very difficult to find and may
-      have other transliterations.
+Sepehin appendix says the plot size is "4 x 12 m^2". It is not clear
+which plot dimension is 4 m and which is 12 m. If 4m wide 12m tall, then
+field is 48m wide x 480m long. If 4m tall 12m wide, then field is 144m
+wide x 160m long. This seems much more likely.
 
-      Sapehin gives the original source as: Arbeiten d. Vers.-St. d.
-      Russ. Ges. f. Zuckerind. 1913. which may expand to Arbeiten der
-      Versuchsstationen der Russ. Ges. f. Zuckerindustrie. 1913.
+Sapehin says the std dev is "21.8 pud". A "pud" is a Russian unit of
+weight equal to 16.38 kilograms.
 
-      Sepehin appendix says the plot size is "4 x 12 m^2". It is not
-      clear which plot dimension is 4 m and which is 12 m. If 4m wide
-      12m tall, then field is 48m wide x 480m long. If 4m tall 12m wide,
-      then field is 144m wide x 160m long. This seems much more likely.
+Transcription details: Data converted by OCR from the paper and
+hand-checked by K.Wright.
 
-      Sapehin says the std dev is "21.8 pud". A "pud" is a Russian unit
-      of weight equal to 16.38 kilograms.
+Source
+~~~~~~
 
-      Data converted by OCR from Sapehin and hand-checked by K.Wright.
+Sapehin, A. A. (1927). Beitrage zur Methodik des Feldversuches. Die
+Landwirtschaflichen Versuchsstationen, 105, 243-259.
+https://www.google.com/books/edition/Die_Landwirthschaftlichen_Versuchs_Stati/cLZGAAAAYAAJ?hl=en&pg=PA243
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Sapehin, A. A. (1927). Beitrage zur Methodik des Feldversuches.
-      Die Landwirtschaflichen Versuchsstationen, 105, 243-259.
-      https://www.google.com/books/edition/Die_Landwirthschaftlichen_Versuchs_Stati/cLZGAAAAYAAJ?hl=en&pg=PA243
+None
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
+     library(agridat)
+     data(jurowski.wheat.uniformity)
+     dat <- jurowski.wheat.uniformity
+     
+     sd(dat$yield)
+     libs(desplot)
+     desplot(dat, yield~col*row,
+             aspect=(40*4)/(12*12), flip=TRUE, tick=TRUE,
+             main="jurowski.wheat.uniformity")
 
-      .. code:: R
-
-         ## Not run: 
-           library(agridat)
-           data(jurowski.wheat.uniformity)
-           dat <- jurowski.wheat.uniformity
-           
-           sd(dat$yield)
-           libs(desplot)
-           desplot(dat, yield~col*row,
-                   aspect=(40*4)/(12*12), flip=TRUE, tick=TRUE,
-                   main="jurowski.wheat.uniformity")
-
-         ## End(Not run)
+   ## End(Not run)

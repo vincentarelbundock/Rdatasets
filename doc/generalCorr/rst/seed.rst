@@ -1,22 +1,18 @@
-.. container::
+==== ===============
+seed R Documentation
+==== ===============
 
-   .. container::
+internal seed
+-------------
 
-      ==== ===============
-      seed R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: internal seed
-         :name: internal-seed
+intended for internal use only
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      intended for internal use only
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
-
-      .. code:: R
-
-         seed
+   seed

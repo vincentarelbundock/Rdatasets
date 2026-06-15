@@ -1,40 +1,36 @@
-.. container::
+======= ===============
+Glucose R Documentation
+======= ===============
 
-   .. container::
+Glucose levels over time
+------------------------
 
-      ======= ===============
-      Glucose R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Glucose levels over time
-         :name: glucose-levels-over-time
+The ``Glucose`` data frame has 378 rows and 4 columns.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      The ``Glucose`` data frame has 378 rows and 4 columns.
+This data frame contains the following columns:
 
-      .. rubric:: Format
-         :name: format
+Subject
+   an ordered factor with levels ``6`` < ``2`` < ``3`` < ``5`` < ``1`` <
+   ``4``
 
-      This data frame contains the following columns:
+Time
+   a numeric vector
 
-      Subject
-         an ordered factor with levels ``6`` < ``2`` < ``3`` < ``5`` <
-         ``1`` < ``4``
+conc
+   a numeric vector of glucose levels
 
-      Time
-         a numeric vector
+Meal
+   an ordered factor with levels ``2am`` < ``6am`` < ``10am`` < ``2pm``
+   < ``6pm`` < ``10pm``
 
-      conc
-         a numeric vector of glucose levels
+Source
+~~~~~~
 
-      Meal
-         an ordered factor with levels ``2am`` < ``6am`` < ``10am`` <
-         ``2pm`` < ``6pm`` < ``10pm``
-
-      .. rubric:: Source
-         :name: source
-
-      Hand, D. and Crowder, M. (1996), *Practical Longitudinal Data
-      Analysis*, Chapman and Hall, London.
+Hand, D. and Crowder, M. (1996), *Practical Longitudinal Data Analysis*,
+Chapman and Hall, London.

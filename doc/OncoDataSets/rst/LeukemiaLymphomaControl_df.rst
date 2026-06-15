@@ -1,53 +1,49 @@
-.. container::
+========================== ===============
+LeukemiaLymphomaControl_df R Documentation
+========================== ===============
 
-   .. container::
+North Humberside Leukemia and Lymphoma Control Cases
+----------------------------------------------------
 
-      ========================== ===============
-      LeukemiaLymphomaControl_df R Documentation
-      ========================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: North Humberside Leukemia and Lymphoma Control Cases
-         :name: north-humberside-leukemia-and-lymphoma-control-cases
+This dataset, LeukemiaLymphomaControl_df, is a data frame containing
+information on the number of control cases for leukemia and lymphoma
+reported in different locations within North Humberside. The dataset
+includes the location ID and the number of control cases for each
+location.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, LeukemiaLymphomaControl_df, is a data frame
-      containing information on the number of control cases for leukemia
-      and lymphoma reported in different locations within North
-      Humberside. The dataset includes the location ID and the number of
-      control cases for each location.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(LeukemiaLymphomaControl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(LeukemiaLymphomaControl_df)
+A data frame with 191 observations and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+locationid
+   Location ID (integer).
 
-      A data frame with 191 observations and 2 variables:
+numcontrols
+   Number of control cases (integer).
 
-      locationid
-         Location ID (integer).
+Details
+~~~~~~~
 
-      numcontrols
-         Number of control cases (integer).
+The dataset name has been kept as 'LeukemiaLymphomaControl_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the OncoDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'\_df' indicates that the dataset is a data frame. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'LeukemiaLymphomaControl_df' to
-      avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The suffix '\_df' indicates that the dataset is a
-      data frame. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the rsatscan package, distributed with SaTScan
-      software: https://www.satscan.org
+Data taken from the rsatscan package, distributed with SaTScan software:
+https://www.satscan.org

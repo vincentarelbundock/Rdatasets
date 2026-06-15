@@ -1,40 +1,36 @@
-.. container::
+==== ===============
+scat R Documentation
+==== ===============
 
-   .. container::
+Morphometric data on scat
+-------------------------
 
-      ==== ===============
-      scat R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Morphometric data on scat
-         :name: morphometric-data-on-scat
+Reid (2015) collected data on animal feses in coastal California. The
+data consist of DNA verified species designations as well as fields
+related to the time and place of the collection and the scat itself. The
+data are on the three main species.
 
-      .. rubric:: Description
-         :name: description
+Value
+~~~~~
 
-      Reid (2015) collected data on animal feses in coastal California.
-      The data consist of DNA verified species designations as well as
-      fields related to the time and place of the collection and the
-      scat itself. The data are on the three main species.
+======== ========
+``scat`` a tibble
+======== ========
 
-      .. rubric:: Value
-         :name: value
+Source
+~~~~~~
 
-      ======== ========
-      ``scat`` a tibble
-      ======== ========
+Reid, R. E. B. (2015). A morphometric modeling approach to
+distinguishing among bobcat, coyote and gray fox scats. *Wildlife
+Biology*, 21(5), 254-262
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Reid, R. E. B. (2015). A morphometric modeling approach to
-      distinguishing among bobcat, coyote and gray fox scats. *Wildlife
-      Biology*, 21(5), 254-262
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(scat)
-         str(scat)
+   data(scat)
+   str(scat)

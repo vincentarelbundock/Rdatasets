@@ -1,45 +1,41 @@
-.. container::
+======= ===============
+beertax R Documentation
+======= ===============
 
-   .. container::
+The beertax dataset
+-------------------
 
-      ======= ===============
-      beertax R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The beertax dataset
-         :name: the-beertax-dataset
+This dataset contains a list of historical tax rates for beer per 31
+gallon Bbl. from TTB.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains a list of historical tax rates for beer per
-      31 gallon Bbl. from TTB.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   beertax
 
-      .. code:: R
+Format
+~~~~~~
 
-         beertax
+A data frame with 10 observations of 3 variables:
 
-      .. rubric:: Format
-         :name: format
+FROM
+   FROM, date of starting tax rate. The first date does not have a
+   listed day, so 09/01/1862 is used.
 
-      A data frame with 10 observations of 3 variables:
+TO
+   TO, date of ending tax rate. The last row is considered the present
+   day rate indicated by the package creation date.
 
-      FROM
-         FROM, date of starting tax rate. The first date does not have a
-         listed day, so 09/01/1862 is used.
+RATE
+   RATE, in dollars. The last two entries are originally '$9/$7' and
+   '$18/$' respectively.
 
-      TO
-         TO, date of ending tax rate. The last row is considered the
-         present day rate indicated by the package creation date.
+Source
+~~~~~~
 
-      RATE
-         RATE, in dollars. The last two entries are originally '$9/$7'
-         and '$18/$' respectively.
-
-      .. rubric:: Source
-         :name: source
-
-      http://catalog.data.gov/dataset/historical-tax-rates
+http://catalog.data.gov/dataset/historical-tax-rates

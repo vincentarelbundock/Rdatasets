@@ -1,90 +1,86 @@
-.. container::
+========== ===============
+tai.potato R Documentation
+========== ===============
 
-   .. container::
+Multi-environment trial of potato
+---------------------------------
 
-      ========== ===============
-      tai.potato R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Multi-environment trial of potato
-         :name: multi-environment-trial-of-potato
+Multi-environment trial of potato tuber yields
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Multi-environment trial of potato tuber yields
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("tai.potato")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("tai.potato")
+A data frame with 48 observations on the following 6 variables.
 
-      .. rubric:: Format
-         :name: format
+``yield``
+   yield, kg/plot
 
-      A data frame with 48 observations on the following 6 variables.
+``gen``
+   genotype code
 
-      ``yield``
-         yield, kg/plot
+``variety``
+   variety name
 
-      ``gen``
-         genotype code
+``env``
+   environment code
 
-      ``variety``
-         variety name
+``loc``
+   location
 
-      ``env``
-         environment code
+``year``
+   year
 
-      ``loc``
-         location
+Details
+~~~~~~~
 
-      ``year``
-         year
+Mean tuber yield of 8 genotypes in 3 locations over two years. Katahdin
+and Sebago are check varieties. Each location was planted as a 4-rep RCB
+design.
 
-      .. rubric:: Details
-         :name: details
+In Tai's plot of the stability parameters, F5751 and Sebago were in the
+average stability area. The highest yielding genotype F6032 had an
+unstable performance.
 
-      Mean tuber yield of 8 genotypes in 3 locations over two years.
-      Katahdin and Sebago are check varieties. Each location was planted
-      as a 4-rep RCB design.
+Source
+~~~~~~
 
-      In Tai's plot of the stability parameters, F5751 and Sebago were
-      in the average stability area. The highest yielding genotype F6032
-      had an unstable performance.
+G.C.C. Tai, 1971. Genotypic stability analysis and its application to
+potato regional trials. Crop Sci 11, 184-190. Table 2, p. 187.
+https://doi.org/10.2135/cropsci1971.0011183X001100020006x
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      G.C.C. Tai, 1971. Genotypic stability analysis and its application
-      to potato regional trials. Crop Sci 11, 184-190. Table 2, p. 187.
-      https://doi.org/10.2135/cropsci1971.0011183X001100020006x
+George Fernandez (1991). Analysis of Genotype x Environment Interaction
+by Stability Estimates. *Hort Science*, 26, 947-950.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      George Fernandez (1991). Analysis of Genotype x Environment
-      Interaction by Stability Estimates. *Hort Science*, 26, 947-950.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(tai.potato)
+   dat <- tai.potato
 
-         ## Not run: 
+   libs(lattice)
+   dotplot(variety ~ yield|env, dat, main="tai.potato")
 
-         library(agridat)
-         data(tai.potato)
-         dat <- tai.potato
+   # fixme - need to add tai() example
 
-         libs(lattice)
-         dotplot(variety ~ yield|env, dat, main="tai.potato")
+   # note, st4gi::tai assumes there are replications in the data
+   # https://github.com/reyzaguirre/st4gi/blob/master/R/tai.R
 
-         # fixme - need to add tai() example
-
-         # note, st4gi::tai assumes there are replications in the data
-         # https://github.com/reyzaguirre/st4gi/blob/master/R/tai.R
-
-         ## End(Not run)
+   ## End(Not run)

@@ -1,27 +1,23 @@
-.. container::
+==== ===============
+hg19 R Documentation
+==== ===============
 
-   .. container::
+Chromosomal lengths for build 37
+--------------------------------
 
-      ==== ===============
-      hg19 R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Chromosomal lengths for build 37
-         :name: chromosomal-lengths-for-build-37
+Data are used in other functions.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data are used in other functions.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(hg19)
 
-      .. code:: R
+Format
+~~~~~~
 
-         hg19
-
-      .. rubric:: Format
-         :name: format
-
-      A vector containing lengths of chromosomes.
+A vector containing lengths of chromosomes.

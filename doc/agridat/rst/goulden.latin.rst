@@ -1,79 +1,74 @@
-.. container::
+============= ===============
+goulden.latin R Documentation
+============= ===============
 
-   .. container::
+Latin square experiment for testing fungicide
+---------------------------------------------
 
-      ============= ===============
-      goulden.latin R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Latin square experiment for testing fungicide
-         :name: latin-square-experiment-for-testing-fungicide
+Latin square experiment for testing fungicide
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Latin square experiment for testing fungicide
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("goulden.latin")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("goulden.latin")
+A data frame with 25 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``trt``
+   treatment factor, 5 levels
 
-      A data frame with 25 observations on the following 4 variables.
+``yield``
+   yield
 
-      ``trt``
-         treatment factor, 5 levels
+``row``
+   row
 
-      ``yield``
-         yield
+``col``
+   column
 
-      ``row``
-         row
+Details
+~~~~~~~
 
-      ``col``
-         column
+Five treatments were tested to control stem rust in wheat. Treatment
+codes and descriptions: A = Dusted before rains. B = Dusted after rains.
+C = Dusted once each week. D = Drifting, once each week. E = Not dusted.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      Five treatments were tested to control stem rust in wheat.
-      Treatment codes and descriptions: A = Dusted before rains. B =
-      Dusted after rains. C = Dusted once each week. D = Drifting, once
-      each week. E = Not dusted.
+Cyrus H. Goulden (1952). *Methods of Statistical Analysis*, 2nd ed. Page
+216.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Cyrus H. Goulden (1952). *Methods of Statistical Analysis*, 2nd
-      ed. Page 216.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
-
-         ## Not run: 
-
-         library(agridat)
-         library(agridat)
-         data(goulden.latin)
-         dat <- goulden.latin
+   library(agridat)
+   library(agridat)
+   data(goulden.latin)
+   dat <- goulden.latin
 
 
-         libs(desplot)
-         desplot(dat, yield ~ col*row,
-                 text=trt, cex=1, # aspect unknown
-                 main="goulden.latin")
+   libs(desplot)
+   desplot(dat, yield ~ col*row,
+           text=trt, cex=1, # aspect unknown
+           main="goulden.latin")
 
 
-         # Matches Goulden.
-         m1 <- lm(yield~ trt + factor(row) + factor(col), data=dat)
-         anova(m1)
+   # Matches Goulden.
+   m1 <- lm(yield~ trt + factor(row) + factor(col), data=dat)
+   anova(m1)
 
 
-         ## End(Not run)
+   ## End(Not run)

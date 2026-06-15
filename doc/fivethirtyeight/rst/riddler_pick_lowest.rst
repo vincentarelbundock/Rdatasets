@@ -1,34 +1,30 @@
-.. container::
+=================== ===============
+riddler_pick_lowest R Documentation
+=================== ===============
 
-   .. container::
+Pick A Number, Any Number
+-------------------------
 
-      =================== ===============
-      riddler_pick_lowest R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Pick A Number, Any Number
-         :name: pick-a-number-any-number
+The raw data behind the story "Pick A Number, Any Number"
+https://fivethirtyeight.com/features/pick-a-number-any-number/
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Pick A Number, Any Number"
-      https://fivethirtyeight.com/features/pick-a-number-any-number/
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   riddler_pick_lowest
 
-      .. code:: R
+Format
+~~~~~~
 
-         riddler_pick_lowest
+A data frame with 3660 rows representing dates and 1 variable:
 
-      .. rubric:: Format
-         :name: format
+your_number
+   Guessed number
 
-      A data frame with 3660 rows representing dates and 1 variable:
-
-      your_number
-         Guessed number
-
-      show_your_work
-         People showing their work
+show_your_work
+   People showing their work

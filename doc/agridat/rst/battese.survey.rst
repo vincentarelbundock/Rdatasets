@@ -1,167 +1,160 @@
-.. container::
+============== ===============
+battese.survey R Documentation
+============== ===============
 
-   .. container::
+Survey and satellite data for corn and soy areas in Iowa
+--------------------------------------------------------
 
-      ============== ===============
-      battese.survey R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Survey and satellite data for corn and soy areas in
-         Iowa
-         :name: survey-and-satellite-data-for-corn-and-soy-areas-in-iowa
+Survey and satellite data for corn and soy areas in Iowa
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Survey and satellite data for corn and soy areas in Iowa
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("battese.survey")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("battese.survey")
+A data frame with 37 observations on the following 9 variables.
 
-      .. rubric:: Format
-         :name: format
+``county``
+   county name
 
-      A data frame with 37 observations on the following 9 variables.
+``segment``
+   sample segment number (within county)
 
-      ``county``
-         county name
+``countysegs``
+   number of segments in county
 
-      ``segment``
-         sample segment number (within county)
+``cornhect``
+   hectares of corn in segment
 
-      ``countysegs``
-         number of segments in county
+``soyhect``
+   hectares of soy
 
-      ``cornhect``
-         hectares of corn in segment
+``cornpix``
+   pixels of corn in segment
 
-      ``soyhect``
-         hectares of soy
+``soypix``
+   pixels of soy
 
-      ``cornpix``
-         pixels of corn in segment
+``cornmean``
+   county mean of corn pixels per segment
 
-      ``soypix``
-         pixels of soy
+``soymean``
+   county mean of soy pixels per segment
 
-      ``cornmean``
-         county mean of corn pixels per segment
+Details
+~~~~~~~
 
-      ``soymean``
-         county mean of soy pixels per segment
+The data are for 12 counties in north-central Iowa in 1978.
 
-      .. rubric:: Details
-         :name: details
+The USDA determined the area of soybeans in 37 area sampling units
+(called 'segments'). Each segment is about one square mile (about 259
+hectares). The number of pixels of that were classified as corn and
+soybeans came from Landsat images obtained in Aug/Sep 1978. Each pixel
+represents approximately 0.45 hectares.
 
-      The data are for 12 counties in north-central Iowa in 1978.
+Data originally compiled by USDA.
 
-      The USDA determined the area of soybeans in 37 area sampling units
-      (called 'segments'). Each segment is about one square mile (about
-      259 hectares). The number of pixels of that were classified as
-      corn and soybeans came from Landsat images obtained in Aug/Sep
-      1978. Each pixel represents approximately 0.45 hectares.
+This data is also available in R packages: 'rsae::landsat' and
+'JoSAE::landsat'.
 
-      Data originally compiled by USDA.
+Source
+~~~~~~
 
-      This data is also available in R packages: 'rsae::landsat' and
-      'JoSAE::landsat'.
+Battese, George E and Harter, Rachel M and Fuller, Wayne A. (1988). An
+error-components model for prediction of county crop areas using survey
+and satellite data. Journal of the American Statistical Association, 83,
+28-36. https://doi.org/10.2307/2288915
 
-      .. rubric:: Source
-         :name: source
+Battese (1982) preprint version.
+https://www.une.edu.au/\__data/assets/pdf_file/0017/15542/emetwp15.pdf
 
-      Battese, George E and Harter, Rachel M and Fuller, Wayne A.
-      (1988). An error-components model for prediction of county crop
-      areas using survey and satellite data. Journal of the American
-      Statistical Association, 83, 28-36.
-      https://doi.org/10.2307/2288915
+References
+~~~~~~~~~~
 
-      Battese (1982) preprint version.
-      https://www.une.edu.au/\__data/assets/pdf_file/0017/15542/emetwp15.pdf
+Pushpal K Mukhopadhyay and Allen McDowell. (2011). Small Area Estimation
+for Survey Data Analysis Using SAS Software SAS Global Forum 2011.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Pushpal K Mukhopadhyay and Allen McDowell. (2011). Small Area
-      Estimation for Survey Data Analysis Using SAS Software SAS Global
-      Forum 2011.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(battese.survey)
+   dat <- battese.survey
 
-         ## Not run: 
+   # Battese fig 1 & 2.  Corn plot shows outlier in Hardin county
+   libs(lattice)
+   dat <- dat[order(dat$cornpix),]
+   xyplot(cornhect ~ cornpix, data=dat, group=county, type=c('p','l'),
+          main="battese.survey", xlab="Pixels of corn", ylab="Hectares of corn",
+          auto.key=list(columns=3))
 
-         library(agridat)
-         data(battese.survey)
-         dat <- battese.survey
+   dat <- dat[order(dat$soypix),]
+   xyplot(soyhect ~ soypix, data=dat, group=county, type=c('p','l'),
+          main="battese.survey", xlab="Pixels of soy", ylab="Hectares of soy",
+          auto.key=list(columns=3))
 
-         # Battese fig 1 & 2.  Corn plot shows outlier in Hardin county
-         libs(lattice)
-         dat <- dat[order(dat$cornpix),]
-         xyplot(cornhect ~ cornpix, data=dat, group=county, type=c('p','l'),
-                main="battese.survey", xlab="Pixels of corn", ylab="Hectares of corn",
-                auto.key=list(columns=3))
-
-         dat <- dat[order(dat$soypix),]
-         xyplot(soyhect ~ soypix, data=dat, group=county, type=c('p','l'),
-                main="battese.survey", xlab="Pixels of soy", ylab="Hectares of soy",
-                auto.key=list(columns=3))
-
-         libs(lme4, lucid)
-           
-         # Fit the models of Battese 1982, p.18.  Results match
-         m1 <- lmer(cornhect ~ 1 + cornpix + (1|county), data=dat)
-         fixef(m1)
-         ## (Intercept)     cornpix 
-         ##   5.4661899   0.3878358 
-         vc(m1)
-         ##      grp        var1 var2   vcov  sdcor
-         ##   county (Intercept) <NA>  62.83  7.926
-         ## Residual        <NA> <NA> 290.4  17.04 
-         m2 <- lmer(soyhect ~ 1 + soypix + (1|county), data=dat)
-         fixef(m2)
-         ## (Intercept)      soypix 
-         ##  -3.8223566   0.4756781 
-         vc(m2)
-         ##      grp        var1 var2  vcov sdcor
-         ##   county (Intercept) <NA> 239.2 15.47
-         ## Residual        <NA> <NA> 180   13.42
-           
-         # Predict for Humboldt county as in Battese 1982 table 2
-         5.4662+.3878*290.74
-         # 118.2152 # mu_i^0
-         5.4662+.3878*290.74+ -2.8744
-         # 115.3408 # mu_i^gamma
-         (185.35+116.43)/2
-         # 150.89 # y_i bar
-           
-         # Survey regression estimator of Battese 1988
-           
-         # Delete the outlier
-         dat2 <- subset(dat, !(county=="Hardin" & soyhect < 30))
-           
-         # Results match top-right of Battese 1988, p. 33
-         m3 <- lmer(cornhect ~ cornpix + soypix + (1|county), data=dat2)
-         fixef(m3)
-         ## (Intercept)     cornpix      soypix 
-         ##  51.0703979   0.3287217  -0.1345684 
-         vc(m3)
-         ##      grp        var1 var2  vcov sdcor
-         ##   county (Intercept) <NA> 140   11.83
-         ## Residual        <NA> <NA> 147.3 12.14
-         m4 <- lmer(soyhect ~ cornpix + soypix + (1|county), data=dat2)
-         fixef(m4)
-         ##  (Intercept)      cornpix       soypix 
-         ## -15.59027098   0.02717639   0.49439320 
-         vc(m4)
-         ##      grp        var1 var2  vcov sdcor
-         ##   county (Intercept) <NA> 247.5 15.73
-         ## Residual        <NA> <NA> 190.5 13.8 
+   libs(lme4, lucid)
+     
+   # Fit the models of Battese 1982, p.18.  Results match
+   m1 <- lmer(cornhect ~ 1 + cornpix + (1|county), data=dat)
+   fixef(m1)
+   ## (Intercept)     cornpix 
+   ##   5.4661899   0.3878358 
+   vc(m1)
+   ##      grp        var1 var2   vcov  sdcor
+   ##   county (Intercept) <NA>  62.83  7.926
+   ## Residual        <NA> <NA> 290.4  17.04 
+   m2 <- lmer(soyhect ~ 1 + soypix + (1|county), data=dat)
+   fixef(m2)
+   ## (Intercept)      soypix 
+   ##  -3.8223566   0.4756781 
+   vc(m2)
+   ##      grp        var1 var2  vcov sdcor
+   ##   county (Intercept) <NA> 239.2 15.47
+   ## Residual        <NA> <NA> 180   13.42
+     
+   # Predict for Humboldt county as in Battese 1982 table 2
+   5.4662+.3878*290.74
+   # 118.2152 # mu_i^0
+   5.4662+.3878*290.74+ -2.8744
+   # 115.3408 # mu_i^gamma
+   (185.35+116.43)/2
+   # 150.89 # y_i bar
+     
+   # Survey regression estimator of Battese 1988
+     
+   # Delete the outlier
+   dat2 <- subset(dat, !(county=="Hardin" & soyhect < 30))
+     
+   # Results match top-right of Battese 1988, p. 33
+   m3 <- lmer(cornhect ~ cornpix + soypix + (1|county), data=dat2)
+   fixef(m3)
+   ## (Intercept)     cornpix      soypix 
+   ##  51.0703979   0.3287217  -0.1345684 
+   vc(m3)
+   ##      grp        var1 var2  vcov sdcor
+   ##   county (Intercept) <NA> 140   11.83
+   ## Residual        <NA> <NA> 147.3 12.14
+   m4 <- lmer(soyhect ~ cornpix + soypix + (1|county), data=dat2)
+   fixef(m4)
+   ##  (Intercept)      cornpix       soypix 
+   ## -15.59027098   0.02717639   0.49439320 
+   vc(m4)
+   ##      grp        var1 var2  vcov sdcor
+   ##   county (Intercept) <NA> 247.5 15.73
+   ## Residual        <NA> <NA> 190.5 13.8 
 
 
-         ## End(Not run)
+   ## End(Not run)

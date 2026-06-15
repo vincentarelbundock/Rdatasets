@@ -1,47 +1,43 @@
-.. container::
+============ ===============
+exams_tbl_df R Documentation
+============ ===============
 
-   .. container::
+Exam Scores: Class of 19 Students
+---------------------------------
 
-      ============ ===============
-      exams_tbl_df R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Exam Scores: Class of 19 Students
-         :name: exam-scores-class-of-19-students
+This dataset, exams_tbl_df, is a tibble containing the exam scores of a
+class of 19 students. The dataset includes information on their
+performance in a specific exam.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, exams_tbl_df, is a tibble containing the exam scores
-      of a class of 19 students. The dataset includes information on
-      their performance in a specific exam.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(exams_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(exams_tbl_df)
+A tibble with 19 observations and 1 variable:
 
-      .. rubric:: Format
-         :name: format
+scores
+   Exam scores of students (integer).
 
-      A tibble with 19 observations and 1 variable:
+Details
+~~~~~~~
 
-      scores
-         Exam scores of students (integer).
+The dataset name has been kept as 'exams_tbl_df' to avoid confusion with
+other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the educationR package and assists
+users in identifying its specific characteristics. The suffix 'tbl_df'
+indicates that the dataset is a tibble. The original content has not
+been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'exams_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      educationR package and assists users in identifying its specific
-      characteristics. The suffix 'tbl_df' indicates that the dataset is
-      a tibble. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset was taken from the openintro package.
+The dataset was taken from the openintro package.

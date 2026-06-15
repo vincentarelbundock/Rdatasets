@@ -1,0 +1,107 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of potato in Saskatchewan</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>kirk.potato.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial  of potato in Saskatchewan
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial  of potato in Saskatchewan
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("kirk.potato.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 36 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row ordinate</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column ordinate</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield per plot in pounds</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Early Ohio potatoes. Conducted at University of Saskatchewan.
+No date give, but 1928 is likely.
+The yield for each plot is not given explicitly, but Kirk published
+another paper about potato yields a few years earlier in which the
+plot yield was given in pounds.
+</p>
+<p>The field was 132 feet wide, 300 feet long.
+There were 96 rows 132 feet long. Each row separated by 3 feet.
+Each row was harvested in 22 foot long segments, 6 per row.
+Within each row, individual potato plants were spaced 2 feet apart.
+</p>
+<p>The field was divided into sections. The data here are for Section A.
+Each experimental unit being 12 feet deep by 22 feet wide.
+</p>
+<p>Field width: 6 plots x 22 feet = 132 feet
+</p>
+<p>Field length: 6 plots x 12 feet = 72 feet
+</p>
+<p>Data typed by K.Wright.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Kirk, L. E. (1929).
+Field plot technique with potatoes with special reference to the Latin square.
+Scientific Agriculture, 9, 719-729. Table 7.
+https://babel.hathitrust.org/cgi/pt?id=chi.096360757&amp;seq=733
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  require(agridat)
+  data(kirk.potato.uniformity)
+  dat &lt;- kirk.potato.uniformity
+
+  require(desplot)
+  desplot(dat, yield ~ col*row,
+          flip=TRUE, aspect=(6*12)/(6*22),
+          main="kirk.potato.uniformity")
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

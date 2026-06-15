@@ -1,22 +1,18 @@
-.. container::
+========== ===============
+nam.badCol R Documentation
+========== ===============
 
-   .. container::
+internal nam.badCol
+-------------------
 
-      ========== ===============
-      nam.badCol R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: internal nam.badCol
-         :name: internal-nam.badcol
+intended for internal use only
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      intended for internal use only
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
-
-      .. code:: R
-
-         nam.badCol
+   nam.badCol

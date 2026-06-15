@@ -1,56 +1,52 @@
-.. container::
+================= ===============
+BrainCancerGeo_df R Documentation
+================= ===============
 
-   .. container::
+New Mexico Brain Cancer Geography Data
+--------------------------------------
 
-      ================= ===============
-      BrainCancerGeo_df R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: New Mexico Brain Cancer Geography Data
-         :name: new-mexico-brain-cancer-geography-data
+This dataset, BrainCancerGeo_df, is a data frame containing geographic
+information related to brain cancer cases in New Mexico. It includes
+data on the county, latitude, and longitude of the regions where brain
+cancer cases have been reported. The dataset consists of 32 observations
+with 3 variables.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, BrainCancerGeo_df, is a data frame containing
-      geographic information related to brain cancer cases in New
-      Mexico. It includes data on the county, latitude, and longitude of
-      the regions where brain cancer cases have been reported. The
-      dataset consists of 32 observations with 3 variables.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(BrainCancerGeo_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(BrainCancerGeo_df)
+A data frame with 32 observations and 3 variables:
 
-      .. rubric:: Format
-         :name: format
+county
+   County where the cases were recorded (Factor with 32 levels).
 
-      A data frame with 32 observations and 3 variables:
+lat
+   Latitude of the county (integer).
 
-      county
-         County where the cases were recorded (Factor with 32 levels).
+long
+   Longitude of the county (integer).
 
-      lat
-         Latitude of the county (integer).
+Details
+~~~~~~~
 
-      long
-         Longitude of the county (integer).
+The dataset name has been kept as 'BrainCancerGeo_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the OncoDataSets package and assists
+users in identifying its specific characteristics. The suffix '\_df'
+indicates that the dataset is a data frame. The original content has not
+been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'BrainCancerGeo_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The suffix '\_df' indicates that the dataset is a
-      data frame. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the rsatscan package, distributed with SaTScan
-      software: https://www.satscan.org
+Data taken from the rsatscan package, distributed with SaTScan software:
+https://www.satscan.org

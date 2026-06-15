@@ -1,0 +1,126 @@
+<!DOCTYPE html><html><head><title>R: Coral-eating seastar Culcita novaeguineae data (volume loss...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>culcitalvolume</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Coral-eating seastar Culcita novaeguineae data (volume loss version)
+</h2>
+
+<h3>Description</h3>
+
+<p>This is the same experiment outlined in <code>culcitalogreg</code> 
+except this data set only contains values where predation occurred, and 
+the original volume as well as volume lost was recorded.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("culcitalvolume")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 50 observations on the following 7 variables.
+</p>
+
+<dl>
+<dt><code>ttt</code></dt><dd><p>represents the combinations of different symbionts,
+which the treatment condition is explicitly written in plain language.</p>
+</dd>
+<dt><code>volume</code></dt><dd><p>describes the size of the coral, measured in 
+cm<code class="reqn">^3</code>.</p>
+</dd>
+<dt><code>predvolume</code></dt><dd><p>the amount of volume loss from the coral, measured
+in cm<code class="reqn">^3</code>.</p>
+</dd>
+<dt><code>crab</code></dt><dd><p>describes whether the crab was present in the 
+experiment. <code>n</code>: not present, <code>y</code>: present.</p>
+</dd>
+<dt><code>shrimp</code></dt><dd><p>describes whether the shrimp was present in the 
+experiment. <code>n</code>: not present, <code>y</code>: present.</p>
+</dd>
+<dt><code>block</code></dt><dd><p>a numeric variable indicating the experimental block. 
+There are <code>10</code> blocks in total, each corresponding to a large, 
+octagonal, flow-through seawater tank approximately 0.5m deep and 2m in 
+diameter.</p>
+</dd>
+<dt><code>ttt2</code></dt><dd><p>a relabelled version of <code>ttt</code>.
+</p>
+
+<ul>
+<li> <p><code>1</code>: no exosymbionts,
+</p>
+</li>
+<li> <p><code>2</code>: pair of <em>Alpheus lottini</em> only 
+(Alpheus; shrimp),
+</p>
+</li>
+<li> <p><code>3</code>: pair of <em>Trapezia serenei</em> only 
+(Trapezia; crab),
+</p>
+</li>
+<li> <p><code>4</code>: pair of <em>Alpheus lottini</em> and pair of 
+<em>Trapezia serenei</em> (‘Alpheus and Trapezia’).
+</p>
+</li></ul>
+
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>(McKeon et al. 2012)
+</p>
+
+
+<h3>References</h3>
+
+<p>McKeon CS, Stier AC, McIlroy SE, Bolker BM (2012).
+&ldquo;Multiple defender effects: synergistic coral defense by mutualist  crustaceans.&rdquo;
+<em>Oecologia</em>, <b>169</b>(4), 1095&ndash;1103.
+<a href="https://doi.org/10.1007/s00442-012-2275-2">doi:10.1007/s00442-012-2275-2</a>.
+</p>
+
+
+<h3>See Also</h3>
+
+<p>The version which contains whether or not predation occurred, 
+<code>culcitalogreg</code>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Modifying to create a new response variable
+vdata &lt;- transform(culcitalvolume, 
+                   propeaten = predvolume/volume,
+                   tvol = log(predvolume))
+## One-way analysis
+(cvm1 &lt;- lmer(tvol ~ ttt2 + (1|block), data = vdata))
+(cvm2 &lt;- lmer(propeaten ~ ttt2 + (1|block), data = vdata))
+## Two-way analysis 
+(cvm3 &lt;- lmer(tvol ~ crab*shrimp + (1|block), data = vdata))
+(cvm4 &lt;- lmer(propeaten ~ crab*shrimp + (1|block), data = vdata))
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

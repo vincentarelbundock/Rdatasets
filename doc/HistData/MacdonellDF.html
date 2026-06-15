@@ -16,42 +16,36 @@ function processMathHTML() {
 
 <table style="width: 100%;"><tr><td>Macdonell</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>
-Macdonell's Data on Height and Finger Length of Criminals, used by Gosset (1908)
-</h2>
+<h2>Macdonell's Data on Height and Finger Length of Criminals, used by Gosset
+(1908)</h2>
 
 <h3>Description</h3>
 
-<p>In the second issue of <em>Biometrika</em>, W. R. Macdonell (1902) published an extensive
-paper, <em>On Criminal Anthropometry and the Identification of Criminals</em>
-in which he included numerous tables of physical characteristics 3000 non-habitual 
-male criminals serving their sentences in England and Wales.  His Table III (p. 216)
-recorded a bivariate frequency distribution of <code>height</code> by <code>finger</code> length.
-His main purpose was to show that Scotland Yard 
-could have indexed their material more efficiently, and find a given profile more quickly. 
+<p>In the second issue of <em>Biometrika</em>, W. R. Macdonell (1902) published
+an extensive paper, <em>On Criminal Anthropometry and the Identification
+of Criminals</em> in which he included numerous tables of physical
+characteristics 3000 non-habitual male criminals serving their sentences in
+England and Wales.  His Table III (p. 216) recorded a bivariate frequency
+distribution of <code>height</code> by <code>finger</code> length. His main purpose was
+to show that Scotland Yard could have indexed their material more
+efficiently, and find a given profile more quickly.
 </p>
 <p>W. S. Gosset (aka &quot;Student&quot;) used these data in two classic papers in 1908,
-in which he derived various
-characteristics of the sampling distributions of the mean, standard deviation and
-Pearson's r. He said, &quot;Before I had succeeded in solving my problem analytically, I
-had endeavoured to do so empirically.&quot;  Among his experiments, he randomly shuffled
-the 3000 observations from Macdonell's table, and then grouped them into samples
-of size 4, 8, ..., calculating the sample means, standard deviations and correlations
-for each sample. 
+in which he derived various characteristics of the sampling distributions of
+the mean, standard deviation and Pearson's r. He said, &quot;Before I had
+succeeded in solving my problem analytically, I had endeavoured to do so
+empirically.&quot;  Among his experiments, he randomly shuffled the 3000
+observations from Macdonell's table, and then grouped them into samples of
+size 4, 8, ..., calculating the sample means, standard deviations and
+correlations for each sample.
 </p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data(Macdonell)
-data(MacdonellDF)
-</code></pre>
 
 
 <h3>Format</h3>
 
-<p><code>Macdonell</code>: A frequency data frame with 924 observations on the following 3 variables giving
-the bivariate frequency distribution of <code>height</code> and <code>finger</code>.
+<p><code>Macdonell</code>: A frequency data frame with 924 observations on
+the following 3 variables giving the bivariate frequency distribution of
+<code>height</code> and <code>finger</code>.
 </p>
 
 <dl>
@@ -63,7 +57,8 @@ the bivariate frequency distribution of <code>height</code> and <code>finger</co
 </dd>
 </dl>
 
-<p><code>MacdonellDF</code>: A data frame with 3000 observations on the following 2 variables.
+<p><code>MacdonellDF</code>: A data
+frame with 3000 observations on the following 2 variables.
 </p>
 
 <dl>
@@ -78,56 +73,52 @@ the bivariate frequency distribution of <code>height</code> and <code>finger</co
 <h3>Details</h3>
 
 <p>Class intervals for <code>height</code> in Macdonell's table were given in 1 in.
-ranges, from (4' 7&quot; 9/16 - 4' 8&quot; 9/16), to (6' 4&quot; 9/16 - 6' 5&quot; 9/16).
-The values of <code>height</code> are taken as the lower class boundaries.
+ranges, from (4' 7&quot; 9/16 - 4' 8&quot; 9/16), to (6' 4&quot; 9/16 - 6' 5&quot; 9/16). The
+values of <code>height</code> are taken as the lower class boundaries.
 </p>
-<p>For convenience, the data frame <code>MacdonellDF</code> presents the same data, in expanded form, with
-each combination of <code>height</code> and <code>finger</code> replicated <code>frequency</code> times.
+<p>For convenience, the data frame <code>MacdonellDF</code> presents the same data,
+in expanded form, with each combination of <code>height</code> and <code>finger</code>
+replicated <code>frequency</code> times.
 </p>
 
 
 <h3>Source</h3>
 
-<p>Macdonell, W. R. (1902).
-On Criminal Anthropometry and the Identification of Criminals.
-<em>Biometrika</em>, 1(2), 177-227. 
+<p>Macdonell, W. R. (1902). On Criminal Anthropometry and the
+Identification of Criminals. <em>Biometrika</em>, 1(2), 177-227.
 <a href="https://doi.org/10.1093/biomet/1.2.177">doi:10.1093/biomet/1.2.177</a>
 </p>
 <p>The data used here were obtained from:
 </p>
-<p>Hanley, J. (2008).
-Macdonell data used by Student.
-<a href="http://www.medicine.mcgill.ca/epidemiology/hanley/Student/">http://www.medicine.mcgill.ca/epidemiology/hanley/Student/</a>
+<p>Hanley, J. (2008). Macdonell data used by Student.
+<a href="https://jhanley.biostat.mcgill.ca/Student/">https://jhanley.biostat.mcgill.ca/Student/</a>
 </p>
 
 
 <h3>References</h3>
 
-<p>Hanley, J. and Julien, M. and Moodie, E. (2008).
-Student's z, t, and s: What if Gosset had R?
-<em>The American Statistician</em>, 62(1), 64-69.
+<p>Hanley, J. and Julien, M. and Moodie, E. (2008). Student's z, t,
+and s: What if Gosset had R? <em>The American Statistician</em>, 62(1), 64-69.
 </p>
-<p>Gosset, W. S. [Student] (1908).
-Probable error of a mean.
-<em>Biometrika</em>, 6(1), 1-25.
-<a href="https://www.york.ac.uk/depts/maths/histstat/student.pdf">https://www.york.ac.uk/depts/maths/histstat/student.pdf</a>
+<p>Gosset, W. S. (Student) (1908). Probable error of a mean. <em>Biometrika</em>,
+6(1), 1-25. <a href="https://www.york.ac.uk/depts/maths/histstat/student.pdf">https://www.york.ac.uk/depts/maths/histstat/student.pdf</a>
 </p>
-<p>Gosset, W. S. [Student] (1908).
-Probable error of a correlation coefficient.
+<p>Gosset, W. S. (Student) (1908). Probable error of a correlation coefficient.
 <em>Biometrika</em>, 6, 302-310.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(Macdonell)
+<pre><code class='language-R'>
+data(Macdonell)
 
 # display the frequency table
 xtabs(frequency ~ finger+round(height,3), data=Macdonell)
 
 ## Some examples by james.hanley@mcgill.ca    October 16, 2011
-## http://www.biostat.mcgill.ca/hanley/
-## See:  http://www.biostat.mcgill.ca/hanley/Student/
+## https://jhanley.biostat.mcgill.ca/
+## See:  https://jhanley.biostat.mcgill.ca/Student/
 
 ###############################################
 ##  naive contour plots of height and finger ##
@@ -236,9 +227,9 @@ c(mu,sigma)
 
 # see also the photographs from Student's notebook ('Original small sample data and notes")
 # under the link "Gosset' 750 samples of size n=4" 
-# on website http://www.biostat.mcgill.ca/hanley/Student/
+# on website https://jhanley.biostat.mcgill.ca/Student/
 # and while there, look at the cover of the Notebook containing his yeast-cell counts
-# http://www.medicine.mcgill.ca/epidemiology/hanley/Student/750samplesOf4/Covers.JPG
+# https://jhanley.biostat.mcgill.ca/Student/750samplesOf4
 # (Biometrika 1907) and decide for yourself why Gosset, when forced to write under a 
 # pen-name, might have taken the name he did!
 
@@ -285,6 +276,7 @@ Dsq &lt;- mahalanobis(MacdonellDF, mu, sigma)
 Q &lt;- qchisq(1:3000/3000, 2)
 plot(Q, sort(Dsq), xlab="Chisquare (2) quantile", ylab="Squared distance")
 abline(a=0, b=1, col="red", lwd=2)
+
 
 
 

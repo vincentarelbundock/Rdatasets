@@ -1,47 +1,43 @@
-.. container::
+===== ===============
+cloth R Documentation
+===== ===============
 
-   .. container::
+Number of Flaws in Cloth
+------------------------
 
-      ===== ===============
-      cloth R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Number of Flaws in Cloth
-         :name: number-of-flaws-in-cloth
+The ``cloth`` data frame has 32 rows and 2 columns.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The ``cloth`` data frame has 32 rows and 2 columns.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   cloth
 
-      .. code:: R
+Format
+~~~~~~
 
-         cloth
+This data frame contains the following columns:
 
-      .. rubric:: Format
-         :name: format
+``x``
+   The length of the roll of cloth.
 
-      This data frame contains the following columns:
+``y``
+   The number of flaws found in the roll.
 
-      ``x``
-         The length of the roll of cloth.
+Source
+~~~~~~
 
-      ``y``
-         The number of flaws found in the roll.
+The data were obtained from
 
-      .. rubric:: Source
-         :name: source
+Bissell, A.F. (1972) A negative binomial model with varying element
+size. *Biometrika*, **59**, 435–441.
 
-      The data were obtained from
+References
+~~~~~~~~~~
 
-      Bissell, A.F. (1972) A negative binomial model with varying
-      element size. *Biometrika*, **59**, 435–441.
-
-      .. rubric:: References
-         :name: references
-
-      Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and
-      Their Application*. Cambridge University Press.
+Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
+Application*. Cambridge University Press.

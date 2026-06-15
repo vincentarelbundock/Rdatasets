@@ -1,50 +1,46 @@
-.. container::
+====== ===============
+beanie R Documentation
+====== ===============
 
-   .. container::
+Age and value of 50 beanie baby toys
+------------------------------------
 
-      ====== ===============
-      beanie R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Age and value of 50 beanie baby toys
-         :name: age-and-value-of-50-beanie-baby-toys
+Age and value of 50 beanie baby toys
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Age and value of 50 beanie baby toys
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   beanie
 
-      .. code:: R
+Format
+~~~~~~
 
-         beanie
+A data frame with 50 rows and 3 columns:
 
-      .. rubric:: Format
-         :name: format
+name
+   Name of the toy
 
-      A data frame with 50 rows and 3 columns:
+age
+   Age of the toy in months
 
-      name
-         Name of the toy
+value
+   Market value of the toy in US dollars
 
-      age
-         Age of the toy in months
+Source
+~~~~~~
 
-      value
-         Market value of the toy in US dollars
+Beanie world magazine
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Beanie world magazine
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-          head(beanie)
-          summary(beanie)
-          plot(beanie$age, beanie$value, xlab="Age", ylab="Value", pch="*", col="red")
+    head(beanie)
+    summary(beanie)
+    plot(beanie$age, beanie$value, xlab="Age", ylab="Value", pch="*", col="red")

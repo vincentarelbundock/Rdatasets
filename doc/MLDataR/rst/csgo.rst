@@ -1,89 +1,84 @@
-.. container::
+==== ===============
+csgo R Documentation
+==== ===============
 
-   .. container::
+csgo
+----
 
-      ==== ===============
-      csgo R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: csgo
-         :name: csgo
+csgo
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      csgo
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   csgo
 
-      .. code:: R
+Format
+~~~~~~
 
-         csgo
+A data frame with 1,133 rows and 17 variables:
 
-      .. rubric:: Format
-         :name: format
+map
+   Map on which the match was played
 
-      A data frame with 1,133 rows and 17 variables:
+day
+   Day of the month
 
-      map
-         Map on which the match was played
+month
+   Month of the year
 
-      day
-         Day of the month
+year
+   Year
 
-      month
-         Month of the year
+date
+   Date of match DD/MM/YYYY
 
-      year
-         Year
+wait_time_s
+   Time waited to find match
 
-      date
-         Date of match DD/MM/YYYY
+match_time_s
+   Total match length in seconds
 
-      wait_time_s
-         Time waited to find match
+team_a_rounds
+   Number of rounds played as Team A
 
-      match_time_s
-         Total match length in seconds
+team_b_rounds
+   Number of rounds played as Team B
 
-      team_a_rounds
-         Number of rounds played as Team A
+ping
+   Maximum ping in milliseconds;the signal that's sent from one computer
+   to another on the same network
 
-      team_b_rounds
-         Number of rounds played as Team B
+kills
+   Number of kills accumulated in match; max 5 per round
 
-      ping
-         Maximum ping in milliseconds;the signal that's sent from one
-         computer to another on the same network
+assists
+   Number of assists accumulated in a match,inflicting oppononent with
+   more than 50 percent damage,who is then killed by another player
+   accumulated in match max 5 per round
 
-      kills
-         Number of kills accumulated in match; max 5 per round
+deaths
+   Number of times player died during match;max 1 per round
 
-      assists
-         Number of assists accumulated in a match,inflicting oppononent
-         with more than 50 percent damage,who is then killed by another
-         player accumulated in match max 5 per round
+mvps
+   Most Valuable Player award
 
-      deaths
-         Number of times player died during match;max 1 per round
+hs_percent
+   Percentage of kills that were a result from a shot to opponent's head
 
-      mvps
-         Most Valuable Player award
+points
+   Number of points accumulated during match. Apoints are gained from
+   kills, assists,bomb defuses & bomb plants. Points are lost for
+   sucicide and friendly kills
 
-      hs_percent
-         Percentage of kills that were a result from a shot to
-         opponent's head
+result
+   The result of the match, Win, Loss, Draw
 
-      points
-         Number of points accumulated during match. Apoints are gained
-         from kills, assists,bomb defuses & bomb plants. Points are lost
-         for sucicide and friendly kills
+Source
+~~~~~~
 
-      result
-         The result of the match, Win, Loss, Draw
-
-      .. rubric:: Source
-         :name: source
-
-      Extracted by Asif Laldin a.laldin@nhs.net, March-2019
+Extracted by Asif Laldin a.laldin@nhs.net, March-2019

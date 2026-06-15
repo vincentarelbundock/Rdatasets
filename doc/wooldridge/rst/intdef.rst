@@ -1,71 +1,67 @@
-.. container::
+====== ===============
+intdef R Documentation
+====== ===============
 
-   .. container::
+intdef
+------
 
-      ====== ===============
-      intdef R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: intdef
-         :name: intdef
+Wooldridge Source: Economic Report of the President, 2004, Tables B-64,
+B-73, and B-79. Data loads lazily.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Wooldridge Source: Economic Report of the President, 2004, Tables
-      B-64, B-73, and B-79. Data loads lazily.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data('intdef')
 
-      .. code:: R
+Format
+~~~~~~
 
-         data('intdef')
+A data.frame with 56 observations on 13 variables:
 
-      .. rubric:: Format
-         :name: format
+- **year:** 1948 to 2003
 
-      A data.frame with 56 observations on 13 variables:
+- **i3:** 3 month T-bill rate
 
-      -  **year:** 1948 to 2003
+- **inf:** CPI inflation rate
 
-      -  **i3:** 3 month T-bill rate
+- **rec:** federal receipts, percent GDP
 
-      -  **inf:** CPI inflation rate
+- **out:** federal outlays, percent GDP
 
-      -  **rec:** federal receipts, percent GDP
+- **def:** out - rec
 
-      -  **out:** federal outlays, percent GDP
+- **i3_1:** i3[\_n-1]
 
-      -  **def:** out - rec
+- **inf_1:** inf[\_n-1]
 
-      -  **i3_1:** i3[\_n-1]
+- **def_1:** def[\_n-1]
 
-      -  **inf_1:** inf[\_n-1]
+- **ci3:** i3 - i3_1
 
-      -  **def_1:** def[\_n-1]
+- **cinf:** inf - inf_1
 
-      -  **ci3:** i3 - i3_1
+- **cdef:** def - def_1
 
-      -  **cinf:** inf - inf_1
+- **y77:** =1 if year >= 1977; change in FY
 
-      -  **cdef:** def - def_1
+Used in Text
+~~~~~~~~~~~~
 
-      -  **y77:** =1 if year >= 1977; change in FY
+pages 356, 377, 430, 547-548
 
-      .. rubric:: Used in Text
-         :name: used-in-text
+Source
+~~~~~~
 
-      pages 356, 377, 430, 547-548
+https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-          str(intdef)
+    str(intdef)

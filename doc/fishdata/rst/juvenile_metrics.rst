@@ -1,60 +1,55 @@
-.. container::
+================ ===============
+juvenile_metrics R Documentation
+================ ===============
 
-   .. container::
+Juvenile fish metrics data
+--------------------------
 
-      ================ ===============
-      juvenile_metrics R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Juvenile fish metrics data
-         :name: juvenile-fish-metrics-data
+A dataset containing metrics data for juvenile Galaxis maculatus.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset containing metrics data for juvenile Galaxis maculatus.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   juvenile_metrics
 
-      .. code:: R
+Format
+~~~~~~
 
-         juvenile_metrics
+A dataset containing 496 rows and 8 variables
 
-      .. rubric:: Format
-         :name: format
+fish_code
+   Foreign key (matches with 'juveniles')
 
-      A dataset containing 496 rows and 8 variables
+standard_length
+   standard length of the fish (distance from posterior to caudal
+   peduncle), cm
 
-      fish_code
-         Foreign key (matches with 'juveniles')
+body_depth
+   body depth of the fish at its maximum point, cm
 
-      standard_length
-         standard length of the fish (distance from posterior to caudal
-         peduncle), cm
+age
+   Age of fish when caught (days)
 
-      body_depth
-         body depth of the fish at its maximum point, cm
+birthdate
+   Day fish hatched
 
-      age
-         Age of fish when caught (days)
+growth_rate
+   Average daily growth of fish (mm/day)
 
-      birthdate
-         Day fish hatched
+growth_rate
+   Average daily growth of fish over first 10 days of life (mm/day)
 
-      growth_rate
-         Average daily growth of fish (mm/day)
+growth_rate
+   Average daily growth of fish over last 10 days of life (mm/day)
 
-      growth_rate
-         Average daily growth of fish over first 10 days of life
-         (mm/day)
+Examples
+~~~~~~~~
 
-      growth_rate
-         Average daily growth of fish over last 10 days of life (mm/day)
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(juvenile_metrics)
+   data(juvenile_metrics)

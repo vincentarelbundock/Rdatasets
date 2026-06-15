@@ -1,57 +1,52 @@
-.. container::
+=================== ===============
+UCBAdmissions_table R Documentation
+=================== ===============
 
-   .. container::
+Student Admissions at UC Berkeley
+---------------------------------
 
-      =================== ===============
-      UCBAdmissions_table R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Student Admissions at UC Berkeley
-         :name: student-admissions-at-uc-berkeley
+This dataset, UCBAdmissions_table, is a contingency table containing
+aggregate data on applicants to graduate school at UC Berkeley in 1973.
+The data is classified by admission status, gender, and department, and
+it provides insights into admissions patterns for the six largest
+departments.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, UCBAdmissions_table, is a contingency table
-      containing aggregate data on applicants to graduate school at UC
-      Berkeley in 1973. The data is classified by admission status,
-      gender, and department, and it provides insights into admissions
-      patterns for the six largest departments.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(UCBAdmissions_table)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(UCBAdmissions_table)
+A contingency table with 24 cells (2 × 2 × 6), classified by:
 
-      .. rubric:: Format
-         :name: format
+Admit
+   Admission status (Admitted, Rejected).
 
-      A contingency table with 24 cells (2 × 2 × 6), classified by:
+Gender
+   Gender of the applicants (Male, Female).
 
-      Admit
-         Admission status (Admitted, Rejected).
+Dept
+   Department (A, B, C, D, E, F).
 
-      Gender
-         Gender of the applicants (Male, Female).
+The table entries are the number of applicants.
 
-      Dept
-         Department (A, B, C, D, E, F).
+Details
+~~~~~~~
 
-      The table entries are the number of applicants.
+The dataset name has been kept as 'UCBAdmissions_table' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the educationR package and
+assists users in identifying its specific characteristics. The original
+content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'UCBAdmissions_table' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      educationR package and assists users in identifying its specific
-      characteristics. The original content has not been modified in any
-      way.
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset was taken from the datasets package.
+The dataset was taken from the datasets package.

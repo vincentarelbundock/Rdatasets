@@ -1,40 +1,37 @@
-.. container::
+============ ===============
+canadian_gas R Documentation
+============ ===============
 
-   .. container::
+Monthly Canadian gas production
+-------------------------------
 
-      ============ ===============
-      canadian_gas R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Monthly Canadian gas production
-         :name: monthly-canadian-gas-production
+Monthly Canadian gas production, billions of cubic metres, January 1960
+- February 2005
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Monthly Canadian gas production, billions of cubic metres, January
-      1960 - February 2005
+Monthly time series of class 'tsibble'.
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      Monthly time series of class 'tsibble'.
+Hyndman, R.J., Koehler, A.B., Ord, J.K., and Snyder, R.D., (2008)
+*Forecasting with exponential smoothing: the state space approach*,
+Springer.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Hyndman, R.J., Koehler, A.B., Ord, J.K., and Snyder, R.D., (2008)
-      *Forecasting with exponential smoothing: the state space
-      approach*, Springer.
+https://robjhyndman.com/expsmooth/
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      http://www.exponentialsmoothing.net
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         canadian_gas
+   canadian_gas

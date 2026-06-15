@@ -1,200 +1,194 @@
-.. container::
+========== ===============
+randhealth R Documentation
+========== ===============
 
-   .. container::
+Health expenditures and insurance plans
+---------------------------------------
 
-      ========== ===============
-      randhealth R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Health expenditures and insurance plans
-         :name: health-expenditures-and-insurance-plans
+Data from the RAND Health Insurance Experiment. The data comes from Deb
+and Trivedi (2002). It includes variables on the number of contacts with
+a medical doctor, medical expenditures, demographics, health status, and
+insurance status. Cameron and Trivedi (2005).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data from the RAND Health Insurance Experiment. The data comes
-      from Deb and Trivedi (2002). It includes variables on the number
-      of contacts with a medical doctor, medical expenditures,
-      demographics, health status, and insurance status. Cameron and
-      Trivedi (2005).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   randhealth
 
-      .. code:: R
+Format
+~~~~~~
 
-         randhealth
+A data frame with 20,190 observations and 45 variables:
 
-      .. rubric:: Format
-         :name: format
+plan
+   health insurance plan number
 
-      A data frame with 20,190 observations and 45 variables:
+site
+   one of six sites where experiment was conducted
 
-      plan
-         health insurance plan number
+coins
+   medical coinsurance
 
-      site
-         one of six sites where experiment was conducted
+tookphys
+   took baseline physical
 
-      coins
-         medical coinsurance
+year
+   study year
 
-      tookphys
-         took baseline physical
+zper
+   person id, leading digit is sit
 
-      year
-         study year
+black
+   = 1 if race of household head is black
 
-      zper
-         person id, leading digit is sit
+income
+   income based on annual income
 
-      black
-         = 1 if race of household head is black
+xage
+   age that year
 
-      income
-         income based on annual income
+female
+   = 1 if person is female
 
-      xage
-         age that year
+educdec
+   years of schooling of decision maker
 
-      female
-         = 1 if person is female
+time
+   time eligible during the year
 
-      educdec
-         years of schooling of decision maker
+outpdol
+   outpatient exp. excl. ment and
 
-      time
-         time eligible during the year
+drugdol
+   drugs purchased, outpatient
 
-      outpdol
-         outpatient exp. excl. ment and
+suppdol
+   supplies purchased, outpatient
 
-      drugdol
-         drugs purchased, outpatient
+mentdol
+   psychotherapy exp., outpatient
 
-      suppdol
-         supplies purchased, outpatient
+inpdol
+   inpatient exp., facilities and md
 
-      mentdol
-         psychotherapy exp., outpatient
+meddol
+   annual medical expenditures in constant dollars, excluding dental and
+   outpatient mental
 
-      inpdol
-         inpatient exp., facilities and md
+totadm
+   number of hospital admissions
 
-      meddol
-         annual medical expenditures in constant dollars, excluding
-         dental and outpatient mental
+inpmis
+   missing any inpatient charges
 
-      totadm
-         number of hospital admissions
+mentvis
+   number psychotehrapy visits
 
-      inpmis
-         missing any inpatient charges
+mdvis
+   number face-to-face md visits
 
-      mentvis
-         number psychotehrapy visits
+notmdvis
+   number face-to-face, not md visits
 
-      mdvis
-         number face-to-face md visits
+num
+   family size
 
-      notmdvis
-         number face-to-face, not md visits
+mhi
+   mental health index, baseline
 
-      num
-         family size
+disea
+   number of chronic diseases
 
-      mhi
-         mental health index, baseline
+physlm
+   = 1 if person has physical limitation
 
-      disea
-         number of chronic diseases
+ghindx
+   general health index, baseline
 
-      physlm
-         = 1 if person has physical limitation
+mdeoff
+   maximum expenditure offer
 
-      ghindx
-         general health index, baseline
+pioff
+   participation incentive
 
-      mdeoff
-         maximum expenditure offer
+child
+   = 1 if age is less than 18
 
-      pioff
-         participation incentive
+fchild
+   = 1 if female child
 
-      child
-         = 1 if age is less than 18
+lfam
+   log of family size
 
-      fchild
-         = 1 if female child
+lpi
+   log of annual participation incentive payment or 0 if no payment
 
-      lfam
-         log of family size
+idp
+   = 1 if individual deductible plan
 
-      lpi
-         log of annual participation incentive payment or 0 if no
-         payment
+logc
+   log(coinsurance + 1) where coinsurance rate is 0 to 100
 
-      idp
-         = 1 if individual deductible plan
+fmde
+   log(max(medical deductible expenditure)) if idp=1 and mde>1, 0
+   otherwise
 
-      logc
-         log(coinsurance + 1) where coinsurance rate is 0 to 100
+hlthg
+   = 1 if self-rated health is good
 
-      fmde
-         log(max(medical deductible expenditure)) if idp=1 and mde>1, 0
-         otherwise
+hlthf
+   = 1 if self-rated health is fair
 
-      hlthg
-         = 1 if self-rated health is good
+hlthp
+   = 1 if self-rated health is poor, (omitted is excellent)
 
-      hlthf
-         = 1 if self-rated health is fair
+xghindx
+   ghi with imputation
 
-      hlthp
-         = 1 if self-rated health is poor, (omitted is excellent)
+linc
+   log of annual family income, usd
 
-      xghindx
-         ghi with imputation
+lnum
+   log of family size
 
-      linc
-         log of annual family income, usd
+lnmeddol
+   log of medical expenditures given meddol > 0; missing otherwise
 
-      lnum
-         log of family size
+binexp
+   = 1 if medical expenditures > 0
 
-      lnmeddol
-         log of medical expenditures given meddol > 0; missing otherwise
+Section in Text
+~~~~~~~~~~~~~~~
 
-      binexp
-         = 1 if medical expenditures > 0
+16.6 Selection Models, pp. 553-6, 565 20.3 Count Example: Contacts with
+Medical Doctor, p.671
 
-      .. rubric:: Section in Text
-         :name: section-in-text
+Source
+~~~~~~
 
-      16.6 Selection Models, pp. 553-6, 565 20.3 Count Example: Contacts
-      with Medical Doctor, p.671
+http://cameron.econ.ucdavis.edu/mmabook/mmadata.html
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      http://cameron.econ.ucdavis.edu/mmabook/mmadata.html
+Cameron, A. and Trivedi, P. (2005), "Microeconometrics: Methods and
+Applications," Cambridge University Press, New York.
 
-      .. rubric:: References
-         :name: references
+Deb, P. and Trivedi, P.K. (2002), "The Structure of Demand for Health
+Care: Latent Class versus Two-Part Models," Journal of Health Economics,
+21, 601-625.
 
-      Cameron, A. and Trivedi, P. (2005), "Microeconometrics: Methods
-      and Applications," Cambridge University Press, New York.
+RAND Corporation. "RAND's Health Insurance Experiment ."
+https://www.rand.org/health-care/projects/hie.html
 
-      Deb, P. and Trivedi, P.K. (2002), "The Structure of Demand for
-      Health Care: Latent Class versus Two-Part Models," Journal of
-      Health Economics, 21, 601-625.
+Examples
+~~~~~~~~
 
-      RAND Corporation. "RAND's Health Insurance Experiment ."
-      https://www.rand.org/health-care/projects/hie.html
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         summary(randhealth)
+   summary(randhealth)

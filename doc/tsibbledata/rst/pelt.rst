@@ -1,46 +1,42 @@
-.. container::
+==== ===============
+pelt R Documentation
+==== ===============
 
-   .. container::
+Pelt trading records
+--------------------
 
-      ==== ===============
-      pelt R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Pelt trading records
-         :name: pelt-trading-records
+Hudson Bay Company trading records for Snowshoe Hare and Canadian Lynx
+furs from 1845 to 1935. This data contains trade records for all areas
+of the company.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Hudson Bay Company trading records for Snowshoe Hare and Canadian
-      Lynx furs from 1845 to 1935. This data contains trade records for
-      all areas of the company.
+Time series of class ``tsibble``
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      Time series of class ``tsibble``
+``pelt`` is an annual ``tsibble`` with two values:
 
-      .. rubric:: Details
-         :name: details
+===== =========================================
+Hare: The number of Snowshoe Hare pelts traded.
+Lynx: The number of Canadian Lynx pelts traded.
+      
+===== =========================================
 
-      ``pelt`` is an annual ``tsibble`` with two values:
+Source
+~~~~~~
 
-      ===== =========================================
-      Hare: The number of Snowshoe Hare pelts traded.
-      Lynx: The number of Canadian Lynx pelts traded.
-      \     
-      ===== =========================================
+Hudson Bay Company
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Hudson Bay Company
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         library(tsibble)
-         pelt
+   library(tsibble)
+   pelt

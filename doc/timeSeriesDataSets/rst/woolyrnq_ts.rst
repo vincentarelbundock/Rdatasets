@@ -1,52 +1,48 @@
-.. container::
+=========== ===============
+woolyrnq_ts R Documentation
+=========== ===============
 
-   .. container::
+Quarterly Production of Woollen Yarn in Australia
+-------------------------------------------------
 
-      =========== ===============
-      woolyrnq_ts R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Quarterly Production of Woollen Yarn in Australia
-         :name: quarterly-production-of-woollen-yarn-in-australia
+The dataset name has been changed to 'woolyrnq_ts' to avoid confusion
+with other datasets in the R ecosystem from which data have been
+sourced. The suffix 'ts' indicates that this dataset is a time series
+object. This naming convention helps distinguish this dataset as part of
+the 'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'woolyrnq_ts' to avoid
-      confusion with other datasets in the R ecosystem from which data
-      have been sourced. The suffix 'ts' indicates that this dataset is
-      a time series object. This naming convention helps distinguish
-      this dataset as part of the 'timeseriesdatasets' package and
-      assists users in identifying its specific characteristics. The
-      original content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(woolyrnq_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(woolyrnq_ts)
+A 'ts' object with 119 observations:
 
-      .. rubric:: Format
-         :name: format
+time
+   Quarterly time series from 1965 to 1994.
 
-      A 'ts' object with 119 observations:
+value
+   Quarterly production of woollen yarn in Australia (in millions of
+   dollars).
 
-      time
-         Quarterly time series from 1965 to 1994.
+Details
+~~~~~~~
 
-      value
-         Quarterly production of woollen yarn in Australia (in millions
-         of dollars).
+This dataset contains quarterly data on the production of woollen yarn
+in Australia from 1965 to 1994. The values are measured in millions of
+dollars.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains quarterly data on the production of woollen
-      yarn in Australia from 1965 to 1994. The values are measured in
-      millions of dollars.
-
-      .. rubric:: Source
-         :name: source
-
-      Australian Bureau of Statistics.
+Australian Bureau of Statistics.

@@ -1,116 +1,112 @@
-.. container::
+============== ===============
+coffee_ratings R Documentation
+============== ===============
 
-   .. container::
+Coffee Ratings Data
+-------------------
 
-      ============== ===============
-      coffee_ratings R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Coffee Ratings Data
-         :name: coffee-ratings-data
+A sub-set of data on coffee bean ratings / quality originally collected
+by James LeDoux (jmzledoux) and distributed through the R for Data
+Science TidyTuesday project.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A sub-set of data on coffee bean ratings / quality originally
-      collected by James LeDoux (jmzledoux) and distributed through the
-      R for Data Science TidyTuesday project.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   coffee_ratings
 
-      .. code:: R
+Format
+~~~~~~
 
-         coffee_ratings
+A data frame with 1339 batches of coffee beans and 27 variables on each
+batch.
 
-      .. rubric:: Format
-         :name: format
+owner
+   farm owner
 
-      A data frame with 1339 batches of coffee beans and 27 variables on
-      each batch.
+farm_name
+   farm where beans were grown
 
-      owner
-         farm owner
+country_of_origin
+   country where farm is
 
-      farm_name
-         farm where beans were grown
+mill
+   where beans were processed
 
-      country_of_origin
-         country where farm is
+in_country_partner
+   country of coffee partner
 
-      mill
-         where beans were processed
+altitude_low_meters
+   lowest altitude of the farm
 
-      in_country_partner
-         country of coffee partner
+altitude_high_meters
+   highest altitude of the farm
 
-      altitude_low_meters
-         lowest altitude of the farm
+altitude_mean_meters
+   average altitude of the farm
 
-      altitude_high_meters
-         highest altitude of the farm
+number_of_bags
+   number of bags tested
 
-      altitude_mean_meters
-         average altitude of the farm
+bag_weight
+   weight of each tested bag
 
-      number_of_bags
-         number of bags tested
+species
+   bean species
 
-      bag_weight
-         weight of each tested bag
+variety
+   bean variety
 
-      species
-         bean species
+processing_method
+   how beans were processed
 
-      variety
-         bean variety
+aroma
+   bean aroma grade
 
-      processing_method
-         how beans were processed
+flavor
+   bean flavor grade
 
-      aroma
-         bean aroma grade
+aftertaste
+   bean aftertaste grade
 
-      flavor
-         bean flavor grade
+acidity
+   bean acidity grade
 
-      aftertaste
-         bean aftertaste grade
+body
+   bean body grade
 
-      acidity
-         bean acidity grade
+balance
+   bean balance grade
 
-      body
-         bean body grade
+uniformity
+   bean uniformity grade
 
-      balance
-         bean balance grade
+clean_cup
+   bean clean cup grade
 
-      uniformity
-         bean uniformity grade
+sweetness
+   bean sweetness grade
 
-      clean_cup
-         bean clean cup grade
+moisture
+   bean moisture grade
 
-      sweetness
-         bean sweetness grade
+category_one_defects
+   count of category one defects
 
-      moisture
-         bean moisture grade
+category_two_defects
+   count of category two defects
 
-      category_one_defects
-         count of category one defects
+color
+   bean color
 
-      category_two_defects
-         count of category two defects
+total_cup_points
+   total bean rating (0 – 100)
 
-      color
-         bean color
+Source
+~~~~~~
 
-      total_cup_points
-         total bean rating (0 – 100)
-
-      .. rubric:: Source
-         :name: source
-
-      https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-07-07/coffee_ratings.csv.
+https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-07-07/coffee_ratings.csv.

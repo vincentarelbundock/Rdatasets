@@ -1,106 +1,101 @@
-.. container::
+==================== ===============
+ars.earlywhitecorn96 R Documentation
+==================== ===============
 
-   .. container::
+Multi-environment trial of early white food corn
+------------------------------------------------
 
-      ==================== ===============
-      ars.earlywhitecorn96 R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Multi-environment trial of early white food corn
-         :name: multi-environment-trial-of-early-white-food-corn
+Multi-environment trial of early white food corn for 60 white hybrids.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Multi-environment trial of early white food corn for 60 white
-      hybrids.
+A data frame with 540 observations on the following 9 variables.
 
-      .. rubric:: Format
-         :name: format
+``loc``
+   location, 9 levels
 
-      A data frame with 540 observations on the following 9 variables.
+``gen``
+   gen, 60 levels
 
-      ``loc``
-         location, 9 levels
+``yield``
+   yield, bu/ac
 
-      ``gen``
-         gen, 60 levels
+``stand``
+   stand, percent
 
-      ``yield``
-         yield, bu/ac
+``rootlodge``
+   root lodging, percent
 
-      ``stand``
-         stand, percent
+``stalklodge``
+   stalk lodging, percent
 
-      ``rootlodge``
-         root lodging, percent
+``earht``
+   ear height, inches
 
-      ``stalklodge``
-         stalk lodging, percent
+``flower``
+   days to flower
 
-      ``earht``
-         ear height, inches
+``moisture``
+   moisture, percent
 
-      ``flower``
-         days to flower
+Details
+~~~~~~~
 
-      ``moisture``
-         moisture, percent
+Data are the average of 3 replications.
 
-      .. rubric:: Details
-         :name: details
+Yields were measured for each plot and converted to bushels / acre and
+adjusted to 15.5 percent moisture.
 
-      Data are the average of 3 replications.
+Stand is expressed as a percentage of the optimum plant stand.
 
-      Yields were measured for each plot and converted to bushels / acre
-      and adjusted to 15.5 percent moisture.
+Lodging is expressed as a percentage of the total plants for each
+hybrid.
 
-      Stand is expressed as a percentage of the optimum plant stand.
+Ear height was measured from soil level to the top ear leaf collar.
+Heights are expressed in inches.
 
-      Lodging is expressed as a percentage of the total plants for each
-      hybrid.
+Days to flowering is the number of days from planting to mid-tassel or
+mid-silk.
 
-      Ear height was measured from soil level to the top ear leaf
-      collar. Heights are expressed in inches.
+Moisture of the grain was measured at harvest.
 
-      Days to flowering is the number of days from planting to
-      mid-tassel or mid-silk.
+Source
+~~~~~~
 
-      Moisture of the grain was measured at harvest.
+L. Darrah, R. Lundquist, D. West, C. Poneleit, B. Barry, B. Zehr, A.
+Bockholt, L. Maddux, K. Ziegler, and P. Martin. (1996). *White Food Corn
+1996 Performance Tests*. Agricultural Research Service Special Report
+502.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      L. Darrah, R. Lundquist, D. West, C. Poneleit, B. Barry, B. Zehr,
-      A. Bockholt, L. Maddux, K. Ziegler, and P. Martin. (1996). *White
-      Food Corn 1996 Performance Tests*. Agricultural Research Service
-      Special Report 502.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
+     
+     library(agridat)
+     
+     data(ars.earlywhitecorn96)
+     dat <- ars.earlywhitecorn96
 
-      .. code:: R
+     libs(lattice)
+     # These views emphasize differences between locations
+     dotplot(gen~yield, dat, group=loc, auto.key=list(columns=3),
+             main="ars.earlywhitecorn96")
+     ## dotplot(gen~stalklodge, dat, group=loc, auto.key=list(columns=3),
+     ##         main="ars.earlywhitecorn96")
+     splom(~dat[,3:9], group=dat$loc, auto.key=list(columns=3),
+           main="ars.earlywhitecorn96")
+     
+     # MANOVA
+     m1 <- manova(cbind(yield,earht,moisture) ~ gen + loc, dat)
+     m1
+     summary(m1)
+     
 
-         ## Not run: 
-           
-           library(agridat)
-           
-           data(ars.earlywhitecorn96)
-           dat <- ars.earlywhitecorn96
-
-           libs(lattice)
-           # These views emphasize differences between locations
-           dotplot(gen~yield, dat, group=loc, auto.key=list(columns=3),
-                   main="ars.earlywhitecorn96")
-           ## dotplot(gen~stalklodge, dat, group=loc, auto.key=list(columns=3),
-           ##         main="ars.earlywhitecorn96")
-           splom(~dat[,3:9], group=dat$loc, auto.key=list(columns=3),
-                 main="ars.earlywhitecorn96")
-           
-           # MANOVA
-           m1 <- manova(cbind(yield,earht,moisture) ~ gen + loc, dat)
-           m1
-           summary(m1)
-           
-
-         ## End(Not run)
+   ## End(Not run)

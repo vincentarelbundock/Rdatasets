@@ -1,44 +1,40 @@
-.. container::
+======== ===============
+jcars_ts R Documentation
+======== ===============
 
-   .. container::
+Motor Vehicle Production (1947-1989).
+-------------------------------------
 
-      ======== ===============
-      jcars_ts R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Motor Vehicle Production (1947-1989).
-         :name: motor-vehicle-production-1947-1989.
+The dataset name has been changed to 'jcars_ts' to avoid confusion with
+other packages in the R ecosystem from which datasets have been sourced.
+The suffix 'ts' indicates that this dataset is a time series object.
+This naming convention helps distinguish this dataset as part of the
+'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'jcars_ts' to avoid confusion
-      with other packages in the R ecosystem from which datasets have
-      been sourced. The suffix 'ts' indicates that this dataset is a
-      time series object. This naming convention helps distinguish this
-      dataset as part of the 'timeseriesdatasets' package and assists
-      users in identifying its specific characteristics. The original
-      content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(jcars_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(jcars_ts)
+A time series object with 43 observations:
 
-      .. rubric:: Format
-         :name: format
+jcars
+   A numeric vector representing the monthly production of motor
+   vehicles, measured in thousands of units, from January 1947 to
+   December 1989.
 
-      A time series object with 43 observations:
+Source
+~~~~~~
 
-      jcars
-         A numeric vector representing the monthly production of motor
-         vehicles, measured in thousands of units, from January 1947 to
-         December 1989.
-
-      .. rubric:: Source
-         :name: source
-
-      Data provided by the International Organization of Motor Vehicle
-      Manufacturers (OICA).
+Data provided by the International Organization of Motor Vehicle
+Manufacturers (OICA).

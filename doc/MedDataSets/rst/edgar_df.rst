@@ -1,53 +1,48 @@
-.. container::
+======== ===============
+edgar_df R Documentation
+======== ===============
 
-   .. container::
+Relationship Between Gene and Disease in Edgar
+----------------------------------------------
 
-      ======== ===============
-      edgar_df R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Relationship Between Gene and Disease in Edgar
-         :name: relationship-between-gene-and-disease-in-edgar
+The dataset name has been changed to 'edgar_df' to avoid confusion with
+other datasets from packages in the R ecosystem and to follow the naming
+conventions of the 'MedDataSets' package. The suffix '\_df' indicates
+that this dataset is a data frame, helping to distinguish it from other
+datasets within the package and from those in the broader R ecosystem.
+The original content of the dataset has not been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'edgar_df' to avoid confusion
-      with other datasets from packages in the R ecosystem and to follow
-      the naming conventions of the 'MedDataSets' package. The suffix
-      '\_df' indicates that this dataset is a data frame, helping to
-      distinguish it from other datasets within the package and from
-      those in the broader R ecosystem. The original content of the
-      dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(edgar_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(edgar_df)
+A data frame with 1,038,340 observations and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+Gene
+   Gene associated with the disease (factor).
 
-      A data frame with 1,038,340 observations and 2 variables:
+Disease
+   Disease associated with the gene (factor).
 
-      Gene
-         Gene associated with the disease (factor).
+Details
+~~~~~~~
 
-      Disease
-         Disease associated with the gene (factor).
+This dataset contains information about the relationships between genes
+and diseases, specifically focusing on data sourced from the Edgar
+database, providing insights into how specific genes may be associated
+with various diseases.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains information about the relationships between
-      genes and diseases, specifically focusing on data sourced from the
-      Edgar database, providing insights into how specific genes may be
-      associated with various diseases.
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset is derived from the Edgar database and focuses on
-      gene-disease relationships.
+The dataset is derived from the Edgar database and focuses on
+gene-disease relationships.

@@ -1,51 +1,46 @@
-.. container::
+================ ===============
+rpdr_contestants R Documentation
+================ ===============
 
-   .. container::
+RuPaul's Drag Race Contestant Data
+----------------------------------
 
-      ================ ===============
-      rpdr_contestants R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: RuPaul's Drag Race Contestant Data
-         :name: rupauls-drag-race-contestant-data
+These are contestant-level data for RuPaul's Drag Race for all available
+seasons (currently through Season 14). Data include all sorts of
+information.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      These are contestant-level data for RuPaul's Drag Race for all
-      available seasons (currently through Season 14). Data include all
-      sorts of information.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   rpdr_contestants
 
-      .. code:: R
+Format
+~~~~~~
 
-         rpdr_contestants
+A data frame with the following 5 variables.
 
-      .. rubric:: Format
-         :name: format
+``season``
+   a character vector for season
 
-      A data frame with the following 5 variables.
+``contestant``
+   a character vector for contestant's name, by season
 
-      ``season``
-         a character vector for season
+``age``
+   a numeric vector for the respondent's purported age as of filming
 
-      ``contestant``
-         a character vector for contestant's name, by season
+``dob``
+   a date vector for the contestant's purported date of birth
 
-      ``age``
-         a numeric vector for the respondent's purported age as of
-         filming
+``hometown``
+   a character vector for hometown.
 
-      ``dob``
-         a date vector for the contestant's purported date of birth
+Details
+~~~~~~~
 
-      ``hometown``
-         a character vector for hometown.
-
-      .. rubric:: Details
-         :name: details
-
-      Note: Cynthia Lee Fontaine, Shangela, Eureka O'Hara, and Vanessa
-      Vanjie Mateo will appear in this data set twice.
+Note: Cynthia Lee Fontaine, Shangela, Eureka O'Hara, and Vanessa Vanjie
+Mateo will appear in this data set twice.

@@ -1,107 +1,103 @@
-.. container::
+======================= ===============
+panse.cotton.uniformity R Documentation
+======================= ===============
 
-   .. container::
+Uniformity trial of cotton
+--------------------------
 
-      ======================= ===============
-      panse.cotton.uniformity R Documentation
-      ======================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of cotton
-         :name: uniformity-trial-of-cotton
+Uniformity trial of cotton in India in 1934.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of cotton in India in 1934.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("panse.cotton.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("panse.cotton.uniformity")
+A data frame with 1280 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row
 
-      A data frame with 1280 observations on the following 3 variables.
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   total yield per plot, grams
 
-      ``col``
-         column
+Details
+~~~~~~~
 
-      ``yield``
-         total yield per plot, grams
+A uniformity trial of cotton at the Institute of Plant Industry, Indore,
+India.
 
-      .. rubric:: Details
-         :name: details
+The trial consisted of 128 rows of cotton with a spacing of 14 inches
+between rows and length 186 feet 8 inches.
 
-      A uniformity trial of cotton at the Institute of Plant Industry,
-      Indore, India.
+Each harvested plot was 4 rows wide and 4 ft 8 in long, measuring 1/2000
+acre.
 
-      The trial consisted of 128 rows of cotton with a spacing of 14
-      inches between rows and length 186 feet 8 inches.
+Four pickings were made between Nov 1933 and Jan 1934. The data here are
+the total yields.
 
-      Each harvested plot was 4 rows wide and 4 ft 8 in long, measuring
-      1/2000 acre.
+The fertility map shows appreciable variation, not following any
+systematic pattern.
 
-      Four pickings were made between Nov 1933 and Jan 1934. The data
-      here are the total yields.
+Field length: 40 plots \* 4 feet 8 inches = 206 feet 8 inches
 
-      The fertility map shows appreciable variation, not following any
-      systematic pattern.
+Field width: 32 plots \* 4 rows/plot \* 14 inches/row = 150 feet
 
-      Field length: 40 plots \* 4 feet 8 inches = 206 feet 8 inches
+Conclusions: Lower error was obtained when the plots were long rows
+instead of across the rows.
 
-      Field width: 32 plots \* 4 rows/plot \* 14 inches/row = 150 feet
+Transcription details: The data were typed by K.Wright from Panse (1941)
+p. 864-865.
 
-      Conclusions: Lower error was obtained when the plots were long
-      rows instead of across the rows.
+Source
+~~~~~~
 
-      The data were typed by K.Wright from Panse (1941) p. 864-865.
+V. G. Panse (1941). Studies in the technique of field experiments. V.
+Size and shape of blocks and arrangements of plots in cotton trials. The
+Indian Journal Of Agricultural Science, 11, 850-867
+https://archive.org/details/in.ernet.dli.2015.271747/page/n955
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      V. G. Panse (1941). Studies in the technique of field experiments.
-      V. Size and shape of blocks and arrangements of plots in cotton
-      trials. The Indian Journal Of Agricultural Science, 11, 850-867
-      https://archive.org/details/in.ernet.dli.2015.271747/page/n955
+Hutchinson, J. B. and V. G. Panse (1936). Studies in the technique of
+field experiments. I. Size, shape and arrangement of plots in cotton
+trials. Indian J. Agric. Sci., 5, 523-538.
+https://archive.org/details/in.ernet.dli.2015.271739/page/n599
 
-      .. rubric:: References
-         :name: references
+V.G. Panse and P.V. Sukhatme. (1954). Statistical Methods for
+Agricultural Workers. First edition page 137. Fourth edition, page 131.
 
-      Hutchinson, J. B. and V. G. Panse (1936). Studies in the technique
-      of field experiments. I. Size, shape and arrangement of plots in
-      cotton trials. Indian J. Agric. Sci., 5, 523-538.
-      https://archive.org/details/in.ernet.dli.2015.271739/page/n599
+Examples
+~~~~~~~~
 
-      V.G. Panse and P.V. Sukhatme. (1954). Statistical Methods for
-      Agricultural Workers. First edition page 137. Fourth edition, page
-      131.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
-
-         ## Not run: 
-
-         library(agridat)
-         data(panse.cotton.uniformity)
-         dat <- panse.cotton.uniformity
-           
-         # match the CV of Panse 1954
-         # sd(dat$yield)/mean(dat$yield) * 100
-         # 32.1
-           
-         # match the fertility map of Hutchinson, fig 1
-         libs(desplot)
-         desplot(dat, yield ~ col*row,
-                 flip=TRUE, aspect=207/150, # true aspect
-                 main="panse.cotton.uniformity")
+   library(agridat)
+   data(panse.cotton.uniformity)
+   dat <- panse.cotton.uniformity
+     
+   # match the CV of Panse 1954
+   # sd(dat$yield)/mean(dat$yield) * 100
+   # 32.1
+     
+   # match the fertility map of Hutchinson, fig 1
+   libs(desplot)
+   desplot(dat, yield ~ col*row,
+           flip=TRUE, aspect=207/150, # true aspect
+           main="panse.cotton.uniformity")
 
 
-         ## End(Not run)  
+   ## End(Not run)  

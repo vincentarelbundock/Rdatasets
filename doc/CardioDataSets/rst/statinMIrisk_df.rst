@@ -1,61 +1,56 @@
-.. container::
+=============== ===============
+statinMIrisk_df R Documentation
+=============== ===============
 
-   .. container::
+Statin intensity and MI risk
+----------------------------
 
-      =============== ===============
-      statinMIrisk_df R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Statin intensity and MI risk
-         :name: statin-intensity-and-mi-risk
+This dataset, statinMIrisk_df, is a data frame containing results from 4
+clinical trials investigating the effect of statin therapy intensity on
+the risk of myocardial infarction or coronary death. The data compares
+intensive versus standard statin regimens.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, statinMIrisk_df, is a data frame containing results
-      from 4 clinical trials investigating the effect of statin therapy
-      intensity on the risk of myocardial infarction or coronary death.
-      The data compares intensive versus standard statin regimens.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(statinMIrisk_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(statinMIrisk_df)
+A data frame with 4 observations and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+study
+   Study identifier (character)
 
-      A data frame with 4 observations and 5 variables:
+eI
+   Number of events in intensive treatment group (numeric)
 
-      study
-         Study identifier (character)
+nI
+   Total patients in intensive treatment group (numeric)
 
-      eI
-         Number of events in intensive treatment group (numeric)
+eC
+   Number of events in control/standard group (numeric)
 
-      nI
-         Total patients in intensive treatment group (numeric)
+nC
+   Total patients in control/standard group (numeric)
 
-      eC
-         Number of events in control/standard group (numeric)
+Details
+~~~~~~~
 
-      nC
-         Total patients in control/standard group (numeric)
+The dataset name has been kept as 'statinMIrisk_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the CardioDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'df' indicates that the dataset is a standard data frame. The original
+content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'statinMIrisk_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      CardioDataSets package and assists users in identifying its
-      specific characteristics. The suffix 'df' indicates that the
-      dataset is a standard data frame. The original content has not
-      been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the RTSA package version 0.2.2
+Data taken from the RTSA package version 0.2.2

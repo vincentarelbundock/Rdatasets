@@ -1,51 +1,47 @@
-.. container::
+======== ===============
+merzbach R Documentation
+======== ===============
 
-   .. container::
+Merzbach Ceramics
+-----------------
 
-      ======== ===============
-      merzbach R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Merzbach Ceramics
-         :name: merzbach-ceramics
+A dataset containing the ceramic counts from the Merzbach assemblage
+(Germany). The data are grouped into eight phases.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset containing the ceramic counts from the Merzbach
-      assemblage (Germany). The data are grouped into eight phases.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   merzbach
 
-      .. code:: R
+Format
+~~~~~~
 
-         merzbach
+A ``data.frame`` with 8 observations (chronological phases) and 36
+variables (pottery motifs).
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      A ``data.frame`` with 8 observations (chronological phases) and 36
-      variables (pottery motifs).
+Crema, E. R. (2016). Sample codes and data for "Revealing patterns of
+cultural transmission from frequency data: equilibrium and
+non-equilibrium assumptions". *Zenodo*, v1.0.
+`doi:10.5281/zenodo.187558 <https://doi.org/10.5281/zenodo.187558>`__.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Crema, E. R. (2016). Sample codes and data for "Revealing patterns
-      of cultural transmission from frequency data: equilibrium and
-      non-equilibrium assumptions". *Zenodo*, v1.0.
-      `doi:10.5281/zenodo.187558 <https://doi.org/10.5281/zenodo.187558>`__.
+Crema, E. R., Kandler, A. & Shennan, S. (2016). Revealing Patterns of
+Cultural Transmission from Frequency Data: Equilibrium and
+Non-Equilibrium Assumptions. *Scientific Reports*, 6(1).
+`doi:10.1038/srep39122 <https://doi.org/10.1038/srep39122>`__.
 
-      .. rubric:: References
-         :name: references
+See Also
+~~~~~~~~
 
-      Crema, E. R., Kandler, A. & Shennan, S. (2016). Revealing Patterns
-      of Cultural Transmission from Frequency Data: Equilibrium and
-      Non-Equilibrium Assumptions. *Scientific Reports*, 6(1).
-      `doi:10.1038/srep39122 <https://doi.org/10.1038/srep39122>`__.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      Other count data: ``birds``, ``boves``, ``chevelon``,
-      ``compiegne``, ``loire``, ``mississippi``, ``zuni``
+Other count data: ``birds``, ``boves``, ``chevelon``, ``compiegne``,
+``loire``, ``mississippi``, ``zuni``

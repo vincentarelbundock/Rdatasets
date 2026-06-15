@@ -1,0 +1,1001 @@
+rownames,demscore,age,sex,study
+1,53,<60,Male,Poland Gdansk
+2,36,<60,Male,Poland Gdansk
+3,74,>=60,Female,Poland Gdansk
+4,39,>=60,Male,Poland Gdansk
+5,63,<60,Female,Poland Gdansk
+6,55,>=60,Male,Poland Gdansk
+7,49,<60,Female,Poland Gdansk
+8,66,>=60,Male,Poland Gdansk
+9,17,<60,Male,Poland Gdansk
+10,83,>=60,Female,Poland Gdansk
+11,59,>=60,Female,Poland Gdansk
+12,39,<60,Female,Poland Gdansk
+13,40,<60,Male,Poland Gdansk
+14,47,<60,Male,Poland Gdansk
+15,47,>=60,Male,Poland Gdansk
+16,70,<60,Male,Poland Gdansk
+17,98,>=60,Female,Poland Gdansk
+18,55,<60,Female,Poland Gdansk
+19,25,<60,Male,Poland Gdansk
+20,81,>=60,Female,Poland Gdansk
+21,43,<60,Female,Poland Gdansk
+22,49,<60,Male,Poland Gdansk
+23,19,<60,Female,Poland Gdansk
+24,55,>=60,Male,Poland Gdansk
+25,51,>=60,Male,Poland Gdansk
+26,38,<60,Male,Poland Gdansk
+27,63,>=60,Male,Poland Gdansk
+28,92,>=60,Female,Poland Gdansk
+29,58,<60,Female,Poland Gdansk
+30,53,<60,Male,Poland Gdansk
+31,2,<60,Male,Poland Gdansk
+32,66,>=60,Female,Poland Gdansk
+33,78,>=60,Female,Poland Gdansk
+34,19,<60,Male,Poland Gdansk
+35,74,>=60,Male,Poland Gdansk
+36,74,<60,Female,Poland Gdansk
+37,26,<60,Male,Poland Gdansk
+38,63,<60,Female,Poland Gdansk
+39,24,<60,Female,Poland Gdansk
+40,56,>=60,Male,Poland Gdansk
+41,63,>=60,Male,Poland Gdansk
+42,63,>=60,Female,Poland Gdansk
+43,34,<60,Female,Poland Gdansk
+44,77,>=60,Female,Poland Gdansk
+45,87,>=60,Female,Poland Gdansk
+46,70,>=60,Female,Poland Gdansk
+47,51,>=60,Male,Poland Gdansk
+48,69,>=60,Female,Poland Gdansk
+49,38,<60,Male,Poland Gdansk
+50,99,>=60,Male,Poland Gdansk
+51,42,<60,Male,Poland Gdansk
+52,36,<60,Male,Poland Gdansk
+53,44,<60,Female,Poland Gdansk
+54,25,<60,Male,Poland Gdansk
+55,56,<60,Female,Poland Gdansk
+56,72,>=60,Female,Poland Gdansk
+57,84,>=60,Male,Poland Gdansk
+58,29,<60,Male,Poland Gdansk
+59,72,>=60,Male,Poland Gdansk
+60,85,>=60,Female,Poland Gdansk
+61,34,<60,Female,Poland Gdansk
+62,61,>=60,Male,Poland Gdansk
+63,43,>=60,Male,Poland Gdansk
+64,34,<60,Female,Poland Gdansk
+65,43,<60,Female,Poland Gdansk
+66,53,>=60,Male,Poland Gdansk
+67,72,>=60,Female,Poland Gdansk
+68,66,>=60,Female,Poland Gdansk
+69,84,>=60,Female,Poland Gdansk
+70,48,<60,Female,Poland Gdansk
+71,55,<60,Female,Poland Gdansk
+72,70,>=60,Male,Poland Gdansk
+73,43,<60,Female,Poland Gdansk
+74,60,>=60,Male,Poland Gdansk
+75,49,>=60,Male,Poland Gdansk
+76,14,<60,Male,Poland Gdansk
+77,48,>=60,Male,Poland Gdansk
+78,51,<60,Male,Poland Gdansk
+79,100,>=60,Female,Poland Gdansk
+80,37,<60,Female,Poland Gdansk
+81,51,>=60,Female,Poland Gdansk
+82,78,>=60,Female,Poland Gdansk
+83,42,<60,Female,Poland Gdansk
+84,84,>=60,Female,Poland Gdansk
+85,45,>=60,Male,Poland Gdansk
+86,58,>=60,Male,Poland Gdansk
+87,46,>=60,Male,Poland Gdansk
+88,77,>=60,Male,Poland Gdansk
+89,81,>=60,Female,Poland Gdansk
+90,78,>=60,Female,Poland Gdansk
+91,92,>=60,Female,Poland Gdansk
+92,51,>=60,Male,Poland Gdansk
+93,81,>=60,Male,Poland Gdansk
+94,42,<60,Male,Poland Gdansk
+95,48,<60,Female,Poland Gdansk
+96,81,>=60,Female,Poland Gdansk
+97,60,>=60,Male,Poland Gdansk
+98,40,>=60,Female,Poland Gdansk
+99,29,<60,Male,Poland Gdansk
+100,83,>=60,Male,Poland Gdansk
+101,33,<60,Male,Poland Tarnobrzeg
+102,32,<60,Male,Poland Tarnobrzeg
+103,10,<60,Male,Poland Tarnobrzeg
+104,18,<60,Male,Poland Tarnobrzeg
+105,27,<60,Male,Poland Tarnobrzeg
+106,58,<60,Female,Poland Tarnobrzeg
+107,33,<60,Male,Poland Tarnobrzeg
+108,58,<60,Female,Poland Tarnobrzeg
+109,57,>=60,Female,Poland Tarnobrzeg
+110,38,>=60,Male,Poland Tarnobrzeg
+111,31,<60,Female,Poland Tarnobrzeg
+112,41,<60,Female,Poland Tarnobrzeg
+113,59,>=60,Female,Poland Tarnobrzeg
+114,68,>=60,Female,Poland Tarnobrzeg
+115,80,>=60,Male,Poland Tarnobrzeg
+116,44,<60,Female,Poland Tarnobrzeg
+117,5,>=60,Male,Poland Tarnobrzeg
+118,52,<60,Female,Poland Tarnobrzeg
+119,40,>=60,Female,Poland Tarnobrzeg
+120,44,>=60,Male,Poland Tarnobrzeg
+121,9,>=60,Male,Poland Tarnobrzeg
+122,27,<60,Male,Poland Tarnobrzeg
+123,2,<60,Male,Poland Tarnobrzeg
+124,73,>=60,Male,Poland Tarnobrzeg
+125,61,<60,Female,Poland Tarnobrzeg
+126,31,<60,Female,Poland Tarnobrzeg
+127,19,>=60,Female,Poland Tarnobrzeg
+128,53,>=60,Male,Poland Tarnobrzeg
+129,69,>=60,Female,Poland Tarnobrzeg
+130,48,>=60,Female,Poland Tarnobrzeg
+131,29,<60,Male,Poland Tarnobrzeg
+132,66,>=60,Female,Poland Tarnobrzeg
+133,35,>=60,Male,Poland Tarnobrzeg
+134,52,<60,Female,Poland Tarnobrzeg
+135,50,<60,Female,Poland Tarnobrzeg
+136,23,<60,Male,Poland Tarnobrzeg
+137,21,<60,Male,Poland Tarnobrzeg
+138,17,>=60,Female,Poland Tarnobrzeg
+139,59,>=60,Female,Poland Tarnobrzeg
+140,60,<60,Female,Poland Tarnobrzeg
+141,50,>=60,Male,Poland Tarnobrzeg
+142,51,<60,Female,Poland Tarnobrzeg
+143,36,<60,Male,Poland Tarnobrzeg
+144,48,>=60,Female,Poland Tarnobrzeg
+145,12,<60,Male,Poland Tarnobrzeg
+146,58,>=60,Male,Poland Tarnobrzeg
+147,49,<60,Female,Poland Tarnobrzeg
+148,43,>=60,Male,Poland Tarnobrzeg
+149,42,>=60,Male,Poland Tarnobrzeg
+150,51,<60,Female,Poland Tarnobrzeg
+151,35,>=60,Female,Poland Tarnobrzeg
+152,32,<60,Male,Poland Tarnobrzeg
+153,29,>=60,Female,Poland Tarnobrzeg
+154,65,<60,Female,Poland Tarnobrzeg
+155,44,<60,Male,Poland Tarnobrzeg
+156,38,<60,Male,Poland Tarnobrzeg
+157,81,>=60,Female,Poland Tarnobrzeg
+158,43,>=60,Female,Poland Tarnobrzeg
+159,44,<60,Female,Poland Tarnobrzeg
+160,73,>=60,Female,Poland Tarnobrzeg
+161,61,>=60,Female,Poland Tarnobrzeg
+162,27,>=60,Female,Poland Tarnobrzeg
+163,43,>=60,Male,Poland Tarnobrzeg
+164,53,<60,Female,Poland Tarnobrzeg
+165,32,<60,Male,Poland Tarnobrzeg
+166,26,<60,Male,Poland Tarnobrzeg
+167,40,>=60,Female,Poland Tarnobrzeg
+168,28,>=60,Male,Poland Tarnobrzeg
+169,60,<60,Female,Poland Tarnobrzeg
+170,49,>=60,Female,Poland Tarnobrzeg
+171,20,<60,Male,Poland Tarnobrzeg
+172,38,<60,Male,Poland Tarnobrzeg
+173,33,<60,Male,Poland Tarnobrzeg
+174,53,>=60,Male,Poland Tarnobrzeg
+175,52,<60,Male,Poland Tarnobrzeg
+176,57,>=60,Male,Poland Tarnobrzeg
+177,65,<60,Female,Poland Tarnobrzeg
+178,39,>=60,Female,Poland Tarnobrzeg
+179,72,>=60,Male,Poland Tarnobrzeg
+180,37,<60,Male,Poland Tarnobrzeg
+181,44,>=60,Female,Poland Tarnobrzeg
+182,75,>=60,Female,Poland Tarnobrzeg
+183,30,>=60,Male,Poland Tarnobrzeg
+184,35,<60,Female,Poland Tarnobrzeg
+185,20,<60,Male,Poland Tarnobrzeg
+186,15,<60,Female,Poland Tarnobrzeg
+187,32,<60,Female,Poland Tarnobrzeg
+188,56,>=60,Female,Poland Tarnobrzeg
+189,21,<60,Male,Poland Tarnobrzeg
+190,51,<60,Female,Poland Tarnobrzeg
+191,56,<60,Female,Poland Tarnobrzeg
+192,28,<60,Male,Poland Tarnobrzeg
+193,24,>=60,Male,Poland Tarnobrzeg
+194,39,>=60,Male,Poland Tarnobrzeg
+195,45,<60,Female,Poland Tarnobrzeg
+196,59,<60,Female,Poland Tarnobrzeg
+197,68,>=60,Female,Poland Tarnobrzeg
+198,38,<60,Female,Poland Tarnobrzeg
+199,51,>=60,Male,Poland Tarnobrzeg
+200,47,<60,Male,Poland Tarnobrzeg
+201,64,<60,Female,Poland Warsaw
+202,50,<60,Female,Poland Warsaw
+203,42,<60,Male,Poland Warsaw
+204,57,>=60,Male,Poland Warsaw
+205,48,<60,Female,Poland Warsaw
+206,43,<60,Female,Poland Warsaw
+207,67,<60,Female,Poland Warsaw
+208,14,<60,Male,Poland Warsaw
+209,59,<60,Female,Poland Warsaw
+210,35,<60,Male,Poland Warsaw
+211,45,>=60,Female,Poland Warsaw
+212,40,<60,Female,Poland Warsaw
+213,43,>=60,Male,Poland Warsaw
+214,90,>=60,Female,Poland Warsaw
+215,66,>=60,Female,Poland Warsaw
+216,50,<60,Male,Poland Warsaw
+217,32,<60,Male,Poland Warsaw
+218,68,>=60,Female,Poland Warsaw
+219,19,<60,Male,Poland Warsaw
+220,58,>=60,Female,Poland Warsaw
+221,31,>=60,Male,Poland Warsaw
+222,53,>=60,Female,Poland Warsaw
+223,53,<60,Male,Poland Warsaw
+224,36,>=60,Male,Poland Warsaw
+225,50,<60,Male,Poland Warsaw
+226,78,>=60,Female,Poland Warsaw
+227,50,>=60,Male,Poland Warsaw
+228,42,<60,Female,Poland Warsaw
+229,34,>=60,Female,Poland Warsaw
+230,58,>=60,Female,Poland Warsaw
+231,47,>=60,Male,Poland Warsaw
+232,36,<60,Female,Poland Warsaw
+233,45,>=60,Female,Poland Warsaw
+234,30,<60,Male,Poland Warsaw
+235,40,<60,Female,Poland Warsaw
+236,24,>=60,Male,Poland Warsaw
+237,79,>=60,Male,Poland Warsaw
+238,52,>=60,Female,Poland Warsaw
+239,62,<60,Female,Poland Warsaw
+240,35,<60,Male,Poland Warsaw
+241,53,>=60,Female,Poland Warsaw
+242,58,>=60,Female,Poland Warsaw
+243,83,>=60,Male,Poland Warsaw
+244,56,<60,Female,Poland Warsaw
+245,34,>=60,Female,Poland Warsaw
+246,45,<60,Female,Poland Warsaw
+247,49,>=60,Male,Poland Warsaw
+248,33,<60,Male,Poland Warsaw
+249,36,>=60,Male,Poland Warsaw
+250,35,<60,Female,Poland Warsaw
+251,40,<60,Male,Poland Warsaw
+252,74,>=60,Female,Poland Warsaw
+253,32,<60,Female,Poland Warsaw
+254,48,<60,Male,Poland Warsaw
+255,35,<60,Female,Poland Warsaw
+256,34,>=60,Male,Poland Warsaw
+257,34,<60,Male,Poland Warsaw
+258,75,>=60,Female,Poland Warsaw
+259,50,>=60,Female,Poland Warsaw
+260,33,<60,Female,Poland Warsaw
+261,58,>=60,Male,Poland Warsaw
+262,66,<60,Female,Poland Warsaw
+263,68,>=60,Male,Poland Warsaw
+264,41,>=60,Male,Poland Warsaw
+265,32,>=60,Male,Poland Warsaw
+266,75,<60,Male,Poland Warsaw
+267,19,>=60,Male,Poland Warsaw
+268,43,<60,Male,Poland Warsaw
+269,66,<60,Female,Poland Warsaw
+270,22,<60,Male,Poland Warsaw
+271,37,<60,Female,Poland Warsaw
+272,18,>=60,Female,Poland Warsaw
+273,46,>=60,Male,Poland Warsaw
+274,59,<60,Female,Poland Warsaw
+275,57,>=60,Female,Poland Warsaw
+276,56,>=60,Male,Poland Warsaw
+277,26,>=60,Male,Poland Warsaw
+278,53,>=60,Male,Poland Warsaw
+279,63,<60,Male,Poland Warsaw
+280,29,<60,Male,Poland Warsaw
+281,44,<60,Female,Poland Warsaw
+282,78,<60,Female,Poland Warsaw
+283,63,>=60,Female,Poland Warsaw
+284,28,<60,Female,Poland Warsaw
+285,52,<60,Male,Poland Warsaw
+286,41,<60,Male,Poland Warsaw
+287,65,>=60,Female,Poland Warsaw
+288,74,>=60,Female,Poland Warsaw
+289,65,<60,Female,Poland Warsaw
+290,54,>=60,Female,Poland Warsaw
+291,72,<60,Male,Poland Warsaw
+292,48,<60,Female,Poland Warsaw
+293,41,<60,Female,Poland Warsaw
+294,53,>=60,Male,Poland Warsaw
+295,57,<60,Female,Poland Warsaw
+296,64,>=60,Male,Poland Warsaw
+297,63,<60,Female,Poland Warsaw
+298,35,>=60,Male,Poland Warsaw
+299,82,<60,Female,Poland Warsaw
+300,47,>=60,Female,Poland Warsaw
+301,82,>=60,Female,Poland Swiebodzin
+302,53,>=60,Male,Poland Swiebodzin
+303,33,<60,Male,Poland Swiebodzin
+304,35,>=60,Female,Poland Swiebodzin
+305,71,>=60,Male,Poland Swiebodzin
+306,41,>=60,Female,Poland Swiebodzin
+307,44,<60,Male,Poland Swiebodzin
+308,56,>=60,Female,Poland Swiebodzin
+309,54,<60,Female,Poland Swiebodzin
+310,43,>=60,Male,Poland Swiebodzin
+311,85,<60,Female,Poland Swiebodzin
+312,49,<60,Male,Poland Swiebodzin
+313,46,<60,Female,Poland Swiebodzin
+314,49,<60,Female,Poland Swiebodzin
+315,24,<60,Male,Poland Swiebodzin
+316,52,>=60,Male,Poland Swiebodzin
+317,61,>=60,Male,Poland Swiebodzin
+318,67,<60,Male,Poland Swiebodzin
+319,45,>=60,Male,Poland Swiebodzin
+320,74,>=60,Female,Poland Swiebodzin
+321,47,<60,Female,Poland Swiebodzin
+322,45,<60,Male,Poland Swiebodzin
+323,49,>=60,Male,Poland Swiebodzin
+324,68,>=60,Female,Poland Swiebodzin
+325,71,<60,Male,Poland Swiebodzin
+326,50,>=60,Female,Poland Swiebodzin
+327,64,<60,Male,Poland Swiebodzin
+328,37,<60,Male,Poland Swiebodzin
+329,20,<60,Female,Poland Swiebodzin
+330,72,>=60,Male,Poland Swiebodzin
+331,63,<60,Female,Poland Swiebodzin
+332,45,>=60,Male,Poland Swiebodzin
+333,52,>=60,Male,Poland Swiebodzin
+334,38,<60,Male,Poland Swiebodzin
+335,55,>=60,Male,Poland Swiebodzin
+336,41,>=60,Female,Poland Swiebodzin
+337,69,<60,Male,Poland Swiebodzin
+338,42,<60,Male,Poland Swiebodzin
+339,41,>=60,Male,Poland Swiebodzin
+340,50,<60,Female,Poland Swiebodzin
+341,74,>=60,Female,Poland Swiebodzin
+342,36,>=60,Male,Poland Swiebodzin
+343,48,<60,Male,Poland Swiebodzin
+344,62,>=60,Male,Poland Swiebodzin
+345,53,>=60,Male,Poland Swiebodzin
+346,50,<60,Male,Poland Swiebodzin
+347,84,<60,Female,Poland Swiebodzin
+348,73,>=60,Male,Poland Swiebodzin
+349,40,<60,Female,Poland Swiebodzin
+350,44,>=60,Female,Poland Swiebodzin
+351,76,<60,Female,Poland Swiebodzin
+352,57,>=60,Male,Poland Swiebodzin
+353,54,<60,Male,Poland Swiebodzin
+354,61,<60,Female,Poland Swiebodzin
+355,51,>=60,Female,Poland Swiebodzin
+356,70,>=60,Female,Poland Swiebodzin
+357,45,>=60,Male,Poland Swiebodzin
+358,15,>=60,Male,Poland Swiebodzin
+359,62,<60,Female,Poland Swiebodzin
+360,40,<60,Female,Poland Swiebodzin
+361,26,<60,Female,Poland Swiebodzin
+362,56,>=60,Female,Poland Swiebodzin
+363,36,<60,Male,Poland Swiebodzin
+364,74,>=60,Female,Poland Swiebodzin
+365,56,>=60,Female,Poland Swiebodzin
+366,46,>=60,Male,Poland Swiebodzin
+367,45,<60,Female,Poland Swiebodzin
+368,61,>=60,Male,Poland Swiebodzin
+369,51,<60,Female,Poland Swiebodzin
+370,43,<60,Male,Poland Swiebodzin
+371,79,>=60,Female,Poland Swiebodzin
+372,34,<60,Male,Poland Swiebodzin
+373,37,>=60,Male,Poland Swiebodzin
+374,68,<60,Female,Poland Swiebodzin
+375,58,>=60,Male,Poland Swiebodzin
+376,40,<60,Male,Poland Swiebodzin
+377,30,<60,Male,Poland Swiebodzin
+378,85,<60,Female,Poland Swiebodzin
+379,76,>=60,Male,Poland Swiebodzin
+380,43,<60,Female,Poland Swiebodzin
+381,47,>=60,Female,Poland Swiebodzin
+382,45,<60,Male,Poland Swiebodzin
+383,49,<60,Female,Poland Swiebodzin
+384,27,<60,Male,Poland Swiebodzin
+385,51,>=60,Female,Poland Swiebodzin
+386,56,<60,Female,Poland Swiebodzin
+387,45,>=60,Female,Poland Swiebodzin
+388,51,<60,Female,Poland Swiebodzin
+389,50,>=60,Male,Poland Swiebodzin
+390,56,>=60,Male,Poland Swiebodzin
+391,41,>=60,Male,Poland Swiebodzin
+392,32,>=60,Male,Poland Swiebodzin
+393,56,>=60,Male,Poland Swiebodzin
+394,45,>=60,Female,Poland Swiebodzin
+395,35,<60,Female,Poland Swiebodzin
+396,17,<60,Male,Poland Swiebodzin
+397,26,<60,Male,Poland Swiebodzin
+398,58,>=60,Male,Poland Swiebodzin
+399,65,<60,Female,Poland Swiebodzin
+400,73,>=60,Female,Poland Swiebodzin
+401,40,<60,Male,Poland Steszew
+402,30,<60,Female,Poland Steszew
+403,52,<60,Female,Poland Steszew
+404,52,<60,Male,Poland Steszew
+405,45,<60,Female,Poland Steszew
+406,77,<60,Female,Poland Steszew
+407,45,>=60,Female,Poland Steszew
+408,34,>=60,Male,Poland Steszew
+409,64,>=60,Male,Poland Steszew
+410,51,>=60,Female,Poland Steszew
+411,36,<60,Female,Poland Steszew
+412,30,>=60,Male,Poland Steszew
+413,48,<60,Male,Poland Steszew
+414,76,<60,Female,Poland Steszew
+415,64,<60,Female,Poland Steszew
+416,60,>=60,Female,Poland Steszew
+417,58,<60,Female,Poland Steszew
+418,64,<60,Female,Poland Steszew
+419,54,<60,Female,Poland Steszew
+420,64,>=60,Female,Poland Steszew
+421,72,>=60,Female,Poland Steszew
+422,39,<60,Female,Poland Steszew
+423,36,>=60,Male,Poland Steszew
+424,69,>=60,Female,Poland Steszew
+425,41,>=60,Male,Poland Steszew
+426,36,<60,Male,Poland Steszew
+427,65,<60,Female,Poland Steszew
+428,67,<60,Female,Poland Steszew
+429,73,>=60,Female,Poland Steszew
+430,32,<60,Male,Poland Steszew
+431,55,>=60,Female,Poland Steszew
+432,42,<60,Female,Poland Steszew
+433,39,>=60,Male,Poland Steszew
+434,50,<60,Female,Poland Steszew
+435,37,>=60,Male,Poland Steszew
+436,56,>=60,Male,Poland Steszew
+437,34,>=60,Male,Poland Steszew
+438,36,<60,Male,Poland Steszew
+439,62,>=60,Male,Poland Steszew
+440,82,>=60,Female,Poland Steszew
+441,75,<60,Female,Poland Steszew
+442,78,>=60,Male,Poland Steszew
+443,67,>=60,Female,Poland Steszew
+444,60,>=60,Female,Poland Steszew
+445,32,<60,Male,Poland Steszew
+446,17,<60,Male,Poland Steszew
+447,45,>=60,Male,Poland Steszew
+448,66,>=60,Female,Poland Steszew
+449,79,>=60,Female,Poland Steszew
+450,26,>=60,Male,Poland Steszew
+451,75,<60,Female,Poland Steszew
+452,33,>=60,Female,Poland Steszew
+453,39,>=60,Male,Poland Steszew
+454,71,>=60,Female,Poland Steszew
+455,34,<60,Male,Poland Steszew
+456,65,<60,Female,Poland Steszew
+457,82,>=60,Female,Poland Steszew
+458,38,>=60,Female,Poland Steszew
+459,69,>=60,Male,Poland Steszew
+460,54,>=60,Male,Poland Steszew
+461,33,>=60,Male,Poland Steszew
+462,53,>=60,Male,Poland Steszew
+463,55,<60,Female,Poland Steszew
+464,46,<60,Female,Poland Steszew
+465,41,<60,Male,Poland Steszew
+466,67,<60,Female,Poland Steszew
+467,25,<60,Male,Poland Steszew
+468,37,<60,Female,Poland Steszew
+469,67,>=60,Female,Poland Steszew
+470,49,<60,Male,Poland Steszew
+471,56,>=60,Male,Poland Steszew
+472,62,>=60,Female,Poland Steszew
+473,39,>=60,Male,Poland Steszew
+474,80,>=60,Female,Poland Steszew
+475,30,<60,Female,Poland Steszew
+476,39,<60,Male,Poland Steszew
+477,41,<60,Male,Poland Steszew
+478,48,<60,Female,Poland Steszew
+479,43,>=60,Female,Poland Steszew
+480,68,>=60,Female,Poland Steszew
+481,64,>=60,Female,Poland Steszew
+482,31,>=60,Male,Poland Steszew
+483,57,<60,Female,Poland Steszew
+484,72,>=60,Female,Poland Steszew
+485,52,<60,Female,Poland Steszew
+486,61,>=60,Female,Poland Steszew
+487,23,>=60,Male,Poland Steszew
+488,41,<60,Female,Poland Steszew
+489,96,>=60,Male,Poland Steszew
+490,53,<60,Female,Poland Steszew
+491,76,>=60,Female,Poland Steszew
+492,14,<60,Male,Poland Steszew
+493,53,<60,Male,Poland Steszew
+494,38,<60,Male,Poland Steszew
+495,51,>=60,Male,Poland Steszew
+496,52,<60,Female,Poland Steszew
+497,38,<60,Male,Poland Steszew
+498,78,<60,Female,Poland Steszew
+499,41,<60,Male,Poland Steszew
+500,53,>=60,Male,Poland Steszew
+501,34,<60,Female,Albania
+502,64,<60,Female,Albania
+503,32,>=60,Male,Albania
+504,48,<60,Female,Albania
+505,72,>=60,Female,Albania
+506,51,<60,Female,Albania
+507,58,>=60,Male,Albania
+508,26,>=60,Male,Albania
+509,24,>=60,Male,Albania
+510,57,<60,Male,Albania
+511,18,>=60,Male,Albania
+512,38,>=60,Male,Albania
+513,27,<60,Male,Albania
+514,46,>=60,Male,Albania
+515,54,>=60,Male,Albania
+516,84,<60,Male,Albania
+517,54,>=60,Male,Albania
+518,28,<60,Male,Albania
+519,41,<60,Male,Albania
+520,60,<60,Male,Albania
+521,55,>=60,Female,Albania
+522,48,<60,Male,Albania
+523,44,<60,Male,Albania
+524,53,<60,Male,Albania
+525,31,>=60,Male,Albania
+526,49,<60,Female,Albania
+527,52,<60,Female,Albania
+528,22,<60,Male,Albania
+529,17,<60,Male,Albania
+530,30,<60,Male,Albania
+531,44,>=60,Male,Albania
+532,68,<60,Female,Albania
+533,45,<60,Male,Albania
+534,48,>=60,Female,Albania
+535,40,<60,Male,Albania
+536,43,>=60,Female,Albania
+537,49,>=60,Male,Albania
+538,15,<60,Male,Albania
+539,52,<60,Male,Albania
+540,74,>=60,Male,Albania
+541,80,>=60,Female,Albania
+542,38,>=60,Male,Albania
+543,34,>=60,Male,Albania
+544,27,<60,Male,Albania
+545,70,>=60,Female,Albania
+546,53,<60,Male,Albania
+547,23,>=60,Female,Albania
+548,73,>=60,Female,Albania
+549,29,<60,Male,Albania
+550,62,>=60,Female,Albania
+551,36,<60,Male,Albania
+552,58,<60,Female,Albania
+553,44,>=60,Female,Albania
+554,58,<60,Male,Albania
+555,46,<60,Male,Albania
+556,47,>=60,Male,Albania
+557,70,>=60,Female,Albania
+558,54,>=60,Male,Albania
+559,44,<60,Male,Albania
+560,14,<60,Female,Albania
+561,20,<60,Male,Albania
+562,64,<60,Female,Albania
+563,60,>=60,Female,Albania
+564,43,<60,Male,Albania
+565,28,>=60,Male,Albania
+566,42,<60,Female,Albania
+567,29,<60,Female,Albania
+568,62,>=60,Male,Albania
+569,70,<60,Female,Albania
+570,52,<60,Female,Albania
+571,56,<60,Male,Albania
+572,51,>=60,Male,Albania
+573,66,<60,Male,Albania
+574,57,<60,Male,Albania
+575,40,<60,Female,Albania
+576,59,>=60,Male,Albania
+577,61,>=60,Male,Albania
+578,75,>=60,Female,Albania
+579,28,>=60,Male,Albania
+580,75,>=60,Female,Albania
+581,38,<60,Female,Albania
+582,41,<60,Female,Albania
+583,30,<60,Male,Albania
+584,43,>=60,Female,Albania
+585,39,<60,Male,Albania
+586,57,<60,Female,Albania
+587,33,<60,Male,Albania
+588,27,>=60,Male,Albania
+589,48,<60,Female,Albania
+590,56,<60,Female,Albania
+591,35,>=60,Male,Albania
+592,50,<60,Male,Albania
+593,76,>=60,Male,Albania
+594,28,>=60,Male,Albania
+595,18,<60,Female,Albania
+596,42,>=60,Female,Albania
+597,44,<60,Male,Albania
+598,40,<60,Female,Albania
+599,26,<60,Male,Albania
+600,52,>=60,Male,Albania
+601,77,<60,Female,Russia
+602,37,>=60,Male,Russia
+603,67,>=60,Male,Russia
+604,42,<60,Female,Russia
+605,46,<60,Male,Russia
+606,52,>=60,Female,Russia
+607,49,>=60,Male,Russia
+608,59,<60,Female,Russia
+609,30,>=60,Male,Russia
+610,38,<60,Male,Russia
+611,84,>=60,Female,Russia
+612,59,<60,Male,Russia
+613,78,<60,Female,Russia
+614,25,>=60,Female,Russia
+615,49,<60,Male,Russia
+616,54,<60,Male,Russia
+617,50,>=60,Male,Russia
+618,53,>=60,Male,Russia
+619,40,<60,Male,Russia
+620,72,<60,Female,Russia
+621,59,<60,Male,Russia
+622,65,>=60,Male,Russia
+623,30,<60,Male,Russia
+624,45,<60,Male,Russia
+625,24,<60,Male,Russia
+626,47,>=60,Female,Russia
+627,30,<60,Male,Russia
+628,76,>=60,Female,Russia
+629,51,<60,Female,Russia
+630,49,>=60,Male,Russia
+631,41,>=60,Female,Russia
+632,74,<60,Female,Russia
+633,53,>=60,Male,Russia
+634,27,<60,Male,Russia
+635,52,>=60,Female,Russia
+636,53,<60,Male,Russia
+637,33,<60,Male,Russia
+638,34,<60,Male,Russia
+639,58,<60,Male,Russia
+640,37,>=60,Male,Russia
+641,29,>=60,Female,Russia
+642,31,>=60,Male,Russia
+643,29,<60,Male,Russia
+644,54,>=60,Male,Russia
+645,46,>=60,Male,Russia
+646,58,>=60,Male,Russia
+647,62,>=60,Female,Russia
+648,50,>=60,Female,Russia
+649,48,>=60,Male,Russia
+650,23,>=60,Male,Russia
+651,39,>=60,Male,Russia
+652,26,>=60,Female,Russia
+653,44,<60,Male,Russia
+654,45,<60,Female,Russia
+655,55,>=60,Male,Russia
+656,82,>=60,Female,Russia
+657,40,>=60,Female,Russia
+658,26,<60,Male,Russia
+659,62,>=60,Male,Russia
+660,41,<60,Male,Russia
+661,25,<60,Male,Russia
+662,47,<60,Male,Russia
+663,36,>=60,Female,Russia
+664,82,>=60,Female,Russia
+665,13,<60,Female,Russia
+666,48,<60,Male,Russia
+667,37,<60,Male,Russia
+668,52,>=60,Female,Russia
+669,11,<60,Male,Russia
+670,26,>=60,Male,Russia
+671,56,<60,Male,Russia
+672,54,>=60,Female,Russia
+673,32,>=60,Female,Russia
+674,46,<60,Male,Russia
+675,48,<60,Female,Russia
+676,48,<60,Male,Russia
+677,57,>=60,Female,Russia
+678,25,>=60,Male,Russia
+679,50,>=60,Male,Russia
+680,66,<60,Female,Russia
+681,43,<60,Female,Russia
+682,46,>=60,Female,Russia
+683,36,>=60,Female,Russia
+684,36,>=60,Male,Russia
+685,72,<60,Male,Russia
+686,46,<60,Male,Russia
+687,74,<60,Female,Russia
+688,49,>=60,Female,Russia
+689,66,>=60,Male,Russia
+690,47,>=60,Male,Russia
+691,25,>=60,Male,Russia
+692,46,<60,Female,Russia
+693,41,<60,Male,Russia
+694,53,>=60,Male,Russia
+695,39,<60,Female,Russia
+696,62,>=60,Female,Russia
+697,69,<60,Male,Russia
+698,66,>=60,Male,Russia
+699,42,>=60,Male,Russia
+700,65,>=60,Male,Russia
+701,34,<60,Female,Russia Moskov
+702,84,<60,Female,Russia Moskov
+703,66,>=60,Male,Russia Moskov
+704,41,>=60,Male,Russia Moskov
+705,40,<60,Female,Russia Moskov
+706,60,<60,Female,Russia Moskov
+707,66,>=60,Male,Russia Moskov
+708,58,>=60,Male,Russia Moskov
+709,62,<60,Female,Russia Moskov
+710,41,<60,Male,Russia Moskov
+711,58,<60,Female,Russia Moskov
+712,48,>=60,Male,Russia Moskov
+713,36,>=60,Male,Russia Moskov
+714,38,<60,Male,Russia Moskov
+715,72,>=60,Male,Russia Moskov
+716,40,<60,Female,Russia Moskov
+717,38,>=60,Male,Russia Moskov
+718,63,>=60,Female,Russia Moskov
+719,58,<60,Female,Russia Moskov
+720,51,<60,Female,Russia Moskov
+721,65,>=60,Male,Russia Moskov
+722,73,>=60,Female,Russia Moskov
+723,42,>=60,Female,Russia Moskov
+724,47,>=60,Male,Russia Moskov
+725,72,>=60,Female,Russia Moskov
+726,71,>=60,Male,Russia Moskov
+727,51,<60,Female,Russia Moskov
+728,72,>=60,Male,Russia Moskov
+729,74,>=60,Female,Russia Moskov
+730,56,>=60,Male,Russia Moskov
+731,45,<60,Male,Russia Moskov
+732,49,>=60,Male,Russia Moskov
+733,61,>=60,Male,Russia Moskov
+734,49,>=60,Male,Russia Moskov
+735,56,>=60,Male,Russia Moskov
+736,51,<60,Female,Russia Moskov
+737,55,>=60,Male,Russia Moskov
+738,78,>=60,Female,Russia Moskov
+739,28,<60,Female,Russia Moskov
+740,49,>=60,Female,Russia Moskov
+741,53,>=60,Male,Russia Moskov
+742,61,<60,Male,Russia Moskov
+743,51,<60,Male,Russia Moskov
+744,78,>=60,Male,Russia Moskov
+745,47,>=60,Male,Russia Moskov
+746,92,>=60,Female,Russia Moskov
+747,66,<60,Female,Russia Moskov
+748,40,<60,Male,Russia Moskov
+749,45,<60,Female,Russia Moskov
+750,65,>=60,Male,Russia Moskov
+751,52,<60,Female,Russia Moskov
+752,43,<60,Male,Russia Moskov
+753,42,<60,Female,Russia Moskov
+754,78,>=60,Female,Russia Moskov
+755,70,>=60,Female,Russia Moskov
+756,61,>=60,Male,Russia Moskov
+757,58,>=60,Female,Russia Moskov
+758,58,>=60,Female,Russia Moskov
+759,52,>=60,Female,Russia Moskov
+760,41,>=60,Female,Russia Moskov
+761,75,>=60,Female,Russia Moskov
+762,53,>=60,Male,Russia Moskov
+763,51,<60,Male,Russia Moskov
+764,60,>=60,Female,Russia Moskov
+765,81,>=60,Female,Russia Moskov
+766,51,>=60,Male,Russia Moskov
+767,81,>=60,Female,Russia Moskov
+768,43,<60,Male,Russia Moskov
+769,8,<60,Female,Russia Moskov
+770,38,<60,Male,Russia Moskov
+771,33,>=60,Male,Russia Moskov
+772,45,<60,Female,Russia Moskov
+773,29,<60,Male,Russia Moskov
+774,46,<60,Female,Russia Moskov
+775,51,>=60,Female,Russia Moskov
+776,37,>=60,Male,Russia Moskov
+777,44,>=60,Male,Russia Moskov
+778,59,>=60,Male,Russia Moskov
+779,70,>=60,Male,Russia Moskov
+780,21,<60,Male,Russia Moskov
+781,52,>=60,Male,Russia Moskov
+782,54,>=60,Female,Russia Moskov
+783,45,>=60,Female,Russia Moskov
+784,40,<60,Female,Russia Moskov
+785,65,>=60,Female,Russia Moskov
+786,45,<60,Female,Russia Moskov
+787,58,<60,Female,Russia Moskov
+788,80,<60,Female,Russia Moskov
+789,33,<60,Female,Russia Moskov
+790,45,<60,Female,Russia Moskov
+791,37,<60,Male,Russia Moskov
+792,68,>=60,Female,Russia Moskov
+793,42,>=60,Female,Russia Moskov
+794,75,>=60,Female,Russia Moskov
+795,56,>=60,Male,Russia Moskov
+796,22,<60,Female,Russia Moskov
+797,45,<60,Female,Russia Moskov
+798,49,<60,Male,Russia Moskov
+799,32,<60,Female,Russia Moskov
+800,14,<60,Female,Russia Moskov
+801,33,<60,Male,Serbia
+802,40,<60,Male,Serbia
+803,65,<60,Female,Serbia
+804,65,<60,Female,Serbia
+805,43,<60,Male,Serbia
+806,60,<60,Female,Serbia
+807,81,>=60,Female,Serbia
+808,85,>=60,Female,Serbia
+809,52,>=60,Male,Serbia
+810,42,<60,Male,Serbia
+811,55,>=60,Male,Serbia
+812,73,>=60,Male,Serbia
+813,53,<60,Male,Serbia
+814,66,>=60,Female,Serbia
+815,39,>=60,Male,Serbia
+816,36,<60,Female,Serbia
+817,83,>=60,Male,Serbia
+818,41,<60,Male,Serbia
+819,21,<60,Male,Serbia
+820,64,>=60,Male,Serbia
+821,63,>=60,Male,Serbia
+822,60,<60,Female,Serbia
+823,28,<60,Female,Serbia
+824,60,<60,Male,Serbia
+825,62,>=60,Female,Serbia
+826,34,>=60,Male,Serbia
+827,72,>=60,Female,Serbia
+828,67,>=60,Female,Serbia
+829,65,<60,Female,Serbia
+830,58,<60,Female,Serbia
+831,70,<60,Female,Serbia
+832,27,<60,Male,Serbia
+833,62,>=60,Female,Serbia
+834,78,>=60,Male,Serbia
+835,82,>=60,Male,Serbia
+836,14,<60,Male,Serbia
+837,46,<60,Female,Serbia
+838,29,>=60,Male,Serbia
+839,87,>=60,Female,Serbia
+840,83,<60,Female,Serbia
+841,44,>=60,Male,Serbia
+842,60,<60,Female,Serbia
+843,42,>=60,Female,Serbia
+844,78,>=60,Female,Serbia
+845,100,>=60,Female,Serbia
+846,57,>=60,Male,Serbia
+847,76,>=60,Male,Serbia
+848,44,<60,Female,Serbia
+849,51,>=60,Male,Serbia
+850,82,>=60,Female,Serbia
+851,84,>=60,Female,Serbia
+852,67,<60,Male,Serbia
+853,77,>=60,Female,Serbia
+854,76,<60,Male,Serbia
+855,29,<60,Male,Serbia
+856,59,<60,Female,Serbia
+857,69,>=60,Female,Serbia
+858,22,<60,Male,Serbia
+859,43,<60,Male,Serbia
+860,64,<60,Female,Serbia
+861,68,>=60,Female,Serbia
+862,68,>=60,Female,Serbia
+863,74,<60,Female,Serbia
+864,37,>=60,Male,Serbia
+865,54,<60,Female,Serbia
+866,49,>=60,Male,Serbia
+867,70,>=60,Female,Serbia
+868,56,<60,Female,Serbia
+869,78,<60,Female,Serbia
+870,26,<60,Female,Serbia
+871,70,>=60,Female,Serbia
+872,79,>=60,Female,Serbia
+873,48,<60,Female,Serbia
+874,75,>=60,Male,Serbia
+875,64,>=60,Male,Serbia
+876,81,>=60,Female,Serbia
+877,43,>=60,Female,Serbia
+878,29,<60,Female,Serbia
+879,53,<60,Female,Serbia
+880,50,<60,Female,Serbia
+881,87,>=60,Female,Serbia
+882,42,>=60,Female,Serbia
+883,91,>=60,Female,Serbia
+884,57,>=60,Male,Serbia
+885,65,>=60,Male,Serbia
+886,68,<60,Female,Serbia
+887,46,>=60,Male,Serbia
+888,42,<60,Female,Serbia
+889,30,<60,Male,Serbia
+890,35,<60,Male,Serbia
+891,41,>=60,Male,Serbia
+892,83,>=60,Male,Serbia
+893,48,<60,Female,Serbia
+894,14,<60,Male,Serbia
+895,57,<60,Female,Serbia
+896,58,<60,Female,Serbia
+897,56,>=60,Female,Serbia
+898,51,<60,Female,Serbia
+899,51,<60,Female,Serbia
+900,78,>=60,Male,Serbia
+901,43,>=60,Male,Estonia
+902,64,>=60,Female,Estonia
+903,14,<60,Male,Estonia
+904,0,<60,Male,Estonia
+905,59,<60,Male,Estonia
+906,59,<60,Female,Estonia
+907,41,>=60,Female,Estonia
+908,50,>=60,Female,Estonia
+909,36,>=60,Male,Estonia
+910,49,>=60,Female,Estonia
+911,61,>=60,Male,Estonia
+912,67,<60,Female,Estonia
+913,43,>=60,Male,Estonia
+914,78,<60,Female,Estonia
+915,57,>=60,Female,Estonia
+916,77,<60,Male,Estonia
+917,53,>=60,Male,Estonia
+918,50,<60,Male,Estonia
+919,38,>=60,Male,Estonia
+920,64,>=60,Female,Estonia
+921,53,<60,Female,Estonia
+922,32,<60,Male,Estonia
+923,26,>=60,Male,Estonia
+924,59,>=60,Female,Estonia
+925,52,>=60,Female,Estonia
+926,64,<60,Female,Estonia
+927,56,>=60,Female,Estonia
+928,51,>=60,Female,Estonia
+929,70,>=60,Female,Estonia
+930,34,<60,Male,Estonia
+931,81,>=60,Female,Estonia
+932,56,>=60,Male,Estonia
+933,24,<60,Male,Estonia
+934,69,<60,Female,Estonia
+935,43,<60,Male,Estonia
+936,36,>=60,Female,Estonia
+937,52,>=60,Female,Estonia
+938,22,>=60,Male,Estonia
+939,50,<60,Female,Estonia
+940,43,<60,Female,Estonia
+941,72,<60,Female,Estonia
+942,30,>=60,Male,Estonia
+943,57,<60,Male,Estonia
+944,65,<60,Male,Estonia
+945,40,>=60,Male,Estonia
+946,57,>=60,Male,Estonia
+947,56,>=60,Male,Estonia
+948,38,<60,Female,Estonia
+949,71,<60,Female,Estonia
+950,50,<60,Female,Estonia
+951,22,>=60,Female,Estonia
+952,55,>=60,Male,Estonia
+953,78,<60,Female,Estonia
+954,47,>=60,Male,Estonia
+955,94,<60,Female,Estonia
+956,34,>=60,Male,Estonia
+957,49,<60,Female,Estonia
+958,63,>=60,Male,Estonia
+959,40,>=60,Female,Estonia
+960,61,<60,Male,Estonia
+961,59,<60,Female,Estonia
+962,42,<60,Female,Estonia
+963,57,>=60,Male,Estonia
+964,76,>=60,Female,Estonia
+965,50,>=60,Male,Estonia
+966,52,>=60,Male,Estonia
+967,47,>=60,Female,Estonia
+968,19,<60,Female,Estonia
+969,21,<60,Male,Estonia
+970,66,>=60,Male,Estonia
+971,46,<60,Female,Estonia
+972,22,<60,Female,Estonia
+973,28,<60,Male,Estonia
+974,35,>=60,Female,Estonia
+975,27,<60,Female,Estonia
+976,32,<60,Male,Estonia
+977,38,<60,Female,Estonia
+978,30,<60,Female,Estonia
+979,55,>=60,Female,Estonia
+980,47,<60,Female,Estonia
+981,42,>=60,Female,Estonia
+982,57,>=60,Female,Estonia
+983,39,<60,Male,Estonia
+984,57,>=60,Male,Estonia
+985,57,<60,Female,Estonia
+986,29,<60,Female,Estonia
+987,48,>=60,Male,Estonia
+988,67,>=60,Male,Estonia
+989,78,<60,Male,Estonia
+990,36,>=60,Female,Estonia
+991,58,>=60,Male,Estonia
+992,35,>=60,Female,Estonia
+993,60,>=60,Female,Estonia
+994,76,>=60,Female,Estonia
+995,35,<60,Male,Estonia
+996,68,>=60,Female,Estonia
+997,35,>=60,Male,Estonia
+998,67,>=60,Female,Estonia
+999,45,>=60,Male,Estonia
+1000,51,<60,Male,Estonia

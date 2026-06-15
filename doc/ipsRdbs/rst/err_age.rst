@@ -1,64 +1,60 @@
-.. container::
+======= ===============
+err_age R Documentation
+======= ===============
 
-   .. container::
+Errors in guessing ages of Southampton mathematicians
+-----------------------------------------------------
 
-      ======= ===============
-      err_age R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Errors in guessing ages of Southampton mathematicians
-         :name: errors-in-guessing-ages-of-southampton-mathematicians
+Errors in guessing ages of Southampton mathematicians
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Errors in guessing ages of Southampton mathematicians
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   err_age
 
-      .. code:: R
+Format
+~~~~~~
 
-         err_age
+A data frame with 550 rows and 10 columns
 
-      .. rubric:: Format
-         :name: format
+group
+   Group number of the students guessing the ages
 
-      A data frame with 550 rows and 10 columns
+size
+   Number of students in the group
 
-      group
-         Group number of the students guessing the ages
+females
+   How many female guessers were in the group
 
-      size
-         Number of students in the group
+photo
+   Photograph number guessed, can take value 1 to 10.
 
-      females
-         How many female guessers were in the group
+sex
+   Gender of the photographed person.
 
-      photo
-         Photograph number guessed, can take value 1 to 10.
+race
+   Race of the photographed person.
 
-      sex
-         Gender of the photographed person.
+est_age
+   Estimated age of the photographed person.
 
-      race
-         Race of the photographed person.
+tru_age
+   True age of the photographed person.
 
-      est_age
-         Estimated age of the photographed person.
+error
+   The value of error, estimated age minus true age
 
-      tru_age
-         True age of the photographed person.
+abs_error
+   Absolute value of the error
 
-      error
-         The value of error, estimated age minus true age
+Examples
+~~~~~~~~
 
-      abs_error
-         Absolute value of the error
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-          summary(err_age)
+    summary(err_age)

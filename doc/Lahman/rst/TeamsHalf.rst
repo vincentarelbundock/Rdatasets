@@ -1,80 +1,76 @@
-.. container::
+========= ===============
+TeamsHalf R Documentation
+========= ===============
 
-   .. container::
+TeamsHalf table
+---------------
 
-      ========= ===============
-      TeamsHalf R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: TeamsHalf table
-         :name: teamshalf-table
+Split season data for teams
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Split season data for teams
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(TeamsHalf)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(TeamsHalf)
+A data frame with 142 observations on the following 10 variables.
 
-      .. rubric:: Format
-         :name: format
+``yearID``
+   Year
 
-      A data frame with 52 observations on the following 10 variables.
+``lgID``
+   League; a factor with levels ``AL`` ``NL``
 
-      ``yearID``
-         Year
+``teamID``
+   Team; a factor
 
-      ``lgID``
-         League; a factor with levels ``AL`` ``NL``
+``Half``
+   First or second half of season
 
-      ``teamID``
-         Team; a factor
+``divID``
+   Division
 
-      ``Half``
-         First or second half of season
+``DivWin``
+   Won Division (Y or N)
 
-      ``divID``
-         Division
+``Rank``
+   Team's position in standings for the half
 
-      ``DivWin``
-         Won Division (Y or N)
+``G``
+   Games played
 
-      ``Rank``
-         Team's position in standings for the half
+``W``
+   Wins
 
-      ``G``
-         Games played
+``L``
+   Losses
 
-      ``W``
-         Wins
+Source
+~~~~~~
 
-      ``L``
-         Losses
+Lahman, S. (2026) Lahman's Baseball Database, 1871-2025, 2026 version,
+https://sabr.org/lahman-database/
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Lahman, S. (2024) Lahman's Baseball Database, 1871-2024, 2025
-      version, https://sabr.org/lahman-database/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   # 1981 season team data split into half seasons
+   data(TeamsHalf)
+   library("dplyr")
 
-      .. code:: R
-
-         # 1981 season team data split into half seasons
-         data(TeamsHalf)
-         library("dplyr")
-
-         # List standings with winning percentages by
-         # season half, league and division
-         TeamsHalf %>%
-            group_by(Half, lgID, divID) %>%
-            mutate(WinPct = round(W/G, 3)) %>%
-            arrange(Half, lgID, divID, Rank) %>%
-            select(Half, lgID, divID, Rank, teamID, WinPct)
+   # List standings with winning percentages by
+   # season half, league and division
+   TeamsHalf %>%
+      group_by(Half, lgID, divID) %>%
+      mutate(WinPct = round(W/G, 3)) %>%
+      arrange(Half, lgID, divID, Rank) %>%
+      select(Half, lgID, divID, Rank, teamID, WinPct)

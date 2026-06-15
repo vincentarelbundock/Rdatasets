@@ -1,64 +1,60 @@
-.. container::
+===== ===============
+olive R Documentation
+===== ===============
 
-   .. container::
+Italian olive
+-------------
 
-      ===== ===============
-      olive R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Italian olive
-         :name: italian-olive
+Composition in percentage of eight fatty acids found in the lipid
+fraction of 572 Italian olive oils
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Composition in percentage of eight fatty acids found in the lipid
-      fraction of 572 Italian olive oils
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   olive
 
-      .. code:: R
+Format
+~~~~~~
 
-         olive
+An object of class ``"data.frame"``.
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      An object of class ``"data.frame"``.
+- region. General region of Italy.
 
-      .. rubric:: Details
-         :name: details
+- area. Area of Italy.
 
-      -  region. General region of Italy.
+- palmitic. Percent palmitic acid of sample.
 
-      -  area. Area of Italy.
+- palmitoleic. Percent palmitoleic of sample.
 
-      -  palmitic. Percent palmitic acid of sample.
+- stearic. Percent stearic acid of sample.
 
-      -  palmitoleic. Percent palmitoleic of sample.
+- oleic. Percent oleic acid of sample.
 
-      -  stearic. Percent stearic acid of sample.
+- linoleic. Percent linoleic acid of sample.
 
-      -  oleic. Percent oleic acid of sample.
+- linolenic. Percent linolenic acid of sample.
 
-      -  linoleic. Percent linoleic acid of sample.
+- arachidic. Percent arachidic acid of sample.
 
-      -  linolenic. Percent linolenic acid of sample.
+- eicosenoic. Percent eicosenoic acid of sample.
 
-      -  arachidic. Percent arachidic acid of sample.
+Source
+~~~~~~
 
-      -  eicosenoic. Percent eicosenoic acid of sample.
+J. Zupan, and J. Gasteiger. Neural Networks in Chemistry and Drug
+Design.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      J. Zupan, and J. Gasteiger. Neural Networks in Chemistry and Drug
-      Design.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         head(olive)
+   head(olive)

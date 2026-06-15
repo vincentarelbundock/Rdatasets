@@ -1,113 +1,107 @@
-.. container::
+======= ===============
+fishing R Documentation
+======= ===============
 
-   .. container::
+Fishing mode choice
+-------------------
 
-      ======= ===============
-      fishing R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Fishing mode choice
-         :name: fishing-mode-choice
+Data sample of 1,182 people from a survey conducted by Thomson and
+Crooke (1991) and analyzed by Herriges and Kling (1999). Cameron and
+Trivedi (2005).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data sample of 1,182 people from a survey conducted by Thomson and
-      Crooke (1991) and analyzed by Herriges and Kling (1999). Cameron
-      and Trivedi (2005).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   fishing
 
-      .. code:: R
+Format
+~~~~~~
 
-         fishing
+A data frame with 1182 observations and 16 variables:
 
-      .. rubric:: Format
-         :name: format
+mode
+   fishing mode choice, = 1 beach, = 2 pier, = 3 private boat, = 4
+   charter boat
 
-      A data frame with 1182 observations and 16 variables:
+price
+   price for chosen alternative, usd
 
-      mode
-         fishing mode choice, = 1 beach, = 2 pier, = 3 private boat, = 4
-         charter boat
+crate
+   catch rate for chosen alternative, sum of per-hour catch rates of
+   targeted species.
 
-      price
-         price for chosen alternative, usd
+dbeach
+   = 1 if beach mode chosen, = 0 otherwise
 
-      crate
-         catch rate for chosen alternative, sum of per-hour catch rates
-         of targeted species.
+dpier
+   = 1 if pier mode chosen, = 0 otherwise
 
-      dbeach
-         = 1 if beach mode chosen, = 0 otherwise
+dprivate
+   = 1 if private boat mode chosen, = 0 otherwise
 
-      dpier
-         = 1 if pier mode chosen, = 0 otherwise
+dcharter
+   = 1 if charter boat mode chosen, = 0 otherwise
 
-      dprivate
-         = 1 if private boat mode chosen, = 0 otherwise
+pbeach
+   price for beach mode, usd
 
-      dcharter
-         = 1 if charter boat mode chosen, = 0 otherwise
+ppier
+   price for pier mode, usd
 
-      pbeach
-         price for beach mode, usd
+pprivate
+   price for private boat mode, usd
 
-      ppier
-         price for pier mode, usd
+pcharter
+   price for charter boat mode, usd
 
-      pprivate
-         price for private boat mode, usd
+qbeach
+   catch rate for beach mode
 
-      pcharter
-         price for charter boat mode, usd
+qpier
+   catch rate for pier mode
 
-      qbeach
-         catch rate for beach mode
+qprivate
+   catch rate for private boat mode
 
-      qpier
-         catch rate for pier mode
+qcharter
+   catch rate for charter boat mode
 
-      qprivate
-         catch rate for private boat mode
+income
+   monthly income, usd
 
-      qcharter
-         catch rate for charter boat mode
+Section in Text
+~~~~~~~~~~~~~~~
 
-      income
-         monthly income, usd
+14.2 Binary Outcome Example: Fishing Mode Choice, pp. 464-6, 486
 
-      .. rubric:: Section in Text
-         :name: section-in-text
+15.2 Choice of Fishing Mode, pp. 491-5
 
-      14.2 Binary Outcome Example: Fishing Mode Choice, pp. 464-6, 486
+Source
+~~~~~~
 
-      15.2 Choice of Fishing Mode, pp. 491-5
+http://cameron.econ.ucdavis.edu/mmabook/mmadata.html
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      http://cameron.econ.ucdavis.edu/mmabook/mmadata.html
+Cameron, A. and Trivedi, P. (2005), "Microeconometrics: Methods and
+Applications," Cambridge University Press, New York.
 
-      .. rubric:: References
-         :name: references
+Herriges, J. and Kling, C. (1999), "Nonlinear Income Effects in Random
+Utility Models," Review of Economics and Statistics, 81, 62-72.
 
-      Cameron, A. and Trivedi, P. (2005), "Microeconometrics: Methods
-      and Applications," Cambridge University Press, New York.
+Thomson, C., and Crooke, S. (1991), "Results of the Southern California
+Sportfish Economic Survey," NOAA Technical Memorandum, National Marine
+Fisheries Service, Southwest Fisheries Science Center.
 
-      Herriges, J. and Kling, C. (1999), "Nonlinear Income Effects in
-      Random Utility Models," Review of Economics and Statistics, 81,
-      62-72.
+Examples
+~~~~~~~~
 
-      Thomson, C., and Crooke, S. (1991), "Results of the Southern
-      California Sportfish Economic Survey," NOAA Technical Memorandum,
-      National Marine Fisheries Service, Southwest Fisheries Science
-      Center.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         summary(fishing)
+   summary(fishing)

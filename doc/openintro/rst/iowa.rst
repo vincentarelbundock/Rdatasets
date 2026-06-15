@@ -1,67 +1,64 @@
-.. container::
+==== ===============
+iowa R Documentation
+==== ===============
 
-   .. container::
+iowa
+----
 
-      ==== ===============
-      iowa R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: iowa
-         :name: iowa
+A data frame containing information about the 2016 US Presidential
+Election for the state of Iowa.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A data frame containing information about the 2016 US Presidential
-      Election for the state of Iowa.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   iowa
 
-      .. code:: R
+Format
+~~~~~~
 
-         iowa
+A data frame with 1386 observations on the following 5 variables.
 
-      .. rubric:: Format
-         :name: format
+office
+   The office that the candidates were running for.
 
-      A data frame with 1386 observations on the following 5 variables.
+candidate
+   President/Vice President pairs who were running for office.
 
-      office
-         The office that the candidates were running for.
+party
+   Political part of the candidate.
 
-      candidate
-         President/Vice President pairs who were running for office.
+county
+   County in Iowa where the votes were cast.
 
-      party
-         Political part of the candidate.
+votes
+   Number of votes received by the candidate.
 
-      county
-         County in Iowa where the votes were cast.
+Examples
+~~~~~~~~
 
-      votes
-         Number of votes received by the candidate.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   library(ggplot2)
+   library(dplyr)
 
-         library(ggplot2)
-         library(dplyr)
+   plot_data <- iowa |>
+     filter(candidate != "Total") |>
+     group_by(candidate) |>
+     summarize(total_votes = sum(votes) / 1000)
 
-         plot_data <- iowa |>
-           filter(candidate != "Total") |>
-           group_by(candidate) |>
-           summarize(total_votes = sum(votes) / 1000)
-
-         ggplot(plot_data, aes(total_votes, candidate)) +
-           geom_col() +
-           theme_minimal() +
-           labs(
-             title = "2016 Presidential Election in Iowa",
-             subtitle = "Popular vote",
-             y = "",
-             x = "Number of Votes (in thousands)
-             "
-           )
+   ggplot(plot_data, aes(total_votes, candidate)) +
+     geom_col() +
+     theme_minimal() +
+     labs(
+       title = "2016 Presidential Election in Iowa",
+       subtitle = "Popular vote",
+       y = "",
+       x = "Number of Votes (in thousands)
+       "
+     )

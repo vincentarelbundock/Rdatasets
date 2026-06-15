@@ -1,142 +1,136 @@
-.. container::
+======== ===============
+drug_use R Documentation
+======== ===============
 
-   .. container::
+How Baby Boomers Get High
+-------------------------
 
-      ======== ===============
-      drug_use R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: How Baby Boomers Get High
-         :name: how-baby-boomers-get-high
+The raw data behind the story "How Baby Boomers Get High"
+https://fivethirtyeight.com/features/how-baby-boomers-get-high/. It
+covers usage of 13 drugs in the past 12 months across 17 age groups.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "How Baby Boomers Get High"
-      https://fivethirtyeight.com/features/how-baby-boomers-get-high/.
-      It covers usage of 13 drugs in the past 12 months across 17 age
-      groups.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   drug_use
 
-      .. code:: R
+Format
+~~~~~~
 
-         drug_use
+A data frame with 17 rows representing age groups and 28 variables:
 
-      .. rubric:: Format
-         :name: format
+age
+   Age group
 
-      A data frame with 17 rows representing age groups and 28
-      variables:
+n
+   Number of people surveyed
 
-      age
-         Age group
+alcohol_use
+   Percentage who used alcohol
 
-      n
-         Number of people surveyed
+alcohol_freq
+   Median number of times a user used alcohol
 
-      alcohol_use
-         Percentage who used alcohol
+marijuana_use
+   Percentage who used marijuana
 
-      alcohol_freq
-         Median number of times a user used alcohol
+marijuana_freq
+   Median number of times a user used marijuana
 
-      marijuana_use
-         Percentage who used marijuana
+cocaine_use
+   Percentage who used cocaine
 
-      marijuana_freq
-         Median number of times a user used marijuana
+cocaine_freq
+   Median number of times a user used cocaine
 
-      cocaine_use
-         Percentage who used cocaine
+crack_use
+   Percentage who used crack
 
-      cocaine_freq
-         Median number of times a user used cocaine
+crack_freq
+   Median number of times a user used crack
 
-      crack_use
-         Percentage who used crack
+heroin_use
+   Percentage who used heroin
 
-      crack_freq
-         Median number of times a user used crack
+heroin_freq
+   Median number of times a user used heroin
 
-      heroin_use
-         Percentage who used heroin
+hallucinogen_use
+   Percentage who used hallucinogens
 
-      heroin_freq
-         Median number of times a user used heroin
+hallucinogen_freq
+   Median number of times a user used hallucinogens
 
-      hallucinogen_use
-         Percentage who used hallucinogens
+inhalant_use
+   Percentage who used inhalants
 
-      hallucinogen_freq
-         Median number of times a user used hallucinogens
+inhalant_freq
+   Median number of times a user used inhalants
 
-      inhalant_use
-         Percentage who used inhalants
+pain_releiver_use
+   Percentage who used pain relievers
 
-      inhalant_freq
-         Median number of times a user used inhalants
+pain_releiver_freq
+   Median number of times a user used pain relievers
 
-      pain_releiver_use
-         Percentage who used pain relievers
+oxycontin_use
+   Percentage who used oxycontin
 
-      pain_releiver_freq
-         Median number of times a user used pain relievers
+oxycontin_freq
+   Median number of times a user used oxycontin
 
-      oxycontin_use
-         Percentage who used oxycontin
+tranquilizer_use
+   Percentage who used tranquilizer
 
-      oxycontin_freq
-         Median number of times a user used oxycontin
+tranquilizer_freq
+   Median number of times a user used tranquilizer
 
-      tranquilizer_use
-         Percentage who used tranquilizer
+stimulant_use
+   Percentage who used stimulants
 
-      tranquilizer_freq
-         Median number of times a user used tranquilizer
+stimulant_freq
+   Median number of times a user used stimulants
 
-      stimulant_use
-         Percentage who used stimulants
+meth_use
+   Percentage who used meth
 
-      stimulant_freq
-         Median number of times a user used stimulants
+meth_freq
+   Median number of times a user used meth
 
-      meth_use
-         Percentage who used meth
+sedative_use
+   Percentage who used sedatives
 
-      meth_freq
-         Median number of times a user used meth
+sedative_freq
+   Median number of times a user used sedatives
 
-      sedative_use
-         Percentage who used sedatives
+Source
+~~~~~~
 
-      sedative_freq
-         Median number of times a user used sedatives
+National Survey on Drug Use and Health from the Substance Abuse and
+Mental Health Data Archive
+https://www.icpsr.umich.edu/icpsrweb/content/SAMHDA/index.html.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      National Survey on Drug Use and Health from the Substance Abuse
-      and Mental Health Data Archive
-      https://www.icpsr.umich.edu/icpsrweb/content/SAMHDA/index.html.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         # To convert data frame to tidy data (long) format, run:
-         library(dplyr)
-         library(tidyr)
-         library(stringr)
-         use <- drug_use %>%
-           select(age, n, ends_with("_use")) %>%
-           pivot_longer(-c(age, n), names_to = "drug", values_to = "use") %>%
-           mutate(drug = str_sub(drug, start=1, end=-5))
-         freq <- drug_use %>%
-           select(age, n, ends_with("_freq")) %>%
-           pivot_longer(-c(age, n), names_to = "drug", values_to = "freq") %>%
-           mutate(drug = str_sub(drug, start=1, end=-6))
-         drug_use_tidy <- left_join(x=use, y=freq, by = c("age", "n", "drug")) %>%
-           arrange(age)
+   # To convert data frame to tidy data (long) format, run:
+   library(dplyr)
+   library(tidyr)
+   library(stringr)
+   use <- drug_use %>%
+     select(age, n, ends_with("_use")) %>%
+     pivot_longer(-c(age, n), names_to = "drug", values_to = "use") %>%
+     mutate(drug = str_sub(drug, start=1, end=-5))
+   freq <- drug_use %>%
+     select(age, n, ends_with("_freq")) %>%
+     pivot_longer(-c(age, n), names_to = "drug", values_to = "freq") %>%
+     mutate(drug = str_sub(drug, start=1, end=-6))
+   drug_use_tidy <- left_join(x=use, y=freq, by = c("age", "n", "drug")) %>%
+     arrange(age)

@@ -1,73 +1,68 @@
-.. container::
+============ ===============
+IndustryAuto R Documentation
+============ ===============
 
-   .. container::
+Auto Industry
+-------------
 
-      ============ ===============
-      IndustryAuto R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Auto Industry
-         :name: auto-industry
+The data represent industry aggregates for private passenger auto
+liability\\/medical coverages from year 2004, in millions of dollars.
+They are based on insurance company annual statements, specifically,
+Schedule P, Part 3B. The elements of the triangle represent cumulative
+net payments, including defense and cost containment expenses.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The data represent industry aggregates for private passenger auto
-      liability\\/medical coverages from year 2004, in millions of
-      dollars. They are based on insurance company annual statements,
-      specifically, Schedule P, Part 3B. The elements of the triangle
-      represent cumulative net payments, including defense and cost
-      containment expenses.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(IndustryAuto)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(IndustryAuto)
+A data frame with 55 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``Incurral.Year``
+   The year in which a claim has been incurred, a numeric vector
 
-      A data frame with 55 observations on the following 3 variables.
+``Development.Year``
+   The number of years from incurral to the time when the payment is
+   made, a numeric vector
 
-      ``Incurral.Year``
-         The year in which a claim has been incurred, a numeric vector
+``Claim``
+   Cumulative net payments, including defense and cost containment
+   expenses, a numeric vector
 
-      ``Development.Year``
-         The number of years from incurral to the time when the payment
-         is made, a numeric vector
+Details
+~~~~~~~
 
-      ``Claim``
-         Cumulative net payments, including defense and cost containment
-         expenses, a numeric vector
+http://instruction.bus.wisc.edu/jfrees/jfreesbooks/Regression%20Modeling/BookWebDec2010/
 
-      .. rubric:: Details
-         :name: details
+DataDescriptions.pdf
 
-      http://instruction.bus.wisc.edu/jfrees/jfreesbooks/Regression%20Modeling/BookWebDec2010/
+Source
+~~~~~~
 
-      DataDescriptions.pdf
+http://instruction.bus.wisc.edu/jfrees/jfreesbooks/Regression%20Modeling/BookWebDec2010/data.html
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      http://instruction.bus.wisc.edu/jfrees/jfreesbooks/Regression%20Modeling/BookWebDec2010/data.html
+Frees E.W. (2010), Regression Modeling with Actuarial and Financial
+Applications, Cambridge University Press.
 
-      .. rubric:: References
-         :name: references
+Wacek M.G. (2007), A Test of Clinical Judgment vs. Statistical
+Prediction in Loss Reserving for Commercial Auto Liability, in: Casualty
+Actuarial Society Forum, p. 371-404.
 
-      Frees E.W. (2010), Regression Modeling with Actuarial and
-      Financial Applications, Cambridge University Press.
+Examples
+~~~~~~~~
 
-      Wacek M.G. (2007), A Test of Clinical Judgment vs. Statistical
-      Prediction in Loss Reserving for Commercial Auto Liability, in:
-      Casualty Actuarial Society Forum, p. 371-404.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(IndustryAuto)
-         ## maybe str(IndustryAuto) ; plot(IndustryAuto) ...
+   data(IndustryAuto)
+   ## maybe str(IndustryAuto) ; plot(IndustryAuto) ...

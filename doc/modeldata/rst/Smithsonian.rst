@@ -1,35 +1,31 @@
-.. container::
+=========== ===============
+Smithsonian R Documentation
+=========== ===============
 
-   .. container::
+Smithsonian museums
+-------------------
 
-      =========== ===============
-      Smithsonian R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Smithsonian museums
-         :name: smithsonian-museums
+Geocodes for the Smithsonian museums (circa 2018).
 
-      .. rubric:: Description
-         :name: description
+Value
+~~~~~
 
-      Geocodes for the Smithsonian museums (circa 2018).
+=============== ========
+``Smithsonian`` a tibble
+=============== ========
 
-      .. rubric:: Value
-         :name: value
+Source
+~~~~~~
 
-      =============== ========
-      ``Smithsonian`` a tibble
-      =============== ========
+https://en.wikipedia.org/wiki/List_of_Smithsonian_museums
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      https://en.wikipedia.org/wiki/List_of_Smithsonian_museums
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(Smithsonian)
-         str(Smithsonian)
+   data(Smithsonian)
+   str(Smithsonian)

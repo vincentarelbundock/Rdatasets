@@ -1,145 +1,136 @@
-.. container::
+========== ===============
+PearsonLee R Documentation
+========== ===============
 
-   .. container::
+Pearson and Lee's data on the Heights of Parents and Children by Gender
+-----------------------------------------------------------------------
 
-      ========== ===============
-      PearsonLee R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Pearson and Lee's data on the heights of parents and
-         children classified by gender
-         :name: pearson-and-lees-data-on-the-heights-of-parents-and-children-classified-by-gender
+Wachsmuth et. al (2003) noticed that a loess smooth through Galton's
+data on heights of mid-parents and their offspring exhibited a slightly
+non-linear trend, and asked whether this might be due to Galton having
+pooled the heights of fathers and mothers and sons and daughters in
+constructing his tables and graphs.
 
-      .. rubric:: Description
-         :name: description
+To answer this question, they used analogous data from English families
+at about the same time, tabulated by Karl Pearson and Alice Lee (1896,
+1903), but where the heights of parents and children were each
+classified by gender of the parent.
 
-      Wachsmuth et. al (2003) noticed that a loess smooth through
-      Galton's data on heights of mid-parents and their offspring
-      exhibited a slightly non-linear trend, and asked whether this
-      might be due to Galton having pooled the heights of fathers and
-      mothers and sons and daughters in constructing his tables and
-      graphs.
+Format
+~~~~~~
 
-      To answer this question, they used analogous data from English
-      families at about the same time, tabulated by Karl Pearson and
-      Alice Lee (1896, 1903), but where the heights of parents and
-      children were each classified by gender of the parent.
+A frequency data frame with 746 observations on the following 6
+variables.
 
-      .. rubric:: Usage
-         :name: usage
+``child``
+   child height in inches, a numeric vector
 
-      .. code:: R
+``parent``
+   parent height in inches, a numeric vector
 
-         data(PearsonLee)
+``frequency``
+   a numeric vector
 
-      .. rubric:: Format
-         :name: format
+``gp``
+   a factor with levels ``fd`` ``fs`` ``md`` ``ms``
 
-      A frequency data frame with 746 observations on the following 6
-      variables.
+``par``
+   a factor with levels ``Father`` ``Mother``
 
-      ``child``
-         child height in inches, a numeric vector
+``chl``
+   a factor with levels ``Daughter`` ``Son``
 
-      ``parent``
-         parent height in inches, a numeric vector
+Details
+~~~~~~~
 
-      ``frequency``
-         a numeric vector
+The variables ``gp``, ``par`` and ``chl`` are provided to allow
+stratifying the data according to the gender of the father/mother and
+son/daughter.
 
-      ``gp``
-         a factor with levels ``fd`` ``fs`` ``md`` ``ms``
+Source
+~~~~~~
 
-      ``par``
-         a factor with levels ``Father`` ``Mother``
+Pearson, K. and Lee, A. (1896). Mathematical contributions to the theory
+of evolution. On telegony in man, etc. *Proceedings of the Royal Society
+of London*, **60** , 273-283.
 
-      ``chl``
-         a factor with levels ``Daughter`` ``Son``
+Pearson, K. and Lee, A. (1903). On the laws of inheritance in man: I.
+Inheritance of physical characters. *Biometrika*, **2**\ (4), 357-462.
+(Tables XXII, p. 415; XXV, p. 417; XXVIII, p. 419 and XXXI, p. 421.)
 
-      .. rubric:: Details
-         :name: details
+References
+~~~~~~~~~~
 
-      The variables ``gp``, ``par`` and ``chl`` are provided to allow
-      stratifying the data according to the gender of the father/mother
-      and son/daughter.
+Wachsmuth, A.W., Wilkinson L., Dallal G.E. (2003). Galton's bend: A
+previously undiscovered nonlinearity in Galton's family stature
+regression data. *The American Statistician*, **57**, 190-192.
+%\ http://staff.ustc.edu.cn/~zwp/teach/Reg/galton.pdf
+`doi:10.1198/0003130031874 <https://doi.org/10.1198/0003130031874>`__.
 
-      .. rubric:: Source
-         :name: source
+See the example by John Russell for the
+`30DayChartChallenge <https://github.com/drjohnrussell/30DayChartChallenge/blob/main/2025/Challenge02.R>`__
 
-      Pearson, K. and Lee, A. (1896). Mathematical contributions to the
-      theory of evolution. On telegony in man, etc. *Proceedings of the
-      Royal Society of London*, 60 , 273-283.
+See Also
+~~~~~~~~
 
-      Pearson, K. and Lee, A. (1903). On the laws of inheritance in man:
-      I. Inheritance of physical characters. *Biometrika*, 2(4),
-      357-462. (Tables XXII, p. 415; XXV, p. 417; XXVIII, p. 419 and
-      XXXI, p. 421.)
+``Galton``
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Wachsmuth, A.W., Wilkinson L., Dallal G.E. (2003). Galton's bend:
-      A previously undiscovered nonlinearity in Galton's family stature
-      regression data. *The American Statistician*, 57, 190-192.
-      `doi:10.1198/0003130031874 <https://doi.org/10.1198/0003130031874>`__
+.. code:: R
 
-      .. rubric:: See Also
-         :name: see-also
 
-      ``Galton``
+   data(PearsonLee)
+   str(PearsonLee)
 
-      .. rubric:: Examples
-         :name: examples
+   with(PearsonLee, 
+       {
+       lim <- c(55,80)
+       xv <- seq(55,80, .5)
+       sunflowerplot(parent,child, number=frequency, xlim=lim, ylim=lim, seg.col="gray", size=.1)
+       abline(lm(child ~ parent, weights=frequency), col="blue", lwd=2)
+       lines(xv, predict(loess(child ~ parent, weights=frequency), data.frame(parent=xv)), 
+             col="blue", lwd=2)
+       # NB: dataEllipse doesn't take frequency into account
+       if(require(car)) {
+       dataEllipse(parent,child, xlim=lim, ylim=lim, plot.points=FALSE)
+           }
+     })
 
-      .. code:: R
+   ## separate plots for combinations of (chl, par)
 
-         data(PearsonLee)
-         str(PearsonLee)
+   # this doesn't quite work, because xyplot can't handle weights
+   require(lattice)
+   xyplot(child ~ parent|par+chl, data=PearsonLee, type=c("p", "r", "smooth"), col.line="red")
 
-         with(PearsonLee, 
-             {
-             lim <- c(55,80)
-             xv <- seq(55,80, .5)
-             sunflowerplot(parent,child, number=frequency, xlim=lim, ylim=lim, seg.col="gray", size=.1)
-             abline(lm(child ~ parent, weights=frequency), col="blue", lwd=2)
-             lines(xv, predict(loess(child ~ parent, weights=frequency), data.frame(parent=xv)), 
-                   col="blue", lwd=2)
-             # NB: dataEllipse doesn't take frequency into account
-             if(require(car)) {
-             dataEllipse(parent,child, xlim=lim, ylim=lim, plot.points=FALSE)
-                 }
-           })
+   # Using ggplot [thx: Dennis Murphy]
+   require(ggplot2)
+   ggplot(PearsonLee, aes(x = parent, y = child, weight=frequency)) +
+      geom_point(size = 1.5, position = position_jitter(width = 0.2)) +
+      geom_smooth(method = lm, aes(weight = PearsonLee$frequency,
+                  colour = 'Linear'), se = FALSE, size = 1.5) +
+      geom_smooth(aes(weight = PearsonLee$frequency,
+                  colour = 'Loess'), se = FALSE, size = 1.5) +
+      facet_grid(chl ~ par) +
+      scale_colour_manual(breaks = c('Linear', 'Loess'),
+                          values = c('green', 'red')) +
+      theme(legend.position = c(0.14, 0.885),
+           legend.background = element_rect(fill = 'white'))
 
-         ## separate plots for combinations of (chl, par)
+   # inverse regression, as in Wachmuth et al. (2003)
 
-         # this doesn't quite work, because xyplot can't handle weights
-         require(lattice)
-         xyplot(child ~ parent|par+chl, data=PearsonLee, type=c("p", "r", "smooth"), col.line="red")
-
-         # Using ggplot [thx: Dennis Murphy]
-         require(ggplot2)
-         ggplot(PearsonLee, aes(x = parent, y = child, weight=frequency)) +
-            geom_point(size = 1.5, position = position_jitter(width = 0.2)) +
-            geom_smooth(method = lm, aes(weight = PearsonLee$frequency,
-                        colour = 'Linear'), se = FALSE, size = 1.5) +
-            geom_smooth(aes(weight = PearsonLee$frequency,
-                        colour = 'Loess'), se = FALSE, size = 1.5) +
-            facet_grid(chl ~ par) +
-            scale_colour_manual(breaks = c('Linear', 'Loess'),
-                                values = c('green', 'red')) +
-            theme(legend.position = c(0.14, 0.885),
-                 legend.background = element_rect(fill = 'white'))
-
-         # inverse regression, as in Wachmuth et al. (2003)
-
-         ggplot(PearsonLee, aes(x = child, y = parent, weight=frequency)) +
-            geom_point(size = 1.5, position = position_jitter(width = 0.2)) +
-            geom_smooth(method = lm, aes(weight = PearsonLee$frequency,
-                        colour = 'Linear'), se = FALSE, size = 1.5) +
-            geom_smooth(aes(weight = PearsonLee$frequency,
-                        colour = 'Loess'), se = FALSE, size = 1.5) +
-            facet_grid(chl ~ par) +
-            scale_colour_manual(breaks = c('Linear', 'Loess'),
-                                values = c('green', 'red')) +
-            theme(legend.position = c(0.14, 0.885),
-                 legend.background = element_rect(fill = 'white'))
+   ggplot(PearsonLee, aes(x = child, y = parent, weight=frequency)) +
+      geom_point(size = 1.5, position = position_jitter(width = 0.2)) +
+      geom_smooth(method = lm, aes(weight = PearsonLee$frequency,
+                  colour = 'Linear'), se = FALSE, size = 1.5) +
+      geom_smooth(aes(weight = PearsonLee$frequency,
+                  colour = 'Loess'), se = FALSE, size = 1.5) +
+      facet_grid(chl ~ par) +
+      scale_colour_manual(breaks = c('Linear', 'Loess'),
+                          values = c('green', 'red')) +
+      theme(legend.position = c(0.14, 0.885),
+           legend.background = element_rect(fill = 'white'))

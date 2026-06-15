@@ -1,57 +1,53 @@
-.. container::
+================== ===============
+nyc_regents_scores R Documentation
+================== ===============
 
-   .. container::
+NYC Regents exams scores 2010
+-----------------------------
 
-      ================== ===============
-      nyc_regents_scores R Documentation
-      ================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: NYC Regents exams scores 2010
-         :name: nyc-regents-exams-scores-2010
+Distribution of scores for New York City Regents algebra, global
+history, biology, English, and U.S. history exams. These data were used
+to make `this New York Times
+plot <http://graphics8.nytimes.com/images/2011/02/19/nyregion/19schoolsch/19schoolsch-popup.gif>`__.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Distribution of scores for New York City Regents algebra, global
-      history, biology, English, and U.S. history exams. These data were
-      used to make `this New York Times
-      plot <http://graphics8.nytimes.com/images/2011/02/19/nyregion/19schoolsch/19schoolsch-popup.gif>`__.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   nyc_regents_scores
 
-      .. code:: R
+Format
+~~~~~~
 
-         nyc_regents_scores
+An object of class ``"data.frame"``.
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      An object of class ``"data.frame"``.
+- score. Test score from 0 to 100.
 
-      .. rubric:: Details
-         :name: details
+- integrated_algebra. Score frequency on Algebra exam.
 
-      -  score. Test score from 0 to 100.
+- global_history. Score frequency on global history exam.
 
-      -  integrated_algebra. Score frequency on Algebra exam.
+- living_environment. Score frequency on biology exam.
 
-      -  global_history. Score frequency on global history exam.
+- english. Score frequency on English exam.
 
-      -  living_environment. Score frequency on biology exam.
+- us_history. Score frequency on U.S. history exam.
 
-      -  english. Score frequency on English exam.
+Source
+~~~~~~
 
-      -  us_history. Score frequency on U.S. history exam.
+New York City Department of Education via Amanda Cox.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      New York City Department of Education via Amanda Cox.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         print(nyc_regents_scores)
+   print(nyc_regents_scores)

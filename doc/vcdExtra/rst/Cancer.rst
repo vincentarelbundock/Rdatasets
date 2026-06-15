@@ -1,57 +1,47 @@
-.. container::
+====== ===============
+Cancer R Documentation
+====== ===============
 
-   .. container::
+Survival of Breast Cancer Patients
+----------------------------------
 
-      ====== ===============
-      Cancer R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Survival of Breast Cancer Patients
-         :name: survival-of-breast-cancer-patients
+Three year survival of 474 breast cancer patients according to nuclear
+grade and diagnostic center.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Three year survival of 474 breast cancer patients according to
-      nuclear grade and diagnostic center.
+A 3-dimensional array resulting from cross-tabulating 3 variables for
+474 observations. The variable names and their levels are:
 
-      .. rubric:: Usage
-         :name: usage
+=== ============ =========================
+dim Name         Levels
+1   ``Survival`` ``⁠"Died", "Surv"⁠``
+2   ``Grade``    ``⁠"Malignant", "Benign"⁠``
+3   ``Center``   ``⁠"Boston", "Glamorgan"⁠``
+                 
+=== ============ =========================
 
-      .. code:: R
+Source
+~~~~~~
 
-         data(Cancer)
+Lindsey, J. K. (1995). Analysis of Frequency and Count Data Oxford, UK:
+Oxford University Press. p. 38, Table 2.5.
 
-      .. rubric:: Format
-         :name: format
+Whittaker, J. (1990) Graphical Models in Applied Multivariate Statistics
+New York: John Wiley and Sons, p. 220.
 
-      A 3-dimensional array resulting from cross-tabulating 3 variables
-      for 474 observations. The variable names and their levels are:
+Examples
+~~~~~~~~
 
-      == ============ =========================
-      No Name         Levels
-      1  ``Survival`` ``"Died", "Surv"``
-      2  ``Grade``    ``"Malignant", "Benign"``
-      3  ``Center``   ``"Boston", "Glamorgan"``
-      \               
-      == ============ =========================
+.. code:: R
 
-      .. rubric:: Source
-         :name: source
 
-      Lindsey, J. K. (1995). Analysis of Frequency and Count Data
-      Oxford, UK: Oxford University Press. p. 38, Table 2.5.
+   data(Cancer)
 
-      Whittaker, J. (1990) Graphical Models in Applied Multivariate
-      Statistics New York: John Wiley and Sons, p. 220.
+   MASS::loglm(~Survival + Grade + Center, data = Cancer)
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(Cancer)
-
-         MASS::loglm(~Survival + Grade + Center, data = Cancer)
-
-         vcd::mosaic(Cancer, shade=TRUE)
+   vcd::mosaic(Cancer, shade=TRUE)

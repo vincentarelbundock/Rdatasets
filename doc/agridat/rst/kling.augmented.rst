@@ -1,90 +1,86 @@
-.. container::
+=============== ===============
+kling.augmented R Documentation
+=============== ===============
 
-   .. container::
+Augmented design of meadowfoam
+------------------------------
 
-      =============== ===============
-      kling.augmented R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Augmented design of meadowfoam
-         :name: augmented-design-of-meadowfoam
+Augmented design of meadowfoam
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Augmented design of meadowfoam
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("kling.augmented")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("kling.augmented")
+A data frame with 68 observations on the following 7 variables.
 
-      .. rubric:: Format
-         :name: format
+``plot``
+   Plot number
 
-      A data frame with 68 observations on the following 7 variables.
+``gen``
+   Genotype / Entry
 
-      ``plot``
-         Plot number
+``name``
+   Genotype name
 
-      ``gen``
-         Genotype / Entry
+``block``
+   Block, text
 
-      ``name``
-         Genotype name
+``tsw``
+   Thousand seed weight
 
-      ``block``
-         Block, text
+``row``
+   Row ordinate
 
-      ``tsw``
-         Thousand seed weight
+``col``
+   Column ordinate
 
-      ``row``
-         Row ordinate
+Details
+~~~~~~~
 
-      ``col``
-         Column ordinate
+An experiment with meadowfoam. Blocks are in one direction, serpentine
+layout. There are 50 new genotypes and 3 checks (C1=Ross, C2=OMF183,
+C3=Starlight). New genotypes have 1 rep, checks have 6 reps. The
+response variable is thousand seed weight.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      An experiment with meadowfoam. Blocks are in one direction,
-      serpentine layout. There are 50 new genotypes and 3 checks
-      (C1=Ross, C2=OMF183, C3=Starlight). New genotypes have 1 rep,
-      checks have 6 reps. The response variable is thousand seed weight.
+Jennifer Kling, "Introduction to Augmented Experimental Design"
+https://plant-breeding-genomics.extension.org/introduction-to-augmented-experimental-design/
+Accessed May 2022.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Jennifer Kling, "Introduction to Augmented Experimental Design"
-      https://plant-breeding-genomics.extension.org/introduction-to-augmented-experimental-design/
-      Accessed May 2022.
+None
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(kling.augmented)
+   dat <- kling.augmented
+   libs(desplot,lattice,lme4)
+   # Layout and yields
+   desplot(dat, tsw ~ col*row, text=name, cex=1.5)
 
-         ## Not run: 
+   # Mixed model, fixed blocks, random genotypes
+   m1 <- lmer(tsw ~ block + (1|name), data=dat)
+   ran1 <- ranef(m1, condVar=TRUE)
+   ran1
+   dotplot(ran1) # Caterpillar plot
 
-         library(agridat)
-         data(kling.augmented)
-         dat <- kling.augmented
-         libs(desplot,lattice,lme4)
-         # Layout and yields
-         desplot(dat, tsw ~ col*row, text=name, cex=1.5)
-
-         # Mixed model, fixed blocks, random genotypes
-         m1 <- lmer(tsw ~ block + (1|name), data=dat)
-         ran1 <- ranef(m1, condVar=TRUE)
-         ran1
-         dotplot(ran1) # Caterpillar plot
-
-         ## End(Not run)
+   ## End(Not run)

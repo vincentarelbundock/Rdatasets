@@ -1,48 +1,43 @@
-.. container::
+============== ===============
+USAccDeaths_ts R Documentation
+============== ===============
 
-   .. container::
+Accidental Deaths in the US 1973-1978
+-------------------------------------
 
-      ============== ===============
-      USAccDeaths_ts R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Accidental Deaths in the US 1973-1978
-         :name: accidental-deaths-in-the-us-1973-1978
+The dataset name has been changed to 'USAccDeaths_ts' to avoid confusion
+with other packages in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a time series object. The original content of the
+dataset has not been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'USAccDeaths_ts' to avoid
-      confusion with other packages in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a time series object.
-      The original content of the dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(USAccDeaths_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(USAccDeaths_ts)
+A time series object with 72 observations representing monthly
+accidental deaths in the U.S. from 1973 to 1979:
 
-      .. rubric:: Format
-         :name: format
+years
+   A numeric vector representing the years from 1973 to 1979.
 
-      A time series object with 72 observations representing monthly
-      accidental deaths in the U.S. from 1973 to 1979:
+months
+   A character vector representing the months from January to December.
 
-      years
-         A numeric vector representing the years from 1973 to 1979.
+deaths
+   Numeric values representing the number of accidental deaths for each
+   month.
 
-      months
-         A character vector representing the months from January to
-         December.
+Source
+~~~~~~
 
-      deaths
-         Numeric values representing the number of accidental deaths for
-         each month.
-
-      .. rubric:: Source
-         :name: source
-
-      U.S. accidental deaths data.
+U.S. accidental deaths data.

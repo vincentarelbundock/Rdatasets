@@ -1,80 +1,74 @@
-.. container::
+====== ===============
+ccdrug R Documentation
+====== ===============
 
-   .. container::
+Data on Drug Arrests from the Crown Court Sentencing Survey
+-----------------------------------------------------------
 
-      ====== ===============
-      ccdrug R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Data on Drug Arrests from the Crown Court Sentencing
-         Survey
-         :name: data-on-drug-arrests-from-the-crown-court-sentencing-survey
+The ``ccdrug`` data contains data on drug arrests from the Crown Court
+Sentencing Survey between 2012 and 2015 in England and Wales, allowing
+for a look at differential sentencing rates for men and women, with a
+set of controls for features that should impact sentencing.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The ``ccdrug`` data contains data on drug arrests from the Crown
-      Court Sentencing Survey between 2012 and 2015 in England and
-      Wales, allowing for a look at differential sentencing rates for
-      men and women, with a set of controls for features that should
-      impact sentencing.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   ccdrug
 
-      .. code:: R
+Format
+~~~~~~
 
-         ccdrug
+A data frame with 16973 rows and 45 variables
 
-      .. rubric:: Format
-         :name: format
+custody
+   Taken in to custody.
 
-      A data frame with 16973 rows and 45 variables
+male
+   Is a male
 
-      custody
-         Taken in to custody.
+first_offense
+   This is the first offense
 
-      male
-         Is a male
+age
+   Age in ten-year bins
 
-      first_offense
-         This is the first offense
+offense
+   Offense type
 
-      age
-         Age in ten-year bins
+prev_convictions
+   Previous convictions, in bins of None, 1-3, 4-9, or 10+
 
-      offense
-         Offense type
+drg_class
+   Type of drug
 
-      prev_convictions
-         Previous convictions, in bins of None, 1-3, 4-9, or 10+
+drg_culpability
+   Level of culpability for crime
 
-      drg_class
-         Type of drug
+drg_increasing_ser_other_1, drg_increasing_ser_other_3, drg_increasing_ser_other_4, drg_increasing_ser_other_5, drg_increasing_ser_other_6, drg_increasing_ser_other_7, drg_increasing_ser_other_8, drg_increasing_ser_other_9, drg_increasing_ser_other_10, drg_increasing_ser_other_11, drg_increasing_ser_other_12, drg_increasing_ser_other_13, drg_increasing_ser_other_14, drg_increasing_ser_other_15, drg_increasing_ser_other_17, drg_increasing_ser_other_18, drg_increasing_ser_other_19, drg_increasing_ser_other_20, drg_increasing_ser_other_21, drg_reducing_ser_1, drg_reducing_ser_2, drg_reducing_ser_3, drg_reducing_ser_4, drg_reducing_ser_5, drg_reducing_ser_6, drg_reducing_ser_7, drg_reducing_ser_8, drg_reducing_ser_9, drg_reducing_ser_10, drg_reducing_ser_11, drg_reducing_ser_12, drg_reducing_ser_13, drg_reducing_ser_14, drg_reducing_ser_15, drg_reducing_ser_16, drg_increasing_ser_stat_2, drg_increasing_ser_stat_3
+   A set of indicators that should increase or reduce the likelihood of
+   being taken into custody. See variable labels for specific
+   definitions.
 
-      drg_culpability
-         Level of culpability for crime
+Details
+~~~~~~~
 
-      drg_increasing_ser_other_1, drg_increasing_ser_other_3, drg_increasing_ser_other_4, drg_increasing_ser_other_5, drg_increasing_ser_other_6, drg_increasing_ser_other_7, drg_increasing_ser_other_8, drg_increasing_ser_other_9, drg_increasing_ser_other_10, drg_increasing_ser_other_11, drg_increasing_ser_other_12, drg_increasing_ser_other_13, drg_increasing_ser_other_14, drg_increasing_ser_other_15, drg_increasing_ser_other_17, drg_increasing_ser_other_18, drg_increasing_ser_other_19, drg_increasing_ser_other_20, drg_increasing_ser_other_21, drg_reducing_ser_1, drg_reducing_ser_2, drg_reducing_ser_3, drg_reducing_ser_4, drg_reducing_ser_5, drg_reducing_ser_6, drg_reducing_ser_7, drg_reducing_ser_8, drg_reducing_ser_9, drg_reducing_ser_10, drg_reducing_ser_11, drg_reducing_ser_12, drg_reducing_ser_13, drg_reducing_ser_14, drg_reducing_ser_15, drg_reducing_ser_16, drg_increasing_ser_stat_2, drg_increasing_ser_stat_3
-         A set of indicators that should increase or reduce the
-         likelihood of being taken into custody. See variable labels for
-         specific definitions.
+This data set is used in the *Partial Identification* chapter of *The
+Effect*.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This data set is used in the *Partial Identification* chapter of
-      *The Effect*.
+Pina Sanchez, J., & Harris, L., 2020. Sentencing gender? Investigating
+the presence of gender disparities in Crown Court sentences. *Criminal
+Law Review*, 2020(1), pp. 3-28.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Pina Sanchez, J., & Harris, L., 2020. Sentencing gender?
-      Investigating the presence of gender disparities in Crown Court
-      sentences. *Criminal Law Review*, 2020(1), pp. 3-28.
-
-      .. rubric:: References
-         :name: references
-
-      Huntington-Klein. 2021. The Effect: An Introduction to Research
-      Design and Causality. https://theeffectbook.net.
+Huntington-Klein. 2021. The Effect: An Introduction to Research Design
+and Causality. https://theeffectbook.net.

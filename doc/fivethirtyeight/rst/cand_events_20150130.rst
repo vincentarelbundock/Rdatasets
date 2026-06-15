@@ -1,66 +1,62 @@
-.. container::
+==================== ===============
+cand_events_20150130 R Documentation
+==================== ===============
 
-   .. container::
+Who Will Run For President: Romney Is Out
+-----------------------------------------
 
-      ==================== ===============
-      cand_events_20150130 R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Who Will Run For President: Romney Is Out
-         :name: who-will-run-for-president-romney-is-out
+The raw data behind the story "Who Will Run For President: Romney Is
+Out"
+https://fivethirtyeight.com/features/romney-not-running-for-president/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Who Will Run For President: Romney
-      Is Out"
-      https://fivethirtyeight.com/features/romney-not-running-for-president/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   cand_events_20150130
 
-      .. code:: R
+Format
+~~~~~~
 
-         cand_events_20150130
+A data frame with 74 rows representing events attended by potential
+presidential primary candidates and 8 variables:
 
-      .. rubric:: Format
-         :name: format
+person
+   Potential presidential candidate
 
-      A data frame with 74 rows representing events attended by
-      potential presidential primary candidates and 8 variables:
+party
+   Political party
 
-      person
-         Potential presidential candidate
+state
+   State of event
 
-      party
-         Political party
+event
+   Name of event
 
-      state
-         State of event
+type
+   Type of event
 
-      event
-         Name of event
+date
+   Date of event
 
-      type
-         Type of event
+link
+   Link to event
 
-      date
-         Date of event
+snippet
+   Snippet of event description
 
-      link
-         Link to event
+Source
+~~~~~~
 
-      snippet
-         Snippet of event description
+See
+https://github.com/fivethirtyeight/data/tree/master/potential-candidates
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      See
-      https://github.com/fivethirtyeight/data/tree/master/potential-candidates
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``cand_state_20150130``, ``cand_events_20150114``, and
-      ``cand_state_20150114``
+``cand_state_20150130``, ``cand_events_20150114``, and
+``cand_state_20150114``

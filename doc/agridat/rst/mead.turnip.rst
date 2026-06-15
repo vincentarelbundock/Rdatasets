@@ -1,86 +1,82 @@
-.. container::
+=========== ===============
+mead.turnip R Documentation
+=========== ===============
 
-   .. container::
+Density/spacing experiment for turnips in 3 blocks.
+---------------------------------------------------
 
-      =========== ===============
-      mead.turnip R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Density/spacing experiment for turnips in 3 blocks.
-         :name: densityspacing-experiment-for-turnips-in-3-blocks.
+Density/spacing experiment for turnips in 3 blocks.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Density/spacing experiment for turnips in 3 blocks.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("mead.turnip")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("mead.turnip")
+A data frame with 60 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``yield``
+   log yield (pounds/plot)
 
-      A data frame with 60 observations on the following 4 variables.
+``block``
+   block
 
-      ``yield``
-         log yield (pounds/plot)
+``spacing``
+   row spacing, inches
 
-      ``block``
-         block
+``density``
+   density of seeds, pounds/acre
 
-      ``spacing``
-         row spacing, inches
+Details
+~~~~~~~
 
-      ``density``
-         density of seeds, pounds/acre
+An experiment with turnips, 3 blocks, 20 treatments in a factorial
+arrangement of 5 seeding rates (density) and 4 widths (spacing).
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      An experiment with turnips, 3 blocks, 20 treatments in a factorial
-      arrangement of 5 seeding rates (density) and 4 widths (spacing).
+Roger Mead. (1988). *The Design of Experiments: Statistical Principles
+for Practical Applications*. Example 12.3. Page 323.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Roger Mead. (1988). *The Design of Experiments: Statistical
-      Principles for Practical Applications*. Example 12.3. Page 323.
+H. P. Piepho, R. N. Edmondson. (2018). A tutorial on the statistical
+analysis of factorial experiments with qualitative and quantitative
+treatment factor levels. Jour Agronomy and Crop Science, 8, 1-27.
+https://doi.org/10.1111/jac.12267
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      H. P. Piepho, R. N. Edmondson. (2018). A tutorial on the
-      statistical analysis of factorial experiments with qualitative and
-      quantitative treatment factor levels. Jour Agronomy and Crop
-      Science, 8, 1-27. https://doi.org/10.1111/jac.12267
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(mead.turnip)
+   dat <- mead.turnip
 
-         ## Not run: 
+   dat$ratef <- factor(dat$density)
+   dat$widthf <- factor(dat$spacing)
 
-         library(agridat)
-         data(mead.turnip)
-         dat <- mead.turnip
+   m1 <- aov(yield ~ block + ratef + widthf + ratef:widthf, data=dat)
+   anova(m1) # table 12.10 in Mead
 
-         dat$ratef <- factor(dat$density)
-         dat$widthf <- factor(dat$spacing)
-
-         m1 <- aov(yield ~ block + ratef + widthf + ratef:widthf, data=dat)
-         anova(m1) # table 12.10 in Mead
-
-         # Similar to Piepho fig 10
-         libs(lattice)
-         xyplot(yield ~ log(spacing)|ratef, data=dat,
-                auto.key=list(columns=5),
-                main="mead.turnip - log(yield) for each density",
-                group=ratef)
+   # Similar to Piepho fig 10
+   libs(lattice)
+   xyplot(yield ~ log(spacing)|ratef, data=dat,
+          auto.key=list(columns=5),
+          main="mead.turnip - log(yield) for each density",
+          group=ratef)
 
 
-         ## End(Not run)
+   ## End(Not run)

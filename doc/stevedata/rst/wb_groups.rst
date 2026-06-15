@@ -1,48 +1,44 @@
-.. container::
+========= ===============
+wb_groups R Documentation
+========= ===============
 
-   .. container::
+World Bank Country Groups
+-------------------------
 
-      ========= ===============
-      wb_groups R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: World Bank Country Groups
-         :name: world-bank-country-groups
+A data set on World Bank country groups/classifications, for ease of
+selecting three-character ISO codes of interest.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A data set on World Bank country groups/classifications, for ease
-      of selecting three-character ISO codes of interest.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   wb_groups
 
-      .. code:: R
+Format
+~~~~~~
 
-         wb_groups
+A data frame with 2085 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``wbgc``
+   a three-character code for the World Bank group
 
-      A data frame with 2085 observations on the following 4 variables.
+``wbgn``
+   a more informative name for the World Bank group
 
-      ``wbgc``
-         a three-character code for the World Bank group
+``iso3c``
+   a three-character ISO code
 
-      ``wbgn``
-         a more informative name for the World Bank group
+``name``
+   a name for the country that corresponds with the three-character ISO
+   code
 
-      ``iso3c``
-         a three-character ISO code
+Details
+~~~~~~~
 
-      ``name``
-         a name for the country that corresponds with the
-         three-character ISO code
-
-      .. rubric:: Details
-         :name: details
-
-      Data are for the current 2025 fiscal year. The World Bank's Data
-      Help Desk will offer more information about specific criteria for
-      things like income.
+Data are for the current 2025 fiscal year. The World Bank's Data Help
+Desk will offer more information about specific criteria for things like
+income.

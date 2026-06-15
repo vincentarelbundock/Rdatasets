@@ -1,68 +1,62 @@
-.. container::
+==================== ===============
+cand_events_20150114 R Documentation
+==================== ===============
 
-   .. container::
+Looking For Clues: Who Is Going To Run For President In 2016?
+-------------------------------------------------------------
 
-      ==================== ===============
-      cand_events_20150114 R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Looking For Clues: Who Is Going To Run For President
-         In 2016?
-         :name: looking-for-clues-who-is-going-to-run-for-president-in-2016
+The raw data behind the story "Looking For Clues: Who Is Going To Run
+For President In 2016?"
+https://fivethirtyeight.com/features/2016-president-who-is-going-to-run/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Looking For Clues: Who Is Going To
-      Run For President In 2016?"
-      https://fivethirtyeight.com/features/2016-president-who-is-going-to-run/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   cand_events_20150114
 
-      .. code:: R
+Format
+~~~~~~
 
-         cand_events_20150114
+A data frame with 42 rows representing events attended in Iowa and New
+Hampshire by potential presidential primary candidates and 8 variables:
 
-      .. rubric:: Format
-         :name: format
+person
+   Potential presidential candidate
 
-      A data frame with 42 rows representing events attended in Iowa and
-      New Hampshire by potential presidential primary candidates and 8
-      variables:
+party
+   Political party
 
-      person
-         Potential presidential candidate
+state
+   State of event
 
-      party
-         Political party
+event
+   Name of event
 
-      state
-         State of event
+type
+   Type of event
 
-      event
-         Name of event
+date
+   Date of event
 
-      type
-         Type of event
+link
+   Link to event
 
-      date
-         Date of event
+snippet
+   Snippet of event description
 
-      link
-         Link to event
+Source
+~~~~~~
 
-      snippet
-         Snippet of event description
+See
+https://github.com/fivethirtyeight/data/tree/master/potential-candidates
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      See
-      https://github.com/fivethirtyeight/data/tree/master/potential-candidates
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``cand_state_20150114``, ``cand_events_20150130``, and
-      ``cand_state_20150130``
+``cand_state_20150114``, ``cand_events_20150130``, and
+``cand_state_20150130``

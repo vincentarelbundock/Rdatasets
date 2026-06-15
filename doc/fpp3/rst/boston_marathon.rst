@@ -1,33 +1,30 @@
-.. container::
+=============== ===============
+boston_marathon R Documentation
+=============== ===============
 
-   .. container::
+Boston marathon winning times since 1897
+----------------------------------------
 
-      =============== ===============
-      boston_marathon R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Boston marathon winning times since 1897
-         :name: boston-marathon-winning-times-since-1897
+Winning times for events at the Boston Marathon. 1897-2019.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Winning times for events at the Boston Marathon. 1897-2019.
+Annual time series of class 'tsibble'.
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      Annual time series of class 'tsibble'.
+Boston Athletic Association.
+https://www.baa.org/races/boston-marathon/results/champions/
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Boston Athletic Association.
-      https://www.baa.org/races/boston-marathon/results/champions
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         boston_marathon
+   boston_marathon

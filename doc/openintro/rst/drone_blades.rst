@@ -1,49 +1,46 @@
-.. container::
+============ ===============
+drone_blades R Documentation
+============ ===============
 
-   .. container::
+Quadcopter Drone Blades
+-----------------------
 
-      ============ ===============
-      drone_blades R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Quadcopter Drone Blades
-         :name: quadcopter-drone-blades
+Quality control dataset for quadcopter drone blades, where this data has
+been made up for an example.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Quality control dataset for quadcopter drone blades, where this
-      data has been made up for an example.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   drone_blades
 
-      .. code:: R
+Format
+~~~~~~
 
-         drone_blades
+A data frame with 2000 observations on the following 2 variables.
 
-      .. rubric:: Format
-         :name: format
+supplier
+   The supplier for the blade.
 
-      A data frame with 2000 observations on the following 2 variables.
+inspection
+   The inspection conclusion.
 
-      supplier
-         The supplier for the blade.
+References
+~~~~~~~~~~
 
-      inspection
-         The inspection conclusion.
+OpenIntro Statistics, Third Edition and Fourth Edition.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      OpenIntro Statistics, Third Edition and Fourth Edition.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   library(dplyr)
 
-         library(dplyr)
-
-         drone_blades |>
-           count(supplier, inspection)
+   drone_blades |>
+     count(supplier, inspection)

@@ -1,45 +1,42 @@
-.. container::
+===== ===============
+dream R Documentation
+===== ===============
 
-   .. container::
+Survey on views of the DREAM Act
+--------------------------------
 
-      ===== ===============
-      dream R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Survey on views of the DREAM Act
-         :name: survey-on-views-of-the-dream-act
+A SurveyUSA poll.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A SurveyUSA poll.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   dream
 
-      .. code:: R
+Format
+~~~~~~
 
-         dream
+A data frame with 910 observations on the following 2 variables.
 
-      .. rubric:: Format
-         :name: format
+ideology
+   a factor with levels ``Conservative`` ``Liberal`` ``Moderate``
 
-      A data frame with 910 observations on the following 2 variables.
+stance
+   a factor with levels ``No`` ``Not sure`` ``Yes``
 
-      ideology
-         a factor with levels ``Conservative`` ``Liberal`` ``Moderate``
+Source
+~~~~~~
 
-      stance
-         a factor with levels ``No`` ``Not sure`` ``Yes``
+SurveyUSA, News Poll #18927, data collected Jan 27-29, 2012.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      SurveyUSA, News Poll #18927, data collected Jan 27-29, 2012.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         table(dream)
+   table(dream)

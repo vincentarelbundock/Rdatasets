@@ -1,132 +1,125 @@
-.. container::
+======= ===============
+Fibulae R Documentation
+======= ===============
 
-   .. container::
+Bronze La Tene fibulae from Munsingen, Switzerland
+--------------------------------------------------
 
-      ======= ===============
-      Fibulae R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Bronze La Tene fibulae from Munsingen, Switzerland
-         :name: bronze-la-tene-fibulae-from-munsingen-switzerland
+The La Tène fibulae from the Iron Age cemetery of Münsingen near Berne,
+Switzerland (100 - 500 BCE) described by F. R. Hodson (1968).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The La Tène fibulae from the Iron Age cemetery of Münsingen near
-      Berne, Switzerland (100 - 500 BCE) described by F. R. Hodson
-      (1968).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("Fibulae")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("Fibulae")
+A data frame with 30 observations on the following 16 variables.
 
-      .. rubric:: Format
-         :name: format
+``Grave``
+   Grave number
 
-      A data frame with 30 observations on the following 16 variables.
+``Mno``
+   Museum number
 
-      ``Grave``
-         Grave number
+``FL``
+   Foot Length
 
-      ``Mno``
-         Museum number
+``BH``
+   Bow Height
 
-      ``FL``
-         Foot Length
+``BFA``
+   Bow Front Angle
 
-      ``BH``
-         Bow Height
+``FA``
+   Foot Angle
 
-      ``BFA``
-         Bow Front Angle
+``CD``
+   Coil Diameter
 
-      ``FA``
-         Foot Angle
+``BRA``
+   Bow Rear Angle
 
-      ``CD``
-         Coil Diameter
+``ED``
+   Element Diameter
 
-      ``BRA``
-         Bow Rear Angle
+``FEL``
+   Foot Extension Length
 
-      ``ED``
-         Element Diameter
+``C``
+   Catchplate
 
-      ``FEL``
-         Foot Extension Length
+``BW``
+   Bow Width
 
-      ``C``
-         Catchplate
+``BT``
+   Bow Thickness
 
-      ``BW``
-         Bow Width
+``FEW``
+   Foot Extension Width
 
-      ``BT``
-         Bow Thickness
+``Coils``
+   Number of Coils
 
-      ``FEW``
-         Foot Extension Width
+``Length``
+   Total Length
 
-      ``Coils``
-         Number of Coils
+Details
+~~~~~~~
 
-      ``Length``
-         Total Length
+The La Tène fibulae from the Iron Age cemetery of Münsingen near Berne,
+Switzerland were reported by F. R. Hodson (1968). They were featured in
+several papers by Hodson over the years and used to illustrate a variety
+of multivariate statistical techniques. The data here were taken from
+Doran and Hodson (1975), Table 9.1. These are the raw measurements
+including 5 missing values in foot extension thickness and 1 in foot
+extension length.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The La Tène fibulae from the Iron Age cemetery of Münsingen near
-      Berne, Switzerland were reported by F. R. Hodson (1968). They were
-      featured in several papers by Hodson over the years and used to
-      illustrate a variety of multivariate statistical techniques. The
-      data here were taken from Doran and Hodson (1975), Table 9.1.
-      These are the raw measurements including 5 missing values in foot
-      extension thickness and 1 in foot extension length.
+Doran, J. E. and F. R. Hodson. 1975. *Mathematics and Computers in
+Archaeology*. Harvard University Press, Cambridge, Massachusetts.
 
-      .. rubric:: Source
-         :name: source
+Hodson, F. R. 1968. *The La Tène Cemetery at Műnsingen-Rain*. Stampfli,
+Berne.
 
-      Doran, J. E. and F. R. Hodson. 1975. *Mathematics and Computers in
-      Archaeology*. Harvard University Press, Cambridge, Massachusetts.
+References
+~~~~~~~~~~
 
-      Hodson, F. R. 1968. *The La Tène Cemetery at Műnsingen-Rain*.
-      Stampfli, Berne.
+Carlson, David L. 2017. *Quantitative Methods in Archaeology Using R*.
+Cambridge University Press, pp 88-91, 95-99, 103-109, 127-129, 132-138,
+162-169.
 
-      .. rubric:: References
-         :name: references
+Hodson, F. R., P. H. A. Sneath, J. E. Doran. 1966. Some Experiments in
+the Numerical Analysis of Archaeological Data. *Biometrika* 53: 311-324.
 
-      Carlson, David L. 2017. *Quantitative Methods in Archaeology Using
-      R*. Cambridge University Press, pp 88-91, 95-99, 103-109, 127-129,
-      132-138, 162-169.
+Hodson, F. R. 1969. Searching for Structure within Multivariate
+Archaeological Data. *World Archaeology* 1: 90-105.
 
-      Hodson, F. R., P. H. A. Sneath, J. E. Doran. 1966. Some
-      Experiments in the Numerical Analysis of Archaeological Data.
-      *Biometrika* 53: 311-324.
+Hodson, F. R. 1970. Cluster Analysis and Archaeology: some New
+Developments and Applications. *World Archaeology* 1: 299-320.
 
-      Hodson, F. R. 1969. Searching for Structure within Multivariate
-      Archaeological Data. *World Archaeology* 1: 90-105.
+Hodson, F. R. 1971. Numerical Typology and Prehistoric Archaeology. In
+*Mathematics int eh Archaeological and Historical Sciences*, edited by
+F. R. Hodson, D. G. Kendall and P. Tautu, pp 30-45. Edinburgh University
+Press, Edinburgh.
 
-      Hodson, F. R. 1970. Cluster Analysis and Archaeology: some New
-      Developments and Applications. *World Archaeology* 1: 299-320.
+Sneath, P. H. A. 1968. Goodness of Intuitive Arrangements into Time
+Trends Based on Complex Pattern. *Systematic Zoology* 17: 256-260.
 
-      Hodson, F. R. 1971. Numerical Typology and Prehistoric
-      Archaeology. In *Mathematics int eh Archaeological and Historical
-      Sciences*, edited by F. R. Hodson, D. G. Kendall and P. Tautu, pp
-      30-45. Edinburgh University Press, Edinburgh.
+Examples
+~~~~~~~~
 
-      Sneath, P. H. A. 1968. Goodness of Intuitive Arrangements into
-      Time Trends Based on Complex Pattern. *Systematic Zoology* 17:
-      256-260.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(Fibulae)
-         t(sapply(Fibulae[, 3:16], quantile, na.rm=TRUE))
-         plot(density(Fibulae$Length, bw="SJ"), main="Kernel Density Plot of Length")
+   data(Fibulae)
+   t(sapply(Fibulae[, 3:16], quantile, na.rm=TRUE))
+   plot(density(Fibulae$Length, bw="SJ"), main="Kernel Density Plot of Length")

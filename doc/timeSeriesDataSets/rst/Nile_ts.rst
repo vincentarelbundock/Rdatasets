@@ -1,47 +1,43 @@
-.. container::
+======= ===============
+Nile_ts R Documentation
+======= ===============
 
-   .. container::
+Flow of the River Nile
+----------------------
 
-      ======= ===============
-      Nile_ts R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Flow of the River Nile
-         :name: flow-of-the-river-nile
+The dataset name has been changed to 'Nile_ts' to avoid confusion with
+other packages in the R ecosystem from which datasets have been sourced.
+The suffix 'ts' indicates that this dataset is a time series object.
+This naming convention helps distinguish this dataset as part of the
+'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'Nile_ts' to avoid confusion
-      with other packages in the R ecosystem from which datasets have
-      been sourced. The suffix 'ts' indicates that this dataset is a
-      time series object. This naming convention helps distinguish this
-      dataset as part of the 'timeseriesdatasets' package and assists
-      users in identifying its specific characteristics. The original
-      content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Nile_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Nile_ts)
+A time series object of 100 observations on the following:
 
-      .. rubric:: Format
-         :name: format
+Time-Series [1:100]
+   Monthly flow of the River Nile (in cubic meters per second).
 
-      A time series object of 100 observations on the following:
+Details
+~~~~~~~
 
-      Time-Series [1:100]
-         Monthly flow of the River Nile (in cubic meters per second).
+The data covers the period from 1871 to 1970.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The data covers the period from 1871 to 1970.
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset is from the British Hydrographic Office and has been
-      digitized by the R package datasets.
+The dataset is from the British Hydrographic Office and has been
+digitized by the R package datasets.

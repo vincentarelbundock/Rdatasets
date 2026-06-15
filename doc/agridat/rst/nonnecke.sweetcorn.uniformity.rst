@@ -1,92 +1,88 @@
-.. container::
+============================= ===============
+nonnecke.sweetcorn.uniformity R Documentation
+============================= ===============
 
-   .. container::
+Uniformity trial of sweet corn
+------------------------------
 
-      ============================= ===============
-      nonnecke.sweetcorn.uniformity R Documentation
-      ============================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of sweet corn
-         :name: uniformity-trial-of-sweet-corn
+Uniformity trials of sweet corn in Alberta, 1956.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trials of sweet corn in Alberta, 1956.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("nonnecke.sweetcorn.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("nonnecke.sweetcorn.uniformity")
+A data frame:
 
-      .. rubric:: Format
-         :name: format
+``loc``
+   location
 
-      A data frame:
+``row``
+   row
 
-      ``loc``
-         location
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   yield of marketable ears, pounds
 
-      ``col``
-         column
+Details
+~~~~~~~
 
-      ``yield``
-         yield of marketable ears, pounds
+Experiments were conducted at three locations in Southern Alberta at
+Lethbridge, Vauxhall, and Cranford in 1956. Plot layout was 32 rows,
+each 179 feet long, allowing 18 ten-foot plots per row. Rows were 3 feet
+apart, thinned to one foot between plants. A double guard row surrounded
+the entire plot. The same two persons were assigned to harvest the corn
+from all locations. All 576 plots were harvested in one day. Optimal
+plot sizes were found to be 10ft x 6ft or 20ft by 3ft. The R data uses
+row/column for plot/row.
 
-      .. rubric:: Details
-         :name: details
+Field width: 18 plots \* 10 ft = 180 feet
 
-      Experiments were conducted at three locations in Southern Alberta
-      at Lethbridge, Vauxhall, and Cranford in 1956. Plot layout was 32
-      rows, each 179 feet long, allowing 18 ten-foot plots per row. Rows
-      were 3 feet apart, thinned to one foot between plants. A double
-      guard row surrounded the entire plot. The same two persons were
-      assigned to harvest the corn from all locations. All 576 plots
-      were harvested in one day. Optimal plot sizes were found to be
-      10ft x 6ft or 20ft by 3ft. The R data uses row/column for
-      plot/row.
+Field length: 32 rows \* 3 ft = 96 feet
 
-      Field width: 18 plots \* 10 ft = 180 feet
+Source
+~~~~~~
 
-      Field length: 32 rows \* 3 ft = 96 feet
+Ib Libner Nonnecke. 1958. Yield variability of sweet corn and canning
+peas as affected by plot size and shape. Thesis at Oregon State College.
+https://hdl.handle.net/1957/23367
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Ib Libner Nonnecke. 1958. Yield variability of sweet corn and
-      canning peas as affected by plot size and shape. Thesis at Oregon
-      State College. https://hdl.handle.net/1957/23367
+I. L. Nonnecke, 1959. The precision of field experiments with vegetable
+crops as influenced by plot and block size and shape: I. Sweet corn.
+Canadian Journal of Plant Science, 39(4): 443-457. Tables 1-7.
+https://archive.org/details/sim_canadian-journal-of-plant-science_1959-10_39_4
+https://doi.org/10.4141/cjps59-061
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      I. L. Nonnecke, 1959. The precision of field experiments with
-      vegetable crops as influenced by plot and block size and shape: I.
-      Sweet corn. Canadian Journal of Plant Science, 39(4): 443-457.
-      Tables 1-7. https://doi.org/10.4141/cjps59-061
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+     library(agridat)
+     
+     # Corn 1
+     data(nonnecke.sweetcorn.uniformity)
+     dat <- nonnecke.sweetcorn.uniformity
 
-         ## Not run: 
+     libs(desplot)
+     desplot(dat, yield~col*row|loc,
+             flip=TRUE, tick=TRUE, aspect=96/180, # true aspect
+             main="nonnecke.sweetcorn.uniformity")
+       
 
-           library(agridat)
-           
-           # Corn 1
-           data(nonnecke.sweetcorn.uniformity)
-           dat <- nonnecke.sweetcorn.uniformity
-
-           libs(desplot)
-           desplot(dat, yield~col*row|loc,
-                   flip=TRUE, tick=TRUE, aspect=96/180, # true aspect
-                   main="nonnecke.sweetcorn.uniformity")
-             
-
-         ## End(Not run)
+   ## End(Not run)

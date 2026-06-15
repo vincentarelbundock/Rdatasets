@@ -1,116 +1,110 @@
-.. container::
+=========================== ===============
+roemer.sugarbeet.uniformity R Documentation
+=========================== ===============
 
-   .. container::
+Uniformity trial of sugar beets
+-------------------------------
 
-      =========================== ===============
-      roemer.sugarbeet.uniformity R Documentation
-      =========================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of sugar beets
-         :name: uniformity-trial-of-sugar-beets
+Uniformity trial of sugar beets
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of sugar beets
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("roemer.sugarbeet.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("roemer.sugarbeet.uniformity")
+A data frame with 192 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row ordinate
 
-      A data frame with 192 observations on the following 4 variables.
+``col``
+   column ordinate
 
-      ``row``
-         row ordinate
+``yield``
+   yield per plot, kg
 
-      ``col``
-         column ordinate
+``year``
+   year of experiment
 
-      ``yield``
-         yield per plot, kg
+Details
+~~~~~~~
 
-      ``year``
-         year of experiment
+Roemer p 27:
 
-      .. rubric:: Details
-         :name: details
+Eigene Versuche mit Zuckerrüben, ausgeführt auf dem Neßthaler Zuchtfeld
+des Kaiser-Wilhelm-Institutes, Bromberg, in den Jahren 1916, 1917 und
+1918. 1916 und 1918 war die Versuchsfläche ein und dieselbe, 6,80 a groß
+und in den beiden Jahren mit Original Klein-Wanzlebener Zuckerrüben auf
+30 X 40 cm bebaut. Vorfrucht für 1916 war Hafer, für 1918 Roggen; 1917
+war eine andere Fläche, ebenfalls 6,80 a groß, für den Versuch benußt;
+gesät wurden zwei verschiedene Zuchten von Strube, Schlanstedt. Beide
+Flächen sind von sehr gleichmäßiger Bodenbeschaffenheit. Bei der Fläche
+1916 und 1918 machte sich im ersten Jahre bei den Reihen 31-33 eine
+geringe Stelle bemerkbar, die 1918 weit weniger in Erscheinung trat. Die
+Bodenunterschiede sind in allen drei Jahren geringer als die durch die
+Versuchstechnik bedingten Fehler.
 
-      Roemer p 27:
+Translated: Own (Roemer) experiments with sugar beets, carried out on
+the Neßthal breeding field of the Kaiser Wilhelm Institute, Bromberg, in
+the years 1916, 1917 and 1918. In 1916 and 1918 the test area was one
+and the same, 6.80 are large and with original in both years
+Klein-Wanzleben sugar beets cultivated on 30 x 40 cm. The previous crop
+for 1916 was oats, for 1918 it was rye; In 1917 another area, also 6.80
+a large, was used for the experiment; Two different varieties from
+Strube, Schlanstedt were sown. Both areas have very uniform soil
+conditions. In the 1916 and 1918 area, a small spot was noticeable in
+rows 31-33 in the first year, which was much less noticeable in 1918. In
+all three years the soil differences are smaller than the errors caused
+by the experimental technology.
 
-      Eigene Versuche mit Zuckerrüben, ausgeführt auf dem Neßthaler
-      Zuchtfeld des Kaiser-Wilhelm-Institutes, Bromberg, in den Jahren
-      1916, 1917 und 1918. 1916 und 1918 war die Versuchsfläche ein und
-      dieselbe, 6,80 a groß und in den beiden Jahren mit Original
-      Klein-Wanzlebener Zuckerrüben auf 30 X 40 cm bebaut. Vorfrucht für
-      1916 war Hafer, für 1918 Roggen; 1917 war eine andere Fläche,
-      ebenfalls 6,80 a groß, für den Versuch benußt; gesät wurden zwei
-      verschiedene Zuchten von Strube, Schlanstedt. Beide Flächen sind
-      von sehr gleichmäßiger Bodenbeschaffenheit. Bei der Fläche 1916
-      und 1918 machte sich im ersten Jahre bei den Reihen 31-33 eine
-      geringe Stelle bemerkbar, die 1918 weit weniger in Erscheinung
-      trat. Die Bodenunterschiede sind in allen drei Jahren geringer als
-      die durch die Versuchstechnik bedingten Fehler.
+Field width: 2 plots \* 17 m = 34 m
 
-      Translated: Own (Roemer) experiments with sugar beets, carried out
-      on the Neßthal breeding field of the Kaiser Wilhelm Institute,
-      Bromberg, in the years 1916, 1917 and 1918. In 1916 and 1918 the
-      test area was one and the same, 6.80 are large and with original
-      in both years Klein-Wanzleben sugar beets cultivated on 30 x 40
-      cm. The previous crop for 1916 was oats, for 1918 it was rye; In
-      1917 another area, also 6.80 a large, was used for the experiment;
-      Two different varieties from Strube, Schlanstedt were sown. Both
-      areas have very uniform soil conditions. In the 1916 and 1918
-      area, a small spot was noticeable in rows 31-33 in the first year,
-      which was much less noticeable in 1918. In all three years the
-      soil differences are smaller than the errors caused by the
-      experimental technology.
+Field length: 48 plots \* 4.17 m = 200 m
 
-      Field width: 2 plots \* 17 m = 34 m
+Total area = 34 m \* 200 m = 6800 sq m = 6.8 are.
 
-      Field length: 48 plots \* 4.17 m = 200 m
+Cochran says: 96 plots, each 1 row x 55.8 ft (17m). Two sets (years)
+1916 and 1918.
 
-      Total area = 34 m \* 200 m = 6800 sq m = 6.8 are.
+Transcription details: Data were typed by K.Wright from Roemer (1920).
 
-      Cochran says: 96 plots, each 1 row x 55.8 ft (17m). Two sets
-      (years) 1916 and 1918.
+Source
+~~~~~~
 
-      Data were typed by K.Wright from Roemer (1920).
+Roemer, T. (1920). Der Feldversuch. Arbeiten der Deutschen
+Landwirtschafts-Gesellschaft, 302. Table 1, page 62.
+https://www.google.com/books/edition/Arbeiten_der_Deutschen_Landwirtschafts_G/7zBSAQAAMAAJ
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Roemer, T. (1920). Der Feldversuch. Arbeiten der Deutschen
-      Landwirtschafts-Gesellschaft, 302. Table 1, page 62.
-      https://www.google.com/books/edition/Arbeiten_der_Deutschen_Landwirtschafts_G/7zBSAQAAMAAJ
+Neyman, J., & Iwaszkiewicz, K. (1935). Statistical problems in
+agricultural experimentation. Supplement to the Journal of the Royal
+Statistical Society, 2(2), 107-180.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Neyman, J., & Iwaszkiewicz, K. (1935). Statistical problems in
-      agricultural experimentation. Supplement to the Journal of the
-      Royal Statistical Society, 2(2), 107-180.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
+     
+   library(agridat)
+   data(roemer.sugarbeet.uniformity)
+   dat <- roemer.sugarbeet.uniformity
 
-      .. code:: R
-
-         ## Not run: 
-           
-         library(agridat)
-         data(roemer.sugarbeet.uniformity)
-         dat <- roemer.sugarbeet.uniformity
-
-         libs(desplot)
-         desplot(dat, yield~col*row|year,
-                 aspect=(48*4.16)/(2*17), flip=TRUE, tick=TRUE,
-                 main="roemer.sugarbeet.uniformity")
+   libs(desplot)
+   desplot(dat, yield~col*row|year,
+           aspect=(48*4.16)/(2*17), flip=TRUE, tick=TRUE,
+           main="roemer.sugarbeet.uniformity")
 
 
-         ## End(Not run)
+   ## End(Not run)

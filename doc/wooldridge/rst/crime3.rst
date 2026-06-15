@@ -1,75 +1,70 @@
-.. container::
+====== ===============
+crime3 R Documentation
+====== ===============
 
-   .. container::
+crime3
+------
 
-      ====== ===============
-      crime3 R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: crime3
-         :name: crime3
+Wooldridge Source: E. Eide (1994), Economics of Crime: Deterrence of the
+Rational Offender. Amsterdam: North Holland. The data come from Tables
+A3 and A6. Data loads lazily.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Wooldridge Source: E. Eide (1994), Economics of Crime: Deterrence
-      of the Rational Offender. Amsterdam: North Holland. The data come
-      from Tables A3 and A6. Data loads lazily.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data('crime3')
 
-      .. code:: R
+Format
+~~~~~~
 
-         data('crime3')
+A data.frame with 106 observations on 12 variables:
 
-      .. rubric:: Format
-         :name: format
+- **district:** district number
 
-      A data.frame with 106 observations on 12 variables:
+- **year:** 72 or 78
 
-      -  **district:** district number
+- **crime:** crimes per 1000 people
 
-      -  **year:** 72 or 78
+- **clrprc1:** clear-up perc, prior year
 
-      -  **crime:** crimes per 1000 people
+- **clrprc2:** clear-up perc, two-years prior
 
-      -  **clrprc1:** clear-up perc, prior year
+- **d78:** =1 if year = 78
 
-      -  **clrprc2:** clear-up perc, two-years prior
+- **avgclr:** (clrprc1 + clrprc2)/2
 
-      -  **d78:** =1 if year = 78
+- **lcrime:** log(crime)
 
-      -  **avgclr:** (clrprc1 + clrprc2)/2
+- **clcrime:** change in lcrime
 
-      -  **lcrime:** log(crime)
+- **cavgclr:** change in avgclr
 
-      -  **clcrime:** change in lcrime
+- **cclrprc1:** change in clrprc1
 
-      -  **cavgclr:** change in avgclr
+- **cclrprc2:** change in clrprc2
 
-      -  **cclrprc1:** change in clrprc1
+Notes
+~~~~~
 
-      -  **cclrprc2:** change in clrprc2
+These data are for the years 1972 and 1978 for 53 police districts in
+Norway. Much larger data sets for more years can be obtained for the
+United States, although a measure of the “clear-up” rate is needed.
 
-      .. rubric:: Notes
-         :name: notes
+Used in Text: pages 464-465, 477-478
 
-      These data are for the years 1972 and 1978 for 53 police districts
-      in Norway. Much larger data sets for more years can be obtained
-      for the United States, although a measure of the “clear-up” rate
-      is needed.
+Source
+~~~~~~
 
-      Used in Text: pages 464-465, 477-478
+https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-          str(crime3)
+    str(crime3)

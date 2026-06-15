@@ -1,62 +1,57 @@
-.. container::
+========== ===============
+gpa_tbl_df R Documentation
+========== ===============
 
-   .. container::
+Survey of Duke Students on GPA, Studying, and More
+--------------------------------------------------
 
-      ========== ===============
-      gpa_tbl_df R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Survey of Duke Students on GPA, Studying, and More
-         :name: survey-of-duke-students-on-gpa-studying-and-more
+This dataset, gpa_tbl_df, is a tibble containing survey data from 55
+Duke University students. It includes information on students' GPA,
+weekly study hours, average hours of sleep per night, time spent going
+out per week, and gender. The dataset provides valuable insights into
+the relationship between academic performance and lifestyle habits.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, gpa_tbl_df, is a tibble containing survey data from
-      55 Duke University students. It includes information on students'
-      GPA, weekly study hours, average hours of sleep per night, time
-      spent going out per week, and gender. The dataset provides
-      valuable insights into the relationship between academic
-      performance and lifestyle habits.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(gpa_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(gpa_tbl_df)
+A tibble with 55 observations and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+gpa
+   Grade Point Average (numeric).
 
-      A tibble with 55 observations and 5 variables:
+studyweek
+   Number of hours spent studying per week (integer).
 
-      gpa
-         Grade Point Average (numeric).
+sleepnight
+   Average hours of sleep per night (numeric).
 
-      studyweek
-         Number of hours spent studying per week (integer).
+out
+   Average hours spent going out per week (numeric).
 
-      sleepnight
-         Average hours of sleep per night (numeric).
+gender
+   Gender of the student (factor with levels "Male" and "Female").
 
-      out
-         Average hours spent going out per week (numeric).
+Details
+~~~~~~~
 
-      gender
-         Gender of the student (factor with levels "Male" and "Female").
+The dataset name has been kept as 'gpa_tbl_df' to avoid confusion with
+other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the educationR package and assists
+users in identifying its specific characteristics. The suffix 'tbl_df'
+indicates that the dataset is a tibble. The original content has not
+been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'gpa_tbl_df' to avoid confusion
-      with other datasets in the R ecosystem. This naming convention
-      helps distinguish this dataset as part of the educationR package
-      and assists users in identifying its specific characteristics. The
-      suffix 'tbl_df' indicates that the dataset is a tibble. The
-      original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset was taken from the openintro package.
+The dataset was taken from the openintro package.

@@ -1,51 +1,47 @@
-.. container::
+======== ===============
+survival R Documentation
+======== ===============
 
-   .. container::
+Survival of Rats after Radiation Doses
+--------------------------------------
 
-      ======== ===============
-      survival R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Survival of Rats after Radiation Doses
-         :name: survival-of-rats-after-radiation-doses
+The ``survival`` data frame has 14 rows and 2 columns.
 
-      .. rubric:: Description
-         :name: description
+The data measured the survival percentages of batches of rats who were
+given varying doses of radiation. At each of 6 doses there were two or
+three replications of the experiment.
 
-      The ``survival`` data frame has 14 rows and 2 columns.
+Usage
+~~~~~
 
-      The data measured the survival percentages of batches of rats who
-      were given varying doses of radiation. At each of 6 doses there
-      were two or three replications of the experiment.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   survival
 
-      .. code:: R
+Format
+~~~~~~
 
-         survival
+This data frame contains the following columns:
 
-      .. rubric:: Format
-         :name: format
+``dose``
+   The dose of radiation administered (rads).
 
-      This data frame contains the following columns:
+``surv``
+   The survival rate of the batches expressed as a percentage.
 
-      ``dose``
-         The dose of radiation administered (rads).
+Source
+~~~~~~
 
-      ``surv``
-         The survival rate of the batches expressed as a percentage.
+The data were obtained from
 
-      .. rubric:: Source
-         :name: source
+Efron, B. (1988) Computer-intensive methods in statistical regression.
+*SIAM Review*, **30**, 421–449.
 
-      The data were obtained from
+References
+~~~~~~~~~~
 
-      Efron, B. (1988) Computer-intensive methods in statistical
-      regression. *SIAM Review*, **30**, 421–449.
-
-      .. rubric:: References
-         :name: references
-
-      Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and
-      Their Application*. Cambridge University Press.
+Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
+Application*. Cambridge University Press.

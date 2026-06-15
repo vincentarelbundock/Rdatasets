@@ -1,33 +1,30 @@
-.. container::
+=========== ===============
+us_gasoline R Documentation
+=========== ===============
 
-   .. container::
+US finished motor gasoline product supplied.
+--------------------------------------------
 
-      =========== ===============
-      us_gasoline R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: US finished motor gasoline product supplied.
-         :name: us-finished-motor-gasoline-product-supplied.
+Weekly data beginning Week 6, 1991, and ending Week 3, 2017. Units are
+"million barrels per day".
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Weekly data beginning Week 6, 1991, and ending Week 3, 2017. Units
-      are "million barrels per day".
+Time series object of class 'tsibble'.
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      Time series object of class 'tsibble'.
+US Energy Information Administration.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      US Energy Information Administration.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         us_gasoline
+   us_gasoline

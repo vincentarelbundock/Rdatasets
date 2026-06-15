@@ -1,108 +1,101 @@
-.. container::
+================== ===============
+durban.competition R Documentation
+================== ===============
 
-   .. container::
+Sugar beet yields with competition effects
+------------------------------------------
 
-      ================== ===============
-      durban.competition R Documentation
-      ================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Sugar beet yields with competition effects
-         :name: sugar-beet-yields-with-competition-effects
+Sugar beet yields with competition effects
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Sugar beet yields with competition effects
+A data frame with 114 observations on the following 5 variables.
 
-      .. rubric:: Format
-         :name: format
+``gen``
+   Genotype factor, 36 levels plus Border
 
-      A data frame with 114 observations on the following 5 variables.
+``col``
+   Column
 
-      ``gen``
-         Genotype factor, 36 levels plus Border
+``block``
+   Row/Block
 
-      ``col``
-         Column
+``wheel``
+   Position relative to wheel tracks
 
-      ``block``
-         Row/Block
+``yield``
+   Root yields, kg/plot
 
-      ``wheel``
-         Position relative to wheel tracks
+Details
+~~~~~~~
 
-      ``yield``
-         Root yields, kg/plot
+This sugar-beet trial was conducted in 1979.
 
-      .. rubric:: Details
-         :name: details
+Single-row plots, 12 m long, 0.5 m between rows. Each block is made up
+of all 36 genotypes laid out side by side. Guard/border plots are at
+each end. Root yields were collected.
 
-      This sugar-beet trial was conducted in 1979.
+Wheel tracks are located between columns 1 and 2, and between columns 5
+and 6, for each set of six plots. Each genotype was randomly allocated
+once to each pair of plots (1,6), (2,5), (3,4) across the three reps.
+Wheel effect were not significant in \_this\_ trial.
 
-      Single-row plots, 12 m long, 0.5 m between rows. Each block is
-      made up of all 36 genotypes laid out side by side. Guard/border
-      plots are at each end. Root yields were collected.
+Field width: 18m + 1m guard rows = 19m
 
-      Wheel tracks are located between columns 1 and 2, and between
-      columns 5 and 6, for each set of six plots. Each genotype was
-      randomly allocated once to each pair of plots (1,6), (2,5), (3,4)
-      across the three reps. Wheel effect were not significant in
-      \_this\_ trial.
+Field length: 3 blocks \* 12m + 2*0.5m spacing = 37m Retrieved from
+https://www.ma.hw.ac.uk/~iain/research/JAgSciData/data/Trial1.dat
 
-      Field width: 18m + 1m guard rows = 19m
+Used with permission of Iain Currie.
 
-      Field length: 3 blocks \* 12m + 2*0.5m spacing = 37m Retrieved
-      from
-      https://www.ma.hw.ac.uk/~iain/research/JAgSciData/data/Trial1.dat
+Source
+~~~~~~
 
-      Used with permission of Iain Currie.
+Durban, M., Currie, I. and R. Kempton, 2001. Adjusting for fertility and
+competition in variety trials. J. of Agricultural Science, 136, 129–140.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Durban, M., Currie, I. and R. Kempton, 2001. Adjusting for
-      fertility and competition in variety trials. J. of Agricultural
-      Science, 136, 129–140.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
 
-         ## Not run: 
+   data(durban.competition)
+   dat <- durban.competition
 
-         library(agridat)
+   # Check that genotypes were balanced across wheel tracks.
+   with(dat, table(gen,wheel))
 
-         data(durban.competition)
-         dat <- durban.competition
-
-         # Check that genotypes were balanced across wheel tracks.
-         with(dat, table(gen,wheel))
-
-         libs(desplot)
-         desplot(dat, yield ~ col*block,
-                 out1=block, text=gen, col=wheel, aspect=37/19, # true aspect
-                 main="durban.competition")
+   libs(desplot)
+   desplot(dat, yield ~ col*block,
+           out1=block, text=gen, col=wheel, aspect=37/19, # true aspect
+           main="durban.competition")
 
 
-         # Calculate residual after removing block/genotype effects
-         m1 <- lm(yield ~ gen + block, data=dat)
-         dat$res <- resid(m1)
+   # Calculate residual after removing block/genotype effects
+   m1 <- lm(yield ~ gen + block, data=dat)
+   dat$res <- resid(m1)
 
-         ## desplot(dat, res ~ col*block, out1=block, text=gen, col=wheel,
-         ##         main="durban.competition - residuals")
+   ## desplot(dat, res ~ col*block, out1=block, text=gen, col=wheel,
+   ##         main="durban.competition - residuals")
 
-         # Calculate mean of neighboring plots
-         dat$comp <- NA
-         dat$comp[3:36] <- ( dat$yield[2:35] + dat$yield[4:37] ) / 2
-         dat$comp[41:74] <- ( dat$yield[40:73] + dat$yield[42:75] ) / 2
-         dat$comp[79:112] <- ( dat$yield[78:111] + dat$yield[80:113] ) / 2
+   # Calculate mean of neighboring plots
+   dat$comp <- NA
+   dat$comp[3:36] <- ( dat$yield[2:35] + dat$yield[4:37] ) / 2
+   dat$comp[41:74] <- ( dat$yield[40:73] + dat$yield[42:75] ) / 2
+   dat$comp[79:112] <- ( dat$yield[78:111] + dat$yield[80:113] ) / 2
 
-         # Demonstrate the competition effect
-         # Competitor plots have low/high yield -> residuals are negative/positive
-         libs(lattice)
-         xyplot(res~comp, dat, type=c('p','r'), main="durban.competition",
-                xlab="Average yield of neighboring plots", ylab="Residual")
+   # Demonstrate the competition effect
+   # Competitor plots have low/high yield -> residuals are negative/positive
+   libs(lattice)
+   xyplot(res~comp, dat, type=c('p','r'), main="durban.competition",
+          xlab="Average yield of neighboring plots", ylab="Residual")
 
 
-         ## End(Not run)
+   ## End(Not run)

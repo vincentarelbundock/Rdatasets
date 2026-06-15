@@ -1,143 +1,138 @@
-.. container::
+======== ===============
+Fielding R Documentation
+======== ===============
 
-   .. container::
+Fielding table
+--------------
 
-      ======== ===============
-      Fielding R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Fielding table
-         :name: fielding-table
+Fielding table
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Fielding table
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Fielding)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Fielding)
+A data frame with 174332 observations on the following 18 variables.
 
-      .. rubric:: Format
-         :name: format
+``playerID``
+   Player ID code
 
-      A data frame with 153656 observations on the following 18
-      variables.
+``yearID``
+   Year
 
-      ``playerID``
-         Player ID code
+``stint``
+   player's stint (order of appearances within a season)
 
-      ``yearID``
-         Year
+``teamID``
+   Team; a factor
 
-      ``stint``
-         player's stint (order of appearances within a season)
+``lgID``
+   League; a factor with levels ``AA`` ``AL`` ``FL`` ``NL`` ``PL``
+   ``UA``
 
-      ``teamID``
-         Team; a factor
+``POS``
+   Position
 
-      ``lgID``
-         League; a factor with levels ``AA`` ``AL`` ``FL`` ``NL`` ``PL``
-         ``UA``
+``G``
+   Games
 
-      ``POS``
-         Position
+``GS``
+   Games Started
 
-      ``G``
-         Games
+``InnOuts``
+   Time played in the field expressed as outs
 
-      ``GS``
-         Games Started
+``PO``
+   Putouts
 
-      ``InnOuts``
-         Time played in the field expressed as outs
+``A``
+   Assists
 
-      ``PO``
-         Putouts
+``E``
+   Errors
 
-      ``A``
-         Assists
+``DP``
+   Double Plays
 
-      ``E``
-         Errors
+``PB``
+   Passed Balls (by catchers)
 
-      ``DP``
-         Double Plays
+``WP``
+   Wild Pitches (by catchers)
 
-      ``PB``
-         Passed Balls (by catchers)
+``SB``
+   Opponent Stolen Bases (by catchers)
 
-      ``WP``
-         Wild Pitches (by catchers)
+``CS``
+   Opponents Caught Stealing (by catchers)
 
-      ``SB``
-         Opponent Stolen Bases (by catchers)
+``ZR``
+   Zone Rating
 
-      ``CS``
-         Opponents Caught Stealing (by catchers)
+Source
+~~~~~~
 
-      ``ZR``
-         Zone Rating
+Lahman, S. (2026) Lahman's Baseball Database, 1871-2025, 2026 version,
+https://sabr.org/lahman-database/
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Lahman, S. (2025) Lahman's Baseball Database, 1871-2024, 2025
-      version, https://sabr.org/lahman-database/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   data(Fielding)
+   # Basic fielding data
 
-      .. code:: R
-
-         data(Fielding)
-         # Basic fielding data
-
-         require("dplyr")
+   require("dplyr")
 
 
-         # Roberto Clemente's fielding profile
-         # pitching and catching related data removed
-         # subset(Fielding, playerID == "clemero01")[, 1:13]
-         Fielding %>% 
-            filter(playerID == "clemero01") %>%
-            select(1:13)
-            
-         # Yadier Molina's fielding profile
-         # PB, WP, SP and CS apply to catchers
-         Fielding %>% 
-           subset(playerID == "molinya01") %>%
-           select(-WP, -ZR)
+   # Roberto Clemente's fielding profile
+   # pitching and catching related data removed
+   # subset(Fielding, playerID == "clemero01")[, 1:13]
+   Fielding %>% 
+      filter(playerID == "clemero01") %>%
+      select(1:13)
+      
+   # Yadier Molina's fielding profile
+   # PB, WP, SP and CS apply to catchers
+   Fielding %>% 
+     subset(playerID == "molinya01") %>%
+     select(-WP, -ZR)
 
-         # Pedro Martinez's fielding profile
-         Fielding %>% subset(playerID == "martipe02")
+   # Pedro Martinez's fielding profile
+   Fielding %>% subset(playerID == "martipe02")
 
-         # Table of games played by Pete Rose at different positions
-         with(subset(Fielding, playerID == "rosepe01"), xtabs(G ~ POS))
+   # Table of games played by Pete Rose at different positions
+   with(subset(Fielding, playerID == "rosepe01"), xtabs(G ~ POS))
 
-         # Career total G/PO/A/E/DP for Luis Aparicio
-         Fielding %>%
-             filter(playerID == "aparilu01") %>% 
-             select(G, PO, A, E, DP) %>%
-             summarise_each(funs(sum))
+   # Career total G/PO/A/E/DP for Luis Aparicio
+   Fielding %>%
+       filter(playerID == "aparilu01") %>% 
+       select(G, PO, A, E, DP) %>%
+       summarise(across(everything(), sum))
 
 
-         # Top ten 2B/SS in turning DPs
-         Fielding %>%
-             subset(POS %in% c("2B", "SS")) %>%
-             group_by(playerID) %>%
-             summarise(TDP = sum(DP, na.rm = TRUE)) %>%
-             arrange(desc(TDP)) %>%
-             head(., 10)
+   # Top ten 2B/SS in turning DPs
+   Fielding %>%
+       subset(POS %in% c("2B", "SS")) %>%
+       group_by(playerID) %>%
+       summarise(TDP = sum(DP, na.rm = TRUE)) %>%
+       arrange(desc(TDP)) %>%
+       head(., 10)
 
-         # League average fielding statistics, 1961-present
-         Fielding %>% 
-            filter(yearID >= 1961 & POS != "DH") %>%
-            select(yearID, lgID, POS, InnOuts, PO, A, E) %>%
-            group_by(yearID, lgID) %>%
-            summarise_at(vars(InnOuts, PO, A, E), funs(sum), na.rm = TRUE) %>%
-            mutate(fpct = round( (PO + A)/(PO + A + E), 3), 
-                   OPE = round(InnOuts/E, 3))
+   # League average fielding statistics, 1961-present
+   Fielding %>% 
+      filter(yearID >= 1961 & POS != "DH") %>%
+      select(yearID, lgID, POS, InnOuts, PO, A, E) %>%
+      group_by(yearID, lgID) %>%
+      summarise_at(vars(InnOuts, PO, A, E), funs(sum), na.rm = TRUE) %>%
+      mutate(fpct = round( (PO + A)/(PO + A + E), 3), 
+             OPE = round(InnOuts/E, 3))

@@ -1,44 +1,40 @@
-.. container::
+================== ===============
+immigration_tbl_df R Documentation
+================== ===============
 
-   .. container::
+Poll on illegal workers in the US
+---------------------------------
 
-      ================== ===============
-      immigration_tbl_df R Documentation
-      ================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Poll on illegal workers in the US
-         :name: poll-on-illegal-workers-in-the-us
+The dataset name has been changed to 'immigration_tbl_df' to avoid
+confusion with other packages in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a tibble. The original content of the dataset has not
+been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'immigration_tbl_df' to avoid
-      confusion with other packages in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a tibble. The original
-      content of the dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(immigration_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(immigration_tbl_df)
+A tibble with 910 observations and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+response
+   Factor indicating the response to immigration-related questions, with
+   4 levels.
 
-      A tibble with 910 observations and 2 variables:
+political
+   Factor indicating the political alignment associated with the
+   responses, with 3 levels.
 
-      response
-         Factor indicating the response to immigration-related
-         questions, with 4 levels.
+Source
+~~~~~~
 
-      political
-         Factor indicating the political alignment associated with the
-         responses, with 3 levels.
-
-      .. rubric:: Source
-         :name: source
-
-      Data from surveys on immigration attitudes
+Data from surveys on immigration attitudes

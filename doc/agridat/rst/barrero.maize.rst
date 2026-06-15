@@ -1,143 +1,140 @@
-.. container::
+============= ===============
+barrero.maize R Documentation
+============= ===============
 
-   .. container::
+Multi-environment trial of maize in Texas.
+------------------------------------------
 
-      ============= ===============
-      barrero.maize R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Multi-environment trial of maize in Texas.
-         :name: multi-environment-trial-of-maize-in-texas.
+Multi-environment trial of maize in Texas.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Multi-environment trial of maize in Texas.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("barrero.maize")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("barrero.maize")
+A data frame with 14568 observations on the following 15 variables.
 
-      .. rubric:: Format
-         :name: format
+``year``
+   year of testing, 2000-2010
 
-      A data frame with 14568 observations on the following 15
-      variables.
+``yor``
+   year of release, 2000-2010
 
-      ``year``
-         year of testing, 2000-2010
+``loc``
+   location, 16 places in Texas
 
-      ``yor``
-         year of release, 2000-2010
+``env``
+   environment (year+loc), 107 levels
 
-      ``loc``
-         location, 16 places in Texas
+``rep``
+   replicate, 1-4
 
-      ``env``
-         environment (year+loc), 107 levels
+``gen``
+   genotype, 847 levels
 
-      ``rep``
-         replicate, 1-4
+``daystoflower``
+   numeric
 
-      ``gen``
-         genotype, 847 levels
+``plantheight``
+   plant height, cm
 
-      ``daystoflower``
-         numeric
+``earheight``
+   ear height, cm
 
-      ``plantheight``
-         plant height, cm
+``population``
+   plants per hectare
 
-      ``earheight``
-         ear height, cm
+``lodged``
+   percent of plants lodged
 
-      ``population``
-         plants per hectare
+``moisture``
+   moisture percent
 
-      ``lodged``
-         percent of plants lodged
+``testweight``
+   test weight kg/ha
 
-      ``moisture``
-         moisture percent
+``yield``
+   yield, Mt/ha
 
-      ``testweight``
-         test weight kg/ha
+Details
+~~~~~~~
 
-      ``yield``
-         yield, Mt/ha
+This is a large (14500 records), multi-year, multi-location, 10-trait
+dataset from the Texas AgriLife Corn Performance Trials.
 
-      .. rubric:: Details
-         :name: details
+These data are from 2-row plots approximately 36in wide by 25 feet long.
 
-      This is a large (14500 records), multi-year, multi-location,
-      10-trait dataset from the Texas AgriLife Corn Performance Trials.
+Barrero et al. used this data to estimate the genetic gain in maize
+hybrids over a 10-year period of time.
 
-      These data are from 2-row plots approximately 36in wide by 25 feet
-      long.
+Used with permission of Seth Murray.
 
-      Barrero et al. used this data to estimate the genetic gain in
-      maize hybrids over a 10-year period of time.
+Source
+~~~~~~
 
-      Used with permission of Seth Murray.
+Barrero, Ivan D. et al. (2013). A multi-environment trial analysis shows
+slight grain yield improvement in Texas commercial maize. Field Crops
+Research, 149, Pages 167-176. https://doi.org/10.1016/j.fcr.2013.04.017
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Barrero, Ivan D. et al. (2013). A multi-environment trial analysis
-      shows slight grain yield improvement in Texas commercial maize.
-      Field Crops Research, 149, Pages 167-176.
-      https://doi.org/10.1016/j.fcr.2013.04.017
+None.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
+     library(agridat)
+     data(barrero.maize)
+     dat <- barrero.maize
 
-      .. code:: R
+     library(lattice)
+     bwplot(yield ~ factor(year)|loc, dat,
+            main="barrero.maize - Yield trends by loc",
+            scales=list(x=list(rot=90)))
 
-         ## Not run: 
-           library(agridat)
-           data(barrero.maize)
-           dat <- barrero.maize
+     #libs(connected)
+     #con_view(dat, yield ~ gen * env, cex.x=0.5, cex.y=0.5)
+     #con_view(dat, yield ~ gen * year, cex.x=0.5, cex.y=0.5)
+     
+     # Table 6 of Barrero. Model equation 1.
+     if(require("asreml", quietly=TRUE)){
+       libs(dplyr,lucid)
+       dat <- arrange(dat, env)
+       dat <- mutate(dat,
+                     yearf=factor(year), env=factor(env),
+                     loc=factor(loc), gen=factor(gen), rep=factor(rep))
+     
+       m1 <- asreml(yield ~ loc + yearf + loc:yearf, data=dat,
+                    random = ~ gen + rep:loc:yearf +
+                      gen:yearf + gen:loc +
+                      gen:loc:yearf,
+                    residual = ~ dsum( ~ units|env),
+                    workspace="500mb")
+     
+       # Variance components for yield match Barrero table 6.
+       lucid::vc(m1)[1:5,]
+       ##        effect component std.error z.ratio bound 
+       ## rep:loc:yearf   0.111     0.01092    10       P 0  
+       ##           gen   0.505     0.03988    13       P 0  
+       ##     gen:yearf   0.05157   0.01472     3.5     P 0  
+       ##       gen:loc   0.02283   0.0152      1.5     P 0.2
+       ## gen:loc:yearf   0.2068    0.01806    11       P 0  
+       
+       summary(vc(m1)[6:112,"component"]) # Means match last row of table 6
+       ##   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+       ## 0.1286  0.3577  0.5571  0.8330  1.0322  2.9867 
+     }
 
-           library(lattice)
-           bwplot(yield ~ factor(year)|loc, dat,
-                  main="barrero.maize - Yield trends by loc",
-                  scales=list(x=list(rot=90)))
-           
-           # Table 6 of Barrero. Model equation 1.
-           if(require("asreml", quietly=TRUE)){
-             libs(dplyr,lucid)
-             dat <- arrange(dat, env)
-             dat <- mutate(dat,
-                           yearf=factor(year), env=factor(env),
-                           loc=factor(loc), gen=factor(gen), rep=factor(rep))
-           
-             m1 <- asreml(yield ~ loc + yearf + loc:yearf, data=dat,
-                          random = ~ gen + rep:loc:yearf +
-                            gen:yearf + gen:loc +
-                            gen:loc:yearf,
-                          residual = ~ dsum( ~ units|env),
-                          workspace="500mb")
-           
-             # Variance components for yield match Barrero table 6.
-             lucid::vc(m1)[1:5,]
-             ##        effect component std.error z.ratio bound 
-             ## rep:loc:yearf   0.111     0.01092    10       P 0  
-             ##           gen   0.505     0.03988    13       P 0  
-             ##     gen:yearf   0.05157   0.01472     3.5     P 0  
-             ##       gen:loc   0.02283   0.0152      1.5     P 0.2
-             ## gen:loc:yearf   0.2068    0.01806    11       P 0  
-             
-             summary(vc(m1)[6:112,"component"]) # Means match last row of table 6
-             ##   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-             ## 0.1286  0.3577  0.5571  0.8330  1.0322  2.9867 
-           }
-
-         ## End(Not run)
+   ## End(Not run)

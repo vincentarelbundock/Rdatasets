@@ -1,85 +1,80 @@
-.. container::
+======= ===============
+law2006 R Documentation
+======= ===============
 
-   .. container::
+Law Dome Ice Core
+-----------------
 
-      ======= ===============
-      law2006 R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Law Dome Ice Core
-         :name: law-dome-ice-core
+Law Dome Ice Core 2000-year ``CH_4``, ``CO_2`` and ``N_{2}O`` data.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Law Dome Ice Core 2000-year ``CH_4``, ``CO_2`` and ``N_{2}O``
-      data.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   law2006
 
-      .. code:: R
+Format
+~~~~~~
 
-         law2006
+A ``data.frame`` with 2004 observations and 8 variables:
 
-      .. rubric:: Format
-         :name: format
+year
+   ``integer``: year AD.
 
-      A ``data.frame`` with 2004 observations and 8 variables:
+NOAA04
+   ``numeric``: NOAA04 ``CH_4`` scale.
 
-      year
-         ``integer``: year AD.
+CH4_spl
+   ``numeric``: ``CH_4`` spline (ppb).
 
-      NOAA04
-         ``numeric``: NOAA04 ``CH_4`` scale.
+CH4_grw
+   ``numeric``: ``CH_4`` growth Rate (ppb/yr).
 
-      CH4_spl
-         ``numeric``: ``CH_4`` spline (ppb).
+CO2_spl
+   ``numeric``: ``CO_2`` spline (ppb).
 
-      CH4_grw
-         ``numeric``: ``CH_4`` growth Rate (ppb/yr).
+CO2_grw
+   ``numeric``: ``CO_2`` growth Rate (ppb/yr).
 
-      CO2_spl
-         ``numeric``: ``CO_2`` spline (ppb).
+N2O_spl
+   ``numeric``: ``N_{2}O`` spline (ppb).
 
-      CO2_grw
-         ``numeric``: ``CO_2`` growth Rate (ppb/yr).
+N2O_grw
+   ``numeric``: ``N_{2}O`` growth Rate (ppb/yr).
 
-      N2O_spl
-         ``numeric``: ``N_{2}O`` spline (ppb).
+Source
+~~~~~~
 
-      N2O_grw
-         ``numeric``: ``N_{2}O`` growth Rate (ppb/yr).
+https://www.ncei.noaa.gov/access/paleo-search/study/9959
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      https://www.ncei.noaa.gov/access/paleo-search/study/9959
+MacFarling Meure, C., Etheridge, D., Trudinger, C., Steele, P.,
+Langenfelds, R., van Ommen, T., Smith, A. and Elkins, J. (2006). The Law
+Dome CO2, CH4 and N2O Ice Core Records Extended to 2000 years BP.
+*Geophysical Research Letters*, 33(14), L14810.
+`doi:10.1029/2006GL026152 <https://doi.org/10.1029/2006GL026152>`__.
 
-      .. rubric:: References
-         :name: references
+See Also
+~~~~~~~~
 
-      MacFarling Meure, C., Etheridge, D., Trudinger, C., Steele, P.,
-      Langenfelds, R., van Ommen, T., Smith, A. and Elkins, J. (2006).
-      The Law Dome CO2, CH4 and N2O Ice Core Records Extended to 2000
-      years BP. *Geophysical Research Letters*, 33(14), L14810.
-      `doi:10.1029/2006GL026152 <https://doi.org/10.1029/2006GL026152>`__.
+Other palaeoenvironment data: ``epica2008``, ``lisiecki2005``,
+``ngrip2004``, ``ngrip2010``, ``spratt2016``
 
-      .. rubric:: See Also
-         :name: see-also
+Examples
+~~~~~~~~
 
-      Other palaeoenvironment data: ``epica2008``, ``lisiecki2005``,
-      ``ngrip2004``, ``ngrip2010``, ``spratt2016``
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         plot(
-           x = law2006$year,
-           y = law2006$CO2_spl,
-           type = "l",
-           xlab = "Year AD",
-           ylab = expression("CO"[2]~"(ppm)")
-         )
+   plot(
+     x = law2006$year,
+     y = law2006$CO2_spl,
+     type = "l",
+     xlab = "Year AD",
+     ylab = expression("CO"[2]~"(ppm)")
+   )

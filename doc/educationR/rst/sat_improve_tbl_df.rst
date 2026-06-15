@@ -1,49 +1,44 @@
-.. container::
+================== ===============
+sat_improve_tbl_df R Documentation
+================== ===============
 
-   .. container::
+Simulated data for SAT score improvement
+----------------------------------------
 
-      ================== ===============
-      sat_improve_tbl_df R Documentation
-      ================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Simulated data for SAT score improvement
-         :name: simulated-data-for-sat-score-improvement
+This dataset, sat_improve_tbl_df, is a tibble containing simulated data
+on SAT score improvements for a sample of students who took a course
+from an SAT score improvement company. It allows for the exploration of
+score improvements from students who enrolled in the course.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, sat_improve_tbl_df, is a tibble containing simulated
-      data on SAT score improvements for a sample of students who took a
-      course from an SAT score improvement company. It allows for the
-      exploration of score improvements from students who enrolled in
-      the course.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(sat_improve_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(sat_improve_tbl_df)
+A tibble with 30 observations and 1 variable:
 
-      .. rubric:: Format
-         :name: format
+sat_improve
+   SAT score improvement (integer).
 
-      A tibble with 30 observations and 1 variable:
+Details
+~~~~~~~
 
-      sat_improve
-         SAT score improvement (integer).
+The dataset name has been kept as 'sat_improve_tbl_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the educationR package and
+assists users in identifying its specific characteristics. The suffix
+'tbl_df' indicates that the dataset is a tibble. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'sat_improve_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      educationR package and assists users in identifying its specific
-      characteristics. The suffix 'tbl_df' indicates that the dataset is
-      a tibble. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset was taken from the openintro package.
+The dataset was taken from the openintro package.

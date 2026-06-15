@@ -1,82 +1,77 @@
-.. container::
+=================== ===============
+UScrimerates_tbl_df R Documentation
+=================== ===============
 
-   .. container::
+US Crime Rates (1960–2019)
+--------------------------
 
-      =================== ===============
-      UScrimerates_tbl_df R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: US Crime Rates (1960–2019)
-         :name: us-crime-rates-19602019
+This dataset contains national data on the number of crimes committed in
+the United States between 1960 and 2019. It provides annual statistics
+on total crimes, violent crimes, property crimes, and their
+subcategories.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains national data on the number of crimes
-      committed in the United States between 1960 and 2019. It provides
-      annual statistics on total crimes, violent crimes, property
-      crimes, and their subcategories.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(UScrimerates_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(UScrimerates_tbl_df)
+A tibble with 60 rows and 12 variables:
 
-      .. rubric:: Format
-         :name: format
+year
+   Year of the recorded data (numeric).
 
-      A tibble with 60 rows and 12 variables:
+population
+   Total US population (numeric).
 
-      year
-         Year of the recorded data (numeric).
+total
+   Total number of crimes (numeric).
 
-      population
-         Total US population (numeric).
+violent
+   Total number of violent crimes (numeric).
 
-      total
-         Total number of crimes (numeric).
+property
+   Total number of property crimes (numeric).
 
-      violent
-         Total number of violent crimes (numeric).
+murder
+   Number of murders (numeric).
 
-      property
-         Total number of property crimes (numeric).
+forcible_rape
+   Number of reported cases of forcible rape (numeric).
 
-      murder
-         Number of murders (numeric).
+robbery
+   Number of robberies (numeric).
 
-      forcible_rape
-         Number of reported cases of forcible rape (numeric).
+aggravated_assault
+   Number of aggravated assaults (numeric).
 
-      robbery
-         Number of robberies (numeric).
+burglary
+   Number of burglaries (numeric).
 
-      aggravated_assault
-         Number of aggravated assaults (numeric).
+larceny_theft
+   Number of larceny-theft crimes (numeric).
 
-      burglary
-         Number of burglaries (numeric).
+vehicle_theft
+   Number of motor vehicle thefts (numeric).
 
-      larceny_theft
-         Number of larceny-theft crimes (numeric).
+Details
+~~~~~~~
 
-      vehicle_theft
-         Number of motor vehicle thefts (numeric).
+The dataset name has been changed to 'UScrimerates_tbl_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the crimedatasets package and
+assists users in identifying its specific characteristics. The suffix
+'tbl_df' indicates that the dataset is stored as a tibble. The original
+content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been changed to 'UScrimerates_tbl_df' to
-      avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      crimedatasets package and assists users in identifying its
-      specific characteristics. The suffix 'tbl_df' indicates that the
-      dataset is stored as a tibble. The original content has not been
-      modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      National crime data for the United States (1960–2019).
+National crime data for the United States (1960–2019).

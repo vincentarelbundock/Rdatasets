@@ -1,53 +1,49 @@
-.. container::
+====== ===============
+voices R Documentation
+====== ===============
 
-   .. container::
+Voice Pitch Data
+----------------
 
-      ====== ===============
-      voices R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Voice Pitch Data
-         :name: voice-pitch-data
+Voice pitch data collected by Winter and Grawunder (2012). In an
+experiment, subjects participated in role-playing dialog under various
+conditions, while researchers monitored voice pitch (Hz). The conditions
+spanned different scenarios (eg: making an appointment, asking for a
+favor) and different attitudes to use in the scenario (polite or
+informal).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Voice pitch data collected by Winter and Grawunder (2012). In an
-      experiment, subjects participated in role-playing dialog under
-      various conditions, while researchers monitored voice pitch (Hz).
-      The conditions spanned different scenarios (eg: making an
-      appointment, asking for a favor) and different attitudes to use in
-      the scenario (polite or informal).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   voices
 
-      .. code:: R
+Format
+~~~~~~
 
-         voices
+A data frame with 84 rows and 4 variables. Each row represents a single
+observation for the given subject.
 
-      .. rubric:: Format
-         :name: format
+subject
+   subject identifier
 
-      A data frame with 84 rows and 4 variables. Each row represents a
-      single observation for the given subject.
+scenario
+   context of the dialog (encoded as A, B, ..., G)
 
-      subject
-         subject identifier
+attitude
+   whether the attitude to use in dialog was polite or informal
 
-      scenario
-         context of the dialog (encoded as A, B, ..., G)
+pitch
+   average voice pitch (Hz)
 
-      attitude
-         whether the attitude to use in dialog was polite or informal
+Source
+~~~~~~
 
-      pitch
-         average voice pitch (Hz)
-
-      .. rubric:: Source
-         :name: source
-
-      Winter, B., & Grawunder, S. (2012). The Phonetic Profile of Korean
-      Formal and Informal Speech Registers. Journal of Phonetics, 40,
-      808-815. https://bodo-winter.net/data_and_scripts/POP.csv.
-      https://bodo-winter.net/tutorial/bw_LME_tutorial2.pdf.
+Winter, B., & Grawunder, S. (2012). The Phonetic Profile of Korean
+Formal and Informal Speech Registers. Journal of Phonetics, 40, 808-815.
+https://bodo-winter.net/data_and_scripts/POP.csv.
+https://bodo-winter.net/tutorial/bw_LME_tutorial2.pdf.

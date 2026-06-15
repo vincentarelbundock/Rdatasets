@@ -1,96 +1,92 @@
-.. container::
+==== ===============
+Bids R Documentation
+==== ===============
 
-   .. container::
+Bids Received By U.S. Firms
+---------------------------
 
-      ==== ===============
-      Bids R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Bids Received By U.S. Firms
-         :name: bids-received-by-u.s.-firms
+a cross-section
 
-      .. rubric:: Description
-         :name: description
+*number of observations* : 126
 
-      a cross-section
+*observation* : production units
 
-      *number of observations* : 126
+*country* : United States
 
-      *observation* : production units
+Usage
+~~~~~
 
-      *country* : United States
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Bids)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Bids)
+A dataframe containing :
 
-      .. rubric:: Format
-         :name: format
+docno
+   doc no.
 
-      A dataframe containing :
+weeks
+   weeks
 
-      docno
-         doc no.
+numbids
+   count
 
-      weeks
-         weeks
+takeover
+   delta (1 if taken over)
 
-      numbids
-         count
+bidprem
+   bid Premium
 
-      takeover
-         delta (1 if taken over)
+insthold
+   institutional holdings
 
-      bidprem
-         bid Premium
+size
+   size measured in billions
 
-      insthold
-         institutional holdings
+leglrest
+   legal restructuring
 
-      size
-         size measured in billions
+rearest
+   real restructuring
 
-      leglrest
-         legal restructuring
+finrest
+   financial restructuring
 
-      rearest
-         real restructuring
+regulatn
+   regulation
 
-      finrest
-         financial restructuring
+whtknght
+   white knight
 
-      regulatn
-         regulation
+Source
+~~~~~~
 
-      whtknght
-         white knight
+Jaggia, Sanjiv and Satish Thosar (1993) “Multiple Bids as a Consequence
+of Target Management Resistance”, *Review of Quantitative Finance and
+Accounting*, 447–457.
 
-      .. rubric:: Source
-         :name: source
+Cameron, A.C. and Per Johansson (1997) “Count Data Regression Models
+using Series Expansions: with Applications”, *Journal of Applied
+Econometrics*, **12**, may, 203–223.
 
-      Jaggia, Sanjiv and Satish Thosar (1993) “Multiple Bids as a
-      Consequence of Target Management Resistance”, *Review of
-      Quantitative Finance and Accounting*, 447–457.
+References
+~~~~~~~~~~
 
-      Cameron, A.C. and Per Johansson (1997) “Count Data Regression
-      Models using Series Expansions: with Applications”, *Journal of
-      Applied Econometrics*, **12**, may, 203–223.
+Cameron, A.C. and Trivedi P.K. (1998) *Regression analysis of count
+data*, Cambridge University Press,
+https://cameron.econ.ucdavis.edu/racd/racddata.html, chapter 5.
 
-      .. rubric:: References
-         :name: references
+Journal of Applied Econometrics data archive :
+http://qed.econ.queensu.ca/jae/.
 
-      Cameron, A.C. and Trivedi P.K. (1998) *Regression analysis of
-      count data*, Cambridge University Press,
-      https://cameron.econ.ucdavis.edu/racd/racddata.html, chapter 5.
+See Also
+~~~~~~~~
 
-      Journal of Applied Econometrics data archive :
-      http://qed.econ.queensu.ca/jae/.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-      ``Index.Observations``
+``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+``Index.Observations``

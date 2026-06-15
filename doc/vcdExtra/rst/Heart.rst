@@ -1,57 +1,47 @@
-.. container::
+===== ===============
+Heart R Documentation
+===== ===============
 
-   .. container::
+Sex, Occupation and Heart Disease
+---------------------------------
 
-      ===== ===============
-      Heart R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Sex, Occupation and Heart Disease
-         :name: sex-occupation-and-heart-disease
+Classification of individuals by gender, occupational category and
+occurrence of heart disease
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Classification of individuals by gender, occupational category and
-      occurrence of heart disease
+A 3-dimensional array resulting from cross-tabulating 3 variables for
+21522 observations. The variable names and their levels are:
 
-      .. rubric:: Usage
-         :name: usage
+== =========== ===================================
+No Name        Levels
+1  ``Disease`` ``⁠"Disease", "None"⁠``
+2  ``Gender``  ``⁠"Male", "Female"⁠``
+3  ``Occup``   ``⁠"Unempl", "WhiteCol", "BlueCol"⁠``
+               
+== =========== ===================================
 
-      .. code:: R
+Source
+~~~~~~
 
-         data(Heart)
+% Karger, 1980 Karger, (1980).
 
-      .. rubric:: Format
-         :name: format
+Examples
+~~~~~~~~
 
-      A 3-dimensional array resulting from cross-tabulating 3 variables
-      for 21522 observations. The variable names and their levels are:
+.. code:: R
 
-      == =========== ===================================
-      No Name        Levels
-      1  ``Disease`` ``"Disease", "None"``
-      2  ``Gender``  ``"Male", "Female"``
-      3  ``Occup``   ``"Unempl", "WhiteCol", "BlueCol"``
-      \              
-      == =========== ===================================
 
-      .. rubric:: Source
-         :name: source
+   data(Heart)
+   str(Heart)
 
-      Karger, (1980).
+   # Display the frequencies for occupational categories.
+   # Each row is a 2 x 2 table
+   vcd::structable(Disease + Gender ~ Occup, data=Heart)
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(Heart)
-         str(Heart)
-
-         # Display the frequencies for occupational categories.
-         # Each row is a 2 x 2 table
-         vcd::structable(Disease + Gender ~ Occup, data=Heart)
-
-         # display as fourfold plots
-         vcd::cotabplot(~ Disease + Gender | Occup, data=Heart, panel = cotab_fourfold)
+   # display as fourfold plots
+   vcd::cotabplot(~ Disease + Gender | Occup, data=Heart, panel = cotab_fourfold)

@@ -1,27 +1,23 @@
-.. container::
+=== ===============
+dig R Documentation
+=== ===============
 
-   .. container::
+Internal dig
+------------
 
-      === ===============
-      dig R Documentation
-      === ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Internal dig
-         :name: internal-dig
+Intended for internal use
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Intended for internal use
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(dig)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(dig)
-
-      .. rubric:: Format
-         :name: format
-
-      The format digs: int 78
+The format digs: int 78

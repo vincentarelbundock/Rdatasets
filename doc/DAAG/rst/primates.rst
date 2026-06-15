@@ -1,57 +1,52 @@
-.. container::
+======== ===============
+primates R Documentation
+======== ===============
 
-   .. container::
+Primate Body and Brain Weights
+------------------------------
 
-      ======== ===============
-      primates R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Primate Body and Brain Weights
-         :name: primate-body-and-brain-weights
+A subset of ``Animals`` data frame from the MASS library. It contains
+the average body and brain measurements of five primates.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A subset of ``Animals`` data frame from the MASS library. It
-      contains the average body and brain measurements of five primates.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   primates
 
-      .. code:: R
+Format
+~~~~~~
 
-         primates
+This data frame contains the following columns:
 
-      .. rubric:: Format
-         :name: format
+Bodywt
+   a numeric vector consisting of the body weights (in kg) of five
+   different primates
 
-      This data frame contains the following columns:
+Brainwt
+   a numeric vector consisting of the corresponding brain weights (in g)
 
-      Bodywt
-         a numeric vector consisting of the body weights (in kg) of five
-         different primates
+Source
+~~~~~~
 
-      Brainwt
-         a numeric vector consisting of the corresponding brain weights
-         (in g)
+P. J. Rousseeuw and A. M. Leroy (1987) Robust Regression and Outlier
+Detection. Wiley, p. 57.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      P. J. Rousseeuw and A. M. Leroy (1987) Robust Regression and
-      Outlier Detection. Wiley, p. 57.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         attach(primates)
-         plot(x=Bodywt, y=Brainwt, pch=16,
-                xlab="Body weight (kg)", ylab="Brain weight (g)",
-                xlim=c(5,300), ylim=c(0,1500))
-         chw <- par()$cxy[1]
-         chh <- par()$cxy[2]
-         text(x=Bodywt+chw, y=Brainwt+c(-.1,0,0,.1,0)*chh,
-                labels=row.names(primates), adj=0)
-         detach(primates)
+   attach(primates)
+   plot(x=Bodywt, y=Brainwt, pch=16,
+          xlab="Body weight (kg)", ylab="Brain weight (g)",
+          xlim=c(5,300), ylim=c(0,1500))
+   chw <- par()$cxy[1]
+   chh <- par()$cxy[2]
+   text(x=Bodywt+chw, y=Brainwt+c(-.1,0,0,.1,0)*chh,
+          labels=row.names(primates), adj=0)
+   detach(primates)

@@ -1,109 +1,102 @@
-.. container::
+========= ===============
+nass.corn R Documentation
+========= ===============
 
-   .. container::
+U.S. historical crop yields by state
+------------------------------------
 
-      ========= ===============
-      nass.corn R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: U.S. historical crop yields by state
-         :name: u.s.-historical-crop-yields-by-state
+Yields and acres harvested in each state for the major agricultural
+crops in the United States, from approximately 1900 to 2011. Crops
+include: barley, corn, cotton, hay, rice, sorghum, soybeans, wheat.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Yields and acres harvested in each state for the major
-      agricultural crops in the United States, from approximately 1900
-      to 2011. Crops include: barley, corn, cotton, hay, rice, sorghum,
-      soybeans, wheat.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+     nass.barley
+     nass.corn
+     nass.cotton
+     nass.hay
+     nass.sorghum
+     nass.wheat
+     nass.rice
+     nass.soybean
 
-      .. code:: R
+Format
+~~~~~~
 
-           nass.barley
-           nass.corn
-           nass.cotton
-           nass.hay
-           nass.sorghum
-           nass.wheat
-           nass.rice
-           nass.soybean
+``year``
+   year
 
-      .. rubric:: Format
-         :name: format
+``state``
+   state factor
 
-      ``year``
-         year
+``acres``
+   acres harvested
 
-      ``state``
-         state factor
+``yield``
+   average yield
 
-      ``acres``
-         acres harvested
+Details
+~~~~~~~
 
-      ``yield``
-         average yield
+Be cautious with yield values for states with small acres harvested.
 
-      .. rubric:: Details
-         :name: details
+Yields are in bushels/acre, except: cotton pounds/acre, hay tons/acre,
+rice pounds/acre.
 
-      Be cautious with yield values for states with small acres
-      harvested.
+Each crop is in a separate dataset: nass.barley, nass.corn, nass.cotton,
+nass.hay, nass.sorghum, nass.wheat, nass.rice, nass.soybean.
 
-      Yields are in bushels/acre, except: cotton pounds/acre, hay
-      tons/acre, rice pounds/acre.
+Source
+~~~~~~
 
-      Each crop is in a separate dataset: nass.barley, nass.corn,
-      nass.cotton, nass.hay, nass.sorghum, nass.wheat, nass.rice,
-      nass.soybean.
+United States Department of Agriculture, National Agricultural
+Statistics Service. https://quickstats.nass.usda.gov/
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      United States Department of Agriculture, National Agricultural
-      Statistics Service. https://quickstats.nass.usda.gov/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(nass.corn)
+   dat <- nass.corn
 
-         ## Not run: 
+   # Use only states that grew at least 100K acres of corn in 2011
+   keep <- droplevels(subset(dat, year == 2011 & acres > 100000))$state
+   dat <- droplevels(subset(dat, is.element(state, keep)))
 
-         library(agridat)
-         data(nass.corn)
-         dat <- nass.corn
+   # Acres of corn grown each year
+   libs(lattice)
+   xyplot(acres ~ year|state, dat, type='l', as.table=TRUE,
+          main="nass.corn: state trends in corn acreage")
 
-         # Use only states that grew at least 100K acres of corn in 2011
-         keep <- droplevels(subset(dat, year == 2011 & acres > 100000))$state
-         dat <- droplevels(subset(dat, is.element(state, keep)))
+   ## Plain levelplot, using only states
+   ## libs(reshape2)
+   ## datm <- acast(dat, year~state, value.var='yield')
+   ## redblue <- colorRampPalette(c("firebrick", "lightgray", "#375997"))
+   ## levelplot(datm, aspect=.7, col.regions=redblue,
+   ##           main="nass.corn",
+   ##           scales=list(x=list(rot=90, cex=.7)))
 
-         # Acres of corn grown each year
-         libs(lattice)
-         xyplot(acres ~ year|state, dat, type='l', as.table=TRUE,
-                main="nass.corn: state trends in corn acreage")
+   # Model the rate of genetic gain in Illinois as a piecewise regression
+   # Breakpoints define periods of open-pollinated varieties, double-cross,
+   # single-cross, and transgenic hybrids.
 
-         ## Plain levelplot, using only states
-         ## libs(reshape2)
-         ## datm <- acast(dat, year~state, value.var='yield')
-         ## redblue <- colorRampPalette(c("firebrick", "lightgray", "#375997"))
-         ## levelplot(datm, aspect=.7, col.regions=redblue,
-         ##           main="nass.corn",
-         ##           scales=list(x=list(rot=90, cex=.7)))
-
-         # Model the rate of genetic gain in Illinois as a piecewise regression
-         # Breakpoints define periods of open-pollinated varieties, double-cross,
-         # single-cross, and transgenic hybrids.
-
-         dil <- subset(nass.corn, state=="Illinois" & year >= 1900)
-         m1 <- lm(yield ~ pmin(year,1932) + pmax(1932, pmin(year, 1959)) +
-                  pmax(1959, pmin(year, 1995)) + pmax(1995, year), dil)
-         signif(coef(m1)[-1],3) # Rate of gain for each segment
-         plot(yield ~ year, dil, main="nass.corn: piecewise linear model of Illinois corn yields")
-         lines(dil$year, fitted(m1))
-         abline(v=c(1932,1959,1995), col="wheat")
+   dil <- subset(nass.corn, state=="Illinois" & year >= 1900)
+   m1 <- lm(yield ~ pmin(year,1932) + pmax(1932, pmin(year, 1959)) +
+            pmax(1959, pmin(year, 1995)) + pmax(1995, year), dil)
+   signif(coef(m1)[-1],3) # Rate of gain for each segment
+   plot(yield ~ year, dil, main="nass.corn: piecewise linear model of Illinois corn yields")
+   lines(dil$year, fitted(m1))
+   abline(v=c(1932,1959,1995), col="wheat")
 
 
-         ## End(Not run)
+   ## End(Not run)

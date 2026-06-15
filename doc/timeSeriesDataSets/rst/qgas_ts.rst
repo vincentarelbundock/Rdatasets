@@ -1,51 +1,46 @@
-.. container::
+======= ===============
+qgas_ts R Documentation
+======= ===============
 
-   .. container::
+Quarterly Australian Gas Production
+-----------------------------------
 
-      ======= ===============
-      qgas_ts R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Quarterly Australian Gas Production
-         :name: quarterly-australian-gas-production
+The dataset name has been changed to 'qgas_ts' to avoid confusion with
+other packages in the R ecosystem from which datasets have been sourced.
+The suffix 'ts' indicates that this dataset is a time series object.
+This naming convention helps distinguish this dataset as part of the
+'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'qgas_ts' to avoid confusion
-      with other packages in the R ecosystem from which datasets have
-      been sourced. The suffix 'ts' indicates that this dataset is a
-      time series object. This naming convention helps distinguish this
-      dataset as part of the 'timeseriesdatasets' package and assists
-      users in identifying its specific characteristics. The original
-      content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(qgas_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(qgas_ts)
+A 'ts' object with 218 observations:
 
-      .. rubric:: Format
-         :name: format
+time
+   Quarterly time series from 1956 to 2010.
 
-      A 'ts' object with 218 observations:
+value
+   Gas production (in terajoules) in Australia.
 
-      time
-         Quarterly time series from 1956 to 2010.
+Details
+~~~~~~~
 
-      value
-         Gas production (in terajoules) in Australia.
+This dataset contains quarterly data on gas production in Australia from
+1956 to 2010. The values are measured in terajoules (TJ).
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains quarterly data on gas production in
-      Australia from 1956 to 2010. The values are measured in terajoules
-      (TJ).
-
-      .. rubric:: Source
-         :name: source
-
-      Australian Bureau of Statistics.
+Australian Bureau of Statistics.

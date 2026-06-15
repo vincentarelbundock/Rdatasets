@@ -1,86 +1,79 @@
-.. container::
+============= ===============
+tenth_circuit R Documentation
+============= ===============
 
-   .. container::
+For A Trump Nominee, Neil Gorsuch’s Record Is Surprisingly Moderate On Immigration
+----------------------------------------------------------------------------------
 
-      ============= ===============
-      tenth_circuit R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: For A Trump Nominee, Neil Gorsuch’s Record Is
-         Surprisingly Moderate On Immigration
-         :name: for-a-trump-nominee-neil-gorsuchs-record-is-surprisingly-moderate-on-immigration
+The raw data behind the story "For A Trump Nominee, Neil Gorsuch’s
+Record Is Surprisingly Moderate On Immigration"
+https://fivethirtyeight.com/features/for-a-trump-nominee-neil-gorsuchs-record-is-surprisingly-moderate-on-immigration/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "For A Trump Nominee, Neil Gorsuch’s
-      Record Is Surprisingly Moderate On Immigration"
-      https://fivethirtyeight.com/features/for-a-trump-nominee-neil-gorsuchs-record-is-surprisingly-moderate-on-immigration/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   tenth_circuit
 
-      .. code:: R
+Format
+~~~~~~
 
-         tenth_circuit
+A data frame with 954 rows representing cases and 13 variables:
 
-      .. rubric:: Format
-         :name: format
+title
+   Name of the case
 
-      A data frame with 954 rows representing cases and 13 variables:
+date
+   Date of decision
 
-      title
-         Name of the case
+federalreporter_cit
+   Case citation, as listed in the Federal Reporter Series
 
-      date
-         Date of decision
+westlaw_cit
+   Case citation, Westlaw format
 
-      federalreporter_cit
-         Case citation, as listed in the Federal Reporter Series
+issue
+   Issue number, in cases divided into multiple issues
 
-      westlaw_cit
-         Case citation, Westlaw format
+weight
+   Weight per issue (total weight per case equals one)
 
-      issue
-         Issue number, in cases divided into multiple issues
+judge1
+   Name of first judge
 
-      weight
-         Weight per issue (total weight per case equals one)
+judge2
+   Name of second judge
 
-      judge1
-         Name of first judge
+judge3
+   Name of third judge
 
-      judge2
-         Name of second judge
+vote1_liberal
+   Vote of first judge. 1 = liberal, 0 = conservative.
 
-      judge3
-         Name of third judge
+vote2_liberal
+   Vote of second judge. 1 = liberal, 0 = conservative.
 
-      vote1_liberal
-         Vote of first judge. 1 = liberal, 0 = conservative.
+vote3_liberal
+   Vote of third judge. 1 = liberal, 0 = conservative.
 
-      vote2_liberal
-         Vote of second judge. 1 = liberal, 0 = conservative.
+category
+   Category of case, immigration or discrimination
 
-      vote3_liberal
-         Vote of third judge. 1 = liberal, 0 = conservative.
+Note
+~~~~
 
-      category
-         Category of case, immigration or discrimination
+In immigration cases, partial relief to immigration petitioner is coded
+as liberal because the petitioner typically seeks just one core remedy
+(e.g., withholding of removal, adjustment of status, or asylum); in
+discrimination cases, partial relief is coded as multiple issues because
+the plaintiff often seeks separate remedies under multiple claims (e.g.,
+disparate treatment, retaliation, etc.) and different sources of law.
 
-      .. rubric:: Note
-         :name: note
+Source
+~~~~~~
 
-      In immigration cases, partial relief to immigration petitioner is
-      coded as liberal because the petitioner typically seeks just one
-      core remedy (e.g., withholding of removal, adjustment of status,
-      or asylum); in discrimination cases, partial relief is coded as
-      multiple issues because the plaintiff often seeks separate
-      remedies under multiple claims (e.g., disparate treatment,
-      retaliation, etc.) and different sources of law.
-
-      .. rubric:: Source
-         :name: source
-
-      See
-      https://github.com/fivethirtyeight/data/tree/master/tenth-circuit
+See https://github.com/fivethirtyeight/data/tree/master/tenth-circuit

@@ -1,50 +1,44 @@
-.. container::
+==================== ===============
+Miller_scores_tbl_df R Documentation
+==================== ===============
 
-   .. container::
+Graduate School Applicants' Miller Personality Test Scores
+----------------------------------------------------------
 
-      ==================== ===============
-      Miller_scores_tbl_df R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Graduate School Applicants' Miller Personality Test
-         Scores
-         :name: graduate-school-applicants-miller-personality-test-scores
+This dataset, Miller_scores_tbl_df, is a tibble containing the Miller
+Personality Test scores for 25 college students applying for graduate
+school. This dataset allows for an exploration of personality traits and
+their potential correlation with academic or professional success.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, Miller_scores_tbl_df, is a tibble containing the
-      Miller Personality Test scores for 25 college students applying
-      for graduate school. This dataset allows for an exploration of
-      personality traits and their potential correlation with academic
-      or professional success.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Miller_scores_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Miller_scores_tbl_df)
+A tibble with 25 observations and 1 variable:
 
-      .. rubric:: Format
-         :name: format
+miller
+   Miller Personality Test score for a student (integer).
 
-      A tibble with 25 observations and 1 variable:
+Details
+~~~~~~~
 
-      miller
-         Miller Personality Test score for a student (integer).
+The dataset name has been kept as 'Miller_scores_tbl_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the educationR package and
+assists users in identifying its specific characteristics. The suffix
+'tbl_df' indicates that the dataset is a tibble. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'Miller_scores_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      educationR package and assists users in identifying its specific
-      characteristics. The suffix 'tbl_df' indicates that the dataset is
-      a tibble. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset was taken from the BSDA package.
+The dataset was taken from the BSDA package.

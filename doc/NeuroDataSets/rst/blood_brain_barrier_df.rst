@@ -1,75 +1,69 @@
-.. container::
+====================== ===============
+blood_brain_barrier_df R Documentation
+====================== ===============
 
-   .. container::
+Blood-Brain Barrier
+-------------------
 
-      ====================== ===============
-      blood_brain_barrier_df R Documentation
-      ====================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Blood-Brain Barrier
-         :name: blood-brain-barrier
+This dataset, blood_brain_barrier_df, is a data frame containing
+experimental measurements from a rat study investigating sugar-infusion
+methods for temporary blood-brain barrier disruption. The barrier's
+protective function was assessed through multiple biological markers.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, blood_brain_barrier_df, is a data frame containing
-      experimental measurements from a rat study investigating
-      sugar-infusion methods for temporary blood-brain barrier
-      disruption. The barrier's protective function was assessed through
-      multiple biological markers.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(blood_brain_barrier_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(blood_brain_barrier_df)
+A data frame with 34 observations and 9 variables:
 
-      .. rubric:: Format
-         :name: format
+Brain
+   Integer: Brain tissue measurement (units?)
 
-      A data frame with 34 observations and 9 variables:
+Liver
+   Integer: Liver tissue measurement (units?)
 
-      Brain
-         Integer: Brain tissue measurement (units?)
+Time
+   Numeric: Experimental time measurement (hours)
 
-      Liver
-         Integer: Liver tissue measurement (units?)
+Treatment
+   Factor with 2 levels: Experimental treatment groups
 
-      Time
-         Numeric: Experimental time measurement (hours)
+Days
+   Integer: Observation period (days)
 
-      Treatment
-         Factor with 2 levels: Experimental treatment groups
+Sex
+   Factor with 2 levels: Animal sex (Male/Female)
 
-      Days
-         Integer: Observation period (days)
+Weight
+   Integer: Subject weight (grams)
 
-      Sex
-         Factor with 2 levels: Animal sex (Male/Female)
+Loss
+   Numeric: Physiological loss measurement
 
-      Weight
-         Integer: Subject weight (grams)
+Tumor
+   Integer: Tumor presence indicator (0/1)
 
-      Loss
-         Numeric: Physiological loss measurement
+Details
+~~~~~~~
 
-      Tumor
-         Integer: Tumor presence indicator (0/1)
+The dataset name has been kept as 'blood_brain_barrier_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the NeuroDataSets package. The
+suffix 'df' indicates that the dataset is a data frame. The original
+content has not been modified.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'blood_brain_barrier_df' to
-      avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      NeuroDataSets package. The suffix 'df' indicates that the dataset
-      is a data frame. The original content has not been modified.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the Sleuth3 package version 1.0-6. Original
-      reference: Ramsey, F.L. and Schafer, D.W. (2013) *The Statistical
-      Sleuth: A Course in Methods of Data Analysis* (3rd ed), Cengage
-      Learning.
+Data taken from the Sleuth3 package version 1.0-6. Original reference:
+Ramsey, F.L. and Schafer, D.W. (2013) *The Statistical Sleuth: A Course
+in Methods of Data Analysis* (3rd ed), Cengage Learning.

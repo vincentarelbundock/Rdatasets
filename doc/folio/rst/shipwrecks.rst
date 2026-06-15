@@ -1,95 +1,90 @@
-.. container::
+========== ===============
+shipwrecks R Documentation
+========== ===============
 
-   .. container::
+Mediterranean Shipwrecks
+------------------------
 
-      ========== ===============
-      shipwrecks R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Mediterranean Shipwrecks
-         :name: mediterranean-shipwrecks
+A dataset of Mediterranean shipwrecks.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset of Mediterranean shipwrecks.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   shipwrecks
 
-      .. code:: R
+Format
+~~~~~~
 
-         shipwrecks
+A ``data.frame`` with 1784 observations (wrecks) and 13 variables:
 
-      .. rubric:: Format
-         :name: format
+name
+   ``character``: wreck name.
 
-      A ``data.frame`` with 1784 observations (wrecks) and 13 variables:
+sea
+   ``character``: region of the sea where the wreck was discovered.
 
-      name
-         ``character``: wreck name.
+country
+   ``character``: country where the wreck was discovered.
 
-      sea
-         ``character``: region of the sea where the wreck was
-         discovered.
+region
+   ``character``: region where the wreck was discovered.
 
-      country
-         ``character``: country where the wreck was discovered.
+depth_min
+   ``integer``: minimum depth of the wreck (m).
 
-      region
-         ``character``: region where the wreck was discovered.
+depth_max
+   ``integer``: maximum depth of the wreck (m).
 
-      depth_min
-         ``integer``: minimum depth of the wreck (m).
+depth
+   ``character``: depth of the wreck (m).
 
-      depth_max
-         ``integer``: maximum depth of the wreck (m).
+period
+   ``character``: chronology (period).
 
-      depth
-         ``character``: depth of the wreck (m).
+dating
+   ``character``: chronology (dating).
 
-      period
-         ``character``: chronology (period).
+date_early
+   ``integer``: earliest date.
 
-      dating
-         ``character``: chronology (dating).
+date_late
+   ``integer``: latest date.
 
-      date_early
-         ``integer``: earliest date.
+origin
+   ``character``: place of origin.
 
-      date_late
-         ``integer``: latest date.
+destination
+   ``character``: place of destination.
 
-      origin
-         ``character``: place of origin.
+Note
+~~~~
 
-      destination
-         ``character``: place of destination.
+This dataset contains typos and needs to be normalized.
 
-      .. rubric:: Note
-         :name: note
+Source
+~~~~~~
 
-      This dataset contains typos and needs to be normalized.
+Strauss, J. (2013). *Shipwrecks Database*. Version 1.0. Accessed
+2022-08-13. URL:
+https://oxrep.classics.ox.ac.uk/databases/shipwrecks_database/
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Strauss, J. (2013). *Shipwrecks Database*. Version 1.0. Accessed
-      2022-08-13. URL:
-      https://oxrep.classics.ox.ac.uk/databases/shipwrecks_database/
+Parker, A. J. (1992). *Ancient Shipwrecks of the Mediterranean and the
+Roman Provinces*. British Archaeological Reports International Series
+580. Oxford.
 
-      .. rubric:: References
-         :name: references
+Strauss, E. J. (2007). *Roman Cargoes: Underwater Evidence from the
+Eastern Mediterranean*. Doctoral thesis, University College London. URL:
+https://discovery.ucl.ac.uk/id/eprint/1349806.
 
-      Parker, A. J. (1992). *Ancient Shipwrecks of the Mediterranean and
-      the Roman Provinces*. British Archaeological Reports International
-      Series 580. Oxford.
+See Also
+~~~~~~~~
 
-      Strauss, E. J. (2007). *Roman Cargoes: Underwater Evidence from
-      the Eastern Mediterranean*. Doctoral thesis, University College
-      London. URL: https://discovery.ucl.ac.uk/id/eprint/1349806.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      Other artefact data: ``munsingen``
+Other artefact data: ``munsingen``

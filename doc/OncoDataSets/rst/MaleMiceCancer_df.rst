@@ -1,59 +1,54 @@
-.. container::
+================= ===============
+MaleMiceCancer_df R Documentation
+================= ===============
 
-   .. container::
+Mouse Cancer Data
+-----------------
 
-      ================= ===============
-      MaleMiceCancer_df R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Mouse Cancer Data
-         :name: mouse-cancer-data
+This dataset, MaleMiceCancer_df, is a data frame containing data on the
+occurrence of cancer in male mice. The dataset records the number of
+days until the occurrence of cancer under different treatment
+conditions. It includes 181 observations and 4 variables.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, MaleMiceCancer_df, is a data frame containing data
-      on the occurrence of cancer in male mice. The dataset records the
-      number of days until the occurrence of cancer under different
-      treatment conditions. It includes 181 observations and 4
-      variables.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(MaleMiceCancer_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(MaleMiceCancer_df)
+A data frame with 181 observations and 4 variables:
 
-      .. rubric:: Format
-         :name: format
+trt
+   Treatment group: 1 = treatment, 2 = control (factor).
 
-      A data frame with 181 observations and 4 variables:
+days
+   Number of days until the occurrence of cancer (numeric).
 
-      trt
-         Treatment group: 1 = treatment, 2 = control (factor).
+outcome
+   Cancer outcome: levels include 'none', 'localized', 'metastatic', and
+   'other' (factor).
 
-      days
-         Number of days until the occurrence of cancer (numeric).
+id
+   Mouse identifier (integer).
 
-      outcome
-         Cancer outcome: levels include 'none', 'localized',
-         'metastatic', and 'other' (factor).
+Details
+~~~~~~~
 
-      id
-         Mouse identifier (integer).
+The dataset name has been kept as 'MaleMiceCancer_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the OncoDataSets package and assists
+users in identifying its specific characteristics. The suffix '\_df'
+indicates that the dataset is a data frame. The original content has not
+been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'MaleMiceCancer_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The suffix '\_df' indicates that the dataset is a
-      data frame. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the survival package.
+Data taken from the survival package.

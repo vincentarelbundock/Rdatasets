@@ -1,46 +1,42 @@
-.. container::
+=============== ===============
+fish_encounters R Documentation
+=============== ===============
 
-   .. container::
+Fish encounters
+---------------
 
-      =============== ===============
-      fish_encounters R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Fish encounters
-         :name: fish-encounters
+Information about fish swimming down a river: each station represents an
+autonomous monitor that records if a tagged fish was seen at that
+location. Fish travel in one direction (migrating downstream).
+Information about misses is just as important as hits, but is not
+directly recorded in this form of the data.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Information about fish swimming down a river: each station
-      represents an autonomous monitor that records if a tagged fish was
-      seen at that location. Fish travel in one direction (migrating
-      downstream). Information about misses is just as important as
-      hits, but is not directly recorded in this form of the data.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   fish_encounters
 
-      .. code:: R
+Format
+~~~~~~
 
-         fish_encounters
+A dataset with variables:
 
-      .. rubric:: Format
-         :name: format
+fish
+   Fish identifier
 
-      A dataset with variables:
+station
+   Measurement station
 
-      fish
-         Fish identifier
+seen
+   Was the fish seen? (1 if yes, and true for all rows)
 
-      station
-         Measurement station
+Source
+~~~~~~
 
-      seen
-         Was the fish seen? (1 if yes, and true for all rows)
-
-      .. rubric:: Source
-         :name: source
-
-      Dataset provided by Myfanwy Johnston; more details at
-      https://fishsciences.github.io/post/visualizing-fish-encounter-histories/
+Dataset provided by Myfanwy Johnston; more details at
+https://fishsciences.github.io/post/visualizing-fish-encounter-histories/

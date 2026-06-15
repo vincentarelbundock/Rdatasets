@@ -1,97 +1,92 @@
-.. container::
+=============== ===============
+cochran.lattice R Documentation
+=============== ===============
 
-   .. container::
+Balanced lattice experiment in cotton
+-------------------------------------
 
-      =============== ===============
-      cochran.lattice R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Balanced lattice experiment in cotton
-         :name: balanced-lattice-experiment-in-cotton
+Balanced lattice experiment in cotton
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Balanced lattice experiment in cotton
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("cochran.lattice")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("cochran.lattice")
+A data frame with 80 observations on the following 5 variables.
 
-      .. rubric:: Format
-         :name: format
+``y``
+   percent of affected flower buds
 
-      A data frame with 80 observations on the following 5 variables.
+``rep``
+   replicate
 
-      ``y``
-         percent of affected flower buds
+``row``
+   row
 
-      ``rep``
-         replicate
+``col``
+   column
 
-      ``row``
-         row
+``trt``
+   treatment factor
 
-      ``col``
-         column
+Details
+~~~~~~~
 
-      ``trt``
-         treatment factor
+The experiment is a balanced lattice square with 16 treatments in a 4x4
+layout in each of 5 replicates. The treatments were applied to cotton
+plants. Each plot was ten rows wide by 70 feet long (about 1/18 of an
+acre). (Estimated plot width is 34.5 feet.) Data were collected from the
+middle 4 rows. The data are the percentages of squares showing attack by
+boll weevils. A 'square' is the name given to a young flower bud.
 
-      .. rubric:: Details
-         :name: details
+The plot orientation is not clear.
 
-      The experiment is a balanced lattice square with 16 treatments in
-      a 4x4 layout in each of 5 replicates. The treatments were applied
-      to cotton plants. Each plot was ten rows wide by 70 feet long
-      (about 1/18 of an acre). (Estimated plot width is 34.5 feet.) Data
-      were collected from the middle 4 rows. The data are the
-      percentages of squares showing attack by boll weevils. A 'square'
-      is the name given to a young flower bud.
+Source
+~~~~~~
 
-      The plot orientation is not clear.
+William G. Cochran, Gertrude M. Cox. *Experimental Designs*, 2nd
+Edition. Page 490.
 
-      .. rubric:: Source
-         :name: source
+Originally from: F. M. Wadley (1946). Incomplete block designs in insect
+population problems. *J. Economic Entomology*, 38, 651–654.
 
-      William G. Cochran, Gertrude M. Cox. *Experimental Designs*, 2nd
-      Edition. Page 490.
+References
+~~~~~~~~~~
 
-      Originally from: F. M. Wadley (1946). Incomplete block designs in
-      insect population problems. *J. Economic Entomology*, 38, 651–654.
+Walter Federer. Combining Standard Block Analyses With Spatial Analyses
+Under a Random Effects Model. Cornell Univ Tech Report BU-1373-MA.
+https://hdl.handle.net/1813/31971
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Walter Federer. Combining Standard Block Analyses With Spatial
-      Analyses Under a Random Effects Model. Cornell Univ Tech Report
-      BU-1373-MA. https://hdl.handle.net/1813/31971
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(cochran.lattice)
+   dat <- cochran.lattice
 
-         ## Not run: 
-
-         library(agridat)
-         data(cochran.lattice)
-         dat <- cochran.lattice
-
-         libs(desplot)
-         desplot(dat, y~row*col|rep,
-                 text=trt, # aspect unknown, should be 2 or .5
-                  main="cochran.lattice")
+   libs(desplot)
+   desplot(dat, y~row*col|rep,
+           text=trt, # aspect unknown, should be 2 or .5
+            main="cochran.lattice")
 
 
-         # Random rep,row,column model often used by Federer
-         libs(lme4)
-         dat <- transform(dat, rowf=factor(row), colf=factor(col))
-         m1 <-  lmer(y ~ trt + (1|rep) + (1|rep:row) + (1|rep:col), data=dat)
-         summary(m1)
+   # Random rep,row,column model often used by Federer
+   libs(lme4)
+   dat <- transform(dat, rowf=factor(row), colf=factor(col))
+   m1 <-  lmer(y ~ trt + (1|rep) + (1|rep:row) + (1|rep:col), data=dat)
+   summary(m1)
 
 
-         ## End(Not run)
+   ## End(Not run)

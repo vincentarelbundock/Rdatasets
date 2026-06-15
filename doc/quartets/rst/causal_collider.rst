@@ -1,41 +1,37 @@
-.. container::
+=============== ===============
+causal_collider R Documentation
+=============== ===============
 
-   .. container::
+Collider Data
+-------------
 
-      =============== ===============
-      causal_collider R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Collider Data
-         :name: collider-data
+This dataset contains 100 observations, generated under the following
+mechanism: X ~ N(0, 1) (exposure) Y ~ X + N(0,1) (outcome) Z ~ 0.45X +
+0.77Y + N(0, 1) (measured factor: collider)
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains 100 observations, generated under the
-      following mechanism: X ~ N(0, 1) (exposure) Y ~ X + N(0,1)
-      (outcome) Z ~ 0.45X + 0.77Y + N(0, 1) (measured factor: collider)
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   causal_collider
 
-      .. code:: R
+Format
+~~~~~~
 
-         causal_collider
+A dataframe with 100 rows and 3 variables:
 
-      .. rubric:: Format
-         :name: format
+- ``exposure``: exposure
 
-      A dataframe with 100 rows and 3 variables:
+- ``outcome``: outcome
 
-      -  ``exposure``: exposure
+- ``covariate``: a known factor (collider)
 
-      -  ``outcome``: outcome
+References
+~~~~~~~~~~
 
-      -  ``covariate``: a known factor (collider)
-
-      .. rubric:: References
-         :name: references
-
-      D'Agostino McGowan L, Barrett M (2023). Causal inference is not a
-      statistical problem. Preprint arXiv:2304.02683v1.
+D'Agostino McGowan L, Barrett M (2023). Causal inference is not a
+statistical problem. Preprint arXiv:2304.02683v1.

@@ -1,78 +1,74 @@
-.. container::
+==================== ===============
+senate_seat_forecast R Documentation
+==================== ===============
 
-   .. container::
+Senate Forecast 2018
+--------------------
 
-      ==================== ===============
-      senate_seat_forecast R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Senate Forecast 2018
-         :name: senate-forecast-2018
+This file contains links to the data behind FiveThirtyEight's 'Senate
+forecasts'
+https://projects.fivethirtyeight.com/2018-midterm-election-forecast/senate/
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This file contains links to the data behind FiveThirtyEight's
-      'Senate forecasts'
-      https://projects.fivethirtyeight.com/2018-midterm-election-forecast/senate/
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   senate_seat_forecast
 
-      .. code:: R
+Format
+~~~~~~
 
-         senate_seat_forecast
+A dataframe with 28353 rows representing seat-level results of the
+classic, lite, and deluxe Senate forecasts since Aug. 1, 2018 and 12
+variables
 
-      .. rubric:: Format
-         :name: format
+forecastdate
+   date of the forecast
 
-      A dataframe with 28353 rows representing seat-level results of the
-      classic, lite, and deluxe Senate forecasts since Aug. 1, 2018 and
-      12 variables
+state
+   state of the forecast
 
-      forecastdate
-         date of the forecast
+class
+   class of the forecast
 
-      state
-         state of the forecast
+special
+   unknown
 
-      class
-         class of the forecast
+candidate
+   name of the candidate
 
-      special
-         unknown
+party
+   party of the candidate
 
-      candidate
-         name of the candidate
+incumbent
+   whether the candidate is incumbent
 
-      party
-         party of the candidate
+model
+   the model of the forecast
 
-      incumbent
-         whether the candidate is incumbent
+win_probability
+   the probability of the corresponding party winning
 
-      model
-         the model of the forecast
+voteshare
+   the voteshare of the corresponding party
 
-      win_probability
-         the probability of the corresponding party winning
+p10_voteshare
+   the top 10 percentile of the voteshare
 
-      voteshare
-         the voteshare of the corresponding party
+p90_voteshare
+   the top 00 percentile of the voteshare
 
-      p10_voteshare
-         the top 10 percentile of the voteshare
+Source
+~~~~~~
 
-      p90_voteshare
-         the top 00 percentile of the voteshare
+FiveThirtyEight’s House, Senate And Governor Models Methodology:
+https://fivethirtyeight.com/methodology/how-fivethirtyeights-house-and-senate-models-work/
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      FiveThirtyEight’s House, Senate And Governor Models Methodology:
-      https://fivethirtyeight.com/methodology/how-fivethirtyeights-house-and-senate-models-work/
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``senate_national_forecast``
+``senate_national_forecast``

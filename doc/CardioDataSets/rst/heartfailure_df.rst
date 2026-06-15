@@ -1,65 +1,60 @@
-.. container::
+=============== ===============
+heartfailure_df R Documentation
+=============== ===============
 
-   .. container::
+Heart Failure rehospitalization risk
+------------------------------------
 
-      =============== ===============
-      heartfailure_df R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Heart Failure rehospitalization risk
-         :name: heart-failure-rehospitalization-risk
+This dataset, heartfailure_df, is a data frame containing simulated data
+from 800 patients with heart failure who are at risk of recurrent
+hospitalization. The dataset includes 3,068 observations (2,268 events)
+tracking patient outcomes over time.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, heartfailure_df, is a data frame containing
-      simulated data from 800 patients with heart failure who are at
-      risk of recurrent hospitalization. The dataset includes 3,068
-      observations (2,268 events) tracking patient outcomes over time.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(heartfailure_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(heartfailure_df)
+A data frame with 3,068 observations and 6 variables:
 
-      .. rubric:: Format
-         :name: format
+id
+   Patient identification number (integer vector)
 
-      A data frame with 3,068 observations and 6 variables:
+treatment
+   Treatment assignment (factor with 2 levels)
 
-      id
-         Patient identification number (integer vector)
+t0
+   Start time of observation period (numeric vector)
 
-      treatment
-         Treatment assignment (factor with 2 levels)
+t1
+   End time of observation period (numeric vector)
 
-      t0
-         Start time of observation period (numeric vector)
+enum
+   Event number (numeric vector)
 
-      t1
-         End time of observation period (numeric vector)
+event
+   Event indicator (numeric vector)
 
-      enum
-         Event number (numeric vector)
+Details
+~~~~~~~
 
-      event
-         Event indicator (numeric vector)
+The dataset name has been kept as 'heartfailure_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the CardioDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'df' indicates that the dataset is a standard data frame. The original
+content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'heartfailure_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      CardioDataSets package and assists users in identifying its
-      specific characteristics. The suffix 'df' indicates that the
-      dataset is a standard data frame. The original content has not
-      been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the survPen package version 2.0-2. Based on
-      hfaction_cpx12 dataset from package WA.
+Data taken from the survPen package version 2.0-2. Based on
+hfaction_cpx12 dataset from package WA.

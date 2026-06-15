@@ -1,51 +1,47 @@
-.. container::
+============= ===============
+Readiq_tbl_df R Documentation
+============= ===============
 
-   .. container::
+Reading Scores vs IQ Scores
+---------------------------
 
-      ============= ===============
-      Readiq_tbl_df R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Reading Scores vs IQ Scores
-         :name: reading-scores-vs-iq-scores
+This dataset, Readiq_tbl_df, is a tibble containing paired data on
+reading scores and IQ scores for a sample of individuals. It allows for
+the exploration of the relationship between reading ability and IQ
+scores.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, Readiq_tbl_df, is a tibble containing paired data on
-      reading scores and IQ scores for a sample of individuals. It
-      allows for the exploration of the relationship between reading
-      ability and IQ scores.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Readiq_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Readiq_tbl_df)
+A tibble with 14 observations and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+reading
+   Reading scores (integer).
 
-      A tibble with 14 observations and 2 variables:
+iq
+   IQ scores (integer).
 
-      reading
-         Reading scores (integer).
+Details
+~~~~~~~
 
-      iq
-         IQ scores (integer).
+The dataset name has been kept as 'Readiq_tbl_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the educationR package and assists
+users in identifying its specific characteristics. The suffix 'tbl_df'
+indicates that the dataset is a tibble. The original content has not
+been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'Readiq_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      educationR package and assists users in identifying its specific
-      characteristics. The suffix 'tbl_df' indicates that the dataset is
-      a tibble. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset was taken from the BSDA package.
+The dataset was taken from the BSDA package.

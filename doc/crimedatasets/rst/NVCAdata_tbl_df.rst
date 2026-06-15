@@ -1,107 +1,100 @@
-.. container::
+=============== ===============
+NVCAdata_tbl_df R Documentation
+=============== ===============
 
-   .. container::
+Interim Data with New Violent Criminal Activity (NVCA)
+------------------------------------------------------
 
-      =============== ===============
-      NVCAdata_tbl_df R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Interim Data with New Violent Criminal Activity (NVCA)
-         :name: interim-data-with-new-violent-criminal-activity-nvca
+This dataset contains information related to new violent criminal
+activity (NVCA) as an outcome. It includes pre-treatment covariates, a
+binary treatment variable (Z), an ordinal decision variable (D), and an
+outcome variable (Y). The dataset provides a rich set of variables that
+can be used to analyze factors influencing violent crime recidivism,
+with a focus on various demographic and criminal history attributes.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains information related to new violent criminal
-      activity (NVCA) as an outcome. It includes pre-treatment
-      covariates, a binary treatment variable (Z), an ordinal decision
-      variable (D), and an outcome variable (Y). The dataset provides a
-      rich set of variables that can be used to analyze factors
-      influencing violent crime recidivism, with a focus on various
-      demographic and criminal history attributes.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(NVCAdata_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(NVCAdata_tbl_df)
+A tibble with 1,891 observations and 19 variables:
 
-      .. rubric:: Format
-         :name: format
+Sex
+   Sex of the individual (numeric).
 
-      A tibble with 1,891 observations and 19 variables:
+White
+   Indicates if the individual is White (numeric).
 
-      Sex
-         Sex of the individual (numeric).
+SexWhite
+   Indicates if the individual is both White and male (numeric).
 
-      White
-         Indicates if the individual is White (numeric).
+Age
+   Age of the individual (numeric).
 
-      SexWhite
-         Indicates if the individual is both White and male (numeric).
+PendingChargeAtTimeOfOffense
+   Pending charge at the time of offense (numeric).
 
-      Age
-         Age of the individual (numeric).
+NCorNonViolentMisdemeanorCharge
+   Non-violent misdemeanor charge (numeric).
 
-      PendingChargeAtTimeOfOffense
-         Pending charge at the time of offense (numeric).
+ViolentMisdemeanorCharge
+   Violent misdemeanor charge (numeric).
 
-      NCorNonViolentMisdemeanorCharge
-         Non-violent misdemeanor charge (numeric).
+ViolentFelonyCharge
+   Violent felony charge (numeric).
 
-      ViolentMisdemeanorCharge
-         Violent misdemeanor charge (numeric).
+NonViolentFelonyCharge
+   Non-violent felony charge (numeric).
 
-      ViolentFelonyCharge
-         Violent felony charge (numeric).
+PriorMisdemeanorConviction
+   Prior misdemeanor conviction (numeric).
 
-      NonViolentFelonyCharge
-         Non-violent felony charge (numeric).
+PriorFelonyConviction
+   Prior felony conviction (numeric).
 
-      PriorMisdemeanorConviction
-         Prior misdemeanor conviction (numeric).
+PriorViolentConviction
+   Prior violent conviction (numeric).
 
-      PriorFelonyConviction
-         Prior felony conviction (numeric).
+PriorSentenceToIncarceration
+   Prior sentence to incarceration (numeric).
 
-      PriorViolentConviction
-         Prior violent conviction (numeric).
+PriorFTAInPastTwoYears
+   Prior failure to appear in the past two years (numeric).
 
-      PriorSentenceToIncarceration
-         Prior sentence to incarceration (numeric).
+PriorFTAOlderThanTwoYears
+   Prior failure to appear older than two years (numeric).
 
-      PriorFTAInPastTwoYears
-         Prior failure to appear in the past two years (numeric).
+Staff_ReleaseRecommendation
+   Staff release recommendation (numeric).
 
-      PriorFTAOlderThanTwoYears
-         Prior failure to appear older than two years (numeric).
+Z
+   Binary treatment variable (numeric).
 
-      Staff_ReleaseRecommendation
-         Staff release recommendation (numeric).
+D
+   Ordinal decision variable (numeric).
 
-      Z
-         Binary treatment variable (numeric).
+Y
+   Outcome variable indicating new violent criminal activity (numeric).
 
-      D
-         Ordinal decision variable (numeric).
+Details
+~~~~~~~
 
-      Y
-         Outcome variable indicating new violent criminal activity
-         (numeric).
+The dataset name has been changed to 'NVCAdata_tbl_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the crimedatasets package and
+assists users in identifying its specific characteristics. The suffix
+'tbl_df' indicates that the dataset is a tibble in R. The original
+content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been changed to 'NVCAdata_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      crimedatasets package and assists users in identifying its
-      specific characteristics. The suffix 'tbl_df' indicates that the
-      dataset is a tibble in R. The original content has not been
-      modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Interim data on violent criminal activity (NVCA).
+Interim data on violent criminal activity (NVCA).

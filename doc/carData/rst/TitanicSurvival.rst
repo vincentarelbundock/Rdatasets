@@ -1,68 +1,64 @@
-.. container::
+=============== ===============
+TitanicSurvival R Documentation
+=============== ===============
 
-   .. container::
+Survival of Passengers on the Titanic
+-------------------------------------
 
-      =============== ===============
-      TitanicSurvival R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Survival of Passengers on the Titanic
-         :name: survival-of-passengers-on-the-titanic
+Information on the survival status, sex, age, and passenger class of
+1309 passengers in the Titanic disaster of 1912.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Information on the survival status, sex, age, and passenger class
-      of 1309 passengers in the Titanic disaster of 1912.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   TitanicSurvival
 
-      .. code:: R
+Format
+~~~~~~
 
-         TitanicSurvival
+A data frame with 1309 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``survived``
+   ``no`` or ``yes``.
 
-      A data frame with 1309 observations on the following 4 variables.
+``sex``
+   ``female`` or ``male``
 
-      ``survived``
-         ``no`` or ``yes``.
+``age``
+   in years (and for some children, fractions of a year); age is missing
+   for 263 of the passengers.
 
-      ``sex``
-         ``female`` or ``male``
+``passengerClass``
+   ``1st``, ``2nd``, or ``3rd`` class.
 
-      ``age``
-         in years (and for some children, fractions of a year); age is
-         missing for 263 of the passengers.
+Details
+~~~~~~~
 
-      ``passengerClass``
-         ``1st``, ``2nd``, or ``3rd`` class.
+This is part of a larger data set compiled by Thomas Cason. Many
+additional details are given in the sources cited below.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This is part of a larger data set compiled by Thomas Cason. Many
-      additional details are given in the sources cited below.
+Data set ``titanic3`` from the now defunct
+http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/DataSets.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Data set ``titanic3`` from the now defunct
-      http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/DataSets.
+https://www.encyclopedia-titanica.org
 
-      .. rubric:: References
-         :name: references
+F. E. Harrell, Jr. (2001) *Regression Modeling Strategies* New York:
+Springer.
 
-      https://www.encyclopedia-titanica.org/
+Examples
+~~~~~~~~
 
-      F. E. Harrell, Jr. (2001) *Regression Modeling Strategies* New
-      York: Springer.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         summary(TitanicSurvival)
+   summary(TitanicSurvival)

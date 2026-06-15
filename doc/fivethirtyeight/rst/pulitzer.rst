@@ -1,59 +1,52 @@
-.. container::
+======== ===============
+pulitzer R Documentation
+======== ===============
 
-   .. container::
+Do Pulitzers Help Newspapers Keep Readers?
+------------------------------------------
 
-      ======== ===============
-      pulitzer R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Do Pulitzers Help Newspapers Keep Readers?
-         :name: do-pulitzers-help-newspapers-keep-readers
+The raw data behind the story "Do Pulitzers Help Newspapers Keep
+Readers?"
+https://fivethirtyeight.com/features/do-pulitzers-help-newspapers-keep-readers/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Do Pulitzers Help Newspapers Keep
-      Readers?"
-      https://fivethirtyeight.com/features/do-pulitzers-help-newspapers-keep-readers/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   pulitzer
 
-      .. code:: R
+Format
+~~~~~~
 
-         pulitzer
+A data frame with 50 rows representing newspapers and 7 variables:
 
-      .. rubric:: Format
-         :name: format
+newspaper
+   Newspaper
 
-      A data frame with 50 rows representing newspapers and 7 variables:
+circ2004
+   Daily Circulation in 2004
 
-      newspaper
-         Newspaper
+circ2013
+   Daily Circulation in 2013
 
-      circ2004
-         Daily Circulation in 2004
+pctchg_circ
+   Percent change in Daily Circulation from 2004 to 2013
 
-      circ2013
-         Daily Circulation in 2013
+num_finals1990_2003
+   Number of Pulitzer Prize winners and finalists from 1990 to 2003
 
-      pctchg_circ
-         Percent change in Daily Circulation from 2004 to 2013
+num_finals2004_2014
+   Number of Pulitzer Prize winners and finalists from 2004 to 2014
 
-      num_finals1990_2003
-         Number of Pulitzer Prize winners and finalists from 1990 to
-         2003
+num_finals1990_2014
+   Number of Pulitzer Prize winners and finalists from 1990 to 2014
 
-      num_finals2004_2014
-         Number of Pulitzer Prize winners and finalists from 2004 to
-         2014
+Source
+~~~~~~
 
-      num_finals1990_2014
-         Number of Pulitzer Prize winners and finalists from 1990 to
-         2014
-
-      .. rubric:: Source
-         :name: source
-
-      See
-      https://fivethirtyeight.com/features/do-pulitzers-help-newspapers-keep-readers/
+See
+https://fivethirtyeight.com/features/do-pulitzers-help-newspapers-keep-readers/

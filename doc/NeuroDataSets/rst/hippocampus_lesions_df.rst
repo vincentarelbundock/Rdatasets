@@ -1,51 +1,46 @@
-.. container::
+====================== ===============
+hippocampus_lesions_df R Documentation
+====================== ===============
 
-   .. container::
+Memory and the Hippocampus
+--------------------------
 
-      ====================== ===============
-      hippocampus_lesions_df R Documentation
-      ====================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Memory and the Hippocampus
-         :name: memory-and-the-hippocampus
+This dataset, hippocampus_lesions_df, is a data frame containing
+measurements of spatial memory scores and percent lesion of the
+hippocampus from 57 observations.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, hippocampus_lesions_df, is a data frame containing
-      measurements of spatial memory scores and percent lesion of the
-      hippocampus from 57 observations.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(hippocampus_lesions_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(hippocampus_lesions_df)
+A data frame with 57 observations and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+lesion
+   Numeric vector representing percent lesion of the hippocampus
 
-      A data frame with 57 observations and 2 variables:
+memory
+   Numeric vector representing spatial memory scores
 
-      lesion
-         Numeric vector representing percent lesion of the hippocampus
+Details
+~~~~~~~
 
-      memory
-         Numeric vector representing spatial memory scores
+The dataset name has been kept as 'hippocampus_lesions_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the NeuroDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'df' indicates that the dataset is a data frame. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'hippocampus_lesions_df' to
-      avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      NeuroDataSets package and assists users in identifying its
-      specific characteristics. The suffix 'df' indicates that the
-      dataset is a data frame. The original content has not been
-      modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the abd package version 0.2-8
+Data taken from the abd package version 0.2-8

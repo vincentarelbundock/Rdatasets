@@ -16,20 +16,14 @@ function processMathHTML() {
 
 <table style="width: 100%;"><tr><td>AirCrash</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>
-Air Crash Data
-</h2>
+<h2>Air Crash Data</h2>
 
 <h3>Description</h3>
 
-<p>Data on all fatal commercial airplane crashes from 1993&ndash;2015.
-Excludes small planes (less than 6 passengers) and non-commercial (cargo, military, private) aircraft.
+<p>Data on all fatal commercial airplane crashes from 1993&ndash;2015. Excludes
+small planes (less than 6 passengers) and non-commercial (cargo, military,
+private) aircraft.
 </p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data("AirCrash")</code></pre>
 
 
 <h3>Format</h3>
@@ -38,9 +32,12 @@ Excludes small planes (less than 6 passengers) and non-commercial (cargo, milita
 </p>
 
 <dl>
-<dt><code>Phase</code></dt><dd><p>phase of the flight, a factor with levels <code>en route</code> <code>landing</code> <code>standing</code> <code>take-off</code> <code>unknown</code></p>
+<dt><code>Phase</code></dt><dd><p>phase of the flight, a factor with levels <code style="white-space: pre;">&#8288;en route&#8288;</code> <code>landing</code>
+<code>standing</code> <code>take-off</code>
+<code>unknown</code></p>
 </dd>
-<dt><code>Cause</code></dt><dd><p>a factor with levels <code>criminal</code> <code>human error</code> <code>mechanical</code> <code>unknown</code> <code>weather</code></p>
+<dt><code>Cause</code></dt><dd><p>a factor with levels <code>criminal</code> <code style="white-space: pre;">&#8288;human error&#8288;</code> <code>mechanical</code>
+<code>unknown</code> <code>weather</code></p>
 </dd>
 <dt><code>date</code></dt><dd><p>date of crash, a Date</p>
 </dd>
@@ -54,14 +51,15 @@ Excludes small planes (less than 6 passengers) and non-commercial (cargo, milita
 
 <h3>Details</h3>
 
-<p><code>Phase</code> of the flight was cleaned by combining related variants, spelling, etc.
+<p><code>Phase</code> of the flight was cleaned by combining related variants,
+spelling, etc.
 </p>
 
 
 <h3>Source</h3>
 
 <p>Originally from David McCandless,
-<a href="https://informationisbeautiful.net/visualizations/plane-truth-every-single-commercial-plane-crash-visualized/">https://informationisbeautiful.net/visualizations/plane-truth-every-single-commercial-plane-crash-visualized/</a>,
+<a href="https://web.archive.org/web/2024/https://informationisbeautiful.net/visualizations/plane-truth-every-single-commercial-plane-crash-visualized/">https://web.archive.org/web/2024/https://informationisbeautiful.net/visualizations/plane-truth-every-single-commercial-plane-crash-visualized/</a>,
 with the data at
 <a href="https://docs.google.com/spreadsheets/d/1OvDq4_BtbR6nSnnHnjD5hVC3HQ-ulZPGbo0RDGbzM3Q/edit?usp=drive_web">https://docs.google.com/spreadsheets/d/1OvDq4_BtbR6nSnnHnjD5hVC3HQ-ulZPGbo0RDGbzM3Q/edit?usp=drive_web</a>,
 downloaded April 14, 2015.
@@ -77,7 +75,8 @@ downloaded April 14, 2015.
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(AirCrash)
+<pre><code class='language-R'>
+data(AirCrash)
 aircrash.tab &lt;- xtabs(~Phase + Cause, data=AirCrash)
 mosaic(aircrash.tab, shade=TRUE)
 
@@ -101,6 +100,7 @@ mosaic(aircrash.tab[phase.ord,cause.ord], shade=TRUE,
 library(ca)
 aircrash.ca &lt;- ca(aircrash.tab)
 plot(aircrash.ca)
+
 </code></pre>
 
 </main>

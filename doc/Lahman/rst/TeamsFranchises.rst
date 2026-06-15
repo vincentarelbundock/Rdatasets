@@ -1,80 +1,76 @@
-.. container::
+=============== ===============
+TeamsFranchises R Documentation
+=============== ===============
 
-   .. container::
+TeamFranchises table
+--------------------
 
-      =============== ===============
-      TeamsFranchises R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: TeamFranchises table
-         :name: teamfranchises-table
+Information about team franchises
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Information about team franchises
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(TeamsFranchises)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(TeamsFranchises)
+A data frame with 203 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``franchID``
+   Franchise ID; a factor
 
-      A data frame with 120 observations on the following 4 variables.
+``franchName``
+   Franchise name
 
-      ``franchID``
-         Franchise ID; a factor
+``active``
+   Whether team is currently active (Y or N)
 
-      ``franchName``
-         Franchise name
+``NAassoc``
+   ID of National Association team franchise played as
 
-      ``active``
-         Whether team is currently active (Y or N)
+Source
+~~~~~~
 
-      ``NAassoc``
-         ID of National Association team franchise played as
+Lahman, S. (2026) Lahman's Baseball Database, 1871-2025, 2026 version,
+https://sabr.org/lahman-database/
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Lahman, S. (2024) Lahman's Baseball Database, 1871-2024, 2025
-      version, https://sabr.org/lahman-database/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   data(TeamsFranchises)
 
-      .. code:: R
+   # Which of the active Major League Baseball teams had a National Association predecessor?
 
-         data(TeamsFranchises)
+   # Notes: 
+   # - the National Association was founded in 1871, and continued through the
+   # 1875 season. In 1876, six clubs from the National Association and two other
+   # independent clubs formed the National League, which exists to this day.
+   # - the `active` field has "NA" for the National Association franchises
+   # - where appropriate, the `NAassoc` field has the `franchID` of the successor National League team
 
-         # Which of the active Major League Baseball teams had a National Association predecessor?
+   # using the dplyr data manipulation package
+   library("dplyr")
 
-         # Notes: 
-         # - the National Association was founded in 1871, and continued through the
-         # 1875 season. In 1876, six clubs from the National Association and two other
-         # independent clubs formed the National League, which exists to this day.
-         # - the `active` field has "NA" for the National Association franchises
-         # - where appropriate, the `NAassoc` field has the `franchID` of the successor National League team
+   NatAssoc_active_table <- TeamsFranchises %>%
+     filter(active == "Y") %>%
+     filter(!is.na(NAassoc))
+   NatAssoc_active_table
 
-         # using the dplyr data manipulation package
-         library("dplyr")
+   # Merge current team IDs with franchise IDs
+   currentTeams <- Teams %>% 
+                     filter(yearID == 2014) %>%
+                     select(teamID, franchID, lgID, park)
 
-         NatAssoc_active_table <- TeamsFranchises %>%
-           filter(active == "Y") %>%
-           filter(!is.na(NAassoc))
-         NatAssoc_active_table
-
-         # Merge current team IDs with franchise IDs
-         currentTeams <- Teams %>% 
-                           filter(yearID == 2014) %>%
-                           select(teamID, franchID, lgID, park)
-
-         # Merge TeamsFranchises with currentTeams
-         TeamsFranchises %>%
-             filter(active == "Y") %>%
-             select(-active, -NAassoc) %>%
-             left_join(currentTeams, by = "franchID")
+   # Merge TeamsFranchises with currentTeams
+   TeamsFranchises %>%
+       filter(active == "Y") %>%
+       select(-active, -NAassoc) %>%
+       left_join(currentTeams, by = "franchID")

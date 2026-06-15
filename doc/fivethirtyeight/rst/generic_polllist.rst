@@ -1,105 +1,101 @@
-.. container::
+================ ===============
+generic_polllist R Documentation
+================ ===============
 
-   .. container::
+Congress Generic Ballot Polls
+-----------------------------
 
-      ================ ===============
-      generic_polllist R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Congress Generic Ballot Polls
-         :name: congress-generic-ballot-polls
+The raw data behind the story "Are Democrats Winning The Race For
+Congress?"
+https://projects.fivethirtyeight.com/congress-generic-ballot-polls/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Are Democrats Winning The Race For
-      Congress?"
-      https://projects.fivethirtyeight.com/congress-generic-ballot-polls/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   generic_polllist
 
-      .. code:: R
+Format
+~~~~~~
 
-         generic_polllist
+A data frame with 934 rows representing polls and 21 variables:
 
-      .. rubric:: Format
-         :name: format
+subgroup
+   No description provided.
 
-      A data frame with 934 rows representing polls and 21 variables:
+modeldate
+   No description provided.
 
-      subgroup
-         No description provided.
+startdate
+   Start date of the poll.
 
-      modeldate
-         No description provided.
+enddate
+   End date of the poll.
 
-      startdate
-         Start date of the poll.
+pollster
+   The organization that conducted the poll (rather than the
+   organization that paid for or sponsored it)
 
-      enddate
-         End date of the poll.
+grade
+   No description provided.
 
-      pollster
-         The organization that conducted the poll (rather than the
-         organization that paid for or sponsored it)
+samplesize
+   No description provided.
 
-      grade
-         No description provided.
+population
+   A = ALL ADULTS, RV = REGISTERED VOTERS, LV = LIKELY VOTERS, V =
+   VOTERS
 
-      samplesize
-         No description provided.
+weight
+   No description provided.
 
-      population
-         A = ALL ADULTS, RV = REGISTERED VOTERS, LV = LIKELY VOTERS, V =
-         VOTERS
+influence
+   No description provided.
 
-      weight
-         No description provided.
+dem
+   No description provided.
 
-      influence
-         No description provided.
+rep
+   No description provided.
 
-      dem
-         No description provided.
+adjusted_dem
+   No description provided.
 
-      rep
-         No description provided.
+adjusted_rep
+   No description provided.
 
-      adjusted_dem
-         No description provided.
+multiversions
+   No description provided.
 
-      adjusted_rep
-         No description provided.
+tracking
+   No description provided.
 
-      multiversions
-         No description provided.
+url
+   No description provided.
 
-      tracking
-         No description provided.
+poll_id
+   No description provided.
 
-      url
-         No description provided.
+question_id
+   No description provided.
 
-      poll_id
-         No description provided.
+createddate
+   No description provided.
 
-      question_id
-         No description provided.
+timestamp
+   No description provided.
 
-      createddate
-         No description provided.
+Source
+~~~~~~
 
-      timestamp
-         No description provided.
+See
+https://github.com/fivethirtyeight/data/blob/master/congress-generic-ballot/README.md
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      See
-      https://github.com/fivethirtyeight/data/blob/master/congress-generic-ballot/README.md
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``generic_topline``
+``generic_topline``

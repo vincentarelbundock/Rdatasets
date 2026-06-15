@@ -1,58 +1,54 @@
-.. container::
+================== ===============
+hiphop_cand_lyrics R Documentation
+================== ===============
 
-   .. container::
+Hip-Hop Is Turning On Donald Trump
+----------------------------------
 
-      ================== ===============
-      hiphop_cand_lyrics R Documentation
-      ================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Hip-Hop Is Turning On Donald Trump
-         :name: hip-hop-is-turning-on-donald-trump
+The raw data behind the story "Hip-Hop Is Turning On Donald Trump"
+https://projects.fivethirtyeight.com/clinton-trump-hip-hop-lyrics/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Hip-Hop Is Turning On Donald Trump"
-      https://projects.fivethirtyeight.com/clinton-trump-hip-hop-lyrics/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   hiphop_cand_lyrics
 
-      .. code:: R
+Format
+~~~~~~
 
-         hiphop_cand_lyrics
+A data frame with 377 rows representing hip-hop songs referencing POTUS
+candidates in 2016 and 8 variables:
 
-      .. rubric:: Format
-         :name: format
+candidate
+   Candidate referenced
 
-      A data frame with 377 rows representing hip-hop songs referencing
-      POTUS candidates in 2016 and 8 variables:
+song
+   Song name
 
-      candidate
-         Candidate referenced
+artist
+   Artist name
 
-      song
-         Song name
+sentiment
+   Positive, negative or neutral
 
-      artist
-         Artist name
+theme
+   Theme of lyric
 
-      sentiment
-         Positive, negative or neutral
+album_release_date
+   Date of album release
 
-      theme
-         Theme of lyric
+line
+   Lyrics
 
-      album_release_date
-         Date of album release
+url
+   Genius link
 
-      line
-         Lyrics
+Source
+~~~~~~
 
-      url
-         Genius link
-
-      .. rubric:: Source
-         :name: source
-
-      Genius https://genius.com/
+Genius https://genius.com/

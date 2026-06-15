@@ -1,83 +1,79 @@
-.. container::
+=============== ===============
+blizzard_salary R Documentation
+=============== ===============
 
-   .. container::
+Blizzard Employee Voluntary Salary Info.
+----------------------------------------
 
-      =============== ===============
-      blizzard_salary R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Blizzard Employee Voluntary Salary Info.
-         :name: blizzard-employee-voluntary-salary-info.
+Employee generated anonymous survey of salary information.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Employee generated anonymous survey of salary information.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   blizzard_salary
 
-      .. code:: R
+Format
+~~~~~~
 
-         blizzard_salary
+A data frame with 466 rows and 9 variables.
 
-      .. rubric:: Format
-         :name: format
+timestamp
+   Time data was entered
 
-      A data frame with 466 rows and 9 variables.
+status
+   Specifies employment status.
 
-      timestamp
-         Time data was entered
+current_title
+   Current job title.
 
-      status
-         Specifies employment status.
+current_salary
+   Current salary (in USD).
 
-      current_title
-         Current job title.
+salary_type
+   Frequency with levels year, hour, week.
 
-      current_salary
-         Current salary (in USD).
+percent_incr
+   Raise given July 2020.
 
-      salary_type
-         Frequency with levels year, hour, week.
+other_info
+   Other information submitted by employee.
 
-      percent_incr
-         Raise given July 2020.
+location
+   Current office of employment.
 
-      other_info
-         Other information submitted by employee.
+performance_rating
+   Most recent review performance rating.
 
-      location
-         Current office of employment.
+Source
+~~~~~~
 
-      performance_rating
-         Most recent review performance rating.
+`Bloomberg - Blizzard workers share salaries in revolt over wage
+disparities <https://www.bloomberg.com/news/articles/2020-08-03/blizzard-workers-share-salaries-in-revolt-over-wage-disparities>`__.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      `Bloomberg - Blizzard workers share salaries in revolt over wage
-      disparities <https://www.bloomberg.com/news/articles/2020-08-03/blizzard-workers-share-salaries-in-revolt-over-wage-disparities>`__.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   library(ggplot2)
+   library(dplyr)
 
-      .. code:: R
+   plot_data <- blizzard_salary |>
+     mutate(annual_salary = case_when(
+       salary_type == "week" ~ current_salary * 52,
+       salary_type == "hour" ~ current_salary * 40 * 52,
+       TRUE ~ current_salary
+     ))
 
-         library(ggplot2)
-         library(dplyr)
-
-         plot_data <- blizzard_salary |>
-           mutate(annual_salary = case_when(
-             salary_type == "week" ~ current_salary * 52,
-             salary_type == "hour" ~ current_salary * 40 * 52,
-             TRUE ~ current_salary
-           ))
-
-         ggplot(plot_data, aes(annual_salary)) +
-           geom_histogram(binwidth = 25000, color = "white") +
-           labs(
-             title = "Current Salary of Blizzard Employees",
-             x = "Salary",
-             y = "Number of Employees"
-           )
+   ggplot(plot_data, aes(annual_salary)) +
+     geom_histogram(binwidth = 25000, color = "white") +
+     labs(
+       title = "Current Salary of Blizzard Employees",
+       x = "Salary",
+       y = "Number of Employees"
+     )

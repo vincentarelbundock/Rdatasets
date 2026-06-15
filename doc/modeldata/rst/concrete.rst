@@ -1,42 +1,37 @@
-.. container::
+======== ===============
+concrete R Documentation
+======== ===============
 
-   .. container::
+Compressive strength of concrete mixtures
+-----------------------------------------
 
-      ======== ===============
-      concrete R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Compressive strength of concrete mixtures
-         :name: compressive-strength-of-concrete-mixtures
+Yeh (2006) describes an aggregated data set for experimental designs
+used to test the compressive strength of concrete mixtures. The data are
+used by Kuhn and Johnson (2013).
 
-      .. rubric:: Description
-         :name: description
+Value
+~~~~~
 
-      Yeh (2006) describes an aggregated data set for experimental
-      designs used to test the compressive strength of concrete
-      mixtures. The data are used by Kuhn and Johnson (2013).
+============ ========
+``concrete`` a tibble
+============ ========
 
-      .. rubric:: Value
-         :name: value
+Source
+~~~~~~
 
-      ============ ========
-      ``concrete`` a tibble
-      ============ ========
+Yeh I (2006). "Analysis of Strength of Concrete Using Design of
+Experiments and Neural Networks." *Journal of Materials in Civil
+Engineering*, 18, 597-604.
 
-      .. rubric:: Source
-         :name: source
+Kuhn, M., Johnson, K. (2013) *Applied Predictive Modeling*, Springer.
 
-      Yeh I (2006). "Analysis of Strength of Concrete Using Design of
-      Experiments and Neural Networks." *Journal of Materials in Civil
-      Engineering*, 18, 597-604.
+Examples
+~~~~~~~~
 
-      Kuhn, M., Johnson, K. (2013) *Applied Predictive Modeling*,
-      Springer.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(concrete)
-         str(concrete)
+   data(concrete)
+   str(concrete)

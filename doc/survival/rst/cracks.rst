@@ -1,133 +1,126 @@
-.. container::
+=========== ===============
+reliability R Documentation
+=========== ===============
 
-   .. container::
+Reliability data sets
+---------------------
 
-      =========== ===============
-      reliability R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Reliability data sets
-         :name: reliability-data-sets
+A set of data for simple reliablility analyses, taken from the book by
+Meeker and Escobar.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A set of data for simple reliablility analyses, taken from the
-      book by Meeker and Escobar.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(reliability, package="survival")
 
-      .. code:: R
+Details
+~~~~~~~
 
-         data(reliability, package="survival")
+- ``braking``: Locomotive age at the time of replacement of braking
+  grids, 1-4 replacements for each locomotive. The grids are part of two
+  manufacturing batches.
 
-      .. rubric:: Details
-         :name: details
+- ``capacitor``: Data from a factorial experiment on the life of glass
+  capacitors as a function of voltage and operating temperature. There
+  were 8 capacitors at each combination of temperature and voltage.
+  Testing at each combination was terminated after the fourth failure.
 
-      -  ``braking``: Locomotive age at the time of replacement of
-         braking grids, 1-4 replacements for each locomotive. The grids
-         are part of two manufacturing batches.
+  - ``temperature``: temperature in degrees celcius
 
-      -  ``capacitor``: Data from a factorial experiment on the life of
-         glass capacitors as a function of voltage and operating
-         temperature. There were 8 capacitors at each combination of
-         temperature and voltage. Testing at each combination was
-         terminated after the fourth failure.
+  - ``voltage``: applied voltage
 
-         -  ``temperature``: temperature in degrees celcius
+  - ``time``: time to failure
 
-         -  ``voltage``: applied voltage
+  - ``status``: 1=failed, 0=censored
 
-         -  ``time``: time to failure
+- ``cracks``: Data on the time until the development of cracks in a set
+  of 167 identical turbine parts. The parts were inspected at 8 selected
+  times.
 
-         -  ``status``: 1=failed, 0=censored
+  - day: time of inspection
 
-      -  ``cracks``: Data on the time until the development of cracks in
-         a set of 167 identical turbine parts. The parts were inspected
-         at 8 selected times.
+  - fail: number of fans found to have cracks, at this inspection
 
-         -  day: time of inspection
+- Data set ``genfan``: Time to failure of 70 diesel engine fans.
 
-         -  fail: number of fans found to have cracks, at this
-            inspection
+  - ``hours``: hours of service
 
-      -  Data set ``genfan``: Time to failure of 70 diesel engine fans.
+  - ``status``: 1=failure, 0=censored
 
-         -  ``hours``: hours of service
+  Data set ``ifluid``: A data frame with two variables describing the
+  time to electrical breakdown of an insulating fluid.
 
-         -  ``status``: 1=failure, 0=censored
+  - ``time``: hours to breakdown
 
-         Data set ``ifluid``: A data frame with two variables describing
-         the time to electrical breakdown of an insulating fluid.
+  - ``voltage``: test voltage in kV
 
-         -  ``time``: hours to breakdown
+- Data set ``imotor``: Breakdown of motor insulation as a function of
+  temperature.
 
-         -  ``voltage``: test voltage in kV
+  - temp: temperature of the test
 
-      -  Data set ``imotor``: Breakdown of motor insulation as a
-         function of temperature.
+  - time: time to failure or censoring
 
-         -  temp: temperature of the test
+  - status: 0=censored, 1=failed
 
-         -  time: time to failure or censoring
+- Data set ``turbine``: Each of 432 turbine wheels was inspected once to
+  determine whether a crack had developed in the wheel or not.
 
-         -  status: 0=censored, 1=failed
+  - hours: time of inspection (100s of hours)
 
-      -  Data set ``turbine``: Each of 432 turbine wheels was inspected
-         once to determine whether a crack had developed in the wheel or
-         not.
+  - inspected: number that were inspected
 
-         -  hours: time of inspection (100s of hours)
+  - failed: number that failed
 
-         -  inspected: number that were inspected
+- Data set ``valveSeat``: Time to replacement of valve seats for 41
+  diesel engines. More than one seat may be replaced at a particular
+  service, leading to duplicate times in the data set. The final
+  inspection time for each engine will have status=0.
 
-         -  failed: number that failed
+  - id: engine identifier
 
-      -  Data set ``valveSeat``: Time to replacement of valve seats for
-         41 diesel engines. More than one seat may be replaced at a
-         particular service, leading to duplicate times in the data set.
-         The final inspection time for each engine will have status=0.
+  - time: time of the inspection, in days
 
-         -  id: engine identifier
+  - status: 1=replacement occured, 0= not
 
-         -  time: time of the inspection, in days
+References
+~~~~~~~~~~
 
-         -  status: 1=replacement occured, 0= not
+Meeker and Escobar, Statistical Methods for Reliability Data, 1998.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Meeker and Escobar, Statistical Methods for Reliability Data,
-      1998.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   survreg(Surv(time, status) ~ temperature + voltage, capacitor)
 
-      .. code:: R
+   # Figure 16.7 of Meeker, cumulative replacement of locomotive braking
+   #  grids
+   gfit <- survfit(Surv(day1, day2, status) ~ batch, braking, id= locomotive)
+   plot(gfit, cumhaz=TRUE, col=1:2, xscale=30.5, conf.time= c(6,12,18)*30.5, 
+        xlab="Locomotive Age in Months", 
+        ylab="Mean cumulative number of replacements")
 
-         survreg(Surv(time, status) ~ temperature + voltage, capacitor)
+   # Replacement of valve seats.  In this case the cumulative hazard is the 
+   #  natural target, an estimate of the number of replacements by a given time
+   #  (known as the cumulative mean function = CMF in relability).
+   # When two valve seats failed at the same inspection, we need to jitter one
+   #  of the times, to avoid a (time1, time2) interval of length 0
+   ties <- which(with(valveSeat, diff(id)==0 & diff(time)==0))  #first of a tie
+   temp <- valveSeat$time
+   temp[ties] <- temp[ties] - .1 # jittered time
+   vdata <- valveSeat
+   vdata$time1 <- ifelse(!duplicated(vdata$id), 0, c(0, temp[-length(temp)]))
+   vdata$time2 <- temp
+   fit2 <- survfit(Surv(time1, time2, status) ~1, vdata, id=id)
+   ## Not run: 
+   plot(fit2, cumhaz= TRUE, xscale= 365.25, 
+         xlab="Years in service", ylab = "Expected number of repairs")
 
-         # Figure 16.7 of Meeker, cumulative replacement of locomotive braking
-         #  grids
-         gfit <- survfit(Surv(day1, day2, status) ~ batch, braking, id= locomotive)
-         plot(gfit, cumhaz=TRUE, col=1:2, xscale=30.5, conf.time= c(6,12,18)*30.5, 
-              xlab="Locomotive Age in Months", ylab="Mean cumulative number replacements")
-
-         # Replacement of valve seats.  In this case the cumulative hazard is the 
-         #  natural target, an estimate of the number of replacements by a given time
-         #  (known as the cumulative mean function = CMF in relability).
-         # When two valve seats failed at the same inspection, we need to jitter one
-         #  of the times, to avoid a (time1, time2) interval of length 0
-         ties <- which(with(valveSeat, diff(id)==0 & diff(time)==0))  #first of a tie
-         temp <- valveSeat$time
-         temp[ties] <- temp[ties] - .1 # jittered time
-         vdata <- valveSeat
-         vdata$time1 <- ifelse(!duplicated(vdata$id), 0, c(0, temp[-length(temp)]))
-         vdata$time2 <- temp
-         fit2 <- survfit(Surv(time1, time2, status) ~1, vdata, id=id)
-         ## Not run: 
-         plot(fit2, cumhaz= TRUE, xscale= 365.25, 
-               xlab="Years in service", ylab = "Expected number of repairs")
-
-         ## End(Not run)
+   ## End(Not run)

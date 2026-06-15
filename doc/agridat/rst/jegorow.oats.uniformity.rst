@@ -1,88 +1,84 @@
-.. container::
+======================= ===============
+jegorow.oats.uniformity R Documentation
+======================= ===============
 
-   .. container::
+Uniformity trial of oats in Russia
+----------------------------------
 
-      ======================= ===============
-      jegorow.oats.uniformity R Documentation
-      ======================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of oats in Russia
-         :name: uniformity-trial-of-oats-in-russia
+Uniformity trial of oats in Russia
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of oats in Russia
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("jegorow.oats.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("jegorow.oats.uniformity")
+A data frame with 240 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row ordinate
 
-      A data frame with 240 observations on the following 3 variables.
+``col``
+   column ordinate
 
-      ``row``
-         row ordinate
+``yield``
+   yield per plot, kg
 
-      ``col``
-         column ordinate
+Details
+~~~~~~~
 
-      ``yield``
-         yield per plot, kg
+At the Sumskaya (Ssumy?) agricultural experimental station (Kharkov
+Governorate), a field was planted in April 1908 and harvested that
+summer as plots 1 sazhen sqauare. A 'sazhen' is 7 feet.
 
-      .. rubric:: Details
-         :name: details
+Field width: 8 plots \* 1 sazhen
 
-      At the Sumskaya (Ssumy?) agricultural experimental station
-      (Kharkov Governorate), a field was planted in April 1908 and
-      harvested that summer as plots 1 sazhen sqauare. A 'sazhen' is 7
-      feet.
+Field length: 30 plots \* 1 sazhen
 
-      Field width: 8 plots \* 1 sazhen
+Transcription details: Data typed by K.Wright from Roemer (1920), table
+10.
 
-      Field length: 30 plots \* 1 sazhen
+Source
+~~~~~~
 
-      Data typed by K.Wright from Roemer (1920), table 10.
+Jegorow, M. (1909). Zur Methodik des feldversuches. Russian Journ Expt
+Agric, 10, 502-520. Has a uniformity trial of oats.
+https://www.google.com/books/edition/Journal_de_l_agriculture_experimentale/510jAQAAIAAJ?hl=en
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Jegorow, M. (1909). Zur Methodik des feldversuches. Russian Journ
-      Expt Agric, 10, 502-520. Has a uniformity trial of oats.
-      https://www.google.com/books/edition/Journal_de_l_agriculture_experimentale/510jAQAAIAAJ?hl=en
+Neyman, J., & Iwaszkiewicz, K. (1935). Statistical problems in
+agricultural experimentation. Supplement to the Journal of the Royal
+Statistical Society, 2(2), 107-180.
 
-      .. rubric:: References
-         :name: references
+Roemer, T. (1920). Der Feldversuch. Arbeiten der Deutschen
+Landwirtschafts-Gesellschaft, 302.
+https://www.google.com/books/edition/Arbeiten_der_Deutschen_Landwirtschafts_G/7zBSAQAAMAAJ
 
-      Neyman, J., & Iwaszkiewicz, K. (1935). Statistical problems in
-      agricultural experimentation. Supplement to the Journal of the
-      Royal Statistical Society, 2(2), 107-180.
+Examples
+~~~~~~~~
 
-      Roemer, T. (1920). Der Feldversuch. Arbeiten der Deutschen
-      Landwirtschafts-Gesellschaft, 302.
-      https://www.google.com/books/edition/Arbeiten_der_Deutschen_Landwirtschafts_G/7zBSAQAAMAAJ
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
+     library(agridat)
+     
+     data(jegorow.oats.uniformity)
+     dat <- jegorow.oats.uniformity
+     
+     mean(dat$yield) # Jegorow reports 2.03
 
-      .. code:: R
+     libs(desplot)
+     desplot(dat, yield~col*row, 
+             aspect=10/24, flip=TRUE, tick=TRUE,
+             main="jegorow.oats.uniformity")
 
-         ## Not run: 
-           library(agridat)
-           
-           data(jegorow.oats.uniformity)
-           dat <- jegorow.oats.uniformity
-           
-           mean(dat$yield) # Jegorow reports 2.03
-
-           libs(desplot)
-           desplot(dat, yield~col*row, 
-                   aspect=10/24, flip=TRUE, tick=TRUE,
-                   main="jegorow.oats.uniformity")
-
-         ## End(Not run)
+   ## End(Not run)

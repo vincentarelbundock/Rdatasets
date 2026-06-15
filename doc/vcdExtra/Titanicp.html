@@ -25,18 +25,13 @@ individual identifier variables.
 </p>
 
 
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data(Titanicp)</code></pre>
-
-
 <h3>Format</h3>
 
 <p>A data frame with 1309 observations on the following 6 variables.
 </p>
 
 <dl>
-<dt><code>pclass</code></dt><dd><p>a factor with levels <code>1st</code> <code>2nd</code> <code>3rd</code></p>
+<dt><code>pclass</code></dt><dd><p>a factor with levels <code style="white-space: pre;">&#8288;1st&#8288;</code> <code style="white-space: pre;">&#8288;2nd&#8288;</code> <code style="white-space: pre;">&#8288;3rd&#8288;</code></p>
 </dd>
 <dt><code>survived</code></dt><dd><p>a factor with levels <code>died</code> <code>survived</code></p>
 </dd>
@@ -54,35 +49,40 @@ individual identifier variables.
 
 <h3>Details</h3>
 
-<p>There are a number of related versions of the Titanic data, in various formats.
-This version was derived from <code>ptitanic</code> in the <span class="pkg">rpart.plot</span> package,
-modifying it to remove the <code>Class 'labelled'</code> attributes for some variables
-(inherited from Frank Harrell's <code>titanic3</code> version)
-which caused problems with some applications, notably <code>ggplot2</code>.
+<p>There are a number of related versions of the Titanic data, in various
+formats. This version was derived from <code>ptitanic</code> in the
+<span class="pkg">rpart.plot</span> package, modifying it to remove the <code style="white-space: pre;">&#8288;Class 'labelled'&#8288;</code>
+attributes for some variables (inherited from Frank Harrell's
+<code>titanic3</code> version) which caused problems with some applications,
+notably <code>ggplot2</code>.
 </p>
 <p>Other versions:
 </p>
-<p><code>Titanic</code> is the 4-way frequency table of all 2201 people
-aboard the Titanic, including passengers and crew.
+<p><code>Titanic</code> is the 4-way frequency table of all 2201
+people aboard the Titanic, including passengers and crew.
 </p>
 
 
 <h3>Source</h3>
 
-<p>The original R source for this
-dataset was compiled by Frank Harrell and Robert Dawson
-<a href="https://hbiostat.org/data/repo/titanic.html">https://hbiostat.org/data/repo/titanic.html</a>.
+<p>The original R source for this dataset was compiled by Frank Harrell and
+Robert Dawson:
+<a href="https://hbiostat.org/data/repo/titanic.txt">https://hbiostat.org/data/repo/titanic.txt</a>,
+described in more detail in
+<a href="https://hbiostat.org/data/repo/titanic">https://hbiostat.org/data/repo/titanic</a>
 </p>
 <p>For this version of the Titanic data, passenger details were deleted,
-survived was cast as a factor, and the name changed to <code>Titanicp</code> to minimize confusion
-with other versions.
+survived was cast as a factor, and the name changed to <code>Titanicp</code> to
+minimize confusion with other versions.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(Titanicp)
+<pre><code class='language-R'>
+data(Titanicp)
 ## maybe str(Titanicp) ; plot(Titanicp) ...
+
 </code></pre>
 
 </main>

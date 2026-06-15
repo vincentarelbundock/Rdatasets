@@ -1,72 +1,67 @@
-.. container::
+======== ===============
+chevelon R Documentation
+======== ===============
 
-   .. container::
+Chevelon Ground Stone
+---------------------
 
-      ======== ===============
-      chevelon R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Chevelon Ground Stone
-         :name: chevelon-ground-stone
+A dataset of ground stone artifact counts from the Cholla project (USA).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset of ground stone artifact counts from the Cholla project
-      (USA).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   chevelon
 
-      .. code:: R
+Format
+~~~~~~
 
-         chevelon
+A ``data.frame`` with 12 observations (sites) and 10 variables (ground
+stone types):
 
-      .. rubric:: Format
-         :name: format
+BMe
+   ``integer``: basin metate.
 
-      A ``data.frame`` with 12 observations (sites) and 10 variables
-      (ground stone types):
+SMe
+   ``integer``: slab metate.
 
-      BMe
-         ``integer``: basin metate.
+TMe
+   ``integer``: Trough metate.
 
-      SMe
-         ``integer``: slab metate.
+IMe
+   ``integer``: indeterminate metate.
 
-      TMe
-         ``integer``: Trough metate.
+UMa
+   ``integer``: unifacial mano.
 
-      IMe
-         ``integer``: indeterminate metate.
+BMa
+   ``integer``: bifacial mano.
 
-      UMa
-         ``integer``: unifacial mano.
+MUHa
+   ``integer``: modified unifacial handstone.
 
-      BMa
-         ``integer``: bifacial mano.
+MBHa
+   ``integer``: modified bifacial handstone.
 
-      MUHa
-         ``integer``: modified unifacial handstone.
+UUHa
+   ``integer``: unmodified unifacial handstone.
 
-      MBHa
-         ``integer``: modified bifacial handstone.
+UBHa
+   ``integer``: unmodified bifacial handstone.
 
-      UUHa
-         ``integer``: unmodified unifacial handstone.
+Source
+~~~~~~
 
-      UBHa
-         ``integer``: unmodified bifacial handstone.
+Reid, J. J. (ed.) (1982). *Cholla Project Archaeology*. Vol. 2.
+Archaeological Series 161. Tucson: University of Arizona.
+`doi:10.6067/XCV8435710 <https://doi.org/10.6067/XCV8435710>`__
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      Reid, J. J. (ed.) (1982). *Cholla Project Archaeology*. Vol. 2.
-      Archaeological Series 161. Tucson: University of Arizona.
-      `doi:10.6067/XCV8435710 <https://doi.org/10.6067/XCV8435710>`__
-
-      .. rubric:: See Also
-         :name: see-also
-
-      Other count data: ``birds``, ``boves``, ``compiegne``, ``loire``,
-      ``merzbach``, ``mississippi``, ``zuni``
+Other count data: ``birds``, ``boves``, ``compiegne``, ``loire``,
+``merzbach``, ``mississippi``, ``zuni``

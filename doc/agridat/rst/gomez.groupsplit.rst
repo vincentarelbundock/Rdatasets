@@ -1,75 +1,72 @@
-.. container::
+================ ===============
+gomez.groupsplit R Documentation
+================ ===============
 
-   .. container::
+Group balanced split-plot design in rice
+----------------------------------------
 
-      ================ ===============
-      gomez.groupsplit R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Group balanced split-plot design in rice
-         :name: group-balanced-split-plot-design-in-rice
+Group balanced split-plot design in rice
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Group balanced split-plot design in rice
+A data frame with 270 observations on the following 7 variables.
 
-      .. rubric:: Format
-         :name: format
+``col``
+   column
 
-      A data frame with 270 observations on the following 7 variables.
+``row``
+   row
 
-      ``col``
-         column
+``rep``
+   replicate factor, 3 levels
 
-      ``row``
-         row
+``fert``
+   fertilizer factor, 2 levels
 
-      ``rep``
-         replicate factor, 3 levels
+``gen``
+   genotype factor, 45 levels
 
-      ``fert``
-         fertilizer factor, 2 levels
+``group``
+   grouping (genotype) factor, 3 levels
 
-      ``gen``
-         genotype factor, 45 levels
+``yield``
+   yield of rice
 
-      ``group``
-         grouping (genotype) factor, 3 levels
+Details
+~~~~~~~
 
-      ``yield``
-         yield of rice
+Genotype group S1 is less than 105 days growth duration, S2 is 105-115
+days growth duration, S3 is more than 115 days.
 
-      .. rubric:: Details
-         :name: details
+Used with permission of Kwanchai Gomez.
 
-      Genotype group S1 is less than 105 days growth duration, S2 is
-      105-115 days growth duration, S3 is more than 115 days.
+Source
+~~~~~~
 
-      Used with permission of Kwanchai Gomez.
+Gomez, K.A. and Gomez, A.A.. 1984, Statistical Procedures for
+Agricultural Research. Wiley-Interscience. Page 120.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Gomez, K.A. and Gomez, A.A.. 1984, Statistical Procedures for
-      Agricultural Research. Wiley-Interscience. Page 120.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   library(agridat)
+   data(gomez.groupsplit)
+   dat <- gomez.groupsplit
 
-         library(agridat)
-         data(gomez.groupsplit)
-         dat <- gomez.groupsplit
+   # Gomez figure 3.10.  Obvious fert and group effects
+   libs(desplot)
+   desplot(dat, group ~ col*row,
+           out1=rep, col=fert, text=gen, # aspect unknown
+           main="gomez.groupsplit")
 
-         # Gomez figure 3.10.  Obvious fert and group effects
-         libs(desplot)
-         desplot(dat, group ~ col*row,
-                 out1=rep, col=fert, text=gen, # aspect unknown
-                 main="gomez.groupsplit")
-
-         # Gomez table 3.19 (not partitioned by group)
-         m1 <- aov(yield ~ fert*group + gen:group + fert:gen:group +
-                     Error(rep/fert/group), data=dat)
-         summary(m1)
+   # Gomez table 3.19 (not partitioned by group)
+   m1 <- aov(yield ~ fert*group + gen:group + fert:gen:group +
+               Error(rep/fert/group), data=dat)
+   summary(m1)

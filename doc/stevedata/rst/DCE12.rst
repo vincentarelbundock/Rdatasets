@@ -1,118 +1,109 @@
-.. container::
+===== ===============
+DCE12 R Documentation
+===== ===============
 
-   .. container::
+Domestic Conflict Events, 2012
+------------------------------
 
-      ===== ===============
-      DCE12 R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Domestic Conflict Events, 2012
-         :name: domestic-conflict-events-2012
+A data set on domestic conflict events in 2012 as recorded by the
+Cross-National Time Series Database. Data exist for teaching about count
+models.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A data set on domestic conflict events in 2012 as recorded by the
-      Cross-National Time Series Database. Data exist for teaching about
-      count models.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   DCE12
 
-      .. code:: R
+Format
+~~~~~~
 
-         DCE12
+A data frame with 198 observations on the following 19 variables.
 
-      .. rubric:: Format
-         :name: format
+``iso2c``
+   a two-character ISO code
 
-      A data frame with 198 observations on the following 19 variables.
+``country``
+   a character name for the country corresponding with the ISO code
 
-      ``iso2c``
-         a two-character ISO code
+``assassinations``
+   the count of assassinations in 2012
 
-      ``country``
-         a character name for the country corresponding with the ISO
-         code
+``strikes``
+   the count of general strikes in 2012
 
-      ``assassinations``
-         the count of assassinations in 2012
+``guerwar``
+   the count of guerilla warfare events in 2012
 
-      ``strikes``
-         the count of general strikes in 2012
+``govtcrises``
+   the count of government crises in 2012
 
-      ``guerwar``
-         the count of guerilla warfare events in 2012
+``purges``
+   the count of purges in 2012
 
-      ``govtcrises``
-         the count of government crises in 2012
+``riots``
+   the count of riots in 2012
 
-      ``purges``
-         the count of purges in 2012
+``revolutions``
+   the count of revolutions in 2012
 
-      ``riots``
-         the count of riots in 2012
+``agd``
+   the count of anti-government demonstrations in 2012
 
-      ``revolutions``
-         the count of revolutions in 2012
+``wci``
+   the weighted conflict index in 2012
 
-      ``agd``
-         the count of anti-government demonstrations in 2012
+``area``
+   the land area in square kilometers
 
-      ``wci``
-         the weighted conflict index in 2012
+``adultpop``
+   the adult (15+) population (in 1000s)
 
-      ``area``
-         the land area in square kilometers
+``youthpop``
+   the youth (15-29) population (in 1000s)
 
-      ``adultpop``
-         the adult (15+) population (in 1000s)
+``gdppc``
+   GDP per capita (in constant 2015 USD)
 
-      ``youthpop``
-         the youth (15-29) population (in 1000s)
+``urbanshare``
+   urban population over total population (as percentage)
 
-      ``gdppc``
-         GDP per capita (in constant 2015 USD)
+``tpop``
+   total population (in 1000s)
 
-      ``urbanshare``
-         urban population over total population (as percentage)
+``polyarchy``
+   electoral democracy index, an estimate of democracy
 
-      ``tpop``
-         total population (in 1000s)
+``perctser``
+   percentage of tertiary school-aged population enrolled in tertiary
+   school
 
-      ``polyarchy``
-         electoral democracy index, an estimate of democracy
+Details
+~~~~~~~
 
-      ``perctser``
-         percentage of tertiary school-aged population enrolled in
-         tertiary school
+Conflict events data come from the Cross-National Time Series Database.
+I've used these data before for published papers, but the relative
+opacity of a data set for yearly purchase comes with a bit of a caveat
+emptor for the important question of real-world inference.
 
-      .. rubric:: Details
-         :name: details
+Data on the democracy estimate and tertiary school enrollment rate come
+from the Varieties of Democracy project. Democracy estimate for
+Palestine comes as a simple average of the two Palestinian territories
+collected by the Varieties of Democracy project. These are West Bank and
+Gaza. The tertiary school enrollment variable, which originally comes
+from a data project by Barro and Lee (2013), is "filled" to the referent
+year from the most recent year available in the data. That would be
+2010. It's fine for this purpose.
 
-      Conflict events data come from the Cross-National Time Series
-      Database. I've used these data before for published papers, but
-      the relative opacity of a data set for yearly purchase comes with
-      a bit of a caveat emptor for the important question of real-world
-      inference.
+Population estimates come from the UN Population Division. GDP per
+capita comes from the World Bank. The estimate of land area (in square
+kilometers) comes from the CNTS. Country name comes from CNTS as well.
 
-      Data on the democracy estimate and tertiary school enrollment rate
-      come from the Varieties of Democracy project. Democracy estimate
-      for Palestine comes as a simple average of the two Palestinian
-      territories collected by the Varieties of Democracy project. These
-      are West Bank and Gaza. The tertiary school enrollment variable,
-      which originally comes from a data project by Barro and Lee
-      (2013), is "filled" to the referent year from the most recent year
-      available in the data. That would be 2010. It's fine for this
-      purpose.
-
-      Population estimates come from the UN Population Division. GDP per
-      capita comes from the World Bank. The estimate of land area (in
-      square kilometers) comes from the CNTS. Country name comes from
-      CNTS as well.
-
-      In all but the case of the data from CNTS, and the "filled" case
-      of the tertiary school enrollment variable, the referent year for
-      the data is 2011. Not that anyone is going to care too much for a
-      simple data set like this, but this would be the ol' endogeneity
-      concern.
+In all but the case of the data from CNTS, and the "filled" case of the
+tertiary school enrollment variable, the referent year for the data is
+2011. Not that anyone is going to care too much for a simple data set
+like this, but this would be the ol' endogeneity concern.

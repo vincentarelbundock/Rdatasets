@@ -1,78 +1,72 @@
-.. container::
+============== ===============
+williams.trees R Documentation
+============== ===============
 
-   .. container::
+Multi-environment trial of trees, height / survival of 37 species at 6 sites in Thailand
+----------------------------------------------------------------------------------------
 
-      ============== ===============
-      williams.trees R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Multi-environment trial of trees, height / survival of
-         37 species at 6 sites in Thailand
-         :name: multi-environment-trial-of-trees-height-survival-of-37-species-at-6-sites-in-thailand
+Multi-environment trial of trees, height / survival of 37 species at 6
+sites in Thailand
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Multi-environment trial of trees, height / survival of 37 species
-      at 6 sites in Thailand
+A data frame with 222 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``env``
+   Environment factor, 6 levels
 
-      A data frame with 222 observations on the following 4 variables.
+``gen``
+   Genetic factor, 37 levels
 
-      ``env``
-         Environment factor, 6 levels
+``height``
+   Height (cm)
 
-      ``gen``
-         Genetic factor, 37 levels
+``survival``
+   Survival percentage
 
-      ``height``
-         Height (cm)
+Details
+~~~~~~~
 
-      ``survival``
-         Survival percentage
+Planted in 1985 at six sites in Thailand. RCB with 3 reps. The data here
+is the mean of the three reps. Plots were 5 meters square with spacing
+2m x 2m. Measurements collected at 24 months. The ``gen`` column in the
+data is actually *seedlot*, as some tree species have multiple seed
+lots. The trees are mostly acacia and eucalyptus.
 
-      .. rubric:: Details
-         :name: details
+Used with permission of Emlyn Williams.
 
-      Planted in 1985 at six sites in Thailand. RCB with 3 reps. The
-      data here is the mean of the three reps. Plots were 5 meters
-      square with spacing 2m x 2m. Measurements collected at 24 months.
-      The ``gen`` column in the data is actually *seedlot*, as some tree
-      species have multiple seed lots. The trees are mostly acacia and
-      eucalyptus.
+Source
+~~~~~~
 
-      Used with permission of Emlyn Williams.
+Williams, ER and Luangviriyasaeng, V. 1989. Statistical analysis of tree
+species trial and seedlot:site interaction in Thailand. Chapter 14 of
+*Trees for the Tropics: Growing Australian Multipurpose Trees and Shrubs
+in Developing Countries*. Pages 145–152.
+https://aciar.gov.au/publication/MN010
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Williams, ER and Luangviriyasaeng, V. 1989. Statistical analysis
-      of tree species trial and seedlot:site interaction in Thailand.
-      Chapter 14 of *Trees for the Tropics: Growing Australian
-      Multipurpose Trees and Shrubs in Developing Countries*. Pages
-      145–152. https://aciar.gov.au/publication/MN010
+E. R. Williams and A. C. Matheson and C. E Harwood, Experimental Design
+and Analysis for Tree Improvement. CSIRO Publishing, 2002.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      E. R. Williams and A. C. Matheson and C. E Harwood, Experimental
-      Design and Analysis for Tree Improvement. CSIRO Publishing, 2002.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(williams.trees)
+   dat <- williams.trees
 
-         ## Not run: 
+   libs(lattice)
+   xyplot(survival~height|env,dat, main="williams.trees", xlab="Height",
+   ylab="Percent surviving")
 
-         library(agridat)
-         data(williams.trees)
-         dat <- williams.trees
-
-         libs(lattice)
-         xyplot(survival~height|env,dat, main="williams.trees", xlab="Height",
-         ylab="Percent surviving")
-
-         ## End(Not run)
+   ## End(Not run)

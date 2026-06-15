@@ -1,109 +1,104 @@
-.. container::
+================== ===============
+houserace10_tbl_df R Documentation
+================== ===============
 
-   .. container::
+Election results for the 2010 U.S. House of Represenatives races
+----------------------------------------------------------------
 
-      ================== ===============
-      houserace10_tbl_df R Documentation
-      ================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Election results for the 2010 U.S. House of
-         Represenatives races
-         :name: election-results-for-the-2010-u.s.-house-of-represenatives-races
+The dataset name has been changed to 'houserace10_tbl_df' to avoid
+confusion with other packages in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a tibble. The original content of the dataset has not
+been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'houserace10_tbl_df' to avoid
-      confusion with other packages in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a tibble. The original
-      content of the dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(houserace10_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(houserace10_tbl_df)
+A tibble with 435 observations and 24 variables:
 
-      .. rubric:: Format
-         :name: format
+id
+   Unique race identifier (numeric).
 
-      A tibble with 435 observations and 24 variables:
+state
+   Name of the state (character).
 
-      id
-         Unique race identifier (numeric).
+abbr
+   State abbreviation (character).
 
-      state
-         Name of the state (character).
+num
+   District number (numeric).
 
-      abbr
-         State abbreviation (character).
+name1
+   Name of the first candidate (character).
 
-      num
-         District number (numeric).
+perc1
+   Percentage of votes for the first candidate (numeric).
 
-      name1
-         Name of the first candidate (character).
+party1
+   Party affiliation of the first candidate (character).
 
-      perc1
-         Percentage of votes for the first candidate (numeric).
+votes1
+   Number of votes for the first candidate (numeric).
 
-      party1
-         Party affiliation of the first candidate (character).
+name2
+   Name of the second candidate (character).
 
-      votes1
-         Number of votes for the first candidate (numeric).
+perc2
+   Percentage of votes for the second candidate (numeric).
 
-      name2
-         Name of the second candidate (character).
+party2
+   Party affiliation of the second candidate (character).
 
-      perc2
-         Percentage of votes for the second candidate (numeric).
+votes2
+   Number of votes for the second candidate (numeric).
 
-      party2
-         Party affiliation of the second candidate (character).
+name3
+   Name of the third candidate (character).
 
-      votes2
-         Number of votes for the second candidate (numeric).
+perc3
+   Percentage of votes for the third candidate (numeric).
 
-      name3
-         Name of the third candidate (character).
+party3
+   Party affiliation of the third candidate (character).
 
-      perc3
-         Percentage of votes for the third candidate (numeric).
+votes3
+   Number of votes for the third candidate (numeric).
 
-      party3
-         Party affiliation of the third candidate (character).
+name4
+   Name of the fourth candidate (character).
 
-      votes3
-         Number of votes for the third candidate (numeric).
+perc4
+   Percentage of votes for the fourth candidate (numeric).
 
-      name4
-         Name of the fourth candidate (character).
+party4
+   Party affiliation of the fourth candidate (character).
 
-      perc4
-         Percentage of votes for the fourth candidate (numeric).
+votes4
+   Number of votes for the fourth candidate (numeric).
 
-      party4
-         Party affiliation of the fourth candidate (character).
+name5
+   Name of the fifth candidate (character).
 
-      votes4
-         Number of votes for the fourth candidate (numeric).
+perc5
+   Percentage of votes for the fifth candidate (numeric).
 
-      name5
-         Name of the fifth candidate (character).
+party5
+   Party affiliation of the fifth candidate (character).
 
-      perc5
-         Percentage of votes for the fifth candidate (numeric).
+votes5
+   Number of votes for the fifth candidate (numeric).
 
-      party5
-         Party affiliation of the fifth candidate (character).
+Source
+~~~~~~
 
-      votes5
-         Number of votes for the fifth candidate (numeric).
-
-      .. rubric:: Source
-         :name: source
-
-      2010 U.S. House of Representatives Election Data
+2010 U.S. House of Representatives Election Data

@@ -1,68 +1,62 @@
-.. container::
+================ ===============
+mediacloud_trump R Documentation
+================ ===============
 
-   .. container::
+The Media Really Started Paying Attention to Puerto Rico When Trump Did
+-----------------------------------------------------------------------
 
-      ================ ===============
-      mediacloud_trump R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The Media Really Started Paying Attention to Puerto
-         Rico When Trump Did
-         :name: the-media-really-started-paying-attention-to-puerto-rico-when-trump-did
+The raw data behind the story "The Media Really Started Paying Attention
+to Puerto Rico When Trump Did"
+https://fivethirtyeight.com/features/the-media-really-started-paying-attention-to-puerto-rico-when-trump-did/:
+Mediacloud Trump Data.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "The Media Really Started Paying
-      Attention to Puerto Rico When Trump Did"
-      https://fivethirtyeight.com/features/the-media-really-started-paying-attention-to-puerto-rico-when-trump-did/:
-      Mediacloud Trump Data.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   mediacloud_trump
 
-      .. code:: R
+Format
+~~~~~~
 
-         mediacloud_trump
+A data frame with 51 rows representing dates and 7 variables:
 
-      .. rubric:: Format
-         :name: format
+date
+   Date
 
-      A data frame with 51 rows representing dates and 7 variables:
+puerto_rico
+   The number of headlines that mention Puerto Rico on the given date
 
-      date
-         Date
+puerto_rico_and_trump
+   The number of headlines that mention Puerto Rico and either President
+   or Trump
 
-      puerto_rico
-         The number of headlines that mention Puerto Rico on the given
-         date
+florida
+   The number of headlines that mention Florida
 
-      puerto_rico_and_trump
-         The number of headlines that mention Puerto Rico and either
-         President or Trump
+florida_and_trump
+   The number of headlines that mention Florida and either President or
+   Trump
 
-      florida
-         The number of headlines that mention Florida
+texas
+   The number of headlines that mention Texas
 
-      florida_and_trump
-         The number of headlines that mention Florida and either
-         President or Trump
+texas_and_trump
+   The number of headlines that mention Texas and either President or
+   Trump
 
-      texas
-         The number of headlines that mention Texas
+Source
+~~~~~~
 
-      texas_and_trump
-         The number of headlines that mention Texas and either President
-         or Trump
+Mediacloud https://mediacloud.org/
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      Mediacloud https://mediacloud.org/
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``mediacloud_hurricanes``, ``mediacloud_states``,
-      ``mediacloud_online_news``,\ ``tv_hurricanes``,
-      ``tv_hurricanes_by_network``, ``tv_states``, ``google_trends``
+``mediacloud_hurricanes``, ``mediacloud_states``,
+``mediacloud_online_news``,\ ``tv_hurricanes``,
+``tv_hurricanes_by_network``, ``tv_states``, ``google_trends``

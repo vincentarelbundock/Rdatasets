@@ -1,89 +1,85 @@
-.. container::
+======= ===============
+mad_men R Documentation
+======= ===============
 
-   .. container::
+"Mad Men" Is Ending. What's Next For The Cast?
+----------------------------------------------
 
-      ======= ===============
-      mad_men R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: "Mad Men" Is Ending. What's Next For The Cast?
-         :name: mad-men-is-ending.-whats-next-for-the-cast
+The raw data behind the story ""Mad Men" Is Ending. What's Next For The
+Cast?"
+https://fivethirtyeight.com/features/mad-men-is-ending-whats-next-for-the-cast/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story ""Mad Men" Is Ending. What's Next
-      For The Cast?"
-      https://fivethirtyeight.com/features/mad-men-is-ending-whats-next-for-the-cast/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   mad_men
 
-      .. code:: R
+Format
+~~~~~~
 
-         mad_men
+A data frame with 248 rows representing performers on TV shows and 15
+variables:
 
-      .. rubric:: Format
-         :name: format
+performer
+   The name of the actor, according to IMDb. This is not a unique
+   identifier - two performers appeared in more than one program
 
-      A data frame with 248 rows representing performers on TV shows and
-      15 variables:
+show
+   The television show where this actor appeared in more than half the
+   episodes
 
-      performer
-         The name of the actor, according to IMDb. This is not a unique
-         identifier - two performers appeared in more than one program
+show_start
+   The year the television show began
 
-      show
-         The television show where this actor appeared in more than half
-         the episodes
+show_end
+   The year the television show ended, "PRESENT" if the show remains on
+   the air as of May 10.
 
-      show_start
-         The year the television show began
+status
+   Why the actor is no longer on the program: "END" if the show has
+   concluded, "LEFT" if the show remains on the air.
 
-      show_end
-         The year the television show ended, "PRESENT" if the show
-         remains on the air as of May 10.
+charend
+   The year the character left the show. Equal to "Show End" if the
+   performer stayed on until the final season.
 
-      status
-         Why the actor is no longer on the program: "END" if the show
-         has concluded, "LEFT" if the show remains on the air.
+years_since
+   2015 minus CharEnd
 
-      charend
-         The year the character left the show. Equal to "Show End" if
-         the performer stayed on until the final season.
+num_lead
+   The number of leading roles in films the performer has appeared in
+   since and including "CharEnd", according to OpusData
 
-      years_since
-         2015 minus CharEnd
+num_support
+   The number of leading roles in films the performer has appeared in
+   since and including "CharEnd", according to OpusData
 
-      num_lead
-         The number of leading roles in films the performer has appeared
-         in since and including "CharEnd", according to OpusData
+num_shows
+   The number of seasons of television of which the performer appeared
+   in at least half the episodes since and including "CharEnd",
+   according to OpusData
 
-      num_support
-         The number of leading roles in films the performer has appeared
-         in since and including "CharEnd", according to OpusData
+score
+   #LEAD + #Shows + 0.25*(#SUPPORT)
 
-      num_shows
-         The number of seasons of television of which the performer
-         appeared in at least half the episodes since and including
-         "CharEnd", according to OpusData
+score_div_y
+   "Score" divided by "Years Since"
 
-      score
-         #LEAD + #Shows + 0.25*(#SUPPORT)
+lead_notes
+   The list of films counted in #LEAD
 
-      score_div_y
-         "Score" divided by "Years Since"
+support_notes
+   The list of films counted in #SUPPORT
 
-      lead_notes
-         The list of films counted in #LEAD
+show_notes
+   The seasons of shows counted in #Shows
 
-      support_notes
-         The list of films counted in #SUPPORT
+Source
+~~~~~~
 
-      show_notes
-         The seasons of shows counted in #Shows
-
-      .. rubric:: Source
-         :name: source
-
-      IMDB https://imdb.com
+IMDB https://imdb.com

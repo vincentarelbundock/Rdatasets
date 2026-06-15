@@ -1,46 +1,42 @@
-.. container::
+==== ===============
+Rail R Documentation
+==== ===============
 
-   .. container::
+Evaluation of Stress in Railway Rails
+-------------------------------------
 
-      ==== ===============
-      Rail R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Evaluation of Stress in Railway Rails
-         :name: evaluation-of-stress-in-railway-rails
+The ``Rail`` data frame has 18 rows and 2 columns.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      The ``Rail`` data frame has 18 rows and 2 columns.
+This data frame contains the following columns:
 
-      .. rubric:: Format
-         :name: format
+Rail
+   an ordered factor identifying the rail on which the measurement was
+   made.
 
-      This data frame contains the following columns:
+travel
+   a numeric vector giving the travel time for ultrasonic head-waves in
+   the rail (nanoseconds). The value given is the original travel time
+   minus 36,100 nanoseconds.
 
-      Rail
-         an ordered factor identifying the rail on which the measurement
-         was made.
+Details
+~~~~~~~
 
-      travel
-         a numeric vector giving the travel time for ultrasonic
-         head-waves in the rail (nanoseconds). The value given is the
-         original travel time minus 36,100 nanoseconds.
+Devore (2000, Example 10.10, p. 427) cites data from an article in
+*Materials Evaluation* on “a study of travel time for a certain type of
+wave that results from longitudinal stress of rails used for railroad
+track.”
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      Devore (2000, Example 10.10, p. 427) cites data from an article in
-      *Materials Evaluation* on “a study of travel time for a certain
-      type of wave that results from longitudinal stress of rails used
-      for railroad track.”
+Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in S and
+S-PLUS*, Springer, New York. (Appendix A.26)
 
-      .. rubric:: Source
-         :name: source
-
-      Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in
-      S and S-PLUS*, Springer, New York. (Appendix A.26)
-
-      Devore, J. L. (2000), *Probability and Statistics for Engineering
-      and the Sciences (5th ed)*, Duxbury, Boston, MA.
+Devore, J. L. (2000), *Probability and Statistics for Engineering and
+the Sciences (5th ed)*, Duxbury, Boston, MA.

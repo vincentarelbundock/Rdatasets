@@ -1,73 +1,67 @@
-.. container::
+==================== ===============
+WBreastCancer_tbl_df R Documentation
+==================== ===============
 
-   .. container::
+Women with Breast Cancer Study
+------------------------------
 
-      ==================== ===============
-      WBreastCancer_tbl_df R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Women with Breast Cancer Study
-         :name: women-with-breast-cancer-study
+This dataset, WBreastCancer_tbl_df, is a tibble containing data from a
+study among women with breast cancer. The dataset includes clinical and
+demographic variables for 1207 patients, providing valuable insights for
+breast cancer research and analysis.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, WBreastCancer_tbl_df, is a tibble containing data
-      from a study among women with breast cancer. The dataset includes
-      clinical and demographic variables for 1207 patients, providing
-      valuable insights for breast cancer research and analysis.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(WBreastCancer_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(WBreastCancer_tbl_df)
+A tibble with 1207 observations and 9 variables:
 
-      .. rubric:: Format
-         :name: format
+id
+   Unique identifier for each patient (numeric).
 
-      A tibble with 1207 observations and 9 variables:
+time
+   Time to the event or censoring (numeric).
 
-      id
-         Unique identifier for each patient (numeric).
+status
+   Event status: 1 if the event occurred, 0 if censored (numeric).
 
-      time
-         Time to the event or censoring (numeric).
+er
+   Estrogen receptor status (numeric).
 
-      status
-         Event status: 1 if the event occurred, 0 if censored (numeric).
+age
+   Age of the patient at the time of diagnosis (numeric).
 
-      er
-         Estrogen receptor status (numeric).
+histgrad
+   Histological grade of the tumor (numeric).
 
-      age
-         Age of the patient at the time of diagnosis (numeric).
+ln_yesno
+   Presence of lymph nodes: 1 if positive, 0 if negative (numeric).
 
-      histgrad
-         Histological grade of the tumor (numeric).
+pathsd
+   Pathological stage of the disease (numeric).
 
-      ln_yesno
-         Presence of lymph nodes: 1 if positive, 0 if negative
-         (numeric).
+pr
+   Progesterone receptor status (numeric).
 
-      pathsd
-         Pathological stage of the disease (numeric).
+Details
+~~~~~~~
 
-      pr
-         Progesterone receptor status (numeric).
+The dataset name has been kept as 'WBreastCancer_tbl_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the OncoDataSets package and
+assists users in identifying its specific characteristics. The original
+content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'WBreastCancer_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The original content has not been modified in any
-      way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the psfmi package.
+Data taken from the psfmi package.

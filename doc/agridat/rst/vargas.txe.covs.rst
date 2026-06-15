@@ -1,190 +1,186 @@
-.. container::
+========== ===============
+vargas.txe R Documentation
+========== ===============
 
-   .. container::
+Treatment x environment interaction in agronomy trials
+------------------------------------------------------
 
-      ========== ===============
-      vargas.txe R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Treatment x environment interaction in agronomy trials
-         :name: treatment-x-environment-interaction-in-agronomy-trials
+Treatment x environment interaction in agronomy trials
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Treatment x environment interaction in agronomy trials
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("vargas.txe.covs")
+   data("vargas.txe.yield")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("vargas.txe.covs")
-         data("vargas.txe.yield")
+The 'vargas.txe.covs' data has 10 years of measurements on 28
+environmental covariates:
 
-      .. rubric:: Format
-         :name: format
+``year``
+   year
 
-      The 'vargas.txe.covs' data has 10 years of measurements on 28
-      environmental covariates:
+``MTD``
+   mean maximum temperature in December
 
-      ``year``
-         year
+``MTJ``
+   mean maximum temperature in January
 
-      ``MTD``
-         mean maximum temperature in December
+``MTF``
+   mean maximum temperature in February
 
-      ``MTJ``
-         mean maximum temperature in January
+``MTM``
+   mean maximum temperature in March
 
-      ``MTF``
-         mean maximum temperature in February
+``MTA``
+   mean maximum temperature in April
 
-      ``MTM``
-         mean maximum temperature in March
+``mTD``
+   mean minimum temperature in December
 
-      ``MTA``
-         mean maximum temperature in April
+``mTJ``
+   mean minimum temperature in January
 
-      ``mTD``
-         mean minimum temperature in December
+``mTF``
+   mean minimum temperature in February
 
-      ``mTJ``
-         mean minimum temperature in January
+``mTM``
+   mean minimum temperature in March
 
-      ``mTF``
-         mean minimum temperature in February
+``mTA``
+   mean minimum temperature in April
 
-      ``mTM``
-         mean minimum temperature in March
+``mTUD``
+   mean minimum temperature in December
 
-      ``mTA``
-         mean minimum temperature in April
+``mTUJ``
+   mean minimum temperature in January
 
-      ``mTUD``
-         mean minimum temperature in December
+``mTUF``
+   mean minimum temperature in February
 
-      ``mTUJ``
-         mean minimum temperature in January
+``mTUM``
+   mean minimum temperature in March
 
-      ``mTUF``
-         mean minimum temperature in February
+``mTUA``
+   mean minimum temperature in April
 
-      ``mTUM``
-         mean minimum temperature in March
+``PRD``
+   total monthly precipitation in December
 
-      ``mTUA``
-         mean minimum temperature in April
+``PRJ``
+   total monthly precipitation in Jan
 
-      ``PRD``
-         total monthly precipitation in December
+``PRF``
+   total monthly precipitation in Feb
 
-      ``PRJ``
-         total monthly precipitation in Jan
+``PRM``
+   total monthly precipitation in Mar
 
-      ``PRF``
-         total monthly precipitation in Feb
+``SHD``
+   sun hours per day in Dec
 
-      ``PRM``
-         total monthly precipitation in Mar
+``SHJ``
+   sun hours per day in Jan
 
-      ``SHD``
-         sun hours per day in Dec
+``SHF``
+   sun hours per day in Feb
 
-      ``SHJ``
-         sun hours per day in Jan
+``EVD``
+   total monthly evaporation in Dec
 
-      ``SHF``
-         sun hours per day in Feb
+``EVJ``
+   total monthly evaporation in Jan
 
-      ``EVD``
-         total monthly evaporation in Dec
+``EVF``
+   total monthly evaporation in Feb
 
-      ``EVJ``
-         total monthly evaporation in Jan
+``EVM``
+   total monthly evaporation in Mar
 
-      ``EVF``
-         total monthly evaporation in Feb
+``EVA``
+   total monthly evaporation in Apr
 
-      ``EVM``
-         total monthly evaporation in Mar
+The 'vargas.txe.yield' dataframe contains 240 observations on three
+variables
 
-      ``EVA``
-         total monthly evaporation in Apr
+``year``
+   Year
 
-      The 'vargas.txe.yield' dataframe contains 240 observations on
-      three variables
+``trt``
+   Treatment. See details section
 
-      ``year``
-         Year
+``yield``
+   Grain yield, kg/ha
 
-      ``trt``
-         Treatment. See details section
+Details
+~~~~~~~
 
-      ``yield``
-         Grain yield, kg/ha
+The treatment names indicate:
 
-      .. rubric:: Details
-         :name: details
+= ==================
+T deep knife
+t no deep knife
+S sesbania
+s soybean
+M chicken manure
+m no chicken manure
+0 no nitrogen
+n 100 kg/ha nitrogen
+N 200 kg/ha nitrogen
+  
+= ==================
 
-      The treatment names indicate:
+Used with permission of Jose Crossa.
 
-      == ==================
-      T  deep knife
-      t  no deep knife
-      S  sesbania
-      s  soybean
-      M  chicken manure
-      m  no chicken manure
-      0  no nitrogen
-      n  100 kg/ha nitrogen
-      N  200 kg/ha nitrogen
-      \  
-      == ==================
+Source
+~~~~~~
 
-      Used with permission of Jose Crossa.
+Vargas, Mateo and Crossa, Jose and van Eeuwijk, Fred and Sayre, Kenneth
+D. and Reynolds, Matthew P. (2001). Interpreting Treatment x Environment
+Interaction in Agronomy Trials. Agron. J., 93, 949-960. Table A1, A3.
+https://doi.org/10.2134/agronj2001.934949x
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Vargas, Mateo and Crossa, Jose and van Eeuwijk, Fred and Sayre,
-      Kenneth D. and Reynolds, Matthew P. (2001). Interpreting Treatment
-      x Environment Interaction in Agronomy Trials. Agron. J., 93,
-      949-960. Table A1, A3. https://doi.org/10.2134/agronj2001.934949x
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
+     
+     library(agridat)
+     data(vargas.txe.covs)
+     data(vargas.txe.yield)
+     
+     libs(reshape2)
+     libs(lattice)
+     redblue <- colorRampPalette(c("firebrick", "lightgray", "#375997"))
+     Z <- vargas.txe.yield
+     Z <- acast(Z, year ~ trt, value.var='yield')
+     levelplot(Z, col.regions=redblue,
+               main="vargas.txe.yield", xlab="year", ylab="treatment",
+               scales=list(x=list(rot=90)))
+     
+     # Double-centered like AMMI
+     Z <- sweep(Z, 1, rowMeans(Z))
+     Z <- sweep(Z, 2, colMeans(Z))
+     # Vargas figure 1
+     biplot(prcomp(Z, scale.=FALSE), main="vargas.txe.yield")
 
-      .. code:: R
-
-         ## Not run: 
-           
-           library(agridat)
-           data(vargas.txe.covs)
-           data(vargas.txe.yield)
-           
-           libs(reshape2)
-           libs(lattice)
-           redblue <- colorRampPalette(c("firebrick", "lightgray", "#375997"))
-           Z <- vargas.txe.yield
-           Z <- acast(Z, year ~ trt, value.var='yield')
-           levelplot(Z, col.regions=redblue,
-                     main="vargas.txe.yield", xlab="year", ylab="treatment",
-                     scales=list(x=list(rot=90)))
-           
-           # Double-centered like AMMI
-           Z <- sweep(Z, 1, rowMeans(Z))
-           Z <- sweep(Z, 2, colMeans(Z))
-           # Vargas figure 1
-           biplot(prcomp(Z, scale.=FALSE), main="vargas.txe.yield")
-
-           # Now, PLS relating the two matrices
-           U <- vargas.txe.covs
-           U <- scale(U) # Standardized covariates
-           libs(pls)
-           m1 <- plsr(Z~U)
-           # Vargas Fig 2, flipped vertical/horizontal
-           biplot(m1, which="x", var.axes=TRUE)
+     # Now, PLS relating the two matrices
+     U <- vargas.txe.covs
+     U <- scale(U) # Standardized covariates
+     libs(pls)
+     m1 <- plsr(Z~U)
+     # Vargas Fig 2, flipped vertical/horizontal
+     biplot(m1, which="x", var.axes=TRUE)
 
 
-         ## End(Not run)
+   ## End(Not run)

@@ -1,92 +1,86 @@
-.. container::
+========== ===============
+nba_finals R Documentation
+========== ===============
 
-   .. container::
+NBA Finals History
+------------------
 
-      ========== ===============
-      nba_finals R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: NBA Finals History
-         :name: nba-finals-history
+This dataset contains information about the teams who played in the NBA
+Finals from 1950 - 2022.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains information about the teams who played in
-      the NBA Finals from 1950 - 2022.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   nba_finals
 
-      .. code:: R
+Format
+~~~~~~
 
-         nba_finals
+A data frame with 73 rows and 9 variables:
 
-      .. rubric:: Format
-         :name: format
+year
+   The year in which the Finals took place.
 
-      A data frame with 73 rows and 9 variables:
+winner
+   The team who won the series.
 
-      year
-         The year in which the Finals took place.
+western_wins
+   Number of series wins by the Western Conference Champions.
 
-      winner
-         The team who won the series.
+eastern_wins
+   Number of series wins by the Eastern Conference Champions.
 
-      western_wins
-         Number of series wins by the Western Conference Champions.
+western_champions
+   Team that won the Western Conference title and played in the Finals.
 
-      eastern_wins
-         Number of series wins by the Eastern Conference Champions.
+eastern_champions
+   Team that won the Eastern Conference title and played in the Finals.
 
-      western_champions
-         Team that won the Western Conference title and played in the
-         Finals.
+western_coach
+   Coach of the Western Conference champions.
 
-      eastern_champions
-         Team that won the Eastern Conference title and played in the
-         Finals.
+eastern_coach
+   Coach of the Eastern Conference champions.
 
-      western_coach
-         Coach of the Western Conference champions.
+home_court
+   Which conference held home court advantage for the series.
 
-      eastern_coach
-         Coach of the Eastern Conference champions.
+Source
+~~~~~~
 
-      home_court
-         Which conference held home court advantage for the series.
+`Wikipedia: List of NBA
+Champions <https://en.wikipedia.org/wiki/List_of_NBA_champions>`__
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      `Wikipedia: List of NBA
-      Champions <https://en.wikipedia.org/wiki/List_of_NBA_champions>`__
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   library(dplyr)
+   library(ggplot2)
+   library(tidyr)
 
-      .. code:: R
+   # Top 5 Appearing Coaches
+   nba_finals |>
+     pivot_longer(
+       cols = c("western_coach", "eastern_coach"),
+       names_to = "conference", values_to = "coach"
+     ) |>
+     count(coach, sort = TRUE) |>
+     slice_head(n = 5)
 
-         library(dplyr)
-         library(ggplot2)
-         library(tidyr)
-
-         # Top 5 Appearing Coaches
-         nba_finals |>
-           pivot_longer(
-             cols = c("western_coach", "eastern_coach"),
-             names_to = "conference", values_to = "coach"
-           ) |>
-           count(coach, sort = TRUE) |>
-           slice_head(n = 5)
-
-         # Top 5 Winning Coaches
-         nba_finals |>
-           mutate(
-             winning_coach = case_when(
-               western_wins == 4 ~ western_coach,
-               eastern_wins == 4 ~ eastern_coach
-             )
-           ) |>
-           count(winning_coach, sort = TRUE) |>
-           slice_head(n = 5)
+   # Top 5 Winning Coaches
+   nba_finals |>
+     mutate(
+       winning_coach = case_when(
+         western_wins == 4 ~ western_coach,
+         eastern_wins == 4 ~ eastern_coach
+       )
+     ) |>
+     count(winning_coach, sort = TRUE) |>
+     slice_head(n = 5)

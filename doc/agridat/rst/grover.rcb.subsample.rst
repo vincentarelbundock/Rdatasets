@@ -1,78 +1,73 @@
-.. container::
+==================== ===============
+grover.rcb.subsample R Documentation
+==================== ===============
 
-   .. container::
+Rice RCB with subsamples
+------------------------
 
-      ==================== ===============
-      grover.rcb.subsample R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Rice RCB with subsamples
-         :name: rice-rcb-with-subsamples
+An experiment on rice with 9 fertilizer treatments in 4 blocks, 4 hills
+per plot.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      An experiment on rice with 9 fertilizer treatments in 4 blocks, 4
-      hills per plot.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("grover.rcb.subsample")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("grover.rcb.subsample")
+A data frame with 144 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``tiller``
+   number of tillers
 
-      A data frame with 144 observations on the following 4 variables.
+``trt``
+   treatment factor
 
-      ``tiller``
-         number of tillers
+``block``
+   block factor
 
-      ``trt``
-         treatment factor
+``unit``
+   subsample unit
 
-      ``block``
-         block factor
+Details
+~~~~~~~
 
-      ``unit``
-         subsample unit
+An experiment on rice with 9 fertilizer treatments in 4 blocks, 4 hills
+per plot. The response variable is tiller count (per hill). The hills
+are sampling units.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      An experiment on rice with 9 fertilizer treatments in 4 blocks, 4
-      hills per plot. The response variable is tiller count (per hill).
-      The hills are sampling units.
+Grover, Deepak & Lajpat Rai (2010). Experimental Designing And Data
+Analysis In Agriculture And Biology. Agrotech Publishing Academy. Page
+85. https://archive.org/details/expldesnanddatanalinagblg00023
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Grover, Deepak & Lajpat Rai (2010). Experimental Designing And
-      Data Analysis In Agriculture And Biology. Agrotech Publishing
-      Academy. Page 85.
-      https://archive.org/details/expldesnanddatanalinagblg00023
+None.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
+     data(grover.rcb.subsample)
+     # Fixed-effects ANOVA. Matches Grover page 86.
+     anova(aov(tiller ~ block + trt + block:trt, data=grover.rcb.subsample))
+     ## Response: tiller
+     ##            Df Sum Sq Mean Sq F value  Pr(>F)    
+     ## block       3    930  310.01  3.6918 0.01415 *  
+     ## trt         8  11816 1477.00 17.5891 < 2e-16 ***
+     ## block:trt  24   4721  196.71  2.3425 0.00158 ** 
+     ## Residuals 108   9069   83.97                    
 
-      .. code:: R
-
-         ## Not run: 
-           data(grover.rcb.subsample)
-           # Fixed-effects ANOVA. Matches Grover page 86.
-           anova(aov(tiller ~ block + trt + block:trt, data=grover.rcb.subsample))
-           ## Response: tiller
-           ##            Df Sum Sq Mean Sq F value  Pr(>F)    
-           ## block       3    930  310.01  3.6918 0.01415 *  
-           ## trt         8  11816 1477.00 17.5891 < 2e-16 ***
-           ## block:trt  24   4721  196.71  2.3425 0.00158 ** 
-           ## Residuals 108   9069   83.97                    
-
-         ## End(Not run)
+   ## End(Not run)

@@ -1,53 +1,47 @@
-.. container::
+=============== ===============
+elecdemand_msts R Documentation
+=============== ===============
 
-   .. container::
+Half-Hourly and Daily Electricity Demand for Victoria, Australia, in 2014.
+--------------------------------------------------------------------------
 
-      =============== ===============
-      elecdemand_msts R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Half-Hourly and Daily Electricity Demand for Victoria,
-         Australia, in 2014.
-         :name: half-hourly-and-daily-electricity-demand-for-victoria-australia-in-2014.
+The dataset name has been changed to 'elecdemand_msts' to avoid
+confusion with other packages in the R ecosystem from which datasets
+have been sourced. The suffix 'msts' indicates that this dataset is a
+time series object with multiple seasonalities. This naming convention
+helps distinguish this dataset as part of the 'timeseriesdatasets'
+package and assists users in identifying its specific characteristics.
+The original content of the dataset has not been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'elecdemand_msts' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. The suffix 'msts' indicates that this
-      dataset is a time series object with multiple seasonalities. This
-      naming convention helps distinguish this dataset as part of the
-      'timeseriesdatasets' package and assists users in identifying its
-      specific characteristics. The original content of the dataset has
-      not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(elecdemand_msts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(elecdemand_msts)
+A time series object with multiple seasonalities and 17,520
+observations:
 
-      .. rubric:: Format
-         :name: format
+Demand
+   A numeric vector representing the half-hourly electricity demand in
+   megawatts (MW).
 
-      A time series object with multiple seasonalities and 17,520
-      observations:
+WorkDay
+   A binary vector indicating whether the half-hour period is on a
+   working day (1 = yes, 0 = no).
 
-      Demand
-         A numeric vector representing the half-hourly electricity
-         demand in megawatts (MW).
+Temperature
+   A numeric vector representing the half-hourly temperature in degrees
+   Celsius.
 
-      WorkDay
-         A binary vector indicating whether the half-hour period is on a
-         working day (1 = yes, 0 = no).
+Source
+~~~~~~
 
-      Temperature
-         A numeric vector representing the half-hourly temperature in
-         degrees Celsius.
-
-      .. rubric:: Source
-         :name: source
-
-      Data provided by the Australian Energy Market Operator (AEMO).
+Data provided by the Australian Energy Market Operator (AEMO).

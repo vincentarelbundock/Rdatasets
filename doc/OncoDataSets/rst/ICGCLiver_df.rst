@@ -1,64 +1,60 @@
-.. container::
+============ ===============
+ICGCLiver_df R Documentation
+============ ===============
 
-   .. container::
+ICGC Liver Cancer Data from Japan
+---------------------------------
 
-      ============ ===============
-      ICGCLiver_df R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: ICGC Liver Cancer Data from Japan
-         :name: icgc-liver-cancer-data-from-japan
+This dataset, ICGCLiver_df, is a data frame containing liver cancer data
+from Japan, released by the ICGC database. The dataset includes survival
+time, event status, and expression levels for four genes (ANLN, CENPA,
+GPR182, and BCO2).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, ICGCLiver_df, is a data frame containing liver
-      cancer data from Japan, released by the ICGC database. The dataset
-      includes survival time, event status, and expression levels for
-      four genes (ANLN, CENPA, GPR182, and BCO2).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(ICGCLiver_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(ICGCLiver_df)
+A data frame with 232 observations and 6 variables:
 
-      .. rubric:: Format
-         :name: format
+time
+   Survival time (numeric).
 
-      A data frame with 232 observations and 6 variables:
+status
+   Event status (1 = event occurred, 0 = censored) (integer).
 
-      time
-         Survival time (numeric).
+ANLN
+   Expression level of the ANLN gene (numeric).
 
-      status
-         Event status (1 = event occurred, 0 = censored) (integer).
+CENPA
+   Expression level of the CENPA gene (numeric).
 
-      ANLN
-         Expression level of the ANLN gene (numeric).
+GPR182
+   Expression level of the GPR182 gene (numeric).
 
-      CENPA
-         Expression level of the CENPA gene (numeric).
+BCO2
+   Expression level of the BCO2 gene (numeric).
 
-      GPR182
-         Expression level of the GPR182 gene (numeric).
+Details
+~~~~~~~
 
-      BCO2
-         Expression level of the BCO2 gene (numeric).
+The dataset name has been kept as 'ICGCLiver_df' to avoid confusion with
+other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the OncoDataSets package and assists
+users in identifying its specific characteristics. The suffix '\_df'
+indicates that the dataset is a data frame. The original content has not
+been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'ICGCLiver_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The suffix '\_df' indicates that the dataset is a
-      data frame. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the ggrisk package. ICGC (International Cancer
-      Genome Consortium) database. Liver cancer data from Japan.
+Data taken from the ggrisk package. ICGC (International Cancer Genome
+Consortium) database. Liver cancer data from Japan.

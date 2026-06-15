@@ -1,117 +1,112 @@
-.. container::
+================= ===============
+karcher.turfgrass R Documentation
+================= ===============
 
-   .. container::
+Turfgrass ratings for different treatments
+------------------------------------------
 
-      ================= ===============
-      karcher.turfgrass R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Turfgrass ratings for different treatments
-         :name: turfgrass-ratings-for-different-treatments
+Turfgrass ratings for different treatments
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Turfgrass ratings for different treatments
+A data frame with 128 observations on the following 6 variables.
 
-      .. rubric:: Format
-         :name: format
+``week``
+   week number
 
-      A data frame with 128 observations on the following 6 variables.
+``rep``
+   blocking factor
 
-      ``week``
-         week number
+``manage``
+   management factor, 4 levels
 
-      ``rep``
-         blocking factor
+``nitro``
+   nitrogen factor, 2 levels
 
-      ``manage``
-         management factor, 4 levels
+``rating``
+   turfgrass rating, 4 ordered levels
 
-      ``nitro``
-         nitrogen factor, 2 levels
+``count``
+   number of samples for a given rating
 
-      ``rating``
-         turfgrass rating, 4 ordered levels
+Details
+~~~~~~~
 
-      ``count``
-         number of samples for a given rating
+Turf color was assessed on a scale of Poor, Average, Good, Excellent.
 
-      .. rubric:: Details
-         :name: details
+The data are the number of times that a combination of management style
+and nitrogen level received a particular rating across four replicates
+and four sampling weeks. The eight treatments were in a completely
+randomized design.
 
-      Turf color was assessed on a scale of Poor, Average, Good,
-      Excellent.
+Nitrogen level 1 is 2.5 g/m^2, level 2 is 5 g/m^2.
 
-      The data are the number of times that a combination of management
-      style and nitrogen level received a particular rating across four
-      replicates and four sampling weeks. The eight treatments were in a
-      completely randomized design.
+Management 1 = N applied with no supplemental water injection.
 
-      Nitrogen level 1 is 2.5 g/m^2, level 2 is 5 g/m^2.
+M2 = surface applied with supplemental water injection.
 
-      Management 1 = N applied with no supplemental water injection.
+M3 = nitrogen injected 7.6 cm deep
 
-      M2 = surface applied with supplemental water injection.
+M4 = nitrogen injected 12.7 cm deep.
 
-      M3 = nitrogen injected 7.6 cm deep
+Source
+~~~~~~
 
-      M4 = nitrogen injected 12.7 cm deep.
+Schabenberger, Oliver and Francis J. Pierce. 2002. *Contemporary
+Statistical Models for the Plant and Soil Sciences*. CRC Press. Page
+380.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Schabenberger, Oliver and Francis J. Pierce. 2002. *Contemporary
-      Statistical Models for the Plant and Soil Sciences*. CRC Press.
-      Page 380.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(karcher.turfgrass)
+   dat <- karcher.turfgrass
 
-         ## Not run: 
+   dat$rating <- ordered(dat$rating, levels=c('Poor','Average', 'Good','Excellent'))
 
-         library(agridat)
-         data(karcher.turfgrass)
-         dat <- karcher.turfgrass
+   ftable(xtabs(~manage+nitro+rating, dat)) # Table 6.19 of Schabenberger
 
-         dat$rating <- ordered(dat$rating, levels=c('Poor','Average', 'Good','Excellent'))
+   # Probably would choose management M3, nitro N2
+   mosaicplot(xtabs(count ~ manage + rating + nitro, dat),
+              shade=TRUE, dir=c('h','v','h'),
+              main="karcher.turfgrass - turfgrass ratings")
 
-         ftable(xtabs(~manage+nitro+rating, dat)) # Table 6.19 of Schabenberger
+   # Multinomial logistic model.  Probit Ordered Logistic Regression.
+   libs(MASS)
+   m1 <- polr(rating ~ nitro*manage + week, dat, weights=count, Hess=TRUE, method='logistic')
+   summary(m1)
 
-         # Probably would choose management M3, nitro N2
-         mosaicplot(xtabs(count ~ manage + rating + nitro, dat),
-                    shade=TRUE, dir=c('h','v','h'),
-                    main="karcher.turfgrass - turfgrass ratings")
+   # Try to match the "predicted marginal probability distribution" of
+   # Schabenberger table 6.20.  He doesn't define "marginal".
+   # Are the interaction terms included before aggregation?
+   # Are 'margins' calculated before/after back-transforming?
+   # At what level is the covariate 'week' included?
 
-         # Multinomial logistic model.  Probit Ordered Logistic Regression.
-         libs(MASS)
-         m1 <- polr(rating ~ nitro*manage + week, dat, weights=count, Hess=TRUE, method='logistic')
-         summary(m1)
+   # Here is what Schabenberger presents:
+   ##        M1   M2   M3   M4  |   N1  N2
+   ## Poor  .668 .827 .001 .004 | .279 .020
+   ## Avg   .330 .172 .297 .525 | .712 .826
+   ## Good  .002 .001 .695 .008 | .008 .153
+   ## Exc   .000 .000 .007 .003 | .001 .001
 
-         # Try to match the "predicted marginal probability distribution" of
-         # Schabenberger table 6.20.  He doesn't define "marginal".
-         # Are the interaction terms included before aggregation?
-         # Are 'margins' calculated before/after back-transforming?
-         # At what level is the covariate 'week' included?
-
-         # Here is what Schabenberger presents:
-         ##        M1   M2   M3   M4  |   N1  N2
-         ## Poor  .668 .827 .001 .004 | .279 .020
-         ## Avg   .330 .172 .297 .525 | .712 .826
-         ## Good  .002 .001 .695 .008 | .008 .153
-         ## Exc   .000 .000 .007 .003 | .001 .001
-
-         ## We use week=3.5, include interactions, then average
-         newd <- expand.grid(manage=levels(dat$manage), nitro=levels(dat$nitro), week=3.5)
-         newd <- cbind(newd, predict(m1, newdata=newd, type='probs')) # probs)
-         print(aggregate( . ~ manage, data=newd, mean), digits=2)
-         ##   manage nitro week   Poor Average    Good Excellent
-         ## 1     M1   1.5  3.5 0.67      0.33 0.0011  0.0000023
-         ## 2     M2   1.5  3.5 0.76      0.24 0.00059 0.0000012
-         ## 3     M3   1.5  3.5 0.0023    0.48 0.52    0.0042
-         ## 4     M4   1.5  3.5 0.0086    0.57 0.42    0.0035
+   ## We use week=3.5, include interactions, then average
+   newd <- expand.grid(manage=levels(dat$manage), nitro=levels(dat$nitro), week=3.5)
+   newd <- cbind(newd, predict(m1, newdata=newd, type='probs')) # probs)
+   print(aggregate( . ~ manage, data=newd, mean), digits=2)
+   ##   manage nitro week   Poor Average    Good Excellent
+   ## 1     M1   1.5  3.5 0.67      0.33 0.0011  0.0000023
+   ## 2     M2   1.5  3.5 0.76      0.24 0.00059 0.0000012
+   ## 3     M3   1.5  3.5 0.0023    0.48 0.52    0.0042
+   ## 4     M4   1.5  3.5 0.0086    0.57 0.42    0.0035
 
 
-         ## End(Not run)
+   ## End(Not run)

@@ -1,115 +1,111 @@
-.. container::
+===================== ===============
+bose.multi.uniformity R Documentation
+===================== ===============
 
-   .. container::
+Uniformity trials of barley, wheat, lentils
+-------------------------------------------
 
-      ===================== ===============
-      bose.multi.uniformity R Documentation
-      ===================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trials of barley, wheat, lentils
-         :name: uniformity-trials-of-barley-wheat-lentils
+Uniformity trials of barley, wheat, lentils in India 1930-1932.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trials of barley, wheat, lentils in India 1930-1932.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("bose.multi.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("bose.multi.uniformity")
+A data frame with 1170 observations on the following 5 variables.
 
-      .. rubric:: Format
-         :name: format
+``year``
+   year
 
-      A data frame with 1170 observations on the following 5 variables.
+``crop``
+   crop
 
-      ``year``
-         year
+``row``
+   row ordinate
 
-      ``crop``
-         crop
+``col``
+   column ordinate
 
-      ``row``
-         row ordinate
+``yield``
+   yield per plot in grams
 
-      ``col``
-         column ordinate
+Details
+~~~~~~~
 
-      ``yield``
-         yield per plot in grams
+A field about 1/4 acre was sown in three consecutive years (beginning in
+1929-1930) with barley, wheat, and lentil.
 
-      .. rubric:: Details
-         :name: details
+At harvest, borders 3 feet on east and west and 6 feet on north and
+south were removed. The field was divided into plots four feet square,
+which were harvested separately, measured in grams.
 
-      A field about 1/4 acre was sown in three consecutive years
-      (beginning in 1929-1930) with barley, wheat, and lentil.
+Fertility contours of the field were somewhat similar across years, with
+correlation values across years 0.45, 0.48, 0.21.
 
-      At harvest, borders 3 feet on east and west and 6 feet on north
-      and south were removed. The field was divided into plots four feet
-      square, which were harvested separately, measured in grams.
+Field width: 15 plots \* 4 feet = 60 feet.
 
-      Fertility contours of the field were somewhat similar across
-      years, with correlation values across years 0.45, 0.48, 0.21.
+Field length: 26 plots \* 4 feet = 104 feet.
 
-      Field width: 15 plots \* 4 feet = 60 feet.
+Conclusions:
 
-      Field length: 26 plots \* 4 feet = 104 feet.
+"An experimental field which may be sensibly uniform for one crop or for
+one season may not be so for another crop or in a different season" p.
+592.
 
-      Conclusions:
+Source
+~~~~~~
 
-      "An experimental field which may be sensibly uniform for one crop
-      or for one season may not be so for another crop or in a different
-      season" p. 592.
+Bose, R. D. (1935). Some soil heterogeneity trials at Pusa and the size
+and shape of experimental plots. Ind. J. Agric. Sci., 5, 579-608. Table
+1 (p. 585), Table 4 (p. 589), Table 5 (p. 590).
+https://archive.org/details/in.ernet.dli.2015.271739
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Bose, R. D. (1935). Some soil heterogeneity trials at Pusa and the
-      size and shape of experimental plots. Ind. J. Agric. Sci., 5,
-      579-608. Table 1 (p. 585), Table 4 (p. 589), Table 5 (p. 590).
-      https://archive.org/details/in.ernet.dli.2015.271739
+Shaw (1935). Handbook of Statistics for Use in Plant-Breeding and
+Agricultural Problems, p. 149-170.
+https://krishikosh.egranth.ac.in/handle/1/21153
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Shaw (1935). Handbook of Statistics for Use in Plant-Breeding and
-      Agricultural Problems, p. 149-170.
-      https://krishikosh.egranth.ac.in/handle/1/21153
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+     library(agridat)
+     data(bose.multi.uniformity)
+     dat <- bose.multi.uniformity
 
-         ## Not run: 
+     # match sum at bottom of Bose tables 1, 4, 5
+     # library(dplyr)
+     # dat 
 
-           library(agridat)
-           data(bose.multi.uniformity)
-           dat <- bose.multi.uniformity
+     libs(desplot, dplyr)
+     # Calculate percent of mean yield for each year
+     dat <- group_by(dat, year)
+     dat <- mutate(dat, pctyld = (yield-mean(yield))/mean(yield))
 
-           # match sum at bottom of Bose tables 1, 4, 5
-           # library(dplyr)
-           # dat 
-
-           libs(desplot, dplyr)
-           # Calculate percent of mean yield for each year
-           dat <- group_by(dat, year)
-           dat <- mutate(dat, pctyld = (yield-mean(yield))/mean(yield))
-
-           dat <- ungroup(dat)
-           dat <- mutate(dat, year=as.character(year))
-           # Bose smoothed the data by averaging 2x3 plots together before drawing
-           # contour maps.  Heatmaps of raw data have similar structure to Bose Fig 1.
-           desplot(dat, pctyld ~ col*row|year,
-                   tick=TRUE, flip=TRUE, aspect=(26)/(15),
-                   main="bose.multi.* - Percent of mean yield")
-           
-           # contourplot() results need to be mentally flipped upside down
-           # contourplot(pctyld ~ col*row|year, dat,
-           #   region=TRUE, as.table=TRUE, aspect=26/15)
+     dat <- ungroup(dat)
+     dat <- mutate(dat, year=as.character(year))
+     # Bose smoothed the data by averaging 2x3 plots together before drawing
+     # contour maps.  Heatmaps of raw data have similar structure to Bose Fig 1.
+     desplot(dat, pctyld ~ col*row|year,
+             tick=TRUE, flip=TRUE, aspect=(26)/(15),
+             main="bose.multi.* - Percent of mean yield")
+     
+     # contourplot() results need to be mentally flipped upside down
+     # contourplot(pctyld ~ col*row|year, dat,
+     #   region=TRUE, as.table=TRUE, aspect=26/15)
 
 
-         ## End(Not run)
+   ## End(Not run)

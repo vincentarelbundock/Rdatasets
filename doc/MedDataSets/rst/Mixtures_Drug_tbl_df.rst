@@ -1,55 +1,51 @@
-.. container::
+==================== ===============
+Mixtures_Drug_tbl_df R Documentation
+==================== ===============
 
-   .. container::
+Drug Mixture
+------------
 
-      ==================== ===============
-      Mixtures_Drug_tbl_df R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Drug Mixture
-         :name: drug-mixture
+The dataset name has been changed to 'Mixtures_Drug_tbl_df' to avoid
+confusion with other datasets from packages in the R ecosystem and to
+follow the naming conventions of the 'MedDataSets' package. The suffix
+'\_tbl_df' indicates that this dataset is a tibble, helping to
+distinguish it from other datasets within the package and from those in
+the broader R ecosystem. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'Mixtures_Drug_tbl_df' to
-      avoid confusion with other datasets from packages in the R
-      ecosystem and to follow the naming conventions of the
-      'MedDataSets' package. The suffix '\_tbl_df' indicates that this
-      dataset is a tibble, helping to distinguish it from other datasets
-      within the package and from those in the broader R ecosystem. The
-      original content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Mixtures_Drug_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Mixtures_Drug_tbl_df)
+A tibble with 819 observations and 3 variables:
 
-      .. rubric:: Format
-         :name: format
+name
+   Name of the drug mixture (character).
 
-      A tibble with 819 observations and 3 variables:
+ingredients
+   Ingredients that make up the drug mixture (character).
 
-      name
-         Name of the drug mixture (character).
+parent_key
+   Identifier linking the mixture to its parent compound or category
+   (character).
 
-      ingredients
-         Ingredients that make up the drug mixture (character).
+Details
+~~~~~~~
 
-      parent_key
-         Identifier linking the mixture to its parent compound or
-         category (character).
+This dataset provides information about various drug mixtures, including
+their names and ingredients.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset provides information about various drug mixtures,
-      including their names and ingredients.
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset is derived from publicly available pharmaceutical
-      databases and research studies.
+The dataset is derived from publicly available pharmaceutical databases
+and research studies.

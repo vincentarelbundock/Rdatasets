@@ -1,65 +1,59 @@
-.. container::
+================= ===============
+corruption_tbl_df R Documentation
+================= ===============
 
-   .. container::
+China's Corruption Investigations
+---------------------------------
 
-      ================= ===============
-      corruption_tbl_df R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: China's Corruption Investigations
-         :name: chinas-corruption-investigations
+This dataset contains information on nearly 20,000 officials who were
+investigated during Xi Jinping's anti-corruption campaign. It provides
+data on the province, prefecture, and county where the investigations
+occurred, as well as unique identifiers for each administrative level.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains information on nearly 20,000 officials who
-      were investigated during Xi Jinping's anti-corruption campaign. It
-      provides data on the province, prefecture, and county where the
-      investigations occurred, as well as unique identifiers for each
-      administrative level.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(corruption_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(corruption_tbl_df)
+A tibble with 10 observations and 6 variables:
 
-      .. rubric:: Format
-         :name: format
+province
+   2-digit province number (numeric).
 
-      A tibble with 10 observations and 6 variables:
+prefecture
+   Prefecture name in Chinese (character).
 
-      province
-         2-digit province number (numeric).
+county
+   County name in Chinese (character).
 
-      prefecture
-         Prefecture name in Chinese (character).
+province_id
+   6-digit province identifier (numeric).
 
-      county
-         County name in Chinese (character).
+prefecture_id
+   6-digit prefecture identifier (numeric).
 
-      province_id
-         6-digit province identifier (numeric).
+county_id
+   6-digit county identifier (numeric).
 
-      prefecture_id
-         6-digit prefecture identifier (numeric).
+Details
+~~~~~~~
 
-      county_id
-         6-digit county identifier (numeric).
+The dataset name has been changed to 'corruption_tbl_df' to avoid
+confusion with other data sets in the R ecosystem. This naming
+convention helps distinguish this dataset as part of the crimedatasets
+package and assists users in identifying its specific characteristics.
+The suffix 'tbl_df' indicates that the dataset is a tibble in R. The
+original content has not been modified in any way
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been changed to 'corruption_tbl_df' to avoid
-      confusion with other data sets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      crimedatasets package and assists users in identifying its
-      specific characteristics. The suffix 'tbl_df' indicates that the
-      dataset is a tibble in R. The original content has not been
-      modified in any way
-
-      .. rubric:: Source
-         :name: source
-
-      Data from China's anti-corruption campaign investigations.
+Data from China's anti-corruption campaign investigations.

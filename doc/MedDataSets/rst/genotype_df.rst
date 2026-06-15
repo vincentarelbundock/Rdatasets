@@ -1,54 +1,49 @@
-.. container::
+=========== ===============
+genotype_df R Documentation
+=========== ===============
 
-   .. container::
+Rat Genotype Data
+-----------------
 
-      =========== ===============
-      genotype_df R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Rat Genotype Data
-         :name: rat-genotype-data
+The dataset name has been changed to 'genotype_df' to avoid confusion
+with other datasets from packages in the R ecosystem and to follow the
+naming conventions of the 'MedDataSets' package. The suffix '\_df'
+indicates that this dataset is a data frame, helping to distinguish it
+from other datasets within the package and from those in the broader R
+ecosystem. The original content of the dataset has not been modified in
+any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'genotype_df' to avoid
-      confusion with other datasets from packages in the R ecosystem and
-      to follow the naming conventions of the 'MedDataSets' package. The
-      suffix '\_df' indicates that this dataset is a data frame, helping
-      to distinguish it from other datasets within the package and from
-      those in the broader R ecosystem. The original content of the
-      dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(genotype_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(genotype_df)
+A data frame with 61 observations and 3 variables:
 
-      .. rubric:: Format
-         :name: format
+Litter
+   A factor indicating the litter group (with 4 possible levels).
 
-      A data frame with 61 observations and 3 variables:
+Mother
+   A factor indicating the mother of the rats (with 4 possible levels).
 
-      Litter
-         A factor indicating the litter group (with 4 possible levels).
+Wt
+   A numeric value representing the weight of the rats (in grams).
 
-      Mother
-         A factor indicating the mother of the rats (with 4 possible
-         levels).
+Details
+~~~~~~~
 
-      Wt
-         A numeric value representing the weight of the rats (in grams).
+This dataset contains genotype data from rats, including information on
+litter, maternal lineage, and weight measurements.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains genotype data from rats, including
-      information on litter, maternal lineage, and weight measurements.
-
-      .. rubric:: Source
-         :name: source
-
-      Data collected from genetic studies involving rat populations.
+Data collected from genetic studies involving rat populations.

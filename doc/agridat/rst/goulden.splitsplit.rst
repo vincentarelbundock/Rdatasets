@@ -1,123 +1,118 @@
-.. container::
+================== ===============
+goulden.splitsplit R Documentation
+================== ===============
 
-   .. container::
+Split-split-plot experiment of wheat
+------------------------------------
 
-      ================== ===============
-      goulden.splitsplit R Documentation
-      ================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Split-split-plot experiment of wheat
-         :name: split-split-plot-experiment-of-wheat
+Split-split-plot experiment of wheat
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Split-split-plot experiment of wheat
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("goulden.splitsplit")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("goulden.splitsplit")
+A data frame with 160 observations on the following 9 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row
 
-      A data frame with 160 observations on the following 9 variables.
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   yield
 
-      ``col``
-         column
+``inoc``
+   inoculate
 
-      ``yield``
-         yield
+``trt``
+   treatment number
 
-      ``inoc``
-         inoculate
+``gen``
+   genotype
 
-      ``trt``
-         treatment number
+``dry``
+   dry/wet dust application
 
-      ``gen``
-         genotype
+``dust``
+   dust treatment
 
-      ``dry``
-         dry/wet dust application
+``block``
+   block
 
-      ``dust``
-         dust treatment
+Details
+~~~~~~~
 
-      ``block``
-         block
+An interesting split-split plot experiment in which the sub-plot
+treatments have a 2*5 factorial structure.
 
-      .. rubric:: Details
-         :name: details
+An experiment was conducted in 1932 on the experimental field of the
+Dominion Rust Research Laboratory. The study was designed to determine
+the effect on the incidence of root rot, of variety of wheat, kinds of
+dust for seed treatment, method of application of the dust, and efficacy
+of soil inoculation with the root-rot organism.
 
-      An interesting split-split plot experiment in which the sub-plot
-      treatments have a 2*5 factorial structure.
+The field had 4 blocks.
 
-      An experiment was conducted in 1932 on the experimental field of
-      the Dominion Rust Research Laboratory. The study was designed to
-      determine the effect on the incidence of root rot, of variety of
-      wheat, kinds of dust for seed treatment, method of application of
-      the dust, and efficacy of soil inoculation with the root-rot
-      organism.
+Each block has 2 whole plots for the genotypes.
 
-      The field had 4 blocks.
+Each whole-plot had 10 sub-plots for the 5 different kinds of dust and 2
+methods of application.
 
-      Each block has 2 whole plots for the genotypes.
+Each sub-plot had 2 sub-sub-plots, one for inoculated soil and the other
+one for uninoculated soil.
 
-      Each whole-plot had 10 sub-plots for the 5 different kinds of dust
-      and 2 methods of application.
+Source
+~~~~~~
 
-      Each sub-plot had 2 sub-sub-plots, one for inoculated soil and the
-      other one for uninoculated soil.
+C. H. Goulden, (1939). *Methods of statistical analysis*, 1st ed. Page
+18. https://archive.org/stream/methodsofstatist031744mbp
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      C. H. Goulden, (1939). *Methods of statistical analysis*, 1st ed.
-      Page 18. https://archive.org/stream/methodsofstatist031744mbp
+None
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(goulden.splitsplit)
+   dat <- goulden.splitsplit
 
-         ## Not run: 
+   libs(desplot)
 
-         library(agridat)
-         data(goulden.splitsplit)
-         dat <- goulden.splitsplit
+   ## Experiment design. Goulden p. 152-153
+   ## desplot(gen ~ col*row, data=dat,
+   ##         out1=block, out2=trt, text=dust, col=inoc, cex=1,
+   ##         main="goulden.splitsplit")
 
-         libs(desplot)
-
-         ## Experiment design. Goulden p. 152-153
-         ## desplot(gen ~ col*row, data=dat,
-         ##         out1=block, out2=trt, text=dust, col=inoc, cex=1,
-         ##         main="goulden.splitsplit")
-
-         desplot(dat, yield ~ col*row, 
-                 out1=block, out2=gen,
-                 col=inoc, num=trt, cex=1,
-                 main="goulden.splitsplit")
+   desplot(dat, yield ~ col*row, 
+           out1=block, out2=gen,
+           col=inoc, num=trt, cex=1,
+           main="goulden.splitsplit")
 
 
-         # Match Goulden table 40
-         m1 <- aov(yield ~ gen
-                   + dust + dry + dust:dry + gen:dust + gen:dry + gen:dust:dry
-                   + inoc + inoc:gen + inoc:dust + inoc:dry
-                   + inoc:dust:dry +inoc:gen:dust + inoc:gen:dry
-                   + Error(block/(gen+gen:dust:dry+gen:inoc:dry)), data=dat)
-         summary(m1)
+   # Match Goulden table 40
+   m1 <- aov(yield ~ gen
+             + dust + dry + dust:dry + gen:dust + gen:dry + gen:dust:dry
+             + inoc + inoc:gen + inoc:dust + inoc:dry
+             + inoc:dust:dry +inoc:gen:dust + inoc:gen:dry
+             + Error(block/(gen+gen:dust:dry+gen:inoc:dry)), data=dat)
+   summary(m1)
 
 
-         ## End(Not run)
+   ## End(Not run)

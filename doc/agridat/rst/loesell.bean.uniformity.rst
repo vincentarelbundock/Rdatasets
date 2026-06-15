@@ -1,83 +1,79 @@
-.. container::
+======================= ===============
+loesell.bean.uniformity R Documentation
+======================= ===============
 
-   .. container::
+Uniformity trial of white pea beans
+-----------------------------------
 
-      ======================= ===============
-      loesell.bean.uniformity R Documentation
-      ======================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of white pea beans
-         :name: uniformity-trial-of-white-pea-beans
+Uniformity trial of white pea beans
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of white pea beans
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("loesell.bean.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("loesell.bean.uniformity")
+A data frame with 1890 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row ordinate
 
-      A data frame with 1890 observations on the following 3 variables.
+``col``
+   column ordinate
 
-      ``row``
-         row ordinate
+``yield``
+   yield, grams per plot
 
-      ``col``
-         column ordinate
+Details
+~~~~~~~
 
-      ``yield``
-         yield, grams per plot
+Trial conducted at Michigan Agricultural Experiment Station, 1.75 acres.
+Beans were planted in rows 28 inches apart on 15 Jun 1932. Plants spaced
+1 to 2 inches apart. After planting, an area 210 ft x 210 feet. This
+area was divided into 21 columns, each 10 foot wide, and each
+containing90 rows.
 
-      .. rubric:: Details
-         :name: details
+Field length: 90 rows \* 28 inches = 210 feet.
 
-      Trial conducted at Michigan Agricultural Experiment Station, 1.75
-      acres. Beans were planted in rows 28 inches apart on 15 Jun 1932.
-      Plants spaced 1 to 2 inches apart. After planting, an area 210 ft
-      x 210 feet. This area was divided into 21 columns, each 10 foot
-      wide, and each containing90 rows.
+Field width: 21 series \* 10 feet = 210 feet.
 
-      Field length: 90 rows \* 28 inches = 210 feet.
+Author's conclusion: Increasing the size of the plot by increasing its
+length was more efficient than increasing its width.
 
-      Field width: 21 series \* 10 feet = 210 feet.
+Note, the missing values in this dataset are a result of the PDF scan
+omitting corners of the table.
 
-      Author's conclusion: Increasing the size of the plot by increasing
-      its length was more efficient than increasing its width.
+Source
+~~~~~~
 
-      Note, the missing values in this dataset are a result of the PDF
-      scan omitting corners of the table.
+Loesell, Clarence (1936). Size of plot & number of replications
+necessary for varietal trials with white pea beans. PhD Thesis, Michigan
+State. Table 3, p. 9-10. https://d.lib.msu.edu/etd/5271
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Loesell, Clarence (1936). Size of plot & number of replications
-      necessary for varietal trials with white pea beans. PhD Thesis,
-      Michigan State. Table 3, p. 9-10. https://d.lib.msu.edu/etd/5271
+None
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
+     require(agridat)
+     data(loesell.bean.uniformity)
+     dat <- loesell.bean.uniformity
+     require(desplot)
+     desplot(dat, yield ~ col*row,
+             flip=TRUE, aspect=1, tick=TRUE,
+             main="loesell.bean.uniformity")
 
-      .. code:: R
-
-         ## Not run: 
-           require(agridat)
-           data(loesell.bean.uniformity)
-           dat <- loesell.bean.uniformity
-           require(desplot)
-           desplot(dat, yield ~ col*row,
-                   flip=TRUE, aspect=1, tick=TRUE,
-                   main="loesell.bean.uniformity")
-
-         ## End(Not run)
+   ## End(Not run)

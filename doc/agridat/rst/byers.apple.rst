@@ -1,90 +1,86 @@
-.. container::
+=========== ===============
+byers.apple R Documentation
+=========== ===============
 
-   .. container::
+Diameters of apples
+-------------------
 
-      =========== ===============
-      byers.apple R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Diameters of apples
-         :name: diameters-of-apples
+Measurements of the diameters of apples
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Measurements of the diameters of apples
+A data frame with 480 observations on the following 6 variables.
 
-      .. rubric:: Format
-         :name: format
+``tree``
+   tree, 10 levels
 
-      A data frame with 480 observations on the following 6 variables.
+``apple``
+   apple, 24 levels
 
-      ``tree``
-         tree, 10 levels
+``size``
+   size of apple
 
-      ``apple``
-         apple, 24 levels
+``appleid``
+   unique id number for each apple
 
-      ``size``
-         size of apple
+``time``
+   time period, 1-6 = (week/2)
 
-      ``appleid``
-         unique id number for each apple
+``diameter``
+   diameter, inches
 
-      ``time``
-         time period, 1-6 = (week/2)
+Details
+~~~~~~~
 
-      ``diameter``
-         diameter, inches
+Experiment conducted at the Winchester Agricultural Experiment Station
+of Virginia Polytechnic Institute and State University. Twentyfive
+apples were chosen from each of ten apple trees.
 
-      .. rubric:: Details
-         :name: details
+Of these, there were 80 apples in the largest size class, 2.75 inches in
+diameter or greater.
 
-      Experiment conducted at the Winchester Agricultural Experiment
-      Station of Virginia Polytechnic Institute and State University.
-      Twentyfive apples were chosen from each of ten apple trees.
+The diameters of the apples were recorded every two weeks over a 12-week
+period.
 
-      Of these, there were 80 apples in the largest size class, 2.75
-      inches in diameter or greater.
+Source
+~~~~~~
 
-      The diameters of the apples were recorded every two weeks over a
-      12-week period.
+Schabenberger, Oliver and Francis J. Pierce. 2002. *Contemporary
+Statistical Models for the Plant and Soil Sciences*. CRC Press, Boca
+Raton, FL.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Schabenberger, Oliver and Francis J. Pierce. 2002. *Contemporary
-      Statistical Models for the Plant and Soil Sciences*. CRC Press,
-      Boca Raton, FL.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
+     
+     library(agridat)
+     data(byers.apple)
+     dat <- byers.apple
 
-      .. code:: R
+     libs(lattice)
+     xyplot(diameter ~ time | factor(appleid), data=dat, type=c('p','l'),
+            strip=strip.custom(par.strip.text=list(cex=.7)),
+            main="byers.apple")
 
-         ## Not run: 
-           
-           library(agridat)
-           data(byers.apple)
-           dat <- byers.apple
+     # Overall fixed linear trend, plus random intercept/slope deviations
+     # for each apple.  Observations within each apple are correlated.
+     libs(nlme)
+     libs(lucid)
+     m1 <- lme(diameter ~ 1 + time, data=dat,
+               random = ~ time|appleid, method='ML',
+               cor = corAR1(0, form=~ time|appleid),
+               na.action=na.omit)
+     vc(m1)
+     ##       effect   variance   stddev corr
+     ##  (Intercept) 0.007354   0.08575    NA
+     ##         time 0.00003632 0.006027 0.83
+     ##     Residual 0.0004555  0.02134    NA
 
-           libs(lattice)
-           xyplot(diameter ~ time | factor(appleid), data=dat, type=c('p','l'),
-                  strip=strip.custom(par.strip.text=list(cex=.7)),
-                  main="byers.apple")
-
-           # Overall fixed linear trend, plus random intercept/slope deviations
-           # for each apple.  Observations within each apple are correlated.
-           libs(nlme)
-           libs(lucid)
-           m1 <- lme(diameter ~ 1 + time, data=dat,
-                     random = ~ time|appleid, method='ML',
-                     cor = corAR1(0, form=~ time|appleid),
-                     na.action=na.omit)
-           vc(m1)
-           ##       effect   variance   stddev corr
-           ##  (Intercept) 0.007354   0.08575    NA
-           ##         time 0.00003632 0.006027 0.83
-           ##     Residual 0.0004555  0.02134    NA
-
-         ## End(Not run)
+   ## End(Not run)

@@ -1,65 +1,59 @@
-.. container::
+=================== ===============
+babies_crawl_tbl_df R Documentation
+=================== ===============
 
-   .. container::
+Crawling Age
+------------
 
-      =================== ===============
-      babies_crawl_tbl_df R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Crawling Age
-         :name: crawling-age
+The dataset name has been changed to 'babies_crawl_tbl_df' to avoid
+confusion with other datasets from packages in the R ecosystem and to
+follow the naming conventions of the 'MedDataSets' package. The suffix
+'\_tbl_df' indicates that this dataset is a tibble, helping to
+distinguish it from other datasets within the package and from those in
+the broader R ecosystem. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'babies_crawl_tbl_df' to
-      avoid confusion with other datasets from packages in the R
-      ecosystem and to follow the naming conventions of the
-      'MedDataSets' package. The suffix '\_tbl_df' indicates that this
-      dataset is a tibble, helping to distinguish it from other datasets
-      within the package and from those in the broader R ecosystem. The
-      original content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(babies_crawl_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(babies_crawl_tbl_df)
+A tibble with 12 observations and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+birth_month
+   A factor indicating the month of birth (January to December).
 
-      A tibble with 12 observations and 5 variables:
+avg_crawling_age
+   A numeric value representing the average crawling age (in months).
 
-      birth_month
-         A factor indicating the month of birth (January to December).
+sd
+   A numeric value indicating the standard deviation of crawling age.
 
-      avg_crawling_age
-         A numeric value representing the average crawling age (in
-         months).
+n
+   An integer representing the number of infants included in the
+   calculation.
 
-      sd
-         A numeric value indicating the standard deviation of crawling
-         age.
+temperature
+   An integer indicating the average temperature (in degrees Celsius)
+   during the month.
 
-      n
-         An integer representing the number of infants included in the
-         calculation.
+Details
+~~~~~~~
 
-      temperature
-         An integer indicating the average temperature (in degrees
-         Celsius) during the month.
+This dataset contains information on the average crawling age of infants
+based on the month of birth, as well as associated factors such as
+temperature.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains information on the average crawling age of
-      infants based on the month of birth, as well as associated factors
-      such as temperature.
-
-      .. rubric:: Source
-         :name: source
-
-      Data collected on the crawling age of infants based on birth month
-      and temperature.
+Data collected on the crawling age of infants based on birth month and
+temperature.

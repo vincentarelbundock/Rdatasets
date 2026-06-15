@@ -1,143 +1,132 @@
-.. container::
+====== ===============
+USFAHR R Documentation
+====== ===============
 
-   .. container::
+U.S. Foreign Aid and Human Rights in Assorted Years
+---------------------------------------------------
 
-      ====== ===============
-      USFAHR R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: U.S. Foreign Aid and Human Rights in Assorted Years
-         :name: u.s.-foreign-aid-and-human-rights-in-assorted-years
+A data set on economic aid allocation by the United States for assorted
+years. These are useful for illustrative cross-sectional relationships
+between human rights and U.S. aid allocation at what amounts to midway
+points for various presidential administrations.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A data set on economic aid allocation by the United States for
-      assorted years. These are useful for illustrative cross-sectional
-      relationships between human rights and U.S. aid allocation at what
-      amounts to midway points for various presidential administrations.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   USFAHR
 
-      .. code:: R
+Format
+~~~~~~
 
-         USFAHR
+A data frame with 1654 observations on the following 18 variables.
 
-      .. rubric:: Format
-         :name: format
+``country``
+   an English country name
 
-      A data frame with 1654 observations on the following 18 variables.
+``ccode``
+   a Correlates of War state code
 
-      ``country``
-         an English country name
+``region``
+   a region in which the country resides, per Greenbook
 
-      ``ccode``
-         a Correlates of War state code
+``year``
+   a year
 
-      ``region``
-         a region in which the country resides, per Greenbook
+``nomoblig``
+   economic aid obligations in nominal U.S. dollars
 
-      ``year``
-         a year
+``constoblig``
+   economic aid obligations in constant 2019 U.S. dollars
 
-      ``nomoblig``
-         economic aid obligations in nominal U.S. dollars
+``clphy``
+   a physical violence index, bound between 0 and 1
 
-      ``constoblig``
-         economic aid obligations in constant 2019 U.S. dollars
+``civlib``
+   a civil liberties index, bound between 0 and 1
 
-      ``clphy``
-         a physical violence index, bound between 0 and 1
+``fpsusa``
+   foreign policy similarity with the United States
 
-      ``civlib``
-         a civil liberties index, bound between 0 and 1
+``fpsrus``
+   foreign policy similarity with the Soviet Union/Russia
 
-      ``fpsusa``
-         foreign policy similarity with the United States
+``mindistusa``
+   minimum distance of the country from the United States
 
-      ``fpsrus``
-         foreign policy similarity with the Soviet Union/Russia
+``mindistrus``
+   minimum distance of the country from the USSR/Russia
 
-      ``mindistusa``
-         minimum distance of the country from the United States
+``gdp``
+   an estimate of GDP in constant 2011 U.S. dollars
 
-      ``mindistrus``
-         minimum distance of the country from the USSR/Russia
+``pop``
+   an estimate of population size
 
-      ``gdp``
-         an estimate of GDP in constant 2011 U.S. dollars
+``usaimp``
+   a value of how much the U.S. imports from the country (in thousands
+   USD)
 
-      ``pop``
-         an estimate of population size
+``usaexp``
+   a value of how much the U.S. exports to the country (in thousands
+   USD)
 
-      ``usaimp``
-         a value of how much the U.S. imports from the country (in
-         thousands USD)
+``milex``
+   an estimate of military expenditures (in thousands USD)
 
-      ``usaexp``
-         a value of how much the U.S. exports to the country (in
-         thousands USD)
+``cinc``
+   a composite index of national capabilities
 
-      ``milex``
-         an estimate of military expenditures (in thousands USD)
+Details
+~~~~~~~
 
-      ``cinc``
-         a composite index of national capabilities
+Matching is done on Correlates of War state codes. Thus, the exact
+"population" is an amalgam of U.S. aid and Correlates of War state
+system membership. Regions are offered, as is, from USAID Data Services.
 
-      .. rubric:: Details
-         :name: details
+Data on aid are "obligations" and not "disbursements", and thus may
+better reflect donor intent. These come from US Overseas Loans & Grants
+("Greenbook") and were prepared by USAID Data Services on July 14, 2021.
 
-      Matching is done on Correlates of War state codes. Thus, the exact
-      "population" is an amalgam of U.S. aid and Correlates of War state
-      system membership. Regions are offered, as is, from USAID Data
-      Services.
+Greenbook only offers information about dollar amounts of aid,
+contingent on receiving aid. Observations were added, based on
+Correlates of War state system membership, about countries that could've
+received aid but did not. Countries that never received aid at all had
+to have regions assigned to them ex post. I don't think the regions
+imputed for these observations are problematic. This concerns Andorra,
+Czechoslovakia, Dominica, German Democratic Republic, German Federal
+Republic, Liechtenstein, Luxembourg, Monaco, Nauru, Republic of Vietnam,
+San Marino, St. Lucia, St. Kitts and Nevis, Switzerland, Tuvalu, Yemen
+Arab Republic, Yemen People's Republic, and Zanzibar.
 
-      Data on aid are "obligations" and not "disbursements", and thus
-      may better reflect donor intent. These come from US Overseas Loans
-      & Grants ("Greenbook") and were prepared by USAID Data Services on
-      July 14, 2021.
+Higher values of the physical violence index and civil liberties index
+communicate better human rights records. Data are lagged a year.
 
-      Greenbook only offers information about dollar amounts of aid,
-      contingent on receiving aid. Observations were added, based on
-      Correlates of War state system membership, about countries that
-      could've received aid but did not. Countries that never received
-      aid at all had to have regions assigned to them ex post. I don't
-      think the regions imputed for these observations are problematic.
-      This concerns Andorra, Czechoslovakia, Dominica, German Democratic
-      Republic, German Federal Republic, Liechtenstein, Luxembourg,
-      Monaco, Nauru, Republic of Vietnam, San Marino, St. Lucia, St.
-      Kitts and Nevis, Switzerland, Tuvalu, Yemen Arab Republic, Yemen
-      People's Republic, and Zanzibar.
+Foreign policy similarity is Cohen's (1960) kappa based on valued United
+Nations General Assembly voting. Data come from Haege (2011) by way of
+peacesciencer's ``add_fpsim()`` function. Please read peacesciencer
+documentation for more information about these measures, along with what
+you should cite for any serious use of these data. Higher values for
+these measures = more foreign policy similarity.
 
-      Higher values of the physical violence index and civil liberties
-      index communicate better human rights records. Data are lagged a
-      year.
+Minimum distance is calculated using the Vincenty method ("as the crow
+flies"). Measurement is in kilometers and data come from peacesciencer
+and its ``add_minimum_distance()`` function. Check package documentation
+for appropriate citation for any serious use.
 
-      Foreign policy similarity is Cohen's (1960) kappa based on valued
-      United Nations General Assembly voting. Data come from Haege
-      (2011) by way of peacesciencer's ``add_fpsim()`` function. Please
-      read peacesciencer documentation for more information about these
-      measures, along with what you should cite for any serious use of
-      these data. Higher values for these measures = more foreign policy
-      similarity.
+Estimates of gross domestic product ("GDP") and population come by way
+of peacesciencer and its ``add_sdp_gdp()`` function. Check package
+documentation for appropriate citations for any serious use. GDP is in
+actual dollars.
 
-      Minimum distance is calculated using the Vincenty method ("as the
-      crow flies"). Measurement is in kilometers and data come from
-      peacesciencer and its ``add_minimum_distance()`` function. Check
-      package documentation for appropriate citation for any serious
-      use.
+Trade data come from Correlates of War trade data by way of
+peacesciencer and its ``add_cow_trade()`` function. Check package
+documentation for appropriate citations for any serious use.
 
-      Estimates of gross domestic product ("GDP") and population come by
-      way of peacesciencer and its ``add_sdp_gdp()`` function. Check
-      package documentation for appropriate citations for any serious
-      use. GDP is in actual dollars.
-
-      Trade data come from Correlates of War trade data by way of
-      peacesciencer and its ``add_cow_trade()`` function. Check package
-      documentation for appropriate citations for any serious use.
-
-      Military expenditure and capabilities data come from Correlates of
-      War by way of peacesciencer and its ``add_cow_trade()`` function.
-      Check package documentation for appropriate citations for any
-      serious use.
+Military expenditure and capabilities data come from Correlates of War
+by way of peacesciencer and its ``add_cow_trade()`` function. Check
+package documentation for appropriate citations for any serious use.

@@ -1,61 +1,56 @@
-.. container::
+================= ===============
+pres_commencement R Documentation
+================= ===============
 
-   .. container::
+Sitting Presidents Give Way More Commencement Speeches Than They Used To
+------------------------------------------------------------------------
 
-      ================= ===============
-      pres_commencement R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Sitting Presidents Give Way More Commencement Speeches
-         Than They Used To
-         :name: sitting-presidents-give-way-more-commencement-speeches-than-they-used-to
+The raw data behind the story "Sitting Presidents Give Way More
+Commencement Speeches Than They Used To"
+https://fivethirtyeight.com/features/sitting-presidents-give-way-more-commencement-speeches-than-they-used-to/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Sitting Presidents Give Way More
-      Commencement Speeches Than They Used To"
-      https://fivethirtyeight.com/features/sitting-presidents-give-way-more-commencement-speeches-than-they-used-to/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   pres_commencement
 
-      .. code:: R
+Format
+~~~~~~
 
-         pres_commencement
+A data frame with 154 rows representing speeches and 8 variables:
 
-      .. rubric:: Format
-         :name: format
+pres
+   Number of president (33 is Harry Truman, the 33rd president; 44 is
+   Barack Obama, the 44th president)
 
-      A data frame with 154 rows representing speeches and 8 variables:
+pres_name
+   Name of president
 
-      pres
-         Number of president (33 is Harry Truman, the 33rd president; 44
-         is Barack Obama, the 44th president)
+title
+   Description of commencement speech
 
-      pres_name
-         Name of president
+date
+   Date speech was delivered
 
-      title
-         Description of commencement speech
+city
+   City where speech was delivered
 
-      date
-         Date speech was delivered
+state
+   State where speech was delivered
 
-      city
-         City where speech was delivered
+building
+   Name of building in which speech was delivered
 
-      state
-         State where speech was delivered
+room
+   Room in which speech was delivered
 
-      building
-         Name of building in which speech was delivered
+Source
+~~~~~~
 
-      room
-         Room in which speech was delivered
-
-      .. rubric:: Source
-         :name: source
-
-      American Presidency Project, Gerhard Peters and John T. Woolley
-      https://www.presidency.ucsb.edu
+American Presidency Project, Gerhard Peters and John T. Woolley
+https://www.presidency.ucsb.edu

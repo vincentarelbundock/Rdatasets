@@ -1,54 +1,49 @@
-.. container::
+============== ===============
+stent30_tbl_df R Documentation
+============== ===============
 
-   .. container::
+Stents for the Treatment of Stroke
+----------------------------------
 
-      ============== ===============
-      stent30_tbl_df R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Stents for the Treatment of Stroke
-         :name: stents-for-the-treatment-of-stroke
+The dataset name has been changed to 'stent30_tbl_df' to avoid confusion
+with other datasets from packages in the R ecosystem and to follow the
+naming conventions of the 'MedDataSets' package. The suffix '\_tbl_df'
+indicates that this dataset is a tibble, helping to distinguish it from
+other datasets within the package and from those in the broader R
+ecosystem. The original content of the dataset has not been modified in
+any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'stent30_tbl_df' to avoid
-      confusion with other datasets from packages in the R ecosystem and
-      to follow the naming conventions of the 'MedDataSets' package. The
-      suffix '\_tbl_df' indicates that this dataset is a tibble, helping
-      to distinguish it from other datasets within the package and from
-      those in the broader R ecosystem. The original content of the
-      dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(stent30_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(stent30_tbl_df)
+A tibble with 451 observations and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+group
+   A factor indicating the treatment group (e.g., stent vs. control).
 
-      A tibble with 451 observations and 2 variables:
+outcome
+   A factor indicating the outcome of the treatment (e.g., success or
+   failure).
 
-      group
-         A factor indicating the treatment group (e.g., stent vs.
-         control).
+Details
+~~~~~~~
 
-      outcome
-         A factor indicating the outcome of the treatment (e.g., success
-         or failure).
+This dataset contains information regarding the use of stents for the
+treatment of stroke, focusing on the group assignments and the outcomes
+observed in the participants.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains information regarding the use of stents for
-      the treatment of stroke, focusing on the group assignments and the
-      outcomes observed in the participants.
-
-      .. rubric:: Source
-         :name: source
-
-      Data collected from a clinical trial assessing the efficacy of
-      stents in stroke treatment.
+Data collected from a clinical trial assessing the efficacy of stents in
+stroke treatment.

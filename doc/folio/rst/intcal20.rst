@@ -1,57 +1,52 @@
-.. container::
+======== ===============
+intcal20 R Documentation
+======== ===============
 
-   .. container::
+IntCal20
+--------
 
-      ======== ===============
-      intcal20 R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: IntCal20
-         :name: intcal20
+The IntCal series of radiocarbon calibration curves.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The IntCal series of radiocarbon calibration curves.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   intcal20
 
-      .. code:: R
+Format
+~~~~~~
 
-         intcal20
+A ``data.frame`` with 9501 observations and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+calBP
+   ``integer``: calendar (calibrated) age (year BP).
 
-      A ``data.frame`` with 9501 observations and 5 variables:
+age
+   ``integer``: radiocarbon age (year BP).
 
-      calBP
-         ``integer``: calendar (calibrated) age (year BP).
+error
+   ``integer``: radiocarbon error (year BP).
 
-      age
-         ``integer``: radiocarbon age (year BP).
+delta
+   ``numeric``: isotopic ratio ``\Delta^{14}C`` (per mil).
 
-      error
-         ``integer``: radiocarbon error (year BP).
+sigma
+   ``numeric``: error on ``delta`` (per mil).
 
-      delta
-         ``numeric``: isotopic ratio ``\Delta^{14}C`` (per mil).
+Source
+~~~~~~
 
-      sigma
-         ``numeric``: error on ``delta`` (per mil).
+Reimer, P. J., Austin, W. E. N., Bard, E., Bayliss, A., Blackwell, P.
+G., Bronk Ramsey, C., Butzin, M. *et al.* (2020). The IntCal20 Northern
+Hemisphere Radiocarbon âge Calibration Curve (0-55 Cal KBP).
+*Radiocarbon*, 62(4), 725-757.
+`doi:10.1017/RDC.2020.41 <https://doi.org/10.1017/RDC.2020.41>`__.
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      Reimer, P. J., Austin, W. E. N., Bard, E., Bayliss, A., Blackwell,
-      P. G., Bronk Ramsey, C., Butzin, M. *et al.* (2020). The IntCal20
-      Northern Hemisphere Radiocarbon âge Calibration Curve (0-55 Cal
-      KBP). *Radiocarbon*, 62(4), 725-757.
-      `doi:10.1017/RDC.2020.41 <https://doi.org/10.1017/RDC.2020.41>`__.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      Other radiocarbon dating: ``arnold1949``, ``intcal09``,
-      ``intcal13``
+Other radiocarbon dating: ``arnold1949``, ``intcal09``, ``intcal13``

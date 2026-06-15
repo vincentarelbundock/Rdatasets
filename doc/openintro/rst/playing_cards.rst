@@ -1,54 +1,51 @@
-.. container::
+============= ===============
+playing_cards R Documentation
+============= ===============
 
-   .. container::
+Table of Playing Cards in 52-Card Deck
+--------------------------------------
 
-      ============= ===============
-      playing_cards R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Table of Playing Cards in 52-Card Deck
-         :name: table-of-playing-cards-in-52-card-deck
+A table describing each of the 52 cards in a deck.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A table describing each of the 52 cards in a deck.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   playing_cards
 
-      .. code:: R
+Format
+~~~~~~
 
-         playing_cards
+A data frame with 52 observations on the following 2 variables.
 
-      .. rubric:: Format
-         :name: format
+number
+   The number or card type.
 
-      A data frame with 52 observations on the following 2 variables.
+suit
+   Card suit, which takes one of four values: ``Club``, ``Diamond``,
+   ``Heart``, or ``Spade``.
 
-      number
-         The number or card type.
+face_card
+   Whether the card counts as a face card.
 
-      suit
-         Card suit, which takes one of four values: ``Club``,
-         ``Diamond``, ``Heart``, or ``Spade``.
+Source
+~~~~~~
 
-      face_card
-         Whether the card counts as a face card.
+This extremely complex dataset was generated from scratch.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      This extremely complex dataset was generated from scratch.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         playing_cards <- data.frame(
-           number = rep(c(2:10, "J", "Q", "K", "A"), 4),
-           suit = rep(c("Spade", "Diamond", "Club", "Heart"), rep(13, 4))
-         )
-         playing_cards$face_card <-
-           ifelse(playing_cards$number %in% c(2:10, "A"), "no", "yes")
+   playing_cards <- data.frame(
+     number = rep(c(2:10, "J", "Q", "K", "A"), 4),
+     suit = rep(c("Spade", "Diamond", "Club", "Heart"), rep(13, 4))
+   )
+   playing_cards$face_card <-
+     ifelse(playing_cards$number %in% c(2:10, "A"), "no", "yes")

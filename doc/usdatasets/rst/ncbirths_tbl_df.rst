@@ -1,81 +1,73 @@
-.. container::
+=============== ===============
+ncbirths_tbl_df R Documentation
+=============== ===============
 
-   .. container::
+North Carolina births, 1000 cases
+---------------------------------
 
-      =============== ===============
-      ncbirths_tbl_df R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: North Carolina births, 1000 cases
-         :name: north-carolina-births-1000-cases
+The dataset name has been changed to 'ncbirths_tbl_df' to avoid
+confusion with other packages in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a tibble. The original content of the dataset has not
+been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'ncbirths_tbl_df' to avoid
-      confusion with other packages in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a tibble. The original
-      content of the dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(ncbirths_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(ncbirths_tbl_df)
+A tibble with 1000 observations and 13 variables:
 
-      .. rubric:: Format
-         :name: format
+fage
+   Integer representing the father's age.
 
-      A tibble with 1000 observations and 13 variables:
+mage
+   Integer representing the mother's age.
 
-      fage
-         Integer representing the father's age.
+mature
+   Factor with 2 levels indicating if the mother is mature (>=35 years).
 
-      mage
-         Integer representing the mother's age.
+weeks
+   Integer representing the number of gestation weeks.
 
-      mature
-         Factor with 2 levels indicating if the mother is mature (>=35
-         years).
+premie
+   Factor with 2 levels indicating if the baby was born prematurely.
 
-      weeks
-         Integer representing the number of gestation weeks.
+visits
+   Integer representing the number of prenatal visits.
 
-      premie
-         Factor with 2 levels indicating if the baby was born
-         prematurely.
+marital
+   Factor with 2 levels indicating the marital status of the mother.
 
-      visits
-         Integer representing the number of prenatal visits.
+gained
+   Integer representing the mother's weight gain during pregnancy (in
+   pounds).
 
-      marital
-         Factor with 2 levels indicating the marital status of the
-         mother.
+weight
+   Numeric value representing the baby's birth weight (in grams).
 
-      gained
-         Integer representing the mother's weight gain during pregnancy
-         (in pounds).
+lowbirthweight
+   Factor with 2 levels indicating if the baby was born with low birth
+   weight.
 
-      weight
-         Numeric value representing the baby's birth weight (in grams).
+gender
+   Factor with 2 levels indicating the baby's gender.
 
-      lowbirthweight
-         Factor with 2 levels indicating if the baby was born with low
-         birth weight.
+habit
+   Factor with 2 levels indicating if the mother has a smoking habit.
 
-      gender
-         Factor with 2 levels indicating the baby's gender.
+whitemom
+   Factor with 2 levels indicating if the mother is white.
 
-      habit
-         Factor with 2 levels indicating if the mother has a smoking
-         habit.
+Source
+~~~~~~
 
-      whitemom
-         Factor with 2 levels indicating if the mother is white.
-
-      .. rubric:: Source
-         :name: source
-
-      Data from birth records in North Carolina
+Data from birth records in North Carolina

@@ -1,85 +1,80 @@
-.. container::
+============= ===============
+county_tbl_df R Documentation
+============= ===============
 
-   .. container::
+United States Counties
+----------------------
 
-      ============= ===============
-      county_tbl_df R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: United States Counties
-         :name: united-states-counties
+The dataset name has been changed to 'county_tbl_df' to avoid confusion
+with other packages in the R ecosystem from which datasets have been
+sourced. This naming convention helps distinguish this dataset as part
+of the 'usdatasets' package and assists users in identifying its
+specific characteristics. The suffix 'tbl_df' identifies the dataset as
+a tibble. The original content of the dataset has not been modified in
+any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'county_tbl_df' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. This naming convention helps
-      distinguish this dataset as part of the 'usdatasets' package and
-      assists users in identifying its specific characteristics. The
-      suffix 'tbl_df' identifies the dataset as a tibble. The original
-      content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(county_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(county_tbl_df)
+A tibble with 3,142 observations and 15 variables:
 
-      .. rubric:: Format
-         :name: format
+name
+   Name of the county.
 
-      A tibble with 3,142 observations and 15 variables:
+state
+   State in which the county is located (factor with 51 levels).
 
-      name
-         Name of the county.
+pop2000
+   Population of the county in the year 2000.
 
-      state
-         State in which the county is located (factor with 51 levels).
+pop2010
+   Population of the county in the year 2010.
 
-      pop2000
-         Population of the county in the year 2000.
+pop2017
+   Population of the county in the year 2017.
 
-      pop2010
-         Population of the county in the year 2010.
+pop_change
+   Change in population over the years.
 
-      pop2017
-         Population of the county in the year 2017.
+poverty
+   Poverty rate in the county.
 
-      pop_change
-         Change in population over the years.
+homeownership
+   Rate of homeownership in the county.
 
-      poverty
-         Poverty rate in the county.
+multi_unit
+   Percentage of multi-unit housing.
 
-      homeownership
-         Rate of homeownership in the county.
+unemployment_rate
+   Unemployment rate in the county.
 
-      multi_unit
-         Percentage of multi-unit housing.
+metro
+   Indicates if the county is in a metropolitan area (factor with 2
+   levels).
 
-      unemployment_rate
-         Unemployment rate in the county.
+median_edu
+   Median education level in the county (factor with 4 levels).
 
-      metro
-         Indicates if the county is in a metropolitan area (factor with
-         2 levels).
+per_capita_income
+   Per capita income in the county.
 
-      median_edu
-         Median education level in the county (factor with 4 levels).
+median_hh_income
+   Median household income in the county.
 
-      per_capita_income
-         Per capita income in the county.
+smoking_ban
+   Indicates if there is a smoking ban in place (factor with 3 levels).
 
-      median_hh_income
-         Median household income in the county.
+Source
+~~~~~~
 
-      smoking_ban
-         Indicates if there is a smoking ban in place (factor with 3
-         levels).
-
-      .. rubric:: Source
-         :name: source
-
-      United States Census Bureau
+United States Census Bureau

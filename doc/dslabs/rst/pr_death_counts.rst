@@ -1,49 +1,46 @@
-.. container::
+=============== ===============
+pr_death_counts R Documentation
+=============== ===============
 
-   .. container::
+Puerto Rico daily mortality
+---------------------------
 
-      =============== ===============
-      pr_death_counts R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Puerto Rico daily mortality
-         :name: puerto-rico-daily-mortality
+A data frame with Puerto Rico daily mortality counts 2015 to May 2018.
+This includes the day hurricanes Maria made 2017-09-20.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A data frame with Puerto Rico daily mortality counts 2015 to May
-      2018. This includes the day hurricanes Maria made 2017-09-20.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   pr_death_counts
 
-      .. code:: R
+Format
+~~~~~~
 
-         pr_death_counts
+An object of class ``data.frame``.
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      An object of class ``data.frame``.
+- date. Date of the count.
 
-      .. rubric:: Details
-         :name: details
+- deaths. Number of deaths reported that day.
 
-      -  date. Date of the count.
+Source
+~~~~~~
 
-      -  deaths. Number of deaths reported that day.
+Puerto Rico Demographic Registry. Data was extracted from PDF provided
+in 'system.file("extdata", "RD-Mortality-Report_2015-18-180531.pdf",
+package = "dslabs")'
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Puerto Rico Demographic Registry. Data was extracted from PDF
-      provided in 'system.file("extdata",
-      "RD-Mortality-Report_2015-18-180531.pdf", package = "dslabs")'
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         with(pr_death_counts, plot(date, deaths))
+   with(pr_death_counts, plot(date, deaths))

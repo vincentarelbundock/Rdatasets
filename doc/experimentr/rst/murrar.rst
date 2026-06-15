@@ -1,58 +1,52 @@
-.. container::
+====== ===============
+murrar R Documentation
+====== ===============
 
-   .. container::
+Data from "Entertainment-education effectively reduces prejudice"
+-----------------------------------------------------------------
 
-      ====== ===============
-      murrar R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Data from "Entertainment-education effectively reduces
-         prejudice"
-         :name: data-from-entertainment-education-effectively-reduces-prejudice
+This dataset is used in the exercises of Chapters 4 and 7 from the
+textbook and Chapters 4 and 5 from the R Companion.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset is used in the exercises of Chapters 4 and 7 from the
-      textbook and Chapters 4 and 5 from the R Companion.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   murrar
 
-      .. code:: R
+Format
+~~~~~~
 
-         murrar
+A data frame with 193 rows and 7 variables:
 
-      .. rubric:: Format
-         :name: format
+white_t0
+   Attitude toward Whites pre-treatment
 
-      A data frame with 193 rows and 7 variables:
+white_t1
+   Attitude toward Whites post-treatment
 
-      white_t0
-         Attitude toward Whites pre-treatment
+arab_t0
+   Attitude toward Arabs pre-treatment
 
-      white_t1
-         Attitude toward Whites post-treatment
+arab_t1
+   Attitude toward Arabs post-treatment
 
-      arab_t0
-         Attitude toward Arabs pre-treatment
+arab_t2
+   Attitude toward Arabs 4-6 weeks after treatment
 
-      arab_t1
-         Attitude toward Arabs post-treatment
+iatT1N
+   IAT toward Arabs
 
-      arab_t2
-         Attitude toward Arabs 4-6 weeks after treatment
+condition
+   Treatment identifier. 1 = treatment, 0 = control
 
-      iatT1N
-         IAT toward Arabs
+Source
+~~~~~~
 
-      condition
-         Treatment identifier. 1 = treatment, 0 = control
-
-      .. rubric:: Source
-         :name: source
-
-      Murrar, Sohad, and Markus Brauer. “Entertainment-Education
-      Effectively Reduces Prejudice.” Group Processes &amp; Intergroup
-      Relations, vol. 21, no. 7, 2017, pp. 1053–1077.,
-      https://doi.org/10.1177/1368430216682350.
+Murrar, Sohad, and Markus Brauer. “Entertainment-Education Effectively
+Reduces Prejudice.” Group Processes &amp; Intergroup Relations, vol. 21,
+no. 7, 2017, pp. 1053–1077., https://doi.org/10.1177/1368430216682350.

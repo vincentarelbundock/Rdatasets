@@ -1,59 +1,56 @@
-.. container::
+========== ===============
+aus_births R Documentation
+========== ===============
 
-   .. container::
+Australian births data
+----------------------
 
-      ========== ===============
-      aus_births R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Australian births data
-         :name: australian-births-data
+Number of births in Australia.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Number of births in Australia.
+Time series of class 'tsibble'
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      Time series of class 'tsibble'
+``aus_births`` contains monthly data with one measured variable:
 
-      .. rubric:: Details
-         :name: details
+=========== ================
+``Births``: Number of births
+            
+=========== ================
 
-      ``aus_births`` contains monthly data with one measured variable:
+from January 1975 to December 2021 for the 6 states and 2 territories of
+Australia, indexed by:
 
-      =========== ================
-      ``Births``: Number of births
-      \           
-      =========== ================
+========== ===========
+``Month``: Year-month.
+           
+========== ===========
 
-      from January 1975 to December 2021 for the 6 states and 2
-      territories of Australia, indexed by:
+#' Each series is uniquely identified using the key:
 
-      ========== ===========
-      ``Month``: Year-month.
-      \          
-      ========== ===========
++------------------------------------+
+| ``State``: The state or territory. |
++------------------------------------+
+|                                    |
++------------------------------------+
 
-      #' Each series is uniquely identified using the key:
+Source
+~~~~~~
 
-      +------------------------------------+
-      | ``State``: The state or territory. |
-      +------------------------------------+
-      |                                    |
-      +------------------------------------+
+Australian Bureau of Statistics.
+https://www.abs.gov.au/statistics/people/population/births-australia/2022
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Australian Bureau of Statistics.
-      https://www.abs.gov.au/statistics/people/population/births-australia/2022
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         aus_births
+   aus_births

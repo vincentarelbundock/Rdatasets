@@ -1,94 +1,90 @@
-.. container::
+================== ===============
+state_of_the_state R Documentation
+================== ===============
 
-   .. container::
+What America’s Governors Are Talking About
+------------------------------------------
 
-      ================== ===============
-      state_of_the_state R Documentation
-      ================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: What America’s Governors Are Talking About
-         :name: what-americas-governors-are-talking-about
+The raw data behind the story "What America’s Governors Are Talking
+About"
+https://fivethirtyeight.com/features/what-americas-governors-are-talking-about/
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "What America’s Governors Are
-      Talking About"
-      https://fivethirtyeight.com/features/what-americas-governors-are-talking-about/
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   state_index
 
-      .. code:: R
+   state_words
 
-         state_index
+Format
+~~~~~~
 
-         state_words
+2 data frames about the 50 U.S Governors' Speeches
 
-      .. rubric:: Format
-         :name: format
+An object of class ``spec_tbl_df`` (inherits from ``tbl_df``, ``tbl``,
+``data.frame``) with 2223 rows and 9 columns.
 
-      2 data frames about the 50 U.S Governors' Speeches
+state_index
+~~~~~~~~~~~
 
-      An object of class ``spec_tbl_df`` (inherits from ``tbl_df``,
-      ``tbl``, ``data.frame``) with 2223 rows and 9 columns.
+A data frame with 50 rows representing the 50 U.S. states and 5
+variables:
 
-      .. rubric:: state_index
-         :name: state_index
+state
+   the state
 
-      A data frame with 50 rows representing the 50 U.S. states and 5
-      variables:
+governor
+   the name of the state's governor
 
-      state
-         the state
+party
+   the party of the state's governor
 
-      governor
-         the name of the state's governor
+filename
+   the filename of the speech in the speeches folder at
+   https://github.com/rudeboybert/fivethirtyeight/tree/master/data-raw/state-of-the-state/speeches
 
-      party
-         the party of the state's governor
+url
+   a link to an official/media source for the speech
 
-      filename
-         the filename of the speech in the speeches folder at
-         https://github.com/rudeboybert/fivethirtyeight/tree/master/data-raw/state-of-the-state/speeches
+state_words
+~~~~~~~~~~~
 
-      url
-         a link to an official/media source for the speech
+A data frame with 2,223 rows representing phrases and 9 variables:
 
-      .. rubric:: state_words
-         :name: state_words
+phrase
+   one-, two-, and three-word phrases spoken repeatedly
 
-      A data frame with 2,223 rows representing phrases and 9 variables:
+category
+   thematic categories for the phrases
 
-      phrase
-         one-, two-, and three-word phrases spoken repeatedly
+d_speeches
+   number of Democratic speeches containing the phrase
 
-      category
-         thematic categories for the phrases
+r_speeches
+   number of Republican speeches containing the phrase
 
-      d_speeches
-         number of Democratic speeches containing the phrase
+total
+   total number of speeches containing the phrase
 
-      r_speeches
-         number of Republican speeches containing the phrase
+percent_of_d_speeches
+   percent of the 23 Democratic speeches containing the phrase
 
-      total
-         total number of speeches containing the phrase
+percent_of_r_speeches
+   percent of the 27 Republican speeches containing the phrase
 
-      percent_of_d_speeches
-         percent of the 23 Democratic speeches containing the phrase
+chi2
+   the chi-square test statistic for statistical significance
 
-      percent_of_r_speeches
-         percent of the 27 Republican speeches containing the phrase
+pval
+   p-value for chi^2 test
 
-      chi2
-         the chi-square test statistic for statistical significance
+Source
+~~~~~~
 
-      pval
-         p-value for chi^2 test
-
-      .. rubric:: Source
-         :name: source
-
-      The chi-square test statistic
-      https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.chi2.html#sklearn.feature_selection.chi2
+The chi-square test statistic
+https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.chi2.html#sklearn.feature_selection.chi2

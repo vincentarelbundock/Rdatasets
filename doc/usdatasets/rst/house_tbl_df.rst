@@ -1,76 +1,70 @@
-.. container::
+============ ===============
+house_tbl_df R Documentation
+============ ===============
 
-   .. container::
+United States House of Representatives historical make-up
+---------------------------------------------------------
 
-      ============ ===============
-      house_tbl_df R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: United States House of Representatives historical
-         make-up
-         :name: united-states-house-of-representatives-historical-make-up
+The dataset name has been changed to 'house_tbl_df' to avoid confusion
+with other packages in the R ecosystem from which datasets have been
+sourced. This naming convention helps distinguish this dataset as part
+of the 'usdatasets' package and assists users in identifying its
+specific characteristics. The suffix 'tbl_df' identifies the dataset as
+a tibble. The original content of the dataset has not been modified in
+any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'house_tbl_df' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. This naming convention helps
-      distinguish this dataset as part of the 'usdatasets' package and
-      assists users in identifying its specific characteristics. The
-      suffix 'tbl_df' identifies the dataset as a tibble. The original
-      content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(house_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(house_tbl_df)
+A tibble with 116 observations and 12 variables:
 
-      .. rubric:: Format
-         :name: format
+congress
+   Congress number (numeric).
 
-      A tibble with 116 observations and 12 variables:
+year_start
+   Starting year of the congress (numeric).
 
-      congress
-         Congress number (numeric).
+year_end
+   Ending year of the congress (numeric).
 
-      year_start
-         Starting year of the congress (numeric).
+seats
+   Total number of seats in the House of Representatives (numeric).
 
-      year_end
-         Ending year of the congress (numeric).
+p1
+   Abbreviation of the first party (character).
 
-      seats
-         Total number of seats in the House of Representatives
-         (numeric).
+np1
+   Number of seats for the first party (numeric).
 
-      p1
-         Abbreviation of the first party (character).
+p2
+   Abbreviation of the second party (character).
 
-      np1
-         Number of seats for the first party (numeric).
+np2
+   Number of seats for the second party (numeric).
 
-      p2
-         Abbreviation of the second party (character).
+other
+   Number of seats for other parties (numeric).
 
-      np2
-         Number of seats for the second party (numeric).
+vac
+   Number of vacant seats (numeric).
 
-      other
-         Number of seats for other parties (numeric).
+del
+   Number of delegate seats (numeric).
 
-      vac
-         Number of vacant seats (numeric).
+res
+   Number of resident commissioner seats (numeric).
 
-      del
-         Number of delegate seats (numeric).
+Source
+~~~~~~
 
-      res
-         Number of resident commissioner seats (numeric).
-
-      .. rubric:: Source
-         :name: source
-
-      Historical House of Representatives Data
+Historical House of Representatives Data

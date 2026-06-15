@@ -1,73 +1,68 @@
-.. container::
+======================= ===============
+PancreaticMiRNAs_tbl_df R Documentation
+======================= ===============
 
-   .. container::
+PubMed Data of miRNAs in Pancreatic Cancer
+------------------------------------------
 
-      ======================= ===============
-      PancreaticMiRNAs_tbl_df R Documentation
-      ======================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: PubMed Data of miRNAs in Pancreatic Cancer
-         :name: pubmed-data-of-mirnas-in-pancreatic-cancer
+This dataset, PancreaticMiRNAs_tbl_df, is a tibble containing
+information from PubMed abstracts related to microRNAs (miRNAs) in
+pancreatic cancer. The data provides key details such as publication
+metadata, article abstracts, and associated miRNAs. The dataset consists
+of 381 observations with 8 variables.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, PancreaticMiRNAs_tbl_df, is a tibble containing
-      information from PubMed abstracts related to microRNAs (miRNAs) in
-      pancreatic cancer. The data provides key details such as
-      publication metadata, article abstracts, and associated miRNAs.
-      The dataset consists of 381 observations with 8 variables.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(PancreaticMiRNAs_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(PancreaticMiRNAs_tbl_df)
+A tibble with 381 observations and 8 variables:
 
-      .. rubric:: Format
-         :name: format
+PMID
+   PubMed Identifier (numeric).
 
-      A tibble with 381 observations and 8 variables:
+Year
+   Publication year of the article (numeric).
 
-      PMID
-         PubMed Identifier (numeric).
+Title
+   Title of the PubMed article (character).
 
-      Year
-         Publication year of the article (numeric).
+Abstract
+   Abstract of the article (character).
 
-      Title
-         Title of the PubMed article (character).
+Language
+   Language of the article (character).
 
-      Abstract
-         Abstract of the article (character).
+Type
+   Type of publication, e.g., review, study (character).
 
-      Language
-         Language of the article (character).
+Topic
+   Research topic related to pancreatic cancer and miRNAs (character).
 
-      Type
-         Type of publication, e.g., review, study (character).
+miRNA
+   Specific microRNAs mentioned in the publication (character).
 
-      Topic
-         Research topic related to pancreatic cancer and miRNAs
-         (character).
+Details
+~~~~~~~
 
-      miRNA
-         Specific microRNAs mentioned in the publication (character).
+The dataset name has been kept as 'PancreaticMiRNAs_tbl_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the OncoDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'\_tbl_df' indicates that the dataset is a tibble, which is an enhanced
+version of a data frame in R. The original content has not been modified
+in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'PancreaticMiRNAs_tbl_df' to
-      avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The suffix '\_tbl_df' indicates that the dataset
-      is a tibble, which is an enhanced version of a data frame in R.
-      The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the miRetrieve package. More information is
-      available at: https://pubmed.ncbi.nlm.nih.gov/
+Data taken from the miRetrieve package. More information is available
+at: https://pubmed.ncbi.nlm.nih.gov/

@@ -1,57 +1,51 @@
-.. container::
+======= ===============
+avocado R Documentation
+======= ===============
 
-   .. container::
+Data on avocado sales
+---------------------
 
-      ======= ===============
-      avocado R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Data on avocado sales
-         :name: data-on-avocado-sales
+This data set includes information on the average price and total amount
+of avocados sold across 169 weeks from 2015 to 2018. This data covers
+only sales of 'conventional' avocados that take place in California.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This data set includes information on the average price and total
-      amount of avocados sold across 169 weeks from 2015 to 2018. This
-      data covers only sales of 'conventional' avocados that take place
-      in California.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   avocado
 
-      .. code:: R
+Format
+~~~~~~
 
-         avocado
+A data frame with 169 rows and 3 variables:
 
-      .. rubric:: Format
-         :name: format
+Date
+   Date of observation
 
-      A data frame with 169 rows and 3 variables:
+AveragePrice
+   Average avocado price
 
-      Date
-         Date of observation
+TotalVolume
+   Total volume of avocados sold
 
-      AveragePrice
-         Average avocado price
+Details
+~~~~~~~
 
-      TotalVolume
-         Total volume of avocados sold
+This data was used in the *Identification* chapter of The Effect by
+Huntington-Klein
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This data was used in the *Identification* chapter of The Effect
-      by Huntington-Klein
+Kiggins, Justin. 2018. https://www.kaggle.com/neuromusic/avocado-prices/
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Kiggins, Justin. 2018.
-      https://www.kaggle.com/neuromusic/avocado-prices/
-
-      .. rubric:: References
-         :name: references
-
-      Huntington-Klein. 2021. The Effect: An Introduction to Research
-      Design and Causality. https://theeffectbook.net.
+Huntington-Klein. 2021. The Effect: An Introduction to Research Design
+and Causality. https://theeffectbook.net.

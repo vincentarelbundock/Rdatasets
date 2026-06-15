@@ -258,11 +258,17 @@ in the <code>nlme</code> package as <code>Wheat2</code>.
   libs(sommer)
   dat &lt;- stroup.nin
   dat &lt;- transform(dat, yf = as.factor(row), xf = as.factor(col))
-  so1 &lt;- mmer(yield ~ 0+gen,
-              random = ~ vs(xf) + vs(yf) + spl2Db(row,col),
-              data=dat)
-  preds$so1 &lt;- coef(so1)[,"Estimate"]
-  # spatPlot
+
+  so1 &lt;- mmes(fixed= yield ~ gen,
+    random = ~ row + col + spl2Dc(row,col),
+    rcov=~units, verbose=FALSE, data=dat)
+  # Determine which effects to include in prediction
+  Dtab = so1$Dtable
+  Dtab
+  Dtab[1,"include"] = TRUE
+  pr1 &lt;- predict(so1, Dtable=Dtab, D="gen")
+  pr1 &lt;- pr1$pvals
+  preds$so1 &lt;- pr1$predicted.value
 
   # -----
   # compare variety effects from different packages

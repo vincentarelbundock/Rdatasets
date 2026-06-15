@@ -1,83 +1,77 @@
-.. container::
+==== ===============
+Fair R Documentation
+==== ===============
 
-   .. container::
+Extramarital Affairs Data
+-------------------------
 
-      ==== ===============
-      Fair R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Extramarital Affairs Data
-         :name: extramarital-affairs-data
+a cross-section
 
-      .. rubric:: Description
-         :name: description
+*number of observations* : 601
 
-      a cross-section
+*observation* : individuals
 
-      *number of observations* : 601
+*country* : United States
 
-      *observation* : individuals
+Usage
+~~~~~
 
-      *country* : United States
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Fair)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Fair)
+A dataframe containing :
 
-      .. rubric:: Format
-         :name: format
+sex
+   a factor with levels (male,female)
 
-      A dataframe containing :
+age
+   age
 
-      sex
-         a factor with levels (male,female)
+ym
+   number of years married
 
-      age
-         age
+child
+   children ? a factor
 
-      ym
-         number of years married
+religious
+   how religious, from 1 (anti) to 5 (very)
 
-      child
-         children ? a factor
+education
+   education
 
-      religious
-         how religious, from 1 (anti) to 5 (very)
+occupation
+   occupation, from 1 to 7, according to Hollingshead's classification
+   (reverse numbering)
 
-      education
-         education
+rate
+   self rating of marriage, from 1 (very unhappy) to 5 (very happy)
 
-      occupation
-         occupation, from 1 to 7, according to Hollingshead's
-         classification (reverse numbering)
+nbaffairs
+   number of affairs in past year
 
-      rate
-         self rating of marriage, from 1 (very unhappy) to 5 (very
-         happy)
+Source
+~~~~~~
 
-      nbaffairs
-         number of affairs in past year
+Fair, R. (1977) “A note on the computation of the tobit estimator”,
+*Econometrica*, **45**, 1723-1727.
 
-      .. rubric:: Source
-         :name: source
+https://fairmodel.econ.yale.edu/rayfair/pdf/1978A200.PDF.
 
-      Fair, R. (1977) “A note on the computation of the tobit
-      estimator”, *Econometrica*, **45**, 1723-1727.
+References
+~~~~~~~~~~
 
-      https://fairmodel.econ.yale.edu/rayfair/pdf/1978A200.PDF.
+Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
+https://archive.org/details/econometricanaly0000gree_f4x3, Table F22.2.
 
-      .. rubric:: References
-         :name: references
+See Also
+~~~~~~~~
 
-      Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
-      https://archive.org/details/econometricanaly0000gree_f4x3, Table
-      F22.2.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-      ``Index.Observations``
+``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+``Index.Observations``

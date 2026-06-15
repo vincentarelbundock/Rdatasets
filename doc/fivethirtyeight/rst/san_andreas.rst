@@ -1,74 +1,67 @@
-.. container::
+=========== ===============
+san_andreas R Documentation
+=========== ===============
 
-   .. container::
+The Rock Isn't Alone: Lots Of People Are Worried About 'The Big One'
+--------------------------------------------------------------------
 
-      =========== ===============
-      san_andreas R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The Rock Isn't Alone: Lots Of People Are Worried About
-         'The Big One'
-         :name: the-rock-isnt-alone-lots-of-people-are-worried-about-the-big-one
+The raw data behind the story "The Rock Isn't Alone: Lots Of People Are
+Worried About 'The Big One'"
+https://fivethirtyeight.com/features/the-rock-isnt-alone-lots-of-people-are-worried-about-the-big-one/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "The Rock Isn't Alone: Lots Of
-      People Are Worried About 'The Big One'"
-      https://fivethirtyeight.com/features/the-rock-isnt-alone-lots-of-people-are-worried-about-the-big-one/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   san_andreas
 
-      .. code:: R
+Format
+~~~~~~
 
-         san_andreas
+A data frame with 1013 rows representing respondents and 11 variables:
 
-      .. rubric:: Format
-         :name: format
+worry_general
+   In general, how worried are you about earthquakes?
 
-      A data frame with 1013 rows representing respondents and 11
-      variables:
+worry_bigone
+   How worried are you about the "Big One," a massive, catastrophic
+   earthquake?
 
-      worry_general
-         In general, how worried are you about earthquakes?
+will_occur
+   Do you think the "Big One" will occur in your lifetime?
 
-      worry_bigone
-         How worried are you about the "Big One," a massive,
-         catastrophic earthquake?
+experience
+   Have you ever experienced an earthquake?
 
-      will_occur
-         Do you think the "Big One" will occur in your lifetime?
+prepared
+   Have you or anyone in your household taken any precautions for an
+   earthquake (packed an earthquake survival kit, prepared an evacuation
+   plan, etc.)?
 
-      experience
-         Have you ever experienced an earthquake?
+fam_san_andreas
+   How familiar are you with the San Andreas Fault line?
 
-      prepared
-         Have you or anyone in your household taken any precautions for
-         an earthquake (packed an earthquake survival kit, prepared an
-         evacuation plan, etc.)?
+fam_yellowstone
+   How familiar are you with the Yellowstone Supervolcano?
 
-      fam_san_andreas
-         How familiar are you with the San Andreas Fault line?
+age
+   Age
 
-      fam_yellowstone
-         How familiar are you with the Yellowstone Supervolcano?
+female
+   Gender
 
-      age
-         Age
+hhold_income
+   How much total combined money did all members of your HOUSEHOLD earn
+   last year?
 
-      female
-         Gender
+region
+   US Region
 
-      hhold_income
-         How much total combined money did all members of your HOUSEHOLD
-         earn last year?
+Source
+~~~~~~
 
-      region
-         US Region
-
-      .. rubric:: Source
-         :name: source
-
-      See
-      https://github.com/fivethirtyeight/data/tree/master/san-andreas
+See https://github.com/fivethirtyeight/data/tree/master/san-andreas

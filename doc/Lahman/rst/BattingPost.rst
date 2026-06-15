@@ -1,162 +1,157 @@
-.. container::
+=========== ===============
+BattingPost R Documentation
+=========== ===============
 
-   .. container::
+BattingPost table
+-----------------
 
-      =========== ===============
-      BattingPost R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: BattingPost table
-         :name: battingpost-table
+Post season batting statistics
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Post season batting statistics
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(BattingPost)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(BattingPost)
+A data frame with 18687 observations on the following 22 variables.
 
-      .. rubric:: Format
-         :name: format
+``yearID``
+   Year
 
-      A data frame with 17360 observations on the following 22
-      variables.
+``round``
+   Level of playoffs
 
-      ``yearID``
-         Year
+``playerID``
+   Player ID code
 
-      ``round``
-         Level of playoffs
+``teamID``
+   Team
 
-      ``playerID``
-         Player ID code
+``lgID``
+   League; a factor with levels ``AA`` ``AL`` ``NL``
 
-      ``teamID``
-         Team
+``G``
+   Games
 
-      ``lgID``
-         League; a factor with levels ``AA`` ``AL`` ``NL``
+``AB``
+   At Bats
 
-      ``G``
-         Games
+``R``
+   Runs
 
-      ``AB``
-         At Bats
+``H``
+   Hits
 
-      ``R``
-         Runs
+``X2B``
+   Doubles
 
-      ``H``
-         Hits
+``X3B``
+   Triples
 
-      ``X2B``
-         Doubles
+``HR``
+   Homeruns
 
-      ``X3B``
-         Triples
+``RBI``
+   Runs Batted In
 
-      ``HR``
-         Homeruns
+``SB``
+   Stolen Bases
 
-      ``RBI``
-         Runs Batted In
+``CS``
+   Caught stealing
 
-      ``SB``
-         Stolen Bases
+``BB``
+   Base on Balls
 
-      ``CS``
-         Caught stealing
+``SO``
+   Strikeouts
 
-      ``BB``
-         Base on Balls
+``IBB``
+   Intentional walks
 
-      ``SO``
-         Strikeouts
+``HBP``
+   Hit by pitch
 
-      ``IBB``
-         Intentional walks
+``SH``
+   Sacrifices
 
-      ``HBP``
-         Hit by pitch
+``SF``
+   Sacrifice flies
 
-      ``SH``
-         Sacrifices
+``GIDP``
+   Grounded into double plays
 
-      ``SF``
-         Sacrifice flies
+Details
+~~~~~~~
 
-      ``GIDP``
-         Grounded into double plays
+Variables ``X2B`` and ``X3B`` are named ``2B`` and ``3B`` in the
+original database
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      Variables ``X2B`` and ``X3B`` are named ``2B`` and ``3B`` in the
-      original database
+Lahman, S. (2026) Lahman's Baseball Database, 1871-2025, 2026 version,
+https://sabr.org/lahman-database/
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Lahman, S. (2025) Lahman's Baseball Database, 1871-2024, 2025
-      version, https://sabr.org/lahman-database/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   # Post-season batting data
+   # Requires care since intra-league playoffs have evolved since 1969
+   # Simplest case: World Series
 
-      .. code:: R
+   require("dplyr")
 
-         # Post-season batting data
-         # Requires care since intra-league playoffs have evolved since 1969
-         # Simplest case: World Series
+   # Create a sub-data frame for modern World Series play
+   ws <- BattingPost %>%
+           filter(round == "WS" & yearID >= 1903) %>%
+           mutate(BA = 0 + (AB > 0) * round(H/AB, 3),
+                  TB = H + X2B + 2 * X3B + 3 * HR,
+                  SA = 0 + (AB > 0) * round(TB/AB, 3),
+                  PA = AB + BB + IBB + HBP + SH + SF,
+                  OB = H + BB + IBB + HBP,
+                  OBP = 0 + (AB > 0) * round(OB/PA, 3) )
 
-         require("dplyr")
+   # Players with most appearances in the WS:
+   ws %>% group_by(playerID) %>%
+          summarise(appearances = n()) %>%
+          arrange(desc(appearances)) %>%
+          head(., 10)
 
-         # Create a sub-data frame for modern World Series play
-         ws <- BattingPost %>%
-                 filter(round == "WS" & yearID >= 1903) %>%
-                 mutate(BA = 0 + (AB > 0) * round(H/AB, 3),
-                        TB = H + X2B + 2 * X3B + 3 * HR,
-                        SA = 0 + (AB > 0) * round(TB/AB, 3),
-                        PA = AB + BB + IBB + HBP + SH + SF,
-                        OB = H + BB + IBB + HBP,
-                        OBP = 0 + (AB > 0) * round(OB/PA, 3) )
-
-         # Players with most appearances in the WS:
-         ws %>% group_by(playerID) %>%
-                summarise(appearances = n()) %>%
-                arrange(desc(appearances)) %>%
-                head(., 10)
-
-         # Non-Yankees with most WS appearances
-         ws %>% filter(teamID != "NYA") %>%
-                group_by(playerID) %>%
-                summarise(appearances = n()) %>%
-                arrange(desc(appearances)) %>%
-                head(., 10)
+   # Non-Yankees with most WS appearances
+   ws %>% filter(teamID != "NYA") %>%
+          group_by(playerID) %>%
+          summarise(appearances = n()) %>%
+          arrange(desc(appearances)) %>%
+          head(., 10)
 
 
-         # Top ten single WS batting averages ( >= 10 AB )
-         ws %>% filter(AB > 10) %>%
-                arrange(desc(BA)) %>%
-                head(., 10)
+   # Top ten single WS batting averages ( >= 10 AB )
+   ws %>% filter(AB > 10) %>%
+          arrange(desc(BA)) %>%
+          head(., 10)
 
-         # Top ten slugging averages in a single WS 
-         ws %>% filter(AB > 10) %>%
-           arrange(desc(SA)) %>%
-           head(., 10)
+   # Top ten slugging averages in a single WS 
+   ws %>% filter(AB > 10) %>%
+     arrange(desc(SA)) %>%
+     head(., 10)
 
 
-         # Hitting stats for the 1946 St. Louis Cardinals, ordered by BA
-         ws %>% 
-           filter(teamID == "SLN" & yearID == 1946) %>%
-           arrange(desc(BA))
+   # Hitting stats for the 1946 St. Louis Cardinals, ordered by BA
+   ws %>% 
+     filter(teamID == "SLN" & yearID == 1946) %>%
+     arrange(desc(BA))
 
-         # Babe Ruth's WS profile
-         ws %>% 
-           filter(playerID == "ruthba01") %>%
-           arrange(yearID)
+   # Babe Ruth's WS profile
+   ws %>% 
+     filter(playerID == "ruthba01") %>%
+     arrange(yearID)

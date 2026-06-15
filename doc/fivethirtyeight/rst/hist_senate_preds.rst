@@ -1,52 +1,48 @@
-.. container::
+================= ===============
+hist_senate_preds R Documentation
+================= ===============
 
-   .. container::
+How The FiveThirtyEight Senate Forecast Model Works
+---------------------------------------------------
 
-      ================= ===============
-      hist_senate_preds R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: How The FiveThirtyEight Senate Forecast Model Works
-         :name: how-the-fivethirtyeight-senate-forecast-model-works
+The raw data behind the story "How The FiveThirtyEight Senate Forecast
+Model Works"
+https://fivethirtyeight.com/features/how-the-fivethirtyeight-senate-forecast-model-works/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "How The FiveThirtyEight Senate
-      Forecast Model Works"
-      https://fivethirtyeight.com/features/how-the-fivethirtyeight-senate-forecast-model-works/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   hist_senate_preds
 
-      .. code:: R
+Format
+~~~~~~
 
-         hist_senate_preds
+A data frame with 207 rows representing US state elections and 5
+variables:
 
-      .. rubric:: Format
-         :name: format
+state
+   Election
 
-      A data frame with 207 rows representing US state elections and 5
-      variables:
+year
+   Year of election
 
-      state
-         Election
+candidate
+   Last name
 
-      year
-         Year of election
+forecast_prob
+   Probability of winning election per FiveThirtyEight Election Day
+   forecast
 
-      candidate
-         Last name
+result
+   'Win' or 'Loss'
 
-      forecast_prob
-         Probability of winning election per FiveThirtyEight Election
-         Day forecast
+Source
+~~~~~~
 
-      result
-         'Win' or 'Loss'
-
-      .. rubric:: Source
-         :name: source
-
-      See
-      https://github.com/fivethirtyeight/data/tree/master/forecast-methodology
+See
+https://github.com/fivethirtyeight/data/tree/master/forecast-methodology

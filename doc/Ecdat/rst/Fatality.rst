@@ -1,83 +1,79 @@
-.. container::
+======== ===============
+Fatality R Documentation
+======== ===============
 
-   .. container::
+Drunk Driving Laws and Traffic Deaths
+-------------------------------------
 
-      ======== ===============
-      Fatality R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Drunk Driving Laws and Traffic Deaths
-         :name: drunk-driving-laws-and-traffic-deaths
+a panel of 48 observations from 1982 to 1988
 
-      .. rubric:: Description
-         :name: description
+*number of observations* : 336
 
-      a panel of 48 observations from 1982 to 1988
+*observation* : regional
 
-      *number of observations* : 336
+*country* : United States
 
-      *observation* : regional
+Usage
+~~~~~
 
-      *country* : United States
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Fatality)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Fatality)
+A dataframe containing :
 
-      .. rubric:: Format
-         :name: format
+state
+   state ID code
 
-      A dataframe containing :
+year
+   year
 
-      state
-         state ID code
+mrall
+   traffic fatality rate (deaths per 10000)
 
-      year
-         year
+beertax
+   tax on case of beer
 
-      mrall
-         traffic fatality rate (deaths per 10000)
+mlda
+   minimum legal drinking age
 
-      beertax
-         tax on case of beer
+jaild
+   mandatory jail sentence ?
 
-      mlda
-         minimum legal drinking age
+comserd
+   mandatory community service ?
 
-      jaild
-         mandatory jail sentence ?
+vmiles
+   average miles per driver
 
-      comserd
-         mandatory community service ?
+unrate
+   unemployment rate
 
-      vmiles
-         average miles per driver
+perinc
+   per capita personal income
 
-      unrate
-         unemployment rate
+Source
+~~~~~~
 
-      perinc
-         per capita personal income
+Pr. Christopher J. Ruhm, Department of Economics, University of North
+Carolina.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Pr. Christopher J. Ruhm, Department of Economics, University of
-      North Carolina.
+Stock, James H. and Mark W. Watson (2003) *Introduction to
+Econometrics*, Addison-Wesley Educational Publishers, chapter 8.
 
-      .. rubric:: References
-         :name: references
+See Also
+~~~~~~~~
 
-      Stock, James H. and Mark W. Watson (2003) *Introduction to
-      Econometrics*, Addison-Wesley Educational Publishers, chapter 8.
+``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+``Index.Observations``,
 
-      .. rubric:: See Also
-         :name: see-also
-
-      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-      ``Index.Observations``,
-
-      ``Index.Time.Series``
+``Index.Time.Series``

@@ -1,52 +1,47 @@
-.. container::
+=============== ===============
+Blackedu_tbl_df R Documentation
+=============== ===============
 
-   .. container::
+Education Level of Blacks by Gender
+-----------------------------------
 
-      =============== ===============
-      Blackedu_tbl_df R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Education Level of Blacks by Gender
-         :name: education-level-of-blacks-by-gender
+This dataset, Blackedu_tbl_df, is a tibble containing information about
+the education level of Black individuals, categorized by gender. The
+dataset includes 3800 observations and provides insights into the
+distribution of education levels across different gender groups.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, Blackedu_tbl_df, is a tibble containing information
-      about the education level of Black individuals, categorized by
-      gender. The dataset includes 3800 observations and provides
-      insights into the distribution of education levels across
-      different gender groups.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Blackedu_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Blackedu_tbl_df)
+A tibble with 3800 observations and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+gender
+   Gender of the individual (factor with 2 levels).
 
-      A tibble with 3800 observations and 2 variables:
+education
+   Education level of the individual (factor with 5 levels).
 
-      gender
-         Gender of the individual (factor with 2 levels).
+Details
+~~~~~~~
 
-      education
-         Education level of the individual (factor with 5 levels).
+The dataset name has been kept as 'Blackedu_tbl_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the educationR package and assists
+users in identifying its specific characteristics. The suffix 'tbl_df'
+indicates that the dataset is a tibble. The original content has not
+been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'Blackedu_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      educationR package and assists users in identifying its specific
-      characteristics. The suffix 'tbl_df' indicates that the dataset is
-      a tibble. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Bureau of Census data.
+Bureau of Census data.

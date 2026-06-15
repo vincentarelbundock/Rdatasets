@@ -1,45 +1,41 @@
-.. container::
+==== ===============
+mice R Documentation
+==== ===============
 
-   .. container::
+Pregnant Female Mice Experiment
+-------------------------------
 
-      ==== ===============
-      mice R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Pregnant Female Mice Experiment
-         :name: pregnant-female-mice-experiment
+Unpublished laboratory data on the proportion of affected foetuses in
+two groups (control and treatment) of 10 pregnant female mice (Kupper
+and Haseman, 1978, p. 75).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Unpublished laboratory data on the proportion of affected foetuses
-      in two groups (control and treatment) of 10 pregnant female mice
-      (Kupper and Haseman, 1978, p. 75).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(mice)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(mice)
+A data frame with 20 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+group
+   a factor with levels ``CTRL`` and ``TREAT``
 
-      A data frame with 20 observations on the following 3 variables.
+n
+   a numeric vector: the total number of foetuses.
 
-      group
-         a factor with levels ``CTRL`` and ``TREAT``
+y
+   a numeric vector: the number of affected foetuses.
 
-      n
-         a numeric vector: the total number of foetuses.
+References
+~~~~~~~~~~
 
-      y
-         a numeric vector: the number of affected foetuses.
-
-      .. rubric:: References
-         :name: references
-
-      Kupper, L.L., Haseman, J.K., 1978. *The use of a correlated
-      binomial model for the analysis of a certain toxicological
-      experiments.* Biometrics 34, 69-76.
+Kupper, L.L., Haseman, J.K., 1978. *The use of a correlated binomial
+model for the analysis of a certain toxicological experiments.*
+Biometrics 34, 69-76.

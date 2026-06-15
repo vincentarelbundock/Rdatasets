@@ -1,89 +1,83 @@
-.. container::
+============ ===============
+besag.checks R Documentation
+============ ===============
 
-   .. container::
+Check variety yields in winter wheat.
+-------------------------------------
 
-      ============ ===============
-      besag.checks R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Check variety yields in winter wheat.
-         :name: check-variety-yields-in-winter-wheat.
+Check variety yields in winter wheat.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Check variety yields in winter wheat.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("besag.checks")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("besag.checks")
+A data frame with 364 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``yield``
+   yield, units of 10g
 
-      A data frame with 364 observations on the following 4 variables.
+``row``
+   row
 
-      ``yield``
-         yield, units of 10g
+``col``
+   column
 
-      ``row``
-         row
+``gen``
+   genotype/variety
 
-      ``col``
-         column
+Details
+~~~~~~~
 
-      ``gen``
-         genotype/variety
+This data was used by Besag to show the spatial variation in a field
+experiment, but Besag did not use the data for any analysis.
 
-      .. rubric:: Details
-         :name: details
+Yields of winter wheat varieties (Bounty and Huntsman) at the Plant
+Breeding Institute, Cambridge, in 1980. These data are the 'checks'
+genotypes in a larger variety trial.
 
-      This data was used by Besag to show the spatial variation in a
-      field experiment, but Besag did not use the data for any analysis.
+There is a column of checks, then five columns of new varieties. Repeat.
 
-      Yields of winter wheat varieties (Bounty and Huntsman) at the
-      Plant Breeding Institute, Cambridge, in 1980. These data are the
-      'checks' genotypes in a larger variety trial.
+Plot dimensions approx 1.5 by 4.5 metres
 
-      There is a column of checks, then five columns of new varieties.
-      Repeat.
+Field length: 52 rows \* 4.5 m = 234 m
 
-      Plot dimensions approx 1.5 by 4.5 metres
+Field width: 31 columns \* 1.5 m = 46.5
 
-      Field length: 52 rows \* 4.5 m = 234 m
+Electronic version of data supplied by David Clifford.
 
-      Field width: 31 columns \* 1.5 m = 46.5
+Source
+~~~~~~
 
-      Electronic version of data supplied by David Clifford.
+Besag, J.E. & Kempton R.A. (1986). Statistical analysis of field
+experiments using neighbouring plots. Biometrics, 42, 231-251.
+https://doi.org/10.2307/2531047
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Besag, J.E. & Kempton R.A. (1986). Statistical analysis of field
-      experiments using neighbouring plots. Biometrics, 42, 231-251.
-      https://doi.org/10.2307/2531047
+Kempton, Statistical Methods for Plant Variety Evaluation, page 91–92
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Kempton, Statistical Methods for Plant Variety Evaluation, page
-      91–92
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
+   library(agridat)
+   data(besag.checks)
+   dat <- besag.checks
+     libs(desplot)
+     desplot(dat, yield~col*row,
+             num=gen, aspect=234/46.5, # true aspect
+             main="besag.checks")
 
-      .. code:: R
-
-         ## Not run: 
-         library(agridat)
-         data(besag.checks)
-         dat <- besag.checks
-           libs(desplot)
-           desplot(dat, yield~col*row,
-                   num=gen, aspect=234/46.5, # true aspect
-                   main="besag.checks")
-
-         ## End(Not run)
+   ## End(Not run)

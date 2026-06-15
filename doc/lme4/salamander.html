@@ -1,0 +1,128 @@
+<!DOCTYPE html><html><head><title>R: Mountain dusky salamander mating</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>salamander</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Mountain dusky salamander mating
+</h2>
+
+<h3>Description</h3>
+
+<p>S. Arnold and P. Verrell conducted an experiment at the University of 
+Chicago to study breeding behaviours of mountain dusky salamanders. This
+mating data was used as an example in the &quot;Generalized Linear Models&quot; 
+textbook (McCullagh and Nelder 1989).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("salamander")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 360 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt><code>Season</code></dt><dd><p>represents the season <code>Fall</code> <code>Summer</code> of 
+1986.</p>
+</dd>
+<dt><code>Experiment</code></dt><dd><p>experiment number <code>1, 2, 3</code>.</p>
+</dd>
+<dt><code>TypeM</code></dt><dd><p>representing the two types of male salamanders being 
+studied. <code>R</code> stands for rough butt, and <code>W</code> stands for white 
+side.</p>
+</dd>
+<dt><code>TypeF</code></dt><dd><p>similar to the above except for female salamanders.</p>
+</dd>
+<dt><code>Cross</code></dt><dd><p>represents the cross between a female and male type. 
+</p>
+
+<ul>
+<li><p><code>RR</code> = rough butt female crossed with rough butt male,
+</p>
+</li>
+<li><p><code>RW</code> = rough butt female crossed with white side male,
+</p>
+</li>
+<li><p><code>WR</code> = white side female crossed with rough butt male,
+</p>
+</li>
+<li><p><code>WW</code> = white side female crossed with white side male.
+</p>
+</li></ul>
+
+</dd>
+<dt><code>Male</code></dt><dd><p>identication number of the male salamander.</p>
+</dd>
+<dt><code>Female</code></dt><dd><p>identification number of the male salamander.</p>
+</dd>
+<dt><code>Mate</code></dt><dd><p>represents whether mating has occurred. <code>1</code> = yes,
+<code>0</code> = no.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>In this example, every variable is either binary or a factor.  However, 
+most of the variables in this data set are treated like a numerical variable
+(i.e., <code>Experiment, Male, Female, Mate</code>), so we suggest turning them
+into factor variables before use. As outlined in McCullagh and Nelder (1989): 
+This experiment, conducted by S. Arnold and P. Verrell at the University of 
+Chicago, investigated whether geographically isolated populations of mountain 
+dusky salamanders would interbreed. The goal was to see the difference in 
+mating frquencies between the <code>RW</code> crosses compared to the <code>WR</code>
+crosses. Because each salamander was involved in multiple mating trials with 
+different partners, the observations are not independent. Therefore, we use a 
+model (see the <em>examples</em> section) that conditions on the specific male 
+and female salamanders in the experiment.
+</p>
+
+
+<h3>Source</h3>
+
+<p>(McCullagh and Nelder 1989)
+</p>
+
+
+<h3>References</h3>
+
+<p>McCullagh P, Nelder JA (1989).
+<em>Generalized linear models</em>.
+Routledge.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Making sure Male, Female, and CRoss are treated as factors
+salamander$Male &lt;- factor(salamander$Male)
+salamander$Female &lt;- factor(salamander$Female)
+salamander$Cross &lt;- factor(salamander$Cross)
+## Fitting the model described in 14.5.3 from McCullagh and Nelder
+sal_mod &lt;- glmer(Mate ~ (1|Female) + (1 | Male) + Cross, data = salamander,
+                 family = binomial(link = "logit"))
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

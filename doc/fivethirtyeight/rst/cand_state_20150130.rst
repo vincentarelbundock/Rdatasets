@@ -1,58 +1,53 @@
-.. container::
+=================== ===============
+cand_state_20150130 R Documentation
+=================== ===============
 
-   .. container::
+Who Will Run For President: Romney Is Out
+-----------------------------------------
 
-      =================== ===============
-      cand_state_20150130 R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Who Will Run For President: Romney Is Out
-         :name: who-will-run-for-president-romney-is-out
+The raw data behind the story "Who Will Run For President: Romney Is
+Out"
+https://fivethirtyeight.com/features/romney-not-running-for-president/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Who Will Run For President: Romney
-      Is Out"
-      https://fivethirtyeight.com/features/romney-not-running-for-president/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   cand_state_20150130
 
-      .. code:: R
+Format
+~~~~~~
 
-         cand_state_20150130
+A data frame with 27 rows representing potential presidential primary
+candidates and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+person
+   Potential presidential candidate
 
-      A data frame with 27 rows representing potential presidential
-      primary candidates and 5 variables:
+party
+   Political party
 
-      person
-         Potential presidential candidate
+date
+   Date of event
 
-      party
-         Political party
+latest
+   Latest statement
 
-      date
-         Date of event
+score
+   Likelihood of running score, 1 = Not running, 5 = Definitely running
 
-      latest
-         Latest statement
+Source
+~~~~~~
 
-      score
-         Likelihood of running score, 1 = Not running, 5 = Definitely
-         running
+See
+https://github.com/fivethirtyeight/data/tree/master/potential-candidates
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      See
-      https://github.com/fivethirtyeight/data/tree/master/potential-candidates
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``cand_events_20150130``, ``cand_events_20150114``, and
-      ``cand_state_20150114``
+``cand_events_20150130``, ``cand_events_20150114``, and
+``cand_state_20150114``

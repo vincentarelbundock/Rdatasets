@@ -1,43 +1,39 @@
-.. container::
+====== ===============
+cement R Documentation
+====== ===============
 
-   .. container::
+Breaking strength of cement data
+--------------------------------
 
-      ====== ===============
-      cement R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Breaking strength of cement data
-         :name: breaking-strength-of-cement-data
+Breaking strength of cement data
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Breaking strength of cement data
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   cement
 
-      .. code:: R
+Format
+~~~~~~
 
-         cement
+A data frame with 36 rows and 3 columns:
 
-      .. rubric:: Format
-         :name: format
+strength
+   Breaking strength in pounds per square inch
 
-      A data frame with 36 rows and 3 columns:
+gauger
+   Three different gauger machines which mixes cement with water
 
-      strength
-         Breaking strength in pounds per square inch
+breaker
+   Three different breakers breaking the cement cubes
 
-      gauger
-         Three different gauger machines which mixes cement with water
+Examples
+~~~~~~~~
 
-      breaker
-         Three different breakers breaking the cement cubes
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-          summary(cement)
+    summary(cement)

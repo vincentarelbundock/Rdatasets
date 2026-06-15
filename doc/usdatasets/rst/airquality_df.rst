@@ -1,57 +1,52 @@
-.. container::
+============= ===============
+airquality_df R Documentation
+============= ===============
 
-   .. container::
+New York Air Quality Measurements
+---------------------------------
 
-      ============= ===============
-      airquality_df R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: New York Air Quality Measurements
-         :name: new-york-air-quality-measurements
+The dataset name has been changed to 'airquality_df' to avoid confusion
+with other packages in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the 'usdatasets' package and assists
+users in identifying its specific characteristics. The suffix 'df'
+identifies the dataset as a data frame, helping to differentiate it from
+other datasets within the package. The original content of the dataset
+has not been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'airquality_df' to avoid
-      confusion with other packages in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      'usdatasets' package and assists users in identifying its specific
-      characteristics. The suffix 'df' identifies the dataset as a data
-      frame, helping to differentiate it from other datasets within the
-      package. The original content of the dataset has not been modified
-      in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(airquality_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(airquality_df)
+A data frame with 153 observations and 6 variables:
 
-      .. rubric:: Format
-         :name: format
+Ozone
+   Ozone concentration (parts per billion) from 1 to 331.
 
-      A data frame with 153 observations and 6 variables:
+Solar.R
+   Solar radiation (watts per square meter).
 
-      Ozone
-         Ozone concentration (parts per billion) from 1 to 331.
+Wind
+   Wind speed (miles per hour).
 
-      Solar.R
-         Solar radiation (watts per square meter).
+Temp
+   Temperature (degrees Fahrenheit).
 
-      Wind
-         Wind speed (miles per hour).
+Month
+   Month of the observation (integer from 5 to 9).
 
-      Temp
-         Temperature (degrees Fahrenheit).
+Day
+   Day of the observation (integer from 1 to 31).
 
-      Month
-         Month of the observation (integer from 5 to 9).
+Source
+~~~~~~
 
-      Day
-         Day of the observation (integer from 1 to 31).
-
-      .. rubric:: Source
-         :name: source
-
-      United States Environmental Protection Agency (EPA).
+United States Environmental Protection Agency (EPA).

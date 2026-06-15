@@ -1,48 +1,44 @@
-.. container::
+========== ===============
+mdbAVtJtoD R Documentation
+========== ===============
 
-   .. container::
+Murray-Darling basin monthly temperatures
+-----------------------------------------
 
-      ========== ===============
-      mdbAVtJtoD R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Murray-Darling basin monthly temperatures
-         :name: murray-darling-basin-monthly-temperatures
+Australian Murray-Darling basin monthly temperatures
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Australian Murray-Darling basin monthly temperatures
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("mdbAVtJtoD")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("mdbAVtJtoD")
+The format is: Time-Series [1:867] from 1950 to 2022: 27.44 26.84 24.4
+22.27 8.41 ...
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      The format is: Time-Series [1:867] from 1950 to 2022: 27.44 26.84
-      24.4 22.27 8.41 ...
+Australian Bureau of Meteorology web pages:
 
-      .. rubric:: Source
-         :name: source
+Go to the url http://www.bom.gov.au/climate/change/, choose timeseries
+to display, then click "Download data"
 
-      Australian Bureau of Meteorology web pages:
+The website gives anomalies from 1961-1990 averages. The monthly means
+have been added, in order to obtain a series. The monthly means are
+shown along with plots for the individual months.
 
-      Go to the url http://www.bom.gov.au/climate/change/, choose
-      timeseries to display, then click "Download data"
+Examples
+~~~~~~~~
 
-      The website gives anomalies from 1961-1990 averages. The monthly
-      means have been added, in order to obtain a series. The monthly
-      means are shown along with plots for the individual months.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(mdbAVtJtoD)
-         plot(window(mdbAVtJtoD, start=c(2000,1)), ylab="Mean monthly data")
+   data(mdbAVtJtoD)
+   plot(window(mdbAVtJtoD, start=c(2000,1)), ylab="Mean monthly data")

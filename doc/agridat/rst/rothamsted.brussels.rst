@@ -1,81 +1,75 @@
-.. container::
+=================== ===============
+rothamsted.brussels R Documentation
+=================== ===============
 
-   .. container::
+RCB experiment of brussels sprouts, 9 fertilizer treatments
+-----------------------------------------------------------
 
-      =================== ===============
-      rothamsted.brussels R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: RCB experiment of brussels sprouts, 9 fertilizer
-         treatments
-         :name: rcb-experiment-of-brussels-sprouts-9-fertilizer-treatments
+RCB experiment of brussels sprouts, 9 fertilizer treatments
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      RCB experiment of brussels sprouts, 9 fertilizer treatments
+A data frame with 48 observations on the following 5 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row
 
-      A data frame with 48 observations on the following 5 variables.
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   yield of saleable sprouts, pounds
 
-      ``col``
-         column
+``trt``
+   treatment, 9 levels
 
-      ``yield``
-         yield of saleable sprouts, pounds
+``block``
+   block, 4 levels
 
-      ``trt``
-         treatment, 9 levels
+Details
+~~~~~~~
 
-      ``block``
-         block, 4 levels
+The block numbers are arbitrary, and may not match the orignal source.
 
-      .. rubric:: Details
-         :name: details
+Plots were 10 yards x 14 yards. Plot orientation is not clear.
 
-      The block numbers are arbitrary, and may not match the orignal
-      source.
+Source
+~~~~~~
 
-      Plots were 10 yards x 14 yards. Plot orientation is not clear.
+Rothamsted Experimental Station Report 1934-36. Brussels sprouts: effect
+of sulphate of ammonia, poultry manure, soot and rape dust, pp. 191-192.
+Harpenden: Lawes Agricultural Trust.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Rothamsted Experimental Station Report 1934-36. Brussels sprouts:
-      effect of sulphate of ammonia, poultry manure, soot and rape dust,
-      pp. 191-192. Harpenden: Lawes Agricultural Trust.
+McCullagh, P. and Clifford, D., (2006). Evidence for conformal
+invariance of crop yields, *Proceedings of the Royal Society A:
+Mathematical, Physical and Engineering Science*, 462, 2119–2143.
+https://doi.org/10.1098/rspa.2006.1667
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      McCullagh, P. and Clifford, D., (2006). Evidence for conformal
-      invariance of crop yields, *Proceedings of the Royal Society A:
-      Mathematical, Physical and Engineering Science*, 462, 2119–2143.
-      https://doi.org/10.1098/rspa.2006.1667
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
+     
+   library(agridat)
+   data(rothamsted.brussels)
+   dat <- rothamsted.brussels
 
-      .. code:: R
+   libs(lattice)
+   bwplot(yield~trt, dat, main="rothamsted.brussels")
 
-         ## Not run: 
-           
-         library(agridat)
-         data(rothamsted.brussels)
-         dat <- rothamsted.brussels
-
-         libs(lattice)
-         bwplot(yield~trt, dat, main="rothamsted.brussels")
-
-           libs(desplot)
-           desplot(dat, yield~col*row,
-                   num=trt, out1=block, cex=1, # aspect unknown
-                   main="rothamsted.brussels")
+     libs(desplot)
+     desplot(dat, yield~col*row,
+             num=trt, out1=block, cex=1, # aspect unknown
+             main="rothamsted.brussels")
 
 
-         ## End(Not run)
+   ## End(Not run)

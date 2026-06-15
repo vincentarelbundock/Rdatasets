@@ -1,48 +1,42 @@
-.. container::
+========== ===============
+mens400_ts R Documentation
+========== ===============
 
-   .. container::
+Winning Times in Olympic Men's 400m Track Final
+-----------------------------------------------
 
-      ========== ===============
-      mens400_ts R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Winning Times in Olympic Men's 400m Track Final
-         :name: winning-times-in-olympic-mens-400m-track-final
+The dataset name has been changed to 'mens400_ts' to avoid confusion
+with other packages in the R ecosystem from which datasets have been
+sourced. The suffix 'ts' indicates that this dataset is a time series
+object. This naming convention helps distinguish this dataset as part of
+the 'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'mens400_ts' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. The suffix 'ts' indicates that this
-      dataset is a time series object. This naming convention helps
-      distinguish this dataset as part of the 'timeseriesdatasets'
-      package and assists users in identifying its specific
-      characteristics. The original content of the dataset has not been
-      modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(mens400_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(mens400_ts)
+A time series object of 31 observations on the following:
 
-      .. rubric:: Format
-         :name: format
+Time-Series [1:31]
+   Winning times (in seconds) in the Olympic men's 400m track final.
 
-      A time series object of 31 observations on the following:
+Details
+~~~~~~~
 
-      Time-Series [1:31]
-         Winning times (in seconds) in the Olympic men's 400m track
-         final.
+The data covers the period from 1896 to 2016.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The data covers the period from 1896 to 2016.
-
-      .. rubric:: Source
-         :name: source
-
-      International Olympic Committee (IOC)
+International Olympic Committee (IOC)

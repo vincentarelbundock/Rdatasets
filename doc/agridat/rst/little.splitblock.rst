@@ -1,112 +1,107 @@
-.. container::
+================= ===============
+little.splitblock R Documentation
+================= ===============
 
-   .. container::
+Split-block experiment of sugar beets
+-------------------------------------
 
-      ================= ===============
-      little.splitblock R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Split-block experiment of sugar beets
-         :name: split-block-experiment-of-sugar-beets
+Split-block experiment of sugar beets.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Split-block experiment of sugar beets.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("little.splitblock")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("little.splitblock")
+A data frame with 80 observations on the following 6 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row
 
-      A data frame with 80 observations on the following 6 variables.
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   sugar beet yield, tons/acre
 
-      ``col``
-         column
+``harvest``
+   harvest date, weeks after planting
 
-      ``yield``
-         sugar beet yield, tons/acre
+``nitro``
+   nitrogen, pounds/acre
 
-      ``harvest``
-         harvest date, weeks after planting
+``block``
+   block
 
-      ``nitro``
-         nitrogen, pounds/acre
+Details
+~~~~~~~
 
-      ``block``
-         block
+Four rates of nitrogen, laid out as a 4x4 Latin-square experiment.
 
-      .. rubric:: Details
-         :name: details
+Within each column block, the sub-plots are strips (across 4 rows) of 5
+different harvest dates.
 
-      Four rates of nitrogen, laid out as a 4x4 Latin-square experiment.
+The use of sub-plots a s strips necessitates care when determining the
+error terms in the ANOVA table.
 
-      Within each column block, the sub-plots are strips (across 4 rows)
-      of 5 different harvest dates.
+Note, Little has yield value of 22.3 for row 3, column I-H3. This data
+uses 23.3 in order to match the marginal totals given by Little.
 
-      The use of sub-plots a s strips necessitates care when determining
-      the error terms in the ANOVA table.
+Source
+~~~~~~
 
-      Note, Little has yield value of 22.3 for row 3, column I-H3. This
-      data uses 23.3 in order to match the marginal totals given by
-      Little.
+Thomas M. Little, F. Jackson Hills. (1978) *Agricultural
+Experimentation*
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Thomas M. Little, F. Jackson Hills. (1978) *Agricultural
-      Experimentation*
+None.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(little.splitblock)
+   dat <- little.splitblock
 
-         ## Not run: 
+   # Match marginal totals given by Little.
+   ## sum(dat$yield)
+   ## with(dat, tapply(yield,col,sum))
+   ## with(dat, tapply(yield,row,sum))
 
-         library(agridat)
-         data(little.splitblock)
-         dat <- little.splitblock
-
-         # Match marginal totals given by Little.
-         ## sum(dat$yield)
-         ## with(dat, tapply(yield,col,sum))
-         ## with(dat, tapply(yield,row,sum))
-
-         # Layout shown by Little figure 10.2
-         libs(desplot)
-         desplot(dat, yield ~ col*row,
-                 out1=block, out2=col, col=nitro, cex=1, num=harvest,
-                 main="little.splitblock")
+   # Layout shown by Little figure 10.2
+   libs(desplot)
+   desplot(dat, yield ~ col*row,
+           out1=block, out2=col, col=nitro, cex=1, num=harvest,
+           main="little.splitblock")
 
 
-         # Convert continuous traits to factors
-         dat <- transform(dat, R=factor(row), C=factor(block),
-                          H=factor(harvest), N=factor(nitro))
+   # Convert continuous traits to factors
+   dat <- transform(dat, R=factor(row), C=factor(block),
+                    H=factor(harvest), N=factor(nitro))
 
-         if(0){
-           libs(lattice)
-           xyplot(yield ~ nitro|H,dat)
-           xyplot(yield ~ harvest|N,dat)
-         }
+   if(0){
+     libs(lattice)
+     xyplot(yield ~ nitro|H,dat)
+     xyplot(yield ~ harvest|N,dat)
+   }
 
-         # Anova table matches Little, table 10.3
-         m1 <- aov(yield ~ R + C + N + H + N:H +
-                     Error(R:C:N + C:H + C:N:H), data=dat)
-         summary(m1)
+   # Anova table matches Little, table 10.3
+   m1 <- aov(yield ~ R + C + N + H + N:H +
+               Error(R:C:N + C:H + C:N:H), data=dat)
+   summary(m1)
 
 
-         ## End(Not run)
+   ## End(Not run)

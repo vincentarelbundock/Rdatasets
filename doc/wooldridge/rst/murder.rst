@@ -1,80 +1,75 @@
-.. container::
+====== ===============
+murder R Documentation
+====== ===============
 
-   .. container::
+murder
+------
 
-      ====== ===============
-      murder R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: murder
-         :name: murder
+Wooldridge Source: From the Statistical Abstract of the United States,
+1995 (Tables 310 and 357), 1992 (Table 289). The execution data
+originally come from the U.S. Bureau of Justice Statistics, Capital
+Punishment Annual. Data loads lazily.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Wooldridge Source: From the Statistical Abstract of the United
-      States, 1995 (Tables 310 and 357), 1992 (Table 289). The execution
-      data originally come from the U.S. Bureau of Justice Statistics,
-      Capital Punishment Annual. Data loads lazily.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data('murder')
 
-      .. code:: R
+Format
+~~~~~~
 
-         data('murder')
+A data.frame with 153 observations on 13 variables:
 
-      .. rubric:: Format
-         :name: format
+- **id:** state identifier
 
-      A data.frame with 153 observations on 13 variables:
+- **state:** postal code
 
-      -  **id:** state identifier
+- **year:** 87, 90, or 93
 
-      -  **state:** postal code
+- **mrdrte:** murders per 100,000 people
 
-      -  **year:** 87, 90, or 93
+- **exec:** total executions, past 3 years
 
-      -  **mrdrte:** murders per 100,000 people
+- **unem:** annual unem. rate
 
-      -  **exec:** total executions, past 3 years
+- **d90:** =1 if year == 90
 
-      -  **unem:** annual unem. rate
+- **d93:** =1 if year == 93
 
-      -  **d90:** =1 if year == 90
+- **cmrdrte:** mrdrte - mrdrte[\_n-1]
 
-      -  **d93:** =1 if year == 93
+- **cexec:** exec - exec[\_n-1]
 
-      -  **cmrdrte:** mrdrte - mrdrte[\_n-1]
+- **cunem:** unem - unem[\_n-1]
 
-      -  **cexec:** exec - exec[\_n-1]
+- **cexec_1:** cexec[\_n-1]
 
-      -  **cunem:** unem - unem[\_n-1]
+- **cunem_1:** cunem[\_n-1]
 
-      -  **cexec_1:** cexec[\_n-1]
+Notes
+~~~~~
 
-      -  **cunem_1:** cunem[\_n-1]
+Prosecutors in different counties might pursue the death penalty with
+different intensities, so it makes sense to collect murder and execution
+data at the county level. This could be combined with better demographic
+information at the county level, along with better economic data (say,
+on wages for various kinds of employment).
 
-      .. rubric:: Notes
-         :name: notes
+Used in Text: pages 480, 505, 548
 
-      Prosecutors in different counties might pursue the death penalty
-      with different intensities, so it makes sense to collect murder
-      and execution data at the county level. This could be combined
-      with better demographic information at the county level, along
-      with better economic data (say, on wages for various kinds of
-      employment).
+Source
+~~~~~~
 
-      Used in Text: pages 480, 505, 548
+https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-          str(murder)
+    str(murder)

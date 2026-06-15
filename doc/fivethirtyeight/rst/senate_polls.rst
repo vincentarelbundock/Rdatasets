@@ -1,48 +1,43 @@
-.. container::
+============ ===============
+senate_polls R Documentation
+============ ===============
 
-   .. container::
+Early Senate Polls Have Plenty to Tell Us About November
+--------------------------------------------------------
 
-      ============ ===============
-      senate_polls R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Early Senate Polls Have Plenty to Tell Us About
-         November
-         :name: early-senate-polls-have-plenty-to-tell-us-about-november
+The raw data behind the story "Early Senate Polls Have Plenty to Tell Us
+About November"
+https://fivethirtyeight.com/features/early-senate-polls-have-plenty-to-tell-us-about-november/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Early Senate Polls Have Plenty to
-      Tell Us About November"
-      https://fivethirtyeight.com/features/early-senate-polls-have-plenty-to-tell-us-about-november/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   senate_polls
 
-      .. code:: R
+Format
+~~~~~~
 
-         senate_polls
+A data frame with 107 rows representing a poll and 4 variables:
 
-      .. rubric:: Format
-         :name: format
+year
+   Year
 
-      A data frame with 107 rows representing a poll and 4 variables:
+election_result
+   Final poll margin
 
-      year
-         Year
+presidential_approval
+   Early presidential approval rating
 
-      election_result
-         Final poll margin
+poll_average
+   Early poll margin
 
-      presidential_approval
-         Early presidential approval rating
+Source
+~~~~~~
 
-      poll_average
-         Early poll margin
-
-      .. rubric:: Source
-         :name: source
-
-      See
-      https://github.com/fivethirtyeight/data/tree/master/early-senate-polls
+See
+https://github.com/fivethirtyeight/data/tree/master/early-senate-polls

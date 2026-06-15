@@ -1,66 +1,59 @@
-.. container::
+========== ===============
+foul_balls R Documentation
+========== ===============
 
-   .. container::
+We Watched 906 Foul Balls To Find Out Where The Most Dangerous Ones
+-------------------------------------------------------------------
 
-      ========== ===============
-      foul_balls R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: We Watched 906 Foul Balls To Find Out Where The Most
-         Dangerous Ones
-         :name: we-watched-906-foul-balls-to-find-out-where-the-most-dangerous-ones
+The raw data behind the story "We Watched 906 Foul Balls To Find Out
+Where The Most Dangerous Ones"
+https://fivethirtyeight.com/features/we-watched-906-foul-balls-to-find-out-where-the-most-dangerous-ones-land/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "We Watched 906 Foul Balls To Find
-      Out Where The Most Dangerous Ones"
-      https://fivethirtyeight.com/features/we-watched-906-foul-balls-to-find-out-where-the-most-dangerous-ones-land/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   foul_balls
 
-      .. code:: R
+Format
+~~~~~~
 
-         foul_balls
+A data frame with 906 rows representing foul balls and 7 variables:
 
-      .. rubric:: Format
-         :name: format
+matchup
+   the two teams that played
 
-      A data frame with 906 rows representing foul balls and 7
-      variables:
+game_date
+   date of the most foul heavy day at each stadium
 
-      matchup
-         the two teams that played
+type_of_hit
+   fly, grounder, line drive, popup, batter hits self
 
-      game_date
-         date of the most foul heavy day at each stadium
+exit_velocity
+   recorded velocity of each hit
 
-      type_of_hit
-         fly, grounder, line drive, popup, batter hits self
+predicted_zone
+   zone predicted the foul ball would land in gauging angles
 
-      exit_velocity
-         recorded velocity of each hit
+camera_zone
+   actual zone the ball landed it confirmed by camera angles
 
-      predicted_zone
-         zone predicted the foul ball would land in gauging angles
+used_zone
+   zone used for analysis
 
-      camera_zone
-         actual zone the ball landed it confirmed by camera angles
+Details
+~~~~~~~
 
-      used_zone
-         zone used for analysis
+Information on the Zones from the 538 original article: Zones 1, 2 and 3
+are the areas behind home plate and the dugouts. Zones 4 and 5 make up
+most of the foul territory outside the baselines up until the foul pole.
+Zones 6 and 7 include the areas beyond the foul poles.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      Information on the Zones from the 538 original article: Zones 1, 2
-      and 3 are the areas behind home plate and the dugouts. Zones 4 and
-      5 make up most of the foul territory outside the baselines up
-      until the foul pole. Zones 6 and 7 include the areas beyond the
-      foul poles.
-
-      .. rubric:: Source
-         :name: source
-
-      Baseball Savant https://baseballsavant.mlb.com/.
+Baseball Savant https://baseballsavant.mlb.com/.

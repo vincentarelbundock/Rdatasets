@@ -1,51 +1,46 @@
-.. container::
+=============== ===============
+chess_transfers R Documentation
+=============== ===============
 
-   .. container::
+Chess Transfers
+---------------
 
-      =============== ===============
-      chess_transfers R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Chess Transfers
-         :name: chess-transfers
+The raw data behind the story "American Chess Is Great Again"
+https://fivethirtyeight.com/features/american-chess-is-great-again/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "American Chess Is Great Again"
-      https://fivethirtyeight.com/features/american-chess-is-great-again/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   chess_transfers
 
-      .. code:: R
+Format
+~~~~~~
 
-         chess_transfers
+A data frame with 932 rows representing international player transfers
+and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+url
+   The corresponding website on the World Chess Federation page which
+   details the transfers of a given year.
 
-      A data frame with 932 rows representing international player
-      transfers and 5 variables:
+id
+   An numeric identifier for the chess player who transferred.
 
-      url
-         The corresponding website on the World Chess Federation page
-         which details the transfers of a given year.
+federation
+   The current national federation of the chess player
 
-      id
-         An numeric identifier for the chess player who transferred.
+form_fed
+   The national federation from which the chess player has transferred.
 
-      federation
-         The current national federation of the chess player
+transfer_date
+   The date at which the transfer took place.
 
-      form_fed
-         The national federation from which the chess player has
-         transferred.
+Source
+~~~~~~
 
-      transfer_date
-         The date at which the transfer took place.
-
-      .. rubric:: Source
-         :name: source
-
-      World Chess Federation
+World Chess Federation

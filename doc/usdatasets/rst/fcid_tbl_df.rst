@@ -1,45 +1,40 @@
-.. container::
+=========== ===============
+fcid_tbl_df R Documentation
+=========== ===============
 
-   .. container::
+Summary of male heights from USDA Food Commodity Intake Database
+----------------------------------------------------------------
 
-      =========== ===============
-      fcid_tbl_df R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Summary of male heights from USDA Food Commodity
-         Intake Database
-         :name: summary-of-male-heights-from-usda-food-commodity-intake-database
+The dataset name has been changed to 'fcid_tbl_df' to avoid confusion
+with other packages in the R ecosystem from which datasets have been
+sourced. This naming convention helps distinguish this dataset as part
+of the 'usdatasets' package and assists users in identifying its
+specific characteristics. The suffix 'tbl_df' identifies the dataset as
+a tibble. The original content of the dataset has not been modified in
+any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'fcid_tbl_df' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. This naming convention helps
-      distinguish this dataset as part of the 'usdatasets' package and
-      assists users in identifying its specific characteristics. The
-      suffix 'tbl_df' identifies the dataset as a tibble. The original
-      content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(fcid_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(fcid_tbl_df)
+A tibble with 100 observations and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+height
+   Height of the individual (numeric).
 
-      A tibble with 100 observations and 2 variables:
+num_of_adults
+   Number of adults in the household (integer).
 
-      height
-         Height of the individual (numeric).
+Source
+~~~~~~
 
-      num_of_adults
-         Number of adults in the household (integer).
-
-      .. rubric:: Source
-         :name: source
-
-      Family Characteristics and Income Study
+Family Characteristics and Income Study

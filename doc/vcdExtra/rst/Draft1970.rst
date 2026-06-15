@@ -1,98 +1,86 @@
-.. container::
+========= ===============
+Draft1970 R Documentation
+========= ===============
 
-   .. container::
+USA 1970 Draft Lottery Data
+---------------------------
 
-      ========= ===============
-      Draft1970 R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: USA 1970 Draft Lottery Data
-         :name: usa-1970-draft-lottery-data
+This data set gives the results of the 1970 US draft lottery, in the
+form of a data frame.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      This data set gives the results of the 1970 US draft lottery, in
-      the form of a data frame.
+A data frame with 366 observations on the following 3 variables.
 
-      .. rubric:: Usage
-         :name: usage
+``Day``
+   day of the year, 1:366
 
-      .. code:: R
+``Rank``
+   draft priority rank of people born on that day
 
-         data(Draft1970)
+``Month``
+   an ordered factor with levels ``Jan`` < ``Feb`` ... < ``Dec``
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      A data frame with 366 observations on the following 3 variables.
+The draft lottery was used to determine the order in which eligible men
+would be called to the Selective Service draft. The days of the year
+(including February 29) were represented by the numbers 1 through 366
+written on slips of paper. The slips were placed in separate plastic
+capsules that were mixed in a shoebox and then dumped into a deep glass
+jar. Capsules were drawn from the jar one at a time.
 
-      ``Day``
-         day of the year, 1:366
+The first number drawn was 258 (September 14), so all registrants with
+that birthday were assigned lottery number ``Rank`` 1. The second number
+drawn corresponded to April 24, and so forth. All men of draft age (born
+1944 to 1950) who shared a birthdate would be called to serve at once.
+The first 195 birthdates drawn were later called to serve in the order
+they were drawn; the last of these was September 24.
 
-      ``Rank``
-         draft priority rank of people born on that day
+Source
+~~~~~~
 
-      ``Month``
-         an ordered factor with levels ``Jan`` < ``Feb`` ... < ``Dec``
+Starr, N. (1997). Nonrandom Risk: The 1970 Draft Lottery, *Journal of
+Statistics Education*, v.5, n.2
+`doi:10.1080/10691898.1997.11910534 <https://doi.org/10.1080/10691898.1997.11910534>`__
 
-      .. rubric:: Details
-         :name: details
+References
+~~~~~~~~~~
 
-      The draft lottery was used to determine the order in which
-      eligible men would be called to the Selective Service draft. The
-      days of the year (including February 29) were represented by the
-      numbers 1 through 366 written on slips of paper. The slips were
-      placed in separate plastic capsules that were mixed in a shoebox
-      and then dumped into a deep glass jar. Capsules were drawn from
-      the jar one at a time.
+Fienberg, S. E. (1971), "Randomization and Social Affairs: The 1970
+Draft Lottery," *Science*, 171, 255-261.
 
-      The first number drawn was 258 (September 14), so all registrants
-      with that birthday were assigned lottery number ``Rank`` 1. The
-      second number drawn corresponded to April 24, and so forth. All
-      men of draft age (born 1944 to 1950) who shared a birthdate would
-      be called to serve at once. The first 195 birthdates drawn were
-      later called to serve in the order they were drawn; the last of
-      these was September 24.
+https://en.wikipedia.org/wiki/Draft_lottery_(1969)
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      Starr, N. (1997). Nonrandom Risk: The 1970 Draft Lottery, *Journal
-      of Statistics Education*, v.5, n.2
-      http://jse.amstat.org/v5n2/datasets.starr.html
+``Draft1970table``
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Fienberg, S. E. (1971), "Randomization and Social Affairs: The
-      1970 Draft Lottery," *Science*, 171, 255-261.
+.. code:: R
 
-      https://en.wikipedia.org/wiki/Draft_lottery_(1969)
 
-      .. rubric:: See Also
-         :name: see-also
+   data(Draft1970)
 
-      ``Draft1970table``
+   # scatterplot
+   plot(Rank ~ Day, data=Draft1970)
+   with(Draft1970, lines(lowess(Day, Rank), col="red", lwd=2))
+   abline(lm(Rank ~ Day, data=Draft1970), col="blue")
 
-      .. rubric:: Examples
-         :name: examples
+   # boxplots
+   plot(Rank ~ Month, data=Draft1970, col="bisque")
 
-      .. code:: R
+   lm(Rank ~ Month, data=Draft1970)
+   anova(lm(Rank ~ Month, data=Draft1970))
 
-         data(Draft1970)
-
-         # scatterplot
-         plot(Rank ~ Day, data=Draft1970)
-         with(Draft1970, lines(lowess(Day, Rank), col="red", lwd=2))
-         abline(lm(Rank ~ Day, data=Draft1970), col="blue")
-          
-         # boxplots
-         plot(Rank ~ Month, data=Draft1970, col="bisque")
-
-         lm(Rank ~ Month, data=Draft1970)
-         anova(lm(Rank ~ Month, data=Draft1970))
-
-         # make the table version
-         Draft1970$Risk <- cut(Draft1970$Rank, breaks=3, labels=c("High", "Med", "Low"))
-         with(Draft1970, table(Month, Risk))
+   # make the table version
+   Draft1970$Risk <- cut(Draft1970$Rank, breaks=3, labels=c("High", "Med", "Low"))
+   with(Draft1970, table(Month, Risk))

@@ -1,77 +1,73 @@
-.. container::
+======================= ===============
+governor_state_forecast R Documentation
+======================= ===============
 
-   .. container::
+2018 Governors Forecast
+-----------------------
 
-      ======================= ===============
-      governor_state_forecast R Documentation
-      ======================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: 2018 Governors Forecast
-         :name: governors-forecast
+The raw data behind the story 'Forecasting the races for governor'
+https://projects.fivethirtyeight.com/2018-midterm-election-forecast/governor/
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story 'Forecasting the races for governor'
-      https://projects.fivethirtyeight.com/2018-midterm-election-forecast/governor/
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   governor_state_forecast
 
-      .. code:: R
+Format
+~~~~~~
 
-         governor_state_forecast
+A dataframe with 7743 rows representing state-level results of the
+classic, lite, and deluxe gubernatorial forecasts since Oct. 11, 2018.
+and 10 variables
 
-      .. rubric:: Format
-         :name: format
+forecastdate
+   date of the forecast
 
-      A dataframe with 7743 rows representing state-level results of the
-      classic, lite, and deluxe gubernatorial forecasts since Oct. 11,
-      2018. and 10 variables
+state
+   state of the forecast
 
-      forecastdate
-         date of the forecast
+candidate
+   name of the candidate
 
-      state
-         state of the forecast
+party
+   party of the candidate
 
-      candidate
-         name of the candidate
+incumbent
+   whether the candidate is incumbent
 
-      party
-         party of the candidate
+model
+   the model of the forecast
 
-      incumbent
-         whether the candidate is incumbent
+win_probability
+   the probability of the corresponding party winning
 
-      model
-         the model of the forecast
+voteshare
+   the voteshare of the corresponding party
 
-      win_probability
-         the probability of the corresponding party winning
+p10_voteshare
+   the top 10 percentile of the voteshare
 
-      voteshare
-         the voteshare of the corresponding party
+p90_voteshare
+   the top 00 percentile of the voteshare
 
-      p10_voteshare
-         the top 10 percentile of the voteshare
+Note
+~~~~
 
-      p90_voteshare
-         the top 00 percentile of the voteshare
+The original dataset included two empty column "district" and
+"special",which were removed.
 
-      .. rubric:: Note
-         :name: note
+Source
+~~~~~~
 
-      The original dataset included two empty column "district" and
-      "special",which were removed.
+FiveThirtyEight’s House, Senate And Governor Models Methodology:
+https://fivethirtyeight.com/methodology/how-fivethirtyeights-house-and-senate-models-work/
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      FiveThirtyEight’s House, Senate And Governor Models Methodology:
-      https://fivethirtyeight.com/methodology/how-fivethirtyeights-house-and-senate-models-work/
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``governor_national_forecast``
+``governor_national_forecast``

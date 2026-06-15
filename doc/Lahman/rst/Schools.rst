@@ -1,79 +1,76 @@
-.. container::
+======= ===============
+Schools R Documentation
+======= ===============
 
-   .. container::
+Schools table
+-------------
 
-      ======= ===============
-      Schools R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Schools table
-         :name: schools-table
+Information on schools players attended, by school
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Information on schools players attended, by school
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Schools)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Schools)
+A data frame with 1287 observations on the following 5 variables.
 
-      .. rubric:: Format
-         :name: format
+``schoolID``
+   school ID code
 
-      A data frame with 1207 observations on the following 5 variables.
+``name_full``
+   school name
 
-      ``schoolID``
-         school ID code
+``city``
+   city where school is located
 
-      ``name_full``
-         school name
+``state``
+   state where school's city is located
 
-      ``city``
-         city where school is located
+``country``
+   country where school is located
 
-      ``state``
-         state where school's city is located
+Source
+~~~~~~
 
-      ``country``
-         country where school is located
+Lahman, S. (2026) Lahman's Baseball Database, 1871-2025, 2026 version,
+https://sabr.org/lahman-database/
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Lahman, S. (2025) Lahman's Baseball Database, 1871-2024, 2025
-      version, https://sabr.org/lahman-database/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   require("dplyr")
 
-         require("dplyr")
+   # How many different schools are listed in each state?
+   table(Schools$state)
+    
+   # How many different schools are listed in each country?
+   table(Schools$country)
 
-         # How many different schools are listed in each state?
-         table(Schools$state)
-          
-         # How many different schools are listed in each country?
-         table(Schools$country)
+   # Top 20 schools 
+   schoolInfo <- Schools %>% select(-country)
 
-         # Top 20 schools 
-         schoolInfo <- Schools %>% select(-country)
+   schoolCount <- CollegePlaying %>%
+                    group_by(schoolID) %>%
+                    summarise(players = length(schoolID)) %>%
+                    left_join(schoolInfo, by = "schoolID") %>%
+                    arrange(desc(players)) 
+   head(schoolCount, 20)
 
-         schoolCount <- CollegePlaying %>%
-                          group_by(schoolID) %>%
-                          summarise(players = length(schoolID)) %>%
-                          left_join(schoolInfo, by = "schoolID") %>%
-                          arrange(desc(players)) 
-         head(schoolCount, 20)
-
-         # sum counts by state
-         schoolStates <- schoolCount %>%
-                           group_by(state) %>%
-                           summarise(players = sum(players),
-                                     schools = length(state))
-         str(schoolStates)
-         summary(schoolStates)
+   # sum counts by state
+   schoolStates <- schoolCount %>%
+                     group_by(state) %>%
+                     summarise(players = sum(players),
+                               schools = length(state))
+   str(schoolStates)
+   summary(schoolStates)

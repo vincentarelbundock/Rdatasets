@@ -1,63 +1,57 @@
-.. container::
+============ ===============
+uschange_mts R Documentation
+============ ===============
 
-   .. container::
+Growth Rates of Personal Consumption and Personal Income in the USA
+-------------------------------------------------------------------
 
-      ============ ===============
-      uschange_mts R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Growth Rates of Personal Consumption and Personal
-         Income in the USA
-         :name: growth-rates-of-personal-consumption-and-personal-income-in-the-usa
+The dataset name has been changed to 'uschange_mts' to avoid confusion
+with other datasets in the R ecosystem from which data have been
+sourced. The suffix 'mts' indicates that this dataset is a multivariate
+time series object. This naming convention helps distinguish this
+dataset as part of the 'timeseriesdatasets' package and assists users in
+identifying its specific characteristics. The original content of the
+dataset has not been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'uschange_mts' to avoid
-      confusion with other datasets in the R ecosystem from which data
-      have been sourced. The suffix 'mts' indicates that this dataset is
-      a multivariate time series object. This naming convention helps
-      distinguish this dataset as part of the 'timeseriesdatasets'
-      package and assists users in identifying its specific
-      characteristics. The original content of the dataset has not been
-      modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(uschange_mts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(uschange_mts)
+A 'ts' object with 187 observations and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+Consumption
+   Growth rate of personal consumption.
 
-      A 'ts' object with 187 observations and 5 variables:
+Income
+   Growth rate of personal income.
 
-      Consumption
-         Growth rate of personal consumption.
+Production
+   Growth rate of industrial production.
 
-      Income
-         Growth rate of personal income.
+Savings
+   Growth rate of personal savings.
 
-      Production
-         Growth rate of industrial production.
+Unemployment
+   Growth rate of unemployment.
 
-      Savings
-         Growth rate of personal savings.
+Details
+~~~~~~~
 
-      Unemployment
-         Growth rate of unemployment.
+This dataset contains quarterly growth rates of various economic
+indicators in the USA from 1970 to 2016. The variables include rates of
+personal consumption, personal income, industrial production, personal
+savings, and unemployment.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains quarterly growth rates of various economic
-      indicators in the USA from 1970 to 2016. The variables include
-      rates of personal consumption, personal income, industrial
-      production, personal savings, and unemployment.
-
-      .. rubric:: Source
-         :name: source
-
-      Federal Reserve Economic Data (FRED).
+Federal Reserve Economic Data (FRED).

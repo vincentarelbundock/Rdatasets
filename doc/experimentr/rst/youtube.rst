@@ -1,39 +1,34 @@
-.. container::
+======= ===============
+youtube R Documentation
+======= ===============
 
-   .. container::
+Data from Rahmani's YouTube experiment
+--------------------------------------
 
-      ======= ===============
-      youtube R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Data from Rahmani's YouTube experiment
-         :name: data-from-rahmanis-youtube-experiment
+This dataset is used in the exercises of Chapter 3 from the textbook.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset is used in the exercises of Chapter 3 from the
-      textbook.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   youtube
 
-      .. code:: R
+Format
+~~~~~~
 
-         youtube
+A data frame with 30 rows and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+group
+   Treatment condition. 1 = treatment, 0 = control
 
-      A data frame with 30 rows and 2 variables:
+outcome
+   Observed outcome
 
-      group
-         Treatment condition. 1 = treatment, 0 = control
+Source
+~~~~~~
 
-      outcome
-         Observed outcome
-
-      .. rubric:: Source
-         :name: source
-
-      Rahmani, Bardia. “Practicum Experiment” Columbia University, 2020.
+Rahmani, Bardia. “Practicum Experiment” Columbia University, 2020.

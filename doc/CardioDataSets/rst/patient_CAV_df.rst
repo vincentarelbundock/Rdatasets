@@ -1,62 +1,57 @@
-.. container::
+============== ===============
+patient_CAV_df R Documentation
+============== ===============
 
-   .. container::
+CAV in Heart Transplant Patients
+--------------------------------
 
-      ============== ===============
-      patient_CAV_df R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: CAV in Heart Transplant Patients
-         :name: cav-in-heart-transplant-patients
+This dataset, patient_CAV_df, is a data frame containing longitudinal
+follow-up data from heart transplant recipients at Papworth Hospital,
+UK. It tracks 2,803 angiographic examinations for the onset of cardiac
+allograft vasculopathy and mortality.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, patient_CAV_df, is a data frame containing
-      longitudinal follow-up data from heart transplant recipients at
-      Papworth Hospital, UK. It tracks 2,803 angiographic examinations
-      for the onset of cardiac allograft vasculopathy and mortality.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(patient_CAV_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(patient_CAV_df)
+A data frame with 2,803 observations and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+PTNUM
+   Patient identification number (integer)
 
-      A data frame with 2,803 observations and 5 variables:
+years
+   Time since transplant in years (numeric)
 
-      PTNUM
-         Patient identification number (integer)
+state
+   Disease state (numeric)
 
-      years
-         Time since transplant in years (numeric)
+dage
+   Donor age in years (integer)
 
-      state
-         Disease state (numeric)
+pdiag
+   Primary diagnosis code (numeric)
 
-      dage
-         Donor age in years (integer)
+Details
+~~~~~~~
 
-      pdiag
-         Primary diagnosis code (numeric)
+The dataset name has been kept as 'patient_CAV_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the CardioDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'df' indicates that the dataset is a standard data frame. The original
+content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'patient_CAV_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      CardioDataSets package and assists users in identifying its
-      specific characteristics. The suffix 'df' indicates that the
-      dataset is a standard data frame. The original content has not
-      been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the flexmsm package version 0.1.2. Original data:
-      Papworth Hospital, UK. Subset of cav data from msm package.
+Data taken from the flexmsm package version 0.1.2. Original data:
+Papworth Hospital, UK. Subset of cav data from msm package.

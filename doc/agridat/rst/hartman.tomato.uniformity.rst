@@ -1,108 +1,102 @@
-.. container::
+========================= ===============
+hartman.tomato.uniformity R Documentation
+========================= ===============
 
-   .. container::
+Uniformity trial of tomato
+--------------------------
 
-      ========================= ===============
-      hartman.tomato.uniformity R Documentation
-      ========================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of tomato
-         :name: uniformity-trial-of-tomato
+Uniformity trial of tomato in Indiana 1941
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of tomato in Indiana
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("hartman.tomato.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("hartman.tomato.uniformity")
+A data frame with 384 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row
 
-      A data frame with 384 observations on the following 3 variables.
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   yield, pounds per plot
 
-      ``col``
-         column
+Details
+~~~~~~~
 
-      ``yield``
-         yield, pounds per plot
+Grown in Indiana in 1941.
 
-      .. rubric:: Details
-         :name: details
+The column ordinates in this R package dataset are not quite exactly the
+same as in the field due to the presence of roads.
 
-      Grown in Indiana in 1941.
+Plants were spaced 3 feet apart in rows 6 feet apart, 330 feet long.
+Each row was divided into 3 sections of 34 plants sparated by strips 12
+feet long to provide roadways for vehicles.
 
-      The column ordinates in this R package dataset are not quite
-      exactly the same as in the field due to the presence of roads.
+Each row was divided into 4-plant plots, with 8 plots in each section of
+row and with one plant left as a guard at the end of each section.
 
-      Plants were spaced 3 feet apart in rows 6 feet apart, 330 feet
-      long. Each row was divided into 3 sections of 34 plants sparated
-      by strips 12 feet long to provide roadways for vehicles.
+There were 49 plants missing out of 3072 total plants, but these have
+been ignored.
 
-      Each row was divided into 4-plant plots, with 8 plots in each
-      section of row and with one plant left as a guard at the end of
-      each section.
+Note, the data given in Table 1 of Hartman are for 8-plant plots!
 
-      There were 49 plants missing out of 3072 total plants, but these
-      have been ignored.
+Field width: 3 sections (34 plants \* 3 feet) + 2 roads \* 12 feet = 330
+feet.
 
-      Note, the data given in Table 1 of Hartman are for 8-plant plots!
+Field length: 32 rows \* 6 feet = 192 feet
 
-      Field width: 3 sections (34 plants \* 3 feet) + 2 roads \* 12 feet
-      = 330 feet.
+As oriented on the page, plots were, on average, 330/12=27.5. feet wide,
+6 feet tall.
 
-      Field length: 32 rows \* 6 feet = 192 feet
+Discussion notes from Hartman.
 
-      As oriented on the page, plots were, on average, 330/12=27.5. feet
-      wide, 6 feet tall.
+Total yield is 26001 pounds. Hartman says the yield of the field was
+10.24 tons per acre, which we can verify:
 
-      Discussion notes from Hartman.
+26001 lb/field \* (1/384 field/plot) \* (1/(24*6) plot/ft2) \* (43560
+ft2/acre) \* (1/2000 tons/lb) = 10.24 tons/acre
 
-      Total yield is 26001 pounds. Hartman says the yield of the field
-      was 10.24 tons per acre, which we can verify:
+The rows on the top/bottom (north/south) were intended as guard rows,
+and had yields similar to the other rows, suggesting that competition
+between rows did not exist. For comparing varieties, 96*6 foot plots
+work well.
 
-      26001 lb/field \* (1/384 field/plot) \* (1/(24*6) plot/ft2) \*
-      (43560 ft2/acre) \* (1/2000 tons/lb) = 10.24 tons/acre
+Source
+~~~~~~
 
-      The rows on the top/bottom (north/south) were intended as guard
-      rows, and had yields similar to the other rows, suggesting that
-      competition between rows did not exist. For comparing varieties,
-      96*6 foot plots work well.
+J. D. Hartman and E. C. Stair (1942). Field Plot Technique With
+Tomatoes. Proceedings Of The American Society For Horticultural Science,
+41, 315-320. https://archive.org/details/in.ernet.dli.2015.240678
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      J. D. Hartman and E. C. Stair (1942). Field Plot Technique With
-      Tomatoes. Proceedings Of The American Society For Horticultural
-      Science, 41, 315-320.
-      https://archive.org/details/in.ernet.dli.2015.240678
+None
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
-
-         ## Not run: 
-
-         library(agridat)
-         data(hartman.tomato.uniformity)
-         libs(desplot)
-         desplot(hartman.tomato.uniformity, yield ~ col*row, 
-                 flip=TRUE, tick=TRUE, aspect=192/330, # true aspect
-                 main="hartman.tomato.uniformity")
+   library(agridat)
+   data(hartman.tomato.uniformity)
+   libs(desplot)
+   desplot(hartman.tomato.uniformity, yield ~ col*row, 
+           flip=TRUE, tick=TRUE, aspect=192/330, # true aspect
+           main="hartman.tomato.uniformity")
 
 
-         ## End(Not run)
+   ## End(Not run)

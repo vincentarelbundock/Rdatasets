@@ -1,96 +1,90 @@
-.. container::
+================== ===============
+homicides15_tbl_df R Documentation
+================== ===============
 
-   .. container::
+Homicides in Nine US Cities (2015)
+----------------------------------
 
-      ================== ===============
-      homicides15_tbl_df R Documentation
-      ================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Homicides in Nine US Cities (2015)
-         :name: homicides-in-nine-us-cities-2015
+This dataset contains detailed records of homicides that occurred in
+nine large US cities during the year 2015. The data includes geographic
+locations, offense codes, and additional metadata, making it valuable
+for analyzing patterns and trends in urban crime.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains detailed records of homicides that occurred
-      in nine large US cities during the year 2015. The data includes
-      geographic locations, offense codes, and additional metadata,
-      making it valuable for analyzing patterns and trends in urban
-      crime.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(homicides15_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(homicides15_tbl_df)
+A tibble with 1,922 observations and 15 variables:
 
-      .. rubric:: Format
-         :name: format
+uid
+   Unique identifier for the record (integer).
 
-      A tibble with 1,922 observations and 15 variables:
+city_name
+   Name of the city where the homicide occurred (character).
 
-      uid
-         Unique identifier for the record (integer).
+offense_code
+   Offense code for the homicide (character).
 
-      city_name
-         Name of the city where the homicide occurred (character).
+offense_type
+   Type of offense (character).
 
-      offense_code
-         Offense code for the homicide (character).
+date_single
+   Date and time of the homicide (POSIXct).
 
-      offense_type
-         Type of offense (character).
+address
+   Address where the homicide occurred (character).
 
-      date_single
-         Date and time of the homicide (POSIXct).
+longitude
+   Longitude of the location (numeric).
 
-      address
-         Address where the homicide occurred (character).
+latitude
+   Latitude of the location (numeric).
 
-      longitude
-         Longitude of the location (numeric).
+location_type
+   Type of location (character).
 
-      latitude
-         Latitude of the location (numeric).
+location_category
+   Category of location (character).
 
-      location_type
-         Type of location (character).
+fips_state
+   FIPS code for the state (integer).
 
-      location_category
-         Category of location (character).
+fips_county
+   FIPS code for the county (character).
 
-      fips_state
-         FIPS code for the state (integer).
+tract
+   Census tract identifier (character).
 
-      fips_county
-         FIPS code for the county (character).
+block_group
+   Census block group identifier (integer).
 
-      tract
-         Census tract identifier (character).
+block
+   Census block identifier (integer).
 
-      block_group
-         Census block group identifier (integer).
+Details
+~~~~~~~
 
-      block
-         Census block identifier (integer).
+The dataset name has been changed to 'homicides15_tbl_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the crimedatasets package and
+assists users in identifying its specific characteristics. The suffix
+'tbl_df' indicates that the dataset is stored as a tibble, offering
+better printing and subsetting capabilities in R. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+This dataset provides insights into homicides in urban areas, offering
+geographic and temporal information for each case.
 
-      The dataset name has been changed to 'homicides15_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      crimedatasets package and assists users in identifying its
-      specific characteristics. The suffix 'tbl_df' indicates that the
-      dataset is stored as a tibble, offering better printing and
-      subsetting capabilities in R. The original content has not been
-      modified in any way.
+Source
+~~~~~~
 
-      This dataset provides insights into homicides in urban areas,
-      offering geographic and temporal information for each case.
-
-      .. rubric:: Source
-         :name: source
-
-      Crime Open Database, 2015.
+Crime Open Database, 2015.

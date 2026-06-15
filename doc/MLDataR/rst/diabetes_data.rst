@@ -1,97 +1,93 @@
-.. container::
+============= ===============
+diabetes_data R Documentation
+============= ===============
 
-   .. container::
+Diabetes datasets
+-----------------
 
-      ============= ===============
-      diabetes_data R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Diabetes datasets
-         :name: diabetes-datasets
+Diabetes datasets
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Diabetes datasets
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   diabetes_data
 
-      .. code:: R
+Format
+~~~~~~
 
-         diabetes_data
+A data frame with 520 rows and 17 variables:
 
-      .. rubric:: Format
-         :name: format
+Age
+   age of the patient presenting with diabetes
 
-      A data frame with 520 rows and 17 variables:
+Gender
+   gender of the patient with diabetes
 
-      Age
-         age of the patient presenting with diabetes
+ExcessUrination
+   if the patient has a history of excessive urination
 
-      Gender
-         gender of the patient with diabetes
+Polydipsia
+   abnormal thurst, accompanied by the excessive intake of water or
+   fluid
 
-      ExcessUrination
-         if the patient has a history of excessive urination
+WeightLossSudden
+   Sudden weight loss that has recently occured
 
-      Polydipsia
-         abnormal thurst, accompanied by the excessive intake of water
-         or fluid
+Fatigue
+   Fatigue or weakness
 
-      WeightLossSudden
-         Sudden weight loss that has recently occured
+Polyphagia
+   excessive or extreme hunger
 
-      Fatigue
-         Fatigue or weakness
+GenitalThrush
+   patient has thrush fungus on or near their genital region
 
-      Polyphagia
-         excessive or extreme hunger
+BlurredVision
+   history of blurred vision
 
-      GenitalThrush
-         patient has thrush fungus on or near their genital region
+Itching
+   skin itching
 
-      BlurredVision
-         history of blurred vision
+Irritability
+   general irritability and mood issues
 
-      Itching
-         skin itching
+DelayHealing
+   delayed healing of wounds
 
-      Irritability
-         general irritability and mood issues
+PartialPsoriasis
+   partial psoriasis on the body
 
-      DelayHealing
-         delayed healing of wounds
+MuscleStiffness
+   stiffness of the muscles
 
-      PartialPsoriasis
-         partial psoriasis on the body
+Alopecia
+   scalp alopecia and hair shedding
 
-      MuscleStiffness
-         stiffness of the muscles
+Obesity
+   Classified as obese
 
-      Alopecia
-         scalp alopecia and hair shedding
+DiabeticClass
+   Class label to indicate whether the patient is diabetic or not
 
-      Obesity
-         Classified as obese
+Source
+~~~~~~
 
-      DiabeticClass
-         Class label to indicate whether the patient is diabetic or not
+Collected by Gary Hutson hutsons-hacks@outlook.com, Dec-2021
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Collected by Gary Hutson hutsons-hacks@outlook.com, Dec-2021
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         library(dplyr)
-         data(diabetes_data)
-         # Convert diabetes data to factor'
-         diabetes_data <- diabetes_data %>%
-          glimpse() %>%
-          mutate(DiabeticClass = as.factor(DiabeticClass))
-          is.factor(diabetes_data$DiabeticClass)
+   library(dplyr)
+   data(diabetes_data)
+   # Convert diabetes data to factor'
+   diabetes_data <- diabetes_data %>%
+    glimpse() %>%
+    mutate(DiabeticClass = as.factor(DiabeticClass))
+    is.factor(diabetes_data$DiabeticClass)

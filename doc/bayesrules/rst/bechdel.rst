@@ -1,43 +1,39 @@
-.. container::
+======= ===============
+bechdel R Documentation
+======= ===============
 
-   .. container::
+Bechdel Test for over 1500 movies
+---------------------------------
 
-      ======= ===============
-      bechdel R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Bechdel Test for over 1500 movies
-         :name: bechdel-test-for-over-1500-movies
+A dataset containing data behind the story "The Dollar-And-Cents Case
+Against Hollywood's Exclusion of Women"
+https://fivethirtyeight.com/features/the-dollar-and-cents-case-against-hollywoods-exclusion-of-women/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset containing data behind the story "The Dollar-And-Cents
-      Case Against Hollywood's Exclusion of Women"
-      https://fivethirtyeight.com/features/the-dollar-and-cents-case-against-hollywoods-exclusion-of-women/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   bechdel
 
-      .. code:: R
+Format
+~~~~~~
 
-         bechdel
+A data frame with 1794 rows and 3 variables:
 
-      .. rubric:: Format
-         :name: format
+year
+   The release year of the movie
 
-      A data frame with 1794 rows and 3 variables:
+title
+   The title of the movie
 
-      year
-         The release year of the movie
+binary
+   Bechdel test result (PASS, FAIL)
 
-      title
-         The title of the movie
+Source
+~~~~~~
 
-      binary
-         Bechdel test result (PASS, FAIL)
-
-      .. rubric:: Source
-         :name: source
-
-      <https://github.com/fivethirtyeight/data/tree/master/bechdel/>
+<https://github.com/fivethirtyeight/data/tree/master/bechdel/>

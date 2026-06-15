@@ -1,41 +1,37 @@
-.. container::
+================== ===============
+state_area_numeric R Documentation
+================== ===============
 
-   .. container::
+US State Facts and Figures - US State Areas
+-------------------------------------------
 
-      ================== ===============
-      state_area_numeric R Documentation
-      ================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: US State Facts and Figures - US State Areas
-         :name: us-state-facts-and-figures---us-state-areas
+The dataset name has been changed to 'state_area_numeric' to avoid
+confusion with other packages in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a numeric dataset. The original content of the dataset
+has not been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'state_area_numeric' to avoid
-      confusion with other packages in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a numeric dataset. The
-      original content of the dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(state_area_numeric)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(state_area_numeric)
+A numeric dataset with 50 elements representing the area of U.S. states
+in square kilometers:
 
-      .. rubric:: Format
-         :name: format
+state_area
+   Numeric values indicating the area of each state, measured in square
+   kilometers.
 
-      A numeric dataset with 50 elements representing the area of U.S.
-      states in square kilometers:
+Source
+~~~~~~
 
-      state_area
-         Numeric values indicating the area of each state, measured in
-         square kilometers.
-
-      .. rubric:: Source
-         :name: source
-
-      U.S. state areas.
+U.S. state areas.

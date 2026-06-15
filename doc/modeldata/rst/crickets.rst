@@ -1,44 +1,40 @@
-.. container::
+======== ===============
+crickets R Documentation
+======== ===============
 
-   .. container::
+Rates of Cricket Chirps
+-----------------------
 
-      ======== ===============
-      crickets R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Rates of Cricket Chirps
-         :name: rates-of-cricket-chirps
+These data are from from McDonald (2009), by way of Mangiafico (2015),
+on the relationship between the ambient temperature and the rate of
+cricket chirps per minute. Data were collected for two species of the
+genus *Oecanthus*: *O. exclamationis* and *O. niveus*. The data are
+contained in a data frame called ``crickets`` with a total of 31 data
+points.
 
-      .. rubric:: Description
-         :name: description
+Value
+~~~~~
 
-      These data are from from McDonald (2009), by way of Mangiafico
-      (2015), on the relationship between the ambient temperature and
-      the rate of cricket chirps per minute. Data were collected for two
-      species of the genus *Oecanthus*: *O. exclamationis* and *O.
-      niveus*. The data are contained in a data frame called
-      ``crickets`` with a total of 31 data points.
+============ ========
+``crickets`` a tibble
+============ ========
 
-      .. rubric:: Value
-         :name: value
+Source
+~~~~~~
 
-      ============ ========
-      ``crickets`` a tibble
-      ============ ========
+Mangiafico, S. 2015. "An R Companion for the Handbook of Biological
+Statistics." https://rcompanion.org/handbook/.
 
-      .. rubric:: Source
-         :name: source
+McDonald, J. 2009. *Handbook of Biological Statistics*. Sparky House
+Publishing.
 
-      Mangiafico, S. 2015. "An R Companion for the Handbook of
-      Biological Statistics." https://rcompanion.org/handbook/.
+Examples
+~~~~~~~~
 
-      McDonald, J. 2009. *Handbook of Biological Statistics*. Sparky
-      House Publishing.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(crickets)
-         str(crickets)
+   data(crickets)
+   str(crickets)

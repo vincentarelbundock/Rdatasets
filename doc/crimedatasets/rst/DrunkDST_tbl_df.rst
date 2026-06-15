@@ -1,64 +1,58 @@
-.. container::
+=============== ===============
+DrunkDST_tbl_df R Documentation
+=============== ===============
 
-   .. container::
+US Casualties: Drunk Driving, Suicide, Terrorism
+------------------------------------------------
 
-      =============== ===============
-      DrunkDST_tbl_df R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: US Casualties: Drunk Driving, Suicide, Terrorism
-         :name: us-casualties-drunk-driving-suicide-terrorism
+This dataset contains data on fatalities and casualties in the U.S. for
+drunk-driving incidents, suicides, and acts of terrorism. The dataset
+spans the years 1970 to 2018 and provides insights into the impact of
+these causes of death and injury over time.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains data on fatalities and casualties in the
-      U.S. for drunk-driving incidents, suicides, and acts of terrorism.
-      The dataset spans the years 1970 to 2018 and provides insights
-      into the impact of these causes of death and injury over time.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(DrunkDST_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(DrunkDST_tbl_df)
+A tibble with 49 observations and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+year
+   Year of the observation (numeric).
 
-      A tibble with 49 observations and 5 variables:
+nkill
+   Number of people killed in acts of terrorism (numeric).
 
-      year
-         Year of the observation (numeric).
+terrtotal
+   Total number of casualties (injuries and fatalities) caused by
+   terrorism (numeric).
 
-      nkill
-         Number of people killed in acts of terrorism (numeric).
+suicides
+   Number of suicides (numeric).
 
-      terrtotal
-         Total number of casualties (injuries and fatalities) caused by
-         terrorism (numeric).
+ddfat
+   Number of fatalities caused by drunk-driving incidents (numeric).
 
-      suicides
-         Number of suicides (numeric).
+Details
+~~~~~~~
 
-      ddfat
-         Number of fatalities caused by drunk-driving incidents
-         (numeric).
+The dataset name has been changed to 'DrunkDST_tbl_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the crimedatasets package and
+assists users in identifying its specific characteristics. The suffix
+'tbl_df' indicates that the dataset is stored as a tibble. The original
+content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been changed to 'DrunkDST_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      crimedatasets package and assists users in identifying its
-      specific characteristics. The suffix 'tbl_df' indicates that the
-      dataset is stored as a tibble. The original content has not been
-      modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data on casualties and fatalities from drunk-driving, suicide, and
-      terrorism in the U.S., 1970–2018.
+Data on casualties and fatalities from drunk-driving, suicide, and
+terrorism in the U.S., 1970–2018.

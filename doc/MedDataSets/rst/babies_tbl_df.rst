@@ -1,71 +1,66 @@
-.. container::
+============= ===============
+babies_tbl_df R Documentation
+============= ===============
 
-   .. container::
+The Child Health and Development Studies
+----------------------------------------
 
-      ============= ===============
-      babies_tbl_df R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The Child Health and Development Studies
-         :name: the-child-health-and-development-studies
+The dataset name has been changed to 'babies_tbl_df' to avoid confusion
+with other datasets from packages in the R ecosystem and to follow the
+naming conventions of the 'MedDataSets' package. The suffix '\_tbl_df'
+indicates that this dataset is a tibble, helping to distinguish it from
+other datasets within the package and from those in the broader R
+ecosystem. The original content of the dataset has not been modified in
+any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'babies_tbl_df' to avoid
-      confusion with other datasets from packages in the R ecosystem and
-      to follow the naming conventions of the 'MedDataSets' package. The
-      suffix '\_tbl_df' indicates that this dataset is a tibble, helping
-      to distinguish it from other datasets within the package and from
-      those in the broader R ecosystem. The original content of the
-      dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(babies_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(babies_tbl_df)
+A tibble with 1,236 observations and 8 variables:
 
-      .. rubric:: Format
-         :name: format
+case
+   An integer indicating the case number.
 
-      A tibble with 1,236 observations and 8 variables:
+bwt
+   An integer representing the birth weight of the infant (in grams).
 
-      case
-         An integer indicating the case number.
+gestation
+   An integer indicating the gestation period (in weeks).
 
-      bwt
-         An integer representing the birth weight of the infant (in
-         grams).
+parity
+   An integer representing the number of previous births.
 
-      gestation
-         An integer indicating the gestation period (in weeks).
+age
+   An integer indicating the age of the mother (in years).
 
-      parity
-         An integer representing the number of previous births.
+height
+   An integer indicating the height of the mother (in cm).
 
-      age
-         An integer indicating the age of the mother (in years).
+weight
+   An integer indicating the weight of the mother (in kg).
 
-      height
-         An integer indicating the height of the mother (in cm).
+smoke
+   An integer indicating whether the mother smoked during pregnancy (1 =
+   yes, 0 = no).
 
-      weight
-         An integer indicating the weight of the mother (in kg).
+Details
+~~~~~~~
 
-      smoke
-         An integer indicating whether the mother smoked during
-         pregnancy (1 = yes, 0 = no).
+This dataset contains information from the Child Health and Development
+Studies, focusing on various factors associated with infant health
+outcomes.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains information from the Child Health and
-      Development Studies, focusing on various factors associated with
-      infant health outcomes.
-
-      .. rubric:: Source
-         :name: source
-
-      Data collected from the Child Health and Development Studies.
+Data collected from the Child Health and Development Studies.

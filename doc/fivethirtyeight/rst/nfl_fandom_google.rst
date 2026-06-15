@@ -1,85 +1,81 @@
-.. container::
+================= ===============
+nfl_fandom_google R Documentation
+================= ===============
 
-   .. container::
+How Every NFL Team’s Fans Lean Politically
+------------------------------------------
 
-      ================= ===============
-      nfl_fandom_google R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: How Every NFL Team’s Fans Lean Politically
-         :name: how-every-nfl-teams-fans-lean-politically
+The raw data behind the story "How Every NFL Team’s Fans Lean
+Politically"
+https://fivethirtyeight.com/features/how-every-nfl-teams-fans-lean-politically/:
+Google Trends Data.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "How Every NFL Team’s Fans Lean
-      Politically"
-      https://fivethirtyeight.com/features/how-every-nfl-teams-fans-lean-politically/:
-      Google Trends Data.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   nfl_fandom_google
 
-      .. code:: R
+Format
+~~~~~~
 
-         nfl_fandom_google
+a data frame with 207 rows representing designated market areas and 9
+variables:
 
-      .. rubric:: Format
-         :name: format
+dma
+   Designated Market Area
 
-      a data frame with 207 rows representing designated market areas
-      and 9 variables:
+nfl
+   The percentage of search traffic in the media market region related
+   to the NFL over the past 5 years
 
-      dma
-         Designated Market Area
+nba
+   The percentage of search traffic in the region related to the NBA
+   over the past 5 years
 
-      nfl
-         The percentage of search traffic in the media market region
-         related to the NFL over the past 5 years
+mlb
+   The percentage of search traffic in the region related to the MLB
+   over the past 5 years
 
-      nba
-         The percentage of search traffic in the region related to the
-         NBA over the past 5 years
+nascar
+   The percentage of search traffic in the region related to NASCAR over
+   the past 5 years
 
-      mlb
-         The percentage of search traffic in the region related to the
-         MLB over the past 5 years
+cbb
+   The percentage of search traffic in the region related to the CBB
+   over the past 5 years
 
-      nascar
-         The percentage of search traffic in the region related to
-         NASCAR over the past 5 years
+cfb
+   The percentage of search traffic in the region related to the CFB
+   over the past 5 years
 
-      cbb
-         The percentage of search traffic in the region related to the
-         CBB over the past 5 years
+trump_2016_vote
+   The percentage of voters in the region who voted for Trump in the
+   2016 Presidential Election
 
-      cfb
-         The percentage of search traffic in the region related to the
-         CFB over the past 5 years
+Source
+~~~~~~
 
-      trump_2016_vote
-         The percentage of voters in the region who voted for Trump in
-         the 2016 Presidential Election
+Google Trends https://trends.google.com/trends/.
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      Google Trends https://trends.google.com/trends/.
+``nfl_fandom_surveymonkey``
 
-      .. rubric:: See Also
-         :name: see-also
+Examples
+~~~~~~~~
 
-      ``nfl_fandom_surveymonkey``
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         # To convert data frame to tidy data (long) format, run:
-         library(dplyr)
-         library(tidyr)
-         nfl_fandom_google_tidy <- nfl_fandom_google %>%
-           pivot_longer(-c("dma", "trump_2016_vote"), 
-             names_to = "sport", values_to = "search_traffic") %>%
-           arrange(dma)
+   # To convert data frame to tidy data (long) format, run:
+   library(dplyr)
+   library(tidyr)
+   nfl_fandom_google_tidy <- nfl_fandom_google %>%
+     pivot_longer(-c("dma", "trump_2016_vote"), 
+       names_to = "sport", values_to = "search_traffic") %>%
+     arrange(dma)

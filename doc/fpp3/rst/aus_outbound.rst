@@ -1,50 +1,45 @@
-.. container::
+============ ===============
+aus_outbound R Documentation
+============ ===============
 
-   .. container::
+Monthly short term (<1 year) resident departures in Australia
+-------------------------------------------------------------
 
-      ============ ===============
-      aus_outbound R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Monthly short term (<1 year) resident departures in
-         Australia
-         :name: monthly-short-term-1-year-resident-departures-in-australia
+``aus_outbound`` contains monthly data with one measured variable:
 
-      .. rubric:: Description
-         :name: description
+====== =========================================
+Count: Number of individuals departing Australia
+       
+====== =========================================
 
-      ``aus_outbound`` contains monthly data with one measured variable:
+Format
+~~~~~~
 
-      ====== =========================================
-      Count: Number of individuals departing Australia
-      \      
-      ====== =========================================
+Time series of class 'tsibble'
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      Time series of class 'tsibble'
+Each series is uniquely identified using two keys:
 
-      .. rubric:: Details
-         :name: details
+======== =================
+County:  Destination
+Purpose: Purpose of travel
+======== =================
 
-      Each series is uniquely identified using two keys:
+covering the period from Jan 2005–Jun 2017.
 
-      ======== =================
-      County:  Destination
-      Purpose: Purpose of travel
-      ======== =================
+Source
+~~~~~~
 
-      covering the period from Jan 2005–Jun 2017.
+Tourism Research Australia
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Tourism Research Australia
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         aus_outbound
+   aus_outbound

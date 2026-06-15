@@ -1,0 +1,128 @@
+<!DOCTYPE html><html><head><title>R: Mutual Military Build-Ups and War</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>mmb_war</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Mutual Military Build-Ups and War</h2>
+
+<h3>Description</h3>
+
+<p>A simple data set on mutual military build-ups and war, useful for teaching
+about a long-standing empirical debate in international relations by way of
+basic tests (like a chi-square test).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>mmb_war
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 2324 observations on the following 9 variables.
+</p>
+
+<dl>
+<dt><code>ccode1</code></dt><dd><p>a Correlates of War state code</p>
+</dd>
+<dt><code>ccode2</code></dt><dd><p>another Correlates of War state code</p>
+</dd>
+<dt><code>tssr_id</code></dt><dd><p>a rivalry identifier</p>
+</dd>
+<dt><code>micnum</code></dt><dd><p>the start year of a confrontation between the two states</p>
+</dd>
+<dt><code>year</code></dt><dd><p>the start year of a confrontation between the two states</p>
+</dd>
+<dt><code>dyfatmin</code></dt><dd><p>the minimum estimated dyadic fatalities in the confrontation</p>
+</dd>
+<dt><code>dyfatmax</code></dt><dd><p>the maximum estimated dyadic fatalities in the confrontation</p>
+</dd>
+<dt><code>sumevents</code></dt><dd><p>the total number of events in the confrontation</p>
+</dd>
+<dt><code>mmb</code></dt><dd><p>a dummy variable that equals 1 if the confrontation came after the start of a mutual military build-up</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The unit of analysis for these data are non-directed dyadic confrontations
+for strategic rivals. Be mindful that confrontations start with the first
+event of any kind. See Gibler and Miller (2024a, 2024b) for more about events
+and confrontations. See Thompson et al. (2021) for more information about
+strategic rivalries.
+</p>
+<p>Mutual military build-ups (MMBs, for short) are a slightly more evasive label
+I'm using for the more familiar &quot;arms race.&quot; They are operationalized largely
+from Gibler et al. (2005). Briefly: mutual military build-ups are any episode
+in 1) a rivalry relationship where 2) each dyadic partner is increasing their
+military expenditure <em>or</em> personnel, 3) eight percent or more from the
+previous year, 4) for at least three years where 5) historical evidence largely
+corroborates a directionality in the mobilization of the kind we would
+broadly conceptualize (a la Richardson, 1939). In other words, the
+mutual mobilization isn't coincidental or a function of other priorities.
+</p>
+<p>The data I recreate here follow Gibler et al. (2005), but use newer
+capabilities and rivalry data. I further employ some case exclusion rules
+that would not otherwise be evident in a reading of Gibler et al. (2005).
+First, I take some care to exclude cases where it is pretty clear that what
+Gibler et al. (2005) call an arms race is more accurately just the mobilization
+of the war itself. For example, their arms race #26 between China and Japan
+occurs between 1940 and 1944, though the ongoing war between both comfortably
+covers it. Related, I employ an admittedly ad hoc termination date to end when
+we might comfortably note a war is ongoing (see: the various World War 1
+arms races). Further, I often extend a year to an arms race if one side
+started mobilizing first and the other side only started mobilizing the next
+year and/or one side continued mobilizing for a year after the other stopped.
+This is why, for example, I have an extra year in the Spain-Morocco build-up in
+the early 1970s (Spain mobilized through 1975). There were some cases where
+I disagreed that something could be considered an arms race/mutual military
+build-up by this metric. For example, the build-up observed between Somalia
+and Ethiopia in the 1970s (their arms race #44) is an interesting case where
+it's clear Ethiopia is mobilizing. However, the data suggest only one year
+of mobilization for Somalia (1974). I remove those cases from my recreation.
+</p>
+
+
+<h3>References</h3>
+
+<p>Gibler, Douglas M. 2005. &quot;Taking Arms against a Sea of Troubles: Conventional
+Arms Races during Periods of Rivalry&quot; <em>Journal of Peace Research</em> 42(2):
+131-47.
+</p>
+<p>Gibler, Douglas M., and Steven V. Miller. 2024a. &quot;The Militarized Interstate
+Confrontation Dataset, 1816-2014.&quot; <em>Journal of Conflict Resolution</em> 68(2–3):
+562–86.
+</p>
+<p>Gibler, Douglas M., and Steven V. Miller. 2024b. &quot;The Militarized Interstate
+Events (MIE) Dataset, 1816–2014.&quot; <em>Conflict Management and Peace Science</em>
+41(4): 463–81.
+</p>
+<p>Richardson, Lewis F. 1939. <em>Generalized Foreign Politics</em>. Cambridge
+University Press.
+</p>
+<p>Thompson, William R., Kentaro Sakuwa, and Prashant Hosur Suhas. 2021.
+<em>Analyzing Strategic Rivalries in World Politics: Types of Rivalry,
+Regional Variation, and Escalation/De-escalation</em>. Springer.
+</p>
+
+</main>
+
+</div>
+</body></html>

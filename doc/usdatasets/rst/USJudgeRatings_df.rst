@@ -1,81 +1,74 @@
-.. container::
+================= ===============
+USJudgeRatings_df R Documentation
+================= ===============
 
-   .. container::
+Lawyers' Ratings of State Judges in the US Superior Court
+---------------------------------------------------------
 
-      ================= ===============
-      USJudgeRatings_df R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Lawyers' Ratings of State Judges in the US Superior
-         Court
-         :name: lawyers-ratings-of-state-judges-in-the-us-superior-court
+The dataset name has been changed to 'USJudgeRatings_df' to avoid
+confusion with other packages in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a data frame. The original content of the dataset has
+not been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'USJudgeRatings_df' to avoid
-      confusion with other packages in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a data frame. The
-      original content of the dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(USJudgeRatings_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(USJudgeRatings_df)
+A data frame with 43 observations and 12 variables representing ratings
+for U.S. judges:
 
-      .. rubric:: Format
-         :name: format
+CONT
+   Numeric vector representing the judges' ratings on control.
 
-      A data frame with 43 observations and 12 variables representing
-      ratings for U.S. judges:
+INTG
+   Numeric vector representing the judges' ratings on integrity.
 
-      CONT
-         Numeric vector representing the judges' ratings on control.
+DMNR
+   Numeric vector representing the judges' ratings on demeanor.
 
-      INTG
-         Numeric vector representing the judges' ratings on integrity.
+DILG
+   Numeric vector representing the judges' ratings on diligence.
 
-      DMNR
-         Numeric vector representing the judges' ratings on demeanor.
+CFMG
+   Numeric vector representing the judges' ratings on communications
+   with clients.
 
-      DILG
-         Numeric vector representing the judges' ratings on diligence.
+DECI
+   Numeric vector representing the judges' ratings on decisiveness.
 
-      CFMG
-         Numeric vector representing the judges' ratings on
-         communications with clients.
+PREP
+   Numeric vector representing the judges' ratings on preparation.
 
-      DECI
-         Numeric vector representing the judges' ratings on
-         decisiveness.
+FAMI
+   Numeric vector representing the judges' ratings on family law
+   expertise.
 
-      PREP
-         Numeric vector representing the judges' ratings on preparation.
+ORAL
+   Numeric vector representing the judges' ratings on oral
+   communications.
 
-      FAMI
-         Numeric vector representing the judges' ratings on family law
-         expertise.
+WRIT
+   Numeric vector representing the judges' ratings on written
+   communications.
 
-      ORAL
-         Numeric vector representing the judges' ratings on oral
-         communications.
+PHYS
+   Numeric vector representing the judges' ratings on physical
+   appearance.
 
-      WRIT
-         Numeric vector representing the judges' ratings on written
-         communications.
+RTEN
+   Numeric vector representing the judges' ratings on overall rating.
 
-      PHYS
-         Numeric vector representing the judges' ratings on physical
-         appearance.
+Source
+~~~~~~
 
-      RTEN
-         Numeric vector representing the judges' ratings on overall
-         rating.
-
-      .. rubric:: Source
-         :name: source
-
-      U.S. judge ratings data.
+U.S. judge ratings data.

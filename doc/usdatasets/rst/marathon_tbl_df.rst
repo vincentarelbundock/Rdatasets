@@ -1,47 +1,41 @@
-.. container::
+=============== ===============
+marathon_tbl_df R Documentation
+=============== ===============
 
-   .. container::
+New York City Marathon Times (outdated)
+---------------------------------------
 
-      =============== ===============
-      marathon_tbl_df R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: New York City Marathon Times (outdated)
-         :name: new-york-city-marathon-times-outdated
+The dataset name has been changed to 'marathon_tbl_df' to avoid
+confusion with other packages in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a tibble. The original content of the dataset has not
+been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'marathon_tbl_df' to avoid
-      confusion with other packages in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a tibble. The original
-      content of the dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(marathon_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(marathon_tbl_df)
+A tibble with 59 observations and 3 variables:
 
-      .. rubric:: Format
-         :name: format
+year
+   Integer indicating the year of the marathon event.
 
-      A tibble with 59 observations and 3 variables:
+gender
+   Factor indicating the gender of the participants, with 2 levels.
 
-      year
-         Integer indicating the year of the marathon event.
+time
+   Numeric value representing the marathon completion time in hours.
 
-      gender
-         Factor indicating the gender of the participants, with 2
-         levels.
+Source
+~~~~~~
 
-      time
-         Numeric value representing the marathon completion time in
-         hours.
-
-      .. rubric:: Source
-         :name: source
-
-      Data from marathon event results
+Data from marathon event results

@@ -1,63 +1,56 @@
-.. container::
+=============== ===============
+economics_df_ts R Documentation
+=============== ===============
 
-   .. container::
+US Economic Time Series.
+------------------------
 
-      =============== ===============
-      economics_df_ts R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: US Economic Time Series.
-         :name: us-economic-time-series.
+The dataset name has been changed to 'economics_df_ts' to avoid
+confusion with other packages in the R ecosystem from which datasets
+have been sourced. The suffix 'df_ts' indicates that this dataset is a
+data frame containing time series data. This naming convention helps
+distinguish this dataset as part of the 'timeseriesdatasets' package and
+assists users in identifying its specific characteristics. The original
+content of the dataset has not been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'economics_df_ts' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. The suffix 'df_ts' indicates that this
-      dataset is a data frame containing time series data. This naming
-      convention helps distinguish this dataset as part of the
-      'timeseriesdatasets' package and assists users in identifying its
-      specific characteristics. The original content of the dataset has
-      not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(economics_df_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(economics_df_ts)
+A time series object ('spec_tbl_df') with 574 rows and 6 variables:
 
-      .. rubric:: Format
-         :name: format
+date
+   A Date vector representing the date of the observation.
 
-      A time series object ('spec_tbl_df') with 574 rows and 6
-      variables:
+pce
+   A numeric vector representing the personal consumption expenditures
+   (PCE) in billions of dollars.
 
-      date
-         A Date vector representing the date of the observation.
+pop
+   A numeric vector representing the US population in millions.
 
-      pce
-         A numeric vector representing the personal consumption
-         expenditures (PCE) in billions of dollars.
+psavert
+   A numeric vector representing the personal saving rate as a
+   percentage of disposable income.
 
-      pop
-         A numeric vector representing the US population in millions.
+uempmed
+   A numeric vector representing the median duration of unemployment in
+   weeks.
 
-      psavert
-         A numeric vector representing the personal saving rate as a
-         percentage of disposable income.
+unemploy
+   A numeric vector representing the number of unemployed individuals in
+   thousands.
 
-      uempmed
-         A numeric vector representing the median duration of
-         unemployment in weeks.
+Source
+~~~~~~
 
-      unemploy
-         A numeric vector representing the number of unemployed
-         individuals in thousands.
-
-      .. rubric:: Source
-         :name: source
-
-      Data provided by the Federal Reserve Economic Data (FRED)
-      database.
+Data provided by the Federal Reserve Economic Data (FRED) database.

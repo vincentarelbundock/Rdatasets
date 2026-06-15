@@ -1,45 +1,41 @@
-.. container::
+================= ===============
+nutrition_pvalues R Documentation
+================= ===============
 
-   .. container::
+You Can't Trust What You Read About Nutrition
+---------------------------------------------
 
-      ================= ===============
-      nutrition_pvalues R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: You Can't Trust What You Read About Nutrition
-         :name: you-cant-trust-what-you-read-about-nutrition
+The raw data behind the story "You Can't Trust What You Read About
+Nutrition"
+https://fivethirtyeight.com/features/you-cant-trust-what-you-read-about-nutrition/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "You Can't Trust What You Read About
-      Nutrition"
-      https://fivethirtyeight.com/features/you-cant-trust-what-you-read-about-nutrition/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   nutrition_pvalues
 
-      .. code:: R
+Format
+~~~~~~
 
-         nutrition_pvalues
+A data frame with 27716 rows representing Regression fits for p-hacking
+and 3 variables:
 
-      .. rubric:: Format
-         :name: format
+food
+   Name of food (response/dependent variable)
 
-      A data frame with 27716 rows representing Regression fits for
-      p-hacking and 3 variables:
+characteristic
+   Name of characteristic (predictor/independent variable)
 
-      food
-         Name of food (response/dependent variable)
+p_values
+   P-value from regression fit
 
-      characteristic
-         Name of characteristic (predictor/independent variable)
+Source
+~~~~~~
 
-      p_values
-         P-value from regression fit
-
-      .. rubric:: Source
-         :name: source
-
-      See
-      https://fivethirtyeight.com/features/you-cant-trust-what-you-read-about-nutrition/
+See
+https://fivethirtyeight.com/features/you-cant-trust-what-you-read-about-nutrition/

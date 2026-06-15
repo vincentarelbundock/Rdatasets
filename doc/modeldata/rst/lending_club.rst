@@ -1,47 +1,42 @@
-.. container::
+============ ===============
+lending_club R Documentation
+============ ===============
 
-   .. container::
+Loan data
+---------
 
-      ============ ===============
-      lending_club R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Loan data
-         :name: loan-data
+Loan data
 
-      .. rubric:: Description
-         :name: description
+Details
+~~~~~~~
 
-      Loan data
+These data were downloaded from the Lending Club access site (see below)
+and are from the first quarter of 2016. A subset of the rows and
+variables are included here. The outcome is in the variable ``Class``
+and is either "good" (meaning that the loan was fully paid back or
+currently on-time) or "bad" (charged off, defaulted, of 21-120 days
+late). A data dictionary can be found on the source website.
 
-      .. rubric:: Details
-         :name: details
+Value
+~~~~~
 
-      These data were downloaded from the Lending Club access site (see
-      below) and are from the first quarter of 2016. A subset of the
-      rows and variables are included here. The outcome is in the
-      variable ``Class`` and is either "good" (meaning that the loan was
-      fully paid back or currently on-time) or "bad" (charged off,
-      defaulted, of 21-120 days late). A data dictionary can be found on
-      the source website.
+================ ============
+``lending_club`` a data frame
+================ ============
 
-      .. rubric:: Value
-         :name: value
+Source
+~~~~~~
 
-      ================ ============
-      ``lending_club`` a data frame
-      ================ ============
+Lending Club Statistics
+https://www.lendingclub.com/info/download-data.action
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Lending Club Statistics
-      https://www.lendingclub.com/info/download-data.action
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(lending_club)
-         str(lending_club)
+   data(lending_club)
+   str(lending_club)

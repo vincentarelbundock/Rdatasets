@@ -1,57 +1,53 @@
-.. container::
+========= ===============
+hh_budget R Documentation
+========= ===============
 
-   .. container::
+Household budget characteristics
+--------------------------------
 
-      ========= ===============
-      hh_budget R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Household budget characteristics
-         :name: household-budget-characteristics
+Annual indicators of household budgets for Australia, Japan, Canada and
+USA from 1995-2016.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Annual indicators of household budgets for Australia, Japan,
-      Canada and USA from 1995-2016.
+Time series of class ``tsibble``.
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      Time series of class ``tsibble``.
+``hh_budget`` is an annual ``tsibble`` with six values:
 
-      .. rubric:: Details
-         :name: details
+============= =======================================================
+Debt:         Debt as a percentage of net disposable income.
+DI:           Annual growth rate of disposable income.
+Expenditure:  Annual growth rate of expenditure.
+Savings:      Savings as a percentage of household disposable income.
+Wealth:       Wealth as a percentage of net disposable income.
+Unemployment: Percentage of unemployed in the labour force.
+              
+============= =======================================================
 
-      ``hh_budget`` is an annual ``tsibble`` with six values:
+Each country is uniquely identified by one key:
 
-      ============= =======================================================
-      Debt:         Debt as a percentage of net disposable income.
-      DI:           Annual growth rate of disposable income.
-      Expenditure:  Annual growth rate of expenditure.
-      Savings:      Savings as a percentage of household disposable income.
-      Wealth:       Wealth as a percentage of net disposable income.
-      Unemployment: Percentage of unemployed in the labour force.
-      \             
-      ============= =======================================================
+======== ==========================
+Country: The country of the series.
+         
+======== ==========================
 
-      Each country is uniquely identified by one key:
+Source
+~~~~~~
 
-      ======== ==========================
-      Country: The country of the series.
-      \        
-      ======== ==========================
+The Organisation for Economic Co-operation and Development
+(https://data.oecd.org/)
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      The Organisation for Economic Co-operation and Development
-      (https://data.oecd.org/)
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         library(tsibble)
-         hh_budget
+   library(tsibble)
+   hh_budget

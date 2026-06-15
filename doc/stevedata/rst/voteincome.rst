@@ -1,68 +1,60 @@
-.. container::
+========== ===============
+voteincome R Documentation
+========== ===============
 
-   .. container::
+Sample Turnout and Demographic Data from the 2000 Current Population Survey
+---------------------------------------------------------------------------
 
-      ========== ===============
-      voteincome R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Sample Turnout and Demographic Data from the 2000
-         Current Population Survey
-         :name: sample-turnout-and-demographic-data-from-the-2000-current-population-survey
+A data set on turnout and demographic data from the 2000 Current
+Population Survey. This is a basic port of the ``voteincome`` data from
+the Zelig package.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A data set on turnout and demographic data from the 2000 Current
-      Population Survey. This is a basic port of the ``voteincome`` data
-      from the Zelig package.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   voteincome
 
-      .. code:: R
+Format
+~~~~~~
 
-         voteincome
+A data frame with 1500 observations on the following 7 variables.
 
-      .. rubric:: Format
-         :name: format
+``state``
+   a character variable for the state, either Arkansas (AK) or South
+   Carolina (SC)
 
-      A data frame with 1500 observations on the following 7 variables.
+``year``
+   a numeric constant for the year (2000)
 
-      ``state``
-         a character variable for the state, either Arkansas (AK) or
-         South Carolina (SC)
+``vote``
+   a dummy variable for whether the person voted (1) or did not vote
 
-      ``year``
-         a numeric constant for the year (2000)
+``income``
+   a numeric variable for income ranging from 4 (less than $5000) to 17
+   (greater than $75000)
 
-      ``vote``
-         a dummy variable for whether the person voted (1) or did not
-         vote
+``education``
+   a numeric variable for educational attainment ranging from 1 (less
+   than high school education) to 4 (more than college education)
 
-      ``income``
-         a numeric variable for income ranging from 4 (less than $5000)
-         to 17 (greater than $75000)
+``age``
+   a numeric variable for the respondent's age in years,ranging from 18
+   to 85
 
-      ``education``
-         a numeric variable for educational attainment ranging from 1
-         (less than high school education) to 4 (more than college
-         education)
+``female``
+   a dummy variable for whether the respondent is a woman (1) or a man
+   (0)
 
-      ``age``
-         a numeric variable for the respondent's age in years,ranging
-         from 18 to 85
+Details
+~~~~~~~
 
-      ``female``
-         a dummy variable for whether the respondent is a woman (1) or a
-         man (0)
-
-      .. rubric:: Details
-         :name: details
-
-      Data come from the 2000 Current Population Survey by way of the
-      Zelig package. Data should not be used for inferential
-      applications, only for pedagogical purposes. See the appropriate
-      CPS codebook for more information on variable coding (especially
-      for income and education). In all likelihood, age is
-      right-censored as well.
+Data come from the 2000 Current Population Survey by way of the Zelig
+package. Data should not be used for inferential applications, only for
+pedagogical purposes. See the appropriate CPS codebook for more
+information on variable coding (especially for income and education). In
+all likelihood, age is right-censored as well.

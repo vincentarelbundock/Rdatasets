@@ -1,41 +1,36 @@
-.. container::
+================== ===============
+male_flight_attend R Documentation
+================== ===============
 
-   .. container::
+Dear Mona, How Many Flight Attendants Are Men?
+----------------------------------------------
 
-      ================== ===============
-      male_flight_attend R Documentation
-      ================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Dear Mona, How Many Flight Attendants Are Men?
-         :name: dear-mona-how-many-flight-attendants-are-men
+The raw data behind the story "Dear Mona, How Many Flight Attendants Are
+Men?"
+https://fivethirtyeight.com/features/dear-mona-how-many-flight-attendants-are-men/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Dear Mona, How Many Flight
-      Attendants Are Men?"
-      https://fivethirtyeight.com/features/dear-mona-how-many-flight-attendants-are-men/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   male_flight_attend
 
-      .. code:: R
+Format
+~~~~~~
 
-         male_flight_attend
+A data frame with 320 rows representing job categories and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+job_category
+   Category of job
 
-      A data frame with 320 rows representing job categories and 2
-      variables:
+percentage_male
+   Percentage of workforce that are male
 
-      job_category
-         Category of job
+Source
+~~~~~~
 
-      percentage_male
-         Percentage of workforce that are male
-
-      .. rubric:: Source
-         :name: source
-
-      IPUMS 2012 https://usa.ipums.org/usa/
+IPUMS 2012 https://usa.ipums.org/usa/

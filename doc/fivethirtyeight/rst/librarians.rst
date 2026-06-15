@@ -1,44 +1,39 @@
-.. container::
+========== ===============
+librarians R Documentation
+========== ===============
 
-   .. container::
+Where Are America's Librarians?
+-------------------------------
 
-      ========== ===============
-      librarians R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Where Are America's Librarians?
-         :name: where-are-americas-librarians
+The raw data behind the story "Where Are America's Librarians?"
+https://fivethirtyeight.com/features/where-are-americas-librarians/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Where Are America's Librarians?"
-      https://fivethirtyeight.com/features/where-are-americas-librarians/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   librarians
 
-      .. code:: R
+Format
+~~~~~~
 
-         librarians
+A data frame with 371 rows representing areas in the US and 9 variables:
 
-      .. rubric:: Format
-         :name: format
+prim_state
+area_name
+tot_emp
+emp_prse
+jobs_1000
+loc_quotient
+mor
+high_emp
+low_emp
 
-      A data frame with 371 rows representing areas in the US and 9
-      variables:
+Source
+~~~~~~
 
-      prim_state
-      area_name
-      tot_emp
-      emp_prse
-      jobs_1000
-      loc_quotient
-      mor
-      high_emp
-      low_emp
-
-      .. rubric:: Source
-         :name: source
-
-      Bureau of Labor Statistics
+Bureau of Labor Statistics

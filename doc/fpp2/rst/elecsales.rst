@@ -1,34 +1,30 @@
-.. container::
+========= ===============
+elecsales R Documentation
+========= ===============
 
-   .. container::
+Electricity sales to residential customers in South Australia.
+--------------------------------------------------------------
 
-      ========= ===============
-      elecsales R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Electricity sales to residential customers in South
-         Australia.
-         :name: electricity-sales-to-residential-customers-in-south-australia.
+Annual electricity sales for South Australia in GWh from 1989 to 2008.
+Electricity used for hot water has been excluded.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Annual electricity sales for South Australia in GWh from 1989 to
-      2008. Electricity used for hot water has been excluded.
+Time series object of class ``ts``.
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      Time series object of class ``ts``.
+Australian Energy Market Operator.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Australian Energy Market Operator.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         autoplot(elecsales)
+   autoplot(elecsales)

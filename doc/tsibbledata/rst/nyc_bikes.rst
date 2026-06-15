@@ -1,78 +1,74 @@
-.. container::
+========= ===============
+nyc_bikes R Documentation
+========= ===============
 
-   .. container::
+NYC Citi Bike trips
+-------------------
 
-      ========= ===============
-      nyc_bikes R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: NYC Citi Bike trips
-         :name: nyc-citi-bike-trips
+A sample from NYC Citi Bike usage of 10 bikes throughout 2018. The data
+includes event data on each trip, including the trip's start and end
+times and locations. The customer's gender, birth year and bike usage
+type is also available.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      A sample from NYC Citi Bike usage of 10 bikes throughout 2018. The
-      data includes event data on each trip, including the trip's start
-      and end times and locations. The customer's gender, birth year and
-      bike usage type is also available.
+Time series of class ``tsibble``
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      Time series of class ``tsibble``
+``nyc_bikes`` is a ``tsibble`` containing event data, the events include
+these details:
 
-      .. rubric:: Details
-         :name: details
++----------------+-----------------------------------------------------+
+| start_time:    | The time and date when the trip was started.        |
++----------------+-----------------------------------------------------+
+| stop_time:     | The time and date when the trip was ended.          |
++----------------+-----------------------------------------------------+
+| start_station: | A unique identifier for the starting bike station.  |
++----------------+-----------------------------------------------------+
+| start_lat:     | The latitude of the starting bike station.          |
++----------------+-----------------------------------------------------+
+| start_long:    | The longitude of the starting bike station.         |
++----------------+-----------------------------------------------------+
+| end_station:   | A unique identifier for the destination bike        |
+|                | station.                                            |
++----------------+-----------------------------------------------------+
+| end_lat:       | The latitutde of the destination bike station.      |
++----------------+-----------------------------------------------------+
+| end_long:      | The longitude of the destination bike station.      |
++----------------+-----------------------------------------------------+
+| type:          | The type of trip. A "Customer" has purchased either |
+|                | a 24-hour or 3-day pass, and a "Subscriber" has     |
+|                | purchased an annual subscription.                   |
++----------------+-----------------------------------------------------+
+| birth_year     | The bike rider's year of birth.                     |
++----------------+-----------------------------------------------------+
+| gender:        | The gender of the bike rider.                       |
++----------------+-----------------------------------------------------+
+|                |                                                     |
++----------------+-----------------------------------------------------+
 
-      ``nyc_bikes`` is a ``tsibble`` containing event data, the events
-      include these details:
+Each series is uniquely identified by one key:
 
-      +----------------+----------------------------------------------------+
-      | start_time:    | The time and date when the trip was started.       |
-      +----------------+----------------------------------------------------+
-      | stop_time:     | The time and date when the trip was ended.         |
-      +----------------+----------------------------------------------------+
-      | start_station: | A unique identifier for the starting bike station. |
-      +----------------+----------------------------------------------------+
-      | start_lat:     | The latitude of the starting bike station.         |
-      +----------------+----------------------------------------------------+
-      | start_long:    | The longitude of the starting bike station.        |
-      +----------------+----------------------------------------------------+
-      | end_station:   | A unique identifier for the destination bike       |
-      |                | station.                                           |
-      +----------------+----------------------------------------------------+
-      | end_lat:       | The latitutde of the destination bike station.     |
-      +----------------+----------------------------------------------------+
-      | end_long:      | The longitude of the destination bike station.     |
-      +----------------+----------------------------------------------------+
-      | type:          | The type of trip. A "Customer" has purchased       |
-      |                | either a 24-hour or 3-day pass, and a "Subscriber" |
-      |                | has purchased an annual subscription.              |
-      +----------------+----------------------------------------------------+
-      | birth_year     | The bike rider's year of birth.                    |
-      +----------------+----------------------------------------------------+
-      | gender:        | The gender of the bike rider.                      |
-      +----------------+----------------------------------------------------+
-      |                |                                                    |
-      +----------------+----------------------------------------------------+
+======== =================================
+bike_id: A unique identifier for the bike.
+         
+======== =================================
 
-      Each series is uniquely identified by one key:
+Source
+~~~~~~
 
-      ======== =================================
-      bike_id: A unique identifier for the bike.
-      \        
-      ======== =================================
+Citi Bike NYC, https://www.citibikenyc.com/system-data
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Citi Bike NYC, https://www.citibikenyc.com/system-data
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         library(tsibble)
-         nyc_bikes
+   library(tsibble)
+   nyc_bikes

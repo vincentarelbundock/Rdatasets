@@ -1,93 +1,88 @@
-.. container::
+========================= ===============
+goulden.barley.uniformity R Documentation
+========================= ===============
 
-   .. container::
+Uniformity trial of barley
+--------------------------
 
-      ========================= ===============
-      goulden.barley.uniformity R Documentation
-      ========================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of barley
-         :name: uniformity-trial-of-barley
+Uniformity trial of barley in Canada
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Uniformity trial of barley in Canada
+A data frame with 400 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row
 
-      A data frame with 400 observations on the following 3 variables.
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   yield, grams per plot
 
-      ``col``
-         column
+Details
+~~~~~~~
 
-      ``yield``
-         yield, grams per plot
+Yield (in grams) of 2304 square-yard plots of barley grown in a field 48
+yards on each side at Dominion Rust Research Laboratory (Manitoba,
+Canada) in 1931. The field was sown at half density in one direction,
+then half-density in a perpendicular direction.
 
-      .. rubric:: Details
-         :name: details
+In a letter from Goulden to Cochran, Goulden said: I had intended to use
+these yields for a study of the effect of systematic arrangements and
+also to measure the bias of semi-Latin squares...The correlation between
+adjacent pairs of plots is not high (0.5) and it was difficult to
+demonstrate the bias in a satisfactory manner.
 
-      Yield (in grams) of 2304 square-yard plots of barley grown in a
-      field 48 yards on each side at Dominion Rust Research Laboratory
-      (Manitoba, Canada) in 1931. The field was sown at half density in
-      one direction, then half-density in a perpendicular direction.
+Note: The data in Goulden (1939) are a subset of 20 rows and columns
+from one corner of the field in this full dataset.
 
-      In a letter from Goulden to Cochran, Goulden said: I had intended
-      to use these yields for a study of the effect of systematic
-      arrangements and also to measure the bias of semi-Latin
-      squares...The correlation between adjacent pairs of plots is not
-      high (0.5) and it was difficult to demonstrate the bias in a
-      satisfactory manner.
+Field width: 48 plots x 3 feet = 144 feet
 
-      Note: The data in Goulden (1939) are a subset of 20 rows and
-      columns from one corner of the field in this full dataset.
+Field length: 48 plots x 3 feet = 144 feet
 
-      Field width: 48 plots x 3 feet = 144 feet
+This data was made available with special help from the staff at
+Rothamsted Research Library.
 
-      Field length: 48 plots x 3 feet = 144 feet
+Source
+~~~~~~
 
-      This data was made available with special help from the staff at
-      Rothamsted Research Library.
+Rothamsted Research Library, Box STATS17 WG Cochran, Folder 5.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Rothamsted Research Library, Box STATS17 WG Cochran, Folder 5.
+C. H. Goulden, (1939). Methods of statistical analysis, 1st ed. Page 18.
+https://archive.org/stream/methodsofstatist031744mbp Note: This version
+is 20 plots x 20 plots.
 
-      .. rubric:: References
-         :name: references
+Leonard, Warren and Andrew Clark (1939). Field Plot Technique. Page 39.
+https://archive.org/stream/fieldplottechniq00leon Note: This version is
+20 plots x 20 plots.
 
-      C. H. Goulden, (1939). Methods of statistical analysis, 1st ed.
-      Page 18. https://archive.org/stream/methodsofstatist031744mbp
-      Note: This version is 20 plots x 20 plots.
+Examples
+~~~~~~~~
 
-      Leonard, Warren and Andrew Clark (1939). Field Plot Technique.
-      Page 39. https://archive.org/stream/fieldplottechniq00leon Note:
-      This version is 20 plots x 20 plots.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(goulden.barley.uniformity)
+   dat <- goulden.barley.uniformity
 
-         ## Not run: 
+   libs(desplot)
+   desplot(dat, yield ~ col*row,
+           aspect=48/48, # true aspect
+           main="goulden.barley.uniformity")
 
-         library(agridat)
-         data(goulden.barley.uniformity)
-         dat <- goulden.barley.uniformity
-
-         libs(desplot)
-         desplot(dat, yield ~ col*row,
-                 aspect=48/48, # true aspect
-                 main="goulden.barley.uniformity")
-
-         # Left skewed distribution. See LeClerg, Leonard, Clark
-         hist(dat$yield, main="goulden.barley.uniformity",
-              breaks=c(21,40,59,78,97,116,135,154,173,192,211,230,249,268,287)+.5)
+   # Left skewed distribution. See LeClerg, Leonard, Clark
+   hist(dat$yield, main="goulden.barley.uniformity",
+        breaks=c(21,40,59,78,97,116,135,154,173,192,211,230,249,268,287)+.5)
 
 
-         ## End(Not run)  
+   ## End(Not run)  

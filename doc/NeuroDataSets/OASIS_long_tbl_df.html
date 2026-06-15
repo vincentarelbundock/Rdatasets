@@ -1,0 +1,96 @@
+<!DOCTYPE html><html><head><title>R: Longitudinal MRI Data in Nondemented and Demented Older...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>OASIS_long_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Longitudinal MRI Data in Nondemented and Demented Older Adults</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, OASIS_long_tbl_df, is a tibble containing a longitudinal collection of MRI data
+from 150 subjects aged 60 to 96, obtained as part of the Open Access Series of Imaging Studies (OASIS).
+Each participant completed two or more MRI sessions, with visits spaced at least one year apart,
+resulting in a total of 373 imaging sessions. The dataset includes both nondemented and demented older adults
+and provides comprehensive demographic, clinical, and neuroimaging measures for each visit.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(OASIS_long_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 373 observations and 15 variables:
+</p>
+
+<dl>
+<dt>Subject ID</dt><dd><p>Unique identifier for each subject (character)</p>
+</dd>
+<dt>MRI ID</dt><dd><p>Identifier for each MRI session (character)</p>
+</dd>
+<dt>Group</dt><dd><p>Clinical group classification (character)</p>
+</dd>
+<dt>Visit</dt><dd><p>Visit number for longitudinal assessment (numeric)</p>
+</dd>
+<dt>MR Delay</dt><dd><p>Time in days between MRI sessions (numeric)</p>
+</dd>
+<dt>M/F</dt><dd><p>Sex of the participant (character)</p>
+</dd>
+<dt>Hand</dt><dd><p>Handedness of the participant (character)</p>
+</dd>
+<dt>Age</dt><dd><p>Age in years at the time of the visit (numeric)</p>
+</dd>
+<dt>EDUC</dt><dd><p>Years of education (numeric)</p>
+</dd>
+<dt>SES</dt><dd><p>Socioeconomic status score (numeric)</p>
+</dd>
+<dt>MMSE</dt><dd><p>Mini-Mental State Examination score (numeric)</p>
+</dd>
+<dt>CDR</dt><dd><p>Clinical Dementia Rating score (numeric)</p>
+</dd>
+<dt>eTIV</dt><dd><p>Estimated total intracranial volume (numeric)</p>
+</dd>
+<dt>nWBV</dt><dd><p>Normalized whole-brain volume (numeric)</p>
+</dd>
+<dt>ASF</dt><dd><p>Atlas scaling factor (numeric)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as OASIS_long_tbl_df to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+NeuroDataSets package and assists users in identifying its specific characteristics.
+The suffix tbl_df indicates that the dataset is a tibble (a modern data frame).
+The original content has not been modified in any way. Variable names and values are provided exactly
+as they appear in the source.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from Kaggle: <a href="https://www.kaggle.com/datasets/jboysen/mri-and-alzheimers">https://www.kaggle.com/datasets/jboysen/mri-and-alzheimers</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

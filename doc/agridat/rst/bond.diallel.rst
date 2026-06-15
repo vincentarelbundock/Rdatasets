@@ -1,109 +1,104 @@
-.. container::
+============ ===============
+bond.diallel R Documentation
+============ ===============
 
-   .. container::
+Diallel cross of winter beans
+-----------------------------
 
-      ============ ===============
-      bond.diallel R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Diallel cross of winter beans
-         :name: diallel-cross-of-winter-beans
+Diallel cross of winter beans
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Diallel cross of winter beans
+A data frame with 36 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``female``
+   female parent
 
-      A data frame with 36 observations on the following 3 variables.
+``male``
+   male parent
 
-      ``female``
-         female parent
+``yield``
+   yield, grams/plot
 
-      ``male``
-         male parent
+``stems``
+   stems per plot
 
-      ``yield``
-         yield, grams/plot
+``nodes``
+   podded nodes per stem
 
-      ``stems``
-         stems per plot
+``pods``
+   pods per podded node
 
-      ``nodes``
-         podded nodes per stem
+``seeds``
+   seeds per pod
 
-      ``pods``
-         pods per podded node
+``weight``
+   weight (g) per 100 seeds
 
-      ``seeds``
-         seeds per pod
+``height``
+   height (cm) in April
 
-      ``weight``
-         weight (g) per 100 seeds
+``width``
+   width (cm) in April
 
-      ``height``
-         height (cm) in April
+``flower``
+   mean flowering date in May
 
-      ``width``
-         width (cm) in April
+Details
+~~~~~~~
 
-      ``flower``
-         mean flowering date in May
+Yield in grams/plot for full diallel cross between 6 inbred lines of
+winter beans. Values are means over two years.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      Yield in grams/plot for full diallel cross between 6 inbred lines
-      of winter beans. Values are means over two years.
+D. A. Bond (1966). Yield and components of yield in diallel crosses
+between inbred lines of winter beans (Viciafaba). *The Journal of
+Agricultural Science*, 67, 325–336.
+https://doi.org/10.1017/S0021859600017329
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      D. A. Bond (1966). Yield and components of yield in diallel
-      crosses between inbred lines of winter beans (Viciafaba). *The
-      Journal of Agricultural Science*, 67, 325–336.
-      https://doi.org/10.1017/S0021859600017329
+Peter John, *Statistical Design and Analysis of Experiments*, p. 85.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Peter John, *Statistical Design and Analysis of Experiments*, p.
-      85.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
+     
+     library(agridat)
+     data(bond.diallel)
+     dat <- bond.diallel
+     
+     # Because these data are means, we will not be able to reproduce
+     # the anova table in Bond. More useful as a multivariate example.
 
-      .. code:: R
+     libs(corrgram)
+     corrgram(dat[ , 3:11], main="bond.diallel",
+              lower=panel.pts)
 
-         ## Not run: 
-           
-           library(agridat)
-           data(bond.diallel)
-           dat <- bond.diallel
-           
-           # Because these data are means, we will not be able to reproduce
-           # the anova table in Bond. More useful as a multivariate example.
+     # Multivariate example from sommer package
+     corrgram(dat[,c("stems","pods","seeds")],
+              lower=panel.pts, upper=panel.conf, main="bond.diallel")
+     
+     libs(sommer)           
+     m1 <- mmer(cbind(stems,pods,seeds) ~ 1,
+                random= ~ vs(female)+vs(male),
+                rcov= ~ vs(units),
+                dat)
 
-           libs(corrgram)
-           corrgram(dat[ , 3:11], main="bond.diallel",
-                    lower=panel.pts)
-
-           # Multivariate example from sommer package
-           corrgram(dat[,c("stems","pods","seeds")],
-                    lower=panel.pts, upper=panel.conf, main="bond.diallel")
-           
-           libs(sommer)           
-           m1 <- mmer(cbind(stems,pods,seeds) ~ 1,
-                      random= ~ vs(female)+vs(male),
-                      rcov= ~ vs(units),
-                      dat)
-
-           #### genetic variance covariance
-           cov2cor(m1$sigma$`u:female`)
-           cov2cor(m1$sigma$`u:male`)
-           cov2cor(m1$sigma$`u:units`)
+     #### genetic variance covariance
+     cov2cor(m1$sigma$`u:female`)
+     cov2cor(m1$sigma$`u:male`)
+     cov2cor(m1$sigma$`u:units`)
 
 
-         ## End(Not run)
+   ## End(Not run)

@@ -1,103 +1,100 @@
-.. container::
+======================== ===============
+nonnecke.peas.uniformity R Documentation
+======================== ===============
 
-   .. container::
+Uniformity trial of canning peas
+--------------------------------
 
-      ======================== ===============
-      nonnecke.peas.uniformity R Documentation
-      ======================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of canning peas
-         :name: uniformity-trial-of-canning-peas
+Uniformity trial of canning peas in southern Alberta, 1957.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of canning peas in southern Alberta, 1957.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("nonnecke.peas.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("nonnecke.peas.uniformity")
+A data frame with 540 observations on the following 5 variables.
 
-      .. rubric:: Format
-         :name: format
+``block``
+   block factor
 
-      A data frame with 540 observations on the following 5 variables.
+``row``
+   row
 
-      ``block``
-         block factor
+``col``
+   column
 
-      ``row``
-         row
+``vines``
+   vines weight, pounds
 
-      ``col``
-         column
+``peas``
+   shelled peas weight, pounds
 
-      ``vines``
-         vines weight, pounds
+Details
+~~~~~~~
 
-      ``peas``
-         shelled peas weight, pounds
+Width of basic plot was 10 feet, length was 5 feet, as limited by the
+viner. At each of two blocks/locations, planting consisted of 18 rows
+(only 15 rows were harvested) that were 10 feet wide and 90 feet long.
+Rows were separated by 7 foot bare ground to facilitate harvesting.
+Nonnecke 1960 shows a map of one block.
 
-      .. rubric:: Details
-         :name: details
+Plots were harvested with a five foot mower. Vines from each plot were
+weighed, then shelled. The two blocks/locations were side by side and
+combined by Nonnecke. The optimum plot size was found to be 5 feet long
+and 10 feet wide.
 
-      Width of basic plot was 10 feet, length was 5 feet, as limited by
-      the viner. At each of two blocks/locations, planting consisted of
-      18 rows (only 15 rows were harvested) that were 10 feet wide and
-      90 feet long. Rows were separated by 7 foot bare ground to
-      facilitate harvesting. Nonnecke 1960 shows a map of one block.
+Field width: 15 rows \* 10 ft/row + 14 gaps \* 7 ft/gap = 248 feet
 
-      Plots were harvested with a five foot mower. Vines from each plot
-      were weighed, then shelled. The two blocks/locations were side by
-      side and combined by Nonnecke. The optimum plot size was found to
-      be 5 feet long and 10 feet wide.
+Field length: 18 plots \* 5 ft/plot = 90 feet
 
-      Field width: 15 rows \* 10 ft/row + 14 gaps \* 7 ft/gap = 248 feet
+Source
+~~~~~~
 
-      Field length: 18 plots \* 5 ft/plot = 90 feet
+Ib Libner Nonnecke. 1958. Yield variability of sweet corn and canning
+peas as affected by plot size and shape. Thesis at Oregon State College.
+https://hdl.handle.net/1957/23367
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Ib Libner Nonnecke. 1958. Yield variability of sweet corn and
-      canning peas as affected by plot size and shape. Thesis at Oregon
-      State College. https://hdl.handle.net/1957/23367
+I. L. Nonnecke, 1960. The precision of field experiments with vegetable
+crops as influenced by plot and block size and shape: II. Canning peas.
+Canadian Journal of Plant Science, 40(2): 396-404.
+https://doi.org/10.4141/cjps60-053
+https://archive.org/details/sim_canadian-journal-of-plant-science_1960-04_40_2
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      I. L. Nonnecke, 1960. The precision of field experiments with
-      vegetable crops as influenced by plot and block size and shape:
-      II. Canning peas. Canadian Journal of Plant Science, 40(2):
-      396-404. https://doi.org/10.4141/cjps60-053
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+     library(agridat)
+     
+     data(nonnecke.peas.uniformity)
+     dat <- nonnecke.peas.uniformity
+     
+     libs(desplot)
+     desplot(dat, vines~col*row|block,
+             tick=TRUE, flip=TRUE, aspect=248/90, # true aspect
+             main="nonnecke.peas.uniformity - vines")
+     desplot(dat, peas~col*row|block,
+             tick=TRUE, flip=TRUE, aspect=248/90, # true aspect
+             main="nonnecke.peas.uniformity - peas")
 
-         ## Not run: 
-
-           library(agridat)
-           
-           data(nonnecke.peas.uniformity)
-           dat <- nonnecke.peas.uniformity
-           
-           libs(desplot)
-           desplot(dat, vines~col*row|block,
-                   tick=TRUE, flip=TRUE, aspect=248/90, # true aspect
-                   main="nonnecke.peas.uniformity - vines")
-           desplot(dat, peas~col*row|block,
-                   tick=TRUE, flip=TRUE, aspect=248/90, # true aspect
-                   main="nonnecke.peas.uniformity - peas")
-
-           libs(lattice)
-           xyplot(peas~vines|block,dat,
-                  xlab="vine weight", ylab="shelled pea weight",
-                  main="nonnecke.peas.uniformity")
+     libs(lattice)
+     xyplot(peas~vines|block,dat,
+            xlab="vine weight", ylab="shelled pea weight",
+            main="nonnecke.peas.uniformity")
 
 
-         ## End(Not run)
+   ## End(Not run)

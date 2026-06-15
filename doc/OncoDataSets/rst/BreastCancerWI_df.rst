@@ -1,142 +1,136 @@
-.. container::
+================= ===============
+BreastCancerWI_df R Documentation
+================= ===============
 
-   .. container::
+Breast Cancer Wisconsin (Diagnostic)
+------------------------------------
 
-      ================= ===============
-      BreastCancerWI_df R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Breast Cancer Wisconsin (Diagnostic)
-         :name: breast-cancer-wisconsin-diagnostic
+This dataset, BreastCancerWI_df, is a data frame containing diagnostic
+information for 569 patients with breast cancer. The data includes
+features computed from digitized images of fine needle aspirates (FNA)
+of breast masses, as well as a diagnosis label indicating whether the
+mass is malignant or benign.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, BreastCancerWI_df, is a data frame containing
-      diagnostic information for 569 patients with breast cancer. The
-      data includes features computed from digitized images of fine
-      needle aspirates (FNA) of breast masses, as well as a diagnosis
-      label indicating whether the mass is malignant or benign.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(BreastCancerWI_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(BreastCancerWI_df)
+A data frame with 569 observations and 31 variables:
 
-      .. rubric:: Format
-         :name: format
+diagnosis
+   Diagnosis of the breast mass: malignant or benign (factor with 2
+   levels).
 
-      A data frame with 569 observations and 31 variables:
+radius_mean
+   Mean radius of the mass (numeric).
 
-      diagnosis
-         Diagnosis of the breast mass: malignant or benign (factor with
-         2 levels).
+texture_mean
+   Mean texture of the mass (numeric).
 
-      radius_mean
-         Mean radius of the mass (numeric).
+perimeter_mean
+   Mean perimeter of the mass (numeric).
 
-      texture_mean
-         Mean texture of the mass (numeric).
+area_mean
+   Mean area of the mass (numeric).
 
-      perimeter_mean
-         Mean perimeter of the mass (numeric).
+smoothness_mean
+   Mean smoothness of the mass (numeric).
 
-      area_mean
-         Mean area of the mass (numeric).
+compactness_mean
+   Mean compactness of the mass (numeric).
 
-      smoothness_mean
-         Mean smoothness of the mass (numeric).
+concavity_mean
+   Mean concavity of the mass (numeric).
 
-      compactness_mean
-         Mean compactness of the mass (numeric).
+concave_points_mean
+   Mean number of concave points on the mass contour (numeric).
 
-      concavity_mean
-         Mean concavity of the mass (numeric).
+symmetry_mean
+   Mean symmetry of the mass (numeric).
 
-      concave_points_mean
-         Mean number of concave points on the mass contour (numeric).
+fractal_dimension_mean
+   Mean fractal dimension of the mass (numeric).
 
-      symmetry_mean
-         Mean symmetry of the mass (numeric).
+radius_sd
+   Standard deviation of the radius (numeric).
 
-      fractal_dimension_mean
-         Mean fractal dimension of the mass (numeric).
+texture_sd
+   Standard deviation of the texture (numeric).
 
-      radius_sd
-         Standard deviation of the radius (numeric).
+perimeter_sd
+   Standard deviation of the perimeter (numeric).
 
-      texture_sd
-         Standard deviation of the texture (numeric).
+area_sd
+   Standard deviation of the area (numeric).
 
-      perimeter_sd
-         Standard deviation of the perimeter (numeric).
+smoothness_sd
+   Standard deviation of the smoothness (numeric).
 
-      area_sd
-         Standard deviation of the area (numeric).
+compactness_sd
+   Standard deviation of the compactness (numeric).
 
-      smoothness_sd
-         Standard deviation of the smoothness (numeric).
+concavity_sd
+   Standard deviation of the concavity (numeric).
 
-      compactness_sd
-         Standard deviation of the compactness (numeric).
+concave_points_sd
+   Standard deviation of the number of concave points (numeric).
 
-      concavity_sd
-         Standard deviation of the concavity (numeric).
+symmetry_sd
+   Standard deviation of the symmetry (numeric).
 
-      concave_points_sd
-         Standard deviation of the number of concave points (numeric).
+fractal_dimension_sd
+   Standard deviation of the fractal dimension (numeric).
 
-      symmetry_sd
-         Standard deviation of the symmetry (numeric).
+radius_peak
+   Worst (peak) value of the radius (numeric).
 
-      fractal_dimension_sd
-         Standard deviation of the fractal dimension (numeric).
+texture_peak
+   Worst (peak) value of the texture (numeric).
 
-      radius_peak
-         Worst (peak) value of the radius (numeric).
+perimeter_peak
+   Worst (peak) value of the perimeter (numeric).
 
-      texture_peak
-         Worst (peak) value of the texture (numeric).
+area_peak
+   Worst (peak) value of the area (numeric).
 
-      perimeter_peak
-         Worst (peak) value of the perimeter (numeric).
+smoothness_peak
+   Worst (peak) value of the smoothness (numeric).
 
-      area_peak
-         Worst (peak) value of the area (numeric).
+compactness_peak
+   Worst (peak) value of the compactness (numeric).
 
-      smoothness_peak
-         Worst (peak) value of the smoothness (numeric).
+concavity_peak
+   Worst (peak) value of the concavity (numeric).
 
-      compactness_peak
-         Worst (peak) value of the compactness (numeric).
+concave_points_peak
+   Worst (peak) number of concave points (numeric).
 
-      concavity_peak
-         Worst (peak) value of the concavity (numeric).
+symmetry_peak
+   Worst (peak) value of the symmetry (numeric).
 
-      concave_points_peak
-         Worst (peak) number of concave points (numeric).
+fractal_dimension_peak
+   Worst (peak) value of the fractal dimension (numeric).
 
-      symmetry_peak
-         Worst (peak) value of the symmetry (numeric).
+Details
+~~~~~~~
 
-      fractal_dimension_peak
-         Worst (peak) value of the fractal dimension (numeric).
+The dataset name has been kept as 'BreastCancerWI_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the OncoDataSets package and assists
+users in identifying its specific characteristics. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'BreastCancerWI_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The original content has not been modified in any
-      way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the cases package. Original documentation
-      available at:
-      https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(diagnostic).
+Data taken from the cases package. Original documentation available at:
+https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(diagnostic).

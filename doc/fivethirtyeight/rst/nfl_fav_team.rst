@@ -1,95 +1,90 @@
-.. container::
+============ ===============
+nfl_fav_team R Documentation
+============ ===============
 
-   .. container::
+The Rams Are Dead To Me, So I Answered 3,352 Questions To Find A New NFL Team
+-----------------------------------------------------------------------------
 
-      ============ ===============
-      nfl_fav_team R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The Rams Are Dead To Me, So I Answered 3,352 Questions
-         To Find A New NFL Team
-         :name: the-rams-are-dead-to-me-so-i-answered-3352-questions-to-find-a-new-nfl-team
+The raw data behind the story "The Rams Are Dead To Me, So I Answered
+3,352 Questions To Find A New NFL Team"
+https://fivethirtyeight.com/features/the-rams-are-dead-to-me-so-i-answered-3352-questions-to-find-a-new-team/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "The Rams Are Dead To Me, So I
-      Answered 3,352 Questions To Find A New NFL Team"
-      https://fivethirtyeight.com/features/the-rams-are-dead-to-me-so-i-answered-3352-questions-to-find-a-new-team/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   nfl_fav_team
 
-      .. code:: R
+Format
+~~~~~~
 
-         nfl_fav_team
+A data frame with 32 rows representing National Football League teams
+and 17 variables:
 
-      .. rubric:: Format
-         :name: format
+team
+   Name of NFL team
 
-      A data frame with 32 rows representing National Football League
-      teams and 17 variables:
+fan_relations
+   Fan relations - Courtesy by players, coaches and front offices toward
+   fans, and how well a team uses technology to reach them
 
-      team
-         Name of NFL team
+ownership
+   Ownership - Honesty; loyalty to core players and the community
 
-      fan_relations
-         Fan relations - Courtesy by players, coaches and front offices
-         toward fans, and how well a team uses technology to reach them
+players
+   Players - Effort on the field, likability off it
 
-      ownership
-         Ownership - Honesty; loyalty to core players and the community
+future_wins
+   Future wins - Projected wins over next 5 seasons
 
-      players
-         Players - Effort on the field, likability off it
+bandwagon
+   Bandwagon Factor - Are the team's next 5 years likely to be better
+   than their previous 5?
 
-      future_wins
-         Future wins - Projected wins over next 5 seasons
+tradition
+   Tradition - Championships/division titles/wins in team's entire
+   history
 
-      bandwagon
-         Bandwagon Factor - Are the team's next 5 years likely to be
-         better than their previous 5?
+bang_buck
+   Bang for the buck - Wins per fan dollars spent
 
-      tradition
-         Tradition - Championships/division titles/wins in team's entire
-         history
+behavior
+   Behavior - Suspensions by players on team since 2007, with extra
+   weight to transgressions vs. women
 
-      bang_buck
-         Bang for the buck - Wins per fan dollars spent
+nyc_prox
+   Proximity to New York City
 
-      behavior
-         Behavior - Suspensions by players on team since 2007, with
-         extra weight to transgressions vs. women
+stlouis_prox
+   Proximity to St. Louis
 
-      nyc_prox
-         Proximity to New York City
+afford
+   Affordability - Price of tickets, parking and concessions
 
-      stlouis_prox
-         Proximity to St. Louis
+small_market
+   Small Market - Size of market in terms of population, where smaller
+   is better
 
-      afford
-         Affordability - Price of tickets, parking and concessions
+stadium_exp
+   Stadium experience - Quality of venue; fan-friendliness of
+   environment; frequency of game-day promotions
 
-      small_market
-         Small Market - Size of market in terms of population, where
-         smaller is better
+coaching
+   Coaching - Strength of on-field leadership
 
-      stadium_exp
-         Stadium experience - Quality of venue; fan-friendliness of
-         environment; frequency of game-day promotions
+uniform
+   Uniform - Stylishness of uniform design, according to Uni Watch's
+   Paul Lukas
 
-      coaching
-         Coaching - Strength of on-field leadership
+big_market
+   Big Market - Size of market in terms of population, where bigger is
+   better
 
-      uniform
-         Uniform - Stylishness of uniform design, according to Uni
-         Watch's Paul Lukas
+Source
+~~~~~~
 
-      big_market
-         Big Market - Size of market in terms of population, where
-         bigger is better
-
-      .. rubric:: Source
-         :name: source
-
-      https://www.allourideas.org/nflteampickingsample
+https://www.allourideas.org/nflteampickingsample

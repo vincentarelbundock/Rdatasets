@@ -1,55 +1,50 @@
-.. container::
+======== ===============
+vic_elec R Documentation
+======== ===============
 
-   .. container::
+Half-hourly electricity demand for Victoria, Australia
+------------------------------------------------------
 
-      ======== ===============
-      vic_elec R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Half-hourly electricity demand for Victoria, Australia
-         :name: half-hourly-electricity-demand-for-victoria-australia
+``vic_elec`` is a half-hourly ``tsibble`` with three values:
 
-      .. rubric:: Description
-         :name: description
+============ ==============================================
+Demand:      Total electricity demand in MWh.
+Temperature: Temperature of Melbourne (BOM site 086071).
+Holiday:     Indicator for if that day is a public holiday.
+             
+============ ==============================================
 
-      ``vic_elec`` is a half-hourly ``tsibble`` with three values:
+Format
+~~~~~~
 
-      ============ ==============================================
-      Demand:      Total electricity demand in MWh.
-      Temperature: Temperature of Melbourne (BOM site 086071).
-      Holiday:     Indicator for if that day is a public holiday.
-      \            
-      ============ ==============================================
+Time series of class ``tsibble``.
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      Time series of class ``tsibble``.
+This data is for operational demand, which is the demand met by local
+scheduled generating units, semi-scheduled generating units, and
+non-scheduled intermittent generating units of aggregate capacity larger
+than 30 MWh, and by generation imports to the region. The operational
+demand excludes the demand met by non-scheduled non-intermittent
+generating units, non-scheduled intermittent generating units of
+aggregate capacity smaller than 30 MWh, exempt generation (e.g. rooftop
+solar, gas tri-generation, very small wind farms, etc), and demand of
+local scheduled loads. It also excludes some very large industrial users
+(such as mines or smelters).
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This data is for operational demand, which is the demand met by
-      local scheduled generating units, semi-scheduled generating units,
-      and non-scheduled intermittent generating units of aggregate
-      capacity larger than 30 MWh, and by generation imports to the
-      region. The operational demand excludes the demand met by
-      non-scheduled non-intermittent generating units, non-scheduled
-      intermittent generating units of aggregate capacity smaller than
-      30 MWh, exempt generation (e.g. rooftop solar, gas tri-generation,
-      very small wind farms, etc), and demand of local scheduled loads.
-      It also excludes some very large industrial users (such as mines
-      or smelters).
+Australian Energy Market Operator.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Australian Energy Market Operator.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         library(tsibble)
-         vic_elec
+   library(tsibble)
+   vic_elec

@@ -1,103 +1,98 @@
-.. container::
+==== ===============
+wine R Documentation
+==== ===============
 
-   .. container::
+Bitterness of wine
+------------------
 
-      ==== ===============
-      wine R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Bitterness of wine
-         :name: bitterness-of-wine
+The ``wine`` data set is adopted from Randall(1989) and from a factorial
+experiment on factors determining the bitterness of wine. Two treatment
+factors (temperature and contact) each have two levels. Temperature and
+contact between juice and skins can be controlled when cruching grapes
+during wine production. Nine judges each assessed wine from two bottles
+from each of the four treatment conditions, hence there are 72
+observations in all.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The ``wine`` data set is adopted from Randall(1989) and from a
-      factorial experiment on factors determining the bitterness of
-      wine. Two treatment factors (temperature and contact) each have
-      two levels. Temperature and contact between juice and skins can be
-      controlled when cruching grapes during wine production. Nine
-      judges each assessed wine from two bottles from each of the four
-      treatment conditions, hence there are 72 observations in all.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   wine
 
-      .. code:: R
+Format
+~~~~~~
 
-         wine
+``response``
+   scorings of wine bitterness on a 0—100 continuous scale.
 
-      .. rubric:: Format
-         :name: format
+``rating``
+   ordered factor with 5 levels; a grouped version of ``response``.
 
-      ``response``
-         scorings of wine bitterness on a 0—100 continuous scale.
+``temp``
+   temperature: factor with two levels.
 
-      ``rating``
-         ordered factor with 5 levels; a grouped version of
-         ``response``.
+``contact``
+   factor with two levels (``"no"`` and ``"yes"``).
 
-      ``temp``
-         temperature: factor with two levels.
+``bottle``
+   factor with eight levels.
 
-      ``contact``
-         factor with two levels (``"no"`` and ``"yes"``).
+``judge``
+   factor with nine levels.
 
-      ``bottle``
-         factor with eight levels.
+Source
+~~~~~~
 
-      ``judge``
-         factor with nine levels.
+Data are adopted from Randall (1989).
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Data are adopted from Randall (1989).
+Randall, J (1989). The analysis of sensory data by generalised linear
+model. *Biometrical journal 7*, pp. 781–793.
 
-      .. rubric:: References
-         :name: references
+Tutz, G. and W. Hennevogl (1996). Random effects in ordinal regression
+models. *Computational Statistics & Data Analysis 22*, pp. 537–557.
 
-      Randall, J (1989). The analysis of sensory data by generalised
-      linear model. *Biometrical journal 7*, pp. 781–793.
+Examples
+~~~~~~~~
 
-      Tutz, G. and W. Hennevogl (1996). Random effects in ordinal
-      regression models. *Computational Statistics & Data Analysis 22*,
-      pp. 537–557.
-
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         head(wine)
-         str(wine)
-
-         ## Variables 'rating' and 'response' are related in the following way:
-         (intervals <- seq(0,100, by = 20))
-         all(wine$rating == findInterval(wine$response, intervals)) ## ok
-
-         ## A few illustrative tabulations:
-         ## Table matching Table 5 in Randall (1989):
-         temp.contact.bottle <- with(wine, temp:contact:bottle)[drop=TRUE]
-         xtabs(response ~ temp.contact.bottle + judge, data = wine)
-
-         ## Table matching Table 6 in Randall (1989):
-         with(wine, {
-           tcb <- temp:contact:bottle
-           tcb <- tcb[drop=TRUE]
-           table(tcb, rating)
-         })
-         ## or simply: with(wine, table(bottle, rating))
-
-         ## Table matching Table 1 in Tutz & Hennevogl (1996):
-         tab <- xtabs(as.numeric(rating) ~ judge + temp.contact.bottle,
-                      data = wine)
-         colnames(tab) <-
-           paste(rep(c("c","w"), each = 4), rep(c("n", "n", "y", "y"), 2),
-                 1:8, sep=".")
-         tab
+.. code:: R
 
 
-         ## A simple model:
-         m1 <- clm(rating ~ temp * contact, data = wine)
-         summary(m1)
+   head(wine)
+   str(wine)
+
+   ## Variables 'rating' and 'response' are related in the following way:
+   (intervals <- seq(0,100, by = 20))
+   all(wine$rating == findInterval(wine$response, intervals)) ## ok
+
+   ## A few illustrative tabulations:
+   ## Table matching Table 5 in Randall (1989):
+   temp.contact.bottle <- with(wine, temp:contact:bottle)[drop=TRUE]
+   xtabs(response ~ temp.contact.bottle + judge, data = wine)
+
+   ## Table matching Table 6 in Randall (1989):
+   with(wine, {
+     tcb <- temp:contact:bottle
+     tcb <- tcb[drop=TRUE]
+     table(tcb, rating)
+   })
+   ## or simply: with(wine, table(bottle, rating))
+
+   ## Table matching Table 1 in Tutz & Hennevogl (1996):
+   tab <- xtabs(as.numeric(rating) ~ judge + temp.contact.bottle,
+                data = wine)
+   colnames(tab) <-
+     paste(rep(c("c","w"), each = 4), rep(c("n", "n", "y", "y"), 2),
+           1:8, sep=".")
+   tab
+
+
+   ## A simple model:
+   m1 <- clm(rating ~ temp * contact, data = wine)
+   summary(m1)

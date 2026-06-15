@@ -1,60 +1,54 @@
-.. container::
+===== ===============
+Italy R Documentation
+===== ===============
 
-   .. container::
+Italian GDP Panel
+-----------------
 
-      ===== ===============
-      Italy R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Italian GDP Panel
-         :name: italian-gdp-panel
+Italian GDP growth panel for 21 regions covering the period 1951-1998
+(millions of Lire, 1990=base). There are 1008 observations in total.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Italian GDP growth panel for 21 regions covering the period
-      1951-1998 (millions of Lire, 1990=base). There are 1008
-      observations in total.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("Italy")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("Italy")
+A data frame with 2 columns, and 1008 rows.
 
-      .. rubric:: Format
-         :name: format
+year
+   the first column, of type ``ordered``
 
-      A data frame with 2 columns, and 1008 rows.
+gdp
+   the second column, of type ``numeric``: millions of Lire, 1990=base
 
-      year
-         the first column, of type ``ordered``
+Source
+~~~~~~
 
-      gdp
-         the second column, of type ``numeric``: millions of Lire,
-         1990=base
+Giovanni Baiocchi
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Giovanni Baiocchi
+Baiocchi, G. (2006), “Economic Applications of Nonparametric Methods,”
+Ph.D. Thesis, University of York.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Baiocchi, G. (2006), “Economic Applications of Nonparametric
-      Methods,” Ph.D. Thesis, University of York.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   data("Italy")
+   with(Italy, {
 
-      .. code:: R
+   plot(ordered(year), gdp, xlab="Year (ordered factor)",
+        ylab="GDP (millions of Lire, 1990=base)")
 
-         data("Italy")
-         attach(Italy)
-
-         plot(ordered(year), gdp, xlab="Year (ordered factor)",
-              ylab="GDP (millions of Lire, 1990=base)")
-
-         detach(Italy)
+   })

@@ -1,71 +1,67 @@
-.. container::
+============== ===============
+AwardsManagers R Documentation
+============== ===============
 
-   .. container::
+AwardsManagers table
+--------------------
 
-      ============== ===============
-      AwardsManagers R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: AwardsManagers table
-         :name: awardsmanagers-table
+Award information for managers awards
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Award information for managers awards
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(AwardsManagers)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(AwardsManagers)
+A data frame with 232 observations on the following 6 variables.
 
-      .. rubric:: Format
-         :name: format
+``playerID``
+   Manager (player) ID code
 
-      A data frame with 228 observations on the following 6 variables.
+``awardID``
+   Name of award won
 
-      ``playerID``
-         Manager (player) ID code
+``yearID``
+   Year
 
-      ``awardID``
-         Name of award won
+``lgID``
+   League; a factor with levels ``AL`` ``NL``
 
-      ``yearID``
-         Year
+``tie``
+   Award was a tie (Y or N)
 
-      ``lgID``
-         League; a factor with levels ``AL`` ``NL``
+``notes``
+   Notes about the award
 
-      ``tie``
-         Award was a tie (Y or N)
+Source
+~~~~~~
 
-      ``notes``
-         Notes about the award
+Lahman, S. (2026) Lahman's Baseball Database, 1871-2025, 2026 version,
+https://sabr.org/lahman-database/
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Lahman, S. (2025) Lahman's Baseball Database, 1871-2024, 2025
-      version, https://sabr.org/lahman-database/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   # Post-season managerial awards
 
-      .. code:: R
+   # Number of recipients of each award by year
+   with(AwardsManagers, table(yearID, awardID))
 
-         # Post-season managerial awards
+   # 1996 award winners
+   subset(AwardsManagers, yearID == 1996)
 
-         # Number of recipients of each award by year
-         with(AwardsManagers, table(yearID, awardID))
+   # AL winners of the BBWAA managerial award
+   subset(AwardsManagers, awardID == "BBWAA Manager of the year" &
+                             lgID == "AL")
 
-         # 1996 award winners
-         subset(AwardsManagers, yearID == 1996)
-
-         # AL winners of the BBWAA managerial award
-         subset(AwardsManagers, awardID == "BBWAA Manager of the year" &
-                                   lgID == "AL")
-
-         # Tony LaRussa's manager of the year awards
-         subset(AwardsManagers, playerID == "larusto01")
+   # Tony LaRussa's manager of the year awards
+   subset(AwardsManagers, playerID == "larusto01")

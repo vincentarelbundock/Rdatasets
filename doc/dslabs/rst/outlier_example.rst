@@ -1,38 +1,33 @@
-.. container::
+=============== ===============
+outlier_example R Documentation
+=============== ===============
 
-   .. container::
+Adult male heights in feet with outliers
+----------------------------------------
 
-      =============== ===============
-      outlier_example R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Adult male heights in feet with outliers
-         :name: adult-male-heights-in-feet-with-outliers
+This dataset was randomly generated with a normal distribution (average:
+5 feet 9 inches, standard deviation: 3 inches). One value was changed to
+be mistakenly reported in centimeters rather than feet.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset was randomly generated with a normal distribution
-      (average: 5 feet 9 inches, standard deviation: 3 inches). One
-      value was changed to be mistakenly reported in centimeters rather
-      than feet.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   outlier_example
 
-      .. code:: R
+Format
+~~~~~~
 
-         outlier_example
+An object of class ``"numeric"``.
 
-      .. rubric:: Format
-         :name: format
+Examples
+~~~~~~~~
 
-      An object of class ``"numeric"``.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         mean(outlier_example)
-         median(outlier_example)
+   mean(outlier_example)
+   median(outlier_example)

@@ -1,111 +1,107 @@
-.. container::
+========================= ===============
+tulaikow.wheat.uniformity R Documentation
+========================= ===============
 
-   .. container::
+Uniformity trial of winter/spring wheat
+---------------------------------------
 
-      ========================= ===============
-      tulaikow.wheat.uniformity R Documentation
-      ========================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of winter/spring wheat
-         :name: uniformity-trial-of-winterspring-wheat
+Uniformity trial of winter/spring wheat in Russia
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of winter/spring wheat in Russia
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("tulaikow.wheat.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("tulaikow.wheat.uniformity")
+A data frame with 480 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row ordinate
 
-      A data frame with 480 observations on the following 4 variables.
+``col``
+   column ordinate
 
-      ``row``
-         row ordinate
+``yield``
+   yield in grams per plot
 
-      ``col``
-         column ordinate
+``season``
+   winter or summer
 
-      ``yield``
-         yield in grams per plot
+Details
+~~~~~~~
 
-      ``season``
-         winter or summer
+Land was fallow in 1911, harvested in 1912 at the Bezenchuk Experimental
+Station in Russia. A winter wheat field of 240 square sazhen (24 x 10
+sazhen) was divided into separate plots of 1 square sazhen, which were
+cut, threshed and weighed separately.
 
-      .. rubric:: Details
-         :name: details
+In the same way, a plot of Poltavka spring wheat was harvested and a
+plot of 240 square sazhen with dimensions of 15 by 16 sazhen was divided
+into plots of 1 square sazhen.
 
-      Land was fallow in 1911, harvested in 1912 at the Bezenchuk
-      Experimental Station in Russia. A winter wheat field of 240 square
-      sazhen (24 x 10 sazhen) was divided into separate plots of 1
-      square sazhen, which were cut, threshed and weighed separately.
+Winter wheat:
 
-      In the same way, a plot of Poltavka spring wheat was harvested and
-      a plot of 240 square sazhen with dimensions of 15 by 16 sazhen was
-      divided into plots of 1 square sazhen.
+Field length: 10 rows \* 1 sazhen.
 
-      Winter wheat:
+Field width: 24 columns \* 1 sazhen.
 
-      Field length: 10 rows \* 1 sazhen.
+Summer wheat:
 
-      Field width: 24 columns \* 1 sazhen.
+Field length: 16 rows \* 1 sazhen.
 
-      Summer wheat:
+Field width: 15 columns \* 1 sazhen.
 
-      Field length: 16 rows \* 1 sazhen.
+Note: The Russian word (that looks like "cax" with a vertical line in
+the "x") refers to a unit of measurement. Specifically, it represents
+the sazhen, which was used in traditional Russian systems of
+measurement. The sazhen itself is approximately 3 meters (7 feet) long.
+Google Translate sometimes converts "sazhen" into "soot", "meter" or
+"fathom".
 
-      Field width: 15 columns \* 1 sazhen.
+Transcription details: The data were typed by K.Wright from Roemer
+(1920), table 4, p. 63.
 
-      Note: The Russian word (that looks like "cax" with a vertical line
-      in the "x") refers to a unit of measurement. Specifically, it
-      represents the sazhen, which was used in traditional Russian
-      systems of measurement. The sazhen itself is approximately 3
-      meters (7 feet) long. Google Translate sometimes converts "sazhen"
-      into "soot", "meter" or "fathom".
+Source
+~~~~~~
 
-      The data were typed by K.Wright from Roemer (1920), table 4, p.
-      63.
+N. Tulaikow (1913) Resultate einer mathematischen Bearbeitung von
+Ernteergebnissen. Russian Journal fur Exp Landw., 14, 88-113.
+https://www.google.com/books/edition/Journal_de_l_agriculture_experimentale/i2EjAQAAIAAJ?hl=en&gbpv=1&dq=tulaikow
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      N. Tulaikow (1913) Resultate einer mathematischen Bearbeitung von
-      Ernteergebnissen. Russian Journal fur Exp Landw., 14, 88-113.
-      https://www.google.com/books/edition/Journal_de_l_agriculture_experimentale/i2EjAQAAIAAJ?hl=en&gbpv=1&dq=tulaikow
+Neyman, J., & Iwaszkiewicz, K. (1935). Statistical problems in
+agricultural experimentation. Supplement to the Journal of the Royal
+Statistical Society, 2(2), 107-180.
 
-      .. rubric:: References
-         :name: references
+Roemer, T. (1920). Der Feldversuch. Arbeiten der Deutschen
+Landwirtschafts-Gesellschaft, 302.
+https://www.google.com/books/edition/Arbeiten_der_Deutschen_Landwirtschafts_G/7zBSAQAAMAAJ
 
-      Neyman, J., & Iwaszkiewicz, K. (1935). Statistical problems in
-      agricultural experimentation. Supplement to the Journal of the
-      Royal Statistical Society, 2(2), 107-180.
+Examples
+~~~~~~~~
 
-      Roemer, T. (1920). Der Feldversuch. Arbeiten der Deutschen
-      Landwirtschafts-Gesellschaft, 302.
-      https://www.google.com/books/edition/Arbeiten_der_Deutschen_Landwirtschafts_G/7zBSAQAAMAAJ
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
+     library(agridat)
+     data(tulaikow.wheat.uniformity)
+     dat <- tulaikow.wheat.uniformity
+     
+     libs(desplot)
+     desplot(dat, yield~col*row, subset=season=="winter",
+             aspect=10/24, flip=TRUE, tick=TRUE,
+             main="tulaikow.wheat.uniformity (winter)")
+     desplot(dat, yield~col*row, subset=season=="summer",
+             aspect=16/15, flip=TRUE, tick=TRUE,
+             main="tulaikow.wheat.uniformity (summer)")
 
-      .. code:: R
-
-         ## Not run: 
-           library(agridat)
-           data(tulaikow.wheat.uniformity)
-           dat <- tulaikow.wheat.uniformity
-           
-           libs(desplot)
-           desplot(dat, yield~col*row, subset=season=="winter",
-                   aspect=10/24, flip=TRUE, tick=TRUE,
-                   main="tulaikow.wheat.uniformity (winter)")
-           desplot(dat, yield~col*row, subset=season=="summer",
-                   aspect=16/15, flip=TRUE, tick=TRUE,
-                   main="tulaikow.wheat.uniformity (summer)")
-
-         ## End(Not run)
+   ## End(Not run)

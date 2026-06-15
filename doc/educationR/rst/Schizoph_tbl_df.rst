@@ -1,48 +1,44 @@
-.. container::
+=============== ===============
+Schizoph_tbl_df R Documentation
+=============== ===============
 
-   .. container::
+Schizophrenic Learning Ability After Tranquilizer Dose
+------------------------------------------------------
 
-      =============== ===============
-      Schizoph_tbl_df R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Schizophrenic Learning Ability After Tranquilizer Dose
-         :name: schizophrenic-learning-ability-after-tranquilizer-dose
+This dataset, Schizoph_tbl_df, is a tibble containing standardized exam
+scores for 13 patients. The data was collected to investigate the
+learning ability of schizophrenics after being given a specified dose of
+a tranquilizer.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, Schizoph_tbl_df, is a tibble containing standardized
-      exam scores for 13 patients. The data was collected to investigate
-      the learning ability of schizophrenics after being given a
-      specified dose of a tranquilizer.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Schizoph_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Schizoph_tbl_df)
+A tibble with 13 observations and 1 variable:
 
-      .. rubric:: Format
-         :name: format
+score
+   Standardized exam scores (integer).
 
-      A tibble with 13 observations and 1 variable:
+Details
+~~~~~~~
 
-      score
-         Standardized exam scores (integer).
+The dataset name has been kept as 'Schizoph_tbl_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the educationR package and assists
+users in identifying its specific characteristics. The suffix 'tbl_df'
+indicates that the dataset is a tibble. The original content has not
+been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'Schizoph_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      educationR package and assists users in identifying its specific
-      characteristics. The suffix 'tbl_df' indicates that the dataset is
-      a tibble. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset was taken from the BSDA package.
+The dataset was taken from the BSDA package.

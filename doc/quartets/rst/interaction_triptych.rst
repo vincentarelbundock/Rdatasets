@@ -1,64 +1,59 @@
-.. container::
+==================== ===============
+interaction_triptych R Documentation
+==================== ===============
 
-   .. container::
+Interaction Triptych Data
+-------------------------
 
-      ==================== ===============
-      interaction_triptych R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Interaction Triptych Data
-         :name: interaction-triptych-data
+This dataset contains 2,700 observations, generated under 3 different
+conditions
 
-      .. rubric:: Description
-         :name: description
+- (1) Ideal case
 
-      This dataset contains 2,700 observations, generated under 3
-      different conditions
+- (2) Floor effect, No latent interaction
 
-      -  (1) Ideal case
+- (3) Smaller correlation at larger slope
 
-      -  (2) Floor effect, No latent interaction
+Usage
+~~~~~
 
-      -  (3) Smaller correlation at larger slope
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   interaction_triptych
 
-      .. code:: R
+Format
+~~~~~~
 
-         interaction_triptych
+A dataframe with 2700 rows and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+- ``dataset``: ideal, floor, or smaller correlation at larger slope
 
-      A dataframe with 2700 rows and 5 variables:
+- ``moderator``: a factor that potentially interacts with ``x``, values:
+  low, medium, or high
 
-      -  ``dataset``: ideal, floor, or smaller correlation at larger
-         slope
+- ``x``
 
-      -  ``moderator``: a factor that potentially interacts with ``x``,
-         values: low, medium, or high
+- ``y``
 
-      -  ``x``
+Details
+~~~~~~~
 
-      -  ``y``
+In the ideal scenario, only the slopes differ by moderator level. In the
+"floor effect" scenario, there is an illusion of an interaction, even
+though only main effects were simulated. In the third scenario, the
+slopes increase with higher moderator values but the correlation
+decreases. Running only a linear model would not allow for appropriate
+differentiation between these effects.
 
-      .. rubric:: Details
-         :name: details
+In each case there is a potential moderator with "low" "medium" and
+"high" values.
 
-      In the ideal scenario, only the slopes differ by moderator level.
-      In the "floor effect" scenario, there is an illusion of an
-      interaction, even though only main effects were simulated. In the
-      third scenario, the slopes increase with higher moderator values
-      but the correlation decreases. Running only a linear model would
-      not allow for appropriate differentiation between these effects.
+References
+~~~~~~~~~~
 
-      In each case there is a potential moderator with "low" "medium"
-      and "high" values.
-
-      .. rubric:: References
-         :name: references
-
-      Rohrer, Julia M., and Ruben C. Arslan. "Precise answers to vague
-      questions: Issues with interactions." Advances in Methods and
-      Practices in Psychological Science 4.2 (2021): 25152459211007368.
+Rohrer, Julia M., and Ruben C. Arslan. "Precise answers to vague
+questions: Issues with interactions." Advances in Methods and Practices
+in Psychological Science 4.2 (2021): 25152459211007368.

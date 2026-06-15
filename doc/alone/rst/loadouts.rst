@@ -1,70 +1,66 @@
-.. container::
+======== ===============
+loadouts R Documentation
+======== ===============
 
-   .. container::
+Loadouts
+--------
 
-      ======== ===============
-      loadouts R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Loadouts
-         :name: loadouts
+Information on each survivalists loadout of 10 items
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Information on each survivalists loadout of 10 items
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   loadouts
 
-      .. code:: R
+Format
+~~~~~~
 
-         loadouts
+This data frame contains the following columns:
 
-      .. rubric:: Format
-         :name: format
+``version``
+   Country code for the version of the show
 
-      This data frame contains the following columns:
+``season``
+   The season number
 
-      ``version``
-         Country code for the version of the show
+``id``
+   Survivalist ID
 
-      ``season``
-         The season number
+``name``
+   Name of the survivalist
 
-      ``id``
-         Survivalist ID
+``item_number``
+   Item number
 
-      ``name``
-         Name of the survivalist
+``item_detailed``
+   Detailed loadout item description
 
-      ``item_number``
-         Item number
+``item``
+   Loadout item. Simplified for aggregation
 
-      ``item_detailed``
-         Detailed loadout item description
+Source
+~~~~~~
 
-      ``item``
-         Loadout item. Simplified for aggregation
+https://en.wikipedia.org/wiki/Alone_(TV_series)
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      https://en.wikipedia.org/wiki/Alone_(TV_series)
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   library(dplyr)
+   library(ggplot2)
+   library(forcats)
 
-      .. code:: R
-
-         library(dplyr)
-         library(ggplot2)
-         library(forcats)
-
-         loadouts |>
-           count(item) |>
-           mutate(item = fct_reorder(item, n, max)) |>
-           ggplot(aes(item, n)) +
-           geom_col() +
-           geom_text(aes(item, n + 3, label = n)) +
-           coord_flip()
+   loadouts |>
+     count(item) |>
+     mutate(item = fct_reorder(item, n, max)) |>
+     ggplot(aes(item, n)) +
+     geom_col() +
+     geom_text(aes(item, n + 3, label = n)) +
+     coord_flip()

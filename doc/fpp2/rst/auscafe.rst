@@ -1,34 +1,30 @@
-.. container::
+======= ===============
+auscafe R Documentation
+======= ===============
 
-   .. container::
+Monthly expenditure on eating out in Australia
+----------------------------------------------
 
-      ======= ===============
-      auscafe R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Monthly expenditure on eating out in Australia
-         :name: monthly-expenditure-on-eating-out-in-australia
+The total monthly expenditure on cafes, restaurants and takeaway food
+services in Australia ($billion). April 1982 - September 2017.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      The total monthly expenditure on cafes, restaurants and takeaway
-      food services in Australia ($billion). April 1982 - September
-      2017.
+Monthly time series of class ``ts``.
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      Monthly time series of class ``ts``.
+Australian Bureau of Statistics. Catalogue No. 8501.0
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Australian Bureau of Statistics. Catalogue No. 8501.0
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         autoplot(auscafe)
+   autoplot(auscafe)

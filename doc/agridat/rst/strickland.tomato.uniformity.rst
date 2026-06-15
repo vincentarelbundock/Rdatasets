@@ -1,81 +1,77 @@
-.. container::
+============================ ===============
+strickland.tomato.uniformity R Documentation
+============================ ===============
 
-   .. container::
+Uniformity trial of tomato
+--------------------------
 
-      ============================ ===============
-      strickland.tomato.uniformity R Documentation
-      ============================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of tomato
-         :name: uniformity-trial-of-tomato
+Uniformity trial of tomato in Australia
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of tomato in Australia
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("strickland.tomato.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("strickland.tomato.uniformity")
+A data frame with 180 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row
 
-      A data frame with 180 observations on the following 3 variables.
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   yield per plot, pounds
 
-      ``col``
-         column
+Details
+~~~~~~~
 
-      ``yield``
-         yield per plot, pounds
+Tomato plants were placed 2 feet apart in rows 4 feet apart. Each plot
+contained 6 plants.
 
-      .. rubric:: Details
-         :name: details
+Field dimensions are not given, but the most likely design is:
 
-      Tomato plants were placed 2 feet apart in rows 4 feet apart. Each
-      plot contained 6 plants.
+Field length: 6 plots \* 6 plants \* 2 feet = 72 feet
 
-      Field dimensions are not given, but the most likely design is:
+Field width: 30 plots \* 4 feet = 120 feet
 
-      Field length: 6 plots \* 6 plants \* 2 feet = 72 feet
+Source
+~~~~~~
 
-      Field width: 30 plots \* 4 feet = 120 feet
+A. G. Strickland (1935). Error in horticultural experiments. Journal of
+Agriculture, Victoria, 33, 408-416.
+https://handle.slv.vic.gov.au/10381/386642
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      A. G. Strickland (1935). Error in horticultural experiments.
-      Journal of Agriculture, Victoria, 33, 408-416.
-      https://handle.slv.vic.gov.au/10381/386642
+None
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+     data(strickland.tomato.uniformity)
+     dat <- strickland.tomato.uniformity
 
-         ## Not run: 
+     mean(dat$yield)
+     sd(dat$yield)
 
-         library(agridat)
-           data(strickland.tomato.uniformity)
-           dat <- strickland.tomato.uniformity
+     libs(desplot)
+     desplot(dat, yield ~ col*row,
+             main="strickland.tomato.uniformity",
+             flip=TRUE, aspect=(6*12)/(30*4))
 
-           mean(dat$yield)
-           sd(dat$yield)
-
-           libs(desplot)
-           desplot(dat, yield ~ col*row,
-                   main="strickland.tomato.uniformity",
-                   flip=TRUE, aspect=(6*12)/(30*4))
-
-         ## End(Not run)
+   ## End(Not run)

@@ -1,102 +1,98 @@
-.. container::
+======== ===============
+Caschool R Documentation
+======== ===============
 
-   .. container::
+The California Test Score Data Set
+----------------------------------
 
-      ======== ===============
-      Caschool R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The California Test Score Data Set
-         :name: the-california-test-score-data-set
+a cross-section from 1998-1999
 
-      .. rubric:: Description
-         :name: description
+*number of observations* : 420
 
-      a cross-section from 1998-1999
+*observation* : schools
 
-      *number of observations* : 420
+*country* : United States
 
-      *observation* : schools
+Usage
+~~~~~
 
-      *country* : United States
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Caschool)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Caschool)
+A dataframe containing :
 
-      .. rubric:: Format
-         :name: format
+distcod
+   district code
 
-      A dataframe containing :
+county
+   county
 
-      distcod
-         district code
+district
+   district
 
-      county
-         county
+grspan
+   grade span of district
 
-      district
-         district
+enrltot
+   total enrollment
 
-      grspan
-         grade span of district
+teachers
+   number of teachers
 
-      enrltot
-         total enrollment
+calwpct
+   percent qualifying for CalWORKS
 
-      teachers
-         number of teachers
+mealpct
+   percent qualifying for reduced-price lunch
 
-      calwpct
-         percent qualifying for CalWORKS
+computer
+   number of computers
 
-      mealpct
-         percent qualifying for reduced-price lunch
+testscr
+   average test score ``(read.scr+math.scr)/2``
 
-      computer
-         number of computers
+compstu
+   computer per student
 
-      testscr
-         average test score ``(read.scr+math.scr)/2``
+expnstu
+   expenditure per student
 
-      compstu
-         computer per student
+str
+   student teacher ratio
 
-      expnstu
-         expenditure per student
+avginc
+   district average income
 
-      str
-         student teacher ratio
+elpct
+   percent of English learners
 
-      avginc
-         district average income
+readscr
+   average reading score
 
-      elpct
-         percent of English learners
+mathscr
+   average math score
 
-      readscr
-         average reading score
+Source
+~~~~~~
 
-      mathscr
-         average math score
+California Department of Education
+https://web.archive.org/web/20250823081216/https://www.cde.ca.gov/.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      California Department of Education
-      https://web.archive.org/web/20250823081216/https://www.cde.ca.gov/.
+Stock, James H. and Mark W. Watson (2003) *Introduction to
+Econometrics*, Addison-Wesley Educational Publishers, chapter 4–7.
 
-      .. rubric:: References
-         :name: references
+See Also
+~~~~~~~~
 
-      Stock, James H. and Mark W. Watson (2003) *Introduction to
-      Econometrics*, Addison-Wesley Educational Publishers, chapter 4–7.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-      ``Index.Observations``
+``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+``Index.Observations``

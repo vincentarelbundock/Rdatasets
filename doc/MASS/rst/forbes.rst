@@ -1,40 +1,35 @@
-.. container::
+====== ===============
+forbes R Documentation
+====== ===============
 
-   .. container::
+Forbes' Data on Boiling Points in the Alps
+------------------------------------------
 
-      ====== ===============
-      forbes R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Forbes' Data on Boiling Points in the Alps
-         :name: forbes-data-on-boiling-points-in-the-alps
+A data frame with 17 observations on boiling point of water and
+barometric pressure in inches of mercury.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A data frame with 17 observations on boiling point of water and
-      barometric pressure in inches of mercury.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   forbes
 
-      .. code:: R
+Format
+~~~~~~
 
-         forbes
+``bp``
+   boiling point (degrees Farenheit).
 
-      .. rubric:: Format
-         :name: format
+``pres``
+   barometric pressure in inches of mercury.
 
-      ``bp``
-         boiling point (degrees Farenheit).
+Source
+~~~~~~
 
-      ``pres``
-         barometric pressure in inches of mercury.
+A. C. Atkinson (1985) *Plots, Transformations and Regression.* Oxford.
 
-      .. rubric:: Source
-         :name: source
-
-      A. C. Atkinson (1985) *Plots, Transformations and Regression.*
-      Oxford.
-
-      S. Weisberg (1980) *Applied Linear Regression.* Wiley.
+S. Weisberg (1980) *Applied Linear Regression.* Wiley.

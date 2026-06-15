@@ -1,83 +1,79 @@
-.. container::
+================== ===============
+homicides15_tbl_df R Documentation
+================== ===============
 
-   .. container::
+Homicides in nine cities in 2015
+--------------------------------
 
-      ================== ===============
-      homicides15_tbl_df R Documentation
-      ================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Homicides in nine cities in 2015
-         :name: homicides-in-nine-cities-in-2015
+The dataset name has been changed to 'homicides15_tbl_df' to avoid
+confusion with other packages in the R ecosystem from which datasets
+have been sourced. This naming convention helps distinguish this dataset
+as part of the 'usdatasets' package and assists users in identifying its
+specific characteristics. The suffix 'tbl_df' identifies the dataset as
+a tibble. The original content of the dataset has not been modified in
+any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'homicides15_tbl_df' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. This naming convention helps
-      distinguish this dataset as part of the 'usdatasets' package and
-      assists users in identifying its specific characteristics. The
-      suffix 'tbl_df' identifies the dataset as a tibble. The original
-      content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(homicides15_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(homicides15_tbl_df)
+A tibble with 1922 observations and 15 variables:
 
-      .. rubric:: Format
-         :name: format
+uid
+   Unique identifier (integer).
 
-      A tibble with 1922 observations and 15 variables:
+city_name
+   City name where the homicide occurred (character).
 
-      uid
-         Unique identifier (integer).
+offense_code
+   Offense code (character).
 
-      city_name
-         City name where the homicide occurred (character).
+offense_type
+   Type of offense (character).
 
-      offense_code
-         Offense code (character).
+date_single
+   Date of the homicide (POSIXct).
 
-      offense_type
-         Type of offense (character).
+address
+   Location address of the homicide (character).
 
-      date_single
-         Date of the homicide (POSIXct).
+longitude
+   Longitude of the homicide location (numeric).
 
-      address
-         Location address of the homicide (character).
+latitude
+   Latitude of the homicide location (numeric).
 
-      longitude
-         Longitude of the homicide location (numeric).
+location_type
+   Type of location where the homicide occurred (character).
 
-      latitude
-         Latitude of the homicide location (numeric).
+location_category
+   Category of the location (character).
 
-      location_type
-         Type of location where the homicide occurred (character).
+fips_state
+   FIPS code of the state (integer).
 
-      location_category
-         Category of the location (character).
+fips_county
+   FIPS code of the county (character).
 
-      fips_state
-         FIPS code of the state (integer).
+tract
+   Census tract where the homicide occurred (character).
 
-      fips_county
-         FIPS code of the county (character).
+block_group
+   Block group number (integer).
 
-      tract
-         Census tract where the homicide occurred (character).
+block
+   Block number (integer).
 
-      block_group
-         Block group number (integer).
+Source
+~~~~~~
 
-      block
-         Block number (integer).
-
-      .. rubric:: Source
-         :name: source
-
-      2015 Homicides Data
+2015 Homicides Data

@@ -1,71 +1,67 @@
-.. container::
+===== ===============
+Mmmec R Documentation
+===== ===============
 
-   .. container::
+Malignant melanoma deaths in Europe
+-----------------------------------
 
-      ===== ===============
-      Mmmec R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Malignant melanoma deaths in Europe
-         :name: malignant-melanoma-deaths-in-europe
+Malignant Melanoma Mortality in the European Community associated with
+the impact of UV radiation exposure.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Malignant Melanoma Mortality in the European Community associated
-      with the impact of UV radiation exposure.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Mmmec)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Mmmec)
+A data frame with 354 observations on the following 6 variables.
 
-      .. rubric:: Format
-         :name: format
+nation
+   a factor with levels ``Belgium``, ``W.Germany``, ``Denmark``,
+   ``France``, ``UK``, ``Italy``, ``Ireland``, ``Luxembourg``, and
+   ``Netherlands``
 
-      A data frame with 354 observations on the following 6 variables.
+region
+   Region ID - a factor.
 
-      nation
-         a factor with levels ``Belgium``, ``W.Germany``, ``Denmark``,
-         ``France``, ``UK``, ``Italy``, ``Ireland``, ``Luxembourg``, and
-         ``Netherlands``
+county
+   County ID - a factor.
 
-      region
-         Region ID - a factor.
+deaths
+   Number of male deaths due to MM during 1971–1980
 
-      county
-         County ID - a factor.
+expected
+   Number of expected deaths.
 
-      deaths
-         Number of male deaths due to MM during 1971–1980
+uvb
+   Centered measure of the UVB dose reaching the earth's surface in each
+   county.
 
-      expected
-         Number of expected deaths.
+Source
+~~~~~~
 
-      uvb
-         Centered measure of the UVB dose reaching the earth's surface
-         in each county.
+https://www.bristol.ac.uk/cmm/learning/mmsoftware/data-rev.html
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      http://www.bristol.ac.uk/cmm/learning/mmsoftware/data-rev.html
+Langford, I.H., Bentham, G. and McDonald, A. 1998: Multilevel modelling
+of geographically aggregated health data: a case study on malignant
+melanoma mortality and UV exposure in the European community.
+*Statistics in Medicine* 17: 41-58.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Langford, I.H., Bentham, G. and McDonald, A. 1998: Multilevel
-      modelling of geographically aggregated health data: a case study
-      on malignant melanoma mortality and UV exposure in the European
-      community. *Statistics in Medicine* 17: 41-58.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         str(Mmmec)
-         summary(Mmmec)
-         (fm1 <- glmer(deaths ~ uvb + (1|region), Mmmec, poisson, offset = log(expected)))
+   str(Mmmec)
+   summary(Mmmec)
+   (fm1 <- glmer(deaths ~ uvb + (1|region), Mmmec, poisson, offset = log(expected)))

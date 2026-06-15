@@ -1,69 +1,65 @@
-.. container::
+==================== ===============
+coffee_ratings_small R Documentation
+==================== ===============
 
-   .. container::
+Coffee Ratings Data
+-------------------
 
-      ==================== ===============
-      coffee_ratings_small R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Coffee Ratings Data
-         :name: coffee-ratings-data
+A sub-set of data on coffee bean ratings / quality originally collected
+by James LeDoux (jmzledoux) and distributed through the R for Data
+Science TidyTuesday project. This is a simplified version of the
+coffee_ratings data.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A sub-set of data on coffee bean ratings / quality originally
-      collected by James LeDoux (jmzledoux) and distributed through the
-      R for Data Science TidyTuesday project. This is a simplified
-      version of the coffee_ratings data.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   coffee_ratings_small
 
-      .. code:: R
+Format
+~~~~~~
 
-         coffee_ratings_small
+A data frame with 636 batches of coffee beans and 11 variables on each
+batch.
 
-      .. rubric:: Format
-         :name: format
+farm_name
+   farm where beans were grown
 
-      A data frame with 636 batches of coffee beans and 11 variables on
-      each batch.
+total_cup_points
+   total bean rating (0 – 100)
 
-      farm_name
-         farm where beans were grown
+aroma
+   bean aroma grade
 
-      total_cup_points
-         total bean rating (0 – 100)
+flavor
+   bean flavor grade
 
-      aroma
-         bean aroma grade
+aftertaste
+   bean aftertaste grade
 
-      flavor
-         bean flavor grade
+acidity
+   bean acidity grade
 
-      aftertaste
-         bean aftertaste grade
+body
+   bean body grade
 
-      acidity
-         bean acidity grade
+balance
+   bean balance grade
 
-      body
-         bean body grade
+uniformity
+   bean uniformity grade
 
-      balance
-         bean balance grade
+sweetness
+   bean sweetness grade
 
-      uniformity
-         bean uniformity grade
+moisture
+   bean moisture grade
 
-      sweetness
-         bean sweetness grade
+Source
+~~~~~~
 
-      moisture
-         bean moisture grade
-
-      .. rubric:: Source
-         :name: source
-
-      https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-07-07/coffee_ratings.csv.
+https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-07-07/coffee_ratings.csv.

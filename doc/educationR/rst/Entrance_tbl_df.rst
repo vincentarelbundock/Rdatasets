@@ -1,48 +1,43 @@
-.. container::
+=============== ===============
+Entrance_tbl_df R Documentation
+=============== ===============
 
-   .. container::
+College entrance exam scores for 24 high school seniors
+-------------------------------------------------------
 
-      =============== ===============
-      Entrance_tbl_df R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: College entrance exam scores for 24 high school
-         seniors
-         :name: college-entrance-exam-scores-for-24-high-school-seniors
+This dataset, Entrance_tbl_df, is a tibble containing the college
+entrance exam scores of 24 high school seniors. The dataset includes
+information on their exam scores.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, Entrance_tbl_df, is a tibble containing the college
-      entrance exam scores of 24 high school seniors. The dataset
-      includes information on their exam scores.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Entrance_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Entrance_tbl_df)
+A tibble with 24 observations and 1 variable:
 
-      .. rubric:: Format
-         :name: format
+score
+   College entrance exam scores (integer).
 
-      A tibble with 24 observations and 1 variable:
+Details
+~~~~~~~
 
-      score
-         College entrance exam scores (integer).
+The dataset name has been kept as 'Entrance_tbl_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the educationR package and assists
+users in identifying its specific characteristics. The suffix 'tbl_df'
+indicates that the dataset is a tibble. The original content has not
+been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'Entrance_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      educationR package and assists users in identifying its specific
-      characteristics. The suffix 'tbl_df' indicates that the dataset is
-      a tibble. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset was taken from the BSDA package.
+The dataset was taken from the BSDA package.

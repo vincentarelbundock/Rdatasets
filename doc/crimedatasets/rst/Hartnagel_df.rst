@@ -1,77 +1,70 @@
-.. container::
+============ ===============
+Hartnagel_df R Documentation
+============ ===============
 
-   .. container::
+Canadian Crime Rates Time Series (1931–1968)
+--------------------------------------------
 
-      ============ ===============
-      Hartnagel_df R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Canadian Crime Rates Time Series (1931–1968)
-         :name: canadian-crime-rates-time-series-19311968
+This dataset, known as the Hartnagel dataset, contains an annual time
+series of crime rates and related socio-economic data in Canada from
+1931 to 1968. It includes variables such as total fertility rates, labor
+force participation rates, and crime statistics disaggregated by gender.
+Note that some data points are missing.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, known as the Hartnagel dataset, contains an annual
-      time series of crime rates and related socio-economic data in
-      Canada from 1931 to 1968. It includes variables such as total
-      fertility rates, labor force participation rates, and crime
-      statistics disaggregated by gender. Note that some data points are
-      missing.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Hartnagel_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Hartnagel_df)
+A data frame with 38 observations and 8 variables:
 
-      .. rubric:: Format
-         :name: format
+year
+   Year of observation (integer).
 
-      A data frame with 38 observations and 8 variables:
+tfr
+   Total fertility rate per 1,000 women (integer).
 
-      year
-         Year of observation (integer).
+partic
+   Labor force participation rate per 1,000 people (integer).
 
-      tfr
-         Total fertility rate per 1,000 women (integer).
+degrees
+   Number of university degrees conferred per 1,000 people (numeric).
 
-      partic
-         Labor force participation rate per 1,000 people (integer).
+fconvict
+   Convictions of females per 100,000 people (numeric).
 
-      degrees
-         Number of university degrees conferred per 1,000 people
-         (numeric).
+ftheft
+   Thefts by females per 100,000 people (numeric).
 
-      fconvict
-         Convictions of females per 100,000 people (numeric).
+mconvict
+   Convictions of males per 100,000 people (numeric).
 
-      ftheft
-         Thefts by females per 100,000 people (numeric).
+mtheft
+   Thefts by males per 100,000 people (numeric).
 
-      mconvict
-         Convictions of males per 100,000 people (numeric).
+Details
+~~~~~~~
 
-      mtheft
-         Thefts by males per 100,000 people (numeric).
+The dataset name has been changed to 'Hartnagel_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the crimedatasets package and
+assists users in identifying its specific characteristics. The suffix
+'df' indicates that the dataset is a traditional data frame in R. The
+original content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+The data is an annual time-series from 1931 to 1968. Some observations
+contain missing data.
 
-      The dataset name has been changed to 'Hartnagel_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      crimedatasets package and assists users in identifying its
-      specific characteristics. The suffix 'df' indicates that the
-      dataset is a traditional data frame in R. The original content has
-      not been modified in any way.
+Source
+~~~~~~
 
-      The data is an annual time-series from 1931 to 1968. Some
-      observations contain missing data.
-
-      .. rubric:: Source
-         :name: source
-
-      Hartnagel dataset, providing insights into Canadian crime rates
-      and socio-economic factors.
+Hartnagel dataset, providing insights into Canadian crime rates and
+socio-economic factors.

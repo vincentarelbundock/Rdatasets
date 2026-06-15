@@ -1,88 +1,83 @@
-.. container::
+====================== ===============
+baker.wheat.uniformity R Documentation
+====================== ===============
 
-   .. container::
+Uniformity trial of wheat
+-------------------------
 
-      ====================== ===============
-      baker.wheat.uniformity R Documentation
-      ====================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of wheat
-         :name: uniformity-trial-of-wheat
+Uniformity trial of wheat
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of wheat
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("baker.wheat.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("baker.wheat.uniformity")
+A data frame with 225 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row
 
-      A data frame with 225 observations on the following 3 variables.
+``col``
+   col
 
-      ``row``
-         row
+``yield``
+   yield (grams)
 
-      ``col``
-         col
+Details
+~~~~~~~
 
-      ``yield``
-         yield (grams)
+Data was collected in 1939-1940. The trial consists of sixteen 40 ft. x
+40 ft. blocks subdivided into nine plots each. The data were secured in
+1939-1940 from White Federation wheat. The design of the experiment was
+square with alleys 20 feet wide between blocks. The plots were 10 feet
+long with two guard rows on each side.
 
-      .. rubric:: Details
-         :name: details
+Morning glories infested the middle two columns of blocks, uniformly
+over the blocks affected.
 
-      Data was collected in 1939-1940. The trial consists of sixteen 40
-      ft. x 40 ft. blocks subdivided into nine plots each. The data were
-      secured in 1939-1940 from White Federation wheat. The design of
-      the experiment was square with alleys 20 feet wide between blocks.
-      The plots were 10 feet long with two guard rows on each side.
+The data here include missing values for the alleys so that the field
+map is approximately the correct shape and size.
 
-      Morning glories infested the middle two columns of blocks,
-      uniformly over the blocks affected.
+Field width: 4 blocks of 40 feet + 3 alleys of 20 feet = 220 feet.
 
-      The data here include missing values for the alleys so that the
-      field map is approximately the correct shape and size.
+Field length: 4 blocks of 40 feet + 3 alleys of 20 feet = 220 feet.
 
-      Field width: 4 blocks of 40 feet + 3 alleys of 20 feet = 220 feet.
+Source
+~~~~~~
 
-      Field length: 4 blocks of 40 feet + 3 alleys of 20 feet = 220
-      feet.
+G. A. Baker, E. B. Roessler (1957). Implications of a uniformity trial
+with small plots of wheat. Hilgardia, 27, 183-188.
+https://hilgardia.ucanr.edu/Abstract/?a=hilg.v27n05p183
+https://doi.org/10.3733/hilg.v27n05p183
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      G. A. Baker, E. B. Roessler (1957). Implications of a uniformity
-      trial with small plots of wheat. Hilgardia, 27, 183-188.
-      https://hilgardia.ucanr.edu/Abstract/?a=hilg.v27n05p183
-      https://doi.org/10.3733/hilg.v27n05p183
+None
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
+     
+     library(agridat)
+     data(baker.wheat.uniformity)
+     dat <- baker.wheat.uniformity
 
-      .. code:: R
-
-         ## Not run: 
-           
-           library(agridat)
-           data(baker.wheat.uniformity)
-           dat <- baker.wheat.uniformity
-
-           libs(desplot)
-           desplot(dat, yield ~ col*row,
-                   flip=TRUE, aspect=1,
-                   main="baker.wheat.uniformity")
+     libs(desplot)
+     desplot(dat, yield ~ col*row,
+             flip=TRUE, aspect=1,
+             main="baker.wheat.uniformity")
 
 
-         ## End(Not run)
+   ## End(Not run)

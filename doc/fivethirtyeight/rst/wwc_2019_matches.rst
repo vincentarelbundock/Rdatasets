@@ -1,173 +1,169 @@
-.. container::
+======== ===============
+wwc_2019 R Documentation
+======== ===============
 
-   .. container::
+2019 Women's World Cup Predictions
+----------------------------------
 
-      ======== ===============
-      wwc_2019 R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: 2019 Women's World Cup Predictions
-         :name: womens-world-cup-predictions
+The raw data behind the story "2019 Women’s World Cup Predictions"
+https://projects.fivethirtyeight.com/2019-womens-world-cup-predictions/
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "2019 Women’s World Cup Predictions"
-      https://projects.fivethirtyeight.com/2019-womens-world-cup-predictions/
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   wwc_2019_forecasts
 
-      .. code:: R
+   wwc_2019_matches
 
-         wwc_2019_forecasts
+Format
+~~~~~~
 
-         wwc_2019_matches
+2 dataframes about the 2019 Women's World Cup matches and teams
 
-      .. rubric:: Format
-         :name: format
+An object of class ``spec_tbl_df`` (inherits from ``tbl_df``, ``tbl``,
+``data.frame``) with 52 rows and 18 columns.
 
-      2 dataframes about the 2019 Women's World Cup matches and teams
+wwc_2019_forecasts
+~~~~~~~~~~~~~~~~~~
 
-      An object of class ``spec_tbl_df`` (inherits from ``tbl_df``,
-      ``tbl``, ``data.frame``) with 52 rows and 18 columns.
+A data frame with 192 rows representing 2019 Women's World Cup team
+match-by-match projections, and 21 variables:
 
-      .. rubric:: wwc_2019_forecasts
-         :name: wwc_2019_forecasts
+date
+   Date match was played
 
-      A data frame with 192 rows representing 2019 Women's World Cup
-      team match-by-match projections, and 21 variables:
+team
+   Team
 
-      date
-         Date match was played
+group
+   Assigned group for the group stage
 
-      team
-         Team
+spi
+   Soccer power index
 
-      group
-         Assigned group for the group stage
+global_o
+   SPI offensive rating
 
-      spi
-         Soccer power index
+global_d
+   SPI defensive rating
 
-      global_o
-         SPI offensive rating
+sim_wins
+   Simulated number of wins
 
-      global_d
-         SPI defensive rating
+sim_ties
+   Simulated number of ties
 
-      sim_wins
-         Simulated number of wins
+sim_losses
+   Simulated number of losses
 
-      sim_ties
-         Simulated number of ties
+sim_goal_diff
+   Simulated difference between goals_scored and goals_against
 
-      sim_losses
-         Simulated number of losses
+goals_scored
+   The number of goals that a team is expected to score against an
+   average team on a neutral field
 
-      sim_goal_diff
-         Simulated difference between goals_scored and goals_against
+goals_against
+   The number of goals that a team is expected to concede against an
+   average team on a neutral field
 
-      goals_scored
-         The number of goals that a team is expected to score against an
-         average team on a neutral field
+group_1
+   Chance of winning group stage game 1
 
-      goals_against
-         The number of goals that a team is expected to concede against
-         an average team on a neutral field
+group_2
+   Chance of winning group stage game 2
 
-      group_1
-         Chance of winning group stage game 1
+group_3
+   Chance of winning group stage game 3
 
-      group_2
-         Chance of winning group stage game 2
+group_4
+   Chance of winning group stage game 4
 
-      group_3
-         Chance of winning group stage game 3
+make_round_of_16
+   Chance of playing in the round of 16
 
-      group_4
-         Chance of winning group stage game 4
+make_quarters
+   Chance of playing in the quarter-finals
 
-      make_round_of_16
-         Chance of playing in the round of 16
+make_semis
+   Chance of playing in the semi-finals
 
-      make_quarters
-         Chance of playing in the quarter-finals
+make_final
+   Chance of playing in the finals
 
-      make_semis
-         Chance of playing in the semi-finals
+win_league
+   Chance of winning the tournament
 
-      make_final
-         Chance of playing in the finals
+wwc_2019_matches
+~~~~~~~~~~~~~~~~
 
-      win_league
-         Chance of winning the tournament
+2019 Women's World Cup Predictions A data frame with 52 rows
+representing Women's World Cup matches, and 18 variables:
 
-      .. rubric:: wwc_2019_matches
-         :name: wwc_2019_matches
+date
+   Date match was played
 
-      2019 Women's World Cup Predictions A data frame with 52 rows
-      representing Women's World Cup matches, and 18 variables:
+team1
+   Team 1
 
-      date
-         Date match was played
+team2
+   Team 2
 
-      team1
-         Team 1
+spi1
+   Soccer power index of team 1
 
-      team2
-         Team 2
+spi2
+   Soccer power index of team 2
 
-      spi1
-         Soccer power index of team 1
+prob1
+   Probability that team 1 will win match
 
-      spi2
-         Soccer power index of team 2
+prob2
+   Probability that team 2 will win match
 
-      prob1
-         Probability that team 1 will win match
+prob_tie
+   Probability that the teams will tie the match
 
-      prob2
-         Probability that team 2 will win match
+proj_score1
+   Projected number of goals scored by team 1
 
-      prob_tie
-         Probability that the teams will tie the match
+proj_score2
+   Projected number of goals scored by team 2
 
-      proj_score1
-         Projected number of goals scored by team 1
+score1
+   Actual number of goals scored by team 1
 
-      proj_score2
-         Projected number of goals scored by team 2
+score2
+   Actual number of goals scored by team 2
 
-      score1
-         Actual number of goals scored by team 1
+xg1
+   Shot-based expected goals for team 1
 
-      score2
-         Actual number of goals scored by team 2
+xg2
+   Shot-based expected goals for team 2
 
-      xg1
-         Shot-based expected goals for team 1
+nsxg1
+   Non-shot expected goals for team 1
 
-      xg2
-         Shot-based expected goals for team 2
+nsxg2
+   Non-shot expected goals for team 2
 
-      nsxg1
-         Non-shot expected goals for team 1
+adj_score1
+   Goals scored by team 1 accounting for the conditions under which each
+   goal was scored
 
-      nsxg2
-         Non-shot expected goals for team 2
+adj_score2
+   Goals scored by team 2 accounting for the conditions under which each
+   goal was scored
 
-      adj_score1
-         Goals scored by team 1 accounting for the conditions under
-         which each goal was scored
+Source
+~~~~~~
 
-      adj_score2
-         Goals scored by team 2 accounting for the conditions under
-         which each goal was scored
+https://projects.fivethirtyeight.com/soccer-api/international/2019/wwc_forecasts.csv
 
-      .. rubric:: Source
-         :name: source
-
-      https://projects.fivethirtyeight.com/soccer-api/international/2019/wwc_forecasts.csv
-
-      https://projects.fivethirtyeight.com/soccer-api/international/2019/wwc_matches.csv
+https://projects.fivethirtyeight.com/soccer-api/international/2019/wwc_matches.csv

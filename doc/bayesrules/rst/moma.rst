@@ -1,73 +1,68 @@
-.. container::
+==== ===============
+moma R Documentation
+==== ===============
 
-   .. container::
+Museum of Modern Art (MoMA) data
+--------------------------------
 
-      ==== ===============
-      moma R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Museum of Modern Art (MoMA) data
-         :name: museum-of-modern-art-moma-data
+The Museum of Modern Art data includes information about the individual
+artists included in the collection of the Museum of Modern Art in New
+York City. It does not include information about works for artist
+collectives or companies. The data was made available by MoMA itself and
+downloaded in December 2020.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The Museum of Modern Art data includes information about the
-      individual artists included in the collection of the Museum of
-      Modern Art in New York City. It does not include information about
-      works for artist collectives or companies. The data was made
-      available by MoMA itself and downloaded in December 2020.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   moma
 
-      .. code:: R
+Format
+~~~~~~
 
-         moma
+A data frame with 10964 rows and 11 variables. Each row represents an
+individual artist in the MoMA collection.
 
-      .. rubric:: Format
-         :name: format
+artist
+   name
 
-      A data frame with 10964 rows and 11 variables. Each row represents
-      an individual artist in the MoMA collection.
+country
+   country of origin
 
-      artist
-         name
+birth
+   year of birth
 
-      country
-         country of origin
+death
+   year of death
 
-      birth
-         year of birth
+alive
+   whether or not the artist was living at the time of data collection
+   (December 2020)
 
-      death
-         year of death
+genx
+   whether or not the artist is Gen X or younger, ie. born during 1965
+   or after
 
-      alive
-         whether or not the artist was living at the time of data
-         collection (December 2020)
+gender
+   gender identity (as perceived by MoMA employees)
 
-      genx
-         whether or not the artist is Gen X or younger, ie. born during
-         1965 or after
+department
+   MoMA department in which the artist's works most frequently appear
 
-      gender
-         gender identity (as perceived by MoMA employees)
+count
+   number of the artist's works in the MoMA collection
 
-      department
-         MoMA department in which the artist's works most frequently
-         appear
+year_acquired_min
+   first year MoMA acquired one of the artist's works
 
-      count
-         number of the artist's works in the MoMA collection
+year_acquired_max
+   most recent year MoMA acquired one of the artist's works
 
-      year_acquired_min
-         first year MoMA acquired one of the artist's works
+Source
+~~~~~~
 
-      year_acquired_max
-         most recent year MoMA acquired one of the artist's works
-
-      .. rubric:: Source
-         :name: source
-
-      https://github.com/MuseumofModernArt/collection/blob/master/Artworks.csv/.
+https://github.com/MuseumofModernArt/collection/blob/master/Artworks.csv/.

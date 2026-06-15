@@ -1,74 +1,69 @@
-.. container::
+==================== ===============
+trump_approval_trend R Documentation
+==================== ===============
 
-   .. container::
+How Popular is Donald Trump
+---------------------------
 
-      ==================== ===============
-      trump_approval_trend R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: How Popular is Donald Trump
-         :name: how-popular-is-donald-trump
+The raw data behind the story: "How Popular is Donald Trump"
+https://projects.fivethirtyeight.com/trump-approval-ratings/: Approval
+Trend Dataset.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story: "How Popular is Donald Trump"
-      https://projects.fivethirtyeight.com/trump-approval-ratings/:
-      Approval Trend Dataset.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   trump_approval_trend
 
-      .. code:: R
+Format
+~~~~~~
 
-         trump_approval_trend
+A data frame with 1044 rows representing poll trends and 11 variables:
 
-      .. rubric:: Format
-         :name: format
+subgroup
+   The subgroup the poll falls into as defined by the type of people
+   being polled (all polls, voters, adults)
 
-      A data frame with 1044 rows representing poll trends and 11
-      variables:
+modeldate
+   The date the model was created
 
-      subgroup
-         The subgroup the poll falls into as defined by the type of
-         people being polled (all polls, voters, adults)
+approve_estimate
+   Estimated approval ratings
 
-      modeldate
-         The date the model was created
+approve_high
+   Higher bound of the estimated approval percentage
 
-      approve_estimate
-         Estimated approval ratings
+approve_low
+   Lower bound of the estimated approval percentage
 
-      approve_high
-         Higher bound of the estimated approval percentage
+disapprove_estimate
+   Estimated disapproval percentage
 
-      approve_low
-         Lower bound of the estimated approval percentage
+disapprove_high
+   Higher bound of the estimated disapproval percentage
 
-      disapprove_estimate
-         Estimated disapproval percentage
+disapprove_low
+   Lower bound of the estimated disapproval percentage
 
-      disapprove_high
-         Higher bound of the estimated disapproval percentage
+timestamp
+   Date and time the model was compiled
 
-      disapprove_low
-         Lower bound of the estimated disapproval percentage
+Details
+~~~~~~~
 
-      timestamp
-         Date and time the model was compiled
+The Variable "president" was removed because all values were "Donald
+Trump"
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The Variable "president" was removed because all values were
-      "Donald Trump"
+https://projects.fivethirtyeight.com/trump-approval-data/approval_topline.csv
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      https://projects.fivethirtyeight.com/trump-approval-data/approval_topline.csv
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``trump_approval_poll``
+``trump_approval_poll``

@@ -1,60 +1,55 @@
-.. container::
+======= ===============
+antigua R Documentation
+======= ===============
 
-   .. container::
+Averages by block of yields for the Antigua Corn data
+-----------------------------------------------------
 
-      ======= ===============
-      antigua R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Averages by block of yields for the Antigua Corn data
-         :name: averages-by-block-of-yields-for-the-antigua-corn-data
+These data frames have yield averages by blocks (parcels). The
+``ant111b``\ dataset is a subset that has block averages of corn yields
+for treatment 111 only
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      These data frames have yield averages by blocks (parcels). The
-      ``ant111b``\ dataset is a subset that has block averages of corn
-      yields for treatment 111 only
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+     data(antigua)
+     data(ant111b)
+     
 
-      .. code:: R
+Format
+~~~~~~
 
-           data(antigua)
-           data(ant111b)
-           
+A data frame with 324 observations on 7 variables.
 
-      .. rubric:: Format
-         :name: format
+id
+   a numeric vector
 
-      A data frame with 324 observations on 7 variables.
+site
+   a factor with 8 levels.
 
-      id
-         a numeric vector
+block
+   a factor with levels ``I`` ``II`` ``III`` ``IV``
 
-      site
-         a factor with 8 levels.
+plot
+   a numeric vector
 
-      block
-         a factor with levels ``I`` ``II`` ``III`` ``IV``
+trt
+   a factor consisting of 12 levels
 
-      plot
-         a numeric vector
+ears
+   a numeric vector; note that -9999 is used as a missing value code.
 
-      trt
-         a factor consisting of 12 levels
+harvwt
+   a numeric vector; the average yield
 
-      ears
-         a numeric vector; note that -9999 is used as a missing value
-         code.
+Source
+~~~~~~
 
-      harvwt
-         a numeric vector; the average yield
-
-      .. rubric:: Source
-         :name: source
-
-      Andrews DF; Herzberg AM, 1985. Data. A Collection of Problems from
-      Many Fields for the Student and Research Worker. Springer-Verlag.
-      (pp. 339-353)
+Andrews DF; Herzberg AM, 1985. Data. A Collection of Problems from Many
+Fields for the Student and Research Worker. Springer-Verlag. (pp.
+339-353)

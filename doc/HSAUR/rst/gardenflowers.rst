@@ -1,47 +1,44 @@
-.. container::
+============= ===============
+gardenflowers R Documentation
+============= ===============
 
-   .. container::
+Garden Flowers
+--------------
 
-      ============= ===============
-      gardenflowers R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Garden Flowers
-         :name: garden-flowers
+The dissimilarity matrix of 18 species of garden flowers.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dissimilarity matrix of 18 species of garden flowers.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("gardenflowers")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("gardenflowers")
+An object of class ``dist``.
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      An object of class ``dist``.
+The dissimilarity was computed based on certain characteristics of the
+flowers.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dissimilarity was computed based on certain characteristics of
-      the flowers.
+L. Kaufman and P. J. Rousseeuw (1990), *Finding groups in data: an
+introduction to cluster analysis*, John Wiley & Sons, New York.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      L. Kaufman and P. J. Rousseeuw (1990), *Finding groups in data: an
-      introduction to cluster analysis*, John Wiley & Sons, New York.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-           data("gardenflowers", package = "HSAUR")
-           gardenflowers
+     data("gardenflowers", package = "HSAUR")
+     gardenflowers

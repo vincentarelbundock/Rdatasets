@@ -1,92 +1,88 @@
-.. container::
+========= ===============
+HomeGames R Documentation
+========= ===============
 
-   .. container::
+HomeGames table
+---------------
 
-      ========= ===============
-      HomeGames R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: HomeGames table
-         :name: homegames-table
+Data mapping teams to the stadiums they played regular season games in
+as the home team.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data mapping teams to the stadiums they played regular season
-      games in as the home team.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(HomeGames)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(HomeGames)
+A data frame with 3303 observations on the following 9 variables.
 
-      .. rubric:: Format
-         :name: format
+``year.key``
+   Year
 
-      A data frame with 3270 observations on the following 9 variables.
+``league.key``
+   League; a factor with levels ``AA`` ``AL`` ``FL`` ``NL`` ``PL``
+   ``UA``
 
-      ``year.key``
-         Year
+``team.key``
+   Team; a factor
 
-      ``league.key``
-         League; a factor with levels ``AA`` ``AL`` ``FL`` ``NL`` ``PL``
-         ``UA``
+``park.key``
+   Unique identifier for each ballpark
 
-      ``team.key``
-         Team; a factor
+``span.first``
+   First date the park began acting as home field for the team
 
-      ``park.key``
-         Unique identifier for each ballpark
+``span.last``
+   Last date the park began acting as home field for the team
 
-      ``span.first``
-         First date the park began acting as home field for the team
+``games``
+   Total games in this time span
 
-      ``span.last``
-         Last date the park began acting as home field for the team
+``openings``
+   Total opening in this time span
 
-      ``games``
-         Total games in this time span
+``attendance``
+   Total attendance in this time span
 
-      ``openings``
-         Total opening in this time span
+Source
+~~~~~~
 
-      ``attendance``
-         Total attendance in this time span
+Lahman, S. (2026) Lahman's Baseball Database, 1871-2025, 2026 version,
+https://sabr.org/lahman-database/
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Lahman, S. (2025) Lahman's Baseball Database, 1871-2024, 2025
-      version, https://sabr.org/lahman-database/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   data(HomeGames)
+   library(dplyr)
 
-      .. code:: R
+   # How many parks has every team played in as the home team for even a single game?
+   HomeGames %>%
+     count(team.key) %>%
+     arrange(team.key)
 
-         data(HomeGames)
-         library(dplyr)
-
-         # How many parks has every team played in as the home team for even a single game?
-         HomeGames %>%
-           count(team.key) %>%
-           arrange(team.key)
-
-         # What parks have the Toronto Blue Jays played in as the home team?
-         HomeGames %>%
-           filter(team.key == "TOR") %>%
-           arrange(span.last)
-           
-         # What parks have the Boston Red Sox played in as the home team?
-         HomeGames %>%
-           filter(team.key == "BOS") %>%
-           arrange(span.last)
-           
-         # What is the Toronto Blue Jays annual total home attendance by year?
-         HomeGames %>%
-           filter(team.key == "TOR") %>%
-           group_by(year.key) %>%
-           summarize(total.attendance = sum(attendance)) %>%
-           arrange(year.key)
+   # What parks have the Toronto Blue Jays played in as the home team?
+   HomeGames %>%
+     filter(team.key == "TOR") %>%
+     arrange(span.last)
+     
+   # What parks have the Boston Red Sox played in as the home team?
+   HomeGames %>%
+     filter(team.key == "BOS") %>%
+     arrange(span.last)
+     
+   # What is the Toronto Blue Jays annual total home attendance by year?
+   HomeGames %>%
+     filter(team.key == "TOR") %>%
+     group_by(year.key) %>%
+     summarize(total.attendance = sum(attendance)) %>%
+     arrange(year.key)

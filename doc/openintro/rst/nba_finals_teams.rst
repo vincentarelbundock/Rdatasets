@@ -1,97 +1,93 @@
-.. container::
+================ ===============
+nba_finals_teams R Documentation
+================ ===============
 
-   .. container::
+NBA Finals Team Summary
+-----------------------
 
-      ================ ===============
-      nba_finals_teams R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: NBA Finals Team Summary
-         :name: nba-finals-team-summary
+A dataset with individual team summaries for the NBA Finals series from
+1950 to 2022. To win the Finals, a team must win 4 games. The maximum
+number of games in a series is 7.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset with individual team summaries for the NBA Finals series
-      from 1950 to 2022. To win the Finals, a team must win 4 games. The
-      maximum number of games in a series is 7.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   nba_finals_teams
 
-      .. code:: R
+Format
+~~~~~~
 
-         nba_finals_teams
+A data frame with 33 rows and 7 variables:
 
-      .. rubric:: Format
-         :name: format
+team
+   Team name.
 
-      A data frame with 33 rows and 7 variables:
+win
+   Number of NBA Championships won.
 
-      team
-         Team name.
+loss
+   Number of NBA Championships lost.
 
-      win
-         Number of NBA Championships won.
+apps
+   Number of NBA Finals appearances.
 
-      loss
-         Number of NBA Championships lost.
+pct
+   Win percentage.
 
-      apps
-         Number of NBA Finals appearances.
+years_won
+   Years in which the team won a Championship.
 
-      pct
-         Win percentage.
+years_lost
+   Years in which the team lost a Championship.
 
-      years_won
-         Years in which the team won a Championship.
+Details
+~~~~~~~
 
-      years_lost
-         Years in which the team lost a Championship.
+Notes:
 
-      .. rubric:: Details
-         :name: details
+#. The Chicago Stags folded in 1950, the Washington Capitols in 1951 and
+   the Baltimore Bullets in 1954.
 
-      Notes:
+#. This list uses current team names. For example, the Seattle
+   SuperSonics are not on the list as that team moved and became the
+   Oklahoma City Thunder.
 
-      #. The Chicago Stags folded in 1950, the Washington Capitols in
-         1951 and the Baltimore Bullets in 1954.
+Source
+~~~~~~
 
-      #. This list uses current team names. For example, the Seattle
-         SuperSonics are not on the list as that team moved and became
-         the Oklahoma City Thunder.
+`List of NBA
+Champions. <https://en.wikipedia.org/wiki/List_of_NBA_champions>`__
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      `List of NBA
-      Champions. <https://en.wikipedia.org/wiki/List_of_NBA_champions>`__
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   library(ggplot2)
+   library(dplyr)
+   library(openintro)
 
-      .. code:: R
+   teams_with_apps <- nba_finals_teams |>
+     filter(apps != 0)
 
-         library(ggplot2)
-         library(dplyr)
-         library(openintro)
+   ggplot(teams_with_apps, aes(x = win)) +
+     geom_histogram(binwidth = 2) +
+     labs(
+       title = "Number of NBA Finals series wins",
+       x = "Number of wins",
+       y = "Number of teams"
+     )
 
-         teams_with_apps <- nba_finals_teams |>
-           filter(apps != 0)
-
-         ggplot(teams_with_apps, aes(x = win)) +
-           geom_histogram(binwidth = 2) +
-           labs(
-             title = "Number of NBA Finals series wins",
-             x = "Number of wins",
-             y = "Number of teams"
-           )
-
-         ggplot(teams_with_apps, aes(x = apps, y = win)) +
-           geom_point(alpha = 0.3) +
-           labs(
-             title = "Can we predict how many NBA Championships a
-         team has based on the number of appearances?",
-             x = "Number of NBA Finals appearances",
-             y = "Number of NBA Finals series wins"
-           )
+   ggplot(teams_with_apps, aes(x = apps, y = win)) +
+     geom_point(alpha = 0.3) +
+     labs(
+       title = "Can we predict how many NBA Championships a
+   team has based on the number of appearances?",
+       x = "Number of NBA Finals appearances",
+       y = "Number of NBA Finals series wins"
+     )

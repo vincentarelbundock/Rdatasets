@@ -1,22 +1,18 @@
-.. container::
+======= ===============
+sort.e0 R Documentation
+======= ===============
 
-   .. container::
+internal sort.e0
+----------------
 
-      ======= ===============
-      sort.e0 R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: internal sort.e0
-         :name: internal-sort.e0
+intended for internal use only
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      intended for internal use only
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
-
-      .. code:: R
-
-         sort.e0
+   sort.e0

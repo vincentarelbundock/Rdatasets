@@ -1,81 +1,70 @@
-.. container::
+====== ===============
+Dactyl R Documentation
+====== ===============
 
-   .. container::
+Edgeworth's counts of dactyls in Virgil's Aeneid
+------------------------------------------------
 
-      ====== ===============
-      Dactyl R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Edgeworth's counts of dactyls in Virgil's Aeneid
-         :name: edgeworths-counts-of-dactyls-in-virgils-aeneid
+Edgeworth (1885) took the first 75 lines in Book XI of Virgil's *Aeneid*
+and classified each of the first four "feet" of the line as a dactyl
+(one long syllable followed by two short ones) or not.
 
-      .. rubric:: Description
-         :name: description
+Grouping the lines in blocks of five gave a 4 x 25 table of counts,
+represented here as a data frame with ordered factors, ``Foot`` and
+``Lines``. Edgeworth used this table in what was among the first
+examples of analysis of variance applied to a two-way classification.
 
-      Edgeworth (1885) took the first 75 lines in Book XI of Virgil's
-      *Aeneid* and classified each of the first four "feet" of the line
-      as a dactyl (one long syllable followed by two short ones) or not.
+Format
+~~~~~~
 
-      Grouping the lines in blocks of five gave a 4 x 25 table of
-      counts, represented here as a data frame with ordered factors,
-      ``Foot`` and ``Lines``. Edgeworth used this table in what was
-      among the first examples of analysis of variance applied to a
-      two-way classification.
+A data frame with 60 observations on the following 3 variables.
 
-      .. rubric:: Usage
-         :name: usage
+``Foot``
+   an ordered factor with levels ``1`` < ``2`` < ``3`` < ``4``
 
-      .. code:: R
+``Lines``
+   an ordered factor with levels ``1:5`` < ``6:10`` < ``11:15`` <
+   ``16:20`` < ``21:25`` < ``26:30`` < ``31:35`` < ``36:40`` < ``41:45``
+   < ``46:50`` < ``51:55`` < ``56:60`` < ``61:65`` < ``66:70`` <
+   ``71:75``
 
-         data(Dactyl)
+``count``
+   number of dactyls
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      A data frame with 60 observations on the following 3 variables.
+Stigler, S. (1999) *Statistics on the Table* Cambridge, MA: Harvard
+University Press, table 5.1.
 
-      ``Foot``
-         an ordered factor with levels ``1`` < ``2`` < ``3`` < ``4``
+References
+~~~~~~~~~~
 
-      ``Lines``
-         an ordered factor with levels ``1:5`` < ``6:10`` < ``11:15`` <
-         ``16:20`` < ``21:25`` < ``26:30`` < ``31:35`` < ``36:40`` <
-         ``41:45`` < ``46:50`` < ``51:55`` < ``56:60`` < ``61:65`` <
-         ``66:70`` < ``71:75``
+Edgeworth, F. Y. (1885). On methods of ascertaining variations in the
+rate of births, deaths and marriages. *Journal of the Royal Statistical
+Society*, 48, 628-649.
 
-      ``count``
-         number of dactyls
+Examples
+~~~~~~~~
 
-      .. rubric:: Source
-         :name: source
+.. code:: R
 
-      Stigler, S. (1999) *Statistics on the Table* Cambridge, MA:
-      Harvard University Press, table 5.1.
 
-      .. rubric:: References
-         :name: references
+   data(Dactyl)
 
-      Edgeworth, F. Y. (1885). On methods of ascertaining variations in
-      the rate of births, deaths and marriages. *Journal of the [Royal]
-      Statistical Society*, 48, 628-649.
+   # display the basic table
+   xtabs(count ~ Foot+Lines, data=Dactyl)
 
-      .. rubric:: Examples
-         :name: examples
+   # simple two-way anova
+   anova(dact.lm <- lm(count ~ Foot+Lines, data=Dactyl))
 
-      .. code:: R
+   # plot the lm-quartet
+   op <- par(mfrow=c(2,2))
+   plot(dact.lm)
+   par(op)
 
-         data(Dactyl)
-
-         # display the basic table
-         xtabs(count ~ Foot+Lines, data=Dactyl)
-
-         # simple two-way anova
-         anova(dact.lm <- lm(count ~ Foot+Lines, data=Dactyl))
-
-         # plot the lm-quartet
-         op <- par(mfrow=c(2,2))
-         plot(dact.lm)
-         par(op)
-
-         # show table as a simple mosaicplot
-         mosaicplot(xtabs(count ~ Foot+Lines, data=Dactyl), shade=TRUE)
+   # show table as a simple mosaicplot
+   mosaicplot(xtabs(count ~ Foot+Lines, data=Dactyl), shade=TRUE)

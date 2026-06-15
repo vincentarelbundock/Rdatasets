@@ -1,75 +1,71 @@
-.. container::
+========== ===============
+Mesolithic R Documentation
+========== ===============
 
-   .. container::
+British Mesolithic assemblages
+------------------------------
 
-      ========== ===============
-      Mesolithic R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: British Mesolithic assemblages
-         :name: british-mesolithic-assemblages
+Counts of 5 different stone artifact types from 33 Mesolithic sites in
+Britain.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Counts of 5 different stone artifact types from 33 Mesolithic
-      sites in Britain.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("Mesolithic")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("Mesolithic")
+A data frame with 33 observations on the following 5 variables.
 
-      .. rubric:: Format
-         :name: format
+``Microliths``
+   Number of microliths
 
-      A data frame with 33 observations on the following 5 variables.
+``Scrapers``
+   Number of scrapers
 
-      ``Microliths``
-         Number of microliths
+``Burins``
+   Number of burins
 
-      ``Scrapers``
-         Number of scrapers
+``Axes``
+   Number of axes
 
-      ``Burins``
-         Number of burins
+``Saws``
+   Number of saws
 
-      ``Axes``
-         Number of axes
+Details
+~~~~~~~
 
-      ``Saws``
-         Number of saws
+Data on 33 Mesolithic (9000 - 4000 BCE) assemblages are a subset Pitts
+(1979) extracted from a set published by Mellars (1976). The data were
+scanned from Table A3 (Appendix A) in Baxter (1994).
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      Data on 33 Mesolithic (9000 - 4000 BCE) assemblages are a subset
-      Pitts (1979) extracted from a set published by Mellars (1976). The
-      data were scanned from Table A3 (Appendix A) in Baxter (1994).
+Baxter, M. J. 1994. *Exploratory Multivariate Analysis in Archaeology*.
+Edinburgh University Press. Edinburgh.
 
-      .. rubric:: Source
-         :name: source
+Mellars, P. 1976. Settlement Patterns and Industrial Variability in the
+British Mesolithic. In *Problems in Economic and Social Archaeology*,
+edited by Sieveking, G de G., I. H. Longworth, and K. E. Wilson, pp
+375-99. Duckworth, London.
 
-      Baxter, M. J. 1994. *Exploratory Multivariate Analysis in
-      Archaeology*. Edinburgh University Press. Edinburgh.
+Pitts, M. W. 1979. Hides and Antlers: A New Look at the Gatherer-Hunter
+Site at Star Carr, North Yorkshire, England. *World Archaeology* 11:
+32-44.
 
-      Mellars, P. 1976. Settlement Patterns and Industrial Variability
-      in the British Mesolithic. In *Problems in Economic and Social
-      Archaeology*, edited by Sieveking, G de G., I. H. Longworth, and
-      K. E. Wilson, pp 375-99. Duckworth, London.
+Examples
+~~~~~~~~
 
-      Pitts, M. W. 1979. Hides and Antlers: A New Look at the
-      Gatherer-Hunter Site at Star Carr, North Yorkshire, England.
-      *World Archaeology* 11: 32-44.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(Mesolithic)
-         Mesolithic.pct <- prop.table(as.matrix(Mesolithic), 1)*100
-         apply(Mesolithic.pct, 2, quantile)
-         cor(Mesolithic.pct)
+   data(Mesolithic)
+   Mesolithic.pct <- prop.table(as.matrix(Mesolithic), 1)*100
+   apply(Mesolithic.pct, 2, quantile)
+   cor(Mesolithic.pct)

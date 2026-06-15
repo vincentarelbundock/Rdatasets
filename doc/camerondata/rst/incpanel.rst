@@ -1,85 +1,80 @@
-.. container::
+======== ===============
+incpanel R Documentation
+======== ===============
 
-   .. container::
+Hourly wages
+------------
 
-      ======== ===============
-      incpanel R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Hourly wages
-         :name: hourly-wages
+Data from the Michigan Panel Survey of Income Dynamics, Individual Level
+Final Release 1993. Sample of 4856 women, extracted by Cameron and
+Trivedi (2005).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data from the Michigan Panel Survey of Income Dynamics, Individual
-      Level Final Release 1993. Sample of 4856 women, extracted by
-      Cameron and Trivedi (2005).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   incpanel
 
-      .. code:: R
+Format
+~~~~~~
 
-         incpanel
+A data frame with 4856 observations and 9 variables:
 
-      .. rubric:: Format
-         :name: format
+intnum
+   interview number 1968
 
-      A data frame with 4856 observations and 9 variables:
+persnum
+   person number
 
-      intnum
-         interview number 1968
+age
+   age of individual in 1993
 
-      persnum
-         person number
+educatn
+   highest grade/year of school completed 1993
 
-      age
-         age of individual in 1993
+earnings
+   total labor income of individual received in 1992, dollars
 
-      educatn
-         highest grade/year of school completed 1993
+hours
+   total annual work hours in 1992
 
-      earnings
-         total labor income of individual received in 1992, dollars
+sex
+   sex of individual,= 2 if female
 
-      hours
-         total annual work hours in 1992
+kids
+   total number of children born to this individual
 
-      sex
-         sex of individual,= 2 if female
+married
+   last known marital status: 1 = married, 2 = never married, 3 =
+   widowed, 4 = divorced, 5 = separated, 8 = NA, 9 = no histories 85-93
 
-      kids
-         total number of children born to this individual
+Section in Text
+~~~~~~~~~~~~~~~
 
-      married
-         last known marital status: 1 = married, 2 = never married, 3 =
-         widowed, 4 = divorced, 5 = separated, 8 = NA, 9 = no histories
-         85-93
+9.2.1 Nonparametric density estimation, pp. 295 9.2.2 Nonparametric
+Regression, pp. 297
 
-      .. rubric:: Section in Text
-         :name: section-in-text
+Source
+~~~~~~
 
-      9.2.1 Nonparametric density estimation, pp. 295 9.2.2
-      Nonparametric Regression, pp. 297
+http://cameron.econ.ucdavis.edu/mmabook/mmadata.html
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      http://cameron.econ.ucdavis.edu/mmabook/mmadata.html
+Cameron, A. and Trivedi, P. (2005), "Microeconometrics: Methods and
+Applications," Cambridge University Press, New York.
 
-      .. rubric:: References
-         :name: references
+Michigan Panel Study of Income Dynamics (PSID),
+https://psidonline.isr.umich.edu/
 
-      Cameron, A. and Trivedi, P. (2005), "Microeconometrics: Methods
-      and Applications," Cambridge University Press, New York.
+Examples
+~~~~~~~~
 
-      Michigan Panel Study of Income Dynamics (PSID),
-      https://psidonline.isr.umich.edu/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         summary(incpanel)
+   summary(incpanel)

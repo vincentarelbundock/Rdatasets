@@ -1,73 +1,68 @@
-.. container::
+======= ===============
+seasons R Documentation
+======= ===============
 
-   .. container::
+Seasons
+-------
 
-      ======= ===============
-      seasons R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Seasons
-         :name: seasons
+Season summary includes location and other season level information
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Season summary includes location and other season level
-      information
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   seasons
 
-      .. code:: R
+Format
+~~~~~~
 
-         seasons
+This data frame contains the following columns:
 
-      .. rubric:: Format
-         :name: format
+``version``
+   Country code for the version of the show
 
-      This data frame contains the following columns:
+``season``
+   The season number
 
-      ``version``
-         Country code for the version of the show
+``subtitle``
+   Season subtitle
 
-      ``season``
-         The season number
+``location``
+   Location
 
-      ``subtitle``
-         Season subtitle
+``country``
+   Country
 
-      ``location``
-         Location
+``region``
+   Region
 
-      ``country``
-         Country
+``n_survivors``
+   Number of survivors. Season 4 there were 7 teams of 2.
 
-      ``region``
-         Region
+``lat``
+   Latitude
 
-      ``n_survivors``
-         Number of survivors. Season 4 there were 7 teams of 2.
+``lon``
+   Longitude
 
-      ``lat``
-         Latitude
+``date_drop_off``
+   Date the survivors where dropped off
 
-      ``lon``
-         Longitude
+Source
+~~~~~~
 
-      ``date_drop_off``
-         Date the survivors where dropped off
+https://en.wikipedia.org/wiki/Alone_(TV_series)
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      https://en.wikipedia.org/wiki/Alone_(TV_series)
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   library(dplyr)
 
-      .. code:: R
-
-         library(dplyr)
-
-         seasons |>
-         count(country)
+   seasons |>
+   count(country)

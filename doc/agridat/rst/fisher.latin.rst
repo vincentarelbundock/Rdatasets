@@ -1,73 +1,70 @@
-.. container::
+============ ===============
+fisher.latin R Documentation
+============ ===============
 
-   .. container::
+Latin square experiment on mangolds
+-----------------------------------
 
-      ============ ===============
-      fisher.latin R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Latin square experiment on mangolds
-         :name: latin-square-experiment-on-mangolds
+Latin square experiment on mangolds. Used by R. A. Fisher.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Latin square experiment on mangolds. Used by R. A. Fisher.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("fisher.latin")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("fisher.latin")
+A data frame with 25 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``trt``
+   treatment factor, 5 levels
 
-      A data frame with 25 observations on the following 4 variables.
+``yield``
+   yield
 
-      ``trt``
-         treatment factor, 5 levels
+``row``
+   row
 
-      ``yield``
-         yield
+``col``
+   column
 
-      ``row``
-         row
+Details
+~~~~~~~
 
-      ``col``
-         column
+Yields are root weights. Data originally collected by Mercer and Hall as
+part of a uniformity trial.
 
-      .. rubric:: Details
-         :name: details
+This data is the same as the data from columns 1-5, rows 16-20, of the
+mercer.mangold.uniformity data in this package.
 
-      Yields are root weights. Data originally collected by Mercer and
-      Hall as part of a uniformity trial.
+Unsurprisingly, there are no significant treatment differences.
 
-      This data is the same as the data from columns 1-5, rows 16-20, of
-      the mercer.mangold.uniformity data in this package.
+Source
+~~~~~~
 
-      Unsurprisingly, there are no significant treatment differences.
+Mercer, WB and Hall, AD, 1911. The experimental error of field trials
+The Journal of Agricultural Science, 4, 107-132. Table 1.
+http::/doi.org/10.1017/S002185960000160X
 
-      .. rubric:: Source
-         :name: source
+R. A. Fisher. *Statistical Methods for Research Workers*.
 
-      Mercer, WB and Hall, AD, 1911. The experimental error of field
-      trials The Journal of Agricultural Science, 4, 107-132. Table 1.
-      http::/doi.org/10.1017/S002185960000160X
+Examples
+~~~~~~~~
 
-      R. A. Fisher. *Statistical Methods for Research Workers*.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   library(agridat)
 
-         library(agridat)
+   data(fisher.latin)
+   dat <- fisher.latin
 
-         data(fisher.latin)
-         dat <- fisher.latin
-
-         # Standard latin-square analysis
-         m1 <- lm(yield ~ trt + factor(row) + factor(col), data=dat)
-         anova(m1)
+   # Standard latin-square analysis
+   m1 <- lm(yield ~ trt + factor(row) + factor(col), data=dat)
+   anova(m1)

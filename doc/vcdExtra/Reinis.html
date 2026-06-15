@@ -1,0 +1,137 @@
+<!DOCTYPE html><html><head><title>R: Risk Factors for Coronary Heart Disease</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Reinis</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Risk Factors for Coronary Heart Disease</h2>
+
+<h3>Description</h3>
+
+<p>Data from the beginning of a 15-year follow-up study of probable risk factors
+for coronary thrombosis. The data are from 1841 men employed in a Czechoslovakian
+car factory and represent all possible combinations of the six risk factors.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A 6-dimensional array resulting from cross-tabulating 6 binary variables
+for 1841 observations. The variable names and their levels are:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+No </td><td style="text-align: left;"> Name        </td><td style="text-align: left;"> Levels (meaning) </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+1  </td><td style="text-align: left;"> <code>smoke</code>   </td><td style="text-align: left;"> <code style="white-space: pre;">&#8288;"y", "n"&#8288;</code> (smoking)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+2  </td><td style="text-align: left;"> <code>mental</code>  </td><td style="text-align: left;"> <code style="white-space: pre;">&#8288;"y", "n"&#8288;</code> (strenuous mental work)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+3  </td><td style="text-align: left;"> <code>phys</code>    </td><td style="text-align: left;"> <code style="white-space: pre;">&#8288;"y", "n"&#8288;</code> (strenuous physical work)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+4  </td><td style="text-align: left;"> <code>systol</code>  </td><td style="text-align: left;"> <code style="white-space: pre;">&#8288;"y", "n"&#8288;</code> (systolic blood pressure &gt; 140)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+5  </td><td style="text-align: left;"> <code>protein</code> </td><td style="text-align: left;"> <code style="white-space: pre;">&#8288;"y", "n"&#8288;</code> (ratio of beta to alpha lipoproteins &gt; 3)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+6  </td><td style="text-align: left;"> <code>family</code>  </td><td style="text-align: left;"> <code style="white-space: pre;">&#8288;"y", "n"&#8288;</code> (family history of CHD)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Details</h3>
+
+<p>The study was conducted to examine risk factors for coronary heart disease (CHD) and
+collected information on smoking habits, mental and physical work strain, systolic
+blood pressure, ratio of lipoproteins, and family history of CHD.
+</p>
+<p>The six variables form a <code class="reqn">2^6 = 64</code> contingency table. The data have been used
+extensively to illustrate model search procedures for high-dimensional contingency tables.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Originally from the <span class="pkg">gRbase</span> package as <code>data(reinis, package = "gRbase")</code>
+</p>
+
+
+<h3>References</h3>
+
+<p>Edwards, D. and Havranek, T. (1985).
+A fast procedure for model search in multidimensional contingency tables.
+<em>Biometrika</em>, 72, 339-351.
+</p>
+<p>Gauraha, N. and Parui, S. K. (2020).
+Mutual conditional independence and its applications to model selection in Markov networks.
+<em>Annals of Mathematics and Artificial Intelligence</em>, 88, 951-972.
+<a href="https://doi.org/10.1007/s10472-020-09690-7">doi:10.1007/s10472-020-09690-7</a>
+</p>
+<p>Reinis, Z., Pokorny, J., Basika, V., Tiserova, J., Gorican, K., Horakova, D.,
+Stuchlikova, E., Havranek, T., and Hrabovsky, F. (1981).
+Prognostic significance of the risk profile in the prevention of coronary heart disease.
+<em>Bratis. lek. Listy</em>, 76, 137-150.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Reinis)
+str(Reinis)
+ftable(Reinis, row.vars = 1:3)
+
+# Fit all 0-way through 6-way models using Kway()
+Reinis.gmodels &lt;- Kway(Freq ~ smoke + mental + phys + systol + protein + family,
+                       data = Reinis, family = poisson)
+
+# Examine fit statistics
+LRstats(Reinis.gmodels)
+
+# Sequential tests for k vs k+1 way effects
+anova(Reinis.gmodels, test = "Chisq")
+
+# Fit sequential models of joint independence
+Reinis.seqjoint &lt;- seq_loglm(Reinis, type = "joint", prefix="joint")
+LRstats(Reinis.seqjoint)
+
+# Fit sequential models of conditional independence
+Reinis.seqcond &lt;- seq_loglm(Reinis, type = "conditional", prefix = "cond")
+LRstats(Reinis.seqcond)
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

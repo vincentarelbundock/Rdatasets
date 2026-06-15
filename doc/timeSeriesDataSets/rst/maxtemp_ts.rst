@@ -1,45 +1,39 @@
-.. container::
+========== ===============
+maxtemp_ts R Documentation
+========== ===============
 
-   .. container::
+Maximum Annual Temperatures at Moorabbin Airport, Melbourne
+-----------------------------------------------------------
 
-      ========== ===============
-      maxtemp_ts R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Maximum Annual Temperatures at Moorabbin Airport,
-         Melbourne
-         :name: maximum-annual-temperatures-at-moorabbin-airport-melbourne
+The dataset name has been changed to 'maxtemp_ts' to avoid confusion
+with other packages in the R ecosystem from which datasets have been
+sourced. The suffix 'ts' indicates that this dataset is a time series
+object. This naming convention helps distinguish this dataset as part of
+the 'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'maxtemp_ts' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. The suffix 'ts' indicates that this
-      dataset is a time series object. This naming convention helps
-      distinguish this dataset as part of the 'timeseriesdatasets'
-      package and assists users in identifying its specific
-      characteristics. The original content of the dataset has not been
-      modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(maxtemp_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(maxtemp_ts)
+A time series object with 46 observations:
 
-      .. rubric:: Format
-         :name: format
+maxtemp
+   A numeric vector representing the maximum annual temperatures (in
+   degrees Celsius) recorded at Moorabbin Airport, Melbourne, from 1971
+   to 2016.
 
-      A time series object with 46 observations:
+Source
+~~~~~~
 
-      maxtemp
-         A numeric vector representing the maximum annual temperatures
-         (in degrees Celsius) recorded at Moorabbin Airport, Melbourne,
-         from 1971 to 2016.
-
-      .. rubric:: Source
-         :name: source
-
-      Australian Bureau of Meteorology.
+Australian Bureau of Meteorology.

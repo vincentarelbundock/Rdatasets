@@ -1,51 +1,47 @@
-.. container::
+============== ===============
+Achieve_tbl_df R Documentation
+============== ===============
 
-   .. container::
+Math Achievement Test Scores by Gender
+--------------------------------------
 
-      ============== ===============
-      Achieve_tbl_df R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Math Achievement Test Scores by Gender
-         :name: math-achievement-test-scores-by-gender
+This dataset, Achieve_tbl_df, is a tibble containing information about
+math achievement test scores for 25 high school students, categorized by
+gender. The dataset provides insights into the distribution of scores
+between male and female students.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, Achieve_tbl_df, is a tibble containing information
-      about math achievement test scores for 25 high school students,
-      categorized by gender. The dataset provides insights into the
-      distribution of scores between male and female students.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Achieve_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Achieve_tbl_df)
+A tibble with 25 observations and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+score
+   Math achievement test score of the student (integer).
 
-      A tibble with 25 observations and 2 variables:
+gender
+   Gender of the student (factor with 2 levels: "Male", "Female").
 
-      score
-         Math achievement test score of the student (integer).
+Details
+~~~~~~~
 
-      gender
-         Gender of the student (factor with 2 levels: "Male", "Female").
+The dataset name has been kept as 'Achieve_tbl_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the educationR package and assists
+users in identifying its specific characteristics. The suffix 'tbl_df'
+indicates that the dataset is a tibble. The original content has not
+been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'Achieve_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      educationR package and assists users in identifying its specific
-      characteristics. The suffix 'tbl_df' indicates that the dataset is
-      a tibble. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset was taken from the BSDA package.
+The dataset was taken from the BSDA package.

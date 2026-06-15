@@ -1,66 +1,61 @@
-.. container::
+======================== ===============
+tv_hurricanes_by_network R Documentation
+======================== ===============
 
-   .. container::
+The Media Really Started Paying Attention to Puerto Rico When Trump Did
+-----------------------------------------------------------------------
 
-      ======================== ===============
-      tv_hurricanes_by_network R Documentation
-      ======================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The Media Really Started Paying Attention to Puerto
-         Rico When Trump Did
-         :name: the-media-really-started-paying-attention-to-puerto-rico-when-trump-did
+The raw data behind the story "The Media Really Started Paying Attention
+to Puerto Rico When Trump Did"
+https://fivethirtyeight.com/features/the-media-really-started-paying-attention-to-puerto-rico-when-trump-did/:
+TV Hurricanes by Network Data.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "The Media Really Started Paying
-      Attention to Puerto Rico When Trump Did"
-      https://fivethirtyeight.com/features/the-media-really-started-paying-attention-to-puerto-rico-when-trump-did/:
-      TV Hurricanes by Network Data.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   tv_hurricanes_by_network
 
-      .. code:: R
+Format
+~~~~~~
 
-         tv_hurricanes_by_network
+A data frame with 84 rows representing dates and 6 variables:
 
-      .. rubric:: Format
-         :name: format
+date
+   Date
 
-      A data frame with 84 rows representing dates and 6 variables:
+query
+   The hurricane in question
 
-      date
-         Date
+bbc_news
+   The percent of sentences on the BBC News TV channel on the given date
+   that mention the hurricane in question
 
-      query
-         The hurricane in question
+cnn
+   The percent of sentences on CNN News that mention the hurricane in
+   question
 
-      bbc_news
-         The percent of sentences on the BBC News TV channel on the
-         given date that mention the hurricane in question
+fox_news
+   The percent of sentences on Fox News that mention the hurricane in
+   question
 
-      cnn
-         The percent of sentences on CNN News that mention the hurricane
-         in question
+msnbc
+   The percent of sentences on MSNBC News that mention the hurricane in
+   question
 
-      fox_news
-         The percent of sentences on Fox News that mention the hurricane
-         in question
+Source
+~~~~~~
 
-      msnbc
-         The percent of sentences on MSNBC News that mention the
-         hurricane in question
+Internet TV News Archive https://archive.org/details/tv and Television
+Explorer
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      Internet TV News Archive https://archive.org/details/tv and
-      Television Explorer
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``mediacloud_hurricanes``, ``mediacloud_states``,
-      ``mediacloud_online_news``, ``mediacloud_trump``,
-      ``tv_hurricanes``, ``tv_states``, ``google_trends``
+``mediacloud_hurricanes``, ``mediacloud_states``,
+``mediacloud_online_news``, ``mediacloud_trump``, ``tv_hurricanes``,
+``tv_states``, ``google_trends``

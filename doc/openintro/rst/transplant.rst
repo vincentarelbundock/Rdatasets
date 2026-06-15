@@ -1,38 +1,35 @@
-.. container::
+========== ===============
+transplant R Documentation
+========== ===============
 
-   .. container::
+Transplant consultant success rate (fake data)
+----------------------------------------------
 
-      ========== ===============
-      transplant R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Transplant consultant success rate (fake data)
-         :name: transplant-consultant-success-rate-fake-data
+Summarizing whether there was or was not a complication for 62 patients
+who used a particular medical consultant.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Summarizing whether there was or was not a complication for 62
-      patients who used a particular medical consultant.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   transplant
 
-      .. code:: R
+Format
+~~~~~~
 
-         transplant
+A data frame with 62 observations on the following variable.
 
-      .. rubric:: Format
-         :name: format
+outcome
+   a factor with levels ``complications`` ``okay``
 
-      A data frame with 62 observations on the following variable.
+Examples
+~~~~~~~~
 
-      outcome
-         a factor with levels ``complications`` ``okay``
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         transplant
+   transplant

@@ -1,58 +1,53 @@
-.. container::
+=========== ===============
+anorexia_df R Documentation
+=========== ===============
 
-   .. container::
+Anorexia Data on Weight Change
+------------------------------
 
-      =========== ===============
-      anorexia_df R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Anorexia Data on Weight Change
-         :name: anorexia-data-on-weight-change
+The dataset name has been changed to 'anorexia_df' to avoid confusion
+with other datasets from packages in the R ecosystem and to follow the
+naming conventions of the 'MedDataSets' package. The suffix '\_df'
+indicates that this dataset is a data frame, helping to distinguish it
+from other datasets within the package and from those in the broader R
+ecosystem. The original content of the dataset has not been modified in
+any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'anorexia_df' to avoid
-      confusion with other datasets from packages in the R ecosystem and
-      to follow the naming conventions of the 'MedDataSets' package. The
-      suffix '\_df' indicates that this dataset is a data frame, helping
-      to distinguish it from other datasets within the package and from
-      those in the broader R ecosystem. The original content of the
-      dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(anorexia_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(anorexia_df)
+A data frame with 72 observations and 3 variables:
 
-      .. rubric:: Format
-         :name: format
+Treat
+   A factor indicating the treatment group (with 3 possible levels).
 
-      A data frame with 72 observations and 3 variables:
+Prewt
+   A numeric value representing the weight of the patient before
+   treatment (in pounds).
 
-      Treat
-         A factor indicating the treatment group (with 3 possible
-         levels).
+Postwt
+   A numeric value representing the weight of the patient after
+   treatment (in pounds).
 
-      Prewt
-         A numeric value representing the weight of the patient before
-         treatment (in pounds).
+Details
+~~~~~~~
 
-      Postwt
-         A numeric value representing the weight of the patient after
-         treatment (in pounds).
+This dataset contains information on weight changes among patients
+diagnosed with anorexia, including their treatment and weight
+measurements before and after treatment.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains information on weight changes among patients
-      diagnosed with anorexia, including their treatment and weight
-      measurements before and after treatment.
-
-      .. rubric:: Source
-         :name: source
-
-      Data collected from clinical studies on anorexia treatment and
-      weight change.
+Data collected from clinical studies on anorexia treatment and weight
+change.

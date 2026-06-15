@@ -1,82 +1,71 @@
-.. container::
+==== ===============
+Burt R Documentation
+==== ===============
 
-   .. container::
+Burt (1950) Data on Hair, Eyes, Head and Stature
+------------------------------------------------
 
-      ==== ===============
-      Burt R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Burt (1950) Data on Hair, Eyes, Head and Stature
-         :name: burt-1950-data-on-hair-eyes-head-and-stature
+Cyril Burt (1950) gave these data, on a sample of 100 people from
+Liverpool, to illustrate the application of a method of factor analysis
+(later called multiple correspondence analysis) applied to categorical
+data.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Cyril Burt (1950) gave these data, on a sample of 100 people from
-      Liverpool, to illustrate the application of a method of factor
-      analysis (later called multiple correspondence analysis) applied
-      to categorical data.
+A frequency data frame (representing a 3 x 3 x 2 x 2 frequency table)
+with 36 cells on the following 5 variables.
 
-      He presented these data initially in the form that has come to be
-      called a "Burt table", giving the univariate and bivariate
-      frequencies for an n-way frequency table.
+``Hair``
+   hair color, a factor with levels ``Fair`` ``Red`` ``Dark``
 
-      .. rubric:: Usage
-         :name: usage
+``Eyes``
+   eye color, a factor with levels ``Light`` ``Mixed`` ``Dark``
 
-      .. code:: R
+``Head``
+   head shape, a factor with levels ``Narrow`` ``Wide``
 
-         data("Burt")
+``Stature``
+   height, a factor with levels ``Tall`` ``Short``
 
-      .. rubric:: Format
-         :name: format
+``Freq``
+   a numeric vector
 
-      A frequency data frame (representing a 3 x 3 x 2 x 2 frequency
-      table) with 36 cells on the following 5 variables.
+Details
+~~~~~~~
 
-      ``Hair``
-         hair color, a factor with levels ``Fair`` ``Red`` ``Dark``
+He presented these data initially in the form that has come to be called
+a "Burt table", giving the univariate and bivariate frequencies for an
+n-way frequency table.
 
-      ``Eyes``
-         eye color, a factor with levels ``Light`` ``Mixed`` ``Dark``
+Burt says: "In all, 217 individuals were examined, about two-thirds of
+them males. But, partly to simplify the calculations and partly because
+the later observations were rather more trustworthy, I shall here
+restrict my analysis to the data obtained from the last hundred males in
+the series."
 
-      ``Head``
-         head shape, a factor with levels ``Narrow`` ``Wide``
+``Head`` and ``Stature`` reflect a binary coding where people are
+classified according to whether they are below or above the average for
+the population.
 
-      ``Stature``
-         height, a factor with levels ``Tall`` ``Short``
+Source
+~~~~~~
 
-      ``Freq``
-         a numeric vector
+Burt, C. (1950). The factorial analysis of qualitative data, *British
+Journal of Statistical Psychology*, **3**\ (3), 166-185. Table IX.
 
-      .. rubric:: Details
-         :name: details
+Examples
+~~~~~~~~
 
-      Burt says: "In all, 217 individuals were examined, about
-      two-thirds of them males. But, partly to simplify the calculations
-      and partly because the later observations were rather more
-      trustworthy, I shall here restrict my analysis to the data
-      obtained from the last hundred males in the series."
+.. code:: R
 
-      ``Head`` and ``Stature`` reflect a binary coding where people are
-      classified according to whether they are below or above the
-      average for the population.
 
-      .. rubric:: Source
-         :name: source
+   data(Burt)
+   mosaic(Freq ~ Hair + Eyes + Head + Stature, data=Burt, shade=TRUE)
 
-      Burt, C. (1950). The factorial analysis of qualitative data,
-      *British Journal of Statistical Psychology*, **3**\ (3), 166-185.
-      Table IX.
-
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(Burt)
-         mosaic(Freq ~ Hair + Eyes + Head + Stature, data=Burt, shade=TRUE)
-
-         #or
-         burt.tab <- xtabs(Freq ~ Hair + Eyes + Head + Stature, data=Burt)
-         mosaic(burt.tab, shade=TRUE)
+   #or
+   burt.tab <- xtabs(Freq ~ Hair + Eyes + Head + Stature, data=Burt)
+   mosaic(burt.tab, shade=TRUE)

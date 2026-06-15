@@ -1,50 +1,44 @@
-.. container::
+============= ===============
+orings_tbl_df R Documentation
+============= ===============
 
-   .. container::
+1986 Challenger disaster and O-rings
+------------------------------------
 
-      ============= ===============
-      orings_tbl_df R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: 1986 Challenger disaster and O-rings
-         :name: challenger-disaster-and-o-rings
+The dataset name has been changed to 'orings_tbl_df' to avoid confusion
+with other packages in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a tibble. The original content of the dataset has not
+been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'orings_tbl_df' to avoid
-      confusion with other packages in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a tibble. The original
-      content of the dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(orings_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(orings_tbl_df)
+A tibble with 23 observations and 4 variables:
 
-      .. rubric:: Format
-         :name: format
+mission
+   Integer representing the mission number.
 
-      A tibble with 23 observations and 4 variables:
+temperature
+   Integer representing the launch temperature in Fahrenheit.
 
-      mission
-         Integer representing the mission number.
+damaged
+   Integer representing the number of damaged O-rings in the mission.
 
-      temperature
-         Integer representing the launch temperature in Fahrenheit.
+undamaged
+   Numeric representing the number of undamaged O-rings in the mission.
 
-      damaged
-         Integer representing the number of damaged O-rings in the
-         mission.
+Source
+~~~~~~
 
-      undamaged
-         Numeric representing the number of undamaged O-rings in the
-         mission.
-
-      .. rubric:: Source
-         :name: source
-
-      Data from NASA missions related to O-ring performance.
+Data from NASA missions related to O-ring performance.

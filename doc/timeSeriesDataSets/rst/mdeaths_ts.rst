@@ -1,47 +1,42 @@
-.. container::
+========== ===============
+mdeaths_ts R Documentation
+========== ===============
 
-   .. container::
+Monthly Deaths from Lung Diseases in the UK
+-------------------------------------------
 
-      ========== ===============
-      mdeaths_ts R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Monthly Deaths from Lung Diseases in the UK
-         :name: monthly-deaths-from-lung-diseases-in-the-uk
+The dataset name has been changed to 'mdeaths_ts' to avoid confusion
+with other packages in the R ecosystem from which datasets have been
+sourced. The suffix 'ts' indicates that this dataset is a time series
+object. This naming convention helps distinguish this dataset as part of
+the 'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'mdeaths_ts' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. The suffix 'ts' indicates that this
-      dataset is a time series object. This naming convention helps
-      distinguish this dataset as part of the 'timeseriesdatasets'
-      package and assists users in identifying its specific
-      characteristics. The original content of the dataset has not been
-      modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(mdeaths_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(mdeaths_ts)
+A time series object of 72 observations on the following:
 
-      .. rubric:: Format
-         :name: format
+Time-Series [1:72]
+   The number of monthly deaths from lung diseases in the UK.
 
-      A time series object of 72 observations on the following:
+Details
+~~~~~~~
 
-      Time-Series [1:72]
-         The number of monthly deaths from lung diseases in the UK.
+The data covers the period from 1974 to 1980.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The data covers the period from 1974 to 1980.
-
-      .. rubric:: Source
-         :name: source
-
-      UK Government Health Department
+UK Government Health Department

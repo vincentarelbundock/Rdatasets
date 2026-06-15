@@ -1,0 +1,250 @@
+rownames,country_code,country_name,country_number
+1,ABW,Aruba,1
+2,AFG,Afghanistan,2
+3,AGO,Angola,3
+4,AIA,Anguilla,4
+5,ALA,Aland Islands,5
+6,ALB,Albania,6
+7,AND,Andorra,7
+8,ARE,United Arab Emirates,8
+9,ARG,Argentina,9
+10,ARM,Armenia,10
+11,ASM,American Samoa,11
+12,ATA,Antarctica,12
+13,ATF,French Southern Territories,13
+14,ATG,Antigua and Barbuda,14
+15,AUS,Australia,15
+16,AUT,Austria,16
+17,AZE,Azerbaijan,17
+18,BDI,Burundi,18
+19,BEL,Belgium,19
+20,BEN,Benin,20
+21,BES,"Bonaire, Sint Eustatius and Saba",21
+22,BFA,Burkina Faso,22
+23,BGD,Bangladesh,23
+24,BGR,Bulgaria,24
+25,BHR,Bahrain,25
+26,BHS,Bahamas,26
+27,BIH,Bosnia and Herzegovina,27
+28,BLM,Saint Barthelemy,28
+29,BLR,Belarus,29
+30,BLZ,Belize,30
+31,BMU,Bermuda,31
+32,BOL,"Bolivia, Plurinational State of",32
+33,BRA,Brazil,33
+34,BRB,Barbados,34
+35,BRN,Brunei Darussalam,35
+36,BTN,Bhutan,36
+37,BVT,Bouvet Island,37
+38,BWA,Botswana,38
+39,CAF,Central African Republic,39
+40,CAN,Canada,40
+41,CCK,Cocos (Keeling) Islands,41
+42,CHE,Switzerland,42
+43,CHL,Chile,43
+44,CHN,China,44
+45,CIV,Cote d'Ivoire,45
+46,CMR,Cameroon,46
+47,COD,"Congo, Democratic Republic of the",47
+48,COG,Congo,48
+49,COK,Cook Islands,49
+50,COL,Colombia,50
+51,COM,Comoros,51
+52,CPV,Cabo Verde,52
+53,CRI,Costa Rica,53
+54,CUB,Cuba,54
+55,CUW,Curacao,55
+56,CXR,Christmas Island,56
+57,CYM,Cayman Islands,57
+58,CYP,Cyprus,58
+59,CZE,Czechia,59
+60,DEU,Germany,60
+61,DJI,Djibouti,61
+62,DMA,Dominica,62
+63,DNK,Denmark,63
+64,DOM,Dominican Republic,64
+65,DZA,Algeria,65
+66,ECU,Ecuador,66
+67,EGY,Egypt,67
+68,ERI,Eritrea,68
+69,ESH,Western Sahara,69
+70,ESP,Spain,70
+71,EST,Estonia,71
+72,ETH,Ethiopia,72
+73,FIN,Finland,73
+74,FJI,Fiji,74
+75,FLK,Falkland Islands (Malvinas),75
+76,FRA,France,76
+77,FRO,Faroe Islands,77
+78,FSM,"Micronesia, Federated States of",78
+79,GAB,Gabon,79
+80,GBR,United Kingdom of Great Britain and Northern Ireland,80
+81,GEO,Georgia,81
+82,GGY,Guernsey,82
+83,GHA,Ghana,83
+84,GIB,Gibraltar,84
+85,GIN,Guinea,85
+86,GLP,Guadeloupe,86
+87,GMB,Gambia,87
+88,GNB,Guinea-Bissau,88
+89,GNQ,Equatorial Guinea,89
+90,GRC,Greece,90
+91,GRD,Grenada,91
+92,GRL,Greenland,92
+93,GTM,Guatemala,93
+94,GUF,French Guiana,94
+95,GUM,Guam,95
+96,GUY,Guyana,96
+97,HKG,Hong Kong,97
+98,HMD,Heard Island and McDonald Islands,98
+99,HND,Honduras,99
+100,HRV,Croatia,100
+101,HTI,Haiti,101
+102,HUN,Hungary,102
+103,IDN,Indonesia,103
+104,IMN,Isle of Man,104
+105,IND,India,105
+106,IOT,British Indian Ocean Territory,106
+107,IRL,Ireland,107
+108,IRN,"Iran, Islamic Republic of",108
+109,IRQ,Iraq,109
+110,ISL,Iceland,110
+111,ISR,Israel,111
+112,ITA,Italy,112
+113,JAM,Jamaica,113
+114,JEY,Jersey,114
+115,JOR,Jordan,115
+116,JPN,Japan,116
+117,KAZ,Kazakhstan,117
+118,KEN,Kenya,118
+119,KGZ,Kyrgyzstan,119
+120,KHM,Cambodia,120
+121,KIR,Kiribati,121
+122,KNA,Saint Kitts and Nevis,122
+123,KOR,"Korea, Republic of",123
+124,KWT,Kuwait,124
+125,LAO,Lao People's Democratic Republic,125
+126,LBN,Lebanon,126
+127,LBR,Liberia,127
+128,LBY,Libya,128
+129,LCA,Saint Lucia,129
+130,LIE,Liechtenstein,130
+131,LKA,Sri Lanka,131
+132,LSO,Lesotho,132
+133,LTU,Lithuania,133
+134,LUX,Luxembourg,134
+135,LVA,Latvia,135
+136,MAC,Macao,136
+137,MAF,Saint Martin (French part),137
+138,MAR,Morocco,138
+139,MCO,Monaco,139
+140,MDA,"Moldova, Republic of",140
+141,MDG,Madagascar,141
+142,MDV,Maldives,142
+143,MEX,Mexico,143
+144,MHL,Marshall Islands,144
+145,MKD,North Macedonia,145
+146,MLI,Mali,146
+147,MLT,Malta,147
+148,MMR,Myanmar,148
+149,MNE,Montenegro,149
+150,MNG,Mongolia,150
+151,MNP,Northern Mariana Islands,151
+152,MOZ,Mozambique,152
+153,MRT,Mauritania,153
+154,MSR,Montserrat,154
+155,MTQ,Martinique,155
+156,MUS,Mauritius,156
+157,MWI,Malawi,157
+158,MYS,Malaysia,158
+159,MYT,Mayotte,159
+160,NAM,Namibia,160
+161,NCL,New Caledonia,161
+162,NER,Niger,162
+163,NFK,Norfolk Island,163
+164,NGA,Nigeria,164
+165,NIC,Nicaragua,165
+166,NIU,Niue,166
+167,NLD,"Netherlands, Kingdom of the",167
+168,NOR,Norway,168
+169,NPL,Nepal,169
+170,NRU,Nauru,170
+171,NZL,New Zealand,171
+172,OMN,Oman,172
+173,PAK,Pakistan,173
+174,PAN,Panama,174
+175,PCN,Pitcairn,175
+176,PER,Peru,176
+177,PHL,Philippines,177
+178,PLW,Palau,178
+179,PNG,Papua New Guinea,179
+180,POL,Poland,180
+181,PRI,Puerto Rico,181
+182,PRK,"Korea, Democratic People's Republic of",182
+183,PRT,Portugal,183
+184,PRY,Paraguay,184
+185,PSE,"Palestine, State of",185
+186,PYF,French Polynesia,186
+187,QAT,Qatar,187
+188,REU,Reunion,188
+189,ROU,Romania,189
+190,RUS,Russian Federation,190
+191,RWA,Rwanda,191
+192,SAU,Saudi Arabia,192
+193,SDN,Sudan,193
+194,SEN,Senegal,194
+195,SGP,Singapore,195
+196,SGS,South Georgia and the South Sandwich Islands,196
+197,SHN,"Saint Helena, Ascension and Tristan da Cunha",197
+198,SJM,Svalbard and Jan Mayen,198
+199,SLB,Solomon Islands,199
+200,SLE,Sierra Leone,200
+201,SLV,El Salvador,201
+202,SMR,San Marino,202
+203,SOM,Somalia,203
+204,SPM,Saint Pierre and Miquelon,204
+205,SRB,Serbia,205
+206,SSD,South Sudan,206
+207,STP,Sao Tome and Principe,207
+208,SUR,Suriname,208
+209,SVK,Slovakia,209
+210,SVN,Slovenia,210
+211,SWE,Sweden,211
+212,SWZ,Eswatini,212
+213,SXM,Sint Maarten (Dutch part),213
+214,SYC,Seychelles,214
+215,SYR,Syrian Arab Republic,215
+216,TCA,Turks and Caicos Islands,216
+217,TCD,Chad,217
+218,TGO,Togo,218
+219,THA,Thailand,219
+220,TJK,Tajikistan,220
+221,TKL,Tokelau,221
+222,TKM,Turkmenistan,222
+223,TLS,Timor-Leste,223
+224,TON,Tonga,224
+225,TTO,Trinidad and Tobago,225
+226,TUN,Tunisia,226
+227,TUR,Turkey,227
+228,TUV,Tuvalu,228
+229,TWN,Taiwan,229
+230,TZA,"Tanzania, United Republic of",230
+231,UGA,Uganda,231
+232,UKR,Ukraine,232
+233,UMI,United States Minor Outlying Islands,233
+234,URY,Uruguay,234
+235,USA,United States of America,235
+236,UZB,Uzbekistan,236
+237,VAT,Holy See,237
+238,VCT,Saint Vincent and the Grenadines,238
+239,VEN,"Venezuela, Bolivarian Republic of",239
+240,VGB,Virgin Islands (British),240
+241,VIR,Virgin Islands (U.S.),241
+242,VNM,Viet Nam,242
+243,VUT,Vanuatu,243
+244,WLF,Wallis and Futuna,244
+245,WSM,Samoa,245
+246,YEM,Yemen,246
+247,ZAF,South Africa,247
+248,ZMB,Zambia,248
+249,ZWE,Zimbabwe,249

@@ -1,52 +1,48 @@
-.. container::
+=================== ===============
+major_survey_tbl_df R Documentation
+=================== ===============
 
-   .. container::
+Survey of Duke students and the area of their major
+---------------------------------------------------
 
-      =================== ===============
-      major_survey_tbl_df R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Survey of Duke students and the area of their major
-         :name: survey-of-duke-students-and-the-area-of-their-major
+This dataset, major_survey_tbl_df, is a tibble containing information
+about the GPAs of 218 Duke students and their academic major. The
+dataset provides insights into the relationship between GPA and the
+field of study, allowing for an exploration of how academic performance
+varies across different majors.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, major_survey_tbl_df, is a tibble containing
-      information about the GPAs of 218 Duke students and their academic
-      major. The dataset provides insights into the relationship between
-      GPA and the field of study, allowing for an exploration of how
-      academic performance varies across different majors.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(major_survey_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(major_survey_tbl_df)
+A tibble with 218 observations and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+gpa
+   Grade point average of the student (numeric).
 
-      A tibble with 218 observations and 2 variables:
+major
+   Academic major of the student (factor with 3 levels).
 
-      gpa
-         Grade point average of the student (numeric).
+Details
+~~~~~~~
 
-      major
-         Academic major of the student (factor with 3 levels).
+The dataset name has been kept as 'major_survey_tbl_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the educationR package and
+assists users in identifying its specific characteristics. The suffix
+'tbl_df' indicates that the dataset is a tibble. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'major_survey_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      educationR package and assists users in identifying its specific
-      characteristics. The suffix 'tbl_df' indicates that the dataset is
-      a tibble. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset was taken from the openintro package.
+The dataset was taken from the openintro package.

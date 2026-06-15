@@ -1,112 +1,108 @@
-.. container::
+========================= ===============
+saunders.maize.uniformity R Documentation
+========================= ===============
 
-   .. container::
+Uniformity trial of maize in South Africa
+-----------------------------------------
 
-      ========================= ===============
-      saunders.maize.uniformity R Documentation
-      ========================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of maize in South Africa
-         :name: uniformity-trial-of-maize-in-south-africa
+Uniformity trial of maize in South Africa
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of maize in South Africa
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("saunders.maize.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("saunders.maize.uniformity")
+A data frame with 2500 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row ordinate
 
-      A data frame with 2500 observations on the following 4 variables.
+``col``
+   column ordinate
 
-      ``row``
-         row ordinate
+``yield``
+   yield per plot, pounds
 
-      ``col``
-         column ordinate
+``year``
+   year
 
-      ``yield``
-         yield per plot, pounds
+Details
+~~~~~~~
 
-      ``year``
-         year
+These two maize uniformity trials were conducted by Potchefstroom
+Experiment Station, South Africa.
 
-      .. rubric:: Details
-         :name: details
+Each harvested unit was a plot of 10 plants, planted 3 feet by 3 feet in
+individual hills.
 
-      These two maize uniformity trials were conducted by Potchefstroom
-      Experiment Station, South Africa.
+Dataset for 1928-1929 experiment
 
-      Each harvested unit was a plot of 10 plants, planted 3 feet by 3
-      feet in individual hills.
+Rows 41-43 are missing.
 
-      Dataset for 1928-1929 experiment
+Field width: 4 plots \* 10 yards = 40 yards
 
-      Rows 41-43 are missing.
+Field length : 250 plots \* 1 yard = 250 yards
 
-      Field width: 4 plots \* 10 yards = 40 yards
+Dataset for 1929-30 experiment
 
-      Field length : 250 plots \* 1 yard = 250 yards
+Row 255 is missing
 
-      Dataset for 1929-30 experiment
+There is an obvious edge effect in the first column.
 
-      Row 255 is missing
+Field width: 5 plots \* 20 yards = 100 yards
 
-      There is an obvious edge effect in the first column.
+Field length: 300 plots \* 1 yard = 300 yards
 
-      Field width: 5 plots \* 20 yards = 100 yards
+Two possible outliers in the 1929-30 data were verified as being
+correctly transcribed from the source document.
 
-      Field length: 300 plots \* 1 yard = 300 yards
+This data was made available with special help from the staff at
+Rothamsted Research Library.
 
-      Two possible outliers in the 1929-30 data were verified as being
-      correctly transcribed from the source document.
+Transcription details: Rothamsted library scanned the paper documents to
+pdf. Screen captures of the pdf were saved as jpg files, then uploaded
+to an OCR conversion site. The resulting text was about 95 percent
+accurate and was carefully hand-checked by K.Wright and formatted into
+csv files.
 
-      This data was made available with special help from the staff at
-      Rothamsted Research Library.
+Source
+~~~~~~
 
-      Rothamsted library scanned the paper documents to pdf. Screen
-      captures of the pdf were saved as jpg files, then uploaded to an
-      OCR conversion site. The resulting text was about 95 percent
-      accurate and was carefully hand-checked and formatted into csv
-      files.
+Rothamsted Research Library, Box STATS17 WG Cochran, Folder 5.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Rothamsted Research Library, Box STATS17 WG Cochran, Folder 5.
+Rayner & A. R. Saunders. Statistical Methods, with Special Reference to
+Field Experiments.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Rayner & A. R. Saunders. Statistical Methods, with Special
-      Reference to Field Experiments.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+     library(agridat)
+     data(saunders.maize.uniformity)
+     dat <- saunders.maize.uniformity
 
-         ## Not run: 
+     libs(desplot)
 
-           library(agridat)
-           data(saunders.maize.uniformity)
-           dat <- saunders.maize.uniformity
-
-           libs(desplot)
-
-           desplot(dat, yield ~ col*row, subset=year==1929,
-                   flip=TRUE, aspect=250/40,
-                   main="saunders.maize.uniformity 1928-29")
-           desplot(dat, yield ~ col*row, subset=year==1930,
-                   flip=TRUE, aspect=300/100,
-                   main="saunders.maize.uniformity 1929-30")
+     desplot(dat, yield ~ col*row, subset=year==1929,
+             flip=TRUE, aspect=250/40,
+             main="saunders.maize.uniformity 1928-29")
+     desplot(dat, yield ~ col*row, subset=year==1930,
+             flip=TRUE, aspect=300/100,
+             main="saunders.maize.uniformity 1929-30")
 
 
-         ## End(Not run)
+   ## End(Not run)

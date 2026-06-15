@@ -1,27 +1,23 @@
-.. container::
+=========== ===============
+cerealsugar R Documentation
+=========== ===============
 
-   .. container::
+Percentage of Sugar in Breakfast Cereal
+---------------------------------------
 
-      =========== ===============
-      cerealsugar R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Percentage of Sugar in Breakfast Cereal
-         :name: percentage-of-sugar-in-breakfast-cereal
+Measurements of sugar content in frosted flakes breakfast cereal.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Measurements of sugar content in frosted flakes breakfast cereal.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   cerealsugar
 
-      .. code:: R
+Format
+~~~~~~
 
-         cerealsugar
-
-      .. rubric:: Format
-         :name: format
-
-      A vector of 100 measurements.
+A vector of 100 measurements.

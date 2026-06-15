@@ -1,95 +1,90 @@
-.. container::
+================= ===============
+coronary_death_df R Documentation
+================= ===============
 
-   .. container::
+High vs Moderate Statins for MI Prevention
+------------------------------------------
 
-      ================= ===============
-      coronary_death_df R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: High vs Moderate Statins for MI Prevention
-         :name: high-vs-moderate-statins-for-mi-prevention
+This dataset, coronary_death_df, is a data frame containing information
+from 4 clinical trials comparing intensive (high dose) versus moderate
+(standard dose) statin therapy for preventing coronary death or
+myocardial infarction. It includes data on treatment outcomes across
+multiple endpoints.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, coronary_death_df, is a data frame containing
-      information from 4 clinical trials comparing intensive (high dose)
-      versus moderate (standard dose) statin therapy for preventing
-      coronary death or myocardial infarction. It includes data on
-      treatment outcomes across multiple endpoints.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(coronary_death_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(coronary_death_df)
+A data frame with 4 observations and 16 variables:
 
-      .. rubric:: Format
-         :name: format
+trial
+   Trial identifier (character vector)
 
-      A data frame with 4 observations and 16 variables:
+pop
+   Patient population description (character vector)
 
-      trial
-         Trial identifier (character vector)
+nt
+   Number of patients in treatment group (integer vector)
 
-      pop
-         Patient population description (character vector)
+nc
+   Number of patients in control group (integer vector)
 
-      nt
-         Number of patients in treatment group (integer vector)
+ep1t
+   Endpoint 1 events in treatment group (integer vector)
 
-      nc
-         Number of patients in control group (integer vector)
+ep1c
+   Endpoint 1 events in control group (integer vector)
 
-      ep1t
-         Endpoint 1 events in treatment group (integer vector)
+ep2t
+   Endpoint 2 events in treatment group (integer vector)
 
-      ep1c
-         Endpoint 1 events in control group (integer vector)
+ep2c
+   Endpoint 2 events in control group (integer vector)
 
-      ep2t
-         Endpoint 2 events in treatment group (integer vector)
+ep3t
+   Endpoint 3 events in treatment group (integer vector)
 
-      ep2c
-         Endpoint 2 events in control group (integer vector)
+ep3c
+   Endpoint 3 events in control group (integer vector)
 
-      ep3t
-         Endpoint 3 events in treatment group (integer vector)
+ep4t
+   Endpoint 4 events in treatment group (integer vector)
 
-      ep3c
-         Endpoint 3 events in control group (integer vector)
+ep4c
+   Endpoint 4 events in control group (integer vector)
 
-      ep4t
-         Endpoint 4 events in treatment group (integer vector)
+ep5t
+   Endpoint 5 events in treatment group (integer vector)
 
-      ep4c
-         Endpoint 4 events in control group (integer vector)
+ep5c
+   Endpoint 5 events in control group (integer vector)
 
-      ep5t
-         Endpoint 5 events in treatment group (integer vector)
+ep6t
+   Endpoint 6 events in treatment group (integer vector)
 
-      ep5c
-         Endpoint 5 events in control group (integer vector)
+ep6c
+   Endpoint 6 events in control group (integer vector)
 
-      ep6t
-         Endpoint 6 events in treatment group (integer vector)
+Details
+~~~~~~~
 
-      ep6c
-         Endpoint 6 events in control group (integer vector)
+The dataset name has been kept as 'coronary_death_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the CardioDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'df' indicates that the dataset is a standard data frame. The original
+content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'coronary_death_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      CardioDataSets package and assists users in identifying its
-      specific characteristics. The suffix 'df' indicates that the
-      dataset is a standard data frame. The original content has not
-      been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the metadat package version 1.2-0
+Data taken from the metadat package version 1.2-0

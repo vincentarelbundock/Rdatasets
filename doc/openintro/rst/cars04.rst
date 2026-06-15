@@ -1,108 +1,105 @@
-.. container::
+====== ===============
+cars04 R Documentation
+====== ===============
 
-   .. container::
+cars04
+------
 
-      ====== ===============
-      cars04 R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: cars04
-         :name: cars04
+A data frame with 428 rows and 19 columns. This is a record of
+characteristics on all of the new models of cars for sale in the US in
+the year 2004.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A data frame with 428 rows and 19 columns. This is a record of
-      characteristics on all of the new models of cars for sale in the
-      US in the year 2004.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   cars04
 
-      .. code:: R
+Format
+~~~~~~
 
-         cars04
+A data frame with 428 observations on the following 19 variables.
 
-      .. rubric:: Format
-         :name: format
+name
+   The name of the vehicle including manufacturer and model.
 
-      A data frame with 428 observations on the following 19 variables.
+sports_car
+   Logical variable indicating if the vehicle is a sports car.
 
-      name
-         The name of the vehicle including manufacturer and model.
+suv
+   Logical variable indicating if the vehicle is an suv.
 
-      sports_car
-         Logical variable indicating if the vehicle is a sports car.
+wagon
+   Logical variable indicating if the vehicle is a wagon.
 
-      suv
-         Logical variable indicating if the vehicle is an suv.
+minivan
+   Logical variable indicating if the vehicle is a minivan.
 
-      wagon
-         Logical variable indicating if the vehicle is a wagon.
+pickup
+   Logical variable indicating if the vehicle is a pickup.
 
-      minivan
-         Logical variable indicating if the vehicle is a minivan.
+all_wheel
+   Logical variable indicating if the vehicle is all-wheel drive.
 
-      pickup
-         Logical variable indicating if the vehicle is a pickup.
+rear_wheel
+   Logical variable indicating if the vehicle is rear-wheel drive.
 
-      all_wheel
-         Logical variable indicating if the vehicle is all-wheel drive.
+msrp
+   Manufacturer suggested retail price of the vehicle.
 
-      rear_wheel
-         Logical variable indicating if the vehicle is rear-wheel drive.
+dealer_cost
+   Amount of money the dealer paid for the vehicle.
 
-      msrp
-         Manufacturer suggested retail price of the vehicle.
+eng_size
+   Displacement of the engine - the total volume of all the cylinders,
+   measured in liters.
 
-      dealer_cost
-         Amount of money the dealer paid for the vehicle.
+ncyl
+   Number of cylinders in the engine.
 
-      eng_size
-         Displacement of the engine - the total volume of all the
-         cylinders, measured in liters.
+horsepwr
+   Amount of horsepower produced by the engine.
 
-      ncyl
-         Number of cylinders in the engine.
+city_mpg
+   Gas mileage for city driving, measured in miles per gallon.
 
-      horsepwr
-         Amount of horsepower produced by the engine.
+hwy_mpg
+   Gas mileage for highway driving, measured in miles per gallon.
 
-      city_mpg
-         Gas mileage for city driving, measured in miles per gallon.
+weight
+   Total weight of the vehicle, measured in pounds.
 
-      hwy_mpg
-         Gas mileage for highway driving, measured in miles per gallon.
+wheel_base
+   Distance between the center of the front wheels and the center of the
+   rear wheels, measured in inches.
 
-      weight
-         Total weight of the vehicle, measured in pounds.
+length
+   Total length of the vehicle, measured in inches.
 
-      wheel_base
-         Distance between the center of the front wheels and the center
-         of the rear wheels, measured in inches.
+width
+   Total width of the vehicle, measured in inches.
 
-      length
-         Total length of the vehicle, measured in inches.
+Examples
+~~~~~~~~
 
-      width
-         Total width of the vehicle, measured in inches.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   library(ggplot2)
 
-         library(ggplot2)
-
-         # Highway gas mileage
-         ggplot(cars04, aes(x = hwy_mpg)) +
-           geom_histogram(
-             bins = 15, color = "white",
-             fill = openintro::IMSCOL["green", "full"]
-           ) +
-           theme_minimal() +
-           labs(
-             title = "Highway gas milage for cars from 2004",
-             x = "Gas Mileage (miles per gallon)",
-             y = "Number of cars"
-           )
+   # Highway gas mileage
+   ggplot(cars04, aes(x = hwy_mpg)) +
+     geom_histogram(
+       bins = 15, color = "white",
+       fill = openintro::IMSCOL["green", "full"]
+     ) +
+     theme_minimal() +
+     labs(
+       title = "Highway gas milage for cars from 2004",
+       x = "Gas Mileage (miles per gallon)",
+       y = "Number of cars"
+     )

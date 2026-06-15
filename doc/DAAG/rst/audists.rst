@@ -1,51 +1,46 @@
-.. container::
+======= ===============
+audists R Documentation
+======= ===============
 
-   .. container::
+Road distances between 10 Australian cities
+-------------------------------------------
 
-      ======= ===============
-      audists R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Road distances between 10 Australian cities
-         :name: road-distances-between-10-australian-cities
+Distances between the Australian cities of Adelaide, Alice, Brisbane,
+Broome, Cairns, Canberra, Darwin, Melbourne, Perth and Sydney
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Distances between the Australian cities of Adelaide, Alice,
-      Brisbane, Broome, Cairns, Canberra, Darwin, Melbourne, Perth and
-      Sydney
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   audists
 
-      .. code:: R
+Format
+~~~~~~
 
-         audists
+The format is: Class 'dist', i.e., a distance matrix.
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      The format is: Class 'dist', i.e., a distance matrix.
+Australian road map
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Australian road map
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   data(audists)
+   ## Not run: 
+   audists.cmd <- cmdscale(audists)
+   library(lattice)
+   xyplot(audists.cmd[,2] ~ audists.cmd[,1], 
+          groups=row.names(audists.cmd),
+          panel = function(x, y, subscripts, groups)  
+                           ltext(x = x, y = y, label = groups[subscripts],
+                           cex=1, fontfamily = "HersheySans"))
 
-      .. code:: R
-
-         data(audists)
-         ## Not run: 
-         audists.cmd <- cmdscale(audists)
-         library(lattice)
-         xyplot(audists.cmd[,2] ~ audists.cmd[,1], 
-                groups=row.names(audists.cmd),
-                panel = function(x, y, subscripts, groups)  
-                                 ltext(x = x, y = y, label = groups[subscripts],
-                                 cex=1, fontfamily = "HersheySans"))
-
-         ## End(Not run)
+   ## End(Not run)

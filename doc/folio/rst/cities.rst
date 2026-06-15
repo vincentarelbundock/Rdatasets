@@ -1,82 +1,75 @@
-.. container::
+====== ===============
+cities R Documentation
+====== ===============
 
-   .. container::
+Roman cities
+------------
 
-      ====== ===============
-      cities R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Roman cities
-         :name: roman-cities
+A dataset of population, area, and infrastructural measures for Roman
+cities of the Imperial period.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset of population, area, and infrastructural measures for
-      Roman cities of the Imperial period.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   cities
 
-      .. code:: R
+Format
+~~~~~~
 
-         cities
+A ``data.frame`` with 125 observations (Roman cities) and 8 variables:
 
-      .. rubric:: Format
-         :name: format
+name
+   ``character``: site Name.
 
-      A ``data.frame`` with 125 observations (Roman cities) and 8
-      variables:
+area
+   ``integer``: site area, in hectares.
 
-      name
-         ``character``: site Name.
+population
+   ``integer``: population estimate, following the methodology in Hanson
+   and Ortman (2017).
 
-      area
-         ``integer``: site area, in hectares.
+forum_area
+   ``integer``: total area of all fora/agorae in the site, in square
+   meters.
 
-      population
-         ``integer``: population estimate, following the methodology in
-         Hanson and Ortman (2017).
+street_area
+   ``integer``: total area of streets in the site, in square meters.
 
-      forum_area
-         ``integer``: total area of all fora/agorae in the site, in
-         square meters.
+street_length
+   ``integer``: total length of streets in the site, in meters.
 
-      street_area
-         ``integer``: total area of streets in the site, in square
-         meters.
+street_width
+   ``integer``: average width of streets, in square meters.
 
-      street_length
-         ``integer``: total length of streets in the site, in meters.
+block_area
+   ``integer``: average area of a block, in square meters.
 
-      street_width
-         ``integer``: average width of streets, in square meters.
+Source
+~~~~~~
 
-      block_area
-         ``integer``: average area of a block, in square meters.
+Hanson, J. & Ortman, S. (2019). Population, area, and infrastructural
+measures for Roman cities of the Imperial period. *tDAR*.
+`doi:10.6067/XCV8448563 <https://doi.org/10.6067/XCV8448563>`__.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Hanson, J. & Ortman, S. (2019). Population, area, and
-      infrastructural measures for Roman cities of the Imperial period.
-      *tDAR*.
-      `doi:10.6067/XCV8448563 <https://doi.org/10.6067/XCV8448563>`__.
+Hanson J. W. & Ortman S. G. (2017). A systematic method for estimating
+the populations of Greek and Roman settlements. *Journal of Roman
+Archaeology*, 30: 301-324.
+`doi:10.1017/S1047759400074134 <https://doi.org/10.1017/S1047759400074134>`__.
 
-      .. rubric:: References
-         :name: references
+Hanson J. W., Ortman S. G., Bettencourt L. M. A. & Mazur L. C. (2019).
+Urban form, infrastructure and spatial organisation in the Roman Empire.
+*Antiquity*, 93(369): 702-718.
+`doi:10.15184/aqy.2018.192 <https://doi.org/10.15184/aqy.2018.192>`__.
 
-      Hanson J. W. & Ortman S. G. (2017). A systematic method for
-      estimating the populations of Greek and Roman settlements.
-      *Journal of Roman Archaeology*, 30: 301-324.
-      `doi:10.1017/S1047759400074134 <https://doi.org/10.1017/S1047759400074134>`__.
+See Also
+~~~~~~~~
 
-      Hanson J. W., Ortman S. G., Bettencourt L. M. A. & Mazur L. C.
-      (2019). Urban form, infrastructure and spatial organisation in the
-      Roman Empire. *Antiquity*, 93(369): 702-718.
-      `doi:10.15184/aqy.2018.192 <https://doi.org/10.15184/aqy.2018.192>`__.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      Other geographical data: ``inrap``
+Other geographical data: ``inrap``

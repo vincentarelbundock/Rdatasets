@@ -1,43 +1,39 @@
-.. container::
+========= ===============
+spirittax R Documentation
+========= ===============
 
-   .. container::
+The spirittax dataset
+---------------------
 
-      ========= ===============
-      spirittax R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The spirittax dataset
-         :name: the-spirittax-dataset
+This dataset contains a list of historical tax rates for distilled
+spirits per proof gallon from TTB.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains a list of historical tax rates for distilled
-      spirits per proof gallon from TTB.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   spirittax
 
-      .. code:: R
+Format
+~~~~~~
 
-         spirittax
+A data frame with 15 observations of 3 variables:
 
-      .. rubric:: Format
-         :name: format
+FROM
+   FROM, date of starting tax rate
 
-      A data frame with 15 observations of 3 variables:
+TO
+   TO, date of ending tax rate. The last row is considered the present
+   day rate indicated by the package creation date.
 
-      FROM
-         FROM, date of starting tax rate
+RATE
+   RATE, in dollars
 
-      TO
-         TO, date of ending tax rate. The last row is considered the
-         present day rate indicated by the package creation date.
+Source
+~~~~~~
 
-      RATE
-         RATE, in dollars
-
-      .. rubric:: Source
-         :name: source
-
-      http://catalog.data.gov/dataset/historical-tax-rates
+http://catalog.data.gov/dataset/historical-tax-rates

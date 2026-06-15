@@ -1,27 +1,23 @@
-.. container::
+= ===============
+i R Documentation
+= ===============
 
-   .. container::
+internal i
+----------
 
-      = ===============
-      i R Documentation
-      = ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: internal i
-         :name: internal-i
+intended for internal use
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      intended for internal use
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(i)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(i)
-
-      .. rubric:: Format
-         :name: format
-
-      The format is: int 78
+The format is: int 78

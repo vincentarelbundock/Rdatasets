@@ -1,53 +1,43 @@
-.. container::
+========= ===============
+nace_rev2 R Documentation
+========= ===============
 
-   .. container::
+NACE classification code table
+------------------------------
 
-      ========= ===============
-      nace_rev2 R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: NACE classification code table
-         :name: nace-classification-code-table
+Statistical Classification of Economic Activities.
 
-      .. rubric:: Description
-         :name: description
+- Order ``[integer]``
 
-      Statistical Classification of Economic Activities.
+- Level ``[integer]`` NACE level
 
-      -  Order ``[integer]``
+- Code ``[character]`` NACE code
 
-      -  Level ``[integer]`` NACE level
+- Parent ``[character]`` parent code of ``"Code"``
 
-      -  Code ``[character]`` NACE code
+- Description ``[character]``
 
-      -  Parent ``[character]`` parent code of ``"Code"``
+- This_item_includes ``[character]``
 
-      -  Description ``[character]``
+- This_item_also_includes ``[character]``
 
-      -  This_item_includes ``[character]``
+- Rulings ``[character]``
 
-      -  This_item_also_includes ``[character]``
+- This_item_excludes ``[character]``
 
-      -  Rulings ``[character]``
+- Reference_to_ISIC_Rev._4 ``[character]``
 
-      -  This_item_excludes ``[character]``
+Format
+~~~~~~
 
-      -  Reference_to_ISIC_Rev._4 ``[character]``
+A csv file, one NACE code per row.
 
-      .. rubric:: Format
-         :name: format
+See Also
+~~~~~~~~
 
-      A csv file, one NACE code per row.
+``hierarchy``
 
-      .. rubric:: References
-         :name: references
-
-      This codelist was downloaded on 2020-10-21 from
-      `Eurostat <https://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_CLS_DLD&StrNom=NACE_REV2&StrLanguageCode=EN&StrLayoutCode=HIERARCHIC#>`__
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``hierarchy``
-
-      Other datasets: ``retailers``, ``samplonomy``
+Other datasets: ``retailers``, ``samplonomy``

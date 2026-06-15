@@ -1,53 +1,48 @@
-.. container::
+======== ===============
+Glucose2 R Documentation
+======== ===============
 
-   .. container::
+Glucose Levels Following Alcohol Ingestion
+------------------------------------------
 
-      ======== ===============
-      Glucose2 R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Glucose Levels Following Alcohol Ingestion
-         :name: glucose-levels-following-alcohol-ingestion
+The ``Glucose2`` data frame has 196 rows and 4 columns.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      The ``Glucose2`` data frame has 196 rows and 4 columns.
+This data frame contains the following columns:
 
-      .. rubric:: Format
-         :name: format
+Subject
+   a factor with levels ``1`` to ``7`` identifying the subject whose
+   glucose level is measured.
 
-      This data frame contains the following columns:
+Date
+   a factor with levels ``1`` ``2`` indicating the occasion in which the
+   experiment was conducted.
 
-      Subject
-         a factor with levels ``1`` to ``7`` identifying the subject
-         whose glucose level is measured.
+Time
+   a numeric vector giving the time since alcohol ingestion (in min/10).
 
-      Date
-         a factor with levels ``1`` ``2`` indicating the occasion in
-         which the experiment was conducted.
+glucose
+   a numeric vector giving the blood glucose level (in mg/dl).
 
-      Time
-         a numeric vector giving the time since alcohol ingestion (in
-         min/10).
+Details
+~~~~~~~
 
-      glucose
-         a numeric vector giving the blood glucose level (in mg/dl).
+Hand and Crowder (Table A.14, pp. 180-181, 1996) describe data on the
+blood glucose levels measured at 14 time points over 5 hours for 7
+volunteers who took alcohol at time 0. The same experiment was repeated
+on a second date with the same subjects but with a dietary additive used
+for all subjects.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      Hand and Crowder (Table A.14, pp. 180-181, 1996) describe data on
-      the blood glucose levels measured at 14 time points over 5 hours
-      for 7 volunteers who took alcohol at time 0. The same experiment
-      was repeated on a second date with the same subjects but with a
-      dietary additive used for all subjects.
+Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in S and
+S-PLUS*, Springer, New York. (Appendix A.10)
 
-      .. rubric:: Source
-         :name: source
-
-      Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in
-      S and S-PLUS*, Springer, New York. (Appendix A.10)
-
-      Hand, D. and Crowder, M. (1996), *Practical Longitudinal Data
-      Analysis*, Chapman and Hall, London.
+Hand, D. and Crowder, M. (1996), *Practical Longitudinal Data Analysis*,
+Chapman and Hall, London.

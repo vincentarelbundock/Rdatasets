@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><title>R: Migraine Dose–Response Trial Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>migrane_dose_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Migraine Dose–Response Trial Data</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, migrane_dose_df, is a data frame obtained from a randomized, placebo-controlled
+dose–response clinical trial for the treatment of acute migraine (clinicaltrials.gov identifier
+NCT00712725). The primary endpoint was “pain freedom at 2 hours postdose,” measured as a binary outcome.
+The dataset includes dose levels, the number of participants achieving pain freedom, and the total number
+of treated participants at each dose level. These data are useful for dose–response modeling and
+clinical trial analysis in migraine research.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(migrane_dose_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 8 observations and 3 variables:
+</p>
+
+<dl>
+<dt>dose</dt><dd><p>Dose level administered (numeric)</p>
+</dd>
+<dt>painfree</dt><dd><p>Number of participants who achieved pain freedom at 2 hours postdose (integer)</p>
+</dd>
+<dt>ntrt</dt><dd><p>Total number of treated participants at the corresponding dose level (integer)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as migrane_dose_df to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+NeuroDataSets package and assists users in identifying its specific characteristics.
+The suffix df indicates that the dataset is a data frame. The original content has not been modified
+in any way.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the DoseFinding package version 1.4-1
+</p>
+
+</main>
+
+</div>
+</body></html>

@@ -1,105 +1,100 @@
-.. container::
+============== ===============
+NCAdata_tbl_df R Documentation
+============== ===============
 
-   .. container::
+Interim Dane Data with New Criminal Activity (NCA)
+--------------------------------------------------
 
-      ============== ===============
-      NCAdata_tbl_df R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Interim Dane Data with New Criminal Activity (NCA)
-         :name: interim-dane-data-with-new-criminal-activity-nca
+This dataset contains pre-treatment covariates, a binary treatment (Z),
+an ordinal decision (D), and an outcome variable (Y). It is used to
+study new criminal activity (NCA).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains pre-treatment covariates, a binary treatment
-      (Z), an ordinal decision (D), and an outcome variable (Y). It is
-      used to study new criminal activity (NCA).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(NCAdata_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(NCAdata_tbl_df)
+A tibble with 1,891 observations and 19 variables:
 
-      .. rubric:: Format
-         :name: format
+Sex
+   Numeric variable representing the individual's sex.
 
-      A tibble with 1,891 observations and 19 variables:
+White
+   Numeric variable indicating whether the individual is White.
 
-      Sex
-         Numeric variable representing the individual's sex.
+SexWhite
+   Numeric interaction term between Sex and White.
 
-      White
-         Numeric variable indicating whether the individual is White.
+Age
+   Numeric variable indicating the individual's age.
 
-      SexWhite
-         Numeric interaction term between Sex and White.
+PendingChargeAtTimeOfOffense
+   Numeric variable indicating if there was a pending charge at the time
+   of offense.
 
-      Age
-         Numeric variable indicating the individual's age.
+NCorNonViolentMisdemeanorCharge
+   Numeric variable indicating a non-violent misdemeanor charge.
 
-      PendingChargeAtTimeOfOffense
-         Numeric variable indicating if there was a pending charge at
-         the time of offense.
+ViolentMisdemeanorCharge
+   Numeric variable indicating a violent misdemeanor charge.
 
-      NCorNonViolentMisdemeanorCharge
-         Numeric variable indicating a non-violent misdemeanor charge.
+ViolentFelonyCharge
+   Numeric variable indicating a violent felony charge.
 
-      ViolentMisdemeanorCharge
-         Numeric variable indicating a violent misdemeanor charge.
+NonViolentFelonyCharge
+   Numeric variable indicating a non-violent felony charge.
 
-      ViolentFelonyCharge
-         Numeric variable indicating a violent felony charge.
+PriorMisdemeanorConviction
+   Numeric variable indicating prior misdemeanor convictions.
 
-      NonViolentFelonyCharge
-         Numeric variable indicating a non-violent felony charge.
+PriorFelonyConviction
+   Numeric variable indicating prior felony convictions.
 
-      PriorMisdemeanorConviction
-         Numeric variable indicating prior misdemeanor convictions.
+PriorViolentConviction
+   Numeric variable indicating prior violent convictions.
 
-      PriorFelonyConviction
-         Numeric variable indicating prior felony convictions.
+PriorSentenceToIncarceration
+   Numeric variable indicating prior sentences to incarceration.
 
-      PriorViolentConviction
-         Numeric variable indicating prior violent convictions.
+PriorFTAInPastTwoYears
+   Numeric variable indicating prior failures to appear (FTA) in the
+   past two years.
 
-      PriorSentenceToIncarceration
-         Numeric variable indicating prior sentences to incarceration.
+PriorFTAOlderThanTwoYears
+   Numeric variable indicating prior failures to appear (FTA) older than
+   two years.
 
-      PriorFTAInPastTwoYears
-         Numeric variable indicating prior failures to appear (FTA) in
-         the past two years.
+Staff_ReleaseRecommendation
+   Numeric variable indicating the staff release recommendation.
 
-      PriorFTAOlderThanTwoYears
-         Numeric variable indicating prior failures to appear (FTA)
-         older than two years.
+Z
+   Binary treatment variable.
 
-      Staff_ReleaseRecommendation
-         Numeric variable indicating the staff release recommendation.
+D
+   Ordinal decision variable.
 
-      Z
-         Binary treatment variable.
+Y
+   Outcome variable measuring new criminal activity (NCA).
 
-      D
-         Ordinal decision variable.
+Details
+~~~~~~~
 
-      Y
-         Outcome variable measuring new criminal activity (NCA).
+The dataset name has been changed to 'NCAdata_tbl_df' to avoid confusion
+with other data sets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the crimedatasets package and
+assists users in identifying its specific characteristics. The suffix
+'tbl_df' indicates that the dataset is a tibble in R. The original
+content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been changed to 'NCAdata_tbl_df' to avoid
-      confusion with other data sets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      crimedatasets package and assists users in identifying its
-      specific characteristics. The suffix 'tbl_df' indicates that the
-      dataset is a tibble in R. The original content has not been
-      modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Interim Dane data with new criminal activity (NCA) as an outcome.
+Interim Dane data with new criminal activity (NCA) as an outcome.

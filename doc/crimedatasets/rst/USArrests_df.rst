@@ -1,57 +1,51 @@
-.. container::
+============ ===============
+USArrests_df R Documentation
+============ ===============
 
-   .. container::
+Violent Crime Rates by US State
+-------------------------------
 
-      ============ ===============
-      USArrests_df R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Violent Crime Rates by US State
-         :name: violent-crime-rates-by-us-state
+This dataset contains statistics on violent crime rates in each of the
+50 US states for the year 1973. The data includes arrests per 100,000
+residents for assault, murder, and rape, as well as the percentage of
+the population living in urban areas.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains statistics on violent crime rates in each of
-      the 50 US states for the year 1973. The data includes arrests per
-      100,000 residents for assault, murder, and rape, as well as the
-      percentage of the population living in urban areas.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(USArrests_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(USArrests_df)
+A data frame with 50 observations and 4 variables:
 
-      .. rubric:: Format
-         :name: format
+Murder
+   Murder arrests per 100,000 residents (numeric).
 
-      A data frame with 50 observations and 4 variables:
+Assault
+   Assault arrests per 100,000 residents (integer).
 
-      Murder
-         Murder arrests per 100,000 residents (numeric).
+UrbanPop
+   Percentage of the population living in urban areas (integer).
 
-      Assault
-         Assault arrests per 100,000 residents (integer).
+Rape
+   Rape arrests per 100,000 residents (numeric).
 
-      UrbanPop
-         Percentage of the population living in urban areas (integer).
+Details
+~~~~~~~
 
-      Rape
-         Rape arrests per 100,000 residents (numeric).
+The dataset name has been changed to 'USArrests_df' to maintain
+consistency with the naming conventions of the crimedatasets package.
+The suffix 'df' indicates that the dataset is stored as a data frame in
+R. The original content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been changed to 'USArrests_df' to maintain
-      consistency with the naming conventions of the crimedatasets
-      package. The suffix 'df' indicates that the dataset is stored as a
-      data frame in R. The original content has not been modified in any
-      way.
-
-      .. rubric:: Source
-         :name: source
-
-      1973 crime data, originally included in the USArrests dataset from
-      R.
+1973 crime data, originally included in the USArrests dataset from R.

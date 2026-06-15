@@ -16,29 +16,22 @@ function processMathHTML() {
 
 <table style="width: 100%;"><tr><td>Cholera</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>
-William Farr's Data on Cholera in London, 1849
-</h2>
+<h2>William Farr's Data on Cholera in London, 1849</h2>
 
 <h3>Description</h3>
 
-<p>In 1852, William Farr, published a report of the Registrar-General on mortality
-due to cholera in England in the years 1848-1849, during which there was a
-large epidemic throughout the country.  Farr initially believed that cholera
-arose from bad air (&quot;miasma&quot;) associated with low elevation above the
-River Thames. John Snow (1855) later showed that the disease was principally
-spread by contaminated water.
+<p>In 1852, William Farr, published a report of the Registrar-General on
+mortality due to cholera in England in the years 1848-1849, during which
+there was a large epidemic throughout the country.  Farr initially believed
+that cholera arose from bad air (&quot;miasma&quot;) associated with low elevation
+above the River Thames. John Snow (1855) later showed that the disease was
+principally spread by contaminated water.
 </p>
 <p>This data set comes from a paper by Brigham et al. (2003) that analyses some
-tables from Farr's report to examine the prevalence of death from cholera
-in the districts of London in relation to the available predictors from
-Farr's table.
+tables from Farr's report to examine the prevalence of death from cholera in
+the districts of London in relation to the available predictors from Farr's
+table.
 </p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data("Cholera")</code></pre>
 
 
 <h3>Format</h3>
@@ -59,7 +52,7 @@ Farr's table.
 </dd>
 <dt><code>region</code></dt><dd><p>a grouping of the London districts, a factor with levels <code>West</code> <code>North</code> <code>Central</code> <code>South</code> <code>Kent</code></p>
 </dd>
-<dt><code>water</code></dt><dd><p>water supply region, a factor with levels <code>Battersea</code> <code>New River</code> <code>Kew</code>; see Details</p>
+<dt><code>water</code></dt><dd><p>water supply region, a factor with levels <code>Battersea</code> <code style="white-space: pre;">&#8288;New River&#8288;</code> <code>Kew</code>; see Details</p>
 </dd>
 <dt><code>annual_deaths</code></dt><dd><p>annual deaths from all causes, 1838-1844, a numeric vector</p>
 </dd>
@@ -83,11 +76,10 @@ Farr's table.
 
 <h3>Details</h3>
 
-<p>The supply of <code>water</code> was classified as &ldquo;Thames, between Battersea and Waterloo Bridges&rdquo;
-(central London), 
-&ldquo;New River, Rivers Lea and Ravensbourne&rdquo;, and &ldquo;Thames, at Kew and Hammersmith&rdquo;
-(western London).
-The factor levels use abbreviations for these.
+<p>The supply of <code>water</code> was classified as &ldquo;Thames, between
+Battersea and Waterloo Bridges&rdquo; (central London), &ldquo;New River, Rivers
+Lea and Ravensbourne&rdquo;, and &ldquo;Thames, at Kew and Hammersmith&rdquo; (western
+London). The factor levels use abbreviations for these.
 </p>
 <p>The data frame is sorted by increasing elevation above the high water mark.
 </p>
@@ -95,33 +87,36 @@ The factor levels use abbreviations for these.
 
 <h3>Source</h3>
 
-<p>Bingham P., Verlander, N. Q., Cheal M. J. (2004).
-John Snow, William Farr and the 1849 outbreak of cholera that affected London: 
-a reworking of the data highlights the importance of the water supply.
-<em>Public Health</em>, 118(6), 387-394, Table 2.
-(The data was kindly supplied by Neville Verlander, including additional variables
-not shown in their Table 2.)
+<p>Bingham P., Verlander, N. Q., Cheal M. J. (2004). John Snow, William
+Farr and the 1849 outbreak of cholera that affected London: a reworking of
+the data highlights the importance of the water supply. <em>Public
+Health</em>, 118(6), 387-394, Table 2. (The data was kindly supplied by Neville
+Verlander, including additional variables not shown in their Table 2.)
 </p>
 
 
 <h3>References</h3>
 
-<p>Registrar-General (1852). <em>Report on the Mortality of Cholera in England 1848-49</em>,
-W. Clowes and Sons, for Her Majesty's Stationary Office.
-Written by William Farr.
-<a href="https://ia600208.us.archive.org/11/items/b24751297/b24751297.pdf">https://ia600208.us.archive.org/11/items/b24751297/b24751297.pdf</a>
-The relevant tables are at pages clii &ndash; clvii.
+<p>Registrar-General (1852). <em>Report on the Mortality of
+Cholera in England 1848-49</em>, W. Clowes and Sons, for Her Majesty's
+Stationary Office. Written by William Farr.
+<a href="https://ia600208.us.archive.org/11/items/b24751297/b24751297.pdf">https://ia600208.us.archive.org/11/items/b24751297/b24751297.pdf</a> The
+relevant tables are at pages clii &ndash; clvii.
+</p>
+<p>See the example by by John Russell for the <a href="https://github.com/drjohnrussell/30DayChartChallenge/blob/main/2025/Challenge01.R">30DayChartChallenge</a>
 </p>
 
 
 <h3>See Also</h3>
 
-<p><code>CholeraDeaths1849</code>, <code>Snow.deaths</code></p>
+<p><code>CholeraDeaths1849</code>, <code>Snow.deaths</code>
+</p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(Cholera)
+<pre><code class='language-R'>
+data(Cholera)
 
 # plot cholera deaths vs. elevation
 plot(cholera_drate ~ elevation, data=Cholera, 
@@ -169,6 +164,7 @@ if (require(effects)) {
   eff &lt;- allEffects(fit)
   plot(eff)
 }
+
 
 </code></pre>
 

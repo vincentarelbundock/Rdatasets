@@ -1,47 +1,44 @@
-.. container::
+=============== ===============
+birthdeathrates R Documentation
+=============== ===============
 
-   .. container::
+Birth and Death Rates Data
+--------------------------
 
-      =============== ===============
-      birthdeathrates R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Birth and Death Rates Data
-         :name: birth-and-death-rates-data
+Birth and death rates for 69 countries.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Birth and death rates for 69 countries.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("birthdeathrates")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("birthdeathrates")
+A data frame with 69 observations on the following 2 variables.
 
-      .. rubric:: Format
-         :name: format
+``birth``
+   birth rate.
 
-      A data frame with 69 observations on the following 2 variables.
+``death``
+   death rate.
 
-      ``birth``
-         birth rate.
+Source
+~~~~~~
 
-      ``death``
-         death rate.
+J. A. Hartigan (1975), *Clustering Algorithms*. John Wiley & Sons, New
+York.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      J. A. Hartigan (1975), *Clustering Algorithms*. John Wiley & Sons,
-      New York.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-           data("birthdeathrates", package = "HSAUR")
-           plot(birthdeathrates)
+     data("birthdeathrates", package = "HSAUR")
+     plot(birthdeathrates)

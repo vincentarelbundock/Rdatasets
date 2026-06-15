@@ -1,67 +1,63 @@
-.. container::
+====== ===============
+Snmesp R Documentation
+====== ===============
 
-   .. container::
+Employment and Wages in Spain
+-----------------------------
 
-      ====== ===============
-      Snmesp R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Employment and Wages in Spain
-         :name: employment-and-wages-in-spain
+A panel of 738 observations from 1983 to 1990
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      A panel of 738 observations from 1983 to 1990
+A data frame containing:
 
-      .. rubric:: Format
-         :name: format
+firm
+   firm index
 
-      A data frame containing:
+year
+   year
 
-      firm
-         firm index
+n
+   log of employment
 
-      year
-         year
+w
+   log of wages
 
-      n
-         log of employment
+y
+   log of real output
 
-      w
-         log of wages
+i
+   log of intermediate inputs
 
-      y
-         log of real output
+k
+   log of real capital stock
 
-      i
-         log of intermediate inputs
+f
+   real cash flow
 
-      k
-         log of real capital stock
+Details
+~~~~~~~
 
-      f
-         real cash flow
+*total number of observations*: 5904
 
-      .. rubric:: Details
-         :name: details
+*observation*: firms
 
-      *total number of observations*: 5904
+*country*: Spain
 
-      *observation*: firms
+Source
+~~~~~~
 
-      *country*: Spain
+Journal of Business Economics and Statistics data archive:
 
-      .. rubric:: Source
-         :name: source
+https://amstat.tandfonline.com/loi/ubes20/.
 
-      Journal of Business Economics and Statistics data archive:
+References
+~~~~~~~~~~
 
-      https://amstat.tandfonline.com/loi/ubes20/.
-
-      .. rubric:: References
-         :name: references
-
-      Alonso-Borrego C, Arellano M (1999). “Symmetrically Normalized
-      Instrumental-Variable Estimation Using Panel Data.” *Journal of
-      Business and Economic Statistics*, **17**\ (1), 36-49.
+Alonso-Borrego C, Arellano M (1999). “Symmetrically Normalized
+Instrumental-Variable Estimation Using Panel Data.” *Journal of Business
+and Economic Statistics*, **17**\ (1), 36-49.

@@ -1,0 +1,95 @@
+<!DOCTYPE html><html><head><title>R: Sleep Deprivation and Cognitive Performance Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>sleep_deprivation_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Sleep Deprivation and Cognitive Performance Data</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, sleep_deprivation_tbl_df, is a tibble containing data from a 2024 study conducted in the Middle East
+that investigated the effects of sleep deprivation on cognitive performance and emotional regulation.
+The dataset includes 60 participants from diverse backgrounds and captures detailed information on sleep duration,
+sleep quality, daytime sleepiness, cognitive performance metrics (reaction times and memory accuracy),
+and emotional stability. Additionally, the dataset records demographic and lifestyle factors such as age, gender,
+BMI, caffeine intake, physical activity level, and stress level.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(sleep_deprivation_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 60 observations and 14 variables:
+</p>
+
+<dl>
+<dt>Participant_ID</dt><dd><p>Unique identifier for each participant (character)</p>
+</dd>
+<dt>Sleep_Hours</dt><dd><p>Average hours of sleep per night (numeric)</p>
+</dd>
+<dt>Sleep_Quality_Score</dt><dd><p>Self-reported sleep quality score (numeric)</p>
+</dd>
+<dt>Daytime_Sleepiness</dt><dd><p>Level of daytime sleepiness (numeric)</p>
+</dd>
+<dt>Stroop_Task_Reaction_Time</dt><dd><p>Reaction time on the Stroop cognitive task (numeric)</p>
+</dd>
+<dt>N_Back_Accuracy</dt><dd><p>Accuracy score on the N-Back working memory task (numeric)</p>
+</dd>
+<dt>Emotion_Regulation_Score</dt><dd><p>Score reflecting emotional regulation ability (numeric)</p>
+</dd>
+<dt>PVT_Reaction_Time</dt><dd><p>Reaction time on the Psychomotor Vigilance Task (numeric)</p>
+</dd>
+<dt>Age</dt><dd><p>Age of the participant in years (numeric)</p>
+</dd>
+<dt>Gender</dt><dd><p>Gender of the participant (character)</p>
+</dd>
+<dt>BMI</dt><dd><p>Body Mass Index (numeric)</p>
+</dd>
+<dt>Caffeine_Intake</dt><dd><p>Daily caffeine intake (numeric)</p>
+</dd>
+<dt>Physical_Activity_Level</dt><dd><p>Self-reported physical activity level (numeric)</p>
+</dd>
+<dt>Stress_Level</dt><dd><p>Self-reported stress level (numeric)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as sleep_deprivation_tbl_df to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+NeuroDataSets package and assists users in identifying its specific characteristics.
+The suffix tbl_df indicates that the dataset is a tibble (a modern data frame).
+The original content has not been modified in any way. Variable names and values are provided exactly
+as they appear in the source.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from Kaggle: <a href="https://www.kaggle.com/datasets/sacramentotechnology/sleep-deprivation-and-cognitive-performance">https://www.kaggle.com/datasets/sacramentotechnology/sleep-deprivation-and-cognitive-performance</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

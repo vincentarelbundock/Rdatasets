@@ -20,21 +20,16 @@ function processMathHTML() {
 
 <h3>Description</h3>
 
-<p>This data, from Agresti (2002), Table 9.1, gives the result of a 1992
-survey in Dayton Ohio of  2276 high school seniors on
-whether they had ever used 
+<p>This data, from Agresti (2002), Table 9.1, gives the result of a 1992 survey
+in Dayton Ohio of 2276 high school seniors on whether they had ever used
 alcohol, cigarettes and marijuana.
 </p>
 
 
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data(DaytonSurvey)</code></pre>
-
-
 <h3>Format</h3>
 
-<p>A frequency data frame with 32 observations on the following 6 variables.
+<p>A frequency data frame with 32 observations on the following 6
+variables.
 </p>
 
 <dl>
@@ -56,62 +51,64 @@ alcohol, cigarettes and marijuana.
 
 <h3>Details</h3>
 
-<p>Agresti uses the letters G (<code>sex</code>), R (<code>race</code>),
-A (<code>alcohol</code>), C (<code>cigarette</code>), M (<code>marijuana</code>) to refer to the table variables,
-and this usage is followed in the examples below.
+<p>Agresti uses the letters G (<code>sex</code>), R (<code>race</code>), A
+(<code>alcohol</code>), C (<code>cigarette</code>), M (<code>marijuana</code>) to refer to the
+table variables, and this usage is followed in the examples below.
 </p>
-<p>Background variables include <code>sex</code> and <code>race</code> of the
-respondent (GR), typically treated as explanatory, so that any
-model for the full table should include the term <code>sex:race</code>.
-Models for the reduced table, collapsed over <code>sex</code> and <code>race</code>
-are not entirely unreasonable, but don't permit the estimation
-of the effects of these variables on the responses.
+<p>Background variables include <code>sex</code> and <code>race</code> of the respondent
+(GR), typically treated as explanatory, so that any model for the full table
+should include the term <code>sex:race</code>. Models for the reduced table,
+collapsed over <code>sex</code> and <code>race</code> are not entirely unreasonable, but
+don't permit the estimation of the effects of these variables on the
+responses.
 </p>
-<p>The full 5-way table contains a number of cells with counts of 0 or 1,
-as well as many cells with large counts, and even the ACM table
-collapsed over GR has some small cell counts.  Consequently, 
-residuals for these models in mosaic displays are best represented
-as standardized (adjusted) residuals.
+<p>The full 5-way table contains a number of cells with counts of 0 or 1, as
+well as many cells with large counts, and even the ACM table collapsed over
+GR has some small cell counts.  Consequently, residuals for these models in
+mosaic displays are best represented as standardized (adjusted) residuals.
 </p>
 
 
 <h3>Source</h3>
 
-<p>Agresti, A. (2002). <em>Categorical Data Analysis</em>, 2nd Ed.,
-New York: Wiley-Interscience, Table 9.1, p. 362.
+<p>Agresti, A. (2002). <em>Categorical Data Analysis</em>, 2nd Ed., New
+York: Wiley-Interscience, Table 9.1, p. 362.
 </p>
 
 
 <h3>References</h3>
 
-<p>Thompson, L. (2009). <em>R (and S-PLUS) Manual to Accompany Agresti's Categorical Data</em>,
+<p>Thompson, L. (2009). <em>R (and S-PLUS) Manual to Accompany
+Agresti's Categorical Data</em>,
 http://www.stat.ufl.edu/~aa/cda/Thompson_manual.pdf
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(DaytonSurvey)
+<pre><code class='language-R'>
+data(DaytonSurvey)
 
 # mutual independence
-mod.0  &lt;- glm(Freq ~ ., data=DaytonSurvey, family=poisson)   
+mod.0  &lt;- glm(Freq ~ ., data=DaytonSurvey, family=poisson)
 
 # mutual independence + GR
-mod.GR &lt;- glm(Freq ~ . + sex*race, data=DaytonSurvey, family=poisson)  
+mod.GR &lt;- glm(Freq ~ . + sex*race, data=DaytonSurvey, family=poisson)
 anova(mod.GR, test = "Chisq")
 
 # all two-way terms
-mod.all2way &lt;- glm(Freq ~ .^2, data=DaytonSurvey, family=poisson)  
+mod.all2way &lt;- glm(Freq ~ .^2, data=DaytonSurvey, family=poisson)
 anova(mod.all2way, test = "Chisq")
 
 # compare models
 LRstats(mod.0, mod.GR, mod.all2way)
 
 # collapse over sex and race
-Dayton.ACM &lt;- aggregate(Freq ~ cigarette+alcohol+marijuana, 
-                        data=DaytonSurvey, 
+Dayton.ACM &lt;- aggregate(Freq ~ cigarette+alcohol+marijuana,
+                        data=DaytonSurvey,
                         FUN=sum)
 Dayton.ACM
+
 </code></pre>
 
 </main>

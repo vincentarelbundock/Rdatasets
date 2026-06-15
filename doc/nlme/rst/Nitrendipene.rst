@@ -1,38 +1,34 @@
-.. container::
+============ ===============
+Nitrendipene R Documentation
+============ ===============
 
-   .. container::
+Assay of nitrendipene
+---------------------
 
-      ============ ===============
-      Nitrendipene R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Assay of nitrendipene
-         :name: assay-of-nitrendipene
+The ``Nitrendipene`` data frame has 89 rows and 4 columns.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      The ``Nitrendipene`` data frame has 89 rows and 4 columns.
+This data frame contains the following columns:
 
-      .. rubric:: Format
-         :name: format
+activity
+   a numeric vector
 
-      This data frame contains the following columns:
+NIF
+   a numeric vector
 
-      activity
-         a numeric vector
+Tissue
+   an ordered factor with levels ``2`` < ``1`` < ``3`` < ``4``
 
-      NIF
-         a numeric vector
+log.NIF
+   a numeric vector
 
-      Tissue
-         an ordered factor with levels ``2`` < ``1`` < ``3`` < ``4``
+Source
+~~~~~~
 
-      log.NIF
-         a numeric vector
-
-      .. rubric:: Source
-         :name: source
-
-      Bates, D. M. and Watts, D. G. (1988), *Nonlinear Regression
-      Analysis and Its Applications*, Wiley, New York.
+Bates, D. M. and Watts, D. G. (1988), *Nonlinear Regression Analysis and
+Its Applications*, Wiley, New York.

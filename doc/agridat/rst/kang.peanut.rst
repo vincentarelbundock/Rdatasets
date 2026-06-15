@@ -1,101 +1,93 @@
-.. container::
+=========== ===============
+kang.peanut R Documentation
+=========== ===============
 
-   .. container::
+Multi-environment trial of peanuts for 10 genotypes in 15 environments
+----------------------------------------------------------------------
 
-      =========== ===============
-      kang.peanut R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Multi-environment trial of peanuts for 10 genotypes in
-         15 environments
-         :name: multi-environment-trial-of-peanuts-for-10-genotypes-in-15-environments
+Peanut yields for 10 genotypes in 15 environments
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Peanut yields for 10 genotypes in 15 environments
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("kang.peanut")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("kang.peanut")
+A data frame with 590 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``gen``
+   genotype factor, 10 levels
 
-      A data frame with 590 observations on the following 4 variables.
+``rep``
+   replicate factor, 4 levels
 
-      ``gen``
-         genotype factor, 10 levels
+``yield``
+   yield
 
-      ``rep``
-         replicate factor, 4 levels
+``env``
+   environment factor, 15 levels
 
-      ``yield``
-         yield
+Details
+~~~~~~~
 
-      ``env``
-         environment factor, 15 levels
+Florman, Tegua, mf484, mf485, mf487, mf489 have a long crop cycle. The
+others have a short crop cycle.
 
-      .. rubric:: Details
-         :name: details
+This data is also likely used in Casanoves et al 2005, "Evaluation of
+Multienvironment Trials of Peanut Cultivars", but this appears to be a
+slightly smaller subset (only 10 genotypes, and perhaps only the years
+96,97,98,99). Based on the d.f. in their table 5, it appears that
+environment E13 was grown in 1998. (5 loc \* (4-1) = 15, but the table
+has 14, and 98-99 had only 3 reps instead of 4 reps.)
 
-      Florman, Tegua, mf484, mf485, mf487, mf489 have a long crop cycle.
-      The others have a short crop cycle.
+Data from National Institute of Agricultural Technology, Argentina.
 
-      This data is also likely used in Casanoves et al 2005, "Evaluation
-      of Multienvironment Trials of Peanut Cultivars", but this appears
-      to be a slightly smaller subset (only 10 genotypes, and perhaps
-      only the years 96,97,98,99). Based on the d.f. in their table 5,
-      it appears that environment E13 was grown in 1998. (5 loc \* (4-1)
-      = 15, but the table has 14, and 98-99 had only 3 reps instead of 4
-      reps.)
+Source
+~~~~~~
 
-      Data from National Institute of Agricultural Technology,
-      Argentina.
+M. S. Kang, M. Balzarini, and J. L. L. Guerra (2004).
+Genotype-by-environment interaction". In: A. Saxton (2004). "Genetic
+Analysis of Complex Traits Using SAS".
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      M. S. Kang, M. Balzarini, and J. L. L. Guerra (2004).
-      Genotype-by-environment interaction". In: A. Saxton (2004).
-      "Genetic Analysis of Complex Traits Using SAS".
+Johannes Forkman, Julie Josse, Hans-Peter Piepho (2019). Hypothesis
+Tests for Principal Component Analysis When Variables are Standardized.
+*JABES* https://doi.org/10.1007/s13253-019-00355-5
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Johannes Forkman, Julie Josse, Hans-Peter Piepho (2019).
-      Hypothesis Tests for Principal Component Analysis When Variables
-      are Standardized. *JABES*
-      https://doi.org/10.1007/s13253-019-00355-5
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(kang.peanut)
+   dat <- kang.peanut
 
-         ## Not run: 
+   # Table 5.1 of Kang et al. (Chapter 5 of Saxton)
+   libs(reshape2)
+   Y0 <- acast(dat, env~gen, value.var='yield', fun=mean)
+   round(Y0,2)
 
-         library(agridat)
-         data(kang.peanut)
-         dat <- kang.peanut
+   # GGE biplot of Kang, p. 82.
+   libs(gge)
+   m1 <- gge(dat, yield~gen*env, scale=FALSE)
+   biplot(m1, flip=c(1,1), main="kang.peanut - GGE biplot")
 
-         # Table 5.1 of Kang et al. (Chapter 5 of Saxton)
-         libs(reshape2)
-         Y0 <- acast(dat, env~gen, value.var='yield', fun=mean)
-         round(Y0,2)
-
-         # GGE biplot of Kang, p. 82.
-         libs(gge)
-         m1 <- gge(dat, yield~gen*env, scale=FALSE)
-         biplot(m1, flip=c(1,1), main="kang.peanut - GGE biplot")
-
-         # Forkman 2019, fig 2
-         # m2 <- gge(dat, yield~gen*env, scale=TRUE)
-         # biplot(m2, main="kang.peanut - GGE biplot")
-         # biplot(m2, comps=3:4, main="kang.peanut - GGE biplot")
+   # Forkman 2019, fig 2
+   # m2 <- gge(dat, yield~gen*env, scale=TRUE)
+   # biplot(m2, main="kang.peanut - GGE biplot")
+   # biplot(m2, comps=3:4, main="kang.peanut - GGE biplot")
 
 
-         ## End(Not run)
+   ## End(Not run)

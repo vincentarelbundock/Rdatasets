@@ -1,0 +1,117 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of lupin in Portugal</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>oliveira.lupin.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of lupin in Portugal
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of lupin in Portugal
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("oliveira.lupin.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 400 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row ordinate</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column ordinate</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield per plot, a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>From Google translate:
+</p>
+<p>p 214 The material for the present uniformity study consists of 400
+plots of sweet lupin, each 5 meters long and spaced approximately 0.50
+m apart, collected separately from a field of that legume cultivated
+on sheet A2 of the field at Quinta na Aldeia, in Sacavém (Portugal),
+during the agricultural year 1943-1944 (Table A). As a previous crop,
+the land had been planted with another lupin. Line sowing was done
+using approximately 10 grams per 5 meter row; the rows were spaced
+end to end by 0.60 meter spacing. There were, from the beginning, a
+number of series of 5 m lines ; but for our study we only considered
+the part of the field that seemed most homogeneous, which was made up
+of 10 series of 40 lines each (Table A). Line 0 of all the series was
+quite depleted and, therefore we excluded it.
+</p>
+<p>In a small area of series 8, on the north side, blue lupin plants
+appeared, which were also eliminated during that cleaning, and until
+then there had been some competition with the sweet lupin plants.
+</p>
+<p>The 1943/44 agricultural year was unfavorable for Lupinus luteus
+L. ... resulting in very low production.
+</p>
+<p>Field width: 10 series x 5m plots + 9 x .6m spacing = 55.4 m
+</p>
+<p>Field length: 40 rows * 0.5 m = 20 m
+</p>
+<p>p 226b Table A, Number of plants and production (grams) of 400 plots of Lupinus Luteus L.
+</p>
+<p>Transcription details: Variously OCR and checked, or typed by K.Wright.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Oliveira, Augusto (1945).
+Ensaios de uniformidade: Estudio preliminar com lupinus luteus L., em Sacavem.
+Agronomia Lusitana, 7, 207-244.
+https://archive.org/details/agronomia-lusitana_1945_7_3/
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+library(agridat)
+data(oliveira.lupin.uniformity)
+dat &lt;- oliveira.lupin.uniformity
+
+require(desplot)
+desplot(dat, yield ~ col*row,
+        flip=TRUE, aspect=20/50, tick=TRUE,
+        main="oliveira.lupin.uniformity")
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html><html><head><title>R: A uniformity trial of maize in Ghana.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>beckett.maize.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+A uniformity trial of maize in Ghana.
+</h2>
+
+<h3>Description</h3>
+
+<p>A uniformity trial of maize in Ghana.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("beckett.maize.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 83 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt><code>plot</code></dt><dd><p>plot number</p>
+</dd>
+<dt><code>row</code></dt><dd><p>row ordinate</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column ordinate</p>
+</dd>
+<dt><code>germination</code></dt><dd><p>germination count</p>
+</dd>
+<dt><code>earnum</code></dt><dd><p>number of ears per plot</p>
+</dd>
+<dt><code>earwt</code></dt><dd><p>ear weight per plot</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>grain yield per plot, pounds</p>
+</dd>
+<dt><code>stalks</code></dt><dd><p>number of stalks per plot</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Experiment at the Asuansi Experiment Station (Ghana).
+Each plot is 1/40 acre, square in shape, 33 x 33 feet.
+Seed was sown in 23 March 1928, four seeds per hole.
+Holes were 3 feet by 3 feet, giving 121 stands/hills per plot.
+Germination data collected 3-4 April.
+Counts of stalks were made 23 May, but
+&quot;reliance is not attached to these figures&quot;.
+Harvesting was done 16-17 August.
+Due to staff shortages, only 15 plots chosen at random were measured
+for ears and yield.
+</p>
+<p>Field width: 6 plots * 33 feet = 198 feet
+</p>
+<p>Field length: 19 plots * 33 feet = 627 feet
+</p>
+<p>Transcription details: Data typed by hand and checked by K.Wright
+2024.12.06.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Beckett, W.H.; Fletcher, S.R.B. (1929).
+A uniformity trial with maize.
+Gold Coast Dept Agric Bull 16: 222-226.
+https://babel.hathitrust.org/cgi/pt?id=coo.31924066682166&amp;seq=470
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+  libs(agridat)
+  data(beckett.maize.uniformity)
+  dat &lt;- beckett.maize.uniformity
+  
+  # QC. germination, earnum match published values.
+  # stalks published value is 33091, but here 33101. (Data were hand-checked)
+  colSums(dat)
+
+  # Examine correlations. earwt,yield high cor
+  pairs(dat[ , c("germination","stalks","earnum","earwt","yield")])
+
+  libs(desplot)
+  desplot(dat, germination ~ col*row,
+          flip=TRUE, aspect=19/6,
+          main="beckett.maize.uniformity - stalks")
+  desplot(dat, yield ~ col*row,
+          flip=TRUE, aspect=19/6,
+          main="beckett.maize.uniformity - yield")
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

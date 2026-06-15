@@ -1,107 +1,103 @@
-.. container::
+======= ===============
+spotify R Documentation
+======= ===============
 
-   .. container::
+Spotify Song Data
+-----------------
 
-      ======= ===============
-      spotify R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Spotify Song Data
-         :name: spotify-song-data
+A sub-sample of the Spotify song data originally collected by Kaylin
+Pavlik (kaylinquest) and distributed through the R for Data Science
+TidyTuesday project.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A sub-sample of the Spotify song data originally collected by
-      Kaylin Pavlik (kaylinquest) and distributed through the R for Data
-      Science TidyTuesday project.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   spotify
 
-      .. code:: R
+Format
+~~~~~~
 
-         spotify
+A data frame with 350 songs (or tracks) and 23 variables:
 
-      .. rubric:: Format
-         :name: format
+track_id
+   unique song identifier
 
-      A data frame with 350 songs (or tracks) and 23 variables:
+title
+   song name
 
-      track_id
-         unique song identifier
+artist
+   song artist
 
-      title
-         song name
+popularity
+   song popularity from 0 (low) to 100 (high)
 
-      artist
-         song artist
+album_id
+   id of the album on which the song appears
 
-      popularity
-         song popularity from 0 (low) to 100 (high)
+album_name
+   name of the album on which the song appears
 
-      album_id
-         id of the album on which the song appears
+album_release_date
+   when the album was released
 
-      album_name
-         name of the album on which the song appears
+playlist_name
+   Spotify playlist on which the song appears
 
-      album_release_date
-         when the album was released
+playlist_id
+   unique playlist identifier
 
-      playlist_name
-         Spotify playlist on which the song appears
+genre
+   genre of the playlist
 
-      playlist_id
-         unique playlist identifier
+subgenre
+   subgenre of the playlist
 
-      genre
-         genre of the playlist
+danceability
+   a score from 0 (not danceable) to 100 (danceable) based on features
+   such as tempo, rhythm, etc.
 
-      subgenre
-         subgenre of the playlist
+energy
+   a score from 0 (low energy) to 100 (high energy) based on features
+   such as loudness, timbre, entropy, etc.
 
-      danceability
-         a score from 0 (not danceable) to 100 (danceable) based on
-         features such as tempo, rhythm, etc.
+key
+   song key
 
-      energy
-         a score from 0 (low energy) to 100 (high energy) based on
-         features such as loudness, timbre, entropy, etc.
+loudness
+   song loudness (dB)
 
-      key
-         song key
+mode
+   0 (minor key) or 1 (major key)
 
-      loudness
-         song loudness (dB)
+speechiness
+   a score from 0 (non-speechy tracks) to 100 (speechy tracks)
 
-      mode
-         0 (minor key) or 1 (major key)
+acousticness
+   a score from 0 (not acoustic) to 100 (very acoustic)
 
-      speechiness
-         a score from 0 (non-speechy tracks) to 100 (speechy tracks)
+instrumentalness
+   a score from 0 (not instrumental) to 100 (very instrumental)
 
-      acousticness
-         a score from 0 (not acoustic) to 100 (very acoustic)
+liveness
+   a score from 0 (no live audience presence on the song) to 100 (strong
+   live audience presence on the song)
 
-      instrumentalness
-         a score from 0 (not instrumental) to 100 (very instrumental)
+valence
+   a score from 0 (the song is more negative, sad, angry) to 100 (the
+   song is more positive, happy, euphoric)
 
-      liveness
-         a score from 0 (no live audience presence on the song) to 100
-         (strong live audience presence on the song)
+tempo
+   song tempo (beats per minute)
 
-      valence
-         a score from 0 (the song is more negative, sad, angry) to 100
-         (the song is more positive, happy, euphoric)
+duration_ms
+   song duration (ms)
 
-      tempo
-         song tempo (beats per minute)
+Source
+~~~~~~
 
-      duration_ms
-         song duration (ms)
-
-      .. rubric:: Source
-         :name: source
-
-      https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-01-21/spotify_songs.csv/.
+https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-01-21/spotify_songs.csv/.

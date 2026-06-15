@@ -1,63 +1,59 @@
-.. container::
+==== ===============
+corn R Documentation
+==== ===============
 
-   .. container::
+corn
+----
 
-      ==== ===============
-      corn R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: corn
-         :name: corn
+Wooldridge Source: G.E. Battese, R.M. Harter, and W.A. Fuller (1988),
+“An Error-Components Model for Prediction of County Crop Areas Using
+Survey and Satellite Data,” Journal of the American Statistical
+Association 83, 28-36. This small data set is reported in the article.
+Data loads lazily.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Wooldridge Source: G.E. Battese, R.M. Harter, and W.A. Fuller
-      (1988), “An Error-Components Model for Prediction of County Crop
-      Areas Using Survey and Satellite Data,” Journal of the American
-      Statistical Association 83, 28-36. This small data set is reported
-      in the article. Data loads lazily.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data('corn')
 
-      .. code:: R
+Format
+~~~~~~
 
-         data('corn')
+A data.frame with 37 observations on 5 variables:
 
-      .. rubric:: Format
-         :name: format
+- **county:** county number
 
-      A data.frame with 37 observations on 5 variables:
+- **cornhec:** corn per hectare
 
-      -  **county:** county number
+- **soyhec:** soybeans per hectare
 
-      -  **cornhec:** corn per hectare
+- **cornpix:** corn pixels per hectare
 
-      -  **soyhec:** soybeans per hectare
+- **soypix:** soy pixels per hectare
 
-      -  **cornpix:** corn pixels per hectare
+Notes
+~~~~~
 
-      -  **soypix:** soy pixels per hectare
+You could use these data to illustrate simple regression when the
+population intercept should be zero: no corn pixels should predict no
+corn planted. The same can be done with the soybean measures in the data
+set.
 
-      .. rubric:: Notes
-         :name: notes
+Used in Text: pages 791-792
 
-      You could use these data to illustrate simple regression when the
-      population intercept should be zero: no corn pixels should predict
-      no corn planted. The same can be done with the soybean measures in
-      the data set.
+Source
+~~~~~~
 
-      Used in Text: pages 791-792
+https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-          str(corn)
+    str(corn)

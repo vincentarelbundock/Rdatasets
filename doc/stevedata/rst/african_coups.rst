@@ -1,186 +1,173 @@
-.. container::
+============= ===============
+african_coups R Documentation
+============= ===============
 
-   .. container::
+Modeling Coups in Africa, 1960 to 1975 (1982)
+---------------------------------------------
 
-      ============= ===============
-      african_coups R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Modeling Coups in Africa, 1960 to 1975 (1982)
-         :name: modeling-coups-in-africa-1960-to-1975-1982
+A data set on modeling coups in Africa using data from the period
+between 1960 and 1975 (1982). These data offer a partial replication of
+Jackman (1978).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A data set on modeling coups in Africa using data from the period
-      between 1960 and 1975 (1982). These data offer a partial
-      replication of Jackman (1978).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   african_coups
 
-      .. code:: R
+Format
+~~~~~~
 
-         african_coups
+A data frame with the following 11 variables.
 
-      .. rubric:: Format
-         :name: format
+``iso3c``
+   a three-character ISO code for state identification
 
-      A data frame with the following 11 variables.
+``country``
+   an English country name
 
-      ``iso3c``
-         a three-character ISO code for state identification
+``jci``
+   Jackman's (1978) coup index from 1960 to 1975
 
-      ``country``
-         an English country name
+``tmis``
+   Johnson et al.'s (1984) total military involvement score
 
-      ``jci``
-         Jackman's (1978) coup index from 1960 to 1975
+``agperc``
+   an estimate of the percentage of the country's labor force in
+   agriculture and animal husbandry
 
-      ``tmis``
-         Johnson et al.'s (1984) total military involvement score
+``indperc``
+   an estimate of the percentage of the country's labor force in
+   industry
 
-      ``agperc``
-         an estimate of the percentage of the country's labor force in
-         agriculture and animal husbandry
+``literacy_cnts``
+   an estimate of countrywide literacy from around 1965
 
-      ``indperc``
-         an estimate of the percentage of the country's labor force in
-         industry
+``literacy_ba``
+   another estimate of countrywide literacy from around 1965
 
-      ``literacy_cnts``
-         an estimate of countrywide literacy from around 1965
+``leperc``
+   an estimate of the size of the largest ethnic group, as a percentage
 
-      ``literacy_ba``
-         another estimate of countrywide literacy from around 1965
+``partydom``
+   the percentage of the vote received by the largest party in the
+   country prior to independence
 
-      ``leperc``
-         an estimate of the size of the largest ethnic group, as a
-         percentage
+``turnout``
+   the turnout (as a percentage) at the independence referendum
 
-      ``partydom``
-         the percentage of the vote received by the largest party in the
-         country prior to independence
+Details
+~~~~~~~
 
-      ``turnout``
-         the turnout (as a percentage) at the independence referendum
+Data exist for instructional purposes, especially about modeling
+interactions. Reading Jackman (1978) and Johnson et al. (1984) will
+provide more information about the data and hypotheses. There was a
+follow-up symposium on this in 1986 in *American Political Science
+Review* that may be an interesting read and provide even more context
+about what's at stake in this debate.
 
-      .. rubric:: Details
-         :name: details
+English country names are country names from around the time of
+publication. Take note of older names of "Dahomey", "Swaziland", "Upper
+Volta", and "Zaire." The three-character ISO codes are current, mostly
+for ease of doing other things with the data. However, this comes with
+the acknowledgment that Dahomey and Zaire used to have different ISO
+codes under their older names. Both codes for Dahomey (``DHY``) and
+Zaire (``ZAR``) were retired in 1977 and 1997, respectively.
 
-      Data exist for instructional purposes, especially about modeling
-      interactions. Reading Jackman (1978) and Johnson et al. (1984)
-      will provide more information about the data and hypotheses. There
-      was a follow-up symposium on this in 1986 in *American Political
-      Science Review* that may be an interesting read and provide even
-      more context about what's at stake in this debate.
+Ideally, I'd have Morrison's (1972) *Black Africa*, but I do not. I have
+a copy of a 1989 update, though. That's what I consulted in constructing
+this data set.
 
-      English country names are country names from around the time of
-      publication. Take note of older names of "Dahomey", "Swaziland",
-      "Upper Volta", and "Zaire." The three-character ISO codes are
-      current, mostly for ease of doing other things with the data.
-      However, this comes with the acknowledgment that Dahomey and Zaire
-      used to have different ISO codes under their older names. Both
-      codes for Dahomey (``DHY``) and Zaire (``ZAR``) were retired in
-      1977 and 1997, respectively.
+Jackman (1978) is deceptively opaque on what he's doing for the ethnic
+group variable and arguably misleads on what his turnout variable is
+actually from. In the case of the ethnic group variable, it's the
+difference between saying the largest ethnic group in Rwanda is 98% of
+the population versus 80% of the population. In short, it's the
+difference of saying whether there are any Tutsi at all in the country.
+Basically, I'm uncertain with what he's doing with what Morrison et al.
+(1989) define as "ethnic clusters".
 
-      Ideally, I'd have Morrison's (1972) *Black Africa*, but I do not.
-      I have a copy of a 1989 update, though. That's what I consulted in
-      constructing this data set.
+Related: the agricultural variable is a midway point between columns B
+and columns C in Table 3.11 of Morrison et al. (1989). I do not think
+this is too far removed from what Jackman was looking at in an older
+version of the same data, but there will be slight differences. It's the
+difference of "these variables came from 1966" versus "this is an
+interpolation of 1960 to 1970". The latter is what I offer here. I can
+only do so much.
 
-      Jackman (1978) is deceptively opaque on what he's doing for the
-      ethnic group variable and arguably misleads on what his turnout
-      variable is actually from. In the case of the ethnic group
-      variable, it's the difference between saying the largest ethnic
-      group in Rwanda is 98% of the population versus 80% of the
-      population. In short, it's the difference of saying whether there
-      are any Tutsi at all in the country. Basically, I'm uncertain with
-      what he's doing with what Morrison et al. (1989) define as "ethnic
-      clusters".
+To continue this theme of the opacity in trying to reconstruct the data,
+Jackman (1978, p. 1265) says his social mobilization index incorporates
+the percentage of the labor force that is not employed in agriculture.
+The summary statistics he provides in fn. 4 on p. 1265 are consistent
+with this, at least (for the most part) in this reconstruction of the
+data. However, other statistical results and other language from Jackman
+are consistent with him using the percentage of the labor force that is
+employed in industry. This is not a trivial distinction either. Using
+the percentage of the country's labor force in industry would, in a
+literal sense, not strictly be "the simple sum of the percentage of the
+labor force in nonagricultural occupations". It would exclude those
+working in service industries. The data provide the opportunity to use
+either the industrial percentage variable or to manually create a
+non-agricultural labor force percentage variable as the difference
+between 100 and the agricultural labor force percentage variable. It
+makes the most sense to do the latter. The industry percentage variable
+comes from Table 3.14 in Morrison et al. (1989) and is likewise a midway
+point between 1960 and 1970.
 
-      Related: the agricultural variable is a midway point between
-      columns B and columns C in Table 3.11 of Morrison et al. (1989). I
-      do not think this is too far removed from what Jackman was looking
-      at in an older version of the same data, but there will be slight
-      differences. It's the difference of "these variables came from
-      1966" versus "this is an interpolation of 1960 to 1970". The
-      latter is what I offer here. I can only do so much.
+Mercifully, the coup variables come from a replication by Johnson et al.
+(1984). Based on Morrison et al.'s (1989) updated data, it's not clear
+how Jackman could've derived some of these estimates using the formula
+he said he used. For example, Benin should have a score of 39 based on
+the information in Table 2.10 (p. 373 in Morrison et al. (1989)).
+Cameroon should have a 1 and not a 2, per Table 5.10 (p. 399). My
+comments here work under the assumption that Morrison et al. are adding
+information and not revising information in the second edition of the
+*Black Africa* handbook.
 
-      To continue this theme of the opacity in trying to reconstruct the
-      data, Jackman (1978, p. 1265) says his social mobilization index
-      incorporates the percentage of the labor force that is not
-      employed in agriculture. The summary statistics he provides in fn.
-      4 on p. 1265 are consistent with this, at least (for the most
-      part) in this reconstruction of the data. However, other
-      statistical results and other language from Jackman are consistent
-      with him using the percentage of the labor force that is employed
-      in industry. This is not a trivial distinction either. Using the
-      percentage of the country's labor force in industry would, in a
-      literal sense, not strictly be "the simple sum of the percentage
-      of the labor force in nonagricultural occupations". It would
-      exclude those working in service industries. The data provide the
-      opportunity to use either the industrial percentage variable or to
-      manually create a non-agricultural labor force percentage variable
-      as the difference between 100 and the agricultural labor force
-      percentage variable. It makes the most sense to do the latter. The
-      industry percentage variable comes from Table 3.14 in Morrison et
-      al. (1989) and is likewise a midway point between 1960 and 1970.
+To be more precise, both the Jackman coup index and total military
+involvement variables are directly copied from Table 2 in Johnson et al.
+(1984) on p. 627. Missingness in the Jackman coup index variable
+communicates the country was not included in his original study, but was
+included in the Johnson et al. replication.
 
-      Mercifully, the coup variables come from a replication by Johnson
-      et al. (1984). Based on Morrison et al.'s (1989) updated data,
-      it's not clear how Jackman could've derived some of these
-      estimates using the formula he said he used. For example, Benin
-      should have a score of 39 based on the information in Table 2.10
-      (p. 373 in Morrison et al. (1989)). Cameroon should have a 1 and
-      not a 2, per Table 5.10 (p. 399). My comments here work under the
-      assumption that Morrison et al. are adding information and not
-      revising information in the second edition of the *Black Africa*
-      handbook.
+The literacy variables have suffices communicating where I obtained
+them. The Cross-National Time Series Database has a variable effectively
+communicating this information that I was using first in trying to
+recreate these data. These data come from 1965 in that data set. Jackman
+and Johnson et al. are assuredly using Morrison's almanac. That
+information is in Table 4.11 of Morrison et al. (1989), though it's
+possible the estimates contained therein are slightly different than
+what was reported in the first edition. I cannot know for sure.
 
-      To be more precise, both the Jackman coup index and total military
-      involvement variables are directly copied from Table 2 in Johnson
-      et al. (1984) on p. 627. Missingness in the Jackman coup index
-      variable communicates the country was not included in his original
-      study, but was included in the Johnson et al. replication.
+Ethiopia is conspicuously missing in the party dominance variable.
+That's by design, and apparently its omission warranted ample discussion
+both by Jackman (1978) and Johnson et al. (1984). Johnson et al. (1984,
+fns. 4,5) argue it's a curious choice that can situationally influence
+the results that Jackman reports, but there are also lots of other
+choices made by Jackman (1978) that can influence these results.
 
-      The literacy variables have suffices communicating where I
-      obtained them. The Cross-National Time Series Database has a
-      variable effectively communicating this information that I was
-      using first in trying to recreate these data. These data come from
-      1965 in that data set. Jackman and Johnson et al. are assuredly
-      using Morrison's almanac. That information is in Table 4.11 of
-      Morrison et al. (1989), though it's possible the estimates
-      contained therein are slightly different than what was reported in
-      the first edition. I cannot know for sure.
+I am 99.9% sure the turnout variable is Table 5.9 in Morrison et al.
+(1989). Jackman (1978) says this is from *before* independence but I'm
+confident he meant it was the turnout at the independence referendum.
 
-      Ethiopia is conspicuously missing in the party dominance variable.
-      That's by design, and apparently its omission warranted ample
-      discussion both by Jackman (1978) and Johnson et al. (1984).
-      Johnson et al. (1984, fns. 4,5) argue it's a curious choice that
-      can situationally influence the results that Jackman reports, but
-      there are also lots of other choices made by Jackman (1978) that
-      can influence these results.
+References
+~~~~~~~~~~
 
-      I am 99.9% sure the turnout variable is Table 5.9 in Morrison et
-      al. (1989). Jackman (1978) says this is from *before* independence
-      but I'm confident he meant it was the turnout at the independence
-      referendum.
+Jackman, Robert W. 1978. "The Predictability of Coups d'etat: A Model
+with African Data." *American Political Science Review* 72(4): 1262-75.
 
-      .. rubric:: References
-         :name: references
+Jackman, Robert W., Rosemary H. T. O'Kane, Thomas H. Johnson, Pat
+McGowan, and Robert O. Slater. 1986. "Explaining African Coups d'Etat."
+*American Political Science Review* 80(1): 225-49.
 
-      Jackman, Robert W. 1978. "The Predictability of Coups d'etat: A
-      Model with African Data." *American Political Science Review*
-      72(4): 1262-75.
+Johnson, Thomas H., Robert O. Slater, and Pat McGowan. 1984. "Explaining
+African Military Coups d'Etat, 1960-1982." *American Political Science
+Review* 78(3): 622-40.
 
-      Jackman, Robert W., Rosemary H. T. O'Kane, Thomas H. Johnson, Pat
-      McGowan, and Robert O. Slater. 1986. "Explaining African Coups
-      d'Etat." *American Political Science Review* 80(1): 225-49.
-
-      Johnson, Thomas H., Robert O. Slater, and Pat McGowan. 1984.
-      "Explaining African Military Coups d'Etat, 1960-1982." *American
-      Political Science Review* 78(3): 622-40.
-
-      Morrison, Donald George, Robert Cameron Mitchell, and John Naber
-      Paden. 1989. *Black Africa: A Comparative Handbook* (2nd ed.). New
-      York, NY: The Free Press.
+Morrison, Donald George, Robert Cameron Mitchell, and John Naber Paden.
+1989. *Black Africa: A Comparative Handbook* (2nd ed.). New York, NY:
+The Free Press.

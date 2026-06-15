@@ -1,81 +1,75 @@
-.. container::
+========== ===============
+bike_users R Documentation
+========== ===============
 
-   .. container::
+Capital Bikeshare Bike Ridership (Registered and Casual Riders)
+---------------------------------------------------------------
 
-      ========== ===============
-      bike_users R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Capital Bikeshare Bike Ridership (Registered and
-         Casual Riders)
-         :name: capital-bikeshare-bike-ridership-registered-and-casual-riders
+Data on ridership among registered members and casual users of the
+Capital Bikeshare service in Washington, D.C..
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data on ridership among registered members and casual users of the
-      Capital Bikeshare service in Washington, D.C..
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   bike_users
 
-      .. code:: R
+Format
+~~~~~~
 
-         bike_users
+A data frame with 534 daily observations, 267 each for registered riders
+and casual riders, and 13 variables:
 
-      .. rubric:: Format
-         :name: format
+date
+   date of observation
 
-      A data frame with 534 daily observations, 267 each for registered
-      riders and casual riders, and 13 variables:
+season
+   fall, spring, summer, or winter
 
-      date
-         date of observation
+year
+   the year of the date
 
-      season
-         fall, spring, summer, or winter
+month
+   the month of the date
 
-      year
-         the year of the date
+day_of_week
+   the day of the week
 
-      month
-         the month of the date
+weekend
+   whether or not the date falls on a weekend (TRUE or FALSE)
 
-      day_of_week
-         the day of the week
+holiday
+   whether or not the date falls on a holiday (yes or no)
 
-      weekend
-         whether or not the date falls on a weekend (TRUE or FALSE)
+temp_actual
+   raw temperature (degrees Fahrenheit)
 
-      holiday
-         whether or not the date falls on a holiday (yes or no)
+temp_feel
+   what the temperature feels like (degrees Fahrenheit)
 
-      temp_actual
-         raw temperature (degrees Fahrenheit)
+humidity
+   humidity level (percentage)
 
-      temp_feel
-         what the temperature feels like (degrees Fahrenheit)
+windspeed
+   wind speed (miles per hour)
 
-      humidity
-         humidity level (percentage)
+weather_cat
+   weather category (categ1 = pleasant, categ2 = moderate, categ3 =
+   severe)
 
-      windspeed
-         wind speed (miles per hour)
+user
+   rider type (casual or registered)
 
-      weather_cat
-         weather category (categ1 = pleasant, categ2 = moderate, categ3
-         = severe)
+rides
+   number of bikeshare rides
 
-      user
-         rider type (casual or registered)
+Source
+~~~~~~
 
-      rides
-         number of bikeshare rides
-
-      .. rubric:: Source
-         :name: source
-
-      Fanaee-T, Hadi and Gama, Joao (2013). Event labeling combining
-      ensemble detectors and background knowledge. Progress in
-      Artificial Intelligence.
-      https://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset/
+Fanaee-T, Hadi and Gama, Joao (2013). Event labeling combining ensemble
+detectors and background knowledge. Progress in Artificial Intelligence.
+https://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset/

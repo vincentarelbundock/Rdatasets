@@ -1,80 +1,70 @@
-.. container::
+====== ===============
+Mental R Documentation
+====== ===============
 
-   .. container::
+Mental Impairment and Parents SES
+---------------------------------
 
-      ====== ===============
-      Mental R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Mental Impairment and Parents SES
-         :name: mental-impairment-and-parents-ses
+A 6 x 4 contingency table representing the cross-classification of
+mental health status (``mental``) of 1660 young New York residents by
+their parents' socioeconomic status (``ses``).
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      A 6 x 4 contingency table representing the cross-classification of
-      mental health status (``mental``) of 1660 young New York residents
-      by their parents' socioeconomic status (``ses``).
+A data frame frequency table with 24 observations on the following 3
+variables.
 
-      .. rubric:: Usage
-         :name: usage
+``ses``
+   an ordered factor with levels ``1`` < ``2`` < ``3`` < ``4`` < ``5`` <
+   ``6``
 
-      .. code:: R
+``mental``
+   an ordered factor with levels ``Well`` < ``Mild`` < ``Moderate`` <
+   ``Impaired``
 
-         data(Mental)
+``Freq``
+   cell frequency: a numeric vector
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      A data frame frequency table with 24 observations on the following
-      3 variables.
+Both ``ses`` and ``mental`` can be treated as ordered factors or integer
+scores. For ``ses``, 1="High" and 6="Low".
 
-      ``ses``
-         an ordered factor with levels ``1`` < ``2`` < ``3`` < ``4`` <
-         ``5`` < ``6``
+Source
+~~~~~~
 
-      ``mental``
-         an ordered factor with levels ``Well`` < ``Mild`` <
-         ``Moderate`` < ``Impaired``
+Haberman, S. J. *The Analysis of Qualitative Data: New Developments*,
+Academic Press, 1979, Vol. II, p. 375.
 
-      ``Freq``
-         cell frequency: a numeric vector
+Srole, L.; Langner, T. S.; Michael, S. T.; Kirkpatrick, P.; Opler, M. K.
+& Rennie, T. A. C. *Mental Health in the Metropolis: The Midtown
+Manhattan Study*, NYU Press, 1978, p. 289
 
-      .. rubric:: Details
-         :name: details
+References
+~~~~~~~~~~
 
-      Both ``ses`` and ``mental`` can be treated as ordered factors or
-      integer scores. For ``ses``, 1="High" and 6="Low".
+Friendly, M. *Visualizing Categorical Data*, Cary, NC: SAS Institute,
+2000, Appendix B.7.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Haberman, S. J. *The Analysis of Qualitative Data: New
-      Developments*, Academic Press, 1979, Vol. II, p. 375.
+.. code:: R
 
-      Srole, L.; Langner, T. S.; Michael, S. T.; Kirkpatrick, P.; Opler,
-      M. K. & Rennie, T. A. C. *Mental Health in the Metropolis: The
-      Midtown Manhattan Study*, NYU Press, 1978, p. 289
 
-      .. rubric:: References
-         :name: references
+   data(Mental)
+   str(Mental)
+   (Mental.tab <- xtabs(Freq ~ ses + mental, data=Mental))
 
-      Friendly, M. *Visualizing Categorical Data*, Cary, NC: SAS
-      Institute, 2000, Appendix B.7.
+   # mosaic and sieve plots
+   mosaic(Mental.tab, gp=shading_Friendly)
+   sieve(Mental.tab, gp=shading_Friendly)
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(Mental)
-         str(Mental)
-         (Mental.tab <- xtabs(Freq ~ ses + mental, data=Mental))
-
-         # mosaic and sieve plots
-         mosaic(Mental.tab, gp=shading_Friendly)
-         sieve(Mental.tab, gp=shading_Friendly)
-
-         if(require(ca)){
-           plot(ca(Mental.tab), main="Mental impairment & SES")
-         }
+   if(require(ca)){
+     plot(ca(Mental.tab), main="Mental impairment & SES", lines=TRUE)
+   }

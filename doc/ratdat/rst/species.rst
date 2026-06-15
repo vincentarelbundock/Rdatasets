@@ -1,45 +1,41 @@
-.. container::
+======= ===============
+species R Documentation
+======= ===============
 
-   .. container::
+Species data.
+-------------
 
-      ======= ===============
-      species R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Species data.
-         :name: species-data.
+Data on species captured at the Portal Project
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data on species captured at the Portal Project
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   species
 
-      .. code:: R
+Format
+~~~~~~
 
-         species
+A data frame with columns:
 
-      .. rubric:: Format
-         :name: format
+species_id
+   Species identifier
 
-      A data frame with columns:
+genus
+   The genus of the species
 
-      species_id
-         Species identifier
+species
+   The latin species name
 
-      genus
-         The genus of the species
+taxa
+   General taxonomic category of the species
 
-      species
-         The latin species name
+Source
+~~~~~~
 
-      taxa
-         General taxonomic category of the species
-
-      .. rubric:: Source
-         :name: source
-
-      Portal Project Teaching Database,
-      `doi:10.6084/m9.figshare.1314459 <https://doi.org/10.6084/m9.figshare.1314459>`__
+Portal Project Teaching Database,
+`doi:10.6084/m9.figshare.1314459 <https://doi.org/10.6084/m9.figshare.1314459>`__

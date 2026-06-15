@@ -1,0 +1,75 @@
+<!DOCTYPE html><html><head><title>R: Traumatic Brain Injury (TBI) Cases by Age Group and Injury...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>TBI_age_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Traumatic Brain Injury (TBI) Cases by Age Group and Injury Mechanism</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, TBI_age_tbl_df, is a tibble containing information from the year 2014
+on traumatic brain injury (TBI) cases across different age groups. The dataset provides
+details on the mechanisms that caused the injuries, the type of injury, the estimated
+number of observed cases, and the estimated rate of cases per 100,000 people.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(TBI_age_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 231 observations and 5 variables:
+</p>
+
+<dl>
+<dt>age_group</dt><dd><p>Age group category (character)</p>
+</dd>
+<dt>type</dt><dd><p>Type of traumatic brain injury (character)</p>
+</dd>
+<dt>injury_mechanism</dt><dd><p>Mechanism by which the injury occurred (character)</p>
+</dd>
+<dt>number_est</dt><dd><p>Estimated number of observed cases in 2014 (numeric)</p>
+</dd>
+<dt>rate_est</dt><dd><p>Estimated rate of cases per 100,000 population in 2014 (numeric)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as TBI_age_tbl_df to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+NeuroDataSets package and assists users in identifying its specific characteristics.
+The suffix tbl_df indicates that the dataset is a tibble (a modern data frame).
+The original content has not been modified in any way. Variable names and values are provided exactly
+as they appear in the source.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from Kaggle: <a href="https://www.kaggle.com/datasets/jessemostipak/traumatic-brain-injury-tbi">https://www.kaggle.com/datasets/jessemostipak/traumatic-brain-injury-tbi</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

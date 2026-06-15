@@ -1,22 +1,18 @@
-.. container::
+==== ===============
+rrji R Documentation
+==== ===============
 
-   .. container::
+internal rrji
+-------------
 
-      ==== ===============
-      rrji R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: internal rrji
-         :name: internal-rrji
+intended for internal use only
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      intended for internal use only
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
-
-      .. code:: R
-
-         rrji
+   rrji

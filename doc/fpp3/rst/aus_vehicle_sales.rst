@@ -1,60 +1,56 @@
-.. container::
+================= ===============
+aus_vehicle_sales R Documentation
+================= ===============
 
-   .. container::
+Australian vehicle sales
+------------------------
 
-      ================= ===============
-      aus_vehicle_sales R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Australian vehicle sales
-         :name: australian-vehicle-sales
+The number of new motor vehicles sold in Australia.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      The number of new motor vehicles sold in Australia.
+Time series of class 'tsibble'
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      Time series of class 'tsibble'
+``aus_vehicle_sales`` contains monthly data with one measured variable:
 
-      .. rubric:: Details
-         :name: details
+========== ===========================
+``Count``: The number of vehicles sold
+           
+========== ===========================
 
-      ``aus_vehicle_sales`` contains monthly data with one measured
-      variable:
+from January 1994 to December 2017 in Australia, indexed by:
 
-      ========== ===========================
-      ``Count``: The number of vehicles sold
-      \          
-      ========== ===========================
+========== ===========
+``Month``: Year-month.
+           
+========== ===========
 
-      from January 1994 to December 2017 in Australia, indexed by:
+Each series is uniquely identified using the key:
 
-      ========== ===========
-      ``Month``: Year-month.
-      \          
-      ========== ===========
++-----------------------------------------------------------------+
+| ``Type``: The type of the vehicle sold (Passenger, SUV, Other). |
++-----------------------------------------------------------------+
+|                                                                 |
++-----------------------------------------------------------------+
 
-      Each series is uniquely identified using the key:
+Source
+~~~~~~
 
-      +-----------------------------------------------------------------+
-      | ``Type``: The type of the vehicle sold (Passenger, SUV, Other). |
-      +-----------------------------------------------------------------+
-      |                                                                 |
-      +-----------------------------------------------------------------+
+Australian Bureau of Statistics.
+https://www.abs.gov.au/statistics/industry/tourism-and-transport/sales-new-motor-vehicles/dec-2017.
+Cat No. 931401.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Australian Bureau of Statistics.
-      https://www.abs.gov.au/statistics/industry/tourism-and-transport/sales-new-motor-vehicles/dec-2017.
-      Cat No. 931401.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         aus_vehicle_sales
+   aus_vehicle_sales

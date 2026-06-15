@@ -1,55 +1,51 @@
-.. container::
+====== ===============
+Strike R Documentation
+====== ===============
 
-   .. container::
+Strike Duration Data
+--------------------
 
-      ====== ===============
-      Strike R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Strike Duration Data
-         :name: strike-duration-data
+a cross-section from 1968 to 1976
 
-      .. rubric:: Description
-         :name: description
+*number of observations* : 62
 
-      a cross-section from 1968 to 1976
+*country* : United States
 
-      *number of observations* : 62
+Usage
+~~~~~
 
-      *country* : United States
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Strike)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Strike)
+A dataframe containing :
 
-      .. rubric:: Format
-         :name: format
+duration
+   strike duration in days
 
-      A dataframe containing :
+prod
+   unanticipated output
 
-      duration
-         strike duration in days
+Source
+~~~~~~
 
-      prod
-         unanticipated output
+Kennan, J. (1985) “The duration of contract strikes in U.S.
+manufacturing”, *Journal of Econometrics*, **28**, 5-28.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Kennan, J. (1985) “The duration of contract strikes in U.S.
-      manufacturing”, *Journal of Econometrics*, **28**, 5-28.
+Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
+https://archive.org/details/econometrics0000haya, Table F22.1.
 
-      .. rubric:: References
-         :name: references
+See Also
+~~~~~~~~
 
-      Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
-      https://archive.org/details/econometrics0000haya, Table F22.1.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-      ``Index.Observations``
+``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+``Index.Observations``

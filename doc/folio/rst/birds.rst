@@ -1,41 +1,37 @@
-.. container::
+===== ===============
+birds R Documentation
+===== ===============
 
-   .. container::
+European Birds
+--------------
 
-      ===== ===============
-      birds R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: European Birds
-         :name: european-birds
+A dataset of birds species abundance in remote European woodlands.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset of birds species abundance in remote European woodlands.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   birds
 
-      .. code:: R
+Format
+~~~~~~
 
-         birds
+A ``data.frame`` with 35 observations (species) and 3 variables
+(woodlands).
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      A ``data.frame`` with 35 observations (species) and 3 variables
-      (woodlands).
+Magurran, A. E. (1988). *Ecological Diversity and its Measurement*.
+Princeton, NJ: Princeton University Press.
+`doi:10.1007/978-94-015-7358-0 <https://doi.org/10.1007/978-94-015-7358-0>`__.
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      Magurran, A. E. (1988). *Ecological Diversity and its
-      Measurement*. Princeton, NJ: Princeton University Press.
-      `doi:10.1007/978-94-015-7358-0 <https://doi.org/10.1007/978-94-015-7358-0>`__.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      Other count data: ``boves``, ``chevelon``, ``compiegne``,
-      ``loire``, ``merzbach``, ``mississippi``, ``zuni``
+Other count data: ``boves``, ``chevelon``, ``compiegne``, ``loire``,
+``merzbach``, ``mississippi``, ``zuni``

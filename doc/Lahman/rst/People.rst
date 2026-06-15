@@ -1,157 +1,150 @@
-.. container::
+====== ===============
+People R Documentation
+====== ===============
 
-   .. container::
+People table
+------------
 
-      ====== ===============
-      People R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: People table
-         :name: people-table
+People table - Player names, DOB, and biographical info. This file is to
+be used to get details about players listed in the ``Batting``,
+``Pitching``, and other files where players are identified only by
+``playerID``.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      People table - Player names, DOB, and biographical info. This file
-      is to be used to get details about players listed in the
-      ``Batting``, ``Pitching``, and other files where players are
-      identified only by ``playerID``.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(People)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(People)
+A data frame with 24270 observations on the following 26 variables.
 
-      .. rubric:: Format
-         :name: format
+``playerID``
+   A unique code assigned to each player. The ``playerID`` links the
+   data in this file with records on players in the other files.
 
-      A data frame with 21271 observations on the following 26
-      variables.
+``birthYear``
+   Year player was born
 
-      ``playerID``
-         A unique code assigned to each player. The ``playerID`` links
-         the data in this file with records on players in the other
-         files.
+``birthMonth``
+   Month player was born
 
-      ``birthYear``
-         Year player was born
+``birthDay``
+   Day player was born
 
-      ``birthMonth``
-         Month player was born
+``birthCountry``
+   Country where player was born
 
-      ``birthDay``
-         Day player was born
+``birthState``
+   State where player was born
 
-      ``birthCountry``
-         Country where player was born
+``birthCity``
+   City where player was born
 
-      ``birthState``
-         State where player was born
+``deathYear``
+   Year player died
 
-      ``birthCity``
-         City where player was born
+``deathMonth``
+   Month player died
 
-      ``deathYear``
-         Year player died
+``deathDay``
+   Day player died
 
-      ``deathMonth``
-         Month player died
+``deathCountry``
+   Country where player died
 
-      ``deathDay``
-         Day player died
+``deathState``
+   State where player died
 
-      ``deathCountry``
-         Country where player died
+``deathCity``
+   City where player died
 
-      ``deathState``
-         State where player died
+``nameFirst``
+   Player's first name
 
-      ``deathCity``
-         City where player died
+``nameLast``
+   Player's last name
 
-      ``nameFirst``
-         Player's first name
+``nameGiven``
+   Player's given name (typically first and middle)
 
-      ``nameLast``
-         Player's last name
+``weight``
+   Player's weight in pounds
 
-      ``nameGiven``
-         Player's given name (typically first and middle)
+``height``
+   Player's height in inches
 
-      ``weight``
-         Player's weight in pounds
+``bats``
+   a factor: Player's batting hand (left (L), right (R), or both (B))
 
-      ``height``
-         Player's height in inches
+``throws``
+   a factor: Player's throwing hand (left(L) or right(R))
 
-      ``bats``
-         a factor: Player's batting hand (left (L), right (R), or both
-         (B))
+``debut``
+   Date that player made first major league appearance
 
-      ``throws``
-         a factor: Player's throwing hand (left(L) or right(R))
+``finalGame``
+   Date that player made first major league appearance (blank if still
+   active)
 
-      ``debut``
-         Date that player made first major league appearance
+``retroID``
+   ID used by retrosheet, https://www.retrosheet.org/
 
-      ``finalGame``
-         Date that player made first major league appearance (blank if
-         still active)
+``bbrefID``
+   ID used by Baseball Reference website,
+   https://www.baseball-reference.com/
 
-      ``retroID``
-         ID used by retrosheet, https://www.retrosheet.org/
+``birthDate``
+   Player's birthdate, in ``as.Date`` format
 
-      ``bbrefID``
-         ID used by Baseball Reference website,
-         https://www.baseball-reference.com/
+``deathDate``
+   Player's deathdate, in ``as.Date`` format
 
-      ``birthDate``
-         Player's birthdate, in ``as.Date`` format
+Details
+~~~~~~~
 
-      ``deathDate``
-         Player's deathdate, in ``as.Date`` format
+``debut``, ``finalGame`` were converted from character strings with
+``as.Date``.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      ``debut``, ``finalGame`` were converted from character strings
-      with ``as.Date``.
+Lahman, S. (2026) Lahman's Baseball Database, 1871-2025, 2026 version,
+https://sabr.org/lahman-database/
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Lahman, S. (2025) Lahman's Baseball Database, 1871-2024, 2025
-      version, https://sabr.org/lahman-database/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   data(People); data(Batting)
 
-      .. code:: R
+   ## add player's name to Batting data
+   People$name <- paste(People$nameFirst, People$nameLast, sep=" ")
+   batting <- merge(Batting, 
+                    People[,c("playerID","name")], 
+                    by="playerID", all.x=TRUE)
 
-         data(People); data(Batting)
+   ## batting and throwing
+   # right-handed batters are much less ambidexterous in throwing than left-handed batters
+   # (should only include batters)
 
-         ## add player's name to Batting data
-         People$name <- paste(People$nameFirst, People$nameLast, sep=" ")
-         batting <- merge(Batting, 
-                          People[,c("playerID","name")], 
-                          by="playerID", all.x=TRUE)
+   BT <- with(People, table(bats, throws))
+   require(vcd)
+   structable(BT)
+   mosaic(BT, shade=TRUE)
 
-         ## batting and throwing
-         # right-handed batters are much less ambidexterous in throwing than left-handed batters
-         # (should only include batters)
+   ## Who is Shoeless Joe Jackson?
+   subset(People, nameLast=="Jackson" & nameFirst=="Joe")
+   subset(People, nameLast=="Jackson" & nameFirst=="Shoeless Joe")
 
-         BT <- with(People, table(bats, throws))
-         require(vcd)
-         structable(BT)
-         mosaic(BT, shade=TRUE)
+   joeID <-c(subset(People, nameLast=="Jackson" & nameFirst=="Shoeless Joe")["playerID"])
 
-         ## Who is Shoeless Joe Jackson?
-         subset(People, nameLast=="Jackson" & nameFirst=="Joe")
-         subset(People, nameLast=="Jackson" & nameFirst=="Shoeless Joe")
-
-         joeID <-c(subset(People, nameLast=="Jackson" & nameFirst=="Shoeless Joe")["playerID"])
-
-         subset(Batting, playerID==joeID)
-         subset(Fielding, playerID==joeID)
+   subset(Batting, playerID==joeID)
+   subset(Fielding, playerID==joeID)

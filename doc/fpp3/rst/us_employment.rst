@@ -1,34 +1,31 @@
-.. container::
+============= ===============
+us_employment R Documentation
+============= ===============
 
-   .. container::
+US monthly employment data
+--------------------------
 
-      ============= ===============
-      us_employment R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: US monthly employment data
-         :name: us-monthly-employment-data
+``us_employment`` contains monthly US employment data from January 1939
+to June 2019. Each 'Series_ID' represents different sectors of the
+economy.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      ``us_employment`` contains monthly US employment data from January
-      1939 to June 2019. Each 'Series_ID' represents different sectors
-      of the economy.
+Time series of class 'tsibble'
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      Time series of class 'tsibble'
+U.S. Bureau of Labor Statistics
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      U.S. Bureau of Labor Statistics
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         us_employment
+   us_employment

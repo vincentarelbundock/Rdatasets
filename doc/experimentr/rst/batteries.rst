@@ -1,49 +1,43 @@
-.. container::
+========= ===============
+batteries R Documentation
+========= ===============
 
-   .. container::
+Data from Rutherford's experiment with batteries
+------------------------------------------------
 
-      ========= ===============
-      batteries R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Data from Rutherford's experiment with batteries
-         :name: data-from-rutherfords-experiment-with-batteries
+This dataset is used in the exercises of Chapter 3 from the textbook.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset is used in the exercises of Chapter 3 from the
-      textbook.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   batteries
 
-      .. code:: R
+Format
+~~~~~~
 
-         batteries
+A data frame with 30 rows and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+treatment
+   Treatment indicator. 1 = treatment, 0 = control
 
-      A data frame with 30 rows and 5 variables:
+one
+   Outcome variable denoting first bounce time
 
-      treatment
-         Treatment indicator. 1 = treatment, 0 = control
+two
+   Outcome variable denoting second bounce time
 
-      one
-         Outcome variable denoting first bounce time
+three
+   Outcome variable denoting third bounce time
 
-      two
-         Outcome variable denoting second bounce time
+pre
+   Pre-treatment covariate denoting pre-test bounce time
 
-      three
-         Outcome variable denoting third bounce time
+Source
+~~~~~~
 
-      pre
-         Pre-treatment covariate denoting pre-test bounce time
-
-      .. rubric:: Source
-         :name: source
-
-      Rutherford, Kylan. “Experiment Practicum.” Columbia University,
-      2020.
+Rutherford, Kylan. “Experiment Practicum.” Columbia University, 2020.

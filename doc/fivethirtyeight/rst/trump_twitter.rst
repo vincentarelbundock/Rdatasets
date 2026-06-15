@@ -1,42 +1,37 @@
-.. container::
+============= ===============
+trump_twitter R Documentation
+============= ===============
 
-   .. container::
+The World's Favorite Donald Trump Tweets
+----------------------------------------
 
-      ============= ===============
-      trump_twitter R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The World's Favorite Donald Trump Tweets
-         :name: the-worlds-favorite-donald-trump-tweets
+The raw data behind the story "The World's Favorite Donald Trump Tweets"
+https://fivethirtyeight.com/features/the-worlds-favorite-donald-trump-tweets/.
+Tweets posted on twitter by Donald Trump (@realDonaldTrump). An analysis
+using this data was contributed by Adam Spannbauer as a package vignette
+at
+https://fivethirtyeightdata.github.io/fivethirtyeightdata/articles/trump_twitter.html.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "The World's Favorite Donald Trump
-      Tweets"
-      https://fivethirtyeight.com/features/the-worlds-favorite-donald-trump-tweets/.
-      Tweets posted on twitter by Donald Trump (@realDonaldTrump). An
-      analysis using this data was contributed by Adam Spannbauer as a
-      package vignette at
-      https://fivethirtyeightdata.github.io/fivethirtyeightdata/articles/trump_twitter.html.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   trump_twitter
 
-      .. code:: R
+Format
+~~~~~~
 
-         trump_twitter
+A data frame with 448 rows representing tweets and 3 variables:
 
-      .. rubric:: Format
-         :name: format
+id
+created_at
+text
 
-      A data frame with 448 rows representing tweets and 3 variables:
+Source
+~~~~~~
 
-      id
-      created_at
-      text
-
-      .. rubric:: Source
-         :name: source
-
-      Twitter https://twitter.com/realdonaldtrump
+Twitter https://twitter.com/realdonaldtrump

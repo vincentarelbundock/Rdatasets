@@ -1,89 +1,85 @@
-.. container::
+==================== ===============
+gomez.stripsplitplot R Documentation
+==================== ===============
 
-   .. container::
+Strip-split-plot experiment of rice
+-----------------------------------
 
-      ==================== ===============
-      gomez.stripsplitplot R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Strip-split-plot experiment of rice
-         :name: strip-split-plot-experiment-of-rice
+A strip-split-plot experiment with three reps, genotype as the
+horizontal strip, nitrogen fertilizer as the vertical strip, and
+planting method as the subplot factor.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      A strip-split-plot experiment with three reps, genotype as the
-      horizontal strip, nitrogen fertilizer as the vertical strip, and
-      planting method as the subplot factor.
+``yield``
+   grain yield in kg/ha
 
-      .. rubric:: Format
-         :name: format
+``planting``
+   planting factor, P1=broadcast, P2=transplanted
 
-      ``yield``
-         grain yield in kg/ha
+``rep``
+   rep, 3 levels
 
-      ``planting``
-         planting factor, P1=broadcast, P2=transplanted
+``nitro``
+   nitrogen fertilizer, kg/ha
 
-      ``rep``
-         rep, 3 levels
+``gen``
+   genotype, G1 to G6
 
-      ``nitro``
-         nitrogen fertilizer, kg/ha
+``col``
+   column
 
-      ``gen``
-         genotype, G1 to G6
+``row``
+   row
 
-      ``col``
-         column
+Details
+~~~~~~~
 
-      ``row``
-         row
+Note, this is a superset of the the 'gomez.stripplot' data.
 
-      .. rubric:: Details
-         :name: details
+Used with permission of Kwanchai Gomez.
 
-      Note, this is a superset of the the 'gomez.stripplot' data.
+Source
+~~~~~~
 
-      Used with permission of Kwanchai Gomez.
+Gomez, K.A. and Gomez, A.A.. 1984, Statistical Procedures for
+Agricultural Research. Wiley-Interscience. Page 155.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Gomez, K.A. and Gomez, A.A.. 1984, Statistical Procedures for
-      Agricultural Research. Wiley-Interscience. Page 155.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(gomez.stripsplitplot)
+   dat <- gomez.stripsplitplot
 
-         ## Not run: 
-
-         library(agridat)
-         data(gomez.stripsplitplot)
-         dat <- gomez.stripsplitplot
-
-         # Layout
-         libs(desplot)
-         desplot(dat, gen ~ col*row,
-                 out1=rep, col=nitro, text=planting, cex=1,
-                 main="gomez.stripsplitplot")
+   # Layout
+   libs(desplot)
+   desplot(dat, gen ~ col*row,
+           out1=rep, col=nitro, text=planting, cex=1,
+           main="gomez.stripsplitplot")
 
 
-         # Gomez table 4.19, ANOVA of strip-split-plot design
-         dat <- transform(dat, nf=factor(nitro))
-         m1 <- aov(yield ~ nf * gen * planting +
-                   Error(rep + rep:nf + rep:gen + rep:nf:gen), data=dat)
-         summary(m1)
+   # Gomez table 4.19, ANOVA of strip-split-plot design
+   dat <- transform(dat, nf=factor(nitro))
+   m1 <- aov(yield ~ nf * gen * planting +
+             Error(rep + rep:nf + rep:gen + rep:nf:gen), data=dat)
+   summary(m1)
 
-         # There is a noticeable linear trend along the y coordinate which may be
-         # an artifact that blocking will remove, or may need to be modeled.
-         # Note the outside values in the high-nitro boxplot.
-         libs("HH")
-         interaction2wt(yield ~ nitro + gen + planting + row, dat,
-                        x.between=0, y.between=0,
-                        x.relation="free")
+   # There is a noticeable linear trend along the y coordinate which may be
+   # an artifact that blocking will remove, or may need to be modeled.
+   # Note the outside values in the high-nitro boxplot.
+   libs("HH")
+   interaction2wt(yield ~ nitro + gen + planting + row, dat,
+                  x.between=0, y.between=0,
+                  x.relation="free")
 
 
-         ## End(Not run)
+   ## End(Not run)

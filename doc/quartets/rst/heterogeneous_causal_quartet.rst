@@ -1,58 +1,53 @@
-.. container::
+============================ ===============
+heterogeneous_causal_quartet R Documentation
+============================ ===============
 
-   .. container::
+Gelman Heterogeneity Causal Quartet Data
+----------------------------------------
 
-      ============================ ===============
-      heterogeneous_causal_quartet R Documentation
-      ============================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Gelman Heterogeneity Causal Quartet Data
-         :name: gelman-heterogeneity-causal-quartet-data
+This dataset contains 88 observations, each generated under a different
+mechanism treatment heterogeneity with respect to some pre-exposure
+characteristic, ``z``:
 
-      .. rubric:: Description
-         :name: description
+- (1) Linear interaction
 
-      This dataset contains 88 observations, each generated under a
-      different mechanism treatment heterogeneity with respect to some
-      pre-exposure characteristic, ``z``:
+- (2) No effect then steady increase
 
-      -  (1) Linear interaction
+- (3) Plateau
 
-      -  (2) No effect then steady increase
+- (4) Intermediate zone with large effects
 
-      -  (3) Plateau
+Usage
+~~~~~
 
-      -  (4) Intermediate zone with large effects
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   heterogeneous_causal_quartet
 
-      .. code:: R
+Format
+~~~~~~
 
-         heterogeneous_causal_quartet
+A dataframe with 88 rows and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+- ``dataset``: The data generating mechanism
 
-      A dataframe with 88 rows and 5 variables:
+- ``exposure``: exposure
 
-      -  ``dataset``: The data generating mechanism
+- ``covariate``: a pre-exposure factor
 
-      -  ``exposure``: exposure
+- ``outcome``: outcome
 
-      -  ``covariate``: a pre-exposure factor
+- ``.causal_effect``: latent true causal effect
 
-      -  ``outcome``: outcome
+References
+~~~~~~~~~~
 
-      -  ``.causal_effect``: latent true causal effect
+Gelman, A., Hullman, J., & Kennedy, L. (2023). Causal quartets:
+Different ways to attain the same average treatment effect. arXiv
+preprint arXiv:2302.12878.
 
-      .. rubric:: References
-         :name: references
-
-      Gelman, A., Hullman, J., & Kennedy, L. (2023). Causal quartets:
-      Different ways to attain the same average treatment effect. arXiv
-      preprint arXiv:2302.12878.
-
-      Hullman J (2023). *causalQuartet: Create Causal Quartets for
-      Interrogating Average Treatment Effects*. R package version
-      0.0.0.9000.
+Hullman J (2023). *causalQuartet: Create Causal Quartets for
+Interrogating Average Treatment Effects*. R package version 0.0.0.9000.

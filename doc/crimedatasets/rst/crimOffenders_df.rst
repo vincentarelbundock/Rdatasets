@@ -1,99 +1,91 @@
-.. container::
+================ ===============
+crimOffenders_df R Documentation
+================ ===============
 
-   .. container::
+Criminal Offenders Screened in Florida
+--------------------------------------
 
-      ================ ===============
-      crimOffenders_df R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Criminal Offenders Screened in Florida
-         :name: criminal-offenders-screened-in-florida
+This dataset contains information on criminal offenders who were
+screened in Florida during 2013-2014.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains information on criminal offenders who were
-      screened in Florida during 2013-2014.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(crimOffenders_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(crimOffenders_df)
+A data frame with 5,855 observations and 16 variables:
 
-      .. rubric:: Format
-         :name: format
+age
+   Age of the offender (numeric).
 
-      A data frame with 5,855 observations and 16 variables:
+juv_fel_count
+   Number of juvenile felonies committed (numeric).
 
-      age
-         Age of the offender (numeric).
+decile_score
+   COMPAS score decile (numeric).
 
-      juv_fel_count
-         Number of juvenile felonies committed (numeric).
+juv_misd_count
+   Number of juvenile misdemeanors committed (numeric).
 
-      decile_score
-         COMPAS score decile (numeric).
+juv_other_count
+   Number of other juvenile convictions (numeric).
 
-      juv_misd_count
-         Number of juvenile misdemeanors committed (numeric).
+v_decile_score
+   Predicted decile score of the offender (numeric).
 
-      juv_other_count
-         Number of other juvenile convictions (numeric).
+priors_count
+   Number of prior crimes committed (numeric).
 
-      v_decile_score
-         Predicted decile score of the offender (numeric).
+sex
+   Gender of the offender (factor with levels 'Female' and 'Male').
 
-      priors_count
-         Number of prior crimes committed (numeric).
+two_year_recid
+   Recidivism within two years (factor with levels 'Yes' and 'No').
 
-      sex
-         Gender of the offender (factor with levels 'Female' and
-         'Male').
+race
+   Race of the offender (factor with levels 'White', 'Black',
+   'Hispanic', 'Asian', 'Other', 'Native').
 
-      two_year_recid
-         Recidivism within two years (factor with levels 'Yes' and
-         'No').
+c_jail_in
+   Date of entry into jail (normalized between 0 and 1, numeric).
 
-      race
-         Race of the offender (factor with levels 'White', 'Black',
-         'Hispanic', 'Asian', 'Other', 'Native').
+c_jail_out
+   Date of release from jail (normalized between 0 and 1, numeric).
 
-      c_jail_in
-         Date of entry into jail (normalized between 0 and 1, numeric).
+c_offense_date
+   Date the offense was committed (numeric).
 
-      c_jail_out
-         Date of release from jail (normalized between 0 and 1,
-         numeric).
+screening_date
+   Date the offender was screened (numeric).
 
-      c_offense_date
-         Date the offense was committed (numeric).
+in_custody
+   Date the offender was placed in custody (numeric, normalized between
+   0 and 1).
 
-      screening_date
-         Date the offender was screened (numeric).
+out_custody
+   Date the offender was released from custody (numeric, normalized
+   between 0 and 1).
 
-      in_custody
-         Date the offender was placed in custody (numeric, normalized
-         between 0 and 1).
+Details
+~~~~~~~
 
-      out_custody
-         Date the offender was released from custody (numeric,
-         normalized between 0 and 1).
+The dataset name has been changed to 'crimOffenders_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the crimedatasets package and
+assists users in identifying its specific characteristics. The suffix
+'df' indicates that the dataset is a traditional data frame in R. The
+original content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been changed to 'crimOffenders_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      crimedatasets package and assists users in identifying its
-      specific characteristics. The suffix 'df' indicates that the
-      dataset is a traditional data frame in R. The original content has
-      not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data collected from criminal offenders screened in Florida during
-      2013-2014.
+Data collected from criminal offenders screened in Florida during
+2013-2014.

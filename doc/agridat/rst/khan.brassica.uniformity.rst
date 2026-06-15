@@ -1,86 +1,82 @@
-.. container::
+======================== ===============
+khan.brassica.uniformity R Documentation
+======================== ===============
 
-   .. container::
+Uniformity trial of brassica.
+-----------------------------
 
-      ======================== ===============
-      khan.brassica.uniformity R Documentation
-      ======================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of brassica.
-         :name: uniformity-trial-of-brassica.
+Uniformity trial of brassica in India.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of brassica in India.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("khan.brassica.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("khan.brassica.uniformity")
+A data frame with 648 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``field``
+   Field, F1 or F2
 
-      A data frame with 648 observations on the following 4 variables.
+``row``
+   row ordinate
 
-      ``field``
-         Field, F1 or F2
+``col``
+   column ordinate
 
-      ``row``
-         row ordinate
+``yield``
+   yield, 1/8 ounce
 
-      ``col``
-         column ordinate
+Details
+~~~~~~~
 
-      ``yield``
-         yield, 1/8 ounce
+Two different fields were used, representing the average type of soil at
+Lyallpur. An area of 90 ft by 90 ft was marked out and harvested as
+individual plots 5 feet per side.
 
-      .. rubric:: Details
-         :name: details
+This data was copied from a pdf and hand-corrected.
 
-      Two different fields were used, representing the average type of
-      soil at Lyallpur. An area of 90 ft by 90 ft was marked out and
-      harvested as individual plots 5 feet per side.
+Source
+~~~~~~
 
-      This data was copied from a pdf and hand-corrected.
+Khan, Abdur Rashid and Jage Ram Dalal (1943). Optimum Size and Shape of
+Plots for Brassica Experiments in the Punjab. Sankhyā: The Indian
+Journal of Statistics ,6, 3. Proceedings of the Indian Statistical
+Conference 1942 (1943), pp. 317-320.
+https://www.jstor.org/stable/25047782
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Khan, Abdur Rashid and Jage Ram Dalal (1943). Optimum Size and
-      Shape of Plots for Brassica Experiments in the Punjab. Sankhyā:
-      The Indian Journal of Statistics ,6, 3. Proceedings of the Indian
-      Statistical Conference 1942 (1943), pp. 317-320.
-      https://www.jstor.org/stable/25047782
+None.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
+     library(agridat)
+     data(khan.brassica.uniformity)
+     dat <- khan.brassica.uniformity
 
-      .. code:: R
+     # Slightly different results than Khan Table 1.
+     ## dat 
+     ##   mutate(yield=yield/8) 
+     ##   group_by(field) 
+     ##   summarize(mn=mean(yield), sd=sd(yield))
 
-         ## Not run: 
-           library(agridat)
-           data(khan.brassica.uniformity)
-           dat <- khan.brassica.uniformity
-
-           # Slightly different results than Khan Table 1.
-           ## dat 
-           ##   mutate(yield=yield/8) 
-           ##   group_by(field) 
-           ##   summarize(mn=mean(yield), sd=sd(yield))
-
-           libs(desplot)
-           desplot(dat, yield ~ col*row | field,
-                   flip=TRUE, aspect=1,
-                   main="khan.brassica.uniformity")
+     libs(desplot)
+     desplot(dat, yield ~ col*row | field,
+             flip=TRUE, aspect=1,
+             main="khan.brassica.uniformity")
 
 
-         ## End(Not run)
+   ## End(Not run)

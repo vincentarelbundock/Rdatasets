@@ -1,65 +1,61 @@
-.. container::
+============= ===============
+cochran.latin R Documentation
+============= ===============
 
-   .. container::
+Latin square design in wheat
+----------------------------
 
-      ============= ===============
-      cochran.latin R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Latin square design in wheat
-         :name: latin-square-design-in-wheat
+Six wheat plots were sampled by six operators and shoot heights
+measured. The operators sampled plots in six ordered sequences. The
+dependent variate was the difference between measured height and true
+height of the plot.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Six wheat plots were sampled by six operators and shoot heights
-      measured. The operators sampled plots in six ordered sequences.
-      The dependent variate was the difference between measured height
-      and true height of the plot.
+A data frame with 36 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row
 
-      A data frame with 36 observations on the following 4 variables.
+``col``
+   column
 
-      ``row``
-         row
+``operator``
+   operator factor
 
-      ``col``
-         column
+``diff``
+   difference between measured height and true height
 
-      ``operator``
-         operator factor
+Source
+~~~~~~
 
-      ``diff``
-         difference between measured height and true height
+Cochran, W.G. and Cox, G.M. (1957), *Experimental Designs*, 2nd ed.,
+Wiley and Sons, New York.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Cochran, W.G. and Cox, G.M. (1957), *Experimental Designs*, 2nd
-      ed., Wiley and Sons, New York.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(cochran.latin)
+   dat <- cochran.latin
 
-         ## Not run: 
-
-         library(agridat)
-         data(cochran.latin)
-         dat <- cochran.latin
-
-         libs(desplot)
-         desplot(dat, diff~col*row,
-                 text=operator, cex=1, # aspect unknown
-                 main="cochran.latin")
+   libs(desplot)
+   desplot(dat, diff~col*row,
+           text=operator, cex=1, # aspect unknown
+           main="cochran.latin")
 
 
-         dat <- transform(dat, rf=factor(row), cf=factor(col))
-         aov.dat <- aov(diff ~ operator + Error(rf*cf), dat)
-         summary(aov.dat)
-         model.tables(aov.dat, type="means")
+   dat <- transform(dat, rf=factor(row), cf=factor(col))
+   aov.dat <- aov(diff ~ operator + Error(rf*cf), dat)
+   summary(aov.dat)
+   model.tables(aov.dat, type="means")
 
-         ## End(Not run)
+   ## End(Not run)

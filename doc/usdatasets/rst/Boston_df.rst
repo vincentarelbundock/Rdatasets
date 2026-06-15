@@ -1,83 +1,77 @@
-.. container::
+========= ===============
+Boston_df R Documentation
+========= ===============
 
-   .. container::
+Housing Values in Suburbs of Boston
+-----------------------------------
 
-      ========= ===============
-      Boston_df R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Housing Values in Suburbs of Boston
-         :name: housing-values-in-suburbs-of-boston
+The dataset name has been changed to 'Boston_df' to avoid confusion with
+other packages in the R ecosystem from which datasets have been sourced.
+This naming convention helps distinguish this dataset as part of the
+'usdatasets' package and assists users in identifying its specific
+characteristics. The suffix '\_df' identifies the dataset as a data
+frame. The original content of the dataset has not been modified in any
+way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'Boston_df' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. This naming convention helps
-      distinguish this dataset as part of the 'usdatasets' package and
-      assists users in identifying its specific characteristics. The
-      suffix '\_df' identifies the dataset as a data frame. The original
-      content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Boston_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Boston_df)
+A data frame with 506 observations and 14 variables:
 
-      .. rubric:: Format
-         :name: format
+crim
+   Per capita crime rate by town.
 
-      A data frame with 506 observations and 14 variables:
+zn
+   Proportion of residential land zoned for lots over 25,000 sq. ft.
 
-      crim
-         Per capita crime rate by town.
+indus
+   Proportion of non-retail business acres per town.
 
-      zn
-         Proportion of residential land zoned for lots over 25,000 sq.
-         ft.
+chas
+   Charles River dummy variable (1 if tract bounds river; 0 otherwise).
 
-      indus
-         Proportion of non-retail business acres per town.
+nox
+   Nitric oxides concentration (parts per 10 million).
 
-      chas
-         Charles River dummy variable (1 if tract bounds river; 0
-         otherwise).
+rm
+   Average number of rooms per dwelling.
 
-      nox
-         Nitric oxides concentration (parts per 10 million).
+age
+   Proportion of owner-occupied units built prior to 1940.
 
-      rm
-         Average number of rooms per dwelling.
+dis
+   Weighted distances to five Boston employment centers.
 
-      age
-         Proportion of owner-occupied units built prior to 1940.
+rad
+   Index of accessibility to radial highways.
 
-      dis
-         Weighted distances to five Boston employment centers.
+tax
+   Full-value property tax rate per $10,000.
 
-      rad
-         Index of accessibility to radial highways.
+ptratio
+   Pupil-teacher ratio by town.
 
-      tax
-         Full-value property tax rate per $10,000.
+black
+   1000(Bk - 0.63)^2 where Bk is the proportion of Black residents by
+   town.
 
-      ptratio
-         Pupil-teacher ratio by town.
+lstat
+   Percentage of lower status of the population.
 
-      black
-         1000(Bk - 0.63)^2 where Bk is the proportion of Black residents
-         by town.
+medv
+   Median value of owner-occupied homes in $1000s.
 
-      lstat
-         Percentage of lower status of the population.
+Source
+~~~~~~
 
-      medv
-         Median value of owner-occupied homes in $1000s.
-
-      .. rubric:: Source
-         :name: source
-
-      Boston Housing Data
+Boston Housing Data

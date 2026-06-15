@@ -1,71 +1,65 @@
-.. container::
+============= ===============
+oscars_tbl_df R Documentation
+============= ===============
 
-   .. container::
+Oscar winners, 1929 to 2018
+---------------------------
 
-      ============= ===============
-      oscars_tbl_df R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Oscar winners, 1929 to 2018
-         :name: oscar-winners-1929-to-2018
+The dataset name has been changed to 'oscars_tbl_df' to avoid confusion
+with other packages in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a tibble. The original content of the dataset has not
+been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'oscars_tbl_df' to avoid
-      confusion with other packages in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a tibble. The original
-      content of the dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(oscars_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(oscars_tbl_df)
+A tibble with 184 observations and 11 variables:
 
-      .. rubric:: Format
-         :name: format
+oscar_no
+   Numeric indicating the Oscar number.
 
-      A tibble with 184 observations and 11 variables:
+oscar_yr
+   Numeric representing the year the Oscar was awarded.
 
-      oscar_no
-         Numeric indicating the Oscar number.
+award
+   Character string indicating the category of the award.
 
-      oscar_yr
-         Numeric representing the year the Oscar was awarded.
+name
+   Character string with the name of the recipient.
 
-      award
-         Character string indicating the category of the award.
+movie
+   Character string indicating the movie for which the award was given.
 
-      name
-         Character string with the name of the recipient.
+age
+   Numeric indicating the age of the recipient at the time of the award.
 
-      movie
-         Character string indicating the movie for which the award was
-         given.
+birth_pl
+   Character string indicating the birthplace of the recipient.
 
-      age
-         Numeric indicating the age of the recipient at the time of the
-         award.
+birth_date
+   Date representing the birthdate of the recipient.
 
-      birth_pl
-         Character string indicating the birthplace of the recipient.
+birth_mo
+   Numeric indicating the birth month.
 
-      birth_date
-         Date representing the birthdate of the recipient.
+birth_d
+   Numeric indicating the birth day.
 
-      birth_mo
-         Numeric indicating the birth month.
+birth_y
+   Numeric indicating the birth year.
 
-      birth_d
-         Numeric indicating the birth day.
+Source
+~~~~~~
 
-      birth_y
-         Numeric indicating the birth year.
-
-      .. rubric:: Source
-         :name: source
-
-      Data from historical Oscar award records.
+Data from historical Oscar award records.

@@ -1,90 +1,84 @@
-.. container::
+===== ===============
+inrap R Documentation
+===== ===============
 
-   .. container::
+Location of Inrap Archaeological Sites
+--------------------------------------
 
-      ===== ===============
-      inrap R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Location of Inrap Archaeological Sites
-         :name: location-of-inrap-archaeological-sites
+A dataset of geographical locations of archaeological sites in France.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset of geographical locations of archaeological sites in
-      France.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   inrap
 
-      .. code:: R
+Format
+~~~~~~
 
-         inrap
+A ``data.frame`` with 625 observations (archaeological sites) and 11
+variables:
 
-      .. rubric:: Format
-         :name: format
+X
+   ``numeric``: longitude (RGF93 v1 / Lambert-93).
 
-      A ``data.frame`` with 625 observations (archaeological sites) and
-      11 variables:
+Y
+   ``numeric``: latitude (RGF93 v1 / Lambert-93).
 
-      X
-         ``numeric``: longitude (RGF93 v1 / Lambert-93).
+region
+   ``character``: French region.
 
-      Y
-         ``numeric``: latitude (RGF93 v1 / Lambert-93).
+departement
+   ``character``: French departement.
 
-      region
-         ``character``: French region.
+commune
+   ``character``: French city.
 
-      departement
-         ``character``: French departement.
+site
+   ``character``: name of the site.
 
-      commune
-         ``character``: French city.
+start
+   ``Date``: excavation start date.
 
-      site
-         ``character``: name of the site.
+end
+   ``Date``: excavation end date.
 
-      start
-         ``Date``: excavation start date.
+period
+   ``list``: chronology periods.
 
-      end
-         ``Date``: excavation end date.
+theme
+   ``list``: themes.
 
-      period
-         ``list``: chronology periods.
+type
+   ``character``.
 
-      theme
-         ``list``: themes.
+Details
+~~~~~~~
 
-      type
-         ``character``.
+This dataset presents the geographical locations of a selection of
+preventive archaeological excavations carried out in France by the
+Institut national de recherches archéologiques préventives (Inrap).
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset presents the geographical locations of a selection of
-      preventive archaeological excavations carried out in France by the
-      Institut national de recherches archéologiques préventives
-      (Inrap).
+https://www.data.gouv.fr/fr/datasets/r/b098d16a-ae19-48e4-8c58-e659e0603acd
+(last update: 2024-06-03)
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      https://www.data.gouv.fr/fr/datasets/r/b098d16a-ae19-48e4-8c58-e659e0603acd
-      (last update: 2024-06-03)
+Other geographical data: ``cities``
 
-      .. rubric:: See Also
-         :name: see-also
+Examples
+~~~~~~~~
 
-      Other geographical data: ``cities``
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         # library(sf)
-         # coord <- st_as_sf(inrap, coords = c("X", "Y"), crs = st_crs(2154))
-         # plot(coord["region"])
+   # library(sf)
+   # coord <- st_as_sf(inrap, coords = c("X", "Y"), crs = st_crs(2154))
+   # plot(coord["region"])

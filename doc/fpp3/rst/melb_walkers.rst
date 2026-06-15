@@ -1,33 +1,29 @@
-.. container::
+============ ===============
+melb_walkers R Documentation
+============ ===============
 
-   .. container::
+Average daily total pedestrian count in Melbourne
+-------------------------------------------------
 
-      ============ ===============
-      melb_walkers R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Average daily total pedestrian count in Melbourne
-         :name: average-daily-total-pedestrian-count-in-melbourne
+Daily average total pedestrian count (across different sensors) from
+2019-01-01 to 2024-05-29.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Daily average total pedestrian count (across different sensors)
-      from 2019-01-01 to 2024-05-29.
+Time series of class 'tsibble'
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      Time series of class 'tsibble'
+Melbourne Open Data Portal. https://data.melbourne.vic.gov.au
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Melbourne Open Data Portal. https://data.melbourne.vic.gov.au
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         melb_walkers |> autoplot(Count)
+   melb_walkers |> autoplot(Count)

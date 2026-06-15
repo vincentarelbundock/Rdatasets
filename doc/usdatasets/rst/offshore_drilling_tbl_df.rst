@@ -1,44 +1,40 @@
-.. container::
+======================== ===============
+offshore_drilling_tbl_df R Documentation
+======================== ===============
 
-   .. container::
+California poll on drilling off the California coast
+----------------------------------------------------
 
-      ======================== ===============
-      offshore_drilling_tbl_df R Documentation
-      ======================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: California poll on drilling off the California coast
-         :name: california-poll-on-drilling-off-the-california-coast
+The dataset name has been changed to 'offshore_drilling_tbl_df' to avoid
+confusion with other packages in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a tibble. The original content of the dataset has not
+been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'offshore_drilling_tbl_df' to
-      avoid confusion with other packages in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a tibble. The original
-      content of the dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(offshore_drilling_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(offshore_drilling_tbl_df)
+A tibble with 828 observations and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+v1
+   Factor with 4 levels, representing different responses or categories
+   related to offshore drilling.
 
-      A tibble with 828 observations and 2 variables:
+v2
+   Factor with 3 levels, representing secondary categories or
+   classifications related to the responses in ``v1``.
 
-      v1
-         Factor with 4 levels, representing different responses or
-         categories related to offshore drilling.
+Source
+~~~~~~
 
-      v2
-         Factor with 3 levels, representing secondary categories or
-         classifications related to the responses in ``v1``.
-
-      .. rubric:: Source
-         :name: source
-
-      Data related to offshore drilling opinions or classifications
+Data related to offshore drilling opinions or classifications

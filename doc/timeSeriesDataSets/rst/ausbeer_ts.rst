@@ -1,44 +1,39 @@
-.. container::
+========== ===============
+ausbeer_ts R Documentation
+========== ===============
 
-   .. container::
+Quarterly Australian Beer Production.
+-------------------------------------
 
-      ========== ===============
-      ausbeer_ts R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Quarterly Australian Beer Production.
-         :name: quarterly-australian-beer-production.
+The dataset name has been changed to 'ausbeer_ts' to avoid confusion
+with other packages in the R ecosystem from which datasets have been
+sourced. This naming convention helps distinguish this dataset as part
+of the 'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The suffix 'ts' identifies the dataset as a
+time series object, helping to differentiate it from other datasets
+within the package. The original content of the dataset has not been
+modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'ausbeer_ts' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. This naming convention helps
-      distinguish this dataset as part of the 'timeseriesdatasets'
-      package and assists users in identifying its specific
-      characteristics. The suffix 'ts' identifies the dataset as a time
-      series object, helping to differentiate it from other datasets
-      within the package. The original content of the dataset has not
-      been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(ausbeer_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(ausbeer_ts)
+A time series object with 218 observations:
 
-      .. rubric:: Format
-         :name: format
+ausbeer
+   A numeric vector representing the quarterly beer production in
+   Australia, measured in megalitres.
 
-      A time series object with 218 observations:
+Source
+~~~~~~
 
-      ausbeer
-         A numeric vector representing the quarterly beer production in
-         Australia, measured in megalitres.
-
-      .. rubric:: Source
-         :name: source
-
-      Data provided by the Australian Bureau of Statistics.
+Data provided by the Australian Bureau of Statistics.

@@ -1,90 +1,84 @@
-.. container::
+================== ===============
+hate_crimes_tbl_df R Documentation
+================== ===============
 
-   .. container::
+US Hate Crimes & Socioeconomic Factors
+--------------------------------------
 
-      ================== ===============
-      hate_crimes_tbl_df R Documentation
-      ================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: US Hate Crimes & Socioeconomic Factors
-         :name: us-hate-crimes-socioeconomic-factors
+This dataset contains data on hate crimes across the United States and
+associated socioeconomic factors. It provides insights into potential
+relationships between income inequality, socioeconomic characteristics,
+and the frequency of hate crimes.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains data on hate crimes across the United States
-      and associated socioeconomic factors. It provides insights into
-      potential relationships between income inequality, socioeconomic
-      characteristics, and the frequency of hate crimes.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(hate_crimes_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(hate_crimes_tbl_df)
+A tibble with 51 observations and 13 variables:
 
-      .. rubric:: Format
-         :name: format
+state
+   Full name of the state (character).
 
-      A tibble with 51 observations and 13 variables:
+state_abbrev
+   Abbreviation of the state (character).
 
-      state
-         Full name of the state (character).
+median_house_inc
+   Median household income (integer).
 
-      state_abbrev
-         Abbreviation of the state (character).
+share_unemp_seas
+   Share of unemployed people (seasonally adjusted) (numeric).
 
-      median_house_inc
-         Median household income (integer).
+share_pop_metro
+   Share of the population living in metropolitan areas (numeric).
 
-      share_unemp_seas
-         Share of unemployed people (seasonally adjusted) (numeric).
+share_pop_hs
+   Share of the population with at least a high school education
+   (numeric).
 
-      share_pop_metro
-         Share of the population living in metropolitan areas (numeric).
+share_non_citizen
+   Share of the population who are non-citizens (numeric).
 
-      share_pop_hs
-         Share of the population with at least a high school education
-         (numeric).
+share_white_poverty
+   Share of the white population living in poverty (numeric).
 
-      share_non_citizen
-         Share of the population who are non-citizens (numeric).
+gini_index
+   Gini index of income inequality (numeric).
 
-      share_white_poverty
-         Share of the white population living in poverty (numeric).
+share_non_white
+   Share of the population who are non-white (numeric).
 
-      gini_index
-         Gini index of income inequality (numeric).
+share_vote_trump
+   Share of votes for Donald Trump in the 2016 presidential election
+   (numeric).
 
-      share_non_white
-         Share of the population who are non-white (numeric).
+hate_crimes_per_100k_splc
+   Hate crimes per 100,000 people as reported by the SPLC (numeric).
 
-      share_vote_trump
-         Share of votes for Donald Trump in the 2016 presidential
-         election (numeric).
+avg_hatecrimes_per_100k_fbi
+   Average hate crimes per 100,000 people as reported by the FBI
+   (numeric).
 
-      hate_crimes_per_100k_splc
-         Hate crimes per 100,000 people as reported by the SPLC
-         (numeric).
+Details
+~~~~~~~
 
-      avg_hatecrimes_per_100k_fbi
-         Average hate crimes per 100,000 people as reported by the FBI
-         (numeric).
+The dataset name has been changed to 'hate_crimes_tbl_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the crimedatasets package and
+assists users in identifying its specific characteristics. The suffix
+'tbl_df' indicates that the dataset is a tibble, a modern version of
+data frames in R. The original content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been changed to 'hate_crimes_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      crimedatasets package and assists users in identifying its
-      specific characteristics. The suffix 'tbl_df' indicates that the
-      dataset is a tibble, a modern version of data frames in R. The
-      original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      The raw data behind the story "Higher Rates Of Hate Crimes Are
-      Tied To Income Inequality" by FiveThirtyEight.
+The raw data behind the story "Higher Rates Of Hate Crimes Are Tied To
+Income Inequality" by FiveThirtyEight.

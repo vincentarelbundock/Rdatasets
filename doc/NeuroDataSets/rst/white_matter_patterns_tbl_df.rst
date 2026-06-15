@@ -1,98 +1,90 @@
-.. container::
+============================ ===============
+white_matter_patterns_tbl_df R Documentation
+============================ ===============
 
-   .. container::
+Expected Patterns of White Matter
+---------------------------------
 
-      ============================ ===============
-      white_matter_patterns_tbl_df R Documentation
-      ============================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Expected Patterns of White Matter
-         :name: expected-patterns-of-white-matter
+This dataset, white_matter_patterns_tbl_df, is a tibble containing
+expected patterns of white matter in schizophrenia derived from
+large-scale meta-analyses by the ENIGMA consortium. It includes data
+from multiple neurological and psychiatric conditions for comparison.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, white_matter_patterns_tbl_df, is a tibble containing
-      expected patterns of white matter in schizophrenia derived from
-      large-scale meta-analyses by the ENIGMA consortium. It includes
-      data from multiple neurological and psychiatric conditions for
-      comparison.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(white_matter_patterns_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(white_matter_patterns_tbl_df)
+A tibble with 24 observations and 15 variables:
 
-      .. rubric:: Format
-         :name: format
+WM
+   Character vector indicating white matter regions
 
-      A tibble with 24 observations and 15 variables:
+SSD
+   Numeric vector of expected patterns for schizophrenia spectrum
+   disorder
 
-      WM
-         Character vector indicating white matter regions
+MDD
+   Numeric vector of expected patterns for major depressive disorder
 
-      SSD
-         Numeric vector of expected patterns for schizophrenia spectrum
-         disorder
+AD_ADNI
+   Numeric vector of expected patterns for Alzheimer's disease (ADNI
+   cohort)
 
-      MDD
-         Numeric vector of expected patterns for major depressive
-         disorder
+AD_ADNIOSYRIX
+   Numeric vector of expected patterns for Alzheimer's disease
+   (ADNI+OSYRIX cohort)
 
-      AD_ADNI
-         Numeric vector of expected patterns for Alzheimer's disease
-         (ADNI cohort)
+BD
+   Numeric vector of expected patterns for bipolar disorder
 
-      AD_ADNIOSYRIX
-         Numeric vector of expected patterns for Alzheimer's disease
-         (ADNI+OSYRIX cohort)
+Diabetes
+   Numeric vector of expected patterns for diabetes
 
-      BD
-         Numeric vector of expected patterns for bipolar disorder
+HighBP
+   Numeric vector of expected patterns for high blood pressure
 
-      Diabetes
-         Numeric vector of expected patterns for diabetes
+HighLipids
+   Numeric vector of expected patterns for high lipids
 
-      HighBP
-         Numeric vector of expected patterns for high blood pressure
+MET
+   Numeric vector of expected patterns for metabolic syndrome
 
-      HighLipids
-         Numeric vector of expected patterns for high lipids
+DS_22q
+   Numeric vector of expected patterns for 22q11.2 deletion syndrome
 
-      MET
-         Numeric vector of expected patterns for metabolic syndrome
+PTSD
+   Numeric vector of expected patterns for post-traumatic stress
+   disorder
 
-      DS_22q
-         Numeric vector of expected patterns for 22q11.2 deletion
-         syndrome
+TBI
+   Numeric vector of expected patterns for traumatic brain injury
 
-      PTSD
-         Numeric vector of expected patterns for post-traumatic stress
-         disorder
+OCD_pediatric
+   Numeric vector of expected patterns for pediatric OCD
 
-      TBI
-         Numeric vector of expected patterns for traumatic brain injury
+OCD_adult
+   Numeric vector of expected patterns for adult OCD
 
-      OCD_pediatric
-         Numeric vector of expected patterns for pediatric OCD
+Details
+~~~~~~~
 
-      OCD_adult
-         Numeric vector of expected patterns for adult OCD
+The dataset name has been kept as 'white_matter_patterns_tbl_df' to
+avoid confusion with other datasets in the R ecosystem. This naming
+convention helps distinguish this dataset as part of the NeuroDataSets
+package and assists users in identifying its specific characteristics.
+The suffix 'tbl_df' indicates that the dataset is a tibble. The original
+content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'white_matter_patterns_tbl_df'
-      to avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      NeuroDataSets package and assists users in identifying its
-      specific characteristics. The suffix 'tbl_df' indicates that the
-      dataset is a tibble. The original content has not been modified in
-      any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the RVIpkg package version 0.3.2
+Data taken from the RVIpkg package version 0.3.2

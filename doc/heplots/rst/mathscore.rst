@@ -1,59 +1,55 @@
-.. container::
+========= ===============
+mathscore R Documentation
+========= ===============
 
-   .. container::
+Math scores for basic math and word problems
+--------------------------------------------
 
-      ========= ===============
-      mathscore R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Math scores for basic math and word problems
-         :name: math-scores-for-basic-math-and-word-problems
+Scores for two groups of school children taught by different math
+teachers and tested for both basic math (BM) problems and solving word
+problems (WP).
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Scores for two groups of school children taught by different math
-      teachers and tested for both basic math (BM) problems and solving
-      word problems (WP).
+A data frame with 12 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``group``
+   a factor with levels ``1`` ``2``
 
-      A data frame with 12 observations on the following 3 variables.
+``BM``
+   Basic Math score, a numeric vector
 
-      ``group``
-         a factor with levels ``1`` ``2``
+``WP``
+   Word Problems score, a numeric vector
 
-      ``BM``
-         Basic Math score, a numeric vector
+Source
+~~~~~~
 
-      ``WP``
-         Word Problems score, a numeric vector
+Fictitious data
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Fictitious data
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   data(mathscore)
+   str(mathscore)
 
-         data(mathscore)
-         str(mathscore)
+   math.mod <- lm(cbind(BM, WP) ~ group, data=mathscore)
+   car::Anova(math.mod)
 
-         math.mod <- lm(cbind(BM, WP) ~ group, data=mathscore)
-         car::Anova(math.mod)
+   # scatterplot with data ellipses
+   car::scatterplot(WP ~ BM | group, data=mathscore, 
+       ellipse=list(levels=0.68), smooth=FALSE, pch=c(15,16), 
+       legend=list(coords = "topright"))
 
-         # scatterplot with data ellipses
-         car::scatterplot(WP ~ BM | group, data=mathscore, 
-             ellipse=list(levels=0.68), smooth=FALSE, pch=c(15,16), 
-             legend=list(coords = "topright"))
-
-         # HE plot
-         heplot(math.mod, fill=TRUE, 
-           cex=2, cex.lab=1.8,
-             xlab="Basic math", ylab="Word problems")
-
+   # HE plot
+   heplot(math.mod, fill=TRUE, 
+     cex=2, cex.lab=1.8,
+       xlab="Basic math", ylab="Word problems")
 

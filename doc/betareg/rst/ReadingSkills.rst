@@ -1,140 +1,130 @@
-.. container::
+============= ===============
+ReadingSkills R Documentation
+============= ===============
 
-   .. container::
+Dyslexia and IQ Predicting Reading Accuracy
+-------------------------------------------
 
-      ============= ===============
-      ReadingSkills R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Dyslexia and IQ Predicting Reading Accuracy
-         :name: dyslexia-and-iq-predicting-reading-accuracy
+Data for assessing the contribution of non-verbal IQ to children's
+reading skills in dyslexic and non-dyslexic children.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data for assessing the contribution of non-verbal IQ to children's
-      reading skills in dyslexic and non-dyslexic children.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("ReadingSkills", package = "betareg")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("ReadingSkills", package = "betareg")
+A data frame containing 44 observations on 3 variables.
 
-      .. rubric:: Format
-         :name: format
+accuracy
+   numeric. Reading score with maximum restricted to be 0.99 rather than
+   1 (see below).
 
-      A data frame containing 44 observations on 3 variables.
+dyslexia
+   factor. Is the child dyslexic? (A sum contrast rather than treatment
+   contrast is employed.)
 
-      accuracy
-         numeric. Reading score with maximum restricted to be 0.99
-         rather than 1 (see below).
+iq
+   numeric. Non-verbal intelligence quotient transformed to z-scores.
 
-      dyslexia
-         factor. Is the child dyslexic? (A sum contrast rather than
-         treatment contrast is employed.)
+accuracy1
+   numeric. Unrestricted reading score with a maximum of 1 (see below).
 
-      iq
-         numeric. Non-verbal intelligence quotient transformed to
-         z-scores.
+Details
+~~~~~~~
 
-      accuracy1
-         numeric. Unrestricted reading score with a maximum of 1 (see
-         below).
+The data were collected by Pammer and Kevan (2004) and employed by
+Smithson and Verkuilen (2006). The original reading accuracy score was
+transformed by Smithson and Verkuilen (2006) so that ``accuracy`` is in
+the open unit interval (0, 1) and beta regression can be employed.
+First, the original accuracy was scaled using the minimal and maximal
+score (``a`` and ``b``, respectively) that can be obtained in the test:
+``accuracy1 = (original_accuracy - a) / (b - a)`` (``a`` and ``b`` are
+not provided). Subsequently, ``accuracy`` was obtained from
+``accuracy1`` by replacing all observations with a value of 1 with 0.99.
 
-      .. rubric:: Details
-         :name: details
+Kosmidis and Zeileis (2025) propose to investigate the original
+unrestricted ``accuracy1`` variable using their extended-support beta
+mixture regression.
 
-      The data were collected by Pammer and Kevan (2004) and employed by
-      Smithson and Verkuilen (2006). The original reading accuracy score
-      was transformed by Smithson and Verkuilen (2006) so that
-      ``accuracy`` is in the open unit interval (0, 1) and beta
-      regression can be employed. First, the original accuracy was
-      scaled using the minimal and maximal score (``a`` and ``b``,
-      respectively) that can be obtained in the test:
-      ``accuracy1 = (original_accuracy - a) / (b - a)`` (``a`` and ``b``
-      are not provided). Subsequently, ``accuracy`` was obtained from
-      ``accuracy1`` by replacing all observations with a value of 1 with
-      0.99.
+Source
+~~~~~~
 
-      Kosmidis and Zeileis (2025) propose to investigate the original
-      unrestricted ``accuracy1`` variable using their extended-support
-      beta mixture regression.
+Example 3 from Smithson and Verkuilen (2006) supplements.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Example 3 from Smithson and Verkuilen (2006) supplements.
+Cribari-Neto F, Zeileis A (2010). Beta Regression in R. *Journal of
+Statistical Software*, **34**\ (2), 1–24.
+`doi:10.18637/jss.v034.i02 <https://doi.org/10.18637/jss.v034.i02>`__
 
-      .. rubric:: References
-         :name: references
+Grün B, Kosmidis I, Zeileis A (2012). Extended Beta Regression in R:
+Shaken, Stirred, Mixed, and Partitioned. *Journal of Statistical
+Software*, **48**\ (11), 1–25.
+`doi:10.18637/jss.v048.i11 <https://doi.org/10.18637/jss.v048.i11>`__
 
-      Cribari-Neto F, Zeileis A (2010). Beta Regression in R. *Journal
-      of Statistical Software*, **34**\ (2), 1–24.
-      `doi:10.18637/jss.v034.i02 <https://doi.org/10.18637/jss.v034.i02>`__
+Kosmidis I, Zeileis A (2025). Extended-Support Beta Regression for [0,
+1] Responses. *Journal of the Royal Statistical Society C*, forthcoming.
+`doi:10.1093/jrsssc/qlaf039 <https://doi.org/10.1093/jrsssc/qlaf039>`__
 
-      Grün B, Kosmidis I, Zeileis A (2012). Extended Beta Regression in
-      R: Shaken, Stirred, Mixed, and Partitioned. *Journal of
-      Statistical Software*, **48**\ (11), 1–25.
-      `doi:10.18637/jss.v048.i11 <https://doi.org/10.18637/jss.v048.i11>`__
+Pammer K, Kevan A (2004). The Contribution of Visual Sensitivity,
+Phonological Processing and Non-Verbal IQ to Children's Reading.
+*Unpublished manuscript*, The Australian National University, Canberra.
 
-      Kosmidis I, Zeileis A (2025). Extended-Support Beta Regression for
-      [0, 1] Responses. *Journal of the Royal Statistical Society C*,
-      forthcoming.
-      `doi:10.1093/jrsssc/qlaf039 <https://doi.org/10.1093/jrsssc/qlaf039>`__
+Smithson M, Verkuilen J (2006). A Better Lemon Squeezer?
+Maximum-Likelihood Regression with Beta-Distributed Dependent Variables.
+*Psychological Methods*, **11**\ (7), 54–71.
 
-      Pammer K, Kevan A (2004). The Contribution of Visual Sensitivity,
-      Phonological Processing and Non-Verbal IQ to Children's Reading.
-      *Unpublished manuscript*, The Australian National University,
-      Canberra.
+See Also
+~~~~~~~~
 
-      Smithson M, Verkuilen J (2006). A Better Lemon Squeezer?
-      Maximum-Likelihood Regression with Beta-Distributed Dependent
-      Variables. *Psychological Methods*, **11**\ (7), 54–71.
+``betareg``, ``MockJurors``, ``StressAnxiety``
 
-      .. rubric:: See Also
-         :name: see-also
+Examples
+~~~~~~~~
 
-      ``betareg``, ``MockJurors``, ``StressAnxiety``
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   options(digits = 4)
+   data("ReadingSkills", package = "betareg")
 
-      .. code:: R
+   ## Smithson & Verkuilen (2006, Table 5)
+   ## OLS regression
+   ## (Note: typo in iq coefficient: 0.3954 instead of 0.3594)
+   rs_ols <- lm(qlogis(accuracy) ~ dyslexia * iq, data = ReadingSkills)
+   summary(rs_ols)
+   ## Beta regression (with numerical rather than analytic standard errors)
+   ## (Note: Smithson & Verkuilen erroneously compute one-sided p-values)
+   rs_beta <- betareg(accuracy ~ dyslexia * iq | dyslexia + iq,
+     data = ReadingSkills, hessian = TRUE)
+   summary(rs_beta)
 
-         options(digits = 4)
-         data("ReadingSkills", package = "betareg")
+   ## Extended-support beta mixture regression (Kosmidis & Zeileis 2025)
+   rs_xbx <- betareg(accuracy1 ~ dyslexia * iq | dyslexia + iq, data = ReadingSkills)
+   summary(rs_xbx)
 
-         ## Smithson & Verkuilen (2006, Table 5)
-         ## OLS regression
-         ## (Note: typo in iq coefficient: 0.3954 instead of 0.3594)
-         rs_ols <- lm(qlogis(accuracy) ~ dyslexia * iq, data = ReadingSkills)
-         summary(rs_ols)
-         ## Beta regression (with numerical rather than analytic standard errors)
-         ## (Note: Smithson & Verkuilen erroneously compute one-sided p-values)
-         rs_beta <- betareg(accuracy ~ dyslexia * iq | dyslexia + iq,
-           data = ReadingSkills, hessian = TRUE)
-         summary(rs_beta)
+   ## Coefficients in XBX are typically somewhat shrunken compared to beta
+   cbind(XBX = coef(rs_xbx), Beta = c(coef(rs_beta), NA))
 
-         ## Extended-support beta mixture regression (Kosmidis & Zeileis 2025)
-         rs_xbx <- betareg(accuracy1 ~ dyslexia * iq | dyslexia + iq, data = ReadingSkills)
-         summary(rs_xbx)
+   ## Visualization
+   plot(accuracy1 ~ iq, data = ReadingSkills, col = c(4, 2)[dyslexia], pch = 19)
+   nd <- data.frame(dyslexia = "no", iq = -30:30/10)
+   lines(nd$iq, predict(rs_xbx, nd), col = 4)
+   lines(nd$iq, predict(rs_beta, nd), col = 4, lty = 5)
+   lines(nd$iq, plogis(predict(rs_ols, nd)), col = 4, lty = 3)
+   nd <- data.frame(dyslexia = "yes", iq = -30:30/10)
+   lines(nd$iq, predict(rs_xbx, nd), col = 2)
+   lines(nd$iq, predict(rs_beta, nd), col = 2, lty = 5)
+   lines(nd$iq, plogis(predict(rs_ols, nd)), col = 2, lty = 3)
+   legend("topleft", c("Dyslexia: no", "Dyslexia: yes", "OLS", "XBX", "Beta"),
+     lty = c(0, 0, 3, 1, 5), pch = c(19, 19, NA, NA, NA), col = c(4, 2, 1, 1, 1), bty = "n")
 
-         ## Coefficients in XBX are typically somewhat shrunken compared to beta
-         cbind(XBX = coef(rs_xbx), Beta = c(coef(rs_beta), NA))
-
-         ## Visualization
-         plot(accuracy1 ~ iq, data = ReadingSkills, col = c(4, 2)[dyslexia], pch = 19)
-         nd <- data.frame(dyslexia = "no", iq = -30:30/10)
-         lines(nd$iq, predict(rs_xbx, nd), col = 4)
-         lines(nd$iq, predict(rs_beta, nd), col = 4, lty = 5)
-         lines(nd$iq, plogis(predict(rs_ols, nd)), col = 4, lty = 3)
-         nd <- data.frame(dyslexia = "yes", iq = -30:30/10)
-         lines(nd$iq, predict(rs_xbx, nd), col = 2)
-         lines(nd$iq, predict(rs_beta, nd), col = 2, lty = 5)
-         lines(nd$iq, plogis(predict(rs_ols, nd)), col = 2, lty = 3)
-         legend("topleft", c("Dyslexia: no", "Dyslexia: yes", "OLS", "XBX", "Beta"),
-           lty = c(0, 0, 3, 1, 5), pch = c(19, 19, NA, NA, NA), col = c(4, 2, 1, 1, 1), bty = "n")
-
-         ## see demo("SmithsonVerkuilen2006", package = "betareg") for further details
+   ## see demo("SmithsonVerkuilen2006", package = "betareg") for further details

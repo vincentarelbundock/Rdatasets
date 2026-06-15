@@ -1,57 +1,53 @@
-.. container::
+========= ===============
+StrikeDur R Documentation
+========= ===============
 
-   .. container::
+Strikes Duration
+----------------
 
-      ========= ===============
-      StrikeDur R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Strikes Duration
-         :name: strikes-duration
+a cross-section from 1968 to 1976
 
-      .. rubric:: Description
-         :name: description
+*number of observations* : 566
 
-      a cross-section from 1968 to 1976
+*country* : United States
 
-      *number of observations* : 566
+Usage
+~~~~~
 
-      *country* : United States
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(StrikeDur)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(StrikeDur)
+A dataframe containing :
 
-      .. rubric:: Format
-         :name: format
+dur
+   duration of the strike in days
 
-      A dataframe containing :
+gdp
+   measure of stage of business cycle (deviation of monthly log
+   industrial production in manufacturing from prediction from OLS on
+   time, time-squared and monthly dummies)
 
-      dur
-         duration of the strike in days
+Source
+~~~~~~
 
-      gdp
-         measure of stage of business cycle (deviation of monthly log
-         industrial production in manufacturing from prediction from OLS
-         on time, time-squared and monthly dummies)
+Kennan, J. (1985) “The Duration of Contract strikes in U.S.
+Manufacturing”, *Journal of Econometrics*, **28**, 5-28.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Kennan, J. (1985) “The Duration of Contract strikes in U.S.
-      Manufacturing”, *Journal of Econometrics*, **28**, 5-28.
+Cameron, A.C. and P.K. Trivedi (2005) *Microeconometrics : methods and
+applications*, Cambridge, pp. 574–5 and 582.
 
-      .. rubric:: References
-         :name: references
+See Also
+~~~~~~~~
 
-      Cameron, A.C. and P.K. Trivedi (2005) *Microeconometrics : methods
-      and applications*, Cambridge, pp. 574–5 and 582.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-      ``Index.Observations``
+``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+``Index.Observations``

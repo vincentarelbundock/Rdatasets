@@ -16,30 +16,23 @@ function processMathHTML() {
 
 <table style="width: 100%;"><tr><td>Armada</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>
-La Felicisima Armada
-</h2>
+<h2>La Felicisima Armada</h2>
 
 <h3>Description</h3>
 
-<p>The Spanish Armada (Spanish: <em>Grande y Felicisima Armada</em>, literally &quot;Great and Most Fortunate Navy&quot;) was a Spanish fleet of 130 ships 
-that sailed from La Coruna in August 1588.
-During its preparation, several accounts of its formidable strength
-were circulated to reassure allied powers of Spain or to intimidate its enemies.
-One such account was given by Paz Salas et Alvarez (1588).
-The intent was bring the forces of Spain to invade England, overthrow
-Queen Elizabeth I, and re-establish Spanish control of the Netherlands.
-However the Armada
-was not as fortunate as hoped: it was all destroyed in one week's fighting.
+<p>The Spanish Armada (Spanish: <em>Grande y Felicisima Armada</em>, literally
+&quot;Great and Most Fortunate Navy&quot;) was a Spanish fleet of 130 ships that
+sailed from La Coruna in August 1588. During its preparation, several
+accounts of its formidable strength were circulated to reassure allied
+powers of Spain or to intimidate its enemies. One such account was given by
+Paz Salas et Alvarez (1588). The intent was bring the forces of Spain to
+invade England, overthrow Queen Elizabeth I, and re-establish Spanish
+control of the Netherlands. However the Armada was not as fortunate as
+hoped: it was all destroyed in one week's fighting.
 </p>
-<p>de Falguerolles (2008) reports the table given here as <code>Armada</code>
-as an early example of data to which multivariate methods might be applied.
+<p>de Falguerolles (2008) reports the table given here as <code>Armada</code> as an
+early example of data to which multivariate methods might be applied.
 </p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data("Armada")</code></pre>
 
 
 <h3>Format</h3>
@@ -76,36 +69,42 @@ as an early example of data to which multivariate methods might be applied.
 
 <h3>Details</h3>
 
-<p>Note that <code>men = soldiers + sailors</code>, so this variable is redundant in a multivariate analysis.
+<p>Note that <code>men = soldiers + sailors</code>, so this variable is redundant in
+a multivariate analysis.
 </p>
-<p>A complete list of the ships of the Spanish Armada, their types, armaments and fate can be found at
-<a href="https://en.wikipedia.org/wiki/List_of_ships_of_the_Spanish_Armada">https://en.wikipedia.org/wiki/List_of_ships_of_the_Spanish_Armada</a>. An enterprising
-data historian might attempt to square the data given there with this table.
+<p>A complete list of the ships of the Spanish Armada, their types, armaments
+and fate can be found at
+<a href="https://en.wikipedia.org/wiki/List_of_ships_of_the_Spanish_Armada">https://en.wikipedia.org/wiki/List_of_ships_of_the_Spanish_Armada</a>. An
+enterprising data historian might attempt to square the data given there
+with this table.
 </p>
-<p>The fleet of Portugal, under the command of Alonso Pérez de Guzmán, 7th Duke of Medina Sidonia
-was largely in control of the attempted invasion of England.
+<p>The fleet of Portugal, under the command of Alonso Pérez de Guzmán, 7th Duke
+of Medina Sidonia was largely in control of the attempted invasion of
+England.
 </p>
 
 
 <h3>Source</h3>
 
-<p>de Falguerolles, A. (2008). L'analyse des donnees; before and around.
-<em>Journal Electronique  d'Histoire des Probabilites et de la Statistique</em>,
-<b>4</b> (2), Link: https://www.jehps.net/Decembre2008/Falguerolles.pdf
+<p>de Falguerolles, A. (2008). L'analyse des donnees; before and
+around. <em>Journal Electronique d'Histoire des Probabilites et de la
+Statistique</em>, <strong>4</strong> (2), Link:
+https://www.jehps.net/Decembre2008/Falguerolles.pdf
 </p>
 
 
 <h3>References</h3>
 
-<p>Pedro de Paz Salas and Antonio Alvares. La felicisima armada que elrey Don
-Felipe nuestro Senor mando juntar enel puerto de la ciudad de Lisboa enel Reyno
-de Portugal. Lisbon, 1588.
+<p>Pedro de Paz Salas and Antonio Alvares. La felicisima armada que
+elrey Don Felipe nuestro Senor mando juntar enel puerto de la ciudad de
+Lisboa enel Reyno de Portugal. Lisbon, 1588.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(Armada)
+<pre><code class='language-R'>
+data(Armada)
 # delete character and redundant variable
 armada &lt;- Armada[,-c(1,6)]
 # use fleet as labels
@@ -121,6 +120,7 @@ plot(armada.pca, type="lines", pch=16, cex=2)
 biplot(armada.pca, xlabs = fleet,
   xlab = "PC1 (Fleet size)",
   ylab = "PC2 (Fleet configuration)")
+
 </code></pre>
 
 </main>

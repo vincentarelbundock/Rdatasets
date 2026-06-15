@@ -1,65 +1,61 @@
-.. container::
+======================= ===============
+CA19PancreaticCancer_df R Documentation
+======================= ===============
 
-   .. container::
+Diagnosis of Pancreatic Cancer with CA19-9 Biomarker
+----------------------------------------------------
 
-      ======================= ===============
-      CA19PancreaticCancer_df R Documentation
-      ======================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Diagnosis of Pancreatic Cancer with CA19-9 Biomarker
-         :name: diagnosis-of-pancreatic-cancer-with-ca19-9-biomarker
+This dataset, CA19PancreaticCancer_df, is a data frame containing data
+from a diagnostic accuracy review on the CA19-9 biomarker used for
+diagnosing pancreatic cancer. The dataset includes the number of true
+positives (TP), false positives (FP), false negatives (FN), and true
+negatives (TN) from various studies.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, CA19PancreaticCancer_df, is a data frame containing
-      data from a diagnostic accuracy review on the CA19-9 biomarker
-      used for diagnosing pancreatic cancer. The dataset includes the
-      number of true positives (TP), false positives (FP), false
-      negatives (FN), and true negatives (TN) from various studies.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(CA19PancreaticCancer_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(CA19PancreaticCancer_df)
+A data frame with 22 observations and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+study
+   Name or identifier of the study (character).
 
-      A data frame with 22 observations and 5 variables:
+TP
+   True positives – the number of correctly identified positive cases
+   (integer).
 
-      study
-         Name or identifier of the study (character).
+FP
+   False positives – the number of cases incorrectly identified as
+   positive (integer).
 
-      TP
-         True positives – the number of correctly identified positive
-         cases (integer).
+FN
+   False negatives – the number of cases incorrectly identified as
+   negative (integer).
 
-      FP
-         False positives – the number of cases incorrectly identified as
-         positive (integer).
+TN
+   True negatives – the number of correctly identified negative cases
+   (integer).
 
-      FN
-         False negatives – the number of cases incorrectly identified as
-         negative (integer).
+Details
+~~~~~~~
 
-      TN
-         True negatives – the number of correctly identified negative
-         cases (integer).
+The dataset name has been kept as 'CA19PancreaticCancer_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the OncoDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'\_df' indicates that the dataset is a data frame. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'CA19PancreaticCancer_df' to
-      avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The suffix '\_df' indicates that the dataset is a
-      data frame. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the R4HCR package.
+Data taken from the R4HCR package.

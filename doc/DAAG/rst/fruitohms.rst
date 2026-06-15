@@ -1,60 +1,56 @@
-.. container::
+========= ===============
+fruitohms R Documentation
+========= ===============
 
-   .. container::
+Electrical Resistance of Kiwi Fruit
+-----------------------------------
 
-      ========= ===============
-      fruitohms R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Electrical Resistance of Kiwi Fruit
-         :name: electrical-resistance-of-kiwi-fruit
+Data are from a study that examined how the electrical resistance of a
+slab of kiwifruit changed with the apparent juice content.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data are from a study that examined how the electrical resistance
-      of a slab of kiwifruit changed with the apparent juice content.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   fruitohms
 
-      .. code:: R
+Format
+~~~~~~
 
-         fruitohms
+This data frame contains the following columns:
 
-      .. rubric:: Format
-         :name: format
+juice
+   apparent juice content (percent)
 
-      This data frame contains the following columns:
+ohms
+   electrical resistance (in ohms)
 
-      juice
-         apparent juice content (percent)
+Source
+~~~~~~
 
-      ohms
-         electrical resistance (in ohms)
+Harker, F. R. and Maindonald J.H. 1994. Ripening of nectarine fruit.
+*Plant Physiology* 106: 165 - 171.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Harker, F. R. and Maindonald J.H. 1994. Ripening of nectarine
-      fruit. *Plant Physiology* 106: 165 - 171.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   plot(ohms ~ juice, xlab="Apparent juice content (%)",ylab="Resistance (ohms)", data=fruitohms)
+   lines(lowess(fruitohms$juice, fruitohms$ohms), lwd=2)
+   pause()
 
-      .. code:: R
-
-         plot(ohms ~ juice, xlab="Apparent juice content (%)",ylab="Resistance (ohms)", data=fruitohms)
-         lines(lowess(fruitohms$juice, fruitohms$ohms), lwd=2)
-         pause()
-
-         require(splines)
-         attach(fruitohms)
-         plot(ohms ~ juice, cex=0.8, xlab="Apparent juice content (%)",
-              ylab="Resistance (ohms)", type="n")
-         fruit.lmb4 <- lm(ohms ~ bs(juice,4))
-         ord <- order(juice)
-         lines(juice[ord], fitted(fruit.lmb4)[ord], lwd=2)
-         ci <- predict(fruit.lmb4, interval="confidence")
-         lines(juice[ord], ci[ord,"lwr"])
-         lines(juice[ord], ci[ord,"upr"])
+   require(splines)
+   attach(fruitohms)
+   plot(ohms ~ juice, cex=0.8, xlab="Apparent juice content (%)",
+        ylab="Resistance (ohms)", type="n")
+   fruit.lmb4 <- lm(ohms ~ bs(juice,4))
+   ord <- order(juice)
+   lines(juice[ord], fitted(fruit.lmb4)[ord], lwd=2)
+   ci <- predict(fruit.lmb4, interval="confidence")
+   lines(juice[ord], ci[ord,"lwr"])
+   lines(juice[ord], ci[ord,"upr"])

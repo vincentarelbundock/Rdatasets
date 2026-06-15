@@ -1,52 +1,48 @@
-.. container::
+============== ===============
+sunspotarea_ts R Documentation
+============== ===============
 
-   .. container::
+Annual Average Sunspot Area
+---------------------------
 
-      ============== ===============
-      sunspotarea_ts R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Annual Average Sunspot Area
-         :name: annual-average-sunspot-area
+The dataset name has been changed to 'sunspotarea_ts' to avoid confusion
+with other datasets in the R ecosystem from which data have been
+sourced. The suffix 'ts' indicates that this dataset is a time series
+object. This naming convention helps distinguish this dataset as part of
+the 'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'sunspotarea_ts' to avoid
-      confusion with other datasets in the R ecosystem from which data
-      have been sourced. The suffix 'ts' indicates that this dataset is
-      a time series object. This naming convention helps distinguish
-      this dataset as part of the 'timeseriesdatasets' package and
-      assists users in identifying its specific characteristics. The
-      original content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(sunspotarea_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(sunspotarea_ts)
+A 'ts' object with 141 observations:
 
-      .. rubric:: Format
-         :name: format
+time
+   Annual time series from 1875 to 2015.
 
-      A 'ts' object with 141 observations:
+value
+   Average sunspot area observed per year (in millionths of the solar
+   disk).
 
-      time
-         Annual time series from 1875 to 2015.
+Details
+~~~~~~~
 
-      value
-         Average sunspot area observed per year (in millionths of the
-         solar disk).
+This dataset contains annual data on the average sunspot area observed
+from 1875 to 2015. Sunspot area measurements indicate the size of
+sunspots on the Sun's surface.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains annual data on the average sunspot area
-      observed from 1875 to 2015. Sunspot area measurements indicate the
-      size of sunspots on the Sun's surface.
-
-      .. rubric:: Source
-         :name: source
-
-      NASA's Solar Dynamics Observatory.
+NASA's Solar Dynamics Observatory.

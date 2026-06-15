@@ -1,89 +1,85 @@
-.. container::
+================== ===============
+mlb_as_play_talent R Documentation
+================== ===============
 
-   .. container::
+The Best MLB All-Star Teams Ever
+--------------------------------
 
-      ================== ===============
-      mlb_as_play_talent R Documentation
-      ================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The Best MLB All-Star Teams Ever
-         :name: the-best-mlb-all-star-teams-ever
+The raw data behind the story "The Best MLB All-Star Teams Ever"
+https://fivethirtyeight.com/features/the-best-mlb-all-star-teams-ever/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "The Best MLB All-Star Teams Ever"
-      https://fivethirtyeight.com/features/the-best-mlb-all-star-teams-ever/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   mlb_as_play_talent
 
-      .. code:: R
+Format
+~~~~~~
 
-         mlb_as_play_talent
+A data frame with 3930 rows representing Major League Baseball players
+in given seasons and 15 variables:
 
-      .. rubric:: Format
-         :name: format
+bbref_id
+   Player's ID at Baseball-Reference.com
 
-      A data frame with 3930 rows representing Major League Baseball
-      players in given seasons and 15 variables:
+yearid
+   The season in question
 
-      bbref_id
-         Player's ID at Baseball-Reference.com
+gamenum
+   Order of All-Star Game for the season (in years w/ multiple ASGs; set
+   to 0 when only 1 per year)
 
-      yearid
-         The season in question
+gameid
+   Game ID at Baseball-Reference.com
 
-      gamenum
-         Order of All-Star Game for the season (in years w/ multiple
-         ASGs; set to 0 when only 1 per year)
+lgid
+   League of All-Star team
 
-      gameid
-         Game ID at Baseball-Reference.com
+startingpos
+   Position (according to baseball convention; 1=pitcher, 2=catcher,
+   etc.) if starter
 
-      lgid
-         League of All-Star team
+off600
+   Estimate of offensive talent, in runs above league average per 600
+   plate appearances
 
-      startingpos
-         Position (according to baseball convention; 1=pitcher,
-         2=catcher, etc.) if starter
+def600
+   Estimate of fielding talent, in runs above league average per 600
+   plate appearances
 
-      off600
-         Estimate of offensive talent, in runs above league average per
-         600 plate appearances
+pitch200
+   Estimate of pitching talent, in runs above league average per 200
+   innings pitched
 
-      def600
-         Estimate of fielding talent, in runs above league average per
-         600 plate appearances
+asg_pa
+   Number of plate appearances in the All-Star Game itself
 
-      pitch200
-         Estimate of pitching talent, in runs above league average per
-         200 innings pitched
+asg_ip
+   Number of innings pitched in the All-Star Game itself
 
-      asg_pa
-         Number of plate appearances in the All-Star Game itself
+offper9innasg
+   Expected offensive runs added above average (from talent) based on PA
+   in ASG, scaled to a 9-inning game
 
-      asg_ip
-         Number of innings pitched in the All-Star Game itself
+defper9innasg
+   Expected defensive runs added above average (from talent) based on PA
+   in ASG, scaled to a 9-inning game
 
-      offper9innasg
-         Expected offensive runs added above average (from talent) based
-         on PA in ASG, scaled to a 9-inning game
+pitper9innasg
+   Expected pitching runs added above average (from talent) based on IP
+   in ASG, scaled to a 9-inning game
 
-      defper9innasg
-         Expected defensive runs added above average (from talent) based
-         on PA in ASG, scaled to a 9-inning game
+totper9innasg
+   Expected runs added above average (from talent) based on PA/IP in
+   ASG, scaled to a 9-inning game
 
-      pitper9innasg
-         Expected pitching runs added above average (from talent) based
-         on IP in ASG, scaled to a 9-inning game
+Source
+~~~~~~
 
-      totper9innasg
-         Expected runs added above average (from talent) based on PA/IP
-         in ASG, scaled to a 9-inning game
-
-      .. rubric:: Source
-         :name: source
-
-      https://www.baseball-reference.com/ , http://chadwick-bureau.com,
-      Fangraphs
+https://www.baseball-reference.com/ , http://chadwick-bureau.com,
+Fangraphs

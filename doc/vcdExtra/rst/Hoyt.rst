@@ -1,142 +1,130 @@
-.. container::
+==== ===============
+Hoyt R Documentation
+==== ===============
 
-   .. container::
+Minnesota High School Graduates
+-------------------------------
 
-      ==== ===============
-      Hoyt R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Minnesota High School Graduates
-         :name: minnesota-high-school-graduates
+Minnesota high school graduates of June 1930 were classified with
+respect to (a) ``Rank`` by thirds in their graduating class, (b)
+post-high school ``Status`` in April 1939 (4 levels), (c) ``Sex``, (d)
+father's ``Occupation``\ al status (7 levels, from 1=High to 7=Low).
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Minnesota high school graduates of June 1930 were classified with
-      respect to (a) ``Rank`` by thirds in their graduating class, (b)
-      post-high school ``Status`` in April 1939 (4 levels), (c) ``Sex``,
-      (d) father's ``Occupation``\ al status (7 levels, from 1=High to
-      7=Low).
+A 4-dimensional array resulting from cross-tabulating 4 variables for
+13968 observations. The variable names and their levels are:
 
-      The data were first presented by Hoyt et al. (1959) and have been
-      analyzed by Fienberg(1980), Plackett(1974) and others.
+== ============== =======================================
+No Name           Levels
+1  ``Status``     ``⁠"College", "School", "Job", "Other"⁠``
+2  ``Rank``       ``⁠"Low", "Middle", "High"⁠``
+3  ``Occupation`` ``⁠"1", "2", "3", "4", "5", "6", "7"⁠``
+4  ``Sex``        ``⁠"Male", "Female"⁠``
+                  
+== ============== =======================================
 
-      .. rubric:: Usage
-         :name: usage
+Details
+~~~~~~~
 
-      .. code:: R
+The data were first presented by Hoyt et al. (1959) and have been
+analyzed by Fienberg(1980), Plackett(1974) and others.
 
-         data(Hoyt)
+Post high-school ``Status`` is natural to consider as the response.
+``Rank`` and father's ``Occupation`` are ordinal variables.
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      A 4-dimensional array resulting from cross-tabulating 4 variables
-      for 13968 observations. The variable names and their levels are:
+Fienberg, S. E. (1980). *The Analysis of Cross-Classified Categorical
+Data*. Cambridge, MA: MIT Press, p. 91-92.
 
-      == ============== =======================================
-      No Name           Levels
-      1  ``Status``     ``"College", "School", "Job", "Other"``
-      2  ``Rank``       ``"Low", "Middle", "High"``
-      3  ``Occupation`` ``"1", "2", "3", "4", "5", "6", "7"``
-      4  ``Sex``        ``"Male", "Female"``
-      \                 
-      == ============== =======================================
+R. L. Plackett, (1974). *The Analysis of Categorical Data*. London:
+Griffin.
 
-      .. rubric:: Details
-         :name: details
+References
+~~~~~~~~~~
 
-      Post high-school ``Status`` is natural to consider as the
-      response. ``Rank`` and father's ``Occupation`` are ordinal
-      variables.
+Hoyt, C. J., Krishnaiah, P. R. and Torrance, E. P. (1959) Analysis of
+complex contingency tables, *Journal of Experimental Education* 27,
+187-194.
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      Fienberg, S. E. (1980). *The Analysis of Cross-Classified
-      Categorical Data*. Cambridge, MA: MIT Press, p. 91-92.
+``minn38`` provides the same data as a data frame.
 
-      R. L. Plackett, (1974). *The Analysis of Categorical Data*.
-      London: Griffin.
+Examples
+~~~~~~~~
 
-      .. rubric:: References
-         :name: references
+.. code:: R
 
-      Hoyt, C. J., Krishnaiah, P. R. and Torrance, E. P. (1959) Analysis
-      of complex contingency tables, *Journal of Experimental Education*
-      27, 187-194.
 
-      .. rubric:: See Also
-         :name: see-also
+   data(Hoyt)
 
-      ``minn38`` provides the same data as a data frame.
+   # display the table
+   structable(Status + Sex ~ Rank + Occupation, data=Hoyt)
 
-      .. rubric:: Examples
-         :name: examples
+   # mosaic for independence model
+   plot(Hoyt, shade=TRUE)
 
-      .. code:: R
+   # examine all pairwise mosaics
+   pairs(Hoyt, shade=TRUE)
 
-         data(Hoyt)
+   # collapse Status to College vs. Non-College
+   Hoyt1 <- collapse.table(Hoyt, Status=c("College", rep("Non-College",3)))
+   plot(Hoyt1, shade=TRUE)
 
-         # display the table
-         structable(Status + Sex ~ Rank + Occupation, data=Hoyt)
+   #################################################
+   # fitting models with loglm, plotting with mosaic
+   #################################################
 
-         # mosaic for independence model
-         plot(Hoyt, shade=TRUE)
+   # fit baseline log-linear model for Status as response
+   require(MASS)
+   hoyt.mod0 <- loglm(~ Status + (Sex*Rank*Occupation),
+     data=Hoyt1)
+   hoyt.mod0
 
-         # examine all pairwise mosaics
-         pairs(Hoyt, shade=TRUE)
+   mosaic(hoyt.mod0,
+     gp=shading_Friendly,
+     main="Baseline model: Status + (Sex*Rank*Occ)")
 
-         # collapse Status to College vs. Non-College
-         Hoyt1 <- collapse.table(Hoyt, Status=c("College", rep("Non-College",3)))
-         plot(Hoyt1, shade=TRUE)
+   # add one-way association of Status with factors
+   hoyt.mod1 <- loglm(~ Status * (Sex + Rank + Occupation) + (Sex*Rank*Occupation),
+     data=Hoyt1)
+   hoyt.mod1
 
-         #################################################
-         # fitting models with loglm, plotting with mosaic
-         #################################################
+   mosaic(hoyt.mod1,
+     gp=shading_Friendly,
+     main="Status * (Sex + Rank + Occ)")
 
-         # fit baseline log-linear model for Status as response
-         require(MASS)
-         hoyt.mod0 <- loglm(~ Status + (Sex*Rank*Occupation), 
-           data=Hoyt1)
-         hoyt.mod0
+   # can we drop any terms?
+   drop1(hoyt.mod1, test="Chisq")
 
-         mosaic(hoyt.mod0, 
-           gp=shading_Friendly, 
-           main="Baseline model: Status + (Sex*Rank*Occ)")
+   # assess model fit
+   anova(hoyt.mod0, hoyt.mod1)
 
-         # add one-way association of Status with factors
-         hoyt.mod1 <- loglm(~ Status * (Sex + Rank + Occupation) + (Sex*Rank*Occupation), 
-           data=Hoyt1)
-         hoyt.mod1
+   # what terms to add?
+   add1(hoyt.mod1, ~.^2, test="Chisq")
 
-         mosaic(hoyt.mod1, 
-           gp=shading_Friendly, 
-           main="Status * (Sex + Rank + Occ)")
+   # add interaction of Sex:Occupation on Status
+   hoyt.mod2 <- update(hoyt.mod1, ~ . + Status:Sex:Occupation)
 
-         # can we drop any terms?
-         drop1(hoyt.mod1, test="Chisq")
+   mosaic(hoyt.mod2,
+     gp=shading_Friendly,
+     main="Adding Status:Sex:Occupation")
 
-         # assess model fit
-         anova(hoyt.mod0, hoyt.mod1)
+   # compare model fits
+   anova(hoyt.mod0, hoyt.mod1, hoyt.mod2)
 
-         # what terms to add?
-         add1(hoyt.mod1, ~.^2, test="Chisq")
+   # Alternatively, try stepwise analysis, heading toward the saturated model
+   steps <- step(hoyt.mod0,
+     direction="forward",
+     scope=~Status*Sex*Rank*Occupation)
 
-         # add interaction of Sex:Occupation on Status
-         hoyt.mod2 <- update(hoyt.mod1, ~ . + Status:Sex:Occupation)
-
-         mosaic(hoyt.mod2, 
-           gp=shading_Friendly, 
-           main="Adding Status:Sex:Occupation")
-
-         # compare model fits
-         anova(hoyt.mod0, hoyt.mod1, hoyt.mod2)
-
-         # Alternatively, try stepwise analysis, heading toward the saturated model
-         steps <- step(hoyt.mod0, 
-           direction="forward", 
-           scope=~Status*Sex*Rank*Occupation)
-
-         # display anova
-         steps$anova
+   # display anova
+   steps$anova

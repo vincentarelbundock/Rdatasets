@@ -1,57 +1,53 @@
-.. container::
+========== ===============
+gafa_stock R Documentation
+========== ===============
 
-   .. container::
+GAFA stock prices
+-----------------
 
-      ========== ===============
-      gafa_stock R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: GAFA stock prices
-         :name: gafa-stock-prices
+Historical stock prices from 2014-2018 for Google, Amazon, Facebook and
+Apple. All prices are in $USD.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Historical stock prices from 2014-2018 for Google, Amazon,
-      Facebook and Apple. All prices are in $USD.
+Time series of class ``tsibble``
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      Time series of class ``tsibble``
+``gafa_stock`` is a ``tsibble`` containing data on irregular trading
+days:
 
-      .. rubric:: Details
-         :name: details
+========== =========================================
+Open:      The opening price for the stock.
+High:      The stock's highest trading price.
+Low:       The stock's lowest trading price.
+Close:     The closing price for the stock.
+Adj_Close: The adjusted closing price for the stock.
+Volume:    The amount of stock traded.
+           
+========== =========================================
 
-      ``gafa_stock`` is a ``tsibble`` containing data on irregular
-      trading days:
+Each stock is uniquely identified by one key:
 
-      ========== =========================================
-      Open:      The opening price for the stock.
-      High:      The stock's highest trading price.
-      Low:       The stock's lowest trading price.
-      Close:     The closing price for the stock.
-      Adj_Close: The adjusted closing price for the stock.
-      Volume:    The amount of stock traded.
-      \          
-      ========== =========================================
+======= ================================
+Symbol: The ticker symbol for the stock.
+        
+======= ================================
 
-      Each stock is uniquely identified by one key:
+Source
+~~~~~~
 
-      ======= ================================
-      Symbol: The ticker symbol for the stock.
-      \       
-      ======= ================================
+Yahoo Finance historical data
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Yahoo Finance historical data
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         library(tsibble)
-         gafa_stock
+   library(tsibble)
+   gafa_stock

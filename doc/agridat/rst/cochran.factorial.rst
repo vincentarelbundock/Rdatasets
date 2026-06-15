@@ -1,101 +1,97 @@
-.. container::
+================= ===============
+cochran.factorial R Documentation
+================= ===============
 
-   .. container::
+Factorial experiment of beans, 2x2x2x2
+--------------------------------------
 
-      ================= ===============
-      cochran.factorial R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Factorial experiment of beans, 2x2x2x2
-         :name: factorial-experiment-of-beans-2x2x2x2
+Factorial experiment of beans, 2x2x2x2.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Factorial experiment of beans, 2x2x2x2.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("cochran.factorial")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("cochran.factorial")
+A data frame with 32 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``rep``
+   rep factor
 
-      A data frame with 32 observations on the following 4 variables.
+``block``
+   block factor
 
-      ``rep``
-         rep factor
+``trt``
+   treatment factor, 16 levels
 
-      ``block``
-         block factor
+``yield``
+   yield (pounds)
 
-      ``trt``
-         treatment factor, 16 levels
+``d``
+   dung treatment, 2 levels
 
-      ``yield``
-         yield (pounds)
+``n``
+   nitrogen treatment, 2 levels
 
-      ``d``
-         dung treatment, 2 levels
+``p``
+   phosphorous treatment, 2 levels
 
-      ``n``
-         nitrogen treatment, 2 levels
+``k``
+   potassium treatment, 2 levels
 
-      ``p``
-         phosphorous treatment, 2 levels
+Details
+~~~~~~~
 
-      ``k``
-         potassium treatment, 2 levels
+Conducted by Rothamsted Experiment Station in 1936.
 
-      .. rubric:: Details
-         :name: details
+There were 4 treatment factors:
 
-      Conducted by Rothamsted Experiment Station in 1936.
+2 d dung levels: None, 10 tons/acre.
 
-      There were 4 treatment factors:
+2 n nitrochalk levels: None, 0.4 hundredweight nitrogen per acre.
 
-      2 d dung levels: None, 10 tons/acre.
+2 p superphosphate levels: None, 0.6 hundredweight per acre
 
-      2 n nitrochalk levels: None, 0.4 hundredweight nitrogen per acre.
+2 k muriate of potash levels: None, 1 hundredweight K20 per acres.
 
-      2 p superphosphate levels: None, 0.6 hundredweight per acre
+The response variable is the yield of beans.
 
-      2 k muriate of potash levels: None, 1 hundredweight K20 per acres.
+Source
+~~~~~~
 
-      The response variable is the yield of beans.
+Cochran, W.G. and Cox, G.M. (1957), Experimental Designs, 2nd ed., Wiley
+and Sons, New York, p. 160.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Cochran, W.G. and Cox, G.M. (1957), Experimental Designs, 2nd ed.,
-      Wiley and Sons, New York, p. 160.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(cochran.factorial)
+   dat <- cochran.factorial
 
-         ## Not run: 
+   # Ensure factors
+   dat <- transform(dat, d=factor(d), n=factor(n), p=factor(p), k=factor(k))
 
-         library(agridat)
-         data(cochran.factorial)
-         dat <- cochran.factorial
-
-         # Ensure factors
-         dat <- transform(dat, d=factor(d), n=factor(n), p=factor(p), k=factor(k))
-
-         # Cochran table 6.5.
-         m1 <- lm(yield ~ rep * block + (d+n+p+k)^3, data=dat)
-         anova(m1)
+   # Cochran table 6.5.
+   m1 <- lm(yield ~ rep * block + (d+n+p+k)^3, data=dat)
+   anova(m1)
 
 
-         libs(FrF2)
-         aliases(m1)
-         MEPlot(m1, select=3:6,
-                main="cochran.factorial - main effects plot")
+   libs(FrF2)
+   aliases(m1)
+   MEPlot(m1, select=3:6,
+          main="cochran.factorial - main effects plot")
 
 
-         ## End(Not run)
+   ## End(Not run)

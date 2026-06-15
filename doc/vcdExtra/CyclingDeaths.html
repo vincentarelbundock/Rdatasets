@@ -16,22 +16,15 @@ function processMathHTML() {
 
 <table style="width: 100%;"><tr><td>CyclingDeaths</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>
-London Cycling Deaths
-</h2>
+<h2>London Cycling Deaths</h2>
 
 <h3>Description</h3>
 
-<p>A data frame containing the number of deaths of cyclists in London from 2005 through
-2012 in each fortnightly period.  Aberdein &amp; Spiegelhalter (2013)
-discuss these data in relation to the observation that six cyclists
-died in London between Nov. 5 and Nov. 13, 2013.
+<p>A data frame containing the number of deaths of cyclists in London from 2005
+through 2012 in each fortnightly period.  Aberdein &amp; Spiegelhalter (2013)
+discuss these data in relation to the observation that six cyclists died in
+London between Nov. 5 and Nov. 13, 2013.
 </p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data(CyclingDeaths)</code></pre>
 
 
 <h3>Format</h3>
@@ -50,22 +43,24 @@ died in London between Nov. 5 and Nov. 13, 2013.
 
 <h3>Source</h3>
 
-<p>Road Safety Data from GOV.UK, but 2005-2012.
-Similar data is available in the <span class="pkg">stats19</span>, <a href="https://docs.ropensci.org/stats19/">https://docs.ropensci.org/stats19/</a>.
+<p><a href="https://www.data.gov.uk/dataset/cb7ae6f0-4be6-4935-9277-47e5ce24a11f/road-accidents-safety-data">https://www.data.gov.uk/dataset/cb7ae6f0-4be6-4935-9277-47e5ce24a11f/road-accidents-safety-data</a>,
+STATS 19 data, 2005-2012, using the files <code>Casualty0512.csv</code> and
+<code>Accidents0512.csv</code>
 </p>
 
 
 <h3>References</h3>
 
-<p>Aberdein, Jody and Spiegelhalter, David (2013).
-Have London's roads become more dangerous for cyclists?
-<em>Significance</em>, 10(6), 46&ndash;48.
+<p>Aberdein, Jody and Spiegelhalter, David (2013). Have London's
+roads become more dangerous for cyclists? <em>Significance</em>, 10(6),
+46&ndash;48.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(CyclingDeaths)
+<pre><code class='language-R'>
+data(CyclingDeaths)
 
 plot(deaths ~ date, data=CyclingDeaths,
   type="h",
@@ -91,6 +86,7 @@ distplot(CyclingDeaths.tab)
 # prob of 6 or more deaths in one fortnight
 lambda &lt;- gf$par$lambda
 ppois(5, lambda, lower.tail=FALSE)
+
 </code></pre>
 
 </main>

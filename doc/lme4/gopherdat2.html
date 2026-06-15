@@ -1,0 +1,137 @@
+<!DOCTYPE html><html><head><title>R: Gopher tortoises shell remains</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gopherdat2</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Gopher tortoises shell remains
+</h2>
+
+<h3>Description</h3>
+
+<p>Data of fresh Gopher tortoise shell remains (Ozgul et al. 2009).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("gopherdat2")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 30 observations on the following 7 variables.
+</p>
+
+<dl>
+<dt><code>Site</code></dt><dd><p>a factor representing the sampling site.  There are 
+<code>10</code> levels: 
+</p>
+
+<ul>
+<li> <p><code>BS</code> (Big Shoals State Park).
+</p>
+</li>
+<li> <p><code>CB</code> (Camp Blanding Wildlife Management Area).
+</p>
+</li>
+<li> <p><code>Cent</code> (privately-owned property in central Florida).
+</p>
+</li>
+<li> <p><code>CF</code> (Cecil Field/Branan Field Wildlife and Environmental 
+Area).
+</p>
+</li>
+<li> <p><code>FC</code> (Fort Cooper State Park).
+</p>
+</li>
+<li> <p><code>FE</code> (Flying Eagle Wildlife Management Area).
+</p>
+</li>
+<li> <p><code>GH</code> (Gold Head Branch State Park).
+</p>
+</li>
+<li> <p><code>Old</code> (Perry Oldenburg Wildlife and Environmental Area).
+</p>
+</li>
+<li> <p><code>Ord</code> (Ordway-Swisher Biological Station). 
+</p>
+</li>
+<li> <p><code>TE</code> (Tenoroc Fish Management Area).
+</p>
+</li></ul>
+
+</dd>
+<dt><code>year</code></dt><dd><p>a numeric vector of the sampling year.</p>
+</dd>  
+<dt><code>shells</code></dt><dd><p>a numeric vector of the number of shells found.</p>
+</dd>
+<dt><code>Area</code></dt><dd><p>a numeric vector representing site area 
+(units unknown).</p>
+</dd>
+<dt><code>density</code></dt><dd><p>a numeric vector representing population density.</p>
+</dd>
+<dt><code>prev</code></dt><dd><p>a numeric vector representing the seroprevalence 
+(frequency of antibodies to disease) of <em>M. agassizi</em>. </p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Details of the study is described in (Ozgul et al. 2009) as
+follows:
+&quot;The fieldwork was conducted between 2003 and 2006, during late spring/summer 
+(May–September). Systematic surveys were conducted to locate tortoise burrows 
+and shell remains from deceased tortoises at study sites and consisted of a 
+line of four to eight observers spaced 10 m apart walking parallel transects 
+across the study area.&quot;
+</p>
+
+
+<h3>Source</h3>
+
+<p>(Ozgul et al. 2009)
+</p>
+
+
+<h3>References</h3>
+
+<p>Ozgul A, Oli MK, Bolker BM, Perez-Heydrich C (2009).
+&ldquo;Upper respiratory tract disease, force of infection, and effects on  survival of gopher tortoises.&rdquo;
+<em>Ecological Applications</em>, <b>19</b>(3), 786-798.
+<a href="https://doi.org/10.1890/08-0219.1">doi:10.1890/08-0219.1</a>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Simple model gives a singular fit:
+gopher_glmer &lt;- glmer(shells ~ factor(year) + prev + offset(log(Area))
+                   + (1|Site), data = gopherdat2, family = "poisson")
+## The site-level variance for this model is indeed zero:
+VarCorr(gopher_glmer)
+## So a Poisson GLM gives the same answer here:
+gopher_glm &lt;- glm(shells ~ factor(year) + prev + offset(log(Area)),
+                  data = gopherdat2, family = "poisson")
+all.equal(fixef(gopher_glmer), coef(gopher_glm))
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

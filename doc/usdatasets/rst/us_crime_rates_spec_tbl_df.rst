@@ -1,74 +1,69 @@
-.. container::
+========================== ===============
+us_crime_rates_spec_tbl_df R Documentation
+========================== ===============
 
-   .. container::
+US Crime Rates
+--------------
 
-      ========================== ===============
-      us_crime_rates_spec_tbl_df R Documentation
-      ========================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: US Crime Rates
-         :name: us-crime-rates
+The dataset 'us_crime_rates_spec_tbl_df' contains crime statistics for
+the United States, including various types of crimes and population data
+for each year. This dataset is structured as a tibble for ease of use
+within the R ecosystem. This naming convention helps distinguish this
+dataset as part of the 'usdatasets' package.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset 'us_crime_rates_spec_tbl_df' contains crime statistics
-      for the United States, including various types of crimes and
-      population data for each year. This dataset is structured as a
-      tibble for ease of use within the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      'usdatasets' package.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(us_crime_rates_spec_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(us_crime_rates_spec_tbl_df)
+A tibble with 60 rows and 12 columns:
 
-      .. rubric:: Format
-         :name: format
+year
+   Numeric year of the recorded data, e.g., 2000, 2001.
 
-      A tibble with 60 rows and 12 columns:
+population
+   Numeric population total for the respective year.
 
-      year
-         Numeric year of the recorded data, e.g., 2000, 2001.
+total
+   Numeric total number of crimes reported.
 
-      population
-         Numeric population total for the respective year.
+violent
+   Numeric total number of violent crimes.
 
-      total
-         Numeric total number of crimes reported.
+property
+   Numeric total number of property crimes.
 
-      violent
-         Numeric total number of violent crimes.
+murder
+   Numeric total number of murders.
 
-      property
-         Numeric total number of property crimes.
+forcible_rape
+   Numeric total number of forcible rapes.
 
-      murder
-         Numeric total number of murders.
+robbery
+   Numeric total number of robberies.
 
-      forcible_rape
-         Numeric total number of forcible rapes.
+aggravated_assault
+   Numeric total number of aggravated assaults.
 
-      robbery
-         Numeric total number of robberies.
+burglary
+   Numeric total number of burglaries.
 
-      aggravated_assault
-         Numeric total number of aggravated assaults.
+larceny_theft
+   Numeric total number of larcenies.
 
-      burglary
-         Numeric total number of burglaries.
+vehicle_theft
+   Numeric total number of vehicle thefts.
 
-      larceny_theft
-         Numeric total number of larcenies.
+Source
+~~~~~~
 
-      vehicle_theft
-         Numeric total number of vehicle thefts.
-
-      .. rubric:: Source
-         :name: source
-
-      Federal Bureau of Investigation (FBI) Uniform Crime Reporting
-      (UCR) Program.
+Federal Bureau of Investigation (FBI) Uniform Crime Reporting (UCR)
+Program.

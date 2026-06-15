@@ -1,45 +1,41 @@
-.. container::
+====== ===============
+mcycle R Documentation
+====== ===============
 
-   .. container::
+Data from a Simulated Motorcycle Accident
+-----------------------------------------
 
-      ====== ===============
-      mcycle R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Data from a Simulated Motorcycle Accident
-         :name: data-from-a-simulated-motorcycle-accident
+A data frame giving a series of measurements of head acceleration in a
+simulated motorcycle accident, used to test crash helmets.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A data frame giving a series of measurements of head acceleration
-      in a simulated motorcycle accident, used to test crash helmets.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   mcycle
 
-      .. code:: R
+Format
+~~~~~~
 
-         mcycle
+``times``
+   in milliseconds after impact.
 
-      .. rubric:: Format
-         :name: format
+``accel``
+   in g.
 
-      ``times``
-         in milliseconds after impact.
+Source
+~~~~~~
 
-      ``accel``
-         in g.
+Silverman, B. W. (1985) Some aspects of the spline smoothing approach to
+non-parametric curve fitting. *Journal of the Royal Statistical Society
+series B* **47**, 1–52.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Silverman, B. W. (1985) Some aspects of the spline smoothing
-      approach to non-parametric curve fitting. *Journal of the Royal
-      Statistical Society series B* **47**, 1–52.
-
-      .. rubric:: References
-         :name: references
-
-      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
-      Statistics with S-PLUS.* Fourth Edition. Springer.
+Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics with
+S-PLUS.* Fourth Edition. Springer.

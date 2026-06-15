@@ -1,77 +1,72 @@
-.. container::
+====================== ===============
+LungNodulesDetected_df R Documentation
+====================== ===============
 
-   .. container::
+Incidental or Screen-Detected Lung Nodules
+------------------------------------------
 
-      ====================== ===============
-      LungNodulesDetected_df R Documentation
-      ====================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Incidental or Screen-Detected Lung Nodules
-         :name: incidental-or-screen-detected-lung-nodules
+This dataset, LungNodulesDetected_df, is a data frame containing data on
+incidental or screen-detected lung nodules. The data includes
+information such as patient demographics, smoking status, nodule
+characteristics, and whether the nodule is malignant. The dataset was
+collected from patients with pulmonary nodules of up to 15mm detected on
+routine CT chest scans, aged 18 years or older, from 3 academic centers
+in the UK.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, LungNodulesDetected_df, is a data frame containing
-      data on incidental or screen-detected lung nodules. The data
-      includes information such as patient demographics, smoking status,
-      nodule characteristics, and whether the nodule is malignant. The
-      dataset was collected from patients with pulmonary nodules of up
-      to 15mm detected on routine CT chest scans, aged 18 years or
-      older, from 3 academic centers in the UK.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(LungNodulesDetected_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(LungNodulesDetected_df)
+A data frame with 999 observations and 8 variables:
 
-      .. rubric:: Format
-         :name: format
+sex
+   Gender of the patient, represented as a factor with 2 levels (Male,
+   Female).
 
-      A data frame with 999 observations and 8 variables:
+age
+   Age of the patient (numeric).
 
-      sex
-         Gender of the patient, represented as a factor with 2 levels
-         (Male, Female).
+num.annotated
+   Number of annotated nodules (numeric).
 
-      age
-         Age of the patient (numeric).
+location
+   Location of the nodule, represented as a factor with 6 levels.
 
-      num.annotated
-         Number of annotated nodules (numeric).
+spiculate
+   Whether the nodule is spiculated, represented as a factor with 2
+   levels (Yes, No).
 
-      location
-         Location of the nodule, represented as a factor with 6 levels.
+smoke.status
+   Smoking status of the patient, represented as a factor with 5 levels.
 
-      spiculate
-         Whether the nodule is spiculated, represented as a factor with
-         2 levels (Yes, No).
+diameter
+   Diameter of the nodule (numeric).
 
-      smoke.status
-         Smoking status of the patient, represented as a factor with 5
-         levels.
+malignant
+   Malignancy status of the nodule (numeric).
 
-      diameter
-         Diameter of the nodule (numeric).
+Details
+~~~~~~~
 
-      malignant
-         Malignancy status of the nodule (numeric).
+The dataset name has been kept as 'LungNodulesDetected_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the OncoDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'\_df' indicates that the dataset is a data frame. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'LungNodulesDetected_df' to
-      avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The suffix '\_df' indicates that the dataset is a
-      data frame. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the R4HCR package. The dataset was collected from
-      patients with pulmonary nodules detected on CT chest scans, aged
-      18 years or older, from 3 academic centers in the UK.
+Data taken from the R4HCR package. The dataset was collected from
+patients with pulmonary nodules detected on CT chest scans, aged 18
+years or older, from 3 academic centers in the UK.

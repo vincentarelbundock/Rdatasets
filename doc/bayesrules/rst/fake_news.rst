@@ -1,131 +1,127 @@
-.. container::
+========= ===============
+fake_news R Documentation
+========= ===============
 
-   .. container::
+A collection of 150 news articles
+---------------------------------
 
-      ========= ===============
-      fake_news R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: A collection of 150 news articles
-         :name: a-collection-of-150-news-articles
+A dataset containing data behind the study "FakeNewsNet: A Data
+Repository with News Content, Social Context and Spatialtemporal
+Information for Studying Fake News on Social Media"
+https://arxiv.org/abs/1809.01286. The news articles in this dataset were
+posted to Facebook in September 2016, in the run-up to the U.S.
+presidential election.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset containing data behind the study "FakeNewsNet: A Data
-      Repository with News Content, Social Context and Spatialtemporal
-      Information for Studying Fake News on Social Media"
-      https://arxiv.org/abs/1809.01286. The news articles in this
-      dataset were posted to Facebook in September 2016, in the run-up
-      to the U.S. presidential election.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   fake_news
 
-      .. code:: R
+Format
+~~~~~~
 
-         fake_news
+A data frame with 150 rows and 6 variables:
 
-      .. rubric:: Format
-         :name: format
+title
+   The title of the news article
 
-      A data frame with 150 rows and 6 variables:
+text
+   Text of the article
 
-      title
-         The title of the news article
+url
+   Hyperlink for the article
 
-      text
-         Text of the article
+authors
+   Authors of the article
 
-      url
-         Hyperlink for the article
+type
+   Binary variable indicating whether the article presents fake or real
+   news(fake, real)
 
-      authors
-         Authors of the article
+title_words
+   Number of words in the title
 
-      type
-         Binary variable indicating whether the article presents fake or
-         real news(fake, real)
+text_words
+   Number of words in the text
 
-      title_words
-         Number of words in the title
+title_char
+   Number of characters in the title
 
-      text_words
-         Number of words in the text
+text_char
+   Number of characters in the text
 
-      title_char
-         Number of characters in the title
+title_caps
+   Number of words that are all capital letters in the title
 
-      text_char
-         Number of characters in the text
+text_caps
+   Number of words that are all capital letters in the text
 
-      title_caps
-         Number of words that are all capital letters in the title
+title_caps_percent
+   Percent of words that are all capital letters in the title
 
-      text_caps
-         Number of words that are all capital letters in the text
+text_caps_percent
+   Percent of words that are all capital letters in the text
 
-      title_caps_percent
-         Percent of words that are all capital letters in the title
+title_excl
+   Number of characters that are exclamation marks in the title
 
-      text_caps_percent
-         Percent of words that are all capital letters in the text
+text_excl
+   Number of characters that are exclamation marks in the text
 
-      title_excl
-         Number of characters that are exclamation marks in the title
+title_excl_percent
+   Percent of characters that are exclamation marks in the title
 
-      text_excl
-         Number of characters that are exclamation marks in the text
+text_excl_percent
+   Percent of characters that are exclamation marks in the text
 
-      title_excl_percent
-         Percent of characters that are exclamation marks in the title
+title_has_excl
+   Binary variable indicating whether the title of the article includes
+   an exlamation point or not(TRUE, FALSE)
 
-      text_excl_percent
-         Percent of characters that are exclamation marks in the text
+anger
+   Percent of words that are associated with anger
 
-      title_has_excl
-         Binary variable indicating whether the title of the article
-         includes an exlamation point or not(TRUE, FALSE)
+anticipation
+   Percent of words that are associated with anticipation
 
-      anger
-         Percent of words that are associated with anger
+disgust
+   Percent of words that are associated with disgust
 
-      anticipation
-         Percent of words that are associated with anticipation
+fear
+   Percent of words that are associated with fear
 
-      disgust
-         Percent of words that are associated with disgust
+joy
+   Percent of words that are associated with joy
 
-      fear
-         Percent of words that are associated with fear
+sadness
+   Percent of words that are associated with sadness
 
-      joy
-         Percent of words that are associated with joy
+surprise
+   Percent of words that are associated with surprise
 
-      sadness
-         Percent of words that are associated with sadness
+trust
+   Percent of words that are associated with trust
 
-      surprise
-         Percent of words that are associated with surprise
+negative
+   Percent of words that have negative sentiment
 
-      trust
-         Percent of words that are associated with trust
+positive
+   Percent of words that have positive sentiment
 
-      negative
-         Percent of words that have negative sentiment
+text_syllables
+   Number of syllables in text
 
-      positive
-         Percent of words that have positive sentiment
+text_syllables_per_word
+   Number of syllables per word in text
 
-      text_syllables
-         Number of syllables in text
+Source
+~~~~~~
 
-      text_syllables_per_word
-         Number of syllables per word in text
-
-      .. rubric:: Source
-         :name: source
-
-      Shu, K., Mahudeswaran, D., Wang, S., Lee, D. and Liu, H. (2018)
-      FakeNewsNet: A Data Repository with News Content, Social Context
-      and Dynamic Information for Studying Fake News on Social Media
+Shu, K., Mahudeswaran, D., Wang, S., Lee, D. and Liu, H. (2018)
+FakeNewsNet: A Data Repository with News Content, Social Context and
+Dynamic Information for Studying Fake News on Social Media

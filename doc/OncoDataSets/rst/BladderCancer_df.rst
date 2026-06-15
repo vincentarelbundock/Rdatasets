@@ -1,68 +1,63 @@
-.. container::
+================ ===============
+BladderCancer_df R Documentation
+================ ===============
 
-   .. container::
+Bladder Cancer Recurrences
+--------------------------
 
-      ================ ===============
-      BladderCancer_df R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Bladder Cancer Recurrences
-         :name: bladder-cancer-recurrences
+This dataset, BladderCancer_df, is a data frame containing data on
+recurrences of bladder cancer. It is commonly used to demonstrate
+methodology for recurrent event modelling. The dataset includes
+information from 340 observations and 7 variables related to bladder
+cancer recurrences.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, BladderCancer_df, is a data frame containing data on
-      recurrences of bladder cancer. It is commonly used to demonstrate
-      methodology for recurrent event modelling. The dataset includes
-      information from 340 observations and 7 variables related to
-      bladder cancer recurrences.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(BladderCancer_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(BladderCancer_df)
+A data frame with 340 observations and 7 variables:
 
-      .. rubric:: Format
-         :name: format
+id
+   Patient identifier (integer).
 
-      A data frame with 340 observations and 7 variables:
+rx
+   Treatment received: 1 = thiotepa, 2 = placebo (numeric).
 
-      id
-         Patient identifier (integer).
+number
+   Number of recurrences (integer).
 
-      rx
-         Treatment received: 1 = thiotepa, 2 = placebo (numeric).
+size
+   Size of the recurrence (integer).
 
-      number
-         Number of recurrences (integer).
+stop
+   Time at which the event or censoring occurred (integer).
 
-      size
-         Size of the recurrence (integer).
+event
+   Event status: 1 = recurrence, 0 = no recurrence or death (numeric).
 
-      stop
-         Time at which the event or censoring occurred (integer).
+enum
+   Event enumeration (integer).
 
-      event
-         Event status: 1 = recurrence, 0 = no recurrence or death
-         (numeric).
+Details
+~~~~~~~
 
-      enum
-         Event enumeration (integer).
+The dataset name has been kept as 'BladderCancer_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the OncoDataSets package and assists
+users in identifying its specific characteristics. The suffix '\_df'
+indicates that the dataset is a data frame. The original content has not
+been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'BladderCancer_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The suffix '\_df' indicates that the dataset is a
-      data frame. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the survival package.
+Data taken from the survival package.

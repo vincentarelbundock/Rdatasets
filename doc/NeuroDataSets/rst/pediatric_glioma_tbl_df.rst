@@ -1,112 +1,107 @@
-.. container::
+======================= ===============
+pediatric_glioma_tbl_df R Documentation
+======================= ===============
 
-   .. container::
+Pediatric High-Grade Glioma Clinical Dataset
+--------------------------------------------
 
-      ======================= ===============
-      pediatric_glioma_tbl_df R Documentation
-      ======================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Pediatric High-Grade Glioma Clinical Dataset
-         :name: pediatric-high-grade-glioma-clinical-dataset
+This dataset, pediatric_glioma_tbl_df, is a tibble containing
+comprehensive clinical and tumor characteristics for 57 pediatric
+patients with high-grade glioma. The data includes 22 variables covering
+demographic, symptomatic, pathological, treatment, and outcome measures.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, pediatric_glioma_tbl_df, is a tibble containing
-      comprehensive clinical and tumor characteristics for 57 pediatric
-      patients with high-grade glioma. The data includes 22 variables
-      covering demographic, symptomatic, pathological, treatment, and
-      outcome measures.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(pediatric_glioma_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(pediatric_glioma_tbl_df)
+A tibble with 57 observations and 22 variables:
 
-      .. rubric:: Format
-         :name: format
+Age
+   Numeric: Patient age in years
 
-      A tibble with 57 observations and 22 variables:
+Gender
+   Character: Patient gender
 
-      Age
-         Numeric: Patient age in years
+Headache
+   Character: Headache presence/characteristics
 
-      Gender
-         Character: Patient gender
+Epilepsy
+   Character: Epilepsy status
 
-      Headache
-         Character: Headache presence/characteristics
+Hemparesis
+   Character: Hemiparesis presence
 
-      Epilepsy
-         Character: Epilepsy status
+increaseICT
+   Character: Increased intracranial pressure indicators
 
-      Hemparesis
-         Character: Hemiparesis presence
+Pathology
+   Character: Tumor pathology classification
 
-      increaseICT
-         Character: Increased intracranial pressure indicators
+Pathology_Grade
+   Numeric: WHO tumor grade (III-IV)
 
-      Pathology
-         Character: Tumor pathology classification
+Thalamic_extension
+   Character: Thalamic involvement
 
-      Pathology_Grade
-         Numeric: WHO tumor grade (III-IV)
+Bil_extension
+   Character: Bilateral extension
 
-      Thalamic_extension
-         Character: Thalamic involvement
+Post_extension
+   Character: Posterior fossa extension
 
-      Bil_extension
-         Character: Bilateral extension
+BrainStem_extension
+   Character: Brainstem involvement
 
-      Post_extension
-         Character: Posterior fossa extension
+MultiFocality
+   Character: Multifocal tumor presence
 
-      BrainStem_extension
-         Character: Brainstem involvement
+Midlineshift
+   Character: Midline shift presence
 
-      MultiFocality
-         Character: Multifocal tumor presence
+Edema
+   Character: Peritumoral edema characteristics
 
-      Midlineshift
-         Character: Midline shift presence
+Approx_Tumor_Vol
+   Numeric: Estimated tumor volume (cm³)
 
-      Edema
-         Character: Peritumoral edema characteristics
+ExtentofSurgicalresection
+   Character: Surgical resection extent
 
-      Approx_Tumor_Vol
-         Numeric: Estimated tumor volume (cm³)
+Shunt
+   Character: Ventricular shunt presence
 
-      ExtentofSurgicalresection
-         Character: Surgical resection extent
+ResidualsizeonMRI
+   Character: Post-surgical residual tumor
 
-      Shunt
-         Character: Ventricular shunt presence
+Neurostate
+   Character: Neurological status
 
-      ResidualsizeonMRI
-         Character: Post-surgical residual tumor
+PSBeforeRT
+   Numeric: Performance status pre-radiotherapy
 
-      Neurostate
-         Character: Neurological status
+Died
+   Character: Mortality outcome
 
-      PSBeforeRT
-         Numeric: Performance status pre-radiotherapy
+Details
+~~~~~~~
 
-      Died
-         Character: Mortality outcome
+The dataset name has been kept as 'pediatric_glioma_tbl_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the NeuroDataSets package. The
+suffix 'tbl_df' indicates that the dataset is a tibble. The original
+content has not been modified.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'pediatric_glioma_tbl_df' to
-      avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      NeuroDataSets package. The suffix 'tbl_df' indicates that the
-      dataset is a tibble. The original content has not been modified.
-
-      .. rubric:: Source
-         :name: source
-
-      Kaggle dataset: Pediatric High-Grade Glioma Dataset. URL:
-      https://www.kaggle.com/datasets/amraam/pediatric-high-grade-glioma-dataset
+Kaggle dataset: Pediatric High-Grade Glioma Dataset. URL:
+https://www.kaggle.com/datasets/amraam/pediatric-high-grade-glioma-dataset

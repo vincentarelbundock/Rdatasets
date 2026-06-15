@@ -1,49 +1,45 @@
-.. container::
+=== ===============
+eeg R Documentation
+=== ===============
 
-   .. container::
+Raw EEG data, single trial, 50Hz.
+---------------------------------
 
-      === ===============
-      eeg R Documentation
-      === ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Raw EEG data, single trial, 50Hz.
-         :name: raw-eeg-data-single-trial-50hz.
+A dataset containing a single EEG trial.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset containing a single EEG trial.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   eeg
 
-      .. code:: R
+Format
+~~~~~~
 
-         eeg
+A data frame with 1504 rows and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+``Electrode``
+   Electrode that recorded the EEG.
 
-      A data frame with 1504 rows and 5 variables:
+``Time``
+   Time, time measure from onset of the stimulus.
 
-      ``Electrode``
-         Electrode that recorded the EEG.
+``Ampl``
+   EEG amplitude, recorded by 32 electrodes.
 
-      ``Time``
-         Time, time measure from onset of the stimulus.
+``X``
+   Approximation of electrode position, relative to Cz. Left is
+   negative.
 
-      ``Ampl``
-         EEG amplitude, recorded by 32 electrodes.
+``Y``
+   Approximation of electrode position, relative to Cz. Back is
+   negative.
 
-      ``X``
-         Approximation of electrode position, relative to Cz. Left is
-         negative.
+Author(s)
+~~~~~~~~~
 
-      ``Y``
-         Approximation of electrode position, relative to Cz. Back is
-         negative.
-
-      .. rubric:: Author(s)
-         :name: authors
-
-      Jacolien van Rij
+Jacolien van Rij

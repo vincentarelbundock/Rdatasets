@@ -1,61 +1,57 @@
-.. container::
+=========== ===============
+results_raw R Documentation
+=========== ===============
 
-   .. container::
+Each baker's results by episode (raw)
+-------------------------------------
 
-      =========== ===============
-      results_raw R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Each baker's results by episode (raw)
-         :name: each-bakers-results-by-episode-raw
+This data has one row per baker for every episode, including episodes
+they did not appear in.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This data has one row per baker for every episode, including
-      episodes they did not appear in.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   results_raw
 
-      .. code:: R
+Format
+~~~~~~
 
-         results_raw
+A data frame with 1,136 rows representing individual bakers per episode
+and 4 variables:
 
-      .. rubric:: Format
-         :name: format
+series
+   A factor denoting UK series (1-10)
 
-      A data frame with 1,136 rows representing individual bakers per
-      episode and 4 variables:
+episode
+   A factor denoting episode number within a series
 
-      series
-         A factor denoting UK series (1-10)
+baker
+   A character string giving given or nickname only (note: see
+   ``bakers`` for full baker names)
 
-      episode
-         A factor denoting episode number within a series
+result
+   A factor denoting if the baker was ``"IN"``, ``"OUT"``,
+   ``"STAR BAKER"``, or ``"SICK"`` for a given episode. For finale
+   episodes, values are either ``"WINNER"`` or ``"RUNNER-UP"``. If
+   ``NA``, baker did not appear in episode.
 
-      baker
-         A character string giving given or nickname only (note: see
-         ``bakers`` for full baker names)
+Source
+~~~~~~
 
-      result
-         A factor denoting if the baker was ``"IN"``, ``"OUT"``,
-         ``"STAR BAKER"``, or ``"SICK"`` for a given episode. For finale
-         episodes, values are either ``"WINNER"`` or ``"RUNNER-UP"``. If
-         ``NA``, baker did not appear in episode.
+See
+https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_(series_1)#Results_summary,
+for example, for series 1 results summary.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      See
-      https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_(series_1)#Results_summary,
-      for example, for series 1 results summary.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         if (require('tibble')) {
-           results_raw
-          }
+   if (require('tibble')) {
+     results_raw
+    }

@@ -1,56 +1,52 @@
-.. container::
+============== ===============
+precip_numeric R Documentation
+============== ===============
 
-   .. container::
+Annual Precipitation in US Cities
+---------------------------------
 
-      ============== ===============
-      precip_numeric R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Annual Precipitation in US Cities
-         :name: annual-precipitation-in-us-cities
+The dataset name has been changed to 'precip_numeric' to avoid confusion
+with other packages in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a numeric vector. The original content of the dataset
+has not been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'precip_numeric' to avoid
-      confusion with other packages in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a numeric vector. The
-      original content of the dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(precip_numeric)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(precip_numeric)
+A numeric vector with 70 observations representing average annual
+precipitation (in inches) for various cities in the United States.
 
-      .. rubric:: Format
-         :name: format
+Mobile
+   Numeric value representing the average annual precipitation in
+   Mobile.
 
-      A numeric vector with 70 observations representing average annual
-      precipitation (in inches) for various cities in the United States.
+Juneau
+   Numeric value representing the average annual precipitation in
+   Juneau.
 
-      Mobile
-         Numeric value representing the average annual precipitation in
-         Mobile.
+Phoenix
+   Numeric value representing the average annual precipitation in
+   Phoenix.
 
-      Juneau
-         Numeric value representing the average annual precipitation in
-         Juneau.
+Los Angeles
+   Numeric value representing the average annual precipitation in Los
+   Angeles.
 
-      Phoenix
-         Numeric value representing the average annual precipitation in
-         Phoenix.
+...
+   Additional cities included in the dataset.
 
-      Los Angeles
-         Numeric value representing the average annual precipitation in
-         Los Angeles.
+Source
+~~~~~~
 
-      ...
-         Additional cities included in the dataset.
-
-      .. rubric:: Source
-         :name: source
-
-      Data on precipitation for various U.S. cities.
+Data on precipitation for various U.S. cities.

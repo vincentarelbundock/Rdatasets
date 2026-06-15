@@ -1,50 +1,45 @@
-.. container::
+========== ===============
+aus_retail R Documentation
+========== ===============
 
-   .. container::
+Australian retail trade turnover
+--------------------------------
 
-      ========== ===============
-      aus_retail R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Australian retail trade turnover
-         :name: australian-retail-trade-turnover
+``aus_retail`` is a monthly ``tsibble`` with one value:
 
-      .. rubric:: Description
-         :name: description
+========= ===============================
+Turnover: Retail turnover in $Million AUD
+          
+========= ===============================
 
-      ``aus_retail`` is a monthly ``tsibble`` with one value:
+Format
+~~~~~~
 
-      ========= ===============================
-      Turnover: Retail turnover in $Million AUD
-      \         
-      ========= ===============================
+Time series of class ``tsibble``
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      Time series of class ``tsibble``
+Each series is uniquely identified using two keys:
 
-      .. rubric:: Details
-         :name: details
+========= ===================================
+State:    The Australian state (or territory)
+Industry: The industry of retail trade
+          
+========= ===================================
 
-      Each series is uniquely identified using two keys:
+Source
+~~~~~~
 
-      ========= ===================================
-      State:    The Australian state (or territory)
-      Industry: The industry of retail trade
-      \         
-      ========= ===================================
+Australian Bureau of Statistics, catalogue number 8501.0, table 11.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Australian Bureau of Statistics, catalogue number 8501.0, table
-      11.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         library(tsibble)
-         aus_retail
+   library(tsibble)
+   aus_retail

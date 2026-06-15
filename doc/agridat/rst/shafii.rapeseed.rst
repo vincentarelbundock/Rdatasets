@@ -1,117 +1,119 @@
-.. container::
+=============== ===============
+shafii.rapeseed R Documentation
+=============== ===============
 
-   .. container::
+Multi-environment trial of rapeseed in U.S.
+-------------------------------------------
 
-      =============== ===============
-      shafii.rapeseed R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Multi-environment trial of rapeseed in U.S.
-         :name: multi-environment-trial-of-rapeseed-in-u.s.
+Rapeseed yield multi-environment trial, 6 genotypes, 3 years, 14 loc, 3
+rep
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Rapeseed yield multi-environment trial, 6 genotypes, 3 years, 14
-      loc, 3 rep
+A data frame with 648 observations on the following 5 variables.
 
-      .. rubric:: Format
-         :name: format
+``year``
+   year, numeric: 87, 88, 89
 
-      A data frame with 648 observations on the following 5 variables.
+``loc``
+   location, 14 levels
 
-      ``year``
-         year, numeric: 87, 88, 89
+``rep``
+   rep, 3 levels
 
-      ``loc``
-         location, 14 levels
+``gen``
+   genotype, 6 levels
 
-      ``rep``
-         rep, 3 levels
+``yield``
+   yield, kg/ha
 
-      ``gen``
-         genotype, 6 levels
+Details
+~~~~~~~
 
-      ``yield``
-         yield, kg/ha
+The data are from the U.S. National Winter Rapeseed trials conducted in
+1986, 1987, and 1988.
 
-      .. rubric:: Details
-         :name: details
+Trial locations included Georgia (GGA, TGA), Idaho (ID), Kansas (KS),
+Mississippi (MS), Montana (MT), New York (NY), North Carolina (NC),
+Oregon (OR), South Carolina (SC), Tennessee (TN), Texas (TX), Virginia
+(VA), and Washington (WA).
 
-      The data are from the U.S. National Winter Rapeseed trials
-      conducted in 1986, 1987, and 1988. Trial locations included
-      Georgia (GGA, TGA), Idaho (ID), Kansas (KS), Mississippi (MS),
-      Montana (MT), New York (NY), North Carolina (NC), Oregon (OR),
-      South Carolina (SC), Tennessee (TN), Texas (TX), Virginia (VA),
-      and Washington (WA).
+The experiment design was RCB with 4 replications per trial.
 
-      SAS codes for the analysis can be found at
-      https://webpages.uidaho.edu/cals-statprog/ammi/index.html
+Used with permission of Bill Price.
 
-      Electronic version from:
-      https://www.uiweb.uidaho.edu/ag/statprog/ammi/yld.data
+Source
+~~~~~~
 
-      Used with permission of Bill Price.
+Bahman Shafii and William J Price, (1998). Analysis of
+Genotype-by-Environment Interaction Using the Additive Main Effects and
+Multiplicative Interaction Model and Stability Estimates. JABES, 3,
+335–345. https://doi.org/10.2307/1400587
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Bahman Shafii and William J Price, 1998. Analysis of
-      Genotype-by-Environment Interaction Using the Additive Main
-      Effects and Multiplicative Interaction Model and Stability
-      Estimates. JABES, 3, 335–345. https://doi.org/10.2307/1400587
+Matthew Kramer (2018). Using the Posterior Predictive Distribution as a
+Diagnostic Tool for Mixed Models. Joint Statistical Meetings 2018,
+Biometrics Section.
+https://www.ars.usda.gov/ARSUserFiles/3122/KramerProceedingsJSM2018.pdf
 
-      .. rubric:: References
-         :name: references
+Reyhaneh Bijari and Sigurdur Olafsson (2022). Accounting for G×E
+interactions in plant breeding: a probabilistic approach
+https://doi.org/10.21203/rs.3.rs-2052233/v1
 
-      Matthew Kramer (2018). Using the Posterior Predictive Distribution
-      as a Diagnostic Tool for Mixed Models. Joint Statistical Meetings
-      2018, Biometrics Section.
-      https://www.ars.usda.gov/ARSUserFiles/3122/KramerProceedingsJSM2018.pdf
+Reyhaneh Bijari, Hanisha Vemireddy and Sigurdur Olafsson (2025). A
+method for approximate rank confidence intervals in plant breeding
+experiments. Heliyon, 11. https://doi.org/10.1016/j.heliyon.2025.e42973
 
-      Reyhaneh Bijari and Sigurdur Olafsson (2022). Accounting for G×E
-      interactions in plant breeding: a probabilistic approach
-      https://doi.org/10.21203/rs.3.rs-2052233/v1
+Examples
+~~~~~~~~
 
-      .. rubric:: Examples
-         :name: examples
+.. code:: R
 
-      .. code:: R
+   ## Not run: 
 
-         library(agridat)
-         data(shafii.rapeseed)
-         dat <- shafii.rapeseed
+   library(agridat)
+   data(shafii.rapeseed)
+   dat <- shafii.rapeseed
 
-         dat$gen <- with(dat, reorder(gen, yield, mean))
-         dat$loc <- with(dat, reorder(loc, yield, mean))
-         dat$yield <- dat$yield/1000
+   dat$gen <- with(dat, reorder(gen, yield, mean))
+   dat$loc <- with(dat, reorder(loc, yield, mean))
+   dat$yield <- dat$yield/1000
 
-         dat <- transform(dat, rep=factor(rep), year=as.factor(as.character(year)))
-         dat$locyr = paste(dat$loc, dat$year, sep="")
+   dat <- transform(dat, rep=factor(rep), year=as.factor(as.character(year)))
+   dat$locyr = paste(dat$loc, dat$year, sep="")
 
-         # The 'means' of reps
-         datm <- aggregate(yield~gen+year+loc+locyr, data=dat, FUN=mean)
-         datm <- datm[order(datm$gen),]
-         datm$gen <- as.character(datm$gen)
-         datm$gen <- factor(datm$gen,
-                                levels=c("Bienvenu","Bridger","Cascade",
-                                  "Dwarf","Glacier","Jet"))
-         dat$locyr <- reorder(dat$locyr, dat$yield, mean)
+   # The 'means' of reps
+   datm <- aggregate(yield~gen+year+loc+locyr, data=dat, FUN=mean)
+   datm <- datm[order(datm$gen),]
+   datm$gen <- as.character(datm$gen)
+   datm$gen <- factor(datm$gen,
+                          levels=c("Bienvenu","Bridger","Cascade",
+                            "Dwarf","Glacier","Jet"))
+   dat$locyr <- reorder(dat$locyr, dat$yield, mean)
 
-         libs(lattice)
-         # This picture tells most of the story
-         dotplot(loc~yield|gen,group=year,data=dat,
-                 auto.key=list(columns=3),
-                 par.settings=list(superpose.symbol=list(pch = c('7','8','9'))),
-                 main="shafii.rapeseed",ylab="Location")
+   libs(lattice)
+   # This picture tells most of the story
+   dotplot(loc~yield|gen,group=year,data=dat,
+           auto.key=list(columns=3),
+           par.settings=list(superpose.symbol=list(pch = c('7','8','9'))),
+           main="shafii.rapeseed",ylab="Location")
 
 
-         # AMMI biplot.  Remove gen and locyr effects.
-         m1.lm <- lm(yield ~ gen + locyr, data=datm)
-         datm$res <- resid(m1.lm)
-         # Convert to a matrix
-         libs(reshape2)
-         dm <- melt(datm, measure.var='res', id.var=c('gen', 'locyr'))
-         dmat <- acast(dm, gen~locyr)
-         # AMMI biplot.  Figure 1 of Shafii (1998)
-         biplot(prcomp(dmat), main="shafii.rapeseed - AMMI biplot")
+   # AMMI biplot.  Remove gen and locyr effects.
+   m1.lm <- lm(yield ~ gen + locyr, data=datm)
+   datm$res <- resid(m1.lm)
+   # Convert to a matrix
+   libs(reshape2)
+   dm <- melt(datm, measure.var='res', id.var=c('gen', 'locyr'))
+   dmat <- acast(dm, gen~locyr)
+   # AMMI biplot.  Figure 1 of Shafii (1998)
+   biplot(prcomp(dmat), main="shafii.rapeseed - AMMI biplot")
+
+
+   ## End(Not run)

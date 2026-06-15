@@ -1,55 +1,51 @@
-.. container::
+====================== ===============
+LeukemiaLymphomaGeo_df R Documentation
+====================== ===============
 
-   .. container::
+North Humberside Leukemia and Lymphoma Geographic Data
+------------------------------------------------------
 
-      ====================== ===============
-      LeukemiaLymphomaGeo_df R Documentation
-      ====================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: North Humberside Leukemia and Lymphoma Geographic Data
-         :name: north-humberside-leukemia-and-lymphoma-geographic-data
+This dataset, LeukemiaLymphomaGeo_df, is a data frame containing the
+geographical coordinates (x and y) for locations in North Humberside
+related to leukemia and lymphoma cases. It includes the location ID and
+the coordinates for each of the 191 locations.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, LeukemiaLymphomaGeo_df, is a data frame containing
-      the geographical coordinates (x and y) for locations in North
-      Humberside related to leukemia and lymphoma cases. It includes the
-      location ID and the coordinates for each of the 191 locations.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(LeukemiaLymphomaGeo_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(LeukemiaLymphomaGeo_df)
+A data frame with 191 observations and 3 variables:
 
-      .. rubric:: Format
-         :name: format
+locationid
+   Location ID (integer).
 
-      A data frame with 191 observations and 3 variables:
+x-coordinate
+   X-coordinate (integer).
 
-      locationid
-         Location ID (integer).
+y-coordinate
+   Y-coordinate (integer).
 
-      x-coordinate
-         X-coordinate (integer).
+Details
+~~~~~~~
 
-      y-coordinate
-         Y-coordinate (integer).
+The dataset name has been kept as 'LeukemiaLymphomaGeo_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the OncoDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'\_df' indicates that the dataset is a data frame. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'LeukemiaLymphomaGeo_df' to
-      avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The suffix '\_df' indicates that the dataset is a
-      data frame. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the rsatscan package, distributed with SaTScan
-      software: https://www.satscan.org
+Data taken from the rsatscan package, distributed with SaTScan software:
+https://www.satscan.org

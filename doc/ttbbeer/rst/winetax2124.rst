@@ -1,43 +1,38 @@
-.. container::
+=========== ===============
+winetax2124 R Documentation
+=========== ===============
 
-   .. container::
+The winetax2124 dataset
+-----------------------
 
-      =========== ===============
-      winetax2124 R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The winetax2124 dataset
-         :name: the-winetax2124-dataset
+This dataset contains a list of historical tax rates for wine 21 - 24
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains a list of historical tax rates for wine 21 -
-      24
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   winetax2124
 
-      .. code:: R
+Format
+~~~~~~
 
-         winetax2124
+A data frame with 11 observations of 3 variables:
 
-      .. rubric:: Format
-         :name: format
+FROM
+   FROM, date of starting tax rate
 
-      A data frame with 11 observations of 3 variables:
+TO
+   TO, date of ending tax rate. The last row is considered the present
+   day rate indicated by the package creation date.
 
-      FROM
-         FROM, date of starting tax rate
+RATE
+   RATE, in dollars
 
-      TO
-         TO, date of ending tax rate. The last row is considered the
-         present day rate indicated by the package creation date.
+Source
+~~~~~~
 
-      RATE
-         RATE, in dollars
-
-      .. rubric:: Source
-         :name: source
-
-      http://catalog.data.gov/dataset/historical-tax-rates
+http://catalog.data.gov/dataset/historical-tax-rates

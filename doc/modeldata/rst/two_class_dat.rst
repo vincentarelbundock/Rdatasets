@@ -1,36 +1,32 @@
-.. container::
+============= ===============
+two_class_dat R Documentation
+============= ===============
 
-   .. container::
+Two class data
+--------------
 
-      ============= ===============
-      two_class_dat R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Two class data
-         :name: two-class-data
+Two class data
 
-      .. rubric:: Description
-         :name: description
+Details
+~~~~~~~
 
-      Two class data
+There are artificial data with two predictors (``A`` and ``B``) and a
+factor outcome variable (``Class``).
 
-      .. rubric:: Details
-         :name: details
+Value
+~~~~~
 
-      There are artificial data with two predictors (``A`` and ``B``)
-      and a factor outcome variable (``Class``).
+================= ============
+``two_class_dat`` a data frame
+================= ============
 
-      .. rubric:: Value
-         :name: value
+Examples
+~~~~~~~~
 
-      ================= ============
-      ``two_class_dat`` a data frame
-      ================= ============
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(two_class_dat)
-         str(two_class_dat)
+   data(two_class_dat)
+   str(two_class_dat)

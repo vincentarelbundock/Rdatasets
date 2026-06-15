@@ -1,0 +1,128 @@
+<!DOCTYPE html><html><head><title>R: Uniformity trial of oats in Poland</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gorski.oats.uniformity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Uniformity trial of oats in Poland
+</h2>
+
+<h3>Description</h3>
+
+<p>Uniformity trial of oats in Poland
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("gorski.oats.uniformity")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 500 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>row</code></dt><dd><p>row ordinate</p>
+</dd>
+<dt><code>col</code></dt><dd><p>column ordinate</p>
+</dd>
+<dt><code>yield</code></dt><dd><p>yield, kg</p>
+</dd>
+<dt><code>field</code></dt><dd><p>field</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The authors were from Agricultural University of Dublany near
+Lemberg. (Originally Poland, but now Ukraine.) The experiments were
+carried out on the fields of the Dublany estate.
+</p>
+<p>Gorski &amp; Stefaniow (1917) does not show the layout of the plots. They
+say more details are given in the journal &quot;Roczniki nauk rolniczych&quot;.
+(Not yet found) 
+Kotowski (1924) does shows the layout of the plots.
+</p>
+<p>Field F1
+</p>
+<p>The loamy field was sown with early oats &quot;Rychlik mikulicki&quot;.
+There were measured 200 plots of 9 square meters each and
+harvested them in one day with a sickle. Two days later, the harvest
+yield from each plot was determined. We were unable to determine the
+harvest from plots no. 161, 163, 182, so only the harvest from 197
+(instead of 200) plots was processed.
+</p>
+<p>Field width: 10 plots x 3 m = 30 m
+</p>
+<p>Field length: 20 plots x 3 m = 60 m
+</p>
+<p>Field F2
+</p>
+<p>The loess field used &quot;Ligowo&quot; oats on 300 9 sq m plots.
+</p>
+<p>Transcription details: Data were typed and checked by K.Wright 2024.12.11.
+Text translation via Google Translate.
+The actual plot dimensions are not given, but 3m by 3m is a good
+approximation or may be exact.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Gorski, M. and Stefaniow, M. (1917).
+Die Anwendbarkeit der Wahrscheinlichkeits-rechnung bei Feldversuchen.
+Die Landwirtschaflichen Versuchsstationen, 90, 225-240.
+https://www.google.com/books/edition/Die_Landwirtschaftlichen_versuchs_statio/qr8jAQAAMAAJ?hl=en&amp;gbpv=1&amp;pg=RA1-PA225
+</p>
+
+
+<h3>References</h3>
+
+<p>Kotowski, Feliks. (1924).
+A criterion of field homegenity and its value in field
+trials. (English title).
+Roczniki Nauk Rolniczych, 11, 26-35.
+https://www.google.com/books/edition/Roczniki_nauk_rolniczych/mz0iAQAAIAAJ
+Polish version on page 26. English abstract on page 35.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+libs(agridat)
+data(gorski.oats.uniformity)
+dat &lt;- gorski.oats.uniformity
+
+libs(desplot)
+desplot(dat, yield~col*row, subset=field=="F1",
+        flip=TRUE, tick=TRUE, aspect=(20)/(10),
+        main="gorski.oats.uniformity - field F1")
+desplot(dat, yield~col*row, subset=field=="F2",
+        flip=TRUE, tick=TRUE, aspect=(20)/(15),
+        main="gorski.oats.uniformity - field F2")
+
+## End(Not run)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,53 +1,49 @@
-.. container::
+===== ===============
+stars R Documentation
+===== ===============
 
-   .. container::
+Physical Properties of Stars
+----------------------------
 
-      ===== ===============
-      stars R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Physical Properties of Stars
-         :name: physical-properties-of-stars
+Physical properties of selected stars, including luminosity,
+temperature, and spectral class.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Physical properties of selected stars, including luminosity,
-      temperature, and spectral class.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   stars
 
-      .. code:: R
+Format
+~~~~~~
 
-         stars
+An object of class ``"data.frame"``.
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      An object of class ``"data.frame"``.
+- star. Name of star.
 
-      .. rubric:: Details
-         :name: details
+- magnitude. Absolute magnitude of the star, which is a function of the
+  star's luminosity and distance to the star.
 
-      -  star. Name of star.
+- temp. Surface temperature in degrees Kelvin (K).
 
-      -  magnitude. Absolute magnitude of the star, which is a function
-         of the star's luminosity and distance to the star.
+- type. Spectral class of star in the OBAFGKM system.
 
-      -  temp. Surface temperature in degrees Kelvin (K).
+Source
+~~~~~~
 
-      -  type. Spectral class of star in the OBAFGKM system.
+Compiled from multiple open-access references on
+`VizieR <http://vizier.u-strasbg.fr/viz-bin/VizieR>`__.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Compiled from multiple open-access references on
-      `VizieR <http://vizier.u-strasbg.fr/viz-bin/VizieR>`__.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         head(stars)
+   head(stars)

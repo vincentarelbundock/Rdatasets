@@ -1,73 +1,69 @@
-.. container::
+=========== ===============
+WorkersComp R Documentation
+=========== ===============
 
-   .. container::
+Workers Compensation
+--------------------
 
-      =========== ===============
-      WorkersComp R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Workers Compensation
-         :name: workers-compensation
+Standard example in worker's compensation insurance, examining losses
+due to permanent, partial disability claims. The data are from Klugman
+(1992), who considers Bayesian model representations, and are originally
+from the National Council on Compensation Insurance. We consider n=121
+occupation, or risk, classes, over T=7 years. To protect the data
+source, further information on the occupation classes and years is not
+available. Source: Frees, E. W., Young, V. and Y. Luo (2001). Case
+studies using panel data models. North American Actuarial Journal, 4,
+No. 4, 24-42.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Standard example in worker's compensation insurance, examining
-      losses due to permanent, partial disability claims. The data are
-      from Klugman (1992), who considers Bayesian model representations,
-      and are originally from the National Council on Compensation
-      Insurance. We consider n=121 occupation, or risk, classes, over
-      T=7 years. To protect the data source, further information on the
-      occupation classes and years is not available. Source: Frees, E.
-      W., Young, V. and Y. Luo (2001). Case studies using panel data
-      models. North American Actuarial Journal, 4, No. 4, 24-42.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(WorkersComp)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(WorkersComp)
+A data frame with 847 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``CL``
+   a numeric vector
 
-      A data frame with 847 observations on the following 4 variables.
+``YR``
+   a numeric vector
 
-      ``CL``
-         a numeric vector
+``PR``
+   a numeric vector
 
-      ``YR``
-         a numeric vector
+``LOSS``
+   a numeric vector
 
-      ``PR``
-         a numeric vector
+Details
+~~~~~~~
 
-      ``LOSS``
-         a numeric vector
+http://instruction.bus.wisc.edu/jfrees/jfreesbooks/Regression
 
-      .. rubric:: Details
-         :name: details
+DataDescriptions.pdf
 
-      http://instruction.bus.wisc.edu/jfrees/jfreesbooks/Regression
+Source
+~~~~~~
 
-      DataDescriptions.pdf
+http://instruction.bus.wisc.edu/jfrees/jfreesbooks/Regression
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      http://instruction.bus.wisc.edu/jfrees/jfreesbooks/Regression
+Frees E.W. (2010), Regression Modeling with Actuarial and Financial
+Applications, Cambridge University Press.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Frees E.W. (2010), Regression Modeling with Actuarial and
-      Financial Applications, Cambridge University Press.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(WorkersComp)
-         ## maybe str(WorkersComp) ; plot(WorkersComp) ...
+   data(WorkersComp)
+   ## maybe str(WorkersComp) ; plot(WorkersComp) ...

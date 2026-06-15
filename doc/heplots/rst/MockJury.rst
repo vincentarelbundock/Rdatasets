@@ -1,136 +1,130 @@
-.. container::
+======== ===============
+MockJury R Documentation
+======== ===============
 
-   .. container::
+Effects Of Physical Attractiveness Upon Mock Jury Decisions
+-----------------------------------------------------------
 
-      ======== ===============
-      MockJury R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Effects Of Physical Attractiveness Upon Mock Jury
-         Decisions
-         :name: effects-of-physical-attractiveness-upon-mock-jury-decisions
+Male participants were shown a picture of one of three young women.
+Pilot work had indicated that the one woman was beautiful, another of
+average physical attractiveness, and the third unattractive.
+Participants rated the woman they saw on each of twelve attributes.
+These measures were used to check on the manipulation by the photo.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Male participants were shown a picture of one of three young
-      women. Pilot work had indicated that the one woman was beautiful,
-      another of average physical attractiveness, and the third
-      unattractive. Participants rated the woman they saw on each of
-      twelve attributes. These measures were used to check on the
-      manipulation by the photo.
+A data frame with 114 observations on the following 17 variables.
 
-      .. rubric:: Format
-         :name: format
+``Attr``
+   Attractiveness of the photo, a factor with levels ``Beautiful``
+   ``Average`` ``Unattractive``
 
-      A data frame with 114 observations on the following 17 variables.
+``Crime``
+   Type of crime, a factor with levels ``Burglary`` (theft of items from
+   victim's room) ``Swindle`` (conned a male victim)
 
-      ``Attr``
-         Attractiveness of the photo, a factor with levels ``Beautiful``
-         ``Average`` ``Unattractive``
+``Years``
+   length of sentence given the defendant by the mock juror subject
 
-      ``Crime``
-         Type of crime, a factor with levels ``Burglary`` (theft of
-         items from victim's room) ``Swindle`` (conned a male victim)
+``Serious``
+   a rating of how serious the subject thought the defendant's crime was
 
-      ``Years``
-         length of sentence given the defendant by the mock juror
-         subject
+``exciting``
+   rating of the photo for 'exciting'
 
-      ``Serious``
-         a rating of how serious the subject thought the defendant's
-         crime was
+``calm``
+   rating of the photo for 'calm'
 
-      ``exciting``
-         rating of the photo for 'exciting'
+``independent``
+   rating of the photo for 'independent'
 
-      ``calm``
-         rating of the photo for 'calm'
+``sincere``
+   rating of the photo for 'sincere'
 
-      ``independent``
-         rating of the photo for 'independent'
+``warm``
+   rating of the photo for 'warm'
 
-      ``sincere``
-         rating of the photo for 'sincere'
+``phyattr``
+   rating of the photo for 'physical attractiveness'
 
-      ``warm``
-         rating of the photo for 'warm'
+``sociable``
+   rating of the photo for 'exciting'
 
-      ``phyattr``
-         rating of the photo for 'physical attractiveness'
+``kind``
+   rating of the photo for 'kind'
 
-      ``sociable``
-         rating of the photo for 'exciting'
+``intelligent``
+   rating of the photo for 'intelligent'
 
-      ``kind``
-         rating of the photo for 'kind'
+``strong``
+   rating of the photo for 'strong'
 
-      ``intelligent``
-         rating of the photo for 'intelligent'
+``sophisticated``
+   rating of the photo for 'sophisticated'
 
-      ``strong``
-         rating of the photo for 'strong'
+``happy``
+   rating of the photo for 'happy'
 
-      ``sophisticated``
-         rating of the photo for 'sophisticated'
+``ownPA``
+   self-rating of the subject for 'physical attractiveness'
 
-      ``happy``
-         rating of the photo for 'happy'
+Details
+~~~~~~~
 
-      ``ownPA``
-         self-rating of the subject for 'physical attractiveness'
+Then the participants were told that the person in the photo had
+committed a Crime, and asked to rate the seriousness of the crime and
+recommend a prison sentence, in Years.
 
-      .. rubric:: Details
-         :name: details
+Does attractiveness of the "defendant" influence the sentence or
+perceived seriousness of the crime? Does attractiveness interact with
+the nature of the crime?
 
-      Then the participants were told that the person in the photo had
-      committed a Crime, and asked to rate the seriousness of the crime
-      and recommend a prison sentence, in Years.
+Source
+~~~~~~
 
-      Does attractiveness of the "defendant" influence the sentence or
-      perceived seriousness of the crime? Does attractiveness interact
-      with the nature of the crime?
+Originally obtained from Dr. Wuensch's StatData page at East Carolina
+University. No longer exists. % was:
+https://core.ecu.edu/wuenschk/StatData/PLASTER.dat
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Originally obtained from Dr. Wuensch's StatData page at East
-      Carolina University. No longer exists.
+Data from the thesis by Plaster, M. E. (1989). *Inmates as mock jurors:
+The effects of physical attractiveness upon juridic decisions.* M.A.
+thesis, Greenville, NC: East Carolina University.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Data from the thesis by Plaster, M. E. (1989). *Inmates as mock
-      jurors: The effects of physical attractiveness upon juridic
-      decisions.* M.A. thesis, Greenville, NC: East Carolina University.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   # manipulation check:  test ratings of the photos classified by Attractiveness
+   jury.mod1 <- lm( cbind(phyattr, happy, independent, sophisticated) ~ Attr, data=MockJury)
+   car::Anova(jury.mod1, test="Roy")
 
-         # manipulation check:  test ratings of the photos classified by Attractiveness
-         jury.mod1 <- lm( cbind(phyattr, happy, independent, sophisticated) ~ Attr, data=MockJury)
-         car::Anova(jury.mod1, test="Roy")
+   heplot(jury.mod1, main="HE plot for manipulation check")
+   pairs(jury.mod1)
 
-         heplot(jury.mod1, main="HE plot for manipulation check")
-         pairs(jury.mod1)
+   if (require(candisc)) {
+       jury.can <- candisc(jury.mod1)
+       jury.can
+       heplot(jury.can, main="Canonical HE plot")
+   }
 
-         if (require(candisc)) {
-             jury.can <- candisc(jury.mod1)
-             jury.can
-             heplot(jury.can, main="Canonical HE plot")
-         }
+   # influence of Attr of photo and nature of crime on Serious and Years
+   jury.mod2 <- lm( cbind(Serious, Years) ~ Attr * Crime, data=MockJury)
+   car::Anova(jury.mod2, test="Roy")
+   heplot(jury.mod2)
 
-         # influence of Attr of photo and nature of crime on Serious and Years
-         jury.mod2 <- lm( cbind(Serious, Years) ~ Attr * Crime, data=MockJury)
-         car::Anova(jury.mod2, test="Roy")
-         heplot(jury.mod2)
+   # stepdown test (ANCOVA), controlling for Serious
+   jury.mod3 <- lm( Years ~ Serious + Attr * Crime, data=MockJury)
+   car::Anova(jury.mod3)
 
-         # stepdown test (ANCOVA), controlling for Serious
-         jury.mod3 <- lm( Years ~ Serious + Attr * Crime, data=MockJury)
-         car::Anova(jury.mod3)
-
-         # need to consider heterogeneous slopes?
-         jury.mod4 <- lm( Years ~ Serious * Attr * Crime, data=MockJury)
-         car::Anova(jury.mod3, jury.mod4)
+   # need to consider heterogeneous slopes?
+   jury.mod4 <- lm( Years ~ Serious * Attr * Crime, data=MockJury)
+   car::Anova(jury.mod3, jury.mod4)

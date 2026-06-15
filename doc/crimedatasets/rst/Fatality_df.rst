@@ -1,79 +1,74 @@
-.. container::
+=========== ===============
+Fatality_df R Documentation
+=========== ===============
 
-   .. container::
+Drunk Driving Laws and Traffic Deaths
+-------------------------------------
 
-      =========== ===============
-      Fatality_df R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Drunk Driving Laws and Traffic Deaths
-         :name: drunk-driving-laws-and-traffic-deaths
+This dataset contains data on traffic fatalities and laws related to
+drunk driving across U.S. states. It includes information on beer taxes,
+minimum legal drinking age (MLDA), and other socioeconomic factors
+observed between 1982 and 1988.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset contains data on traffic fatalities and laws related
-      to drunk driving across U.S. states. It includes information on
-      beer taxes, minimum legal drinking age (MLDA), and other
-      socioeconomic factors observed between 1982 and 1988.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Fatality_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Fatality_df)
+A data frame with 336 observations and 10 variables:
 
-      .. rubric:: Format
-         :name: format
+state
+   State identifier (integer).
 
-      A data frame with 336 observations and 10 variables:
+year
+   Year of the observation (integer).
 
-      state
-         State identifier (integer).
+mrall
+   Motor vehicle fatality rate per 100,000 population (numeric).
 
-      year
-         Year of the observation (integer).
+beertax
+   Beer tax in dollars per gallon (numeric).
 
-      mrall
-         Motor vehicle fatality rate per 100,000 population (numeric).
+mlda
+   Minimum legal drinking age (MLDA) (numeric).
 
-      beertax
-         Beer tax in dollars per gallon (numeric).
+jaild
+   Indicator for mandatory jail sentence for drunk-driving (Factor:
+   Yes/No).
 
-      mlda
-         Minimum legal drinking age (MLDA) (numeric).
+comserd
+   Indicator for mandatory community service for drunk-driving (Factor:
+   Yes/No).
 
-      jaild
-         Indicator for mandatory jail sentence for drunk-driving
-         (Factor: Yes/No).
+vmiles
+   Vehicle miles traveled in billions (numeric).
 
-      comserd
-         Indicator for mandatory community service for drunk-driving
-         (Factor: Yes/No).
+unrate
+   Unemployment rate (numeric).
 
-      vmiles
-         Vehicle miles traveled in billions (numeric).
+perinc
+   Per capita income in dollars (numeric).
 
-      unrate
-         Unemployment rate (numeric).
+Details
+~~~~~~~
 
-      perinc
-         Per capita income in dollars (numeric).
+The dataset name has been changed to 'Fatality_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the crimedatasets package and
+assists users in identifying its specific characteristics. The suffix
+'df' indicates that the dataset is stored as a traditional data frame in
+R. The original content has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been changed to 'Fatality_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      crimedatasets package and assists users in identifying its
-      specific characteristics. The suffix 'df' indicates that the
-      dataset is stored as a traditional data frame in R. The original
-      content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Panel data on drunk driving laws and traffic deaths in the U.S.
-      for 48 states, 1982–1988.
+Panel data on drunk driving laws and traffic deaths in the U.S. for 48
+states, 1982–1988.

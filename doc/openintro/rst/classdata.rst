@@ -1,46 +1,43 @@
-.. container::
+========= ===============
+classdata R Documentation
+========= ===============
 
-   .. container::
+Simulated class data
+--------------------
 
-      ========= ===============
-      classdata R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Simulated class data
-         :name: simulated-class-data
+This data is simulated and is meant to represent students scores from
+three different lectures who were all given the same exam.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This data is simulated and is meant to represent students scores
-      from three different lectures who were all given the same exam.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   classdata
 
-      .. code:: R
+Format
+~~~~~~
 
-         classdata
+A data frame with 164 observations on the following 2 variables.
 
-      .. rubric:: Format
-         :name: format
+m1
+   Represents a first midterm score.
 
-      A data frame with 164 observations on the following 2 variables.
+lecture
+   Three classes: ``a``, ``b``, and ``c``.
 
-      m1
-         Represents a first midterm score.
+References
+~~~~~~~~~~
 
-      lecture
-         Three classes: ``a``, ``b``, and ``c``.
+OpenIntro Statistics, Chapter 8.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      OpenIntro Statistics, Chapter 8.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         anova(lm(m1 ~ lecture, classdata))
+   anova(lm(m1 ~ lecture, classdata))

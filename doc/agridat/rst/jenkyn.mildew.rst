@@ -1,83 +1,79 @@
-.. container::
+============= ===============
+jenkyn.mildew R Documentation
+============= ===============
 
-   .. container::
+Yields from treatment for mildew control
+----------------------------------------
 
-      ============= ===============
-      jenkyn.mildew R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Yields from treatment for mildew control
-         :name: yields-from-treatment-for-mildew-control
+Yields from treatment for mildew control
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Yields from treatment for mildew control
+A data frame with 38 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``plot``
+   plot number
 
-      A data frame with 38 observations on the following 4 variables.
+``trt``
+   treatment factor, 4 levels
 
-      ``plot``
-         plot number
+``block``
+   block factor, 9 levels
 
-      ``trt``
-         treatment factor, 4 levels
+``yield``
+   grain yield, tons/ha
 
-      ``block``
-         block factor, 9 levels
+Details
+~~~~~~~
 
-      ``yield``
-         grain yield, tons/ha
+There were four spray treatments: 0 (none), 1 (early), 2 (late), R
+(repeated).
 
-      .. rubric:: Details
-         :name: details
+Each treatment occurs once between each of the 9 ordered pairs of the
+other treatments.
 
-      There were four spray treatments: 0 (none), 1 (early), 2 (late), R
-      (repeated).
+The first and last plot are not assigned to a block.
 
-      Each treatment occurs once between each of the 9 ordered pairs of
-      the other treatments.
+Source
+~~~~~~
 
-      The first and last plot are not assigned to a block.
+Norman Draper and Irwin Guttman (1980). Incorporating Overlap Effects
+from Neighboring Units into Response Surface Models. *Appl Statist*, 29,
+128–134. https://doi.org/10.2307/2986297
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Norman Draper and Irwin Guttman (1980). Incorporating Overlap
-      Effects from Neighboring Units into Response Surface Models. *Appl
-      Statist*, 29, 128–134. https://doi.org/10.2307/2986297
+Maria Durban, Christine Hackett, Iain Currie. Blocks, Trend and
+Interference in Field Trials.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Maria Durban, Christine Hackett, Iain Currie. Blocks, Trend and
-      Interference in Field Trials.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(jenkyn.mildew)
+   dat <- jenkyn.mildew
 
-         ## Not run: 
+   libs(lattice)
+   bwplot(yield ~ trt, dat, main="jenkyn.mildew", xlab="Treatment")
 
-         library(agridat)
-         data(jenkyn.mildew)
-         dat <- jenkyn.mildew
+   # Residuals from treatment model show obvious spatial trends
+   m0 <- lm(yield ~ trt, dat)
+   xyplot(resid(m0)~plot, dat, ylab="Residual",
+          main="jenkyn.mildew - treatment model")
 
-         libs(lattice)
-         bwplot(yield ~ trt, dat, main="jenkyn.mildew", xlab="Treatment")
-
-         # Residuals from treatment model show obvious spatial trends
-         m0 <- lm(yield ~ trt, dat)
-         xyplot(resid(m0)~plot, dat, ylab="Residual",
-                main="jenkyn.mildew - treatment model")
-
-         # The blocks explain most of the variation
-         m1 <- lm(yield ~ trt + block, dat)
-         xyplot(resid(m1)~plot, dat, ylab="Residual",
-                main="jenkyn.mildew - block model")
+   # The blocks explain most of the variation
+   m1 <- lm(yield ~ trt + block, dat)
+   xyplot(resid(m1)~plot, dat, ylab="Residual",
+          main="jenkyn.mildew - block model")
 
 
-         ## End(Not run)
+   ## End(Not run)

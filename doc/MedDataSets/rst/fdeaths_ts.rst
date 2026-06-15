@@ -1,48 +1,44 @@
-.. container::
+========== ===============
+fdeaths_ts R Documentation
+========== ===============
 
-   .. container::
+Monthly Deaths from Lung Diseases in the UK (Females)
+-----------------------------------------------------
 
-      ========== ===============
-      fdeaths_ts R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Monthly Deaths from Lung Diseases in the UK (Females)
-         :name: monthly-deaths-from-lung-diseases-in-the-uk-females
+The dataset name has been changed to 'fdeaths_ts' to avoid confusion
+with datasets from other packages in the R ecosystem and to follow the
+naming conventions of the 'MedDataSets' package. The suffix '\_ts'
+indicates that this dataset is a time series object, helping to
+distinguish it from other datasets within the package and from those in
+the broader R ecosystem. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'fdeaths_ts' to avoid
-      confusion with datasets from other packages in the R ecosystem and
-      to follow the naming conventions of the 'MedDataSets' package. The
-      suffix '\_ts' indicates that this dataset is a time series object,
-      helping to distinguish it from other datasets within the package
-      and from those in the broader R ecosystem. The original content of
-      the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(fdeaths_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(fdeaths_ts)
+A time series object with 72 observations, from 1974 to 1980:
 
-      .. rubric:: Format
-         :name: format
+fdeaths
+   A numeric vector representing the number of monthly deaths due to
+   lung diseases in females.
 
-      A time series object with 72 observations, from 1974 to 1980:
+Details
+~~~~~~~
 
-      fdeaths
-         A numeric vector representing the number of monthly deaths due
-         to lung diseases in females.
+This dataset contains the number of monthly deaths from lung diseases in
+the UK, specifically for females, from 1974 to 1980.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains the number of monthly deaths from lung
-      diseases in the UK, specifically for females, from 1974 to 1980.
-
-      .. rubric:: Source
-         :name: source
-
-      UK Health Authority data on lung disease deaths.
+UK Health Authority data on lung disease deaths.

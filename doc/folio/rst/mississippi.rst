@@ -1,73 +1,67 @@
-.. container::
+=========== ===============
+mississippi R Documentation
+=========== ===============
 
-   .. container::
+Mississippi Ceramics
+--------------------
 
-      =========== ===============
-      mississippi R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Mississippi Ceramics
-         :name: mississippi-ceramics
+A dataset containing ceramic counts from the Mississippi region.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset containing ceramic counts from the Mississippi region.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   mississippi
 
-      .. code:: R
+Format
+~~~~~~
 
-         mississippi
+A ``data.frame`` with 20 observations and 10 variables (ceramic types):
 
-      .. rubric:: Format
-         :name: format
+ParkinPunctate
+   ``integer``.
 
-      A ``data.frame`` with 20 observations and 10 variables (ceramic
-      types):
+BartonKentMPI
+   ``integer``.
 
-      ParkinPunctate
-         ``integer``.
+Painted
+   ``integer``.
 
-      BartonKentMPI
-         ``integer``.
+FortuneNoded
+   ``integer``.
 
-      Painted
-         ``integer``.
+RanchIncised
+   ``integer``.
 
-      FortuneNoded
-         ``integer``.
+WallsEngraved
+   ``integer``.
 
-      RanchIncised
-         ``integer``.
+WallaceIncised
+   ``integer``.
 
-      WallsEngraved
-         ``integer``.
+RhodesIncised
+   ``integer``.
 
-      WallaceIncised
-         ``integer``.
+VernonPaulApplique
+   ``integer``.
 
-      RhodesIncised
-         ``integer``.
+HullEngraved
+   ``integer``.
 
-      VernonPaulApplique
-         ``integer``.
+Source
+~~~~~~
 
-      HullEngraved
-         ``integer``.
+Lipo, C. P., Madsen, M. E. & Dunnell, R. C. (2015). A
+Theoretically-Sufficient and Computationally-Practical Technique for
+Deterministic Frequency Seriation. *PLOS ONE*, 10(4), e0124942.
+`doi:10.1371/journal.pone.0124942 <https://doi.org/10.1371/journal.pone.0124942>`__.
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      Lipo, C. P., Madsen, M. E. & Dunnell, R. C. (2015). A
-      Theoretically-Sufficient and Computationally-Practical Technique
-      for Deterministic Frequency Seriation. *PLOS ONE*, 10(4),
-      e0124942.
-      `doi:10.1371/journal.pone.0124942 <https://doi.org/10.1371/journal.pone.0124942>`__.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      Other count data: ``birds``, ``boves``, ``chevelon``,
-      ``compiegne``, ``loire``, ``merzbach``, ``zuni``
+Other count data: ``birds``, ``boves``, ``chevelon``, ``compiegne``,
+``loire``, ``merzbach``, ``zuni``

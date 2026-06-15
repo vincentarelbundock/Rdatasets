@@ -1,38 +1,35 @@
-.. container::
+========= ===============
+cchousing R Documentation
+========= ===============
 
-   .. container::
+Community college housing (simulated data)
+------------------------------------------
 
-      ========= ===============
-      cchousing R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Community college housing (simulated data)
-         :name: community-college-housing-simulated-data
+These are simulated data and intended to represent housing prices of
+students at a community college.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      These are simulated data and intended to represent housing prices
-      of students at a community college.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   cchousing
 
-      .. code:: R
+Format
+~~~~~~
 
-         cchousing
+A data frame with 75 observations on the following variable.
 
-      .. rubric:: Format
-         :name: format
+price
+   Monthly housing price, simulated.
 
-      A data frame with 75 observations on the following variable.
+Examples
+~~~~~~~~
 
-      price
-         Monthly housing price, simulated.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         hist(cchousing$price)
+   hist(cchousing$price)

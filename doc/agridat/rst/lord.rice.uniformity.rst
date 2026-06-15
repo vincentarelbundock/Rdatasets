@@ -1,119 +1,114 @@
-.. container::
+==================== ===============
+lord.rice.uniformity R Documentation
+==================== ===============
 
-   .. container::
+Uniformity trial of rice
+------------------------
 
-      ==================== ===============
-      lord.rice.uniformity R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of rice
-         :name: uniformity-trial-of-rice
+Uniformity trial of rice in Ceylon, 1929.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of rice in Ceylon, 1929.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("lord.rice.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("lord.rice.uniformity")
+A data frame with 560 observations on the following 5 variables.
 
-      .. rubric:: Format
-         :name: format
+``field``
+   field
 
-      A data frame with 560 observations on the following 5 variables.
+``row``
+   row
 
-      ``field``
-         field
+``col``
+   column
 
-      ``row``
-         row
+``grain``
+   grain weight, pounds per plot
 
-      ``col``
-         column
+``straw``
+   straw weight, pounds per plot
 
-      ``grain``
-         grain weight, pounds per plot
+Details
+~~~~~~~
 
-      ``straw``
-         straw weight, pounds per plot
+In 1929, eight fields 1/5 acre in size were broadcast seeded with rice
+at the Anuradhapura Experiment Station in the northern dry zone of
+Ceylon. After broadcast, the fields were marked into 10 ft by 10 ft
+squares. At harvest, weights of grain and straw were recorded.
 
-      .. rubric:: Details
-         :name: details
+Fields 10-14 were on one side of a drain, and fields 26-28 on the other
+side.
 
-      In 1929, eight fields 1/5 acre in size were broadcast seeded with
-      rice at the Anuradhapura Experiment Station in the northern dry
-      zone of Ceylon. After broadcast, the fields were marked into 10 ft
-      by 10 ft squares. At harvest, weights of grain and straw were
-      recorded.
+Each field was surrounded by a bund. Plots next to the bunds had higher
+yields.
 
-      Fields 10-14 were on one side of a drain, and fields 26-28 on the
-      other side.
+Field width: 5 plots \* 10 feet = 50 feet
 
-      Each field was surrounded by a bund. Plots next to the bunds had
-      higher yields.
+Field length: 14 plots \* 10 feet = 140 feet
 
-      Field width: 5 plots \* 10 feet = 50 feet
+Conclusions: "It would appear that plots of about 1/87 acre are the most
+effective."
 
-      Field length: 14 plots \* 10 feet = 140 feet
+Source
+~~~~~~
 
-      Conclusions: "It would appear that plots of about 1/87 acre are
-      the most effective."
+Lord, L. (1931). A Uniformity Trial with Irrigated Broadcast Rice. The
+Journal of Agricultural Science, 21(1), 178-188.
+https://doi.org/10.1017/S0021859600008029
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Lord, L. (1931). A Uniformity Trial with Irrigated Broadcast Rice.
-      The Journal of Agricultural Science, 21(1), 178-188.
-      https://doi.org/10.1017/S0021859600008029
+None
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(lord.rice.uniformity)
+   dat <- lord.rice.uniformity
 
-         ## Not run: 
+   # match table on page 180
+   ## libs(dplyr)
+   ## dat 
+   ##   field grain straw
+   ##   <chr> <dbl> <dbl>
+   ## 1 10      590   732
+   ## 2 11      502   600
+   ## 3 12      315   488
+   ## 4 13      291   538
+   ## 5 14      489   670
+   ## 6 26      441   560
+   ## 7 27      451   629
+   ## 8 28      530   718
 
-         library(agridat)
-         data(lord.rice.uniformity)
-         dat <- lord.rice.uniformity
+   # There are consistently high yields along all edges of the field
+   # libs(lattice)
+   # bwplot(grain ~ factor(col)|field,dat)
+   # bwplot(grain ~ factor(col)|field,dat)
 
-         # match table on page 180
-         ## libs(dplyr)
-         ## dat 
-         ##   field grain straw
-         ##   <chr> <dbl> <dbl>
-         ## 1 10      590   732
-         ## 2 11      502   600
-         ## 3 12      315   488
-         ## 4 13      291   538
-         ## 5 14      489   670
-         ## 6 26      441   560
-         ## 7 27      451   629
-         ## 8 28      530   718
-
-         # There are consistently high yields along all edges of the field
-         # libs(lattice)
-         # bwplot(grain ~ factor(col)|field,dat)
-         # bwplot(grain ~ factor(col)|field,dat)
-
-         # Heatmaps
-         libs(desplot)
-         desplot(dat, grain ~ col*row|field,
-                 flip=TRUE, aspect=140/50,
-                 main="lord.rice.uniformity")
+   # Heatmaps
+   libs(desplot)
+   desplot(dat, grain ~ col*row|field,
+           flip=TRUE, aspect=140/50,
+           main="lord.rice.uniformity")
 
 
-         # bivariate scatterplots  
-         # xyplot(grain ~ straw|field, dat)
+   # bivariate scatterplots  
+   # xyplot(grain ~ straw|field, dat)
 
 
-         ## End(Not run)
+   ## End(Not run)

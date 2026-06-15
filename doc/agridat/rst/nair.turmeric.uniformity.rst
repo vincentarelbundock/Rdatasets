@@ -1,95 +1,91 @@
-.. container::
+======================== ===============
+nair.turmeric.uniformity R Documentation
+======================== ===============
 
-   .. container::
+Uniformity trial of turmeric.
+-----------------------------
 
-      ======================== ===============
-      nair.turmeric.uniformity R Documentation
-      ======================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of turmeric.
-         :name: uniformity-trial-of-turmeric.
+Uniformity trial of turmeric in India, 1984.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of turmeric in India, 1984.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("nair.turmeric.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("nair.turmeric.uniformity")
+A data frame with 864 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row ordinate
 
-      A data frame with 864 observations on the following 3 variables.
+``col``
+   column ordinate
 
-      ``row``
-         row ordinate
+``yield``
+   yield, grams per plot
 
-      ``col``
-         column ordinate
+Details
+~~~~~~~
 
-      ``yield``
-         yield, grams per plot
+An experiment conducted at the College of Horticulture, Vellanikkara,
+India, in 1984. The crop was grown in raised beds.
 
-      .. rubric:: Details
-         :name: details
+The gross experimental area was 74.2 m long x 15.2 m wide. Small
+elevated beds 0.6 m x 1.5 m were raised providing channels of 0.4 m
+around each bed. One row of beds all around the experiment was discarded
+to eliminate border effects. After discarding the borders, there were
+432 beds in the experiment. At the time of harvest, each bed was divided
+into equal plots of size .6 m x .75 m, and the yield from each plot was
+recorded.
 
-      An experiment conducted at the College of Horticulture,
-      Vellanikkara, India, in 1984. The crop was grown in raised beds.
+Field map on page 64 of Nair. Nair focused mostly on the statistical
+methods and did not discuss the actual experimental results in very much
+detail.
 
-      The gross experimental area was 74.2 m long x 15.2 m wide. Small
-      elevated beds 0.6 m x 1.5 m were raised providing channels of 0.4
-      m around each bed. One row of beds all around the experiment was
-      discarded to eliminate border effects. After discarding the
-      borders, there were 432 beds in the experiment. At the time of
-      harvest, each bed was divided into equal plots of size .6 m x .75
-      m, and the yield from each plot was recorded.
+There are an excess number of plots with 0 yield.
 
-      Field map on page 64 of Nair. Nair focused mostly on the
-      statistical methods and did not discuss the actual experimental
-      results in very much detail.
+Field length: 14 plots \* .6 m + 13 alleys \* .4 m = 13.6 m
 
-      There are an excess number of plots with 0 yield.
+Field width: 72 plots \* .75 m + 35 alleys \* .4 m = 68 m
 
-      Field length: 14 plots \* .6 m + 13 alleys \* .4 m = 13.6 m
+Data found in the appendix.
 
-      Field width: 72 plots \* .75 m + 35 alleys \* .4 m = 68 m
+Source
+~~~~~~
 
-      Data found in the appendix.
+Nair, B. Gopakumaran (1984). Optimum plot size for field experiments on
+turmeric. Thesis, Kerala Agriculture University.
+http://hdl.handle.net/123456789/7829
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Nair, B. Gopakumaran (1984). Optimum plot size for field
-      experiments on turmeric. Thesis, Kerala Agriculture University.
-      http://hdl.handle.net/123456789/7829
+None.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
+     
+     library(agridat)
+     data(nair.turmeric.uniformity)
+     dat <- nair.turmeric.uniformity
 
-      .. code:: R
-
-         ## Not run: 
-           
-           library(agridat)
-           data(nair.turmeric.uniformity)
-           dat <- nair.turmeric.uniformity
-
-           libs(lattice)
-           qqmath( ~ yield, dat)
-           libs(desplot)
-           desplot(dat, yield ~ col*row,
-                   flip=TRUE, aspect=13.6/68,
-                   main="nair.turmeric.uniformity")
+     libs(lattice)
+     qqmath( ~ yield, dat)
+     libs(desplot)
+     desplot(dat, yield ~ col*row,
+             flip=TRUE, aspect=13.6/68,
+             main="nair.turmeric.uniformity")
 
 
-         ## End(Not run)
+   ## End(Not run)

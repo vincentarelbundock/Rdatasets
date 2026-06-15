@@ -1,174 +1,170 @@
-.. container::
+=== ===============
+esi R Documentation
+=== ===============
 
-   .. container::
+Environmental Sustainability Index 2005
+---------------------------------------
 
-      === ===============
-      esi R Documentation
-      === ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Environmental Sustainability Index 2005
-         :name: environmental-sustainability-index-2005
+This dataset comes from the 2005 Environmental Sustainability Index:
+Benchmarking National Environmental Stewardship. Countries are given an
+overall sustainability score as well as scores in each of several
+different environmental areas.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset comes from the 2005 Environmental Sustainability
-      Index: Benchmarking National Environmental Stewardship. Countries
-      are given an overall sustainability score as well as scores in
-      each of several different environmental areas.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   esi
 
-      .. code:: R
+Format
+~~~~~~
 
-         esi
+A data frame with 146 observations on the following 29 variables.
 
-      .. rubric:: Format
-         :name: format
+code
+   ISO3 country code.
 
-      A data frame with 146 observations on the following 29 variables.
+country
+   Country.
 
-      code
-         ISO3 country code.
+esi
+   Environmental Sustainability Index.
 
-      country
-         Country.
+system
+   ESI core component: systems
 
-      esi
-         Environmental Sustainability Index.
+stress
+   ESI core component: stresses
 
-      system
-         ESI core component: systems
+vulner
+   ESI core component: vulnerability
 
-      stress
-         ESI core component: stresses
+cap
+   ESI core component: capacity
 
-      vulner
-         ESI core component: vulnerability
+global
+   ESI core component: global stewardship
 
-      cap
-         ESI core component: capacity
+sys_air
+   Air quality.
 
-      global
-         ESI core component: global stewardship
+sys_bio
+   Biodiversity.
 
-      sys_air
-         Air quality.
+sys_lan
+   Land.
 
-      sys_bio
-         Biodiversity.
+sys_wql
+   Water quality.
 
-      sys_lan
-         Land.
+sys_wqn
+   Water quantity.
 
-      sys_wql
-         Water quality.
+str_air
+   Reducing air pollution.
 
-      sys_wqn
-         Water quantity.
+str_eco
+   Reducing ecosystem stress.
 
-      str_air
-         Reducing air pollution.
+str_pop
+   Reducing population pressure.
 
-      str_eco
-         Reducing ecosystem stress.
+str_was
+   Reducing waste and consumption pressures.
 
-      str_pop
-         Reducing population pressure.
+str_wat
+   Reducing water stress.
 
-      str_was
-         Reducing waste and consumption pressures.
+str_nrm
+   Natural resource management.
 
-      str_wat
-         Reducing water stress.
+vul_hea
+   Environmental health.
 
-      str_nrm
-         Natural resource management.
+vul_sus
+   Basic human sustenance.
 
-      vul_hea
-         Environmental health.
+vul_dis
+   Exposure to natural disasters.
 
-      vul_sus
-         Basic human sustenance.
+cap_gov
+   Environmental governance.
 
-      vul_dis
-         Exposure to natural disasters.
+cap_eff
+   Eco-efficiency.
 
-      cap_gov
-         Environmental governance.
+cap_pri
+   Private sector responsiveness.
 
-      cap_eff
-         Eco-efficiency.
+cap_st
+   Science and technology.
 
-      cap_pri
-         Private sector responsiveness.
+glo_col
+   Participation in international collaboration efforts.
 
-      cap_st
-         Science and technology.
+glo_ghg
+   Greenhouse gas emissions.
 
-      glo_col
-         Participation in international collaboration efforts.
+glo_tbp
+   Reducing transboundary environmental pressures.
 
-      glo_ghg
-         Greenhouse gas emissions.
+Details
+~~~~~~~
 
-      glo_tbp
-         Reducing transboundary environmental pressures.
+ESI and Component scores are presented as standard normal percentiles.
+Indicator scores are in the form of z-scores. See Appendix A of the
+report for information on the methodology and Appendix C for more detail
+on original data sources.
 
-      .. rubric:: Details
-         :name: details
+For more information on how each of the indices were calculated, see the
+documentation linked below.
 
-      ESI and Component scores are presented as standard normal
-      percentiles. Indicator scores are in the form of z-scores. See
-      Appendix A of the report for information on the methodology and
-      Appendix C for more detail on original data sources.
+Source
+~~~~~~
 
-      For more information on how each of the indices were calculated,
-      see the documentation linked below.
+ESI Component Indicators. *2005 Environmental Sustainability Index:
+Benchmarking National Environmental Stewardship*, Yale Center for
+Environmental Law and Policy, Yale University & Center for International
+Earth Science Information Network (CIESIN), Columbia University
 
-      .. rubric:: Source
-         :name: source
+In collaboration with: World Economic Forum, Geneva, Switzerland Joint
+Research Centre of the European Commission, Ispra, Italy.
 
-      ESI Component Indicators. *2005 Environmental Sustainability
-      Index: Benchmarking National Environmental Stewardship*, Yale
-      Center for Environmental Law and Policy, Yale University & Center
-      for International Earth Science Information Network (CIESIN),
-      Columbia University
+Available at
+https://www.earth.columbia.edu/news/2005/images/ESI2005_policysummary.pdf.
 
-      In collaboration with: World Economic Forum, Geneva, Switzerland
-      Joint Research Centre of the European Commission, Ispra, Italy.
+References
+~~~~~~~~~~
 
-      Available at
-      https://www.earth.columbia.edu/news/2005/images/ESI2005_policysummary.pdf.
+Esty, Daniel C., Marc Levy, Tanja Srebotnjak, and Alexander de Sherbinin
+(2005). *2005 Environmental Sustainability Index: Benchmarking National
+Environmental Stewardship.* New Haven: Yale Center for Environmental Law
+and Policy
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Esty, Daniel C., Marc Levy, Tanja Srebotnjak, and Alexander de
-      Sherbinin (2005). *2005 Environmental Sustainability Index:
-      Benchmarking National Environmental Stewardship.* New Haven: Yale
-      Center for Environmental Law and Policy
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   library(ggplot2)
 
-         library(ggplot2)
+   ggplot(esi, aes(x = cap_st, y = glo_col)) +
+     geom_point(color = ifelse(esi$code == "USA", "red", "black")) +
+     geom_text(
+       aes(label = ifelse(code == "USA", as.character(code), "")),
+       hjust = 1.2, color = "red"
+     ) +
+     labs(x = "Science and technology", y = "Participation in international collaboration efforts")
 
-         ggplot(esi, aes(x = cap_st, y = glo_col)) +
-           geom_point(color = ifelse(esi$code == "USA", "red", "black")) +
-           geom_text(
-             aes(label = ifelse(code == "USA", as.character(code), "")),
-             hjust = 1.2, color = "red"
-           ) +
-           labs(x = "Science and technology", y = "Participation in international collaboration efforts")
-
-         ggplot(esi, aes(x = vulner, y = cap)) +
-           geom_point(color = ifelse(esi$code == "USA", "red", "black")) +
-           geom_text(
-             aes(label = ifelse(code == "USA", as.character(code), "")),
-             hjust = 1.2, color = "red"
-           ) +
-           labs(x = "Vulnerability", y = "Capacity")
+   ggplot(esi, aes(x = vulner, y = cap)) +
+     geom_point(color = ifelse(esi$code == "USA", "red", "black")) +
+     geom_text(
+       aes(label = ifelse(code == "USA", as.character(code), "")),
+       hjust = 1.2, color = "red"
+     ) +
+     labs(x = "Vulnerability", y = "Capacity")

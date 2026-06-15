@@ -1,58 +1,51 @@
-.. container::
+======= ===============
+road_df R Documentation
+======= ===============
 
-   .. container::
+Road Accident Deaths in US States
+---------------------------------
 
-      ======= ===============
-      road_df R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Road Accident Deaths in US States
-         :name: road-accident-deaths-in-us-states
+The dataset name has been changed to 'road_df' to avoid confusion with
+other packages in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a data frame. The original content of the dataset has
+not been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'road_df' to avoid confusion
-      with other packages in the R ecosystem. This naming convention
-      helps distinguish this dataset as part of the 'usdatasets' package
-      and identifies it as a data frame. The original content of the
-      dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(road_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(road_df)
+A data frame with 26 observations and 6 variables:
 
-      .. rubric:: Format
-         :name: format
+deaths
+   Integer indicating the number of road deaths.
 
-      A data frame with 26 observations and 6 variables:
+drivers
+   Integer representing the number of licensed drivers.
 
-      deaths
-         Integer indicating the number of road deaths.
+popden
+   Numeric indicating the population density (people per square mile).
 
-      drivers
-         Integer representing the number of licensed drivers.
+rural
+   Numeric indicating the percentage of rural roads.
 
-      popden
-         Numeric indicating the population density (people per square
-         mile).
+temp
+   Integer representing the average temperature (in degrees Fahrenheit).
 
-      rural
-         Numeric indicating the percentage of rural roads.
+fuel
+   Numeric indicating the fuel consumption per capita (in gallons).
 
-      temp
-         Integer representing the average temperature (in degrees
-         Fahrenheit).
+Source
+~~~~~~
 
-      fuel
-         Numeric indicating the fuel consumption per capita (in
-         gallons).
-
-      .. rubric:: Source
-         :name: source
-
-      Data on road safety statistics, including deaths, drivers,
-      population density, and environmental factors.
+Data on road safety statistics, including deaths, drivers, population
+density, and environmental factors.

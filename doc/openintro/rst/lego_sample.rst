@@ -1,107 +1,101 @@
-.. container::
+=========== ===============
+lego_sample R Documentation
+=========== ===============
 
-   .. container::
+Sample of Lego Sets
+-------------------
 
-      =========== ===============
-      lego_sample R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Sample of Lego Sets
-         :name: sample-of-lego-sets
+Data about Lego Sets for sale. Based on JSDSE article by Anna Peterson
+and Laura Ziegler Data from their article was scrapped from multiple
+sources including brickset.com
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data about Lego Sets for sale. Based on JSDSE article by Anna
-      Peterson and Laura Ziegler Data from their article was scrapped
-      from multiple sources including brickset.com
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   lego_sample
 
-      .. code:: R
+Format
+~~~~~~
 
-         lego_sample
+A data frame with 75 rows and 15 variables.
 
-      .. rubric:: Format
-         :name: format
+item_number
+   Set Item number
 
-      A data frame with 75 rows and 15 variables.
+set_name
+   Name of the set.
 
-      item_number
-         Set Item number
+theme
+   Set theme: Duplo, City or Friends.
 
-      set_name
-         Name of the set.
+pieces
+   Number of pieces in the set.
 
-      theme
-         Set theme: Duplo, City or Friends.
+price
+   Recommended retail price from LEGO.
 
-      pieces
-         Number of pieces in the set.
+amazon_price
+   Price of the set at Amazon.
 
-      price
-         Recommended retail price from LEGO.
+year
+   Year that it was produced.
 
-      amazon_price
-         Price of the set at Amazon.
+ages
+   LEGO's recommended ages of children for the set
 
-      year
-         Year that it was produced.
+pages
+   Pages in the instruction booklet.
 
-      ages
-         LEGO's recommended ages of children for the set
+minifigures
+   Number of LEGO people in the data, if unknown "NA" was recorded.
 
-      pages
-         Pages in the instruction booklet.
+packaging
+   Type of packaging: bag, box, etc.
 
-      minifigures
-         Number of LEGO people in the data, if unknown "NA" was
-         recorded.
+weight
+   Weight of the set of LEGOS in pounds and kilograms.
 
-      packaging
-         Type of packaging: bag, box, etc.
+unique_pieces
+   Number of pieces classified as unique in the instruction manual.
 
-      weight
-         Weight of the set of LEGOS in pounds and kilograms.
+size
+   Size of the lego pieces: Large if safe for small children and Small
+   for older children.
 
-      unique_pieces
-         Number of pieces classified as unique in the instruction
-         manual.
+Source
+~~~~~~
 
-      size
-         Size of the lego pieces: Large if safe for small children and
-         Small for older children.
+Peterson, A. D., & Ziegler, L. (2021). Building a multiple linear
+regression model with LEGO brick data. Journal of Statistics and Data
+Science Education, 29(3),1-7.
+`doi:10.1080/26939169.2021.1946450 <https://doi.org/10.1080/26939169.2021.1946450>`__
 
-      .. rubric:: Source
-         :name: source
+`BrickInstructions.com. (n.d.). Retrieved February 2, 2021
+from <https://lego.brickinstructions.com/>`__
 
-      Peterson, A. D., & Ziegler, L. (2021). Building a multiple linear
-      regression model with LEGO brick data. Journal of Statistics and
-      Data Science Education, 29(3),1-7.
-      `doi:10.1080/26939169.2021.1946450 <https://doi.org/10.1080/26939169.2021.1946450>`__
+`Brickset. (n.d.). BRICKSET: Your LEGO® set guide. Retrieved February 2,
+2021 from <https://brickset.com>`__
 
-      `BrickInstructions.com. (n.d.). Retrieved February 2, 2021
-      from <https://lego.brickinstructions.com/>`__
+Examples
+~~~~~~~~
 
-      `Brickset. (n.d.). BRICKSET: Your LEGO® set guide. Retrieved
-      February 2, 2021 from <https://brickset.com>`__
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   library(ggplot2)
+   library(dplyr)
 
-      .. code:: R
-
-         library(ggplot2)
-         library(dplyr)
-
-         lego_sample |>
-           filter(theme == "Friends" | theme == "City") |>
-           ggplot(aes(x = pieces, y = amazon_price)) +
-           geom_point(alpha = 0.3) +
-           labs(
-             x = "Pieces in the Set",
-             y = "Amazon Price",
-             title = "Amazon Price vs Number of Pieces in Lego Sets",
-             subtitle = "Friends and City Themes"
-           )
+   lego_sample |>
+     filter(theme == "Friends" | theme == "City") |>
+     ggplot(aes(x = pieces, y = amazon_price)) +
+     geom_point(alpha = 0.3) +
+     labs(
+       x = "Pieces in the Set",
+       y = "Amazon Price",
+       title = "Amazon Price vs Number of Pieces in Lego Sets",
+       subtitle = "Friends and City Themes"
+     )

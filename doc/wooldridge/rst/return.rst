@@ -1,76 +1,71 @@
-.. container::
+====== ===============
+return R Documentation
+====== ===============
 
-   .. container::
+return
+------
 
-      ====== ===============
-      return R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: return
-         :name: return
+Wooldridge Source: Collected by Stephanie Balys, a former MSU
+undergraduate, from the New York Stock Exchange and Compustat. Data
+loads lazily.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Wooldridge Source: Collected by Stephanie Balys, a former MSU
-      undergraduate, from the New York Stock Exchange and Compustat.
-      Data loads lazily.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data('return')
 
-      .. code:: R
+Format
+~~~~~~
 
-         data('return')
+A data.frame with 142 observations on 12 variables:
 
-      .. rubric:: Format
-         :name: format
+- **roe:** return on equity, 1990
 
-      A data.frame with 142 observations on 12 variables:
+- **rok:** return on capital, 1990
 
-      -  **roe:** return on equity, 1990
+- **dkr:** debt/capital, 1990
 
-      -  **rok:** return on capital, 1990
+- **eps:** earnings per share, 1990
 
-      -  **dkr:** debt/capital, 1990
+- **netinc:** net income, 1990 (mills.)
 
-      -  **eps:** earnings per share, 1990
+- **sp90:** stock price, end 1990
 
-      -  **netinc:** net income, 1990 (mills.)
+- **sp94:** stock price, end 1994
 
-      -  **sp90:** stock price, end 1990
+- **salary:** CEO salary, 1990 (thous.)
 
-      -  **sp94:** stock price, end 1994
+- **return:** percent change s.p., 90-94
 
-      -  **salary:** CEO salary, 1990 (thous.)
+- **lsalary:** log(salary)
 
-      -  **return:** percent change s.p., 90-94
+- **lsp90:** log(sp90)
 
-      -  **lsalary:** log(salary)
+- **lnetinc:** log(netinc)
 
-      -  **lsp90:** log(sp90)
+Notes
+~~~~~
 
-      -  **lnetinc:** log(netinc)
+More can be done with this data set. Recently, I discovered that lsp90
+does appear to predict return (and the log of the 1990 stock price works
+better than sp90). I am a little suspicious, but you could use the
+negative coefficient on lsp90 to illustrate “reversion to the mean.”
 
-      .. rubric:: Notes
-         :name: notes
+Used in Text: page 162-163
 
-      More can be done with this data set. Recently, I discovered that
-      lsp90 does appear to predict return (and the log of the 1990 stock
-      price works better than sp90). I am a little suspicious, but you
-      could use the negative coefficient on lsp90 to illustrate
-      “reversion to the mean.”
+Source
+~~~~~~
 
-      Used in Text: page 162-163
+https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-          str(return)
+    str(return)

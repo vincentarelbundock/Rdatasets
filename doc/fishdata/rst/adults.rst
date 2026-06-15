@@ -1,49 +1,45 @@
-.. container::
+====== ===============
+adults R Documentation
+====== ===============
 
-   .. container::
+Base table of adult fish sample sites and dates.
+------------------------------------------------
 
-      ====== ===============
-      adults R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Base table of adult fish sample sites and dates.
-         :name: base-table-of-adult-fish-sample-sites-and-dates.
+A dataset containing base location and time catch information for adult
+Galaxis maculatus.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset containing base location and time catch information for
-      adult Galaxis maculatus.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   adults
 
-      .. code:: R
+Format
+~~~~~~
 
-         adults
+A dataset containing 48 rows and 4 variables
 
-      .. rubric:: Format
-         :name: format
+fish_code
+   Primary key, uniquely identifies a fish
 
-      A dataset containing 48 rows and 4 variables
+site
+   Site where fish was caught
 
-      fish_code
-         Primary key, uniquely identifies a fish
+day
+   Day group fish was caught on (H1 = 1st day fishing, H3 = 3rd day
+   fishing). Used for by-day grouping analysis. For actual catch date
+   see 'catch_date'
 
-      site
-         Site where fish was caught
+catch_date
+   Date that the fish was caught on
 
-      day
-         Day group fish was caught on (H1 = 1st day fishing, H3 = 3rd
-         day fishing). Used for by-day grouping analysis. For actual
-         catch date see 'catch_date'
+Examples
+~~~~~~~~
 
-      catch_date
-         Date that the fish was caught on
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(adults)
+   data(adults)

@@ -1,71 +1,64 @@
-.. container::
+========== ===============
+ahca_polls R Documentation
+========== ===============
 
-   .. container::
+American Health Care Act Polls
+------------------------------
 
-      ========== ===============
-      ahca_polls R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: American Health Care Act Polls
-         :name: american-health-care-act-polls
+The raw data behind the story "Why The GOP Is So Hell-Bent On Passing An
+Unpopular Health Care Bill"
+https://fivethirtyeight.com/features/why-the-gop-is-so-hell-bent-on-passing-an-unpopular-health-care-bill/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Why The GOP Is So Hell-Bent On
-      Passing An Unpopular Health Care Bill"
-      https://fivethirtyeight.com/features/why-the-gop-is-so-hell-bent-on-passing-an-unpopular-health-care-bill/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   ahca_polls
 
-      .. code:: R
+Format
+~~~~~~
 
-         ahca_polls
+A data frame with 15 rows representing polls and 7 variables:
 
-      .. rubric:: Format
-         :name: format
+start
+   Start date of the poll.
 
-      A data frame with 15 rows representing polls and 7 variables:
+end
+   End date of the poll.
 
-      start
-         Start date of the poll.
+pollster
+   The entity that conducts and collects information from the poll.
 
-      end
-         End date of the poll.
+favor
+   The number of affirmative responses to the question at the pollster.
 
-      pollster
-         The entity that conducts and collects information from the
-         poll.
+oppose
+   The number of negative responses to the question at the pollster.
 
-      favor
-         The number of affirmative responses to the question at the
-         pollster.
+url
+   The website associated with the polling question.
 
-      oppose
-         The number of negative responses to the question at the
-         pollster.
+text
+   The polling question asked at the pollster.
 
-      url
-         The website associated with the polling question.
+Source
+~~~~~~
 
-      text
-         The polling question asked at the pollster.
+See
+https://github.com/fivethirtyeight/data/blob/master/ahca-polls/README.md
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      See
-      https://github.com/fivethirtyeight/data/blob/master/ahca-polls/README.md
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         # To convert data frame to tidy data (long) format, run:
-         library(dplyr)
-         library(tidyr)
-         library(stringr)
-         ahca_polls_tidy <- ahca_polls %>%
-           pivot_longer(-c(start, end, pollster, text, url), names_to = "opinion", values_to = "count")
+   # To convert data frame to tidy data (long) format, run:
+   library(dplyr)
+   library(tidyr)
+   library(stringr)
+   ahca_polls_tidy <- ahca_polls %>%
+     pivot_longer(-c(start, end, pollster, text, url), names_to = "opinion", values_to = "count")

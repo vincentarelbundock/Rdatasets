@@ -1,83 +1,79 @@
-.. container::
+======== ===============
+VietNamH R Documentation
+======== ===============
 
-   .. container::
+Medical Expenses in Vietnam (household Level)
+---------------------------------------------
 
-      ======== ===============
-      VietNamH R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Medical Expenses in Vietnam (household Level)
-         :name: medical-expenses-in-vietnam-household-level
+a cross-section from 1997
 
-      .. rubric:: Description
-         :name: description
+*number of observations* : 5999
 
-      a cross-section from 1997
+*observation* : households
 
-      *number of observations* : 5999
+*country* : Vietnam
 
-      *observation* : households
+Usage
+~~~~~
 
-      *country* : Vietnam
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(VietNamH)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(VietNamH)
+A dataframe containing :
 
-      .. rubric:: Format
-         :name: format
+sex
+   gender of household head (male,female)
 
-      A dataframe containing :
+age
+   age of household head
 
-      sex
-         gender of household head (male,female)
+educyr
+   schooling year of household head
 
-      age
-         age of household head
+farm
+   farm household ?
 
-      educyr
-         schooling year of household head
+urban
+   urban household ?
 
-      farm
-         farm household ?
+hhsize
+   household size
 
-      urban
-         urban household ?
+lntotal
+   log household total expenditure
 
-      hhsize
-         household size
+lnmed
+   log household medical expenditure
 
-      lntotal
-         log household total expenditure
+lnrlfood
+   log household food expenditure
 
-      lnmed
-         log household medical expenditure
+lnexp12m
+   log of total household health care expenditure for 12 months
 
-      lnrlfood
-         log household food expenditure
+commune
+   commune
 
-      lnexp12m
-         log of total household health care expenditure for 12 months
+Source
+~~~~~~
 
-      commune
-         commune
+Vietnam World Bank Livings Standards Survey.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Vietnam World Bank Livings Standards Survey.
+Cameron, A.C. and P.K. Trivedi (2005) *Microeconometrics : methods and
+applications*, Cambridge, pp.88–90.
 
-      .. rubric:: References
-         :name: references
+See Also
+~~~~~~~~
 
-      Cameron, A.C. and P.K. Trivedi (2005) *Microeconometrics : methods
-      and applications*, Cambridge, pp.88–90.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-      ``Index.Observations``
+``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+``Index.Observations``

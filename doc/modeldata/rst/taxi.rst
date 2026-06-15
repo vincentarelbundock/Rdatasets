@@ -1,65 +1,60 @@
-.. container::
+==== ===============
+taxi R Documentation
+==== ===============
 
-   .. container::
+Chicago taxi data set
+---------------------
 
-      ==== ===============
-      taxi R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Chicago taxi data set
-         :name: chicago-taxi-data-set
+A data set containing information on a subset of taxi trips in the city
+of Chicago in 2022.
 
-      .. rubric:: Description
-         :name: description
+Details
+~~~~~~~
 
-      A data set containing information on a subset of taxi trips in the
-      city of Chicago in 2022.
+The source data are originally described on the linked City of Chicago
+data portal. The data exported here are a pre-processed subset motivated
+by the modeling problem of predicting whether a rider will tip or not.
 
-      .. rubric:: Details
-         :name: details
+tip
+   Whether the rider left a tip. A factor with levels "yes" and "no".
 
-      The source data are originally described on the linked City of
-      Chicago data portal. The data exported here are a pre-processed
-      subset motivated by the modeling problem of predicting whether a
-      rider will tip or not.
+distance
+   The trip distance, in odometer miles.
 
-      tip
-         Whether the rider left a tip. A factor with levels "yes" and
-         "no".
+company
+   The taxi company, as a factor. Companies that occurred few times were
+   binned as "other".
 
-      distance
-         The trip distance, in odometer miles.
+local
+   Whether the trip's starting and ending locations are in the same
+   community. See the source data for community area values.
 
-      company
-         The taxi company, as a factor. Companies that occurred few
-         times were binned as "other".
+dow
+   The day of the week in which the trip began, as a factor.
 
-      local
-         Whether the trip's starting and ending locations are in the
-         same community. See the source data for community area values.
+month
+   The month in which the trip began, as a factor.
 
-      dow
-         The day of the week in which the trip began, as a factor.
+hour
+   The hour of the day in which the trip began, as a numeric.
 
-      month
-         The month in which the trip began, as a factor.
+Value
+~~~~~
 
-      hour
-         The hour of the day in which the trip began, as a numeric.
+tibble
 
-      .. rubric:: Value
-         :name: value
+Source
+~~~~~~
 
-      tibble
+https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         taxi
+   taxi

@@ -1,0 +1,104 @@
+<!DOCTYPE html><html><head><title>R: ADHD Symptom Checklist for Children Aged 6–8 Years</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>ADHD_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>ADHD Symptom Checklist for Children Aged 6–8 Years</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, ADHD_df, is a data frame containing ADHD symptom ratings for 355 children aged 6 to 8 years
+from the Children's Attention Project (CAP) cohort (Silk et al. 2019). The sample consists of 146 children
+diagnosed with ADHD and 209 without a diagnosis. Symptoms were assessed through structured interviews with
+parents using the NIMH Diagnostic Interview Schedule for Children IV (DISC-IV) (Shaffer et al. 2000).
+The checklist includes 18 items: 9 Inattentive (I) and 9 Hyperactive/Impulsive (HI). Each symptom item
+is binary coded (1 = present, 0 = absent), providing a comprehensive assessment of ADHD symptomatology
+in young children.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(ADHD_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 355 observations and 19 variables:
+</p>
+
+<dl>
+<dt>group</dt><dd><p>Group indicator (integer: 1 = ADHD diagnosis, 0 = no diagnosis)</p>
+</dd>
+<dt>avoid</dt><dd><p>Avoids tasks requiring sustained mental effort (integer: 0 or 1)</p>
+</dd>
+<dt>closeatt</dt><dd><p>Fails to give close attention to details (integer: 0 or 1)</p>
+</dd>
+<dt>distract</dt><dd><p>Easily distracted by extraneous stimuli (integer: 0 or 1)</p>
+</dd>
+<dt>forget</dt><dd><p>Forgetful in daily activities (integer: 0 or 1)</p>
+</dd>
+<dt>instruct</dt><dd><p>Fails to follow through on instructions (integer: 0 or 1)</p>
+</dd>
+<dt>listen</dt><dd><p>Does not seem to listen when spoken to directly (integer: 0 or 1)</p>
+</dd>
+<dt>loses</dt><dd><p>Loses things necessary for tasks or activities (integer: 0 or 1)</p>
+</dd>
+<dt>org</dt><dd><p>Difficulty organizing tasks and activities (integer: 0 or 1)</p>
+</dd>
+<dt>susatt</dt><dd><p>Difficulty sustaining attention in tasks or play (integer: 0 or 1)</p>
+</dd>
+<dt>blurts</dt><dd><p>Blurts out answers before questions are completed (integer: 0 or 1)</p>
+</dd>
+<dt>fidget</dt><dd><p>Fidgets with hands or feet or squirms in seat (integer: 0 or 1)</p>
+</dd>
+<dt>interrupt</dt><dd><p>Interrupts or intrudes on others (integer: 0 or 1)</p>
+</dd>
+<dt>motor</dt><dd><p>Acts as if driven by a motor (integer: 0 or 1)</p>
+</dd>
+<dt>quiet</dt><dd><p>Difficulty playing or engaging quietly in leisure activities (integer: 0 or 1)</p>
+</dd>
+<dt>runs</dt><dd><p>Runs about or climbs excessively in inappropriate situations (integer: 0 or 1)</p>
+</dd>
+<dt>seat</dt><dd><p>Leaves seat in situations when remaining seated is expected (integer: 0 or 1)</p>
+</dd>
+<dt>talks</dt><dd><p>Talks excessively (integer: 0 or 1)</p>
+</dd>
+<dt>turn</dt><dd><p>Difficulty waiting turn (integer: 0 or 1)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as ADHD_df to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+NeuroDataSets package and assists users in identifying its specific characteristics.
+The suffix df indicates that the dataset is a data frame. The original content has not been modified.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from the bgms package version 0.1.6.1
+</p>
+
+</main>
+
+</div>
+</body></html>

@@ -1,43 +1,38 @@
-.. container::
+=========== ===============
+marathon_ts R Documentation
+=========== ===============
 
-   .. container::
+Boston Marathon Winning Times Since 1897
+----------------------------------------
 
-      =========== ===============
-      marathon_ts R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Boston Marathon Winning Times Since 1897
-         :name: boston-marathon-winning-times-since-1897
+The dataset name has been changed to 'marathon_ts' to avoid confusion
+with other packages in the R ecosystem from which datasets have been
+sourced. The suffix 'ts' indicates that this dataset is a time series
+object. This naming convention helps distinguish this dataset as part of
+the 'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'marathon_ts' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. The suffix 'ts' indicates that this
-      dataset is a time series object. This naming convention helps
-      distinguish this dataset as part of the 'timeseriesdatasets'
-      package and assists users in identifying its specific
-      characteristics. The original content of the dataset has not been
-      modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(marathon_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(marathon_ts)
+A time series object with 120 observations:
 
-      .. rubric:: Format
-         :name: format
+marathon
+   A numeric vector representing the winning times (in minutes) of the
+   Boston Marathon from 1897 to 2016.
 
-      A time series object with 120 observations:
+Source
+~~~~~~
 
-      marathon
-         A numeric vector representing the winning times (in minutes) of
-         the Boston Marathon from 1897 to 2016.
-
-      .. rubric:: Source
-         :name: source
-
-      Boston Athletic Association.
+Boston Athletic Association.

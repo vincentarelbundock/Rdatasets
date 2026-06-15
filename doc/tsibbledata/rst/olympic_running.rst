@@ -1,60 +1,56 @@
-.. container::
+=============== ===============
+olympic_running R Documentation
+=============== ===============
 
-   .. container::
+Fastest running times for Olympic races
+---------------------------------------
 
-      =============== ===============
-      olympic_running R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Fastest running times for Olympic races
-         :name: fastest-running-times-for-olympic-races
+``olympic_running`` is a quadrennial ``tsibble`` with one value:
 
-      .. rubric:: Description
-         :name: description
+===== ============================================
+Time: Fastest running time for the event (seconds)
+      
+===== ============================================
 
-      ``olympic_running`` is a quadrennial ``tsibble`` with one value:
+Format
+~~~~~~
 
-      ===== ============================================
-      Time: Fastest running time for the event (seconds)
-      \     
-      ===== ============================================
+Time series of class ``tsibble``
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      Time series of class ``tsibble``
+The event is identified using two keys:
 
-      .. rubric:: Details
-         :name: details
+======= ===============================
+Length: The length of the race (meters)
+Sex:    The sex of the event
+        
+======= ===============================
 
-      The event is identified using two keys:
+The data contains missing values in 1916, 1940 and 1944 due to the World
+Wars.
 
-      ======= ===============================
-      Length: The length of the race (meters)
-      Sex:    The sex of the event
-      \       
-      ======= ===============================
+Source
+~~~~~~
 
-      The data contains missing values in 1916, 1940 and 1944 due to the
-      World Wars.
+https://olympics.com/en/sports/athletics/
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      https://olympics.com/en/sports/athletics/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   library(tsibble)
+   olympic_running
 
-      .. code:: R
-
-         library(tsibble)
-         olympic_running
-
-         if(requireNamespace("ggplot2")){
-         library(ggplot2)
-         olympic_running %>% as_tibble %>%
-           ggplot(aes(x=Year, y = Time, colour = Sex)) +
-           geom_line() +
-           facet_wrap(~ Length, scales = "free_y")
-         }
+   if(requireNamespace("ggplot2")){
+   library(ggplot2)
+   olympic_running %>% as_tibble %>%
+     ggplot(aes(x=Year, y = Time, colour = Sex)) +
+     geom_line() +
+     facet_wrap(~ Length, scales = "free_y")
+   }

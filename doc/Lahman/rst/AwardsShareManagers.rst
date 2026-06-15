@@ -1,82 +1,78 @@
-.. container::
+=================== ===============
+AwardsShareManagers R Documentation
+=================== ===============
 
-   .. container::
+AwardsShareManagers table
+-------------------------
 
-      =================== ===============
-      AwardsShareManagers R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: AwardsShareManagers table
-         :name: awardssharemanagers-table
+Award voting for managers awards
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Award voting for managers awards
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(AwardsShareManagers)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(AwardsShareManagers)
+A data frame with 539 observations on the following 7 variables.
 
-      .. rubric:: Format
-         :name: format
+``awardID``
+   name of award votes were received for
 
-      A data frame with 526 observations on the following 7 variables.
+``yearID``
+   Year
 
-      ``awardID``
-         name of award votes were received for
+``lgID``
+   League; a factor with levels ``AL`` ``NL``
 
-      ``yearID``
-         Year
+``playerID``
+   Manager (player) ID code
 
-      ``lgID``
-         League; a factor with levels ``AL`` ``NL``
+``pointsWon``
+   Number of points received
 
-      ``playerID``
-         Manager (player) ID code
+``pointsMax``
+   Maximum number of points possible
 
-      ``pointsWon``
-         Number of points received
+``votesFirst``
+   Number of first place votes
 
-      ``pointsMax``
-         Maximum number of points possible
+Source
+~~~~~~
 
-      ``votesFirst``
-         Number of first place votes
+Lahman, S. (2026) Lahman's Baseball Database, 1871-2025, 2026 version,
+https://sabr.org/lahman-database/
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Lahman, S. (2025) Lahman's Baseball Database, 1871-2024, 2025
-      version, https://sabr.org/lahman-database/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   # Voting for the BBWAA Manager of the Year award by year and league
 
-      .. code:: R
+   require("dplyr")
 
-         # Voting for the BBWAA Manager of the Year award by year and league
+   # Sort in decreasing order of points by year and league
+   AwardsShareManagers %>%
+      group_by(yearID, lgID) %>%
+      arrange(desc(pointsWon))
 
-         require("dplyr")
+   # Any unanimous winners?
+   AwardsShareManagers %>%
+     filter(pointsWon == pointsMax)
 
-         # Sort in decreasing order of points by year and league
-         AwardsShareManagers %>%
-            group_by(yearID, lgID) %>%
-            arrange(desc(pointsWon))
+   # Manager with highest proportion of possible points
+   AwardsShareManagers %>%
+      mutate(propWon = pointsWon/pointsMax) %>%
+      arrange(desc(propWon)) %>%
+      head(., 1)
 
-         # Any unanimous winners?
-         AwardsShareManagers %>%
-           filter(pointsWon == pointsMax)
-
-         # Manager with highest proportion of possible points
-         AwardsShareManagers %>%
-            mutate(propWon = pointsWon/pointsMax) %>%
-            arrange(desc(propWon)) %>%
-            head(., 1)
-
-         # Bobby Cox's MOY vote tallies
-         AwardsShareManagers %>%
-           filter(playerID == "coxbo01")
+   # Bobby Cox's MOY vote tallies
+   AwardsShareManagers %>%
+     filter(playerID == "coxbo01")

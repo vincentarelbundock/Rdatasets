@@ -1,50 +1,46 @@
-.. container::
+=========== ===============
+WWWusage_ts R Documentation
+=========== ===============
 
-   .. container::
+Internet Usage per Minute
+-------------------------
 
-      =========== ===============
-      WWWusage_ts R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Internet Usage per Minute
-         :name: internet-usage-per-minute
+The dataset name has been changed to 'WWWusage_ts' to avoid confusion
+with other datasets in the R ecosystem from which data have been
+sourced. The suffix 'ts' indicates that this dataset is a time series
+object. This naming convention helps distinguish this dataset as part of
+the 'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'WWWusage_ts' to avoid
-      confusion with other datasets in the R ecosystem from which data
-      have been sourced. The suffix 'ts' indicates that this dataset is
-      a time series object. This naming convention helps distinguish
-      this dataset as part of the 'timeseriesdatasets' package and
-      assists users in identifying its specific characteristics. The
-      original content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(WWWusage_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(WWWusage_ts)
+A 'ts' object with 100 observations:
 
-      .. rubric:: Format
-         :name: format
+time
+   Time series from 1 to 100 minutes.
 
-      A 'ts' object with 100 observations:
+value
+   Internet usage per minute (in MB).
 
-      time
-         Time series from 1 to 100 minutes.
+Details
+~~~~~~~
 
-      value
-         Internet usage per minute (in MB).
+This dataset contains data on internet usage per minute from 1 to 100
+minutes. The values are measured in megabytes (MB).
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains data on internet usage per minute from 1 to
-      100 minutes. The values are measured in megabytes (MB).
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset is part of the R datasets package.
+The dataset is part of the R datasets package.

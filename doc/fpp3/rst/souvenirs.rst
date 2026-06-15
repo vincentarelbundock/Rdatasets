@@ -1,34 +1,31 @@
-.. container::
+========= ===============
+souvenirs R Documentation
+========= ===============
 
-   .. container::
+Sales for a souvenir shop
+-------------------------
 
-      ========= ===============
-      souvenirs R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Sales for a souvenir shop
-         :name: sales-for-a-souvenir-shop
+Monthly sales for a souvenir shop on the wharf at a beach resort town in
+Queensland, Australia.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Monthly sales for a souvenir shop on the wharf at a beach resort
-      town in Queensland, Australia.
+Monthly time series of class 'tsibble'.
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      Monthly time series of class 'tsibble'.
+Makridakis, Wheelwright and Hyndman (1998) \*Forecasting: methods and
+applications\*, John Wiley & Sons: New York. Exercise 5.8.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Makridakis, Wheelwright and Hyndman (1998) \*Forecasting: methods
-      and applications\*, John Wiley & Sons: New York. Exercise 5.8.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         souvenirs |> autoplot(Sales)
+   souvenirs |> autoplot(Sales)

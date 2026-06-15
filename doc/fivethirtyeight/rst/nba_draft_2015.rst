@@ -1,71 +1,64 @@
-.. container::
+============== ===============
+nba_draft_2015 R Documentation
+============== ===============
 
-   .. container::
+Projecting The Top 50 Players In The 2015 NBA Draft Class
+---------------------------------------------------------
 
-      ============== ===============
-      nba_draft_2015 R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Projecting The Top 50 Players In The 2015 NBA Draft
-         Class
-         :name: projecting-the-top-50-players-in-the-2015-nba-draft-class
+The raw data behind the story "Projecting The Top 50 Players In The 2015
+NBA Draft Class"
+https://fivethirtyeight.com/features/projecting-the-top-50-players-in-the-2015-nba-draft-class/.
+An analysis using this data was contributed by G. Elliott Morris as a
+package vignette at
+https://fivethirtyeightdata.github.io/fivethirtyeightdata/articles/NBA.html.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Projecting The Top 50 Players In
-      The 2015 NBA Draft Class"
-      https://fivethirtyeight.com/features/projecting-the-top-50-players-in-the-2015-nba-draft-class/.
-      An analysis using this data was contributed by G. Elliott Morris
-      as a package vignette at
-      https://fivethirtyeightdata.github.io/fivethirtyeightdata/articles/NBA.html.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   nba_draft_2015
 
-      .. code:: R
+Format
+~~~~~~
 
-         nba_draft_2015
+A data frame with 1090 rows representing National Basketball Association
+players/prospects and 9 variables:
 
-      .. rubric:: Format
-         :name: format
+player
+   Player name
 
-      A data frame with 1090 rows representing National Basketball
-      Association players/prospects and 9 variables:
+position
+   The player's position going into the draft
 
-      player
-         Player name
+id
+   The player's identification code
 
-      position
-         The player's position going into the draft
+draft_year
+   The year the player was eligible for the NBA draft
 
-      id
-         The player's identification code
+projected_spm
+   The model's projected statistical plus/minus over years 2-5 of the
+   player's NBA career
 
-      draft_year
-         The year the player was eligible for the NBA draft
+superstar
+   Probability of becoming a superstar player (1 per draft, SPM >= +3.3)
 
-      projected_spm
-         The model's projected statistical plus/minus over years 2-5 of
-         the player's NBA career
+starter
+   Probability of becoming a starting-caliber player (10 per draft, SPM
+   >= +0.5)
 
-      superstar
-         Probability of becoming a superstar player (1 per draft, SPM >=
-         +3.3)
+role_player
+   Probability of becoming a role player (25 per draft, SPM >= -1.4)
 
-      starter
-         Probability of becoming a starting-caliber player (10 per
-         draft, SPM >= +0.5)
+bust
+   Probability of becoming a bust (everyone else, SPM < -1.4)
 
-      role_player
-         Probability of becoming a role player (25 per draft, SPM >=
-         -1.4)
+Source
+~~~~~~
 
-      bust
-         Probability of becoming a bust (everyone else, SPM < -1.4)
-
-      .. rubric:: Source
-         :name: source
-
-      See
-      https://fivethirtyeight.com/features/projecting-the-top-50-players-in-the-2015-nba-draft-class/
+See
+https://fivethirtyeight.com/features/projecting-the-top-50-players-in-the-2015-nba-draft-class/

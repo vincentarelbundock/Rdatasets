@@ -1,55 +1,50 @@
-.. container::
+=========== ===============
+Cushings_df R Documentation
+=========== ===============
 
-   .. container::
+Diagnostic Tests on Patients with Cushing's Syndrome
+----------------------------------------------------
 
-      =========== ===============
-      Cushings_df R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Diagnostic Tests on Patients with Cushing's Syndrome
-         :name: diagnostic-tests-on-patients-with-cushings-syndrome
+The dataset name has been changed to 'Cushings_df' to avoid confusion
+with other datasets from packages in the R ecosystem and to follow the
+naming conventions of the 'MedDataSets' package. The suffix '\_df'
+indicates that this dataset is a data frame, helping to distinguish it
+from other datasets within the package and from those in the broader R
+ecosystem. The original content of the dataset has not been modified in
+any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'Cushings_df' to avoid
-      confusion with other datasets from packages in the R ecosystem and
-      to follow the naming conventions of the 'MedDataSets' package. The
-      suffix '\_df' indicates that this dataset is a data frame, helping
-      to distinguish it from other datasets within the package and from
-      those in the broader R ecosystem. The original content of the
-      dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Cushings_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Cushings_df)
+A data frame with 27 observations and 3 variables:
 
-      .. rubric:: Format
-         :name: format
+Tetrahydrocortisone
+   A numeric vector representing the levels of Tetrahydrocortisone.
 
-      A data frame with 27 observations and 3 variables:
+Pregnanetriol
+   A numeric vector representing the levels of Pregnanetriol.
 
-      Tetrahydrocortisone
-         A numeric vector representing the levels of
-         Tetrahydrocortisone.
+Type
+   A factor indicating the type of test conducted (4 levels).
 
-      Pregnanetriol
-         A numeric vector representing the levels of Pregnanetriol.
+Details
+~~~~~~~
 
-      Type
-         A factor indicating the type of test conducted (4 levels).
+This dataset contains results from diagnostic tests conducted on
+patients suspected of having Cushing's Syndrome, focusing on the
+measurement of specific hormonal metabolites.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains results from diagnostic tests conducted on
-      patients suspected of having Cushing's Syndrome, focusing on the
-      measurement of specific hormonal metabolites.
-
-      .. rubric:: Source
-         :name: source
-
-      Data collected from clinical trials and patient records.
+Data collected from clinical trials and patient records.

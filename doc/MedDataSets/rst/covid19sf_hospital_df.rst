@@ -1,66 +1,60 @@
-.. container::
+===================== ===============
+covid19sf_hospital_df R Documentation
+===================== ===============
 
-   .. container::
+San Francisco COVID-19 Hospital Capacity
+----------------------------------------
 
-      ===================== ===============
-      covid19sf_hospital_df R Documentation
-      ===================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: San Francisco COVID-19 Hospital Capacity
-         :name: san-francisco-covid-19-hospital-capacity
+The dataset name has been changed to 'covid19sf_hospital_df' to avoid
+confusion with other datasets from packages in the R ecosystem and to
+follow the naming conventions of the 'MedDataSets' package. The suffix
+'\_df' indicates that this dataset is a data frame, helping to
+distinguish it from other datasets within the package and from those in
+the broader R ecosystem. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'covid19sf_hospital_df' to
-      avoid confusion with other datasets from packages in the R
-      ecosystem and to follow the naming conventions of the
-      'MedDataSets' package. The suffix '\_df' indicates that this
-      dataset is a data frame, helping to distinguish it from other
-      datasets within the package and from those in the broader R
-      ecosystem. The original content of the dataset has not been
-      modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(covid19sf_hospital_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(covid19sf_hospital_df)
+A data frame with 4,514 observations and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+hospital
+   The name of the hospital (character).
 
-      A data frame with 4,514 observations and 5 variables:
+date
+   The date of the reported data (Date).
 
-      hospital
-         The name of the hospital (character).
+bed_type
+   The type of bed (character), such as ICU, general, etc.
 
-      date
-         The date of the reported data (Date).
+status
+   The status of the beds (character), indicating if they are occupied,
+   available, etc.
 
-      bed_type
-         The type of bed (character), such as ICU, general, etc.
+count
+   The number of beds reported (integer).
 
-      status
-         The status of the beds (character), indicating if they are
-         occupied, available, etc.
+Details
+~~~~~~~
 
-      count
-         The number of beds reported (integer).
+This dataset provides information on hospital capacity in San Francisco
+during the COVID-19 pandemic. It details the number of available
+hospital beds categorized by type and status, along with the respective
+hospitals and dates. The dataset is crucial for understanding the
+hospital system's response and capacity to handle COVID-19 cases.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset provides information on hospital capacity in San
-      Francisco during the COVID-19 pandemic. It details the number of
-      available hospital beds categorized by type and status, along with
-      the respective hospitals and dates. The dataset is crucial for
-      understanding the hospital system's response and capacity to
-      handle COVID-19 cases.
-
-      .. rubric:: Source
-         :name: source
-
-      San Francisco Department of Public Health COVID-19 hospital
-      capacity data.
+San Francisco Department of Public Health COVID-19 hospital capacity
+data.

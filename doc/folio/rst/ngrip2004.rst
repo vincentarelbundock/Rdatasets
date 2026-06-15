@@ -1,71 +1,66 @@
-.. container::
+========= ===============
+ngrip2004 R Documentation
+========= ===============
 
-   .. container::
+NGRIP 50-year Average
+---------------------
 
-      ========= ===============
-      ngrip2004 R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: NGRIP 50-year Average
-         :name: ngrip-50-year-average
+50-year averaged oxygen isotope data from the North Greenland Ice Core
+Project (ss09sea time scale).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      50-year averaged oxygen isotope data from the North Greenland Ice
-      Core Project (ss09sea time scale).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   ngrip2004
 
-      .. code:: R
+Format
+~~~~~~
 
-         ngrip2004
+A ``data.frame`` with 4918 observations and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+age
+   ``integer``: calendar age (years before 2000 AD), ss09sea time scale.
 
-      A ``data.frame`` with 4918 observations and 2 variables:
+delta
+   ``numeric``: ``\delta^{18}O`` (per mil).
 
-      age
-         ``integer``: calendar age (years before 2000 AD), ss09sea time
-         scale.
+Source
+~~~~~~
 
-      delta
-         ``numeric``: ``\delta^{18}O`` (per mil).
+https://www.ncei.noaa.gov/access/paleo-search/study/2481
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      https://www.ncei.noaa.gov/access/paleo-search/study/2481
+North Greenland Ice Core Project members (2004). High-resolution record
+of Northern Hemisphere climate extending into the last interglacial
+period. *Nature*, 431(7005), 147-151.
+`doi:10.1038/nature02805 <https://doi.org/10.1038/nature02805>`__
 
-      .. rubric:: References
-         :name: references
+See Also
+~~~~~~~~
 
-      North Greenland Ice Core Project members (2004). High-resolution
-      record of Northern Hemisphere climate extending into the last
-      interglacial period. *Nature*, 431(7005), 147-151.
-      `doi:10.1038/nature02805 <https://doi.org/10.1038/nature02805>`__
+Other palaeoenvironment data: ``epica2008``, ``law2006``,
+``lisiecki2005``, ``ngrip2010``, ``spratt2016``
 
-      .. rubric:: See Also
-         :name: see-also
+Other isotopic data: ``lisiecki2005``, ``ngrip2010``, ``nydal1996``,
+``spratt2016``, ``vegetation``
 
-      Other palaeoenvironment data: ``epica2008``, ``law2006``,
-      ``lisiecki2005``, ``ngrip2010``, ``spratt2016``
+Examples
+~~~~~~~~
 
-      Other isotopic data: ``lisiecki2005``, ``ngrip2010``,
-      ``nydal1996``, ``spratt2016``, ``vegetation``
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         plot(
-           x = ngrip2004$age / 1000,
-           y = ngrip2004$delta,
-           type = "l",
-           xlim = c(120, 0),
-           xlab = "ss09sea (ka b2k)",
-           ylab = expression(delta^{18}*"O")
-         )
+   plot(
+     x = ngrip2004$age / 1000,
+     y = ngrip2004$delta,
+     type = "l",
+     xlim = c(120, 0),
+     xlab = "ss09sea (ka b2k)",
+     ylab = expression(delta^{18}*"O")
+   )

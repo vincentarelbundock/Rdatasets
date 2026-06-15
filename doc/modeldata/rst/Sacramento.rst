@@ -1,42 +1,37 @@
-.. container::
+========== ===============
+Sacramento R Documentation
+========== ===============
 
-   .. container::
+Sacramento CA home prices
+-------------------------
 
-      ========== ===============
-      Sacramento R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Sacramento CA home prices
-         :name: sacramento-ca-home-prices
+This data frame contains house and sale price data for 932 homes in
+Sacramento CA. The original data were obtained from the website for the
+SpatialKey software. From their website: "The Sacramento real estate
+transactions file is a list of 985 real estate transactions in the
+Sacramento area reported over a five-day period, as reported by the
+Sacramento Bee." Google was used to fill in missing/incorrect data.
 
-      .. rubric:: Description
-         :name: description
+Value
+~~~~~
 
-      This data frame contains house and sale price data for 932 homes
-      in Sacramento CA. The original data were obtained from the website
-      for the SpatialKey software. From their website: "The Sacramento
-      real estate transactions file is a list of 985 real estate
-      transactions in the Sacramento area reported over a five-day
-      period, as reported by the Sacramento Bee." Google was used to
-      fill in missing/incorrect data.
+============== ========
+``Sacramento`` a tibble
+============== ========
 
-      .. rubric:: Value
-         :name: value
+Source
+~~~~~~
 
-      ============== ========
-      ``Sacramento`` a tibble
-      ============== ========
+SpatialKey website:
+https://support.spatialkey.com/spatialkey-sample-csv-data/
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      SpatialKey website:
-      https://support.spatialkey.com/spatialkey-sample-csv-data/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(Sacramento)
-         str(Sacramento)
+   data(Sacramento)
+   str(Sacramento)

@@ -1,42 +1,38 @@
-.. container::
+=== ===============
+aml R Documentation
+=== ===============
 
-   .. container::
+Acute Myelogenous Leukemia survival data
+----------------------------------------
 
-      === ===============
-      aml R Documentation
-      === ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Acute Myelogenous Leukemia survival data
-         :name: acute-myelogenous-leukemia-survival-data
+Survival in patients with Acute Myelogenous Leukemia. The question at
+the time was whether the standard course of chemotherapy should be
+extended ('maintainance') for additional cycles.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Survival in patients with Acute Myelogenous Leukemia. The question
-      at the time was whether the standard course of chemotherapy should
-      be extended ('maintainance') for additional cycles.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   aml
+   leukemia
+   data(cancer, package="survival")
 
-      .. code:: R
+Format
+~~~~~~
 
-         aml
-         leukemia
-         data(cancer, package="survival")
+======= ========================================
+time:   survival or censoring time
+status: censoring status
+x:      maintenance chemotherapy given? (factor)
+        
+======= ========================================
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      ======= ========================================
-      time:   survival or censoring time
-      status: censoring status
-      x:      maintenance chemotherapy given? (factor)
-      \       
-      ======= ========================================
-
-      .. rubric:: Source
-         :name: source
-
-      Rupert G. Miller (1997), *Survival Analysis*. John Wiley & Sons.
-      ISBN: 0-471-25218-2.
+Rupert G. Miller (1997), *Survival Analysis*. John Wiley & Sons. ISBN:
+0-471-25218-2.

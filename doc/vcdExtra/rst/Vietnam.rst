@@ -1,85 +1,74 @@
-.. container::
+======= ===============
+Vietnam R Documentation
+======= ===============
 
-   .. container::
+Student Opinion about the Vietnam War
+-------------------------------------
 
-      ======= ===============
-      Vietnam R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Student Opinion about the Vietnam War
-         :name: student-opinion-about-the-vietnam-war
+A survey of student opinion on the Vietnam War was taken at the
+University of North Carolina at Chapel Hill in May 1967 and published in
+the student newspaper. Students were asked to fill in ballot papers
+stating which policy out of A,B,C or D they supported. Responses were
+cross-classified by gender/year.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      A survey of student opinion on the Vietnam War was taken at the
-      University of North Carolina at Chapel Hill in May 1967 and
-      published in the student newspaper. Students were asked to fill in
-      ballot papers stating which policy out of A,B,C or D they
-      supported. Responses were cross-classified by gender/year.
+A frequency data frame with 40 observations representing a 2 x 5 x 4
+contingency table on the following 4 variables.
 
-      The response categories were:
+``sex``
+   a factor with levels ``Female`` ``Male``
 
-      ``A``
-         Defeat North Vietnam by widespread bombing and land invasion
+``year``
+   year of study, an ordered factor with levels ``Freshmen``,
+   ``Sophomore``, ``Junior``, ``Senior``, ``⁠Grad student⁠``
 
-      ``B``
-         Maintain the present policy
+``response``
+   a factor with levels ``A`` ``B`` ``C`` ``D``
 
-      ``C``
-         De-escalate military activity, stop bombing and begin
-         negotiations
+``Freq``
+   cell frequency, a numeric vector
 
-      ``D``
-         Withdraw military forces Immediately
+Details
+~~~~~~~
 
-      .. rubric:: Usage
-         :name: usage
+The response categories were:
 
-      .. code:: R
+``A``
+   Defeat North Vietnam by widespread bombing and land invasion
 
-         data(Vietnam)
+``B``
+   Maintain the present policy
 
-      .. rubric:: Format
-         :name: format
+``C``
+   De-escalate military activity, stop bombing and begin negotiations
 
-      A frequency data frame with 40 observations representing a 2 x 5 x
-      4 contingency table on the following 4 variables.
+``D``
+   Withdraw military forces Immediately
 
-      ``sex``
-         a factor with levels ``Female`` ``Male``
+For some analyses, it is useful to treat ``year`` as numeric, and
+possibly assign grad students a value ``year=7``.
 
-      ``year``
-         year of study, an ordered factor with levels ``Freshmen``,
-         ``Sophomore``, ``Junior``, ``Senior``, ``Grad student``
+Source
+~~~~~~
 
-      ``response``
-         a factor with levels ``A`` ``B`` ``C`` ``D``
+Aitken, M. etal, 1989, *Statistical Modelling in GLIM*
 
-      ``Freq``
-         cell frequency, a numeric vector
+References
+~~~~~~~~~~
 
-      .. rubric:: Details
-         :name: details
+Friendly, M. (2000), *Visualizing Categorical Data*, SAS Institute,
+Cary, NC, Example 7.9.
 
-      For some analyses, it is useful to treat ``year`` as numeric, and
-      possibly assign grad students a value ``year=7``.
+Examples
+~~~~~~~~
 
-      .. rubric:: Source
-         :name: source
+.. code:: R
 
-      Aitken, M. etal, 1989, *Statistical Modelling in GLIM*
 
-      .. rubric:: References
-         :name: references
-
-      Friendly, M. (2000), *Visualizing Categorical Data*, SAS
-      Institute, Cary, NC, Example 7.9.
-
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(Vietnam)
-         ## maybe str(Vietnam) ; plot(Vietnam) ...
+   data(Vietnam)
+   ## maybe str(Vietnam) ; plot(Vietnam) ...

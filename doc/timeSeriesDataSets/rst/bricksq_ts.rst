@@ -1,43 +1,38 @@
-.. container::
+========== ===============
+bricksq_ts R Documentation
+========== ===============
 
-   .. container::
+Quarterly Clay Brick Production.
+--------------------------------
 
-      ========== ===============
-      bricksq_ts R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Quarterly Clay Brick Production.
-         :name: quarterly-clay-brick-production.
+The dataset name has been changed to 'bricksq_ts' to avoid confusion
+with other packages in the R ecosystem from which datasets have been
+sourced. The suffix 'ts' signifies that this dataset is a time series
+object. This naming convention helps distinguish this dataset as part of
+the 'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'bricksq_ts' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. The suffix 'ts' signifies that this
-      dataset is a time series object. This naming convention helps
-      distinguish this dataset as part of the 'timeseriesdatasets'
-      package and assists users in identifying its specific
-      characteristics. The original content of the dataset has not been
-      modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(bricksq_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(bricksq_ts)
+A time series object with 155 observations:
 
-      .. rubric:: Format
-         :name: format
+bricksq
+   A numeric vector representing the quarterly clay brick production,
+   measured in thousands of bricks.
 
-      A time series object with 155 observations:
+Source
+~~~~~~
 
-      bricksq
-         A numeric vector representing the quarterly clay brick
-         production, measured in thousands of bricks.
-
-      .. rubric:: Source
-         :name: source
-
-      Data provided by the Australian Bureau of Statistics.
+Data provided by the Australian Bureau of Statistics.

@@ -1,43 +1,40 @@
-.. container::
+=========== ===============
+orallesions R Documentation
+=========== ===============
 
-   .. container::
+Oral Lesions in Rural India
+---------------------------
 
-      =========== ===============
-      orallesions R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Oral Lesions in Rural India
-         :name: oral-lesions-in-rural-india
+The distribution of the oral lesion site found in house-to-house surveys
+in three geographic regions of rural India.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The distribution of the oral lesion site found in house-to-house
-      surveys in three geographic regions of rural India.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("orallesions")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("orallesions")
+A two-way classification, see ``table``.
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      A two-way classification, see ``table``.
+Cyrus R. Mehta and Nitin R. Patel (2003), *StatXact-6: Statistical
+Software for Exact Nonparametric Inference*, Cytel Software Cooperation,
+Cambridge, USA.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Cyrus R. Mehta and Nitin R. Patel (2003), *StatXact-6: Statistical
-      Software for Exact Nonparametric Inference*, Cytel Software
-      Cooperation, Cambridge, USA.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-           data("orallesions", package = "HSAUR")
-           mosaicplot(orallesions)
+     data("orallesions", package = "HSAUR")
+     mosaicplot(orallesions)

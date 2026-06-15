@@ -1,56 +1,52 @@
-.. container::
+====== ===============
+ansett R Documentation
+====== ===============
 
-   .. container::
+Passenger numbers on Ansett airline flights
+-------------------------------------------
 
-      ====== ===============
-      ansett R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Passenger numbers on Ansett airline flights
-         :name: passenger-numbers-on-ansett-airline-flights
+The data features a major pilots' industrial dispute which results in
+some weeks having zero passengers. There were also at least two changes
+in the definitions of passenger classes.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      The data features a major pilots' industrial dispute which results
-      in some weeks having zero passengers. There were also at least two
-      changes in the definitions of passenger classes.
+Time series of class ``tsibble``
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      Time series of class ``tsibble``
+``ansett`` is a weekly ``tsibble`` with one value:
 
-      .. rubric:: Details
-         :name: details
+=========== ===========================================
+Passengers: Total air passengers travelling with Ansett
+            
+=========== ===========================================
 
-      ``ansett`` is a weekly ``tsibble`` with one value:
+Each series is uniquely identified using two keys:
 
-      =========== ===========================================
-      Passengers: Total air passengers travelling with Ansett
-      \           
-      =========== ===========================================
++-----------+----------------------------------------------------------+
+| Airports: | The airports that passengers are travelling between      |
+|           | (both directions)                                        |
++-----------+----------------------------------------------------------+
+| Class:    | The class of the ticket.                                 |
++-----------+----------------------------------------------------------+
+|           |                                                          |
++-----------+----------------------------------------------------------+
 
-      Each series is uniquely identified using two keys:
+Source
+~~~~~~
 
-      +-----------+---------------------------------------------------------+
-      | Airports: | The airports that passengers are travelling between     |
-      |           | (both directions)                                       |
-      +-----------+---------------------------------------------------------+
-      | Class:    | The class of the ticket.                                |
-      +-----------+---------------------------------------------------------+
-      |           |                                                         |
-      +-----------+---------------------------------------------------------+
+Ansett Airlines (which no longer exists).
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Ansett Airlines (which no longer exists).
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         library(tsibble)
-         ansett
+   library(tsibble)
+   ansett

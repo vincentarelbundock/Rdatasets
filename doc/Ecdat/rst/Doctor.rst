@@ -1,69 +1,64 @@
-.. container::
+====== ===============
+Doctor R Documentation
+====== ===============
 
-   .. container::
+Number of Doctor Visits
+-----------------------
 
-      ====== ===============
-      Doctor R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Number of Doctor Visits
-         :name: number-of-doctor-visits
+a cross-section from 1986
 
-      .. rubric:: Description
-         :name: description
+*number of observations* : 485
 
-      a cross-section from 1986
+*observation* : individuals
 
-      *number of observations* : 485
+*country* : United States
 
-      *observation* : individuals
+Usage
+~~~~~
 
-      *country* : United States
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Doctor)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Doctor)
+A dataframe containing :
 
-      .. rubric:: Format
-         :name: format
+doctor
+   the number of doctor visits
 
-      A dataframe containing :
+children
+   the number of children in the household
 
-      doctor
-         the number of doctor visits
+access
+   is a measure of access to health care
 
-      children
-         the number of children in the household
+health
+   a measure of health status (larger positive numbers are associated
+   with poorer health)
 
-      access
-         is a measure of access to health care
+Source
+~~~~~~
 
-      health
-         a measure of health status (larger positive numbers are
-         associated with poorer health)
+Gurmu, Shiferaw (1997) “Semiparametric estimation of hurdle regression
+models with an application to medicaid utilization”, *Journal of Applied
+Econometrics*, **12(3)**, 225-242.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Gurmu, Shiferaw (1997) “Semiparametric estimation of hurdle
-      regression models with an application to medicaid utilization”,
-      *Journal of Applied Econometrics*, **12(3)**, 225-242.
+Davidson, R. and James G. MacKinnon (2004) *Econometric Theory and
+Methods*, New York, Oxford University Press, chapter 11.
 
-      .. rubric:: References
-         :name: references
+Journal of Applied Econometrics data archive :
+http://qed.econ.queensu.ca/jae/.
 
-      Davidson, R. and James G. MacKinnon (2004) *Econometric Theory and
-      Methods*, New York, Oxford University Press, chapter 11.
+See Also
+~~~~~~~~
 
-      Journal of Applied Econometrics data archive :
-      http://qed.econ.queensu.ca/jae/.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``DoctorContacts``, ``DoctorAUS``, ``Index.Source``,
-      ``Index.Economics``, ``Index.Econometrics``,
-      ``Index.Observations``
+``DoctorContacts``, ``DoctorAUS``, ``Index.Source``,
+``Index.Economics``, ``Index.Econometrics``, ``Index.Observations``

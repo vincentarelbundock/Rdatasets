@@ -1,43 +1,38 @@
-.. container::
+============== ===============
+discoveries_ts R Documentation
+============== ===============
 
-   .. container::
+Yearly Numbers of Important Discoveries.
+----------------------------------------
 
-      ============== ===============
-      discoveries_ts R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Yearly Numbers of Important Discoveries.
-         :name: yearly-numbers-of-important-discoveries.
+The dataset name has been changed to 'discoveries_ts' to avoid confusion
+with other packages in the R ecosystem from which datasets have been
+sourced. The suffix 'ts' indicates that this dataset is a time series
+object. This naming convention helps distinguish this dataset as part of
+the 'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'discoveries_ts' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. The suffix 'ts' indicates that this
-      dataset is a time series object. This naming convention helps
-      distinguish this dataset as part of the 'timeseriesdatasets'
-      package and assists users in identifying its specific
-      characteristics. The original content of the dataset has not been
-      modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(discoveries_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(discoveries_ts)
+A time series object with 100 observations:
 
-      .. rubric:: Format
-         :name: format
+discoveries
+   A numeric vector representing the yearly number of important
+   discoveries.
 
-      A time series object with 100 observations:
+Source
+~~~~~~
 
-      discoveries
-         A numeric vector representing the yearly number of important
-         discoveries.
-
-      .. rubric:: Source
-         :name: source
-
-      Data provided by the dataset included in R's 'datasets' package.
+Data provided by the dataset included in R's 'datasets' package.

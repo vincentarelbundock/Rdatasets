@@ -1,72 +1,67 @@
-.. container::
+================ ===============
+HedgesOlkin85_df R Documentation
+================ ===============
 
-   .. container::
+Effects of Open Education Reported by Hedges and Olkin (1985)
+-------------------------------------------------------------
 
-      ================ ===============
-      HedgesOlkin85_df R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Effects of Open Education Reported by Hedges and Olkin
-         (1985)
-         :name: effects-of-open-education-reported-by-hedges-and-olkin-1985
+This dataset, HedgesOlkin85_df, is a data frame containing data from
+Hedges and Olkin's 1985 study on the effects of open education. The
+dataset includes variables related to attitudes toward school and
+reading achievement in students, based on the meta-analysis reported in
+their work. This data was used to investigate the effects of open
+education.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, HedgesOlkin85_df, is a data frame containing data
-      from Hedges and Olkin's 1985 study on the effects of open
-      education. The dataset includes variables related to attitudes
-      toward school and reading achievement in students, based on the
-      meta-analysis reported in their work. This data was used to
-      investigate the effects of open education.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(HedgesOlkin85_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(HedgesOlkin85_df)
+A data frame with 4 observations and 6 variables:
 
-      .. rubric:: Format
-         :name: format
+study
+   Study identifier (numeric).
 
-      A data frame with 4 observations and 6 variables:
+d_att
+   Effect size for attitude toward school (numeric).
 
-      study
-         Study identifier (numeric).
+d_ach
+   Effect size for reading achievement (numeric).
 
-      d_att
-         Effect size for attitude toward school (numeric).
+var_att
+   Variance of the attitude effect size (numeric).
 
-      d_ach
-         Effect size for reading achievement (numeric).
+cov_att_ach
+   Covariance between attitude and achievement (numeric).
 
-      var_att
-         Variance of the attitude effect size (numeric).
+var_ach
+   Variance of the achievement effect size (numeric).
 
-      cov_att_ach
-         Covariance between attitude and achievement (numeric).
+Details
+~~~~~~~
 
-      var_ach
-         Variance of the achievement effect size (numeric).
+The dataset name has been kept as 'HedgesOlkin85_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the educationR package and assists
+users in identifying its specific characteristics. The suffix 'df'
+indicates that the dataset is a data frame. The original content has not
+been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'HedgesOlkin85_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      educationR package and assists users in identifying its specific
-      characteristics. The suffix 'df' indicates that the dataset is a
-      data frame. The original content has not been modified in any way.
+The dataset was taken from the metaSEM package.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      The dataset was taken from the metaSEM package.
-
-      .. rubric:: References
-         :name: references
-
-      Hedges, L. V., & Olkin, I. (1985). Statistical methods for
-      meta-analysis. Orlando, FL: Academic Press.
+Hedges, L. V., & Olkin, I. (1985). Statistical methods for
+meta-analysis. Orlando, FL: Academic Press.

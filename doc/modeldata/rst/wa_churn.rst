@@ -1,46 +1,42 @@
-.. container::
+======== ===============
+wa_churn R Documentation
+======== ===============
 
-   .. container::
+Watson churn data
+-----------------
 
-      ======== ===============
-      wa_churn R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Watson churn data
-         :name: watson-churn-data
+Watson churn data
 
-      .. rubric:: Description
-         :name: description
+Details
+~~~~~~~
 
-      Watson churn data
+These data were downloaded from the IBM Watson site (see below) in
+September 2018. The data contain a factor for whether a customer churned
+or not. Alternatively, the ``tenure`` column presumably contains
+information on how long the customer has had an account. A survival
+analysis can be done on this column using the ``churn`` outcome as the
+censoring information. A data dictionary can be found on the source
+website.
 
-      .. rubric:: Details
-         :name: details
+Value
+~~~~~
 
-      These data were downloaded from the IBM Watson site (see below) in
-      September 2018. The data contain a factor for whether a customer
-      churned or not. Alternatively, the ``tenure`` column presumably
-      contains information on how long the customer has had an account.
-      A survival analysis can be done on this column using the ``churn``
-      outcome as the censoring information. A data dictionary can be
-      found on the source website.
+============ ============
+``wa_churn`` a data frame
+============ ============
 
-      .. rubric:: Value
-         :name: value
+Source
+~~~~~~
 
-      ============ ============
-      ``wa_churn`` a data frame
-      ============ ============
+IBM Watson Analytics https://ibm.co/2sOvyvy
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      IBM Watson Analytics https://ibm.co/2sOvyvy
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(wa_churn)
-         str(wa_churn)
+   data(wa_churn)
+   str(wa_churn)

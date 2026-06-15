@@ -1,57 +1,52 @@
-.. container::
+============ ===============
+ability_list R Documentation
+============ ===============
 
-   .. container::
+Ability and Intelligence Tests
+------------------------------
 
-      ============ ===============
-      ability_list R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Ability and Intelligence Tests
-         :name: ability-and-intelligence-tests
+This dataset, ability_list, is a list containing information about six
+ability and intelligence tests administered to 112 individuals. The
+dataset provides a covariance matrix, the means (centers) of the
+variables, and the number of observations.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, ability_list, is a list containing information about
-      six ability and intelligence tests administered to 112
-      individuals. The dataset provides a covariance matrix, the means
-      (centers) of the variables, and the number of observations.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(ability_list)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(ability_list)
+A list with 3 components:
 
-      .. rubric:: Format
-         :name: format
+cov
+   A covariance matrix (numeric matrix) of dimensions 6x6, representing
+   the relationships between six different tests.
 
-      A list with 3 components:
+center
+   A numeric vector of length 6 containing the mean scores for each of
+   the six tests.
 
-      cov
-         A covariance matrix (numeric matrix) of dimensions 6x6,
-         representing the relationships between six different tests.
+n.obs
+   The total number of observations (integer), which is 112.
 
-      center
-         A numeric vector of length 6 containing the mean scores for
-         each of the six tests.
+Details
+~~~~~~~
 
-      n.obs
-         The total number of observations (integer), which is 112.
+The dataset name has been kept as 'ability_list' to avoid confusion with
+other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the educationR package and assists
+users in identifying its specific characteristics. The suffix 'list'
+indicates that the dataset is a list object. The original content has
+not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'ability_list' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      educationR package and assists users in identifying its specific
-      characteristics. The suffix 'list' indicates that the dataset is a
-      list object. The original content has not been modified in any
-      way.
-
-      .. rubric:: Source
-         :name: source
-
-      Generated for educational purposes.
+Generated for educational purposes.

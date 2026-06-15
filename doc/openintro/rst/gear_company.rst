@@ -1,41 +1,38 @@
-.. container::
+============ ===============
+gear_company R Documentation
+============ ===============
 
-   .. container::
+Fake data for a gear company example
+------------------------------------
 
-      ============ ===============
-      gear_company R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Fake data for a gear company example
-         :name: fake-data-for-a-gear-company-example
+Made-up data for whether a sample of two gear companies' parts pass
+inspection.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Made-up data for whether a sample of two gear companies' parts
-      pass inspection.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   gear_company
 
-      .. code:: R
+Format
+~~~~~~
 
-         gear_company
+A data frame with 2000 observations on the following 2 variables.
 
-      .. rubric:: Format
-         :name: format
+company
+   a factor with levels ``current`` ``prospective``
 
-      A data frame with 2000 observations on the following 2 variables.
+outcome
+   a factor with levels ``not`` ``pass``
 
-      company
-         a factor with levels ``current`` ``prospective``
+Examples
+~~~~~~~~
 
-      outcome
-         a factor with levels ``not`` ``pass``
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         gear_company
+   gear_company

@@ -1,64 +1,60 @@
-.. container::
+====== ===============
+rdchem R Documentation
+====== ===============
 
-   .. container::
+rdchem
+------
 
-      ====== ===============
-      rdchem R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: rdchem
-         :name: rdchem
+Wooldridge Source: From Businessweek R&D Scoreboard, October 25, 1991.
+Data loads lazily.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Wooldridge Source: From Businessweek R&D Scoreboard, October 25,
-      1991. Data loads lazily.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data('rdchem')
 
-      .. code:: R
+Format
+~~~~~~
 
-         data('rdchem')
+A data.frame with 32 observations on 8 variables:
 
-      .. rubric:: Format
-         :name: format
+- **rd:** R&D spending, millions
 
-      A data.frame with 32 observations on 8 variables:
+- **sales:** firm sales, millions
 
-      -  **rd:** R&D spending, millions
+- **profits:** profits, millions
 
-      -  **sales:** firm sales, millions
+- **rdintens:** rd as percent of sales
 
-      -  **profits:** profits, millions
+- **profmarg:** profits as percent of sales
 
-      -  **rdintens:** rd as percent of sales
+- **salessq:** sales^2
 
-      -  **profmarg:** profits as percent of sales
+- **lsales:** log(sales)
 
-      -  **salessq:** sales^2
+- **lrd:** log(rd)
 
-      -  **lsales:** log(sales)
+Notes
+~~~~~
 
-      -  **lrd:** log(rd)
+It would be interesting to collect more recent data and see whether the
+R&D/firm size relationship has changed over time.
 
-      .. rubric:: Notes
-         :name: notes
+Used in Text: pages 64, 139-140, 159-160, 204, 218, 327-329, 339
 
-      It would be interesting to collect more recent data and see
-      whether the R&D/firm size relationship has changed over time.
+Source
+~~~~~~
 
-      Used in Text: pages 64, 139-140, 159-160, 204, 218, 327-329, 339
+https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-          str(rdchem)
+    str(rdchem)

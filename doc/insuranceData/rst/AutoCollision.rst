@@ -1,80 +1,75 @@
-.. container::
+============= ===============
+AutoCollision R Documentation
+============= ===============
 
-   .. container::
+Automobile UK Collision Claims
+------------------------------
 
-      ============= ===============
-      AutoCollision R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Automobile UK Collision Claims
-         :name: automobile-uk-collision-claims
+This data is due to Mildenhall (1999). Mildenhall (1999) considered
+8,942 collision losses from private passenger United Kingdom (UK)
+automobile insurance policies. The data were derived from Nelder and
+McCullagh (1989, Section 8.4.1) but originated from Baxter et al.
+(1980). We consider here a sample of n = 32 of Mildenhall data for eight
+driver types (age groups) and four vehicle classes (vehicle use). The
+average severity is in pounds sterling adjusted for inflation.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This data is due to Mildenhall (1999). Mildenhall (1999)
-      considered 8,942 collision losses from private passenger United
-      Kingdom (UK) automobile insurance policies. The data were derived
-      from Nelder and McCullagh (1989, Section 8.4.1) but originated
-      from Baxter et al. (1980). We consider here a sample of n = 32 of
-      Mildenhall data for eight driver types (age groups) and four
-      vehicle classes (vehicle use). The average severity is in pounds
-      sterling adjusted for inflation.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(AutoCollision)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(AutoCollision)
+A data frame with 32 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``Age``
+   Age of driver, a factor with levels ``A`` ``B`` ``C`` ``D`` ``E``
+   ``F`` ``G`` ``H``
 
-      A data frame with 32 observations on the following 4 variables.
+``Vehicle_Use``
+   Purpose of the vehicle use: DriveShort means drive to work but less
+   than 10 miles, DriveLong means drive to work but more than 10 miles,
+   a factor with levels ``Business`` ``DriveLong`` ``DriveShort``
+   ``Pleasure``
 
-      ``Age``
-         Age of driver, a factor with levels ``A`` ``B`` ``C`` ``D``
-         ``E`` ``F`` ``G`` ``H``
+``Severity``
+   Average amount of claims (in pounds sterling), a numeric vector
 
-      ``Vehicle_Use``
-         Purpose of the vehicle use: DriveShort means drive to work but
-         less than 10 miles, DriveLong means drive to work but more than
-         10 miles, a factor with levels ``Business`` ``DriveLong``
-         ``DriveShort`` ``Pleasure``
+``Claim_Count``
+   Number of claims, a numeric vector
 
-      ``Severity``
-         Average amount of claims (in pounds sterling), a numeric vector
+Details
+~~~~~~~
 
-      ``Claim_Count``
-         Number of claims, a numeric vector
+http://instruction.bus.wisc.edu/jfrees/jfreesbooks/Regression%20Modeling/BookWebDec2010/
 
-      .. rubric:: Details
-         :name: details
+DataDescriptions.pdf
 
-      http://instruction.bus.wisc.edu/jfrees/jfreesbooks/Regression%20Modeling/BookWebDec2010/
+Source
+~~~~~~
 
-      DataDescriptions.pdf
+http://instruction.bus.wisc.edu/jfrees/jfreesbooks/Regression%20Modeling/BookWebDec2010/data.html
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      http://instruction.bus.wisc.edu/jfrees/jfreesbooks/Regression%20Modeling/BookWebDec2010/data.html
+Frees E.W. (2010), Regression Modeling with Actuarial and Financial
+Applications, Cambridge University Press.
 
-      .. rubric:: References
-         :name: references
+Mildenhall S.J. (1999), A systematic relationship between minimum bias
+and generalized linear models, in: Proceedings of the Casualty Actuarial
+Society, 86, p. 393-487.
 
-      Frees E.W. (2010), Regression Modeling with Actuarial and
-      Financial Applications, Cambridge University Press.
+Examples
+~~~~~~~~
 
-      Mildenhall S.J. (1999), A systematic relationship between minimum
-      bias and generalized linear models, in: Proceedings of the
-      Casualty Actuarial Society, 86, p. 393-487.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(AutoCollision)
-         ## maybe str(AutoCollision) ; plot(AutoCollision) ...
+   data(AutoCollision)
+   ## maybe str(AutoCollision) ; plot(AutoCollision) ...

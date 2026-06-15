@@ -1,46 +1,43 @@
-.. container::
+======= ===============
+sitka89 R Documentation
+======= ===============
 
-   .. container::
+Growth of Sitka Spruce Trees
+----------------------------
 
-      ======= ===============
-      sitka89 R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Growth of Sitka Spruce Trees
-         :name: growth-of-sitka-spruce-trees
+Impact of ozone on the growth of sitka spruce trees.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Impact of ozone on the growth of sitka spruce trees.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   sitka89
 
-      .. code:: R
+Format
+~~~~~~
 
-         sitka89
+A dataframe
 
-      .. rubric:: Format
-         :name: format
+size:
+   size of the tree measured in ``log(height*diamter^2)``
 
-      A dataframe
+time:
+   days after the 1st january, 1988
 
-      size:
-         size of the tree measured in ``log(height*diamter^2)``
+tree:
+   id number of a tree
 
-      time:
-         days after the 1st january, 1988
+treat:
+   ozone: grown under ozone environment, control: ozone free
 
-      tree:
-         id number of a tree
+Examples
+~~~~~~~~
 
-      treat:
-         ozone: grown under ozone environment, control: ozone free
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         data(sitka89)
+   data(sitka89)

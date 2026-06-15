@@ -1,61 +1,55 @@
-.. container::
+============= ===============
+tv_hurricanes R Documentation
+============= ===============
 
-   .. container::
+The Media Really Started Paying Attention to Puerto Rico When Trump Did
+-----------------------------------------------------------------------
 
-      ============= ===============
-      tv_hurricanes R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The Media Really Started Paying Attention to Puerto
-         Rico When Trump Did
-         :name: the-media-really-started-paying-attention-to-puerto-rico-when-trump-did
+The raw data behind the story "The Media Really Started Paying Attention
+to Puerto Rico When Trump Did"
+https://fivethirtyeight.com/features/the-media-really-started-paying-attention-to-puerto-rico-when-trump-did/:
+TV Hurricanes Data.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "The Media Really Started Paying
-      Attention to Puerto Rico When Trump Did"
-      https://fivethirtyeight.com/features/the-media-really-started-paying-attention-to-puerto-rico-when-trump-did/:
-      TV Hurricanes Data.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   tv_hurricanes
 
-      .. code:: R
+Format
+~~~~~~
 
-         tv_hurricanes
+A data frame with 37 rows representing dates and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+date
+   Date
 
-      A data frame with 37 rows representing dates and 5 variables:
+harvey
+   The percent of sentences in TV news that mention Hurricane Harvey on
+   the given date
 
-      date
-         Date
+irma
+   The percent of sentences in TV news that mention Hurricane Irma
 
-      harvey
-         The percent of sentences in TV news that mention Hurricane
-         Harvey on the given date
+maria
+   The percent of sentences in TV news that mention Hurricane Maria
 
-      irma
-         The percent of sentences in TV news that mention Hurricane Irma
+jose
+   The percent of sentences in TV news that mention Hurricane Irma
 
-      maria
-         The percent of sentences in TV news that mention Hurricane
-         Maria
+Source
+~~~~~~
 
-      jose
-         The percent of sentences in TV news that mention Hurricane Irma
+Internet TV News Archive https://archive.org/details/tv and Television
+Explorer
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      Internet TV News Archive https://archive.org/details/tv and
-      Television Explorer
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``mediacloud_hurricanes``, ``mediacloud_states``,
-      ``mediacloud_online_news``, ``mediacloud_trump``,
-      ``tv_hurricanes_by_network``, ``tv_states``, ``google_trends``
+``mediacloud_hurricanes``, ``mediacloud_states``,
+``mediacloud_online_news``, ``mediacloud_trump``,
+``tv_hurricanes_by_network``, ``tv_states``, ``google_trends``

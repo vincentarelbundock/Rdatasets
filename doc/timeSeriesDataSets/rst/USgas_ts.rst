@@ -1,51 +1,47 @@
-.. container::
+======== ===============
+USgas_ts R Documentation
+======== ===============
 
-   .. container::
+US Monthly Natural Gas Consumption
+----------------------------------
 
-      ======== ===============
-      USgas_ts R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: US Monthly Natural Gas Consumption
-         :name: us-monthly-natural-gas-consumption
+The dataset name has been changed to 'USgas_ts' to avoid confusion with
+other datasets in the R ecosystem from which data have been sourced. The
+suffix 'ts' indicates that this dataset is a time series object. This
+naming convention helps distinguish this dataset as part of the
+'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'USgas_ts' to avoid confusion
-      with other datasets in the R ecosystem from which data have been
-      sourced. The suffix 'ts' indicates that this dataset is a time
-      series object. This naming convention helps distinguish this
-      dataset as part of the 'timeseriesdatasets' package and assists
-      users in identifying its specific characteristics. The original
-      content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(USgas_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(USgas_ts)
+A 'ts' object with 238 observations:
 
-      .. rubric:: Format
-         :name: format
+time
+   Monthly time series from 2000 to 2020.
 
-      A 'ts' object with 238 observations:
+value
+   Natural gas consumption in the US (in billion cubic feet).
 
-      time
-         Monthly time series from 2000 to 2020.
+Details
+~~~~~~~
 
-      value
-         Natural gas consumption in the US (in billion cubic feet).
+This dataset contains monthly data on natural gas consumption in the
+United States from 2000 to 2020. The values represent consumption in
+billion cubic feet.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains monthly data on natural gas consumption in
-      the United States from 2000 to 2020. The values represent
-      consumption in billion cubic feet.
-
-      .. rubric:: Source
-         :name: source
-
-      U.S. Energy Information Administration.
+U.S. Energy Information Administration.

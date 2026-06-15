@@ -1,129 +1,122 @@
-.. container::
+=========== ===============
+payne.wheat R Documentation
+=========== ===============
 
-   .. container::
+Long term rotation experiment at Rothamsted
+-------------------------------------------
 
-      =========== ===============
-      payne.wheat R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Long term rotation experiment at Rothamsted
-         :name: long-term-rotation-experiment-at-rothamsted
+Long term rotation experiment at Rothamsted
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Long term rotation experiment at Rothamsted
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("payne.wheat")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("payne.wheat")
+A data frame with 480 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``rotation``
+   rotation treatment
 
-      A data frame with 480 observations on the following 4 variables.
+``nitro``
+   nitrogen rate kg/ha
 
-      ``rotation``
-         rotation treatment
+``year``
+   year
 
-      ``nitro``
-         nitrogen rate kg/ha
+``yield``
+   metric tons per hectare
 
-      ``year``
-         year
+Details
+~~~~~~~
 
-      ``yield``
-         metric tons per hectare
+The rotation treatments are:
 
-      .. rubric:: Details
-         :name: details
+AB = arable rotation with spring barley. AF = arable rotation with bare
+fallow. Ln3 = 3-year grass lay between crops. Ln8 = 8-year grass lay
+between crops. Lc3 = 3-year grass-clover lay between crops. Lc8 = 8-year
+grass-clover lay between crops.
 
-      The rotation treatments are:
+The full data are available via CC-BY 4.0 license at: Margaret
+Glendining, Paul Poulton, Andrew Macdonald, Chloe MacLaren, Suzanne
+Clark (2022). Dataset: Woburn Ley-arable experiment: yields of wheat as
+first test crop, 1976-2018 Electronic Rothamsted Archive, Rothamsted
+Research. https://doi.org/10.23637/wrn3-wheat7618-01
 
-      AB = arable rotation with spring barley. AF = arable rotation with
-      bare fallow. Ln3 = 3-year grass lay between crops. Ln8 = 8-year
-      grass lay between crops. Lc3 = 3-year grass-clover lay between
-      crops. Lc8 = 8-year grass-clover lay between crops.
+The data used here are a subset as appearing in the paper by Payne.
 
-      The full data are available via CC-BY 4.0 license at: Margaret
-      Glendining, Paul Poulton, Andrew Macdonald, Chloe MacLaren,
-      Suzanne Clark (2022). Dataset: Woburn Ley-arable experiment:
-      yields of wheat as first test crop, 1976-2018 Electronic
-      Rothamsted Archive, Rothamsted Research.
-      https://doi.org/10.23637/wrn3-wheat7618-01
+Source
+~~~~~~
 
-      The data used here are a subset as appearing in the paper by
-      Payne.
+Payne, R. (2013) Design and analysis of long-term rotation experiments.
+Agronomy Journal, 107, 772-785. https://doi.org/10.2134/agronj2012.0411
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Payne, R. (2013) Design and analysis of long-term rotation
-      experiments. Agronomy Journal, 107, 772-785.
-      https://doi.org/10.2134/agronj2012.0411
+None
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+     library(agridat)
+     data(payne.wheat)
+     dat <- payne.wheat
 
-         ## Not run: 
+     # make factors
+     dat <- transform(dat,
+                      rotf = factor(rotation),
+                      yrf = factor(year),
+                      nitrof = factor(nitro))
+       
+     # visualize the response to nitrogen
+     libs(lattice)
+     # Why does Payne use nitrogen factor, when it is an obvious polynomial term?
+     # Probably doesn't matter too much.
+     xyplot(yield ~ nitro|yrf, dat,
+            groups=rotf, type='b',
+            auto.key=list(columns=6),
+            main="payne.wheat")
+     
+     # What are the long-term trends?  Yields are decreasing
+     xyplot(yield ~ year | rotf, data=dat, groups=nitrof,
+            type='l', auto.key=list(columns=4))
 
-           library(agridat)
-           data(payne.wheat)
-           dat <- payne.wheat
+     if(require("asreml", quietly=TRUE)){
+       libs(asreml)
+   # Model 5: drop 3-way interaction and return to pol function (easier prediction)
+       m5 <- asreml(yield ~ rotf * nitrof * pol(year,2) -
+                      (rotf:nitrof:pol(year,2)),
+                    data=dat,
+                    random = ~yrf,
+                    residual = ~ dsum( ~ units|yrf))
+       summary(m5)$varcomp # Table 7 of Payne
+       # lucid::vc(m5)
 
-           # make factors
-           dat <- transform(dat,
-                            rotf = factor(rotation),
-                            yrf = factor(year),
-                            nitrof = factor(nitro))
-             
-           # visualize the response to nitrogen
-           libs(lattice)
-           # Why does Payne use nitrogen factor, when it is an obvious polynomial term?
-           # Probably doesn't matter too much.
-           xyplot(yield ~ nitro|yrf, dat,
-                  groups=rotf, type='b',
-                  auto.key=list(columns=6),
-                  main="payne.wheat")
-           
-           # What are the long-term trends?  Yields are decreasing
-           xyplot(yield ~ year | rotf, data=dat, groups=nitrof,
-                  type='l', auto.key=list(columns=4))
+       # Table 8 of Payne
+       wald(m5, denDF="default") 
+       
+       # Predictions of three-way interactions from final model
+       p5 <- predict(m5, classify="rotf:nitrof:year")
+       p5 <- p5$pvals # Matches Payne table 8
+       head(p5)
+       
+       # Plot the predictions.  Matches Payne figure 1
+       xyplot(predicted.value ~ year | rotf, data=p5,
+              groups=nitrof,
+              ylab="yield t/ha", type='l', auto.key=list(columns=5))
+     }
+     
 
-           if(require("asreml", quietly=TRUE)){
-             libs(asreml)
-         # Model 5: drop 3-way interaction and return to pol function (easier prediction)
-             m5 <- asreml(yield ~ rotf * nitrof * pol(year,2) -
-                            (rotf:nitrof:pol(year,2)),
-                          data=dat,
-                          random = ~yrf,
-                          residual = ~ dsum( ~ units|yrf))
-             summary(m5)$varcomp # Table 7 of Payne
-             # lucid::vc(m5)
-
-             # Table 8 of Payne
-             wald(m5, denDF="default") 
-             
-             # Predictions of three-way interactions from final model
-             p5 <- predict(m5, classify="rotf:nitrof:year")
-             p5 <- p5$pvals # Matches Payne table 8
-             head(p5)
-             
-             # Plot the predictions.  Matches Payne figure 1
-             xyplot(predicted.value ~ year | rotf, data=p5,
-                    groups=nitrof,
-                    ylab="yield t/ha", type='l', auto.key=list(columns=5))
-           }
-           
-
-         ## End(Not run)
+   ## End(Not run)

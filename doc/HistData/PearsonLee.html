@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><title>R: Pearson and Lee's data on the heights of parents and children...</title>
+<!DOCTYPE html><html><head><title>R: Pearson and Lee's data on the Heights of Parents and Children...</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
@@ -16,31 +16,27 @@ function processMathHTML() {
 
 <table style="width: 100%;"><tr><td>PearsonLee</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>
-Pearson and Lee's  data on the heights of parents and children classified by gender
-</h2>
+<h2>Pearson and Lee's data on the Heights of Parents and Children by Gender</h2>
 
 <h3>Description</h3>
 
-<p>Wachsmuth et. al (2003) noticed that a loess smooth through Galton's data
-on heights of mid-parents and their offspring exhibited a slightly non-linear
-trend, and asked whether this might be due to Galton having pooled the heights of
-fathers and mothers and sons and daughters in constructing his tables and graphs.
+<p>Wachsmuth et. al (2003) noticed that a loess smooth through Galton's data on
+heights of mid-parents and their offspring exhibited a slightly non-linear
+trend, and asked whether this might be due to Galton having pooled the
+heights of fathers and mothers and sons and daughters in constructing his
+tables and graphs.
 </p>
-<p>To answer this question, they used analogous data from English families at about the
-same time, tabulated by Karl Pearson and Alice Lee (1896, 1903), but where the heights
-of parents and children were each classified by gender of the parent.
+<p>To answer this question, they used analogous data from English families at
+about the same time, tabulated by Karl Pearson and Alice Lee (1896, 1903),
+but where the heights of parents and children were each classified by gender
+of the parent.
 </p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data(PearsonLee)</code></pre>
 
 
 <h3>Format</h3>
 
-<p>A frequency data frame with 746 observations on the following 6 variables.
+<p>A frequency data frame with 746 observations on the following 6
+variables.
 </p>
 
 <dl>
@@ -62,29 +58,33 @@ of parents and children were each classified by gender of the parent.
 
 <h3>Details</h3>
 
-<p>The variables <code>gp</code>, <code>par</code> and <code>chl</code> are provided to allow stratifying
-the data according to the gender of the father/mother and son/daughter.
+<p>The variables <code>gp</code>, <code>par</code> and <code>chl</code> are provided to allow
+stratifying the data according to the gender of the father/mother and
+son/daughter.
 </p>
 
 
 <h3>Source</h3>
 
-<p>Pearson, K. and Lee, A. (1896). Mathematical contributions to the theory
-of evolution. On telegony in man, etc. <em>Proceedings of the Royal Society of
-London</em>, 60 , 273-283.
+<p>Pearson, K. and Lee, A. (1896). Mathematical contributions to the
+theory of evolution. On telegony in man, etc. <em>Proceedings of the Royal
+Society of London</em>, <strong>60</strong> , 273-283.
 </p>
-<p>Pearson, K. and Lee, A. (1903). 
-On the laws of inheritance in man: I. Inheritance of physical characters. <em>Biometrika</em>, 2(4), 357-462.
+<p>Pearson, K. and Lee, A. (1903).  On the laws of inheritance in man: I.
+Inheritance of physical characters. <em>Biometrika</em>, <strong>2</strong>(4), 357-462.
 (Tables XXII, p. 415; XXV, p. 417; XXVIII, p. 419 and XXXI, p. 421.)
 </p>
 
 
 <h3>References</h3>
 
-<p>Wachsmuth, A.W., Wilkinson L., Dallal G.E. (2003). 
-Galton's bend: A previously undiscovered nonlinearity in Galton's family stature regression data. 
-<em>The American Statistician</em>, 57, 190-192. 
-<a href="https://doi.org/10.1198/0003130031874">doi:10.1198/0003130031874</a>
+<p>Wachsmuth, A.W., Wilkinson L., Dallal G.E. (2003).  Galton's
+bend: A previously undiscovered nonlinearity in Galton's family stature
+regression data.  <em>The American Statistician</em>, <strong>57</strong>, 190-192.
+%<a href="http://staff.ustc.edu.cn/~zwp/teach/Reg/galton.pdf">http://staff.ustc.edu.cn/~zwp/teach/Reg/galton.pdf</a>
+<a href="https://doi.org/10.1198/0003130031874">doi:10.1198/0003130031874</a>.
+</p>
+<p>See the example by John Russell for the <a href="https://github.com/drjohnrussell/30DayChartChallenge/blob/main/2025/Challenge02.R">30DayChartChallenge</a>
 </p>
 
 
@@ -96,7 +96,8 @@ Galton's bend: A previously undiscovered nonlinearity in Galton's family stature
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(PearsonLee)
+<pre><code class='language-R'>
+data(PearsonLee)
 str(PearsonLee)
 
 with(PearsonLee, 
@@ -146,6 +147,7 @@ ggplot(PearsonLee, aes(x = child, y = parent, weight=frequency)) +
                        values = c('green', 'red')) +
    theme(legend.position = c(0.14, 0.885),
         legend.background = element_rect(fill = 'white'))
+
 
 </code></pre>
 

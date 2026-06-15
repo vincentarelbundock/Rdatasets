@@ -1,0 +1,125 @@
+<!DOCTYPE html><html><head><title>R: Autism Spectrum Disorder (ASD) Risk Factors in Children</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>ASD_risks_tbl_df</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Autism Spectrum Disorder (ASD) Risk Factors in Children</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, ASD_risks_tbl_df, is a tibble containing information on various clinical,
+behavioral, genetic, and developmental factors associated with the risk of developing
+Autism Spectrum Disorder (ASD) traits in children. The dataset consists of 1,985 observations
+and 28 variables, including the Autism Spectrum Quotient items (A1–A10), Social Responsiveness
+Scale, Qchat-10 score, Childhood Autism Rating Scale, and multiple indicators related to speech,
+learning, genetics, mental health, developmental delays, behavioral issues, demographics, and
+family history. The final column indicates whether the child is expected to develop ASD traits
+in the future (0 or 1).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(ASD_risks_tbl_df)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 1,985 observations and 28 variables:
+</p>
+
+<dl>
+<dt>CASE_NO_PATIENT'S</dt><dd><p>Patient case identifier (numeric)</p>
+</dd>
+<dt>A1</dt><dd><p>Autism Spectrum Quotient item A1 (numeric)</p>
+</dd>
+<dt>A2</dt><dd><p>Autism Spectrum Quotient item A2 (numeric)</p>
+</dd>
+<dt>A3</dt><dd><p>Autism Spectrum Quotient item A3 (numeric)</p>
+</dd>
+<dt>A4</dt><dd><p>Autism Spectrum Quotient item A4 (numeric)</p>
+</dd>
+<dt>A5</dt><dd><p>Autism Spectrum Quotient item A5 (numeric)</p>
+</dd>
+<dt>A6</dt><dd><p>Autism Spectrum Quotient item A6 (numeric)</p>
+</dd>
+<dt>A7</dt><dd><p>Autism Spectrum Quotient item A7 (numeric)</p>
+</dd>
+<dt>A8</dt><dd><p>Autism Spectrum Quotient item A8 (numeric)</p>
+</dd>
+<dt>A9</dt><dd><p>Autism Spectrum Quotient item A9 (numeric)</p>
+</dd>
+<dt>A10_Autism_Spectrum_Quotient</dt><dd><p>Autism Spectrum Quotient item A10 (numeric)</p>
+</dd>
+<dt>Social_Responsiveness_Scale</dt><dd><p>Social Responsiveness Scale score (numeric)</p>
+</dd>
+<dt>Age_Years</dt><dd><p>Age in years (numeric)</p>
+</dd>
+<dt>Qchat_10_Score</dt><dd><p>Q-CHAT-10 score (numeric)</p>
+</dd>
+<dt>Speech Delay/Language Disorder</dt><dd><p>Indicator of speech delay or language disorder (character)</p>
+</dd>
+<dt>Learning disorder</dt><dd><p>Indicator of learning disorder (character)</p>
+</dd>
+<dt>Genetic_Disorders</dt><dd><p>Presence of genetic disorders (character)</p>
+</dd>
+<dt>Depression</dt><dd><p>Presence of depression (character)</p>
+</dd>
+<dt>Global developmental delay/intellectual disability</dt><dd><p>Indicator of global developmental delay or intellectual disability (character)</p>
+</dd>
+<dt>Social/Behavioural Issues</dt><dd><p>Presence of social or behavioral issues (character)</p>
+</dd>
+<dt>Childhood Autism Rating Scale</dt><dd><p>Childhood Autism Rating Scale score (numeric)</p>
+</dd>
+<dt>Anxiety_disorder</dt><dd><p>Presence of anxiety disorder (character)</p>
+</dd>
+<dt>Sex</dt><dd><p>Sex of the participant (character)</p>
+</dd>
+<dt>Ethnicity</dt><dd><p>Ethnicity of the participant (character)</p>
+</dd>
+<dt>Jaundice</dt><dd><p>History of jaundice (character)</p>
+</dd>
+<dt>Family_mem_with_ASD</dt><dd><p>Indicator of family member with ASD (character)</p>
+</dd>
+<dt>Who_completed_the_test</dt><dd><p>Relationship of the respondent who completed the test (character)</p>
+</dd>
+<dt>ASD_traits</dt><dd><p>Indicator of whether the child is expected to develop ASD traits (character)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset name has been kept as ASD_risks_tbl_df to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+NeuroDataSets package and assists users in identifying its specific characteristics.
+The suffix tbl_df indicates that the dataset is a tibble (a modern data frame).
+The original content has not been modified in any way. Variable names and values are provided exactly
+as they appear in the source.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data taken from Kaggle: <a href="https://www.kaggle.com/datasets/uppulurimadhuri/dataset">https://www.kaggle.com/datasets/uppulurimadhuri/dataset</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

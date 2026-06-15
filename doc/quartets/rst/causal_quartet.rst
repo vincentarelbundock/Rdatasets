@@ -1,54 +1,50 @@
-.. container::
+============== ===============
+causal_quartet R Documentation
+============== ===============
 
-   .. container::
+Causal Quartet Data
+-------------------
 
-      ============== ===============
-      causal_quartet R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Causal Quartet Data
-         :name: causal-quartet-data
+This dataset contains 400 observations, each generated under a different
+data generating mechanism:
 
-      .. rubric:: Description
-         :name: description
+- (1) A collider
 
-      This dataset contains 400 observations, each generated under a
-      different data generating mechanism:
+- (2) A confounder
 
-      -  (1) A collider
+- (3) A mediator
 
-      -  (2) A confounder
+- (4) M-bias
 
-      -  (3) A mediator
+Usage
+~~~~~
 
-      -  (4) M-bias
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   causal_quartet
 
-      .. code:: R
+Format
+~~~~~~
 
-         causal_quartet
+A dataframe with 400 rows and 6 variables:
 
-      .. rubric:: Format
-         :name: format
+- ``dataset``: The data generating mechanism
 
-      A dataframe with 400 rows and 6 variables:
+- ``exposure``: exposure
 
-      -  ``dataset``: The data generating mechanism
+- ``outcome``: outcome
 
-      -  ``exposure``: exposure
+- ``covariate``: a known factor
 
-      -  ``outcome``: outcome
+- ``u1``: an unknown factor
 
-      -  ``covariate``: a known factor
+- ``u2``: an unknown factor
 
-      -  ``u1``: an unknown factor
+References
+~~~~~~~~~~
 
-      -  ``u2``: an unknown factor
-
-      .. rubric:: References
-         :name: references
-
-      D'Agostino McGowan L, Barrett M (2023). Causal inference is not a
-      statistical problem. Preprint arXiv:2304.02683v1.
+D'Agostino McGowan L, Barrett M (2023). Causal inference is not a
+statistical problem. Preprint arXiv:2304.02683v1.

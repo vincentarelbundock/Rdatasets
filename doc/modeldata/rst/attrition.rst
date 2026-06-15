@@ -1,47 +1,42 @@
-.. container::
+========= ===============
+attrition R Documentation
+========= ===============
 
-   .. container::
+Job attrition
+-------------
 
-      ========= ===============
-      attrition R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Job attrition
-         :name: job-attrition
+Job attrition
 
-      .. rubric:: Description
-         :name: description
+Details
+~~~~~~~
 
-      Job attrition
+These data are from the IBM Watson Analytics Lab. The website describes
+the data with “Uncover the factors that lead to employee attrition and
+explore important questions such as ‘show me a breakdown of distance
+from home by job role and attrition’ or ‘compare average monthly income
+by education and attrition’. This is a fictional data set created by IBM
+data scientists.”. There are 1470 rows.
 
-      .. rubric:: Details
-         :name: details
+Value
+~~~~~
 
-      These data are from the IBM Watson Analytics Lab. The website
-      describes the data with “Uncover the factors that lead to employee
-      attrition and explore important questions such as ‘show me a
-      breakdown of distance from home by job role and attrition’ or
-      ‘compare average monthly income by education and attrition’. This
-      is a fictional data set created by IBM data scientists.”. There
-      are 1470 rows.
+============= ============
+``attrition`` a data frame
+============= ============
 
-      .. rubric:: Value
-         :name: value
+Source
+~~~~~~
 
-      ============= ============
-      ``attrition`` a data frame
-      ============= ============
+The IBM Watson Analytics Lab website
+https://www.ibm.com/communities/analytics/watson-analytics-blog/hr-employee-attrition/
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      The IBM Watson Analytics Lab website
-      https://www.ibm.com/communities/analytics/watson-analytics-blog/hr-employee-attrition/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(attrition)
-         str(attrition)
+   data(attrition)
+   str(attrition)

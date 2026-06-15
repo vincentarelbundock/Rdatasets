@@ -1,96 +1,92 @@
-.. container::
+===== ===============
+Parks R Documentation
+===== ===============
 
-   .. container::
+Parks table
+-----------
 
-      ===== ===============
-      Parks R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Parks table
-         :name: parks-table
+Name and location data for baseball stadiums.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Name and location data for baseball stadiums.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Parks)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Parks)
+A data frame with 262 observations on the following 6 variables.
 
-      .. rubric:: Format
-         :name: format
+``park.key``
+   unique identifier for each ballpark
 
-      A data frame with 262 observations on the following 6 variables.
+``park.name``
+   the name of the ballpark
 
-      ``park.key``
-         unique identifier for each ballpark
+``park.alias``
+   a semicolon delimited list of other names for the ballpark if they
+   exist
 
-      ``park.name``
-         the name of the ballpark
+``city``
+   city where the ballpark is located
 
-      ``park.alias``
-         a semicolon delimited list of other names for the ballpark if
-         they exist
+``state``
+   state where the ballpark is located
 
-      ``city``
-         city where the ballpark is located
+``country``
+   country where the ballpark is located
 
-      ``state``
-         state where the ballpark is located
+Details
+~~~~~~~
 
-      ``country``
-         country where the ballpark is located
+This dataset apparently includes all ballparks that were ever used in
+baseball. There is no indication of the years they were used, nor the
+teams that played there.
 
-      .. rubric:: Details
-         :name: details
+The ballparks can be associated with teams through the ``park`` variable
+in the ``Teams`` table.
 
-      This dataset apparently includes all ballparks that were ever used
-      in baseball. There is no indication of the years they were used,
-      nor the teams that played there.
+Source
+~~~~~~
 
-      The ballparks can be associated with teams through the ``park``
-      variable in the ``Teams`` table.
+Lahman, S. (2026) Lahman's Baseball Database, 1871-2025, 2026 version,
+https://sabr.org/lahman-database/
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      Lahman, S. (2025) Lahman's Baseball Database, 1871-2024, 2025
-      version, https://sabr.org/lahman-database/
+``Teams``
 
-      .. rubric:: See Also
-         :name: see-also
+Examples
+~~~~~~~~
 
-      ``Teams``
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   data(Parks)
+   library(dplyr)
+   # how many parks in each country?
+   table(Parks$country)
 
-      .. code:: R
+   # how many parks in each US state?
+   Parks %>% 
+     filter(country=="US") %>% 
+     count(state, sort=TRUE)
 
-         data(Parks)
-         library(dplyr)
-         # how many parks in each country?
-         table(Parks$country)
+   # ballparks in NYC
+   Parks %>% 
+     filter(state=="NY") %>% 
+     filter(city %in% c("New York", "Brooklyn", "Queens"))
 
-         # how many parks in each US state?
-         Parks %>% 
-           filter(country=="US") %>% 
-           count(state, sort=TRUE)
+   # ballparks in Canada
+   Parks %>% 
+     filter(country=="CA") %>% 
+     count(state, sort=TRUE)
 
-         # ballparks in NYC
-         Parks %>% 
-           filter(state=="NY") %>% 
-           filter(city %in% c("New York", "Brooklyn", "Queens"))
-
-         # ballparks in Canada
-         Parks %>% 
-           filter(country=="CA") %>% 
-           count(state, sort=TRUE)
-
-         # what are the Canadian parks?
-         Parks %>% 
-           dplyr::filter(country=="CA")
+   # what are the Canadian parks?
+   Parks %>% 
+     dplyr::filter(country=="CA")

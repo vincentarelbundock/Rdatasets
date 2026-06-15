@@ -1,43 +1,38 @@
-.. container::
+============ ===============
+livestock_ts R Documentation
+============ ===============
 
-   .. container::
+Livestock (Sheep) in Asia, 1961-2007.
+-------------------------------------
 
-      ============ ===============
-      livestock_ts R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Livestock (Sheep) in Asia, 1961-2007.
-         :name: livestock-sheep-in-asia-1961-2007.
+The dataset name has been changed to 'livestock_ts' to avoid confusion
+with other packages in the R ecosystem from which datasets have been
+sourced. The suffix 'ts' indicates that this dataset is a time series
+object. This naming convention helps distinguish this dataset as part of
+the 'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'livestock_ts' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. The suffix 'ts' indicates that this
-      dataset is a time series object. This naming convention helps
-      distinguish this dataset as part of the 'timeseriesdatasets'
-      package and assists users in identifying its specific
-      characteristics. The original content of the dataset has not been
-      modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(livestock_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(livestock_ts)
+A time series object with 47 observations:
 
-      .. rubric:: Format
-         :name: format
+livestock
+   A numeric vector representing the annual number of livestock (sheep)
+   in Asia from 1961 to 2007.
 
-      A time series object with 47 observations:
+Source
+~~~~~~
 
-      livestock
-         A numeric vector representing the annual number of livestock
-         (sheep) in Asia from 1961 to 2007.
-
-      .. rubric:: Source
-         :name: source
-
-      Food and Agriculture Organization of the United Nations (FAO).
+Food and Agriculture Organization of the United Nations (FAO).

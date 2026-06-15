@@ -1,84 +1,79 @@
-.. container::
+===================== ===============
+jones.corn.uniformity R Documentation
+===================== ===============
 
-   .. container::
+Uniformity trial of corn.
+-------------------------
 
-      ===================== ===============
-      jones.corn.uniformity R Documentation
-      ===================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of corn.
-         :name: uniformity-trial-of-corn.
+Uniformity trial of corn in Iowa in 2016.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of corn in Iowa in 2016.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("jones.corn.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("jones.corn.uniformity")
+A data frame with 144 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``col``
+   column ordinate
 
-      A data frame with 144 observations on the following 3 variables.
+``row``
+   row ordinate
 
-      ``col``
-         column ordinate
+``yield``
+   yield, bu/ac
 
-      ``row``
-         row ordinate
+Details
+~~~~~~~
 
-      ``yield``
-         yield, bu/ac
+This data corresponds to field "ISU.SE" in the paper by Jones.
 
-      .. rubric:: Details
-         :name: details
+Field width: 12 columns, 4.6 meters each.
 
-      This data corresponds to field "ISU.SE" in the paper by Jones.
+Field length: 12 rows, 3 meters each.
 
-      Field width: 12 columns, 4.6 meters each.
+Electronic version provided as an online supplement. The "row" and "col"
+variables in the supplement have been swapped for the presentation of
+the data here in order to be more consistent with the figures in the
+paper.
 
-      Field length: 12 rows, 3 meters each.
+The electronic supplemental data is in bu/ac, but the paper uses kg/ha.
 
-      Electronic version provided as an online supplement. The "row" and
-      "col" variables in the supplement have been swapped for the
-      presentation of the data here in order to be more consistent with
-      the figures in the paper.
+Used with permission of Marcus Jones.
 
-      The electronic supplemental data is in bu/ac, but the paper uses
-      kg/ha.
+Source
+~~~~~~
 
-      Used with permission of Marcus Jones.
+Jones, M., Harbur, M., & Moore, K. J. (2021). Automating Uniformity
+Trials to Optimize Precision of Agronomic Field Trials. Agronomy, 11(6),
+1254. https://doi.org/10.3390/agronomy11061254
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Jones, M., Harbur, M., & Moore, K. J. (2021). Automating
-      Uniformity Trials to Optimize Precision of Agronomic Field Trials.
-      Agronomy, 11(6), 1254. https://doi.org/10.3390/agronomy11061254
+None
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
+   library(agridat)
+   data(jones.corn.uniformity)
+   dat <- jones.corn.uniformity
+   library(desplot)
+   # Compare to figure 5 of Jones et al.
+   desplot(dat, yield ~ col*row,
+           aspect=(12*4.6)/(12*3),
+           main="jones.corn.uniformity")
 
-      .. code:: R
-
-         ## Not run: 
-         library(agridat)
-         data(jones.corn.uniformity)
-         dat <- jones.corn.uniformity
-         library(desplot)
-         # Compare to figure 5 of Jones et al.
-         desplot(dat, yield ~ col*row,
-                 aspect=(12*4.6)/(12*3),
-                 main="jones.corn.uniformity")
-
-         ## End(Not run)
+   ## End(Not run)

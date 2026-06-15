@@ -16,9 +16,7 @@ function processMathHTML() {
 
 <table style="width: 100%;"><tr><td>Depends</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>
-Dependencies of R Packages
-</h2>
+<h2>Dependencies of R Packages</h2>
 
 <h3>Description</h3>
 
@@ -27,34 +25,32 @@ dependencies declared in 4983 packages listed on CRAN on January 17, 2014.
 </p>
 
 
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data(Depends)</code></pre>
-
-
 <h3>Format</h3>
 
-<p>The format is a one-way frequency table of counts of packages with 0, 1, 2, ... dependencies.
+<p>The format is a one-way frequency table of counts of packages with
+0, 1, 2, ... dependencies.
 </p>
-<p>'table' int [1:15(1d)] 986 1347 993 685 375 298 155 65 32 19 ...
-- attr(*, &quot;dimnames&quot;)=List of 1
-..$ Depends: chr [1:15] &quot;0&quot; &quot;1&quot; &quot;2&quot; &quot;3&quot; ...
-</p>
+<pre>
+ table' int [1:15(1d)] 986 1347 993 685 375 298 155 65 32 19 ...
+ - attr(*, "dimnames")=List of 1
+ ..$ Depends: chr [1:15] "0" "1" "2" "3" ...
+</pre>
 
 
 <h3>Source</h3>
 
 <p>Using code from
-<a href="https://blog.revolutionanalytics.com/2013/12/a-look-at-the-distribution-of-r-package-dependencies.html">https://blog.revolutionanalytics.com/2013/12/a-look-at-the-distribution-of-r-package-dependencies.html</a>
+<a href="https://www.r-bloggers.com/2013/12/a-look-at-the-distribution-of-r-package-dependencies/">https://www.r-bloggers.com/2013/12/a-look-at-the-distribution-of-r-package-dependencies/</a>
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(Depends)
-plot(Depends, 
-     xlab="Number of Dependencies", 
-     ylab="Number of R Packages", 
+<pre><code class='language-R'>
+data(Depends)
+plot(Depends,
+     xlab="Number of Dependencies",
+     ylab="Number of R Packages",
      lwd=8)
 
 # what type of distribution?
@@ -78,6 +74,7 @@ Depends &lt;- table(Deps)
 
 
 ## End(Not run)
+
 </code></pre>
 
 </main>

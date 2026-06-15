@@ -1,61 +1,54 @@
-.. container::
+================ ===============
+cabinet_turnover R Documentation
+================ ===============
 
-   .. container::
+Two Years In, Turnover In Trump’s Cabinet Is Still Historically High
+--------------------------------------------------------------------
 
-      ================ ===============
-      cabinet_turnover R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Two Years In, Turnover In Trump’s Cabinet Is Still
-         Historically High
-         :name: two-years-in-turnover-in-trumps-cabinet-is-still-historically-high
+The raw data behind the story "Two Years In, Turnover In Trump’s Cabinet
+Is Still Historically High"
+https://fivethirtyeight.com/features/two-years-in-turnover-in-trumps-cabinet-is-still-historically-high/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Two Years In, Turnover In Trump’s
-      Cabinet Is Still Historically High"
-      https://fivethirtyeight.com/features/two-years-in-turnover-in-trumps-cabinet-is-still-historically-high/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   cabinet_turnover
 
-      .. code:: R
+Format
+~~~~~~
 
-         cabinet_turnover
+A data frame with 312 rows representing cabinet members and 8 variables:
 
-      .. rubric:: Format
-         :name: format
+president
+   Surname of of sitting President
 
-      A data frame with 312 rows representing cabinet members and 8
-      variables:
+position
+   Cabinet Position
 
-      president
-         Surname of of sitting President
+appointee
+   Appointee's full name
 
-      position
-         Cabinet Position
+start
+   Date the appointee was sworn in
 
-      appointee
-         Appointee's full name
+end
+   Date the appointee left office
 
-      start
-         Date the appointee was sworn in
+length
+   Length of Tenure, in days
 
-      end
-         Date the appointee left office
+days
+   Days into administration that the appointee left office
 
-      length
-         Length of Tenure, in days
+combined
+   Whether or not Cabinet member served in more than one administrations
 
-      days
-         Days into administration that the appointee left office
+Source
+~~~~~~
 
-      combined
-         Whether or not Cabinet member served in more than one
-         administrations
-
-      .. rubric:: Source
-         :name: source
-
-      from Federal Government Websites and News Reports
+from Federal Government Websites and News Reports

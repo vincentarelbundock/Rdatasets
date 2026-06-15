@@ -1,53 +1,49 @@
-.. container::
+======= ===============
+Alcohol R Documentation
+======= ===============
 
-   .. container::
+Alcohol Consumption per Capita
+------------------------------
 
-      ======= ===============
-      Alcohol R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Alcohol Consumption per Capita
-         :name: alcohol-consumption-per-capita
+These data provide per capita alcohol consumption values for many
+countries in 2005 and 2008. There are also a few countries for which
+there are data in other years.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      These data provide per capita alcohol consumption values for many
-      countries in 2005 and 2008. There are also a few countries for
-      which there are data in other years.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Alcohol)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Alcohol)
+A data frame with 411 observations on the following variables.
 
-      .. rubric:: Format
-         :name: format
+``country``
+   country name
 
-      A data frame with 411 observations on the following variables.
+``year``
+   year
 
-      ``country``
-         country name
+``alcohol``
+   estimated per capita alcohol consumption for adults (15+) in litres
+   pure alcohol
 
-      ``year``
-         year
+Source
+~~~~~~
 
-      ``alcohol``
-         estimated per capita alcohol consumption for adults (15+) in
-         litres pure alcohol
+Gapminder (https://www.gapminder.org/data/)
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Gapminder (https://www.gapminder.org/data/)
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(Alcohol)
-         # There are only a few observations in years other than 2005 and 2008
-         subset(Alcohol, ! year %in% c(2005,2008))
+   data(Alcohol)
+   # There are only a few observations in years other than 2005 and 2008
+   subset(Alcohol, ! year %in% c(2005,2008))

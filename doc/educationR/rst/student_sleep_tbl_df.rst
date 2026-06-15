@@ -1,50 +1,45 @@
-.. container::
+==================== ===============
+student_sleep_tbl_df R Documentation
+==================== ===============
 
-   .. container::
+Sleep for 110 college students (simulated)
+------------------------------------------
 
-      ==================== ===============
-      student_sleep_tbl_df R Documentation
-      ==================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Sleep for 110 college students (simulated)
-         :name: sleep-for-110-college-students-simulated
+This dataset, student_sleep_tbl_df, is a tibble containing the number of
+hours that 110 college students slept in a single night. The data allows
+for the analysis of sleep patterns among college students, potentially
+useful for understanding the relationship between sleep and academic
+performance, well-being, or other factors.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, student_sleep_tbl_df, is a tibble containing the
-      number of hours that 110 college students slept in a single night.
-      The data allows for the analysis of sleep patterns among college
-      students, potentially useful for understanding the relationship
-      between sleep and academic performance, well-being, or other
-      factors.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(student_sleep_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(student_sleep_tbl_df)
+A tibble with 110 observations and 1 variable:
 
-      .. rubric:: Format
-         :name: format
+hours
+   Number of hours slept (numeric).
 
-      A tibble with 110 observations and 1 variable:
+Details
+~~~~~~~
 
-      hours
-         Number of hours slept (numeric).
+The dataset name has been kept as 'student_sleep_tbl_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the educationR package and
+assists users in identifying its specific characteristics. The suffix
+'tbl_df' indicates that the dataset is a tibble. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'student_sleep_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      educationR package and assists users in identifying its specific
-      characteristics. The suffix 'tbl_df' indicates that the dataset is
-      a tibble. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset was taken from the openintro package.
+The dataset was taken from the openintro package.

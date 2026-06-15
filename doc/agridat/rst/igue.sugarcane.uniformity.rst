@@ -1,84 +1,79 @@
-.. container::
+========================= ===============
+igue.sugarcane.uniformity R Documentation
+========================= ===============
 
-   .. container::
+Uniformity trial with sugarcane
+-------------------------------
 
-      ========================= ===============
-      igue.sugarcane.uniformity R Documentation
-      ========================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial with sugarcane
-         :name: uniformity-trial-with-sugarcane
+Uniformity trial with sugarcane in Brazil, 1982.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial with sugarcane in Brazil, 1982.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("igue.sugarcane.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("igue.sugarcane.uniformity")
+A data frame with 1512 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row
 
-      A data frame with 1512 observations on the following 3 variables.
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   yield, kg/plot
 
-      ``col``
-         column
+Details
+~~~~~~~
 
-      ``yield``
-         yield, kg/plot
+A uniformity trial with sugarcane in the state of Sao Paulo, Brazil, in
+1982. The field was 40 rows, each 90 m long, with 1.5 m between rows.
 
-      .. rubric:: Details
-         :name: details
+Field width: 36 plots \* 1.5 m = 54 m
 
-      A uniformity trial with sugarcane in the state of Sao Paulo,
-      Brazil, in 1982. The field was 40 rows, each 90 m long, with 1.5 m
-      between rows.
+Field length: 42 plots \* 2 m = 84 m
 
-      Field width: 36 plots \* 1.5 m = 54 m
+Source
+~~~~~~
 
-      Field length: 42 plots \* 2 m = 84 m
+Toshio Igue, Ademar Espironelo, Heitor Cantarella, Erseni Joao Nelli.
+(1991). Tamanho e forma de parcela experimental para cana-de-acucar
+(Plot size and shape for sugar cane experiments). Bragantia, 50,
+163-180. Appendix, page 169-170.
+https://dx.doi.org/10.1590/S0006-87051991000100016
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Toshio Igue, Ademar Espironelo, Heitor Cantarella, Erseni Joao
-      Nelli. (1991). Tamanho e forma de parcela experimental para
-      cana-de-acucar (Plot size and shape for sugar cane experiments).
-      Bragantia, 50, 163-180. Appendix, page 169-170.
-      https://dx.doi.org/10.1590/S0006-87051991000100016
+None
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+     
+   data(igue.sugarcane.uniformity)
+   dat <- igue.sugarcane.uniformity
 
-         ## Not run: 
+   # match Igue CV top row of page 171
+   sd(dat$yield)/mean(dat$yield) # 16.4
 
-         library(agridat)
-           
-         data(igue.sugarcane.uniformity)
-         dat <- igue.sugarcane.uniformity
+   libs(desplot)
+   desplot(dat, yield ~ col*row,
+           flip=TRUE, tick=TRUE, aspect=(42*2)/(36*1.5),
+           main="igue.sugarcane.uniformity")
+     
 
-         # match Igue CV top row of page 171
-         sd(dat$yield)/mean(dat$yield) # 16.4
-
-         libs(desplot)
-         desplot(dat, yield ~ col*row,
-                 flip=TRUE, tick=TRUE, aspect=(42*2)/(36*1.5),
-                 main="igue.sugarcane.uniformity")
-           
-
-         ## End(Not run)  
+   ## End(Not run)  

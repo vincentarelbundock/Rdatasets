@@ -1,136 +1,132 @@
-.. container::
+=========================== ===============
+draper.safflower.uniformity R Documentation
+=========================== ===============
 
-   .. container::
+Uniformity trial of safflower
+-----------------------------
 
-      =========================== ===============
-      draper.safflower.uniformity R Documentation
-      =========================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of safflower
-         :name: uniformity-trial-of-safflower
+Uniformity trial of safflower in Arizona in 1958.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of safflower in Arizona in 1958.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("draper.safflower.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("draper.safflower.uniformity")
+A data frame with 640 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``expt``
+   experiment
 
-      A data frame with 640 observations on the following 4 variables.
+``row``
+   row
 
-      ``expt``
-         experiment
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   yield per plot (grams)
 
-      ``col``
-         column
+Details
+~~~~~~~
 
-      ``yield``
-         yield per plot (grams)
+Experiments were conducted at the Agricultural Experiment Station Farm
+at Eloy, Arizona. The crop was harvested in July 1958.
 
-      .. rubric:: Details
-         :name: details
+The crop was planted in two rows 12 inches apart on vegetable beds 40
+inches center to center.
 
-      Experiments were conducted at the Agricultural Experiment Station
-      Farm at Eloy, Arizona. The crop was harvested in July 1958.
+In each test, the end ranges and one row of plots on one side were next
+to alleys, and those plots gave estimates of border effects.
 
-      The crop was planted in two rows 12 inches apart on vegetable beds
-      40 inches center to center.
+Experiment E4 (four foot test)
 
-      In each test, the end ranges and one row of plots on one side were
-      next to alleys, and those plots gave estimates of border effects.
+Sandy streaks were present in the field. Average yield was 1487 lb/ac. A
+diagonal fertility gradient was in this field. Widening the plot was
+equally effective as lengthening the plot to reduce variability. The
+optimum plot size was 1 bed wide, 24 feet long. Considering economic
+costs, the optimum size was 1 bed, 12 feet long.
 
-      Experiment E4 (four foot test)
+Field width: 16 beds \* 3.33 feet = 53 feet
 
-      Sandy streaks were present in the field. Average yield was 1487
-      lb/ac. A diagonal fertility gradient was in this field. Widening
-      the plot was equally effective as lengthening the plot to reduce
-      variability. The optimum plot size was 1 bed wide, 24 feet long.
-      Considering economic costs, the optimum size was 1 bed, 12 feet
-      long.
+Field length: 18 ranges \* 4 feet = 72 feet
 
-      Field width: 16 beds \* 3.33 feet = 53 feet
+Experiment E5 (five foot test)
 
-      Field length: 18 ranges \* 4 feet = 72 feet
+Average yield 2517 lb/ac, typical for this crop. Combining plots
+lengthwise was more effective than widening the plots, in order to
+reduce variability. The optimum plot size was 1 bed wide, 25 feet long.
+Considering economic costs, the optimum size was 1 bed, 18 feet long.
 
-      Experiment E5 (five foot test)
+Field width: 14 beds \* 3.33 feet = 46.6 feet.
 
-      Average yield 2517 lb/ac, typical for this crop. Combining plots
-      lengthwise was more effective than widening the plots, in order to
-      reduce variability. The optimum plot size was 1 bed wide, 25 feet
-      long. Considering economic costs, the optimum size was 1 bed, 18
-      feet long.
+Field length: 18 ranges \* 5 feet = 90 feet.
 
-      Field width: 14 beds \* 3.33 feet = 46.6 feet.
+Data are from Table A & B of Draper, p. 53-56.
 
-      Field length: 18 ranges \* 5 feet = 90 feet.
+Transcription details: Data typed by K.Wright.
 
-      Data are from Table A & B of Draper, p. 53-56. Typed by K.Wright.
+Source
+~~~~~~
 
-      .. rubric:: Source
-         :name: source
+Arlen D. Draper. (1959). Optimum plot size and shape for safflower yield
+tests. Dissertation. University of Arizona.
+https://hdl.handle.net/10150/319371 Page 53-56.
 
-      Arlen D. Draper. (1959). Optimum plot size and shape for safflower
-      yield tests. Dissertation. University of Arizona.
-      https://hdl.handle.net/10150/319371 Page 53-56.
+References
+~~~~~~~~~~
 
-      .. rubric:: References
-         :name: references
+None
 
-      None
+Examples
+~~~~~~~~
 
-      .. rubric:: Examples
-         :name: examples
+.. code:: R
 
-      .. code:: R
+   ## Not run: 
 
-         ## Not run: 
+     library(agridat)
+     data(draper.safflower.uniformity)
+     dat4 <- subset(draper.safflower.uniformity, expt=="E4")
+     dat5 <- subset(draper.safflower.uniformity, expt=="E5")
+     
+     libs(desplot)
+     desplot(dat4, yield~col*row,
+             flip=TRUE, tick=TRUE, aspect=72/53, # true aspect
+             main="draper.safflower.uniformity (four foot)")
+     
+     desplot(dat5, yield~col*row,
+             flip=TRUE, tick=TRUE, aspect=90/46, # true aspect
+             main="draper.safflower.uniformity (five foot)")
 
-           library(agridat)
-           data(draper.safflower.uniformity)
-           dat4 <- subset(draper.safflower.uniformity, expt=="E4")
-           dat5 <- subset(draper.safflower.uniformity, expt=="E5")
-           
-           libs(desplot)
-           desplot(dat4, yield~col*row,
-                   flip=TRUE, tick=TRUE, aspect=72/53, # true aspect
-                   main="draper.safflower.uniformity (four foot)")
-           
-           desplot(dat5, yield~col*row,
-                   flip=TRUE, tick=TRUE, aspect=90/46, # true aspect
-                   main="draper.safflower.uniformity (five foot)")
+     # Draper appears to removed the border plots, but it is difficult to
+     # match his results exactly
+     dat4 <- subset(dat4, row>1 & row<20)
+     dat4 <- subset(dat4, col>1 & col<17)
+     dat5 <- subset(dat5, row>1 & row<20)
+     dat5 <- subset(dat5, col<15)
+     # Convert gm/plot to pounds/acre. Draper (p. 20) says 1487 pounds/acre
+     mean(dat4$yield) / 453.592 / (3.33*4) * 43560 # 1472 lb/ac
+     
+     libs(agricolae)
+     libs(reshape2)
+     
+     s4 <- index.smith(acast(dat4, row~col, value.var='yield'),
+                       main="draper.safflower.uniformity (four foot)",
+                       col="red")$uni
+     s4 # match Draper table 2, p 22
+     
+     ## s5 <- index.smith(acast(dat5, row~col, value.var='yield'),
+     ##                   main="draper.safflower.uniformity (five foot)",
+     ##                   col="red")$uni
+     ## s5 # match Draper table 1, p 21
+     
 
-           # Draper appears to removed the border plots, but it is difficult to
-           # match his results exactly
-           dat4 <- subset(dat4, row>1 & row<20)
-           dat4 <- subset(dat4, col>1 & col<17)
-           dat5 <- subset(dat5, row>1 & row<20)
-           dat5 <- subset(dat5, col<15)
-           # Convert gm/plot to pounds/acre. Draper (p. 20) says 1487 pounds/acre
-           mean(dat4$yield) / 453.592 / (3.33*4) * 43560 # 1472 lb/ac
-           
-           libs(agricolae)
-           libs(reshape2)
-           
-           s4 <- index.smith(acast(dat4, row~col, value.var='yield'),
-                             main="draper.safflower.uniformity (four foot)",
-                             col="red")$uni
-           s4 # match Draper table 2, p 22
-           
-           ## s5 <- index.smith(acast(dat5, row~col, value.var='yield'),
-           ##                   main="draper.safflower.uniformity (five foot)",
-           ##                   col="red")$uni
-           ## s5 # match Draper table 1, p 21
-           
-
-         ## End(Not run)
+   ## End(Not run)

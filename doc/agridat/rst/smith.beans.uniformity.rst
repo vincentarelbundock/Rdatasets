@@ -1,130 +1,125 @@
-.. container::
+====================== ===============
+smith.beans.uniformity R Documentation
+====================== ===============
 
-   .. container::
+Uniformity trials of beans, 2 species in 2 years
+------------------------------------------------
 
-      ====================== ===============
-      smith.beans.uniformity R Documentation
-      ====================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trials of beans, 2 species in 2 years
-         :name: uniformity-trials-of-beans-2-species-in-2-years
+Uniformity trials of beans at California, 1954-1955, 2 species in 2
+years
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trials of beans at California, 1954-1955, 2 species in
-      2 years
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("smith.beans.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("smith.beans.uniformity")
+A data frame with 912 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``expt``
+   experiment
 
-      A data frame with 912 observations on the following 4 variables.
+``row``
+   row
 
-      ``expt``
-         experiment
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   yield, kg
 
-      ``col``
-         column
+Details
+~~~~~~~
 
-      ``yield``
-         yield, kg
+Trials were conducted in California.
 
-      .. rubric:: Details
-         :name: details
+In 1955 plots were twice as wide and twice as long as in 1954. Red
+Kidney is a bush variety bean, Standard Pink is a viny variety.
 
-      Trials were conducted in California.
+Smith randomly assigned A,B,C,D to plots and used these as 'varieties'
+for calculating ANOVA tables. Plots were combined side-by-side and
+end-to-end to make larger plots. Decreasing LSDs were observed for
+increases in plot sizes. LSDs were seldom above 200, which was
+considered to be a noticeable difference for the farmers.
 
-      In 1955 plots were twice as wide and twice as long as in 1954. Red
-      Kidney is a bush variety bean, Standard Pink is a viny variety.
+There are four datasets:
 
-      Smith randomly assigned A,B,C,D to plots and used these as
-      'varieties' for calculating ANOVA tables. Plots were combined
-      side-by-side and end-to-end to make larger plots. Decreasing LSDs
-      were observed for increases in plot sizes. LSDs were seldom above
-      200, which was considered to be a noticeable difference for the
-      farmers.
+—–
 
-      There are four datasets:
+1954 Experiment 1: Red Kidney.
 
-      —–
+1954 Experiment 2: Standard Pink
 
-      1954 Experiment 1: Red Kidney.
+Field width: 18 plots \* 30 inches = 45 ft
 
-      1954 Experiment 2: Standard Pink
+Field length: 12 plots \* 15 ft = 180 ft
 
-      Field width: 18 plots \* 30 inches = 45 ft
+—–
 
-      Field length: 12 plots \* 15 ft = 180 ft
+1955 Experiment 3: Red Kidney.
 
-      —–
+1955 Experiment 4: Standard Pink
 
-      1955 Experiment 3: Red Kidney.
+Field width: 16 plots \* 2 rows \* 30 in = 80 ft
 
-      1955 Experiment 4: Standard Pink
+Field length: 15 plots \* 30 ft = 450 ft
 
-      Field width: 16 plots \* 2 rows \* 30 in = 80 ft
+Source
+~~~~~~
 
-      Field length: 15 plots \* 30 ft = 450 ft
+Francis L. Smith, 1958. Effects of plot size, plot shape, and number of
+replications on the efficacy of bean yield trials. Hilgardia, 28, 43-63.
+https://doi.org/10.3733/hilg.v28n02p043
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Francis L. Smith, 1958. Effects of plot size, plot shape, and
-      number of replications on the efficacy of bean yield trials.
-      Hilgardia, 28, 43-63. https://doi.org/10.3733/hilg.v28n02p043
+None.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+     
+     data(smith.beans.uniformity)
+     dat1 <- subset(smith.beans.uniformity, expt=="E1")
+     dat2 <- subset(smith.beans.uniformity, expt=="E2")
+     dat3 <- subset(smith.beans.uniformity, expt=="E3")
+     dat4 <- subset(smith.beans.uniformity, expt=="E4")
 
-         ## Not run: 
+     cv <- function(x) { sd(x)/mean(x) }
+     cv(dat1$yield)
+     cv(dat2$yield) # Does not match Smith. Checked all values by hand.
+     cv(dat3$yield)
+     cv(dat4$yield)
 
-         library(agridat)
-           
-           data(smith.beans.uniformity)
-           dat1 <- subset(smith.beans.uniformity, expt=="E1")
-           dat2 <- subset(smith.beans.uniformity, expt=="E2")
-           dat3 <- subset(smith.beans.uniformity, expt=="E3")
-           dat4 <- subset(smith.beans.uniformity, expt=="E4")
+     libs("desplot")
+     desplot(dat1, yield ~ col*row,
+             aspect=180/45, flip=TRUE, # true aspect
+             main="smith.beans.uniformity, expt 1 (true aspect)")
 
-           cv <- function(x) { sd(x)/mean(x) }
-           cv(dat1$yield)
-           cv(dat2$yield) # Does not match Smith. Checked all values by hand.
-           cv(dat3$yield)
-           cv(dat4$yield)
+     desplot(dat2, yield ~ col*row,
+             aspect=180/45, flip=TRUE, # true aspect
+             main="smith.beans.uniformity, expt 2 (true aspect)")
 
-           libs("desplot")
-           desplot(dat1, yield ~ col*row,
-                   aspect=180/45, flip=TRUE, # true aspect
-                   main="smith.beans.uniformity, expt 1 (true aspect)")
+     desplot(dat3, yield ~ col*row,
+             aspect=450/80, flip=TRUE, # true aspect
+             main="smith.beans.uniformity, expt 3 (true aspect)")
 
-           desplot(dat2, yield ~ col*row,
-                   aspect=180/45, flip=TRUE, # true aspect
-                   main="smith.beans.uniformity, expt 2 (true aspect)")
+     desplot(dat4, yield ~ col*row,
+             aspect=450/80, flip=TRUE, # true aspect
+             main="smith.beans.uniformity expt 4, (true aspect)")
+     
 
-           desplot(dat3, yield ~ col*row,
-                   aspect=450/80, flip=TRUE, # true aspect
-                   main="smith.beans.uniformity, expt 3 (true aspect)")
-
-           desplot(dat4, yield ~ col*row,
-                   aspect=450/80, flip=TRUE, # true aspect
-                   main="smith.beans.uniformity expt 4, (true aspect)")
-           
-
-         ## End(Not run)
+   ## End(Not run)

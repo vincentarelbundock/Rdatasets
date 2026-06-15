@@ -1,115 +1,109 @@
-.. container::
+====== ===============
+barium R Documentation
+====== ===============
 
-   .. container::
+barium
+------
 
-      ====== ===============
-      barium R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: barium
-         :name: barium
+Wooldridge Source: C.M. Krupp and P.S. Pollard (1999), Market Responses
+to Antidumpting Laws: Some Evidence from the U.S. Chemical Industry,
+Canadian Journal of Economics 29, 199-227. Dr. Krupp kindly provided the
+data. They are monthly data covering February 1978 through December
+1988. Data loads lazily.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Wooldridge Source: C.M. Krupp and P.S. Pollard (1999), Market
-      Responses to Antidumpting Laws: Some Evidence from the U.S.
-      Chemical Industry, Canadian Journal of Economics 29, 199-227. Dr.
-      Krupp kindly provided the data. They are monthly data covering
-      February 1978 through December 1988. Data loads lazily.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data('barium')
 
-      .. code:: R
+Format
+~~~~~~
 
-         data('barium')
+A data.frame with 131 observations on 31 variables:
 
-      .. rubric:: Format
-         :name: format
+- **chnimp:** Chinese imports, bar. chl.
 
-      A data.frame with 131 observations on 31 variables:
+- **bchlimp:** total imports bar. chl.
 
-      -  **chnimp:** Chinese imports, bar. chl.
+- **befile6:** =1 for all 6 mos before filing
 
-      -  **bchlimp:** total imports bar. chl.
+- **affile6:** =1 for all 6 mos after filing
 
-      -  **befile6:** =1 for all 6 mos before filing
+- **afdec6:** =1 for all 6 mos after decision
 
-      -  **affile6:** =1 for all 6 mos after filing
+- **befile12:** =1 all 12 mos before filing
 
-      -  **afdec6:** =1 for all 6 mos after decision
+- **affile12:** =1 all 12 mos after filing
 
-      -  **befile12:** =1 all 12 mos before filing
+- **afdec12:** =1 all 12 mos after decision
 
-      -  **affile12:** =1 all 12 mos after filing
+- **chempi:** chemical production index
 
-      -  **afdec12:** =1 all 12 mos after decision
+- **gas:** gasoline production
 
-      -  **chempi:** chemical production index
+- **rtwex:** exchange rate index
 
-      -  **gas:** gasoline production
+- **spr:** =1 for spring months
 
-      -  **rtwex:** exchange rate index
+- **sum:** =1 for summer months
 
-      -  **spr:** =1 for spring months
+- **fall:** =1 for fall months
 
-      -  **sum:** =1 for summer months
+- **lchnimp:** log(chnimp)
 
-      -  **fall:** =1 for fall months
+- **lgas:** log(gas)
 
-      -  **lchnimp:** log(chnimp)
+- **lrtwex:** log(rtwex)
 
-      -  **lgas:** log(gas)
+- **lchempi:** log(chempi)
 
-      -  **lrtwex:** log(rtwex)
+- **t:** time trend
 
-      -  **lchempi:** log(chempi)
+- **feb:** =1 if month is feb
 
-      -  **t:** time trend
+- **mar:** =1 if month is march
 
-      -  **feb:** =1 if month is feb
+- **apr:**
 
-      -  **mar:** =1 if month is march
+- **may:**
 
-      -  **apr:**
+- **jun:**
 
-      -  **may:**
+- **jul:**
 
-      -  **jun:**
+- **aug:**
 
-      -  **jul:**
+- **sep:**
 
-      -  **aug:**
+- **oct:**
 
-      -  **sep:**
+- **nov:**
 
-      -  **oct:**
+- **dec:**
 
-      -  **nov:**
+- **percchn:** percent imports from china
 
-      -  **dec:**
+Note
+~~~~
 
-      -  **percchn:** percent imports from china
+Rather than just having intercept shifts for the different regimes, one
+could conduct a full Chow test across the different regimes.
 
-      .. rubric:: Note
-         :name: note
+Used in Text: pages 361-362, 372, 377, 426, 442-443, 445, 663, 665, 672
 
-      Rather than just having intercept shifts for the different
-      regimes, one could conduct a full Chow test across the different
-      regimes.
+Source
+~~~~~~
 
-      Used in Text: pages 361-362, 372, 377, 426, 442-443, 445, 663,
-      665, 672
+https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-          str(barium)
+    str(barium)

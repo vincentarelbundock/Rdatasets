@@ -146,6 +146,7 @@
 
    ::
 
+
       plot(ts(bomregions[, c("mdbRain","SOI")], start=1900),
            panel=function(y,...)panel.smooth(bomregions$Year, y,...))
       avrain <- bomregions[,"mdbRain"]

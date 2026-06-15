@@ -1,59 +1,53 @@
-.. container::
+=================== ===============
+cand_state_20150114 R Documentation
+=================== ===============
 
-   .. container::
+Looking For Clues: Who Is Going To Run For President In 2016?
+-------------------------------------------------------------
 
-      =================== ===============
-      cand_state_20150114 R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Looking For Clues: Who Is Going To Run For President
-         In 2016?
-         :name: looking-for-clues-who-is-going-to-run-for-president-in-2016
+The raw data behind the story "Looking For Clues: Who Is Going To Run
+For President In 2016?"
+https://fivethirtyeight.com/features/2016-president-who-is-going-to-run/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Looking For Clues: Who Is Going To
-      Run For President In 2016?"
-      https://fivethirtyeight.com/features/2016-president-who-is-going-to-run/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   cand_state_20150114
 
-      .. code:: R
+Format
+~~~~~~
 
-         cand_state_20150114
+A data frame with 25 rows representing potential presidential primary
+candidates and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+person
+   Potential presidential candidate
 
-      A data frame with 25 rows representing potential presidential
-      primary candidates and 5 variables:
+party
+   Political party
 
-      person
-         Potential presidential candidate
+date
+   Date of event
 
-      party
-         Political party
+latest
+   Latest statement
 
-      date
-         Date of event
+score
+   Likelihood of running score, 1 = Not running, 5 = Definitely running
 
-      latest
-         Latest statement
+Source
+~~~~~~
 
-      score
-         Likelihood of running score, 1 = Not running, 5 = Definitely
-         running
+See
+https://github.com/fivethirtyeight/data/tree/master/potential-candidates
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      See
-      https://github.com/fivethirtyeight/data/tree/master/potential-candidates
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``cand_events_20150114``, ``cand_events_20150130``, and
-      ``cand_state_20150130``
+``cand_events_20150114``, ``cand_events_20150130``, and
+``cand_state_20150130``

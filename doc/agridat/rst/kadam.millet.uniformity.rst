@@ -1,98 +1,93 @@
-.. container::
+======================= ===============
+kadam.millet.uniformity R Documentation
+======================= ===============
 
-   .. container::
+Uniformity trial of millet
+--------------------------
 
-      ======================= ===============
-      kadam.millet.uniformity R Documentation
-      ======================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of millet
-         :name: uniformity-trial-of-millet
+Uniformity trial of millet in India during 2 years
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of millet in India during 2 years
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("kadam.millet.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("kadam.millet.uniformity")
+A data frame with 240 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``year``
+   year
 
-      A data frame with 240 observations on the following 4 variables.
+``row``
+   row
 
-      ``year``
-         year
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   yield, ounces
 
-      ``col``
-         column
+Details
+~~~~~~~
 
-      ``yield``
-         yield, ounces
+Uniformity trials conducted during the kharip (monsoon) seasons of 1933
+and 1934 at Kundewadi, Niphad, in the district of Nasik, India. Bajari
+(pearl millet) strain 54 was used.
 
-      .. rubric:: Details
-         :name: details
+In 1933:
 
-      Uniformity trials conducted during the kharip (monsoon) seasons of
-      1933 and 1934 at Kundewadi, Niphad, in the district of Nasik,
-      India. Bajari (pearl millet) strain 54 was used.
+Field width: 8 plots \* 16.5 feet
 
-      In 1933:
+Field length: 10 plots \* 33 feet
 
-      Field width: 8 plots \* 16.5 feet
+In 1934:
 
-      Field length: 10 plots \* 33 feet
+Field width: 8 plots \* 16.5 feet
 
-      In 1934:
+Field length: 20 plots \* 16.5 feet
 
-      Field width: 8 plots \* 16.5 feet
+Source
+~~~~~~
 
-      Field length: 20 plots \* 16.5 feet
+B. S. Kadam and S. M. Patel. (1937). Studies in Field-Plot Technique
+With P. Typhoideum Rich. The Empire Journal Of Experimental Agriculture,
+5, 219-230. https://archive.org/details/in.ernet.dli.2015.25282
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      B. S. Kadam and S. M. Patel. (1937). Studies in Field-Plot
-      Technique With P. Typhoideum Rich. The Empire Journal Of
-      Experimental Agriculture, 5, 219-230.
-      https://archive.org/details/in.ernet.dli.2015.25282
+None.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+     
+     data(kadam.millet.uniformity)
+     dat <- kadam.millet.uniformity
+     
+     # similar to Kadam fig 1
+     libs(desplot)
+     desplot(dat, yield ~ col*row,
+             subset=year==1933,
+             flip=TRUE, aspect=(10*33)/(8*16.5), # true aspect
+             main="kadam.millet.uniformity 1933")
 
-         ## Not run: 
+     desplot(dat, yield ~ col*row,
+             subset=year==1934,
+             flip=TRUE, aspect=(20*16.5)/(8*16.5), # true aspect
+             main="kadam.millet.uniformity 1934")
+     
 
-         library(agridat)
-           
-           data(kadam.millet.uniformity)
-           dat <- kadam.millet.uniformity
-           
-           # similar to Kadam fig 1
-           libs(desplot)
-           desplot(dat, yield ~ col*row,
-                   subset=year==1933,
-                   flip=TRUE, aspect=(10*33)/(8*16.5), # true aspect
-                   main="kadam.millet.uniformity 1933")
-
-           desplot(dat, yield ~ col*row,
-                   subset=year==1934,
-                   flip=TRUE, aspect=(20*16.5)/(8*16.5), # true aspect
-                   main="kadam.millet.uniformity 1934")
-           
-
-         ## End(Not run)
+   ## End(Not run)

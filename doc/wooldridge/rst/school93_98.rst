@@ -1,90 +1,85 @@
-.. container::
+=========== ===============
+school93_98 R Documentation
+=========== ===============
 
-   .. container::
+school93_98
+-----------
 
-      =========== ===============
-      school93_98 R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: school93_98
-         :name: school93_98
+Wooldridge Source: L.E. Papke (2005), “The Effects of Spending on Test
+Pass Rates: Evidence from Michigan,” Journal of Public Economics 89,
+821-839. Data loads lazily.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Wooldridge Source: L.E. Papke (2005), “The Effects of Spending on
-      Test Pass Rates: Evidence from Michigan,” Journal of Public
-      Economics 89, 821-839. Data loads lazily.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data('school93_98')
 
-      .. code:: R
+Format
+~~~~~~
 
-         data('school93_98')
+A data.frame with 10668 observations on 18 variables:
 
-      .. rubric:: Format
-         :name: format
+- **distid:**
 
-      A data.frame with 10668 observations on 18 variables:
+- **schid:**
 
-      -  **distid:**
+- **lunch:** percent eligible for free lunch
 
-      -  **schid:**
+- **enrol:** number of students
 
-      -  **lunch:** percent eligible for free lunch
+- **exppp:** exp per pupil
 
-      -  **enrol:** number of students
+- **math4:**
 
-      -  **exppp:** exp per pupil
+- **year:** 1993 = school year 1992-1993
 
-      -  **math4:**
+- **y93:**
 
-      -  **year:** 1993 = school year 1992-1993
+- **y94:**
 
-      -  **y93:**
+- **y95:**
 
-      -  **y94:**
+- **y96:**
 
-      -  **y95:**
+- **y97:**
 
-      -  **y96:**
+- **y98:**
 
-      -  **y97:**
+- **rexpp:** (exppp/cpi)1.605: 1997 $
 
-      -  **y98:**
+- **found:**
 
-      -  **rexpp:** (exppp/cpi)1.605: 1997 $
+- **lenrol:** log(enrol)
 
-      -  **found:**
+- **lrexpp:** log(rexpp)
 
-      -  **lenrol:** log(enrol)
+- **lavgrexpp:** log((rexpp + L.rexpp)/2)
 
-      -  **lrexpp:** log(rexpp)
+Notes
+~~~~~
 
-      -  **lavgrexpp:** log((rexpp + L.rexpp)/2)
+This is closer to the data actually used in the Papke paper as it is at
+the school (building) level. It is unbalanced because data on scores and
+some of the spending and other variables is missing for some schools.
+While the usual RE and FE methods can be applied directly, obtaining the
+correlated random effects version of the Hausman test is more advance.
+Computer Exercise 17 in Chapter 14 walks the reader through it.
 
-      .. rubric:: Notes
-         :name: notes
+Used in Text: page 491
 
-      This is closer to the data actually used in the Papke paper as it
-      is at the school (building) level. It is unbalanced because data
-      on scores and some of the spending and other variables is missing
-      for some schools. While the usual RE and FE methods can be applied
-      directly, obtaining the correlated random effects version of the
-      Hausman test is more advance. Computer Exercise 17 in Chapter 14
-      walks the reader through it.
+Source
+~~~~~~
 
-      Used in Text: page 491
+http://www.cengage.com/c/introductory-econometrics-a-modern-approach-7e-wooldridge
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      http://www.cengage.com/c/introductory-econometrics-a-modern-approach-7e-wooldridge
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-          str(school93_98)
+    str(school93_98)

@@ -1,54 +1,50 @@
-.. container::
+============== ===============
+malaria_tbl_df R Documentation
+============== ===============
 
-   .. container::
+Malaria Vaccine Trial
+---------------------
 
-      ============== ===============
-      malaria_tbl_df R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Malaria Vaccine Trial
-         :name: malaria-vaccine-trial
+The dataset name has been changed to 'malaria_tbl_df' to avoid confusion
+with other datasets from packages in the R ecosystem and to follow the
+naming conventions of the 'MedDataSets' package. The suffix '\_tbl_df'
+indicates that this dataset is a tibble, helping to distinguish it from
+other datasets within the package and from those in the broader R
+ecosystem. The original content of the dataset has not been modified in
+any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'malaria_tbl_df' to avoid
-      confusion with other datasets from packages in the R ecosystem and
-      to follow the naming conventions of the 'MedDataSets' package. The
-      suffix '\_tbl_df' indicates that this dataset is a tibble, helping
-      to distinguish it from other datasets within the package and from
-      those in the broader R ecosystem. The original content of the
-      dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(malaria_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(malaria_tbl_df)
+A tibble with 20 observations and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+treatment
+   A factor indicating the type of treatment administered (e.g., vaccine
+   or placebo).
 
-      A tibble with 20 observations and 2 variables:
+outcome
+   A factor indicating the outcome of the treatment (e.g., success or
+   failure).
 
-      treatment
-         A factor indicating the type of treatment administered (e.g.,
-         vaccine or placebo).
+Details
+~~~~~~~
 
-      outcome
-         A factor indicating the outcome of the treatment (e.g., success
-         or failure).
+This dataset contains information from a malaria vaccine trial, focusing
+on the treatment administered and the outcomes observed in the
+participants.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains information from a malaria vaccine trial,
-      focusing on the treatment administered and the outcomes observed
-      in the participants.
-
-      .. rubric:: Source
-         :name: source
-
-      Data collected from a clinical trial assessing the efficacy of a
-      malaria vaccine.
+Data collected from a clinical trial assessing the efficacy of a malaria
+vaccine.

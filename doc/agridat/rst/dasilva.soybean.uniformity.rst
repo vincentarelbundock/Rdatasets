@@ -1,79 +1,74 @@
-.. container::
+========================== ===============
+dasilva.soybean.uniformity R Documentation
+========================== ===============
 
-   .. container::
+Uniformity trial of soybean
+---------------------------
 
-      ========================== ===============
-      dasilva.soybean.uniformity R Documentation
-      ========================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of soybean
-         :name: uniformity-trial-of-soybean
+Uniformity trial of soybean in Brazil, 1970.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of soybean in Brazil, 1970.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("dasilva.soybean.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("dasilva.soybean.uniformity")
+A data frame with 1152 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row
 
-      A data frame with 1152 observations on the following 3 variables.
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   yield, grams/plot
 
-      ``col``
-         column
+Details
+~~~~~~~
 
-      ``yield``
-         yield, grams/plot
+Field length: 48 rows \* .6 m = 28.8 m
 
-      .. rubric:: Details
-         :name: details
+Field width: 24 columns \* .6 m = 14.4 m
 
-      Field length: 48 rows \* .6 m = 28.8 m
+Source
+~~~~~~
 
-      Field width: 24 columns \* .6 m = 14.4 m
+Enedino Correa da Silva. (1974). Estudo do tamanho e forma de parcelas
+para experimentos de soja (Plot size and shape for soybean yield
+trials). Pesquisa Agropecuaria Brasileira, Serie Agronomia, 9, 49-59.
+Table 3, page 52-53.
+https://seer.sct.embrapa.br/index.php/pab/article/view/17250
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Enedino Correa da Silva. (1974). Estudo do tamanho e forma de
-      parcelas para experimentos de soja (Plot size and shape for
-      soybean yield trials). Pesquisa Agropecuaria Brasileira, Serie
-      Agronomia, 9, 49-59. Table 3, page 52-53.
-      https://seer.sct.embrapa.br/index.php/pab/article/view/17250
+Humada-Gonzalez, G.G. (2013). Estimação do tamanho otimo de parcela
+experimental em experimento com soja. Dissertation, Universidade Federal
+de Lavras. http://repositorio.ufla.br/jspui/handle/1/744
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Humada-Gonzalez, G.G. (2013). Estimação do tamanho otimo de
-      parcela experimental em experimento com soja. Dissertation,
-      Universidade Federal de Lavras.
-      http://repositorio.ufla.br/jspui/handle/1/744
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(dasilva.soybean.uniformity)
+   dat <- dasilva.soybean.uniformity
 
-         ## Not run: 
+   libs(desplot)
+   desplot(dat, yield ~ col*row,
+           flip=TRUE, aspect=28.8/14.4, 
+           main="dasilva.soybean.uniformity")
+     
 
-         library(agridat)
-         data(dasilva.soybean.uniformity)
-         dat <- dasilva.soybean.uniformity
-
-         libs(desplot)
-         desplot(dat, yield ~ col*row,
-                 flip=TRUE, aspect=28.8/14.4, 
-                 main="dasilva.soybean.uniformity")
-           
-
-         ## End(Not run)
+   ## End(Not run)

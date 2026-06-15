@@ -1,41 +1,37 @@
-.. container::
+============ ===============
+presidential R Documentation
+============ ===============
 
-   .. container::
+Terms of 12 presidents from Eisenhower to Trump
+-----------------------------------------------
 
-      ============ ===============
-      presidential R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Terms of 12 presidents from Eisenhower to Trump
-         :name: terms-of-12-presidents-from-eisenhower-to-trump
+The names of each president, the start and end date of their term, and
+their party of 12 US presidents from Eisenhower to Trump. This data is
+in the public domain.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The names of each president, the start and end date of their term,
-      and their party of 12 US presidents from Eisenhower to Trump. This
-      data is in the public domain.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   presidential
 
-      .. code:: R
+Format
+~~~~~~
 
-         presidential
+A data frame with 12 rows and 4 variables:
 
-      .. rubric:: Format
-         :name: format
+name
+   Last name of president
 
-      A data frame with 12 rows and 4 variables:
+start
+   Presidency start date
 
-      name
-         Last name of president
+end
+   Presidency end date
 
-      start
-         Presidency start date
-
-      end
-         Presidency end date
-
-      party
-         Party of president
+party
+   Party of president

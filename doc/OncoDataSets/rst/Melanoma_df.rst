@@ -1,72 +1,68 @@
-.. container::
+=========== ===============
+Melanoma_df R Documentation
+=========== ===============
 
-   .. container::
+Survival from Malignant Melanoma
+--------------------------------
 
-      =========== ===============
-      Melanoma_df R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Survival from Malignant Melanoma
-         :name: survival-from-malignant-melanoma
+This dataset, Melanoma_df, is a data frame containing information about
+205 patients with malignant melanoma (a type of skin cancer) who
+underwent a radical operation at Odense University Hospital, Denmark,
+between 1962 and 1977. Patients were followed up until the end of 1977.
+By that time, 134 patients were still alive, and 71 had died (57 due to
+cancer and 14 from other causes). This dataset provides detailed
+clinical and demographic information for studying malignant melanoma
+outcomes.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, Melanoma_df, is a data frame containing information
-      about 205 patients with malignant melanoma (a type of skin cancer)
-      who underwent a radical operation at Odense University Hospital,
-      Denmark, between 1962 and 1977. Patients were followed up until
-      the end of 1977. By that time, 134 patients were still alive, and
-      71 had died (57 due to cancer and 14 from other causes). This
-      dataset provides detailed clinical and demographic information for
-      studying malignant melanoma outcomes.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Melanoma_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Melanoma_df)
+A data frame with 205 observations and 7 variables:
 
-      .. rubric:: Format
-         :name: format
+time
+   Follow-up time in days (integer).
 
-      A data frame with 205 observations and 7 variables:
+status
+   Patient's status at the end of the study: 1 = alive, 2 = dead from
+   cancer, 3 = dead from other causes (integer).
 
-      time
-         Follow-up time in days (integer).
+sex
+   Sex of the patient: 1 = male, 2 = female (integer).
 
-      status
-         Patient's status at the end of the study: 1 = alive, 2 = dead
-         from cancer, 3 = dead from other causes (integer).
+age
+   Age of the patient at the time of surgery (integer).
 
-      sex
-         Sex of the patient: 1 = male, 2 = female (integer).
+year
+   Year of surgery (integer).
 
-      age
-         Age of the patient at the time of surgery (integer).
+thickness
+   Tumor thickness in millimeters (numeric).
 
-      year
-         Year of surgery (integer).
+ulcer
+   Presence of ulceration: 1 = no, 2 = yes (integer).
 
-      thickness
-         Tumor thickness in millimeters (numeric).
+Details
+~~~~~~~
 
-      ulcer
-         Presence of ulceration: 1 = no, 2 = yes (integer).
+The dataset name has been kept as 'Melanoma_df' to avoid confusion with
+other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the OncoDataSets package and assists
+users in identifying its specific characteristics. The suffix '\_df'
+indicates that the dataset is a data frame. The original content has not
+been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'Melanoma_df' to avoid confusion
-      with other datasets in the R ecosystem. This naming convention
-      helps distinguish this dataset as part of the OncoDataSets package
-      and assists users in identifying its specific characteristics. The
-      suffix '\_df' indicates that the dataset is a data frame. The
-      original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the MASS package. Original study conducted at
-      Odense University Hospital, Denmark.
+Data taken from the MASS package. Original study conducted at Odense
+University Hospital, Denmark.

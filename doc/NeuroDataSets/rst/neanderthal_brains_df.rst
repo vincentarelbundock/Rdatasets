@@ -1,56 +1,51 @@
-.. container::
+===================== ===============
+neanderthal_brains_df R Documentation
+===================== ===============
 
-   .. container::
+Cranial Capacity in Neanderthals and Modern Humans
+--------------------------------------------------
 
-      ===================== ===============
-      neanderthal_brains_df R Documentation
-      ===================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Cranial Capacity in Neanderthals and Modern Humans
-         :name: cranial-capacity-in-neanderthals-and-modern-humans
+This dataset, neanderthal_brains_df, is a data frame containing
+measurements of brain size (lnbrain) and body mass (lnmass) from 39
+specimens of Neanderthals and early modern humans, identified by
+species.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, neanderthal_brains_df, is a data frame containing
-      measurements of brain size (lnbrain) and body mass (lnmass) from
-      39 specimens of Neanderthals and early modern humans, identified
-      by species.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(neanderthal_brains_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(neanderthal_brains_df)
+A data frame with 39 observations and 3 variables:
 
-      .. rubric:: Format
-         :name: format
+ln.mass
+   Numeric vector representing natural logarithm of body mass
 
-      A data frame with 39 observations and 3 variables:
+ln.brain
+   Numeric vector representing natural logarithm of brain size
 
-      ln.mass
-         Numeric vector representing natural logarithm of body mass
+species
+   Factor indicating species with 2 levels (Neanderthals and early
+   modern humans)
 
-      ln.brain
-         Numeric vector representing natural logarithm of brain size
+Details
+~~~~~~~
 
-      species
-         Factor indicating species with 2 levels (Neanderthals and early
-         modern humans)
+The dataset name has been kept as 'neanderthal_brains_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the NeuroDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'df' indicates that the dataset is a data frame. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'neanderthal_brains_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      NeuroDataSets package and assists users in identifying its
-      specific characteristics. The suffix 'df' indicates that the
-      dataset is a data frame. The original content has not been
-      modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the abd package version 0.2-8
+Data taken from the abd package version 0.2-8

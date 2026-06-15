@@ -1,76 +1,71 @@
-.. container::
+======= ===============
+nihills R Documentation
+======= ===============
 
-   .. container::
+Record times for Northern Ireland mountain running events
+---------------------------------------------------------
 
-      ======= ===============
-      nihills R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Record times for Northern Ireland mountain running
-         events
-         :name: record-times-for-northern-ireland-mountain-running-events
+Data were from the 2007 calendar for the Northern Ireland Mountain
+Running Association.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data were from the 2007 calendar for the Northern Ireland Mountain
-      Running Association.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(nihills)
+   data(lognihills)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(nihills)
-         data(lognihills)
+A data frame with 23 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``dist``
+   distances in miles
 
-      A data frame with 23 observations on the following 4 variables.
+``climb``
+   amount of climb in feet
 
-      ``dist``
-         distances in miles
+``time``
+   record time in hours for males
 
-      ``climb``
-         amount of climb in feet
+``timef``
+   record time in hours for females
 
-      ``time``
-         record time in hours for males
+``logdist``
+   distances, log(miles)
 
-      ``timef``
-         record time in hours for females
+``logclimb``
+   climb, log(feet)
 
-      ``logdist``
-         distances, log(miles)
+``logtime``
+   record time for males, log(hours)
 
-      ``logclimb``
-         climb, log(feet)
+``logtimef``
+   record time for females, log(hours)
 
-      ``logtime``
-         record time for males, log(hours)
+Details
+~~~~~~~
 
-      ``logtimef``
-         record time for females, log(hours)
+These data make an interesting comparison with the dataset ``hills2000``
+in the DAAG package.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      These data make an interesting comparison with the dataset
-      ``hills2000`` in the DAAG package.
+For more recent information, see
+https://www.nimra.org.uk/index.php/fixtures/
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      For more recent information, see
-      https://www.nimra.org.uk/index.php/fixtures/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(nihills)
-         lm(formula = log(time) ~ log(dist) + log(climb), data = nihills)
-         lm(formula = log(time) ~ log(dist) + log(climb/dist), data = nihills)
-         lm(formula = logtime ~ logdist + I(logclimb-logdist), data = lognihills)
+   data(nihills)
+   lm(formula = log(time) ~ log(dist) + log(climb), data = nihills)
+   lm(formula = log(time) ~ log(dist) + log(climb/dist), data = nihills)
+   lm(formula = logtime ~ logdist + I(logclimb-logdist), data = lognihills)

@@ -1,73 +1,69 @@
-.. container::
+=========================== ===============
+strickland.apple.uniformity R Documentation
+=========================== ===============
 
-   .. container::
+Uniformity trial in apple
+-------------------------
 
-      =========================== ===============
-      strickland.apple.uniformity R Documentation
-      =========================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial in apple
-         :name: uniformity-trial-in-apple
+Uniformity trial in apple in Australia
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial in apple in Australia
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("strickland.apple.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("strickland.apple.uniformity")
+A data frame with 198 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row
 
-      A data frame with 198 observations on the following 3 variables.
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   yield per tree, pounds
 
-      ``col``
-         column
+Details
+~~~~~~~
 
-      ``yield``
-         yield per tree, pounds
+Some recently re-worked trees were removed from the data.
 
-      .. rubric:: Details
-         :name: details
+The distance between trees in uncertain, but likely in the range 20-30
+feet.
 
-      Some recently re-worked trees were removed from the data.
+Source
+~~~~~~
 
-      The distance between trees in uncertain, but likely in the range
-      20-30 feet.
+A. G. Strickland (1935). Error in horticultural experiments. Journal of
+Agriculture, Victoria, 33, 408-416.
+https://handle.slv.vic.gov.au/10381/386642
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      A. G. Strickland (1935). Error in horticultural experiments.
-      Journal of Agriculture, Victoria, 33, 408-416.
-      https://handle.slv.vic.gov.au/10381/386642
+None
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+     library(agridat)
+     data(strickland.apple.uniformity)
+     dat <- strickland.apple.uniformity
+     libs(desplot)
+     desplot(dat, yield ~ col*row,
+             main="strickland.apple.uniformity",
+             flip=TRUE, aspect=(18/11))
 
-         ## Not run: 
-
-           library(agridat)
-           data(strickland.apple.uniformity)
-           dat <- strickland.apple.uniformity
-           libs(desplot)
-           desplot(dat, yield ~ col*row,
-                   main="strickland.apple.uniformity",
-                   flip=TRUE, aspect=(18/11))
-
-         ## End(Not run)
+   ## End(Not run)

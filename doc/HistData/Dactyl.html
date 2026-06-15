@@ -16,27 +16,19 @@ function processMathHTML() {
 
 <table style="width: 100%;"><tr><td>Dactyl</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>
-Edgeworth's counts of dactyls in Virgil's Aeneid
-</h2>
+<h2>Edgeworth's counts of dactyls in Virgil's Aeneid</h2>
 
 <h3>Description</h3>
 
-<p>Edgeworth (1885) took the first 75 lines in Book XI of
-Virgil's <em>Aeneid</em> and classified each of the first four &quot;feet&quot; of the line 
-as a dactyl (one long syllable followed by two short ones) or not.
+<p>Edgeworth (1885) took the first 75 lines in Book XI of Virgil's
+<em>Aeneid</em> and classified each of the first four &quot;feet&quot; of the line as a
+dactyl (one long syllable followed by two short ones) or not.
 </p>
 <p>Grouping the lines in blocks of five gave a 4 x 25 table of counts,
 represented here as a data frame with ordered factors, <code>Foot</code> and
-<code>Lines</code>. Edgeworth used this table in what was among the first
-examples of analysis of variance applied to a two-way
-classification.
+<code>Lines</code>. Edgeworth used this table in what was among the first examples
+of analysis of variance applied to a two-way classification.
 </p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data(Dactyl)</code></pre>
 
 
 <h3>Format</h3>
@@ -57,23 +49,23 @@ classification.
 
 <h3>Source</h3>
 
-<p>Stigler, S. (1999)
-<em>Statistics on the Table</em>
-Cambridge, MA: Harvard University Press, table 5.1.
+<p>Stigler, S. (1999) <em>Statistics on the Table</em> Cambridge, MA:
+Harvard University Press, table 5.1.
 </p>
 
 
 <h3>References</h3>
 
-<p>Edgeworth, F. Y. (1885).
-On methods of ascertaining variations in the rate of births, deaths and marriages.
-<em>Journal of the [Royal] Statistical Society</em>, 48, 628-649.
+<p>Edgeworth, F. Y. (1885). On methods of ascertaining variations
+in the rate of births, deaths and marriages. <em>Journal of the Royal
+Statistical Society</em>, 48, 628-649.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(Dactyl)
+<pre><code class='language-R'>
+data(Dactyl)
 
 # display the basic table
 xtabs(count ~ Foot+Lines, data=Dactyl)
@@ -88,6 +80,7 @@ par(op)
 
 # show table as a simple mosaicplot
 mosaicplot(xtabs(count ~ Foot+Lines, data=Dactyl), shade=TRUE)
+
 </code></pre>
 
 </main>

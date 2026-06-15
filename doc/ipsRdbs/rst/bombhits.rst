@@ -1,67 +1,63 @@
-.. container::
+======== ===============
+bombhits R Documentation
+======== ===============
 
-   .. container::
+Number of bomb hits in London during World War II
+-------------------------------------------------
 
-      ======== ===============
-      bombhits R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Number of bomb hits in London during World War II
-         :name: number-of-bomb-hits-in-london-during-world-war-ii
+Number of bomb hits in London during World War II
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Number of bomb hits in London during World War II
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   bombhits
 
-      .. code:: R
+Format
+~~~~~~
 
-         bombhits
+A data frame with two columns and six rows:
 
-      .. rubric:: Format
-         :name: format
+numberhit
+   The number of bomb hits during World War II in each of the 576 areas
+   in London.
 
-      A data frame with two columns and six rows:
+freq
+   Frequency of the number of hits
 
-      numberhit
-         The number of bomb hits during World War II in each of the 576
-         areas in London.
+Source
+~~~~~~
 
-      freq
-         Frequency of the number of hits
+Shaw and Shaw (2019).
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Shaw and Shaw (2019).
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-          summary(bombhits)
-          # Create a vector of data 
-          x <- c(rep(0, 229), rep(1, 211), rep(2, 93), rep(3, 35), rep(4, 7), 5)
-          y <- c(229, 211, 93, 35, 7, 1) # Frequencies 
-          rel_freq <- y/576
-          xbar <- mean(x)
-          pois_prob <- dpois(x=0:5, lambda=xbar)
-          fit_freq <- pois_prob * 576
-           #Check 
-           cbind(x=0:5, obs_freq=y, rel_freq =round(rel_freq, 4),  
-           Poisson_prob=round(pois_prob, 4), fit_freq=round(fit_freq, 1))
-           obs_freq <- y
-           xuniques <- 0:5
-           a <- data.frame(xuniques=0:5, obs_freq =y, fit_freq=fit_freq)
-           barplot(rbind(obs_freq, fit_freq), 
-           args.legend = list(x = "topright"), 
-           xlab="No of bomb hits",  
-           names.arg = xuniques,  beside=TRUE, 
-           col=c("darkblue","red"), 
-           legend =c("Observed", "Fitted"), 
-           main="Observed and Poisson distribution fitted frequencies 
-           for the number of bomb hits in London")
+    summary(bombhits)
+    # Create a vector of data 
+    x <- c(rep(0, 229), rep(1, 211), rep(2, 93), rep(3, 35), rep(4, 7), 5)
+    y <- c(229, 211, 93, 35, 7, 1) # Frequencies 
+    rel_freq <- y/576
+    xbar <- mean(x)
+    pois_prob <- dpois(x=0:5, lambda=xbar)
+    fit_freq <- pois_prob * 576
+     #Check 
+     cbind(x=0:5, obs_freq=y, rel_freq =round(rel_freq, 4),  
+     Poisson_prob=round(pois_prob, 4), fit_freq=round(fit_freq, 1))
+     obs_freq <- y
+     xuniques <- 0:5
+     a <- data.frame(xuniques=0:5, obs_freq =y, fit_freq=fit_freq)
+     barplot(rbind(obs_freq, fit_freq), 
+     args.legend = list(x = "topright"), 
+     xlab="No of bomb hits",  
+     names.arg = xuniques,  beside=TRUE, 
+     col=c("darkblue","red"), 
+     legend =c("Observed", "Fitted"), 
+     main="Observed and Poisson distribution fitted frequencies 
+     for the number of bomb hits in London")

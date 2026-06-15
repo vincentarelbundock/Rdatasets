@@ -33,7 +33,7 @@ Fielding table
 
 <h3>Format</h3>
 
-<p>A data frame with 153656 observations on the following 18 variables.
+<p>A data frame with 174332 observations on the following 18 variables.
 </p>
 
 <dl>
@@ -79,7 +79,7 @@ Fielding table
 
 <h3>Source</h3>
 
-<p>Lahman, S. (2025) Lahman's Baseball Database, 1871-2024, 2025 version, <a href="https://sabr.org/lahman-database/">https://sabr.org/lahman-database/</a>
+<p>Lahman, S. (2026) Lahman's Baseball Database, 1871-2025, 2026 version, <a href="https://sabr.org/lahman-database/">https://sabr.org/lahman-database/</a>
 </p>
 
 
@@ -114,7 +114,7 @@ with(subset(Fielding, playerID == "rosepe01"), xtabs(G ~ POS))
 Fielding %&gt;%
     filter(playerID == "aparilu01") %&gt;% 
     select(G, PO, A, E, DP) %&gt;%
-    summarise_each(funs(sum))
+    summarise(across(everything(), sum))
 
 
 # Top ten 2B/SS in turning DPs

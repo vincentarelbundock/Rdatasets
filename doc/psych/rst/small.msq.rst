@@ -1,91 +1,87 @@
-.. container::
+========= ===============
+small.msq R Documentation
+========= ===============
 
-   .. container::
+A small example data set taken from a larger data set
+-----------------------------------------------------
 
-      ========= ===============
-      small.msq R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: A small example data set taken from a larger data set
-         :name: a-small-example-data-set-taken-from-a-larger-data-set
+A small subset of 200 cases and 14 variables from the msqR data set in
+the psychTools package. Saved here to allow vignettes to work without
+using psychTools
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A small subset of 200 cases and 14 variables from the msqR data
-      set in the psychTools package. Saved here to allow vignettes to
-      work without using psychTools
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("small.msq")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("small.msq")
+A data frame with 200 observations on the following 14 variables.
 
-      .. rubric:: Format
-         :name: format
+``active``
+   a numeric vector
 
-      A data frame with 200 observations on the following 14 variables.
+``alert``
+   a numeric vector
 
-      ``active``
-         a numeric vector
+``aroused``
+   a numeric vector
 
-      ``alert``
-         a numeric vector
+``sleepy``
+   a numeric vector
 
-      ``aroused``
-         a numeric vector
+``tired``
+   a numeric vector
 
-      ``sleepy``
-         a numeric vector
+``drowsy``
+   a numeric vector
 
-      ``tired``
-         a numeric vector
+``anxious``
+   a numeric vector
 
-      ``drowsy``
-         a numeric vector
+``jittery``
+   a numeric vector
 
-      ``anxious``
-         a numeric vector
+``nervous``
+   a numeric vector
 
-      ``jittery``
-         a numeric vector
+``calm``
+   a numeric vector
 
-      ``nervous``
-         a numeric vector
+``relaxed``
+   a numeric vector
 
-      ``calm``
-         a numeric vector
+``at.ease``
+   a numeric vector
 
-      ``relaxed``
-         a numeric vector
+``gender``
+   a numeric vector
 
-      ``at.ease``
-         a numeric vector
+``drug``
+   a numeric vector
 
-      ``gender``
-         a numeric vector
+Details
+~~~~~~~
 
-      ``drug``
-         a numeric vector
+See the detailed discussion of the msqR in the psychTools package
 
-      .. rubric:: Details
-         :name: details
+References
+~~~~~~~~~~
 
-      See the detailed discussion of the msqR in the psychTools package
+Revelle, W. and Anderson, K.J. (1998) Personality, motivation and
+cognitive performance: Final report to the Army Research Institute on
+contract MDA 903-93-K-0008.
+(https://www.personality-project.org/revelle/publications/ra.ari.98.pdf).
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Revelle, W. and Anderson, K.J. (1998) Personality, motivation and
-      cognitive performance: Final report to the Army Research Institute
-      on contract MDA 903-93-K-0008.
-      (https://www.personality-project.org/revelle/publications/ra.ari.98.pdf).
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(small.msq)
+   data(small.msq)

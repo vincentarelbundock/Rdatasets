@@ -1,91 +1,86 @@
-.. container::
+=========== ===============
+vietnam_ind R Documentation
+=========== ===============
 
-   .. container::
+Vietnam health care use (individual level)
+------------------------------------------
 
-      =========== ===============
-      vietnam_ind R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Vietnam health care use (individual level)
-         :name: vietnam-health-care-use-individual-level
+Data from the World Bank's Vietnam Living Standards Survey of 1997-1998
+at the individual level. Sample extract by Cameron and Trivedi (2005).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data from the World Bank's Vietnam Living Standards Survey of
-      1997-1998 at the individual level. Sample extract by Cameron and
-      Trivedi (2005).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   vietnam_ind
 
-      .. code:: R
+Format
+~~~~~~
 
-         vietnam_ind
+A data frame with 27766 observations and 12 variables:
 
-      .. rubric:: Format
-         :name: format
+educ
+   Completed diploma level
 
-      A data frame with 27766 observations and 12 variables:
+sex
+   = 1 if respondent is male
 
-      educ
-         Completed diploma level
+age
+   age in years
 
-      sex
-         = 1 if respondent is male
+married
+   = 1 for married person
 
-      age
-         age in years
+illness
+   number of illnesses experienced in past 12 months
 
-      married
-         = 1 for married person
+injury
+   = 1 if injured during survey period
 
-      illness
-         number of illnesses experienced in past 12 months
+illdays
+   number of illness days
 
-      injury
-         = 1 if injured during survey period
+actdays
+   number od days of limited activity
 
-      illdays
-         number of illness days
+pharvis
+   number of direct pharmacy visits
 
-      actdays
-         number od days of limited activity
+insurance
+   = 1 if respondent has health insurance coverage
 
-      pharvis
-         number of direct pharmacy visits
+lnhhexp
+   total household expenditure, ln
 
-      insurance
-         = 1 if respondent has health insurance coverage
+commune
+   commune code
 
-      lnhhexp
-         total household expenditure, ln
+Section in Text
+~~~~~~~~~~~~~~~
 
-      commune
-         commune code
+Section
 
-      .. rubric:: Section in Text
-         :name: section-in-text
+Source
+~~~~~~
 
-      Section
+http://cameron.econ.ucdavis.edu/mmabook/mmadata.html
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      http://cameron.econ.ucdavis.edu/mmabook/mmadata.html
+Cameron, A. and Trivedi, P. (2005), "Microeconometrics: Methods and
+Applications," Cambridge University Press, New York.
 
-      .. rubric:: References
-         :name: references
+World Bank Living Standards Survey 1997-1998 Vietnam.
+https://microdata.worldbank.org/index.php/catalog/2694
 
-      Cameron, A. and Trivedi, P. (2005), "Microeconometrics: Methods
-      and Applications," Cambridge University Press, New York.
+Examples
+~~~~~~~~
 
-      World Bank Living Standards Survey 1997-1998 Vietnam.
-      https://microdata.worldbank.org/index.php/catalog/2694
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         summary(vietnam_ind)
+   summary(vietnam_ind)

@@ -1,71 +1,66 @@
-.. container::
+=========== ===============
+Pima_tr2_df R Documentation
+=========== ===============
 
-   .. container::
+Diabetes in Pima Indian Women
+-----------------------------
 
-      =========== ===============
-      Pima_tr2_df R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Diabetes in Pima Indian Women
-         :name: diabetes-in-pima-indian-women
+The dataset name has been changed to 'Pima_tr2_df' to avoid confusion
+with other datasets from packages in the R ecosystem and to follow the
+naming conventions of the 'MedDataSets' package. The suffix '\_df'
+indicates that this dataset is a data frame, helping to distinguish it
+from other datasets within the package and from those in the broader R
+ecosystem. The original content of the dataset has not been modified in
+any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'Pima_tr2_df' to avoid
-      confusion with other datasets from packages in the R ecosystem and
-      to follow the naming conventions of the 'MedDataSets' package. The
-      suffix '\_df' indicates that this dataset is a data frame, helping
-      to distinguish it from other datasets within the package and from
-      those in the broader R ecosystem. The original content of the
-      dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Pima_tr2_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Pima_tr2_df)
+A data frame with 300 observations and 8 variables:
 
-      .. rubric:: Format
-         :name: format
+npreg
+   An integer representing the number of pregnancies.
 
-      A data frame with 300 observations and 8 variables:
+glu
+   An integer indicating the plasma glucose concentration (mg/dL) 2
+   hours after an oral glucose tolerance test.
 
-      npreg
-         An integer representing the number of pregnancies.
+bp
+   An integer representing the diastolic blood pressure (mm Hg).
 
-      glu
-         An integer indicating the plasma glucose concentration (mg/dL)
-         2 hours after an oral glucose tolerance test.
+skin
+   An integer indicating the skin thickness (mm).
 
-      bp
-         An integer representing the diastolic blood pressure (mm Hg).
+bmi
+   A numeric value indicating the body mass index (BMI).
 
-      skin
-         An integer indicating the skin thickness (mm).
+ped
+   A numeric value representing the diabetes pedigree function.
 
-      bmi
-         A numeric value indicating the body mass index (BMI).
+age
+   An integer indicating the age of the individual (in years).
 
-      ped
-         A numeric value representing the diabetes pedigree function.
+type
+   A factor indicating whether the individual has diabetes (1) or not
+   (0).
 
-      age
-         An integer indicating the age of the individual (in years).
+Details
+~~~~~~~
 
-      type
-         A factor indicating whether the individual has diabetes (1) or
-         not (0).
+This dataset contains medical examination data for Pima Indian women,
+including various health metrics that may be related to diabetes.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains medical examination data for Pima Indian
-      women, including various health metrics that may be related to
-      diabetes.
-
-      .. rubric:: Source
-         :name: source
-
-      Data collected from medical examinations of Pima Indian women.
+Data collected from medical examinations of Pima Indian women.

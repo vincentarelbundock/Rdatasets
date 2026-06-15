@@ -1,22 +1,18 @@
-.. container::
+====== ===============
+min.e0 R Documentation
+====== ===============
 
-   .. container::
+internal min.e0
+---------------
 
-      ====== ===============
-      min.e0 R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: internal min.e0
-         :name: internal-min.e0
+intended for internal use only
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      intended for internal use only
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
-
-      .. code:: R
-
-         min.e0
+   min.e0

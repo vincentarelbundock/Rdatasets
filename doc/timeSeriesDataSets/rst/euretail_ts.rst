@@ -1,43 +1,38 @@
-.. container::
+=========== ===============
+euretail_ts R Documentation
+=========== ===============
 
-   .. container::
+Quarterly Retail Trade in the Euro Area.
+----------------------------------------
 
-      =========== ===============
-      euretail_ts R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Quarterly Retail Trade in the Euro Area.
-         :name: quarterly-retail-trade-in-the-euro-area.
+The dataset name has been changed to 'euretail_ts' to avoid confusion
+with other packages in the R ecosystem from which datasets have been
+sourced. The suffix 'ts' indicates that this dataset is a time series
+object. This naming convention helps distinguish this dataset as part of
+the 'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'euretail_ts' to avoid
-      confusion with other packages in the R ecosystem from which
-      datasets have been sourced. The suffix 'ts' indicates that this
-      dataset is a time series object. This naming convention helps
-      distinguish this dataset as part of the 'timeseriesdatasets'
-      package and assists users in identifying its specific
-      characteristics. The original content of the dataset has not been
-      modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(euretail_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(euretail_ts)
+A time series object with 64 observations:
 
-      .. rubric:: Format
-         :name: format
+euretail
+   A numeric vector representing the quarterly retail trade in the Euro
+   area, measured in millions of euros.
 
-      A time series object with 64 observations:
+Source
+~~~~~~
 
-      euretail
-         A numeric vector representing the quarterly retail trade in the
-         Euro area, measured in millions of euros.
-
-      .. rubric:: Source
-         :name: source
-
-      Data provided by Eurostat.
+Data provided by Eurostat.

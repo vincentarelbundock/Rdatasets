@@ -32,11 +32,13 @@ function processMathHTML() {
 
 <h3>Format</h3>
 
-<p>A data frame with 4530 observations on the following 4 variables.
+<p>A data frame with 4264 observations on the following 6 variables.
 </p>
 
 <dl>
 <dt><code>country</code></dt><dd><p>a character vector for the country</p>
+</dd>
+<dt><code>iso2c</code></dt><dd><p>a two-character vector of the country's ISO code</p>
 </dd>
 <dt><code>member</code></dt><dd><p>a numeric vector indicating whether the importer is or is not a member of the International Coffee Organization</p>
 </dd>
@@ -44,18 +46,34 @@ function processMathHTML() {
 </dd>
 <dt><code>value</code></dt><dd><p>a numeric vector for the coffee imports for all select importing countries (in thousand 60-kg bags)</p>
 </dd>
+<dt><code>pop</code></dt><dd><p>a numeric vector for the population size, in units of humans</p>
+</dd>
 </dl>
 
 
 
 <h3>Details</h3>
 
-<p>Data come from the International Coffee Organization, of which I
-feel I should be a member.
+<p>Coffee consumption data come from the International Coffee Organization, of
+which I feel I should be a member. Population data come from the UN Population
+Division. Observations for Yugoslavia in 1990 and 1991 are imputed manually.
+The observation for 1990 comes from a UN Population Division report. The 1991
+observation comes from the Yugoslavian census.
 </p>
-<p>Observations for the People's Republic of China are removed because those can
-be obtained by adding together the values for &quot;Macao&quot;, &quot;Hong Kong&quot;, and
-&quot;China (Mainland)&quot;.
+<p>The membership variable is agnostic to when a state became a member.
+</p>
+<p>Belgium and Luxembourg are one reporting unit from 1990 to 1998. They are
+disaggregated here for those years. Each year is weighted by the relative
+proportion of each state's population. In practice, that means Belgium is
+getting about 95% of the value for those years with Belgium getting the
+remaining 5% or so.
+</p>
+<p>Observations for the People's Republic of China are broken into components of
+China (Mainland), Hong Kong, and Macao. The consumption data for the People's
+Republic of China are simply the sum of the <code>value</code> variable for those three
+observations in a given year. The population variable is not; it codes the
+entire of Chinese population (including Hong Kong and Macao). Use with that
+in mind.
 </p>
 <p>The user may want to be mindful about when 0s in the value data are actually
 communicating that the entry did not exist at the time, or no longer exists.

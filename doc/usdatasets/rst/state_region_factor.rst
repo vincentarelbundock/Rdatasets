@@ -1,49 +1,44 @@
-.. container::
+=================== ===============
+state_region_factor R Documentation
+=================== ===============
 
-   .. container::
+US State Facts and Figures - US State Regions
+---------------------------------------------
 
-      =================== ===============
-      state_region_factor R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: US State Facts and Figures - US State Regions
-         :name: us-state-facts-and-figures---us-state-regions
+The dataset name has been changed to 'state_region_factor' to avoid
+confusion with other packages in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a factor variable representing U.S. state regions.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'state_region_factor' to
-      avoid confusion with other packages in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a factor variable
-      representing U.S. state regions.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(state_region_factor)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(state_region_factor)
+A factor variable with 50 observations, representing the region of each
+U.S. state. The regions are classified into four levels:
 
-      .. rubric:: Format
-         :name: format
+"Northeast"
+   States located in the Northeast region.
 
-      A factor variable with 50 observations, representing the region of
-      each U.S. state. The regions are classified into four levels:
+"South"
+   States located in the Southern region.
 
-      "Northeast"
-         States located in the Northeast region.
+"North Central"
+   States located in the North Central region.
 
-      "South"
-         States located in the Southern region.
+"West"
+   States located in the Western region.
 
-      "North Central"
-         States located in the North Central region.
+Source
+~~~~~~
 
-      "West"
-         States located in the Western region.
-
-      .. rubric:: Source
-         :name: source
-
-      U.S. Census Bureau.
+U.S. Census Bureau.

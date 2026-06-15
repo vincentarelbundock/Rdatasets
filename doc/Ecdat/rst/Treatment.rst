@@ -1,87 +1,82 @@
-.. container::
+========= ===============
+Treatment R Documentation
+========= ===============
 
-   .. container::
+Evaluating Treatment Effect of Training on Earnings
+---------------------------------------------------
 
-      ========= ===============
-      Treatment R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Evaluating Treatment Effect of Training on Earnings
-         :name: evaluating-treatment-effect-of-training-on-earnings
+a cross-section from 1974
 
-      .. rubric:: Description
-         :name: description
+*number of observations* : 2675
 
-      a cross-section from 1974
+*country* : United States
 
-      *number of observations* : 2675
+Usage
+~~~~~
 
-      *country* : United States
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Treatment)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Treatment)
+A dataframe containing :
 
-      .. rubric:: Format
-         :name: format
+treat
+   treated ?
 
-      A dataframe containing :
+age
+   age
 
-      treat
-         treated ?
+educ
+   education in years
 
-      age
-         age
+ethn
+   a factor with levels ("``other``", "``black``", "``hispanic``")
 
-      educ
-         education in years
+married
+   married ?
 
-      ethn
-         a factor with levels ("``other``", "``black``", "``hispanic``")
+re74
+   real annual earnings in 1974 (pre-treatment)
 
-      married
-         married ?
+re75
+   real annual earnings in 1975 (pre-treatment)
 
-      re74
-         real annual earnings in 1974 (pre-treatment)
+re78
+   real annual earnings in 1978 (post-treatment)
 
-      re75
-         real annual earnings in 1975 (pre-treatment)
+u74
+   unemployed in 1974 ?
 
-      re78
-         real annual earnings in 1978 (post-treatment)
+u75
+   unemployed in 1975 ?
 
-      u74
-         unemployed in 1974 ?
+Source
+~~~~~~
 
-      u75
-         unemployed in 1975 ?
+Lalonde, R. (1986) “Evaluating the Econometric Evaluations of Training
+Programs with Experimental Data”, *American Economic Review*, 604–620.
 
-      .. rubric:: Source
-         :name: source
+Dehejia, R.H. and S. Wahba (1999) “Causal Effects in Nonexperimental
+Studies: reevaluating the Evaluation of Training Programs”, *JASA*,
+1053–1062.
 
-      Lalonde, R. (1986) “Evaluating the Econometric Evaluations of
-      Training Programs with Experimental Data”, *American Economic
-      Review*, 604–620.
+Dehejia, R.H. and S. Wahba (2002) “Propensity-score Matching Methods for
+Nonexperimental Causal Studies”, *Restat*, 151–161.
 
-      Dehejia, R.H. and S. Wahba (1999) “Causal Effects in
-      Nonexperimental Studies: reevaluating the Evaluation of Training
-      Programs”, *JASA*, 1053–1062.
+References
+~~~~~~~~~~
 
-      Dehejia, R.H. and S. Wahba (2002) “Propensity-score Matching
-      Methods for Nonexperimental Causal Studies”, *Restat*, 151–161.
+Cameron, A.C. and P.K. Trivedi (2005) *Microeconometrics : methods and
+applications*, Cambridge, pp. 889–95.
 
-      .. rubric:: References
-         :name: references
+See Also
+~~~~~~~~
 
-      Cameron, A.C. and P.K. Trivedi (2005) *Microeconometrics : methods
-      and applications*, Cambridge, pp. 889–95.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``RetSchool``, ``Index.Source``, ``Index.Economics``,
-      ``Index.Econometrics``, ``Index.Observations``
+``RetSchool``, ``Index.Source``, ``Index.Economics``,
+``Index.Econometrics``, ``Index.Observations``

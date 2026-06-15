@@ -1,72 +1,69 @@
-.. container::
+============ ===============
+linder.wheat R Documentation
+============ ===============
 
-   .. container::
+Multi-environment trial of wheat in Switzerland
+-----------------------------------------------
 
-      ============ ===============
-      linder.wheat R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Multi-environment trial of wheat in Switzerland
-         :name: multi-environment-trial-of-wheat-in-switzerland
+Multi-environment trial of wheat in Switzerland
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Multi-environment trial of wheat in Switzerland
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("linder.wheat")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("linder.wheat")
+A data frame with 252 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``env``
+   environment
 
-      A data frame with 252 observations on the following 4 variables.
+``block``
+   block
 
-      ``env``
-         environment
+``gen``
+   genotype
 
-      ``block``
-         block
+``yield``
+   yield, in 10 kg/ha
 
-      ``gen``
-         genotype
+Details
+~~~~~~~
 
-      ``yield``
-         yield, in 10 kg/ha
+An experiment of 9 varieties of wheat in 7 localities in Switzerland in
+1960, RCB design.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      An experiment of 9 varieties of wheat in 7 localities in
-      Switzerland in 1960, RCB design.
+Arthur Linder (1960). Design and Analysis of Experiments, notes on
+lectures held during the fall semester 1963 at the Statistics
+Department, University of North Carolina, page 160.
+https://www.stat.ncsu.edu/information/library/mimeo.archive/ISMS_1964_398-A.pdf
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Arthur Linder (1960). Design and Analysis of Experiments, notes on
-      lectures held during the fall semester 1963 at the Statistics
-      Department, University of North Carolina, page 160.
-      https://www.stat.ncsu.edu/information/library/mimeo.archive/ISMS_1964_398-A.pdf
+None.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   library(agridat)
+   data(linder.wheat)
+   dat <- linder.wheat
 
-         library(agridat)
-         data(linder.wheat)
-         dat <- linder.wheat
-
-         libs(gge)
-         dat <- transform(dat, eb=paste0(env,block))
-         m1 <- gge(dat, yield~gen*eb, env.group=env)
-         biplot(m1, main="linder.wheat")
+   libs(gge)
+   dat <- transform(dat, eb=paste0(env,block))
+   m1 <- gge(dat, yield~gen*eb, env.group=env)
+   biplot(m1, main="linder.wheat")

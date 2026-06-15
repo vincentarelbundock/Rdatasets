@@ -1,203 +1,195 @@
-.. container::
+============== ===============
+food_world_cup R Documentation
+============== ===============
 
-   .. container::
+The FiveThirtyEight International Food Association's 2014 World Cup
+-------------------------------------------------------------------
 
-      ============== ===============
-      food_world_cup R Documentation
-      ============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The FiveThirtyEight International Food Association's
-         2014 World Cup
-         :name: the-fivethirtyeight-international-food-associations-2014-world-cup
+The raw data behind the story "The FiveThirtyEight International Food
+Association's 2014 World Cup"
+https://fivethirtyeight.com/features/the-fivethirtyeight-international-food-associations-2014-world-cup/.
+For all the countries below, the response to the following question is
+presented: "Please rate how much you like the traditional cuisine of X"
 
-      .. rubric:: Description
-         :name: description
+- 5: I love this country's traditional cuisine. I think it's one of the
+  best in the world.
 
-      The raw data behind the story "The FiveThirtyEight International
-      Food Association's 2014 World Cup"
-      https://fivethirtyeight.com/features/the-fivethirtyeight-international-food-associations-2014-world-cup/.
-      For all the countries below, the response to the following
-      question is presented: "Please rate how much you like the
-      traditional cuisine of X"
+- 4: I like this country's traditional cuisine. I think it's
+  considerably above average.
 
-      -  5: I love this country's traditional cuisine. I think it's one
-         of the best in the world.
+- 3: I'm OK with this county's traditional cuisine. I think it's about
+  average.
 
-      -  4: I like this country's traditional cuisine. I think it's
-         considerably above average.
+- 2: I dislike this country's traditional cuisine. I think it's
+  considerably below average.
 
-      -  3: I'm OK with this county's traditional cuisine. I think it's
-         about average.
+- 1: I hate this country's traditional cuisine. I think it's one of the
+  worst in the world.
 
-      -  2: I dislike this country's traditional cuisine. I think it's
-         considerably below average.
+- N/A: I'm unfamiliar with this country's traditional cuisine.
 
-      -  1: I hate this country's traditional cuisine. I think it's one
-         of the worst in the world.
+Usage
+~~~~~
 
-      -  N/A: I'm unfamiliar with this country's traditional cuisine.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   food_world_cup
 
-      .. code:: R
+Format
+~~~~~~
 
-         food_world_cup
+A data frame with 1373 rows representing respondents and 48 variables:
 
-      .. rubric:: Format
-         :name: format
+respondent_id
+   Respondent ID
 
-      A data frame with 1373 rows representing respondents and 48
-      variables:
+knowledge
+   Generally speaking, how would you rate your level of knowledge of
+   cuisines from different parts of the world?
 
-      respondent_id
-         Respondent ID
+interest
+   How much, if at all, are you interested in cuisines from different
+   parts of the world?
 
-      knowledge
-         Generally speaking, how would you rate your level of knowledge
-         of cuisines from different parts of the world?
+gender
+   Gender
 
-      interest
-         How much, if at all, are you interested in cuisines from
-         different parts of the world?
+age
+   Age
 
-      gender
-         Gender
+household_income
+   Household income bracket
 
-      age
-         Age
+education
+   Education Level
 
-      household_income
-         Household income bracket
+location
+   Location (census region)
 
-      education
-         Education Level
+algeria
+   Cuisine of Algeria
 
-      location
-         Location (census region)
+argentina
+   Cuisine of Argentina
 
-      algeria
-         Cuisine of Algeria
+australia
+   Cuisine of Australia
 
-      argentina
-         Cuisine of Argentina
+belgium
+   Cuisine of Belgium
 
-      australia
-         Cuisine of Australia
+bosnia_and_herzegovina
+   Cuisine of Bosnia & Herzegovina
 
-      belgium
-         Cuisine of Belgium
+brazil
+   Cuisine of Brazil
 
-      bosnia_and_herzegovina
-         Cuisine of Bosnia & Herzegovina
+cameroon
+   Cuisine of Cameroon
 
-      brazil
-         Cuisine of Brazil
+chile
+   Cuisine of Chile
 
-      cameroon
-         Cuisine of Cameroon
+china
+   Cuisine of China
 
-      chile
-         Cuisine of Chile
+colombia
+   Cuisine of Colombia
 
-      china
-         Cuisine of China
+costa_rica
+   Cuisine of Costa Rica
 
-      colombia
-         Cuisine of Colombia
+croatia
+   Cuisine of Croatia
 
-      costa_rica
-         Cuisine of Costa Rica
+cuba
+   Cuisine of Cuba
 
-      croatia
-         Cuisine of Croatia
+ecuador
+   Cuisine of Ecuador
 
-      cuba
-         Cuisine of Cuba
+england
+   Cuisine of England
 
-      ecuador
-         Cuisine of Ecuador
+ethiopia
+   Cuisine of Ethiopia
 
-      england
-         Cuisine of England
+france
+   Cuisine of France
 
-      ethiopia
-         Cuisine of Ethiopia
+germany
+   Cuisine of Germany
 
-      france
-         Cuisine of France
+ghana
+   Cuisine of Ghana
 
-      germany
-         Cuisine of Germany
+greece
+   Cuisine of Greece
 
-      ghana
-         Cuisine of Ghana
+honduras
+   Cuisine of Honduras
 
-      greece
-         Cuisine of Greece
+india
+   Cuisine of India
 
-      honduras
-         Cuisine of Honduras
+iran
+   Cuisine of Iran
 
-      india
-         Cuisine of India
+ireland
+   Cuisine of Ireland
 
-      iran
-         Cuisine of Iran
+italy
+   Cuisine of Italy
 
-      ireland
-         Cuisine of Ireland
+ivory_coast
+   Cuisine of Ivory Coast
 
-      italy
-         Cuisine of Italy
+japan
+   Cuisine of Japan
 
-      ivory_coast
-         Cuisine of Ivory Coast
+mexico
+   Cuisine of Mexico
 
-      japan
-         Cuisine of Japan
+nigeria
+   Cuisine of Nigeria
 
-      mexico
-         Cuisine of Mexico
+portugal
+   Cuisine of Portugal
 
-      nigeria
-         Cuisine of Nigeria
+russia
+   Cuisine of Russia
 
-      portugal
-         Cuisine of Portugal
+south_korea
+   Cuisine of South Korea
 
-      russia
-         Cuisine of Russia
+spain
+   Cuisine of Spain
 
-      south_korea
-         Cuisine of South Korea
+switzerland
+   Cuisine of Switzerland
 
-      spain
-         Cuisine of Spain
+thailand
+   Cuisine of Thailand
 
-      switzerland
-         Cuisine of Switzerland
+the_netherlands
+   Cuisine of the Netherlands
 
-      thailand
-         Cuisine of Thailand
+turkey
+   Cuisine of Turkey
 
-      the_netherlands
-         Cuisine of the Netherlands
+united_states
+   Cuisine of the United States
 
-      turkey
-         Cuisine of Turkey
+uruguay
+   Cuisine of Uruguay
 
-      united_states
-         Cuisine of the United States
+vietnam
+   Cuisine of Vietnam
 
-      uruguay
-         Cuisine of Uruguay
+See Also
+~~~~~~~~
 
-      vietnam
-         Cuisine of Vietnam
-
-      .. rubric:: See Also
-         :name: see-also
-
-      See
-      https://github.com/fivethirtyeight/data/tree/master/food-world-cup
+See https://github.com/fivethirtyeight/data/tree/master/food-world-cup

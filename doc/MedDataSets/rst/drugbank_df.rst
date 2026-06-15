@@ -1,52 +1,48 @@
-.. container::
+=========== ===============
+drugbank_df R Documentation
+=========== ===============
 
-   .. container::
+Relationship Between Gene and Disease
+-------------------------------------
 
-      =========== ===============
-      drugbank_df R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Relationship Between Gene and Disease
-         :name: relationship-between-gene-and-disease
+The dataset name has been changed to 'drugbank_df' to avoid confusion
+with other datasets from packages in the R ecosystem and to follow the
+naming conventions of the 'MedDataSets' package. The suffix '\_df'
+indicates that this dataset is a data frame, helping to distinguish it
+from other datasets within the package and from those in the broader R
+ecosystem. The original content of the dataset has not been modified in
+any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'drugbank_df' to avoid
-      confusion with other datasets from packages in the R ecosystem and
-      to follow the naming conventions of the 'MedDataSets' package. The
-      suffix '\_df' indicates that this dataset is a data frame, helping
-      to distinguish it from other datasets within the package and from
-      those in the broader R ecosystem. The original content of the
-      dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(drugbank_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(drugbank_df)
+A data frame with 27,728 observations and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+gene
+   Gene associated with the disease (factor).
 
-      A data frame with 27,728 observations and 2 variables:
+disease
+   Disease associated with the gene (factor).
 
-      gene
-         Gene associated with the disease (factor).
+Details
+~~~~~~~
 
-      disease
-         Disease associated with the gene (factor).
+This dataset contains information about the relationships between genes
+and diseases, providing insights into how specific genes may be
+associated with various diseases.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains information about the relationships between
-      genes and diseases, providing insights into how specific genes may
-      be associated with various diseases.
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset is derived from drug interaction databases and
-      gene-disease relationships.
+The dataset is derived from drug interaction databases and gene-disease
+relationships.

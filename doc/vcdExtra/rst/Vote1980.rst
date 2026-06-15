@@ -1,77 +1,65 @@
-.. container::
+======== ===============
+Vote1980 R Documentation
+======== ===============
 
-   .. container::
+Race and Politics in the 1980 Presidential Vote
+-----------------------------------------------
 
-      ======== ===============
-      Vote1980 R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Race and Politics in the 1980 Presidential Vote
-         :name: race-and-politics-in-the-1980-presidential-vote
+Data from the 1982 General Social Survey on votes in the 1980 U.S.
+presidential election in relation to race and political conservatism.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Data from the 1982 General Social Survey on votes in the 1980 U.S.
-      presidential election in relation to race and political
-      conservatism.
+A frequency data frame representing a 2 x 7 x 2 table, with 28
+observations on the following 4 variables.
 
-      .. rubric:: Usage
-         :name: usage
+``race``
+   a factor with levels ``NonWhite`` ``White``
 
-      .. code:: R
+``conservatism``
+   a factor with levels ``1`` ``2`` ``3`` ``4`` ``5`` ``6`` ``7``,
+   ``1``\ =most liberal, ``7``\ =most conservative
 
-         data(Vote1980)
+``votefor``
+   a factor with levels ``Carter`` ``Reagan``; ``Carter``\ represents
+   Jimmy Carter or other.
 
-      .. rubric:: Format
-         :name: format
+``Freq``
+   a numeric vector
 
-      A frequency data frame representing a 2 x 7 x 2 table, with 28
-      observations on the following 4 variables.
+Details
+~~~~~~~
 
-      ``race``
-         a factor with levels ``NonWhite`` ``White``
+The data contains a number of sampling zeros in the frequencies of
+NonWhites voting for Ronald Reagan.
 
-      ``conservatism``
-         a factor with levels ``1`` ``2`` ``3`` ``4`` ``5`` ``6`` ``7``,
-         ``1``\ =most liberal, ``7``\ =most conservative
+Source
+~~~~~~
 
-      ``votefor``
-         a factor with levels ``Carter`` ``Reagan``; ``Carter``
-         represents Jimmy Carter or other.
+Clogg, C. & Shockey, J. W. (1988). In Nesselroade, J. R. & Cattell, R.
+B. (ed.) Multivariate Analysis of Discrete Data, *Handbook of
+Multivariate Experimental Psychology*, New York: Plenum Press.
 
-      ``Freq``
-         a numeric vector
+References
+~~~~~~~~~~
 
-      .. rubric:: Details
-         :name: details
+Agresti, A. (1990) *Categorical Data Analysis*, Table 4.12 New York:
+Wiley-Interscience.
 
-      The data contains a number of sampling zeros in the frequencies of
-      NonWhites voting for Ronald Reagan.
+Friendly, M. (2000) *Visualizing Categorical Data*, Example 7.5 Cary,
+NC: SAS Institute.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Clogg, C. & Shockey, J. W. (1988). In Nesselroade, J. R. &
-      Cattell, R. B. (ed.) Multivariate Analysis of Discrete Data,
-      *Handbook of Multivariate Experimental Psychology*, New York:
-      Plenum Press.
+.. code:: R
 
-      .. rubric:: References
-         :name: references
 
-      Agresti, A. (1990) *Categorical Data Analysis*, Table 4.12 New
-      York: Wiley-Interscience.
-
-      Friendly, M. (2000) *Visualizing Categorical Data*, Example 7.5
-      Cary, NC: SAS Institute.
-
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(Vote1980)
-         fourfold(xtabs(Freq ~ race + votefor + conservatism, 
-           data=Vote1980), 
-           mfrow=c(2,4))
+   data(Vote1980)
+   fourfold(xtabs(Freq ~ race + votefor + conservatism,
+     data=Vote1980),
+     mfrow=c(2,4))

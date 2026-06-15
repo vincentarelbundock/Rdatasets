@@ -1,59 +1,54 @@
-.. container::
+========== ===============
+census2000 R Documentation
+========== ===============
 
-   .. container::
+census2000
+----------
 
-      ========== ===============
-      census2000 R Documentation
-      ========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: census2000
-         :name: census2000
+Wooldridge Source: Obtained from the United States Census Bureau by
+Professor Alberto Abadie of the Harvard Kennedy School of Government.
+Professor Abadie kindly provided the data. Data loads lazily.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Wooldridge Source: Obtained from the United States Census Bureau
-      by Professor Alberto Abadie of the Harvard Kennedy School of
-      Government. Professor Abadie kindly provided the data. Data loads
-      lazily.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data('census2000')
 
-      .. code:: R
+Format
+~~~~~~
 
-         data('census2000')
+A data.frame with 29501 observations on 6 variables:
 
-      .. rubric:: Format
-         :name: format
+- **state:** State (ICPSR code)
 
-      A data.frame with 29501 observations on 6 variables:
+- **puma:** Public Use Microdata Area
 
-      -  **state:** State (ICPSR code)
+- **educ:** educational attainment
 
-      -  **puma:** Public Use Microdata Area
+- **lweekinc:** log(weekly income)
 
-      -  **educ:** educational attainment
+- **exper:** years workforce experience
 
-      -  **lweekinc:** log(weekly income)
+- **expersq:** exper^2
 
-      -  **exper:** years workforce experience
+Used in Text
+~~~~~~~~~~~~
 
-      -  **expersq:** exper^2
+pages 452-453
 
-      .. rubric:: Used in Text
-         :name: used-in-text
+Source
+~~~~~~
 
-      pages 452-453
+http://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      http://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-          str(census2000)
+    str(census2000)

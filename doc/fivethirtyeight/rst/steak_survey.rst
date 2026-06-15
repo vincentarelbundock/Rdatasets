@@ -1,80 +1,74 @@
-.. container::
+============ ===============
+steak_survey R Documentation
+============ ===============
 
-   .. container::
+How Americans Like Their Steak
+------------------------------
 
-      ============ ===============
-      steak_survey R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: How Americans Like Their Steak
-         :name: how-americans-like-their-steak
+The raw data behind the story "How Americans Like Their Steak"
+https://fivethirtyeight.com/features/how-americans-like-their-steak/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "How Americans Like Their Steak"
-      https://fivethirtyeight.com/features/how-americans-like-their-steak/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   steak_survey
 
-      .. code:: R
+Format
+~~~~~~
 
-         steak_survey
+A data frame with 550 rows representing respondents and 15 variables:
 
-      .. rubric:: Format
-         :name: format
+respondent_id
+   Respondent ID
 
-      A data frame with 550 rows representing respondents and 15
-      variables:
+lottery_a
+   not sure
 
-      respondent_id
-         Respondent ID
+smoke
+   Is respondent a smoker?
 
-      lottery_a
-         not sure
+alcohol
+   Is respondent a drinker?
 
-      smoke
-         Is respondent a smoker?
+gamble
+   Is respondent a gambler?
 
-      alcohol
-         Is respondent a drinker?
+skydiving
+   Is respondent a skydiver?
 
-      gamble
-         Is respondent a gambler?
+speed
+   not sure
 
-      skydiving
-         Is respondent a skydiver?
+cheated
+   not sure
 
-      speed
-         not sure
+steak
+   not sure
 
-      cheated
-         not sure
+steak_prep
+   Preferred steak preparation
 
-      steak
-         not sure
+female
+   Is respondent female?
 
-      steak_prep
-         Preferred steak preparation
+age
+   Age
 
-      female
-         Is respondent female?
+hhold_income
+   Household income
 
-      age
-         Age
+educ
+   Education level
 
-      hhold_income
-         Household income
+region
+   Region of US
 
-      educ
-         Education level
+Source
+~~~~~~
 
-      region
-         Region of US
-
-      .. rubric:: Source
-         :name: source
-
-      See
-      https://fivethirtyeight.com/features/how-americans-like-their-steak/
+See https://fivethirtyeight.com/features/how-americans-like-their-steak/

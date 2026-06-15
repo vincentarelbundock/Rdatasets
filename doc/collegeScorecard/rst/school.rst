@@ -1,132 +1,121 @@
-.. container::
+====== ===============
+school R Documentation
+====== ===============
 
-   .. container::
+College Scorecard: School Data
+------------------------------
 
-      ====== ===============
-      school R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: College Scorecard: School Data
-         :name: college-scorecard-school-data
+Information about institutions in the U.S. College Scorecard dataset.
+The uses the most recent report for each institution. The ``school``
+dataset can be used to filter the ``scorecard`` dataset. Join the two
+datasets using the ``id`` column.
 
-      .. rubric:: Description
-         :name: description
+The data set contain only colleges that participate in Title IV federal
+financial aid programs. In the tidy data set, column names have been
+changed for readability and consistency.
 
-      Information about institutions in the U.S. College Scorecard
-      dataset. The uses the most recent report for each institution. The
-      ``school`` dataset can be used to filter the ``scorecard``
-      dataset. Join the two datasets using the ``id`` column.
+You can find the original data set at the U.S. Department of Education's
+`College Scorecard website <https://collegescorecard.ed.gov/data/>`__.
+The code for the data transformation process is available at
+https://github.com/gadenbuie/scorecard-db.
 
-      The data set contain only colleges that participate in Title IV
-      federal financial aid programs. In the tidy data set, column names
-      have been changed for readability and consistency.
+Usage
+~~~~~
 
-      You can find the original data set at the U.S. Department of
-      Education's `College Scorecard
-      website <https://collegescorecard.ed.gov/data/>`__. The code for
-      the data transformation process is available at
-      https://github.com/gadenbuie/scorecard-db.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   school
 
-      .. code:: R
+Format
+~~~~~~
 
-         school
+A data frame with 11,300 rows and 25 variables. Original column names
+from the source dataset are noted in parenthesis.
 
-      .. rubric:: Format
-         :name: format
+``id``
+   ``⁠[integer]⁠`` A unique identifier for each institution. (``UNITID``)
 
-      A data frame with 11,300 rows and 25 variables. Original column
-      names from the source dataset are noted in parenthesis.
+``name``
+   ``⁠[character]⁠`` Institution name. (``INSTNM``)
 
-      ``id``
-         ``⁠[integer]⁠`` A unique identifier for each institution.
-         (``UNITID``)
+``city``
+   ``⁠[character]⁠`` City. (``CITY``)
 
-      ``name``
-         ``⁠[character]⁠`` Institution name. (``INSTNM``)
+``state``
+   ``⁠[character]⁠`` State postcode. (``STABBR``)
 
-      ``city``
-         ``⁠[character]⁠`` City. (``CITY``)
+``zip``
+   ``⁠[character]⁠`` ZIP code. (``ZIP``)
 
-      ``state``
-         ``⁠[character]⁠`` State postcode. (``STABBR``)
+``latitude``
+   ``⁠[numeric]⁠`` Latitude. (``LATITUDE``)
 
-      ``zip``
-         ``⁠[character]⁠`` ZIP code. (``ZIP``)
+``longitude``
+   ``⁠[numeric]⁠`` Longitude. (``LONGITUDE``)
 
-      ``latitude``
-         ``⁠[numeric]⁠`` Latitude. (``LATITUDE``)
+``url``
+   ``⁠[character]⁠`` URL for institution's homepage. (``INSTURL``)
 
-      ``longitude``
-         ``⁠[numeric]⁠`` Longitude. (``LONGITUDE``)
+``deg_predominant``
+   ``⁠[factor]⁠`` Predominant undergraduate degree awarded. (``PREDDEG``)
 
-      ``url``
-         ``⁠[character]⁠`` URL for institution's homepage. (``INSTURL``)
+``deg_highest``
+   ``⁠[factor]⁠`` Highest degree awarded. (``HIGHDEG``)
 
-      ``deg_predominant``
-         ``⁠[factor]⁠`` Predominant undergraduate degree awarded.
-         (``PREDDEG``)
+``control``
+   ``⁠[factor]⁠`` Control of institution (IPEDS). (``CONTROL``)
 
-      ``deg_highest``
-         ``⁠[factor]⁠`` Highest degree awarded. (``HIGHDEG``)
+``locale_type``
+   ``⁠[factor]⁠`` Locale of institution. (``LOCALE``)
 
-      ``control``
-         ``⁠[factor]⁠`` Control of institution (IPEDS). (``CONTROL``)
+``locale_size``
+   ``⁠[factor]⁠`` Locale of institution. (``LOCALE``)
 
-      ``locale_type``
-         ``⁠[factor]⁠`` Locale of institution. (``LOCALE``)
+``adm_req_test``
+   ``⁠[factor]⁠`` Test score requirements for admission. (``ADMCON7``)
 
-      ``locale_size``
-         ``⁠[factor]⁠`` Locale of institution. (``LOCALE``)
+``is_hbcu``
+   ``⁠[logical]⁠`` Flag for Historically Black College and University.
+   (``HBCU``)
 
-      ``adm_req_test``
-         ``⁠[factor]⁠`` Test score requirements for admission.
-         (``ADMCON7``)
+``is_pbi``
+   ``⁠[logical]⁠`` Flag for predominantly black institution. (``PBI``)
 
-      ``is_hbcu``
-         ``⁠[logical]⁠`` Flag for Historically Black College and
-         University. (``HBCU``)
+``is_annhi``
+   ``⁠[logical]⁠`` Flag for Alaska Native Native Hawaiian serving
+   institution. (``ANNHI``)
 
-      ``is_pbi``
-         ``⁠[logical]⁠`` Flag for predominantly black institution.
-         (``PBI``)
+``is_tribal``
+   ``⁠[logical]⁠`` Flag for tribal college and university. (``TRIBAL``)
 
-      ``is_annhi``
-         ``⁠[logical]⁠`` Flag for Alaska Native Native Hawaiian serving
-         institution. (``ANNHI``)
+``is_aanapii``
+   ``⁠[logical]⁠`` Flag for Asian American Native American Pacific
+   Islander-serving institution. (``AANAPII``)
 
-      ``is_tribal``
-         ``⁠[logical]⁠`` Flag for tribal college and university.
-         (``TRIBAL``)
+``is_hsi``
+   ``⁠[logical]⁠`` Flag for Hispanic-serving institution. (``HSI``)
 
-      ``is_aanapii``
-         ``⁠[logical]⁠`` Flag for Asian American Native American Pacific
-         Islander-serving institution. (``AANAPII``)
+``is_nanti``
+   ``⁠[logical]⁠`` Flag for Native American non-tribal institution.
+   (``NANTI``)
 
-      ``is_hsi``
-         ``⁠[logical]⁠`` Flag for Hispanic-serving institution. (``HSI``)
+``is_only_men``
+   ``⁠[logical]⁠`` Flag for men-only college. (``MENONLY``)
 
-      ``is_nanti``
-         ``⁠[logical]⁠`` Flag for Native American non-tribal institution.
-         (``NANTI``)
+``is_only_women``
+   ``⁠[logical]⁠`` Flag for women-only college. (``WOMENONLY``)
 
-      ``is_only_men``
-         ``⁠[logical]⁠`` Flag for men-only college. (``MENONLY``)
+``is_only_distance``
+   ``⁠[logical]⁠`` Flag for distance-education-only education.
+   (``DISTANCEONLY``)
 
-      ``is_only_women``
-         ``⁠[logical]⁠`` Flag for women-only college. (``WOMENONLY``)
+``religious_affiliation``
+   ``⁠[factor]⁠`` Religious affiliation of the institution. (``RELAFFIL``)
 
-      ``is_only_distance``
-         ``⁠[logical]⁠`` Flag for distance-education-only education.
-         (``DISTANCEONLY``)
+References
+~~~~~~~~~~
 
-      ``religious_affiliation``
-         ``⁠[factor]⁠`` Religious affiliation of the institution.
-         (``RELAFFIL``)
-
-      .. rubric:: References
-         :name: references
-
-      https://collegescorecard.ed.gov/data/
+https://collegescorecard.ed.gov/data/

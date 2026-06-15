@@ -1,55 +1,49 @@
-.. container::
+=================== ===============
+cpr_survival_tbl_df R Documentation
+=================== ===============
 
-   .. container::
+Blood thinners in CPR survival
+------------------------------
 
-      =================== ===============
-      cpr_survival_tbl_df R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Blood thinners in CPR survival
-         :name: blood-thinners-in-cpr-survival
+This dataset, cpr_survival_tbl_df, is a tibble containing information
+from a study examining the effect of blood thinners on survival rates in
+CPR patients. The study randomly assigned 90 patients to either receive
+a blood thinner (treatment group) or not receive one (control group),
+with the outcome being survival for at least 24 hours.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, cpr_survival_tbl_df, is a tibble containing
-      information from a study examining the effect of blood thinners on
-      survival rates in CPR patients. The study randomly assigned 90
-      patients to either receive a blood thinner (treatment group) or
-      not receive one (control group), with the outcome being survival
-      for at least 24 hours.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(cpr_survival_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(cpr_survival_tbl_df)
+A tibble with 90 observations and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+group
+   Treatment assignment (factor with 2 levels: "control" and
+   "treatment")
 
-      A tibble with 90 observations and 2 variables:
+outcome
+   Survival status (factor with 2 levels: "died" and "survived")
 
-      group
-         Treatment assignment (factor with 2 levels: "control" and
-         "treatment")
+Details
+~~~~~~~
 
-      outcome
-         Survival status (factor with 2 levels: "died" and "survived")
+The dataset name has been kept as 'cpr_survival_tbl_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the CardioDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'tbl_df' indicates that the dataset is a tibble. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'cpr_survival_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      CardioDataSets package and assists users in identifying its
-      specific characteristics. The suffix 'tbl_df' indicates that the
-      dataset is a tibble. The original content has not been modified in
-      any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the openintro package version 2.5.0
+Data taken from the openintro package version 2.5.0

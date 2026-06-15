@@ -1,84 +1,80 @@
-.. container::
+================ ===============
+mead.cauliflower R Documentation
+================ ===============
 
-   .. container::
+Leaves for cauliflower plants at different times
+------------------------------------------------
 
-      ================ ===============
-      mead.cauliflower R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Leaves for cauliflower plants at different times
-         :name: leaves-for-cauliflower-plants-at-different-times
+Leaves for cauliflower plants at different times in two years.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Leaves for cauliflower plants at different times in two years.
+A data frame with 14 observations on the following 4 variables.
 
-      .. rubric:: Format
-         :name: format
+``year``
+   year factor
 
-      A data frame with 14 observations on the following 4 variables.
+``degdays``
+   degree days above 32F
 
-      ``year``
-         year factor
+``leaves``
+   number of leaves
 
-      ``degdays``
-         degree days above 32F
+Details
+~~~~~~~
 
-      ``leaves``
-         number of leaves
+Numbers of leaves for 10 cauliflower plants in each of two years, and
+temperature degree-days above 32F, divided by 100.
 
-      .. rubric:: Details
-         :name: details
+The year is 1956-57 or 1957-58.
 
-      Numbers of leaves for 10 cauliflower plants in each of two years,
-      and temperature degree-days above 32F, divided by 100.
+Over the data range shown, the number of leaves is increasing linearly.
+Extrapolating backwards shows that a linear model is inappropriate, and
+so a glm is used.
 
-      The year is 1956-57 or 1957-58.
+Source
+~~~~~~
 
-      Over the data range shown, the number of leaves is increasing
-      linearly. Extrapolating backwards shows that a linear model is
-      inappropriate, and so a glm is used.
+Roger Mead, Robert N Curnow, Anne M Hasted. 2002. Statistical Methods in
+Agriculture and Experimental Biology, 3rd ed. Chapman and Hall. Page
+251.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Roger Mead, Robert N Curnow, Anne M Hasted. 2002. Statistical
-      Methods in Agriculture and Experimental Biology, 3rd ed. Chapman
-      and Hall. Page 251.
+Mick O'Neill. Regression & Generalized Linear (Mixed) Models.
+Statistical Advisory & Training Service Pty Ltd.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Mick O'Neill. Regression & Generalized Linear (Mixed) Models.
-      Statistical Advisory & Training Service Pty Ltd.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+   data(mead.cauliflower)
+   dat <- mead.cauliflower
 
-         ## Not run: 
+   dat <- transform(dat, year=factor(year))
 
-         library(agridat)
-         data(mead.cauliflower)
-         dat <- mead.cauliflower
+   m1 <- glm(leaves ~ degdays + year, data=dat, family=poisson)
+   coef(m1)
+   ## (Intercept)     degdays    year1957
+   ##  3.49492453  0.08512651  0.21688760
 
-         dat <- transform(dat, year=factor(year))
-
-         m1 <- glm(leaves ~ degdays + year, data=dat, family=poisson)
-         coef(m1)
-         ## (Intercept)     degdays    year1957
-         ##  3.49492453  0.08512651  0.21688760
-
-         dat$pred <- predict(m1, type="response")
-         libs(lattice)
-         libs(latticeExtra)
-         xyplot(leaves~degdays, data=dat, groups=year, type=c('p'),
-                auto.key=list(columns=2),
-                main="mead.cauliflower - observed (symbol) & fitted (line)",
-                xlab="degree days", ylab="Number of leaves", ) +
-           xyplot(pred~degdays, data=dat, groups=year, type=c('l'), col="black")
+   dat$pred <- predict(m1, type="response")
+   libs(lattice)
+   libs(latticeExtra)
+   xyplot(leaves~degdays, data=dat, groups=year, type=c('p'),
+          auto.key=list(columns=2),
+          main="mead.cauliflower - observed (symbol) & fitted (line)",
+          xlab="degree days", ylab="Number of leaves", ) +
+     xyplot(pred~degdays, data=dat, groups=year, type=c('l'), col="black")
 
 
-         ## End(Not run)
+   ## End(Not run)

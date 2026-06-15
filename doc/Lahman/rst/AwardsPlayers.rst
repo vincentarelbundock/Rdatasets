@@ -1,85 +1,81 @@
-.. container::
+============= ===============
+AwardsPlayers R Documentation
+============= ===============
 
-   .. container::
+AwardsPlayers table
+-------------------
 
-      ============= ===============
-      AwardsPlayers R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: AwardsPlayers table
-         :name: awardsplayers-table
+Award information for players awards
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Award information for players awards
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(AwardsPlayers)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(AwardsPlayers)
+A data frame with 12667 observations on the following 6 variables.
 
-      .. rubric:: Format
-         :name: format
+``playerID``
+   Player ID code
 
-      A data frame with 12632 observations on the following 6 variables.
+``awardID``
+   Name of award won
 
-      ``playerID``
-         Player ID code
+``yearID``
+   Year
 
-      ``awardID``
-         Name of award won
+``lgID``
+   League; a factor with levels ``AA`` ``AL`` ``ML`` ``NL``
 
-      ``yearID``
-         Year
+``tie``
+   Award was a tie (Y or N)
 
-      ``lgID``
-         League; a factor with levels ``AA`` ``AL`` ``ML`` ``NL``
+``notes``
+   Notes about the award
 
-      ``tie``
-         Award was a tie (Y or N)
+Source
+~~~~~~
 
-      ``notes``
-         Notes about the award
+Lahman, S. (2026) Lahman's Baseball Database, 1871-2025, 2026 version,
+https://sabr.org/lahman-database/
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Lahman, S. (2025) Lahman's Baseball Database, 1871-2024, 2025
-      version, https://sabr.org/lahman-database/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   data(AwardsPlayers)
+   # Which awards have been given and how many?
+   with(AwardsPlayers, table(awardID))
+   awardtab <- with(AwardsPlayers, table(awardID))
 
-      .. code:: R
+   # Plot the awardtab table as a Cleveland dot plot
+   library("lattice")
+   dotplot(awardtab)
 
-         data(AwardsPlayers)
-         # Which awards have been given and how many?
-         with(AwardsPlayers, table(awardID))
-         awardtab <- with(AwardsPlayers, table(awardID))
+   # Restrict to MVP awards
+   mvp <- subset(AwardsPlayers, awardID == "Most Valuable Player")
+   # Who won in 1994?
+   mvp[mvp$yearID == 1994L, ]
 
-         # Plot the awardtab table as a Cleveland dot plot
-         library("lattice")
-         dotplot(awardtab)
+   goldglove <- subset(AwardsPlayers, awardID == "Gold Glove")
+   # which players won most often?
+   GGcount <- table(goldglove$playerID)
+   GGcount[GGcount>10]
 
-         # Restrict to MVP awards
-         mvp <- subset(AwardsPlayers, awardID == "Most Valuable Player")
-         # Who won in 1994?
-         mvp[mvp$yearID == 1994L, ]
+   # Triple Crown winners
+   subset(AwardsPlayers, awardID == "Triple Crown")
 
-         goldglove <- subset(AwardsPlayers, awardID == "Gold Glove")
-         # which players won most often?
-         GGcount <- table(goldglove$playerID)
-         GGcount[GGcount>10]
-
-         # Triple Crown winners
-         subset(AwardsPlayers, awardID == "Triple Crown")
-
-         # Simultaneous Triple Crown and MVP winners
-         # (compare merged file to TC)
-         TC <- subset(AwardsPlayers, awardID == "Triple Crown")
-         MVP <- subset(AwardsPlayers, awardID == "Most Valuable Player")
-         keepvars <- c("playerID", "yearID", "lgID.x")
-         merge(TC, MVP, by = c("playerID", "yearID"))[ ,keepvars]
+   # Simultaneous Triple Crown and MVP winners
+   # (compare merged file to TC)
+   TC <- subset(AwardsPlayers, awardID == "Triple Crown")
+   MVP <- subset(AwardsPlayers, awardID == "Most Valuable Player")
+   keepvars <- c("playerID", "yearID", "lgID.x")
+   merge(TC, MVP, by = c("playerID", "yearID"))[ ,keepvars]

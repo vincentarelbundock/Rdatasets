@@ -20,34 +20,23 @@ function processMathHTML() {
 
 <h3>Description</h3>
 
-<p>Brown et al (1983) gave these data on two signs of toxaemia,
-an abnormal condition during pregnancy characterized by
-high blood pressure (hypertension) and high levels of protein
-in the urine.  If untreated, both the mother and baby are
-at risk of complications or death.
+<p>Brown et al (1983) gave these data on two signs of toxaemia, an abnormal
+condition during pregnancy characterized by high blood pressure
+(hypertension) and high levels of protein in the urine.  If untreated, both
+the mother and baby are at risk of complications or death.
 </p>
-<p>The data frame <code>Toxaemia</code> represents 13384 expectant
-mothers in Bradford, England in their first pregnancy, who
-were also classified according to social class and the number
-of cigarettes smoked per day.
-</p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data(Toxaemia)</code></pre>
 
 
 <h3>Format</h3>
 
-<p>A data frame in frequency form representing a 5 x 3 x 2 x 2 contingency table,
-with 60 observations on the following 5 variables.
+<p>A data frame in frequency form representing a 5 x 3 x 2 x 2
+contingency table, with 60 observations on the following 5 variables.
 </p>
 
 <dl>
 <dt><code>class</code></dt><dd><p>Social class of mother, a factor with levels <code>1</code> <code>2</code> <code>3</code> <code>4</code> <code>5</code></p>
 </dd>
-<dt><code>smoke</code></dt><dd><p>Cigarettes smoked per day during pregnancy, a factor with levels <code>0</code> <code>1-19</code> <code>20+</code></p>
+<dt><code>smoke</code></dt><dd><p>Cigarettes smoked per day during pregnancy, a factor with levels <code>0</code> <code>1-19</code> <code style="white-space: pre;">&#8288;20+&#8288;</code></p>
 </dd>
 <dt><code>hyper</code></dt><dd><p>Hypertension level, a factor with levels <code>Low</code> <code>High</code></p>
 </dd>
@@ -59,28 +48,36 @@ with 60 observations on the following 5 variables.
 
 
 
+<h3>Details</h3>
+
+<p>The data frame <code>Toxaemia</code> represents 13384 expectant mothers in
+Bradford, England in their first pregnancy, who were also classified
+according to social class and the number of cigarettes smoked per day.
+</p>
+
+
 <h3>Source</h3>
 
-<p>Brown, P. J., Stone, J. and Ord-Smith, C. (1983), 
-Toxaemic signs during pregnancy.
-<em>JRSS, Series C, Applied Statistics</em>, 32, 69-72
+<p>Brown, P. J., Stone, J. and Ord-Smith, C. (1983), Toxaemic signs
+during pregnancy. <em>JRSS, Series C, Applied Statistics</em>, 32, 69-72
 </p>
 
 
 <h3>References</h3>
 
-<p>Friendly, M.  (2000), <em>Visualizing Categorical Data</em>, SAS Institute, Cary, NC,
-Example 7.15.
+<p>Friendly, M.  (2000), <em>Visualizing Categorical Data</em>, SAS
+Institute, Cary, NC, Example 7.15.
 </p>
-<p>Friendly, M. and Meyer, D. (2016). 
-<em>Discrete Data Analysis with R: Visualization and Modeling Techniques for Categorical and Count Data</em>. 
-Boca Raton, FL: Chapman &amp; Hall/CRC. <a href="http://ddar.datavis.ca">http://ddar.datavis.ca</a>. Example 10.10.
+<p>Friendly, M. and Meyer, D. (2016).  <em>Discrete Data Analysis with R:
+Visualization and Modeling Techniques for Categorical and Count Data</em>.  Boca
+Raton, FL: Chapman &amp; Hall/CRC. <a href="http://ddar.datavis.ca">http://ddar.datavis.ca</a>. Example 10.10.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(Toxaemia)
+<pre><code class='language-R'>
+data(Toxaemia)
 
 tox.tab &lt;- xtabs(Freq ~ class + smoke + hyper + urea, Toxaemia)
 ftable(tox.tab, row.vars=1)
@@ -99,11 +96,9 @@ mosaic(~smoke + class, data=tox.tab, shade=TRUE)
 mosaic(~hyper + urea, data=tox.tab, shade=TRUE)
 
 # log odds ratios for urea and hypertension, by class and smoke
-## Not run: 
 LOR &lt;-loddsratio(aperm(tox.tab))
 LOR
 
-## End(Not run)
 
 </code></pre>
 

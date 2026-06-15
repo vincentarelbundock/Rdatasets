@@ -1,116 +1,111 @@
-.. container::
+=============== ===============
+FieldingOFsplit R Documentation
+=============== ===============
 
-   .. container::
+FieldingOFsplit table
+---------------------
 
-      =============== ===============
-      FieldingOFsplit R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: FieldingOFsplit table
-         :name: fieldingofsplit-table
+Outfield position data: information about positions played in the
+outfield
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Outfield position data: information about positions played in the
-      outfield
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(FieldingOFsplit)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(FieldingOFsplit)
+A data frame with 45147 observations on the following 18 variables.
 
-      .. rubric:: Format
-         :name: format
+``playerID``
+   Player ID code
 
-      A data frame with 36677 observations on the following 18
-      variables.
+``yearID``
+   Year
 
-      ``playerID``
-         Player ID code
+``stint``
+   player's stint (order of appearances within a season)
 
-      ``yearID``
-         Year
+``teamID``
+   Team; a factor
 
-      ``stint``
-         player's stint (order of appearances within a season)
+``lgID``
+   League; a factor with levels ``AA`` ``AL`` ``FL`` ``NL`` ``PL``
+   ``UA``
 
-      ``teamID``
-         Team; a factor
+``POS``
+   Position
 
-      ``lgID``
-         League; a factor with levels ``AA`` ``AL`` ``FL`` ``NL`` ``PL``
-         ``UA``
+``G``
+   Games
 
-      ``POS``
-         Position
+``GS``
+   Games Started
 
-      ``G``
-         Games
+``InnOuts``
+   Time played in the field expressed as outs
 
-      ``GS``
-         Games Started
+``PO``
+   Putouts
 
-      ``InnOuts``
-         Time played in the field expressed as outs
+``A``
+   Assists
 
-      ``PO``
-         Putouts
+``E``
+   Errors
 
-      ``A``
-         Assists
+``DP``
+   Double Plays
 
-      ``E``
-         Errors
+``PB``
+   Passed Balls (by catchers)
 
-      ``DP``
-         Double Plays
+``WP``
+   Wild Pitches (by catchers)
 
-      ``PB``
-         Passed Balls (by catchers)
+``SB``
+   Opponent Stolen Bases (by catchers)
 
-      ``WP``
-         Wild Pitches (by catchers)
+``CS``
+   Opponents Caught Stealing (by catchers)
 
-      ``SB``
-         Opponent Stolen Bases (by catchers)
+``ZR``
+   Zone Rating
 
-      ``CS``
-         Opponents Caught Stealing (by catchers)
+Source
+~~~~~~
 
-      ``ZR``
-         Zone Rating
+Lahman, S. (2026) Lahman's Baseball Database, 1871-2025, 2026 version,
+https://sabr.org/lahman-database/
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Lahman, S. (2025) Lahman's Baseball Database, 1871-2024, 2025
-      version, https://sabr.org/lahman-database/
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   require("dplyr")
+   require("tidyr")
 
-      .. code:: R
+   ## Data set starts in 1954
+   ## Can get a more complete record from the Fielding data frame
+   ## or from the Appearances data (see below)
 
-         require("dplyr")
-         require("tidyr")
+   ## Output directly from the FieldingOFsplit data
 
-         ## Data set starts in 1954
-         ## Can get a more complete record from the Fielding data frame
-         ## or from the Appearances data (see below)
+   ## Joe DiMaggio (no records: pre-1954 player)
+   FieldingOFsplit %>% 
+      filter(playerID == "dimagjo01") 
 
-         ## Output directly from the FieldingOFsplit data
+   ## Willie Mays (all but his first few years)
+   FieldingOF %>% 
+     filter(playerID == "mayswi01") 
 
-         ## Joe DiMaggio (no records: pre-1954 player)
-         FieldingOFsplit %>% 
-            filter(playerID == "dimagjo01") 
-
-         ## Willie Mays (all but his first few years)
-         FieldingOF %>% 
-           filter(playerID == "mayswi01") 
-
-         ## Mike Trout (complete)
-         FieldingOF %>% 
-           filter(playerID == "troutmi01")
+   ## Mike Trout (complete)
+   FieldingOF %>% 
+     filter(playerID == "troutmi01")

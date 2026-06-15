@@ -1,43 +1,37 @@
-.. container::
+=========== ===============
+nba_tattoos R Documentation
+=========== ===============
 
-   .. container::
+Accurately Counting NBA Tattoos Isn't Easy, Even If You're Up Close
+-------------------------------------------------------------------
 
-      =========== ===============
-      nba_tattoos R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Accurately Counting NBA Tattoos Isn't Easy, Even If
-         You're Up Close
-         :name: accurately-counting-nba-tattoos-isnt-easy-even-if-youre-up-close
+The raw data behind the story "Accurately Counting NBA Tattoos Isn't
+Easy, Even If You're Up Close"
+https://fivethirtyeight.com/features/accurately-counting-nba-tattoos-isnt-easy-even-if-youre-up-close/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Accurately Counting NBA Tattoos
-      Isn't Easy, Even If You're Up Close"
-      https://fivethirtyeight.com/features/accurately-counting-nba-tattoos-isnt-easy-even-if-youre-up-close/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   nba_tattoos
 
-      .. code:: R
+Format
+~~~~~~
 
-         nba_tattoos
+A data frame with 636 rows representing National Basketball Association
+players and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+player_name
+   Name of player
 
-      A data frame with 636 rows representing National Basketball
-      Association players and 2 variables:
+tattoos
+   TRUE corresponds to player having tattoos, FALSE corresponds to not
 
-      player_name
-         Name of player
+Source
+~~~~~~
 
-      tattoos
-         TRUE corresponds to player having tattoos, FALSE corresponds to
-         not
-
-      .. rubric:: Source
-         :name: source
-
-      Ethan Swan https://nbatattoos.tumblr.com/
+Ethan Swan https://nbatattoos.tumblr.com/

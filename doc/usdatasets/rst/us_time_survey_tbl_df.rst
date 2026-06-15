@@ -1,67 +1,61 @@
-.. container::
+===================== ===============
+us_time_survey_tbl_df R Documentation
+===================== ===============
 
-   .. container::
+American Time Survey 2009 - 2019
+--------------------------------
 
-      ===================== ===============
-      us_time_survey_tbl_df R Documentation
-      ===================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: American Time Survey 2009 - 2019
-         :name: american-time-survey-2009---2019
+The dataset name has been changed to 'us_time_survey_tbl_df' to avoid
+confusion with other packages in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a tibble. The original content of the dataset has not
+been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'us_time_survey_tbl_df' to
-      avoid confusion with other packages in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a tibble. The original
-      content of the dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(us_time_survey_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(us_time_survey_tbl_df)
+A tibble with 11 observations and 8 variables representing time use in
+various activities:
 
-      .. rubric:: Format
-         :name: format
+year
+   Numeric value representing the year of the survey.
 
-      A tibble with 11 observations and 8 variables representing time
-      use in various activities:
+household_activities
+   Numeric value representing time spent on household activities (in
+   hours).
 
-      year
-         Numeric value representing the year of the survey.
+eating_and_drinking
+   Numeric value representing time spent on eating and drinking (in
+   hours).
 
-      household_activities
-         Numeric value representing time spent on household activities
-         (in hours).
+leisure_and_sports
+   Numeric value representing time spent on leisure and sports
+   activities (in hours).
 
-      eating_and_drinking
-         Numeric value representing time spent on eating and drinking
-         (in hours).
+sleeping
+   Numeric value representing time spent sleeping (in hours).
 
-      leisure_and_sports
-         Numeric value representing time spent on leisure and sports
-         activities (in hours).
+caring_children
+   Numeric value representing time spent caring for children (in hours).
 
-      sleeping
-         Numeric value representing time spent sleeping (in hours).
+working_employed
+   Numeric value representing time spent working while employed (in
+   hours).
 
-      caring_children
-         Numeric value representing time spent caring for children (in
-         hours).
+working_employed_days_worked
+   Numeric value representing the number of days worked while employed.
 
-      working_employed
-         Numeric value representing time spent working while employed
-         (in hours).
+Source
+~~~~~~
 
-      working_employed_days_worked
-         Numeric value representing the number of days worked while
-         employed.
-
-      .. rubric:: Source
-         :name: source
-
-      U.S. Bureau of Labor Statistics.
+U.S. Bureau of Labor Statistics.

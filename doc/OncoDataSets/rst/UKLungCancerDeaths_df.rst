@@ -1,60 +1,56 @@
-.. container::
+===================== ===============
+UKLungCancerDeaths_df R Documentation
+===================== ===============
 
-   .. container::
+Lung Cancer Deaths among UK Physicians
+--------------------------------------
 
-      ===================== ===============
-      UKLungCancerDeaths_df R Documentation
-      ===================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Lung Cancer Deaths among UK Physicians
-         :name: lung-cancer-deaths-among-uk-physicians
+This dataset, UKLungCancerDeaths_df, is a data frame containing the
+number of deaths due to lung cancer among British male physicians. The
+data is categorized by years of smoking and cigarette consumption and
+was originally used in Frome (1983) to analyze rates using Poisson
+regression models.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, UKLungCancerDeaths_df, is a data frame containing
-      the number of deaths due to lung cancer among British male
-      physicians. The data is categorized by years of smoking and
-      cigarette consumption and was originally used in Frome (1983) to
-      analyze rates using Poisson regression models.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(UKLungCancerDeaths_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(UKLungCancerDeaths_df)
+A data frame with 63 observations and 4 variables:
 
-      .. rubric:: Format
-         :name: format
+years.smok
+   Years of smoking categorized into 9 levels (factor).
 
-      A data frame with 63 observations and 4 variables:
+cigarettes
+   Cigarette consumption categorized into 7 levels (factor).
 
-      years.smok
-         Years of smoking categorized into 9 levels (factor).
+Time
+   Exposure time in person-years (numeric).
 
-      cigarettes
-         Cigarette consumption categorized into 7 levels (factor).
+y
+   Number of lung cancer deaths (numeric).
 
-      Time
-         Exposure time in person-years (numeric).
+Details
+~~~~~~~
 
-      y
-         Number of lung cancer deaths (numeric).
+The dataset name has been kept as 'UKLungCancerDeaths_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the OncoDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'\_df' indicates that the dataset is a data frame. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'UKLungCancerDeaths_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The suffix '\_df' indicates that the dataset is a
-      data frame. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the SMPracticals package. Based on the study by
-      Frome, E. L. (1983): \*The analysis of rates using Poisson
-      regression models\*. Biometrics, 39, 665–674.
+Data taken from the SMPracticals package. Based on the study by Frome,
+E. L. (1983): \*The analysis of rates using Poisson regression models\*.
+Biometrics, 39, 665–674.

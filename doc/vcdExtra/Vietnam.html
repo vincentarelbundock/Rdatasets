@@ -20,12 +20,36 @@ function processMathHTML() {
 
 <h3>Description</h3>
 
-<p>A survey of student opinion on the Vietnam War was taken at the
-University of North Carolina at Chapel Hill in May 1967 and published
-in the student newspaper. Students were asked to fill in ballot
-papers stating which policy out of A,B,C or D they supported.
-Responses were cross-classified by gender/year.
+<p>A survey of student opinion on the Vietnam War was taken at the University
+of North Carolina at Chapel Hill in May 1967 and published in the student
+newspaper. Students were asked to fill in ballot papers stating which policy
+out of A,B,C or D they supported. Responses were cross-classified by
+gender/year.
 </p>
+
+
+<h3>Format</h3>
+
+<p>A frequency data frame with 40 observations representing a 2 x 5 x 4
+contingency table on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>sex</code></dt><dd><p>a factor with levels <code>Female</code> <code>Male</code></p>
+</dd>
+<dt><code>year</code></dt><dd><p>year of study, an ordered factor with levels
+<code>Freshmen</code>, <code>Sophomore</code>, <code>Junior</code>, <code>Senior</code>, <code style="white-space: pre;">&#8288;Grad student&#8288;</code></p>
+</dd>
+<dt><code>response</code></dt><dd><p>a factor with levels <code>A</code> <code>B</code> <code>C</code> <code>D</code></p>
+</dd>
+<dt><code>Freq</code></dt><dd><p>cell frequency, a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
 <p>The response categories were:
 </p>
 
@@ -40,57 +64,30 @@ Responses were cross-classified by gender/year.
 </dd>
 </dl>
 
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data(Vietnam)</code></pre>
-
-
-<h3>Format</h3>
-
-<p>A frequency data frame with 40 observations representing a 2 x 5 x 4 contingency table
-on the following 4 variables.
-</p>
-
-<dl>
-<dt><code>sex</code></dt><dd><p>a factor with levels <code>Female</code> <code>Male</code></p>
-</dd>
-<dt><code>year</code></dt><dd><p>year of study, an ordered factor with levels
-<code>Freshmen</code>, <code>Sophomore</code>, <code>Junior</code>, <code>Senior</code>, <code>Grad student</code></p>
-</dd>
-<dt><code>response</code></dt><dd><p>a factor with levels <code>A</code> <code>B</code> <code>C</code> <code>D</code></p>
-</dd>
-<dt><code>Freq</code></dt><dd><p>cell frequency, a numeric vector</p>
-</dd>
-</dl>
-
-
-
-<h3>Details</h3>
-
-<p>For some analyses, it is useful to treat <code>year</code> as numeric,
-and possibly assign grad students a value <code>year=7</code>.
+<p>For some analyses, it is useful to treat <code>year</code> as numeric, and
+possibly assign grad students a value <code>year=7</code>.
 </p>
 
 
 <h3>Source</h3>
 
-<p>Aitken, M. etal, 1989,  <em>Statistical Modelling in GLIM</em>
+<p>Aitken, M. etal, 1989, <em>Statistical Modelling in GLIM</em>
 </p>
 
 
 <h3>References</h3>
 
-<p>Friendly, M.  (2000), <em>Visualizing Categorical Data</em>, SAS Institute, Cary, NC,
-Example 7.9.
+<p>Friendly, M.  (2000), <em>Visualizing Categorical Data</em>, SAS
+Institute, Cary, NC, Example 7.9.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(Vietnam)
+<pre><code class='language-R'>
+data(Vietnam)
 ## maybe str(Vietnam) ; plot(Vietnam) ...
+
 </code></pre>
 
 </main>

@@ -1,0 +1,117 @@
+<!DOCTYPE html><html><head><title>R: Metadata Holding Grading Criteria for NCI-CTCAEv6 using USCV...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>atoxgr_criteria_ctcv6_uscv</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Metadata Holding Grading Criteria for NCI-CTCAEv6 using USCV unit where applicable</h2>
+
+<h3>Description</h3>
+
+<p>Metadata Holding Grading Criteria for NCI-CTCAEv6 using USCV unit where applicable
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>atoxgr_criteria_ctcv6_uscv
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>An object of class <code>data.frame</code> with 48 rows and 13 columns.
+</p>
+
+
+<h3>Details</h3>
+
+<p>This metadata has its origin in the ADLB Grading Spec json file <code>data-raw/adlb_grading/ncictcaev6_uscv.json</code>.
+The variables <code>GRADE_NA_CODE</code>, <code>GRADE_4_CODE</code>, <code>GRADE_3_CODE</code>, <code>GRADE_2_CODE</code> and <code>GRADE_1_CODE</code> in
+the json file are combined to create <code>GRADE_CRITERIA_CODE</code>, and then dropped from metadata.
+The dataset contains the following columns:
+</p>
+
+<ul>
+<li> <p><code>SOC</code>: variable to hold the SOC of the lab test criteria.
+</p>
+</li>
+<li> <p><code>TERM</code>: variable to hold the term describing the criteria applied to a particular lab test,
+eg. 'Anemia' or 'INR Increased'. Note: the variable is case insensitive.
+</p>
+</li>
+<li> <p><code>GRADE_1</code>: Criteria defining lab value as Grade 1.
+</p>
+</li>
+<li> <p><code>GRADE_2</code>: Criteria defining lab value as Grade 2.
+</p>
+</li>
+<li> <p><code>GRADE_3</code>: Criteria defining lab value as Grade 3.
+</p>
+</li>
+<li> <p><code>GRADE_4</code>: Criteria defining lab value as Grade 4.
+</p>
+</li>
+<li> <p><code>GRADE_5</code>: Criteria defining lab value as Grade 5.
+</p>
+</li>
+<li> <p><code>Definition</code>: Holds the definition of the lab test abnormality.
+</p>
+</li>
+<li> <p><code>GRADE_CRITERIA_CODE</code>: variable to hold code that creates grade based on defined criteria.
+</p>
+</li>
+<li> <p><code>UNIT_CHECK</code>: variable to hold USCV unit of particular lab test. Used to check against input data
+if criteria is based on absolute values.
+</p>
+</li>
+<li> <p><code>VAR_CHECK</code>: List of variables required to implement lab grade criteria. Use to check against
+input data.
+</p>
+</li>
+<li> <p><code>DIRECTION</code>: variable to hold the direction of the abnormality of a particular lab test
+value. 'L' is for LOW values, 'H' is for HIGH values. Note: the variable is case insensitive.
+</p>
+</li>
+<li> <p><code>COMMENT</code>: Holds any information regarding rationale behind implementation of grading criteria.
+</p>
+</li></ul>
+
+<p>Note: Variables <code>SOC</code>, <code>TERM</code>, <code style="white-space: pre;">&#8288;Grade 1&#8288;</code>, <code style="white-space: pre;">&#8288;Grade 2&#8288;</code>,<code style="white-space: pre;">&#8288;Grade 3&#8288;</code>,<code style="white-space: pre;">&#8288;Grade 4&#8288;</code>,<code style="white-space: pre;">&#8288;Grade 5&#8288;</code>, <code>Definition</code>
+are from the source document on NCI-CTC website defining the grading criteria.
+<a href="https://dctd.cancer.gov/research/ctep-trials/for-sites/adverse-events#ctep-ctcae"><strong>Common Terminology Criteria for Adverse Events (CTCAE)v6.0</strong></a>
+From these variables only 'TERM' is used in the <code>{admiral}</code> code, the rest are for information and
+traceability only.
+</p>
+
+
+<h3>See Also</h3>
+
+<p>Other metadata:
+<code>atoxgr_criteria_ctcv4</code>,
+<code>atoxgr_criteria_ctcv4_uscv</code>,
+<code>atoxgr_criteria_ctcv5</code>,
+<code>atoxgr_criteria_ctcv5_uscv</code>,
+<code>atoxgr_criteria_ctcv6</code>,
+<code>atoxgr_criteria_daids</code>,
+<code>atoxgr_criteria_daids_uscv</code>,
+<code>country_code_lookup</code>,
+<code>dose_freq_lookup</code>
+</p>
+
+</main>
+
+</div>
+</body></html>

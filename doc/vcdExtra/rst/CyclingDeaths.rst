@@ -1,82 +1,71 @@
-.. container::
+============= ===============
+CyclingDeaths R Documentation
+============= ===============
 
-   .. container::
+London Cycling Deaths
+---------------------
 
-      ============= ===============
-      CyclingDeaths R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: London Cycling Deaths
-         :name: london-cycling-deaths
+A data frame containing the number of deaths of cyclists in London from
+2005 through 2012 in each fortnightly period. Aberdein & Spiegelhalter
+(2013) discuss these data in relation to the observation that six
+cyclists died in London between Nov. 5 and Nov. 13, 2013.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      A data frame containing the number of deaths of cyclists in London
-      from 2005 through 2012 in each fortnightly period. Aberdein &
-      Spiegelhalter (2013) discuss these data in relation to the
-      observation that six cyclists died in London between Nov. 5 and
-      Nov. 13, 2013.
+A data frame with 208 observations on the following 2 variables.
 
-      .. rubric:: Usage
-         :name: usage
+``date``
+   a Date
 
-      .. code:: R
+``deaths``
+   number of deaths, a numeric vector
 
-         data(CyclingDeaths)
+Source
+~~~~~~
 
-      .. rubric:: Format
-         :name: format
+https://www.data.gov.uk/dataset/cb7ae6f0-4be6-4935-9277-47e5ce24a11f/road-accidents-safety-data,
+STATS 19 data, 2005-2012, using the files ``Casualty0512.csv`` and
+``Accidents0512.csv``
 
-      A data frame with 208 observations on the following 2 variables.
+References
+~~~~~~~~~~
 
-      ``date``
-         a Date
+Aberdein, Jody and Spiegelhalter, David (2013). Have London's roads
+become more dangerous for cyclists? *Significance*, 10(6), 46–48.
 
-      ``deaths``
-         number of deaths, a numeric vector
+Examples
+~~~~~~~~
 
-      .. rubric:: Source
-         :name: source
+.. code:: R
 
-      Road Safety Data from GOV.UK, but 2005-2012. Similar data is
-      available in the stats19, https://docs.ropensci.org/stats19/.
 
-      .. rubric:: References
-         :name: references
+   data(CyclingDeaths)
 
-      Aberdein, Jody and Spiegelhalter, David (2013). Have London's
-      roads become more dangerous for cyclists? *Significance*, 10(6),
-      46–48.
+   plot(deaths ~ date, data=CyclingDeaths,
+     type="h",
+       lwd=3,
+       ylab="Number of deaths",
+       axes=FALSE)
+   axis(1, at=seq(as.Date('2005-01-01'),
+                  by='years',
+                  length.out=9),
+        labels=2005:2013)
+   axis(2, at=0:3)
 
-      .. rubric:: Examples
-         :name: examples
+   # make a one-way frequency table
+   CyclingDeaths.tab <- table(CyclingDeaths$deaths)
 
-      .. code:: R
+   gf <- goodfit(CyclingDeaths.tab)
+   gf
+   summary(gf)
 
-         data(CyclingDeaths)
+   rootogram(gf, xlab="Number of Deaths")
+   distplot(CyclingDeaths.tab)
 
-         plot(deaths ~ date, data=CyclingDeaths,
-           type="h",
-             lwd=3,
-             ylab="Number of deaths",
-             axes=FALSE)
-         axis(1, at=seq(as.Date('2005-01-01'),
-                        by='years',
-                        length.out=9),
-              labels=2005:2013)
-         axis(2, at=0:3)
-
-         # make a one-way frequency table
-         CyclingDeaths.tab <- table(CyclingDeaths$deaths)
-
-         gf <- goodfit(CyclingDeaths.tab)
-         gf
-         summary(gf)
-
-         rootogram(gf, xlab="Number of Deaths")
-         distplot(CyclingDeaths.tab)
-
-         # prob of 6 or more deaths in one fortnight
-         lambda <- gf$par$lambda
-         ppois(5, lambda, lower.tail=FALSE)
+   # prob of 6 or more deaths in one fortnight
+   lambda <- gf$par$lambda
+   ppois(5, lambda, lower.tail=FALSE)

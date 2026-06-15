@@ -1,50 +1,46 @@
-.. container::
+=========== ===============
+wmurders_ts R Documentation
+=========== ===============
 
-   .. container::
+Annual Female Murder Rate in the USA
+------------------------------------
 
-      =========== ===============
-      wmurders_ts R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Annual Female Murder Rate in the USA
-         :name: annual-female-murder-rate-in-the-usa
+The dataset name has been changed to 'wmurders_ts' to avoid confusion
+with other datasets in the R ecosystem from which data have been
+sourced. The suffix 'ts' indicates that this dataset is a time series
+object. This naming convention helps distinguish this dataset as part of
+the 'timeseriesdatasets' package and assists users in identifying its
+specific characteristics. The original content of the dataset has not
+been modified in any way.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'wmurders_ts' to avoid
-      confusion with other datasets in the R ecosystem from which data
-      have been sourced. The suffix 'ts' indicates that this dataset is
-      a time series object. This naming convention helps distinguish
-      this dataset as part of the 'timeseriesdatasets' package and
-      assists users in identifying its specific characteristics. The
-      original content of the dataset has not been modified in any way.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(wmurders_ts)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(wmurders_ts)
+A 'ts' object with 55 observations:
 
-      .. rubric:: Format
-         :name: format
+time
+   Annual time series from 1950 to 2004.
 
-      A 'ts' object with 55 observations:
+value
+   Female murder rate per 100,000 standard population in the USA.
 
-      time
-         Annual time series from 1950 to 2004.
+Details
+~~~~~~~
 
-      value
-         Female murder rate per 100,000 standard population in the USA.
+This dataset contains annual data on the female murder rate per 100,000
+standard population in the USA from 1950 to 2004.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      This dataset contains annual data on the female murder rate per
-      100,000 standard population in the USA from 1950 to 2004.
-
-      .. rubric:: Source
-         :name: source
-
-      United States Federal Bureau of Investigation (FBI).
+United States Federal Bureau of Investigation (FBI).

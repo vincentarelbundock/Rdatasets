@@ -1,72 +1,66 @@
-.. container::
+=============== ===============
+antiquities_act R Documentation
+=============== ===============
 
-   .. container::
+Trump Might Be The First President To Scrap A National Monument
+---------------------------------------------------------------
 
-      =============== ===============
-      antiquities_act R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Trump Might Be The First President To Scrap A National
-         Monument
-         :name: trump-might-be-the-first-president-to-scrap-a-national-monument
+The raw data behind the story "Trump Might Be The First President To
+Scrap A National Monument"
+https://fivethirtyeight.com/features/trump-might-be-the-first-president-to-scrap-a-national-monument/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Trump Might Be The First President
-      To Scrap A National Monument"
-      https://fivethirtyeight.com/features/trump-might-be-the-first-president-to-scrap-a-national-monument/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   antiquities_act
 
-      .. code:: R
+Format
+~~~~~~
 
-         antiquities_act
+A data frame with 344 rows representing acts and 9 variables (Note that
+7 of the original rows failed to parse and are omitted here):
 
-      .. rubric:: Format
-         :name: format
+current_name
+   Current name of piece of land designated under the Antiquities Act
 
-      A data frame with 344 rows representing acts and 9 variables (Note
-      that 7 of the original rows failed to parse and are omitted here):
+states
+   State(s) or territory where land is located
 
-      current_name
-         Current name of piece of land designated under the Antiquities
-         Act
+original_name
+   If included, original name of piece of land designated under the
+   Antiquities Act
 
-      states
-         State(s) or territory where land is located
+current_agency
+   Current land management agency. NPS = National Parks Service, BLM =
+   Bureau of Land Management, USFS = US Forest Service, FWS = US Fish
+   and Wildlife Service, NOAA = National Oceanic and National Oceanic
+   and Atmospheric Administration
 
-      original_name
-         If included, original name of piece of land designated under
-         the Antiquities Act
+action
+   Type of action taken on land
 
-      current_agency
-         Current land management agency. NPS = National Parks Service,
-         BLM = Bureau of Land Management, USFS = US Forest Service, FWS
-         = US Fish and Wildlife Service, NOAA = National Oceanic and
-         National Oceanic and Atmospheric Administration
+date
+   Date of action
 
-      action
-         Type of action taken on land
+year
+   Year of action
 
-      date
-         Date of action
+pres_or_congress
+   President or congress that issued action
 
-      year
-         Year of action
+acres_affected
+   Acres affected by action. Note that total current acreage is not
+   included. National monuments that cover ocean are listed in square
+   miles.
 
-      pres_or_congress
-         President or congress that issued action
+Source
+~~~~~~
 
-      acres_affected
-         Acres affected by action. Note that total current acreage is
-         not included. National monuments that cover ocean are listed in
-         square miles.
-
-      .. rubric:: Source
-         :name: source
-
-      National Parks Conservation Association https://www.npca.org/ and
-      National Parks Service Archeology Program
-      https://www.nps.gov/history/archeology/sites/antiquities/MonumentsList.htm
+National Parks Conservation Association https://www.npca.org/ and
+National Parks Service Archeology Program
+https://www.nps.gov/history/archeology/sites/antiquities/MonumentsList.htm

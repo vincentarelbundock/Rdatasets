@@ -1,203 +1,198 @@
-.. container::
+============= ===============
+vargas.wheat1 R Documentation
+============= ===============
 
-   .. container::
+Wheat yields in 7 years with genetic and environment covariates
+---------------------------------------------------------------
 
-      ============= ===============
-      vargas.wheat1 R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Wheat yields in 7 years with genetic and environment
-         covariates
-         :name: wheat-yields-in-7-years-with-genetic-and-environment-covariates
+Yield of Durum wheat, 7 genotypes, 6 years, with 16 genotypic variates
+and 16 environment variates.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Yield of Durum wheat, 7 genotypes, 6 years, with 16 genotypic
-      variates and 16 environment variates.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("vargas.wheat1.covs")
+   data("vargas.wheat1.traits")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("vargas.wheat1.covs")
-         data("vargas.wheat1.traits")
+The ``vargas.wheat1.covs`` dataframe has 6 observations on the following
+17 variables.
 
-      .. rubric:: Format
-         :name: format
+``year``
+   year, 1990-1995
 
-      The ``vargas.wheat1.covs`` dataframe has 6 observations on the
-      following 17 variables.
+``MTD``
+   Mean daily max temperature December, deg C
 
-      ``year``
-         year, 1990-1995
+``MTJ``
+   Mean max in January
 
-      ``MTD``
-         Mean daily max temperature December, deg C
+``MTF``
+   Mean max in February
 
-      ``MTJ``
-         Mean max in January
+``MTM``
+   Mean max in March
 
-      ``MTF``
-         Mean max in February
+``mTD``
+   Mean daily minimum temperature December, deg C
 
-      ``MTM``
-         Mean max in March
+``mTJ``
+   Mean min in January
 
-      ``mTD``
-         Mean daily minimum temperature December, deg C
+``mTF``
+   Mean min in February
 
-      ``mTJ``
-         Mean min in January
+``mTM``
+   Mean min in March
 
-      ``mTF``
-         Mean min in February
+``PRD``
+   Monthly precipitation in December, mm
 
-      ``mTM``
-         Mean min in March
+``PRJ``
+   Precipitation in January
 
-      ``PRD``
-         Monthly precipitation in December, mm
+``PRF``
+   Precipitation in February
 
-      ``PRJ``
-         Precipitation in January
+``PRM``
+   Precipitation in March
 
-      ``PRF``
-         Precipitation in February
+``SHD``
+   Sun hours in December
 
-      ``PRM``
-         Precipitation in March
+``SHJ``
+   Sun hours in January
 
-      ``SHD``
-         Sun hours in December
+``SHF``
+   Sun hours in February
 
-      ``SHJ``
-         Sun hours in January
+``SHM``
+   Sun hours in March
 
-      ``SHF``
-         Sun hours in February
+The ``vargas.wheat1.traits`` dataframe has 126 observations on the
+following 19 variables.
 
-      ``SHM``
-         Sun hours in March
+``year``
+   year, 1990-1995
 
-      The ``vargas.wheat1.traits`` dataframe has 126 observations on the
-      following 19 variables.
+``rep``
+   replicate, 3 levels
 
-      ``year``
-         year, 1990-1995
+``gen``
+   genotype, 7 levels
 
-      ``rep``
-         replicate, 3 levels
+``yield``
+   yield, kg/ha
 
-      ``gen``
-         genotype, 7 levels
+``ANT``
+   anthesis, days after emergence
 
-      ``yield``
-         yield, kg/ha
+``MAT``
+   maturity, days after emergence
 
-      ``ANT``
-         anthesis, days after emergence
+``GFI``
+   grainfill, MAT-ANT
 
-      ``MAT``
-         maturity, days after emergence
+``PLH``
+   plant height, cm
 
-      ``GFI``
-         grainfill, MAT-ANT
+``BIO``
+   biomass above ground, kg/ha
 
-      ``PLH``
-         plant height, cm
+``HID``
+   harvest index
 
-      ``BIO``
-         biomass above ground, kg/ha
+``STW``
+   straw yield, kg/ha
 
-      ``HID``
-         harvest index
+``NSM``
+   spikes / m^2
 
-      ``STW``
-         straw yield, kg/ha
+``NGM``
+   grains / m^2
 
-      ``NSM``
-         spikes / m^2
+``NGS``
+   grains per spike
 
-      ``NGM``
-         grains / m^2
+``TKW``
+   thousand kernel weight, g
 
-      ``NGS``
-         grains per spike
+``WTI``
+   weight per tiller, g
 
-      ``TKW``
-         thousand kernel weight, g
+``SGW``
+   spike grain weight, g
 
-      ``WTI``
-         weight per tiller, g
+``VGR``
+   vegetative growth rate, kg/ha/day, STW/ANT
 
-      ``SGW``
-         spike grain weight, g
+``KGR``
+   kernel growth rate, mg/kernel/day
 
-      ``VGR``
-         vegetative growth rate, kg/ha/day, STW/ANT
+Details
+~~~~~~~
 
-      ``KGR``
-         kernel growth rate, mg/kernel/day
+Conducted in Ciudad Obregon, Mexico.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      Conducted in Ciudad Obregon, Mexico.
+Mateo Vargas and Jose Crossa and Ken Sayre and Matthew Renolds and
+Martha E Ramirez and Mike Talbot, 1998. Interpreting Genotype x
+Environment Interaction in Wheat by Partial Least Squares Regression.
+Crop Science, 38, 679-689.
+https://doi.org/10.2135/cropsci1998.0011183X003800030010x
 
-      .. rubric:: Source
-         :name: source
+Data provided by Jose Crossa.
 
-      Mateo Vargas and Jose Crossa and Ken Sayre and Matthew Renolds and
-      Martha E Ramirez and Mike Talbot, 1998. Interpreting Genotype x
-      Environment Interaction in Wheat by Partial Least Squares
-      Regression. Crop Science, 38, 679-689.
-      https://doi.org/10.2135/cropsci1998.0011183X003800030010x
+Examples
+~~~~~~~~
 
-      Data provided by Jose Crossa.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
+     data(vargas.wheat1.covs)
+     data(vargas.wheat1.traits)
 
-         ## Not run: 
+     libs(pls)
+     libs(reshape2)
 
-         library(agridat)
-           data(vargas.wheat1.covs)
-           data(vargas.wheat1.traits)
+     # Yield as a function of non-yield traits
+     Y0 <- vargas.wheat1.traits[,c('gen','rep','year','yield')]
+     Y0 <- acast(Y0, gen ~ year, value.var='yield', fun=mean)
+     Y0 <- sweep(Y0, 1, rowMeans(Y0))
+     Y0 <- sweep(Y0, 2, colMeans(Y0)) # GxE residuals
+     Y1 <- scale(Y0) # scaled columns
+     X1 <- vargas.wheat1.traits[, -4] # omit yield
+     X1 <- aggregate(cbind(ANT,MAT,GFI,PLH,BIO,HID,STW,NSM,NGM,
+                           NGS,TKW,WTI,SGW,VGR,KGR) ~ gen, data=X1, FUN=mean)
+     rownames(X1) <- X1$gen
+     X1$gen <- NULL
+     X1 <- scale(X1) # scaled columns
+     m1 <- plsr(Y1~X1)
+     loadings(m1)[,1,drop=FALSE] # X loadings in Table 1 of Vargas
 
-           libs(pls)
-           libs(reshape2)
+     biplot(m1, cex=.5, which="x", var.axes=TRUE,
+            main="vargas.wheat1 - gen ~ trait") # Vargas figure 2a
 
-           # Yield as a function of non-yield traits
-           Y0 <- vargas.wheat1.traits[,c('gen','rep','year','yield')]
-           Y0 <- acast(Y0, gen ~ year, value.var='yield', fun=mean)
-           Y0 <- sweep(Y0, 1, rowMeans(Y0))
-           Y0 <- sweep(Y0, 2, colMeans(Y0)) # GxE residuals
-           Y1 <- scale(Y0) # scaled columns
-           X1 <- vargas.wheat1.traits[, -4] # omit yield
-           X1 <- aggregate(cbind(ANT,MAT,GFI,PLH,BIO,HID,STW,NSM,NGM,
-                                 NGS,TKW,WTI,SGW,VGR,KGR) ~ gen, data=X1, FUN=mean)
-           rownames(X1) <- X1$gen
-           X1$gen <- NULL
-           X1 <- scale(X1) # scaled columns
-           m1 <- plsr(Y1~X1)
-           loadings(m1)[,1,drop=FALSE] # X loadings in Table 1 of Vargas
+     # Yield as a function of environment covariates
+     Y2 <- t(Y0)
+     X2 <- vargas.wheat1.covs
+     rownames(X2) <- X2$year
+     X2$year <- NULL
+     Y2 <- scale(Y2)
+     X2 <- scale(X2)
 
-           biplot(m1, cex=.5, which="x", var.axes=TRUE,
-                  main="vargas.wheat1 - gen ~ trait") # Vargas figure 2a
+     m2 <- plsr(Y2~X2)
+     loadings(m2)[,1,drop=FALSE] # X loadings in Table 2 of Vargas
 
-           # Yield as a function of environment covariates
-           Y2 <- t(Y0)
-           X2 <- vargas.wheat1.covs
-           rownames(X2) <- X2$year
-           X2$year <- NULL
-           Y2 <- scale(Y2)
-           X2 <- scale(X2)
-
-           m2 <- plsr(Y2~X2)
-           loadings(m2)[,1,drop=FALSE] # X loadings in Table 2 of Vargas
-
-         ## End(Not run)
+   ## End(Not run)

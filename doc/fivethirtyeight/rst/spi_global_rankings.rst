@@ -1,65 +1,60 @@
-.. container::
+=================== ===============
+spi_global_rankings R Documentation
+=================== ===============
 
-   .. container::
+Current SPI ratings and rankings for men's club teams
+-----------------------------------------------------
 
-      =================== ===============
-      spi_global_rankings R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Current SPI ratings and rankings for men's club teams
-         :name: current-spi-ratings-and-rankings-for-mens-club-teams
+The raw data behind the stories "Club Soccer Predictions"
+https://projects.fivethirtyeight.com/soccer-predictions/ and "Global
+Club Soccer Rankings"
+https://projects.fivethirtyeight.com/soccer-predictions/global-club-rankings/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the stories "Club Soccer Predictions"
-      https://projects.fivethirtyeight.com/soccer-predictions/ and
-      "Global Club Soccer Rankings"
-      https://projects.fivethirtyeight.com/soccer-predictions/global-club-rankings/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   spi_global_rankings
 
-      .. code:: R
+Format
+~~~~~~
 
-         spi_global_rankings
+A data frame with 453 rows representing soccer rankings and 7 variables:
 
-      .. rubric:: Format
-         :name: format
+name
+   The name of the soccer club.
 
-      A data frame with 453 rows representing soccer rankings and 7
-      variables:
+league
+   The name of the league to which the club belongs.
 
-      name
-         The name of the soccer club.
+rank
+   A club's current global ranking.
 
-      league
-         The name of the league to which the club belongs.
+prev_rank
+   A club's previous global ranking
 
-      rank
-         A club's current global ranking.
+off
+   Offensive rating for a given team (the higher the value the stronger
+   the team's offense).
 
-      prev_rank
-         A club's previous global ranking
+def
+   Defensive rating for a given team (the lower the value the stronger
+   the team's defense).
 
-      off
-         Offensive rating for a given team (the higher the value the
-         stronger the team's offense).
+spi
+   A club's SPI score.
 
-      def
-         Defensive rating for a given team (the lower the value the
-         stronger the team's defense).
+Source
+~~~~~~
 
-      spi
-         A club's SPI score.
+See
+https://github.com/fivethirtyeight/data/blob/master/soccer-spi/README.md
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      See
-      https://github.com/fivethirtyeight/data/blob/master/soccer-spi/README.md
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``spi_matches``
+``spi_matches``

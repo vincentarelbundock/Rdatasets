@@ -1,53 +1,48 @@
-.. container::
+========= ===============
+minn38_df R Documentation
+========= ===============
 
-   .. container::
+Minnesota High School Graduates of 1938
+---------------------------------------
 
-      ========= ===============
-      minn38_df R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Minnesota High School Graduates of 1938
-         :name: minnesota-high-school-graduates-of-1938
+The dataset name has been changed to 'minn38_df' to avoid confusion with
+other packages in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a data frame. The original content of the dataset has
+not been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'minn38_df' to avoid
-      confusion with other packages in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a data frame. The
-      original content of the dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(minn38_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(minn38_df)
+A data frame with 168 observations and 5 variables:
 
-      .. rubric:: Format
-         :name: format
+hs
+   Factor indicating the high school status, with 3 levels.
 
-      A data frame with 168 observations and 5 variables:
+phs
+   Factor indicating the post-high school status, with 4 levels.
 
-      hs
-         Factor indicating the high school status, with 3 levels.
+fol
+   Factor indicating the field of study, with 7 levels.
 
-      phs
-         Factor indicating the post-high school status, with 4 levels.
+sex
+   Factor indicating the gender of the participants, with 2 levels.
 
-      fol
-         Factor indicating the field of study, with 7 levels.
+f
+   Integer representing the associated numerical value for the
+   participants.
 
-      sex
-         Factor indicating the gender of the participants, with 2
-         levels.
+Source
+~~~~~~
 
-      f
-         Integer representing the associated numerical value for the
-         participants.
-
-      .. rubric:: Source
-         :name: source
-
-      Data from the Minnesota 1938 study
+Data from the Minnesota 1938 study

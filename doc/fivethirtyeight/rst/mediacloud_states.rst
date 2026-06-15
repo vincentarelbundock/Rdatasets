@@ -1,57 +1,51 @@
-.. container::
+================= ===============
+mediacloud_states R Documentation
+================= ===============
 
-   .. container::
+The Media Really Started Paying Attention to Puerto Rico When Trump Did
+-----------------------------------------------------------------------
 
-      ================= ===============
-      mediacloud_states R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The Media Really Started Paying Attention to Puerto
-         Rico When Trump Did
-         :name: the-media-really-started-paying-attention-to-puerto-rico-when-trump-did
+The raw data behind the story "The Media Really Started Paying Attention
+to Puerto Rico When Trump Did"
+https://fivethirtyeight.com/features/the-media-really-started-paying-attention-to-puerto-rico-when-trump-did/:
+Mediacloud States Data.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "The Media Really Started Paying
-      Attention to Puerto Rico When Trump Did"
-      https://fivethirtyeight.com/features/the-media-really-started-paying-attention-to-puerto-rico-when-trump-did/:
-      Mediacloud States Data.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   mediacloud_states
 
-      .. code:: R
+Format
+~~~~~~
 
-         mediacloud_states
+A data frame with 51 rows representing dates and 4 variables:
 
-      .. rubric:: Format
-         :name: format
+date
+   Date
 
-      A data frame with 51 rows representing dates and 4 variables:
+texas
+   The number of sentences in online news which mention Texas on the
+   specified date
 
-      date
-         Date
+puerto_rico
+   The number of sentences in online news which mention Puerto Rico
 
-      texas
-         The number of sentences in online news which mention Texas on
-         the specified date
+florida
+   The number of sentences in online news which mention Florida
 
-      puerto_rico
-         The number of sentences in online news which mention Puerto
-         Rico
+Source
+~~~~~~
 
-      florida
-         The number of sentences in online news which mention Florida
+Mediacloud https://mediacloud.org/
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      Mediacloud https://mediacloud.org/
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``mediacloud_hurricanes``, ``mediacloud_online_news``,
-      ``mediacloud_trump``, ``tv_hurricanes``,
-      ``tv_hurricanes_by_network``, ``tv_states``, ``google_trends``
+``mediacloud_hurricanes``, ``mediacloud_online_news``,
+``mediacloud_trump``, ``tv_hurricanes``, ``tv_hurricanes_by_network``,
+``tv_states``, ``google_trends``

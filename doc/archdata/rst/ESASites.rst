@@ -1,111 +1,106 @@
-.. container::
+======== ===============
+ESASites R Documentation
+======== ===============
 
-   .. container::
+Early Stone Age Sites - Norway
+------------------------------
 
-      ======== ===============
-      ESASites R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Early Stone Age Sites - Norway
-         :name: early-stone-age-sites---norway
+Data on 43 Early Stone Age assemblages in Norway come originally from
+Bølviken et al (1982).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data on 43 Early Stone Age assemblages in Norway come originally
-      from Bølviken et al (1982).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("ESASites")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("ESASites")
+A data frame with 43 observations on the following 16 variables.
 
-      .. rubric:: Format
-         :name: format
+``TA``
+   Tanged Arrows
 
-      A data frame with 43 observations on the following 16 variables.
+``BA``
+   Blade Arrows
 
-      ``TA``
-         Tanged Arrows
+``TOA``
+   Transverse and Oblique Arrows
 
-      ``BA``
-         Blade Arrows
+``AA``
+   Atypical Arrows
 
-      ``TOA``
-         Transverse and Oblique Arrows
+``M``
+   Microliths
 
-      ``AA``
-         Atypical Arrows
+``FK``
+   Flake Knives
 
-      ``M``
-         Microliths
+``BK``
+   Blade Knives
 
-      ``FK``
-         Flake Knives
+``NK``
+   Notched Knives
 
-      ``BK``
-         Blade Knives
+``CFS``
+   Core and Flake Scrapers
 
-      ``NK``
-         Notched Knives
+``BS``
+   Blade Scrapers
 
-      ``CFS``
-         Core and Flake Scrapers
+``DS``
+   Disc Scrapers
 
-      ``BS``
-         Blade Scrapers
+``Bu``
+   Burins
 
-      ``DS``
-         Disc Scrapers
+``Ax``
+   Axes
 
-      ``Bu``
-         Burins
+``Ch``
+   Chisels
 
-      ``Ax``
-         Axes
+``SAx``
+   Slate Axes
 
-      ``Ch``
-         Chisels
+``Pf``
+   Perforators
 
-      ``SAx``
-         Slate Axes
+Details
+~~~~~~~
 
-      ``Pf``
-         Perforators
+Data on 43 Early Stone Age (8000 - 4000 BCE) assemblages in Norway come
+originally from Bølviken et al (1982). The data were scanned from Table
+A5 (Appendix A) in Baxter (1994).
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      Data on 43 Early Stone Age (8000 - 4000 BCE) assemblages in Norway
-      come originally from Bølviken et al (1982). The data were scanned
-      from Table A5 (Appendix A) in Baxter (1994).
+Baxter, M. J. 1994. *Exploratory Multivariate Analysis in Archaeology*.
+Edinburgh University Press. Edinburgh.
 
-      .. rubric:: Source
-         :name: source
+Bølviken, E., E. Helskog, K. Helskog, I. M. Holm-Olsen, L. Solheim, and
+R. Bertelsen. 1982. Correspondence Analysis: An Alternative to Principal
+Components. *World Archaeology* 14: 41-60.
 
-      Baxter, M. J. 1994. *Exploratory Multivariate Analysis in
-      Archaeology*. Edinburgh University Press. Edinburgh.
+References
+~~~~~~~~~~
 
-      Bølviken, E., E. Helskog, K. Helskog, I. M. Holm-Olsen, L.
-      Solheim, and R. Bertelsen. 1982. Correspondence Analysis: An
-      Alternative to Principal Components. *World Archaeology* 14:
-      41-60.
+Carlson, David L. 2017. *Quantitative Methods in Archaeology Using R*.
+Cambridge University Press, pp 398-410.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Carlson, David L. 2017. *Quantitative Methods in Archaeology Using
-      R*. Cambridge University Press, pp 398-410.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(ESASites)
-         NS <- rowSums(ESASites)
-         NT <- rowSums(ESASites > 0)
-         plot(NS, NT, xlab="Number of Artifacts", ylab="Number of Types", main="Early Stone Age Sites",
-             las=1)
+   data(ESASites)
+   NS <- rowSums(ESASites)
+   NT <- rowSums(ESASites > 0)
+   plot(NS, NT, xlab="Number of Artifacts", ylab="Number of Types", main="Early Stone Age Sites",
+       las=1)

@@ -1,22 +1,18 @@
-.. container::
+=========== ===============
+nam.goodCol R Documentation
+=========== ===============
 
-   .. container::
+internal nam.goodCol
+--------------------
 
-      =========== ===============
-      nam.goodCol R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: internal nam.goodCol
-         :name: internal-nam.goodcol
+intended for internal use only
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      intended for internal use only
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
-
-      .. code:: R
-
-         nam.goodCol
+   nam.goodCol

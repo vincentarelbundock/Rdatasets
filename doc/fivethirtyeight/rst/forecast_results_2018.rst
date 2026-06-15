@@ -1,69 +1,65 @@
-.. container::
+===================== ===============
+forecast_results_2018 R Documentation
+===================== ===============
 
-   .. container::
+How FiveThirtyEight's 2018 Midterm Forecasts Did
+------------------------------------------------
 
-      ===================== ===============
-      forecast_results_2018 R Documentation
-      ===================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: How FiveThirtyEight's 2018 Midterm Forecasts Did
-         :name: how-fivethirtyeights-2018-midterm-forecasts-did
+The raw data behind the story 'How FiveThirtyEight's 2018 Midterm
+Forecasts Did'
+https://fivethirtyeight.com/features/how-fivethirtyeights-2018-midterm-forecasts-did/
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story 'How FiveThirtyEight's 2018 Midterm
-      Forecasts Did'
-      https://fivethirtyeight.com/features/how-fivethirtyeights-2018-midterm-forecasts-did/
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   forecast_results_2018
 
-      .. code:: R
+Format
+~~~~~~
 
-         forecast_results_2018
+A dataframe with 1518 rows representing forecast results (as of December
+3, 2018) and 11 variables:
 
-      .. rubric:: Format
-         :name: format
+cycle
+   cycle of the election
 
-      A dataframe with 1518 rows representing forecast results (as of
-      December 3, 2018) and 11 variables:
+branch
+   branch of the election
 
-      cycle
-         cycle of the election
+race
+   election forecast for the gubernatorial race
 
-      branch
-         branch of the election
+forecastdate
+   the date of the forecast
 
-      race
-         election forecast for the gubernatorial race
+version
+   version of the election forecast
 
-      forecastdate
-         the date of the forecast
+dem_win_prob
+   the probability of winning for the Democrat
 
-      version
-         version of the election forecast
+rep_win_prob
+   the probability of winning for the Republican
 
-      dem_win_prob
-         the probability of winning for the Democrat
+category
+   the predicted political affiliation of the forecast
 
-      rep_win_prob
-         the probability of winning for the Republican
+democrat_won
+   whether the Democrat won
 
-      category
-         the predicted political affiliation of the forecast
+republican_won
+   whether the Republican won
 
-      democrat_won
-         whether the Democrat won
+uncalled
+   if a race was uncalled
 
-      republican_won
-         whether the Republican won
+Source
+~~~~~~
 
-      uncalled
-         if a race was uncalled
-
-      .. rubric:: Source
-         :name: source
-
-      FiveThirtyEight's 2018 House Forecast
-      https://projects.fivethirtyeight.com/2018-midterm-election-forecast/house/
+FiveThirtyEight's 2018 House Forecast
+https://projects.fivethirtyeight.com/2018-midterm-election-forecast/house/

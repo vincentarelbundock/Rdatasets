@@ -1,53 +1,48 @@
-.. container::
+=============== ===============
+gradestv_tbl_df R Documentation
+=============== ===============
 
-   .. container::
+Relationship Between Watching TV and Grades (Simulated data)
+------------------------------------------------------------
 
-      =============== ===============
-      gradestv_tbl_df R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Relationship Between Watching TV and Grades (Simulated
-         data)
-         :name: relationship-between-watching-tv-and-grades-simulated-data
+This dataset, gradestv_tbl_df, is a tibble containing simulated data for
+analyzing the relationship between the number of hours per week students
+watch TV and their grades in a statistics class. It provides a simple
+dataset for exploring correlations or regression models in educational
+settings.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, gradestv_tbl_df, is a tibble containing simulated
-      data for analyzing the relationship between the number of hours
-      per week students watch TV and their grades in a statistics class.
-      It provides a simple dataset for exploring correlations or
-      regression models in educational settings.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(gradestv_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(gradestv_tbl_df)
+A tibble with 25 observations and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+tv
+   Number of hours per week students watch TV (integer).
 
-      A tibble with 25 observations and 2 variables:
+grades
+   Grade obtained in a statistics class (integer).
 
-      tv
-         Number of hours per week students watch TV (integer).
+Details
+~~~~~~~
 
-      grades
-         Grade obtained in a statistics class (integer).
+The dataset name has been kept as 'gradestv_tbl_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the educationR package and assists
+users in identifying its specific characteristics. The suffix 'tbl_df'
+indicates that the dataset is a tibble. The original content has not
+been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'gradestv_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      educationR package and assists users in identifying its specific
-      characteristics. The suffix 'tbl_df' indicates that the dataset is
-      a tibble. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      The dataset was taken from the openintro package.
+The dataset was taken from the openintro package.

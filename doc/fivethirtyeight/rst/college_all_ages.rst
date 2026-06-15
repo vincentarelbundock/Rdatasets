@@ -1,75 +1,71 @@
-.. container::
+================ ===============
+college_all_ages R Documentation
+================ ===============
 
-   .. container::
+The Economic Guide To Picking A College Major
+---------------------------------------------
 
-      ================ ===============
-      college_all_ages R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: The Economic Guide To Picking A College Major
-         :name: the-economic-guide-to-picking-a-college-major
+The raw data behind the story "The Economic Guide To Picking A College
+Major"
+https://fivethirtyeight.com/features/the-economic-guide-to-picking-a-college-major/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "The Economic Guide To Picking A
-      College Major"
-      https://fivethirtyeight.com/features/the-economic-guide-to-picking-a-college-major/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   college_all_ages
 
-      .. code:: R
+Format
+~~~~~~
 
-         college_all_ages
+A data frame with 173 rows representing majors (all ages) and 11
+variables:
 
-      .. rubric:: Format
-         :name: format
+major_code
+   Major code, FO1DP in ACS PUMS
 
-      A data frame with 173 rows representing majors (all ages) and 11
-      variables:
+major
+   Major description
 
-      major_code
-         Major code, FO1DP in ACS PUMS
+major_category
+   Category of major from Carnevale et al
 
-      major
-         Major description
+total
+   Total number of people with major
 
-      major_category
-         Category of major from Carnevale et al
+employed
+   Number employed (ESR == 1 or 2)
 
-      total
-         Total number of people with major
+employed_fulltime_yearround
+   Employed at least 50 weeks (WKW == 1) and at least 35 hours (WKHP >=
+   35)
 
-      employed
-         Number employed (ESR == 1 or 2)
+unemployed
+   Number unemployed (ESR == 3)
 
-      employed_fulltime_yearround
-         Employed at least 50 weeks (WKW == 1) and at least 35 hours
-         (WKHP >= 35)
+unemployment_rate
+   Unemployed / (Unemployed + Employed)
 
-      unemployed
-         Number unemployed (ESR == 3)
+p25th
+   25th percentile of earnings
 
-      unemployment_rate
-         Unemployed / (Unemployed + Employed)
+median
+   Median earnings of full-time, year-round workers
 
-      p25th
-         25th percentile of earnings
+p75th
+   75th percentile of earnings
 
-      median
-         Median earnings of full-time, year-round workers
+Source
+~~~~~~
 
-      p75th
-         75th percentile of earnings
+See
+https://github.com/fivethirtyeight/data/blob/master/college-majors/readme.md.
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      See
-      https://github.com/fivethirtyeight/data/blob/master/college-majors/readme.md.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``college_grad_students``, ``college_recent_grads``
+``college_grad_students``, ``college_recent_grads``

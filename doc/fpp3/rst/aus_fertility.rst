@@ -1,52 +1,48 @@
-.. container::
+============= ===============
+aus_fertility R Documentation
+============= ===============
 
-   .. container::
+Australian fertility rates
+--------------------------
 
-      ============= ===============
-      aus_fertility R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Australian fertility rates
-         :name: australian-fertility-rates
+``aus_fertility`` contains annual data on one measured variable:
 
-      .. rubric:: Description
-         :name: description
+===== ===================================
+Rate: Fertility rate (per thousand women)
+      
+===== ===================================
 
-      ``aus_fertility`` contains annual data on one measured variable:
+Format
+~~~~~~
 
-      ===== ===================================
-      Rate: Fertility rate (per thousand women)
-      \     
-      ===== ===================================
+Time series of class 'tsibble'
 
-      .. rubric:: Format
-         :name: format
+Details
+~~~~~~~
 
-      Time series of class 'tsibble'
+Each series is uniquely identified using two keys:
 
-      .. rubric:: Details
-         :name: details
+======= =================================
+Region: Australia, states and territories
+Age:    Age of the woman
+        
+======= =================================
 
-      Each series is uniquely identified using two keys:
+based on calendar year of registration data. It covers the period from
+1975–2022.
 
-      ======= =================================
-      Region: Australia, states and territories
-      Age:    Age of the woman
-      \       
-      ======= =================================
+Source
+~~~~~~
 
-      based on calendar year of registration data. It covers the period
-      from 1975–2022.
+Australian Bureau of Statistics.
+https://www.abs.gov.au/statistics/people/population/births-australia/2022
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Australian Bureau of Statistics.
-      https://www.abs.gov.au/statistics/people/population/births-australia/2022
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         aus_fertility
+   aus_fertility

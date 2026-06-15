@@ -1,86 +1,82 @@
-.. container::
+======== ===============
+repPsych R Documentation
+======== ===============
 
-   .. container::
+Summary results from Reproducibility Study: Psychology
+------------------------------------------------------
 
-      ======== ===============
-      repPsych R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Summary results from Reproducibility Study: Psychology
-         :name: summary-results-from-reproducibility-study-psychology
+The chief interest, in collating this dataset, was in the measures of
+effect size, for the originl study and for the replication.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The chief interest, in collating this dataset, was in the measures
-      of effect size, for the originl study and for the replication.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("repPsych")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("repPsych")
+A data frame with 97 observations on the following 12 variables.
 
-      .. rubric:: Format
-         :name: format
+``stat``
+   Test statistic. Character
 
-      A data frame with 97 observations on the following 12 variables.
+``Journal``
+   Where published. Character.
 
-      ``stat``
-         Test statistic. Character
+``Discipline``
+   Cognitive or Social. Character.
 
-      ``Journal``
-         Where published. Character.
+``reportedP.O``
+   Reported p-value. Character.
 
-      ``Discipline``
-         Cognitive or Social. Character.
+``effSizeO``
+   Original effect size. Character.
 
-      ``reportedP.O``
-         Reported p-value. Character.
+``T_r.O``
+   Original effect size, as correlation. Numeric.
 
-      ``effSizeO``
-         Original effect size. Character.
+``T_r.R``
+   Replication effect size, as correlation. Numeric.
 
-      ``T_r.O``
-         Original effect size, as correlation. Numeric.
+``efftype``
+   a character vector
 
-      ``T_r.R``
-         Replication effect size, as correlation. Numeric.
+``tlike``
+   Was test statistic t or F(1, m). Logical.
 
-      ``efftype``
-         a character vector
+``d_O``
+   Original effect size, on Cohen's d scale. Numeric.
 
-      ``tlike``
-         Was test statistic t or F(1, m). Logical.
+``d_R``
+   Replication effect size, on Cohen's d scale. Numeric.
 
-      ``d_O``
-         Original effect size, on Cohen's d scale. Numeric.
+Details
+~~~~~~~
 
-      ``d_R``
-         Replication effect size, on Cohen's d scale. Numeric.
+Effect estimates on a correlation scale were converted to a Cohen's
+``d`` scale using ``d`` = ``2r``/``sqrt(1-r^2)``.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      Effect estimates on a correlation scale were converted to a
-      Cohen's ``d`` scale using ``d`` = ``2r``/``sqrt(1-r^2)``.
+https://osf.io/fgjvw/
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      https://osf.io/fgjvw/
+https://osf.io/ezum7/ https://osf.io/z7aux Open Science Collaboration,
+2015. Estimating the reproducibility of psychological science. Science,
+349(6251), p.aac4716.
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      https://osf.io/ezum7/ https://osf.io/z7aux Open Science
-      Collaboration, 2015. Estimating the reproducibility of
-      psychological science. Science, 349(6251), p.aac4716.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(repPsych)
+   data(repPsych)

@@ -1,40 +1,35 @@
-.. container::
+===== ===============
+poori R Documentation
+===== ===============
 
-   .. container::
+Data from Yadav's poori experiment
+----------------------------------
 
-      ===== ===============
-      poori R Documentation
-      ===== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Data from Yadav's poori experiment
-         :name: data-from-yadavs-poori-experiment
+This dataset is used in the exercises of Chapter 3 from the textbook.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset is used in the exercises of Chapter 3 from the
-      textbook.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   poori
 
-      .. code:: R
+Format
+~~~~~~
 
-         poori
+A data frame with 30 rows and 2 variables:
 
-      .. rubric:: Format
-         :name: format
+score
+   Observed outcome
 
-      A data frame with 30 rows and 2 variables:
+group
+   Treatment condition. 1 = treatment, 0 = control
 
-      score
-         Observed outcome
+Source
+~~~~~~
 
-      group
-         Treatment condition. 1 = treatment, 0 = control
-
-      .. rubric:: Source
-         :name: source
-
-      Yadav, Monika. “Practicum Experiment: Analysis.” Columbia
-      University, 2020.
+Yadav, Monika. “Practicum Experiment: Analysis.” Columbia University,
+2020.

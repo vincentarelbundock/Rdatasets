@@ -1,35 +1,32 @@
-.. container::
+==== ===============
+goog R Documentation
+==== ===============
 
-   .. container::
+Daily closing stock prices of Google Inc
+----------------------------------------
 
-      ==== ===============
-      goog R Documentation
-      ==== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Daily closing stock prices of Google Inc
-         :name: daily-closing-stock-prices-of-google-inc
+Closing stock prices of GOOG from the NASDAQ exchange, for 1000
+consecutive trading days between 25 February 2013 and 13 February 2017.
+Adjusted for splits. ``goog200`` contains the first 200 observations
+from ``goog``.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Closing stock prices of GOOG from the NASDAQ exchange, for 1000
-      consecutive trading days between 25 February 2013 and 13 February
-      2017. Adjusted for splits. ``goog200`` contains the first 200
-      observations from ``goog``.
+Daily time series of class ``ts``.
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      Daily time series of class ``ts``.
+https://finance.yahoo.com/quote/GOOG/history/
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      https://finance.yahoo.com/quote/GOOG/history
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         autoplot(goog)
+   autoplot(goog)

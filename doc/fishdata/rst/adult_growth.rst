@@ -1,49 +1,43 @@
-.. container::
+============ ===============
+adult_growth R Documentation
+============ ===============
 
-   .. container::
+Growth data of adult fish
+-------------------------
 
-      ============ ===============
-      adult_growth R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Growth data of adult fish
-         :name: growth-data-of-adult-fish
+A dataset containing daily age and growth data for adult Galaxis
+maculatus.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A dataset containing daily age and growth data for adult Galaxis
-      maculatus.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   adult_growth
 
-      .. code:: R
+Format
+~~~~~~
 
-         adult_growth
+A dataset containing 16795 rows and 4 variables
 
-      .. rubric:: Format
-         :name: format
+fish_code
+   Foreign key, matches to 'adults'. Identifies the fish being measured.
 
-      A dataset containing 16795 rows and 4 variables
+period
+   a count of each otolith increment. Counts a day in the fishes life
 
-      fish_code
-         Foreign key, matches to 'adults'. Identifies the fish being
-         measured.
+position
+   the distance of the increment from the centre of the otolith
 
-      period
-         a count of each otolith increment. Counts a day in the fishes
-         life
+distance
+   the distance of the increment from the previous increment
 
-      position
-         the distance of the increment from the centre of the otolith
+Examples
+~~~~~~~~
 
-      distance
-         the distance of the increment from the previous increment
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         data(adult_growth)
+   data(adult_growth)

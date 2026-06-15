@@ -1,67 +1,62 @@
-.. container::
+======== ===============
+TranspEq R Documentation
+======== ===============
 
-   .. container::
+Statewide Data on Transportation Equipment Manufacturing
+--------------------------------------------------------
 
-      ======== ===============
-      TranspEq R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Statewide Data on Transportation Equipment
-         Manufacturing
-         :name: statewide-data-on-transportation-equipment-manufacturing
+a cross-section
 
-      .. rubric:: Description
-         :name: description
+*number of observations* : 25
 
-      a cross-section
+*observation* : regional
 
-      *number of observations* : 25
+*country* : United States
 
-      *observation* : regional
+Usage
+~~~~~
 
-      *country* : United States
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(TranspEq)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(TranspEq)
+A dataframe containing :
 
-      .. rubric:: Format
-         :name: format
+state
+   state name
 
-      A dataframe containing :
+va
+   output
 
-      state
-         state name
+capital
+   capital input
 
-      va
-         output
+labor
+   labor input
 
-      capital
-         capital input
+nfirm
+   number of firms
 
-      labor
-         labor input
+Source
+~~~~~~
 
-      nfirm
-         number of firms
+Zellner, A. and N. Revankar (1970) “Generalized production functions”,
+*Review of Economic Studies*, **37**, 241-250.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Zellner, A. and N. Revankar (1970) “Generalized production
-      functions”, *Review of Economic Studies*, **37**, 241-250.
+Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
+https://archive.org/details/econometrics0000haya, Table F9.2.
 
-      .. rubric:: References
-         :name: references
+See Also
+~~~~~~~~
 
-      Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
-      https://archive.org/details/econometrics0000haya, Table F9.2.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-      ``Index.Observations``
+``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+``Index.Observations``

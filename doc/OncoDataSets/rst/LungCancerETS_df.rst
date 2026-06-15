@@ -1,86 +1,80 @@
-.. container::
+================ ===============
+LungCancerETS_df R Documentation
+================ ===============
 
-   .. container::
+Passive Smoking's Lung Cancer Threat in Women
+---------------------------------------------
 
-      ================ ===============
-      LungCancerETS_df R Documentation
-      ================ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Passive Smoking's Lung Cancer Threat in Women
-         :name: passive-smokings-lung-cancer-threat-in-women
+This dataset, LungCancerETS_df, is a data frame containing results from
+37 studies on the risk of lung cancer in women exposed to environmental
+tobacco smoke (ETS) from their smoking spouse. The dataset includes data
+from both cohort and case-control studies, focusing on women who are
+lifelong nonsmokers but have been exposed to ETS.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, LungCancerETS_df, is a data frame containing results
-      from 37 studies on the risk of lung cancer in women exposed to
-      environmental tobacco smoke (ETS) from their smoking spouse. The
-      dataset includes data from both cohort and case-control studies,
-      focusing on women who are lifelong nonsmokers but have been
-      exposed to ETS.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(LungCancerETS_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(LungCancerETS_df)
+A data frame with 37 observations and 11 variables:
 
-      .. rubric:: Format
-         :name: format
+study
+   Study identifier (integer).
 
-      A data frame with 37 observations and 11 variables:
+author
+   Author(s) of the study (character).
 
-      study
-         Study identifier (integer).
+year
+   Year of publication (integer).
 
-      author
-         Author(s) of the study (character).
+country
+   Country where the study was conducted (character).
 
-      year
-         Year of publication (integer).
+design
+   Design of the study (e.g., cohort or case-control) (character).
 
-      country
-         Country where the study was conducted (character).
+cases
+   Number of cases in the study (integer).
 
-      design
-         Design of the study (e.g., cohort or case-control) (character).
+or
+   Odds ratio estimate (numeric).
 
-      cases
-         Number of cases in the study (integer).
+or.lb
+   Lower bound of the odds ratio confidence interval (numeric).
 
-      or
-         Odds ratio estimate (numeric).
+or.ub
+   Upper bound of the odds ratio confidence interval (numeric).
 
-      or.lb
-         Lower bound of the odds ratio confidence interval (numeric).
+yi
+   Effect size estimate (numeric).
 
-      or.ub
-         Upper bound of the odds ratio confidence interval (numeric).
+vi
+   Variance of the effect size estimate (numeric).
 
-      yi
-         Effect size estimate (numeric).
+Details
+~~~~~~~
 
-      vi
-         Variance of the effect size estimate (numeric).
+The dataset name has been kept as 'LungCancerETS_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the OncoDataSets package and assists
+users in identifying its specific characteristics. The suffix '\_df'
+indicates that the dataset is a data frame. The original content has not
+been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'LungCancerETS_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      OncoDataSets package and assists users in identifying its specific
-      characteristics. The suffix '\_df' indicates that the dataset is a
-      data frame. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the metadat package. Hackshaw, A. K., Law, M. R.,
-      & Wald, N. J. (1997). The accumulated evidence on lung cancer and
-      environmental tobacco smoke. British Medical Journal, 315(7114),
-      980-988. https://doi.org/10.1136/bmj.315.7114.980 Hackshaw, A. K.
-      (1998). Lung cancer and passive smoking. Statistical Methods in
-      Medical Research, 7(2), 119-136.
-      https://doi.org/10.1177/096228029800700203
+Data taken from the metadat package. Hackshaw, A. K., Law, M. R., &
+Wald, N. J. (1997). The accumulated evidence on lung cancer and
+environmental tobacco smoke. British Medical Journal, 315(7114),
+980-988. https://doi.org/10.1136/bmj.315.7114.980 Hackshaw, A. K.
+(1998). Lung cancer and passive smoking. Statistical Methods in Medical
+Research, 7(2), 119-136. https://doi.org/10.1177/096228029800700203

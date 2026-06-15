@@ -118,22 +118,22 @@ https://doi.org/10.2134/agronj1935.00021962002700120004x
   dat &lt;- siao.cotton.uniformity
   
   # 1930. Siao reports mean 132.25. We have 132.15
-  dat 
-  dat 
+  dat |&gt; filter(crop=="1930") |&gt; pull(yield) |&gt; mean()
+  dat |&gt; filter(crop=="1930") |&gt; desplot(yield~col*row, aspect=(200*1)/(24))
 
   # 1931a. Siao reports 61.8. We have 61.79
-  dat 
-  dat 
+  dat |&gt; filter(crop=="1931a") |&gt; pull(yield) |&gt; mean()
+  dat |&gt; filter(crop=="1931a") |&gt; desplot(yield~col*row, aspect=(200*1)/(24))
 
   # 1931b. Siao p 56 reports mean 212.7 (after dropping border???). We have 212.26
-  dat 
-  dat 
+  dat |&gt; filter(crop=="1931b", col&gt;1, col&lt;12, row&gt;1, row&lt;22) |&gt; pull(yield) |&gt; mean()
+  dat |&gt; filter(crop=="1931b") |&gt; desplot(yield~col*row, aspect=(22*4.5)/(12*16.66),
                                             tick=TRUE, flip=TRUE,
                                             main="siao.cotton.uniformity 1931b")
   
   # 1932. Siao p 61 reports mean 43.4. We have 43.03
-  dat 
-  dat 
+  dat |&gt; filter(crop=="1932") |&gt; pull(yield) |&gt; mean()
+  dat |&gt; filter(crop=="1931a") |&gt; desplot(yield~col*row, aspect=(200*1)/(24),
                                             tick=TRUE,
                                             main="siao.cotton.uniformity 1932")
   

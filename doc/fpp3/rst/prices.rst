@@ -1,35 +1,32 @@
-.. container::
+====== ===============
+prices R Documentation
+====== ===============
 
-   .. container::
+Price series for various commodities
+------------------------------------
 
-      ====== ===============
-      prices R Documentation
-      ====== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Price series for various commodities
-         :name: price-series-for-various-commodities
+Annual prices for eggs, chicken, copper, nails, oil and wheat. Eggs,
+chicken, nails, oil and copper in $US; wheat in British pounds. All
+prices adjusted for inflation.
 
-      .. rubric:: Description
-         :name: description
+Format
+~~~~~~
 
-      Annual prices for eggs, chicken, copper, nails, oil and wheat.
-      Eggs, chicken, nails, oil and copper in $US; wheat in British
-      pounds. All prices adjusted for inflation.
+Annual time series of class 'tsibble'.
 
-      .. rubric:: Format
-         :name: format
+Source
+~~~~~~
 
-      Annual time series of class 'tsibble'.
+Makridakis, Wheelwright and Hyndman (1998) \*Forecasting: methods and
+applications\*, John Wiley & Sons: New York. Chapter 9.
 
-      .. rubric:: Source
-         :name: source
+Examples
+~~~~~~~~
 
-      Makridakis, Wheelwright and Hyndman (1998) \*Forecasting: methods
-      and applications\*, John Wiley & Sons: New York. Chapter 9.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
-
-         prices |> autoplot(wheat)
+   prices |> autoplot(wheat)

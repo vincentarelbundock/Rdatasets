@@ -1,48 +1,44 @@
-.. container::
+========= ===============
+manhattan R Documentation
+========= ===============
 
-   .. container::
+manhattan
+---------
 
-      ========= ===============
-      manhattan R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: manhattan
-         :name: manhattan
+A data frame containing data on apartment rentals in Manhattan.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      A data frame containing data on apartment rentals in Manhattan.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   manhattan
 
-      .. code:: R
+Format
+~~~~~~
 
-         manhattan
+A data frame with 20 observations on the following 1 variable.
 
-      .. rubric:: Format
-         :name: format
+rent
+   Monthly rent for a 1 bedroom apartment listed as "For rent by owner".
 
-      A data frame with 20 observations on the following 1 variable.
+Examples
+~~~~~~~~
 
-      rent
-         Monthly rent for a 1 bedroom apartment listed as "For rent by
-         owner".
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   library(ggplot2)
 
-         library(ggplot2)
-
-         ggplot(manhattan, aes(rent)) +
-           geom_histogram(color = "white", binwidth = 300) +
-           theme_minimal() +
-           labs(
-             title = "Rent in Manhattan",
-             subtitle = "1 Bedroom Apartments",
-             x = "Rent (in US$)",
-             caption = "Source: Craigslist"
-           )
+   ggplot(manhattan, aes(rent)) +
+     geom_histogram(color = "white", binwidth = 300) +
+     theme_minimal() +
+     labs(
+       title = "Rent in Manhattan",
+       subtitle = "1 Bedroom Apartments",
+       x = "Rent (in US$)",
+       caption = "Source: Craigslist"
+     )

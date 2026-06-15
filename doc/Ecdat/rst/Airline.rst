@@ -1,64 +1,59 @@
-.. container::
+======= ===============
+Airline R Documentation
+======= ===============
 
-   .. container::
+Cost for U.S. Airlines
+----------------------
 
-      ======= ===============
-      Airline R Documentation
-      ======= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Cost for U.S. Airlines
-         :name: cost-for-u.s.-airlines
+a panel of 6 observations from 1970 to 1984
 
-      .. rubric:: Description
-         :name: description
+*number of observations* : 90
 
-      a panel of 6 observations from 1970 to 1984
+*observation* : production units
 
-      *number of observations* : 90
+*country* : United States
 
-      *observation* : production units
+Usage
+~~~~~
 
-      *country* : United States
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Airline)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Airline)
+A dataframe containing :
 
-      .. rubric:: Format
-         :name: format
+airline
+   airline
 
-      A dataframe containing :
+year
+   year
 
-      airline
-         airline
+cost
+   total cost, in $1,000
 
-      year
-         year
+output
+   output, in revenue passenger miles, index number
 
-      cost
-         total cost, in $1,000
+pf
+   fuel price
 
-      output
-         output, in revenue passenger miles, index number
+lf
+   load factor, the average capacity utilization of the fleet
 
-      pf
-         fuel price
+References
+~~~~~~~~~~
 
-      lf
-         load factor, the average capacity utilization of the fleet
+Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
+https://archive.org/details/econometricanaly0000gree_f4x3, Table F7.1.
 
-      .. rubric:: References
-         :name: references
+See Also
+~~~~~~~~
 
-      Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
-      https://archive.org/details/econometricanaly0000gree_f4x3, Table
-      F7.1.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-      ``Index.Observations``, ``Index.Time.Series``
+``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+``Index.Observations``, ``Index.Time.Series``

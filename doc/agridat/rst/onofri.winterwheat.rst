@@ -1,87 +1,82 @@
-.. container::
+================== ===============
+onofri.winterwheat R Documentation
+================== ===============
 
-   .. container::
+Multi-environment trial of winter wheat, 7 years
+------------------------------------------------
 
-      ================== ===============
-      onofri.winterwheat R Documentation
-      ================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Multi-environment trial of winter wheat, 7 years
-         :name: multi-environment-trial-of-winter-wheat-7-years
+Multi-environment trial of winter wheat, 7 years, 8 gen
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Multi-environment trial of winter wheat, 7 years, 8 gen
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("onofri.winterwheat")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("onofri.winterwheat")
+A data frame with 168 observations on the following 5 variables.
 
-      .. rubric:: Format
-         :name: format
+``year``
+   year, numeric
 
-      A data frame with 168 observations on the following 5 variables.
+``block``
+   block, 3 levels
 
-      ``year``
-         year, numeric
+``plot``
+   plot, numeric
 
-      ``block``
-         block, 3 levels
+``gen``
+   genotype, 7 levels
 
-      ``plot``
-         plot, numeric
+``yield``
+   yield for each plot
 
-      ``gen``
-         genotype, 7 levels
+Details
+~~~~~~~
 
-      ``yield``
-         yield for each plot
+Yield of 8 durum winter wheat varieties across 7 years with 3 reps.
 
-      .. rubric:: Details
-         :name: details
+Downloaded electronic version from here Nov 2015:
+https://www.casaonofri.it/Biometry/index.html
 
-      Yield of 8 durum winter wheat varieties across 7 years with 3
-      reps.
+Used with permission of Andrea Onofri.
 
-      Downloaded electronic version from here Nov 2015:
-      https://www.casaonofri.it/Biometry/index.html
+Source
+~~~~~~
 
-      Used with permission of Andrea Onofri.
+Andrea Onofri, Egidio Ciriciofolo (2007). Using R to Perform the AMMI
+Analysis on Agriculture Variety Trials. R News, Vol. 7, No. 1, pp.
+14-19.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Andrea Onofri, Egidio Ciriciofolo (2007). Using R to Perform the
-      AMMI Analysis on Agriculture Variety Trials. R News, Vol. 7, No.
-      1, pp. 14-19.
+F. Mendiburu. AMMI. https://tarwi.lamolina.edu.pe/~fmendiburu/AMMI.htm
 
-      .. rubric:: References
-         :name: references
+A. Onofri.
+https://accounts.unipg.it/~onofri/RTutorial/CaseStudies/WinterWheat.htm
 
-      F. Mendiburu. AMMI.
-      https://tarwi.lamolina.edu.pe/~fmendiburu/AMMI.htm
+Examples
+~~~~~~~~
 
-      A. Onofri.
-      https://accounts.unipg.it/~onofri/RTutorial/CaseStudies/WinterWheat.htm
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   library(agridat)
+   data(onofri.winterwheat)
+   dat <- onofri.winterwheat
+   dat <- transform(dat, year=factor(dat$year))
 
-         library(agridat)
-         data(onofri.winterwheat)
-         dat <- onofri.winterwheat
-         dat <- transform(dat, year=factor(dat$year))
+   m1 <- aov(yield ~ year + block:year + gen + gen:year, dat)
+   anova(m1) # Matches Onofri figure 1
 
-         m1 <- aov(yield ~ year + block:year + gen + gen:year, dat)
-         anova(m1) # Matches Onofri figure 1
-
-         libs(agricolae)
-         m2 <- AMMI(dat$year, dat$gen, dat$block, dat$yield)
-         plot(m2)
-         title("onofri.winterwheat - AMMI biplot")
+   libs(agricolae)
+   m2 <- AMMI(dat$year, dat$gen, dat$block, dat$yield)
+   plot(m2)
+   title("onofri.winterwheat - AMMI biplot")

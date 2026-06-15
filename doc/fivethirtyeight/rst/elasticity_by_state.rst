@@ -1,53 +1,48 @@
-.. container::
+=================== ===============
+elasticity_by_state R Documentation
+=================== ===============
 
-   .. container::
+Political Elasticity Scores
+---------------------------
 
-      =================== ===============
-      elasticity_by_state R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Political Elasticity Scores
-         :name: political-elasticity-scores
+This folder contains the data behind the story 'Election Update: The
+House Districts That Swing The Most (And Least) With The National Mood'
+https://fivethirtyeight.com/features/election-update-the-house-districts-that-swing-the-most-and-least-with-the-national-mood/
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This folder contains the data behind the story 'Election Update:
-      The House Districts That Swing The Most (And Least) With The
-      National Mood'
-      https://fivethirtyeight.com/features/election-update-the-house-districts-that-swing-the-most-and-least-with-the-national-mood/
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   elasticity_by_state
 
-      .. code:: R
+Format
+~~~~~~
 
-         elasticity_by_state
+A dataset with 435 rows representing each state and the District of
+Columbia and 2 variables
 
-      .. rubric:: Format
-         :name: format
+state
+   state
 
-      A dataset with 435 rows representing each state and the District
-      of Columbia and 2 variables
+pvi_538
+   pvi
 
-      state
-         state
+Note
+~~~~
 
-      pvi_538
-         pvi
+I used the full names for all states instead of abbreviations.
 
-      .. rubric:: Note
-         :name: note
+Source
+~~~~~~
 
-      I used the full names for all states instead of abbreviations.
+An elasticity score measures how sensitive a state or district it is to
+changes in the national political environment.
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      An elasticity score measures how sensitive a state or district it
-      is to changes in the national political environment.
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``elasticity_by_district``
+``elasticity_by_district``

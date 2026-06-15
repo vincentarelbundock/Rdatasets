@@ -16,37 +16,28 @@ function processMathHTML() {
 
 <table style="width: 100%;"><tr><td>Quarrels</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>
-Statistics of Deadly Quarrels
-</h2>
+<h2>Statistics of Deadly Quarrels</h2>
 
 <h3>Description</h3>
 
-<p><em>The Statistics Of Deadly Quarrels</em> by                            
-Lewis Fry Richardson (1960) is one of the earlier attempts                   
-at quantification of historical conflict behavior.                    
+<p><em>The Statistics Of Deadly Quarrels</em> by Lewis Fry Richardson (1960) is
+one of the earlier attempts at quantification of historical conflict
+behavior.
 </p>
-<p>The data set contains 779 dyadic deadly quarrels that cover a             
-time period from 1809 to 1949.  A quarrel consists of one             
-pair of belligerents, and is identified by its
-beginning date and magnitude (log 10 of the number of deaths).
-Neither actor in a quarrel is identified by name.
+<p>The data set contains 779 dyadic deadly quarrels that cover a time period
+from 1809 to 1949.  A quarrel consists of one pair of belligerents, and is
+identified by its beginning date and magnitude (log 10 of the number of
+deaths). Neither actor in a quarrel is identified by name.
 </p>
-<p>Because Richardson took a dyad of belligerents as his unit,
-a given war, such as World War I or World War II comprises
-multiple observations, for all pairs of belligerents. 
-For example, there are forty-four pairs of belligerents coded for              
-World War I.
+<p>Because Richardson took a dyad of belligerents as his unit, a given war,
+such as World War I or World War II comprises multiple observations, for all
+pairs of belligerents.  For example, there are forty-four pairs of
+belligerents coded for World War I.
 </p>
-<p>For each quarrel, the nominal variables
-include the type of quarrel, as well as political, cultural, and economic
-similarities and dissimilarities between the pair of combatants.
+<p>For each quarrel, the nominal variables include the type of quarrel, as well
+as political, cultural, and economic similarities and dissimilarities
+between the pair of combatants.
 </p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data(Quarrels)</code></pre>
 
 
 <h3>Format</h3>
@@ -59,25 +50,25 @@ similarities and dissimilarities between the pair of combatants.
 </dd>
 <dt><code>year </code></dt><dd><p>V1: Begin date of quarrel </p>
 </dd>
-<dt><code>international </code></dt><dd><p>V2: Nation vs nation </p>
+<dt><code>international</code></dt><dd><p>V2: Nation vs nation </p>
 </dd>
-<dt><code>colonial </code></dt><dd><p>V3: Nation vs colony </p>
+<dt><code>colonial</code></dt><dd><p>V3: Nation vs colony </p>
 </dd>
 <dt><code>revolution </code></dt><dd><p>V4: Revolution or civil war </p>
 </dd>
-<dt><code>nat.grp </code></dt><dd><p>V5: Nation vs gp in other nation </p>
+<dt><code>nat.grp</code></dt><dd><p>V5: Nation vs gp in other nation </p>
 </dd>
 <dt><code>grp.grpSame </code></dt><dd><p>V6: Grp vs grp (same nation) </p>
 </dd>
-<dt><code>grp.grpDif </code></dt><dd><p>V7: Grp vs grp (between nations) </p>
+<dt><code>grp.grpDif</code></dt><dd><p>V7: Grp vs grp (between nations) </p>
 </dd>
-<dt><code>numGroups </code></dt><dd><p>V8: Number groups against which fighting </p>
+<dt><code>numGroups</code></dt><dd><p>V8: Number groups against which fighting </p>
 </dd>
-<dt><code>months </code></dt><dd><p>V9: Number months fighting </p>
+<dt><code>months</code></dt><dd><p>V9: Number months fighting </p>
 </dd>
-<dt><code>pairs </code></dt><dd><p>V10: Number pairs in whole matrix </p>
+<dt><code>pairs</code></dt><dd><p>V10: Number pairs in whole matrix </p>
 </dd>
-<dt><code>monthsPairs </code></dt><dd><p>V11: Num mons for all in matrix </p>
+<dt><code>monthsPairs</code></dt><dd><p>V11: Num mons for all in matrix </p>
 </dd>
 <dt><code>logDeaths </code></dt><dd><p>V12: Log (killed) matrix </p>
 </dd>
@@ -103,7 +94,7 @@ similarities and dissimilarities between the pair of combatants.
 </dd>
 <dt><code>difWealth </code></dt><dd><p>V23: Difference in wealth </p>
 </dd>
-<dt><code>simMariagCust </code></dt><dd><p>V24: Similar marriage cusomst </p>
+<dt><code>simMariagCust </code></dt><dd><p>V24: Similar marriage customst </p>
 </dd>
 <dt><code>difMariagCust </code></dt><dd><p>V25: Different marriage customs </p>
 </dd>
@@ -229,15 +220,15 @@ similarities and dissimilarities between the pair of combatants.
 
 <h3>Details</h3>
 
-<p>In the original data set obtained from ICPSR, variables were
-named <code>V1</code>-<code>V84</code>.  These were renamed to make them more
-meaningful. <code>V84</code>, renamed <code>ID</code> was moved to the first position,
-but otherwise the order of variables is the same.
+<p>In the original data set obtained from ICPSR, variables were named
+<code>V1</code>-<code>V84</code>.  These were renamed to make them more meaningful.
+<code>V84</code>, renamed <code>ID</code> was moved to the first position, but otherwise
+the order of variables is the same.
 </p>
 <p>In many of the <code>factor</code> variables, <code>0</code> is used to indicate
-&quot;irrelevant to quarrel&quot;.  This refers to those relations that              
-Richardson found absent or irrelevant to the particular               
-quarrel, and did not subsequently mention.                            
+&quot;irrelevant to quarrel&quot;.  This refers to those relations that Richardson
+found absent or irrelevant to the particular quarrel, and did not
+subsequently mention.
 </p>
 <p>See the original codebook at
 <a href="http://www.icpsr.umich.edu/cgi-bin/file?comp=none&amp;study=5407&amp;ds=1&amp;file_id=652814">http://www.icpsr.umich.edu/cgi-bin/file?comp=none&amp;study=5407&amp;ds=1&amp;file_id=652814</a>
@@ -253,19 +244,21 @@ for details not contained here.
 
 <h3>References</h3>
 
-<p>Lewis F. Richardson, (1960).
-<em>The Statistics Of Deadly Quarrels</em>. (Edited by Q. Wright and C. C. Lienau). 
-Pittsburgh: Boxwood Press.  
+<p>Lewis F. Richardson, (1960). <em>The Statistics Of Deadly
+Quarrels</em>. (Edited by Q. Wright and C. C. Lienau).  Pittsburgh: Boxwood
+Press.
 </p>
-<p>Rummel, Rudolph J. (1967), &quot;Dimensions of Dyadic War, 1820-1952.&quot; <em>Journal of
-Conflict Resolution</em>. 11, (2), 176 - 183.
+<p>Rummel, Rudolph J. (1967), &quot;Dimensions of Dyadic War, 1820-1952.&quot;
+<em>Journal of Conflict Resolution</em>. <strong>11</strong>, (2), 176 - 183.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(Quarrels)
+<pre><code class='language-R'>
+data(Quarrels)
 str(Quarrels)
+
 </code></pre>
 
 </main>

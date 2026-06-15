@@ -1,62 +1,56 @@
-.. container::
+===================== ===============
+classic_rock_raw_data R Documentation
+===================== ===============
 
-   .. container::
+Why Classic Rock Isn't What It Used To Be
+-----------------------------------------
 
-      ===================== ===============
-      classic_rock_raw_data R Documentation
-      ===================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Why Classic Rock Isn't What It Used To Be
-         :name: why-classic-rock-isnt-what-it-used-to-be
+The raw data behind the story "Why Classic Rock Isn't What It Used To
+Be"
+https://fivethirtyeight.com/features/why-classic-rock-isnt-what-it-used-to-be/.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The raw data behind the story "Why Classic Rock Isn't What It Used
-      To Be"
-      https://fivethirtyeight.com/features/why-classic-rock-isnt-what-it-used-to-be/.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   classic_rock_raw_data
 
-      .. code:: R
+Format
+~~~~~~
 
-         classic_rock_raw_data
+A data frame with 37,673 rows representing song plays and 8 variables:
 
-      .. rubric:: Format
-         :name: format
+song
+   Song name
 
-      A data frame with 37,673 rows representing song plays and 8
-      variables:
+artist
+   Artist name
 
-      song
-         Song name
+callsign
+   Station callsign
 
-      artist
-         Artist name
+time
+   Time of song play in seconds elapsed since January 1, 1970
 
-      callsign
-         Station callsign
+date_time
+   Time of song play in date/time format
 
-      time
-         Time of song play in seconds elapsed since January 1, 1970
+unique_id
+   Unique ID for each song play
 
-      date_time
-         Time of song play in date/time format
+combined
+   Song and artist name combined
 
-      unique_id
-         Unique ID for each song play
+Source
+~~~~~~
 
-      combined
-         Song and artist name combined
+See https://github.com/fivethirtyeight/data/tree/master/classic-rock
 
-      .. rubric:: Source
-         :name: source
+See Also
+~~~~~~~~
 
-      See
-      https://github.com/fivethirtyeight/data/tree/master/classic-rock
-
-      .. rubric:: See Also
-         :name: see-also
-
-      ``classic_rock_song_list``
+``classic_rock_song_list``

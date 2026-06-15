@@ -1,52 +1,46 @@
-.. container::
+========================= ===============
+neuro_pointprocess_matrix R Documentation
+========================= ===============
 
-   .. container::
+Neurophysiological Point Process Data
+-------------------------------------
 
-      ========================= ===============
-      neuro_pointprocess_matrix R Documentation
-      ========================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Neurophysiological Point Process Data
-         :name: neurophysiological-point-process-data
+This dataset, neuro_pointprocess_matrix, is a matrix containing times of
+observed neuronal firing in windows of 250ms surrounding stimulus
+application in human subjects. Each row represents an experimental
+replication (469 total replicates), with values indicating spike times
+relative to stimulus onset.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, neuro_pointprocess_matrix, is a matrix containing
-      times of observed neuronal firing in windows of 250ms surrounding
-      stimulus application in human subjects. Each row represents an
-      experimental replication (469 total replicates), with values
-      indicating spike times relative to stimulus onset.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(neuro_pointprocess_matrix)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(neuro_pointprocess_matrix)
+A numeric matrix with 469 observations (rows) and 6 variables (columns):
 
-      .. rubric:: Format
-         :name: format
+[,1:6]
+   Numeric: Spike times (milliseconds) relative to stimulus onset, with
+   NA representing no spike in that trial window
 
-      A numeric matrix with 469 observations (rows) and 6 variables
-      (columns):
+Details
+~~~~~~~
 
-      [,1:6]
-         Numeric: Spike times (milliseconds) relative to stimulus onset,
-         with NA representing no spike in that trial window
+The dataset name has been kept as 'neuro_pointprocess_matrix' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the NeuroDataSets package. The
+suffix 'matrix' indicates that the dataset is a matrix. The original
+content has not been modified.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'neuro_pointprocess_matrix' to
-      avoid confusion with other datasets in the R ecosystem. This
-      naming convention helps distinguish this dataset as part of the
-      NeuroDataSets package. The suffix 'matrix' indicates that the
-      dataset is a matrix. The original content has not been modified.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the boot package version 1.3-31. Original
-      collection: Dr. S.J. Boniface, Neurophysiology Unit, Radcliffe
-      Infirmary, Oxford.
+Data taken from the boot package version 1.3-31. Original collection:
+Dr. S.J. Boniface, Neurophysiology Unit, Radcliffe Infirmary, Oxford.

@@ -1,90 +1,85 @@
-.. container::
+=== ===============
+who R Documentation
+=== ===============
 
-   .. container::
+World Health Organization TB data
+---------------------------------
 
-      === ===============
-      who R Documentation
-      === ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: World Health Organization TB data
-         :name: world-health-organization-tb-data
+A subset of data from the World Health Organization Global Tuberculosis
+Report, and accompanying global populations. ``who`` uses the original
+codes from the World Health Organization. The column names for columns 5
+through 60 are made by combining ``new_`` with:
 
-      .. rubric:: Description
-         :name: description
+- the method of diagnosis (``rel`` = relapse, ``sn`` = negative
+  pulmonary smear, ``sp`` = positive pulmonary smear, ``ep`` =
+  extrapulmonary),
 
-      A subset of data from the World Health Organization Global
-      Tuberculosis Report, and accompanying global populations. ``who``
-      uses the original codes from the World Health Organization. The
-      column names for columns 5 through 60 are made by combining
-      ``new_`` with:
+- gender (``f`` = female, ``m`` = male), and
 
-      -  the method of diagnosis (``rel`` = relapse, ``sn`` = negative
-         pulmonary smear, ``sp`` = positive pulmonary smear, ``ep`` =
-         extrapulmonary),
+- age group (``014`` = 0-14 yrs of age, ``1524`` = 15-24, ``2534`` =
+  25-34, ``3544`` = 35-44 years of age, ``4554`` = 45-54, ``5564`` =
+  55-64, ``65`` = 65 years or older).
 
-      -  gender (``f`` = female, ``m`` = male), and
+``who2`` is a lightly modified version that makes teaching the basics
+easier by tweaking the variables to be slightly more consistent and
+dropping ``iso2`` and ``iso3``. ``newrel`` is replaced by ``new_rel``,
+and a ``⁠_⁠`` is added after the gender.
 
-      -  age group (``014`` = 0-14 yrs of age, ``1524`` = 15-24,
-         ``2534`` = 25-34, ``3544`` = 35-44 years of age, ``4554`` =
-         45-54, ``5564`` = 55-64, ``65`` = 65 years or older).
+Usage
+~~~~~
 
-      ``who2`` is a lightly modified version that makes teaching the
-      basics easier by tweaking the variables to be slightly more
-      consistent and dropping ``iso2`` and ``iso3``. ``newrel`` is
-      replaced by ``new_rel``, and a ``⁠_⁠`` is added after the gender.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   who
 
-      .. code:: R
+   who2
 
-         who
+   population
 
-         who2
+Format
+~~~~~~
 
-         population
+``who``
+^^^^^^^
 
-      .. rubric:: Format
-         :name: format
+A data frame with 7,240 rows and 60 columns:
 
-      .. rubric:: ``who``
-         :name: who
+country
+   Country name
 
-      A data frame with 7,240 rows and 60 columns:
+iso2, iso3
+   2 & 3 letter ISO country codes
 
-      country
-         Country name
+year
+   Year
 
-      iso2, iso3
-         2 & 3 letter ISO country codes
+new_sp_m014 - new_rel_f65
+   Counts of new TB cases recorded by group. Column names encode three
+   variables that describe the group.
 
-      year
-         Year
+``who2``
+^^^^^^^^
 
-      new_sp_m014 - new_rel_f65
-         Counts of new TB cases recorded by group. Column names encode
-         three variables that describe the group.
+A data frame with 7,240 rows and 58 columns.
 
-      .. rubric:: ``who2``
-         :name: who2
+``population``
+^^^^^^^^^^^^^^
 
-      A data frame with 7,240 rows and 58 columns.
+A data frame with 4,060 rows and three columns:
 
-      .. rubric:: ``population``
-         :name: population
+country
+   Country name
 
-      A data frame with 4,060 rows and three columns:
+year
+   Year
 
-      country
-         Country name
+population
+   Population
 
-      year
-         Year
+Source
+~~~~~~
 
-      population
-         Population
-
-      .. rubric:: Source
-         :name: source
-
-      https://www.who.int/teams/global-tuberculosis-programme/data
+https://www.who.int/teams/global-tuberculosis-programme/data

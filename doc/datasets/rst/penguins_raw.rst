@@ -1,234 +1,224 @@
-.. container::
+======== ===============
+penguins R Documentation
+======== ===============
 
-   .. container::
+Measurements of Penguins near Palmer Station, Antarctica
+--------------------------------------------------------
 
-      ======== ===============
-      penguins R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Measurements of Penguins near Palmer Station,
-         Antarctica
-         :name: measurements-of-penguins-near-palmer-station-antarctica
+Data on adult penguins covering three species found on three islands in
+the Palmer Archipelago, Antarctica, including their size (flipper
+length, body mass, bill dimensions), and sex.
 
-      .. rubric:: Description
-         :name: description
+The columns of ``penguins`` are a subset of the more extensive
+``penguins_raw`` data frame, which includes nesting observations and
+blood isotope data. There are differences in the column names and data
+types. See the ‘Format’ section for details.
 
-      Data on adult penguins covering three species found on three
-      islands in the Palmer Archipelago, Antarctica, including their
-      size (flipper length, body mass, bill dimensions), and sex.
+Usage
+~~~~~
 
-      The columns of ``penguins`` are a subset of the more extensive
-      ``penguins_raw`` data frame, which includes nesting observations
-      and blood isotope data. There are differences in the column names
-      and data types. See the ‘Format’ section for details.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   penguins
+   penguins_raw
 
-      .. code:: R
+Format
+~~~~~~
 
-         penguins
-         penguins_raw
+``penguins`` is a data frame with 344 rows and 8 variables:
 
-      .. rubric:: Format
-         :name: format
+``species``
+   ``factor``, with levels ``Adelie``, ``Chinstrap``, and ``Gentoo``
 
-      ``penguins`` is a data frame with 344 rows and 8 variables:
+``island``
+   ``factor``, with levels ``Biscoe``, ``Dream``, and ``Torgersen``)
 
-      ``species``
-         ``factor``, with levels ``Adelie``, ``Chinstrap``, and
-         ``Gentoo``
+``bill_len``
+   ``numeric``, bill length (millimeters)
 
-      ``island``
-         ``factor``, with levels ``Biscoe``, ``Dream``, and
-         ``Torgersen``)
+``bill_dep``
+   ``numeric``, bill depth (millimeters)
 
-      ``bill_len``
-         ``numeric``, bill length (millimeters)
+``flipper_len``
+   ``integer``, flipper length (millimeters)
 
-      ``bill_dep``
-         ``numeric``, bill depth (millimeters)
+``body_mass``
+   ``integer``, body mass (grams)
 
-      ``flipper_len``
-         ``integer``, flipper length (millimeters)
+``sex``
+   ``factor``, with levels ``female`` and ``male``
 
-      ``body_mass``
-         ``integer``, body mass (grams)
+``year``
+   ``integer``, study year: 2007, 2008, or 2009
 
-      ``sex``
-         ``factor``, with levels ``female`` and ``male``
+``penguins_raw`` is a data frame with 344 rows and 17 variables. 8
+columns correspond to columns in ``penguins``, though with different
+variable names and/or classes:
 
-      ``year``
-         ``integer``, study year: 2007, 2008, or 2009
+``Species``
+   ``character``
 
-      ``penguins_raw`` is a data frame with 344 rows and 17 variables. 8
-      columns correspond to columns in ``penguins``, though with
-      different variable names and/or classes:
+``Island``
+   ``character``
 
-      ``Species``
-         ``character``
+``Culmen Length (mm)``
+   ``numeric``, bill length
 
-      ``Island``
-         ``character``
+``Culmen Depth (mm)``
+   ``numeric``, bill depth
 
-      ``Culmen Length (mm)``
-         ``numeric``, bill length
+``Flipper Length (mm)``
+   ``numeric``, flipper length
 
-      ``Culmen Depth (mm)``
-         ``numeric``, bill depth
+``Body Mass (g)``
+   ``numeric``, body mass
 
-      ``Flipper Length (mm)``
-         ``numeric``, flipper length
+``Sex``
+   ``character``
 
-      ``Body Mass (g)``
-         ``numeric``, body mass
+``Date Egg``
+   ``Date``, when study nest observed with 1 egg. The year component is
+   the ``year`` column in ``penguins``
 
-      ``Sex``
-         ``character``
+There are 9 further columns in ``penguins_raw``:
 
-      ``Date Egg``
-         ``Date``, when study nest observed with 1 egg. The year
-         component is the ``year`` column in ``penguins``
+``studyName``
+   ``character``, expedition during which the data was collected
 
-      There are 9 further columns in ``penguins_raw``:
+``Sample Number``
+   ``numeric``, continuous numbering sequence for each sample
 
-      ``studyName``
-         ``character``, expedition during which the data was collected
+``Region``
+   ``character``, the region of Palmer LTER sampling grid
 
-      ``Sample Number``
-         ``numeric``, continuous numbering sequence for each sample
+``Stage``
+   ``character``, denoting reproductive stage at sampling
 
-      ``Region``
-         ``character``, the region of Palmer LTER sampling grid
+``Individual ID``
+   ``character``, unique ID for each individual in dataset
 
-      ``Stage``
-         ``character``, denoting reproductive stage at sampling
+``Clutch Completion``
+   ``character``, if the study nest was observed with a full clutch,
+   i.e., 2 eggs
 
-      ``Individual ID``
-         ``character``, unique ID for each individual in dataset
+``Delta 15 N (o/oo)``
+   ``numeric``, the ratio of stable isotopes 15N:14N
 
-      ``Clutch Completion``
-         ``character``, if the study nest was observed with a full
-         clutch, i.e., 2 eggs
+``Delta 13 C (o/oo)``
+   ``numeric``, the ratio of stable isotopes 13C:12C
 
-      ``Delta 15 N (o/oo)``
-         ``numeric``, the ratio of stable isotopes 15N:14N
+``Comments``
+   ``character``, additional relevant information
 
-      ``Delta 13 C (o/oo)``
-         ``numeric``, the ratio of stable isotopes 13C:12C
+Details
+~~~~~~~
 
-      ``Comments``
-         ``character``, additional relevant information
+Gorman et al. (2014) used the data to study sex dimorphism separately
+for the three species.
 
-      .. rubric:: Details
-         :name: details
+Horst et al. (2022) popularized the data as an illustration for
+different statistical methods, as an alternative to the ``iris`` data.
 
-      Gorman et al. (2014) used the data to study sex dimorphism
-      separately for the three species.
+Kaye et al. (2025) provide the scripts used to create these data sets
+from the original source data, and a notebook reproducing results from
+Gorman et al. (2014).
 
-      Horst et al. (2022) popularized the data as an illustration for
-      different statistical methods, as an alternative to the ``iris``
-      data.
+Note
+~~~~
 
-      Kaye et al. (2025) provide the scripts used to create these data
-      sets from the original source data, and a notebook reproducing
-      results from Gorman et al. (2014).
+These data sets are also available in the
+`palmerpenguins <https://CRAN.R-project.org/package=palmerpenguins>`__
+package. See the `package
+website <https://allisonhorst.github.io/palmerpenguins/>`__ for further
+details and resources.
 
-      .. rubric:: Note
-         :name: note
+The ``penguins`` data has some shorter variable names than the
+palmerpenguins version, for compact code and data display.
 
-      These data sets are also available in the
-      `palmerpenguins <https://CRAN.R-project.org/package=palmerpenguins>`__
-      package. See the `package
-      website <https://allisonhorst.github.io/palmerpenguins/>`__ for
-      further details and resources.
+Source
+~~~~~~
 
-      The ``penguins`` data has some shorter variable names than the
-      palmerpenguins version, for compact code and data display.
+Adélie penguins:
+   Palmer Station Antarctica LTER and K. Gorman (2020). Structural size
+   measurements and isotopic signatures of foraging among adult male and
+   female Adélie penguins (Pygoscelis adeliae) nesting along the Palmer
+   Archipelago near Palmer Station, 2007-2009 ver 5. Environmental Data
+   Initiative,
+   `doi:10.6073/pasta/98b16d7d563f265cb52372c8ca99e60f <https://doi.org/10.6073/pasta/98b16d7d563f265cb52372c8ca99e60f>`__.
 
-      .. rubric:: Source
-         :name: source
+Gentoo penguins:
+   Palmer Station Antarctica LTER and K. Gorman (2020).
+   `doi:10.6073/pasta/7fca67fb28d56ee2ffa3d9370ebda689 <https://doi.org/10.6073/pasta/7fca67fb28d56ee2ffa3d9370ebda689>`__.
 
-      Adélie penguins:
-         Palmer Station Antarctica LTER and K. Gorman (2020). Structural
-         size measurements and isotopic signatures of foraging among
-         adult male and female Adélie penguins (Pygoscelis adeliae)
-         nesting along the Palmer Archipelago near Palmer Station,
-         2007-2009 ver 5. Environmental Data Initiative,
-         `doi:10.6073/pasta/98b16d7d563f265cb52372c8ca99e60f <https://doi.org/10.6073/pasta/98b16d7d563f265cb52372c8ca99e60f>`__.
+Chinstrap penguins:
+   Palmer Station Antarctica LTER and K. Gorman (2020).
+   `doi:10.6073/pasta/c14dfcfada8ea13a17536e73eb6fbe9e <https://doi.org/10.6073/pasta/c14dfcfada8ea13a17536e73eb6fbe9e>`__.
 
-      Gentoo penguins:
-         Palmer Station Antarctica LTER and K. Gorman (2020).
-         `doi:10.6073/pasta/7fca67fb28d56ee2ffa3d9370ebda689 <https://doi.org/10.6073/pasta/7fca67fb28d56ee2ffa3d9370ebda689>`__.
+The title naming convention for the source for the Gentoo and Chinstrap
+data is that same as for Adélie penguins.
 
-      Chinstrap penguins:
-         Palmer Station Antarctica LTER and K. Gorman (2020).
-         `doi:10.6073/pasta/c14dfcfada8ea13a17536e73eb6fbe9e <https://doi.org/10.6073/pasta/c14dfcfada8ea13a17536e73eb6fbe9e>`__.
+References
+~~~~~~~~~~
 
-      The title naming convention for the source for the Gentoo and
-      Chinstrap data is that same as for Adélie penguins.
+Gorman, K. B., Williams, T. D. and Fraser, W. R. (2014) Ecological
+Sexual Dimorphism and Environmental Variability within a Community of
+Antarctic Penguins (Genus Pygoscelis). *PLoS ONE* **9**, 3, e90081;
+`doi:10.1371/journal.pone.0090081 <https://doi.org/10.1371/journal.pone.0090081>`__.
 
-      .. rubric:: References
-         :name: references
+Horst, A. M., Hill, A. P. and Gorman, K. B. (2022) Palmer Archipelago
+Penguins Data in the palmerpenguins R Package - An Alternative to
+Anderson's Irises. *R Journal* **14**, 1;
+`doi:10.32614/RJ-2022-020 <https://doi.org/10.32614/RJ-2022-020>`__.
 
-      Gorman, K. B., Williams, T. D. and Fraser, W. R. (2014) Ecological
-      Sexual Dimorphism and Environmental Variability within a Community
-      of Antarctic Penguins (Genus Pygoscelis). *PLoS ONE* **9**, 3,
-      e90081;
-      `doi:10.1371/journal.pone.0090081 <https://doi.org/10.1371/journal.pone.0090081>`__.
+Kaye, E., Turner, H., Gorman, K. B., Horst, A. M. and Hill, A. P. (2025)
+Preparing the Palmer Penguins Data for the datasets Package in R.
+`doi:10.5281/zenodo.14902740 <https://doi.org/10.5281/zenodo.14902740>`__.
 
-      Horst, A. M., Hill, A. P. and Gorman, K. B. (2022) Palmer
-      Archipelago Penguins Data in the palmerpenguins R Package - An
-      Alternative to Anderson's Irises. *R Journal* **14**, 1;
-      `doi:10.32614/RJ-2022-020 <https://doi.org/10.32614/RJ-2022-020>`__.
+Examples
+~~~~~~~~
 
-      Kaye, E., Turner, H., Gorman, K. B., Horst, A. M. and Hill, A. P.
-      (2025) Preparing the Palmer Penguins Data for the datasets Package
-      in R.
-      `doi:10.5281/zenodo.14902740 <https://doi.org/10.5281/zenodo.14902740>`__.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## view summaries
+   summary(penguins)
+   summary(penguins_raw) # not useful for character vectors
+   ## convert character vectors to factors first
+   dFactor <- function(dat) {
+     dat[] <- lapply(dat, \(.) if (is.character(.)) as.factor(.) else .)
+     dat
+   }
+   summary(dFactor(penguins_raw))
 
-      .. code:: R
+   ## visualise distribution across factors
+   plot(island ~ species, data = penguins)
+   plot(sex ~ interaction(island, species, sep = "\n"), data = penguins)
 
-         ## view summaries
-         summary(penguins)
-         summary(penguins_raw) # not useful for character vectors
-         ## convert character vectors to factors first
-         dFactor <- function(dat) {
-           dat[] <- lapply(dat, \(.) if (is.character(.)) as.factor(.) else .)
-           dat
-         }
-         summary(dFactor(penguins_raw))
+   ## bill depth vs. length by species (color) and sex (symbol):
+   ## positive correlations for all species, males tend to have bigger bills
+   sym <- c(1, 16)
+   pal <- c("darkorange","purple","cyan4")
+   plot(bill_dep ~ bill_len, data = penguins, pch = sym[sex], col = pal[species])
 
-         ## visualise distribution across factors
-         plot(island ~ species, data = penguins)
-         plot(sex ~ interaction(island, species, sep = "\n"), data = penguins)
+   ## simplified sex dimorphism analysis for Adelie species:
+   ## proportion of males increases with several size measurements
+   adelie <- subset(penguins, species == "Adelie")
+   plot(sex ~ bill_len, data = adelie)
+   plot(sex ~ bill_dep, data = adelie)
+   plot(sex ~ body_mass, data = adelie)
+   m <- glm(sex ~ bill_len + bill_dep + body_mass, data = adelie, family = binomial)
+   summary(m)
 
-         ## bill depth vs. length by species (color) and sex (symbol):
-         ## positive correlations for all species, males tend to have bigger bills
-         sym <- c(1, 16)
-         pal <- c("darkorange","purple","cyan4")
-         plot(bill_dep ~ bill_len, data = penguins, pch = sym[sex], col = pal[species])
+   ## Produce the long variable names as from {palmerpenguins} pkg:
+   long_nms <- sub("len", "length_mm",
+                   sub("dep","depth_mm",
+                       sub("mass", "mass_g", colnames(penguins))))
+   ## compare long and short names:
+   noquote(rbind(long_nms, nms = colnames(penguins)))
 
-         ## simplified sex dimorphism analysis for Adelie species:
-         ## proportion of males increases with several size measurements
-         adelie <- subset(penguins, species == "Adelie")
-         plot(sex ~ bill_len, data = adelie)
-         plot(sex ~ bill_dep, data = adelie)
-         plot(sex ~ body_mass, data = adelie)
-         m <- glm(sex ~ bill_len + bill_dep + body_mass, data = adelie, family = binomial)
-         summary(m)
+   ## Not run:  # << keeping shorter 'penguins' names in this example:
+       colnames(penguins) <- long_nms
 
-         ## Produce the long variable names as from {palmerpenguins} pkg:
-         long_nms <- sub("len", "length_mm",
-                         sub("dep","depth_mm",
-                             sub("mass", "mass_g", colnames(penguins))))
-         ## compare long and short names:
-         noquote(rbind(long_nms, nms = colnames(penguins)))
-
-         ## Not run:  # << keeping shorter 'penguins' names in this example:
-             colnames(penguins) <- long_nms
-
-         ## End(Not run)
+   ## End(Not run)

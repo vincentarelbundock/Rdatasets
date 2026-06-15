@@ -1,85 +1,82 @@
-.. container::
+=========== ===============
+PepperPrice R Documentation
+=========== ===============
 
-   .. container::
+Black and White Pepper Prices
+-----------------------------
 
-      =========== ===============
-      PepperPrice R Documentation
-      =========== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Black and White Pepper Prices
-         :name: black-and-white-pepper-prices
+Time series of average monthly European spot prices for black and white
+pepper (fair average quality) in US dollars per ton.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Time series of average monthly European spot prices for black and
-      white pepper (fair average quality) in US dollars per ton.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("PepperPrice")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("PepperPrice")
+A monthly multiple time series from 1973(10) to 1996(4) with 2
+variables.
 
-      .. rubric:: Format
-         :name: format
+black
+   spot price for black pepper,
 
-      A monthly multiple time series from 1973(10) to 1996(4) with 2
-      variables.
+white
+   spot price for white pepper.
 
-      black
-         spot price for black pepper,
+Source
+~~~~~~
 
-      white
-         spot price for white pepper.
+Originally available as an online supplement to Franses (1998). Now
+available via online complements to Franses, van Dijk and Opschoor
+(2014).
 
-      .. rubric:: Source
-         :name: source
+https://www.cambridge.org/us/academic/subjects/economics/econometrics-statistics-and-mathematical-economics/time-series-models-business-and-economic-forecasting-2nd-edition
 
-      Originally available as an online supplement to Franses (1998).
-      Now available via online complements to Franses, van Dijk and
-      Opschoor (2014).
+References
+~~~~~~~~~~
 
-      https://www.cambridge.org/us/academic/subjects/economics/econometrics-statistics-and-mathematical-economics/time-series-models-business-and-economic-forecasting-2nd-edition
+Franses, P.H. (1998). *Time Series Models for Business and Economic
+Forecasting*. Cambridge, UK: Cambridge University Press.
 
-      .. rubric:: References
-         :name: references
+Franses, P.H., van Dijk, D. and Opschoor, A. (2014). *Time Series Models
+for Business and Economic Forecasting*, 2nd ed. Cambridge, UK: Cambridge
+University Press.
 
-      Franses, P.H. (1998). *Time Series Models for Business and
-      Economic Forecasting*. Cambridge, UK: Cambridge University Press.
+Examples
+~~~~~~~~
 
-      Franses, P.H., van Dijk, D. and Opschoor, A. (2014). *Time Series
-      Models for Business and Economic Forecasting*, 2nd ed. Cambridge,
-      UK: Cambridge University Press.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
 
-      .. code:: R
+   ## data
+   data("PepperPrice", package = "AER")
+   plot(PepperPrice, plot.type = "single", col = 1:2)
 
-         ## data
-         data("PepperPrice", package = "AER")
-         plot(PepperPrice, plot.type = "single", col = 1:2)
+   ## package
+   library("tseries")
+   library("urca")
 
-         ## package
-         library("tseries")
-         library("urca")
+   ## unit root tests
+   adf.test(log(PepperPrice[, "white"]))
+   adf.test(diff(log(PepperPrice[, "white"])))
+   pp.test(log(PepperPrice[, "white"]), type = "Z(t_alpha)")
+   pepper_ers <- ur.ers(log(PepperPrice[, "white"]),
+     type = "DF-GLS", model = "const", lag.max = 4)
+   summary(pepper_ers)
 
-         ## unit root tests
-         adf.test(log(PepperPrice[, "white"]))
-         adf.test(diff(log(PepperPrice[, "white"])))
-         pp.test(log(PepperPrice[, "white"]), type = "Z(t_alpha)")
-         pepper_ers <- ur.ers(log(PepperPrice[, "white"]),
-           type = "DF-GLS", model = "const", lag.max = 4)
-         summary(pepper_ers)
+   ## stationarity tests
+   kpss.test(log(PepperPrice[, "white"]))
 
-         ## stationarity tests
-         kpss.test(log(PepperPrice[, "white"]))
-
-         ## cointegration
-         po.test(log(PepperPrice))
-         pepper_jo <- ca.jo(log(PepperPrice), ecdet = "const", type = "trace")
-         summary(pepper_jo)
-         pepper_jo2 <- ca.jo(log(PepperPrice), ecdet = "const", type = "eigen")
-         summary(pepper_jo2)
+   ## cointegration
+   po.test(log(PepperPrice))
+   pepper_jo <- ca.jo(log(PepperPrice), ecdet = "const", type = "trace")
+   summary(pepper_jo)
+   pepper_jo2 <- ca.jo(log(PepperPrice), ecdet = "const", type = "eigen")
+   summary(pepper_jo2)

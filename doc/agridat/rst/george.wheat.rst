@@ -1,97 +1,93 @@
-.. container::
+============ ===============
+george.wheat R Documentation
+============ ===============
 
-   .. container::
+Multi-location/year breeding trial in California
+------------------------------------------------
 
-      ============ ===============
-      george.wheat R Documentation
-      ============ ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Multi-location/year breeding trial in California
-         :name: multi-locationyear-breeding-trial-in-california
+Multi-location/year breeding trial in California
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Multi-location/year breeding trial in California
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("george.wheat")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("george.wheat")
+A data frame with 13996 observations on the following 5 variables.
 
-      .. rubric:: Format
-         :name: format
+``gen``
+   genotype number
 
-      A data frame with 13996 observations on the following 5 variables.
+``year``
+   year
 
-      ``gen``
-         genotype number
+``loc``
+   location
 
-      ``year``
-         year
+``block``
+   block
 
-      ``loc``
-         location
+``yield``
+   yield per plot
 
-      ``block``
-         block
+Details
+~~~~~~~
 
-      ``yield``
-         yield per plot
+This is a nice example of data from a breeding trial, in which some
+check genotypes are kepts during the whole experiment, while other
+genotypes enter and leave the breeding program. The data is highly
+unbalanced with respect to genotypes-by-environments.
 
-      .. rubric:: Details
-         :name: details
+Results of late-stage small-trials of 211 genotypes of wheat in
+California, conducted at 9 locations during the years 2004-2018.
 
-      This is a nice example of data from a breeding trial, in which
-      some check genotypes are kepts during the whole experiment, while
-      other genotypes enter and leave the breeding program. The data is
-      highly unbalanced with respect to genotypes-by-environments.
+Each trial was an RCB with 4 blocks.
 
-      Results of late-stage small-trials of 211 genotypes of wheat in
-      California, conducted at 9 locations during the years 2004-2018.
+The authors used this data to look at GGE biplots across years and
+concluded that repeatable genotype-by-location patterns were weak, and
+therefore the California cereal production region is a large, unstable,
+mega-environment.
 
-      Each trial was an RCB with 4 blocks.
+Data downloaded 2019-10-29 from Dryad,
+https://doi.org/10.5061/dryad.bf8rt6b. Data are public domain.
 
-      The authors used this data to look at GGE biplots across years and
-      concluded that repeatable genotype-by-location patterns were weak,
-      and therefore the California cereal production region is a large,
-      unstable, mega-environment.
+Source
+~~~~~~
 
-      Data downloaded 2019-10-29 from Dryad,
-      https://doi.org/10.5061/dryad.bf8rt6b. Data are public domain.
+Nicholas George and Mark Lundy (2019). Quantifying Genotype x
+Environment Effects in Long-Term Common Wheat Yield Trials from an
+Agroecologically Diverse Production Region. Crop Science, 59, 1960-1972.
+https://doi.org/10.2135/cropsci2019.01.0010
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Nicholas George and Mark Lundy (2019). Quantifying Genotype x
-      Environment Effects in Long-Term Common Wheat Yield Trials from an
-      Agroecologically Diverse Production Region. Crop Science, 59,
-      1960-1972. https://doi.org/10.2135/cropsci2019.01.0010
+None
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      None
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         ## Not run: 
-           library(agridat)
-           libs(lattice, reshape2)
-           data(george.wheat)
-           dat <- george.wheat
-           
-           dat$env <- paste0(dat$year, ".", dat$loc)
-           # average reps, cast to matrix
-           mat <- reshape2::acast(dat, gen ~ env, value.var="yield", fun=mean, na.rm=TRUE)
-           lattice::levelplot(mat, aspect="m", 
-                              main="george.wheat", xlab="genotype", ylab="environment",
-                              scales=list(x=list(cex=.3,rot=90),y=list(cex=.5)))
+   ## Not run: 
+     library(agridat)
+     libs(lattice, reshape2)
+     data(george.wheat)
+     dat <- george.wheat
+     
+     dat$env <- paste0(dat$year, ".", dat$loc)
+     # average reps, cast to matrix
+     mat <- reshape2::acast(dat, gen ~ env, value.var="yield", fun=mean, na.rm=TRUE)
+     lattice::levelplot(mat, aspect="m", 
+                        main="george.wheat", xlab="genotype", ylab="environment",
+                        scales=list(x=list(cex=.3,rot=90),y=list(cex=.5)))
 
 
-         ## End(Not run)
+   ## End(Not run)

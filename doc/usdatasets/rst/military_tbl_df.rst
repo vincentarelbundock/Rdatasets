@@ -1,57 +1,50 @@
-.. container::
+=============== ===============
+military_tbl_df R Documentation
+=============== ===============
 
-   .. container::
+US Military Demographics
+------------------------
 
-      =============== ===============
-      military_tbl_df R Documentation
-      =============== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: US Military Demographics
-         :name: us-military-demographics
+The dataset name has been changed to 'military_tbl_df' to avoid
+confusion with other packages in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a tibble. The original content of the dataset has not
+been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'military_tbl_df' to avoid
-      confusion with other packages in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a tibble. The original
-      content of the dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(military_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(military_tbl_df)
+A tibble with an unspecified number of observations and 6 variables:
 
-      .. rubric:: Format
-         :name: format
+grade
+   Factor indicating the military grade, with 3 levels.
 
-      A tibble with an unspecified number of observations and 6
-      variables:
+branch
+   Factor indicating the branch of the military, with 4 levels.
 
-      grade
-         Factor indicating the military grade, with 3 levels.
+gender
+   Factor indicating the gender of the participants, with 2 levels.
 
-      branch
-         Factor indicating the branch of the military, with 4 levels.
+race
+   Factor indicating the race of the participants, with 7 levels.
 
-      gender
-         Factor indicating the gender of the participants, with 2
-         levels.
+hisp
+   Logical indicating whether the participants identify as Hispanic.
 
-      race
-         Factor indicating the race of the participants, with 7 levels.
+rank
+   Integer representing the rank of the participants.
 
-      hisp
-         Logical indicating whether the participants identify as
-         Hispanic.
+Source
+~~~~~~
 
-      rank
-         Integer representing the rank of the participants.
-
-      .. rubric:: Source
-         :name: source
-
-      Data from military personnel demographics
+Data from military personnel demographics

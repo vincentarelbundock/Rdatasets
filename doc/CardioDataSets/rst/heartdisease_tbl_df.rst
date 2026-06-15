@@ -1,77 +1,71 @@
-.. container::
+=================== ===============
+heartdisease_tbl_df R Documentation
+=================== ===============
 
-   .. container::
+Heart Disease Patients Clinical Data
+------------------------------------
 
-      =================== ===============
-      heartdisease_tbl_df R Documentation
-      =================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Heart Disease Patients Clinical Data
-         :name: heart-disease-patients-clinical-data
+This dataset, heartdisease_tbl_df, is a tibble containing information on
+individuals evaluated for heart disease. It is a cleaned version of the
+original "Heart Disease" dataset from the UCI Machine Learning
+Repository, and includes 303 observations on 9 variables.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, heartdisease_tbl_df, is a tibble containing
-      information on individuals evaluated for heart disease. It is a
-      cleaned version of the original "Heart Disease" dataset from the
-      UCI Machine Learning Repository, and includes 303 observations on
-      9 variables.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(heartdisease_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(heartdisease_tbl_df)
+A tibble with 303 observations and 9 variables:
 
-      .. rubric:: Format
-         :name: format
+Age
+   Age of the individual (numeric).
 
-      A tibble with 303 observations and 9 variables:
+Sex
+   Sex of the individual (factor with 2 levels: typically "Male" and
+   "Female").
 
-      Age
-         Age of the individual (numeric).
+ChestPain
+   Type of chest pain experienced (factor with 4 levels).
 
-      Sex
-         Sex of the individual (factor with 2 levels: typically "Male"
-         and "Female").
+BP
+   Resting blood pressure (numeric).
 
-      ChestPain
-         Type of chest pain experienced (factor with 4 levels).
+Cholesterol
+   Serum cholesterol in mg/dl (numeric).
 
-      BP
-         Resting blood pressure (numeric).
+BloodSugar
+   Indicates if fasting blood sugar > 120 mg/dl (logical).
 
-      Cholesterol
-         Serum cholesterol in mg/dl (numeric).
+MaximumHR
+   Maximum heart rate achieved (numeric).
 
-      BloodSugar
-         Indicates if fasting blood sugar > 120 mg/dl (logical).
+ExerciseInducedAngina
+   Exercise-induced angina (factor with 2 levels).
 
-      MaximumHR
-         Maximum heart rate achieved (numeric).
+HeartDisease
+   Presence or absence of heart disease (factor with 2 levels).
 
-      ExerciseInducedAngina
-         Exercise-induced angina (factor with 2 levels).
+Details
+~~~~~~~
 
-      HeartDisease
-         Presence or absence of heart disease (factor with 2 levels).
+The dataset name has been kept as 'heartdisease_tbl_df' to avoid
+confusion with other datasets in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the CardioDataSets package and
+assists users in identifying its specific characteristics. The suffix
+'tbl_df' indicates that the dataset is a tibble. The original content
+has not been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'heartdisease_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      CardioDataSets package and assists users in identifying its
-      specific characteristics. The suffix 'tbl_df' indicates that the
-      dataset is a tibble. The original content has not been modified in
-      any way.
-
-      .. rubric:: Source
-         :name: source
-
-      Data taken from the cheese package version 0.1.2. Original source:
-      UCI Machine Learning Repository. Heart Disease Data Set.
-      https://archive.ics.uci.edu/ml/datasets/Heart+Disease
+Data taken from the cheese package version 0.1.2. Original source: UCI
+Machine Learning Repository. Heart Disease Data Set.
+https://archive.ics.uci.edu/ml/datasets/Heart+Disease

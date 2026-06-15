@@ -1,198 +1,194 @@
-.. container::
+======== ===============
+Bornholm R Documentation
+======== ===============
 
-   .. container::
+Female Iron Age Graves, Bornholm, Denmark
+-----------------------------------------
 
-      ======== ===============
-      Bornholm R Documentation
-      ======== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Female Iron Age Graves, Bornholm, Denmark
-         :name: female-iron-age-graves-bornholm-denmark
+Data on the occurrence of 39 different types of ornamentation in 77
+female graves at Iron age sites in in Bornholm, Denmark.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Data on the occurrence of 39 different types of ornamentation in
-      77 female graves at Iron age sites in in Bornholm, Denmark.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("Bornholm")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("Bornholm")
+A data frame with 77 observations on the following 42 variables.
 
-      .. rubric:: Format
-         :name: format
+``Number``
+   Observation Number
 
-      A data frame with 77 observations on the following 42 variables.
+``Site``
+   Site/Bural Number
 
-      ``Number``
-         Observation Number
+``Period``
+   Chronological period: ``1a``, ``1b``, ``2a``, ``2b``, ``2c``, ``3a``,
+   and ``3b``
 
-      ``Site``
-         Site/Bural Number
+``N2c``
+   count
 
-      ``Period``
-         Chronological period: ``1a``, ``1b``, ``2a``, ``2b``, ``2c``,
-         ``3a``, and ``3b``
+``R3d``
+   count
 
-      ``N2c``
-         count
+``N2a``
+   count
 
-      ``R3d``
-         count
+``Q3b``
+   count
 
-      ``N2a``
-         count
+``R3c``
+   count
 
-      ``Q3b``
-         count
+``N1``
+   count
 
-      ``R3c``
-         count
+``Q3c``
+   count
 
-      ``N1``
-         count
+``O1``
+   count
 
-      ``Q3c``
-         count
+``O2``
+   count
 
-      ``O1``
-         count
+``N2e``
+   count
 
-      ``O2``
-         count
+``I3``
+   count
 
-      ``N2e``
-         count
+``R3b``
+   count
 
-      ``I3``
-         count
+``K1a``
+   count
 
-      ``R3b``
-         count
+``Q3a``
+   count
 
-      ``K1a``
-         count
+``I2``
+   count
 
-      ``Q3a``
-         count
+``K1c``
+   count
 
-      ``I2``
-         count
+``K1b``
+   count
 
-      ``K1c``
-         count
+``H``
+   count
 
-      ``K1b``
-         count
+``Q3d``
+   count
 
-      ``H``
-         count
+``J1d``
+   count
 
-      ``Q3d``
-         count
+``S1``
+   count
 
-      ``J1d``
-         count
+``D``
+   count
 
-      ``S1``
-         count
+``Q2``
+   count
 
-      ``D``
-         count
+``S3``
+   count
 
-      ``Q2``
-         count
+``P2``
+   count
 
-      ``S3``
-         count
+``P4``
+   count
 
-      ``P2``
-         count
+``G3``
+   count
 
-      ``P4``
-         count
+``E2a``
+   count
 
-      ``G3``
-         count
+``P3``
+   count
 
-      ``E2a``
-         count
+``R3a``
+   count
 
-      ``P3``
-         count
+``R1``
+   count
 
-      ``R3a``
-         count
+``E2b``
+   count
 
-      ``R1``
-         count
+``G2``
+   count
 
-      ``E2b``
-         count
+``I1b``
+   count
 
-      ``G2``
-         count
+``G1``
+   count
 
-      ``I1b``
-         count
+``F``
+   count
 
-      ``G1``
-         count
+``P1``
+   count
 
-      ``F``
-         count
+``I1a``
+   count
 
-      ``P1``
-         count
+``A2e``
+   count
 
-      ``I1a``
-         count
+Details
+~~~~~~~
 
-      ``A2e``
-         count
+Nielsen used data on 39 different types of ornaments from Ørsnes (1966)
+to seriate a series of 77 Late Germanic Iron Age (CE 550 - 800) graves
+from Bornholm, Denmark (1988, Table 4 and Figure 7). Baxter re-analyzed
+the data to illustrate correspondence analysis (1994: 104-107, Table
+A6). These data were taken from Nielsen's Table 4 showing her seriation.
+Baxter's version is scrambled in order to evaluate different seriation
+methods and does not include the ornament types (illustrated in
+Nielson's Figure 7). The data include Ørsnes's period and subperiod
+designations (1966).
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      Nielsen used data on 39 different types of ornaments from Ørsnes
-      (1966) to seriate a series of 77 Late Germanic Iron Age (CE 550 -
-      800) graves from Bornholm, Denmark (1988, Table 4 and Figure 7).
-      Baxter re-analyzed the data to illustrate correspondence analysis
-      (1994: 104-107, Table A6). These data were taken from Nielsen's
-      Table 4 showing her seriation. Baxter's version is scrambled in
-      order to evaluate different seriation methods and does not include
-      the ornament types (illustrated in Nielson's Figure 7). The data
-      include Ørsnes's period and subperiod designations (1966).
+Baxter, M. J. 1994. *Exploratory Multivariate Analysis in Archaeology*.
+Edinburgh University Press. Edinburgh.
 
-      .. rubric:: Source
-         :name: source
+Nielsen, K. H. 1988. Correspondence Analysis Applied to Hords and Graves
+of the Germanic Iron Age. In *Multivariate Archaeology: Numerical
+Approaches in Scandinavian Archaeology*, edited by Torsten Madsen, pp
+37-54. Jutland Archaeological Society Publications XXI. Arahus
+University Press.
 
-      Baxter, M. J. 1994. *Exploratory Multivariate Analysis in
-      Archaeology*. Edinburgh University Press. Edinburgh.
+Ørsnes, M. 1966. *Form og stil i Sydskandinaviens yngre germanske
+jernalder*. Nationalmuseets skrifter. Arkæologisk-historisk række 11.
+Copenhagen.
 
-      Nielsen, K. H. 1988. Correspondence Analysis Applied to Hords and
-      Graves of the Germanic Iron Age. In *Multivariate Archaeology:
-      Numerical Approaches in Scandinavian Archaeology*, edited by
-      Torsten Madsen, pp 37-54. Jutland Archaeological Society
-      Publications XXI. Arahus University Press.
+Examples
+~~~~~~~~
 
-      Ørsnes, M. 1966. *Form og stil i Sydskandinaviens yngre germanske
-      jernalder*. Nationalmuseets skrifter. Arkæologisk-historisk række
-      11. Copenhagen.
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
-
-      .. code:: R
-
-         if (requireNamespace("MASS", quietly = TRUE)) {
-           data(Bornholm)
-           Bornholm.ca <- MASS::corresp(Bornholm[, 4:42], nf=2)
-           plot(Bornholm.ca$rscore, pch=substring(Bornholm$Period, 1, 1), cex=.75)
-           boxplot(Bornholm.ca$rscore[, 1]~Bornholm$Period, main="First CA Axis by Period")
-         } else {
-           cat("This example requires the MASS package.\n")
-         }
+   if (requireNamespace("MASS", quietly = TRUE)) {
+     data(Bornholm)
+     Bornholm.ca <- MASS::corresp(Bornholm[, 4:42], nf=2)
+     plot(Bornholm.ca$rscore, pch=substring(Bornholm$Period, 1, 1), cex=.75)
+     boxplot(Bornholm.ca$rscore[, 1]~Bornholm$Period, main="First CA Axis by Period")
+   } else {
+     cat("This example requires the MASS package.\n")
+   }

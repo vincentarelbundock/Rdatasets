@@ -1,103 +1,97 @@
-.. container::
+====================== ===============
+masood.rice.uniformity R Documentation
+====================== ===============
 
-   .. container::
+Uniformity trial of rice
+------------------------
 
-      ====================== ===============
-      masood.rice.uniformity R Documentation
-      ====================== ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Uniformity trial of rice
-         :name: uniformity-trial-of-rice
+Uniformity trial of rice at Lahore, Punjab, circa 2011.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      Uniformity trial of rice at Lahore, Punjab, circa 2011.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data("masood.rice.uniformity")
 
-      .. code:: R
+Format
+~~~~~~
 
-         data("masood.rice.uniformity")
+A data frame with 288 observations on the following 3 variables.
 
-      .. rubric:: Format
-         :name: format
+``row``
+   row
 
-      A data frame with 288 observations on the following 3 variables.
+``col``
+   column
 
-      ``row``
-         row
+``yield``
+   yield, kg/m^2
 
-      ``col``
-         column
+Details
+~~~~~~~
 
-      ``yield``
-         yield, kg/m^2
+Data by collected from the Rice Research Institute on a paddy yield
+trial. A single variety of rice was harvested in an area 12m x 24 m.
+Yield in kilograms was measured for each square meter. Masood et al
+report a low degree of similarity for neighboring plots.
 
-      .. rubric:: Details
-         :name: details
+Note, the Smith index calculations below match the results in the
+Pakistan Journal of Agricultural Research, but do not match the results
+in the American-Eurasian Journal, which seems to be the same paper and
+seems to refer to the same data. The results may simply differ by a
+scaling factor.
 
-      Data by collected from the Rice Research Institute on a paddy
-      yield trial. A single variety of rice was harvested in an area 12m
-      x 24 m. Yield in kilograms was measured for each square meter.
-      Masood et al report a low degree of similarity for neighboring
-      plots.
+The yield values in Masood are labeled as "gm^2" (gram per sq meter),
+but this would be extremely low. Probably should be "kgm^2".
 
-      Note, the Smith index calculations below match the results in the
-      Pakistan Journal of Agricultural Research, but do not match the
-      results in the American-Eurasian Journal, which seems to be the
-      same paper and seems to refer to the same data. The results may
-      simply differ by a scaling factor.
+Field length: 24 plots x 1m = 24m.
 
-      The yield values in Masood are labeled as "gm^2" (gram per sq
-      meter), but this would be extremely low. Probably should be
-      "kgm^2".
+Field width: 12 plots x 1m = 12m.
 
-      Field length: 24 plots x 1m = 24m.
+Used with permission of Asif Masood.
 
-      Field width: 12 plots x 1m = 12m.
+Source
+~~~~~~
 
-      Used with permission of Asif Masood.
+Masood, M Asif and Raza, Irum. 2012. Estimation of optimum field plot
+size and shape in paddy yield trial. Pakistan J. Agric. Res., Vol. 25
+No. 4, 2012
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Masood, M Asif and Raza, Irum. 2012. Estimation of optimum field
-      plot size and shape in paddy yield trial. Pakistan J. Agric. Res.,
-      Vol. 25 No. 4, 2012
+Masood, M Asif and Raza, Irum. 2012. Estimation of optimum field plot
+size and shape in paddy yield trial. American-Eurasian Journal of
+Scientific Research, 7, 264-269. Table 1.
+https://doi.org/10.5829/idosi.aejsr.2012.7.6.1926
 
-      .. rubric:: References
-         :name: references
+Examples
+~~~~~~~~
 
-      Masood, M Asif and Raza, Irum. 2012. Estimation of optimum field
-      plot size and shape in paddy yield trial. American-Eurasian
-      Journal of Scientific Research, 7, 264-269. Table 1.
-      https://doi.org/10.5829/idosi.aejsr.2012.7.6.1926
+.. code:: R
 
-      .. rubric:: Examples
-         :name: examples
+   ## Not run: 
 
-      .. code:: R
+   library(agridat)
 
-         ## Not run: 
+     data(masood.rice.uniformity)
+     dat <- masood.rice.uniformity
+     
+     libs(desplot)
+     desplot(dat, yield ~ col*row,
+             flip=TRUE, tick=TRUE, aspect=24/12, # true aspect
+             main="masood.rice.uniformity - yield heatmap")
 
-         library(agridat)
+     libs(agricolae)
+     libs(reshape2)
+     dmat <- acast(dat, row~col, value.var='yield')
+     index.smith(dmat,
+                 main="masood.rice.uniformity",
+                 col="red") # CVs match Table 3
+     
 
-           data(masood.rice.uniformity)
-           dat <- masood.rice.uniformity
-           
-           libs(desplot)
-           desplot(dat, yield ~ col*row,
-                   flip=TRUE, tick=TRUE, aspect=24/12, # true aspect
-                   main="masood.rice.uniformity - yield heatmap")
-
-           libs(agricolae)
-           libs(reshape2)
-           dmat <- acast(dat, row~col, value.var='yield')
-           index.smith(dmat,
-                       main="masood.rice.uniformity",
-                       col="red") # CVs match Table 3
-           
-
-         ## End(Not run)
+   ## End(Not run)

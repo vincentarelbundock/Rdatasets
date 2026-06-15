@@ -1,58 +1,54 @@
-.. container::
+============= ===============
+Bigten_tbl_df R Documentation
+============= ===============
 
-   .. container::
+Grad Rates: Athletes vs. Non-Athletes Big Ten Conf.
+---------------------------------------------------
 
-      ============= ===============
-      Bigten_tbl_df R Documentation
-      ============= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Grad Rates: Athletes vs. Non-Athletes Big Ten Conf.
-         :name: grad-rates-athletes-vs.-non-athletes-big-ten-conf.
+This dataset, Bigten_tbl_df, is a tibble containing information about
+the graduation rates of student athletes and nonathletes in the Big Ten
+Conference. The dataset includes data from two academic years, showing
+the graduation rates by school and athlete status (athletes vs
+nonathletes).
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      This dataset, Bigten_tbl_df, is a tibble containing information
-      about the graduation rates of student athletes and nonathletes in
-      the Big Ten Conference. The dataset includes data from two
-      academic years, showing the graduation rates by school and athlete
-      status (athletes vs nonathletes).
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(Bigten_tbl_df)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(Bigten_tbl_df)
+A tibble with 44 observations and 4 variables:
 
-      .. rubric:: Format
-         :name: format
+school
+   Name of the school (character).
 
-      A tibble with 44 observations and 4 variables:
+year
+   Year of the data (factor with 2 levels).
 
-      school
-         Name of the school (character).
+rate
+   Graduation rate percentage (integer).
 
-      year
-         Year of the data (factor with 2 levels).
+status
+   Athlete status (character, either 'Athlete' or 'Nonathlete').
 
-      rate
-         Graduation rate percentage (integer).
+Details
+~~~~~~~
 
-      status
-         Athlete status (character, either 'Athlete' or 'Nonathlete').
+The dataset name has been kept as 'Bigten_tbl_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps
+distinguish this dataset as part of the educationR package and assists
+users in identifying its specific characteristics. The suffix 'tbl_df'
+indicates that the dataset is a tibble. The original content has not
+been modified in any way.
 
-      .. rubric:: Details
-         :name: details
+Source
+~~~~~~
 
-      The dataset name has been kept as 'Bigten_tbl_df' to avoid
-      confusion with other datasets in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      educationR package and assists users in identifying its specific
-      characteristics. The suffix 'tbl_df' indicates that the dataset is
-      a tibble. The original content has not been modified in any way.
-
-      .. rubric:: Source
-         :name: source
-
-      NCAA Graduation Rates Report, 2000.
+NCAA Graduation Rates Report, 2000.

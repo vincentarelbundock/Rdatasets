@@ -1,82 +1,76 @@
-.. container::
+========= ===============
+ManufCost R Documentation
+========= ===============
 
-   .. container::
+Manufacturing Costs
+-------------------
 
-      ========= ===============
-      ManufCost R Documentation
-      ========= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: Manufacturing Costs
-         :name: manufacturing-costs
+annual observations from 1947 to 1971
 
-      .. rubric:: Description
-         :name: description
+*number of observations* : 25
 
-      annual observations from 1947 to 1971
+*observation* : country
 
-      *number of observations* : 25
+*country* : United States
 
-      *observation* : country
+Usage
+~~~~~
 
-      *country* : United States
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(ManufCost)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(ManufCost)
+A time series containing :
 
-      .. rubric:: Format
-         :name: format
+cost
+   cost index
 
-      A time series containing :
+sk
+   capital cost share
 
-      cost
-         cost index
+sl
+   labor cost share
 
-      sk
-         capital cost share
+se
+   energy cost share
 
-      sl
-         labor cost share
+sm
+   materials cost share
 
-      se
-         energy cost share
+pk
+   capital price
 
-      sm
-         materials cost share
+pl
+   labor price
 
-      pk
-         capital price
+pe
+   energy price
 
-      pl
-         labor price
+pm
+   materials price
 
-      pe
-         energy price
+Source
+~~~~~~
 
-      pm
-         materials price
+Berndt, E. and D. Wood (1975) “Technology, prices and the derived demand
+for energy”, *Journal of Economics and Statistics*, **57**, 376-384.
 
-      .. rubric:: Source
-         :name: source
+References
+~~~~~~~~~~
 
-      Berndt, E. and D. Wood (1975) “Technology, prices and the derived
-      demand for energy”, *Journal of Economics and Statistics*, **57**,
-      376-384.
+Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
+https://archive.org/details/econometricanaly0000gree_f4x3, Table F14.1.
 
-      .. rubric:: References
-         :name: references
+See Also
+~~~~~~~~
 
-      Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
-      https://archive.org/details/econometricanaly0000gree_f4x3, Table
-      F14.1.
+``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+``Index.Observations``,
 
-      .. rubric:: See Also
-         :name: see-also
-
-      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-      ``Index.Observations``,
-
-      ``Index.Time.Series``
+``Index.Time.Series``

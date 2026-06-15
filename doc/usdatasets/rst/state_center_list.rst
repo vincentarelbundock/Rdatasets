@@ -1,45 +1,41 @@
-.. container::
+================= ===============
+state_center_list R Documentation
+================= ===============
 
-   .. container::
+US State Facts and Figures - US State Centers
+---------------------------------------------
 
-      ================= ===============
-      state_center_list R Documentation
-      ================= ===============
+Description
+~~~~~~~~~~~
 
-      .. rubric:: US State Facts and Figures - US State Centers
-         :name: us-state-facts-and-figures---us-state-centers
+The dataset name has been changed to 'state_center_list' to avoid
+confusion with other packages in the R ecosystem. This naming convention
+helps distinguish this dataset as part of the 'usdatasets' package and
+identifies it as a list. The original content of the dataset has not
+been modified.
 
-      .. rubric:: Description
-         :name: description
+Usage
+~~~~~
 
-      The dataset name has been changed to 'state_center_list' to avoid
-      confusion with other packages in the R ecosystem. This naming
-      convention helps distinguish this dataset as part of the
-      'usdatasets' package and identifies it as a list. The original
-      content of the dataset has not been modified.
+.. code:: R
 
-      .. rubric:: Usage
-         :name: usage
+   data(state_center_list)
 
-      .. code:: R
+Format
+~~~~~~
 
-         data(state_center_list)
+A list with 2 elements, each containing numeric values representing the
+geographical center coordinates of U.S. states:
 
-      .. rubric:: Format
-         :name: format
+x
+   Numeric vector of length 50 representing the x-coordinates
+   (longitude) of the state centers.
 
-      A list with 2 elements, each containing numeric values
-      representing the geographical center coordinates of U.S. states:
+y
+   Numeric vector of length 50 representing the y-coordinates (latitude)
+   of the state centers.
 
-      x
-         Numeric vector of length 50 representing the x-coordinates
-         (longitude) of the state centers.
+Source
+~~~~~~
 
-      y
-         Numeric vector of length 50 representing the y-coordinates
-         (latitude) of the state centers.
-
-      .. rubric:: Source
-         :name: source
-
-      Geographical data for U.S. state centers.
+Geographical data for U.S. state centers.

@@ -16,52 +16,32 @@ function processMathHTML() {
 
 <table style="width: 100%;"><tr><td>Langren</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>
-van Langren's Data on Longitude Distance between Toledo and Rome
-</h2>
+<h2>van Langren's Data on Longitude Distance between Toledo and Rome</h2>
 
 <h3>Description</h3>
 
-<p>Michael Florent van Langren (1598-1675) was a Dutch mathematician and astronomer, who served
-as a royal mathematician to King Phillip IV of Spain, and who worked on one of the most significant
-problems of his time&mdash; the accurate determination of longitude, particularly for navigation at sea.
+<p>Michael Florent van Langren (1598-1675) was a Dutch mathematician and
+astronomer, who served as a royal mathematician to King Phillip IV of Spain,
+and who worked on one of the most significant problems of his time&mdash; the
+accurate determination of longitude, particularly for navigation at sea.
 </p>
-<p>In order to convince the Spanish court of the seriousness of the problem (often resulting in
-great losses through ship wrecks), he prepared a 1-dimensional line graph, showing all the 
-available estimates of the distance in longitude between Toledo and Rome, which showed
-large errors, for even this modest distance.  This 1D line graph, from Langren (1644), is believed
-to be the first known graph of statistical data (Friendly etal., 2010).
-It provides a compelling example of the notions of statistical variability and bias.
-</p>
-<p>The data frame <code>Langren1644</code> gives the estimates and other information derived from the
-previously known 1644 graph.  
-It turns out that van Langren produced other versions of this graph, as early as 1628.
-The data frame <code>Langren.all</code> gives the estimates derived
-from all known versions of this graph.
-</p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>	data(Langren1644)
-	data(Langren.all)
-	</code></pre>
 
 
 <h3>Format</h3>
 
-<p><code>Langren1644</code>: A data frame with 12 observations on the following 9 variables,
-giving determinations of the distance in longitude between Toledo and Rome, from the 1644 graph.
+<p><code>Langren1644</code>: A data frame with 12 observations on the
+following 9 variables, giving determinations of the distance in longitude
+between Toledo and Rome, from the 1644 graph.
 </p>
 
 <dl>
-<dt><code>Name</code></dt><dd><p>The name of the person giving a determination, a factor with levels <code>A. Argelius</code> ... <code>T. Brahe</code></p>
+<dt><code>Name</code></dt><dd><p>The name of the person giving a determination, a factor with levels <code style="white-space: pre;">&#8288;A. Argelius&#8288;</code> ... <code style="white-space: pre;">&#8288;T. Brahe&#8288;</code></p>
 </dd>
 <dt><code>Longitude</code></dt><dd><p>Estimated value of the longitude distance between Toledo and Rome</p>
 </dd>
 <dt><code>Year</code></dt><dd><p>Year associated with this determination</p>
 </dd>
-<dt><code>Longname</code></dt><dd><p>A longer version of the <code>Name</code>, where appropriate; a factor with levels <code>Andrea Argoli</code> <code>Christoph Clavius</code>  <code>Tycho Brahe</code></p>
+<dt><code>Longname</code></dt><dd><p>A longer version of the <code>Name</code>, where appropriate; a factor with levels <code style="white-space: pre;">&#8288;Andrea Argoli&#8288;</code> <code style="white-space: pre;">&#8288;Christoph Clavius&#8288;</code> <code style="white-space: pre;">&#8288;Tycho Brahe&#8288;</code></p>
 </dd>
 <dt><code>City</code></dt><dd><p>The principal city where this person worked; a factor with levels <code>Alexandria</code> <code>Amsterdam</code> <code>Bamberg</code> <code>Bologna</code> <code>Frankfurt</code> <code>Hven</code> <code>Leuven</code> <code>Middelburg</code> <code>Nuremberg</code> <code>Padua</code> <code>Paris</code> <code>Rome</code></p>
 </dd>
@@ -70,13 +50,12 @@ giving determinations of the distance in longitude between Toledo and Rome, from
 <dt><code>Latitude</code></dt><dd><p>Latitude of this <code>City</code>; a numeric vector</p>
 </dd>
 <dt><code>Source</code></dt><dd><p>Likely source for this determination of Longitude; a factor with levels <code>Astron</code> <code>Map</code></p>
-</dd>
-<dt><code>Gap</code></dt><dd><p>A numeric vector indicating whether the <code>Longitude</code> value is below or above the median</p>
-</dd>
-</dl>
+</dd> <dt><code>Gap</code></dt><dd><p>A numeric vector indicating whether the <code>Longitude</code> value is below or above th median</p>
+</dd> </dl>
 
-<p><code>Langren.all</code>: A data frame with 61 observations on the following 4 variables,
-giving determinations of Longitude between Toledo and Rome from all known versions of van Langren's graph.
+<p><code>Langren.all</code>: A data frame with 61 observations on the following 4
+variables, giving determinations of Longitude between Toledo and Rome from
+all known versions of van Langren's graph.
 </p>
 
 <dl>
@@ -84,8 +63,7 @@ giving determinations of Longitude between Toledo and Rome from all known versio
 </dd>
 <dt><code>Year</code></dt><dd><p>Year of publication</p>
 </dd>
-<dt><code>Name</code></dt><dd><p>The name of the  person giving a determination,  a factor
-with levels  <code>Algunos1</code> <code>Algunos2</code>  <code>Apianus</code> ... <code>Schonerus</code></p>
+<dt><code>Name</code></dt><dd><p>The name of the person giving a determination, a factor with levels <code>Algunos1</code> <code>Algunos2</code> <code>Apianus</code> ... <code>Schonerus</code></p>
 </dd>
 <dt><code>Longitude</code></dt><dd><p>Estimated value of the longitude distance between Toledo and Rome</p>
 </dd>
@@ -95,32 +73,47 @@ with levels  <code>Algunos1</code> <code>Algunos2</code>  <code>Apianus</code> .
 
 <h3>Details</h3>
 
-<p>In all the graphs, Toledo is implicitly at the origin and Rome is located relatively at the value of <code>Longitude</code>  
-To judge correspondence with an actual map, the positions in (lat, long) are
+<p>In order to convince the Spanish court of the seriousness of the problem
+(often resulting in great losses through ship wrecks), he prepared a
+1-dimensional line graph, showing all the available estimates of the
+distance in longitude between Toledo and Rome, which showed large errors,
+for even this modest distance.  This 1D line graph, from Langren (1644), is
+believed to be the first known graph of statistical data (Friendly etal.,
+2010). It provides a compelling example of the notions of statistical
+variability and bias.
 </p>
-<p><code>
-	toledo &lt;- c(39.86, -4.03);
-	rome   &lt;- c(41.89, 12.5)
-</code>
+<p>The data frame <code>Langren1644</code> gives the estimates and other information
+derived from the previously known 1644 graph.  It turns out that van Langren
+produced other versions of this graph, as early as 1628. The data frame
+<code>Langren.all</code> gives the estimates derived from all known versions of
+this graph.
+</p>
+<p>In all the graphs, Toledo is implicitly at the origin and Rome is located
+relatively at the value of <code>Longitude</code>. To judge correspondence with an
+actual map, the positions in (lat, long) are
+</p>
+<p><code style="white-space: pre;">&#8288;toledo &lt;- c(39.86, -4.03); rome &lt;- c(41.89, 12.5)&#8288;</code>
 </p>
 
 
 <h3>Source</h3>
 
-<p>The longitude values were digitized from images of the various graphs, which may be
-found on the Supplementary materials page for Friendly etal. (2009).
+<p>The longitude values were digitized from images of the various
+graphs, which may be found on the Supplementary materials page for Friendly
+etal. (2009).
 </p>
 
 
 <h3>References</h3>
 
-<p>Friendly, M., Valero-Mora, P. and Ulargui, J. I. (2010).
-The First (Known) Statistical Graph: Michael Florent van Langren and the &quot;Secret&quot; of Longitude.
-<em>The American Statistician</em>, <b>64</b> (2), 185-191. 
-Supplementary materials: <a href="http://datavis.ca/gallery/langren/">http://datavis.ca/gallery/langren/</a>. 
+<p>Friendly, M., Valero-Mora, P. and Ulargui, J. I. (2010). The
+First (Known) Statistical Graph: Michael Florent van Langren and the
+&quot;Secret&quot; of Longitude. <em>The American Statistician</em>, <strong>64</strong> (2),
+185-191.  Supplementary materials: <a href="http://datavis.ca/gallery/langren/">http://datavis.ca/gallery/langren/</a>.
 </p>
-<p>Langren, M. F. van. (1644).  <em>La Verdadera Longitud por Mar y Tierra</em>. Antwerp: (n.p.), 1644.
-English translation available at <a href="http://datavis.ca/gallery/langren/verdadera.pdf">http://datavis.ca/gallery/langren/verdadera.pdf</a>.
+<p>Langren, M. F. van. (1644).  <em>La Verdadera Longitud por Mar y Tierra</em>.
+Antwerp: (n.p.), 1644. English translation available at
+<a href="http://datavis.ca/gallery/langren/verdadera.pdf">http://datavis.ca/gallery/langren/verdadera.pdf</a>.
 </p>
 <p>Lelewel, J. (1851). <em>Geographie du Moyen Age</em>. Paris: Pilliet, 1851.
 </p>
@@ -128,7 +121,8 @@ English translation available at <a href="http://datavis.ca/gallery/langren/verd
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(Langren1644)
+<pre><code class='language-R'>
+data(Langren1644)
 
 ####################################################
 # reproductions of Langren's graph overlaid on a map
@@ -269,6 +263,7 @@ dotplot(Name ~ Longitude|graph, data=Langren.all, groups=graph)
 # why the gap?
 gap.mod &lt;- glm(Gap ~ Year + Source + Latitude, family=binomial, data=Langren1644)
 anova(gap.mod, test="Chisq")
+
 
 
 </code></pre>
