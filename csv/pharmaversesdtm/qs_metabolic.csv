@@ -1,0 +1,967 @@
+rownames,STUDYID,USUBJID,DOMAIN,VISIT,VISITNUM,VISITDY,QSBLFL,QSDTC,QSDY,QSCAT,QSTEST,QSTESTCD,QSORRES,QSORRESU,QSSTRESC,QSSTRESN,QSSTRESU,QSSEQ
+1,CDISCPILOT01,01-701-1015,QS,SCREENING 1,1,-7,,2013-12-26,-7,COEQ,How hungry have you felt?,COEQ01,17,mm,17,17,mm,1
+2,CDISCPILOT01,01-701-1015,QS,SCREENING 1,1,-7,,2013-12-26,-7,COEQ,How full have you felt?,COEQ02,81,mm,81,81,mm,2
+3,CDISCPILOT01,01-701-1015,QS,SCREENING 1,1,-7,,2013-12-26,-7,COEQ,How strong was your desire to eat sweet foods?,COEQ03,38,mm,38,38,mm,3
+4,CDISCPILOT01,01-701-1015,QS,SCREENING 1,1,-7,,2013-12-26,-7,COEQ,How strong was your desire to eat savoury foods?,COEQ04,33,mm,33,33,mm,4
+5,CDISCPILOT01,01-701-1015,QS,SCREENING 1,1,-7,,2013-12-26,-7,COEQ,How happy have you felt?,COEQ05,60,mm,60,60,mm,5
+6,CDISCPILOT01,01-701-1015,QS,SCREENING 1,1,-7,,2013-12-26,-7,COEQ,How anxious have you felt?,COEQ06,60,mm,60,60,mm,6
+7,CDISCPILOT01,01-701-1015,QS,SCREENING 1,1,-7,,2013-12-26,-7,COEQ,How alert have you felt?,COEQ07,12,mm,12,12,mm,7
+8,CDISCPILOT01,01-701-1015,QS,SCREENING 1,1,-7,,2013-12-26,-7,COEQ,How contented have you felt?,COEQ08,29,mm,29,29,mm,8
+9,CDISCPILOT01,01-701-1015,QS,SCREENING 1,1,-7,,2013-12-26,-7,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,58,mm,58,58,mm,9
+10,CDISCPILOT01,01-701-1015,QS,SCREENING 1,1,-7,,2013-12-26,-7,COEQ,How strong have any food cravings been?,COEQ10,63,mm,63,63,mm,10
+11,CDISCPILOT01,01-701-1015,QS,SCREENING 1,1,-7,,2013-12-26,-7,COEQ,How difficult has it been to resist any food cravings?,COEQ11,51,mm,51,51,mm,11
+12,CDISCPILOT01,01-701-1015,QS,SCREENING 1,1,-7,,2013-12-26,-7,COEQ,How often have you eaten in response to food cravings?,COEQ12,51,mm,51,51,mm,12
+13,CDISCPILOT01,01-701-1015,QS,SCREENING 1,1,-7,,2013-12-26,-7,COEQ,Chocolate or chocolate flavoured foods,COEQ13,53,mm,53,53,mm,13
+14,CDISCPILOT01,01-701-1015,QS,SCREENING 1,1,-7,,2013-12-26,-7,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,56,mm,56,56,mm,14
+15,CDISCPILOT01,01-701-1015,QS,SCREENING 1,1,-7,,2013-12-26,-7,COEQ,Fruit or fruit juice,COEQ15,87,mm,87,87,mm,15
+16,CDISCPILOT01,01-701-1015,QS,SCREENING 1,1,-7,,2013-12-26,-7,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,83,mm,83,83,mm,16
+17,CDISCPILOT01,01-701-1015,QS,SCREENING 1,1,-7,,2013-12-26,-7,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,11,mm,11,11,mm,17
+18,CDISCPILOT01,01-701-1015,QS,SCREENING 1,1,-7,,2013-12-26,-7,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,70,mm,70,70,mm,18
+19,CDISCPILOT01,01-701-1015,QS,SCREENING 1,1,-7,,2013-12-26,-7,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,90,mm,90,90,mm,19
+20,CDISCPILOT01,01-701-1015,QS,SCREENING 1,1,-7,,2013-12-26,-7,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Ice Cream,,Ice Cream,,,20
+21,CDISCPILOT01,01-701-1015,QS,SCREENING 1,1,-7,,2013-12-26,-7,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,23,mm,23,23,mm,21
+22,CDISCPILOT01,01-701-1015,QS,SCREENING 2,2,-1,,2013-12-31,-2,COEQ,How hungry have you felt?,COEQ01,42,mm,42,42,mm,22
+23,CDISCPILOT01,01-701-1015,QS,SCREENING 2,2,-1,,2013-12-31,-2,COEQ,How full have you felt?,COEQ02,51,mm,51,51,mm,23
+24,CDISCPILOT01,01-701-1015,QS,SCREENING 2,2,-1,,2013-12-31,-2,COEQ,How strong was your desire to eat sweet foods?,COEQ03,62,mm,62,62,mm,24
+25,CDISCPILOT01,01-701-1015,QS,SCREENING 2,2,-1,,2013-12-31,-2,COEQ,How strong was your desire to eat savoury foods?,COEQ04,59,mm,59,59,mm,25
+26,CDISCPILOT01,01-701-1015,QS,SCREENING 2,2,-1,,2013-12-31,-2,COEQ,How happy have you felt?,COEQ05,90,mm,90,90,mm,26
+27,CDISCPILOT01,01-701-1015,QS,SCREENING 2,2,-1,,2013-12-31,-2,COEQ,How anxious have you felt?,COEQ06,57,mm,57,57,mm,27
+28,CDISCPILOT01,01-701-1015,QS,SCREENING 2,2,-1,,2013-12-31,-2,COEQ,How alert have you felt?,COEQ07,31,mm,31,31,mm,28
+29,CDISCPILOT01,01-701-1015,QS,SCREENING 2,2,-1,,2013-12-31,-2,COEQ,How contented have you felt?,COEQ08,48,mm,48,48,mm,29
+30,CDISCPILOT01,01-701-1015,QS,SCREENING 2,2,-1,,2013-12-31,-2,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,60,mm,60,60,mm,30
+31,CDISCPILOT01,01-701-1015,QS,SCREENING 2,2,-1,,2013-12-31,-2,COEQ,How strong have any food cravings been?,COEQ10,7,mm,7,7,mm,31
+32,CDISCPILOT01,01-701-1015,QS,SCREENING 2,2,-1,,2013-12-31,-2,COEQ,How difficult has it been to resist any food cravings?,COEQ11,73,mm,73,73,mm,32
+33,CDISCPILOT01,01-701-1015,QS,SCREENING 2,2,-1,,2013-12-31,-2,COEQ,How often have you eaten in response to food cravings?,COEQ12,64,mm,64,64,mm,33
+34,CDISCPILOT01,01-701-1015,QS,SCREENING 2,2,-1,,2013-12-31,-2,COEQ,Chocolate or chocolate flavoured foods,COEQ13,7,mm,7,7,mm,34
+35,CDISCPILOT01,01-701-1015,QS,SCREENING 2,2,-1,,2013-12-31,-2,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,70,mm,70,70,mm,35
+36,CDISCPILOT01,01-701-1015,QS,SCREENING 2,2,-1,,2013-12-31,-2,COEQ,Fruit or fruit juice,COEQ15,35,mm,35,35,mm,36
+37,CDISCPILOT01,01-701-1015,QS,SCREENING 2,2,-1,,2013-12-31,-2,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,31,mm,31,31,mm,37
+38,CDISCPILOT01,01-701-1015,QS,SCREENING 2,2,-1,,2013-12-31,-2,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,98,mm,98,98,mm,38
+39,CDISCPILOT01,01-701-1015,QS,SCREENING 2,2,-1,,2013-12-31,-2,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,75,mm,75,75,mm,39
+40,CDISCPILOT01,01-701-1015,QS,SCREENING 2,2,-1,,2013-12-31,-2,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,70,mm,70,70,mm,40
+41,CDISCPILOT01,01-701-1015,QS,SCREENING 2,2,-1,,2013-12-31,-2,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Ice Cream,,Ice Cream,,,41
+42,CDISCPILOT01,01-701-1015,QS,SCREENING 2,2,-1,,2013-12-31,-2,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,26,mm,26,26,mm,42
+43,CDISCPILOT01,01-701-1015,QS,BASELINE,3,1,Y,2014-01-02,1,COEQ,How hungry have you felt?,COEQ01,2,mm,2,2,mm,43
+44,CDISCPILOT01,01-701-1015,QS,BASELINE,3,1,Y,2014-01-02,1,COEQ,How full have you felt?,COEQ02,13,mm,13,13,mm,44
+45,CDISCPILOT01,01-701-1015,QS,BASELINE,3,1,Y,2014-01-02,1,COEQ,How strong was your desire to eat sweet foods?,COEQ03,9,mm,9,9,mm,45
+46,CDISCPILOT01,01-701-1015,QS,BASELINE,3,1,Y,2014-01-02,1,COEQ,How strong was your desire to eat savoury foods?,COEQ04,24,mm,24,24,mm,46
+47,CDISCPILOT01,01-701-1015,QS,BASELINE,3,1,Y,2014-01-02,1,COEQ,How happy have you felt?,COEQ05,79,mm,79,79,mm,47
+48,CDISCPILOT01,01-701-1015,QS,BASELINE,3,1,Y,2014-01-02,1,COEQ,How anxious have you felt?,COEQ06,60,mm,60,60,mm,48
+49,CDISCPILOT01,01-701-1015,QS,BASELINE,3,1,Y,2014-01-02,1,COEQ,How alert have you felt?,COEQ07,91,mm,91,91,mm,49
+50,CDISCPILOT01,01-701-1015,QS,BASELINE,3,1,Y,2014-01-02,1,COEQ,How contented have you felt?,COEQ08,56,mm,56,56,mm,50
+51,CDISCPILOT01,01-701-1015,QS,BASELINE,3,1,Y,2014-01-02,1,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,76,mm,76,76,mm,51
+52,CDISCPILOT01,01-701-1015,QS,BASELINE,3,1,Y,2014-01-02,1,COEQ,How strong have any food cravings been?,COEQ10,38,mm,38,38,mm,52
+53,CDISCPILOT01,01-701-1015,QS,BASELINE,3,1,Y,2014-01-02,1,COEQ,How difficult has it been to resist any food cravings?,COEQ11,37,mm,37,37,mm,53
+54,CDISCPILOT01,01-701-1015,QS,BASELINE,3,1,Y,2014-01-02,1,COEQ,How often have you eaten in response to food cravings?,COEQ12,17,mm,17,17,mm,54
+55,CDISCPILOT01,01-701-1015,QS,BASELINE,3,1,Y,2014-01-02,1,COEQ,Chocolate or chocolate flavoured foods,COEQ13,45,mm,45,45,mm,55
+56,CDISCPILOT01,01-701-1015,QS,BASELINE,3,1,Y,2014-01-02,1,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,26,mm,26,26,mm,56
+57,CDISCPILOT01,01-701-1015,QS,BASELINE,3,1,Y,2014-01-02,1,COEQ,Fruit or fruit juice,COEQ15,34,mm,34,34,mm,57
+58,CDISCPILOT01,01-701-1015,QS,BASELINE,3,1,Y,2014-01-02,1,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,89,mm,89,89,mm,58
+59,CDISCPILOT01,01-701-1015,QS,BASELINE,3,1,Y,2014-01-02,1,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,20,mm,20,20,mm,59
+60,CDISCPILOT01,01-701-1015,QS,BASELINE,3,1,Y,2014-01-02,1,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,58,mm,58,58,mm,60
+61,CDISCPILOT01,01-701-1015,QS,BASELINE,3,1,Y,2014-01-02,1,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,21,mm,21,21,mm,61
+62,CDISCPILOT01,01-701-1015,QS,BASELINE,3,1,Y,2014-01-02,1,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Ice Cream,,Ice Cream,,,62
+63,CDISCPILOT01,01-701-1015,QS,BASELINE,3,1,Y,2014-01-02,1,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,79,mm,79,79,mm,63
+64,CDISCPILOT01,01-701-1015,QS,WEEK 2,4,14,,2014-01-16,15,COEQ,How hungry have you felt?,COEQ01,17,mm,17,17,mm,64
+65,CDISCPILOT01,01-701-1015,QS,WEEK 2,4,14,,2014-01-16,15,COEQ,How full have you felt?,COEQ02,57,mm,57,57,mm,65
+66,CDISCPILOT01,01-701-1015,QS,WEEK 2,4,14,,2014-01-16,15,COEQ,How strong was your desire to eat sweet foods?,COEQ03,42,mm,42,42,mm,66
+67,CDISCPILOT01,01-701-1015,QS,WEEK 2,4,14,,2014-01-16,15,COEQ,How strong was your desire to eat savoury foods?,COEQ04,27,mm,27,27,mm,67
+68,CDISCPILOT01,01-701-1015,QS,WEEK 2,4,14,,2014-01-16,15,COEQ,How happy have you felt?,COEQ05,5,mm,5,5,mm,68
+69,CDISCPILOT01,01-701-1015,QS,WEEK 2,4,14,,2014-01-16,15,COEQ,How anxious have you felt?,COEQ06,10,mm,10,10,mm,69
+70,CDISCPILOT01,01-701-1015,QS,WEEK 2,4,14,,2014-01-16,15,COEQ,How alert have you felt?,COEQ07,31,mm,31,31,mm,70
+71,CDISCPILOT01,01-701-1015,QS,WEEK 2,4,14,,2014-01-16,15,COEQ,How contented have you felt?,COEQ08,80,mm,80,80,mm,71
+72,CDISCPILOT01,01-701-1015,QS,WEEK 2,4,14,,2014-01-16,15,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,23,mm,23,23,mm,72
+73,CDISCPILOT01,01-701-1015,QS,WEEK 2,4,14,,2014-01-16,15,COEQ,How strong have any food cravings been?,COEQ10,21,mm,21,21,mm,73
+74,CDISCPILOT01,01-701-1015,QS,WEEK 2,4,14,,2014-01-16,15,COEQ,How difficult has it been to resist any food cravings?,COEQ11,88,mm,88,88,mm,74
+75,CDISCPILOT01,01-701-1015,QS,WEEK 2,4,14,,2014-01-16,15,COEQ,How often have you eaten in response to food cravings?,COEQ12,99,mm,99,99,mm,75
+76,CDISCPILOT01,01-701-1015,QS,WEEK 2,4,14,,2014-01-16,15,COEQ,Chocolate or chocolate flavoured foods,COEQ13,84,mm,84,84,mm,76
+77,CDISCPILOT01,01-701-1015,QS,WEEK 2,4,14,,2014-01-16,15,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,91,mm,91,91,mm,77
+78,CDISCPILOT01,01-701-1015,QS,WEEK 2,4,14,,2014-01-16,15,COEQ,Fruit or fruit juice,COEQ15,47,mm,47,47,mm,78
+79,CDISCPILOT01,01-701-1015,QS,WEEK 2,4,14,,2014-01-16,15,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,22,mm,22,22,mm,79
+80,CDISCPILOT01,01-701-1015,QS,WEEK 2,4,14,,2014-01-16,15,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,13,mm,13,13,mm,80
+81,CDISCPILOT01,01-701-1015,QS,WEEK 2,4,14,,2014-01-16,15,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,28,mm,28,28,mm,81
+82,CDISCPILOT01,01-701-1015,QS,WEEK 2,4,14,,2014-01-16,15,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,82,mm,82,82,mm,82
+83,CDISCPILOT01,01-701-1015,QS,WEEK 2,4,14,,2014-01-16,15,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Ice Cream,,Ice Cream,,,83
+84,CDISCPILOT01,01-701-1015,QS,WEEK 2,4,14,,2014-01-16,15,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,80,mm,80,80,mm,84
+85,CDISCPILOT01,01-701-1015,QS,WEEK 4,5,28,,2014-01-30,29,COEQ,How hungry have you felt?,COEQ01,10,mm,10,10,mm,85
+86,CDISCPILOT01,01-701-1015,QS,WEEK 4,5,28,,2014-01-30,29,COEQ,How full have you felt?,COEQ02,77,mm,77,77,mm,86
+87,CDISCPILOT01,01-701-1015,QS,WEEK 4,5,28,,2014-01-30,29,COEQ,How strong was your desire to eat sweet foods?,COEQ03,30,mm,30,30,mm,87
+88,CDISCPILOT01,01-701-1015,QS,WEEK 4,5,28,,2014-01-30,29,COEQ,How strong was your desire to eat savoury foods?,COEQ04,77,mm,77,77,mm,88
+89,CDISCPILOT01,01-701-1015,QS,WEEK 4,5,28,,2014-01-30,29,COEQ,How happy have you felt?,COEQ05,54,mm,54,54,mm,89
+90,CDISCPILOT01,01-701-1015,QS,WEEK 4,5,28,,2014-01-30,29,COEQ,How anxious have you felt?,COEQ06,36,mm,36,36,mm,90
+91,CDISCPILOT01,01-701-1015,QS,WEEK 4,5,28,,2014-01-30,29,COEQ,How alert have you felt?,COEQ07,9,mm,9,9,mm,91
+92,CDISCPILOT01,01-701-1015,QS,WEEK 4,5,28,,2014-01-30,29,COEQ,How contented have you felt?,COEQ08,76,mm,76,76,mm,92
+93,CDISCPILOT01,01-701-1015,QS,WEEK 4,5,28,,2014-01-30,29,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,76,mm,76,76,mm,93
+94,CDISCPILOT01,01-701-1015,QS,WEEK 4,5,28,,2014-01-30,29,COEQ,How strong have any food cravings been?,COEQ10,90,mm,90,90,mm,94
+95,CDISCPILOT01,01-701-1015,QS,WEEK 4,5,28,,2014-01-30,29,COEQ,How difficult has it been to resist any food cravings?,COEQ11,97,mm,97,97,mm,95
+96,CDISCPILOT01,01-701-1015,QS,WEEK 4,5,28,,2014-01-30,29,COEQ,How often have you eaten in response to food cravings?,COEQ12,52,mm,52,52,mm,96
+97,CDISCPILOT01,01-701-1015,QS,WEEK 4,5,28,,2014-01-30,29,COEQ,Chocolate or chocolate flavoured foods,COEQ13,55,mm,55,55,mm,97
+98,CDISCPILOT01,01-701-1015,QS,WEEK 4,5,28,,2014-01-30,29,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,16,mm,16,16,mm,98
+99,CDISCPILOT01,01-701-1015,QS,WEEK 4,5,28,,2014-01-30,29,COEQ,Fruit or fruit juice,COEQ15,16,mm,16,16,mm,99
+100,CDISCPILOT01,01-701-1015,QS,WEEK 4,5,28,,2014-01-30,29,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,79,mm,79,79,mm,100
+101,CDISCPILOT01,01-701-1015,QS,WEEK 4,5,28,,2014-01-30,29,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,75,mm,75,75,mm,101
+102,CDISCPILOT01,01-701-1015,QS,WEEK 4,5,28,,2014-01-30,29,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,78,mm,78,78,mm,102
+103,CDISCPILOT01,01-701-1015,QS,WEEK 4,5,28,,2014-01-30,29,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,65,mm,65,65,mm,103
+104,CDISCPILOT01,01-701-1015,QS,WEEK 4,5,28,,2014-01-30,29,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pizza,,Pizza,,,104
+105,CDISCPILOT01,01-701-1015,QS,WEEK 4,5,28,,2014-01-30,29,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,1,mm,1,1,mm,105
+106,CDISCPILOT01,01-701-1015,QS,WEEK 6,7,42,,2014-02-12,42,COEQ,How hungry have you felt?,COEQ01,96,mm,96,96,mm,106
+107,CDISCPILOT01,01-701-1015,QS,WEEK 6,7,42,,2014-02-12,42,COEQ,How full have you felt?,COEQ02,84,mm,84,84,mm,107
+108,CDISCPILOT01,01-701-1015,QS,WEEK 6,7,42,,2014-02-12,42,COEQ,How strong was your desire to eat sweet foods?,COEQ03,21,mm,21,21,mm,108
+109,CDISCPILOT01,01-701-1015,QS,WEEK 6,7,42,,2014-02-12,42,COEQ,How strong was your desire to eat savoury foods?,COEQ04,49,mm,49,49,mm,109
+110,CDISCPILOT01,01-701-1015,QS,WEEK 6,7,42,,2014-02-12,42,COEQ,How happy have you felt?,COEQ05,64,mm,64,64,mm,110
+111,CDISCPILOT01,01-701-1015,QS,WEEK 6,7,42,,2014-02-12,42,COEQ,How anxious have you felt?,COEQ06,92,mm,92,92,mm,111
+112,CDISCPILOT01,01-701-1015,QS,WEEK 6,7,42,,2014-02-12,42,COEQ,How alert have you felt?,COEQ07,1,mm,1,1,mm,112
+113,CDISCPILOT01,01-701-1015,QS,WEEK 6,7,42,,2014-02-12,42,COEQ,How contented have you felt?,COEQ08,27,mm,27,27,mm,113
+114,CDISCPILOT01,01-701-1015,QS,WEEK 6,7,42,,2014-02-12,42,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,44,mm,44,44,mm,114
+115,CDISCPILOT01,01-701-1015,QS,WEEK 6,7,42,,2014-02-12,42,COEQ,How strong have any food cravings been?,COEQ10,83,mm,83,83,mm,115
+116,CDISCPILOT01,01-701-1015,QS,WEEK 6,7,42,,2014-02-12,42,COEQ,How difficult has it been to resist any food cravings?,COEQ11,87,mm,87,87,mm,116
+117,CDISCPILOT01,01-701-1015,QS,WEEK 6,7,42,,2014-02-12,42,COEQ,How often have you eaten in response to food cravings?,COEQ12,25,mm,25,25,mm,117
+118,CDISCPILOT01,01-701-1015,QS,WEEK 6,7,42,,2014-02-12,42,COEQ,Chocolate or chocolate flavoured foods,COEQ13,32,mm,32,32,mm,118
+119,CDISCPILOT01,01-701-1015,QS,WEEK 6,7,42,,2014-02-12,42,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,31,mm,31,31,mm,119
+120,CDISCPILOT01,01-701-1015,QS,WEEK 6,7,42,,2014-02-12,42,COEQ,Fruit or fruit juice,COEQ15,18,mm,18,18,mm,120
+121,CDISCPILOT01,01-701-1015,QS,WEEK 6,7,42,,2014-02-12,42,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,68,mm,68,68,mm,121
+122,CDISCPILOT01,01-701-1015,QS,WEEK 6,7,42,,2014-02-12,42,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,77,mm,77,77,mm,122
+123,CDISCPILOT01,01-701-1015,QS,WEEK 6,7,42,,2014-02-12,42,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,68,mm,68,68,mm,123
+124,CDISCPILOT01,01-701-1015,QS,WEEK 6,7,42,,2014-02-12,42,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,21,mm,21,21,mm,124
+125,CDISCPILOT01,01-701-1015,QS,WEEK 6,7,42,,2014-02-12,42,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pasta,,Pasta,,,125
+126,CDISCPILOT01,01-701-1015,QS,WEEK 6,7,42,,2014-02-12,42,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,61,mm,61,61,mm,126
+127,CDISCPILOT01,01-701-1015,QS,WEEK 8,8,56,,2014-03-05,63,COEQ,How hungry have you felt?,COEQ01,34,mm,34,34,mm,127
+128,CDISCPILOT01,01-701-1015,QS,WEEK 8,8,56,,2014-03-05,63,COEQ,How full have you felt?,COEQ02,4,mm,4,4,mm,128
+129,CDISCPILOT01,01-701-1015,QS,WEEK 8,8,56,,2014-03-05,63,COEQ,How strong was your desire to eat sweet foods?,COEQ03,40,mm,40,40,mm,129
+130,CDISCPILOT01,01-701-1015,QS,WEEK 8,8,56,,2014-03-05,63,COEQ,How strong was your desire to eat savoury foods?,COEQ04,8,mm,8,8,mm,130
+131,CDISCPILOT01,01-701-1015,QS,WEEK 8,8,56,,2014-03-05,63,COEQ,How happy have you felt?,COEQ05,31,mm,31,31,mm,131
+132,CDISCPILOT01,01-701-1015,QS,WEEK 8,8,56,,2014-03-05,63,COEQ,How anxious have you felt?,COEQ06,33,mm,33,33,mm,132
+133,CDISCPILOT01,01-701-1015,QS,WEEK 8,8,56,,2014-03-05,63,COEQ,How alert have you felt?,COEQ07,8,mm,8,8,mm,133
+134,CDISCPILOT01,01-701-1015,QS,WEEK 8,8,56,,2014-03-05,63,COEQ,How contented have you felt?,COEQ08,15,mm,15,15,mm,134
+135,CDISCPILOT01,01-701-1015,QS,WEEK 8,8,56,,2014-03-05,63,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,15,mm,15,15,mm,135
+136,CDISCPILOT01,01-701-1015,QS,WEEK 8,8,56,,2014-03-05,63,COEQ,How strong have any food cravings been?,COEQ10,91,mm,91,91,mm,136
+137,CDISCPILOT01,01-701-1015,QS,WEEK 8,8,56,,2014-03-05,63,COEQ,How difficult has it been to resist any food cravings?,COEQ11,70,mm,70,70,mm,137
+138,CDISCPILOT01,01-701-1015,QS,WEEK 8,8,56,,2014-03-05,63,COEQ,How often have you eaten in response to food cravings?,COEQ12,82,mm,82,82,mm,138
+139,CDISCPILOT01,01-701-1015,QS,WEEK 8,8,56,,2014-03-05,63,COEQ,Chocolate or chocolate flavoured foods,COEQ13,67,mm,67,67,mm,139
+140,CDISCPILOT01,01-701-1015,QS,WEEK 8,8,56,,2014-03-05,63,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,22,mm,22,22,mm,140
+141,CDISCPILOT01,01-701-1015,QS,WEEK 8,8,56,,2014-03-05,63,COEQ,Fruit or fruit juice,COEQ15,46,mm,46,46,mm,141
+142,CDISCPILOT01,01-701-1015,QS,WEEK 8,8,56,,2014-03-05,63,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,72,mm,72,72,mm,142
+143,CDISCPILOT01,01-701-1015,QS,WEEK 8,8,56,,2014-03-05,63,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,82,mm,82,82,mm,143
+144,CDISCPILOT01,01-701-1015,QS,WEEK 8,8,56,,2014-03-05,63,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,82,mm,82,82,mm,144
+145,CDISCPILOT01,01-701-1015,QS,WEEK 8,8,56,,2014-03-05,63,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,20,mm,20,20,mm,145
+146,CDISCPILOT01,01-701-1015,QS,WEEK 8,8,56,,2014-03-05,63,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pizza,,Pizza,,,146
+147,CDISCPILOT01,01-701-1015,QS,WEEK 8,8,56,,2014-03-05,63,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,43,mm,43,43,mm,147
+148,CDISCPILOT01,01-701-1015,QS,WEEK 12,9,84,,2014-03-26,84,COEQ,How hungry have you felt?,COEQ01,64,mm,64,64,mm,148
+149,CDISCPILOT01,01-701-1015,QS,WEEK 12,9,84,,2014-03-26,84,COEQ,How full have you felt?,COEQ02,42,mm,42,42,mm,149
+150,CDISCPILOT01,01-701-1015,QS,WEEK 12,9,84,,2014-03-26,84,COEQ,How strong was your desire to eat sweet foods?,COEQ03,88,mm,88,88,mm,150
+151,CDISCPILOT01,01-701-1015,QS,WEEK 12,9,84,,2014-03-26,84,COEQ,How strong was your desire to eat savoury foods?,COEQ04,32,mm,32,32,mm,151
+152,CDISCPILOT01,01-701-1015,QS,WEEK 12,9,84,,2014-03-26,84,COEQ,How happy have you felt?,COEQ05,32,mm,32,32,mm,152
+153,CDISCPILOT01,01-701-1015,QS,WEEK 12,9,84,,2014-03-26,84,COEQ,How anxious have you felt?,COEQ06,49,mm,49,49,mm,153
+154,CDISCPILOT01,01-701-1015,QS,WEEK 12,9,84,,2014-03-26,84,COEQ,How alert have you felt?,COEQ07,34,mm,34,34,mm,154
+155,CDISCPILOT01,01-701-1015,QS,WEEK 12,9,84,,2014-03-26,84,COEQ,How contented have you felt?,COEQ08,22,mm,22,22,mm,155
+156,CDISCPILOT01,01-701-1015,QS,WEEK 12,9,84,,2014-03-26,84,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,83,mm,83,83,mm,156
+157,CDISCPILOT01,01-701-1015,QS,WEEK 12,9,84,,2014-03-26,84,COEQ,How strong have any food cravings been?,COEQ10,54,mm,54,54,mm,157
+158,CDISCPILOT01,01-701-1015,QS,WEEK 12,9,84,,2014-03-26,84,COEQ,How difficult has it been to resist any food cravings?,COEQ11,10,mm,10,10,mm,158
+159,CDISCPILOT01,01-701-1015,QS,WEEK 12,9,84,,2014-03-26,84,COEQ,How often have you eaten in response to food cravings?,COEQ12,11,mm,11,11,mm,159
+160,CDISCPILOT01,01-701-1015,QS,WEEK 12,9,84,,2014-03-26,84,COEQ,Chocolate or chocolate flavoured foods,COEQ13,57,mm,57,57,mm,160
+161,CDISCPILOT01,01-701-1015,QS,WEEK 12,9,84,,2014-03-26,84,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,54,mm,54,54,mm,161
+162,CDISCPILOT01,01-701-1015,QS,WEEK 12,9,84,,2014-03-26,84,COEQ,Fruit or fruit juice,COEQ15,49,mm,49,49,mm,162
+163,CDISCPILOT01,01-701-1015,QS,WEEK 12,9,84,,2014-03-26,84,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,32,mm,32,32,mm,163
+164,CDISCPILOT01,01-701-1015,QS,WEEK 12,9,84,,2014-03-26,84,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,68,mm,68,68,mm,164
+165,CDISCPILOT01,01-701-1015,QS,WEEK 12,9,84,,2014-03-26,84,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,86,mm,86,86,mm,165
+166,CDISCPILOT01,01-701-1015,QS,WEEK 12,9,84,,2014-03-26,84,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,85,mm,85,85,mm,166
+167,CDISCPILOT01,01-701-1015,QS,WEEK 12,9,84,,2014-03-26,84,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Ice Cream,,Ice Cream,,,167
+168,CDISCPILOT01,01-701-1015,QS,WEEK 12,9,84,,2014-03-26,84,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,61,mm,61,61,mm,168
+169,CDISCPILOT01,01-701-1015,QS,WEEK 16,10,112,,2014-05-07,126,COEQ,How hungry have you felt?,COEQ01,83,mm,83,83,mm,169
+170,CDISCPILOT01,01-701-1015,QS,WEEK 16,10,112,,2014-05-07,126,COEQ,How full have you felt?,COEQ02,59,mm,59,59,mm,170
+171,CDISCPILOT01,01-701-1015,QS,WEEK 16,10,112,,2014-05-07,126,COEQ,How strong was your desire to eat sweet foods?,COEQ03,20,mm,20,20,mm,171
+172,CDISCPILOT01,01-701-1015,QS,WEEK 16,10,112,,2014-05-07,126,COEQ,How strong was your desire to eat savoury foods?,COEQ04,77,mm,77,77,mm,172
+173,CDISCPILOT01,01-701-1015,QS,WEEK 16,10,112,,2014-05-07,126,COEQ,How happy have you felt?,COEQ05,13,mm,13,13,mm,173
+174,CDISCPILOT01,01-701-1015,QS,WEEK 16,10,112,,2014-05-07,126,COEQ,How anxious have you felt?,COEQ06,89,mm,89,89,mm,174
+175,CDISCPILOT01,01-701-1015,QS,WEEK 16,10,112,,2014-05-07,126,COEQ,How alert have you felt?,COEQ07,31,mm,31,31,mm,175
+176,CDISCPILOT01,01-701-1015,QS,WEEK 16,10,112,,2014-05-07,126,COEQ,How contented have you felt?,COEQ08,65,mm,65,65,mm,176
+177,CDISCPILOT01,01-701-1015,QS,WEEK 16,10,112,,2014-05-07,126,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,26,mm,26,26,mm,177
+178,CDISCPILOT01,01-701-1015,QS,WEEK 16,10,112,,2014-05-07,126,COEQ,How strong have any food cravings been?,COEQ10,16,mm,16,16,mm,178
+179,CDISCPILOT01,01-701-1015,QS,WEEK 16,10,112,,2014-05-07,126,COEQ,How difficult has it been to resist any food cravings?,COEQ11,11,mm,11,11,mm,179
+180,CDISCPILOT01,01-701-1015,QS,WEEK 16,10,112,,2014-05-07,126,COEQ,How often have you eaten in response to food cravings?,COEQ12,44,mm,44,44,mm,180
+181,CDISCPILOT01,01-701-1015,QS,WEEK 16,10,112,,2014-05-07,126,COEQ,Chocolate or chocolate flavoured foods,COEQ13,4,mm,4,4,mm,181
+182,CDISCPILOT01,01-701-1015,QS,WEEK 16,10,112,,2014-05-07,126,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,96,mm,96,96,mm,182
+183,CDISCPILOT01,01-701-1015,QS,WEEK 16,10,112,,2014-05-07,126,COEQ,Fruit or fruit juice,COEQ15,51,mm,51,51,mm,183
+184,CDISCPILOT01,01-701-1015,QS,WEEK 16,10,112,,2014-05-07,126,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,36,mm,36,36,mm,184
+185,CDISCPILOT01,01-701-1015,QS,WEEK 16,10,112,,2014-05-07,126,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,88,mm,88,88,mm,185
+186,CDISCPILOT01,01-701-1015,QS,WEEK 16,10,112,,2014-05-07,126,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,75,mm,75,75,mm,186
+187,CDISCPILOT01,01-701-1015,QS,WEEK 16,10,112,,2014-05-07,126,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,76,mm,76,76,mm,187
+188,CDISCPILOT01,01-701-1015,QS,WEEK 16,10,112,,2014-05-07,126,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pasta,,Pasta,,,188
+189,CDISCPILOT01,01-701-1015,QS,WEEK 16,10,112,,2014-05-07,126,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,18,mm,18,18,mm,189
+190,CDISCPILOT01,01-701-1015,QS,WEEK 20,11,140,,2014-05-21,140,COEQ,How hungry have you felt?,COEQ01,79,mm,79,79,mm,190
+191,CDISCPILOT01,01-701-1015,QS,WEEK 20,11,140,,2014-05-21,140,COEQ,How full have you felt?,COEQ02,55,mm,55,55,mm,191
+192,CDISCPILOT01,01-701-1015,QS,WEEK 20,11,140,,2014-05-21,140,COEQ,How strong was your desire to eat sweet foods?,COEQ03,50,mm,50,50,mm,192
+193,CDISCPILOT01,01-701-1015,QS,WEEK 20,11,140,,2014-05-21,140,COEQ,How strong was your desire to eat savoury foods?,COEQ04,11,mm,11,11,mm,193
+194,CDISCPILOT01,01-701-1015,QS,WEEK 20,11,140,,2014-05-21,140,COEQ,How happy have you felt?,COEQ05,59,mm,59,59,mm,194
+195,CDISCPILOT01,01-701-1015,QS,WEEK 20,11,140,,2014-05-21,140,COEQ,How anxious have you felt?,COEQ06,90,mm,90,90,mm,195
+196,CDISCPILOT01,01-701-1015,QS,WEEK 20,11,140,,2014-05-21,140,COEQ,How alert have you felt?,COEQ07,19,mm,19,19,mm,196
+197,CDISCPILOT01,01-701-1015,QS,WEEK 20,11,140,,2014-05-21,140,COEQ,How contented have you felt?,COEQ08,53,mm,53,53,mm,197
+198,CDISCPILOT01,01-701-1015,QS,WEEK 20,11,140,,2014-05-21,140,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,67,mm,67,67,mm,198
+199,CDISCPILOT01,01-701-1015,QS,WEEK 20,11,140,,2014-05-21,140,COEQ,How strong have any food cravings been?,COEQ10,78,mm,78,78,mm,199
+200,CDISCPILOT01,01-701-1015,QS,WEEK 20,11,140,,2014-05-21,140,COEQ,How difficult has it been to resist any food cravings?,COEQ11,19,mm,19,19,mm,200
+201,CDISCPILOT01,01-701-1015,QS,WEEK 20,11,140,,2014-05-21,140,COEQ,How often have you eaten in response to food cravings?,COEQ12,57,mm,57,57,mm,201
+202,CDISCPILOT01,01-701-1015,QS,WEEK 20,11,140,,2014-05-21,140,COEQ,Chocolate or chocolate flavoured foods,COEQ13,20,mm,20,20,mm,202
+203,CDISCPILOT01,01-701-1015,QS,WEEK 20,11,140,,2014-05-21,140,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,31,mm,31,31,mm,203
+204,CDISCPILOT01,01-701-1015,QS,WEEK 20,11,140,,2014-05-21,140,COEQ,Fruit or fruit juice,COEQ15,16,mm,16,16,mm,204
+205,CDISCPILOT01,01-701-1015,QS,WEEK 20,11,140,,2014-05-21,140,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,10,mm,10,10,mm,205
+206,CDISCPILOT01,01-701-1015,QS,WEEK 20,11,140,,2014-05-21,140,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,26,mm,26,26,mm,206
+207,CDISCPILOT01,01-701-1015,QS,WEEK 20,11,140,,2014-05-21,140,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,34,mm,34,34,mm,207
+208,CDISCPILOT01,01-701-1015,QS,WEEK 20,11,140,,2014-05-21,140,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,85,mm,85,85,mm,208
+209,CDISCPILOT01,01-701-1015,QS,WEEK 20,11,140,,2014-05-21,140,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Ice Cream,,Ice Cream,,,209
+210,CDISCPILOT01,01-701-1015,QS,WEEK 20,11,140,,2014-05-21,140,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,35,mm,35,35,mm,210
+211,CDISCPILOT01,01-701-1015,QS,WEEK 24,12,168,,2014-06-18,168,COEQ,How hungry have you felt?,COEQ01,32,mm,32,32,mm,211
+212,CDISCPILOT01,01-701-1015,QS,WEEK 24,12,168,,2014-06-18,168,COEQ,How full have you felt?,COEQ02,47,mm,47,47,mm,212
+213,CDISCPILOT01,01-701-1015,QS,WEEK 24,12,168,,2014-06-18,168,COEQ,How strong was your desire to eat sweet foods?,COEQ03,85,mm,85,85,mm,213
+214,CDISCPILOT01,01-701-1015,QS,WEEK 24,12,168,,2014-06-18,168,COEQ,How strong was your desire to eat savoury foods?,COEQ04,32,mm,32,32,mm,214
+215,CDISCPILOT01,01-701-1015,QS,WEEK 24,12,168,,2014-06-18,168,COEQ,How happy have you felt?,COEQ05,56,mm,56,56,mm,215
+216,CDISCPILOT01,01-701-1015,QS,WEEK 24,12,168,,2014-06-18,168,COEQ,How anxious have you felt?,COEQ06,71,mm,71,71,mm,216
+217,CDISCPILOT01,01-701-1015,QS,WEEK 24,12,168,,2014-06-18,168,COEQ,How alert have you felt?,COEQ07,39,mm,39,39,mm,217
+218,CDISCPILOT01,01-701-1015,QS,WEEK 24,12,168,,2014-06-18,168,COEQ,How contented have you felt?,COEQ08,82,mm,82,82,mm,218
+219,CDISCPILOT01,01-701-1015,QS,WEEK 24,12,168,,2014-06-18,168,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,91,mm,91,91,mm,219
+220,CDISCPILOT01,01-701-1015,QS,WEEK 24,12,168,,2014-06-18,168,COEQ,How strong have any food cravings been?,COEQ10,42,mm,42,42,mm,220
+221,CDISCPILOT01,01-701-1015,QS,WEEK 24,12,168,,2014-06-18,168,COEQ,How difficult has it been to resist any food cravings?,COEQ11,28,mm,28,28,mm,221
+222,CDISCPILOT01,01-701-1015,QS,WEEK 24,12,168,,2014-06-18,168,COEQ,How often have you eaten in response to food cravings?,COEQ12,73,mm,73,73,mm,222
+223,CDISCPILOT01,01-701-1015,QS,WEEK 24,12,168,,2014-06-18,168,COEQ,Chocolate or chocolate flavoured foods,COEQ13,86,mm,86,86,mm,223
+224,CDISCPILOT01,01-701-1015,QS,WEEK 24,12,168,,2014-06-18,168,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,34,mm,34,34,mm,224
+225,CDISCPILOT01,01-701-1015,QS,WEEK 24,12,168,,2014-06-18,168,COEQ,Fruit or fruit juice,COEQ15,49,mm,49,49,mm,225
+226,CDISCPILOT01,01-701-1015,QS,WEEK 24,12,168,,2014-06-18,168,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,85,mm,85,85,mm,226
+227,CDISCPILOT01,01-701-1015,QS,WEEK 24,12,168,,2014-06-18,168,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,39,mm,39,39,mm,227
+228,CDISCPILOT01,01-701-1015,QS,WEEK 24,12,168,,2014-06-18,168,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,73,mm,73,73,mm,228
+229,CDISCPILOT01,01-701-1015,QS,WEEK 24,12,168,,2014-06-18,168,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,68,mm,68,68,mm,229
+230,CDISCPILOT01,01-701-1015,QS,WEEK 24,12,168,,2014-06-18,168,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pasta,,Pasta,,,230
+231,CDISCPILOT01,01-701-1015,QS,WEEK 24,12,168,,2014-06-18,168,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,3,mm,3,3,mm,231
+232,CDISCPILOT01,01-701-1015,QS,WEEK 26,13,182,,2014-07-02,182,COEQ,How hungry have you felt?,COEQ01,73,mm,73,73,mm,232
+233,CDISCPILOT01,01-701-1015,QS,WEEK 26,13,182,,2014-07-02,182,COEQ,How full have you felt?,COEQ02,48,mm,48,48,mm,233
+234,CDISCPILOT01,01-701-1015,QS,WEEK 26,13,182,,2014-07-02,182,COEQ,How strong was your desire to eat sweet foods?,COEQ03,58,mm,58,58,mm,234
+235,CDISCPILOT01,01-701-1015,QS,WEEK 26,13,182,,2014-07-02,182,COEQ,How strong was your desire to eat savoury foods?,COEQ04,21,mm,21,21,mm,235
+236,CDISCPILOT01,01-701-1015,QS,WEEK 26,13,182,,2014-07-02,182,COEQ,How happy have you felt?,COEQ05,3,mm,3,3,mm,236
+237,CDISCPILOT01,01-701-1015,QS,WEEK 26,13,182,,2014-07-02,182,COEQ,How anxious have you felt?,COEQ06,97,mm,97,97,mm,237
+238,CDISCPILOT01,01-701-1015,QS,WEEK 26,13,182,,2014-07-02,182,COEQ,How alert have you felt?,COEQ07,25,mm,25,25,mm,238
+239,CDISCPILOT01,01-701-1015,QS,WEEK 26,13,182,,2014-07-02,182,COEQ,How contented have you felt?,COEQ08,12,mm,12,12,mm,239
+240,CDISCPILOT01,01-701-1015,QS,WEEK 26,13,182,,2014-07-02,182,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,68,mm,68,68,mm,240
+241,CDISCPILOT01,01-701-1015,QS,WEEK 26,13,182,,2014-07-02,182,COEQ,How strong have any food cravings been?,COEQ10,73,mm,73,73,mm,241
+242,CDISCPILOT01,01-701-1015,QS,WEEK 26,13,182,,2014-07-02,182,COEQ,How difficult has it been to resist any food cravings?,COEQ11,32,mm,32,32,mm,242
+243,CDISCPILOT01,01-701-1015,QS,WEEK 26,13,182,,2014-07-02,182,COEQ,How often have you eaten in response to food cravings?,COEQ12,81,mm,81,81,mm,243
+244,CDISCPILOT01,01-701-1015,QS,WEEK 26,13,182,,2014-07-02,182,COEQ,Chocolate or chocolate flavoured foods,COEQ13,39,mm,39,39,mm,244
+245,CDISCPILOT01,01-701-1015,QS,WEEK 26,13,182,,2014-07-02,182,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,60,mm,60,60,mm,245
+246,CDISCPILOT01,01-701-1015,QS,WEEK 26,13,182,,2014-07-02,182,COEQ,Fruit or fruit juice,COEQ15,34,mm,34,34,mm,246
+247,CDISCPILOT01,01-701-1015,QS,WEEK 26,13,182,,2014-07-02,182,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,72,mm,72,72,mm,247
+248,CDISCPILOT01,01-701-1015,QS,WEEK 26,13,182,,2014-07-02,182,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,95,mm,95,95,mm,248
+249,CDISCPILOT01,01-701-1015,QS,WEEK 26,13,182,,2014-07-02,182,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,8,mm,8,8,mm,249
+250,CDISCPILOT01,01-701-1015,QS,WEEK 26,13,182,,2014-07-02,182,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,24,mm,24,24,mm,250
+251,CDISCPILOT01,01-701-1015,QS,WEEK 26,13,182,,2014-07-02,182,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pizza,,Pizza,,,251
+252,CDISCPILOT01,01-701-1015,QS,WEEK 26,13,182,,2014-07-02,182,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,33,mm,33,33,mm,252
+253,CDISCPILOT01,01-701-1023,QS,SCREENING 1,1,-7,,2012-07-22,-14,COEQ,How hungry have you felt?,COEQ01,65,mm,65,65,mm,1
+254,CDISCPILOT01,01-701-1023,QS,SCREENING 1,1,-7,,2012-07-22,-14,COEQ,How full have you felt?,COEQ02,62,mm,62,62,mm,2
+255,CDISCPILOT01,01-701-1023,QS,SCREENING 1,1,-7,,2012-07-22,-14,COEQ,How strong was your desire to eat sweet foods?,COEQ03,25,mm,25,25,mm,3
+256,CDISCPILOT01,01-701-1023,QS,SCREENING 1,1,-7,,2012-07-22,-14,COEQ,How strong was your desire to eat savoury foods?,COEQ04,52,mm,52,52,mm,4
+257,CDISCPILOT01,01-701-1023,QS,SCREENING 1,1,-7,,2012-07-22,-14,COEQ,How happy have you felt?,COEQ05,4,mm,4,4,mm,5
+258,CDISCPILOT01,01-701-1023,QS,SCREENING 1,1,-7,,2012-07-22,-14,COEQ,How anxious have you felt?,COEQ06,47,mm,47,47,mm,6
+259,CDISCPILOT01,01-701-1023,QS,SCREENING 1,1,-7,,2012-07-22,-14,COEQ,How alert have you felt?,COEQ07,88,mm,88,88,mm,7
+260,CDISCPILOT01,01-701-1023,QS,SCREENING 1,1,-7,,2012-07-22,-14,COEQ,How contented have you felt?,COEQ08,95,mm,95,95,mm,8
+261,CDISCPILOT01,01-701-1023,QS,SCREENING 1,1,-7,,2012-07-22,-14,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,76,mm,76,76,mm,9
+262,CDISCPILOT01,01-701-1023,QS,SCREENING 1,1,-7,,2012-07-22,-14,COEQ,How strong have any food cravings been?,COEQ10,93,mm,93,93,mm,10
+263,CDISCPILOT01,01-701-1023,QS,SCREENING 1,1,-7,,2012-07-22,-14,COEQ,How difficult has it been to resist any food cravings?,COEQ11,56,mm,56,56,mm,11
+264,CDISCPILOT01,01-701-1023,QS,SCREENING 1,1,-7,,2012-07-22,-14,COEQ,How often have you eaten in response to food cravings?,COEQ12,62,mm,62,62,mm,12
+265,CDISCPILOT01,01-701-1023,QS,SCREENING 1,1,-7,,2012-07-22,-14,COEQ,Chocolate or chocolate flavoured foods,COEQ13,93,mm,93,93,mm,13
+266,CDISCPILOT01,01-701-1023,QS,SCREENING 1,1,-7,,2012-07-22,-14,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,67,mm,67,67,mm,14
+267,CDISCPILOT01,01-701-1023,QS,SCREENING 1,1,-7,,2012-07-22,-14,COEQ,Fruit or fruit juice,COEQ15,5,mm,5,5,mm,15
+268,CDISCPILOT01,01-701-1023,QS,SCREENING 1,1,-7,,2012-07-22,-14,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,18,mm,18,18,mm,16
+269,CDISCPILOT01,01-701-1023,QS,SCREENING 1,1,-7,,2012-07-22,-14,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,55,mm,55,55,mm,17
+270,CDISCPILOT01,01-701-1023,QS,SCREENING 1,1,-7,,2012-07-22,-14,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,20,mm,20,20,mm,18
+271,CDISCPILOT01,01-701-1023,QS,SCREENING 1,1,-7,,2012-07-22,-14,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,1,mm,1,1,mm,19
+272,CDISCPILOT01,01-701-1023,QS,SCREENING 1,1,-7,,2012-07-22,-14,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pasta,,Pasta,,,20
+273,CDISCPILOT01,01-701-1023,QS,SCREENING 1,1,-7,,2012-07-22,-14,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,93,mm,93,93,mm,21
+274,CDISCPILOT01,01-701-1023,QS,SCREENING 2,2,-1,,2012-08-03,-2,COEQ,How hungry have you felt?,COEQ01,75,mm,75,75,mm,22
+275,CDISCPILOT01,01-701-1023,QS,SCREENING 2,2,-1,,2012-08-03,-2,COEQ,How full have you felt?,COEQ02,5,mm,5,5,mm,23
+276,CDISCPILOT01,01-701-1023,QS,SCREENING 2,2,-1,,2012-08-03,-2,COEQ,How strong was your desire to eat sweet foods?,COEQ03,89,mm,89,89,mm,24
+277,CDISCPILOT01,01-701-1023,QS,SCREENING 2,2,-1,,2012-08-03,-2,COEQ,How strong was your desire to eat savoury foods?,COEQ04,11,mm,11,11,mm,25
+278,CDISCPILOT01,01-701-1023,QS,SCREENING 2,2,-1,,2012-08-03,-2,COEQ,How happy have you felt?,COEQ05,59,mm,59,59,mm,26
+279,CDISCPILOT01,01-701-1023,QS,SCREENING 2,2,-1,,2012-08-03,-2,COEQ,How anxious have you felt?,COEQ06,28,mm,28,28,mm,27
+280,CDISCPILOT01,01-701-1023,QS,SCREENING 2,2,-1,,2012-08-03,-2,COEQ,How alert have you felt?,COEQ07,34,mm,34,34,mm,28
+281,CDISCPILOT01,01-701-1023,QS,SCREENING 2,2,-1,,2012-08-03,-2,COEQ,How contented have you felt?,COEQ08,50,mm,50,50,mm,29
+282,CDISCPILOT01,01-701-1023,QS,SCREENING 2,2,-1,,2012-08-03,-2,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,59,mm,59,59,mm,30
+283,CDISCPILOT01,01-701-1023,QS,SCREENING 2,2,-1,,2012-08-03,-2,COEQ,How strong have any food cravings been?,COEQ10,42,mm,42,42,mm,31
+284,CDISCPILOT01,01-701-1023,QS,SCREENING 2,2,-1,,2012-08-03,-2,COEQ,How difficult has it been to resist any food cravings?,COEQ11,29,mm,29,29,mm,32
+285,CDISCPILOT01,01-701-1023,QS,SCREENING 2,2,-1,,2012-08-03,-2,COEQ,How often have you eaten in response to food cravings?,COEQ12,5,mm,5,5,mm,33
+286,CDISCPILOT01,01-701-1023,QS,SCREENING 2,2,-1,,2012-08-03,-2,COEQ,Chocolate or chocolate flavoured foods,COEQ13,31,mm,31,31,mm,34
+287,CDISCPILOT01,01-701-1023,QS,SCREENING 2,2,-1,,2012-08-03,-2,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,88,mm,88,88,mm,35
+288,CDISCPILOT01,01-701-1023,QS,SCREENING 2,2,-1,,2012-08-03,-2,COEQ,Fruit or fruit juice,COEQ15,88,mm,88,88,mm,36
+289,CDISCPILOT01,01-701-1023,QS,SCREENING 2,2,-1,,2012-08-03,-2,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,24,mm,24,24,mm,37
+290,CDISCPILOT01,01-701-1023,QS,SCREENING 2,2,-1,,2012-08-03,-2,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,98,mm,98,98,mm,38
+291,CDISCPILOT01,01-701-1023,QS,SCREENING 2,2,-1,,2012-08-03,-2,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,89,mm,89,89,mm,39
+292,CDISCPILOT01,01-701-1023,QS,SCREENING 2,2,-1,,2012-08-03,-2,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,4,mm,4,4,mm,40
+293,CDISCPILOT01,01-701-1023,QS,SCREENING 2,2,-1,,2012-08-03,-2,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pizza,,Pizza,,,41
+294,CDISCPILOT01,01-701-1023,QS,SCREENING 2,2,-1,,2012-08-03,-2,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,5,mm,5,5,mm,42
+295,CDISCPILOT01,01-701-1023,QS,BASELINE,3,1,Y,2012-08-05,1,COEQ,How hungry have you felt?,COEQ01,93,mm,93,93,mm,43
+296,CDISCPILOT01,01-701-1023,QS,BASELINE,3,1,Y,2012-08-05,1,COEQ,How full have you felt?,COEQ02,19,mm,19,19,mm,44
+297,CDISCPILOT01,01-701-1023,QS,BASELINE,3,1,Y,2012-08-05,1,COEQ,How strong was your desire to eat sweet foods?,COEQ03,35,mm,35,35,mm,45
+298,CDISCPILOT01,01-701-1023,QS,BASELINE,3,1,Y,2012-08-05,1,COEQ,How strong was your desire to eat savoury foods?,COEQ04,10,mm,10,10,mm,46
+299,CDISCPILOT01,01-701-1023,QS,BASELINE,3,1,Y,2012-08-05,1,COEQ,How happy have you felt?,COEQ05,8,mm,8,8,mm,47
+300,CDISCPILOT01,01-701-1023,QS,BASELINE,3,1,Y,2012-08-05,1,COEQ,How anxious have you felt?,COEQ06,19,mm,19,19,mm,48
+301,CDISCPILOT01,01-701-1023,QS,BASELINE,3,1,Y,2012-08-05,1,COEQ,How alert have you felt?,COEQ07,26,mm,26,26,mm,49
+302,CDISCPILOT01,01-701-1023,QS,BASELINE,3,1,Y,2012-08-05,1,COEQ,How contented have you felt?,COEQ08,12,mm,12,12,mm,50
+303,CDISCPILOT01,01-701-1023,QS,BASELINE,3,1,Y,2012-08-05,1,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,1,mm,1,1,mm,51
+304,CDISCPILOT01,01-701-1023,QS,BASELINE,3,1,Y,2012-08-05,1,COEQ,How strong have any food cravings been?,COEQ10,2,mm,2,2,mm,52
+305,CDISCPILOT01,01-701-1023,QS,BASELINE,3,1,Y,2012-08-05,1,COEQ,How difficult has it been to resist any food cravings?,COEQ11,39,mm,39,39,mm,53
+306,CDISCPILOT01,01-701-1023,QS,BASELINE,3,1,Y,2012-08-05,1,COEQ,How often have you eaten in response to food cravings?,COEQ12,16,mm,16,16,mm,54
+307,CDISCPILOT01,01-701-1023,QS,BASELINE,3,1,Y,2012-08-05,1,COEQ,Chocolate or chocolate flavoured foods,COEQ13,37,mm,37,37,mm,55
+308,CDISCPILOT01,01-701-1023,QS,BASELINE,3,1,Y,2012-08-05,1,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,44,mm,44,44,mm,56
+309,CDISCPILOT01,01-701-1023,QS,BASELINE,3,1,Y,2012-08-05,1,COEQ,Fruit or fruit juice,COEQ15,100,mm,100,100,mm,57
+310,CDISCPILOT01,01-701-1023,QS,BASELINE,3,1,Y,2012-08-05,1,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,82,mm,82,82,mm,58
+311,CDISCPILOT01,01-701-1023,QS,BASELINE,3,1,Y,2012-08-05,1,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,68,mm,68,68,mm,59
+312,CDISCPILOT01,01-701-1023,QS,BASELINE,3,1,Y,2012-08-05,1,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,66,mm,66,66,mm,60
+313,CDISCPILOT01,01-701-1023,QS,BASELINE,3,1,Y,2012-08-05,1,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,60,mm,60,60,mm,61
+314,CDISCPILOT01,01-701-1023,QS,BASELINE,3,1,Y,2012-08-05,1,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Ice Cream,,Ice Cream,,,62
+315,CDISCPILOT01,01-701-1023,QS,BASELINE,3,1,Y,2012-08-05,1,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,64,mm,64,64,mm,63
+316,CDISCPILOT01,01-701-1023,QS,WEEK 2,4,14,,2012-08-27,23,COEQ,How hungry have you felt?,COEQ01,26,mm,26,26,mm,64
+317,CDISCPILOT01,01-701-1023,QS,WEEK 2,4,14,,2012-08-27,23,COEQ,How full have you felt?,COEQ02,58,mm,58,58,mm,65
+318,CDISCPILOT01,01-701-1023,QS,WEEK 2,4,14,,2012-08-27,23,COEQ,How strong was your desire to eat sweet foods?,COEQ03,97,mm,97,97,mm,66
+319,CDISCPILOT01,01-701-1023,QS,WEEK 2,4,14,,2012-08-27,23,COEQ,How strong was your desire to eat savoury foods?,COEQ04,84,mm,84,84,mm,67
+320,CDISCPILOT01,01-701-1023,QS,WEEK 2,4,14,,2012-08-27,23,COEQ,How happy have you felt?,COEQ05,66,mm,66,66,mm,68
+321,CDISCPILOT01,01-701-1023,QS,WEEK 2,4,14,,2012-08-27,23,COEQ,How anxious have you felt?,COEQ06,40,mm,40,40,mm,69
+322,CDISCPILOT01,01-701-1023,QS,WEEK 2,4,14,,2012-08-27,23,COEQ,How alert have you felt?,COEQ07,10,mm,10,10,mm,70
+323,CDISCPILOT01,01-701-1023,QS,WEEK 2,4,14,,2012-08-27,23,COEQ,How contented have you felt?,COEQ08,32,mm,32,32,mm,71
+324,CDISCPILOT01,01-701-1023,QS,WEEK 2,4,14,,2012-08-27,23,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,100,mm,100,100,mm,72
+325,CDISCPILOT01,01-701-1023,QS,WEEK 2,4,14,,2012-08-27,23,COEQ,How strong have any food cravings been?,COEQ10,73,mm,73,73,mm,73
+326,CDISCPILOT01,01-701-1023,QS,WEEK 2,4,14,,2012-08-27,23,COEQ,How difficult has it been to resist any food cravings?,COEQ11,69,mm,69,69,mm,74
+327,CDISCPILOT01,01-701-1023,QS,WEEK 2,4,14,,2012-08-27,23,COEQ,How often have you eaten in response to food cravings?,COEQ12,63,mm,63,63,mm,75
+328,CDISCPILOT01,01-701-1023,QS,WEEK 2,4,14,,2012-08-27,23,COEQ,Chocolate or chocolate flavoured foods,COEQ13,80,mm,80,80,mm,76
+329,CDISCPILOT01,01-701-1023,QS,WEEK 2,4,14,,2012-08-27,23,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,54,mm,54,54,mm,77
+330,CDISCPILOT01,01-701-1023,QS,WEEK 2,4,14,,2012-08-27,23,COEQ,Fruit or fruit juice,COEQ15,86,mm,86,86,mm,78
+331,CDISCPILOT01,01-701-1023,QS,WEEK 2,4,14,,2012-08-27,23,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,98,mm,98,98,mm,79
+332,CDISCPILOT01,01-701-1023,QS,WEEK 2,4,14,,2012-08-27,23,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,59,mm,59,59,mm,80
+333,CDISCPILOT01,01-701-1023,QS,WEEK 2,4,14,,2012-08-27,23,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,6,mm,6,6,mm,81
+334,CDISCPILOT01,01-701-1023,QS,WEEK 2,4,14,,2012-08-27,23,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,53,mm,53,53,mm,82
+335,CDISCPILOT01,01-701-1023,QS,WEEK 2,4,14,,2012-08-27,23,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pizza,,Pizza,,,83
+336,CDISCPILOT01,01-701-1023,QS,WEEK 2,4,14,,2012-08-27,23,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,16,mm,16,16,mm,84
+337,CDISCPILOT01,01-701-1023,QS,WEEK 4,5,28,,2012-09-02,29,COEQ,How hungry have you felt?,COEQ01,94,mm,94,94,mm,85
+338,CDISCPILOT01,01-701-1023,QS,WEEK 4,5,28,,2012-09-02,29,COEQ,How full have you felt?,COEQ02,9,mm,9,9,mm,86
+339,CDISCPILOT01,01-701-1023,QS,WEEK 4,5,28,,2012-09-02,29,COEQ,How strong was your desire to eat sweet foods?,COEQ03,81,mm,81,81,mm,87
+340,CDISCPILOT01,01-701-1023,QS,WEEK 4,5,28,,2012-09-02,29,COEQ,How strong was your desire to eat savoury foods?,COEQ04,99,mm,99,99,mm,88
+341,CDISCPILOT01,01-701-1023,QS,WEEK 4,5,28,,2012-09-02,29,COEQ,How happy have you felt?,COEQ05,64,mm,64,64,mm,89
+342,CDISCPILOT01,01-701-1023,QS,WEEK 4,5,28,,2012-09-02,29,COEQ,How anxious have you felt?,COEQ06,25,mm,25,25,mm,90
+343,CDISCPILOT01,01-701-1023,QS,WEEK 4,5,28,,2012-09-02,29,COEQ,How alert have you felt?,COEQ07,21,mm,21,21,mm,91
+344,CDISCPILOT01,01-701-1023,QS,WEEK 4,5,28,,2012-09-02,29,COEQ,How contented have you felt?,COEQ08,82,mm,82,82,mm,92
+345,CDISCPILOT01,01-701-1023,QS,WEEK 4,5,28,,2012-09-02,29,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,27,mm,27,27,mm,93
+346,CDISCPILOT01,01-701-1023,QS,WEEK 4,5,28,,2012-09-02,29,COEQ,How strong have any food cravings been?,COEQ10,83,mm,83,83,mm,94
+347,CDISCPILOT01,01-701-1023,QS,WEEK 4,5,28,,2012-09-02,29,COEQ,How difficult has it been to resist any food cravings?,COEQ11,54,mm,54,54,mm,95
+348,CDISCPILOT01,01-701-1023,QS,WEEK 4,5,28,,2012-09-02,29,COEQ,How often have you eaten in response to food cravings?,COEQ12,95,mm,95,95,mm,96
+349,CDISCPILOT01,01-701-1023,QS,WEEK 4,5,28,,2012-09-02,29,COEQ,Chocolate or chocolate flavoured foods,COEQ13,82,mm,82,82,mm,97
+350,CDISCPILOT01,01-701-1023,QS,WEEK 4,5,28,,2012-09-02,29,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,97,mm,97,97,mm,98
+351,CDISCPILOT01,01-701-1023,QS,WEEK 4,5,28,,2012-09-02,29,COEQ,Fruit or fruit juice,COEQ15,92,mm,92,92,mm,99
+352,CDISCPILOT01,01-701-1023,QS,WEEK 4,5,28,,2012-09-02,29,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,76,mm,76,76,mm,100
+353,CDISCPILOT01,01-701-1023,QS,WEEK 4,5,28,,2012-09-02,29,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,51,mm,51,51,mm,101
+354,CDISCPILOT01,01-701-1023,QS,WEEK 4,5,28,,2012-09-02,29,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,89,mm,89,89,mm,102
+355,CDISCPILOT01,01-701-1023,QS,WEEK 4,5,28,,2012-09-02,29,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,14,mm,14,14,mm,103
+356,CDISCPILOT01,01-701-1023,QS,WEEK 4,5,28,,2012-09-02,29,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Ice Cream,,Ice Cream,,,104
+357,CDISCPILOT01,01-701-1023,QS,WEEK 4,5,28,,2012-09-02,29,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,92,mm,92,92,mm,105
+358,CDISCPILOT01,01-701-1028,QS,SCREENING 1,1,-7,,2013-07-11,-8,COEQ,How hungry have you felt?,COEQ01,77,mm,77,77,mm,1
+359,CDISCPILOT01,01-701-1028,QS,SCREENING 1,1,-7,,2013-07-11,-8,COEQ,How full have you felt?,COEQ02,15,mm,15,15,mm,2
+360,CDISCPILOT01,01-701-1028,QS,SCREENING 1,1,-7,,2013-07-11,-8,COEQ,How strong was your desire to eat sweet foods?,COEQ03,97,mm,97,97,mm,3
+361,CDISCPILOT01,01-701-1028,QS,SCREENING 1,1,-7,,2013-07-11,-8,COEQ,How strong was your desire to eat savoury foods?,COEQ04,63,mm,63,63,mm,4
+362,CDISCPILOT01,01-701-1028,QS,SCREENING 1,1,-7,,2013-07-11,-8,COEQ,How happy have you felt?,COEQ05,11,mm,11,11,mm,5
+363,CDISCPILOT01,01-701-1028,QS,SCREENING 1,1,-7,,2013-07-11,-8,COEQ,How anxious have you felt?,COEQ06,19,mm,19,19,mm,6
+364,CDISCPILOT01,01-701-1028,QS,SCREENING 1,1,-7,,2013-07-11,-8,COEQ,How alert have you felt?,COEQ07,82,mm,82,82,mm,7
+365,CDISCPILOT01,01-701-1028,QS,SCREENING 1,1,-7,,2013-07-11,-8,COEQ,How contented have you felt?,COEQ08,65,mm,65,65,mm,8
+366,CDISCPILOT01,01-701-1028,QS,SCREENING 1,1,-7,,2013-07-11,-8,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,11,mm,11,11,mm,9
+367,CDISCPILOT01,01-701-1028,QS,SCREENING 1,1,-7,,2013-07-11,-8,COEQ,How strong have any food cravings been?,COEQ10,59,mm,59,59,mm,10
+368,CDISCPILOT01,01-701-1028,QS,SCREENING 1,1,-7,,2013-07-11,-8,COEQ,How difficult has it been to resist any food cravings?,COEQ11,48,mm,48,48,mm,11
+369,CDISCPILOT01,01-701-1028,QS,SCREENING 1,1,-7,,2013-07-11,-8,COEQ,How often have you eaten in response to food cravings?,COEQ12,33,mm,33,33,mm,12
+370,CDISCPILOT01,01-701-1028,QS,SCREENING 1,1,-7,,2013-07-11,-8,COEQ,Chocolate or chocolate flavoured foods,COEQ13,29,mm,29,29,mm,13
+371,CDISCPILOT01,01-701-1028,QS,SCREENING 1,1,-7,,2013-07-11,-8,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,29,mm,29,29,mm,14
+372,CDISCPILOT01,01-701-1028,QS,SCREENING 1,1,-7,,2013-07-11,-8,COEQ,Fruit or fruit juice,COEQ15,10,mm,10,10,mm,15
+373,CDISCPILOT01,01-701-1028,QS,SCREENING 1,1,-7,,2013-07-11,-8,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,9,mm,9,9,mm,16
+374,CDISCPILOT01,01-701-1028,QS,SCREENING 1,1,-7,,2013-07-11,-8,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,29,mm,29,29,mm,17
+375,CDISCPILOT01,01-701-1028,QS,SCREENING 1,1,-7,,2013-07-11,-8,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,75,mm,75,75,mm,18
+376,CDISCPILOT01,01-701-1028,QS,SCREENING 1,1,-7,,2013-07-11,-8,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,92,mm,92,92,mm,19
+377,CDISCPILOT01,01-701-1028,QS,SCREENING 1,1,-7,,2013-07-11,-8,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pasta,,Pasta,,,20
+378,CDISCPILOT01,01-701-1028,QS,SCREENING 1,1,-7,,2013-07-11,-8,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,28,mm,28,28,mm,21
+379,CDISCPILOT01,01-701-1028,QS,SCREENING 2,2,-1,,2013-07-17,-2,COEQ,How hungry have you felt?,COEQ01,91,mm,91,91,mm,22
+380,CDISCPILOT01,01-701-1028,QS,SCREENING 2,2,-1,,2013-07-17,-2,COEQ,How full have you felt?,COEQ02,12,mm,12,12,mm,23
+381,CDISCPILOT01,01-701-1028,QS,SCREENING 2,2,-1,,2013-07-17,-2,COEQ,How strong was your desire to eat sweet foods?,COEQ03,62,mm,62,62,mm,24
+382,CDISCPILOT01,01-701-1028,QS,SCREENING 2,2,-1,,2013-07-17,-2,COEQ,How strong was your desire to eat savoury foods?,COEQ04,99,mm,99,99,mm,25
+383,CDISCPILOT01,01-701-1028,QS,SCREENING 2,2,-1,,2013-07-17,-2,COEQ,How happy have you felt?,COEQ05,31,mm,31,31,mm,26
+384,CDISCPILOT01,01-701-1028,QS,SCREENING 2,2,-1,,2013-07-17,-2,COEQ,How anxious have you felt?,COEQ06,1,mm,1,1,mm,27
+385,CDISCPILOT01,01-701-1028,QS,SCREENING 2,2,-1,,2013-07-17,-2,COEQ,How alert have you felt?,COEQ07,89,mm,89,89,mm,28
+386,CDISCPILOT01,01-701-1028,QS,SCREENING 2,2,-1,,2013-07-17,-2,COEQ,How contented have you felt?,COEQ08,89,mm,89,89,mm,29
+387,CDISCPILOT01,01-701-1028,QS,SCREENING 2,2,-1,,2013-07-17,-2,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,38,mm,38,38,mm,30
+388,CDISCPILOT01,01-701-1028,QS,SCREENING 2,2,-1,,2013-07-17,-2,COEQ,How strong have any food cravings been?,COEQ10,84,mm,84,84,mm,31
+389,CDISCPILOT01,01-701-1028,QS,SCREENING 2,2,-1,,2013-07-17,-2,COEQ,How difficult has it been to resist any food cravings?,COEQ11,79,mm,79,79,mm,32
+390,CDISCPILOT01,01-701-1028,QS,SCREENING 2,2,-1,,2013-07-17,-2,COEQ,How often have you eaten in response to food cravings?,COEQ12,89,mm,89,89,mm,33
+391,CDISCPILOT01,01-701-1028,QS,SCREENING 2,2,-1,,2013-07-17,-2,COEQ,Chocolate or chocolate flavoured foods,COEQ13,10,mm,10,10,mm,34
+392,CDISCPILOT01,01-701-1028,QS,SCREENING 2,2,-1,,2013-07-17,-2,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,67,mm,67,67,mm,35
+393,CDISCPILOT01,01-701-1028,QS,SCREENING 2,2,-1,,2013-07-17,-2,COEQ,Fruit or fruit juice,COEQ15,78,mm,78,78,mm,36
+394,CDISCPILOT01,01-701-1028,QS,SCREENING 2,2,-1,,2013-07-17,-2,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,83,mm,83,83,mm,37
+395,CDISCPILOT01,01-701-1028,QS,SCREENING 2,2,-1,,2013-07-17,-2,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,21,mm,21,21,mm,38
+396,CDISCPILOT01,01-701-1028,QS,SCREENING 2,2,-1,,2013-07-17,-2,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,19,mm,19,19,mm,39
+397,CDISCPILOT01,01-701-1028,QS,SCREENING 2,2,-1,,2013-07-17,-2,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,35,mm,35,35,mm,40
+398,CDISCPILOT01,01-701-1028,QS,SCREENING 2,2,-1,,2013-07-17,-2,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Ice Cream,,Ice Cream,,,41
+399,CDISCPILOT01,01-701-1028,QS,SCREENING 2,2,-1,,2013-07-17,-2,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,9,mm,9,9,mm,42
+400,CDISCPILOT01,01-701-1028,QS,BASELINE,3,1,Y,2013-07-19,1,COEQ,How hungry have you felt?,COEQ01,34,mm,34,34,mm,43
+401,CDISCPILOT01,01-701-1028,QS,BASELINE,3,1,Y,2013-07-19,1,COEQ,How full have you felt?,COEQ02,5,mm,5,5,mm,44
+402,CDISCPILOT01,01-701-1028,QS,BASELINE,3,1,Y,2013-07-19,1,COEQ,How strong was your desire to eat sweet foods?,COEQ03,9,mm,9,9,mm,45
+403,CDISCPILOT01,01-701-1028,QS,BASELINE,3,1,Y,2013-07-19,1,COEQ,How strong was your desire to eat savoury foods?,COEQ04,34,mm,34,34,mm,46
+404,CDISCPILOT01,01-701-1028,QS,BASELINE,3,1,Y,2013-07-19,1,COEQ,How happy have you felt?,COEQ05,25,mm,25,25,mm,47
+405,CDISCPILOT01,01-701-1028,QS,BASELINE,3,1,Y,2013-07-19,1,COEQ,How anxious have you felt?,COEQ06,36,mm,36,36,mm,48
+406,CDISCPILOT01,01-701-1028,QS,BASELINE,3,1,Y,2013-07-19,1,COEQ,How alert have you felt?,COEQ07,74,mm,74,74,mm,49
+407,CDISCPILOT01,01-701-1028,QS,BASELINE,3,1,Y,2013-07-19,1,COEQ,How contented have you felt?,COEQ08,71,mm,71,71,mm,50
+408,CDISCPILOT01,01-701-1028,QS,BASELINE,3,1,Y,2013-07-19,1,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,78,mm,78,78,mm,51
+409,CDISCPILOT01,01-701-1028,QS,BASELINE,3,1,Y,2013-07-19,1,COEQ,How strong have any food cravings been?,COEQ10,40,mm,40,40,mm,52
+410,CDISCPILOT01,01-701-1028,QS,BASELINE,3,1,Y,2013-07-19,1,COEQ,How difficult has it been to resist any food cravings?,COEQ11,100,mm,100,100,mm,53
+411,CDISCPILOT01,01-701-1028,QS,BASELINE,3,1,Y,2013-07-19,1,COEQ,How often have you eaten in response to food cravings?,COEQ12,33,mm,33,33,mm,54
+412,CDISCPILOT01,01-701-1028,QS,BASELINE,3,1,Y,2013-07-19,1,COEQ,Chocolate or chocolate flavoured foods,COEQ13,9,mm,9,9,mm,55
+413,CDISCPILOT01,01-701-1028,QS,BASELINE,3,1,Y,2013-07-19,1,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,85,mm,85,85,mm,56
+414,CDISCPILOT01,01-701-1028,QS,BASELINE,3,1,Y,2013-07-19,1,COEQ,Fruit or fruit juice,COEQ15,52,mm,52,52,mm,57
+415,CDISCPILOT01,01-701-1028,QS,BASELINE,3,1,Y,2013-07-19,1,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,100,mm,100,100,mm,58
+416,CDISCPILOT01,01-701-1028,QS,BASELINE,3,1,Y,2013-07-19,1,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,42,mm,42,42,mm,59
+417,CDISCPILOT01,01-701-1028,QS,BASELINE,3,1,Y,2013-07-19,1,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,23,mm,23,23,mm,60
+418,CDISCPILOT01,01-701-1028,QS,BASELINE,3,1,Y,2013-07-19,1,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,10,mm,10,10,mm,61
+419,CDISCPILOT01,01-701-1028,QS,BASELINE,3,1,Y,2013-07-19,1,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pasta,,Pasta,,,62
+420,CDISCPILOT01,01-701-1028,QS,BASELINE,3,1,Y,2013-07-19,1,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,25,mm,25,25,mm,63
+421,CDISCPILOT01,01-701-1028,QS,WEEK 2,4,14,,2013-08-01,14,COEQ,How hungry have you felt?,COEQ01,41,mm,41,41,mm,64
+422,CDISCPILOT01,01-701-1028,QS,WEEK 2,4,14,,2013-08-01,14,COEQ,How full have you felt?,COEQ02,9,mm,9,9,mm,65
+423,CDISCPILOT01,01-701-1028,QS,WEEK 2,4,14,,2013-08-01,14,COEQ,How strong was your desire to eat sweet foods?,COEQ03,81,mm,81,81,mm,66
+424,CDISCPILOT01,01-701-1028,QS,WEEK 2,4,14,,2013-08-01,14,COEQ,How strong was your desire to eat savoury foods?,COEQ04,61,mm,61,61,mm,67
+425,CDISCPILOT01,01-701-1028,QS,WEEK 2,4,14,,2013-08-01,14,COEQ,How happy have you felt?,COEQ05,55,mm,55,55,mm,68
+426,CDISCPILOT01,01-701-1028,QS,WEEK 2,4,14,,2013-08-01,14,COEQ,How anxious have you felt?,COEQ06,86,mm,86,86,mm,69
+427,CDISCPILOT01,01-701-1028,QS,WEEK 2,4,14,,2013-08-01,14,COEQ,How alert have you felt?,COEQ07,29,mm,29,29,mm,70
+428,CDISCPILOT01,01-701-1028,QS,WEEK 2,4,14,,2013-08-01,14,COEQ,How contented have you felt?,COEQ08,5,mm,5,5,mm,71
+429,CDISCPILOT01,01-701-1028,QS,WEEK 2,4,14,,2013-08-01,14,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,26,mm,26,26,mm,72
+430,CDISCPILOT01,01-701-1028,QS,WEEK 2,4,14,,2013-08-01,14,COEQ,How strong have any food cravings been?,COEQ10,32,mm,32,32,mm,73
+431,CDISCPILOT01,01-701-1028,QS,WEEK 2,4,14,,2013-08-01,14,COEQ,How difficult has it been to resist any food cravings?,COEQ11,57,mm,57,57,mm,74
+432,CDISCPILOT01,01-701-1028,QS,WEEK 2,4,14,,2013-08-01,14,COEQ,How often have you eaten in response to food cravings?,COEQ12,93,mm,93,93,mm,75
+433,CDISCPILOT01,01-701-1028,QS,WEEK 2,4,14,,2013-08-01,14,COEQ,Chocolate or chocolate flavoured foods,COEQ13,78,mm,78,78,mm,76
+434,CDISCPILOT01,01-701-1028,QS,WEEK 2,4,14,,2013-08-01,14,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,5,mm,5,5,mm,77
+435,CDISCPILOT01,01-701-1028,QS,WEEK 2,4,14,,2013-08-01,14,COEQ,Fruit or fruit juice,COEQ15,95,mm,95,95,mm,78
+436,CDISCPILOT01,01-701-1028,QS,WEEK 2,4,14,,2013-08-01,14,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,94,mm,94,94,mm,79
+437,CDISCPILOT01,01-701-1028,QS,WEEK 2,4,14,,2013-08-01,14,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,62,mm,62,62,mm,80
+438,CDISCPILOT01,01-701-1028,QS,WEEK 2,4,14,,2013-08-01,14,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,7,mm,7,7,mm,81
+439,CDISCPILOT01,01-701-1028,QS,WEEK 2,4,14,,2013-08-01,14,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,53,mm,53,53,mm,82
+440,CDISCPILOT01,01-701-1028,QS,WEEK 2,4,14,,2013-08-01,14,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Ice Cream,,Ice Cream,,,83
+441,CDISCPILOT01,01-701-1028,QS,WEEK 2,4,14,,2013-08-01,14,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,58,mm,58,58,mm,84
+442,CDISCPILOT01,01-701-1028,QS,WEEK 4,5,28,,2013-08-14,27,COEQ,How hungry have you felt?,COEQ01,36,mm,36,36,mm,85
+443,CDISCPILOT01,01-701-1028,QS,WEEK 4,5,28,,2013-08-14,27,COEQ,How full have you felt?,COEQ02,32,mm,32,32,mm,86
+444,CDISCPILOT01,01-701-1028,QS,WEEK 4,5,28,,2013-08-14,27,COEQ,How strong was your desire to eat sweet foods?,COEQ03,18,mm,18,18,mm,87
+445,CDISCPILOT01,01-701-1028,QS,WEEK 4,5,28,,2013-08-14,27,COEQ,How strong was your desire to eat savoury foods?,COEQ04,81,mm,81,81,mm,88
+446,CDISCPILOT01,01-701-1028,QS,WEEK 4,5,28,,2013-08-14,27,COEQ,How happy have you felt?,COEQ05,80,mm,80,80,mm,89
+447,CDISCPILOT01,01-701-1028,QS,WEEK 4,5,28,,2013-08-14,27,COEQ,How anxious have you felt?,COEQ06,54,mm,54,54,mm,90
+448,CDISCPILOT01,01-701-1028,QS,WEEK 4,5,28,,2013-08-14,27,COEQ,How alert have you felt?,COEQ07,31,mm,31,31,mm,91
+449,CDISCPILOT01,01-701-1028,QS,WEEK 4,5,28,,2013-08-14,27,COEQ,How contented have you felt?,COEQ08,16,mm,16,16,mm,92
+450,CDISCPILOT01,01-701-1028,QS,WEEK 4,5,28,,2013-08-14,27,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,77,mm,77,77,mm,93
+451,CDISCPILOT01,01-701-1028,QS,WEEK 4,5,28,,2013-08-14,27,COEQ,How strong have any food cravings been?,COEQ10,56,mm,56,56,mm,94
+452,CDISCPILOT01,01-701-1028,QS,WEEK 4,5,28,,2013-08-14,27,COEQ,How difficult has it been to resist any food cravings?,COEQ11,27,mm,27,27,mm,95
+453,CDISCPILOT01,01-701-1028,QS,WEEK 4,5,28,,2013-08-14,27,COEQ,How often have you eaten in response to food cravings?,COEQ12,8,mm,8,8,mm,96
+454,CDISCPILOT01,01-701-1028,QS,WEEK 4,5,28,,2013-08-14,27,COEQ,Chocolate or chocolate flavoured foods,COEQ13,63,mm,63,63,mm,97
+455,CDISCPILOT01,01-701-1028,QS,WEEK 4,5,28,,2013-08-14,27,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,53,mm,53,53,mm,98
+456,CDISCPILOT01,01-701-1028,QS,WEEK 4,5,28,,2013-08-14,27,COEQ,Fruit or fruit juice,COEQ15,97,mm,97,97,mm,99
+457,CDISCPILOT01,01-701-1028,QS,WEEK 4,5,28,,2013-08-14,27,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,38,mm,38,38,mm,100
+458,CDISCPILOT01,01-701-1028,QS,WEEK 4,5,28,,2013-08-14,27,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,93,mm,93,93,mm,101
+459,CDISCPILOT01,01-701-1028,QS,WEEK 4,5,28,,2013-08-14,27,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,75,mm,75,75,mm,102
+460,CDISCPILOT01,01-701-1028,QS,WEEK 4,5,28,,2013-08-14,27,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,66,mm,66,66,mm,103
+461,CDISCPILOT01,01-701-1028,QS,WEEK 4,5,28,,2013-08-14,27,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pasta,,Pasta,,,104
+462,CDISCPILOT01,01-701-1028,QS,WEEK 4,5,28,,2013-08-14,27,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,58,mm,58,58,mm,105
+463,CDISCPILOT01,01-701-1028,QS,WEEK 6,7,42,,2013-08-29,42,COEQ,How hungry have you felt?,COEQ01,52,mm,52,52,mm,106
+464,CDISCPILOT01,01-701-1028,QS,WEEK 6,7,42,,2013-08-29,42,COEQ,How full have you felt?,COEQ02,95,mm,95,95,mm,107
+465,CDISCPILOT01,01-701-1028,QS,WEEK 6,7,42,,2013-08-29,42,COEQ,How strong was your desire to eat sweet foods?,COEQ03,70,mm,70,70,mm,108
+466,CDISCPILOT01,01-701-1028,QS,WEEK 6,7,42,,2013-08-29,42,COEQ,How strong was your desire to eat savoury foods?,COEQ04,17,mm,17,17,mm,109
+467,CDISCPILOT01,01-701-1028,QS,WEEK 6,7,42,,2013-08-29,42,COEQ,How happy have you felt?,COEQ05,60,mm,60,60,mm,110
+468,CDISCPILOT01,01-701-1028,QS,WEEK 6,7,42,,2013-08-29,42,COEQ,How anxious have you felt?,COEQ06,75,mm,75,75,mm,111
+469,CDISCPILOT01,01-701-1028,QS,WEEK 6,7,42,,2013-08-29,42,COEQ,How alert have you felt?,COEQ07,73,mm,73,73,mm,112
+470,CDISCPILOT01,01-701-1028,QS,WEEK 6,7,42,,2013-08-29,42,COEQ,How contented have you felt?,COEQ08,29,mm,29,29,mm,113
+471,CDISCPILOT01,01-701-1028,QS,WEEK 6,7,42,,2013-08-29,42,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,21,mm,21,21,mm,114
+472,CDISCPILOT01,01-701-1028,QS,WEEK 6,7,42,,2013-08-29,42,COEQ,How strong have any food cravings been?,COEQ10,99,mm,99,99,mm,115
+473,CDISCPILOT01,01-701-1028,QS,WEEK 6,7,42,,2013-08-29,42,COEQ,How difficult has it been to resist any food cravings?,COEQ11,50,mm,50,50,mm,116
+474,CDISCPILOT01,01-701-1028,QS,WEEK 6,7,42,,2013-08-29,42,COEQ,How often have you eaten in response to food cravings?,COEQ12,38,mm,38,38,mm,117
+475,CDISCPILOT01,01-701-1028,QS,WEEK 6,7,42,,2013-08-29,42,COEQ,Chocolate or chocolate flavoured foods,COEQ13,44,mm,44,44,mm,118
+476,CDISCPILOT01,01-701-1028,QS,WEEK 6,7,42,,2013-08-29,42,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,45,mm,45,45,mm,119
+477,CDISCPILOT01,01-701-1028,QS,WEEK 6,7,42,,2013-08-29,42,COEQ,Fruit or fruit juice,COEQ15,86,mm,86,86,mm,120
+478,CDISCPILOT01,01-701-1028,QS,WEEK 6,7,42,,2013-08-29,42,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,83,mm,83,83,mm,121
+479,CDISCPILOT01,01-701-1028,QS,WEEK 6,7,42,,2013-08-29,42,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,32,mm,32,32,mm,122
+480,CDISCPILOT01,01-701-1028,QS,WEEK 6,7,42,,2013-08-29,42,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,72,mm,72,72,mm,123
+481,CDISCPILOT01,01-701-1028,QS,WEEK 6,7,42,,2013-08-29,42,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,90,mm,90,90,mm,124
+482,CDISCPILOT01,01-701-1028,QS,WEEK 6,7,42,,2013-08-29,42,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Ice Cream,,Ice Cream,,,125
+483,CDISCPILOT01,01-701-1028,QS,WEEK 6,7,42,,2013-08-29,42,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,59,mm,59,59,mm,126
+484,CDISCPILOT01,01-701-1028,QS,WEEK 8,8,56,,2013-09-10,54,COEQ,How hungry have you felt?,COEQ01,38,mm,38,38,mm,127
+485,CDISCPILOT01,01-701-1028,QS,WEEK 8,8,56,,2013-09-10,54,COEQ,How full have you felt?,COEQ02,34,mm,34,34,mm,128
+486,CDISCPILOT01,01-701-1028,QS,WEEK 8,8,56,,2013-09-10,54,COEQ,How strong was your desire to eat sweet foods?,COEQ03,66,mm,66,66,mm,129
+487,CDISCPILOT01,01-701-1028,QS,WEEK 8,8,56,,2013-09-10,54,COEQ,How strong was your desire to eat savoury foods?,COEQ04,57,mm,57,57,mm,130
+488,CDISCPILOT01,01-701-1028,QS,WEEK 8,8,56,,2013-09-10,54,COEQ,How happy have you felt?,COEQ05,5,mm,5,5,mm,131
+489,CDISCPILOT01,01-701-1028,QS,WEEK 8,8,56,,2013-09-10,54,COEQ,How anxious have you felt?,COEQ06,42,mm,42,42,mm,132
+490,CDISCPILOT01,01-701-1028,QS,WEEK 8,8,56,,2013-09-10,54,COEQ,How alert have you felt?,COEQ07,24,mm,24,24,mm,133
+491,CDISCPILOT01,01-701-1028,QS,WEEK 8,8,56,,2013-09-10,54,COEQ,How contented have you felt?,COEQ08,84,mm,84,84,mm,134
+492,CDISCPILOT01,01-701-1028,QS,WEEK 8,8,56,,2013-09-10,54,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,40,mm,40,40,mm,135
+493,CDISCPILOT01,01-701-1028,QS,WEEK 8,8,56,,2013-09-10,54,COEQ,How strong have any food cravings been?,COEQ10,19,mm,19,19,mm,136
+494,CDISCPILOT01,01-701-1028,QS,WEEK 8,8,56,,2013-09-10,54,COEQ,How difficult has it been to resist any food cravings?,COEQ11,16,mm,16,16,mm,137
+495,CDISCPILOT01,01-701-1028,QS,WEEK 8,8,56,,2013-09-10,54,COEQ,How often have you eaten in response to food cravings?,COEQ12,7,mm,7,7,mm,138
+496,CDISCPILOT01,01-701-1028,QS,WEEK 8,8,56,,2013-09-10,54,COEQ,Chocolate or chocolate flavoured foods,COEQ13,18,mm,18,18,mm,139
+497,CDISCPILOT01,01-701-1028,QS,WEEK 8,8,56,,2013-09-10,54,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,61,mm,61,61,mm,140
+498,CDISCPILOT01,01-701-1028,QS,WEEK 8,8,56,,2013-09-10,54,COEQ,Fruit or fruit juice,COEQ15,67,mm,67,67,mm,141
+499,CDISCPILOT01,01-701-1028,QS,WEEK 8,8,56,,2013-09-10,54,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,63,mm,63,63,mm,142
+500,CDISCPILOT01,01-701-1028,QS,WEEK 8,8,56,,2013-09-10,54,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,37,mm,37,37,mm,143
+501,CDISCPILOT01,01-701-1028,QS,WEEK 8,8,56,,2013-09-10,54,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,63,mm,63,63,mm,144
+502,CDISCPILOT01,01-701-1028,QS,WEEK 8,8,56,,2013-09-10,54,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,39,mm,39,39,mm,145
+503,CDISCPILOT01,01-701-1028,QS,WEEK 8,8,56,,2013-09-10,54,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pasta,,Pasta,,,146
+504,CDISCPILOT01,01-701-1028,QS,WEEK 8,8,56,,2013-09-10,54,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,90,mm,90,90,mm,147
+505,CDISCPILOT01,01-701-1028,QS,WEEK 12,9,84,,2013-10-09,83,COEQ,How hungry have you felt?,COEQ01,99,mm,99,99,mm,148
+506,CDISCPILOT01,01-701-1028,QS,WEEK 12,9,84,,2013-10-09,83,COEQ,How full have you felt?,COEQ02,62,mm,62,62,mm,149
+507,CDISCPILOT01,01-701-1028,QS,WEEK 12,9,84,,2013-10-09,83,COEQ,How strong was your desire to eat sweet foods?,COEQ03,6,mm,6,6,mm,150
+508,CDISCPILOT01,01-701-1028,QS,WEEK 12,9,84,,2013-10-09,83,COEQ,How strong was your desire to eat savoury foods?,COEQ04,90,mm,90,90,mm,151
+509,CDISCPILOT01,01-701-1028,QS,WEEK 12,9,84,,2013-10-09,83,COEQ,How happy have you felt?,COEQ05,33,mm,33,33,mm,152
+510,CDISCPILOT01,01-701-1028,QS,WEEK 12,9,84,,2013-10-09,83,COEQ,How anxious have you felt?,COEQ06,85,mm,85,85,mm,153
+511,CDISCPILOT01,01-701-1028,QS,WEEK 12,9,84,,2013-10-09,83,COEQ,How alert have you felt?,COEQ07,23,mm,23,23,mm,154
+512,CDISCPILOT01,01-701-1028,QS,WEEK 12,9,84,,2013-10-09,83,COEQ,How contented have you felt?,COEQ08,75,mm,75,75,mm,155
+513,CDISCPILOT01,01-701-1028,QS,WEEK 12,9,84,,2013-10-09,83,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,38,mm,38,38,mm,156
+514,CDISCPILOT01,01-701-1028,QS,WEEK 12,9,84,,2013-10-09,83,COEQ,How strong have any food cravings been?,COEQ10,38,mm,38,38,mm,157
+515,CDISCPILOT01,01-701-1028,QS,WEEK 12,9,84,,2013-10-09,83,COEQ,How difficult has it been to resist any food cravings?,COEQ11,47,mm,47,47,mm,158
+516,CDISCPILOT01,01-701-1028,QS,WEEK 12,9,84,,2013-10-09,83,COEQ,How often have you eaten in response to food cravings?,COEQ12,68,mm,68,68,mm,159
+517,CDISCPILOT01,01-701-1028,QS,WEEK 12,9,84,,2013-10-09,83,COEQ,Chocolate or chocolate flavoured foods,COEQ13,84,mm,84,84,mm,160
+518,CDISCPILOT01,01-701-1028,QS,WEEK 12,9,84,,2013-10-09,83,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,68,mm,68,68,mm,161
+519,CDISCPILOT01,01-701-1028,QS,WEEK 12,9,84,,2013-10-09,83,COEQ,Fruit or fruit juice,COEQ15,83,mm,83,83,mm,162
+520,CDISCPILOT01,01-701-1028,QS,WEEK 12,9,84,,2013-10-09,83,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,99,mm,99,99,mm,163
+521,CDISCPILOT01,01-701-1028,QS,WEEK 12,9,84,,2013-10-09,83,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,73,mm,73,73,mm,164
+522,CDISCPILOT01,01-701-1028,QS,WEEK 12,9,84,,2013-10-09,83,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,30,mm,30,30,mm,165
+523,CDISCPILOT01,01-701-1028,QS,WEEK 12,9,84,,2013-10-09,83,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,23,mm,23,23,mm,166
+524,CDISCPILOT01,01-701-1028,QS,WEEK 12,9,84,,2013-10-09,83,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pasta,,Pasta,,,167
+525,CDISCPILOT01,01-701-1028,QS,WEEK 12,9,84,,2013-10-09,83,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,33,mm,33,33,mm,168
+526,CDISCPILOT01,01-701-1028,QS,WEEK 16,10,112,,2013-11-06,111,COEQ,How hungry have you felt?,COEQ01,56,mm,56,56,mm,169
+527,CDISCPILOT01,01-701-1028,QS,WEEK 16,10,112,,2013-11-06,111,COEQ,How full have you felt?,COEQ02,58,mm,58,58,mm,170
+528,CDISCPILOT01,01-701-1028,QS,WEEK 16,10,112,,2013-11-06,111,COEQ,How strong was your desire to eat sweet foods?,COEQ03,22,mm,22,22,mm,171
+529,CDISCPILOT01,01-701-1028,QS,WEEK 16,10,112,,2013-11-06,111,COEQ,How strong was your desire to eat savoury foods?,COEQ04,20,mm,20,20,mm,172
+530,CDISCPILOT01,01-701-1028,QS,WEEK 16,10,112,,2013-11-06,111,COEQ,How happy have you felt?,COEQ05,97,mm,97,97,mm,173
+531,CDISCPILOT01,01-701-1028,QS,WEEK 16,10,112,,2013-11-06,111,COEQ,How anxious have you felt?,COEQ06,80,mm,80,80,mm,174
+532,CDISCPILOT01,01-701-1028,QS,WEEK 16,10,112,,2013-11-06,111,COEQ,How alert have you felt?,COEQ07,71,mm,71,71,mm,175
+533,CDISCPILOT01,01-701-1028,QS,WEEK 16,10,112,,2013-11-06,111,COEQ,How contented have you felt?,COEQ08,4,mm,4,4,mm,176
+534,CDISCPILOT01,01-701-1028,QS,WEEK 16,10,112,,2013-11-06,111,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,3,mm,3,3,mm,177
+535,CDISCPILOT01,01-701-1028,QS,WEEK 16,10,112,,2013-11-06,111,COEQ,How strong have any food cravings been?,COEQ10,57,mm,57,57,mm,178
+536,CDISCPILOT01,01-701-1028,QS,WEEK 16,10,112,,2013-11-06,111,COEQ,How difficult has it been to resist any food cravings?,COEQ11,29,mm,29,29,mm,179
+537,CDISCPILOT01,01-701-1028,QS,WEEK 16,10,112,,2013-11-06,111,COEQ,How often have you eaten in response to food cravings?,COEQ12,84,mm,84,84,mm,180
+538,CDISCPILOT01,01-701-1028,QS,WEEK 16,10,112,,2013-11-06,111,COEQ,Chocolate or chocolate flavoured foods,COEQ13,49,mm,49,49,mm,181
+539,CDISCPILOT01,01-701-1028,QS,WEEK 16,10,112,,2013-11-06,111,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,56,mm,56,56,mm,182
+540,CDISCPILOT01,01-701-1028,QS,WEEK 16,10,112,,2013-11-06,111,COEQ,Fruit or fruit juice,COEQ15,2,mm,2,2,mm,183
+541,CDISCPILOT01,01-701-1028,QS,WEEK 16,10,112,,2013-11-06,111,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,53,mm,53,53,mm,184
+542,CDISCPILOT01,01-701-1028,QS,WEEK 16,10,112,,2013-11-06,111,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,96,mm,96,96,mm,185
+543,CDISCPILOT01,01-701-1028,QS,WEEK 16,10,112,,2013-11-06,111,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,74,mm,74,74,mm,186
+544,CDISCPILOT01,01-701-1028,QS,WEEK 16,10,112,,2013-11-06,111,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,78,mm,78,78,mm,187
+545,CDISCPILOT01,01-701-1028,QS,WEEK 16,10,112,,2013-11-06,111,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pasta,,Pasta,,,188
+546,CDISCPILOT01,01-701-1028,QS,WEEK 16,10,112,,2013-11-06,111,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,31,mm,31,31,mm,189
+547,CDISCPILOT01,01-701-1028,QS,WEEK 20,11,140,,2013-12-04,139,COEQ,How hungry have you felt?,COEQ01,18,mm,18,18,mm,190
+548,CDISCPILOT01,01-701-1028,QS,WEEK 20,11,140,,2013-12-04,139,COEQ,How full have you felt?,COEQ02,32,mm,32,32,mm,191
+549,CDISCPILOT01,01-701-1028,QS,WEEK 20,11,140,,2013-12-04,139,COEQ,How strong was your desire to eat sweet foods?,COEQ03,43,mm,43,43,mm,192
+550,CDISCPILOT01,01-701-1028,QS,WEEK 20,11,140,,2013-12-04,139,COEQ,How strong was your desire to eat savoury foods?,COEQ04,63,mm,63,63,mm,193
+551,CDISCPILOT01,01-701-1028,QS,WEEK 20,11,140,,2013-12-04,139,COEQ,How happy have you felt?,COEQ05,15,mm,15,15,mm,194
+552,CDISCPILOT01,01-701-1028,QS,WEEK 20,11,140,,2013-12-04,139,COEQ,How anxious have you felt?,COEQ06,17,mm,17,17,mm,195
+553,CDISCPILOT01,01-701-1028,QS,WEEK 20,11,140,,2013-12-04,139,COEQ,How alert have you felt?,COEQ07,32,mm,32,32,mm,196
+554,CDISCPILOT01,01-701-1028,QS,WEEK 20,11,140,,2013-12-04,139,COEQ,How contented have you felt?,COEQ08,30,mm,30,30,mm,197
+555,CDISCPILOT01,01-701-1028,QS,WEEK 20,11,140,,2013-12-04,139,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,83,mm,83,83,mm,198
+556,CDISCPILOT01,01-701-1028,QS,WEEK 20,11,140,,2013-12-04,139,COEQ,How strong have any food cravings been?,COEQ10,52,mm,52,52,mm,199
+557,CDISCPILOT01,01-701-1028,QS,WEEK 20,11,140,,2013-12-04,139,COEQ,How difficult has it been to resist any food cravings?,COEQ11,66,mm,66,66,mm,200
+558,CDISCPILOT01,01-701-1028,QS,WEEK 20,11,140,,2013-12-04,139,COEQ,How often have you eaten in response to food cravings?,COEQ12,54,mm,54,54,mm,201
+559,CDISCPILOT01,01-701-1028,QS,WEEK 20,11,140,,2013-12-04,139,COEQ,Chocolate or chocolate flavoured foods,COEQ13,19,mm,19,19,mm,202
+560,CDISCPILOT01,01-701-1028,QS,WEEK 20,11,140,,2013-12-04,139,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,88,mm,88,88,mm,203
+561,CDISCPILOT01,01-701-1028,QS,WEEK 20,11,140,,2013-12-04,139,COEQ,Fruit or fruit juice,COEQ15,85,mm,85,85,mm,204
+562,CDISCPILOT01,01-701-1028,QS,WEEK 20,11,140,,2013-12-04,139,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,65,mm,65,65,mm,205
+563,CDISCPILOT01,01-701-1028,QS,WEEK 20,11,140,,2013-12-04,139,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,22,mm,22,22,mm,206
+564,CDISCPILOT01,01-701-1028,QS,WEEK 20,11,140,,2013-12-04,139,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,45,mm,45,45,mm,207
+565,CDISCPILOT01,01-701-1028,QS,WEEK 20,11,140,,2013-12-04,139,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,94,mm,94,94,mm,208
+566,CDISCPILOT01,01-701-1028,QS,WEEK 20,11,140,,2013-12-04,139,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pizza,,Pizza,,,209
+567,CDISCPILOT01,01-701-1028,QS,WEEK 20,11,140,,2013-12-04,139,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,2,mm,2,2,mm,210
+568,CDISCPILOT01,01-701-1028,QS,WEEK 24,12,168,,2014-01-06,172,COEQ,How hungry have you felt?,COEQ01,90,mm,90,90,mm,211
+569,CDISCPILOT01,01-701-1028,QS,WEEK 24,12,168,,2014-01-06,172,COEQ,How full have you felt?,COEQ02,75,mm,75,75,mm,212
+570,CDISCPILOT01,01-701-1028,QS,WEEK 24,12,168,,2014-01-06,172,COEQ,How strong was your desire to eat sweet foods?,COEQ03,24,mm,24,24,mm,213
+571,CDISCPILOT01,01-701-1028,QS,WEEK 24,12,168,,2014-01-06,172,COEQ,How strong was your desire to eat savoury foods?,COEQ04,12,mm,12,12,mm,214
+572,CDISCPILOT01,01-701-1028,QS,WEEK 24,12,168,,2014-01-06,172,COEQ,How happy have you felt?,COEQ05,71,mm,71,71,mm,215
+573,CDISCPILOT01,01-701-1028,QS,WEEK 24,12,168,,2014-01-06,172,COEQ,How anxious have you felt?,COEQ06,94,mm,94,94,mm,216
+574,CDISCPILOT01,01-701-1028,QS,WEEK 24,12,168,,2014-01-06,172,COEQ,How alert have you felt?,COEQ07,62,mm,62,62,mm,217
+575,CDISCPILOT01,01-701-1028,QS,WEEK 24,12,168,,2014-01-06,172,COEQ,How contented have you felt?,COEQ08,33,mm,33,33,mm,218
+576,CDISCPILOT01,01-701-1028,QS,WEEK 24,12,168,,2014-01-06,172,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,59,mm,59,59,mm,219
+577,CDISCPILOT01,01-701-1028,QS,WEEK 24,12,168,,2014-01-06,172,COEQ,How strong have any food cravings been?,COEQ10,87,mm,87,87,mm,220
+578,CDISCPILOT01,01-701-1028,QS,WEEK 24,12,168,,2014-01-06,172,COEQ,How difficult has it been to resist any food cravings?,COEQ11,82,mm,82,82,mm,221
+579,CDISCPILOT01,01-701-1028,QS,WEEK 24,12,168,,2014-01-06,172,COEQ,How often have you eaten in response to food cravings?,COEQ12,54,mm,54,54,mm,222
+580,CDISCPILOT01,01-701-1028,QS,WEEK 24,12,168,,2014-01-06,172,COEQ,Chocolate or chocolate flavoured foods,COEQ13,19,mm,19,19,mm,223
+581,CDISCPILOT01,01-701-1028,QS,WEEK 24,12,168,,2014-01-06,172,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,60,mm,60,60,mm,224
+582,CDISCPILOT01,01-701-1028,QS,WEEK 24,12,168,,2014-01-06,172,COEQ,Fruit or fruit juice,COEQ15,50,mm,50,50,mm,225
+583,CDISCPILOT01,01-701-1028,QS,WEEK 24,12,168,,2014-01-06,172,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,42,mm,42,42,mm,226
+584,CDISCPILOT01,01-701-1028,QS,WEEK 24,12,168,,2014-01-06,172,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,42,mm,42,42,mm,227
+585,CDISCPILOT01,01-701-1028,QS,WEEK 24,12,168,,2014-01-06,172,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,86,mm,86,86,mm,228
+586,CDISCPILOT01,01-701-1028,QS,WEEK 24,12,168,,2014-01-06,172,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,1,mm,1,1,mm,229
+587,CDISCPILOT01,01-701-1028,QS,WEEK 24,12,168,,2014-01-06,172,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pizza,,Pizza,,,230
+588,CDISCPILOT01,01-701-1028,QS,WEEK 24,12,168,,2014-01-06,172,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,68,mm,68,68,mm,231
+589,CDISCPILOT01,01-701-1028,QS,WEEK 26,13,182,,2014-01-14,180,COEQ,How hungry have you felt?,COEQ01,46,mm,46,46,mm,232
+590,CDISCPILOT01,01-701-1028,QS,WEEK 26,13,182,,2014-01-14,180,COEQ,How full have you felt?,COEQ02,95,mm,95,95,mm,233
+591,CDISCPILOT01,01-701-1028,QS,WEEK 26,13,182,,2014-01-14,180,COEQ,How strong was your desire to eat sweet foods?,COEQ03,45,mm,45,45,mm,234
+592,CDISCPILOT01,01-701-1028,QS,WEEK 26,13,182,,2014-01-14,180,COEQ,How strong was your desire to eat savoury foods?,COEQ04,12,mm,12,12,mm,235
+593,CDISCPILOT01,01-701-1028,QS,WEEK 26,13,182,,2014-01-14,180,COEQ,How happy have you felt?,COEQ05,78,mm,78,78,mm,236
+594,CDISCPILOT01,01-701-1028,QS,WEEK 26,13,182,,2014-01-14,180,COEQ,How anxious have you felt?,COEQ06,95,mm,95,95,mm,237
+595,CDISCPILOT01,01-701-1028,QS,WEEK 26,13,182,,2014-01-14,180,COEQ,How alert have you felt?,COEQ07,94,mm,94,94,mm,238
+596,CDISCPILOT01,01-701-1028,QS,WEEK 26,13,182,,2014-01-14,180,COEQ,How contented have you felt?,COEQ08,58,mm,58,58,mm,239
+597,CDISCPILOT01,01-701-1028,QS,WEEK 26,13,182,,2014-01-14,180,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,37,mm,37,37,mm,240
+598,CDISCPILOT01,01-701-1028,QS,WEEK 26,13,182,,2014-01-14,180,COEQ,How strong have any food cravings been?,COEQ10,92,mm,92,92,mm,241
+599,CDISCPILOT01,01-701-1028,QS,WEEK 26,13,182,,2014-01-14,180,COEQ,How difficult has it been to resist any food cravings?,COEQ11,76,mm,76,76,mm,242
+600,CDISCPILOT01,01-701-1028,QS,WEEK 26,13,182,,2014-01-14,180,COEQ,How often have you eaten in response to food cravings?,COEQ12,20,mm,20,20,mm,243
+601,CDISCPILOT01,01-701-1028,QS,WEEK 26,13,182,,2014-01-14,180,COEQ,Chocolate or chocolate flavoured foods,COEQ13,95,mm,95,95,mm,244
+602,CDISCPILOT01,01-701-1028,QS,WEEK 26,13,182,,2014-01-14,180,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,75,mm,75,75,mm,245
+603,CDISCPILOT01,01-701-1028,QS,WEEK 26,13,182,,2014-01-14,180,COEQ,Fruit or fruit juice,COEQ15,98,mm,98,98,mm,246
+604,CDISCPILOT01,01-701-1028,QS,WEEK 26,13,182,,2014-01-14,180,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,28,mm,28,28,mm,247
+605,CDISCPILOT01,01-701-1028,QS,WEEK 26,13,182,,2014-01-14,180,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,86,mm,86,86,mm,248
+606,CDISCPILOT01,01-701-1028,QS,WEEK 26,13,182,,2014-01-14,180,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,25,mm,25,25,mm,249
+607,CDISCPILOT01,01-701-1028,QS,WEEK 26,13,182,,2014-01-14,180,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,21,mm,21,21,mm,250
+608,CDISCPILOT01,01-701-1028,QS,WEEK 26,13,182,,2014-01-14,180,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pizza,,Pizza,,,251
+609,CDISCPILOT01,01-701-1028,QS,WEEK 26,13,182,,2014-01-14,180,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,78,mm,78,78,mm,252
+610,CDISCPILOT01,01-701-1033,QS,SCREENING 1,1,-7,,2014-03-10,-8,COEQ,How hungry have you felt?,COEQ01,59,mm,59,59,mm,1
+611,CDISCPILOT01,01-701-1033,QS,SCREENING 1,1,-7,,2014-03-10,-8,COEQ,How full have you felt?,COEQ02,100,mm,100,100,mm,2
+612,CDISCPILOT01,01-701-1033,QS,SCREENING 1,1,-7,,2014-03-10,-8,COEQ,How strong was your desire to eat sweet foods?,COEQ03,76,mm,76,76,mm,3
+613,CDISCPILOT01,01-701-1033,QS,SCREENING 1,1,-7,,2014-03-10,-8,COEQ,How strong was your desire to eat savoury foods?,COEQ04,11,mm,11,11,mm,4
+614,CDISCPILOT01,01-701-1033,QS,SCREENING 1,1,-7,,2014-03-10,-8,COEQ,How happy have you felt?,COEQ05,77,mm,77,77,mm,5
+615,CDISCPILOT01,01-701-1033,QS,SCREENING 1,1,-7,,2014-03-10,-8,COEQ,How anxious have you felt?,COEQ06,58,mm,58,58,mm,6
+616,CDISCPILOT01,01-701-1033,QS,SCREENING 1,1,-7,,2014-03-10,-8,COEQ,How alert have you felt?,COEQ07,10,mm,10,10,mm,7
+617,CDISCPILOT01,01-701-1033,QS,SCREENING 1,1,-7,,2014-03-10,-8,COEQ,How contented have you felt?,COEQ08,54,mm,54,54,mm,8
+618,CDISCPILOT01,01-701-1033,QS,SCREENING 1,1,-7,,2014-03-10,-8,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,86,mm,86,86,mm,9
+619,CDISCPILOT01,01-701-1033,QS,SCREENING 1,1,-7,,2014-03-10,-8,COEQ,How strong have any food cravings been?,COEQ10,19,mm,19,19,mm,10
+620,CDISCPILOT01,01-701-1033,QS,SCREENING 1,1,-7,,2014-03-10,-8,COEQ,How difficult has it been to resist any food cravings?,COEQ11,37,mm,37,37,mm,11
+621,CDISCPILOT01,01-701-1033,QS,SCREENING 1,1,-7,,2014-03-10,-8,COEQ,How often have you eaten in response to food cravings?,COEQ12,60,mm,60,60,mm,12
+622,CDISCPILOT01,01-701-1033,QS,SCREENING 1,1,-7,,2014-03-10,-8,COEQ,Chocolate or chocolate flavoured foods,COEQ13,31,mm,31,31,mm,13
+623,CDISCPILOT01,01-701-1033,QS,SCREENING 1,1,-7,,2014-03-10,-8,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,74,mm,74,74,mm,14
+624,CDISCPILOT01,01-701-1033,QS,SCREENING 1,1,-7,,2014-03-10,-8,COEQ,Fruit or fruit juice,COEQ15,62,mm,62,62,mm,15
+625,CDISCPILOT01,01-701-1033,QS,SCREENING 1,1,-7,,2014-03-10,-8,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,78,mm,78,78,mm,16
+626,CDISCPILOT01,01-701-1033,QS,SCREENING 1,1,-7,,2014-03-10,-8,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,1,mm,1,1,mm,17
+627,CDISCPILOT01,01-701-1033,QS,SCREENING 1,1,-7,,2014-03-10,-8,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,1,mm,1,1,mm,18
+628,CDISCPILOT01,01-701-1033,QS,SCREENING 1,1,-7,,2014-03-10,-8,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,21,mm,21,21,mm,19
+629,CDISCPILOT01,01-701-1033,QS,SCREENING 1,1,-7,,2014-03-10,-8,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Ice Cream,,Ice Cream,,,20
+630,CDISCPILOT01,01-701-1033,QS,SCREENING 1,1,-7,,2014-03-10,-8,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,10,mm,10,10,mm,21
+631,CDISCPILOT01,01-701-1033,QS,SCREENING 2,2,-1,,2014-03-16,-2,COEQ,How hungry have you felt?,COEQ01,55,mm,55,55,mm,22
+632,CDISCPILOT01,01-701-1033,QS,SCREENING 2,2,-1,,2014-03-16,-2,COEQ,How full have you felt?,COEQ02,93,mm,93,93,mm,23
+633,CDISCPILOT01,01-701-1033,QS,SCREENING 2,2,-1,,2014-03-16,-2,COEQ,How strong was your desire to eat sweet foods?,COEQ03,95,mm,95,95,mm,24
+634,CDISCPILOT01,01-701-1033,QS,SCREENING 2,2,-1,,2014-03-16,-2,COEQ,How strong was your desire to eat savoury foods?,COEQ04,73,mm,73,73,mm,25
+635,CDISCPILOT01,01-701-1033,QS,SCREENING 2,2,-1,,2014-03-16,-2,COEQ,How happy have you felt?,COEQ05,99,mm,99,99,mm,26
+636,CDISCPILOT01,01-701-1033,QS,SCREENING 2,2,-1,,2014-03-16,-2,COEQ,How anxious have you felt?,COEQ06,54,mm,54,54,mm,27
+637,CDISCPILOT01,01-701-1033,QS,SCREENING 2,2,-1,,2014-03-16,-2,COEQ,How alert have you felt?,COEQ07,63,mm,63,63,mm,28
+638,CDISCPILOT01,01-701-1033,QS,SCREENING 2,2,-1,,2014-03-16,-2,COEQ,How contented have you felt?,COEQ08,1,mm,1,1,mm,29
+639,CDISCPILOT01,01-701-1033,QS,SCREENING 2,2,-1,,2014-03-16,-2,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,99,mm,99,99,mm,30
+640,CDISCPILOT01,01-701-1033,QS,SCREENING 2,2,-1,,2014-03-16,-2,COEQ,How strong have any food cravings been?,COEQ10,52,mm,52,52,mm,31
+641,CDISCPILOT01,01-701-1033,QS,SCREENING 2,2,-1,,2014-03-16,-2,COEQ,How difficult has it been to resist any food cravings?,COEQ11,66,mm,66,66,mm,32
+642,CDISCPILOT01,01-701-1033,QS,SCREENING 2,2,-1,,2014-03-16,-2,COEQ,How often have you eaten in response to food cravings?,COEQ12,63,mm,63,63,mm,33
+643,CDISCPILOT01,01-701-1033,QS,SCREENING 2,2,-1,,2014-03-16,-2,COEQ,Chocolate or chocolate flavoured foods,COEQ13,73,mm,73,73,mm,34
+644,CDISCPILOT01,01-701-1033,QS,SCREENING 2,2,-1,,2014-03-16,-2,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,67,mm,67,67,mm,35
+645,CDISCPILOT01,01-701-1033,QS,SCREENING 2,2,-1,,2014-03-16,-2,COEQ,Fruit or fruit juice,COEQ15,64,mm,64,64,mm,36
+646,CDISCPILOT01,01-701-1033,QS,SCREENING 2,2,-1,,2014-03-16,-2,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,58,mm,58,58,mm,37
+647,CDISCPILOT01,01-701-1033,QS,SCREENING 2,2,-1,,2014-03-16,-2,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,74,mm,74,74,mm,38
+648,CDISCPILOT01,01-701-1033,QS,SCREENING 2,2,-1,,2014-03-16,-2,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,54,mm,54,54,mm,39
+649,CDISCPILOT01,01-701-1033,QS,SCREENING 2,2,-1,,2014-03-16,-2,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,70,mm,70,70,mm,40
+650,CDISCPILOT01,01-701-1033,QS,SCREENING 2,2,-1,,2014-03-16,-2,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Ice Cream,,Ice Cream,,,41
+651,CDISCPILOT01,01-701-1033,QS,SCREENING 2,2,-1,,2014-03-16,-2,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,1,mm,1,1,mm,42
+652,CDISCPILOT01,01-701-1033,QS,BASELINE,3,1,Y,2014-03-18,1,COEQ,How hungry have you felt?,COEQ01,43,mm,43,43,mm,43
+653,CDISCPILOT01,01-701-1033,QS,BASELINE,3,1,Y,2014-03-18,1,COEQ,How full have you felt?,COEQ02,9,mm,9,9,mm,44
+654,CDISCPILOT01,01-701-1033,QS,BASELINE,3,1,Y,2014-03-18,1,COEQ,How strong was your desire to eat sweet foods?,COEQ03,47,mm,47,47,mm,45
+655,CDISCPILOT01,01-701-1033,QS,BASELINE,3,1,Y,2014-03-18,1,COEQ,How strong was your desire to eat savoury foods?,COEQ04,57,mm,57,57,mm,46
+656,CDISCPILOT01,01-701-1033,QS,BASELINE,3,1,Y,2014-03-18,1,COEQ,How happy have you felt?,COEQ05,31,mm,31,31,mm,47
+657,CDISCPILOT01,01-701-1033,QS,BASELINE,3,1,Y,2014-03-18,1,COEQ,How anxious have you felt?,COEQ06,31,mm,31,31,mm,48
+658,CDISCPILOT01,01-701-1033,QS,BASELINE,3,1,Y,2014-03-18,1,COEQ,How alert have you felt?,COEQ07,70,mm,70,70,mm,49
+659,CDISCPILOT01,01-701-1033,QS,BASELINE,3,1,Y,2014-03-18,1,COEQ,How contented have you felt?,COEQ08,31,mm,31,31,mm,50
+660,CDISCPILOT01,01-701-1033,QS,BASELINE,3,1,Y,2014-03-18,1,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,51,mm,51,51,mm,51
+661,CDISCPILOT01,01-701-1033,QS,BASELINE,3,1,Y,2014-03-18,1,COEQ,How strong have any food cravings been?,COEQ10,41,mm,41,41,mm,52
+662,CDISCPILOT01,01-701-1033,QS,BASELINE,3,1,Y,2014-03-18,1,COEQ,How difficult has it been to resist any food cravings?,COEQ11,18,mm,18,18,mm,53
+663,CDISCPILOT01,01-701-1033,QS,BASELINE,3,1,Y,2014-03-18,1,COEQ,How often have you eaten in response to food cravings?,COEQ12,34,mm,34,34,mm,54
+664,CDISCPILOT01,01-701-1033,QS,BASELINE,3,1,Y,2014-03-18,1,COEQ,Chocolate or chocolate flavoured foods,COEQ13,82,mm,82,82,mm,55
+665,CDISCPILOT01,01-701-1033,QS,BASELINE,3,1,Y,2014-03-18,1,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,85,mm,85,85,mm,56
+666,CDISCPILOT01,01-701-1033,QS,BASELINE,3,1,Y,2014-03-18,1,COEQ,Fruit or fruit juice,COEQ15,37,mm,37,37,mm,57
+667,CDISCPILOT01,01-701-1033,QS,BASELINE,3,1,Y,2014-03-18,1,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,3,mm,3,3,mm,58
+668,CDISCPILOT01,01-701-1033,QS,BASELINE,3,1,Y,2014-03-18,1,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,54,mm,54,54,mm,59
+669,CDISCPILOT01,01-701-1033,QS,BASELINE,3,1,Y,2014-03-18,1,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,15,mm,15,15,mm,60
+670,CDISCPILOT01,01-701-1033,QS,BASELINE,3,1,Y,2014-03-18,1,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,98,mm,98,98,mm,61
+671,CDISCPILOT01,01-701-1033,QS,BASELINE,3,1,Y,2014-03-18,1,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pizza,,Pizza,,,62
+672,CDISCPILOT01,01-701-1033,QS,BASELINE,3,1,Y,2014-03-18,1,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,58,mm,58,58,mm,63
+673,CDISCPILOT01,01-701-1033,QS,WEEK 2,4,14,,2014-04-01,15,COEQ,How hungry have you felt?,COEQ01,6,mm,6,6,mm,64
+674,CDISCPILOT01,01-701-1033,QS,WEEK 2,4,14,,2014-04-01,15,COEQ,How full have you felt?,COEQ02,17,mm,17,17,mm,65
+675,CDISCPILOT01,01-701-1033,QS,WEEK 2,4,14,,2014-04-01,15,COEQ,How strong was your desire to eat sweet foods?,COEQ03,26,mm,26,26,mm,66
+676,CDISCPILOT01,01-701-1033,QS,WEEK 2,4,14,,2014-04-01,15,COEQ,How strong was your desire to eat savoury foods?,COEQ04,39,mm,39,39,mm,67
+677,CDISCPILOT01,01-701-1033,QS,WEEK 2,4,14,,2014-04-01,15,COEQ,How happy have you felt?,COEQ05,37,mm,37,37,mm,68
+678,CDISCPILOT01,01-701-1033,QS,WEEK 2,4,14,,2014-04-01,15,COEQ,How anxious have you felt?,COEQ06,57,mm,57,57,mm,69
+679,CDISCPILOT01,01-701-1033,QS,WEEK 2,4,14,,2014-04-01,15,COEQ,How alert have you felt?,COEQ07,6,mm,6,6,mm,70
+680,CDISCPILOT01,01-701-1033,QS,WEEK 2,4,14,,2014-04-01,15,COEQ,How contented have you felt?,COEQ08,13,mm,13,13,mm,71
+681,CDISCPILOT01,01-701-1033,QS,WEEK 2,4,14,,2014-04-01,15,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,85,mm,85,85,mm,72
+682,CDISCPILOT01,01-701-1033,QS,WEEK 2,4,14,,2014-04-01,15,COEQ,How strong have any food cravings been?,COEQ10,3,mm,3,3,mm,73
+683,CDISCPILOT01,01-701-1033,QS,WEEK 2,4,14,,2014-04-01,15,COEQ,How difficult has it been to resist any food cravings?,COEQ11,82,mm,82,82,mm,74
+684,CDISCPILOT01,01-701-1033,QS,WEEK 2,4,14,,2014-04-01,15,COEQ,How often have you eaten in response to food cravings?,COEQ12,32,mm,32,32,mm,75
+685,CDISCPILOT01,01-701-1033,QS,WEEK 2,4,14,,2014-04-01,15,COEQ,Chocolate or chocolate flavoured foods,COEQ13,80,mm,80,80,mm,76
+686,CDISCPILOT01,01-701-1033,QS,WEEK 2,4,14,,2014-04-01,15,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,70,mm,70,70,mm,77
+687,CDISCPILOT01,01-701-1033,QS,WEEK 2,4,14,,2014-04-01,15,COEQ,Fruit or fruit juice,COEQ15,97,mm,97,97,mm,78
+688,CDISCPILOT01,01-701-1033,QS,WEEK 2,4,14,,2014-04-01,15,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,18,mm,18,18,mm,79
+689,CDISCPILOT01,01-701-1033,QS,WEEK 2,4,14,,2014-04-01,15,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,75,mm,75,75,mm,80
+690,CDISCPILOT01,01-701-1033,QS,WEEK 2,4,14,,2014-04-01,15,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,75,mm,75,75,mm,81
+691,CDISCPILOT01,01-701-1033,QS,WEEK 2,4,14,,2014-04-01,15,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,55,mm,55,55,mm,82
+692,CDISCPILOT01,01-701-1033,QS,WEEK 2,4,14,,2014-04-01,15,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pasta,,Pasta,,,83
+693,CDISCPILOT01,01-701-1033,QS,WEEK 2,4,14,,2014-04-01,15,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,47,mm,47,47,mm,84
+694,CDISCPILOT01,01-701-1033,QS,WEEK 4,5,28,,2014-04-14,28,COEQ,How hungry have you felt?,COEQ01,58,mm,58,58,mm,85
+695,CDISCPILOT01,01-701-1033,QS,WEEK 4,5,28,,2014-04-14,28,COEQ,How full have you felt?,COEQ02,20,mm,20,20,mm,86
+696,CDISCPILOT01,01-701-1033,QS,WEEK 4,5,28,,2014-04-14,28,COEQ,How strong was your desire to eat sweet foods?,COEQ03,96,mm,96,96,mm,87
+697,CDISCPILOT01,01-701-1033,QS,WEEK 4,5,28,,2014-04-14,28,COEQ,How strong was your desire to eat savoury foods?,COEQ04,58,mm,58,58,mm,88
+698,CDISCPILOT01,01-701-1033,QS,WEEK 4,5,28,,2014-04-14,28,COEQ,How happy have you felt?,COEQ05,61,mm,61,61,mm,89
+699,CDISCPILOT01,01-701-1033,QS,WEEK 4,5,28,,2014-04-14,28,COEQ,How anxious have you felt?,COEQ06,45,mm,45,45,mm,90
+700,CDISCPILOT01,01-701-1033,QS,WEEK 4,5,28,,2014-04-14,28,COEQ,How alert have you felt?,COEQ07,28,mm,28,28,mm,91
+701,CDISCPILOT01,01-701-1033,QS,WEEK 4,5,28,,2014-04-14,28,COEQ,How contented have you felt?,COEQ08,82,mm,82,82,mm,92
+702,CDISCPILOT01,01-701-1033,QS,WEEK 4,5,28,,2014-04-14,28,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,44,mm,44,44,mm,93
+703,CDISCPILOT01,01-701-1033,QS,WEEK 4,5,28,,2014-04-14,28,COEQ,How strong have any food cravings been?,COEQ10,76,mm,76,76,mm,94
+704,CDISCPILOT01,01-701-1033,QS,WEEK 4,5,28,,2014-04-14,28,COEQ,How difficult has it been to resist any food cravings?,COEQ11,99,mm,99,99,mm,95
+705,CDISCPILOT01,01-701-1033,QS,WEEK 4,5,28,,2014-04-14,28,COEQ,How often have you eaten in response to food cravings?,COEQ12,75,mm,75,75,mm,96
+706,CDISCPILOT01,01-701-1033,QS,WEEK 4,5,28,,2014-04-14,28,COEQ,Chocolate or chocolate flavoured foods,COEQ13,86,mm,86,86,mm,97
+707,CDISCPILOT01,01-701-1033,QS,WEEK 4,5,28,,2014-04-14,28,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,50,mm,50,50,mm,98
+708,CDISCPILOT01,01-701-1033,QS,WEEK 4,5,28,,2014-04-14,28,COEQ,Fruit or fruit juice,COEQ15,63,mm,63,63,mm,99
+709,CDISCPILOT01,01-701-1033,QS,WEEK 4,5,28,,2014-04-14,28,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,29,mm,29,29,mm,100
+710,CDISCPILOT01,01-701-1033,QS,WEEK 4,5,28,,2014-04-14,28,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,59,mm,59,59,mm,101
+711,CDISCPILOT01,01-701-1033,QS,WEEK 4,5,28,,2014-04-14,28,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,65,mm,65,65,mm,102
+712,CDISCPILOT01,01-701-1033,QS,WEEK 4,5,28,,2014-04-14,28,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,53,mm,53,53,mm,103
+713,CDISCPILOT01,01-701-1033,QS,WEEK 4,5,28,,2014-04-14,28,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pizza,,Pizza,,,104
+714,CDISCPILOT01,01-701-1033,QS,WEEK 4,5,28,,2014-04-14,28,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,62,mm,62,62,mm,105
+715,CDISCPILOT01,01-701-1034,QS,SCREENING 1,1,-7,,2014-06-24,-7,COEQ,How hungry have you felt?,COEQ01,93,mm,93,93,mm,1
+716,CDISCPILOT01,01-701-1034,QS,SCREENING 1,1,-7,,2014-06-24,-7,COEQ,How full have you felt?,COEQ02,49,mm,49,49,mm,2
+717,CDISCPILOT01,01-701-1034,QS,SCREENING 1,1,-7,,2014-06-24,-7,COEQ,How strong was your desire to eat sweet foods?,COEQ03,64,mm,64,64,mm,3
+718,CDISCPILOT01,01-701-1034,QS,SCREENING 1,1,-7,,2014-06-24,-7,COEQ,How strong was your desire to eat savoury foods?,COEQ04,2,mm,2,2,mm,4
+719,CDISCPILOT01,01-701-1034,QS,SCREENING 1,1,-7,,2014-06-24,-7,COEQ,How happy have you felt?,COEQ05,67,mm,67,67,mm,5
+720,CDISCPILOT01,01-701-1034,QS,SCREENING 1,1,-7,,2014-06-24,-7,COEQ,How anxious have you felt?,COEQ06,8,mm,8,8,mm,6
+721,CDISCPILOT01,01-701-1034,QS,SCREENING 1,1,-7,,2014-06-24,-7,COEQ,How alert have you felt?,COEQ07,78,mm,78,78,mm,7
+722,CDISCPILOT01,01-701-1034,QS,SCREENING 1,1,-7,,2014-06-24,-7,COEQ,How contented have you felt?,COEQ08,55,mm,55,55,mm,8
+723,CDISCPILOT01,01-701-1034,QS,SCREENING 1,1,-7,,2014-06-24,-7,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,66,mm,66,66,mm,9
+724,CDISCPILOT01,01-701-1034,QS,SCREENING 1,1,-7,,2014-06-24,-7,COEQ,How strong have any food cravings been?,COEQ10,24,mm,24,24,mm,10
+725,CDISCPILOT01,01-701-1034,QS,SCREENING 1,1,-7,,2014-06-24,-7,COEQ,How difficult has it been to resist any food cravings?,COEQ11,2,mm,2,2,mm,11
+726,CDISCPILOT01,01-701-1034,QS,SCREENING 1,1,-7,,2014-06-24,-7,COEQ,How often have you eaten in response to food cravings?,COEQ12,98,mm,98,98,mm,12
+727,CDISCPILOT01,01-701-1034,QS,SCREENING 1,1,-7,,2014-06-24,-7,COEQ,Chocolate or chocolate flavoured foods,COEQ13,14,mm,14,14,mm,13
+728,CDISCPILOT01,01-701-1034,QS,SCREENING 1,1,-7,,2014-06-24,-7,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,9,mm,9,9,mm,14
+729,CDISCPILOT01,01-701-1034,QS,SCREENING 1,1,-7,,2014-06-24,-7,COEQ,Fruit or fruit juice,COEQ15,86,mm,86,86,mm,15
+730,CDISCPILOT01,01-701-1034,QS,SCREENING 1,1,-7,,2014-06-24,-7,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,88,mm,88,88,mm,16
+731,CDISCPILOT01,01-701-1034,QS,SCREENING 1,1,-7,,2014-06-24,-7,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,98,mm,98,98,mm,17
+732,CDISCPILOT01,01-701-1034,QS,SCREENING 1,1,-7,,2014-06-24,-7,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,93,mm,93,93,mm,18
+733,CDISCPILOT01,01-701-1034,QS,SCREENING 1,1,-7,,2014-06-24,-7,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,31,mm,31,31,mm,19
+734,CDISCPILOT01,01-701-1034,QS,SCREENING 1,1,-7,,2014-06-24,-7,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pasta,,Pasta,,,20
+735,CDISCPILOT01,01-701-1034,QS,SCREENING 1,1,-7,,2014-06-24,-7,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,66,mm,66,66,mm,21
+736,CDISCPILOT01,01-701-1034,QS,SCREENING 2,2,-1,,2014-06-29,-2,COEQ,How hungry have you felt?,COEQ01,47,mm,47,47,mm,22
+737,CDISCPILOT01,01-701-1034,QS,SCREENING 2,2,-1,,2014-06-29,-2,COEQ,How full have you felt?,COEQ02,50,mm,50,50,mm,23
+738,CDISCPILOT01,01-701-1034,QS,SCREENING 2,2,-1,,2014-06-29,-2,COEQ,How strong was your desire to eat sweet foods?,COEQ03,48,mm,48,48,mm,24
+739,CDISCPILOT01,01-701-1034,QS,SCREENING 2,2,-1,,2014-06-29,-2,COEQ,How strong was your desire to eat savoury foods?,COEQ04,98,mm,98,98,mm,25
+740,CDISCPILOT01,01-701-1034,QS,SCREENING 2,2,-1,,2014-06-29,-2,COEQ,How happy have you felt?,COEQ05,87,mm,87,87,mm,26
+741,CDISCPILOT01,01-701-1034,QS,SCREENING 2,2,-1,,2014-06-29,-2,COEQ,How anxious have you felt?,COEQ06,13,mm,13,13,mm,27
+742,CDISCPILOT01,01-701-1034,QS,SCREENING 2,2,-1,,2014-06-29,-2,COEQ,How alert have you felt?,COEQ07,7,mm,7,7,mm,28
+743,CDISCPILOT01,01-701-1034,QS,SCREENING 2,2,-1,,2014-06-29,-2,COEQ,How contented have you felt?,COEQ08,87,mm,87,87,mm,29
+744,CDISCPILOT01,01-701-1034,QS,SCREENING 2,2,-1,,2014-06-29,-2,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,4,mm,4,4,mm,30
+745,CDISCPILOT01,01-701-1034,QS,SCREENING 2,2,-1,,2014-06-29,-2,COEQ,How strong have any food cravings been?,COEQ10,27,mm,27,27,mm,31
+746,CDISCPILOT01,01-701-1034,QS,SCREENING 2,2,-1,,2014-06-29,-2,COEQ,How difficult has it been to resist any food cravings?,COEQ11,63,mm,63,63,mm,32
+747,CDISCPILOT01,01-701-1034,QS,SCREENING 2,2,-1,,2014-06-29,-2,COEQ,How often have you eaten in response to food cravings?,COEQ12,1,mm,1,1,mm,33
+748,CDISCPILOT01,01-701-1034,QS,SCREENING 2,2,-1,,2014-06-29,-2,COEQ,Chocolate or chocolate flavoured foods,COEQ13,100,mm,100,100,mm,34
+749,CDISCPILOT01,01-701-1034,QS,SCREENING 2,2,-1,,2014-06-29,-2,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,11,mm,11,11,mm,35
+750,CDISCPILOT01,01-701-1034,QS,SCREENING 2,2,-1,,2014-06-29,-2,COEQ,Fruit or fruit juice,COEQ15,88,mm,88,88,mm,36
+751,CDISCPILOT01,01-701-1034,QS,SCREENING 2,2,-1,,2014-06-29,-2,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,48,mm,48,48,mm,37
+752,CDISCPILOT01,01-701-1034,QS,SCREENING 2,2,-1,,2014-06-29,-2,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,2,mm,2,2,mm,38
+753,CDISCPILOT01,01-701-1034,QS,SCREENING 2,2,-1,,2014-06-29,-2,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,95,mm,95,95,mm,39
+754,CDISCPILOT01,01-701-1034,QS,SCREENING 2,2,-1,,2014-06-29,-2,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,67,mm,67,67,mm,40
+755,CDISCPILOT01,01-701-1034,QS,SCREENING 2,2,-1,,2014-06-29,-2,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pasta,,Pasta,,,41
+756,CDISCPILOT01,01-701-1034,QS,SCREENING 2,2,-1,,2014-06-29,-2,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,61,mm,61,61,mm,42
+757,CDISCPILOT01,01-701-1034,QS,BASELINE,3,1,Y,2014-07-01,1,COEQ,How hungry have you felt?,COEQ01,16,mm,16,16,mm,43
+758,CDISCPILOT01,01-701-1034,QS,BASELINE,3,1,Y,2014-07-01,1,COEQ,How full have you felt?,COEQ02,98,mm,98,98,mm,44
+759,CDISCPILOT01,01-701-1034,QS,BASELINE,3,1,Y,2014-07-01,1,COEQ,How strong was your desire to eat sweet foods?,COEQ03,75,mm,75,75,mm,45
+760,CDISCPILOT01,01-701-1034,QS,BASELINE,3,1,Y,2014-07-01,1,COEQ,How strong was your desire to eat savoury foods?,COEQ04,42,mm,42,42,mm,46
+761,CDISCPILOT01,01-701-1034,QS,BASELINE,3,1,Y,2014-07-01,1,COEQ,How happy have you felt?,COEQ05,18,mm,18,18,mm,47
+762,CDISCPILOT01,01-701-1034,QS,BASELINE,3,1,Y,2014-07-01,1,COEQ,How anxious have you felt?,COEQ06,91,mm,91,91,mm,48
+763,CDISCPILOT01,01-701-1034,QS,BASELINE,3,1,Y,2014-07-01,1,COEQ,How alert have you felt?,COEQ07,58,mm,58,58,mm,49
+764,CDISCPILOT01,01-701-1034,QS,BASELINE,3,1,Y,2014-07-01,1,COEQ,How contented have you felt?,COEQ08,30,mm,30,30,mm,50
+765,CDISCPILOT01,01-701-1034,QS,BASELINE,3,1,Y,2014-07-01,1,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,83,mm,83,83,mm,51
+766,CDISCPILOT01,01-701-1034,QS,BASELINE,3,1,Y,2014-07-01,1,COEQ,How strong have any food cravings been?,COEQ10,24,mm,24,24,mm,52
+767,CDISCPILOT01,01-701-1034,QS,BASELINE,3,1,Y,2014-07-01,1,COEQ,How difficult has it been to resist any food cravings?,COEQ11,9,mm,9,9,mm,53
+768,CDISCPILOT01,01-701-1034,QS,BASELINE,3,1,Y,2014-07-01,1,COEQ,How often have you eaten in response to food cravings?,COEQ12,43,mm,43,43,mm,54
+769,CDISCPILOT01,01-701-1034,QS,BASELINE,3,1,Y,2014-07-01,1,COEQ,Chocolate or chocolate flavoured foods,COEQ13,33,mm,33,33,mm,55
+770,CDISCPILOT01,01-701-1034,QS,BASELINE,3,1,Y,2014-07-01,1,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,34,mm,34,34,mm,56
+771,CDISCPILOT01,01-701-1034,QS,BASELINE,3,1,Y,2014-07-01,1,COEQ,Fruit or fruit juice,COEQ15,52,mm,52,52,mm,57
+772,CDISCPILOT01,01-701-1034,QS,BASELINE,3,1,Y,2014-07-01,1,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,80,mm,80,80,mm,58
+773,CDISCPILOT01,01-701-1034,QS,BASELINE,3,1,Y,2014-07-01,1,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,9,mm,9,9,mm,59
+774,CDISCPILOT01,01-701-1034,QS,BASELINE,3,1,Y,2014-07-01,1,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,22,mm,22,22,mm,60
+775,CDISCPILOT01,01-701-1034,QS,BASELINE,3,1,Y,2014-07-01,1,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,15,mm,15,15,mm,61
+776,CDISCPILOT01,01-701-1034,QS,BASELINE,3,1,Y,2014-07-01,1,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Ice Cream,,Ice Cream,,,62
+777,CDISCPILOT01,01-701-1034,QS,BASELINE,3,1,Y,2014-07-01,1,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,1,mm,1,1,mm,63
+778,CDISCPILOT01,01-701-1034,QS,WEEK 2,4,14,,2014-07-15,15,COEQ,How hungry have you felt?,COEQ01,66,mm,66,66,mm,64
+779,CDISCPILOT01,01-701-1034,QS,WEEK 2,4,14,,2014-07-15,15,COEQ,How full have you felt?,COEQ02,37,mm,37,37,mm,65
+780,CDISCPILOT01,01-701-1034,QS,WEEK 2,4,14,,2014-07-15,15,COEQ,How strong was your desire to eat sweet foods?,COEQ03,98,mm,98,98,mm,66
+781,CDISCPILOT01,01-701-1034,QS,WEEK 2,4,14,,2014-07-15,15,COEQ,How strong was your desire to eat savoury foods?,COEQ04,46,mm,46,46,mm,67
+782,CDISCPILOT01,01-701-1034,QS,WEEK 2,4,14,,2014-07-15,15,COEQ,How happy have you felt?,COEQ05,33,mm,33,33,mm,68
+783,CDISCPILOT01,01-701-1034,QS,WEEK 2,4,14,,2014-07-15,15,COEQ,How anxious have you felt?,COEQ06,54,mm,54,54,mm,69
+784,CDISCPILOT01,01-701-1034,QS,WEEK 2,4,14,,2014-07-15,15,COEQ,How alert have you felt?,COEQ07,14,mm,14,14,mm,70
+785,CDISCPILOT01,01-701-1034,QS,WEEK 2,4,14,,2014-07-15,15,COEQ,How contented have you felt?,COEQ08,3,mm,3,3,mm,71
+786,CDISCPILOT01,01-701-1034,QS,WEEK 2,4,14,,2014-07-15,15,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,30,mm,30,30,mm,72
+787,CDISCPILOT01,01-701-1034,QS,WEEK 2,4,14,,2014-07-15,15,COEQ,How strong have any food cravings been?,COEQ10,34,mm,34,34,mm,73
+788,CDISCPILOT01,01-701-1034,QS,WEEK 2,4,14,,2014-07-15,15,COEQ,How difficult has it been to resist any food cravings?,COEQ11,31,mm,31,31,mm,74
+789,CDISCPILOT01,01-701-1034,QS,WEEK 2,4,14,,2014-07-15,15,COEQ,How often have you eaten in response to food cravings?,COEQ12,33,mm,33,33,mm,75
+790,CDISCPILOT01,01-701-1034,QS,WEEK 2,4,14,,2014-07-15,15,COEQ,Chocolate or chocolate flavoured foods,COEQ13,55,mm,55,55,mm,76
+791,CDISCPILOT01,01-701-1034,QS,WEEK 2,4,14,,2014-07-15,15,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,44,mm,44,44,mm,77
+792,CDISCPILOT01,01-701-1034,QS,WEEK 2,4,14,,2014-07-15,15,COEQ,Fruit or fruit juice,COEQ15,47,mm,47,47,mm,78
+793,CDISCPILOT01,01-701-1034,QS,WEEK 2,4,14,,2014-07-15,15,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,82,mm,82,82,mm,79
+794,CDISCPILOT01,01-701-1034,QS,WEEK 2,4,14,,2014-07-15,15,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,36,mm,36,36,mm,80
+795,CDISCPILOT01,01-701-1034,QS,WEEK 2,4,14,,2014-07-15,15,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,45,mm,45,45,mm,81
+796,CDISCPILOT01,01-701-1034,QS,WEEK 2,4,14,,2014-07-15,15,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,2,mm,2,2,mm,82
+797,CDISCPILOT01,01-701-1034,QS,WEEK 2,4,14,,2014-07-15,15,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Ice Cream,,Ice Cream,,,83
+798,CDISCPILOT01,01-701-1034,QS,WEEK 2,4,14,,2014-07-15,15,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,23,mm,23,23,mm,84
+799,CDISCPILOT01,01-701-1034,QS,WEEK 4,5,28,,2014-07-29,29,COEQ,How hungry have you felt?,COEQ01,40,mm,40,40,mm,85
+800,CDISCPILOT01,01-701-1034,QS,WEEK 4,5,28,,2014-07-29,29,COEQ,How full have you felt?,COEQ02,6,mm,6,6,mm,86
+801,CDISCPILOT01,01-701-1034,QS,WEEK 4,5,28,,2014-07-29,29,COEQ,How strong was your desire to eat sweet foods?,COEQ03,66,mm,66,66,mm,87
+802,CDISCPILOT01,01-701-1034,QS,WEEK 4,5,28,,2014-07-29,29,COEQ,How strong was your desire to eat savoury foods?,COEQ04,39,mm,39,39,mm,88
+803,CDISCPILOT01,01-701-1034,QS,WEEK 4,5,28,,2014-07-29,29,COEQ,How happy have you felt?,COEQ05,55,mm,55,55,mm,89
+804,CDISCPILOT01,01-701-1034,QS,WEEK 4,5,28,,2014-07-29,29,COEQ,How anxious have you felt?,COEQ06,24,mm,24,24,mm,90
+805,CDISCPILOT01,01-701-1034,QS,WEEK 4,5,28,,2014-07-29,29,COEQ,How alert have you felt?,COEQ07,12,mm,12,12,mm,91
+806,CDISCPILOT01,01-701-1034,QS,WEEK 4,5,28,,2014-07-29,29,COEQ,How contented have you felt?,COEQ08,43,mm,43,43,mm,92
+807,CDISCPILOT01,01-701-1034,QS,WEEK 4,5,28,,2014-07-29,29,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,68,mm,68,68,mm,93
+808,CDISCPILOT01,01-701-1034,QS,WEEK 4,5,28,,2014-07-29,29,COEQ,How strong have any food cravings been?,COEQ10,41,mm,41,41,mm,94
+809,CDISCPILOT01,01-701-1034,QS,WEEK 4,5,28,,2014-07-29,29,COEQ,How difficult has it been to resist any food cravings?,COEQ11,23,mm,23,23,mm,95
+810,CDISCPILOT01,01-701-1034,QS,WEEK 4,5,28,,2014-07-29,29,COEQ,How often have you eaten in response to food cravings?,COEQ12,82,mm,82,82,mm,96
+811,CDISCPILOT01,01-701-1034,QS,WEEK 4,5,28,,2014-07-29,29,COEQ,Chocolate or chocolate flavoured foods,COEQ13,26,mm,26,26,mm,97
+812,CDISCPILOT01,01-701-1034,QS,WEEK 4,5,28,,2014-07-29,29,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,13,mm,13,13,mm,98
+813,CDISCPILOT01,01-701-1034,QS,WEEK 4,5,28,,2014-07-29,29,COEQ,Fruit or fruit juice,COEQ15,85,mm,85,85,mm,99
+814,CDISCPILOT01,01-701-1034,QS,WEEK 4,5,28,,2014-07-29,29,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,25,mm,25,25,mm,100
+815,CDISCPILOT01,01-701-1034,QS,WEEK 4,5,28,,2014-07-29,29,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,0,mm,0,0,mm,101
+816,CDISCPILOT01,01-701-1034,QS,WEEK 4,5,28,,2014-07-29,29,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,19,mm,19,19,mm,102
+817,CDISCPILOT01,01-701-1034,QS,WEEK 4,5,28,,2014-07-29,29,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,91,mm,91,91,mm,103
+818,CDISCPILOT01,01-701-1034,QS,WEEK 4,5,28,,2014-07-29,29,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pizza,,Pizza,,,104
+819,CDISCPILOT01,01-701-1034,QS,WEEK 4,5,28,,2014-07-29,29,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,94,mm,94,94,mm,105
+820,CDISCPILOT01,01-701-1034,QS,WEEK 6,7,42,,2014-08-11,42,COEQ,How hungry have you felt?,COEQ01,62,mm,62,62,mm,106
+821,CDISCPILOT01,01-701-1034,QS,WEEK 6,7,42,,2014-08-11,42,COEQ,How full have you felt?,COEQ02,32,mm,32,32,mm,107
+822,CDISCPILOT01,01-701-1034,QS,WEEK 6,7,42,,2014-08-11,42,COEQ,How strong was your desire to eat sweet foods?,COEQ03,98,mm,98,98,mm,108
+823,CDISCPILOT01,01-701-1034,QS,WEEK 6,7,42,,2014-08-11,42,COEQ,How strong was your desire to eat savoury foods?,COEQ04,71,mm,71,71,mm,109
+824,CDISCPILOT01,01-701-1034,QS,WEEK 6,7,42,,2014-08-11,42,COEQ,How happy have you felt?,COEQ05,81,mm,81,81,mm,110
+825,CDISCPILOT01,01-701-1034,QS,WEEK 6,7,42,,2014-08-11,42,COEQ,How anxious have you felt?,COEQ06,28,mm,28,28,mm,111
+826,CDISCPILOT01,01-701-1034,QS,WEEK 6,7,42,,2014-08-11,42,COEQ,How alert have you felt?,COEQ07,69,mm,69,69,mm,112
+827,CDISCPILOT01,01-701-1034,QS,WEEK 6,7,42,,2014-08-11,42,COEQ,How contented have you felt?,COEQ08,90,mm,90,90,mm,113
+828,CDISCPILOT01,01-701-1034,QS,WEEK 6,7,42,,2014-08-11,42,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,54,mm,54,54,mm,114
+829,CDISCPILOT01,01-701-1034,QS,WEEK 6,7,42,,2014-08-11,42,COEQ,How strong have any food cravings been?,COEQ10,32,mm,32,32,mm,115
+830,CDISCPILOT01,01-701-1034,QS,WEEK 6,7,42,,2014-08-11,42,COEQ,How difficult has it been to resist any food cravings?,COEQ11,38,mm,38,38,mm,116
+831,CDISCPILOT01,01-701-1034,QS,WEEK 6,7,42,,2014-08-11,42,COEQ,How often have you eaten in response to food cravings?,COEQ12,63,mm,63,63,mm,117
+832,CDISCPILOT01,01-701-1034,QS,WEEK 6,7,42,,2014-08-11,42,COEQ,Chocolate or chocolate flavoured foods,COEQ13,78,mm,78,78,mm,118
+833,CDISCPILOT01,01-701-1034,QS,WEEK 6,7,42,,2014-08-11,42,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,86,mm,86,86,mm,119
+834,CDISCPILOT01,01-701-1034,QS,WEEK 6,7,42,,2014-08-11,42,COEQ,Fruit or fruit juice,COEQ15,98,mm,98,98,mm,120
+835,CDISCPILOT01,01-701-1034,QS,WEEK 6,7,42,,2014-08-11,42,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,62,mm,62,62,mm,121
+836,CDISCPILOT01,01-701-1034,QS,WEEK 6,7,42,,2014-08-11,42,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,71,mm,71,71,mm,122
+837,CDISCPILOT01,01-701-1034,QS,WEEK 6,7,42,,2014-08-11,42,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,54,mm,54,54,mm,123
+838,CDISCPILOT01,01-701-1034,QS,WEEK 6,7,42,,2014-08-11,42,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,94,mm,94,94,mm,124
+839,CDISCPILOT01,01-701-1034,QS,WEEK 6,7,42,,2014-08-11,42,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pasta,,Pasta,,,125
+840,CDISCPILOT01,01-701-1034,QS,WEEK 6,7,42,,2014-08-11,42,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,95,mm,95,95,mm,126
+841,CDISCPILOT01,01-701-1034,QS,WEEK 8,8,56,,2014-08-26,57,COEQ,How hungry have you felt?,COEQ01,40,mm,40,40,mm,127
+842,CDISCPILOT01,01-701-1034,QS,WEEK 8,8,56,,2014-08-26,57,COEQ,How full have you felt?,COEQ02,32,mm,32,32,mm,128
+843,CDISCPILOT01,01-701-1034,QS,WEEK 8,8,56,,2014-08-26,57,COEQ,How strong was your desire to eat sweet foods?,COEQ03,22,mm,22,22,mm,129
+844,CDISCPILOT01,01-701-1034,QS,WEEK 8,8,56,,2014-08-26,57,COEQ,How strong was your desire to eat savoury foods?,COEQ04,36,mm,36,36,mm,130
+845,CDISCPILOT01,01-701-1034,QS,WEEK 8,8,56,,2014-08-26,57,COEQ,How happy have you felt?,COEQ05,1,mm,1,1,mm,131
+846,CDISCPILOT01,01-701-1034,QS,WEEK 8,8,56,,2014-08-26,57,COEQ,How anxious have you felt?,COEQ06,30,mm,30,30,mm,132
+847,CDISCPILOT01,01-701-1034,QS,WEEK 8,8,56,,2014-08-26,57,COEQ,How alert have you felt?,COEQ07,96,mm,96,96,mm,133
+848,CDISCPILOT01,01-701-1034,QS,WEEK 8,8,56,,2014-08-26,57,COEQ,How contented have you felt?,COEQ08,65,mm,65,65,mm,134
+849,CDISCPILOT01,01-701-1034,QS,WEEK 8,8,56,,2014-08-26,57,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,47,mm,47,47,mm,135
+850,CDISCPILOT01,01-701-1034,QS,WEEK 8,8,56,,2014-08-26,57,COEQ,How strong have any food cravings been?,COEQ10,38,mm,38,38,mm,136
+851,CDISCPILOT01,01-701-1034,QS,WEEK 8,8,56,,2014-08-26,57,COEQ,How difficult has it been to resist any food cravings?,COEQ11,85,mm,85,85,mm,137
+852,CDISCPILOT01,01-701-1034,QS,WEEK 8,8,56,,2014-08-26,57,COEQ,How often have you eaten in response to food cravings?,COEQ12,25,mm,25,25,mm,138
+853,CDISCPILOT01,01-701-1034,QS,WEEK 8,8,56,,2014-08-26,57,COEQ,Chocolate or chocolate flavoured foods,COEQ13,70,mm,70,70,mm,139
+854,CDISCPILOT01,01-701-1034,QS,WEEK 8,8,56,,2014-08-26,57,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,95,mm,95,95,mm,140
+855,CDISCPILOT01,01-701-1034,QS,WEEK 8,8,56,,2014-08-26,57,COEQ,Fruit or fruit juice,COEQ15,67,mm,67,67,mm,141
+856,CDISCPILOT01,01-701-1034,QS,WEEK 8,8,56,,2014-08-26,57,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,25,mm,25,25,mm,142
+857,CDISCPILOT01,01-701-1034,QS,WEEK 8,8,56,,2014-08-26,57,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,34,mm,34,34,mm,143
+858,CDISCPILOT01,01-701-1034,QS,WEEK 8,8,56,,2014-08-26,57,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,38,mm,38,38,mm,144
+859,CDISCPILOT01,01-701-1034,QS,WEEK 8,8,56,,2014-08-26,57,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,9,mm,9,9,mm,145
+860,CDISCPILOT01,01-701-1034,QS,WEEK 8,8,56,,2014-08-26,57,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Ice Cream,,Ice Cream,,,146
+861,CDISCPILOT01,01-701-1034,QS,WEEK 8,8,56,,2014-08-26,57,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,38,mm,38,38,mm,147
+862,CDISCPILOT01,01-701-1034,QS,WEEK 12,9,84,,2014-09-25,87,COEQ,How hungry have you felt?,COEQ01,74,mm,74,74,mm,148
+863,CDISCPILOT01,01-701-1034,QS,WEEK 12,9,84,,2014-09-25,87,COEQ,How full have you felt?,COEQ02,92,mm,92,92,mm,149
+864,CDISCPILOT01,01-701-1034,QS,WEEK 12,9,84,,2014-09-25,87,COEQ,How strong was your desire to eat sweet foods?,COEQ03,51,mm,51,51,mm,150
+865,CDISCPILOT01,01-701-1034,QS,WEEK 12,9,84,,2014-09-25,87,COEQ,How strong was your desire to eat savoury foods?,COEQ04,99,mm,99,99,mm,151
+866,CDISCPILOT01,01-701-1034,QS,WEEK 12,9,84,,2014-09-25,87,COEQ,How happy have you felt?,COEQ05,59,mm,59,59,mm,152
+867,CDISCPILOT01,01-701-1034,QS,WEEK 12,9,84,,2014-09-25,87,COEQ,How anxious have you felt?,COEQ06,35,mm,35,35,mm,153
+868,CDISCPILOT01,01-701-1034,QS,WEEK 12,9,84,,2014-09-25,87,COEQ,How alert have you felt?,COEQ07,40,mm,40,40,mm,154
+869,CDISCPILOT01,01-701-1034,QS,WEEK 12,9,84,,2014-09-25,87,COEQ,How contented have you felt?,COEQ08,5,mm,5,5,mm,155
+870,CDISCPILOT01,01-701-1034,QS,WEEK 12,9,84,,2014-09-25,87,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,51,mm,51,51,mm,156
+871,CDISCPILOT01,01-701-1034,QS,WEEK 12,9,84,,2014-09-25,87,COEQ,How strong have any food cravings been?,COEQ10,17,mm,17,17,mm,157
+872,CDISCPILOT01,01-701-1034,QS,WEEK 12,9,84,,2014-09-25,87,COEQ,How difficult has it been to resist any food cravings?,COEQ11,11,mm,11,11,mm,158
+873,CDISCPILOT01,01-701-1034,QS,WEEK 12,9,84,,2014-09-25,87,COEQ,How often have you eaten in response to food cravings?,COEQ12,11,mm,11,11,mm,159
+874,CDISCPILOT01,01-701-1034,QS,WEEK 12,9,84,,2014-09-25,87,COEQ,Chocolate or chocolate flavoured foods,COEQ13,11,mm,11,11,mm,160
+875,CDISCPILOT01,01-701-1034,QS,WEEK 12,9,84,,2014-09-25,87,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,80,mm,80,80,mm,161
+876,CDISCPILOT01,01-701-1034,QS,WEEK 12,9,84,,2014-09-25,87,COEQ,Fruit or fruit juice,COEQ15,61,mm,61,61,mm,162
+877,CDISCPILOT01,01-701-1034,QS,WEEK 12,9,84,,2014-09-25,87,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,81,mm,81,81,mm,163
+878,CDISCPILOT01,01-701-1034,QS,WEEK 12,9,84,,2014-09-25,87,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,96,mm,96,96,mm,164
+879,CDISCPILOT01,01-701-1034,QS,WEEK 12,9,84,,2014-09-25,87,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,92,mm,92,92,mm,165
+880,CDISCPILOT01,01-701-1034,QS,WEEK 12,9,84,,2014-09-25,87,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,14,mm,14,14,mm,166
+881,CDISCPILOT01,01-701-1034,QS,WEEK 12,9,84,,2014-09-25,87,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pasta,,Pasta,,,167
+882,CDISCPILOT01,01-701-1034,QS,WEEK 12,9,84,,2014-09-25,87,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,45,mm,45,45,mm,168
+883,CDISCPILOT01,01-701-1034,QS,WEEK 16,10,112,,2014-10-21,113,COEQ,How hungry have you felt?,COEQ01,37,mm,37,37,mm,169
+884,CDISCPILOT01,01-701-1034,QS,WEEK 16,10,112,,2014-10-21,113,COEQ,How full have you felt?,COEQ02,26,mm,26,26,mm,170
+885,CDISCPILOT01,01-701-1034,QS,WEEK 16,10,112,,2014-10-21,113,COEQ,How strong was your desire to eat sweet foods?,COEQ03,30,mm,30,30,mm,171
+886,CDISCPILOT01,01-701-1034,QS,WEEK 16,10,112,,2014-10-21,113,COEQ,How strong was your desire to eat savoury foods?,COEQ04,83,mm,83,83,mm,172
+887,CDISCPILOT01,01-701-1034,QS,WEEK 16,10,112,,2014-10-21,113,COEQ,How happy have you felt?,COEQ05,62,mm,62,62,mm,173
+888,CDISCPILOT01,01-701-1034,QS,WEEK 16,10,112,,2014-10-21,113,COEQ,How anxious have you felt?,COEQ06,97,mm,97,97,mm,174
+889,CDISCPILOT01,01-701-1034,QS,WEEK 16,10,112,,2014-10-21,113,COEQ,How alert have you felt?,COEQ07,34,mm,34,34,mm,175
+890,CDISCPILOT01,01-701-1034,QS,WEEK 16,10,112,,2014-10-21,113,COEQ,How contented have you felt?,COEQ08,16,mm,16,16,mm,176
+891,CDISCPILOT01,01-701-1034,QS,WEEK 16,10,112,,2014-10-21,113,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,32,mm,32,32,mm,177
+892,CDISCPILOT01,01-701-1034,QS,WEEK 16,10,112,,2014-10-21,113,COEQ,How strong have any food cravings been?,COEQ10,71,mm,71,71,mm,178
+893,CDISCPILOT01,01-701-1034,QS,WEEK 16,10,112,,2014-10-21,113,COEQ,How difficult has it been to resist any food cravings?,COEQ11,73,mm,73,73,mm,179
+894,CDISCPILOT01,01-701-1034,QS,WEEK 16,10,112,,2014-10-21,113,COEQ,How often have you eaten in response to food cravings?,COEQ12,51,mm,51,51,mm,180
+895,CDISCPILOT01,01-701-1034,QS,WEEK 16,10,112,,2014-10-21,113,COEQ,Chocolate or chocolate flavoured foods,COEQ13,5,mm,5,5,mm,181
+896,CDISCPILOT01,01-701-1034,QS,WEEK 16,10,112,,2014-10-21,113,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,38,mm,38,38,mm,182
+897,CDISCPILOT01,01-701-1034,QS,WEEK 16,10,112,,2014-10-21,113,COEQ,Fruit or fruit juice,COEQ15,17,mm,17,17,mm,183
+898,CDISCPILOT01,01-701-1034,QS,WEEK 16,10,112,,2014-10-21,113,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,61,mm,61,61,mm,184
+899,CDISCPILOT01,01-701-1034,QS,WEEK 16,10,112,,2014-10-21,113,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,38,mm,38,38,mm,185
+900,CDISCPILOT01,01-701-1034,QS,WEEK 16,10,112,,2014-10-21,113,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,37,mm,37,37,mm,186
+901,CDISCPILOT01,01-701-1034,QS,WEEK 16,10,112,,2014-10-21,113,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,36,mm,36,36,mm,187
+902,CDISCPILOT01,01-701-1034,QS,WEEK 16,10,112,,2014-10-21,113,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pizza,,Pizza,,,188
+903,CDISCPILOT01,01-701-1034,QS,WEEK 16,10,112,,2014-10-21,113,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,34,mm,34,34,mm,189
+904,CDISCPILOT01,01-701-1034,QS,WEEK 20,11,140,,2014-11-18,141,COEQ,How hungry have you felt?,COEQ01,71,mm,71,71,mm,190
+905,CDISCPILOT01,01-701-1034,QS,WEEK 20,11,140,,2014-11-18,141,COEQ,How full have you felt?,COEQ02,45,mm,45,45,mm,191
+906,CDISCPILOT01,01-701-1034,QS,WEEK 20,11,140,,2014-11-18,141,COEQ,How strong was your desire to eat sweet foods?,COEQ03,87,mm,87,87,mm,192
+907,CDISCPILOT01,01-701-1034,QS,WEEK 20,11,140,,2014-11-18,141,COEQ,How strong was your desire to eat savoury foods?,COEQ04,75,mm,75,75,mm,193
+908,CDISCPILOT01,01-701-1034,QS,WEEK 20,11,140,,2014-11-18,141,COEQ,How happy have you felt?,COEQ05,10,mm,10,10,mm,194
+909,CDISCPILOT01,01-701-1034,QS,WEEK 20,11,140,,2014-11-18,141,COEQ,How anxious have you felt?,COEQ06,44,mm,44,44,mm,195
+910,CDISCPILOT01,01-701-1034,QS,WEEK 20,11,140,,2014-11-18,141,COEQ,How alert have you felt?,COEQ07,82,mm,82,82,mm,196
+911,CDISCPILOT01,01-701-1034,QS,WEEK 20,11,140,,2014-11-18,141,COEQ,How contented have you felt?,COEQ08,39,mm,39,39,mm,197
+912,CDISCPILOT01,01-701-1034,QS,WEEK 20,11,140,,2014-11-18,141,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,20,mm,20,20,mm,198
+913,CDISCPILOT01,01-701-1034,QS,WEEK 20,11,140,,2014-11-18,141,COEQ,How strong have any food cravings been?,COEQ10,80,mm,80,80,mm,199
+914,CDISCPILOT01,01-701-1034,QS,WEEK 20,11,140,,2014-11-18,141,COEQ,How difficult has it been to resist any food cravings?,COEQ11,8,mm,8,8,mm,200
+915,CDISCPILOT01,01-701-1034,QS,WEEK 20,11,140,,2014-11-18,141,COEQ,How often have you eaten in response to food cravings?,COEQ12,4,mm,4,4,mm,201
+916,CDISCPILOT01,01-701-1034,QS,WEEK 20,11,140,,2014-11-18,141,COEQ,Chocolate or chocolate flavoured foods,COEQ13,0,mm,0,0,mm,202
+917,CDISCPILOT01,01-701-1034,QS,WEEK 20,11,140,,2014-11-18,141,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,14,mm,14,14,mm,203
+918,CDISCPILOT01,01-701-1034,QS,WEEK 20,11,140,,2014-11-18,141,COEQ,Fruit or fruit juice,COEQ15,80,mm,80,80,mm,204
+919,CDISCPILOT01,01-701-1034,QS,WEEK 20,11,140,,2014-11-18,141,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,57,mm,57,57,mm,205
+920,CDISCPILOT01,01-701-1034,QS,WEEK 20,11,140,,2014-11-18,141,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,99,mm,99,99,mm,206
+921,CDISCPILOT01,01-701-1034,QS,WEEK 20,11,140,,2014-11-18,141,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,23,mm,23,23,mm,207
+922,CDISCPILOT01,01-701-1034,QS,WEEK 20,11,140,,2014-11-18,141,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,51,mm,51,51,mm,208
+923,CDISCPILOT01,01-701-1034,QS,WEEK 20,11,140,,2014-11-18,141,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pizza,,Pizza,,,209
+924,CDISCPILOT01,01-701-1034,QS,WEEK 20,11,140,,2014-11-18,141,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,5,mm,5,5,mm,210
+925,CDISCPILOT01,01-701-1034,QS,WEEK 24,12,168,,2014-12-17,170,COEQ,How hungry have you felt?,COEQ01,69,mm,69,69,mm,211
+926,CDISCPILOT01,01-701-1034,QS,WEEK 24,12,168,,2014-12-17,170,COEQ,How full have you felt?,COEQ02,69,mm,69,69,mm,212
+927,CDISCPILOT01,01-701-1034,QS,WEEK 24,12,168,,2014-12-17,170,COEQ,How strong was your desire to eat sweet foods?,COEQ03,22,mm,22,22,mm,213
+928,CDISCPILOT01,01-701-1034,QS,WEEK 24,12,168,,2014-12-17,170,COEQ,How strong was your desire to eat savoury foods?,COEQ04,15,mm,15,15,mm,214
+929,CDISCPILOT01,01-701-1034,QS,WEEK 24,12,168,,2014-12-17,170,COEQ,How happy have you felt?,COEQ05,55,mm,55,55,mm,215
+930,CDISCPILOT01,01-701-1034,QS,WEEK 24,12,168,,2014-12-17,170,COEQ,How anxious have you felt?,COEQ06,86,mm,86,86,mm,216
+931,CDISCPILOT01,01-701-1034,QS,WEEK 24,12,168,,2014-12-17,170,COEQ,How alert have you felt?,COEQ07,99,mm,99,99,mm,217
+932,CDISCPILOT01,01-701-1034,QS,WEEK 24,12,168,,2014-12-17,170,COEQ,How contented have you felt?,COEQ08,13,mm,13,13,mm,218
+933,CDISCPILOT01,01-701-1034,QS,WEEK 24,12,168,,2014-12-17,170,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,79,mm,79,79,mm,219
+934,CDISCPILOT01,01-701-1034,QS,WEEK 24,12,168,,2014-12-17,170,COEQ,How strong have any food cravings been?,COEQ10,49,mm,49,49,mm,220
+935,CDISCPILOT01,01-701-1034,QS,WEEK 24,12,168,,2014-12-17,170,COEQ,How difficult has it been to resist any food cravings?,COEQ11,59,mm,59,59,mm,221
+936,CDISCPILOT01,01-701-1034,QS,WEEK 24,12,168,,2014-12-17,170,COEQ,How often have you eaten in response to food cravings?,COEQ12,62,mm,62,62,mm,222
+937,CDISCPILOT01,01-701-1034,QS,WEEK 24,12,168,,2014-12-17,170,COEQ,Chocolate or chocolate flavoured foods,COEQ13,22,mm,22,22,mm,223
+938,CDISCPILOT01,01-701-1034,QS,WEEK 24,12,168,,2014-12-17,170,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,100,mm,100,100,mm,224
+939,CDISCPILOT01,01-701-1034,QS,WEEK 24,12,168,,2014-12-17,170,COEQ,Fruit or fruit juice,COEQ15,53,mm,53,53,mm,225
+940,CDISCPILOT01,01-701-1034,QS,WEEK 24,12,168,,2014-12-17,170,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,54,mm,54,54,mm,226
+941,CDISCPILOT01,01-701-1034,QS,WEEK 24,12,168,,2014-12-17,170,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,71,mm,71,71,mm,227
+942,CDISCPILOT01,01-701-1034,QS,WEEK 24,12,168,,2014-12-17,170,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,72,mm,72,72,mm,228
+943,CDISCPILOT01,01-701-1034,QS,WEEK 24,12,168,,2014-12-17,170,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,85,mm,85,85,mm,229
+944,CDISCPILOT01,01-701-1034,QS,WEEK 24,12,168,,2014-12-17,170,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Pasta,,Pasta,,,230
+945,CDISCPILOT01,01-701-1034,QS,WEEK 24,12,168,,2014-12-17,170,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,98,mm,98,98,mm,231
+946,CDISCPILOT01,01-701-1034,QS,WEEK 26,13,182,,2014-12-30,183,COEQ,How hungry have you felt?,COEQ01,33,mm,33,33,mm,232
+947,CDISCPILOT01,01-701-1034,QS,WEEK 26,13,182,,2014-12-30,183,COEQ,How full have you felt?,COEQ02,70,mm,70,70,mm,233
+948,CDISCPILOT01,01-701-1034,QS,WEEK 26,13,182,,2014-12-30,183,COEQ,How strong was your desire to eat sweet foods?,COEQ03,25,mm,25,25,mm,234
+949,CDISCPILOT01,01-701-1034,QS,WEEK 26,13,182,,2014-12-30,183,COEQ,How strong was your desire to eat savoury foods?,COEQ04,18,mm,18,18,mm,235
+950,CDISCPILOT01,01-701-1034,QS,WEEK 26,13,182,,2014-12-30,183,COEQ,How happy have you felt?,COEQ05,98,mm,98,98,mm,236
+951,CDISCPILOT01,01-701-1034,QS,WEEK 26,13,182,,2014-12-30,183,COEQ,How anxious have you felt?,COEQ06,18,mm,18,18,mm,237
+952,CDISCPILOT01,01-701-1034,QS,WEEK 26,13,182,,2014-12-30,183,COEQ,How alert have you felt?,COEQ07,72,mm,72,72,mm,238
+953,CDISCPILOT01,01-701-1034,QS,WEEK 26,13,182,,2014-12-30,183,COEQ,How contented have you felt?,COEQ08,61,mm,61,61,mm,239
+954,CDISCPILOT01,01-701-1034,QS,WEEK 26,13,182,,2014-12-30,183,COEQ,During the last 7 days how often have you had food cravings?,COEQ09,35,mm,35,35,mm,240
+955,CDISCPILOT01,01-701-1034,QS,WEEK 26,13,182,,2014-12-30,183,COEQ,How strong have any food cravings been?,COEQ10,56,mm,56,56,mm,241
+956,CDISCPILOT01,01-701-1034,QS,WEEK 26,13,182,,2014-12-30,183,COEQ,How difficult has it been to resist any food cravings?,COEQ11,76,mm,76,76,mm,242
+957,CDISCPILOT01,01-701-1034,QS,WEEK 26,13,182,,2014-12-30,183,COEQ,How often have you eaten in response to food cravings?,COEQ12,67,mm,67,67,mm,243
+958,CDISCPILOT01,01-701-1034,QS,WEEK 26,13,182,,2014-12-30,183,COEQ,Chocolate or chocolate flavoured foods,COEQ13,96,mm,96,96,mm,244
+959,CDISCPILOT01,01-701-1034,QS,WEEK 26,13,182,,2014-12-30,183,COEQ,"Other sweet foods (cakes, pastries, biscuits, etc)",COEQ14,52,mm,52,52,mm,245
+960,CDISCPILOT01,01-701-1034,QS,WEEK 26,13,182,,2014-12-30,183,COEQ,Fruit or fruit juice,COEQ15,86,mm,86,86,mm,246
+961,CDISCPILOT01,01-701-1034,QS,WEEK 26,13,182,,2014-12-30,183,COEQ,"Dairy foods (cheese, yoghurts, milk, etc)",COEQ16,84,mm,84,84,mm,247
+962,CDISCPILOT01,01-701-1034,QS,WEEK 26,13,182,,2014-12-30,183,COEQ,"Starchy foods (bread, rice, pasta, etc)",COEQ17,78,mm,78,78,mm,248
+963,CDISCPILOT01,01-701-1034,QS,WEEK 26,13,182,,2014-12-30,183,COEQ,"Savoury foods (french fries, crisps, burgers, pizza, etc)",COEQ18,55,mm,55,55,mm,249
+964,CDISCPILOT01,01-701-1034,QS,WEEK 26,13,182,,2014-12-30,183,COEQ,"Generally, how difficult has it been to control your eating?",COEQ19,52,mm,52,52,mm,250
+965,CDISCPILOT01,01-701-1034,QS,WEEK 26,13,182,,2014-12-30,183,COEQ,Which one food makes it most difficult for you to control eating?,COEQ20,Ice Cream,,Ice Cream,,,251
+966,CDISCPILOT01,01-701-1034,QS,WEEK 26,13,182,,2014-12-30,183,COEQ,How difficult has it been to resist eating this food during the last 7 days?,COEQ21,14,mm,14,14,mm,252

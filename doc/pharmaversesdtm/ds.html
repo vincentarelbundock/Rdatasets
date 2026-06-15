@@ -1,0 +1,91 @@
+<!DOCTYPE html><html><head><title>R: Disposition</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>ds</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Disposition</h2>
+
+<h3>Description</h3>
+
+<p>An updated SDTM DS dataset that uses the CDISC pilot project
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>ds
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 13 columns:
+</p>
+
+<dl>
+<dt>STUDYID</dt><dd><p>Study Identifier</p>
+</dd>
+<dt>DOMAIN</dt><dd><p>Domain Abbreviation</p>
+</dd>
+<dt>USUBJID</dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt>DSSEQ</dt><dd><p>Sequence Number</p>
+</dd>
+<dt>DSSPID</dt><dd><p>Sponsor-Defined Identifier</p>
+</dd>
+<dt>DSTERM</dt><dd><p>Reported Term for the Disposition Event</p>
+</dd>
+<dt>DSDECOD</dt><dd><p>Standardized Disposition Term</p>
+</dd>
+<dt>DSCAT</dt><dd><p>Category for Disposition Event</p>
+</dd>
+<dt>VISITNUM</dt><dd><p>Visit Number</p>
+</dd>
+<dt>VISIT</dt><dd><p>Visit Name</p>
+</dd>
+<dt>DSDTC</dt><dd><p>Date/Time of Collection</p>
+</dd>
+<dt>DSSTDTC</dt><dd><p>Start Date/Time of Disposition Event</p>
+</dd>
+<dt>DSSTDY</dt><dd><p>Study Day of Start of Disposition Event</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Disposition
+</p>
+<p>An updated SDTM DS dataset that uses the CDISC pilot project
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Gopi Vegesna
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://github.com/pharmaverse/pharmaversesdtm/blob/main/data/ds.rda">Access the source of the Disposition dataset.</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html><html><head><title>R: Immunogenicity Specimen Assessments</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>adis_vaccine</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Immunogenicity Specimen Assessments</h2>
+
+<h3>Description</h3>
+
+<p>Immunogenicity Specimen Assessments
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>adis_vaccine
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 103 columns:
+</p>
+
+<dl>
+<dt> STUDYID </dt><dd><p>Study Identifier</p>
+</dd>
+<dt> USUBJID </dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt> SUBJID </dt><dd><p>Subject Identifier for the Study</p>
+</dd>
+<dt> SITEID </dt><dd><p>Study Site Identifier</p>
+</dd>
+<dt> COUNTRY </dt><dd><p>Country</p>
+</dd>
+<dt> DOMAIN </dt><dd><p>Domain Abbreviation</p>
+</dd>
+<dt> RFSTDTC </dt><dd><p>Subject Reference Start Date/Time</p>
+</dd>
+<dt> RFENDTC </dt><dd><p>Subject Reference End Date/Time</p>
+</dd>
+<dt> RFXSTDTC </dt><dd><p>Date/Time of First Study Treatment</p>
+</dd>
+<dt> RFXENDTC </dt><dd><p>Date/Time of Last Study Treatment</p>
+</dd>
+<dt> RFPENDTC </dt><dd><p>Date/Time of End of Participation</p>
+</dd>
+<dt> DTHDTC </dt><dd><p>Date/Time of Death</p>
+</dd>
+<dt> DTHFL </dt><dd><p>Subject Death Flag</p>
+</dd>
+<dt> REGION1 </dt><dd><p>Geographic Region 1</p>
+</dd>
+<dt> BRTHDTC </dt><dd><p>Date/Time of Birth</p>
+</dd>
+<dt> DMDTC </dt><dd><p>Date/Time of Collection</p>
+</dd>
+<dt> DMDY </dt><dd><p>Study Day of Collection</p>
+</dd>
+<dt> AGE </dt><dd><p>Age</p>
+</dd>
+<dt> AGEU </dt><dd><p>Age Units</p>
+</dd>
+<dt> AGEGR1 </dt><dd><p>Pooled Age Group 1</p>
+</dd>
+<dt> SEX </dt><dd><p>Sex</p>
+</dd>
+<dt> RACE </dt><dd><p>Race</p>
+</dd>
+<dt> RACEGR1 </dt><dd><p>Pooled Race Group 1</p>
+</dd>
+<dt> ETHNIC </dt><dd><p>Ethnicity</p>
+</dd>
+<dt> SAFFL </dt><dd><p>Safety Population Flag</p>
+</dd>
+<dt> PPROTFL </dt><dd><p>Per-Protocol Population Flag</p>
+</dd>
+<dt> ARM </dt><dd><p>Description of Planned Arm</p>
+</dd>
+<dt> ARMCD </dt><dd><p>Planned Arm Code</p>
+</dd>
+<dt> ACTARM </dt><dd><p>Description of Actual Arm</p>
+</dd>
+<dt> ACTARMCD </dt><dd><p>Actual Arm Code</p>
+</dd>
+<dt> TRTP </dt><dd><p>Planned Treatment</p>
+</dd>
+<dt> TRTA </dt><dd><p>Actual Treatment</p>
+</dd>
+<dt> TRT01P </dt><dd><p>Planned Treatment for Period 01</p>
+</dd>
+<dt> TRT01A </dt><dd><p>Actual Treatment for Period 01</p>
+</dd>
+<dt> TRT02P </dt><dd><p>Planned Treatment for Period 02</p>
+</dd>
+<dt> TRT02A </dt><dd><p>Actual Treatment for Period 02</p>
+</dd>
+<dt> TRTSDT </dt><dd><p>Date of First Exposure to Treatment</p>
+</dd>
+<dt> TRTSDTM </dt><dd><p>Datetime of First Exposure to Treatment</p>
+</dd>
+<dt> TRTEDT </dt><dd><p>Date of Last Exposure to Treatment</p>
+</dd>
+<dt> TRTEDTM </dt><dd><p>Datetime of Last Exposure to Treatment</p>
+</dd>
+<dt> AP01SDT </dt><dd><p>Period 01 Start Date</p>
+</dd>
+<dt> AP01EDT </dt><dd><p>Period 01 End Date</p>
+</dd>
+<dt> AP02SDT </dt><dd><p>Period 02 Start Date</p>
+</dd>
+<dt> AP02EDT </dt><dd><p>Period 02 End Date</p>
+</dd>
+<dt> APERSDT </dt><dd><p>Period Start Date</p>
+</dd>
+<dt> APEREDT </dt><dd><p>Period End Date</p>
+</dd>
+<dt> RFICDTC </dt><dd><p>Date/Time of Informed Consent</p>
+</dd>
+<dt> ADT </dt><dd><p>Analysis Date</p>
+</dd>
+<dt> ADY </dt><dd><p>Analysis Relative Day</p>
+</dd>
+<dt> AVISIT </dt><dd><p>Analysis Visit</p>
+</dd>
+<dt> AVISITN </dt><dd><p>Analysis Visit (N)</p>
+</dd>
+<dt> ATPT </dt><dd><p>Analysis Timepoint</p>
+</dd>
+<dt> ATPTN </dt><dd><p>Analysis Timepoint (N)</p>
+</dd>
+<dt> ATPTREF </dt><dd><p>Analysis Timepoint Reference</p>
+</dd>
+<dt> APERIOD </dt><dd><p>Period</p>
+</dd>
+<dt> PARAM </dt><dd><p>Parameter</p>
+</dd>
+<dt> PARAMCD </dt><dd><p>Parameter Code</p>
+</dd>
+<dt> PARAMN </dt><dd><p>Parameter (N)</p>
+</dd>
+<dt> PARCAT1 </dt><dd><p>Parameter Category 1</p>
+</dd>
+<dt> AVAL </dt><dd><p>Analysis Value</p>
+</dd>
+<dt> AVALU </dt><dd><p>Analysis Value Unit</p>
+</dd>
+<dt> BASE </dt><dd><p>Baseline Value</p>
+</dd>
+<dt> BASECAT1 </dt><dd><p>Baseline Category 1</p>
+</dd>
+<dt> BASETYPE </dt><dd><p>Baseline Type</p>
+</dd>
+<dt> CHG </dt><dd><p>Change from Baseline</p>
+</dd>
+<dt> R2BASE </dt><dd><p>Ratio to Baseline</p>
+</dd>
+<dt> CRIT1 </dt><dd><p>Analysis Criterion 1</p>
+</dd>
+<dt> CRIT1FL </dt><dd><p>Criterion 1 Evaluation Result Flag</p>
+</dd>
+<dt> CRIT1FN </dt><dd><p>Criterion 1 Evaluation Result Flag (N)</p>
+</dd>
+<dt> DTYPE </dt><dd><p>Derivation Type</p>
+</dd>
+<dt> ABLFL </dt><dd><p>Baseline Record Flag</p>
+</dd>
+<dt> ISSEQ </dt><dd><p>Sequence Number</p>
+</dd>
+<dt> ISTESTCD </dt><dd><p>Immunogenicity Test/Exam Short Name</p>
+</dd>
+<dt> ISTEST </dt><dd><p>Immunogenicity Test or Examination Name</p>
+</dd>
+<dt> ISCAT </dt><dd><p>Category for Immunogenicity Test</p>
+</dd>
+<dt> ISORRES </dt><dd><p>Results or Findings in Original Units</p>
+</dd>
+<dt> ISORRESU </dt><dd><p>Original Units</p>
+</dd>
+<dt> ISSTRESC </dt><dd><p>Character Result/Finding in Std Format</p>
+</dd>
+<dt> ISSTRESN </dt><dd><p>Numeric Results/Findings in Std. Units</p>
+</dd>
+<dt> ISSTRESU </dt><dd><p>Standard Units</p>
+</dd>
+<dt> ISSTAT </dt><dd><p>Completion Status</p>
+</dd>
+<dt> ISREASND </dt><dd><p>Reason Not Done</p>
+</dd>
+<dt> ISNAM </dt><dd><p>Vendor Name</p>
+</dd>
+<dt> ISSPEC </dt><dd><p>Specimen Type</p>
+</dd>
+<dt> ISMETHOD </dt><dd><p>Method of Test or Examination</p>
+</dd>
+<dt> ISBLFL </dt><dd><p>Baseline Flag</p>
+</dd>
+<dt> ISLLOQ </dt><dd><p>Lower Limit of Quantitation</p>
+</dd>
+<dt> VISITNUM </dt><dd><p>Visit Number</p>
+</dd>
+<dt> EPOCH </dt><dd><p>Epoch</p>
+</dd>
+<dt> ISDTC </dt><dd><p>Date/Time of Collection</p>
+</dd>
+<dt> ISDY </dt><dd><p>Study Day of Visit/Collection/Exam</p>
+</dd>
+<dt> ISULOQ </dt><dd><p>Upper Limit of Quantitation</p>
+</dd>
+<dt> LOD </dt><dd><p>Limit of Detection</p>
+</dd>
+<dt> DERIVED </dt><dd><p>Derivation Method</p>
+</dd>
+<dt> CUTOFF02 </dt><dd><p>First Cutoff Value</p>
+</dd>
+<dt> CUTOFF03 </dt><dd><p>Second Cutoff Value</p>
+</dd>
+<dt> SERCAT1 </dt><dd><p>Pre-vaccination seropositivity status</p>
+</dd>
+<dt> SERCAT1N </dt><dd><p>Pre-vaccination sero status (n)</p>
+</dd>
+<dt> PPSRFL </dt><dd><p>Per-Protocol Record-Level Flag</p>
+</dd>
+<dt> INVID </dt><dd><p>Investigator Identifier</p>
+</dd>
+<dt> INVNAM </dt><dd><p>Investigator Name</p>
+</dd>
+<dt> VAX01DT </dt><dd><p>Vaccination Date 01</p>
+</dd>
+<dt> VAX02DT </dt><dd><p>Vaccination Date 02</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Contains a set of 16 unique Parameter Codes and Parameters: </p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+<strong>PARAMCD</strong> </td><td style="text-align: left;"> <strong>PARAM</strong> </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+I0019NLF </td><td style="text-align: left;"> LOG10 4FOLD (I0019NT Antibody)</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+I0019NT  </td><td style="text-align: left;"> I0019NT Antibody              </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+I0019NTF </td><td style="text-align: left;"> 4FOLD (I0019NT Antibody)      </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+I0019NTL </td><td style="text-align: left;"> LOG10 (I0019NT Antibody)      </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+J0033VLF </td><td style="text-align: left;"> LOG10 4FOLD (J0033VN Antibody)</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+J0033VN  </td><td style="text-align: left;"> J0033VN Antibody              </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+J0033VNF </td><td style="text-align: left;"> 4FOLD (J0033VN Antibody)      </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+J0033VNL </td><td style="text-align: left;"> LOG10 (J0033VN Antibody)      </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+M0019LLF </td><td style="text-align: left;"> LOG10 4FOLD (M0019LN Antibody)</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+M0019LN  </td><td style="text-align: left;"> M0019LN Antibody              </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+M0019LNF </td><td style="text-align: left;"> 4FOLD (M0019LN Antibody)      </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+M0019LNL </td><td style="text-align: left;"> LOG10 (M0019LN Antibody)      </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+R0003MA  </td><td style="text-align: left;"> R0003MA Antibody              </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+R0003MAF </td><td style="text-align: left;"> 4FOLD (R0003MA Antibody)      </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+R0003MAL </td><td style="text-align: left;"> LOG10 (R0003MA Antibody)      </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+R0003MLF </td><td style="text-align: left;"> LOG10 4FOLD (R0003MA Antibody)
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>Generated from admiralvaccine package (template ad_adis.R).
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data("adis_vaccine")
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

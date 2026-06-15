@@ -1,0 +1,130 @@
+<!DOCTYPE html><html><head><title>R: Disease Response for Oncology</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>rs_onco</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Disease Response for Oncology</h2>
+
+<h3>Description</h3>
+
+<p>A SDTM RS dataset simulated by Gopi Vegesna
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>rs_onco
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 19 columns:
+</p>
+
+<dl>
+<dt>STUDYID</dt><dd><p>Study Identifier</p>
+</dd>
+<dt>DOMAIN</dt><dd><p>Domain Abbreviation</p>
+</dd>
+<dt>USUBJID</dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt>RSSEQ</dt><dd><p>Sequence Number</p>
+</dd>
+<dt>RSLNKGRP</dt><dd><p>Link Group</p>
+</dd>
+<dt>RSTESTCD</dt><dd><p>Response Assessment Short Name</p>
+</dd>
+<dt>RSTEST</dt><dd><p>Response Assessment Name</p>
+</dd>
+<dt>RSCAT</dt><dd><p>Category for Response Assessment</p>
+</dd>
+<dt>RSORRES</dt><dd><p>Response Assessment Original Result</p>
+</dd>
+<dt>RSSTRESC</dt><dd><p>Response Assessment Result in Std Format</p>
+</dd>
+<dt>RSSTAT</dt><dd><p>Completion Status</p>
+</dd>
+<dt>RSREASND</dt><dd><p>Reason Response Assessment Not Performed</p>
+</dd>
+<dt>RSEVAL</dt><dd><p>Evaluator</p>
+</dd>
+<dt>RSEVALID</dt><dd><p>Evaluator Identifier</p>
+</dd>
+<dt>RSACPTFL</dt><dd><p>Accepted Record Flag</p>
+</dd>
+<dt>VISITNUM</dt><dd><p>Visit Number</p>
+</dd>
+<dt>VISIT</dt><dd><p>Visit Name</p>
+</dd>
+<dt>RSDTC</dt><dd><p>Date/Time of Response Assessment</p>
+</dd>
+<dt>RSDY</dt><dd><p>Study Day of Response Assessment</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Disease Response for Oncology
+</p>
+<p>A SDTM RS dataset simulated by Gopi Vegesna
+</p>
+<p>Contains a set of 4 unique Test Short Names and Test Names: </p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+<strong>RSTESTCD</strong> </td><td style="text-align: left;"> <strong>RSTEST</strong> </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+NEWLPROG </td><td style="text-align: left;"> New Lesion Progression</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+NTRGRESP </td><td style="text-align: left;"> Non-target Response   </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+OVRLRESP </td><td style="text-align: left;"> Overall Response      </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+TRGRESP  </td><td style="text-align: left;"> Target Response
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Author(s)</h3>
+
+<p>Gopi Vegesna
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://github.com/pharmaverse/pharmaversesdtm/blob/main/data/tr_onco_recist.rda">Access the source of the Disease Response for Oncology dataset.</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html><html><head><title>R: Time to Event Analysis for Oncology</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>adtte_onco</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Time to Event Analysis for Oncology</h2>
+
+<h3>Description</h3>
+
+<p>Time to Event Analysis for Oncology
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>adtte_onco
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 20 columns:
+</p>
+
+<dl>
+<dt> STUDYID </dt><dd><p>Study Identifier</p>
+</dd>
+<dt> USUBJID </dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt> ASEQ </dt><dd><p>Analysis Sequence Number</p>
+</dd>
+<dt> AGE </dt><dd><p>Age</p>
+</dd>
+<dt> SEX </dt><dd><p>Sex</p>
+</dd>
+<dt> ARM </dt><dd><p>Description of Planned Arm</p>
+</dd>
+<dt> ARMCD </dt><dd><p>Planned Arm Code</p>
+</dd>
+<dt> ACTARM </dt><dd><p>Description of Actual Arm</p>
+</dd>
+<dt> ACTARMCD </dt><dd><p>Actual Arm Code</p>
+</dd>
+<dt> ADT </dt><dd><p>Analysis Date</p>
+</dd>
+<dt> PARAM </dt><dd><p>Parameter</p>
+</dd>
+<dt> PARAMCD </dt><dd><p>Parameter Code</p>
+</dd>
+<dt> AVAL </dt><dd><p>Analysis Value</p>
+</dd>
+<dt> STARTDT </dt><dd><p>Time-to-Event Origin Date for Subject</p>
+</dd>
+<dt> CNSR </dt><dd><p>Censor</p>
+</dd>
+<dt> EVNTDESC </dt><dd><p>Event or Censoring Description</p>
+</dd>
+<dt> CNSDTDSC </dt><dd><p>Censor Date Description</p>
+</dd>
+<dt> SRCDOM </dt><dd><p>Source Data</p>
+</dd>
+<dt> SRCVAR </dt><dd><p>Source Variable</p>
+</dd>
+<dt> SRCSEQ </dt><dd><p>Source Sequence Number</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Contains a set of 3 unique Parameter Codes and Parameters: </p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+<strong>PARAMCD</strong> </td><td style="text-align: left;"> <strong>PARAM</strong> </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+OS  </td><td style="text-align: left;"> Overall Survival         </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+PFS </td><td style="text-align: left;"> Progression Free Survival</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+RSD </td><td style="text-align: left;"> Duration of Response
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>Generated from admiralonco package (template ad_adtte.R).
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data("adtte_onco")
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html><html><head><title>R: Questionnaire for Ophthalmology</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>qs_ophtha</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Questionnaire for Ophthalmology</h2>
+
+<h3>Description</h3>
+
+<p>An example Questionnaires SDTM dataset with ophthalmology-specific questionnaire of NEI VFQ-25
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>qs_ophtha
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 20 columns:
+</p>
+
+<dl>
+<dt>STUDYID</dt><dd><p>Study Identifier</p>
+</dd>
+<dt>DOMAIN</dt><dd><p>Domain Abbreviation</p>
+</dd>
+<dt>USUBJID</dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt>QSSEQ</dt><dd><p>Sequence Number</p>
+</dd>
+<dt>QSTESTCD</dt><dd><p>Question Short Name</p>
+</dd>
+<dt>QSTEST</dt><dd><p>Question Name</p>
+</dd>
+<dt>QSCAT</dt><dd><p>Category of Question</p>
+</dd>
+<dt>QSSCAT</dt><dd><p>Subcategory for Question</p>
+</dd>
+<dt>QSORRES</dt><dd><p>Finding in Original Units</p>
+</dd>
+<dt>QSORRESU</dt><dd><p>Original Units</p>
+</dd>
+<dt>QSSTRESC</dt><dd><p>Character Result/Finding in Std Format</p>
+</dd>
+<dt>QSSTRESN</dt><dd><p>Numeric Finding in Standard Units</p>
+</dd>
+<dt>QSSTRESU</dt><dd><p>Standard Units</p>
+</dd>
+<dt>QSBLFL</dt><dd><p>Baseline Flag</p>
+</dd>
+<dt>QSDRVFL</dt><dd><p>Derived Flag</p>
+</dd>
+<dt>VISITNUM</dt><dd><p>Visit Number</p>
+</dd>
+<dt>VISIT</dt><dd><p>Visit Name</p>
+</dd>
+<dt>VISITDY</dt><dd><p>Planned Study Day of Visit</p>
+</dd>
+<dt>QSDTC</dt><dd><p>Date/Time of Finding</p>
+</dd>
+<dt>QSDY</dt><dd><p>Study Day of Finding</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Questionnaire for Ophthalmology
+</p>
+<p>An example Questionnaires SDTM dataset with ophthalmology-specific questionnaire of NEI VFQ-25
+</p>
+<p>Contains a set of 29 unique Test Short Names and Test Names: </p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+<strong>QSTESTCD</strong> </td><td style="text-align: left;"> <strong>QSTEST</strong> </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ101  </td><td style="text-align: left;"> Your Overall Health Is                    </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ102  </td><td style="text-align: left;"> Eyesight Using Both Eyes Is               </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ103  </td><td style="text-align: left;"> How Often You Worry About Eyesight        </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ104  </td><td style="text-align: left;"> How Often Pain in and Around Eyes         </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ105  </td><td style="text-align: left;"> Difficulty Reading Newspapers             </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ106  </td><td style="text-align: left;"> Difficulty Doing Work/Hobbies             </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ107  </td><td style="text-align: left;"> Difficulty Finding on Crowded Shelf       </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ108  </td><td style="text-align: left;"> Difficulty Reading Street Signs           </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ109  </td><td style="text-align: left;"> Difficulty Going Down Step at Night       </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ110  </td><td style="text-align: left;"> Difficulty Noticing Objects to Side       </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ111  </td><td style="text-align: left;"> Difficulty Seeing How People React        </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ112  </td><td style="text-align: left;"> Difficulty Picking Out Own Clothes        </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ113  </td><td style="text-align: left;"> Difficulty Visiting With People           </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ114  </td><td style="text-align: left;"> Difficulty Going Out to See Movies        </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ115  </td><td style="text-align: left;"> Are You Currently Driving                 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ115C </td><td style="text-align: left;"> Difficulty Driving During Daytime         </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ116  </td><td style="text-align: left;"> Difficulty Driving at Night               </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ116A </td><td style="text-align: left;"> Driving in Difficult Conditions           </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ119  </td><td style="text-align: left;"> Eye Pain Keep You From Doing What You Like</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ120  </td><td style="text-align: left;"> I Stay Home Most of the Time              </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ121  </td><td style="text-align: left;"> I Feel Frustrated a Lot of the Time       </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ124  </td><td style="text-align: left;"> I Need a Lot of Help From Others          </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ125  </td><td style="text-align: left;"> Worry I'll Do Embarrassing Things         </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ1A03 </td><td style="text-align: left;"> Difficulty Reading Small Print            </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ1A04 </td><td style="text-align: left;"> Difficulty Figure Out Bill Accuracy       </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ1A05 </td><td style="text-align: left;"> Difficulty Shaving or Styling Hair        </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ1A06 </td><td style="text-align: left;"> Difficulty Recognizing People             </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ1A07 </td><td style="text-align: left;"> Difficulty Taking Part in Sports          </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VFQ1A08 </td><td style="text-align: left;"> Difficulty Seeing Programs on TV
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>Constructed using qs from the pharmaversesdtm package
+</p>
+
+</main>
+
+</div>
+</body></html>

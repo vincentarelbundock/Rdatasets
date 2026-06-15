@@ -1,0 +1,496 @@
+<!DOCTYPE html><html><head><title>R: Laboratory Analysis</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>adlb</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Laboratory Analysis</h2>
+
+<h3>Description</h3>
+
+<p>Laboratory Analysis
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>adlb
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 115 columns:
+</p>
+
+<dl>
+<dt> STUDYID </dt><dd><p>Study Identifier</p>
+</dd>
+<dt> USUBJID </dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt> SUBJID </dt><dd><p>Subject Identifier for the Study</p>
+</dd>
+<dt> SITEID </dt><dd><p>Study Site Identifier</p>
+</dd>
+<dt> COUNTRY </dt><dd><p>Country</p>
+</dd>
+<dt> DOMAIN </dt><dd><p>Domain Abbreviation</p>
+</dd>
+<dt> RFSTDTC </dt><dd><p>Subject Reference Start Date/Time</p>
+</dd>
+<dt> RFENDTC </dt><dd><p>Subject Reference End Date/Time</p>
+</dd>
+<dt> RFXSTDTC </dt><dd><p>Date/Time of First Study Treatment</p>
+</dd>
+<dt> RFXENDTC </dt><dd><p>Date/Time of Last Study Treatment</p>
+</dd>
+<dt> RFPENDTC </dt><dd><p>Date/Time of End of Participation</p>
+</dd>
+<dt> SCRFDT </dt><dd><p>Screen Failure Date</p>
+</dd>
+<dt> FRVDT </dt><dd><p>Final Retrieval Visit Date</p>
+</dd>
+<dt> DTHDTC </dt><dd><p>Date/Time of Death</p>
+</dd>
+<dt> DTHADY </dt><dd><p>Relative Day of Death</p>
+</dd>
+<dt> DTHFL </dt><dd><p>Subject Death Flag</p>
+</dd>
+<dt> LDDTHELD </dt><dd><p>Elapsed Days from Last Dose to Death</p>
+</dd>
+<dt> LDDTHGR1 </dt><dd><p>Last Dose to Death - Days Elapsed Grp 1</p>
+</dd>
+<dt> DTH30FL </dt><dd><p>Death Within 30 Days of Last Trt Flag</p>
+</dd>
+<dt> DTHA30FL </dt><dd><p>Death After 30 Days from Last Trt Flag</p>
+</dd>
+<dt> DTHDOM </dt><dd><p>Domain for Date of Death Collection</p>
+</dd>
+<dt> DTHB30FL </dt><dd><p>Death Within 30 Days of First Trt Flag</p>
+</dd>
+<dt> ASEQ </dt><dd><p>Analysis Sequence Number</p>
+</dd>
+<dt> REGION1 </dt><dd><p>Geographic Region 1</p>
+</dd>
+<dt> DMDTC </dt><dd><p>Date/Time of Collection</p>
+</dd>
+<dt> DMDY </dt><dd><p>Study Day of Collection</p>
+</dd>
+<dt> AGE </dt><dd><p>Age</p>
+</dd>
+<dt> AGEU </dt><dd><p>Age Units</p>
+</dd>
+<dt> AGEGR1 </dt><dd><p>Pooled Age Group 1</p>
+</dd>
+<dt> SEX </dt><dd><p>Sex</p>
+</dd>
+<dt> RACE </dt><dd><p>Race</p>
+</dd>
+<dt> RACEGR1 </dt><dd><p>Pooled Race Group 1</p>
+</dd>
+<dt> ETHNIC </dt><dd><p>Ethnicity</p>
+</dd>
+<dt> SAFFL </dt><dd><p>Safety Population Flag</p>
+</dd>
+<dt> ARM </dt><dd><p>Description of Planned Arm</p>
+</dd>
+<dt> ARMCD </dt><dd><p>Planned Arm Code</p>
+</dd>
+<dt> ACTARM </dt><dd><p>Description of Actual Arm</p>
+</dd>
+<dt> ACTARMCD </dt><dd><p>Actual Arm Code</p>
+</dd>
+<dt> TRTP </dt><dd><p>Planned Treatment</p>
+</dd>
+<dt> TRTA </dt><dd><p>Actual Treatment</p>
+</dd>
+<dt> TRT01P </dt><dd><p>Planned Treatment for Period 01</p>
+</dd>
+<dt> TRT01A </dt><dd><p>Actual Treatment for Period 01</p>
+</dd>
+<dt> TRTSDT </dt><dd><p>Date of First Exposure to Treatment</p>
+</dd>
+<dt> TRTSDTM </dt><dd><p>Datetime of First Exposure to Treatment</p>
+</dd>
+<dt> TRTSTMF </dt><dd><p>Time of First Exposure Imput. Flag</p>
+</dd>
+<dt> TRTEDT </dt><dd><p>Date of Last Exposure to Treatment</p>
+</dd>
+<dt> TRTEDTM </dt><dd><p>Datetime of Last Exposure to Treatment</p>
+</dd>
+<dt> TRTETMF </dt><dd><p>Time of Last Exposure Imput. Flag</p>
+</dd>
+<dt> EOSSTT </dt><dd><p>End of Study Status</p>
+</dd>
+<dt> EOSDT </dt><dd><p>End of Study Date</p>
+</dd>
+<dt> RFICDTC </dt><dd><p>Date/Time of Informed Consent</p>
+</dd>
+<dt> RANDDT </dt><dd><p>Date of Randomization</p>
+</dd>
+<dt> LSTALVDT </dt><dd><p>Date Last Known Alive</p>
+</dd>
+<dt> TRTDURD </dt><dd><p>Total Treatment Duration (Days)</p>
+</dd>
+<dt> DTHDT </dt><dd><p>Date of Death</p>
+</dd>
+<dt> DTHDTF </dt><dd><p>Date of Death Imputation Flag</p>
+</dd>
+<dt> DTHCAUS </dt><dd><p>Cause of Death</p>
+</dd>
+<dt> DTHCGR1 </dt><dd><p>Cause of Death Reason 1</p>
+</dd>
+<dt> ADT </dt><dd><p>Analysis Date</p>
+</dd>
+<dt> ADY </dt><dd><p>Analysis Relative Day</p>
+</dd>
+<dt> AVISIT </dt><dd><p>Analysis Visit</p>
+</dd>
+<dt> AVISITN </dt><dd><p>Analysis Visit (N)</p>
+</dd>
+<dt> PARAM </dt><dd><p>Parameter</p>
+</dd>
+<dt> PARAMCD </dt><dd><p>Parameter Code</p>
+</dd>
+<dt> PARAMN </dt><dd><p>Parameter (N)</p>
+</dd>
+<dt> PARCAT1 </dt><dd><p>Parameter Category 1</p>
+</dd>
+<dt> AVAL </dt><dd><p>Analysis Value</p>
+</dd>
+<dt> AVALC </dt><dd><p>Analysis Value (C)</p>
+</dd>
+<dt> BASE </dt><dd><p>Baseline Value</p>
+</dd>
+<dt> BASEC </dt><dd><p>Baseline Value (C)</p>
+</dd>
+<dt> BASETYPE </dt><dd><p>Baseline Type</p>
+</dd>
+<dt> CHG </dt><dd><p>Change from Baseline</p>
+</dd>
+<dt> PCHG </dt><dd><p>Percent Change from Baseline</p>
+</dd>
+<dt> R2BASE </dt><dd><p>Ratio to Baseline</p>
+</dd>
+<dt> R2ANRLO </dt><dd><p>Ratio of Analysis Val compared to ANRLO</p>
+</dd>
+<dt> R2ANRHI </dt><dd><p>Ratio of Analysis Val compared to ANRHI</p>
+</dd>
+<dt> SHIFT1 </dt><dd><p>Shift from Baseline to Analysis Value</p>
+</dd>
+<dt> SHIFT2 </dt><dd><p>Shift from Baseline to Overall Grade</p>
+</dd>
+<dt> DTYPE </dt><dd><p>Derivation Type</p>
+</dd>
+<dt> ATOXGR </dt><dd><p>Analysis Toxicity Grade</p>
+</dd>
+<dt> BTOXGR </dt><dd><p>Baseline Toxicity Grade</p>
+</dd>
+<dt> ANRIND </dt><dd><p>Analysis Reference Range Indicator</p>
+</dd>
+<dt> BNRIND </dt><dd><p>Baseline Reference Range Indicator</p>
+</dd>
+<dt> ANRLO </dt><dd><p>Analysis Normal Range Lower Limit</p>
+</dd>
+<dt> ANRHI </dt><dd><p>Analysis Normal Range Upper Limit</p>
+</dd>
+<dt> ATOXGRL </dt><dd><p>Analysis Toxicity Grade Low</p>
+</dd>
+<dt> ATOXGRH </dt><dd><p>Analysis Toxicity Grade High</p>
+</dd>
+<dt> BTOXGRL </dt><dd><p>Baseline Toxicity Grade Low</p>
+</dd>
+<dt> BTOXGRH </dt><dd><p>Baseline Toxicity Grade High</p>
+</dd>
+<dt> ATOXDSCL </dt><dd><p>Analysis Toxicity Description Low</p>
+</dd>
+<dt> ATOXDSCH </dt><dd><p>Analysis Toxicity Description High</p>
+</dd>
+<dt> ABLFL </dt><dd><p>Baseline Record Flag</p>
+</dd>
+<dt> ANL01FL </dt><dd><p>Analysis Flag 01</p>
+</dd>
+<dt> ONTRTFL </dt><dd><p>On Treatment Record Flag</p>
+</dd>
+<dt> LVOTFL </dt><dd><p>Last Value On Treatment Record Flag</p>
+</dd>
+<dt> LBSEQ </dt><dd><p>Sequence Number</p>
+</dd>
+<dt> LBTESTCD </dt><dd><p>Lab Test or Examination Short Name</p>
+</dd>
+<dt> LBTEST </dt><dd><p>Lab Test or Examination Name</p>
+</dd>
+<dt> LBCAT </dt><dd><p>Category for Lab Test</p>
+</dd>
+<dt> LBORRES </dt><dd><p>Result or Finding in Original Units</p>
+</dd>
+<dt> LBORRESU </dt><dd><p>Original Units</p>
+</dd>
+<dt> LBORNRLO </dt><dd><p>Reference Range Lower Limit in Orig Unit</p>
+</dd>
+<dt> LBORNRHI </dt><dd><p>Reference Range Upper Limit in Orig Unit</p>
+</dd>
+<dt> LBSTRESC </dt><dd><p>Character Result/Finding in Std Format</p>
+</dd>
+<dt> LBSTRESN </dt><dd><p>Numeric Result/Finding in Standard Units</p>
+</dd>
+<dt> LBSTRESU </dt><dd><p>Standard Units</p>
+</dd>
+<dt> LBSTNRLO </dt><dd><p>Reference Range Lower Limit-Std Units</p>
+</dd>
+<dt> LBSTNRHI </dt><dd><p>Reference Range Upper Limit-Std Units</p>
+</dd>
+<dt> LBNRIND </dt><dd><p>Reference Range Indicator</p>
+</dd>
+<dt> LBBLFL </dt><dd><p>Baseline Flag</p>
+</dd>
+<dt> VISITNUM </dt><dd><p>Visit Number</p>
+</dd>
+<dt> VISIT </dt><dd><p>Visit Name</p>
+</dd>
+<dt> VISITDY </dt><dd><p>Planned Study Day of Visit</p>
+</dd>
+<dt> LBDTC </dt><dd><p>Date/Time of Specimen Collection</p>
+</dd>
+<dt> LBDY </dt><dd><p>Study Day of Specimen Collection</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Contains a set of 47 unique Parameter Codes and Parameters: </p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+<strong>PARAMCD</strong> </td><td style="text-align: left;"> <strong>PARAM</strong> </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+ALB     </td><td style="text-align: left;"> Albumin (g/L)                                   </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+ALKPH   </td><td style="text-align: left;"> Alkaline Phosphatase (U/L)                      </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+ALT     </td><td style="text-align: left;"> Alanine Aminotransferase (U/L)                  </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+ANISO   </td><td style="text-align: left;"> Anisocytes                                      </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+AST     </td><td style="text-align: left;"> Aspartate Aminotransferase (U/L)                </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+BASO    </td><td style="text-align: left;"> Basophils Abs (10^9/L)                          </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+BASOLE  </td><td style="text-align: left;"> Basophils/Leukocytes (FRACTION)                 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+BILI    </td><td style="text-align: left;"> Bilirubin (umol/L)                              </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+BUN     </td><td style="text-align: left;"> Blood Urea Nitrogen (mmol/L)                    </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+CA      </td><td style="text-align: left;"> Calcium (mmol/L)                                </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+CHOLES  </td><td style="text-align: left;"> Cholesterol (mmol/L)                            </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+CK      </td><td style="text-align: left;"> Creatinine Kinase (U/L)                         </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+CL      </td><td style="text-align: left;"> Chloride (mmol/L)                               </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+COLOR   </td><td style="text-align: left;"> Color                                           </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+CREAT   </td><td style="text-align: left;"> Creatinine (umol/L)                             </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+EOS     </td><td style="text-align: left;"> Eosinophils (10^9/L)                            </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+EOSLE   </td><td style="text-align: left;"> Eosinophils/Leukocytes (FRACTION)               </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+GGT     </td><td style="text-align: left;"> Gamma Glutamyl Transferase (U/L)                </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+GLUC    </td><td style="text-align: left;"> Glucose (mmol/L)                                </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+HBA1C   </td><td style="text-align: left;"> Hemoglobin A1C (1)                              </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+HCT     </td><td style="text-align: left;"> Hematocrit (1)                                  </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+HGB     </td><td style="text-align: left;"> Hemoglobin (mmol/L)                             </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+KETON   </td><td style="text-align: left;"> Ketones                                         </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+LYMPH   </td><td style="text-align: left;"> Lymphocytes Abs (10^9/L)                        </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+LYMPHLE </td><td style="text-align: left;"> Lymphocytes/Leukocytes (FRACTION)               </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MACROC  </td><td style="text-align: left;"> Macrocytes                                      </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MCH     </td><td style="text-align: left;"> Ery. Mean Corpuscular Hemoglobin (fmol(Fe))     </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MCHC    </td><td style="text-align: left;"> Ery. Mean Corpuscular HGB Concentration (mmol/L)</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MCV     </td><td style="text-align: left;"> Ery. Mean Corpuscular Volume (f/L)              </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MICROC  </td><td style="text-align: left;"> Microcytes                                      </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MONO    </td><td style="text-align: left;"> Monocytes (10^9/L)                              </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MONOLE  </td><td style="text-align: left;"> Monocytes/Leukocytes (FRACTION)                 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+PH      </td><td style="text-align: left;"> pH                                              </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+PHOS    </td><td style="text-align: left;"> Phosphate (mmol/L)                              </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+PLAT    </td><td style="text-align: left;"> Platelet (10^9/L)                               </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+POIKIL  </td><td style="text-align: left;"> Poikilocytes                                    </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+POLYCH  </td><td style="text-align: left;"> Polychromasia                                   </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+POTAS   </td><td style="text-align: left;"> Potassium (mmol/L)                              </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+PROT    </td><td style="text-align: left;"> Protein (g/L)                                   </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+RBC     </td><td style="text-align: left;"> Erythrocytes (TI/L)                             </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+SODIUM  </td><td style="text-align: left;"> Sodium (mmol/L)                                 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+SPGRAV  </td><td style="text-align: left;"> Specific Gravity                                </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+TSH     </td><td style="text-align: left;"> Thyrotropin (mU/L)                              </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+URATE   </td><td style="text-align: left;"> Urate (umol/L)                                  </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+UROBIL  </td><td style="text-align: left;"> Urobilinogen                                    </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VITB12  </td><td style="text-align: left;"> Vitamin B12 (pmol/L)                            </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+WBC     </td><td style="text-align: left;"> Leukocytes (10^9/L)
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>Generated from admiral package (template ad_adlb.R).
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data("adlb")
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

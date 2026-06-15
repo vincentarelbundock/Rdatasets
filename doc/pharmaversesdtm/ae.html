@@ -1,0 +1,135 @@
+<!DOCTYPE html><html><head><title>R: Adverse Events</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>ae</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Adverse Events</h2>
+
+<h3>Description</h3>
+
+<p>An updated SDTM AE dataset that uses the CDISC pilot project
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>ae
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 35 columns:
+</p>
+
+<dl>
+<dt>STUDYID</dt><dd><p>Study Identifier</p>
+</dd>
+<dt>DOMAIN</dt><dd><p>Domain Abbreviation</p>
+</dd>
+<dt>USUBJID</dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt>AESEQ</dt><dd><p>Sequence Number</p>
+</dd>
+<dt>AESPID</dt><dd><p>Sponsor-Defined Identifier</p>
+</dd>
+<dt>AETERM</dt><dd><p>Reported Term for the Adverse Event</p>
+</dd>
+<dt>AELLT</dt><dd><p>Lowest Level Term</p>
+</dd>
+<dt>AELLTCD</dt><dd><p>Lowest Level Term Code</p>
+</dd>
+<dt>AEDECOD</dt><dd><p>Dictionary-Derived Term</p>
+</dd>
+<dt>AEPTCD</dt><dd><p>Preferred Term Code</p>
+</dd>
+<dt>AEHLT</dt><dd><p>High Level Term</p>
+</dd>
+<dt>AEHLTCD</dt><dd><p>High Level Term Code</p>
+</dd>
+<dt>AEHLGT</dt><dd><p>High Level Group Term</p>
+</dd>
+<dt>AEHLGTCD</dt><dd><p>High Level Group Term Code</p>
+</dd>
+<dt>AEBODSYS</dt><dd><p>Body System or Organ Class</p>
+</dd>
+<dt>AEBDSYCD</dt><dd><p>Body System or Organ Class Code</p>
+</dd>
+<dt>AESOC</dt><dd><p>Primary System Organ Class</p>
+</dd>
+<dt>AESOCCD</dt><dd><p>Primary System Organ Class Code</p>
+</dd>
+<dt>AESEV</dt><dd><p>Severity/Intensity</p>
+</dd>
+<dt>AESER</dt><dd><p>Serious Event</p>
+</dd>
+<dt>AEACN</dt><dd><p>Action Taken with Study Treatment</p>
+</dd>
+<dt>AEREL</dt><dd><p>Causality</p>
+</dd>
+<dt>AEOUT</dt><dd><p>Outcome of Adverse Event</p>
+</dd>
+<dt>AESCAN</dt><dd><p>Involves Cancer</p>
+</dd>
+<dt>AESCONG</dt><dd><p>Congenital Anomaly or Birth Defect</p>
+</dd>
+<dt>AESDISAB</dt><dd><p>Persist or Signif Disability/Incapacity</p>
+</dd>
+<dt>AESDTH</dt><dd><p>Results in Death</p>
+</dd>
+<dt>AESHOSP</dt><dd><p>Requires or Prolongs Hospitalization</p>
+</dd>
+<dt>AESLIFE</dt><dd><p>Is Life Threatening</p>
+</dd>
+<dt>AESOD</dt><dd><p>Occurred with Overdose</p>
+</dd>
+<dt>AEDTC</dt><dd><p>Date/Time of Collection</p>
+</dd>
+<dt>AESTDTC</dt><dd><p>Start Date/Time of Adverse Event</p>
+</dd>
+<dt>AEENDTC</dt><dd><p>End Date/Time of Adverse Event</p>
+</dd>
+<dt>AESTDY</dt><dd><p>Study Day of Start of Adverse Event</p>
+</dd>
+<dt>AEENDY</dt><dd><p>Study Day of End of Adverse Event</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Adverse Events
+</p>
+<p>An updated SDTM AE dataset that uses the CDISC pilot project
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Gopi Vegesna
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://github.com/pharmaverse/pharmaversesdtm/blob/main/data/ae.rda">Access the source of the Adverse Events dataset.</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html><html><head><title>R: Medical History</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>mh</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Medical History</h2>
+
+<h3>Description</h3>
+
+<p>An updated SDTM MH dataset that uses data from the CDISC pilot project
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>mh
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 28 columns:
+</p>
+
+<dl>
+<dt>STUDYID</dt><dd><p>Study Identifier</p>
+</dd>
+<dt>DOMAIN</dt><dd><p>Domain Abbreviation</p>
+</dd>
+<dt>USUBJID</dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt>MHSEQ</dt><dd><p>Sequence Number</p>
+</dd>
+<dt>MHSPID</dt><dd><p>Sponsor-Defined Identifier</p>
+</dd>
+<dt>MHTERM</dt><dd><p>Reported Term for the Medical History</p>
+</dd>
+<dt>MHLLT</dt><dd><p>Lowest Level Term</p>
+</dd>
+<dt>MHDECOD</dt><dd><p>Dictionary-Derived Term</p>
+</dd>
+<dt>MHHLT</dt><dd><p>High Level Term</p>
+</dd>
+<dt>MHHLGT</dt><dd><p>High Level Group Term</p>
+</dd>
+<dt>MHCAT</dt><dd><p>Category for Medical History</p>
+</dd>
+<dt>MHBODSYS</dt><dd><p>Body System or Organ Class</p>
+</dd>
+<dt>MHSEV</dt><dd><p>Severity/Intensity</p>
+</dd>
+<dt>VISITNUM</dt><dd><p>Visit Number</p>
+</dd>
+<dt>VISIT</dt><dd><p>Visit Name</p>
+</dd>
+<dt>VISITDY</dt><dd><p>Planned Study Day of Visit</p>
+</dd>
+<dt>MHDTC</dt><dd><p>Date/Time of History Collection</p>
+</dd>
+<dt>MHSTDTC</dt><dd><p>Start Date/Time of Medical History Event</p>
+</dd>
+<dt>MHDY</dt><dd><p>Study Day of History Collection</p>
+</dd>
+<dt>MHENDTC</dt><dd><p>End Date/Time of Medical History Event</p>
+</dd>
+<dt>MHPRESP</dt><dd><p>Medical History Event Pre-Specified</p>
+</dd>
+<dt>MHOCCUR</dt><dd><p>Medical History Occurrence</p>
+</dd>
+<dt>MHSTRTPT</dt><dd><p>Start Relative to Reference Time Point</p>
+</dd>
+<dt>MHENRTPT</dt><dd><p>End Relative to Reference Time Point</p>
+</dd>
+<dt>MHSTTPT</dt><dd><p>Start Reference Time Point</p>
+</dd>
+<dt>MHENTPT</dt><dd><p>End Reference Time Point</p>
+</dd>
+<dt>MHENRF</dt><dd><p>End Relative to Reference Period</p>
+</dd>
+<dt>MHSTAT</dt><dd><p>Completion Status</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Medical History
+</p>
+<p>An updated SDTM MH dataset that uses data from the CDISC pilot project
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Annie Yang
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://github.com/cdisc-org/sdtm-adam-pilot-project/blob/master/updated-pilot-submission-package/900172/m5/datasets/cdiscpilot01/tabulations/sdtm/mh.xpt?raw=true">Access the source of the Medical History dataset.</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

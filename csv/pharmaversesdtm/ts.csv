@@ -1,0 +1,34 @@
+rownames,STUDYID,DOMAIN,TSSEQ,TSPARMCD,TSPARM,TSVAL
+1,CDISCPILOT01,TS,1,ADDON,Added on to Existing Treatments,Y
+2,CDISCPILOT01,TS,1,AGEMAX,Planned Maximum Age of Subjects,No maximum
+3,CDISCPILOT01,TS,1,AGEMIN,Planned Minimum Age of Subjects,50 years
+4,CDISCPILOT01,TS,1,AGESPAN,Age Group,ADULT (18-65)
+5,CDISCPILOT01,TS,2,AGESPAN,Age Group,ELDERLY (> 65)
+6,CDISCPILOT01,TS,1,TBLIND,Trial Blinding Schema,DOUBLE BLIND
+7,CDISCPILOT01,TS,1,COMPTRT,Comparative Treatment Name,Placebo
+8,CDISCPILOT01,TS,1,TCNTRL,Control Type,PLACEBO
+9,CDISCPILOT01,TS,1,TDIGRP,Diagnosis Group,Patients with Probable Mild to Moderate Alzheimer’s Disease
+10,CDISCPILOT01,TS,1,DOSE,Dose per Administration,54
+11,CDISCPILOT01,TS,2,DOSE,Dose per Administration,81
+12,CDISCPILOT01,TS,1,DOSFRQ,Dosing Frequency,QD; 12 to 14 hours transdermal application
+13,CDISCPILOT01,TS,1,DOSU,Dose Units,mg
+14,CDISCPILOT01,TS,1,INDIC,Trial Indication,Mild to Moderate Alzheimer’s Disease
+15,CDISCPILOT01,TS,1,TINDTP,Trial Indication Type,TREATMENT
+16,CDISCPILOT01,TS,1,LENGTH,Trial Length,26 weeks
+17,CDISCPILOT01,TS,1,OBJPRIM,Trial Primary Objective,"To determine if there is a statistically significant relationship between the change in both ADAS-Cog and CIBIC+ scores, and drug dose (0, 50 cm2 [54 mg], and 75 cm2 [81 mg])"
+18,CDISCPILOT01,TS,2,OBJPRIM,Trial Primary Objective,To document the safety profile of the xanomeline TTS.
+19,CDISCPILOT01,TS,1,OBJSEC,Trial Secondary Objective,To assess the dose-dependent improvement in behavior. Improved scores on the Revised Neuropsychiatric Inventory (NPI-X) will indicate improvement in these areas.
+20,CDISCPILOT01,TS,2,OBJSEC,Trial Secondary Objective,To assess the dose-dependent improvements in activities of daily living. Improved scores on the Disability Assessment for Dementia (DAD) will indicate improvement in these areas.
+21,CDISCPILOT01,TS,3,OBJSEC,Trial Secondary Objective,To assess the dose-dependent improvements in an extended assessment of cognition that integrates attention/concentration tasks. The ADAS-Cog (14) will be used for this assessment.
+22,CDISCPILOT01,TS,4,OBJSEC,Trial Secondary Objective,To assess the treatment response as a function of Apo E genotype.
+23,CDISCPILOT01,TS,1,TPHASE,Trial Phase Classification,Phase II Trial
+24,CDISCPILOT01,TS,1,PLANSUB,Planned Number of Subjects,300
+25,CDISCPILOT01,TS,1,RANDOM,Trial is Randomized,Y
+26,CDISCPILOT01,TS,1,ROUTE,Route of Administration,TRANSDERMAL
+27,CDISCPILOT01,TS,1,SEXPOP,Sex of Participants,BOTH
+28,CDISCPILOT01,TS,1,SPONSOR,Clinical Study Sponsor,CDISCPILOT01
+29,CDISCPILOT01,TS,1,TITLE,Trial Title,Safety and Efficacy of the Xanomeline Transdermal Therapeutic System (TTS) in Patients with Mild to Moderate Alzheimer’s Disease.
+30,CDISCPILOT01,TS,1,TRT,Investigational Therapy or Treatment,Xanomeline
+31,CDISCPILOT01,TS,1,TTYPE,Trial Type,SAFETY
+32,CDISCPILOT01,TS,2,TTYPE,Trial Type,EFFICACY
+33,CDISCPILOT01,TS,4,TTYPE,Trial Type,PHARMACOKINETIC

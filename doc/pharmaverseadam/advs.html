@@ -1,0 +1,324 @@
+<!DOCTYPE html><html><head><title>R: Vital Signs Analysis</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>advs</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Vital Signs Analysis</h2>
+
+<h3>Description</h3>
+
+<p>Vital Signs Analysis
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>advs
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 105 columns:
+</p>
+
+<dl>
+<dt> STUDYID </dt><dd><p>Study Identifier</p>
+</dd>
+<dt> USUBJID </dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt> SUBJID </dt><dd><p>Subject Identifier for the Study</p>
+</dd>
+<dt> SITEID </dt><dd><p>Study Site Identifier</p>
+</dd>
+<dt> COUNTRY </dt><dd><p>Country</p>
+</dd>
+<dt> DOMAIN </dt><dd><p>Domain Abbreviation</p>
+</dd>
+<dt> RFSTDTC </dt><dd><p>Subject Reference Start Date/Time</p>
+</dd>
+<dt> RFENDTC </dt><dd><p>Subject Reference End Date/Time</p>
+</dd>
+<dt> RFXSTDTC </dt><dd><p>Date/Time of First Study Treatment</p>
+</dd>
+<dt> RFXENDTC </dt><dd><p>Date/Time of Last Study Treatment</p>
+</dd>
+<dt> RFPENDTC </dt><dd><p>Date/Time of End of Participation</p>
+</dd>
+<dt> SCRFDT </dt><dd><p>Screen Failure Date</p>
+</dd>
+<dt> FRVDT </dt><dd><p>Final Retrieval Visit Date</p>
+</dd>
+<dt> DTHDTC </dt><dd><p>Date/Time of Death</p>
+</dd>
+<dt> DTHADY </dt><dd><p>Relative Day of Death</p>
+</dd>
+<dt> DTHFL </dt><dd><p>Subject Death Flag</p>
+</dd>
+<dt> LDDTHELD </dt><dd><p>Elapsed Days from Last Dose to Death</p>
+</dd>
+<dt> LDDTHGR1 </dt><dd><p>Last Dose to Death - Days Elapsed Grp 1</p>
+</dd>
+<dt> DTH30FL </dt><dd><p>Death Within 30 Days of Last Trt Flag</p>
+</dd>
+<dt> DTHA30FL </dt><dd><p>Death After 30 Days from Last Trt Flag</p>
+</dd>
+<dt> DTHDOM </dt><dd><p>Domain for Date of Death Collection</p>
+</dd>
+<dt> DTHB30FL </dt><dd><p>Death Within 30 Days of First Trt Flag</p>
+</dd>
+<dt> ASEQ </dt><dd><p>Analysis Sequence Number</p>
+</dd>
+<dt> REGION1 </dt><dd><p>Geographic Region 1</p>
+</dd>
+<dt> DMDTC </dt><dd><p>Date/Time of Collection</p>
+</dd>
+<dt> DMDY </dt><dd><p>Study Day of Collection</p>
+</dd>
+<dt> AGE </dt><dd><p>Age</p>
+</dd>
+<dt> AGEU </dt><dd><p>Age Units</p>
+</dd>
+<dt> AGEGR1 </dt><dd><p>Pooled Age Group 1</p>
+</dd>
+<dt> SEX </dt><dd><p>Sex</p>
+</dd>
+<dt> RACE </dt><dd><p>Race</p>
+</dd>
+<dt> RACEGR1 </dt><dd><p>Pooled Race Group 1</p>
+</dd>
+<dt> ETHNIC </dt><dd><p>Ethnicity</p>
+</dd>
+<dt> SAFFL </dt><dd><p>Safety Population Flag</p>
+</dd>
+<dt> ARM </dt><dd><p>Description of Planned Arm</p>
+</dd>
+<dt> ARMCD </dt><dd><p>Planned Arm Code</p>
+</dd>
+<dt> ACTARM </dt><dd><p>Description of Actual Arm</p>
+</dd>
+<dt> ACTARMCD </dt><dd><p>Actual Arm Code</p>
+</dd>
+<dt> TRTP </dt><dd><p>Planned Treatment</p>
+</dd>
+<dt> TRTA </dt><dd><p>Actual Treatment</p>
+</dd>
+<dt> TRT01P </dt><dd><p>Planned Treatment for Period 01</p>
+</dd>
+<dt> TRT01A </dt><dd><p>Actual Treatment for Period 01</p>
+</dd>
+<dt> TRTSDT </dt><dd><p>Date of First Exposure to Treatment</p>
+</dd>
+<dt> TRTSDTM </dt><dd><p>Datetime of First Exposure to Treatment</p>
+</dd>
+<dt> TRTSTMF </dt><dd><p>Time of First Exposure Imput. Flag</p>
+</dd>
+<dt> TRTEDT </dt><dd><p>Date of Last Exposure to Treatment</p>
+</dd>
+<dt> TRTEDTM </dt><dd><p>Datetime of Last Exposure to Treatment</p>
+</dd>
+<dt> TRTETMF </dt><dd><p>Time of Last Exposure Imput. Flag</p>
+</dd>
+<dt> EOSSTT </dt><dd><p>End of Study Status</p>
+</dd>
+<dt> EOSDT </dt><dd><p>End of Study Date</p>
+</dd>
+<dt> RFICDTC </dt><dd><p>Date/Time of Informed Consent</p>
+</dd>
+<dt> RANDDT </dt><dd><p>Date of Randomization</p>
+</dd>
+<dt> LSTALVDT </dt><dd><p>Date Last Known Alive</p>
+</dd>
+<dt> TRTDURD </dt><dd><p>Total Treatment Duration (Days)</p>
+</dd>
+<dt> DTHDT </dt><dd><p>Date of Death</p>
+</dd>
+<dt> DTHDTF </dt><dd><p>Date of Death Imputation Flag</p>
+</dd>
+<dt> DTHCAUS </dt><dd><p>Cause of Death</p>
+</dd>
+<dt> DTHCGR1 </dt><dd><p>Cause of Death Reason 1</p>
+</dd>
+<dt> ADT </dt><dd><p>Analysis Date</p>
+</dd>
+<dt> ADY </dt><dd><p>Analysis Relative Day</p>
+</dd>
+<dt> AVISIT </dt><dd><p>Analysis Visit</p>
+</dd>
+<dt> AVISITN </dt><dd><p>Analysis Visit (N)</p>
+</dd>
+<dt> ATPT </dt><dd><p>Analysis Timepoint</p>
+</dd>
+<dt> ATPTN </dt><dd><p>Analysis Timepoint (N)</p>
+</dd>
+<dt> PARAM </dt><dd><p>Parameter</p>
+</dd>
+<dt> PARAMCD </dt><dd><p>Parameter Code</p>
+</dd>
+<dt> PARAMN </dt><dd><p>Parameter (N)</p>
+</dd>
+<dt> AVAL </dt><dd><p>Analysis Value</p>
+</dd>
+<dt> AVALCAT1 </dt><dd><p>Analysis Value Category 1</p>
+</dd>
+<dt> AVALCA1N </dt><dd><p>Analysis Value Category 1 (N)</p>
+</dd>
+<dt> BASE </dt><dd><p>Baseline Value</p>
+</dd>
+<dt> BASETYPE </dt><dd><p>Baseline Type</p>
+</dd>
+<dt> CHG </dt><dd><p>Change from Baseline</p>
+</dd>
+<dt> PCHG </dt><dd><p>Percent Change from Baseline</p>
+</dd>
+<dt> DTYPE </dt><dd><p>Derivation Type</p>
+</dd>
+<dt> ANRIND </dt><dd><p>Analysis Reference Range Indicator</p>
+</dd>
+<dt> BNRIND </dt><dd><p>Baseline Reference Range Indicator</p>
+</dd>
+<dt> ANRLO </dt><dd><p>Analysis Normal Range Lower Limit</p>
+</dd>
+<dt> ANRHI </dt><dd><p>Analysis Normal Range Upper Limit</p>
+</dd>
+<dt> A1LO </dt><dd><p>Analysis Range 1 Lower Limit</p>
+</dd>
+<dt> A1HI </dt><dd><p>Analysis Range 1 Upper Limit</p>
+</dd>
+<dt> ABLFL </dt><dd><p>Baseline Record Flag</p>
+</dd>
+<dt> ANL01FL </dt><dd><p>Analysis Flag 01</p>
+</dd>
+<dt> ONTRTFL </dt><dd><p>On Treatment Record Flag</p>
+</dd>
+<dt> VSSEQ </dt><dd><p>Sequence Number</p>
+</dd>
+<dt> VSTESTCD </dt><dd><p>Vital Signs Test Short Name</p>
+</dd>
+<dt> VSTEST </dt><dd><p>Vital Signs Test Name</p>
+</dd>
+<dt> VSPOS </dt><dd><p>Vital Signs Position of Subject</p>
+</dd>
+<dt> VSORRES </dt><dd><p>Result or Finding in Original Units</p>
+</dd>
+<dt> VSORRESU </dt><dd><p>Original Units</p>
+</dd>
+<dt> VSSTRESC </dt><dd><p>Character Result/Finding in Std Format</p>
+</dd>
+<dt> VSSTRESN </dt><dd><p>Numeric Result/Finding in Standard Units</p>
+</dd>
+<dt> VSSTRESU </dt><dd><p>Standard Units</p>
+</dd>
+<dt> VSSTAT </dt><dd><p>Completion Status</p>
+</dd>
+<dt> VSLOC </dt><dd><p>Location of Vital Signs Measurement</p>
+</dd>
+<dt> VSBLFL </dt><dd><p>Baseline Flag</p>
+</dd>
+<dt> VISITNUM </dt><dd><p>Visit Number</p>
+</dd>
+<dt> VISIT </dt><dd><p>Visit Name</p>
+</dd>
+<dt> VISITDY </dt><dd><p>Planned Study Day of Visit</p>
+</dd>
+<dt> VSDTC </dt><dd><p>Date/Time of Measurements</p>
+</dd>
+<dt> VSDY </dt><dd><p>Study Day of Vital Signs</p>
+</dd>
+<dt> VSTPT </dt><dd><p>Planned Time Point Name</p>
+</dd>
+<dt> VSTPTNUM </dt><dd><p>Planned Time Point Number</p>
+</dd>
+<dt> VSELTM </dt><dd><p>Planned Elapsed Time from Time Point Ref</p>
+</dd>
+<dt> VSTPTREF </dt><dd><p>Time Point Reference</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Contains a set of 9 unique Parameter Codes and Parameters: </p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+<strong>PARAMCD</strong> </td><td style="text-align: left;"> <strong>PARAM</strong> </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+BMI    </td><td style="text-align: left;"> Body Mass Index(kg/m^2)        </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+BSA    </td><td style="text-align: left;"> Body Surface Area(m^2)         </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+DIABP  </td><td style="text-align: left;"> Diastolic Blood Pressure (mmHg)</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+HEIGHT </td><td style="text-align: left;"> Height (cm)                    </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MAP    </td><td style="text-align: left;"> Mean Arterial Pressure (mmHg)  </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+PULSE  </td><td style="text-align: left;"> Pulse Rate (beats/min)         </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+SYSBP  </td><td style="text-align: left;"> Systolic Blood Pressure (mmHg) </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+TEMP   </td><td style="text-align: left;"> Temperature (C)                </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+WEIGHT </td><td style="text-align: left;"> Weight (kg)
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>Generated from admiral package (template ad_advs.R).
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data("advs")
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

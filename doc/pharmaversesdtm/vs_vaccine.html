@@ -1,0 +1,120 @@
+<!DOCTYPE html><html><head><title>R: Vital Signs for Vaccine</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>vs_vaccine</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Vital Signs for Vaccine</h2>
+
+<h3>Description</h3>
+
+<p>An example SDTM VS dataset for vaccine studies
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>vs_vaccine
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 23 columns:
+</p>
+
+<dl>
+<dt>STUDYID</dt><dd><p>Study Identifier</p>
+</dd>
+<dt>DOMAIN</dt><dd><p>Domain Abbreviation</p>
+</dd>
+<dt>USUBJID</dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt>VSSEQ</dt><dd><p>Sequence Number</p>
+</dd>
+<dt>VSLNKID</dt><dd><p>Link ID</p>
+</dd>
+<dt>VSLNKGRP</dt><dd><p>Link Group ID</p>
+</dd>
+<dt>VSTESTCD</dt><dd><p>Vital Signs Test Short Name</p>
+</dd>
+<dt>VSTEST</dt><dd><p>Vital Signs Test Name</p>
+</dd>
+<dt>VSCAT</dt><dd><p>Category for Vital Signs</p>
+</dd>
+<dt>VSSCAT</dt><dd><p>Subcategory for Vital Signs</p>
+</dd>
+<dt>VSORRES</dt><dd><p>Result or Finding in Original Units</p>
+</dd>
+<dt>VSORRESU</dt><dd><p>Original Units</p>
+</dd>
+<dt>VSSTRESC</dt><dd><p>Character Result/Finding in Std Format</p>
+</dd>
+<dt>VSSTRESN</dt><dd><p>Numeric Result/Finding in Standard Units</p>
+</dd>
+<dt>VSSTRESU</dt><dd><p>Standard Units</p>
+</dd>
+<dt>VSEVAL</dt><dd><p>Evaluator</p>
+</dd>
+<dt>VSLOC</dt><dd><p>Location of Vital Signs Measurement</p>
+</dd>
+<dt>EPOCH</dt><dd><p>Epoch</p>
+</dd>
+<dt>VSDTC</dt><dd><p>Date/Time of Measurements</p>
+</dd>
+<dt>VSDY</dt><dd><p>Study Day of Vital Signs</p>
+</dd>
+<dt>VSTPT</dt><dd><p>Planned Time Point Name</p>
+</dd>
+<dt>VSTPTNUM</dt><dd><p>Planned Time Point Number</p>
+</dd>
+<dt>VSTPTREF</dt><dd><p>Time Point Reference</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Vital Signs for Vaccine
+</p>
+<p>An example SDTM VS dataset for vaccine studies
+</p>
+<p>Contains a set of 1 unique Test Short Name and Test Name: </p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+<strong>VSTESTCD</strong> </td><td style="text-align: left;"> <strong>VSTEST</strong> </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+TEMP </td><td style="text-align: left;"> Temperature
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>Constructed by admiralvaccine developers
+</p>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html><html><head><title>R: Anti-Drug Antibody Analysis Dataset</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>adab</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Anti-Drug Antibody Analysis Dataset</h2>
+
+<h3>Description</h3>
+
+<p>Anti-Drug Antibody Analysis Dataset
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>adab
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 72 columns:
+</p>
+
+<dl>
+<dt> STUDYID </dt><dd><p>Study Identifier</p>
+</dd>
+<dt> USUBJID </dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt> SUBJID </dt><dd><p>Subject Identifier for the Study</p>
+</dd>
+<dt> SITEID </dt><dd><p>Study Site Identifier</p>
+</dd>
+<dt> ASEQ </dt><dd><p>Analysis Sequence Number</p>
+</dd>
+<dt> REGION1 </dt><dd><p>Geographic Region 1</p>
+</dd>
+<dt> COUNTRY </dt><dd><p>Country</p>
+</dd>
+<dt> ETHNIC </dt><dd><p>Ethnicity</p>
+</dd>
+<dt> AGE </dt><dd><p>Age</p>
+</dd>
+<dt> AGEU </dt><dd><p>Age Units</p>
+</dd>
+<dt> SEX </dt><dd><p>Sex</p>
+</dd>
+<dt> RACE </dt><dd><p>Race</p>
+</dd>
+<dt> SAFFL </dt><dd><p>Safety Population Flag</p>
+</dd>
+<dt> TRT01P </dt><dd><p>Description of Planned Arm</p>
+</dd>
+<dt> TRT01A </dt><dd><p>Description of Actual Arm</p>
+</dd>
+<dt> TRTSDTM </dt><dd><p>Datetime of First Exposure to Treatment</p>
+</dd>
+<dt> TRTSDT </dt><dd><p>Date of First Exposure to Treatment</p>
+</dd>
+<dt> TRTEDTM </dt><dd><p>Datetime of Last Exposure to Treatment</p>
+</dd>
+<dt> TRTEDT </dt><dd><p>Date of Last Exposure to Treatment</p>
+</dd>
+<dt> ISSEQ </dt><dd><p>Sequence Number</p>
+</dd>
+<dt> ISTESTCD </dt><dd><p>Immunogenicity Test/Exam Short Name</p>
+</dd>
+<dt> ISTEST </dt><dd><p>Immunogenicity Test or Examination Name</p>
+</dd>
+<dt> ISCAT </dt><dd><p>Category for Immunogenicity Test</p>
+</dd>
+<dt> ISBDAGNT </dt><dd><p>Binding Agent</p>
+</dd>
+<dt> ISSTRESC </dt><dd><p>Character Result/Finding in Std Format</p>
+</dd>
+<dt> ISSTRESN </dt><dd><p>Numeric Results/Findings in Std. Units</p>
+</dd>
+<dt> ISSTRESU </dt><dd><p>Standard Units</p>
+</dd>
+<dt> ISSTAT </dt><dd><p>Completion Status</p>
+</dd>
+<dt> ISREASND </dt><dd><p>Reason Not Done</p>
+</dd>
+<dt> ISSPEC </dt><dd><p>Specimen Type</p>
+</dd>
+<dt> DTL </dt><dd><p>Drug Tolerance Level</p>
+</dd>
+<dt> MRT </dt><dd><p>Minimum Reportable Titer</p>
+</dd>
+<dt> VISITNUM </dt><dd><p>Visit Number</p>
+</dd>
+<dt> VISIT </dt><dd><p>Visit Name</p>
+</dd>
+<dt> VISITDY </dt><dd><p>Planned Study Day of Visit</p>
+</dd>
+<dt> EPOCH </dt><dd><p>Epoch</p>
+</dd>
+<dt> ISDTC </dt><dd><p>Date/Time of Collection</p>
+</dd>
+<dt> ISDY </dt><dd><p>Study Day of Visit/Collection/Exam</p>
+</dd>
+<dt> ISTPT </dt><dd><p>Planned Time Point Name</p>
+</dd>
+<dt> ISTPTNUM </dt><dd><p>Planned Time Point Number</p>
+</dd>
+<dt> PARAM </dt><dd><p>Parameter</p>
+</dd>
+<dt> PARAMCD </dt><dd><p>Parameter Code</p>
+</dd>
+<dt> PARCAT1 </dt><dd><p>Parameter Category 1</p>
+</dd>
+<dt> AVAL </dt><dd><p>Analysis Value</p>
+</dd>
+<dt> AVALC </dt><dd><p>Analysis Value (C)</p>
+</dd>
+<dt> AVALU </dt><dd><p>Analysis Value Unit</p>
+</dd>
+<dt> BASETYPE </dt><dd><p>Baseline Type</p>
+</dd>
+<dt> BASE </dt><dd><p>Baseline Value</p>
+</dd>
+<dt> CHG </dt><dd><p>Change from Baseline</p>
+</dd>
+<dt> DTYPE </dt><dd><p>Derivation Type</p>
+</dd>
+<dt> ADTM </dt><dd><p>Analysis Datetime</p>
+</dd>
+<dt> ADT </dt><dd><p>Analysis Date</p>
+</dd>
+<dt> ADY </dt><dd><p>Analysis Relative Day</p>
+</dd>
+<dt> ATMF </dt><dd><p>Analysis Time Imputation Flag</p>
+</dd>
+<dt> AVISIT </dt><dd><p>Analysis Visit</p>
+</dd>
+<dt> AVISITN </dt><dd><p>Analysis Visit (N)</p>
+</dd>
+<dt> ATPT </dt><dd><p>Analysis Timepoint</p>
+</dd>
+<dt> APHASE </dt><dd><p>Phase</p>
+</dd>
+<dt> APHASEN </dt><dd><p>Phase (N)</p>
+</dd>
+<dt> APERIOD </dt><dd><p>Period</p>
+</dd>
+<dt> APERIODC </dt><dd><p>Period (C)</p>
+</dd>
+<dt> FANLDTM </dt><dd><p>First Datetime of Dose for Analyte</p>
+</dd>
+<dt> FANLDT </dt><dd><p>First Date of Dose for Analyte</p>
+</dd>
+<dt> FANLTM </dt><dd><p>First Time of Dose for Analyte</p>
+</dd>
+<dt> FANLTMF </dt><dd><p>First Time of Dose for Analyte ImputeFL</p>
+</dd>
+<dt> NFRLT </dt><dd><p>Nom. Rel. Time from Analyte First Dose</p>
+</dd>
+<dt> AFRLT </dt><dd><p>Act. Rel. Time from Analyte First Dose</p>
+</dd>
+<dt> FRLTU </dt><dd><p>Rel. Time from First Dose Unit</p>
+</dd>
+<dt> ABLFL </dt><dd><p>Baseline Record Flag</p>
+</dd>
+<dt> ADABLPFL </dt><dd><p>Baseline ADA Eval. Param-Level Flag</p>
+</dd>
+<dt> ADPBLPFL </dt><dd><p>Post-Baseline ADA Eval. Param-Level Flag</p>
+</dd>
+<dt> ADAFL </dt><dd><p>ADA Population Flag</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Contains a set of 22 unique Parameter Codes and Parameters: </p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+<strong>PARAMCD</strong> </td><td style="text-align: left;"> <strong>PARAM</strong> </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+ADADUR1  </td><td style="text-align: left;"> ADA Duration (Weeks), Anti-XANOMELINE Antibody (1)                          </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+ADASTAT1 </td><td style="text-align: left;"> ADA Status of a patient, Anti-XANOMELINE Antibody (1)                       </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+ADASTTV1 </td><td style="text-align: left;"> ADA Status of a patient by Visit, Anti-XANOMELINE Antibody (1)              </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+BABXANOM </td><td style="text-align: left;"> Anti-XANOMELINE Antibody, Titer Units (1)                                   </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+BFLAG1   </td><td style="text-align: left;"> Baseline Pos/Neg, Anti-XANOMELINE Antibody (1)                              </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+EMERNEG1 </td><td style="text-align: left;"> Treatment Emergent - Negative, Anti-XANOMELINE Antibody (1)                 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+EMERPOS1 </td><td style="text-align: left;"> Treatment Emergent - Positive, Anti-XANOMELINE Antibody (1)                 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+ENHANC1  </td><td style="text-align: left;"> Treatment enhanced ADA, Anti-XANOMELINE Antibody (1)                        </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+FPPDTM1  </td><td style="text-align: left;"> First Post Dose Positive Datetime, Anti-XANOMELINE Antibody (1)             </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+INDUCD1  </td><td style="text-align: left;"> Treatment induced ADA, Anti-XANOMELINE Antibody (1)                         </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+LPPDTM1  </td><td style="text-align: left;"> Last Post Dose Positive Datetime, Anti-XANOMELINE Antibody (1)              </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+NABSTAT1 </td><td style="text-align: left;"> Nab Status, Anti-XANOMELINE Neutralizing Antibody (1)                       </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+NABXANOM </td><td style="text-align: left;"> Anti-XANOMELINE Neutralizing Antibody (1)                                   </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+NOTRREL1 </td><td style="text-align: left;"> No treatment related ADA, Anti-XANOMELINE Antibody (1)                      </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+PBFLAGV1 </td><td style="text-align: left;"> Post Baseline Pos/Neg by Visit, Anti-XANOMELINE Antibody (1)                </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+PERSADA1 </td><td style="text-align: left;"> Persistent ADA, Anti-XANOMELINE Antibody (1)                                </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+RESULT1  </td><td style="text-align: left;"> ADA interpreted per sample result, Anti-XANOMELINE Antibody (1)             </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+RESULT2  </td><td style="text-align: left;"> Nab interpreted per sample result, Anti-XANOMELINE Neutralizing Antibody (2)</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+TFLAGV1  </td><td style="text-align: left;"> Treatment related ADA by Visit, Anti-XANOMELINE Antibody (1)                </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+TIMADA1  </td><td style="text-align: left;"> Time to onset of ADA (Weeks), Anti-XANOMELINE Antibody (1)                  </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+TRANADA1 </td><td style="text-align: left;"> Transient ADA, Anti-XANOMELINE Antibody (1)                                 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+TRUNAFF1 </td><td style="text-align: left;"> Treatment unaffected, Anti-XANOMELINE Antibody (1)
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>Generated from admiral package (template ad_adab.R).
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data("adab")
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html><html><head><title>R: Findings About Clinical Events for Vaccine</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>face_vaccine</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Findings About Clinical Events for Vaccine</h2>
+
+<h3>Description</h3>
+
+<p>An example SDTM FACE for vaccine studies
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>face_vaccine
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 30 columns:
+</p>
+
+<dl>
+<dt>STUDYID</dt><dd><p>Study Identifier</p>
+</dd>
+<dt>DOMAIN</dt><dd><p>Domain Abbreviation</p>
+</dd>
+<dt>USUBJID</dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt>FASEQ</dt><dd><p>Sequence Number</p>
+</dd>
+<dt>FALNKGRP</dt><dd><p>Link Group ID</p>
+</dd>
+<dt>FALAT</dt><dd><p>Laterality</p>
+</dd>
+<dt>FALNKID</dt><dd><p>Link ID</p>
+</dd>
+<dt>FALOC</dt><dd><p>Location of the Finding About</p>
+</dd>
+<dt>FATESTCD</dt><dd><p>Findings About Test Short Name</p>
+</dd>
+<dt>FATEST</dt><dd><p>Findings About Test Name</p>
+</dd>
+<dt>FAOBJ</dt><dd><p>Object of the Observation</p>
+</dd>
+<dt>FACAT</dt><dd><p>Category for Findings About</p>
+</dd>
+<dt>FASCAT</dt><dd><p>Subcategory for Findings About</p>
+</dd>
+<dt>FAEVAL</dt><dd><p>Evaluator</p>
+</dd>
+<dt>FAORRES</dt><dd><p>Result or Finding in Original Units</p>
+</dd>
+<dt>FAORRESU</dt><dd><p>Original Units</p>
+</dd>
+<dt>EPOCH</dt><dd><p>Epoch</p>
+</dd>
+<dt>FADTC</dt><dd><p>Date/Time of Collection</p>
+</dd>
+<dt>FADY</dt><dd><p>Study Day of Collection</p>
+</dd>
+<dt>FATPT</dt><dd><p>Planned Time Point Name</p>
+</dd>
+<dt>FATPTNUM</dt><dd><p>Planned Time Point Number</p>
+</dd>
+<dt>FATPTREF</dt><dd><p>Time Point Reference</p>
+</dd>
+<dt>FARFTDTC</dt><dd><p>Date/Time of Reference Time Point</p>
+</dd>
+<dt>FAEVLINT</dt><dd><p>Evaluation Interval</p>
+</dd>
+<dt>FAEVINTX</dt><dd><p>Evaluation Interval Text</p>
+</dd>
+<dt>FASTAT</dt><dd><p>Completion Status</p>
+</dd>
+<dt>FAREASND</dt><dd><p>Reason Not Performed</p>
+</dd>
+<dt>FASTRESC</dt><dd><p>Character Result/Finding in Std Format</p>
+</dd>
+<dt>FASTRESN</dt><dd><p>Numeric Result/Finding in Standard Units</p>
+</dd>
+<dt>FASTRESU</dt><dd><p>Standard Units</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Findings About Clinical Events for Vaccine
+</p>
+<p>An example SDTM FACE for vaccine studies
+</p>
+<p>Contains a set of 3 unique Test Short Names and Test Names: </p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+<strong>FATESTCD</strong> </td><td style="text-align: left;"> <strong>FATEST</strong> </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+DIAMETER </td><td style="text-align: left;"> Diameter            </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+OCCUR    </td><td style="text-align: left;"> Occurrence Indicator</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+SEV      </td><td style="text-align: left;"> Severity/Intensity
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>Constructed by admiralvaccine developers
+</p>
+
+</main>
+
+</div>
+</body></html>

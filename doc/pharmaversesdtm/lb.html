@@ -1,0 +1,310 @@
+<!DOCTYPE html><html><head><title>R: Laboratory Measurements</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>lb</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Laboratory Measurements</h2>
+
+<h3>Description</h3>
+
+<p>An updated SDTM LB dataset that uses data from the CDISC pilot project
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>lb
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 23 columns:
+</p>
+
+<dl>
+<dt>STUDYID</dt><dd><p>Study Identifier</p>
+</dd>
+<dt>DOMAIN</dt><dd><p>Domain Abbreviation</p>
+</dd>
+<dt>USUBJID</dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt>LBSEQ</dt><dd><p>Sequence Number</p>
+</dd>
+<dt>LBTESTCD</dt><dd><p>Lab Test or Examination Short Name</p>
+</dd>
+<dt>LBTEST</dt><dd><p>Lab Test or Examination Name</p>
+</dd>
+<dt>LBCAT</dt><dd><p>Category for Lab Test</p>
+</dd>
+<dt>LBORRES</dt><dd><p>Result or Finding in Original Units</p>
+</dd>
+<dt>LBORRESU</dt><dd><p>Original Units</p>
+</dd>
+<dt>LBORNRLO</dt><dd><p>Reference Range Lower Limit in Orig Unit</p>
+</dd>
+<dt>LBORNRHI</dt><dd><p>Reference Range Upper Limit in Orig Unit</p>
+</dd>
+<dt>LBSTRESC</dt><dd><p>Character Result/Finding in Std Format</p>
+</dd>
+<dt>LBSTRESN</dt><dd><p>Numeric Result/Finding in Standard Units</p>
+</dd>
+<dt>LBSTRESU</dt><dd><p>Standard Units</p>
+</dd>
+<dt>LBSTNRLO</dt><dd><p>Reference Range Lower Limit-Std Units</p>
+</dd>
+<dt>LBSTNRHI</dt><dd><p>Reference Range Upper Limit-Std Units</p>
+</dd>
+<dt>LBNRIND</dt><dd><p>Reference Range Indicator</p>
+</dd>
+<dt>LBBLFL</dt><dd><p>Baseline Flag</p>
+</dd>
+<dt>VISITNUM</dt><dd><p>Visit Number</p>
+</dd>
+<dt>VISIT</dt><dd><p>Visit Name</p>
+</dd>
+<dt>VISITDY</dt><dd><p>Planned Study Day of Visit</p>
+</dd>
+<dt>LBDTC</dt><dd><p>Date/Time of Specimen Collection</p>
+</dd>
+<dt>LBDY</dt><dd><p>Study Day of Specimen Collection</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Laboratory Measurements
+</p>
+<p>An updated SDTM LB dataset that uses data from the CDISC pilot project
+</p>
+<p>Contains a set of 47 unique Test Short Names and Test Names: </p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+<strong>LBTESTCD</strong> </td><td style="text-align: left;"> <strong>LBTEST</strong> </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+ALB     </td><td style="text-align: left;"> Albumin                                </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+ALP     </td><td style="text-align: left;"> Alkaline Phosphatase                   </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+ALT     </td><td style="text-align: left;"> Alanine Aminotransferase               </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+ANISO   </td><td style="text-align: left;"> Anisocytes                             </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+AST     </td><td style="text-align: left;"> Aspartate Aminotransferase             </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+BASO    </td><td style="text-align: left;"> Basophils                              </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+BASOLE  </td><td style="text-align: left;"> Basophils/Leukocytes                   </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+BILI    </td><td style="text-align: left;"> Bilirubin                              </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+BUN     </td><td style="text-align: left;"> Blood Urea Nitrogen                    </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+CA      </td><td style="text-align: left;"> Calcium                                </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+CHOL    </td><td style="text-align: left;"> Cholesterol                            </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+CK      </td><td style="text-align: left;"> Creatine Kinase                        </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+CL      </td><td style="text-align: left;"> Chloride                               </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+COLOR   </td><td style="text-align: left;"> Color                                  </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+CREAT   </td><td style="text-align: left;"> Creatinine                             </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+EOS     </td><td style="text-align: left;"> Eosinophils                            </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+EOSLE   </td><td style="text-align: left;"> Eosinophils/Leukocytes                 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+GGT     </td><td style="text-align: left;"> Gamma Glutamyl Transferase             </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+GLUC    </td><td style="text-align: left;"> Glucose                                </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+HBA1C   </td><td style="text-align: left;"> Hemoglobin A1C                         </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+HCT     </td><td style="text-align: left;"> Hematocrit                             </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+HGB     </td><td style="text-align: left;"> Hemoglobin                             </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+K       </td><td style="text-align: left;"> Potassium                              </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+KETONES </td><td style="text-align: left;"> Ketones                                </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+LYM     </td><td style="text-align: left;"> Lymphocytes                            </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+LYMLE   </td><td style="text-align: left;"> Lymphocytes/Leukocytes                 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MACROCY </td><td style="text-align: left;"> Macrocytes                             </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MCH     </td><td style="text-align: left;"> Ery. Mean Corpuscular Hemoglobin       </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MCHC    </td><td style="text-align: left;"> Ery. Mean Corpuscular HGB Concentration</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MCV     </td><td style="text-align: left;"> Ery. Mean Corpuscular Volume           </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MICROCY </td><td style="text-align: left;"> Microcytes                             </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MONO    </td><td style="text-align: left;"> Monocytes                              </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MONOLE  </td><td style="text-align: left;"> Monocytes/Leukocytes                   </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+PH      </td><td style="text-align: left;"> pH                                     </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+PHOS    </td><td style="text-align: left;"> Phosphate                              </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+PLAT    </td><td style="text-align: left;"> Platelet                               </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+POIKILO </td><td style="text-align: left;"> Poikilocytes                           </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+POLYCHR </td><td style="text-align: left;"> Polychromasia                          </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+PROT    </td><td style="text-align: left;"> Protein                                </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+RBC     </td><td style="text-align: left;"> Erythrocytes                           </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+SODIUM  </td><td style="text-align: left;"> Sodium                                 </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+SPGRAV  </td><td style="text-align: left;"> Specific Gravity                       </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+TSH     </td><td style="text-align: left;"> Thyrotropin                            </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+URATE   </td><td style="text-align: left;"> Urate                                  </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+UROBIL  </td><td style="text-align: left;"> Urobilinogen                           </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+VITB12  </td><td style="text-align: left;"> Vitamin B12                            </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+WBC     </td><td style="text-align: left;"> Leukocytes
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Author(s)</h3>
+
+<p>Annie Yang
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://github.com/pharmaverse/pharmaversesdtm/blob/main/data/lb.rda">Access the source of the Laboratory Measurements dataset.</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

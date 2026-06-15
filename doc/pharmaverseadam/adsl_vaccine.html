@@ -1,0 +1,155 @@
+<!DOCTYPE html><html><head><title>R: Subject Level Analysis for Vaccine</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>adsl_vaccine</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Subject Level Analysis for Vaccine</h2>
+
+<h3>Description</h3>
+
+<p>Subject Level Analysis for Vaccine
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>adsl_vaccine
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 46 columns:
+</p>
+
+<dl>
+<dt> STUDYID </dt><dd><p>Study Identifier</p>
+</dd>
+<dt> USUBJID </dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt> SUBJID </dt><dd><p>Subject Identifier for the Study</p>
+</dd>
+<dt> SITEID </dt><dd><p>Study Site Identifier</p>
+</dd>
+<dt> COUNTRY </dt><dd><p>Country/Region</p>
+</dd>
+<dt> RFSTDTC </dt><dd><p>Subject Reference Start Date/Time</p>
+</dd>
+<dt> RFENDTC </dt><dd><p>Subject Reference End Date/Time</p>
+</dd>
+<dt> RFXSTDTC </dt><dd><p>Date/Time of First Study Treatment</p>
+</dd>
+<dt> RFXENDTC </dt><dd><p>Date/Time of Last Study Treatment</p>
+</dd>
+<dt> RFPENDTC </dt><dd><p>Date/Time of End of Participation</p>
+</dd>
+<dt> DTHDTC </dt><dd><p>Date/Time of Death</p>
+</dd>
+<dt> DTHFL </dt><dd><p>Subject Death Flag</p>
+</dd>
+<dt> REGION1 </dt><dd><p>Geographic Region 1</p>
+</dd>
+<dt> BRTHDTC </dt><dd><p>Date/Time of Birth</p>
+</dd>
+<dt> DMDTC </dt><dd><p>Date/Time of Collection</p>
+</dd>
+<dt> DMDY </dt><dd><p>Study Day of Collection</p>
+</dd>
+<dt> AGE </dt><dd><p>Age</p>
+</dd>
+<dt> AGEU </dt><dd><p>Age Units</p>
+</dd>
+<dt> AGEGR1 </dt><dd><p>Pooled Age Group 1</p>
+</dd>
+<dt> SEX </dt><dd><p>Sex</p>
+</dd>
+<dt> RACE </dt><dd><p>Race</p>
+</dd>
+<dt> RACEGR1 </dt><dd><p>Pooled Race Group 1</p>
+</dd>
+<dt> ETHNIC </dt><dd><p>Ethnicity</p>
+</dd>
+<dt> SAFFL </dt><dd><p>Safety Population Flag</p>
+</dd>
+<dt> PPROTFL </dt><dd><p>Per-Protocol Population Flag</p>
+</dd>
+<dt> ARM </dt><dd><p>Description of Planned Arm</p>
+</dd>
+<dt> ARMCD </dt><dd><p>Planned Arm Code</p>
+</dd>
+<dt> ACTARM </dt><dd><p>Description of Actual Arm</p>
+</dd>
+<dt> ACTARMCD </dt><dd><p>Actual Arm Code</p>
+</dd>
+<dt> TRT01P </dt><dd><p>Planned Treatment for Period 01</p>
+</dd>
+<dt> TRT01A </dt><dd><p>Actual Treatment for Period 01</p>
+</dd>
+<dt> TRT02P </dt><dd><p>Planned Treatment for Period 02</p>
+</dd>
+<dt> TRT02A </dt><dd><p>Actual Treatment for Period 02</p>
+</dd>
+<dt> TRTSDT </dt><dd><p>Date of First Exposure to Treatment</p>
+</dd>
+<dt> TRTSDTM </dt><dd><p>Datetime of First Exposure to Treatment</p>
+</dd>
+<dt> TRTEDT </dt><dd><p>Date of Last Exposure to Treatment</p>
+</dd>
+<dt> TRTEDTM </dt><dd><p>Datetime of Last Exposure to Treatment</p>
+</dd>
+<dt> AP01SDT </dt><dd><p>Period 01 Start Date</p>
+</dd>
+<dt> AP01EDT </dt><dd><p>Period 01 End Date</p>
+</dd>
+<dt> AP02SDT </dt><dd><p>Period 02 Start Date</p>
+</dd>
+<dt> AP02EDT </dt><dd><p>Period 02 End Date</p>
+</dd>
+<dt> RFICDTC </dt><dd><p>Date/Time of Informed Consent</p>
+</dd>
+<dt> INVID </dt><dd><p>Investigator Identifier</p>
+</dd>
+<dt> INVNAM </dt><dd><p>Investigator Name</p>
+</dd>
+<dt> VAX01DT </dt><dd><p>Vaccination Date 01</p>
+</dd>
+<dt> VAX02DT </dt><dd><p>Vaccination Date 02</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Generated from admiralvaccine package (template ad_adsl.R).
+</p>
+
+
+<h3>References</h3>
+
+<p>None
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data("adsl_vaccine")
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

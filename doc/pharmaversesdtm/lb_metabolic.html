@@ -1,0 +1,154 @@
+<!DOCTYPE html><html><head><title>R: Laboratory Measurements Dataset-metabolic</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>lb_metabolic</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Laboratory Measurements Dataset-metabolic</h2>
+
+<h3>Description</h3>
+
+<p>A SDTM LB dataset containing relevant laboratory measurements for metabolic studies
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>lb_metabolic
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 24 columns:
+</p>
+
+<dl>
+<dt>STUDYID</dt><dd><p>Study Identifier</p>
+</dd>
+<dt>DOMAIN</dt><dd><p>Domain Abbreviation</p>
+</dd>
+<dt>USUBJID</dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt>LBSEQ</dt><dd><p>Sequence Number</p>
+</dd>
+<dt>LBTESTCD</dt><dd><p>Lab Test or Examination Short Name</p>
+</dd>
+<dt>LBTEST</dt><dd><p>Lab Test or Examination Name</p>
+</dd>
+<dt>LBCAT</dt><dd><p>Category for Lab Test</p>
+</dd>
+<dt>LBORRES</dt><dd><p>Result or Finding in Original Units</p>
+</dd>
+<dt>LBORRESU</dt><dd><p>Original Units</p>
+</dd>
+<dt>LBORNRLO</dt><dd><p>Reference Range Lower Limit in Orig Unit</p>
+</dd>
+<dt>LBORNRHI</dt><dd><p>Reference Range Upper Limit in Orig Unit</p>
+</dd>
+<dt>LBSTRESC</dt><dd><p>Character Result/Finding in Std Format</p>
+</dd>
+<dt>LBSTRESN</dt><dd><p>Numeric Result/Finding in Standard Units</p>
+</dd>
+<dt>LBSTRESU</dt><dd><p>Standard Units</p>
+</dd>
+<dt>LBSTNRLO</dt><dd><p>Reference Range Lower Limit-Std Units</p>
+</dd>
+<dt>LBSTNRHI</dt><dd><p>Reference Range Upper Limit-Std Units</p>
+</dd>
+<dt>LBNRIND</dt><dd><p>Reference Range Indicator</p>
+</dd>
+<dt>LBBLFL</dt><dd><p>Baseline Flag</p>
+</dd>
+<dt>LBFAST</dt><dd><p>Fasting Status</p>
+</dd>
+<dt>VISITNUM</dt><dd><p>Visit Number</p>
+</dd>
+<dt>VISIT</dt><dd><p>Visit Name</p>
+</dd>
+<dt>VISITDY</dt><dd><p>Planned Study Day of Visit</p>
+</dd>
+<dt>LBDTC</dt><dd><p>Date/Time of Specimen Collection</p>
+</dd>
+<dt>LBDY</dt><dd><p>Study Day of Specimen Collection</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Laboratory Measurements Dataset-metabolic
+</p>
+<p>A SDTM LB dataset containing relevant laboratory measurements for metabolic studies
+</p>
+<p>Contains a set of 9 unique Test Short Names and Test Names: </p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+<strong>LBTESTCD</strong> </td><td style="text-align: left;"> <strong>LBTEST</strong> </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+ALB      </td><td style="text-align: left;"> Albumin                   </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+ALP      </td><td style="text-align: left;"> Alkaline Phosphatase      </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+AST      </td><td style="text-align: left;"> Aspartate Aminotransferase</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+CHOL     </td><td style="text-align: left;"> Cholesterol               </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+GGT      </td><td style="text-align: left;"> Gamma Glutamyl Transferase</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+GLUC     </td><td style="text-align: left;"> Glucose                   </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+HBA1CHGB </td><td style="text-align: left;"> Hemoglobin A1C/Hemoglobin </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+INSULIN  </td><td style="text-align: left;"> Insulin                   </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+TRIG     </td><td style="text-align: left;"> Triglycerides
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>Constructed by admiralmetabolic developers
+</p>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html><html><head><title>R: Microbiology Susceptibility</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>ms</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Microbiology Susceptibility</h2>
+
+<h3>Description</h3>
+
+<p>A synthetic SDTM MS domain with susceptibility results and linkage to MB domain (mb)
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>ms
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 23 columns:
+</p>
+
+<dl>
+<dt>STUDYID</dt><dd><p>Study Identifier</p>
+</dd>
+<dt>DOMAIN</dt><dd><p>Domain Abbreviation</p>
+</dd>
+<dt>USUBJID</dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt>MSSEQ</dt><dd><p>Sequence Number</p>
+</dd>
+<dt>MSREFID</dt><dd><p>Reference ID</p>
+</dd>
+<dt>NHOID</dt><dd><p>Non-host Organism ID</p>
+</dd>
+<dt>MSGRPID</dt><dd><p>Group ID</p>
+</dd>
+<dt>MSLNKID</dt><dd><p>Link ID</p>
+</dd>
+<dt>MSTESTCD</dt><dd><p>Short Name of Assessment</p>
+</dd>
+<dt>MSTEST</dt><dd><p>Name of Assessment</p>
+</dd>
+<dt>MSAGENT</dt><dd><p>Agent Name</p>
+</dd>
+<dt>MSCONC</dt><dd><p>Agent Concentration</p>
+</dd>
+<dt>MSCONCU</dt><dd><p>Agent Concentration Units</p>
+</dd>
+<dt>MSORRES</dt><dd><p>Result or Finding in Original Units</p>
+</dd>
+<dt>MSORRESU</dt><dd><p>Original Units</p>
+</dd>
+<dt>MSSTRESC</dt><dd><p>Result or Finding in Standard Format</p>
+</dd>
+<dt>MSSTRESN</dt><dd><p>Numeric Result/Finding in Standard Units</p>
+</dd>
+<dt>MSSTRESU</dt><dd><p>Standard Units</p>
+</dd>
+<dt>MSSPEC</dt><dd><p>Specimen Material Type</p>
+</dd>
+<dt>MSLOC</dt><dd><p>Location Used for the Measurement</p>
+</dd>
+<dt>MSMETHOD</dt><dd><p>Method of Test or Examination</p>
+</dd>
+<dt>VISITNUM</dt><dd><p>Visit Number</p>
+</dd>
+<dt>MSDTC</dt><dd><p>Date/Time of Collection</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Microbiology Susceptibility
+</p>
+<p>A synthetic SDTM MS domain with susceptibility results and linkage to MB domain (mb)
+</p>
+<p>Contains a set of 3 unique Test Short Names and Test Names: </p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+<strong>MSTESTCD</strong> </td><td style="text-align: left;"> <strong>MSTEST</strong> </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+DIAZOINH </td><td style="text-align: left;"> Diameter of the Zone of Inhibition</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MIC      </td><td style="text-align: left;"> Minimum Inhibitory Concentration  </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+MICROSUS </td><td style="text-align: left;"> Microbial Susceptibility
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://github.com/pharmaverse/pharmaversesdtm/blob/main/data/ms.rda">Access the source of the Microbiology Susceptibility dataset.</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

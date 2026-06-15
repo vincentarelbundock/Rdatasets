@@ -1,0 +1,154 @@
+<!DOCTYPE html><html><head><title>R: Vital signs Dataset-metabolic</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>vs_metabolic</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Vital signs Dataset-metabolic</h2>
+
+<h3>Description</h3>
+
+<p>A SDTM VS dataset for metabolic studies
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>vs_metabolic
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 24 columns:
+</p>
+
+<dl>
+<dt>STUDYID</dt><dd><p>Study Identifier</p>
+</dd>
+<dt>DOMAIN</dt><dd><p>Domain Abbreviation</p>
+</dd>
+<dt>USUBJID</dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt>VSSEQ</dt><dd><p>Sequence Number</p>
+</dd>
+<dt>VSTESTCD</dt><dd><p>Vital Signs Test Short Name</p>
+</dd>
+<dt>VSTEST</dt><dd><p>Vital Signs Test Name</p>
+</dd>
+<dt>VSPOS</dt><dd><p>Vital Signs Position of Subject</p>
+</dd>
+<dt>VSORRES</dt><dd><p>Result or Finding in Original Units</p>
+</dd>
+<dt>VSORRESU</dt><dd><p>Original Units</p>
+</dd>
+<dt>VSSTRESC</dt><dd><p>Character Result/Finding in Std Format</p>
+</dd>
+<dt>VSSTRESN</dt><dd><p>Numeric Result/Finding in Standard Units</p>
+</dd>
+<dt>VSSTRESU</dt><dd><p>Standard Units</p>
+</dd>
+<dt>VSSTAT</dt><dd><p>Completion Status</p>
+</dd>
+<dt>VSLOC</dt><dd><p>Location of Vital Signs Measurement</p>
+</dd>
+<dt>VSBLFL</dt><dd><p>Baseline Flag</p>
+</dd>
+<dt>VISITNUM</dt><dd><p>Visit Number</p>
+</dd>
+<dt>VISIT</dt><dd><p>Visit Name</p>
+</dd>
+<dt>VISITDY</dt><dd><p>Planned Study Day of Visit</p>
+</dd>
+<dt>VSDTC</dt><dd><p>Date/Time of Measurements</p>
+</dd>
+<dt>VSDY</dt><dd><p>Study Day of Vital Signs</p>
+</dd>
+<dt>VSTPT</dt><dd><p>Planned Time Point Name</p>
+</dd>
+<dt>VSTPTNUM</dt><dd><p>Planned Time Point Number</p>
+</dd>
+<dt>VSELTM</dt><dd><p>Planned Elapsed Time from Time Point Ref</p>
+</dd>
+<dt>VSTPTREF</dt><dd><p>Time Point Reference</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Vital signs Dataset-metabolic
+</p>
+<p>A SDTM VS dataset for metabolic studies
+</p>
+<p>Contains a set of 9 unique Test Short Names and Test Names: </p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+<strong>VSTESTCD</strong> </td><td style="text-align: left;"> <strong>VSTEST</strong> </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+BMI    </td><td style="text-align: left;"> Body Mass Index         </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+DIABP  </td><td style="text-align: left;"> Diastolic Blood Pressure</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+HEIGHT </td><td style="text-align: left;"> Height                  </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+HIPCIR </td><td style="text-align: left;"> Hip Circumference       </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+PULSE  </td><td style="text-align: left;"> Pulse Rate              </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+SYSBP  </td><td style="text-align: left;"> Systolic Blood Pressure </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+TEMP   </td><td style="text-align: left;"> Temperature             </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+WEIGHT </td><td style="text-align: left;"> Weight                  </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+WSTCIR </td><td style="text-align: left;"> Waist Circumference
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>Constructed by admiralmetabolic developers
+</p>
+
+</main>
+
+</div>
+</body></html>

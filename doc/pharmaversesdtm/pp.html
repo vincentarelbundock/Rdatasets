@@ -1,0 +1,144 @@
+<!DOCTYPE html><html><head><title>R: Pharmacokinetic Parameters</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\mbox": "\\text", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>pp</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Pharmacokinetic Parameters</h2>
+
+<h3>Description</h3>
+
+<p>A SDTM PP dataset simulated by Antonio Rodriguez Contesti
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>pp
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 14 columns:
+</p>
+
+<dl>
+<dt>STUDYID</dt><dd><p>Study Identifier</p>
+</dd>
+<dt>DOMAIN</dt><dd><p>Domain Abbreviation</p>
+</dd>
+<dt>USUBJID</dt><dd><p>Unique Subject Identifier</p>
+</dd>
+<dt>PPSEQ</dt><dd><p>Sequence Number</p>
+</dd>
+<dt>PPTESTCD</dt><dd><p>Parameter Short Name</p>
+</dd>
+<dt>PPTEST</dt><dd><p>Parameter Name</p>
+</dd>
+<dt>PPCAT</dt><dd><p>Parameter Category</p>
+</dd>
+<dt>PPORRES</dt><dd><p>Result or Finding in Original Units</p>
+</dd>
+<dt>PPORRESU</dt><dd><p>Original Units</p>
+</dd>
+<dt>PPSTRESC</dt><dd><p>Character Result/Finding in Std Format</p>
+</dd>
+<dt>PPSTRESN</dt><dd><p>Numeric Result/Finding in Standard Units</p>
+</dd>
+<dt>PPSTRESU</dt><dd><p>Standard Units</p>
+</dd>
+<dt>PPSPEC</dt><dd><p>Specimen Material Type</p>
+</dd>
+<dt>PPRFDTC</dt><dd><p>Date/Time of Reference Point</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Pharmacokinetic Parameters
+</p>
+<p>A SDTM PP dataset simulated by Antonio Rodriguez Contesti
+</p>
+<p>Contains a set of 10 unique Test Short Names and Test Names: </p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+<strong>PPTESTCD</strong> </td><td style="text-align: left;"> <strong>PPTEST</strong> </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+AUCALL  </td><td style="text-align: left;"> AUC All                      </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+AUCLST  </td><td style="text-align: left;"> AUC to Last Nonzero Conc     </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+CLST    </td><td style="text-align: left;"> Last Nonzero Conc            </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+CMAX    </td><td style="text-align: left;"> Max Conc                     </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+LAMZ    </td><td style="text-align: left;"> Lambda z                     </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+LAMZHL  </td><td style="text-align: left;"> Half-Life Lambda z           </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+LAMZNPT </td><td style="text-align: left;"> Number of Points for Lambda z</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+RCAMINT </td><td style="text-align: left;"> Ae                           </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+RENALCL </td><td style="text-align: left;"> CLR                          </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+TMAX    </td><td style="text-align: left;"> Time of CMAX
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Author(s)</h3>
+
+<p>Antonio Rodriguez Contesti
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://github.com/pharmaverse/pharmaversesdtm/blob/main/data/pp.rda">Access the source of the Pharmacokinetic Parameters dataset.</a>
+</p>
+
+</main>
+
+</div>
+</body></html>
